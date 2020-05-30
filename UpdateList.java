@@ -27,7 +27,7 @@ public class UpdateList {
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
-			result.put(addon, new Data(version, i18n_version, lines.remove(0).equals("verified") || verify.contains(addon)));
+			result.put(addon, new Data(version, i18n_version + (increase.contains(addon) ? 1 : 0), lines.remove(0).equals("verified") || verify.contains(addon)));
 		}
 		return result;
 	}
