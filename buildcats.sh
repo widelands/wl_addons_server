@@ -55,5 +55,4 @@ do
   fi
 done
 cd ..
-echo ${changed[*]}
 java UpdateList ${changed[*]}
