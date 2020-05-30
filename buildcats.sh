@@ -41,17 +41,19 @@ do
 done
 
 # Now check which translations have changed
+cd ../i18n
 changed=()
 skipnext=true
 for modification in $(git status -s ./*)
 do
   if [[ $skipnext == false ]]
   then
-    changed+=(+${modification%/})
+    changed+=(+${modification%%/*})
     skipnext=true
   else
     skipnext=false
   fi
 done
 cd ..
+echo ${changed[*]}
 java UpdateList ${changed[*]}
