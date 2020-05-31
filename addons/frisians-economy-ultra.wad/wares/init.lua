@@ -64,3 +64,24 @@ tribes:new_ware_type {
       },
    }
 }
+
+tribes:new_ware_type {
+   msgctxt = "ware",
+   name = "salt",
+   -- TRANSLATORS: This is a ware name used in lists of wares
+   descname = pgettext("ware", "Salt"),
+   helptext_script = dirname .. "helptexts.lua",
+   icon = dirname .. "menu_salt.png",
+   default_target_quantity = {},
+   preciousness = {
+      frisians = 25
+   },
+
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         basename = "salt",
+         hotspot = {5, 5},
+      }
+   }
+}

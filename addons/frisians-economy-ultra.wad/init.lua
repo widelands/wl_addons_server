@@ -24,6 +24,7 @@ tribes:modify_unit("tribe", "frisians", "add_immovable", "ryefield_tiny")
 
 include(addon_dirname .. "wares/init.lua")
 
+tribes:modify_unit("tribe", "frisians", "add_ware", "salt", 1)
 tribes:modify_unit("tribe", "frisians", "add_ware", "rye", 1)
 tribes:modify_unit("tribe", "frisians", "add_ware", "rye_flour", 1)
 tribes:modify_unit("tribe", "frisians", "add_ware", "barley_flour", 1)
@@ -50,6 +51,9 @@ tribes:modify_unit("worker", "frisians_farmer", "programs", "set", "harvest_rye"
          "return"
       })
 
+include(addon_dirname .. "salter/init.lua")
+tribes:add_custom_worker{tribename = "frisians", workername = "frisians_salter"}
+
 include(addon_dirname .. "miller/init.lua")
 tribes:add_custom_worker{tribename = "frisians", workername = "frisians_miller"}
 
@@ -57,10 +61,12 @@ tribes:add_custom_worker{tribename = "frisians", workername = "frisians_miller"}
 --                               New Production Sites
 --------------------------------------------------------------------------------
 
+include(addon_dirname .. "salt_works/init.lua")
 include(addon_dirname .. "rye_farm/init.lua")
 include(addon_dirname .. "rye_mill/init.lua")
 include(addon_dirname .. "barley_mill/init.lua")
 
+tribes:add_custom_building{tribename = "frisians", buildingname = "frisians_salt_works"}
 tribes:add_custom_building{tribename = "frisians", buildingname = "frisians_barley_mill"}
 tribes:add_custom_building{tribename = "frisians", buildingname = "frisians_rye_mill"}
 tribes:add_custom_building{tribename = "frisians", buildingname = "frisians_rye_farm"}
@@ -68,6 +74,27 @@ tribes:add_custom_building{tribename = "frisians", buildingname = "frisians_rye_
 --------------------------------------------------------------------------------
 --                                Production Sites
 --------------------------------------------------------------------------------
+
+tribes:modify_unit("productionsite", "frisians_smokery", "input", "add_ware", "salt", 6)
+tribes:modify_unit("productionsite", "frisians_smokery", "programs", "set", "smoke_fish", _"smoking fish", {
+            "return=skipped unless economy needs smoked_fish",
+            "consume=fish:2 salt log",
+            "sleep=16000",
+            "animate=working 30000",
+            "produce=smoked_fish:2"
+      })
+tribes:modify_unit("productionsite", "frisians_smokery", "programs", "set", "smoke_meat", _"smoking meat", {
+            "return=skipped when site has fish:2 and economy needs smoked_fish",
+            "return=skipped unless economy needs smoked_meat",
+            "consume=meat:2 salt log",
+            "sleep=16000",
+            "animate=working 30000",
+            "produce=smoked_meat:2"
+      })
+tribes:modify_unit("productionsite", "frisians_smokery", "programs", "set", "work", _"working", {
+            "call=smoke_fish",
+            "call=smoke_meat"
+      })
 
 tribes:modify_unit("productionsite", "frisians_bakery", "input", "remove_ware", "barley")
 tribes:modify_unit("productionsite", "frisians_bakery", "input", "modify_ware", "water", 5)
