@@ -1,5 +1,5 @@
 # wl_addons_server
-Repository faking an add-ons server for @widelands. Contains a handful of example add-ons for Widelands.
+Repository faking an add-ons server for [@widelands](https://github.com/widelands/widelands). Contains a handful of example add-ons for Widelands.
 
 I don't know how long this "server" will be in use, so I'd better write some brief documentation about maintenance here.
 
@@ -26,3 +26,21 @@ Updating an add-on will automatically set it to Not Verified. It is not allowed 
 `buildcats.sh` and `java UpdateList` need to be run from the base folder. Run `javac UpdateList.java` before using either command the first time.
 
 `buildcats.sh` usually prints some errors which are false alarms. Sometimes it may create new files called `"*.po"` (yes, with an asterisk in the filename!) in the `po/` folder which need to be deleted manually before `git add`ing. This script is not clever enough to catch translatable strings in config scripts (such as a map's `elemental` file), except for the `addon` file.
+
+[Further info about add-ons can be found here.](https://github.com/Noordfrees/widelands/blob/addons/doc/sphinx/source/add-ons.rst)
+
+### Issues
+
+If you encounter any issues related to add-ons, please **do not report them against the official game**! Report them on this repository instead.
+
+Keep in mind that currently some of the add-ons here are meant as proof-of-concept dummies. Please do not report any errors regarding those.
+
+Issues not directly related to add-ons should be reported [against the official game](https://github.com/widelands/widelands/issues).
+
+### Contributing
+
+If you want to contribute a new add-on, update an existing one, or submit new or updated translations, open a pull request with this change and make sure you followed the steps described above.
+
+### License
+
+This repository and its contents are licensed under the same version as Widelands: The GNU General Public License (GPL) v2. Individual add-ons may specify a different license by adding a file called `LICENSE` to the respective `addons/<add-on-name/>` folder.
