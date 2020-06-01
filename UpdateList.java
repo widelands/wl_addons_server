@@ -44,6 +44,8 @@ public class UpdateList {
 	}
 	
 	private static void writeAddon(PrintWriter w, File addon, Data data) throws Exception {
+		if (data == null) data = new Data(0, 1, false);
+		
 		String descname = null, descr = null, author = null, category = null;
 		Integer new_version = null;
 		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>();
