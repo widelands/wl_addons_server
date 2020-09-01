@@ -1,0 +1,16 @@
+return {
+   foreignplanet_rocks1 = {},
+   foreignplanet_rocks2 = {},
+   foreignplanet_rocks3 = {},
+   foreignplanet_rocks4 = {},
+   foreignplanet_rocks5 = {},
+   foreignplanet_rocks6 = {},
+   foreignplanet_mountain1 = {},
+   foreignplanet_mountain2 = {},
+   foreignplanet_mountain3 = {},
+   foreignplanet_beach = {},
+   foreignplanet_dust1 = {},
+   foreignplanet_dust2 = {},
+   foreignplanet_water1 = {},
+   foreignplanet_water2 = {},
+}
