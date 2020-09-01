@@ -4,9 +4,9 @@
 
 include "scripting/infrastructure.lua"
 
-set_addon_textdomain("stronger-trading-outpost.wad")
+push_textdomain("stronger-trading-outpost.wad", true)
 
-return {
+local r = {
    -- TRANSLATORS: This is the name of a starting condition
    descname = _"AI Trading Outpost",
    -- TRANSLATORS: This is the tooltip for the "AI Trading Outpost" starting condition
@@ -180,3 +180,5 @@ return {
    end
 end
 }
+pop_textdomain()
+return r

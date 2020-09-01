@@ -2,9 +2,9 @@
 --#      Campaign configuration - file     #
 --##########################################
 
-set_addon_textdomain("dummy-campaign.wad")
+push_textdomain("dummy-campaign.wad", true)
 
-return {
+local r = {
    --##########################################
    --#   Descriptions of difficulty levels    #
    --##########################################
@@ -35,3 +35,5 @@ return {
       }
    }
 }
+pop_textdomain()
+return r

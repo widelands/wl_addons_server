@@ -1,6 +1,6 @@
 addon_dirname = path.dirname(__file__)
 tribes = wl.Tribes()
-set_addon_textdomain("frisians-economy-ultra.wad")
+push_textdomain("frisians-economy-ultra.wad", true)
 
 --------------------------------------------------------------------------------
 --                                Immovables
@@ -131,3 +131,5 @@ tribes:modify_unit("productionsite", "frisians_honey_bread_bakery", "programs", 
             "call=bake_honey",
             "call=bake_normal"
       })
+
+pop_textdomain()

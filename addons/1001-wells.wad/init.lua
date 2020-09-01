@@ -11,7 +11,7 @@ include "scripting/win_conditions/win_condition_texts.lua"
 -- Add-ons need to specify this
 local wc_textdomain = "1001-wells.wad"
 
-set_addon_textdomain(wc_textdomain)
+push_textdomain(wc_textdomain, true)
 
 local wc_name = "1001 Wells"
 -- This needs to be exactly like wc_name, but localized, because wc_name
@@ -20,7 +20,7 @@ local wc_descname = _("1001 Wells")
 local wc_version = 1
 local wc_desc = _([[The first player who builds 1001 wells wins]])
 
-return {
+local r = {
    name = wc_name,
    description = wc_desc,
    textdomain = wc_textdomain,
@@ -45,3 +45,5 @@ return {
    end
 end
 }
+pop_textdomain()
+return r

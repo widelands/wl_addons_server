@@ -1,6 +1,8 @@
 if wl.Game then egbase = wl.Game() else egbase = wl.Editor() end
 world = wl.World()
 
+push_textdomain("foreign_planet.wad", true)
+
 terraindir = path.dirname(__file__) .. "terrains/"
 world:new_editor_terrain_category{
    name = "foreignplanet",
@@ -228,3 +230,5 @@ world:new_terrain_type{
    humidity = 999,
    fertility = 1,
 }
+
+pop_textdomain()
