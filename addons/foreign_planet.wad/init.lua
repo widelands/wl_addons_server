@@ -4,17 +4,10 @@ world = wl.World()
 push_textdomain("foreign_planet.wad", true)
 
 terraindir = path.dirname(__file__) .. "terrains/"
-world:new_editor_terrain_category{
-   name = "foreignplanet",
-   descname = _ "Foreign Planet",
-   picture = terraindir .. "rocks4.png",
-   items_per_row = 6,
-}
 
 world:new_terrain_type{
    name = "foreignplanet_rocks1",
    descname = _ "Rocks 1",
-   editor_category = "foreignplanet",
    is = "arable",
    tooltips = {
       -- TRANSLATORS: This is an entry in a terrain tooltip. Try to use 1 word if possible.
@@ -32,7 +25,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_rocks2",
    descname = _ "Rocks 2",
-   editor_category = "foreignplanet",
    is = "arable",
    tooltips = {
       -- TRANSLATORS: This is an entry in a terrain tooltip. Try to use 1 word if possible.
@@ -50,7 +42,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_rocks3",
    descname = _ "Rocks 3",
-   editor_category = "foreignplanet",
    is = "arable",
    tooltips = {
       -- TRANSLATORS: This is an entry in a terrain tooltip. Try to use 1 word if possible.
@@ -68,7 +59,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_rocks4",
    descname = _ "Rocks 4",
-   editor_category = "foreignplanet",
    is = "arable",
    tooltips = {},
    valid_resources = {"water"},
@@ -83,7 +73,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_rocks5",
    descname = _ "Rocks 5",
-   editor_category = "foreignplanet",
    is = "arable",
    tooltips = {},
    valid_resources = {"water"},
@@ -98,7 +87,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_rocks6",
    descname = _ "Rocks 6",
-   editor_category = "foreignplanet",
    is = "arable",
    tooltips = {},
    valid_resources = {"water"},
@@ -114,7 +102,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_mountain1",
    descname = _ "Mountain 1",
-   editor_category = "foreignplanet",
    is = "mineable",
    valid_resources = {"coal", "iron", "gold", "stones"},
    default_resource = "",
@@ -128,7 +115,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_mountain2",
    descname = _ "Mountain 2",
-   editor_category = "foreignplanet",
    is = "mineable",
    valid_resources = {"coal", "iron", "gold", "stones"},
    default_resource = "",
@@ -142,7 +128,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_mountain3",
    descname = _ "Mountain 3",
-   editor_category = "foreignplanet",
    is = "mineable",
    valid_resources = {"coal", "iron", "gold", "stones"},
    default_resource = "",
@@ -157,7 +142,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_beach",
    descname = _ "Beach",
-   editor_category = "foreignplanet",
    is = "walkable",
    tooltips = {},
    valid_resources = {"water"},
@@ -172,7 +156,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_dust1",
    descname = _ "Dust 1",
-   editor_category = "foreignplanet",
    is = "walkable",
    tooltips = {},
    valid_resources = {},
@@ -187,7 +170,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_dust2",
    descname = _ "Dust 2",
-   editor_category = "foreignplanet",
    is = "unwalkable",
    tooltips = {},
    valid_resources = {},
@@ -203,7 +185,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_water1",
    descname = _ "Water 1",
-   editor_category = "foreignplanet",
    is = "water",
    valid_resources = {"fish"},
    default_resource = "fish",
@@ -218,7 +199,6 @@ world:new_terrain_type{
 world:new_terrain_type{
    name = "foreignplanet_water2",
    descname = _ "Water 2",
-   editor_category = "foreignplanet",
    is = "water",
    valid_resources = {"fish"},
    default_resource = "",
