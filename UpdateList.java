@@ -24,7 +24,7 @@ public class UpdateList {
 			lines.remove(0); lines.remove(0); lines.remove(0); lines.remove(0);
 			final int version = Integer.valueOf(lines.remove(0));
 			final int i18n_version = Integer.valueOf(lines.remove(0));
-			lines.remove(0);
+			lines.remove(0); lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
@@ -33,13 +33,14 @@ public class UpdateList {
 		return result;
 	}
 	
-	private static void recurse(List<String> dirs, List<String> files, File curdir, String prefix) {
+	private static void recurse(List<String> dirs, List<String> files, List<Long> size, File curdir, String prefix) {
 		for (File f : curdir.listFiles()) {
 			if (f.isFile()) {
 				files.add(prefix + f.getName());
+				size.add(f.length());
 			} else {
 				dirs.add(prefix + f.getName());
-				recurse(dirs, files, f, prefix + f.getName() + "/");
+				recurse(dirs, files, size, f, prefix + f.getName() + "/");
 			}
 		}
 	}
@@ -49,8 +50,8 @@ public class UpdateList {
 		
 		String descname = null, descr = null, author = null, category = null;
 		Integer new_version = null;
-		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>();
-		recurse(dirs, files, addon, "");
+		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
+		recurse(dirs, files, sizes, addon, "");
 		
 		for (String line : Files.readAllLines(new File(addon, "addon").toPath())) {
 			String[] str = line.split("=");
@@ -71,6 +72,8 @@ public class UpdateList {
 				default: break;
 			}
 		}
+		long totalSize = 0;
+		for (Long l : sizes) totalSize += l;
 		
 		w.println(addon.getName());
 		w.println(descname);
@@ -79,6 +82,7 @@ public class UpdateList {
 		w.println("Nordfriese");  // uploader
 		w.println(new_version);
 		w.println(data.i18n_version);
+		w.println(totalSize);
 		w.println(category);
 		w.println(requires.size()); for (String r : requires) w.println(r);
 		w.println(dirs.size()); for (String r : dirs) w.println(r);
