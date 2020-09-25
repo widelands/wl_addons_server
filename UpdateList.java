@@ -28,20 +28,44 @@ public class UpdateList {
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
+			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
+			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			result.put(addon, new Data(version, i18n_version + (increase.contains(addon) ? 1 : 0), lines.remove(0).equals("verified") || verify.contains(addon)));
 		}
 		return result;
 	}
 	
-	private static void recurse(List<String> dirs, List<String> files, List<Long> size, File curdir, String prefix) {
+	private static String checksum(File f) {
+		try {
+			Runtime rt = Runtime.getRuntime();
+			Process pr = rt.exec(new String[] {"md5sum", f.getPath()});
+			BufferedReader reader = new BufferedReader(new InputStreamReader(pr.getInputStream()));
+			pr.waitFor();
+			String md5 = reader.readLine();
+			return md5.split(" ")[0];
+		} catch (Exception e) {
+			System.err.println("checksumming error: " + e);
+			System.exit(1);
+		}
+		return "";
+	}
+	
+	private static void recurse(List<String> dirs, List<String> files, List<String> checksums, List<Long> size, File curdir, String prefix) {
 		for (File f : curdir.listFiles()) {
 			if (f.isFile()) {
 				files.add(prefix + f.getName());
 				size.add(f.length());
+				checksums.add(checksum(f));
 			} else {
 				dirs.add(prefix + f.getName());
-				recurse(dirs, files, size, f, prefix + f.getName() + "/");
+				recurse(dirs, files, checksums, size, f, prefix + f.getName() + "/");
 			}
+		}
+	}
+	private static void gatherLocales(File addon, List<String> locales, List<String> checksums) {
+		for (File f : new File(addon, "../../i18n/" + addon.getName()).listFiles()) {
+			locales.add(f.getName());
+			checksums.add(checksum(f));
 		}
 	}
 	
@@ -50,8 +74,10 @@ public class UpdateList {
 		
 		String descname = null, descr = null, author = null, category = null;
 		Integer new_version = null;
-		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
-		recurse(dirs, files, sizes, addon, "");
+		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(),
+				locales = new ArrayList<>(), checksums = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
+		recurse(dirs, files, checksums, sizes, addon, "");
+		gatherLocales(addon, locales, checksums);
 		
 		for (String line : Files.readAllLines(new File(addon, "addon").toPath())) {
 			String[] str = line.split("=");
@@ -87,6 +113,8 @@ public class UpdateList {
 		w.println(requires.size()); for (String r : requires) w.println(r);
 		w.println(dirs.size()); for (String r : dirs) w.println(r);
 		w.println(files.size()); for (String r : files) w.println(r);
+		w.println(locales.size()); for (String r : locales) w.println(r);
+		w.println(checksums.size()); for (String r : checksums) w.println(r);
 		// never verify immediately during an update
 		w.println(data.verified && data.version == new_version ? "verified" : "unchecked");
 	}
