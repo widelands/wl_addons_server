@@ -17,10 +17,11 @@ public class UpdateList {
 	private static Map<String, Data> detectLocaleVersions(List<String> increase, List<String> verify) throws Exception {
 		List<String> lines = Files.readAllLines(new File("list").toPath());
 		Map<String, Data> result = new HashMap<>();
+		lines.remove(0);  // consume version
 		final int size = Integer.valueOf(lines.remove(0));
 		for (int i = 0; i < size; ++i) {
 			final String addon = lines.remove(0);
-			lines.remove(0); lines.remove(0); lines.remove(0);
+			lines.remove(0); lines.remove(0); lines.remove(0); lines.remove(0);
 			final int version = Integer.valueOf(lines.remove(0));
 			final int i18n_version = Integer.valueOf(lines.remove(0));
 			lines.remove(0);
@@ -75,6 +76,7 @@ public class UpdateList {
 		w.println(descname);
 		w.println(descr);
 		w.println(author);
+		w.println("Nordfriese");  // uploader
 		w.println(new_version);
 		w.println(data.i18n_version);
 		w.println(category);
@@ -105,6 +107,7 @@ public class UpdateList {
 
 		PrintWriter write = new PrintWriter(new File("list"));
 		File[] files = new File("addons").listFiles();
+		write.println("1");  // version
 		write.println(files.length);
 		for (File file : files) {
 			writeAddon(write, file, data.get(file.getName()));
