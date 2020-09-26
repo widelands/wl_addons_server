@@ -4,24 +4,55 @@ import java.util.*;
 
 public class UpdateList {
 	public static class Data {
-		public final int version;
-		public final int i18n_version;
+		public static class Comment {
+			public final String username, message;
+			public final int version;
+			public final long timestamp;
+			public Comment(String n, String m, int v, long t) {
+				username = n;
+				message = m;
+				version = v;
+				timestamp = t;
+			}
+		}
+		
+		public final int version, i18n_version, votes;
 		public final boolean verified;
-		public Data(int v, int i, boolean ver) {
+		public final long timestamp, downloadCount;
+		public final float rating;
+		public final List<Comment> comments;
+		public Data(int v, int i, boolean ver, long t, long dl, int vot, float r, List<Comment> c) {
+			comments = c;
 			version = v;
 			i18n_version = i;
 			verified = ver;
+			timestamp = t;
+			votes = vot;
+			downloadCount = dl;
+			rating = votes > 0 ? r : 0;
 		}
 	}
 	
 	private static Map<String, Data> detectLocaleVersions(List<String> increase, List<String> verify) throws Exception {
 		List<String> lines = Files.readAllLines(new File("list").toPath());
 		Map<String, Data> result = new HashMap<>();
-		lines.remove(0);  // consume version
+		lines.remove(0);
 		final int size = Integer.valueOf(lines.remove(0));
 		for (int i = 0; i < size; ++i) {
 			final String addon = lines.remove(0);
 			lines.remove(0); lines.remove(0); lines.remove(0); lines.remove(0);
+			final long timestamp = Long.valueOf(lines.remove(0));
+			final long downloadCount = Long.valueOf(lines.remove(0));
+			final int votes = Integer.valueOf(lines.remove(0));
+			final float rating = Float.valueOf(lines.remove(0));
+			List<Data.Comment> comments = new ArrayList<>();
+			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) {
+				String n = lines.remove(0);
+				String m = lines.remove(0);
+				int v = Integer.valueOf(lines.remove(0));
+				long t = Long.valueOf(lines.remove(0));
+				comments.add(new Data.Comment(n, m, v, t));
+			}
 			final int version = Integer.valueOf(lines.remove(0));
 			final int i18n_version = Integer.valueOf(lines.remove(0));
 			lines.remove(0); lines.remove(0);
@@ -30,7 +61,8 @@ public class UpdateList {
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
-			result.put(addon, new Data(version, i18n_version + (increase.contains(addon) ? 1 : 0), lines.remove(0).equals("verified") || verify.contains(addon)));
+			result.put(addon, new Data(version, i18n_version + (increase.contains(addon) ? 1 : 0),
+					lines.remove(0).equals("verified") || verify.contains(addon), timestamp, downloadCount, votes, rating, comments));
 		}
 		return result;
 	}
@@ -70,7 +102,9 @@ public class UpdateList {
 	}
 	
 	private static void writeAddon(PrintWriter w, File addon, Data data) throws Exception {
-		if (data == null) data = new Data(0, 1, false);
+		if (data == null) data = new Data(0, 1, false, System.currentTimeMillis(),
+				// some dummy values for initialization of not-yet-implemented data
+				12345, (int)(10 * Math.random()), (float)(9 * Math.random() + 1), new ArrayList<>());
 		
 		String descname = null, descr = null, author = null, category = null;
 		Integer new_version = null;
@@ -106,6 +140,17 @@ public class UpdateList {
 		w.println(descr);
 		w.println(author);
 		w.println("Nordfriese");  // uploader
+		w.println(data.timestamp);
+		w.println(data.downloadCount);
+		w.println(data.votes);
+		w.println(data.rating);
+		w.println(data.comments.size());
+		for (Data.Comment c : data.comments) {
+			w.println(c.username);
+			w.println(c.message);
+			w.println(c.version);
+			w.println(c.timestamp);
+		}
 		w.println(new_version);
 		w.println(data.i18n_version);
 		w.println(totalSize);
