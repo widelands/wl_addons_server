@@ -1,18 +1,14 @@
 if wl.Game then egbase = wl.Game() else egbase = wl.Editor() end
-world = wl.World()
+world = wl.Descriptions()
 
 push_textdomain("foreign_planet.wad", true)
 
-terraindir = path.dirname(__file__) .. "terrains/"
+terraindir = path.dirname(__file__)
 
 world:new_terrain_type{
    name = "foreignplanet_rocks1",
    descname = _ "Rocks 1",
    is = "arable",
-   tooltips = {
-      -- TRANSLATORS: This is an entry in a terrain tooltip. Try to use 1 word if possible.
-      _"likes trees",
-   },
    valid_resources = {"resource_water"},
    default_resource = "",
    default_resource_amount = 0,
@@ -26,10 +22,6 @@ world:new_terrain_type{
    name = "foreignplanet_rocks2",
    descname = _ "Rocks 2",
    is = "arable",
-   tooltips = {
-      -- TRANSLATORS: This is an entry in a terrain tooltip. Try to use 1 word if possible.
-      _"likes trees",
-   },
    valid_resources = {"resource_water"},
    default_resource = "resource_water",
    default_resource_amount = 5,
@@ -43,10 +35,6 @@ world:new_terrain_type{
    name = "foreignplanet_rocks3",
    descname = _ "Rocks 3",
    is = "arable",
-   tooltips = {
-      -- TRANSLATORS: This is an entry in a terrain tooltip. Try to use 1 word if possible.
-      _"likes trees",
-   },
    valid_resources = {"resource_water"},
    default_resource = "",
    default_resource_amount = 0,
@@ -60,7 +48,6 @@ world:new_terrain_type{
    name = "foreignplanet_rocks4",
    descname = _ "Rocks 4",
    is = "arable",
-   tooltips = {},
    valid_resources = {"resource_water"},
    default_resource = "resource_water",
    default_resource_amount = 10,
@@ -74,7 +61,6 @@ world:new_terrain_type{
    name = "foreignplanet_rocks5",
    descname = _ "Rocks 5",
    is = "arable",
-   tooltips = {},
    valid_resources = {"resource_water"},
    default_resource = "",
    default_resource_amount = 0,
@@ -88,7 +74,6 @@ world:new_terrain_type{
    name = "foreignplanet_rocks6",
    descname = _ "Rocks 6",
    is = "arable",
-   tooltips = {},
    valid_resources = {"resource_water"},
    default_resource = "",
    default_resource_amount = 0,
@@ -143,7 +128,6 @@ world:new_terrain_type{
    name = "foreignplanet_beach",
    descname = _ "Beach",
    is = "walkable",
-   tooltips = {},
    valid_resources = {"resource_water"},
    default_resource = "resource_water",
    default_resource_amount = 2,
@@ -157,7 +141,6 @@ world:new_terrain_type{
    name = "foreignplanet_dust1",
    descname = _ "Dust 1",
    is = "walkable",
-   tooltips = {},
    valid_resources = {},
    default_resource = "",
    default_resource_amount = 0,
@@ -171,7 +154,6 @@ world:new_terrain_type{
    name = "foreignplanet_dust2",
    descname = _ "Dust 2",
    is = "unwalkable",
-   tooltips = {},
    valid_resources = {},
    default_resource = "",
    default_resource_amount = 0,

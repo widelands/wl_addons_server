@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-25 10:37+0200\n"
+"POT-Creation-Date: 2020-10-31 21:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: foreign_planet.wad/addon:4
+#: foreign_planet.wad/addon:4 foreign_planet.wad/editor.lua:8
 msgid "Foreign Planet"
 msgstr ""
 
@@ -25,63 +25,58 @@ msgstr ""
 msgid "A strange new world."
 msgstr ""
 
-#: foreign_planet.wad/init.lua:10
+#: foreign_planet.wad/terrains/init.lua:10
 msgid "Rocks 1"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:14 foreign_planet.wad/init.lua:31
-#: foreign_planet.wad/init.lua:48
-msgid "likes trees"
-msgstr ""
-
-#: foreign_planet.wad/init.lua:27
+#: foreign_planet.wad/terrains/init.lua:23
 msgid "Rocks 2"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:44
+#: foreign_planet.wad/terrains/init.lua:36
 msgid "Rocks 3"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:61
+#: foreign_planet.wad/terrains/init.lua:49
 msgid "Rocks 4"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:75
+#: foreign_planet.wad/terrains/init.lua:62
 msgid "Rocks 5"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:89
+#: foreign_planet.wad/terrains/init.lua:75
 msgid "Rocks 6"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:104
+#: foreign_planet.wad/terrains/init.lua:89
 msgid "Mountain 1"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:117
+#: foreign_planet.wad/terrains/init.lua:102
 msgid "Mountain 2"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:130
+#: foreign_planet.wad/terrains/init.lua:115
 msgid "Mountain 3"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:144
+#: foreign_planet.wad/terrains/init.lua:129
 msgid "Beach"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:158
+#: foreign_planet.wad/terrains/init.lua:142
 msgid "Dust 1"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:172
+#: foreign_planet.wad/terrains/init.lua:155
 msgid "Dust 2"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:187
+#: foreign_planet.wad/terrains/init.lua:169
 msgid "Water 1"
 msgstr ""
 
-#: foreign_planet.wad/init.lua:201
+#: foreign_planet.wad/terrains/init.lua:183
 msgid "Water 2"
 msgstr ""

@@ -43,4 +43,4 @@ If you want to contribute a new add-on, update an existing one, or submit new or
 
 ### License
 
-This repository and its contents are licensed under the same version as Widelands: The GNU General Public License (GPL) v2. Individual add-ons may specify a different license by adding a file called `LICENSE` to the respective `addons/<add-on-name/>` folder.
+This repository and its contents are published under the same license as Widelands: [The GNU General Public License (GPL) v2.](https://github.com/widelands/widelands/blob/master/COPYING)
