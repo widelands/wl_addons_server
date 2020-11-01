@@ -1,7 +1,6 @@
 dirname = path.dirname(__file__)
 
-tribes:new_ware_type {
-   msgctxt = "ware",
+descriptions:new_ware_type {
    name = "barley_flour",
    -- TRANSLATORS: This is a ware name used in lists of wares
    descname = pgettext("ware", "Barley Flour"),
@@ -23,8 +22,7 @@ tribes:new_ware_type {
    }
 }
 
-tribes:new_ware_type {
-   msgctxt = "ware",
+descriptions:new_ware_type {
    name = "rye",
    -- TRANSLATORS: This is a ware name used in lists of wares
    descname = pgettext("ware", "Rye"),
@@ -44,8 +42,7 @@ tribes:new_ware_type {
    }
 }
 
-tribes:new_ware_type {
-   msgctxt = "ware",
+descriptions:new_ware_type {
    name = "rye_flour",
    -- TRANSLATORS: This is a ware name used in lists of wares
    descname = pgettext("ware", "Rye Flour"),
@@ -65,8 +62,7 @@ tribes:new_ware_type {
    }
 }
 
-tribes:new_ware_type {
-   msgctxt = "ware",
+descriptions:new_ware_type {
    name = "salt",
    -- TRANSLATORS: This is a ware name used in lists of wares
    descname = pgettext("ware", "Salt"),

@@ -1,17 +1,14 @@
 dirname = path.dirname(__file__)
 
-tribes:new_immovable_type {
-   msgctxt = "immovable",
+descriptions:new_immovable_type {
    name = "ryefield_tiny",
    -- TRANSLATORS: This is an immovable name used in lists of immovables
    descname = pgettext("immovable", "Rye Field (tiny)"),
    icon = dirname .. "menu.png",
    size = "small",
-   helptext_script = dirname .. "helptexts.lua",
-   attributes = { "field", "seed_rye" },
    programs = {
-      program = {
-         "animate=idle 150000",
+      main = {
+         "animate=idle duration:150s",
          "transform=ryefield_small",
       }
    },

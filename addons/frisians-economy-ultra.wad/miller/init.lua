@@ -1,7 +1,6 @@
 dirname = path.dirname (__file__)
 
-tribes:new_worker_type {
-   msgctxt = "frisians_worker",
+descriptions:new_worker_type {
    name = "frisians_miller",
    -- TRANSLATORS: This is a worker name used in lists of workers
    descname = pgettext ("frisians_worker", "Miller"),

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-31 21:27+0100\n"
+"POT-Creation-Date: 2020-11-01 15:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,117 +27,111 @@ msgid ""
 "buildings."
 msgstr ""
 
-#: frisians-economy-ultra.wad/barley_mill/init.lua:7
+#: frisians-economy-ultra.wad/barley_mill/init.lua:6
 msgctxt "frisians_building"
 msgid "Barley Mill"
 msgstr ""
 
-#: frisians-economy-ultra.wad/barley_mill/init.lua:54
+#: frisians-economy-ultra.wad/barley_mill/init.lua:53
 msgid "grinding barley"
 msgstr ""
 
-#: frisians-economy-ultra.wad/init.lua:79
-msgid "smoking fish"
-msgstr ""
-
-#: frisians-economy-ultra.wad/init.lua:86
-msgid "smoking meat"
-msgstr ""
-
-#: frisians-economy-ultra.wad/init.lua:94
-#: frisians-economy-ultra.wad/init.lua:130
-#: frisians-economy-ultra.wad/rye_farm/init.lua:59
-#: frisians-economy-ultra.wad/salt_works/init.lua:44
-msgid "working"
-msgstr ""
-
-#: frisians-economy-ultra.wad/init.lua:103
-#: frisians-economy-ultra.wad/init.lua:123
-msgid "baking bread"
-msgstr ""
-
-#: frisians-economy-ultra.wad/init.lua:116
-msgid "baking honey bread"
-msgstr ""
-
-#: frisians-economy-ultra.wad/miller/helptexts.lua:3
-#: frisians-economy-ultra.wad/salter/helptexts.lua:3
-msgctxt "frisians_worker"
-msgid "Grinds barley and rye into flour."
-msgstr ""
-
-#: frisians-economy-ultra.wad/miller/init.lua:7
+#: frisians-economy-ultra.wad/miller/init.lua:6
 msgctxt "frisians_worker"
 msgid "Miller"
 msgstr ""
 
-#: frisians-economy-ultra.wad/rye_farm/init.lua:7
+#: frisians-economy-ultra.wad/postload.lua:63
+msgid "smoking fish"
+msgstr ""
+
+#: frisians-economy-ultra.wad/postload.lua:70
+msgid "smoking meat"
+msgstr ""
+
+#: frisians-economy-ultra.wad/postload.lua:78
+#: frisians-economy-ultra.wad/postload.lua:114
+#: frisians-economy-ultra.wad/rye_farm/init.lua:48
+#: frisians-economy-ultra.wad/salt_works/init.lua:43
+msgid "working"
+msgstr ""
+
+#: frisians-economy-ultra.wad/postload.lua:87
+#: frisians-economy-ultra.wad/postload.lua:107
+msgid "baking bread"
+msgstr ""
+
+#: frisians-economy-ultra.wad/postload.lua:100
+msgid "baking honey bread"
+msgstr ""
+
+#: frisians-economy-ultra.wad/rye_farm/init.lua:6
 msgctxt "frisians_building"
 msgid "Rye Farm"
 msgstr ""
 
-#: frisians-economy-ultra.wad/rye_farm/init.lua:67
+#: frisians-economy-ultra.wad/rye_farm/init.lua:56
 msgid "planting rye"
 msgstr ""
 
-#: frisians-economy-ultra.wad/rye_farm/init.lua:75
+#: frisians-economy-ultra.wad/rye_farm/init.lua:64
 msgid "harvesting rye"
 msgstr ""
 
-#: frisians-economy-ultra.wad/rye_farm/init.lua:84
+#: frisians-economy-ultra.wad/rye_farm/init.lua:73
 msgid "No Fields"
 msgstr ""
 
-#: frisians-economy-ultra.wad/rye_farm/init.lua:85
+#: frisians-economy-ultra.wad/rye_farm/init.lua:74
 msgid "Out of Fields"
 msgstr ""
 
-#: frisians-economy-ultra.wad/rye_farm/init.lua:86
+#: frisians-economy-ultra.wad/rye_farm/init.lua:75
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this rye farm has no cleared soil to plant his seeds."
 msgstr ""
 
-#: frisians-economy-ultra.wad/rye_mill/init.lua:7
+#: frisians-economy-ultra.wad/rye_mill/init.lua:6
 msgctxt "frisians_building"
 msgid "Rye Mill"
 msgstr ""
 
-#: frisians-economy-ultra.wad/rye_mill/init.lua:54
+#: frisians-economy-ultra.wad/rye_mill/init.lua:53
 msgid "grinding rye"
 msgstr ""
 
-#: frisians-economy-ultra.wad/ryefield/harvested/init.lua:7
+#: frisians-economy-ultra.wad/ryefield/harvested/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
 msgstr ""
 
-#: frisians-economy-ultra.wad/ryefield/medium/init.lua:7
+#: frisians-economy-ultra.wad/ryefield/medium/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (medium)"
 msgstr ""
 
-#: frisians-economy-ultra.wad/ryefield/ripe/init.lua:7
+#: frisians-economy-ultra.wad/ryefield/ripe/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
 msgstr ""
 
-#: frisians-economy-ultra.wad/ryefield/small/init.lua:7
+#: frisians-economy-ultra.wad/ryefield/small/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (small)"
 msgstr ""
 
-#: frisians-economy-ultra.wad/ryefield/tiny/init.lua:7
+#: frisians-economy-ultra.wad/ryefield/tiny/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
 msgstr ""
 
-#: frisians-economy-ultra.wad/salt_works/init.lua:7
+#: frisians-economy-ultra.wad/salt_works/init.lua:6
 msgctxt "frisians_building"
 msgid "Salt Works"
 msgstr ""
 
-#: frisians-economy-ultra.wad/salter/init.lua:7
+#: frisians-economy-ultra.wad/salter/init.lua:6
 msgctxt "frisians_worker"
 msgid "Salter"
 msgstr ""
@@ -150,22 +144,22 @@ msgctxt "frisians_ware"
 msgid "TODO(Nordfriese): Write helptexts"
 msgstr ""
 
-#: frisians-economy-ultra.wad/wares/init.lua:7
+#: frisians-economy-ultra.wad/wares/init.lua:6
 msgctxt "ware"
 msgid "Barley Flour"
 msgstr ""
 
-#: frisians-economy-ultra.wad/wares/init.lua:30
+#: frisians-economy-ultra.wad/wares/init.lua:28
 msgctxt "ware"
 msgid "Rye"
 msgstr ""
 
-#: frisians-economy-ultra.wad/wares/init.lua:51
+#: frisians-economy-ultra.wad/wares/init.lua:48
 msgctxt "ware"
 msgid "Rye Flour"
 msgstr ""
 
-#: frisians-economy-ultra.wad/wares/init.lua:72
+#: frisians-economy-ultra.wad/wares/init.lua:68
 msgctxt "ware"
 msgid "Salt"
 msgstr ""

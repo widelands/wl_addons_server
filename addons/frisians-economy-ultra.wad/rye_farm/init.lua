@@ -1,7 +1,6 @@
 dirname = path.dirname (__file__)
 
-tribes:new_productionsite_type {
-   msgctxt = "frisians_building",
+descriptions:new_productionsite_type {
    name = "frisians_rye_farm",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext ("frisians_building", "Rye Farm"),
@@ -43,18 +42,8 @@ tribes:new_productionsite_type {
       "rye"
    },
 
-   indicate_workarea_overlaps = {
-      frisians_clay_pit = false,
-      frisians_berry_farm = false,
-      frisians_reed_farm = false,
-      frisians_farm = false,
-      frisians_rye_farm = false,
-      frisians_foresters_house = false,
-      frisians_beekeepers_house = true,
-   },
-
    programs = {
-      work = {
+      main = {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
@@ -67,7 +56,7 @@ tribes:new_productionsite_type {
          descname = _"planting rye",
          actions = {
             "callworker=plant_rye",
-            "sleep=4000"
+            "sleep=duration:4s"
          }
       },
       harvest_rye = {
@@ -75,7 +64,7 @@ tribes:new_productionsite_type {
          descname = _"harvesting rye",
          actions = {
             "callworker=harvest_rye",
-            "sleep=4000",
+            "sleep=duration:4s",
          }
       },
    },
