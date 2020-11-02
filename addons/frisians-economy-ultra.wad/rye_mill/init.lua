@@ -4,7 +4,6 @@ descriptions:new_productionsite_type {
    name = "frisians_rye_mill",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("frisians_building", "Rye Mill"),
-   helptext_script = dirname .. "helptexts.lua",
    icon = dirname .. "menu.png",
    size = "medium",
 
@@ -43,9 +42,6 @@ descriptions:new_productionsite_type {
    inputs = {
       { name = "rye", amount = 4 }
    },
-   outputs = {
-      "rye_flour"
-   },
 
    programs = {
       main = {
@@ -53,8 +49,7 @@ descriptions:new_productionsite_type {
          descname = _"grinding rye",
          actions = {
             "consume=rye",
-            "sleep=5000",
-            "playsound=sound/mill/mill_turning 240",
+            "sleep=duration:5s",
             "animate=working duration:10s",
             "produce=rye_flour"
          }

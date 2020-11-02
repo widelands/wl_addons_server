@@ -4,14 +4,7 @@ descriptions:new_ware_type {
    name = "barley_flour",
    -- TRANSLATORS: This is a ware name used in lists of wares
    descname = pgettext("ware", "Barley Flour"),
-   helptext_script = dirname .. "helptexts_barley_flour.lua",
    icon = dirname .. "menu_barley_flour.png",
-   default_target_quantity = {
-      frisians = 15
-   },
-   preciousness = {
-      frisians = 25
-   },
 
    animation_directory = dirname,
    animations = {
@@ -26,12 +19,7 @@ descriptions:new_ware_type {
    name = "rye",
    -- TRANSLATORS: This is a ware name used in lists of wares
    descname = pgettext("ware", "Rye"),
-   helptext_script = dirname .. "helptexts.lua",
    icon = dirname .. "menu_rye.png",
-   default_target_quantity = {},
-   preciousness = {
-      frisians = 25
-   },
 
    animation_directory = dirname,
    animations = {
@@ -46,12 +34,7 @@ descriptions:new_ware_type {
    name = "rye_flour",
    -- TRANSLATORS: This is a ware name used in lists of wares
    descname = pgettext("ware", "Rye Flour"),
-   helptext_script = dirname .. "helptexts.lua",
    icon = dirname .. "menu_rye_flour.png",
-   default_target_quantity = {},
-   preciousness = {
-      frisians = 25
-   },
 
    animation_directory = dirname,
    animations = {
@@ -66,12 +49,7 @@ descriptions:new_ware_type {
    name = "salt",
    -- TRANSLATORS: This is a ware name used in lists of wares
    descname = pgettext("ware", "Salt"),
-   helptext_script = dirname .. "helptexts.lua",
    icon = dirname .. "menu_salt.png",
-   default_target_quantity = {},
-   preciousness = {
-      frisians = 25
-   },
 
    animation_directory = dirname,
    animations = {

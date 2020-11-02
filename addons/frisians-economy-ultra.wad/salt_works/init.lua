@@ -4,7 +4,6 @@ descriptions:new_productionsite_type {
    name = "frisians_salt_works",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("frisians_building", "Salt Works"),
-   helptext_script = dirname .. "helptexts.lua",
    icon = dirname .. "menu.png",
    size = "small",
 
@@ -19,10 +18,10 @@ descriptions:new_productionsite_type {
       brick = 1,
    },
 
-   animation_dirname = dirname,
+   animation_directory = dirname,
    animations = {
-      idle       = { directory = dirname, hotspot = { 45, 48 }},
-      unoccupied = { directory = dirname, hotspot = { 45, 48 }},
+      idle       = { hotspot = { 45, 48 }},
+      unoccupied = { hotspot = { 45, 48 }},
    },
 
    aihints = {
@@ -31,10 +30,6 @@ descriptions:new_productionsite_type {
 
    working_positions = {
       frisians_salter = 1
-   },
-
-   outputs = {
-      "salt"
    },
 
    programs = {

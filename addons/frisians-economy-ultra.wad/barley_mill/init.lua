@@ -4,7 +4,6 @@ descriptions:new_productionsite_type {
    name = "frisians_barley_mill",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("frisians_building", "Barley Mill"),
-   helptext_script = dirname .. "helptexts.lua",
    icon = dirname .. "menu.png",
    size = "medium",
 
@@ -43,9 +42,6 @@ descriptions:new_productionsite_type {
    inputs = {
       { name = "barley", amount = 5 }
    },
-   outputs = {
-      "barley_flour"
-   },
 
    programs = {
       main = {
@@ -55,7 +51,6 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs barley_flour",
             "consume=barley",
             "sleep=duration:5s",
-            "playsound=sound/mill/mill_turning 240",
             "animate=working duration:10s",
             "produce=barley_flour"
          }

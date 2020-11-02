@@ -6,20 +6,38 @@ push_textdomain("frisians-economy-ultra.wad", true)
 --                                Immovables
 --------------------------------------------------------------------------------
 
-descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_harvested")
-descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_ripe")
-descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_medium")
-descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_small")
-descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_tiny")
+descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_harvested", { helptexts = { purpose =
+                  _"This rye field has been harvested."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_ripe", { helptexts = { purpose =
+                  _"This rye field is ready for harvesting."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_medium", { helptexts = { purpose =
+                  _"This rye field is flowering. Beekeepers can use it to produce honey."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_small", { helptexts = { purpose =
+                  _"This rye field is growing."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_tiny", { helptexts = { purpose =
+                  _"This rye field has just been planted."
+               }})
 
 --------------------------------------------------------------------------------
 --                                  Wares
 --------------------------------------------------------------------------------
 
-descriptions:modify_unit("tribe", "frisians", "add_ware", "salt", 1)
-descriptions:modify_unit("tribe", "frisians", "add_ware", "rye", 1)
-descriptions:modify_unit("tribe", "frisians", "add_ware", "rye_flour", 1)
-descriptions:modify_unit("tribe", "frisians", "add_ware", "barley_flour", 1)
+descriptions:modify_unit("tribe", "frisians", "add_ware", "salt", 1, { helptexts = { purpose =
+                  _"Salt is washed from the sea and used to conserve meat and fish."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_ware", "rye", 1, { helptexts = { purpose =
+                  _"Rye is used to bake bread. It needs to be ground into flour first."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_ware", "rye_flour", 1, { helptexts = { purpose =
+                  _"After being ground to flour, rye can be used to bake bread."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_ware", "barley_flour", 1, { helptexts = { purpose =
+                  _"After being ground to flour, barley can be used to bake bread."
+               }})
 
 --------------------------------------------------------------------------------
 --                                 Workers
@@ -43,17 +61,30 @@ descriptions:modify_unit("worker", "frisians_farmer", "programs", "set", "harves
          "return"
       })
 
-descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_salter", 2)
-descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_miller", 2)
+descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_salter", 2, { helptexts = { purpose =
+                  _"The salter washes salt from the shores of the sea."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_miller", 2, { helptexts = { purpose =
+                  _"The miller grinds barley and rye into flour."
+               }})
 
 --------------------------------------------------------------------------------
 --                               New Production Sites
 --------------------------------------------------------------------------------
 
-descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_salt_works")
-descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_barley_mill")
-descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_rye_mill")
-descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_rye_farm")
+descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_salt_works", { helptexts = {
+                  purpose = _"The salter working at the salt works washes salt from the sea.",
+                  note    = _"The salter needs water within its work area.",
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_barley_mill", { helptexts = { purpose =
+                  _"The barley mill grinds barley into barley flour."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_rye_mill", { helptexts = { purpose =
+                  _"The rye mill grinds rye into rye flour."
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_rye_farm", { helptexts = { purpose =
+                  _"The rye farm sows and harvests rye."
+               }})
 
 --------------------------------------------------------------------------------
 --                                Production Sites
@@ -75,7 +106,7 @@ descriptions:modify_unit("productionsite", "frisians_smokery", "programs", "set"
             "animate=working duration:30s",
             "produce=smoked_meat:2"
       }})
-descriptions:modify_unit("productionsite", "frisians_smokery", "programs", "set", "work", { descname = _"working", actions = {
+descriptions:modify_unit("productionsite", "frisians_smokery", "programs", "set", "main", { descname = _"working", actions = {
             "call=smoke_fish",
             "call=smoke_meat"
       }})
@@ -84,7 +115,7 @@ descriptions:modify_unit("productionsite", "frisians_bakery", "input", "remove_w
 descriptions:modify_unit("productionsite", "frisians_bakery", "input", "modify_ware", "water", 5)
 descriptions:modify_unit("productionsite", "frisians_bakery", "input", "add_ware", "barley_flour", 5)
 descriptions:modify_unit("productionsite", "frisians_bakery", "input", "add_ware", "rye_flour", 5)
-descriptions:modify_unit("productionsite", "frisians_bakery", "programs", "set", "work", { descname = _"baking bread", actions = {
+descriptions:modify_unit("productionsite", "frisians_bakery", "programs", "set", "main", { descname = _"baking bread", actions = {
             "return=skipped unless economy needs bread_frisians or workers need experience",
             "consume=water barley_flour rye_flour",
             "sleep=duration:20s",
@@ -111,7 +142,7 @@ descriptions:modify_unit("productionsite", "frisians_honey_bread_bakery", "progr
             "animate=working duration:20s",
             "produce=bread_frisians"
       }})
-descriptions:modify_unit("productionsite", "frisians_honey_bread_bakery", "programs", "set", "work", { descname = _"working", actions = {
+descriptions:modify_unit("productionsite", "frisians_honey_bread_bakery", "programs", "set", "main", { descname = _"working", actions = {
             "call=bake_honey",
             "call=bake_normal"
       }})

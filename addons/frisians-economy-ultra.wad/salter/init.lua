@@ -4,7 +4,6 @@ descriptions:new_worker_type {
    name = "frisians_salter",
    -- TRANSLATORS: This is a worker name used in lists of workers
    descname = pgettext ("frisians_worker", "Salter"),
-   helptext_script = dirname .. "helptexts.lua",
    icon = dirname .. "menu.png",
    vision_range = 2,
 
@@ -19,7 +18,7 @@ descriptions:new_worker_type {
       make_salt = {
          "findspace=size:swim radius:4",
          "walk=coords",
-         "animate=dig 30000",
+         "animate=dig duration:30s",
          "createware=salt",
          "return"
       }

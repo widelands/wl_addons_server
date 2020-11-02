@@ -4,7 +4,6 @@ descriptions:new_productionsite_type {
    name = "frisians_rye_farm",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext ("frisians_building", "Rye Farm"),
-   helptext_script = dirname .. "helptexts.lua",
    icon = dirname .. "menu.png",
    size = "big",
 
@@ -36,10 +35,6 @@ descriptions:new_productionsite_type {
 
    working_positions = {
       frisians_farmer = 1
-   },
-
-   outputs = {
-      "rye"
    },
 
    programs = {
