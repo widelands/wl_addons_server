@@ -170,13 +170,13 @@ public class UpdateList {
 		for (String s : args) {
 			if (s.startsWith("+")) {
 				increase_i18n.add(s.substring(1));
-			} else if (s.startsWith("§")) {
+			} else if (s.startsWith("!")) {
 				verify.add(s.substring(1));
 			} else {
-				System.out.println("USAGE: java UpdateList {[+|§]NAME.wad}");
+				System.out.println("USAGE: java UpdateList {[+|!]NAME.wad}");
 				System.out.println("Rebuilds the add-ons list.");
 				System.out.println("Prefix a filenames with ‘+’ to increase the i18n version by 1.");
-				System.out.println("Prefix a filename with ‘§’ to mark the add-on as verified.");
+				System.out.println("Prefix a filename with ‘!’ to mark the add-on as verified.");
 				return;
 			}
 		}

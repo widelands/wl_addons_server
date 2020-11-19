@@ -17,7 +17,7 @@ When you updated any of the files in `po/` or added new ones, run `buildcats.sh`
 
 ### Verifying add-ons
 
-Run `java UpdateList §cool_feature.wad` (don’t forget the '§' before the add-on’s name!), then run `buildcats.sh`, then git add,commit,push.
+Run `java UpdateList !cool_feature.wad` (don’t forget the '!' before the add-on’s name!), then run `buildcats.sh`, then git add,commit,push.
 
 ### Notes
 
@@ -25,7 +25,7 @@ Updating an add-on will automatically set it to Not Verified. It is not allowed 
 
 `buildcats.sh` and `java UpdateList` need to be run from the base folder. Run `javac UpdateList.java` before using either command the first time.
 
-`buildcats.sh` usually prints some errors which are false alarms. Sometimes it may create new files called `"*.po"` (yes, with an asterisk in the filename!) in the `po/` folder which need to be deleted manually before `git add`ing. This script is not clever enough to catch translatable strings in config scripts (such as a map’s `elemental` file), except for the `addon` file.
+`buildcats.sh` usually prints some errors which are false alarms. This script is not clever enough to catch translatable strings in config scripts (such as a map’s `elemental` file), except for the `addon` file.
 
 [Further info about add-ons can be found here.](https://github.com/Noordfrees/widelands/blob/addons/doc/sphinx/source/add-ons.rst)
 
