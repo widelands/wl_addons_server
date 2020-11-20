@@ -8,21 +8,27 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-20 20:26+0100\n"
-"PO-Revision-Date: 2020-05-30 19:08+0200\n"
+"PO-Revision-Date: 2020-11-20 20:26+0100\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>\n"
 "Language-Team: \n"
 "Language: nds\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.1\n"
 
-#: higher-experience.wad/addon:4
-msgid "Higher Experience"
-msgstr "Mehr Erfahrung"
+#: 100-wells.wad/addon:4 100-wells.wad/init.lua:19
+msgid "100 Wells"
+msgstr "100 Wellen"
 
-#: higher-experience.wad/addon:5
+#: 100-wells.wad/addon:5
 msgid ""
-"Increases all worker experience thresholds to 40 times the default value."
+"Win condition about building 100 wells to win. This does not work with "
+"amazons."
 msgstr ""
-"Verhoogt all Erfahrungs-Weerten vun Arbeiders up 40 Maal so vööl as normaal."
+"Upgaav tum Winnen, waar man 100 Wellen bauen sall. Amazonen könen daar nich "
+"winnen."
+
+#: 100-wells.wad/init.lua:21
+msgid "The first player who builds 100 wells wins"
+msgstr "De eeste Speler, well 100 Wellen baut hett, winnt"

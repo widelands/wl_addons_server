@@ -9,16 +9,16 @@ include "scripting/win_conditions/win_condition_functions.lua"
 include "scripting/win_conditions/win_condition_texts.lua"
 
 -- Add-ons need to specify this
-local wc_textdomain = "1001-wells.wad"
+local wc_textdomain = "100-wells.wad"
 
 push_textdomain(wc_textdomain, true)
 
-local wc_name = "1001 Wells"
+local wc_name = "100 Wells"
 -- This needs to be exactly like wc_name, but localized, because wc_name
 -- will be used as the key to fetch the translation in C++
-local wc_descname = _("1001 Wells")
+local wc_descname = _("100 Wells")
 local wc_version = 1
-local wc_desc = _([[The first player who builds 1001 wells wins]])
+local wc_desc = _([[The first player who builds 100 wells wins]])
 
 local r = {
    name = wc_name,
@@ -32,7 +32,7 @@ local r = {
       sleep(1000)
       check_player_defeated(plrs, lost_game.title, lost_game.body, wc_descname, wc_version)
       for i,p in pairs(plrs) do
-         if #p:get_buildings(p.tribe.name .. "_well") > 1000 then
+         if #p:get_buildings(p.tribe.name .. "_well") > 99 then
             wl.game.report_result(p, 1)
             for j,loser in pairs(plrs) do
                if p.player_number ~= loser.player_number then
