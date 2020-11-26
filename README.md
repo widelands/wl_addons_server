@@ -27,7 +27,7 @@ Updating an add-on will automatically set it to Not Verified. It is not allowed 
 
 `buildcats.sh` usually prints some errors which are false alarms. This script is not clever enough to catch translatable strings in config scripts (such as a map’s `elemental` file), except for the `addon` file.
 
-[Further info about add-ons can be found here.](https://github.com/Noordfrees/widelands/blob/addons/doc/sphinx/source/add-ons.rst)
+[Further info about add-ons can be found here.](https://github.com/widelands/widelands/blob/master/doc/sphinx/source/add-ons.rst)
 
 ### Issues
 
