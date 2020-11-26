@@ -29,11 +29,13 @@ Updating an add-on will automatically set it to Not Verified. It is not allowed 
 
 [Further info about add-ons can be found here.](https://github.com/widelands/widelands/blob/master/doc/sphinx/source/add-ons.rst)
 
+If you do not wish to create a pull request here, it is also possible to submit add-ons on the forum: https://www.widelands.org/forum/topic/5073
+
 ### Issues
 
 If you encounter any issues related to add-ons, please **do not report them against the official game**! Report them on this repository instead.
 
-Keep in mind that currently some of the add-ons here are meant as proof-of-concept dummies. Please do not report any errors regarding those. Also don’t forget that the add-ons feature is still under development and not even part of the official game yet.
+Keep in mind that currently some of the add-ons here are meant as proof-of-concept dummies. Please do not report any errors regarding those.
 
 Issues not directly related to add-ons should be reported [against the official game](https://github.com/widelands/widelands/issues).
 
