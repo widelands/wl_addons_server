@@ -6,9 +6,9 @@ public class UpdateList {
 	public static class Data {
 		public static class Comment {
 			public final String username, message;
-			public final int version;
+			public final String version;
 			public final long timestamp;
-			public Comment(String n, String m, int v, long t) {
+			public Comment(String n, String m, String v, long t) {
 				username = n;
 				message = m;
 				version = v;
@@ -16,12 +16,13 @@ public class UpdateList {
 			}
 		}
 		
-		public final int version, i18n_version, votes;
+		public final String version;
+		public final int i18n_version, votes;
 		public final boolean verified;
 		public final long timestamp, downloadCount;
 		public final float rating;
 		public final List<Comment> comments;
-		public Data(int v, int i, boolean ver, long t, long dl, int vot, float r, List<Comment> c) {
+		public Data(String v, int i, boolean ver, long t, long dl, int vot, float r, List<Comment> c) {
 			comments = c;
 			version = v;
 			i18n_version = i;
@@ -49,11 +50,11 @@ public class UpdateList {
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) {
 				String n = lines.remove(0);
 				String m = lines.remove(0);
-				int v = Integer.valueOf(lines.remove(0));
+				String v = lines.remove(0);
 				long t = Long.valueOf(lines.remove(0));
 				comments.add(new Data.Comment(n, m, v, t));
 			}
-			final int version = Integer.valueOf(lines.remove(0));
+			final String version = lines.remove(0);
 			final int i18n_version = Integer.valueOf(lines.remove(0));
 			lines.remove(0); lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
@@ -102,12 +103,11 @@ public class UpdateList {
 	}
 	
 	private static void writeAddon(PrintWriter w, File addon, Data data) throws Exception {
-		if (data == null) data = new Data(0, 1, false, System.currentTimeMillis(),
+		if (data == null) data = new Data("0", 1, false, System.currentTimeMillis() / 1000,
 				// some dummy values for initialization of not-yet-implemented data
 				12345, (int)(10 * Math.random()), (float)(9 * Math.random() + 1), new ArrayList<>());
 		
-		String descname = null, descr = null, author = null, category = null;
-		Integer new_version = null;
+		String descname = null, descr = null, author = null, category = null, new_version = null;
 		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(),
 				locales = new ArrayList<>(), checksums = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
 		recurse(dirs, files, checksums, sizes, addon, "");
@@ -125,7 +125,7 @@ public class UpdateList {
 				case "description": descr = arg; break;
 				case "author": author = arg; break;
 				case "category": category = arg; break;
-				case "version": new_version = Integer.valueOf(arg); break;
+				case "version": new_version = arg; break;
 				case "requires":
 					for (String req : arg.split(",")) requires.add(req);
 					break;
@@ -161,7 +161,7 @@ public class UpdateList {
 		w.println(locales.size()); for (String r : locales) w.println(r);
 		w.println(checksums.size()); for (String r : checksums) w.println(r);
 		// never verify immediately during an update
-		w.println(data.verified && data.version == new_version ? "verified" : "unchecked");
+		w.println(data.verified && data.version.equals(new_version) ? "verified" : "unchecked");
 	}
 	
 	public static void main(String[] args) throws Exception {
@@ -184,7 +184,7 @@ public class UpdateList {
 
 		PrintWriter write = new PrintWriter(new File("list"));
 		File[] files = new File("addons").listFiles();
-		write.println("1");  // version
+		write.println("1");  // list format version
 		write.println(files.length);
 		for (File file : files) {
 			writeAddon(write, file, data.get(file.getName()));
