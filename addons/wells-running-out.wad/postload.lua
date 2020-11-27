@@ -90,3 +90,5 @@ descriptions:modify_unit("productionsite", "barbarians_well", "enhancement", {
 })
 descriptions:modify_unit("worker", "barbarians_carrier", "becomes", "barbarians_well_keeper")
 descriptions:modify_unit("worker", "barbarians_carrier", "experience", 20)
+
+pop_textdomain()

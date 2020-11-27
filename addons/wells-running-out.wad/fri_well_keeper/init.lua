@@ -1,4 +1,5 @@
 dirname = path.dirname (__file__)
+push_textdomain("wells-running-out.wad", true)
 
 descriptions:new_worker_type {
    name = "frisians_well_keeper",
@@ -41,3 +42,4 @@ descriptions:new_worker_type {
       },
    },
 }
+pop_textdomain()

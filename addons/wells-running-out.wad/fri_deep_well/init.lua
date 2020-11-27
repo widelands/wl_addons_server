@@ -1,4 +1,5 @@
 dirname = path.dirname(__file__)
+push_textdomain("wells-running-out.wad", true)
 
 descriptions:new_productionsite_type {
    name = "frisians_well_deep",
@@ -30,3 +31,4 @@ descriptions:new_productionsite_type {
       },
    },
 }
+pop_textdomain()
