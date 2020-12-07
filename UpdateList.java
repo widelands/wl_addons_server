@@ -16,14 +16,15 @@ public class UpdateList {
 			}
 		}
 		
-		public final String version;
+		public final String version, uploader;
 		public final int i18n_version, votes;
 		public final boolean verified;
 		public final long timestamp, downloadCount;
 		public final float rating;
 		public final List<Comment> comments;
-		public Data(String v, int i, boolean ver, long t, long dl, int vot, float r, List<Comment> c) {
+		public Data(String v, String u, int i, boolean ver, long t, long dl, int vot, float r, List<Comment> c) {
 			comments = c;
+			uploader = u;
 			version = v;
 			i18n_version = i;
 			verified = ver;
@@ -41,7 +42,8 @@ public class UpdateList {
 		final int size = Integer.valueOf(lines.remove(0));
 		for (int i = 0; i < size; ++i) {
 			final String addon = lines.remove(0);
-			lines.remove(0); lines.remove(0); lines.remove(0); lines.remove(0);
+			lines.remove(0); lines.remove(0); lines.remove(0);
+			final String uploader = lines.remove(0);
 			final long timestamp = Long.valueOf(lines.remove(0));
 			final long downloadCount = Long.valueOf(lines.remove(0));
 			final int votes = Integer.valueOf(lines.remove(0));
@@ -62,7 +64,7 @@ public class UpdateList {
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
-			result.put(addon, new Data(version, i18n_version + (increase.contains(addon) ? 1 : 0),
+			result.put(addon, new Data(version, uploader, i18n_version + (increase.contains(addon) ? 1 : 0),
 					lines.remove(0).equals("verified") || verify.contains(addon), timestamp, downloadCount, votes, rating, comments));
 		}
 		return result;
@@ -102,10 +104,12 @@ public class UpdateList {
 		}
 	}
 	
+	private static final float[] kDefaultRatings = new float[] { 9.5f, 9.1f, 8.7f, 8.3f, 7.9f, 7.4f, 6.8f };  // dummy values
+	
 	private static void writeAddon(PrintWriter w, File addon, Data data) throws Exception {
-		if (data == null) data = new Data("0", 1, false, System.currentTimeMillis() / 1000,
+		if (data == null) data = new Data("0", "Nordfriese", 1, false, System.currentTimeMillis() / 1000,
 				// some dummy values for initialization of not-yet-implemented data
-				12345, (int)(10 * Math.random()), (float)(9 * Math.random() + 1), new ArrayList<>());
+				12345, (int)(10 * Math.random()), kDefaultRatings[(int)(kDefaultRatings.length * Math.random())], new ArrayList<>());
 		
 		String descname = null, descr = null, author = null, category = null, new_version = null;
 		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(),
@@ -139,7 +143,7 @@ public class UpdateList {
 		w.println(descname);
 		w.println(descr);
 		w.println(author);
-		w.println("Nordfriese");  // uploader
+		w.println(data.uploader);
 		w.println(data.timestamp);
 		w.println(data.downloadCount);
 		w.println(data.votes);
