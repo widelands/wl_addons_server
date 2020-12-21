@@ -1,5 +1,5 @@
 1
-12
+13
 challenge-map-set.wad
 Challenge Maps Set
 A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained maps: Dust in the Wind, To Make the Desert Bloom, The Great Escape, Concentric Rings. Recommended for advanced players who find playing alone with Poor Hamlet against six or more teamed-up trading outpost AIs too easy.
@@ -15,16 +15,15 @@ Nordfriese
 11404835
 maps
 0
-47
+51
 Challenge Maps
 Challenge Maps/to make the desert bloom.wmf
-Challenge Maps/to make the desert bloom.wmf/scripting
 Challenge Maps/to make the desert bloom.wmf/binary
 Challenge Maps/dust in the wind.wmf
-Challenge Maps/dust in the wind.wmf/scripting
 Challenge Maps/dust in the wind.wmf/binary
+Challenge Maps/The_Great_Escape.wmf
+Challenge Maps/The_Great_Escape.wmf/scripting
 Challenge Maps/concentric rings.wmf
-Challenge Maps/concentric rings.wmf/scripting
 Challenge Maps/concentric rings.wmf/binary
 Challenge Maps/concentric rings.wmf/player
 Challenge Maps/concentric rings.wmf/player/4
@@ -44,7 +43,6 @@ Challenge Maps/concentric rings.wmf/player/8/view
 Challenge Maps/concentric rings.wmf/player/6
 Challenge Maps/concentric rings.wmf/player/6/view
 Challenge Maps/The Great Escape.wmf
-Challenge Maps/The Great Escape.wmf/scripting
 Challenge Maps/The Great Escape.wmf/binary
 Challenge Maps/The Great Escape.wmf/player
 Challenge Maps/The Great Escape.wmf/player/4
@@ -63,6 +61,12 @@ Challenge Maps/The Great Escape.wmf/player/8
 Challenge Maps/The Great Escape.wmf/player/8/view
 Challenge Maps/The Great Escape.wmf/player/6
 Challenge Maps/The Great Escape.wmf/player/6/view
+Challenge Maps/dust_in_the_wind.wmf
+Challenge Maps/dust_in_the_wind.wmf/scripting
+Challenge Maps/to_make_the_desert_bloom.wmf
+Challenge Maps/to_make_the_desert_bloom.wmf/scripting
+Challenge Maps/concentric_rings.wmf
+Challenge Maps/concentric_rings.wmf/scripting
 281
 addon
 Challenge Maps/to make the desert bloom.wmf/port_spaces
@@ -1020,6 +1024,105 @@ ddeece953b2517cb8a7af9e8602c0af5
 9b3af4dacfd827217b9199030adff0a8
 90aa17d58ff64635608d3b12c700fe16
 bf8a74c3dd345a6e06dac4f8dcfa7d70
+unchecked
+test_theme.wad
+_"Test Theme
+_"An example theme.
+Nordfriese
+Nordfriese
+1608552048
+12345
+1
+7.4
+0
+0.1.0
+1
+12299016
+theme
+0
+11
+wui
+wui/windows
+fsmenu
+fsmenu/windows
+loadscreens
+loadscreens/mainmenu
+loadscreens/gameloading
+loadscreens/gameloading/wasteland
+loadscreens/gameloading/summer
+loadscreens/gameloading/winter
+loadscreens/gameloading/desert
+34
+addon
+wui/button.png
+wui/windows/left.png
+wui/windows/maximize.png
+wui/windows/right.png
+wui/windows/close.png
+wui/windows/unpin.png
+wui/windows/background.png
+wui/windows/bottom.png
+wui/windows/pin.png
+wui/windows/top.png
+wui/windows/minimize.png
+fsmenu/button.png
+fsmenu/windows/left.png
+fsmenu/windows/maximize.png
+fsmenu/windows/right.png
+fsmenu/windows/close.png
+fsmenu/windows/unpin.png
+fsmenu/windows/background.png
+fsmenu/windows/bottom.png
+fsmenu/windows/pin.png
+fsmenu/windows/top.png
+fsmenu/windows/minimize.png
+loadscreens/logo.png
+loadscreens/splash.jpg
+loadscreens/editor.jpg
+loadscreens/gametips.png
+loadscreens/mainmenu/Volcano.jpg
+loadscreens/mainmenu/Bar02.jpg
+loadscreens/gameloading/wasteland/watt.png
+loadscreens/gameloading/summer/jaegersee.png
+loadscreens/gameloading/winter/jaegersee.png
+loadscreens/gameloading/desert/sunsetlambs.png
+init.lua
+0
+34
+398434d853b3e139429cd0e3148ff345
+38244ee829ae080b54149cff2ca3a279
+016b751063a225bba009baab5066e374
+27b84f042372d14f11984a8b52ab9e52
+67d9e71ce19fe97f70d4d260db36ce71
+60986e74d77b2ca06cd2812db5f71a5e
+a6b9500ab34fc48debb9df73bff542be
+cf99cedf33661229d66855b2a8368b56
+f75e12ed6a325af2389432447161b600
+dab4f9ccbc5830b19add29d4bc72048c
+b2ba4ecb71f0e84e5877cda218ca6794
+e56fb3c2416a67bb7b1addb65b1a2876
+2571145b5d9d3939f95395bf6d16c5f2
+ebd168ce033eba46b17cbd04e7c599bf
+114a11a010c414138c6592073662c4f4
+aa731cd619a9e8f778ff592b3ed1d9e5
+f83beff56c24e21facab684ffd745bcc
+5a1424ed9169590fd855f445aebf82d8
+e1c2dcf5cbe9f1649c133c43af669f7b
+773a2894373776edf4aee619ba230bce
+010d016d278e0750f83121af280a4bb7
+37bb5068e107b660d2fa146a7200473a
+84243bfd50917fc3397c49f3b5e6734a
+2261d11abb95e7e090c435b51b2fb835
+79d8b4e8334552dfe677b97366207f7c
+04ad8422682f08806c14d00fba5f5b1e
+6bddf7d6be7b503c07f0a5f3081e6840
+81f1175fefbd9152ade861b620516ff5
+fa4409c3209b8c14e675cfe4075a1cc2
+9b6db72f93401f28b0ac5af5d42c2cda
+03fad990ed3275fce0536d97291e8a52
+3b28e235456c9af978ce6a70664dc9f3
+203e1f53f30b63883c3bc63018453ffc
+22a6f430edfb306c55e33a17a94c0072
 unchecked
 fishy.wad
 Fishy
