@@ -122,6 +122,7 @@ public class UpdateList {
 			if (str.length < 2) continue;
 			String arg = str[1];
 			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
+			if (arg.startsWith("_")) arg = arg.substring(1);
 			if (arg.startsWith("\"")) arg = arg.substring(1);
 			if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
 			switch (str[0]) {
