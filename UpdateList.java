@@ -15,7 +15,7 @@ public class UpdateList {
 				timestamp = t;
 			}
 		}
-		
+
 		public final String version, uploader;
 		public final int i18n_version, votes;
 		public final boolean verified;
@@ -34,7 +34,7 @@ public class UpdateList {
 			rating = votes > 0 ? r : 0;
 		}
 	}
-	
+
 	private static Map<String, Data> detectLocaleVersions(List<String> increase, List<String> verify) throws Exception {
 		List<String> lines = Files.readAllLines(new File("list").toPath());
 		Map<String, Data> result = new HashMap<>();
@@ -69,7 +69,7 @@ public class UpdateList {
 		}
 		return result;
 	}
-	
+
 	private static String checksum(File f) {
 		try {
 			Runtime rt = Runtime.getRuntime();
@@ -84,9 +84,15 @@ public class UpdateList {
 		}
 		return "";
 	}
-	
+
+	private static File[] listSorted(File dir) {
+		File[] files = dir.listFiles();
+		Arrays.sort(files);
+		return files;
+	}
+
 	private static void recurse(List<String> dirs, List<String> files, List<String> checksums, List<Long> size, File curdir, String prefix) {
-		for (File f : curdir.listFiles()) {
+		for (File f : listSorted(curdir)) {
 			if (f.isFile()) {
 				files.add(prefix + f.getName());
 				size.add(f.length());
@@ -97,26 +103,27 @@ public class UpdateList {
 			}
 		}
 	}
+
 	private static void gatherLocales(File addon, List<String> locales, List<String> checksums) {
-		for (File f : new File(addon, "../../i18n/" + addon.getName()).listFiles()) {
+		for (File f : listSorted(new File(addon, "../../i18n/" + addon.getName()))) {
 			locales.add(f.getName());
 			checksums.add(checksum(f));
 		}
 	}
-	
+
 	private static final float[] kDefaultRatings = new float[] { 9.5f, 9.1f, 8.7f, 8.3f, 7.9f, 7.4f, 6.8f };  // dummy values
-	
+
 	private static void writeAddon(PrintWriter w, File addon, Data data) throws Exception {
 		if (data == null) data = new Data("0", "Nordfriese", 1, false, System.currentTimeMillis() / 1000,
 				// some dummy values for initialization of not-yet-implemented data
 				12345, (int)(10 * Math.random()), kDefaultRatings[(int)(kDefaultRatings.length * Math.random())], new ArrayList<>());
-		
+
 		String descname = null, descr = null, author = null, category = null, new_version = null;
 		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(),
 				locales = new ArrayList<>(), checksums = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
 		recurse(dirs, files, checksums, sizes, addon, "");
 		gatherLocales(addon, locales, checksums);
-		
+
 		for (String line : Files.readAllLines(new File(addon, "addon").toPath())) {
 			String[] str = line.split("=");
 			if (str.length < 2) continue;
@@ -139,7 +146,7 @@ public class UpdateList {
 		}
 		long totalSize = 0;
 		for (Long l : sizes) totalSize += l;
-		
+
 		w.println(addon.getName());
 		w.println(descname);
 		w.println(descr);
@@ -168,7 +175,7 @@ public class UpdateList {
 		// never verify immediately during an update
 		w.println(data.verified && data.version.equals(new_version) ? "verified" : "unchecked");
 	}
-	
+
 	public static void main(String[] args) throws Exception {
 		List<String> increase_i18n = new ArrayList<>();
 		List<String> verify = new ArrayList<>();
@@ -188,7 +195,7 @@ public class UpdateList {
 		final Map<String, Data> data = detectLocaleVersions(increase_i18n, verify);
 
 		PrintWriter write = new PrintWriter(new File("list"));
-		File[] files = new File("addons").listFiles();
+		File[] files = listSorted(new File("addons"));
 		write.println("1");  // list format version
 		write.println(files.length);
 		for (File file : files) {
