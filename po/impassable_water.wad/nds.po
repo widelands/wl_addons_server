@@ -17,18 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: impassable_water.wad/addon:4
-msgid "Shallow Water"
+#: impassable_water.wad/addon:2 impassable_water.wad/editor.lua:6
+msgid "Impassable Water"
 msgstr "Flackwater"
 
-#: impassable_water.wad/addon:5
+#: impassable_water.wad/addon:3
 msgid "Shallow water terrains, impassable for ships but walkable."
 msgstr ""
 "Landskuppen mit Flackwater, waar Arbeiders aver keene Schippen dörkomen."
-
-#: impassable_water.wad/editor.lua:6
-msgid "Impassable Water"
-msgstr "Flackwater"
 
 #: impassable_water.wad/world/terrains/desert/reef/init.lua:6
 msgid "Reef"
@@ -41,3 +37,6 @@ msgstr "Waterblomen"
 #: impassable_water.wad/world/terrains/wasteland/algae_slick/init.lua:6
 msgid "Algae slick"
 msgstr "Algensliek"
+
+#~ msgid "Shallow Water"
+#~ msgstr "Flackwater"

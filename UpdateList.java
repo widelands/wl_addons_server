@@ -18,11 +18,12 @@ public class UpdateList {
 
 		public final String version, uploader;
 		public final int i18n_version, votes;
+		public final float rating;
 		public final boolean verified;
 		public final long timestamp, downloadCount;
-		public final float rating;
 		public final List<Comment> comments;
-		public Data(String v, String u, int i, boolean ver, long t, long dl, int vot, float r, List<Comment> c) {
+		public final int[] ratings;
+		public Data(String v, String u, int i, boolean ver, long t, long dl, int vot, float r, List<Comment> c, int[] rs) {
 			comments = c;
 			uploader = u;
 			version = v;
@@ -32,11 +33,12 @@ public class UpdateList {
 			votes = vot;
 			downloadCount = dl;
 			rating = votes > 0 ? r : 0;
+			ratings = rs;
 		}
 	}
 
-	private static Map<String, Data> detectLocaleVersions(List<String> increase, List<String> verify) throws Exception {
-		List<String> lines = Files.readAllLines(new File("list").toPath());
+	private static Map<String, Data> detectLocaleVersions(int listVersion, List<String> increase, List<String> verify) throws Exception {
+		List<String> lines = Files.readAllLines(new File(listVersion == 1 ? "list" : ("list_" + listVersion)).toPath());
 		Map<String, Data> result = new HashMap<>();
 		lines.remove(0);
 		final int size = Integer.valueOf(lines.remove(0));
@@ -46,8 +48,15 @@ public class UpdateList {
 			final String uploader = lines.remove(0);
 			final long timestamp = Long.valueOf(lines.remove(0));
 			final long downloadCount = Long.valueOf(lines.remove(0));
-			final int votes = Integer.valueOf(lines.remove(0));
-			final float rating = Float.valueOf(lines.remove(0));
+			
+			int votes = 0; float rating = 0; int[] ratings = new int[10];
+			if (listVersion < 2) {
+				votes = Integer.valueOf(lines.remove(0));
+				rating = Float.valueOf(lines.remove(0));
+			} else {
+				for (int j = 0; j < ratings.length; ++j) ratings[j] = Integer.valueOf(lines.remove(0));
+			}
+			
 			List<Data.Comment> comments = new ArrayList<>();
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) {
 				String n = lines.remove(0);
@@ -64,8 +73,9 @@ public class UpdateList {
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
 			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
+			if (listVersion >= 2) {for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) { lines.remove(0); lines.remove(0); }}
 			result.put(addon, new Data(version, uploader, i18n_version + (increase.contains(addon) ? 1 : 0),
-					lines.remove(0).equals("verified") || verify.contains(addon), timestamp, downloadCount, votes, rating, comments));
+					lines.remove(0).equals("verified") || verify.contains(addon), timestamp, downloadCount, votes, rating, comments, ratings));
 		}
 		return result;
 	}
@@ -111,18 +121,30 @@ public class UpdateList {
 		}
 	}
 
+	private static void gatherScreenshots(File addon, List<String> screenies) throws Exception {
+		File dir = new File(addon, "../../screenshots/" + addon.getName());
+		if (dir.isDirectory()) {
+			List<String> in = Files.readAllLines(new File(addon, "../../screenshots/" + addon.getName() + "/descriptions").toPath());
+			while (!in.isEmpty()) {
+				screenies.add(in.remove(0));
+				screenies.add(in.remove(0));
+			}
+		}
+	}
+
 	private static final float[] kDefaultRatings = new float[] { 9.5f, 9.1f, 8.7f, 8.3f, 7.9f, 7.4f, 6.8f };  // dummy values
 
-	private static void writeAddon(PrintWriter w, File addon, Data data) throws Exception {
+	private static void writeAddon(int listVersion, PrintWriter w, File addon, Data data) throws Exception {
 		if (data == null) data = new Data("0", "Nordfriese", 1, false, System.currentTimeMillis() / 1000,
 				// some dummy values for initialization of not-yet-implemented data
-				12345, (int)(10 * Math.random()), kDefaultRatings[(int)(kDefaultRatings.length * Math.random())], new ArrayList<>());
+				12345, (int)(10 * Math.random()), kDefaultRatings[(int)(kDefaultRatings.length * Math.random())], new ArrayList<>(), new int[10]);
 
 		String descname = null, descr = null, author = null, category = null, new_version = null;
 		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(),
-				locales = new ArrayList<>(), checksums = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
+				locales = new ArrayList<>(), checksums = new ArrayList<>(), screenies = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
 		recurse(dirs, files, checksums, sizes, addon, "");
 		gatherLocales(addon, locales, checksums);
+		gatherScreenshots(addon, screenies);
 
 		for (String line : Files.readAllLines(new File(addon, "addon").toPath())) {
 			String[] str = line.split("=");
@@ -154,8 +176,12 @@ public class UpdateList {
 		w.println(data.uploader);
 		w.println(data.timestamp);
 		w.println(data.downloadCount);
-		w.println(data.votes);
-		w.println(data.rating);
+		if (listVersion < 2) {
+			w.println(data.votes);
+			w.println(data.rating);
+		} else {
+			for (int r : data.ratings) w.println(r);
+		}
 		w.println(data.comments.size());
 		for (Data.Comment c : data.comments) {
 			w.println(c.username);
@@ -172,6 +198,12 @@ public class UpdateList {
 		w.println(files.size()); for (String r : files) w.println(r);
 		w.println(locales.size()); for (String r : locales) w.println(r);
 		w.println(checksums.size()); for (String r : checksums) w.println(r);
+
+		if (listVersion >= 2) {
+			w.println(screenies.size() / 2);
+			for (String r : screenies) w.println(r);
+		}
+
 		// never verify immediately during an update
 		w.println(data.verified && data.version.equals(new_version) ? "verified" : "unchecked");
 	}
@@ -192,15 +224,19 @@ public class UpdateList {
 				return;
 			}
 		}
-		final Map<String, Data> data = detectLocaleVersions(increase_i18n, verify);
+		for (int listVersion = 1; listVersion <= 2; ++listVersion) {
+			System.out.println("Parsing list for version " + listVersion);
+			final Map<String, Data> data = detectLocaleVersions(listVersion, increase_i18n, verify);
 
-		PrintWriter write = new PrintWriter(new File("list"));
-		File[] files = listSorted(new File("addons"));
-		write.println("1");  // list format version
-		write.println(files.length);
-		for (File file : files) {
-			writeAddon(write, file, data.get(file.getName()));
+			PrintWriter write = new PrintWriter(new File(listVersion == 1 ? "list" : ("list_" + listVersion)));
+			File[] files = listSorted(new File("addons"));
+			write.println(listVersion);
+			write.println(files.length);
+			for (File file : files) {
+				System.out.println("Writing add-on " + file.getName() + " for version " + listVersion);
+				writeAddon(listVersion, write, file, data.get(file.getName()));
+			}
+			write.close();
 		}
-		write.close();
 	}
 }
