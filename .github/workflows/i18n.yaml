@@ -1,0 +1,29 @@
+name: Update Translations
+on:
+  schedule:
+    # Daily at 3:00 a.m.
+    - cron: '0 3 * * *'
+jobs:
+  update_translations:
+    name: Update Translations
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    # TODO(Nordfriese): Transifex integration
+    - name: Synchronizing translations
+      run: |
+        javac UpdateList.java
+        ./buildcats.sh
+    - name: Pushing Changes
+      run: |
+        if [ -z "$(git status -s i18n)" ]
+        then
+          echo "Nothing to push"
+          exit 0
+        fi
+        git config --global user.name "The Widelands Code Formatting Bot"
+        git config --global user.email "bunnybot@widelands.org"
+        git add .
+        git commit -m "Automated translations update"
+        git push

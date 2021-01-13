@@ -13,12 +13,12 @@ Just replace the add-on’s entry in the `addons/` folder with the new one, then
 
 ### Updating translations
 
-When you updated any of the files in `po/` or added new ones, run `buildcats.sh`, then git add,commit,push.
+When you updated any of the files in `po/` or added new ones, run `buildcats.sh`, then git add,commit,push.   
 **Run this script _only_ on the master branch.**
 
 ### Verifying add-ons
 
-Run `java UpdateList '!cool_feature.wad'` (don’t forget the '!' before the add-on’s name!), then run `java UpdateList`, then git add,commit,push.
+Run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then run `java UpdateList`, then git add,commit,push.
 
 ### Notes
 
