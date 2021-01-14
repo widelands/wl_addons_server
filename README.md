@@ -13,8 +13,9 @@ Just replace the add-on’s entry in the `addons/` folder with the new one, then
 
 ### Updating translations
 
-When you updated any of the files in `po/` or added new ones, run `buildcats.sh`, then git add,commit,push.   
-**Run this script _only_ on the master branch.**
+When you updated any of the files in `po/` or added new ones, just do git add,commit,push.
+
+A GitHub action automatically compiles the translations periodically by running `buildcats.sh`. **Do not** run this script manually. If you have to do it anyway for some reason, do this **only** on the master branch.
 
 ### Verifying add-ons
 
