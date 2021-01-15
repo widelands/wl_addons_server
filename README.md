@@ -11,6 +11,10 @@ Just add it to the `addons/` folder, then run `java UpdateList`, then git add,co
 
 Just replace the add-on’s entry in the `addons/` folder with the new one, then run `java UpdateList`, then git add,commit,push.
 
+### Updating screenshots
+
+When you updated any of the files in `screenshots/` or added new ones, just run `java UpdateList`, then git add,commit,push. Be sure to update the `descriptions` file beforehand.
+
 ### Updating translations
 
 When you updated any of the files in `po/` or added new ones, just do git add,commit,push.

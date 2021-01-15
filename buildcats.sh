@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 cd addons
 
 # Update catalogs
