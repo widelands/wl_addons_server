@@ -107,7 +107,7 @@ public class UpdateList {
 				files.add(prefix + f.getName());
 				size.add(f.length());
 				checksums.add(checksum(f));
-			} else {
+			} else if (f.listFiles().length > 0) {
 				dirs.add(prefix + f.getName());
 				recurse(dirs, files, checksums, size, f, prefix + f.getName() + "/");
 			}
