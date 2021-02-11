@@ -3,7 +3,7 @@ Repository faking an add-ons server for [@widelands](https://github.com/wideland
 
 I don’t know how long this "server" will be in use, so I’d better write some brief documentation about maintenance here.
 
-If you want to contribute a new add-on, [informations how to create add-ons can be found here.](https://github.com/widelands/widelands/blob/master/doc/sphinx/source/add-ons.rst)
+If you want to contribute a new add-on, [information how to create add-ons can be found here.](https://github.com/widelands/widelands/blob/master/doc/sphinx/source/add-ons.rst)
 
 If you do not wish to create a pull request for a new add-on here, it is also possible to submit add-ons on the forum: https://www.widelands.org/forum/topic/5073
 
@@ -54,7 +54,7 @@ Issues not directly related to add-ons should be reported [against the official 
 
 #### Verify a new add-on
 
-To verify a new add-on read the code carfully and make sure it does not contain malicious code. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then run `java UpdateList`, then git add,commit,push.
+To verify a new add-on, read the code carefully and make sure it does not contain malicious code. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then run `java UpdateList`, then git add,commit,push.
 
 #### Translations
 
@@ -68,7 +68,7 @@ As mentioned above `buildcats.sh` shouldn't be run manually. If you have to do i
 
 `buildcats.sh` usually prints some errors which are false alarms. This script is not clever enough to catch translatable strings in config scripts (such as a map’s `elemental` file), except for the `addon` file.
 
-If you want to update an existing one, or submit new or updated translations, open a pull request with this change and make sure you followed the steps described above.
+If you want to update an existing add-on, or submit new or updated translations, open a pull request with this change and make sure you followed the steps described above.
 
 ### License
 
