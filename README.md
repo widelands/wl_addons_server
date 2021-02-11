@@ -36,7 +36,7 @@ After you have done run `java UpdateList`, then git add,commit,push.
 
 #### Name of Uploader
 
-The name of the uploader of a new add-on is automatically set to `"Nordfriese"` – if you are not me, consider editing the list manually after running `java UpdateList` to replace it with your name. (Each add-on's uploader is listed directly below the author's name.)
+The name of the uploader of a new add-on is automatically set to `"Nordfriese"` – if you are not me, consider editing the files `list` and `list_2` manually after running `java UpdateList` to replace it with your name. (Each add-on's uploader is listed directly below the author's name.)
 
 #### Verifying add-ons
 
