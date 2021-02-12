@@ -50,7 +50,7 @@ Keep in mind that currently some of the add-ons here are meant as proof-of-conce
 
 Issues not directly related to add-ons should be reported [against the official game](https://github.com/widelands/widelands/issues).
 
-### Developers corner
+### Developers’ corner
 
 #### Verify a new add-on
 
@@ -58,17 +58,20 @@ To verify a new add-on, read the code carefully and make sure it does not contai
 
 #### Translations
 
-A GitHub action automatically compiles the translations periodically by running `buildcats.sh`. **Do not** run this script manually.
+Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/
+Note that Transifex's automated translations sync will only send the translations to this repo when a resource is 100% translated in a language.
 
-When you updated any of the files in `po/` or added new ones, just do git add,commit,push.
+Do not modify any of the files in `po/` manually.
 
-As mentioned above `buildcats.sh` shouldn't be run manually. If you have to do it anyway for some reason, do this **only** on the master branch.
+A GitHub action periodically syncs the translations with Transifex and compiles them by running `buildcats.sh`. **Do not** run this script manually! If you have to do it anyway for some reason, do this **only** on the master branch.
 
 #### Notes
 
 `buildcats.sh` usually prints some errors which are false alarms. This script is not clever enough to catch translatable strings in config scripts (such as a map’s `elemental` file), except for the `addon` file.
 
 If you want to update an existing add-on, or submit new or updated translations, open a pull request with this change and make sure you followed the steps described above.
+
+After adding or deleting add-ons, the Transifex resource info needs to be updated by a Transifex admin. See https://github.com/widelands/wl_addons_server/issues/1 for more information.
 
 ### License
 
