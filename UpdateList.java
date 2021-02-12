@@ -95,7 +95,7 @@ public class UpdateList {
 		return "";
 	}
 
-	private static File[] listSorted(File dir) {
+	public static File[] listSorted(File dir) {
 		File[] files = dir.listFiles();
 		Arrays.sort(files);
 		return files;

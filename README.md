@@ -11,7 +11,7 @@ If you do not wish to create a pull request for a new add-on here, it is also po
 
 Before adding add-ons to this repository be sure a java development kit (JDK) is installed to compile the UpdateList.java script.
 
-After the installation of the JDK run `javac UpdateList.java` in the base folder.
+After the installation of the JDK run `javac *.java` in the base folder.
 
 ### Adding updating a new add-on
 
@@ -67,9 +67,9 @@ A GitHub action periodically syncs the translations with Transifex and compiles 
 
 #### Notes
 
-`buildcats.sh` usually prints some errors which are false alarms. This script is not clever enough to catch translatable strings in config scripts (such as a map’s `elemental` file), except for the `addon` file.
-
 If you want to update an existing add-on, or submit new or updated translations, open a pull request with this change and make sure you followed the steps described above.
+
+`buildcats.sh` usually prints some errors which are false alarms and can be ignored.
 
 After adding or deleting add-ons, the Transifex resource info needs to be updated by a Transifex admin. See https://github.com/widelands/wl_addons_server/issues/1 for more information.
 

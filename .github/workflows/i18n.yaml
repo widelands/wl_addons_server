@@ -19,7 +19,7 @@ jobs:
         git merge --squash origin/transifex
     - name: Synchronizing translations
       run: |
-        javac UpdateList.java
+        javac *.java
         ./buildcats.sh
     - name: Pushing Changes
       run: |
