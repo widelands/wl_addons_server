@@ -58,7 +58,7 @@ To verify a new add-on, read the code carefully and make sure it does not contai
 
 #### Translations
 
-Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/
+Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/   
 Note that Transifex's automated translations sync will only send the translations to this repo when a resource is 100% translated in a language.
 
 Do not modify any of the files in `po/` manually.
