@@ -2,7 +2,8 @@ name: Update Translations
 on:
   schedule:
     # Daily at 3:00 a.m.
-    - cron: '0 3 * * *'
+    # - cron: '0 3 * * *'
+    - cron: '40 * * * *'  # NOCOM
 jobs:
   update_translations:
     name: Update Translations
@@ -10,6 +11,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Installing gettext
       run: sudo apt-get install gettext
     - name: Transifex integration
