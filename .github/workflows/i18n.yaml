@@ -2,8 +2,7 @@ name: Update Translations
 on:
   schedule:
     # Daily at 3:00 a.m.
-    # - cron: '0 3 * * *'
-    - cron: '40 * * * *'  # NOCOM
+    - cron: '50 * * * *' # - cron: '0 3 * * *' # NOCOM
 jobs:
   update_translations:
     name: Update Translations
@@ -24,7 +23,7 @@ jobs:
       run: |
         javac *.java
         ./buildcats.sh
-    - name: Pushing Changes
+    - name: Pushing changes
       run: |
         if [ -z "$(git status -s i18n)" ]
         then
