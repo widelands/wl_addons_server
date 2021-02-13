@@ -15,12 +15,14 @@ public class Buildcats {
 						"--keyword=ngettext:1,2",
 						"--flag=ngettext:1:pass-lua-format",
 						"--flag=ngettext:2:pass-lua-format",
-						"--keyword=pgettext:1c,2 --flag=pgettext:2:pass-lua-format",
+						"--keyword=pgettext:1c,2",
+						"--flag=pgettext:2:pass-lua-format",
 						"--keyword=npgettext:1c,2,3",
 						"--flag=npgettext:2:pass-lua-format",
 						"--flag=npgettext:3:pass-lua-format",
 						"--language=Lua",
-						"--from-code=UTF-8 -F",
+						"--from-code=UTF-8",
+						"-F",
 						"--join-existing",
 						"--output=" + out,
 						f.getPath()}).waitFor();
@@ -31,12 +33,9 @@ public class Buildcats {
 	public static void main(String[] args) throws Exception {
 		Runtime rt = Runtime.getRuntime();
 		for (File addon : UpdateList.listSorted(new File("addons"))) {
-			File poDir = new File("po", addon.getName());
-			File moDir = new File("i18n", addon.getName());
-			rt.exec(new String[] {"mkdir", "-p", poDir.getPath()});
-			rt.exec(new String[] {"mkdir", "-p", moDir.getPath()});
-			
-			String out = poDir.getPath() + "/" + addon.getName() + ".pot";
+			String dir = "po/" + addon.getName();
+			rt.exec(new String[] {"mkdir", "-p", dir});
+			String out = dir + "/" + addon.getName() + ".pot";
 			rt.exec(new String[] {"xgettext",
 					"--language=Lua",
 					"-k_",
