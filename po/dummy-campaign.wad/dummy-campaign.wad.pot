@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-13 12:57+0100\n"
+"POT-Creation-Date: 2021-02-13 10:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,36 +17,42 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: dummy-campaign.wad/addon:2
+#: addons/dummy-campaign.wad/addon:2
 msgid "Dummy campaign"
 msgstr ""
 
-#: dummy-campaign.wad/addon:3
+#: addons/dummy-campaign.wad/addon:3
 msgid "A campaign consisting of unbelievable 0 playable levels."
 msgstr ""
 
-#: dummy-campaign.wad/campaigns.lua:16
+#: addons/dummy-campaign.wad/campaigns.lua:16
 msgid "Easy."
 msgstr ""
 
-#: dummy-campaign.wad/campaigns.lua:27
+#: addons/dummy-campaign.wad/campaigns.lua:27
 msgid "Dummy"
 msgstr ""
 
-#: dummy-campaign.wad/campaigns.lua:29
+#: addons/dummy-campaign.wad/campaigns.lua:29
 msgid "Dummy campaign."
 msgstr ""
 
-#: dummy-campaign.wad/campaigns.lua:30
+#: addons/dummy-campaign.wad/campaigns.lua:30
 msgid ""
 "This campaign is not playable. It only demonstrates the campaign-type add-on "
 "feature."
 msgstr ""
 
-#: dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:12
+#: addons/dummy-campaign.wad/example-dummy.wmf/elemental:8
+#: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:12
 msgid "Not yet implemented"
 msgstr ""
 
-#: dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:13
+#: addons/dummy-campaign.wad/example-dummy.wmf/elemental:10
+msgid "Nobody"
+msgstr ""
+
+#: addons/dummy-campaign.wad/example-dummy.wmf/elemental:12
+#: addons/dummy-campaign.wad/example-dummy.wmf/scripting/init.lua:13
 msgid "Sorry, this map is not yet implemented."
 msgstr ""

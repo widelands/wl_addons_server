@@ -3,40 +3,42 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Benedikt Straub <benedikt-straub@web.de>, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-13 12:57+0100\n"
-"PO-Revision-Date: 2020-12-07 10:26+0100\n"
-"Last-Translator: Benedikt Straub <benedikt-straub@web.de>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2021-02-13 10:56+0000\n"
+"PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
+"Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
+"nds/)\n"
 "Language: nds\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: impassable_water.wad/addon:2 impassable_water.wad/editor.lua:6
+#: addons/impassable_water.wad/addon:2 addons/impassable_water.wad/editor.lua:6
 msgid "Impassable Water"
 msgstr "Flackwater"
 
-#: impassable_water.wad/addon:3
+#: addons/impassable_water.wad/addon:3
 msgid "Shallow water terrains, impassable for ships but walkable."
 msgstr ""
 "Landskuppen mit Flackwater, waar Arbeiders aver keene Schippen dörkomen."
 
-#: impassable_water.wad/world/terrains/desert/reef/init.lua:6
+#: addons/impassable_water.wad/world/terrains/desert/reef/init.lua:6
 msgid "Reef"
 msgstr "Riff"
 
-#: impassable_water.wad/world/terrains/summer/water_lily/init.lua:7
+#: addons/impassable_water.wad/world/terrains/summer/water_lily/init.lua:7
 msgid "Water Lily"
 msgstr "Waterblomen"
 
-#: impassable_water.wad/world/terrains/wasteland/algae_slick/init.lua:6
+#: addons/impassable_water.wad/world/terrains/wasteland/algae_slick/init.lua:6
 msgid "Algae slick"
 msgstr "Algensliek"
-
-#~ msgid "Shallow Water"
-#~ msgstr "Flackwater"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-13 12:57+0100\n"
+"POT-Creation-Date: 2021-02-13 10:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: wells-running-out.wad/addon:2
+#: addons/wells-running-out.wad/addon:2
 msgid "Water Resource Efficiency"
 msgstr ""
 
-#: wells-running-out.wad/addon:3
+#: addons/wells-running-out.wad/addon:3
 msgid ""
 "Make the ‘water’ resource more useful by giving wells a larger radius and a "
 "chance of only 5% to find water when exhausted. Additionally the barbarian "
@@ -30,63 +30,19 @@ msgid ""
 "experience."
 msgstr ""
 
-#: wells-running-out.wad/bar_deep_well/init.lua:7
-msgctxt "barbarians_building"
-msgid "Deep Well"
-msgstr ""
-
-#: wells-running-out.wad/bar_deep_well/init.lua:25
-#: wells-running-out.wad/fri_deep_well/init.lua:25
-#: wells-running-out.wad/postload.lua:9 wells-running-out.wad/postload.lua:20
-#: wells-running-out.wad/postload.lua:41 wells-running-out.wad/postload.lua:76
+#: addons/wells-running-out.wad/bar_deep_well/init.lua:25
+#: addons/wells-running-out.wad/fri_deep_well/init.lua:25
+#: addons/wells-running-out.wad/postload.lua:9
+#: addons/wells-running-out.wad/postload.lua:20
+#: addons/wells-running-out.wad/postload.lua:41
+#: addons/wells-running-out.wad/postload.lua:76
 msgid "working"
 msgstr ""
 
-#: wells-running-out.wad/bar_well_keeper/init.lua:7
-msgctxt "barbarians_worker"
-msgid "Well Keeper"
-msgstr ""
-
-#: wells-running-out.wad/fri_deep_well/init.lua:7
-msgctxt "frisians_building"
-msgid "Deep Well"
-msgstr ""
-
-#: wells-running-out.wad/fri_well_keeper/init.lua:7
-msgctxt "frisians_worker"
-msgid "Well Keeper"
-msgstr ""
-
-#: wells-running-out.wad/postload.lua:33 wells-running-out.wad/postload.lua:68
-msgctxt "building"
-msgid "Draws water out of the deep."
-msgstr ""
-
-#: wells-running-out.wad/postload.lua:35 wells-running-out.wad/postload.lua:70
+#: addons/wells-running-out.wad/postload.lua:35
+#: addons/wells-running-out.wad/postload.lua:70
 #, lua-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] ""
 msgstr[1] ""
-
-#: wells-running-out.wad/postload.lua:35
-#, lua-format
-msgctxt "frisians_building"
-msgid "The deep well needs %s on average to produce one bucket of water."
-msgstr ""
-
-#: wells-running-out.wad/postload.lua:39
-msgctxt "frisians_worker"
-msgid "Operates the deep wells."
-msgstr ""
-
-#: wells-running-out.wad/postload.lua:70
-#, lua-format
-msgctxt "barbarians_building"
-msgid "The deep well needs %s on average to produce one bucket of water."
-msgstr ""
-
-#: wells-running-out.wad/postload.lua:74
-msgctxt "barbarians_worker"
-msgid "Operates the deep wells."
-msgstr ""
