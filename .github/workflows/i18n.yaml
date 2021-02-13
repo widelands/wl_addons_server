@@ -1,8 +1,9 @@
 name: Update Translations
 on:
+  workflow_dispatch:
   schedule:
     # Daily at 3:00 a.m.
-    - cron: '50 * * * *' # - cron: '0 3 * * *' # NOCOM
+    - cron: '0 3 * * *'
 jobs:
   update_translations:
     name: Update Translations
@@ -16,6 +17,8 @@ jobs:
       run: sudo apt-get install gettext
     - name: Transifex integration
       run: |
+        git config --global user.name "The Widelands Code Formatting Bot"
+        git config --global user.email "bunnybot@widelands.org"
         git fetch origin transifex
         git checkout master
         git merge --squash origin/transifex
@@ -30,8 +33,6 @@ jobs:
           echo "Nothing to push"
           exit 0
         fi
-        git config --global user.name "The Widelands Code Formatting Bot"
-        git config --global user.email "bunnybot@widelands.org"
         git add .
         git commit -m "Automated translations update"
         git push origin master
