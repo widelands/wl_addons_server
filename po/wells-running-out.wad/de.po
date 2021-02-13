@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Stephan Lutz <stephan-lutz@gmx.de>, 2021
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-13 11:07+0000\n"
+"PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
+"Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/wells-running-out.wad/addon:2
+msgid "Water Resource Efficiency"
+msgstr "Wasser Ressourceneffektivität"
+
+#: addons/wells-running-out.wad/addon:3
+msgid ""
+"Make the ‘water’ resource more useful by giving wells a larger radius and a "
+"chance of only 5% to find water when exhausted. Additionally the barbarian "
+"and frisian wells can be enhanced to deep wells when the worker has enough "
+"experience."
+msgstr ""
+"Macht die ‘Wasser’ Ressource wichtiger, durch Erhöhung des Arbeitsradius von "
+"Brunnen und nur noch einer 5% Wahrscheinlichkeit Wasser zu fördern wenn der "
+"Brunnen versiegt ist. Weiterhin können die Brunnen der Barbaren und Friesen "
+"zu tiefen Brunnen erweitert werden, wenn der Arbeiter genügend Erfahrung "
+"gesammelt hat."
+
+#: addons/wells-running-out.wad/bar_deep_well/init.lua:25
+#: addons/wells-running-out.wad/fri_deep_well/init.lua:25
+#: addons/wells-running-out.wad/postload.lua:9
+#: addons/wells-running-out.wad/postload.lua:20
+#: addons/wells-running-out.wad/postload.lua:41
+#: addons/wells-running-out.wad/postload.lua:76
+msgid "working"
+msgstr "Das Arbeiten"
+
+#: addons/wells-running-out.wad/postload.lua:35
+#: addons/wells-running-out.wad/postload.lua:70
+#, lua-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d Sekunde"
+msgstr[1] "%d Sekunden"
+
+#~ msgctxt "barbarians_building"
+#~ msgid "Deep Well"
+#~ msgstr "Tiefer Brunnen"
+
+#~ msgctxt "barbarians_worker"
+#~ msgid "Well Keeper"
+#~ msgstr "Brunnenbewahrer"
+
+#~ msgctxt "frisians_building"
+#~ msgid "Deep Well"
+#~ msgstr "Tiefer Brunnen"
+
+#~ msgctxt "frisians_worker"
+#~ msgid "Well Keeper"
+#~ msgstr "Brunnenbewahrer"
+
+#~ msgctxt "building"
+#~ msgid "Draws water out of the deep."
+#~ msgstr "Fördert Wasser aus der Tiefe."
+
+#~ msgctxt "frisians_building"
+#~ msgid "The deep well needs %s on average to produce one bucket of water."
+#~ msgstr ""
+#~ "Der tiefe Brunnen benötigt %s im Durchschnitt um einen Eimer Wasser zu "
+#~ "fördern."
+
+#~ msgctxt "frisians_worker"
+#~ msgid "Operates the deep wells."
+#~ msgstr "Betreibt die tiefen Brunnen."
+
+#~ msgctxt "barbarians_building"
+#~ msgid "The deep well needs %s on average to produce one bucket of water."
+#~ msgstr ""
+#~ "Der tiefe Brunnen benötigt %s im Durchschnitt um einen Eimer Wasser zu "
+#~ "fördern."
+
+#~ msgctxt "barbarians_worker"
+#~ msgid "Operates the deep wells."
+#~ msgstr "Betreibt die tiefen Brunnen."

@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Stephan Lutz <stephan-lutz@gmx.de>, 2021
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-13 11:07+0000\n"
+"PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
+"Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/frisians-economy-ultra.wad/addon:2
+msgid "Frisians Economy Ultra"
+msgstr "Friesische Wirtschaft Ultra"
+
+#: addons/frisians-economy-ultra.wad/addon:3
+msgid ""
+"Very complex economy model for the frisian tribe with numerous new wares and "
+"buildings."
+msgstr ""
+"Sehr komplexes Wirtschaftsmodell für den Stamm der Friesen mit vielen neuen "
+"Waren und Gebäuden."
+
+#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:49
+msgid "grinding barley"
+msgstr "Das Mahlen von Gerste"
+
+#: addons/frisians-economy-ultra.wad/postload.lua:10
+msgid "This rye field has been harvested."
+msgstr "Dieses Roggenfeld wurde abgeerntet."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:13
+msgid "This rye field is ready for harvesting."
+msgstr "Dieses Roggenfeld ist erntereif."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:16
+msgid "This rye field is flowering. Beekeepers can use it to produce honey."
+msgstr "Dieses Roggenfeld blüht. Honig kann von einem Imker geerntet werden."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:19
+msgid "This rye field is growing."
+msgstr "Dieses Roggenfeld wächst."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:22
+msgid "This rye field has just been planted."
+msgstr "Dieses Roggenfeld wurde eben erst bepflanzt."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:30
+msgid "Salt is washed from the sea and used to conserve meat and fish."
+msgstr ""
+"Salz wird aus dem Meer gewaschen und benutzt um Fisch und Fleisch zu "
+"konservieren."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:33
+msgid "Rye is used to bake bread. It needs to be ground into flour first."
+msgstr ""
+"Roggen wird benutzt um Brot zu backen. Es muss erst zu Mehl gemahlen werden."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:36
+msgid "After being ground to flour, rye can be used to bake bread."
+msgstr ""
+"Nachdem er zu Mehl gemahlen wurde, kann Roggen benutzt werden um Brot zu "
+"backen."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:39
+msgid "After being ground to flour, barley can be used to bake bread."
+msgstr ""
+"Nachdem sie zu Mehl gemahlen wurde, kann Gerste benutzt werden um Brot zu "
+"backen."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:65
+msgid "The salter washes salt from the shores of the sea."
+msgstr "Der Salzsieder wäscht Salz von den Küsten der See."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:68
+msgid "The miller grinds barley and rye into flour."
+msgstr "Der Müller mahlt Gerste und Roggen zu Mehl."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:76
+msgid "The salter working at the salt works washes salt from the sea."
+msgstr "Der Salzsieder in den Salinen wäscht Salz aus dem Meer."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:77
+msgid "The salter needs water within its work area."
+msgstr "Der Salzsieder braucht Wasser in seinem Arbeitsbereich."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:80
+msgid "The barley mill grinds barley into barley flour."
+msgstr "Die Gerstenmühle mahlt Gerste zu Gerstenmehl."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:83
+msgid "The rye mill grinds rye into rye flour."
+msgstr "Die Roggenmühle mahlt Roggen zu Roggenmehl."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:86
+msgid "The rye farm sows and harvests rye."
+msgstr "Der Roggenhof sät und erntet Roggen."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:94
+msgid "smoking fish"
+msgstr "Das Räuchern von Fisch"
+
+#: addons/frisians-economy-ultra.wad/postload.lua:101
+msgid "smoking meat"
+msgstr "Das Räuchern von Fleisch"
+
+#: addons/frisians-economy-ultra.wad/postload.lua:109
+#: addons/frisians-economy-ultra.wad/postload.lua:145
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:43
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:38
+msgid "working"
+msgstr "Das Arbeiten"
+
+#: addons/frisians-economy-ultra.wad/postload.lua:118
+#: addons/frisians-economy-ultra.wad/postload.lua:138
+msgid "baking bread"
+msgstr "Das Backen von Brot"
+
+#: addons/frisians-economy-ultra.wad/postload.lua:131
+msgid "baking honey bread"
+msgstr "Das Backen von Honigbrot"
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:51
+msgid "planting rye"
+msgstr "Das Pflanzen von Roggen"
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:59
+msgid "harvesting rye"
+msgstr "Das Ernten von Roggen"
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:68
+msgid "No Fields"
+msgstr "Keine Felder"
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
+msgid "Out of Fields"
+msgstr "Keine Felder"
+
+#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:49
+msgid "grinding rye"
+msgstr "Das Mahlen von Roggen"
+
+#~ msgctxt "frisians_building"
+#~ msgid "Barley Mill"
+#~ msgstr "Gerstenmühle"
+
+#~ msgctxt "frisians_worker"
+#~ msgid "Miller"
+#~ msgstr "Müller"
+
+#~ msgctxt "frisians_building"
+#~ msgid "Rye Farm"
+#~ msgstr "Roggenhof"
+
+#~ msgctxt "frisians_building"
+#~ msgid ""
+#~ "The farmer working at this rye farm has no cleared soil to plant his "
+#~ "seeds."
+#~ msgstr ""
+#~ "Der Bauer auf diesem Roggenhof hat keinen freien Platz um seine Sat zu "
+#~ "säen."
+
+#~ msgctxt "frisians_building"
+#~ msgid "Rye Mill"
+#~ msgstr "Roggenmühle"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (harvested)"
+#~ msgstr "Roggenfeld (abgeerntet)"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (medium)"
+#~ msgstr "Roggenfeld (mittel)"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (ripe)"
+#~ msgstr "Roggenfeld (reif)"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (small)"
+#~ msgstr "Roggenfeld (klein)"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (tiny)"
+#~ msgstr "Roggenfeld (jung)"
+
+#~ msgctxt "frisians_building"
+#~ msgid "Salt Works"
+#~ msgstr "Saline"
+
+#~ msgctxt "frisians_worker"
+#~ msgid "Salter"
+#~ msgstr "Salzsieder"
+
+#~ msgctxt "ware"
+#~ msgid "Barley Flour"
+#~ msgstr "Gerstenmehl"
+
+#~ msgctxt "ware"
+#~ msgid "Rye"
+#~ msgstr "Roggen"
+
+#~ msgctxt "ware"
+#~ msgid "Rye Flour"
+#~ msgstr "Roggenmehl"
+
+#~ msgctxt "ware"
+#~ msgid "Salt"
+#~ msgstr "Salz"

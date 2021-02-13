@@ -3,26 +3,30 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Benedikt Straub <benedikt-straub@web.de>, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-13 12:57+0100\n"
-"PO-Revision-Date: 2020-11-27 15:52+0100\n"
-"Last-Translator: Benedikt Straub <benedikt-straub@web.de>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2021-02-13 11:07+0000\n"
+"PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
+"Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
+"nds/)\n"
 "Language: nds\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.1\n"
 
-#: wells-running-out.wad/addon:2
+#: addons/wells-running-out.wad/addon:2
 msgid "Water Resource Efficiency"
 msgstr "Dat Water-Mineraal nützt mehr"
 
-#: wells-running-out.wad/addon:3
+#: addons/wells-running-out.wad/addon:3
 msgid ""
 "Make the ‘water’ resource more useful by giving wells a larger radius and a "
 "chance of only 5% to find water when exhausted. Additionally the barbarian "
@@ -34,63 +38,57 @@ msgstr ""
 "sünd. Un de Willen un Freesken Wellen könen to Deepen Wellen utbaut worden, "
 "wenn de Arbeider genoog Erfahrung hett."
 
-#: wells-running-out.wad/bar_deep_well/init.lua:7
-msgctxt "barbarians_building"
-msgid "Deep Well"
-msgstr "Deep Well"
-
-#: wells-running-out.wad/bar_deep_well/init.lua:25
-#: wells-running-out.wad/fri_deep_well/init.lua:25
-#: wells-running-out.wad/postload.lua:9 wells-running-out.wad/postload.lua:20
-#: wells-running-out.wad/postload.lua:41 wells-running-out.wad/postload.lua:76
+#: addons/wells-running-out.wad/bar_deep_well/init.lua:25
+#: addons/wells-running-out.wad/fri_deep_well/init.lua:25
+#: addons/wells-running-out.wad/postload.lua:9
+#: addons/wells-running-out.wad/postload.lua:20
+#: addons/wells-running-out.wad/postload.lua:41
+#: addons/wells-running-out.wad/postload.lua:76
 msgid "working"
 msgstr "to Warken"
 
-#: wells-running-out.wad/bar_well_keeper/init.lua:7
-msgctxt "barbarians_worker"
-msgid "Well Keeper"
-msgstr "Wellmeester"
-
-#: wells-running-out.wad/fri_deep_well/init.lua:7
-msgctxt "frisians_building"
-msgid "Deep Well"
-msgstr "Deep Well"
-
-#: wells-running-out.wad/fri_well_keeper/init.lua:7
-msgctxt "frisians_worker"
-msgid "Well Keeper"
-msgstr "Wellmeester"
-
-#: wells-running-out.wad/postload.lua:33 wells-running-out.wad/postload.lua:68
-msgctxt "building"
-msgid "Draws water out of the deep."
-msgstr "Hisst Water ut de Deepden."
-
-#: wells-running-out.wad/postload.lua:35 wells-running-out.wad/postload.lua:70
+#: addons/wells-running-out.wad/postload.lua:35
+#: addons/wells-running-out.wad/postload.lua:70
 #, lua-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d Sekünn"
 msgstr[1] "%d Sekünnen"
 
-#: wells-running-out.wad/postload.lua:35
-#, lua-format
-msgctxt "frisians_building"
-msgid "The deep well needs %s on average to produce one bucket of water."
-msgstr "De Deep Well bruukt dör de Bank %s, um een Fass Water to produzeren."
+#~ msgctxt "barbarians_building"
+#~ msgid "Deep Well"
+#~ msgstr "Deep Well"
 
-#: wells-running-out.wad/postload.lua:39
-msgctxt "frisians_worker"
-msgid "Operates the deep wells."
-msgstr "Warkt in de Deepen Wellen."
+#~ msgctxt "barbarians_worker"
+#~ msgid "Well Keeper"
+#~ msgstr "Wellmeester"
 
-#: wells-running-out.wad/postload.lua:70
-#, lua-format
-msgctxt "barbarians_building"
-msgid "The deep well needs %s on average to produce one bucket of water."
-msgstr "De Deep Well bruukt dör de Bank %s, um een Fass Water to produzeren."
+#~ msgctxt "frisians_building"
+#~ msgid "Deep Well"
+#~ msgstr "Deep Well"
 
-#: wells-running-out.wad/postload.lua:74
-msgctxt "barbarians_worker"
-msgid "Operates the deep wells."
-msgstr "Warkt in de Deepen Wellen."
+#~ msgctxt "frisians_worker"
+#~ msgid "Well Keeper"
+#~ msgstr "Wellmeester"
+
+#~ msgctxt "building"
+#~ msgid "Draws water out of the deep."
+#~ msgstr "Hisst Water ut de Deepden."
+
+#~ msgctxt "frisians_building"
+#~ msgid "The deep well needs %s on average to produce one bucket of water."
+#~ msgstr ""
+#~ "De Deep Well bruukt dör de Bank %s, um een Fass Water to produzeren."
+
+#~ msgctxt "frisians_worker"
+#~ msgid "Operates the deep wells."
+#~ msgstr "Warkt in de Deepen Wellen."
+
+#~ msgctxt "barbarians_building"
+#~ msgid "The deep well needs %s on average to produce one bucket of water."
+#~ msgstr ""
+#~ "De Deep Well bruukt dör de Bank %s, um een Fass Water to produzeren."
+
+#~ msgctxt "barbarians_worker"
+#~ msgid "Operates the deep wells."
+#~ msgstr "Warkt in de Deepen Wellen."
