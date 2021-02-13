@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-13 11:07+0000\n"
+"POT-Creation-Date: 2021-02-13 11:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,18 @@ msgid ""
 "buildings."
 msgstr ""
 
+#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:6
+msgctxt "frisians_building"
+msgid "Barley Mill"
+msgstr ""
+
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:49
 msgid "grinding barley"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/miller/init.lua:6
+msgctxt "frisians_worker"
+msgid "Miller"
 msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:10
@@ -119,6 +129,11 @@ msgstr ""
 msgid "baking honey bread"
 msgstr ""
 
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:6
+msgctxt "frisians_building"
+msgid "Rye Farm"
+msgstr ""
+
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:51
 msgid "planting rye"
 msgstr ""
@@ -135,6 +150,72 @@ msgstr ""
 msgid "Out of Fields"
 msgstr ""
 
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
+msgctxt "frisians_building"
+msgid ""
+"The farmer working at this rye farm has no cleared soil to plant his seeds."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:6
+msgctxt "frisians_building"
+msgid "Rye Mill"
+msgstr ""
+
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:49
 msgid "grinding rye"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (harvested)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/medium/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (medium)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/ripe/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (ripe)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/small/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (small)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/tiny/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (tiny)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:6
+msgctxt "frisians_building"
+msgid "Salt Works"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/salter/init.lua:6
+msgctxt "frisians_worker"
+msgid "Salter"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/wares/init.lua:6
+msgctxt "ware"
+msgid "Barley Flour"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/wares/init.lua:21
+msgctxt "ware"
+msgid "Rye"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/wares/init.lua:36
+msgctxt "ware"
+msgid "Rye Flour"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/wares/init.lua:51
+msgctxt "ware"
+msgid "Salt"
 msgstr ""

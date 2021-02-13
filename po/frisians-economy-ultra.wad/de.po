@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-13 11:07+0000\n"
+"POT-Creation-Date: 2021-02-13 11:44+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -33,9 +33,19 @@ msgstr ""
 "Sehr komplexes Wirtschaftsmodell für den Stamm der Friesen mit vielen neuen "
 "Waren und Gebäuden."
 
+#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:6
+msgctxt "frisians_building"
+msgid "Barley Mill"
+msgstr "Gerstenmühle"
+
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:49
 msgid "grinding barley"
 msgstr "Das Mahlen von Gerste"
+
+#: addons/frisians-economy-ultra.wad/miller/init.lua:6
+msgctxt "frisians_worker"
+msgid "Miller"
+msgstr "Müller"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:10
 msgid "This rye field has been harvested."
@@ -132,6 +142,11 @@ msgstr "Das Backen von Brot"
 msgid "baking honey bread"
 msgstr "Das Backen von Honigbrot"
 
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:6
+msgctxt "frisians_building"
+msgid "Rye Farm"
+msgstr "Roggenhof"
+
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:51
 msgid "planting rye"
 msgstr "Das Pflanzen von Roggen"
@@ -148,74 +163,73 @@ msgstr "Keine Felder"
 msgid "Out of Fields"
 msgstr "Keine Felder"
 
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
+msgctxt "frisians_building"
+msgid ""
+"The farmer working at this rye farm has no cleared soil to plant his seeds."
+msgstr ""
+"Der Bauer auf diesem Roggenhof hat keinen freien Platz um seine Sat zu säen."
+
+#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:6
+msgctxt "frisians_building"
+msgid "Rye Mill"
+msgstr "Roggenmühle"
+
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:49
 msgid "grinding rye"
 msgstr "Das Mahlen von Roggen"
 
-#~ msgctxt "frisians_building"
-#~ msgid "Barley Mill"
-#~ msgstr "Gerstenmühle"
+#: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (harvested)"
+msgstr "Roggenfeld (abgeerntet)"
 
-#~ msgctxt "frisians_worker"
-#~ msgid "Miller"
-#~ msgstr "Müller"
+#: addons/frisians-economy-ultra.wad/ryefield/medium/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (medium)"
+msgstr "Roggenfeld (mittel)"
 
-#~ msgctxt "frisians_building"
-#~ msgid "Rye Farm"
-#~ msgstr "Roggenhof"
+#: addons/frisians-economy-ultra.wad/ryefield/ripe/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (ripe)"
+msgstr "Roggenfeld (reif)"
 
-#~ msgctxt "frisians_building"
-#~ msgid ""
-#~ "The farmer working at this rye farm has no cleared soil to plant his "
-#~ "seeds."
-#~ msgstr ""
-#~ "Der Bauer auf diesem Roggenhof hat keinen freien Platz um seine Sat zu "
-#~ "säen."
+#: addons/frisians-economy-ultra.wad/ryefield/small/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (small)"
+msgstr "Roggenfeld (klein)"
 
-#~ msgctxt "frisians_building"
-#~ msgid "Rye Mill"
-#~ msgstr "Roggenmühle"
+#: addons/frisians-economy-ultra.wad/ryefield/tiny/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (tiny)"
+msgstr "Roggenfeld (jung)"
 
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (harvested)"
-#~ msgstr "Roggenfeld (abgeerntet)"
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:6
+msgctxt "frisians_building"
+msgid "Salt Works"
+msgstr "Saline"
 
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (medium)"
-#~ msgstr "Roggenfeld (mittel)"
+#: addons/frisians-economy-ultra.wad/salter/init.lua:6
+msgctxt "frisians_worker"
+msgid "Salter"
+msgstr "Salzsieder"
 
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (ripe)"
-#~ msgstr "Roggenfeld (reif)"
+#: addons/frisians-economy-ultra.wad/wares/init.lua:6
+msgctxt "ware"
+msgid "Barley Flour"
+msgstr "Gerstenmehl"
 
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (small)"
-#~ msgstr "Roggenfeld (klein)"
+#: addons/frisians-economy-ultra.wad/wares/init.lua:21
+msgctxt "ware"
+msgid "Rye"
+msgstr "Roggen"
 
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (tiny)"
-#~ msgstr "Roggenfeld (jung)"
+#: addons/frisians-economy-ultra.wad/wares/init.lua:36
+msgctxt "ware"
+msgid "Rye Flour"
+msgstr "Roggenmehl"
 
-#~ msgctxt "frisians_building"
-#~ msgid "Salt Works"
-#~ msgstr "Saline"
-
-#~ msgctxt "frisians_worker"
-#~ msgid "Salter"
-#~ msgstr "Salzsieder"
-
-#~ msgctxt "ware"
-#~ msgid "Barley Flour"
-#~ msgstr "Gerstenmehl"
-
-#~ msgctxt "ware"
-#~ msgid "Rye"
-#~ msgstr "Roggen"
-
-#~ msgctxt "ware"
-#~ msgid "Rye Flour"
-#~ msgstr "Roggenmehl"
-
-#~ msgctxt "ware"
-#~ msgid "Salt"
-#~ msgstr "Salz"
+#: addons/frisians-economy-ultra.wad/wares/init.lua:51
+msgctxt "ware"
+msgid "Salt"
+msgstr "Salz"

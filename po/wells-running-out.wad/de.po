@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-13 11:07+0000\n"
+"POT-Creation-Date: 2021-02-13 11:44+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -38,6 +38,11 @@ msgstr ""
 "zu tiefen Brunnen erweitert werden, wenn der Arbeiter genügend Erfahrung "
 "gesammelt hat."
 
+#: addons/wells-running-out.wad/bar_deep_well/init.lua:7
+msgctxt "barbarians_building"
+msgid "Deep Well"
+msgstr "Tiefer Brunnen"
+
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:25
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:25
 #: addons/wells-running-out.wad/postload.lua:9
@@ -47,6 +52,27 @@ msgstr ""
 msgid "working"
 msgstr "Das Arbeiten"
 
+#: addons/wells-running-out.wad/bar_well_keeper/init.lua:7
+msgctxt "barbarians_worker"
+msgid "Well Keeper"
+msgstr "Brunnenbewahrer"
+
+#: addons/wells-running-out.wad/fri_deep_well/init.lua:7
+msgctxt "frisians_building"
+msgid "Deep Well"
+msgstr "Tiefer Brunnen"
+
+#: addons/wells-running-out.wad/fri_well_keeper/init.lua:7
+msgctxt "frisians_worker"
+msgid "Well Keeper"
+msgstr "Brunnenbewahrer"
+
+#: addons/wells-running-out.wad/postload.lua:33
+#: addons/wells-running-out.wad/postload.lua:68
+msgctxt "building"
+msgid "Draws water out of the deep."
+msgstr "Fördert Wasser aus der Tiefe."
+
 #: addons/wells-running-out.wad/postload.lua:35
 #: addons/wells-running-out.wad/postload.lua:70
 #, lua-format
@@ -55,42 +81,28 @@ msgid_plural "%d seconds"
 msgstr[0] "%d Sekunde"
 msgstr[1] "%d Sekunden"
 
-#~ msgctxt "barbarians_building"
-#~ msgid "Deep Well"
-#~ msgstr "Tiefer Brunnen"
+#: addons/wells-running-out.wad/postload.lua:35
+#, lua-format
+msgctxt "frisians_building"
+msgid "The deep well needs %s on average to produce one bucket of water."
+msgstr ""
+"Der tiefe Brunnen benötigt %s im Durchschnitt um einen Eimer Wasser zu "
+"fördern."
 
-#~ msgctxt "barbarians_worker"
-#~ msgid "Well Keeper"
-#~ msgstr "Brunnenbewahrer"
+#: addons/wells-running-out.wad/postload.lua:39
+msgctxt "frisians_worker"
+msgid "Operates the deep wells."
+msgstr "Betreibt die tiefen Brunnen."
 
-#~ msgctxt "frisians_building"
-#~ msgid "Deep Well"
-#~ msgstr "Tiefer Brunnen"
+#: addons/wells-running-out.wad/postload.lua:70
+#, lua-format
+msgctxt "barbarians_building"
+msgid "The deep well needs %s on average to produce one bucket of water."
+msgstr ""
+"Der tiefe Brunnen benötigt %s im Durchschnitt um einen Eimer Wasser zu "
+"fördern."
 
-#~ msgctxt "frisians_worker"
-#~ msgid "Well Keeper"
-#~ msgstr "Brunnenbewahrer"
-
-#~ msgctxt "building"
-#~ msgid "Draws water out of the deep."
-#~ msgstr "Fördert Wasser aus der Tiefe."
-
-#~ msgctxt "frisians_building"
-#~ msgid "The deep well needs %s on average to produce one bucket of water."
-#~ msgstr ""
-#~ "Der tiefe Brunnen benötigt %s im Durchschnitt um einen Eimer Wasser zu "
-#~ "fördern."
-
-#~ msgctxt "frisians_worker"
-#~ msgid "Operates the deep wells."
-#~ msgstr "Betreibt die tiefen Brunnen."
-
-#~ msgctxt "barbarians_building"
-#~ msgid "The deep well needs %s on average to produce one bucket of water."
-#~ msgstr ""
-#~ "Der tiefe Brunnen benötigt %s im Durchschnitt um einen Eimer Wasser zu "
-#~ "fördern."
-
-#~ msgctxt "barbarians_worker"
-#~ msgid "Operates the deep wells."
-#~ msgstr "Betreibt die tiefen Brunnen."
+#: addons/wells-running-out.wad/postload.lua:74
+msgctxt "barbarians_worker"
+msgid "Operates the deep wells."
+msgstr "Betreibt die tiefen Brunnen."
