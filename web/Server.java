@@ -24,15 +24,17 @@ public class Server {
 		 * Arg 2: Add-on name
 		 * Arg 3: Language name
 		 * Returns (for version 3):
+		 *  - unlocalized name, '\n'
 		 *  - localized name, '\n'
+		 *  - unlocalized description, '\n'
 		 *  - localized description, '\n'
+		 *  - unlocalized author, '\n'
 		 *  - localized author, '\n'
 		 *  - uploader name, '\n'
 		 *  - add-on version string, '\n'
 		 *  - i18n version string, '\n'
 		 *  - category string, '\n'
 		 *  - comma-separated list of requirements, '\n'
-		 *  - "verified" or "unchecked", '\n'
 		 *  - number of screenshots, '\n'
 		 *  - for each screenshot: name, '\n', localized description, '\n'
 		 *  - total filesize, '\n'
@@ -48,6 +50,7 @@ public class Server {
 		 *      - version, '\n',
 		 *      - number of '\n' characters in the message, '\n'
 		 *      - message, '\n'
+		 *  - "verified" or "unchecked", '\n'
 		 */
 		CMD_INFO,
 
@@ -135,75 +138,86 @@ public class Server {
 			Socket s = serverSocket.accept();
 			new Thread() { public void run() {
 				try {
-					System.out.println("Received connection.");
-					PrintWriter out = new PrintWriter(s.getOutputStream(), true);
+					System.out.println("Received a connection.");
+					PrintStream out = new PrintStream(s.getOutputStream(), true);
 					BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
 					String cmd;
 					while ((cmd = in.readLine()) != null) {
-						cmd = handle(cmd.split(" "));
-						if (cmd != null) out.println(cmd);
+						handle(cmd.split(" "), out);
 					}
 				} catch (Exception e) {
 					System.out.println("ERROR: " + e);
 				}
+				System.out.println("Quit a connection.");
 			}}.start();
 		}
 	}
 
-	/** Returns the result string WITHOUT the '\n'-terminator. */
-	private static String handle(String[] cmd) throws Exception {
+	private static void handle(String[] cmd, PrintStream out) throws Exception {
 		switch (CMD.valueOf(cmd[0])) {
 			case CMD_LIST: {
 				String[] names = new File("../addons").list();
 				String str = "" + names.length;
 				for (String s : names) str += "\n" + s;
-				return str;
+				out.println(str);
+				return;
 			}
-			case CMD_INFO: {
-				return info(Integer.valueOf(cmd[1]), cmd[2], cmd[3]);
-			}
+			case CMD_INFO:
+				out.println(info(Integer.valueOf(cmd[1]), cmd[2], cmd[3]));
+				return;
 			case CMD_DOWNLOAD: {
 				DirInfo dir = new DirInfo(new File("../addons", cmd[1]));
 				registerDownload(cmd[1]);
-				return dir.totalDirs + dir.allDirNames() + dir.allFileInfos();
+				out.println(dir.totalDirs);
+				dir.writeAllDirNames(out, "");
+				dir.writeAllFileInfos(out);
+				out.println();
+				return;
 			}
 			case CMD_I18N: {
 				DirInfo dir = new DirInfo(new File("../i18n", cmd[1]));
-				return dir.allFileInfos();
+				dir.writeAllFileInfos(out);
+				out.println();
+				return;
 			}
 			case CMD_COMMENT: {
-				if (!auth(cmd[2], cmd[3])) return null;
+				if (!auth(cmd[2], cmd[3])) return;
 				String msg = cmd[6];
 				for (int i = 0; i < Integer.valueOf(cmd[5]); ++i) msg += " " + cmd[7 + i];
 				comment(cmd[1], cmd[2], cmd[4], msg.replaceAll("\0", "\n"));
-				return null;
+				return;
 			}
 			case CMD_VOTE:
-				if (!auth(cmd[2], cmd[3])) return null;
+				if (!auth(cmd[2], cmd[3])) return;
 				registerVote(cmd[1], cmd[2], cmd[4]);
-				return null;
+				return;
 			case CMD_GET_VOTE: {
-				if (!auth(cmd[2], cmd[3])) return "";
+				if (!auth(cmd[2], cmd[3])) {
+					out.println();
+					return;
+				}
 				Value vote = readProfile(new File("../metadata", cmd[1]), cmd[1]).get("vote_" + cmd[2]);
-				return vote == null ? "" : vote.value;
+				out.println(vote == null ? "" : vote.value);
+				return;
 			}
 			case CMD_SUBMIT:
 				// NOCOM
 			default:
 				System.out.println("ERROR: Invalid command '" + cmd[0] + "'");
-				return "";
+				out.println();
+				return;
 		}
 	}
 
 	private static class DirInfo {
-		public final String name;
+		public final File file;
 		public final ArrayList<File> regularFiles;
 		public final ArrayList<DirInfo> subdirs;
 		public final int totalDirs;
 		public final int totalFiles;
 
 		public DirInfo(File dir) {
-			name = dir.getName();
+			file = dir;
 			regularFiles = new ArrayList<>();
 			subdirs = new ArrayList<>();
 
@@ -216,25 +230,36 @@ public class Server {
 			for (File f : regularFiles) t++;
 			totalFiles = t;
 			t = 0;
-			for (DirInfo d : subdirs) t += d.totalDirs;
+			for (DirInfo d : subdirs) t += d.totalDirs + 1;
 			totalDirs = t;
 		}
 
-		public String allDirNames() {
-			String str = "";
-			for (DirInfo d : subdirs) str += d.name + "\n" + d.allDirNames();
-			return str;
-		}
-		public String allFileInfos() throws Exception {
-			String str = "\n" + regularFiles.size();
-			for (File f : regularFiles) {
-				final long l = f.length();
-				str += "\n" + f.getName() + "\n" + l + "\n";
-				FileReader​ read = new FileReader​(f);
-				for (long i = 0; i < l; ++i) str += (char)read.read();
+		public void writeAllDirNames(PrintStream out, String prefix) {
+			for (DirInfo d : subdirs) {
+				out.println(prefix + d.file.getName());
+				d.writeAllDirNames(out, prefix + d.file.getName() + "/");
 			}
-			for (DirInfo d : subdirs) str += d.allFileInfos();
-			return str;
+		}
+		public void writeAllFileInfos(PrintStream out) throws Exception {
+			out.println(regularFiles.size());
+			for (File f : regularFiles) {
+				long l = f.length();
+				out.println(f.getName());
+				out.println(l);
+				FileInputStream read = new FileInputStream(f);
+				while (l > 0) {
+					int len = (int)Math.min(l, Integer.MAX_VALUE - 1);
+					byte[] buffer = new byte[len];
+					int r = read.read(buffer, 0, len);
+					if (r != len) {
+						System.out.println("ERROR: Read " + r + " bytes but expected " + len);
+						return;
+					}
+					out.write(buffer);
+					l -= len;
+				}
+			}
+			for (DirInfo d : subdirs) d.writeAllFileInfos(out);
 		}
 	}
 
@@ -332,7 +357,7 @@ public class Server {
 		File f = new File("../metadata", addon);
 		TreeMap<String, Value> metadata = readProfile(f, addon);
 		metadata.putAll(changes);
-		PrintWriter out = new PrintWriter(f);
+		PrintStream out = new PrintStream(f);
 		for (String key : metadata.keySet()) {
 			out.print(key);
 			out.print("=");
@@ -360,15 +385,17 @@ public class Server {
 				TreeMap<String, Value> metadata = readProfile(new File("../metadata", addon), null);
 				String str = "";
 
+				str += profile.get("name"       ).value         + "\n";
 				str += profile.get("name"       ).value(locale) + "\n";
+				str += profile.get("description").value         + "\n";
 				str += profile.get("description").value(locale) + "\n";
+				str += profile.get("author"     ).value         + "\n";
 				str += profile.get("author"     ).value(locale) + "\n";
 				str += metadata.get("uploader"  ).value(locale) + "\n";
 				str += profile.get("version"    ).value(locale) + "\n";
 				str += metadata.get("i18n"      ).value(locale) + "\n";
 				str += profile.get("category"   ).value(locale) + "\n";
 				str += profile.get("requires"   ).value(locale) + "\n";
-				str += metadata.get("security"  ).value(locale) + "\n";
 
 				File f = new File("../screenshots/" + addon, "descriptions");
 				if (f.isFile()) {
@@ -400,6 +427,7 @@ public class Server {
 					for (int j = 0; j < l; ++j) str += metadata.get("comment_" + i + "_" + j).value(locale) + "\n";
 				}
 
+				str += metadata.get("security"  ).value(locale);
 				return str;
 			}
 			default:
