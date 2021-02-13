@@ -153,12 +153,18 @@ public class Server {
 		}
 	}
 
+	public static File[] listSorted(File dir) {
+		File[] files = dir.listFiles();
+		Arrays.sort(files);
+		return files;
+	}
+
 	private static void handle(String[] cmd, PrintStream out) throws Exception {
 		switch (CMD.valueOf(cmd[0])) {
 			case CMD_LIST: {
-				String[] names = new File("../addons").list();
+				File[] names = listSorted(new File("../addons"));
 				String str = "" + names.length;
-				for (String s : names) str += "\n" + s;
+				for (File s : names) str += "\n" + s.getName();
 				out.println(str);
 				return;
 			}
@@ -221,7 +227,7 @@ public class Server {
 			regularFiles = new ArrayList<>();
 			subdirs = new ArrayList<>();
 
-			for (File f : dir.listFiles()) {
+			for (File f : listSorted(dir)) {
 				if (f.isDirectory()) subdirs.add(new DirInfo(f));
 				else regularFiles.add(f);
 			}
@@ -371,7 +377,7 @@ public class Server {
 
 	private static long filesize(File dir) {
 		long l = 0;
-		for (File f : dir.listFiles()) {
+		for (File f : listSorted(dir)) {
 			if (f.isDirectory()) l += filesize(f);
 			else l += f.length();
 		}
