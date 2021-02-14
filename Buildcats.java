@@ -7,7 +7,7 @@ public class Buildcats {
 		for (File f : UpdateList.listSorted(dir)) {
 			if (f.isDirectory()) {
 				recurse(out, f);
-			} else if (f.getName().equalsIgnoreCase("elemental") || f.getName().toLowerCase().endsWith("lua")) {
+			} else if (f.getName().toLowerCase().endsWith("lua") || f.getName().equalsIgnoreCase("elemental") || f.getName().equalsIgnoreCase("descriptions")) {
 				Runtime.getRuntime().exec(new String[] {"xgettext",
 						"-k_",
 						"--keyword=_",
@@ -44,6 +44,7 @@ public class Buildcats {
 					"--copyright-holder=\"Widelands Development Team\"",
 					"--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
 					addon.getPath() + "/addon"}).waitFor();
+			recurse(out, new File("screenshots", addon.getName()));
 			recurse(out, addon);
 		}
 	}

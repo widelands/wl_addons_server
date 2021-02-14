@@ -97,6 +97,7 @@ public class UpdateList {
 
 	public static File[] listSorted(File dir) {
 		File[] files = dir.listFiles();
+		if (files == null) return new File[0];
 		Arrays.sort(files);
 		return files;
 	}
@@ -126,8 +127,9 @@ public class UpdateList {
 		if (dir.isDirectory()) {
 			List<String> in = Files.readAllLines(new File(addon, "../../screenshots/" + addon.getName() + "/descriptions").toPath());
 			while (!in.isEmpty()) {
-				screenies.add(in.remove(0));
-				screenies.add(in.remove(0));
+				String str = in.remove(0);
+				screenies.add(str.split("=")[0]);
+				screenies.add(str.split("\"")[1]);
 			}
 		}
 	}

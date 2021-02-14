@@ -14,6 +14,7 @@ public class Server {
 		 * - Number N of add-ons
 		 * - For each add-on: '\n' followed by the add-on's internal name.
 		 * - '\n'
+		 * - ENDOFSTREAM\n
 		 */
 		CMD_LIST,
 
@@ -51,6 +52,7 @@ public class Server {
 		 *      - number of '\n' characters in the message, '\n'
 		 *      - message, '\n'
 		 *  - "verified" or "unchecked", '\n'
+		 *  - ENDOFSTREAM\n
 		 */
 		CMD_INFO,
 
@@ -72,6 +74,7 @@ public class Server {
 		 *       - '\n'
 		 *       - The content of the file as a byte stream
 		 *   - '\n'
+		 *   - ENDOFSTREAM\n
 		 */
 		CMD_DOWNLOAD,
 
@@ -89,6 +92,7 @@ public class Server {
 		 *     - '\n'
 		 *     - The content of the MO file as a byte stream
 		 *   - '\n'
+		 *   - ENDOFSTREAM\n
 		 */
 		CMD_I18N,
 
@@ -108,7 +112,7 @@ public class Server {
 		 * Arg 1: Add-on name
 		 * Arg 2: User's name
 		 * Arg 3: User's password hash
-		 * Returns: vote as string followed by '\n'
+		 * Returns: vote as string followed by '\n' and ENDOFSTREAM\n
 		 */
 		CMD_GET_VOTE,
 
@@ -166,10 +170,12 @@ public class Server {
 				String str = "" + names.length;
 				for (File s : names) str += "\n" + s.getName();
 				out.println(str);
+				out.println("ENDOFSTREAM");
 				return;
 			}
 			case CMD_INFO:
 				out.println(info(Integer.valueOf(cmd[1]), cmd[2], cmd[3]));
+				out.println("ENDOFSTREAM");
 				return;
 			case CMD_DOWNLOAD: {
 				DirInfo dir = new DirInfo(new File("../addons", cmd[1]));
@@ -177,13 +183,13 @@ public class Server {
 				out.println(dir.totalDirs);
 				dir.writeAllDirNames(out, "");
 				dir.writeAllFileInfos(out);
-				out.println();
+				out.println("ENDOFSTREAM");
 				return;
 			}
 			case CMD_I18N: {
 				DirInfo dir = new DirInfo(new File("../i18n", cmd[1]));
 				dir.writeAllFileInfos(out);
-				out.println();
+				out.println("ENDOFSTREAM");
 				return;
 			}
 			case CMD_COMMENT: {
@@ -194,23 +200,23 @@ public class Server {
 				return;
 			}
 			case CMD_VOTE:
-				if (!auth(cmd[2], cmd[3])) return;
-				registerVote(cmd[1], cmd[2], cmd[4]);
+				if (auth(cmd[2], cmd[3])) registerVote(cmd[1], cmd[2], cmd[4]);
 				return;
 			case CMD_GET_VOTE: {
 				if (!auth(cmd[2], cmd[3])) {
-					out.println();
+					out.println("\nENDOFSTREAM");
 					return;
 				}
 				Value vote = readProfile(new File("../metadata", cmd[1]), cmd[1]).get("vote_" + cmd[2]);
-				out.println(vote == null ? "" : vote.value);
+				out.println(vote == null ? "0" : vote.value);
+				out.println("ENDOFSTREAM");
 				return;
 			}
 			case CMD_SUBMIT:
 				// NOCOM
 			default:
 				System.out.println("ERROR: Invalid command '" + cmd[0] + "'");
-				out.println();
+				out.println("ENDOFSTREAM");
 				return;
 		}
 	}
@@ -299,6 +305,7 @@ public class Server {
 		if (_staticprofiles.containsKey(f)) return _staticprofiles.get(f);
 
 		TreeMap<String, Value> profile = new TreeMap<>();
+		if (!f.isFile()) return profile;
 		for (String line : Files.readAllLines(f.toPath())) {
 			if (line.trim().startsWith("#")) continue;
 			String[] str = line.split("=");
@@ -336,12 +343,12 @@ public class Server {
 		TreeMap<String, Value> metadata = readProfile(f, addon);
 		TreeMap<String, Value> ch = new TreeMap<>();
 		Value oldVote = metadata.get("vote_" + user);
-		if (oldVote != null) {
+		if (oldVote != null && !oldVote.value.equals("0")) {
 			if (oldVote.value.equals("" + v)) return;
 			ch.put("votes_" + oldVote.value, new Value("votes_" + oldVote.value, "" + (Long.valueOf(metadata.get("votes_" + oldVote.value).value) - 1)));
 		}
 		ch.put("vote_" + user, new Value("vote_" + user, "" + v));
-		ch.put("votes_" + v, new Value("votes_" + v, "" + (Long.valueOf(metadata.get("votes_" + v).value) + 1)));
+		if (!v.equals("0")) ch.put("votes_" + v, new Value("votes_" + v, "" + (Long.valueOf(metadata.get("votes_" + v).value) + 1)));
 		editMetadata(addon, ch);
 	}
 
@@ -389,6 +396,7 @@ public class Server {
 			case 3: {
 				TreeMap<String, Value> profile = readProfile(new File("../addons/" + addon, "addon"), addon);
 				TreeMap<String, Value> metadata = readProfile(new File("../metadata", addon), null);
+				TreeMap<String, Value> screenies = readProfile(new File("../screenshots/" + addon, "descriptions"), addon);
 				String str = "";
 
 				str += profile.get("name"       ).value         + "\n";
@@ -403,19 +411,8 @@ public class Server {
 				str += profile.get("category"   ).value(locale) + "\n";
 				str += profile.get("requires"   ).value(locale) + "\n";
 
-				File f = new File("../screenshots/" + addon, "descriptions");
-				if (f.isFile()) {
-					List<String> in = Files.readAllLines(f.toPath());
-					String s = ""; int i = 0;
-					while (!in.isEmpty()) {
-						++i;
-						s += in.remove(0) + "\n";
-						s += in.remove(0) + "\n";
-					}
-					str += i + "\n" + s;
-				} else {
-					str += "0\n";
-				}
+				str += screenies.size() + "\n";
+				for (String key : screenies.keySet()) str += key + "\n" + screenies.get(key).value(locale) + "\n";
 
 				str += filesize(new File("../addons", addon)) + "\n";
 				str += metadata.get("timestamp").value(locale) + "\n";
@@ -430,7 +427,7 @@ public class Server {
 					str += metadata.get("comment_version_"   + i).value(locale) + "\n";
 					int l = Integer.valueOf(metadata.get("comment_" + i).value);
 					str += l + "\n";
-					for (int j = 0; j < l; ++j) str += metadata.get("comment_" + i + "_" + j).value(locale) + "\n";
+					for (int j = 0; j <= l; ++j) str += metadata.get("comment_" + i + "_" + j).value(locale) + "\n";
 				}
 
 				str += metadata.get("security"  ).value(locale);
