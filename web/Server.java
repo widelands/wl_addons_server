@@ -97,6 +97,19 @@ public class Server {
 		CMD_I18N,
 
 		/** 
+		 * CMD_SCREENSHOT addon screenie
+		 * Download a screenshot.
+		 * Arg 1: Add-on name
+		 * Arg 2: Screenshot name
+		 * Returns:
+		 *   - file size in bytes
+		 *   - \n
+		 *   - content of the image file as a byte stream
+		 *   - ENDOFSTREAM\n
+		 */
+		CMD_SCREENSHOT,
+
+		/** 
 		 * CMD_VOTE name user passwd vote
 		 * Vote on an add-on.
 		 * Arg 1: Add-on name
@@ -192,6 +205,11 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			}
+			case CMD_SCREENSHOT: {
+				writeOneFile(new File("../screenshots/" + cmd[1], cmd[2]), out);
+				out.println("ENDOFSTREAM");
+				return;
+			}
 			case CMD_COMMENT: {
 				if (!auth(cmd[2], cmd[3])) return;
 				String msg = cmd[6];
@@ -218,6 +236,23 @@ public class Server {
 				System.out.println("ERROR: Invalid command '" + cmd[0] + "'");
 				out.println("ENDOFSTREAM");
 				return;
+		}
+	}
+
+	public static void writeOneFile(File f, PrintStream out) throws Exception {
+		long l = f.length();
+		out.println(l);
+		FileInputStream read = new FileInputStream(f);
+		while (l > 0) {
+			int len = (int)Math.min(l, Integer.MAX_VALUE - 1);
+			byte[] buffer = new byte[len];
+			int r = read.read(buffer, 0, len);
+			if (r != len) {
+				System.out.println("ERROR: Read " + r + " bytes but expected " + len);
+				return;
+			}
+			out.write(buffer);
+			l -= len;
 		}
 	}
 
@@ -255,21 +290,8 @@ public class Server {
 		public void writeAllFileInfos(PrintStream out) throws Exception {
 			out.println(regularFiles.size());
 			for (File f : regularFiles) {
-				long l = f.length();
 				out.println(f.getName());
-				out.println(l);
-				FileInputStream read = new FileInputStream(f);
-				while (l > 0) {
-					int len = (int)Math.min(l, Integer.MAX_VALUE - 1);
-					byte[] buffer = new byte[len];
-					int r = read.read(buffer, 0, len);
-					if (r != len) {
-						System.out.println("ERROR: Read " + r + " bytes but expected " + len);
-						return;
-					}
-					out.write(buffer);
-					l -= len;
-				}
+				writeOneFile(f, out);
 			}
 			for (DirInfo d : subdirs) d.writeAllFileInfos(out);
 		}
