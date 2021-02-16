@@ -21,10 +21,10 @@ public class Server {
 		/**
 		 * CMD_INFO version name locale
 		 * Returns detailed info about a specific addon.
-		 * Arg 1: Info version (currently supported: 3)
+		 * Arg 1: Info version (currently supported: 4)
 		 * Arg 2: Add-on name
 		 * Arg 3: Language name
-		 * Returns (for version 3):
+		 * Returns (for version 4):
 		 *  - unlocalized name, '\n'
 		 *  - localized name, '\n'
 		 *  - unlocalized description, '\n'
@@ -36,6 +36,9 @@ public class Server {
 		 *  - i18n version string, '\n'
 		 *  - category string, '\n'
 		 *  - comma-separated list of requirements, '\n'
+		 *  - minimum Widelands version, '\n'
+		 *  - maximum Widelands version, '\n'
+		 *  - sync safety state ('true' if sync-safe), '\n'
 		 *  - number of screenshots, '\n'
 		 *  - for each screenshot: name, '\n', localized description, '\n'
 		 *  - total filesize, '\n'
@@ -211,18 +214,27 @@ public class Server {
 				return;
 			}
 			case CMD_COMMENT: {
-				if (!auth(cmd[2], cmd[3])) return;
+				if (!auth(cmd[2], cmd[3])) {
+					out.println("ACCESSDENIED");
+					return;
+				}
 				String msg = cmd[6];
 				for (int i = 0; i < Integer.valueOf(cmd[5]); ++i) msg += " " + cmd[7 + i];
 				comment(cmd[1], cmd[2], cmd[4], msg.replaceAll("\0", "\n"));
+				out.println("ENDOFSTREAM");
 				return;
 			}
 			case CMD_VOTE:
-				if (auth(cmd[2], cmd[3])) registerVote(cmd[1], cmd[2], cmd[4]);
+				if (auth(cmd[2], cmd[3])) {
+					registerVote(cmd[1], cmd[2], cmd[4]);
+					out.println("ENDOFSTREAM");
+				} else {
+					out.println("ACCESSDENIED");
+				}
 				return;
 			case CMD_GET_VOTE: {
 				if (!auth(cmd[2], cmd[3])) {
-					out.println("\nENDOFSTREAM");
+					out.println("ACCESSDENIED");
 					return;
 				}
 				Value vote = readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + cmd[2]);
@@ -234,7 +246,7 @@ public class Server {
 				// NOCOM
 			default:
 				System.out.println("ERROR: Invalid command '" + cmd[0] + "'");
-				out.println("ENDOFSTREAM");
+				out.println("ACCESSDENIED");
 				return;
 		}
 	}
@@ -415,10 +427,11 @@ public class Server {
 
 	synchronized public static String info(final int version, final String addon, final String locale) throws Exception {
 		switch (version) {
-			case 3: {
+			case 4: {
 				TreeMap<String, Value> profile = readProfile(new File("addons/" + addon, "addon"), addon);
 				TreeMap<String, Value> metadata = readProfile(new File("metadata", addon), null);
 				TreeMap<String, Value> screenies = readProfile(new File("screenshots/" + addon, "descriptions"), addon);
+				BufferedReader i18nVersion = new BufferedReader(new FileReader(new File("i18n/" + addon, "i18n_version")));
 				String str = "";
 
 				str += profile.get("name"       ).value         + "\n";
@@ -429,9 +442,12 @@ public class Server {
 				str += profile.get("author"     ).value(locale) + "\n";
 				str += metadata.get("uploader"  ).value(locale) + "\n";
 				str += profile.get("version"    ).value(locale) + "\n";
-				str += metadata.get("i18n"      ).value(locale) + "\n";
+				str += i18nVersion.readLine() + "\n";
 				str += profile.get("category"   ).value(locale) + "\n";
 				str += profile.get("requires"   ).value(locale) + "\n";
+				str += (profile.containsKey("min_wl_version") ? profile.get("min_wl_version").value : "") + "\n";
+				str += (profile.containsKey("max_wl_version") ? profile.get("max_wl_version").value : "") + "\n";
+				str += (profile.containsKey("sync_safe"     ) ? profile.get("sync_safe"     ).value : "") + "\n";
 
 				str += screenies.size() + "\n";
 				for (String key : screenies.keySet()) str += key + "\n" + screenies.get(key).value(locale) + "\n";

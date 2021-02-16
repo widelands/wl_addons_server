@@ -217,6 +217,13 @@ public class UpdateList {
 
 		// never verify immediately during an update
 		w.println(data.verified && data.version.equals(new_version) ? "verified" : "unchecked");
+
+		if (listVersion == 1) {
+			// also save the i18n version to an independent file for access by the server
+			PrintWriter writei18n = new PrintWriter(new File("i18n/" + addon.getName(), "i18n_version"));
+			writei18n.println(data.i18n_version);
+			writei18n.close();
+		}
 	}
 
 	public static void main(String[] args) throws Exception {
