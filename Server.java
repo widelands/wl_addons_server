@@ -179,7 +179,7 @@ public class Server {
 	private static void handle(String[] cmd, PrintStream out) throws Exception {
 		switch (CMD.valueOf(cmd[0])) {
 			case CMD_LIST: {
-				File[] names = listSorted(new File("../addons"));
+				File[] names = listSorted(new File("addons"));
 				String str = "" + names.length;
 				for (File s : names) str += "\n" + s.getName();
 				out.println(str);
@@ -191,7 +191,7 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			case CMD_DOWNLOAD: {
-				DirInfo dir = new DirInfo(new File("../addons", cmd[1]));
+				DirInfo dir = new DirInfo(new File("addons", cmd[1]));
 				registerDownload(cmd[1]);
 				out.println(dir.totalDirs);
 				dir.writeAllDirNames(out, "");
@@ -200,13 +200,13 @@ public class Server {
 				return;
 			}
 			case CMD_I18N: {
-				DirInfo dir = new DirInfo(new File("../i18n", cmd[1]));
+				DirInfo dir = new DirInfo(new File("i18n", cmd[1]));
 				dir.writeAllFileInfos(out);
 				out.println("ENDOFSTREAM");
 				return;
 			}
 			case CMD_SCREENSHOT: {
-				writeOneFile(new File("../screenshots/" + cmd[1], cmd[2]), out);
+				writeOneFile(new File("screenshots/" + cmd[1], cmd[2]), out);
 				out.println("ENDOFSTREAM");
 				return;
 			}
@@ -225,7 +225,7 @@ public class Server {
 					out.println("\nENDOFSTREAM");
 					return;
 				}
-				Value vote = readProfile(new File("../metadata", cmd[1]), cmd[1]).get("vote_" + cmd[2]);
+				Value vote = readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + cmd[2]);
 				out.println(vote == null ? "0" : vote.value);
 				out.println("ENDOFSTREAM");
 				return;
@@ -349,19 +349,19 @@ public class Server {
 	}
 
 	synchronized private static boolean auth(String user, String passwd) throws Exception {
-		Value p = readProfile(new File("users"), null).get(user);
+		Value p = readProfile(new File("metadata/users"), null).get(user);
 		return p != null && p.value.equals(passwd);
 	}
 
 	synchronized private static void registerDownload(String addon) throws Exception {
-		File f = new File("../metadata", addon);
+		File f = new File("metadata", addon);
 		TreeMap<String, Value> ch = new TreeMap<>();
 		ch.put("downloads", new Value("downloads", "" + (Long.valueOf(readProfile(f, addon).get("downloads").value) + 1)));
 		editMetadata(addon, ch);
 	}
 
 	synchronized private static void registerVote(String addon, String user, String v) throws Exception {
-		File f = new File("../metadata", addon);
+		File f = new File("metadata", addon);
 		TreeMap<String, Value> metadata = readProfile(f, addon);
 		TreeMap<String, Value> ch = new TreeMap<>();
 		Value oldVote = metadata.get("vote_" + user);
@@ -375,7 +375,7 @@ public class Server {
 	}
 
 	synchronized private static void comment(String addon, String user, String version, String message) throws Exception {
-		File f = new File("../metadata", addon);
+		File f = new File("metadata", addon);
 		TreeMap<String, Value> ch = new TreeMap<>();
 		int c = Integer.valueOf(readProfile(f, addon).get("comments").value);
 		ch.put("comments", new Value("comments", "" + (c + 1)));
@@ -389,7 +389,7 @@ public class Server {
 	}
 
 	synchronized private static void editMetadata(String addon, TreeMap<String, Value> changes) throws Exception {
-		File f = new File("../metadata", addon);
+		File f = new File("metadata", addon);
 		TreeMap<String, Value> metadata = readProfile(f, addon);
 		metadata.putAll(changes);
 		PrintStream out = new PrintStream(f);
@@ -416,9 +416,9 @@ public class Server {
 	synchronized public static String info(final int version, final String addon, final String locale) throws Exception {
 		switch (version) {
 			case 3: {
-				TreeMap<String, Value> profile = readProfile(new File("../addons/" + addon, "addon"), addon);
-				TreeMap<String, Value> metadata = readProfile(new File("../metadata", addon), null);
-				TreeMap<String, Value> screenies = readProfile(new File("../screenshots/" + addon, "descriptions"), addon);
+				TreeMap<String, Value> profile = readProfile(new File("addons/" + addon, "addon"), addon);
+				TreeMap<String, Value> metadata = readProfile(new File("metadata", addon), null);
+				TreeMap<String, Value> screenies = readProfile(new File("screenshots/" + addon, "descriptions"), addon);
 				String str = "";
 
 				str += profile.get("name"       ).value         + "\n";
@@ -436,7 +436,7 @@ public class Server {
 				str += screenies.size() + "\n";
 				for (String key : screenies.keySet()) str += key + "\n" + screenies.get(key).value(locale) + "\n";
 
-				str += filesize(new File("../addons", addon)) + "\n";
+				str += filesize(new File("addons", addon)) + "\n";
 				str += metadata.get("timestamp").value(locale) + "\n";
 				str += metadata.get("downloads").value(locale) + "\n";
 				for (int i = 1; i <= 10; ++i) str += metadata.get("votes_" + i).value(locale) + "\n";
