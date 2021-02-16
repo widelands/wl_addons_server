@@ -28,9 +28,15 @@ jobs:
         ./buildcats.sh
     - name: Pushing changes
       run: |
-        git add .
-        git commit -m "Automated translations update"
-        git push origin master
+        if [ -n "$(git status -s i18n)" ]
+        then
+          git add .
+          git commit -m "Automated translations update"
+          git push origin master
+        else
+          git reset origin/master
+          git checkout .
+        fi
         git checkout transifex
         git merge -s recursive -Xtheirs master
         git push origin transifex
