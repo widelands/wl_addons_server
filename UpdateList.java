@@ -46,6 +46,7 @@ public class UpdateList {
 			final String addon = lines.remove(0);
 			lines.remove(0); lines.remove(0); lines.remove(0);
 			final String uploader = lines.remove(0);
+			if (listVersion >= 3) {lines.remove(0); lines.remove(0); lines.remove(0); }
 			final long timestamp = Long.valueOf(lines.remove(0));
 			final long downloadCount = Long.valueOf(lines.remove(0));
 			
@@ -141,7 +142,7 @@ public class UpdateList {
 				// some dummy values for initialization of not-yet-implemented data
 				12345, (int)(10 * Math.random()), kDefaultRatings[(int)(kDefaultRatings.length * Math.random())], new ArrayList<>(), new int[10]);
 
-		String descname = null, descr = null, author = null, category = null, new_version = null;
+		String descname = null, descr = null, author = null, category = null, new_version = null, minWLVersion = "", maxWLVersion = "", sync_safe = "desync";
 		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(),
 				locales = new ArrayList<>(), checksums = new ArrayList<>(), screenies = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
 		recurse(dirs, files, checksums, sizes, addon, "");
@@ -162,6 +163,9 @@ public class UpdateList {
 				case "author": author = arg; break;
 				case "category": category = arg; break;
 				case "version": new_version = arg; break;
+				case "min_wl_version": minWLVersion = arg; break;
+				case "max_wl_version": maxWLVersion = arg; break;
+				case "sync_safe": if (arg.equalsIgnoreCase("true")) sync_safe = "sync_safe"; break;
 				case "requires":
 					for (String req : arg.split(",")) requires.add(req);
 					break;
@@ -176,6 +180,11 @@ public class UpdateList {
 		w.println(descr);
 		w.println(author);
 		w.println(data.uploader);
+		if (listVersion >= 3) {
+			w.println(minWLVersion);
+			w.println(maxWLVersion);
+			w.println(sync_safe);
+		}
 		w.println(data.timestamp);
 		w.println(data.downloadCount);
 		if (listVersion < 2) {
@@ -226,7 +235,7 @@ public class UpdateList {
 				return;
 			}
 		}
-		for (int listVersion = 1; listVersion <= 2; ++listVersion) {
+		for (int listVersion = 1; listVersion <= 3; ++listVersion) {
 			System.out.println("Parsing list for version " + listVersion);
 			final Map<String, Data> data = detectLocaleVersions(listVersion, increase_i18n, verify);
 

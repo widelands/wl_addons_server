@@ -54,7 +54,7 @@ Issues not directly related to add-ons should be reported [against the official 
 
 #### Verify a new add-on
 
-To verify a new add-on, read the code carefully and make sure it does not contain malicious code. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then run `java UpdateList`, then git add,commit,push.
+To verify a new add-on, read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then run `java UpdateList`, then git add,commit,push.
 
 #### Translations
 
