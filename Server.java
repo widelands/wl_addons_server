@@ -119,6 +119,7 @@ public class Server {
 		 * Arg 2: User's name
 		 * Arg 3: User's password hash
 		 * Arg 4: Vote (as string) 1-10
+		 * Returns: ENDOFSTREAM\n or ACCESSDENIED\n
 		 */
 		CMD_VOTE,
 
@@ -128,7 +129,7 @@ public class Server {
 		 * Arg 1: Add-on name
 		 * Arg 2: User's name
 		 * Arg 3: User's password hash
-		 * Returns: vote as string followed by '\n' and ENDOFSTREAM\n
+		 * Returns: ACCESSDENIED\n, or vote as string followed by '\n' and ENDOFSTREAM\n
 		 */
 		CMD_GET_VOTE,
 
@@ -141,12 +142,19 @@ public class Server {
 		 * Arg 4: Add-on version
 		 * Arg 5: Number of whitespaces in the message
 		 * Arg 6: Comment message (NOTE: use '\0' instead of '\n' for line breaks)
+		 * Returns: ENDOFSTREAM\n or ACCESSDENIED\n
 		 */
 		CMD_COMMENT,
 
 		/** 
-		 * CMD_SUBMIT
-		 * Upload an add-on. Not yet implemented.
+		 * CMD_SUBMIT name user passwd version
+		 * Upload an add-on.
+		 * Arg 1: Add-on name
+		 * Arg 2: User's name
+		 * Arg 3: User's password hash
+		 * Arg 4: Add-on version
+		 * Then, on the next line, the content of the add-on like the payload for CMD_DOWNLOAD, terminated by ENDOFSTREAM\n.
+		 * Returns: ENDOFSTREAM\n or ACCESSDENIED\n
 		 */
 		CMD_SUBMIT,
 	}
@@ -158,17 +166,17 @@ public class Server {
 			Socket s = serverSocket.accept();
 			new Thread() { public void run() {
 				try {
-					System.out.println("Received a connection.");
+					System.out.println("[" + Thread.currentThread().getName() + "] Connection received.");
 					PrintStream out = new PrintStream(s.getOutputStream(), true);
 					BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
 					String cmd;
 					while ((cmd = in.readLine()) != null) {
-						handle(cmd.split(" "), out);
+						handle(cmd.split(" "), out, in);
 					}
 				} catch (Exception e) {
-					System.out.println("ERROR: " + e);
+					System.out.println("[" + Thread.currentThread().getName() + "] ERROR: " + e);
 				}
-				System.out.println("Quit a connection.");
+				System.out.println("[" + Thread.currentThread().getName() + "] Connection quit.");
 			}}.start();
 		}
 	}
@@ -179,7 +187,7 @@ public class Server {
 		return files;
 	}
 
-	private static void handle(String[] cmd, PrintStream out) throws Exception {
+	private static void handle(String[] cmd, PrintStream out, BufferedReader in) throws Exception {
 		switch (CMD.valueOf(cmd[0])) {
 			case CMD_LIST: {
 				File[] names = listSorted(new File("addons"));
@@ -242,13 +250,80 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			case CMD_SUBMIT:
-				// NOCOM
+			case CMD_SUBMIT: {
+				if (!auth(cmd[2], cmd[3])) {
+					out.println("ACCESSDENIED");
+					return;
+				}
+				File addOnDir = new File("addons", cmd[1]);
+				if (addOnDir.isDirectory()) {
+					TreeMap<String, Value> profile = readProfile(new File(addOnDir, "addon"), cmd[1]);
+					String[] oldVersion = profile.get("version").value.split(".");
+					String[] newVersion = cmd[4].split(".");
+					Boolean newer = null;
+					for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
+						if (!oldVersion[i].equals(newVersion[i])) {
+							newer = (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
+							break;
+						}
+					}
+					if (newer == null) newer = (oldVersion.length < newVersion.length);
+					if (!newer) {
+						out.println("ACCESSDENIED");
+						return;
+					}
+				}
+				File tempDir = new File("temp", cmd[1]);
+				while (tempDir.exists()) tempDir = new File("temp", tempDir.getName() + "_");
+				tempDir.mkdirs();
+				final int nrDirs = Integer.valueOf(in.readLine());
+				File[] dirnames = new File[nrDirs];
+				for (int i = 0; i < nrDirs; ++i) {
+					dirnames[i] = new File(tempDir, in.readLine());
+					dirnames[i].mkdirs();
+				}
+				for (int i = 0; i < nrDirs; ++i) {
+					final int nrFiles = Integer.valueOf(in.readLine());
+					for (int j = 0; j < nrFiles; ++j) {
+						final String filename = in.readLine();
+						final long size = Long.valueOf(in.readLine());
+						PrintStream stream = new PrintStream(new File(dirnames[i], filename));
+						for (long l = 0; l < size; ++l) stream.write(in.read());
+						stream.close();
+					}
+				}
+				if (!in.readLine().equals("ENDOFSTREAM")) {
+					out.println("ACCESSDENIED");
+					doDelete(tempDir);
+					return;
+				}
+				if (addOnDir.exists()) doDelete(addOnDir);
+				else initMetadata(cmd[1], cmd[2]);
+				tempDir.renameTo​(addOnDir);
+				if (_staticprofiles.containsKey(addOnDir)) _staticprofiles.remove(addOnDir);
+				out.println("ENDOFSTREAM");
+				return;
+			}
 			default:
-				System.out.println("ERROR: Invalid command '" + cmd[0] + "'");
+				System.out.println("[" + Thread.currentThread().getName() + "] ERROR: Invalid command '" + cmd[0] + "'");
 				out.println("ACCESSDENIED");
 				return;
 		}
+	}
+
+	synchronized private static void doDelete(File f) {
+		if (f.isDirectory()) for (File file : f.listFiles()) doDelete(file);
+		f.delete();
+	}
+
+	synchronized private static void initMetadata(String addon, String uploader) throws Exception {
+		PrintWriter w = new PrintWriter(new File("metadata", addon));
+		w.println("timestamp=\"" + (System.currentTimeMillis() / 1000) + "\"");
+		w.println("downloads=\"0\"");
+		w.println("comments=\"0\"");
+		w.println("security=\"unchecked\"");
+		w.println("uploader=\"" + uploader + "\"");
+		for (int i = 1; i <= 10; ++i) w.println("votes_" + i + "=\"0\"");
 	}
 
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
@@ -260,7 +335,7 @@ public class Server {
 			byte[] buffer = new byte[len];
 			int r = read.read(buffer, 0, len);
 			if (r != len) {
-				System.out.println("ERROR: Read " + r + " bytes but expected " + len);
+				System.out.println("[" + Thread.currentThread().getName() + "] ERROR: Read " + r + " bytes but expected " + len);
 				return;
 			}
 			out.write(buffer);
@@ -320,7 +395,8 @@ public class Server {
 								" gettext -s \"" + value.replaceAll("\"", "\\\"") + "\""
 					}).getInputStream())).readLine();
 			} catch (Exception e) {
-				System.out.println("WARNING: gettext error for '" + key + "'='" + value + "' @ '" + textdomain + "' / '" + locale + "': " + e);
+				System.out.println("[" + Thread.currentThread().getName() + "] WARNING: gettext error for '" +
+						key + "'='" + value + "' @ '" + textdomain + "' / '" + locale + "': " + e);
 				return value;
 			}
 		}
@@ -472,7 +548,7 @@ public class Server {
 				return str;
 			}
 			default:
-				System.out.println("ERROR: Invalid info version '" + version + "'");
+				System.out.println("[" + Thread.currentThread().getName() + "] ERROR: Invalid info version '" + version + "'");
 				return "";
 		}
 	}
