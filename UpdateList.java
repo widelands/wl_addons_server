@@ -81,7 +81,7 @@ public class UpdateList {
 		return result;
 	}
 
-	private static String checksum(File f) {
+	public static String checksum(File f) {
 		try {
 			Runtime rt = Runtime.getRuntime();
 			Process pr = rt.exec(new String[] {"md5sum", f.getPath()});
@@ -91,7 +91,6 @@ public class UpdateList {
 			return md5.split(" ")[0];
 		} catch (Exception e) {
 			System.err.println("checksumming error: " + e);
-			System.exit(1);
 		}
 		return "";
 	}

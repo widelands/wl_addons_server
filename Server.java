@@ -4,8 +4,24 @@ import java.nio.file.*;
 import java.util.*;
 
 public class Server {
-	// All arguments are whitespace-terminated strings.
-	// The return value is a '\n'-terminated string.
+	/*
+	 * After the first contact, the client must send the following info:
+	 *  - Protocol version
+	 *  - \n'
+	 *  - Language name
+	 *  - \n'
+	 *  - Username (or "" for no user)
+	 *  - \n'
+	 *  - Password hash (or "" for no user)
+	 *  - '\n'
+	 *  - ENDOFSTREAM\n
+	 * The server then replies with ENDOFSTREAM\n.
+	 *
+	 * The only currently supported protocol version is 4. All documentation here refers to version 4.
+	 *
+	 * All arguments to commands are whitespace-terminated strings.
+	 * The return value is a '\n'-terminated string.
+	 */
 	public static enum CMD {
 		/**
 		 * CMD_LIST
@@ -19,12 +35,10 @@ public class Server {
 		CMD_LIST,
 
 		/**
-		 * CMD_INFO version name locale
+		 * CMD_INFO name
 		 * Returns detailed info about a specific addon.
-		 * Arg 1: Info version (currently supported: 4)
-		 * Arg 2: Add-on name
-		 * Arg 3: Language name
-		 * Returns (for version 4):
+		 * Arg 1: Add-on name
+		 * Returns:
 		 *  - unlocalized name, '\n'
 		 *  - localized name, '\n'
 		 *  - unlocalized description, '\n'
@@ -73,6 +87,8 @@ public class Server {
 		 *     - For each of the F files in the directory:
 		 *       - filename
 		 *       - '\n'
+		 *       - checksum
+		 *       - '\n'
 		 *       - filesize in bytes
 		 *       - '\n'
 		 *       - The content of the file as a byte stream
@@ -91,6 +107,8 @@ public class Server {
 		 *   - For each of the T languages:
 		 *     - <language_name>.mo
 		 *     - '\n'
+		 *     - checksum
+		 *     - '\n'
 		 *     - MO file size in bytes
 		 *     - '\n'
 		 *     - The content of the MO file as a byte stream
@@ -105,6 +123,8 @@ public class Server {
 		 * Arg 1: Add-on name
 		 * Arg 2: Screenshot name
 		 * Returns:
+		 *   - checksum
+		 *   - '\n'
 		 *   - file size in bytes
 		 *   - \n
 		 *   - content of the image file as a byte stream
@@ -113,48 +133,39 @@ public class Server {
 		CMD_SCREENSHOT,
 
 		/** 
-		 * CMD_VOTE name user passwd vote
+		 * CMD_VOTE name vote
 		 * Vote on an add-on.
 		 * Arg 1: Add-on name
-		 * Arg 2: User's name
-		 * Arg 3: User's password hash
-		 * Arg 4: Vote (as string) 1-10
-		 * Returns: ENDOFSTREAM\n or ACCESSDENIED\n
+		 * Arg 2: Vote (as string) 1-10
+		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_VOTE,
 
 		/** 
-		 * CMD_GET_VOTE name user passwd
-		 * How a user voted an add-on.
+		 * CMD_GET_VOTE name
+		 * How the user voted an add-on.
 		 * Arg 1: Add-on name
-		 * Arg 2: User's name
-		 * Arg 3: User's password hash
 		 * Returns: ACCESSDENIED\n, or vote as string followed by '\n' and ENDOFSTREAM\n
 		 */
 		CMD_GET_VOTE,
 
 		/** 
-		 * CMD_COMMENT name user passwd version whitespaces message
+		 * CMD_COMMENT name version whitespaces message
 		 * Vote on an add-on.
 		 * Arg 1: Add-on name
-		 * Arg 2: User's name
-		 * Arg 3: User's password hash
-		 * Arg 4: Add-on version
-		 * Arg 5: Number of whitespaces in the message
-		 * Arg 6: Comment message (NOTE: use '\0' instead of '\n' for line breaks)
-		 * Returns: ENDOFSTREAM\n or ACCESSDENIED\n
+		 * Arg 2: Add-on version
+		 * Arg 3: Number of whitespaces in the message
+		 * Arg 4: Comment message (NOTE: use '\0' instead of '\n' for line breaks)
+		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_COMMENT,
 
 		/** 
-		 * CMD_SUBMIT name user passwd version
+		 * CMD_SUBMIT name
 		 * Upload an add-on.
 		 * Arg 1: Add-on name
-		 * Arg 2: User's name
-		 * Arg 3: User's password hash
-		 * Arg 4: Add-on version
 		 * Then, on the next line, the content of the add-on like the payload for CMD_DOWNLOAD, terminated by ENDOFSTREAM\n.
-		 * Returns: ENDOFSTREAM\n or ACCESSDENIED\n
+		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_SUBMIT,
 	}
@@ -165,18 +176,40 @@ public class Server {
 		while (true) {
 			Socket s = serverSocket.accept();
 			new Thread() { public void run() {
+				PrintStream out = null;
 				try {
 					System.out.println("[" + Thread.currentThread().getName() + "] Connection received.");
-					PrintStream out = new PrintStream(s.getOutputStream(), true);
+					out = new PrintStream(s.getOutputStream(), true);
 					BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+
+					final int protocolVersion = Integer.valueOf(in.readLine());
+					if (protocolVersion != 4) {
+						out.println("Unsupported version");
+						return;
+					}
+					final String locale = in.readLine();
+					final String username = in.readLine();
+					final String password = in.readLine();
+					if ((!username.isEmpty() || !password.isEmpty()) && !auth(username, password)) {
+						out.println("Wrong username or password");
+						return;
+					}
+					if (!in.readLine().equals("ENDOFSTREAM")) {
+						out.println("Stream continues past its end");
+						return;
+					}
+					out.println("ENDOFSTREAM");
+
 					String cmd;
 					while ((cmd = in.readLine()) != null) {
-						handle(cmd.split(" "), out, in);
+						handle(cmd.split(" "), out, in, protocolVersion, username, locale);
 					}
 				} catch (Exception e) {
 					System.out.println("[" + Thread.currentThread().getName() + "] ERROR: " + e);
+					if (out != null) out.println("e");
 				}
 				System.out.println("[" + Thread.currentThread().getName() + "] Connection quit.");
+				if (out != null) out.close();
 			}}.start();
 		}
 	}
@@ -187,9 +220,9 @@ public class Server {
 		return files;
 	}
 
-	private static void handle(String[] cmd, PrintStream out, BufferedReader in) throws Exception {
+	private static void handle(String[] cmd, PrintStream out, BufferedReader in, int version, String username, String locale) throws Exception {
 		switch (CMD.valueOf(cmd[0])) {
-			case CMD_LIST: {
+			case CMD_LIST: {  // Args: –
 				File[] names = listSorted(new File("addons"));
 				String str = "" + names.length;
 				for (File s : names) str += "\n" + s.getName();
@@ -197,11 +230,11 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			case CMD_INFO:
-				out.println(info(Integer.valueOf(cmd[1]), cmd[2], cmd[3]));
+			case CMD_INFO:  // Args: name
+				out.println(info(version, cmd[1], locale));
 				out.println("ENDOFSTREAM");
 				return;
-			case CMD_DOWNLOAD: {
+			case CMD_DOWNLOAD: {  // Args: name
 				DirInfo dir = new DirInfo(new File("addons", cmd[1]));
 				registerDownload(cmd[1]);
 				out.println(dir.totalDirs);
@@ -210,68 +243,50 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			case CMD_I18N: {
+			case CMD_I18N: {  // Args: name
 				DirInfo dir = new DirInfo(new File("i18n", cmd[1]));
 				dir.writeAllFileInfos(out);
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			case CMD_SCREENSHOT: {
+			case CMD_SCREENSHOT: {  // Args: addon screenie
 				writeOneFile(new File("screenshots/" + cmd[1], cmd[2]), out);
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			case CMD_COMMENT: {
-				if (!auth(cmd[2], cmd[3])) {
-					out.println("ACCESSDENIED");
+			case CMD_COMMENT: {  // Args: name version whitespaces message
+				if (username.isEmpty()) {
+					out.println("Please log in to comment");
 					return;
 				}
-				String msg = cmd[6];
-				for (int i = 0; i < Integer.valueOf(cmd[5]); ++i) msg += " " + cmd[7 + i];
-				comment(cmd[1], cmd[2], cmd[4], msg.replaceAll("\0", "\n"));
+				String msg = cmd[4];
+				for (int i = 0; i < Integer.valueOf(cmd[3]); ++i) msg += " " + cmd[5 + i];
+				comment(cmd[1], username, cmd[2], msg.replaceAll("\0", "\n"));
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			case CMD_VOTE:
-				if (auth(cmd[2], cmd[3])) {
-					registerVote(cmd[1], cmd[2], cmd[4]);
-					out.println("ENDOFSTREAM");
+			case CMD_VOTE:  // Args: name vote
+				if (username.isEmpty()) {
+					out.println("Wrong username or password");
 				} else {
-					out.println("ACCESSDENIED");
+					registerVote(cmd[1], username, cmd[2]);
+					out.println("ENDOFSTREAM");
 				}
 				return;
-			case CMD_GET_VOTE: {
-				if (!auth(cmd[2], cmd[3])) {
+			case CMD_GET_VOTE: {  // Args: name
+				if (username.isEmpty()) {
 					out.println("ACCESSDENIED");
 					return;
 				}
-				Value vote = readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + cmd[2]);
+				Value vote = readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + username);
 				out.println(vote == null ? "0" : vote.value);
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			case CMD_SUBMIT: {
-				if (!auth(cmd[2], cmd[3])) {
-					out.println("ACCESSDENIED");
+			case CMD_SUBMIT: {  // Args: name
+				if (username.isEmpty()) {
+					out.println("Wrong username or password");
 					return;
-				}
-				File addOnDir = new File("addons", cmd[1]);
-				if (addOnDir.isDirectory()) {
-					TreeMap<String, Value> profile = readProfile(new File(addOnDir, "addon"), cmd[1]);
-					String[] oldVersion = profile.get("version").value.split(".");
-					String[] newVersion = cmd[4].split(".");
-					Boolean newer = null;
-					for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
-						if (!oldVersion[i].equals(newVersion[i])) {
-							newer = (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
-							break;
-						}
-					}
-					if (newer == null) newer = (oldVersion.length < newVersion.length);
-					if (!newer) {
-						out.println("ACCESSDENIED");
-						return;
-					}
 				}
 				File tempDir = new File("temp", cmd[1]);
 				while (tempDir.exists()) tempDir = new File("temp", tempDir.getName() + "_");
@@ -286,27 +301,59 @@ public class Server {
 					final int nrFiles = Integer.valueOf(in.readLine());
 					for (int j = 0; j < nrFiles; ++j) {
 						final String filename = in.readLine();
+						final String checksum = in.readLine();
 						final long size = Long.valueOf(in.readLine());
-						PrintStream stream = new PrintStream(new File(dirnames[i], filename));
+						File file = new File(dirnames[i], filename);
+						PrintStream stream = new PrintStream(file);
 						for (long l = 0; l < size; ++l) stream.write(in.read());
 						stream.close();
+						String c = UpdateList.checksum(file);
+						if (!checksum.equals(c)) {
+							out.println("Checksum mismatch for " + dirnames[i].getPath() + "/" + filename + ": expected " + checksum + ", found " + c);
+							doDelete(tempDir);
+							return;
+						}
 					}
 				}
 				if (!in.readLine().equals("ENDOFSTREAM")) {
-					out.println("ACCESSDENIED");
+					out.println("Stream continues past its end");
 					doDelete(tempDir);
 					return;
 				}
+				File addOnDir = new File("addons", cmd[1]);
+				if (addOnDir.isDirectory()) {
+					TreeMap<String, Value> oldProfile = readProfile(new File(addOnDir, "addon"), cmd[1]);
+					TreeMap<String, Value> newProfile = readProfile(new File(tempDir, "addon"), cmd[1]);
+					if (!oldProfile.get("category").value.equals(newProfile.get("category").value)) {
+						out.println("An add-on with the same name and a different category already exists.");
+						doDelete(tempDir);
+						return;
+					}
+					String[] oldVersion = oldProfile.get("version").value.split(".");
+					String[] newVersion = oldProfile.get("version").value.split(".");
+					Boolean newer = null;
+					for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
+						if (!oldVersion[i].equals(newVersion[i])) {
+							newer = (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
+							break;
+						}
+					}
+					if (newer == null) newer = (oldVersion.length < newVersion.length);
+					if (!newer) {
+						out.println("An add-on with the same name and an equal or newer version already exists.");
+						doDelete(tempDir);
+						return;
+					}
+				}
 				if (addOnDir.exists()) doDelete(addOnDir);
-				else initMetadata(cmd[1], cmd[2]);
+				else initMetadata(cmd[1], username);
 				tempDir.renameTo​(addOnDir);
 				if (_staticprofiles.containsKey(addOnDir)) _staticprofiles.remove(addOnDir);
 				out.println("ENDOFSTREAM");
 				return;
 			}
 			default:
-				System.out.println("[" + Thread.currentThread().getName() + "] ERROR: Invalid command '" + cmd[0] + "'");
-				out.println("ACCESSDENIED");
+				out.println("Invalid command " + cmd[0]);
 				return;
 		}
 	}
@@ -327,6 +374,7 @@ public class Server {
 	}
 
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
+		out.println(UpdateList.checksum(f));
 		long l = f.length();
 		out.println(l);
 		FileInputStream read = new FileInputStream(f);
