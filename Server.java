@@ -459,6 +459,7 @@ public class Server {
 	}
 
 	synchronized private static boolean auth(String user, String passwd) throws Exception {
+		// NOCOM
 		Utils.Value p = Utils.readProfile(new File("metadata/users"), null).get(user);
 		return p != null && p.value.equals(passwd);
 	}
@@ -469,20 +470,19 @@ public class Server {
 				TreeMap<String, Utils.Value> profile = Utils.readProfile(new File("addons/" + addon, "addon"), addon);
 				TreeMap<String, Utils.Value> metadata = Utils.readProfile(new File("metadata", addon), null);
 				TreeMap<String, Utils.Value> screenies = Utils.readProfile(new File("screenshots/" + addon, "descriptions"), addon);
-				BufferedReader i18nVersion = new BufferedReader(new FileReader(new File("i18n/" + addon, "i18n_version")));
 				String str = "";
 
-				str += profile.get("name"       ).value         + "\n";
-				str += profile.get("name"       ).value(locale) + "\n";
-				str += profile.get("description").value         + "\n";
-				str += profile.get("description").value(locale) + "\n";
-				str += profile.get("author"     ).value         + "\n";
-				str += profile.get("author"     ).value(locale) + "\n";
-				str += metadata.get("uploader"  ).value(locale) + "\n";
-				str += profile.get("version"    ).value(locale) + "\n";
-				str += i18nVersion.readLine() + "\n";
-				str += profile.get("category"   ).value(locale) + "\n";
-				str += profile.get("requires"   ).value(locale) + "\n";
+				str += profile.get("name"         ).value         + "\n";
+				str += profile.get("name"         ).value(locale) + "\n";
+				str += profile.get("description"  ).value         + "\n";
+				str += profile.get("description"  ).value(locale) + "\n";
+				str += profile.get("author"       ).value         + "\n";
+				str += profile.get("author"       ).value(locale) + "\n";
+				str += metadata.get("uploader"    ).value(locale) + "\n";
+				str += profile.get("version"      ).value(locale) + "\n";
+				str += metadata.get("i18n_version").value(locale) + "\n";
+				str += profile.get("category"     ).value(locale) + "\n";
+				str += profile.get("requires"     ).value(locale) + "\n";
 				str += (profile.containsKey("min_wl_version") ? profile.get("min_wl_version").value : "") + "\n";
 				str += (profile.containsKey("max_wl_version") ? profile.get("max_wl_version").value : "") + "\n";
 				str += (profile.containsKey("sync_safe"     ) ? profile.get("sync_safe"     ).value : "") + "\n";
