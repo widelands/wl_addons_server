@@ -1,5 +1,5 @@
 3
-14
+15
 100-wells.wad
 100 Wells
 Win condition about building 100 wells to win. This does not work with amazons.
@@ -40,6 +40,42 @@ nds.mo
 f862053d3a235e358961f47a2a6c3e37
 6daeb85b53416f56a21d85e1bf01261f
 58deecf96788b00903637de155d65cfa
+0
+unchecked
+auto_soldiers_cs.wad
+Automatic Soldier Setting for Military Construction Sites
+Configure new miliary construction sites automatically: If there is no enemy military buildiung in sight, every new construction site is set to prefer rookies and reduce the capacity to 1. If there are enemy military buildings in sight prefer always heroes and set capacity to max. Once a player adjusted one of these settings, this script does nothing. Note that a player has to observe the borders anyway.
+kaputtnik
+The Widelands Bunnybot
+
+
+desync
+1613666291
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+9717
+script
+0
+0
+2
+addon
+init.lua
+0
+2
+4642aa80c32b073dc3826a62749d8190
+4e528673635e8159e724385cab9ca9e0
 0
 unchecked
 challenge-map-set.wad
