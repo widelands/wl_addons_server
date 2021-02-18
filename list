@@ -32,7 +32,7 @@ f862053d3a235e358961f47a2a6c3e37
 unchecked
 auto_soldiers_cs.wad
 Automatic Soldier Setting for Military Construction Sites
-Configure new miliary construction sites automatically: If there is no enemy military buildiung in sight, every new construction site is set to prefer rookies and reduce the capacity to 1. If there are enemy military buildings in sight prefer always heroes and set capacity to max. Once a player adjusted one of these settings, this script does nothing. Note that a player has to observe the borders anyway.
+If there is no enemy military building in sight, every new construction site is set to prefer rookies and reduce the capacity to 1. If there are enemy military buildings in sight prefer always heroes and set capacity to max. Once a player adjusted one of these settings, this script does nothing.
 kaputtnik
 The Widelands Bunnybot
 1613666291
@@ -42,7 +42,7 @@ The Widelands Bunnybot
 0
 1
 1
-9717
+9606
 script
 0
 0
@@ -51,7 +51,7 @@ addon
 init.lua
 0
 2
-4642aa80c32b073dc3826a62749d8190
+8306bcd313172779cda9775ea898d597
 4e528673635e8159e724385cab9ca9e0
 unchecked
 challenge-map-set.wad
