@@ -236,7 +236,7 @@ public class Server {
 				return;
 			case CMD_DOWNLOAD: {  // Args: name
 				DirInfo dir = new DirInfo(new File("addons", cmd[1]));
-				registerDownload(cmd[1]);
+				Utils.registerDownload(cmd[1]);
 				out.println(dir.totalDirs);
 				dir.writeAllDirNames(out, "");
 				dir.writeAllFileInfos(out);
@@ -261,7 +261,7 @@ public class Server {
 				}
 				String msg = cmd[4];
 				for (int i = 0; i < Integer.valueOf(cmd[3]); ++i) msg += " " + cmd[5 + i];
-				comment(cmd[1], username, cmd[2], msg.replaceAll("\0", "\n"));
+				Utils.comment(cmd[1], username, cmd[2], msg.replaceAll("\0", "\n"));
 				out.println("ENDOFSTREAM");
 				return;
 			}
@@ -269,7 +269,7 @@ public class Server {
 				if (username.isEmpty()) {
 					out.println("Wrong username or password");
 				} else {
-					registerVote(cmd[1], username, cmd[2]);
+					Utils.registerVote(cmd[1], username, cmd[2]);
 					out.println("ENDOFSTREAM");
 				}
 				return;
@@ -278,7 +278,7 @@ public class Server {
 					out.println("ACCESSDENIED");
 					return;
 				}
-				Value vote = readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + username);
+				Utils.Value vote = Utils.readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + username);
 				out.println(vote == null ? "0" : vote.value);
 				out.println("ENDOFSTREAM");
 				return;
@@ -322,8 +322,8 @@ public class Server {
 				}
 				File addOnDir = new File("addons", cmd[1]);
 				if (addOnDir.isDirectory()) {
-					TreeMap<String, Value> oldProfile = readProfile(new File(addOnDir, "addon"), cmd[1]);
-					TreeMap<String, Value> newProfile = readProfile(new File(tempDir, "addon"), cmd[1]);
+					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(new File(addOnDir, "addon"), cmd[1]);
+					TreeMap<String, Utils.Value> newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
 					if (!oldProfile.get("category").value.equals(newProfile.get("category").value)) {
 						out.println("An add-on with the same name and a different category already exists.");
 						doDelete(tempDir);
@@ -348,7 +348,7 @@ public class Server {
 				if (addOnDir.exists()) doDelete(addOnDir);
 				else initMetadata(cmd[1], username);
 				tempDir.renameTo​(addOnDir);
-				if (_staticprofiles.containsKey(addOnDir)) _staticprofiles.remove(addOnDir);
+				if (Utils._staticprofiles.containsKey(addOnDir)) Utils._staticprofiles.remove(addOnDir);
 				out.println("ENDOFSTREAM");
 				return;
 			}
@@ -458,103 +458,17 @@ public class Server {
 		}
 	}
 
-	private static final TreeMap<File, TreeMap<String, Value>> _staticprofiles = new TreeMap<>();
-	synchronized private static TreeMap<String, Value> readProfile(File f, String textdomain) throws Exception {
-		if (_staticprofiles.containsKey(f)) return _staticprofiles.get(f);
-
-		TreeMap<String, Value> profile = new TreeMap<>();
-		if (!f.isFile()) return profile;
-		for (String line : Files.readAllLines(f.toPath())) {
-			if (line.trim().startsWith("#")) continue;
-			String[] str = line.split("=");
-			if (str.length < 2) {
-				if (str.length == 1) profile.put(str[0], new Value(str[0], ""));
-				continue;
-			}
-			String arg = str[1];
-			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
-			boolean localize = false;
-			if (arg.startsWith("_")) { arg = arg.substring(1); localize = true; }
-			if (arg.startsWith("\"")) arg = arg.substring(1);
-			if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
-			profile.put(str[0], new Value(str[0], arg, localize ? textdomain == null ? "" : textdomain : null));
-		}
-
-		_staticprofiles.put(f, profile);
-		return profile;
-	}
-
 	synchronized private static boolean auth(String user, String passwd) throws Exception {
-		Value p = readProfile(new File("metadata/users"), null).get(user);
+		Utils.Value p = Utils.readProfile(new File("metadata/users"), null).get(user);
 		return p != null && p.value.equals(passwd);
-	}
-
-	synchronized private static void registerDownload(String addon) throws Exception {
-		File f = new File("metadata", addon);
-		TreeMap<String, Value> ch = new TreeMap<>();
-		ch.put("downloads", new Value("downloads", "" + (Long.valueOf(readProfile(f, addon).get("downloads").value) + 1)));
-		editMetadata(addon, ch);
-	}
-
-	synchronized private static void registerVote(String addon, String user, String v) throws Exception {
-		File f = new File("metadata", addon);
-		TreeMap<String, Value> metadata = readProfile(f, addon);
-		TreeMap<String, Value> ch = new TreeMap<>();
-		Value oldVote = metadata.get("vote_" + user);
-		if (oldVote != null && !oldVote.value.equals("0")) {
-			if (oldVote.value.equals("" + v)) return;
-			ch.put("votes_" + oldVote.value, new Value("votes_" + oldVote.value, "" + (Long.valueOf(metadata.get("votes_" + oldVote.value).value) - 1)));
-		}
-		ch.put("vote_" + user, new Value("vote_" + user, "" + v));
-		if (!v.equals("0")) ch.put("votes_" + v, new Value("votes_" + v, "" + (Long.valueOf(metadata.get("votes_" + v).value) + 1)));
-		editMetadata(addon, ch);
-	}
-
-	synchronized private static void comment(String addon, String user, String version, String message) throws Exception {
-		File f = new File("metadata", addon);
-		TreeMap<String, Value> ch = new TreeMap<>();
-		int c = Integer.valueOf(readProfile(f, addon).get("comments").value);
-		ch.put("comments", new Value("comments", "" + (c + 1)));
-		ch.put("comment_name_" + c, new Value("comment_name_" + c, user));
-		ch.put("comment_version_" + c, new Value("comment_version_" + c, version));
-		ch.put("comment_timestamp_" + c, new Value("comment_timestamp_" + c, "" + (System.currentTimeMillis() / 1000)));
-		String[] msg = message.split("\n");
-		ch.put("comment_" + c, new Value("comment_" + c, "" + (msg.length - 1)));
-		for (int i = 0; i < msg.length; ++i) ch.put("comment_" + c + "_" + i, new Value("comment_" + c + "_" + i, msg[i]));
-		editMetadata(addon, ch);
-	}
-
-	synchronized private static void editMetadata(String addon, TreeMap<String, Value> changes) throws Exception {
-		File f = new File("metadata", addon);
-		TreeMap<String, Value> metadata = readProfile(f, addon);
-		metadata.putAll(changes);
-		PrintStream out = new PrintStream(f);
-		for (String key : metadata.keySet()) {
-			out.print(key);
-			out.print("=");
-			if (metadata.get(key).textdomain != null) out.print("_");
-			out.print("\"");
-			out.print(metadata.get(key).value);
-			out.print("\"\n");
-		}
-		out.close();
-	}
-
-	private static long filesize(File dir) {
-		long l = 0;
-		for (File f : listSorted(dir)) {
-			if (f.isDirectory()) l += filesize(f);
-			else l += f.length();
-		}
-		return l;
 	}
 
 	synchronized public static String info(final int version, final String addon, final String locale) throws Exception {
 		switch (version) {
 			case 4: {
-				TreeMap<String, Value> profile = readProfile(new File("addons/" + addon, "addon"), addon);
-				TreeMap<String, Value> metadata = readProfile(new File("metadata", addon), null);
-				TreeMap<String, Value> screenies = readProfile(new File("screenshots/" + addon, "descriptions"), addon);
+				TreeMap<String, Utils.Value> profile = Utils.readProfile(new File("addons/" + addon, "addon"), addon);
+				TreeMap<String, Utils.Value> metadata = Utils.readProfile(new File("metadata", addon), null);
+				TreeMap<String, Utils.Value> screenies = Utils.readProfile(new File("screenshots/" + addon, "descriptions"), addon);
 				BufferedReader i18nVersion = new BufferedReader(new FileReader(new File("i18n/" + addon, "i18n_version")));
 				String str = "";
 
@@ -576,7 +490,7 @@ public class Server {
 				str += screenies.size() + "\n";
 				for (String key : screenies.keySet()) str += key + "\n" + screenies.get(key).value(locale) + "\n";
 
-				str += filesize(new File("addons", addon)) + "\n";
+				str += Utils.filesize(new File("addons", addon)) + "\n";
 				str += metadata.get("timestamp").value(locale) + "\n";
 				str += metadata.get("downloads").value(locale) + "\n";
 				for (int i = 1; i <= 10; ++i) str += metadata.get("votes_" + i).value(locale) + "\n";

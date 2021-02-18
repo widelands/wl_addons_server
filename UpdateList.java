@@ -23,60 +23,71 @@ public class UpdateList {
 		public final long timestamp, downloadCount;
 		public final List<Comment> comments;
 		public final int[] ratings;
-		public Data(String v, String u, int i, boolean ver, long t, long dl, int vot, float r, List<Comment> c, int[] rs) {
+		public Data(String v, String u, int i, boolean ver, long t, long dl, List<Comment> c, int[] rs) {
 			comments = c;
 			uploader = u;
 			version = v;
 			i18n_version = i;
 			verified = ver;
 			timestamp = t;
-			votes = vot;
 			downloadCount = dl;
-			rating = votes > 0 ? r : 0;
 			ratings = rs;
+
+			int vot = 0; float sum = 0;
+			for (int index = 0; index < ratings.length; ++index) {
+				vot += ratings[index];
+				sum += ratings[index] * (index + 1);
+			}
+			votes = vot;
+			rating = votes > 0 ? sum / votes : 0;
 		}
 	}
 
-	private static Map<String, Data> detectLocaleVersions(int listVersion, List<String> increase, List<String> verify) throws Exception {
-		List<String> lines = Files.readAllLines(new File(listVersion == 1 ? "list" : ("list_" + listVersion)).toPath());
+	private static Map<String, Data> detectAndUpdateMetadata(List<String> increase, List<String> verify) throws Exception {
 		Map<String, Data> result = new HashMap<>();
-		lines.remove(0);
-		final int size = Integer.valueOf(lines.remove(0));
-		for (int i = 0; i < size; ++i) {
-			final String addon = lines.remove(0);
-			lines.remove(0); lines.remove(0); lines.remove(0);
-			final String uploader = lines.remove(0);
-			if (listVersion >= 3) {lines.remove(0); lines.remove(0); lines.remove(0); }
-			final long timestamp = Long.valueOf(lines.remove(0));
-			final long downloadCount = Long.valueOf(lines.remove(0));
-			
-			int votes = 0; float rating = 0; int[] ratings = new int[10];
-			if (listVersion < 2) {
-				votes = Integer.valueOf(lines.remove(0));
-				rating = Float.valueOf(lines.remove(0));
-			} else {
-				for (int j = 0; j < ratings.length; ++j) ratings[j] = Integer.valueOf(lines.remove(0));
+		for (String addon : new File("addons").list()) {
+			if (!addon.endsWith(".wad")) continue;
+			File metadataFile = new File("metadata", addon);
+			if (!metadataFile.isFile()) Utils.initMetadata(addon, "The Widelands Bunnybot");
+			TreeMap<String, Utils.Value> metadata = Utils.readProfile(metadataFile, addon);
+
+			TreeMap<String, Utils.Value> edit = new TreeMap<>();
+			if (verify.contains(addon)) edit.put("security", new Utils.Value("security", "verified"));
+			if (increase.contains(addon)) {
+				edit.put("i18n_version", new Utils.Value("i18n_version",
+						"" + (Integer.valueOf(metadata.get("i18n_version").value) + 1)));
 			}
-			
+			if (!edit.isEmpty()) {
+				Utils.editMetadata(addon, edit);
+				metadata = Utils.readProfile(metadataFile, addon);
+			}
+
+			int[] votes = new int[10];
+			for (int i = 1; i <= votes.length; ++i) votes[i - 1] = Integer.valueOf(metadata.get("votes_" + i).value);
 			List<Data.Comment> comments = new ArrayList<>();
-			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) {
-				String n = lines.remove(0);
-				String m = lines.remove(0);
-				String v = lines.remove(0);
-				long t = Long.valueOf(lines.remove(0));
-				comments.add(new Data.Comment(n, m, v, t));
+			int c = Integer.valueOf(metadata.get("comments").value);
+			for (int i = 0; i < c; ++i) {
+				String msg = "";
+				int l = Integer.valueOf(metadata.get("comment_" + i).value);
+				// These lists don't allow newlines, so we use two spaces instead.
+				// Localization is not possible here.
+				for (int j = 0; j <= l; ++j) msg += metadata.get("comment_" + i + "_" + j).value + "  ";
+				comments.add(new Data.Comment(
+					metadata.get("comment_name_" + i).value,
+					msg,
+					metadata.get("comment_" + i).value,
+					Long.valueOf(metadata.get("comment_timestamp_" + i).value)
+				));
 			}
-			final String version = lines.remove(0);
-			final int i18n_version = Integer.valueOf(lines.remove(0));
-			lines.remove(0); lines.remove(0);
-			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
-			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
-			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
-			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
-			for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) lines.remove(0);
-			if (listVersion >= 2) {for (int j = Integer.valueOf(lines.remove(0)); j > 0; --j) { lines.remove(0); lines.remove(0); }}
-			result.put(addon, new Data(version, uploader, i18n_version + (increase.contains(addon) ? 1 : 0),
-					lines.remove(0).equals("verified") || verify.contains(addon), timestamp, downloadCount, votes, rating, comments, ratings));
+			result.put(addon, new Data(
+				metadata.get("version").value,
+				metadata.get("uploader").value,
+				Integer.valueOf(metadata.get("i18n_version").value),
+				metadata.get("security").value.equals("verified"),
+				Long.valueOf(metadata.get("timestamp").value),
+				Long.valueOf(metadata.get("downloads").value),
+				comments,
+				votes));
 		}
 		return result;
 	}
@@ -95,15 +106,8 @@ public class UpdateList {
 		return "";
 	}
 
-	public static File[] listSorted(File dir) {
-		File[] files = dir.listFiles();
-		if (files == null) return new File[0];
-		Arrays.sort(files);
-		return files;
-	}
-
 	private static void recurse(List<String> dirs, List<String> files, List<String> checksums, List<Long> size, File curdir, String prefix) {
-		for (File f : listSorted(curdir)) {
+		for (File f : Utils.listSorted(curdir)) {
 			if (f.isFile()) {
 				files.add(prefix + f.getName());
 				size.add(f.length());
@@ -116,7 +120,7 @@ public class UpdateList {
 	}
 
 	private static void gatherLocales(File addon, List<String> locales, List<String> checksums) {
-		for (File f : listSorted(new File(addon, "../../i18n/" + addon.getName()))) {
+		for (File f : Utils.listSorted(new File(addon, "../../i18n/" + addon.getName()))) {
 			if (f.getName().endsWith(".mo")) {
 				locales.add(f.getName());
 				checksums.add(checksum(f));
@@ -139,10 +143,6 @@ public class UpdateList {
 	private static final float[] kDefaultRatings = new float[] { 9.5f, 9.1f, 8.7f, 8.3f, 7.9f, 7.4f, 6.8f };  // dummy values
 
 	private static void writeAddon(int listVersion, PrintWriter w, File addon, Data data) throws Exception {
-		if (data == null) data = new Data("0", "Nordfriese", 1, false, System.currentTimeMillis() / 1000,
-				// some dummy values for initialization of not-yet-implemented data
-				12345, (int)(10 * Math.random()), kDefaultRatings[(int)(kDefaultRatings.length * Math.random())], new ArrayList<>(), new int[10]);
-
 		String descname = null, descr = null, author = null, category = null, new_version = null, minWLVersion = "", maxWLVersion = "", sync_safe = "desync";
 		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(),
 				locales = new ArrayList<>(), checksums = new ArrayList<>(), screenies = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
@@ -219,11 +219,10 @@ public class UpdateList {
 		// never verify immediately during an update
 		w.println(data.verified && data.version.equals(new_version) ? "verified" : "unchecked");
 
-		if (listVersion == 1) {
-			// also save the i18n version to an independent file for access by the server
-			PrintWriter writei18n = new PrintWriter(new File("i18n/" + addon.getName(), "i18n_version"));
-			writei18n.println(data.i18n_version);
-			writei18n.close();
+		if (listVersion == 1 && !data.version.equals(new_version)) {
+			TreeMap<String, Utils.Value> edit = new TreeMap<>();
+			edit.put("version", new Utils.Value("version", new_version));
+			Utils.editMetadata(addon.getName(), edit);
 		}
 	}
 
@@ -245,10 +244,10 @@ public class UpdateList {
 		}
 		for (int listVersion = 1; listVersion <= 3; ++listVersion) {
 			System.out.println("Parsing list for version " + listVersion);
-			final Map<String, Data> data = detectLocaleVersions(listVersion, increase_i18n, verify);
+			final Map<String, Data> data = detectAndUpdateMetadata(increase_i18n, verify);
 
 			PrintWriter write = new PrintWriter(new File(listVersion == 1 ? "list" : ("list_" + listVersion)));
-			File[] files = listSorted(new File("addons"));
+			File[] files = Utils.listSorted(new File("addons"));
 			write.println(listVersion);
 			write.println(files.length);
 			for (File file : files) {
