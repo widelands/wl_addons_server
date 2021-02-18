@@ -17,22 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: addons/impassable_water.wad/addon:2 addons/impassable_water.wad/editor.lua:6
-msgid "Impassable Water"
+#: addons/auto_soldiers_cs.wad/addon:2
+msgid "Automatic Soldier Setting for Military Construction Sites"
 msgstr ""
 
-#: addons/impassable_water.wad/addon:3
-msgid "Shallow water terrains, impassable for ships but walkable."
-msgstr ""
-
-#: addons/impassable_water.wad/world/terrains/desert/reef/init.lua:6
-msgid "Reef"
-msgstr ""
-
-#: addons/impassable_water.wad/world/terrains/summer/water_lily/init.lua:7
-msgid "Water Lily"
-msgstr ""
-
-#: addons/impassable_water.wad/world/terrains/wasteland/algae_slick/init.lua:6
-msgid "Algae slick"
+#: addons/auto_soldiers_cs.wad/addon:3
+msgid ""
+"If there is no enemy military building in sight, every new construction site "
+"is set to prefer rookies and reduce the capacity to 1. If there are enemy "
+"military buildings in sight prefer always heroes and set capacity to max. "
+"Once a player adjusted one of these settings, this script does nothing."
 msgstr ""
