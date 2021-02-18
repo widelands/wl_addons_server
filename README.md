@@ -3,6 +3,8 @@ Repository faking an add-ons server for [@widelands](https://github.com/wideland
 
 I don’t know how long this "server" will be in use, so I’d better write some brief documentation about maintenance here.
 
+---
+
 If you want to contribute a new add-on, [information how to create add-ons can be found here.](https://github.com/widelands/widelands/blob/master/doc/sphinx/source/add-ons.rst)
 
 If you do not wish to create a pull request for a new add-on here, it is also possible to submit add-ons on the forum: https://www.widelands.org/forum/topic/5073
@@ -27,16 +29,14 @@ If you want to provide some screenshots for your addon, add the screenshots to t
 
 After adding the addon and probably some screenshots, run `java UpdateList` inside the base folder, then git add,commit,push. Then create a pull request here.
 
+If you added a new add-on, the `UpdateList` program will prompt you to enter your uploader name.
+
 #### Updating an add-on
 
 Just replace the folder below `addons` with the new one.
 Same applies to screenshots: Just replace or add new ones. Be sure to update the `descriptions` file.
 
 After you have done run `java UpdateList`, then git add,commit,push.
-
-#### Name of Uploader
-
-The name of the uploader of a new add-on is automatically set to `"The Widelands Bunnybot"` – if you are not me, consider editing the file `metadata/<addon_name>.wad` manually after running `java UpdateList` to replace it with your name; then re-run `java UpdateList`.
 
 #### Verifying add-ons
 
@@ -52,9 +52,9 @@ Issues not directly related to add-ons should be reported [against the official 
 
 ### Developers’ corner
 
-#### Verify a new add-on
+#### Verify a new or updated add-on
 
-To verify a new add-on, read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
+To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
 
 #### Translations
 

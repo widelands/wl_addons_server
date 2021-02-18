@@ -1,5 +1,5 @@
 2
-14
+15
 100-wells.wad
 100 Wells
 Win condition about building 100 wells to win. This does not work with amazons.
@@ -39,6 +39,39 @@ f862053d3a235e358961f47a2a6c3e37
 58deecf96788b00903637de155d65cfa
 0
 unchecked
+auto_soldiers_cs.wad
+Automatic Soldier Setting for Military Construction Sites
+If there is no enemy military building in sight, every new construction site is set to prefer rookies and reduce the capacity to 1. If there are enemy military buildings in sight prefer always heroes and set capacity to max. Once a player adjusted one of these settings, this script does nothing.
+kaputtnik
+kaputtnik
+1613666291
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+9606
+script
+0
+0
+2
+addon
+init.lua
+0
+2
+8306bcd313172779cda9775ea898d597
+4e528673635e8159e724385cab9ca9e0
+0
+verified
 challenge-map-set.wad
 Challenge Maps Set
 A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained maps: Dust in the Wind, To Make the Desert Bloom, The Great Escape, Concentric Rings. Recommended for advanced players who find playing alone with Poor Hamlet against six or more teamed-up trading outpost AIs too easy.

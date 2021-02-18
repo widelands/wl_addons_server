@@ -43,12 +43,19 @@ public class UpdateList {
 		}
 	}
 
+	private static String _defaultUploader = null;
 	private static Map<String, Data> detectAndUpdateMetadata(List<String> increase, List<String> verify) throws Exception {
 		Map<String, Data> result = new HashMap<>();
 		for (String addon : new File("addons").list()) {
 			if (!addon.endsWith(".wad")) continue;
 			File metadataFile = new File("metadata", addon);
-			if (!metadataFile.isFile()) Utils.initMetadata(addon, "The Widelands Bunnybot");
+			if (!metadataFile.isFile()) {
+				while (_defaultUploader == null || _defaultUploader.isEmpty()) {
+					System.out.println("New add-on detected. Please enter your nickname:");
+					_defaultUploader = new BufferedReader(new InputStreamReader(System.in)).readLine();
+				}
+				Utils.initMetadata(addon, _defaultUploader);
+			}
 			TreeMap<String, Utils.Value> metadata = Utils.readProfile(metadataFile, addon);
 
 			TreeMap<String, Utils.Value> edit = new TreeMap<>();
@@ -222,6 +229,7 @@ public class UpdateList {
 		if (listVersion == 1 && !data.version.equals(new_version)) {
 			TreeMap<String, Utils.Value> edit = new TreeMap<>();
 			edit.put("version", new Utils.Value("version", new_version));
+			edit.put("security", new Utils.Value("security", "unchecked"));
 			Utils.editMetadata(addon.getName(), edit);
 		}
 	}
