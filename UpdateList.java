@@ -117,8 +117,10 @@ public class UpdateList {
 
 	private static void gatherLocales(File addon, List<String> locales, List<String> checksums) {
 		for (File f : listSorted(new File(addon, "../../i18n/" + addon.getName()))) {
-			locales.add(f.getName());
-			checksums.add(checksum(f));
+			if (f.getName().endsWith(".mo")) {
+				locales.add(f.getName());
+				checksums.add(checksum(f));
+			}
 		}
 	}
 
