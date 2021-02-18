@@ -54,7 +54,25 @@ Issues not directly related to add-ons should be reported [against the official 
 
 #### Verify a new or updated add-on
 
+Verification should be done **only** by a developer who is also a Transifex administrator!
+
 To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
+
+Afterwards, you need to follow these steps to ensure that the add-on can be translated:
+- Go to the repository's Actions tab, select the Update Translations action, and trigger a workflow run on the master branch.
+- Wait until the workflow completed (should take only a minute).
+- Head over to https://www.transifex.com/widelands/widelands-addons/settings/integrations/
+- Go to ··· → Edit Settings → Select Files
+- Create a new entry for each new add-on. You can use the existing entries as templates. The entry should look like this (where `NAME` is the add-on’s internal name):
+```
+  - filter_type: file
+    file_format: PO
+    source_language: en
+    source_file: 'po/NAME.wad/NAME.wad.pot'
+    translation_files_expression: 'po/NAME.wad/<lang>.po'
+```
+- Switch to the project’s Resources tab and wait until the new resource(s) is/are available. Then, edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!
+- Finally, set the Priority of all new resources. Add-ons officially provided by the Widelands Development Team get highest priority. Add-ons which have not been verified yet should not appear on Transifex in the first place, but if they do, they get the lowest priority. All other add-ons get medium priority.
 
 #### Translations
 
@@ -70,8 +88,6 @@ A GitHub action periodically syncs the translations with Transifex and compiles 
 If you want to update an existing add-on, or submit new or updated translations, open a pull request with this change and make sure you followed the steps described above.
 
 `buildcats.sh` usually prints some errors which are false alarms and can be ignored.
-
-After adding or deleting add-ons, the Transifex resource info needs to be updated by a Transifex admin. See https://github.com/widelands/wl_addons_server/issues/1 for more information.
 
 ### License
 
