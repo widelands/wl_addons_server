@@ -230,6 +230,7 @@ public class UpdateList {
 		if (listVersion == 1 && !data.version.equals(new_version)) {
 			TreeMap<String, Utils.Value> edit = new TreeMap<>();
 			edit.put("version", new Utils.Value("version", new_version));
+			edit.put("security", new Utils.Value("security", "unchecked"));
 			Utils.editMetadata(addon.getName(), edit);
 		}
 	}
