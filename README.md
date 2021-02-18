@@ -13,9 +13,9 @@ Before adding add-ons to this repository be sure a java development kit (JDK) is
 
 After the installation of the JDK run `javac *.java` in the base folder.
 
-### Adding updating a new add-on
+### Adding / updating an add-on
 
-#### Addon
+#### Add-On
 
 Just copy the folder from the widelands directory to the `addons/` folder in your branch.
 
@@ -36,7 +36,7 @@ After you have done run `java UpdateList`, then git add,commit,push.
 
 #### Name of Uploader
 
-The name of the uploader of a new add-on is automatically set to `"Nordfriese"` – if you are not me, consider editing the files `list` and `list_2` manually after running `java UpdateList` to replace it with your name. (Each add-on's uploader is listed directly below the author's name.)
+The name of the uploader of a new add-on is automatically set to `"The Widelands Bunnybot"` – if you are not me, consider editing the file `metadata/<addon_name>.wad` manually after running `java UpdateList` to replace it with your name; then re-run `java UpdateList`.
 
 #### Verifying add-ons
 
@@ -54,7 +54,7 @@ Issues not directly related to add-ons should be reported [against the official 
 
 #### Verify a new add-on
 
-To verify a new add-on, read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then run `java UpdateList`, then git add,commit,push.
+To verify a new add-on, read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
 
 #### Translations
 

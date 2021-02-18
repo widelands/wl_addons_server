@@ -86,7 +86,10 @@ public class Utils {
 		w.println("comments=\"0\"");
 		w.println("security=\"unchecked\"");
 		w.println("uploader=\"" + uploader + "\"");
+		w.println("i18n_version=\"1\"");
+		w.println("version=\"\"");
 		for (int i = 1; i <= 10; ++i) w.println("votes_" + i + "=\"0\"");
+		w.close();
 	}
 
 	synchronized public static void registerDownload(String addon) throws Exception {
