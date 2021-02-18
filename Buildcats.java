@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Buildcats {
 	private static void recurse(String out, File dir) throws Exception {
-		for (File f : UpdateList.listSorted(dir)) {
+		for (File f : Utils.listSorted(dir)) {
 			if (f.isDirectory()) {
 				recurse(out, f);
 			} else if (f.getName().equalsIgnoreCase("elemental") || f.getName().toLowerCase().endsWith("lua")) {
@@ -32,7 +32,7 @@ public class Buildcats {
 
 	public static void main(String[] args) throws Exception {
 		Runtime rt = Runtime.getRuntime();
-		for (File addon : UpdateList.listSorted(new File("addons"))) {
+		for (File addon : Utils.listSorted(new File("addons"))) {
 			String dir = "po/" + addon.getName();
 			rt.exec(new String[] {"mkdir", "-p", dir});
 			String out = dir + "/" + addon.getName() + ".pot";

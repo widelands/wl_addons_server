@@ -17,11 +17,24 @@ do
   cd ..
 done
 
-# Now check which translations have changed
+# We need to store MO files in two different locations for backwards compatibility
 cd ../i18n
+for addon in *.wad
+do
+  cd $addon
+  for lang in *
+  do
+    out=../${lang%.mo}/LC_MESSAGES
+    mkdir -p $out
+    cp $lang $out/$addon.mo
+  done
+  cd ..
+done
+
+# Now check which translations have changed
 changed=()
 skipnext=true
-for modification in $(git status -s ./*)
+for modification in $(git status -s ./*.wad)
 do
   if [[ $skipnext == false ]]
   then
