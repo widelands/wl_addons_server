@@ -134,8 +134,9 @@ public class UpdateList {
 		if (dir.isDirectory()) {
 			List<String> in = Files.readAllLines(new File(addon, "../../screenshots/" + addon.getName() + "/descriptions").toPath());
 			while (!in.isEmpty()) {
-				screenies.add(in.remove(0));
-				screenies.add(in.remove(0));
+				String str = in.remove(0);
+				screenies.add(str.split("=")[0]);
+				screenies.add(str.split("\"")[1]);
 			}
 		}
 	}
