@@ -251,10 +251,9 @@ public class UpdateList {
 				return;
 			}
 		}
+		System.out.println("Parsing lists");
+		final Map<String, Data> data = detectAndUpdateMetadata(increase_i18n, verify);
 		for (int listVersion = 1; listVersion <= 3; ++listVersion) {
-			System.out.println("Parsing list for version " + listVersion);
-			final Map<String, Data> data = detectAndUpdateMetadata(increase_i18n, verify);
-
 			PrintWriter write = new PrintWriter(new File(listVersion == 1 ? "list" : ("list_" + listVersion)));
 			File[] files = Utils.listSorted(new File("addons"));
 			write.println(listVersion);
