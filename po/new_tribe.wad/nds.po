@@ -3,54 +3,66 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Benedikt Straub <benedikt-straub@web.de>, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-19 03:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
+"Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
+"nds/)\n"
+"Language: nds\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/new_tribe.wad/addon:2
 #: addons/new_tribe.wad/tribes/new_tribe/init.lua:9
 msgid "New Tribe"
-msgstr ""
+msgstr "Nejes Volk"
 
 #: addons/new_tribe.wad/addon:3
 msgid ""
 "A mostly new, minimalistic tribe to demonstrate the possibility of creating "
 "custom tribes. THIS ADD-ON IS UNSTABLE AND TENDS TO CRASH FREQUENTLY."
 msgstr ""
+"Een temelk nejes, ganz slichtes Volk, wat blot daarto daar is, dat man "
+"sücht, dat neje Völkers maakt worden könen. DEESE VERWIEDERN IS NICH STABIL "
+"UN STÖRT FAAKTIEDEN OF."
 
 #: addons/new_tribe.wad/tribes/new_tribe/headquarters.lua:11
 msgid "Headquarters"
-msgstr ""
+msgstr "Raadhuus"
 
 #: addons/new_tribe.wad/tribes/new_tribe/headquarters.lua:13
 msgid "Start the game with your headquarters only"
-msgstr ""
+msgstr "Begünn dat Speel mit nix as dien Raadhuus"
 
 #: addons/new_tribe.wad/tribes/new_tribe/init.lua:10
 msgid ""
 "A minimalistic tribe to demonstrate the possibility of creating custom "
 "tribes."
 msgstr ""
+"Een temelk nejes, ganz slichtes Volk, wat blot daarto daar is, dat man "
+"sücht, dat neje Völkers maakt worden könen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:77
 msgctxt "ware"
 msgid "Granite is a basic building material."
-msgstr ""
+msgstr "Flint is een wichtigs Baumaterial."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:79
 msgctxt "newtribe_ware"
 msgid "The Empire produces granite blocks in quarries and marble mines."
 msgstr ""
+"Dat Latienske Riek produzeert Blocken vun Flint in Flintslagerhusen un "
+"Marmel-Bargwarken."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:89
 msgctxt "ware"
@@ -58,6 +70,8 @@ msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
 msgstr ""
+"Boomstammen sünd een wichtigs Baumaterial. Se worden produzeert, indeem man "
+"Bomen ofkappt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:91
 msgctxt "newtribe_ware"
@@ -66,33 +80,36 @@ msgid ""
 "trees. Logs are also used by the charcoal kiln, the toolsmithy and the "
 "sawmill."
 msgstr ""
+"Rieks-Boomhauers kappen de Bomen of; Försters kümmern sük um de Versörgung "
+"mit Bomen. Boomstammen worden ok in de Holtköhl-Branneree, de Warktüügsmee "
+"un de Saagmöhlen bruukt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:102
 msgctxt "ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Planken sünd een wichtigs Baumaterial."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:104
 msgctxt "newtribe_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Se worden in de Saagmöhlen ut Boomstammen produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:106
 msgctxt "newtribe_ware"
 msgid "They are also used by the weapon smithy."
-msgstr ""
+msgstr "Se worden ok in de Wapensmee bruukt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:116
 msgctxt "newtribe_ware"
 msgid "Wool is the hair of sheep. Weaving mills use it to make cloth."
-msgstr ""
+msgstr "Wulle is dat Fell vun Schapen. Spinnweelmöhlen maken daarut Stoff."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:125
 msgctxt "newtribe_ware"
 msgid ""
 "Cloth is needed to build several buildings. It is also consumed in the armor "
 "smithy."
-msgstr ""
+msgstr "Eenige Husen bruken Stoff. 't word ok vun de Panzersmee verbruukt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:136
 msgctxt "newtribe_ware"
@@ -100,6 +117,9 @@ msgid ""
 "Besides bread and meat, fish is also a foodstuff for the Empire. Fish are "
 "used in taverns, inns and training sites (arena, colosseum, training camp)."
 msgstr ""
+"Tegen Brood un Fleesk is ok Fiss eene Spies för dat Latienske Riek. Fisse "
+"worden in Kneipen, Weertskuppen un Övens-Boen (Ring, Groter Ring, Övens-"
+"Lager) bruukt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:146
 msgctxt "ware"
@@ -107,6 +127,8 @@ msgid ""
 "Meat contains a lot of energy, and it is obtained from wild game taken by "
 "hunters."
 msgstr ""
+"In Fleesk steckt bannig vööl Energie. 't word vun Jägers produzeert, indeem "
+"se wille Deerten jaggen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:148
 msgctxt "newtribe_ware"
@@ -115,11 +137,14 @@ msgid ""
 "taverns to prepare lunch for the miners and is consumed at the training "
 "sites (arena, colosseum, training camp)."
 msgstr ""
+"Fleesk kann ok vun Swienen in Swientjentüchtereen maakt worden. 't word in "
+"Kneipen un Weertskuppen bruukt, um Spiesen för de Bargwarkskeerls "
+"torecttomaken. Ok Övens-Boen (Ring, Groter Ring, Övens-Lager) bruken Fleesk."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:158
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Sünner Water gifft 't keen Leven!"
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:160
 msgctxt "newtribe_ware"
@@ -127,11 +152,13 @@ msgid ""
 "Water is used in the bakery and the brewery. The donkey farm, the sheep farm "
 "and the piggery also need to be supplied with water."
 msgstr ""
+"Water word in de Backeree un de Broeree bruukt. De Langohrtüchteree, de "
+"Schaaptüchteree un de Swientjentüchteree bruken 't ok."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:170
 msgctxt "ware"
 msgid "Wheat is essential for survival."
-msgstr ""
+msgstr "Sünner Weit kann man nich överleven."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:172
 msgctxt "newtribe_ware"
@@ -139,6 +166,8 @@ msgid ""
 "Wheat is produced by farms and used by mills and breweries. Donkey farms, "
 "sheep farms and piggeries also need to be supplied with wheat."
 msgstr ""
+"Weit word vun Buurdereen produzeert un vun Möhlen un Broereen bruukt. "
+"Langohrtüchtereen, Schaaptüchtereen un Swientjentüchtereen bruken 't ok."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:182
 msgctxt "newtribe_ware"
@@ -146,6 +175,8 @@ msgid ""
 "Flour is produced by the mill out of wheat and is needed in the bakery to "
 "produce the tasty Empire bread."
 msgstr ""
+"Mehl word in Möhlen ut Weit maakt un word in Backereen bruukt, um dat gode "
+"Rieks-Brood to backen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:191
 msgctxt "newtribe_ware"
@@ -154,6 +185,9 @@ msgid ""
 "is used in taverns and inns to prepare rations and meals. Bread is also "
 "consumed at the training sites (arena, colosseum, training camp)."
 msgstr ""
+"De Rieks-Backers maken bannig leckeres Brood ut Mehl un Water. 't word in "
+"Kneipen un Weertskuppen bruukt, um Happen un Mahltieden torechttomaken. "
+"Brood word ok vun Övens-Boen (Ring, Groter Ring, Övens-Lager) verbruukt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:200
 msgctxt "newtribe_ware"
@@ -161,6 +195,8 @@ msgid ""
 "This beer is produced in a brewery out of wheat and water. It is consumed by "
 "miners in coal and iron mines."
 msgstr ""
+"Deeses Beer word in eener Broeree ut Weit un Water produzeert. 't word vun "
+"Bargwarkskeerls in Köhle- un Iesen-Bargwarken bruukt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:208
 msgctxt "newtribe_ware"
@@ -168,6 +204,8 @@ msgid ""
 "These grapes are the base for a tasty wine. They are harvested in a vineyard "
 "and processed in a winery."
 msgstr ""
+"Ut deesen Druven kann man leckeren Wien maken. Se worden in de Wienplanteree "
+"arnt un in de Wienmakeree verarbeidt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:216
 msgctxt "newtribe_ware"
@@ -175,6 +213,8 @@ msgid ""
 "This tasty wine is drunk by the miners working the marble and gold mines. It "
 "is produced in a winery."
 msgstr ""
+"Deeser Wien word vun Bargwarkskeerls in Marmel- un Gold-Bargwarken drunken. "
+"'t word in eener Wienmakeree produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:226
 msgctxt "ware"
@@ -182,11 +222,13 @@ msgid ""
 "A small bite to keep miners strong and working. The scout also consumes "
 "rations on his scouting trips."
 msgstr ""
+"Wat goods, um Bargwarkskeerls stark un tofree to hollen. De Bespejer bruukt "
+"ok Happen, wenn he spioneren gaht."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:228
 msgctxt "newtribe_ware"
 msgid "Rations are produced in a tavern out of fish or meat or bread."
-msgstr ""
+msgstr "Happen worden in eener Kneipe ut Fiss of Fleesk of Brood produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:238
 msgctxt "newtribe_ware"
@@ -194,6 +236,8 @@ msgid ""
 "A real meal is made in inns out of bread and fish/meat. It satisfies the "
 "needs of miners in deep mines."
 msgstr ""
+"Een echtes Mahl word in Weertskuppen ut Brood un of Fiss of Fleesk maakt. De "
+"Bargwarkskeerls in Deepen Bargwarken bruken 't."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:250
 msgctxt "newtribe_ware"
@@ -202,6 +246,9 @@ msgid ""
 "in a quarry. Marble is used as a building material and gets chiseled into "
 "marble columns in the stonemason’s house."
 msgstr ""
+"Marmel is de moje Steen, wat ut Bargen sneden of in eenem Flintslagerhuus "
+"produzeert word. Marmel is een Baumateriaal un word vum Steenbickerhuus in "
+"Marmelpielers sniddjet."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:259
 msgctxt "newtribe_ware"
@@ -210,11 +257,16 @@ msgid ""
 "for nearly every larger building. They are produced out of marble at a "
 "stonemason’s house."
 msgstr ""
+"Marmelpielers wiesen de hoge Kultuur un Wüürd vum Latiensken Riek un worden "
+"daarum för haast elkeen grotes Huus bruukt. Se worden in eenem "
+"Steenbickerhuus ut Marmel maakt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:269
 msgctxt "ware"
 msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
 msgstr ""
+"Köhle word in Köhle-Bargwarken ofboot of in Holtköhl-Brannereen ut "
+"Boomstammen produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:271
 msgctxt "newtribe_ware"
@@ -222,21 +274,23 @@ msgid ""
 "The fires of the Empire smelting works, armor smithies and weapon smithies "
 "are usually fed with coal."
 msgstr ""
+"Dat Füür in de Rieks-Smeltwark, -Panzersmeden un -Wapensmeden verbrannt "
+"meest Köhl."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:282
 msgctxt "default_ware"
 msgid "Iron ore is mined in iron mines."
-msgstr ""
+msgstr "Iesenkluut word in Iesen-Bargwakren ofboot."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:284
 msgctxt "newtribe_ware"
 msgid "It is smelted in a smelting works to retrieve the iron."
-msgstr ""
+msgstr "'t word in Smeltwarken smelt, um dat Iesen to winnen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:295
 msgctxt "ware"
 msgid "Iron is smelted out of iron ores."
-msgstr ""
+msgstr "Iesen word ut Iesenkluut smelt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:297
 msgctxt "newtribe_ware"
@@ -244,11 +298,13 @@ msgid ""
 "It is produced by the smelting works. Weapons, armor and tools are made of "
 "iron."
 msgstr ""
+"'t word vun de Smeltwark produzeert. Wapens, Wapenrocken un Warktüüg sünd ut "
+"Iesen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:308
 msgctxt "ware"
 msgid "Gold ore is mined in a gold mine."
-msgstr ""
+msgstr "Goldkluut word in eenem Gold-Bargwark ofboot."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:310
 msgctxt "newtribe_ware"
@@ -256,12 +312,14 @@ msgid ""
 "Smelted in a smelting works, it turns into gold which is used as a precious "
 "building material and to produce weapons and armor."
 msgstr ""
+"'t word in Smeltwarken smelt. Dann word daarut Gold, wat een düres "
+"Baumaterial is un för Wapens un Wapenrocken bruukt word."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:321
 msgctxt "ware"
 msgid ""
 "Gold is the most valuable of all metals, and it is smelted out of gold ore."
-msgstr ""
+msgstr "Gold is dat düürste vun allen Metallen un word ut Goldkluut smelt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:323
 msgctxt "newtribe_ware"
@@ -269,32 +327,38 @@ msgid ""
 "It is produced by the smelting works. Armor and weapons are embellished with "
 "gold in the armor smithy and the weapon smithy."
 msgstr ""
+"'t word vun de Smeltwark produzeert. Wapenrocken un Wapens worden in de "
+"Panzersmee un Wapensmee mit Gold utrüst."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:336
 msgctxt "newtribe_ware"
 msgid ""
 "Picks are used by stonemasons and miners. They are produced by the toolsmith."
 msgstr ""
+"Flintslagers un Bargwarkskeerls bruken Pickhacken. Se worden vum "
+"Warktüügsmidd produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:346
 msgctxt "ware"
 msgid "The felling ax is the tool to chop down trees."
-msgstr ""
+msgstr "De Boomslager-Ext is dat Waarktüüg, waar man Bomen mit ofkappt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:348
 msgctxt "newtribe_ware"
 msgid "Felling axes are used by lumberjacks and produced by the toolsmithy."
 msgstr ""
+"Boomslager-Exten worden vun Boomhauers bruukt un vun de Warktüügsmee "
+"produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:358
 msgctxt "newtribe_ware"
 msgid "This saw is needed by the carpenter. It is produced by the toolsmith."
-msgstr ""
+msgstr "De Diskler bruukt deese Saag. 't word vum Warktüügsmidd produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:368
 msgctxt "ware"
 msgid "Shovels are needed for the proper handling of plants."
-msgstr ""
+msgstr "Man bruukt Schüppen, um sük recht um Planten to kümmern."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:370
 msgctxt "newtribe_ware"
@@ -302,11 +366,13 @@ msgid ""
 "Therefore the forester and the vine farmer use them. They are produced by "
 "the toolsmith."
 msgstr ""
+"De Förster un de Wienplanter bruken se also. Se worden vum Warktüügsmidd "
+"produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:381
 msgctxt "ware"
 msgid "The hammer is an essential tool."
-msgstr ""
+msgstr "De Klöpper is een wichtigs Warktüüg."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:383
 msgctxt "newtribe_ware"
@@ -314,23 +380,26 @@ msgid ""
 "Geologists, builders, weaponsmiths and armorsmiths all need a hammer. Make "
 "sure you’ve always got some in reserve! They are produced by the toolsmith."
 msgstr ""
+"Schattsökers, Baukeerls, Wapensmidds un Panzersmidds bruken all eenen "
+"Klöpper. Pass up, dat du alltied welke över hest! Se worden vum "
+"Warktüügsmidd produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:394
 msgctxt "ware"
 msgid "Fishing rods are needed by fishers to catch fish."
-msgstr ""
+msgstr "Fiskers bruken Angles, um Fisse to fangen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:396
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:409
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:422
 msgctxt "newtribe_ware"
 msgid "They are produced by the toolsmith."
-msgstr ""
+msgstr "Se worden vum Warktüügsmidd produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:407
 msgctxt "ware"
 msgid "Fishing nets are needed by fishers to catch fish."
-msgstr ""
+msgstr "Fiskers bruken Fiskernetten, um Fisse to fangen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:420
 msgctxt "ware"
@@ -338,26 +407,30 @@ msgid ""
 "This spear is light enough to be thrown, but heavy enough to kill any animal "
 "in one blow. It is only used by hunters."
 msgstr ""
+"Deeser Speer is licht genoog tum smieten, aver swaar genoog, um elkeen Deert "
+"mit eenem Slag doodtomaken. Blot Jägers bruken 't."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:433
 msgctxt "ware"
 msgid "The scythe is the tool of the farmers."
-msgstr ""
+msgstr "Buren bruken Sichten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:435
 msgctxt "newtribe_ware"
 msgid "Scythes are produced by the toolsmith."
-msgstr ""
+msgstr "Sichten worden vum Warktüügsmidd produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:446
 msgctxt "ware"
 msgid "The bread paddle is the tool of the baker, each baker needs one."
 msgstr ""
+"De Broodschüppe is dat Warktüüg, wat de Backer bruukt; elkeen Backer bruukt "
+"eene."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:448
 msgctxt "newtribe_ware"
 msgid "Bread paddles are produced by the toolsmith."
-msgstr ""
+msgstr "Broodschüppen worden vum Warktüügsmidd produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:458
 msgctxt "newtribe_ware"
@@ -365,6 +438,8 @@ msgid ""
 "This basket is needed by the vine farmer for harvesting the grapes. It is "
 "produced by the toolsmith."
 msgstr ""
+"Deesen Körv bruukt de Wienplanter, um Druven to arnten. 't word vum "
+"Warktüügsmidd produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:467
 msgctxt "newtribe_ware"
@@ -372,16 +447,18 @@ msgid ""
 "Kitchen tools are needed for preparing rations and meals. They are produced "
 "in a toolsmithy and used in taverns and inns."
 msgstr ""
+"Besteck is nödig, um Happen un Mahltieden torechttomaken. 't word in de "
+"Warktüügsmee produzeert un in Kneipen un Weertskuppen bruukt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:477
 msgctxt "ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Füürtangen sünd dat Warktüüg, waar man Kluten mit smelt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:479
 msgctxt "newtribe_ware"
 msgid "They are used in the smelting works and produced by the toolsmith."
-msgstr ""
+msgstr "Se worden in Smeltwarken bruukt un vun de Warktüügsmidd produzeert."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:492
 msgctxt "newtribe_ware"
@@ -390,6 +467,9 @@ msgid ""
 "produced in the weapon smithy. In combination with a helmet, it is the "
 "equipment to fit out young soldiers."
 msgstr ""
+"Deese Holtpieke is de eenfachste Wapen in de Rieks-Soldateree. Se word in de "
+"Wapensmee produzeert. Tosammen mit eenem Helm is se de Utrüstung för neje "
+"Soldaten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:501
 msgctxt "newtribe_ware"
@@ -398,6 +478,9 @@ msgid ""
 "a training camp – together with food – to train soldiers from attack level 0 "
 "to attack level 1."
 msgstr ""
+"Deese Pieke hett eene Tipp vun Iesen. 't word in de Wapensmee produzeert un "
+"im Övens-Lager – tosammen mit Spiesen – bruukt, um Soldaten vun Angriff-"
+"Stand 0 up Stand 1 uttobilden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:510
 msgctxt "newtribe_ware"
@@ -406,6 +489,9 @@ msgid ""
 "smithy and used in a training camp – together with food – to train soldiers "
 "from attack level 1 to level 2."
 msgstr ""
+"Deese gode Pieke hett eene Tipp vun Stahl. 't word in de Wapensmee "
+"produzeert un im Övens-Lager – tosammen mit Spiesen – bruukt, um Soldaten "
+"vun Angriff-Stand 1 up Stand 2 uttobilden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:519
 msgctxt "newtribe_ware"
@@ -414,6 +500,9 @@ msgid ""
 "in the weapon smithy and used in the training camp – together with food – "
 "train soldiers from attack level 2 to level 3."
 msgstr ""
+"Deese starke Pieke hett eene Tipp vun Stahl un eene lütte Lemp. 't word in "
+"de Wapensmee produzeert un im Övens-Lager – tosammen mit Spiesen – bruukt, "
+"um Soldaten vun Angriff-Stand 2 up Stand 3 uttobilden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:528
 msgctxt "newtribe_ware"
@@ -422,6 +511,9 @@ msgid ""
 "soldiers. It is used in the training camp – together with food – to train "
 "soldiers from attack level 3 to level 4."
 msgstr ""
+"Dat is de beste un scharpste Wapen, de de Rieks-Wapensmidd för de Soldaten "
+"maakt. 't word in de Wapensmee produzeert un im Övens-Lager – tosammen mit "
+"Spiesen – bruukt, um Soldaten vun Angriff-Stand 3 up Stand 4 uttobilden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:537
 msgctxt "newtribe_ware"
@@ -431,6 +523,10 @@ msgid ""
 "young soldiers. Helmets are also used in training camps – together with food "
 "– to train soldiers from health level 0 to level 1."
 msgstr ""
+"Een Helm is de eenfachste Verteidigung vun eenem Soldaten. 't word in de "
+"Panzersmee produzeert. Neje Soldaten worden daarmit un mit eener Holtpieke "
+"utstaffeert. Helms worden ok in Övens-Lagers – tosammen mit Spiesen – "
+"bruukt, um Soldaten vun Gesundheid-Stand 0 up Stand 1 uttobilden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:546
 msgctxt "newtribe_ware"
@@ -439,6 +535,9 @@ msgid ""
 "in the training camp – together with food – to train soldiers from health "
 "level 1 to level 2."
 msgstr ""
+"De eenfachste Wapenrock för Rieks-Soldaten. 't word in de Panzersmee "
+"produzeert un im Övens-Lager – tosammen mit Spiesen – bruukt, um Soldaten "
+"vun Gesundheid-Stand 1 up Stand 2 uttobilden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:555
 msgctxt "newtribe_ware"
@@ -447,6 +546,9 @@ msgid ""
 "armor smithy and used in a training camp – together with food – to train "
 "soldiers from health level 2 to level 3."
 msgstr ""
+"De Stahl-Wapenrock is de middelste Wapenrock för Rieks-Soldaten. 't word in "
+"de Panzersmee produzeert un im Övens-Lager – tosammen mit Spiesen – bruukt, "
+"um Soldaten vun Gesundheid-Stand 2 up Stand 3 uttobilden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:564
 msgctxt "newtribe_ware"
@@ -455,18 +557,21 @@ msgid ""
 "produced in the armor smithy and used in the training camp – together with "
 "food – to train soldiers from health level 3 to level 4."
 msgstr ""
+"De Goldene Wapenrock is de beste Wapenrock för Rieks-Soldaten. 't word in de "
+"Panzersmee produzeert un im Övens-Lager – tosammen mit Spiesen – bruukt, um "
+"Soldaten vun Gesundheid-Stand 3 up Stand 4 uttobilden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:579
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:586
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:593
 msgctxt "newtribe_worker"
 msgid "Carries items along your roads."
-msgstr ""
+msgstr "Draggt Waren över diene Straten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:600
 msgctxt "newtribe_worker"
 msgid "Ships wares across narrow rivers."
-msgstr ""
+msgstr "Fährt Waren över smale Stromen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:609
 msgctxt "newtribe_worker"
@@ -474,229 +579,233 @@ msgid ""
 "Donkeys help to carry items along busy roads. They are reared in a donkey "
 "farm."
 msgstr ""
+"Langohren dragen Waren över besige Straten. Se worden in de Langohrtüchteree "
+"tücht."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:616
 msgctxt "newtribe_worker"
 msgid ""
 "Breeds cute and helpful donkeys for adding them to the transportation system."
-msgstr ""
+msgstr "Tücht nüte, godige Langohren för dat Stratennett."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:626
 msgctxt "newtribe_worker"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
-msgstr ""
+msgstr "Sleit Flint un Marmel ut Stenen in de Naberskupp."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:633
 msgctxt "newtribe_worker"
 msgid "Works in the sawmill."
-msgstr ""
+msgstr "Warkt in de Saagmöhlen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:640
 msgctxt "newtribe_worker"
 msgid "Fells trees."
-msgstr ""
+msgstr "Kappt Bomen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:647
 msgctxt "newtribe_worker"
 msgid "Plants trees."
-msgstr ""
+msgstr "Plant Bomen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:654
 msgctxt "newtribe_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Warkt up Bausteden, um neje Husen to beschicken."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:661
 msgctxt "newtribe_worker"
 msgid "Keeping sheep."
-msgstr ""
+msgstr "Tücht Schapen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:668
 msgctxt "newtribe_worker"
 msgid "Produces cloth for ships and soldiers."
-msgstr ""
+msgstr "Produzeer Stoff för Schippen un Soldaten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:675
 msgctxt "newtribe_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr ""
+msgstr "Warkt in de Warft un baut neje Schippen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:685
 msgctxt "newtribe_worker"
 msgid "Catches fish in the sea."
-msgstr ""
+msgstr "Fangt Fisse in de See."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:692
 msgctxt "newtribe_worker"
 msgid "The hunter brings fresh, raw meat to the colonists."
-msgstr ""
+msgstr "De Jager jaggt friskes, ruges Fleesk för de Lüü."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:699
 msgctxt "newtribe_worker"
 msgid "Plants fields."
-msgstr ""
+msgstr "Plant Felden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:706
 msgctxt "newtribe_worker"
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Mahlt Weit to Mehl."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:713
 msgctxt "newtribe_worker"
 msgid "Bakes bread for workers."
-msgstr ""
+msgstr "Backt Brood för de Arbeiders."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:720
 msgctxt "newtribe_worker"
 msgid "Produces beer."
-msgstr ""
+msgstr "Produzeert Beer."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:727
 msgctxt "newtribe_worker"
 msgid "Grows grapevines."
-msgstr ""
+msgstr "Plant Wien."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:734
 msgctxt "newtribe_worker"
 msgid "Produces wine."
-msgstr ""
+msgstr "Produzeert Wien."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:741
 msgctxt "newtribe_worker"
 msgid "Breeds pigs."
-msgstr ""
+msgstr "Tücht Swientjen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:748
 msgctxt "newtribe_worker"
 msgid "Produces food for miners."
-msgstr ""
+msgstr "Produzeert Spiesen för Bargwarkskeerls."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:758
 msgctxt "newtribe_worker"
 msgid "Discovers resources for mining."
-msgstr ""
+msgstr "Finnt Mineraale to Ofboen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:765
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:772
 msgctxt "newtribe_worker"
 msgid "Works deep in the mines to obtain coal, iron, gold or marble."
-msgstr ""
+msgstr "Warkt deep in de Bargwarken, um Köhle, Iesen, Gold of Marmel oftoboen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:779
 msgctxt "newtribe_worker"
 msgid "Burns coal."
-msgstr ""
+msgstr "Brannt Köhle."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:786
 msgctxt "newtribe_worker"
 msgid "Smelts ores into metal."
-msgstr ""
+msgstr "Smelt Kluten to Metall."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:796
 msgctxt "newtribe_worker"
 msgid "Produces tools for the workers."
-msgstr ""
+msgstr "Produzeert Warktügen för Arbeiders."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:806
 msgctxt "newtribe_worker"
 msgid "Eager to become a soldier and defend his tribe!"
-msgstr ""
+msgstr "Will radd een Soldat worden un sien Volk verteidigen!"
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:815
 msgctxt "newtribe_worker"
 msgid "Defend and Conquer!"
-msgstr ""
+msgstr "Verteidigen un innehmen!"
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:822
 msgctxt "newtribe_worker"
 msgid "Trains the soldiers."
-msgstr ""
+msgstr "Bildt Soldaten ut."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:829
 msgctxt "newtribe_worker"
 msgid "Produces weapons for the soldiers."
-msgstr ""
+msgstr "Produzeert Wapen för Soldaten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:836
 msgctxt "newtribe_worker"
 msgid "Produces armor for the soldiers."
-msgstr ""
+msgstr "Produzeer Wapenrocken för de Soldaten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:843
 msgctxt "newtribe_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
-msgstr ""
+msgstr "Förskt frömde Geweste ut."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:855
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:862
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Wat vun eenem verneelten Huus över blievt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:869
 msgid "This field has just been planted."
-msgstr ""
+msgstr "Deeses Feld is jüüst plant worden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:876
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:883
 msgid "This field is growing."
-msgstr ""
+msgstr "Deeses Feld wasst."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:890
 msgid "This field is ready for harvesting."
-msgstr ""
+msgstr "Deeses Feld is klaar tum arnten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:897
 msgid "This field has been harvested."
-msgstr ""
+msgstr "Deeses Feld is arnt."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:904
 msgid "This grapevine has just been planted."
-msgstr ""
+msgstr "Deeser Wien is jüüst plant worden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:911
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:918
 msgid "This grapevine is growing."
-msgstr ""
+msgstr "Deeser Wien wasst."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:925
 msgid "This grapevine is ready for harvesting."
-msgstr ""
+msgstr "Deeser Wien is klaar tum arnten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:932
 msgid "There are no resources in the ground here."
-msgstr ""
+msgstr "Hier sünd keene Mineraale im Grund."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:939
 msgid "There is water in the ground here that can be pulled up by a well."
-msgstr ""
+msgstr "Hier is Water im Grund, wat vun eener Well uphaalt worden kann."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:947
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:991
 msgid "Coal veins contain coal that can be dug up by coal mines."
-msgstr ""
+msgstr "In Köhle-Aders is Köhl, wat vun Köhle-Bargwarken ofboot worden kann."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:949
 msgid "There is only a little bit of coal here."
-msgstr ""
+msgstr "Hier is bedröövt minn Köhl."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:958
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1002
 msgid "Iron veins contain iron ore that can be dug up by iron mines."
 msgstr ""
+"In Iesen-Aders is Iesenkluut, dat vun Iesen-Bargwarken ofboot worden kann."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:960
 msgid "There is only a little bit of iron here."
-msgstr ""
+msgstr "Hier is bedröövt minn Iesen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:969
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1013
 msgid "Gold veins contain gold ore that can be dug up by gold mines."
 msgstr ""
+"In Gold-Aders is Goldkluut, dat vun Gold-Bargwarken ofboot worden kann."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:971
 msgid "There is only a little bit of gold here."
-msgstr ""
+msgstr "Hier is bedröövt minn Gold."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:980
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1024
@@ -704,40 +813,42 @@ msgid ""
 "Marble is a basic building material and can be dug up by a marble mine. You "
 "will also get granite from the mine."
 msgstr ""
+"Marmel is een wichtiges Baumaterial un kann vun Marmel-Bargwarken ofboot "
+"worden. Du kriggst ok Flint ut de Bargwark."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:982
 msgid "There is only a little bit of marble here."
-msgstr ""
+msgstr "Hier is bedröövt minn Marmel."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:993
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Hier is een Bült vun Köhl."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1004
 msgid "There is a lot of iron here."
-msgstr ""
+msgstr "Hier is een Bült vun Iesen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1015
 msgid "There is a lot of gold here."
-msgstr ""
+msgstr "Hier is een Bült vun Gold."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1026
 msgid "There is a lot of marble here."
-msgstr ""
+msgstr "Hier is een Bült vun Marmel."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1034
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "Up deeser Stee word een Schipp baut."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1046
 msgctxt "newtribe_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
-msgstr ""
+msgstr "Brengt diene Lüü unner un verwahrt diene Waren un anner Kraam."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1048
 msgctxt "newtribe_building"
 msgid "The headquarters is your main building."
-msgstr ""
+msgstr "Dat Raadhuus is dien wichtigstes Huus."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1055
 msgctxt "building"
@@ -745,6 +856,7 @@ msgid ""
 "Your workers and soldiers will find shelter here. Also stores your wares and "
 "tools."
 msgstr ""
+"Brengt diene Lüü un Soldaten unner un verwahrt diene Waren un anner Kraam."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1062
 msgctxt "newtribe_building"
@@ -752,31 +864,33 @@ msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
 "soldiers, wares and tools."
 msgstr ""
+"Deent tum Begünnen vun Hannel un Söken över Seefahrt. Brengt ok diene Lüü un "
+"Soldaten unner un verwahrt diene Waren un anner Kraam."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1071
 msgctxt "newtribe_building"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
-msgstr ""
+msgstr "Sleit Flint un Marmel ut Stenen in de Naberskupp."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1073
 msgctxt "newtribe_building"
 msgid "The quarry needs rocks to cut within the work area."
-msgstr ""
+msgstr "Dat Flintslagerhuus bruukt Stenen tum Slaan in de Arbeidsgewest."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1080
 msgctxt "building"
 msgid "Fells trees in the surrounding area and processes them into logs."
-msgstr ""
+msgstr "Kappt Bomen in de Naberskupp un maakt daarut Boomstammen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1082
 msgctxt "newtribe_building"
 msgid "The lumberjack's house needs trees to fell within the work area."
-msgstr ""
+msgstr "De Boomslageree bruukt Bomen tum Umkappen in de Arbeidsgewest."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1089
 msgctxt "building"
 msgid "Plants trees in the surrounding area."
-msgstr ""
+msgstr "Plant Bomen in de Naberskupp."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1091
 msgctxt "newtribe_building"
@@ -784,96 +898,99 @@ msgid ""
 "The forester’s house needs free space within the work area to plant the "
 "trees."
 msgstr ""
+"Dat Förster-Huus bruukt freje Rüümte in de Arbeidsgewest, waar Bomen plant "
+"worden könen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1098
 msgctxt "newtribe_building"
 msgid "Fishes on the coast near the fisher’s house."
-msgstr ""
+msgstr "Fiskt an de Küst in de Naberskupp vun de Fiskeree."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1100
 msgctxt "newtribe_building"
 msgid "The fisher’s house needs water full of fish within the work area."
-msgstr ""
+msgstr "De Fiskeree bruukt Water mit Fisken in de Arbeidsgewest."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1107
 msgctxt "building"
 msgid "Hunts animals to produce meat."
-msgstr ""
+msgstr "Jaggt Deerten, um Fleesk to produzeren."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1109
 msgctxt "newtribe_building"
 msgid "The hunter’s house needs animals to hunt within the work area."
-msgstr ""
+msgstr "Dat Jaggthuus bruukt Deerten tum Jagen in de Arbeidsgewest."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1116
 msgctxt "building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Hisst Water ut de Deepde."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1123
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Förskt frömde Geweste ut."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1132
 msgctxt "newtribe_building"
 msgid "Carves marble columns out of marble."
-msgstr ""
+msgstr "Sniddjet Marmelpielers ut Marmel."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1139
 msgctxt "building"
 msgid "Saws logs to produce planks."
-msgstr ""
+msgstr "Saagt Planken ut Boomstammen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1146
 msgctxt "building"
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Mahlt Weit to Mehl."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1148
 msgctxt "newtribe_building"
 msgid "The miller needs %1% on average to grind wheat into a sack of flour."
 msgstr ""
+"De Müller bruukt dör de Bank %1% um Weit för eenen Sack Mehl to mahlen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1155
 msgctxt "newtribe_building"
 msgid "Bakes bread for soldiers and miners alike."
-msgstr ""
+msgstr "Backt Brood för de Soldaten un Bargwarkskeerls."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1157
 msgctxt "newtribe_building"
 msgid "The baker needs %1% on average to bake a loaf of bread."
-msgstr ""
+msgstr "De Backer bruukt dör de Bank %1% um een Brood to backen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1164
 msgctxt "building"
 msgid "Produces beer to keep the miners strong and happy."
-msgstr ""
+msgstr "Produzeert Beer, um de Bargwarkskeerls manns un tofree to hollen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1166
 msgctxt "newtribe_building"
 msgid "The brewer needs %1% on average to brew a vat of beer."
-msgstr ""
+msgstr "De Broer bruukt dör de Bank %1% um een Fatt Beer to broen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1173
 msgctxt "newtribe_building"
 msgid "Plants grapevines and harvests grapes."
-msgstr ""
+msgstr "Plant un arnt Wiendruven."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1180
 msgctxt "newtribe_building"
 msgid "Produces wine."
-msgstr ""
+msgstr "Produzeert Wien."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1187
 msgctxt "building"
 msgid "Prepares rations to feed the scouts and miners."
-msgstr ""
+msgstr "Maakt Happen för Bespejers un Bargwarkskeerls torecht."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1189
 msgctxt "newtribe_building"
 msgid "The innkeeper needs %1% on average to prepare a ration."
-msgstr ""
+msgstr "De Weert bruukt dör de Bank %1% um een Happ torechttomaken."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1196
 msgctxt "newtribe_building"
@@ -881,6 +998,8 @@ msgid ""
 "Prepares rations for scouts and rations and snacks to feed the miners in all "
 "mines."
 msgstr ""
+"Maakt Happen för Bespejers un Happen un Spiesen för all Bargwarkskeerls "
+"torecht."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1198
 msgctxt "newtribe_building"
@@ -889,21 +1008,24 @@ msgid ""
 "economy doesn’t need both, the innkeeper needs %2% on average to prepare one "
 "ration or one meal."
 msgstr ""
+"De Weert bruukt dör de Bank %1% um een Happ un een Mahl torechttomaken. Wenn "
+"de Wirtschaft nich beide bruukt, bruukt de Weert dör de Bank %2% um een Happ "
+"of een Mahl torechttomaken."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1205
 msgctxt "building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Brannt Holtköhle ut Boomstammen."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1212
 msgctxt "building"
 msgid "Smelts iron ore into iron and gold ore into gold."
-msgstr ""
+msgstr "Smelt Iesenkluut to Iesen un Goldkluut to Gold."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1219
 msgctxt "building"
 msgid "Forges all the tools that your workers need."
-msgstr ""
+msgstr "Smeedt all dat Warktüüg, wat diene Arbeiders bruken."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1226
 msgctxt "newtribe_building"
@@ -911,47 +1033,52 @@ msgid ""
 "Forges armor and helmets that are used for training soldiers’ health in the "
 "training camp."
 msgstr ""
+"Smeedt Wapenrocken un Helms för de Gesundheid-Öven vun Soldaten im Övens-"
+"Lager."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1233
 msgctxt "newtribe_building"
 msgid "Equips recruits and trains them as soldiers."
-msgstr ""
+msgstr "Rüst Lehrwichter ut un maakt se to Soldaten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1242
 msgctxt "newtribe_building"
 msgid ""
 "Breeds cute and helpful donkeys for adding them to the transportation system."
-msgstr ""
+msgstr "Tücht nüte, godige Langohren för dat Stratennett."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1249
 msgctxt "building"
 msgid "Sows and harvests wheat."
-msgstr ""
+msgstr "Sait un arnt Weit."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1251
 msgctxt "newtribe_building"
 msgid "The farmer needs %1% on average to sow and harvest a sheaf of wheat."
 msgstr ""
+"De Buur bruukt dör de Bank %1% um een Bünsel Weit to saien un to arnten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1258
 msgctxt "newtribe_building"
 msgid "Breeds pigs for their meat."
-msgstr ""
+msgstr "Tücht Swientjen för hör Fleesk."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1260
 msgctxt "newtribe_building"
 msgid "The pig breeder needs %1% on average to raise and slaughter a pig."
 msgstr ""
+"De Swientjentüchter bruukt dör de Bank %1% um een Swientje to föden un to "
+"slachten."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1267
 msgctxt "newtribe_building"
 msgid "Keeps sheep for their wool."
-msgstr ""
+msgstr "Tücht Schapen för hör Wull."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1274
 msgctxt "newtribe_building"
 msgid "Weaves cloth out of wool."
-msgstr ""
+msgstr "Spinnt Stoff ut Wulle."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1281
 msgctxt "newtribe_building"
@@ -959,36 +1086,38 @@ msgid ""
 "Forges spears to equip the soldiers and to train their attack in the "
 "training camp."
 msgstr ""
+"Smeedt Pieken, um Soldaten uttorüsten un hör Angriff im Övens-Lager to "
+"verbetern."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1291
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1299
 msgctxt "newtribe_building"
 msgid "Carves marble and granite out of the rock in mountain terrain."
-msgstr ""
+msgstr "Grafft in Bargen Flint un Marmel ut de Grund."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1306
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1313
 msgctxt "building"
 msgid "Digs coal out of the ground in mountain terrain."
-msgstr ""
+msgstr "Grafft in Bargen Köhle ut de Grund."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1320
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1327
 msgctxt "building"
 msgid "Digs iron ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Grafft in Bargen Iesenkluut ut de Grund."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1334
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1341
 msgctxt "building"
 msgid "Digs gold ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Grafft in Bargen Goldkluut ut de Grund."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1351
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1364
 msgctxt "newtribe_building"
 msgid "Trains soldiers in ‘Evade’."
-msgstr ""
+msgstr "Lehrt Soldaten »Utwieken«."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1353
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1366
@@ -997,6 +1126,8 @@ msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
 "remain totally unaffected."
 msgstr ""
+"»Utwieken« verhoogt de Kans, dat een Soldat vum Feind nich truffen un also "
+"nich verletzt word."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1356
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1369
@@ -1006,16 +1137,18 @@ msgid ""
 "Imperial soldiers cannot be trained in ‘Defense’ and will remain at the "
 "level with which they came."
 msgstr ""
+"Rieks-Soldaten könen keene »Verteidigung« öven un blieven immer up hör "
+"Anfang-Stand."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1377
 msgctxt "newtribe_building"
 msgid "Trains soldiers in ‘Attack’ and in ‘Health’."
-msgstr ""
+msgstr "Lehrt Soldaten »Angriff« un »Gesundheid«."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1379
 msgctxt "newtribe_building"
 msgid "Equips the soldiers with all necessary weapons and armor parts."
-msgstr ""
+msgstr "Rüst de Soldaten mit all nödigen Wapen un Wapenrocken ut."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1391
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1400
@@ -1026,7 +1159,7 @@ msgstr ""
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1445
 msgctxt "building"
 msgid "Garrisons soldiers to expand your territory."
-msgstr ""
+msgstr "Brengt Soldaten unner, um dien Gewest to vergrotern."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1393
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1402
@@ -1041,16 +1174,19 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a soldier to "
 "send him away."
 msgstr ""
+"Wenn du nich genoog Soldaten hest, um neje Soldateree-Boen to besetten, "
+"kannst du de Tahl vun Soldaten mit de Piel-runner-Knoop minnern. Du kannst "
+"ok eenen Soldat anklicken, um hüm wegtostüren."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1456
 msgctxt "building"
 msgid "Builds ferries."
-msgstr ""
+msgstr "Baut Fähren."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1458
 msgctxt "building"
 msgid "Needs water nearby."
-msgstr ""
+msgstr "Bruukt Water in de Naberskupp."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1465
 msgctxt "building"
@@ -1058,31 +1194,33 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
 "between ports."
 msgstr ""
+"Baut Schippen, de för tum Hanneln tüsken Muden un tum Gründen vun nejen "
+"Dörpen bruukt worden."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1474
 msgctxt "building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
-msgstr ""
+msgstr "»Schimp nich tegen de Baukeerl, well keene Baumaterialien hett.«"
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1476
 msgctxt "building"
 msgid "Proverb widely used for impossible tasks of any kind"
-msgstr ""
+msgstr "Seggwies, wat över all Aarden vun unmögelken Upgaven seggt word"
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1478
 msgctxt "building"
 msgid "A new building is being built at this construction site."
-msgstr ""
+msgstr "An deeser Baustee word een nejes Huus baut."
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1485
 msgctxt "building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
-msgstr ""
+msgstr "»Neje Padden kummen ut, wenn du de ollen ok mal plattrietst.«"
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1487
 msgctxt "building"
 msgid "Proverb"
-msgstr ""
+msgstr "Seggwies"
 
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:1489
 msgctxt "building"
@@ -1091,3 +1229,5 @@ msgid ""
 "resources that were used during this building’s construction to your tribe’s "
 "stores."
 msgstr ""
+"Hier word een Huus plattreten, um eenige Waren torüggtokriegen, de tum Bauen "
+"verwendt wurren."
