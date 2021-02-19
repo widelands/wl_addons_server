@@ -26,6 +26,7 @@ do
   do
     out=../${lang%.mo}/LC_MESSAGES
     mkdir -p $out
+    echo "NOCOM cp $lang $out/$addon.mo"
     cp $lang $out/$addon.mo
   done
   cd ..

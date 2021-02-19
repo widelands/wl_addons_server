@@ -69,6 +69,9 @@ public class Server {
 		 *      - number of '\n' characters in the message, '\n'
 		 *      - message, '\n'
 		 *  - "verified" or "unchecked", '\n'
+		 *  - icon checksum (0 for no icon), '\n'
+		 *  - icon filesize (0 for no icon), '\n'
+		 *  - icon file as a byte stream
 		 *  - ENDOFSTREAM\n
 		 */
 		CMD_INFO,
@@ -231,8 +234,7 @@ public class Server {
 				return;
 			}
 			case CMD_INFO:  // Args: name
-				out.println(info(version, cmd[1], locale));
-				out.println("ENDOFSTREAM");
+				info(version, cmd[1], locale, out);
 				return;
 			case CMD_DOWNLOAD: {  // Args: name
 				DirInfo dir = new DirInfo(new File("addons", cmd[1]));
@@ -464,54 +466,62 @@ public class Server {
 		return p != null && p.value.equals(passwd);
 	}
 
-	synchronized public static String info(final int version, final String addon, final String locale) throws Exception {
+	synchronized public static void info(final int version, final String addon, final String locale, PrintStream out) throws Exception {
 		switch (version) {
 			case 4: {
 				TreeMap<String, Utils.Value> profile = Utils.readProfile(new File("addons/" + addon, "addon"), addon);
-				TreeMap<String, Utils.Value> metadata = Utils.readProfile(new File("metadata", addon), null);
+				TreeMap<String, Utils.Value> metadata = Utils.readProfile(new File("metadata", addon), addon);
 				TreeMap<String, Utils.Value> screenies = Utils.readProfile(new File("screenshots/" + addon, "descriptions"), addon);
-				String str = "";
 
-				str += profile.get("name"         ).value         + "\n";
-				str += profile.get("name"         ).value(locale) + "\n";
-				str += profile.get("description"  ).value         + "\n";
-				str += profile.get("description"  ).value(locale) + "\n";
-				str += profile.get("author"       ).value         + "\n";
-				str += profile.get("author"       ).value(locale) + "\n";
-				str += metadata.get("uploader"    ).value(locale) + "\n";
-				str += profile.get("version"      ).value(locale) + "\n";
-				str += metadata.get("i18n_version").value(locale) + "\n";
-				str += profile.get("category"     ).value(locale) + "\n";
-				str += profile.get("requires"     ).value(locale) + "\n";
-				str += (profile.containsKey("min_wl_version") ? profile.get("min_wl_version").value : "") + "\n";
-				str += (profile.containsKey("max_wl_version") ? profile.get("max_wl_version").value : "") + "\n";
-				str += (profile.containsKey("sync_safe"     ) ? profile.get("sync_safe"     ).value : "") + "\n";
+				out.println(profile.get("name"         ).value        );
+				out.println(profile.get("name"         ).value(locale));
+				out.println(profile.get("description"  ).value        );
+				out.println(profile.get("description"  ).value(locale));
+				out.println(profile.get("author"       ).value        );
+				out.println(profile.get("author"       ).value(locale));
+				out.println(metadata.get("uploader"    ).value(locale));
+				out.println(profile.get("version"      ).value);
+				out.println(metadata.get("i18n_version").value);
+				out.println(profile.get("category"     ).value);
+				out.println(profile.get("requires"     ).value);
+				out.println((profile.containsKey("min_wl_version") ? profile.get("min_wl_version").value : ""));
+				out.println((profile.containsKey("max_wl_version") ? profile.get("max_wl_version").value : ""));
+				out.println((profile.containsKey("sync_safe"     ) ? profile.get("sync_safe"     ).value : ""));
 
-				str += screenies.size() + "\n";
-				for (String key : screenies.keySet()) str += key + "\n" + screenies.get(key).value(locale) + "\n";
+				out.println(screenies.size());
+				for (String key : screenies.keySet()) out.println(key + "\n" + screenies.get(key).value(locale));
 
-				str += Utils.filesize(new File("addons", addon)) + "\n";
-				str += metadata.get("timestamp").value(locale) + "\n";
-				str += metadata.get("downloads").value(locale) + "\n";
-				for (int i = 1; i <= 10; ++i) str += metadata.get("votes_" + i).value(locale) + "\n";
+				out.println(Utils.filesize(new File("addons", addon)));
+				out.println(metadata.get("timestamp").value);
+				out.println(metadata.get("downloads").value);
+				for (int i = 1; i <= 10; ++i) out.println(metadata.get("votes_" + i).value);
 
 				int c = Integer.valueOf(metadata.get("comments").value);
-				str += c + "\n";
+				out.println(c);
 				for (int i = 0; i < c; ++i) {
-					str += metadata.get("comment_name_"      + i).value(locale) + "\n";
-					str += metadata.get("comment_timestamp_" + i).value(locale) + "\n";
-					str += metadata.get("comment_version_"   + i).value(locale) + "\n";
+					out.println(metadata.get("comment_name_"      + i).value(locale));
+					out.println(metadata.get("comment_timestamp_" + i).value);
+					out.println(metadata.get("comment_version_"   + i).value);
 					int l = Integer.valueOf(metadata.get("comment_" + i).value);
-					str += l + "\n";
-					for (int j = 0; j <= l; ++j) str += metadata.get("comment_" + i + "_" + j).value(locale) + "\n";
+					out.println(l);
+					for (int j = 0; j <= l; ++j) out.println(metadata.get("comment_" + i + "_" + j).value(locale));
+				}
+				out.println(metadata.get("security").value);
+
+				File iconFile = new File("addons/" + addon, "icon.png");
+				if (iconFile.isFile()) {
+					writeOneFile(iconFile, out);
+				} else {
+					out.println("0\n0");
 				}
 
-				str += metadata.get("security"  ).value(locale);
-				return str;
+				out.println("ENDOFSTREAM");
+				return;
 			}
 			default:
 				System.out.println("[" + Thread.currentThread().getName() + "] ERROR: Invalid info version '" + version + "'");
-				return "";
+				out.println("Wrong version");
+				return;
 		}
 	}
 }
