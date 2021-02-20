@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Ondřej Itřech, 2021
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-20 03:04+0000\n"
+"PO-Revision-Date: 2021-02-18 19:31+0000\n"
+"Last-Translator: Ondřej Itřech, 2021\n"
+"Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: addons/auto_soldiers_cs.wad/addon:2
+msgid "Automatic Soldier Setting for Military Construction Sites"
+msgstr "Automatizované přednastavení posádky u vojenských budov ve výstavbě"
+
+#: addons/auto_soldiers_cs.wad/addon:3
+msgid ""
+"If there is no enemy military building in sight, every new construction site "
+"is set to prefer rookies and reduce the capacity to 1. If there are enemy "
+"military buildings in sight prefer always heroes and set capacity to max. "
+"Once a player adjusted one of these settings, this script does nothing."
+msgstr ""
+"Pokud není na dohled žádná vojenská budova nepřítele, dojde u každé nově "
+"stavěné vojenské budovy k přenastavení preferencí na jednočlennou nezkušenou "
+"posádku. Pokud je v dohledu nepřátelská vojenská budova, bude preferována "
+"zkušená posádka v maximální možné kapacitě. Jakmile dojde u jedné z "
+"preferencí k přenastavení hráčem, automatické úpravy se zneaktivní."
