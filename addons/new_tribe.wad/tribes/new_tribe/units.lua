@@ -76,6 +76,16 @@ descriptions:new_tribe {
                }
             }
          },
+         {
+            name = "reed",
+            preciousness = 0,
+            helptexts = {
+               purpose = {
+                  -- TRANSLATORS: Helptext for a NewTribe ware: reed
+                  pgettext("newtribe_ware", "The New Tribe produces reed in reed yards. Roofs are thatched with it.")
+               }
+            }
+         },
       },
       {
          -- Food
@@ -586,12 +596,10 @@ descriptions:new_tribe {
 
       -- Medium
       {
-         name = "newtribe_bakery",
+         name = "newtribe_reed_yard",
          helptexts = {
-            -- TRANSLATORS: Purpose Helptext for a NewTribe production site: Bakery
-            purpose = pgettext("newtribe_building", "Bakes bread for soldiers and miners alike."),
-            -- TRANSLATORS: Performance Helptext for a NewTribe production site: Bakery
-            performance = pgettext("newtribe_building", "The baker needs %1% on average to bake a loaf of bread."):bformat(format_seconds(34))
+            -- TRANSLATORS: Purpose Helptext for a NewTribe production site: Reed Yard
+            purpose = pgettext("building", "Plants and harvests reed.")
          }
       },
       {
@@ -599,6 +607,15 @@ descriptions:new_tribe {
          helptexts = {
             -- TRANSLATORS: Purpose Helptext for a NewTribe production site: Toolsmithy
             purpose = pgettext("building", "Forges all the tools that your workers need.")
+         }
+      },
+      {
+         name = "newtribe_bakery",
+         helptexts = {
+            -- TRANSLATORS: Purpose Helptext for a NewTribe production site: Bakery
+            purpose = pgettext("newtribe_building", "Bakes bread for soldiers and miners alike."),
+            -- TRANSLATORS: Performance Helptext for a NewTribe production site: Bakery
+            performance = pgettext("newtribe_building", "The baker needs %1% on average to bake a loaf of bread."):bformat(format_seconds(34))
          }
       },
       {
