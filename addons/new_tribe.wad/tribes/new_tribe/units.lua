@@ -10,6 +10,7 @@ include "tribes/scripting/help/time_strings.lua"
 descriptions:new_tribe {
    name = "new_tribe",
    animation_directory = image_dirname,
+   military_capacity_script = image_dirname .. "military_capacity.lua",
    animations = {
       frontier = { hotspot = {1, 19} },
       flag = { hotspot = {14, 38}},
