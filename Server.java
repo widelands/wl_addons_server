@@ -355,6 +355,7 @@ public class Server {
 				return;
 			}
 			default:
+				System.out.println("[" + Thread.currentThread().getName() + "] Received invalid command: " + cmd[0]);
 				out.println("Invalid command " + cmd[0]);
 				return;
 		}
