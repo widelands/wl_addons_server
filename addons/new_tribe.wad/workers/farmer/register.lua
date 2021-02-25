@@ -1,0 +1,3 @@
+return {
+   newtribe_farmer = {},
+}
