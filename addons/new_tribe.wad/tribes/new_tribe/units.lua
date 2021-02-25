@@ -24,6 +24,10 @@ descriptions:new_tribe {
 
    bridge_height = 8,
 
+   collectors_points_table = {
+      { ware = "tool", points = 1},
+   },
+
    -- Image file paths for this tribe's road and waterway textures
    roads = {
       busy = {

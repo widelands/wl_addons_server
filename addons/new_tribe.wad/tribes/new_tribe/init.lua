@@ -10,6 +10,7 @@ local r = {
    tooltip = _("A minimalistic tribe to demonstrate the possibility of creating custom tribes."),
    icon = dirname .. "icon.png",
    script = dirname .. "units.lua",
+   suited_for_ai = false,
 
    starting_conditions = {
       dirname .. "headquarters.lua";
