@@ -24,6 +24,10 @@ descriptions:new_tribe {
 
    bridge_height = 8,
 
+   collectors_points_table = {
+      { ware = "tool", points = 1},
+   },
+
    -- Image file paths for this tribe's road and waterway textures
    roads = {
       busy = {
@@ -73,7 +77,7 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for a NewTribe ware: Log, part 1
                   pgettext("ware", "Logs are an important basic building material. They are produced by felling trees."),
                   -- TRANSLATORS: Helptext for a NewTribe ware: Log, part 2
-                  pgettext("newtribe_ware", "NewTribe lumberjacks fell the trees; foresters take care of the supply of trees.")
+                  pgettext("newtribe_ware", "NewTribe woodcutters fell the trees; foresters take care of the supply of trees.")
                }
             }
          },
@@ -129,7 +133,7 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for a NewTribe ware: rye, part 1
                   pgettext("ware", "Rye is essential for survival."),
                   -- TRANSLATORS: Helptext for a NewTribe ware: rye, part 2
-                  pgettext("newtribe_ware", "Rye is produced by farms and used by breweries. Donkey farms also need to be supplied with rye.")
+                  pgettext("newtribe_ware", "Rye is produced by farms and used by bakeries. Donkey farms also need to be supplied with rye.")
                }
             }
          },
@@ -139,7 +143,7 @@ descriptions:new_tribe {
             preciousness = 7,
             helptexts = {
                -- TRANSLATORS: Helptext for a NewTribe ware: Bread
-               purpose = pgettext("newtribe_ware", "The bakers of the New Tribe make really tasty bread out of flour and water. It is used in taverns and inns to prepare rations and meals. Bread is also consumed at the training sites (colosseum).")
+               purpose = pgettext("newtribe_ware", "The bakers of the New Tribe make really tasty bread out of rye and water. Bread is consumed at the training sites (colosseum).")
             }
          },
       },
@@ -207,7 +211,7 @@ descriptions:new_tribe {
          {
             name = "newtribe_woodcutter",
             helptexts = {
-               -- TRANSLATORS: Helptext for a NewTribe worker: Lumberjack
+               -- TRANSLATORS: Helptext for a NewTribe worker: woodcutter
                purpose = pgettext("newtribe_worker", "Fells trees.")
             }
          },
@@ -538,10 +542,10 @@ descriptions:new_tribe {
       {
          name = "newtribe_woodcutters_house",
          helptexts = {
-            -- TRANSLATORS: Purpose Helptext for a NewTribe production site: Lumberjack's House
+            -- TRANSLATORS: Purpose Helptext for a NewTribe production site: woodcutter's House
             purpose = pgettext("building", "Fells trees in the surrounding area and processes them into logs."),
-            -- TRANSLATORS: Note Helptext for a NewTribe production site: Lumberjack's House
-            note = pgettext("newtribe_building", "The lumberjack's house needs trees to fell within the work area.")
+            -- TRANSLATORS: Note Helptext for a NewTribe production site: woodcutter's House
+            note = pgettext("newtribe_building", "The woodcutter's house needs trees to fell within the work area.")
          }
       },
       {
