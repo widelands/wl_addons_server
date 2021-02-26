@@ -95,7 +95,6 @@ public class Server {
 		 *       - filesize in bytes
 		 *       - '\n'
 		 *       - The content of the file as a byte stream
-		 *   - '\n'
 		 *   - ENDOFSTREAM\n
 		 */
 		CMD_DOWNLOAD,
@@ -173,6 +172,16 @@ public class Server {
 		CMD_SUBMIT,
 	}
 
+	public static String readLine(InputStream in) throws Exception {
+		String str = "";
+		for (;;) {
+			int c = in.read();
+			if (c < 0) throw new RuntimeException("Stream ended unexpectedly during readLine");
+			if (c == (char)'\n') return str;
+			str += (char)c;
+		}
+	}
+
 	public static void main(String[] args) throws Exception {
 		System.out.println("Server starting.");
 		ServerSocket serverSocket = new ServerSocket(7399);
@@ -183,28 +192,28 @@ public class Server {
 				try {
 					System.out.println("[" + Thread.currentThread().getName() + "] Connection received.");
 					out = new PrintStream(s.getOutputStream(), true);
-					BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+					InputStream in = s.getInputStream();
 
-					final int protocolVersion = Integer.valueOf(in.readLine());
+					final int protocolVersion = Integer.valueOf(readLine(in));
 					if (protocolVersion != 4) {
 						out.println("Unsupported version");
 						return;
 					}
-					final String locale = in.readLine();
-					final String username = in.readLine();
-					final String password = in.readLine();
+					final String locale = readLine(in);
+					final String username = readLine(in);
+					final String password = readLine(in);
 					if ((!username.isEmpty() || !password.isEmpty()) && !auth(username, password)) {
 						out.println("Wrong username or password");
 						return;
 					}
-					if (!in.readLine().equals("ENDOFSTREAM")) {
+					if (!readLine(in).equals("ENDOFSTREAM")) {
 						out.println("Stream continues past its end");
 						return;
 					}
 					out.println("ENDOFSTREAM");
 
 					String cmd;
-					while ((cmd = in.readLine()) != null) {
+					while ((cmd = readLine(in)) != null) {
 						handle(cmd.split(" "), out, in, protocolVersion, username, locale);
 					}
 				} catch (Exception e) {
@@ -223,7 +232,8 @@ public class Server {
 		return files;
 	}
 
-	private static void handle(String[] cmd, PrintStream out, BufferedReader in, int version, String username, String locale) throws Exception {
+	private static void handle(String[] cmd, PrintStream out, InputStream in,
+			int version, String username, String locale) throws Exception {
 		switch (CMD.valueOf(cmd[0])) {
 			case CMD_LIST: {  // Args: –
 				File[] names = listSorted(new File("addons"));
@@ -293,34 +303,42 @@ public class Server {
 				File tempDir = new File("temp", cmd[1]);
 				while (tempDir.exists()) tempDir = new File("temp", tempDir.getName() + "_");
 				tempDir.mkdirs();
-				final int nrDirs = Integer.valueOf(in.readLine());
+				final int nrDirs = Integer.valueOf(readLine(in));
 				File[] dirnames = new File[nrDirs];
 				for (int i = 0; i < nrDirs; ++i) {
-					dirnames[i] = new File(tempDir, in.readLine());
+					dirnames[i] = new File(tempDir, readLine(in));
 					dirnames[i].mkdirs();
 				}
 				for (int i = 0; i < nrDirs; ++i) {
-					final int nrFiles = Integer.valueOf(in.readLine());
+					final int nrFiles = Integer.valueOf(readLine(in));
 					for (int j = 0; j < nrFiles; ++j) {
-						final String filename = in.readLine();
-						final String checksum = in.readLine();
-						final long size = Long.valueOf(in.readLine());
+						final String filename = readLine(in);
+						final String checksum = readLine(in);
+						final long size = Long.valueOf(readLine(in));
 						File file = new File(dirnames[i], filename);
 						PrintStream stream = new PrintStream(file);
-						for (long l = 0; l < size; ++l) stream.write(in.read());
+						for (long l = 0; l < size; ++l) {
+							int b = in.read();
+							if (b < 0) {
+								doDelete(tempDir);
+								out.println("Stream ended unexpectedly");
+								throw new RuntimeException("Stream ended unexpectedly while reading file");
+							}
+							stream.write(b);
+						}
 						stream.close();
 						String c = UpdateList.checksum(file);
 						if (!checksum.equals(c)) {
-							out.println("Checksum mismatch for " + dirnames[i].getPath() + "/" + filename + ": expected " + checksum + ", found " + c);
 							doDelete(tempDir);
-							return;
+							out.println("Checksum mismatch for " + dirnames[i].getPath() + "/" + filename + ": expected " + checksum + ", found " + c);
+							throw new RuntimeException("Checksum mismatch");
 						}
 					}
 				}
-				if (!in.readLine().equals("ENDOFSTREAM")) {
-					out.println("Stream continues past its end");
+				if (!readLine(in).equals("ENDOFSTREAM")) {
 					doDelete(tempDir);
-					return;
+					out.println("Stream continues past its end");
+					throw new RuntimeException("Stream continues past its end");
 				}
 				File addOnDir = new File("addons", cmd[1]);
 				if (addOnDir.isDirectory()) {
@@ -331,12 +349,16 @@ public class Server {
 						doDelete(tempDir);
 						return;
 					}
-					String[] oldVersion = oldProfile.get("version").value.split(".");
-					String[] newVersion = oldProfile.get("version").value.split(".");
+					String[] oldVersion = oldProfile.get("version").value.split("\\.");
+					String[] newVersion = newProfile.get("version").value.split("\\.");
+					System.out.println("NOCOM Old version: " + oldVersion.length + ", " + oldProfile.get("version").value);
+					System.out.println("NOCOM New version: " + newVersion.length + ", " + newProfile.get("version").value);
 					Boolean newer = null;
 					for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
+						System.out.println("NOCOM " + i + " " + oldVersion[i] + " " + newVersion[i]);
 						if (!oldVersion[i].equals(newVersion[i])) {
 							newer = (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
+							System.out.println("-> NOCOM " + newer);
 							break;
 						}
 					}
