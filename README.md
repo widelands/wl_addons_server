@@ -44,11 +44,11 @@ Verifying add-ons is done by a member of the widelands development team. Updatin
 
 #### Issues
 
-If you encounter any issues related to add-ons, please **do not report them against the official game**! Report them on this repository instead.
+If you encounter any issues related to a specific add-on, please **do not report them against the official game**! Report them on this repository instead.
 
 Keep in mind that currently some of the add-ons here are meant as proof-of-concept dummies. Please do not report any errors regarding those.
 
-Issues not directly related to add-ons should be reported [against the official game](https://github.com/widelands/widelands/issues).
+Issues related to the add-on system in general, or not related to add-ons at all, should be reported [against the official game](https://github.com/widelands/widelands/issues).
 
 ### Developers’ corner
 
