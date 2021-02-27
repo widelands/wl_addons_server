@@ -54,12 +54,12 @@ Issues not directly related to add-ons should be reported [against the official 
 
 #### Verify a new or updated add-on
 
-Verification should be done **only** by a developer who is also a Transifex administrator!
+Verification of **new** add-ons should be done **only** by a developer who is also a Transifex administrator!
 
 To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
 
-Afterwards, you need to follow these steps to ensure that the add-on can be translated:
-- Go to the repository's Actions tab, select the Update Translations action, and trigger a workflow run on the master branch.
+If the add-on was not up for translation on Transifex yet, you need to follow these steps afterwards to ensure that it can be translated:
+- Go to the repository's Actions tab, select the 'Update Translations' action, and trigger a workflow run on the master branch.
 - Wait until the workflow completed (should take only a minute).
 - Head over to https://www.transifex.com/widelands/widelands-addons/settings/integrations/
 - Go to ··· → Edit Settings → Select Files
