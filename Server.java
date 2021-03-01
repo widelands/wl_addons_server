@@ -172,11 +172,20 @@ public class Server {
 		CMD_SUBMIT,
 	}
 
+	public static class ProtocolException extends RuntimeException {
+		public final String message;
+		public ProtocolException(String msg) {
+			super();
+			message = "ProtocolException: " + msg;
+		}
+		@Override public String toString() { return message; }
+	}
+
 	public static String readLine(InputStream in) throws Exception {
 		String str = "";
 		for (;;) {
 			int c = in.read();
-			if (c < 0) throw new RuntimeException("Stream ended unexpectedly during readLine");
+			if (c < 0) throw new ProtocolException("Stream ended unexpectedly during readLine");
 			if (c == (char)'\n') return str;
 			str += (char)c;
 		}
@@ -196,19 +205,16 @@ public class Server {
 
 					final int protocolVersion = Integer.valueOf(readLine(in));
 					if (protocolVersion != 4) {
-						out.println("Unsupported version");
-						return;
+						throw new ProtocolException("Unsupported version");
 					}
 					final String locale = readLine(in);
 					final String username = readLine(in);
 					final String password = readLine(in);
 					if ((!username.isEmpty() || !password.isEmpty()) && !auth(username, password)) {
-						out.println("Wrong username or password");
-						return;
+						throw new ProtocolException("Wrong username or password");
 					}
 					if (!readLine(in).equals("ENDOFSTREAM")) {
-						out.println("Stream continues past its end");
-						return;
+						throw new ProtocolException("Stream continues past its end");
 					}
 					out.println("ENDOFSTREAM");
 
@@ -218,7 +224,7 @@ public class Server {
 					}
 				} catch (Exception e) {
 					System.out.println("[" + Thread.currentThread().getName() + "] ERROR: " + e);
-					if (out != null) out.println("e");
+					if (out != null) out.println(e);
 				}
 				System.out.println("[" + Thread.currentThread().getName() + "] Connection quit.");
 				if (out != null) out.close();
@@ -279,7 +285,7 @@ public class Server {
 			}
 			case CMD_VOTE:  // Args: name vote
 				if (username.isEmpty()) {
-					out.println("Wrong username or password");
+					throw new ProtocolException("Wrong username or password");
 				} else {
 					Utils.registerVote(cmd[1], username, cmd[2]);
 					out.println("ENDOFSTREAM");
@@ -287,7 +293,7 @@ public class Server {
 				return;
 			case CMD_GET_VOTE: {  // Args: name
 				if (username.isEmpty()) {
-					out.println("ACCESSDENIED");
+					out.println("ACCESSDENIED");  // No exception here.
 					return;
 				}
 				Utils.Value vote = Utils.readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + username);
@@ -297,8 +303,7 @@ public class Server {
 			}
 			case CMD_SUBMIT: {  // Args: name
 				if (username.isEmpty()) {
-					out.println("Wrong username or password");
-					return;
+					throw new ProtocolException("Wrong username or password");
 				}
 				File tempDir = new File("temp", cmd[1]);
 				while (tempDir.exists()) tempDir = new File("temp", tempDir.getName() + "_");
@@ -321,8 +326,7 @@ public class Server {
 							int b = in.read();
 							if (b < 0) {
 								doDelete(tempDir);
-								out.println("Stream ended unexpectedly");
-								throw new RuntimeException("Stream ended unexpectedly while reading file");
+								throw new ProtocolException("Stream ended unexpectedly while reading file");
 							}
 							stream.write(b);
 						}
@@ -330,43 +334,35 @@ public class Server {
 						String c = UpdateList.checksum(file);
 						if (!checksum.equals(c)) {
 							doDelete(tempDir);
-							out.println("Checksum mismatch for " + dirnames[i].getPath() + "/" + filename + ": expected " + checksum + ", found " + c);
-							throw new RuntimeException("Checksum mismatch");
+							throw new ProtocolException("Checksum mismatch for " + dirnames[i].getPath() + "/" + filename + ": expected " + checksum + ", found " + c);
 						}
 					}
 				}
 				if (!readLine(in).equals("ENDOFSTREAM")) {
 					doDelete(tempDir);
-					out.println("Stream continues past its end");
-					throw new RuntimeException("Stream continues past its end");
+					throw new ProtocolException("Stream continues past its end");
 				}
 				File addOnDir = new File("addons", cmd[1]);
 				if (addOnDir.isDirectory()) {
 					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(new File(addOnDir, "addon"), cmd[1]);
 					TreeMap<String, Utils.Value> newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
 					if (!oldProfile.get("category").value.equals(newProfile.get("category").value)) {
-						out.println("An add-on with the same name and a different category already exists.");
 						doDelete(tempDir);
-						return;
+						throw new ProtocolException("An add-on with the same name and a different category already exists.");
 					}
 					String[] oldVersion = oldProfile.get("version").value.split("\\.");
 					String[] newVersion = newProfile.get("version").value.split("\\.");
-					System.out.println("NOCOM Old version: " + oldVersion.length + ", " + oldProfile.get("version").value);
-					System.out.println("NOCOM New version: " + newVersion.length + ", " + newProfile.get("version").value);
 					Boolean newer = null;
 					for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
-						System.out.println("NOCOM " + i + " " + oldVersion[i] + " " + newVersion[i]);
 						if (!oldVersion[i].equals(newVersion[i])) {
 							newer = (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
-							System.out.println("-> NOCOM " + newer);
 							break;
 						}
 					}
 					if (newer == null) newer = (oldVersion.length < newVersion.length);
 					if (!newer) {
-						out.println("An add-on with the same name and an equal or newer version already exists.");
 						doDelete(tempDir);
-						return;
+						throw new ProtocolException("An add-on with the same name and an equal or newer version already exists.");
 					}
 				}
 				if (addOnDir.exists()) doDelete(addOnDir);
@@ -376,10 +372,7 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			default:
-				System.out.println("[" + Thread.currentThread().getName() + "] Received invalid command: " + cmd[0]);
-				out.println("Invalid command " + cmd[0]);
-				return;
+			default: throw new ProtocolException("Invalid command " + cmd[0]);
 		}
 	}
 
@@ -407,10 +400,7 @@ public class Server {
 			int len = (int)Math.min(l, Integer.MAX_VALUE - 1);
 			byte[] buffer = new byte[len];
 			int r = read.read(buffer, 0, len);
-			if (r != len) {
-				System.out.println("[" + Thread.currentThread().getName() + "] ERROR: Read " + r + " bytes but expected " + len);
-				return;
-			}
+			if (r != len) throw new ProtocolException("Server-side error: Read " + r + " bytes but expected " + len);
 			out.write(buffer);
 			l -= len;
 		}
@@ -541,10 +531,7 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			default:
-				System.out.println("[" + Thread.currentThread().getName() + "] ERROR: Invalid info version '" + version + "'");
-				out.println("Wrong version");
-				return;
+			default: throw new ProtocolException("Wrong version " + version);
 		}
 	}
 }
