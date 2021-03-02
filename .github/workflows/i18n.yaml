@@ -28,7 +28,7 @@ jobs:
         ./buildcats.sh
     - name: Pushing changes
       run: |
-        if [ -n "$(git status -s i18n)" ] && [ ${{ github.event_name }} != "workflow_dispatch" ]
+        if [ ${{ github.event_name }} == "workflow_dispatch" ] || [ -n "$(git status -s i18n)" ]
         then
           git add .
           git commit -m "Automated translations update"
