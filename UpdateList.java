@@ -82,7 +82,7 @@ public class UpdateList {
 				comments.add(new Data.Comment(
 					metadata.get("comment_name_" + i).value,
 					msg,
-					metadata.get("comment_" + i).value,
+					metadata.get("comment_version_" + i).value,
 					Long.valueOf(metadata.get("comment_timestamp_" + i).value)
 				));
 			}
