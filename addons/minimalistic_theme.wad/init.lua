@@ -12,32 +12,27 @@
 -- Some elements carry custom parameters like e.g. "margin" that should be expanded upon in the future.
 
 dirname = path.dirname(__file__)
+
+-- Global colors
 local gray = {80, 80, 80}
 local light_gray = {250, 250, 250}
 
--- Some common elements for reuse
+-- Overlay colors for buttons
+local overlay_dark =  {30, 30, 30}
+local overlay_green =  {10, 50, 0}
+
 local fs_button = dirname .. "fsmenu/button.png"
 local wui_button = dirname .. "wui/button.png"
 
--- Overlay colors
-local fs_blue =  {30, 30, 30} --{0, 31, 40}
-local fs_green =  {10, 50, 0}
-local fs_brown =  {30, 30, 30} -- {45, 34, 18}
-
-local wui_light =  fs_blue --{85, 63, 35}
-local wui_green =  fs_blue --{, 255, 0} --{3, 15, 0}
-local wui_brown =  fs_blue --{255, 255, 0} --{32, 19, 8}
-
-local fs_font_color = light_gray --{255, 220, 0}
+local fs_font_color = light_gray
 local fs_font_face = "sans"
 local fs_font_size = 14
 
-local wui_font_color = light_gray --{255, 255, 0}
 local wui_font_face = "sans"
 local wui_font_size = 14
 
 local default_wui_font = {
-   color = wui_font_color,
+   color = light_gray,
    face = wui_font_face,
    size = wui_font_size,
    bold = true,
@@ -80,7 +75,7 @@ return {
    -- red, green, blue, alpha
    background_focused = {240, 240, 240, 200},
    background_semi_focused = {180, 180, 180, 200},
-   focus_border_thickness = 1, --2,
+   focus_border_thickness = 1,
 
    -- Windows
    windows = {
@@ -125,14 +120,14 @@ return {
                font = default_button_fonts.enabled_fs,
                background = {
                   image = fs_button,
-                  color = fs_blue,
+                  color = overlay_dark,
                }
             },
             disabled = {
                font = default_button_fonts.disabled,
                background = {
                   image = fs_button,
-                  color = fs_blue,
+                  color = overlay_dark,
                }
             }
          },
@@ -142,14 +137,14 @@ return {
                font = default_button_fonts.enabled_fs,
                background = {
                   image = fs_button,
-                  color = fs_green,
+                  color = overlay_green,
                }
             },
             disabled = {
                font = default_button_fonts.disabled,
                background = {
                   image = fs_button,
-                  color = fs_green,
+                  color = overlay_green,
                }
             }
          },
@@ -159,14 +154,14 @@ return {
                font = default_button_fonts.enabled_fs,
                background = {
                   image = fs_button,
-                  color = fs_brown,
+                  color = overlay_dark,
                }
             },
             disabled = {
                font = default_button_fonts.disabled,
                background = {
                   image = fs_button,
-                  color = fs_brown,
+                  color = overlay_dark,
                }
             }
          },
@@ -179,14 +174,14 @@ return {
                font = default_button_fonts.enabled_wui,
                background = {
                   image = wui_button,
-                  color = wui_light,
+                  color = overlay_dark,
                }
             },
             disabled = {
                font = default_button_fonts.disabled,
                background = {
                   image = wui_button,
-                  color = wui_light,
+                  color = overlay_dark,
                }
             }
          },
@@ -196,14 +191,14 @@ return {
                font = default_button_fonts.enabled_wui,
                background = {
                   image = wui_button,
-                  color = wui_green,
+                  color = overlay_dark,
                }
             },
             disabled = {
                font = default_button_fonts.disabled,
                background = {
                   image = wui_button,
-                  color = wui_green,
+                  color = overlay_dark,
                }
             }
          },
@@ -213,14 +208,14 @@ return {
                font = default_button_fonts.enabled_wui,
                background = {
                   image = wui_button,
-                  color = wui_brown,
+                  color = overlay_dark,
                }
             },
             disabled = {
                font = default_button_fonts.disabled,
                background = {
                   image = wui_button,
-                  color = wui_brown,
+                  color = overlay_dark,
                }
             }
          },
@@ -250,7 +245,7 @@ return {
          menu = {
             background = {
                image = fs_button,
-               color = fs_blue,
+               color = overlay_dark,
             },
             font = {
                color = fs_font_color,
@@ -266,7 +261,7 @@ return {
          light = {
             background = {
                image = wui_button,
-               color = wui_brown,
+               color = overlay_dark,
             },
             font = {
                color = light_gray, --fs_font_color,
@@ -280,7 +275,7 @@ return {
          dark = {
             background = {
                image = wui_button,
-               color = wui_green,
+               color = overlay_dark,
             },
             font = {
                color = fs_font_color,
@@ -304,7 +299,7 @@ return {
          light = { image = "", color = {0, 0, 0} },
          -- Building buttons in Fieldaction and Building Statistics need a dark
          -- background, otherwise the icons will be hard to see.
-         dark = { image = wui_button, color = wui_brown },
+         dark = { image = wui_button, color = overlay_dark },
       }
    },
    -- Used both for one-line and multiline edit boxes
@@ -312,7 +307,7 @@ return {
       fsmenu = {
          background = {
             image = fs_button,
-            color = fs_green,
+            color = overlay_green,
             margin = 4
          },
          font = {
@@ -325,11 +320,11 @@ return {
       wui = {
          background = {
             image = wui_button,
-            color = wui_brown,
+            color = overlay_dark,
             margin = 2,
          },
          font = {
-            color = wui_font_color,
+            color = light_gray,
             face = wui_font_face,
             size = wui_font_size,
             shadow = true
@@ -339,19 +334,19 @@ return {
    -- Background for dropdown menus
    dropdowns = {
       fsmenu = {
-         menu = { image = fs_button, color = fs_brown },
+         menu = { image = fs_button, color = overlay_dark },
       },
       wui = {
-         menu = { image = wui_button, color = wui_brown },
+         menu = { image = wui_button, color = overlay_dark },
       }
    },
    -- Scrollbar buttons, table headers etc.
    scrollbars = {
       fsmenu = {
-         menu = { image = fs_button, color = fs_blue },
+         menu = { image = fs_button, color = overlay_dark },
       },
       wui = {
-         menu = { image = wui_button, color = wui_brown },
+         menu = { image = wui_button, color = overlay_dark },
       }
    },
 
@@ -383,14 +378,14 @@ return {
    -- Map census and statistics, and building statistics window
    building_statistics = {
       census_font = {
-         color = light_gray, --wui_font_color, -- Default color
+         color = light_gray,
          face = "condensed",
          size = wui_font_size,
          bold = true,
          shadow = true
       },
       statistics_font = {
-         color = light_gray, --wui_font_color, -- Default color
+         color = light_gray,
          face = "condensed",
          size = wui_font_size,
          bold = true,
@@ -400,14 +395,14 @@ return {
       statistics_window = {
          fonts = {
             button_font = {
-               color = light_gray, --wui_font_color, -- Default color
+               color = light_gray,
                face = "condensed",
                size = 12, -- Do not make this bigger - the UI element size is still hard-coded.
                bold = true,
                shadow = true
             },
             details_font = {
-               color = light_gray, --wui_font_color, -- Default color
+               color = light_gray,
                face = "sans",
                size = 12, -- Do not make this bigger - the UI element size is still hard-coded.
                bold = true,
@@ -431,21 +426,21 @@ return {
    progressbar = {
       fsmenu = {
          font = {
-            color = light_gray, --{ 128, 128, 255 },
+            color = light_gray,
             face = fs_font_face,
             size = fs_font_size,
             bold = true,
             shadow = true
          },
          background_colors = {
-            low = gray, --{ 64, 64, 0 }, -- Unused
-            medium = gray, --{ 64, 64, 0 },
-            high = gray, --{ 64, 64, 0 }, -- Unused
+            low = gray,
+            medium = gray,
+            high = gray,
          }
       },
       wui = {
          font = {
-            color = light_gray, --{255, 250, 170},
+            color = light_gray,
             face = wui_font_face,
             size = wui_font_size,
             bold = true,
@@ -462,21 +457,21 @@ return {
    tables = {
       fsmenu = {
          enabled = {
-            color = light_gray, --fs_font_color,
+            color = light_gray,
             face = fs_font_face,
             size = fs_font_size,
             bold = true,
             shadow = true
          },
          disabled = {
-            color = gray, --{127, 127, 127},
+            color = gray,
             face = fs_font_face,
             size = fs_font_size,
             bold = true,
             shadow = true
          },
          hotkey = {
-            color = light_gray, --{180, 180, 180},
+            color = light_gray,
             face = fs_font_face,
             size = fs_font_size,
             bold = true,
@@ -485,21 +480,21 @@ return {
       },
       wui = {
          enabled = {
-            color = light_gray, --fs_font_color,
+            color = light_gray,
             face = fs_font_face,
             size = fs_font_size,
             bold = true,
             shadow = true
          },
          disabled = {
-            color = gray, --{127, 127, 127},
+            color = gray,
             face = fs_font_face,
             size = fs_font_size,
             bold = true,
             shadow = true
          },
          hotkey = {
-            color = light_gray, --{180, 180, 180},
+            color = light_gray,
             face = fs_font_face,
             size = fs_font_size,
             bold = true,
@@ -514,12 +509,12 @@ return {
       normal = {
          fonts = {
             header = {
-               color = light_gray, --wui_font_color,
+               color = light_gray,
                face = "sans",
                size = 11,
             },
             info = {
-               color = light_gray, --wui_font_color,
+               color = light_gray,
                face = "condensed",
                size = 10,
             },
@@ -534,12 +529,12 @@ return {
       highlight = {
          fonts = {
             header = {
-               color = wui_font_color,
+               color = light_gray,
                face = "sans",
                size = 11,
             },
             info = {
-               color = wui_font_color,
+               color = light_gray,
                face = "condensed",
                size = 10,
             },
@@ -561,7 +556,7 @@ return {
    fonts = {
       -- Basic chat message text color
       chat_message = {
-         color = light_gray, --wui_font_color,
+         color = light_gray,
          face = "serif",
          size = fs_font_size,
          shadow = true,
@@ -599,14 +594,14 @@ return {
       },
       -- Intro screen
       fsmenu_intro = {
-         color = light_gray, --{ 192, 192, 128 },
+         color = light_gray,
          face = fs_font_face,
          size = 16,
          bold = true,
          shadow = true
       },
       italic = {
-         color = light_gray, --{ 238, 238, 238 },
+         color = light_gray,
          face = "serif",
          size = fs_font_size,
          italic = true,
@@ -614,34 +609,34 @@ return {
       },
       -- Displayed in the loading screens
       fsmenu_gametip = {
-         color = light_gray, --{ 33, 33, 27 },
+         color = light_gray,
          face = "serif",
          size = 16,
       },
       -- Game and Map info panels
       fsmenu_info_panel_heading = {
-         color = light_gray, --fs_font_color,
+         color = light_gray,
          face = fs_font_face,
          size = fs_font_size,
          bold = true,
          shadow = true
       },
       fsmenu_info_panel_paragraph = {
-         color = light_gray, --{ 209, 209, 209 },
+         color = light_gray,
          face = fs_font_face,
          size = fs_font_size,
          shadow = true
       },
       -- Internet lobby and launch game
       fsmenu_game_setup_headings = {
-         color = light_gray, --fs_font_color,--{ 0, 255, 0 },
+         color = light_gray,
          face = fs_font_face,
          size = fs_font_size + 2,
          bold = true,
          shadow = true
       },
       fsmenu_game_setup_mapname = {
-         color = light_gray, --{ 255, 255, 127 },
+         color = light_gray,
          face = fs_font_face,
          size = fs_font_size,
          bold = true,
@@ -684,19 +679,19 @@ return {
       label_wui = default_wui_font,
       label_fs = default_fs_font,
       tooltip_wui = {
-         color = light_gray, --wui_font_color,
+         color = light_gray,
          face = wui_font_face,
          size = 14,
          bold = false,
       },
       tooltip_hotkey_wui = {
-         color = light_gray, --{180, 180, 180},
+         color = light_gray,
          face = wui_font_face,
          size = 14,
          bold = false,
       },
       tooltip_header_wui = {
-         color = wui_font_color,
+         color = light_gray,
          face = wui_font_face,
          size = 16,
          bold = true,
@@ -708,13 +703,13 @@ return {
          bold = false,
       },
       tooltip_hotkey_fs = {
-         color = light_gray, --{180, 180, 180},
+         color = light_gray,
          face = fs_font_face,
          size = 14,
          bold = false,
       },
       tooltip_header_fs = {
-         color = light_gray, --fs_font_color,
+         color = light_gray,
          face = fs_font_face,
          size = 16,
          bold = true,
@@ -735,32 +730,32 @@ return {
       },
 
       wui_attack_box_slider_label = {
-         color = light_gray, --wui_font_color,
+         color = light_gray,
          face = wui_font_face,
          size = 10,
          bold = true,
          shadow = true
       },
       wui_info_panel_heading = {
-         color = light_gray, --{ 209, 209, 209 },
+         color = light_gray,
          face = wui_font_face,
          size = wui_font_size,
          bold = true,
       },
       wui_info_panel_paragraph = {
-         color = light_gray, --{ 255, 255, 0 },
+         color = light_gray,
          face = wui_font_face,
          size = wui_font_size,
       },
       -- Messages
       wui_message_heading = {
-         color = light_gray, --{ 209, 209, 209 },
+         color = light_gray,
          face = wui_font_face,
          size = 18,
          bold = true,
       },
       wui_message_paragraph = {
-         color = light_gray, --{ 255, 255, 0 },
+         color = light_gray,
          face = wui_font_face,
          size = 12,
       },
@@ -779,7 +774,7 @@ return {
          shadow=true,
       },
       wui_game_speed_and_coordinates = {
-         color = wui_font_color,
+         color = light_gray,
          face = "condensed",
          size = wui_font_size,
          bold = true,
