@@ -25,7 +25,8 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 540
+      prohibited_till = 540,
+      collects_ware_from_map = "salt"
    },
 
    working_positions = {
