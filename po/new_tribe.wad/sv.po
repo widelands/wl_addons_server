@@ -1,0 +1,1193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-03 14:44+0000\n"
+"PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Language-Team: Swedish (https://www.transifex.com/widelands/teams/35159/"
+"sv/)\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/new_tribe.wad/addon:2
+#: addons/new_tribe.wad/tribes/new_tribe/init.lua:9
+msgid "New Tribe"
+msgstr ""
+
+#: addons/new_tribe.wad/addon:3
+msgid ""
+"A mostly new, minimalistic tribe to demonstrate the possibility of creating "
+"custom tribes."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/barracks/init.lua:8
+msgctxt "newtribe_building"
+msgid "Barracks"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/barracks/init.lua:52
+msgctxt "newtribe_building"
+msgid "recruiting soldier"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/colosseum/init.lua:8
+msgctxt "newtribe_building"
+msgid "Colosseum"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/colosseum/init.lua:57
+msgid "sleeping"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/colosseum/init.lua:65
+msgctxt "newtribe_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/colosseum/init.lua:78
+msgctxt "newtribe_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/colosseum/init.lua:96
+msgctxt "newtribe_building"
+msgid "No soldier to train!"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/colosseum/init.lua:98
+msgctxt "newtribe_building"
+msgid "No soldier found for this training level!"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/ferry_yard/init.lua:8
+msgctxt "newtribe_building"
+msgid "Ferry Yard"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/ferry_yard/init.lua:55
+#: addons/new_tribe.wad/buildings/shipyard/init.lua:59
+#: addons/new_tribe.wad/buildings/shipyard/init.lua:74
+#: addons/new_tribe.wad/productionsites/reed_yard/init.lua:40
+#: addons/new_tribe.wad/productionsites/rye_farm/init.lua:43
+#: addons/new_tribe.wad/productionsites/well/init.lua:46
+msgid "working"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/headquarters/init.lua:8
+msgctxt "newtribe_building"
+msgid "Headquarters"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/port/init.lua:8
+msgctxt "newtribe_building"
+msgid "Port"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/scouts_house/init.lua:8
+msgctxt "newtribe_building"
+msgid "Scout’s House"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/scouts_house/init.lua:55
+#: addons/new_tribe.wad/buildings/scouts_house/init.lua:63
+msgid "scouting"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/sentry/init.lua:8
+msgctxt "newtribe_building"
+msgid "Sentry"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/sentry/init.lua:48
+msgctxt "newtribe_building"
+msgid "Your soldiers have occupied your sentry."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/sentry/init.lua:50
+msgctxt "newtribe_building"
+msgid "Your sentry discovered an aggressor."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/sentry/init.lua:52
+msgctxt "newtribe_building"
+msgid "Your sentry is under attack."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/sentry/init.lua:54
+msgctxt "newtribe_building"
+msgid "The enemy defeated your soldiers at the sentry."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/sentry/init.lua:56
+msgctxt "newtribe_building"
+msgid "Your soldiers defeated the enemy at the sentry."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/shipyard/init.lua:8
+msgctxt "newtribe_building"
+msgid "Shipyard"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/shipyard/init.lua:67
+msgid "constructing a ship"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/tower/init.lua:8
+msgctxt "newtribe_building"
+msgid "Tower"
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/tower/init.lua:56
+msgctxt "newtribe_building"
+msgid "Your soldiers have occupied your tower."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/tower/init.lua:58
+msgctxt "newtribe_building"
+msgid "Your tower discovered an aggressor."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/tower/init.lua:60
+msgctxt "newtribe_building"
+msgid "Your tower is under attack."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/tower/init.lua:62
+msgctxt "newtribe_building"
+msgid "The enemy defeated your soldiers at the tower."
+msgstr ""
+
+#: addons/new_tribe.wad/buildings/tower/init.lua:64
+msgctxt "newtribe_building"
+msgid "Your soldiers defeated the enemy at the tower."
+msgstr ""
+
+#: addons/new_tribe.wad/immovables/resi/init.lua:8
+msgctxt "resource_indicator"
+msgid "No Resources"
+msgstr ""
+
+#: addons/new_tribe.wad/immovables/resi/init.lua:31
+msgctxt "resource_indicator"
+msgid "Water"
+msgstr ""
+
+#: addons/new_tribe.wad/immovables/ryefield/harvested/init.lua:7
+msgctxt "immovable"
+msgid "Rye Field (harvested)"
+msgstr ""
+
+#: addons/new_tribe.wad/immovables/ryefield/medium/init.lua:7
+msgctxt "immovable"
+msgid "Rye Field (medium)"
+msgstr ""
+
+#: addons/new_tribe.wad/immovables/ryefield/ripe/init.lua:7
+msgctxt "immovable"
+msgid "Rye Field (ripe)"
+msgstr ""
+
+#: addons/new_tribe.wad/immovables/ryefield/small/init.lua:7
+msgctxt "immovable"
+msgid "Rye Field (small)"
+msgstr ""
+
+#: addons/new_tribe.wad/immovables/ryefield/tiny/init.lua:7
+msgctxt "immovable"
+msgid "Rye Field (tiny)"
+msgstr ""
+
+#: addons/new_tribe.wad/immovables/shipconstruction/init.lua:8
+msgctxt "immovable"
+msgid "Ship Under Construction"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/bakery/init.lua:8
+msgctxt "newtribe_building"
+msgid "Bakery"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/bakery/init.lua:50
+msgctxt "newtribe_building"
+msgid "baking bread"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/donkeyfarm/init.lua:8
+msgctxt "newtribe_building"
+msgid "Donkey Farm"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/donkeyfarm/init.lua:49
+msgctxt "newtribe_building"
+msgid "rearing donkeys"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:8
+msgctxt "newtribe_building"
+msgid "Fish Breeder’s House"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:42
+msgid "breeding fish"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:52
+#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:53
+msgid "No Fish"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:53
+#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:54
+msgid "Out of Fish"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:54
+msgctxt "newtribe_building"
+msgid ""
+"The fish breeder working out of this fish breeder’s house can’t find any "
+"fish in his work area. Remember that you can only regenerate your fish "
+"resources if there are some fish left to breed."
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:58
+msgid "The fishing grounds are full"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:8
+msgctxt "newtribe_building"
+msgid "Fisher’s House"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:43
+msgid "fishing"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:55
+msgctxt "newtribe_building"
+msgid ""
+"The fisher working out of this fisher’s house can’t find any fish in his "
+"work area. Remember that you can increase the number of existing fish by "
+"building a fish breeder’s house."
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/foresters_house/init.lua:8
+msgctxt "newtribe_building"
+msgid "Forester’s House"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/foresters_house/init.lua:52
+msgid "planting trees"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:8
+msgctxt "newtribe_building"
+msgid "Hunter’s House"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:40
+msgid "hunting"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:49
+msgid "No Game"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:51
+msgid "Out of Game"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:53
+msgctxt "newtribe_building"
+msgid ""
+"The hunter working out of this hunter’s house can’t find any game in his "
+"work area."
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/quarry/init.lua:8
+msgctxt "newtribe_building"
+msgid "Quarry"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/quarry/init.lua:38
+msgid "quarrying granite"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/quarry/init.lua:47
+msgid "No Rocks"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/quarry/init.lua:48
+msgid "Out of Rocks"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/quarry/init.lua:49
+msgctxt "newtribe_building"
+msgid ""
+"The stonecutter working at this quarry can’t find any rocks in his work area."
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/reed_yard/init.lua:8
+msgctxt "newtribe_building"
+msgid "Reed Yard"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/reed_yard/init.lua:48
+msgid "planting reed"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/reed_yard/init.lua:56
+msgid "harvesting reed"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/reed_yard/init.lua:65
+#: addons/new_tribe.wad/productionsites/rye_farm/init.lua:68
+msgid "No Fields"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/reed_yard/init.lua:66
+#: addons/new_tribe.wad/productionsites/rye_farm/init.lua:69
+msgid "Out of Fields"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/reed_yard/init.lua:67
+msgctxt "newtribe_building"
+msgid ""
+"The farmer working at this reed yard has no cleared soil to plant his seeds."
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/rye_farm/init.lua:8
+msgctxt "newtribe_building"
+msgid "Rye Farm"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/rye_farm/init.lua:51
+msgid "planting rye"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/rye_farm/init.lua:59
+msgid "harvesting rye"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/rye_farm/init.lua:70
+msgctxt "newtribe_building"
+msgid ""
+"The rye farmer working at this rye farm has no cleared soil to plant his "
+"seeds."
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/toolsmithy/init.lua:8
+msgctxt "newtribe_building"
+msgid "Toolsmithy"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/toolsmithy/init.lua:47
+msgid "making a tool"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/well/init.lua:8
+msgctxt "newtribe_building"
+msgid "Well"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/well/init.lua:58
+msgid "No Water"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/well/init.lua:59
+msgid "Out of Water"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/well/init.lua:60
+msgctxt "newtribe_building"
+msgid "The carrier working at this well can’t find any water in his well."
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:8
+msgctxt "newtribe_building"
+msgid "Woodcutter’s House"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:50
+msgid "felling trees"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:59
+msgid "No Trees"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:60
+msgid "Out of Trees"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:61
+msgctxt "newtribe_building"
+msgid ""
+"The woodcutter working at this woodcutter’s house can’t find any trees in "
+"his work area. You should consider dismantling or destroying the building or "
+"building a forester’s house."
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:8
+msgctxt "newtribe_ship"
+msgid "Ship"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:45
+msgctxt "shipname"
+msgid "Amrum"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:47
+msgctxt "shipname"
+msgid "Alt-Nordstrand"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:49
+msgctxt "shipname"
+msgid "Eiderstedt"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:51
+msgctxt "shipname"
+msgid "Föhr"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:53
+msgctxt "shipname"
+msgid "Gröde"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:55
+msgctxt "shipname"
+msgid "Habel"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:57
+msgctxt "shipname"
+msgid "Hamburger Hallig"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:59
+msgctxt "shipname"
+msgid "Helgoland"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:61
+msgctxt "shipname"
+msgid "Hever"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:63
+msgctxt "shipname"
+msgid "Hooge"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:65
+msgctxt "shipname"
+msgid "Japsand"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:67
+msgctxt "shipname"
+msgid "Kormoransand"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:69
+msgctxt "shipname"
+msgid "Langeneß"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:71
+msgctxt "shipname"
+msgid "Norderaue"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:73
+msgctxt "shipname"
+msgid "Norderoog"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:75
+msgctxt "shipname"
+msgid "Norderoogsand"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:77
+msgctxt "shipname"
+msgid "Nordstrand"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:79
+msgctxt "shipname"
+msgid "Nordstrandischmoor"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:81
+msgctxt "shipname"
+msgid "Oland"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:83
+msgctxt "shipname"
+msgid "Pellworm"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:85
+msgctxt "shipname"
+msgid "Strand"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:87
+msgctxt "shipname"
+msgid "Süderaue"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:89
+msgctxt "shipname"
+msgid "Süderoog"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:91
+msgctxt "shipname"
+msgid "Süderoogsand"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:93
+msgctxt "shipname"
+msgid "Südfall"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:95
+msgctxt "shipname"
+msgid "Sylt"
+msgstr ""
+
+#: addons/new_tribe.wad/ship/init.lua:97
+msgctxt "shipname"
+msgid "Uthlande"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/headquarters.lua:11
+msgid "Headquarters"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/headquarters.lua:13
+msgid "Start the game with your headquarters only"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/init.lua:10
+msgid ""
+"A minimalistic tribe to demonstrate the possibility of creating custom "
+"tribes."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/military_capacity.lua:8
+msgctxt "newtribe_building"
+msgid "%1% soldier (+%2%)"
+msgid_plural "%1% soldiers (+%2%)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/military_capacity.lua:11
+msgctxt "newtribe_building"
+msgid "%1% soldier"
+msgid_plural "%1% soldiers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/military_capacity.lua:16
+msgctxt "newtribe_building"
+msgid "%1%(+%2%) soldier (+%3%)"
+msgid_plural "%1%(+%2%) soldiers (+%3%)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/military_capacity.lua:19
+msgctxt "newtribe_building"
+msgid "%1%(+%2%) soldier"
+msgid_plural "%1%(+%2%) soldiers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/tips.lua:4
+msgid "This is a proof-of-concept game tip for a proof-of-concept tribe."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:66
+msgctxt "ware"
+msgid "Granite is a basic building material."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:68
+msgctxt "newtribe_ware"
+msgid "The New Tribe produces granite blocks in quarries."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:78
+msgctxt "ware"
+msgid ""
+"Logs are an important basic building material. They are produced by felling "
+"trees."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:80
+msgctxt "newtribe_ware"
+msgid ""
+"NewTribe woodcutters fell the trees; foresters take care of the supply of "
+"trees."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:90
+msgctxt "newtribe_ware"
+msgid "The New Tribe produces reed in reed yards. Roofs are thatched with it."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:102
+msgctxt "newtribe_ware"
+msgid ""
+"Besides bread and meat, fish is also a foodstuff for the New Tribe. Fish are "
+"used in the training sites (colosseum)."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:112
+msgctxt "ware"
+msgid ""
+"Meat contains a lot of energy, and it is obtained from wild game taken by "
+"hunters."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:122
+msgctxt "ware"
+msgid "Water is the essence of life!"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:124
+msgctxt "newtribe_ware"
+msgid ""
+"Water is used in the bakery. The donkey farm also needs to be supplied with "
+"water."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:134
+msgctxt "ware"
+msgid "Rye is essential for survival."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:136
+msgctxt "newtribe_ware"
+msgid ""
+"Rye is produced by farms and used by bakeries. Donkey farms also need to be "
+"supplied with rye."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:146
+msgctxt "newtribe_ware"
+msgid ""
+"The bakers of the New Tribe make really tasty bread out of rye and water. "
+"Bread is consumed at the training sites (colosseum)."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:159
+msgctxt "newtribe_ware"
+msgid "All workers need a tool!"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:175
+msgctxt "newtribe_worker"
+msgid "Carries items along your roads."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:182
+msgctxt "newtribe_worker"
+msgid "Ships wares across narrow rivers."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:191
+msgctxt "newtribe_worker"
+msgid ""
+"Donkeys help to carry items along busy roads. They are reared in a donkey "
+"farm."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:198
+msgctxt "newtribe_worker"
+msgid ""
+"Breeds cute and helpful donkeys for adding them to the transportation system."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:208
+msgctxt "newtribe_worker"
+msgid "Cuts blocks of granite out of rocks in the vicinity."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:215
+msgctxt "newtribe_worker"
+msgid "Fells trees."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:222
+msgctxt "newtribe_worker"
+msgid "Plants trees."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:229
+msgctxt "newtribe_worker"
+msgid "Works at construction sites to raise new buildings."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:236
+msgctxt "newtribe_worker"
+msgid "Works at the shipyard and constructs new ships."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:246
+msgctxt "newtribe_worker"
+msgid "Catches fish in the sea."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:253
+msgctxt "newtribe_worker"
+msgid "Breeds fish."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:260
+msgctxt "newtribe_worker"
+msgid "The hunter brings fresh, raw meat to the colonists."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:267
+msgctxt "newtribe_worker"
+msgid "Plants rye and reed fields."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:274
+msgctxt "newtribe_worker"
+msgid "Bakes bread for workers."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:284
+msgctxt "newtribe_worker"
+msgid "Discovers resources for mining."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:294
+msgctxt "newtribe_worker"
+msgid "Produces tools for the workers."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:305
+msgctxt "newtribe_worker"
+msgid "Defend and Conquer!"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:312
+msgctxt "newtribe_worker"
+msgid "Trains the soldiers."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:319
+msgctxt "newtribe_worker"
+msgid ""
+"Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:331
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:338
+msgid "The remains of a destroyed building."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:345
+msgid "This field has just been planted."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:352
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:359
+msgid "This field is growing."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:366
+msgid "This field is ready for harvesting."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:373
+msgid "There are no resources in the ground here."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:380
+msgid "There is water in the ground here that can be pulled up by a well."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:387
+msgid "A ship is being constructed at this site."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:394
+msgid "This reed field has just been planted."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:401
+msgid "This reed field is growing."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:408
+msgid ""
+"This reed field is flowering. Honey can be produced from it by a beekeeper."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:415
+msgid "This reed field is ready for harvesting."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:423
+msgid "The remains of an old tree."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:430
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:437
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:444
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:451
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:458
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:465
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:472
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:479
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:486
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:493
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:500
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:507
+msgid ""
+"This tree is only planted by the amazon tribe but can be harvested for logs."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:519
+msgctxt "newtribe_building"
+msgid "Accommodation for your people. Also stores your wares and tools."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:521
+msgctxt "newtribe_building"
+msgid "The headquarters is your main building."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:528
+msgctxt "newtribe_building"
+msgid ""
+"Serves as a base for overseas colonization and trade. Also stores your "
+"soldiers, wares and tools."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:537
+msgctxt "newtribe_building"
+msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:539
+msgctxt "newtribe_building"
+msgid "The quarry needs rocks to cut within the work area."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:546
+msgctxt "building"
+msgid "Fells trees in the surrounding area and processes them into logs."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:548
+msgctxt "newtribe_building"
+msgid "The woodcutter's house needs trees to fell within the work area."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:555
+msgctxt "building"
+msgid "Plants trees in the surrounding area."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:557
+msgctxt "newtribe_building"
+msgid ""
+"The forester’s house needs free space within the work area to plant the "
+"trees."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:564
+msgctxt "newtribe_building"
+msgid "Fishes on the coast near the fisher’s house."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:566
+msgctxt "newtribe_building"
+msgid "The fisher’s house needs water full of fish within the work area."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:573
+msgctxt "newtribe_building"
+msgid "Replenishes the fishing grounds."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:575
+msgctxt "newtribe_building"
+msgid ""
+"The fishbreeder’s house needs water with some fish within the work area."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:582
+msgctxt "building"
+msgid "Hunts animals to produce meat."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:584
+msgctxt "newtribe_building"
+msgid "The hunter’s house needs animals to hunt within the work area."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:591
+msgctxt "building"
+msgid "Draws water out of the deep."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:598
+msgctxt "building"
+msgid "Explores unknown territory."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:607
+msgctxt "building"
+msgid "Plants and harvests reed."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:614
+msgctxt "building"
+msgid "Forges all the tools that your workers need."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:621
+msgctxt "newtribe_building"
+msgid "Bakes bread for soldiers and miners alike."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:623
+msgctxt "newtribe_building"
+msgid "The baker needs %1% on average to bake a loaf of bread."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:630
+msgctxt "newtribe_building"
+msgid "Equips recruits and trains them as soldiers."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:639
+msgctxt "newtribe_building"
+msgid ""
+"Breeds cute and helpful donkeys for adding them to the transportation system."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:646
+msgctxt "building"
+msgid "Sows and harvests rye."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:648
+msgctxt "newtribe_building"
+msgid "The farmer needs %1% on average to sow and harvest a sheaf of rye."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:657
+msgctxt "newtribe_building"
+msgid "Trains soldiers in ‘Evade’."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:659
+msgctxt "newtribe_building"
+msgid ""
+"‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
+"remain totally unaffected."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:662
+msgctxt "newtribe_building"
+msgid ""
+"NewTribe soldiers cannot be trained in ‘Defense’, ‘Attack’, and ‘Health’ and "
+"will remain at the levels with which they came."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:671
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:680
+msgctxt "building"
+msgid "Garrisons soldiers to expand your territory."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:673
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:682
+msgctxt "building"
+msgid ""
+"If you’re low on soldiers to occupy new military sites, use the downward "
+"arrow button to decrease the capacity. You can also click on a soldier to "
+"send him away."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:691
+msgctxt "building"
+msgid "Builds ferries."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:693
+msgctxt "building"
+msgid "Needs water nearby."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:700
+msgctxt "building"
+msgid ""
+"Constructs ships that are used for overseas colonization and for trading "
+"between ports."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:709
+msgctxt "building"
+msgid "‘Don’t swear at the builder who is short of building materials.’"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:711
+msgctxt "building"
+msgid "Proverb widely used for impossible tasks of any kind"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:713
+msgctxt "building"
+msgid "A new building is being built at this construction site."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:720
+msgctxt "building"
+msgid "‘New paths will appear when you are willing to tear down the old.’"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:722
+msgctxt "building"
+msgid "Proverb"
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:724
+msgctxt "building"
+msgid ""
+"A building is being dismantled at this dismantle site, returning some of the "
+"resources that were used during this building’s construction to your tribe’s "
+"stores."
+msgstr ""
+
+#: addons/new_tribe.wad/wares/bread/init.lua:8
+msgctxt "newtribe_ware"
+msgid "Bread"
+msgstr ""
+
+#: addons/new_tribe.wad/wares/rye/init.lua:8
+msgctxt "ware"
+msgid "Rye"
+msgstr ""
+
+#: addons/new_tribe.wad/wares/tool/init.lua:8
+msgctxt "ware"
+msgid "Tool"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/baker/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Baker"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/builder/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Builder"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/carrier/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Carrier"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/donkey/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Donkey"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/donkeybreeder/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Donkey Breeder"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/farmer/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Farmer"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/ferry/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Ferry"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/fishbreeder/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Fish Breeder"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/fisher/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Fisher"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/forester/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Forester"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/geologist/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Geologist"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/hunter/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Hunter"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/scout/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Scout"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/shipwright/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Shipwright"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/soldier/init.lua:82
+msgctxt "newtribe_worker"
+msgid "Soldier"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/stonecutter/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Stonecutter"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/toolsmith/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Toolsmith"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/trainer/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Trainer"
+msgstr ""
+
+#: addons/new_tribe.wad/workers/woodcutter/init.lua:8
+msgctxt "newtribe_worker"
+msgid "Woodcutter"
+msgstr ""
