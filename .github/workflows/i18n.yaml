@@ -18,7 +18,6 @@ jobs:
     - name: Synchronizing translations
       run: |
         echo "${{ secrets.TXAUTH }}" > ~/.transifexrc
-        chmod 400 ~/.transifexrc
         git config --global user.name "The Widelands Translations Bot"
         git config --global user.email "bunnybot@widelands.org"
         javac *.java
