@@ -74,9 +74,7 @@ A GitHub action periodically syncs the translations with Transifex and compiles 
 
 #### Notes
 
-If you want to update an existing add-on, or submit new or updated translations, open a pull request with this change and make sure you followed the steps described above.
-
-`buildcats.sh` usually prints some errors which are false alarms and can be ignored.
+If you want to update an existing add-on, or submit new or updated translations, open a pull request with this change and make sure you followed the steps described above. In particular, be sure to re-run `java UpdateList` after *every* change (even small ones!).
 
 ### License
 

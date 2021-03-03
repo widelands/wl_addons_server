@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-03 15:37+0100\n"
+"PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Language-Team: Hungarian (https://www.transifex.com/widelands/teams/35159/"
+"hu/)\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/frisians-economy-ultra.wad/addon:2
+msgid "Frisians Economy Ultra"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/addon:3
+msgid ""
+"Very complex economy model for the frisian tribe with numerous new wares and "
+"buildings."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:6
+msgctxt "frisians_building"
+msgid "Barley Mill"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:49
+msgid "grinding barley"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/miller/init.lua:6
+msgctxt "frisians_worker"
+msgid "Miller"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:10
+msgid "This rye field has been harvested."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:13
+msgid "This rye field is ready for harvesting."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:16
+msgid "This rye field is flowering. Beekeepers can use it to produce honey."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:19
+msgid "This rye field is growing."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:22
+msgid "This rye field has just been planted."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:30
+msgid "Salt is washed from the sea and used to conserve meat and fish."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:33
+msgid "Rye is used to bake bread. It needs to be ground into flour first."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:36
+msgid "After being ground to flour, rye can be used to bake bread."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:39
+msgid "After being ground to flour, barley can be used to bake bread."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:65
+msgid "The salter washes salt from the shores of the sea."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:68
+msgid "The miller grinds barley and rye into flour."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:76
+msgid "The salter working at the salt works washes salt from the sea."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:77
+msgid "The salter needs water within its work area."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:80
+msgid "The barley mill grinds barley into barley flour."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:83
+msgid "The rye mill grinds rye into rye flour."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:86
+msgid "The rye farm sows and harvests rye."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:94
+msgid "smoking fish"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:101
+msgid "smoking meat"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:109
+#: addons/frisians-economy-ultra.wad/postload.lua:145
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:43
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:39
+msgid "working"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:118
+#: addons/frisians-economy-ultra.wad/postload.lua:138
+msgid "baking bread"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:131
+msgid "baking honey bread"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:6
+msgctxt "frisians_building"
+msgid "Rye Farm"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:51
+msgid "planting rye"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:59
+msgid "harvesting rye"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:68
+msgid "No Fields"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
+msgid "Out of Fields"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
+msgctxt "frisians_building"
+msgid ""
+"The farmer working at this rye farm has no cleared soil to plant his seeds."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:6
+msgctxt "frisians_building"
+msgid "Rye Mill"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:49
+msgid "grinding rye"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (harvested)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/medium/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (medium)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/ripe/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (ripe)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/small/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (small)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/ryefield/tiny/init.lua:6
+msgctxt "immovable"
+msgid "Rye Field (tiny)"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:6
+msgctxt "frisians_building"
+msgid "Salt Works"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/salter/init.lua:6
+msgctxt "frisians_worker"
+msgid "Salter"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/wares/init.lua:6
+msgctxt "ware"
+msgid "Barley Flour"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/wares/init.lua:21
+msgctxt "ware"
+msgid "Rye"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/wares/init.lua:36
+msgctxt "ware"
+msgid "Rye Flour"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/wares/init.lua:51
+msgctxt "ware"
+msgid "Salt"
+msgstr ""
