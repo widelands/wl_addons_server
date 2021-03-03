@@ -60,28 +60,17 @@ To verify a new add-on (or an existing one after an update), read the code caref
 
 If the add-on was not up for translation on Transifex yet, you need to follow these steps afterwards to ensure that it can be translated:
 - Go to the repository's Actions tab, select the 'Update Translations' action, and trigger a workflow run on the master branch.
-- Wait until the workflow completed (should take only a minute).
-- Head over to https://www.transifex.com/widelands/widelands-addons/settings/integrations/
-- Go to ··· → Edit Settings → Select Files
-- Create a new entry for each new add-on. You can use the existing entries as templates. The entry should look like this (where `NAME` is the add-on’s internal name):
-```
-  - filter_type: file
-    file_format: PO
-    source_language: en
-    source_file: 'po/NAME.wad/NAME.wad.pot'
-    translation_files_expression: 'po/NAME.wad/<lang>.po'
-```
-- Switch to the project’s Resources tab and wait until the new resource(s) is/are available. Then, edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!
+- Wait until the workflow completed (should take only a few minutes).
+- Head over to https://www.transifex.com/widelands/widelands-addons/content/ and wait until the new resource(s) is/are available.
+- Edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!
 - Finally, set the Priority of all new resources. Add-ons officially provided by the Widelands Development Team get highest priority. Add-ons which have not been verified yet should not appear on Transifex in the first place, but if they do, they get the lowest priority. All other add-ons get medium priority.
 
 #### Translations
 
 Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/   
-Note that Transifex's automated translations sync will only send the translations to this repo when a resource is 100% translated in a language.
+Do not modify any of the files in `po/` manually – your changes will be discarded during the automated translation updates.
 
-Do not modify any of the files in `po/` manually.
-
-A GitHub action periodically syncs the translations with Transifex and compiles them by running `buildcats.sh`. **Do not** run this script manually! If you have to do it anyway for some reason, do this **only** on the master branch.
+A GitHub action periodically syncs the translations with Transifex and compiles them by running `setup_tx.sh` and `buildcats.sh`. **Do not** run these scripts manually! If you have to do it anyway for some reason, do this **only** on the master branch.
 
 #### Notes
 
