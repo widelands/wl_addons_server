@@ -7,7 +7,7 @@ public class Buildcats {
 		for (File f : Utils.listSorted(dir)) {
 			if (f.isDirectory()) {
 				recurse(out, f);
-			} else if (f.getName().equalsIgnoreCase("elemental") || f.getName().toLowerCase().endsWith("lua")) {
+			} else if (f.getName().equalsIgnoreCase("elemental") || f.getName().equalsIgnoreCase("dirnames") || f.getName().toLowerCase().endsWith("lua")) {
 				Runtime.getRuntime().exec(new String[] {"xgettext",
 						"-k_",
 						"--keyword=_",
