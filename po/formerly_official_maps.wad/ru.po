@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Vasiliy Anosov <basil.snowman@gmail.com>, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-03 14:43+0000\n"
+"POT-Creation-Date: 2021-03-06 12:23+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Vasiliy Anosov <basil.snowman@gmail.com>, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -20,49 +24,66 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: Maps/Sun_of_Fire.wmf/elemental:8 Official
-#: addons/formerly_official_maps.wad/Formerly
-msgid "The Ancient Sun of Fire"
+#: addons/formerly_official_maps.wad/Formerly_Official_Maps/Impact.wmf/elemental:9
+msgid "Impact"
 msgstr ""
 
-#: Maps/Sun_of_Fire.wmf/elemental:10 Official
-#: addons/formerly_official_maps.wad/Formerly
+#: addons/formerly_official_maps.wad/Formerly_Official_Maps/Impact.wmf/elemental:11
+msgid ""
+"After an impact of an Asteroid and the following harsh winter, three Isles "
+"are connected by Ice and stone, setting an end to the peaceful coexistence "
+"of three tribes."
+msgstr ""
+
+#: addons/formerly_official_maps.wad/Formerly_Official_Maps/Sun_of_Fire.wmf/elemental:8
+msgid "The Ancient Sun of Fire"
+msgstr "Древнее солнце огня"
+
+#: addons/formerly_official_maps.wad/Formerly_Official_Maps/Sun_of_Fire.wmf/elemental:10
 msgid ""
 "For hundreds of years, this island was kept as a sanctuary of the Gods. No "
 "human ever ventured to set a foot on it. But now that a tribe had finally "
 "been barefaced enough to settle on the coast of that island, a lot of others "
 "followed in its wake."
 msgstr ""
+"Сотни лет этот остров был святилищем Богов. Ни один человек никогда не "
+"осмеливался ступить на него ногой. Но теперь, когда племя, наконец, решило  "
+"поселиться на побережье этого острова, многие другие племена последовали за "
+"ним."
 
-#: Maps/Sun_of_Fire.wmf/elemental:11 Official
-#: addons/formerly_official_maps.wad/Formerly
+#: addons/formerly_official_maps.wad/Formerly_Official_Maps/Sun_of_Fire.wmf/elemental:11
 msgid "Start positions are clockwise"
-msgstr ""
+msgstr "Начальные позиции по часовой стрелке"
 
-#: addons/formerly_official_maps.wad/Formerly Official
-#: Maps/Volcanic_Winter.wmf/elemental:8
+#: addons/formerly_official_maps.wad/Formerly_Official_Maps/Volcanic_Winter.wmf/elemental:8
 msgid "Volcanic Winter"
-msgstr ""
+msgstr "Вулканическая зима"
 
-#: addons/formerly_official_maps.wad/Formerly Official
-#: Maps/Volcanic_Winter.wmf/elemental:10
+#: addons/formerly_official_maps.wad/Formerly_Official_Maps/Volcanic_Winter.wmf/elemental:10
 msgid ""
 "In the middle of summer, a series of volcanic eruptions drew the winter in. "
 "Suddenly, the sun seemed to be gone and the only light and heat sources left "
 "were those that enforced this dramatic change. Continents, oceans and seas "
 "are frozen now, only the volcanic islands seem to be left as habitable land."
 msgstr ""
+"В середине лета из-за серии извержений вулканов наступила зима. Внезапно "
+"солнце, казалось, исчезло и единственными источниками света и тепла остались "
+"те самые вулканы, которые и вызвали эту драматическую перемену. Континенты, "
+"океаны и моря замерзли и только вулканические острова, кажется, остались "
+"пригодны для обитания."
 
 #: addons/formerly_official_maps.wad/addon:2
 msgid "Formerly Official Maps"
-msgstr ""
+msgstr "Бывшие официальные карты"
 
 #: addons/formerly_official_maps.wad/addon:3
 msgid ""
 "This map set contains all maps that were shipped with the official game at "
 "some time but since removed from the map pool."
 msgstr ""
+"Этот набор карт содержит все карты, которые были отправлены вместе с "
+"официальной игрой в какое-то время, но с тех пор удалены из пула карт."
 
 #: addons/formerly_official_maps.wad/addon:4
 msgid "The Widelands Development Team"
-msgstr ""
+msgstr "Команда разработчиков Widelands"
