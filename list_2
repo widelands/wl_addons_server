@@ -19,7 +19,7 @@ Nordfriese
 0
 0
 1.1.1
-12
+13
 12148
 win_condition
 0
@@ -72,7 +72,7 @@ fdcf1047479a0cf8db298dd216bb6bad
 36af8a0c5975f8bbb55901ea0bba44d8
 c93360ef7976c08e899dda89699b5114
 dab3bb1d52a3b036a5c0668e13e36f70
-3852f88263032c9b1f83c041546a76a0
+5dd18707d9870c445a05901b175c2fda
 214484fc4f67ac040be59a0c1a54dc19
 07a6f87e79c0b2af8c0924750f8204e6
 0
@@ -170,79 +170,80 @@ Nordfriese
 0
 0
 0
-1.0.2
+1.0.3
 12
-6029111
+6029153
 maps
 0
 9
-Challenge Maps
-Challenge Maps/The_Great_Escape.wmf
-Challenge Maps/The_Great_Escape.wmf/binary
-Challenge Maps/concentric_rings.wmf
-Challenge Maps/concentric_rings.wmf/binary
-Challenge Maps/dust_in_the_wind.wmf
-Challenge Maps/dust_in_the_wind.wmf/binary
-Challenge Maps/to_make_the_desert_bloom.wmf
-Challenge Maps/to_make_the_desert_bloom.wmf/binary
-57
-Challenge Maps/The_Great_Escape.wmf/binary/building
-Challenge Maps/The_Great_Escape.wmf/binary/exploration
-Challenge Maps/The_Great_Escape.wmf/binary/flag
-Challenge Maps/The_Great_Escape.wmf/binary/heights
-Challenge Maps/The_Great_Escape.wmf/binary/mapobjects
-Challenge Maps/The_Great_Escape.wmf/binary/node_ownership
-Challenge Maps/The_Great_Escape.wmf/binary/resource
-Challenge Maps/The_Great_Escape.wmf/binary/road
-Challenge Maps/The_Great_Escape.wmf/binary/terrain
-Challenge Maps/The_Great_Escape.wmf/elemental
-Challenge Maps/The_Great_Escape.wmf/extra_data
-Challenge Maps/The_Great_Escape.wmf/minimap.png
-Challenge Maps/The_Great_Escape.wmf/objective
-Challenge Maps/The_Great_Escape.wmf/player_names
-Challenge Maps/The_Great_Escape.wmf/player_position
-Challenge Maps/The_Great_Escape.wmf/port_spaces
-Challenge Maps/The_Great_Escape.wmf/version
-Challenge Maps/concentric_rings.wmf/binary/building
-Challenge Maps/concentric_rings.wmf/binary/exploration
-Challenge Maps/concentric_rings.wmf/binary/flag
-Challenge Maps/concentric_rings.wmf/binary/heights
-Challenge Maps/concentric_rings.wmf/binary/mapobjects
-Challenge Maps/concentric_rings.wmf/binary/node_ownership
-Challenge Maps/concentric_rings.wmf/binary/resource
-Challenge Maps/concentric_rings.wmf/binary/road
-Challenge Maps/concentric_rings.wmf/binary/terrain
-Challenge Maps/concentric_rings.wmf/elemental
-Challenge Maps/concentric_rings.wmf/extra_data
-Challenge Maps/concentric_rings.wmf/minimap.png
-Challenge Maps/concentric_rings.wmf/objective
-Challenge Maps/concentric_rings.wmf/player_names
-Challenge Maps/concentric_rings.wmf/player_position
-Challenge Maps/concentric_rings.wmf/port_spaces
-Challenge Maps/concentric_rings.wmf/version
-Challenge Maps/dust_in_the_wind.wmf/binary/heights
-Challenge Maps/dust_in_the_wind.wmf/binary/mapobjects
-Challenge Maps/dust_in_the_wind.wmf/binary/resource
-Challenge Maps/dust_in_the_wind.wmf/binary/terrain
-Challenge Maps/dust_in_the_wind.wmf/elemental
-Challenge Maps/dust_in_the_wind.wmf/minimap.png
-Challenge Maps/dust_in_the_wind.wmf/objective
-Challenge Maps/dust_in_the_wind.wmf/player_names
-Challenge Maps/dust_in_the_wind.wmf/player_position
-Challenge Maps/dust_in_the_wind.wmf/port_spaces
-Challenge Maps/dust_in_the_wind.wmf/version
-Challenge Maps/to_make_the_desert_bloom.wmf/binary/heights
-Challenge Maps/to_make_the_desert_bloom.wmf/binary/mapobjects
-Challenge Maps/to_make_the_desert_bloom.wmf/binary/resource
-Challenge Maps/to_make_the_desert_bloom.wmf/binary/terrain
-Challenge Maps/to_make_the_desert_bloom.wmf/elemental
-Challenge Maps/to_make_the_desert_bloom.wmf/minimap.png
-Challenge Maps/to_make_the_desert_bloom.wmf/objective
-Challenge Maps/to_make_the_desert_bloom.wmf/player_names
-Challenge Maps/to_make_the_desert_bloom.wmf/player_position
-Challenge Maps/to_make_the_desert_bloom.wmf/port_spaces
-Challenge Maps/to_make_the_desert_bloom.wmf/version
+Challenge_Maps
+Challenge_Maps/The_Great_Escape.wmf
+Challenge_Maps/The_Great_Escape.wmf/binary
+Challenge_Maps/concentric_rings.wmf
+Challenge_Maps/concentric_rings.wmf/binary
+Challenge_Maps/dust_in_the_wind.wmf
+Challenge_Maps/dust_in_the_wind.wmf/binary
+Challenge_Maps/to_make_the_desert_bloom.wmf
+Challenge_Maps/to_make_the_desert_bloom.wmf/binary
+58
+Challenge_Maps/The_Great_Escape.wmf/binary/building
+Challenge_Maps/The_Great_Escape.wmf/binary/exploration
+Challenge_Maps/The_Great_Escape.wmf/binary/flag
+Challenge_Maps/The_Great_Escape.wmf/binary/heights
+Challenge_Maps/The_Great_Escape.wmf/binary/mapobjects
+Challenge_Maps/The_Great_Escape.wmf/binary/node_ownership
+Challenge_Maps/The_Great_Escape.wmf/binary/resource
+Challenge_Maps/The_Great_Escape.wmf/binary/road
+Challenge_Maps/The_Great_Escape.wmf/binary/terrain
+Challenge_Maps/The_Great_Escape.wmf/elemental
+Challenge_Maps/The_Great_Escape.wmf/extra_data
+Challenge_Maps/The_Great_Escape.wmf/minimap.png
+Challenge_Maps/The_Great_Escape.wmf/objective
+Challenge_Maps/The_Great_Escape.wmf/player_names
+Challenge_Maps/The_Great_Escape.wmf/player_position
+Challenge_Maps/The_Great_Escape.wmf/port_spaces
+Challenge_Maps/The_Great_Escape.wmf/version
+Challenge_Maps/concentric_rings.wmf/binary/building
+Challenge_Maps/concentric_rings.wmf/binary/exploration
+Challenge_Maps/concentric_rings.wmf/binary/flag
+Challenge_Maps/concentric_rings.wmf/binary/heights
+Challenge_Maps/concentric_rings.wmf/binary/mapobjects
+Challenge_Maps/concentric_rings.wmf/binary/node_ownership
+Challenge_Maps/concentric_rings.wmf/binary/resource
+Challenge_Maps/concentric_rings.wmf/binary/road
+Challenge_Maps/concentric_rings.wmf/binary/terrain
+Challenge_Maps/concentric_rings.wmf/elemental
+Challenge_Maps/concentric_rings.wmf/extra_data
+Challenge_Maps/concentric_rings.wmf/minimap.png
+Challenge_Maps/concentric_rings.wmf/objective
+Challenge_Maps/concentric_rings.wmf/player_names
+Challenge_Maps/concentric_rings.wmf/player_position
+Challenge_Maps/concentric_rings.wmf/port_spaces
+Challenge_Maps/concentric_rings.wmf/version
+Challenge_Maps/dust_in_the_wind.wmf/binary/heights
+Challenge_Maps/dust_in_the_wind.wmf/binary/mapobjects
+Challenge_Maps/dust_in_the_wind.wmf/binary/resource
+Challenge_Maps/dust_in_the_wind.wmf/binary/terrain
+Challenge_Maps/dust_in_the_wind.wmf/elemental
+Challenge_Maps/dust_in_the_wind.wmf/minimap.png
+Challenge_Maps/dust_in_the_wind.wmf/objective
+Challenge_Maps/dust_in_the_wind.wmf/player_names
+Challenge_Maps/dust_in_the_wind.wmf/player_position
+Challenge_Maps/dust_in_the_wind.wmf/port_spaces
+Challenge_Maps/dust_in_the_wind.wmf/version
+Challenge_Maps/to_make_the_desert_bloom.wmf/binary/heights
+Challenge_Maps/to_make_the_desert_bloom.wmf/binary/mapobjects
+Challenge_Maps/to_make_the_desert_bloom.wmf/binary/resource
+Challenge_Maps/to_make_the_desert_bloom.wmf/binary/terrain
+Challenge_Maps/to_make_the_desert_bloom.wmf/elemental
+Challenge_Maps/to_make_the_desert_bloom.wmf/minimap.png
+Challenge_Maps/to_make_the_desert_bloom.wmf/objective
+Challenge_Maps/to_make_the_desert_bloom.wmf/player_names
+Challenge_Maps/to_make_the_desert_bloom.wmf/player_position
+Challenge_Maps/to_make_the_desert_bloom.wmf/port_spaces
+Challenge_Maps/to_make_the_desert_bloom.wmf/version
 addon
+dirnames
 21
 bg.mo
 ca.mo
@@ -265,7 +266,7 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-78
+79
 e4e08f84153d13e2b90db7f5f21e8bff
 8741853780dc1d81e202853d935bbc00
 966023f1bada8a31c18f3732a79d73b0
@@ -322,7 +323,8 @@ f9cd8efee91b76db598fc36cdc1cfe4d
 d180e2d90f06db45138a309f3fc9b682
 239c41481a27047743ae04ef14e9bce7
 fce7fd5d6ab7632e78efbf414d87d839
-1f4ad52ad164d308252d911536437d94
+a75cce884db668fea6a118bf3cb4e723
+64515655a8abbf86893a11ebf2519b89
 ad18231c9f68efeacba5baf83d94426a
 29edf29e6aaadd084b949ee241aeaafd
 01e8d1d85f41052215787dc25de63de8
@@ -723,61 +725,62 @@ Nordfriese
 0
 0
 0
-1.0.1
-15
-800530
+1.0.3
+17
+800591
 maps
 0
 7
-Formerly Official Maps
-Formerly Official Maps/Impact.wmf
-Formerly Official Maps/Impact.wmf/binary
-Formerly Official Maps/Sun_of_Fire.wmf
-Formerly Official Maps/Sun_of_Fire.wmf/binary
-Formerly Official Maps/Volcanic_Winter.wmf
-Formerly Official Maps/Volcanic_Winter.wmf/binary
-41
-Formerly Official Maps/Impact.wmf/binary/bob
-Formerly Official Maps/Impact.wmf/binary/bob_data
-Formerly Official Maps/Impact.wmf/binary/building
-Formerly Official Maps/Impact.wmf/binary/flag
-Formerly Official Maps/Impact.wmf/binary/heights
-Formerly Official Maps/Impact.wmf/binary/mapobjects
-Formerly Official Maps/Impact.wmf/binary/owned_fields
-Formerly Official Maps/Impact.wmf/binary/resource
-Formerly Official Maps/Impact.wmf/binary/road
-Formerly Official Maps/Impact.wmf/binary/seen_fields
-Formerly Official Maps/Impact.wmf/binary/terrain
-Formerly Official Maps/Impact.wmf/binary/ware
-Formerly Official Maps/Impact.wmf/elemental
-Formerly Official Maps/Impact.wmf/extra_data
-Formerly Official Maps/Impact.wmf/objective
-Formerly Official Maps/Impact.wmf/player_names
-Formerly Official Maps/Impact.wmf/player_position
-Formerly Official Maps/Impact.wmf/variable
-Formerly Official Maps/Sun_of_Fire.wmf/binary/heights
-Formerly Official Maps/Sun_of_Fire.wmf/binary/mapobjects
-Formerly Official Maps/Sun_of_Fire.wmf/binary/resource
-Formerly Official Maps/Sun_of_Fire.wmf/binary/terrain
-Formerly Official Maps/Sun_of_Fire.wmf/elemental
-Formerly Official Maps/Sun_of_Fire.wmf/minimap.png
-Formerly Official Maps/Sun_of_Fire.wmf/objective
-Formerly Official Maps/Sun_of_Fire.wmf/player_names
-Formerly Official Maps/Sun_of_Fire.wmf/player_position
-Formerly Official Maps/Sun_of_Fire.wmf/port_spaces
-Formerly Official Maps/Sun_of_Fire.wmf/version
-Formerly Official Maps/Volcanic_Winter.wmf/binary/heights
-Formerly Official Maps/Volcanic_Winter.wmf/binary/mapobjects
-Formerly Official Maps/Volcanic_Winter.wmf/binary/resource
-Formerly Official Maps/Volcanic_Winter.wmf/binary/terrain
-Formerly Official Maps/Volcanic_Winter.wmf/elemental
-Formerly Official Maps/Volcanic_Winter.wmf/minimap.png
-Formerly Official Maps/Volcanic_Winter.wmf/objective
-Formerly Official Maps/Volcanic_Winter.wmf/player_names
-Formerly Official Maps/Volcanic_Winter.wmf/player_position
-Formerly Official Maps/Volcanic_Winter.wmf/port_spaces
-Formerly Official Maps/Volcanic_Winter.wmf/version
+Formerly_Official_Maps
+Formerly_Official_Maps/Impact.wmf
+Formerly_Official_Maps/Impact.wmf/binary
+Formerly_Official_Maps/Sun_of_Fire.wmf
+Formerly_Official_Maps/Sun_of_Fire.wmf/binary
+Formerly_Official_Maps/Volcanic_Winter.wmf
+Formerly_Official_Maps/Volcanic_Winter.wmf/binary
+42
+Formerly_Official_Maps/Impact.wmf/binary/bob
+Formerly_Official_Maps/Impact.wmf/binary/bob_data
+Formerly_Official_Maps/Impact.wmf/binary/building
+Formerly_Official_Maps/Impact.wmf/binary/flag
+Formerly_Official_Maps/Impact.wmf/binary/heights
+Formerly_Official_Maps/Impact.wmf/binary/mapobjects
+Formerly_Official_Maps/Impact.wmf/binary/owned_fields
+Formerly_Official_Maps/Impact.wmf/binary/resource
+Formerly_Official_Maps/Impact.wmf/binary/road
+Formerly_Official_Maps/Impact.wmf/binary/seen_fields
+Formerly_Official_Maps/Impact.wmf/binary/terrain
+Formerly_Official_Maps/Impact.wmf/binary/ware
+Formerly_Official_Maps/Impact.wmf/elemental
+Formerly_Official_Maps/Impact.wmf/extra_data
+Formerly_Official_Maps/Impact.wmf/objective
+Formerly_Official_Maps/Impact.wmf/player_names
+Formerly_Official_Maps/Impact.wmf/player_position
+Formerly_Official_Maps/Impact.wmf/variable
+Formerly_Official_Maps/Sun_of_Fire.wmf/binary/heights
+Formerly_Official_Maps/Sun_of_Fire.wmf/binary/mapobjects
+Formerly_Official_Maps/Sun_of_Fire.wmf/binary/resource
+Formerly_Official_Maps/Sun_of_Fire.wmf/binary/terrain
+Formerly_Official_Maps/Sun_of_Fire.wmf/elemental
+Formerly_Official_Maps/Sun_of_Fire.wmf/minimap.png
+Formerly_Official_Maps/Sun_of_Fire.wmf/objective
+Formerly_Official_Maps/Sun_of_Fire.wmf/player_names
+Formerly_Official_Maps/Sun_of_Fire.wmf/player_position
+Formerly_Official_Maps/Sun_of_Fire.wmf/port_spaces
+Formerly_Official_Maps/Sun_of_Fire.wmf/version
+Formerly_Official_Maps/Volcanic_Winter.wmf/binary/heights
+Formerly_Official_Maps/Volcanic_Winter.wmf/binary/mapobjects
+Formerly_Official_Maps/Volcanic_Winter.wmf/binary/resource
+Formerly_Official_Maps/Volcanic_Winter.wmf/binary/terrain
+Formerly_Official_Maps/Volcanic_Winter.wmf/elemental
+Formerly_Official_Maps/Volcanic_Winter.wmf/minimap.png
+Formerly_Official_Maps/Volcanic_Winter.wmf/objective
+Formerly_Official_Maps/Volcanic_Winter.wmf/player_names
+Formerly_Official_Maps/Volcanic_Winter.wmf/player_position
+Formerly_Official_Maps/Volcanic_Winter.wmf/port_spaces
+Formerly_Official_Maps/Volcanic_Winter.wmf/version
 addon
+dirnames
 21
 bg.mo
 ca.mo
@@ -800,7 +803,7 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-62
+63
 bd62905de04eca8db85fa3d03307225c
 f8aa81c5165bb81ba2568df4c7678f38
 c653c77b11eb9ea5ac31faa62b705baa
@@ -813,7 +816,7 @@ c4d947bbbdd9d1e563aff7a5da846887
 9daa742ac5a640de498c03ef2a16e68c
 fa32a310fd4ef0312eb26801fe8c2cd1
 3eb55bc3b2773e83a35016ced1c757c2
-bd4f6196737a5c6e27806be563a6d518
+353bfaab238643d9fd1e3d4917832fdd
 baa52e16a92e2863d1cc792149e0200f
 baa52e16a92e2863d1cc792149e0200f
 6fae4c8881a2d98440ff9682d95607d6
@@ -841,7 +844,8 @@ fdc39d04be201964c602f94576d3912f
 2812b487fa013306039eca883c67d1a8
 08cf1af32e6c3022cd01a26239b3da01
 ee3f2919cd50fb639cf37e1d9a576a26
-02620dc64c47017e79c3652ce57cf67a
+184ca40ad8fca251cc6a0c6022ba1b5a
+4edcf1d94160a03595594e84fe81830d
 ad18231c9f68efeacba5baf83d94426a
 29edf29e6aaadd084b949ee241aeaafd
 de2dffd1094be7a0583dce950fc17f66
@@ -856,11 +860,11 @@ b4891ba4c2d6c93923eb8441aa42d646
 f8de981b4322e613820ca1f26b7942ed
 30210d34544991e138ed1d705b10c7fa
 fdcf1047479a0cf8db298dd216bb6bad
-b80e1713b4a024c38750560d300b6f13
+8888c660477ee5a476b882bb9c9e7f48
 36af8a0c5975f8bbb55901ea0bba44d8
 c93360ef7976c08e899dda89699b5114
 dab3bb1d52a3b036a5c0668e13e36f70
-3852f88263032c9b1f83c041546a76a0
+88cd560c7db4b4bbb585bbedf32531b5
 214484fc4f67ac040be59a0c1a54dc19
 07a6f87e79c0b2af8c0924750f8204e6
 0
