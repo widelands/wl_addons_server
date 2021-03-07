@@ -1,21 +1,34 @@
 # wl_addons_server
-Repository faking an add-ons server for [@widelands](https://github.com/widelands/widelands). Contains a handful of example add-ons for Widelands.
-
-I don’t know how long this "server" will be in use, so I’d better write some brief documentation about maintenance here.
-
+Repository providing an add-ons server for [@widelands](https://github.com/widelands/widelands).
 ---
 
 If you want to contribute a new add-on, [information how to create add-ons can be found here.](https://github.com/widelands/widelands/blob/master/doc/sphinx/source/add-ons.rst)
 
-If you do not wish to create a pull request for a new add-on here, it is also possible to submit add-ons on the forum: https://www.widelands.org/forum/topic/5073
+New add-ons, or upgrades for existing ones, as well as new or updated screenshots, can be uploaded to the server from the in-game add-ons manager (Widelands 1.1 or newer). Alternatively it is possible to submit them by creating a pull request here. If you do not wish to do this, it is also possible to submit add-ons and screenshots on the forum: https://www.widelands.org/forum/topic/5073
 
 ### Prerequisites
 
-Before adding add-ons to this repository be sure a java development kit (JDK) is installed to compile the UpdateList.java script.
+Before running the server or adding add-ons to this repository be sure a java development kit (JDK) is installed to compile the UpdateList.java script.
 
 After the installation of the JDK run `javac *.java` in the base folder.
 
+### The server
+
+Starting the add-ons webserver is as simple as typing
+```
+javac *.java
+java Server
+```
+
+This will launch the webserver on port 7399 of your machine. In order to connect to this server from the game, run Widelands with the commandline parameter `--addon_server_ip=127.0.0.1` (where you replace `127.0.0.1` with the IP of the machine on which you're running the server).
+
+The server protocol is documented in `Server.java`.
+
+Widelands version 1.0 and older does not connect to the server. It instead downloads and parses the `list*` files in this repository and then downloads each file belonging to an add-on separately. Every change to an add-on must therefore be reflected in the `list*` files so that the full add-on selection is available also to Widelands 1.0 users.
+
 ### Adding / updating an add-on
+
+This section explains how to add an add-on *manually* to this repository. It is recommended to use the in-game add-ons manager instead, which will take care of everything automatically.
 
 #### Add-On
 
@@ -74,7 +87,7 @@ A GitHub action periodically syncs the translations with Transifex and compiles 
 
 #### Notes
 
-If you want to update an existing add-on, or submit new or updated translations, open a pull request with this change and make sure you followed the steps described above. In particular, be sure to re-run `java UpdateList` after *every* change (even small ones!).
+If you want to submit a new add-on or update an existing one without using the in-game add-ons manager, open a pull request with this change and make sure you followed the steps described above. In particular, be sure to re-run `java UpdateList` after *every* change (even small ones!).
 
 ### License
 

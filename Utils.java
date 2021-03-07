@@ -63,20 +63,23 @@ public class Utils {
 		return profile;
 	}
 
-	synchronized public static void editMetadata(String addon, TreeMap<String, Value> changes) throws Exception {
-		File f = new File("metadata", addon);
-		TreeMap<String, Value> metadata = readProfile(f, addon);
-		metadata.putAll(changes);
+	synchronized public static void editProfile(File f, String textdomain, TreeMap<String, Value> changes) throws Exception {
+		TreeMap<String, Value> profile = readProfile(f, textdomain);
+		profile.putAll(changes);
 		PrintStream out = new PrintStream(f);
-		for (String key : metadata.keySet()) {
+		for (String key : profile.keySet()) {
 			out.print(key);
 			out.print("=");
-			if (metadata.get(key).textdomain != null) out.print("_");
+			if (profile.get(key).textdomain != null) out.print("_");
 			out.print("\"");
-			out.print(metadata.get(key).value);
+			out.print(profile.get(key).value);
 			out.print("\"\n");
 		}
 		out.close();
+	}
+
+	synchronized public static void editMetadata(String addon, TreeMap<String, Value> changes) throws Exception {
+		editProfile(new File("metadata", addon), addon, changes);
 	}
 
 	synchronized public static void initMetadata(String addon, String uploader) throws Exception {

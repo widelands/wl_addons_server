@@ -170,6 +170,20 @@ public class Server {
 		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_SUBMIT,
+
+		/** 
+		 * CMD_SUBMIT_SCREENSHOT name filename filesize checksum whitespaces description 
+		 * Upload an add-on.
+		 * Arg 1: Add-on name
+		 * Arg 2: Filename
+		 * Arg 3: Filesize in bytes
+		 * Arg 4: The file's checksum
+		 * Arg 5: Number of whitespaces in the description
+		 * Arg 6: Screenshot description
+		 * Then, on the next line, the content of the image file like for CMD_SCREENSHOT, terminated by ENDOFSTREAM\n.
+		 * Returns: ENDOFSTREAM\n or an error message\n
+		 */
+		CMD_SUBMIT_SCREENSHOT,
 	}
 
 	public static class ProtocolException extends RuntimeException {
@@ -301,12 +315,46 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			}
+			case CMD_SUBMIT_SCREENSHOT: {  // Args: name filename filesize checksum whitespaces description 
+				if (username.isEmpty()) {
+					throw new ProtocolException("Wrong username or password");
+				}
+				File tempDir = new File("temp/screenies", cmd[1]);
+				while (tempDir.exists()) tempDir = new File("temp/screenies", tempDir.getName() + "_");
+				tempDir.mkdirs();
+				File file = new File(tempDir, cmd[2]);
+				long size = Long.valueOf(cmd[3]);
+				PrintStream stream = new PrintStream(file);
+				for (long l = 0; l < size; ++l) {
+					int b = in.read();
+					if (b < 0) {
+						doDelete(tempDir);
+						throw new ProtocolException("Stream ended unexpectedly while reading file");
+					}
+					stream.write(b);
+				}
+				stream.close();
+				String checksum = UpdateList.checksum(file);
+				if (!checksum.equals(cmd[4])) {
+					doDelete(tempDir);
+					throw new ProtocolException("Checksum mismatch: expected " + cmd[4] + ", found " + checksum);
+				}
+				File result = new File("screenshots/" + cmd[1], cmd[2]);
+				if (result.exists()) doDelete(result);
+				tempDir.renameTo​(result);
+				TreeMap<String, Utils.Value> ch = new TreeMap<>();
+				int whitespaces = Integer.valueOf(cmd[5]);
+				String msg = cmd[6];
+				for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[7 + w];
+				ch.put(cmd[2], new Utils.Value(cmd[2], msg, cmd[1]));
+				Utils.editProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1], ch);
+			}
 			case CMD_SUBMIT: {  // Args: name
 				if (username.isEmpty()) {
 					throw new ProtocolException("Wrong username or password");
 				}
-				File tempDir = new File("temp", cmd[1]);
-				while (tempDir.exists()) tempDir = new File("temp", tempDir.getName() + "_");
+				File tempDir = new File("temp/submit", cmd[1]);
+				while (tempDir.exists()) tempDir = new File("temp/submit", tempDir.getName() + "_");
 				tempDir.mkdirs();
 				final int nrDirs = Integer.valueOf(readLine(in));
 				File[] dirnames = new File[nrDirs];
