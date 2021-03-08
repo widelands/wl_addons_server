@@ -42,7 +42,11 @@ public class Utils {
 		if (_staticprofiles.containsKey(f)) return _staticprofiles.get(f);
 
 		TreeMap<String, Value> profile = new TreeMap<>();
-		if (!f.isFile()) return profile;
+		if (!f.isFile()) {
+			_staticprofiles.put(f, profile);
+			return profile;
+		}
+
 		for (String line : Files.readAllLines(f.toPath())) {
 			if (line.trim().startsWith("#")) continue;
 			String[] str = line.split("=");
@@ -66,6 +70,7 @@ public class Utils {
 	synchronized public static void editProfile(File f, String textdomain, TreeMap<String, Value> changes) throws Exception {
 		TreeMap<String, Value> profile = readProfile(f, textdomain);
 		profile.putAll(changes);
+		f.getParentFile().mkdirs();
 		PrintStream out = new PrintStream(f);
 		for (String key : profile.keySet()) {
 			out.print(key);

@@ -7,20 +7,20 @@ public class Server {
 	/*
 	 * After the first contact, the client must send the following info:
 	 *  - Protocol version
-	 *  - \n'
+	 *  - \n
 	 *  - Language name
-	 *  - \n'
+	 *  - \n
 	 *  - Username (or "" for no user)
-	 *  - \n'
+	 *  - \n
 	 *  - Password hash (or "" for no user)
-	 *  - '\n'
+	 *  - \n
 	 *  - ENDOFSTREAM\n
 	 * The server then replies with ENDOFSTREAM\n.
 	 *
 	 * The only currently supported protocol version is 4. All documentation here refers to version 4.
 	 *
 	 * All arguments to commands are whitespace-terminated strings.
-	 * The return value is a '\n'-terminated string.
+	 * The return value is a \n-terminated string.
 	 */
 	public static enum CMD {
 		/**
@@ -28,8 +28,8 @@ public class Server {
 		 * List all available add-on names.
 		 * Returns:
 		 * - Number N of add-ons
-		 * - For each add-on: '\n' followed by the add-on's internal name.
-		 * - '\n'
+		 * - For each add-on: \n followed by the add-on's internal name.
+		 * - \n
 		 * - ENDOFSTREAM\n
 		 */
 		CMD_LIST,
@@ -39,38 +39,38 @@ public class Server {
 		 * Returns detailed info about a specific addon.
 		 * Arg 1: Add-on name
 		 * Returns:
-		 *  - unlocalized name, '\n'
-		 *  - localized name, '\n'
-		 *  - unlocalized description, '\n'
-		 *  - localized description, '\n'
-		 *  - unlocalized author, '\n'
-		 *  - localized author, '\n'
-		 *  - uploader name, '\n'
-		 *  - add-on version string, '\n'
-		 *  - i18n version string, '\n'
-		 *  - category string, '\n'
-		 *  - comma-separated list of requirements, '\n'
-		 *  - minimum Widelands version, '\n'
-		 *  - maximum Widelands version, '\n'
-		 *  - sync safety state ('true' if sync-safe), '\n'
-		 *  - number of screenshots, '\n'
-		 *  - for each screenshot: name, '\n', localized description, '\n'
-		 *  - total filesize, '\n'
-		 *  - upload timestamp, '\n'
-		 *  - download count, '\n'
-		 *  - number of '1' votes, '\n'
+		 *  - unlocalized name, \n
+		 *  - localized name, \n
+		 *  - unlocalized description, \n
+		 *  - localized description, \n
+		 *  - unlocalized author, \n
+		 *  - localized author, \n
+		 *  - uploader name, \n
+		 *  - add-on version string, \n
+		 *  - i18n version string, \n
+		 *  - category string, \n
+		 *  - comma-separated list of requirements, \n
+		 *  - minimum Widelands version, \n
+		 *  - maximum Widelands version, \n
+		 *  - sync safety state ('true' if sync-safe), \n
+		 *  - number of screenshots, \n
+		 *  - for each screenshot: name, \n, localized description, \n
+		 *  - total filesize, \n
+		 *  - upload timestamp, \n
+		 *  - download count, \n
+		 *  - number of '1' votes, \n
 		 *  - ...
-		 *  - number of '10' votes, '\n'
-		 *  - number of comments, '\n'
+		 *  - number of '10' votes, \n
+		 *  - number of comments, \n
 		 *  - for each comment:
-		 *      - name, '\n',
-		 *      - timestamp, '\n',
-		 *      - version, '\n',
-		 *      - number of '\n' characters in the message, '\n'
-		 *      - message, '\n'
-		 *  - "verified" or "unchecked", '\n'
-		 *  - icon checksum (0 for no icon), '\n'
-		 *  - icon filesize (0 for no icon), '\n'
+		 *      - name, \n,
+		 *      - timestamp, \n,
+		 *      - version, \n,
+		 *      - number of \n characters in the message, \n
+		 *      - message, \n
+		 *  - "verified" or "unchecked", \n
+		 *  - icon checksum (0 for no icon), \n
+		 *  - icon filesize (0 for no icon), \n
 		 *  - icon file as a byte stream
 		 *  - ENDOFSTREAM\n
 		 */
@@ -82,18 +82,18 @@ public class Server {
 		 * Arg 1: Add-on name
 		 * Returns:
 		 *   - Integer string denoting number D of directories
-		 *   - '\n'
-		 *   - D Directory names (with full paths), each followed by '\n'
+		 *   - \n
+		 *   - D Directory names (with full paths), each followed by \n
 		 *   - For each of the D directories:
 		 *     - Number F of regular files in the directory
-		 *     - '\n'
+		 *     - \n
 		 *     - For each of the F files in the directory:
 		 *       - filename
-		 *       - '\n'
+		 *       - \n
 		 *       - checksum
-		 *       - '\n'
+		 *       - \n
 		 *       - filesize in bytes
-		 *       - '\n'
+		 *       - \n
 		 *       - The content of the file as a byte stream
 		 *   - ENDOFSTREAM\n
 		 */
@@ -105,16 +105,16 @@ public class Server {
 		 * Arg 1: Add-on name
 		 * Returns:
 		 *   - Integer string denoting number T of translations
-		 *   - '\n'
+		 *   - \n
 		 *   - For each of the T languages:
 		 *     - <language_name>.mo
-		 *     - '\n'
+		 *     - \n
 		 *     - checksum
-		 *     - '\n'
+		 *     - \n
 		 *     - MO file size in bytes
-		 *     - '\n'
+		 *     - \n
 		 *     - The content of the MO file as a byte stream
-		 *   - '\n'
+		 *   - \n
 		 *   - ENDOFSTREAM\n
 		 */
 		CMD_I18N,
@@ -126,7 +126,7 @@ public class Server {
 		 * Arg 2: Screenshot name
 		 * Returns:
 		 *   - checksum
-		 *   - '\n'
+		 *   - \n
 		 *   - file size in bytes
 		 *   - \n
 		 *   - content of the image file as a byte stream
@@ -147,7 +147,7 @@ public class Server {
 		 * CMD_GET_VOTE name
 		 * How the user voted an add-on.
 		 * Arg 1: Add-on name
-		 * Returns: ACCESSDENIED\n, or vote as string followed by '\n' and ENDOFSTREAM\n
+		 * Returns: ACCESSDENIED\n, or vote as string followed by \n and ENDOFSTREAM\n
 		 */
 		CMD_GET_VOTE,
 
@@ -157,7 +157,7 @@ public class Server {
 		 * Arg 1: Add-on name
 		 * Arg 2: Add-on version
 		 * Arg 3: Number of whitespaces in the message
-		 * Arg 4: Comment message (NOTE: use '\0' instead of '\n' for line breaks)
+		 * Arg 4: Comment message (NOTE: use '\0' instead of \n for line breaks)
 		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_COMMENT,
@@ -172,16 +172,15 @@ public class Server {
 		CMD_SUBMIT,
 
 		/** 
-		 * CMD_SUBMIT_SCREENSHOT name filename filesize checksum whitespaces description 
-		 * Upload an add-on.
+		 * CMD_SUBMIT_SCREENSHOT name filesize checksum whitespaces description 
+		 * Upload a screenshot.
 		 * Arg 1: Add-on name
-		 * Arg 2: Filename
-		 * Arg 3: Filesize in bytes
-		 * Arg 4: The file's checksum
-		 * Arg 5: Number of whitespaces in the description
-		 * Arg 6: Screenshot description
+		 * Arg 2: Filesize in bytes
+		 * Arg 3: The file's checksum
+		 * Arg 4: Number of whitespaces in the description
+		 * Arg 5: Screenshot description
 		 * Then, on the next line, the content of the image file like for CMD_SCREENSHOT, terminated by ENDOFSTREAM\n.
-		 * Returns: ENDOFSTREAM\n or an error message\n
+		 * Returns: filename \n followed by ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_SUBMIT_SCREENSHOT,
 	}
@@ -315,15 +314,20 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			case CMD_SUBMIT_SCREENSHOT: {  // Args: name filename filesize checksum whitespaces description 
+			case CMD_SUBMIT_SCREENSHOT: {  // Args: name filesize checksum whitespaces description
 				if (username.isEmpty()) {
 					throw new ProtocolException("Wrong username or password");
 				}
 				File tempDir = new File("temp/screenies", cmd[1]);
 				while (tempDir.exists()) tempDir = new File("temp/screenies", tempDir.getName() + "_");
 				tempDir.mkdirs();
-				File file = new File(tempDir, cmd[2]);
-				long size = Long.valueOf(cmd[3]);
+				String filename;
+				for (int i = 1;; ++i) {
+					filename = "image" + i + ".png";
+					if (!new File("screenshots/" + cmd[1], filename).exists()) break;
+				}
+				File file = new File(tempDir, filename);
+				long size = Long.valueOf(cmd[2]);
 				PrintStream stream = new PrintStream(file);
 				for (long l = 0; l < size; ++l) {
 					int b = in.read();
@@ -335,19 +339,28 @@ public class Server {
 				}
 				stream.close();
 				String checksum = UpdateList.checksum(file);
-				if (!checksum.equals(cmd[4])) {
+				if (!checksum.equals(cmd[3])) {
 					doDelete(tempDir);
-					throw new ProtocolException("Checksum mismatch: expected " + cmd[4] + ", found " + checksum);
+					throw new ProtocolException("Checksum mismatch: expected " + cmd[3] + ", found " + checksum);
 				}
-				File result = new File("screenshots/" + cmd[1], cmd[2]);
-				if (result.exists()) doDelete(result);
-				tempDir.renameTo​(result);
+				if (!readLine(in).equals("ENDOFSTREAM")) {
+					doDelete(tempDir);
+					throw new ProtocolException("Stream continues past its end");
+				}
+				File result = new File("screenshots", cmd[1]);
+				result.mkdirs();
+				result = new File(result, filename);
+				file.renameTo​(result);
+				doDelete(tempDir);
 				TreeMap<String, Utils.Value> ch = new TreeMap<>();
-				int whitespaces = Integer.valueOf(cmd[5]);
-				String msg = cmd[6];
-				for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[7 + w];
-				ch.put(cmd[2], new Utils.Value(cmd[2], msg, cmd[1]));
+				int whitespaces = Integer.valueOf(cmd[4]);
+				String msg = cmd[5];
+				for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[6 + w];
+				ch.put(filename, new Utils.Value(filename, msg, cmd[1]));
 				Utils.editProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1], ch);
+				out.println(filename);
+				out.println("ENDOFSTREAM");
+				return;
 			}
 			case CMD_SUBMIT: {  // Args: name
 				if (username.isEmpty()) {
@@ -416,6 +429,7 @@ public class Server {
 				if (addOnDir.exists()) doDelete(addOnDir);
 				else initMetadata(cmd[1], username);
 				tempDir.renameTo​(addOnDir);
+				// NOCOM edit metadata to remove Verified badge
 				if (Utils._staticprofiles.containsKey(addOnDir)) Utils._staticprofiles.remove(addOnDir);
 				out.println("ENDOFSTREAM");
 				return;
