@@ -404,8 +404,9 @@ public class Server {
 					throw new ProtocolException("Stream continues past its end");
 				}
 				File addOnDir = new File("addons", cmd[1]);
+				File addOnMain = new File(addOnDir, "addon");
 				if (addOnDir.isDirectory()) {
-					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(new File(addOnDir, "addon"), cmd[1]);
+					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]);
 					TreeMap<String, Utils.Value> newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
 					if (!oldProfile.get("category").value.equals(newProfile.get("category").value)) {
 						doDelete(tempDir);
@@ -430,7 +431,7 @@ public class Server {
 				else initMetadata(cmd[1], username);
 				tempDir.renameTo​(addOnDir);
 				// NOCOM edit metadata to remove Verified badge
-				if (Utils._staticprofiles.containsKey(addOnDir)) Utils._staticprofiles.remove(addOnDir);
+				if (Utils._staticprofiles.containsKey(addOnMain)) Utils._staticprofiles.remove(addOnMain);
 				out.println("ENDOFSTREAM");
 				return;
 			}
