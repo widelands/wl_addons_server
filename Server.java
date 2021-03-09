@@ -147,7 +147,7 @@ public class Server {
 		 * CMD_GET_VOTE name
 		 * How the user voted an add-on.
 		 * Arg 1: Add-on name
-		 * Returns: ACCESSDENIED\n, or vote as string followed by \n and ENDOFSTREAM\n
+		 * Returns: NOT_LOGGED_IN\n, or vote as string followed by \n and ENDOFSTREAM\n
 		 */
 		CMD_GET_VOTE,
 
@@ -180,7 +180,7 @@ public class Server {
 		 * Arg 4: Number of whitespaces in the description
 		 * Arg 5: Screenshot description
 		 * Then, on the next line, the content of the image file like for CMD_SCREENSHOT, terminated by ENDOFSTREAM\n.
-		 * Returns: filename \n followed by ENDOFSTREAM\n or an error message\n
+		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_SUBMIT_SCREENSHOT,
 	}
@@ -194,11 +194,15 @@ public class Server {
 		@Override public String toString() { return message; }
 	}
 
-	public static String readLine(InputStream in) throws Exception {
+	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
+	public static String readLine(InputStream in, boolean exceptionOnStreamEnd) throws Exception {
 		String str = "";
 		for (;;) {
 			int c = in.read();
-			if (c < 0) throw new ProtocolException("Stream ended unexpectedly during readLine");
+			if (c < 0) {
+				if (exceptionOnStreamEnd) throw new ProtocolException("Stream ended unexpectedly during readLine");
+				return null;
+			}
 			if (c == (char)'\n') return str;
 			str += (char)c;
 		}
@@ -232,7 +236,7 @@ public class Server {
 					out.println("ENDOFSTREAM");
 
 					String cmd;
-					while ((cmd = readLine(in)) != null) {
+					while ((cmd = readLine(in, false)) != null) {
 						handle(cmd.split(" "), out, in, protocolVersion, username, locale);
 					}
 				} catch (Exception e) {
@@ -306,7 +310,7 @@ public class Server {
 				return;
 			case CMD_GET_VOTE: {  // Args: name
 				if (username.isEmpty()) {
-					out.println("ACCESSDENIED");  // No exception here.
+					out.println("NOT_LOGGED_IN");  // No exception here.
 					return;
 				}
 				Utils.Value vote = Utils.readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + username);
@@ -358,7 +362,6 @@ public class Server {
 				for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[6 + w];
 				ch.put(filename, new Utils.Value(filename, msg, cmd[1]));
 				Utils.editProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1], ch);
-				out.println(filename);
 				out.println("ENDOFSTREAM");
 				return;
 			}
