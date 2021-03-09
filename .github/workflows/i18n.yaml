@@ -21,7 +21,6 @@ jobs:
         git config --global user.name "The Widelands Translations Bot"
         git config --global user.email "bunnybot@widelands.org"
         javac *.java
-        ./setup_tx.sh
         tx pull -fa
         ./buildcats.sh
         if [ ${{ github.event_name }} == "workflow_dispatch" ] || [ -n "$(git status -s i18n)" ]

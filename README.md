@@ -59,6 +59,7 @@ Verification of **new** add-ons should be done **only** by a developer who is al
 To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
 
 If the add-on was not up for translation on Transifex yet, you need to follow these steps afterwards to ensure that it can be translated:
+- Run `setup_tx.sh cool_feature.wad` (where `cool_feature.wad` is the name of the add-on), then git add,commit,push.
 - Go to the repository's Actions tab, select the 'Update Translations' action, and trigger a workflow run on the master branch.
 - Wait until the workflow completed (should take only a few minutes).
 - Head over to https://www.transifex.com/widelands/widelands-addons/content/ and wait until the new resource(s) is/are available.
@@ -70,7 +71,7 @@ If the add-on was not up for translation on Transifex yet, you need to follow th
 Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/   
 Do not modify any of the files in `po/` manually – your changes will be discarded during the automated translation updates.
 
-A GitHub action periodically syncs the translations with Transifex and compiles them by running `setup_tx.sh` and `buildcats.sh`. **Do not** run these scripts manually! If you have to do it anyway for some reason, do this **only** on the master branch.
+A GitHub action periodically syncs the translations with Transifex and compiles them by running `buildcats.sh`. **Do not** run this script manually! If you have to do it anyway for some reason, do this **only** on the master branch.
 
 #### Notes
 
