@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-07 03:08+0000\n"
+"POT-Creation-Date: 2021-03-09 03:07+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: C138, 2021\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
@@ -40,7 +40,7 @@ msgstr ""
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:7
 msgctxt "barbarians_building"
 msgid "Deep Well"
-msgstr ""
+msgstr "Puits profond"
 
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:25
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:25
@@ -54,23 +54,23 @@ msgstr "Au travail"
 #: addons/wells-running-out.wad/bar_well_keeper/init.lua:7
 msgctxt "barbarians_worker"
 msgid "Well Keeper"
-msgstr ""
+msgstr "Gardien de puits"
 
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:7
 msgctxt "frisians_building"
 msgid "Deep Well"
-msgstr ""
+msgstr "Puits profond"
 
 #: addons/wells-running-out.wad/fri_well_keeper/init.lua:7
 msgctxt "frisians_worker"
 msgid "Well Keeper"
-msgstr ""
+msgstr "Gardien de puits"
 
 #: addons/wells-running-out.wad/postload.lua:33
 #: addons/wells-running-out.wad/postload.lua:68
 msgctxt "building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Tire l'eau des profondeurs."
 
 #: addons/wells-running-out.wad/postload.lua:35
 #: addons/wells-running-out.wad/postload.lua:70
@@ -85,19 +85,21 @@ msgstr[1] ""
 msgctxt "frisians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
 msgstr ""
+"Le puits profonds nécessite %s en  moyenne pour produire un seau d'eau."
 
 #: addons/wells-running-out.wad/postload.lua:39
 msgctxt "frisians_worker"
 msgid "Operates the deep wells."
-msgstr ""
+msgstr "Exploite les puits profonds."
 
 #: addons/wells-running-out.wad/postload.lua:70
 #, lua-format
 msgctxt "barbarians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
 msgstr ""
+"Le puits profonds nécessite %s en moyenne pour produire un seau d'eau. "
 
 #: addons/wells-running-out.wad/postload.lua:74
 msgctxt "barbarians_worker"
 msgid "Operates the deep wells."
-msgstr ""
+msgstr "Exploite les puits profonds."
