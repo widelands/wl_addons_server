@@ -1,3 +1,3 @@
 return {
-   newtribe_sentry = {},
+   newtribe_sentry = {"__skip_if_exists"},
 }

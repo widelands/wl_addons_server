@@ -1,3 +1,3 @@
 return {
-   newtribe_ship = {},
+   newtribe_ship = {"__skip_if_exists"},
 }

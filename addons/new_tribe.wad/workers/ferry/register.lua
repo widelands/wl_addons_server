@@ -1,3 +1,3 @@
 return {
-   newtribe_ferry = {},
+   newtribe_ferry = {"__skip_if_exists"},
 }

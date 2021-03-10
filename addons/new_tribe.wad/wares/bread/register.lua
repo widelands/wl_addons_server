@@ -1,3 +1,3 @@
 return {
-   newtribe_bread = {},
+   newtribe_bread = {"__skip_if_exists"},
 }

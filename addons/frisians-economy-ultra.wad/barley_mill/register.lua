@@ -1,1 +1,1 @@
-return { frisians_barley_mill = {}}
+return { frisians_barley_mill = {"__skip_if_exists"}}

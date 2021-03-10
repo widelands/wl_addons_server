@@ -1,3 +1,3 @@
 return {
-   newtribe_barracks = {},
+   newtribe_barracks = {"__skip_if_exists"},
 }
