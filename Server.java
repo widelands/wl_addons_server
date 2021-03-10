@@ -208,6 +208,9 @@ public class Server {
 		}
 	}
 
+	// TODO: Run a thread that daily pulls any changes from GitHub, calls UpdateList.main(),
+	// commits all changes, and pushes the result back to GitHub.
+
 	public static void main(String[] args) throws Exception {
 		System.out.println("Server starting.");
 		ServerSocket serverSocket = new ServerSocket(7399);
@@ -369,6 +372,7 @@ public class Server {
 				if (username.isEmpty()) {
 					throw new ProtocolException("Wrong username or password");
 				}
+
 				File tempDir = new File("temp/submit", cmd[1]);
 				while (tempDir.exists()) tempDir = new File("temp/submit", tempDir.getName() + "_");
 				tempDir.mkdirs();
@@ -378,6 +382,7 @@ public class Server {
 					dirnames[i] = new File(tempDir, readLine(in));
 					dirnames[i].mkdirs();
 				}
+
 				for (int i = 0; i < nrDirs; ++i) {
 					final int nrFiles = Integer.valueOf(readLine(in));
 					for (int j = 0; j < nrFiles; ++j) {
@@ -402,19 +407,24 @@ public class Server {
 						}
 					}
 				}
+
 				if (!readLine(in).equals("ENDOFSTREAM")) {
 					doDelete(tempDir);
 					throw new ProtocolException("Stream continues past its end");
 				}
+
 				File addOnDir = new File("addons", cmd[1]);
 				File addOnMain = new File(addOnDir, "addon");
+
 				if (addOnDir.isDirectory()) {
 					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]);
 					TreeMap<String, Utils.Value> newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
+
 					if (!oldProfile.get("category").value.equals(newProfile.get("category").value)) {
 						doDelete(tempDir);
 						throw new ProtocolException("An add-on with the same name and a different category already exists.");
 					}
+
 					String[] oldVersion = oldProfile.get("version").value.split("\\.");
 					String[] newVersion = newProfile.get("version").value.split("\\.");
 					Boolean newer = null;
@@ -429,12 +439,17 @@ public class Server {
 						doDelete(tempDir);
 						throw new ProtocolException("An add-on with the same name and an equal or newer version already exists.");
 					}
+
+					doDelete(addOnDir);
+					TreeMap<String, Utils.Value> edit = new TreeMap<>();
+					edit.put("version", newProfile.get("version"));
+					edit.put("security", new Utils.Value("security", "unchecked"));
+					Utils.editMetadata(cmd[1], edit);
+				} else {
+					Utils.initMetadata(cmd[1], username);
 				}
-				if (addOnDir.exists()) doDelete(addOnDir);
-				else initMetadata(cmd[1], username);
 				tempDir.renameTo​(addOnDir);
-				// NOCOM edit metadata to remove Verified badge
-				if (Utils._staticprofiles.containsKey(addOnMain)) Utils._staticprofiles.remove(addOnMain);
+
 				out.println("ENDOFSTREAM");
 				return;
 			}
@@ -445,16 +460,6 @@ public class Server {
 	synchronized private static void doDelete(File f) {
 		if (f.isDirectory()) for (File file : f.listFiles()) doDelete(file);
 		f.delete();
-	}
-
-	synchronized private static void initMetadata(String addon, String uploader) throws Exception {
-		PrintWriter w = new PrintWriter(new File("metadata", addon));
-		w.println("timestamp=\"" + (System.currentTimeMillis() / 1000) + "\"");
-		w.println("downloads=\"0\"");
-		w.println("comments=\"0\"");
-		w.println("security=\"unchecked\"");
-		w.println("uploader=\"" + uploader + "\"");
-		for (int i = 1; i <= 10; ++i) w.println("votes_" + i + "=\"0\"");
 	}
 
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
