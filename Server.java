@@ -99,7 +99,7 @@ public class Server {
 		 */
 		CMD_DOWNLOAD,
 
-		/** 
+		/**
 		 * CMD_I18N name
 		 * Download an add-on's translations as a binary stream.
 		 * Arg 1: Add-on name
@@ -119,7 +119,7 @@ public class Server {
 		 */
 		CMD_I18N,
 
-		/** 
+		/**
 		 * CMD_SCREENSHOT addon screenie
 		 * Download a screenshot.
 		 * Arg 1: Add-on name
@@ -134,7 +134,7 @@ public class Server {
 		 */
 		CMD_SCREENSHOT,
 
-		/** 
+		/**
 		 * CMD_VOTE name vote
 		 * Vote on an add-on.
 		 * Arg 1: Add-on name
@@ -143,7 +143,7 @@ public class Server {
 		 */
 		CMD_VOTE,
 
-		/** 
+		/**
 		 * CMD_GET_VOTE name
 		 * How the user voted an add-on.
 		 * Arg 1: Add-on name
@@ -151,7 +151,7 @@ public class Server {
 		 */
 		CMD_GET_VOTE,
 
-		/** 
+		/**
 		 * CMD_COMMENT name version whitespaces message
 		 * Vote on an add-on.
 		 * Arg 1: Add-on name
@@ -162,7 +162,7 @@ public class Server {
 		 */
 		CMD_COMMENT,
 
-		/** 
+		/**
 		 * CMD_SUBMIT name
 		 * Upload an add-on.
 		 * Arg 1: Add-on name
@@ -171,8 +171,8 @@ public class Server {
 		 */
 		CMD_SUBMIT,
 
-		/** 
-		 * CMD_SUBMIT_SCREENSHOT name filesize checksum whitespaces description 
+		/**
+		 * CMD_SUBMIT_SCREENSHOT name filesize checksum whitespaces description
 		 * Upload a screenshot.
 		 * Arg 1: Add-on name
 		 * Arg 2: Filesize in bytes
@@ -208,12 +208,48 @@ public class Server {
 		}
 	}
 
-	// TODO: Run a thread that daily pulls any changes from GitHub, calls UpdateList.main(),
-	// commits all changes, and pushes the result back to GitHub.
+	private static class GitHubSyncer {
+		public void sync() throws Exception {
+			Process p = Runtime.getRuntime().exec(new String[] {
+				// NOCOM How to handle merge conflicts?
+				"bash", "-c", // "git pull origin master && git add . && git commit -m \"Automated server sync\" && git push origin master"
+							"echo 'NOCOM dummy'"
+			});
+			BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+			String str;
+			while ((str = b.readLine()) != null) {
+				System.out.println("    # " + str);
+			}
+		}
+	}
 
 	public static void main(String[] args) throws Exception {
 		System.out.println("Server starting.");
 		ServerSocket serverSocket = new ServerSocket(7399);
+		GitHubSyncer syncer = new GitHubSyncer();
+		new Thread() { public void run() {
+			final long kOneDay = 1000 * 60 * 60 * 24;
+			do try {
+				Calendar nextSync = Calendar.getInstance();
+				nextSync.set(Calendar.HOUR_OF_DAY, 3);
+				nextSync.set(Calendar.MINUTE, 0);
+				nextSync.set(Calendar.SECOND, 0);
+				nextSync.set(Calendar.MILLISECOND, 0);
+				long now = System.currentTimeMillis();
+				long then = nextSync.getTimeInMillis();
+				while (then < now + 60000) then += kOneDay;
+				System.out.println("Next GitHub sync scheduled for " + then + " (" + (then - now) + " ms remaining).");
+				Thread.sleep(then - now);
+				System.out.println("Waking up for GitHub sync at " + System.currentTimeMillis());
+				synchronized(syncer) {
+					System.out.println("Performing GitHub sync at " + System.currentTimeMillis());
+					Utils._staticprofiles.clear();
+					syncer.sync();
+				}
+			} catch (Exception e) {
+				System.out.println("GitHub sync ERROR: " + e);
+			} while (true);
+		}}.start();
 		while (true) {
 			Socket s = serverSocket.accept();
 			new Thread() { public void run() {
@@ -239,9 +275,9 @@ public class Server {
 					out.println("ENDOFSTREAM");
 
 					String cmd;
-					while ((cmd = readLine(in, false)) != null) {
+					while ((cmd = readLine(in, false)) != null) { synchronized(syncer) {
 						handle(cmd.split(" "), out, in, protocolVersion, username, locale);
-					}
+					}}
 				} catch (Exception e) {
 					System.out.println("[" + Thread.currentThread().getName() + "] ERROR: " + e);
 					if (out != null) out.println(e);
