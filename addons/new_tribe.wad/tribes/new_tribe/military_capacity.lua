@@ -1,6 +1,6 @@
 return {
    func = function(present, stationed, capacity)
-      push_textdomain("tribes")
+      push_textdomain("new_tribe.wad", true)
       local result = ""
       if present == stationed then
          if capacity > stationed then

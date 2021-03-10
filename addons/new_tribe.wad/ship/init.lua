@@ -1,4 +1,4 @@
-push_textdomain("tribes")
+push_textdomain("new_tribe.wad", true)
 
 dirname = path.dirname (__file__)
 
