@@ -1,3 +1,3 @@
 return {
-   newtribe_donkey = {},
+   newtribe_donkey = {"__skip_if_exists"},
 }

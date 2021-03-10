@@ -1,3 +1,3 @@
 return {
-   newtribe_hunter = {},
+   newtribe_hunter = {"__skip_if_exists"},
 }

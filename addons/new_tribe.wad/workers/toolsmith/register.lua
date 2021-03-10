@@ -1,3 +1,3 @@
 return {
-   newtribe_toolsmith = {},
+   newtribe_toolsmith = {"__skip_if_exists"},
 }

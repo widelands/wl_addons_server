@@ -1,3 +1,3 @@
 return {
-   newtribe_well = {},
+   newtribe_well = {"__skip_if_exists"},
 }

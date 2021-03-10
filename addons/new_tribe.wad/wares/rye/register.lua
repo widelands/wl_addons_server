@@ -1,3 +1,3 @@
 return {
-   rye = {},
+   rye = {"__skip_if_exists"},
 }
