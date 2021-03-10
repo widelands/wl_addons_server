@@ -209,17 +209,31 @@ public class Server {
 	}
 
 	private static class GitHubSyncer {
-		public void sync() throws Exception {
-			Process p = Runtime.getRuntime().exec(new String[] {
-				// NOCOM How to handle merge conflicts?
-				"bash", "-c", // "git pull origin master && git add . && git commit -m \"Automated server sync\" && git push origin master"
-							"echo 'NOCOM dummy'"
-			});
+		private int run(String ... args) {
+			System.out.print("    $");
+			for (String a : args) System.out.print(" " + a);
+			System.out.println();
+
+			Process p = Runtime.getRuntime().exec(args);
 			BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 			String str;
 			while ((str = b.readLine()) != null) {
 				System.out.println("    # " + str);
 			}
+
+			int e = p.exitValue();
+			System.out.println("    = " + e);
+			return e
+		}
+		public void sync() throws Exception {
+			if (run("bash", "-c", "git pull origin master") != 0) {
+				// NOCOM resolve pull conflicts
+				// run("bash", "-c", "git add .");
+				// run("bash", "-c", "git merge --continue");
+			}
+			run("bash", "-c", "git add .");
+			run("bash", "-c", "git commit -m 'Automated server sync'");
+			run("bash", "-c", "git push origin master");
 		}
 	}
 
