@@ -143,4 +143,97 @@ public class Utils {
 		}
 		return l;
 	}
+
+	private static enum MergeResolverStatus { kUnchanged, kHead, kSource }
+	public static void resolveMergeConflicts(File f) throws Exception {
+		if (_staticprofiles.containsKey(f)) _staticprofiles.remove(f);
+
+		TreeMap<String, Value> unchanged = new TreeMap<>();
+		TreeMap<String, Value> head = new TreeMap<>();
+		TreeMap<String, Value> source = new TreeMap<>();
+		MergeResolverStatus status = MergeResolverStatus.kUnchanged;
+
+		for (String line : Files.readAllLines(f.toPath())) {
+			if (line.trim().startsWith("#")) continue;
+			if (line.startsWith("<<<<<<<")) {
+				status = MergeResolverStatus.kHead;
+				continue;
+			}
+			if (line.startsWith(">>>>>>>")) {
+				status = MergeResolverStatus.kUnchanged;
+				continue;
+			}
+			if (line.startsWith("=======")) {
+				status = MergeResolverStatus.kSource;
+				continue;
+			}
+
+			TreeMap<String, Value> profile = null;
+			switch (status) {
+				case kUnchanged: profile = unchanged; break;
+				case kSource: profile = source; break;
+				case kHead: profile = head; break;
+			}
+
+			String[] str = line.split("=");
+			if (str.length < 2) {
+				if (str.length == 1) profile.put(str[0], new Value(str[0], ""));
+				continue;
+			}
+			String arg = str[1];
+			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
+			boolean localize = false;
+			if (arg.startsWith("_")) { arg = arg.substring(1); localize = true; }
+			if (arg.startsWith("\"")) arg = arg.substring(1);
+			if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
+			profile.put(str[0], new Value(str[0], arg, localize ? "" : null));
+		}
+
+		for (String key : head.keySet()) {
+			if (source.containsKey(key)) {
+				String vh = head.get(key).value;
+				String vs = source.get(key).value;
+				String result = null;
+				switch (key) {
+					case "security":
+						result = (vh.equals("verified") && vs.equals("verified")) ? vh : "unchecked";
+						break;
+					case "i18n_version":
+						result = vs;
+						break;
+					case "version":
+					case "downloads":
+					case "timestamp":
+					case "uploader":
+						result = vh;
+						break;
+					default:
+						if (key.startsWith("vote") || key.startsWith("comment")) {
+							result = vh;
+							break;
+						}
+						throw new Exception("Unable to merge key '" + key + "' in file " + f.getPath());
+				}
+				unchanged.put(key, new Value(key, result, head.get(key).textdomain));
+			} else {
+				unchanged.put(key, head.get(key));
+			}
+		}
+		for (String key : source.keySet()) {
+			if (!head.containsKey(key)) {
+				unchanged.put(key, source.get(key));
+			}
+		}
+
+		PrintStream out = new PrintStream(f);
+		for (String key : unchanged.keySet()) {
+			out.print(key);
+			out.print("=");
+			if (unchanged.get(key).textdomain != null) out.print("_");
+			out.print("\"");
+			out.print(unchanged.get(key).value);
+			out.print("\"\n");
+		}
+		out.close();
+	}
 }

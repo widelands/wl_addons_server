@@ -209,7 +209,7 @@ public class Server {
 	}
 
 	private static class GitHubSyncer {
-		private int run(String ... args) {
+		private int run(String ... args) throws Exception {
 			System.out.print("    $");
 			for (String a : args) System.out.print(" " + a);
 			System.out.println();
@@ -223,17 +223,28 @@ public class Server {
 
 			int e = p.exitValue();
 			System.out.println("    = " + e);
-			return e
+			return e;
 		}
+		// UNTESTED
 		public void sync() throws Exception {
+			run("bash", "-c", "git stash clear");
 			if (run("bash", "-c", "git pull origin master") != 0) {
-				// NOCOM resolve pull conflicts
-				// run("bash", "-c", "git add .");
-				// run("bash", "-c", "git merge --continue");
+				run("bash", "-c", "git stash");
+				run("bash", "-c", "git pull origin master");
+				run("bash", "-c", "git stash apply");
+				Process p = Runtime.getRuntime().exec(new String[]{ "bash", "-c", "git status -s" });
+				BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+				String str;
+				while ((str = b.readLine()) != null) {
+					String file = str.substring(3);
+					System.out.println("Resolving merge conflicts in '" + file + "'...");
+					Utils.resolveMergeConflicts(new File(file));
+				}
 			}
 			run("bash", "-c", "git add .");
 			run("bash", "-c", "git commit -m 'Automated server sync'");
 			run("bash", "-c", "git push origin master");
+			run("bash", "-c", "git stash clear");
 		}
 	}
 
