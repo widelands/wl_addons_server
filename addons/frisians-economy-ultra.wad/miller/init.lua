@@ -1,5 +1,7 @@
 dirname = path.dirname (__file__)
 
+push_textdomain("frisians-economy-ultra.wad", true)
+
 descriptions:new_worker_type {
    name = "frisians_miller",
    -- TRANSLATORS: This is a worker name used in lists of workers
@@ -43,3 +45,4 @@ descriptions:new_worker_type {
       },
    },
 }
+pop_textdomain()

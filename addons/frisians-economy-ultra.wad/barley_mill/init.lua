@@ -1,5 +1,7 @@
 dirname = path.dirname(__file__)
 
+push_textdomain("frisians-economy-ultra.wad", true)
+
 descriptions:new_productionsite_type {
    name = "frisians_barley_mill",
    -- TRANSLATORS: This is a building name used in lists of buildings
@@ -57,3 +59,4 @@ descriptions:new_productionsite_type {
       },
    },
 }
+pop_textdomain()
