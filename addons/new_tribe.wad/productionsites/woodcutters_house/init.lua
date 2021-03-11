@@ -36,9 +36,7 @@ descriptions:new_productionsite_type {
       }
    },
 
-   aihints = {
-      collects_ware_from_map = "log"
-   },
+   aihints = {},
 
    working_positions = {
       newtribe_woodcutter = 1
