@@ -1,6 +1,6 @@
-push_textdomain("world")
+push_textdomain("impassable_water.wad", true)
 
-pics_dir = path.dirname(__file__)
+local pics_dir = path.dirname(__file__)
 
 wl.Descriptions():new_terrain_type{
    name = "water_lily",
