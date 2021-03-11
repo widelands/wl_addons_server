@@ -4,7 +4,6 @@ local pics_dir = path.dirname(__file__)
 wl.Descriptions():new_terrain_type{
    name = "algae_slick",
    descname = _ "Algae slick",
-   editor_category = "wasteland",
    is = "walkable",
    valid_resources = { "fish" },
    default_resource = "fish",

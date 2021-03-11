@@ -4,7 +4,6 @@ local pics_dir = path.dirname(__file__)
 wl.Descriptions():new_terrain_type{
    name = "reef",
    descname = _ "Reef",
-   editor_category = "desert",
    is = "walkable",
    valid_resources = {"fish"},
    default_resource = "fish",
