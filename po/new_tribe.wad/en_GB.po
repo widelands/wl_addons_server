@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 03:07+0000\n"
+"POT-Creation-Date: 2021-03-13 13:21+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Language-Team: English (United Kingdom) (https://www.transifex.com/widelands/"
 "teams/35159/en_GB/)\n"
@@ -78,7 +78,7 @@ msgstr ""
 #: addons/new_tribe.wad/buildings/shipyard/init.lua:74
 #: addons/new_tribe.wad/productionsites/reed_yard/init.lua:40
 #: addons/new_tribe.wad/productionsites/rye_farm/init.lua:43
-#: addons/new_tribe.wad/productionsites/well/init.lua:46
+#: addons/new_tribe.wad/productionsites/well/init.lua:45
 msgid "working"
 msgstr ""
 
@@ -236,21 +236,21 @@ msgctxt "newtribe_building"
 msgid "Fish Breeder’s House"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:42
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:41
 msgid "breeding fish"
+msgstr ""
+
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:51
+#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:52
+msgid "No Fish"
 msgstr ""
 
 #: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:52
 #: addons/new_tribe.wad/productionsites/fishers_house/init.lua:53
-msgid "No Fish"
-msgstr ""
-
-#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:53
-#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:54
 msgid "Out of Fish"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:54
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:53
 msgctxt "newtribe_building"
 msgid ""
 "The fish breeder working out of this fish breeder’s house can’t find any "
@@ -258,7 +258,7 @@ msgid ""
 "resources if there are some fish left to breed."
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:58
+#: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:57
 msgid "The fishing grounds are full"
 msgstr ""
 
@@ -267,11 +267,11 @@ msgctxt "newtribe_building"
 msgid "Fisher’s House"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:43
+#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:42
 msgid "fishing"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:55
+#: addons/new_tribe.wad/productionsites/fishers_house/init.lua:54
 msgctxt "newtribe_building"
 msgid ""
 "The fisher working out of this fisher’s house can’t find any fish in his "
@@ -284,7 +284,7 @@ msgctxt "newtribe_building"
 msgid "Forester’s House"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/foresters_house/init.lua:52
+#: addons/new_tribe.wad/productionsites/foresters_house/init.lua:51
 msgid "planting trees"
 msgstr ""
 
@@ -293,19 +293,19 @@ msgctxt "newtribe_building"
 msgid "Hunter’s House"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:40
+#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:39
 msgid "hunting"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:49
+#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:48
 msgid "No Game"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:51
+#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:50
 msgid "Out of Game"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:53
+#: addons/new_tribe.wad/productionsites/hunters_house/init.lua:52
 msgctxt "newtribe_building"
 msgid ""
 "The hunter working out of this hunter’s house can’t find any game in his "
@@ -317,19 +317,19 @@ msgctxt "newtribe_building"
 msgid "Quarry"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/quarry/init.lua:38
+#: addons/new_tribe.wad/productionsites/quarry/init.lua:36
 msgid "quarrying granite"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/quarry/init.lua:47
+#: addons/new_tribe.wad/productionsites/quarry/init.lua:45
 msgid "No Rocks"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/quarry/init.lua:48
+#: addons/new_tribe.wad/productionsites/quarry/init.lua:46
 msgid "Out of Rocks"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/quarry/init.lua:49
+#: addons/new_tribe.wad/productionsites/quarry/init.lua:47
 msgctxt "newtribe_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any rocks in his work area."
@@ -398,15 +398,15 @@ msgctxt "newtribe_building"
 msgid "Well"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/well/init.lua:58
+#: addons/new_tribe.wad/productionsites/well/init.lua:57
 msgid "No Water"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/well/init.lua:59
+#: addons/new_tribe.wad/productionsites/well/init.lua:58
 msgid "Out of Water"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/well/init.lua:60
+#: addons/new_tribe.wad/productionsites/well/init.lua:59
 msgctxt "newtribe_building"
 msgid "The carrier working at this well can’t find any water in his well."
 msgstr ""
@@ -416,19 +416,19 @@ msgctxt "newtribe_building"
 msgid "Woodcutter’s House"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:50
+#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:48
 msgid "felling trees"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:59
+#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:57
 msgid "No Trees"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:60
+#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:58
 msgid "Out of Trees"
 msgstr ""
 
-#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:61
+#: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:59
 msgctxt "newtribe_building"
 msgid ""
 "The woodcutter working at this woodcutter’s house can’t find any trees in "

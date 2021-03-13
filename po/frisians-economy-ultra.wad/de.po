@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 03:07+0000\n"
+"POT-Creation-Date: 2021-03-13 13:21+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -34,16 +34,21 @@ msgstr ""
 "Sehr komplexes Wirtschaftsmodell für den Stamm der Friesen mit vielen neuen "
 "Waren und Gebäuden."
 
-#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:6
+#: addons/frisians-economy-ultra.wad/barley_flour/init.lua:8
+msgctxt "ware"
+msgid "Barley Flour"
+msgstr "Gerstenmehl"
+
+#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Barley Mill"
 msgstr "Gerstenmühle"
 
-#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:49
+#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
 msgstr "Das Mahlen von Gerste"
 
-#: addons/frisians-economy-ultra.wad/miller/init.lua:6
+#: addons/frisians-economy-ultra.wad/miller/init.lua:8
 msgctxt "frisians_worker"
 msgid "Miller"
 msgstr "Müller"
@@ -129,8 +134,8 @@ msgstr "Das Räuchern von Fleisch"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:109
 #: addons/frisians-economy-ultra.wad/postload.lua:145
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:43
-#: addons/frisians-economy-ultra.wad/salt_works/init.lua:39
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
 msgstr "Das Arbeiten"
 
@@ -143,40 +148,50 @@ msgstr "Das Backen von Brot"
 msgid "baking honey bread"
 msgstr "Das Backen von Honigbrot"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:6
+#: addons/frisians-economy-ultra.wad/rye/init.lua:8
+msgctxt "ware"
+msgid "Rye"
+msgstr "Roggen"
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Farm"
 msgstr "Roggenhof"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:51
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:52
 msgid "planting rye"
 msgstr "Das Pflanzen von Roggen"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:59
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:60
 msgid "harvesting rye"
 msgstr "Das Ernten von Roggen"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:68
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
 msgid "No Fields"
 msgstr "Keine Felder"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
 msgid "Out of Fields"
 msgstr "Keine Felder"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:71
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this rye farm has no cleared soil to plant his seeds."
 msgstr ""
 "Der Bauer auf diesem Roggenhof hat keinen freien Platz um seine Sat zu säen."
 
-#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:6
+#: addons/frisians-economy-ultra.wad/rye_flour/init.lua:8
+msgctxt "ware"
+msgid "Rye Flour"
+msgstr "Roggenmehl"
+
+#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Mill"
 msgstr "Roggenmühle"
 
-#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:49
+#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:51
 msgid "grinding rye"
 msgstr "Das Mahlen von Roggen"
 
@@ -205,32 +220,17 @@ msgctxt "immovable"
 msgid "Rye Field (tiny)"
 msgstr "Roggenfeld (jung)"
 
-#: addons/frisians-economy-ultra.wad/salt_works/init.lua:6
+#: addons/frisians-economy-ultra.wad/salt/init.lua:8
+msgctxt "ware"
+msgid "Salt"
+msgstr "Salz"
+
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:8
 msgctxt "frisians_building"
 msgid "Salt Works"
 msgstr "Saline"
 
-#: addons/frisians-economy-ultra.wad/salter/init.lua:6
+#: addons/frisians-economy-ultra.wad/salter/init.lua:8
 msgctxt "frisians_worker"
 msgid "Salter"
 msgstr "Salzsieder"
-
-#: addons/frisians-economy-ultra.wad/wares/init.lua:6
-msgctxt "ware"
-msgid "Barley Flour"
-msgstr "Gerstenmehl"
-
-#: addons/frisians-economy-ultra.wad/wares/init.lua:21
-msgctxt "ware"
-msgid "Rye"
-msgstr "Roggen"
-
-#: addons/frisians-economy-ultra.wad/wares/init.lua:36
-msgctxt "ware"
-msgid "Rye Flour"
-msgstr "Roggenmehl"
-
-#: addons/frisians-economy-ultra.wad/wares/init.lua:51
-msgctxt "ware"
-msgid "Salt"
-msgstr "Salz"
