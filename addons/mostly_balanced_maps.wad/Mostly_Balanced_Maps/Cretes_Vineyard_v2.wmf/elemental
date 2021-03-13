@@ -1,0 +1,26 @@
+# Automatically created by Widelands 1.0~git25200[7651467@HEAD] (Release)
+
+[global]
+packet_version="1"
+map_w="384"
+map_h="144"
+nr_players="4"
+name=_"Crete’s Vineyard v.2"
+author="OIPUN"
+descr=_"A long island with many plains and hills, perfect for a vineyard to produce sweat grapes and heavy vine."
+hint=_"Rich on resources. Not balanced for 4 players (red and blue are in the middle, harder to win). Ideal for 2 teams or for 2 players. The yellow-green combination takes more time to win as the starting positions are far away."
+theme="desert"
+tags="1v1,2teams,artifacts,ffa,unbalanced"
+addons=
+
+[teams00]
+team1="0"
+team2="1"
+
+[teams01]
+team1="2"
+team2="3"
+
+[teams02]
+team1="0,2"
+team2="1,3"
