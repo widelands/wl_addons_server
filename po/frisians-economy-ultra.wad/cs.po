@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 03:07+0000\n"
+"POT-Creation-Date: 2021-03-13 12:28+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Ondřej Itřech, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -34,16 +34,21 @@ msgstr ""
 "Rozšířený model fríského hospodářství obsahující několik nových surovin a "
 "budov."
 
-#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:6
+#: addons/frisians-economy-ultra.wad/barley_flour/init.lua:8
+msgctxt "ware"
+msgid "Barley Flour"
+msgstr "Ječná mouka"
+
+#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Barley Mill"
 msgstr "Mlýn na ječmen"
 
-#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:49
+#: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
 msgstr "mletí ječmene"
 
-#: addons/frisians-economy-ultra.wad/miller/init.lua:6
+#: addons/frisians-economy-ultra.wad/miller/init.lua:8
 msgctxt "frisians_worker"
 msgid "Miller"
 msgstr "Mlynář"
@@ -122,8 +127,8 @@ msgstr "uzení masa"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:109
 #: addons/frisians-economy-ultra.wad/postload.lua:145
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:43
-#: addons/frisians-economy-ultra.wad/salt_works/init.lua:39
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
 msgstr ""
 
@@ -136,39 +141,49 @@ msgstr "pečení chleba"
 msgid "baking honey bread"
 msgstr "pečení medového chleba"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:6
+#: addons/frisians-economy-ultra.wad/rye/init.lua:8
+msgctxt "ware"
+msgid "Rye"
+msgstr "Žito"
+
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Farm"
 msgstr "Žitná farma"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:51
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:52
 msgid "planting rye"
 msgstr "setí žita"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:59
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:60
 msgid "harvesting rye"
 msgstr "sklízení žita"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:68
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
 msgid "No Fields"
 msgstr "Žádná pole"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
 msgid "Out of Fields"
 msgstr "Došla pole"
 
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:71
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this rye farm has no cleared soil to plant his seeds."
 msgstr "Sedlák pracující na této žitné farmě nemá žádnou volnou půdu na osev."
 
-#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:6
+#: addons/frisians-economy-ultra.wad/rye_flour/init.lua:8
+msgctxt "ware"
+msgid "Rye Flour"
+msgstr "Žitná mouka"
+
+#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Mill"
 msgstr "Mlýn na žito"
 
-#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:49
+#: addons/frisians-economy-ultra.wad/rye_mill/init.lua:51
 msgid "grinding rye"
 msgstr "mletí žita"
 
@@ -197,32 +212,17 @@ msgctxt "immovable"
 msgid "Rye Field (tiny)"
 msgstr "Žitné pole (oseté)"
 
-#: addons/frisians-economy-ultra.wad/salt_works/init.lua:6
+#: addons/frisians-economy-ultra.wad/salt/init.lua:8
+msgctxt "ware"
+msgid "Salt"
+msgstr "Sůl"
+
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:8
 msgctxt "frisians_building"
 msgid "Salt Works"
 msgstr "Domek solaře"
 
-#: addons/frisians-economy-ultra.wad/salter/init.lua:6
+#: addons/frisians-economy-ultra.wad/salter/init.lua:8
 msgctxt "frisians_worker"
 msgid "Salter"
 msgstr "Solař"
-
-#: addons/frisians-economy-ultra.wad/wares/init.lua:6
-msgctxt "ware"
-msgid "Barley Flour"
-msgstr "Ječná mouka"
-
-#: addons/frisians-economy-ultra.wad/wares/init.lua:21
-msgctxt "ware"
-msgid "Rye"
-msgstr "Žito"
-
-#: addons/frisians-economy-ultra.wad/wares/init.lua:36
-msgctxt "ware"
-msgid "Rye Flour"
-msgstr "Žitná mouka"
-
-#: addons/frisians-economy-ultra.wad/wares/init.lua:51
-msgctxt "ware"
-msgid "Salt"
-msgstr "Sůl"

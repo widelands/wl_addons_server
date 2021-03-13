@@ -1,0 +1,26 @@
+# Automatically created by Widelands 1.0~git25200[7651467@HEAD] (Release)
+
+[global]
+packet_version="1"
+map_w="96"
+map_h="96"
+nr_players="5"
+name=_"Jungle Pyramids v.2"
+author="OIPUN"
+descr=_"Our woodcutters are going to have some work to make some space for our buildings. But we need to get to the pyramids. The pyramids hide gold and precious stones. We must be careful. Enemies are close. And they also want to reach the pyramids as soon as possible."
+hint=_"This map is small. If you want some space, you should play 1v1 game."
+theme="summer"
+tags="1v1,2teams,artifacts,balanced,ferries"
+addons=
+
+[teams00]
+team1="3"
+team2="0"
+
+[teams01]
+team1="1"
+team2="4"
+
+[teams02]
+team1="0,3"
+team2="1,2"
