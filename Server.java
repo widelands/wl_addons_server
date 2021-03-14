@@ -216,6 +216,7 @@ public class Server {
 			System.out.println();
 
 			Process p = Runtime.getRuntime().exec(args);
+			p.waitFor();
 			BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 			String str;
 			while ((str = b.readLine()) != null) {
