@@ -12,10 +12,12 @@ public class Server {
 	 *  - \n
 	 *  - Username (or "" for no user)
 	 *  - \n
-	 *  - Password hash (or "" for no user)
-	 *  - \n
 	 *  - ENDOFSTREAM\n
-	 * The server then replies with ENDOFSTREAM\n.
+	 * If the username is "", the server then replies ENDOFSTREAM\n.
+	 * Otherwise:
+	 *   - The server replies with a random number followed by \nENDOFSTREAM\n.
+	 *   - The client calculates the hash of the password hash and the random number and sends the result followed by \nENDOFSTREAM\n.
+	 *   - The server checks whether the result is correct and sends either ENDOFSTREAM\n or an error message.
 	 *
 	 * The only currently supported protocol version is 4. All documentation here refers to version 4.
 	 *
@@ -186,18 +188,17 @@ public class Server {
 	}
 
 	public static class ProtocolException extends RuntimeException {
-		public final String message;
 		public ProtocolException(String msg) {
-			super();
-			message = "ProtocolException: " + msg;
+			super("ProtocolException: " + msg);
 		}
-		@Override public String toString() { return message; }
+		@Override public String toString() { return getMessage(); }
 	}
 
 	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
 	public static String readLine(InputStream in, boolean exceptionOnStreamEnd) throws Exception {
 		String str = "";
 		for (;;) {
+			syncer.tick();
 			int c = in.read();
 			if (c < 0) {
 				if (exceptionOnStreamEnd) throw new ProtocolException("Stream ended unexpectedly during readLine");
@@ -208,7 +209,7 @@ public class Server {
 		}
 	}
 
-	private static class GitHubSyncer {
+	private static class ThreadActivityAndGitHubSyncManager {
 		private int run(String ... args) throws Exception {
 			System.out.print("    $");
 			for (String a : args) System.out.print(" " + a);
@@ -246,12 +247,44 @@ public class Server {
 			run("bash", "-c", "git push origin master");
 			run("bash", "-c", "git stash clear");
 		}
+
+		public static class Data {
+			long lastActivity;
+			Socket socket;
+			Data(Socket s) {
+				socket = s;
+				lastActivity = System.currentTimeMillis();
+			}
+		}
+		private final HashMap<Thread, Data> lastActivity = new HashMap<>();
+		public synchronized void tick() {
+			lastActivity.put(Thread.currentThread(), new Data(lastActivity.get(Thread.currentThread()).socket));
+		}
+		public synchronized void add(Socket s) {
+			lastActivity.put(Thread.currentThread(), new Data(s));
+		}
+		public synchronized void check() throws Exception {
+			final long time = System.currentTimeMillis();
+			List<Thread> kill = new ArrayList<>();
+			for (Thread t : lastActivity.keySet()) {
+				if (time - lastActivity.get(t).lastActivity > 12 * 60 * 60 * 1000) {
+					kill.add(t);
+				}
+			}
+			for (Thread t : kill) {
+				System.out.println("Force-closing socket for [" + Thread.currentThread().getName() + "].");
+				Socket s = lastActivity.remove(t).socket;
+				s.close();
+			}
+		}
 	}
 
+	private static ThreadActivityAndGitHubSyncManager syncer = new ThreadActivityAndGitHubSyncManager();
+
+	private static Random random = new Random(System.currentTimeMillis());
 	public static void main(String[] args) throws Exception {
 		System.out.println("Server starting.");
 		ServerSocket serverSocket = new ServerSocket(7399);
-		GitHubSyncer syncer = new GitHubSyncer();
 		new Thread() { public void run() {
 			final long kOneDay = 1000 * 60 * 60 * 24;
 			do try {
@@ -268,6 +301,7 @@ public class Server {
 				System.out.println("Waking up for GitHub sync at " + System.currentTimeMillis());
 				synchronized(syncer) {
 					System.out.println("Performing GitHub sync at " + System.currentTimeMillis());
+					syncer.check();
 					Utils._staticprofiles.clear();
 					syncer.sync();
 				}
@@ -278,6 +312,7 @@ public class Server {
 		while (true) {
 			Socket s = serverSocket.accept();
 			new Thread() { public void run() {
+				syncer.add(s);
 				PrintStream out = null;
 				try {
 					System.out.println("[" + Thread.currentThread().getName() + "] Connection received.");
@@ -290,12 +325,28 @@ public class Server {
 					}
 					final String locale = readLine(in);
 					final String username = readLine(in);
-					final String password = readLine(in);
-					if ((!username.isEmpty() || !password.isEmpty()) && !auth(username, password)) {
-						throw new ProtocolException("Wrong username or password");
-					}
 					if (!readLine(in).equals("ENDOFSTREAM")) {
 						throw new ProtocolException("Stream continues past its end");
+					}
+					if (!username.isEmpty()) {
+						final long r = random.nextLong();
+						out.println(r);
+						out.println("ENDOFSTREAM");
+
+						Process p = Runtime.getRuntime().exec(new String[] {"md5sum"});
+						PrintWriter md5 = new PrintWriter(p.getOutputStream());
+						md5.println("70c07ec18ef89c5309bbb0937f3a6342411e1fdd");  // NOCOM this is the hash for "World". Fetch the password hash from the database.
+						md5.println(r);
+						md5.close();
+						final String expected = new BufferedReader(new InputStreamReader(p.getInputStream())).readLine().split(" ")[0];
+
+						final String password = readLine(in);
+						if (!readLine(in).equals("ENDOFSTREAM")) {
+							throw new ProtocolException("Stream continues past its end");
+						}
+						if (!password.equals(expected)) {
+							throw new ProtocolException("Wrong username or password");
+						}
 					}
 					out.println("ENDOFSTREAM");
 
@@ -319,6 +370,20 @@ public class Server {
 		return files;
 	}
 
+	public static void checkNameValid(String name, boolean directory) {
+		if (name == null || (!directory && name.isEmpty())) throw new ProtocolException("Empty name");
+		for (char c : name.toCharArray()) {
+			if (
+				(c >= 'a' && c <= 'z') ||
+				(c >= 'A' && c <= 'Z') ||
+				(c >= '1' && c <= '9') ||
+				c == '0' || c == '.' || c == '_' || c == '-') continue;
+			if (directory && c == '/') continue;
+			throw new ProtocolException("Name '" + name + "' may not contain the character '" + c + "'");
+		}
+		if (name.contains("..")) throw new ProtocolException("Name '" + name + "' may not contain '..'");
+	}
+
 	private static void handle(String[] cmd, PrintStream out, InputStream in,
 			int version, String username, String locale) throws Exception {
 		switch (CMD.valueOf(cmd[0])) {
@@ -331,9 +396,11 @@ public class Server {
 				return;
 			}
 			case CMD_INFO:  // Args: name
+				checkNameValid(cmd[1], false);
 				info(version, cmd[1], locale, out);
 				return;
 			case CMD_DOWNLOAD: {  // Args: name
+				checkNameValid(cmd[1], false);
 				DirInfo dir = new DirInfo(new File("addons", cmd[1]));
 				Utils.registerDownload(cmd[1]);
 				out.println(dir.totalDirs);
@@ -343,12 +410,15 @@ public class Server {
 				return;
 			}
 			case CMD_I18N: {  // Args: name
+				checkNameValid(cmd[1], false);
 				DirInfo dir = new DirInfo(new File("i18n", cmd[1]));
 				dir.writeAllFileInfos(out);
 				out.println("ENDOFSTREAM");
 				return;
 			}
 			case CMD_SCREENSHOT: {  // Args: addon screenie
+				checkNameValid(cmd[1], false);
+				checkNameValid(cmd[2], false);
 				writeOneFile(new File("screenshots/" + cmd[1], cmd[2]), out);
 				out.println("ENDOFSTREAM");
 				return;
@@ -358,6 +428,7 @@ public class Server {
 					out.println("Please log in to comment");
 					return;
 				}
+				checkNameValid(cmd[1], false);
 				String msg = cmd[4];
 				for (int i = 0; i < Integer.valueOf(cmd[3]); ++i) msg += " " + cmd[5 + i];
 				Utils.comment(cmd[1], username, cmd[2], msg.replaceAll("\0", "\n"));
@@ -368,6 +439,7 @@ public class Server {
 				if (username.isEmpty()) {
 					throw new ProtocolException("Wrong username or password");
 				} else {
+					checkNameValid(cmd[1], false);
 					Utils.registerVote(cmd[1], username, cmd[2]);
 					out.println("ENDOFSTREAM");
 				}
@@ -377,6 +449,7 @@ public class Server {
 					out.println("NOT_LOGGED_IN");  // No exception here.
 					return;
 				}
+				checkNameValid(cmd[1], false);
 				Utils.Value vote = Utils.readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + username);
 				out.println(vote == null ? "0" : vote.value);
 				out.println("ENDOFSTREAM");
@@ -386,132 +459,128 @@ public class Server {
 				if (username.isEmpty()) {
 					throw new ProtocolException("Wrong username or password");
 				}
-				File tempDir = new File("temp/screenies", cmd[1]);
-				while (tempDir.exists()) tempDir = new File("temp/screenies", tempDir.getName() + "_");
-				tempDir.mkdirs();
-				String filename;
-				for (int i = 1;; ++i) {
-					filename = "image" + i + ".png";
-					if (!new File("screenshots/" + cmd[1], filename).exists()) break;
-				}
-				File file = new File(tempDir, filename);
+				checkNameValid(cmd[1], false);
 				long size = Long.valueOf(cmd[2]);
-				PrintStream stream = new PrintStream(file);
-				for (long l = 0; l < size; ++l) {
-					int b = in.read();
-					if (b < 0) {
-						doDelete(tempDir);
-						throw new ProtocolException("Stream ended unexpectedly while reading file");
+				if (size > 4 * 1000 * 1000) throw new ProtocolException("Filesize " + size + " exceed the limit of 4 MB");
+				File tempDir = Utils.createTempDir();
+
+				try {
+					String filename;
+					for (int i = 1;; ++i) {
+						filename = "image" + i + ".png";
+						if (!new File("screenshots/" + cmd[1], filename).exists()) break;
 					}
-					stream.write(b);
-				}
-				stream.close();
-				String checksum = UpdateList.checksum(file);
-				if (!checksum.equals(cmd[3])) {
+					File file = new File(tempDir, filename);
+					PrintStream stream = new PrintStream(file);
+					for (long l = 0; l < size; ++l) {
+						int b = in.read();
+						if (b < 0) throw new ProtocolException("Stream ended unexpectedly while reading file");
+						stream.write(b);
+					}
+					stream.close();
+					String checksum = UpdateList.checksum(file);
+					if (!checksum.equals(cmd[3])) throw new ProtocolException("Checksum mismatch: expected " + cmd[3] + ", found " + checksum);
+					if (!readLine(in).equals("ENDOFSTREAM")) throw new ProtocolException("Stream continues past its end");
+					File result = new File("screenshots", cmd[1]);
+					result.mkdirs();
+					result = new File(result, filename);
+					file.renameTo​(result);
 					doDelete(tempDir);
-					throw new ProtocolException("Checksum mismatch: expected " + cmd[3] + ", found " + checksum);
-				}
-				if (!readLine(in).equals("ENDOFSTREAM")) {
+					TreeMap<String, Utils.Value> ch = new TreeMap<>();
+					int whitespaces = Integer.valueOf(cmd[4]);
+					String msg = cmd[5];
+					for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[6 + w];
+					ch.put(filename, new Utils.Value(filename, msg, cmd[1]));
+					Utils.editProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1], ch);
+					out.println("ENDOFSTREAM");
+				} catch (Exception e) {
 					doDelete(tempDir);
-					throw new ProtocolException("Stream continues past its end");
+					throw new ProtocolException(e.getMessage());
 				}
-				File result = new File("screenshots", cmd[1]);
-				result.mkdirs();
-				result = new File(result, filename);
-				file.renameTo​(result);
-				doDelete(tempDir);
-				TreeMap<String, Utils.Value> ch = new TreeMap<>();
-				int whitespaces = Integer.valueOf(cmd[4]);
-				String msg = cmd[5];
-				for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[6 + w];
-				ch.put(filename, new Utils.Value(filename, msg, cmd[1]));
-				Utils.editProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1], ch);
-				out.println("ENDOFSTREAM");
 				return;
 			}
 			case CMD_SUBMIT: {  // Args: name
 				if (username.isEmpty()) {
 					throw new ProtocolException("Wrong username or password");
 				}
+				checkNameValid(cmd[1], false);
+				File tempDir = Utils.createTempDir();
 
-				File tempDir = new File("temp/submit", cmd[1]);
-				while (tempDir.exists()) tempDir = new File("temp/submit", tempDir.getName() + "_");
-				tempDir.mkdirs();
-				final int nrDirs = Integer.valueOf(readLine(in));
-				File[] dirnames = new File[nrDirs];
-				for (int i = 0; i < nrDirs; ++i) {
-					dirnames[i] = new File(tempDir, readLine(in));
-					dirnames[i].mkdirs();
-				}
+				try {
+					final int nrDirs = Integer.valueOf(readLine(in));
+					File[] dirnames = new File[nrDirs];
+					for (int i = 0; i < nrDirs; ++i) {
+						String n = readLine(in);
+						checkNameValid(n, true);
+						dirnames[i] = new File(tempDir, n);
+						dirnames[i].mkdirs();
+					}
 
-				for (int i = 0; i < nrDirs; ++i) {
-					final int nrFiles = Integer.valueOf(readLine(in));
-					for (int j = 0; j < nrFiles; ++j) {
-						final String filename = readLine(in);
-						final String checksum = readLine(in);
-						final long size = Long.valueOf(readLine(in));
-						File file = new File(dirnames[i], filename);
-						PrintStream stream = new PrintStream(file);
-						for (long l = 0; l < size; ++l) {
-							int b = in.read();
-							if (b < 0) {
-								doDelete(tempDir);
-								throw new ProtocolException("Stream ended unexpectedly while reading file");
+					long totalSize = 0;
+					for (int i = 0; i < nrDirs; ++i) {
+						final int nrFiles = Integer.valueOf(readLine(in));
+						for (int j = 0; j < nrFiles; ++j) {
+							final String filename = readLine(in);
+							checkNameValid(filename, false);
+							final String checksum = readLine(in);
+							final long size = Long.valueOf(readLine(in));
+							totalSize += size;
+							if (totalSize > 200 * 1000 * 1000) throw new ProtocolException("Filesize limit of 200 MB exceeded");
+							File file = new File(dirnames[i], filename);
+							PrintStream stream = new PrintStream(file);
+							for (long l = 0; l < size; ++l) {
+								int b = in.read();
+								if (b < 0) throw new ProtocolException("Stream ended unexpectedly while reading file");
+								stream.write(b);
 							}
-							stream.write(b);
-						}
-						stream.close();
-						String c = UpdateList.checksum(file);
-						if (!checksum.equals(c)) {
-							doDelete(tempDir);
-							throw new ProtocolException("Checksum mismatch for " + dirnames[i].getPath() + "/" + filename + ": expected " + checksum + ", found " + c);
+							stream.close();
+							String c = UpdateList.checksum(file);
+							if (!checksum.equals(c)) throw new ProtocolException(
+									"Checksum mismatch for " + dirnames[i].getPath() + "/" + filename + ": expected " + checksum + ", found " + c);
 						}
 					}
-				}
 
-				if (!readLine(in).equals("ENDOFSTREAM")) {
+					if (!readLine(in).equals("ENDOFSTREAM")) throw new ProtocolException("Stream continues past its end");
+
+					File addOnDir = new File("addons", cmd[1]);
+					File addOnMain = new File(addOnDir, "addon");
+
+					if (addOnDir.isDirectory()) {
+						TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]);
+						TreeMap<String, Utils.Value> newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
+
+						if (!oldProfile.get("category").value.equals(newProfile.get("category").value)) throw new ProtocolException(
+								"An add-on with the same name and a different category already exists.");
+
+						String[] oldVersion = oldProfile.get("version").value.split("\\.");
+						String[] newVersion = newProfile.get("version").value.split("\\.");
+						Boolean newer = null;
+						for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
+							if (!oldVersion[i].equals(newVersion[i])) {
+								newer = (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
+								break;
+							}
+						}
+						if (newer == null) newer = (oldVersion.length < newVersion.length);
+						if (!newer) {
+							throw new ProtocolException("An add-on with the same name and an equal or newer version already exists.");
+						}
+
+						doDelete(addOnDir);
+						TreeMap<String, Utils.Value> edit = new TreeMap<>();
+						edit.put("version", newProfile.get("version"));
+						edit.put("security", new Utils.Value("security", "unchecked"));
+						Utils.editMetadata(cmd[1], edit);
+					} else {
+						Utils.initMetadata(cmd[1], username);
+					}
+					tempDir.renameTo​(addOnDir);
+
+					out.println("ENDOFSTREAM");
+				} catch (Exception e) {
 					doDelete(tempDir);
-					throw new ProtocolException("Stream continues past its end");
+					throw new ProtocolException(e.getMessage());
 				}
-
-				File addOnDir = new File("addons", cmd[1]);
-				File addOnMain = new File(addOnDir, "addon");
-
-				if (addOnDir.isDirectory()) {
-					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]);
-					TreeMap<String, Utils.Value> newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
-
-					if (!oldProfile.get("category").value.equals(newProfile.get("category").value)) {
-						doDelete(tempDir);
-						throw new ProtocolException("An add-on with the same name and a different category already exists.");
-					}
-
-					String[] oldVersion = oldProfile.get("version").value.split("\\.");
-					String[] newVersion = newProfile.get("version").value.split("\\.");
-					Boolean newer = null;
-					for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
-						if (!oldVersion[i].equals(newVersion[i])) {
-							newer = (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
-							break;
-						}
-					}
-					if (newer == null) newer = (oldVersion.length < newVersion.length);
-					if (!newer) {
-						doDelete(tempDir);
-						throw new ProtocolException("An add-on with the same name and an equal or newer version already exists.");
-					}
-
-					doDelete(addOnDir);
-					TreeMap<String, Utils.Value> edit = new TreeMap<>();
-					edit.put("version", newProfile.get("version"));
-					edit.put("security", new Utils.Value("security", "unchecked"));
-					Utils.editMetadata(cmd[1], edit);
-				} else {
-					Utils.initMetadata(cmd[1], username);
-				}
-				tempDir.renameTo​(addOnDir);
-
-				out.println("ENDOFSTREAM");
 				return;
 			}
 			default: throw new ProtocolException("Invalid command " + cmd[0]);
@@ -603,12 +672,6 @@ public class Server {
 			value = v;
 			textdomain = t;
 		}
-	}
-
-	synchronized private static boolean auth(String user, String passwd) throws Exception {
-		// NOCOM
-		Utils.Value p = Utils.readProfile(new File("metadata/users"), null).get(user);
-		return p != null && p.value.equals(passwd);
 	}
 
 	synchronized public static void info(final int version, final String addon, final String locale, PrintStream out) throws Exception {

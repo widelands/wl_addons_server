@@ -12,6 +12,13 @@ public class Utils {
 		return files;
 	}
 
+	synchronized public static File createTempDir() {
+		File d;
+		do { d = new File("temp", "temp_" + System.currentTimeMillis()); } while (d.exists());
+		d.mkdirs();
+		return d;
+	}
+
 	public static class Value {
 		public final String key, value, textdomain;
 		public String value(String locale) {
