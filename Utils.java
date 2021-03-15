@@ -219,7 +219,7 @@ public class Utils {
 							result = vh;
 							break;
 						}
-						throw new Exception("Unable to merge key <" + key + "> in file " + f.getPath());
+						throw new Exception("Unable to merge key '" + key + "' in file " + f.getPath());
 				}
 				unchanged.put(key, new Value(key, result, head.get(key).textdomain));
 			} else {

@@ -237,9 +237,7 @@ public class Server {
 				String str;
 				while ((str = b.readLine()) != null) {
 					String file = str.substring(3);
-					if (!file.startsWith("metadata/")) {
-						throw new Exception("Unable to resolve merge conflict in " + file);
-					}
+					if (!file.startsWith("metadata/")) throw new Exception("Unable to resolve merge conflict in " + file);
 					System.out.println("Resolving merge conflicts in '" + file + "'...");
 					Utils.resolveMergeConflicts(new File(file));
 				}
@@ -319,20 +317,36 @@ public class Server {
 				errored = true;
 				System.out.println("GitHub sync ERROR: " + e);
 				try {
-					Process p = Runtime.getRuntime().exec(new String[] {"bash", "-c",
+					String str;
+					String msg = "@Noordfrees\n\n" +
+								"The automated GitHub sync on the server has failed with the following error message:\n" +
+								"```\n" + e + "\n```\n\n```\n$ git status";
+					Process p = Runtime.getRuntime().exec(new String[] {"bash", "-c", "git status"});
+					p.waitFor();
+					BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+					while ((str = b.readLine()) != null) msg += "\n" + str;
+					msg += "\n```\n\nThe automated syncs will discontinue until the server has been restarted. Please resolve the merge conflicts quickly." +
+							"  \nThank you :)";
+
+					msg = msg.replaceAll("\n", "\\\\n");
+					msg = msg.replaceAll("\t", "\\\\t");
+					msg = msg.replaceAll("\\$", "§");
+					// msg = msg.replaceAll("\"", "\\\\\\\\\"");
+					msg = msg.replaceAll("\"", "❞");
+					msg = msg.replaceAll("'", "❜");
+
+					syncer.run("bash", "-c", "git status");
+					syncer.run("bash", "-c", "git restore --staged .");
+					syncer.run("bash", "-c", "git checkout .");
+					System.out.println("    Sending message: " + msg);
+
+					p = Runtime.getRuntime().exec(new String[] {"bash", "-c",
 						"curl -X POST -H \"Accept: application/vnd.github.v3+json\" -u " +
 								Utils.readProfile(new File("config"), null).get("githubusername").value + ":" +
 								Utils.readProfile(new File("config"), null).get("githubtoken").value +
-							" https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments -d '{\"body\":\"" +
-								"@Noordfrees\\n\\n" +
-								"The automated GitHub sync on the server has failed with the following error message:\\n" +
-								"```\\n" + e + "\\n```\\n\\n" +
-								"The automated syncs will discontinue until the server has been restarted. Please resolve the merge conflicts quickly." +
-								"  \\nThank you :)"
-							+ "\"}'"});
+							" https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments -d '{\"body\":\"" + msg + "\"}'"});
 					p.waitFor();
-					BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
-					String str;
+					b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 					boolean err = false;
 					while ((str = b.readLine()) != null) {
 						System.out.println("    # " + str);
@@ -342,13 +356,13 @@ public class Server {
 					if (err) throw new Exception("CURL output looks like failure");
 					if (p.exitValue() != 0) throw new Exception("CURL returned error code " + p.exitValue());
 				} catch (Exception x) {
-					System.out.println("########################################################");
-					System.out.println(" VERY FATAL ERROR: Unable to send failure notification!");
+					System.out.println("#########################################################");
+					System.out.println(" VERY FATAL ERROR – unable to send failure notification!");
 					System.out.println("  " + x);
 					System.out.println(" Something has gone seriously wrong here.");
 					System.out.println(" Killing the server in the hope that the maintainers");
 					System.out.println(" will hurry to resolve the problems.");
-					System.out.println("########################################################");
+					System.out.println("#########################################################");
 					System.exit(1);
 				}
 			} while (true);
