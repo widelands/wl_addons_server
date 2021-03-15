@@ -27,9 +27,8 @@ Further, ensure that an ini-style config file called `config` exists in the work
 - `databaseuser` – database user name, e.g. `someuser`
 - `databasepassword` – password of the database user, e.g. `123456`
 
-Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on port 7399 of your machine. In order to connect to this server from the game, run Widelands with the commandline parameter `--addon_server_ip=127.0.0.1` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server).
-
-When running the server in production, it is a good idea to redirect all output to a log file which can be viewed in case an error is suspected.
+Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on port 7399 of your machine. In order to connect to this server from the game, run Widelands with the commandline parameter `--addon_server_ip=127.0.0.1` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server).  
+Note that the server runs as a daemon; that is, it is independent from your process and all output is redirected to a file called `server.log` which will be overwritten on every run. To terminate the server daemon, retrieve the PID of the process from the second line of the logfile and then type `kill <PID>`.
 
 The server protocol is documented in `Server.java`.
 

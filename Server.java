@@ -209,30 +209,13 @@ public class Server {
 	}
 
 	private static class ThreadActivityAndGitHubSyncManager {
-		public int run(String ... args) throws Exception {
-			System.out.print("    $");
-			for (String a : args) System.out.print(" " + a);
-			System.out.println();
-
-			Process p = Runtime.getRuntime().exec(args);
-			p.waitFor();
-			BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
-			String str;
-			while ((str = b.readLine()) != null) {
-				System.out.println("    # " + str);
-			}
-
-			int e = p.exitValue();
-			System.out.println("    = " + e);
-			return e;
-		}
 		public synchronized void sync() throws Exception {
-			run("bash", "-c", "git stash clear");
-			if (run("bash", "-c", "git pull origin master") != 0) {
-				run("bash", "-c", "git stash");
-				run("bash", "-c", "git pull origin master");
-				run("bash", "-c", "git stash apply");
-				run("bash", "-c", "git status");
+			Utils.bash("bash", "-c", "git stash clear");
+			if (Utils.bash("bash", "-c", "git pull origin master") != 0) {
+				Utils.bash("bash", "-c", "git stash");
+				Utils.bash("bash", "-c", "git pull origin master");
+				Utils.bash("bash", "-c", "git stash apply");
+				Utils.bash("bash", "-c", "git status");
 				Process p = Runtime.getRuntime().exec(new String[]{ "bash", "-c", "git status -s" });
 				BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 				String str;
@@ -250,10 +233,10 @@ public class Server {
 				}
 			}
 			UpdateList.main();
-			run("bash", "-c", "git add .");
-			run("bash", "-c", "git commit -m 'Automated server sync'");
-			run("bash", "-c", "git push origin master");
-			run("bash", "-c", "git stash clear");
+			Utils.bash("bash", "-c", "git add .");
+			Utils.bash("bash", "-c", "git commit -m 'Automated server sync'");
+			Utils.bash("bash", "-c", "git push origin master");
+			Utils.bash("bash", "-c", "git stash clear");
 		}
 
 		public static class Data {
@@ -288,6 +271,7 @@ public class Server {
 
 	private static Random random = new Random(System.currentTimeMillis());
 	public static void main(String[] args) throws Exception {
+		Utils.bash("bash", "-c", "echo $PPID");
 		System.out.println("Initializing SQL...");
 		Properties connectionProps = new Properties();
 		connectionProps.put("user", Utils.readProfile(new File("config"), null).get("databaseuser").value);
@@ -340,9 +324,9 @@ public class Server {
 					msg = msg.replaceAll("\"", "❞");
 					msg = msg.replaceAll("'", "❜");
 
-					syncer.run("bash", "-c", "git status");
-					syncer.run("bash", "-c", "git restore --staged .");
-					syncer.run("bash", "-c", "git checkout .");
+					Utils.bash("bash", "-c", "git status");
+					Utils.bash("bash", "-c", "git restore --staged .");
+					Utils.bash("bash", "-c", "git checkout .");
 					System.out.println("    Sending message: " + msg);
 
 					p = Runtime.getRuntime().exec(new String[] {"bash", "-c",

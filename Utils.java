@@ -19,6 +19,24 @@ public class Utils {
 		return d;
 	}
 
+	public static int bash(String ... args) throws Exception {
+		System.out.print("    $");
+		for (String a : args) System.out.print(" " + a);
+		System.out.println();
+
+		Process p = Runtime.getRuntime().exec(args);
+		p.waitFor();
+		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+		String str;
+		while ((str = b.readLine()) != null) {
+			System.out.println("    # " + str);
+		}
+
+		int e = p.exitValue();
+		System.out.println("    = " + e);
+		return e;
+	}
+
 	public static class Value {
 		public final String key, value, textdomain;
 		public String value(String locale) {
