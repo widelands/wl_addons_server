@@ -21,11 +21,11 @@ Before starting the server, ensure that a MySQL server is running on localhost w
 - There needs to be a user with read access to both tables.
 
 Further, ensure that an ini-style config file called `config` exists in the working directory which contains the following keys:
-- `githubusername` – user name for GitHub
-- `githubtoken` – personal access token for GitHub
-- `databasename` – name of the database
-- `databaseuser` – database user name
-- `databasepassword` – password of the database user
+- `githubusername` – user name for GitHub, e.g. `bunnybot`
+- `githubtoken` – personal access token for GitHub, e.g. `123456abcdef`
+- `databasename` – connection line for the database, e.g. `jdbc:mysql://localhost:3306/widelands_addons_server`
+- `databaseuser` – database user name, e.g. `someuser`
+- `databasepassword` – password of the database user, e.g. `123456`
 
 Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on port 7399 of your machine. In order to connect to this server from the game, run Widelands with the commandline parameter `--addon_server_ip=127.0.0.1` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server).
 
@@ -33,13 +33,13 @@ When running the server in production, it is a good idea to redirect all output 
 
 The server protocol is documented in `Server.java`.
 
+Widelands version 1.0 and older does not connect to the server. It instead downloads and parses the `list*` files in this repository and then downloads each file belonging to an add-on separately. Every change to an add-on must therefore be reflected in the `list*` files so that the full add-on selection is available also to Widelands 1.0 users.  
+For this reason, the server automatically syncs its repo checkout with the GitHub repo every night. Normally, all required steps are done fully automatically. Occasionally, a merge conflict may arise which may prove too difficult for the server to handle on its own
 Whenever an error that requires a maintainer’s attention occurs on the add-ons server, a notification will automatically be posted to https://github.com/widelands/wl_addons_server/issues/31. See there for instructions how to handle.
-
-Widelands version 1.0 and older does not connect to the server. It instead downloads and parses the `list*` files in this repository and then downloads each file belonging to an add-on separately. Every change to an add-on must therefore be reflected in the `list*` files so that the full add-on selection is available also to Widelands 1.0 users.
 
 ### Adding / updating an add-on
 
-This section explains how to add an add-on *manually* to this repository. It is recommended to use the in-game add-ons manager instead, which will take care of everything automatically.
+__This section explains how to add an add-on *manually* to this repository. It is strongly recommended to use the in-game add-ons manager instead, which will take care of everything automatically.__
 
 #### Add-On
 

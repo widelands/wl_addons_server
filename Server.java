@@ -8,7 +8,7 @@ public class Server {
 	 * After the first contact, the client must send the following info:
 	 *  - Protocol version
 	 *  - \n
-	 *  - Language name
+	 *  - Language name (e.g. "nds")
 	 *  - \n
 	 *  - Username (or "" for no user)
 	 *  - \n
@@ -30,8 +30,8 @@ public class Server {
 		 * List all available add-on names.
 		 * Returns:
 		 * - Number N of add-ons
-		 * - For each add-on: \n followed by the add-on's internal name.
 		 * - \n
+		 * - For each add-on: the add-on's internal name followed by \n
 		 * - ENDOFSTREAM\n
 		 */
 		CMD_LIST,
@@ -80,7 +80,7 @@ public class Server {
 
 		/**
 		 * CMD_DOWNLOAD name
-		 * Download an add-on as a binary stream.
+		 * Download an add-on as a byte stream.
 		 * Arg 1: Add-on name
 		 * Returns:
 		 *   - Integer string denoting number D of directories
@@ -103,7 +103,7 @@ public class Server {
 
 		/**
 		 * CMD_I18N name
-		 * Download an add-on's translations as a binary stream.
+		 * Download an add-on's translations as a byte stream.
 		 * Arg 1: Add-on name
 		 * Returns:
 		 *   - Integer string denoting number T of translations
@@ -203,7 +203,7 @@ public class Server {
 				if (exceptionOnStreamEnd) throw new ProtocolException("Stream ended unexpectedly during readLine");
 				return null;
 			}
-			if (c == (char)'\n') return str;
+			if (c == '\n') return str;
 			str += (char)c;
 		}
 	}
@@ -232,14 +232,21 @@ public class Server {
 				run("bash", "-c", "git stash");
 				run("bash", "-c", "git pull origin master");
 				run("bash", "-c", "git stash apply");
+				run("bash", "-c", "git status");
 				Process p = Runtime.getRuntime().exec(new String[]{ "bash", "-c", "git status -s" });
 				BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 				String str;
 				while ((str = b.readLine()) != null) {
 					String file = str.substring(3);
-					if (!file.startsWith("metadata/")) throw new Exception("Unable to resolve merge conflict in " + file);
-					System.out.println("Resolving merge conflicts in '" + file + "'...");
-					Utils.resolveMergeConflicts(new File(file));
+					System.out.println("Detected merge conflict in file: " + file);
+					if (file.startsWith("list")) {
+						System.out.println("    Skipping (will be newly generated later).");
+					} else if (!file.startsWith("metadata/")) {
+						System.out.println("    Attempting to resolve the merge conflicts automatically...");
+						Utils.resolveMergeConflicts(new File(file));
+					} else {
+						throw new Exception("Unable to resolve merge conflict in " + file);
+					}
 				}
 			}
 			UpdateList.main();
@@ -285,8 +292,7 @@ public class Server {
 		Properties connectionProps = new Properties();
 		connectionProps.put("user", Utils.readProfile(new File("config"), null).get("databaseuser").value);
 		connectionProps.put("password", Utils.readProfile(new File("config"), null).get("databasepassword").value);
-		java.sql.Connection database = java.sql.DriverManager.getConnection​("jdbc:mysql://localhost:3306/" +
-				Utils.readProfile(new File("config"), null).get("databasename").value, connectionProps);
+		java.sql.Connection database = java.sql.DriverManager.getConnection​(Utils.readProfile(new File("config"), null).get("databasename").value, connectionProps);
 
 		System.out.println("Server starting.");
 		ServerSocket serverSocket = new ServerSocket(7399);
