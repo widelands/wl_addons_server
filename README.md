@@ -14,18 +14,21 @@ After the installation of the JDK run `javac *.java` in the base folder.
 
 ### The server
 
-Before starting the server, ensure that a MySQL server is running on localhost with the following settings:
+Before starting the server, ensure that a MySQL server is running somewhere with the following settings:
 - There is a database with two tables in it:
-    - `auth_user`: Maps an `int` key column `id` to a `varchar` column `username`.
-    - `wlggz_ggzauth`: Maps an `int` key column `user_id` to a `varchar` column `password`.
+    - `auth_user`: Contains at least an `int` column `id` and a `varchar` column `username`.
+    - `wlggz_ggzauth`: Contains at least an `int` column `user_id` and a `varchar` column `password`.
 - There needs to be a user with read access to both tables.
 
 Further, ensure that an ini-style config file called `config` exists in the working directory which contains the following keys:
-- `githubusername` – user name for GitHub, e.g. `bunnybot`
-- `githubtoken` – personal access token for GitHub, e.g. `123456abcdef`
-- `databasename` – connection line for the database, e.g. `jdbc:mysql://localhost:3306/widelands_addons_server`
-- `databaseuser` – database user name, e.g. `someuser`
-- `databasepassword` – password of the database user, e.g. `123456`
+
+Key                | Description                      | Example
+------------------ | -------------------------------- | --------------
+`githubusername`   | User name for GitHub             | `bunnybot`
+`githubtoken`      | Personal Access Token for GitHub | `123456abcdef`
+`databasename`     | Connection line for the database | `jdbc:mysql://localhost:3306/widelands_addons_server`
+`databaseuser`     | Database user name               | `someuser`
+`databasepassword` | Password of the database user    | `123456`
 
 Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on port 7399 of your machine. In order to connect to this server from the game, run Widelands with the commandline parameter `--addon_server_ip=127.0.0.1` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server).  
 Note that the server runs as a daemon; that is, it is independent from your process and all output is redirected to a file called `server.log` which will be overwritten on every run. To terminate the server daemon, retrieve the PID of the process from the second line of the logfile and then type `kill <PID>`.
