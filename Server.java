@@ -340,6 +340,7 @@ public class Server {
 					}
 					System.out.println("    = " + p.exitValue());
 					if (err) throw new Exception("CURL output looks like failure");
+					if (p.exitValue() != 0) throw new Exception("CURL returned error code " + p.exitValue());
 				} catch (Exception x) {
 					System.out.println("########################################################");
 					System.out.println(" VERY FATAL ERROR: Unable to send failure notification!");
