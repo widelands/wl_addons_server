@@ -20,18 +20,20 @@ Before starting the server, ensure that a MySQL server is running on localhost w
     - `wlggz_ggzauth`: Maps an `int` key column `user_id` to a `varchar` column `password`.
 - There needs to be a user with read access to both tables.
 
-Further, ensure that an ini-style config file called `config` exists with the following keys:
+Further, ensure that an ini-style config file called `config` exists in the working directory which contains the following keys:
 - `githubusername` – user name for GitHub
 - `githubtoken` – personal access token for GitHub
 - `databasename` – name of the database
 - `databaseuser` – database user name
 - `databasepassword` – password of the database user
 
-Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on port 7399 of your machine. In order to connect to this server from the game, run Widelands with the commandline parameter `--addon_server_ip=127.0.0.1` (where you replace `127.0.0.1` with the IP of the machine on which you're running the server).
+Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on port 7399 of your machine. In order to connect to this server from the game, run Widelands with the commandline parameter `--addon_server_ip=127.0.0.1` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server).
 
 When running the server in production, it is a good idea to redirect all output to a log file which can be viewed in case an error is suspected.
 
 The server protocol is documented in `Server.java`.
+
+Whenever an error that requires a maintainer’s attention occurs on the add-ons server, a notification will automatically be posted to https://github.com/widelands/wl_addons_server/issues/31. See there for instructions how to handle.
 
 Widelands version 1.0 and older does not connect to the server. It instead downloads and parses the `list*` files in this repository and then downloads each file belonging to an add-on separately. Every change to an add-on must therefore be reflected in the `list*` files so that the full add-on selection is available also to Widelands 1.0 users.
 
@@ -82,7 +84,7 @@ To verify a new add-on (or an existing one after an update), read the code caref
 
 If the add-on was not up for translation on Transifex yet, you need to follow these steps afterwards to ensure that it can be translated:
 - Run `buildcats.sh` and then `setup_tx.sh cool_feature.wad` (where `cool_feature.wad` is the name of the add-on), then git add,commit,push.
-- Go to the repository's Actions tab, select the 'Update Translations' action, and trigger a workflow run on the master branch.
+- Go to the repository’s Actions tab, select the ‘Update Translations’ action, and trigger a workflow run on the master branch.
 - Wait until the workflow completed (should take only a few minutes).
 - Head over to https://www.transifex.com/widelands/widelands-addons/content/ and wait until the new resource(s) is/are available.
 - Edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!

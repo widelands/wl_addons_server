@@ -331,7 +331,6 @@ public class Server {
 					msg = msg.replaceAll("\n", "\\\\n");
 					msg = msg.replaceAll("\t", "\\\\t");
 					msg = msg.replaceAll("\\$", "§");
-					// msg = msg.replaceAll("\"", "\\\\\\\\\"");
 					msg = msg.replaceAll("\"", "❞");
 					msg = msg.replaceAll("'", "❜");
 
