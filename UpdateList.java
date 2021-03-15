@@ -234,7 +234,7 @@ public class UpdateList {
 		}
 	}
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String ... args) throws Exception {
 		List<String> increase_i18n = new ArrayList<>();
 		List<String> verify = new ArrayList<>();
 		for (String s : args) {

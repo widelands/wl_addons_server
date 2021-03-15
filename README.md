@@ -14,13 +14,22 @@ After the installation of the JDK run `javac *.java` in the base folder.
 
 ### The server
 
-Starting the add-ons webserver is as simple as typing
-```
-javac *.java
-java Server
-```
+Before starting the server, ensure that a MySQL server is running on localhost with the following settings:
+- There is a database with two tables in it:
+    - `auth_user`: Maps an `int` key column `id` to a `varchar` column `username`.
+    - `wlggz_ggzauth`: Maps an `int` key column `user_id` to a `varchar` column `password`.
+- There needs to be a user with read access to both tables.
 
-This will launch the webserver on port 7399 of your machine. In order to connect to this server from the game, run Widelands with the commandline parameter `--addon_server_ip=127.0.0.1` (where you replace `127.0.0.1` with the IP of the machine on which you're running the server).
+Further, ensure that an ini-style config file called `config` exists with the following keys:
+- `githubusername` – user name for GitHub
+- `githubtoken` – personal access token for GitHub
+- `databasename` – name of the database
+- `databaseuser` – database user name
+- `databasepassword` – password of the database user
+
+Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on port 7399 of your machine. In order to connect to this server from the game, run Widelands with the commandline parameter `--addon_server_ip=127.0.0.1` (where you replace `127.0.0.1` with the IP of the machine on which you're running the server).
+
+When running the server in production, it is a good idea to redirect all output to a log file which can be viewed in case an error is suspected.
 
 The server protocol is documented in `Server.java`.
 
@@ -93,3 +102,5 @@ If you want to submit a new add-on or update an existing one without using the i
 ### License
 
 This repository and its contents are published under the same license as Widelands: [The GNU General Public License (GPL) v2.](https://github.com/widelands/widelands/blob/master/COPYING)
+
+The file `mysql-connector-java-8.0.23.jar` is third-party code which we use with great gratitude to the authors. It contains its own LICENSE file.

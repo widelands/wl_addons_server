@@ -168,7 +168,7 @@ public class Server {
 		 * CMD_SUBMIT name
 		 * Upload an add-on.
 		 * Arg 1: Add-on name
-		 * Then, on the next line, the content of the add-on like the payload for CMD_DOWNLOAD, terminated by ENDOFSTREAM\n.
+		 * Then, on the next line, the content of the add-on like the response for CMD_DOWNLOAD, terminated by ENDOFSTREAM\n.
 		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_SUBMIT,
@@ -198,7 +198,6 @@ public class Server {
 	public static String readLine(InputStream in, boolean exceptionOnStreamEnd) throws Exception {
 		String str = "";
 		for (;;) {
-			syncer.tick();
 			int c = in.read();
 			if (c < 0) {
 				if (exceptionOnStreamEnd) throw new ProtocolException("Stream ended unexpectedly during readLine");
@@ -210,7 +209,7 @@ public class Server {
 	}
 
 	private static class ThreadActivityAndGitHubSyncManager {
-		private int run(String ... args) throws Exception {
+		public int run(String ... args) throws Exception {
 			System.out.print("    $");
 			for (String a : args) System.out.print(" " + a);
 			System.out.println();
@@ -227,8 +226,7 @@ public class Server {
 			System.out.println("    = " + e);
 			return e;
 		}
-		// UNTESTED
-		public void sync() throws Exception {
+		public synchronized void sync() throws Exception {
 			run("bash", "-c", "git stash clear");
 			if (run("bash", "-c", "git pull origin master") != 0) {
 				run("bash", "-c", "git stash");
@@ -239,10 +237,14 @@ public class Server {
 				String str;
 				while ((str = b.readLine()) != null) {
 					String file = str.substring(3);
+					if (!file.startsWith("metadata/")) {
+						throw new Exception("Unable to resolve merge conflict in " + file);
+					}
 					System.out.println("Resolving merge conflicts in '" + file + "'...");
 					Utils.resolveMergeConflicts(new File(file));
 				}
 			}
+			UpdateList.main();
 			run("bash", "-c", "git add .");
 			run("bash", "-c", "git commit -m 'Automated server sync'");
 			run("bash", "-c", "git push origin master");
@@ -258,10 +260,7 @@ public class Server {
 			}
 		}
 		private final HashMap<Thread, Data> lastActivity = new HashMap<>();
-		public synchronized void tick() {
-			lastActivity.put(Thread.currentThread(), new Data(lastActivity.get(Thread.currentThread()).socket));
-		}
-		public synchronized void add(Socket s) {
+		public synchronized void tick(Socket s) {
 			lastActivity.put(Thread.currentThread(), new Data(s));
 		}
 		public synchronized void check() throws Exception {
@@ -284,10 +283,18 @@ public class Server {
 
 	private static Random random = new Random(System.currentTimeMillis());
 	public static void main(String[] args) throws Exception {
+		System.out.println("Initializing SQL...");
+		Properties connectionProps = new Properties();
+		connectionProps.put("user", Utils.readProfile(new File("config"), null).get("databaseuser").value);
+		connectionProps.put("password", Utils.readProfile(new File("config"), null).get("databasepassword").value);
+		java.sql.Connection database = java.sql.DriverManager.getConnection​("jdbc:mysql://localhost:3306/" +
+				Utils.readProfile(new File("config"), null).get("databasename").value, connectionProps);
+
 		System.out.println("Server starting.");
 		ServerSocket serverSocket = new ServerSocket(7399);
 		new Thread() { public void run() {
 			final long kOneDay = 1000 * 60 * 60 * 24;
+			boolean errored = false;
 			do try {
 				Calendar nextSync = Calendar.getInstance();
 				nextSync.set(Calendar.HOUR_OF_DAY, 3);
@@ -301,19 +308,54 @@ public class Server {
 				Thread.sleep(then - now);
 				System.out.println("Waking up for GitHub sync at " + System.currentTimeMillis());
 				synchronized(syncer) {
-					System.out.println("Performing GitHub sync at " + System.currentTimeMillis());
+					System.out.println("Cleaning up inactive threads at " + System.currentTimeMillis());
 					syncer.check();
+					if (errored) throw new Exception("You still have not resolved the merge conflicts. Please do so soon!");
+					System.out.println("Performing GitHub sync at " + System.currentTimeMillis());
 					Utils._staticprofiles.clear();
 					syncer.sync();
 				}
 			} catch (Exception e) {
+				errored = true;
 				System.out.println("GitHub sync ERROR: " + e);
+				try {
+					Process p = Runtime.getRuntime().exec(new String[] {"bash", "-c",
+						"curl -X POST -H \"Accept: application/vnd.github.v3+json\" -u " +
+								Utils.readProfile(new File("config"), null).get("githubusername").value + ":" +
+								Utils.readProfile(new File("config"), null).get("githubtoken").value +
+							" https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments -d '{\"body\":\"" +
+								"@Noordfrees\\n\\n" +
+								"The automated GitHub sync on the server has failed with the following error message:\\n" +
+								"```\\n" + e + "\\n```\\n\\n" +
+								"The automated syncs will discontinue until the server has been restarted. Please resolve the merge conflicts quickly." +
+								"  \\nThank you :)"
+							+ "\"}'"});
+					p.waitFor();
+					BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+					String str;
+					boolean err = false;
+					while ((str = b.readLine()) != null) {
+						System.out.println("    # " + str);
+						err |= str.contains("documentation_url");
+					}
+					System.out.println("    = " + p.exitValue());
+					if (err) throw new Exception("CURL output looks like failure");
+				} catch (Exception x) {
+					System.out.println("########################################################");
+					System.out.println(" VERY FATAL ERROR: Unable to send failure notification!");
+					System.out.println("  " + x);
+					System.out.println(" Something has gone seriously wrong here.");
+					System.out.println(" Killing the server in the hope that the maintainers");
+					System.out.println(" will hurry to resolve the problems.");
+					System.out.println("########################################################");
+					System.exit(1);
+				}
 			} while (true);
 		}}.start();
 		while (true) {
 			Socket s = serverSocket.accept();
 			new Thread() { public void run() {
-				syncer.add(s);
+				synchronized(syncer) { syncer.tick(s); }
 				PrintStream out = null;
 				try {
 					System.out.println("[" + Thread.currentThread().getName() + "] Connection received.");
@@ -334,9 +376,16 @@ public class Server {
 						out.println(r);
 						out.println("ENDOFSTREAM");
 
+						java.sql.ResultSet sql = database.createStatement().executeQuery("select id from auth_user where username='" + username + "'");
+						if (!sql.next()) throw new ProtocolException("User " + username + " is not registered");
+						final long userID = sql.getLong​(1);
+						sql = database.createStatement().executeQuery("select password from wlggz_ggzauth where user_id=" + userID);
+						if (!sql.next()) throw new ProtocolException("User " + username + " did not set a password");
+						final String passwordHash = sql.getString(1);
+
 						Process p = Runtime.getRuntime().exec(new String[] {"md5sum"});
 						PrintWriter md5 = new PrintWriter(p.getOutputStream());
-						md5.println("70c07ec18ef89c5309bbb0937f3a6342411e1fdd");  // NOCOM this is the hash for "World". Fetch the password hash from the database.
+						md5.println(passwordHash);
 						md5.println(r);
 						md5.close();
 						final String expected = new BufferedReader(new InputStreamReader(p.getInputStream())).readLine().split(" ")[0];
@@ -353,6 +402,7 @@ public class Server {
 
 					String cmd;
 					while ((cmd = readLine(in, false)) != null) { synchronized(syncer) {
+						syncer.tick(s);
 						handle(cmd.split(" "), out, in, protocolVersion, username, locale);
 					}}
 				} catch (Exception e) {
@@ -646,32 +696,6 @@ public class Server {
 				writeOneFile(f, out);
 			}
 			for (DirInfo d : subdirs) d.writeAllFileInfos(out);
-		}
-	}
-
-	private static class Value {
-		public final String key, value, textdomain;
-		public String value(String locale) {
-			if (textdomain == null || textdomain.isEmpty()) return value;
-			try {
-				return new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(new String[] {
-						"bash", "-c",
-							"TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain + " LANGUAGE=" + locale +
-								" gettext -s \"" + value.replaceAll("\"", "\\\"") + "\""
-					}).getInputStream())).readLine();
-			} catch (Exception e) {
-				System.out.println("[" + Thread.currentThread().getName() + "] WARNING: gettext error for '" +
-						key + "'='" + value + "' @ '" + textdomain + "' / '" + locale + "': " + e);
-				return value;
-			}
-		}
-		Value(String k, String v) {
-			this(k, v, null);
-		}
-		Value(String k, String v, String t) {
-			key = k;
-			value = v;
-			textdomain = t;
 		}
 	}
 
