@@ -253,14 +253,16 @@ public class Server {
 		}
 		public synchronized void check() throws Exception {
 			final long time = System.currentTimeMillis();
-			List<Thread> kill = new ArrayList<>();
+			HashMap<Thread, Long> kill = new HashMap<>();
 			for (Thread t : lastActivity.keySet()) {
-				if (time - lastActivity.get(t).lastActivity > 12 * 60 * 60 * 1000) {
-					kill.add(t);
+				long d = time - lastActivity.get(t).lastActivity;
+				if (d > 12 * 60 * 60 * 1000) {
+					kill.put(t, d);
 				}
 			}
-			for (Thread t : kill) {
-				System.out.println("Force-closing socket for [" + Thread.currentThread().getName() + "].");
+			for (Thread t : kill.keySet()) {
+				System.out.println("Force-closing socket for [" + Thread.currentThread().getName() + "] (last activity was " +
+						Utils.durationString(kill.get(t)) + " ago).");
 				Socket s = lastActivity.remove(t).socket;
 				s.close();
 			}
@@ -281,7 +283,6 @@ public class Server {
 		System.out.println("Server starting.");
 		ServerSocket serverSocket = new ServerSocket(7399);
 		new Thread() { public void run() {
-			final long kOneDay = 1000 * 60 * 60 * 24;
 			boolean errored = false;
 			do try {
 				Calendar nextSync = Calendar.getInstance();
@@ -291,15 +292,15 @@ public class Server {
 				nextSync.set(Calendar.MILLISECOND, 0);
 				long now = System.currentTimeMillis();
 				long then = nextSync.getTimeInMillis();
-				while (then < now + 60000) then += kOneDay;
-				System.out.println("Next GitHub sync scheduled for " + then + " (" + (then - now) + " ms remaining).");
+				while (then < now + 60000) then += 1000 * 60 * 60 * 24;
+				System.out.println("Next GitHub sync scheduled for " + new Date(then) + " (" + Utils.durationString(then - now) + " remaining).");
 				Thread.sleep(then - now);
-				System.out.println("Waking up for GitHub sync at " + System.currentTimeMillis());
+				System.out.println("Waking up for GitHub sync at " + new Date());
 				synchronized(syncer) {
-					System.out.println("Cleaning up inactive threads at " + System.currentTimeMillis());
+					System.out.println("Cleaning up inactive threads at " + new Date());
 					syncer.check();
 					if (errored) throw new Exception("You still have not resolved the merge conflicts. Please do so soon!");
-					System.out.println("Performing GitHub sync at " + System.currentTimeMillis());
+					System.out.println("Performing GitHub sync at " + new Date());
 					Utils._staticprofiles.clear();
 					syncer.sync();
 				}

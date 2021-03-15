@@ -37,6 +37,22 @@ public class Utils {
 		return e;
 	}
 
+	public static String durationString(long millis) {
+		long hours = millis / (1000 * 60 * 60);
+		millis -= hours * 1000 * 60 * 60;
+		long minutes = millis / (1000 * 60);
+		millis -= minutes * 1000 * 60;
+		long seconds = millis / 1000;
+		millis -= seconds * 1000;
+		String str = millis + "ms";
+		if (seconds == 0) return str;
+		str = seconds + "s " + str;
+		if (minutes == 0) return str;
+		str = minutes + "min " + str;
+		if (hours == 0) return str;
+		return hours + "h " + str;
+	}
+
 	public static class Value {
 		public final String key, value, textdomain;
 		public String value(String locale) {
