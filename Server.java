@@ -437,7 +437,7 @@ public class Server {
 			if (directory && c == '/') continue;
 			throw new ProtocolException("Name '" + name + "' may not contain the character '" + c + "'");
 		}
-		if (name.startWith('/')) throw new ProtocolException("Name '" + name + "' may not start with '/'");
+		if (name.startsWith("/")) throw new ProtocolException("Name '" + name + "' may not start with '/'");
 		if (name.contains("..")) throw new ProtocolException("Name '" + name + "' may not contain '..'");
 	}
 
@@ -568,6 +568,7 @@ public class Server {
 					File[] dirnames = new File[nrDirs];
 					for (int i = 0; i < nrDirs; ++i) {
 						String n = readLine(in);
+						if (n.startsWith("/")) n = n.substring(1);
 						checkNameValid(n, true);
 						dirnames[i] = new File(tempDir, n);
 						dirnames[i].mkdirs();
@@ -636,7 +637,7 @@ public class Server {
 					out.println("ENDOFSTREAM");
 				} catch (Exception e) {
 					doDelete(tempDir);
-					throw new ProtocolException(e.getMessage());
+					throw new ProtocolException(e.toString());
 				}
 				return;
 			}
