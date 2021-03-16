@@ -437,6 +437,7 @@ public class Server {
 			if (directory && c == '/') continue;
 			throw new ProtocolException("Name '" + name + "' may not contain the character '" + c + "'");
 		}
+		if (name.startWith('/')) throw new ProtocolException("Name '" + name + "' may not start with '/'");
 		if (name.contains("..")) throw new ProtocolException("Name '" + name + "' may not contain '..'");
 	}
 
