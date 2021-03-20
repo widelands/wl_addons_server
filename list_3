@@ -1,5 +1,5 @@
 3
-17
+18
 100-wells.wad
 100 Wells
 Win condition about building 100 wells to win. This does not work with amazons.
@@ -458,6 +458,42 @@ dab3bb1d52a3b036a5c0668e13e36f70
 3852f88263032c9b1f83c041546a76a0
 214484fc4f67ac040be59a0c1a54dc19
 07a6f87e79c0b2af8c0924750f8204e6
+0
+unchecked
+first_heroes_win.wad
+First Heroes Win
+The first player who has at least 4 fully trained soldiers in his warehouses wins the game. Teams are not supported yet.
+kaputtnik
+kaputtnik
+
+
+sync_safe
+1616241721
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1.0.0
+1
+7745
+win_condition
+0
+0
+2
+addon
+init.lua
+0
+2
+2794df63de67f9c377f6f5d25581fa60
+4fa2a53f4f8dd94a01529006d9623731
 0
 unchecked
 fishy.wad
