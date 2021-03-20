@@ -31,7 +31,10 @@ local wc_name = "First Heroes Win"
 -- will be used as the key to fetch the translation in C++
 local wc_descname = _("First Heroes Win")
 local wc_version = 1
-local wc_desc = _("The player who has at least %1% fully trained soldiers in his warehouses wins the game."):bformat(ngettext("%1%", "%1%", MAXHEROES))
+local wc_desc = ngettext(
+   "The player who has at least %1% fully trained soldier in his warehouses wins the game.",
+   "The player who has at least %1% fully trained soldiers in his warehouses wins the game.",
+   MAXHEROES):bformat(MAXHEROES)
 local wc_first_hero = "Number of heroes"
 -- This needs to be exactly like wc_first_hero, but localized, because wc_first_hero
 -- will be used as the key to fetch the translation in C++
