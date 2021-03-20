@@ -44,6 +44,7 @@ local r = {
    name = wc_name,
    description = wc_desc,
    peaceful_mode_allowed = true,
+   textdomain = textdomain,
    func = function()
       local plr_data = {}
       local plrs = wl.Game().players
