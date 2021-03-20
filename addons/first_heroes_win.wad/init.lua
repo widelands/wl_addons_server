@@ -22,14 +22,16 @@ end
 -- If changing this value remember to change it also in the addons-file
 local MAXHEROES = 4
 
-push_textdomain("first_heroes_win.wad", true)
+local textdomain = "first_heroes_win.wad"
+
+push_textdomain(textdomain, true)
 
 local wc_name = "First Heroes Win"
 -- This needs to be exactly like wc_name, but localized, because wc_name
 -- will be used as the key to fetch the translation in C++
 local wc_descname = _("First Heroes Win")
 local wc_version = 1
-local wc_desc = _("The player who has at least %1% fully trained soldiers in his warehouses wins the game."):bformat(MAXHEROES)
+local wc_desc = _("The player who has at least %1% fully trained soldiers in his warehouses wins the game."):bformat(ngettext("%1%", "%1%", MAXHEROES))
 local wc_first_hero = "Number of heroes"
 -- This needs to be exactly like wc_first_hero, but localized, because wc_first_hero
 -- will be used as the key to fetch the translation in C++
@@ -82,37 +84,39 @@ local r = {
          end,
       }
 
-      push_textdomain("first_heroes_win.wad", true)
       -- Create inbox message with statistic
       local function _get_statistic_msg(opponent)
          opponent = opponent or nil
          local title = ""
          local msg = ""
+         push_textdomain(textdomain, true)
          if opponent then
             title = _("Hero created!")
             msg = msg .. p(_("%1% has created a hero!"):bformat(opponent.name))
          else
             title = _("You have a new Hero!")
          end
-         msg = msg .. h2(_("Hero Statistic: "))
+         msg = msg .. h2(_("Hero Statistic:"))
          for i, plr in ipairs(plrs) do
             -- TRANSLATORS: "Player x has y Heroes"
             msg = msg .. li(_("%1% has %2%"):bformat(plr.name, ngettext("%1% hero", "%1% heroes", plr_data[plr.number].nr_heroes):bformat(plr_data[plr.number].nr_heroes)))
          end
+         pop_textdomain()
          return title, msg
       end
 
       -- Create message of result screen
       -- The result screen don't like wl richtext
       local function _get_result_msg()
+         push_textdomain(textdomain, true)
          local scores= "\n"
          for i, plr in ipairs(plrs) do
             -- TRANSLATORS: Player x: y heroes
             scores = scores.._("%1%: %2%"):bformat(plr.name, ngettext("%1% hero", "%1% heroes", plr_data[plr.number].nr_heroes):bformat(plr_data[plr.number].nr_heroes)).."\n"
          end
+         pop_textdomain()
          return scores
       end
-      pop_textdomain()
 
       local function inform_players(hero_creator)
          for i, plr in ipairs(plrs) do
