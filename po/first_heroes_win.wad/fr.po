@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-21 03:12+0000\n"
+"PO-Revision-Date: 2021-03-20 17:12+0000\n"
+"Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: addons/first_heroes_win.wad/addon:2 addons/first_heroes_win.wad/init.lua:32
+msgid "First Heroes Win"
+msgstr ""
+
+#: addons/first_heroes_win.wad/addon:3
+msgid ""
+"The first player who has at least 4 fully trained soldiers in his warehouses "
+"wins the game. Teams are not supported yet."
+msgstr ""
+
+#: addons/first_heroes_win.wad/init.lua:35
+msgid ""
+"The player who has at least %1% fully trained soldier in his warehouses wins "
+"the game."
+msgid_plural ""
+"The player who has at least %1% fully trained soldiers in his warehouses "
+"wins the game."
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/first_heroes_win.wad/init.lua:41
+msgid "Number of heroes"
+msgstr ""
+
+#: addons/first_heroes_win.wad/init.lua:98
+msgid "Hero created!"
+msgstr ""
+
+#: addons/first_heroes_win.wad/init.lua:99
+msgid "%1% has created a hero!"
+msgstr ""
+
+#: addons/first_heroes_win.wad/init.lua:101
+msgid "You have a new Hero!"
+msgstr ""
+
+#: addons/first_heroes_win.wad/init.lua:103
+msgid "Hero Statistic:"
+msgstr ""
+
+#: addons/first_heroes_win.wad/init.lua:106
+msgid "%1% has %2%"
+msgstr ""
+
+#: addons/first_heroes_win.wad/init.lua:106
+#: addons/first_heroes_win.wad/init.lua:119
+msgid "%1% hero"
+msgid_plural "%1% heroes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/first_heroes_win.wad/init.lua:119
+msgid "%1%: %2%"
+msgstr ""
