@@ -188,6 +188,44 @@ public class Utils {
 		return l;
 	}
 
+	public static void fatalError(String str, Exception x) {
+		System.out.println("#########################################################");
+		System.out.println(" VERY FATAL ERROR – " + str);
+		System.out.println("  " + x);
+		System.out.println(" Something has gone seriously wrong here.");
+		System.out.println(" Killing the server in the hope that the maintainers");
+		System.out.println(" will hurry to resolve the problems.");
+		System.out.println("#########################################################");
+		System.exit(1);
+	}
+
+	public static void sendNotificationToGitHubThread(String msg) throws Exception {
+		msg = msg.replaceAll("\n", "\\\\n");
+		msg = msg.replaceAll("\t", "\\\\t");
+		msg = msg.replaceAll("\\$", "§");
+		msg = msg.replaceAll("\"", "❞");
+		msg = msg.replaceAll("'", "❜");
+
+		System.out.println("    Sending message: " + msg);
+
+		Process p = Runtime.getRuntime().exec(new String[] {"bash", "-c",
+			"curl -X POST -H \"Accept: application/vnd.github.v3+json\" -u " +
+					readProfile(new File("config"), null).get("githubusername").value + ":" +
+					readProfile(new File("config"), null).get("githubtoken").value +
+				" https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments -d '{\"body\":\"" + msg + "\"}'"});
+		p.waitFor();
+		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+		boolean err = false;
+		String str;
+		while ((str = b.readLine()) != null) {
+			System.out.println("    # " + str);
+			err |= str.contains("documentation_url");
+		}
+		System.out.println("    = " + p.exitValue());
+		if (err) throw new Exception("CURL output looks like failure");
+		if (p.exitValue() != 0) throw new Exception("CURL returned error code " + p.exitValue());
+	}
+
 	private static enum MergeResolverStatus { kUnchanged, kHead, kSource }
 	public static void resolveMergeConflicts(File f) throws Exception {
 		if (_staticprofiles.containsKey(f)) _staticprofiles.remove(f);

@@ -319,41 +319,13 @@ public class Server {
 					msg += "\n```\n\nThe automated syncs will discontinue until the server has been restarted. Please resolve the merge conflicts quickly." +
 							"  \nThank you :)";
 
-					msg = msg.replaceAll("\n", "\\\\n");
-					msg = msg.replaceAll("\t", "\\\\t");
-					msg = msg.replaceAll("\\$", "§");
-					msg = msg.replaceAll("\"", "❞");
-					msg = msg.replaceAll("'", "❜");
-
 					Utils.bash("bash", "-c", "git status");
 					Utils.bash("bash", "-c", "git restore --staged .");
 					Utils.bash("bash", "-c", "git checkout .");
-					System.out.println("    Sending message: " + msg);
 
-					p = Runtime.getRuntime().exec(new String[] {"bash", "-c",
-						"curl -X POST -H \"Accept: application/vnd.github.v3+json\" -u " +
-								Utils.readProfile(new File("config"), null).get("githubusername").value + ":" +
-								Utils.readProfile(new File("config"), null).get("githubtoken").value +
-							" https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments -d '{\"body\":\"" + msg + "\"}'"});
-					p.waitFor();
-					b = new BufferedReader(new InputStreamReader(p.getInputStream()));
-					boolean err = false;
-					while ((str = b.readLine()) != null) {
-						System.out.println("    # " + str);
-						err |= str.contains("documentation_url");
-					}
-					System.out.println("    = " + p.exitValue());
-					if (err) throw new Exception("CURL output looks like failure");
-					if (p.exitValue() != 0) throw new Exception("CURL returned error code " + p.exitValue());
+					Utils.sendNotificationToGitHubThread(msg);
 				} catch (Exception x) {
-					System.out.println("#########################################################");
-					System.out.println(" VERY FATAL ERROR – unable to send failure notification!");
-					System.out.println("  " + x);
-					System.out.println(" Something has gone seriously wrong here.");
-					System.out.println(" Killing the server in the hope that the maintainers");
-					System.out.println(" will hurry to resolve the problems.");
-					System.out.println("#########################################################");
-					System.exit(1);
+					Utils.fatalError("unable to send failure notification!", x);
 				}
 			} while (true);
 		}}.start();
@@ -603,14 +575,17 @@ public class Server {
 					File addOnDir = new File("addons", cmd[1]);
 					File addOnMain = new File(addOnDir, "addon");
 
+					TreeMap<String, Utils.Value> newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
+					boolean isUpdate = false;
+					String oldVersionString = null;
 					if (addOnDir.isDirectory()) {
 						TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]);
-						TreeMap<String, Utils.Value> newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
 
 						if (!oldProfile.get("category").value.equals(newProfile.get("category").value)) throw new ProtocolException(
 								"An add-on with the same name and a different category already exists.");
 
-						String[] oldVersion = oldProfile.get("version").value.split("\\.");
+						oldVersionString = oldProfile.get("version").value;
+						String[] oldVersion = oldVersionString.split("\\.");
 						String[] newVersion = newProfile.get("version").value.split("\\.");
 						Boolean newer = null;
 						for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
@@ -624,10 +599,37 @@ public class Server {
 							throw new ProtocolException("An add-on with the same name and an equal or newer version already exists.");
 						}
 
-						doDelete(addOnDir);
+						isUpdate = true;
 					} else {
 						Utils.initMetadata(cmd[1], username);
 					}
+
+					Utils.sendNotificationToGitHubThread(
+						(isUpdate ? ("An add-on has been updated by " + username) : ("A new add-on has been submitted by " + username)) + ":\n"
+							+ "\n- Name: " + cmd[1]
+							+ (isUpdate ? (
+									"\n- Old version: " + oldVersionString
+									+ "\n- New version: " + newProfile.get("version").value
+							) : (
+								"\n- Version: " + newProfile.get("version").value
+							))
+							+ (username.equals(newProfile.get("author").value) ?
+								("\n- Author: " + newProfile.get("author").value)
+								: ("\n- **Author: " + newProfile.get("author").value + "**")
+							)
+							+ "\n- Descname: " + newProfile.get("name").value
+							+ "\n- Description: " + newProfile.get("description").value
+							+ "\n- Category: " + newProfile.get("category").value
+							+ (newProfile.containsKey("sync_safe") ?
+								("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**")
+								: ("\n- Sync-safe: –")
+							)
+							+ "\n- Min WL version: " + (newProfile.containsKey("min_wl_version") ? newProfile.get("min_wl_version").value : "–")
+							+ "\n- Max WL version: " + (newProfile.containsKey("max_wl_version") ? newProfile.get("max_wl_version").value : "–")
+							+ "\n- Requires: " + (newProfile.get("requires").value.isEmpty() ? "–" : newProfile.get("requires").value)
+						+ "\n\nPlease review this add-on soonish."
+					);
+					if (isUpdate) doDelete(addOnDir);
 					tempDir.renameTo​(addOnDir);
 
 					out.println("ENDOFSTREAM");
