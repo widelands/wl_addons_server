@@ -1,12 +1,6 @@
 [main]
 host = https://www.transifex.com
 
-[widelands-addons.100-wells-wad]
-file_filter = po/100-wells.wad/<lang>.po
-source_file = po/100-wells.wad/100-wells.wad.pot
-source_lang = en
-type = PO
-
 [widelands-addons.auto-soldiers-cs-wad]
 file_filter = po/auto_soldiers_cs.wad/<lang>.po
 source_file = po/auto_soldiers_cs.wad/auto_soldiers_cs.wad.pot
