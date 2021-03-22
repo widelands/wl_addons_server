@@ -273,12 +273,12 @@ public class Server {
 
 	private static Random random = new Random(System.currentTimeMillis());
 	public static void main(String[] args) throws Exception {
-		Utils.bash("bash", "-c", "echo $PPID");
+		Utils.bash("bash", "-c", "echo $PPID");  // Print our PID to the logfile so the maintainer knows how to kill the server process.
 		System.out.println("Initializing SQL...");
 		Properties connectionProps = new Properties();
-		connectionProps.put("user", Utils.readProfile(new File("config"), null).get("databaseuser").value);
-		connectionProps.put("password", Utils.readProfile(new File("config"), null).get("databasepassword").value);
-		java.sql.Connection database = java.sql.DriverManager.getConnection​(Utils.readProfile(new File("config"), null).get("databasename").value, connectionProps);
+		connectionProps.put("user", Utils.config("databaseuser"));
+		connectionProps.put("password", Utils.config("databasepassword"));
+		java.sql.Connection database = java.sql.DriverManager.getConnection​(Utils.config("databasename"), connectionProps);
 
 		System.out.println("Server starting.");
 		ServerSocket serverSocket = new ServerSocket(7399);
@@ -479,7 +479,7 @@ public class Server {
 					return;
 				}
 				checkNameValid(cmd[1], false);
-				File f = new File ("uservotes", cmd[1]);
+				File f = new File(Utils.config("uservotesdir"), cmd[1]);
 				Utils.Value vote = f.isFile() ? Utils.readProfile(f, cmd[1]).get(username) : null;
 				out.println(vote == null ? "0" : vote.value);
 				out.println("ENDOFSTREAM");

@@ -152,7 +152,7 @@ public class Utils {
 	}
 
 	synchronized public static void registerVote(String addon, String user, String v) throws Exception {
-		File votesFile = new File("uservotes");
+		File votesFile = new File(config("uservotesdir"));
 		votesFile.mkdir();
 		votesFile = new File(votesFile, addon);
 		if (!votesFile.isFile()) votesFile.createNewFile();
@@ -188,6 +188,10 @@ public class Utils {
 		editMetadata(true, addon, ch);
 	}
 
+	public static String config(String key) throws Exception {
+		return readProfile(new File("config"), null).get(key).value;
+	}
+
 	public static long filesize(File dir) {
 		long l = 0;
 		for (File f : listSorted(dir)) {
@@ -219,8 +223,7 @@ public class Utils {
 
 		Process p = Runtime.getRuntime().exec(new String[] {"bash", "-c",
 			"curl -X POST -H \"Accept: application/vnd.github.v3+json\" -u " +
-					readProfile(new File("config"), null).get("githubusername").value + ":" +
-					readProfile(new File("config"), null).get("githubtoken").value +
+					config("githubusername") + ":" + config("githubtoken") +
 				" https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments -d '{\"body\":\"" + msg + "\"}'"});
 		p.waitFor();
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
