@@ -48,51 +48,53 @@ public class UpdateList {
 		Map<String, Data> result = new HashMap<>();
 		for (String addon : new File("addons").list()) {
 			if (!addon.endsWith(".wad")) continue;
-			File metadataFile = new File("metadata", addon);
-			if (!metadataFile.isFile()) {
+			File metadataFileMaintain = new File("metadata", addon + ".maintain");
+			File metadataFileServer = new File("metadata", addon + ".server");
+			if (!metadataFileMaintain.isFile()) {
 				while (_defaultUploader == null || _defaultUploader.isEmpty()) {
-					System.out.println("New add-on detected. Please enter your nickname:");
+					System.out.println("New add-on '" + addon + "' detected. Please enter your nickname:");
 					_defaultUploader = new BufferedReader(new InputStreamReader(System.in)).readLine();
 				}
 				Utils.initMetadata(addon, _defaultUploader);
 			}
-			TreeMap<String, Utils.Value> metadata = Utils.readProfile(metadataFile, addon);
+			TreeMap<String, Utils.Value> metadataMaintain = Utils.readProfile(metadataFileMaintain, addon);
+			TreeMap<String, Utils.Value> metadataServer = metadataFileServer.isFile() ? Utils.readProfile(metadataFileServer, addon) : null;
 
 			TreeMap<String, Utils.Value> edit = new TreeMap<>();
 			if (verify.contains(addon)) edit.put("security", new Utils.Value("security", "verified"));
 			if (increase.contains(addon)) {
 				edit.put("i18n_version", new Utils.Value("i18n_version",
-						"" + (Integer.valueOf(metadata.get("i18n_version").value) + 1)));
+						"" + (Integer.valueOf(metadataMaintain.get("i18n_version").value) + 1)));
 			}
 			if (!edit.isEmpty()) {
-				Utils.editMetadata(addon, edit);
-				metadata = Utils.readProfile(metadataFile, addon);
+				Utils.editMetadata(false, addon, edit);
+				metadataMaintain = Utils.readProfile(metadataFileMaintain, addon);
 			}
 
 			int[] votes = new int[10];
-			for (int i = 1; i <= votes.length; ++i) votes[i - 1] = Integer.valueOf(metadata.get("votes_" + i).value);
+			for (int i = 1; i <= votes.length; ++i) votes[i - 1] = metadataServer == null ? 0 : Integer.valueOf(metadataServer.get("votes_" + i).value);
 			List<Data.Comment> comments = new ArrayList<>();
-			int c = Integer.valueOf(metadata.get("comments").value);
+			int c = metadataServer == null ? 0 : Integer.valueOf(metadataServer.get("comments").value);
 			for (int i = 0; i < c; ++i) {
 				String msg = "";
-				int l = Integer.valueOf(metadata.get("comment_" + i).value);
+				int l = Integer.valueOf(metadataServer.get("comment_" + i).value);
 				// These lists don't allow newlines, so we use two spaces instead.
 				// Localization is not possible here.
-				for (int j = 0; j <= l; ++j) msg += metadata.get("comment_" + i + "_" + j).value + "  ";
+				for (int j = 0; j <= l; ++j) msg += metadataServer.get("comment_" + i + "_" + j).value + "  ";
 				comments.add(new Data.Comment(
-					metadata.get("comment_name_" + i).value,
+					metadataServer.get("comment_name_" + i).value,
 					msg,
-					metadata.get("comment_version_" + i).value,
-					Long.valueOf(metadata.get("comment_timestamp_" + i).value)
+					metadataServer.get("comment_version_" + i).value,
+					Long.valueOf(metadataServer.get("comment_timestamp_" + i).value)
 				));
 			}
 			result.put(addon, new Data(
-				metadata.get("version").value,
-				metadata.get("uploader").value,
-				Integer.valueOf(metadata.get("i18n_version").value),
-				metadata.get("security").value.equals("verified"),
-				Long.valueOf(metadata.get("timestamp").value),
-				Long.valueOf(metadata.get("downloads").value),
+				metadataMaintain.get("version").value,
+				metadataMaintain.get("uploader").value,
+				Integer.valueOf(metadataMaintain.get("i18n_version").value),
+				metadataMaintain.get("security").value.equals("verified"),
+				Long.valueOf(metadataMaintain.get("timestamp").value),
+				metadataServer == null ? 0 : Long.valueOf(metadataServer.get("downloads").value),
 				comments,
 				votes));
 		}
@@ -231,7 +233,7 @@ public class UpdateList {
 			TreeMap<String, Utils.Value> edit = new TreeMap<>();
 			edit.put("version", new Utils.Value("version", new_version));
 			edit.put("security", new Utils.Value("security", "unchecked"));
-			Utils.editMetadata(addon.getName(), edit);
+			Utils.editMetadata(false, addon.getName(), edit);
 		}
 	}
 
