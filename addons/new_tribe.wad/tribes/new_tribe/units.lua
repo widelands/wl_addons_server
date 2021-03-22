@@ -594,6 +594,7 @@ descriptions:new_tribe {
       {
          name = "newtribe_scouts_house",
          helptexts = {
+            no_scouting_building_connected = pgettext("building", "You need to connect this flag to a scout’s house before you can send a scout here."),
             -- TRANSLATORS: Purpose Helptext for a NewTribe production site: Scout's House
             purpose = pgettext("building", "Explores unknown territory.")
          }
