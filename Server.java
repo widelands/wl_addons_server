@@ -479,7 +479,8 @@ public class Server {
 					return;
 				}
 				checkNameValid(cmd[1], false);
-				Utils.Value vote = Utils.readProfile(new File("metadata", cmd[1]), cmd[1]).get("vote_" + username);
+				File f = new File ("uservotes", cmd[1]);
+				Utils.Value vote = f.isFile() ? Utils.readProfile(f, cmd[1]).get(username) : null;
 				out.println(vote == null ? "0" : vote.value);
 				out.println("ENDOFSTREAM");
 				return;

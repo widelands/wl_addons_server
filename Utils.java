@@ -152,17 +152,26 @@ public class Utils {
 	}
 
 	synchronized public static void registerVote(String addon, String user, String v) throws Exception {
+		File votesFile = new File("uservotes");
+		votesFile.mkdir();
+		votesFile = new File(votesFile, addon);
+		if (!votesFile.isFile()) votesFile.createNewFile();
+
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> metadata = readProfile(f, addon);
-		TreeMap<String, Value> ch = new TreeMap<>();
-		Value oldVote = metadata.get("vote_" + user);
+		TreeMap<String, Value> uservotes = readProfile(votesFile, addon);
+		TreeMap<String, Value> chM = new TreeMap<>();
+		TreeMap<String, Value> chV = new TreeMap<>();
+
+		Value oldVote = uservotes.get(user);
 		if (oldVote != null && !oldVote.value.equals("0")) {
 			if (oldVote.value.equals("" + v)) return;
-			ch.put("votes_" + oldVote.value, new Value("votes_" + oldVote.value, "" + (Long.valueOf(metadata.get("votes_" + oldVote.value).value) - 1)));
+			chM.put("votes_" + oldVote.value, new Value("votes_" + oldVote.value, "" + (Long.valueOf(metadata.get("votes_" + oldVote.value).value) - 1)));
 		}
-		ch.put("vote_" + user, new Value("vote_" + user, "" + v));
-		if (!v.equals("0")) ch.put("votes_" + v, new Value("votes_" + v, "" + (Long.valueOf(metadata.get("votes_" + v).value) + 1)));
-		editMetadata(true, addon, ch);
+		chV.put(user, new Value(user, "" + v));
+		if (!v.equals("0")) chM.put("votes_" + v, new Value("votes_" + v, "" + (Long.valueOf(metadata.get("votes_" + v).value) + 1)));
+		editMetadata(true, addon, chM);
+		editProfile(votesFile, addon, chV);
 	}
 
 	synchronized public static void comment(String addon, String user, String version, String message) throws Exception {
