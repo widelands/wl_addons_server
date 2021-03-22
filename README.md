@@ -36,6 +36,8 @@ If you added a new add-on, the `UpdateList` program will prompt you to enter you
 Just replace the folder below `addons` with the new one.
 Same applies to screenshots: Just replace or add new ones. Be sure to update the `descriptions` file.
 
+After **any** change to an add-on’s contents (even very small ones), you need to increase the add-on’s version number.
+
 After you have done run `java UpdateList`, then git add,commit,push.
 
 #### Verifying add-ons
