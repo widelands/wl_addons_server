@@ -115,8 +115,8 @@ local r = {
          push_textdomain(textdomain, true)
          local scores= "\n"
          for i, plr in ipairs(plrs) do
-            -- TRANSLATORS: Player x: y heroes
-            scores = scores.._("%1%: %2%"):bformat(plr.name, ngettext("%1% hero", "%1% heroes", plr_data[plr.number].nr_heroes):bformat(plr_data[plr.number].nr_heroes)).."\n"
+            -- TRANSLATORS: This is an item in a list in the form "Player Name: 3 heroes"
+            scores = scores .. ngettext("%1%: %2% hero", "%1%: %2% heroes", plr_data[plr.number].nr_heroes):bformat(plr.name, plr_data[plr.number].nr_heroes) .. "\n"
          end
          pop_textdomain()
          return scores
