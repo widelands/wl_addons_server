@@ -625,10 +625,6 @@ public class Server {
 						}
 
 						doDelete(addOnDir);
-						TreeMap<String, Utils.Value> edit = new TreeMap<>();
-						edit.put("version", newProfile.get("version"));
-						edit.put("security", new Utils.Value("security", "unchecked"));
-						Utils.editMetadata(cmd[1], edit);
 					} else {
 						Utils.initMetadata(cmd[1], username);
 					}
@@ -710,20 +706,21 @@ public class Server {
 		switch (version) {
 			case 4: {
 				TreeMap<String, Utils.Value> profile = Utils.readProfile(new File("addons/" + addon, "addon"), addon);
-				TreeMap<String, Utils.Value> metadata = Utils.readProfile(new File("metadata", addon), addon);
+				TreeMap<String, Utils.Value> metadataServer = Utils.readProfile(new File("metadata", addon + ".server"), addon);
+				TreeMap<String, Utils.Value> metadataMaintain = Utils.readProfile(new File("metadata", addon + ".maintain"), addon);
 				TreeMap<String, Utils.Value> screenies = Utils.readProfile(new File("screenshots/" + addon, "descriptions"), addon);
 
-				out.println(profile.get("name"         ).value        );
-				out.println(profile.get("name"         ).value(locale));
-				out.println(profile.get("description"  ).value        );
-				out.println(profile.get("description"  ).value(locale));
-				out.println(profile.get("author"       ).value        );
-				out.println(profile.get("author"       ).value(locale));
-				out.println(metadata.get("uploader"    ).value(locale));
-				out.println(profile.get("version"      ).value);
-				out.println(metadata.get("i18n_version").value);
-				out.println(profile.get("category"     ).value);
-				out.println(profile.get("requires"     ).value);
+				out.println(profile.get         ("name"          ).value        );
+				out.println(profile.get         ("name"          ).value(locale));
+				out.println(profile.get         ("description"   ).value        );
+				out.println(profile.get         ("description"   ).value(locale));
+				out.println(profile.get         ("author"        ).value        );
+				out.println(profile.get         ("author"        ).value(locale));
+				out.println(metadataMaintain.get("uploader"      ).value(locale));
+				out.println(profile.get         ("version"       ).value);
+				out.println(metadataMaintain.get("i18n_version"  ).value);
+				out.println(profile.get         ("category"      ).value);
+				out.println(profile.get         ("requires"      ).value);
 				out.println((profile.containsKey("min_wl_version") ? profile.get("min_wl_version").value : ""));
 				out.println((profile.containsKey("max_wl_version") ? profile.get("max_wl_version").value : ""));
 				out.println((profile.containsKey("sync_safe"     ) ? profile.get("sync_safe"     ).value : ""));
@@ -732,21 +729,22 @@ public class Server {
 				for (String key : screenies.keySet()) out.println(key + "\n" + screenies.get(key).value(locale));
 
 				out.println(Utils.filesize(new File("addons", addon)));
-				out.println(metadata.get("timestamp").value);
-				out.println(metadata.get("downloads").value);
-				for (int i = 1; i <= 10; ++i) out.println(metadata.get("votes_" + i).value);
+				out.println(metadataMaintain.get("timestamp").value);
+				out.println(metadataServer.get("downloads").value);
+				for (int i = 1; i <= 10; ++i) out.println(metadataServer.get("votes_" + i).value);
 
-				int c = Integer.valueOf(metadata.get("comments").value);
+				int c = Integer.valueOf(metadataServer.get("comments").value);
 				out.println(c);
 				for (int i = 0; i < c; ++i) {
-					out.println(metadata.get("comment_name_"      + i).value(locale));
-					out.println(metadata.get("comment_timestamp_" + i).value);
-					out.println(metadata.get("comment_version_"   + i).value);
-					int l = Integer.valueOf(metadata.get("comment_" + i).value);
+					out.println(metadataServer.get("comment_name_"      + i).value(locale));
+					out.println(metadataServer.get("comment_timestamp_" + i).value);
+					out.println(metadataServer.get("comment_version_"   + i).value);
+					int l = Integer.valueOf(metadataServer.get("comment_" + i).value);
 					out.println(l);
-					for (int j = 0; j <= l; ++j) out.println(metadata.get("comment_" + i + "_" + j).value(locale));
+					for (int j = 0; j <= l; ++j) out.println(metadataServer.get("comment_" + i + "_" + j).value(locale));
 				}
-				out.println(metadata.get("security").value);
+				out.println(metadataMaintain.get("version").value.equals(profile.get("version").value) ?
+					metadataMaintain.get("security").value : "unchecked");
 
 				File iconFile = new File("addons/" + addon, "icon.png");
 				if (iconFile.isFile()) {

@@ -124,32 +124,35 @@ public class Utils {
 		out.close();
 	}
 
-	synchronized public static void editMetadata(String addon, TreeMap<String, Value> changes) throws Exception {
-		editProfile(new File("metadata", addon), addon, changes);
+	synchronized public static void editMetadata(boolean server, String addon, TreeMap<String, Value> changes) throws Exception {
+		editProfile(new File("metadata", addon + (server ? ".server" : ".maintain")), addon, changes);
 	}
 
 	synchronized public static void initMetadata(String addon, String uploader) throws Exception {
-		PrintWriter w = new PrintWriter(new File("metadata", addon));
+		PrintWriter w = new PrintWriter(new File("metadata", addon + ".maintain"));
 		w.println("timestamp=\"" + (System.currentTimeMillis() / 1000) + "\"");
-		w.println("downloads=\"0\"");
-		w.println("comments=\"0\"");
 		w.println("security=\"unchecked\"");
 		w.println("uploader=\"" + uploader + "\"");
 		w.println("i18n_version=\"1\"");
 		w.println("version=\"\"");
+		w.close();
+
+		w = new PrintWriter(new File("metadata", addon + ".server"));
+		w.println("downloads=\"0\"");
+		w.println("comments=\"0\"");
 		for (int i = 1; i <= 10; ++i) w.println("votes_" + i + "=\"0\"");
 		w.close();
 	}
 
 	synchronized public static void registerDownload(String addon) throws Exception {
-		File f = new File("metadata", addon);
+		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 		ch.put("downloads", new Value("downloads", "" + (Long.valueOf(readProfile(f, addon).get("downloads").value) + 1)));
-		editMetadata(addon, ch);
+		editMetadata(true, addon, ch);
 	}
 
 	synchronized public static void registerVote(String addon, String user, String v) throws Exception {
-		File f = new File("metadata", addon);
+		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> metadata = readProfile(f, addon);
 		TreeMap<String, Value> ch = new TreeMap<>();
 		Value oldVote = metadata.get("vote_" + user);
@@ -159,11 +162,11 @@ public class Utils {
 		}
 		ch.put("vote_" + user, new Value("vote_" + user, "" + v));
 		if (!v.equals("0")) ch.put("votes_" + v, new Value("votes_" + v, "" + (Long.valueOf(metadata.get("votes_" + v).value) + 1)));
-		editMetadata(addon, ch);
+		editMetadata(true, addon, ch);
 	}
 
 	synchronized public static void comment(String addon, String user, String version, String message) throws Exception {
-		File f = new File("metadata", addon);
+		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 		int c = Integer.valueOf(readProfile(f, addon).get("comments").value);
 		ch.put("comments", new Value("comments", "" + (c + 1)));
@@ -173,7 +176,7 @@ public class Utils {
 		String[] msg = message.split("\n");
 		ch.put("comment_" + c, new Value("comment_" + c, "" + (msg.length - 1)));
 		for (int i = 0; i < msg.length; ++i) ch.put("comment_" + c + "_" + i, new Value("comment_" + c + "_" + i, msg[i]));
-		editMetadata(addon, ch);
+		editMetadata(true, addon, ch);
 	}
 
 	public static long filesize(File dir) {
