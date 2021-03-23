@@ -236,6 +236,7 @@ public class UpdateList {
 		}
 	}
 
+	private static final int kHighestListVersion = 3;
 	public static void main(String ... args) throws Exception {
 		List<String> increase_i18n = new ArrayList<>();
 		List<String> verify = new ArrayList<>();
@@ -252,15 +253,20 @@ public class UpdateList {
 				return;
 			}
 		}
-		System.out.println("Parsing lists");
+		System.out.println("Parsing lists...");
 		final Map<String, Data> data = detectAndUpdateMetadata(increase_i18n, verify);
-		for (int listVersion = 1; listVersion <= 3; ++listVersion) {
+		File[] files = Utils.listSorted(new File("addons"));
+		final int total = kHighestListVersion * files.length;
+		final int digits1 = Integer.toString(total).length();
+		final int digits2 = Integer.toString(kHighestListVersion).length();
+		int progress = 0;
+		for (int listVersion = 1; listVersion <= kHighestListVersion; ++listVersion) {
 			PrintWriter write = new PrintWriter(new File(listVersion == 1 ? "list" : ("list_" + listVersion)));
-			File[] files = Utils.listSorted(new File("addons"));
 			write.println(listVersion);
 			write.println(files.length);
 			for (File file : files) {
-				System.out.println("Writing add-on " + file.getName() + " for version " + listVersion);
+				System.out.println(String.format("[%" + digits1 + "d/%" + digits1 + "d] Writing version %" + digits2 + "d for add-on %s",
+						++progress, total, listVersion, file.getName()));
 				writeAddon(listVersion, write, file, data.get(file.getName()));
 			}
 			write.close();

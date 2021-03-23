@@ -19,7 +19,12 @@ jobs:
       run: |
         if [ -n "$(git status -s)" ]
         then
-          echo "Lists are not clean!"
+          echo "################################################################"
+          echo "  The lists are not clean! Run the following commands to"
+          echo "  clean up your lists, then commit and push the changes."
+          echo "      javac *.java"
+          echo "      java UpdateList"
+          echo "################################################################"
           git status
           git diff
           exit 1
