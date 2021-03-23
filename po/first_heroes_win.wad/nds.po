@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 03:17+0000\n"
+"POT-Creation-Date: 2021-03-23 03:18+0000\n"
 "PO-Revision-Date: 2021-03-20 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -73,12 +73,14 @@ msgid "%1% has %2%"
 msgstr "%1% hett %2%"
 
 #: addons/first_heroes_win.wad/init.lua:106
-#: addons/first_heroes_win.wad/init.lua:119
 msgid "%1% hero"
 msgid_plural "%1% heroes"
 msgstr[0] "%1% Held"
 msgstr[1] "%1% Helden"
 
 #: addons/first_heroes_win.wad/init.lua:119
-msgid "%1%: %2%"
-msgstr "%1%: %2%"
+#, fuzzy
+msgid "%1%: %2% hero"
+msgid_plural "%1%: %2% heroes"
+msgstr[0] "%1%: %2%"
+msgstr[1] "%1%: %2%"

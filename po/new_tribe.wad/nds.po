@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 03:17+0000\n"
+"POT-Creation-Date: 2021-03-23 03:18+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -994,59 +994,66 @@ msgctxt "building"
 msgid "Draws water out of the deep."
 msgstr "Hisst Water ut de Deepde."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:598
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:597
+msgctxt "building"
+msgid ""
+"You need to connect this flag to a scout’s house before you can send a scout "
+"here."
+msgstr ""
+
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:599
 msgctxt "building"
 msgid "Explores unknown territory."
 msgstr "Förskt frömde Geweste ut."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:607
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:608
 msgctxt "building"
 msgid "Plants and harvests reed."
 msgstr "Plant un arnt Reit."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:614
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:615
 msgctxt "building"
 msgid "Forges all the tools that your workers need."
 msgstr "Smeedt all dat Warktüüg, wat diene Arbeiders bruken."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:621
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:622
 msgctxt "newtribe_building"
 msgid "Bakes bread for soldiers and miners alike."
 msgstr "Backt Brood för de Soldaten un Bargwarkskeerls."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:623
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:624
 msgctxt "newtribe_building"
 msgid "The baker needs %1% on average to bake a loaf of bread."
 msgstr "De Backer bruukt dör de Bank %1% um een Brood to backen."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:630
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:631
 msgctxt "newtribe_building"
 msgid "Equips recruits and trains them as soldiers."
 msgstr "Rüst Lehrwichter ut un maakt se to Soldaten."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:639
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:640
 msgctxt "newtribe_building"
 msgid ""
 "Breeds cute and helpful donkeys for adding them to the transportation system."
 msgstr "Tücht nüte, godige Langohren för dat Stratennett."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:646
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:647
 msgctxt "building"
 msgid "Sows and harvests rye."
 msgstr "Sait un arnt Rogg."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:648
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:649
 msgctxt "newtribe_building"
 msgid "The farmer needs %1% on average to sow and harvest a sheaf of rye."
 msgstr ""
 "De Buur bruukt dör de Bank %1% um een Bünsel Rogg to saien un to arnten."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:657
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:658
 msgctxt "newtribe_building"
 msgid "Trains soldiers in ‘Evade’."
 msgstr "Lehrt Soldaten »Utwieken«."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:659
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:660
 msgctxt "newtribe_building"
 msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
@@ -1055,7 +1062,7 @@ msgstr ""
 "»Utwieken« verhoogt de Kans, dat een Soldat vum Feind nich truffen un also "
 "nich verletzt word."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:662
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:663
 msgctxt "newtribe_building"
 msgid ""
 "NewTribe soldiers cannot be trained in ‘Defense’, ‘Attack’, and ‘Health’ and "
@@ -1064,14 +1071,14 @@ msgstr ""
 "De Soldaten vun de Neje Volk könen keene »Verteidigung«, keen »Angriep« un "
 "keene »Gesundheid« öven un blieven immer up hör Anfang-Stand."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:671
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:680
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:672
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:681
 msgctxt "building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr "Brengt Soldaten unner, um dien Gewest to vergrotern."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:673
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:682
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:674
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:683
 msgctxt "building"
 msgid ""
 "If you’re low on soldiers to occupy new military sites, use the downward "
@@ -1082,17 +1089,17 @@ msgstr ""
 "kannst du de Tahl vun Soldaten mit de Piel-runner-Knoop minnern. Du kannst "
 "ok eenen Soldat anklicken, um hüm wegtostüren."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:691
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:692
 msgctxt "building"
 msgid "Builds ferries."
 msgstr "Baut Fähren."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:693
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:694
 msgctxt "building"
 msgid "Needs water nearby."
 msgstr "Bruukt Water in de Naberskupp."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:700
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:701
 msgctxt "building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
@@ -1101,32 +1108,32 @@ msgstr ""
 "Baut Schippen, de för tum Hanneln tüsken Muden un tum Gründen vun nejen "
 "Dörpen bruukt worden."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:709
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:710
 msgctxt "building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr "»Schimp nich tegen de Baukeerl, well keene Baumaterialien hett.«"
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:711
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:712
 msgctxt "building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr "Seggwies, wat över all Aarden vun unmögelken Upgaven seggt word"
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:713
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:714
 msgctxt "building"
 msgid "A new building is being built at this construction site."
 msgstr "An deeser Baustee word een nejes Huus baut."
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:720
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:721
 msgctxt "building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr "»Neje Padden kummen ut, wenn du de ollen ok mal plattrietst.«"
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:722
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:723
 msgctxt "building"
 msgid "Proverb"
 msgstr "Seggwies"
 
-#: addons/new_tribe.wad/tribes/new_tribe/units.lua:724
+#: addons/new_tribe.wad/tribes/new_tribe/units.lua:725
 msgctxt "building"
 msgid ""
 "A building is being dismantled at this dismantle site, returning some of the "
