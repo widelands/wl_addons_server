@@ -23,7 +23,7 @@ jobs:
             git config --global user.email "bunnybot@widelands.org"
             git add .
             git commit -m "Automated lists update"
-            git push
+            git push origin "${GITHUB_REF##*/}"
             exit 0
           fi
           echo "################################################################"
