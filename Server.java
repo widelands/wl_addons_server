@@ -261,7 +261,7 @@ public class Server {
 				}
 			}
 			for (Thread t : kill.keySet()) {
-				System.out.println("Force-closing socket for [" + Thread.currentThread().getName() + "] (last activity was " +
+				System.out.println("Force-closing socket for [" + Thread.currentThread().getName() + "] at " + new Date() + " (last activity was " +
 						Utils.durationString(kill.get(t)) + " ago).");
 				Socket s = lastActivity.remove(t).socket;
 				s.close();
@@ -274,13 +274,13 @@ public class Server {
 	private static Random random = new Random(System.currentTimeMillis());
 	public static void main(String[] args) throws Exception {
 		Utils.bash("bash", "-c", "echo $PPID");  // Print our PID to the logfile so the maintainer knows how to kill the server process.
-		System.out.println("Initializing SQL...");
+		System.out.println("[" + new Date() + "] Initializing SQL...");
 		Properties connectionProps = new Properties();
 		connectionProps.put("user", Utils.config("databaseuser"));
 		connectionProps.put("password", Utils.config("databasepassword"));
 		java.sql.Connection database = java.sql.DriverManager.getConnection​(Utils.config("databasename"), connectionProps);
 
-		System.out.println("Server starting.");
+		System.out.println("[" + new Date() + "] Server starting.");
 		ServerSocket serverSocket = new ServerSocket(7399);
 		new Thread() { public void run() {
 			boolean errored = false;
@@ -335,16 +335,20 @@ public class Server {
 				synchronized(syncer) { syncer.tick(s); }
 				PrintStream out = null;
 				try {
-					System.out.println("[" + Thread.currentThread().getName() + "] Connection received.");
+					System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] Connection received from " +
+							s.getInetAddress() + ":" + s.getPort() + ".");
 					out = new PrintStream(s.getOutputStream(), true);
 					InputStream in = s.getInputStream();
 
 					final int protocolVersion = Integer.valueOf(readLine(in));
+					System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] Version: " + protocolVersion);
 					if (protocolVersion != 4) {
-						throw new ProtocolException("Unsupported version");
+						throw new ProtocolException("Unsupported version '" + protocolVersion + "' (only supported version is '4')");
 					}
 					final String locale = readLine(in);
+					System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] Locale: " + locale);
 					final String username = readLine(in);
+					System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] Username: " + username);
 					if (!readLine(in).equals("ENDOFSTREAM")) {
 						throw new ProtocolException("Stream continues past its end");
 					}
@@ -380,13 +384,14 @@ public class Server {
 					String cmd;
 					while ((cmd = readLine(in, false)) != null) { synchronized(syncer) {
 						syncer.tick(s);
+						System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] Received command: " + cmd);
 						handle(cmd.split(" "), out, in, protocolVersion, username, locale);
 					}}
 				} catch (Exception e) {
-					System.out.println("[" + Thread.currentThread().getName() + "] ERROR: " + e);
+					System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] ERROR: " + e);
 					if (out != null) out.println(e);
 				}
-				System.out.println("[" + Thread.currentThread().getName() + "] Connection quit.");
+				System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] Connection quit.");
 				if (out != null) out.close();
 			}}.start();
 		}
@@ -466,7 +471,7 @@ public class Server {
 			}
 			case CMD_VOTE:  // Args: name vote
 				if (username.isEmpty()) {
-					throw new ProtocolException("Wrong username or password");
+					throw new ProtocolException("You need to log in to vote");
 				} else {
 					checkNameValid(cmd[1], false);
 					Utils.registerVote(cmd[1], username, cmd[2]);
@@ -487,11 +492,12 @@ public class Server {
 			}
 			case CMD_SUBMIT_SCREENSHOT: {  // Args: name filesize checksum whitespaces description
 				if (username.isEmpty()) {
-					throw new ProtocolException("Wrong username or password");
+					throw new ProtocolException("You need to log in to submit screenshots");
 				}
 				checkNameValid(cmd[1], false);
 				long size = Long.valueOf(cmd[2]);
-				if (size > 4 * 1000 * 1000) throw new ProtocolException("Filesize " + size + " exceed the limit of 4 MB");
+				if (size > 4 * 1000 * 1000) throw new ProtocolException("Filesize " + size +
+						" exceeds the limit of 4 MB. If you really need to submit such a large image, please contact the Widelands Development Team.");
 				File tempDir = Utils.createTempDir();
 
 				try {
@@ -531,7 +537,7 @@ public class Server {
 			}
 			case CMD_SUBMIT: {  // Args: name
 				if (username.isEmpty()) {
-					throw new ProtocolException("Wrong username or password");
+					throw new ProtocolException("You need to log in to submit add-ons");
 				}
 				checkNameValid(cmd[1], false);
 				File tempDir = Utils.createTempDir();
@@ -556,7 +562,8 @@ public class Server {
 							final String checksum = readLine(in);
 							final long size = Long.valueOf(readLine(in));
 							totalSize += size;
-							if (totalSize > 200 * 1000 * 1000) throw new ProtocolException("Filesize limit of 200 MB exceeded");
+							if (totalSize > 200 * 1000 * 1000) throw new ProtocolException("Filesize limit of 200 MB exceeded. " +
+									"If you really want to submit such a large add-on, please contact the Widelands Development Team.");
 							File file = new File(dirnames[i], filename);
 							PrintStream stream = new PrintStream(file);
 							for (long l = 0; l < size; ++l) {
@@ -583,7 +590,8 @@ public class Server {
 						TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]);
 
 						if (!oldProfile.get("category").value.equals(newProfile.get("category").value)) throw new ProtocolException(
-								"An add-on with the same name and a different category already exists.");
+								"An add-on with the same name and a different category already exists. Old category is '" +
+								oldProfile.get("category").value + "', new category is '" + newProfile.get("category").value + "'.");
 
 						oldVersionString = oldProfile.get("version").value;
 						String[] oldVersion = oldVersionString.split("\\.");
@@ -597,7 +605,8 @@ public class Server {
 						}
 						if (newer == null) newer = (oldVersion.length < newVersion.length);
 						if (!newer) {
-							throw new ProtocolException("An add-on with the same name and an equal or newer version already exists.");
+							throw new ProtocolException("An add-on with the same name and an equal or newer version already exists. Existing version is '" +
+								oldVersionString + "', your version is '" + newProfile.get("version").value + "'.");
 						}
 
 						isUpdate = true;
