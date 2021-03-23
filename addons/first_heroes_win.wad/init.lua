@@ -100,7 +100,7 @@ local r = {
          else
             title = _("You have a new Hero!")
          end
-         msg = msg .. h2(_("Hero Statistic:"))
+         msg = msg .. h2(_("Hero Statistics:"))
          for i, plr in ipairs(plrs) do
             -- TRANSLATORS: "Player x has y Heroes"
             msg = msg .. li(_("%1% has %2%"):bformat(plr.name, ngettext("%1% hero", "%1% heroes", plr_data[plr.number].nr_heroes):bformat(plr_data[plr.number].nr_heroes)))
