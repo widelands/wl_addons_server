@@ -1,0 +1,28 @@
+name: Checking lists integrity
+on:
+  pull_request:
+  push:
+jobs:
+  check:
+    name: Check the lists
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+    - name: Updating the lists
+      run: |
+        javac *.java
+        java UpdateList
+    - name: Check integrity
+      run: |
+        if [ -n "$(git status -s)" ]
+        then
+          echo "Lists are not clean!"
+          git status
+          git diff
+          exit 1
+        else
+          echo "Lists are clean"
+        fi
