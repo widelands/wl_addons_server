@@ -72,9 +72,9 @@ public class UpdateList {
 			}
 
 			int[] votes = new int[10];
-			for (int i = 1; i <= votes.length; ++i) votes[i - 1] = metadataServer == null ? 0 : Integer.valueOf(metadataServer.get("votes_" + i).value);
+			for (int i = 1; i <= votes.length; ++i) votes[i - 1] = Integer.valueOf(metadataServer.get("votes_" + i).value);
 			List<Data.Comment> comments = new ArrayList<>();
-			int c = metadataServer == null ? 0 : Integer.valueOf(metadataServer.get("comments").value);
+			int c = Integer.valueOf(metadataServer.get("comments").value);
 			for (int i = 0; i < c; ++i) {
 				String msg = "";
 				int l = Integer.valueOf(metadataServer.get("comment_" + i).value);
@@ -94,7 +94,7 @@ public class UpdateList {
 				Integer.valueOf(metadataMaintain.get("i18n_version").value),
 				metadataMaintain.get("security").value.equals("verified"),
 				Long.valueOf(metadataMaintain.get("timestamp").value),
-				metadataServer == null ? 0 : Long.valueOf(metadataServer.get("downloads").value),
+				Long.valueOf(metadataServer.get("downloads").value),
 				comments,
 				votes));
 		}
@@ -149,8 +149,6 @@ public class UpdateList {
 			}
 		}
 	}
-
-	private static final float[] kDefaultRatings = new float[] { 9.5f, 9.1f, 8.7f, 8.3f, 7.9f, 7.4f, 6.8f };  // dummy values
 
 	private static void writeAddon(int listVersion, PrintWriter w, File addon, Data data) throws Exception {
 		String descname = null, descr = null, author = null, category = null, new_version = null, minWLVersion = "", maxWLVersion = "", sync_safe = "desync";
