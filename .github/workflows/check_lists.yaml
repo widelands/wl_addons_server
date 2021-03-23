@@ -9,8 +9,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-      with:
-        fetch-depth: 1
     - name: Updating the lists
       run: |
         javac *.java
@@ -19,6 +17,15 @@ jobs:
       run: |
         if [ -n "$(git status -s)" ]
         then
+          if [ ${{ github.event_name }} == "pull_request" ]
+          then
+            git config --global user.name "The Widelands Code Formatting Bot"
+            git config --global user.email "bunnybot@widelands.org"
+            git add .
+            git commit -m "Automated lists update"
+            git push
+            exit 0
+          fi
           echo "################################################################"
           echo "  The lists are not clean! Run the following commands to"
           echo "  clean up your lists, then commit and push the changes."
