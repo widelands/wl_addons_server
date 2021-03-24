@@ -149,8 +149,6 @@ public class UpdateList {
 		}
 	}
 
-	private static final float[] kDefaultRatings = new float[] { 9.5f, 9.1f, 8.7f, 8.3f, 7.9f, 7.4f, 6.8f };  // dummy values
-
 	private static void writeAddon(int listVersion, PrintWriter w, File addon, Data data) throws Exception {
 		String descname = null, descr = null, author = null, category = null, new_version = null, minWLVersion = "", maxWLVersion = "", sync_safe = "desync";
 		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(),

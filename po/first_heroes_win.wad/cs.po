@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-23 03:18+0000\n"
+"POT-Creation-Date: 2021-03-24 03:12+0000\n"
 "PO-Revision-Date: 2021-03-20 17:12+0000\n"
 "Last-Translator: Ondřej Itřech, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -70,7 +70,8 @@ msgid "You have a new Hero!"
 msgstr "Máš nového hrdinu!"
 
 #: addons/first_heroes_win.wad/init.lua:103
-msgid "Hero Statistic:"
+#, fuzzy
+msgid "Hero Statistics:"
 msgstr "Statistika hrdinů:"
 
 #: addons/first_heroes_win.wad/init.lua:106
@@ -86,10 +87,9 @@ msgstr[2] "%1% hrdinů"
 msgstr[3] "%1% hrdinů"
 
 #: addons/first_heroes_win.wad/init.lua:119
-#, fuzzy
 msgid "%1%: %2% hero"
 msgid_plural "%1%: %2% heroes"
-msgstr[0] "%1%: %2%"
-msgstr[1] "%1%: %2%"
-msgstr[2] "%1%: %2%"
-msgstr[3] "%1%: %2%"
+msgstr[0] "%1%: %2% hrdina"
+msgstr[1] "%1%: %2% hrdinové"
+msgstr[2] "%1%: %2% hrdinů"
+msgstr[3] "%1%: %2% hrdinů"
