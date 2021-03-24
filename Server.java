@@ -235,7 +235,9 @@ public class Server {
 			UpdateList.main();
 			Utils.bash("bash", "-c", "git add .");
 			Utils.bash("bash", "-c", "git commit -m 'Automated server sync'");
-			Utils.bash("bash", "-c", "git push origin master");
+			Utils.bash("bash", "-c", "git push https://" +
+					Utils.config("githubusername") + ":" + Utils.config("githubtoken") +
+					"@github.com/widelands/wl_addons_server.git master");
 			Utils.bash("bash", "-c", "git stash clear");
 		}
 
