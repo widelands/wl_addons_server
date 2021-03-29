@@ -154,12 +154,12 @@ public class Server {
 		CMD_GET_VOTE,
 
 		/**
-		 * CMD_COMMENT name version whitespaces message
+		 * CMD_COMMENT name version lines
 		 * Vote on an add-on.
 		 * Arg 1: Add-on name
 		 * Arg 2: Add-on version
-		 * Arg 3: Number of whitespaces in the message
-		 * Arg 4: Comment message (NOTE: use '\0' instead of \n for line breaks)
+		 * Arg 3: Number of lines in the message
+		 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
 		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_COMMENT,
@@ -282,8 +282,8 @@ public class Server {
 		connectionProps.put("password", Utils.config("databasepassword"));
 		java.sql.Connection database = java.sql.DriverManager.getConnection​(Utils.config("databasename"), connectionProps);
 
-		System.out.println("[" + new Date() + "] Server starting.");
-		ServerSocket serverSocket = new ServerSocket(7399);
+		System.out.println("[" + new Date() + "] Server starting...");
+		ServerSocket serverSocket = new ServerSocket(Integer.valueOf(Utils.config("port")));
 		new Thread() { public void run() {
 			boolean errored = false;
 			do try {
@@ -331,6 +331,7 @@ public class Server {
 				}
 			} while (true);
 		}}.start();
+		System.out.println("[" + new Date() + "] Ready.");
 		while (true) {
 			Socket s = serverSocket.accept();
 			new Thread() { public void run() {
@@ -420,10 +421,15 @@ public class Server {
 		if (name.contains("..")) throw new ProtocolException("Name '" + name + "' may not contain '..'");
 	}
 
+	public static void checkNrArgs(String[] cmd, int expected) {
+		if (cmd.length != expected + 1) throw new ProtocolException("Expected " + expected + " argument(s), found " + (cmd.length - 1));
+	}
+
 	private static void handle(String[] cmd, PrintStream out, InputStream in,
 			int version, String username, String locale) throws Exception {
 		switch (CMD.valueOf(cmd[0])) {
 			case CMD_LIST: {  // Args: –
+				checkNrArgs(cmd, 0);
 				File[] names = listSorted(new File("addons"));
 				String str = "" + names.length;
 				for (File s : names) str += "\n" + s.getName();
@@ -432,10 +438,12 @@ public class Server {
 				return;
 			}
 			case CMD_INFO:  // Args: name
+				checkNrArgs(cmd, 1);
 				checkNameValid(cmd[1], false);
 				info(version, cmd[1], locale, out);
 				return;
 			case CMD_DOWNLOAD: {  // Args: name
+				checkNrArgs(cmd, 1);
 				checkNameValid(cmd[1], false);
 				DirInfo dir = new DirInfo(new File("addons", cmd[1]));
 				Utils.registerDownload(cmd[1]);
@@ -446,6 +454,7 @@ public class Server {
 				return;
 			}
 			case CMD_I18N: {  // Args: name
+				checkNrArgs(cmd, 1);
 				checkNameValid(cmd[1], false);
 				DirInfo dir = new DirInfo(new File("i18n", cmd[1]));
 				dir.writeAllFileInfos(out);
@@ -453,25 +462,32 @@ public class Server {
 				return;
 			}
 			case CMD_SCREENSHOT: {  // Args: addon screenie
+				checkNrArgs(cmd, 2);
 				checkNameValid(cmd[1], false);
 				checkNameValid(cmd[2], false);
 				writeOneFile(new File("screenshots/" + cmd[1], cmd[2]), out);
 				out.println("ENDOFSTREAM");
 				return;
 			}
-			case CMD_COMMENT: {  // Args: name version whitespaces message
+			case CMD_COMMENT: {  // Args: name version lines
+				checkNrArgs(cmd, 3);
 				if (username.isEmpty()) {
 					out.println("Please log in to comment");
 					return;
 				}
 				checkNameValid(cmd[1], false);
-				String msg = cmd[4];
-				for (int i = 0; i < Integer.valueOf(cmd[3]); ++i) msg += " " + cmd[5 + i];
-				Utils.comment(cmd[1], username, cmd[2], msg.replaceAll("\0", "\n"));
+				String msg = "";
+				for (int i = Integer.valueOf(cmd[3]); i > 0; --i) {
+					if (!msg.isEmpty()) msg += "\n";
+					msg += readLine(in);
+				}
+				if (!readLine(in).equals("ENDOFSTREAM")) throw new ProtocolException("Stream continues past its end");
+				Utils.comment(cmd[1], username, cmd[2], msg);
 				out.println("ENDOFSTREAM");
 				return;
 			}
 			case CMD_VOTE:  // Args: name vote
+				checkNrArgs(cmd, 2);
 				if (username.isEmpty()) {
 					throw new ProtocolException("You need to log in to vote");
 				} else {
@@ -481,6 +497,7 @@ public class Server {
 				}
 				return;
 			case CMD_GET_VOTE: {  // Args: name
+				checkNrArgs(cmd, 1);
 				if (username.isEmpty()) {
 					out.println("NOT_LOGGED_IN");  // No exception here.
 					return;
@@ -493,6 +510,7 @@ public class Server {
 				return;
 			}
 			case CMD_SUBMIT_SCREENSHOT: {  // Args: name filesize checksum whitespaces description
+				checkNrArgs(cmd, 5);
 				if (username.isEmpty()) {
 					throw new ProtocolException("You need to log in to submit screenshots");
 				}
@@ -538,6 +556,7 @@ public class Server {
 				return;
 			}
 			case CMD_SUBMIT: {  // Args: name
+				checkNrArgs(cmd, 1);
 				if (username.isEmpty()) {
 					throw new ProtocolException("You need to log in to submit add-ons");
 				}
