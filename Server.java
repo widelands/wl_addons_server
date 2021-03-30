@@ -187,12 +187,9 @@ public class Server {
 		CMD_SUBMIT_SCREENSHOT,
 
 		/**
-		 * CMD_CONTACT pm mail lines
+		 * CMD_CONTACT lines
 		 * Send an enquiry to the Widelands Development Team.
-		 * Arg 1: Whether the user wants to be contacted by PM (true or false)
-		 * Arg 2: The e-mail to use for contacting (may be "")
-		 * Arg 3: Number of lines in the message
-		 * Then one line with the user's real name.
+		 * Arg 1: Number of lines in the message
 		 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
 		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
@@ -696,29 +693,17 @@ public class Server {
 				}
 				return;
 			}
-			case CMD_CONTACT: {  // Args: pm mail lines
-				checkNrArgs(cmd, 3);
-
-				boolean pm = cmd[1].equalsIgnoreCase("true");
-				if (pm && username.isEmpty()) throw new ProtocolException("PM is only available for logged-in users");
-				if (!pm && cmd[2].isEmpty()) throw new ProtocolException("Neither e-mail nor PM specified");
-				String realname = readLine(in);
-				if (realname.isEmpty()) throw new ProtocolException("Name is empty");
+			case CMD_CONTACT: {  // Args: lines
+				checkNrArgs(cmd, 1);
+				if (username.isEmpty()) throw new ProtocolException("You need to log in to use the contact form");
 
 				String msg = "";
-				for (int i = Integer.valueOf(cmd[3]); i > 0; --i) {
-					msg += "\n > ";
+				for (int i = Integer.valueOf(cmd[1]); i > 0; --i) {
+					msg += "\n";
 					msg += readLine(in);
 				}
 				if (!readLine(in).equals("ENDOFSTREAM")) throw new ProtocolException("Stream continues past its end");
-				Utils.sendNotificationToGitHubThread(
-					"A user has sent an enquiry, please help him!\n\n" +
-					"- Name: " + realname + "\n" +
-					(username.isEmpty() ? "- Unregistered" : "- Widelands username: " + username) + "\n" +
-					(pm ? "- Contact by PM desired\n" : "") +
-					(cmd[2].isEmpty() ? "" : "- Contact by e-mail: " + cmd[2] + "\n") +
-					"\n---" + msg
-				);
+				Utils.sendNotificationToGitHubThread("The user " + username + " has sent an enquiry, please help!\n\n---\n" + msg);
 
 				out.println("ENDOFSTREAM");
 				return;
