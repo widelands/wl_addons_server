@@ -185,6 +185,18 @@ public class Server {
 		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_SUBMIT_SCREENSHOT,
+
+		/**
+		 * CMD_CONTACT pm mail lines
+		 * Send an enquiry to the Widelands Development Team.
+		 * Arg 1: Whether the user wants to be contacted by PM (true or false)
+		 * Arg 2: The e-mail to use for contacting (may be "")
+		 * Arg 3: Number of lines in the message
+		 * Then one line with the user's real name.
+		 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
+		 * Returns: ENDOFSTREAM\n or an error message\n
+		 */
+		CMD_CONTACT,
 	}
 
 	public static class ProtocolException extends RuntimeException {
@@ -355,6 +367,7 @@ public class Server {
 					if (!readLine(in).equals("ENDOFSTREAM")) {
 						throw new ProtocolException("Stream continues past its end");
 					}
+					boolean admin = false;
 					if (!username.isEmpty()) {
 						final long r = random.nextLong();
 						out.println(r);
@@ -363,6 +376,13 @@ public class Server {
 						java.sql.ResultSet sql = database.createStatement().executeQuery("select id from auth_user where username='" + username + "'");
 						if (!sql.next()) throw new ProtocolException("User " + username + " is not registered");
 						final long userID = sql.getLong​(1);
+
+						sql = database.createStatement().executeQuery("select permissions from wlggz_ggzauth where user_id=" + userID);
+						if (!sql.next()) throw new ProtocolException("User " + username + " has no permissions at all");
+						final long permissions = sql.getLong(1);
+						if (permissions != 7 && permissions != 127) throw new ProtocolException("User " + username + " has invalid permissions code " + permissions);
+						admin = (permissions == 127);
+
 						sql = database.createStatement().executeQuery("select password from wlggz_ggzauth where user_id=" + userID);
 						if (!sql.next()) throw new ProtocolException("User " + username + " did not set a password");
 						final String passwordHash = sql.getString(1);
@@ -388,7 +408,7 @@ public class Server {
 					while ((cmd = readLine(in, false)) != null) { synchronized(syncer) {
 						syncer.tick(s);
 						System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] Received command: " + cmd);
-						handle(cmd.split(" "), out, in, protocolVersion, username, locale);
+						handle(cmd.split(" "), out, in, protocolVersion, username, admin, locale);
 					}}
 				} catch (Exception e) {
 					System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] ERROR: " + e);
@@ -426,7 +446,7 @@ public class Server {
 	}
 
 	private static void handle(String[] cmd, PrintStream out, InputStream in,
-			int version, String username, String locale) throws Exception {
+			int version, String username, boolean admin, String locale) throws Exception {
 		switch (CMD.valueOf(cmd[0])) {
 			case CMD_LIST: {  // Args: –
 				checkNrArgs(cmd, 0);
@@ -471,10 +491,7 @@ public class Server {
 			}
 			case CMD_COMMENT: {  // Args: name version lines
 				checkNrArgs(cmd, 3);
-				if (username.isEmpty()) {
-					out.println("Please log in to comment");
-					return;
-				}
+				if (username.isEmpty()) throw new ProtocolException("Log in to comment");
 				checkNameValid(cmd[1], false);
 				String msg = "";
 				for (int i = Integer.valueOf(cmd[3]); i > 0; --i) {
@@ -511,10 +528,13 @@ public class Server {
 			}
 			case CMD_SUBMIT_SCREENSHOT: {  // Args: name filesize checksum whitespaces description
 				checkNrArgs(cmd, 5);
-				if (username.isEmpty()) {
-					throw new ProtocolException("You need to log in to submit screenshots");
-				}
 				checkNameValid(cmd[1], false);
+				if (username.isEmpty()) throw new ProtocolException("You need to log in to submit screenshots");
+				if (!admin) {
+					String originalUploader = Utils.readProfile(new File("metadata", cmd[1] + ".maintain"), cmd[1]).get("uploader").value(locale);
+					if (!username.equals(originalUploader)) throw new ProtocolException(
+							"You can not submit screenshots for another person's (" + originalUploader + ") add-on");
+				}
 				long size = Long.valueOf(cmd[2]);
 				if (size > 4 * 1000 * 1000) throw new ProtocolException("Filesize " + size +
 						" exceeds the limit of 4 MB. If you really need to submit such a large image, please contact the Widelands Development Team.");
@@ -557,10 +577,16 @@ public class Server {
 			}
 			case CMD_SUBMIT: {  // Args: name
 				checkNrArgs(cmd, 1);
-				if (username.isEmpty()) {
-					throw new ProtocolException("You need to log in to submit add-ons");
-				}
+				if (username.isEmpty()) throw new ProtocolException("You need to log in to submit add-ons");
 				checkNameValid(cmd[1], false);
+				if (!admin) {
+					File f = new File("metadata", cmd[1] + ".maintain");
+					if (f.exists()) {
+						String originalUploader = Utils.readProfile(f, cmd[1]).get("uploader").value(locale);
+						if (!username.equals(originalUploader)) throw new ProtocolException(
+								"You can not overwrite another person's (" + originalUploader + ") existing add-on");
+					}
+				}
 				File tempDir = Utils.createTempDir();
 
 				try {
@@ -668,6 +694,33 @@ public class Server {
 					doDelete(tempDir);
 					throw new ProtocolException(e.toString());
 				}
+				return;
+			}
+			case CMD_CONTACT: {  // Args: pm mail lines
+				checkNrArgs(cmd, 3);
+
+				boolean pm = cmd[1].equalsIgnoreCase("true");
+				if (pm && username.isEmpty()) throw new ProtocolException("PM is only available for logged-in users");
+				if (!pm && cmd[2].isEmpty()) throw new ProtocolException("Neither e-mail nor PM specified");
+				String realname = readLine(in);
+				if (realname.isEmpty()) throw new ProtocolException("Name is empty");
+
+				String msg = "";
+				for (int i = Integer.valueOf(cmd[3]); i > 0; --i) {
+					msg += "\n > ";
+					msg += readLine(in);
+				}
+				if (!readLine(in).equals("ENDOFSTREAM")) throw new ProtocolException("Stream continues past its end");
+				Utils.sendNotificationToGitHubThread(
+					"A user has sent an enquiry, please help him!\n\n" +
+					"- Name: " + realname + "\n" +
+					(username.isEmpty() ? "- Unregistered" : "- Widelands username: " + username) + "\n" +
+					(pm ? "- Contact by PM desired\n" : "") +
+					(cmd[2].isEmpty() ? "" : "- Contact by e-mail: " + cmd[2] + "\n") +
+					"\n---" + msg
+				);
+
+				out.println("ENDOFSTREAM");
 				return;
 			}
 			default: throw new ProtocolException("Invalid command " + cmd[0]);

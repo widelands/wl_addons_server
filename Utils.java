@@ -212,6 +212,10 @@ public class Utils {
 		System.exit(1);
 	}
 
+	// NOCOM: This sometimes may contain data we don't want to make publicly visible.
+	// Send an e-mail to the maintainers instead? Or even better, post to some private
+	// thread which only the widelands/chieftains team can read (don't know if GitHub
+	// has something like this; the internal forums might also be suited for this).
 	public static void sendNotificationToGitHubThread(String msg) throws Exception {
 		msg = msg.replaceAll("\n", "\\\\n");
 		msg = msg.replaceAll("\t", "\\\\t");

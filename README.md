@@ -17,7 +17,7 @@ After the installation of the JDK run `javac *.java` in the base folder.
 Before starting the server, ensure that a MySQL server is running somewhere with the following settings:
 - There is a database with two tables in it:
     - `auth_user`: Contains at least an `int` column `id` and a `varchar` column `username`.
-    - `wlggz_ggzauth`: Contains at least an `int` column `user_id` and a `varchar` column `password`.
+    - `wlggz_ggzauth`: Contains at least an `int` column `user_id`, a `varchar` column `password`, and an `int` column `permissions` (in which `7` means normal user and `127` means admin).
 - There needs to be a user with read access to both tables.
 
 Further, ensure that an ini-style config file called `config` exists in the working directory which contains the following keys:
