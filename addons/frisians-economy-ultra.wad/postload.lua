@@ -38,6 +38,9 @@ descriptions:modify_unit("tribe", "frisians", "add_ware", "rye_flour", 1, { help
 descriptions:modify_unit("tribe", "frisians", "add_ware", "barley_flour", 1, { helptexts = { purpose =
                   _"After being ground to flour, barley can be used to bake bread."
                }})
+descriptions:modify_unit("tribe", "frisians", "add_ware", "leather", 4, { helptexts = { purpose =
+                  _"Fur can be tanned into leather, which is needed to produce garments."
+               }})
 
 --------------------------------------------------------------------------------
 --                                 Workers
@@ -67,6 +70,9 @@ descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_salter", 2
 descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_miller", 2, { helptexts = { purpose =
                   _"The miller grinds barley and rye into flour."
                }})
+descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_tanner", 3, { helptexts = { purpose =
+                  _"The tanner tans furs to produce leather."
+               }})
 
 --------------------------------------------------------------------------------
 --                               New Production Sites
@@ -75,6 +81,9 @@ descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_miller", 2
 descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_salt_works", { helptexts = {
                   purpose = _"The salter working at the salt works washes salt from the sea.",
                   note    = _"The salter needs water within its work area.",
+               }})
+descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_tannery", { helptexts = { purpose =
+                  _"The tannery tans fur into leather."
                }})
 descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_barley_mill", { helptexts = { purpose =
                   _"The barley mill grinds barley into barley flour."
@@ -146,5 +155,19 @@ descriptions:modify_unit("productionsite", "frisians_honey_bread_bakery", "progr
             "call=bake_honey",
             "call=bake_normal"
       }})
+
+descriptions:modify_unit("productionsite", "frisians_sewing_room", "input", "modify_ware", "fur", 5)
+descriptions:modify_unit("productionsite", "frisians_sewing_room", "input", "add_ware", "leather", 5)
+descriptions:modify_unit("productionsite", "frisians_sewing_room", "programs", "set", "main", {
+         -- TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
+         descname = _"sewing fur garment",
+         actions = {
+            "return=skipped unless economy needs fur_garment or workers need experience",
+            "consume=fur leather",
+            "sleep=duration:20s",
+            "animate=working duration:20s",
+            "produce=fur_garment"
+         },
+      })
 
 pop_textdomain()
