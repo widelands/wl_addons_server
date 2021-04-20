@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Atanase Albaran, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-17 03:17+0000\n"
+"POT-Creation-Date: 2021-04-20 03:19+0000\n"
 "PO-Revision-Date: 2021-03-20 17:12+0000\n"
+"Last-Translator: Atanase Albaran, 2021\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -26,6 +30,9 @@ msgid ""
 "The first player who has at least 4 fully trained soldiers in his warehouses "
 "wins the game. Teams are not supported yet."
 msgstr ""
+"Le premier joueur qui possède 4 soldats entraînés au plus haut niveau dans "
+"son entrepôt remporte la partie.\n"
+"Les équipes ne sont pas encore supportées."
 
 #: addons/first_heroes_win.wad/init.lua:35
 msgid ""
@@ -39,27 +46,27 @@ msgstr[1] ""
 
 #: addons/first_heroes_win.wad/init.lua:41
 msgid "Number of heroes"
-msgstr ""
+msgstr "Nombre de Héros"
 
 #: addons/first_heroes_win.wad/init.lua:98
 msgid "Hero created!"
-msgstr ""
+msgstr "Héro créé!"
 
 #: addons/first_heroes_win.wad/init.lua:99
 msgid "%1% has created a hero!"
-msgstr ""
+msgstr "%1% a créé un héro!"
 
 #: addons/first_heroes_win.wad/init.lua:101
 msgid "You have a new Hero!"
-msgstr ""
+msgstr "Vous avez un nouveau Héro!"
 
 #: addons/first_heroes_win.wad/init.lua:103
 msgid "Hero Statistics:"
-msgstr ""
+msgstr "Statistiques du héro:"
 
 #: addons/first_heroes_win.wad/init.lua:106
 msgid "%1% has %2%"
-msgstr ""
+msgstr "%1% a %2%"
 
 #: addons/first_heroes_win.wad/init.lua:106
 msgid "%1% hero"
