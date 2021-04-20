@@ -34,7 +34,7 @@ descriptions:modify_unit("tribe", "frisians", "add_building", "frisians_well_dee
             -- TRANSLATORS: Performance helptext for a frisian production site: Deep Well
             performance = pgettext("frisians_building", "The deep well needs %s on average to produce one bucket of water."):bformat(ngettext("%d second", "%d seconds", 40):bformat(40))
                }})
-descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_well_keeper", 0, { helptexts = {
+descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_well_keeper", 0, nil, nil, { helptexts = {
             -- TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
             purpose = pgettext("frisians_worker", "Operates the deep wells.")
                }})
@@ -69,7 +69,7 @@ descriptions:modify_unit("tribe", "barbarians", "add_building", "barbarians_well
             -- TRANSLATORS: Performance helptext for a frisian production site: Deep Well
             performance = pgettext("barbarians_building", "The deep well needs %s on average to produce one bucket of water."):bformat(ngettext("%d second", "%d seconds", 40):bformat(40))
                }})
-descriptions:modify_unit("tribe", "barbarians", "add_worker", "barbarians_well_keeper", 0, { helptexts = {
+descriptions:modify_unit("tribe", "barbarians", "add_worker", "barbarians_well_keeper", 0, nil, nil, { helptexts = {
             -- TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
             purpose = pgettext("barbarians_worker", "Operates the deep wells.")
                }})

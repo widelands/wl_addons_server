@@ -26,19 +26,19 @@ descriptions:modify_unit("tribe", "frisians", "add_immovable", "ryefield_tiny", 
 --                                  Wares
 --------------------------------------------------------------------------------
 
-descriptions:modify_unit("tribe", "frisians", "add_ware", "salt", 1, { helptexts = { purpose =
+descriptions:modify_unit("tribe", "frisians", "add_ware", "salt", 1, nil, 1, { helptexts = { purpose =
                   _"Salt is washed from the sea and used to conserve meat and fish."
                }})
-descriptions:modify_unit("tribe", "frisians", "add_ware", "rye", 1, { helptexts = { purpose =
+descriptions:modify_unit("tribe", "frisians", "add_ware", "rye", 1, nil, 1, { helptexts = { purpose =
                   _"Rye is used to bake bread. It needs to be ground into flour first."
                }})
-descriptions:modify_unit("tribe", "frisians", "add_ware", "rye_flour", 1, { helptexts = { purpose =
+descriptions:modify_unit("tribe", "frisians", "add_ware", "rye_flour", 1, nil, 2, { helptexts = { purpose =
                   _"After being ground to flour, rye can be used to bake bread."
                }})
-descriptions:modify_unit("tribe", "frisians", "add_ware", "barley_flour", 1, { helptexts = { purpose =
+descriptions:modify_unit("tribe", "frisians", "add_ware", "barley_flour", 1, 15, 2, { helptexts = { purpose =
                   _"After being ground to flour, barley can be used to bake bread."
                }})
-descriptions:modify_unit("tribe", "frisians", "add_ware", "leather", 4, { helptexts = { purpose =
+descriptions:modify_unit("tribe", "frisians", "add_ware", "leather", 4, 10, 2, { helptexts = { purpose =
                   _"Fur can be tanned into leather, which is needed to produce garments."
                }})
 
@@ -64,13 +64,13 @@ descriptions:modify_unit("worker", "frisians_farmer", "programs", "set", "harves
          "return"
       })
 
-descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_salter", 2, { helptexts = { purpose =
+descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_salter", 2, nil, nil, { helptexts = { purpose =
                   _"The salter washes salt from the shores of the sea."
                }})
-descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_miller", 2, { helptexts = { purpose =
+descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_miller", 2, nil, nil, { helptexts = { purpose =
                   _"The miller grinds barley and rye into flour."
                }})
-descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_tanner", 3, { helptexts = { purpose =
+descriptions:modify_unit("tribe", "frisians", "add_worker", "frisians_tanner", 3, nil, nil, { helptexts = { purpose =
                   _"The tanner tans furs to produce leather."
                }})
 
