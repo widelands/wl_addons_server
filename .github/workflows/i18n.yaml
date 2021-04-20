@@ -23,8 +23,27 @@ jobs:
         javac *.java
         tx pull -fa
         ./buildcats.sh
-        if [ ${{ github.event_name }} == "workflow_dispatch" ] || [ -n "$(git status -s i18n)" ]
+        if [ ${{ github.event_name }} == "workflow_dispatch" ] || [ -n "$(git status -s i18n list*)" ]
         then
+          nrAdded=""
+          nrDeleted=""
+          for entry in $(git diff --numstat po); do
+            if [ -z "$nrAdded" ]
+            then
+              nrAdded=$entry
+            elif [ -z "$nrDeleted" ]
+            then
+              nrDeleted=$entry
+            else
+              if [[ $nrAdded == 1 ]] && [[ $nrDeleted == 1 ]]
+              then
+                echo "Skipping changes to $entry"
+                git checkout $entry
+              fi
+              nrAdded=""
+              nrDeleted=""
+            fi
+          done
           git add .
           git commit -m "Automated translations update"
           git push origin master
