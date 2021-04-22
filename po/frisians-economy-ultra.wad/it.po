@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 03:19+0000\n"
+"POT-Creation-Date: 2021-04-22 03:19+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Language-Team: Italian (https://www.transifex.com/widelands/teams/35159/"
 "it/)\n"
@@ -40,6 +40,11 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/leather/init.lua:8
+msgctxt "ware"
+msgid "Leather"
 msgstr ""
 
 #: addons/frisians-economy-ultra.wad/miller/init.lua:8
@@ -83,56 +88,72 @@ msgstr ""
 msgid "After being ground to flour, barley can be used to bake bread."
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:65
-msgid "The salter washes salt from the shores of the sea."
+#: addons/frisians-economy-ultra.wad/postload.lua:42
+msgid "Fur can be tanned into leather, which is needed to produce garments."
 msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:68
+msgid "The salter washes salt from the shores of the sea."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:71
 msgid "The miller grinds barley and rye into flour."
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:76
+#: addons/frisians-economy-ultra.wad/postload.lua:74
+msgid "The tanner tans furs to produce leather."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:82
 msgid "The salter working at the salt works washes salt from the sea."
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:77
+#: addons/frisians-economy-ultra.wad/postload.lua:83
 msgid "The salter needs water within its work area."
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:80
+#: addons/frisians-economy-ultra.wad/postload.lua:86
+msgid "The tannery tans fur into leather."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:89
 msgid "The barley mill grinds barley into barley flour."
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:83
+#: addons/frisians-economy-ultra.wad/postload.lua:92
 msgid "The rye mill grinds rye into rye flour."
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:86
+#: addons/frisians-economy-ultra.wad/postload.lua:95
 msgid "The rye farm sows and harvests rye."
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:94
+#: addons/frisians-economy-ultra.wad/postload.lua:103
 msgid "smoking fish"
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:101
+#: addons/frisians-economy-ultra.wad/postload.lua:110
 msgid "smoking meat"
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:109
-#: addons/frisians-economy-ultra.wad/postload.lua:145
+#: addons/frisians-economy-ultra.wad/postload.lua:118
+#: addons/frisians-economy-ultra.wad/postload.lua:154
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:118
-#: addons/frisians-economy-ultra.wad/postload.lua:138
+#: addons/frisians-economy-ultra.wad/postload.lua:127
+#: addons/frisians-economy-ultra.wad/postload.lua:147
 msgid "baking bread"
 msgstr ""
 
-#: addons/frisians-economy-ultra.wad/postload.lua:131
+#: addons/frisians-economy-ultra.wad/postload.lua:140
 msgid "baking honey bread"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:163
+msgid "sewing fur garment"
 msgstr ""
 
 #: addons/frisians-economy-ultra.wad/rye/init.lua:8
@@ -219,4 +240,18 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/salter/init.lua:8
 msgctxt "frisians_worker"
 msgid "Salter"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/tanner/init.lua:8
+msgctxt "frisians_worker"
+msgid "Tanner"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/tannery/init.lua:8
+msgctxt "frisians_building"
+msgid "Tannery"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/tannery/init.lua:47
+msgid "tanning fur"
 msgstr ""
