@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 03:19+0000\n"
+"POT-Creation-Date: 2021-04-22 03:19+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: af24e571988b09e5b46468ac89010e87_d1b4333, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -47,6 +47,11 @@ msgstr "Mlýn na ječmen"
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
 msgstr "mletí ječmene"
+
+#: addons/frisians-economy-ultra.wad/leather/init.lua:8
+msgctxt "ware"
+msgid "Leather"
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/miller/init.lua:8
 msgctxt "frisians_worker"
@@ -89,57 +94,73 @@ msgstr "Poté co je semleto na mouku, se z žita peče chléb."
 msgid "After being ground to flour, barley can be used to bake bread."
 msgstr "Poté co je ječmen semletý na mouku, může se z něj péct chléb."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:65
+#: addons/frisians-economy-ultra.wad/postload.lua:42
+msgid "Fur can be tanned into leather, which is needed to produce garments."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:68
 msgid "The salter washes salt from the shores of the sea."
 msgstr "Solař získává sůl z mořské vody při pobřeží."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:68
+#: addons/frisians-economy-ultra.wad/postload.lua:71
 msgid "The miller grinds barley and rye into flour."
 msgstr "Mlynář mele ječmen a žito na mouku."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:76
+#: addons/frisians-economy-ultra.wad/postload.lua:74
+msgid "The tanner tans furs to produce leather."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:82
 msgid "The salter working at the salt works washes salt from the sea."
 msgstr "Solař bydlící v domku solaře získává sůl z mořské vody."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:77
+#: addons/frisians-economy-ultra.wad/postload.lua:83
 msgid "The salter needs water within its work area."
 msgstr "Solař potřebuje ve svém okolí vodu."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:80
+#: addons/frisians-economy-ultra.wad/postload.lua:86
+msgid "The tannery tans fur into leather."
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/postload.lua:89
 msgid "The barley mill grinds barley into barley flour."
 msgstr "Mlýn na ječmen mele ječmen na ječnou mouku."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:83
+#: addons/frisians-economy-ultra.wad/postload.lua:92
 msgid "The rye mill grinds rye into rye flour."
 msgstr "Mlýn na žito mele žito na žitnou mouku."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:86
+#: addons/frisians-economy-ultra.wad/postload.lua:95
 msgid "The rye farm sows and harvests rye."
 msgstr "Na žitné farmě se seje a sklízí žito."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:94
+#: addons/frisians-economy-ultra.wad/postload.lua:103
 msgid "smoking fish"
 msgstr "uzení ryby"
 
-#: addons/frisians-economy-ultra.wad/postload.lua:101
+#: addons/frisians-economy-ultra.wad/postload.lua:110
 msgid "smoking meat"
 msgstr "uzení masa"
 
-#: addons/frisians-economy-ultra.wad/postload.lua:109
-#: addons/frisians-economy-ultra.wad/postload.lua:145
+#: addons/frisians-economy-ultra.wad/postload.lua:118
+#: addons/frisians-economy-ultra.wad/postload.lua:154
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
 msgstr "vyrábění"
 
-#: addons/frisians-economy-ultra.wad/postload.lua:118
-#: addons/frisians-economy-ultra.wad/postload.lua:138
+#: addons/frisians-economy-ultra.wad/postload.lua:127
+#: addons/frisians-economy-ultra.wad/postload.lua:147
 msgid "baking bread"
 msgstr "pečení chleba"
 
-#: addons/frisians-economy-ultra.wad/postload.lua:131
+#: addons/frisians-economy-ultra.wad/postload.lua:140
 msgid "baking honey bread"
 msgstr "pečení medového chleba"
+
+#: addons/frisians-economy-ultra.wad/postload.lua:163
+msgid "sewing fur garment"
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/rye/init.lua:8
 msgctxt "ware"
@@ -226,3 +247,17 @@ msgstr "Domek solaře"
 msgctxt "frisians_worker"
 msgid "Salter"
 msgstr "Solař"
+
+#: addons/frisians-economy-ultra.wad/tanner/init.lua:8
+msgctxt "frisians_worker"
+msgid "Tanner"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/tannery/init.lua:8
+msgctxt "frisians_building"
+msgid "Tannery"
+msgstr ""
+
+#: addons/frisians-economy-ultra.wad/tannery/init.lua:47
+msgid "tanning fur"
+msgstr ""
