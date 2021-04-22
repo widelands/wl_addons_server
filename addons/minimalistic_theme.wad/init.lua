@@ -16,6 +16,7 @@ dirname = path.dirname(__file__)
 -- Global colors
 local gray = {80, 80, 80}
 local light_gray = {250, 250, 250}
+local yellow = {240, 220, 130}
 
 -- Overlay colors for buttons
 local overlay_dark =  {30, 30, 30}
@@ -307,7 +308,7 @@ return {
       fsmenu = {
          background = {
             image = fs_button,
-            color = overlay_green,
+            color = overlay_dark,
             margin = 4
          },
          font = {
@@ -615,7 +616,7 @@ return {
       },
       -- Game and Map info panels
       fsmenu_info_panel_heading = {
-         color = light_gray,
+         color = yellow,
          face = fs_font_face,
          size = fs_font_size,
          bold = true,
@@ -629,7 +630,7 @@ return {
       },
       -- Internet lobby and launch game
       fsmenu_game_setup_headings = {
-         color = light_gray,
+         color = yellow,
          face = fs_font_face,
          size = fs_font_size + 2,
          bold = true,
