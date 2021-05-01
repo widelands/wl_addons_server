@@ -45,7 +45,7 @@ jobs:
             fi
           done
           git add .
-          git commit -m "Automated translations update"
+          git commit -m "Automated translations update" || true
           git push origin master
         fi
         tx push -s
