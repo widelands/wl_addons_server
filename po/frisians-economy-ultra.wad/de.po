@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Stephan Lutz <stephan-lutz@gmx.de>, 2021
 # Benedikt Straub <benedikt-straub@web.de>, 2021
+# Stephan Lutz <stephan-lutz@gmx.de>, 2021
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 03:19+0000\n"
+"POT-Creation-Date: 2021-05-01 13:20+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
-"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
+"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr "Das Mahlen von Gerste"
 #: addons/frisians-economy-ultra.wad/leather/init.lua:8
 msgctxt "ware"
 msgid "Leather"
-msgstr ""
+msgstr "Leder"
 
 #: addons/frisians-economy-ultra.wad/miller/init.lua:8
 msgctxt "frisians_worker"
@@ -104,6 +104,8 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/postload.lua:42
 msgid "Fur can be tanned into leather, which is needed to produce garments."
 msgstr ""
+"Fell kann ztu Leder Gegerbt werden, welches zur Produktion von Gewändern "
+"benötigt wird."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:68
 msgid "The salter washes salt from the shores of the sea."
@@ -115,7 +117,7 @@ msgstr "Der Müller mahlt Gerste und Roggen zu Mehl."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:74
 msgid "The tanner tans furs to produce leather."
-msgstr ""
+msgstr "Der Gerber gerbt Felle um Leder zu produzieren."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:82
 msgid "The salter working at the salt works washes salt from the sea."
@@ -127,7 +129,7 @@ msgstr "Der Salzsieder braucht Wasser in seinem Arbeitsbereich."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:86
 msgid "The tannery tans fur into leather."
-msgstr ""
+msgstr "Die Gerberei gerbt Fell zu Leder."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:89
 msgid "The barley mill grinds barley into barley flour."
@@ -167,7 +169,7 @@ msgstr "Das Backen von Honigbrot"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:163
 msgid "sewing fur garment"
-msgstr ""
+msgstr "Das Nähen von Fellgewändern"
 
 #: addons/frisians-economy-ultra.wad/rye/init.lua:8
 msgctxt "ware"
@@ -259,13 +261,13 @@ msgstr "Salzsieder"
 #: addons/frisians-economy-ultra.wad/tanner/init.lua:8
 msgctxt "frisians_worker"
 msgid "Tanner"
-msgstr ""
+msgstr "Gerber"
 
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:8
 msgctxt "frisians_building"
 msgid "Tannery"
-msgstr ""
+msgstr "Gerberei"
 
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:47
 msgid "tanning fur"
-msgstr ""
+msgstr "Das Gerben von Fell"

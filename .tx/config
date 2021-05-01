@@ -103,3 +103,15 @@ source_file = po/first_heroes_win.wad/first_heroes_win.wad.pot
 source_lang = en
 type = PO
 
+[widelands-addons.Tournament-2021-maps-wad]
+file_filter = po/Tournament_2021_maps.wad/<lang>.po
+source_file = po/Tournament_2021_maps.wad/Tournament_2021_maps.wad.pot
+source_lang = en
+type = PO
+
+[widelands-addons.Tournament-2021-win-condition-wad]
+file_filter = po/Tournament_2021_win_condition.wad/<lang>.po
+source_file = po/Tournament_2021_win_condition.wad/Tournament_2021_win_condition.wad.pot
+source_lang = en
+type = PO
+
