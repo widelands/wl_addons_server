@@ -1,7 +1,7 @@
 dirname = path.dirname (__file__)
 push_textdomain("wells-running-out.wad", true)
 
-descriptions:new_worker_type {
+descriptions:new_carrier_type {
    name = "barbarians_well_keeper",
    -- TRANSLATORS: This is a worker name used in lists of workers
    descname = pgettext ("barbarians_worker", "Well Keeper"),
