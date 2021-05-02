@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Benedikt Straub <benedikt-straub@web.de>, 2021
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-02 03:22+0000\n"
+"PO-Revision-Date: 2021-05-01 11:43+0000\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
+"Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
+"nds/)\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/Tournament_2021_win_condition.wad/addon:4
+#: addons/Tournament_2021_win_condition.wad/init.lua:32
+msgid "Tournament 2021 Win Condition"
+msgstr "Weddstried 2021 – Upgaav tum Winnen"
+
+#: addons/Tournament_2021_win_condition.wad/addon:5
+msgid ""
+"Win Condition for the 2021 Tournament: Create 10 Heroes without any coal "
+"from mountains"
+msgstr ""
+"Upgaav tum Winnen för de Weddstried 2021: Maak 10 Helden, sünner Köhl ut "
+"Bargen to kriegen."
+
+#: addons/Tournament_2021_win_condition.wad/init.lua:35
+msgid ""
+"The player who has at least %1% fully trained soldier in his warehouses wins "
+"the game."
+msgid_plural ""
+"The player who has at least %1% fully trained soldiers in his warehouses "
+"wins the game."
+msgstr[0] ""
+"De Speler, well tominnst %1% kumpleet utbildt Soldat in sienen Kraamhusen "
+"hett, winnt dat Speel."
+msgstr[1] ""
+"De Speler, well tominnst %1% kumpleet utbildt Soldaten in sienen Kraamhusen "
+"hett, winnt dat Speel."
+
+#: addons/Tournament_2021_win_condition.wad/init.lua:41
+msgid "Number of heroes"
+msgstr "Tahl vun Helden"
+
+#: addons/Tournament_2021_win_condition.wad/init.lua:98
+msgid "Hero created!"
+msgstr "Held maakt!"
+
+#: addons/Tournament_2021_win_condition.wad/init.lua:99
+msgid "%1% has created a hero!"
+msgstr "%1% hett eenen Helden kregen!"
+
+#: addons/Tournament_2021_win_condition.wad/init.lua:101
+msgid "You have a new Hero!"
+msgstr "Du hest eenen nejen Helden!"
+
+#: addons/Tournament_2021_win_condition.wad/init.lua:103
+msgid "Hero Statistics:"
+msgstr "Tahlen över Helden:"
+
+#: addons/Tournament_2021_win_condition.wad/init.lua:106
+msgid "%1% has %2%"
+msgstr "%1% hett %2%"
+
+#: addons/Tournament_2021_win_condition.wad/init.lua:106
+msgid "%1% hero"
+msgid_plural "%1% heroes"
+msgstr[0] "%1% Held"
+msgstr[1] "%1% Helden"
+
+#: addons/Tournament_2021_win_condition.wad/init.lua:119
+msgid "%1%: %2% hero"
+msgid_plural "%1%: %2% heroes"
+msgstr[0] "%1%: %2% Held"
+msgstr[1] "%1%: %2% Helden"
