@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Atanase Albaran, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-01 13:20+0200\n"
+"POT-Creation-Date: 2021-05-02 19:07+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Atanase Albaran, 2021\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -26,121 +30,141 @@ msgid ""
 "Very complex economy model for the frisian tribe with numerous new wares and "
 "buildings."
 msgstr ""
+"Modèle économique très complexe pour la tribu frisonne avec de nombreux "
+"nouveaux produits et bâtiments."
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/barley_flour/init.lua:8
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr ""
+msgstr "Farine d'orge"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Barley Mill"
-msgstr ""
+msgstr "Moulin à orge"
 
+#. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
-msgstr ""
+msgstr "à moudre de l'orge"
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/leather/init.lua:8
 msgctxt "ware"
 msgid "Leather"
-msgstr ""
+msgstr "Cuir"
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/miller/init.lua:8
 msgctxt "frisians_worker"
 msgid "Miller"
-msgstr ""
+msgstr "Meunier"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:10
 msgid "This rye field has been harvested."
-msgstr ""
+msgstr "Ce champ de seigle a été moissonné."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:13
 msgid "This rye field is ready for harvesting."
-msgstr ""
+msgstr "Ce champ de seigle est prêt pour la moisson."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:16
 msgid "This rye field is flowering. Beekeepers can use it to produce honey."
 msgstr ""
+"Ce champ de seigle est en fleurs. Les apiculteurs peuvent l'utiliser pour "
+"produire du miel."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:19
 msgid "This rye field is growing."
-msgstr ""
+msgstr "Ce champ de seigle pousse."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:22
 msgid "This rye field has just been planted."
-msgstr ""
+msgstr "Ce champ de seigle vient juste d'être semé."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:30
 msgid "Salt is washed from the sea and used to conserve meat and fish."
 msgstr ""
+"Le sel est extrait de la mer et est utilisé pour conserver la viande et le "
+"poisson."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:33
 msgid "Rye is used to bake bread. It needs to be ground into flour first."
 msgstr ""
+"Le seigle est utilisé pour faire du pain. Il doit d'abord être réduit en "
+"farine."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:36
 msgid "After being ground to flour, rye can be used to bake bread."
 msgstr ""
+"Après avoir été réduit en farine, le seigle peut être utilisé pour faire du "
+"pain."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:39
 msgid "After being ground to flour, barley can be used to bake bread."
 msgstr ""
+"Après avoir été réduit en farine, l'orge peut être utilisé pour faire du "
+"pain."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:42
 msgid "Fur can be tanned into leather, which is needed to produce garments."
 msgstr ""
+"La fourrure peut être tannée en cuir, nécessaire pour fabriquer des "
+"vêtements."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:68
 msgid "The salter washes salt from the shores of the sea."
-msgstr ""
+msgstr "Le saunier extrait le sel au bord de la mer."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:71
 msgid "The miller grinds barley and rye into flour."
-msgstr ""
+msgstr "Le meunier réduit l'orge et le seigle en farine."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:74
 msgid "The tanner tans furs to produce leather."
-msgstr ""
+msgstr "Le tanneur tanne les fourrures pour en faire du cuir."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:82
 msgid "The salter working at the salt works washes salt from the sea."
-msgstr ""
+msgstr "Le saunier travail dans les salines et extrait le sel e la mer."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:83
 msgid "The salter needs water within its work area."
-msgstr ""
+msgstr "Le saunier a besoin d'eau (douce ou salée?) dans sa zone de travail."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:86
 msgid "The tannery tans fur into leather."
-msgstr ""
+msgstr "La tannerie transforme les fourrures en cuir."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:89
 msgid "The barley mill grinds barley into barley flour."
-msgstr ""
+msgstr "Le moulin à orge réduit l'orge en farine d'orge."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:92
 msgid "The rye mill grinds rye into rye flour."
-msgstr ""
+msgstr "Le moulin à seigle réduit le seigle en farine de seigle.."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:95
 msgid "The rye farm sows and harvests rye."
-msgstr ""
+msgstr "La ferme de seigle sème et récolte du seigle."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:103
 msgid "smoking fish"
-msgstr ""
+msgstr "poisson fumé"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:110
 msgid "smoking meat"
-msgstr ""
+msgstr "viande fumée"
 
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:118
 #: addons/frisians-economy-ultra.wad/postload.lua:154
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
-msgstr ""
+msgstr "travaille"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:127
 #: addons/frisians-economy-ultra.wad/postload.lua:147
@@ -151,106 +175,127 @@ msgstr ""
 msgid "baking honey bread"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:163
 msgid "sewing fur garment"
 msgstr ""
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "Seigle"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Farm"
-msgstr ""
+msgstr "Ferme de seigle"
 
+#. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:52
 msgid "planting rye"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:60
 msgid "harvesting rye"
 msgstr ""
 
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
 msgid "No Fields"
-msgstr ""
+msgstr "Pas de champ"
 
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
 msgid "Out of Fields"
-msgstr ""
+msgstr "Hors des champs"
 
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:71
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this rye farm has no cleared soil to plant his seeds."
 msgstr ""
+"Le fermier travaillant dans cette ferme de seigle n'a pas de parcelle "
+"défrichée pour planter ses semences.."
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/rye_flour/init.lua:8
 msgctxt "ware"
 msgid "Rye Flour"
-msgstr ""
+msgstr "Farine de seigle"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Mill"
-msgstr ""
+msgstr "Moulin à seigle"
 
+#. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:51
 msgid "grinding rye"
 msgstr ""
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "Champ de seigle (moissonné)"
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/medium/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "Champ de seigle (moyen)"
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/ripe/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr ""
+msgstr "Champ de seigle (mûr)"
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/small/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "Champ de seigle (petit)"
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/tiny/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "Champ de seigle (minuscule)"
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/salt/init.lua:8
 msgctxt "ware"
 msgid "Salt"
-msgstr ""
+msgstr "Sel"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:8
 msgctxt "frisians_building"
 msgid "Salt Works"
-msgstr ""
+msgstr "Salines"
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/salter/init.lua:8
 msgctxt "frisians_worker"
 msgid "Salter"
-msgstr ""
+msgstr "Saunier"
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/tanner/init.lua:8
 msgctxt "frisians_worker"
 msgid "Tanner"
-msgstr ""
+msgstr "Tanneur"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:8
 msgctxt "frisians_building"
 msgid "Tannery"
-msgstr ""
+msgstr "Tannerie"
 
+#. TRANSLATORS: Completed/Skipped/Did not start tanning fur because ...
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:47
 msgid "tanning fur"
-msgstr ""
+msgstr "tannage de la fourrure"
