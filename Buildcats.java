@@ -23,6 +23,7 @@ public class Buildcats {
 						"--language=Lua",
 						"--from-code=UTF-8",
 						"-F",
+						"-c TRANSLATORS:",
 						"--join-existing",
 						"--output=" + out,
 						f.getPath()}).waitFor();
