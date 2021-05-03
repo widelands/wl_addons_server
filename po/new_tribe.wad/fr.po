@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-02 19:07+0000\n"
+"POT-Creation-Date: 2021-05-03 03:21+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Atanase Albaran, 2021\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
@@ -32,12 +32,14 @@ msgid ""
 "A mostly new, minimalistic tribe to demonstrate the possibility of creating "
 "custom tribes."
 msgstr ""
+"Une tribu essentiellement nouvelle et minimaliste pour démontrer la "
+"possibilité de créer des tribus personnalisées."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/barracks/init.lua:8
 msgctxt "newtribe_building"
 msgid "Barracks"
-msgstr ""
+msgstr "Caserne"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/new_tribe.wad/buildings/barracks/init.lua:52
@@ -49,24 +51,24 @@ msgstr ""
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:8
 msgctxt "newtribe_building"
 msgid "Colosseum"
-msgstr ""
+msgstr "Colisée"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:57
 msgid "sleeping"
-msgstr ""
+msgstr "endormi"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:65
 msgctxt "newtribe_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "mise à niveau du critère \"évasion\" du soldat du niveau 0 au niveau 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:78
 msgctxt "newtribe_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr ""
+msgstr "mise à niveau du critère \"évasion\" du soldat du niveau 1 au niveau 2"
 
 #. TRANSLATORS: newtribe training site tooltip when it has no soldiers assigned
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:96
@@ -78,13 +80,13 @@ msgstr "Aucun soldat a entraîner!"
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:98
 msgctxt "newtribe_building"
 msgid "No soldier found for this training level!"
-msgstr ""
+msgstr "Aucun soldat candidat pour ce niveau d'entraînement"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/ferry_yard/init.lua:8
 msgctxt "newtribe_building"
 msgid "Ferry Yard"
-msgstr ""
+msgstr "chantier de ferry"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/new_tribe.wad/buildings/ferry_yard/init.lua:55
@@ -94,13 +96,13 @@ msgstr ""
 #: addons/new_tribe.wad/productionsites/rye_farm/init.lua:43
 #: addons/new_tribe.wad/productionsites/well/init.lua:45
 msgid "working"
-msgstr ""
+msgstr "au travail"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/headquarters/init.lua:8
 msgctxt "newtribe_building"
 msgid "Headquarters"
-msgstr ""
+msgstr "Quartier général"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/port/init.lua:8
@@ -112,55 +114,55 @@ msgstr "Port"
 #: addons/new_tribe.wad/buildings/scouts_house/init.lua:8
 msgctxt "newtribe_building"
 msgid "Scout’s House"
-msgstr ""
+msgstr "Cabane d'éclaireur"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/new_tribe.wad/buildings/scouts_house/init.lua:55
 #: addons/new_tribe.wad/buildings/scouts_house/init.lua:63
 msgid "scouting"
-msgstr ""
+msgstr "en reconnaissance"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/sentry/init.lua:8
 msgctxt "newtribe_building"
 msgid "Sentry"
-msgstr ""
+msgstr "Guérite"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:48
 msgctxt "newtribe_building"
 msgid "Your soldiers have occupied your sentry."
-msgstr ""
+msgstr "Vos soldats occupent votre guérite."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:50
 msgctxt "newtribe_building"
 msgid "Your sentry discovered an aggressor."
-msgstr ""
+msgstr "Votre guérite a repéré un agresseur."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:52
 msgctxt "newtribe_building"
 msgid "Your sentry is under attack."
-msgstr ""
+msgstr "Votre guérite est attaquée."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:54
 msgctxt "newtribe_building"
 msgid "The enemy defeated your soldiers at the sentry."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats de la guérite."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:56
 msgctxt "newtribe_building"
 msgid "Your soldiers defeated the enemy at the sentry."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi de la guérite."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/shipyard/init.lua:8
 msgctxt "newtribe_building"
 msgid "Shipyard"
-msgstr ""
+msgstr "Chantier naval"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/new_tribe.wad/buildings/shipyard/init.lua:67
@@ -171,13 +173,13 @@ msgstr ""
 #: addons/new_tribe.wad/buildings/tower/init.lua:8
 msgctxt "newtribe_building"
 msgid "Tower"
-msgstr ""
+msgstr "Tour"
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: addons/new_tribe.wad/buildings/tower/init.lua:56
 msgctxt "newtribe_building"
 msgid "Your soldiers have occupied your tower."
-msgstr ""
+msgstr "Vos soldats occupent votre tour."
 
 #. TRANSLATORS: Message sent by a Frisian military site
 #: addons/new_tribe.wad/buildings/tower/init.lua:58
