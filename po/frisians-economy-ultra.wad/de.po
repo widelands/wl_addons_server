@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-01 13:20+0200\n"
+"POT-Creation-Date: 2021-05-02 19:07+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -34,25 +34,30 @@ msgstr ""
 "Sehr komplexes Wirtschaftsmodell für den Stamm der Friesen mit vielen neuen "
 "Waren und Gebäuden."
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/barley_flour/init.lua:8
 msgctxt "ware"
 msgid "Barley Flour"
 msgstr "Gerstenmehl"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Barley Mill"
 msgstr "Gerstenmühle"
 
+#. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
 msgstr "Das Mahlen von Gerste"
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/leather/init.lua:8
 msgctxt "ware"
 msgid "Leather"
 msgstr "Leder"
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/miller/init.lua:8
 msgctxt "frisians_worker"
 msgid "Miller"
@@ -151,6 +156,7 @@ msgstr "Das Räuchern von Fisch"
 msgid "smoking meat"
 msgstr "Das Räuchern von Fleisch"
 
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:118
 #: addons/frisians-economy-ultra.wad/postload.lua:154
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
@@ -167,24 +173,29 @@ msgstr "Das Backen von Brot"
 msgid "baking honey bread"
 msgstr "Das Backen von Honigbrot"
 
+#. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:163
 msgid "sewing fur garment"
 msgstr "Das Nähen von Fellgewändern"
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
 msgstr "Roggen"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Farm"
 msgstr "Roggenhof"
 
+#. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:52
 msgid "planting rye"
 msgstr "Das Pflanzen von Roggen"
 
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:60
 msgid "harvesting rye"
 msgstr "Das Ernten von Roggen"
@@ -204,70 +215,84 @@ msgid ""
 msgstr ""
 "Der Bauer auf diesem Roggenhof hat keinen freien Platz um seine Sat zu säen."
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/rye_flour/init.lua:8
 msgctxt "ware"
 msgid "Rye Flour"
 msgstr "Roggenmehl"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Mill"
 msgstr "Roggenmühle"
 
+#. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:51
 msgid "grinding rye"
 msgstr "Das Mahlen von Roggen"
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
 msgstr "Roggenfeld (abgeerntet)"
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/medium/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (medium)"
 msgstr "Roggenfeld (mittel)"
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/ripe/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
 msgstr "Roggenfeld (reif)"
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/small/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (small)"
 msgstr "Roggenfeld (klein)"
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/tiny/init.lua:6
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
 msgstr "Roggenfeld (jung)"
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/salt/init.lua:8
 msgctxt "ware"
 msgid "Salt"
 msgstr "Salz"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:8
 msgctxt "frisians_building"
 msgid "Salt Works"
 msgstr "Saline"
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/salter/init.lua:8
 msgctxt "frisians_worker"
 msgid "Salter"
 msgstr "Salzsieder"
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/tanner/init.lua:8
 msgctxt "frisians_worker"
 msgid "Tanner"
 msgstr "Gerber"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:8
 msgctxt "frisians_building"
 msgid "Tannery"
 msgstr "Gerberei"
 
+#. TRANSLATORS: Completed/Skipped/Did not start tanning fur because ...
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:47
 msgid "tanning fur"
 msgstr "Das Gerben von Fell"

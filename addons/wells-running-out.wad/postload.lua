@@ -1,11 +1,12 @@
 -- Init file of the Water Resource Efficiency add-on
-d = wl.Descriptions()
+descriptions = wl.Descriptions()
 push_textdomain("wells-running-out.wad", true)
 
 ---------
 -- ATL
 ---------
 
+-- TRANSLATORS: Completed/Skipped/Did not start working because ...
 descriptions:modify_unit("productionsite", "atlanteans_well", "programs", "set", "main", { descname = _"working", actions = {
             "sleep=duration:20s",
             "animate=working duration:20s",

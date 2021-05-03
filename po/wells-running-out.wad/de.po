@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-01 13:20+0200\n"
+"POT-Creation-Date: 2021-05-02 19:07+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -39,11 +39,13 @@ msgstr ""
 "zu tiefen Brunnen erweitert werden, wenn der Arbeiter genügend Erfahrung "
 "gesammelt hat."
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:7
 msgctxt "barbarians_building"
 msgid "Deep Well"
 msgstr "Tiefer Brunnen"
 
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:25
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:25
 #: addons/wells-running-out.wad/postload.lua:9
@@ -53,21 +55,25 @@ msgstr "Tiefer Brunnen"
 msgid "working"
 msgstr "Das Arbeiten"
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/wells-running-out.wad/bar_well_keeper/init.lua:7
 msgctxt "barbarians_worker"
 msgid "Well Keeper"
 msgstr "Brunnenbewahrer"
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:7
 msgctxt "frisians_building"
 msgid "Deep Well"
 msgstr "Tiefer Brunnen"
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/wells-running-out.wad/fri_well_keeper/init.lua:7
 msgctxt "frisians_worker"
 msgid "Well Keeper"
 msgstr "Brunnenbewahrer"
 
+#. TRANSLATORS: Purpose helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:33
 #: addons/wells-running-out.wad/postload.lua:68
 msgctxt "building"
@@ -82,6 +88,7 @@ msgid_plural "%d seconds"
 msgstr[0] "%d Sekunde"
 msgstr[1] "%d Sekunden"
 
+#. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:35
 #, lua-format
 msgctxt "frisians_building"
@@ -90,11 +97,13 @@ msgstr ""
 "Der tiefe Brunnen benötigt %s im Durchschnitt um einen Eimer Wasser zu "
 "fördern."
 
+#. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
 #: addons/wells-running-out.wad/postload.lua:39
 msgctxt "frisians_worker"
 msgid "Operates the deep wells."
 msgstr "Betreibt die tiefen Brunnen."
 
+#. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:70
 #, lua-format
 msgctxt "barbarians_building"
@@ -103,6 +112,7 @@ msgstr ""
 "Der tiefe Brunnen benötigt %s im Durchschnitt um einen Eimer Wasser zu "
 "fördern."
 
+#. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
 #: addons/wells-running-out.wad/postload.lua:74
 msgctxt "barbarians_worker"
 msgid "Operates the deep wells."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-01 13:20+0200\n"
+"POT-Creation-Date: 2021-05-02 19:07+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Language-Team: Gaelic, Scottish (https://www.transifex.com/widelands/"
 "teams/35159/gd/)\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
 
+#. TRANSLATORS: This is a tribe name
 #: addons/new_tribe.wad/addon:2
 #: addons/new_tribe.wad/tribes/new_tribe/init.lua:9
 msgid "New Tribe"
@@ -30,50 +31,60 @@ msgid ""
 "custom tribes."
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/barracks/init.lua:8
 msgctxt "newtribe_building"
 msgid "Barracks"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/new_tribe.wad/buildings/barracks/init.lua:52
 msgctxt "newtribe_building"
 msgid "recruiting soldier"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:8
 msgctxt "newtribe_building"
 msgid "Colosseum"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:57
 msgid "sleeping"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:65
 msgctxt "newtribe_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:78
 msgctxt "newtribe_building"
 msgid "upgrading soldier evade from level 1 to level 2"
 msgstr ""
 
+#. TRANSLATORS: newtribe training site tooltip when it has no soldiers assigned
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:96
 msgctxt "newtribe_building"
 msgid "No soldier to train!"
 msgstr ""
 
+#. TRANSLATORS: newtribe training site tooltip when none of the present soldiers match the current training program
 #: addons/new_tribe.wad/buildings/colosseum/init.lua:98
 msgctxt "newtribe_building"
 msgid "No soldier found for this training level!"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/ferry_yard/init.lua:8
 msgctxt "newtribe_building"
 msgid "Ferry Yard"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/new_tribe.wad/buildings/ferry_yard/init.lua:55
 #: addons/new_tribe.wad/buildings/shipyard/init.lua:59
 #: addons/new_tribe.wad/buildings/shipyard/init.lua:74
@@ -83,160 +94,192 @@ msgstr ""
 msgid "working"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/headquarters/init.lua:8
 msgctxt "newtribe_building"
 msgid "Headquarters"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/port/init.lua:8
 msgctxt "newtribe_building"
 msgid "Port"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/scouts_house/init.lua:8
 msgctxt "newtribe_building"
 msgid "Scout’s House"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/new_tribe.wad/buildings/scouts_house/init.lua:55
 #: addons/new_tribe.wad/buildings/scouts_house/init.lua:63
 msgid "scouting"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/sentry/init.lua:8
 msgctxt "newtribe_building"
 msgid "Sentry"
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:48
 msgctxt "newtribe_building"
 msgid "Your soldiers have occupied your sentry."
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:50
 msgctxt "newtribe_building"
 msgid "Your sentry discovered an aggressor."
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:52
 msgctxt "newtribe_building"
 msgid "Your sentry is under attack."
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:54
 msgctxt "newtribe_building"
 msgid "The enemy defeated your soldiers at the sentry."
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/new_tribe.wad/buildings/sentry/init.lua:56
 msgctxt "newtribe_building"
 msgid "Your soldiers defeated the enemy at the sentry."
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/shipyard/init.lua:8
 msgctxt "newtribe_building"
 msgid "Shipyard"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/new_tribe.wad/buildings/shipyard/init.lua:67
 msgid "constructing a ship"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/buildings/tower/init.lua:8
 msgctxt "newtribe_building"
 msgid "Tower"
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Frisian military site
 #: addons/new_tribe.wad/buildings/tower/init.lua:56
 msgctxt "newtribe_building"
 msgid "Your soldiers have occupied your tower."
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Frisian military site
 #: addons/new_tribe.wad/buildings/tower/init.lua:58
 msgctxt "newtribe_building"
 msgid "Your tower discovered an aggressor."
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Frisian military site
 #: addons/new_tribe.wad/buildings/tower/init.lua:60
 msgctxt "newtribe_building"
 msgid "Your tower is under attack."
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Frisian military site
 #: addons/new_tribe.wad/buildings/tower/init.lua:62
 msgctxt "newtribe_building"
 msgid "The enemy defeated your soldiers at the tower."
 msgstr ""
 
+#. TRANSLATORS: Message sent by a Frisian military site
 #: addons/new_tribe.wad/buildings/tower/init.lua:64
 msgctxt "newtribe_building"
 msgid "Your soldiers defeated the enemy at the tower."
 msgstr ""
 
+#. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/new_tribe.wad/immovables/resi/init.lua:8
 msgctxt "resource_indicator"
 msgid "No Resources"
 msgstr ""
 
+#. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/new_tribe.wad/immovables/resi/init.lua:31
 msgctxt "resource_indicator"
 msgid "Water"
 msgstr ""
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/new_tribe.wad/immovables/ryefield/harvested/init.lua:7
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
 msgstr ""
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/new_tribe.wad/immovables/ryefield/medium/init.lua:7
 msgctxt "immovable"
 msgid "Rye Field (medium)"
 msgstr ""
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/new_tribe.wad/immovables/ryefield/ripe/init.lua:7
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
 msgstr ""
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/new_tribe.wad/immovables/ryefield/small/init.lua:7
 msgctxt "immovable"
 msgid "Rye Field (small)"
 msgstr ""
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/new_tribe.wad/immovables/ryefield/tiny/init.lua:7
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
 msgstr ""
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/new_tribe.wad/immovables/shipconstruction/init.lua:8
 msgctxt "immovable"
 msgid "Ship Under Construction"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/bakery/init.lua:8
 msgctxt "newtribe_building"
 msgid "Bakery"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
 #: addons/new_tribe.wad/productionsites/bakery/init.lua:50
 msgctxt "newtribe_building"
 msgid "baking bread"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/donkeyfarm/init.lua:8
 msgctxt "newtribe_building"
 msgid "Donkey Farm"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start rearing donkeys because ...
 #: addons/new_tribe.wad/productionsites/donkeyfarm/init.lua:49
 msgctxt "newtribe_building"
 msgid "rearing donkeys"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:8
 msgctxt "newtribe_building"
 msgid "Fish Breeder’s House"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start breeding fish because ...
 #: addons/new_tribe.wad/productionsites/fishbreeders_house/init.lua:41
 msgid "breeding fish"
 msgstr ""
@@ -263,11 +306,13 @@ msgstr ""
 msgid "The fishing grounds are full"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/fishers_house/init.lua:8
 msgctxt "newtribe_building"
 msgid "Fisher’s House"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/new_tribe.wad/productionsites/fishers_house/init.lua:42
 msgid "fishing"
 msgstr ""
@@ -280,20 +325,24 @@ msgid ""
 "building a fish breeder’s house."
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/foresters_house/init.lua:8
 msgctxt "newtribe_building"
 msgid "Forester’s House"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
 #: addons/new_tribe.wad/productionsites/foresters_house/init.lua:51
 msgid "planting trees"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/hunters_house/init.lua:8
 msgctxt "newtribe_building"
 msgid "Hunter’s House"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/new_tribe.wad/productionsites/hunters_house/init.lua:39
 msgid "hunting"
 msgstr ""
@@ -302,10 +351,12 @@ msgstr ""
 msgid "No Game"
 msgstr ""
 
+#. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/new_tribe.wad/productionsites/hunters_house/init.lua:50
 msgid "Out of Game"
 msgstr ""
 
+#. TRANSLATORS: "game" means animals that you can hunt
 #: addons/new_tribe.wad/productionsites/hunters_house/init.lua:52
 msgctxt "newtribe_building"
 msgid ""
@@ -313,11 +364,13 @@ msgid ""
 "work area."
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/quarry/init.lua:8
 msgctxt "newtribe_building"
 msgid "Quarry"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
 #: addons/new_tribe.wad/productionsites/quarry/init.lua:36
 msgid "quarrying granite"
 msgstr ""
@@ -336,15 +389,18 @@ msgid ""
 "The stonecutter working at this quarry can’t find any rocks in his work area."
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/reed_yard/init.lua:8
 msgctxt "newtribe_building"
 msgid "Reed Yard"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/new_tribe.wad/productionsites/reed_yard/init.lua:48
 msgid "planting reed"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/new_tribe.wad/productionsites/reed_yard/init.lua:56
 msgid "harvesting reed"
 msgstr ""
@@ -365,15 +421,18 @@ msgid ""
 "The farmer working at this reed yard has no cleared soil to plant his seeds."
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/rye_farm/init.lua:8
 msgctxt "newtribe_building"
 msgid "Rye Farm"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/new_tribe.wad/productionsites/rye_farm/init.lua:51
 msgid "planting rye"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: addons/new_tribe.wad/productionsites/rye_farm/init.lua:59
 msgid "harvesting rye"
 msgstr ""
@@ -385,15 +444,18 @@ msgid ""
 "seeds."
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/toolsmithy/init.lua:8
 msgctxt "newtribe_building"
 msgid "Toolsmithy"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start making a tool because ...
 #: addons/new_tribe.wad/productionsites/toolsmithy/init.lua:47
 msgid "making a tool"
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/well/init.lua:8
 msgctxt "newtribe_building"
 msgid "Well"
@@ -412,11 +474,13 @@ msgctxt "newtribe_building"
 msgid "The carrier working at this well can’t find any water in his well."
 msgstr ""
 
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:8
 msgctxt "newtribe_building"
 msgid "Woodcutter’s House"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/new_tribe.wad/productionsites/woodcutters_house/init.lua:48
 msgid "felling trees"
 msgstr ""
@@ -437,150 +501,180 @@ msgid ""
 "building a forester’s house."
 msgstr ""
 
+#. TRANSLATORS: This is the newtribe' ship's name used in lists of units
 #: addons/new_tribe.wad/ship/init.lua:8
 msgctxt "newtribe_ship"
 msgid "Ship"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after an island in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:45
 msgctxt "shipname"
 msgid "Amrum"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a no longer existing island in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:47
 msgctxt "shipname"
 msgid "Alt-Nordstrand"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a peninsula in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:49
 msgctxt "shipname"
 msgid "Eiderstedt"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after an island in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:51
 msgctxt "shipname"
 msgid "Föhr"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:53
 msgctxt "shipname"
 msgid "Gröde"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:55
 msgctxt "shipname"
 msgid "Habel"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:57
 msgctxt "shipname"
 msgid "Hamburger Hallig"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after an island in the North Sea
 #: addons/new_tribe.wad/ship/init.lua:59
 msgctxt "shipname"
 msgid "Helgoland"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a region in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:61
 msgctxt "shipname"
 msgid "Hever"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:63
 msgctxt "shipname"
 msgid "Hooge"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a sand in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:65
 msgctxt "shipname"
 msgid "Japsand"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a sand in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:67
 msgctxt "shipname"
 msgid "Kormoransand"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:69
 msgctxt "shipname"
 msgid "Langeneß"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a water body in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:71
 msgctxt "shipname"
 msgid "Norderaue"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:73
 msgctxt "shipname"
 msgid "Norderoog"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a sand in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:75
 msgctxt "shipname"
 msgid "Norderoogsand"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after an island in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:77
 msgctxt "shipname"
 msgid "Nordstrand"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:79
 msgctxt "shipname"
 msgid "Nordstrandischmoor"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:81
 msgctxt "shipname"
 msgid "Oland"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after an island in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:83
 msgctxt "shipname"
 msgid "Pellworm"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a no longer existing island in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:85
 msgctxt "shipname"
 msgid "Strand"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a water body in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:87
 msgctxt "shipname"
 msgid "Süderaue"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:89
 msgctxt "shipname"
 msgid "Süderoog"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a sand in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:91
 msgctxt "shipname"
 msgid "Süderoogsand"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a Hallig in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:93
 msgctxt "shipname"
 msgid "Südfall"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after an island in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:95
 msgctxt "shipname"
 msgid "Sylt"
 msgstr ""
 
+#. TRANSLATORS: This frisian ship is named after a region in Northern Frisia
 #: addons/new_tribe.wad/ship/init.lua:97
 msgctxt "shipname"
 msgid "Uthlande"
 msgstr ""
 
+#. TRANSLATORS: This is the name of a starting condition
 #: addons/new_tribe.wad/tribes/new_tribe/headquarters.lua:11
 msgid "Headquarters"
 msgstr ""
 
+#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/new_tribe.wad/tribes/new_tribe/headquarters.lua:13
 msgid "Start the game with your headquarters only"
 msgstr ""
@@ -591,6 +685,7 @@ msgid ""
 "tribes."
 msgstr ""
 
+#. TRANSLATORS: %1% is the number of Frisian soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
 #: addons/new_tribe.wad/tribes/new_tribe/military_capacity.lua:8
 msgctxt "newtribe_building"
 msgid "%1% soldier (+%2%)"
@@ -600,6 +695,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
+#. TRANSLATORS: Number of Frisian soldiers stationed at a militarysite.
 #: addons/new_tribe.wad/tribes/new_tribe/military_capacity.lua:11
 msgctxt "newtribe_building"
 msgid "%1% soldier"
@@ -609,6 +705,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
+#. TRANSLATORS: %1% is the number of Frisian soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
 #: addons/new_tribe.wad/tribes/new_tribe/military_capacity.lua:16
 msgctxt "newtribe_building"
 msgid "%1%(+%2%) soldier (+%3%)"
@@ -618,6 +715,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
+#. TRANSLATORS: %1% is the number of Frisian soldiers the plural refers to. %2% are currently open soldier slots in the building.
 #: addons/new_tribe.wad/tribes/new_tribe/military_capacity.lua:19
 msgctxt "newtribe_building"
 msgid "%1%(+%2%) soldier"
@@ -631,16 +729,19 @@ msgstr[3] ""
 msgid "This is a proof-of-concept game tip for a proof-of-concept tribe."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Granite, part 1
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:66
 msgctxt "ware"
 msgid "Granite is a basic building material."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Granite, part 2
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:68
 msgctxt "newtribe_ware"
 msgid "The New Tribe produces granite blocks in quarries."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Log, part 1
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:78
 msgctxt "ware"
 msgid ""
@@ -648,6 +749,7 @@ msgid ""
 "trees."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Log, part 2
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:80
 msgctxt "newtribe_ware"
 msgid ""
@@ -655,11 +757,13 @@ msgid ""
 "trees."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: reed
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:90
 msgctxt "newtribe_ware"
 msgid "The New Tribe produces reed in reed yards. Roofs are thatched with it."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Fish
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:102
 msgctxt "newtribe_ware"
 msgid ""
@@ -667,6 +771,7 @@ msgid ""
 "used in the training sites (colosseum)."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Meat
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:112
 msgctxt "ware"
 msgid ""
@@ -674,11 +779,13 @@ msgid ""
 "hunters."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Water, part 1
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:122
 msgctxt "ware"
 msgid "Water is the essence of life!"
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Water, part 2
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:124
 msgctxt "newtribe_ware"
 msgid ""
@@ -686,11 +793,13 @@ msgid ""
 "water."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: rye, part 1
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:134
 msgctxt "ware"
 msgid "Rye is essential for survival."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: rye, part 2
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:136
 msgctxt "newtribe_ware"
 msgid ""
@@ -698,6 +807,7 @@ msgid ""
 "supplied with rye."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Bread
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:146
 msgctxt "newtribe_ware"
 msgid ""
@@ -705,21 +815,25 @@ msgid ""
 "Bread is consumed at the training sites (colosseum)."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe ware: Tool
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:159
 msgctxt "newtribe_ware"
 msgid "All workers need a tool!"
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Carrier
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:175
 msgctxt "newtribe_worker"
 msgid "Carries items along your roads."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Ferry
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:182
 msgctxt "newtribe_worker"
 msgid "Ships wares across narrow rivers."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Donkey
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:191
 msgctxt "newtribe_worker"
 msgid ""
@@ -727,139 +841,171 @@ msgid ""
 "farm."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Donkey Breeder
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:198
 msgctxt "newtribe_worker"
 msgid ""
 "Breeds cute and helpful donkeys for adding them to the transportation system."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Stonecutter
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:208
 msgctxt "newtribe_worker"
 msgid "Cuts blocks of granite out of rocks in the vicinity."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: woodcutter
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:215
 msgctxt "newtribe_worker"
 msgid "Fells trees."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Forester
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:222
 msgctxt "newtribe_worker"
 msgid "Plants trees."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Builder
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:229
 msgctxt "newtribe_worker"
 msgid "Works at construction sites to raise new buildings."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Shipwright
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:236
 msgctxt "newtribe_worker"
 msgid "Works at the shipyard and constructs new ships."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Fisher
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:246
 msgctxt "newtribe_worker"
 msgid "Catches fish in the sea."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Fishbreeder
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:253
 msgctxt "newtribe_worker"
 msgid "Breeds fish."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Hunter
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:260
 msgctxt "newtribe_worker"
 msgid "The hunter brings fresh, raw meat to the colonists."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Farmer
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:267
 msgctxt "newtribe_worker"
 msgid "Plants rye and reed fields."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Baker
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:274
 msgctxt "newtribe_worker"
 msgid "Bakes bread for workers."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Geologist
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:284
 msgctxt "newtribe_worker"
 msgid "Discovers resources for mining."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Toolsmith
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:294
 msgctxt "newtribe_worker"
 msgid "Produces tools for the workers."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Soldier
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:305
 msgctxt "newtribe_worker"
 msgid "Defend and Conquer!"
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Trainer
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:312
 msgctxt "newtribe_worker"
 msgid "Trains the soldiers."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe worker: Scout
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:319
 msgctxt "newtribe_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe immovable: Ashes
+#. TRANSLATORS: Helptext for a NewTribe immovable: Destroyed Building
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:331
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:338
 msgid "The remains of a destroyed building."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe immovable: rye field
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:345
 msgid "This field has just been planted."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe immovable: rye field
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:352
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:359
 msgid "This field is growing."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe immovable: rye field
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:366
 msgid "This field is ready for harvesting."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe resource indicator: No resources
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:373
 msgid "There are no resources in the ground here."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe resource indicator: Water
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:380
 msgid "There is water in the ground here that can be pulled up by a well."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a NewTribe immovable: Ship Under Construction
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:387
 msgid "A ship is being constructed at this site."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a frisian immovable: Reed Field
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:394
 msgid "This reed field has just been planted."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a frisian immovable: Reed Field
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:401
 msgid "This reed field is growing."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a frisian immovable: Reed Field
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:408
 msgid ""
 "This reed field is flowering. Honey can be produced from it by a beekeeper."
 msgstr ""
 
+#. TRANSLATORS: Helptext for a frisian immovable: Reed Field
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:415
 msgid "This reed field is ready for harvesting."
 msgstr ""
 
+#. TRANSLATORS: Helptext for an amazon immovable usable by frisians: Dead Tree
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:423
 msgid "The remains of an old tree."
 msgstr ""
 
+#. TRANSLATORS: Helptext for an amazon immovable usable by frisians: Balsa Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by frisians: Ironwood Tree
+#. TRANSLATORS: Helptext for an amazon immovable usable by frisians: Rubber Tree
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:430
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:437
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:444
@@ -876,16 +1022,19 @@ msgid ""
 "This tree is only planted by the amazon tribe but can be harvested for logs."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe warehouse: Headquarters
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:519
 msgctxt "newtribe_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe warehouse: Headquarters
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:521
 msgctxt "newtribe_building"
 msgid "The headquarters is your main building."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe warehouse: Port
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:528
 msgctxt "newtribe_building"
 msgid ""
@@ -893,31 +1042,37 @@ msgid ""
 "soldiers, wares and tools."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Quarry
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:537
 msgctxt "newtribe_building"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe production site: Quarry
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:539
 msgctxt "newtribe_building"
 msgid "The quarry needs rocks to cut within the work area."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: woodcutter's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:546
 msgctxt "building"
 msgid "Fells trees in the surrounding area and processes them into logs."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe production site: woodcutter's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:548
 msgctxt "newtribe_building"
 msgid "The woodcutter's house needs trees to fell within the work area."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Forester's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:555
 msgctxt "building"
 msgid "Plants trees in the surrounding area."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe production site: Forester's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:557
 msgctxt "newtribe_building"
 msgid ""
@@ -925,37 +1080,44 @@ msgid ""
 "trees."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Fisher's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:564
 msgctxt "newtribe_building"
 msgid "Fishes on the coast near the fisher’s house."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe production site: Fisher's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:566
 msgctxt "newtribe_building"
 msgid "The fisher’s house needs water full of fish within the work area."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Fishbreeder's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:573
 msgctxt "newtribe_building"
 msgid "Replenishes the fishing grounds."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe production site: Fishbreeder's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:575
 msgctxt "newtribe_building"
 msgid ""
 "The fishbreeder’s house needs water with some fish within the work area."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Hunter's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:582
 msgctxt "building"
 msgid "Hunts animals to produce meat."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe production site: Hunter's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:584
 msgctxt "newtribe_building"
 msgid "The hunter’s house needs animals to hunt within the work area."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Well
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:591
 msgctxt "building"
 msgid "Draws water out of the deep."
@@ -968,57 +1130,68 @@ msgid ""
 "here."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Scout's House
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:599
 msgctxt "building"
 msgid "Explores unknown territory."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Reed Yard
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:608
 msgctxt "building"
 msgid "Plants and harvests reed."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Toolsmithy
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:615
 msgctxt "building"
 msgid "Forges all the tools that your workers need."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Bakery
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:622
 msgctxt "newtribe_building"
 msgid "Bakes bread for soldiers and miners alike."
 msgstr ""
 
+#. TRANSLATORS: Performance Helptext for a NewTribe production site: Bakery
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:624
 msgctxt "newtribe_building"
 msgid "The baker needs %1% on average to bake a loaf of bread."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Barracks
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:631
 msgctxt "newtribe_building"
 msgid "Equips recruits and trains them as soldiers."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Donkey Farm
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:640
 msgctxt "newtribe_building"
 msgid ""
 "Breeds cute and helpful donkeys for adding them to the transportation system."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Farm
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:647
 msgctxt "building"
 msgid "Sows and harvests rye."
 msgstr ""
 
+#. TRANSLATORS: Performance Helptext for a NewTribe production site: Farm
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:649
 msgctxt "newtribe_building"
 msgid "The farmer needs %1% on average to sow and harvest a sheaf of rye."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe training site: Colosseum, part 1
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:658
 msgctxt "newtribe_building"
 msgid "Trains soldiers in ‘Evade’."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe training site: Colosseum, part 2
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:660
 msgctxt "newtribe_building"
 msgid ""
@@ -1026,6 +1199,7 @@ msgid ""
 "remain totally unaffected."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe training site: Colosseum
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:663
 msgctxt "newtribe_building"
 msgid ""
@@ -1033,12 +1207,16 @@ msgid ""
 "will remain at the levels with which they came."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe military site: Sentry
+#. TRANSLATORS: Purpose Helptext for a NewTribe military site: Tower
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:672
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:681
 msgctxt "building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe military site: Sentry
+#. TRANSLATORS: Note Helptext for a NewTribe military site: Tower
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:674
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:683
 msgctxt "building"
@@ -1048,16 +1226,19 @@ msgid ""
 "send him away."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Ferry Yard
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:692
 msgctxt "building"
 msgid "Builds ferries."
 msgstr ""
 
+#. TRANSLATORS: Note Helptext for a NewTribe production site: Ferry Yard
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:694
 msgctxt "building"
 msgid "Needs water nearby."
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe production site: Shipyard
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:701
 msgctxt "building"
 msgid ""
@@ -1065,31 +1246,37 @@ msgid ""
 "between ports."
 msgstr ""
 
+#. TRANSLATORS: Lore Helptext for a NewTribe building: Construction Site
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:710
 msgctxt "building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr ""
 
+#. TRANSLATORS: Lore author Helptext for a NewTribe building: Construction Site
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:712
 msgctxt "building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe building: Construction Site
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:714
 msgctxt "building"
 msgid "A new building is being built at this construction site."
 msgstr ""
 
+#. TRANSLATORS: Lore Helptext for a NewTribe building: Dismantle Site
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:721
 msgctxt "building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
 
+#. TRANSLATORS: Lore author Helptext for a NewTribe building: Dismantle Site
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:723
 msgctxt "building"
 msgid "Proverb"
 msgstr ""
 
+#. TRANSLATORS: Purpose Helptext for a NewTribe building: Dismantle Site
 #: addons/new_tribe.wad/tribes/new_tribe/units.lua:725
 msgctxt "building"
 msgid ""
@@ -1098,111 +1285,133 @@ msgid ""
 "stores."
 msgstr ""
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/new_tribe.wad/wares/bread/init.lua:8
 msgctxt "newtribe_ware"
 msgid "Bread"
 msgstr ""
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/new_tribe.wad/wares/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
 msgstr ""
 
+#. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/new_tribe.wad/wares/tool/init.lua:8
 msgctxt "ware"
 msgid "Tool"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/baker/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Baker"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/builder/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Builder"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/carrier/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Carrier"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/donkey/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Donkey"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/donkeybreeder/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Donkey Breeder"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/farmer/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Farmer"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/ferry/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Ferry"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/fishbreeder/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Fish Breeder"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/fisher/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Fisher"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/forester/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Forester"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/geologist/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Geologist"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/hunter/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Hunter"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/scout/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Scout"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/shipwright/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Shipwright"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/soldier/init.lua:82
 msgctxt "newtribe_worker"
 msgid "Soldier"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/stonecutter/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Stonecutter"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/toolsmith/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Toolsmith"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/trainer/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Trainer"
 msgstr ""
 
+#. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/new_tribe.wad/workers/woodcutter/init.lua:8
 msgctxt "newtribe_worker"
 msgid "Woodcutter"
