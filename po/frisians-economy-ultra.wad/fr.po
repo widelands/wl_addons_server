@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-03 03:21+0000\n"
+"POT-Creation-Date: 2021-05-04 03:17+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Atanase Albaran, 2021\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
@@ -150,33 +150,37 @@ msgstr "Le moulin à seigle réduit le seigle en farine de seigle.."
 msgid "The rye farm sows and harvests rye."
 msgstr "La ferme de seigle sème et récolte du seigle."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:103
+#. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
+#: addons/frisians-economy-ultra.wad/postload.lua:105
 msgid "smoking fish"
 msgstr "poisson fumé"
 
-#: addons/frisians-economy-ultra.wad/postload.lua:110
+#. TRANSLATORS: Completed/Skipped/Did not start smoking meat because ...
+#: addons/frisians-economy-ultra.wad/postload.lua:114
 msgid "smoking meat"
 msgstr "viande fumée"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
-#: addons/frisians-economy-ultra.wad/postload.lua:118
-#: addons/frisians-economy-ultra.wad/postload.lua:154
+#: addons/frisians-economy-ultra.wad/postload.lua:124
+#: addons/frisians-economy-ultra.wad/postload.lua:168
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
 msgstr "travaille"
 
-#: addons/frisians-economy-ultra.wad/postload.lua:127
-#: addons/frisians-economy-ultra.wad/postload.lua:147
+#. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
+#: addons/frisians-economy-ultra.wad/postload.lua:135
+#: addons/frisians-economy-ultra.wad/postload.lua:159
 msgid "baking bread"
 msgstr "à faire du pain"
 
-#: addons/frisians-economy-ultra.wad/postload.lua:140
+#. TRANSLATORS: Completed/Skipped/Did not start baking honey bread because ...
+#: addons/frisians-economy-ultra.wad/postload.lua:150
 msgid "baking honey bread"
 msgstr "à faire du pain au miel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
-#: addons/frisians-economy-ultra.wad/postload.lua:163
+#: addons/frisians-economy-ultra.wad/postload.lua:177
 msgid "sewing fur garment"
 msgstr "à coudre des vêtement en fourrure"
 
