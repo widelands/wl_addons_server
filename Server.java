@@ -720,13 +720,31 @@ public class Server {
 					msg += readLine(in);
 				}
 				if (!readLine(in).equals("ENDOFSTREAM")) throw new ProtocolException("Stream continues past its end");
-				Utils.sendNotificationToGitHubThread("The user " + username + " has sent an enquiry, please help!\n\n---\n" + msg);
+				sendEnquiry(username, msg);
 
 				out.println("ENDOFSTREAM");
 				return;
 			}
 			default: throw new ProtocolException("Invalid command " + cmd[0]);
 		}
+	}
+
+	synchronized private static void sendEnquiry(String username, String msg) throws Exception {
+		File dir = new File(Utils.config("uservotesdir"), "enquiries");
+		dir.mkdirs();
+		String filename = username + "_"+ new Date().toString().replaceAll(" ", "_").replaceAll(":", "-");
+		while (new File(dir, filename).exists()) filename += "+";
+		PrintWriter w = new PrintWriter(new File(dir, filename));
+		w.println(new Date());
+		w.println("The user '" + username + "' sent the following message.");
+		w.println("Please reply to https://www.widelands.org/messages/compose/" + username + "/");
+		w.print(msg);
+		w.close();
+		Utils.sendNotificationToGitHubThread(
+				"A user has sent an enquiry, please help!\n\n"
+				+ "- User: " + username + "\n"
+				+ "- Filename: `" + filename + "`\n"
+				+ "- Message length: " + msg.length() + " characters");
 	}
 
 	synchronized private static void doDelete(File f) {
