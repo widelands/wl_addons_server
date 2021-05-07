@@ -5,15 +5,16 @@
 #
 # Translators:
 # C138, 2021
+# Atanase Albaran, 2021
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-02 19:07+0000\n"
+"POT-Creation-Date: 2021-05-05 03:13+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
-"Last-Translator: C138, 2021\n"
+"Last-Translator: Atanase Albaran, 2021\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -46,10 +47,10 @@ msgstr "Puits profond"
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:25
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:25
-#: addons/wells-running-out.wad/postload.lua:9
-#: addons/wells-running-out.wad/postload.lua:20
-#: addons/wells-running-out.wad/postload.lua:41
-#: addons/wells-running-out.wad/postload.lua:76
+#: addons/wells-running-out.wad/postload.lua:10
+#: addons/wells-running-out.wad/postload.lua:21
+#: addons/wells-running-out.wad/postload.lua:42
+#: addons/wells-running-out.wad/postload.lua:77
 msgid "working"
 msgstr "Au travail"
 
@@ -72,22 +73,22 @@ msgid "Well Keeper"
 msgstr "Gardien de puits"
 
 #. TRANSLATORS: Purpose helptext for a frisian production site: Deep Well
-#: addons/wells-running-out.wad/postload.lua:33
-#: addons/wells-running-out.wad/postload.lua:68
+#: addons/wells-running-out.wad/postload.lua:34
+#: addons/wells-running-out.wad/postload.lua:69
 msgctxt "building"
 msgid "Draws water out of the deep."
 msgstr "Tire l'eau des profondeurs."
 
-#: addons/wells-running-out.wad/postload.lua:35
-#: addons/wells-running-out.wad/postload.lua:70
+#: addons/wells-running-out.wad/postload.lua:36
+#: addons/wells-running-out.wad/postload.lua:71
 #, lua-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d seconde"
+msgstr[1] "%d secondes"
 
 #. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
-#: addons/wells-running-out.wad/postload.lua:35
+#: addons/wells-running-out.wad/postload.lua:36
 #, lua-format
 msgctxt "frisians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
@@ -95,13 +96,13 @@ msgstr ""
 "Le puits profonds nécessite %s en  moyenne pour produire un seau d'eau."
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
-#: addons/wells-running-out.wad/postload.lua:39
+#: addons/wells-running-out.wad/postload.lua:40
 msgctxt "frisians_worker"
 msgid "Operates the deep wells."
 msgstr "Exploite les puits profonds."
 
 #. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
-#: addons/wells-running-out.wad/postload.lua:70
+#: addons/wells-running-out.wad/postload.lua:71
 #, lua-format
 msgctxt "barbarians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
@@ -109,7 +110,7 @@ msgstr ""
 "Le puits profonds nécessite %s en moyenne pour produire un seau d'eau. "
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
-#: addons/wells-running-out.wad/postload.lua:74
+#: addons/wells-running-out.wad/postload.lua:75
 msgctxt "barbarians_worker"
 msgid "Operates the deep wells."
 msgstr "Exploite les puits profonds."
