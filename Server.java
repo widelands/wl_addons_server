@@ -20,6 +20,8 @@ public class Server {
 	 *   - The server checks whether the result is correct and sends either ENDOFSTREAM\n or an error message.
 	 *
 	 * The only currently supported protocol version is 4. All documentation here refers to version 4.
+	 * Note that compatibility for *all* versions *ever introduced* needs to be maintained *indefinitely*.
+	 * The first supported version is 4; the version numbers 1-3 are used by the legacy "GitHub Repo List" format.
 	 *
 	 * All arguments to commands are whitespace-terminated strings.
 	 * The return value is a \n-terminated string.
@@ -438,6 +440,15 @@ public class Server {
 		if (name.contains("..")) throw new ProtocolException("Name '" + name + "' may not contain '..'");
 	}
 
+	public static void checkAddOnExists(String name) {
+		if (!(
+				new File("addons", name).isDirectory() &&
+				new File("metadata", name + ".maintain").isFile() &&
+				new File("metadata", name + ".server").isFile())) {
+			throw new ProtocolException("Add-on '" + name + "' does not exist");
+		}
+	}
+
 	public static void checkNrArgs(String[] cmd, int expected) {
 		if (cmd.length != expected + 1) throw new ProtocolException("Expected " + expected + " argument(s), found " + (cmd.length - 1));
 	}
@@ -457,11 +468,13 @@ public class Server {
 			case CMD_INFO:  // Args: name
 				checkNrArgs(cmd, 1);
 				checkNameValid(cmd[1], false);
+				checkAddOnExists(cmd[1]);
 				info(version, cmd[1], locale, out);
 				return;
 			case CMD_DOWNLOAD: {  // Args: name
 				checkNrArgs(cmd, 1);
 				checkNameValid(cmd[1], false);
+				checkAddOnExists(cmd[1]);
 				DirInfo dir = new DirInfo(new File("addons", cmd[1]));
 				Utils.registerDownload(cmd[1]);
 				out.println(dir.totalDirs);
@@ -473,6 +486,7 @@ public class Server {
 			case CMD_I18N: {  // Args: name
 				checkNrArgs(cmd, 1);
 				checkNameValid(cmd[1], false);
+				checkAddOnExists(cmd[1]);
 				DirInfo dir = new DirInfo(new File("i18n", cmd[1]));
 				dir.writeAllFileInfos(out);
 				out.println("ENDOFSTREAM");
@@ -482,6 +496,7 @@ public class Server {
 				checkNrArgs(cmd, 2);
 				checkNameValid(cmd[1], false);
 				checkNameValid(cmd[2], false);
+				checkAddOnExists(cmd[1]);
 				writeOneFile(new File("screenshots/" + cmd[1], cmd[2]), out);
 				out.println("ENDOFSTREAM");
 				return;
@@ -490,6 +505,7 @@ public class Server {
 				checkNrArgs(cmd, 3);
 				if (username.isEmpty()) throw new ProtocolException("Log in to comment");
 				checkNameValid(cmd[1], false);
+				checkAddOnExists(cmd[1]);
 				String msg = "";
 				for (int i = Integer.valueOf(cmd[3]); i > 0; --i) {
 					if (!msg.isEmpty()) msg += "\n";
@@ -502,13 +518,11 @@ public class Server {
 			}
 			case CMD_VOTE:  // Args: name vote
 				checkNrArgs(cmd, 2);
-				if (username.isEmpty()) {
-					throw new ProtocolException("You need to log in to vote");
-				} else {
-					checkNameValid(cmd[1], false);
-					Utils.registerVote(cmd[1], username, cmd[2]);
-					out.println("ENDOFSTREAM");
-				}
+				if (username.isEmpty()) throw new ProtocolException("You need to log in to vote");
+				checkNameValid(cmd[1], false);
+				checkAddOnExists(cmd[1]);
+				Utils.registerVote(cmd[1], username, cmd[2]);
+				out.println("ENDOFSTREAM");
 				return;
 			case CMD_GET_VOTE: {  // Args: name
 				checkNrArgs(cmd, 1);
@@ -517,6 +531,7 @@ public class Server {
 					return;
 				}
 				checkNameValid(cmd[1], false);
+				checkAddOnExists(cmd[1]);
 				File f = new File(Utils.config("uservotesdir"), cmd[1]);
 				Utils.Value vote = f.isFile() ? Utils.readProfile(f, cmd[1]).get(username) : null;
 				out.println(vote == null ? "0" : vote.value);
@@ -526,6 +541,7 @@ public class Server {
 			case CMD_SUBMIT_SCREENSHOT: {  // Args: name filesize checksum whitespaces description
 				checkNrArgs(cmd, 5);
 				checkNameValid(cmd[1], false);
+				checkAddOnExists(cmd[1]);
 				if (username.isEmpty()) throw new ProtocolException("You need to log in to submit screenshots");
 				if (!admin) {
 					String originalUploader = Utils.readProfile(new File("metadata", cmd[1] + ".maintain"), cmd[1]).get("uploader").value(locale);
@@ -576,6 +592,7 @@ public class Server {
 				checkNrArgs(cmd, 1);
 				if (username.isEmpty()) throw new ProtocolException("You need to log in to submit add-ons");
 				checkNameValid(cmd[1], false);
+				/* No need here to check if the add-on exists. */
 				if (!admin) {
 					File f = new File("metadata", cmd[1] + ".maintain");
 					if (f.exists()) {
