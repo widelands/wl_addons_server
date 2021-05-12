@@ -17,7 +17,10 @@ public class Server {
 	 * Otherwise:
 	 *   - The server replies with a random number followed by \nENDOFSTREAM\n.
 	 *   - The client calculates the hash of the password hash and the random number and sends the result followed by \nENDOFSTREAM\n.
-	 *   - The server checks whether the result is correct and sends either ENDOFSTREAM\n or an error message.
+	 *   - The server checks whether the result is correct and sends one of these:
+	 *     - SUCCESS\n for accepted standard user
+	 *     - ADMIN\n for accepted superuser
+	 *     - an error message for incorrect username or password
 	 *
 	 * The only currently supported protocol version is 4. All documentation here refers to version 4.
 	 * Note that compatibility for *all* versions *ever introduced* needs to be maintained *indefinitely*.
@@ -380,7 +383,9 @@ public class Server {
 						throw new ProtocolException("Stream continues past its end");
 					}
 					boolean admin = false;
-					if (!username.isEmpty()) {
+					if (username.isEmpty()) {
+						out.println("ENDOFSTREAM");
+					} else {
 						final long r = random.nextLong();
 						out.println(r);
 						out.println("ENDOFSTREAM");
@@ -413,8 +418,9 @@ public class Server {
 						if (!password.equals(expected)) {
 							throw new ProtocolException("Wrong username or password");
 						}
+
+						out.println(admin ? "ADMIN" : "SUCCESS");
 					}
-					out.println("ENDOFSTREAM");
 
 					String cmd;
 					while ((cmd = readLine(in, false)) != null) { synchronized(syncer) {
