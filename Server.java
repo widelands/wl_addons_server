@@ -69,6 +69,8 @@ public class Server {
 		 *  - for each comment:
 		 *      - name, \n,
 		 *      - timestamp, \n,
+		 *      - last editor name (may be empty), \n,
+		 *      - last edit timestamp, \n,
 		 *      - version, \n,
 		 *      - number of \n characters in the message, \n
 		 *      - message, \n
@@ -157,7 +159,7 @@ public class Server {
 
 		/**
 		 * CMD_COMMENT name version lines
-		 * Vote on an add-on.
+		 * Comment on an add-on.
 		 * Arg 1: Add-on name
 		 * Arg 2: Add-on version
 		 * Arg 3: Number of lines in the message
@@ -165,6 +167,17 @@ public class Server {
 		 * Returns: ENDOFSTREAM\n or an error message\n
 		 */
 		CMD_COMMENT,
+
+		/**
+		 * CMD_EDIT_COMMENT name index lines
+		 * Edit an existing comment.
+		 * Arg 1: Add-on name
+		 * Arg 2: Index of the comment.
+		 * Arg 3: Number of lines in the message
+		 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
+		 * Returns: ENDOFSTREAM\n or an error message\n
+		 */
+		CMD_EDIT_COMMENT,
 
 		/**
 		 * CMD_SUBMIT name
@@ -516,6 +529,31 @@ public class Server {
 				out.println("ENDOFSTREAM");
 				return;
 			}
+			case CMD_EDIT_COMMENT: {  // Args: name index lines
+				checkNrArgs(cmd, 3);
+				if (username.isEmpty()) throw new ProtocolException("Log in to edit comments");
+				checkNameValid(cmd[1], false);
+				checkAddOnExists(cmd[1]);
+
+				if (!admin) {
+					if (!username.equals(Utils.readProfile(new File("metadata", cmd[1] + ".server"), cmd[1]).get("comment_name_" + cmd[2]).value)) {
+						throw new ProtocolException("Forbidden to edit another user's comment");
+					}
+					Utils.Value v = Utils.readProfile(new File("metadata", cmd[1] + ".server"), cmd[1]).get("comment_editor_" + cmd[2]);
+					if (v != null && !username.equals(v.value)) throw new ProtocolException("Forbidden to edit a comment edited by a maintainer");
+				}
+
+				String msg = "";
+				for (int i = Integer.valueOf(cmd[3]); i > 0; --i) {
+					if (!msg.isEmpty()) msg += "\n";
+					msg += readLine(in);
+				}
+
+				if (!readLine(in).equals("ENDOFSTREAM")) throw new ProtocolException("Stream continues past its end");
+				Utils.editComment(cmd[1], cmd[2], username, msg);
+				out.println("ENDOFSTREAM");
+				return;
+			}
 			case CMD_VOTE:  // Args: name vote
 				checkNrArgs(cmd, 2);
 				if (username.isEmpty()) throw new ProtocolException("You need to log in to vote");
@@ -842,9 +880,15 @@ public class Server {
 				int c = Integer.valueOf(metadataServer.get("comments").value);
 				out.println(c);
 				for (int i = 0; i < c; ++i) {
-					out.println(metadataServer.get("comment_name_"      + i).value(locale));
+					out.println(metadataServer.get("comment_name_"      + i).value);
 					out.println(metadataServer.get("comment_timestamp_" + i).value);
-					out.println(metadataServer.get("comment_version_"   + i).value);
+
+					Utils.Value v = metadataServer.get("comment_editor_" + i);
+					out.println(v == null ? "" : v.value);
+					v = metadataServer.get("comment_edit_timestamp_" + i);
+					out.println(v == null ? "0" : v.value);
+
+					out.println(metadataServer.get("comment_version_"     + i).value);
 					int l = Integer.valueOf(metadataServer.get("comment_" + i).value);
 					out.println(l);
 					for (int j = 0; j <= l; ++j) out.println(metadataServer.get("comment_" + i + "_" + j).value(locale));
