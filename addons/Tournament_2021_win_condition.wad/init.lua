@@ -178,7 +178,7 @@ local r = {
       -- The game has ended. Show a window with results to all players
       local scores = _get_result_msg()
       for i, plr in ipairs(plrs) do
-         if plr_data[plr.number].nr_heroes >= MAXHEROES then
+         if plr_data[plr.number].nr_heroes >= MAXHEROES or #plrs < 2 then
             -- Game won
             wl.game.report_result(plr, 1, make_extra_data(plr, wc_name, wc_version, {score = scores }))
          else
