@@ -115,3 +115,9 @@ source_file = po/Tournament_2021_win_condition.wad/Tournament_2021_win_condition
 source_lang = en
 type = PO
 
+[widelands-addons.legacy-terrains-wad]
+file_filter = po/legacy_terrains.wad/<lang>.po
+source_file = po/legacy_terrains.wad/legacy_terrains.wad.pot
+source_lang = en
+type = PO
+
