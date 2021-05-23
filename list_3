@@ -1,5 +1,5 @@
 3
-20
+21
 Tournament_2021_maps.wad
 Tournament 2021 Maps
 Maps for the 2021 Tournament
@@ -12520,6 +12520,78 @@ dab3bb1d52a3b036a5c0668e13e36f70
 07a6f87e79c0b2af8c0924750f8204e6
 0
 verified
+the-x-mod.wad
+the-x’s ‘Tournament’ Mode
+A tournament mode for Widelands, or: The mode that guarantees games of less than two hours. The early game is eased and building processes are sped up; later in the game the costs rise exponentially. This results in myriads of new strategies. For fast and simultaneously strategically challenging Widelands matches!<br><font italic=true>In Widelands 1.0 and older, some features of this add-on are automatically disabled.</font>
+the-x & Nordfriese
+Nordfriese
+
+
+sync_safe
+1621506858
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1.0.0
+1
+156268
+tribes
+0
+4
+atlanteans
+barbarians
+empire
+frisians
+18
+addon
+atlanteans/militarysites.lua
+atlanteans/productionsites.lua
+atlanteans/trainingsites.lua
+atlanteans/warehouses.lua
+barbarians/militarysites.lua
+barbarians/productionsites.lua
+barbarians/trainingsites.lua
+barbarians/warehouses.lua
+empire/militarysites.lua
+empire/productionsites.lua
+empire/trainingsites.lua
+empire/warehouses.lua
+frisians/militarysites.lua
+frisians/productionsites.lua
+frisians/trainingsites.lua
+frisians/warehouses.lua
+postload.lua
+0
+18
+0338ee6daa2e749c1e1855faedecb288
+056c64dc76a13745ff0e084893c24b26
+a895be86dda456c65cda18679c29e89a
+8802b07915dc30ca21e98bccaffc3bc3
+6ccbc921d37303f3be838820429d4bff
+b4114afcc878eab1d15edf430b09c149
+e10a192939cbbbdb1d72bc8fb94261fb
+54f5d8be448ac934ff9ee32eb7ffdd25
+facf8b2b2296379b35a50773eb05d387
+05b7463018b2a45383134bfd7f684a5b
+3716564c6f260edb52b2dcbfc0dcf821
+96d7cc41289c760ecdc28be34dec3124
+592663725619ac65887651c38a619e11
+37846868c6c9fd7b5aaa968674f745a5
+3d73ed0bc34c9016c3a71f50af95305a
+1bd8920c167509a52e84a644856b7814
+0fed3ba9bbeb6ca050ddda36948642cf
+886703413c0350cc5066b89ced1c5419
+0
+unchecked
 wells-running-out.wad
 Water Resource Efficiency
 Make the ‘water’ resource more useful by giving wells a larger radius and a chance of only 5% to find water when exhausted. Additionally the barbarian and frisian wells can be enhanced to deep wells when the worker has enough experience.
