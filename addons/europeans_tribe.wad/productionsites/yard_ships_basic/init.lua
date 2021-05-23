@@ -1,0 +1,99 @@
+push_textdomain("europeans_tribe.wad", true)
+
+dirname = path.dirname(__file__)
+
+descriptions:new_productionsite_type {
+   name = "europeans_shipyard_basic",
+   -- TRANSLATORS: This is a building name used in lists of buildings
+   descname = pgettext("europeans_building", "Basic Shipyard"),
+   icon = dirname .. "menu.png",
+   size = "medium",
+   map_check = {"seafaring"},
+   
+   enhancement = {
+        name = "europeans_shipyard_normal",
+        enhancement_cost = {
+          cloth = 2,
+          brick = 2,
+          grout = 2,
+          quartz = 1
+        },
+        enhancement_return_on_dismantle = {
+          granite = 2,
+          quartz = 1
+        },
+   },
+
+   buildcost = {
+      planks = 5,
+      reed = 4
+   },
+   return_on_dismantle = {
+      log = 4,
+      reed = 2
+   },
+
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 62, 48 },
+      },
+      build = {
+         hotspot = { 62, 48 },
+      },
+      unoccupied = {
+         hotspot = { 62, 48 },
+      },
+      working = {
+         hotspot = { 62, 48 },
+      },
+   },
+
+   aihints = {
+      needs_water = true,
+      shipyard = true
+   },
+
+   working_positions = {
+      europeans_shipwright = 1
+   },
+
+   inputs = {
+      { name = "log", amount = 2 },
+      { name = "planks", amount = 10 },
+      { name = "reed", amount = 2 },
+      { name = "spidercloth", amount = 2 }
+   },
+
+   programs = {
+      main = {
+         -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+         descname = _"working",
+         actions = {
+            "call=ship on failure fail",
+            "call=ship_preparation",
+            "return=no_stats"
+         }
+      },
+      ship = {
+         -- TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
+         descname = _"constructing a ship",
+         actions = {
+            "return=skipped when not site has log",
+            "return=skipped when not site has planks",
+            "return=skipped when not site has spidercloth",
+            "sleep=duration:15s",
+            "construct=europeans_shipconstruction worker:buildship radius:5",
+            "sleep=duration:15s",
+         }
+      },
+      ship_preparation = {
+         descname = _"working",
+         actions = {
+            "animate=working duration:50s",
+         }
+      },
+   },
+}
+
+pop_textdomain()

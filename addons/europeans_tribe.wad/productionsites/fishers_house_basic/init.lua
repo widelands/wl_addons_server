@@ -1,0 +1,83 @@
+push_textdomain("europeans_tribe.wad", true)
+
+dirname = path.dirname(__file__)
+
+descriptions:new_productionsite_type {
+   name = "europeans_fishers_house_basic",
+   -- TRANSLATORS: This is a building name used in lists of buildings
+   descname = pgettext("europeans_building", "Basic Fisher’s Hut"),
+   icon = dirname .. "menu.png",
+   size = "small",
+
+   enhancement = {
+        name = "europeans_fishers_house_normal",
+        enhancement_cost = {
+          cloth = 1,
+          brick = 1,
+          grout = 1,
+          quartz = 1
+        },
+        enhancement_return_on_dismantle = {
+          granite = 1,
+          quartz = 1,
+        },
+   },
+
+   buildcost = {
+      planks = 2,
+      reed = 2
+   },
+   return_on_dismantle = {
+      log = 2
+   },
+
+   animations = {
+      idle = {
+         pictures = path.list_files(dirname .. "idle_??.png"),
+         hotspot = { 39, 52 },
+      },
+      build = {
+         pictures = path.list_files(dirname .. "build_??.png"),
+         hotspot = { 39, 52 },
+      },
+      unoccupied = {
+         pictures = path.list_files(dirname .. "unoccupied_??.png"),
+         hotspot = { 39, 52 },
+      },
+   },
+
+   aihints = {
+      needs_water = true,
+      requires_supporters = true
+   },
+
+   working_positions = {
+      europeans_fisher_basic = 1
+   },
+
+   programs = {
+      main = {
+         -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
+         descname = _"fishing",
+         actions = {
+            "call=fishing_in_sea"
+         }
+      },
+      fishing_in_sea = {
+         -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
+         descname = _"fishing in sea",
+         actions = {
+            "callworker=fish_in_sea",
+            "sleep=duration:48s",
+         }
+      },
+   },
+   out_of_resource_notification = {
+      -- Translators: Short for "Out of ..." for a resource
+      title = _"No Fish",
+      heading = _"Out of Fish",
+      message = pgettext("europeans_building", "The fisher working out of this fisher’s hut can’t find any fish in his work area."),
+   },
+}
+
+pop_textdomain()

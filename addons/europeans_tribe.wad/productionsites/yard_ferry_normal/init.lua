@@ -1,0 +1,60 @@
+push_textdomain("europeans_tribe.wad", true)
+
+dirname = path.dirname(__file__)
+
+descriptions:new_productionsite_type {
+   name = "europeans_ferry_yard_normal",
+   -- TRANSLATORS: This is a building name used in lists of buildings
+   descname = pgettext("europeans_building", "Normal Ferry Yard"),
+   icon = dirname .. "menu.png",
+   size = "medium",
+   map_check = {"waterways"},
+   
+   enhancement = {
+        name = "europeans_ferry_yard_advanced",
+        enhancement_cost = {
+          marble_column = 2,
+          quartz = 1,
+          diamond = 1
+        },
+        enhancement_return_on_dismantle = {
+          marble = 2,
+          quartz = 1,
+          diamond = 1
+        },
+   },
+
+   -- TODO(Nordfriese): Make animations
+   animations = {
+      idle = {
+         pictures = path.list_files(dirname .. "idle_??.png"),
+         hotspot = { 53, 66 },
+      }
+   },
+
+   aihints = {},
+
+   working_positions = {
+      europeans_shipwright = 1
+   },
+
+   inputs = {
+      { name = "planks", amount = 6 },
+      { name = "spidercloth", amount = 3 },
+   },
+
+   programs = {
+      main = {
+         -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+         descname = _"working",
+         actions = {
+            "sleep=duration:30s",
+            "callworker=buildferry_3",
+            "consume=planks:2 spidercloth",
+            "callworker=buildferry_4"
+         }
+      },
+   },
+}
+
+pop_textdomain()
