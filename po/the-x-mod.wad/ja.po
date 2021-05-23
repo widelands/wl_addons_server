@@ -1,0 +1,582 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-23 17:10+0000\n"
+"PO-Revision-Date: 2021-05-23 11:14+0000\n"
+"Language-Team: Japanese (https://www.transifex.com/widelands/teams/35159/"
+"ja/)\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: addons/the-x-mod.wad/addon:2
+msgid "the-x’s ‘Tournament’ Mode"
+msgstr ""
+
+#: addons/the-x-mod.wad/addon:3
+msgid ""
+"A tournament mode for Widelands, or: The mode that guarantees games of less "
+"than two hours. The early game is eased and building processes are sped up; "
+"later in the game the costs rise exponentially. This results in myriads of "
+"new strategies. For fast and simultaneously strategically challenging "
+"Widelands matches!<br><font italic=true>In Widelands 1.0 and older, some "
+"features of this add-on are automatically disabled.</font>"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:131
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:139
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:234
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:242
+#: addons/the-x-mod.wad/empire/productionsites.lua:65
+#: addons/the-x-mod.wad/empire/productionsites.lua:73
+#: addons/the-x-mod.wad/frisians/productionsites.lua:8
+#: addons/the-x-mod.wad/frisians/productionsites.lua:16
+msgid "scouting"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:157
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:168
+msgid "smoking fish"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:179
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:211
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:294
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:321
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:369
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:454
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:471
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:405
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:495
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:537
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:584
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:608
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:654
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:762
+#: addons/the-x-mod.wad/empire/productionsites.lua:122
+#: addons/the-x-mod.wad/empire/productionsites.lua:175
+#: addons/the-x-mod.wad/empire/productionsites.lua:257
+#: addons/the-x-mod.wad/empire/productionsites.lua:327
+#: addons/the-x-mod.wad/frisians/productionsites.lua:36
+#: addons/the-x-mod.wad/frisians/productionsites.lua:59
+#: addons/the-x-mod.wad/frisians/productionsites.lua:110
+msgid "working"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:189
+msgid "forging a steel shield"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:200
+msgid "forging an advanced shield"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a light trident because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:224
+msgid "forging a light trident"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a long trident because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:238
+msgid "forging a long trident"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a steel trident because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:252
+msgid "forging a steel trident"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a double trident because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:266
+msgid "forging a double trident"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a heavy double trident because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:280
+msgid "forging a heavy double trident"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:309
+msgid "making a saw"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:343
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:356
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:511
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:524
+msgid "smelting iron"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:382
+msgid "felling trees"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:392
+#: addons/the-x-mod.wad/empire/productionsites.lua:97
+msgid "sawing logs"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start spinning gold because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:418
+msgid "spinning gold"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:434
+msgctxt "atlanteans_building"
+msgid "baking bread"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:446
+msgid "planting corn"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
+#: addons/the-x-mod.wad/atlanteans/productionsites.lua:463
+msgid "planting blackroot"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:27
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:88
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:66
+#: addons/the-x-mod.wad/empire/trainingsites.lua:95
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:23
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:116
+msgid "sleeping"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading soldier attack from level 0 to level 1 because ...
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:33
+msgctxt "atlanteans_building"
+msgid "upgrading soldier attack from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading soldier attack from level 2 to level 3 because ...
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:44
+msgctxt "atlanteans_building"
+msgid "upgrading soldier attack from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading soldier attack from level 3 to level 4 because ...
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:55
+msgctxt "atlanteans_building"
+msgid "upgrading soldier attack from level 3 to level 4"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:94
+msgctxt "atlanteans_building"
+msgid "upgrading soldier defense from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:108
+msgctxt "atlanteans_building"
+msgid "upgrading soldier defense from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:122
+msgctxt "atlanteans_building"
+msgid "upgrading soldier health from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:135
+msgctxt "atlanteans_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/atlanteans/trainingsites.lua:148
+msgctxt "atlanteans_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:252
+msgid "hardening wood"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:265
+msgctxt "barbarians_building"
+msgid "baking pitta bread"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:279
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:288
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:300
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:309
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:323
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:332
+#: addons/the-x-mod.wad/empire/productionsites.lua:337
+#: addons/the-x-mod.wad/empire/productionsites.lua:354
+msgid "mining coal"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:348
+msgid "mining gold"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing a snack because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:369
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:381
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:393
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:436
+msgid "preparing a snack"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:424
+msgid "preparing a ration"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:448
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:460
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:471
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:483
+#: addons/the-x-mod.wad/empire/productionsites.lua:110
+msgid "preparing a meal"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:548
+#: addons/the-x-mod.wad/empire/productionsites.lua:131
+msgid "forging a helmet"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:560
+msgid "forging a mask"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a warhelm because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:572
+msgid "forging a warhelm"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:596
+msgid "making a felling ax"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a sharp ax because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:626
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:664
+msgid "forging a sharp ax"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:640
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:678
+msgid "forging a broad ax"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a bronze ax because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:692
+msgid "forging a bronze ax"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a battle ax because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:706
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:734
+msgid "forging a battle ax"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a warrior’s ax because ...
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:720
+#: addons/the-x-mod.wad/barbarians/productionsites.lua:748
+msgid "forging a warrior’s ax"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:16
+msgctxt "barbarians_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:30
+msgctxt "barbarians_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:72
+msgctxt "barbarians_building"
+msgid "upgrading soldier attack from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:84
+msgctxt "barbarians_building"
+msgid "upgrading soldier attack from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:97
+msgctxt "barbarians_building"
+msgid "upgrading soldier attack from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:111
+msgctxt "barbarians_building"
+msgid "upgrading soldier attack from level 3 to level 4"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:125
+msgctxt "barbarians_building"
+msgid "upgrading soldier attack from level 4 to level 5"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:139
+msgctxt "barbarians_building"
+msgid "upgrading soldier health from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:152
+msgctxt "barbarians_building"
+msgid "upgrading soldier health from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/barbarians/trainingsites.lua:165
+msgctxt "barbarians_building"
+msgid "upgrading soldier health from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:51
+msgid "raising pigs"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:83
+msgid "sculpting a marble column"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a suit of armor because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:142
+msgid "forging a suit of armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:153
+msgid "forging a suit of chain armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:164
+msgid "forging a suit of gilded armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:187
+msgid "forging a wooden spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a spear because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:201
+msgid "forging a spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:215
+msgid "forging an advanced spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a heavy spear because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:229
+msgid "forging a heavy spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a war spear because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:243
+msgid "forging a war spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:268
+#: addons/the-x-mod.wad/empire/productionsites.lua:285
+msgid "mining granite"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#: addons/the-x-mod.wad/empire/productionsites.lua:276
+#: addons/the-x-mod.wad/empire/productionsites.lua:298
+msgid "mining marble"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:21
+#: addons/the-x-mod.wad/empire/trainingsites.lua:45
+msgctxt "empire_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:57
+msgctxt "empire_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:103
+msgctxt "empire_building"
+msgid "upgrading soldier attack from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:116
+msgctxt "empire_building"
+msgid "upgrading soldier attack from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:129
+msgctxt "empire_building"
+msgid "upgrading soldier attack from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:142
+msgctxt "empire_building"
+msgid "upgrading soldier attack from level 3 to level 4"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:155
+msgctxt "empire_building"
+msgid "upgrading soldier health from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:168
+msgctxt "empire_building"
+msgid "upgrading soldier health from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:181
+msgctxt "empire_building"
+msgid "upgrading soldier health from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/empire/trainingsites.lua:194
+msgctxt "empire_building"
+msgid "upgrading soldier health from level 3 to level 4"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sewing golden fur garment because ...
+#: addons/the-x-mod.wad/frisians/productionsites.lua:25
+msgid "sewing golden fur garment"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a long sword because ...
+#: addons/the-x-mod.wad/frisians/productionsites.lua:45
+msgid "forging a long sword"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
+#: addons/the-x-mod.wad/frisians/productionsites.lua:71
+msgid "forging a broadsword"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a double-edged sword because ...
+#: addons/the-x-mod.wad/frisians/productionsites.lua:85
+msgid "forging a double-edged sword"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a golden helmet because ...
+#: addons/the-x-mod.wad/frisians/productionsites.lua:99
+msgid "forging a golden helmet"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:31
+msgctxt "frisians_building"
+msgid "upgrading soldier attack from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:46
+msgctxt "frisians_building"
+msgid "upgrading soldier attack from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:61
+msgctxt "frisians_building"
+msgid "upgrading soldier attack from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:77
+msgctxt "frisians_building"
+msgid "upgrading soldier health from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:91
+msgctxt "frisians_building"
+msgid "upgrading soldier defense from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:124
+msgctxt "frisians_building"
+msgid "upgrading soldier attack from level 3 to level 4"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:139
+msgctxt "frisians_building"
+msgid "upgrading soldier attack from level 4 to level 5"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:155
+msgctxt "frisians_building"
+msgid "upgrading soldier attack from level 5 to level 6"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:172
+msgctxt "frisians_building"
+msgid "upgrading soldier defense from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/the-x-mod.wad/frisians/trainingsites.lua:188
+msgctxt "frisians_building"
+msgid "upgrading soldier health from level 1 to level 2"
+msgstr ""
