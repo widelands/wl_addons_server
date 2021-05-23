@@ -423,11 +423,13 @@ public class Server {
 					}
 
 					String cmd;
-					while ((cmd = readLine(in, false)) != null) { synchronized(syncer) {
-						syncer.tick(s);
-						System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] Received command: " + cmd);
+					while ((cmd = readLine(in, false)) != null) {
+						synchronized(syncer) {
+							syncer.tick(s);
+							System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] Received command: " + cmd);
+						}
 						handle(cmd.split(" "), out, in, protocolVersion, username, admin, locale);
-					}}
+					}
 				} catch (Exception e) {
 					System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] ERROR: " + e);
 					if (out != null) out.println(e);
@@ -773,11 +775,12 @@ public class Server {
 		}
 	}
 
-	synchronized private static void sendEnquiry(String username, String msg) throws Exception {
+	private static Object _enquiry_syncer = new Object();
+	private static void sendEnquiry(String username, String msg) throws Exception {
 		File dir = new File(Utils.config("uservotesdir"), "enquiries");
 		dir.mkdirs();
 		String filename = username + "_"+ new Date().toString().replaceAll(" ", "_").replaceAll(":", "-");
-		while (new File(dir, filename).exists()) filename += "+";
+		synchronized(_enquiry_syncer) { while (new File(dir, filename).exists()) filename += "+"; }
 		PrintWriter w = new PrintWriter(new File(dir, filename));
 		w.println(new Date());
 		w.println("The user '" + username + "' sent the following message.");
