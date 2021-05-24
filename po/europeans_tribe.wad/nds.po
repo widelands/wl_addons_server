@@ -3,36 +3,42 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Benedikt Straub <benedikt-straub@web.de>, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-24 03:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-05-23 17:12+0000\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
+"Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
+"nds/)\n"
+"Language: nds\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/europeans_tribe.wad/addon:2
 msgid "Europeans Tribe"
-msgstr ""
+msgstr "Europäers-Volk"
 
 #: addons/europeans_tribe.wad/addon:3
 msgid ""
 "Adds a new tribe named ‘Europeans’. It’s still experimental and uses "
 "buildings and workers from Barbarians, Atlanteans, and Empire."
 msgstr ""
+"Föögt een nejes Volk »Europäers« hento. Dat is noch nich stevig un bruukt "
+"Husen un Arbeiders vun de Willen Lüü, Atlantingers un vum Latiensken Riek."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Barrier"
-msgstr ""
+msgstr "Groter Uppass"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #. TRANSLATORS: Message sent by a Barbarian military site
@@ -40,7 +46,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:69
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your barrier."
-msgstr ""
+msgstr "Diene Soldaten hebben dienen Uppass besett."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #. TRANSLATORS: Message sent by a Barbarian military site
@@ -48,7 +54,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:71
 msgctxt "europeans_building"
 msgid "Your barrier discovered an aggressor."
-msgstr ""
+msgstr "Dien Uppass hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #. TRANSLATORS: Message sent by a Barbarian military site
@@ -56,7 +62,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:73
 msgctxt "europeans_building"
 msgid "Your barrier is under attack."
-msgstr ""
+msgstr "Feinde griepen dienen Uppass an."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #. TRANSLATORS: Message sent by a Barbarian military site
@@ -64,7 +70,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:75
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the barrier."
-msgstr ""
+msgstr "De Feinde hebben diene Soldaten in eenem Uppass manntjet."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #. TRANSLATORS: Message sent by a Barbarian military site
@@ -72,54 +78,54 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:77
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the barrier."
-msgstr ""
+msgstr "Diene Soldaten hebben de Feinde in eenem Uppass manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Castle"
-msgstr ""
+msgstr "Grotes Slött"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:33
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:67
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your castle."
-msgstr ""
+msgstr "Diene Soldaten hebben dien Slött besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:35
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:69
 msgctxt "europeans_building"
 msgid "Your castle discovered an aggressor."
-msgstr ""
+msgstr "Dien Slött hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:37
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:71
 msgctxt "europeans_building"
 msgid "Your castle is under attack."
-msgstr ""
+msgstr "Feinde griepen dien Slött an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:39
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:73
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the castle."
-msgstr ""
+msgstr "De Feinde hebben diene Soldaten in eenem Slött manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:41
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:75
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the castle."
-msgstr ""
+msgstr "Diene Soldaten hebben de Feinde in eenem Slött manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Tower"
-msgstr ""
+msgstr "Groter Toorn"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:36
@@ -127,7 +133,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:52
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your tower."
-msgstr ""
+msgstr "Diene Soldaten hebben dienen Toorn besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:38
@@ -135,7 +141,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:54
 msgctxt "europeans_building"
 msgid "Your tower discovered an aggressor."
-msgstr ""
+msgstr "Dien Toorn hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:40
@@ -143,7 +149,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:56
 msgctxt "europeans_building"
 msgid "Your tower is under attack."
-msgstr ""
+msgstr "Feinde griepen dienen Toorn an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:42
@@ -151,7 +157,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:58
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the tower."
-msgstr ""
+msgstr "De Feinde hebben diene Soldaten in eenem Toorn manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:44
@@ -159,19 +165,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:60
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the tower."
-msgstr ""
+msgstr "Diene Soldaten hebben de Feinde in eenem Toorn manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:8
 msgctxt "europeans_building"
 msgid "Barrier"
-msgstr ""
+msgstr "Uppass"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/battlearena_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Battle Arena"
-msgstr ""
+msgstr "Lütter Slachtenring"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_basic/init.lua:91
@@ -185,7 +191,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_3/init.lua:78
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:71
 msgid "sleeping"
-msgstr ""
+msgstr "to slapen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_basic/init.lua:99
@@ -195,7 +201,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:69
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 0 to level 1"
-msgstr ""
+msgstr "Soldaten-Utwieken vun Stand 0 up Stand 1 to verbetern"
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
 #: addons/europeans_tribe.wad/buildings/battlearena_basic/init.lua:116
@@ -210,7 +216,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:240
 msgctxt "europeans_building"
 msgid "No soldier to train!"
-msgstr ""
+msgstr "Keen Soldat tum Utbilden!"
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
 #: addons/europeans_tribe.wad/buildings/battlearena_basic/init.lua:118
@@ -225,13 +231,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:242
 msgctxt "europeans_building"
 msgid "No soldier found for this training level!"
-msgstr ""
+msgstr "Keen Soldat för deese Lehr funnen!"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/battlearena_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 1"
-msgstr ""
+msgstr "Slachtenring vun de Grött 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_1/init.lua:102
@@ -240,13 +246,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:141
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "Soldaten-Verteidigung vun Stand 0 to Stand 1 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/battlearena_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 2"
-msgstr ""
+msgstr "Slachtenring vun de Grött 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_2/init.lua:91
@@ -254,7 +260,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:81
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
-msgstr ""
+msgstr "Soldaten-Utwieken vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_2/init.lua:116
@@ -262,321 +268,321 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:154
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "Soldaten-Verteidigung vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/battlearena_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 3"
-msgstr ""
+msgstr "Slachtenring vun de Grött 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_3/init.lua:109
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:93
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 2 to level 3"
-msgstr ""
+msgstr "Soldaten-Utwieken vun Stand 2 up Stand 3 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_3/init.lua:145
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:165
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 2 to level 3"
-msgstr ""
+msgstr "Soldaten-Verteidigung vun Stand 2 to Stand 3 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 4"
-msgstr ""
+msgstr "Slachtenring vun de Grött 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:105
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 3 to level 4"
-msgstr ""
+msgstr "Soldaten-Utwieken vun Stand 3 up Stand 4 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:117
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 4 to level 5"
-msgstr ""
+msgstr "Soldaten-Utwieken vun Stand 4 up Stand 5 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:129
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 5 to level 6"
-msgstr ""
+msgstr "Soldaten-Utwieken vun Stand 5 up Stand 6 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:176
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 3 to level 4"
-msgstr ""
+msgstr "Soldaten-Verteidigung vun Stand 3 to Stand 4 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:189
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 4 to level 5"
-msgstr ""
+msgstr "Soldaten-Verteidigung vun Stand 4 to Stand 5 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/battlearena_level_4/init.lua:200
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 5 to level 6"
-msgstr ""
+msgstr "Soldaten-Verteidigung vun Stand 5 to Stand 6 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/blockhouse/init.lua:8
 msgctxt "europeans_building"
 msgid "Blockhouse"
-msgstr ""
+msgstr "Wachters-Kamerke"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/blockhouse/init.lua:49
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your blockhouse."
-msgstr ""
+msgstr "Diene Soldaten hebben diene Wachters-Kamerke besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/blockhouse/init.lua:51
 msgctxt "europeans_building"
 msgid "Your blockhouse discovered an aggressor."
-msgstr ""
+msgstr "Diene Wachters-Kamerke hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/blockhouse/init.lua:53
 msgctxt "europeans_building"
 msgid "Your blockhouse is under attack."
-msgstr ""
+msgstr "Feinde griepen diene Wachters-Kamerke an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/blockhouse/init.lua:55
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the blockhouse."
-msgstr ""
+msgstr "De Feinde hebben diene Soldaten in eener Wachters-Kamerke manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/blockhouse/init.lua:57
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the blockhouse."
-msgstr ""
+msgstr "Diene Soldaten hebben de Feinde in eener Wachters-Kamerke manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:8
 msgctxt "europeans_building"
 msgid "Castle"
-msgstr ""
+msgstr "Slött"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:8
 msgctxt "europeans_building"
 msgid "Fortress"
-msgstr ""
+msgstr "Schanz"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:56
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your fortress."
-msgstr ""
+msgstr "Diene Soldaten hebben diene Schanz besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:58
 msgctxt "europeans_building"
 msgid "Your fortress discovered an aggressor."
-msgstr ""
+msgstr "Diene Schanz hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:60
 msgctxt "europeans_building"
 msgid "Your fortress is under attack."
-msgstr ""
+msgstr "Feinde griepen diene Schanz an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:62
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the fortress."
-msgstr ""
+msgstr "De Feinde hebben diene Soldaten in eener Schanz manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:64
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the fortress."
-msgstr ""
+msgstr "Diene Soldaten hebben de Feinde in eener Schanz manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:8
 msgctxt "europeans_building"
 msgid "Guardhouse"
-msgstr ""
+msgstr "Wahrders-Kamer"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:56
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your guardhouse."
-msgstr ""
+msgstr "Diene Soldaten hebben diene Wahrders-Kamer besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:58
 msgctxt "europeans_building"
 msgid "Your guardhouse discovered an aggressor."
-msgstr ""
+msgstr "Diene Wahrders-Kamer hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:60
 msgctxt "europeans_building"
 msgid "Your guardhouse is under attack."
-msgstr ""
+msgstr "Feinde griepen diene Wahrders-Kamer an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:62
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the guardhouse."
-msgstr ""
+msgstr "De Feinde hebben diene Soldaten in eener Wahrders-Kamer manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:64
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the guardhouse."
-msgstr ""
+msgstr "Diene Soldaten hebben de Feinde in eener Wahrders-Kamer manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/headquarters/init.lua:8
 msgctxt "europeans_building"
 msgid "Headquarters"
-msgstr ""
+msgstr "Raadhuus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:8
 msgctxt "europeans_building"
 msgid "Outpost"
-msgstr ""
+msgstr "Butenstee"
 
 #. TRANSLATORS: Message sent by an europeans military site
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:49
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your outpost."
-msgstr ""
+msgstr "Diene Soldaten hebben diene Butenstee besett."
 
 #. TRANSLATORS: Message sent by an europeans military site
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:51
 msgctxt "europeans_building"
 msgid "Your outpost discovered an aggressor."
-msgstr ""
+msgstr "Diene Butenstee hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an europeans military site
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:53
 msgctxt "europeans_building"
 msgid "Your outpost is under attack."
-msgstr ""
+msgstr "Feinde griepen diene Butenstee an."
 
 #. TRANSLATORS: Message sent by an europeans military site
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:55
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the outpost."
-msgstr ""
+msgstr "De Feinde hebben diene Soldaten in eener Butenstee manntjet."
 
 #. TRANSLATORS: Message sent by an europeans military site
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:57
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the outpost."
-msgstr ""
+msgstr "Diene Soldaten hebben de Feinde in eener Butenstee manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/port/init.lua:8
 msgctxt "europeans_building"
 msgid "Port"
-msgstr ""
+msgstr "Muu"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:8
 msgctxt "europeans_building"
 msgid "Sentry"
-msgstr ""
+msgstr "Wachters-Kamer"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:32
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your sentry."
-msgstr ""
+msgstr "Diene Soldaten hebben diene Wachters-Kamer besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:34
 msgctxt "europeans_building"
 msgid "Your sentry discovered an aggressor."
-msgstr ""
+msgstr "Diene Wachters-Kamer hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:36
 msgctxt "europeans_building"
 msgid "Your sentry is under attack."
-msgstr ""
+msgstr "Feinde griepen diene Wachters-Kamer an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:38
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the sentry."
-msgstr ""
+msgstr "De Feinde hebben diene Soldaten in een Wachters-Kamer manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:40
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the sentry."
-msgstr ""
+msgstr "Diene Soldaten hebben de Feinde in een Wachters-Kamer manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:8
 msgctxt "europeans_building"
 msgid "Medium Tower"
-msgstr ""
+msgstr "Middelgroter Toorn"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:8
 msgctxt "europeans_building"
 msgid "High Tower"
-msgstr ""
+msgstr "Baldadiger Toorn"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:8
 msgctxt "europeans_building"
 msgid "Small Tower"
-msgstr ""
+msgstr "Toorntje"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:50
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your small tower."
-msgstr ""
+msgstr "Diene Soldaten hebben dien Toorntje besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:52
 msgctxt "europeans_building"
 msgid "Your small tower discovered an aggressor."
-msgstr ""
+msgstr "Dien Toorntje hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:54
 msgctxt "europeans_building"
 msgid "Your small tower is under attack."
-msgstr ""
+msgstr "Feinde griepen dien Toorntje an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:56
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the small tower."
-msgstr ""
+msgstr "De Feinde hebben diene Soldaten in eenem Toorntje manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:58
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the small tower."
-msgstr ""
+msgstr "Diene Soldaten hebben de Feinde in eenem Toorntje manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/trainingscamp_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Trainingscamp"
-msgstr ""
+msgstr "Lüttes Övenslager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_basic/init.lua:105
@@ -586,7 +592,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:79
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
-msgstr ""
+msgstr "Soldaten-Angriff vun Stand 0 to Stand 1 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_basic/init.lua:118
@@ -596,13 +602,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:157
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 0 to level 1"
-msgstr ""
+msgstr "Soldaten-Gesundheid vun Stand 0 to Stand 1 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Trainingscamp Level 1"
-msgstr ""
+msgstr "Övenslager vun de Grött 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_1/init.lua:96
@@ -611,7 +617,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:92
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr ""
+msgstr "Soldaten-Angriff vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_1/init.lua:122
@@ -620,13 +626,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:170
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
-msgstr ""
+msgstr "Soldaten-Gesundheid vun Stand 1 to Stand 2 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Trainingscamp Level 2"
-msgstr ""
+msgstr "Övenslager vun de Grött 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_2/init.lua:117
@@ -634,7 +640,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:105
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr ""
+msgstr "Soldaten-Angriff vun Stand 2 to Stand 3 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_2/init.lua:156
@@ -642,190 +648,190 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:183
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 2 to level 3"
-msgstr ""
+msgstr "Soldaten-Gesundheid vun Stand 2 to Stand 3 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Trainingscamp Level 3"
-msgstr ""
+msgstr "Övenslager vun de Grött 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_3/init.lua:125
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:118
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 3 to level 4"
-msgstr ""
+msgstr "Soldaten-Angriff vun Stand 3 to Stand 4 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_3/init.lua:177
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:196
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 3 to level 4"
-msgstr ""
+msgstr "Soldaten-Gesundheid vun Stand 3 to Stand 4 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Trainingscamp Level 4"
-msgstr ""
+msgstr "Övenslager vun de Grött 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:131
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 4 to level 5"
-msgstr ""
+msgstr "Soldaten-Angriff vun Stand 4 to Stand 5 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:144
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 5 to level 6"
-msgstr ""
+msgstr "Soldaten-Angriff vun Stand 5 to Stand 6 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:209
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 4 to level 5"
-msgstr ""
+msgstr "Soldaten-Gesundheid vun Stand 4 to Stand 5 to verbetern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/buildings/trainingscamp_level_4/init.lua:222
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 5 to level 6"
-msgstr ""
+msgstr "Soldaten-Gesundheid vun Stand 5 to Stand 6 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Warehouse"
-msgstr ""
+msgstr "Grotes Kraamhuus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Warehouse"
-msgstr ""
+msgstr "Lüttes Kraamhuus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Warehouse"
-msgstr ""
+msgstr "Kraamhuus"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:8
 msgctxt "resource_indicator"
 msgid "No Resources"
-msgstr ""
+msgstr "Keene Mineraalen"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:31
 msgctxt "resource_indicator"
 msgid "Water"
-msgstr ""
+msgstr "Water"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:54
 msgctxt "resource_indicator"
 msgid "Some Coal"
-msgstr ""
+msgstr "Een bietje Köhl"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:77
 msgctxt "resource_indicator"
 msgid "Some Gold"
-msgstr ""
+msgstr "Een bietje Gold"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:100
 msgctxt "resource_indicator"
 msgid "Some Iron"
-msgstr ""
+msgstr "Een bietje Iesen"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:123
 msgctxt "resource_indicator"
 msgid "Some Crystals"
-msgstr ""
+msgstr "Een bietje Blinkerflint"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:146
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
-msgstr ""
+msgstr "Mennig Köhl"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:169
 msgctxt "resource_indicator"
 msgid "A Lot of Gold"
-msgstr ""
+msgstr "Mennig Gold"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:192
 msgctxt "resource_indicator"
 msgid "A Lot of Iron"
-msgstr ""
+msgstr "Mennig Iesen"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi/init.lua:215
 msgctxt "resource_indicator"
 msgid "A Lot of Crystals"
-msgstr ""
+msgstr "Mennig Blinkerflint"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "Roggfeld (arnt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "Roggfeld (middel)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr ""
+msgstr "Roggfeld (riep)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/small/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "Roggfeld (lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "Roggfeld (ganz lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/shipconstruction_europeans/init.lua:8
 msgctxt "immovable"
 msgid "Ship Under Construction"
-msgstr ""
+msgstr "Schipp-Baustee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:8
 msgctxt "europeans_building"
 msgid "Beekeepers House"
-msgstr ""
+msgstr "Imkeree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start spinning gold because ...
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:43
 msgid "making honey"
-msgstr ""
+msgstr "Hönnig to maken"
 
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:54
 msgid "No Flowers"
-msgstr ""
+msgstr "Keene Blössems"
 
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:55
 msgid "Out of Flowers"
-msgstr ""
+msgstr "Hebb keene Blössems mehr"
 
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:56
 msgctxt "europeans_building"
@@ -834,12 +840,15 @@ msgid ""
 "fields or bushes in his work area. You should consider building another farm "
 "or berry farm nearby, or dismantling or destroying this building."
 msgstr ""
+"De Imker dat warkt bi deese Imkeree hett keene Felden of Busken mit Blössems "
+"in de Naberskupp. Bau eene Buurderee of Buskenplanteree of överlegg di, of "
+"du dat Huus plattrieten of ofbrannen willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Brewery"
-msgstr ""
+msgstr "Grote Broeree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #. TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
@@ -912,7 +921,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/yard_ships_normal/init.lua:65
 #: addons/europeans_tribe.wad/productionsites/yard_ships_normal/init.lua:85
 msgid "working"
-msgstr ""
+msgstr "to Warken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:64
@@ -924,7 +933,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:54
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:70
 msgid "brewing beer"
-msgstr ""
+msgstr "Beer to brauen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:93
@@ -934,7 +943,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:84
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:101
 msgid "brewing mead"
-msgstr ""
+msgstr "Hönnigbeer to brauen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:123
@@ -944,37 +953,37 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:115
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:131
 msgid "brewing strong beer"
-msgstr ""
+msgstr "deftigs Beer to broen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Brewery"
-msgstr ""
+msgstr "Lütte Broeree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Brewery"
-msgstr ""
+msgstr "Broeree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Brewery and Winery"
-msgstr ""
+msgstr "Grote Broeree un Wienmakeree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:145
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:163
 msgid "making wine"
-msgstr ""
+msgstr "Wien to maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Charcoal Kiln"
-msgstr ""
+msgstr "Grote Holtköhlbranneree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_advanced/init.lua:46
@@ -985,50 +994,50 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:58
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:70
 msgid "producing coal"
-msgstr ""
+msgstr "Köhl to produzeren"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Charcoal Kiln"
-msgstr ""
+msgstr "Lütte Holtköhlbranneree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Charcoal Kiln"
-msgstr ""
+msgstr "Holtköhlbranneree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:8
 msgctxt "europeans_building"
 msgid "Clay Pit and Fish Breeder’s House"
-msgstr ""
+msgstr "Lehmkuhl un Fisstüchteree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:58
 msgid "making clay"
-msgstr ""
+msgstr "Lehm to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:72
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:83
 msgid "breeding fish"
-msgstr ""
+msgstr "Fisse to tüchten"
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:94
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:58
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:77
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:72
 msgid "No Fish"
-msgstr ""
+msgstr "Keen Fiss"
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:95
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:59
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:78
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:73
 msgid "Out of Fish"
-msgstr ""
+msgstr "Hebb keene Fiske mehr"
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:96
 msgctxt "europeans_building"
@@ -1037,16 +1046,18 @@ msgid ""
 "fish in his work area. Remember that you can only regenerate your fish "
 "resources if there are some fish left to breed."
 msgstr ""
+"De Fiss-Tüchter dat warkt bi deese Fisstüchteree hett keene Fiske tum "
+"Tüchten. Du kannst de Fiske blot dann vermehren, wenn du een poor overlettst."
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:100
 msgid "The fishing grounds are full"
-msgstr ""
+msgstr "De Fiskeree-Water sünd vull"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Coal Mine"
-msgstr ""
+msgstr "Köhle-Bargwark"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
@@ -1063,7 +1074,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:41
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:56
 msgid "mining coal"
-msgstr ""
+msgstr "Köhlen oftoboen"
 
 #: addons/europeans_tribe.wad/productionsites/coalmine_basic/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_1/init.lua:88
@@ -1072,7 +1083,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_4/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:82
 msgid "No Coal"
-msgstr ""
+msgstr "Keene Köhl"
 
 #: addons/europeans_tribe.wad/productionsites/coalmine_basic/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_1/init.lua:89
@@ -1081,7 +1092,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_4/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:83
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "Köhl-Ader is leeg"
 
 #: addons/europeans_tribe.wad/productionsites/coalmine_basic/init.lua:99
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_1/init.lua:91
@@ -1091,18 +1102,21 @@ msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"De Ader vun deese Köhle-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"dürer as normaal. Överlegg di, of du dat Bargwark utbauen of plattrieten "
+"willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 1"
-msgstr ""
+msgstr "Köhle-Bargwark vun de Grött 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 2"
-msgstr ""
+msgstr "Köhle-Bargwark vun de Grött 2"
 
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_2/init.lua:93
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_4/init.lua:99
@@ -1112,12 +1126,15 @@ msgid ""
 "on investment. This mine can’t be enhanced any further, so you should "
 "consider dismantling or destroying it."
 msgstr ""
+"De Ader vun deese Köhle-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"dürer as normaal. De Bargwark kann nich utbaut werden, also överlegg di, of "
+"du de Mine ofbrannen of plattrieten willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 3"
-msgstr ""
+msgstr "Köhle-Bargwark vun de Grött 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining diamond because ...
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_3/init.lua:77
@@ -1125,19 +1142,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:64
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:81
 msgid "mining diamond"
-msgstr ""
+msgstr "Edelsteen oftoboen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 4"
-msgstr ""
+msgstr "Köhle-Bargwark vun de Grött 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 5"
-msgstr ""
+msgstr "Köhle-Bargwark vun de Grött 5"
 
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:85
 msgctxt "europeans_building"
@@ -1145,12 +1162,15 @@ msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"De Ader vun deese Köhle-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"dürer as normaal. Överlegg di, of du dat Bargwark plattrieten of ofbrannen "
+"willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Farm"
-msgstr ""
+msgstr "Buurderee"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:83
@@ -1158,7 +1178,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:69
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:58
 msgid "planting barley"
-msgstr ""
+msgstr "Garst to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:94
@@ -1166,7 +1186,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:107
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:124
 msgid "planting rye"
-msgstr ""
+msgstr "Rogg to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
@@ -1177,7 +1197,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:112
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:138
 msgid "planting wheat"
-msgstr ""
+msgstr "Weit to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:116
@@ -1185,7 +1205,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:133
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:152
 msgid "harvesting barley"
-msgstr ""
+msgstr "Garst to arnten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:128
@@ -1193,7 +1213,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:171
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:218
 msgid "harvesting rye"
-msgstr ""
+msgstr "Rogg to arnten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:140
@@ -1201,7 +1221,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:184
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:232
 msgid "harvesting wheat"
-msgstr ""
+msgstr "Weit to arnten"
 
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:153
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:170
@@ -1209,7 +1229,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:247
 #: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:74
 msgid "No Fields"
-msgstr ""
+msgstr "Keene Meedjes"
 
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:154
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:171
@@ -1217,7 +1237,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:248
 #: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:75
 msgid "Out of Fields"
-msgstr ""
+msgstr "Hebb keene Medjes mehr"
 
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:155
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:172
@@ -1225,12 +1245,14 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "The farmer working at this farm has no cleared soil to plant his seeds."
 msgstr ""
+"De Buur dat warkt bi deese Buurderee hett keen Meedland waar he wat "
+"anplanten kann."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Farm Level 1"
-msgstr ""
+msgstr "Buurderee vun de Grött 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:80
@@ -1239,7 +1261,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:84
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:98
 msgid "planting corn"
-msgstr ""
+msgstr "Mais to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:131
@@ -1248,13 +1270,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:178
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:192
 msgid "harvesting corn"
-msgstr ""
+msgstr "Mais to arnten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Farm Level 2"
-msgstr ""
+msgstr "Buurderee vun de Grött 2"
 
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:200
 msgctxt "europeans_building"
@@ -1262,79 +1284,81 @@ msgid ""
 "The blackroot farmer working at this blackroot farm has no cleared soil to "
 "plant his seeds."
 msgstr ""
+"De Swartwuddel-Buur dat warkt bi deese Swartwuddel-Buurderee hett keen "
+"Meedland wo he wat anplanten kann."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Farm Level 3"
-msgstr ""
+msgstr "Buurderee vun de Grött 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:72
 msgid "planting berrybush"
-msgstr ""
+msgstr "Busken to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:166
 msgid "harvesting berry"
-msgstr ""
+msgstr "Früchten to arnten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:206
 msgid "harvesting grape"
-msgstr ""
+msgstr "Wiendruven to arnten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Fisher’s House"
-msgstr ""
+msgstr "Grote Fiskeree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:31
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:61
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:45
 msgid "fishing"
-msgstr ""
+msgstr "Fisse to fangen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:40
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:68
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:54
 msgid "fishing in sea"
-msgstr ""
+msgstr "in de See to fisken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:48
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:62
 msgid "fishing in pond"
-msgstr ""
+msgstr "in Polen to fisken"
 
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:60
 msgctxt "europeans_building"
 msgid ""
 "The fisher working out of this fisher’s house can’t find any fish in his "
 "work area."
-msgstr ""
+msgstr "De Fisker dat warkt bi deese Fiskeree hett keene Fiske tum Fangen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Fisher’s Hut"
-msgstr ""
+msgstr "Lütte Fiskeree"
 
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:79
 msgctxt "europeans_building"
 msgid ""
 "The fisher working out of this fisher’s hut can’t find any fish in his work "
 "area."
-msgstr ""
+msgstr "De Fisker dat warkt bi deese Fiskeree hett keene Fiske tum Fangen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Fisher’s House"
-msgstr ""
+msgstr "Fiskeree"
 
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:74
 msgctxt "europeans_building"
@@ -1343,48 +1367,50 @@ msgid ""
 "work area. Remember that you can increase the number of existing fish by "
 "building a fish breeder’s house."
 msgstr ""
+"De Fisker dat warkt bi deese Fiskeree hett keene Fiske tum Fangen. Du kannst "
+"de Fiske vermehren, wenn du een Fisstüchteree baust."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Forester’s House"
-msgstr ""
+msgstr "Grote Boomplanteree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
 #: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:47
 #: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:64
 #: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:48
 msgid "planting trees"
-msgstr ""
+msgstr "Bomen to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
 #: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:57
 msgid "enhancing the fertility of land"
-msgstr ""
+msgstr "dat Land früchtbarer to maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Ranger’s Hut"
-msgstr ""
+msgstr "Lütte Boomplanteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Forester’s House"
-msgstr ""
+msgstr "Boomplanteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/gamekeepers_hut/init.lua:8
 msgctxt "europeans_building"
 msgid "Gamekeeper’s Hut"
-msgstr ""
+msgstr "Deertentüchteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Gold Mine"
-msgstr ""
+msgstr "Gold-Bargwark"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:66
@@ -1400,7 +1426,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:41
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:56
 msgid "mining gold"
-msgstr ""
+msgstr "Gold oftoboen"
 
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_1/init.lua:88
@@ -1409,7 +1435,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_4/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:82
 msgid "No Gold"
-msgstr ""
+msgstr "Keen Gold"
 
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_1/init.lua:89
@@ -1418,7 +1444,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_4/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:83
 msgid "Main Gold Vein Exhausted"
-msgstr ""
+msgstr "Gold-Ader is leeg"
 
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:99
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_1/init.lua:91
@@ -1428,18 +1454,21 @@ msgid ""
 "This gold mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"De Ader vun deese Gold-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"dürer as normaal. Överlegg di, of du dat Bargwark utbauen of plattrieten "
+"willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 1"
-msgstr ""
+msgstr "Gold-Bargwark vun de Grött 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 2"
-msgstr ""
+msgstr "Gold-Bargwark vun de Grött 2"
 
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_2/init.lua:93
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_4/init.lua:99
@@ -1449,12 +1478,15 @@ msgid ""
 "on investment. This mine can’t be enhanced any further, so you should "
 "consider dismantling or destroying it."
 msgstr ""
+"De Ader vun deese Gold-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"dürer as normaal. De Bargwark kann nich utbaut werden, also överlegg di, of "
+"du de Mine ofbrannen of plattrieten willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 3"
-msgstr ""
+msgstr "Gold-Bargwark vun de Grött 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_3/init.lua:77
@@ -1464,19 +1496,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_4/init.lua:78
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:73
 msgid "mining quartz"
-msgstr ""
+msgstr "Blinkerflint oftoboen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 4"
-msgstr ""
+msgstr "Gold-Bargwark vun de Grött 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 5"
-msgstr ""
+msgstr "Gold-Bargwark vun de Grött 5"
 
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:85
 msgctxt "europeans_building"
@@ -1484,32 +1516,35 @@ msgid ""
 "This gold mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"De Ader vun deese Gold-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"dürer as normaal. Överlegg di, of du dat Bargwark plattrieten of ofbrannen "
+"willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Hunter’s House"
-msgstr ""
+msgstr "Grotes Jaggthuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:30
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:60
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:43
 msgid "hunting"
-msgstr ""
+msgstr "to jagen"
 
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:39
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:69
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:52
 msgid "No Game"
-msgstr ""
+msgstr "Keene Deerten"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:41
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:54
 msgid "Out of Game"
-msgstr ""
+msgstr "Hebb keene Deerten mehr"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:43
@@ -1518,13 +1553,13 @@ msgctxt "europeans_building"
 msgid ""
 "The hunter working out of this hunter’s house can’t find any game in his "
 "work area."
-msgstr ""
+msgstr "De Jäger, de bi deese Jaggthuus warkt, hett keene Deerten tum Jagen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Hunter’s Hut"
-msgstr ""
+msgstr "Lüttes Jaggthuus"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:73
@@ -1534,18 +1569,20 @@ msgid ""
 "area. Remember that you can build a gamekeeper’s hut to release more game "
 "into the wild."
 msgstr ""
+"De Jäger, de bi deese Jaggthuus warkt, hett keene Deerten tum Jagen. Du "
+"kannst neje Deerten tüchten, wenn du een Deertentüchteree baust."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Hunter’s House"
-msgstr ""
+msgstr "Jaggthuus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Inn"
-msgstr ""
+msgstr "Weertshuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
 #: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:71
@@ -1567,7 +1604,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:63
 #: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:77
 msgid "preparing a ration"
-msgstr ""
+msgstr "eenen Happ torechttomaken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a snack because ...
 #: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:98
@@ -1583,7 +1620,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:103
 msgid "preparing a snack"
-msgstr ""
+msgstr "eene Spies torechttomaken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
 #: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:125
@@ -1593,25 +1630,25 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:107
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:122
 msgid "preparing a meal"
-msgstr ""
+msgstr "een Mahl torechttomaken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Inn Level 1"
-msgstr ""
+msgstr "Weertshuus vun de Grött 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Inn Level 2"
-msgstr ""
+msgstr "Weertshuus vun de Grött 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Iron Mine"
-msgstr ""
+msgstr "Iesen-Bargwark"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #: addons/europeans_tribe.wad/productionsites/ironmine_basic/init.lua:66
@@ -1628,7 +1665,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:56
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:64
 msgid "mining iron"
-msgstr ""
+msgstr "Iesen oftoboen"
 
 #: addons/europeans_tribe.wad/productionsites/ironmine_basic/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_1/init.lua:88
@@ -1637,7 +1674,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_4/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:82
 msgid "No Iron"
-msgstr ""
+msgstr "Keen Iesen"
 
 #: addons/europeans_tribe.wad/productionsites/ironmine_basic/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_1/init.lua:89
@@ -1646,7 +1683,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_4/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:83
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "Iesen-Ader is leeg"
 
 #: addons/europeans_tribe.wad/productionsites/ironmine_basic/init.lua:99
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_1/init.lua:91
@@ -1656,18 +1693,21 @@ msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"De Ader vun deese Iesen-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"dürer as normaal. Överlegg di, of du dat Bargwark utbauen of plattrieten "
+"willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 1"
-msgstr ""
+msgstr "Iesen-Bargwark vun de Grött 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 2"
-msgstr ""
+msgstr "Iesen-Bargwark vun de Grött 2"
 
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_2/init.lua:93
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_4/init.lua:99
@@ -1677,24 +1717,27 @@ msgid ""
 "on investment. This mine can’t be enhanced any further, so you should "
 "consider dismantling or destroying it."
 msgstr ""
+"De Ader vun deese Iesen-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"dürer as normaal. De Bargwark kann nich utbaut werden, also överlegg di, of "
+"du de Mine ofbrannen of plattrieten willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 3"
-msgstr ""
+msgstr "Iesen-Bargwark vun de Grött 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 4"
-msgstr ""
+msgstr "Iesen-Bargwark vun de Grött 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 5"
-msgstr ""
+msgstr "Iesen-Bargwark vun de Grött 5"
 
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:85
 msgctxt "europeans_building"
@@ -1702,12 +1745,15 @@ msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"De Ader vun deese Iesen-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"dürer as normaal. Överlegg di, of du dat Bargwark plattrieten of ofbrannen "
+"willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/lime_kiln/init.lua:8
 msgctxt "europeans_building"
 msgid "Lime Kiln"
-msgstr ""
+msgstr "Kalkbranneree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
 #: addons/europeans_tribe.wad/productionsites/lime_kiln/init.lua:76
@@ -1715,7 +1761,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:52
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:70
 msgid "mixing grout"
-msgstr ""
+msgstr "Mörtel to mengen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
 #: addons/europeans_tribe.wad/productionsites/lime_kiln/init.lua:108
@@ -1723,32 +1769,32 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:85
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:102
 msgid "burning bricks"
-msgstr ""
+msgstr "Backstenen to brannen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Lumberjack’s House"
-msgstr ""
+msgstr "Grote Boomslageree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:30
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:59
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:44
 msgid "felling trees"
-msgstr ""
+msgstr "Bomen to slagen"
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:40
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:69
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:54
 msgid "No Trees"
-msgstr ""
+msgstr "Keene Bomen"
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:41
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:70
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:55
 msgid "Out of Trees"
-msgstr ""
+msgstr "Hebb keene Bomen mehr"
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:42
 msgctxt "europeans_building"
@@ -1757,12 +1803,15 @@ msgid ""
 "his work area. You should consider dismantling or destroying the building or "
 "building a forester’s house."
 msgstr ""
+"De Boomslager dat warkt bi deese Boomslageree hett keene Bomen tum Osslaan. "
+"Överlegg di, of du dat Huus plattrieten of ofbrannen willt, of bau een "
+"Boomplanteree."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Lumberjack’s Hut"
-msgstr ""
+msgstr "Lütte Boomslageree"
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:71
 msgctxt "europeans_building"
@@ -1771,12 +1820,15 @@ msgid ""
 "work area. You should consider dismantling or destroying the building or "
 "building a ranger’s hut."
 msgstr ""
+"De Boomslager dat warkt bi deese Boomslageree hett keene Bomen tum Osslaan. "
+"Överlegg di, of du dat Huus plattrieten of ofbrannen willt, of bau eene "
+"Boomplanteree."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Lumberjacks House"
-msgstr ""
+msgstr "Boomslageree"
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:56
 msgctxt "europeans_building"
@@ -1785,12 +1837,15 @@ msgid ""
 "his work area. You should consider dismantling or destroying the building or "
 "building a forester’s house."
 msgstr ""
+"De Boomslager dat warkt bi deese Boomslageree hett keene Bomen tum Osslaan. "
+"Överlegg di, of du dat Huus plattrieten of ofbrannen willt, of bau eene "
+"Boomplanteree."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Mill"
-msgstr ""
+msgstr "Grote Möhlen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding blackroot because ...
 #: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:46
@@ -1800,65 +1855,67 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:61
 #: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:76
 msgid "grinding rye and wheat"
-msgstr ""
+msgstr "Rogg un Weit to mahlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/mill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Mill"
-msgstr ""
+msgstr "Lütte Möhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Mill"
-msgstr ""
+msgstr "Möhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Quarry"
-msgstr ""
+msgstr "Grote Flintslageree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:57
 msgid "mining granite"
-msgstr ""
+msgstr "Flint oftoboen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:65
 msgid "mining marble"
-msgstr ""
+msgstr "Marmel oftoboen"
 
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:90
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:69
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:68
 msgid "No Rocks"
-msgstr ""
+msgstr "Keene Stenen"
 
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:91
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:70
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:69
 msgid "Out of Rocks"
-msgstr ""
+msgstr "Hebb keene Stenen mehr"
 
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:92
 msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any stone in his work area."
 msgstr ""
+"De Flintslager, de bi deese Flintslageree warkt, hett keene Stenen tum "
+"Ofboen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Quarry"
-msgstr ""
+msgstr "Lütte Flintslageree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:60
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:51
 msgid "quarrying granite"
-msgstr ""
+msgstr "Flint to slagen"
 
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:70
@@ -1866,23 +1923,25 @@ msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any rocks in his work area."
 msgstr ""
+"De Flintslager, de bi deese Flintslageree warkt, hett keene Stenen tum "
+"Ofboen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Quarry"
-msgstr ""
+msgstr "Flintslageree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:59
 msgid "quarrying marble"
-msgstr ""
+msgstr "Marmel to slagen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Recruitement Center"
-msgstr ""
+msgstr "Grote Anhüreree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_advanced/init.lua:92
@@ -1890,7 +1949,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_normal/init.lua:106
 msgctxt "europeans_building"
 msgid "recruiting builder"
-msgstr ""
+msgstr "eenen Baukeerl antohüren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_advanced/init.lua:103
@@ -2098,35 +2157,35 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_normal/init.lua:392
 msgctxt "europeans_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "eenen Soldaten antohüren"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Recruitement Center"
-msgstr ""
+msgstr "Lütte Anhüreree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Recruitement Center"
-msgstr ""
+msgstr "Anhüreree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:8
 msgctxt "europeans_building"
 msgid "Reed Yard"
-msgstr ""
+msgstr "Reitplanteree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:54
 msgid "planting reed"
-msgstr ""
+msgstr "Reit to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:64
 msgid "harvesting reed"
-msgstr ""
+msgstr "Reit to arnten"
 
 #: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:76
 msgctxt "europeans_building"
@@ -2134,12 +2193,14 @@ msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
 msgstr ""
+"De Gaardner dat warkt bi deese Reitplanteree hett keen Meedland waar he wat "
+"anplanten kann."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Sawmill"
-msgstr ""
+msgstr "Grote Saagmöhlen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
@@ -2154,25 +2215,25 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:59
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:72
 msgid "sawing logs"
-msgstr ""
+msgstr "Bomen körttosagen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Sawmill"
-msgstr ""
+msgstr "Lütte Saagmöhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Sawmill"
-msgstr ""
+msgstr "Saagmöhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/scouts_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Scout’s House"
-msgstr ""
+msgstr "Grote Bespejeree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/europeans_tribe.wad/productionsites/scouts_house_advanced/init.lua:38
@@ -2182,37 +2243,37 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/scouts_house_normal/init.lua:51
 #: addons/europeans_tribe.wad/productionsites/scouts_house_normal/init.lua:59
 msgid "scouting"
-msgstr ""
+msgstr "to bespejen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/scouts_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Scouts House"
-msgstr ""
+msgstr "Lütte Bespejeree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/scouts_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Scout’s House"
-msgstr ""
+msgstr "Bespejeree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:8
 msgctxt "europeans_building"
 msgid "Sheep Farm"
-msgstr ""
+msgstr "Schaaptüchteree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
 #: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:59
 #: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:72
 msgid "produce wool"
-msgstr ""
+msgstr "Wulle to produzeren"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Grote Smelteree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
 #: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:55
@@ -2231,25 +2292,25 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:61
 #: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:77
 msgid "smelting iron"
-msgstr ""
+msgstr "Iesen to smelten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:91
 msgid "smelting gold"
-msgstr ""
+msgstr "Gold to smelten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Smelting Works"
-msgstr ""
+msgstr "Lütte Smelteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Smelting Works"
-msgstr ""
+msgstr "Smelteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:8
