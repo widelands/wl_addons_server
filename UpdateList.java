@@ -23,6 +23,12 @@ public class UpdateList {
 		public final long timestamp, downloadCount;
 		public final List<Comment> comments;
 		public final int[] ratings;
+
+		public String descname, descr, author, category, new_version, minWLVersion, maxWLVersion, syncSafe;
+		public final List<String> requires, dirs, files, locales, checksums, screenies;
+		public final List<Long> sizes;
+		public long totalSize;
+
 		public Data(String v, String u, int i, boolean ver, long t, long dl, List<Comment> c, int[] rs) {
 			comments = c;
 			uploader = u;
@@ -40,14 +46,42 @@ public class UpdateList {
 			}
 			votes = vot;
 			rating = votes > 0 ? sum / votes : 0;
+
+			requires = new ArrayList<>();
+			dirs = new ArrayList<>();
+			files = new ArrayList<>();
+			locales = new ArrayList<>();
+			checksums = new ArrayList<>();
+			screenies = new ArrayList<>();
+			sizes = new ArrayList<>();
+			descname = null;
+			descr = null;
+			author = null;
+			category = null;
+			new_version = null;
+			minWLVersion = "";
+			maxWLVersion = "";
+			syncSafe = "desync";
+			totalSize = 0;
 		}
 	}
 
 	private static String _defaultUploader = null;
 	private static Map<String, Data> detectAndUpdateMetadata(List<String> increase, List<String> verify) throws Exception {
 		Map<String, Data> result = new HashMap<>();
-		for (String addon : new File("addons").list()) {
-			if (!addon.endsWith(".wad")) continue;
+		File[] allAddons  = Utils.listSorted(new File("addons"));
+		final int total   = allAddons.length;
+		final int digits = Integer.toString(total).length();
+		int progress = 0;
+		for (File addonDir : allAddons) {
+			progress++;
+			final String addon = addonDir.getName();
+			if (!addon.endsWith(".wad") || !addonDir.isDirectory()) {
+				System.out.println(String.format("[%" + digits + "d/%" + digits + "d] SKIPPING %s ", progress, total, addon));
+				continue;
+			}
+			System.out.print(String.format("[%" + digits + "d/%" + digits + "d] Gathering data for add-on %s ", progress, total, addon));
+
 			File metadataFileMaintain = new File("metadata", addon + ".maintain");
 			File metadataFileServer = new File("metadata", addon + ".server");
 			if (!metadataFileMaintain.isFile()) {
@@ -88,7 +122,8 @@ public class UpdateList {
 					Long.valueOf(metadataServer.get("comment_timestamp_" + i).value)
 				));
 			}
-			result.put(addon, new Data(
+
+			Data d = new Data(
 				metadataMaintain.get("version").value,
 				metadataMaintain.get("uploader").value,
 				Integer.valueOf(metadataMaintain.get("i18n_version").value),
@@ -96,7 +131,40 @@ public class UpdateList {
 				Long.valueOf(metadataMaintain.get("timestamp").value),
 				Long.valueOf(metadataServer.get("downloads").value),
 				comments,
-				votes));
+				votes);
+			result.put(addon, d);
+
+			recurse(d.dirs, d.files, d.checksums, d.sizes, addonDir, "");
+			gatherLocales(addonDir, d.locales, d.checksums);
+			gatherScreenshots(addonDir, d.screenies);
+
+			for (String line : Files.readAllLines(new File(addonDir, "addon").toPath())) {
+				String[] str = line.split("=");
+				if (str.length < 2) continue;
+				String arg = str[1];
+				for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
+				if (arg.startsWith("_")) arg = arg.substring(1);
+				if (arg.startsWith("\"")) arg = arg.substring(1);
+				if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
+				switch (str[0]) {
+					case "name"          : d.descname     = arg; break;
+					case "description"   : d.descr        = arg; break;
+					case "author"        : d.author       = arg; break;
+					case "category"      : d.category     = arg; break;
+					case "version"       : d.new_version  = arg; break;
+					case "min_wl_version": d.minWLVersion = arg; break;
+					case "max_wl_version": d.maxWLVersion = arg; break;
+					case "sync_safe":
+						if (arg.equalsIgnoreCase("true")) d.syncSafe = "sync_safe";
+						break;
+					case "requires":
+						for (String req : arg.split(",")) d.requires.add(req);
+						break;
+					default: break;
+				}
+			}
+			for (Long l : d.sizes) d.totalSize += l;
+			System.out.println(" done");
 		}
 		return result;
 	}
@@ -152,48 +220,15 @@ public class UpdateList {
 	}
 
 	private static void writeAddon(int listVersion, PrintWriter w, File addon, Data data) throws Exception {
-		String descname = null, descr = null, author = null, category = null, new_version = null, minWLVersion = "", maxWLVersion = "", sync_safe = "desync";
-		List<String> requires = new ArrayList<>(), dirs = new ArrayList<>(), files = new ArrayList<>(),
-				locales = new ArrayList<>(), checksums = new ArrayList<>(), screenies = new ArrayList<>(); List<Long> sizes = new ArrayList<>();
-		recurse(dirs, files, checksums, sizes, addon, "");
-		gatherLocales(addon, locales, checksums);
-		gatherScreenshots(addon, screenies);
-
-		for (String line : Files.readAllLines(new File(addon, "addon").toPath())) {
-			String[] str = line.split("=");
-			if (str.length < 2) continue;
-			String arg = str[1];
-			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
-			if (arg.startsWith("_")) arg = arg.substring(1);
-			if (arg.startsWith("\"")) arg = arg.substring(1);
-			if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
-			switch (str[0]) {
-				case "name": descname = arg; break;
-				case "description": descr = arg; break;
-				case "author": author = arg; break;
-				case "category": category = arg; break;
-				case "version": new_version = arg; break;
-				case "min_wl_version": minWLVersion = arg; break;
-				case "max_wl_version": maxWLVersion = arg; break;
-				case "sync_safe": if (arg.equalsIgnoreCase("true")) sync_safe = "sync_safe"; break;
-				case "requires":
-					for (String req : arg.split(",")) requires.add(req);
-					break;
-				default: break;
-			}
-		}
-		long totalSize = 0;
-		for (Long l : sizes) totalSize += l;
-
 		w.println(addon.getName());
-		w.println(descname);
-		w.println(descr);
-		w.println(author);
+		w.println(data.descname);
+		w.println(data.descr);
+		w.println(data.author);
 		w.println(data.uploader);
 		if (listVersion >= 3) {
-			w.println(minWLVersion);
-			w.println(maxWLVersion);
-			w.println(sync_safe);
+			w.println(data.minWLVersion);
+			w.println(data.maxWLVersion);
+			w.println(data.syncSafe);
 		}
 		w.println(data.timestamp);
 		w.println(data.downloadCount);
@@ -210,27 +245,27 @@ public class UpdateList {
 			w.println(c.version);
 			w.println(c.timestamp);
 		}
-		w.println(new_version);
+		w.println(data.new_version);
 		w.println(data.i18n_version);
-		w.println(totalSize);
-		w.println(category);
-		w.println(requires.size()); for (String r : requires) w.println(r);
-		w.println(dirs.size()); for (String r : dirs) w.println(r);
-		w.println(files.size()); for (String r : files) w.println(r);
-		w.println(locales.size()); for (String r : locales) w.println(r);
-		w.println(checksums.size()); for (String r : checksums) w.println(r);
+		w.println(data.totalSize);
+		w.println(data.category);
+		w.println(data.requires.size ()); for (String r : data.requires ) w.println(r);
+		w.println(data.dirs.size     ()); for (String r : data.dirs     ) w.println(r);
+		w.println(data.files.size    ()); for (String r : data.files    ) w.println(r);
+		w.println(data.locales.size  ()); for (String r : data.locales  ) w.println(r);
+		w.println(data.checksums.size()); for (String r : data.checksums) w.println(r);
 
 		if (listVersion >= 2) {
-			w.println(screenies.size() / 2);
-			for (String r : screenies) w.println(r);
+			w.println(data.screenies.size() / 2);
+			for (String r : data.screenies) w.println(r);
 		}
 
 		// never verify immediately during an update
-		w.println(data.verified && data.version.equals(new_version) ? "verified" : "unchecked");
+		w.println(data.verified && data.version.equals(data.new_version) ? "verified" : "unchecked");
 
-		if (listVersion == 1 && !data.version.equals(new_version)) {
+		if (listVersion == 1 && !data.version.equals(data.new_version)) {
 			TreeMap<String, Utils.Value> edit = new TreeMap<>();
-			edit.put("version", new Utils.Value("version", new_version));
+			edit.put("version", new Utils.Value("version", data.new_version));
 			edit.put("security", new Utils.Value("security", "unchecked"));
 			Utils.editMetadata(false, addon.getName(), edit);
 		}
@@ -261,14 +296,14 @@ public class UpdateList {
 		final int digits2 = Integer.toString(kHighestListVersion).length();
 		int progress = 0;
 		for (int listVersion = 1; listVersion <= kHighestListVersion; ++listVersion) {
+			System.out.println("Writing list version " + listVersion + "...");
 			PrintWriter write = new PrintWriter(new File(listVersion == 1 ? "list" : ("list_" + listVersion)));
 			write.println(listVersion);
 			write.println(files.length);
 			for (File file : files) {
-				System.out.print(String.format("[%" + digits1 + "d/%" + digits1 + "d] Writing version %" + digits2 + "d for add-on %s ",
+				System.out.println(String.format("[%" + digits1 + "d/%" + digits1 + "d] Writing version %" + digits2 + "d for add-on %s ",
 						++progress, total, listVersion, file.getName()));
 				writeAddon(listVersion, write, file, data.get(file.getName()));
-				System.out.println(" done");
 			}
 			write.close();
 		}
