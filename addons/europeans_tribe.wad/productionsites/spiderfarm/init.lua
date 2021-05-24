@@ -17,7 +17,7 @@ descriptions:new_productionsite_type {
       grout = 2
    },
    return_on_dismantle = {
-      log = 4,
+      planks = 3,
       granite = 2
    },
 

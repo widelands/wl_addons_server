@@ -13,23 +13,27 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_ferry_yard_normal",
         enhancement_cost = {
+          planks = 2,
           cloth = 2,
           brick = 2,
           grout = 2,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
+          planks = 1,
           granite = 2,
           quartz = 1
         },
    },
 
    buildcost = {
-      planks = 4,
+      log = 2,
+      planks = 2,
       reed = 3
    },
    return_on_dismantle = {
-      log = 4,
+      log = 1,
+      planks = 1,
       reed = 2
    },
 

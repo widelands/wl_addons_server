@@ -12,6 +12,7 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_scouts_house_normal",
         enhancement_cost = {
+          planks = 1,
           cloth = 1,
           brick = 1,
           grout = 1,
@@ -24,11 +25,12 @@ descriptions:new_productionsite_type {
    },
 
    buildcost = {
-      planks = 2,
-      reed = 2
+      log = 2,
+      reed = 2,
+      granite = 1
    },
    return_on_dismantle = {
-      log = 2
+      log = 1
    },
 
    animations = {

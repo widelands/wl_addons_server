@@ -19,7 +19,7 @@ descriptions:new_productionsite_type {
           quartz = 1
         },
         enhancement_return_on_dismantle = {
-          log = 1,
+          planks = 1,
           granite = 1,
           quartz = 1
         },

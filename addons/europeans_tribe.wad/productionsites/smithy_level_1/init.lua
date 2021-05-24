@@ -18,7 +18,6 @@ descriptions:new_productionsite_type {
          grout = 1
       },
       enhancement_return_on_dismantle = {
-         log = 1,
          granite = 1
       }
    },

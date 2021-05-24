@@ -18,17 +18,18 @@ descriptions:new_productionsite_type {
           grout = 1
         },
         enhancement_return_on_dismantle = {
-          log = 1,
           granite = 1
         },
    },
 
    buildcost = {
-      planks = 2,
-      reed = 2
+      log = 2,
+      reed = 2,
+      granite = 1
    },
    return_on_dismantle = {
-      log = 2
+      log = 2,
+      granite = 1
    },
 
 

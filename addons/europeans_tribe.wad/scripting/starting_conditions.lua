@@ -200,6 +200,50 @@ function place_objects(startx, starty, radius, objectname, objectcount)
     end
 end
 
+function place_random_trees(startx, starty, radius, objectcount)
+    -- apple tree = Apfelbaum, cherry tree = Kirschbaum, pear tree = Birnbaum, walnut tree = Walnussbaum
+    -- ash = Esche, chestnut = Kastanie, elm = Ulme, fir = Tanne, hornbeam = Hainbuche, linden tree = Linde, pine = Kiefer, poplar = Pappel, willow = Weide
+    
+    local treelist = {
+    "alder_summer_mature", -- Erle
+    "aspen_summer_mature", -- Espe
+    "beech_summer_mature", -- Buche
+    "birch_summer_mature", -- Birke
+    "larch_summer_mature", -- Lärche
+    "maple_winter_mature", -- Ahorn
+    "oak_summer_mature", -- Eiche
+    "rowan_summer_mature", -- Eberesche
+    "spruce_summer_mature" -- Fichte
+    } 
+    local randomtree = treelist[math.random(#treelist)]
+
+    local rcount = 1
+    while objectcount > 0 do
+        randomtree = treelist[math.random(#treelist)]
+        rcount = math.random(objectcount)
+        place_objects(startx, starty, radius, randomtree, rcount)
+        objectcount = objectcount - rcount
+    end
+end
+
+function place_random_rocks(startx, starty, radius, objectcount)
+    local rocklist = {
+    "blackland_rocks1", "blackland_rocks2", "blackland_rocks3", "blackland_rocks4", "blackland_rocks5", "blackland_rocks6", 
+    "desert_rocks1", "desert_rocks2", "desert_rocks3", "desert_rocks4", "desert_rocks5", "desert_rocks6", 
+    "greenland_rocks1", "greenland_rocks2", "greenland_rocks3", "greenland_rocks4", "greenland_rocks5", "greenland_rocks6", 
+    "winterland_rocks1", "winterland_rocks2", "winterland_rocks3", "winterland_rocks4", "winterland_rocks5", "winterland_rocks6" 
+    }
+    local randomrock = rocklist[math.random(#rocklist)]
+
+    local rcount = 1
+    while objectcount > 0 do
+        randomrock = rocklist[math.random(#rocklist)]
+        rcount = math.random(objectcount)
+        place_objects(startx, starty, radius, randomrock, rcount)
+        objectcount = objectcount - rcount
+    end
+end
+
 function place_building(player, startx, starty, radius, buildingname)
     local game = wl.Game()
     local map = game.map
