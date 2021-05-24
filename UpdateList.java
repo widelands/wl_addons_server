@@ -117,6 +117,7 @@ public class UpdateList {
 	}
 
 	private static void recurse(List<String> dirs, List<String> files, List<String> checksums, List<Long> size, File curdir, String prefix) {
+		System.out.print('.');
 		for (File f : Utils.listSorted(curdir)) {
 			if (f.isFile()) {
 				files.add(prefix + f.getName());
@@ -264,9 +265,10 @@ public class UpdateList {
 			write.println(listVersion);
 			write.println(files.length);
 			for (File file : files) {
-				System.out.println(String.format("[%" + digits1 + "d/%" + digits1 + "d] Writing version %" + digits2 + "d for add-on %s",
+				System.out.print(String.format("[%" + digits1 + "d/%" + digits1 + "d] Writing version %" + digits2 + "d for add-on %s ",
 						++progress, total, listVersion, file.getName()));
 				writeAddon(listVersion, write, file, data.get(file.getName()));
+				System.out.println(" done");
 			}
 			write.close();
 		}

@@ -12,24 +12,26 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_smelting_works_normal",
         enhancement_cost = {
+          planks = 2,
           cloth = 2,
           brick = 2,
           grout = 2,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
+          planks = 1,
           granite = 2,
           quartz = 1,
         },
    },
 
    buildcost = {
-      planks = 3,
+      log = 3,
       reed = 3,
-      granite = 1
+      granite = 2
    },
    return_on_dismantle = {
-      log = 3,
+      log = 2,
       granite = 1
    },
 

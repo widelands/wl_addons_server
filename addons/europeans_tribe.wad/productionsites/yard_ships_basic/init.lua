@@ -13,23 +13,27 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_shipyard_normal",
         enhancement_cost = {
+          planks = 2,
           cloth = 2,
           brick = 2,
           grout = 2,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
+          planks = 1,
           granite = 2,
           quartz = 1
         },
    },
 
    buildcost = {
-      planks = 5,
+      log = 3,
+      planks = 2,
       reed = 4
    },
    return_on_dismantle = {
-      log = 4,
+      log = 2,
+      planks = 1,
       reed = 2
    },
 

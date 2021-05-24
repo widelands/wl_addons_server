@@ -10,12 +10,13 @@ descriptions:new_productionsite_type {
    size = "small",
 
    buildcost = {
-      planks = 2,
+      log = 2,
       reed = 2,
       granite = 1
    },
    return_on_dismantle = {
-      log = 2
+      log = 1,
+      granite = 1
    },
 
    animations = {

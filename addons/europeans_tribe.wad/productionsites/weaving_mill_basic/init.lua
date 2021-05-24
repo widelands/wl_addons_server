@@ -12,24 +12,26 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_weaving_mill_normal",
         enhancement_cost = {
+          planks = 3,
           cloth = 3,
           brick = 3,
           grout = 3,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
+          planks = 2,
           granite = 3,
           quartz = 1,
         },
    },
 
    buildcost = {
-      planks = 4,
+      log = 4,
       reed = 4,
       granite = 2
    },
    return_on_dismantle = {
-      log = 4,
+      log = 3,
       granite = 2
    },
 

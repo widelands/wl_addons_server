@@ -18,7 +18,7 @@ descriptions:new_productionsite_type {
       marble_column = 2
    },
    return_on_dismantle = {
-      log = 4,
+      planks = 3,
       granite = 2,
       marble = 2
    },

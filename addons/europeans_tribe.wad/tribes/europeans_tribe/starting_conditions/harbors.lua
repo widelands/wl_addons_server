@@ -31,7 +31,7 @@ init = {
                     wares = {},
                     workers = {
                         europeans_carrier = 16,
-                        europeans_builder = 8,
+                        europeans_builder = 12,
                         europeans_farmer_basic = 3,
                         europeans_lumberjack_basic = 2,
                         europeans_carpenter_basic = 1,
@@ -84,7 +84,7 @@ init = {
             },
             workers = {
                 europeans_carrier = 32,
-                europeans_builder = 16,
+                europeans_builder = 24,
                 europeans_farmer_basic = 6,
                 europeans_trainer = 3,
                 europeans_lumberjack_basic = 3,
@@ -116,11 +116,11 @@ init = {
         place_building_in_region(plr, "europeans_stonemasons_house", ports[1].fields[1]:region(6), {
             inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 6},
         })
+        set_ware(plr, "log", math.ceil(320 / #ports))
+        set_ware(plr, "planks", math.ceil(128 / #ports))
         set_ware(plr, "water", math.ceil(256/ #ports))
-        set_ware(plr, "log", math.ceil(256 / #ports))
-        set_ware(plr, "granite", math.ceil(64 / #ports))
-        set_ware(plr, "planks", math.ceil(64 / #ports))
         set_ware(plr, "reed", math.ceil(64 / #ports))
+        set_ware(plr, "granite", math.ceil(64 / #ports))
         set_ware(plr, "cloth", math.ceil(48 / #ports))
         set_ware(plr, "iron", math.ceil(32 / #ports))
         set_ware(plr, "coal", math.ceil(32 / #ports))
@@ -146,6 +146,9 @@ init = {
         set_ware(plr, "hunting_bow", math.ceil(2 / #ports))
         set_ware(plr, "hunting_spear", math.ceil(2 / #ports))
         set_ware(plr, "milking_tongs", math.ceil(2 / #ports))
+        set_ware(plr, "armor", math.ceil(6 / #ports))
+        set_ware(plr, "tabard", math.ceil(6 / #ports))
+        set_ware(plr, "spear_wooden", math.ceil(12 / #ports))
         place_ship_random(plr, 128)
     end
     
