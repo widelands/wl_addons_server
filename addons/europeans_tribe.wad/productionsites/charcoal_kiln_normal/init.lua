@@ -10,17 +10,20 @@ descriptions:new_productionsite_type {
    size = "medium",
 
    enhancement = {
-        name = "europeans_charcoal_kiln_advanced",
-        enhancement_cost = {
+      name = "europeans_charcoal_kiln_advanced",
+      enhancement_cost = {
+          brick = 2,
+          grout = 2,
           marble_column = 2,
           quartz = 1,
           diamond = 1
-        },
-        enhancement_return_on_dismantle = {
+      },
+      enhancement_return_on_dismantle = {
+          granite = 2,
           marble = 2,
           quartz = 1,
           diamond = 1
-        },
+      }
    },
 
    animations = {

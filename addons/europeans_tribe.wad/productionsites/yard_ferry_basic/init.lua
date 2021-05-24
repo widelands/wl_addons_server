@@ -15,26 +15,27 @@ descriptions:new_productionsite_type {
         enhancement_cost = {
           planks = 2,
           cloth = 2,
-          brick = 2,
-          grout = 2,
+          granite = 1,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
           planks = 1,
-          granite = 2,
+          granite = 1,
           quartz = 1
         },
    },
 
    buildcost = {
-      log = 2,
+      log = 3,
       planks = 2,
-      reed = 3
+      reed = 3,
+      granite = 2
    },
    return_on_dismantle = {
-      log = 1,
+      log = 2,
       planks = 1,
-      reed = 2
+      reed = 1,
+      granite = 1
    },
 
    -- TODO(Nordfriese): Make animations

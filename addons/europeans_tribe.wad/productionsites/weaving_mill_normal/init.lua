@@ -10,17 +10,20 @@ descriptions:new_productionsite_type {
    size = "big",
 
    enhancement = {
-        name = "europeans_weaving_mill_advanced",
-        enhancement_cost = {
-          marble_column = 3,
+      name = "europeans_weaving_mill_advanced",
+      enhancement_cost = {
+          brick = 3,
+          grout = 3,
+          marble_column = 2,
           quartz = 1,
           diamond = 1
-        },
-        enhancement_return_on_dismantle = {
-          marble = 3,
+      },
+      enhancement_return_on_dismantle = {
+          granite = 3,
+          marble = 2,
           quartz = 1,
           diamond = 1
-        },
+      }
    },
 
    animations = {
