@@ -99,23 +99,11 @@ init = {
                 [{0,0,0,0}] = 16,
           }
         })
-        place_building_in_region(plr, "europeans_sawmill_advanced", sf:region(6), {
-            inputs = {log = 8},
-        })
-        place_building_in_region(plr, "europeans_stonemasons_house", sf:region(6), {
-            inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 6},
-        })
     end
     
     local ports = plr:get_buildings("europeans_port")
     
     if #ports > 0 then
-        place_building_in_region(plr, "europeans_sawmill_advanced", ports[1].fields[1]:region(6), {
-            inputs = {log = 8},
-        })
-        place_building_in_region(plr, "europeans_stonemasons_house", ports[1].fields[1]:region(6), {
-            inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 6},
-        })
         set_ware(plr, "log", math.ceil(320 / #ports))
         set_ware(plr, "planks", math.ceil(128 / #ports))
         set_ware(plr, "water", math.ceil(256/ #ports))

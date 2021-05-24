@@ -12,11 +12,14 @@ descriptions:new_productionsite_type {
    enhancement = {
       name = "europeans_brewery_advanced",
       enhancement_cost = {
+          brick = 2,
+          grout = 2,
           marble_column = 2,
           quartz = 1,
           diamond = 1
       },
       enhancement_return_on_dismantle = {
+          granite = 2,
           marble = 2,
           quartz = 1,
           diamond = 1

@@ -14,13 +14,12 @@ descriptions:new_productionsite_type {
         enhancement_cost = {
           planks = 1,
           cloth = 1,
-          brick = 1,
-          grout = 1,
+          granite = 1,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
           granite = 1,
-          quartz = 1,
+          quartz = 1
         },
    },
 
