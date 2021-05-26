@@ -12,14 +12,16 @@ descriptions:new_trainingsite_type {
    enhancement = {
         name = "europeans_battlearena_level_1",
         enhancement_cost = {
-           planks = 2,
-           cloth = 2,
+           planks = 3,
+           cloth = 3,
+           granite = 2,
            quartz = 1,
            diamond = 1,
            gold = 1
         },
         enhancement_return_on_dismantle = {
-           planks = 1,
+           planks = 2,
+           granite = 1,
            quartz = 1,
            diamond = 1,
            scrap_metal_mixed = 1
@@ -27,7 +29,7 @@ descriptions:new_trainingsite_type {
    },
 
    buildcost = {
-      log = 2,
+      blackwood = 2,
       planks = 2,
       reed = 2,
       cloth = 2,
@@ -37,7 +39,7 @@ descriptions:new_trainingsite_type {
       gold = 1
    },
    return_on_dismantle = {
-      log = 1,
+      blackwood = 1,
       planks = 1,
       granite = 1,
       quartz = 1,

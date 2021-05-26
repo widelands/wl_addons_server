@@ -28,7 +28,8 @@ descriptions:new_productionsite_type {
 
    inputs = {
       { name = "log", amount = 20 },
-      { name = "planks", amount = 10 }
+      { name = "blackwood", amount = 8 },
+      { name = "planks", amount = 8 }
    },
 
    programs = {
@@ -38,6 +39,7 @@ descriptions:new_productionsite_type {
          actions = {
             "call=burn_log_basic",
             "call=burn_log",
+            "call=burn_blackwood",
             "call=burn_planks",
          }
       },
@@ -62,6 +64,18 @@ descriptions:new_productionsite_type {
             "sleep=duration:30s",
             "animate=working duration:2m30s",
             "produce=coal:5",
+         }
+      },
+      burn_blackwood = {
+         -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
+         descname = _"producing coal",
+         actions = {
+            "return=skipped unless economy needs coal",
+            "return=skipped when economy needs blackwood",
+            "consume=blackwood:6",
+            "sleep=duration:30s",
+            "animate=working duration:2m", -- Charcoal fires will burn for some days in real life
+            "produce=coal:3"
          }
       },
       burn_planks = {

@@ -10,18 +10,16 @@ descriptions:new_productionsite_type {
    size = "medium",
 
    enhancement = {
-      name = "europeans_smithy_level_6",
-      enhancement_cost = {
-         planks = 1,
-         cloth = 1,
-         brick = 1,
-         grout = 1,
-         quartz = 1
-      },
-      enhancement_return_on_dismantle = {
-         granite = 1,
-         quartz = 1
-      }
+        name = "europeans_smithy_level_6",
+        enhancement_cost = {
+          planks = 1,
+          cloth = 1,
+          quartz = 1
+        },
+        enhancement_return_on_dismantle = {
+          planks = 1,
+          quartz = 1
+        },
    },
 
    animations = {

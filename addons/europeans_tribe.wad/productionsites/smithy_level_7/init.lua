@@ -10,17 +10,18 @@ descriptions:new_productionsite_type {
    size = "medium",
 
    enhancement = {
-      name = "europeans_smithy_level_8",
-      enhancement_cost = {
-         marble_column = 1,
-         quartz = 1,
-         diamond = 1
-      },
-      enhancement_return_on_dismantle = {
-         marble = 1,
-         quartz = 1,
-         diamond = 1
-      }
+        name = "europeans_smithy_level_8",
+        enhancement_cost = {
+          brick = 1,
+          grout = 1,
+          marble_column = 1,
+          diamond = 1
+        },
+        enhancement_return_on_dismantle = {
+          granite = 1,
+          marble = 1,
+          diamond = 1
+        },
    },
 
    animations = {

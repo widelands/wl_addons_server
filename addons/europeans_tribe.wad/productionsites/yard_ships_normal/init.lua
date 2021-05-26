@@ -16,13 +16,11 @@ descriptions:new_productionsite_type {
           brick = 2,
           grout = 2,
           marble_column = 2,
-          quartz = 1,
           diamond = 1
       },
       enhancement_return_on_dismantle = {
           granite = 2,
           marble = 2,
-          quartz = 1,
           diamond = 1
       }
    },
@@ -56,7 +54,7 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "log", amount = 2 },
+      { name = "blackwood", amount = 2 },
       { name = "planks", amount = 10 },
       { name = "reed", amount = 2 },
       { name = "spidercloth", amount = 2 }
@@ -76,7 +74,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
          descname = _"constructing a ship",
          actions = {
-            "return=skipped when not site has log",
+            "return=skipped when not site has blackwood",
             "return=skipped when not site has planks",
             "return=skipped when not site has spidercloth",
             "sleep=duration:15s",

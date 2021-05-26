@@ -24,12 +24,12 @@ descriptions:new_productionsite_type {
    },
 
    buildcost = {
-      log = 2,
+      blackwood = 2,
       reed = 2,
       granite = 1
    },
    return_on_dismantle = {
-      log = 1
+      blackwood = 1
    },
 
    animations = {

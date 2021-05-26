@@ -12,15 +12,16 @@ descriptions:new_trainingsite_type {
    enhancement = {
         name = "europeans_battlearena_level_2",
         enhancement_cost = {
+           planks = 3,
            cloth = 3,
-           brick = 3,
-           grout = 3,
+           granite = 2,
            quartz = 1,
            diamond = 1,
            gold = 1
         },
         enhancement_return_on_dismantle = {
-           granite = 3,
+           planks = 2,
+           granite = 1,
            quartz = 1,
            diamond = 1,
            scrap_metal_mixed = 1

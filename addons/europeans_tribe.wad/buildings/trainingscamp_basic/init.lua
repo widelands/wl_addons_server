@@ -14,15 +14,14 @@ descriptions:new_trainingsite_type {
         enhancement_cost = {
           planks = 1,
           cloth = 1,
-          brick = 1,
-          grout = 1,
+          granite = 1,
           quartz = 1,
           diamond = 1,
           gold = 1
         },
         enhancement_return_on_dismantle = {
           planks = 1,
-          granite = 2,
+          granite = 1,
           quartz = 1,
           diamond = 1,
           scrap_metal_mixed = 1
@@ -30,7 +29,7 @@ descriptions:new_trainingsite_type {
    },
    
    buildcost = {
-      log = 2,
+      blackwood = 2,
       planks = 2,
       reed = 2,
       granite = 2,
@@ -39,7 +38,7 @@ descriptions:new_trainingsite_type {
       gold = 1
    },
    return_on_dismantle = {
-      log = 1,
+      blackwood = 1,
       planks = 1,
       granite = 1,
       quartz = 1,

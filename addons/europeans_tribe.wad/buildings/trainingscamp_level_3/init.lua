@@ -12,12 +12,15 @@ descriptions:new_trainingsite_type {
    enhancement = {
         name = "europeans_trainingscamp_level_4",
         enhancement_cost = {
+          brick = 2,
+          grout = 2,
           marble_column = 2,
           quartz = 1,
           diamond = 1,
           gold = 1
         },
         enhancement_return_on_dismantle = {
+          granite = 2,
           marble = 2,
           quartz = 1,
           diamond = 1,

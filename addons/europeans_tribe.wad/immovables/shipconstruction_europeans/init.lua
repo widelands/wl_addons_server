@@ -16,7 +16,7 @@ descriptions:new_immovable_type {
    },
    buildcost = {
       planks = 10,
-      log = 2,
+      blackwood = 2,
       spidercloth = 4
    },
 

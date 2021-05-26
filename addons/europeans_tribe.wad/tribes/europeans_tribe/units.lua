@@ -106,9 +106,18 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "blackwood",
+            default_target_quantity = 16,
+            preciousness = 24,
+            helptexts = {
+               -- TRANSLATORS: Helptext for a barbarian ware: Blackwood
+               purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener.")
+            }
+         },
+         {
             name = "planks",
             default_target_quantity = 16,
-            preciousness = 28,
+            preciousness = 24,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Planks, part 1
