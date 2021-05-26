@@ -12,22 +12,22 @@ descriptions:new_productionsite_type {
    enhancement = {
       name = "europeans_coalmine_level_1",
       enhancement_cost = {
-        log = 2,
+        blackwood = 2,
         planks = 1,
         reed = 1
       },
       enhancement_return_on_dismantle = {
-        log = 1
+        blackwood = 1
       }
    },
 
    buildcost = {
-      log = 4,
+      blackwood = 4,
       planks = 2,
       reed = 2
    },
    return_on_dismantle = {
-      log = 2
+      blackwood = 2
    },
 
    animations = {

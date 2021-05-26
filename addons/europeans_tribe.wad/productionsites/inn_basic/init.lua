@@ -12,13 +12,14 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_inn_level_1",
         enhancement_cost = {
-          marble_column = 2,
-          quartz = 1,
+          brick = 1,
+          grout = 1,
+          marble_column = 1,
           diamond = 1
         },
         enhancement_return_on_dismantle = {
-          marble = 2,
-          quartz = 1,
+          granite = 1,
+          marble = 1,
           diamond = 1
         },
    },

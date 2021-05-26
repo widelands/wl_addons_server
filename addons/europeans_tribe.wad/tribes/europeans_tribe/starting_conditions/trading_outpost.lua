@@ -13,20 +13,21 @@ init = {
     descname = _"Trading Outpost",
     -- TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
     tooltip = _"If this player runs low on important wares, they will be replenished for free. Debug Mode.",
-    func =  function(plr, shared_in_start)
+    func =  function(player, shared_in_start)
 
-    local sf = wl.Game().map.player_slots[plr.number].starting_field
+    local sf = wl.Game().map.player_slots[player.number].starting_field
     if shared_in_start then
      sf = shared_in_start
     else
-     plr:allow_workers("all")
+     player:allow_workers("all")
     end
 
-    prefilled_buildings(plr, { "europeans_headquarters", sf.x, sf.y,
+    prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {
                 water = 256,
-                log = 256,
+                log = 128,
                 granite = 64,
+                blackwood = 64,
                 planks = 64,
                 reed = 64,
                 cloth = 48,
@@ -73,16 +74,16 @@ init = {
           }
     })
 
-    place_building_in_region(plr, "europeans_sawmill_advanced", sf:region(6), {
+    place_building_in_region(player, "europeans_sawmill_advanced", sf:region(6), {
         inputs = {log = 8},
     })
-    place_building_in_region(plr, "europeans_stonemasons_house", sf:region(6), {
+    place_building_in_region(player, "europeans_stonemasons_house", sf:region(6), {
         inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 6},
     })
 
     -- Get all warehouse types
     local warehouse_types = {}
-    for i, building in ipairs(wl.Game():get_tribe_description(plr.tribe_name).buildings) do
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
         if (building.type_name == "warehouse") then
             table.insert(warehouse_types, building.name)
         end
@@ -97,7 +98,7 @@ init = {
         -- collect all ~warehouses and pick one to insert the wares
         local warehouses = {}
         for i, building_name in ipairs(warehouse_types) do
-            warehouses = array_combine(warehouses, plr:get_buildings(building_name))
+            warehouses = array_combine(warehouses, player:get_buildings(building_name))
         end
 
         if #warehouses > 0 then
@@ -108,36 +109,36 @@ init = {
 
             local wh = warehouses[idx]
             local added = 0
-            if plr:get_wares("water") < 2 then
+            if player:get_wares("water") < 2 then
                 wh:set_wares("water", wh:get_wares("water") + 2)
                 added = added + 1
             end
-            if plr:get_wares("log") < 2 then
+            if player:get_wares("log") < 2 then
                 wh:set_wares("log", wh:get_wares("log") + 2)
                 added = added + 1
             end
-            if plr:get_wares("granite") < 2 then
+            if player:get_wares("granite") < 2 then
                 wh:set_wares("granite", wh:get_wares("granite") + 2)
                 added = added + 1
             end
-            if plr:get_wares("marble") < 2 then
+            if player:get_wares("marble") < 2 then
                 wh:set_wares("marble", wh:get_wares("marble") + 2)
                 added = added + 1
             end
-            if plr:get_wares("ore") < 2 then
+            if player:get_wares("ore") < 2 then
                 wh:set_wares("ore", wh:get_wares("ore") + 2)
                 added = added + 1
             end
-            if plr:get_wares("quartz") < 1 then
+            if player:get_wares("quartz") < 1 then
                 wh:set_wares("quartz", wh:get_wares("quartz") + 1)
                 added = added + 1
             end
-            if plr:get_wares("diamond") < 1 then
+            if player:get_wares("diamond") < 1 then
                 wh:set_wares("diamond", wh:get_wares("diamond") + 1)
                 added = added + 1
             end
             if (added > 0) then
-                print (plr.number..": "..added.." types of ware added to warehouse "..idx.." of "..#warehouses.." (cheating mode)")
+                print (player.number..": "..added.." types of ware added to warehouse "..idx.." of "..#warehouses.." (cheating mode)")
             end
             idx = idx + 1
         end

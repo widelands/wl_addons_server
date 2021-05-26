@@ -20,7 +20,7 @@ descriptions:new_warehouse_type {
       diamond = 3
    },
    return_on_dismantle = {
-      log = 4,
+      planks = 3,
       reed = 2,
       granite = 2,
       quartz = 2,

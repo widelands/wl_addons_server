@@ -25,12 +25,12 @@ descriptions:new_productionsite_type {
    },
 
    buildcost = {
-      log = 4,
+      blackwood = 4,
       reed = 4,
       granite = 2
    },
    return_on_dismantle = {
-      log = 3,
+      blackwood = 3,
       granite = 2
    },
 

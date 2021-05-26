@@ -27,12 +27,12 @@ descriptions:new_productionsite_type {
    },
 
    buildcost = {
-      log = 3,
+      blackwood = 3,
       reed = 3,
       granite = 2
    },
    return_on_dismantle = {
-      log = 2,
+      blackwood = 2,
       granite = 1
    },
 
@@ -61,8 +61,8 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
-        basic_amount = 1,
-        supports_seafaring = true
+        supports_seafaring = true,
+        basic_amount = 1
    },
 
    working_positions = {
@@ -80,12 +80,15 @@ descriptions:new_productionsite_type {
          actions = {
             "call=saw_log_basic",
             "call=saw_log",
+            "call=hardening_wood_basic",
+            "call=hardening_wood",
          }
       },
       saw_log_basic = {
          -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
          descname = _"sawing logs",
          actions = {
+            "return=skipped when economy needs blackwood",
             "return=skipped when economy needs planks",
             "return=skipped when economy needs log",
             "consume=log:2",
@@ -93,6 +96,20 @@ descriptions:new_productionsite_type {
             "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
             "animate=working duration:30s", 
             "produce=planks"
+         }
+      },
+      hardening_wood_basic = {
+         -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
+         descname = _"hardening wood",
+         actions = {
+            "return=skipped when economy needs blackwood",
+            "return=skipped when economy needs planks",
+            "return=skipped when economy needs log",
+            "consume=log:2",
+            "sleep=duration:30s",
+            "playsound=sound/barbarians/blackwood priority:60%",
+            "animate=working duration:30s",
+            "produce=blackwood"
          }
       },
       saw_log = {
@@ -105,6 +122,18 @@ descriptions:new_productionsite_type {
             "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
             "animate=working duration:30s",
             "produce=planks:3"
+         }
+      },
+      hardening_wood = {
+         -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
+         descname = _"hardening wood",
+         actions = {
+            "return=skipped unless economy needs blackwood",
+            "consume=log:4",
+            "sleep=duration:20s",
+            "playsound=sound/barbarians/blackwood priority:60%",
+            "animate=working duration:30s",
+            "produce=blackwood:3"
          }
       },
    },

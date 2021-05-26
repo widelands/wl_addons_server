@@ -9,26 +9,33 @@ include "addons/europeans_tribe.wad/scripting/debug.lua"
 push_textdomain("europeans_tribe.wad", true)
 
 local r = {
-   -- TRANSLATORS: This is the name of a starting condition
-   descname = _ "Struggling Outpost",
-   -- TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
-   tooltip = _"Start the game with just your headquarters and very few wares for bootstrapping an economy. Warning: the AI can’t successfully start from this.",
-   func =  function(player, shared_in_start)
+    -- TRANSLATORS: This is the name of a starting condition
+    descname = _ "Struggling Outpost",
+    -- TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
+    tooltip = _"Start the game with just your headquarters and very few wares for bootstrapping an economy. Warning: the AI can’t successfully start from this.",
+    func =  function(player, shared_in_start)
 
-   local sf = wl.Game().map.player_slots[player.number].starting_field
-
-   if shared_in_start then
-      sf = shared_in_start
-   else
-      player:allow_workers("all")
-   end
-
-   prefilled_buildings(plr, { "europeans_headquarters", sf.x, sf.y,
+    local sf = wl.Game().map.player_slots[player.number].starting_field
+    if shared_in_start then
+        sf = shared_in_start
+    else
+        player:allow_workers("all")
+    end
+    
+    -- forbid all advanced buildings, execpt for quarry and stonemasons house
+    player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_hunters_house_advanced", "europeans_fishers_house_advanced", "europeans_well_advanced"}
+    player:forbid_buildings{"europeans_farm_level_3", "europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", "europeans_inn_level_2", "europeans_inn_level_1", "europeans_inn_basic"}
+    player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_sawmill_advanced", "europeans_smelting_works_advanced", "europeans_weaving_mill_advanced" }
+    player:forbid_buildings{"europeans_smithy_level_9", "europeans_smithy_level_8", "europeans_smithy_level_7", "europeans_trainingscamp_level_4", "europeans_battlearena_level_4", "europeans_battlearena_level_3"}    
+    player:forbid_buildings{"europeans_scouts_house_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced", "europeans_recruitement_center_advanced"}    
+    
+    prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {
             water = 128,
-            log = 128,
+            log = 64,
             granite = 32,
             coal = 32,
+            blackwood = 32,
             planks = 32,
             reed = 32,
             cloth = 48,
@@ -71,8 +78,19 @@ local r = {
         soldiers = {
             [{0,0,0,0}] = 16,
       }
-   })
+    })
+    
+    for i = 1, 25 do
+        -- Delay of 15 min between actions
+        sleep(900000)
+        
+        -- Allow all (advanced) buildings after 6 hours of game
+        if i >= 24 then
+           player:allow_buildings("all")
+        end 
+    end
 end
 }
+
 pop_textdomain()
 return init

@@ -20,7 +20,7 @@ descriptions:new_militarysite_type {
             diamond = 1
         },
         enhancement_return_on_dismantle = {
-            log = 2,
+            planks = 1,
             granite = 2,
             marble = 1,
             quartz = 1,
@@ -35,7 +35,7 @@ descriptions:new_militarysite_type {
       grout = 3
    },
    return_on_dismantle = {
-      log = 2,
+      planks = 2,
       granite = 3
    },
 

@@ -15,13 +15,11 @@ descriptions:new_productionsite_type {
           brick = 3,
           grout = 3,
           marble_column = 2,
-          quartz = 1,
           diamond = 1
       },
       enhancement_return_on_dismantle = {
           granite = 3,
           marble = 2,
-          quartz = 1,
           diamond = 1
       }
    },

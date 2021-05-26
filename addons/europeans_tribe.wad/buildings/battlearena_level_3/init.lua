@@ -12,12 +12,15 @@ descriptions:new_trainingsite_type {
    enhancement = {
         name = "europeans_battlearena_level_4",
         enhancement_cost = {
+           brick = 3,
+           grout = 3,
            marble_column = 3,
            quartz = 1,
            diamond = 1,
            gold = 1
         },
         enhancement_return_on_dismantle = {
+           granite = 3,
            marble = 3,
            quartz = 1,
            diamond = 1,

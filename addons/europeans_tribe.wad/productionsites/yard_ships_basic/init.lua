@@ -26,13 +26,13 @@ descriptions:new_productionsite_type {
    },
 
    buildcost = {
-      log = 3,
+      blackwood = 3,
       planks = 2,
       reed = 3,
       granite = 2
    },
    return_on_dismantle = {
-      log = 2,
+      blackwood = 2,
       planks = 1,
       reed = 1,
       granite = 1
@@ -64,7 +64,7 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "log", amount = 2 },
+      { name = "blackwood", amount = 2 },
       { name = "planks", amount = 10 },
       { name = "reed", amount = 2 },
       { name = "spidercloth", amount = 2 }
@@ -84,7 +84,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
          descname = _"constructing a ship",
          actions = {
-            "return=skipped when not site has log",
+            "return=skipped when not site has blackwood",
             "return=skipped when not site has planks",
             "return=skipped when not site has spidercloth",
             "sleep=duration:15s",

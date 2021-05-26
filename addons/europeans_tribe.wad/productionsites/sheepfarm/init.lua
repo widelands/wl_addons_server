@@ -10,7 +10,7 @@ descriptions:new_productionsite_type {
    size = "big",
 
    buildcost = {
-      log = 2,
+      blackwood = 2,
       planks = 2,
       reed = 2,
       cloth = 2,
@@ -19,7 +19,7 @@ descriptions:new_productionsite_type {
       marble_column = 2
    },
    return_on_dismantle = {
-      log = 1,
+      blackwood = 1,
       planks = 1,
       granite = 2,
       marble = 2

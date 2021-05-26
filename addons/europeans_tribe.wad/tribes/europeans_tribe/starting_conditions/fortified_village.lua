@@ -13,31 +13,32 @@ init = {
    descname = _ "Fortified Village",
    -- TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
    tooltip = _"Start the game with a big village with advanced castle in its center",
-   func =  function(plr, shared_in_start)
+   func =  function(player, shared_in_start)
 
-   local sf = wl.Game().map.player_slots[plr.number].starting_field
+   local sf = wl.Game().map.player_slots[player.number].starting_field
 
    if shared_in_start then
       sf = shared_in_start
    else
-      plr:allow_workers("all")
+      player:allow_workers("all")
    end
 
-   local sf = wl.Game().map.player_slots[plr.number].starting_field
+   local sf = wl.Game().map.player_slots[player.number].starting_field
    if shared_in_start then
       sf = shared_in_start
    else
-      plr:allow_workers("all")
+      player:allow_workers("all")
    end
 
-   local h = plr:place_building("europeans_advanced_castle", sf, false, true)
+   local h = player:place_building("europeans_advanced_castle", sf, false, true)
    h:set_soldiers{[{4,4,4,4}] = 24}
       
-   place_building_in_region(plr, "europeans_warehouse_advanced", sf:region(4), {
+   place_building_in_region(player, "europeans_warehouse_advanced", sf:region(4), {
         wares = {
             water = 256,
-            log = 128,
-            planks = 128,
+            log = 64,
+            blackwood = 64,
+            planks = 64,
             granite = 64,
             coal = 64,
             reed = 64,
@@ -85,41 +86,41 @@ init = {
       }
    })
    
-   place_building_in_region(plr, "europeans_recruitement_center_basic", sf:region(6), {
+   place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
    })
-   place_building_in_region(plr, "europeans_smithy_level_3", sf:region(6), {
+   place_building_in_region(player, "europeans_smithy_level_3", sf:region(6), {
         inputs = {planks = 4, iron = 4},
    })
-   place_building_in_region(plr, "europeans_sawmill_advanced", sf:region(10), {
+   place_building_in_region(player, "europeans_sawmill_advanced", sf:region(10), {
         inputs = {log = 8},
    })
-   place_building_in_region(plr, "europeans_stonemasons_house", sf:region(10), {
+   place_building_in_region(player, "europeans_stonemasons_house", sf:region(10), {
         inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 6},
    })
-   place_building_in_region(plr, "europeans_smelting_works_advanced", sf:region(10), {
+   place_building_in_region(player, "europeans_smelting_works_advanced", sf:region(10), {
         inputs = {coal = 8, ore = 8},
    })
-   place_building_in_region(plr, "europeans_charcoal_kiln_advanced", sf:region(10), {
+   place_building_in_region(player, "europeans_charcoal_kiln_advanced", sf:region(10), {
         inputs = {log = 12},
    })
-   place_building_in_region(plr, "europeans_weaving_mill_advanced", sf:region(12), {
+   place_building_in_region(player, "europeans_weaving_mill_advanced", sf:region(12), {
         inputs = {reed = 6, spider_silk = 6},
    })
-   place_building_in_region(plr, "europeans_spiderfarm", sf:region(12), {
+   place_building_in_region(player, "europeans_spiderfarm", sf:region(12), {
         inputs = {water = 6, corn = 6},
    })
-   place_building_in_region(plr, "europeans_sheepfarm", sf:region(12), {
+   place_building_in_region(player, "europeans_sheepfarm", sf:region(12), {
         inputs = {water = 6, blackroot = 6},
    })
-   place_building_in_region(plr, "europeans_reed_yard", sf:region(16), {
+   place_building_in_region(player, "europeans_reed_yard", sf:region(16), {
         inputs = {water = 6},
    })
-   place_building_in_region(plr, "europeans_farm_level_3", sf:region(16), {
+   place_building_in_region(player, "europeans_farm_level_3", sf:region(16), {
         inputs = {water = 6},
    })
-   place_building_in_region(plr, "europeans_well_advanced", sf:region(16), {
+   place_building_in_region(player, "europeans_well_advanced", sf:region(16), {
    })
-   place_building_in_region(plr, "europeans_well_advanced", sf:region(16), {
+   place_building_in_region(player, "europeans_well_advanced", sf:region(16), {
    })
 end
 }

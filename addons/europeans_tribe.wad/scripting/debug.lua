@@ -7,47 +7,47 @@ include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
-function switch_player(plr_number1, plr_number2)
+function switch_player(player_number1, player_number2)
     local game = wl.Game()
-    local player = game.players[plr_number1]
-    player:switchplayer(plr_number2)
+    local player = game.players[player_number1]
+    player:switchplayer(player_number2)
 end
 
-function observer_mode(plr_number)
+function observer_mode(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     player.see_all = true
 end
 
-function play_mode(plr_number)
+function play_mode(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     player.see_all = false
 end
 
-function peace_mode(plr_number1, plr_number2)
+function peace_mode(player_number1, player_number2)
     local game = wl.Game()
-    local player1 = game.players[plr_number1]
-    local player2 = game.players[plr_number2]
-    player1:set_attack_forbidden(plr_number2, true)
-    player2:set_attack_forbidden(plr_number1, true)
-    player1.team = plr_number1
-    player2.team = plr_number1
+    local player1 = game.players[player_number1]
+    local player2 = game.players[player_number2]
+    player1:set_attack_forbidden(player_number2, true)
+    player2:set_attack_forbidden(player_number1, true)
+    player1.team = player_number1
+    player2.team = player_number1
 end
 
-function war_mode(plr_number1, plr_number2)
+function war_mode(player_number1, player_number2)
     local game = wl.Game()
-    local player1 = game.players[plr_number1]
-    local player2 = game.players[plr_number2]
-    player1:set_attack_forbidden(plr_number2, false)
-    player2:set_attack_forbidden(plr_number1, false)
-    player1.team = plr_number1
-    player2.team = plr_number2
+    local player1 = game.players[player_number1]
+    local player2 = game.players[player_number2]
+    player1:set_attack_forbidden(player_number2, false)
+    player2:set_attack_forbidden(player_number1, false)
+    player1.team = player_number1
+    player2.team = player_number2
 end
 
-function conquer_fields(plr_number, startx, starty, radius)
+function conquer_fields(player_number, startx, starty, radius)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     local map = game.map
     local centerfield = map:get_field(startx, starty)
 
@@ -68,10 +68,10 @@ function destroy_object(startx, starty)
     map:get_field(startx, starty).immovable:destroy()
 end
 
-function place_flag(plr_number, startx, starty)
+function place_flag(player_number, startx, starty)
     local game = wl.Game()
     local map = game.map
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
 
     player:place_flag(map:get_field(startx, starty))
 end
@@ -290,6 +290,14 @@ function connect_road(startx, starty, targetx, targety)
     end
 end
 
+function place_mine(player_number, startx, starty, minename)
+    local game = wl.Game()
+    local map = game.map
+    local player = game.players[player_number]
+    
+    place_building_in_region(player, minename, map:get_field(startx, starty):region(2))
+end
+
 function replace_building(startx, starty, buildingname)
     local game = wl.Game()
     local map = game.map
@@ -304,10 +312,10 @@ function replace_building(startx, starty, buildingname)
     place_building_in_region(player, buildingname, map:get_field(startx, starty):region(1)) -- Place new one
 end
 
-function replace_all_buildings(plr_number, buildingname, buildingname2)
+function replace_all_buildings(player_number, buildingname, buildingname2)
     local game = wl.Game()
     local map = game.map
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
 
     for startx = 0, map.width - 1 do
        for starty = 0, map.height - 1 do
@@ -341,14 +349,14 @@ function remove_building(startx, starty)
     end
 end
 
-function remove_all_buildings(plr_number, buildingname)
+function remove_all_buildings(player_number, buildingname)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
 
-    for i, plr in ipairs(game.players) do
-        for j, tbuilding in ipairs(plr.tribe.buildings) do
+    for i, player in ipairs(game.players) do
+        for j, tbuilding in ipairs(player.tribe.buildings) do
            for k, building in ipairs(player:get_buildings(tbuilding.name)) do
-              if tbuilding.type_name == buildingname or tbuilding.name == buildingname or plr.tribe.name == buildingname then
+              if tbuilding.type_name == buildingname or tbuilding.name == buildingname or player.tribe.name == buildingname then
                  building:remove()
               end
            end
@@ -356,10 +364,10 @@ function remove_all_buildings(plr_number, buildingname)
     end 
 end
 
-function cheat_wares(plr_number)
+function cheat_wares(player_number)
     local MAX_UNDEFINED_WARES = 16
 
-    local player = wl.Game().players[plr_number]
+    local player = wl.Game().players[player_number]
     local tribe = player.tribe
 
     for i, building in ipairs(tribe.buildings) do
@@ -377,9 +385,9 @@ function cheat_wares(plr_number)
 end
 
 -- following functions are only for debugging europeans tribe --
-function allow_militarysites(plr_number)
+function allow_militarysites(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
@@ -390,9 +398,9 @@ function allow_militarysites(plr_number)
     end
 end
 
-function forbid_militarysites(plr_number)
+function forbid_militarysites(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
@@ -403,9 +411,9 @@ function forbid_militarysites(plr_number)
     end
 end
 
-function allow_trainingssites(plr_number)
+function allow_trainingssites(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
@@ -415,9 +423,9 @@ function allow_trainingssites(plr_number)
     end
 end
 
-function forbid_trainingssites(plr_number)
+function forbid_trainingssites(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
@@ -427,9 +435,9 @@ function forbid_trainingssites(plr_number)
     end
 end
 
-function allow_normal_buildings(plr_number)
+function allow_normal_buildings(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
@@ -439,9 +447,9 @@ function allow_normal_buildings(plr_number)
     end
 end
 
-function forbid_normal_buildings(plr_number)
+function forbid_normal_buildings(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
@@ -451,9 +459,9 @@ function forbid_normal_buildings(plr_number)
     end
 end
 
-function allow_advanced_buildings(plr_number)
+function allow_advanced_buildings(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
@@ -463,9 +471,9 @@ function allow_advanced_buildings(plr_number)
     end
 end
 
-function forbid_advanced_buildings(plr_number)
+function forbid_advanced_buildings(player_number)
     local game = wl.Game()
-    local player = game.players[plr_number]
+    local player = game.players[player_number]
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
@@ -476,11 +484,11 @@ function forbid_advanced_buildings(plr_number)
 end
 
 -- following functions could produce memory leak - dont use it, if not necessary! --
-function cheat_soldiers(plr_number)
+function cheat_soldiers(player_number)
     local MAX_UNDEFINED_SOLDIERS = 8
     local SOLDIER_STATS_NOVICE = { 0, 0, 0, 0 }
 
-    local player = wl.Game().players[plr_number]
+    local player = wl.Game().players[player_number]
     local tribe = player.tribe
 
     -- retrieve best soldier stats
