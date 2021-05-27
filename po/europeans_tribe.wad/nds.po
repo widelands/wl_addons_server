@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-27 04:08+0000\n"
+"POT-Creation-Date: 2021-05-27 14:19+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -5840,168 +5840,14 @@ msgctxt "europeans_building"
 msgid "Carves marble columns out of marble."
 msgstr "Sniddjet Marmelpielers ut Marmel."
 
-#. TRANSLATORS: Purpose helptext for an europeans production site: Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2603
-msgctxt "europeans_building"
-msgid "Grinds corn to produce cornmeal."
-msgstr "Mahlt Mais to Maismehl."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2610
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2617
-msgctxt "europeans_building"
-msgid ""
-"Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed flour."
-msgstr "Mahlt Mais to Maismehl. Mahlt Rogg un Weit to Mehl."
-
-#. TRANSLATORS: Purpose helptext for a barbarian production site: Tavern
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2624
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2631
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2638
-msgctxt "building"
-msgid "Prepares rations to feed the scouts and miners."
-msgstr "Maakt Happen för Bespejers un Bargwarkskeerls torecht."
-
-#. TRANSLATORS: Purpose helptext for a barbarian production site: Inn
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2645
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2652
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2659
-msgctxt "building"
-msgid ""
-"Prepares rations and snacks to feed the miners in the basic and deep mines."
-msgstr ""
-"Maakt Happen un Spiesen för de Bargwarkskeerls in de lütten un depen "
-"Bargwarken torecht."
-
-#. TRANSLATORS: Purpose helptext for a barbarian production site: Big Inn
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2666
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2673
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2680
-msgctxt "europeans_building"
-msgid "Prepares rations, snacks and meals to feed all miners."
-msgstr ""
-"Maakt Happen, Spiesen un Mahltieden för all de Bargwarkskeerls torecht."
-
-#. TRANSLATORS: Purpose helptext for a europeans production site: Brewery
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2687
-msgctxt "europeans_building"
-msgid "Produces beer to keep the miners strong and happy."
-msgstr "Produzeert Beer, um de Bargwarkskeerls manns un tofree to hollen."
-
-#. TRANSLATORS: Purpose helptext for a europeans production site: Brewery
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2694
-msgctxt "europeans_building"
-msgid "Produces beer and mead to keep the miners strong and happy."
-msgstr ""
-"Produzeert Beer un Hünnigbeer, um de Bargwarkskeerls manns un tofree to "
-"hollen."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Brewery
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2701
-msgctxt "europeans_building"
-msgid "Produces beer, mead and strong_beer for trainingssites."
-msgstr "Produzeert Beer, Hönnigbeer un deftigs Beer för Övens-Boen."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Winery
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2708
-msgctxt "europeans_building"
-msgid "Produces mead and wine."
-msgstr "Produzeert Hönnigbeer un Wien."
-
-#. TRANSLATORS: Purpose helptext for a europeans production site: Smelting Works
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2715
-msgctxt "europeans_building"
-msgid "Smelts ore into iron."
-msgstr "Smelt Kluten to Iesen."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2722
-msgctxt "europeans_building"
-msgid "Smelts ore into iron and gold."
-msgstr "Smelt Kluten to Iesen un Gold."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2729
-msgctxt "europeans_building"
-msgid "Smelts ore into iron and gold. Recycles scrap metal."
-msgstr "Smelt Kluten to Iesen un Gold un verweert Metall-Överblievsels."
-
-#. TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2736
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2743
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2750
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2757
-msgctxt "europeans_building"
-msgid "Forges all the tools that your workers need."
-msgstr "Smeedt all dat Warktüüg, wat diene Arbeiders bruken."
-
-#. TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2764
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2771
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2778
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2785
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2792
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2799
-msgctxt "europeans_building"
-msgid ""
-"Forges all the tools that your workers need. Produces armor and weapons, too."
-msgstr ""
-"Smeedt all dat Warktüüg, wat diene Arbeiders bruken. Produzeert ok Wapens un "
-"Wapenrockens."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Recruitement Center
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2808
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2815
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2822
-msgctxt "europeans_building"
-msgid "Equips recruits and trains them as workers."
-msgstr "Rüst Lehrwichter ut un maakt se to Arbeiders."
-
-#. TRANSLATORS: Purpose helptext for production site: Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2829
-msgctxt "europeans_building"
-msgid "Sows and harvests corn, rye and wheat."
-msgstr "Sait un arnt Weit, Rogg un Mais."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2836
-msgctxt "europeans_building"
-msgid "Sows and harvests barley, corn, rye and wheat."
-msgstr "Sait un arnt Garst, Weit, Rogg un Mais."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2843
-msgctxt "europeans_building"
-msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-msgstr "Sait un arnt Garst, Weit, Rogg, Swartwuddels un Mais."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2850
-msgctxt "europeans_building"
-msgid "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
-msgstr ""
-"Sait un arnt Garst, Weit, Rogg, Früchten, Druven, Swartwuddels un Mais."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Spider Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2857
-msgctxt "europeans_building"
-msgid "Breeds spiders for silk."
-msgstr "Tücht Spinnen för hör Siede."
-
-#. TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2864
-msgctxt "europeans_building"
-msgid "Keeps sheep for their wool."
-msgstr "Tücht Schapen för hör Wull."
-
 #. TRANSLATORS: Purpose helptext for a europeans production site: Weaving Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2871
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2603
 msgctxt "europeans_building"
 msgid "Weaves spider cloth out of spider silk."
 msgstr "Spinnt Spinnenstoff ut Spinnensied."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2878
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2610
 msgctxt "europeans_building"
 msgid ""
 "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and "
@@ -6011,10 +5857,164 @@ msgstr ""
 "un to lehren."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2885
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2617
 msgctxt "europeans_building"
 msgid "Weaves tabard and armor out of wool and silk."
 msgstr "Spinnt Kluften un Wapenrocken ut Wull un Sied."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Mill
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2624
+msgctxt "europeans_building"
+msgid "Grinds corn to produce cornmeal."
+msgstr "Mahlt Mais to Maismehl."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Mill
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2631
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2638
+msgctxt "europeans_building"
+msgid ""
+"Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed flour."
+msgstr "Mahlt Mais to Maismehl. Mahlt Rogg un Weit to Mehl."
+
+#. TRANSLATORS: Purpose helptext for a barbarian production site: Tavern
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2645
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2652
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2659
+msgctxt "building"
+msgid "Prepares rations to feed the scouts and miners."
+msgstr "Maakt Happen för Bespejers un Bargwarkskeerls torecht."
+
+#. TRANSLATORS: Purpose helptext for a barbarian production site: Inn
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2666
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2673
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2680
+msgctxt "building"
+msgid ""
+"Prepares rations and snacks to feed the miners in the basic and deep mines."
+msgstr ""
+"Maakt Happen un Spiesen för de Bargwarkskeerls in de lütten un depen "
+"Bargwarken torecht."
+
+#. TRANSLATORS: Purpose helptext for a barbarian production site: Big Inn
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2687
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2694
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2701
+msgctxt "europeans_building"
+msgid "Prepares rations, snacks and meals to feed all miners."
+msgstr ""
+"Maakt Happen, Spiesen un Mahltieden för all de Bargwarkskeerls torecht."
+
+#. TRANSLATORS: Purpose helptext for a europeans production site: Brewery
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2708
+msgctxt "europeans_building"
+msgid "Produces beer to keep the miners strong and happy."
+msgstr "Produzeert Beer, um de Bargwarkskeerls manns un tofree to hollen."
+
+#. TRANSLATORS: Purpose helptext for a europeans production site: Brewery
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2715
+msgctxt "europeans_building"
+msgid "Produces beer and mead to keep the miners strong and happy."
+msgstr ""
+"Produzeert Beer un Hünnigbeer, um de Bargwarkskeerls manns un tofree to "
+"hollen."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Brewery
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2722
+msgctxt "europeans_building"
+msgid "Produces beer, mead and strong_beer for trainingssites."
+msgstr "Produzeert Beer, Hönnigbeer un deftigs Beer för Övens-Boen."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Winery
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2729
+msgctxt "europeans_building"
+msgid "Produces mead and wine."
+msgstr "Produzeert Hönnigbeer un Wien."
+
+#. TRANSLATORS: Purpose helptext for a europeans production site: Smelting Works
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2736
+msgctxt "europeans_building"
+msgid "Smelts ore into iron."
+msgstr "Smelt Kluten to Iesen."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2743
+msgctxt "europeans_building"
+msgid "Smelts ore into iron and gold."
+msgstr "Smelt Kluten to Iesen un Gold."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2750
+msgctxt "europeans_building"
+msgid "Smelts ore into iron and gold. Recycles scrap metal."
+msgstr "Smelt Kluten to Iesen un Gold un verweert Metall-Överblievsels."
+
+#. TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2757
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2764
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2771
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2778
+msgctxt "europeans_building"
+msgid "Forges all the tools that your workers need."
+msgstr "Smeedt all dat Warktüüg, wat diene Arbeiders bruken."
+
+#. TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2785
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2792
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2799
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2806
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2813
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2820
+msgctxt "europeans_building"
+msgid ""
+"Forges all the tools that your workers need. Produces armor and weapons, too."
+msgstr ""
+"Smeedt all dat Warktüüg, wat diene Arbeiders bruken. Produzeert ok Wapens un "
+"Wapenrockens."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Recruitement Center
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2829
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2836
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2843
+msgctxt "europeans_building"
+msgid "Equips recruits and trains them as workers."
+msgstr "Rüst Lehrwichter ut un maakt se to Arbeiders."
+
+#. TRANSLATORS: Purpose helptext for production site: Farm
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2850
+msgctxt "europeans_building"
+msgid "Sows and harvests corn, rye and wheat."
+msgstr "Sait un arnt Weit, Rogg un Mais."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Farm
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2857
+msgctxt "europeans_building"
+msgid "Sows and harvests barley, corn, rye and wheat."
+msgstr "Sait un arnt Garst, Weit, Rogg un Mais."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2864
+msgctxt "europeans_building"
+msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
+msgstr "Sait un arnt Garst, Weit, Rogg, Swartwuddels un Mais."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2871
+msgctxt "europeans_building"
+msgid "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
+msgstr ""
+"Sait un arnt Garst, Weit, Rogg, Früchten, Druven, Swartwuddels un Mais."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Spider Farm
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2878
+msgctxt "europeans_building"
+msgid "Breeds spiders for silk."
+msgstr "Tücht Spinnen för hör Siede."
+
+#. TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2885
+msgctxt "europeans_building"
+msgid "Keeps sheep for their wool."
+msgstr "Tücht Schapen för hör Wull."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
