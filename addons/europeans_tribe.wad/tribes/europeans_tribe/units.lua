@@ -2597,6 +2597,27 @@ descriptions:new_tribe {
          }
       },
       {
+         name = "europeans_weaving_mill_basic",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for a europeans production site: Weaving Mill
+            purpose = pgettext("europeans_building", "Weaves spider cloth out of spider silk.")
+         }
+      },
+      {
+         name = "europeans_weaving_mill_normal",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
+            purpose = pgettext("europeans_building", "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and train the soldiers.")
+         }
+      },
+      {
+         name = "europeans_weaving_mill_advanced",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
+            purpose = pgettext("europeans_building", "Weaves tabard and armor out of wool and silk.")
+         }
+      },
+      {
          name = "europeans_mill_basic",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Mill
@@ -2862,27 +2883,6 @@ descriptions:new_tribe {
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
             purpose = pgettext("europeans_building", "Keeps sheep for their wool.")
-         }
-      },
-      {
-         name = "europeans_weaving_mill_basic",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for a europeans production site: Weaving Mill
-            purpose = pgettext("europeans_building", "Weaves spider cloth out of spider silk.")
-         }
-      },
-      {
-         name = "europeans_weaving_mill_normal",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
-            purpose = pgettext("europeans_building", "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and train the soldiers.")
-         }
-      },
-      {
-         name = "europeans_weaving_mill_advanced",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
-            purpose = pgettext("europeans_building", "Weaves tabard and armor out of wool and silk.")
          }
       },
 
