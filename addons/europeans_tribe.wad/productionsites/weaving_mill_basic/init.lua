@@ -7,31 +7,31 @@ descriptions:new_productionsite_type {
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("europeans_building", "Basic Weaving Mill"),
    icon = dirname .. "menu.png",
-   size = "big",
+   size = "medium",
 
    enhancement = {
         name = "europeans_weaving_mill_normal",
         enhancement_cost = {
-          planks = 3,
-          cloth = 3,
-          granite = 2,
+          planks = 2,
+          cloth = 2,
+          granite = 1,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
-          planks = 2,
+          planks = 1,
           granite = 1,
           quartz = 1,
         },
    },
 
    buildcost = {
-      blackwood = 4,
-      reed = 4,
+      blackwood = 3,
+      reed = 3,
       granite = 2
    },
    return_on_dismantle = {
-      blackwood = 3,
-      granite = 2
+      blackwood = 2,
+      granite = 1
    },
 
    animations = {
