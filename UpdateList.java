@@ -86,7 +86,7 @@ public class UpdateList {
 			File metadataFileServer = new File("metadata", addon + ".server");
 			if (!metadataFileMaintain.isFile()) {
 				while (_defaultUploader == null || _defaultUploader.isEmpty()) {
-					System.out.println("New add-on '" + addon + "' detected. Please enter your nickname:");
+					System.out.println("\nNew add-on '" + addon + "' detected. Please enter your nickname:");
 					_defaultUploader = new BufferedReader(new InputStreamReader(System.in)).readLine();
 				}
 				Utils.initMetadata(addon, _defaultUploader);
