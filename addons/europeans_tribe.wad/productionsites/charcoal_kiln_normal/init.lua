@@ -15,13 +15,11 @@ descriptions:new_productionsite_type {
           brick = 2,
           grout = 2,
           marble_column = 2,
-          quartz = 1,
           diamond = 1
       },
       enhancement_return_on_dismantle = {
           granite = 2,
           marble = 2,
-          quartz = 1,
           diamond = 1
       }
    },
@@ -44,7 +42,8 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "log", amount = 16 }
+      { name = "log", amount = 16 },
+      { name = "blackwood", amount = 8 }
    },
 
    programs = {
@@ -77,6 +76,18 @@ descriptions:new_productionsite_type {
             "sleep=duration:30s",
             "animate=working duration:2m30s",
             "produce=coal:4",
+         }
+      },
+      burn_blackwood = {
+         -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
+         descname = _"producing coal",
+         actions = {
+            "return=skipped unless economy needs coal",
+            "return=skipped when economy needs blackwood",
+            "consume=blackwood:6",
+            "sleep=duration:30s",
+            "animate=working duration:2m30s", -- Charcoal fires will burn for some days in real life
+            "produce=coal:3"
          }
       },
    },

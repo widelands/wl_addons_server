@@ -12,13 +12,12 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_tavern_level_2",
         enhancement_cost = {
-          planks = 1,
-          cloth = 1,
-          brick = 1,
-          grout = 1,
+          blackwood = 1,
+          reed = 1,
+          granite = 1
         },
         enhancement_return_on_dismantle = {
-          planks = 1,
+          blackwood = 1,
           granite = 1
         },
    },

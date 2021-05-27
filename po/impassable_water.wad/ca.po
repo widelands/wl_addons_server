@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Juanjo, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-24 14:55+0200\n"
+"POT-Creation-Date: 2021-05-27 16:02+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Juanjo, 2021\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -21,20 +25,22 @@ msgstr ""
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/impassable_water.wad/addon:2 addons/impassable_water.wad/editor.lua:6
 msgid "Impassable Water"
-msgstr ""
+msgstr "Aigua impassable"
 
 #: addons/impassable_water.wad/addon:3
 msgid "Shallow water terrains, impassable for ships but walkable."
 msgstr ""
+"Terrenys amb aigües poc profundes, que els vaixells no poden creuar, però "
+"els treballadors a peu sí."
 
 #: addons/impassable_water.wad/world/terrains/desert/reef/init.lua:6
 msgid "Reef"
-msgstr ""
+msgstr "Escull"
 
 #: addons/impassable_water.wad/world/terrains/summer/water_lily/init.lua:7
 msgid "Water Lily"
-msgstr ""
+msgstr "Nenúfar"
 
 #: addons/impassable_water.wad/world/terrains/wasteland/algae_slick/init.lua:6
 msgid "Algae slick"
-msgstr ""
+msgstr "Algues relliscoses"

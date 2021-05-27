@@ -10,16 +10,16 @@ descriptions:new_productionsite_type {
    size = "medium",
 
    enhancement = {
-      name = "europeans_smithy_level_2",
-      enhancement_cost = {
-         planks = 1,
-         cloth = 1,
-         brick = 1,
-         grout = 1
-      },
-      enhancement_return_on_dismantle = {
-         granite = 1
-      }
+        name = "europeans_smithy_level_2",
+        enhancement_cost = {
+          blackwood = 1,
+          reed = 1,
+          granite = 1
+        },
+        enhancement_return_on_dismantle = {
+          blackwood = 1,
+          granite = 1
+        },
    },
 
    animations = {

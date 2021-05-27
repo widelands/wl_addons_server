@@ -106,9 +106,18 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "blackwood",
+            default_target_quantity = 16,
+            preciousness = 24,
+            helptexts = {
+               -- TRANSLATORS: Helptext for a barbarian ware: Blackwood
+               purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener.")
+            }
+         },
+         {
             name = "planks",
             default_target_quantity = 16,
-            preciousness = 28,
+            preciousness = 24,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Planks, part 1
@@ -2588,6 +2597,27 @@ descriptions:new_tribe {
          }
       },
       {
+         name = "europeans_weaving_mill_basic",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for a europeans production site: Weaving Mill
+            purpose = pgettext("europeans_building", "Weaves spider cloth out of spider silk.")
+         }
+      },
+      {
+         name = "europeans_weaving_mill_normal",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
+            purpose = pgettext("europeans_building", "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and train the soldiers.")
+         }
+      },
+      {
+         name = "europeans_weaving_mill_advanced",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
+            purpose = pgettext("europeans_building", "Weaves tabard and armor out of wool and silk.")
+         }
+      },
+      {
          name = "europeans_mill_basic",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Mill
@@ -2853,27 +2883,6 @@ descriptions:new_tribe {
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
             purpose = pgettext("europeans_building", "Keeps sheep for their wool.")
-         }
-      },
-      {
-         name = "europeans_weaving_mill_basic",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for a europeans production site: Weaving Mill
-            purpose = pgettext("europeans_building", "Weaves spider cloth out of spider silk.")
-         }
-      },
-      {
-         name = "europeans_weaving_mill_normal",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
-            purpose = pgettext("europeans_building", "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and train the soldiers.")
-         }
-      },
-      {
-         name = "europeans_weaving_mill_advanced",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
-            purpose = pgettext("europeans_building", "Weaves tabard and armor out of wool and silk.")
          }
       },
 
