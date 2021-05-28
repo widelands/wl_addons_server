@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Buildcats {
 	private static void recurse(String out, File dir) throws Exception {
+		System.out.print('.');
 		for (File f : Utils.listSorted(dir)) {
 			if (f.isDirectory()) {
 				recurse(out, f);
@@ -33,7 +34,12 @@ public class Buildcats {
 
 	public static void main(String[] args) throws Exception {
 		Runtime rt = Runtime.getRuntime();
-		for (File addon : Utils.listSorted(new File("addons"))) {
+		File[] files = Utils.listSorted(new File("addons"));
+		final int digits = Integer.toString(files.length).length();
+		int progress = 0;
+		for (File addon : files) {
+			System.out.print(String.format("[%" + digits + "d/%" + digits + "d] Generating POT file for add-on %s ",
+					++progress, files.length, addon.getName()));
 			String dir = "po/" + addon.getName();
 			rt.exec(new String[] {"mkdir", "-p", dir});
 			String out = dir + "/" + addon.getName() + ".pot";
@@ -46,6 +52,7 @@ public class Buildcats {
 					"--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
 					addon.getPath() + "/addon"}).waitFor();
 			recurse(out, addon);
+			System.out.println(" done");
 		}
 	}
 }
