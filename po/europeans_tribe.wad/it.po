@@ -5,15 +5,16 @@
 #
 # Translators:
 # Davide Nicolini <davide97@gmail.com>, 2021
+# Leonardo Fontana <scuola.rovato@gmail.com>, 2021
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 21:16+0200\n"
+"POT-Creation-Date: 2021-05-28 19:23+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
-"Last-Translator: Davide Nicolini <davide97@gmail.com>, 2021\n"
+"Last-Translator: Leonardo Fontana <scuola.rovato@gmail.com>, 2021\n"
 "Language-Team: Italian (https://www.transifex.com/widelands/teams/35159/"
 "it/)\n"
 "Language: it\n"
@@ -1079,7 +1080,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:8
 msgctxt "europeans_building"
 msgid "Clay Pit and Fish Breeder’s House"
-msgstr ""
+msgstr "cava d'argilla e casa dell'allevatore di pesci"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:59
@@ -1113,6 +1114,8 @@ msgid ""
 "fish in his work area. Remember that you can only regenerate your fish "
 "resources if there are some fish left to breed."
 msgstr ""
+"l'allevatore di pesci non trova più pesci in quest'area di lavoro. Ricordati "
+"che lui può solamente generare pesci se rimangono pesci da riprodurre"
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:101
 msgid "The fishing grounds are full"
@@ -1371,7 +1374,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:63
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:46
 msgid "fishing"
-msgstr ""
+msgstr "pescare"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:40
@@ -1404,7 +1407,7 @@ msgctxt "europeans_building"
 msgid ""
 "The fisher working out of this fisher’s hut can’t find any fish in his work "
 "area."
-msgstr ""
+msgstr "Questo pescatore ha esaurito i pesci nella sua area di lavoro"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:8
@@ -2542,7 +2545,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:232
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:221
 msgid "making a fishing rod"
-msgstr ""
+msgstr "produci una canna da pesca"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:228
@@ -4575,6 +4578,7 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid "The fishing net is used by the fisher and produced by the toolsmith."
 msgstr ""
+"la rete da pesca è usata dal pescatore ed è prodotta dal fabbro d'attrezzi"
 
 #. TRANSLATORS: Helptext for an europeans ware: Hunting Bow
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:702
