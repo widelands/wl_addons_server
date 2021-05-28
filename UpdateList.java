@@ -288,24 +288,19 @@ public class UpdateList {
 				return;
 			}
 		}
-		System.out.println("Parsing lists...");
 		final Map<String, Data> data = detectAndUpdateMetadata(increase_i18n, verify);
 		File[] files = Utils.listSorted(new File("addons"));
-		final int total = kHighestListVersion * files.length;
-		final int digits1 = Integer.toString(total).length();
-		final int digits2 = Integer.toString(kHighestListVersion).length();
-		int progress = 0;
 		for (int listVersion = 1; listVersion <= kHighestListVersion; ++listVersion) {
-			System.out.println("Writing list version " + listVersion + "...");
+			System.out.print("Writing list version " + listVersion + " ");
 			PrintWriter write = new PrintWriter(new File(listVersion == 1 ? "list" : ("list_" + listVersion)));
 			write.println(listVersion);
 			write.println(files.length);
 			for (File file : files) {
-				System.out.println(String.format("[%" + digits1 + "d/%" + digits1 + "d] Writing version %" + digits2 + "d for add-on %s ",
-						++progress, total, listVersion, file.getName()));
+				System.out.print('.');
 				writeAddon(listVersion, write, file, data.get(file.getName()));
 			}
 			write.close();
+			System.out.println(" done");
 		}
 	}
 }
