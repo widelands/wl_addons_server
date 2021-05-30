@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-29 23:00+0200\n"
+"PO-Revision-Date: 2021-05-28 19:24+0000\n"
+"Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: addons/no_default_resources.wad/addon:2
+msgid "Terrains without default resources"
+msgstr ""
+
+#: addons/no_default_resources.wad/addon:3
+msgid ""
+"Some shipped terrains apply resources (water and fish) automatically. This "
+"add-on adds the same terrains but without any default resources. Keep in "
+"mind to set resources manually."
+msgstr ""
+
+#. TRANSLATORS: A category in the editor for placing terrains on the map.
+#: addons/no_default_resources.wad/editor.lua:7
+msgid "Summer terrains without default resources"
+msgstr ""
+
+#. TRANSLATORS: A category in the editor for placing terrains on the map.
+#: addons/no_default_resources.wad/editor.lua:24
+msgid "Wasteland terrains without default resources"
+msgstr ""
+
+#. TRANSLATORS: A category in the editor for placing terrains on the map.
+#: addons/no_default_resources.wad/editor.lua:40
+msgid "Winter terrains without default resources"
+msgstr ""
+
+#. TRANSLATORS: A category in the editor for placing terrains on the map.
+#: addons/no_default_resources.wad/editor.lua:55
+msgid "Desert terrains without default resources"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/desert/desert4/init.lua:5
+msgid "Desert (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/desert/drysoil/init.lua:5
+msgid "Dry Soil (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/desert/meadow/init.lua:5
+msgid "Meadow (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/desert/steppe/init.lua:5
+#: addons/no_default_resources.wad/world/terrains/summer/steppe/init.lua:5
+msgid "Steppe (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/desert/water/init.lua:5
+#: addons/no_default_resources.wad/world/terrains/summer/water/init.lua:5
+#: addons/no_default_resources.wad/world/terrains/wasteland/water/init.lua:5
+#: addons/no_default_resources.wad/world/terrains/winter/water/init.lua:5
+msgid "Water (no fish)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/summer/meadow1/init.lua:5
+msgid "Meadow 1 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/summer/meadow2/init.lua:5
+msgid "Meadow 2 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/summer/meadow3/init.lua:5
+msgid "Meadow 3 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/summer/meadow4/init.lua:5
+msgid "Meadow 4 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/summer/steppe_barren/init.lua:5
+msgid "Barren Steppe (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/summer/swamp/init.lua:5
+msgid "Swamp (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/wasteland/ashes1/init.lua:5
+msgid "Ashes 1 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/wasteland/ashes2/init.lua:5
+msgid "Ashes 2 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/wasteland/hardground1/init.lua:5
+msgid "Hard Ground 1 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/wasteland/hardground2/init.lua:5
+msgid "Hard Ground 2 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/wasteland/hardground3/init.lua:5
+msgid "Hard Ground 3 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/wasteland/hardground4/init.lua:5
+msgid "Hard Ground 4 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/winter/taiga/init.lua:5
+msgid "Taiga (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/winter/tundra/init.lua:5
+msgid "Tundra 1 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/winter/tundra2/init.lua:5
+msgid "Tundra 2 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/winter/tundra3/init.lua:5
+msgid "Tundra 3 (dry)"
+msgstr ""
+
+#: addons/no_default_resources.wad/world/terrains/winter/tundra_taiga/init.lua:5
+msgid "Tundra Taiga (dry)"
+msgstr ""

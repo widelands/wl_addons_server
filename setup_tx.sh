@@ -6,6 +6,7 @@ then
   exit 1
 fi
 
+./buildcats.sh
 while [ -n "$1" ]
 do
   resource="widelands-addons.${1//[._]/-}"

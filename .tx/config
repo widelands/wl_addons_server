@@ -145,3 +145,15 @@ source_file = po/royal.wad/royal.wad.pot
 source_lang = en
 type = PO
 
+[widelands-addons.no-default-resources-wad]
+file_filter = po/no_default_resources.wad/<lang>.po
+source_file = po/no_default_resources.wad/no_default_resources.wad.pot
+source_lang = en
+type = PO
+
+[widelands-addons.tropics-wad]
+file_filter = po/tropics.wad/<lang>.po
+source_file = po/tropics.wad/tropics.wad.pot
+source_lang = en
+type = PO
+
