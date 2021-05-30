@@ -29,8 +29,7 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {
-   },
+   aihints = {},
 
    working_positions = {
       europeans_stonecutter_normal = 1

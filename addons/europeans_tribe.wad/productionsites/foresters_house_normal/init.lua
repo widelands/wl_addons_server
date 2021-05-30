@@ -31,9 +31,7 @@ descriptions:new_productionsite_type {
       }
    },
 
-   aihints = {
-      space_consumer = true
-   },
+   aihints = {},
 
    working_positions = {
       europeans_forester_normal = 1
