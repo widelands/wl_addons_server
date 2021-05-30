@@ -13,7 +13,7 @@ wl.Descriptions():new_terrain_type{
    humidity = 1,
    fertility = 100,
 
-   enhancement = { amazons = "drysoil" }
+   enhancement = { amazons = "drysoil_dry" }
 }
 
 pop_textdomain()

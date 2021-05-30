@@ -1,3 +1,3 @@
 return {
-   water_lily = {}
+   water_lily = {"__skip_if_exists"}
 }

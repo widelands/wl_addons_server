@@ -1,3 +1,3 @@
 return {
-   hardground4_dry = {}
+   hardground4_dry = {"__skip_if_exists"}
 }

@@ -1,3 +1,3 @@
 return {
-   algae_slick = {}
+   algae_slick = {"__skip_if_exists"}
 }
