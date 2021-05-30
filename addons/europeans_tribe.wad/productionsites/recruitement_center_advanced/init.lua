@@ -20,10 +20,7 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {
-      very_weak_ai_limit = 0,
-      weak_ai_limit = 0
-   },
+   aihints = {},
    
    working_positions = {
       europeans_trainer = 1
@@ -83,8 +80,7 @@ descriptions:new_productionsite_type {
             "call=recruit_shipwright",
             "call=recruit_geologist",
             "call=recruit_scout",
-            "call=recruit_trainer",
-            "call=recruit_soldier"
+            "call=recruit_trainer"
          }
       },
       recruit_builder = {
@@ -371,17 +367,6 @@ descriptions:new_productionsite_type {
             "consume=armor,tabard spear_wooden europeans_recruit",
             "animate=working duration:60s",
             "recruit=europeans_trainer"
-         }
-      },
-      recruit_soldier = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-         descname = pgettext("europeans_building", "recruiting soldier"),
-         actions = {
-            "return=skipped unless economy needs europeans_soldier",
-            "sleep=duration:30s",
-            "consume=armor,tabard spear_wooden europeans_recruit",
-            "animate=working duration:60s",
-            "recruit=europeans_soldier"
          }
       },
    }

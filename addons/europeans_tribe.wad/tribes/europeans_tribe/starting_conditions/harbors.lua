@@ -169,9 +169,6 @@ init = {
     player:forbid_buildings{"europeans_ferry_yard_advanced", "europeans_ferry_yard_normal", "europeans_ferry_yard_basic"}
     player:forbid_buildings{"europeans_scouts_house_advanced", "europeans_scouts_house_normal", "europeans_scouts_house_basic"}
     player:forbid_buildings{"europeans_recruitement_center_advanced", "europeans_recruitement_center_normal"}
-    player:forbid_buildings{"europeans_battlearena_level_1", "europeans_battlearena_level_2", "europeans_battlearena_level_3", "europeans_battlearena_level_4"}
-    player:forbid_buildings{"europeans_smithy_level_4", "europeans_smithy_level_5", "europeans_smithy_level_6", "europeans_trainingscamp_level_1", "europeans_trainingscamp_level_2"}
-    player:forbid_buildings{"europeans_smithy_level_7", "europeans_smithy_level_8", "europeans_smithy_level_9", "europeans_trainingscamp_level_3", "europeans_trainingscamp_level_4"}
    
     for i = 1, 13 do
         -- Delay of 15 min between actions
@@ -185,12 +182,15 @@ init = {
                 place_building(player, 23, 452, 6, "europeans_fishers_house_normal")
             end 
             if (player_slot.name == "England") and (sf.x == 380) and (sf.y == 499) then
+                -- Shetland
                 place_port(player, 412, 362, 1)
                 place_building(player, 412, 362, 6, "europeans_clay_pit")
                 place_building(player, 412, 362, 6, "europeans_fishers_house_normal")
+                -- Orkney
                 place_port(player, 386, 386, 1)
                 place_building(player, 386, 386, 6, "europeans_clay_pit")
                 place_building(player, 386, 386, 6, "europeans_fishers_house_normal")
+                -- Lewis / Harris
                 place_port(player, 359, 390, 1)
                 place_building(player, 359, 390, 6, "europeans_quarry_normal")
                 place_building(player, 359, 390, 6, "europeans_clay_pit")
@@ -215,8 +215,8 @@ init = {
                 -- Ireland
                 place_port(player, 315, 434, 1)
                 -- Island
-                place_port(player, 323, 363, 1)
-                place_building(player, 323, 363, 4, "europeans_quarry_advanced")
+                place_port(player, 335, 363, 1)
+                place_building(player, 335, 363, 4, "europeans_quarry_advanced")
             end
             if (player_slot.name == "Italy") and (sf.x == 491) and (sf.y == 170) then
                 -- Greece

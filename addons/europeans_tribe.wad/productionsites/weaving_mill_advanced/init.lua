@@ -29,9 +29,7 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {
-      supports_seafaring = true
-   },
+   aihints = {},
 
    working_positions = {
       europeans_weaver_advanced = 1

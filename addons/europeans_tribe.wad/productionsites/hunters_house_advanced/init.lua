@@ -16,9 +16,7 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {
-      requires_supporters = true
-   },
+   aihints = {},
 
    working_positions = {
       europeans_hunter_advanced = 1
