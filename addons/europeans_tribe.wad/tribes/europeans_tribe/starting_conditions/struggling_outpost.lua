@@ -48,6 +48,7 @@ local r = {
             grout = 16,
             brick = 16,
             diamond = 8,
+            gold = 2
         },
         workers = {
             europeans_carrier = 32,
@@ -78,6 +79,9 @@ local r = {
         soldiers = {
             [{0,0,0,0}] = 16,
       }
+    })
+    
+    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
     })
     
     for i = 1, 25 do

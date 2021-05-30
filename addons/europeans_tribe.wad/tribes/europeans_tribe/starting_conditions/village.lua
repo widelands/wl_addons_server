@@ -40,6 +40,7 @@ init = {
             marble = 32,
             quartz = 32,
             diamond = 24,
+            gold = 4
         },
         workers = {
             europeans_carrier = 32,

@@ -32,7 +32,7 @@ init = {
                     workers = {
                         europeans_carrier = 16,
                         europeans_builder = 12,
-                        europeans_farmer_basic = 3,
+                        europeans_farmer_basic = 6,
                         europeans_lumberjack_basic = 2,
                         europeans_forester_basic = 2,
                         europeans_carpenter_basic = 1,
@@ -68,6 +68,7 @@ init = {
                 marble = 32,
                 quartz = 32,
                 diamond = 24,
+                gold = 4,
                 shovel = 16,
                 buckets = 10,
                 basket = 8,
@@ -87,7 +88,7 @@ init = {
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 24,
-                europeans_farmer_basic = 6,
+                europeans_farmer_basic = 12,
                 europeans_trainer = 3,
                 europeans_lumberjack_basic = 3,
                 europeans_forester_basic = 3,
@@ -123,6 +124,7 @@ init = {
         set_ware(player, "marble", math.ceil(24 / #ports))
         set_ware(player, "quartz", math.ceil(24 / #ports))
         set_ware(player, "diamond", math.ceil(16 / #ports))
+        set_ware(player, "gold", math.ceil(4 / #ports))
         set_ware(player, "shovel", math.ceil(16 / #ports))
         set_ware(player, "buckets", math.ceil(10 / #ports))
         set_ware(player, "basket", math.ceil(8 / #ports))
@@ -144,8 +146,8 @@ init = {
         place_building_in_region(player, "europeans_shipyard_basic", ports[1].fields[1]:region(3), {
             inputs = {blackwood = 2, planks = 8, spidercloth = 2, reed = 2},
         })
-        place_building_in_region(player, "europeans_sawmill_basic", ports[1].fields[1]:region(4), {
-            inputs = {log = 8},
+        place_building_in_region(player, "europeans_recruitement_center_basic", ports[1].fields[1]:region(4), {
+            inputs = {},
         })
         if #ports > 1 then
             place_building_in_region(player, "europeans_reed_yard", ports[2].fields[1]:region(4), {
@@ -164,12 +166,6 @@ init = {
         end
     end
     
-    -- forbid some buildings for more efficient use of building materials by AI
-    player:forbid_buildings{"europeans_shipyard_advanced", "europeans_shipyard_normal"}
-    player:forbid_buildings{"europeans_ferry_yard_advanced", "europeans_ferry_yard_normal", "europeans_ferry_yard_basic"}
-    player:forbid_buildings{"europeans_scouts_house_advanced", "europeans_scouts_house_normal", "europeans_scouts_house_basic"}
-    player:forbid_buildings{"europeans_recruitement_center_advanced", "europeans_recruitement_center_normal"}
-   
     for i = 1, 13 do
         -- Delay of 15 min between actions
         sleep(900000)

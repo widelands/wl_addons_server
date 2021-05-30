@@ -52,7 +52,9 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {},
+   aihints = {
+        basic_amount = 1
+   },
 
    working_positions = {
       europeans_smith_basic = 1
