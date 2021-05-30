@@ -1,3 +1,3 @@
 return {
-   taiga_dry = {}
+   taiga_dry = {"__skip_if_exists"}
 }
