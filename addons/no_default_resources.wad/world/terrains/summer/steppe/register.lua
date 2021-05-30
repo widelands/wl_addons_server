@@ -1,3 +1,3 @@
 return {
-   summer_steppe_dry = {}
+   summer_steppe_dry = {"__skip_if_exists"}
 }

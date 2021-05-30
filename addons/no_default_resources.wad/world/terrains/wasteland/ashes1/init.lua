@@ -13,7 +13,7 @@ wl.Descriptions():new_terrain_type{
    humidity = 150,
    fertility = 900,
 
-   enhancement = { amazons = "hardground3" }
+   enhancement = { amazons = "hardground3_dry" }
 }
 
 pop_textdomain()

@@ -1,3 +1,3 @@
 return {
-   tundra_dry = {}
+   tundra_dry = {"__skip_if_exists"}
 }

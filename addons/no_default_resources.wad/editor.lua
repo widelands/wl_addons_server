@@ -64,9 +64,9 @@ local result = {
          }
       },
    },
-   immovables = {},
-   critters = {},
-   resources = {},
+   immovables = {"__skip_if_exists"},
+   critters = {"__skip_if_exists"},
+   resources = {"__skip_if_exists"},
 }
 pop_textdomain()
 return result

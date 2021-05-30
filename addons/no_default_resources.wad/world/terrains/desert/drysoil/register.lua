@@ -1,3 +1,3 @@
 return {
-   drysoil_dry = {}
+   drysoil_dry = {"__skip_if_exists"}
 }
