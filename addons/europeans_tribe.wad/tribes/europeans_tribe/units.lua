@@ -3020,9 +3020,9 @@ descriptions:new_tribe {
          helptexts = {
             purpose = {
                -- TRANSLATORS: Purpose helptext for an europeans training site: Basic Training Camp, part 1
-               pgettext("europeans_building", "Trains soldiers in ‘Attack’ and ‘Health’."),
+               pgettext("europeans_building", "Trains recruits in ‘Attack’ and ‘Health’."),
                -- TRANSLATORS: Purpose helptext for an europeans training site: Basic Training Camp, part 2
-               pgettext("europeans_building", "Equips the soldiers with all necessary armor parts and weapons.")
+               pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
             },
          }
       },
@@ -3031,9 +3031,9 @@ descriptions:new_tribe {
          helptexts = {
             purpose = {
                -- TRANSLATORS: Purpose helptext for an europeans training site: Guardhall, part 1
-               pgettext("europeans_building", "Trains soldiers in ‘Attack’ and ‘Health’."),
+               pgettext("europeans_building", "Trains recruits to soldiers."),
                -- TRANSLATORS: Purpose helptext for an europeans training site: Guardhall, part 2
-               pgettext("europeans_building", "Equips the soldiers with all necessary armor parts.")
+               pgettext("europeans_building", "Equips the recruits with all necessary armor parts.")
             },
          }
       },
@@ -3042,9 +3042,9 @@ descriptions:new_tribe {
          helptexts = {
             purpose = {
                -- TRANSLATORS: Purpose helptext for an europeans training site: Normal Training Camp, part 1
-               pgettext("europeans_building", "Trains soldiers in ‘Attack’ and ‘Health’."),
+               pgettext("europeans_building", "Trains recruits  to soldiers."),
                -- TRANSLATORS: Purpose helptext for an europeans training site: Normal Training Camp, part 2
-               pgettext("europeans_building", "Equips the soldiers with all necessary armor parts and weapons.")
+               pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
             },
          }
       },
@@ -3053,9 +3053,9 @@ descriptions:new_tribe {
          helptexts = {
             purpose = {
                -- TRANSLATORS: Purpose helptext for an europeans training site: Dungeon, part 1
-               pgettext("europeans_building", "Trains soldiers in ‘Attack’ and ‘Health’."),
+               pgettext("europeans_building", "Trains recruits to soldiers."),
                -- TRANSLATORS: Purpose helptext for an europeans training site: Dungeon, part 2
-               pgettext("europeans_building", "Equips the soldiers with all necessary armor parts.")
+               pgettext("europeans_building", "Equips the recruits with all necessary armor parts.")
             },
          }
       },
@@ -3064,9 +3064,9 @@ descriptions:new_tribe {
          helptexts = {
             purpose = {
                -- TRANSLATORS: Purpose helptext for an europeans training site: Advanced Training Camp, part 1
-               pgettext("europeans_building", "Trains soldiers in ‘Attack’ and ‘Health’."),
+               pgettext("europeans_building", "Trains recruits to soldiers."),
                -- TRANSLATORS: Purpose helptext for an europeans training site: Advanced Training Camp, part 2
-               pgettext("europeans_building", "Equips the soldiers with all necessary armor parts and weapons.")
+               pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
             },
          }
       },
@@ -3074,7 +3074,7 @@ descriptions:new_tribe {
          name = "europeans_battlearena_basic",
          helptexts = {
             -- TRANSLATORS: Note helptext for a barbarian training site: Battle Arena
-            note = pgettext("europeans_building", "Trains soldiers in ‘Evade’."),
+            note = pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’."),
          }
       },
       {
@@ -3082,7 +3082,7 @@ descriptions:new_tribe {
          helptexts = {
             purpose = {
                -- TRANSLATORS: Purpose helptext for an europeans training site: Trainingcamp, part 1
-               pgettext("europeans_building", "Trains soldiers in ‘Evade’ and in ‘Defense’."),
+               pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."),
                -- TRANSLATORS: Purpose helptext for an europeans training site: Trainingcamp, part 2
                pgettext("europeans_building", "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to remain totally unaffected.")
             },
@@ -3093,7 +3093,7 @@ descriptions:new_tribe {
          helptexts = {
             purpose = {
                -- TRANSLATORS: Purpose helptext for an europeans training site: Labyrinth, part 1
-               pgettext("europeans_building", "Trains soldiers in ‘Evade’ and in ‘Defense’."),
+               pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."),
                -- TRANSLATORS: Purpose helptext for an europeans training site: Labyrinth, part 2
                pgettext("europeans_building", "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to remain totally unaffected.")
             },
@@ -3104,7 +3104,7 @@ descriptions:new_tribe {
          helptexts = {
             purpose = {
                -- TRANSLATORS: Purpose helptext for an europeans training site: Arena, part 1
-               pgettext("europeans_building", "Trains soldiers in ‘Evade’ and in ‘Defense’."),
+               pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."),
                -- TRANSLATORS: Purpose helptext for an europeans training site: Arena, part 2
                pgettext("europeans_building", "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to remain totally unaffected.")
             },
@@ -3115,7 +3115,7 @@ descriptions:new_tribe {
          helptexts = {
             purpose = {
                -- TRANSLATORS: Purpose helptext for an europeans training site: Colosseum, part 1
-               pgettext("europeans_building", "Trains soldiers in ‘Evade’ and in ‘Defense’."),
+               pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."),
                -- TRANSLATORS: Purpose helptext for an europeans training site: Colosseum, part 2
                pgettext("europeans_building", "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to remain totally unaffected.")
             },

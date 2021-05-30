@@ -16,9 +16,7 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {
-      requires_supporters = true
-   },
+   aihints = {},
 
    working_positions = {
       europeans_lumberjack_advanced = 1

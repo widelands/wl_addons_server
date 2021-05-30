@@ -31,10 +31,7 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {
-      needs_water = true,
-      requires_supporters = true
-   },
+   aihints = {},
 
    working_positions = {
       europeans_fisher_normal = 1
