@@ -3,14 +3,14 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 descriptions:new_productionsite_type {
-   name = "europeans_carrierement_center_basic",
+   name = "europeans_recruitement_center_basic",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("europeans_building", "Basic Recruitement Center"),
    icon = dirname .. "menu.png",
    size = "big",
    
    enhancement = {
-      name = "europeans_carrierement_center_normal",
+      name = "europeans_recruitement_center_normal",
       enhancement_cost = {
           planks = 3,
           cloth = 3,
