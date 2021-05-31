@@ -292,6 +292,7 @@ D:modify_unit("productionsite", "barbarians_coalmine", "programs", "set", "main"
             "sleep=duration:45s",
             "call=mine_produce",
             "call=mine_produce",
+            "return=skipped"
          }
       })
 
@@ -315,6 +316,7 @@ D:modify_unit("productionsite", "barbarians_coalmine_deep", "programs", "set", "
             "call=mine_produce",
             "call=mine_produce",
             "call=mine_produce",
+            "return=skipped"
          }
       })
 
@@ -339,6 +341,7 @@ D:modify_unit("productionsite", "barbarians_coalmine_deeper", "programs", "set",
             "call=mine_produce",
             "call=mine_produce",
             "call=mine_produce",
+            "return=skipped"
          }
       })
 
