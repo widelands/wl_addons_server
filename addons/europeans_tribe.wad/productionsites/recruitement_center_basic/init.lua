@@ -25,6 +25,7 @@ descriptions:new_productionsite_type {
    },
    
    buildcost = {
+      log = 1,
       blackwood = 2,
       planks = 2,
       reed = 2,

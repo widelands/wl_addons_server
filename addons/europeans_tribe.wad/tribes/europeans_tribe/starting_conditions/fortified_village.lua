@@ -50,6 +50,7 @@ init = {
             iron = 32,
             corn = 32,
             diamond = 24,
+            gold = 4,
             spider_silk = 16,
             spidercloth = 16,
         },

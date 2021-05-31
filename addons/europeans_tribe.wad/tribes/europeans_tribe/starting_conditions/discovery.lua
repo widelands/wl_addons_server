@@ -47,6 +47,7 @@ init = {
          planks = 16,
          granite = 12,
          iron = 6,
+         gold = 4,
          europeans_geologist = 1,
          europeans_miner_basic = 3,
          europeans_smelter_basic = 2,

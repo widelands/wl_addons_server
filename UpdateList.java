@@ -275,15 +275,22 @@ public class UpdateList {
 		List<String> increase_i18n = new ArrayList<>();
 		List<String> verify = new ArrayList<>();
 		for (String s : args) {
+			if (s.isEmpty()) continue;
+			String name = s.substring(1);
+			if (!new File("addons", name).isDirectory()) {
+				System.out.println("ERROR: Add-on '" + name + "' does not exist");
+				System.exit(2);
+			}
 			if (s.startsWith("+")) {
-				increase_i18n.add(s.substring(1));
+				increase_i18n.add(name);
 			} else if (s.startsWith("/")) {
-				verify.add(s.substring(1));
+				verify.add(name);
 			} else {
 				System.out.println("USAGE: java UpdateList {[+|/]NAME.wad}");
 				System.out.println("Rebuilds the add-ons list.");
 				System.out.println("Prefix a filenames with ‘+’ to increase the i18n version by 1.");
 				System.out.println("Prefix a filename with ‘/’ to mark the add-on as verified.");
+				System.exit(1);
 				return;
 			}
 		}

@@ -40,6 +40,7 @@ init = {
                 marble = 32,
                 quartz = 32,
                 diamond = 24,
+                gold = 4,
                 shovel = 16,
                 buckets = 10,
                 basket = 8,
@@ -59,7 +60,7 @@ init = {
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 16,
-                europeans_farmer_basic = 6,
+                europeans_farmer_basic = 12,
                 europeans_trainer = 3,
                 europeans_lumberjack_basic = 3,
                 europeans_forester_basic = 3,
@@ -74,7 +75,8 @@ init = {
                 [{0,0,0,0}] = 16,
           }
     })
-   
+    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
+    })
 end
 }
 

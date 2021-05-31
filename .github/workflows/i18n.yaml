@@ -6,6 +6,7 @@ on:
     - cron: '0 1 * * *'
 jobs:
   update_translations:
+    if: github.repository == 'widelands/wl_addons_server'
     name: Update Translations
     runs-on: ubuntu-20.04
     steps:

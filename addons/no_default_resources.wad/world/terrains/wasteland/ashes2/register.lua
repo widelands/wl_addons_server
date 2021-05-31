@@ -1,3 +1,3 @@
 return {
-   ashes2_dry = {}
+   ashes2_dry = {"__skip_if_exists"}
 }
