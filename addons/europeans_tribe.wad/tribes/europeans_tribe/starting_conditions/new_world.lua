@@ -35,7 +35,7 @@ init = {
                     workers = {
                         europeans_carrier = 16,
                         europeans_builder = 8,
-                        europeans_farmer_basic = 3,
+                        europeans_farmer_basic = 6,
                         europeans_lumberjack_basic = 2,
                         europeans_forester_basic = 2,
                         europeans_carpenter_basic = 1,
@@ -71,6 +71,7 @@ init = {
                 marble = 32,
                 quartz = 32,
                 diamond = 24,
+                gold = 4,
                 shovel = 16,
                 buckets = 10,
                 basket = 8,
@@ -90,7 +91,7 @@ init = {
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 12,
-                europeans_farmer_basic = 6,
+                europeans_farmer_basic = 12,
                 europeans_trainer = 3,
                 europeans_lumberjack_basic = 3,
                 europeans_forester_basic = 3,
@@ -104,6 +105,8 @@ init = {
             soldiers = {
                 [{0,0,0,0}] = 16,
           }
+        })
+        place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
         })
     end
     
@@ -141,14 +144,10 @@ init = {
         set_ware(player, "hunting_bow", math.ceil(2 / #ports))
         set_ware(player, "hunting_spear", math.ceil(2 / #ports))
         set_ware(player, "milking_tongs", math.ceil(2 / #ports))
+        place_building_in_region(player, "europeans_recruitement_center_basic", ports[1].fields[1]:region(4), {
+        })
         place_ship_random(player, 128)
     end
-    
-    -- forbid some buildings for more efficient use of building materials by AI
-    player:forbid_buildings{"europeans_shipyard_advanced", "europeans_shipyard_normal"}
-    player:forbid_buildings{"europeans_ferry_yard_advanced", "europeans_ferry_yard_normal", "europeans_ferry_yard_basic"}
-    player:forbid_buildings{"europeans_scouts_house_advanced", "europeans_scouts_house_normal", "europeans_scouts_house_basic"}
-    player:forbid_buildings{"europeans_recruitement_center_advanced", "europeans_recruitement_center_normal"}
 
     for i = 1, 13 do
         -- Delay of 15 min between actions
@@ -205,9 +204,6 @@ init = {
                 place_building(player, 47, 224, 6, "europeans_quarry_normal")
             end
         end
-        if i >= 12 then
-           player:allow_buildings("all")
-        end 
     end
 end
 }

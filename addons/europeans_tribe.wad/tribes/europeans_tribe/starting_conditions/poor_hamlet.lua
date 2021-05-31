@@ -52,7 +52,8 @@ local r = {
             grout = 8,
             brick = 8,
             marble = 8,
-            quartz = 8
+            quartz = 8,
+            gold = 2
         },
         workers = {
             europeans_carrier = 16,
@@ -75,6 +76,9 @@ local r = {
         soldiers = {
             [{0,0,0,0}] = 2,
       }
+    })
+    
+    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
     })
 
     player:reveal_fields(sf:region(10))
