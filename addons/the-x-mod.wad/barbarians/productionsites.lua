@@ -407,6 +407,7 @@ D:modify_unit("productionsite", "barbarians_inn", "programs", "set", "main", {
             "call=produce_snack_3",
             "call=produce_snack",
             "call=produce_snack_2",
+            "return=skipped"
          }
       })
 
@@ -500,6 +501,7 @@ D:modify_unit("productionsite", "barbarians_big_inn", "programs", "set", "main",
             "call=produce_meal_2",
             "call=produce_meal_5",
             "call=produce_meal_6",
+            "return=skipped"
          }
       })
 
@@ -539,6 +541,7 @@ D:modify_unit("productionsite", "barbarians_smelting_works", "programs", "set", 
             "call=smelt_iron",
             "call=smelt_gold",
             "call=smelt_iron_2",
+            "return=skipped"
          }
       })
 
@@ -586,6 +589,7 @@ D:modify_unit("productionsite", "barbarians_helmsmithy", "programs", "set", "mai
             "call=produce_helmet",
             "call=produce_helmet_mask",
             "call=produce_helmet_warhelm",
+            "return=skipped"
          }
       })
 
@@ -617,6 +621,7 @@ D:modify_unit("productionsite", "barbarians_metal_workshop", "programs", "set", 
             "call=produce_pick",
             "call=produce_scythe",
             "call=produce_shovel",
+            "return=skipped"
          }
       })
 
@@ -656,6 +661,7 @@ D:modify_unit("productionsite", "barbarians_ax_workshop", "programs", "set", "ma
             "call=produce_ax",
             "call=produce_ax_sharp",
             "call=produce_ax_broad",
+            "return=skipped"
          }
       })
 
@@ -769,6 +775,7 @@ D:modify_unit("productionsite", "barbarians_warmill", "programs", "set", "main",
             "call=produce_ax_warriors",
             "call=produce_ax_battle_2",
             "call=produce_ax_warriors_2",
+            "return=skipped"
          }
       })
 

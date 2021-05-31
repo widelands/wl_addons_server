@@ -167,7 +167,8 @@ descriptions:modify_unit("productionsite", "frisians_honey_bread_bakery", "progr
       -- TRANSLATORS: Completed/Skipped/Did not start working because ...
       descname = _"working", actions = {
             "call=bake_honey",
-            "call=bake_normal"
+            "call=bake_normal",
+            "return=skipped"
       }})
 
 descriptions:modify_unit("productionsite", "frisians_sewing_room", "input", "modify_ware", "fur", 5)
