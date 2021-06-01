@@ -179,6 +179,7 @@ D:modify_unit("productionsite", "empire_armorsmithy", "programs", "set", "main",
             "call=produce_armor_chain",
             "call=produce_armor_helmet",
             "call=produce_armor_gilded",
+            "return=skipped"
          }
       })
 
@@ -261,6 +262,7 @@ D:modify_unit("productionsite", "empire_weaponsmithy", "programs", "set", "main"
             "call=produce_spear_advanced",
             "call=produce_spear_heavy",
             "call=produce_spear_war",
+            "return=skipped"
          }
       })
 
@@ -291,6 +293,7 @@ D:modify_unit("productionsite", "empire_marblemine", "programs", "set", "mine_gr
             "call=a_mine_produce_granite",
             "call=a_mine_produce_marble",
             "call=a_mine_produce_granite",
+            "return=skipped"
          }
       })
 D:modify_unit("productionsite", "empire_marblemine", "programs", "set", "mine_marble", {
@@ -304,6 +307,7 @@ D:modify_unit("productionsite", "empire_marblemine", "programs", "set", "mine_ma
             "call=a_mine_produce_marble",
             "call=a_mine_produce_granite",
             "call=a_mine_produce_marble",
+            "return=skipped"
          }
       })
 D:modify_unit("productionsite", "empire_marblemine", "programs", "set", "encyclopedia_granite", {
@@ -328,6 +332,7 @@ D:modify_unit("productionsite", "empire_marblemine", "programs", "set", "main", 
          actions = {
             "call=mine_granite",
             "call=mine_marble",
+            "return=skipped"
          }
       })
 
@@ -359,5 +364,6 @@ D:modify_unit("productionsite", "empire_coalmine", "programs", "set", "main", {
             "call=mine_produce",
             "call=mine_produce",
             "call=mine_produce",
+            "return=skipped"
          }
       })

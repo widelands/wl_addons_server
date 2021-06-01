@@ -37,6 +37,7 @@ D:modify_unit("productionsite", "frisians_tailors_shop", "programs", "set", "mai
          actions = {
             "call=weave_studded",
             "call=weave_gold",
+            "return=skipped"
          },
       })
 
@@ -62,6 +63,7 @@ D:modify_unit("productionsite", "frisians_armor_smithy_small", "programs", "set"
             "call=produce_s2",
             "call=produce_h",
             "call=produce_s2",
+            "return=skipped"
          },
       })
 
@@ -114,5 +116,6 @@ D:modify_unit("productionsite", "frisians_armor_smithy_large", "programs", "set"
             "call=produce_hg",
             "call=produce_s3",
             "call=produce_s4",
+            "return=skipped"
          },
       })
