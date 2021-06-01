@@ -78,7 +78,8 @@ descriptions:new_productionsite_type {
             "call=produce_bread_paddle",
             "call=produce_hook_pole",
             "call=produce_spear_wooden",
-            "call=produce_spear_advanced"
+            "call=produce_spear_advanced",
+            "return=skipped"           
          }
       },
       produce_buckets = {

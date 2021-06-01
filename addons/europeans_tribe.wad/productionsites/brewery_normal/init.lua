@@ -57,7 +57,8 @@ descriptions:new_productionsite_type {
             "call=brew_mead_basic",
             "call=brew_mead",
             "call=brew_strong_beer_basic",
-            "call=brew_strong_beer"
+            "call=brew_strong_beer",
+            "return=skipped"
          }
       },
       brew_beer_basic = {

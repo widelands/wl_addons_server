@@ -38,6 +38,7 @@ descriptions:new_productionsite_type {
             "call=terraform",
             "call=terraform",
             "call=terraform",
+            "return=skipped"
          }
       },
       plant = {

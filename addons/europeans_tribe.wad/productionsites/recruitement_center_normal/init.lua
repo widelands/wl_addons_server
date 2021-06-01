@@ -97,7 +97,8 @@ descriptions:new_productionsite_type {
             "call=recruit_shipwright",
             "call=recruit_geologist",
             "call=recruit_scout",
-            "call=recruit_trainer"
+            "call=recruit_trainer",
+            "return=skipped"
          }
       },
       recruit_carrier_1 = {

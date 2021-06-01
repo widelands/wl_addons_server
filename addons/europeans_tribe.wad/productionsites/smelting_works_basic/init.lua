@@ -63,6 +63,7 @@ descriptions:new_productionsite_type {
          actions = {
             "call=smelt_iron_basic",
             "call=smelt_iron",
+            "return=skipped"
          }
       },
       smelt_iron_basic = {

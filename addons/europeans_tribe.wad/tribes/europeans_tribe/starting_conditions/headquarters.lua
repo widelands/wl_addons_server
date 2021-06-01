@@ -77,6 +77,7 @@ init = {
     })
     place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
     })
+    
 end
 }
 

@@ -74,12 +74,7 @@ init = {
                 [{0,0,0,0}] = 16,
           }
     })
-
     place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
-        inputs = {},
-    })
-    place_building_in_region(player, "europeans_stonemasons_house", sf:region(6), {
-        inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 6},
     })
 
     -- Get all warehouse types

@@ -80,6 +80,7 @@ descriptions:new_productionsite_type {
             "call=produce_shield_steel",
             "call=produce_sword_broad",
             "call=produce_trident_steel",
+            "return=skipped"
          }
       },
       produce_buckets = {

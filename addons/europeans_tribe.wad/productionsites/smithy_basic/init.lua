@@ -83,7 +83,8 @@ descriptions:new_productionsite_type {
             "call=produce_milking_tongs",
             "call=produce_needles",
             "call=produce_bread_paddle",
-            "call=produce_hook_pole"
+            "call=produce_hook_pole",
+            "return=skipped"
          }
       },
       produce_buckets = {

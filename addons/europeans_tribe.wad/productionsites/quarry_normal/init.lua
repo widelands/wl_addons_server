@@ -46,6 +46,7 @@ descriptions:new_productionsite_type {
             "call=cut_granite on failure fail",
             "call=cut_granite on failure fail",
             "call=cut_marble on failure fail", -- This will find marble 2 out of 6 times
+            "return=skipped"
          }
       },
       cut_granite = {

@@ -67,7 +67,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_cloth_basic",
-            "call=produce_cloth"
+            "call=produce_cloth",
+            "return=skipped"
          }
       },
       produce_cloth_basic = {
