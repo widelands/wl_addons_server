@@ -49,6 +49,7 @@ descriptions:new_productionsite_type {
             "call=harvest_barley",
             "call=harvest_berry",
             "call=harvest_grape",
+            "return=skipped"
          }
       },
       plant_barley = {

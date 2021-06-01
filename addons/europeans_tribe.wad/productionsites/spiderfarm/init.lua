@@ -51,7 +51,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_spidersilk_basic",
-            "call=produce_spidersilk"
+            "call=produce_spidersilk",
+            "return=skipped"
          }
       },
       produce_spidersilk_basic = {

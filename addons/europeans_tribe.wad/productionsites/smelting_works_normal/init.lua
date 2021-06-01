@@ -54,6 +54,7 @@ descriptions:new_productionsite_type {
             "call=smelt_iron_basic",
             "call=smelt_gold",
             "call=smelt_iron",
+            "return=skipped"
          }
       },
       -- 2 identical programs for iron to prevent unnecessary skipping penalty

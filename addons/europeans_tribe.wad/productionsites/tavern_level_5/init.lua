@@ -58,7 +58,8 @@ descriptions:new_productionsite_type {
             "call=produce_ration_basic",
             "call=produce_ration",
             "call=produce_snack_basic",
-            "call=produce_snack"
+            "call=produce_snack",
+            "return=skipped"
          }
       },
       produce_ration_basic = {

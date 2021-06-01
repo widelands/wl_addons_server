@@ -61,6 +61,7 @@ descriptions:new_productionsite_type {
             "call=harvest_wheat",
             "call=harvest_rye",
             "call=harvest_barley",
+            "return=skipped"
          }
       },
       plant_barley = {

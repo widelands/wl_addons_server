@@ -53,6 +53,8 @@ descriptions:new_productionsite_type {
          actions = {
             "call=burn_log_basic",
             "call=burn_log",
+            "call=burn_blackwood",
+            "return=skipped"
          }
       },
       burn_log_basic = {

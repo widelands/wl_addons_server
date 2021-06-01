@@ -106,8 +106,6 @@ init = {
                 [{0,0,0,0}] = 16,
           }
         })
-        place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
-        })
     end
     
     local ports = player:get_buildings("europeans_port")
@@ -144,9 +142,6 @@ init = {
         set_ware(player, "hunting_bow", math.ceil(2 / #ports))
         set_ware(player, "hunting_spear", math.ceil(2 / #ports))
         set_ware(player, "milking_tongs", math.ceil(2 / #ports))
-        place_building_in_region(player, "europeans_recruitement_center_basic", ports[1].fields[1]:region(4), {
-        })
-        place_ship_random(player, 128)
     end
 
     for i = 1, 13 do
@@ -188,6 +183,7 @@ init = {
                 place_port(player, 437, 186, 1)
                 place_building(player, 437, 186, 6, "europeans_quarry_normal")
             end 
+            place_ship_random(player, 64)
         end
         if i == 8 then
             if (player_slot.name == "England") and (sf.x == 380) and (sf.y == 499) then
@@ -203,6 +199,7 @@ init = {
                 place_port(player, 47, 224, 1)
                 place_building(player, 47, 224, 6, "europeans_quarry_normal")
             end
+            place_ship_random(player, 64)
         end
     end
 end

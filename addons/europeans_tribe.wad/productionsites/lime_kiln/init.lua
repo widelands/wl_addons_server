@@ -73,6 +73,7 @@ descriptions:new_productionsite_type {
             "call=burning_bricks_basic",
             "call=mixing_grout",
             "call=burning_bricks",
+            "return=skipped"
          }
       },
       mixing_grout_basic = {

@@ -917,7 +917,21 @@ descriptions:new_tribe {
             name = "europeans_carrier",
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carrier
-               purpose = pgettext("europeans_worker", "Carries items along your roads.")
+               purpose = pgettext("europeans_worker", "Used for recruiting all other workers.")
+            }
+         },
+         {
+            name = "europeans_carrier_1",
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Carries items along your roads with their hands.")
+            }
+         },
+         {
+            name = "europeans_carrier_2",
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
             }
          },
          {
@@ -3318,8 +3332,8 @@ descriptions:new_tribe {
 
    -- Special types
    builder = "europeans_builder",
-   carrier = "europeans_carrier",
-   carrier2 = "europeans_carrier",
+   carrier = "europeans_carrier_1",
+   carrier2 = "europeans_carrier_2",
    geologist = "europeans_geologist",
    scouts_house = "europeans_scouts_house_basic",
    soldier = "europeans_soldier",

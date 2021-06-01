@@ -47,6 +47,7 @@ descriptions:new_productionsite_type {
             "call=recycle_gold",
             "call=smelt_iron",
             "call=smelt_gold",
+            "return=skipped"
          }
       },
       -- 2 identical programs for iron to prevent unnecessary skipping penalty

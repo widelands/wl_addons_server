@@ -49,6 +49,7 @@ descriptions:new_productionsite_type {
             "call=mine_granite on failure fail",
             "call=mine_marble on failure fail", -- This will find marble 2 out of 8 times
             "call=mine_diamond on failure fail", -- This will find diamond 1 out of 8 times
+            "return=skipped"
          }
       },
       mine_granite = {

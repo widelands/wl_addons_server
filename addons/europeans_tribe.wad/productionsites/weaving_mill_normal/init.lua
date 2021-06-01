@@ -55,7 +55,8 @@ descriptions:new_productionsite_type {
             "call=produce_cloth",
             "call=produce_spidercloth_basic",
             "call=produce_spidercloth",
-            "call=produce_tabard"
+            "call=produce_tabard",
+            "return=skipped"
          }
       },
       produce_cloth_basic = {

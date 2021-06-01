@@ -149,21 +149,6 @@ init = {
         place_building_in_region(player, "europeans_recruitement_center_basic", ports[1].fields[1]:region(4), {
             inputs = {},
         })
-        if #ports > 1 then
-            place_building_in_region(player, "europeans_reed_yard", ports[2].fields[1]:region(4), {
-                inputs = {water = 6},
-            })
-            place_building_in_region(player, "europeans_weaving_mill_basic", ports[2].fields[1]:region(4), {
-                inputs = {reed = 8},
-            })
-        else
-            place_building_in_region(player, "europeans_reed_yard", ports[1].fields[1]:region(4), {
-                inputs = {water = 6},
-            })
-            place_building_in_region(player, "europeans_weaving_mill_basic", ports[1].fields[1]:region(4), {
-                inputs = {reed = 8},
-            })
-        end
     end
     
     for i = 1, 13 do
@@ -222,6 +207,7 @@ init = {
             end
         end
         if i >= 12 then
+           place_ship_random(player, 128)
            player:allow_buildings("all")
         end 
     end

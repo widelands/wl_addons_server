@@ -81,6 +81,7 @@ descriptions:new_productionsite_type {
             "call=produce_spear_wooden",
             "call=produce_spear_advanced",
             "call=produce_armor_chain",
+            "return=skipped"
          }
       },
       produce_buckets = {

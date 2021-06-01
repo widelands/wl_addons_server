@@ -42,13 +42,13 @@ descriptions:new_productionsite_type {
    },
    
    inputs = {
-      { name = "europeans_recruit", amount = 24 },
+      { name = "europeans_carrier", amount = 24 },
+      { name = "basket", amount = 12 },
       { name = "buckets", amount = 6 },
       { name = "shovel", amount = 6 },
       { name = "saw", amount = 5 },
       { name = "hammer", amount = 4 },
       { name = "pick", amount = 3 },
-      { name = "basket", amount = 3 },
       { name = "felling_ax", amount = 2 },
       { name = "fire_tongs", amount = 2 },
       { name = "scythe", amount = 2 },
@@ -70,6 +70,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
+            "call=recruit_carrier_1",
+            "call=recruit_carrier_2",
             "call=recruit_builder",
             "call=recruit_smith",
             "call=recruit_farmer",
@@ -95,7 +97,30 @@ descriptions:new_productionsite_type {
             "call=recruit_shipwright",
             "call=recruit_geologist",
             "call=recruit_scout",
-            "call=recruit_trainer"
+            "call=recruit_trainer",
+            "return=skipped"
+         }
+      },
+      recruit_carrier_1 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting first carrier"),
+         actions = {
+            "return=skipped unless economy needs europeans_carrier_1",
+            "sleep=duration:20s",
+            "consume=europeans_carrier",
+            "animate=working duration:30s",
+            "recruit=europeans_carrier_1"
+         }
+      },
+      recruit_carrier_2 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting second carrier"),
+         actions = {
+            "return=skipped unless economy needs europeans_carrier_2",
+            "sleep=duration:20s",
+            "consume=basket europeans_carrier",
+            "animate=working duration:30s",
+            "recruit=europeans_carrier_2"
          }
       },
       recruit_builder = {
@@ -103,9 +128,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting builder"),
          actions = {
             "return=skipped unless economy needs europeans_builder",
-            "sleep=duration:30s",
-            "consume=hammer saw europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=hammer saw europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_builder"
          }
       },
@@ -114,9 +139,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting smith"),
          actions = {
             "return=skipped unless economy needs europeans_smith_normal",
-            "sleep=duration:30s",
-            "consume=hammer fire_tongs saw europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=hammer fire_tongs saw europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_smith_normal"
          }
       },
@@ -125,9 +150,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting farmer"),
          actions = {
             "return=skipped unless economy needs europeans_farmer_normal",
-            "sleep=duration:30s",
-            "consume=scythe basket europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=scythe basket europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_farmer_normal"
          }
       },
@@ -136,9 +161,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting lumberjack"),
          actions = {
             "return=skipped unless economy needs europeans_lumberjack_normal",
-            "sleep=duration:30s",
-            "consume=felling_ax saw europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=felling_ax saw europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_lumberjack_normal"
          }
       },
@@ -147,9 +172,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting carpenter"),
          actions = {
             "return=skipped unless economy needs europeans_carpenter_normal",
-            "sleep=duration:30s",
-            "consume=saw europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=saw europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_carpenter_normal"
          }
       },
@@ -158,9 +183,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting stonecutter"),
          actions = {
             "return=skipped unless economy needs europeans_stonecutter_normal",
-            "sleep=duration:30s",
-            "consume=pick europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=pick europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_stonecutter_normal"
          }
       },
@@ -169,9 +194,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting stonemason"),
          actions = {
             "return=skipped unless economy needs europeans_stonemason_normal",
-            "sleep=duration:30s",
-            "consume=pick shovel buckets europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=pick shovel buckets europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_stonemason_normal"
          }
       },
@@ -180,9 +205,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting charcoal burner"),
          actions = {
             "return=skipped unless economy needs europeans_charcoal_burner_normal",
-            "sleep=duration:30s",
-            "consume=shovel buckets europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=shovel buckets europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_charcoal_burner_normal"
          }
       },
@@ -191,9 +216,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting breeder"),
          actions = {
             "return=skipped unless economy needs europeans_breeder_normal",
-            "sleep=duration:30s",
-            "consume=milking_tongs europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=milking_tongs europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_breeder_normal"
          }
       },
@@ -202,9 +227,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting weaver"),
          actions = {
             "return=skipped unless economy needs europeans_weaver_normal",
-            "sleep=duration:30s",
-            "consume=needles europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=needles europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_weaver_normal"
          }
       },
@@ -213,9 +238,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting fisher"),
          actions = {
             "return=skipped unless economy needs europeans_fisher_normal",
-            "sleep=duration:30s",
-            "consume=fishing_rod fishing_net europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=fishing_rod fishing_net europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_fisher_normal"
          }
       },
@@ -224,9 +249,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting hunter"),
          actions = {
             "return=skipped unless economy needs europeans_hunter_normal",
-            "sleep=duration:30s",
-            "consume=hunting_bow hunting_spear europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=hunting_bow hunting_spear europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_hunter_normal"
          }
       },
@@ -235,9 +260,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting miller"),
          actions = {
             "return=skipped unless economy needs europeans_miller_normal",
-            "sleep=duration:30s",
-            "consume=basket europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=basket europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_miller_normal"
          }
       },
@@ -246,9 +271,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting baker"),
          actions = {
             "return=skipped unless economy needs europeans_baker_normal",
-            "sleep=duration:30s",
-            "consume=bread_paddle europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=bread_paddle europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_baker_normal"
          }
       },
@@ -257,9 +282,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting smoker"),
          actions = {
             "return=skipped unless economy needs europeans_smoker_normal",
-            "sleep=duration:30s",
-            "consume=hook_pole europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=hook_pole europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_smoker_normal"
          }
       },
@@ -268,9 +293,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting brewer"),
          actions = {
             "return=skipped unless economy needs europeans_brewer_normal",
-            "sleep=duration:30s",
-            "consume=buckets europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=buckets europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_brewer_normal"
          }
       },
@@ -279,9 +304,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting miner"),
          actions = {
             "return=skipped unless economy needs europeans_miner_normal",
-            "sleep=duration:30s",
-            "consume=pick shovel europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=pick shovel europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_miner_normal"
          }
       },
@@ -290,9 +315,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting smelter"),
          actions = {
             "return=skipped unless economy needs europeans_smelter_normal",
-            "sleep=duration:30s",
-            "consume=fire_tongs shovel europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=fire_tongs shovel europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_smelter_normal"
          }
       },
@@ -301,9 +326,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting forester"),
          actions = {
             "return=skipped unless economy needs europeans_forester_normal",
-            "sleep=duration:30s",
-            "consume=buckets shovel europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=buckets shovel europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_forester_normal"
          }
       },
@@ -312,9 +337,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting fishbreeder"),
          actions = {
             "return=skipped unless economy needs europeans_fishbreeder",
-            "sleep=duration:30s",
-            "consume=buckets shovel europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=buckets shovel europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_fishbreeder"
          }
       },
@@ -323,9 +348,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting gamekeeper"),
          actions = {
             "return=skipped unless economy needs europeans_gamekeeper",
-            "sleep=duration:30s",
-            "consume=basket europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=basket europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_gamekeeper"
          }
       },
@@ -334,9 +359,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting beekeeper"),
          actions = {
             "return=skipped unless economy needs europeans_beekeeper",
-            "sleep=duration:30s",
-            "consume=buckets europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=buckets europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_beekeeper"
          }
       },
@@ -345,9 +370,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting shipwright"),
          actions = {
             "return=skipped unless economy needs europeans_shipwright",
-            "sleep=duration:30s",
-            "consume=hammer saw europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=hammer saw europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_shipwright"
          }
       },
@@ -356,9 +381,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting geologist"),
          actions = {
             "return=skipped unless economy needs europeans_geologist",
-            "sleep=duration:30s",
-            "consume=hammer europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=hammer europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_geologist"
          }
       },
@@ -367,9 +392,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting scout"),
          actions = {
             "return=skipped unless economy needs europeans_scout_normal",
-            "sleep=duration:30s",
-            "consume=europeans_recruit",
-            "animate=working duration:45s",
+            "sleep=duration:20s",
+            "consume=europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_scout_normal"
          }
       },
@@ -378,9 +403,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting trainer"),
          actions = {
             "return=skipped unless economy needs europeans_trainer",
-            "sleep=duration:30s",
-            "consume=armor,tabard spear_wooden europeans_recruit",
-            "animate=working duration:60s",
+            "sleep=duration:20s",
+            "consume=armor,tabard spear_wooden europeans_carrier",
+            "animate=working duration:30s",
             "recruit=europeans_trainer"
          }
       },
