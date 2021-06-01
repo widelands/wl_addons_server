@@ -51,8 +51,12 @@ descriptions:new_productionsite_type {
 
    aihints = {
       requires_supporters = true,
+<<<<<<< HEAD
       basic_amount = 2,
       forced_after = 1800
+=======
+      basic_amount = 2
+>>>>>>> 4ccdeab2572dd5c359bb76565e7a19f9c4558421
    },
 
    working_positions = {
