@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 05:38+0000\n"
+"POT-Creation-Date: 2021-06-03 05:11+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -2019,19 +2019,17 @@ msgstr "Grote Anhüreree"
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_advanced/init.lua:91
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_basic/init.lua:123
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_normal/init.lua:106
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting first carrier"
-msgstr "eenen Boomplanter antohüren"
+msgstr "eenen eersten Lastendrager antohüren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_advanced/init.lua:102
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_basic/init.lua:134
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_normal/init.lua:117
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting second carrier"
-msgstr "eenen Soldaten antohüren"
+msgstr "eenen tweden Lastendrager antohüren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/productionsites/recruitement_center_advanced/init.lua:113
@@ -5009,24 +5007,21 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:920
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Used for recruiting all other workers."
-msgstr "Rüst Lehrwichter ut un maakt se to Arbeiders."
+msgstr "Word bruukt, um all de anner Arbeiders antohüren."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:927
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
-msgstr "Draggt Waren över diene Straten."
+msgstr "Draggt Waren mit de Hannen över diene Straten."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:934
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets."
-msgstr "Draggt Waren över diene Straten."
+msgstr "Draggt Waren mit Körven över diene Straten."
 
 #. TRANSLATORS: Helptext for an europeans worker: Ferry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:943
@@ -6395,17 +6390,15 @@ msgstr "Lastendrager"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_1/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carrier 1"
-msgstr "Lastendrager"
+msgstr "Lastendrager 1"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_2/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carrier 2"
-msgstr "Lastendrager"
+msgstr "Lastendrager 2"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/charcoal_burner_advanced/init.lua:8
