@@ -290,10 +290,23 @@ function connect_road(startx, starty, targetx, targety)
     end
 end
 
-function place_mine(player_number, startx, starty, minename)
+function place_mine(player_number, startx, starty, minetype)
     local game = wl.Game()
     local map = game.map
     local player = game.players[player_number]
+    local tribe = player.tribe
+    
+    local minename = ""
+    
+    if tribe.name == "europeans" then
+        if minetype == "coal" then
+            minename = "europeans_coalmine_basic"
+        elseif minetype == "iron" then
+            minename = "europeans_ironmine_basic"
+        elseif minetype == "gold" then
+            minename = "europeans_goldmine_basic"
+        end
+    end
     
     place_building_in_region(player, minename, map:get_field(startx, starty):region(2))
 end

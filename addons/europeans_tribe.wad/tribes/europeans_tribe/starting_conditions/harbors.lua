@@ -194,7 +194,7 @@ init = {
         if i == 8 then
             if (player_slot.name == "England") and (sf.x == 380) and (sf.y == 499) then
                 -- Ireland
-                place_port(player, 315, 434, 1)
+                place_port(player, 348, 434, 1)
                 -- Island
                 place_port(player, 335, 363, 1)
                 place_building(player, 335, 363, 4, "europeans_quarry_advanced")
