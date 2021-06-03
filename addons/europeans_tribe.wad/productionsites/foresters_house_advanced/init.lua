@@ -32,12 +32,15 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=plant",
-            "call=plant",
             "callworker=check",
             "call=terraform",
+            "call=plant",
             "call=terraform",
+            "call=plant",
             "call=terraform",
+            "call=plant",
             "call=terraform",
+            "call=plant",
             "return=skipped"
          }
       },
