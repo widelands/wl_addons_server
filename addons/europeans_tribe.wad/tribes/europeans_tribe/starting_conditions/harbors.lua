@@ -55,16 +55,14 @@ init = {
                 water = 256,
                 log = 128,
                 granite = 64,
-                blackwood = 64,
-                planks = 64,
                 reed = 64,
-                cloth = 48,
+                blackwood = 32,
+                planks = 32,
+                cloth = 32,
                 iron = 32,
                 corn = 32,
                 coal = 32,
                 spidercloth = 32,
-                grout = 32,
-                brick = 32,
                 marble = 32,
                 quartz = 32,
                 diamond = 24,
@@ -110,17 +108,15 @@ init = {
     if #ports > 0 then
         set_ware(player, "water", math.ceil(256/ #ports))
         set_ware(player, "log", math.ceil(128 / #ports))
-        set_ware(player, "blackwood", math.ceil(64 / #ports))
-        set_ware(player, "planks", math.ceil(64 / #ports))
         set_ware(player, "reed", math.ceil(64 / #ports))
         set_ware(player, "granite", math.ceil(64 / #ports))
-        set_ware(player, "cloth", math.ceil(48 / #ports))
+        set_ware(player, "cloth", math.ceil(32 / #ports))
+        set_ware(player, "blackwood", math.ceil(32 / #ports))
+        set_ware(player, "planks", math.ceil(32 / #ports))
         set_ware(player, "iron", math.ceil(32 / #ports))
         set_ware(player, "coal", math.ceil(32 / #ports))
         set_ware(player, "corn", math.ceil(32 / #ports))
         set_ware(player, "spidercloth", math.ceil(32 / #ports))
-        set_ware(player, "grout", math.ceil(24 / #ports))
-        set_ware(player, "brick", math.ceil(24 / #ports))
         set_ware(player, "marble", math.ceil(24 / #ports))
         set_ware(player, "quartz", math.ceil(24 / #ports))
         set_ware(player, "diamond", math.ceil(16 / #ports))
