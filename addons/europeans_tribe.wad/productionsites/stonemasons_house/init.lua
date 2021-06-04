@@ -45,6 +45,7 @@ descriptions:new_productionsite_type {
             "call=sculpting_marble_column",
             "call=mixing_grout",
             "call=burning_bricks",
+            "return=skipped"
          }
       },
       mixing_grout_basic = {

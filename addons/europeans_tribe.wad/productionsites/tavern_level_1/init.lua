@@ -57,7 +57,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_ration_basic",
-            "call=produce_ration"
+            "call=produce_ration",
+            "return=skipped"
          }
       },
       produce_ration_basic = {

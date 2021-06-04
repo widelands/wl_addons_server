@@ -55,6 +55,7 @@ descriptions:new_productionsite_type {
             "call=saw_log",
             "call=hardening_wood_basic",
             "call=hardening_wood",
+            "return=skipped"
          }
       },
       saw_log_basic = {

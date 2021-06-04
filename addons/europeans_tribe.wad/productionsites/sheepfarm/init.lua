@@ -53,7 +53,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_wool_basic",
-            "call=produce_wool"
+            "call=produce_wool",
+            "return=skipped"
          }
       },
       produce_wool_basic = {

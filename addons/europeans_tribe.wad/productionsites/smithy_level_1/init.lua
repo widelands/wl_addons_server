@@ -76,7 +76,8 @@ descriptions:new_productionsite_type {
             "call=produce_hunting_bow",
             "call=produce_hunting_spear",
             "call=produce_bread_paddle",
-            "call=produce_hook_pole"
+            "call=produce_hook_pole",
+            "return=skipped"
          }
       },
       produce_buckets = {

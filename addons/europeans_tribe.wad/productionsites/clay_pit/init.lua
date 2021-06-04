@@ -53,6 +53,7 @@ descriptions:new_productionsite_type {
             "call=fish_breeding_in_sea",
             "callworker=check_pond",
             "call=fish_breeding_in_pond",
+            "return=skipped"
          }
       },
       making_clay = {

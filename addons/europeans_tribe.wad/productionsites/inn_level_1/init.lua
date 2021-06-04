@@ -60,7 +60,8 @@ descriptions:new_productionsite_type {
             "call=produce_snack_basic",
             "call=produce_snack",
             "call=produce_meal_basic",
-            "call=produce_meal"
+            "call=produce_meal",
+            "return=skipped"
          }
       },
       produce_ration_basic = {

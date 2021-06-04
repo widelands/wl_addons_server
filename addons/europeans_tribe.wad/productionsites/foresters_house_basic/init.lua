@@ -24,12 +24,12 @@ descriptions:new_productionsite_type {
    },
 
    buildcost = {
-      blackwood = 2,
+      log = 2,
       reed = 2,
       granite = 1
    },
    return_on_dismantle = {
-      blackwood = 1,
+      log = 1,
       granite = 1
    },
 
@@ -49,7 +49,9 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
-      space_consumer = true
+      space_consumer = true,
+      basic_amount = 2,
+      forced_after = 1800
    },
 
    working_positions = {

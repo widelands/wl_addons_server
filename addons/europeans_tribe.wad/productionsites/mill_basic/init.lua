@@ -67,7 +67,9 @@ descriptions:new_productionsite_type {
       }
    },
 
-   aihints = {},
+   aihints = {
+      basic_amount = 1
+   },
 
    working_positions = {
       europeans_miller_basic = 1
@@ -85,6 +87,7 @@ descriptions:new_productionsite_type {
          actions = {
             "call=produce_mixed_flour_basic",
             "call=produce_mixed_flour",
+            "return=skipped"
          }
       },
       produce_mixed_flour_basic = {

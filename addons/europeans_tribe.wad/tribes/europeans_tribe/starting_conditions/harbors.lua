@@ -55,16 +55,14 @@ init = {
                 water = 256,
                 log = 128,
                 granite = 64,
-                blackwood = 64,
-                planks = 64,
                 reed = 64,
-                cloth = 48,
+                blackwood = 32,
+                planks = 32,
+                cloth = 32,
                 iron = 32,
                 corn = 32,
                 coal = 32,
                 spidercloth = 32,
-                grout = 32,
-                brick = 32,
                 marble = 32,
                 quartz = 32,
                 diamond = 24,
@@ -110,17 +108,15 @@ init = {
     if #ports > 0 then
         set_ware(player, "water", math.ceil(256/ #ports))
         set_ware(player, "log", math.ceil(128 / #ports))
-        set_ware(player, "blackwood", math.ceil(64 / #ports))
-        set_ware(player, "planks", math.ceil(64 / #ports))
         set_ware(player, "reed", math.ceil(64 / #ports))
         set_ware(player, "granite", math.ceil(64 / #ports))
-        set_ware(player, "cloth", math.ceil(48 / #ports))
+        set_ware(player, "cloth", math.ceil(32 / #ports))
+        set_ware(player, "blackwood", math.ceil(32 / #ports))
+        set_ware(player, "planks", math.ceil(32 / #ports))
         set_ware(player, "iron", math.ceil(32 / #ports))
         set_ware(player, "coal", math.ceil(32 / #ports))
         set_ware(player, "corn", math.ceil(32 / #ports))
         set_ware(player, "spidercloth", math.ceil(32 / #ports))
-        set_ware(player, "grout", math.ceil(24 / #ports))
-        set_ware(player, "brick", math.ceil(24 / #ports))
         set_ware(player, "marble", math.ceil(24 / #ports))
         set_ware(player, "quartz", math.ceil(24 / #ports))
         set_ware(player, "diamond", math.ceil(16 / #ports))
@@ -149,21 +145,6 @@ init = {
         place_building_in_region(player, "europeans_recruitement_center_basic", ports[1].fields[1]:region(4), {
             inputs = {},
         })
-        if #ports > 1 then
-            place_building_in_region(player, "europeans_reed_yard", ports[2].fields[1]:region(4), {
-                inputs = {water = 6},
-            })
-            place_building_in_region(player, "europeans_weaving_mill_basic", ports[2].fields[1]:region(4), {
-                inputs = {reed = 8},
-            })
-        else
-            place_building_in_region(player, "europeans_reed_yard", ports[1].fields[1]:region(4), {
-                inputs = {water = 6},
-            })
-            place_building_in_region(player, "europeans_weaving_mill_basic", ports[1].fields[1]:region(4), {
-                inputs = {reed = 8},
-            })
-        end
     end
     
     for i = 1, 13 do
@@ -209,7 +190,7 @@ init = {
         if i == 8 then
             if (player_slot.name == "England") and (sf.x == 380) and (sf.y == 499) then
                 -- Ireland
-                place_port(player, 315, 434, 1)
+                place_port(player, 348, 434, 1)
                 -- Island
                 place_port(player, 335, 363, 1)
                 place_building(player, 335, 363, 4, "europeans_quarry_advanced")
@@ -222,6 +203,7 @@ init = {
             end
         end
         if i >= 12 then
+           place_ship_random(player, 128)
            player:allow_buildings("all")
         end 
     end

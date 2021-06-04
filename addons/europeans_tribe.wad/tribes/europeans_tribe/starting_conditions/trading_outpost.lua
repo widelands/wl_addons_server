@@ -27,16 +27,14 @@ init = {
                 water = 256,
                 log = 128,
                 granite = 64,
-                blackwood = 64,
-                planks = 64,
-                reed = 64,
-                cloth = 48,
+                blackwood = 32,
+                planks = 32,
+                reed = 32,
+                cloth = 32,
                 iron = 32,
                 corn = 32,
                 coal = 32,
                 spidercloth = 32,
-                grout = 32,
-                brick = 32,
                 marble = 32,
                 quartz = 32,
                 diamond = 24,
@@ -74,12 +72,7 @@ init = {
                 [{0,0,0,0}] = 16,
           }
     })
-
     place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
-        inputs = {},
-    })
-    place_building_in_region(player, "europeans_stonemasons_house", sf:region(6), {
-        inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 6},
     })
 
     -- Get all warehouse types

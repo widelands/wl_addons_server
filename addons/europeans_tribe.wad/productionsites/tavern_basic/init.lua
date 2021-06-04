@@ -47,7 +47,9 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {},
+   aihints = {
+      basic_amount = 1
+   },
 
    working_positions = {
       europeans_baker_basic = 1,
@@ -67,7 +69,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_ration_basic",
-            "call=produce_ration"
+            "call=produce_ration",
+            "return=skipped"
          }
       },
       produce_ration_basic = {

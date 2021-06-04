@@ -41,6 +41,7 @@ descriptions:new_productionsite_type {
             "call=burn_log",
             "call=burn_blackwood",
             "call=burn_planks",
+            "return=skipped"
          }
       },
       burn_log_basic = {

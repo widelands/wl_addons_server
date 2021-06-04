@@ -46,7 +46,8 @@ descriptions:new_productionsite_type {
             "call=brew_strong_beer_basic",
             "call=brew_strong_beer",
             "call=making_wine_basic",
-            "call=making_wine"
+            "call=making_wine",
+            "return=skipped"
          }
       },
       brew_beer_basic = {

@@ -45,7 +45,9 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {},
+   aihints = {
+       basic_amount = 1
+   },
 
    working_positions = {
       europeans_brewer_basic = 1
@@ -63,6 +65,7 @@ descriptions:new_productionsite_type {
          actions = {
             "call=brew_beer_basic",
             "call=brew_beer",
+            "return=skipped"
          }
       },
       brew_beer_basic = {

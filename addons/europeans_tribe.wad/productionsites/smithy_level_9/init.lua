@@ -82,6 +82,7 @@ descriptions:new_productionsite_type {
             "call=produce_shield_advanced",
             "call=produce_ax_warriors",
             "call=produce_trident_heavy_double",
+            "return=skipped"
          }
       },
       produce_buckets = {

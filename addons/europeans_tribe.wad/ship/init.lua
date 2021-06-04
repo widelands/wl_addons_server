@@ -104,6 +104,7 @@ descriptions:new_ship_type {
 
    names = {
       -- TRANSLATORS: This europeans ship is named after a continent
+      pgettext("shipname", "Europa"),
       pgettext("shipname", "Europe"),
    }
 }
