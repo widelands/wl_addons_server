@@ -45,8 +45,6 @@ local r = {
             corn = 16,
             spider_silk = 16,
             spidercloth = 16,
-            grout = 16,
-            brick = 16,
             diamond = 8,
             gold = 2
         },

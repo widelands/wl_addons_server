@@ -30,7 +30,6 @@ descriptions:new_productionsite_type {
    },
    return_on_dismantle = {
       log = 1,
-      blackwood = 1,
       granite = 1
    },
 
@@ -51,8 +50,7 @@ descriptions:new_productionsite_type {
 
    aihints = {
       requires_supporters = true,
-      basic_amount = 2,
-      forced_after = 1800
+      basic_amount = 2
    },
 
    working_positions = {

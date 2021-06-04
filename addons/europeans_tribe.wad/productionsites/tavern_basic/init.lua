@@ -47,7 +47,9 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {},
+   aihints = {
+      basic_amount = 1
+   },
 
    working_positions = {
       europeans_baker_basic = 1,

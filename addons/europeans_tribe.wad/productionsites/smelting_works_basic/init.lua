@@ -45,7 +45,9 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {},
+   aihints = {
+      basic_amount = 1
+   },
 
    working_positions = {
       europeans_smelter_basic = 1
