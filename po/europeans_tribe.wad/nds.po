@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-03 05:11+0000\n"
+"POT-Creation-Date: 2021-06-04 04:38+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -1449,14 +1449,14 @@ msgid "Advanced Forester’s House"
 msgstr "Grote Boomplanteree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
-#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:46
-#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:66
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:49
+#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:68
 #: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:47
 msgid "planting trees"
 msgstr "Bomen to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
-#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:56
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:59
 msgid "enhancing the fertility of land"
 msgstr "dat Land früchtbarer to maken"
 
@@ -1851,19 +1851,19 @@ msgstr "Grote Boomslageree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:28
-#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:63
+#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:65
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:43
 msgid "felling trees"
 msgstr "Bomen to slagen"
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:38
-#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:73
+#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:75
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:53
 msgid "No Trees"
 msgstr "Keene Bomen"
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:39
-#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:74
+#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:76
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:54
 msgid "Out of Trees"
 msgstr "Hebb keene Bomen mehr"
@@ -1885,7 +1885,7 @@ msgctxt "europeans_building"
 msgid "Basic Lumberjack’s Hut"
 msgstr "Lütte Boomslageree"
 
-#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:75
+#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:77
 msgctxt "europeans_building"
 msgid ""
 "The lumberjack working at this lumberjack’s hut can’t find any trees in his "
@@ -3942,6 +3942,12 @@ msgstr "Schipp"
 
 #. TRANSLATORS: This europeans ship is named after a continent
 #: addons/europeans_tribe.wad/ship/init.lua:107
+#, fuzzy
+msgctxt "shipname"
+msgid "Europa"
+msgstr "Europa"
+
+#: addons/europeans_tribe.wad/ship/init.lua:108
 msgctxt "shipname"
 msgid "Europe"
 msgstr "Europa"

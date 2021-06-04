@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 05:38+0000\n"
+"POT-Creation-Date: 2021-06-04 04:38+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/widelands/teams/35159/"
 "es/)\n"
@@ -1423,14 +1423,14 @@ msgid "Advanced Forester’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
-#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:46
-#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:66
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:49
+#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:68
 #: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:47
 msgid "planting trees"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
-#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:56
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:59
 msgid "enhancing the fertility of land"
 msgstr ""
 
@@ -1805,19 +1805,19 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:28
-#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:63
+#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:65
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:43
 msgid "felling trees"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:38
-#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:73
+#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:75
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:53
 msgid "No Trees"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:39
-#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:74
+#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:76
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:54
 msgid "Out of Trees"
 msgstr ""
@@ -1836,7 +1836,7 @@ msgctxt "europeans_building"
 msgid "Basic Lumberjack’s Hut"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:75
+#: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:77
 msgctxt "europeans_building"
 msgid ""
 "The lumberjack working at this lumberjack’s hut can’t find any trees in his "
@@ -3870,6 +3870,11 @@ msgstr ""
 
 #. TRANSLATORS: This europeans ship is named after a continent
 #: addons/europeans_tribe.wad/ship/init.lua:107
+msgctxt "shipname"
+msgid "Europa"
+msgstr ""
+
+#: addons/europeans_tribe.wad/ship/init.lua:108
 msgctxt "shipname"
 msgid "Europe"
 msgstr ""
