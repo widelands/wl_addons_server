@@ -25,14 +25,13 @@ init = {
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {
                 water = 256,
-                log = 128,
+                log = 192,
                 granite = 64,
                 blackwood = 32,
                 planks = 32,
                 reed = 32,
                 cloth = 32,
                 iron = 32,
-                corn = 32,
                 coal = 32,
                 spidercloth = 32,
                 marble = 32,
@@ -67,6 +66,7 @@ init = {
                 europeans_weaver_basic = 1,
                 europeans_weaver_normal = 1,
                 europeans_shipwright = 1,
+                europeans_fishbreeder = 1
           },
             soldiers = {
                 [{0,0,0,0}] = 16,

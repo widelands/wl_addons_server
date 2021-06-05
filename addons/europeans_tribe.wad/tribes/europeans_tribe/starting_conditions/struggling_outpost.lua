@@ -32,7 +32,7 @@ local r = {
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {
             water = 128,
-            log = 64,
+            log = 96,
             granite = 32,
             coal = 32,
             blackwood = 32,
@@ -42,8 +42,6 @@ local r = {
             marble = 24,
             quartz = 24,
             iron = 16,
-            corn = 16,
-            spider_silk = 16,
             spidercloth = 16,
             diamond = 8,
             gold = 2
