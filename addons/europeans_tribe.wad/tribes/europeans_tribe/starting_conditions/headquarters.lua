@@ -60,7 +60,7 @@ init = {
                 europeans_carrier = 32,
                 europeans_builder = 16,
                 europeans_farmer_basic = 12,
-                europeans_trainer = 3,
+                europeans_trainer_basic = 3,
                 europeans_lumberjack_basic = 3,
                 europeans_forester_basic = 3,
                 europeans_carpenter_basic = 2,
@@ -68,7 +68,7 @@ init = {
                 europeans_stonemason_basic = 2,
                 europeans_weaver_basic = 1,
                 europeans_weaver_normal = 1,
-                europeans_shipwright = 1,
+                europeans_shipwright_basic = 1,
           },
             soldiers = {
                 [{0,0,0,0}] = 16,

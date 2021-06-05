@@ -36,7 +36,7 @@ descriptions:new_productionsite_type {
    },
 
    working_positions = {
-      europeans_fishbreeder = 2
+      europeans_fishbreeder_basic = 2
    },
 
    inputs = {

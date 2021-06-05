@@ -32,7 +32,7 @@ descriptions:new_productionsite_type {
    aihints = {},
 
    working_positions = {
-      europeans_shipwright = 1
+      europeans_shipwright_advanced = 1
    },
 
    inputs = {

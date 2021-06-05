@@ -60,7 +60,7 @@ descriptions:new_productionsite_type {
    },
 
    working_positions = {
-      europeans_shipwright = 1
+      europeans_shipwright_basic = 1
    },
 
    inputs = {

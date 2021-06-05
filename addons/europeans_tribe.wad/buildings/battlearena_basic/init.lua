@@ -77,7 +77,7 @@ descriptions:new_trainingsite_type {
    },
 
    working_positions = {
-      europeans_trainer = 1
+      europeans_trainer_basic = 1
    },
 
    inputs = {

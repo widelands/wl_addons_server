@@ -24,7 +24,7 @@ descriptions:new_trainingsite_type {
    },
 
    working_positions = {
-      europeans_trainer = 2
+      europeans_trainer_advanced = 2
    },
 
    inputs = {
