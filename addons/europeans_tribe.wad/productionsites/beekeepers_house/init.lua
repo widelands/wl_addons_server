@@ -35,7 +35,7 @@ descriptions:new_productionsite_type {
    },
 
    working_positions = {
-      europeans_beekeeper = 1
+      europeans_beekeeper_basic = 1
    },
 
    programs = {

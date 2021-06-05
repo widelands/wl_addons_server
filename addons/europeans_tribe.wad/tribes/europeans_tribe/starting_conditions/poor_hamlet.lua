@@ -63,11 +63,11 @@ local r = {
             europeans_stonemason_basic = 1,
             europeans_hunter_basic = 1,
             europeans_fisher_basic = 1,
-            europeans_fishbreeder = 1,
+            europeans_fishbreeder_basic = 1,
             europeans_breeder_normal = 1,
             europeans_weaver_basic = 1,
             europeans_smith_basic = 1,
-            europeans_trainer = 1
+            europeans_trainer_basic = 1
       },
         soldiers = {
             [{0,0,0,0}] = 2,

@@ -55,7 +55,7 @@ descriptions:new_productionsite_type {
    },
    
    working_positions = {
-      europeans_trainer = 1
+      europeans_trainer_basic = 1
    },
    
    inputs = {
@@ -353,44 +353,44 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
          descname = pgettext("europeans_building", "recruiting fishbreeder"),
          actions = {
-            "return=skipped unless economy needs europeans_fishbreeder",
+            "return=skipped unless economy needs europeans_fishbreeder_basic",
             "sleep=duration:30s",
             "consume=buckets shovel europeans_carrier",
             "animate=working duration:45s",
-            "recruit=europeans_fishbreeder"
+            "recruit=europeans_fishbreeder_basic"
          }
       },
       recruit_gamekeeper = {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
          descname = pgettext("europeans_building", "recruiting gamekeeper"),
          actions = {
-            "return=skipped unless economy needs europeans_gamekeeper",
+            "return=skipped unless economy needs europeans_gamekeeper_basic",
             "sleep=duration:30s",
             "consume=basket europeans_carrier",
             "animate=working duration:45s",
-            "recruit=europeans_gamekeeper"
+            "recruit=europeans_gamekeeper_basic"
          }
       },
       recruit_beekeeper = {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
          descname = pgettext("europeans_building", "recruiting beekeeper"),
          actions = {
-            "return=skipped unless economy needs europeans_beekeeper",
+            "return=skipped unless economy needs europeans_beekeeper_basic",
             "sleep=duration:30s",
             "consume=buckets europeans_carrier",
             "animate=working duration:45s",
-            "recruit=europeans_beekeeper"
+            "recruit=europeans_beekeeper_basic"
          }
       },
       recruit_shipwright = {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
          descname = pgettext("europeans_building", "recruiting shipwright"),
          actions = {
-            "return=skipped unless economy needs europeans_shipwright",
+            "return=skipped unless economy needs europeans_shipwright_basic",
             "sleep=duration:30s",
             "consume=hammer saw europeans_carrier",
             "animate=working duration:45s",
-            "recruit=europeans_shipwright"
+            "recruit=europeans_shipwright_basic"
          }
       },
       recruit_geologist = {
@@ -419,11 +419,11 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
          descname = pgettext("europeans_building", "recruiting trainer"),
          actions = {
-            "return=skipped unless economy needs europeans_trainer",
+            "return=skipped unless economy needs europeans_trainer_basic",
             "sleep=duration:30s",
             "consume=armor,tabard spear_wooden europeans_carrier",
             "animate=working duration:45s",
-            "recruit=europeans_trainer"
+            "recruit=europeans_trainer_basic"
          }
       },
    }
