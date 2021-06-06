@@ -37,7 +37,7 @@ descriptions:new_productionsite_type {
    aihints = {},
 
    working_positions = {
-      europeans_gamekeeper = 1
+      europeans_gamekeeper_basic = 1
    },
    
    inputs = {

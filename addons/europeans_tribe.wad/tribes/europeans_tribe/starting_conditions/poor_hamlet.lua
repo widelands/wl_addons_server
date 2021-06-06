@@ -37,17 +37,15 @@ local r = {
         
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {
-            water = 32,
-            log = 32,
-            blackwood = 32,
+            water = 48,
+            log = 48,
+            blackwood = 24,
             planks = 16,
             reed = 16,
             cloth = 16,
             granite = 16,
             coal = 16,
             iron = 16,
-            corn = 8,
-            spider_silk = 8,
             spidercloth = 8,
             marble = 8,
             quartz = 8,
@@ -65,11 +63,11 @@ local r = {
             europeans_stonemason_basic = 1,
             europeans_hunter_basic = 1,
             europeans_fisher_basic = 1,
-            europeans_fishbreeder = 1,
+            europeans_fishbreeder_basic = 1,
             europeans_breeder_normal = 1,
             europeans_weaver_basic = 1,
             europeans_smith_basic = 1,
-            europeans_trainer = 1
+            europeans_trainer_basic = 1
       },
         soldiers = {
             [{0,0,0,0}] = 2,

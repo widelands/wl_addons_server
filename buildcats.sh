@@ -34,6 +34,7 @@ done
 # Now check which translations have changed
 changed=()
 skipnext=true
+git add .
 for modification in $(git status -s ./*.wad)
 do
   if [[ $skipnext == false ]]

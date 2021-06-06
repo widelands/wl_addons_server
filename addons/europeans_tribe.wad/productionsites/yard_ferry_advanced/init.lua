@@ -21,7 +21,7 @@ descriptions:new_productionsite_type {
    aihints = {},
 
    working_positions = {
-      europeans_shipwright = 1
+      europeans_shipwright_advanced = 1
    },
 
    inputs = {
@@ -35,9 +35,9 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "sleep=duration:15s",
-            "callworker=buildferry_5",
+            "callworker=buildferry_1",
             "consume=planks:2 spidercloth",
-            "callworker=buildferry_6"
+            "callworker=buildferry_2"
          }
       },
    },

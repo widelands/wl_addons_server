@@ -42,7 +42,7 @@ descriptions:new_warehouse_type {
    aihints = {
    },
 
-   conquers = 5,
+   conquers = 6,
    heal_per_second = 170,
 }
 

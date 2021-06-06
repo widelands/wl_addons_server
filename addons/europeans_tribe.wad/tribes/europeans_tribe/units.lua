@@ -935,24 +935,6 @@ descriptions:new_tribe {
             }
          },
          {
-            name = "europeans_ferry",
-            default_target_quantity = 16,
-            preciousness = 4,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Ferry
-               purpose = pgettext("europeans_worker", "Ships wares across narrow rivers.")
-            }
-         },
-         {
-            name = "europeans_shipwright",
-            default_target_quantity = 1,
-            preciousness = 4,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Shipwright
-               purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
-            }
-         },
-         {
             name = "europeans_builder",
             default_target_quantity = 2,
             preciousness = 16,
@@ -962,12 +944,85 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "europeans_ferry",
+            default_target_quantity = 16,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Ferry
+               purpose = pgettext("europeans_worker", "Ships wares across narrow rivers.")
+            }
+         },
+         {
+            name = "europeans_shipwright_basic",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Shipwright
+               purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
+            }
+         },
+         {
+            name = "europeans_shipwright_normal",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Shipwright
+               purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
+            }
+         },
+         {
+            name = "europeans_shipwright_advanced",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Shipwright
+               purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
+            }
+         },
+         {
             name = "europeans_geologist",
             default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Geologist
                purpose = pgettext("europeans_worker", "Discovers resources for mining.")
+            }
+         },
+      },
+      {
+         -- Military and Expansion
+         {
+            name = "europeans_recruit",
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Recruit
+               purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
+            }
+         },
+         {
+            name = "europeans_trainer_basic",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Trainer
+               purpose = pgettext("europeans_worker", "Trains the soldiers.")
+            }
+         },
+         {
+            name = "europeans_trainer_normal",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Trainer
+               purpose = pgettext("europeans_worker", "Trains the soldiers.")
+            }
+         },
+         {
+            name = "europeans_trainer_advanced",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Trainer
+               purpose = pgettext("europeans_worker", "Trains the soldiers.")
             }
          },
          {
@@ -998,22 +1053,6 @@ descriptions:new_tribe {
                -- TRANSLATORS: Helptext for an europeans worker: Scout
                purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
                -- (c) WiHack Team 02.01.2010
-            }
-         },
-         {
-            name = "europeans_recruit",
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Recruit
-               purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
-            }
-         },
-         {
-            name = "europeans_trainer",
-            default_target_quantity = 1,
-            preciousness = 4,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Trainer
-               purpose = pgettext("europeans_worker", "Trains the soldiers.")
             }
          },
          {
@@ -1224,6 +1263,33 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "europeans_beekeeper_basic",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
+            }
+         },
+         {
+            name = "europeans_beekeeper_normal",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
+            }
+         },
+         {
+            name = "europeans_beekeeper_advanced",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
+            }
+         },
+         {
             name = "europeans_breeder_basic",
             default_target_quantity = 1,
             preciousness = 8,
@@ -1308,6 +1374,33 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "europeans_fishbreeder_basic",
+            default_target_quantity = 1,
+            preciousness = 8,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Breeds fish in pond and in the sea.")
+            }
+         },
+         {
+            name = "europeans_fishbreeder_normal",
+            default_target_quantity = 1,
+            preciousness = 8,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Breeds fish in pond and in the sea.")
+            }
+         },
+         {
+            name = "europeans_fishbreeder_advanced",
+            default_target_quantity = 1,
+            preciousness = 8,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Breeds fish in pond and in the sea.")
+            }
+         },
+         {
             name = "europeans_hunter_basic",
             default_target_quantity = 1,
             preciousness = 8,
@@ -1335,16 +1428,7 @@ descriptions:new_tribe {
             }
          },
          {
-            name = "europeans_fishbreeder",
-            default_target_quantity = 1,
-            preciousness = 8,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Carrier
-               purpose = pgettext("europeans_worker", "Breeds fish in pond and in the sea.")
-            }
-         },
-         {
-            name = "europeans_gamekeeper",
+            name = "europeans_gamekeeper_basic",
             default_target_quantity = 1,
             preciousness = 4,
             helptexts = {
@@ -1353,12 +1437,21 @@ descriptions:new_tribe {
             }
          },
          {
-            name = "europeans_beekeeper",
+            name = "europeans_gamekeeper_normal",
             default_target_quantity = 1,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carrier
-               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
+               purpose = pgettext("europeans_worker", "The gamekeeper makes sure that the natural population of animals never drops too low.")
+            }
+         },
+         {
+            name = "europeans_gamekeeper_advanced",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "The gamekeeper makes sure that the natural population of animals never drops too low.")
             }
          }
       },

@@ -27,7 +27,7 @@ descriptions:new_productionsite_type {
    },
 
    working_positions = {
-      europeans_trainer = 1
+      europeans_trainer_advanced = 1
    },
 
    inputs = {
