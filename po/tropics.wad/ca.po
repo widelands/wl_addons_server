@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Juanjo, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-05 20:08+0200\n"
+"POT-Creation-Date: 2021-06-07 04:23+0000\n"
 "PO-Revision-Date: 2021-05-29 21:09+0000\n"
+"Last-Translator: Juanjo, 2021\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -21,7 +25,7 @@ msgstr ""
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/tropics.wad/addon:2 addons/tropics.wad/editor.lua:8
 msgid "Tropics"
-msgstr ""
+msgstr "Tròpics"
 
 #: addons/tropics.wad/addon:3
 msgid ""
@@ -29,11 +33,15 @@ msgid ""
 "might contain more and better trees, and other stuff. The terrains DON'T "
 "support Amazonians' rare trees or terraforming ... yet."
 msgstr ""
+"Terrenys i arbres (en versió alfa) per a àrees tropicals. És possible que en "
+"el futur aquest complement contingui més i millors arbres i altres coses. "
+"Els terrenys no són compatibles amb la terraformació ni amb els arbres rars "
+"de les amazones."
 
 #. TRANSLATORS: A category in the editor for placing immovables on the map.
 #: addons/tropics.wad/editor.lua:37
 msgid "Tropical Trees"
-msgstr ""
+msgstr "Arbres tropicals"
 
 #: addons/tropics.wad/immovables/trees/corymbia/init.lua:14
 msgid "Corymbia (Sapling)"
