@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-05 20:08+0200\n"
+"POT-Creation-Date: 2021-06-07 04:23+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -27,14 +27,14 @@ msgid "Europeans Tribe"
 msgstr "Europäers-Volk"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It’s still experimental and uses "
 "buildings and workers from Barbarians, Atlanteans, and Empire, until own "
 "graphics are available."
 msgstr ""
 "Föögt een nejes Volk »Europäers« hento. Dat is noch nich stevig un bruukt "
-"Husen un Arbeiders vun de Willen Lüü, Atlantingers un vum Latiensken Riek."
+"Husen un Arbeiders vun de Willen Lüü, Atlantingers un vum Latiensken Riek, "
+"bit dat neje Billers gifft."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -6335,24 +6335,21 @@ msgstr "Goder Backer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Beekeeper"
-msgstr "Meistertüchter"
+msgstr "Meisterimker"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Beekeeper"
-msgstr "Tüchter"
+msgstr "Imker"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Beekeeper"
-msgstr "Goder Tüchter"
+msgstr "Goder Imker"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_advanced/init.lua:8
@@ -6476,24 +6473,21 @@ msgstr "Fähr"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fishbreeder_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Fish Breeder"
-msgstr "Meistertüchter"
+msgstr "Meister-Fisstüchter"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fishbreeder_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Fish Breeder"
-msgstr "Tüchter"
+msgstr "Fisstüchter"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fishbreeder_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Fish Breeder"
-msgstr "Goder Tüchter"
+msgstr "Goder Fisstüchter"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fisher_advanced/init.lua:8
@@ -6533,24 +6527,21 @@ msgstr "Goder Boomplanter"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/gamekeeper_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Gamekeeper"
-msgstr "Meisterbacker"
+msgstr "Meister-Deertentüchter"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/gamekeeper_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Gamekeeper"
 msgstr "Deertentüchter"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/gamekeeper_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Gamekeeper"
-msgstr "Goder Backer"
+msgstr "Goder Deertentüchter"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/geologist/init.lua:8
@@ -6656,24 +6647,21 @@ msgstr "Goder Bespejer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Shipwright"
-msgstr "Grote Warft"
+msgstr "Meister-Schippebauer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Shipwright"
 msgstr "Schippebauer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Shipwright"
-msgstr "Warft"
+msgstr "Goder Schippebauer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smelter_advanced/init.lua:8
@@ -6773,24 +6761,21 @@ msgstr "Goder Steenbicker"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Trainer"
-msgstr "Meister-Bargwarkskeerl"
+msgstr "Meister-Mester"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Trainer"
-msgstr "Bargwarkskeerl"
+msgstr "Mester"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Trainer"
-msgstr "Goder Bargwarkskeerl"
+msgstr "Goder Mester"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/weaver_advanced/init.lua:8
@@ -6809,15 +6794,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Beekeeper"
-#~ msgstr "Imker"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Fish Breeder and Clay Digger"
-#~ msgstr "Fisstüchter un Lehmgraver"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Trainer"
-#~ msgstr "Mester"
