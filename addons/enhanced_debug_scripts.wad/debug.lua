@@ -2,10 +2,9 @@
 --           Test script for debugging.
 -- =======================================================================
 
-include "scripting/infrastructure.lua"
-include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
+include "addons/enhanced_debug_scripts.wad/starting_conditions.lua"
 
-push_textdomain("europeans_tribe.wad", true)
+push_textdomain("enhanced_debug_scripts.wad", true)
 
 function switch_player(player_number1, player_number2)
     local game = wl.Game()
@@ -290,242 +289,155 @@ function connect_road(startx, starty, targetx, targety)
     end
 end
 
-function place_mine(player_number, startx, starty, minetype)
+function force_building(player_number, startx, starty, radius, building_name)
     local game = wl.Game()
-    local map = game.map
     local player = game.players[player_number]
-    local tribe = player.tribe
     
-    local minename = ""
-    
-    if tribe.name == "europeans" then
-        if minetype == "coal" then
-            minename = "europeans_coalmine_basic"
-        elseif minetype == "iron" then
-            minename = "europeans_ironmine_basic"
-        elseif minetype == "gold" then
-            minename = "europeans_goldmine_basic"
-        end
-    end
-    
-    place_building_in_region(player, minename, map:get_field(startx, starty):region(2))
+    place_building(player, startx, starty, radius, building_name)
 end
 
-function replace_building(startx, starty, buildingname)
+function force_headquarters(player_number, startx, starty, radius)
     local game = wl.Game()
-    local map = game.map
-    local player = map:get_field(startx, starty).owner
-
-    if (map:get_field(startx, starty).immovable.descr.type_name == "flag") then
-       remove_object(startx, starty-1) -- Remove existing building
-       remove_object(startx-1, starty-1) -- Remove existing building
-    else
-       remove_object(startx, starty) -- Remove existing building
-    end
-    place_building_in_region(player, buildingname, map:get_field(startx, starty):region(1)) -- Place new one
-end
-
-function replace_all_buildings(player_number, buildingname, buildingname2)
-    local game = wl.Game()
-    local map = game.map
     local player = game.players[player_number]
-
-    for startx = 0, map.width - 1 do
-       for starty = 0, map.height - 1 do
-          if map:get_field(startx, starty).immovable and map:get_field(startx, starty).immovable.owner == player then
-             if map:get_field(startx, starty).immovable.descr.type_name == buildingname or map:get_field(startx, starty).immovable.descr.name == buildingname then
-                replace_building(startx, starty, buildingname2)
-             end
-          end
-       end
-    end 
+    
+    place_headquarters(player, startx, starty, radius)
 end
 
-function remove_building(startx, starty)
+function force_port(player_number, startx, starty, radius)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    
+    place_port(player, startx, starty, radius)
+end
+
+function force_mine(player_number, startx, starty)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    
+    place_mine(player, startx, starty)
+end
+
+function dismantle_building(startx, starty)
     local game = wl.Game()
     local map = game.map
 
     if (map:get_field(startx, starty).immovable.descr.type_name == "productionsite") then
-       remove_object(startx, starty)
+       map:get_field(startx, starty).immovable:dismantle(true)
     end
     if (map:get_field(startx, starty).immovable.descr.type_name == "trainingsite") then
-       remove_object(startx, starty)
+       map:get_field(startx, starty).immovable:dismantle(true)
     end
     if (map:get_field(startx, starty).immovable.descr.type_name == "militarysite") then
-       remove_object(startx, starty)
+       map:get_field(startx, starty).immovable:dismantle(true)
     end
     if (map:get_field(startx, starty).immovable.descr.type_name == "warehouse") then
-       remove_object(startx, starty)
+       map:get_field(startx, starty).immovable:dismantle(true)
     end
     if (map:get_field(startx, starty).immovable.descr.type_name == "market") then
-       remove_object(startx, starty)
+       map:get_field(startx, starty).immovable:dismantle(true)
     end
 end
 
-function remove_all_buildings(player_number, buildingname)
+function dismantle_all_buildings(player_number, buildingname)
     local game = wl.Game()
     local player = game.players[player_number]
 
-    for i, player in ipairs(game.players) do
-        for j, tbuilding in ipairs(player.tribe.buildings) do
-           for k, building in ipairs(player:get_buildings(tbuilding.name)) do
-              if tbuilding.type_name == buildingname or tbuilding.name == buildingname or player.tribe.name == buildingname then
-                 building:remove()
-              end
-           end
-        end
-    end 
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == buildingname or tbuilding.name == buildingname or player.tribe.name == buildingname then
+             building:dismantle(true)
+          end
+       end
+    end
 end
 
-function cheat_wares(player_number)
-    local MAX_UNDEFINED_WARES = 16
+function dismantle_idle_buildings(player_number, producitiy_threshold)
+    local game = wl.Game()
+    local player = game.players[player_number]
 
-    local player = wl.Game().players[player_number]
-    local tribe = player.tribe
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == "productionsite" and building.productivity < producitiy_threshold then
+             building:dismantle(true)
+          end
+       end
+    end
+end
 
-    for i, building in ipairs(tribe.buildings) do
-       -- restock warehouses
-       if building.type_name == "warehouse" then
-        for i, building in ipairs(player:get_buildings(building.name)) do
-          for i, ware in ipairs(tribe.wares) do
-             if building:get_wares(ware.name) < MAX_UNDEFINED_WARES then
-                building:set_wares(ware.name, MAX_UNDEFINED_WARES)
+function upgrade_building(startx, starty)
+    local game = wl.Game()
+    local map = game.map
+
+    if (map:get_field(startx, starty).immovable.descr.type_name == "productionsite") then
+       map:get_field(startx, starty).immovable:upgrade(true)
+    end
+    if (map:get_field(startx, starty).immovable.descr.type_name == "trainingsite") then
+       map:get_field(startx, starty).immovable:upgrade(true)
+    end
+    if (map:get_field(startx, starty).immovable.descr.type_name == "militarysite") then
+       map:get_field(startx, starty).immovable:upgrade(true)
+    end
+    if (map:get_field(startx, starty).immovable.descr.type_name == "warehouse") then
+       map:get_field(startx, starty).immovable:upgrade(true)
+    end
+    if (map:get_field(startx, starty).immovable.descr.type_name == "market") then
+       map:get_field(startx, starty).immovable:upgrade(true)
+    end
+end
+
+function upgrade_all_buildings(player_number, buildingname)
+    local game = wl.Game()
+    local player = game.players[player_number]
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == buildingname or tbuilding.name == buildingname or player.tribe.name == buildingname then
+             building:upgrade(true)
+          end
+       end
+    end
+end
+
+function startstop_building(startx, starty)
+    local game = wl.Game()
+    local map = game.map
+    local field = map:get_field(startx, starty)
+    local building = field.immovable
+    
+    building:toggle_start_stop()
+end
+
+function stop_all_buildings(player_number, building_name, stop)
+    local game = wl.Game()
+    local player = game.players[player_number]
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == building_name or tbuilding.name == building_name or player.tribe.name == building_name then
+             if not (building.is_stopped == stop) then
+                 building:toggle_start_stop()
              end
           end
-        end
        end
     end
 end
 
--- following functions are only for debugging europeans tribe --
-function allow_militarysites(player_number)
+function block_dismantle_building(startx, starty, yesno)
     local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_guardhouse", "europeans_tower_small", "europeans_blockhouse", "europeans_sentry"}
-        player:allow_buildings{"europeans_barrier", "europeans_outpost", "europeans_advanced_barrier"}
-        player:allow_buildings{"europeans_tower", "europeans_tower_high", "europeans_advanced_tower"}
-        player:allow_buildings{"europeans_castle", "europeans_fortress", "europeans_advanced_castle"}
-    end
-end
-
-function forbid_militarysites(player_number)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
+    local map = game.map
+    local field = map:get_field(startx, starty)
+    local building = field.immovable
     
-    if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_guardhouse", "europeans_tower_small", "europeans_blockhouse", "europeans_sentry"}
-        player:forbid_buildings{"europeans_barrier", "europeans_outpost", "europeans_advanced_barrier"}
-        player:forbid_buildings{"europeans_tower", "europeans_tower_high", "europeans_advanced_tower"}
-        player:forbid_buildings{"europeans_castle", "europeans_fortress", "europeans_advanced_castle"}
-    end
+    building.destruction_blocked = yesno
 end
 
-function allow_trainingssites(player_number)
+function block_destruction_building(startx, starty, yesno)
     local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_guardhall", "europeans_dungeon"}
-        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
-        player:allow_buildings{"europeans_labyrinth", "europeans_arena", "europeans_colosseum"}
-    end
-end
-
-function forbid_trainingssites(player_number)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
+    local map = game.map
+    local field = map:get_field(startx, starty)
+    local building = field.immovable
     
-    if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_guardhall", "europeans_dungeon"}
-        player:forbid_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
-        player:forbid_buildings{"europeans_labyrinth", "europeans_arena", "europeans_colosseum"}
-    end
-end
-
-function allow_normal_buildings(player_number)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_well_normal", "europeans_lumberjacks_house_normal", "europeans_foresters_house_normal", "europeans_quarry_normal", "europeans_fishers_house_normal", "europeans_hunters_house_normal", "europeans_scouts_house_normal"}
-        player:allow_buildings{"europeans_sawmill_normal", "europeans_lumberjacks_house_normal", "europeans_charcoal_kiln_normal", "europeans_stonemasons_house", "europeans_mill_normal", "europeans_tavern_level_3", "europeans_brewery_normal", "europeans_smelting_works_normal", "europeans_smithy_level_4"}
-        player:allow_buildings{"europeans_recruitement_center_normal", "europeans_farm_level_2", "europeans_sheepfarm", "europeans_weaving_mill_normal", "europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3"}
-    end
-end
-
-function forbid_normal_buildings(player_number)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-    
-    if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_well_normal", "europeans_lumberjacks_house_normal", "europeans_foresters_house_normal", "europeans_quarry_normal", "europeans_fishers_house_normal", "europeans_hunters_house_normal", "europeans_scouts_house_normal"}
-        player:forbid_buildings{"europeans_sawmill_normal", "europeans_lumberjacks_house_normal", "europeans_charcoal_kiln_normal", "europeans_stonemasons_house", "europeans_mill_normal", "europeans_tavern_level_3", "europeans_brewery_normal", "europeans_smelting_works_normal", "europeans_smithy_level_4"}
-        player:forbid_buildings{"europeans_recruitement_center_normal", "europeans_farm_level_2", "europeans_sheepfarm", "europeans_weaving_mill_normal", "europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3"}
-    end
-end
-
-function allow_advanced_buildings(player_number)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_well_advanced", "europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_quarry_advanced", "europeans_fishers_house_advanced", "europeans_hunters_house_advanced", "europeans_scouts_house_advanced"}
-        player:allow_buildings{"europeans_sawmill_advanced", "europeans_lumberjacks_house_advanced", "europeans_charcoal_kiln_advanced", "europeans_stonemasons_house", "europeans_mill_advanced", "europeans_inn_basic", "europeans_brewery_advanced", "europeans_smelting_works_advanced", "europeans_smithy_level_7"}
-        player:allow_buildings{"europeans_recruitement_center_advanced", "europeans_farm_level_3", "europeans_sheepfarm", "europeans_weaving_mill_advanced", "europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5"}
-    end
-end
-
-function forbid_advanced_buildings(player_number)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-    
-    if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_well_advanced", "europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_quarry_advanced", "europeans_fishers_house_advanced", "europeans_hunters_house_advanced", "europeans_scouts_house_advanced"}
-        player:forbid_buildings{"europeans_sawmill_advanced", "europeans_lumberjacks_house_advanced", "europeans_charcoal_kiln_advanced", "europeans_stonemasons_house", "europeans_mill_advanced", "europeans_inn_basic", "europeans_brewery_advanced", "europeans_smelting_works_advanced", "europeans_smithy_level_7"}
-        player:forbid_buildings{"europeans_recruitement_center_advanced", "europeans_farm_level_3", "europeans_sheepfarm", "europeans_weaving_mill_advanced", "europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5"}
-    end
-end
-
--- following functions could produce memory leak - dont use it, if not necessary! --
-function cheat_soldiers(player_number)
-    local MAX_UNDEFINED_SOLDIERS = 8
-    local SOLDIER_STATS_NOVICE = { 0, 0, 0, 0 }
-
-    local player = wl.Game().players[player_number]
-    local tribe = player.tribe
-
-    -- retrieve best soldier stats
-    local soldier_stats = SOLDIER_STATS_NOVICE
-    for i, worker in ipairs(tribe.workers) do
-       if worker.type_name == "soldier" then
-        soldier_stats = { worker.max_health_level, worker.max_attack_level, worker.max_defense_level, worker.max_evade_level }
-       end
-    end
-
-    for i, building in ipairs(tribe.buildings) do
-       -- restaff warehouses
-       if building.type_name == "warehouse" then
-        for i, building in ipairs(player:get_buildings(building.name)) do
-          for i, worker in ipairs(tribe.workers) do
-             if worker.type_name == "soldier" then
-                building:set_soldiers(soldier_stats, MAX_UNDEFINED_SOLDIERS)
-             else
-                building:set_workers(worker.name, MAX_UNDEFINED_SOLDIERS)
-             end
-          end
-        end
-       end
-    end
+    building.destruction_blocked = yesno
 end
 
 pop_textdomain()

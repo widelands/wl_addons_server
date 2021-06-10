@@ -1,37 +1,38 @@
 -- =======================================================================
---              Village Starting Conditions for Europeans
+--                 Start conditions for New World
 -- =======================================================================
 
-include "scripting/infrastructure.lua"
 include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
-include "addons/europeans_tribe.wad/scripting/debug.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
 init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Harbors",
-    -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-    tooltip = _"Start the game with bundle of ports",
-    func =  function(player, shared_in_start)
+    descname = _ "New World",
+    -- TRANSLATORS: This is the tooltip for the "New World" starting condition
+    tooltip = _"Start the game with advanced castle and port",
+    map_tags = {"seafaring"},
+
+    func = function(player, shared_in_start)
 
     local map = wl.Game().map
-    local player_slot = map.player_slots[player.number]
-    local sf = player_slot.starting_field
+    local sf = map.player_slots[player.number].starting_field
     if shared_in_start then
        sf = shared_in_start
     else
        player:allow_workers("all")
     end
-   
+    local h = player:place_building("europeans_advanced_castle", sf, false, true)
+    h:set_soldiers{[{4,4,4,4}] = 12}
+      
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
         for i, portfield in pairs(map.port_spaces) do
             if (math.abs(portfield.x - sf.x) < 12) and (math.abs(portfield.y - sf.y) < 12) then
-                port = prefilled_buildings(player, { "europeans_port", portfield.x, portfield.y,
+                prefilled_buildings(player, { "europeans_port", portfield.x, portfield.y,
                     wares = {},
                     workers = {
                         europeans_carrier = 16,
-                        europeans_builder = 12,
+                        europeans_builder = 8,
                         europeans_farmer_basic = 6,
                         europeans_lumberjack_basic = 2,
                         europeans_forester_basic = 2,
@@ -42,7 +43,7 @@ init = {
                         europeans_weaver_normal = 1,
                         europeans_trainer_basic = 1,
                         europeans_shipwright_basic = 1,
-                        europeans_fishbreeder_basic = 1,
+                        europeans_fishbreeder_basic = 1
                   },
                     soldiers = {
                         [{0,0,0,0}] = 6,
@@ -56,7 +57,7 @@ init = {
                 water = 256,
                 log = 192,
                 granite = 64,
-                reed = 64,
+                reed = 80,
                 blackwood = 32,
                 planks = 32,
                 cloth = 32,
@@ -85,7 +86,7 @@ init = {
             },
             workers = {
                 europeans_carrier = 32,
-                europeans_builder = 24,
+                europeans_builder = 12,
                 europeans_farmer_basic = 12,
                 europeans_trainer_basic = 3,
                 europeans_lumberjack_basic = 3,
@@ -119,7 +120,6 @@ init = {
         set_ware(player, "marble", math.ceil(24 / #ports))
         set_ware(player, "quartz", math.ceil(24 / #ports))
         set_ware(player, "diamond", math.ceil(16 / #ports))
-        set_ware(player, "gold", math.ceil(4 / #ports))
         set_ware(player, "shovel", math.ceil(16 / #ports))
         set_ware(player, "buckets", math.ceil(10 / #ports))
         set_ware(player, "basket", math.ceil(8 / #ports))
@@ -135,17 +135,8 @@ init = {
         set_ware(player, "hunting_bow", math.ceil(2 / #ports))
         set_ware(player, "hunting_spear", math.ceil(2 / #ports))
         set_ware(player, "milking_tongs", math.ceil(2 / #ports))
-        set_ware(player, "armor", math.ceil(6 / #ports))
-        set_ware(player, "tabard", math.ceil(6 / #ports))
-        set_ware(player, "spear_wooden", math.ceil(12 / #ports))
-        place_building_in_region(player, "europeans_shipyard_basic", ports[1].fields[1]:region(3), {
-            inputs = {blackwood = 2, planks = 8, spidercloth = 2, reed = 2},
-        })
-        place_building_in_region(player, "europeans_recruitement_center_basic", ports[1].fields[1]:region(4), {
-            inputs = {},
-        })
     end
-    
+
     for i = 1, 13 do
         -- Delay of 15 min between actions
         sleep(900000)
@@ -185,6 +176,7 @@ init = {
                 place_port(player, 437, 186, 1)
                 place_building(player, 437, 186, 6, "europeans_quarry_normal")
             end 
+            place_ship_random(player, 64)
         end
         if i == 8 then
             if (player_slot.name == "England") and (sf.x == 380) and (sf.y == 499) then
@@ -200,11 +192,8 @@ init = {
                 place_port(player, 47, 224, 1)
                 place_building(player, 47, 224, 6, "europeans_quarry_normal")
             end
+            place_ship_random(player, 64)
         end
-        if i >= 12 then
-           place_ship_random(player, 128)
-           player:allow_buildings("all")
-        end 
     end
 end
 }

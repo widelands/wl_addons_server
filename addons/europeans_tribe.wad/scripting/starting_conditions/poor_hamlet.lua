@@ -2,9 +2,7 @@
 --                Minimum Starting conditions for europeans
 -- =======================================================================
 
-include "scripting/infrastructure.lua"
 include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
-include "addons/europeans_tribe.wad/scripting/debug.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 

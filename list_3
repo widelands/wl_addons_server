@@ -1,5 +1,5 @@
 3
-28
+29
 Tournament_2021_maps.wad
 Tournament 2021 Maps
 Maps for the 2021 Tournament
@@ -660,6 +660,44 @@ dab3bb1d52a3b036a5c0668e13e36f70
 07a6f87e79c0b2af8c0924750f8204e6
 0
 unchecked
+enhanced_debug_scripts.wad
+Enhanced Debug Scripts
+Adds a bundle of useful scripts for use from the debug console in Debug builds of Widelands.
+MarkMcWire
+Nordfriese
+
+
+sync_safe
+1623355770
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1.0.0
+1
+31791
+script
+0
+0
+3
+addon
+debug.lua
+starting_conditions.lua
+0
+3
+d2d63262bead44d7a13fdd0e44ae8e73
+32008c3393a9e6c0442a9aad0db9c2bb
+9051f9ca613177e2668226d86772d1ff
+0
+verified
 europeans_tribe.wad
 Europeans Tribe
 Adds a new tribe named ‘Europeans’. It’s still experimental and uses buildings and workers from Barbarians, Atlanteans, and Empire, until own graphics are available.
@@ -681,9 +719,9 @@ sync_safe
 0
 0
 0
-1.3.0
+1.3.1
 15
-73557780
+73526935
 tribes
 0
 230
@@ -828,11 +866,11 @@ productionsites/yard_ships_basic
 productionsites/yard_ships_normal
 scripting
 scripting/help
+scripting/starting_conditions
 ship
 tribes
 tribes/europeans_tribe
 tribes/europeans_tribe/images
-tribes/europeans_tribe/starting_conditions
 wares
 wares/ore
 wares/rye
@@ -917,7 +955,7 @@ workers/trainer_normal
 workers/weaver_advanced
 workers/weaver_basic
 workers/weaver_normal
-19866
+19865
 addon
 buildings/advanced_barrier/idle_00.png
 buildings/advanced_barrier/init.lua
@@ -3192,7 +3230,7 @@ productionsites/yard_ships_normal/idle_00_pc.png
 productionsites/yard_ships_normal/init.lua
 productionsites/yard_ships_normal/menu.png
 productionsites/yard_ships_normal/register.lua
-scripting/debug.lua
+scripting/debug_europeans.lua
 scripting/help/building_help.lua
 scripting/help/controls.lua
 scripting/help/format_help.lua
@@ -3203,6 +3241,15 @@ scripting/help/time_strings.lua
 scripting/help/tips.lua
 scripting/help/ware_help.lua
 scripting/help/worker_help.lua
+scripting/starting_conditions/discovery.lua
+scripting/starting_conditions/fortified_village.lua
+scripting/starting_conditions/harbors.lua
+scripting/starting_conditions/headquarters.lua
+scripting/starting_conditions/new_world.lua
+scripting/starting_conditions/poor_hamlet.lua
+scripting/starting_conditions/struggling_outpost.lua
+scripting/starting_conditions/trading_outpost.lua
+scripting/starting_conditions/village.lua
 scripting/starting_conditions.lua
 ship/idle_00.png
 ship/idle_00_pc.png
@@ -3788,7 +3835,6 @@ ship/sinking_18.png
 ship/sinking_19.png
 ship/sinking_20.png
 ship/sinking_21.png
-tribes/europeans_tribe/europeans.lua
 tribes/europeans_tribe/images/bridge_busy_e_0.png
 tribes/europeans_tribe/images/bridge_busy_se_0.png
 tribes/europeans_tribe/images/bridge_busy_sw_0.png
@@ -3837,15 +3883,6 @@ tribes/europeans_tribe/images/roadt_normal_02.png
 tribes/europeans_tribe/images/waterway_0.png
 tribes/europeans_tribe/init.lua
 tribes/europeans_tribe/military_capacity.lua
-tribes/europeans_tribe/starting_conditions/discovery.lua
-tribes/europeans_tribe/starting_conditions/fortified_village.lua
-tribes/europeans_tribe/starting_conditions/harbors.lua
-tribes/europeans_tribe/starting_conditions/headquarters.lua
-tribes/europeans_tribe/starting_conditions/new_world.lua
-tribes/europeans_tribe/starting_conditions/poor_hamlet.lua
-tribes/europeans_tribe/starting_conditions/struggling_outpost.lua
-tribes/europeans_tribe/starting_conditions/trading_outpost.lua
-tribes/europeans_tribe/starting_conditions/village.lua
 tribes/europeans_tribe/tips.lua
 tribes/europeans_tribe/units.lua
 wares/ore/idle.png
@@ -20806,8 +20843,8 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-19887
-fec1bec4fa4b7432a5c990da932b597b
+19886
+ca77cef26122e8642ed72a05f9527166
 fbbd5b53033a58de73a4fe01bcb2f66f
 312f671eb9f0dff17dcbf0d637c930c3
 c9b395400e4109b69954a8160c7cfd7a
@@ -23081,7 +23118,7 @@ afacbe1f86321abee1079efab9178b0f
 e8c441038bf425defe5d745027a22e9b
 0f0b9c64bd63eba63ce7cab1682d1f8b
 01bc3daeb8226f50749416ddd7d19ef6
-efdc8ccf23d6446ac0af33271b5363e3
+4dcf9b64ac604e6f7b10eeacd88831fd
 6d5c3bd16650bd3b0161703db8998efa
 835871be587baea87447988995da1b28
 803ee843f7fbd1616005c534bb5779ff
@@ -23092,7 +23129,16 @@ f4aa864cc636112a473586e7dcf2df8b
 1265717f558663266395d7bfd2e54c9b
 ea3e007fa80e8e4f34e38f715c620c40
 d5138307ec44a9448ed28001edc39a47
-bac00e183fb8a54bc5b97e99e4ef83b1
+b8de842743313e19ff9f934bdc0a4bb6
+23685491a32487140390822078ab4861
+2fc8478fcf8693954e0eec3f5a1eba3c
+3f3d89fc035d7ccddb2add923a603ad5
+ffa8be6bb6f93763b819bdff2880e3be
+98bdcf508855beb331d919bef1a049dc
+d8754e76e3fbf3a2d89fbe12c825fc34
+28a8b210d1831e30c15a7b414d87d82b
+c684abd3d671432d455b66e3e8a9e003
+9051f9ca613177e2668226d86772d1ff
 0a12946ac7706e69dcf5595372414fa9
 1b7645161864b16ad156cd1a63cc0962
 43fc0c51424609828c279ab2b318e87f
@@ -23677,7 +23723,6 @@ ced1b050e8fe83c41a15fe558484563f
 bf363f1af12167bbe6fc79a4b2fe5ab4
 8bea769be3ca00eb73831931cc0256fe
 8bea769be3ca00eb73831931cc0256fe
-8c72d29937bf16185bbe3d7b859d6595
 ddeece953b2517cb8a7af9e8602c0af5
 58249ca3609e85dccca6151079f32f61
 bf8a74c3dd345a6e06dac4f8dcfa7d70
@@ -23724,19 +23769,10 @@ a4556719d17258905d7be2761cd0487d
 7063b6f5d16863042a7254979c2a21f5
 cdb69082530e277d638acf1e1d67a32c
 f9535866c7d646605d5bf64a69a93c5c
-2dcdbfc355484672e03c6e4697c87dc8
+90d1c88442b1ab19d9090d770584788d
 2264c9705958fc68a746201b373dc6ad
-faffcbc2918588e271c1340d1903607f
-fe6a3289d9c1248e0d9a11e1b70610b5
-c60e5e6afdd501f7903cd88560993256
-c1ec11a740f248fcc8803462edaeca3c
-f704a724b0403960eb6e7f51e6bd1a9f
-f904cf5a1857aabedf6018abf1673400
-520de5cfe6d2eea4cd7d5c83ac995b0f
-2a0c1e46944292730689a2fa564e3665
-1f94402f83db29fc021d34a619a17553
-0156f6c4ff2fa6c75fb254a3adc9948f
-97d0a75796cdcd316336ef6caedfcedd
+2a8fb0b2f902ff7cc8e3b21aece3d9f0
+5eb7670398b0a3880c115e516e3559be
 13ef34b0f9d9e936b2eddd649b024db5
 047beffee56cc51ddc30984b40b51d3c
 4ce6754eae56808d4d7c8747b0e93d86
