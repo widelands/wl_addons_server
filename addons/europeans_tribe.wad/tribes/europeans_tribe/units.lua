@@ -486,7 +486,7 @@ descriptions:new_tribe {
          {
             name = "ore",
             default_target_quantity = 32,
-            preciousness = 32,
+            preciousness = 48,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Iron Ore, part 1
