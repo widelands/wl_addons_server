@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# nskdmitry, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-10 22:32+0200\n"
+"POT-Creation-Date: 2021-06-10 20:46+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -22,7 +26,7 @@ msgstr ""
 
 #: addons/wells-running-out.wad/addon:2
 msgid "Water Resource Efficiency"
-msgstr ""
+msgstr "Эффективное использование водных ресурсов"
 
 #: addons/wells-running-out.wad/addon:3
 msgid ""
@@ -36,7 +40,7 @@ msgstr ""
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:7
 msgctxt "barbarians_building"
 msgid "Deep Well"
-msgstr ""
+msgstr "Глубокая скважина"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:25
@@ -46,42 +50,42 @@ msgstr ""
 #: addons/wells-running-out.wad/postload.lua:42
 #: addons/wells-running-out.wad/postload.lua:77
 msgid "working"
-msgstr ""
+msgstr "качает воду"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/wells-running-out.wad/bar_well_keeper/init.lua:7
 msgctxt "barbarians_worker"
 msgid "Well Keeper"
-msgstr ""
+msgstr "Смотрящий за колодцем"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:7
 msgctxt "frisians_building"
 msgid "Deep Well"
-msgstr ""
+msgstr "Глубокая скважина"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/wells-running-out.wad/fri_well_keeper/init.lua:7
 msgctxt "frisians_worker"
 msgid "Well Keeper"
-msgstr ""
+msgstr "Смотрящий за колодцем"
 
 #. TRANSLATORS: Purpose helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:34
 #: addons/wells-running-out.wad/postload.lua:69
 msgctxt "building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Извлекайте воду из глубины."
 
 #: addons/wells-running-out.wad/postload.lua:36
 #: addons/wells-running-out.wad/postload.lua:71
 #, lua-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%d секунда"
+msgstr[1] "%d секунды"
+msgstr[2] "%d секунд"
+msgstr[3] "%d секунд"
 
 #. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:36
