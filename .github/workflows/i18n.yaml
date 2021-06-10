@@ -23,7 +23,7 @@ jobs:
         git config --global user.email "bunnybot@widelands.org"
         javac *.java
         tx pull -fa
-        ./buildcats.sh
+        ./buildcats.sh < /dev/null
         if [ ${{ github.event_name }} == "workflow_dispatch" ] || [ -n "$(git status -s i18n list*)" ]
         then
           nrAdded=""
