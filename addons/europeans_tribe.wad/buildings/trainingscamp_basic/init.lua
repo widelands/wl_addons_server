@@ -85,7 +85,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=recruit_soldier"
+            "call=recruit_soldier",
+            "return=skipped"
          }
       },
       recruit_soldier = {
