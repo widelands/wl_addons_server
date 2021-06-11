@@ -73,6 +73,8 @@ descriptions:new_productionsite_type {
 
    inputs = {
       { name = "europeans_recruit", amount = 4 },
+      { name = "ration", amount = 4 },
+      { name = "beer", amount = 4 },
       { name = "spear_wooden", amount = 4 },
       { name = "armor", amount = 2 },
       { name = "tabard", amount = 2 }
@@ -83,7 +85,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=recruit_soldier"
+            "call=recruit_soldier",
+            "return=skipped"
          }
       },
       recruit_soldier = {
@@ -92,7 +95,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs europeans_soldier",
             "sleep=duration:30s",
-            "consume=armor,tabard spear_wooden europeans_recruit",
+            "consume=armor,tabard spear_wooden ration beer europeans_recruit",
             "animate=working duration:90s",
             "recruit=europeans_soldier"
          }

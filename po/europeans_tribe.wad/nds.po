@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-09 20:18+0200\n"
+"POT-Creation-Date: 2021-06-11 03:21+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -3936,6 +3936,124 @@ msgstr "Deese Soldat kann keene Verteidigung lehren."
 msgid "Evade"
 msgstr "Utwieken"
 
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:11
+msgid "Discovery"
+msgstr "Utförsken"
+
+#. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
+msgid ""
+"Start the game with three ships on the ocean and only a handful of supplies"
+msgstr ""
+"Begünn dat Speel mit dree Schippen up de See un blot een paar Materialien"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/fortified_village.lua:11
+msgid "Fortified Village"
+msgstr "Schanzendörp"
+
+#. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/fortified_village.lua:13
+msgid "Start the game with a big village with advanced castle in its center"
+msgstr ""
+"Begünn dat Speel mit eenem groten Dörp un eenem Groten Slött in de Midde"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
+msgid "Harbors"
+msgstr "Muden"
+
+#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:13
+msgid "Start the game with bundle of ports"
+msgstr "Begünn dat Speel mit een paar Muden"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
+msgid "Headquarters"
+msgstr "Raadhuus"
+
+#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:13
+msgid "Start the game with your headquarters only"
+msgstr "Begünn dat Speel mit nix as dien Raadhuus"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:11
+msgid "New World"
+msgstr "Neje Welt"
+
+#. TRANSLATORS: This is the tooltip for the "New World" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
+msgid "Start the game with advanced castle and port"
+msgstr "Begünn dat Speel mit eenem Groten Slött un eener Muu"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:11
+msgid "Poor Hamlet"
+msgstr "Nares Dörp"
+
+#. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:13
+msgid ""
+"Start the game with just a warehouse and the bare minimum for bootstrapping "
+"an economy. Warning: the AI can’t successfully start from this."
+msgstr ""
+"Begünn dat Speel mit nix as eenem Kraamhuus un so minn Waren as würrelk "
+"nödig, um eene Weertskupp uptobauen. Wahrschau: Künstelk Spelers könen daar "
+"nich mit spölen."
+
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:82
+msgid "Be careful"
+msgstr "Pass up"
+
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:82
+msgid ""
+"You have only one iron for each tool you will need to start your economy. "
+"Make sure no unneeded tool is created."
+msgstr ""
+"Du hest blot een Deel Iesen för elkeen Warktüüg, wat du för eene Weertskupp "
+"bruukst. Pass up, dat keen Warktüüg daarto maakt word."
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
+msgid "Struggling Outpost"
+msgstr "Bedröövte Butenstee"
+
+#. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:13
+msgid ""
+"Start the game with just your headquarters and very few wares for "
+"bootstrapping an economy. Warning: the AI can’t successfully start from this."
+msgstr ""
+"Begünn dat Speel mit dienem Raadhuus un blot een paar Waren, um eene "
+"Weertskupp uptobauen. Wahrschau: Künstelk Spelers könen daar nich mit spölen."
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
+msgid "Trading Outpost"
+msgstr "Hannelsposten"
+
+#. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:13
+msgid ""
+"If this player runs low on important wares, they will be replenished for "
+"free. Debug Mode."
+msgstr ""
+"Wenn de Speler nich mehr vööl vun wichtigen Waren hett, kriggt he welke för "
+"umsünst. För Entwicklers."
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/village.lua:11
+msgid "Village"
+msgstr "Dörp"
+
+#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/village.lua:13
+msgid "Start the game with a small peaceful village"
+msgstr "Begünn dat Speel mit eenem lütten freedsamen Dörp"
+
 #. TRANSLATORS: This is the europeans' ship's name used in lists of units
 #: addons/europeans_tribe.wad/ship/init.lua:83
 msgctxt "europeans_ship"
@@ -3998,127 +4116,9 @@ msgid_plural "%1%(+%2%) soldiers"
 msgstr[0] "%1%(+%2%) Soldat"
 msgstr[1] "%1%(+%2%) Soldaten"
 
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/discovery.lua:13
-msgid "Discovery"
-msgstr "Utförsken"
-
-#. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/discovery.lua:15
-msgid ""
-"Start the game with three ships on the ocean and only a handful of supplies"
-msgstr ""
-"Begünn dat Speel mit dree Schippen up de See un blot een paar Materialien"
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/fortified_village.lua:13
-msgid "Fortified Village"
-msgstr "Schanzendörp"
-
-#. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/fortified_village.lua:15
-msgid "Start the game with a big village with advanced castle in its center"
-msgstr ""
-"Begünn dat Speel mit eenem groten Dörp un eenem Groten Slött in de Midde"
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/harbors.lua:13
-msgid "Harbors"
-msgstr "Muden"
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/harbors.lua:15
-msgid "Start the game with bundle of ports"
-msgstr "Begünn dat Speel mit een paar Muden"
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/headquarters.lua:13
-msgid "Headquarters"
-msgstr "Raadhuus"
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/headquarters.lua:15
-msgid "Start the game with your headquarters only"
-msgstr "Begünn dat Speel mit nix as dien Raadhuus"
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/new_world.lua:13
-msgid "New World"
-msgstr "Neje Welt"
-
-#. TRANSLATORS: This is the tooltip for the "New World" starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/new_world.lua:15
-msgid "Start the game with advanced castle and port"
-msgstr "Begünn dat Speel mit eenem Groten Slött un eener Muu"
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/poor_hamlet.lua:13
-msgid "Poor Hamlet"
-msgstr "Nares Dörp"
-
-#. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/poor_hamlet.lua:15
-msgid ""
-"Start the game with just a warehouse and the bare minimum for bootstrapping "
-"an economy. Warning: the AI can’t successfully start from this."
-msgstr ""
-"Begünn dat Speel mit nix as eenem Kraamhuus un so minn Waren as würrelk "
-"nödig, um eene Weertskupp uptobauen. Wahrschau: Künstelk Spelers könen daar "
-"nich mit spölen."
-
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/poor_hamlet.lua:84
-msgid "Be careful"
-msgstr "Pass up"
-
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/poor_hamlet.lua:84
-msgid ""
-"You have only one iron for each tool you will need to start your economy. "
-"Make sure no unneeded tool is created."
-msgstr ""
-"Du hest blot een Deel Iesen för elkeen Warktüüg, wat du för eene Weertskupp "
-"bruukst. Pass up, dat keen Warktüüg daarto maakt word."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/struggling_outpost.lua:13
-msgid "Struggling Outpost"
-msgstr "Bedröövte Butenstee"
-
-#. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/struggling_outpost.lua:15
-msgid ""
-"Start the game with just your headquarters and very few wares for "
-"bootstrapping an economy. Warning: the AI can’t successfully start from this."
-msgstr ""
-"Begünn dat Speel mit dienem Raadhuus un blot een paar Waren, um eene "
-"Weertskupp uptobauen. Wahrschau: Künstelk Spelers könen daar nich mit spölen."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/trading_outpost.lua:13
-msgid "Trading Outpost"
-msgstr "Hannelsposten"
-
-#. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/trading_outpost.lua:15
-msgid ""
-"If this player runs low on important wares, they will be replenished for "
-"free. Debug Mode."
-msgstr ""
-"Wenn de Speler nich mehr vööl vun wichtigen Waren hett, kriggt he welke för "
-"umsünst. För Entwicklers."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/village.lua:13
-msgid "Village"
-msgstr "Dörp"
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/starting_conditions/village.lua:15
-msgid "Start the game with a small peaceful village"
-msgstr "Begünn dat Speel mit eenem lütten freedsamen Dörp"
-
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
-msgid "This is a proof-of-concept game tip for a proof-of-concept tribe."
-msgstr "Dat is een unützer Speelwenk för een ok nich nützelkers Volk."
+msgid "This is the experimental europeans tribe."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Log, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:102
