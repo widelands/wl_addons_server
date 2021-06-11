@@ -50,6 +50,8 @@ descriptions:new_productionsite_type {
 
    inputs = {
       { name = "europeans_recruit", amount = 6 },
+      { name = "ration", amount = 6 },
+      { name = "beer", amount = 6 },
       { name = "spear_wooden", amount = 6 },
       { name = "armor", amount = 3 },
       { name = "tabard", amount = 3 }
@@ -69,7 +71,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs europeans_soldier",
             "sleep=duration:30s",
-            "consume=armor,tabard spear_wooden europeans_recruit",
+            "consume=armor,tabard spear_wooden ration beer europeans_recruit",
             "animate=working duration:75s",
             "recruit=europeans_soldier"
          }
