@@ -68,7 +68,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs snack",
             "return=skipped when economy needs flour",
             "return=skipped when economy needs water",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "consume=water flour fish,meat",
             "animate=working duration:60s",
             "produce=ration"
@@ -80,7 +80,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs water and not economy needs ration",
             "return=skipped unless economy needs ration",
-            "sleep=duration:40s",
+            "sleep=duration:10s",
             "consume=water:2 flour:2 fish,meat:2",
             "animate=working duration:40s",
             "produce=ration:2"
@@ -94,7 +94,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs snack",
             "return=skipped when economy needs flour",
             "return=skipped when economy needs water",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "consume=water:2 flour:2 fish,meat:2",
             "animate=working duration:60s",
             "produce=snack"
@@ -106,9 +106,9 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs water and not economy needs snack",
             "return=skipped unless economy needs snack",
-            "sleep=duration:55s",
+            "sleep=duration:10s",
             "consume=water:4 flour:4 fish,meat:4",
-            "animate=working duration:55s",
+            "animate=working duration:50s",
             "produce=snack:3"
          }
       },

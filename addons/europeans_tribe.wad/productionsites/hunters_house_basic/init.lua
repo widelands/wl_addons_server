@@ -63,7 +63,7 @@ descriptions:new_productionsite_type {
          descname = _"hunting",
          actions = {
             "callworker=hunt",
-            "sleep=duration:48s"
+            "sleep=duration:50s"
          }
       },
    },

@@ -93,7 +93,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=buckets:2"
          }
       },
@@ -105,7 +105,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=shovel:2"
          }
       },
@@ -117,7 +117,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=saw:2"
          }
       },
@@ -129,7 +129,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=hammer:2"
          }
       },
@@ -141,7 +141,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=pick:2"
          }
       },
@@ -153,7 +153,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=basket:2"
          }
       },
@@ -165,7 +165,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=felling_ax:2"
          }
       },
@@ -177,7 +177,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=fire_tongs:2"
          }
       },
@@ -189,7 +189,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=scythe:2"
          }
       },
@@ -201,7 +201,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=milking_tongs:2"
          }
       },
@@ -213,7 +213,7 @@ descriptions:new_productionsite_type {
             "consume=iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=needles:2"
          }
       },
@@ -225,7 +225,7 @@ descriptions:new_productionsite_type {
             "consume=planks spidercloth",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=fishing_rod:2"
          }
       },
@@ -237,7 +237,7 @@ descriptions:new_productionsite_type {
             "consume=spidercloth:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=fishing_net:2"
          }
       },
@@ -249,7 +249,7 @@ descriptions:new_productionsite_type {
             "consume=planks spidercloth",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=hunting_bow:2"
          }
       },
@@ -261,7 +261,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=hunting_spear:2"
          }
       },
@@ -273,7 +273,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=bread_paddle:2"
          }
       },
@@ -285,7 +285,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:15s",
             "produce=hook_pole:2"
          }
       },

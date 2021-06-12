@@ -65,7 +65,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs cloth",
             "return=skipped when economy needs reed",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "consume=reed",
             "playsound=sound/barbarians/weaver priority:90%",
             "animate=working duration:60s",
@@ -77,7 +77,7 @@ descriptions:new_productionsite_type {
          descname = _"weaving",
          actions = {
             "return=skipped unless economy needs cloth",
-            "sleep=duration:40s",
+            "sleep=duration:10s",
             "consume=reed:3",
             "playsound=sound/barbarians/weaver priority:90%",
             "animate=working duration:40s",
@@ -91,7 +91,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs spidercloth",
             "return=skipped when economy needs tabard",
             "return=skipped when economy needs spider_silk",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "consume=spider_silk",
             "playsound=sound/mill/weaving priority:90%",
             "animate=working duration:60s",
@@ -104,7 +104,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs spidercloth",
             "consume=spider_silk:3",
-            "sleep=duration:40s",
+            "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",
             "animate=working duration:40s",
             "produce=spidercloth:3"
@@ -116,7 +116,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs tabard",
             "consume=spider_silk",
-            "sleep=duration:40s",
+            "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",
             "animate=working duration:40s",
             "produce=tabard"
