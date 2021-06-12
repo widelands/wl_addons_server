@@ -64,7 +64,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs water",
             "return=skipped when economy needs blackroot",
             "consume=water blackroot",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "playsound=sound/farm/sheep priority:50% allow_multiple",
             "animate=working duration:60s",
             "produce=wool"
@@ -76,7 +76,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs wool",
             "consume=water:2 blackroot:2",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "playsound=sound/farm/sheep priority:50% allow_multiple",
             "animate=working duration:60s",
             "produce=wool:2"

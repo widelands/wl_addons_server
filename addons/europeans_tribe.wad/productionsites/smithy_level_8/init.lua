@@ -104,7 +104,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=buckets:2"
          }
       },
@@ -116,7 +116,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=shovel:2"
          }
       },
@@ -128,7 +128,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=saw:2"
          }
       },
@@ -140,7 +140,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=hammer:2"
          }
       },
@@ -152,7 +152,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=pick:2"
          }
       },
@@ -164,7 +164,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=basket:2"
          }
       },
@@ -176,7 +176,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=felling_ax:2"
          }
       },
@@ -188,7 +188,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=fire_tongs:2"
          }
       },
@@ -200,7 +200,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=scythe:2"
          }
       },
@@ -212,7 +212,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=milking_tongs:2"
          }
       },
@@ -224,7 +224,7 @@ descriptions:new_productionsite_type {
             "consume=iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=needles:2"
          }
       },
@@ -236,7 +236,7 @@ descriptions:new_productionsite_type {
             "consume=planks spidercloth",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=fishing_rod:2"
          }
       },
@@ -248,7 +248,7 @@ descriptions:new_productionsite_type {
             "consume=spidercloth:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=fishing_net:2"
          }
       },
@@ -260,7 +260,7 @@ descriptions:new_productionsite_type {
             "consume=planks spidercloth",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=hunting_bow:2"
          }
       },
@@ -272,7 +272,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=hunting_spear:2"
          }
       },
@@ -284,7 +284,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=bread_paddle:2"
          }
       },
@@ -296,7 +296,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:20s",
             "produce=hook_pole:2"
          }
       },
@@ -308,7 +308,7 @@ descriptions:new_productionsite_type {
             "consume=planks",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=spear_wooden"
@@ -322,7 +322,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal:2 iron:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=spear_advanced"
@@ -336,7 +336,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal:2 iron:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=ax_broad"
@@ -349,7 +349,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs armor_chain",
             "consume=armor coal:2 iron:2",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "produce=armor_chain"
          }
       },
@@ -360,7 +360,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs armor_helmet",
             "consume=coal iron",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "produce=armor_helmet"
          }
       },
@@ -372,7 +372,7 @@ descriptions:new_productionsite_type {
             "consume=coal:2 iron:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "produce=helmet_mask"
          }
       },
@@ -383,7 +383,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs shield_steel",
             "consume=coal:2 iron:2",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "produce=shield_steel"
          }
       },
@@ -395,7 +395,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal:2 iron:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=sword_broad"
@@ -409,7 +409,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal:2 iron:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=trident_steel"
@@ -422,7 +422,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs tabard_golden",
             "consume=spidercloth coal iron:2 gold",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "produce=tabard_golden"
          }
       },
@@ -433,7 +433,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs armor_gilded",
             "consume=armor coal iron:2 gold",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "produce=armor_gilded"
          }
       },
@@ -444,7 +444,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs helmet_golden",
             "consume=coal:2 iron:2 gold",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "produce=helmet_golden"
          },
       },
@@ -456,7 +456,7 @@ descriptions:new_productionsite_type {
             "consume=coal:2 iron:2 gold",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "produce=helmet_warhelm"
          }
       },
@@ -467,7 +467,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs shield_advanced",
             "consume=coal:2 iron:2 gold",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "produce=shield_advanced"
          }
       },
@@ -479,7 +479,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal:2 iron:2 gold",
             "sleep=duration:5s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:5s",
             "produce=ax_warriors"
@@ -493,7 +493,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal:2 iron:2 gold",
             "sleep=duration:5s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:25s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:5s",
             "produce=trident_heavy_double"

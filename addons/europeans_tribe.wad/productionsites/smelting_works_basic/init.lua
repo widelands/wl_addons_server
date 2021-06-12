@@ -76,7 +76,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs coal",
             "return=skipped when economy needs ore",
             "consume=ore coal",
-            "sleep=duration:25s",
+            "sleep=duration:10s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
             "animate=working duration:25s",
             "playsound=sound/metal/ironping priority:60%",
@@ -89,7 +89,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs iron",
             "consume=ore:3 coal:3",
-            "sleep=duration:25s",
+            "sleep=duration:10s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
             "animate=working duration:35s",
             "playsound=sound/metal/ironping priority:60%",

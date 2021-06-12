@@ -31,13 +31,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "sleep=duration:10s",
+            "sleep=duration:5s",
             "animate=working duration:10s",
             "mine=resource_water radius:4 yield:100% when_empty:99%",
             "produce=water"
          }
       },
    },
+   
    out_of_resource_notification = {
       -- Translators: Short for "Out of ..." for a resource
       title = _"No Water",

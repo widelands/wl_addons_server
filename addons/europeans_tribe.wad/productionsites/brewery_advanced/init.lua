@@ -71,7 +71,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs water",
             "return=skipped when economy needs barley",
             "consume=water barley",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "animate=working duration:60s",
             "produce=beer"
          }
@@ -85,8 +85,8 @@ descriptions:new_productionsite_type {
             "return=skipped when site has honey and economy needs mead and not economy needs beer",
             "return=skipped when site has barley and economy needs beer_strong and not economy needs beer",
             "consume=water:3 barley:3",
-            "sleep=duration:50s",
-            "animate=working duration:50s",
+            "sleep=duration:10s",
+            "animate=working duration:60s",
             "produce=beer:3"
          }
       },
@@ -101,7 +101,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs barley",
             "return=skipped when economy needs honey",
             "consume=water barley honey",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "animate=working duration:60s",
             "produce=mead"
          }
@@ -115,8 +115,8 @@ descriptions:new_productionsite_type {
             "return=skipped when site has barley and economy needs beer and not economy needs mead",
             "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
             "consume=water:3 barley:3 honey:3",
-            "sleep=duration:50s",
-            "animate=working duration:50s",
+            "sleep=duration:10s",
+            "animate=working duration:60s",
             "produce=mead:3"
          }
       },
@@ -130,8 +130,8 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs water",
             "return=skipped when economy needs barley",
             "consume=water barley",
-            "sleep=duration:90s",
-            "animate=working duration:90s",
+            "sleep=duration:10s",
+            "animate=working duration:80s",
             "produce=beer_strong"
          }
       },
@@ -144,7 +144,7 @@ descriptions:new_productionsite_type {
             "return=skipped when site has barley and economy needs beer and not economy needs beer_strong",
             "return=skipped when site has honey and economy needs mead and not economy needs beer_strong",
             "consume=water:4 barley:4",
-            "sleep=duration:80s",
+            "sleep=duration:10s",
             "animate=working duration:80s",
             "produce=beer_strong:3"
          }

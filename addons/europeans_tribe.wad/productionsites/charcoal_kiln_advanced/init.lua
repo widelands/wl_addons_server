@@ -51,7 +51,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs coal",
             "return=skipped when economy needs log",
             "consume=log:3",
-            "sleep=duration:30s",
+            "sleep=duration:10s",
             "animate=working duration:1m30s",
             "produce=coal"
          }
@@ -62,8 +62,8 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs coal",
             "consume=log:12",
-            "sleep=duration:30s",
-            "animate=working duration:2m30s",
+            "sleep=duration:10s",
+            "animate=working duration:2m",
             "produce=coal:5",
          }
       },
@@ -74,7 +74,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs coal",
             "return=skipped when economy needs blackwood",
             "consume=blackwood:6",
-            "sleep=duration:30s",
+            "sleep=duration:10s",
             "animate=working duration:2m", -- Charcoal fires will burn for some days in real life
             "produce=coal:3"
          }
@@ -86,7 +86,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs coal",
             "return=skipped when economy needs planks",
             "consume=planks:6",
-            "sleep=duration:30s",
+            "sleep=duration:10s",
             "animate=working duration:2m", -- Charcoal fires will burn for some days in real life
             "produce=coal:3"
          }
