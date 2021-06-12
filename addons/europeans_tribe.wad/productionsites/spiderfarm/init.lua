@@ -62,7 +62,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs water",
             "return=skipped when economy needs corn",
             "consume=corn water",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "animate=working duration:60s",
             "produce=spider_silk"
          }
@@ -73,7 +73,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs spider_silk",
             "consume=corn:2 water:2",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "animate=working duration:60s",
             "produce=spider_silk:2"
          }

@@ -37,7 +37,7 @@ descriptions:new_productionsite_type {
          descname = _"fishing in sea",
          actions = {
             "callworker=fish_in_sea",
-            "sleep=duration:32s",
+            "sleep=duration:30s",
          }
       },
       fishing_in_pond = {
@@ -46,7 +46,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs fish",
             "callworker=fish_in_pond",
-            "sleep=duration:16s",
+            "sleep=duration:15s",
          }
       },
    },

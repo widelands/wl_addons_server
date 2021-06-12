@@ -64,7 +64,7 @@ descriptions:new_productionsite_type {
             "return=failed unless site has water",
             "callworker=dig",
             "consume=water",
-            "sleep=duration:20s",
+            "sleep=duration:10s",
             "animate=working duration:15s",
             "sleep=duration:1s",
             "produce=clay"

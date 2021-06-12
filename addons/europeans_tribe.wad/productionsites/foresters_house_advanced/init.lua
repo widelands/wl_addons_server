@@ -51,7 +51,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs water and not economy needs log",
             "consume=water",
             "callworker=plant",
-            "sleep=duration:12s"
+            "sleep=duration:10s"
          }
       },
       terraform = {

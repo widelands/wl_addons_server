@@ -66,7 +66,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs planks",
             "return=skipped when economy needs log",
             "consume=log:2",
-            "sleep=duration:30s",
+            "sleep=duration:10s",
             "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
             "animate=working duration:30s", 
             "produce=planks"
@@ -80,7 +80,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs planks",
             "return=skipped when economy needs log",
             "consume=log:2",
-            "sleep=duration:30s",
+            "sleep=duration:10s",
             "playsound=sound/barbarians/blackwood priority:60%",
             "animate=working duration:30s",
             "produce=blackwood"
@@ -92,7 +92,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs planks",
             "consume=log:4",
-            "sleep=duration:15s",
+            "sleep=duration:10s",
             "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
             "animate=working duration:20s",
             "produce=planks:3"
@@ -104,7 +104,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs blackwood",
             "consume=log:4",
-            "sleep=duration:15s",
+            "sleep=duration:10s",
             "playsound=sound/barbarians/blackwood priority:60%",
             "animate=working duration:20s",
             "produce=blackwood:3"

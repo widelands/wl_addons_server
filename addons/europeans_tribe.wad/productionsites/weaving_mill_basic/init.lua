@@ -77,7 +77,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs cloth",
             "return=skipped when economy needs reed",
-            "sleep=duration:60s",
+            "sleep=duration:10s",
             "consume=reed",
             "playsound=sound/barbarians/weaver priority:90%",
             "animate=working duration:60s",
@@ -89,7 +89,7 @@ descriptions:new_productionsite_type {
          descname = _"weaving",
          actions = {
             "return=skipped unless economy needs cloth",
-            "sleep=duration:50s",
+            "sleep=duration:10s",
             "consume=reed:3",
             "playsound=sound/barbarians/weaver priority:90%",
             "animate=working duration:50s",

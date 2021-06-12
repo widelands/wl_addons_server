@@ -59,7 +59,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs coal",
             "consume=ration beer",
-            "sleep=duration:15s",
+            "sleep=duration:10s",
             "call=mine_produce",
             "call=mine_produce",
             "consume=ration beer",

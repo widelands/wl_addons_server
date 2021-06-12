@@ -16,10 +16,10 @@ public class UpdateList {
 			}
 		}
 
-		public final String version, uploader;
+		public final String cached_version, uploader;
 		public final int i18n_version, votes;
 		public final float rating;
-		public final boolean verified;
+		public boolean verified;
 		public final long timestamp, downloadCount;
 		public final List<Comment> comments;
 		public final int[] ratings;
@@ -32,7 +32,7 @@ public class UpdateList {
 		public Data(String v, String u, int i, boolean ver, long t, long dl, List<Comment> c, int[] rs) {
 			comments = c;
 			uploader = u;
-			version = v;
+			cached_version = v;
 			i18n_version = i;
 			verified = ver;
 			timestamp = t;
@@ -95,15 +95,17 @@ public class UpdateList {
 			TreeMap<String, Utils.Value> metadataServer = Utils.readProfile(metadataFileServer, addon);
 
 			TreeMap<String, Utils.Value> edit = new TreeMap<>();
-			if (verify.contains(addon)) edit.put("security", new Utils.Value("security", "verified"));
+			boolean markUnsafeOnUpdate = false;
+			if (verify.contains(addon)) {
+				edit.put("security", new Utils.Value("security", "verified"));
+			} else {
+				markUnsafeOnUpdate = true;
+			}
 			if (increase.contains(addon)) {
 				edit.put("i18n_version", new Utils.Value("i18n_version",
 						"" + (Integer.valueOf(metadataMaintain.get("i18n_version").value) + 1)));
 			}
-			if (!edit.isEmpty()) {
-				Utils.editMetadata(false, addon, edit);
-				metadataMaintain = Utils.readProfile(metadataFileMaintain, addon);
-			}
+			metadataMaintain.putAll(edit);
 
 			int[] votes = new int[10];
 			for (int i = 1; i <= votes.length; ++i) votes[i - 1] = Integer.valueOf(metadataServer.get("votes_" + i).value);
@@ -164,6 +166,16 @@ public class UpdateList {
 				}
 			}
 			for (Long l : d.sizes) d.totalSize += l;
+
+			if (!d.cached_version.equals(d.new_version)) {
+				edit.put("version", new Utils.Value("version", d.new_version));
+				if (markUnsafeOnUpdate) {
+					d.verified = false;
+					edit.put("security", new Utils.Value("security", "unchecked"));
+				}
+			}
+
+			if (!edit.isEmpty()) Utils.editMetadata(false, addon, edit);
 			System.out.println(" done");
 		}
 		return result;
@@ -259,15 +271,7 @@ public class UpdateList {
 			for (String r : data.screenies) w.println(r);
 		}
 
-		// never verify immediately during an update
-		w.println(data.verified && data.version.equals(data.new_version) ? "verified" : "unchecked");
-
-		if (listVersion == 1 && !data.version.equals(data.new_version)) {
-			TreeMap<String, Utils.Value> edit = new TreeMap<>();
-			edit.put("version", new Utils.Value("version", data.new_version));
-			edit.put("security", new Utils.Value("security", "unchecked"));
-			Utils.editMetadata(false, addon.getName(), edit);
-		}
+		w.println(data.verified ? "verified" : "unchecked");
 	}
 
 	private static final int kHighestListVersion = 3;
@@ -277,7 +281,8 @@ public class UpdateList {
 		for (String s : args) {
 			if (s.isEmpty()) continue;
 			String name = s.substring(1);
-			if (!new File("addons", name).isDirectory()) {
+			File check = new File("addons", name);
+			if (!check.isDirectory() || !check.getName().equals(name)) {
 				System.out.println("ERROR: Add-on '" + name + "' does not exist");
 				System.exit(2);
 			}

@@ -71,7 +71,7 @@ descriptions:new_productionsite_type {
          descname = _"fishing in sea",
          actions = {
             "callworker=fish_in_sea",
-            "sleep=duration:48s",
+            "sleep=duration:50s",
          }
       },
    },
