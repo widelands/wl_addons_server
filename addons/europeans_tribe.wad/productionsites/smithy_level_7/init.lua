@@ -97,7 +97,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs buckets",
             "consume=planks coal iron",
-            "sleep=duration:10s",,
+            "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:25s",
             "produce=buckets:2"
