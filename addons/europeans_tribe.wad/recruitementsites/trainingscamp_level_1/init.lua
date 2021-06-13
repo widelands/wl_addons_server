@@ -71,10 +71,10 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting soldier"),
          actions = {
             "return=skipped unless economy needs europeans_soldier",
-            "sleep=duration:30s",
-            "consume=armor,tabard spear_wooden ration beer europeans_recruit",
-            "animate=working duration:75s",
-            "recruit=europeans_soldier"
+            "sleep=duration:10s",
+            "consume=armor tabard spear_wooden:2 ration:2 beer:2 europeans_recruit:2",
+            "animate=working duration:90s",
+            "recruit=europeans_soldier:2"
          }
       },
    },
