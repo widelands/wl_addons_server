@@ -12,19 +12,15 @@ jobs:
       with:
         fetch-depth: 1
     - name: Updating the lists
-      run: |
-        javac *.java
-        java UpdateList < /dev/null
+      run: ./update_lists.sh < /dev/null
     - name: Check integrity
       run: |
         if [ -n "$(git status -s)" ]
         then
-          echo "################################################################"
-          echo "  The lists are not clean! Run the following commands to"
+          echo "############################################################"
+          echo "  The lists are not clean! Run './update_lists.sh' to"
           echo "  clean up your lists, then commit and push the changes."
-          echo "      javac *.java"
-          echo "      java UpdateList"
-          echo "################################################################"
+          echo "############################################################"
           git status
           git diff
           exit 1

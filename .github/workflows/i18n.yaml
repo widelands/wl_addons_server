@@ -21,7 +21,6 @@ jobs:
         echo "${{ secrets.TXAUTH }}" > ~/.transifexrc
         git config --global user.name "The Widelands Translations Bot"
         git config --global user.email "bunnybot@widelands.org"
-        javac *.java
         tx pull -fa
         ./buildcats.sh < /dev/null
         if [ ${{ github.event_name }} == "workflow_dispatch" ] || [ -n "$(git status -s i18n list*)" ]
