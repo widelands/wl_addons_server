@@ -12,15 +12,17 @@ package wl.server;
  * If the username is "", the server then replies ENDOFSTREAM\n.
  * Otherwise:
  *   - The server replies with a random number followed by \nENDOFSTREAM\n.
- *   - The client calculates the hash of the password hash and the random number and sends the result followed by \nENDOFSTREAM\n.
+ *   - The client calculates the hash of the password hash and the random number and sends the
+ * result followed by \nENDOFSTREAM\n.
  *   - The server checks whether the result is correct and sends one of these:
  *     - SUCCESS\n for accepted standard user
  *     - ADMIN\n for accepted superuser
  *     - an error message for incorrect username or password
  *
  * The only currently supported protocol version is 4. All documentation here refers to version 4.
- * Note that compatibility for *all* versions *ever introduced* needs to be maintained *indefinitely*.
- * The first supported version is 4; the version numbers 1-3 are used by the legacy "GitHub Repo List" format.
+ * Note that compatibility for *all* versions *ever introduced* needs to be maintained
+ * *indefinitely*. The first supported version is 4; the version numbers 1-3 are used by the legacy
+ * "GitHub Repo List" format.
  *
  * All arguments to commands are whitespace-terminated strings.
  * The return value is a \n-terminated string.
@@ -182,8 +184,8 @@ public enum Command {
 	 * CMD_SUBMIT name
 	 * Upload an add-on.
 	 * Arg 1: Add-on name
-	 * Then, on the next line, the content of the add-on like the response for CMD_DOWNLOAD, terminated by ENDOFSTREAM\n.
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 * Then, on the next line, the content of the add-on like the response for CMD_DOWNLOAD,
+	 * terminated by ENDOFSTREAM\n. Returns: ENDOFSTREAM\n or an error message\n
 	 */
 	CMD_SUBMIT,
 
@@ -195,8 +197,8 @@ public enum Command {
 	 * Arg 3: The file's checksum
 	 * Arg 4: Number of whitespaces in the description
 	 * Arg 5: Screenshot description
-	 * Then, on the next line, the content of the image file like for CMD_SCREENSHOT, terminated by ENDOFSTREAM\n.
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 * Then, on the next line, the content of the image file like for CMD_SCREENSHOT, terminated by
+	 * ENDOFSTREAM\n. Returns: ENDOFSTREAM\n or an error message\n
 	 */
 	CMD_SUBMIT_SCREENSHOT,
 

@@ -16,12 +16,14 @@ public abstract class Utils {
 
 	synchronized public static File createTempDir() {
 		File d;
-		do { d = new File("temp", "temp_" + System.currentTimeMillis()); } while (d.exists());
+		do {
+			d = new File("temp", "temp_" + System.currentTimeMillis());
+		} while (d.exists());
 		d.mkdirs();
 		return d;
 	}
 
-	public static int bash(String ... args) throws Exception {
+	public static int bash(String... args) throws Exception {
 		System.out.print("    $");
 		for (String a : args) System.out.print(" " + a);
 		System.out.println();
@@ -60,20 +62,24 @@ public abstract class Utils {
 		public String value(String locale) {
 			if (textdomain == null || textdomain.isEmpty()) return value;
 			try {
-				return new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec(new String[] {
-						"bash", "-c",
-							"TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain + " LANGUAGE=" + locale +
-								" gettext -s \"" + value.replaceAll("\"", "\\\"") + "\""
-					}).getInputStream())).readLine();
+				return new BufferedReader(
+				           new InputStreamReader(
+				               Runtime.getRuntime()
+				                   .exec(new String[] {
+				                       "bash", "-c",
+				                       "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
+				                           " LANGUAGE=" + locale + " gettext -s \"" +
+				                           value.replaceAll("\"", "\\\"") + "\""})
+				                   .getInputStream()))
+				    .readLine();
 			} catch (Exception e) {
-				System.out.println("[" + Thread.currentThread().getName() + "] WARNING: gettext error for '" +
-						key + "'='" + value + "' @ '" + textdomain + "' / '" + locale + "': " + e);
+				System.out.println("[" + Thread.currentThread().getName() +
+				                   "] WARNING: gettext error for '" + key + "'='" + value +
+				                   "' @ '" + textdomain + "' / '" + locale + "': " + e);
 				return value;
 			}
 		}
-		public Value(String k, String v) {
-			this(k, v, null);
-		}
+		public Value(String k, String v) { this(k, v, null); }
 		public Value(String k, String v, String t) {
 			key = k;
 			value = v;
@@ -81,7 +87,8 @@ public abstract class Utils {
 		}
 	}
 
-	synchronized public static TreeMap<String, Value> readProfile(File f, String textdomain) throws Exception {
+	synchronized public static TreeMap<String, Value> readProfile(File f, String textdomain)
+	    throws Exception {
 		if (_staticprofiles.containsKey(f)) return _staticprofiles.get(f);
 
 		TreeMap<String, Value> profile = new TreeMap<>();
@@ -104,19 +111,24 @@ public abstract class Utils {
 			String arg = str[1];
 			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
 			boolean localize = false;
-			if (arg.startsWith("_")) { arg = arg.substring(1).trim(); localize = true; }
+			if (arg.startsWith("_")) {
+				arg = arg.substring(1).trim();
+				localize = true;
+			}
 			if (arg.startsWith("\"")) {
 				arg = arg.substring(1);
 				if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
 			}
-			profile.put(str[0], new Value(str[0], arg, localize ? textdomain == null ? "" : textdomain : null));
+			profile.put(str[0], new Value(str[0], arg,
+			                              localize ? textdomain == null ? "" : textdomain : null));
 		}
 
 		_staticprofiles.put(f, profile);
 		return profile;
 	}
 
-	synchronized public static void editProfile(File f, String textdomain, TreeMap<String, Value> changes) throws Exception {
+	synchronized public static void
+	editProfile(File f, String textdomain, TreeMap<String, Value> changes) throws Exception {
 		TreeMap<String, Value> profile = readProfile(f, textdomain);
 		profile.putAll(changes);
 		f.getParentFile().mkdirs();
@@ -132,8 +144,10 @@ public abstract class Utils {
 		out.close();
 	}
 
-	synchronized public static void editMetadata(boolean server, String addon, TreeMap<String, Value> changes) throws Exception {
-		editProfile(new File("metadata", addon + (server ? ".server" : ".maintain")), addon, changes);
+	synchronized public static void
+	editMetadata(boolean server, String addon, TreeMap<String, Value> changes) throws Exception {
+		editProfile(
+		    new File("metadata", addon + (server ? ".server" : ".maintain")), addon, changes);
 	}
 
 	synchronized public static void initMetadata(String addon, String uploader) throws Exception {
@@ -155,11 +169,14 @@ public abstract class Utils {
 	synchronized public static void registerDownload(String addon) throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
-		ch.put("downloads", new Value("downloads", "" + (Long.valueOf(readProfile(f, addon).get("downloads").value) + 1)));
+		ch.put("downloads",
+		       new Value("downloads",
+		                 "" + (Long.valueOf(readProfile(f, addon).get("downloads").value) + 1)));
 		editMetadata(true, addon, ch);
 	}
 
-	synchronized public static void registerVote(String addon, String user, String v) throws Exception {
+	synchronized public static void registerVote(String addon, String user, String v)
+	    throws Exception {
 		File votesFile = new File(config("uservotesdir"));
 		votesFile.mkdir();
 		votesFile = new File(votesFile, addon);
@@ -174,15 +191,22 @@ public abstract class Utils {
 		Value oldVote = uservotes.get(user);
 		if (oldVote != null && !oldVote.value.equals("0")) {
 			if (oldVote.value.equals("" + v)) return;
-			chM.put("votes_" + oldVote.value, new Value("votes_" + oldVote.value, "" + (Long.valueOf(metadata.get("votes_" + oldVote.value).value) - 1)));
+			chM.put(
+			    "votes_" + oldVote.value,
+			    new Value("votes_" + oldVote.value,
+			              "" + (Long.valueOf(metadata.get("votes_" + oldVote.value).value) - 1)));
 		}
 		chV.put(user, new Value(user, "" + v));
-		if (!v.equals("0")) chM.put("votes_" + v, new Value("votes_" + v, "" + (Long.valueOf(metadata.get("votes_" + v).value) + 1)));
+		if (!v.equals("0"))
+			chM.put(
+			    "votes_" + v,
+			    new Value("votes_" + v, "" + (Long.valueOf(metadata.get("votes_" + v).value) + 1)));
 		editMetadata(true, addon, chM);
 		editProfile(votesFile, addon, chV);
 	}
 
-	synchronized public static void comment(String addon, String user, String version, String message) throws Exception {
+	synchronized public static void
+	comment(String addon, String user, String version, String message) throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 
@@ -191,23 +215,29 @@ public abstract class Utils {
 
 		ch.put("comment_name_" + c, new Value("comment_name_" + c, user));
 		ch.put("comment_version_" + c, new Value("comment_version_" + c, version));
-		ch.put("comment_timestamp_" + c, new Value("comment_timestamp_" + c, "" + (System.currentTimeMillis() / 1000)));
+		ch.put("comment_timestamp_" + c,
+		       new Value("comment_timestamp_" + c, "" + (System.currentTimeMillis() / 1000)));
 		String[] msg = message.split("\n");
 		ch.put("comment_" + c, new Value("comment_" + c, "" + (msg.length - 1)));
-		for (int i = 0; i < msg.length; ++i) ch.put("comment_" + c + "_" + i, new Value("comment_" + c + "_" + i, msg[i]));
+		for (int i = 0; i < msg.length; ++i)
+			ch.put("comment_" + c + "_" + i, new Value("comment_" + c + "_" + i, msg[i]));
 
 		editMetadata(true, addon, ch);
 	}
 
-	synchronized public static void editComment(String addon, String index, String user, String message) throws Exception {
+	synchronized public static void
+	editComment(String addon, String index, String user, String message) throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 
 		ch.put("comment_editor_" + index, new Value("comment_editor_" + index, user));
-		ch.put("comment_edit_timestamp_" + index, new Value("comment_edit_timestamp_" + index, "" + (System.currentTimeMillis() / 1000)));
+		ch.put(
+		    "comment_edit_timestamp_" + index,
+		    new Value("comment_edit_timestamp_" + index, "" + (System.currentTimeMillis() / 1000)));
 		String[] msg = message.split("\n");
 		ch.put("comment_" + index, new Value("comment_" + index, "" + (msg.length - 1)));
-		for (int i = 0; i < msg.length; ++i) ch.put("comment_" + index + "_" + i, new Value("comment_" + index + "_" + i, msg[i]));
+		for (int i = 0; i < msg.length; ++i)
+			ch.put("comment_" + index + "_" + i, new Value("comment_" + index + "_" + i, msg[i]));
 
 		editMetadata(true, addon, ch);
 	}
@@ -219,8 +249,10 @@ public abstract class Utils {
 	public static long filesize(File dir) {
 		long l = 0;
 		for (File f : listSorted(dir)) {
-			if (f.isDirectory()) l += filesize(f);
-			else l += f.length();
+			if (f.isDirectory())
+				l += filesize(f);
+			else
+				l += f.length();
 		}
 		return l;
 	}
@@ -249,10 +281,12 @@ public abstract class Utils {
 
 		System.out.println("    Sending message: " + msg);
 
-		Process p = Runtime.getRuntime().exec(new String[] {"bash", "-c",
-			"curl -X POST -H \"Accept: application/vnd.github.v3+json\" -u " +
-					config("githubusername") + ":" + config("githubtoken") +
-				" https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments -d '{\"body\":\"" + msg + "\"}'"});
+		Process p = Runtime.getRuntime().exec(new String[] {
+		    "bash", "-c",
+		    "curl -X POST -H \"Accept: application/vnd.github.v3+json\" -u " +
+		        config("githubusername") + ":" + config("githubtoken") +
+		        " https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments -d '{\"body\":\"" +
+		        msg + "\"}'"});
 		p.waitFor();
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 		boolean err = false;
@@ -292,9 +326,15 @@ public abstract class Utils {
 
 			TreeMap<String, Value> profile = null;
 			switch (status) {
-				case kUnchanged: profile = unchanged; break;
-				case kSource: profile = source; break;
-				case kHead: profile = head; break;
+				case kUnchanged:
+					profile = unchanged;
+					break;
+				case kSource:
+					profile = source;
+					break;
+				case kHead:
+					profile = head;
+					break;
 			}
 
 			String[] str = line.split("=");
@@ -305,7 +345,10 @@ public abstract class Utils {
 			String arg = str[1];
 			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
 			boolean localize = false;
-			if (arg.startsWith("_")) { arg = arg.substring(1); localize = true; }
+			if (arg.startsWith("_")) {
+				arg = arg.substring(1);
+				localize = true;
+			}
 			if (arg.startsWith("\"")) arg = arg.substring(1);
 			if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
 			profile.put(str[0], new Value(str[0], arg, localize ? "" : null));
@@ -318,7 +361,8 @@ public abstract class Utils {
 				String result = null;
 				switch (key) {
 					case "security":
-						result = (vh.equals("verified") && vs.equals("verified")) ? vh : "unchecked";
+						result =
+						    (vh.equals("verified") && vs.equals("verified")) ? vh : "unchecked";
 						break;
 					case "i18n_version":
 						result = vs;
@@ -334,7 +378,8 @@ public abstract class Utils {
 							result = vh;
 							break;
 						}
-						throw new Exception("Unable to merge key '" + key + "' in file " + f.getPath());
+						throw new Exception("Unable to merge key '" + key + "' in file " +
+						                    f.getPath());
 				}
 				unchanged.put(key, new Value(key, result, head.get(key).textdomain));
 			} else {
