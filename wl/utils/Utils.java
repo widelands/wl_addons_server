@@ -1,3 +1,5 @@
+package wl.utils;
+
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
@@ -69,10 +71,10 @@ public class Utils {
 				return value;
 			}
 		}
-		Value(String k, String v) {
+		public Value(String k, String v) {
 			this(k, v, null);
 		}
-		Value(String k, String v, String t) {
+		public Value(String k, String v, String t) {
 			key = k;
 			value = v;
 			textdomain = t;
@@ -89,18 +91,24 @@ public class Utils {
 		}
 
 		for (String line : Files.readAllLines(f.toPath())) {
-			if (line.trim().startsWith("#")) continue;
+			line = line.trim();
+			if (line.startsWith("#")) continue;
 			String[] str = line.split("=");
+			for (int i = 0; i < str.length; i++) str[i] = str[i].trim();
+
 			if (str.length < 2) {
 				if (str.length == 1) profile.put(str[0], new Value(str[0], ""));
 				continue;
 			}
+
 			String arg = str[1];
 			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
 			boolean localize = false;
-			if (arg.startsWith("_")) { arg = arg.substring(1); localize = true; }
-			if (arg.startsWith("\"")) arg = arg.substring(1);
-			if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
+			if (arg.startsWith("_")) { arg = arg.substring(1).trim(); localize = true; }
+			if (arg.startsWith("\"")) {
+				arg = arg.substring(1);
+				if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
+			}
 			profile.put(str[0], new Value(str[0], arg, localize ? textdomain == null ? "" : textdomain : null));
 		}
 

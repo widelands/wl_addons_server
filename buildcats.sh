@@ -1,7 +1,14 @@
 #!/bin/bash
 
+./compile.sh
+
 # Update catalogs
-java Buildcats
+java -cp ./build wl.utils.Buildcats
+if ! [ $? -eq 0 ]
+then
+  echo "Error generating catalogues"
+  exit 1
+fi
 
 # Synchronize and compile translations
 cd po
@@ -46,4 +53,9 @@ do
   fi
 done
 cd ..
-java UpdateList ${changed[*]}
+java -cp ./build wl.utils.UpdateList ${changed[*]}
+if ! [ $? -eq 0 ]
+then
+  echo "Error updating lists"
+  exit 1
+fi

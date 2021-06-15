@@ -8,9 +8,7 @@ New add-ons, or upgrades for existing ones, as well as new or updated screenshot
 
 ### Prerequisites
 
-Before running the server or adding add-ons to this repository be sure a java development kit (JDK) is installed to compile the UpdateList.java script.
-
-After the installation of the JDK run `javac *.java` in the base folder.
+Before running the server or adding add-ons to this repository be sure a java development kit (JDK) is installed to compile the Java programs.
 
 ### The server
 
@@ -35,7 +33,7 @@ Key                | Description                             | Example
 Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on the specified port of your machine. In order to connect to this server from the game, run Widelands with the commandline parameters `--addon_server_ip=127.0.0.1 --addon_server_port=7399` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server and `7399` with the port number from the config file).  
 Note that the server runs as a daemon; that is, it is independent from your process and all output is redirected to a file called `server.log` which will be overwritten on every run. To terminate the server daemon, retrieve the PID of the process from the second line of the logfile and then type `kill <PID>`.
 
-The server protocol is documented in `Server.java`.
+The server protocol is documented in `wl/server/Server.java`.
 
 Widelands version 1.0 and older does not connect to the server. It instead downloads and parses the `list*` files in this repository and then downloads each file belonging to an add-on separately. Every change to an add-on must therefore be reflected in the `list*` files so that the full add-on selection is available also to Widelands 1.0 users.   
 For this reason, the server automatically syncs its repo checkout with the GitHub repo every night. Normally, all required steps are done fully automatically. Occasionally, a merge conflict may arise which may prove too difficult for the server to handle on its own.   
@@ -55,7 +53,7 @@ If you want to provide some screenshots for your addon, add the screenshots to t
 
 #### Apply changes
 
-After adding the addon and probably some screenshots, run `java UpdateList` inside the base folder, then git add,commit,push. Then create a pull request here.
+After adding the addon and probably some screenshots, run `./update_lists.sh` inside the base folder, then git add,commit,push. Then create a pull request here.
 
 If you added a new add-on, the `UpdateList` program will prompt you to enter your uploader name.
 
@@ -66,7 +64,7 @@ Same applies to screenshots: Just replace or add new ones. Be sure to update the
 
 After **any** change to an add-on’s contents (even very small ones), you need to increase the add-on’s version number.
 
-After you have done run `java UpdateList`, then git add,commit,push.
+After you have done run `./update_lists.sh`, then git add,commit,push.
 
 #### Verifying add-ons
 
@@ -86,7 +84,7 @@ Issues related to the add-on system in general, or not related to add-ons at all
 
 Verification of **new** add-ons should be done **only** by a developer who is also a Transifex administrator!
 
-To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `java UpdateList '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
+To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `./update_lists.sh '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
 
 If the add-on was not up for translation on Transifex yet, you need to follow these steps afterwards to ensure that it can be translated:
 - Run `setup_tx.sh cool_feature.wad` (where `cool_feature.wad` is the name of the add-on), then git add,commit,push.
@@ -105,7 +103,7 @@ A GitHub action periodically syncs the translations with Transifex and compiles 
 
 #### Notes
 
-If you want to submit a new add-on or update an existing one without using the in-game add-ons manager, open a pull request with this change and make sure you followed the steps described above. In particular, be sure to re-run `java UpdateList` after *every* change (even small ones!).
+If you want to submit a new add-on or update an existing one without using the in-game add-ons manager, open a pull request with this change and make sure you followed the steps described above. In particular, be sure to re-run `./update_lists.sh` after *every* change (even small ones!).
 
 ### License
 
