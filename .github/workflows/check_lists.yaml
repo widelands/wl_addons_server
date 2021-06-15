@@ -29,7 +29,7 @@ jobs:
         fi
 
   format:
-    if: github.event_name == push
+    if: github.event_name == 'push'
     needs: [check]
     name: Format code
     runs-on: ubuntu-20.04
