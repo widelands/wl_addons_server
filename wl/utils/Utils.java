@@ -4,7 +4,7 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
-public class Utils {
+public abstract class Utils {
 	public static final TreeMap<File, TreeMap<String, Value>> _staticprofiles = new TreeMap<>();
 
 	public static File[] listSorted(File dir) {
