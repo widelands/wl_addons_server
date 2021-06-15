@@ -143,38 +143,6 @@ function set_ship_capacity(player, ship_name, capacity)
     end
 end
 
-function allow_building(player, bld_name)
-    if bld_name == "all" then
-        player:allow_buildings(bld_name)
-    else
-        player:allow_buildings{bld_name}
-    end
-end
-
-function forbid_building(player, bld_name)
-    if bld_name == "all" then
-        player:forbid_buildings(bld_name)
-    else
-        player:forbid_buildings{bld_name}
-    end
-end
-
-function allow_worker(player, wrk_name)
-    if wrk_name == "all" then
-        player:allow_workers(wrk_name)
-    else
-        player:allow_workers{wrk_name}
-    end
-end
-
-function forbid_worker(player, wrk_name)
-    if wrk_name == "all" then
-        player:forbid_workers(wrk_name)
-    else
-        player:forbid_workers{wrk_name}
-    end
-end
-
 function place_object(startx, starty, objectname)
     local game = wl.Game()
     local map = game.map
@@ -253,13 +221,6 @@ function place_building(player, startx, starty, radius, buildingname)
     place_building_in_region(player, buildingname, fields)
 end
 
-function place_headquarters(player, startx, starty, radius)
-    local tribe = player.tribe
-    local hqname = tribe.name .. "_headquarters"
-
-    place_building(player, startx, starty, radius, hqname)
-end
-
 function place_port(player, startx, starty, radius)
     local game = wl.Game()
     local map = game.map
@@ -267,7 +228,7 @@ function place_port(player, startx, starty, radius)
     local fields = centerfield:region(radius)
 
     local tribe = player.tribe
-    local portname = tribe.name .. "_port"
+    local portname = tribe.port
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
         for i, portfield in pairs(map.port_spaces) do
             for j, field in pairs(fields) do
@@ -277,211 +238,5 @@ function place_port(player, startx, starty, radius)
                 end
             end
         end
-    end
-end
-
-function place_mine(player, startx, starty)
-    local game = wl.Game()
-    local map = game.map
-    local mine_field = map:get_field(startx, starty)
-    local resource = mine_field.resource
-    local amount = mine_field.resource_amount
-
-    local tribe = player.tribe
-    local tribe_name = tribe.name
-    
-    local minename = ""
-    local suffix = ""
-    
-    print (resource, amount)
-    
-    if tribe.name == "europeans" then
-        if amount >= 20 then
-            suffix = "_basic"
-        elseif amount > 16 then
-            suffix = "_level_1"
-        elseif amount > 12 then
-            suffix = "_level_2"
-        elseif amount > 8 then
-            suffix = "_level_3"
-        elseif amount > 4 then
-            suffix = "_level_4"
-        else
-            suffix = "_level_5"
-        end
-    elseif tribe.name == "barbarians" then
-        if amount >= 15 then
-            suffix = ""
-        elseif amount >= 8 then
-            suffix = "_deep"
-        else
-            suffix = "_deeper"
-        end
-    elseif tribe.name == "empire" then
-        if amount >= 10 then
-            suffix = ""
-        else
-            suffix = "_deep"
-        end
-    end
-    
-    if tribe.name == "europeans" then
-        if resource == "resource_coal" then
-            minename = "europeans_coalmine"
-        elseif resource == "resource_iron" then
-            minename = "europeans_ironmine"
-        elseif resource == "resource_gold" then
-            minename = "europeans_goldmine"
-        else
-            minename = "europeans_well_basic"
-            suffix = ""
-        end
-    elseif tribe.name == "atlanteans" then
-        if resource == "resource_coal" then
-            minename = "atlanteans_coalmine"
-        elseif resource == "resource_iron" then
-            minename = "atlanteans_ironmine"
-        elseif resource == "resource_gold" then
-            minename = "atlanteans_goldmine"
-        elseif resource == "resource_stone" then
-            minename = "atlanteans_crystalmine"
-        elseif resource == "resource_water" then
-            minename = "atlanteans_well"
-            suffix = ""
-        end
-    elseif tribe.name == "barbarians" then
-        if resource == "resource_coal" then
-            minename = "barbarians_coalmine"
-        elseif resource == "resource_iron" then
-            minename = "barbarians_ironmine"
-        elseif resource == "resource_gold" then
-            minename = "barbarians_goldmine"
-        elseif resource == "resource_stone" then
-            minename = "barbarians_granitemine"
-            suffix = ""
-        elseif resource == "resource_water" then
-            minename = "barbarians_well"
-            suffix = ""
-        end
-    elseif tribe.name == "empire" then
-        if resource == "resource_coal" then
-            minename = "empire_coalmine"
-        elseif resource == "resource_iron" then
-            minename = "empire_ironmine"
-        elseif resource == "resource_gold" then
-            minename = "empire_goldmine"
-        elseif resource == "resource_stone" then 
-            minename = "empire_marblemine"
-        elseif resource == "resource_water" then 
-            minename = "empire_well"
-            suffix = ""
-        end
-    end
-    
-    place_building_in_region(player, minename..suffix, map:get_field(startx, starty):region(2))
-end
-
-function warehouse_worker_policy(startx, starty, workername, policiename)
-    local game = wl.Game()
-    local map = game.map
-    local player = map:get_field(startx, starty).owner
-    local tribe = player.tribe
-    local field = map:get_field(startx, starty).immovable
-
-    for j, tbuilding in ipairs(tribe.buildings) do
-        for k, building in ipairs(player:get_buildings(tbuilding.name)) do
-             if building.descr.type_name == "warehouse" and building == field then
-                 building:set_warehouse_policies(workername, policiename)
-             end
-        end
-    end
-end
-
-function warehouse_ware_policy(startx, starty, warename, policiename)
-    local game = wl.Game()
-    local map = game.map
-    local player = map:get_field(startx, starty).owner
-    local tribe = player.tribe
-    local field = map:get_field(startx, starty).immovable
-
-    for j, tbuilding in ipairs(tribe.buildings) do
-        for k, building in ipairs(player:get_buildings(tbuilding.name)) do
-             if building.descr.type_name == "warehouse" and building == field then
-                 building:set_warehouse_policies(warename, policiename)
-             end
-        end
-    end
-end
-
-function warehouse_ware_count(startx, starty, warename, warecount)
-    local game = wl.Game()
-    local map = game.map
-    local player = map:get_field(startx, starty).owner
-    local tribe = player.tribe
-    local field = map:get_field(startx, starty).immovable
-
-    for j, tbuilding in ipairs(tribe.buildings) do
-        for k, building in ipairs(player:get_buildings(tbuilding.name)) do
-             if building.descr.type_name == "warehouse" and building == field then
-                 building:set_wares(warename, warecount)
-             end
-        end
-    end
-end
-
-function set_warehouse_remove_all(startx, starty)
-    local game = wl.Game()
-    local map = game.map
-    local player = map:get_field(startx, starty).owner
-    local tribe = player.tribe
-    
-    for i, ware in ipairs(tribe.wares) do
-        warehouse_ware_policy(startx, starty, ware.name, "remove")
-    end
-end
-
-function set_warehouse_dontstock_all(startx, starty)
-    local game = wl.Game()
-    local map = game.map
-    local player = map:get_field(startx, starty).owner
-    local tribe = player.tribe
-    
-    for i, ware in ipairs(tribe.wares) do
-        warehouse_ware_policy(startx, starty, ware.name, "dontstock")
-    end
-end
-
-function set_warehouse_prefer_all(startx, starty)
-    local game = wl.Game()
-    local map = game.map
-    local player = map:get_field(startx, starty).owner
-    local tribe = player.tribe
-    
-    for i, ware in ipairs(tribe.wares) do
-        warehouse_ware_policy(startx, starty, ware.name, "prefer")
-    end
-end
-
-function reset_warehouse_policy(startx, starty)
-    local game = wl.Game()
-    local map = game.map
-    local player = map:get_field(startx, starty).owner
-    local tribe = player.tribe
-    
-    for i, ware in ipairs(tribe.wares) do
-        warehouse_ware_policy(startx, starty, ware.name, "normal")
-    end
-end
-
-function set_ware(player, warename, warecount)
-    local tribe = player.tribe
-
-    for i, building in ipairs(tribe.buildings) do
-       -- restock warehouses
-       if building.type_name == "warehouse" then
-            for i, building in ipairs(player:get_buildings(building.name)) do
-                  building:set_wares(warename, warecount)
-            end
-       end
     end
 end
