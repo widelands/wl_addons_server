@@ -13,7 +13,7 @@ jobs:
         fetch-depth: 1
     - name: Updating the lists
       run: ./update_lists.sh < /dev/null
-    - name: Check integrity
+    - name: Checking integrity
       run: |
         if [ -n "$(git status -s)" ]
         then
@@ -27,3 +27,23 @@ jobs:
         else
           echo "Lists are clean"
         fi
+
+  format:
+    if: github.event_name == push
+    needs: [check]
+    name: Format code
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Installing formatting tools
+      run: |
+        sudo apt-get update
+        sudo apt-get purge -y clang-10 clang-format-10 clang-11 clang-format-11
+        sudo apt-get install clang-format-12
+    - name: Formatting code
+      run: clang-format -i wl/*/*.java
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "Your code was automatically formatted."
+        file_pattern: list* wl/*/*.java
