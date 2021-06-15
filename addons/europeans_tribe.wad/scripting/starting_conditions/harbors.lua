@@ -35,7 +35,7 @@ init = {
                         europeans_forester_basic = 2,
                         europeans_carpenter_basic = 1,
                         europeans_stonecutter_basic = 1,
-                        europeans_stonemason_basic = 1,
+                        europeans_stonemason_normal = 1,
                         europeans_weaver_basic = 1,
                         europeans_weaver_normal = 1,
                         europeans_trainer_basic = 1,
@@ -104,38 +104,40 @@ init = {
     local ports = player:get_buildings("europeans_port")
     
     if #ports > 0 then
-        set_ware(player, "water", math.ceil(256/ #ports))
-        set_ware(player, "log", math.ceil(192 / #ports))
-        set_ware(player, "reed", math.ceil(96 / #ports))
-        set_ware(player, "granite", math.ceil(64 / #ports))
-        set_ware(player, "cloth", math.ceil(32 / #ports))
-        set_ware(player, "blackwood", math.ceil(32 / #ports))
-        set_ware(player, "planks", math.ceil(32 / #ports))
-        set_ware(player, "iron", math.ceil(32 / #ports))
-        set_ware(player, "coal", math.ceil(32 / #ports))
-        set_ware(player, "spidercloth", math.ceil(32 / #ports))
-        set_ware(player, "marble", math.ceil(24 / #ports))
-        set_ware(player, "quartz", math.ceil(24 / #ports))
-        set_ware(player, "diamond", math.ceil(16 / #ports))
-        set_ware(player, "gold", math.ceil(4 / #ports))
-        set_ware(player, "shovel", math.ceil(16 / #ports))
-        set_ware(player, "buckets", math.ceil(10 / #ports))
-        set_ware(player, "basket", math.ceil(8 / #ports))
-        set_ware(player, "pick", math.ceil(6 / #ports))
-        set_ware(player, "fire_tongs", math.ceil(4 / #ports))
-        set_ware(player, "hammer", math.ceil(4 / #ports))
-        set_ware(player, "saw", math.ceil(4 / #ports))
-        set_ware(player, "scythe", math.ceil(4 / #ports))
-        set_ware(player, "bread_paddle", math.ceil(2 / #ports))
-        set_ware(player, "fishing_net", math.ceil(2 / #ports))
-        set_ware(player, "fishing_rod", math.ceil(2 / #ports))
-        set_ware(player, "hook_pole", math.ceil(2 / #ports))
-        set_ware(player, "hunting_bow", math.ceil(2 / #ports))
-        set_ware(player, "hunting_spear", math.ceil(2 / #ports))
-        set_ware(player, "milking_tongs", math.ceil(2 / #ports))
-        set_ware(player, "armor", math.ceil(6 / #ports))
-        set_ware(player, "tabard", math.ceil(6 / #ports))
-        set_ware(player, "spear_wooden", math.ceil(12 / #ports))
+        for i, port in ipairs(ports) do
+            port:set_wares("water", math.ceil(256/ #ports))
+            port:set_wares("log", math.ceil(192 / #ports))
+            port:set_wares("reed", math.ceil(96 / #ports))
+            port:set_wares("granite", math.ceil(64 / #ports))
+            port:set_wares("cloth", math.ceil(32 / #ports))
+            port:set_wares("blackwood", math.ceil(32 / #ports))
+            port:set_wares("planks", math.ceil(32 / #ports))
+            port:set_wares("iron", math.ceil(32 / #ports))
+            port:set_wares("coal", math.ceil(32 / #ports))
+            port:set_wares("spidercloth", math.ceil(32 / #ports))
+            port:set_wares("marble", math.ceil(24 / #ports))
+            port:set_wares("quartz", math.ceil(24 / #ports))
+            port:set_wares("diamond", math.ceil(16 / #ports))
+            port:set_wares("gold", math.ceil(4 / #ports))
+            port:set_wares("shovel", math.ceil(16 / #ports))
+            port:set_wares("buckets", math.ceil(10 / #ports))
+            port:set_wares("basket", math.ceil(8 / #ports))
+            port:set_wares("pick", math.ceil(6 / #ports))
+            port:set_wares("fire_tongs", math.ceil(4 / #ports))
+            port:set_wares("hammer", math.ceil(4 / #ports))
+            port:set_wares("saw", math.ceil(4 / #ports))
+            port:set_wares("scythe", math.ceil(4 / #ports))
+            port:set_wares("bread_paddle", math.ceil(2 / #ports))
+            port:set_wares("fishing_net", math.ceil(2 / #ports))
+            port:set_wares("fishing_rod", math.ceil(2 / #ports))
+            port:set_wares("hook_pole", math.ceil(2 / #ports))
+            port:set_wares("hunting_bow", math.ceil(2 / #ports))
+            port:set_wares("hunting_spear", math.ceil(2 / #ports))
+            port:set_wares("milking_tongs", math.ceil(2 / #ports))
+            port:set_wares("armor", math.ceil(6 / #ports))
+            port:set_wares("tabard", math.ceil(6 / #ports))
+            port:set_wares("spear_wooden", math.ceil(12 / #ports))
+        end
         place_building_in_region(player, "europeans_shipyard_basic", ports[1].fields[1]:region(3), {
             inputs = {blackwood = 2, planks = 8, spidercloth = 2, reed = 2},
         })
@@ -149,7 +151,7 @@ init = {
         sleep(900000)
         
         -- Time-dependent activation (gametime)
-        if i == 4 then
+        if i == 8 then
             if (player_slot.name == "Sweden") and (sf.x == 24) and (sf.y == 422) then
                 place_port(player, 23, 452)
                 place_building(player, 23, 452, 6, "europeans_clay_pit")
@@ -184,7 +186,7 @@ init = {
                 place_building(player, 437, 186, 6, "europeans_quarry_normal")
             end 
         end
-        if i == 8 then
+        if i == 12 then
             if (player_slot.name == "England") and (sf.x == 380) and (sf.y == 499) then
                 -- Ireland
                 place_port(player, 348, 434, 1)

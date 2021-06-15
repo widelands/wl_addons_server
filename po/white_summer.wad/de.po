@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Thomas Ho <tomohnetom@web.de>, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-10 22:32+0200\n"
+"POT-Creation-Date: 2021-06-14 03:16+0000\n"
 "PO-Revision-Date: 2021-06-05 18:17+0000\n"
+"Last-Translator: Thomas Ho <tomohnetom@web.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +24,7 @@ msgstr ""
 #: addons/white_summer.wad/addon:2 addons/white_summer.wad/editor.lua:7
 #: addons/white_summer.wad/editor.lua:35
 msgid "White Summer"
-msgstr ""
+msgstr "Weißer Sommer"
 
 #: addons/white_summer.wad/addon:3
 msgid ""
@@ -30,135 +34,140 @@ msgid ""
 "planting trees. Dolomites contain stone as a default resource in amount of "
 "10."
 msgstr ""
+"Enthält blühende Wiesen, Lichtungen, Gebirge, Lehmboden, grünes Wasser, "
+"sumpfiges Wasser und 3 neue Baumarten. Blühende Wiesen brauchen länger zum "
+"Bewalden, eignen sich aber besser zum Brunnenbau. Lichtungen sind sind der "
+"ideale Platz, um einen Wald aufzuforsten. Gebirge sind standardmäßig "
+"Lagerstätten von 10 Einheiten Stein."
 
 #: addons/white_summer.wad/immovables/linden/init.lua:16
 msgid "Linden (Sapling)"
-msgstr ""
+msgstr "Linde (Sprößling)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:41
 msgid "Linden (Pole)"
-msgstr ""
+msgstr "Linde (jung)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:67
 msgid "Linden (Mature)"
-msgstr ""
+msgstr "Linde (herangewachsen)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:93
 msgid "Linden (Old)"
-msgstr ""
+msgstr "Linde (alt)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:94
 msgid "Linden"
-msgstr ""
+msgstr "Linde"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:17
 msgid "Pine (Sapling)"
-msgstr ""
+msgstr "Kiefer (Sprößling)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:42
 msgid "Pine (Pole)"
-msgstr ""
+msgstr "Kiefer (jung)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:68
 msgid "Pine (Mature)"
-msgstr ""
+msgstr "Kiefer (herangewachsen)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:94
 msgid "Pine (Old)"
-msgstr ""
+msgstr "Kiefer (alt)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:95
 msgid "Pine"
-msgstr ""
+msgstr "Kiefer"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:95
 msgid "Red Maple"
-msgstr ""
+msgstr "Roter Ahorn"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:68
 msgid "Red Maple (Mature)"
-msgstr ""
+msgstr "Roter Ahorn (herangewachsen)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:94
 msgid "Red Maple (Old)"
-msgstr ""
+msgstr "Roter Ahorn (alt)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:42
 msgid "Red Maple (Pole)"
-msgstr ""
+msgstr "Roter Ahorn (jung)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:17
 msgid "Red Maple (Sapling)"
-msgstr ""
+msgstr "Roter Ahorn (Sprößling)"
 
 #: addons/white_summer.wad/terrains/init.lua:10
 msgid "Flowering Meadow 1"
-msgstr ""
+msgstr "Blühende Wiese 1"
 
 #: addons/white_summer.wad/terrains/init.lua:24
 msgid "Flowering Meadow 2"
-msgstr ""
+msgstr "Blühende Wiese 2"
 
 #: addons/white_summer.wad/terrains/init.lua:38
 msgid "Flowering Meadow 3"
-msgstr ""
+msgstr "Blühende Wiese 3"
 
 #: addons/white_summer.wad/terrains/init.lua:52
 msgid "Flowering Meadow 4"
-msgstr ""
+msgstr "Blühende Wiese 4"
 
 #: addons/white_summer.wad/terrains/init.lua:66
 msgid "Clearing 1"
-msgstr ""
+msgstr "Lichtung 1"
 
 #: addons/white_summer.wad/terrains/init.lua:79
 msgid "Clearing 2"
-msgstr ""
+msgstr "Lichtung 2"
 
 #: addons/white_summer.wad/terrains/init.lua:93
 msgid "Clearing 3"
-msgstr ""
+msgstr "Lichtung 3"
 
 #: addons/white_summer.wad/terrains/init.lua:107
 msgid "Forested Dolomites 1"
-msgstr ""
+msgstr "Bewaldetes Gebirge 1"
 
 #: addons/white_summer.wad/terrains/init.lua:121
 msgid "Forested Dolomites 2"
-msgstr ""
+msgstr "Bewaldetes Gebirge 2"
 
 #: addons/white_summer.wad/terrains/init.lua:135
 msgid "Forested Dolomites 3"
-msgstr ""
+msgstr "Bewaldetes Gebirge 3"
 
 #: addons/white_summer.wad/terrains/init.lua:150
 msgid "Dolomites 1"
-msgstr ""
+msgstr "Gebirge 1"
 
 #: addons/white_summer.wad/terrains/init.lua:165
 msgid "Dolomites 2"
-msgstr ""
+msgstr "Gebirge 2"
 
 #: addons/white_summer.wad/terrains/init.lua:180
 msgid "Dolomites Meadow"
-msgstr ""
+msgstr "Gebrigswiese"
 
 #: addons/white_summer.wad/terrains/init.lua:193
 msgid "Clay Soil"
-msgstr ""
+msgstr "Lehmboden"
 
 #: addons/white_summer.wad/terrains/init.lua:207
 msgid "Green Water 1"
-msgstr ""
+msgstr "Grünes Wasser 1"
 
 #: addons/white_summer.wad/terrains/init.lua:222
 msgid "Green Water 2"
-msgstr ""
+msgstr "Grünes Wasser 2"
 
 #: addons/white_summer.wad/terrains/init.lua:237
 msgid "Green Water 3"
-msgstr ""
+msgstr "Grünes Wasser 3"
 
 #: addons/white_summer.wad/terrains/init.lua:252
 msgid "Muddy Water"
-msgstr ""
+msgstr "Sumpf"
