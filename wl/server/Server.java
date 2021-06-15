@@ -149,20 +149,49 @@ public class Server {
 	}
 
 	private static void handle(String[] cmd, PrintStream out, InputStream in, int version, String username, boolean admin, String locale) throws Exception {
+		String method = null;
 		switch (Command.valueOf(cmd[0])) {
-			case CMD_LIST             : HandleCommand.handleCmdList            (cmd, out, in, version, username, admin, locale); return;
-			case CMD_INFO             : HandleCommand.handleCmdInfo            (cmd, out, in, version, username, admin, locale); return;
-			case CMD_DOWNLOAD         : HandleCommand.handleCmdDownload        (cmd, out, in, version, username, admin, locale); return;
-			case CMD_I18N             : HandleCommand.handleCmdI18n            (cmd, out, in, version, username, admin, locale); return;
-			case CMD_SCREENSHOT       : HandleCommand.handleCmdScreenshot      (cmd, out, in, version, username, admin, locale); return;
-			case CMD_COMMENT          : HandleCommand.handleCmdComment         (cmd, out, in, version, username, admin, locale); return;
-			case CMD_EDIT_COMMENT     : HandleCommand.handleCmdEditComment     (cmd, out, in, version, username, admin, locale); return;
-			case CMD_VOTE             : HandleCommand.handleCmdVote            (cmd, out, in, version, username, admin, locale); return;
-			case CMD_GET_VOTE         : HandleCommand.handleCmdGetVote         (cmd, out, in, version, username, admin, locale); return;
-			case CMD_SUBMIT_SCREENSHOT: HandleCommand.handleCmdSubmitScreenshot(cmd, out, in, version, username, admin, locale); return;
-			case CMD_SUBMIT           : HandleCommand.handleCmdSubmit          (cmd, out, in, version, username, admin, locale); return;
-			case CMD_CONTACT          : HandleCommand.handleCmdContact         (cmd, out, in, version, username, admin, locale); return;
-			default: throw new ProtocolException("Invalid command " + cmd[0]);
+		case CMD_LIST:
+			method = "handleCmdList";
+			break;
+		case CMD_INFO:
+			method = "handleCmdInfo";
+			break;
+		case CMD_DOWNLOAD:
+			method = "handleCmdDownload";
+			break;
+		case CMD_I18N:
+			method = "handleCmdI18n";
+			break;
+		case CMD_SCREENSHOT:
+			method = "handleCmdScreenshot";
+			break;
+		case CMD_COMMENT:
+			method = "handleCmdComment";
+			break;
+		case CMD_EDIT_COMMENT:
+			method = "handleCmdEditComment";
+			break;
+		case CMD_VOTE:
+			method = "handleCmdVote";
+			break;
+		case CMD_GET_VOTE:
+			method = "handleCmdGetVote";
+			break;
+		case CMD_SUBMIT_SCREENSHOT:
+			method = "handleCmdSubmitScreenshot";
+			break;
+		case CMD_SUBMIT:
+			method = "handleCmdSubmit";
+			break;
+		case CMD_CONTACT:
+			method = "handleCmdContact";
+			break;
+		default: throw new ProtocolException("Invalid command " + cmd[0]);
 		}
+		HandleCommand.class
+		    .getMethod​(method, String[].class, PrintStream.class, InputStream.class, int.class,
+		                  String.class, boolean.class, String.class)
+		    .invoke(null, cmd, out, in, version, username, admin, locale);
 	}
 }
