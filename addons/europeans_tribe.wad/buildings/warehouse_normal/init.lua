@@ -13,7 +13,7 @@ descriptions:new_warehouse_type {
         name = "europeans_warehouse_advanced",
         enhancement_cost = {
           brick = 3,
-          grout = 3
+          grout = 3,
           marble_column = 3,
           quartz = 1,
           diamond = 1
