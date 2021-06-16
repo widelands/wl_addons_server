@@ -89,12 +89,11 @@ public class Server {
 					synchronized (syncer) { syncer.tick(s); }
 					PrintStream out = null;
 					try {
-						System.out.println("[" + new Date() + " @ " +
-						                   Thread.currentThread().getName() +
-						                   "] Connection received from " +
-						                   s.getInetAddress() + " : " + s.getPort() +
-						                   " on " + s.getLocalSocketAddress() + " (" +
-						                   s.getLocalAddress() + " : " + s.getLocalPort() + ").");
+						System.out.println(
+						    "[" + new Date() + " @ " + Thread.currentThread().getName() +
+						    "] Connection received from " + s.getInetAddress() + " : " +
+						    s.getPort() + " on " + s.getLocalSocketAddress() + " (" +
+						    s.getLocalAddress() + " : " + s.getLocalPort() + ").");
 						out = new PrintStream(s.getOutputStream(), true);
 						InputStream in = s.getInputStream();
 
