@@ -21,7 +21,7 @@ class ThreadActivityAndGitHubSyncManager {
 				System.out.println("Detected merge conflict in file: " + file);
 				if (file.startsWith("list")) {
 					System.out.println("    Skipping (will be newly generated later).");
-				} else if (!file.startsWith("metadata/")) {
+				} else if (file.startsWith("metadata/")) {
 					System.out.println(
 					    "    Attempting to resolve the merge conflicts automatically...");
 					Utils.resolveMergeConflicts(new File(file));

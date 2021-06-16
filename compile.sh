@@ -2,4 +2,4 @@
 set -e
 rm -r build || true
 mkdir build
-javac -d ./build wl/*/*.java
+JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 javac -d ./build wl/*/*.java

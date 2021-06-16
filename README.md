@@ -33,7 +33,7 @@ Key                | Description                             | Example
 Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on the specified port of your machine. In order to connect to this server from the game, run Widelands with the commandline parameters `--addon_server_ip=127.0.0.1 --addon_server_port=7399` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server and `7399` with the port number from the config file).  
 Note that the server runs as a daemon; that is, it is independent from your process and all output is redirected to a file called `server.log` which will be overwritten on every run. To terminate the server daemon, retrieve the PID of the process from the second line of the logfile and then type `kill <PID>`.
 
-The server protocol is documented in `wl/server/Server.java`.
+The server protocol is documented in `wl/server/Command.java`.
 
 Widelands version 1.0 and older does not connect to the server. It instead downloads and parses the `list*` files in this repository and then downloads each file belonging to an add-on separately. Every change to an add-on must therefore be reflected in the `list*` files so that the full add-on selection is available also to Widelands 1.0 users.   
 For this reason, the server automatically syncs its repo checkout with the GitHub repo every night. Normally, all required steps are done fully automatically. Occasionally, a merge conflict may arise which may prove too difficult for the server to handle on its own.   
