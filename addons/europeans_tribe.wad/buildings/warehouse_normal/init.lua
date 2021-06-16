@@ -12,11 +12,14 @@ descriptions:new_warehouse_type {
    enhancement = {
         name = "europeans_warehouse_advanced",
         enhancement_cost = {
+          brick = 3,
+          grout = 3
           marble_column = 3,
           quartz = 1,
           diamond = 1
         },
         enhancement_return_on_dismantle = {
+          granite = 3,
           marble = 3,
           quartz = 1,
           diamond = 1

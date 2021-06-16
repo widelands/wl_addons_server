@@ -12,28 +12,27 @@ descriptions:new_warehouse_type {
    enhancement = {
         name = "europeans_warehouse_normal",
         enhancement_cost = {
-          cloth = 2,
+          planks = 3,
+          cloth = 3,
           quartz = 1,
           diamond = 1
         },
         enhancement_return_on_dismantle = {
+          planks = 2,
           quartz = 1,
           diamond = 1
         },
    },
 
    buildcost = {
-      planks = 6,
-      reed = 2,
-      brick = 4,
-      grout = 4,
+      blackwood = 4,
+      reed = 4,
       quartz = 1,
       diamond = 1
    },
    return_on_dismantle = {
-      planks = 3,
+      blackwood = 3,
       reed = 1,
-      granite = 2,
       quartz = 1,
       diamond = 1
    },

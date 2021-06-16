@@ -13,18 +13,14 @@ descriptions:new_militarysite_type {
    enhancement = {
         name = "europeans_advanced_tower",
         enhancement_cost = {
-            planks = 3,
             brick = 2,
             grout = 2,
-            marble_column = 3,
-            quartz = 2,
+            marble_column = 2,
             diamond = 2
         },
         enhancement_return_on_dismantle = {
-            planks = 2,
             granite = 2,
             marble = 2,
-            quartz = 2,
             diamond = 2
         },
    },
