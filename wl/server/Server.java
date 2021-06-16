@@ -91,8 +91,10 @@ public class Server {
 					try {
 						System.out.println("[" + new Date() + " @ " +
 						                   Thread.currentThread().getName() +
-						                   "] Connection received from " + s.getInetAddress() +
-						                   ":" + s.getPort() + ".");
+						                   "] Connection received from " +
+						                   s.getInetAddress() + " : " + s.getPort() +
+						                   " on " + s.getLocalSocketAddress() + " (" +
+						                   s.getLocalAddress() + " : " + s.getLocalPort() + ").");
 						out = new PrintStream(s.getOutputStream(), true);
 						InputStream in = s.getInputStream();
 
