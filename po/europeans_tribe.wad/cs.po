@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-18 03:14+0000\n"
+"POT-Creation-Date: 2021-06-19 03:14+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -2984,668 +2984,672 @@ msgstr "Neznámý"
 
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:737
 msgid "If built directly, dismantle yields:"
-msgstr ""
+msgstr "Pokud postaveno, rozebrání poskytne:"
 
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:742
 msgid "If enhanced, dismantle yields:"
-msgstr ""
+msgstr "Pokud vylepšeno, rozebrání poskytne:"
 
 #. TRANSLATORS: This is a heading for the resources that you will get back when you dismantle a building of this type. What dismantling will give you.
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:745
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:786
 msgid "Dismantle yields:"
-msgstr ""
+msgstr "Rozebrání poskytne:"
 
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:795
 msgid "Can be enhanced to:"
-msgstr ""
+msgstr "Může být vylepšeno na:"
 
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:825
 msgid "Crew required:"
-msgstr ""
+msgstr "Pracovní místo pro:"
 
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:825
 #: addons/europeans_tribe.wad/scripting/help/init.lua:92
 msgid "Workers"
-msgstr ""
+msgstr "Dělníci"
 
 #. TRANSLATORS: %s is a worker name, e.g. "Chief Miner" or "Brewer".
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:847
 #, lua-format
 msgid "%s or better"
-msgstr ""
+msgstr "%s nebo lepší"
 
 #. TRANSLATORS: Tribal Encyclopedia: Heading for which tool 1 worker uses
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:859
 msgid "Worker uses:"
-msgstr ""
+msgstr "Dělník používá:"
 
 #. TRANSLATORS: Tribal Encyclopedia: Heading for which tool more than 1 worker uses
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:862
 msgid "Workers use:"
-msgstr ""
+msgstr "Dělníci používají:"
 
 #. TRANSLATORS: Performance helptext for a building - it hasn't been written yet.
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:894
 msgid "Calculation needed"
-msgstr ""
+msgstr "Nutný výpočet"
 
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:898
 msgid "Production"
-msgstr ""
+msgstr "Produktivita"
 
 #: addons/europeans_tribe.wad/scripting/help/building_help.lua:899
 msgid "Performance:"
-msgstr ""
+msgstr "Produktivita výroby:"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:11
 #: addons/europeans_tribe.wad/scripting/help/init.lua:70
 msgid "Controls"
-msgstr ""
+msgstr "Ovládání"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:13
 msgid "Window Control"
-msgstr ""
+msgstr "Ovládání oken"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:16
 msgid "Close window"
-msgstr ""
+msgstr "Zavřít okno"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:16
 msgctxt "hotkey"
 msgid "Right-click"
-msgstr ""
+msgstr "Klik pravým tlačítkem"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:18
 msgctxt "hotkey"
 msgid "Middle-click or Ctrl + Left-click"
-msgstr ""
+msgstr "Klik prostředním tlačítkem nebo Ctrl + klik levým tlačítkem"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:18
 msgid "Minimize/Maximize window"
-msgstr ""
+msgstr "Minimalizovat/maximalizovat okno"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:20
 msgctxt "hotkey"
 msgid "Ctrl + Left-click on Button"
-msgstr ""
+msgstr "Ctrl + klik levým tlačítkem"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:20
 msgid "Skip confirmation dialog"
-msgstr ""
+msgstr "Přeskočit potvrzovací dialog"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:22
 msgid "Table Control"
-msgstr ""
+msgstr "Ovládání tabulek"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:23
 msgid ""
 "In tables that allow the selection of multiple entries, the following key "
 "combinations are available:"
 msgstr ""
+"V tabulkách, kde je možné vybrat více položek, jsou dostupné následující "
+"klávesové zkratky:"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:26
 msgctxt "hotkey"
 msgid "Ctrl + Click"
-msgstr ""
+msgstr "Ctrl + klik"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:26
 msgctxt "table_control"
 msgid "Select multiple entries"
-msgstr ""
+msgstr "Vybrat více položek"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:28
 msgctxt "table_control"
 msgid "Select a range of entries"
-msgstr ""
+msgstr "Vybrat rozsah položek"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:28
 msgctxt "hotkey"
 msgid "Shift + Click"
-msgstr ""
+msgstr "Shift + klik"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:30
 msgctxt "table_control"
 msgid "Select all entries"
-msgstr ""
+msgstr "Vybrat všechny položky"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:32
 msgid "Road Control"
-msgstr ""
+msgstr "Ovládání cest"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:35
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:37
 msgctxt "hotkey"
 msgid "Ctrl + Left-click"
-msgstr ""
+msgstr "Ctrl + klik levým tlačítkem"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:35
 msgid "While connecting two flags: Place flags automatically"
-msgstr ""
+msgstr "Při spojování dvou vlajek: Umístit vlajky automaticky"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:37
 msgid "While removing a flag: Remove all flags up to the first junction"
-msgstr ""
+msgstr "Při odebírání vlajky: Odebrat všechny vlajky až k první křižovatce"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:39
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Klávesové zkratky"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:42
 msgid "Increase game speed"
-msgstr ""
+msgstr "Zvýšit rychlost hry"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:44
 msgid "Decrease game speed"
-msgstr ""
+msgstr "Snížit rychlost hry"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:46
 msgid "Increase game speed by 10x"
-msgstr ""
+msgstr "Zvýšení násobku rychlosti hry o 10"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:48
 msgid "Decrease game speed by 10x"
-msgstr ""
+msgstr "Snížení násobku rychlosti hry o 10"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:50
 msgid "Increase game speed by 0.25x"
-msgstr ""
+msgstr "Zvýšení násobku rychlosti hry o 0,25"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:52
 msgid "Decrease game speed by 0.25x"
-msgstr ""
+msgstr "Snížení násobku rychlosti hry o 0,25"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:54
 msgid "Pause the game"
-msgstr ""
+msgstr "Pozastavit hru"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'c'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:56
 msgid "Toggle census"
-msgstr ""
+msgstr "Přepnout zobrazení popisů budov"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 's'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:58
 msgid "Toggle statistics"
-msgstr ""
+msgstr "Přepnout popisy statistik budov"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'l'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:60
 msgid "Toggle soldier health bars and level icons"
 msgstr ""
+"Přepnout zobrazení stavového proužku života a ukazatele úrovně u vojáků"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'u'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:62
 msgid "Toggle building visibility"
-msgstr ""
+msgstr "Přepnout viditelnost budov"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'w'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:64
 msgid "Toggle workarea overlap indicators"
-msgstr ""
+msgstr "Přepnout překryv pracovního pokrytí"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'o'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:68
 msgid "Toggle objectives"
-msgstr ""
+msgstr "Přepnout zobrazení úkolů"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'n'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:70
 msgid "Toggle messages (‘news’)"
-msgstr ""
+msgstr "Přepnout zobrazení zpráv"
 
 #. TRANSLATORS: This is an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:72
 #: addons/europeans_tribe.wad/scripting/help/init.lua:54
 msgid "Tribal Encyclopedia"
-msgstr ""
+msgstr "Encyklopedie kmenů"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'i'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:74
 msgid "Toggle stock inventory"
-msgstr ""
+msgstr "Přepnout zobrazení zásob"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'b'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:76
 msgid "Toggle building statistics"
-msgstr ""
+msgstr "Přepnout zobrazení statistiky budov"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'x'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:78
 msgid "Toggle soldier statistics"
-msgstr ""
+msgstr "Přepnout vojenské statistiky"
 
 #. TRANSLATORS: This is an access key combination. The hotkey is 'e'
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:80
 msgid "Toggle seafaring statistics"
-msgstr ""
+msgstr "Přepnout zobrazení statistiky lodí"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:82
 msgctxt "hotkey"
 msgid "Arrow keys"
-msgstr ""
+msgstr "Kurzorové šipky na klávesnici"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:82
 msgid "Move the map"
-msgstr ""
+msgstr "Pohyb po mapě"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:84
 msgctxt "hotkey"
 msgid "Ctrl + Arrow keys"
-msgstr ""
+msgstr "Ctrl + klávesy šipek"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:84
 msgid "Move the map fast"
-msgstr ""
+msgstr "Rychlý pohyb po mapě"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:86
 msgid "Move the map slowly"
-msgstr ""
+msgstr "Pomalý pohyb po mapě"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:86
 msgctxt "hotkey"
 msgid "Shift + Arrow keys"
-msgstr ""
+msgstr "Shift + klávesy šipek"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:88
 msgid "Center main mapview on starting location"
-msgstr ""
+msgstr "Vystředit mapu na počáteční umístění"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:90
 msgid "Remember current location"
-msgstr ""
+msgstr "Zapamatovat aktuální pozici"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:91
 msgid "Go to previously remembered location"
-msgstr ""
+msgstr "Jít na předchozí zapamatovanou pozici"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:93
 msgid "Go to previous location"
-msgstr ""
+msgstr "Jít na předchozí pozici"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:95
 msgid "Go to next location"
-msgstr ""
+msgstr "Jít na následující pozici"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:97
 msgid "Increase zoom"
-msgstr ""
+msgstr "Přiblížit"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:99
 msgid "Decrease zoom"
-msgstr ""
+msgstr "Oddálit"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:101
 msgid "Reset zoom"
-msgstr ""
+msgstr "Obnovit přiblížení"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:103
 msgid "Take a screenshot"
-msgstr ""
+msgstr "Udělat snímek obrazovky"
 
 #. TRANSLATORS: This is an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:106
 msgctxt "hotkey"
 msgid "Ctrl + Shift + Space"
-msgstr ""
+msgstr "Ctrl + Shift + Mezerník"
 
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:106
 msgid "Show the debug console (only in debug-builds)"
-msgstr ""
+msgstr "Zobrazit konzoli pro ladění (pouze v testovacím sestavení)"
 
 #. TRANSLATORS: Heading in "Controls" help
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:110
 msgid "Message Window"
-msgstr ""
+msgstr "Okno zpráv"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:113
 msgid "Show all messages"
-msgstr ""
+msgstr "Zobrazit všechny zprávy"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:115
 msgid "Show geologists’ messages only"
-msgstr ""
+msgstr "Zobrazit pouze zprávy o nově nalezených zdrojích surovin"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:117
 msgid "Show economy messages only"
-msgstr ""
+msgstr "Zobrazit pouze zprávy o hospodářství"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:119
 msgid "Show seafaring messages only"
-msgstr ""
+msgstr "Zobrazit pouze námořní zprávy"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:121
 msgid "Show warfare messages only"
-msgstr ""
+msgstr "Zobrazit pouze válečné zprávy"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:123
 msgid "Show scenario messages only"
-msgstr ""
+msgstr "Zobrazit pouze zprávy scénáře"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:125
 msgid "Jump to the location corresponding to the current message"
-msgstr ""
+msgstr "Jít na pozici odpovídající aktuální zprávě"
 
 #. TRANSLATORS: This is an access key combination. Localize, but do not change the key.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:127
 msgid "Archive/Restore the current message"
-msgstr ""
+msgstr "Archivovat/Obnovit vybranou zprávu"
 
 #. TRANSLATORS: Heading in "Controls" help
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:131
 msgid "Ship Statistics"
-msgstr ""
+msgstr "Statistika lodí"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:134
 msgid "Show all ships"
-msgstr ""
+msgstr "Zobrazit všechny lodě"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:136
 msgid "Show idle ships"
-msgstr ""
+msgstr "Zobrazit nevyužité lodě"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:138
 msgid "Show ships shipping wares and workers"
-msgstr ""
+msgstr "Zobrazit lodě převážející zboží a dělníky"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:140
 msgid "Show waiting expeditions"
-msgstr ""
+msgstr "Zobrazit čekající výpravy"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:142
 msgid "Show scouting expeditions"
-msgstr ""
+msgstr "Zobrazit probíhající výpravy"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:144
 msgid "Show expeditions that have found a port space or are founding a colony"
 msgstr ""
+"Zobrazit výpravy, které našly místo pro přístav, nebo zakládají kolonii"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:146
 msgid "Center the map on the selected ship"
-msgstr ""
+msgstr "Vystředit mapu na vybranou loď"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:148
 msgid "Open the selected ship’s window"
-msgstr ""
+msgstr "Otevřít okno vybrané lodě"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:150
 msgid "Go to the selected ship and open its window"
-msgstr ""
+msgstr "Přemístit se k vybrané lodi a otevřít její okno"
 
 #. TRANSLATORS: This is the helptext for an access key combination.
 #: addons/europeans_tribe.wad/scripting/help/controls.lua:152
 msgid "Watch the selected ship"
-msgstr ""
+msgstr "Sledovat vybranou loď"
 
 #. TRANSLATORS: Space on the map required for building a building there
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:54
 msgid "Mine plot"
-msgstr ""
+msgstr "Místo pro důl"
 
 #. TRANSLATORS: Space on the map required for building a building there
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:58
 msgid "Port plot"
-msgstr ""
+msgstr "Místo pro přístav"
 
 #. TRANSLATORS: Space on the map required for building a building there
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:62
 msgid "Small plot"
-msgstr ""
+msgstr "Malé stavební místo"
 
 #. TRANSLATORS: Space on the map required for building a building there
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:66
 msgid "Medium plot"
-msgstr ""
+msgstr "Střední stavební místo"
 
 #. TRANSLATORS: Space on the map required for building a building there
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:70
 msgid "Big plot"
-msgstr ""
+msgstr "Velké stavební místo"
 
 #. TRANSLATORS: Space on the map required for building a building there
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:80
 msgid "Space required:"
-msgstr ""
+msgstr "Potřebné místo:"
 
 #. TRANSLATORS: %1$d is a number, %2$s the name of a ware, e.g. 12x Stone
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:133
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:224
 msgid "%1$dx %2$s"
-msgstr ""
+msgstr "%1$dx %2$s"
 
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:147
 msgid "Experience levels"
-msgstr ""
+msgstr "Profesní postup"
 
 #. TRANSLATORS: EP = Experience Points
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:149
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:159
 #, lua-format
 msgid "%s to %s (%s EP)"
-msgstr ""
+msgstr "%s na %s (%s ZB)"
 
 #. TRANSLATORS: Tribal Encyclopedia: Heading for wares and workers consumed by a productionsite
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:259
 msgid "Wares and workers consumed:"
-msgstr ""
+msgstr "Spotřebované suroviny a dělníci:"
 
 #. TRANSLATORS: Tribal Encyclopedia: Heading for workers consumed by a productionsite
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:262
 msgid "Workers consumed:"
-msgstr ""
+msgstr "Spotřebovaní dělníci:"
 
 #. TRANSLATORS: Tribal Encyclopedia: Heading for wares consumed by a productionsite
 #: addons/europeans_tribe.wad/scripting/help/format_help.lua:266
 msgid "Wares consumed:"
-msgstr ""
+msgstr "Spotřebované suroviny:"
 
 #: addons/europeans_tribe.wad/scripting/help/immovable_help.lua:34
 #: addons/europeans_tribe.wad/scripting/help/ware_help.lua:29
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:163
 msgid "Purpose"
-msgstr ""
+msgstr "Účel"
 
 #: addons/europeans_tribe.wad/scripting/help/immovable_help.lua:51
 msgid "Requirements"
-msgstr ""
+msgstr "Požadavky"
 
 #: addons/europeans_tribe.wad/scripting/help/immovable_help.lua:60
 msgid "Becomes"
-msgstr ""
+msgstr "Mění se na"
 
 #: addons/europeans_tribe.wad/scripting/help/immovable_help.lua:80
 msgid "Preferred Terrains"
-msgstr ""
+msgstr "Preferovaný terén"
 
 #: addons/europeans_tribe.wad/scripting/help/init.lua:64
 msgid "Introduction"
-msgstr ""
+msgstr "Úvod"
 
 #: addons/europeans_tribe.wad/scripting/help/init.lua:76
 #: addons/europeans_tribe.wad/scripting/help/tips.lua:60
 msgid "Tips"
-msgstr ""
+msgstr "Tipy"
 
 #: addons/europeans_tribe.wad/scripting/help/init.lua:85
 msgid "Wares"
-msgstr ""
+msgstr "Suroviny"
 
 #: addons/europeans_tribe.wad/scripting/help/init.lua:99
 msgid "Buildings"
-msgstr ""
+msgstr "Budovy"
 
 #: addons/europeans_tribe.wad/scripting/help/init.lua:106
 msgid "Immovables"
-msgstr ""
+msgstr "Pevné předměty"
 
 #: addons/europeans_tribe.wad/scripting/help/introduction.lua:7
 msgid "About Widelands"
-msgstr ""
+msgstr "O Widelands"
 
 #: addons/europeans_tribe.wad/scripting/help/time_strings.lua:26
 #: addons/europeans_tribe.wad/scripting/help/time_strings.lua:62
 #, lua-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%d sekunda"
+msgstr[1] "%d sekundy"
+msgstr[2] "%d sekund"
+msgstr[3] "%d sekund"
 
 #: addons/europeans_tribe.wad/scripting/help/time_strings.lua:42
 #: addons/europeans_tribe.wad/scripting/help/time_strings.lua:61
 #, lua-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%d minuta"
+msgstr[1] "%d minuty"
+msgstr[2] "%d minut"
+msgstr[3] "%d minut"
 
 #: addons/europeans_tribe.wad/scripting/help/time_strings.lua:60
 msgid "%1% and %2%"
-msgstr ""
+msgstr "%1% a %2%"
 
 #: addons/europeans_tribe.wad/scripting/help/tips.lua:52
 msgid "Single Player"
-msgstr ""
+msgstr "Hra jednoho hráče"
 
 #: addons/europeans_tribe.wad/scripting/help/tips.lua:55
 msgid "Multiplayer"
-msgstr ""
+msgstr "Hra více hráčů"
 
 #. TRANSLATORS: Ware Encyclopedia: A building producing a ware
 #. TRANSLATORS: Worker Encyclopedia: A building recruiting a worker
 #: addons/europeans_tribe.wad/scripting/help/ware_help.lua:50
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:38
 msgid "Producer"
-msgstr ""
+msgstr "Výrobce"
 
 #. TRANSLATORS: Ware Encyclopedia: 1 ware produced by a productionsite
 #: addons/europeans_tribe.wad/scripting/help/ware_help.lua:120
 msgid "Ware produced:"
-msgstr ""
+msgstr "Vyráběná surovina:"
 
 #. TRANSLATORS: Ware Encyclopedia: More than 1 ware produced by a productionsite
 #: addons/europeans_tribe.wad/scripting/help/ware_help.lua:123
 msgid "Wares produced:"
-msgstr ""
+msgstr "Vyráběné suroviny:"
 
 #. TRANSLATORS: Ware Encyclopedia: Heading for 1 building and / or worker that consumes a ware
 #: addons/europeans_tribe.wad/scripting/help/ware_help.lua:185
 msgid "Consumer"
-msgstr ""
+msgstr "Spotřebitel"
 
 #. TRANSLATORS: Ware Encyclopedia: A list of buildings and / or workers that consume a ware
 #: addons/europeans_tribe.wad/scripting/help/ware_help.lua:188
 msgid "Consumers"
-msgstr ""
+msgstr "Spotřebitelé"
 
 #. TRANSLATORS: Worker Encyclopedia: 1 worker recruited by a productionsite
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:79
 msgid "Worker recruited:"
-msgstr ""
+msgstr "Vycvičený dělník:"
 
 #. TRANSLATORS: Worker Encyclopedia: More than 1 worker recruited by a productionsite
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:82
 msgid "Workers recruited:"
-msgstr ""
+msgstr "Vycvičení dělníci:"
 
 #. TRANSLATORS: Worker Encyclopedia: Heading for 1 building where a worker can work
 #. TRANSLATORS: You can also translate this as 'workplace'
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:112
 msgctxt "workerhelp_one_building"
 msgid "Works at"
-msgstr ""
+msgstr "Pracovní místo:"
 
 #. TRANSLATORS: Worker Encyclopedia: A list of more than 1 building where a worker can work
 #. TRANSLATORS: You can also translate this as 'workplaces'
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:116
 msgctxt "workerhelp_multiple_buildings"
 msgid "Works at"
-msgstr ""
+msgstr "Pracovní místo:"
 
 #. TRANSLATORS: You can also translate this as 'additional workplace'
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:132
 msgctxt "workerhelp_one_building"
 msgid "Can also work at"
-msgstr ""
+msgstr "Další možné pracovní místo:"
 
 #. TRANSLATORS: You can also translate this as 'additional workplaces'
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:136
 msgctxt "workerhelp_multiple_buildings"
 msgid "Can also work at"
-msgstr ""
+msgstr "Další možné pracovní místo:"
 
 #. TRANSLATORS: Tribal Encyclopedia: Heading for which tool a worker uses
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:181
 msgid "Worker uses"
-msgstr ""
+msgstr "Dělník používá"
 
 #. TRANSLATORS: Soldier levels
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:198
 msgid "Levels"
-msgstr ""
+msgstr "Úrovně"
 
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:200
 msgid "Health"
-msgstr ""
+msgstr "Zdraví"
 
 #. TRANSLATORS: Soldier health / defense / evade points. A 5 digit number.
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:204
 msgid "Starts at %1% points."
-msgstr ""
+msgstr "Začíná na %1% bodech."
 
 #. TRANSLATORS: Soldier health / attack defense / evade points
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:207
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:218
 msgid "Increased by %1% point for each level."
 msgid_plural "Increased by %1% points for each level."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Zvýšeno o %1% bod za každou další úroveň."
+msgstr[1] "Zvýšeno o %1% body za každou další úroveň."
+msgstr[2] "Zvýšeno o %1% bodů za každou další úroveň."
+msgstr[3] "Zvýšeno o %1% bodů za každou další úroveň."
 
 #. TRANSLATORS: Soldier health / attack defense / evade level
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:210
@@ -3654,100 +3658,100 @@ msgstr[3] ""
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:245
 msgid "The maximum level is %1%."
 msgid_plural "The maximum level is %1%."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Maximální úroveň je %1%."
+msgstr[1] "Maximální úroveň je %1%."
+msgstr[2] "Maximální úroveň je %1%."
+msgstr[3] "Maximální úroveň je %1%."
 
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:212
 msgid "Attack"
-msgstr ""
+msgstr "Útok"
 
 #. TRANSLATORS: Points are 4 digit numbers.
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:215
 msgid "A random value between %1% and %2% points is added to each attack."
-msgstr ""
+msgstr "Náhodná hodnota v rozmezí %1% a %2% bodů je přidána k útoku."
 
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:222
 msgid "Defense"
-msgstr ""
+msgstr "Obrana"
 
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:226
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:234
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:241
 #, lua-format
 msgid "Starts at %d%%."
-msgstr ""
+msgstr "Začíná na %d%%."
 
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:228
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:243
 #, lua-format
 msgid "Increased by %d%% for each level."
-msgstr ""
+msgstr "Zvyšuje se o %d%% na každé úrovni."
 
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:235
 msgid "This soldier cannot be trained in defense."
-msgstr ""
+msgstr "Vojáka nelze trénovat v obraně."
 
 #: addons/europeans_tribe.wad/scripting/help/worker_help.lua:238
 msgid "Evade"
-msgstr ""
+msgstr "Úhyb"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:11
 msgid "Discovery"
-msgstr ""
+msgstr "Mořeplavec objevitel"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies"
-msgstr ""
+msgstr "Zahaj hru s třemi loďemi uprostřed oceánu a hrstkou zboží"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/fortified_village.lua:11
 msgid "Fortified Village"
-msgstr ""
+msgstr "Opevněná vesnice"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/fortified_village.lua:13
 msgid "Start the game with a big village with advanced castle in its center"
-msgstr ""
+msgstr "Zahaj hru s velkou vesnící s pokročilým hradem v jejím centru"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
 msgid "Harbors"
-msgstr ""
+msgstr "Přístavy"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:13
 msgid "Start the game with bundle of ports"
-msgstr ""
+msgstr "Zahaj hru s hodně přístavy"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
 msgid "Headquarters"
-msgstr ""
+msgstr "Hlavní budova"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:13
 msgid "Start the game with your headquarters only"
-msgstr ""
+msgstr "Zahaj hru pouze s hlavní budovou"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:11
 msgid "New World"
-msgstr ""
+msgstr "Nový Svět"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
 msgid "Start the game with advanced castle and port"
-msgstr ""
+msgstr "Zahaj hru s pokročilým hradem a přístavem"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:11
 msgid "Poor Hamlet"
-msgstr ""
+msgstr "Král cizinec"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:13
@@ -3755,21 +3759,25 @@ msgid ""
 "Start the game with just a warehouse and the bare minimum for bootstrapping "
 "an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Začni hru jen se skladem a nejzákladnějším minimem pro rozběh hospodářství. "
+"Pozor: UI za těchto podmínek nedokáže úspěšně zahájit hru."
 
 #: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:82
 msgid "Be careful"
-msgstr ""
+msgstr "Dávej pozor"
 
 #: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:82
 msgid ""
 "You have only one iron for each tool you will need to start your economy. "
 "Make sure no unneeded tool is created."
 msgstr ""
+"Máš jen jedno železo na každý nástroj, který budeš potřebovat pro start "
+"hospodářství. Postarej se, aby nebyl vyroben žádný nepotřebný nástroj."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
 msgid "Struggling Outpost"
-msgstr ""
+msgstr "Provinční osada"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:13
@@ -3777,11 +3785,13 @@ msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Začni hru jen s hlavní budovou a velmi málo surovinami pro rozběh "
+"hospodářství. Pozor: UI za těchto podmínek nedokáže úspěšně zahájit hru."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost"
-msgstr ""
+msgstr "Obchodní stanice"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:13
@@ -3789,33 +3799,34 @@ msgid ""
 "If this player runs low on important wares, they will be replenished for "
 "free. Debug Mode."
 msgstr ""
+"Pokud hráči dochází důležité suroviny, jsou zdarma doplněny. Testovací mód."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village.lua:11
 msgid "Village"
-msgstr ""
+msgstr "Vesnice"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village.lua:13
 msgid "Start the game with a small peaceful village"
-msgstr ""
+msgstr "Zahaj hru s malou mírumilovnou vesnicí"
 
 #. TRANSLATORS: This is the europeans' ship's name used in lists of units
 #: addons/europeans_tribe.wad/ship/init.lua:83
 msgctxt "europeans_ship"
 msgid "Ship"
-msgstr ""
+msgstr "Loď"
 
 #. TRANSLATORS: This europeans ship is named after a continent
 #: addons/europeans_tribe.wad/ship/init.lua:107
 msgctxt "shipname"
 msgid "Europa"
-msgstr ""
+msgstr "Evropa"
 
 #: addons/europeans_tribe.wad/ship/init.lua:108
 msgctxt "shipname"
 msgid "Europe"
-msgstr ""
+msgstr "Evropa"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:8
@@ -4055,60 +4066,60 @@ msgstr "cvičení zdraví vojáka z úrovně 5 na úroveň 6"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/init.lua:10
 msgid "Mark McWire"
-msgstr ""
+msgstr "Mark McWire"
 
 #. TRANSLATORS: This is a tribe name
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/init.lua:12
 msgid "Europeans"
-msgstr ""
+msgstr "Evropané"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/init.lua:13
 msgid "This is the culture of the Europeans."
-msgstr ""
+msgstr "Toto je kultura Evropanů."
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/military_capacity.lua:8
 msgctxt "europeans_building"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%1% voják (+%2%)"
+msgstr[1] "%1% vojáci (+%2%)"
+msgstr[2] "%1% vojáků (+%2%)"
+msgstr[3] "%1% vojáků (+%2%)"
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/military_capacity.lua:11
 msgctxt "europeans_building"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%1% voják"
+msgstr[1] "%1% vojáci"
+msgstr[2] "%1% vojáků"
+msgstr[3] "%1% vojáků"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/military_capacity.lua:16
 msgctxt "europeans_building"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%1%(+%2%) voják (+%3%)"
+msgstr[1] "%1%(+%2%) vojáci (+%3%)"
+msgstr[2] "%1%(+%2%) vojáků (+%3%)"
+msgstr[3] "%1%(+%2%) vojáků (+%3%)"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/military_capacity.lua:19
 msgctxt "europeans_building"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%1%(+%2%) voják"
+msgstr[1] "%1%(+%2%) vojáci"
+msgstr[2] "%1%(+%2%) vojáků"
+msgstr[3] "%1%(+%2%) vojáků"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental europeans tribe."
-msgstr ""
+msgstr "Toto jsou experimentální evropské kmeny."
 
 #. TRANSLATORS: Helptext for an europeans ware: Log, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:102
@@ -4117,6 +4128,8 @@ msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
 msgstr ""
+"Klády jsou důležitým základním stavebním materiálem. Získávají se těžbou "
+"stromů."
 
 #. TRANSLATORS: Helptext for an europeans ware: Log, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:104
@@ -4125,6 +4138,8 @@ msgid ""
 "Europeans lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
+"Dřevorubci Evropanů kácí stromy, lesníci zajišťují jejich obnovu. Klády jsou "
+"také využity v uhlířské peci, přístavu a pile."
 
 #. TRANSLATORS: Helptext for a barbarian ware: Blackwood
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:114
@@ -4133,48 +4148,50 @@ msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
 "buildings. It is produced out of logs in the wood hardener."
 msgstr ""
+"Toto ohnivzdorné dřevo je stejně tvrdé jako železo a používá se na stavbu "
+"některých budov. Vyrábí se z klád v lakýrně dřeva."
 
 #. TRANSLATORS: Helptext for an europeans ware: Planks, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:124
 msgctxt "ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Prkna jsou důležitým stavebním materiálem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Planks, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:126
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Vyrábí se z klád na pile."
 
 #. TRANSLATORS: Helptext for an europeans ware: Planks, part 3
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:128
 msgctxt "europeans_ware"
 msgid "They are also used by the tool smithy and weapon smithy."
-msgstr ""
+msgstr "Jsou také využívány v kovářství a zbrojířství."
 
 #. TRANSLATORS: Helptext for an europeans ware: Reed, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:139
 msgctxt "ware"
 msgid "Reed are an important building material."
-msgstr ""
+msgstr "Rákos je důležitý stavební materiál."
 
 #. TRANSLATORS: Helptext for an europeans ware: Reed, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:141
 msgctxt "europeans_ware"
 msgid "They are produced by reed yard."
-msgstr ""
+msgstr "Je pěstován v rákosovém poli."
 
 #. TRANSLATORS: Helptext for an europeans ware: Cloth
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:151
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
-msgstr ""
+msgstr "Látka je potřeva ke stavbě několika budov. Je vyráběna z rákosu."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wool
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:160
 msgctxt "europeans_ware"
 msgid "Wool is the hair of sheep. Weaving mills use it to make armor."
-msgstr ""
+msgstr "Vlna roste na ovcích.  Tkalcovny ji využívají k výrobě zbroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wool
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:169
@@ -4183,37 +4200,39 @@ msgid ""
 "Spidersilk is produced by spiderfarm. Weaving mills use it to make "
 "spidercloth and tabard."
 msgstr ""
+"Pavoučí vlákno je produkováno pavoučí farmou. Tkalcovny je využívají k "
+"výrobě pavoučí látky a tabardu."
 
 #. TRANSLATORS: Helptext for an europeans ware: Cloth
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:178
 msgctxt "europeans_ware"
 msgid "Spidercloth is consumed in the tool smithy."
-msgstr ""
+msgstr "Pavoučí látka je spotřebována v kovářství."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:192
 msgctxt "ware"
 msgid "Granite is a basic building material."
-msgstr ""
+msgstr "Žula je základním stavebním materiálem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:194
 msgctxt "europeans_ware"
 msgid "The europeans produces granite blocks in quarries."
-msgstr ""
+msgstr "Evropané získavají žulové bloky z lomů."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:205
 msgctxt "ware"
 msgid "Grout is a basic building material."
-msgstr ""
+msgstr "Malta je základním stavebním materiálem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:207
 msgctxt "europeans_ware"
 msgid ""
 "The europeans produces grout in stonemason huts out of granite and water."
-msgstr ""
+msgstr "Evropané získávají maltu v kamenictví ze žuly a vody."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:218
