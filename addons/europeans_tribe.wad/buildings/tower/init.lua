@@ -14,31 +14,26 @@ descriptions:new_militarysite_type {
         name = "europeans_tower_high",
         enhancement_cost = {
             planks = 2,
-            brick = 2,
-            grout = 2,
-            marble_column = 1,
-            quartz = 1,
-            diamond = 1
+            cloth = 2,
+            granite = 1,
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             planks = 1,
-            granite = 2,
-            marble = 1,
-            quartz = 1,
-            diamond = 1
+            granite = 1,
+            quartz = 1
         },
    },
 
    buildcost = {
-      planks = 4,
-      cloth = 4,
-      brick = 4,
-      grout = 4
+      blackwood = 3,
+      reed = 3,
+      granite = 2
    },
    return_on_dismantle = {
-      planks = 2,
-      cloth = 1,
-      granite = 3
+      blackwood = 2,
+      reed = 1,
+      granite = 1
    },
 
    aihints = {

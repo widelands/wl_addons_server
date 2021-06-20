@@ -13,30 +13,25 @@ descriptions:new_militarysite_type {
         name = "europeans_outpost",
         enhancement_cost = {
             planks = 2,
-            brick = 2,
-            grout = 2,
-            marble_column = 1,
-            quartz = 1,
-            diamond = 1
+            cloth = 2,
+            granite = 1,
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             planks = 1,
-            granite = 2,
-            marble = 1,
-            quartz = 1,
-            diamond = 1
+            granite = 1,
+            quartz = 1
         },
    },
 
    buildcost = {
-      planks = 3,
-      cloth = 3,
-      brick = 3,
-      grout = 3
+      blackwood = 3,
+      reed = 3,
+      granite = 2
    },
    return_on_dismantle = {
-      planks = 2,
-      granite = 3
+      blackwood = 2,
+      granite = 1
    },
 
    animations = {

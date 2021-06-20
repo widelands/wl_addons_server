@@ -11,18 +11,22 @@ descriptions:new_warehouse_type {
    map_check = {"seafaring"},
 
    buildcost = {
-      planks = 6,
-      reed = 2,
-      cloth = 2,
-      brick = 3,
-      grout = 3,
-      quartz = 3,
-      diamond = 3
-   },
-   return_on_dismantle = {
+      blackwood = 3,
       planks = 3,
       reed = 2,
+      cloth = 2,
+      brick = 2,
+      grout = 2,
+      marble_column = 2,
+      quartz = 2,
+      diamond = 2
+   },
+   return_on_dismantle = {
+      blackwood = 1,
+      planks = 1,
+      reed = 2,
       granite = 2,
+      marble = 2,
       quartz = 2,
       diamond = 2
    },
