@@ -18,7 +18,8 @@ descriptions:new_warehouse_type {
    },
 
    buildcost = {
-      planks = 12,
+      blackwood = 6,
+      planks = 6,
       cloth = 4,
       reed = 4,
       brick = 4,
@@ -28,8 +29,8 @@ descriptions:new_warehouse_type {
       diamond = 3
    },
    return_on_dismantle = {
-      planks = 6,
-      reed = 4,
+      blackwood = 3,
+      planks = 3,
       granite = 4,
       marble = 2,
       quartz = 2,

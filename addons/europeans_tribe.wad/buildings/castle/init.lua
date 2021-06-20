@@ -12,35 +12,29 @@ descriptions:new_militarysite_type {
    enhancement = {
         name = "europeans_fortress",
         enhancement_cost = {
-            planks = 3,
-            brick = 3,
-            grout = 3,
-            marble_column = 3,
-            quartz = 2,
-            diamond = 2
+            planks = 4,
+            cloth = 4,
+            granite = 2,
+            quartz = 2
         },
         enhancement_return_on_dismantle = {
             planks = 2,
-            granite = 3,
-            marble = 3,
-            quartz = 2,
-            diamond = 2
+            cloth = 1,
+            granite = 1,
+            quartz = 2
         },
    },
 
    buildcost = {
-      planks = 6,
-      cloth = 4,
-      brick = 4,
-      grout = 4,
-      quartz = 1,
-      diamond = 1
+      blackwood = 4,
+      reed = 4,
+      granite = 2,
+      quartz = 1
    },
    return_on_dismantle = {
-      planks = 3,
-      granite = 5,
-      quartz = 1,
-      diamond = 1
+      blackwood = 2,
+      granite = 1,
+      quartz = 1
    },
 
    animations = {
