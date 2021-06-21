@@ -182,7 +182,7 @@ public class Server {
 							handle(
 							    cmd.split(" "), out, in, protocolVersion, username, admin, locale);
 						}
-					} catch (Exception e) {
+					} catch (Throwable e) {
 						System.out.println("[" + new Date() + " @ " +
 						                   Thread.currentThread().getName() + "] ERROR: " + e);
 						if (out != null) out.println(e);
@@ -201,7 +201,7 @@ public class Server {
 	                           int version,
 	                           String username,
 	                           boolean admin,
-	                           String locale) throws Exception {
+	                           String locale) throws Throwable {
 		String method = null;
 		switch (Command.valueOf(cmd[0])) {
 			case CMD_LIST:
@@ -243,9 +243,13 @@ public class Server {
 			default:
 				throw new ProtocolException("Invalid command " + cmd[0]);
 		}
-		HandleCommand.class
-		    .getMethod​(method, String[].class, PrintStream.class, InputStream.class, int.class,
-		                  String.class, boolean.class, String.class)
-		    .invoke(null, cmd, out, in, version, username, admin, locale);
+		try {
+			HandleCommand.class
+				.getMethod​(method, String[].class, PrintStream.class, InputStream.class, int.class,
+				              String.class, boolean.class, String.class)
+				.invoke(null, cmd, out, in, version, username, admin, locale);
+		} catch (java.lang.reflect.InvocationTargetException e) {
+			throw (e.getCause() == null ? e : e.getCause());
+		}
 	}
 }
