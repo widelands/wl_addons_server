@@ -44,8 +44,8 @@ public class Server {
 							syncer.check();
 							if (errored)
 								throw new Exception(
-								    "You still have not resolved the merge conflicts. " +
-								    "Please do so soon!");
+								    "You still have not resolved the merge conflicts. "
+								    + "Please do so soon!");
 							System.out.println("Performing GitHub sync at " + new Date());
 							Utils._staticprofiles.clear();
 							syncer.sync();
@@ -55,20 +55,20 @@ public class Server {
 						System.out.println("GitHub sync ERROR: " + e);
 						try {
 							String str;
-							String msg =
-							    "@Noordfrees\n\n" + "The automated GitHub sync on the server " +
-							    "has failed with the following error message:\n"
-							    + "```\n" + e + "\n```\n\n```\n$ git status";
+							String msg = "@Noordfrees\n\n"
+							             + "The automated GitHub sync on the server "
+							             + "has failed with the following error message:\n"
+							             + "```\n" + e + "\n```\n\n```\n$ git status";
 							Process p = Runtime.getRuntime().exec(
 							    new String[] {"bash", "-c", "git status"});
 							p.waitFor();
 							BufferedReader b =
 							    new BufferedReader(new InputStreamReader(p.getInputStream()));
 							while ((str = b.readLine()) != null) msg += "\n" + str;
-							msg +=
-							    "\n```\n\nThe automated syncs will discontinue until the server " +
-							    "has been restarted. Please resolve the merge conflicts quickly."
-							    + "  \nThank you :)";
+							msg += "\n```\n\nThe automated syncs will discontinue until the server "
+							       +
+							       "has been restarted. Please resolve the merge conflicts quickly."
+							       + "  \nThank you :)";
 
 							Utils.bash("bash", "-c", "git status");
 							Utils.bash("bash", "-c", "git restore --staged .");
