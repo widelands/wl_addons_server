@@ -268,10 +268,6 @@ public abstract class Utils {
 		System.exit(1);
 	}
 
-	// NOCOM: This sometimes may contain data we don't want to make publicly visible.
-	// Send an e-mail to the maintainers instead? Or even better, post to some private
-	// thread which only the widelands/chieftains team can read (don't know if GitHub
-	// has something like this; the internal forums might also be suited for this).
 	public static void sendNotificationToGitHubThread(String msg) throws Exception {
 		msg = msg.replaceAll("\n", "\\\\n");
 		msg = msg.replaceAll("\t", "\\\\t");
@@ -285,8 +281,8 @@ public abstract class Utils {
 		    "bash", "-c",
 		    "curl -X POST -H \"Accept: application/vnd.github.v3+json\" -u " +
 		        config("githubusername") + ":" + config("githubtoken") +
-		        " https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments -d '{\"body\":\"" +
-		        msg + "\"}'"});
+		        " https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments "
+		        + "-d '{\"body\":\"" + msg + "\"}'"});
 		p.waitFor();
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 		boolean err = false;

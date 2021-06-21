@@ -234,8 +234,9 @@ abstract class HandleCommand {
 		long size = Long.valueOf(cmd[2]);
 		if (size > 4 * 1000 * 1000)
 			throw new ProtocolException(
-			    "Filesize " + size +
-			    " exceeds the limit of 4 MB. If you really need to submit such a large image, please contact the Widelands Development Team.");
+			    "Filesize " + size + " exceeds the limit of 4 MB. " +
+			    "If you really need to submit such a large image, " +
+			    "please contact the Widelands Development Team.");
 		File tempDir = Utils.createTempDir();
 
 		try {
@@ -323,9 +324,9 @@ abstract class HandleCommand {
 					totalSize += size;
 					if (totalSize > 200 * 1000 * 1000)
 						throw new ProtocolException(
-						    "Filesize limit of 200 MB exceeded. "
-						    +
-						    "If you really want to submit such a large add-on, please contact the Widelands Development Team.");
+						    "Filesize limit of 200 MB exceeded. " +
+						    "If you really want to submit such a large add-on, " +
+						    "please contact the Widelands Development Team.");
 					File file = new File(dirnames[i], filename);
 					PrintStream stream = new PrintStream(file);
 					for (long l = 0; l < size; ++l) {
@@ -359,7 +360,8 @@ abstract class HandleCommand {
 
 				if (!oldProfile.get("category").value.equals(newProfile.get("category").value))
 					throw new ProtocolException(
-					    "An add-on with the same name and a different category already exists. Old category is '" +
+					    "An add-on with the same name and a different category already exists. " +
+					    "Old category is '" +
 					    oldProfile.get("category").value + "', new category is '" +
 					    newProfile.get("category").value + "'.");
 
@@ -376,9 +378,9 @@ abstract class HandleCommand {
 				if (newer == null) newer = (oldVersion.length < newVersion.length);
 				if (!newer) {
 					throw new ProtocolException(
-					    "An add-on with the same name and an equal or newer version already exists. Existing version is '" +
-					    oldVersionString + "', your version is '" +
-					    newProfile.get("version").value + "'.");
+					    "An add-on with the same name and an equal or newer version " +
+					    "already exists. Existing version is '" + oldVersionString +
+					    "', your version is '" + newProfile.get("version").value + "'.");
 				}
 
 				isUpdate = true;
