@@ -245,11 +245,11 @@ public class Server {
 		}
 		try {
 			HandleCommand.class
-				.getMethod​(method, String[].class, PrintStream.class, InputStream.class, int.class,
-				              String.class, boolean.class, String.class)
-				.invoke(null, cmd, out, in, version, username, admin, locale);
+			    .getMethod​(method, String[].class, PrintStream.class, InputStream.class,
+			                  int.class, String.class, boolean.class, String.class)
+			    .invoke(null, cmd, out, in, version, username, admin, locale);
 		} catch (java.lang.reflect.InvocationTargetException e) {
-			throw (e.getCause() == null ? e : e.getCause());
+			throw(e.getCause() == null ? e : e.getCause());
 		}
 	}
 }
