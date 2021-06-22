@@ -1,3 +1,3 @@
 return {
-   europeans_castle = {},
+   europeans_castle = {"__replace_if_exists"},
 }

@@ -310,7 +310,7 @@ descriptions:new_tribe {
             preciousness = 24,
             helptexts = {
                -- TRANSLATORS: Helptext for an atlantean ware: Blackroot
-               purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Sheep farms need to be provided with corn.")
+               purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Sheep farms need to be provided with blackroot.")
             }
          },
          {

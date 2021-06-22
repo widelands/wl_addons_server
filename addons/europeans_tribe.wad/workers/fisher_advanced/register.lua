@@ -1,3 +1,3 @@
 return {
-   europeans_fisher_advanced = {},
+   europeans_fisher_advanced = {"__replace_if_exists"},
 }
