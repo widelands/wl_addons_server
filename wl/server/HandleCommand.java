@@ -15,12 +15,12 @@ class HandleCommand {
 	private final String locale;
 
 	public HandleCommand(String[] cmd,
-                         PrintStream out,
-                         InputStream in,
-                         int version,
-                         String username,
-                         boolean admin,
-                         String locale) {
+	                     PrintStream out,
+	                     InputStream in,
+	                     int version,
+	                     String username,
+	                     boolean admin,
+	                     String locale) {
 		this.cmd = cmd;
 		this.out = out;
 		this.in = in;
