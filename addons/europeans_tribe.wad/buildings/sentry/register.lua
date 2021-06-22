@@ -1,3 +1,3 @@
 return {
-   europeans_sentry = {},
+   europeans_sentry = {"__replace_if_exists"},
 }

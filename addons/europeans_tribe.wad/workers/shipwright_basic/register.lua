@@ -1,3 +1,3 @@
 return {
-   europeans_shipwright_basic = {},
+   europeans_shipwright_basic = {"__replace_if_exists"},
 }

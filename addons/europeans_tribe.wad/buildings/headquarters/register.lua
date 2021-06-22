@@ -1,3 +1,3 @@
 return {
-   europeans_headquarters = {},
+   europeans_headquarters = {"__replace_if_exists"},
 }

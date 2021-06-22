@@ -1,3 +1,3 @@
 return {
-   europeans_recruit = {},
+   europeans_recruit = {"__replace_if_exists"},
 }

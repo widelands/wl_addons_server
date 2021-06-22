@@ -1,3 +1,3 @@
 return {
-   europeans_builder = {},
+   europeans_builder = {"__replace_if_exists"},
 }

@@ -1,3 +1,3 @@
 return {
-   rye = {},
+   rye = {"__replace_if_exists"},
 }
