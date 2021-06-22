@@ -1,3 +1,3 @@
 return {
-   ore = {},
+   ore = {"__replace_if_exists"},
 }

@@ -1,3 +1,3 @@
 return {
-   europeans_spiderfarm = {},
+   europeans_spiderfarm = {"__replace_if_exists"},
 }

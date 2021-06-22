@@ -1,3 +1,3 @@
 return {
-   europeans_gamekeeper_advanced = {},
+   europeans_gamekeeper_advanced = {"__replace_if_exists"},
 }

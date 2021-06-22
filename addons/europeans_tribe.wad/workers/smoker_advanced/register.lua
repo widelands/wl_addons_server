@@ -1,3 +1,3 @@
 return {
-   europeans_smoker_advanced = {},
+   europeans_smoker_advanced = {"__replace_if_exists"},
 }

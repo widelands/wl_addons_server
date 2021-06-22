@@ -1,3 +1,3 @@
 return {
-   europeans_barrier = {},
+   europeans_barrier = {"__replace_if_exists"},
 }

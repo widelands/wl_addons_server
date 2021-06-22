@@ -1,3 +1,3 @@
 return {
-   europeans_brewery_basic = {},
+   europeans_brewery_basic = {"__replace_if_exists"},
 }

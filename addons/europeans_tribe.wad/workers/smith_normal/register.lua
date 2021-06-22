@@ -1,3 +1,3 @@
 return {
-   europeans_smith_normal = {},
+   europeans_smith_normal = {"__replace_if_exists"},
 }
