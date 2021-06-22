@@ -5,14 +5,32 @@ import java.net.*;
 import java.util.*;
 import wl.utils.*;
 
-abstract class HandleCommand {
-	public static void handleCmdList(String[] cmd,
-	                                 PrintStream out,
-	                                 InputStream in,
-	                                 int version,
-	                                 String username,
-	                                 boolean admin,
-	                                 String locale) throws Exception {
+class HandleCommand {
+	private final String[] cmd;
+	private final PrintStream out;
+	private final InputStream in;
+	private final int version;
+	private final String username;
+	private final boolean admin;
+	private final String locale;
+
+	public HandleCommand(String[] cmd,
+                         PrintStream out,
+                         InputStream in,
+                         int version,
+                         String username,
+                         boolean admin,
+                         String locale) {
+		this.cmd = cmd;
+		this.out = out;
+		this.in = in;
+		this.version = version;
+		this.username = username;
+		this.admin = admin;
+		this.locale = locale;
+	}
+
+	public void handleCmdList() throws Exception {
 		// Args: –
 		ServerUtils.checkNrArgs(cmd, 0);
 		File[] names = ServerUtils.listSorted(new File("addons"));
@@ -22,13 +40,7 @@ abstract class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	public static void handleCmdInfo(String[] cmd,
-	                                 PrintStream out,
-	                                 InputStream in,
-	                                 int version,
-	                                 String username,
-	                                 boolean admin,
-	                                 String locale) throws Exception {
+	public void handleCmdInfo() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
 		ServerUtils.checkNameValid(cmd[1], false);
@@ -36,13 +48,7 @@ abstract class HandleCommand {
 		ServerUtils.info(version, cmd[1], locale, out);
 	}
 
-	public static void handleCmdDownload(String[] cmd,
-	                                     PrintStream out,
-	                                     InputStream in,
-	                                     int version,
-	                                     String username,
-	                                     boolean admin,
-	                                     String locale) throws Exception {
+	public void handleCmdDownload() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
 		ServerUtils.checkNameValid(cmd[1], false);
@@ -55,13 +61,7 @@ abstract class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	public static void handleCmdI18n(String[] cmd,
-	                                 PrintStream out,
-	                                 InputStream in,
-	                                 int version,
-	                                 String username,
-	                                 boolean admin,
-	                                 String locale) throws Exception {
+	public void handleCmdI18n() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
 		ServerUtils.checkNameValid(cmd[1], false);
@@ -71,13 +71,7 @@ abstract class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	public static void handleCmdScreenshot(String[] cmd,
-	                                       PrintStream out,
-	                                       InputStream in,
-	                                       int version,
-	                                       String username,
-	                                       boolean admin,
-	                                       String locale) throws Exception {
+	public void handleCmdScreenshot() throws Exception {
 		// Args: addon screenie
 		ServerUtils.checkNrArgs(cmd, 2);
 		ServerUtils.checkNameValid(cmd[1], false);
@@ -87,13 +81,7 @@ abstract class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	public static void handleCmdVote(String[] cmd,
-	                                 PrintStream out,
-	                                 InputStream in,
-	                                 int version,
-	                                 String username,
-	                                 boolean admin,
-	                                 String locale) throws Exception {
+	public void handleCmdVote() throws Exception {
 		// Args: name vote
 		ServerUtils.checkNrArgs(cmd, 2);
 		if (username.isEmpty()) throw new ProtocolException("You need to log in to vote");
@@ -103,13 +91,7 @@ abstract class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	public static void handleCmdGetVote(String[] cmd,
-	                                    PrintStream out,
-	                                    InputStream in,
-	                                    int version,
-	                                    String username,
-	                                    boolean admin,
-	                                    String locale) throws Exception {
+	public void handleCmdGetVote() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty()) {
@@ -124,13 +106,7 @@ abstract class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	public static void handleCmdComment(String[] cmd,
-	                                    PrintStream out,
-	                                    InputStream in,
-	                                    int version,
-	                                    String username,
-	                                    boolean admin,
-	                                    String locale) throws Exception {
+	public void handleCmdComment() throws Exception {
 		// Args: name version lines
 		ServerUtils.checkNrArgs(cmd, 3);
 		if (username.isEmpty()) throw new ProtocolException("Log in to comment");
@@ -147,13 +123,7 @@ abstract class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	public static void handleCmdEditComment(String[] cmd,
-	                                        PrintStream out,
-	                                        InputStream in,
-	                                        int version,
-	                                        String username,
-	                                        boolean admin,
-	                                        String locale) throws Exception {
+	public void handleCmdEditComment() throws Exception {
 		// Args: name index lines
 		ServerUtils.checkNrArgs(cmd, 3);
 		if (username.isEmpty()) throw new ProtocolException("Log in to edit comments");
@@ -184,13 +154,7 @@ abstract class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	public static void handleCmdContact(String[] cmd,
-	                                    PrintStream out,
-	                                    InputStream in,
-	                                    int version,
-	                                    String username,
-	                                    boolean admin,
-	                                    String locale) throws Exception {
+	public void handleCmdContact() throws Exception {
 		// Args: lines
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty())
@@ -208,13 +172,7 @@ abstract class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	public static void handleCmdSubmitScreenshot(String[] cmd,
-	                                             PrintStream out,
-	                                             InputStream in,
-	                                             int version,
-	                                             String username,
-	                                             boolean admin,
-	                                             String locale) throws Exception {
+	public void handleCmdSubmitScreenshot() throws Exception {
 		// Args: name filesize checksum whitespaces description
 		ServerUtils.checkNrArgs(cmd, 5);
 		ServerUtils.checkNameValid(cmd[1], false);
@@ -277,13 +235,7 @@ abstract class HandleCommand {
 		}
 	}
 
-	public static void handleCmdSubmit(String[] cmd,
-	                                   PrintStream out,
-	                                   InputStream in,
-	                                   int version,
-	                                   String username,
-	                                   boolean admin,
-	                                   String locale) throws Exception {
+	public void handleCmdSubmit() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty()) throw new ProtocolException("You need to log in to submit add-ons");

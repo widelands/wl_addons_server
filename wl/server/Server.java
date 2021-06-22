@@ -183,7 +183,7 @@ public class Server {
 							handle(
 							    cmd.split(" "), out, in, protocolVersion, username, admin, locale);
 						}
-					} catch (Throwable e) {
+					} catch (Exception e) {
 						System.out.println("[" + new Date() + " @ " +
 						                   Thread.currentThread().getName() + "] ERROR: " + e);
 						if (out != null) out.println(e);
@@ -202,55 +202,48 @@ public class Server {
 	                           int version,
 	                           String username,
 	                           boolean admin,
-	                           String locale) throws Throwable {
-		String method = null;
+	                           String locale) throws Exception {
+		// String method = null;
+		HandleCommand h = new HandleCommand(cmd, out, in, version, username, admin, locale);
 		switch (Command.valueOf(cmd[0])) {
 			case CMD_LIST:
-				method = "handleCmdList";
+				h.handleCmdList();
 				break;
 			case CMD_INFO:
-				method = "handleCmdInfo";
+				h.handleCmdInfo();
 				break;
 			case CMD_DOWNLOAD:
-				method = "handleCmdDownload";
+				h.handleCmdDownload();
 				break;
 			case CMD_I18N:
-				method = "handleCmdI18n";
+				h.handleCmdI18n();
 				break;
 			case CMD_SCREENSHOT:
-				method = "handleCmdScreenshot";
+				h.handleCmdScreenshot();
 				break;
 			case CMD_COMMENT:
-				method = "handleCmdComment";
+				h.handleCmdComment();
 				break;
 			case CMD_EDIT_COMMENT:
-				method = "handleCmdEditComment";
+				h.handleCmdEditComment();
 				break;
 			case CMD_VOTE:
-				method = "handleCmdVote";
+				h.handleCmdVote();
 				break;
 			case CMD_GET_VOTE:
-				method = "handleCmdGetVote";
+				h.handleCmdGetVote();
 				break;
 			case CMD_SUBMIT_SCREENSHOT:
-				method = "handleCmdSubmitScreenshot";
+				h.handleCmdSubmitScreenshot();
 				break;
 			case CMD_SUBMIT:
-				method = "handleCmdSubmit";
+				h.handleCmdSubmit();
 				break;
 			case CMD_CONTACT:
-				method = "handleCmdContact";
+				h.handleCmdContact();
 				break;
 			default:
 				throw new ProtocolException("Invalid command " + cmd[0]);
-		}
-		try {
-			HandleCommand.class
-			    .getMethod​(method, String[].class, PrintStream.class, InputStream.class,
-			                  int.class, String.class, boolean.class, String.class)
-			    .invoke(null, cmd, out, in, version, username, admin, locale);
-		} catch (java.lang.reflect.InvocationTargetException e) {
-			throw(e.getCause() == null ? e : e.getCause());
 		}
 	}
 }

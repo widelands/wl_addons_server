@@ -13,7 +13,7 @@ package wl.server;
  * Otherwise:
  *   - The server replies with a random number followed by \nENDOFSTREAM\n.
  *   - The client calculates the hash of the password hash and the random number and sends the
- * result followed by \nENDOFSTREAM\n.
+ *     result followed by \nENDOFSTREAM\n.
  *   - The server checks whether the result is correct and sends one of these:
  *     - SUCCESS\n for accepted standard user
  *     - ADMIN\n for accepted superuser
@@ -185,7 +185,8 @@ public enum Command {
 	 * Upload an add-on.
 	 * Arg 1: Add-on name
 	 * Then, on the next line, the content of the add-on like the response for CMD_DOWNLOAD,
-	 * terminated by ENDOFSTREAM\n. Returns: ENDOFSTREAM\n or an error message\n
+	 * terminated by ENDOFSTREAM\n.
+	 * Returns: ENDOFSTREAM\n or an error message\n
 	 */
 	CMD_SUBMIT,
 
@@ -198,7 +199,8 @@ public enum Command {
 	 * Arg 4: Number of whitespaces in the description
 	 * Arg 5: Screenshot description
 	 * Then, on the next line, the content of the image file like for CMD_SCREENSHOT, terminated by
-	 * ENDOFSTREAM\n. Returns: ENDOFSTREAM\n or an error message\n
+	 * ENDOFSTREAM\n.
+	 * Returns: ENDOFSTREAM\n or an error message\n
 	 */
 	CMD_SUBMIT_SCREENSHOT,
 
