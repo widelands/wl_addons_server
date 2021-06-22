@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-21 03:14+0000\n"
+"POT-Creation-Date: 2021-06-22 03:13+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -4411,6 +4411,8 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid "A bigger morsel than the ration to provide miners in deep mines."
 msgstr ""
+"O něco větší porce jídla než je malá svačina, určená pro horníky v "
+"hlubinných dolech."
 
 #. TRANSLATORS: Helptext for a barbarian ware: Meal
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:379
@@ -4419,12 +4421,15 @@ msgid ""
 "A meal is made out of pitta bread, strong beer and fish/meat in a big inn. "
 "This substantial food is exactly what workers in a deeper mine need."
 msgstr ""
+"Jídlo se vyrábí z chlebových placek, silného piva a ryb/masa ve velkém "
+"hostinci. Tato vydatná strava je přesně tím, co dělníci v hlubším dole "
+"potřebují."
 
 #. TRANSLATORS: Helptext for an europeans ware: Water, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:392
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Voda je podstatou života!"
 
 #. TRANSLATORS: Helptext for an europeans ware: Water, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:394
@@ -4434,12 +4439,14 @@ msgid ""
 "and the brewery. The spider farm and the sheep farm need to be supplied with "
 "water."
 msgstr ""
+"Voda je využívána chovatelem ryb, hajným, všemi druhy farem, v pekárně a "
+"pivovaru. Pavoučí farma a ovčinec musí být zásobeny vodou."
 
 #. TRANSLATORS: Helptext for a frisian ware: Barley
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:404
 msgctxt "europeans_ware"
 msgid "Barley is a slow-growing grain that is used for brewing beer."
-msgstr ""
+msgstr "Ječmen je pomalu roustoucí plodina, která je využívána k vaření piva."
 
 #. TRANSLATORS: Helptext for an europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:413
@@ -4448,6 +4455,8 @@ msgid ""
 "This beer is produced in a brewery out of barley and water. It is consumed "
 "in trainingssites."
 msgstr ""
+"Pivo je vyráběno v pivovaru z ječmene a vody. Je konzumováno ve výcvikových "
+"táborech."
 
 #. TRANSLATORS: Helptext for an europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:422
@@ -4456,6 +4465,8 @@ msgid ""
 "This strong beer is produced in a brewery out of barley and water. It is "
 "consumed in trainingssites."
 msgstr ""
+"Silné pivo je vyráběno v pivovaru z ječmene a vody. Je konzumováno ve "
+"výcvikových táborech."
 
 #. TRANSLATORS: Helptext for a frisian ware: Honey
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:431
@@ -4463,6 +4474,8 @@ msgctxt "europeans_ware"
 msgid ""
 "Honey is produced by bees belonging to a beekeeper. It is used to brew mead."
 msgstr ""
+"Med je produkován včelami, o které se stará včelař. Je používána k výrobě "
+"medoviny."
 
 #. TRANSLATORS: Helptext for a frisian ware: Mead
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:440
@@ -4470,6 +4483,8 @@ msgctxt "europeans_ware"
 msgid ""
 "Mead is produced by breweries. Soldiers drink mead during advanced training."
 msgstr ""
+"Medovina je vyráběna v pivovarech. Vojáci pijí medovinu během pokročilého "
+"tréninku."
 
 #. TRANSLATORS: Helptext for a frisian ware: Fruit
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:449
@@ -4478,6 +4493,8 @@ msgid ""
 "Fruit are berries gathered from berry bushes by a fruit collector. They are "
 "used to brew fruit wine."
 msgstr ""
+"Ovoce je sbíráno z ovocných keřů sběračem ovoce. Je používáno k výrobě "
+"ovocného vína."
 
 #. TRANSLATORS: Helptext for an europeans ware: Grape
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:458
@@ -4486,6 +4503,8 @@ msgid ""
 "These grapes are the base for a tasty wine. They are harvested in a vineyard "
 "and processed in a winery."
 msgstr ""
+"Z hroznů se vyrábí chutné víno. Sbírají se ve vinohradu a zpracovávají se ve "
+"vinném sklepě."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:467
@@ -4494,12 +4513,14 @@ msgid ""
 "This tasty wine is drunk by soldiers to train in colosseum. It is produced "
 "in a winery."
 msgstr ""
+"Chutné víno je konzumováno vojáky trénujícími v koloseu. Je vyráběno ve "
+"vinném sklepě."
 
 #. TRANSLATORS: Helptext for an europeans ware: Coal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:480
 msgctxt "ware"
 msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
-msgstr ""
+msgstr "Uhlí se těží v dole na uhlí nebo se vyrábí z klád v uhlířské peci."
 
 #. TRANSLATORS: Helptext for an europeans ware: Coal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:482
@@ -4508,18 +4529,20 @@ msgid ""
 "The fires of the europeans smelting works, armor smithies and weapon "
 "smithies are usually fed with coal."
 msgstr ""
+"Výhně sléváren, platnéřství a zbrojířství evropanů jsou většinou krmeny "
+"uhlím."
 
 #. TRANSLATORS: Helptext for an europeans ware: Iron Ore, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:493
 msgctxt "default_ware"
 msgid "Ore is mined in ore mines."
-msgstr ""
+msgstr "Železná ruda je těžena v dole na železo."
 
 #. TRANSLATORS: Helptext for an europeans ware: Iron Ore, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:495
 msgctxt "europeans_ware"
 msgid "It is smelted in a smelting works to retrieve all the metals."
-msgstr ""
+msgstr "Poté je roztavena ve slévárně, aby bylo možné získat všechny kovy."
 
 #. TRANSLATORS: Helptext for a frisian ware: Scrap Iron
 #. TRANSLATORS: Helptext for a frisian ware: Scrap metal (mixed)
@@ -4530,12 +4553,14 @@ msgid ""
 "Discarded weapons and armor can be recycled in a recycling center to produce "
 "new tools, weapon and armor."
 msgstr ""
+"Použité vyřazené vojenské zbraně a oděvy mohou být recyklovány na "
+"recyklačním dvoře na suroviny pro opětovnou výrobu nástrojů, zbraní a oděvů."
 
 #. TRANSLATORS: Helptext for an europeans ware: Iron, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:514
 msgctxt "ware"
 msgid "Iron is smelted out of ores."
-msgstr ""
+msgstr "Železo je vytaveno z železné rudy."
 
 #. TRANSLATORS: Helptext for an europeans ware: Iron, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:516
@@ -4544,12 +4569,14 @@ msgid ""
 "It is produced by the smelting works. Weapons, armor and tools are made of "
 "iron."
 msgstr ""
+"Je produkováno slévárnami. Ze železa se vyrábí zbraně, zbroj a nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Gold, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:535
 msgctxt "ware"
 msgid "Gold is the most valuable of all metals, and it is smelted out of ore."
 msgstr ""
+"Zlato je nejcennějším ze všech kovů a je získáváno tavením ze zlaté rudy."
 
 #. TRANSLATORS: Helptext for an europeans ware: Gold, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:537
@@ -4558,6 +4585,8 @@ msgid ""
 "It is produced by the smelting works. Armor and weapons are embellished with "
 "gold in the armor smithy and the weapon smithy."
 msgstr ""
+"Je produkováno slévárnami. Zbroj a zbraně jsou zlaceny v platnéřství a "
+"zbrojířství."
 
 #. TRANSLATORS: Helptext for an europeans ware: Buckets
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:550
