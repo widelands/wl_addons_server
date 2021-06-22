@@ -259,7 +259,7 @@ public abstract class Utils {
 
 	public static void fatalError(String str, Exception x) {
 		System.out.println("#########################################################");
-		System.out.println(" VERY FATAL ERROR – " + str);
+		System.out.println(" VERY FATAL ERROR: " + str);
 		System.out.println("  " + x);
 		System.out.println(" Something has gone seriously wrong here.");
 		System.out.println(" Killing the server in the hope that the maintainers");

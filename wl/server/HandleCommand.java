@@ -402,15 +402,15 @@ abstract class HandleCommand {
 			    "\n- Category: " + newProfile.get("category").value +
 			    (newProfile.containsKey("sync_safe") ?
                      ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
-                     ("\n- Sync-safe: –")) +
+                     ("\n- Sync-safe: N/A")) +
 			    "\n- Min WL version: " +
 			    (newProfile.containsKey("min_wl_version") ? newProfile.get("min_wl_version").value :
-                                                            "–") +
+                                                            "N/A") +
 			    "\n- Max WL version: " +
 			    (newProfile.containsKey("max_wl_version") ? newProfile.get("max_wl_version").value :
-                                                            "–") +
+                                                            "N/A") +
 			    "\n- Requires: " +
-			    (newProfile.get("requires").value.isEmpty() ? "–" :
+			    (newProfile.get("requires").value.isEmpty() ? "N/A" :
                                                               newProfile.get("requires").value) +
 			    "\n\nPlease review this add-on soonish.");
 			if (isUpdate) ServerUtils.doDelete(addOnDir);
