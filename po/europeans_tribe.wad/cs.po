@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-22 03:13+0000\n"
+"POT-Creation-Date: 2021-06-23 03:11+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -3830,6 +3830,7 @@ msgstr "Evropa"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:8
+#: addons/europeans_tribe.wad/trainingssites/battlearena_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Battle Arena"
 msgstr "Jednoduchá bojová aréna"
@@ -3840,6 +3841,11 @@ msgstr "Jednoduchá bojová aréna"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:95
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:102
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:87
+#: addons/europeans_tribe.wad/trainingssites/battlearena_basic/init.lua:113
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:101
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:95
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:102
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:87
 msgid "sleeping"
 msgstr "podřimování"
 
@@ -3849,6 +3855,11 @@ msgstr "podřimování"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:103
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:110
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:95
+#: addons/europeans_tribe.wad/trainingssites/battlearena_basic/init.lua:121
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:109
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:103
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:110
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:95
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 0 to level 1"
 msgstr "cvičení úhybu vojáka z úrovně 0 na úroveň 1"
@@ -3859,6 +3870,11 @@ msgstr "cvičení úhybu vojáka z úrovně 0 na úroveň 1"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:151
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:181
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:237
+#: addons/europeans_tribe.wad/trainingssites/battlearena_basic/init.lua:133
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:134
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:151
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:181
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:237
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
 msgstr "cvičení útoku vojáka z úrovně 0 na úroveň 1"
@@ -3869,6 +3885,11 @@ msgstr "cvičení útoku vojáka z úrovně 0 na úroveň 1"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:190
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:233
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:315
+#: addons/europeans_tribe.wad/trainingssites/battlearena_basic/init.lua:146
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:160
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:190
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:233
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:315
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr "cvičení zdraví vojáka z úrovně 0 na úroveň 1"
@@ -3879,6 +3900,11 @@ msgstr "cvičení zdraví vojáka z úrovně 0 na úroveň 1"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:234
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:290
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:398
+#: addons/europeans_tribe.wad/trainingssites/battlearena_basic/init.lua:164
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:191
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:234
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:290
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:398
 msgctxt "europeans_building"
 msgid "No soldier to train!"
 msgstr "Nejsou vojáci k výcviku!"
@@ -3889,12 +3915,18 @@ msgstr "Nejsou vojáci k výcviku!"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:236
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:292
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:400
+#: addons/europeans_tribe.wad/trainingssites/battlearena_basic/init.lua:166
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:193
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:236
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:292
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:400
 msgctxt "europeans_building"
 msgid "No soldier found for this training level!"
 msgstr "Nenalezen voják pro požadovanou úroveň výcviku!"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:8
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 1"
 msgstr "Bojová aréna úrovně 1"
@@ -3904,6 +3936,10 @@ msgstr "Bojová aréna úrovně 1"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:127
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:146
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:167
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:121
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:127
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:146
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:167
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr "cvičení obrany vojáka z úrovně 0 na úroveň 1"
@@ -3913,6 +3949,10 @@ msgstr "cvičení obrany vojáka z úrovně 0 na úroveň 1"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:164
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:194
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:250
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:147
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:164
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:194
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:250
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
 msgstr "cvičení útoku vojáka z úrovně 1 na úroveň 2"
@@ -3922,12 +3962,17 @@ msgstr "cvičení útoku vojáka z úrovně 1 na úroveň 2"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:203
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:246
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:328
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_1/init.lua:173
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:203
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:246
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:328
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
 msgstr "cvičení zdraví vojáka z úrovně 1 na úroveň 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:8
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 2"
 msgstr "Bojová aréna úrovně 2"
@@ -3936,6 +3981,9 @@ msgstr "Bojová aréna úrovně 2"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:115
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:122
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:107
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:115
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:122
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:107
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 1 to level 2"
 msgstr "cvičení úhybu vojáka z úrovně 1 na úroveň 2"
@@ -3944,6 +3992,9 @@ msgstr "cvičení úhybu vojáka z úrovně 1 na úroveň 2"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:140
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:159
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:180
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:140
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:159
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:180
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
 msgstr "cvičení obrany vojáka z úrovně 1 na úroveň 2"
@@ -3952,6 +4003,9 @@ msgstr "cvičení obrany vojáka z úrovně 1 na úroveň 2"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:177
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:207
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:263
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:177
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:207
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:263
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
 msgstr "cvičení útoku vojáka z úrovně 2 na úroveň 3"
@@ -3960,12 +4014,16 @@ msgstr "cvičení útoku vojáka z úrovně 2 na úroveň 3"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:216
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:259
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:341
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_2/init.lua:216
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:259
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:341
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 2 to level 3"
 msgstr "cvičení zdraví vojáka z úrovně 2 na úroveň 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:8
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 3"
 msgstr "Bojová aréna úrovně 3"
@@ -3973,6 +4031,8 @@ msgstr "Bojová aréna úrovně 3"
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:134
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:119
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:134
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:119
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 2 to level 3"
 msgstr "cvičení úhybu vojáka z úrovně 2 na úroveň 3"
@@ -3980,6 +4040,8 @@ msgstr "cvičení úhybu vojáka z úrovně 2 na úroveň 3"
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:170
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:191
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:170
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:191
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 2 to level 3"
 msgstr "cvičení obrany vojáka z úrovně 2 na úroveň 3"
@@ -3987,6 +4049,8 @@ msgstr "cvičení obrany vojáka z úrovně 2 na úroveň 3"
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:220
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:276
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:220
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:276
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 3 to level 4"
 msgstr "cvičení útoku vojáka z úrovně 3 na úroveň 4"
@@ -3994,72 +4058,85 @@ msgstr "cvičení útoku vojáka z úrovně 3 na úroveň 4"
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:272
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:354
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_3/init.lua:272
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:354
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 3 to level 4"
 msgstr "cvičení zdraví vojáka z úrovně 3 na úroveň 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:8
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 4"
 msgstr "Bojová aréna úrovně 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:131
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:131
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 3 to level 4"
 msgstr "cvičení úhybu vojáka z úrovně 3 na úroveň 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:143
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:143
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 4 to level 5"
 msgstr "cvičení úhybu vojáka z úrovně 4 na úroveň 5"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:155
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:155
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 5 to level 6"
 msgstr "cvičení úhybu vojáka z úrovně 5 na úroveň 6"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:202
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:202
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 3 to level 4"
 msgstr "cvičení obrany vojáka z úrovně 3 na úroveň 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:215
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:215
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 4 to level 5"
 msgstr "cvičení obrany vojáka z úrovně 4 na úroveň 5"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:226
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:226
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 5 to level 6"
 msgstr "cvičení obrany vojáka z úrovně 5 na úroveň 6"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:289
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:289
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 4 to level 5"
 msgstr "cvičení útoku vojáka z úrovně 4 na úroveň 5"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:302
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:302
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 5 to level 6"
 msgstr "cvičení útoku vojáka z úrovně 5 na úroveň 6"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:367
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:367
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 4 to level 5"
 msgstr "cvičení zdraví vojáka z úrovně 4 na úroveň 5"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:380
+#: addons/europeans_tribe.wad/trainingssites/battlearena_level_4/init.lua:380
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 5 to level 6"
 msgstr "cvičení zdraví vojáka z úrovně 5 na úroveň 6"
@@ -4342,10 +4419,11 @@ msgstr "Pavoučí farmy potřebují kukuřici."
 
 #. TRANSLATORS: Helptext for an atlantean ware: Blackroot
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:313
+#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Blackroots are a special kind of root. Sheep farms need to be provided with "
-"corn."
+"blackroot."
 msgstr "Černý kořen je speciálním druhem kořene. Ovčinec potřebuje kukuřici."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wheat, part 1
@@ -4595,12 +4673,13 @@ msgid ""
 "Big buckets for the forester, the claydigger, and the fish breeder – "
 "produced by the toolsmith."
 msgstr ""
+"Velké kýble pro lesníka, kopáče hlíny a chovatele ryb jsou vyráběny v dílně. "
 
 #. TRANSLATORS: Helptext for an europeans ware: Shovel, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:560
 msgctxt "ware"
 msgid "The shovel is an essential tool."
-msgstr ""
+msgstr "Lopata je důležitým nástrojem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Shovel, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:562
@@ -4608,13 +4687,13 @@ msgctxt "europeans_ware"
 msgid ""
 "Therefore the forester, the claydigger and the farmer use them. They are "
 "produced by the toolsmith."
-msgstr ""
+msgstr "Používá je lesník, kopáč hlíny a sedlák. Jsou vyráběny v dílně."
 
 #. TRANSLATORS: Helptext for an europeans ware: Saw, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:573
 msgctxt "ware"
 msgid "The saw is an essential tool."
-msgstr ""
+msgstr "Pila je důležitým nástrojem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Saw, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:575
@@ -4622,13 +4701,13 @@ msgctxt "europeans_ware"
 msgid ""
 "This saw is needed by the woodcutter and the carpenter. It is produced by "
 "the toolsmith."
-msgstr ""
+msgstr "Potřebují ji dřevorubec a tesař. Vyrábí se v dílně."
 
 #. TRANSLATORS: Helptext for an europeans ware: Hammer, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:586
 msgctxt "ware"
 msgid "The hammer is an essential tool."
-msgstr ""
+msgstr "Kladivo je důležitým nástrojem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Hammer, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:588
@@ -4637,12 +4716,14 @@ msgid ""
 "Geologists, builders, weaponsmiths and armorsmiths all need a hammer. Make "
 "sure you’ve always got some in reserve! They are produced by the toolsmith."
 msgstr ""
+"Geologové, stavitelé, zbrojíři a platnéři, všichni potřebují kladivo. "
+"Postarej se o to, aby bylo vždy nějaké v zásobě! Vyrábí se v dílně."
 
 #. TRANSLATORS: Helptext for an europeans ware: Pick, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:599
 msgctxt "ware"
 msgid "The pick is an essential tool."
-msgstr ""
+msgstr "Krumpáč je důležitým nástrojem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Pick, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:601
@@ -4650,24 +4731,27 @@ msgctxt "europeans_ware"
 msgid ""
 "Picks are used by stonemasons and miners. They are produced by the toolsmith."
 msgstr ""
+"Krumpáče jsou používány kameníky a horníky. Jsou vyráběny v dílně na "
+"nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:612
 msgctxt "ware"
 msgid "The felling ax is the tool to chop down trees."
-msgstr ""
+msgstr "Dřevorubecká sekera je nástroj na kácení stromů."
 
 #. TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:614
 msgctxt "europeans_ware"
 msgid "Felling axes are used by lumberjacks and produced by the toolsmithy."
 msgstr ""
+"Dřevorubecké sekery používají dřevorubci a vyrábí se v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fire Tongs, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:625
 msgctxt "ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Nástrojem používaným při tavení rudy jsou kovářské kleště."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fire Tongs, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:627
@@ -4676,6 +4760,7 @@ msgid ""
 "They are used in the smelting works and smithies and produced by the "
 "toolsmith."
 msgstr ""
+"Jsou používány ve slévárnách a kovárnách. Jsou vyráběny v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Milking Tongs
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:637
@@ -4684,12 +4769,14 @@ msgid ""
 "Milking tongs are used by the spider breeder to milk the spiders. They are "
 "produced by the toolsmith."
 msgstr ""
+"Pavoučí kleště používá chovatel pavouků na získávání pavoučích vláken. "
+"Vyrábí se v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Milking Tongs
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:646
 msgctxt "europeans_ware"
 msgid "Needöes are used by weaver."
-msgstr ""
+msgstr "Kleště jsou používány tkalcem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Basket
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:658
@@ -4698,24 +4785,26 @@ msgid ""
 "This basket is needed by the farmer for harvesting the fruits and grapes and "
 "needed by miller and by gamekeeper. It is produced by the toolsmith."
 msgstr ""
+"Koš je používán sedlákem pro sběr ovoce a hroznů, a také mlynářem a hajným. "
+"Vyrábí se v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:668
 msgctxt "ware"
 msgid "The scythe is the tool of the farmers."
-msgstr ""
+msgstr "Kosa je nástrojem sedláků."
 
 #. TRANSLATORS: Helptext for an europeans ware: Scythe, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:670
 msgctxt "europeans_ware"
 msgid "Scythes are produced by the toolsmith."
-msgstr ""
+msgstr "Kosy se vyrábí v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fishing Rod, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:681
 msgctxt "ware"
 msgid "Fishing rods are needed by fishers to catch fish."
-msgstr ""
+msgstr "Rybářské pruty potřebují rybáři na chytání ryb."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fishing Rod, part 2
 #. TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 2
@@ -4723,19 +4812,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:714
 msgctxt "europeans_ware"
 msgid "They are produced by the toolsmith."
-msgstr ""
+msgstr "Vyrábí se v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fishing Net
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:693
 msgctxt "europeans_ware"
 msgid "The fishing net is used by the fisher and produced by the toolsmith."
-msgstr ""
+msgstr "Rybářskou síť používají rybáři. Vyrábí se v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Hunting Bow
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:702
 msgctxt "europeans_ware"
 msgid "This bow is used by the hunter. It is produced by the toolsmith."
-msgstr ""
+msgstr "Luk je používán lovci. Je vyráběn v dílně na nářadí."
 
 #. TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:712
@@ -4744,18 +4833,20 @@ msgid ""
 "This spear is light enough to be thrown, but heavy enough to kill any animal "
 "in one blow. It is only used by hunters."
 msgstr ""
+"Tento oštěp je dost lehký na to, aby se jím dalo házet, a přesto dost těžký "
+"na to, aby zabil jakékoli zvíře jednou ranou. Používají ho pouze lovci."
 
 #. TRANSLATORS: Helptext for an europeans ware: Bread Paddle, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:725
 msgctxt "ware"
 msgid "The bread paddle is the tool of the baker, each baker needs one."
-msgstr ""
+msgstr "Lopata na chléb je nástrojem pekaře a každý pekař ji potřebuje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Bread Paddle, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:727
 msgctxt "europeans_ware"
 msgid "Bread paddles are produced by the toolsmith."
-msgstr ""
+msgstr "Lopaty na chléb se vyrábí v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Hook Pole
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:737
@@ -4764,6 +4855,8 @@ msgid ""
 "This hook pole is used by the smoker to suspend all the meat and fish from "
 "the top of the smokery. It is created by the toolsmith."
 msgstr ""
+"Tento hák na tyči používají uzenáři k vytahování veškerého masa a ryb z "
+"horní části udírny. Vyrábí se v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:749
@@ -4772,6 +4865,8 @@ msgid ""
 "Basic armor for europeans soldiers. It is produced in the weaving mill. In "
 "combination with wooden speer, it is the equipment to fit out young soldiers."
 msgstr ""
+"Základní zbroj pro evropské vojáky. Vyrábí se v tkalcovně. V kombinaci s "
+"dřevěným oštěpem se jedná o výbavu vhodnou pro mladé vojáky."
 
 #. TRANSLATORS: Helptext for an europeans ware: Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:758
@@ -4780,6 +4875,8 @@ msgid ""
 "Basic tabard for europeans soldiers. It is produced in the weaving mill. In "
 "combination with wooden speer, it is the equipment to fit out young soldiers."
 msgstr ""
+"Základní tabard pro evropské vojáky. Vyrábí se v tkalcovně. V kombinaci s "
+"dřevěným oštěpem se jedná o výbavu vhodnou pro mladé vojáky."
 
 #. TRANSLATORS: Helptext for an europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:767
@@ -4789,6 +4886,9 @@ msgid ""
 "an armor smithy and used in a training camp – together with food – to train "
 "soldiers from health level 0 to level 1."
 msgstr ""
+"Kroužková zbroj je střední zbrojí pro evropské vojáky. Vyrábí se v "
+"platnéřství a je využívána ve výcvikovém táboře – společně s jídlem – k "
+"výcviku zdraví vojáků z úrovně 0 na úroveň 1."
 
 #. TRANSLATORS: Helptext for an europeans ware: Helmet
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:776
@@ -4798,6 +4898,9 @@ msgid ""
 "smithy. It is produced in an armor smithy and used in a training camp – "
 "together with food – to train soldiers from health level 1 to level 2."
 msgstr ""
+"Přilba je součástí střední zbroje evropských vojáků. Vyrábí se v platnéřství "
+"a je využívána ve výcvikovém táboře – společně s jídlem – k výcviku zdraví "
+"vojáků z úrovně 1 na úroveň 2."
 
 #. TRANSLATORS: Helptext for an europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:785
@@ -4807,6 +4910,9 @@ msgid ""
 "smithy. It is produced in an armor smithy and used in a training camp – "
 "together with food – to train soldiers from health level 2 to level 3."
 msgstr ""
+"Maska je součástí střední zbroje evropských vojáků. Vyrábí se v platnéřství "
+"a je využívána ve výcvikovém táboře – společně s jídlem – k výcviku zdraví "
+"vojáků z úrovně 2 na úroveň 3."
 
 #. TRANSLATORS: Helptext for an europeans ware: Gilded Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:794
@@ -4816,6 +4922,9 @@ msgid ""
 "armor smithy and used in the training camp – together with food – to train "
 "soldiers from health level 3 to level 4."
 msgstr ""
+"Zlacená zbroj je pokročilou zbrojí evropských vojáků. Vyrábí se v "
+"platnéřství a je využívána ve výcvikovém táboře – společně s jídlem – k "
+"výcviku zdraví vojáků z úrovně 3 na úroveň 4."
 
 #. TRANSLATORS: Helptext for an europeans ware: Golden Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:803
@@ -4825,6 +4934,9 @@ msgid ""
 "armor smithy. It is produced in an armor smithy and used in a training camp "
 "– together with food – to train soldiers from health level 3 to level 4."
 msgstr ""
+"Zlacený tabard je součástí pokročilé zbroje evropských vojáků. Vyrábí se v "
+"platnéřství a je využíván ve výcvikovém táboře – společně s jídlem – k "
+"výcviku zdraví vojáků z úrovně 3 na úroveň 4."
 
 #. TRANSLATORS: Helptext for an europeans ware: Golden Helmet
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:812
@@ -4834,6 +4946,9 @@ msgid ""
 "armor smithy. It is produced in an armor smithy and used in a training camp "
 "– together with food – to train soldiers from health level 4 to level 5."
 msgstr ""
+"Zlacená přilba je součástí pokročilé zbroje evropských vojáků. Vyrábí se v "
+"platnéřství a je využívána ve výcvikovém táboře – společně s jídlem – k "
+"výcviku zdraví vojáků z úrovně 4 na úroveň 5."
 
 #. TRANSLATORS: Helptext for an europeans ware: Warhelm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:821
@@ -4844,6 +4959,9 @@ msgid ""
 "training camp – together with food – to train soldiers from health level 5 "
 "to level 6."
 msgstr ""
+"Válečná přilba je nejodolnější část zbroje, kterou evropští vojáci mohou "
+"nosit. Vyrábí se v platnéřství a je využívána ve výcvikovém táboře – "
+"společně s jídlem – k výcviku zdraví vojáků z úrovně 5 na úroveň 6."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:833
@@ -4853,6 +4971,9 @@ msgid ""
 "is produced in the tool smithy. In combination with armor or tabard, it is "
 "the equipment to fit out young soldiers."
 msgstr ""
+"Tento dřevěný oštěp je základní zbraní evropského vojenského systému. Vyrábí "
+"se v dílně na nástroje. V kombinaci se zbrojí nebo tabardem se jedná o "
+"výbavu vhodnou pro mladé vojáky."
 
 #. TRANSLATORS: Helptext for an europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:842
@@ -4862,6 +4983,9 @@ msgid ""
 "and used in a training camp – together with food – to train soldiers from "
 "attack level 0 to level 1."
 msgstr ""
+"Toto je vylepšený oštěp s ocelovou špičkou. Vyrábí se ve zbrojířství a je "
+"využíván ve výcvikovém táboře – společně s jídlem –  k výcviku útoku vojáků "
+"z úrovně 0 na úroveň 1."
 
 #. TRANSLATORS: Helptext for an europeans ware: Broad Ax
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:851
@@ -4871,6 +4995,8 @@ msgid ""
 "training camp – together with food – to train soldiers from attack level 1 "
 "to level 2."
 msgstr ""
+"Toto je široká sekera. Vyrábí se ve zbrojířství a je využívána ve výcvikovém "
+"táboře – společně s jídlem –  k výcviku útoku vojáků z úrovně 1 na úroveň 2."
 
 #. TRANSLATORS: Helptext for an europeans ware: Steel Trident
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:860
@@ -4880,6 +5006,9 @@ msgid ""
 "smithy and used in a training camp – together with food – to train soldiers "
 "from attack level 2 to level 3."
 msgstr ""
+"Toto je vylepšený trojzubec s ocelovými špičkami. Vyrábí se ve zbrojířství a "
+"je využíván ve výcvikovém táboře – společně s jídlem –  k výcviku útoku "
+"vojáků z úrovně 2 na úroveň 3."
 
 #. TRANSLATORS: Helptext for an europeans ware: Broad Sword
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:869
@@ -4889,6 +5018,8 @@ msgid ""
 "training camp – together with food – to train soldiers from attack level 3 "
 "to level 4."
 msgstr ""
+"Toto je široký meč. Vyrábí se ve zbrojířství a je využívána ve výcvikovém "
+"táboře – společně s jídlem –  k výcviku útoku vojáků z úrovně 3 na úroveň 4."
 
 #. TRANSLATORS: Helptext for an europeans ware: Warrior Ax
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:878
@@ -4898,6 +5029,9 @@ msgid ""
 "training camp – together with food – to train soldiers from attack level 4 "
 "to level 5."
 msgstr ""
+"Toto je válečná sekera. Vyrábí se ve zbrojířství a je využívána ve "
+"výcvikovém táboře – společně s jídlem –  k výcviku útoku vojáků z úrovně 4 "
+"na úroveň 5."
 
 #. TRANSLATORS: Helptext for an europeans ware: Heavy Double Trident
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:887
@@ -4907,6 +5041,9 @@ msgid ""
 "in a training camp – together with food – to train soldiers from attack "
 "level 5 to level 6."
 msgstr ""
+"Toto je těžký dvojitý trojzubec. Vyrábí se ve zbrojířství a je využívána ve "
+"výcvikovém táboře – společně s jídlem –  k výcviku útoku vojáků z úrovně 5 "
+"na úroveň 6."
 
 #. TRANSLATORS: Helptext for an europeans ware: Steel Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:896
@@ -4915,6 +5052,8 @@ msgid ""
 "This steel shield is produced in the armor smithy and used in the dungeon – "
 "together with food – to train soldiers from defense level 0 to level 3."
 msgstr ""
+"Ocelový štít je vyráběn v platnéřství a je používán v kobkách – společně s "
+"jídlem – k výcviku obrany vojáků z úrovně 0 na úroveň 3."
 
 #. TRANSLATORS: Helptext for an europeans ware: Advanced Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:905
@@ -4924,36 +5063,39 @@ msgid ""
 "are produced in the armor smithy and used in the big trainingscamp – "
 "together with food – to train soldiers from defense level 3 to level 6."
 msgstr ""
+"Vylepšený štít je používán nejlepšími vojáky Evropanů. Vyrábí se v "
+"platnéřství a je používán ve velkých výcvikových táborech – společně s "
+"jídlem – k výcviku obrany vojáků z úrovně 3 na úroveň 6."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:920
 msgctxt "europeans_worker"
 msgid "Used for recruiting all other workers."
-msgstr ""
+msgstr "Využíván k výcviku všech ostatních dělníků."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:927
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
-msgstr ""
+msgstr "Vlastníma rukama nosí předměty po cestách."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:934
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets."
-msgstr ""
+msgstr "Nosí předměty po cestách v koši."
 
 #. TRANSLATORS: Helptext for an europeans worker: Builder
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:943
 msgctxt "europeans_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Pracuje na staveništi a staví budovy."
 
 #. TRANSLATORS: Helptext for an europeans worker: Ferry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:952
 msgctxt "europeans_worker"
 msgid "Ships wares across narrow rivers."
-msgstr ""
+msgstr "Dopravuje suroviny přes řeky a úžiny."
 
 #. TRANSLATORS: Helptext for an europeans worker: Shipwright
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:961
@@ -4961,19 +5103,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:979
 msgctxt "europeans_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr ""
+msgstr "Pracuje v loděnici na stavbě nových lodí."
 
 #. TRANSLATORS: Helptext for an europeans worker: Geologist
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:988
 msgctxt "europeans_worker"
 msgid "Discovers resources for mining."
-msgstr ""
+msgstr "Dělá průzkumné práce zdrojů pro těžbu."
 
 #. TRANSLATORS: Helptext for an europeans worker: Recruit
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:998
 msgctxt "europeans_worker"
 msgid "Eager to become a soldier and defend his tribe!"
-msgstr ""
+msgstr "Odhodlaný stát se vojákem a bránit svůj kmen!"
 
 #. TRANSLATORS: Helptext for an europeans worker: Trainer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1007
@@ -4981,7 +5123,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1025
 msgctxt "europeans_worker"
 msgid "Trains the soldiers."
-msgstr ""
+msgstr "Cvičí vojáky."
 
 #. TRANSLATORS: Helptext for an europeans worker: Scout
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1034
@@ -4991,12 +5133,13 @@ msgctxt "europeans_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
 msgstr ""
+"Průzkumníci, jako průzkumník Zdenda, zvídavě šmejdí neprozkoumanou krajinou."
 
 #. TRANSLATORS: Helptext for an europeans worker: Soldier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1064
 msgctxt "europeans_worker"
 msgid "Defend and Conquer!"
-msgstr ""
+msgstr "Bránit a dobývat!"
 
 #. TRANSLATORS: Helptext for an europeans worker: Lumberjack / Woodcutter
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1076
@@ -5004,7 +5147,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1094
 msgctxt "europeans_worker"
 msgid "Fells trees."
-msgstr ""
+msgstr "Kácí stromy."
 
 #. TRANSLATORS: Helptext for an europeans worker: Ranger / Forester
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1103
@@ -5012,7 +5155,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1121
 msgctxt "europeans_worker"
 msgid "Plant trees."
-msgstr ""
+msgstr "Sází stromy."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carpenter / Sawyer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1130
@@ -5020,20 +5163,20 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1148
 msgctxt "europeans_worker"
 msgid "Produces planks out of log."
-msgstr ""
+msgstr "Vyrábí prkna z klád."
 
 #. TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1160
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1169
 msgctxt "europeans_worker"
 msgid "Produces charcoal out of log."
-msgstr ""
+msgstr "Vyrábí dřevěné uhlí z klád."
 
 #. TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1178
 msgctxt "europeans_worker"
 msgid "Produces charcoal out of log or old planks."
-msgstr ""
+msgstr "Vyrábí dřevěné uhlí z klád a starých prken."
 
 #. TRANSLATORS: Helptext for an europeans worker: Stonecutter
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1187
@@ -5041,14 +5184,14 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1205
 msgctxt "europeans_worker"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
-msgstr ""
+msgstr "Láme žulové a mramorové kvádry ze skal v okolí."
 
 #. TRANSLATORS: Helptext for an europeans worker: Stonemason
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1214
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1223
 msgctxt "europeans_worker"
 msgid "Burns bricks and grout out of clay, water and granite."
-msgstr ""
+msgstr "Vyrábí cihly a maltu z cihlářské hlíny, vody a žuly."
 
 #. TRANSLATORS: Helptext for an europeans worker: Stonemason
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1232
@@ -5057,6 +5200,8 @@ msgid ""
 "Burns bricks and grout out of clay, water and granite. Makes marble column "
 "out of marble."
 msgstr ""
+"Vyrábí cihly a maltu z cihlářské hlíny, vody a žuly. Vyrábí mramorové sloupy "
+"z mramoru."
 
 #. TRANSLATORS: Helptext for an europeans worker: Farmer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1244
@@ -5064,7 +5209,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1262
 msgctxt "europeans_worker"
 msgid "Plants and harvests fields."
-msgstr ""
+msgstr "Pěstuje a sklízí pole."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1271
@@ -5072,7 +5217,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1289
 msgctxt "europeans_worker"
 msgid "Lets bees swarm over flowers, then gathers the honey."
-msgstr ""
+msgstr "Umožňuje včelím rojům opylovat květy a produkovat med."
 
 #. TRANSLATORS: Helptext for an europeans worker: Breeder
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1298
@@ -5080,7 +5225,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1316
 msgctxt "europeans_worker"
 msgid "Breeds spiders and sheeps and produce silk and wool."
-msgstr ""
+msgstr "Chová pavouky a ovce, produkuje pavoučí vlákno a vlnu."
 
 #. TRANSLATORS: Helptext for an europeans worker: Weaver
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1325
@@ -5088,7 +5233,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1343
 msgctxt "europeans_worker"
 msgid "Produces cloth for ships, tools and armor."
-msgstr ""
+msgstr "Vyrábí látku pro lodě, nástroje a zbroje."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1355
@@ -5096,7 +5241,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1373
 msgctxt "europeans_worker"
 msgid "Catches fish in the sea or in pond."
-msgstr ""
+msgstr "Chytá ryby v moři či jezeře."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1382
@@ -5104,7 +5249,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1400
 msgctxt "europeans_worker"
 msgid "Breeds fish in pond and in the sea."
-msgstr ""
+msgstr "Chová ryby v jezeře a moři."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1409
@@ -5112,7 +5257,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1427
 msgctxt "europeans_worker"
 msgid "The hunter brings fresh, raw meat to the colonists."
-msgstr ""
+msgstr "Lovec poskytuje osadníkům čerstvé, syrové maso."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1436
@@ -5123,6 +5268,8 @@ msgid ""
 "The gamekeeper makes sure that the natural population of animals never drops "
 "too low."
 msgstr ""
+"Hajný se vypouštěním zvěře do přírody stará o to, aby populace zvířat nikdy "
+"příliš neklesla."
 
 #. TRANSLATORS: Helptext for an europeans worker: Miller
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1466
@@ -5130,7 +5277,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1484
 msgctxt "europeans_worker"
 msgid "Grind rye and wheat to mixed flour."
-msgstr ""
+msgstr "Mele žito a pšenici na míšenou mouku."
 
 #. TRANSLATORS: Helptext for an europeans worker: Baker
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1493
@@ -5138,20 +5285,20 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1511
 msgctxt "europeans_worker"
 msgid "Produce bread out of water, flour and cornmeal."
-msgstr ""
+msgstr "Vyrábí chleba z vody, mouky a kukuřičné mouky."
 
 #. TRANSLATORS: Helptext for an europeans worker: Brewer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1520
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1529
 msgctxt "europeans_worker"
 msgid "Brewing beer and mead."
-msgstr ""
+msgstr "Vaří pivo a medovinu."
 
 #. TRANSLATORS: Helptext for an europeans worker: Brewer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1538
 msgctxt "europeans_worker"
 msgid "Brewing beer and mead. Produces wine."
-msgstr ""
+msgstr "Vaří pivo a medovinu. Vyrábí víno."
 
 #. TRANSLATORS: Helptext for an europeans worker: Smoker
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1547
@@ -5159,7 +5306,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1565
 msgctxt "europeans_worker"
 msgid "Smoking fish and meat."
-msgstr ""
+msgstr "Udí ryby a maso."
 
 #. TRANSLATORS: Helptext for an europeans worker: Miner
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1577
@@ -5167,7 +5314,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1595
 msgctxt "europeans_worker"
 msgid "Mines ore and minerals."
-msgstr ""
+msgstr "Těží rudy a minerály."
 
 #. TRANSLATORS: Helptext for an europeans worker: Smelter
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1604
@@ -5175,7 +5322,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1622
 msgctxt "europeans_worker"
 msgid "Smelts ore to metals."
-msgstr ""
+msgstr "Taví rudy na kovy."
 
 #. TRANSLATORS: Helptext for an europeans worker: Smith
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1631
@@ -5183,14 +5330,14 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1649
 msgctxt "europeans_worker"
 msgid "Produce tools, armor and weapons."
-msgstr ""
+msgstr "Vyrábí nástroje, zbroje a zbraně."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an europeans immovable: Destroyed Building
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1660
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1667
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Pozůstatky zničené budovy."
 
 #. TRANSLATORS: Helptext for an europeans immovable: barley field
 #. TRANSLATORS: Helptext for an europeans immovable: blackroot field
@@ -5203,7 +5350,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2094
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2129
 msgid "This field has just been planted."
-msgstr ""
+msgstr "Toto je právě oseté pole."
 
 #. TRANSLATORS: Helptext for an europeans immovable: barley field
 #. TRANSLATORS: Helptext for an europeans immovable: blackroot field
@@ -5221,7 +5368,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2136
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2143
 msgid "This field is growing."
-msgstr ""
+msgstr "Toto je rostoucí pole."
 
 #. TRANSLATORS: Helptext for an europeans immovable: barley field
 #. TRANSLATORS: Helptext for an europeans immovable: blackroot field
@@ -5234,7 +5381,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2115
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2150
 msgid "This field is ready for harvesting."
-msgstr ""
+msgstr "Toto pole je připraveno ke sklizni."
 
 #. TRANSLATORS: Helptext for an europeans immovable: barley field
 #. TRANSLATORS: Helptext for an europeans immovable: blackroot field
@@ -5247,7 +5394,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2122
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2157
 msgid "This field has been harvested."
-msgstr ""
+msgstr "Toto pole bylo sklizeno."
 
 #. TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1709
@@ -5260,7 +5407,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1905
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1933
 msgid "This berry bush has just been planted."
-msgstr ""
+msgstr "Tento ovocný keř je čerstvě zasazený."
 
 #. TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1716
@@ -5273,7 +5420,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1912
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1940
 msgid "This berry bush is growing."
-msgstr ""
+msgstr "Tento ovocný keř pomalu roste."
 
 #. TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1723
@@ -5287,7 +5434,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1947
 msgid ""
 "This berry bush is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Tento ovocný keř již kvete. Včelař tu může zajistit získání medu."
 
 #. TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1730
@@ -5300,7 +5447,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1926
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1954
 msgid "This berry bush is ready for harvesting."
-msgstr ""
+msgstr "Ovocný keř dozrál ke sbírání."
 
 #. TRANSLATORS: Helptext for a frisian immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2031
@@ -5309,6 +5456,9 @@ msgid ""
 "vanish after a while. Aqua farms can use them as ponds to grow fish in them, "
 "whereas charcoal burners erect their charcoal stacks in them."
 msgstr ""
+"Když kopáči hlíny těží, zanechávají za sebou jámy v zemi. Tyto jámy po "
+"nějakém čase zmizí. Rybí sádka mohou tyto jámy využívat jako rybníčky na "
+"chov ryb, zatímco uhlíři v nich budují své milíře."
 
 #. TRANSLATORS: Helptext for a frisian immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2038
@@ -5316,6 +5466,8 @@ msgid ""
 "Fish are maturing in this pond. A fisher working from an aqua farm will be "
 "able to catch them when they are bigger."
 msgstr ""
+"V tomto rybníčku dospívají ryby. Až dorostou, bude je rybář pracující na "
+"rybí sádce moci vylovit."
 
 #. TRANSLATORS: Helptext for a frisian immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2045
@@ -5323,6 +5475,8 @@ msgid ""
 "Fish are living in this pond. A fisher working from an aqua farm can catch "
 "them as food."
 msgstr ""
+"V tomto rybníčku již plavou ryby. Rybář pracující na rybí sádce je může "
+"chytit, aby mohly posloužit jako jídlo."
 
 #. TRANSLATORS: Helptext for a frisian immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2052
@@ -5330,13 +5484,15 @@ msgid ""
 "A charcoal stack is burning in this earthen hole. When it has burnt down, a "
 "charcoal burner will be able to gather coal from it."
 msgstr ""
+"V této jámě je dýmající milíř. Až nastane správný čas uhlíř z něj bude moci "
+"získat uhlí."
 
 #. TRANSLATORS: Helptext for a frisian immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2059
 msgid ""
 "A charcoal stack, which had been erected in this earthen hole, is ready for "
 "a charcoal burner to gather coal from it."
-msgstr ""
+msgstr "Milíř, který byl postaven v této jámě, je připraven na sběr uhlí."
 
 #. TRANSLATORS: Helptext for a frisian immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2066
