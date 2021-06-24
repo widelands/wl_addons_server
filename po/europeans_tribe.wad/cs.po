@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-23 03:11+0000\n"
+"POT-Creation-Date: 2021-06-24 03:09+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -4419,12 +4419,11 @@ msgstr "Pavoučí farmy potřebují kukuřici."
 
 #. TRANSLATORS: Helptext for an atlantean ware: Blackroot
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:313
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Blackroots are a special kind of root. Sheep farms need to be provided with "
 "blackroot."
-msgstr "Černý kořen je speciálním druhem kořene. Ovčinec potřebuje kukuřici."
+msgstr "Černý kořen je speciálním druhem kořene. Je vyžadován ovčincem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wheat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:323
@@ -5497,82 +5496,84 @@ msgstr "Milíř, který byl postaven v této jámě, je připraven na sběr uhl�
 #. TRANSLATORS: Helptext for a frisian immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2066
 msgid "This reed field has just been planted."
-msgstr ""
+msgstr "Toto je právě oseté rákosové pole."
 
 #. TRANSLATORS: Helptext for a frisian immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2073
 msgid "This reed field is growing."
-msgstr ""
+msgstr "Toto je dorůstající rákosové pole."
 
 #. TRANSLATORS: Helptext for a frisian immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2080
 msgid ""
 "This reed field is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Toto rákosové pole právě kvete. Včelař tu může zajistit získání medu."
 
 #. TRANSLATORS: Helptext for a frisian immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2087
 msgid "This reed field is ready for harvesting."
-msgstr ""
+msgstr "Toto rákosové pole je připraveno ke sklizni."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Grapevine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2164
 msgid "This grapevine has just been planted."
-msgstr ""
+msgstr "Tento vinný keř byl právě zasazen."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Grapevine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2171
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2178
 msgid "This grapevine is growing."
-msgstr ""
+msgstr "Toto je dorůstající vinný keř."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Grapevine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2185
 msgid "This grapevine is ready for harvesting."
-msgstr ""
+msgstr "Tento vinný keř je připraven ke sklizni."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: No resources
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2192
 msgid "There are no resources in the ground here."
-msgstr ""
+msgstr "Nebyly zde nalezeny žádné podzemní zdroje."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Water
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2199
 msgid "There is water in the ground here that can be pulled up by a well."
-msgstr ""
+msgstr "Zde se nachází podzemní voda, lze ji čerpat postavením studny."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Coal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2207
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2251
 msgid "Coal veins contain coal that can be dug up by coal mines."
-msgstr ""
+msgstr "Ložiska uhlí obsahují uhlí, které lze těžit pomocí dolů na uhlí."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Coal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2209
 msgid "There is only a little bit of coal here."
-msgstr ""
+msgstr "Zde se dá najít něco málo uhlí."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Iron, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2218
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2262
 msgid "Iron veins contain iron ore that can be dug up by iron mines."
 msgstr ""
+"Železná žíla obsahuje železnou rudu, kterou lze těžit pomocí dolů na železo."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Iron, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2220
 msgid "There is only a little bit of iron here."
-msgstr ""
+msgstr "Zde se dá najít něco málo železa."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Gold, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2229
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2273
 msgid "Gold veins contain gold ore that can be dug up by gold mines."
 msgstr ""
+"Zlatá žíla obsahuje zlatou rudu, kterou lze těžit pomocí dolů na zlato."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Gold, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2231
 msgid "There is only a little bit of gold here."
-msgstr ""
+msgstr "Zde se dá najít něco málo zlata."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Stones, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2240
@@ -5581,41 +5582,43 @@ msgid ""
 "Marble is a basic building material and can be dug up by a marble mine. You "
 "will also get granite from the mine."
 msgstr ""
+"Mramor je základním stavebním materiálem a je těžen v dole na mramor. Tento "
+"důl produkuje při těžbě také žulu."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Stones, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2242
 msgid "There is only a little bit of marble here."
-msgstr ""
+msgstr "Zde se dá najít něco málo mramoru."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Coal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2253
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Zde je velké ložisko uhlí."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Iron, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2264
 msgid "There is a lot of iron here."
-msgstr ""
+msgstr "Zde je velké ložisko železné rudy."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Gold, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2275
 msgid "There is a lot of gold here."
-msgstr ""
+msgstr "Zde je to velké ložisko zlata."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Stones, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2286
 msgid "There is a lot of marble here."
-msgstr ""
+msgstr "Zde je velké ložisko mramoru."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Ship Under Construction
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2294
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "Na tomto místě se staví loď."
 
 #. TRANSLATORS: Helptext for an amazon immovable usable by europeans: Dead Tree
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2302
 msgid "The remains of an old tree."
-msgstr ""
+msgstr "Torzo starého stromu."
 
 #. TRANSLATORS: Helptext for an amazon immovable usable by europeans: Balsa Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by europeans: Ironwood Tree
@@ -5637,18 +5640,20 @@ msgstr ""
 msgid ""
 "This tree is only planted by the amazon tribe but can be harvested for logs."
 msgstr ""
+"Toto je strom vysazovaný kmenem Amazonek, i tak ho lze pokácet na dřevo."
 
 #. TRANSLATORS: Purpose helptext for an europeans warehouse: Headquarters
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2398
 msgctxt "europeans_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
+"Poskytuje ubytování tvým lidem a také skladuje tvé suroviny a nástroje."
 
 #. TRANSLATORS: Note helptext for an europeans warehouse: Headquarters
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2400
 msgctxt "europeans_building"
 msgid "The headquarters is your main building."
-msgstr ""
+msgstr "Hlavní budova je tvou klíčovou budovou."
 
 #. TRANSLATORS: Purpose helptext for an europeans warehouse: Warehouse
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2407
@@ -5659,6 +5664,8 @@ msgid ""
 "Your workers and soldiers will find shelter here. Also stores your wares and "
 "tools."
 msgstr ""
+"Tady najdou tví dělníci a vojáci přístřeší. Také se zde uchovává tvé zboží a "
+"nářadí."
 
 #. TRANSLATORS: Purpose helptext for an europeans warehouse: Port
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2428
@@ -5667,6 +5674,8 @@ msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
 "soldiers, wares and tools."
 msgstr ""
+"Slouží jako výchozí bod pro zámořskou kolonizaci a obchod. Také skladuje tvé "
+"vojáky, dělníky, suroviny a nástroje."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Well
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2437
@@ -5674,7 +5683,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2451
 msgctxt "europeans_building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Čerpá podzemní vodu."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Woodcutter's House
@@ -5684,25 +5693,31 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2476
 msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
-msgstr ""
+msgstr "Kácí stromy ve svém okolí a zpracovává je na klády."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Lumberjack_s Hut
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2460
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
 msgstr ""
+"Chata dřevorubce potřebuje ve své pracovní oblasti stromy, které dorostly ke "
+"kácení."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Woodcutter's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2469
 msgctxt "europeans_building"
 msgid "The woodcutter’s house needs trees to fell within the work area."
 msgstr ""
+"Domek dřevorubce potřebuje ve své pracovní oblasti stromy, které dorostly ke "
+"kácení."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Lumberjack's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2478
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
 msgstr ""
+"Domek dřevorubce potřebuje ve své pracovní oblasti stromy, které dorostly ke "
+"kácení."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Ranger's Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Forester's House
@@ -5711,7 +5726,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2503
 msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
-msgstr ""
+msgstr "Vysazuje stromy ve svém okolí."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Ranger's Hut
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2487
@@ -5719,6 +5734,8 @@ msgctxt "europeans_building"
 msgid ""
 "The ranger’s hut needs free space within the work area to plant the trees."
 msgstr ""
+"Chata lesníka musí mít ve své pracovní oblasti volnou plochu, na které lze "
+"vysazovat stromy."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Forester's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2496
@@ -5728,12 +5745,14 @@ msgid ""
 "The forester’s house needs free space within the work area to plant the "
 "trees."
 msgstr ""
+"Domek lesníka musí mít ve své pracovní oblasti volnou plochu, na které lze "
+"vysazovat stromy."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Quarry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2512
 msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
-msgstr ""
+msgstr "Získává surovou žulu ze skal ve svém okolí."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Quarry
 #. TRANSLATORS: Note helptext for an europeans production site: Quarry
@@ -5742,19 +5761,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2532
 msgctxt "europeans_building"
 msgid "The quarry needs rocks to cut within the work area."
-msgstr ""
+msgstr "Lom potřebuje ve své pracovní oblasti skály, které lze těžit."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Quarry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2521
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite out of rocks in the vicinity."
-msgstr ""
+msgstr "Láme žulové kvádry ze skal v okolí."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Quarry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2530
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
-msgstr ""
+msgstr "Láme žulové a mramorové kvádry ze skal v okolí."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Clay Pit
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2539
@@ -5763,25 +5782,29 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Clay is "
 "used to make bricks."
 msgstr ""
+"Kope obyčejnou hlínu a používá vodu, aby ji přeměnil v cihlářskou hlínu. "
+"Cihlářská hlína se používá k výrobě cihel."
 
 #. TRANSLATORS: Purpose helptext for production site: Fisher's Hut
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2546
 msgctxt "europeans_building"
 msgid "Fishes on the coast near the fisher’s hut."
-msgstr ""
+msgstr "Rybaří na pobřeží poblíž rybářské chaty."
 
 #. TRANSLATORS: Note helptext for production site: Fisher's Hut
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2548
 msgctxt "europeans_building"
 msgid "The fisher’s hut needs water full of fish within the work area."
 msgstr ""
+"Rybářská chata potřebuje ve své pracovní oblasti vodní plochu, ve které jsou "
+"ryby."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Fisher's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2555
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2568
 msgctxt "europeans_building"
 msgid "Fishes on the coast near the fisher’s house."
-msgstr ""
+msgstr "Rybaří na pobřeží poblíž rybářova domku."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Fisher's House, part 1
 #. TRANSLATORS: Note helptext for an europeans production site: Fisher's House
@@ -5790,6 +5813,8 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water full of fish within the work area."
 msgstr ""
+"Domek rybáře potřebuje ve své pracovní oblasti vodní plochu, ve které jsou "
+"ryby."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Fisher's House, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2560
@@ -5798,6 +5823,7 @@ msgid ""
 "Build a fish breeder’s house close to the fisher’s house to make sure that "
 "you don’t run out of fish."
 msgstr ""
+"Postav domek porybného poblíž domku rybáře, aby rybář všechny ryby nevylovil."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Hunter's Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Hunter's House
@@ -5806,13 +5832,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2595
 msgctxt "europeans_building"
 msgid "Hunts animals to produce meat."
-msgstr ""
+msgstr "Loví zvířata a tím získává maso."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Hunter's Hut
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2579
 msgctxt "europeans_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
-msgstr ""
+msgstr "Lovecká chata potřebuje ve svém okolí zvěř."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Hunter's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2588
@@ -5820,18 +5846,23 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "The hunter’s house needs animals to hunt within the work area."
 msgstr ""
+"Domek lovce musí mít ve své pracovní oblasti volně pobíhající zvířata, aby "
+"měl lovec co lovit."
 
 #. TRANSLATORS: Purpose helptext for europeans production site: Gamekeeper's Hut
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2604
 msgctxt "europeans_building"
 msgid "Releases animals into the wild to steady the meat production."
 msgstr ""
+"Vysazuje zvěř do divoké přírody, aby umožnil udržitelnou produkci masa."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Beekeeper's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2611
 msgctxt "europeans_building"
 msgid "Keeps bees and lets them swarm over flowering fields to produce honey."
 msgstr ""
+"Chová včely a zajišťuje, aby se rojily v místech kvetoucích polí a "
+"produkovaly med."
 
 #. TRANSLATORS: Note helptext for a frisian production site: Beekeeper's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2613
@@ -5840,6 +5871,8 @@ msgid ""
 "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) or "
 "bushes (berry bushes or grapevines) nearby."
 msgstr ""
+"Vyžaduje poblíž středně velké (ječmen, žito, pšenice, rákosí, kukuřice nebo "
+"černý kořen) nebo keře (ovocné keře nebo víno)."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Scout's House
@@ -5848,14 +5881,14 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2634
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Prozkoumává neznámá území."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Reed Yard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2643
 msgctxt "europeans_building"
 msgid ""
 "Cultivates reed that serves two different purposes for the Europeans tribe."
-msgstr ""
+msgstr "Pěstuje rákos, který má u evropského kmene dvě různé využití."
 
 #. TRANSLATORS: Note helptext for a barbarian production site: Reed Yard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2645
@@ -5864,6 +5897,8 @@ msgid ""
 "Reed is the traditional material for roofing, and it is woven into the "
 "extremely durable rope that they use for their ships’ sails."
 msgstr ""
+"Rákos je tradičním materiálem pro výrobu střechy a je také splétán do "
+"extrémně odolného lana, které je používáno pro lodní plachtoví."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Sawmill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2652
@@ -5871,7 +5906,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2666
 msgctxt "europeans_building"
 msgid "Saws logs to produce planks."
-msgstr ""
+msgstr "Řeže klády na prkna."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an europeans production site: Charcoal Kiln
@@ -5880,7 +5915,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2687
 msgctxt "europeans_building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Pálí dřevo z klád na dřevěné uhlí."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Lime Kiln
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2694
@@ -5889,6 +5924,8 @@ msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
 "solidifies and so reinforces masonry."
 msgstr ""
+"Zpracovává cihlářskou hlínu a žulu na cihly a maltu, která se používá na "
+"zpevnění staveb."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Lime Kiln
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2696
@@ -5897,18 +5934,21 @@ msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
 "Those are predominantly houses that work with fire, and some military sites."
 msgstr ""
+"Surovina vyrobená ve vápenné peci putuje pouze na ta stavební místa, kde je "
+"jí potřeba. To jsou převážně budovy, které pracují s ohněm, a některé "
+"vojenské objekty."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Stonemason's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2703
 msgctxt "europeans_building"
 msgid "Carves marble columns out of marble."
-msgstr ""
+msgstr "Tesá mramorové sloupy z mramoru."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2710
 msgctxt "europeans_building"
 msgid "Weaves spider cloth out of spider silk."
-msgstr ""
+msgstr "Spřádá pavoučí látku z pavoučího vlákna."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2717
@@ -5916,19 +5956,19 @@ msgctxt "europeans_building"
 msgid ""
 "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and "
 "train the soldiers."
-msgstr ""
+msgstr "Spřádá pavoučí látku pro budovy, lodní plachty a tabardy pro vojáky."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2724
 msgctxt "europeans_building"
 msgid "Weaves tabard and armor out of wool and silk."
-msgstr ""
+msgstr "Spřádá tabardy a zbroje z vlny a pavoučího vlákna."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2731
 msgctxt "europeans_building"
 msgid "Grinds corn to produce cornmeal."
-msgstr ""
+msgstr "Mele kukuřici na kukuřičnou mouku."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2738
@@ -5937,6 +5977,7 @@ msgctxt "europeans_building"
 msgid ""
 "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed flour."
 msgstr ""
+"Mele kukuřici na kukuřičnou mouku. Mele pšenice a žito na míchanou mouku."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Tavern
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2752
@@ -5945,6 +5986,8 @@ msgstr ""
 msgctxt "building"
 msgid "Prepares rations to feed the scouts and miners."
 msgstr ""
+"Připravují se zde malé svačiny, které slouží jako potrava průzkumníků a "
+"horníků."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Inn
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2773
@@ -5954,6 +5997,8 @@ msgctxt "building"
 msgid ""
 "Prepares rations and snacks to feed the miners in the basic and deep mines."
 msgstr ""
+"Připravuje malé svačiny a svačiny pro horníky v základních a hlubinných "
+"dolech."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Big Inn
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2794
@@ -5961,49 +6006,49 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2808
 msgctxt "europeans_building"
 msgid "Prepares rations, snacks and meals to feed all miners."
-msgstr ""
+msgstr "Připravuje malé svačiny, svačiny a jídlo pro všechny horníky."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Brewery
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2815
 msgctxt "europeans_building"
 msgid "Produces beer to keep the miners strong and happy."
-msgstr ""
+msgstr "Vaří pivo, aby byli horníci silní a spokojení."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Brewery
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2822
 msgctxt "europeans_building"
 msgid "Produces beer and mead to keep the miners strong and happy."
-msgstr ""
+msgstr "Vyrábí pivo a medovinu, aby byli horníci silní a spokojení."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Brewery
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2829
 msgctxt "europeans_building"
 msgid "Produces beer, mead and strong_beer for trainingssites."
-msgstr ""
+msgstr "Vyrábí pivo, medovinu a silné pivo pro výcvikové tábory."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Winery
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2836
 msgctxt "europeans_building"
 msgid "Produces mead and wine."
-msgstr ""
+msgstr "Vyrábí medovinu a víno."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Smelting Works
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2843
 msgctxt "europeans_building"
 msgid "Smelts ore into iron."
-msgstr ""
+msgstr "Taví rudu na železo."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2850
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold."
-msgstr ""
+msgstr "Taví rudu na železo a zlato."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2857
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold. Recycles scrap metal."
-msgstr ""
+msgstr "Taví rudu na železo a zlato. Recykluje kovový šrot."
 
 #. TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2864
@@ -6012,7 +6057,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2885
 msgctxt "europeans_building"
 msgid "Forges all the tools that your workers need."
-msgstr ""
+msgstr "Ková všechny nástroje, které dělníci potřebují."
 
 #. TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2892
@@ -6025,6 +6070,7 @@ msgctxt "europeans_building"
 msgid ""
 "Forges all the tools that your workers need. Produces armor and weapons, too."
 msgstr ""
+"Ková všechny nástroje, které dělníci potřebují. Vyrábí i zbroje a zbraně."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Recruitement Center
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2936
@@ -6032,43 +6078,44 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2950
 msgctxt "europeans_building"
 msgid "Equips recruits and trains them as workers."
-msgstr ""
+msgstr "Vybavuje rekruty a cvičí je na dělníky."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2957
 msgctxt "europeans_building"
 msgid "Sows and harvests corn, rye and wheat."
-msgstr ""
+msgstr "Sází a sklízí kukuřici, žito a pšenici."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2964
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, corn, rye and wheat."
-msgstr ""
+msgstr "Sází a sklízí ječmen, kukuřici, žito a pšenici."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2971
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-msgstr ""
+msgstr "Sází a sklízí ječmen, černý kořen, kukuřici, žito a pšenici."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2978
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
 msgstr ""
+"Sází a sklízí ječmen, černý kořen, kukuřici, ovoce, víno, žito a pšenici."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Spider Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2985
 msgctxt "europeans_building"
 msgid "Breeds spiders for silk."
-msgstr ""
+msgstr "Chová pavouky pro pavoučí vlákno."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2992
 msgctxt "europeans_building"
 msgid "Keeps sheep for their wool."
-msgstr ""
+msgstr "Chová ovce pro jejich vlnu."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -6084,7 +6131,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3036
 msgctxt "europeans_building"
 msgid "Digs coal out of the ground in mountain terrain."
-msgstr ""
+msgstr "Doluje uhlí v horském terénu."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for a europeans production site: Deep Iron Mine
@@ -6100,7 +6147,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3078
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Doluje železnou rudu v horském terénu."
 
 #. TRANSLATORS: Purpose helptext for production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
@@ -6116,13 +6163,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3120
 msgctxt "europeans_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Doluje zlatou rudu v horském terénu."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Basic Training Camp, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3130
 msgctxt "europeans_building"
 msgid "Trains recruits in ‘Attack’ and ‘Health’."
-msgstr ""
+msgstr "Trénuje rekruty v útoku a zdraví."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Basic Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an europeans training site: Normal Training Camp, part 2
@@ -6132,7 +6179,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3176
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts and weapons."
-msgstr ""
+msgstr "Vybavuje rekruty všemi potřebnými částmi zbroje a zbraněmi."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Guardhall, part 1
 #. TRANSLATORS: Purpose helptext for an europeans training site: Dungeon, part 1
@@ -6142,7 +6189,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3174
 msgctxt "europeans_building"
 msgid "Trains recruits to soldiers."
-msgstr ""
+msgstr "Cvičí rekruty na vojáky."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Guardhall, part 2
 #. TRANSLATORS: Purpose helptext for an europeans training site: Dungeon, part 2
@@ -6150,19 +6197,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3165
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts."
-msgstr ""
+msgstr "Vybavuje rekruty všemi potřebnými částmi zbroje."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Normal Training Camp, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3152
 msgctxt "europeans_building"
 msgid "Trains recruits  to soldiers."
-msgstr ""
+msgstr "Cvičí rekruty na vojáky."
 
 #. TRANSLATORS: Note helptext for a barbarian training site: Battle Arena
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3184
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’."
-msgstr ""
+msgstr "Cvičí vojáky v úhybu, zdraví a útoku."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Trainingcamp, part 1
 #. TRANSLATORS: Purpose helptext for an europeans training site: Labyrinth, part 1
@@ -6174,7 +6221,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3225
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."
-msgstr ""
+msgstr "Cvičí vojáky v úhybu, zdraví a útoku a v obraně."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Trainingcamp, part 2
 #. TRANSLATORS: Purpose helptext for an europeans training site: Labyrinth, part 2
@@ -6189,6 +6236,8 @@ msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
 "remain totally unaffected."
 msgstr ""
+"Úhyb zvyšuje šanci vojáka vyhnout se nepříteli a zůstat tak po útoku zcela "
+"bez úhony."
 
 #. TRANSLATORS: Purpose helptext for an europeans military site: Blockhouse
 #. TRANSLATORS: Purpose helptext for an europeans military site: Sentry
@@ -6214,7 +6263,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3345
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
-msgstr ""
+msgstr "Obsazením budovy svou posádkou rozšiřuješ svá území."
 
 #. TRANSLATORS: Note helptext for an europeans military site: Blockhouse
 #. TRANSLATORS: Note helptext for an europeans military site: Sentry
@@ -6244,6 +6293,9 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a soldier to "
 "send him away."
 msgstr ""
+"Pokud máš nedostatek vojáků pro obsazení nové vojenské budovy, použij "
+"tlačítko s šipkou dolů pro snížení kapacity. Můžeš také kliknou na ikonu "
+"vojáka a poslat ho tak z budovy pryč."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Ferry Yard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3356
@@ -6251,7 +6303,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3374
 msgctxt "europeans_building"
 msgid "Builds ferries."
-msgstr ""
+msgstr "Staví přívozy."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Ferry Yard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3358
@@ -6259,7 +6311,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3376
 msgctxt "europeans_building"
 msgid "Needs water nearby."
-msgstr ""
+msgstr "Potřebuje ve svém okolí vodní plochu."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Shipyard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3383
@@ -6270,36 +6322,40 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
 "between ports."
 msgstr ""
+"Staví lodě, které se užívají pro zámořskou kolonizaci a na obchod mezi "
+"přístavy."
 
 #. TRANSLATORS: Lore helptext for an europeans building: Construction Site
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3406
 msgctxt "europeans_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
-msgstr ""
+msgstr "„Nenadávej stavaři, který nemá všechen stavební materiál.“"
 
 #. TRANSLATORS: Lore author helptext for an europeans building: Construction Site
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3408
 msgctxt "europeans_building"
 msgid "Proverb widely used for impossible tasks of any kind"
-msgstr ""
+msgstr "Často užívané přísloví používané pro nesplnitelné úkoly všeho druhu"
 
 #. TRANSLATORS: Purpose helptext for an europeans building: Construction Site
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3410
 msgctxt "europeans_building"
 msgid "A new building is being built at this construction site."
-msgstr ""
+msgstr "Na tomto místě začala stavba nové budovy."
 
 #. TRANSLATORS: Lore helptext for an europeans building: Dismantle Site
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3417
 msgctxt "europeans_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
+"\"Vždy najdeš novou cestu, za předpokladu, že jsi ochotný opustit tu starou."
+"\""
 
 #. TRANSLATORS: Lore author helptext for an europeans building: Dismantle Site
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3419
 msgctxt "europeans_building"
 msgid "Proverb"
-msgstr ""
+msgstr "Přísloví"
 
 #. TRANSLATORS: Purpose helptext for an europeans building: Dismantle Site
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3421
@@ -6309,495 +6365,497 @@ msgid ""
 "resources that were used during this building’s construction to your tribe’s "
 "stores."
 msgstr ""
+"Na tomto staveništi dochází k rozebírání budovy. Do tvého kmenového skladu "
+"budou vráceny některé ze surovin, které byly použity při stavbě této budovy."
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ore/init.lua:8
 msgctxt "ware"
 msgid "Ore"
-msgstr ""
+msgstr "Ruda"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "Žito"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/baker_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Baker"
-msgstr ""
+msgstr "Mistr pekař"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/baker_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Baker"
-msgstr ""
+msgstr "Pekař"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/baker_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Baker"
-msgstr ""
+msgstr "Vrchní pekař"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Beekeeper"
-msgstr ""
+msgstr "Mistr včelař"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Beekeeper"
-msgstr ""
+msgstr "Včelař"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Beekeeper"
-msgstr ""
+msgstr "Vrchní včelař"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Breeder"
-msgstr ""
+msgstr "Mistr chovatel"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Breeder"
-msgstr ""
+msgstr "Chovatel"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Breeder"
-msgstr ""
+msgstr "Vrchní chovatel"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/brewer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Brewer"
-msgstr ""
+msgstr "Mistr sládek"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/brewer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Brewer"
-msgstr ""
+msgstr "Sládek"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/brewer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Brewer"
-msgstr ""
+msgstr "Vrchní sládek"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/builder/init.lua:8
 msgctxt "europeans_worker"
 msgid "Builder"
-msgstr ""
+msgstr "Stavitel"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carpenter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Carpenter / Sawyer"
-msgstr ""
+msgstr "Mistr tesař / dělník na pile"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carpenter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Carpenter / Sawyer"
-msgstr ""
+msgstr "Tesař / dělník na pile"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carpenter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Carpenter / Sawyer"
-msgstr ""
+msgstr "Vrchní tesař / dělník na pile"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier/init.lua:8
 msgctxt "europeans_worker"
 msgid "Carrier"
-msgstr ""
+msgstr "Nosič"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_1/init.lua:8
 msgctxt "europeans_worker"
 msgid "Carrier 1"
-msgstr ""
+msgstr "Nosič 1"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_2/init.lua:8
 msgctxt "europeans_worker"
 msgid "Carrier 2"
-msgstr ""
+msgstr "Nosič 2"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/charcoal_burner_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Charcoal Burner"
-msgstr ""
+msgstr "Mistr uhlíř"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/charcoal_burner_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Charcoal Burner"
-msgstr ""
+msgstr "Uhlíř"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/charcoal_burner_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Charcoal Burner"
-msgstr ""
+msgstr "Vrchní uhlíř"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/farmer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Farmer"
-msgstr ""
+msgstr "Mistr sedlák"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/farmer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Farmer"
-msgstr ""
+msgstr "Sedlák"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/farmer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
-msgstr ""
+msgstr "Vrchní sedlák"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/ferry/init.lua:8
 msgctxt "europeans_worker"
 msgid "Ferry"
-msgstr ""
+msgstr "Přívoz"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fishbreeder_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Fish Breeder"
-msgstr ""
+msgstr "Mistr porybný"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fishbreeder_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Fish Breeder"
-msgstr ""
+msgstr "Porybný"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fishbreeder_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Fish Breeder"
-msgstr ""
+msgstr "Vrchní porybný"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fisher_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Fisher"
-msgstr ""
+msgstr "Mistr rybář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fisher_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Fisher"
-msgstr ""
+msgstr "Rybář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fisher_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Fisher"
-msgstr ""
+msgstr "Vrchní rybář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/forester_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Forester"
-msgstr ""
+msgstr "Mistr lesník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/forester_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Forester / Ranger"
-msgstr ""
+msgstr "Lesník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/forester_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Forester"
-msgstr ""
+msgstr "Vrchní lesník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/gamekeeper_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Gamekeeper"
-msgstr ""
+msgstr "Mistr hajný"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/gamekeeper_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Gamekeeper"
-msgstr ""
+msgstr "Hajný"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/gamekeeper_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Gamekeeper"
-msgstr ""
+msgstr "Vrchní hajný"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/geologist/init.lua:8
 msgctxt "europeans_worker"
 msgid "Geologist"
-msgstr ""
+msgstr "Geolog"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/hunter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Hunter"
-msgstr ""
+msgstr "Mistr lovec"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/hunter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Hunter"
-msgstr ""
+msgstr "Lovec"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/hunter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Hunter"
-msgstr ""
+msgstr "Vrchní lovec"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/lumberjack_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Lumberjack"
-msgstr ""
+msgstr "Mistr dřevorubec"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/lumberjack_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Lumberjack"
-msgstr ""
+msgstr "Dřevorubec"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/lumberjack_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Lumberjack / Woodcutter"
-msgstr ""
+msgstr "Vrchní dřevorubec"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miller_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Miller"
-msgstr ""
+msgstr "Mistr mlynář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miller_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Miller"
-msgstr ""
+msgstr "Mlynář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miller_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Miller"
-msgstr ""
+msgstr "Vrchní mlynář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miner_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Miner"
-msgstr ""
+msgstr "Mistr horník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miner_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Miner"
-msgstr ""
+msgstr "Horník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miner_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Miner"
-msgstr ""
+msgstr "Vrchní horník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/recruit/init.lua:8
 msgctxt "europeans_worker"
 msgid "Recruit"
-msgstr ""
+msgstr "Rekrut"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/scout_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Scout"
-msgstr ""
+msgstr "Mistr průzkumník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/scout_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Scout"
-msgstr ""
+msgstr "Průzkumník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/scout_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Scout"
-msgstr ""
+msgstr "Vrchní průzkumník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Shipwright"
-msgstr ""
+msgstr "Mistr stavitel lodí"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Shipwright"
-msgstr ""
+msgstr "Stavitel lodí"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Shipwright"
-msgstr ""
+msgstr "Vrchní stavitel lodí"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smelter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Smelter"
-msgstr ""
+msgstr "Mistr slévač"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smelter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Smelter"
-msgstr ""
+msgstr "Slévač"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smelter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Smelter"
-msgstr ""
+msgstr "Vrchní slévač"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smith_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Smith"
-msgstr ""
+msgstr "Mistr kovář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smith_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Smith"
-msgstr ""
+msgstr "Kovář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smith_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Smith"
-msgstr ""
+msgstr "Vrchní kovář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smoker_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Smoker"
-msgstr ""
+msgstr "Mistr uzenář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smoker_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Smoker"
-msgstr ""
+msgstr "Uzenář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smoker_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Smoker"
-msgstr ""
+msgstr "Vrchní uzenář"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/soldier/init.lua:82
 msgctxt "europeans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Voják"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonecutter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Stonecutter"
-msgstr ""
+msgstr "Mistr kameník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonecutter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Stonecutter"
-msgstr ""
+msgstr "Kameník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonecutter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Stonecutter"
-msgstr ""
+msgstr "Vrchní kameník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonemason_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Stonemason"
-msgstr ""
+msgstr "Mistr kameník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonemason_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Stonemason"
-msgstr ""
+msgstr "Kameník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonemason_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Stonemason"
-msgstr ""
+msgstr "Vrchní kameník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Trainer"
-msgstr ""
+msgstr "Mistr cvičitel"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Trainer"
-msgstr ""
+msgstr "Cvičitel"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Trainer"
-msgstr ""
+msgstr "Vrchní cvičitel"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/weaver_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Weaver"
-msgstr ""
+msgstr "Mistr tkadlec"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/weaver_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Weaver"
-msgstr ""
+msgstr "Tkadlec"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/weaver_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
-msgstr ""
+msgstr "Vrchní tkadlec"

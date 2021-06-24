@@ -5,15 +5,16 @@
 #
 # Translators:
 # af24e571988b09e5b46468ac89010e87_d1b4333, 2021
+# Zlopez <michal.konecny@psmail.xyz>, 2021
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-10 22:32+0200\n"
+"POT-Creation-Date: 2021-06-24 03:09+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
-"Last-Translator: af24e571988b09e5b46468ac89010e87_d1b4333, 2021\n"
+"Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -55,7 +56,7 @@ msgstr "mletí ječmene"
 #: addons/frisians-economy-ultra.wad/leather/init.lua:8
 msgctxt "ware"
 msgid "Leather"
-msgstr ""
+msgstr "Kůže"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/miller/init.lua:8
@@ -101,7 +102,7 @@ msgstr "Poté co je ječmen semletý na mouku, může se z něj péct chléb."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:42
 msgid "Fur can be tanned into leather, which is needed to produce garments."
-msgstr ""
+msgstr "Kožešina může být vyčiněna na kůži, z které se vyrábí oděvy."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:68
 msgid "The salter washes salt from the shores of the sea."
@@ -113,7 +114,7 @@ msgstr "Mlynář mele ječmen a žito na mouku."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:74
 msgid "The tanner tans furs to produce leather."
-msgstr ""
+msgstr "Koželuh činí kožešiny a vyrábí z nich kůže."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:82
 msgid "The salter working at the salt works washes salt from the sea."
@@ -125,7 +126,7 @@ msgstr "Solař potřebuje ve svém okolí vodu."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:86
 msgid "The tannery tans fur into leather."
-msgstr ""
+msgstr "Koželužna činí kožešiny na kůže."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:89
 msgid "The barley mill grinds barley into barley flour."
@@ -171,7 +172,7 @@ msgstr "pečení medového chleba"
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:178
 msgid "sewing fur garment"
-msgstr ""
+msgstr "šití kožešinového oděvu"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/rye/init.lua:8
@@ -278,15 +279,15 @@ msgstr "Solař"
 #: addons/frisians-economy-ultra.wad/tanner/init.lua:8
 msgctxt "frisians_worker"
 msgid "Tanner"
-msgstr ""
+msgstr "Koželuh"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:8
 msgctxt "frisians_building"
 msgid "Tannery"
-msgstr ""
+msgstr "Koželužna"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tanning fur because ...
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:47
 msgid "tanning fur"
-msgstr ""
+msgstr "činění kožešiny"
