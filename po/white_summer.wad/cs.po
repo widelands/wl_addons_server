@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Zlopez <michal.konecny@psmail.xyz>, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-10 22:32+0200\n"
+"POT-Creation-Date: 2021-06-24 03:09+0000\n"
 "PO-Revision-Date: 2021-06-05 18:17+0000\n"
+"Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +25,7 @@ msgstr ""
 #: addons/white_summer.wad/addon:2 addons/white_summer.wad/editor.lua:7
 #: addons/white_summer.wad/editor.lua:35
 msgid "White Summer"
-msgstr ""
+msgstr "Bílé léto"
 
 #: addons/white_summer.wad/addon:3
 msgid ""
@@ -31,135 +35,139 @@ msgid ""
 "planting trees. Dolomites contain stone as a default resource in amount of "
 "10."
 msgstr ""
+"Obsahuje kvetoucí louky, mýtiny, dolomity, hliněnou půdu, zelenou vodu, "
+"bahnitou vodu a 3 nové typy stromů. Kvetoucí louky je náročnější proměnit v "
+"les, ale mělo by být lepší pro studny. Mýtiny jsou ideální na sázení stromů. "
+"Dolomity obsahují kámen jako výchozí surovinu v množství 10."
 
 #: addons/white_summer.wad/immovables/linden/init.lua:16
 msgid "Linden (Sapling)"
-msgstr ""
+msgstr "Lípa (sazenice)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:41
 msgid "Linden (Pole)"
-msgstr ""
+msgstr "Lípa (stromek)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:67
 msgid "Linden (Mature)"
-msgstr ""
+msgstr "Lípa (vzrostlá)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:93
 msgid "Linden (Old)"
-msgstr ""
+msgstr "Lípa (stará)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:94
 msgid "Linden"
-msgstr ""
+msgstr "Lípa"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:17
 msgid "Pine (Sapling)"
-msgstr ""
+msgstr "Borovice (sazenice)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:42
 msgid "Pine (Pole)"
-msgstr ""
+msgstr "Borovice (stromek)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:68
 msgid "Pine (Mature)"
-msgstr ""
+msgstr "Borovice (vzrostlá)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:94
 msgid "Pine (Old)"
-msgstr ""
+msgstr "Borovice (stará)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:95
 msgid "Pine"
-msgstr ""
+msgstr "Borovice"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:95
 msgid "Red Maple"
-msgstr ""
+msgstr "Červený javor"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:68
 msgid "Red Maple (Mature)"
-msgstr ""
+msgstr "Červený javor (vzrostlý)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:94
 msgid "Red Maple (Old)"
-msgstr ""
+msgstr "Červený javor (starý)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:42
 msgid "Red Maple (Pole)"
-msgstr ""
+msgstr "Červený javor (stromek)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:17
 msgid "Red Maple (Sapling)"
-msgstr ""
+msgstr "Červený javor (sazenice)"
 
 #: addons/white_summer.wad/terrains/init.lua:10
 msgid "Flowering Meadow 1"
-msgstr ""
+msgstr "Kvetoucí louka 1"
 
 #: addons/white_summer.wad/terrains/init.lua:24
 msgid "Flowering Meadow 2"
-msgstr ""
+msgstr "Kvetoucí louka 2"
 
 #: addons/white_summer.wad/terrains/init.lua:38
 msgid "Flowering Meadow 3"
-msgstr ""
+msgstr "Kvetoucí louka 3"
 
 #: addons/white_summer.wad/terrains/init.lua:52
 msgid "Flowering Meadow 4"
-msgstr ""
+msgstr "Kvetoucí louka 4"
 
 #: addons/white_summer.wad/terrains/init.lua:66
 msgid "Clearing 1"
-msgstr ""
+msgstr "Mýtina 1"
 
 #: addons/white_summer.wad/terrains/init.lua:79
 msgid "Clearing 2"
-msgstr ""
+msgstr "Mýtina 2"
 
 #: addons/white_summer.wad/terrains/init.lua:93
 msgid "Clearing 3"
-msgstr ""
+msgstr "Mýtina 3"
 
 #: addons/white_summer.wad/terrains/init.lua:107
 msgid "Forested Dolomites 1"
-msgstr ""
+msgstr "Zalesněné dolomity 1"
 
 #: addons/white_summer.wad/terrains/init.lua:121
 msgid "Forested Dolomites 2"
-msgstr ""
+msgstr "Zalesněné dolomity 2"
 
 #: addons/white_summer.wad/terrains/init.lua:135
 msgid "Forested Dolomites 3"
-msgstr ""
+msgstr "Zalesněné dolomity 3"
 
 #: addons/white_summer.wad/terrains/init.lua:150
 msgid "Dolomites 1"
-msgstr ""
+msgstr "Dolomity 1"
 
 #: addons/white_summer.wad/terrains/init.lua:165
 msgid "Dolomites 2"
-msgstr ""
+msgstr "Dolomity 2"
 
 #: addons/white_summer.wad/terrains/init.lua:180
 msgid "Dolomites Meadow"
-msgstr ""
+msgstr "Dolomity louka"
 
 #: addons/white_summer.wad/terrains/init.lua:193
 msgid "Clay Soil"
-msgstr ""
+msgstr "Hliněná půda"
 
 #: addons/white_summer.wad/terrains/init.lua:207
 msgid "Green Water 1"
-msgstr ""
+msgstr "Zelená voda 1"
 
 #: addons/white_summer.wad/terrains/init.lua:222
 msgid "Green Water 2"
-msgstr ""
+msgstr "Zelená voda 2"
 
 #: addons/white_summer.wad/terrains/init.lua:237
 msgid "Green Water 3"
-msgstr ""
+msgstr "Zelená voda 3"
 
 #: addons/white_summer.wad/terrains/init.lua:252
 msgid "Muddy Water"
-msgstr ""
+msgstr "Bahnitá voda"
