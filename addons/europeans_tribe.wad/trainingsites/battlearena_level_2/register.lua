@@ -1,3 +1,3 @@
 return {
-   europeans_battlearena_level_2 = {},
+   europeans_battlearena_level_2 = {"__replace_if_exists"},
 }

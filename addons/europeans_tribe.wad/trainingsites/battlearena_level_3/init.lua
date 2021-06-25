@@ -147,7 +147,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs shield_steel",
             "checksoldier=soldier:defense level:0", -- Fails when aren't any soldier of level 0 defense
-            "sleep=duration:45s",
+            "sleep=duration:30s",
             "checksoldier=soldier:defense level:0", -- Because the soldier can be expulsed by the player
             "consume=ration beer shield_steel",
             "train=soldier:defense level:1",
@@ -159,7 +159,7 @@ descriptions:new_trainingsite_type {
          descname = pgettext("europeans_building", "upgrading soldier defense from level 1 to level 2"),
          actions = {
             "checksoldier=soldier:defense level:1", -- Fails when aren't any soldier of level 0 defense
-            "sleep=duration:45s",
+            "sleep=duration:30s",
             "checksoldier=soldier:defense level:1", -- Because the soldier can be expulsed by the player
             "consume=ration beer",
             "train=soldier:defense level:2"
@@ -170,7 +170,7 @@ descriptions:new_trainingsite_type {
          descname = pgettext("europeans_building", "upgrading soldier defense from level 2 to level 3"),
          actions = {
             "checksoldier=soldier:defense level:2", -- Fails when aren't any soldier of level 0 defense
-            "sleep=duration:45s",
+            "sleep=duration:30s",
             "checksoldier=soldier:defense level:2", -- Because the soldier can be expulsed by the player
             "consume=snack mead",
             "train=soldier:defense level:3"
@@ -182,7 +182,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs spear",
             "checksoldier=soldier:attack level:0",
-            "sleep=duration:45s",
+            "sleep=duration:30s",
             "checksoldier=soldier:attack level:0",
             "consume=ration spear_advanced",
             "train=soldier:attack level:1",
@@ -195,7 +195,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs spear_advanced",
             "checksoldier=soldier:attack level:1",
-            "sleep=duration:45s",
+            "sleep=duration:30s",
             "checksoldier=soldier:attack level:1",
             "consume=ration ax_broad",
             "train=soldier:attack level:2",
@@ -208,7 +208,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs trident_steel",
             "checksoldier=soldier:attack level:2",
-            "sleep=duration:45s",
+            "sleep=duration:30s",
             "checksoldier=soldier:attack level:2",
             "consume=snack trident_steel",
             "train=soldier:attack level:3",
@@ -221,7 +221,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs trident_double",
             "checksoldier=soldier:attack level:3",
-            "sleep=duration:45s",
+            "sleep=duration:30s",
             "checksoldier=soldier:attack level:3",
             "consume=snack sword_broad",
             "train=soldier:attack level:4",
@@ -234,7 +234,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs armor_chain",
             "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:30s",
+            "sleep=duration:20s",
             "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
             "consume=ration armor_chain",
             "train=soldier:health level:1",
@@ -247,7 +247,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs armor_helmet and economy needs helmet",
             "checksoldier=soldier:health level:1", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:30s",
+            "sleep=duration:20s",
             "checksoldier=soldier:health level:1", -- Because the soldier can be expelled by the player
             "consume=ration armor_helmet",
             "train=soldier:health level:2",
@@ -260,7 +260,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs helmet_mask",
             "checksoldier=soldier:health level:2", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:30s",
+            "sleep=duration:20s",
             "checksoldier=soldier:health level:2", -- Because the soldier can be expelled by the player
             "consume=snack helmet_mask",
             "train=soldier:health level:3",
@@ -273,7 +273,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs tabard_golden and economy needs armor_gilded",
             "checksoldier=soldier:health level:3", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:30s",
+            "sleep=duration:20s",
             "checksoldier=soldier:health level:3", -- Because the soldier can be expelled by the player
             "consume=snack armor_gilded,tabard_golden",
             "train=soldier:health level:4",
