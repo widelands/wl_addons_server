@@ -84,7 +84,8 @@ class HandleCommand {
 	public void handleCmdVote() throws Exception {
 		// Args: name vote
 		ServerUtils.checkNrArgs(cmd, 2);
-		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("You need to log in to vote");
+		if (username.isEmpty())
+			throw new ServerUtils.WLProtocolException("You need to log in to vote");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		Utils.registerVote(cmd[1], username, cmd[2]);
@@ -126,7 +127,8 @@ class HandleCommand {
 	public void handleCmdEditComment() throws Exception {
 		// Args: name index lines
 		ServerUtils.checkNrArgs(cmd, 3);
-		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("Log in to edit comments");
+		if (username.isEmpty())
+			throw new ServerUtils.WLProtocolException("Log in to edit comments");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
@@ -134,12 +136,14 @@ class HandleCommand {
 			if (!username.equals(Utils.readProfile(new File("metadata", cmd[1] + ".server"), cmd[1])
 			                         .get("comment_name_" + cmd[2])
 			                         .value)) {
-				throw new ServerUtils.WLProtocolException("Forbidden to edit another user's comment");
+				throw new ServerUtils.WLProtocolException(
+				    "Forbidden to edit another user's comment");
 			}
 			Utils.Value v = Utils.readProfile(new File("metadata", cmd[1] + ".server"), cmd[1])
 			                    .get("comment_editor_" + cmd[2]);
 			if (v != null && !username.equals(v.value))
-				throw new ServerUtils.WLProtocolException("Forbidden to edit a comment edited by a maintainer");
+				throw new ServerUtils.WLProtocolException(
+				    "Forbidden to edit a comment edited by a maintainer");
 		}
 
 		String msg = "";
@@ -191,9 +195,10 @@ class HandleCommand {
 		}
 		long size = Long.valueOf(cmd[2]);
 		if (size > 4 * 1000 * 1000)
-			throw new ServerUtils.WLProtocolException("Filesize " + size + " exceeds the limit of 4 MB. "
-			                            + "If you really need to submit such a large image, "
-			                            + "please contact the Widelands Development Team.");
+			throw new ServerUtils.WLProtocolException(
+			    "Filesize " + size + " exceeds the limit of 4 MB. "
+			    + "If you really need to submit such a large image, "
+			    + "please contact the Widelands Development Team.");
 		File tempDir = Utils.createTempDir();
 
 		try {
@@ -207,14 +212,15 @@ class HandleCommand {
 			for (long l = 0; l < size; ++l) {
 				int b = in.read();
 				if (b < 0)
-					throw new ServerUtils.WLProtocolException("Stream ended unexpectedly while reading file");
+					throw new ServerUtils.WLProtocolException(
+					    "Stream ended unexpectedly while reading file");
 				stream.write(b);
 			}
 			stream.close();
 			String checksum = UpdateList.checksum(file);
 			if (!checksum.equals(cmd[3]))
-				throw new ServerUtils.WLProtocolException("Checksum mismatch: expected " + cmd[3] + ", found " +
-				                            checksum);
+				throw new ServerUtils.WLProtocolException("Checksum mismatch: expected " + cmd[3] +
+				                                          ", found " + checksum);
 			if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
 				throw new ServerUtils.WLProtocolException("Stream continues past its end");
 			File result = new File("screenshots", cmd[1]);
@@ -238,7 +244,8 @@ class HandleCommand {
 	public void handleCmdSubmit() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
-		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
+		if (username.isEmpty())
+			throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
 		ServerUtils.checkNameValid(cmd[1], false);
 		/* No need here to check if the add-on exists. */
 		if (!admin) {
@@ -247,8 +254,9 @@ class HandleCommand {
 				String originalUploader =
 				    Utils.readProfile(f, cmd[1]).get("uploader").value(locale);
 				if (!username.equals(originalUploader))
-					throw new ServerUtils.WLProtocolException("You can not overwrite another person's (" +
-					                            originalUploader + ") existing add-on");
+					throw new ServerUtils.WLProtocolException(
+					    "You can not overwrite another person's (" + originalUploader +
+					    ") existing add-on");
 			}
 		}
 		File tempDir = Utils.createTempDir();
@@ -290,9 +298,9 @@ class HandleCommand {
 					stream.close();
 					String c = UpdateList.checksum(file);
 					if (!checksum.equals(c))
-						throw new ServerUtils.WLProtocolException("Checksum mismatch for " +
-						                            dirnames[i].getPath() + "/" + filename +
-						                            ": expected " + checksum + ", found " + c);
+						throw new ServerUtils.WLProtocolException(
+						    "Checksum mismatch for " + dirnames[i].getPath() + "/" + filename +
+						    ": expected " + checksum + ", found " + c);
 				}
 			}
 

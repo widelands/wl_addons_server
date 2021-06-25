@@ -92,8 +92,8 @@ abstract class ServerUtils {
 			    c == '0' || c == '.' || c == '_' || c == '-')
 				continue;
 			if (directory && c == '/') continue;
-			throw new WLProtocolException("Name '" + name + "' may not contain the character '" + c +
-			                            "'");
+			throw new WLProtocolException("Name '" + name + "' may not contain the character '" +
+			                              c + "'");
 		}
 		if (name.startsWith("/"))
 			throw new WLProtocolException("Name '" + name + "' may not start with '/'");

@@ -103,8 +103,9 @@ public class Server {
 						                   Thread.currentThread().getName() +
 						                   "] Version: " + protocolVersion);
 						if (protocolVersion != 4) {
-							throw new ServerUtils.WLProtocolException("Unsupported version '" + protocolVersion +
-							                            "' (only supported version is '4')");
+							throw new ServerUtils.WLProtocolException(
+							    "Unsupported version '" + protocolVersion +
+							    "' (only supported version is '4')");
 						}
 						final String locale = ServerUtils.readLine(in);
 						System.out.println("[" + new Date() + " @ " +
@@ -115,7 +116,8 @@ public class Server {
 						                   Thread.currentThread().getName() +
 						                   "] Username: " + username);
 						if (!ServerUtils.readLine(in).equals("ENDOFSTREAM")) {
-							throw new ServerUtils.WLProtocolException("Stream continues past its end");
+							throw new ServerUtils.WLProtocolException(
+							    "Stream continues past its end");
 						}
 						boolean admin = false;
 						if (username.isEmpty()) {
@@ -129,26 +131,26 @@ public class Server {
 							    "select id from auth_user where username='" + username + "'");
 							if (!sql.next())
 								throw new ServerUtils.WLProtocolException("User " + username +
-								                            " is not registered");
+								                                          " is not registered");
 							final long userID = sql.getLong​(1);
 
 							sql = database.createStatement().executeQuery(
 							    "select permissions from wlggz_ggzauth where user_id=" + userID);
 							if (!sql.next())
-								throw new ServerUtils.WLProtocolException("User " + username +
-								                            " has no permissions at all");
+								throw new ServerUtils.WLProtocolException(
+								    "User " + username + " has no permissions at all");
 							final long permissions = sql.getLong(1);
 							if (permissions != 7 && permissions != 127)
-								throw new ServerUtils.WLProtocolException("User " + username +
-								                            " has invalid permissions code " +
-								                            permissions);
+								throw new ServerUtils.WLProtocolException(
+								    "User " + username + " has invalid permissions code " +
+								    permissions);
 							admin = (permissions == 127);
 
 							sql = database.createStatement().executeQuery(
 							    "select password from wlggz_ggzauth where user_id=" + userID);
 							if (!sql.next())
-								throw new ServerUtils.WLProtocolException("User " + username +
-								                            " did not set a password");
+								throw new ServerUtils.WLProtocolException(
+								    "User " + username + " did not set a password");
 							final String passwordHash = sql.getString(1);
 
 							Process p = Runtime.getRuntime().exec(new String[] {"md5sum"});
@@ -163,10 +165,12 @@ public class Server {
 
 							final String password = ServerUtils.readLine(in);
 							if (!ServerUtils.readLine(in).equals("ENDOFSTREAM")) {
-								throw new ServerUtils.WLProtocolException("Stream continues past its end");
+								throw new ServerUtils.WLProtocolException(
+								    "Stream continues past its end");
 							}
 							if (!password.equals(expected)) {
-								throw new ServerUtils.WLProtocolException("Wrong username or password");
+								throw new ServerUtils.WLProtocolException(
+								    "Wrong username or password");
 							}
 
 							out.println(admin ? "ADMIN" : "SUCCESS");
