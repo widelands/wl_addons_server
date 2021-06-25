@@ -643,7 +643,7 @@ descriptions:new_tribe {
             preciousness = 1,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Milking Tongs
-               purpose = pgettext("europeans_ware", "Needöes are used by weaver.")
+               purpose = pgettext("europeans_ware", "Needles are used by weaver.")
             }
          }
       },
@@ -655,7 +655,7 @@ descriptions:new_tribe {
             preciousness = 0,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Basket
-               purpose = pgettext("europeans_ware", "This basket is needed by the farmer for harvesting the fruits and grapes and needed by miller and by gamekeeper. It is produced by the toolsmith.")
+               purpose = pgettext("europeans_ware", "This basket is needed by the farmer for harvesting the fruits and grapes and needed by miller and by gamekeeper. It is also used by advanced carrier to transport wares. It is produced by the toolsmith.")
             }
          },
          {

@@ -134,7 +134,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs spear",
             "checksoldier=soldier:attack level:0",
-            "sleep=duration:45s",
+            "sleep=duration:30s",
             "checksoldier=soldier:attack level:0",
             "consume=ration spear_advanced",
             "train=soldier:attack level:1",
@@ -147,7 +147,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs armor_chain",
             "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:30s",
+            "sleep=duration:20s",
             "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
             "consume=ration armor_chain",
             "train=soldier:health level:1",

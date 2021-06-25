@@ -15,7 +15,7 @@ descriptions:new_productionsite_type {
       cloth = 1,
       brick = 1,
       grout = 1,
-      marble_column = 1
+      marble = 1
    },
    return_on_dismantle = {
       planks = 2,
