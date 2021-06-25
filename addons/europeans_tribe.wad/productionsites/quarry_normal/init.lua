@@ -14,7 +14,7 @@ descriptions:new_productionsite_type {
         enhancement_cost = {
           brick = 1,
           grout = 1,
-          marble_column = 1
+          marble = 1
         },
         enhancement_return_on_dismantle = {
           granite = 1,
