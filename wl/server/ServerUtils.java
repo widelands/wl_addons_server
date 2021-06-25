@@ -6,8 +6,8 @@ import java.util.*;
 import wl.utils.*;
 
 abstract class ServerUtils {
-	public static class ProtocolException extends RuntimeException {
-		public ProtocolException(String msg) { super("ProtocolException: " + msg); }
+	public static class WLProtocolException extends RuntimeException {
+		public WLProtocolException(String msg) { super("WL Protocol Exception: " + msg); }
 		@Override
 		public String toString() {
 			return getMessage();
@@ -21,7 +21,7 @@ abstract class ServerUtils {
 			int c = in.read();
 			if (c < 0) {
 				if (exceptionOnStreamEnd)
-					throw new ProtocolException("Stream ended unexpectedly during readLine");
+					throw new WLProtocolException("Stream ended unexpectedly during readLine");
 				return null;
 			}
 			if (c == '\n') return str;
@@ -74,8 +74,8 @@ abstract class ServerUtils {
 
 	public static void checkNrArgs(String[] cmd, int expected) {
 		if (cmd.length != expected + 1)
-			throw new ProtocolException("Expected " + expected + " argument(s), found " +
-			                            (cmd.length - 1));
+			throw new WLProtocolException("Expected " + expected + " argument(s), found " +
+			                              (cmd.length - 1));
 	}
 
 	public static File[] listSorted(File dir) {
@@ -86,26 +86,26 @@ abstract class ServerUtils {
 
 	public static void checkNameValid(String name, boolean directory) {
 		if (name == null || (!directory && name.isEmpty()))
-			throw new ProtocolException("Empty name");
+			throw new WLProtocolException("Empty name");
 		for (char c : name.toCharArray()) {
 			if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '1' && c <= '9') ||
 			    c == '0' || c == '.' || c == '_' || c == '-')
 				continue;
 			if (directory && c == '/') continue;
-			throw new ProtocolException("Name '" + name + "' may not contain the character '" + c +
+			throw new WLProtocolException("Name '" + name + "' may not contain the character '" + c +
 			                            "'");
 		}
 		if (name.startsWith("/"))
-			throw new ProtocolException("Name '" + name + "' may not start with '/'");
+			throw new WLProtocolException("Name '" + name + "' may not start with '/'");
 		if (name.contains(".."))
-			throw new ProtocolException("Name '" + name + "' may not contain '..'");
+			throw new WLProtocolException("Name '" + name + "' may not contain '..'");
 	}
 
 	public static void checkAddOnExists(String name) {
 		if (!(new File("addons", name).isDirectory() &&
 		      new File("metadata", name + ".maintain").isFile() &&
 		      new File("metadata", name + ".server").isFile())) {
-			throw new ProtocolException("Add-on '" + name + "' does not exist");
+			throw new WLProtocolException("Add-on '" + name + "' does not exist");
 		}
 	}
 
@@ -119,8 +119,8 @@ abstract class ServerUtils {
 			byte[] buffer = new byte[len];
 			int r = read.read(buffer, 0, len);
 			if (r != len)
-				throw new ProtocolException("Server-side error: Read " + r +
-				                            " bytes but expected " + len);
+				throw new WLProtocolException("Server-side error: Read " + r +
+				                              " bytes but expected " + len);
 			out.write(buffer);
 			l -= len;
 		}
@@ -228,7 +228,7 @@ abstract class ServerUtils {
 				return;
 			}
 			default:
-				throw new ProtocolException("Wrong version " + version);
+				throw new WLProtocolException("Wrong version " + version);
 		}
 	}
 }

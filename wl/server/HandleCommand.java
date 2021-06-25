@@ -84,7 +84,7 @@ class HandleCommand {
 	public void handleCmdVote() throws Exception {
 		// Args: name vote
 		ServerUtils.checkNrArgs(cmd, 2);
-		if (username.isEmpty()) throw new ProtocolException("You need to log in to vote");
+		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("You need to log in to vote");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		Utils.registerVote(cmd[1], username, cmd[2]);
@@ -109,7 +109,7 @@ class HandleCommand {
 	public void handleCmdComment() throws Exception {
 		// Args: name version lines
 		ServerUtils.checkNrArgs(cmd, 3);
-		if (username.isEmpty()) throw new ProtocolException("Log in to comment");
+		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("Log in to comment");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		String msg = "";
@@ -118,7 +118,7 @@ class HandleCommand {
 			msg += ServerUtils.readLine(in);
 		}
 		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-			throw new ProtocolException("Stream continues past its end");
+			throw new ServerUtils.WLProtocolException("Stream continues past its end");
 		Utils.comment(cmd[1], username, cmd[2], msg);
 		out.println("ENDOFSTREAM");
 	}
@@ -126,7 +126,7 @@ class HandleCommand {
 	public void handleCmdEditComment() throws Exception {
 		// Args: name index lines
 		ServerUtils.checkNrArgs(cmd, 3);
-		if (username.isEmpty()) throw new ProtocolException("Log in to edit comments");
+		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("Log in to edit comments");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
@@ -134,12 +134,12 @@ class HandleCommand {
 			if (!username.equals(Utils.readProfile(new File("metadata", cmd[1] + ".server"), cmd[1])
 			                         .get("comment_name_" + cmd[2])
 			                         .value)) {
-				throw new ProtocolException("Forbidden to edit another user's comment");
+				throw new ServerUtils.WLProtocolException("Forbidden to edit another user's comment");
 			}
 			Utils.Value v = Utils.readProfile(new File("metadata", cmd[1] + ".server"), cmd[1])
 			                    .get("comment_editor_" + cmd[2]);
 			if (v != null && !username.equals(v.value))
-				throw new ProtocolException("Forbidden to edit a comment edited by a maintainer");
+				throw new ServerUtils.WLProtocolException("Forbidden to edit a comment edited by a maintainer");
 		}
 
 		String msg = "";
@@ -149,7 +149,7 @@ class HandleCommand {
 		}
 
 		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-			throw new ProtocolException("Stream continues past its end");
+			throw new ServerUtils.WLProtocolException("Stream continues past its end");
 		Utils.editComment(cmd[1], cmd[2], username, msg);
 		out.println("ENDOFSTREAM");
 	}
@@ -158,7 +158,7 @@ class HandleCommand {
 		// Args: lines
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty())
-			throw new ProtocolException("You need to log in to use the contact form");
+			throw new ServerUtils.WLProtocolException("You need to log in to use the contact form");
 
 		String msg = "";
 		for (int i = Integer.valueOf(cmd[1]); i > 0; --i) {
@@ -166,7 +166,7 @@ class HandleCommand {
 			msg += ServerUtils.readLine(in);
 		}
 		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-			throw new ProtocolException("Stream continues past its end");
+			throw new ServerUtils.WLProtocolException("Stream continues past its end");
 		ServerUtils.sendEnquiry(username, msg);
 
 		out.println("ENDOFSTREAM");
@@ -178,20 +178,20 @@ class HandleCommand {
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		if (username.isEmpty())
-			throw new ProtocolException("You need to log in to submit screenshots");
+			throw new ServerUtils.WLProtocolException("You need to log in to submit screenshots");
 		if (!admin) {
 			String originalUploader =
 			    Utils.readProfile(new File("metadata", cmd[1] + ".maintain"), cmd[1])
 			        .get("uploader")
 			        .value(locale);
 			if (!username.equals(originalUploader))
-				throw new ProtocolException(
+				throw new ServerUtils.WLProtocolException(
 				    "You can not submit screenshots for another person's (" + originalUploader +
 				    ") add-on");
 		}
 		long size = Long.valueOf(cmd[2]);
 		if (size > 4 * 1000 * 1000)
-			throw new ProtocolException("Filesize " + size + " exceeds the limit of 4 MB. "
+			throw new ServerUtils.WLProtocolException("Filesize " + size + " exceeds the limit of 4 MB. "
 			                            + "If you really need to submit such a large image, "
 			                            + "please contact the Widelands Development Team.");
 		File tempDir = Utils.createTempDir();
@@ -207,16 +207,16 @@ class HandleCommand {
 			for (long l = 0; l < size; ++l) {
 				int b = in.read();
 				if (b < 0)
-					throw new ProtocolException("Stream ended unexpectedly while reading file");
+					throw new ServerUtils.WLProtocolException("Stream ended unexpectedly while reading file");
 				stream.write(b);
 			}
 			stream.close();
 			String checksum = UpdateList.checksum(file);
 			if (!checksum.equals(cmd[3]))
-				throw new ProtocolException("Checksum mismatch: expected " + cmd[3] + ", found " +
+				throw new ServerUtils.WLProtocolException("Checksum mismatch: expected " + cmd[3] + ", found " +
 				                            checksum);
 			if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-				throw new ProtocolException("Stream continues past its end");
+				throw new ServerUtils.WLProtocolException("Stream continues past its end");
 			File result = new File("screenshots", cmd[1]);
 			result.mkdirs();
 			result = new File(result, filename);
@@ -231,14 +231,14 @@ class HandleCommand {
 			out.println("ENDOFSTREAM");
 		} catch (Exception e) {
 			ServerUtils.doDelete(tempDir);
-			throw new ProtocolException(e.getMessage());
+			throw new ServerUtils.WLProtocolException(e.getMessage());
 		}
 	}
 
 	public void handleCmdSubmit() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
-		if (username.isEmpty()) throw new ProtocolException("You need to log in to submit add-ons");
+		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
 		ServerUtils.checkNameValid(cmd[1], false);
 		/* No need here to check if the add-on exists. */
 		if (!admin) {
@@ -247,7 +247,7 @@ class HandleCommand {
 				String originalUploader =
 				    Utils.readProfile(f, cmd[1]).get("uploader").value(locale);
 				if (!username.equals(originalUploader))
-					throw new ProtocolException("You can not overwrite another person's (" +
+					throw new ServerUtils.WLProtocolException("You can not overwrite another person's (" +
 					                            originalUploader + ") existing add-on");
 			}
 		}
@@ -274,7 +274,7 @@ class HandleCommand {
 					final long size = Long.valueOf(ServerUtils.readLine(in));
 					totalSize += size;
 					if (totalSize > 200 * 1000 * 1000)
-						throw new ProtocolException(
+						throw new ServerUtils.WLProtocolException(
 						    "Filesize limit of 200 MB exceeded. "
 						    + "If you really want to submit such a large add-on, "
 						    + "please contact the Widelands Development Team.");
@@ -283,21 +283,21 @@ class HandleCommand {
 					for (long l = 0; l < size; ++l) {
 						int b = in.read();
 						if (b < 0)
-							throw new ProtocolException(
+							throw new ServerUtils.WLProtocolException(
 							    "Stream ended unexpectedly while reading file");
 						stream.write(b);
 					}
 					stream.close();
 					String c = UpdateList.checksum(file);
 					if (!checksum.equals(c))
-						throw new ProtocolException("Checksum mismatch for " +
+						throw new ServerUtils.WLProtocolException("Checksum mismatch for " +
 						                            dirnames[i].getPath() + "/" + filename +
 						                            ": expected " + checksum + ", found " + c);
 				}
 			}
 
 			if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-				throw new ProtocolException("Stream continues past its end");
+				throw new ServerUtils.WLProtocolException("Stream continues past its end");
 
 			File addOnDir = new File("addons", cmd[1]);
 			File addOnMain = new File(addOnDir, "addon");
@@ -310,7 +310,7 @@ class HandleCommand {
 				TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]);
 
 				if (!oldProfile.get("category").value.equals(newProfile.get("category").value))
-					throw new ProtocolException(
+					throw new ServerUtils.WLProtocolException(
 					    "An add-on with the same name and a different category already exists. "
 					    + "Old category is '" + oldProfile.get("category").value +
 					    "', new category is '" + newProfile.get("category").value + "'.");
@@ -327,7 +327,7 @@ class HandleCommand {
 				}
 				if (newer == null) newer = (oldVersion.length < newVersion.length);
 				if (!newer) {
-					throw new ProtocolException(
+					throw new ServerUtils.WLProtocolException(
 					    "An add-on with the same name and an equal or newer version "
 					    + "already exists. Existing version is '" + oldVersionString +
 					    "', your version is '" + newProfile.get("version").value + "'.");
@@ -371,7 +371,7 @@ class HandleCommand {
 			out.println("ENDOFSTREAM");
 		} catch (Exception e) {
 			ServerUtils.doDelete(tempDir);
-			throw new ProtocolException(e.toString());
+			throw new ServerUtils.WLProtocolException(e.toString());
 		}
 	}
 }
