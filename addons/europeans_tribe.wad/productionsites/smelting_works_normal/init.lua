@@ -38,7 +38,7 @@ descriptions:new_productionsite_type {
    aihints = {},
 
    working_positions = {
-      europeans_smelter_advanced = 1
+      europeans_smelter_normal = 1
    },
 
    inputs = {
