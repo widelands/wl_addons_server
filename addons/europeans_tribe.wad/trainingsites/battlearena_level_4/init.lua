@@ -134,7 +134,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:evade level:3", -- Fails when aren't any soldier of level 1 evade
             "sleep=duration:60s",
             "checksoldier=soldier:evade level:3", -- Because the soldier can be expelled by the player
-            "consume=snack:2 mead:2",
+            "consume=snack:2 beer_strong:2",
             "train=soldier:evade level:4"
          }
       },
@@ -146,20 +146,8 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:evade level:4", -- Fails when aren't any soldier of level 1 evade
             "sleep=duration:60s",
             "checksoldier=soldier:evade level:4", -- Because the soldier can be expelled by the player
-            "consume=meal:2 beer_strong:2",
-            "train=soldier:evade level:5"
-         }
-      },
-      upgrade_soldier_evade_5 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-         descname = pgettext("europeans_building", "upgrading soldier evade from level 5 to level 6"),
-         actions = {
-            "return=skipped when economy needs wine",
-            "checksoldier=soldier:evade level:5", -- Fails when aren't any soldier of level 1 evade
-            "sleep=duration:60s",
-            "checksoldier=soldier:evade level:5", -- Because the soldier can be expelled by the player
             "consume=meal:2 wine:2",
-            "train=soldier:evade level:6"
+            "train=soldier:evade level:5"
          }
       },
       upgrade_soldier_defense_0 = {
@@ -205,7 +193,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:defense level:3", -- Fails when aren't any soldier of level 0 defense
             "sleep=duration:30s",
             "checksoldier=soldier:defense level:3", -- Because the soldier can be expulsed by the player
-            "consume=snack mead shield_advanced",
+            "consume=snack beer_strong shield_advanced",
             "train=soldier:defense level:4",
             "produce=scrap_metal_mixed"
          }
@@ -217,19 +205,8 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:defense level:4", -- Fails when aren't any soldier of level 0 defense
             "sleep=duration:30s",
             "checksoldier=soldier:defense level:4", -- Because the soldier can be expulsed by the player
-            "consume=meal beer_strong",
-            "train=soldier:defense level:5"
-         }
-      },
-      upgrade_soldier_defense_5 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-         descname = pgettext("europeans_building", "upgrading soldier defense from level 5 to level 6"),
-         actions = {
-            "checksoldier=soldier:defense level:5", -- Fails when aren't any soldier of level 0 defense
-            "sleep=duration:30s",
-            "checksoldier=soldier:defense level:5", -- Because the soldier can be expulsed by the player
             "consume=meal wine",
-            "train=soldier:defense level:6"
+            "train=soldier:defense level:5"
          }
       },
       upgrade_soldier_attack_0 = {
@@ -292,21 +269,8 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:attack level:4",
             "sleep=duration:30s",
             "checksoldier=soldier:attack level:4",
-            "consume=meal ax_warriors",
+            "consume=meal ax_warriors,trident_heavy_double",
             "train=soldier:attack level:5",
-            "produce=scrap_metal_mixed:2"
-         }
-      },
-      upgrade_soldier_attack_5 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-         descname = pgettext("europeans_building", "upgrading soldier attack from level 5 to level 6"),
-         actions = {
-            "return=skipped when economy needs trident_heavy_double",
-            "checksoldier=soldier:attack level:5",
-            "sleep=duration:30s",
-            "checksoldier=soldier:attack level:5",
-            "consume=meal trident_heavy_double",
-            "train=soldier:attack level:6",
             "produce=scrap_metal_mixed:2"
          }
       },
@@ -370,21 +334,8 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:health level:4", -- Fails when aren't any soldier of level 0 health
             "sleep=duration:20s",
             "checksoldier=soldier:health level:4", -- Because the soldier can be expelled by the player
-            "consume=meal helmet_golden",
+            "consume=meal helmet_golden,helmet_warhelm",
             "train=soldier:health level:5",
-            "produce=scrap_metal_mixed"
-         }
-      },
-      upgrade_soldier_health_5 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-         descname = pgettext("europeans_building", "upgrading soldier health from level 5 to level 6"),
-         actions = {
-            "return=skipped when economy needs helmet_warhelm",
-            "checksoldier=soldier:health level:5", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:20s",
-            "checksoldier=soldier:health level:5", -- Because the soldier can be expelled by the player
-            "consume=meal helmet_warhelm",
-            "train=soldier:health level:6",
             "produce=scrap_metal_mixed"
          }
       },

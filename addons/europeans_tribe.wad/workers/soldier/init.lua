@@ -90,26 +90,26 @@ descriptions:new_soldier_type {
    health = {
       max_level = 6,
       base = 12800,
-      increase_per_level = 1585,
+      increase_per_level = 1900,
       pictures = path.list_files(dirname .. "health_level?.png"),
    },
    defense = {
       max_level = 6,
       base = 18,
-      increase_per_level = 2,
+      increase_per_level = 3,
       pictures = path.list_files(dirname .. "defense_level?.png"),
    },
    attack = {
       max_level = 6,
       base = 1150,
       maximum = 1450,
-      increase_per_level = 500,
+      increase_per_level = 600,
       pictures = path.list_files(dirname .. "attack_level?.png"),
    },
    evade = {
       max_level = 6,
       base = 32,
-      increase_per_level = 5,
+      increase_per_level = 6,
       pictures = path.list_files(dirname .. "evade_level?.png"),
    },
 
