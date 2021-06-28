@@ -50,6 +50,7 @@ descriptions:new_trainingsite_type {
       { name = "ration", amount = 10 },
       { name = "beer", amount = 10 },
       { name = "snack", amount = 6 },
+      { name = "mead", amount = 6 },
       { name = "shield_steel", amount = 2 },
       { name = "spear_advanced", amount = 2 },
       { name = "ax_broad", amount = 2 },
@@ -122,6 +123,18 @@ descriptions:new_trainingsite_type {
             "train=soldier:evade level:2"
          }
       },
+      upgrade_soldier_evade_2 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+         descname = pgettext("europeans_building", "upgrading soldier evade from level 2 to level 3"),
+         actions = {
+            "return=skipped when economy needs mead",
+            "checksoldier=soldier:evade level:2", -- Fails when aren't any soldier of level 0 evade
+            "sleep=duration:60s",
+            "checksoldier=soldier:evade level:2", -- Because the soldier can be expelled by the player
+            "consume=snack mead:2",
+            "train=soldier:evade level:3"
+         }
+      },
       upgrade_soldier_defense_0 = {
          -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
          descname = pgettext("europeans_building", "upgrading soldier defense from level 0 to level 1"),
@@ -144,6 +157,17 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:defense level:1", -- Because the soldier can be expulsed by the player
             "consume=ration beer",
             "train=soldier:defense level:2"
+         }
+      },
+      upgrade_soldier_defense_2 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+         descname = pgettext("europeans_building", "upgrading soldier defense from level 2 to level 3"),
+         actions = {
+            "checksoldier=soldier:defense level:2", -- Fails when aren't any soldier of level 0 defense
+            "sleep=duration:30s",
+            "checksoldier=soldier:defense level:2", -- Because the soldier can be expulsed by the player
+            "consume=snack mead",
+            "train=soldier:defense level:3"
          }
       },
       upgrade_soldier_attack_0 = {

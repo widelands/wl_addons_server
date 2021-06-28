@@ -116,6 +116,18 @@ descriptions:new_trainingsite_type {
             "train=soldier:evade level:1"
          }
       },
+      upgrade_soldier_evade_1 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+         descname = pgettext("europeans_building", "upgrading soldier evade from level 1 to level 2"),
+         actions = {
+            "return=skipped when economy needs beer",
+            "checksoldier=soldier:evade level:1", -- Fails when aren't any soldier of level 1 evade
+            "sleep=duration:60s",
+            "checksoldier=soldier:evade level:1", -- Because the soldier can be expelled by the player
+            "consume=ration:2 beer:2",
+            "train=soldier:evade level:2"
+         }
+      },
       upgrade_soldier_defense_0 = {
          -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
          descname = pgettext("europeans_building", "upgrading soldier defense from level 0 to level 1"),
@@ -127,6 +139,17 @@ descriptions:new_trainingsite_type {
             "consume=ration beer shield_steel",
             "train=soldier:defense level:1",
             "produce=scrap_iron"
+         }
+      },
+      upgrade_soldier_defense_1 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+         descname = pgettext("europeans_building", "upgrading soldier defense from level 1 to level 2"),
+         actions = {
+            "checksoldier=soldier:defense level:1", -- Fails when aren't any soldier of level 0 defense
+            "sleep=duration:30s",
+            "checksoldier=soldier:defense level:1", -- Because the soldier can be expulsed by the player
+            "consume=ration beer",
+            "train=soldier:defense level:2"
          }
       },
       upgrade_soldier_attack_0 = {
