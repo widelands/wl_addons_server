@@ -55,6 +55,7 @@ descriptions:new_trainingsite_type {
       { name = "snack", amount = 12 },
       { name = "beer", amount = 10 },
       { name = "mead", amount = 10 },
+      { name = "beer_strong", amount = 4 },
       { name = "helmet_mask", amount = 2 },
       { name = "shield_steel", amount = 2 },
       { name = "helmet_golden", amount = 2 },
