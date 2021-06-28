@@ -795,7 +795,7 @@ descriptions:new_tribe {
          }
       },
       {
-         -- Weapons and Shields
+         -- Weapons
          {
             name = "spear_wooden",
             default_target_quantity = 32,
@@ -849,7 +849,10 @@ descriptions:new_tribe {
                -- TRANSLATORS: Helptext for an europeans ware: Heavy Double Trident
                purpose = pgettext("europeans_ware", "This is a heavy double trident. It is produced in a weapon smithy and used in a training camp – together with food – to train soldiers from attack level 5 to level 6.")
             }
-         },
+         }
+      },
+      {
+         -- Shields and Helmets
          {
             name = "helmet_mask",
             default_target_quantity = 1,
