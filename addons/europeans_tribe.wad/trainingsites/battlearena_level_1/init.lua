@@ -58,11 +58,12 @@ descriptions:new_trainingsite_type {
    inputs = {
       { name = "ration", amount = 8 },
       { name = "beer", amount = 8 },
+      { name = "helmet_mask", amount = 2 },
       { name = "shield_steel", amount = 2 },
       { name = "spear_advanced", amount = 2 },
       { name = "ax_broad", amount = 2 },
-      { name = "armor_chain", amount = 2 },
-      { name = "armor_helmet", amount = 2 }
+      { name = "tabard", amount = 2 },
+      { name = "armor_chain", amount = 2 }
       
    },
 
@@ -78,7 +79,7 @@ descriptions:new_trainingsite_type {
         {"ration"},
         {"beer"}
       },
-      weapons = {"shield_steel"}
+      weapons = {"helmet_mask", "shield_steel"}
    },
    
    ["soldier attack"] = {
@@ -92,7 +93,7 @@ descriptions:new_trainingsite_type {
       food = {
          {"ration"}
       },
-      weapons = {"armor_chain", "armor_helmet"}
+      weapons = {"tabard", "armor_chain"}
    },
 
    programs = {
@@ -136,7 +137,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:defense level:0", -- Fails when aren't any soldier of level 0 defense
             "sleep=duration:30s",
             "checksoldier=soldier:defense level:0", -- Because the soldier can be expulsed by the player
-            "consume=ration beer shield_steel",
+            "consume=ration beer helmet_mask",
             "train=soldier:defense level:1",
             "produce=scrap_iron"
          }
@@ -148,8 +149,9 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:defense level:1", -- Fails when aren't any soldier of level 0 defense
             "sleep=duration:30s",
             "checksoldier=soldier:defense level:1", -- Because the soldier can be expulsed by the player
-            "consume=ration beer",
-            "train=soldier:defense level:2"
+            "consume=ration beer shield_steel",
+            "train=soldier:defense level:2",
+            "produce=scrap_iron"
          }
       },
       upgrade_soldier_attack_0 = {
@@ -186,9 +188,8 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
             "sleep=duration:20s",
             "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
-            "consume=ration armor_chain",
-            "train=soldier:health level:1",
-            "produce=scrap_iron"
+            "consume=ration tabard",
+            "train=soldier:health level:1"
          }
       },
       upgrade_soldier_health_1 = {
@@ -199,7 +200,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:health level:1", -- Fails when aren't any soldier of level 0 health
             "sleep=duration:20s",
             "checksoldier=soldier:health level:1", -- Because the soldier can be expelled by the player
-            "consume=ration armor_helmet",
+            "consume=ration armor_chain",
             "train=soldier:health level:2",
             "produce=scrap_iron"
          }

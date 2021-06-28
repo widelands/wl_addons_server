@@ -78,8 +78,7 @@ descriptions:new_productionsite_type {
             "call=produce_bread_paddle",
             "call=produce_hook_pole",
             "call=produce_spear_wooden",
-            "call=produce_spear_advanced",
-            "return=skipped"           
+            "return=skipped"
          }
       },
       produce_buckets = {
@@ -299,21 +298,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "produce=spear_wooden"
          }
-      },
-      produce_spear_advanced = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
-         descname = _"forging an advanced spear",
-         actions = {
-            "return=skipped unless economy needs spear_advanced",
-            "consume=planks coal:2 iron:2",
-            "sleep=duration:10s",
-            "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:50s",
-            "playsound=sound/smiths/sharpening priority:90%",
-            "sleep=duration:10s",
-            "produce=spear_advanced"
-         }
-      },
+      }
    },
 }
 
