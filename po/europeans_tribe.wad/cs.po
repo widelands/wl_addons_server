@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-27 03:12+0000\n"
+"POT-Creation-Date: 2021-06-28 03:15+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -2319,7 +2319,7 @@ msgstr "Pavoučí farma"
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:60
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:72
 msgid "produce spider silk"
-msgstr "produkce pavoučího vlákna"
+msgstr "produkce pavoučího hedvábí"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:8
@@ -4200,7 +4200,7 @@ msgid ""
 "Spidersilk is produced by spiderfarm. Weaving mills use it to make "
 "spidercloth and tabard."
 msgstr ""
-"Pavoučí vlákno je produkováno pavoučí farmou. Tkalcovny je využívají k "
+"Pavoučí hedvábí je produkováno pavoučí farmou. Tkalcovny je využívají k "
 "výrobě pavoučí látky a tabardu."
 
 #. TRANSLATORS: Helptext for an europeans ware: Cloth
@@ -4691,14 +4691,14 @@ msgid ""
 "Milking tongs are used by the spider breeder to milk the spiders. They are "
 "produced by the toolsmith."
 msgstr ""
-"Pavoučí kleště používá chovatel pavouků na získávání pavoučích vláken. "
+"Pavoučí kleště používá chovatel pavouků na získávání pavoučího hedvábí. "
 "Vyrábí se v dílně na nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Milking Tongs
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:646
 msgctxt "europeans_ware"
 msgid "Needles are used by weaver."
-msgstr ""
+msgstr "Jehlice jsou používány tkalcem."
 
 #. TRANSLATORS: Helptext for an europeans ware: Basket
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:658
@@ -4708,6 +4708,9 @@ msgid ""
 "needed by miller and by gamekeeper. It is also used by advanced carrier to "
 "transport wares. It is produced by the toolsmith."
 msgstr ""
+"Koš je používán sedlákem, pro sběr ovoce a hroznů, mlynářem a hajným. "
+"Používá jej také mistr nosič k přepravě surovin. Vyrábí se v dílně na "
+"nástroje."
 
 #. TRANSLATORS: Helptext for an europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:668
@@ -5146,7 +5149,7 @@ msgstr "Umožňuje včelím rojům opylovat květy a produkovat med."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1316
 msgctxt "europeans_worker"
 msgid "Breeds spiders and sheeps and produce silk and wool."
-msgstr "Chová pavouky a ovce, produkuje pavoučí vlákno a vlnu."
+msgstr "Chová pavouky a ovce, produkuje pavoučí hedvábí a vlnu."
 
 #. TRANSLATORS: Helptext for an europeans worker: Weaver
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1325
@@ -5870,7 +5873,7 @@ msgstr "Tesá mramorové sloupy z mramoru."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2710
 msgctxt "europeans_building"
 msgid "Weaves spider cloth out of spider silk."
-msgstr "Spřádá pavoučí látku z pavoučího vlákna."
+msgstr "Spřádá pavoučí látku z pavoučího hedvábí."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2717
@@ -6031,7 +6034,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2985
 msgctxt "europeans_building"
 msgid "Breeds spiders for silk."
-msgstr "Chová pavouky pro pavoučí vlákno."
+msgstr "Chová pavouky pro pavoučí hedvábí."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2992
