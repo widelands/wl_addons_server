@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-26 03:11+0000\n"
+"POT-Creation-Date: 2021-06-29 03:12+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -225,25 +225,25 @@ msgstr "Замок"
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:61
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your castle."
-msgstr ""
+msgstr "Солдаты пополнили гарнизон вашего замка."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:63
 msgctxt "europeans_building"
 msgid "Your castle discovered an aggressor."
-msgstr ""
+msgstr "Замок заметил приближение врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:65
 msgctxt "europeans_building"
 msgid "Your castle is under attack."
-msgstr ""
+msgstr "Замок атакован."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:67
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the castle."
-msgstr ""
+msgstr "Защитники замка были перебиты."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:69
@@ -806,18 +806,18 @@ msgstr "Печь углежога"
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:8
 msgctxt "europeans_building"
 msgid "Clay Pit and Fish Breeder’s House"
-msgstr ""
+msgstr "Глиняные карьеры и домик рыболова"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:61
 msgid "making clay"
-msgstr ""
+msgstr "месит глину"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:75
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:86
 msgid "breeding fish"
-msgstr ""
+msgstr "ловит рыбу"
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:55
@@ -1075,12 +1075,12 @@ msgstr "Ферма 3 уровня"
 #. TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:71
 msgid "planting berrybush"
-msgstr ""
+msgstr "садит ягодник"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:165
 msgid "harvesting berry"
-msgstr ""
+msgstr "собирает ягоды"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:205
@@ -1181,7 +1181,7 @@ msgstr "Дом лесника"
 #: addons/europeans_tribe.wad/productionsites/gamekeepers_hut/init.lua:8
 msgctxt "europeans_building"
 msgid "Gamekeeper’s Hut"
-msgstr ""
+msgstr "Хижина егеря"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:8
@@ -3776,7 +3776,7 @@ msgstr "Простой тренировочный плац"
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:113
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:101
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:95
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:96
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:102
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:87
 msgid "sleeping"
@@ -3785,7 +3785,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:121
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:109
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:103
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:104
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:110
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:95
 msgctxt "europeans_building"
@@ -3794,40 +3794,40 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:133
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:134
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:151
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:157
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:175
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:181
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:237
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:214
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:146
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:160
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:190
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:183
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:214
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:233
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:315
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:279
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:164
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:191
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:234
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:214
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:258
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:290
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:398
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:349
 msgctxt "europeans_building"
 msgid "No soldier to train!"
 msgstr "Нет солдат для обучения!"
 
 #. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:166
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:193
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:236
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:216
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:260
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:292
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:400
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:351
 msgctxt "europeans_building"
 msgid "No soldier found for this training level!"
 msgstr ""
@@ -3840,27 +3840,45 @@ msgstr "Тренировочный плац 1 уровня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:121
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:127
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:116
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:122
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:107
+msgctxt "europeans_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:133
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:140
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:146
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:167
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:155
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:147
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:164
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:146
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:153
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:159
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:168
+msgctxt "europeans_building"
+msgid "upgrading soldier defense from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:170
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:188
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:194
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:250
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:227
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:173
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:203
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:196
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:227
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:246
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:328
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:292
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
 msgstr ""
@@ -3872,33 +3890,33 @@ msgid "Battle Arena Level 2"
 msgstr "Тренировочный плац 2 уровня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:115
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:122
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:107
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:128
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:134
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:119
 msgctxt "europeans_building"
-msgid "upgrading soldier evade from level 1 to level 2"
+msgid "upgrading soldier evade from level 2 to level 3"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:140
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:159
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:180
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:164
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:170
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:179
 msgctxt "europeans_building"
-msgid "upgrading soldier defense from level 1 to level 2"
+msgid "upgrading soldier defense from level 2 to level 3"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:177
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:201
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:207
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:263
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:240
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:216
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:240
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:259
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:341
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:305
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 2 to level 3"
 msgstr ""
@@ -3910,29 +3928,15 @@ msgid "Battle Arena Level 3"
 msgstr "Тренировочный плац 3 уровня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:134
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:119
-msgctxt "europeans_building"
-msgid "upgrading soldier evade from level 2 to level 3"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:170
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:191
-msgctxt "europeans_building"
-msgid "upgrading soldier defense from level 2 to level 3"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:220
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:276
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:253
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 3 to level 4"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:272
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:354
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:318
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 3 to level 4"
 msgstr ""
@@ -3956,51 +3960,27 @@ msgid "upgrading soldier evade from level 4 to level 5"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:155
-msgctxt "europeans_building"
-msgid "upgrading soldier evade from level 5 to level 6"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:202
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:190
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 3 to level 4"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:215
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:203
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 4 to level 5"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:226
-msgctxt "europeans_building"
-msgid "upgrading soldier defense from level 5 to level 6"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:289
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:266
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 4 to level 5"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:302
-msgctxt "europeans_building"
-msgid "upgrading soldier attack from level 5 to level 6"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:367
+#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:331
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 4 to level 5"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:380
-msgctxt "europeans_building"
-msgid "upgrading soldier health from level 5 to level 6"
 msgstr ""
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/init.lua:10
