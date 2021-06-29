@@ -26,24 +26,23 @@ descriptions:new_tribe {
    
    collectors_points_table = {
       { ware = "gold", points = 2},
-      { ware = "spear_wooden", points = 1},
-      { ware = "spear_advanced", points = 3},
-      { ware = "ax_broad", points = 4},
-      { ware = "trident_steel", points = 5},
-      { ware = "sword_broad", points = 6},
-      { ware = "ax_warriors", points = 7},
-      { ware = "trident_heavy_double", points = 8},
       { ware = "armor", points = 1},
-      { ware = "tabard", points = 1},
+      { ware = "tabard", points = 2},
       { ware = "armor_chain", points = 3},
       { ware = "armor_helmet", points = 4},
-      { ware = "helmet_mask", points = 5},
       { ware = "armor_gilded", points = 6},
-      { ware = "tabard_golden", points = 6},
-      { ware = "helmet_golden", points = 7},
+      { ware = "tabard_golden", points = 8},
+      { ware = "spear_wooden", points = 1},
+      { ware = "spear_advanced", points = 2},
+      { ware = "ax_broad", points = 3},
+      { ware = "sword_broad", points = 4},
+      { ware = "trident_steel", points = 6},
+      { ware = "trident_heavy_double", points = 8},
+      { ware = "helmet_mask", points = 2},
+      { ware = "shield_steel", points = 3},
+      { ware = "helmet_golden", points = 4},
+      { ware = "shield_advanced", points = 6},
       { ware = "helmet_warhelm", points = 8},
-      { ware = "shield_steel", points = 5},
-      { ware = "shield_advanced", points = 8},
    },
 
    -- Image file paths for this tribe's road and waterway textures
@@ -777,15 +776,6 @@ descriptions:new_tribe {
             }
          },
          {
-            name = "helmet_mask",
-            default_target_quantity = 1,
-            preciousness = 0,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans ware: Helmet Mask
-               purpose = pgettext("europeans_ware", "The mask is the medium armor of a soldier. It is produced in an armor smithy. It is produced in an armor smithy and used in a training camp – together with food – to train soldiers from health level 2 to level 3.")
-            }
-         },
-         {
             name = "armor_gilded",
             default_target_quantity = 1,
             preciousness = 0,
@@ -802,28 +792,10 @@ descriptions:new_tribe {
                -- TRANSLATORS: Helptext for an europeans ware: Golden Tabard
                purpose = pgettext("europeans_ware", "The golden tabard is an advanced armor of a soldier. It is produced in an armor smithy. It is produced in an armor smithy and used in a training camp – together with food – to train soldiers from health level 3 to level 4.")
             }
-         },
-         {
-            name = "helmet_golden",
-            default_target_quantity = 1,
-            preciousness = 0,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans ware: Golden Helmet
-               purpose = pgettext("europeans_ware", "The golden helmet is an advanced armor of a soldier. It is produced in an armor smithy. It is produced in an armor smithy and used in a training camp – together with food – to train soldiers from health level 4 to level 5.")
-            }
-         },
-         {
-            name = "helmet_warhelm",
-            default_target_quantity = 1,
-            preciousness = 0,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans ware: Warhelm
-               purpose = pgettext("europeans_ware", "The warhelm is the strongest armor an europeans soldier can have. It is produced in an armor smithy. It is produced in an armor smithy and used in a training camp – together with food – to train soldiers from health level 5 to level 6.")
-            }
          }
       },
       {
-         -- Weapons and Shields
+         -- Weapons
          {
             name = "spear_wooden",
             default_target_quantity = 32,
@@ -870,21 +842,24 @@ descriptions:new_tribe {
             }
          },
          {
-            name = "ax_warriors",
-            default_target_quantity = 1,
-            preciousness = 1,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans ware: Warrior Ax
-               purpose = pgettext("europeans_ware", "This is a an warriors ax. It is produced in a weapon smithy and used in a training camp – together with food – to train soldiers from attack level 4 to level 5.")
-            }
-         },
-         {
             name = "trident_heavy_double",
             default_target_quantity = 1,
             preciousness = 1,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Heavy Double Trident
                purpose = pgettext("europeans_ware", "This is a heavy double trident. It is produced in a weapon smithy and used in a training camp – together with food – to train soldiers from attack level 5 to level 6.")
+            }
+         }
+      },
+      {
+         -- Shields and Helmets
+         {
+            name = "helmet_mask",
+            default_target_quantity = 1,
+            preciousness = 0,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans ware: Helmet Mask
+               purpose = pgettext("europeans_ware", "The mask is the medium armor of a soldier. It is produced in an armor smithy. It is produced in an armor smithy and used in a training camp – together with food – to train soldiers from health level 2 to level 3.")
             }
          },
          {
@@ -897,12 +872,30 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "helmet_golden",
+            default_target_quantity = 1,
+            preciousness = 0,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans ware: Golden Helmet
+               purpose = pgettext("europeans_ware", "The golden helmet is an advanced armor of a soldier. It is produced in an armor smithy. It is produced in an armor smithy and used in a training camp – together with food – to train soldiers from health level 4 to level 5.")
+            }
+         },
+         {
             name = "shield_advanced",
             default_target_quantity = 1,
             preciousness = 1,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Advanced Shield
                purpose = pgettext("europeans_ware", "These advanced shields are used by the best soldiers of the Europeans. They are produced in the armor smithy and used in the big trainingscamp – together with food – to train soldiers from defense level 3 to level 6.")
+            }
+         },
+         {
+            name = "helmet_warhelm",
+            default_target_quantity = 1,
+            preciousness = 0,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans ware: Warhelm
+               purpose = pgettext("europeans_ware", "The warhelm is the strongest armor an europeans soldier can have. It is produced in an armor smithy. It is produced in an armor smithy and used in a training camp – together with food – to train soldiers from health level 5 to level 6.")
             }
          }
        }
