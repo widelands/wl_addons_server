@@ -72,12 +72,12 @@ descriptions:new_productionsite_type {
             "call=produce_bread_paddle",
             "call=produce_hook_pole",
             "call=produce_spear_wooden",
-            "call=produce_spear_advanced",
-            "call=produce_ax_broad",
-            "call=produce_armor_chain",
-            "call=produce_armor_helmet",
             "call=produce_helmet_mask",
+            "call=produce_spear_advanced",
+            "call=produce_armor_chain",
             "call=produce_shield_steel",
+            "call=produce_ax_broad",
+            "call=produce_armor_helmet",
             "call=produce_sword_broad",
             "call=produce_trident_steel",
             "return=skipped"
@@ -301,18 +301,52 @@ descriptions:new_productionsite_type {
             "produce=spear_wooden"
          }
       },
+      produce_helmet_mask = {
+         -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
+         descname = _"forging a mask",
+         actions = {
+            "return=skipped unless economy needs helmet_mask",
+            "consume=coal iron",
+            "sleep=duration:10s",
+            "playsound=sound/smiths/smith priority:50% allow_multiple",
+            "animate=working duration:30s",
+            "produce=helmet_mask"
+         }
+      },
       produce_spear_advanced = {
          -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
          descname = _"forging an advanced spear",
          actions = {
             "return=skipped unless economy needs spear_advanced",
-            "consume=planks coal:2 iron:2",
+            "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
             "animate=working duration:20s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=spear_advanced"
+         }
+      },
+      produce_armor_chain = {
+         -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
+         descname = _"forging a suit of chain armor",
+         actions = {
+            "return=skipped unless economy needs armor_chain",
+            "consume=armor coal iron",
+            "sleep=duration:10s",
+            "animate=working duration:30s",
+            "produce=armor_chain"
+         }
+      },
+      produce_shield_steel = {
+         -- TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
+         descname = _"forging a steel shield",
+         actions = {
+            "return=skipped unless economy needs shield_steel",
+            "consume=coal:2 iron:2",
+            "sleep=duration:10s",
+            "animate=working duration:30s",
+            "produce=shield_steel"
          }
       },
       produce_ax_broad = {
@@ -329,17 +363,6 @@ descriptions:new_productionsite_type {
             "produce=ax_broad"
          }
       },
-      produce_armor_chain = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
-         descname = _"forging a suit of chain armor",
-         actions = {
-            "return=skipped unless economy needs armor_chain",
-            "consume=armor coal:2 iron:2",
-            "sleep=duration:10s",
-            "animate=working duration:30s",
-            "produce=armor_chain"
-         }
-      },
       produce_armor_helmet = {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
          descname = _"forging a helmet",
@@ -349,29 +372,6 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "animate=working duration:30s",
             "produce=armor_helmet"
-         }
-      },
-      produce_helmet_mask = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
-         descname = _"forging a mask",
-         actions = {
-            "return=skipped unless economy needs helmet_mask",
-            "consume=coal:2 iron:2",
-            "sleep=duration:10s",
-            "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
-            "produce=helmet_mask"
-         }
-      },
-      produce_shield_steel = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
-         descname = _"forging a steel shield",
-         actions = {
-            "return=skipped unless economy needs shield_steel",
-            "consume=coal:2 iron:2",
-            "sleep=duration:10s",
-            "animate=working duration:30s",
-            "produce=shield_steel"
          }
       },
       produce_sword_broad = {
