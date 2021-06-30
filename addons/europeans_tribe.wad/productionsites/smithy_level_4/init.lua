@@ -75,9 +75,7 @@ descriptions:new_productionsite_type {
             "call=produce_armor_chain",
             "call=produce_shield_steel",
             "call=produce_ax_broad",
-            "call=produce_armor_helmet",
             "call=produce_sword_broad",
-            "call=produce_trident_steel",
             "return=skipped"
          }
       },
@@ -375,31 +373,6 @@ descriptions:new_productionsite_type {
             "produce=sword_broad"
          },
       },
-      produce_armor_helmet = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
-         descname = _"forging a helmet",
-         actions = {
-            "return=skipped unless economy needs armor_helmet",
-            "consume=coal iron",
-            "sleep=duration:10s",
-            "animate=working duration:45s",
-            "produce=armor_helmet"
-         }
-      },
-      produce_trident_steel = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a steel trident because ...
-         descname = _"forging a steel trident",
-         actions = {
-            "return=skipped unless economy needs trident_steel",
-            "consume=planks coal:2 iron:2",
-            "sleep=duration:10s",
-            "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:45s",
-            "playsound=sound/smiths/sharpening priority:90%",
-            "sleep=duration:10s",
-            "produce=trident_steel"
-         }
-      }
    },
 }
 

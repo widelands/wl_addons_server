@@ -88,29 +88,29 @@ descriptions:new_soldier_type {
    
    -- Battle attributes - initial values and per level increase
    health = {
-      max_level = 5,
+      max_level = 3,
       base = 12800,
-      increase_per_level = 1900,
+      increase_per_level = 3100,
       pictures = path.list_files(dirname .. "health_level?.png"),
    },
+   evade = {
+      max_level = 3,
+      base = 32,
+      increase_per_level = 10,
+      pictures = path.list_files(dirname .. "evade_level?.png"),
+   },
    defense = {
-      max_level = 5,
+      max_level = 3,
       base = 18,
-      increase_per_level = 3,
+      increase_per_level = 5,
       pictures = path.list_files(dirname .. "defense_level?.png"),
    },
    attack = {
-      max_level = 5,
+      max_level = 3,
       base = 1150,
       maximum = 1450,
-      increase_per_level = 600,
+      increase_per_level = 1000,
       pictures = path.list_files(dirname .. "attack_level?.png"),
-   },
-   evade = {
-      max_level = 5,
-      base = 32,
-      increase_per_level = 6,
-      pictures = path.list_files(dirname .. "evade_level?.png"),
    },
 
    -- Random animations for battle
