@@ -72,15 +72,10 @@ descriptions:new_productionsite_type {
             "call=produce_armor_chain",
             "call=produce_shield_steel",
             "call=produce_ax_broad",
-            "call=produce_armor_helmet",
-            "call=produce_helmet_golden",
             "call=produce_sword_broad",
             "call=produce_armor_gilded",
             "call=produce_shield_advanced",
-            "call=produce_trident_steel",
             "call=produce_tabard_golden",
-            "call=produce_helmet_warhelm",
-            "call=produce_trident_heavy_double",
             "return=skipped"
          }
       },
@@ -364,28 +359,6 @@ descriptions:new_productionsite_type {
             "produce=ax_broad"
          }
       },
-      produce_armor_helmet = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a helmet because ...
-         descname = _"forging a helmet",
-         actions = {
-            "return=skipped unless economy needs armor_helmet",
-            "consume=coal iron",
-            "sleep=duration:10s",
-            "animate=working duration:30s",
-            "produce=armor_helmet"
-         }
-      },
-      produce_helmet_golden = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a golden helmet because ...
-         descname = _"forging a golden helmet",
-         actions = {
-            "return=skipped unless economy needs helmet_golden",
-            "consume=coal:2 iron:2 gold",
-            "sleep=duration:10s",
-            "animate=working duration:20s",
-            "produce=helmet_golden"
-         },
-      },
       produce_sword_broad = {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
          descname = _"forging a broadsword",
@@ -422,20 +395,6 @@ descriptions:new_productionsite_type {
             "produce=shield_advanced"
          }
       },      
-      produce_trident_steel = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a steel trident because ...
-         descname = _"forging a steel trident",
-         actions = {
-            "return=skipped unless economy needs trident_steel",
-            "consume=planks coal:2 iron:2",
-            "sleep=duration:5s",
-            "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:20s",
-            "playsound=sound/smiths/sharpening priority:90%",
-            "sleep=duration:5s",
-            "produce=trident_steel"
-         }
-      },
       produce_tabard_golden = {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
          descname = _"forging a suit of gilded armor",
@@ -445,32 +404,6 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "animate=working duration:20s",
             "produce=tabard_golden"
-         }
-      },
-      produce_helmet_warhelm = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a warhelm because ...
-         descname = _"forging a warhelm",
-         actions = {
-            "return=skipped unless economy needs helmet_warhelm",
-            "consume=coal:2 iron:2 gold",
-            "sleep=duration:10s",
-            "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:20s",
-            "produce=helmet_warhelm"
-         }
-      },
-      produce_trident_heavy_double = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a heavy double trident because ...
-         descname = _"forging a heavy double trident",
-         actions = {
-            "return=skipped unless economy needs trident_heavy_double",
-            "consume=planks coal:2 iron:2 gold",
-            "sleep=duration:5s",
-            "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:20s",
-            "playsound=sound/smiths/sharpening priority:90%",
-            "sleep=duration:5s",
-            "produce=trident_heavy_double"
          }
       },
    },

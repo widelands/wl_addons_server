@@ -68,7 +68,6 @@ descriptions:new_trainingsite_type {
       }
    },
 
-
    aihints = {
       trainingsites_max_percent = 20,
       very_weak_ai_limit = 1,
@@ -81,11 +80,19 @@ descriptions:new_trainingsite_type {
    },
 
    inputs = {
-      { name = "ration", amount = 8 },
+      { name = "ration", amount = 6 },
       { name = "beer", amount = 6 },
-      { name = "spear_advanced", amount = 2 },
       { name = "helmet_mask", amount = 2 },
+      { name = "spear_advanced", amount = 2 },
+      { name = "armor", amount = 2 },
       { name = "tabard", amount = 2 }
+   },
+
+   ["soldier health"] = {
+      food = {
+         {"ration"}
+      },
+      weapons = {"armor", "tabard"}
    },
 
    ["soldier evade"] = {
@@ -94,27 +101,22 @@ descriptions:new_trainingsite_type {
         {"beer"}
       }
    },
+      
    ["soldier defense"] = {
       food = {
-         {"ration"}
+        {"ration"},
+        {"beer"}
       },
       weapons = {"helmet_mask"}
    },
-   
+
    ["soldier attack"] = {
       food = {
-         {"ration"}
+         {"ration", "snack"}
       },
       weapons = {"spear_advanced"}
    },
-   
-   ["soldier health"] = {
-      food = {
-         {"ration"}
-      },
-      weapons = {"tabard"}
-   },
-
+  
    programs = {
       sleep = {
          -- TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
@@ -124,15 +126,27 @@ descriptions:new_trainingsite_type {
             "return=skipped",
          }
       },
+      upgrade_soldier_health_0 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+         descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
+         actions = {
+            "return=skipped when economy needs tabard and economy needs armor",
+            "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
+            "sleep=duration:40s",
+            "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
+            "consume=ration armor,tabard",
+            "train=soldier:health level:1"
+         }
+      },
       upgrade_soldier_evade_0 = {
          -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
          descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
          actions = {
             "return=skipped when economy needs beer",
             "checksoldier=soldier:evade level:0", -- Fails when aren't any soldier of level 0 evade
-            "sleep=duration:60s",
+            "sleep=duration:40s",
             "checksoldier=soldier:evade level:0", -- Because the soldier can be expelled by the player
-            "consume=ration beer:2",
+            "consume=ration:2 beer:2",
             "train=soldier:evade level:1"
          }
       },
@@ -142,7 +156,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs helmet_mask",
             "checksoldier=soldier:defense level:0", -- Fails when aren't any soldier of level 0 defense
-            "sleep=duration:30s",
+            "sleep=duration:40s",
             "checksoldier=soldier:defense level:0", -- Because the soldier can be expulsed by the player
             "consume=ration beer helmet_mask",
             "train=soldier:defense level:1",
@@ -155,27 +169,15 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs spear_advanced",
             "checksoldier=soldier:attack level:0",
-            "sleep=duration:30s",
+            "sleep=duration:40s",
             "checksoldier=soldier:attack level:0",
             "consume=ration spear_advanced",
             "train=soldier:attack level:1",
             "produce=scrap_iron"
          }
       },
-      upgrade_soldier_health_0 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-         descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
-         actions = {
-            "return=skipped when economy needs tabard",
-            "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:20s",
-            "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
-            "consume=ration tabard",
-            "train=soldier:health level:1"
-         }
-      },
    },
-
+   
    soldier_capacity = 12,
    trainer_patience = 12,
    
