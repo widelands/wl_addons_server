@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-10 20:46+0000\n"
+"POT-Creation-Date: 2021-07-01 03:15+0000\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -35,6 +35,10 @@ msgid ""
 "and frisian wells can be enhanced to deep wells when the worker has enough "
 "experience."
 msgstr ""
+"Повышает ценность водных ресурсов, расширяя рабочую область колодцев и "
+"снижая шанс нахождения воды только до 5% при их истощении. Также, колодцы "
+"варваров и фризов могут быть углублены до глубоких скважин, которые "
+"требовательны к опыту работников."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:7
@@ -92,23 +96,23 @@ msgstr[3] "%d секунд"
 #, lua-format
 msgctxt "frisians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
-msgstr ""
+msgstr "Глубокой скважине в среднем требуется %s для извлечения ведра воды."
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
 #: addons/wells-running-out.wad/postload.lua:40
 msgctxt "frisians_worker"
 msgid "Operates the deep wells."
-msgstr ""
+msgstr "Обслуживает глубокие скважины."
 
 #. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:71
 #, lua-format
 msgctxt "barbarians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
-msgstr ""
+msgstr "Глубокой скважине в среднем требуется %s для извлечения ведра воды."
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
 #: addons/wells-running-out.wad/postload.lua:75
 msgctxt "barbarians_worker"
 msgid "Operates the deep wells."
-msgstr ""
+msgstr "Обслуживает глубокие скважины."
