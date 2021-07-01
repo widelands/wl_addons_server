@@ -2,10 +2,9 @@
 --           Test script for debugging.
 -- =======================================================================
 
-include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
+push_textdomain("enhanced_debug_scripts.wad", true)
 
-push_textdomain("europeans_tribe.wad", true)
-
+-- general game settings --
 function switch_player(player_number1, player_number2)
     local game = wl.Game()
     local player = game.players[player_number1]
@@ -44,6 +43,29 @@ function war_mode(player_number1, player_number2)
     player2.team = player_number2
 end
 
+function set_seafaring(player_number, OnOff)
+    local game = wl.Game()
+    
+    if player_number > 0 then
+        local player = game.players[player_number]
+    
+        if OnOff == true then
+            player:allow_buildings{player.tribe.port}
+        elseif OnOff == false then
+            player:forbid_buildings{player.tribe.port}
+        end
+    else
+        for idx, player in ipairs(game.players) do
+            if OnOff == true then
+                player:allow_buildings{player.tribe.port}
+            elseif OnOff == false then
+                player:forbid_buildings{player.tribe.port}
+            end
+        end
+    end
+end
+
+-- general field/object settings --
 function conquer_fields(player_number, startx, starty, radius)
     local game = wl.Game()
     local player = game.players[player_number]
@@ -51,6 +73,75 @@ function conquer_fields(player_number, startx, starty, radius)
     local centerfield = map:get_field(startx, starty)
 
     player:conquer(centerfield, radius)    
+end
+
+function place_object(startx, starty, objectname)
+    local game = wl.Game()
+    local map = game.map
+
+    map:place_immovable(objectname, map:get_field(startx, starty))
+end
+
+function place_objects(startx, starty, radius, objectname, objectcount)
+    local game = wl.Game()
+    local map = game.map
+    local field = map:get_field(startx, starty)
+    local fields = field:region(radius)
+    local idx
+    
+    while #fields > 0 and objectcount > 0 do
+       local idx = math.random(#fields)
+       local f = fields[idx]
+       if not f.immovable then
+          place_object(f.x, f.y, objectname)
+          objectcount = objectcount - 1
+       end
+       table.remove(fields, idx)
+    end
+end
+
+function place_random_trees(startx, starty, radius, objectcount)
+    -- apple tree = Apfelbaum, cherry tree = Kirschbaum, pear tree = Birnbaum, walnut tree = Walnussbaum
+    -- ash = Esche, chestnut = Kastanie, elm = Ulme, fir = Tanne, hornbeam = Hainbuche, linden tree = Linde, pine = Kiefer, poplar = Pappel, willow = Weide
+    
+    local treelist = {
+    "alder_summer_mature", -- Erle
+    "aspen_summer_mature", -- Espe
+    "beech_summer_mature", -- Buche
+    "birch_summer_mature", -- Birke
+    "larch_summer_mature", -- Lärche
+    "maple_winter_mature", -- Ahorn
+    "oak_summer_mature", -- Eiche
+    "rowan_summer_mature", -- Eberesche
+    "spruce_summer_mature" -- Fichte
+    } 
+    local randomtree = treelist[math.random(#treelist)]
+
+    local rcount = 1
+    while objectcount > 0 do
+        randomtree = treelist[math.random(#treelist)]
+        rcount = math.random(objectcount)
+        place_objects(startx, starty, radius, randomtree, rcount)
+        objectcount = objectcount - rcount
+    end
+end
+
+function place_random_rocks(startx, starty, radius, objectcount)
+    local rocklist = {
+    "blackland_rocks1", "blackland_rocks2", "blackland_rocks3", "blackland_rocks4", "blackland_rocks5", "blackland_rocks6", 
+    "desert_rocks1", "desert_rocks2", "desert_rocks3", "desert_rocks4", "desert_rocks5", "desert_rocks6", 
+    "greenland_rocks1", "greenland_rocks2", "greenland_rocks3", "greenland_rocks4", "greenland_rocks5", "greenland_rocks6", 
+    "winterland_rocks1", "winterland_rocks2", "winterland_rocks3", "winterland_rocks4", "winterland_rocks5", "winterland_rocks6" 
+    }
+    local randomrock = rocklist[math.random(#rocklist)]
+
+    local rcount = 1
+    while objectcount > 0 do
+        randomrock = rocklist[math.random(#rocklist)]
+        rcount = math.random(objectcount)
+        place_objects(startx, starty, radius, randomrock, rcount)
+        objectcount = objectcount - rcount
+    end
 end
 
 function remove_object(startx, starty)
@@ -67,6 +158,8 @@ function destroy_object(startx, starty)
     map:get_field(startx, starty).immovable:destroy()
 end
 
+
+-- general flag/road/street settings --
 function place_flag(player_number, startx, starty)
     local game = wl.Game()
     local map = game.map
@@ -289,6 +382,7 @@ function connect_road(startx, starty, targetx, targety)
     end
 end
 
+-- general building settings --
 function place_building(player, startx, starty, radius, buildingname)
     local game = wl.Game()
     local map = game.map
@@ -570,7 +664,7 @@ function block_destruction_building(startx, starty, yesno)
     building.destruction_blocked = yesno
 end
 
-
+-- warehouse settings --
 function set_warehouse_worker_policy(startx, starty, workername, policiename)
     local game = wl.Game()
     local map = game.map
@@ -610,83 +704,83 @@ function set_warehouse_waretype_policy(startx, starty, waretype, policiename)
     local tribe = player.tribe
     local field = map:get_field(startx, starty).immovable
 
-	if waretype == "build" then
-		for i, tbuilding in ipairs(tribe.buildings) do
-			for warename, warecount in pairs(tbuilding.buildcost) do
-				warehouse_ware_policy(startx, starty, warename, policiename)
-			end
-		end
-		for i, tbuilding in ipairs(tribe.buildings) do
-			for warename, warecount in pairs(tbuilding.enhancement_cost) do
-				set_warehouse_ware_policy(startx, starty, warename, policiename)
-			end
-		end
-	elseif waretype == "tools" then
-		for i, tworker in ipairs(tribe.workers) do
-			for warename, warecount in pairs(tworker.buildcost) do
-				set_warehouse_ware_policy(startx, starty, warename, policiename)
-			end
-		end
-		for i, tbuilding in pairs(tribe.buildings) do
-			if tbuilding.output_worker_types then
-				for j, output in pairs(tbuilding.output_worker_types) do
-					if string.find(output.name, tribe.name) and not string.find(output.name, "soldier") and tbuilding.inputs then
-						for k, waretype, warecount in pairs(tbuilding.inputs) do
-							set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
-						end
-					end
-				end
-			end
-		end
-	elseif waretype == "armor" then
-		for i, tworker in ipairs(tribe.workers) do
-			for warename, warecount in pairs(tworker.buildcost) do
-				set_warehouse_ware_policy(startx, starty, warename, policiename)
-			end
-		end
-		for i, tbuilding in pairs(tribe.buildings) do
-			if tbuilding.type_name == "productionsite" and tbuilding.output_worker_types then
-				for j, output in pairs(tbuilding.output_worker_types) do
-					if string.find(output.name, tribe.name) and string.find(output.name, "soldier") and tbuilding.inputs then
-						for k, waretype, warecount in pairs(tbuilding.inputs) do
-							set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
-						end
-					end
-				end
-			end
-		end
-	elseif waretype == "weapons" then
-		for i, tbuilding in pairs(tribe.buildings) do
-			if tbuilding.type_name == "trainingsite" then
-				if tbuilding.inputs then
-					for k, waretype, warecount in pairs(tbuilding.inputs) do
-						set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
-					end
-				end
-			end
-		end
-	elseif waretype == "food" then
-		for i, tbuilding in pairs(tribe.buildings) do
-			if tbuilding.is_mine then
-				if tbuilding.inputs then
-					for k, waretype, warecount in pairs(tbuilding.inputs) do
-						set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
-					end
-				end
-			end
-		end
-	elseif waretype == "ore" then
-		for i, tbuilding in pairs(tribe.buildings) do
-			if tbuilding.is_mine then
-				if tbuilding.output_ware_types then
-					for k, waretype, warecount in pairs(tbuilding.output_ware_types) do
-						set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
-					end
-				end
-			end
-		end
-	elseif waretype == "metals" then
-	end
+    if waretype == "build" then
+        for i, tbuilding in ipairs(tribe.buildings) do
+            for warename, warecount in pairs(tbuilding.buildcost) do
+                warehouse_ware_policy(startx, starty, warename, policiename)
+            end
+        end
+        for i, tbuilding in ipairs(tribe.buildings) do
+            for warename, warecount in pairs(tbuilding.enhancement_cost) do
+                set_warehouse_ware_policy(startx, starty, warename, policiename)
+            end
+        end
+    elseif waretype == "tools" then
+        for i, tworker in ipairs(tribe.workers) do
+            for warename, warecount in pairs(tworker.buildcost) do
+                set_warehouse_ware_policy(startx, starty, warename, policiename)
+            end
+        end
+        for i, tbuilding in pairs(tribe.buildings) do
+            if tbuilding.output_worker_types then
+                for j, output in pairs(tbuilding.output_worker_types) do
+                    if string.find(output.name, tribe.name) and not string.find(output.name, "soldier") and tbuilding.inputs then
+                        for k, waretype, warecount in pairs(tbuilding.inputs) do
+                            set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
+                        end
+                    end
+                end
+            end
+        end
+    elseif waretype == "armor" then
+        for i, tworker in ipairs(tribe.workers) do
+            for warename, warecount in pairs(tworker.buildcost) do
+                set_warehouse_ware_policy(startx, starty, warename, policiename)
+            end
+        end
+        for i, tbuilding in pairs(tribe.buildings) do
+            if tbuilding.type_name == "productionsite" and tbuilding.output_worker_types then
+                for j, output in pairs(tbuilding.output_worker_types) do
+                    if string.find(output.name, tribe.name) and string.find(output.name, "soldier") and tbuilding.inputs then
+                        for k, waretype, warecount in pairs(tbuilding.inputs) do
+                            set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
+                        end
+                    end
+                end
+            end
+        end
+    elseif waretype == "weapons" then
+        for i, tbuilding in pairs(tribe.buildings) do
+            if tbuilding.type_name == "trainingsite" then
+                if tbuilding.inputs then
+                    for k, waretype, warecount in pairs(tbuilding.inputs) do
+                        set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
+                    end
+                end
+            end
+        end
+    elseif waretype == "food" then
+        for i, tbuilding in pairs(tribe.buildings) do
+            if tbuilding.is_mine then
+                if tbuilding.inputs then
+                    for k, waretype, warecount in pairs(tbuilding.inputs) do
+                        set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
+                    end
+                end
+            end
+        end
+    elseif waretype == "ore" then
+        for i, tbuilding in pairs(tribe.buildings) do
+            if tbuilding.is_mine then
+                if tbuilding.output_ware_types then
+                    for k, waretype, warecount in pairs(tbuilding.output_ware_types) do
+                        set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
+                    end
+                end
+            end
+        end
+    elseif waretype == "metals" then
+    end
 end
 
 function set_warehouse_ware_count(startx, starty, warename, warecount)
