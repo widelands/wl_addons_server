@@ -50,7 +50,8 @@ descriptions:new_trainingsite_type {
 
    ["soldier health"] = {
       food = {
-         {"ration", "snack", "meal"}
+         {"ration", "snack", "meal"},
+         {"beer", "mead", "beer_strong", "wine"}
       },
       weapons = {"armor", "tabard", "armor_chain", "armor_gilded", "tabard_golden"}
    },
@@ -72,7 +73,8 @@ descriptions:new_trainingsite_type {
 
    ["soldier attack"] = {
       food = {
-         {"ration", "snack", "meal"}
+         {"ration", "snack", "meal"},
+         {"beer", "mead", "beer_strong", "wine"}
       },
       weapons = {"spear_advanced", "ax_broad", "sword_broad"}
    },
@@ -94,7 +96,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
             "sleep=duration:20s",
             "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
-            "consume=ration armor,tabard",
+            "consume=ration beer armor,tabard",
             "train=soldier:health level:1"
          }
       },
@@ -106,7 +108,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:health level:1", -- Fails when aren't any soldier of level 0 health
             "sleep=duration:20s",
             "checksoldier=soldier:health level:1", -- Because the soldier can be expelled by the player
-            "consume=snack armor_chain",
+            "consume=snack mead armor_chain",
             "train=soldier:health level:2",
             "produce=scrap_iron"
          }
@@ -119,7 +121,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:health level:2", -- Fails when aren't any soldier of level 0 health
             "sleep=duration:20s",
             "checksoldier=soldier:health level:2", -- Because the soldier can be expelled by the player
-            "consume=meal armor_gilded,tabard_golden",
+            "consume=meal beer_strong,wine armor_gilded,tabard_golden",
             "train=soldier:health level:3",
             "produce=scrap_metal_mixed"
          }
@@ -181,7 +183,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:defense level:1", -- Fails when aren't any soldier of level 0 defense
             "sleep=duration:20s",
             "checksoldier=soldier:defense level:1", -- Because the soldier can be expulsed by the player
-            "consume=snack beer_strong,mead shield_steel",
+            "consume=snack mead shield_steel",
             "train=soldier:defense level:2",
             "produce=scrap_iron"
          }
@@ -194,7 +196,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:defense level:2", -- Fails when aren't any soldier of level 0 defense
             "sleep=duration:20s",
             "checksoldier=soldier:defense level:2", -- Because the soldier can be expulsed by the player
-            "consume=meal wine shield_advanced",
+            "consume=meal beer_strong,wine shield_advanced",
             "train=soldier:defense level:3",
             "produce=scrap_metal_mixed"
          }
@@ -207,7 +209,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:attack level:0",
             "sleep=duration:20s",
             "checksoldier=soldier:attack level:0",
-            "consume=ration spear_advanced",
+            "consume=ration beer spear_advanced",
             "train=soldier:attack level:1",
             "produce=scrap_iron"
          }
@@ -220,7 +222,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:attack level:1",
             "sleep=duration:20s",
             "checksoldier=soldier:attack level:1",
-            "consume=snack ax_broad",
+            "consume=snack mead ax_broad",
             "train=soldier:attack level:2",
             "produce=scrap_iron"
          }
@@ -233,7 +235,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:attack level:2",
             "sleep=duration:20s",
             "checksoldier=soldier:attack level:2",
-            "consume=meal sword_broad",
+            "consume=meal beer_strong,wine sword_broad",
             "train=soldier:attack level:3",
             "produce=scrap_iron"
          }

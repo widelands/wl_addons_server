@@ -56,7 +56,7 @@ descriptions:new_productionsite_type {
          }
       },
       produce_spidersilk_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
          descname = _"produce spider silk",
          actions = {
             "return=skipped when economy needs water",
@@ -68,7 +68,7 @@ descriptions:new_productionsite_type {
          }
       },
       produce_spidersilk = {
-         -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
          descname = _"produce spider silk",
          actions = {
             "return=skipped unless economy needs spider_silk",

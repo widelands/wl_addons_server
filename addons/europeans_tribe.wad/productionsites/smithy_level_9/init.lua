@@ -396,8 +396,8 @@ descriptions:new_productionsite_type {
          }
       },      
       produce_tabard_golden = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
-         descname = _"forging a suit of gilded armor",
+         -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
+         descname = _"forging a suit of golden tabard",
          actions = {
             "return=skipped unless economy needs tabard_golden",
             "consume=spidercloth coal iron:2 gold",

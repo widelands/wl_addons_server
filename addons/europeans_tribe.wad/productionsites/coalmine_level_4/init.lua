@@ -96,7 +96,7 @@ descriptions:new_productionsite_type {
       title = _"No Coal",
       heading = _"Main Coal Vein Exhausted",
       message =
-         pgettext("europeans_building", "This coal mine’s main vein is exhausted. Expect strongly diminished returns on investment. This mine can’t be enhanced any further, so you should consider dismantling or destroying it."),
+         pgettext("europeans_building", "This coal mine’s main vein is exhausted. Expect strongly diminished returns on investment. You should consider enhancing, dismantling or destroying it."),
    },
 }
 

@@ -2,11 +2,9 @@
 --           Test script for debugging.
 -- =======================================================================
 
-include "scripting/coroutine.lua"
-include "scripting/ui.lua"
-include "scripting/infrastructure.lua"
+include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
 
-push_textdomain("enhanced_debug_scripts.wad", true)
+push_textdomain("europeans_tribe.wad", true)
 
 function switch_player(player_number1, player_number2)
     local game = wl.Game()

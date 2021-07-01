@@ -58,7 +58,7 @@ descriptions:new_productionsite_type {
          }
       },
       produce_wool_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start producing wool because ...
          descname = _"produce wool",
          actions = {
             "return=skipped when economy needs water",
@@ -71,7 +71,7 @@ descriptions:new_productionsite_type {
          }
       },
       produce_wool = {
-         -- TRANSLATORS: Completed/Skipped/Did not start breeding sheep because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start producing wool because ...
          descname = _"produce wool",
          actions = {
             "return=skipped unless economy needs wool",

@@ -81,7 +81,7 @@ descriptions:new_productionsite_type {
          }
       },
       brew_mead_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
          descname = _"brewing mead",
          actions = {
             "return=skipped when economy needs beer",
@@ -98,7 +98,7 @@ descriptions:new_productionsite_type {
          }
       },
       brew_mead = {
-         -- TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
          descname = _"brewing mead",
          actions = {
             "return=skipped when economy needs water and not economy needs mead",

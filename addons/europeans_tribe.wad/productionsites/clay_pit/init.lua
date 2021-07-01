@@ -71,8 +71,8 @@ descriptions:new_productionsite_type {
          },
       },
       fish_breeding_in_pond = {
-         -- TRANSLATORS: Completed/Skipped/Did not start breeding fish because ...
-         descname = _"breeding fish",
+         -- TRANSLATORS: Completed/Skipped/Did not start breeding fish in a pond because ...
+         descname = _"breeding fish in a pond",
          actions = {
             "return=skipped unless economy needs fish",
             "return=skipped when economy needs clay and site has water",
@@ -82,8 +82,8 @@ descriptions:new_productionsite_type {
          }
       },
       fish_breeding_in_sea = {
-         -- TRANSLATORS: Completed/Skipped/Did not start breeding fish because ...
-         descname = _"breeding fish",
+         -- TRANSLATORS: Completed/Skipped/Did not start breeding fish in sea because ...
+         descname = _"breeding fish in sea",
          actions = {
             "return=skipped when economy needs clay and site has water",
             "callworker=breed_in_sea",
