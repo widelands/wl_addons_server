@@ -43,7 +43,7 @@ descriptions:new_productionsite_type {
          }
       },
       saw_log_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
          descname = _"sawing logs",
          actions = {
             "return=skipped when economy needs blackwood",
@@ -57,7 +57,7 @@ descriptions:new_productionsite_type {
          }
       },
       hardening_wood_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
          descname = _"hardening wood",
          actions = {
             "return=skipped when economy needs blackwood",
@@ -83,7 +83,7 @@ descriptions:new_productionsite_type {
          }
       },
       hardening_wood = {
-         -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
          descname = _"hardening wood",
          actions = {
             "return=skipped unless economy needs blackwood",

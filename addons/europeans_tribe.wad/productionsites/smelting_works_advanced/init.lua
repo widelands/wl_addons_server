@@ -50,7 +50,6 @@ descriptions:new_productionsite_type {
             "return=skipped"
          }
       },
-      -- 2 identical programs for iron to prevent unnecessary skipping penalty
       recycle_iron = {
          -- TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
          descname = _"recycling iron",
@@ -66,7 +65,7 @@ descriptions:new_productionsite_type {
          }
       },
       recycle_gold = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recyling gold because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start recyling iron and gold because ...
          descname = _"recycling iron and gold",
          actions = {
             "return=skipped unless economy needs gold",

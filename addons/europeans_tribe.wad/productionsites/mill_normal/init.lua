@@ -59,10 +59,9 @@ descriptions:new_productionsite_type {
          }
       },
       produce_mixed_flour_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start grinding blackroot because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
          descname = _"grinding rye and wheat",
          actions = {
-            -- No check whether we need blackroot_flour because blackroots cannot be used for anything else.
             "return=skipped when economy needs flour",
             "return=skipped when economy needs rye",
             "return=skipped when economy needs wheat",
@@ -74,10 +73,9 @@ descriptions:new_productionsite_type {
          }
       },
       produce_mixed_flour = {
-         -- TRANSLATORS: Completed/Skipped/Did not start grinding blackroot because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
          descname = _"grinding rye and wheat",
          actions = {
-            -- No check whether we need blackroot_flour because blackroots cannot be used for anything else.
             "return=skipped unless economy needs flour",
             "sleep=duration:10s",
             "consume=wheat:3 rye:3",

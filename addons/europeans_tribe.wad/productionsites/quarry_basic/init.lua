@@ -69,7 +69,7 @@ descriptions:new_productionsite_type {
       -- Translators: Short for "Out of ..." for a resource
       title = _"No Rocks",
       heading = _"Out of Rocks",
-      message = pgettext("europeans_building", "The stonecutter working at this quarry can’t find any rocks in his work area."),
+      message = pgettext("europeans_building", "The stonecutter working at this quarry can’t find any rocks in his work area. You should consider enhancing it to increase its working area."),
       productivity_threshold = 75
    },
 }

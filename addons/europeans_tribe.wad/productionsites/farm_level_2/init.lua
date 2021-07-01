@@ -91,8 +91,8 @@ descriptions:new_productionsite_type {
          }
       },
       plant_blackroot = {
-         -- TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
-         descname = _"planting corn",
+         -- TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
+         descname = _"planting blackroot",
          actions = {
             "return=skipped unless economy needs blackroot",
             "return=skipped when economy needs water",
@@ -142,8 +142,8 @@ descriptions:new_productionsite_type {
          }
       },
       harvest_blackroot = {
-         -- TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
-         descname = _"harvesting corn",
+         -- TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
+         descname = _"harvesting blackroot",
          actions = {
             "return=skipped unless economy needs blackroot",
             "sleep=duration:6s",
@@ -197,7 +197,7 @@ descriptions:new_productionsite_type {
       -- Translators: Short for "Out of ..." for a resource
       title = _"No Fields",
       heading = _"Out of Fields",
-      message = pgettext("europeans_building", "The blackroot farmer working at this blackroot farm has no cleared soil to plant his seeds."),
+      message = pgettext("europeans_building", "The farmer working at this farm has no cleared soil to plant his seeds."),
       productivity_threshold = 30
    },
 }

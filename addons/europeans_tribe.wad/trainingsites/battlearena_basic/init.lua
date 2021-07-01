@@ -90,7 +90,8 @@ descriptions:new_trainingsite_type {
 
    ["soldier health"] = {
       food = {
-         {"ration"}
+        {"ration"},
+        {"beer"}
       },
       weapons = {"armor", "tabard"}
    },
@@ -112,7 +113,8 @@ descriptions:new_trainingsite_type {
 
    ["soldier attack"] = {
       food = {
-         {"ration", "snack"}
+        {"ration"},
+        {"beer"}
       },
       weapons = {"spear_advanced"}
    },
@@ -134,7 +136,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
             "sleep=duration:40s",
             "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
-            "consume=ration armor,tabard",
+            "consume=ration beer armor,tabard",
             "train=soldier:health level:1"
          }
       },
@@ -171,7 +173,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:attack level:0",
             "sleep=duration:40s",
             "checksoldier=soldier:attack level:0",
-            "consume=ration spear_advanced",
+            "consume=ration beer spear_advanced",
             "train=soldier:attack level:1",
             "produce=scrap_iron"
          }

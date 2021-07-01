@@ -45,55 +45,50 @@ descriptions:new_trainingsite_type {
    working_positions = {
       europeans_trainer_normal = 1
    },
-
+   
    inputs = {
-      { name = "ration", amount = 12 },
-      { name = "snack", amount = 12 },
-      { name = "meal", amount = 12 },
-      { name = "beer", amount = 12 },
-      { name = "mead", amount = 12 },
-      { name = "beer_strong", amount = 8 },
-      { name = "wine", amount = 8 },
+      { name = "ration", amount = 8 },
+      { name = "snack", amount = 8 },
+      { name = "beer", amount = 8 },
+      { name = "mead", amount = 8 },
       { name = "helmet_mask", amount = 2 },
-      { name = "shield_steel", amount = 2 },
-      { name = "shield_advanced", amount = 2 }, 
+      { name = "shield_steel", amount = 2 }, 
       { name = "spear_advanced", amount = 2 },
       { name = "ax_broad", amount = 2 },
-      { name = "sword_broad", amount = 2 },
       { name = "armor", amount = 2 },
       { name = "tabard", amount = 2 },
-      { name = "armor_chain", amount = 2 },
-      { name = "armor_gilded", amount =  2 },
-      { name = "tabard_golden", amount = 2 }
+      { name = "armor_chain", amount = 2 }
    },
 
    ["soldier health"] = {
       food = {
-         {"ration", "snack", "meal"}
+        {"ration", "snack"},
+        {"beer", "mead"}
       },
-      weapons = {"armor", "tabard", "armor_chain", "armor_gilded", "tabard_golden"}
+      weapons = {"armor", "tabard", "armor_chain"}
    },
 
    ["soldier evade"] = {
       food = {
-        {"ration", "snack", "meal"},
-        {"beer", "mead", "beer_strong", "wine"}
+        {"ration", "snack"},
+        {"beer", "mead"}
       }
    },
       
    ["soldier defense"] = {
       food = {
-        {"ration", "snack", "meal"},
-        {"beer", "mead", "beer_strong", "wine"}
+        {"ration", "snack"},
+        {"beer", "mead"}
       },
-      weapons = {"helmet_mask", "shield_steel", "shield_advanced"}
+      weapons = {"helmet_mask", "shield_steel"}
    },
 
    ["soldier attack"] = {
       food = {
-         {"ration", "snack", "meal"}
+        {"ration", "snack"},
+        {"beer", "mead"}
       },
-      weapons = {"spear_advanced", "ax_broad", "sword_broad"}
+      weapons = {"spear_advanced", "ax_broad"}
    },
   
    programs = {
@@ -111,9 +106,9 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs tabard and economy needs armor",
             "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:40s",
+            "sleep=duration:30s",
             "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
-            "consume=ration armor,tabard",
+            "consume=ration beer armor,tabard",
             "train=soldier:health level:1"
          }
       },
@@ -123,24 +118,11 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs armor_chain",
             "checksoldier=soldier:health level:1", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:40s",
+            "sleep=duration:30s",
             "checksoldier=soldier:health level:1", -- Because the soldier can be expelled by the player
-            "consume=snack armor_chain",
+            "consume=snack mead armor_chain",
             "train=soldier:health level:2",
             "produce=scrap_iron"
-         }
-      },
-      upgrade_soldier_health_2 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-         descname = pgettext("europeans_building", "upgrading soldier health from level 2 to level 3"),
-         actions = {
-            "return=skipped when economy needs armor_gilded and economy needs tabard_golden",
-            "checksoldier=soldier:health level:2", -- Fails when aren't any soldier of level 0 health
-            "sleep=duration:40s",
-            "checksoldier=soldier:health level:2", -- Because the soldier can be expelled by the player
-            "consume=meal armor_gilded,tabard_golden",
-            "train=soldier:health level:3",
-            "produce=scrap_metal_mixed"
          }
       },
       upgrade_soldier_evade_0 = {
@@ -149,7 +131,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs beer",
             "checksoldier=soldier:evade level:0", -- Fails when aren't any soldier of level 0 evade
-            "sleep=duration:40s",
+            "sleep=duration:30s",
             "checksoldier=soldier:evade level:0", -- Because the soldier can be expelled by the player
             "consume=ration:2 beer:2",
             "train=soldier:evade level:1"
@@ -161,22 +143,10 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs beer_strong and economy needs mead",
             "checksoldier=soldier:evade level:1", -- Fails when aren't any soldier of level 1 evade
-            "sleep=duration:40s",
+            "sleep=duration:30s",
             "checksoldier=soldier:evade level:1", -- Because the soldier can be expelled by the player
-            "consume=snack:2 beer_strong,mead:2",
+            "consume=snack:2 mead:2",
             "train=soldier:evade level:2"
-         }
-      },
-      upgrade_soldier_evade_2 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-         descname = pgettext("europeans_building", "upgrading soldier evade from level 2 to level 3"),
-         actions = {
-            "return=skipped when economy needs wine",
-            "checksoldier=soldier:evade level:2", -- Fails when aren't any soldier of level 0 evade
-            "sleep=duration:40s",
-            "checksoldier=soldier:evade level:2", -- Because the soldier can be expelled by the player
-            "consume=meal wine:2",
-            "train=soldier:evade level:3"
          }
       },
       upgrade_soldier_defense_0 = {
@@ -185,7 +155,7 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs helmet_mask",
             "checksoldier=soldier:defense level:0", -- Fails when aren't any soldier of level 0 defense
-            "sleep=duration:40s",
+            "sleep=duration:30s",
             "checksoldier=soldier:defense level:0", -- Because the soldier can be expulsed by the player
             "consume=ration beer helmet_mask",
             "train=soldier:defense level:1",
@@ -198,24 +168,11 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs shield_steel",
             "checksoldier=soldier:defense level:1", -- Fails when aren't any soldier of level 0 defense
-            "sleep=duration:40s",
+            "sleep=duration:30s",
             "checksoldier=soldier:defense level:1", -- Because the soldier can be expulsed by the player
-            "consume=snack beer_strong,mead shield_steel",
+            "consume=snack mead shield_steel",
             "train=soldier:defense level:2",
             "produce=scrap_iron"
-         }
-      },
-      upgrade_soldier_defense_2 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-         descname = pgettext("europeans_building", "upgrading soldier defense from level 2 to level 3"),
-         actions = {
-            "return=skipped when economy needs shield_advanced",
-            "checksoldier=soldier:defense level:2", -- Fails when aren't any soldier of level 0 defense
-            "sleep=duration:40s",
-            "checksoldier=soldier:defense level:2", -- Because the soldier can be expulsed by the player
-            "consume=meal wine shield_advanced",
-            "train=soldier:defense level:3",
-            "produce=scrap_metal_mixed"
          }
       },
       upgrade_soldier_attack_0 = {
@@ -224,9 +181,9 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs spear_advanced",
             "checksoldier=soldier:attack level:0",
-            "sleep=duration:40s",
+            "sleep=duration:30s",
             "checksoldier=soldier:attack level:0",
-            "consume=ration spear_advanced",
+            "consume=ration beer spear_advanced",
             "train=soldier:attack level:1",
             "produce=scrap_iron"
          }
@@ -237,23 +194,10 @@ descriptions:new_trainingsite_type {
          actions = {
             "return=skipped when economy needs ax_broad",
             "checksoldier=soldier:attack level:1",
-            "sleep=duration:40s",
+            "sleep=duration:30s",
             "checksoldier=soldier:attack level:1",
-            "consume=snack ax_broad",
+            "consume=snack mead ax_broad",
             "train=soldier:attack level:2",
-            "produce=scrap_iron"
-         }
-      },
-      upgrade_soldier_attack_2 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-         descname = pgettext("europeans_building", "upgrading soldier attack from level 2 to level 3"),
-         actions = {
-            "return=skipped when economy needs sword_broad",
-            "checksoldier=soldier:attack level:2",
-            "sleep=duration:40s",
-            "checksoldier=soldier:attack level:2",
-            "consume=meal sword_broad",
-            "train=soldier:attack level:3",
             "produce=scrap_iron"
          }
       },

@@ -40,7 +40,7 @@ descriptions:new_productionsite_type {
 
    programs = {
       main = {
-         -- TRANSLATORS: Completed/Skipped/Did not start spinning gold because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start making honey because ...
          descname = _"making honey",
          actions = {
             "return=skipped unless economy needs honey",
