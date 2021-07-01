@@ -56,8 +56,8 @@ descriptions:new_productionsite_type {
          }
       },
       produce_cloth_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start weaving because ...
-         descname = _"weaving",
+         -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
+         descname = _"weaving cloth",
          actions = {
             "return=skipped when economy needs cloth",
             "return=skipped when economy needs reed",
@@ -69,8 +69,8 @@ descriptions:new_productionsite_type {
          }
       },
       produce_cloth = {
-         -- TRANSLATORS: Completed/Skipped/Did not start weaving because ...
-         descname = _"weaving",
+         -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
+         descname = _"weaving cloth",
          actions = {
             "return=skipped unless economy needs cloth",
             "sleep=duration:10s",
@@ -81,8 +81,8 @@ descriptions:new_productionsite_type {
          }
       },
       produce_spidercloth_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start weaving because ...
-         descname = _"weaving",
+         -- TRANSLATORS: Completed/Skipped/Did not start weaving spidercloth because ...
+         descname = _"weaving spidercloth",
          actions = {
             "return=skipped when economy needs spidercloth",
             "return=skipped when economy needs tabard",
@@ -120,8 +120,8 @@ descriptions:new_productionsite_type {
          }
       },
       produce_armor = {
-         -- TRANSLATORS: Completed/Skipped/Did not start weaving because ...
-         descname = _"weaving",
+         -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
+         descname = _"tailoring an armor",
          actions = {
             "return=skipped unless economy needs armor",
             "consume=wool:2",

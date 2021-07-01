@@ -303,7 +303,7 @@ descriptions:new_tribe {
             default_target_quantity = 16,
             preciousness = 24,
             helptexts = {
-               -- TRANSLATORS: Helptext for an atlantean ware: Blackroot
+               -- TRANSLATORS: Helptext for an europeans ware: Blackroot
                purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Sheep farms need to be provided with blackroot.")
             }
          },
@@ -348,9 +348,9 @@ descriptions:new_tribe {
             preciousness = 32,
             helptexts = {
                purpose = {
-                  -- TRANSLATORS: Helptext for a barbarian ware: Ration, part 1
+                  -- TRANSLATORS: Helptext for a europeans ware: Ration, part 1
                   pgettext("ware", "A small bite to keep miners strong and working. The scout also consumes rations on his scouting trips."),
-                  -- TRANSLATORS: Helptext for a barbarian ware: Ration, part 2
+                  -- TRANSLATORS: Helptext for a europeans ware: Ration, part 2
                   pgettext("europeans_ware", "Rations are produced in a tavern, an inn or a big inn out of fish or meat or pitta bread.")
                }
             }
@@ -360,7 +360,7 @@ descriptions:new_tribe {
             default_target_quantity = 32,
             preciousness = 32,
             helptexts = {
-               -- TRANSLATORS: Helptext for a barbarian ware: Snack
+               -- TRANSLATORS: Helptext for a europeans ware: Snack
                purpose = pgettext("europeans_ware", "A bigger morsel than the ration to provide miners in deep mines.")
             }
          },
@@ -369,7 +369,7 @@ descriptions:new_tribe {
             default_target_quantity = 32,
             preciousness = 32,
             helptexts = {
-               -- TRANSLATORS: Helptext for a barbarian ware: Meal
+               -- TRANSLATORS: Helptext for a europeans ware: Meal
                purpose = pgettext("europeans_ware", "A meal is made out of pitta bread, strong beer and fish/meat in a big inn. This substantial food is exactly what workers in a deeper mine need.")
             }
          }
@@ -394,7 +394,7 @@ descriptions:new_tribe {
             default_target_quantity = 16,
             preciousness = 24,
             helptexts = {
-               -- TRANSLATORS: Helptext for a frisian ware: Barley
+               -- TRANSLATORS: Helptext for a europeans ware: Barley
                purpose = pgettext("europeans_ware", "Barley is a slow-growing grain that is used for brewing beer.")
             }
          },
@@ -421,7 +421,7 @@ descriptions:new_tribe {
             default_target_quantity = 16,
             preciousness = 4,
             helptexts = {
-               -- TRANSLATORS: Helptext for a frisian ware: Honey
+               -- TRANSLATORS: Helptext for a europeans ware: Honey
                purpose = pgettext("europeans_ware", "Honey is produced by bees belonging to a beekeeper. It is used to brew mead.")
             }
          },
@@ -430,7 +430,7 @@ descriptions:new_tribe {
             default_target_quantity = 32,
             preciousness = 8,
             helptexts = {
-               -- TRANSLATORS: Helptext for a frisian ware: Mead
+               -- TRANSLATORS: Helptext for a europeans ware: Mead
                purpose = pgettext("europeans_ware", "Mead is produced by breweries. Soldiers drink mead during advanced training.")
             }
          },
@@ -439,7 +439,7 @@ descriptions:new_tribe {
             default_target_quantity = 16,
             preciousness = 4,
             helptexts = {
-               -- TRANSLATORS: Helptext for a frisian ware: Fruit
+               -- TRANSLATORS: Helptext for a europeans ware: Fruit
                purpose = pgettext("europeans_ware", "Fruit are berries gathered from berry bushes by a fruit collector. They are used to brew fruit wine.")
             }
          },
@@ -494,7 +494,7 @@ descriptions:new_tribe {
             name = "scrap_iron",
             preciousness = 0,
             helptexts = {
-               -- TRANSLATORS: Helptext for a frisian ware: Scrap Iron
+               -- TRANSLATORS: Helptext for a europeans ware: Scrap Iron
                purpose = pgettext("europeans_ware", "Discarded weapons and armor can be recycled in a recycling center to produce new tools, weapon and armor.")
             }
          },
@@ -515,7 +515,7 @@ descriptions:new_tribe {
             name = "scrap_metal_mixed",
             preciousness = 1,
             helptexts = {
-               -- TRANSLATORS: Helptext for a frisian ware: Scrap metal (mixed)
+               -- TRANSLATORS: Helptext for a europeans ware: Scrap metal (mixed)
                purpose = pgettext("europeans_ware", "Discarded weapons and armor can be recycled in a recycling center to produce new tools, weapon and armor.")
             }
          },
@@ -1693,252 +1693,252 @@ descriptions:new_tribe {
       {
          name = "berry_bush_blueberry_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush has just been planted.")
          }
       },
       {
          name = "berry_bush_blueberry_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is growing.")
          }
       },
       {
          name = "berry_bush_blueberry_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "berry_bush_blueberry_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is ready for harvesting.")
          }
       },
       {
          name = "berry_bush_currant_red_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush has just been planted.")
          }
       },
       {
          name = "berry_bush_currant_red_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is growing.")
          }
       },
       {
          name = "berry_bush_currant_red_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "berry_bush_currant_red_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is ready for harvesting.")
          }
       },
       {
          name = "berry_bush_juniper_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush has just been planted.")
          }
       },
       {
          name = "berry_bush_juniper_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is growing.")
          }
       },
       {
          name = "berry_bush_juniper_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "berry_bush_juniper_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is ready for harvesting.")
          }
       },
       {
          name = "berry_bush_raspberry_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush has just been planted.")
          }
       },
       {
          name = "berry_bush_raspberry_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is growing.")
          }
       },
       {
          name = "berry_bush_raspberry_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "berry_bush_raspberry_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is ready for harvesting.")
          }
       },
       {
          name = "berry_bush_currant_black_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush has just been planted.")
          }
       },
       {
          name = "berry_bush_currant_black_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is growing.")
          }
       },
       {
          name = "berry_bush_currant_black_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "berry_bush_currant_black_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is ready for harvesting.")
          }
       },
       {
          name = "berry_bush_strawberry_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush has just been planted.")
          }
       },
       {
          name = "berry_bush_strawberry_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is growing.")
          }
       },
       {
          name = "berry_bush_strawberry_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "berry_bush_strawberry_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is ready for harvesting.")
          }
       },
       {
          name = "berry_bush_stink_tree_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush has just been planted.")
          }
       },
       {
          name = "berry_bush_stink_tree_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is growing.")
          }
       },
       {
          name = "berry_bush_stink_tree_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "berry_bush_stink_tree_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is ready for harvesting.")
          }
       },
       {
          name = "berry_bush_desert_hackberry_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush has just been planted.")
          }
       },
       {
          name = "berry_bush_desert_hackberry_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is growing.")
          }
       },
       {
          name = "berry_bush_desert_hackberry_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "berry_bush_desert_hackberry_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is ready for harvesting.")
          }
       },
       {
          name = "berry_bush_sea_buckthorn_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush has just been planted.")
          }
       },
       {
          name = "berry_bush_sea_buckthorn_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is growing.")
          }
       },
       {
          name = "berry_bush_sea_buckthorn_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "berry_bush_sea_buckthorn_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: One of the berry bushes
+            -- TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
             purpose = _("This berry bush is ready for harvesting.")
          }
       },
@@ -2015,63 +2015,63 @@ descriptions:new_tribe {
       {
          name = "pond_dry",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: Pond
+            -- TRANSLATORS: Helptext for a europeans immovable: Pond
             purpose = _("When claydiggers dig up earth, they leave holes in the ground. These holes vanish after a while. Aqua farms can use them as ponds to grow fish in them, whereas charcoal burners erect their charcoal stacks in them.")
          }
       },
       {
          name = "pond_growing",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: Pond
+            -- TRANSLATORS: Helptext for a europeans immovable: Pond
             purpose = _("Fish are maturing in this pond. A fisher working from an aqua farm will be able to catch them when they are bigger.")
          }
       },
       {
          name = "pond_mature",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: Pond
+            -- TRANSLATORS: Helptext for a europeans immovable: Pond
             purpose = _("Fish are living in this pond. A fisher working from an aqua farm can catch them as food.")
          }
       },
       {
          name = "pond_burning",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: Pond
+            -- TRANSLATORS: Helptext for a europeans immovable: Pond
             purpose = _("A charcoal stack is burning in this earthen hole. When it has burnt down, a charcoal burner will be able to gather coal from it.")
          }
       },
       {
          name = "pond_coal",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: Pond
+            -- TRANSLATORS: Helptext for a europeans immovable: Pond
             purpose = _("A charcoal stack, which had been erected in this earthen hole, is ready for a charcoal burner to gather coal from it.")
          }
       },
       {
          name = "reedfield_tiny",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: Reed Field
+            -- TRANSLATORS: Helptext for a europeans immovable: Reed Field
             purpose = _("This reed field has just been planted.")
          }
       },
       {
          name = "reedfield_small",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: Reed Field
+            -- TRANSLATORS: Helptext for a europeans immovable: Reed Field
             purpose = _("This reed field is growing.")
          }
       },
       {
          name = "reedfield_medium",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: Reed Field
+            -- TRANSLATORS: Helptext for a europeans immovable: Reed Field
             purpose = _("This reed field is flowering. Honey can be produced from it by a beekeeper.")
          }
       },
       {
          name = "reedfield_ripe",
          helptexts = {
-            -- TRANSLATORS: Helptext for a frisian immovable: Reed Field
+            -- TRANSLATORS: Helptext for a europeans immovable: Reed Field
             purpose = _("This reed field is ready for harvesting.")
          }
       },
@@ -2286,7 +2286,7 @@ descriptions:new_tribe {
       {
          name = "deadtree7",
          helptexts = {
-            -- TRANSLATORS: Helptext for an amazon immovable usable by europeans: Dead Tree
+            -- TRANSLATORS: Helptext for an europeans immovable usable by europeans: Dead Tree
             purpose = _("The remains of an old tree.")
          }
       },
@@ -2597,7 +2597,7 @@ descriptions:new_tribe {
          helptexts = {
             -- TRANSLATORS: Purpose helptext for a europeans production site: Beekeeper's House
             purpose = pgettext("europeans_building", "Keeps bees and lets them swarm over flowering fields to produce honey."),
-            -- TRANSLATORS: Note helptext for a frisian production site: Beekeeper's House
+            -- TRANSLATORS: Note helptext for a europeans production site: Beekeeper's House
             note = pgettext("europeans_building", "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) or bushes (berry bushes or grapevines) nearby."),
          }
       },
@@ -2848,70 +2848,70 @@ descriptions:new_tribe {
       {
          name = "europeans_smithy_basic",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
          }
       },
       {
          name = "europeans_smithy_level_1",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
          }
       },
       {
          name = "europeans_smithy_level_2",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
          }
       },
       {
          name = "europeans_smithy_level_3",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
          }
       },
       {
          name = "europeans_smithy_level_4",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
          }
       },
       {
          name = "europeans_smithy_level_5",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
          }
       },
       {
          name = "europeans_smithy_level_6",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
          }
       },
       {
          name = "europeans_smithy_level_7",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
          }
       },
       {
          name = "europeans_smithy_level_8",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
          }
       },
       {
          name = "europeans_smithy_level_9",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an atlantean production site: Toolsmithy
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
          }
       },

@@ -90,7 +90,7 @@ descriptions:new_productionsite_type {
       title = _"No Iron",
       heading = _"Main Iron Vein Exhausted",
       message =
-         pgettext("europeans_building", "This iron mine’s main vein is exhausted. Expect strongly diminished returns on investment. This mine can’t be enhanced any further, so you should consider dismantling or destroying it."),
+         pgettext("europeans_building", "This iron mine’s main vein is exhausted. Expect strongly diminished returns on investment. You should consider enhancing, dismantling or destroying it."),
    },
 }
 

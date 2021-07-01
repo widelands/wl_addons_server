@@ -57,7 +57,6 @@ descriptions:new_productionsite_type {
             "return=skipped"
          }
       },
-      -- 2 identical programs for iron to prevent unnecessary skipping penalty
       smelt_iron_basic = {
          -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
          descname = _"smelting iron",

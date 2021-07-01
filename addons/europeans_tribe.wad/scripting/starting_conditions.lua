@@ -132,6 +132,26 @@ function place_ship_random(player, capacity)
     ship.capacity = capacity
 end
 
+function set_seafaring(OnOff, player)
+    local game = wl.Game()
+    
+    if player then
+        if OnOff == true then
+            player:allow_buildings{player.tribe.port}
+        elseif OnOff == false then
+            player:forbid_buildings{player.tribe.port}
+        end
+    else
+        for idx, player in ipairs(game.players) do
+            if OnOff == true then
+                player:allow_buildings{player.tribe.port}
+            elseif OnOff == false then
+                player:forbid_buildings{player.tribe.port}
+            end
+        end
+    end
+end
+
 function set_ship_capacity(player, ship_name, capacity)
     local ships = player:get_ships()
     

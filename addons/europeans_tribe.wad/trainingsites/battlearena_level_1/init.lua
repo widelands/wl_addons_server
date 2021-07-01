@@ -55,12 +55,12 @@ descriptions:new_trainingsite_type {
       europeans_trainer_basic = 1
    },
 
+   
    inputs = {
-      { name = "ration", amount = 12 },
-      { name = "snack", amount = 12 },
-      { name = "beer", amount = 12 },
-      { name = "mead", amount = 12 },
-      { name = "beer_strong", amount = 8 },
+      { name = "ration", amount = 8 },
+      { name = "snack", amount = 8 },
+      { name = "beer", amount = 8 },
+      { name = "mead", amount = 8 },
       { name = "helmet_mask", amount = 2 },
       { name = "shield_steel", amount = 2 }, 
       { name = "spear_advanced", amount = 2 },
@@ -72,7 +72,8 @@ descriptions:new_trainingsite_type {
 
    ["soldier health"] = {
       food = {
-         {"ration", "snack"}
+         {"ration", "snack"},
+         {"beer", "mead"}
       },
       weapons = {"armor", "tabard", "armor_chain"}
    },
@@ -80,21 +81,22 @@ descriptions:new_trainingsite_type {
    ["soldier evade"] = {
       food = {
         {"ration", "snack"},
-        {"beer", "mead", "beer_strong"}
+        {"beer", "mead"}
       }
    },
       
    ["soldier defense"] = {
       food = {
         {"ration", "snack"},
-        {"beer", "mead", "beer_strong"}
+        {"beer", "mead"}
       },
       weapons = {"helmet_mask", "shield_steel"}
    },
 
    ["soldier attack"] = {
       food = {
-         {"ration", "snack"}
+         {"ration", "snack"},
+         {"beer", "mead"}
       },
       weapons = {"spear_advanced", "ax_broad"}
    },
@@ -116,7 +118,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
             "sleep=duration:40s",
             "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
-            "consume=ration armor,tabard",
+            "consume=ration beer armor,tabard",
             "train=soldier:health level:1"
          }
       },
@@ -128,7 +130,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:health level:1", -- Fails when aren't any soldier of level 0 health
             "sleep=duration:40s",
             "checksoldier=soldier:health level:1", -- Because the soldier can be expelled by the player
-            "consume=snack armor_chain",
+            "consume=snack mead armor_chain",
             "train=soldier:health level:2",
             "produce=scrap_iron"
          }
@@ -153,7 +155,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:evade level:1", -- Fails when aren't any soldier of level 1 evade
             "sleep=duration:40s",
             "checksoldier=soldier:evade level:1", -- Because the soldier can be expelled by the player
-            "consume=snack:2 beer_strong,mead:2",
+            "consume=snack:2 mead:2",
             "train=soldier:evade level:2"
          }
       },
@@ -178,7 +180,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:defense level:1", -- Fails when aren't any soldier of level 0 defense
             "sleep=duration:40s",
             "checksoldier=soldier:defense level:1", -- Because the soldier can be expulsed by the player
-            "consume=snack beer_strong,mead shield_steel",
+            "consume=snack mead shield_steel",
             "train=soldier:defense level:2",
             "produce=scrap_iron"
          }
@@ -191,7 +193,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:attack level:0",
             "sleep=duration:40s",
             "checksoldier=soldier:attack level:0",
-            "consume=ration spear_advanced",
+            "consume=ration beer spear_advanced",
             "train=soldier:attack level:1",
             "produce=scrap_iron"
          }
@@ -204,7 +206,7 @@ descriptions:new_trainingsite_type {
             "checksoldier=soldier:attack level:1",
             "sleep=duration:40s",
             "checksoldier=soldier:attack level:1",
-            "consume=snack ax_broad",
+            "consume=snack mead ax_broad",
             "train=soldier:attack level:2",
             "produce=scrap_iron"
          }

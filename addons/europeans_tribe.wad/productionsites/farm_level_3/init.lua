@@ -79,8 +79,8 @@ descriptions:new_productionsite_type {
          }
       },
       plant_blackroot = {
-         -- TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
-         descname = _"planting corn",
+         -- TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
+         descname = _"planting blackroot",
          actions = {
             "return=skipped unless economy needs blackroot",
             "return=skipped when economy needs water",
@@ -108,7 +108,7 @@ descriptions:new_productionsite_type {
       },
       plant_grape = {
          -- TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
-         descname = _"planting wheat",
+         descname = _"planting grape",
          actions = {
             "return=skipped unless economy needs grape",
             "return=skipped when economy needs water",
@@ -173,8 +173,8 @@ descriptions:new_productionsite_type {
          }
       },
       harvest_blackroot = {
-         -- TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
-         descname = _"harvesting corn",
+         -- TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
+         descname = _"harvesting blackroot",
          actions = {
             "return=skipped unless economy needs blackroot",
             "return=skipped when economy needs fruit",
