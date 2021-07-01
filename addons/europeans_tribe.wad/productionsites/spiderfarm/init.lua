@@ -57,7 +57,7 @@ descriptions:new_productionsite_type {
       },
       produce_spidersilk_basic = {
          -- TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
-         descname = _"produce spider silk",
+         descname = _"producing spider silk",
          actions = {
             "return=skipped when economy needs water",
             "return=skipped when economy needs corn",
@@ -69,7 +69,7 @@ descriptions:new_productionsite_type {
       },
       produce_spidersilk = {
          -- TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
-         descname = _"produce spider silk",
+         descname = _"producing spider silk",
          actions = {
             "return=skipped unless economy needs spider_silk",
             "consume=corn:2 water:2",

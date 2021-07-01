@@ -47,7 +47,7 @@ descriptions:new_productionsite_type {
    programs = {
       main = {
          -- TRANSLATORS: Completed/Skipped/Did not start releasing game because ...
-         descname = _"release game",
+         descname = _"releasing game",
          actions = {
             "return=skipped when economy needs water and not economy needs meat",
             "consume=water",

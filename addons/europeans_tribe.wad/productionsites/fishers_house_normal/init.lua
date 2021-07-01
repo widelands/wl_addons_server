@@ -69,7 +69,7 @@ descriptions:new_productionsite_type {
       -- Translators: Short for "Out of ..." for a resource
       title = _"No Fish",
       heading = _"Out of Fish",
-      message = pgettext("europeans_building", "The fisher working out of this fisher’s house can’t find any fish in his work area. You should consider enhancing it to increase working area. Remember that you can increase the number of existing fish by building a fish breeder’s house."),
+      message = pgettext("europeans_building", "The fisher working out of this fisher’s house can’t find any fish in his work area. You should consider enhancing it to increase its working area. Remember that you can increase the number of existing fish by building a fish breeder’s house."),
    },
 }
 
