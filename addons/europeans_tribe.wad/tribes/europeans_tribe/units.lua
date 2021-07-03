@@ -179,7 +179,7 @@ descriptions:new_tribe {
          {
             name = "granite",
             default_target_quantity = 16,
-            preciousness = 0,
+            preciousness = 16,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Granite, part 1
@@ -192,7 +192,7 @@ descriptions:new_tribe {
          {
             name = "grout",
             default_target_quantity = 16,
-            preciousness = 4,
+            preciousness = 48,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Granite, part 1
@@ -205,7 +205,7 @@ descriptions:new_tribe {
          {
             name = "clay",
             default_target_quantity = 4,
-            preciousness = 0,
+            preciousness = 12,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Granite, part 1
@@ -218,7 +218,7 @@ descriptions:new_tribe {
          {
             name = "brick",
             default_target_quantity = 16,
-            preciousness = 4,
+            preciousness = 48,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Granite, part 1
@@ -231,7 +231,7 @@ descriptions:new_tribe {
          {
             name = "marble",
             default_target_quantity = 8,
-            preciousness = 4,
+            preciousness = 24,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Marble
                purpose = pgettext("europeans_ware", "Marble is the beautiful stone which is cut out of the mountains or produced in a quarry. Marble is used as a building material and gets chiseled into marble columns in the stonemason’s house.")
@@ -240,7 +240,7 @@ descriptions:new_tribe {
          {
             name = "marble_column",
             default_target_quantity = 32,
-            preciousness = 8,
+            preciousness = 48,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Marble Column
                purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the europeans, so they are needed for nearly every larger building. They are produced out of marble at a stonemason’s house.")
@@ -249,7 +249,7 @@ descriptions:new_tribe {
          {
             name = "quartz",
             default_target_quantity = 16,
-            preciousness = 8,
+            preciousness = 48,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Quartz
                purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are produced in a crystal quarry.")
@@ -258,7 +258,7 @@ descriptions:new_tribe {
          {
             name = "diamond",
             default_target_quantity = 16,
-            preciousness = 8,
+            preciousness = 48,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Diamond
                purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build some exclusive buildings. They are mined in a deep coal mine.")
@@ -522,7 +522,7 @@ descriptions:new_tribe {
          {
             name = "gold",
             default_target_quantity = 32,
-            preciousness = 8,
+            preciousness = 16,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Gold, part 1

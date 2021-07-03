@@ -59,9 +59,8 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs beer_strong",
             "return=skipped when economy needs wine",
             "return=skipped when economy needs water",
-            "return=skipped when economy needs barley",
             "consume=water barley",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "animate=working duration:60s",
             "produce=beer"
          }
@@ -89,10 +88,8 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs mead",
             "return=skipped when economy needs wine",
             "return=skipped when economy needs water",
-            "return=skipped when economy needs barley",
-            "return=skipped when economy needs honey",
             "consume=water barley honey",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "animate=working duration:60s",
             "produce=mead"
          }
@@ -120,9 +117,8 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs mead",
             "return=skipped when economy needs wine",
             "return=skipped when economy needs water",
-            "return=skipped when economy needs barley",
             "consume=water barley",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "animate=working duration:70s",
             "produce=beer_strong"
          }
@@ -150,10 +146,8 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs mead",
             "return=skipped when economy needs wine",
             "return=skipped when economy needs water",
-            "return=skipped when economy needs fruit",
-            "return=skipped when economy needs grape",
             "consume=water fruit grape",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "playsound=sound/empire/winebubble priority:40% allow_multiple",
             "animate=working duration:70s",
             "produce=wine"

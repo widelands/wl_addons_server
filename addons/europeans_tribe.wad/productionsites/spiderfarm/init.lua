@@ -60,9 +60,8 @@ descriptions:new_productionsite_type {
          descname = _"producing spider silk",
          actions = {
             "return=skipped when economy needs water",
-            "return=skipped when economy needs corn",
             "consume=corn water",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "animate=working duration:60s",
             "produce=spider_silk"
          }

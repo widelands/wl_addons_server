@@ -63,6 +63,7 @@ init = {
                 spidercloth = 32,
                 marble = 32,
                 quartz = 32,
+                marble_column = 24,
                 diamond = 24,
                 gold = 4,
                 shovel = 16,
@@ -117,6 +118,7 @@ init = {
             port:set_wares("spidercloth", math.ceil(32 / #ports))
             port:set_wares("marble", math.ceil(24 / #ports))
             port:set_wares("quartz", math.ceil(24 / #ports))
+            port:set_wares("marble_column", math.ceil(24 / #ports))
             port:set_wares("diamond", math.ceil(16 / #ports))
             port:set_wares("gold", math.ceil(4 / #ports))
             port:set_wares("shovel", math.ceil(16 / #ports))

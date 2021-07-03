@@ -54,10 +54,9 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
          descname = _"recycling iron",
          actions = {
-            "return=skipped unless economy needs iron",
-            "return=skipped when economy needs gold",
+            "return=skipped when economy needs coal",
             "consume=scrap_iron:2 coal:2",
-            "sleep=duration:10s",
+            "sleep=duration:30s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
             "animate=working duration:35s",
             "playsound=sound/metal/ironping priority:60%",
@@ -68,9 +67,9 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start recyling iron and gold because ...
          descname = _"recycling iron and gold",
          actions = {
-            "return=skipped unless economy needs gold",
+            "return=skipped when economy needs coal",
             "consume=scrap_metal_mixed:3 coal:3",
-            "sleep=duration:10s",
+            "sleep=duration:30s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
             "animate=working duration:35s",
             "playsound=sound/metal/goldping priority:60%",
@@ -81,10 +80,9 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
          descname = _"smelting iron",
          actions = {
-            "return=skipped unless economy needs iron",
-            "return=skipped when economy needs gold",
+            "return=skipped when economy needs coal",
             "consume=ore:3 coal:3",
-            "sleep=duration:10s",
+            "sleep=duration:20s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
             "animate=working duration:35s",
             "playsound=sound/metal/ironping priority:60%",
@@ -95,9 +93,9 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
          descname = _"smelting gold",
          actions = {
-            "return=skipped unless economy needs gold",
+            "return=skipped when economy needs coal",
             "consume=ore:2 coal:2",
-            "sleep=duration:10s",
+            "sleep=duration:20s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
             "animate=working duration:35s",
             "playsound=sound/metal/goldping priority:60%",

@@ -60,11 +60,10 @@ descriptions:new_productionsite_type {
          descname = _"weaving cloth",
          actions = {
             "return=skipped when economy needs cloth",
-            "return=skipped when economy needs reed",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "consume=reed",
             "playsound=sound/barbarians/weaver priority:90%",
-            "animate=working duration:60s",
+            "animate=working duration:30s",
             "produce=cloth"
          }
       },
@@ -87,11 +86,10 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs spidercloth",
             "return=skipped when economy needs tabard",
             "return=skipped when economy needs armor",
-            "return=skipped when economy needs spider_silk",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "consume=spider_silk",
             "playsound=sound/mill/weaving priority:90%",
-            "animate=working duration:60s",
+            "animate=working duration:30s",
             "produce=spidercloth"
          }
       },

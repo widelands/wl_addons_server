@@ -44,6 +44,7 @@ init = {
             planks = 32,
             cloth = 32,
             iron = 32,
+            marble_column = 24,
             diamond = 24,
             spidercloth = 16,
             gold = 4

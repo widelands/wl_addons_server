@@ -43,7 +43,6 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making honey because ...
          descname = _"making honey",
          actions = {
-            "return=skipped unless economy needs honey",
             "callworker=bees",
             "sleep=duration:45s"
          }
