@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-02 03:11+0000\n"
+"POT-Creation-Date: 2021-07-03 03:12+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -415,38 +415,33 @@ msgstr "Башня"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:59
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your medium tower."
-msgstr "Солдаты пополнили гарнизон вашего замка."
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:61
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your medium tower discovered an aggressor."
-msgstr "Замок заметил приближение врага."
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:63
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your medium tower is under attack."
-msgstr "Замок атакован."
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:65
-#, fuzzy
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the medium tower."
-msgstr "Защитники замка были перебиты."
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:67
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the medium tower."
-msgstr "Ваши войска перебили охрану усиленного сторожевого поста."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:8
@@ -456,38 +451,33 @@ msgstr "Высокая башня"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:48
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your high tower."
-msgstr "Солдаты пополнили гарнизон вашего замка."
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:50
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your high tower discovered an aggressor."
-msgstr "Замок заметил приближение врага."
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:52
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your high tower is under attack."
-msgstr "Замок атакован."
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:54
-#, fuzzy
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the high tower."
-msgstr "Защитники замка были перебиты."
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:56
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the high tower."
-msgstr "Ваши войска перебили охрану усиленного сторожевого поста."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:8
@@ -849,15 +839,13 @@ msgstr "месит глину"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish in a pond because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:75
-#, fuzzy
 msgid "breeding fish in a pond"
-msgstr "ловит рыбу"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish in the sea because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:86
-#, fuzzy
 msgid "breeding fish in the sea"
-msgstr "ловит рыбу"
+msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:55
@@ -1089,16 +1077,14 @@ msgstr "Ферма 2 уровня"
 #. TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:95
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:83
-#, fuzzy
 msgid "planting blackroot"
-msgstr "сеет пшеницу"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:146
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:177
-#, fuzzy
 msgid "harvesting blackroot"
-msgstr "собирает ягоды"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:8
@@ -1113,9 +1099,8 @@ msgstr "садит ягодник"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:111
-#, fuzzy
 msgid "planting grape"
-msgstr "сеет рожь"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:165
@@ -1229,9 +1214,8 @@ msgstr "Хижина егеря"
 
 #. TRANSLATORS: Completed/Skipped/Did not start releasing game because ...
 #: addons/europeans_tribe.wad/productionsites/gamekeepers_hut/init.lua:50
-#, fuzzy
 msgid "releasing game"
-msgstr "варит мед"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:8
@@ -1832,9 +1816,8 @@ msgstr "Пастбище"
 #. TRANSLATORS: Completed/Skipped/Did not start producing wool because ...
 #: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:62
 #: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:75
-#, fuzzy
 msgid "producing wool"
-msgstr "готовит уголь"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:8
@@ -2277,9 +2260,8 @@ msgstr "Паучья ферма"
 #. TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:60
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:72
-#, fuzzy
 msgid "producing spider silk"
-msgstr "собирает паучий шелк"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:8
@@ -2360,9 +2342,8 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:124
-#, fuzzy
 msgid "tailoring an armor"
-msgstr "делает молоток"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:8
