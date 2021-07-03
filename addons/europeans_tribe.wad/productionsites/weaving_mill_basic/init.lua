@@ -76,11 +76,10 @@ descriptions:new_productionsite_type {
          descname = _"weaving cloth",
          actions = {
             "return=skipped when economy needs cloth",
-            "return=skipped when economy needs reed",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "consume=reed",
             "playsound=sound/barbarians/weaver priority:90%",
-            "animate=working duration:60s",
+            "animate=working duration:30s",
             "produce=cloth"
          }
       },

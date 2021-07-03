@@ -48,6 +48,7 @@ init = {
          clay = 16,
          granite = 16,
          marble = 12,
+         marble_column = 16,
          blackwood = 16,
          reed = 8,
          planks = 8,

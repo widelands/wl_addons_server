@@ -36,6 +36,7 @@ init = {
                 brick = 32,
                 marble = 32,
                 quartz = 32,
+                marble_column = 24,
                 diamond = 24,
                 gold = 4,
                 shovel = 16,

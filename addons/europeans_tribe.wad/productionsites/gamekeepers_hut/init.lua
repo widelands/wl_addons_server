@@ -49,7 +49,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start releasing game because ...
          descname = _"releasing game",
          actions = {
-            "return=skipped when economy needs water and not economy needs meat",
+            "return=skipped when economy needs water",
             "consume=water",
             "callworker=release",
             "sleep=duration:52s500ms"
