@@ -62,9 +62,8 @@ descriptions:new_productionsite_type {
          descname = _"producing wool",
          actions = {
             "return=skipped when economy needs water",
-            "return=skipped when economy needs blackroot",
             "consume=water blackroot",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "playsound=sound/farm/sheep priority:50% allow_multiple",
             "animate=working duration:60s",
             "produce=wool"

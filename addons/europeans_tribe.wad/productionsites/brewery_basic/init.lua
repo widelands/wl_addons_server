@@ -74,9 +74,8 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs beer",
             "return=skipped when economy needs water",
-            "return=skipped when economy needs barley",
             "consume=water barley",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "animate=working duration:80s",
             "produce=beer"
          }

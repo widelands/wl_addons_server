@@ -45,8 +45,21 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
+            "call=plant_basic",
             "call=plant",
+            "call=harvest_basic",
             "call=harvest"
+         }
+      },
+      plant_basic = {
+         -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
+         descname = _"planting reed",
+         actions = {
+            "return=skipped when economy needs reed",
+            "return=skipped when economy needs water",
+            "consume=water",
+            "callworker=plant_reed",
+            "sleep=duration:60s"
          }
       },
       plant = {
@@ -57,6 +70,16 @@ descriptions:new_productionsite_type {
             "consume=water",
             "callworker=plant_reed",
             "sleep=duration:8s"
+         }
+      },
+      harvest_basic = {
+         -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
+         descname = _"harvesting reed",
+         actions = {
+            "return=skipped when economy needs reed",
+            "return=skipped when economy needs water",
+            "callworker=harvest_reed",
+            "sleep=duration:60s"
          }
       },
       harvest = {

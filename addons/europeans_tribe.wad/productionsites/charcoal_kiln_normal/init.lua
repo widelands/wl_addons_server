@@ -64,7 +64,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs coal",
             "return=skipped when economy needs log",
             "consume=log:3",
-            "sleep=duration:10s",
+            "sleep=duration:60s",
             "animate=working duration:1m30s",
             "produce=coal"
          }
