@@ -171,7 +171,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:40s",
+            "animate=working duration:35s",
             "produce=fire_tongs:2"
          }
       },
