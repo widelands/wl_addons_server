@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-03 03:12+0000\n"
+"POT-Creation-Date: 2021-07-05 03:12+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -634,28 +634,31 @@ msgstr "Schiffsbaustelle"
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:8
 msgctxt "europeans_building"
 msgid "Beekeepers House"
-msgstr ""
+msgstr "Imkerei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making honey because ...
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:44
 msgid "making honey"
-msgstr ""
+msgstr "Das Sammeln von Honig"
 
-#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:55
+#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:54
 msgid "No Flowers"
 msgstr "Keine Blumen"
 
-#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:56
+#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:55
 msgid "Out of Flowers"
 msgstr "Keine Blumen"
 
-#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:57
+#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:56
 msgctxt "europeans_building"
 msgid ""
 "The beekeeper working at this beekeepers’s house can’t find any flowering "
 "fields or bushes in his work area. You should consider building another farm "
 "or berry farm nearby, or dismantling or destroying this building."
 msgstr ""
+"Der Imker in dieser Imkerei kann keine blühenden Felder in seinem "
+"Arbeitsbereich finden. Du solltest dieses Gebäude abreißen oder zerstören "
+"oder einen Bauernhof oder eine Beerenzucht in der Nähe bauen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:8
@@ -742,33 +745,33 @@ msgstr "arbeiten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:66
-#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:81
+#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:80
 #: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:73
-#: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:86
+#: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:85
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:66
-#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:81
+#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:80
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:55
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:71
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:70
 msgid "brewing beer"
 msgstr "Bier brauen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
-#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:95
-#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:111
-#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:95
-#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:111
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:85
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:102
+#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:94
+#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:108
+#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:94
+#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:108
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:84
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:99
 msgid "brewing mead"
 msgstr "Meet brauen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
-#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:125
-#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:140
-#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:125
-#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:140
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:116
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:132
+#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:122
+#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:136
+#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:122
+#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:136
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:113
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:128
 msgid "brewing strong beer"
 msgstr "Starkbier brauen"
 
@@ -791,8 +794,8 @@ msgid "Advanced Brewery and Winery"
 msgstr "Verbesserte Brauerei und Kellerei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:146
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:164
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:142
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:158
 msgid "making wine"
 msgstr "Wein keltern."
 
@@ -813,7 +816,7 @@ msgstr "Verbesserte Köhlerei"
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:74
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:85
 msgid "producing coal"
-msgstr ""
+msgstr "Das Brennen von Kohle"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_basic/init.lua:8
@@ -831,7 +834,7 @@ msgstr "Normale Köhlerei"
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:8
 msgctxt "europeans_building"
 msgid "Clay Pit and Fish Breeder’s House"
-msgstr ""
+msgstr "Lehmgrube und Fischzüchterhaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:61
@@ -841,12 +844,12 @@ msgstr "Lehm abbauen"
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish in a pond because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:75
 msgid "breeding fish in a pond"
-msgstr ""
+msgstr "Das Teichfischzüchten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish in the sea because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:86
 msgid "breeding fish in the sea"
-msgstr ""
+msgstr "Das Meeresfischzüchten"
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:55
@@ -869,10 +872,13 @@ msgid ""
 "fish in his work area. Remember that you can only regenerate your fish "
 "resources if there are some fish left to breed."
 msgstr ""
+"Der Fischzüchter in diesem Fischzüchterhaus kann keine Fische in seinem "
+"Arbeitsbereich finden. Denke daran, dass du deine Fischbestände nur "
+"regenerieren kannst, wenn noch Fische zur Zucht da sind."
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:103
 msgid "The fishing grounds are full"
-msgstr ""
+msgstr "Die Fanggründe sind voll"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_basic/init.lua:8
@@ -932,19 +938,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 1"
-msgstr ""
+msgstr "Kohlemine Stufe 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 2"
-msgstr ""
+msgstr "Kohlemine Stufe 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 3"
-msgstr ""
+msgstr "Kohlemine Stufe 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining diamond because ...
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_3/init.lua:77
@@ -952,19 +958,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:64
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:81
 msgid "mining diamond"
-msgstr ""
+msgstr "Das Abbauen von Diamanten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 4"
-msgstr ""
+msgstr "Kohlemine Stufe 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 5"
-msgstr ""
+msgstr "Kohlemine Stufe 5"
 
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:85
 msgctxt "europeans_building"
@@ -1033,7 +1039,7 @@ msgstr "Das Ernten von Weizen"
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:172
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:198
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:246
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:74
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:97
 msgid "No Fields"
 msgstr "Keine Felder"
 
@@ -1041,7 +1047,7 @@ msgstr "Keine Felder"
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:173
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:199
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:247
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:75
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:98
 msgid "Out of Fields"
 msgstr "Keine Felder"
 
@@ -1058,7 +1064,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Farm Level 1"
-msgstr ""
+msgstr "Bauernhof Stufe 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:82
@@ -1078,51 +1084,51 @@ msgstr "Das Ernten von Mais"
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Farm Level 2"
-msgstr ""
+msgstr "Bauernhof Stufe 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:95
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:83
 msgid "planting blackroot"
-msgstr ""
+msgstr "Das Pflanzen von Dunkelrüben"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:146
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:177
 msgid "harvesting blackroot"
-msgstr ""
+msgstr "Das Ernten von Dunkelrüben"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Farm Level 3"
-msgstr ""
+msgstr "Bauernhof Stufe 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:71
 msgid "planting berrybush"
-msgstr ""
+msgstr "Das Pflanzen von Beerenbüschen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:111
 msgid "planting grape"
-msgstr ""
+msgstr "Das Pflanzen von Weinreben"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:165
 msgid "harvesting berry"
-msgstr ""
+msgstr "Das Ernten von Beeren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:205
 msgid "harvesting grape"
-msgstr ""
+msgstr "Das Ernten von Weintrauben"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Fisher’s House"
-msgstr ""
+msgstr "Verbessertes Fischerhaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:28
@@ -1136,13 +1142,13 @@ msgstr "Das Fischen"
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:52
 msgid "fishing in sea"
-msgstr ""
+msgstr "Das Fischen im Meer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:45
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:60
 msgid "fishing in pond"
-msgstr ""
+msgstr "Das Fischen im Teich"
 
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:57
 msgctxt "europeans_building"
@@ -1159,7 +1165,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Fisher’s Hut"
-msgstr ""
+msgstr "Einfache Fischerhütte"
 
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:82
 msgctxt "europeans_building"
@@ -1174,7 +1180,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Fisher’s House"
-msgstr ""
+msgstr "Normales Fischerhaus"
 
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:72
 msgctxt "europeans_building"
@@ -1189,7 +1195,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Forester’s House"
-msgstr ""
+msgstr "Verbessertes Forsthaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
 #: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:49
@@ -1201,30 +1207,30 @@ msgstr "Das Pflanzen von Bäumen"
 #. TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
 #: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:59
 msgid "enhancing the fertility of land"
-msgstr ""
+msgstr "Das Verbessern der Fruchtbarkeit des Landes"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Ranger’s Hut"
-msgstr ""
+msgstr "Einfache Försterhütte"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Forester’s House"
-msgstr ""
+msgstr "Normales Forsthaus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/gamekeepers_hut/init.lua:8
 msgctxt "europeans_building"
 msgid "Gamekeeper’s Hut"
-msgstr ""
+msgstr "Wildhüterhütte"
 
 #. TRANSLATORS: Completed/Skipped/Did not start releasing game because ...
 #: addons/europeans_tribe.wad/productionsites/gamekeepers_hut/init.lua:50
 msgid "releasing game"
-msgstr ""
+msgstr "Das Aussetzen von Wild"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:8
@@ -1246,7 +1252,7 @@ msgstr "Einfache Goldmine"
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:41
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:56
 msgid "mining gold"
-msgstr ""
+msgstr "Das Schürfen von Gold"
 
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_1/init.lua:88
@@ -1283,19 +1289,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 1"
-msgstr ""
+msgstr "Goldmine Stufe 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 2"
-msgstr ""
+msgstr "Goldmine Stufe 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 3"
-msgstr ""
+msgstr "Goldmine Stufe 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_3/init.lua:77
@@ -1305,19 +1311,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_4/init.lua:78
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:73
 msgid "mining quartz"
-msgstr ""
+msgstr "Das Abbauen von Bergkristall"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 4"
-msgstr ""
+msgstr "Goldmine Stufe 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 5"
-msgstr ""
+msgstr "Goldmine Stufe 5"
 
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:85
 msgctxt "europeans_building"
@@ -1332,7 +1338,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Hunter’s House"
-msgstr ""
+msgstr "Verbessertes Jagdhaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:28
@@ -1362,12 +1368,15 @@ msgid ""
 "work area. Remember that you can build a gamekeeper’s hut to release more "
 "game into the wild."
 msgstr ""
+"Der Jäger in diesem Jagdhaus kann kein Wild in seinem Jagdgebiet finden. "
+"Bedenke, dass du eine Wildhüterhütte bauen kannst, um mehr Tiere in die "
+"Umgebung zu entlassen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Hunter’s Hut"
-msgstr ""
+msgstr "Einfache Jagdhütte"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:76
@@ -1378,12 +1387,16 @@ msgid ""
 "Remember that you can build a gamekeeper’s hut to release more game into the "
 "wild."
 msgstr ""
+"Der Jäger in dieser Jagdhütte kann kein Wild in seinem Jagdgebiet finden. Du "
+"solltest in Erwägung ziehen sie auszubauen, um ihren Arbeitsbereich zu "
+"vergrößern. Bedenke, dass du eine Wildhüterhütte bauen kannst, um mehr Tiere "
+"in die Umgebung zu entlassen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Hunter’s House"
-msgstr ""
+msgstr "Normales Jagdhaus"
 
 #. TRANSLATORS: "game" means animals that you can hunt
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:55
@@ -1394,72 +1407,76 @@ msgid ""
 "Remember that you can build a gamekeeper’s hut to release more game into the "
 "wild."
 msgstr ""
+"Der Jäger in diesem Jagdhaus kann kein Wild in seinem Jagdgebiet finden. Du "
+"solltest in Erwägung ziehen es auszubauen, um seinen Arbeitsbereich zu "
+"vergrößern. Bedenke, dass du eine Wildhüterhütte bauen kannst, um mehr Tiere "
+"in die Umgebung zu entlassen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Inn"
-msgstr ""
+msgstr "Einfaches Wirtshaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
 #: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:73
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:88
+#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:87
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:69
-#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:84
+#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:83
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:54
-#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:69
+#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:68
 #: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:78
-#: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:90
+#: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:66
-#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:78
+#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:77
 #: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:66
-#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:78
+#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:77
 #: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:68
-#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:82
+#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:65
-#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:79
+#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:78
 #: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:67
-#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:81
+#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:80
 msgid "preparing a ration"
-msgstr ""
+msgstr "Das Zubereiten einer Ration"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a snack because ...
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:100
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:115
-#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:96
-#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:111
-#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:81
-#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:96
-#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:94
-#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:108
-#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:91
-#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:105
-#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:93
-#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:107
+#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:99
+#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:113
+#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:95
+#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:109
+#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:80
+#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:94
+#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:93
+#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:106
+#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:90
+#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:103
+#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:92
+#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:105
 msgid "preparing a snack"
-msgstr ""
+msgstr "Das Zubereiten eines Snacks"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:127
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:142
-#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:123
-#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:138
-#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:108
-#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:123
+#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:125
+#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:139
+#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:121
+#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:135
+#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:106
+#: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:120
 msgid "preparing a meal"
-msgstr ""
+msgstr "Das Zubereiten einer Mahlzeit"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Inn Level 1"
-msgstr ""
+msgstr "Wirtshaus Stufe 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Inn Level 2"
-msgstr ""
+msgstr "Wirtshaus Stufe 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_basic/init.lua:8
@@ -1482,7 +1499,7 @@ msgstr "Einfache Eisenmine"
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:56
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:64
 msgid "mining iron"
-msgstr ""
+msgstr "Das Schürfen von Eisen"
 
 #: addons/europeans_tribe.wad/productionsites/ironmine_basic/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_1/init.lua:88
@@ -1519,31 +1536,31 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 1"
-msgstr ""
+msgstr "Eisenmine Stufe 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 2"
-msgstr ""
+msgstr "Eisenmine Stufe 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 3"
-msgstr ""
+msgstr "Eisenmine Stufe 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 4"
-msgstr ""
+msgstr "Eisenmine Stufe 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 5"
-msgstr ""
+msgstr "Eisenmine Stufe 5"
 
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:85
 msgctxt "europeans_building"
@@ -1566,7 +1583,7 @@ msgstr "Kalkofen"
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:53
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:71
 msgid "mixing grout"
-msgstr ""
+msgstr "Das Mischen von Mörtel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
 #: addons/europeans_tribe.wad/productionsites/lime_kiln/init.lua:113
@@ -1574,13 +1591,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:86
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:103
 msgid "burning bricks"
-msgstr ""
+msgstr "Das Brennen von Ziegeln"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Lumberjack’s House"
-msgstr ""
+msgstr "Verbessertes Holzfällerhaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_advanced/init.lua:28
@@ -1616,7 +1633,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Lumberjack’s Hut"
-msgstr ""
+msgstr "Einfache Holzfällerhütte"
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_basic/init.lua:75
 msgctxt "europeans_building"
@@ -1625,12 +1642,15 @@ msgid ""
 "work area. You should consider enhancing it to increase its working area or "
 "building a ranger’s hut."
 msgstr ""
+"Der Holzfäller in dieser Holzfällerhütte kann keine Bäume in seinem "
+"Arbeitsbereich finden. Du solltest dieses Gebäude erweitern, um seinen "
+"Arbeitsbereich zu vergrößern, oder eine Försterhütte bauen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Lumberjacks House"
-msgstr ""
+msgstr "Normales Holzfällerhaus"
 
 #: addons/europeans_tribe.wad/productionsites/lumberjacks_house_normal/init.lua:55
 msgctxt "europeans_building"
@@ -1639,6 +1659,9 @@ msgid ""
 "his work area.  You should consider enhancing it to increase its working "
 "area or building a forester’s house."
 msgstr ""
+"Der Holzfäller in diesem Holzfällerhaus kann keine Bäume in seinem "
+"Arbeitsbereich finden. Du solltest dieses Gebäude erweitern, um seinen "
+"Arbeitsbereich zu vergrößern, oder ein Forsthaus bauen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:8
@@ -1648,13 +1671,13 @@ msgstr "Verbesserte Mühle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
 #: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:47
-#: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:61
+#: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:59
 #: addons/europeans_tribe.wad/productionsites/mill_basic/init.lua:95
-#: addons/europeans_tribe.wad/productionsites/mill_basic/init.lua:109
+#: addons/europeans_tribe.wad/productionsites/mill_basic/init.lua:107
 #: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:63
-#: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:77
+#: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:75
 msgid "grinding rye and wheat"
-msgstr ""
+msgstr "Das Mahlen von Roggen und Weizen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/mill_basic/init.lua:8
@@ -1672,17 +1695,17 @@ msgstr "Normale Mühle"
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Quarry"
-msgstr ""
+msgstr "Verbesserter Steinbruch"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:57
 msgid "mining granite"
-msgstr ""
+msgstr "Das Abbauen von Stein"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:65
 msgid "mining marble"
-msgstr ""
+msgstr "Das Abbauen von Marmor"
 
 #: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:90
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:70
@@ -1701,12 +1724,14 @@ msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any stone in his work area."
 msgstr ""
+"Der Steinhauer in diesem Steinbruch kann keinen Stein in seinem "
+"Arbeitsbereich finden."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Quarry"
-msgstr ""
+msgstr "Einfacher Steinbruch"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:61
@@ -1720,17 +1745,20 @@ msgid ""
 "The stonecutter working at this quarry can’t find any rocks in his work "
 "area. You should consider enhancing it to increase its working area."
 msgstr ""
+"Der Steinhauer in diesem Steinbruch kann keine Steine in seinem "
+"Arbeitsbereich finden. Du solltest dieses Gebäude erweitern, um seinen "
+"Arbeitsbereich zu vergrößern."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Quarry"
-msgstr ""
+msgstr "Normaler Steinbruch"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:62
 msgid "quarrying marble"
-msgstr ""
+msgstr "Das Schneiden von Marmor"
 
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:73
 msgctxt "europeans_building"
@@ -1747,16 +1775,18 @@ msgid "Reed Yard"
 msgstr "Reethof"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:54
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:56
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:67
 msgid "planting reed"
 msgstr "Das Pflanzen von Reet"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:64
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:77
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:87
 msgid "harvesting reed"
 msgstr "Das Ernten von Reet"
 
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:76
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:99
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
@@ -1768,45 +1798,45 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Sawmill"
-msgstr ""
+msgstr "Verbesserte Sägemühle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:47
-#: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:75
+#: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:60
 #: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:90
-#: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:118
+#: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:103
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:63
-#: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:91
+#: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:76
 msgid "sawing logs"
-msgstr ""
+msgstr "Das Zersägen von Stämmen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
-#: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:61
-#: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:87
-#: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:104
-#: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:130
-#: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:77
-#: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:103
+#: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:72
+#: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:85
+#: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:115
+#: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:128
+#: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:88
+#: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:101
 msgid "hardening wood"
-msgstr ""
+msgstr "Das Härten von Holz"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Sawmill"
-msgstr ""
+msgstr "Einfache Sägemühle"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Sawmill"
-msgstr ""
+msgstr "Normale Sägemühle"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/scouts_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Scout’s House"
-msgstr ""
+msgstr "Verbessertes Kundschafterhaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/europeans_tribe.wad/productionsites/scouts_house_advanced/init.lua:38
@@ -1822,74 +1852,74 @@ msgstr "Das Erkunden"
 #: addons/europeans_tribe.wad/productionsites/scouts_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Scouts House"
-msgstr ""
+msgstr "Einfaches Kundschafterhaus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/scouts_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Scout’s House"
-msgstr ""
+msgstr "Normales Kundschafterhaus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:8
 msgctxt "europeans_building"
 msgid "Sheep Farm"
-msgstr ""
+msgstr "Schäferei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing wool because ...
 #: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:62
-#: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:75
+#: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:74
 msgid "producing wool"
-msgstr ""
+msgstr "Die Herstellung von Wolle"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Verbesserter Hochofen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
 #: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:55
 msgid "recycling iron"
-msgstr ""
+msgstr "Das Rückgewinnen von Eisen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling iron and gold because ...
-#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:69
+#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:68
 msgid "recycling iron and gold"
-msgstr ""
+msgstr "Das Rückgewinnen von Eisen und Gold"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
-#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:82
+#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:73
-#: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:88
+#: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:86
 #: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:62
-#: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:78
+#: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:76
 msgid "smelting iron"
-msgstr ""
+msgstr "Das Verhütten von Eisen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
-#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:96
-#: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:92
+#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:94
+#: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:90
 msgid "smelting gold"
-msgstr ""
+msgstr "Das Verhütten von Gold"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Smelting Works"
-msgstr ""
+msgstr "Einfacher Hochofen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Smelting Works"
-msgstr ""
+msgstr "Normaler Hochofen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Smithy"
-msgstr ""
+msgstr "Einfache Schmiede"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:92
@@ -1903,7 +1933,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:95
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:84
 msgid "making a pair of buckets"
-msgstr ""
+msgstr "Das Herstellen von Eimern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:104
@@ -1917,7 +1947,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:107
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:96
 msgid "making a shovel"
-msgstr ""
+msgstr "Das Herstellen einer Schaufel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:116
@@ -1931,7 +1961,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:119
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:108
 msgid "making a saw"
-msgstr ""
+msgstr "Das Herstellen einer Säge"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:128
@@ -1945,7 +1975,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:131
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:120
 msgid "making a hammer"
-msgstr ""
+msgstr "Das Herstellen eines Hammers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:140
@@ -1959,7 +1989,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:143
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:132
 msgid "making a pick"
-msgstr ""
+msgstr "Das Herstellen einer Spitzhacke"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:152
@@ -1973,7 +2003,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:155
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:144
 msgid "making a basket"
-msgstr ""
+msgstr "Das Herstellen eines Korbes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:164
@@ -1987,7 +2017,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:167
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:156
 msgid "making a felling ax"
-msgstr ""
+msgstr "Das Herstellen einer Holzfälleraxt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:176
@@ -2001,7 +2031,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:179
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:168
 msgid "making fire tongs"
-msgstr ""
+msgstr "Das Herstellen einer Feuerzange"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:188
@@ -2015,7 +2045,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:191
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:180
 msgid "making a scythe"
-msgstr ""
+msgstr "Das Herstellen einer Sense"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:200
@@ -2029,7 +2059,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:203
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:192
 msgid "making milking tongs"
-msgstr ""
+msgstr "Das Herstellen einer Melkzange"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:212
@@ -2043,7 +2073,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:215
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:204
 msgid "making needles"
-msgstr ""
+msgstr "Das Herstellen von Nadeln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:224
@@ -2057,7 +2087,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:275
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:264
 msgid "making a bread paddle"
-msgstr ""
+msgstr "Das Herstellen eines Brotschiebers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hook pole because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:236
@@ -2071,13 +2101,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:287
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:276
 msgid "making a hook pole"
-msgstr ""
+msgstr "Das Herstellen einer Hakenstange"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Smithy Level 1"
-msgstr ""
+msgstr "Schmiede Stufe 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a fishing rod because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:217
@@ -2090,7 +2120,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:227
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:216
 msgid "making a fishing rod"
-msgstr ""
+msgstr "Das Herstellen einer Angel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:229
@@ -2103,7 +2133,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:239
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:228
 msgid "making a fishing net"
-msgstr ""
+msgstr "Das Herstellen eines Fischernetzes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hunting bow because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:241
@@ -2116,7 +2146,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:251
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:240
 msgid "making a hunting bow"
-msgstr ""
+msgstr "Das Herstellen eines Jagdbogens"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hunting spear because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:253
@@ -2129,13 +2159,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:263
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:252
 msgid "making a hunting spear"
-msgstr ""
+msgstr "Das Herstellen eines Jagdspeers"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Smithy Level 2"
-msgstr ""
+msgstr "Schmiede Stufe 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:290
@@ -2147,13 +2177,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:299
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:288
 msgid "forging a wooden spear"
-msgstr ""
+msgstr "Das Herstellen eines Holzspeers"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Smithy Level 3"
-msgstr ""
+msgstr "Schmiede Stufe 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:307
@@ -2164,7 +2194,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:313
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:302
 msgid "forging a mask"
-msgstr ""
+msgstr "Das Schmieden einer Maske"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:319
@@ -2175,13 +2205,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:325
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:314
 msgid "forging an advanced spear"
-msgstr ""
+msgstr "Das Schmieden eines verbesserten Speers"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Smithy Level 4"
-msgstr ""
+msgstr "Schmiede Stufe 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:328
@@ -2191,7 +2221,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:339
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:328
 msgid "forging a suit of chain armor"
-msgstr ""
+msgstr "Das Schmieden eines Kettenhemds"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:339
@@ -2201,7 +2231,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:350
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:339
 msgid "forging a steel shield"
-msgstr ""
+msgstr "Das Schmieden eines Stahlschilds"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:350
@@ -2211,7 +2241,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:361
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:350
 msgid "forging a broad ax"
-msgstr ""
+msgstr "Das Schmieden einer Breitaxt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:364
@@ -2221,170 +2251,170 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:375
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:364
 msgid "forging a broadsword"
-msgstr ""
+msgstr "Das Schmieden eines Breitschwertes"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Smithy Level 5"
-msgstr ""
+msgstr "Schmiede Stufe 5"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:8
 msgctxt "europeans_building"
 msgid "Smithy Level 6"
-msgstr ""
+msgstr "Schmiede Stufe 6"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:8
 msgctxt "europeans_building"
 msgid "Smithy Level 7"
-msgstr ""
+msgstr "Schmiede Stufe 7"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:384
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:389
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:378
 msgid "forging a suit of gilded armor"
-msgstr ""
+msgstr "Das Schmieden eines Goldharnischs"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:395
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:400
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:389
 msgid "forging an advanced shield"
-msgstr ""
+msgstr "Das Schmieden eines verbesserten Schilds"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:406
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:411
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:400
 msgid "forging a suit of golden tabard"
-msgstr ""
+msgstr "Das Schneidern eines goldenen Wappenrocks"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:8
 msgctxt "europeans_building"
 msgid "Smithy Level 8"
-msgstr ""
+msgstr "Schmiede Stufe 8"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:8
 msgctxt "europeans_building"
 msgid "Smithy Level 9"
-msgstr ""
+msgstr "Schmiede Stufe 9"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:8
 msgctxt "europeans_building"
 msgid "Spider Farm"
-msgstr ""
+msgstr "Spinnenfarm"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:60
-#: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:72
+#: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:71
 msgid "producing spider silk"
-msgstr ""
+msgstr "Die Herstellung von Spinnenseide"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:8
 msgctxt "europeans_building"
 msgid "Stonemason’s House"
-msgstr ""
+msgstr "Steinmetz"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:117
 msgid "sculpting a marble column"
-msgstr ""
+msgstr "Das Formen einer Marmorsäule"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Tavern"
-msgstr ""
+msgstr "Einfache Taverne"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Tavern Level 1"
-msgstr ""
+msgstr "Taverne Stufe 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Tavern Level 2"
-msgstr ""
+msgstr "Taverne Stufe 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Tavern Level 3"
-msgstr ""
+msgstr "Taverne Stufe 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Tavern Level 4"
-msgstr ""
+msgstr "Taverne Stufe 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Tavern Level 5"
-msgstr ""
+msgstr "Taverne Stufe 5"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Weaving Mill"
-msgstr ""
+msgstr "Verbesserte Weberei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:60
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:73
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:72
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:76
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:89
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:88
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:64
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:77
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:76
 msgid "weaving cloth"
-msgstr ""
+msgstr "Das Weben von Stoff"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving spidercloth because ...
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:85
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:100
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:89
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:103
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:84
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:98
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:88
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:101
 msgid "weaving spidercloth"
-msgstr ""
+msgstr "Das Weben von Spinnenstoff"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:112
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:115
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:110
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:113
 msgid "tailoring a tabard"
-msgstr ""
+msgstr "Das Schneidern eines Wappenrocks"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:124
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:122
 msgid "tailoring an armor"
-msgstr ""
+msgstr "Das Schmieden einer Rüstung"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Weaving Mill"
-msgstr ""
+msgstr "Einfache Weberei"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Weaving Mill"
-msgstr ""
+msgstr "Normale Weberei"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Well"
-msgstr ""
+msgstr "Verbesserter Brunnen"
 
 #: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:44
 #: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:74
@@ -2409,19 +2439,19 @@ msgstr "Der Träger an diesem Brunnen kann kein Wasser mehr finden."
 #: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Well"
-msgstr ""
+msgstr "Einfacher Brunnen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Well"
-msgstr ""
+msgstr "Normaler Brunnen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Recruitement Center"
-msgstr ""
+msgstr "Verbesserte Ausbildungsgilde"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:91
@@ -2429,7 +2459,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:106
 msgctxt "europeans_building"
 msgid "recruiting first carrier"
-msgstr ""
+msgstr "Die Ausbildung eines ersten Trägers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:102
@@ -2437,7 +2467,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:117
 msgctxt "europeans_building"
 msgid "recruiting second carrier"
-msgstr ""
+msgstr "Die Ausbildung eines zweiten Trägers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:113
@@ -2445,7 +2475,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:128
 msgctxt "europeans_building"
 msgid "recruiting builder"
-msgstr ""
+msgstr "Die Ausbildung eines Bauarbeiters"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:124
@@ -2453,7 +2483,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:139
 msgctxt "europeans_building"
 msgid "recruiting smith"
-msgstr ""
+msgstr "Die Ausbildung eines Schmiedes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:135
@@ -2461,7 +2491,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:150
 msgctxt "europeans_building"
 msgid "recruiting farmer"
-msgstr ""
+msgstr "Die Ausbildung eines Bauern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:146
@@ -2469,7 +2499,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:161
 msgctxt "europeans_building"
 msgid "recruiting lumberjack"
-msgstr ""
+msgstr "Die Ausbildung eines Holzfällers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:157
@@ -2477,7 +2507,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:172
 msgctxt "europeans_building"
 msgid "recruiting carpenter"
-msgstr ""
+msgstr "Die Ausbildung eines Zimmermanns"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:168
@@ -2485,7 +2515,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:183
 msgctxt "europeans_building"
 msgid "recruiting stonecutter"
-msgstr ""
+msgstr "Die Ausbildung eines Steinhauers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:179
@@ -2493,7 +2523,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:194
 msgctxt "europeans_building"
 msgid "recruiting stonemason"
-msgstr ""
+msgstr "Die Ausbildung eines Steinmetzes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:190
@@ -2501,7 +2531,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:205
 msgctxt "europeans_building"
 msgid "recruiting charcoal burner"
-msgstr ""
+msgstr "Die Ausbildung eines Köhlers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:201
@@ -2509,7 +2539,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:216
 msgctxt "europeans_building"
 msgid "recruiting breeder"
-msgstr ""
+msgstr "Die Ausbildung eines Viehzüchters"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:212
@@ -2517,7 +2547,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:227
 msgctxt "europeans_building"
 msgid "recruiting weaver"
-msgstr ""
+msgstr "Die Ausbildung eines Webers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:223
@@ -2525,7 +2555,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:238
 msgctxt "europeans_building"
 msgid "recruiting fisher"
-msgstr ""
+msgstr "Die Ausbildung eines Fischers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:234
@@ -2533,7 +2563,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:249
 msgctxt "europeans_building"
 msgid "recruiting hunter"
-msgstr ""
+msgstr "Die Ausbildung eines Jägers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:245
@@ -2541,7 +2571,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:260
 msgctxt "europeans_building"
 msgid "recruiting miller"
-msgstr ""
+msgstr "Die Ausbildung eines Müllers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:256
@@ -2549,7 +2579,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:271
 msgctxt "europeans_building"
 msgid "recruiting baker"
-msgstr ""
+msgstr "Die Ausbildung eines Bäckers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:267
@@ -2557,7 +2587,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:282
 msgctxt "europeans_building"
 msgid "recruiting smoker"
-msgstr ""
+msgstr "Die Ausbildung eines Räucherers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:278
@@ -2565,7 +2595,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:293
 msgctxt "europeans_building"
 msgid "recruiting brewer"
-msgstr ""
+msgstr "Die Ausbildung eines Brauers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:289
@@ -2573,7 +2603,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:304
 msgctxt "europeans_building"
 msgid "recruiting miner"
-msgstr ""
+msgstr "Die Ausbildung eines Bergmanns"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:300
@@ -2581,7 +2611,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:315
 msgctxt "europeans_building"
 msgid "recruiting smelter"
-msgstr ""
+msgstr "Die Ausbildung eines Schmelzers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:311
@@ -2589,7 +2619,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:326
 msgctxt "europeans_building"
 msgid "recruiting forester"
-msgstr ""
+msgstr "Die Ausbildung eines Försters"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:322
@@ -2597,7 +2627,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:337
 msgctxt "europeans_building"
 msgid "recruiting fishbreeder"
-msgstr ""
+msgstr "Die Ausbildung eines Fischzüchters"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:333
@@ -2605,7 +2635,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:348
 msgctxt "europeans_building"
 msgid "recruiting gamekeeper"
-msgstr ""
+msgstr "Die Ausbildung eines Wildhüters"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:344
@@ -2613,7 +2643,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:359
 msgctxt "europeans_building"
 msgid "recruiting beekeeper"
-msgstr ""
+msgstr "Die Ausbildung eines Imkers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:355
@@ -2621,7 +2651,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:370
 msgctxt "europeans_building"
 msgid "recruiting shipwright"
-msgstr ""
+msgstr "Die Ausbildung eines Schiffbauers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:366
@@ -2629,7 +2659,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:381
 msgctxt "europeans_building"
 msgid "recruiting geologist"
-msgstr ""
+msgstr "Die Ausbildung eines Geologen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:377
@@ -2637,7 +2667,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:392
 msgctxt "europeans_building"
 msgid "recruiting scout"
-msgstr ""
+msgstr "Die Ausbildung eines Kundschafters"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:388
@@ -2645,25 +2675,25 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:403
 msgctxt "europeans_building"
 msgid "recruiting trainer"
-msgstr ""
+msgstr "Die Ausbildung eines Ausbilders"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Recruitement Center"
-msgstr ""
+msgstr "Einfaches Ausbildungsgilde"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Recruitement Center"
-msgstr ""
+msgstr "Normale Ausbildungsgilde"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Trainingscamp"
-msgstr ""
+msgstr "Einfaches Ausbildungslager"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:94
@@ -2673,95 +2703,99 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_4/init.lua:53
 msgctxt "europeans_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "Das Rekrutieren von Soldaten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Trainingscamp Level 1"
-msgstr ""
+msgstr "Ausbildungslager Stufe 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Trainingscamp Level 2"
-msgstr ""
+msgstr "Ausbildungslager Stufe 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Trainingscamp Level 3"
-msgstr ""
+msgstr "Ausbildungslager Stufe 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Trainingscamp Level 4"
-msgstr ""
+msgstr "Ausbildungslager Stufe 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ferry_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Ferry Yard"
-msgstr ""
+msgstr "Verbesserte Fährenwerft"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ferry_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Ferry Yard"
-msgstr ""
+msgstr "Einfache Fährenwerft"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ferry_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Ferry Yard"
-msgstr ""
+msgstr "Normale Fährenwerft"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Shipyard"
-msgstr ""
+msgstr "Verbesserte Werft"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_advanced/init.lua:56
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_basic/init.lua:85
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:75
 msgid "constructing a ship"
-msgstr ""
+msgstr "Das Bauen eines Schiffs"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Shipyard"
-msgstr ""
+msgstr "Einfache Werft"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Shipyard"
-msgstr ""
+msgstr "Normale Werft"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:11
 msgid "Discovery"
-msgstr ""
+msgstr "Entdeckung"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies"
 msgstr ""
+"Beginne das Spiel mit drei Schiffen auf dem Ozean und nur einer Hand voll an "
+"Gütern."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/fortified_village.lua:11
 msgid "Fortified Village"
-msgstr ""
+msgstr "Befestigtes Dorf"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/fortified_village.lua:13
 msgid "Start the game with a big village with advanced castle in its center"
 msgstr ""
+"Beginne das Spiel mit einem großen Dorf mit einer verbesserten Burg in der "
+"Mitte."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
@@ -2786,17 +2820,17 @@ msgstr "Beginne das Spiel nur  mit deinem Hauptquartier."
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:11
 msgid "New World"
-msgstr ""
+msgstr "Neue Welt"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
 msgid "Start the game with advanced castle and port"
-msgstr ""
+msgstr "Beginne das Spiel mit einer verbesserten Burg und einem Hafen."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:11
 msgid "Poor Hamlet"
-msgstr ""
+msgstr "Armes Dorf"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:13
@@ -2804,21 +2838,27 @@ msgid ""
 "Start the game with just a warehouse and the bare minimum for bootstrapping "
 "an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Am Anfang des Spieles steht nur ein Lagerhaus und das absolute Minimum für "
+"den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
+"erfolgreich starten."
 
-#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:82
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:83
 msgid "Be careful"
-msgstr ""
+msgstr "Sei vorsichtig"
 
-#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:82
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:83
 msgid ""
 "You have only one iron for each tool you will need to start your economy. "
 "Make sure no unneeded tool is created."
 msgstr ""
+"Du hast nur ein Eisen für jedes Werkzeug, das du für den Start deiner "
+"Wirtschaft brauchst. Stelle sicher, dass kein unnötiges Werkzeug hergestellt "
+"wird."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
 msgid "Struggling Outpost"
-msgstr ""
+msgstr "Mühsamer Vorposten"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:13
@@ -2826,11 +2866,14 @@ msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from this."
 msgstr ""
+"Am Anfang des Spieles stehen nur ein Hauptquartier und sehr wenige Waren für "
+"den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
+"erfolgreich starten."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost"
-msgstr ""
+msgstr "Handelsposten"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:13
@@ -2838,16 +2881,17 @@ msgid ""
 "If this player runs low on important wares, they will be replenished for "
 "free. Debug Mode."
 msgstr ""
+"Wenn diesem Spieler wichtige Waren ausgehen, werden sie umsonst aufgefüllt."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village.lua:11
 msgid "Village"
-msgstr ""
+msgstr "Dorf"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village.lua:13
 msgid "Start the game with a small peaceful village"
-msgstr ""
+msgstr "Beginne das Spiel mit einem kleinen friedlichen Dorf."
 
 #. TRANSLATORS: This is the europeans' ship's name used in lists of units
 #: addons/europeans_tribe.wad/ship/init.lua:83
@@ -2864,143 +2908,143 @@ msgstr "Europa"
 #: addons/europeans_tribe.wad/ship/init.lua:108
 msgctxt "shipname"
 msgid "Europe"
-msgstr ""
+msgstr "Europa"
 
 #: addons/europeans_tribe.wad/ship/init.lua:109
 msgctxt "shipname"
 msgid "Island"
-msgstr ""
+msgstr "Island"
 
 #: addons/europeans_tribe.wad/ship/init.lua:110
 msgctxt "shipname"
 msgid "Great Britain"
-msgstr ""
+msgstr "Großbritannien"
 
 #: addons/europeans_tribe.wad/ship/init.lua:111
 msgctxt "shipname"
 msgid "Scandinavia"
-msgstr ""
+msgstr "Skandinavien"
 
 #: addons/europeans_tribe.wad/ship/init.lua:112
 msgctxt "shipname"
 msgid "Alpinia"
-msgstr ""
+msgstr "Alpinia"
 
 #: addons/europeans_tribe.wad/ship/init.lua:113
 msgctxt "shipname"
 msgid "Iberia"
-msgstr ""
+msgstr "Iberien"
 
 #: addons/europeans_tribe.wad/ship/init.lua:114
 msgctxt "shipname"
 msgid "Italia"
-msgstr ""
+msgstr "Italien"
 
 #: addons/europeans_tribe.wad/ship/init.lua:115
 msgctxt "shipname"
 msgid "Francia"
-msgstr ""
+msgstr "Frankreich"
 
 #: addons/europeans_tribe.wad/ship/init.lua:116
 msgctxt "shipname"
 msgid "Germania"
-msgstr ""
+msgstr "Deutschland"
 
 #: addons/europeans_tribe.wad/ship/init.lua:117
 msgctxt "shipname"
 msgid "Polandia"
-msgstr ""
+msgstr "Polen"
 
 #: addons/europeans_tribe.wad/ship/init.lua:118
 msgctxt "shipname"
 msgid "Czechia"
-msgstr ""
+msgstr "Tschechien "
 
 #: addons/europeans_tribe.wad/ship/init.lua:119
 msgctxt "shipname"
 msgid "Slowakia"
-msgstr ""
+msgstr "Slowakei"
 
 #: addons/europeans_tribe.wad/ship/init.lua:120
 msgctxt "shipname"
 msgid "Hungaria"
-msgstr ""
+msgstr "Ungarn"
 
 #: addons/europeans_tribe.wad/ship/init.lua:121
 msgctxt "shipname"
 msgid "Romania"
-msgstr ""
+msgstr "Rumänien"
 
 #: addons/europeans_tribe.wad/ship/init.lua:122
 msgctxt "shipname"
 msgid "Bulgaria"
-msgstr ""
+msgstr "Bulgarien"
 
 #: addons/europeans_tribe.wad/ship/init.lua:123
 msgctxt "shipname"
 msgid "Ukrainia"
-msgstr ""
+msgstr "Ukraine"
 
 #: addons/europeans_tribe.wad/ship/init.lua:124
 msgctxt "shipname"
 msgid "Georgia"
-msgstr ""
+msgstr "Georgien"
 
 #: addons/europeans_tribe.wad/ship/init.lua:125
 msgctxt "shipname"
 msgid "Russia"
-msgstr ""
+msgstr "Russland"
 
 #: addons/europeans_tribe.wad/ship/init.lua:126
 msgctxt "shipname"
 msgid "Baltika"
-msgstr ""
+msgstr "Baltikum"
 
 #: addons/europeans_tribe.wad/ship/init.lua:127
 msgctxt "shipname"
 msgid "Balkania"
-msgstr ""
+msgstr "Balkan"
 
 #: addons/europeans_tribe.wad/ship/init.lua:128
 msgctxt "shipname"
 msgid "Benelux"
-msgstr ""
+msgstr "Benelux"
 
 #: addons/europeans_tribe.wad/ship/init.lua:129
 msgctxt "shipname"
 msgid "Greece"
-msgstr ""
+msgstr "Griechenland"
 
 #: addons/europeans_tribe.wad/ship/init.lua:130
 msgctxt "shipname"
 msgid "Sizilia"
-msgstr ""
+msgstr "Sizilien"
 
 #: addons/europeans_tribe.wad/ship/init.lua:131
 msgctxt "shipname"
 msgid "Corsica"
-msgstr ""
+msgstr "Korsika"
 
 #: addons/europeans_tribe.wad/ship/init.lua:132
 msgctxt "shipname"
 msgid "Sardenia"
-msgstr ""
+msgstr "Sardinien"
 
 #: addons/europeans_tribe.wad/ship/init.lua:133
 msgctxt "shipname"
 msgid "Malta"
-msgstr ""
+msgstr "Malta"
 
 #: addons/europeans_tribe.wad/ship/init.lua:134
 msgctxt "shipname"
 msgid "Cypria"
-msgstr ""
+msgstr "Zypern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Battle Arena"
-msgstr ""
+msgstr "Einfache Kampfarena"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:125
@@ -3019,7 +3063,7 @@ msgstr "Das Schlafen"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:93
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 0 to level 1"
-msgstr ""
+msgstr "Das Verbessern der Lebenspunkte eines Soldaten von Stufe 0 auf 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:145
@@ -3039,7 +3083,7 @@ msgstr "Das Verbessern des Ausweichens eines Soldaten von Stufe 0 auf 1"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:167
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr ""
+msgstr "Das Verbessern der Verteidigung eines Soldaten von Stufe 0 auf 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:170
@@ -3049,7 +3093,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:206
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
-msgstr ""
+msgstr "Das Verbessern des Angriffs eines Soldaten von Stufe 0 auf 1"
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:188
@@ -3075,7 +3119,7 @@ msgstr "Kein Soldat für diese Ausbildungsstufe gefunden!"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 1"
-msgstr ""
+msgstr "Kampfarena Stufe 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:127
@@ -3084,7 +3128,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:105
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 1 to level 2"
-msgstr ""
+msgstr "Das Verbessern der Lebenspunkte eines Soldaten von Stufe 1 auf 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:152
@@ -3102,7 +3146,7 @@ msgstr "Das Verbessern des Ausweichens eines Soldaten von Stufe 1 auf 2"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:180
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr ""
+msgstr "Das Verbessern der Verteidigung eines Soldaten von Stufe 1 auf 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:203
@@ -3111,53 +3155,53 @@ msgstr ""
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:219
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr ""
+msgstr "Das Verbessern des Angriffs eines Soldaten von Stufe 1 auf 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 2"
-msgstr ""
+msgstr "Kampfarena Stufe 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 3"
-msgstr ""
+msgstr "Kampfarena Stufe 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:141
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:118
 msgctxt "europeans_building"
 msgid "upgrading soldier health from level 2 to level 3"
-msgstr ""
+msgstr "Das Verbessern der Lebenspunkte eines Soldaten von Stufe 2 auf 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:178
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:155
 msgctxt "europeans_building"
 msgid "upgrading soldier evade from level 2 to level 3"
-msgstr ""
+msgstr "Das Verbessern des Ausweichens eines Soldaten von Stufe 2 auf 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:216
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:193
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 2 to level 3"
-msgstr ""
+msgstr "Das Verbessern der Verteidigung eines Soldaten von Stufe 2 auf 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:255
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:232
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr ""
+msgstr "Das Verbessern des Angriffs eines Soldaten von Stufe 2 auf 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 4"
-msgstr ""
+msgstr "Kampfarena Stufe 4"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/init.lua:10
 msgid "Mark McWire"
@@ -3170,7 +3214,7 @@ msgstr "Europäer"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/init.lua:13
 msgid "This is the culture of the Europeans."
-msgstr ""
+msgstr "Das ist die Kultur der Europäer."
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/military_capacity.lua:8
@@ -3206,7 +3250,7 @@ msgstr[1] "%1%(+%2%) Soldaten"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental europeans tribe."
-msgstr ""
+msgstr "Das ist der experimentelle Stamm der Europäer."
 
 #. TRANSLATORS: Helptext for an europeans ware: Log, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:96
@@ -3244,7 +3288,7 @@ msgstr "Bretter sind ein wichtiges Baumaterial."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:120
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Sie werden in der Sägemühle hergestellt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Planks, part 3
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:122
@@ -3306,7 +3350,7 @@ msgstr "Die Europäer produzieren Steinblöcke in Steinbrüchen."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:199
 msgctxt "ware"
 msgid "Grout is a basic building material."
-msgstr ""
+msgstr "Mörtel ist ein grundlegendes Baumaterial."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:201
@@ -3331,7 +3375,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:225
 msgctxt "ware"
 msgid "Brick is a basic building material."
-msgstr ""
+msgstr "Ziegel ist ein grundlegendes Baumaterial."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:227
@@ -3608,7 +3652,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:508
 msgctxt "ware"
 msgid "Iron is smelted out of ores."
-msgstr ""
+msgstr "Eisen wird aus Erz gewonnen."
 
 #. TRANSLATORS: Helptext for an europeans ware: Iron, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:510
@@ -3625,6 +3669,7 @@ msgstr ""
 msgctxt "ware"
 msgid "Gold is the most valuable of all metals, and it is smelted out of ore."
 msgstr ""
+"Gold, das wertvollste aller Metalle, wird durch Verhüttung von Erz gewonnen."
 
 #. TRANSLATORS: Helptext for an europeans ware: Gold, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:531
@@ -4147,7 +4192,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1472
 msgctxt "europeans_worker"
 msgid "Grind rye and wheat to mixed flour."
-msgstr ""
+msgstr "Mahlt Roggen und Weizen zu gemischtem Mehl."
 
 #. TRANSLATORS: Helptext for an europeans worker: Baker
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1481
@@ -4277,7 +4322,7 @@ msgstr "Dieses Feld wurde abgeerntet."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1893
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1921
 msgid "This berry bush has just been planted."
-msgstr ""
+msgstr "Dieser Beerenbusch wurde eben erst angepflanzt."
 
 #. TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1704
@@ -4290,7 +4335,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1900
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1928
 msgid "This berry bush is growing."
-msgstr ""
+msgstr "Dieser Beerenbusch wächst."
 
 #. TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1711
@@ -4304,7 +4349,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1935
 msgid ""
 "This berry bush is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Dieser Beerenbusch blüht. Honig kann von einem Imker geerntet werden."
 
 #. TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1718
@@ -4317,7 +4362,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1914
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
 msgid "This berry bush is ready for harvesting."
-msgstr ""
+msgstr "Dieser Beerenbusch ist erntereif."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2019
@@ -4563,7 +4608,7 @@ msgstr "Fällt Bäume in der Umgebung und verarbeitet sie zu Stämmen."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2448
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
-msgstr ""
+msgstr "Die Holzfällerhütte braucht Bäume innerhalb ihres Arbeitsbereichs."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Woodcutter's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2457
@@ -4575,7 +4620,7 @@ msgstr "Das Holzfällerhaus braucht Bäume innerhalb seines Arbeitsbereichs."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2466
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
-msgstr ""
+msgstr "Das Holzfällerhaus braucht Bäume innerhalb seines Arbeitsbereichs."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Ranger's Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Forester's House
@@ -4592,6 +4637,8 @@ msgctxt "europeans_building"
 msgid ""
 "The ranger’s hut needs free space within the work area to plant the trees."
 msgstr ""
+"Die Försterhütte braucht freien Raum innerhalb ihres Arbeitsbereichs, um "
+"Bäume zu pflanzen."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Forester's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2484
@@ -4650,6 +4697,7 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "The fisher’s hut needs water full of fish within the work area."
 msgstr ""
+"Die Fischerhütte braucht Wasser mit Fischen innerhalb ihres Arbeitsbereichs."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Fisher's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2543
@@ -4688,7 +4736,7 @@ msgstr "Jagt Tiere, um Fleisch zu erhalten."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2567
 msgctxt "europeans_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
-msgstr ""
+msgstr "Die Jagdhütte braucht Tiere innerhalb ihres Arbeitsbereichs."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Hunter's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2576
@@ -5212,73 +5260,73 @@ msgstr "Roggen"
 #: addons/europeans_tribe.wad/workers/baker_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Baker"
-msgstr ""
+msgstr "Bäckermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/baker_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Baker"
-msgstr ""
+msgstr "Bäckerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/baker_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Baker"
-msgstr ""
+msgstr "Bäckergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Beekeeper"
-msgstr ""
+msgstr "Imkermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Beekeeper"
-msgstr ""
+msgstr "Imkerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Beekeeper"
-msgstr ""
+msgstr "Imkergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Breeder"
-msgstr ""
+msgstr "Züchtermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Breeder"
-msgstr ""
+msgstr "Züchterlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Breeder"
-msgstr ""
+msgstr "Züchtergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/brewer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Brewer"
-msgstr ""
+msgstr "Braumeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/brewer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Brewer"
-msgstr ""
+msgstr "Brauerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/brewer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Brewer"
-msgstr ""
+msgstr "Brauergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/builder/init.lua:8
@@ -5290,19 +5338,19 @@ msgstr "Bauarbeiter"
 #: addons/europeans_tribe.wad/workers/carpenter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Carpenter / Sawyer"
-msgstr ""
+msgstr "Zimmermannsmeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carpenter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Carpenter / Sawyer"
-msgstr ""
+msgstr "Zimmermannslehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carpenter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Carpenter / Sawyer"
-msgstr ""
+msgstr "Zimmermannsgeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier/init.lua:8
@@ -5326,37 +5374,37 @@ msgstr ""
 #: addons/europeans_tribe.wad/workers/charcoal_burner_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Charcoal Burner"
-msgstr ""
+msgstr "Köhlermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/charcoal_burner_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Charcoal Burner"
-msgstr ""
+msgstr "Köhlerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/charcoal_burner_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Charcoal Burner"
-msgstr ""
+msgstr "Köhlergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/farmer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Farmer"
-msgstr ""
+msgstr "Bauernmeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/farmer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Farmer"
-msgstr ""
+msgstr "Bauernlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/farmer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
-msgstr ""
+msgstr "Bauerngeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/ferry/init.lua:8
@@ -5368,73 +5416,73 @@ msgstr "Fähre"
 #: addons/europeans_tribe.wad/workers/fishbreeder_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Fish Breeder"
-msgstr ""
+msgstr "Fischzüchtermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fishbreeder_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Fish Breeder"
-msgstr ""
+msgstr "Fischzüchterlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fishbreeder_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Fish Breeder"
-msgstr ""
+msgstr "Fischzüchtergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fisher_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Fisher"
-msgstr ""
+msgstr "Fischermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fisher_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Fisher"
-msgstr ""
+msgstr "Fischerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/fisher_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Fisher"
-msgstr ""
+msgstr "Fischergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/forester_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Forester"
-msgstr ""
+msgstr "Forstmeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/forester_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Forester / Ranger"
-msgstr ""
+msgstr "Försterlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/forester_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Forester"
-msgstr ""
+msgstr "Förstergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/gamekeeper_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Gamekeeper"
-msgstr ""
+msgstr "Wildhütermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/gamekeeper_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Gamekeeper"
-msgstr ""
+msgstr "Wildhüterlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/gamekeeper_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Gamekeeper"
-msgstr ""
+msgstr "Wildhütergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/geologist/init.lua:8
@@ -5446,73 +5494,73 @@ msgstr "Geologe"
 #: addons/europeans_tribe.wad/workers/hunter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Hunter"
-msgstr ""
+msgstr "Jägermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/hunter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Hunter"
-msgstr ""
+msgstr "Jägerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/hunter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Hunter"
-msgstr ""
+msgstr "Jägergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/lumberjack_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Lumberjack"
-msgstr ""
+msgstr "Holzfällermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/lumberjack_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Lumberjack"
-msgstr ""
+msgstr "Holzfällerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/lumberjack_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Lumberjack / Woodcutter"
-msgstr ""
+msgstr "Holzfällergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miller_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Miller"
-msgstr ""
+msgstr "Müllermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miller_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Miller"
-msgstr ""
+msgstr "Müllerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miller_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Miller"
-msgstr ""
+msgstr "Müllergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miner_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Miner"
-msgstr ""
+msgstr "Bergmannsmeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miner_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Miner"
-msgstr ""
+msgstr "Bergmannslehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/miner_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Miner"
-msgstr ""
+msgstr "Bergmannsgeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/recruit/init.lua:8
@@ -5524,91 +5572,91 @@ msgstr ""
 #: addons/europeans_tribe.wad/workers/scout_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Scout"
-msgstr ""
+msgstr "Kundschaftermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/scout_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Scout"
-msgstr ""
+msgstr "Kundschafterlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/scout_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Scout"
-msgstr ""
+msgstr "Kundschaftergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Shipwright"
-msgstr ""
+msgstr "Schiffsbauermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Shipwright"
-msgstr ""
+msgstr "Schiffbauerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Shipwright"
-msgstr ""
+msgstr "Schiffbauergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smelter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Smelter"
-msgstr ""
+msgstr "Schmelzermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smelter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Smelter"
-msgstr ""
+msgstr "Schmelzerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smelter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Smelter"
-msgstr ""
+msgstr "Schmelzergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smith_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Smith"
-msgstr ""
+msgstr "Schmiedemeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smith_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Smith"
-msgstr ""
+msgstr "Schmiedelehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smith_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Smith"
-msgstr ""
+msgstr "Schmiedegeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smoker_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Smoker"
-msgstr ""
+msgstr "Räucherermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smoker_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Smoker"
-msgstr ""
+msgstr "Räuchererlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smoker_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Smoker"
-msgstr ""
+msgstr "Räucherergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/soldier/init.lua:82
@@ -5620,70 +5668,70 @@ msgstr "Soldat"
 #: addons/europeans_tribe.wad/workers/stonecutter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Stonecutter"
-msgstr ""
+msgstr "Steinhauermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonecutter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Stonecutter"
-msgstr ""
+msgstr "Steinhauerlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonecutter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Stonecutter"
-msgstr ""
+msgstr "Steinhauergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonemason_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Stonemason"
-msgstr ""
+msgstr "Steinmetzmeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonemason_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Stonemason"
-msgstr ""
+msgstr "Steinmetzlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonemason_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Stonemason"
-msgstr ""
+msgstr "Steinmetzgeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Trainer"
-msgstr ""
+msgstr "Ausbildermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Trainer"
-msgstr ""
+msgstr "Ausbilderlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Trainer"
-msgstr ""
+msgstr "Ausbildergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/weaver_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Weaver"
-msgstr ""
+msgstr "Webermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/weaver_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Weaver"
-msgstr ""
+msgstr "Weberlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/weaver_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
-msgstr ""
+msgstr "Webergeselle"
