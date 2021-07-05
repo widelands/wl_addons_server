@@ -307,7 +307,7 @@ descriptions:new_productionsite_type {
             "consume=coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:35s",
             "produce=helmet_mask"
          }
       },
@@ -319,7 +319,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:35s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=spear_advanced"
@@ -332,7 +332,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs armor_chain",
             "consume=armor coal iron",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:35s",
             "produce=armor_chain"
          }
       },
@@ -343,7 +343,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs shield_steel",
             "consume=coal:2 iron:2",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:35s",
             "produce=shield_steel"
          }
       },
@@ -355,7 +355,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal:2 iron:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:35s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=ax_broad"
@@ -369,7 +369,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal:2 iron:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:35s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=sword_broad"
