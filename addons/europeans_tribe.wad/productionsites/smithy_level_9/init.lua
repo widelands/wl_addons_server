@@ -72,10 +72,10 @@ descriptions:new_productionsite_type {
             "call=produce_armor_chain",
             "call=produce_shield_steel",
             "call=produce_ax_broad",
-            "call=produce_sword_broad",
             "call=produce_armor_gilded",
-            "call=produce_shield_advanced",
             "call=produce_tabard_golden",
+            "call=produce_shield_advanced",
+            "call=produce_sword_broad",
             "return=skipped"
          }
       },
@@ -301,7 +301,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
          descname = _"forging a mask",
          actions = {
-            "return=skipped unless economy needs helmet_mask",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
             "consume=coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
@@ -366,22 +367,6 @@ descriptions:new_productionsite_type {
             "produce=ax_broad"
          }
       },
-      produce_sword_broad = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
-         descname = _"forging a broadsword",
-         actions = {
-            "return=skipped when economy needs planks",
-            "return=skipped when economy needs coal",
-            "return=skipped when economy needs iron",
-            "consume=planks coal:2 iron:2",
-            "sleep=duration:5s",
-            "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:20s",
-            "playsound=sound/smiths/sharpening priority:90%",
-            "sleep=duration:5s",
-            "produce=sword_broad"
-         },
-      },
       produce_armor_gilded = {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
          descname = _"forging a suit of gilded armor",
@@ -394,6 +379,20 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "animate=working duration:20s",
             "produce=armor_gilded"
+         }
+      },
+      produce_tabard_golden = {
+         -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
+         descname = _"forging a suit of golden tabard",
+         actions = {
+            "return=skipped when economy needs spidercloth",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
+            "return=skipped when economy needs gold",
+            "consume=spidercloth coal iron gold",
+            "sleep=duration:10s",
+            "animate=working duration:20s",
+            "produce=tabard_golden"
          }
       },
       produce_shield_advanced = {
@@ -409,19 +408,21 @@ descriptions:new_productionsite_type {
             "produce=shield_advanced"
          }
       },      
-      produce_tabard_golden = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
-         descname = _"forging a suit of golden tabard",
+      produce_sword_broad = {
+         -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
+         descname = _"forging a broadsword",
          actions = {
-            "return=skipped when economy needs spidercloth",
+            "return=skipped when economy needs planks",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
-            "return=skipped when economy needs gold",
-            "consume=spidercloth coal iron gold",
-            "sleep=duration:10s",
+            "consume=planks coal:2 iron:2",
+            "sleep=duration:5s",
+            "playsound=sound/smiths/smith priority:50% allow_multiple",
             "animate=working duration:20s",
-            "produce=tabard_golden"
-         }
+            "playsound=sound/smiths/sharpening priority:90%",
+            "sleep=duration:5s",
+            "produce=sword_broad"
+         },
       },
    },
 }
