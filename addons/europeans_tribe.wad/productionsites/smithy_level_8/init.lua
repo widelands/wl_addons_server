@@ -312,6 +312,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
          descname = _"forging a mask",
          actions = {
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "consume=coal iron",
@@ -325,6 +333,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
          descname = _"forging an advanced spear",
          actions = {
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad",
             "return=skipped when economy needs planks",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
@@ -341,6 +357,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
          descname = _"forging a suit of chain armor",
          actions = {
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad",
             "return=skipped when economy needs armor",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
@@ -354,6 +378,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
          descname = _"forging a steel shield",
          actions = {
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "consume=coal:2 iron:2",
@@ -366,6 +398,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
          descname = _"forging a broad ax",
          actions = {
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad",
             "return=skipped when economy needs planks",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
@@ -382,6 +422,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
          descname = _"forging a suit of gilded armor",
          actions = {
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad",
             "return=skipped when economy needs armor",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
@@ -396,6 +444,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
          descname = _"forging a suit of golden tabard",
          actions = {
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad",
             "return=skipped when economy needs spidercloth",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
@@ -410,6 +466,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
          descname = _"forging an advanced shield",
          actions = {
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs sword_broad",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "return=skipped when economy needs gold",
@@ -423,6 +487,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
          descname = _"forging a broadsword",
          actions = {
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced",
             "return=skipped when economy needs planks",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
