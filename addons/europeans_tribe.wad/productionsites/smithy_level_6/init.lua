@@ -77,7 +77,6 @@ descriptions:new_productionsite_type {
             "call=produce_armor_chain",
             "call=produce_shield_steel",
             "call=produce_ax_broad",
-            "call=produce_sword_broad",
             "return=skipped"
          }
       },
@@ -304,10 +303,12 @@ descriptions:new_productionsite_type {
          descname = _"forging a mask",
          actions = {
             "return=skipped unless economy needs helmet_mask",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
             "consume=coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:35s",
             "produce=helmet_mask"
          }
       },
@@ -316,10 +317,13 @@ descriptions:new_productionsite_type {
          descname = _"forging an advanced spear",
          actions = {
             "return=skipped unless economy needs spear_advanced",
+            "return=skipped when economy needs planks",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:35s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=spear_advanced"
@@ -330,9 +334,12 @@ descriptions:new_productionsite_type {
          descname = _"forging a suit of chain armor",
          actions = {
             "return=skipped unless economy needs armor_chain",
+            "return=skipped when economy needs armor",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
             "consume=armor coal iron",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:35s",
             "produce=armor_chain"
          }
       },
@@ -341,9 +348,11 @@ descriptions:new_productionsite_type {
          descname = _"forging a steel shield",
          actions = {
             "return=skipped unless economy needs shield_steel",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
             "consume=coal:2 iron:2",
             "sleep=duration:10s",
-            "animate=working duration:30s",
+            "animate=working duration:35s",
             "produce=shield_steel"
          }
       },
@@ -352,28 +361,17 @@ descriptions:new_productionsite_type {
          descname = _"forging a broad ax",
          actions = {
             "return=skipped unless economy needs ax_broad",
+            "return=skipped when economy needs planks",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
             "consume=planks coal:2 iron:2",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:20s",
+            "animate=working duration:35s",
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=ax_broad"
          }
-      },
-      produce_sword_broad = {
-         -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
-         descname = _"forging a broadsword",
-         actions = {
-            "return=skipped unless economy needs sword_broad",
-            "consume=planks coal:2 iron:2",
-            "sleep=duration:10s",
-            "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:30s",
-            "playsound=sound/smiths/sharpening priority:90%",
-            "sleep=duration:10s",
-            "produce=sword_broad"
-         },
       },
    },
 }
