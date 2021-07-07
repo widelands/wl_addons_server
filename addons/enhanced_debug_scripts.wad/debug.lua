@@ -572,7 +572,7 @@ function dismantle_all_buildings(player_number, building_name)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == tribe_name .. "_" .. building_name or player.tribe.name == building_name then
+          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
              building:dismantle(true)
           end
        end
@@ -642,7 +642,7 @@ function enhance_all_buildings(player_number, building_name)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == tribe_name .. "_" .. building_name or player.tribe.name == building_name then
+          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
              building:enhance(true)
           end
        end
@@ -657,7 +657,7 @@ function upgrade_all_buildings(player_number, building_name)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == tribe_name .. "_" .. building_name or player.tribe.name == building_name then
+          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
              building:enhance(true)
           end
        end
@@ -681,7 +681,7 @@ function stop_all_buildings(player_number, building_name, stop)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == tribe_name .. "_" .. building_name or player.tribe.name == building_name then
+          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
              if not (building.is_stopped == stop) then
                  building:toggle_start_stop()
              end
