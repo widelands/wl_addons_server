@@ -45,21 +45,33 @@ end
 
 function set_seafaring(player_number, OnOff)
     local game = wl.Game()
+    local suffix = ""    
     
     if player_number > 0 then
         local player = game.players[player_number]
+        
+        if player.tribe.name == "europeans" then
+            suffix = "_basic"
+        else
+            suffix = ""
+        end
     
         if OnOff == true then
-            player:allow_buildings{player.tribe.port}
+            player:allow_buildings{player.tribe.port, (player.tribe.name .. "_shipyard" .. suffix)}
         elseif OnOff == false then
-            player:forbid_buildings{player.tribe.port}
+            player:forbid_buildings{player.tribe.port, (player.tribe.name .. "_shipyard" .. suffix)}
         end
     else
         for idx, player in ipairs(game.players) do
+            if player.tribe.name == "europeans" then
+                suffix = "_basic"
+            else
+                suffix = ""
+            end
             if OnOff == true then
-                player:allow_buildings{player.tribe.port}
+                player:allow_buildings{player.tribe.port, (player.tribe.name .. "_shipyard" .. suffix)}
             elseif OnOff == false then
-                player:forbid_buildings{player.tribe.port}
+                player:forbid_buildings{player.tribe.port, (player.tribe.name .. "_shipyard" .. suffix)}
             end
         end
     end
@@ -383,13 +395,13 @@ function connect_road(startx, starty, targetx, targety)
 end
 
 -- general building settings --
-function place_building(player, startx, starty, radius, buildingname)
+function place_building(player, startx, starty, radius, building_name)
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
 
-    place_building_in_region(player, buildingname, fields)
+    place_building_in_region(player, building_name, fields)
 end
 
 function place_port(player, startx, starty, radius)
@@ -415,8 +427,10 @@ end
 function force_building(player_number, startx, starty, radius, building_name)
     local game = wl.Game()
     local player = game.players[player_number]
+    local tribe = player.tribe
+    local tribe_name = tribe.name
     
-    place_building(player, startx, starty, radius, building_name)
+    place_building(player, startx, starty, radius, tribe_name .. "_" .. building_name)
 end
 
 function force_headquarters(player_number, startx, starty, radius)
@@ -562,13 +576,15 @@ function dismantle_building(startx, starty)
     end
 end
 
-function dismantle_all_buildings(player_number, buildingname)
+function dismantle_all_buildings(player_number, building_name)
     local game = wl.Game()
     local player = game.players[player_number]
+    local tribe = player.tribe
+    local tribe_name = tribe.name
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == buildingname or tbuilding.name == buildingname or player.tribe.name == buildingname then
+          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
              building:dismantle(true)
           end
        end
@@ -588,35 +604,73 @@ function dismantle_idle_buildings(player_number, productivity_threshold)
     end
 end
 
+function enhance_building(startx, starty)
+    local game = wl.Game()
+    local map = game.map
+
+    if (map:get_field(startx, starty).immovable.descr.type_name == "productionsite") then
+       map:get_field(startx, starty).immovable:enhance(true)
+    end
+    if (map:get_field(startx, starty).immovable.descr.type_name == "trainingsite") then
+       map:get_field(startx, starty).immovable:enhance(true)
+    end
+    if (map:get_field(startx, starty).immovable.descr.type_name == "militarysite") then
+       map:get_field(startx, starty).immovable:enhance(true)
+    end
+    if (map:get_field(startx, starty).immovable.descr.type_name == "warehouse") then
+       map:get_field(startx, starty).immovable:enhance(true)
+    end
+    if (map:get_field(startx, starty).immovable.descr.type_name == "market") then
+       map:get_field(startx, starty).immovable:enhance(true)
+    end
+end
+
 function upgrade_building(startx, starty)
     local game = wl.Game()
     local map = game.map
 
     if (map:get_field(startx, starty).immovable.descr.type_name == "productionsite") then
-       map:get_field(startx, starty).immovable:upgrade(true)
+       map:get_field(startx, starty).immovable:enhance(true)
     end
     if (map:get_field(startx, starty).immovable.descr.type_name == "trainingsite") then
-       map:get_field(startx, starty).immovable:upgrade(true)
+       map:get_field(startx, starty).immovable:enhance(true)
     end
     if (map:get_field(startx, starty).immovable.descr.type_name == "militarysite") then
-       map:get_field(startx, starty).immovable:upgrade(true)
+       map:get_field(startx, starty).immovable:enhance(true)
     end
     if (map:get_field(startx, starty).immovable.descr.type_name == "warehouse") then
-       map:get_field(startx, starty).immovable:upgrade(true)
+       map:get_field(startx, starty).immovable:enhance(true)
     end
     if (map:get_field(startx, starty).immovable.descr.type_name == "market") then
-       map:get_field(startx, starty).immovable:upgrade(true)
+       map:get_field(startx, starty).immovable:enhance(true)
     end
 end
 
-function upgrade_all_buildings(player_number, buildingname)
+function enhance_all_buildings(player_number, building_name)
     local game = wl.Game()
     local player = game.players[player_number]
+    local tribe = player.tribe
+    local tribe_name = tribe.name
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == buildingname or tbuilding.name == buildingname or player.tribe.name == buildingname then
-             building:upgrade(true)
+          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
+             building:enhance(true)
+          end
+       end
+    end
+end
+
+function upgrade_all_buildings(player_number, building_name)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local tribe = player.tribe
+    local tribe_name = tribe.name
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
+             building:enhance(true)
           end
        end
     end
@@ -634,10 +688,12 @@ end
 function stop_all_buildings(player_number, building_name, stop)
     local game = wl.Game()
     local player = game.players[player_number]
+    local tribe = player.tribe
+    local tribe_name = tribe.name
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == building_name or tbuilding.name == building_name or player.tribe.name == building_name then
+          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
              if not (building.is_stopped == stop) then
                  building:toggle_start_stop()
              end
