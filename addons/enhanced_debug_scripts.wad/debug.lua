@@ -45,21 +45,33 @@ end
 
 function set_seafaring(player_number, OnOff)
     local game = wl.Game()
+    local suffix = ""    
     
     if player_number > 0 then
         local player = game.players[player_number]
+        
+        if player.tribe.name == "europeans" then
+            suffix = "_basic"
+        else
+            suffix = ""
+        end
     
         if OnOff == true then
-            player:allow_buildings{player.tribe.port}
+            player:allow_buildings{player.tribe.port, (player.tribe.name .. "_shipyard" .. suffix)}
         elseif OnOff == false then
-            player:forbid_buildings{player.tribe.port}
+            player:forbid_buildings{player.tribe.port, (player.tribe.name .. "_shipyard" .. suffix)}
         end
     else
         for idx, player in ipairs(game.players) do
+            if player.tribe.name == "europeans" then
+                suffix = "_basic"
+            else
+                suffix = ""
+            end
             if OnOff == true then
-                player:allow_buildings{player.tribe.port}
+                player:allow_buildings{player.tribe.port, (player.tribe.name .. "_shipyard" .. suffix)}
             elseif OnOff == false then
-                player:forbid_buildings{player.tribe.port}
+                player:forbid_buildings{player.tribe.port, (player.tribe.name .. "_shipyard" .. suffix)}
             end
         end
     end
