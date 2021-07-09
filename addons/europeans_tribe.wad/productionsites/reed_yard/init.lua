@@ -16,6 +16,7 @@ descriptions:new_productionsite_type {
    },
    return_on_dismantle = {
       blackwood = 2,
+      reed = 3,
       granite = 1
    },
 
