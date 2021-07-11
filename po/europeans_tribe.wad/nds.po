@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-10 08:31+0200\n"
+"POT-Creation-Date: 2021-07-11 03:11+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -3257,7 +3257,6 @@ msgstr "Dat is dat Europäers-Volk!"
 
 #. TRANSLATORS: Helptext for an europeans ware: Log, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:96
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Logs are an important basic building material. They are produced by felling "
@@ -3279,18 +3278,17 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a barbarian ware: Blackwood
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:108
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
 "buildings. It is produced out of logs in the wood hardener (basic sawmill)."
 msgstr ""
 "Deeses Holt is im Füür hardt worden. ’t is so hard as Iesen un word för "
-"eenige Husen bruukt. ’t word in de Holtharderee ut Boomstammen produzeert."
+"eenige Husen bruukt. ’t word in de Holtharderee (Lütte Saagmöhlen) ut "
+"Boomstammen produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Planks, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:118
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Planks are an important building material."
 msgstr "Planken sünd een wichtigs Baumaterial."
@@ -3303,14 +3301,12 @@ msgstr "Se worden in de Saagmöhlen ut Boomstammen produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Planks, part 3
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:122
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "They are also used by the smithy, ferryyard and shipyard."
-msgstr "Se worden ok in de Warktüügsmee un Wapensmee bruukt."
+msgstr "Se worden ok in de Smee, Warft un Fährenwarft bruukt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Reed, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:133
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Reed are an important building material."
 msgstr "Reit is een wichtigs Baumaterial."
@@ -3346,14 +3342,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Cloth
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:172
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Spidercloth is consumed in the smithy to make tools and golden tabard."
-msgstr "Spinnenstoff word in de Warktüügsmee bruukt."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:186
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Granite is a basic building material."
 msgstr "Flint is een wichtigs Baumaterial."
@@ -3366,23 +3360,20 @@ msgstr "De Europäers produzeeren Flintblocken in Flintslagerhusen."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:199
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Grout is a basic building material."
 msgstr "Mörtel is een wichtigs Baumaterial."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:201
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The europeans produces grout in lime kiln or stonemasons house out of "
 "granite and water."
-msgstr "De Europäers produzeeren Mörtel in Steenbickerhusen ut Flint un Water."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:212
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Clay is needed to make bricks."
 msgstr "Lehm bruukt man, um Backstenen to maken."
@@ -3395,20 +3386,17 @@ msgstr "De Europäers kriegen Lehm ut Lehmkuhlen."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:225
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Brick is a basic building material."
 msgstr "Backstenen sünd een wichtigs Baumaterial."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:227
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The europeans produces bricks in lime kiln or stonemasons house out of clay, "
 "granite and water."
 msgstr ""
-"De Europäers produzeeren Backstenen in Steenbickerhusen ut Flint un Water."
 
 #. TRANSLATORS: Helptext for an europeans ware: Marble
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:237
@@ -3424,61 +3412,44 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Marble Column
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:246
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Marble columns represent the high culture of the europeans, so they are "
 "needed for nearly every advanced building. They are produced out of marble "
 "at a stonemason’s house."
 msgstr ""
-"Marmelpielers wiesen de hoge Kultuur vun de Europäers un worden daarum för "
-"haast elkeen grotes Huus bruukt. Se worden in eenem Steenbickerhuus ut "
-"Marmel maakt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Quartz
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:255
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These transparent quartz gems are used to build some exclusive buildings. "
 "They are mined as a byproduct in a deep iron mine or by advanced quarry."
 msgstr ""
-"Deeser schienende Blinkerflint word för eenige besünners gode Husen bruukt. "
-"'t word in eenem Flintslagerhuus ofboot."
 
 #. TRANSLATORS: Helptext for an europeans ware: Diamond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:264
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These wonderful diamonds are used to build advanced buildings. They are "
 "mined as a byproduct in a deep coal mine or by advanced quarry."
 msgstr ""
-"Deese wunnermojen Edelstenen worden för eenige besünners gode Husen bruukt. "
-"Se worden in eenem Deepen Köhle-Bargwark ofboot."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fish
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:276
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Fish is one of the biggest food resources of the Europeans. Taverns and Inns "
 "need fish or meat to prepare ration, snack or meal."
 msgstr ""
-"Fiss is eene vun de wichtigsten Spiesen för de Europäers. 't mutt in eener "
-"Rökelkamer rökelt worden, ehr 't vun Bargwarken, Övens-Boen un Bespejers "
-"bruukt worden kann."
 
 #. TRANSLATORS: Helptext for an europeans ware: Meat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:286
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Meat contains a lot of energy, and it is obtained from wild game taken by "
 "hunters."
 msgstr ""
-"In Fleesk steckt bannig vööl Energie. 't word vun Jägers produzeert, indeem "
-"se wille Deerten jaggen."
 
 #. TRANSLATORS: Helptext for an europeans ware: Meat, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:288
@@ -3504,79 +3475,62 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Wheat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:317
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Rye is essential for survival."
-msgstr "Sünner Rogg kann man nich överleven."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Wheat, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:319
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:332
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Wheat is produced by farms and used by mills to produce mixed flour."
-msgstr "Weit word vun Buurdereen produzeert un vun Möhlen bruukt."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Wheat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:330
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Wheat is essential for survival."
-msgstr "Sünner Weit kann man nich överleven."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Flour
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:342
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Mixed flour is produced by the mill out of rye and wheat and is needed in "
 "the tavern or inn to produce ration, snack or meal."
 msgstr ""
-"Mehl word in Möhlen ut Rogg un Weit maakt un word in Backereen bruukt, um "
-"dat gode europäisk Brood to backen."
 
 #. TRANSLATORS: Helptext for a europeans ware: Ration, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:352
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "A small bite to keep miners strong and working. The scout also consumes "
 "rations on his scouting trips."
 msgstr ""
-"Wat goods, um Bargwarkskeerls stark un tofree to hollen. De Bespejer bruukt "
-"ok Happen, wenn he spioneren gaht."
 
 #. TRANSLATORS: Helptext for a europeans ware: Ration, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:354
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Rations are produced in a tavern or an inn out of fish or meat and water and "
 "flour."
 msgstr ""
-"Happen worden in eener Kneipe, eenem Kroog of eenem Weertshuus ut Fiss of "
-"Fleesk of Pitta-Brood produzeert."
 
 #. TRANSLATORS: Helptext for a europeans ware: Snack, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:365
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "A bigger morsel than the ration. Used in mines and to train soldiers in "
 "battlearenas."
 msgstr ""
-"Wat beters as een Happ, um Bargwarkskeerls in Deepen Bargwarken to versörgen."
 
 #. TRANSLATORS: Helptext for a europeans ware: Snack, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:367
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Snacks are produced in a tavern or an inn out of fish or meat and water and "
 "flour."
 msgstr ""
-"Happen worden in eener Kneipe, eenem Kroog of eenem Weertshuus ut Fiss of "
-"Fleesk of Pitta-Brood produzeert."
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:378
@@ -3588,12 +3542,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:380
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Meals are produced in an inn out of fish or meat and water and flour."
 msgstr ""
-"Happen worden in eener Kneipe, eenem Kroog of eenem Weertshuus ut Fiss of "
-"Fleesk of Pitta-Brood produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Water, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:394
@@ -3603,25 +3554,18 @@ msgstr "Sünner Water gifft 't keen Leven!"
 
 #. TRANSLATORS: Helptext for an europeans ware: Water, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:396
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Water is used by fishbreeder, gamekeeper, by all farms, and in the tavern "
 "and the brewery. The spider farm and the sheep farm need to be supplied with "
 "water, too."
 msgstr ""
-"De Fisstüchter, Deertentüchter, all Buurdereen un de Backere un Broeree "
-"bruken Water. De Spinnen- un Schaaptüchtereen mutten ok mit Water versörgt "
-"worden."
 
 #. TRANSLATORS: Helptext for a europeans ware: Barley
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:406
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Barley is a slow-growing grain that is used for brewing beer or mead."
 msgstr ""
-"Garste is een Koorn, wat leep langsaam wasst. ’t word bruukt, um Beer to "
-"broen."
 
 #. TRANSLATORS: Helptext for a europeans ware: Honey
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:415
@@ -3644,58 +3588,43 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Grape
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:433
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These grapes are the base for a tasty wine. They are harvested in a advanced "
 "farm and processed in a winery."
 msgstr ""
-"Ut deesen Druven kann man leckeren Wien maken. Se worden in de Wienplanteree "
-"arnt un in de Wienmakeree verarbeidt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:442
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This beer is produced in a brewery out of barley and water. It is consumed "
 "in trainingssites and mines."
 msgstr ""
-"Deeses Beer word in de Broeree ut Garst un Water produzeert. Övens-Boen "
-"bruken 't."
 
 #. TRANSLATORS: Helptext for an europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:451
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This strong beer is produced in a brewery out of barley and water. It is "
 "consumed in trainingssites and mines."
 msgstr ""
-"Deeses deftig Beer word in de Broeree ut Garst un Water produzeert. Övens-"
-"Boen bruken 't."
 
 #. TRANSLATORS: Helptext for a europeans ware: Mead
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:460
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Mead is produced by breweries. Soldiers drink mead during advanced training. "
 "Advanced miners drinking mead, too."
 msgstr ""
-"Hönnigbeer word vun Broereen produzeert un vun Soldaten bi'm verwiederten "
-"Öven drunken."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:469
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This tasty wine is drunk by soldiers to train in advanced battlearena and by "
 "miners in the deepest mines. It is produced in a winery."
 msgstr ""
-"Deeser gode Wien word vun Soldaten bi'm Öven drunken. 't word in de "
-"Wienmakeree produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Coal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:482
@@ -3707,14 +3636,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Coal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:484
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The fires of the europeans smelting works, smithies are usually fed with "
 "coal."
 msgstr ""
-"Dat Füür in europäisk Smeltwarenk, Panzersmeden un Wapensmeden verbrannt "
-"Köhl."
 
 #. TRANSLATORS: Helptext for an europeans ware: Iron Ore, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:495
@@ -3732,14 +3658,11 @@ msgstr "'t word in Smeltwarken smelt, um all de Metallen to winnen."
 #. TRANSLATORS: Helptext for a europeans ware: Scrap metal (mixed)
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:506
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:527
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Discarded weapons and armor can be recycled in an advanced smelting works to "
 "produce new tools, weapon and armor."
 msgstr ""
-"Olle Wapen un Wapenrocken könen in de Verweerteree verweert worden, um neje "
-"Wapens, Wapenrocken un Warktüüg to produzeren."
 
 #. TRANSLATORS: Helptext for an europeans ware: Iron, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:516
@@ -3765,23 +3688,17 @@ msgstr "Gold is dat düürste vun allen Metallen un word ut Kluten smelt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Gold, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:539
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "It is produced by the smelting works. Armor and weapons are embellished with "
 "gold in the smithy. Some valuable buildings need gold to be build."
 msgstr ""
-"'t word vun de Smeltwark produzeert. Wapenrocken un Wapens worden in de "
-"Panzersmee un Wapensmee mit Gold utrüst."
 
 #. TRANSLATORS: Helptext for an europeans ware: Buckets, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:553
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester, the claydigger, and the fish breeder."
 msgstr ""
-"Grote Emmers för de Förster, Lehmgraver un Fisstüchter – vum Warktüügsmidd "
-"produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an europeans ware: Shovel, part 2
@@ -3799,39 +3716,31 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:714
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:727
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:740
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "They are produced by all smithies."
-msgstr "Se worden vum Warktüügsmidd produzeert."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Shovel, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:566
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the forester, the claydigger and "
 "the farmer use them."
 msgstr ""
-"De Förster, de Lehmgraver un de Buur bruken se also. Se worden vum "
-"Warktüügsmidd produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Saw, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:579
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The saw is an essential tool. This saw is needed by the woodcutter and the "
 "carpenter."
 msgstr ""
-"De Diskler un de Boomslager bruken eene Saag. 't word vum Warktüügsmidd "
-"produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Saw, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:581
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced produced by all smithies."
-msgstr "Sichten worden vum Warktüügsmidd produzeert."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Hammer, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:592
@@ -3843,15 +3752,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Hammer, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:594
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Make sure you’ve always got some in reserve! They are produced by all "
 "smithies."
 msgstr ""
-"Schattsökers, Baukeerls, Wapensmidds un Panzersmidds bruken all eenen "
-"Klöpper. Pass up, dat du alltied welke över hest! Se worden vum "
-"Warktüügsmidd produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Pick, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:605
@@ -3862,53 +3767,42 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Pick, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:607
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "They are produced produced by all smithies."
-msgstr "Se worden vum Warktüügsmidd produzeert."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:618
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The felling ax is the tool to chop down trees."
-msgstr "De Boomslager-Ext is dat Waarktüüg, waar man Bomen mit ofkappt."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:620
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Felling axes are used by lumberjacks and produced produced by all smithies."
 msgstr ""
-"Boomslager-Exten worden vun Boomslagers bruukt un vun de Warktüügsmee "
-"produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fire Tongs, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:631
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr "Füürtangen sünd dat Warktüüg, waar man Kluten mit smelt."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Fire Tongs, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:633
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "They are used in the smelting works and smithies and produced produced by "
 "all smithies."
 msgstr ""
-"Se worden in Smeltwarken un Smeden bruukt un vun de Warktüügsmidd produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Milking Tongs, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:644
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Milking tongs are used by the spider breeder to milk the spiders."
 msgstr ""
-"Spinnentüchters bruken Melktangen, um de Spinnen to melken. Se worden vum "
-"Warktüügsmidd produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Needles, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:657
@@ -3918,15 +3812,11 @@ msgstr "Spinners bruken Naadels."
 
 #. TRANSLATORS: Helptext for an europeans ware: Basket, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:673
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This basket is needed by the farmer for harvesting the fruits and grapes and "
 "needed by miller and by gamekeeper."
 msgstr ""
-"Deesen Körv bruukt de Buur, um Früchten un Druven to arnten. Ok Müllers un "
-"Deertentüchters bruken eenen, un de Meister-Lastendrager draggt daar Waren "
-"mit. ’t word vum Warktüügsmidd produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Basket, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:675
@@ -3938,65 +3828,53 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:686
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The scythe is the tool of the farmers."
-msgstr "Buren bruken Sichten."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Scythe, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:688
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Scythes are produced by all smithies."
-msgstr "Sichten worden vum Warktüügsmidd produzeert."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Fishing Rod, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:699
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Fishing rods are needed by fishers to catch fish."
-msgstr "Fiskers bruken Angles, um Fisse to fangen."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Fishing Net, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:712
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The fishing net is used by the fisher alongsite with fishing rod."
-msgstr "De Fiskernett word vum Fisker bruukt un vum Warktüügsmidd produzeert."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:725
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "This bow is used by the hunter."
-msgstr "De Jäger bruukt eenen Jaggtboog. 't word vum Warktüügsmidd produzeert."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:738
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This spear is light enough to be thrown, but heavy enough to kill any animal "
 "in one blow. It is only used by hunters."
 msgstr ""
-"Deeser Speer is licht genoog tum smieten, aver swaar genoog, um elkeen Deert "
-"mit eenem Slag doodtomaken. Blot Jägers bruken 't."
 
 #. TRANSLATORS: Helptext for an europeans ware: Bread Paddle, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:751
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The bread paddle is the tool of the baker, each baker needs one."
 msgstr ""
-"De Broodschüppe is dat Warktüüg, wat de Backer bruukt; elkeen Backer bruukt "
-"eene."
 
 #. TRANSLATORS: Helptext for an europeans ware: Bread Paddle, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:753
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Bread paddles are produced by all smithies."
-msgstr "Broodschüppen worden vum Warktüügsmidd produzeert."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Hook Pole, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:764
@@ -4034,150 +3912,104 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:797
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The chain armor is a medium armor for europeans soldiers. It is produced in "
 "a smithy and used in a battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
-"De Stahl-Wapenrock is een middelster Wapenrock för europäisk Soldaten. 't "
-"word in de Panzersmee produzeert un im Övens-Lager – tosammen mit Spiesen – "
-"bruukt, um Soldaten vun Gesundheid-Stand 0 up Stand 1 uttobilden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Gilded Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:806
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The gilded armor is an advanced armor of a soldier. It is produced in the a "
 "smithy and used in the battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
-"De Goldene Wapenrock is een goder Wapenrock för europäisk Soldaten. 't word "
-"in de Panzersmee produzeert un im Övens-Lager – tosammen mit Spiesen – "
-"bruukt, um Soldaten vun Gesundheid-Stand 3 up Stand 4 uttobilden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Golden Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:815
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The golden tabard is an advanced armor of a soldier. It is produced in the "
 "advanced smithy and used in a battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
-"De Goldene Wapenrock is een goder Wapenrock för europäisk Soldaten. 't word "
-"in de Panzersmee produzeert un im Övens-Lager – tosammen mit Spiesen – "
-"bruukt, um Soldaten vun Gesundheid-Stand 3 up Stand 4 uttobilden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:827
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the europeans military system. It "
 "is produced in the smithy. In combination with armor or tabard, it is the "
 "equipment to fit out young soldiers."
 msgstr ""
-"Deese Holtpieke is de eenfachste Wapen in de europäisk Soldateree. Se word "
-"in de Wapensmee produzeert. Tosammen mit eenem Wapenrock of eener Kluft is "
-"se de Utrüstung för neje Soldaten."
 
 #. TRANSLATORS: Helptext for an europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:836
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a advanced spear with a steel tip. It is produced in a smithy and "
 "used in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
-"Deese gode Pieke hett eene Tipp vun Stahl. 't word in de Wapensmee "
-"produzeert un im Övens-Lager – tosammen mit Spiesen – bruukt, um Soldaten "
-"vun Angriff-Stand 0 up Stand 1 uttobilden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Broad Ax
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:845
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is an broad ax. It is produced in a smithy and used in a battle arena – "
 "together with food – to train soldiers in attack."
 msgstr ""
-"Dat is eene brede Ext. Se word in de Wapensmee produzeert un im Övens-Lager "
-"– tosammen mit Spiesen – bruukt, um Soldaten vun Angriff-Stand 1 up Stand 2 "
-"uttobilden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Broad Sword
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:854
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a broad sword. It is produced in the advanced smithy and used in a "
 "battle arena – together with food – to train soldiers in attack."
 msgstr ""
-"Dat is een bredes Sweert. 't word in de Wapensmee produzeert un im Övens-"
-"Lager – tosammen mit Spiesen – bruukt, um Soldaten vun Angriff-Stand 3 up "
-"Stand 4 uttobilden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:863
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The mask is the medium defense tool of a soldier. It is produced in a smithy "
 "and used in a battle arena – together with food – to train soldiers in "
 "defense."
 msgstr ""
-"De Stahl-Wapenrock is een middelster Wapenrock för europäisk Soldaten. 't "
-"word in de Panzersmee produzeert un im Övens-Lager – tosammen mit Spiesen – "
-"bruukt, um Soldaten vun Gesundheid-Stand 0 up Stand 1 uttobilden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Steel Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:872
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This steel shield is produced in a smithy and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
-"Deeser Stahlschild word in de Panzersmee produzeert un in Gefahrelken Gangen "
-"– tosammen mit Spiesen – bruukt, um Soldaten vun Verteidigung-Stand 0 up "
-"Stand 3 uttobilden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Advanced Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:881
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These advanced shields are used by the best soldiers of the Europeans. They "
 "are produced in the advanced smithy and used in the advanced battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
-"De besten europäisk Soldaten bruken deese goden Schilden. Se worden in de "
-"Panzersmee produzeert un in Gefahrelken Gangen – tosammen mit Spiesen – "
-"bruukt, um Soldaten vun Verteidigung-Stand 3 up Stand 6 uttobilden."
 
 #. TRANSLATORS: Helptext for an europeans ware: not used anymore
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:893
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:902
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:911
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:920
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Outdated ware, only for backward compatibility for old savegames."
 msgstr ""
-"Deese Waar word nich mehr bruukt; 't gifft se blot noch, daarmit olle sekert "
-"Spelen noch laden."
 
 #. TRANSLATORS: Helptext for an europeans ware: not used anymore
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:929
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Outdated ware, only for backward compatibility for old savegames"
 msgstr ""
-"Deese Waar word nich mehr bruukt; 't gifft se blot noch, daarmit olle sekert "
-"Spelen noch laden."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:944
@@ -5961,81 +5793,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Meat has to be smoked in a smokery before being delivered to mines and "
-#~ "training sites."
-#~ msgstr ""
-#~ "Fleesk mutt in eener Rökelkamer rökelt worden, ehr 't good genoog för de "
-#~ "Bargwarken un Övens-Boen is."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Wheat is produced by farms and used by mills. Sheep farms also need to be "
-#~ "supplied with wheat."
-#~ msgstr ""
-#~ "Weit word vun Buurdereen produzeert un vun Möhlen bruukt. "
-#~ "Schaaptüchtereen mutten ok mit Weit versörgt worden."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "A meal is made out of pitta bread, strong beer and fish/meat in a big "
-#~ "inn. This substantial food is exactly what workers in a deeper mine need."
-#~ msgstr ""
-#~ "Een Mahl word in eenem Weertshuus ut Pitta-Brood, Deftigen Beer un Fiss "
-#~ "of Fleesk maakt. Dat is wat de Arbeiders in eenem Bannig deepen Bargwark "
-#~ "bruken."
-
-#~ msgctxt "ware"
-#~ msgid "The shovel is an essential tool."
-#~ msgstr "De Schüppe is een wichtigs Warktüüg."
-
-#~ msgctxt "ware"
-#~ msgid "The saw is an essential tool."
-#~ msgstr "De Saag is een wichtigs Warktüüg."
-
-#~ msgctxt "ware"
-#~ msgid "The hammer is an essential tool."
-#~ msgstr "De Klöpper is een wichtigs Warktüüg."
-
-#~ msgctxt "ware"
-#~ msgid "The pick is an essential tool."
-#~ msgstr "De Pickhack is een wichtigs Warktüüg."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Picks are used by stonemasons and miners. They are produced by the "
-#~ "toolsmith."
-#~ msgstr ""
-#~ "Flintslagers un Bargwarkskeerls bruken Pickhacken. Se worden vum "
-#~ "Warktüügsmidd produzeert."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This hook pole is used by the smoker to suspend all the meat and fish "
-#~ "from the top of the smokery. It is created by the toolsmith."
-#~ msgstr ""
-#~ "De Rökeler bruukt de Staak mit Haken, um dat Fleesk un de Fisse vum Dack "
-#~ "vun de Rökelkamer to hangen. 't word vum Warktüügsmidd produzeert."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The golden tabard is an advanced armor of a soldier. It is produced in an "
-#~ "armor smithy. It is produced in an armor smithy and used in a training "
-#~ "camp – together with food – to train soldiers from health level 3 to "
-#~ "level 4."
-#~ msgstr ""
-#~ "De Goldene Kluft is een goder Wapenrock för europäisk Soldaten. 't word "
-#~ "in de Panzersmee produzeert un im Övens-Lager – tosammen mit Spiesen – "
-#~ "bruukt, um Soldaten vun Gesundheid-Stand 3 up Stand 4 uttobilden."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The mask is the medium armor of a soldier. It is produced in an armor "
-#~ "smithy. It is produced in an armor smithy and used in a training camp – "
-#~ "together with food – to train soldiers from health level 2 to level 3."
-#~ msgstr ""
-#~ "De Mask is een middelster Wapenrock för europäisk Soldaten. 't word in de "
-#~ "Panzersmee produzeert un im Övens-Lager – tosammen mit Spiesen – bruukt, "
-#~ "um Soldaten vun Gesundheid-Stand 2 up Stand 3 uttobilden."
