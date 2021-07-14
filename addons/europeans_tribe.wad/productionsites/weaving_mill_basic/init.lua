@@ -87,7 +87,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
          descname = _"weaving cloth",
          actions = {
-            "return=skipped unless economy needs cloth",
+            "return=skipped unless economy needs cloth  or workers need experience",
             "sleep=duration:10s",
             "consume=reed:3",
             "playsound=sound/barbarians/weaver priority:90%",

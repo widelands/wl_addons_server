@@ -79,13 +79,30 @@ local r = {
     place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
     })
     
-    for i = 1, 25 do
+    -- Get all trainingsite types
+    local trainingsite_types = {}
+    local trainingsites = {}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "trainingsite") then
+            table.insert(trainingsite_types, building.name)
+        end
+    end
+    
+    for i = 1, 1000 do
         -- Delay of 15 min between actions
         sleep(900000)
-        
+            
         -- Allow all (advanced) buildings after 6 hours of game
         if i >= 24 then
            player:allow_buildings("all")
+            -- collect all ~trainingssites
+            for i, building_name in ipairs(trainingsite_types) do
+                trainingsites = player:get_buildings(building_name)
+                -- if there is more than 1 building of each kind, enhance the first one, to prevent an AI bug
+                if #trainingsites > 1 then
+                    trainingsites[0]:enhance(true)
+                end
+            end
         end 
     end
 end

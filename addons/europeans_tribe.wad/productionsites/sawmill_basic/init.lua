@@ -102,7 +102,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
          descname = _"sawing logs",
          actions = {
-            "return=skipped unless economy needs planks",
+            "return=skipped unless economy needs planks or workers need experience",
             "consume=log:4",
             "sleep=duration:10s",
             "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
@@ -127,7 +127,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
          descname = _"hardening wood",
          actions = {
-            "return=skipped unless economy needs blackwood",
+            "return=skipped unless economy needs blackwood or workers need experience",
             "consume=log:4",
             "sleep=duration:10s",
             "playsound=sound/barbarians/blackwood priority:60%",
