@@ -6,7 +6,7 @@ include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
-local r = {
+local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Poor Hamlet",
     -- TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
@@ -85,7 +85,16 @@ local r = {
 
     check_trees_rocks_poor_hamlet(player, sf, "europeans_headquarters", {granite = 1}, {log = 1, planks = 1, granite = 1})
       
-    for i = 1, 49 do
+    -- Get all trainingsite types
+    local trainingsite_types = {}
+    local trainingsites = {}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "trainingsite") then
+            table.insert(trainingsite_types, building.name)
+        end
+    end
+    
+    for i = 1, 1000 do
         -- Delay of 15 min between actions
         sleep(900000)
         
@@ -101,10 +110,18 @@ local r = {
         -- Allow all (advanced) buildings after 12 hours of game
         if i >= 48 then
            player:allow_buildings("all")
-        end 
+            -- collect all ~trainingssites
+            for i, building_name in ipairs(trainingsite_types) do
+                trainingsites = player:get_buildings(building_name)
+                -- if there is more than 1 building of each kind, enhance the first one, to prevent an AI bug
+                if #trainingsites > 1 then
+                    trainingsites[0]:enhance(true)
+                end
+            end
+        end
     end
 end
 }
 
 pop_textdomain()
-return r
+return init

@@ -76,20 +76,29 @@ init = {
 
     -- Get all warehouse types
     local warehouse_types = {}
+    local warehouses = {}
     for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
         if (building.type_name == "warehouse") then
             table.insert(warehouse_types, building.name)
+        end
+    end
+    
+    -- Get all trainingsite types
+    local trainingsite_types = {}
+    local trainingsites = {}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "trainingsite") then
+            table.insert(trainingsite_types, building.name)
         end
     end
 
     -- index of a warehouse we will add to. Used to 'rotate' warehouses
     local idx = 1
 
-    for i = 1, 100000 do
+    for i = 1, 10000 do
         sleep(300000)
 
         -- collect all ~warehouses and pick one to insert the wares
-        local warehouses = {}
         for i, building_name in ipairs(warehouse_types) do
             warehouses = array_combine(warehouses, player:get_buildings(building_name))
         end
@@ -108,6 +117,10 @@ init = {
             end
             if player:get_wares("log") < 2 then
                 wh:set_wares("log", wh:get_wares("log") + 2)
+                added = added + 1
+            end
+            if player:get_wares("reed") < 2 then
+                wh:set_wares("reed", wh:get_wares("log") + 2)
                 added = added + 1
             end
             if player:get_wares("granite") < 2 then
@@ -134,6 +147,15 @@ init = {
                 print (player.number..": "..added.." types of ware added to warehouse "..idx.." of "..#warehouses.." (cheating mode)")
             end
             idx = idx + 1
+        end
+        
+        -- collect all ~trainingssites
+        for i, building_name in ipairs(trainingsite_types) do
+            trainingsites = player:get_buildings(building_name)
+            -- if there is more than 1 building of each kind, enhance the first one, to prevent an AI bug
+            if #trainingsites > 1 then
+                trainingsites[0]:enhance(true)
+            end
         end
     end
 end
