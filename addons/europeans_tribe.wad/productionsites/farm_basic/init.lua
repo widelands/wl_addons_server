@@ -84,7 +84,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
          descname = _"planting barley",
          actions = {
-            "return=skipped unless economy needs barley",
+            "return=skipped unless economy needs barley or workers need experience",
             "consume=water",
             "callworker=plant_barley",
             "animate=working duration:6s",
@@ -95,7 +95,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
          descname = _"planting rye",
          actions = {
-            "return=skipped unless economy needs rye",
+            "return=skipped unless economy needs rye or workers need experience",
             "consume=water",
             "callworker=plant_rye",
             "animate=working duration:6s",
@@ -106,7 +106,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
          descname = _"planting wheat",
          actions = {
-            "return=skipped unless economy needs wheat",
+            "return=skipped unless economy needs wheat or workers need experience",
             "consume=water",
             "callworker=plant_wheat",
             "animate=working duration:6s",
