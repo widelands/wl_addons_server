@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Joe Hansen <joedalton2@yahoo.dk>, 2021
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-10 08:30+0200\n"
+"POT-Creation-Date: 2021-07-14 03:12+0000\n"
 "PO-Revision-Date: 2021-02-18 19:31+0000\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2021\n"
 "Language-Team: Danish (https://www.transifex.com/widelands/teams/35159/da/)\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: addons/auto_soldiers_cs.wad/addon:2
 msgid "Automatic Soldier Setting for Military Construction Sites"
-msgstr ""
+msgstr "Automatisk indstilling for soldater for militære konstruktionssteder"
 
 #: addons/auto_soldiers_cs.wad/addon:3
 msgid ""
@@ -28,3 +32,8 @@ msgid ""
 "military buildings in sight prefer always heroes and set capacity to max. "
 "Once a player adjusted one of these settings, this script does nothing."
 msgstr ""
+"Hvis der ingen militær bygning er i sigte, så vil hvert nyt "
+"konstruktionssted angives til at foretrække grønskollinger og reducere "
+"kapaciteten til 1. Hvis der fjendtlige militære bygninger i sigte "
+"foretrækkes altid helte og kapaciteten er sat til maksimum. Når først en "
+"spiller har justeret en af disse indstillinger, så gør skriptet intet."
