@@ -206,7 +206,7 @@ The Widelands Development Team
 0
 1.1.0
 11
-3556233
+3562440
 maps
 0
 11
@@ -221,7 +221,7 @@ Tournament_2021/Cross_8_No_Coal.wmf
 Tournament_2021/Cross_8_No_Coal.wmf/binary
 Tournament_2021/Last_Survivors_No Coal.wmf
 Tournament_2021/Last_Survivors_No Coal.wmf/binary
-57
+58
 Tournament_2021/Char_Wars.wmf/binary/heights
 Tournament_2021/Char_Wars.wmf/binary/mapobjects
 Tournament_2021/Char_Wars.wmf/binary/resource
@@ -279,6 +279,7 @@ Tournament_2021/Last_Survivors_No Coal.wmf/port_spaces
 Tournament_2021/Last_Survivors_No Coal.wmf/version
 addon
 dirnames
+icon.png
 21
 bg.mo
 ca.mo
@@ -301,7 +302,7 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-78
+79
 fea744b97fc99a5728f08ee0373988e2
 dc9e99ca9cd87e3b66230f29748b7259
 92600613bcd94f20507e0e4df1c7ccf5
@@ -359,6 +360,7 @@ d0bbbf1002c180708cc24f61988a59f3
 6f27e38d0388a9a8d20c14f54001bd55
 97ef0841b974774f3e49e180a1e027c8
 642d20f181caa54daa48a7f9e5269516
+0286396df7c28990e5c7058b8f5ad501
 3e125a61f15d783675ee943ad86ae230
 c30b53d32ed2c958141a5b9b97579c9b
 e31b11830296e013e4a4f44e1a24e6cb
@@ -393,13 +395,14 @@ The Widelands Development Team
 0
 1.0.1
 5
-7918
+14125
 win_condition
 1
 Tournament_2021_maps.wad
 0
-2
+3
 addon
+icon.png
 init.lua
 21
 bg.mo
@@ -423,8 +426,9 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-23
+24
 cfae3bb1f3922a936f32d82d3c704a3b
+0286396df7c28990e5c7058b8f5ad501
 7689d7b4ce23d4f8c520ba89c576dd2f
 3e125a61f15d783675ee943ad86ae230
 c30b53d32ed2c958141a5b9b97579c9b
@@ -520,7 +524,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-1
+0
 0
 0.0
 0
@@ -41137,18 +41141,19 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-12
-1
-9.0
+0
+0
+0.0
 0
 1.0.1
 17
-636
+21812
 script
 0
 0
-2
+3
 addon
+icon.png
 init.lua
 21
 bg.mo
@@ -41172,8 +41177,9 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-23
+24
 186f13f55c5a735f65eedf34ffd56298
+a52686cc52632191d01f18ccb2efe6cc
 352c6149631c1cc056d7f0356d636872
 ad18231c9f68efeacba5baf83d94426a
 63bbc35a023f3442b63de0eb6561fca3
@@ -41203,44 +41209,21 @@ A strange new world.
 Nordfriese
 Nordfriese
 1600000000
-2
-2
-10.0
-6
-Hello
-This is a test comment :)  
-1.0.0
-1613320579
-Hello
-Second test.  
-1.0.0
-1613320906
-Hello
-This is a long comment!  
-1.0.1
-1613580497
-Tester
-test number 4, from Tester this time...  
-1.0.1
-1613583463
-Tester
-test5  
-1.0.1
-1613583847
-Tester
-test6  
-1.0.1
-1613584184
+0
+0
+0.0
+0
 1.0.2
 16
-300996
+306029
 world
 0
 1
 terrains
-38
+39
 addon
 editor.lua
+icon.png
 terrains/beach.png
 terrains/dust1.png
 terrains/dust2.png
@@ -41299,9 +41282,10 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-59
+60
 fdeb23b986162729ec25b007e674bad7
 bb9b6f8a75ddcab28c5ffed5d0a95305
+7cdc0cffa90abfb946d34f093e27a67f
 491cdeffd5e45aa7a5aa507bcf88b224
 c0a32297d6b486ad7425ee60081e6c79
 2488ef484a5c41b0c9d4795e37a9c3e9
@@ -41366,13 +41350,13 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 The Widelands Development Team
 1600000000
-2
+0
 0
 0.0
 0
 1.0.3
 24
-800591
+806798
 maps
 0
 7
@@ -41383,7 +41367,7 @@ Formerly_Official_Maps/Sun_of_Fire.wmf
 Formerly_Official_Maps/Sun_of_Fire.wmf/binary
 Formerly_Official_Maps/Volcanic_Winter.wmf
 Formerly_Official_Maps/Volcanic_Winter.wmf/binary
-42
+43
 Formerly_Official_Maps/Impact.wmf/binary/bob
 Formerly_Official_Maps/Impact.wmf/binary/bob_data
 Formerly_Official_Maps/Impact.wmf/binary/building
@@ -41426,6 +41410,7 @@ Formerly_Official_Maps/Volcanic_Winter.wmf/port_spaces
 Formerly_Official_Maps/Volcanic_Winter.wmf/version
 addon
 dirnames
+icon.png
 21
 bg.mo
 ca.mo
@@ -41448,7 +41433,7 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-63
+64
 bd62905de04eca8db85fa3d03307225c
 f8aa81c5165bb81ba2568df4c7678f38
 c653c77b11eb9ea5ac31faa62b705baa
@@ -41491,6 +41476,7 @@ fdc39d04be201964c602f94576d3912f
 ee3f2919cd50fb639cf37e1d9a576a26
 184ca40ad8fca251cc6a0c6022ba1b5a
 4edcf1d94160a03595594e84fe81830d
+0286396df7c28990e5c7058b8f5ad501
 ad18231c9f68efeacba5baf83d94426a
 3094fcb530ccce9d8b93fc4bd591f988
 1dcf58e104e215bcf2e54a2f8f3db124
@@ -41519,13 +41505,13 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-65
+0
 0
 0.0
 0
 2.1.2
 25
-5037930
+5067673
 tribes
 0
 19
@@ -41548,7 +41534,7 @@ salt_works
 salter
 tanner
 tannery
-483
+484
 addon
 barley_flour/barley_flour.png
 barley_flour/init.lua
@@ -41599,6 +41585,7 @@ barley_mill/working_18.png
 barley_mill/working_18_pc.png
 barley_mill/working_19.png
 barley_mill/working_19_pc.png
+icon.png
 leather/idle.png
 leather/init.lua
 leather/menu.png
@@ -42054,7 +42041,7 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-504
+505
 1e8a1290eff1ebb532e0abab04e6dca6
 3dd69cd79e903bfd4d83cfcbdc6ac6e9
 73f53df32e028ed0d3a285941a6c2166
@@ -42105,6 +42092,7 @@ dc1acba54d38e196779245af36624cbb
 36b9df1cb1f8914cdf3201ccac0e041f
 ca5aef936c11f5d29979131965af9eda
 03da1ff7a2f6419dc530bd83df15364e
+26952f701dd99bce47e834a068f5f67d
 63c5b6f9375e6af54609fbe6ccc740f3
 f5b7d32eab2daff503ad27d855df214d
 166df90977b2f49b687251117956995e
@@ -42572,12 +42560,13 @@ Nordfriese
 0
 1.0.1
 15
-462
+11540
 tribes
 0
 0
-2
+3
 addon
+icon.png
 postload.lua
 21
 bg.mo
@@ -42601,8 +42590,9 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-23
+24
 78a5632b4e91f5f3e327d75acc015b1b
+7fd5c17ad16babae8a0ce1ab334c2a69
 3bd7b0233ac5ce6080dba85f7cc4849f
 ad18231c9f68efeacba5baf83d94426a
 0349bb45e64cc3cd847e3c820f3e3933
@@ -43070,7 +43060,7 @@ Nordfriese
 0
 1.0.0
 6
-123719
+125671
 world
 0
 4
@@ -43078,7 +43068,7 @@ blackland_water
 desert
 greenland_water
 winterland_water
-41
+42
 addon
 blackland_water/water_00.png
 blackland_water/water_01.png
@@ -43111,6 +43101,7 @@ greenland_water/wasser_04.png
 greenland_water/wasser_05.png
 greenland_water/wasser_06.png
 greenland_water/wasser_07.png
+icon.png
 postload.lua
 winterland_water/water_00.png
 winterland_water/water_01.png
@@ -43142,7 +43133,7 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-62
+63
 8a8b463d2a307b74ef89f2d80d405b49
 c11b161f41ae3357ae5ab222e0479cc1
 a95745ed3152252ac0d8e866ba9fc689
@@ -43175,6 +43166,7 @@ e29848f2221a4bbeb989a8507ba55966
 9c9c50a9e2a111630cbb44a35e0e074d
 2883772824212d14ae83b7fdb5fc8d58
 c7e7fab65e0fea669c39eed59beaa984
+c11b161f41ae3357ae5ab222e0479cc1
 eeeb085ced33a6f6e3425ec00850392d
 cc0b60ed50faa3f42b8b205e08d02a94
 497fcb3c8386e3c1aa5c5e1c1b740d40
@@ -43212,7 +43204,7 @@ The old Widelands beta UI.
 matthiakl
 matthiakl
 1600000000
-2
+0
 0
 0.0
 0
@@ -43353,7 +43345,7 @@ Minimalistic theme with reduced colors. Note that you have to enable the theme i
 kaputtnik
 kaputtnik
 1614637671
-1
+0
 0
 0.0
 0
@@ -43542,13 +43534,14 @@ Nordfriese
 0
 1.0.1
 18
-480
+26395
 world
 0
 0
-3
+4
 addon
 editor.lua
+icon.png
 postload.lua
 21
 bg.mo
@@ -43572,9 +43565,10 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-24
+25
 2dcf9049b70e11757eeec38c864cdb7f
 5fc49e18b1cb430800c4d456f4f8f7c2
+4258ae59681eabe3f2933f2e984a2b69
 3668e59f204a6d69b906881752ebbb35
 ad18231c9f68efeacba5baf83d94426a
 292717a229d8e2a434eaa802bcfd5c70
@@ -44912,7 +44906,7 @@ Nordfriese
 0
 1.1.1
 21
-4556531
+4576769
 tribes
 0
 4
@@ -44920,7 +44914,7 @@ bar_deep_well
 bar_well_keeper
 fri_deep_well
 fri_well_keeper
-226
+227
 addon
 bar_deep_well/idle_00.png
 bar_deep_well/idle_00_pc.png
@@ -45146,6 +45140,7 @@ fri_well_keeper/walkload_w_2.png
 fri_well_keeper/walkload_w_2_pc.png
 fri_well_keeper/walkload_w_4.png
 fri_well_keeper/walkload_w_4_pc.png
+icon.png
 postload.lua
 21
 bg.mo
@@ -45169,7 +45164,7 @@ pt.mo
 ru.mo
 sk.mo
 sv.mo
-247
+248
 80ee193276dd6b287a0ea47f0319404e
 eca4bf851ff65741917578b930d01094
 a6f899e1394aedcc263cf4784093c478
@@ -45395,6 +45390,7 @@ dd7558f695d7131ebefad5bba9fbeec7
 98879aa8799d1416adb120d95e6c95cd
 59e385beea8f8da6236d8a6c0e1eee18
 38be5b186d39a528fba2243d964f0b1a
+a86737d31b070699728cd8980812c034
 e080b54eae327d404b5bdaa9625b1f5c
 ad18231c9f68efeacba5baf83d94426a
 29edf29e6aaadd084b949ee241aeaafd

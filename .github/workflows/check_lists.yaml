@@ -1,4 +1,4 @@
-name: Checking lists integrity
+name: Lists & Formatting
 on:
   pull_request:
   push:
@@ -12,22 +12,41 @@ jobs:
       with:
         fetch-depth: 1
     - name: Updating the lists
-      run: |
-        javac *.java
-        java UpdateList < /dev/null
-    - name: Check integrity
+      run: ./update_lists.sh < /dev/null
+    - name: Checking integrity
       run: |
         if [ -n "$(git status -s)" ]
         then
-          echo "################################################################"
-          echo "  The lists are not clean! Run the following commands to"
+          echo "############################################################"
+          echo "  The lists are not clean! Run './update_lists.sh' to"
           echo "  clean up your lists, then commit and push the changes."
-          echo "      javac *.java"
-          echo "      java UpdateList"
-          echo "################################################################"
+          echo "############################################################"
           git status
           git diff
           exit 1
         else
           echo "Lists are clean"
         fi
+
+  format:
+    if: github.event_name == 'push'
+    needs: [check]
+    name: Format code
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Installing formatting tools
+      run: |
+        sudo apt-get update
+        sudo apt-get purge -y clang-10 clang-format-10 clang-11 clang-format-11
+        sudo apt-get install clang-format-12
+        sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-12 100
+        sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-12 100
+        sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/clang-format-12 100
+    - name: Formatting code
+      run: clang-format -i wl/*/*.java
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "Your code was automatically formatted."
+        file_pattern: list* wl/*/*.java
