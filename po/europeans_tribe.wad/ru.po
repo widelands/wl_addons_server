@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-17 03:11+0000\n"
+"POT-Creation-Date: 2021-07-21 03:12+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -492,31 +492,31 @@ msgstr "Малая башня"
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your small tower."
-msgstr ""
+msgstr "Ваши солдаты заняли малую башню."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:49
 msgctxt "europeans_building"
 msgid "Your small tower discovered an aggressor."
-msgstr ""
+msgstr "В окрестностях малой башни - враг."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:51
 msgctxt "europeans_building"
 msgid "Your small tower is under attack."
-msgstr ""
+msgstr "На вашу малую башню напали."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the small tower."
-msgstr ""
+msgstr "Враг преодолел сопротивление гарнизона малой башни."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the small tower."
-msgstr ""
+msgstr "Нападение на малую башню отбито."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_advanced/init.lua:8
@@ -658,6 +658,9 @@ msgid ""
 "fields or bushes in his work area. You should consider building another farm "
 "or berry farm nearby, or dismantling or destroying this building."
 msgstr ""
+"Пасечник отсюда не может найти цветущие поля или кусты в своей рабочей "
+"области. Вам стоит построить неподалеку фермы или разбить ягодник, или же "
+"разобрать или снести это здание."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:8
@@ -740,7 +743,7 @@ msgstr "Обновленная пивоварня"
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:66
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:86
 msgid "working"
-msgstr ""
+msgstr "занят"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:66
@@ -796,7 +799,7 @@ msgstr "Расширенная пивовиноварня"
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:142
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:158
 msgid "making wine"
-msgstr "делает вино"
+msgstr "курит вино"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_advanced/init.lua:8
@@ -815,7 +818,7 @@ msgstr "Продвинутая печь углежога"
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:74
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:85
 msgid "producing coal"
-msgstr "готовит уголь"
+msgstr "обжигает уголь"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_basic/init.lua:8
@@ -843,12 +846,12 @@ msgstr "месит глину"
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish in a pond because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:75
 msgid "breeding fish in a pond"
-msgstr ""
+msgstr "разводит рыбу в пруду"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding fish in the sea because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:86
 msgid "breeding fish in the sea"
-msgstr ""
+msgstr "разводит рыбу в море"
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:55
@@ -871,10 +874,13 @@ msgid ""
 "fish in his work area. Remember that you can only regenerate your fish "
 "resources if there are some fish left to breed."
 msgstr ""
+"Местный рыбозаводчик не может найти рыбу в своей рабочей области. Помните: "
+"восстанавливать косяки рыб вы можете лишь тогда, когда осталась рыба на "
+"разведение."
 
 #: addons/europeans_tribe.wad/productionsites/clay_pit/init.lua:103
 msgid "The fishing grounds are full"
-msgstr ""
+msgstr "Рыболовные угодья забиты рыбой"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_basic/init.lua:8
@@ -927,6 +933,8 @@ msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"Шахта исчерпала основные залежи угля. Добыча обязательно упадет при "
+"сохранении затрат. Углубите, разберите или снесите ее."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_1/init.lua:8
@@ -972,6 +980,8 @@ msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"Шахта исчерпала основные залежи угля. Добыча обязательно упадет при "
+"сохранении затрат. Вам остается только разобрать или снести ее."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:8
@@ -985,7 +995,7 @@ msgstr "Ферма"
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:69
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:57
 msgid "planting barley"
-msgstr ""
+msgstr "сеет ячмень"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:96
@@ -1009,7 +1019,7 @@ msgstr "сеет пшеницу"
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:129
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:134
 msgid "harvesting barley"
-msgstr ""
+msgstr "жнет ячмень"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:130
@@ -1017,7 +1027,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:165
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:189
 msgid "harvesting rye"
-msgstr ""
+msgstr "жнет рожь"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:142
@@ -1025,7 +1035,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:177
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:200
 msgid "harvesting wheat"
-msgstr ""
+msgstr "жнет пшеницу"
 
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:155
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:166
@@ -1062,14 +1072,14 @@ msgstr "Ферма 1 уровня"
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:90
 msgid "planting corn"
-msgstr ""
+msgstr "сеет кукурузу"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:129
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:153
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:167
 msgid "harvesting corn"
-msgstr ""
+msgstr "собирает кукурузу"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:8
@@ -1081,13 +1091,13 @@ msgstr "Ферма 2 уровня"
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:93
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:79
 msgid "planting blackroot"
-msgstr ""
+msgstr "сеет козелец"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:141
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:156
 msgid "harvesting blackroot"
-msgstr ""
+msgstr "собирает козелец"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:8
@@ -1103,7 +1113,7 @@ msgstr "садит ягодник"
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:101
 msgid "planting grape"
-msgstr ""
+msgstr "садит виноград"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:145
@@ -1113,7 +1123,7 @@ msgstr "собирает ягоды"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:178
 msgid "harvesting grape"
-msgstr ""
+msgstr "собирает виноград"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:8
@@ -1148,6 +1158,8 @@ msgid ""
 "work area. Remember that you can increase the number of existing fish by "
 "building a fish breeder’s house."
 msgstr ""
+"Местный рыбак не может найти рыбу в своей рабочей области. Помните: вы "
+"можете увеличить численность имеющийся рыбы, построив домик рыбозаводчика."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:8
@@ -1218,7 +1230,7 @@ msgstr "Хижина егеря"
 #. TRANSLATORS: Completed/Skipped/Did not start releasing game because ...
 #: addons/europeans_tribe.wad/productionsites/gamekeepers_hut/init.lua:50
 msgid "releasing game"
-msgstr ""
+msgstr "выпускает дичь"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_basic/init.lua:8
@@ -1270,6 +1282,8 @@ msgid ""
 "This gold mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"Основная златоносная жила исчерпана. Ожидается меньшая отдача при сохранении "
+"затрат. Вы можете углубить, разобрать или снести шахту."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_1/init.lua:8
@@ -1317,6 +1331,8 @@ msgid ""
 "This gold mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"Златоносная жила исчерпана. Ожидается спад добычи при сохранении затрат. Вы "
+"можете разобрать или снести шахту."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:8
@@ -1352,6 +1368,8 @@ msgid ""
 "work area. Remember that you can build a gamekeeper’s hut to release more "
 "game into the wild."
 msgstr ""
+"Здешний охотник не может найти дичь в своей рабочей области. Помните: вы "
+"можете построить домик егеря для разведения и выпуска дичи в дикую местность."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:8
@@ -1437,7 +1455,7 @@ msgstr "готовит закуску"
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:106
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:120
 msgid "preparing a meal"
-msgstr ""
+msgstr "готовит обед"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:8
