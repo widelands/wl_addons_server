@@ -25,7 +25,7 @@ abstract class ServerUtils {
 
 	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
 	public static String readLine(InputStream in, boolean exceptionOnStreamEnd) throws Exception {
-		String str = "";
+		ByteArrayOutputStream buffer = new ByteArrayOutputStream();
 		for (;;) {
 			int c = in.read();
 			if (c < 0) {
@@ -33,8 +33,8 @@ abstract class ServerUtils {
 					throw new WLProtocolException("Stream ended unexpectedly during readLine");
 				return null;
 			}
-			if (c == '\n') return str;
-			str += (char)c;
+			if (c == '\n') return buffer.toString("UTF-8");
+			buffer.write(c);
 		}
 	}
 
