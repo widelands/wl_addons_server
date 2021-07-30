@@ -377,7 +377,8 @@ class HandleCommand {
 				ServerUtils.doDelete(addOnDir);
 				synchronized (ServerUtils.SYNCER) {
 					TreeMap<String, Utils.Value> edit = new TreeMap<>();
-					edit.put("version", new Utils.Value("version", newProfile.get("version").value));
+					edit.put(
+					    "version", new Utils.Value("version", newProfile.get("version").value));
 					edit.put("security", new Utils.Value("security", "unchecked"));
 					Utils.editMetadata(false, cmd[1], edit);
 
