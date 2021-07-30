@@ -7,6 +7,10 @@ import wl.utils.*;
 
 class ThreadActivityAndGitHubSyncManager {
 	public synchronized void sync() throws Exception {
+		if (!Boolean.parseBoolean(Utils.config("deploy"))) {
+			ServerUtils.log("Test environment sync skipped");
+			return;
+		}
 		Utils.bash("bash", "-c", "git stash clear");
 		if (Utils.bash("bash", "-c", "git pull origin master") != 0) {
 			Utils.bash("bash", "-c", "git stash");

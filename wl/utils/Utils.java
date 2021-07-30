@@ -275,6 +275,11 @@ public abstract class Utils {
 		msg = msg.replaceAll("\"", "❞");
 		msg = msg.replaceAll("'", "❜");
 
+		if (!Boolean.parseBoolean(config("deploy"))) {
+			System.out.println("    SKIPPING message: " + msg);
+			return;
+		}
+
 		System.out.println("    Sending message: " + msg);
 
 		Process p = Runtime.getRuntime().exec(new String[] {
