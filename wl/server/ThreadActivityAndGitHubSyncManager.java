@@ -18,11 +18,11 @@ class ThreadActivityAndGitHubSyncManager {
 			String str;
 			while ((str = b.readLine()) != null) {
 				String file = str.substring(3);
-				System.out.println("Detected merge conflict in file: " + file);
+				ServerUtils.log("Detected merge conflict in file: " + file);
 				if (file.startsWith("list")) {
-					System.out.println("    Skipping (will be newly generated later).");
+					ServerUtils.log("    Skipping (will be newly generated later).");
 				} else if (file.startsWith("metadata/")) {
-					System.out.println(
+					ServerUtils.log(
 					    "    Attempting to resolve the merge conflicts automatically...");
 					Utils.resolveMergeConflicts(new File(file));
 				} else {
@@ -62,8 +62,8 @@ class ThreadActivityAndGitHubSyncManager {
 			}
 		}
 		for (Thread t : kill.keySet()) {
-			System.out.println("Force-closing socket for [" + Thread.currentThread().getName() +
-			                   "] at " + new Date() + " (last activity was " +
+			ServerUtils.log("Force-closing socket for [" + Thread.currentThread().getName() +
+			                   "] (last activity was " +
 			                   Utils.durationString(kill.get(t)) + " ago).");
 			Socket s = lastActivity.remove(t).socket;
 			s.close();

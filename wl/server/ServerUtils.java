@@ -6,12 +6,20 @@ import java.util.*;
 import wl.utils.*;
 
 abstract class ServerUtils {
+	public static final ThreadActivityAndGitHubSyncManager SYNCER =
+	    new ThreadActivityAndGitHubSyncManager();
+	public static final Random RANDOM = new Random(System.currentTimeMillis());
+
 	public static class WLProtocolException extends RuntimeException {
 		public WLProtocolException(String msg) { super("WL Protocol Exception: " + msg); }
 		@Override
 		public String toString() {
 			return getMessage();
 		}
+	}
+
+	public static void log(String msg) {
+		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " + msg);
 	}
 
 	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
