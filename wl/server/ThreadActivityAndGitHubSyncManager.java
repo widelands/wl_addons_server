@@ -67,8 +67,7 @@ class ThreadActivityAndGitHubSyncManager {
 		}
 		for (Thread t : kill.keySet()) {
 			ServerUtils.log("Force-closing socket for [" + Thread.currentThread().getName() +
-			                   "] (last activity was " +
-			                   Utils.durationString(kill.get(t)) + " ago).");
+			                "] (last activity was " + Utils.durationString(kill.get(t)) + " ago).");
 			Socket s = lastActivity.remove(t).socket;
 			s.close();
 		}

@@ -28,12 +28,12 @@ public class Server {
 	}
 
 	public static void handle(String[] cmd,
-	                           PrintStream out,
-	                           InputStream in,
-	                           int version,
-	                           String username,
-	                           boolean admin,
-	                           String locale) throws Exception {
+	                          PrintStream out,
+	                          InputStream in,
+	                          int version,
+	                          String username,
+	                          boolean admin,
+	                          String locale) throws Exception {
 		// String method = null;
 		HandleCommand h = new HandleCommand(cmd, out, in, version, username, admin, locale);
 		switch (Command.valueOf(cmd[0])) {

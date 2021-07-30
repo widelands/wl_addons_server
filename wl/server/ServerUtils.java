@@ -19,7 +19,8 @@ abstract class ServerUtils {
 	}
 
 	public static void log(String msg) {
-		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " + msg);
+		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
+		                   msg);
 	}
 
 	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
