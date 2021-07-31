@@ -182,27 +182,18 @@ public abstract class Utils {
 		votesFile = new File(votesFile, addon);
 		if (!votesFile.isFile()) votesFile.createNewFile();
 
-		File f = new File("metadata", addon + ".server");
-		TreeMap<String, Value> metadata = readProfile(f, addon);
+		TreeMap<String, Value> edit = new TreeMap<>();
+		edit.put(user, new Value(user, v));
+		editProfile(votesFile, addon, edit);
 		TreeMap<String, Value> uservotes = readProfile(votesFile, addon);
-		TreeMap<String, Value> chM = new TreeMap<>();
-		TreeMap<String, Value> chV = new TreeMap<>();
 
-		Value oldVote = uservotes.get(user);
-		if (oldVote != null && !oldVote.value.equals("0")) {
-			if (oldVote.value.equals("" + v)) return;
-			chM.put(
-			    "votes_" + oldVote.value,
-			    new Value("votes_" + oldVote.value,
-			              "" + (Long.valueOf(metadata.get("votes_" + oldVote.value).value) - 1)));
+		edit.clear();
+		for (int i = 1; i <= 10; i++) edit.put("votes_" + i, new Value("votes_" + i, "0"));
+		for (String key : uservotes.keySet()) {
+			String vote = "votes_" + uservotes.get(key).value;
+			if (edit.containsKey(vote)) edit.put(vote, new Value(vote, "" + (Long.valueOf(edit.get(vote).value) + 1)));
 		}
-		chV.put(user, new Value(user, "" + v));
-		if (!v.equals("0"))
-			chM.put(
-			    "votes_" + v,
-			    new Value("votes_" + v, "" + (Long.valueOf(metadata.get("votes_" + v).value) + 1)));
-		editMetadata(true, addon, chM);
-		editProfile(votesFile, addon, chV);
+		editMetadata(true, addon, edit);
 	}
 
 	synchronized public static void
