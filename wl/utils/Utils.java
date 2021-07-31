@@ -191,7 +191,8 @@ public abstract class Utils {
 		for (int i = 1; i <= 10; i++) edit.put("votes_" + i, new Value("votes_" + i, "0"));
 		for (String key : uservotes.keySet()) {
 			String vote = "votes_" + uservotes.get(key).value;
-			if (edit.containsKey(vote)) edit.put(vote, new Value(vote, "" + (Long.valueOf(edit.get(vote).value) + 1)));
+			if (edit.containsKey(vote))
+				edit.put(vote, new Value(vote, "" + (Long.valueOf(edit.get(vote).value) + 1)));
 		}
 		editMetadata(true, addon, edit);
 	}
