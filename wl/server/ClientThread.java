@@ -70,7 +70,9 @@ class ClientThread implements Runnable {
 				if (!sql.next())
 					throw new ServerUtils.WLProtocolException("User " + username +
 					                                          " did not set a password");
-				final String passwordHash = sql.getString(1);
+				String passwordHash = "";
+				for (byte b : Base64.getDecoder().decode(sql.getString(1)))
+					passwordHash = String.format("%s%02x", passwordHash, b);
 
 				Process p = Runtime.getRuntime().exec(new String[] {"md5sum"});
 				PrintWriter md5 = new PrintWriter(p.getOutputStream());

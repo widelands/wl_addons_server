@@ -22,7 +22,7 @@ Further, ensure that an ini-style config file called `config` exists in the work
 
 Key                | Description                                                        | Example
 ------------------ | ------------------------------------------------------------------ | ------------------------------------------------------
-`port`             | Port number for the server                                         | `7399`
+`port`             | Port number for the server                                         | `7388`
 `githubusername`   | User name for GitHub                                               | `bunnybot`
 `githubtoken`      | Personal Access Token for GitHub                                   | `123456abcdef`
 `uservotesdir`     | Directory where users’ votes are stored                            | `/home/bunnybot/addons_server/uservotes`
@@ -31,7 +31,7 @@ Key                | Description                                                
 `databasepassword` | Password of the database user                                      | `123456`
 `deploy`           | Whether this server is the real thing, not just a test environment | `true` or `false`
 
-Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on the specified port of your machine. In order to connect to this server from the game, run Widelands with the commandline parameters `--addon_server_ip=127.0.0.1 --addon_server_port=7399` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server and `7399` with the port number from the config file).  
+Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on the specified port of your machine. In order to connect to this server from the game, run Widelands with the commandline parameters `--addon_server_ip=127.0.0.1 --addon_server_port=7388` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server and `7388` with the port number from the config file).
 Note that the server runs as a daemon; that is, it is independent from your process and all output is redirected to a file called `server.log` which will be overwritten on every run. To terminate the server daemon, retrieve the PID of the process from the second line of the logfile and then type `kill <PID>`.
 
 The server protocol is documented in `wl/server/Command.java`.
