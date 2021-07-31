@@ -34,7 +34,8 @@ abstract class ServerUtils {
 				return null;
 			}
 			if (c == '\n') return buffer.toString("UTF-8");
-			if (count > 10000) throw new ServerUtils.WLProtocolException("Line length limit exceeded");
+			if (count > 10000)
+				throw new ServerUtils.WLProtocolException("Line length limit exceeded");
 			buffer.write(c);
 		}
 	}
