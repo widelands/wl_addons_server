@@ -2,8 +2,8 @@ name: Update Translations
 on:
   workflow_dispatch:
   schedule:
-    # Daily at 3:00 a.m.
-    - cron: '0 3 * * *'
+    # Daily at 1:00 a.m.
+    - cron: '0 1 * * *'
 jobs:
   update_translations:
     if: github.repository == 'widelands/wl_addons_server'
@@ -21,7 +21,6 @@ jobs:
         echo "${{ secrets.TXAUTH }}" > ~/.transifexrc
         git config --global user.name "The Widelands Translations Bot"
         git config --global user.email "bunnybot@widelands.org"
-        javac *.java
         tx pull -fa
         ./buildcats.sh < /dev/null
         if [ ${{ github.event_name }} == "workflow_dispatch" ] || [ -n "$(git status -s i18n list*)" ]
