@@ -113,8 +113,10 @@ class HandleCommand {
 		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("Log in to comment");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
+		int nrLines = Integer.valueOf(cmd[3]);
+		if (nrLines < 1 || nrLines > 100) throw new ServerUtils.WLProtocolException("Comment too long (" + nrLines + " lines)");
 		String msg = "";
-		for (int i = Integer.valueOf(cmd[3]); i > 0; --i) {
+		for (int i = nrLines; i > 0; --i) {
 			if (!msg.isEmpty()) msg += "\n";
 			msg += ServerUtils.readLine(in);
 		}
@@ -146,8 +148,10 @@ class HandleCommand {
 				    "Forbidden to edit a comment edited by a maintainer");
 		}
 
+		int nrLines = Integer.valueOf(cmd[3]);
+		if (nrLines < 1 || nrLines > 100) throw new ServerUtils.WLProtocolException("Comment too long (" + nrLines + " lines)");
 		String msg = "";
-		for (int i = Integer.valueOf(cmd[3]); i > 0; --i) {
+		for (int i = nrLines; i > 0; --i) {
 			if (!msg.isEmpty()) msg += "\n";
 			msg += ServerUtils.readLine(in);
 		}
@@ -164,8 +168,10 @@ class HandleCommand {
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to use the contact form");
 
+		int nrLines = Integer.valueOf(cmd[1]);
+		if (nrLines < 1 || nrLines > 100) throw new ServerUtils.WLProtocolException("Message too long (" + nrLines + " lines)");
 		String msg = "";
-		for (int i = Integer.valueOf(cmd[1]); i > 0; --i) {
+		for (int i = nrLines; i > 0; --i) {
 			msg += "\n";
 			msg += ServerUtils.readLine(in);
 		}
@@ -230,6 +236,7 @@ class HandleCommand {
 			ServerUtils.doDelete(tempDir);
 			TreeMap<String, Utils.Value> ch = new TreeMap<>();
 			int whitespaces = Integer.valueOf(cmd[4]);
+			if (whitespaces < 0 || whitespaces > 1000) throw new ServerUtils.WLProtocolException("Description too long (" + whitespaces + " words)");
 			String msg = cmd[5];
 			for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[6 + w];
 			ch.put(filename, new Utils.Value(filename, msg, cmd[1]));
@@ -263,6 +270,10 @@ class HandleCommand {
 
 		try {
 			final int nrDirs = Integer.valueOf(ServerUtils.readLine(in));
+			if (nrDirs < 0 || nrDirs > 1000) throw new ServerUtils.WLProtocolException(
+						    "Directory count limit of 1000 exceeded. "
+						    + "If you really want to submit such a large add-on, "
+						    + "please contact the Widelands Development Team.");
 			File[] dirnames = new File[nrDirs];
 			for (int i = 0; i < nrDirs; ++i) {
 				String n = ServerUtils.readLine(in);
@@ -275,13 +286,17 @@ class HandleCommand {
 			long totalSize = 0;
 			for (int i = 0; i < nrDirs; ++i) {
 				final int nrFiles = Integer.valueOf(ServerUtils.readLine(in));
+				if (nrFiles < 0 || nrFiles > 1000) throw new ServerUtils.WLProtocolException(
+								"File count limit of 1000 exceeded. "
+								+ "If you really want to submit such a large add-on, "
+								+ "please contact the Widelands Development Team.");
 				for (int j = 0; j < nrFiles; ++j) {
 					final String filename = ServerUtils.readLine(in);
 					ServerUtils.checkNameValid(filename, false);
 					final String checksum = ServerUtils.readLine(in);
 					final long size = Long.valueOf(ServerUtils.readLine(in));
 					totalSize += size;
-					if (totalSize > 200 * 1000 * 1000)
+					if (totalSize < 0 || totalSize > 200 * 1000 * 1000)
 						throw new ServerUtils.WLProtocolException(
 						    "Filesize limit of 200 MB exceeded. "
 						    + "If you really want to submit such a large add-on, "
