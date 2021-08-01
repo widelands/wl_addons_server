@@ -45,7 +45,10 @@ class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, 1);
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		ServerUtils.info(version, cmd[1], locale, out);
+
+		ServerUtils.semaphoreRO(cmd[1], () -> {
+			ServerUtils.info(version, cmd[1], locale, out);
+		});
 	}
 
 	public void handleCmdDownload() throws Exception {
@@ -53,11 +56,13 @@ class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, 1);
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File("addons", cmd[1]));
-		Utils.registerDownload(cmd[1]);
-		out.println(dir.totalDirs);
-		dir.writeAllDirNames(out, "");
-		dir.writeAllFileInfos(out);
+		ServerUtils.semaphoreRO(cmd[1], () -> {
+			ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File("addons", cmd[1]));
+			out.println(dir.totalDirs);
+			dir.writeAllDirNames(out, "");
+			dir.writeAllFileInfos(out);
+			Utils.registerDownload(cmd[1]);
+		});
 		out.println("ENDOFSTREAM");
 	}
 
@@ -66,8 +71,10 @@ class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, 1);
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File("i18n", cmd[1]));
-		dir.writeAllFileInfos(out);
+		ServerUtils.semaphoreRO(cmd[1], () -> {
+			ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File("i18n", cmd[1]));
+			dir.writeAllFileInfos(out);
+		});
 		out.println("ENDOFSTREAM");
 	}
 
@@ -77,7 +84,9 @@ class HandleCommand {
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkNameValid(cmd[2], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		ServerUtils.writeOneFile(new File("screenshots/" + cmd[1], cmd[2]), out);
+		ServerUtils.semaphoreRO(cmd[1], () -> {
+			ServerUtils.writeOneFile(new File("screenshots/" + cmd[1], cmd[2]), out);
+		});
 		out.println("ENDOFSTREAM");
 	}
 
@@ -88,7 +97,9 @@ class HandleCommand {
 			throw new ServerUtils.WLProtocolException("You need to log in to vote");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		Utils.registerVote(cmd[1], username, cmd[2]);
+		ServerUtils.semaphoreRW(cmd[1], () -> {
+			Utils.registerVote(cmd[1], username, cmd[2]);
+		});
 		out.println("ENDOFSTREAM");
 	}
 
@@ -101,9 +112,12 @@ class HandleCommand {
 		}
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		File f = new File(Utils.config("uservotesdir"), cmd[1]);
-		Utils.Value vote = f.isFile() ? Utils.readProfile(f, cmd[1]).get(username) : null;
-		out.println(vote == null ? "0" : vote.value);
+		// NOCOM replace uservotesdir with a database table
+		ServerUtils.semaphoreRO(cmd[1], () -> {
+			File f = new File(Utils.config("uservotesdir"), cmd[1]);
+			Utils.Value vote = f.isFile() ? Utils.readProfile(f, cmd[1]).get(username) : null;
+			out.println(vote == null ? "0" : vote.value);
+		});
 		out.println("ENDOFSTREAM");
 	}
 
@@ -123,7 +137,10 @@ class HandleCommand {
 		}
 		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
 			throw new ServerUtils.WLProtocolException("Stream continues past its end");
-		Utils.comment(cmd[1], username, cmd[2], msg);
+		final String finalMsg = msg;
+		ServerUtils.semaphoreRW(cmd[1], () -> {
+			Utils.comment(cmd[1], username, cmd[2], finalMsg);
+		});
 		out.println("ENDOFSTREAM");
 	}
 
@@ -160,7 +177,10 @@ class HandleCommand {
 
 		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
 			throw new ServerUtils.WLProtocolException("Stream continues past its end");
-		Utils.editComment(cmd[1], cmd[2], username, msg);
+		final String finalMsg = msg;
+		ServerUtils.semaphoreRW(cmd[1], () -> {
+			Utils.editComment(cmd[1], cmd[2], username, finalMsg);
+		});
 		out.println("ENDOFSTREAM");
 	}
 
@@ -208,6 +228,7 @@ class HandleCommand {
 			    "Filesize " + size + " exceeds the limit of 4 MB. "
 			    + "If you really need to submit such a large image, "
 			    + "please contact the Widelands Development Team.");
+		ServerUtils.semaphoreRW(cmd[1], () -> {
 		File tempDir = Utils.createTempDir();
 
 		try {
@@ -251,6 +272,7 @@ class HandleCommand {
 			ServerUtils.doDelete(tempDir);
 			throw new ServerUtils.WLProtocolException(e.getMessage());
 		}
+		});
 	}
 
 	public void handleCmdSubmit() throws Exception {
@@ -260,6 +282,8 @@ class HandleCommand {
 			throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
 		ServerUtils.checkNameValid(cmd[1], false);
 		/* No need here to check if the add-on exists. */
+
+		ServerUtils.semaphoreRW(cmd[1], () -> {
 		if (!admin) {
 			File f = new File("metadata", cmd[1] + ".maintain");
 			if (f.exists()) {
@@ -414,5 +438,6 @@ class HandleCommand {
 			ServerUtils.doDelete(tempDir);
 			throw new ServerUtils.WLProtocolException(e.toString());
 		}
+		});
 	}
 }

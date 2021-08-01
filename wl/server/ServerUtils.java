@@ -3,12 +3,43 @@ package wl.server;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.util.concurrent.*;
 import wl.utils.*;
 
 abstract class ServerUtils {
 	public static final ThreadActivityAndGitHubSyncManager SYNCER =
 	    new ThreadActivityAndGitHubSyncManager();
 	public static final Random RANDOM = new Random(System.currentTimeMillis());
+
+	public static interface Functor {
+		public void run() throws Exception;
+	};
+
+	private static final Map<String, Semaphore> _semaphores = new HashMap<>();
+	private static final int SEMAPHORE_BLOCK_RW_ACCESS = 100;
+	private static synchronized Semaphore getSemaphore(String addon) {
+		if (!_semaphores.containsKey(addon)) _semaphores.put(addon, new Semaphore(SEMAPHORE_BLOCK_RW_ACCESS, true));
+		return _semaphores.get(addon);
+	}
+
+	public static void semaphoreRO(String addon, Functor f) throws Exception {
+		doSemaphore(addon, 1, f);
+	}
+	public static void semaphoreRW(String addon, Functor f) throws Exception {
+		doSemaphore(addon, SEMAPHORE_BLOCK_RW_ACCESS, f);
+	}
+	private static void doSemaphore(String addon, final int i, Functor f) throws Exception {
+		Exception throwme = null;
+		Semaphore s = getSemaphore(addon);
+		s.acquire(i);
+		try {
+			f.run();
+		} catch (Exception e) {
+			throwme = e;
+		}
+		s.release(i);
+		if (throwme != null) throw throwme;
+	}
 
 	public static class WLProtocolException extends RuntimeException {
 		public WLProtocolException(String msg) { super("WL Protocol Exception: " + msg); }
@@ -163,7 +194,7 @@ abstract class ServerUtils {
 		                                     + "- Filename: `" + filename + "`\n"
 		                                     + "- Message length: " + msg.length() + " characters");
 	}
-	synchronized public static void
+	public static void
 	info(final int version, final String addon, final String locale, PrintStream out)
 	    throws Exception {
 		switch (version) {

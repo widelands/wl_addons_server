@@ -18,7 +18,7 @@ public class Server {
 
 		ServerUtils.log("Server starting...");
 		ServerSocket serverSocket = new ServerSocket(Integer.valueOf(Utils.config("port")));
-		new Thread(new SyncThread(), "Syncer").start();
+		new Thread(new SyncThread(database), "Syncer").start();
 		ServerUtils.log("Ready.");
 		long n = 0;
 		while (true) {

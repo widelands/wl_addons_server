@@ -166,7 +166,7 @@ public abstract class Utils {
 		w.close();
 	}
 
-	synchronized public static void registerDownload(String addon) throws Exception {
+	public static void registerDownload(String addon) throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 		ch.put("downloads",
@@ -175,7 +175,7 @@ public abstract class Utils {
 		editMetadata(true, addon, ch);
 	}
 
-	synchronized public static void registerVote(String addon, String user, String v)
+	public static void registerVote(String addon, String user, String v)
 	    throws Exception {
 		File votesFile = new File(config("uservotesdir"));
 		votesFile.mkdir();
@@ -197,7 +197,7 @@ public abstract class Utils {
 		editMetadata(true, addon, edit);
 	}
 
-	synchronized public static void
+	public static void
 	comment(String addon, String user, String version, String message) throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
@@ -217,7 +217,7 @@ public abstract class Utils {
 		editMetadata(true, addon, ch);
 	}
 
-	synchronized public static void
+	public static void
 	editComment(String addon, String index, String user, String message) throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
