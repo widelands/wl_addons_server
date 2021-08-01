@@ -12,24 +12,22 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_smithy_level_1",
         enhancement_cost = {
-          blackwood = 1,
-          reed = 1,
-          granite = 1
+          log = 2,
+          reed = 1
         },
         enhancement_return_on_dismantle = {
-          blackwood = 1,
-          granite = 1
+          log = 1
         },
    },
 
    buildcost = {
-      blackwood = 3,
+      log = 3,
       reed = 3,
-      granite = 2
+      granite = 3
    },
    return_on_dismantle = {
-      blackwood = 2,
-      granite = 1
+      log = 2,
+      granite = 2
    },
 
    animations = {
@@ -53,7 +51,7 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
-        basic_amount = 1
+      basic_amount = 1
    },
 
    working_positions = {

@@ -12,12 +12,14 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_smithy_level_8",
         enhancement_cost = {
+          planks = 2,
           brick = 1,
           grout = 1,
           marble_column = 1,
           diamond = 1
         },
         enhancement_return_on_dismantle = {
+          planks = 1,
           granite = 1,
           marble = 1,
           diamond = 1

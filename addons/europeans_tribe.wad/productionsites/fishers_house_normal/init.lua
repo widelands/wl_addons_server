@@ -12,6 +12,7 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_fishers_house_advanced",
         enhancement_cost = {
+          planks = 1,
           brick = 1,
           grout = 1,
           marble_column = 1,

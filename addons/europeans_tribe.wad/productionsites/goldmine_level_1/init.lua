@@ -12,7 +12,8 @@ descriptions:new_productionsite_type {
    enhancement = {
       name = "europeans_goldmine_level_2",
       enhancement_cost = {
-        blackwood = 2,
+        log = 2,
+        blackwood = 1,
         planks = 1,
         reed = 1
       },

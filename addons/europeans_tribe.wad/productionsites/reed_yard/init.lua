@@ -10,12 +10,12 @@ descriptions:new_productionsite_type {
    size = "medium",
 
    buildcost = {
-      blackwood = 3,
+      log = 3,
       reed = 3,
       granite = 2
    },
    return_on_dismantle = {
-      blackwood = 2,
+      log = 2,
       reed = 3,
       granite = 1
    },

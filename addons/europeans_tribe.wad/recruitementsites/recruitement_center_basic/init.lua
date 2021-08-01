@@ -12,19 +12,20 @@ descriptions:new_productionsite_type {
    enhancement = {
       name = "europeans_recruitement_center_normal",
       enhancement_cost = {
-          planks = 3,
+          blackwood = 3,
           cloth = 3,
           granite = 2,
           quartz = 1
       },
       enhancement_return_on_dismantle = {
-          planks = 2,
+          blackwood = 2,
           granite = 1,
           quartz = 1
       }
    },
    
    buildcost = {
+      log = 2,
       blackwood = 2,
       planks = 2,
       reed = 2,
@@ -32,6 +33,7 @@ descriptions:new_productionsite_type {
       granite = 2
    },
    return_on_dismantle = {
+      log = 1,
       blackwood = 1,
       planks = 1,
       granite = 2

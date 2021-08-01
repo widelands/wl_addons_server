@@ -12,7 +12,8 @@ descriptions:new_productionsite_type {
    enhancement = {
       name = "europeans_ironmine_level_1",
       enhancement_cost = {
-        blackwood = 2,
+        log = 2,
+        blackwood = 1,
         planks = 1,
         reed = 1
       },
@@ -22,7 +23,8 @@ descriptions:new_productionsite_type {
    },
 
    buildcost = {
-      blackwood = 4,
+      log = 2,
+      blackwood = 2,
       planks = 2,
       reed = 2
    },

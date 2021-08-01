@@ -12,11 +12,12 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_smithy_level_5",
         enhancement_cost = {
-          planks = 1,
+          blackwood = 2,
           cloth = 1,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
+          blackwood = 1,
           planks = 1,
           quartz = 1
         },

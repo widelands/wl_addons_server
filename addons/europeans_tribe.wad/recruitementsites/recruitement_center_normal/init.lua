@@ -12,6 +12,7 @@ descriptions:new_productionsite_type {
    enhancement = {
       name = "europeans_recruitement_center_advanced",
       enhancement_cost = {
+          planks = 3,
           brick = 3,
           grout = 3,
           marble_column = 3,
@@ -20,6 +21,7 @@ descriptions:new_productionsite_type {
       enhancement_return_on_dismantle = {
           granite = 3,
           marble = 3,
+          planks = 2,
           diamond = 1
       }
    },

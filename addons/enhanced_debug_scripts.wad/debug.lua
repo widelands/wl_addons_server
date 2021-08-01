@@ -582,13 +582,21 @@ function dismantle_all_buildings(player_number, building_name)
     local tribe = player.tribe
     local tribe_name = tribe.name
 
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
-             building:dismantle(true)
-          end
-       end
-    end
+	for k, tplayer in ipairs(game.players) do
+		for i, tbuilding in ipairs(tplayer.tribe.buildings) do
+			for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+				if tbuilding.name == building_name then
+					building:dismantle(true)
+				elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+					building:dismantle(true)
+				elseif string.find(tbuilding.name, building_name) then
+					building:dismantle(true)
+				elseif tbuilding.type_name == building_name then
+					building:dismantle(true)
+				end
+		   end
+		end
+	end
 end
 
 function dismantle_idle_buildings(player_number, productivity_threshold)
@@ -654,7 +662,13 @@ function enhance_all_buildings(player_number, building_name)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
+          if tbuilding.name == building_name then
+             building:enhance(true)
+          elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+             building:enhance(true)
+          elseif string.find(tbuilding.name, building_name) then
+             building:enhance(true)
+          elseif tbuilding.type_name == building_name then
              building:enhance(true)
           end
        end
@@ -669,7 +683,39 @@ function upgrade_all_buildings(player_number, building_name)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
+          if tbuilding.name == building_name then
+             building:enhance(true)
+          elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+             building:enhance(true)
+          elseif string.find(tbuilding.name, building_name) then
+             building:enhance(true)
+          elseif tbuilding.type_name == building_name then
+             building:enhance(true)
+          end
+       end
+    end
+end
+
+function enhance_idle_buildings(player_number, productivity_threshold)
+    local game = wl.Game()
+    local player = game.players[player_number]
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
+             building:enhance(true)
+          end
+       end
+    end
+end
+
+function upgrade_idle_buildings(player_number, productivity_threshold)
+    local game = wl.Game()
+    local player = game.players[player_number]
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
              building:enhance(true)
           end
        end
@@ -685,7 +731,7 @@ function startstop_building(startx, starty)
     building:toggle_start_stop()
 end
 
-function stop_all_buildings(player_number, building_name, stop)
+function start_all_buildings(player_number, building_name)
     local game = wl.Game()
     local player = game.players[player_number]
     local tribe = player.tribe
@@ -693,8 +739,50 @@ function stop_all_buildings(player_number, building_name, stop)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == building_name or tbuilding.name == building_name or tbuilding.name == (tribe_name .. "_" .. building_name) or player.tribe.name == building_name then
-             if not (building.is_stopped == stop) then
+          print (tbuilding.name, string.find(tbuilding.name, building_name))
+          if tbuilding.name == building_name then
+             if (building.is_stopped == true) then
+                 building:toggle_start_stop()
+             end
+          elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+             if (building.is_stopped == true) then
+                 building:toggle_start_stop()
+             end
+          elseif string.find(tbuilding.name, building_name) then
+             if (building.is_stopped == true) then
+                 building:toggle_start_stop()
+             end
+          elseif tbuilding.type_name == building_name then
+             if (building.is_stopped == true) then
+                 building:toggle_start_stop()
+             end
+          end
+       end
+    end
+end
+
+function stop_all_buildings(player_number, building_name)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local tribe = player.tribe
+    local tribe_name = tribe.name
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.name == building_name then
+             if not (building.is_stopped == true) then
+                 building:toggle_start_stop()
+             end
+          elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+             if not (building.is_stopped == true) then
+                 building:toggle_start_stop()
+             end
+          elseif string.find(tbuilding.name, building_name) then
+             if not (building.is_stopped == true) then
+                 building:toggle_start_stop()
+             end
+          elseif tbuilding.type_name == building_name then
+             if not (building.is_stopped == true) then
                  building:toggle_start_stop()
              end
           end

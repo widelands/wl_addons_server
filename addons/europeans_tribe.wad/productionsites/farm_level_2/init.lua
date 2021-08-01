@@ -12,6 +12,7 @@ descriptions:new_productionsite_type {
    enhancement = {
       name = "europeans_farm_level_3",
       enhancement_cost = {
+          planks = 3,
           brick = 3,
           grout = 3,
           marble_column = 2,
@@ -20,6 +21,7 @@ descriptions:new_productionsite_type {
       enhancement_return_on_dismantle = {
           granite = 3,
           marble = 2,
+          planks = 2,
           diamond = 1
       }
    },

@@ -61,7 +61,7 @@ init = {
          europeans_geologist = 1,
          europeans_miner_basic = 6,
          europeans_smelter_basic = 2,
-         europeans_smithy_basic = 1,
+         europeans_smith_basic = 1,
          europeans_soldier = 1,
       },
     })
