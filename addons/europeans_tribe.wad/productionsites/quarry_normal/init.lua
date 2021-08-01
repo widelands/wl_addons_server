@@ -12,6 +12,7 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_quarry_advanced",
         enhancement_cost = {
+          planks = 1,
           brick = 1,
           grout = 1,
           marble = 1

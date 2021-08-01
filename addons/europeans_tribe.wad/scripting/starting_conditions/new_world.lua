@@ -41,6 +41,7 @@ init = {
                         europeans_stonemason_normal = 1,
                         europeans_weaver_basic = 1,
                         europeans_weaver_normal = 1,
+                        europeans_smith_basic = 1,
                         europeans_trainer_basic = 1,
                         europeans_shipwright_basic = 1,
                         europeans_fishbreeder_basic = 1
@@ -96,6 +97,7 @@ init = {
                 europeans_stonemason_normal = 2,
                 europeans_weaver_basic = 1,
                 europeans_weaver_normal = 1,
+                europeans_smith_basic = 1,
                 europeans_shipwright_basic = 1,
           },
             soldiers = {

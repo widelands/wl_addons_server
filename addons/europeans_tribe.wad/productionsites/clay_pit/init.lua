@@ -32,7 +32,7 @@ descriptions:new_productionsite_type {
 
    aihints = {
       needs_water = true,
-      basic_amount = 1
+      space_consumer = true
    },
 
    working_positions = {

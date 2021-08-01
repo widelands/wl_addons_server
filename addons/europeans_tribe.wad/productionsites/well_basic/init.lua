@@ -12,24 +12,22 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_well_normal",
         enhancement_cost = {
-          planks = 1,
+          blackwood = 1,
           cloth = 1,
-          granite = 1,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
-          granite = 1,
           quartz = 1
         },
    },
 
    buildcost = {
-      blackwood = 2,
+      log = 2,
       reed = 2,
-      granite = 1
+      granite = 2
    },
    return_on_dismantle = {
-      blackwood = 1,
+      log = 1,
       granite = 1
    },
 

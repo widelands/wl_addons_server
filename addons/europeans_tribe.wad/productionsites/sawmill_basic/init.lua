@@ -13,15 +13,13 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_sawmill_normal",
         enhancement_cost = {
-          planks = 2,
+          blackwood = 2,
           cloth = 2,
           spidercloth = 2,
-          granite = 1,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
-          planks = 2,
-          granite = 1,
+          blackwood = 2,
           quartz = 1
         },
    },
@@ -29,11 +27,11 @@ descriptions:new_productionsite_type {
    buildcost = {
       log = 3,
       reed = 3,
-      granite = 2
+      granite = 3
    },
    return_on_dismantle = {
       log = 2,
-      granite = 1
+      granite = 2
    },
 
    spritesheets = {
