@@ -11,14 +11,14 @@ abstract class ServerUtils {
 	    new ThreadActivityAndGitHubSyncManager();
 	public static final Random RANDOM = new Random(System.currentTimeMillis());
 
-	public static interface Functor {
-		public void run() throws Exception;
-	};
+	public static interface Functor { public void run() throws Exception; }
+	;
 
 	private static final Map<String, Semaphore> _semaphores = new HashMap<>();
 	private static final int SEMAPHORE_BLOCK_RW_ACCESS = 100;
 	private static synchronized Semaphore getSemaphore(String addon) {
-		if (!_semaphores.containsKey(addon)) _semaphores.put(addon, new Semaphore(SEMAPHORE_BLOCK_RW_ACCESS, true));
+		if (!_semaphores.containsKey(addon))
+			_semaphores.put(addon, new Semaphore(SEMAPHORE_BLOCK_RW_ACCESS, true));
 		return _semaphores.get(addon);
 	}
 

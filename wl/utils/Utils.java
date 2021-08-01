@@ -175,8 +175,7 @@ public abstract class Utils {
 		editMetadata(true, addon, ch);
 	}
 
-	public static void registerVote(String addon, String user, String v)
-	    throws Exception {
+	public static void registerVote(String addon, String user, String v) throws Exception {
 		File votesFile = new File(config("uservotesdir"));
 		votesFile.mkdir();
 		votesFile = new File(votesFile, addon);
@@ -197,8 +196,8 @@ public abstract class Utils {
 		editMetadata(true, addon, edit);
 	}
 
-	public static void
-	comment(String addon, String user, String version, String message) throws Exception {
+	public static void comment(String addon, String user, String version, String message)
+	    throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 
@@ -217,8 +216,8 @@ public abstract class Utils {
 		editMetadata(true, addon, ch);
 	}
 
-	public static void
-	editComment(String addon, String index, String user, String message) throws Exception {
+	public static void editComment(String addon, String index, String user, String message)
+	    throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 

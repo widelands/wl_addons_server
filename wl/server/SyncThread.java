@@ -8,9 +8,7 @@ import wl.utils.*;
 class SyncThread implements Runnable {
 	private java.sql.Connection database;
 
-	public SyncThread(java.sql.Connection db) {
-		database = db;
-	}
+	public SyncThread(java.sql.Connection db) { database = db; }
 
 	@Override
 	public void run() {
@@ -27,13 +25,15 @@ class SyncThread implements Runnable {
 				long now = System.currentTimeMillis();
 				long then = nextSync.getTimeInMillis();
 				while (then < now + 60000) then += 1000 * 60 * 60 * 24;
-				ServerUtils.log("Next " + (phase == 0 ? "full" : "SQL-only") + " sync scheduled for " + new Date(then) + " (" +
+				ServerUtils.log("Next " + (phase == 0 ? "full" : "SQL-only") +
+				                " sync scheduled for " + new Date(then) + " (" +
 				                Utils.durationString(then - now) + " remaining).");
 
 				Thread.sleep(then - now);
 
 				ServerUtils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
-				database.createStatement().executeQuery("select id from auth_user where username='wl_bot'");
+				database.createStatement().executeQuery(
+				    "select id from auth_user where username='wl_bot'");
 
 				if (phase == 0) {
 					synchronized (ServerUtils.SYNCER) {
@@ -41,7 +41,7 @@ class SyncThread implements Runnable {
 						ServerUtils.SYNCER.check();
 						if (errored)
 							throw new Exception("You still have not resolved the merge conflicts. "
-								                + "Please do so soon!");
+							                    + "Please do so soon!");
 						ServerUtils.log("Performing GitHub sync...");
 						Utils._staticprofiles.clear();
 						ServerUtils.SYNCER.sync();
