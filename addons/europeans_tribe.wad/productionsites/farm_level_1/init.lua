@@ -12,14 +12,12 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_farm_level_2",
         enhancement_cost = {
-          planks = 3,
+          blackwood = 3,
           cloth = 3,
-          granite = 2,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
-          planks = 2,
-          granite = 1,
+          blackwood = 2,
           quartz = 1
         },
    },

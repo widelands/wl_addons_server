@@ -12,13 +12,11 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_foresters_house_normal",
         enhancement_cost = {
-          planks = 1,
+          blackwood = 1,
           cloth = 1,
-          granite = 1,
           quartz = 1
         },
         enhancement_return_on_dismantle = {
-          granite = 1,
           quartz = 1
         },
    },
@@ -26,7 +24,7 @@ descriptions:new_productionsite_type {
    buildcost = {
       log = 2,
       reed = 2,
-      granite = 1
+      granite = 2
    },
    return_on_dismantle = {
       log = 1,
@@ -49,9 +47,7 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
-      space_consumer = true,
-      basic_amount = 2,
-      forced_after = 1800
+      space_consumer = true
    },
 
    working_positions = {

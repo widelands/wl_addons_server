@@ -12,23 +12,21 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_quarry_normal",
         enhancement_cost = {
-          planks = 1,
-          cloth = 1,
-          granite = 1
+          blackwood = 1,
+          cloth = 1
         },
         enhancement_return_on_dismantle = {
-          granite = 1
         },
    },
 
    buildcost = {
-      blackwood = 2,
+      log = 2,
       reed = 2,
-      granite = 1
+      granite = 2
    },
    return_on_dismantle = {
-      blackwood = 2,
-      granite = 1
+      granite = 2,
+      log = 1
    },
 
 
@@ -48,7 +46,6 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
-      basic_amount = 1
    },
 
    working_positions = {

@@ -12,6 +12,7 @@ descriptions:new_productionsite_type {
    enhancement = {
       name = "europeans_charcoal_kiln_advanced",
       enhancement_cost = {
+          planks = 2,
           brick = 2,
           grout = 2,
           marble_column = 2,
@@ -20,6 +21,7 @@ descriptions:new_productionsite_type {
       enhancement_return_on_dismantle = {
           granite = 2,
           marble = 2,
+          planks = 1,
           diamond = 1
       }
    },
