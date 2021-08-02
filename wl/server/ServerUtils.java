@@ -21,6 +21,9 @@ package wl.server;
 
 import java.io.*;
 import java.net.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.util.*;
 import java.util.concurrent.*;
 import wl.utils.*;
@@ -29,6 +32,11 @@ abstract class ServerUtils {
 	public static final ThreadActivityAndGitHubSyncManager SYNCER =
 	    new ThreadActivityAndGitHubSyncManager();
 	public static final Random RANDOM = new Random(System.currentTimeMillis());
+
+	public static void log(String msg) {
+		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
+		                   msg);
+	}
 
 	public static interface Functor { public void run() throws Exception; }
 	;
@@ -60,17 +68,44 @@ abstract class ServerUtils {
 		if (throwme != null) throw throwme;
 	}
 
+	public static enum Databases {
+		kWebsite("websitedatabase"),
+		kAddOns("addonsdatabase");
+
+		public final String configKey;
+		private Databases(String k) { configKey = k; }
+	};
+	private static final Connection[] _databases = new Connection[Databases.values().length];
+
+	public static void initDatabases() throws Exception {
+		log("Initializing SQL...");
+
+		Properties connectionProps = new Properties();
+		connectionProps.put("user", Utils.config("databaseuser"));
+		connectionProps.put("password", Utils.config("databasepassword"));
+
+		for (Databases db : Databases.values()) {
+			_databases[db.ordinal()] = DriverManager.getConnection​(Utils.config("databaseserver") + Utils.config(db.configKey), connectionProps);
+		}
+	}
+
+	public static ResultSet sqlQuery(Databases db, String query) throws Exception {
+		Connection c = _databases[db.ordinal()];
+		synchronized(c) {
+			return c.createStatement().executeQuery(query);
+		}
+	}
+	public static void sqlCmd(Databases db, String cmd) throws Exception {
+		Connection c = _databases[db.ordinal()];
+		synchronized(c) { c.createStatement().execute(cmd); }
+	}
+
 	public static class WLProtocolException extends RuntimeException {
 		public WLProtocolException(String msg) { super("WL Protocol Exception: " + msg); }
 		@Override
 		public String toString() {
 			return getMessage();
 		}
-	}
-
-	public static void log(String msg) {
-		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
-		                   msg);
 	}
 
 	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
@@ -188,15 +223,42 @@ abstract class ServerUtils {
 	}
 
 	synchronized public static void doDelete(File f) {
-		if (f.isDirectory())
-			for (File file : f.listFiles()) doDelete(file);
+		if (f.isDirectory()) {
+			for (File file : f.listFiles()) {
+				doDelete(file);
+			}
+		}
 		f.delete();
+	}
+
+	// TODO: In the long run, get rid of the metadata files completely, move everything
+	// to the database, and make the GitHub repo merely a mirror of the official server.
+	public static void rebuildMetadata() throws Exception {
+		log("Rebuilding metadata...");
+		for (File f : ServerUtils.listSorted(new File("addons"))) ServerUtils.updateMetadataVotes(f.getName());
+	}
+
+	public static void updateMetadataVotes(String addon) throws Exception {
+		TreeMap<String, Utils.Value> edit = new TreeMap<>();
+		for (int v = 1; v <= 10; v++) {
+			long count = 0;
+			ResultSet sql = sqlQuery(Databases.kAddOns, "select user_id from uservotes where vote=" + v + " and addon='" + addon + "'");
+			while (sql.next()) count++;
+			edit.put("votes_" + v, new Utils.Value("votes_" + v, Long.toString(count)));
+		}
+		Utils.editMetadata(true, addon, edit);
+	}
+
+	public static void registerVote(String addon, long user, int v) throws Exception {
+		sqlCmd(Databases.kAddOns, "delete from uservotes where user_id=" + user + " and addon='" + addon + "'");
+		if (v > 0) sqlCmd(Databases.kAddOns, "insert into uservotes (user_id, addon, vote) value (" + user + ", '" + addon + "', " + v + ")");
+		updateMetadataVotes(addon);
 	}
 
 	private static Object _enquiry_syncer = new Object();
 	public static void sendEnquiry(String username, String msg) throws Exception {
-		File dir = new File(Utils.config("uservotesdir"), "enquiries");
-		dir.mkdirs();
+		File dir = new File("enquiries");
+		dir.mkdir();
 		String filename =
 		    username + "_" + new Date().toString().replaceAll(" ", "_").replaceAll(":", "-");
 		synchronized (_enquiry_syncer) {
@@ -213,6 +275,7 @@ abstract class ServerUtils {
 		                                     + "- Filename: `" + filename + "`\n"
 		                                     + "- Message length: " + msg.length() + " characters");
 	}
+
 	public static void
 	info(final int version, final String addon, final String locale, PrintStream out)
 	    throws Exception {

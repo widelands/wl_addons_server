@@ -21,15 +21,10 @@ package wl.server;
 
 import java.io.*;
 import java.net.*;
-import java.sql.Connection;
 import java.util.*;
 import wl.utils.*;
 
 class SyncThread implements Runnable {
-	private Connection database;
-
-	public SyncThread(Connection db) { database = db; }
-
 	@Override
 	public void run() {
 		// We run a full sync every 24 hours, but in order to prevent SQL connection
@@ -53,16 +48,18 @@ class SyncThread implements Runnable {
 				Thread.sleep(then - now);
 
 				ServerUtils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
-				database.createStatement().executeQuery(
-				    "select id from auth_user where username='wl_bot'");
+				for (ServerUtils.Databases db : ServerUtils.Databases.values()) ServerUtils.sqlCmd(db, "show tables");
 
 				if (phase == 0) {
 					synchronized (ServerUtils.SYNCER) {
 						ServerUtils.log("Cleaning up inactive threads...");
 						ServerUtils.SYNCER.check();
+						ServerUtils.rebuildMetadata();
+
 						if (errored)
 							throw new Exception("You still have not resolved the merge conflicts. "
 							                    + "Please do so soon!");
+
 						ServerUtils.log("Performing GitHub sync...");
 						Utils._staticprofiles.clear();
 						ServerUtils.SYNCER.sync();

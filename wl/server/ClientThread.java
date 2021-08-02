@@ -21,18 +21,15 @@ package wl.server;
 
 import java.io.*;
 import java.net.*;
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.*;
 import wl.utils.*;
 
 class ClientThread implements Runnable {
 	private Socket socket;
-	private Connection database;
 
-	public ClientThread(Socket s, Connection db) {
+	public ClientThread(Socket s) {
 		socket = s;
-		database = db;
 	}
 
 	@Override
@@ -61,6 +58,7 @@ class ClientThread implements Runnable {
 				throw new ServerUtils.WLProtocolException("Stream continues past its end");
 			}
 			boolean admin = false;
+			long userDatabaseID = -1;
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
@@ -68,31 +66,22 @@ class ClientThread implements Runnable {
 				out.println(r);
 				out.println("ENDOFSTREAM");
 
-				ResultSet sql = database.createStatement().executeQuery(
+				ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite,
 				    "select id from auth_user where username='" + username + "'");
 				if (!sql.next())
 					throw new ServerUtils.WLProtocolException("User " + username +
 					                                          " is not registered");
-				final long userID = sql.getLong​(1);
+				userDatabaseID = sql.getLong​("id");
 
-				sql = database.createStatement().executeQuery(
-				    "select permissions from wlggz_ggzauth where user_id=" + userID);
-				if (!sql.next())
-					throw new ServerUtils.WLProtocolException("User " + username +
-					                                          " has no permissions at all");
-				final long permissions = sql.getLong(1);
+				sql = ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite, "select permissions,password from wlggz_ggzauth where user_id=" + userDatabaseID);
+				if (!sql.next()) throw new ServerUtils.WLProtocolException("User " + username + " did not set an online gaming password");
+				final long permissions = sql.getLong("permissions");
 				if (permissions != 7 && permissions != 127)
 					throw new ServerUtils.WLProtocolException(
 					    "User " + username + " has invalid permissions code " + permissions);
 				admin = (permissions == 127);
-
-				sql = database.createStatement().executeQuery(
-				    "select password from wlggz_ggzauth where user_id=" + userID);
-				if (!sql.next())
-					throw new ServerUtils.WLProtocolException("User " + username +
-					                                          " did not set a password");
 				String passwordHash = "";
-				for (byte b : Base64.getDecoder().decode(sql.getString(1)))
+				for (byte b : Base64.getDecoder().decode(sql.getString("password")))
 					passwordHash = String.format("%s%02x", passwordHash, b);
 
 				Process p = Runtime.getRuntime().exec(new String[] {"md5sum"});
@@ -122,7 +111,7 @@ class ClientThread implements Runnable {
 					ServerUtils.SYNCER.tick(socket);
 					ServerUtils.log("Received command: " + cmd);
 				}
-				Server.handle(cmd.split(" "), out, in, protocolVersion, username, admin, locale);
+				Server.handle(cmd.split(" "), out, in, protocolVersion, username, userDatabaseID, admin, locale);
 			}
 		} catch (Exception e) {
 			ServerUtils.log("ERROR: " + e);

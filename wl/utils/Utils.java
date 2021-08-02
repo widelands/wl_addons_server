@@ -194,27 +194,6 @@ public abstract class Utils {
 		editMetadata(true, addon, ch);
 	}
 
-	public static void registerVote(String addon, String user, String v) throws Exception {
-		File votesFile = new File(config("uservotesdir"));
-		votesFile.mkdir();
-		votesFile = new File(votesFile, addon);
-		if (!votesFile.isFile()) votesFile.createNewFile();
-
-		TreeMap<String, Value> edit = new TreeMap<>();
-		edit.put(user, new Value(user, v));
-		editProfile(votesFile, addon, edit);
-		TreeMap<String, Value> uservotes = readProfile(votesFile, addon);
-
-		edit.clear();
-		for (int i = 1; i <= 10; i++) edit.put("votes_" + i, new Value("votes_" + i, "0"));
-		for (String key : uservotes.keySet()) {
-			String vote = "votes_" + uservotes.get(key).value;
-			if (edit.containsKey(vote))
-				edit.put(vote, new Value(vote, "" + (Long.valueOf(edit.get(vote).value) + 1)));
-		}
-		editMetadata(true, addon, edit);
-	}
-
 	public static void comment(String addon, String user, String version, String message)
 	    throws Exception {
 		File f = new File("metadata", addon + ".server");

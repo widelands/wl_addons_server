@@ -21,6 +21,7 @@ package wl.server;
 
 import java.io.*;
 import java.net.*;
+import java.sql.ResultSet;
 import java.util.*;
 import wl.utils.*;
 
@@ -30,6 +31,7 @@ class HandleCommand {
 	private final InputStream in;
 	private final int version;
 	private final String username;
+	private final long userDatabaseID;
 	private final boolean admin;
 	private final String locale;
 
@@ -38,6 +40,7 @@ class HandleCommand {
 	                     InputStream in,
 	                     int version,
 	                     String username,
+	                     long userDatabaseID,
 	                     boolean admin,
 	                     String locale) {
 		this.cmd = cmd;
@@ -45,6 +48,7 @@ class HandleCommand {
 		this.in = in;
 		this.version = version;
 		this.username = username;
+		this.userDatabaseID = userDatabaseID;
 		this.admin = admin;
 		this.locale = locale;
 	}
@@ -114,7 +118,7 @@ class HandleCommand {
 			throw new ServerUtils.WLProtocolException("You need to log in to vote");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		ServerUtils.semaphoreRW(cmd[1], () -> { Utils.registerVote(cmd[1], username, cmd[2]); });
+		ServerUtils.semaphoreRW(cmd[1], () -> { ServerUtils.registerVote(cmd[1], userDatabaseID, Integer.valueOf(cmd[2])); });
 		out.println("ENDOFSTREAM");
 	}
 
@@ -128,10 +132,8 @@ class HandleCommand {
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		ServerUtils.semaphoreRO(cmd[1], () -> {
-			// TODO replace the `uservotesdir` with a database table
-			File f = new File(Utils.config("uservotesdir"), cmd[1]);
-			Utils.Value vote = f.isFile() ? Utils.readProfile(f, cmd[1]).get(username) : null;
-			out.println(vote == null ? "0" : vote.value);
+			ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns, "select vote from uservotes where user_id=" + userDatabaseID + " and addon='" + cmd[1] + "'");
+			out.println(sql.next() ? ("" + sql.getLong​(1)) : "0");
 		});
 		out.println("ENDOFSTREAM");
 	}

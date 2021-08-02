@@ -21,8 +21,6 @@ package wl.server;
 
 import java.io.*;
 import java.net.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.util.*;
 import wl.utils.*;
 
@@ -30,21 +28,19 @@ public class Server {
 	public static void main(String[] args) throws Exception {
 		Utils.bash("bash", "-c", "echo $PPID");  // Print our PID to the logfile so the maintainer
 		                                         // knows how to kill the server process.
-		ServerUtils.log("Initializing SQL...");
-		Properties connectionProps = new Properties();
-		connectionProps.put("user", Utils.config("databaseuser"));
-		connectionProps.put("password", Utils.config("databasepassword"));
-		Connection database =
-		    DriverManager.getConnection​(Utils.config("databasename"), connectionProps);
+
+		ServerUtils.initDatabases();
+
+		ServerUtils.rebuildMetadata();
 
 		ServerUtils.log("Server starting...");
 		ServerSocket serverSocket = new ServerSocket(Integer.valueOf(Utils.config("port")));
-		new Thread(new SyncThread(database), "Syncer").start();
+		new Thread(new SyncThread(), "Syncer").start();
 		ServerUtils.log("Ready.");
 		long n = 0;
 		while (true) {
 			Socket s = serverSocket.accept();
-			new Thread(new ClientThread(s, database), String.format("Client#%06d", ++n)).start();
+			new Thread(new ClientThread(s), String.format("Client#%06d", ++n)).start();
 		}
 	}
 
@@ -53,10 +49,11 @@ public class Server {
 	                          InputStream in,
 	                          int version,
 	                          String username,
+	                          long userDatabaseID,
 	                          boolean admin,
 	                          String locale) throws Exception {
 		// String method = null;
-		HandleCommand h = new HandleCommand(cmd, out, in, version, username, admin, locale);
+		HandleCommand h = new HandleCommand(cmd, out, in, version, username, userDatabaseID, admin, locale);
 		switch (Command.valueOf(cmd[0])) {
 			case CMD_LIST:
 				h.handleCmdList();
