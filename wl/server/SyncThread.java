@@ -36,7 +36,8 @@ class SyncThread implements Runnable {
 		// timeouts we run an arbitrary SQL statement every 6 hours as well.
 		boolean errored = false;
 		int phase = (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) + 3) / 6;
-		do try {
+		do {
+			try {
 				Calendar nextSync = Calendar.getInstance();
 				nextSync.set(Calendar.HOUR_OF_DAY, 3 + (phase * 6));
 				nextSync.set(Calendar.MINUTE, 0);
@@ -67,8 +68,6 @@ class SyncThread implements Runnable {
 						ServerUtils.SYNCER.sync();
 					}
 				}
-				phase++;
-				phase %= 4;
 			} catch (Exception e) {
 				errored = true;
 				ServerUtils.log("GitHub sync ERROR: " + e);
@@ -97,6 +96,8 @@ class SyncThread implements Runnable {
 					Utils.fatalError("unable to send failure notification!", x);
 				}
 			}
-		while (true);
+			phase++;
+			phase %= 4;
+		} while (true);
 	}
 }
