@@ -53,7 +53,8 @@ public class Server {
 	                          boolean admin,
 	                          String locale) throws Exception {
 		// String method = null;
-		HandleCommand h = new HandleCommand(cmd, out, in, version, username, userDatabaseID, admin, locale);
+		HandleCommand h =
+		    new HandleCommand(cmd, out, in, version, username, userDatabaseID, admin, locale);
 		switch (Command.valueOf(cmd[0])) {
 			case CMD_LIST:
 				h.handleCmdList();

@@ -74,7 +74,8 @@ abstract class ServerUtils {
 
 		public final String configKey;
 		private Databases(String k) { configKey = k; }
-	};
+	}
+	;
 	private static final Connection[] _databases = new Connection[Databases.values().length];
 
 	public static void initDatabases() throws Exception {
@@ -85,19 +86,18 @@ abstract class ServerUtils {
 		connectionProps.put("password", Utils.config("databasepassword"));
 
 		for (Databases db : Databases.values()) {
-			_databases[db.ordinal()] = DriverManager.getConnection​(Utils.config("databaseserver") + Utils.config(db.configKey), connectionProps);
+			_databases[db.ordinal()] = DriverManager.getConnection​(
+			    Utils.config("databaseserver") + Utils.config(db.configKey), connectionProps);
 		}
 	}
 
 	public static ResultSet sqlQuery(Databases db, String query) throws Exception {
 		Connection c = _databases[db.ordinal()];
-		synchronized(c) {
-			return c.createStatement().executeQuery(query);
-		}
+		synchronized (c) { return c.createStatement().executeQuery(query); }
 	}
 	public static void sqlCmd(Databases db, String cmd) throws Exception {
 		Connection c = _databases[db.ordinal()];
-		synchronized(c) { c.createStatement().execute(cmd); }
+		synchronized (c) { c.createStatement().execute(cmd); }
 	}
 
 	public static class WLProtocolException extends RuntimeException {
@@ -235,14 +235,17 @@ abstract class ServerUtils {
 	// to the database, and make the GitHub repo merely a mirror of the official server.
 	public static void rebuildMetadata() throws Exception {
 		log("Rebuilding metadata...");
-		for (File f : ServerUtils.listSorted(new File("addons"))) ServerUtils.updateMetadataVotes(f.getName());
+		for (File f : ServerUtils.listSorted(new File("addons")))
+			ServerUtils.updateMetadataVotes(f.getName());
 	}
 
 	public static void updateMetadataVotes(String addon) throws Exception {
 		TreeMap<String, Utils.Value> edit = new TreeMap<>();
 		for (int v = 1; v <= 10; v++) {
 			long count = 0;
-			ResultSet sql = sqlQuery(Databases.kAddOns, "select user_id from uservotes where vote=" + v + " and addon='" + addon + "'");
+			ResultSet sql =
+			    sqlQuery(Databases.kAddOns, "select user_id from uservotes where vote=" + v +
+			                                    " and addon='" + addon + "'");
 			while (sql.next()) count++;
 			edit.put("votes_" + v, new Utils.Value("votes_" + v, Long.toString(count)));
 		}
@@ -250,8 +253,11 @@ abstract class ServerUtils {
 	}
 
 	public static void registerVote(String addon, long user, int v) throws Exception {
-		sqlCmd(Databases.kAddOns, "delete from uservotes where user_id=" + user + " and addon='" + addon + "'");
-		if (v > 0) sqlCmd(Databases.kAddOns, "insert into uservotes (user_id, addon, vote) value (" + user + ", '" + addon + "', " + v + ")");
+		sqlCmd(Databases.kAddOns,
+		       "delete from uservotes where user_id=" + user + " and addon='" + addon + "'");
+		if (v > 0)
+			sqlCmd(Databases.kAddOns, "insert into uservotes (user_id, addon, vote) value (" +
+			                              user + ", '" + addon + "', " + v + ")");
 		updateMetadataVotes(addon);
 	}
 

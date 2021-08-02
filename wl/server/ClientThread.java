@@ -28,9 +28,7 @@ import wl.utils.*;
 class ClientThread implements Runnable {
 	private Socket socket;
 
-	public ClientThread(Socket s) {
-		socket = s;
-	}
+	public ClientThread(Socket s) { socket = s; }
 
 	@Override
 	public void run() {
@@ -66,15 +64,21 @@ class ClientThread implements Runnable {
 				out.println(r);
 				out.println("ENDOFSTREAM");
 
-				ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite,
+				ResultSet sql = ServerUtils.sqlQuery(
+				    ServerUtils.Databases.kWebsite,
 				    "select id from auth_user where username='" + username + "'");
 				if (!sql.next())
 					throw new ServerUtils.WLProtocolException("User " + username +
 					                                          " is not registered");
 				userDatabaseID = sql.getLong​("id");
 
-				sql = ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite, "select permissions,password from wlggz_ggzauth where user_id=" + userDatabaseID);
-				if (!sql.next()) throw new ServerUtils.WLProtocolException("User " + username + " did not set an online gaming password");
+				sql = ServerUtils.sqlQuery(
+				    ServerUtils.Databases.kWebsite,
+				    "select permissions,password from wlggz_ggzauth where user_id=" +
+				        userDatabaseID);
+				if (!sql.next())
+					throw new ServerUtils.WLProtocolException(
+					    "User " + username + " did not set an online gaming password");
 				final long permissions = sql.getLong("permissions");
 				if (permissions != 7 && permissions != 127)
 					throw new ServerUtils.WLProtocolException(
@@ -111,7 +115,8 @@ class ClientThread implements Runnable {
 					ServerUtils.SYNCER.tick(socket);
 					ServerUtils.log("Received command: " + cmd);
 				}
-				Server.handle(cmd.split(" "), out, in, protocolVersion, username, userDatabaseID, admin, locale);
+				Server.handle(cmd.split(" "), out, in, protocolVersion, username, userDatabaseID,
+				              admin, locale);
 			}
 		} catch (Exception e) {
 			ServerUtils.log("ERROR: " + e);

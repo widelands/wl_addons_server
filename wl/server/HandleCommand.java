@@ -118,7 +118,9 @@ class HandleCommand {
 			throw new ServerUtils.WLProtocolException("You need to log in to vote");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		ServerUtils.semaphoreRW(cmd[1], () -> { ServerUtils.registerVote(cmd[1], userDatabaseID, Integer.valueOf(cmd[2])); });
+		ServerUtils.semaphoreRW(cmd[1], () -> {
+			ServerUtils.registerVote(cmd[1], userDatabaseID, Integer.valueOf(cmd[2]));
+		});
 		out.println("ENDOFSTREAM");
 	}
 
@@ -132,7 +134,9 @@ class HandleCommand {
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		ServerUtils.semaphoreRO(cmd[1], () -> {
-			ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns, "select vote from uservotes where user_id=" + userDatabaseID + " and addon='" + cmd[1] + "'");
+			ResultSet sql = ServerUtils.sqlQuery(
+			    ServerUtils.Databases.kAddOns, "select vote from uservotes where user_id=" +
+			                                       userDatabaseID + " and addon='" + cmd[1] + "'");
 			out.println(sql.next() ? ("" + sql.getLong​(1)) : "0");
 		});
 		out.println("ENDOFSTREAM");

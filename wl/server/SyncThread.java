@@ -48,7 +48,8 @@ class SyncThread implements Runnable {
 				Thread.sleep(then - now);
 
 				ServerUtils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
-				for (ServerUtils.Databases db : ServerUtils.Databases.values()) ServerUtils.sqlCmd(db, "show tables");
+				for (ServerUtils.Databases db : ServerUtils.Databases.values())
+					ServerUtils.sqlCmd(db, "show tables");
 
 				if (phase == 0) {
 					synchronized (ServerUtils.SYNCER) {
