@@ -53,73 +53,86 @@ class SyncThread implements Runnable {
 					ServerUtils.sqlCmd(db, "show tables");
 
 				// if (phase == 0) {  // NOCOM
-					synchronized (ServerUtils.SYNCER) {
-						ServerUtils.log("Cleaning up inactive threads...");
-						ServerUtils.SYNCER.check();
-						ServerUtils.rebuildMetadata();
+				synchronized (ServerUtils.SYNCER) {
+					ServerUtils.log("Cleaning up inactive threads...");
+					ServerUtils.SYNCER.check();
+					ServerUtils.rebuildMetadata();
 
-						if (errored)
-							throw new Exception("You still have not resolved the merge conflicts. "
-							                    + "Please do so soon!");
+					if (errored)
+						throw new Exception("You still have not resolved the merge conflicts. "
+						                    + "Please do so soon!");
 
-						ServerUtils.log("Performing GitHub sync...");
-						Utils._staticprofiles.clear();
-						ServerUtils.SYNCER.sync();
+					ServerUtils.log("Performing GitHub sync...");
+					Utils._staticprofiles.clear();
+					ServerUtils.SYNCER.sync();
+				}
+
+				// if (Boolean.parseBoolean(Utils.config("deploy"))) {  // NOCOM
+				ServerUtils.log("Checking Transifex issues...");
+				List<TransifexIssue> allIssues = TransifexIssue.checkIssues();
+				List<TransifexIssue> newIssues = new ArrayList<>();
+				for (TransifexIssue i : allIssues) {
+					if (!knownIssues.contains(i.issueID)) {
+						newIssues.add(i);
+						knownIssues.add(i.issueID);
+					}
+				}
+				ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" + newIssues.size() +
+				                " total).");
+
+				if (!newIssues.isEmpty()) {
+					Map<String, List<TransifexIssue>> perAddOn = new LinkedHashMap<>();
+					for (TransifexIssue i : newIssues) {
+						if (!perAddOn.containsKey(i.addon))
+							perAddOn.put(i.addon, new ArrayList<>());
+						perAddOn.get(i.addon).add(i);
 					}
 
-					// if (Boolean.parseBoolean(Utils.config("deploy"))) {  // NOCOM
-						ServerUtils.log("Checking Transifex issues...");
-						List<TransifexIssue> allIssues = TransifexIssue.checkIssues();
-						List<TransifexIssue> newIssues = new ArrayList<>();
-						for (TransifexIssue i : allIssues) {
-							if (!knownIssues.contains(i.issueID)) {
-								newIssues.add(i);
-								knownIssues.add(i.issueID);
+					Map<String, Map<String, List<TransifexIssue>>> perUploader =
+					    new LinkedHashMap<>();
+					for (String addon : perAddOn.keySet()) {
+						String uploader =
+						    Utils.readProfile(new File("metadata", addon + ".maintain"), addon)
+						        .get("uploader")
+						        .value;
+						if (!perUploader.containsKey(uploader))
+							perUploader.put(uploader, new LinkedHashMap<>());
+						perUploader.get(uploader).put(addon, perAddOn.get(addon));
+					}
+
+					for (String uploader : perUploader.keySet()) {
+						Map<String, List<TransifexIssue>> relevantIssues =
+						    perUploader.get(uploader);
+						long total = 0;
+						for (List l : relevantIssues.values()) total += l.size();
+
+						String message =
+						    "Dear " + uploader + ",\nthe translators have found " + total +
+						    " new issue(s) in " + relevantIssues.size() +
+						    " of your add-on(s). Below you may find a list of all new string issues.";
+						for (String addon : relevantIssues.keySet()) {
+							List<TransifexIssue> list = relevantIssues.get(addon);
+							message +=
+							    "\n\n################################################################################\n " +
+							    list.size() + " new issue(s) in add-on " + addon;
+							for (TransifexIssue i : list) {
+								message +=
+								    "\n --------------------------------------------------------------------------------"
+								    + "\n  Issue ID      : " + i.issueID +
+								    "\n  Source String : " + i.string +
+								    "\n  String ID     : " + i.stringID +
+								    "\n  Occurrences   : " + i.occurrence +
+								    "\n  Issue message : " + i.message;
 							}
+							message +=
+							    "\n################################################################################";
 						}
-						ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" + newIssues.size() + " total).");
 
-						if (!newIssues.isEmpty()) {
-							Map<String, List<TransifexIssue>> perAddOn = new LinkedHashMap<>();
-							for (TransifexIssue i : newIssues) {
-								if (!perAddOn.containsKey(i.addon)) perAddOn.put(i.addon, new ArrayList<>());
-								perAddOn.get(i.addon).add(i);
-							}
-
-							Map<String, Map<String, List<TransifexIssue>>> perUploader = new LinkedHashMap<>();
-							for (String addon : perAddOn.keySet()) {
-								String uploader = Utils.readProfile(new File("metadata", addon + ".maintain"), addon).get("uploader").value;
-								if (!perUploader.containsKey(uploader)) perUploader.put(uploader, new LinkedHashMap<>());
-								perUploader.get(uploader).put(addon, perAddOn.get(addon));
-							}
-
-							for (String uploader : perUploader.keySet()) {
-								Map<String, List<TransifexIssue>> relevantIssues = perUploader.get(uploader);
-								long total = 0;
-								for (List l : relevantIssues.values()) total += l.size();
-
-								String message = "Dear " + uploader + ",\nthe translators have found " + total + " new issue(s) in " +
-										relevantIssues.size() + " of your add-on(s). Below you may find a list of all new string issues.";
-								for (String addon : relevantIssues.keySet()) {
-									List<TransifexIssue> list = relevantIssues.get(addon);
-									message += "\n\n################################################################################\n " +
-											list.size() + " new issue(s) in add-on " + addon;
-									for (TransifexIssue i : list) {
-										message += "\n --------------------------------------------------------------------------------"
-												+ "\n  Issue ID      : " + i.issueID
-												+ "\n  Source String : " + i.string
-												+ "\n  String ID     : " + i.stringID
-												+ "\n  Occurrences   : " + i.occurrence
-												+ "\n  Issue message : " + i.message;
-									}
-									message += "\n################################################################################";
-								}
-
-								// NOCOM send message via mail
-								System.out.println(message);
-							}
-						}
-					// }  // NOCOM (if deploy)
+						// NOCOM send message via mail
+						System.out.println(message);
+					}
+				}
+				// }  // NOCOM (if deploy)
 				// }  // NOCOM (if phase == 0)
 			} catch (Exception e) {
 				errored = true;
