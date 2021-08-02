@@ -52,8 +52,11 @@ class SyncThread implements Runnable {
 					ServerUtils.sqlCmd(db, "show tables");
 
 				ServerUtils.log("Backing up the database...");
-				Runtime.getRuntime().exec(new String[] {"bash", "-c", "mysqldump -u" + Utils.config("databaseuser") + " -p"
-						+ Utils.config("databasepassword") + " " + Utils.config("addonsdatabase") + " > addons_database_backup.sql"});
+				Runtime.getRuntime().exec(new String[] {
+				    "bash", "-c",
+				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
+				        Utils.config("databasepassword") + " " + Utils.config("addonsdatabase") +
+				        " > addons_database_backup.sql"});
 
 				if (phase == 0) {
 					synchronized (ServerUtils.SYNCER) {
