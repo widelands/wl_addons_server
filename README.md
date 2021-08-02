@@ -27,6 +27,7 @@ Key                | Description                                                
 `port`             | Port number for the server                                         | `7388`
 `githubusername`   | User name for GitHub                                               | `bunnybot`
 `githubtoken`      | Personal Access Token for GitHub                                   | `123456abcdef`
+`transifextoken`   | Bearer token for Transifex                                         | `1/abcdef123456`
 `databaseserver`   | Connection line for the MySQL server                               | `jdbc:mysql://localhost:3306/`
 `websitedatabase`  | Name of the website database                                       | `wl_addons_server_website`
 `addonsdatabase`   | Name of the add-ons database                                       | `wl_addons_server_addons`
@@ -114,3 +115,4 @@ If you want to submit a new add-on or update an existing one without using the i
 This repository and its contents are published under the same license as Widelands: [The GNU General Public License (GPL) v2.](https://github.com/widelands/widelands/blob/master/COPYING)
 
 The file `mysql-connector-java-8.0.23.jar` is third-party code which we use with great gratitude to the authors. It contains its own LICENSE file.
+The file `json-simple-1.1.1.jar` is third-party code which we use with great gratitude to the authors. It is licensed under the [Apache License 2.0](https://code.google.com/archive/p/json-simple/).

@@ -60,6 +60,21 @@ public abstract class Utils {
 		return e;
 	}
 
+	public static String bashOutput(String... args) throws Exception {
+		Process p = Runtime.getRuntime().exec(args);
+		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+		String str, result = null;
+		while ((str = b.readLine()) != null) {
+			if (result == null) {
+				result = str;
+			} else {
+				result += "\n";
+				result += str;
+			}
+		}
+		return result;
+	}
+
 	public static String durationString(long millis) {
 		long hours = millis / (1000 * 60 * 60);
 		millis -= hours * 1000 * 60 * 60;
