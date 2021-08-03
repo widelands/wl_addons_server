@@ -66,7 +66,9 @@ class SyncThread implements Runnable {
 						ServerUtils.SYNCER.check();
 						ServerUtils.rebuildMetadata();
 
-						if (errored) throw new Exception("You still have not resolved the merge conflicts. Please do so soon!");
+						if (errored)
+							throw new Exception(
+							    "You still have not resolved the merge conflicts. Please do so soon!");
 
 						ServerUtils.log("Performing GitHub sync...");
 						Utils._staticprofiles.clear();
