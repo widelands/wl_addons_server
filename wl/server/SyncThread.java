@@ -46,7 +46,7 @@ class SyncThread implements Runnable {
 				                " sync scheduled for " + new Date(then) + " (" +
 				                Utils.durationString(then - now) + " remaining).");
 
-				Thread.sleep(/*then - now*/ 5000);  // NOCOM
+				Thread.sleep(then - now);
 
 				ServerUtils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
 				for (ServerUtils.Databases db : ServerUtils.Databases.values())
@@ -59,7 +59,7 @@ class SyncThread implements Runnable {
 				        Utils.config("databasepassword") + " " + Utils.config("addonsdatabase") +
 				        " > addons_database_backup.sql"});
 
-				// if (phase == 0) {  // NOCOM
+				if (phase == 0) {
 				synchronized (ServerUtils.SYNCER) {
 					ServerUtils.log("Cleaning up inactive threads...");
 					ServerUtils.SYNCER.check();
@@ -74,7 +74,7 @@ class SyncThread implements Runnable {
 					ServerUtils.SYNCER.sync();
 				}
 
-				// if (Boolean.parseBoolean(Utils.config("deploy"))) {  // NOCOM
+				if (Boolean.parseBoolean(Utils.config("deploy"))) {
 				ServerUtils.log("Checking Transifex issues...");
 				List<TransifexIssue> allIssues = TransifexIssue.checkIssues();
 				List<TransifexIssue> newIssues = new ArrayList<>();
@@ -149,8 +149,8 @@ class SyncThread implements Runnable {
 						message.delete();
 					}
 				}
-				// }  // NOCOM (if deploy)
-				// }  // NOCOM (if phase == 0)
+				}
+				}
 			} catch (Exception e) {
 				errored = true;
 				ServerUtils.log("GitHub sync ERROR: " + e);
