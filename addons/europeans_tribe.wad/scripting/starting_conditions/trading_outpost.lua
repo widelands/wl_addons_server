@@ -149,15 +149,6 @@ init = {
             end
             idx = idx + 1
         end
-        
-        -- collect all ~trainingssites
-        for i, building_name in ipairs(trainingsite_types) do
-            trainingsites = player:get_buildings(building_name)
-            -- if there is more than 1 building of each kind, enhance the first one, to prevent an AI bug
-            if #trainingsites > 1 then
-                trainingsites[0]:enhance(true)
-            end
-        end
     end
 end
 }
