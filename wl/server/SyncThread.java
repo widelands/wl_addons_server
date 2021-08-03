@@ -126,6 +126,7 @@ class SyncThread implements Runnable {
 									continue;
 								}
 								String email = sql.getString("email");
+								// TODO check whether the user is subscribed to such notifications
 
 								Map<String, List<TransifexIssue>> relevantIssues =
 								    perUploader.get(uploader);
@@ -134,6 +135,10 @@ class SyncThread implements Runnable {
 
 								File message = File.createTempFile("temp", null);
 								PrintWriter write = new PrintWriter(message);
+								write.println("From: noreply@widelands.org");
+								write.println("Subject: Transifex String Issues");
+								write.println();
+
 								write.print(
 								    "Dear " + uploader + ",\nthe translators have found " + total +
 								    " new issue(s) in " + relevantIssues.size() +
@@ -155,6 +160,7 @@ class SyncThread implements Runnable {
 									write.print(
 									    "\n################################################################################");
 								}
+								// TODO add footer with link where to disable notifications
 
 								Utils.bash("bash", "-c",
 								           "ssmtp '" + email + "' < " + message.getAbsolutePath());
