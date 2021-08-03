@@ -21,7 +21,6 @@ package wl.server;
 
 import java.io.*;
 import java.net.*;
-import java.sql.ResultSet;
 import java.util.*;
 import wl.utils.*;
 
@@ -74,100 +73,7 @@ class SyncThread implements Runnable {
 						ServerUtils.SYNCER.sync();
 					}
 
-					if (Boolean.parseBoolean(Utils.config("deploy"))) {
-						ServerUtils.log("Checking Transifex issues...");
-						List<TransifexIssue> allIssues = TransifexIssue.checkIssues();
-						List<TransifexIssue> newIssues = new ArrayList<>();
-						for (TransifexIssue i : allIssues) {
-							ResultSet sql = ServerUtils.sqlQuery(
-							    ServerUtils.Databases.kAddOns,
-							    "select * from txissues where id='" + i.issueID + "'");
-							if (!sql.next()) {
-								newIssues.add(i);
-								ServerUtils.sqlCmd(
-								    ServerUtils.Databases.kAddOns,
-								    "insert into txissues (id) value ('" + i.issueID + "')");
-							}
-						}
-						ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" +
-						                newIssues.size() + " total).");
-
-						if (!newIssues.isEmpty()) {
-							Map<String, List<TransifexIssue>> perAddOn = new LinkedHashMap<>();
-							for (TransifexIssue i : newIssues) {
-								if (!perAddOn.containsKey(i.addon))
-									perAddOn.put(i.addon, new ArrayList<>());
-								perAddOn.get(i.addon).add(i);
-							}
-
-							Map<String, Map<String, List<TransifexIssue>>> perUploader =
-							    new LinkedHashMap<>();
-							for (String addon : perAddOn.keySet()) {
-								String uploader =
-								    Utils
-								        .readProfile(
-								            new File("metadata", addon + ".maintain"), addon)
-								        .get("uploader")
-								        .value;
-								if (!perUploader.containsKey(uploader))
-									perUploader.put(uploader, new LinkedHashMap<>());
-								perUploader.get(uploader).put(addon, perAddOn.get(addon));
-							}
-
-							for (String uploader : perUploader.keySet()) {
-								ResultSet sql = ServerUtils.sqlQuery(
-								    ServerUtils.Databases.kWebsite,
-								    "select email from auth_user where username='" + uploader +
-								        "'");
-								if (!sql.next()) {
-									ServerUtils.log(
-									    "User '" + uploader +
-									    "' does not seem to be a registered user. No e-mail will be sent.");
-									continue;
-								}
-								String email = sql.getString("email");
-								// TODO check whether the user is subscribed to such notifications
-
-								Map<String, List<TransifexIssue>> relevantIssues =
-								    perUploader.get(uploader);
-								long total = 0;
-								for (List l : relevantIssues.values()) total += l.size();
-
-								File message = File.createTempFile("temp", null);
-								PrintWriter write = new PrintWriter(message);
-								write.println("From: noreply@widelands.org");
-								write.println("Subject: Transifex String Issues");
-								write.println();
-
-								write.print(
-								    "Dear " + uploader + ",\nthe translators have found " + total +
-								    " new issue(s) in " + relevantIssues.size() +
-								    " of your add-on(s). Below you may find a list of all new string issues.");
-								for (String addon : relevantIssues.keySet()) {
-									List<TransifexIssue> list = relevantIssues.get(addon);
-									write.print(
-									    "\n\n################################################################################\n " +
-									    list.size() + " new issue(s) in add-on " + addon);
-									for (TransifexIssue i : list) {
-										write.print(
-										    "\n --------------------------------------------------------------------------------"
-										    + "\n  Issue ID      : " + i.issueID +
-										    "\n  Source String : " + i.string +
-										    "\n  String ID     : " + i.stringID +
-										    "\n  Occurrences   : " + i.occurrence +
-										    "\n  Issue message : " + i.message);
-									}
-									write.print(
-									    "\n################################################################################");
-								}
-								// TODO add footer with link where to disable notifications
-
-								Utils.bash("bash", "-c",
-								           "ssmtp '" + email + "' < " + message.getAbsolutePath());
-								message.delete();
-							}
-						}
-					}
+					if (Boolean.parseBoolean(Utils.config("deploy"))) TransifexIssue.checkIssues();
 				}
 			} catch (Exception e) {
 				errored = true;
