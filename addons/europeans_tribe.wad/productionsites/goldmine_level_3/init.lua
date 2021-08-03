@@ -57,10 +57,12 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs ore or economy needs quartz",
             "consume=snack mead",
             "sleep=duration:10s",
+            "call=mine_stone",
             "call=mine_produce",
             "call=mine_produce",
             "consume=snack mead",
             "sleep=duration:10s",
+            "call=mine_stone",
             "call=mine_produce",
             "call=mine_produce",
             "call=mine_quartz",
@@ -72,6 +74,14 @@ descriptions:new_productionsite_type {
             "animate=working duration:25s",
             "mine=resource_gold radius:8 yield:80% when_empty:15% experience_on_fail:10%",
             "produce=ore",
+         }
+      },
+      mine_stone = {
+         descname = _"mining granite",
+         actions = {
+            "animate=working duration:25s",
+            "mine=resource_gold radius:8 yield:80% when_empty:15% experience_on_fail:10%",
+            "produce=granite",
          }
       },
       mine_quartz = {
@@ -87,7 +97,7 @@ descriptions:new_productionsite_type {
          descname = "encyclopedia",
          actions = {
             "consume=snack:2 mead:2",
-            "produce=ore:4 quartz",
+            "produce=ore:4 granite:2 quartz",
          }
       },
    },

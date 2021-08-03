@@ -25,7 +25,7 @@ init = {
 
     launch_expeditions(player, {
       {
-         log = 16,
+         log = 32,
          reed = 16,
          granite = 16,
          blackwood = 8,
@@ -39,7 +39,7 @@ init = {
          reed = 16,
          granite = 16,
          blackwood = 8,
-         europeans_farmer_basic = 3,
+         europeans_farmer_basic = 6,
          europeans_weaver_basic = 1,
          europeans_soldier = 1,
       },

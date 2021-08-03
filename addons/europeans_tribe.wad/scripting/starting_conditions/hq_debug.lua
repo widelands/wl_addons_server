@@ -3,12 +3,13 @@
 -- =======================================================================
 
 include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
+include "addons/enhanced_debug_scripts.wad/debug.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
 init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Headquarters",
+    descname = _ "Headquarters (Debug)",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
     tooltip = _"Start the game with your headquarters only",
     func =  function(player, shared_in_start)
@@ -19,6 +20,9 @@ init = {
     else
         player:allow_workers("all")
     end
+    
+    set_seafaring(0, false)
+    player.see_all = true
        
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {

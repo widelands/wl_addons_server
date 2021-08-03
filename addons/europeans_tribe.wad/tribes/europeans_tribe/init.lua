@@ -15,6 +15,7 @@ local r = {
    script = dirname .. "units.lua",
 
    starting_conditions = {
+      "addons/europeans_tribe.wad/scripting/starting_conditions/hq_debug.lua";
       "addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua";
       "addons/europeans_tribe.wad/scripting/starting_conditions/fortified_village.lua";
       "addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua";
