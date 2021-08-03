@@ -51,7 +51,9 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {},
+   aihints = {
+        force_after = 7200
+   },
 
    working_positions = {
       europeans_miner_basic = 1
