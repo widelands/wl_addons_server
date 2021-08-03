@@ -110,6 +110,7 @@ local init = {
         -- Allow all (advanced) buildings after 12 hours of game
         if i >= 48 then
            player:allow_buildings("all")
+        end
     end
 end
 }
