@@ -21,6 +21,7 @@ package wl.server;
 
 import java.io.*;
 import java.net.*;
+import java.sql.ResultSet;
 import java.util.*;
 import wl.utils.*;
 
@@ -51,6 +52,13 @@ class SyncThread implements Runnable {
 				ServerUtils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
 				for (ServerUtils.Databases db : ServerUtils.Databases.values())
 					ServerUtils.sqlCmd(db, "show tables");
+
+				ServerUtils.log("Backing up the database...");
+				Runtime.getRuntime().exec(new String[] {
+				    "bash", "-c",
+				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
+				        Utils.config("databasepassword") + " " + Utils.config("addonsdatabase") +
+				        " > addons_database_backup.sql"});
 
 				// if (phase == 0) {  // NOCOM
 				synchronized (ServerUtils.SYNCER) {
@@ -101,35 +109,44 @@ class SyncThread implements Runnable {
 					}
 
 					for (String uploader : perUploader.keySet()) {
+						ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite, "select email from auth_user where username='" + uploader + "'");
+						if (!sql.next()) {
+							ServerUtils.log("User '" + uploader + "' does not seem to be a registered user. No e-mail will be sent.");
+							continue;
+						}
+						String email = sql.getString("email");
+
 						Map<String, List<TransifexIssue>> relevantIssues =
 						    perUploader.get(uploader);
 						long total = 0;
 						for (List l : relevantIssues.values()) total += l.size();
 
-						String message =
+						File message = File.createTempFile("temp", null);
+						PrintWriter write = new PrintWriter(message);
+						write.print(
 						    "Dear " + uploader + ",\nthe translators have found " + total +
 						    " new issue(s) in " + relevantIssues.size() +
-						    " of your add-on(s). Below you may find a list of all new string issues.";
+						    " of your add-on(s). Below you may find a list of all new string issues.");
 						for (String addon : relevantIssues.keySet()) {
 							List<TransifexIssue> list = relevantIssues.get(addon);
-							message +=
+							write.print(
 							    "\n\n################################################################################\n " +
-							    list.size() + " new issue(s) in add-on " + addon;
+							    list.size() + " new issue(s) in add-on " + addon);
 							for (TransifexIssue i : list) {
-								message +=
+								write.print(
 								    "\n --------------------------------------------------------------------------------"
 								    + "\n  Issue ID      : " + i.issueID +
 								    "\n  Source String : " + i.string +
 								    "\n  String ID     : " + i.stringID +
 								    "\n  Occurrences   : " + i.occurrence +
-								    "\n  Issue message : " + i.message;
+								    "\n  Issue message : " + i.message);
 							}
-							message +=
-							    "\n################################################################################";
+							write.print(
+							    "\n################################################################################");
 						}
 
-						// NOCOM send message via mail
-						System.out.println(message);
+						Utils.bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
+						message.delete();
 					}
 				}
 				// }  // NOCOM (if deploy)

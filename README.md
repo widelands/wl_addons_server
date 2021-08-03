@@ -14,7 +14,7 @@ Before running the server or adding add-ons to this repository be sure a java de
 
 Before starting the server, ensure that a MySQL server is running somewhere with the following settings:
 - There is a database (called the *website database*) with the following tables in it:
-    - `auth_user` (`SELECT`): Contains at least an `int` column `id` and a `varchar` column `username`.
+    - `auth_user` (`SELECT`): Contains at least an `int` column `id`, a `varchar` column `username`, and a `varchar` column `email`.
     - `wlggz_ggzauth` (`SELECT`): Contains at least an `int` column `user_id`, a `varchar` column `password`, and an `int` column `permissions` (in which `7` means normal user and `127` means admin).
 - There is a (not necessarily separate) database (called the *add-ons database*) with the following table in it:
     - `uservotes` (`SELECT`, `INSERT`, `DELETE`): Contains an `int` column `user_id`, a `varchar` column `addon`, and an `int` column `vote`.
