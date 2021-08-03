@@ -59,21 +59,19 @@ class SyncThread implements Runnable {
 				        " > addons_database_backup.sql"});
 
 				if (phase == 0) {
+					if (Boolean.parseBoolean(Utils.config("deploy"))) TransifexIssue.checkIssues();
+
 					synchronized (ServerUtils.SYNCER) {
 						ServerUtils.log("Cleaning up inactive threads...");
 						ServerUtils.SYNCER.check();
 						ServerUtils.rebuildMetadata();
 
-						if (errored)
-							throw new Exception("You still have not resolved the merge conflicts. "
-							                    + "Please do so soon!");
+						if (errored) throw new Exception("You still have not resolved the merge conflicts. Please do so soon!");
 
 						ServerUtils.log("Performing GitHub sync...");
 						Utils._staticprofiles.clear();
 						ServerUtils.SYNCER.sync();
 					}
-
-					if (Boolean.parseBoolean(Utils.config("deploy"))) TransifexIssue.checkIssues();
 				}
 			} catch (Exception e) {
 				errored = true;
