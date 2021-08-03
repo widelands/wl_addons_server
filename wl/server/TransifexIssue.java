@@ -45,18 +45,18 @@ public class TransifexIssue {
 		List<TransifexIssue> newIssues = new ArrayList<>();
 
 		for (TransifexIssue i : allIssues) {
-			ResultSet sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns,
-			    "select * from txissues where id='" + i.issueID + "'");
+			ResultSet sql =
+			    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+			                         "select * from txissues where id='" + i.issueID + "'");
 			if (!sql.next()) {
 				newIssues.add(i);
-				ServerUtils.sqlCmd(
-				    ServerUtils.Databases.kAddOns,
-				    "insert into txissues (id) value ('" + i.issueID + "')");
+				ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+				                   "insert into txissues (id) value ('" + i.issueID + "')");
 			}
 		}
 
-		ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" + newIssues.size() + " total).");
+		ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" + newIssues.size() +
+		                " total).");
 		if (newIssues.isEmpty()) return;
 
 		Map<String, List<TransifexIssue>> perAddOn = new LinkedHashMap<>();
@@ -67,25 +67,21 @@ public class TransifexIssue {
 
 		Map<String, Map<String, List<TransifexIssue>>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
-			String uploader =
-			    Utils
-			        .readProfile(
-			            new File("metadata", addon + ".maintain"), addon)
-			        .get("uploader")
-			        .value;
-			if (!perUploader.containsKey(uploader)) perUploader.put(uploader, new LinkedHashMap<>());
+			String uploader = Utils.readProfile(new File("metadata", addon + ".maintain"), addon)
+			                      .get("uploader")
+			                      .value;
+			if (!perUploader.containsKey(uploader))
+				perUploader.put(uploader, new LinkedHashMap<>());
 			perUploader.get(uploader).put(addon, perAddOn.get(addon));
 		}
 
 		for (String uploader : perUploader.keySet()) {
 			ResultSet sql = ServerUtils.sqlQuery(
 			    ServerUtils.Databases.kWebsite,
-			    "select email from auth_user where username='" + uploader +
-			        "'");
+			    "select email from auth_user where username='" + uploader + "'");
 			if (!sql.next()) {
-				ServerUtils.log(
-				    "User '" + uploader +
-				    "' does not seem to be a registered user. No e-mail will be sent.");
+				ServerUtils.log("User '" + uploader +
+				                "' does not seem to be a registered user. No e-mail will be sent.");
 				continue;
 			}
 			String email = sql.getString("email");
@@ -101,10 +97,9 @@ public class TransifexIssue {
 			write.println("Subject: Transifex String Issues");
 			write.println();
 
-			write.print(
-			    "Dear " + uploader + ",\nthe translators have found " + total +
-			    " new issue(s) in " + relevantIssues.size() +
-			    " of your add-on(s). Below you may find a list of all new string issues.");
+			write.print("Dear " + uploader + ",\nthe translators have found " + total +
+			            " new issue(s) in " + relevantIssues.size() +
+			            " of your add-on(s). Below you may find a list of all new string issues.");
 			for (String addon : relevantIssues.keySet()) {
 				List<TransifexIssue> list = relevantIssues.get(addon);
 				write.print(
@@ -113,21 +108,20 @@ public class TransifexIssue {
 				for (TransifexIssue i : list) {
 					write.print(
 					    "\n --------------------------------------------------------------------------------"
-					    + "\n  Issue ID      : " + i.issueID +
-					    "\n  Source String : " + i.string +
+					    + "\n  Issue ID      : " + i.issueID + "\n  Source String : " + i.string +
 					    "\n  String ID     : " + i.stringID +
-					    "\n  Occurrences   : " + i.occurrence +
-					    "\n  Issue message : " + i.message);
+					    "\n  Occurrences   : " + i.occurrence + "\n  Issue message : " + i.message);
 				}
 				write.print(
 				    "\n################################################################################");
 			}
 
-			write.print("\n\n-------------------------\n" +
-					"To change how you receive notifications, please go to https://www.widelands.org/notification/.");
+			write.print(
+			    "\n\n-------------------------\n"
+			    +
+			    "To change how you receive notifications, please go to https://www.widelands.org/notification/.");
 			write.close();
-			Utils.bash("bash", "-c",
-			           "ssmtp '" + email + "' < " + message.getAbsolutePath());
+			Utils.bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
 			message.delete();
 		}
 	}
