@@ -16,8 +16,9 @@ Before starting the server, ensure that a MySQL server is running somewhere with
 - There is a database (called the *website database*) with the following tables in it:
     - `auth_user` (`SELECT`): Contains at least an `int` column `id`, a `varchar` column `username`, and a `varchar` column `email`.
     - `wlggz_ggzauth` (`SELECT`): Contains at least an `int` column `user_id`, a `varchar` column `password`, and an `int` column `permissions` (in which `7` means normal user and `127` means admin).
-- There is a (not necessarily separate) database (called the *add-ons database*) with the following table in it:
+- There is a (not necessarily separate) database (called the *add-ons database*) with the following tables in it:
     - `uservotes` (`SELECT`, `INSERT`, `DELETE`): Contains an `int` column `user_id`, a `varchar` column `addon`, and an `int` column `vote`.
+    - `txissues` (`SELECT`, `INSERT`): Contains a `varchar` column `id`.
 - There needs to be a user with the access permissions specified above in parentheses after the table names.
 
 Further, ensure that an ini-style config file called `config` exists in the working directory which contains the following keys:

@@ -32,7 +32,6 @@ class SyncThread implements Runnable {
 		// timeouts we run an arbitrary SQL statement every 6 hours as well.
 		boolean errored = false;
 		int phase = (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) + 3) / 6;
-		Set<String> knownIssues = new HashSet<>();
 		do {
 			try {
 				Calendar nextSync = Calendar.getInstance();
@@ -80,9 +79,10 @@ class SyncThread implements Runnable {
 				List<TransifexIssue> allIssues = TransifexIssue.checkIssues();
 				List<TransifexIssue> newIssues = new ArrayList<>();
 				for (TransifexIssue i : allIssues) {
-					if (!knownIssues.contains(i.issueID)) {
+					ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns, "select * from txissues where id='" + i.issueID + "'");
+					if (!sql.next()) {
 						newIssues.add(i);
-						knownIssues.add(i.issueID);
+						ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns, "insert into txissues (id) value ('" + i.issueID + "')");
 					}
 				}
 				ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" + newIssues.size() +
