@@ -3,12 +3,13 @@
 -- =======================================================================
 
 include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
+include "addons/enhanced_debug_scripts.wad/debug.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
 init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Headquarters",
+    descname = _ "Headquarters (Debug)",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
     tooltip = _"Start the game with your headquarters only",
     func =  function(player, shared_in_start)
@@ -19,6 +20,9 @@ init = {
     else
         player:allow_workers("all")
     end
+    
+    set_seafaring(0, false)
+    player.see_all = true
        
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {
@@ -77,6 +81,27 @@ init = {
     place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
     })
     
+    -- Get all trainingsite types
+    local trainingsite_types = {}
+    local trainingsites = {}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "trainingsite") then
+            table.insert(trainingsite_types, building.name)
+        end
+    end
+
+    for i = 1, 1000 do
+        sleep(900000) -- 15 min
+
+        -- collect all ~trainingssites
+        for i, building_name in ipairs(trainingsite_types) do
+            trainingsites = player:get_buildings(building_name)
+            -- if there is more than 1 building of each kind, enhance the first one, to prevent an AI bug
+            if #trainingsites > 1 then
+                trainingsites[0]:enhance(true)
+            end
+        end
+    end
 end
 }
 

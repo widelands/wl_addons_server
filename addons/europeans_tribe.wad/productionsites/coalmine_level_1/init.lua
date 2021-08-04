@@ -57,13 +57,15 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
          descname = _"mining coal",
          actions = {
-            "return=skipped unless economy needs coal",
+            "return=skipped unless economy needs coal or economy needs granite",
             "consume=ration beer",
             "sleep=duration:10s",
+            "call=mine_stone",
             "call=mine_produce",
             "call=mine_produce",
             "consume=ration beer",
             "sleep=duration:10s",
+            "call=mine_stone",
             "call=mine_produce",
          }
       },
@@ -75,12 +77,20 @@ descriptions:new_productionsite_type {
             "produce=coal",
          }
       },
+      mine_stone = {
+         descname = _"mining granite",
+         actions = {
+            "animate=working duration:15s",
+            "mine=resource_coal radius:4 yield:40% when_empty:5% experience_on_fail:10%",
+            "produce=granite",
+         }
+      },
       encyclopedia = {
          -- just a dummy program to fix encyclopedia
          descname = "encyclopedia",
          actions = {
             "consume=ration:2 beer:2",
-            "produce=coal:3",
+            "produce=coal:3 granite:2",
          }
       },
    },

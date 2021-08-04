@@ -25,7 +25,7 @@ init = {
 
     launch_expeditions(player, {
       {
-         log = 16,
+         log = 32,
          reed = 16,
          granite = 16,
          blackwood = 8,
@@ -39,7 +39,7 @@ init = {
          reed = 16,
          granite = 16,
          blackwood = 8,
-         europeans_farmer_basic = 3,
+         europeans_farmer_basic = 6,
          europeans_weaver_basic = 1,
          europeans_soldier = 1,
       },
@@ -66,27 +66,6 @@ init = {
       },
     })
     
-    -- Get all trainingsite types
-    local trainingsite_types = {}
-    local trainingsites = {}
-    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
-        if (building.type_name == "trainingsite") then
-            table.insert(trainingsite_types, building.name)
-        end
-    end
-
-    for i = 1, 1000 do
-        sleep(900000) -- 15 min
-
-        -- collect all ~trainingssites
-        for i, building_name in ipairs(trainingsite_types) do
-            trainingsites = player:get_buildings(building_name)
-            -- if there is more than 1 building of each kind, enhance the first one, to prevent an AI bug
-            if #trainingsites > 1 then
-                trainingsites[0]:enhance(true)
-            end
-        end
-    end
 end
 }
 

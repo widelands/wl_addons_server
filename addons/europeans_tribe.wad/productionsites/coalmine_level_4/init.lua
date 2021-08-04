@@ -58,10 +58,12 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs coal or economy needs diamond",
             "consume=snack mead",
             "sleep=duration:10s",
+            "call=mine_stone",
             "call=mine_produce",
             "call=mine_produce",
             "consume=snack mead",
             "sleep=duration:5s",
+            "call=mine_stone",
             "call=mine_produce",
             "call=mine_produce",
             "call=mine_diamond",
@@ -73,6 +75,14 @@ descriptions:new_productionsite_type {
             "animate=working duration:30s",
             "mine=resource_coal radius:8 yield:90% when_empty:15% experience_on_fail:10%",
             "produce=coal",
+         }
+      },
+      mine_stone = {
+         descname = _"mining granite",
+         actions = {
+            "animate=working duration:30s",
+            "mine=resource_coal radius:8 yield:90% when_empty:15% experience_on_fail:10%",
+            "produce=granite",
          }
       },
       mine_diamond = {
@@ -88,7 +98,7 @@ descriptions:new_productionsite_type {
          descname = "encyclopedia",
          actions = {
             "consume=snack:2 mead:2",
-            "produce=coal:4 diamond",
+            "produce=coal:4 granite:2 diamond",
          }
       },
    },
