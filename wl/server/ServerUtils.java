@@ -74,7 +74,6 @@ abstract class ServerUtils {
 		public final String configKey;
 		private Databases(String k) { configKey = k; }
 	}
-	;
 	private static final Connection[] _databases = new Connection[Databases.values().length];
 
 	public static void initDatabases() throws Exception {
