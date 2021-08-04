@@ -43,7 +43,7 @@ abstract class ServerUtils {
 	private static final Map<String, Semaphore> _semaphores = new HashMap<>();
 	private static final int SEMAPHORE_BLOCK_RW_ACCESS = 100;
 	private static Semaphore getSemaphore(String addon) {
-		synchronized(_semaphores) {
+		synchronized (_semaphores) {
 			if (!_semaphores.containsKey(addon))
 				_semaphores.put(addon, new Semaphore(SEMAPHORE_BLOCK_RW_ACCESS, true));
 			return _semaphores.get(addon);
