@@ -37,7 +37,7 @@ local init = {
         wares = {
             water = 48,
             log = 48,
-            blackwood = 24,
+            blackwood = 16,
             planks = 16,
             reed = 16,
             cloth = 16,
@@ -110,14 +110,6 @@ local init = {
         -- Allow all (advanced) buildings after 12 hours of game
         if i >= 48 then
            player:allow_buildings("all")
-            -- collect all ~trainingssites
-            for i, building_name in ipairs(trainingsite_types) do
-                trainingsites = player:get_buildings(building_name)
-                -- if there is more than 1 building of each kind, enhance the first one, to prevent an AI bug
-                if #trainingsites > 1 then
-                    trainingsites[0]:enhance(true)
-                end
-            end
         end
     end
 end

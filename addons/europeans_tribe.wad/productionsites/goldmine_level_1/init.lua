@@ -57,13 +57,15 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
          descname = _"mining gold",
          actions = {
-            "return=skipped unless economy needs ore",
+            "return=skipped unless economy needs ore or economy needs granite",
             "consume=ration beer",
             "sleep=duration:10s",
+            "call=mine_stone",
             "call=mine_produce",
             "call=mine_produce",
             "consume=ration beer",
             "sleep=duration:10s",
+            "call=mine_stone",
             "call=mine_produce",
          }
       },
@@ -75,12 +77,20 @@ descriptions:new_productionsite_type {
             "produce=ore",
          }
       },
+      mine_stone = {
+         descname = _"mining granite",
+         actions = {
+            "animate=working duration:15s",
+            "mine=resource_gold radius:4 yield:40% when_empty:5% experience_on_fail:10%",
+            "produce=granite",
+         }
+      },
       encyclopedia = {
          -- just a dummy program to fix encyclopedia
          descname = "encyclopedia",
          actions = {
             "consume=ration:2 beer:2",
-            "produce=ore:3",
+            "produce=ore:3 granite:2",
          }
       },
    },

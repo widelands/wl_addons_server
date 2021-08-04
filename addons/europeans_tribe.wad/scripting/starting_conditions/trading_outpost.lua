@@ -25,9 +25,9 @@ init = {
                 water = 256,
                 log = 192,
                 granite = 64,
+                reed = 48,
                 blackwood = 32,
                 planks = 32,
-                reed = 32,
                 cloth = 32,
                 iron = 32,
                 coal = 32,
@@ -56,7 +56,7 @@ init = {
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 16,
-                europeans_farmer_basic = 6,
+                europeans_farmer_basic = 8,
                 europeans_trainer_basic = 3,
                 europeans_lumberjack_basic = 3,
                 europeans_carpenter_basic = 2,
@@ -148,15 +148,6 @@ init = {
                 print (player.number..": "..added.." types of ware added to warehouse "..idx.." of "..#warehouses.." (cheating mode)")
             end
             idx = idx + 1
-        end
-        
-        -- collect all ~trainingssites
-        for i, building_name in ipairs(trainingsite_types) do
-            trainingsites = player:get_buildings(building_name)
-            -- if there is more than 1 building of each kind, enhance the first one, to prevent an AI bug
-            if #trainingsites > 1 then
-                trainingsites[0]:enhance(true)
-            end
         end
     end
 end

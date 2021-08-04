@@ -51,7 +51,9 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {},
+   aihints = {
+        forced_after = 3600
+   },
 
    working_positions = {
       europeans_miner_basic = 1
@@ -67,12 +69,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
          descname = _"mining iron",
          actions = {
-            "return=skipped unless economy needs ore",
+            "return=skipped unless economy needs ore or economy needs granite",
             "consume=ration beer",
             "sleep=duration:10s",
+            "call=mine_stone",
             "call=mine_produce",
             "consume=ration beer",
             "sleep=duration:10s",
+            "call=mine_stone",
             "call=mine_produce",
          }
       },
@@ -84,12 +88,20 @@ descriptions:new_productionsite_type {
             "produce=ore",
          }
       },
+      mine_stone = {
+         descname = _"mining granite",
+         actions = {
+            "animate=working duration:10s",
+            "mine=resource_iron radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+            "produce=granite",
+         }
+      },
       encyclopedia = {
          -- just a dummy program to fix encyclopedia
          descname = "encyclopedia",
          actions = {
             "consume=ration:2 beer:2",
-            "produce=ore:2",
+            "produce=ore:2 granite:2",
          }
       },
    },

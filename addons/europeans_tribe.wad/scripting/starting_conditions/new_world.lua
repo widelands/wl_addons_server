@@ -33,7 +33,7 @@ init = {
                     workers = {
                         europeans_carrier = 16,
                         europeans_builder = 8,
-                        europeans_farmer_basic = 6,
+                        europeans_farmer_basic = 8,
                         europeans_lumberjack_basic = 2,
                         europeans_forester_basic = 2,
                         europeans_carpenter_basic = 1,
@@ -58,7 +58,7 @@ init = {
                 water = 256,
                 log = 192,
                 granite = 64,
-                reed = 80,
+                reed = 64,
                 blackwood = 32,
                 planks = 32,
                 cloth = 32,
@@ -211,16 +211,6 @@ init = {
                 place_building(player, 47, 224, 6, "europeans_quarry_normal")
             end
             place_ship_random(player, 64)
-        end
-        if i > 12 then
-            -- collect all ~trainingssites
-            for i, building_name in ipairs(trainingsite_types) do
-                trainingsites = player:get_buildings(building_name)
-                -- if there is more than 1 building of each kind, enhance the first one, to prevent an AI bug
-                if #trainingsites > 1 then
-                    trainingsites[0]:enhance(true)
-                end
-            end
         end
     end
 end

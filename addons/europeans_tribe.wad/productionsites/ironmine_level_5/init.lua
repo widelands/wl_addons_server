@@ -43,10 +43,12 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs ore or economy needs quartz",
             "consume=meal wine",
             "sleep=duration:5s",
+            "call=mine_stone",
             "call=mine_produce",
             "call=mine_produce",
             "consume=meal wine",
             "sleep=duration:5s",
+            "call=mine_stone",
             "call=mine_produce",
             "call=mine_produce",
             "call=mine_quartz",
@@ -60,8 +62,16 @@ descriptions:new_productionsite_type {
             "produce=ore",
          }
       },
+      mine_stone = {
+         descname = _"mining granite",
+         actions = {
+            "animate=working duration:35s",
+            "mine=resource_iron radius:12 yield:100% when_empty:20% experience_on_fail:10%",
+            "produce=granite",
+         }
+      },
       mine_quartz = {
-         descname = _"mining iron",
+         descname = _"mining quartz",
          actions = {
             "animate=working duration:35s",
             "mine=resource_iron radius:12 yield:100% when_empty:20% experience_on_fail:10%",
@@ -73,7 +83,7 @@ descriptions:new_productionsite_type {
          descname = "encyclopedia",
          actions = {
             "consume=meal:2 wine:2",
-            "produce=ore:4 quartz",
+            "produce=ore:4 granite:2 quartz",
          }
       },
    },
