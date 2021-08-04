@@ -42,10 +42,12 @@ abstract class ServerUtils {
 
 	private static final Map<String, Semaphore> _semaphores = new HashMap<>();
 	private static final int SEMAPHORE_BLOCK_RW_ACCESS = 100;
-	private static synchronized Semaphore getSemaphore(String addon) {
-		if (!_semaphores.containsKey(addon))
-			_semaphores.put(addon, new Semaphore(SEMAPHORE_BLOCK_RW_ACCESS, true));
-		return _semaphores.get(addon);
+	private static Semaphore getSemaphore(String addon) {
+		synchronized(_semaphores) {
+			if (!_semaphores.containsKey(addon))
+				_semaphores.put(addon, new Semaphore(SEMAPHORE_BLOCK_RW_ACCESS, true));
+			return _semaphores.get(addon);
+		}
 	}
 
 	public static void semaphoreRO(String addon, Functor f) throws Exception {
@@ -55,16 +57,15 @@ abstract class ServerUtils {
 		doSemaphore(addon, SEMAPHORE_BLOCK_RW_ACCESS, f);
 	}
 	private static void doSemaphore(String addon, final int i, Functor f) throws Exception {
-		Exception throwme = null;
 		Semaphore s = getSemaphore(addon);
 		s.acquire(i);
 		try {
 			f.run();
 		} catch (Exception e) {
-			throwme = e;
+			throw e;
+		} finally {
+			s.release(i);
 		}
-		s.release(i);
-		if (throwme != null) throw throwme;
 	}
 
 	public static enum Databases {
