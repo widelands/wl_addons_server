@@ -56,7 +56,7 @@ class SyncThread implements Runnable {
 				    "bash", "-c",
 				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
 				        Utils.config("databasepassword") + " " + Utils.config("addonsdatabase") +
-				        " > addons_database_backup.sql"});
+				        " > _addons_database_backup.sql"});
 
 				if (phase == 0) {
 					if (Boolean.parseBoolean(Utils.config("deploy"))) TransifexIssue.checkIssues();
