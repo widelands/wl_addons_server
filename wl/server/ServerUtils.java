@@ -39,7 +39,6 @@ abstract class ServerUtils {
 	}
 
 	public static interface Functor { public void run() throws Exception; }
-	;
 
 	private static final Map<String, Semaphore> _semaphores = new HashMap<>();
 	private static final int SEMAPHORE_BLOCK_RW_ACCESS = 100;
