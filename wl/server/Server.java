@@ -1,3 +1,22 @@
+/*
+ * Copyright (C) 2021 by the Widelands Development Team
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ */
+
 package wl.server;
 
 import java.io.*;
@@ -9,12 +28,10 @@ public class Server {
 	public static void main(String[] args) throws Exception {
 		Utils.bash("bash", "-c", "echo $PPID");  // Print our PID to the logfile so the maintainer
 		                                         // knows how to kill the server process.
-		ServerUtils.log("Initializing SQL...");
-		Properties connectionProps = new Properties();
-		connectionProps.put("user", Utils.config("databaseuser"));
-		connectionProps.put("password", Utils.config("databasepassword"));
-		java.sql.Connection database =
-		    java.sql.DriverManager.getConnection​(Utils.config("databasename"), connectionProps);
+
+		ServerUtils.initDatabases();
+
+		ServerUtils.rebuildMetadata();
 
 		ServerUtils.log("Server starting...");
 		ServerSocket serverSocket = new ServerSocket(Integer.valueOf(Utils.config("port")));
@@ -23,7 +40,7 @@ public class Server {
 		long n = 0;
 		while (true) {
 			Socket s = serverSocket.accept();
-			new Thread(new ClientThread(s, database), String.format("Client#%06d", ++n)).start();
+			new Thread(new ClientThread(s), String.format("Client#%06d", ++n)).start();
 		}
 	}
 
@@ -32,10 +49,12 @@ public class Server {
 	                          InputStream in,
 	                          int version,
 	                          String username,
+	                          long userDatabaseID,
 	                          boolean admin,
 	                          String locale) throws Exception {
 		// String method = null;
-		HandleCommand h = new HandleCommand(cmd, out, in, version, username, admin, locale);
+		HandleCommand h =
+		    new HandleCommand(cmd, out, in, version, username, userDatabaseID, admin, locale);
 		switch (Command.valueOf(cmd[0])) {
 			case CMD_LIST:
 				h.handleCmdList();
