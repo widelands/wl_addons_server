@@ -13,10 +13,12 @@ Before running the server or adding add-ons to this repository be sure a java de
 ### The server
 
 Before starting the server, ensure that a MySQL server is running somewhere with the following settings:
-- There is a database with two tables in it:
-    - `auth_user`: Contains at least an `int` column `id` and a `varchar` column `username`.
-    - `wlggz_ggzauth`: Contains at least an `int` column `user_id`, a `varchar` column `password`, and an `int` column `permissions` (in which `7` means normal user and `127` means admin).
-- There needs to be a user with read access to both tables.
+- There is a database (called the *website database*) with the following tables in it:
+    - `auth_user` (`SELECT`): Contains at least an `int` column `id` and a `varchar` column `username`.
+    - `wlggz_ggzauth` (`SELECT`): Contains at least an `int` column `user_id`, a `varchar` column `password`, and an `int` column `permissions` (in which `7` means normal user and `127` means admin).
+- There is a (not necessarily separate) database (called the *add-ons database*) with the following table in it:
+    - `uservotes` (`SELECT`, `INSERT`, `DELETE`): Contains an `int` column `user_id`, a `varchar` column `addon`, and an `int` column `vote`.
+- There needs to be a user with the access permissions specified above in parentheses after the table names.
 
 Further, ensure that an ini-style config file called `config` exists in the working directory which contains the following keys:
 
@@ -25,8 +27,9 @@ Key                | Description                                                
 `port`             | Port number for the server                                         | `7388`
 `githubusername`   | User name for GitHub                                               | `bunnybot`
 `githubtoken`      | Personal Access Token for GitHub                                   | `123456abcdef`
-`uservotesdir`     | Directory where users’ votes are stored                            | `/home/bunnybot/addons_server/uservotes`
-`databasename`     | Connection line for the database                                   | `jdbc:mysql://localhost:3306/widelands_addons_server`
+`databaseserver`   | Connection line for the MySQL server                               | `jdbc:mysql://localhost:3306/`
+`websitedatabase`  | Name of the website database                                       | `wl_addons_server_website`
+`addonsdatabase`   | Name of the add-ons database                                       | `wl_addons_server_addons`
 `databaseuser`     | Database user name                                                 | `someuser`
 `databasepassword` | Password of the database user                                      | `123456`
 `deploy`           | Whether this server is the real thing, not just a test environment | `true` or `false`

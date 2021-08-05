@@ -1,3 +1,22 @@
+/*
+ * Copyright (C) 2021 by the Widelands Development Team
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ */
+
 package wl.utils;
 
 import java.io.*;
@@ -166,7 +185,7 @@ public abstract class Utils {
 		w.close();
 	}
 
-	synchronized public static void registerDownload(String addon) throws Exception {
+	public static void registerDownload(String addon) throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 		ch.put("downloads",
@@ -175,30 +194,8 @@ public abstract class Utils {
 		editMetadata(true, addon, ch);
 	}
 
-	synchronized public static void registerVote(String addon, String user, String v)
+	public static void comment(String addon, String user, String version, String message)
 	    throws Exception {
-		File votesFile = new File(config("uservotesdir"));
-		votesFile.mkdir();
-		votesFile = new File(votesFile, addon);
-		if (!votesFile.isFile()) votesFile.createNewFile();
-
-		TreeMap<String, Value> edit = new TreeMap<>();
-		edit.put(user, new Value(user, v));
-		editProfile(votesFile, addon, edit);
-		TreeMap<String, Value> uservotes = readProfile(votesFile, addon);
-
-		edit.clear();
-		for (int i = 1; i <= 10; i++) edit.put("votes_" + i, new Value("votes_" + i, "0"));
-		for (String key : uservotes.keySet()) {
-			String vote = "votes_" + uservotes.get(key).value;
-			if (edit.containsKey(vote))
-				edit.put(vote, new Value(vote, "" + (Long.valueOf(edit.get(vote).value) + 1)));
-		}
-		editMetadata(true, addon, edit);
-	}
-
-	synchronized public static void
-	comment(String addon, String user, String version, String message) throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 
@@ -217,8 +214,8 @@ public abstract class Utils {
 		editMetadata(true, addon, ch);
 	}
 
-	synchronized public static void
-	editComment(String addon, String index, String user, String message) throws Exception {
+	public static void editComment(String addon, String index, String user, String message)
+	    throws Exception {
 		File f = new File("metadata", addon + ".server");
 		TreeMap<String, Value> ch = new TreeMap<>();
 

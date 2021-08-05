@@ -1,18 +1,34 @@
+/*
+ * Copyright (C) 2021 by the Widelands Development Team
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ */
+
 package wl.server;
 
 import java.io.*;
 import java.net.*;
+import java.sql.ResultSet;
 import java.util.*;
 import wl.utils.*;
 
 class ClientThread implements Runnable {
 	private Socket socket;
-	private java.sql.Connection database;
 
-	public ClientThread(Socket s, java.sql.Connection db) {
-		socket = s;
-		database = db;
-	}
+	public ClientThread(Socket s) { socket = s; }
 
 	@Override
 	public void run() {
@@ -40,6 +56,7 @@ class ClientThread implements Runnable {
 				throw new ServerUtils.WLProtocolException("Stream continues past its end");
 			}
 			boolean admin = false;
+			long userDatabaseID = -1;
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
@@ -47,31 +64,28 @@ class ClientThread implements Runnable {
 				out.println(r);
 				out.println("ENDOFSTREAM");
 
-				java.sql.ResultSet sql = database.createStatement().executeQuery(
+				ResultSet sql = ServerUtils.sqlQuery(
+				    ServerUtils.Databases.kWebsite,
 				    "select id from auth_user where username='" + username + "'");
 				if (!sql.next())
 					throw new ServerUtils.WLProtocolException("User " + username +
 					                                          " is not registered");
-				final long userID = sql.getLong​(1);
+				userDatabaseID = sql.getLong​("id");
 
-				sql = database.createStatement().executeQuery(
-				    "select permissions from wlggz_ggzauth where user_id=" + userID);
+				sql = ServerUtils.sqlQuery(
+				    ServerUtils.Databases.kWebsite,
+				    "select permissions,password from wlggz_ggzauth where user_id=" +
+				        userDatabaseID);
 				if (!sql.next())
-					throw new ServerUtils.WLProtocolException("User " + username +
-					                                          " has no permissions at all");
-				final long permissions = sql.getLong(1);
+					throw new ServerUtils.WLProtocolException(
+					    "User " + username + " did not set an online gaming password");
+				final long permissions = sql.getLong("permissions");
 				if (permissions != 7 && permissions != 127)
 					throw new ServerUtils.WLProtocolException(
 					    "User " + username + " has invalid permissions code " + permissions);
 				admin = (permissions == 127);
-
-				sql = database.createStatement().executeQuery(
-				    "select password from wlggz_ggzauth where user_id=" + userID);
-				if (!sql.next())
-					throw new ServerUtils.WLProtocolException("User " + username +
-					                                          " did not set a password");
 				String passwordHash = "";
-				for (byte b : Base64.getDecoder().decode(sql.getString(1)))
+				for (byte b : Base64.getDecoder().decode(sql.getString("password")))
 					passwordHash = String.format("%s%02x", passwordHash, b);
 
 				Process p = Runtime.getRuntime().exec(new String[] {"md5sum"});
@@ -101,7 +115,8 @@ class ClientThread implements Runnable {
 					ServerUtils.SYNCER.tick(socket);
 					ServerUtils.log("Received command: " + cmd);
 				}
-				Server.handle(cmd.split(" "), out, in, protocolVersion, username, admin, locale);
+				Server.handle(cmd.split(" "), out, in, protocolVersion, username, userDatabaseID,
+				              admin, locale);
 			}
 		} catch (Exception e) {
 			ServerUtils.log("ERROR: " + e);
