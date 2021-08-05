@@ -52,10 +52,12 @@ public class Server {
 	                          long userDatabaseID,
 	                          boolean admin,
 	                          String locale) throws Exception {
-		// String method = null;
+		Command command = Command.valueOf(cmd[0]);
+		ServerUtils.MUNIN.countCommand(command);
 		HandleCommand h =
 		    new HandleCommand(cmd, out, in, version, username, userDatabaseID, admin, locale);
-		switch (Command.valueOf(cmd[0])) {
+
+		switch (command) {
 			case CMD_LIST:
 				h.handleCmdList();
 				break;
@@ -95,5 +97,7 @@ public class Server {
 			default:
 				throw new ServerUtils.WLProtocolException("Invalid command " + cmd[0]);
 		}
+
+		ServerUtils.MUNIN.registerSuccessfulCommand();
 	}
 }

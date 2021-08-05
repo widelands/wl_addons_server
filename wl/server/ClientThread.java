@@ -34,6 +34,8 @@ class ClientThread implements Runnable {
 	public void run() {
 		synchronized (ServerUtils.SYNCER) { ServerUtils.SYNCER.tick(socket); }
 		PrintStream out = null;
+		long userDatabaseID = -1;
+		boolean didLogInSuccessfully = false, hideFromStats = false;
 		try {
 			ServerUtils.log("Connection received from " + socket.getInetAddress() + " : " +
 			                socket.getPort() + " on " + socket.getLocalSocketAddress() + " (" +
@@ -41,8 +43,16 @@ class ClientThread implements Runnable {
 			out = new PrintStream(socket.getOutputStream(), true);
 			InputStream in = socket.getInputStream();
 
-			final int protocolVersion = Integer.valueOf(ServerUtils.readLine(in));
-			ServerUtils.log("Version: " + protocolVersion);
+			final String protocolVersionString = ServerUtils.readLine(in);
+			ServerUtils.log("Version: " + protocolVersionString);
+
+			if (protocolVersionString.equals("munin")) {
+				hideFromStats = true;
+				ServerUtils.handleMunin(in, out);
+				return;
+			}
+
+			final int protocolVersion = Integer.valueOf(protocolVersionString);
 			if (protocolVersion != 4) {
 				throw new ServerUtils.WLProtocolException("Unsupported version '" +
 				                                          protocolVersion +
@@ -56,14 +66,9 @@ class ClientThread implements Runnable {
 				throw new ServerUtils.WLProtocolException("Stream continues past its end");
 			}
 			boolean admin = false;
-			long userDatabaseID = -1;
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
-				final long r = ServerUtils.RANDOM.nextLong();
-				out.println(r);
-				out.println("ENDOFSTREAM");
-
 				ResultSet sql = ServerUtils.sqlQuery(
 				    ServerUtils.Databases.kWebsite,
 				    "select id from auth_user where username='" + username + "'");
@@ -88,27 +93,12 @@ class ClientThread implements Runnable {
 				for (byte b : Base64.getDecoder().decode(sql.getString("password")))
 					passwordHash = String.format("%s%02x", passwordHash, b);
 
-				Process p = Runtime.getRuntime().exec(new String[] {"md5sum"});
-				PrintWriter md5 = new PrintWriter(p.getOutputStream());
-				md5.println(passwordHash);
-				md5.println(r);
-				md5.close();
-				final String expected =
-				    new BufferedReader(new InputStreamReader(p.getInputStream()))
-				        .readLine()
-				        .split(" ")[0];
-
-				final String password = ServerUtils.readLine(in);
-				if (!ServerUtils.readLine(in).equals("ENDOFSTREAM")) {
-					throw new ServerUtils.WLProtocolException("Stream continues past its end");
-				}
-				if (!password.equals(expected)) {
-					throw new ServerUtils.WLProtocolException("Wrong username or password");
-				}
-
+				ServerUtils.passwordAuthentification(in, out, passwordHash);
 				out.println(admin ? "ADMIN" : "SUCCESS");
 			}
 
+			didLogInSuccessfully = true;
+			ServerUtils.MUNIN.registerLogin(userDatabaseID);
 			String cmd;
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
 				synchronized (ServerUtils.SYNCER) {
@@ -121,8 +111,16 @@ class ClientThread implements Runnable {
 		} catch (Exception e) {
 			ServerUtils.log("ERROR: " + e);
 			if (out != null) out.println(e);
+		} finally {
+			ServerUtils.log("Connection quit.");
+			if (!hideFromStats) {
+				if (didLogInSuccessfully) {
+					ServerUtils.MUNIN.registerLogout(userDatabaseID);
+				} else {
+					ServerUtils.MUNIN.registerFailedLogin();
+				}
+			}
+			if (out != null) out.close();
 		}
-		ServerUtils.log("Connection quit.");
-		if (out != null) out.close();
 	}
 }

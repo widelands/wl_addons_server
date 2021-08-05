@@ -29,6 +29,7 @@ Key                | Description                                                
 `githubusername`   | User name for GitHub                                               | `bunnybot`
 `githubtoken`      | Personal Access Token for GitHub                                   | `123456abcdef`
 `transifextoken`   | Bearer token for Transifex                                         | `1/abcdef123456`
+`muninpassword`    | Arbitrary password for munin integration scripts                   | `123456`
 `databaseserver`   | Connection line for the MySQL server                               | `jdbc:mysql://localhost:3306/`
 `websitedatabase`  | Name of the website database                                       | `wl_addons_server_website`
 `addonsdatabase`   | Name of the add-ons database                                       | `wl_addons_server_addons`

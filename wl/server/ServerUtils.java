@@ -281,6 +281,106 @@ abstract class ServerUtils {
 		                                     + "- Message length: " + msg.length() + " characters");
 	}
 
+	public static void passwordAuthentification(InputStream in, PrintStream out, String correctPassword) throws Exception {
+		long r;
+		synchronized (RANDOM) { r = RANDOM.nextLong(); }
+		out.println(r);
+		out.println("ENDOFSTREAM");
+
+		Process p = Runtime.getRuntime().exec(new String[] {"md5sum"});
+		PrintWriter md5 = new PrintWriter(p.getOutputStream());
+		md5.println(correctPassword);
+		md5.println(r);
+		md5.close();
+		final String expected =
+		    new BufferedReader(new InputStreamReader(p.getInputStream()))
+		        .readLine()
+		        .split(" ")[0];
+
+		final String password = readLine(in);
+		if (!readLine(in).equals("ENDOFSTREAM")) {
+			throw new WLProtocolException("Stream continues past its end");
+		}
+		if (!password.equals(expected)) {
+			throw new WLProtocolException("Wrong username or password");
+		}
+	}
+
+	public static class MuninStatistics {
+		private final long[] commandCounters;
+		private long currentTotalUsers, failedLogins, successfulLogins, successfulCommands;
+		private final List<Long> currentRegisteredUsers, allRegisteredUsers;
+
+		public MuninStatistics() {
+			commandCounters = new long[Command.values().length];
+			for (int i = 0; i < commandCounters.length; i++) commandCounters[i] = 0;
+
+			currentTotalUsers = 0;
+			failedLogins = 0;
+			successfulLogins = 0;
+			successfulCommands = 0;
+			currentRegisteredUsers = new ArrayList<>();
+			allRegisteredUsers = new ArrayList<>();
+		}
+
+		public synchronized void printStats(int version, PrintStream out) throws Exception {
+			switch (version) {
+				case 1: {
+					out.println(currentTotalUsers);
+					out.println(currentRegisteredUsers.size());
+					out.println(allRegisteredUsers.size());
+					out.println(successfulLogins);
+					out.println(failedLogins);
+
+					long totalCmd = 0;
+					for (long cmd : commandCounters) {
+						totalCmd += cmd;
+						out.println(cmd);
+					}
+					out.println(totalCmd - successfulCommands);
+
+					break;
+				}
+				default:
+					throw new WLProtocolException("Wrong version " + version);
+			}
+		}
+
+		public synchronized void countCommand(Command cmd) {
+			commandCounters[cmd.ordinal()]++;
+		}
+		public synchronized void registerSuccessfulCommand() {
+			successfulCommands++;
+		}
+		public synchronized void registerLogin(long user) {
+			successfulLogins++;
+			currentTotalUsers++;
+			if (user >= 0) {
+				currentRegisteredUsers.add(user);
+				if (!allRegisteredUsers.contains(user)) allRegisteredUsers.add(user);
+			}
+		}
+		public synchronized void registerLogout(Long user) {
+			currentTotalUsers--;
+			currentRegisteredUsers.remove((Object)user);
+		}
+		public synchronized void registerFailedLogin() {
+			failedLogins++;
+		}
+	}
+	public static final MuninStatistics MUNIN = new MuninStatistics();
+
+	public static void handleMunin(InputStream in, PrintStream out) throws Exception {
+		final int version = Integer.valueOf(readLine(in));
+		if (version != 1) throw new WLProtocolException("Unsupported munin version '" + version + "' (only supported version is '1')");
+		log("Munin version: " + version);
+		if (!readLine(in).equals("ENDOFSTREAM")) throw new WLProtocolException("Stream continues past its end");
+
+		passwordAuthentification(in, out, Utils.config("muninpassword"));
+		MUNIN.printStats(version, out);
+		out.println("ENDOFSTREAM");
+	}
+
 	public static void
 	info(final int version, final String addon, final String locale, PrintStream out)
 	    throws Exception {
