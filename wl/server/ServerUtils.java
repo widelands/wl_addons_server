@@ -86,7 +86,9 @@ abstract class ServerUtils {
 
 		for (Databases db : Databases.values()) {
 			_databases[db.ordinal()] = DriverManager.getConnection​(
-			    "jdbc:mysql://" + Utils.config("databasehost") + ":" + Utils.config("databaseport") + "/" + Utils.config(db.configKey), connectionProps);
+			    "jdbc:mysql://" + Utils.config("databasehost") + ":" +
+			        Utils.config("databaseport") + "/" + Utils.config(db.configKey),
+			    connectionProps);
 		}
 	}
 

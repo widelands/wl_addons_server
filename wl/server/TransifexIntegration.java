@@ -141,11 +141,11 @@ public class TransifexIntegration {
 			// NOCOM check whether the user is subscribed to such notifications:
 			sql = ServerUtils.sqlQuery(
 			    ServerUtils.Databases.kWebsite,
-			    "select send from notification_noticesetting where user_id=" +
-			    sql.getLong("id") + " and notice_type_id=1234");  // NOCOM
+			    "select send from notification_noticesetting where user_id=" + sql.getLong("id") +
+			        " and notice_type_id=1234");  // NOCOM
 			if (sql.next() && sql.getShort("send") < 1) {
-			    ServerUtils.log("User '" + uploader + "' disabled notifications.");
-			    continue;
+				ServerUtils.log("User '" + uploader + "' disabled notifications.");
+				continue;
 			}
 
 			Map<String, List<Issue>> relevantIssues = perUploader.get(uploader);
