@@ -183,8 +183,8 @@ abstract class ServerUtils {
 		if (name == null || (!directory && name.isEmpty()))
 			throw new WLProtocolException("Empty name");
 		if (name.length() > 80)
-			throw new WLProtocolException("Name '" + name + "' is too long (" +
-			                              name.length() + " chars; limit is 80)");
+			throw new WLProtocolException("Name '" + name + "' is too long (" + name.length() +
+			                              " chars; limit is 80)");
 
 		for (char c : name.toCharArray()) {
 			if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '1' && c <= '9') ||
