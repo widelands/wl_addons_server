@@ -34,7 +34,7 @@ class SyncThread implements Runnable {
 		do {
 			try {
 				Calendar nextSync = Calendar.getInstance();
-				nextSync.set(Calendar.HOUR_OF_DAY, 3);
+				nextSync.set(Calendar.HOUR_OF_DAY, 3 + (phase * 6));
 				nextSync.set(Calendar.MINUTE, 0);
 				nextSync.set(Calendar.SECOND, 0);
 				nextSync.set(Calendar.MILLISECOND, 0);
