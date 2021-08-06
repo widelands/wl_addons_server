@@ -66,7 +66,6 @@ class ClientThread implements Runnable {
 				throw new ServerUtils.WLProtocolException("Stream continues past its end");
 			}
 			boolean admin = false;
-			long userDatabaseID = -1;
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {

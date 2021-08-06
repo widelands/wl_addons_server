@@ -182,6 +182,10 @@ abstract class ServerUtils {
 	public static void checkNameValid(String name, boolean directory) {
 		if (name == null || (!directory && name.isEmpty()))
 			throw new WLProtocolException("Empty name");
+		if (name.length() > 80)
+			throw new WLProtocolException("Name '" + name + "' is too long (" +
+			                              name.length() + " chars; limit is 80)");
+
 		for (char c : name.toCharArray()) {
 			if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '1' && c <= '9') ||
 			    c == '0' || c == '.' || c == '_' || c == '-')
@@ -190,6 +194,7 @@ abstract class ServerUtils {
 			throw new WLProtocolException("Name '" + name + "' may not contain the character '" +
 			                              c + "'");
 		}
+
 		if (name.startsWith("/"))
 			throw new WLProtocolException("Name '" + name + "' may not start with '/'");
 		if (name.contains(".."))
@@ -308,10 +313,12 @@ abstract class ServerUtils {
 
 	public static class MuninStatistics {
 		private final long[] commandCounters;
+		private final long initTime;
 		private long currentTotalUsers, failedLogins, successfulLogins, successfulCommands;
 		private final List<Long> currentRegisteredUsers, allRegisteredUsers;
 
 		public MuninStatistics() {
+			initTime = System.currentTimeMillis();
 			commandCounters = new long[Command.values().length];
 			for (int i = 0; i < commandCounters.length; i++) commandCounters[i] = 0;
 
@@ -326,6 +333,7 @@ abstract class ServerUtils {
 		public synchronized void printStats(int version, PrintStream out) throws Exception {
 			switch (version) {
 				case 1: {
+					out.println(System.currentTimeMillis() - initTime);
 					out.println(currentTotalUsers);
 					out.println(currentRegisteredUsers.size());
 					out.println(allRegisteredUsers.size());
