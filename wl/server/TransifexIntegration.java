@@ -118,12 +118,11 @@ public class TransifexIntegration {
 
 		Map<String, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
-			String uploader = Utils.readProfile(new File("metadata", addon + ".maintain"), addon)
-			                      .get("uploader")
-			                      .value;
-			if (!perUploader.containsKey(uploader))
-				perUploader.put(uploader, new LinkedHashMap<>());
-			perUploader.get(uploader).put(addon, perAddOn.get(addon));
+			for (String uploader : new String[] { Utils.readProfile(new File("metadata", addon + ".maintain"), addon).get("uploader").value }) {
+				if (!perUploader.containsKey(uploader))
+					perUploader.put(uploader, new LinkedHashMap<>());
+				perUploader.get(uploader).put(addon, perAddOn.get(addon));
+			}
 		}
 
 		for (String uploader : perUploader.keySet()) {
