@@ -55,8 +55,10 @@ class SyncThread implements Runnable {
 				Runtime.getRuntime().exec(new String[] {
 				    "bash", "-c",
 				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
-				        Utils.config("databasepassword") + " " + Utils.config("addonsdatabase") +
-				        " > _addons_database_backup.sql"});
+				        Utils.config("databasepassword") +
+				        " -h" + Utils.config("databasehost") +
+				        " -P" + Utils.config("databaseport") +
+				        " " + Utils.config("addonsdatabase") + " > _addons_database_backup.sql"});
 
 				if (phase == 0) {
 					if (Boolean.parseBoolean(Utils.config("deploy"))) {

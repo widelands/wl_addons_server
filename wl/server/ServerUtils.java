@@ -86,7 +86,7 @@ abstract class ServerUtils {
 
 		for (Databases db : Databases.values()) {
 			_databases[db.ordinal()] = DriverManager.getConnection​(
-			    Utils.config("databaseserver") + Utils.config(db.configKey), connectionProps);
+			    "jdbc:mysql://" + Utils.config("databasehost") + ":" + Utils.config("databaseport") + "/" + Utils.config(db.configKey), connectionProps);
 		}
 	}
 
@@ -122,6 +122,11 @@ abstract class ServerUtils {
 				throw new ServerUtils.WLProtocolException("Line length limit exceeded");
 			buffer.write(c);
 		}
+	}
+
+	public static void checkEndOfStream(InputStream in) throws Exception {
+		if (!readLine(in).equals("ENDOFSTREAM"))
+			throw new WLProtocolException("Stream continues past its end");
 	}
 
 	public static class DirInfo {
@@ -302,9 +307,7 @@ abstract class ServerUtils {
 		    new BufferedReader(new InputStreamReader(p.getInputStream())).readLine().split(" ")[0];
 
 		final String password = readLine(in);
-		if (!readLine(in).equals("ENDOFSTREAM")) {
-			throw new WLProtocolException("Stream continues past its end");
-		}
+		checkEndOfStream(in);
 		if (!password.equals(expected)) {
 			throw new WLProtocolException("Wrong username or password");
 		}
@@ -377,8 +380,7 @@ abstract class ServerUtils {
 			throw new WLProtocolException("Unsupported munin version '" + version +
 			                              "' (only supported version is '1')");
 		log("Munin version: " + version);
-		if (!readLine(in).equals("ENDOFSTREAM"))
-			throw new WLProtocolException("Stream continues past its end");
+		checkEndOfStream(in);
 
 		passwordAuthentification(in, out, Utils.config("muninpassword"));
 		MUNIN.printStats(version, out);

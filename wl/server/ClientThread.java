@@ -62,9 +62,7 @@ class ClientThread implements Runnable {
 			ServerUtils.log("Locale: " + locale);
 			final String username = ServerUtils.readLine(in);
 			ServerUtils.log("Username: " + username);
-			if (!ServerUtils.readLine(in).equals("ENDOFSTREAM")) {
-				throw new ServerUtils.WLProtocolException("Stream continues past its end");
-			}
+			ServerUtils.checkEndOfStream(in);
 			boolean admin = false;
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");

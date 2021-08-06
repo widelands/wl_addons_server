@@ -33,7 +33,7 @@ public class TransifexIntegration {
 		ServerUtils.log("Rebuilding catalogues...");
 		Buildcats.buildCatalogues();
 
-		ServerUtils.log("Updating PO/POT/MO files...");
+		ServerUtils.log("Updating PO and MO files...");
 		Utils.bashOutput("rm", "-r", "i18n");
 		for (File poDir : ServerUtils.listSorted(new File("po"))) {
 			for (File poFile : ServerUtils.listSorted(poDir)) {
@@ -131,14 +131,22 @@ public class TransifexIntegration {
 		for (String uploader : perUploader.keySet()) {
 			ResultSet sql = ServerUtils.sqlQuery(
 			    ServerUtils.Databases.kWebsite,
-			    "select email from auth_user where username='" + uploader + "'");
+			    "select id,email from auth_user where username='" + uploader + "'");
 			if (!sql.next()) {
 				ServerUtils.log("User '" + uploader +
 				                "' does not seem to be a registered user. No e-mail will be sent.");
 				continue;
 			}
 			String email = sql.getString("email");
-			// TODO check whether the user is subscribed to such notifications
+			// NOCOM check whether the user is subscribed to such notifications:
+			sql = ServerUtils.sqlQuery(
+			    ServerUtils.Databases.kWebsite,
+			    "select send from notification_noticesetting where user_id=" +
+			    sql.getLong("id") + " and notice_type_id=1234");  // NOCOM
+			if (sql.next() && sql.getShort("send") < 1) {
+			    ServerUtils.log("User '" + uploader + "' disabled notifications.");
+			    continue;
+			}
 
 			Map<String, List<Issue>> relevantIssues = perUploader.get(uploader);
 			long total = 0;

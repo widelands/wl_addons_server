@@ -156,8 +156,7 @@ class HandleCommand {
 			if (!msg.isEmpty()) msg += "\n";
 			msg += ServerUtils.readLine(in);
 		}
-		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-			throw new ServerUtils.WLProtocolException("Stream continues past its end");
+		ServerUtils.checkEndOfStream(in);
 		final String finalMsg = msg;
 		ServerUtils.semaphoreRW(
 		    cmd[1], () -> { Utils.comment(cmd[1], username, cmd[2], finalMsg); });
@@ -195,8 +194,7 @@ class HandleCommand {
 			msg += ServerUtils.readLine(in);
 		}
 
-		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-			throw new ServerUtils.WLProtocolException("Stream continues past its end");
+		ServerUtils.checkEndOfStream(in);
 		final String finalMsg = msg;
 		ServerUtils.semaphoreRW(
 		    cmd[1], () -> { Utils.editComment(cmd[1], cmd[2], username, finalMsg); });
@@ -217,10 +215,9 @@ class HandleCommand {
 			msg += "\n";
 			msg += ServerUtils.readLine(in);
 		}
-		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-			throw new ServerUtils.WLProtocolException("Stream continues past its end");
-		ServerUtils.sendEnquiry(username, msg);
+		ServerUtils.checkEndOfStream(in);
 
+		ServerUtils.sendEnquiry(username, msg);
 		out.println("ENDOFSTREAM");
 	}
 
@@ -270,8 +267,7 @@ class HandleCommand {
 				if (!checksum.equals(cmd[3]))
 					throw new ServerUtils.WLProtocolException("Checksum mismatch: expected " +
 					                                          cmd[3] + ", found " + checksum);
-				if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-					throw new ServerUtils.WLProtocolException("Stream continues past its end");
+				ServerUtils.checkEndOfStream(in);
 				File result = new File("screenshots", cmd[1]);
 				result.mkdirs();
 				result = new File(result, filename);
@@ -369,8 +365,7 @@ class HandleCommand {
 					}
 				}
 
-				if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-					throw new ServerUtils.WLProtocolException("Stream continues past its end");
+				ServerUtils.checkEndOfStream(in);
 
 				File addOnDir = new File("addons", cmd[1]);
 				File addOnMain = new File(addOnDir, "addon");
