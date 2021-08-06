@@ -25,26 +25,72 @@ import java.util.*;
 import org.json.simple.parser.*;
 import wl.utils.*;
 
-public class TransifexIssue {
-	public final String issueID, message, string, stringID, occurrence, addon;
+public class TransifexIntegration {
+	public static void sync() throws Exception {
+		ServerUtils.log("Pulling translations from Transifex...");
+		Utils.bash("tx", "pull", "-f", "-a");
 
-	private TransifexIssue(
-	    String issueID, String message, String string, String stringID, String occurrence) {
-		this.issueID = issueID;
-		this.message = message;
-		this.string = string;
-		this.stringID = stringID;
-		this.occurrence = occurrence;
+		ServerUtils.log("Rebuilding catalogues...");
+		Buildcats.buildCatalogues();
 
-		addon = occurrence.split("/")[1];
+		ServerUtils.log("Updating PO/POT/MO files...");
+		Utils.bash("rm", "-r", "i18n");
+		for (File poDir : ServerUtils.listSorted(new File("po"))) {
+			for (File poFile : ServerUtils.listSorted(poDir)) {
+				if (poFile.getName().endsWith(".po")) {
+					final String lang = poFile.getName().substring(0, poFile.getName().length() - 3);
+					final String outFile = "i18n/" + poDir.getName() + "/" + lang + ".mo";
+
+					Utils.bash("msgmerge", poFile.getAbsolutePath(), new File(poDir, poDir.getName() + ".pot").getAbsolutePath(), "-o", poFile.getAbsolutePath());
+					Utils.bash("mkdir", "-p", "i18n/" + poDir.getName());
+					Utils.bash("mkdir", "-p", "i18n/" + lang + "/LC_MESSAGES");
+					Utils.bash("msgfmt", poFile.getAbsolutePath(), "-o", outFile);
+					// We permanently need to store MO files in two different
+					// locations for backwards compatibility.
+					Utils.bash("cp", outFile, lang + "/LC_MESSAGES/" + poDir.getName() + ".mo");
+				}
+			}
+		}
+
+		ServerUtils.log("Gathering translation changes...");
+		List<String> changedMO = new ArrayList<>();
+		Utils.bash("git", "add", "i18n");
+		for (String changed : Utils.bashOutput("bash", "-c", "git status i18n/*.wad").split("\n")) {
+			String[] split = changed.split(" ");  // "", "M", "i18n/fishy.wad/nds.mo"
+			changed = split[split.length - 1];    // "i18n/fishy.wad/nds.mo"
+			split = changed.split("/");           // "i18n", "fishy.wad", "nds.mo"
+			changedMO.add("+" + split[1]);        // "+fishy.wad"
+		}
+		UpdateList.main(changedMO.toArray(new String[0]));
+		Utils.bash("./skip_timestamp_only_po_changes.sh");
+
+		ServerUtils.log("Pushing POT files to Transifex...");
+		Utils.bash("tx", "push", "-s");
+
+		Utils._staticprofiles.clear();
+	}
+
+	private static class Issue {
+		public final String issueID, message, string, stringID, occurrence, addon;
+
+		private Issue(
+			String issueID, String message, String string, String stringID, String occurrence) {
+			this.issueID = issueID;
+			this.message = message;
+			this.string = string;
+			this.stringID = stringID;
+			this.occurrence = occurrence;
+
+			addon = occurrence.split("/")[1];
+		}
 	}
 
 	public static void checkIssues() throws Exception {
 		ServerUtils.log("Checking Transifex issues...");
-		List<TransifexIssue> allIssues = fetchIssues();
-		List<TransifexIssue> newIssues = new ArrayList<>();
+		List<Issue> allIssues = fetchIssues();
+		List<Issue> newIssues = new ArrayList<>();
 
-		for (TransifexIssue i : allIssues) {
+		for (Issue i : allIssues) {
 			ResultSet sql =
 			    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
 			                         "select * from txissues where id='" + i.issueID + "'");
@@ -59,13 +105,13 @@ public class TransifexIssue {
 		                " total).");
 		if (newIssues.isEmpty()) return;
 
-		Map<String, List<TransifexIssue>> perAddOn = new LinkedHashMap<>();
-		for (TransifexIssue i : newIssues) {
+		Map<String, List<Issue>> perAddOn = new LinkedHashMap<>();
+		for (Issue i : newIssues) {
 			if (!perAddOn.containsKey(i.addon)) perAddOn.put(i.addon, new ArrayList<>());
 			perAddOn.get(i.addon).add(i);
 		}
 
-		Map<String, Map<String, List<TransifexIssue>>> perUploader = new LinkedHashMap<>();
+		Map<String, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
 			String uploader = Utils.readProfile(new File("metadata", addon + ".maintain"), addon)
 			                      .get("uploader")
@@ -87,7 +133,7 @@ public class TransifexIssue {
 			String email = sql.getString("email");
 			// TODO check whether the user is subscribed to such notifications
 
-			Map<String, List<TransifexIssue>> relevantIssues = perUploader.get(uploader);
+			Map<String, List<Issue>> relevantIssues = perUploader.get(uploader);
 			long total = 0;
 			for (List l : relevantIssues.values()) total += l.size();
 
@@ -101,11 +147,11 @@ public class TransifexIssue {
 			            " new issue(s) in " + relevantIssues.size() +
 			            " of your add-on(s). Below you may find a list of all new string issues.");
 			for (String addon : relevantIssues.keySet()) {
-				List<TransifexIssue> list = relevantIssues.get(addon);
+				List<Issue> list = relevantIssues.get(addon);
 				write.print(
 				    "\n\n################################################################################\n " +
 				    list.size() + " new issue(s) in add-on " + addon);
-				for (TransifexIssue i : list) {
+				for (Issue i : list) {
 					write.print(
 					    "\n --------------------------------------------------------------------------------"
 					    + "\n  Issue ID      : " + i.issueID + "\n  Source String : " + i.string +
@@ -126,7 +172,7 @@ public class TransifexIssue {
 		}
 	}
 
-	private static List<TransifexIssue> fetchIssues() throws Exception {
+	private static List<Issue> fetchIssues() throws Exception {
 		ContainerFactory cf = new ContainerFactory() {
 			public List creatArrayContainer() { return new LinkedList(); }
 			public Map createObjectContainer() { return new LinkedHashMap(); }
@@ -144,7 +190,7 @@ public class TransifexIssue {
 		                         + "filter[status]=open"),
 		    cf);
 
-		List<TransifexIssue> result = new ArrayList<>();
+		List<Issue> result = new ArrayList<>();
 		for (Object oneIssue : (List)json.get("data")) {
 			String sourceStringURL =
 			    ((Map)((Map)((Map)((Map)oneIssue).get("relationships")).get("resource_string"))
@@ -157,7 +203,7 @@ public class TransifexIssue {
 			                     sourceStringURL),
 			    cf);
 
-			result.add(new TransifexIssue(
+			result.add(new Issue(
 			    ((Map)oneIssue).get("id").toString(),
 			    ((Map)((Map)oneIssue).get("attributes")).get("message").toString(),
 			    ((Map)((Map)sourceStringQuery.get("data")).get("attributes")).get("key").toString(),

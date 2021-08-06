@@ -47,7 +47,7 @@ public class Buildcats {
 		}
 	}
 
-	public static void main(String[] args) throws Exception {
+	public static void buildCatalogues() throws Exception {
 		Runtime rt = Runtime.getRuntime();
 		File[] files = Utils.listSorted(new File("addons"));
 		final int digits = Integer.toString(files.length).length();

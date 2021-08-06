@@ -59,7 +59,10 @@ class SyncThread implements Runnable {
 				        " > _addons_database_backup.sql"});
 
 				if (phase == 0) {
-					if (Boolean.parseBoolean(Utils.config("deploy"))) TransifexIssue.checkIssues();
+					if (Boolean.parseBoolean(Utils.config("deploy"))) {
+						TransifexIntegration.checkIssues();
+						TransifexIntegration.sync();
+					}
 
 					synchronized (ServerUtils.SYNCER) {
 						ServerUtils.log("Cleaning up inactive threads...");

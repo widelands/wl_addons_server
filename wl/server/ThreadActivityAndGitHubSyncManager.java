@@ -31,10 +31,9 @@ class ThreadActivityAndGitHubSyncManager {
 			return;
 		}
 
-		// TODO also move the Transifex syncs from the GitHub action to this method
-
 		Utils.bash("bash", "-c", "git stash clear");
 		if (Utils.bash("bash", "-c", "git pull origin master") != 0) {
+			Utils.bash("bash", "-c", "git add .");
 			Utils.bash("bash", "-c", "git stash");
 			Utils.bash("bash", "-c", "git pull origin master");
 			Utils.bash("bash", "-c", "git stash apply");
