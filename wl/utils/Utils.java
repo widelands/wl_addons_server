@@ -47,21 +47,25 @@ public abstract class Utils {
 		for (String a : args) System.out.print(" " + a);
 		System.out.println();
 
-		Process p = Runtime.getRuntime().exec(args);
-		p.waitFor();
+		ProcessBuilder pb = new ProcessBuilder(args);
+		pb.redirectErrorStream​(true);
+		Process p = pb.start();
+
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 		String str;
-		while ((str = b.readLine()) != null) {
-			System.out.println("    # " + str);
-		}
+		while ((str = b.readLine()) != null) System.out.println("    # " + str);
 
+		p.waitFor();
 		int e = p.exitValue();
 		System.out.println("    = " + e);
 		return e;
 	}
 
 	public static String bashOutput(String... args) throws Exception {
-		Process p = Runtime.getRuntime().exec(args);
+		ProcessBuilder pb = new ProcessBuilder(args);
+		pb.redirectErrorStream​(true);
+		Process p = pb.start();
+
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 		String str, result = null;
 		while ((str = b.readLine()) != null) {
@@ -72,7 +76,7 @@ public abstract class Utils {
 				result += str;
 			}
 		}
-		return result;
+		return (result == null ? "" : result);
 	}
 
 	public static String durationString(long millis) {

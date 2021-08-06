@@ -28,46 +28,46 @@ import wl.utils.*;
 public class TransifexIntegration {
 	public static void sync() throws Exception {
 		ServerUtils.log("Pulling translations from Transifex...");
-		Utils.bash("tx", "pull", "-f", "-a");
+		Utils.bashOutput("tx", "pull", "-f", "-a");
 
 		ServerUtils.log("Rebuilding catalogues...");
 		Buildcats.buildCatalogues();
 
 		ServerUtils.log("Updating PO/POT/MO files...");
-		Utils.bash("rm", "-r", "i18n");
+		Utils.bashOutput("rm", "-r", "i18n");
 		for (File poDir : ServerUtils.listSorted(new File("po"))) {
 			for (File poFile : ServerUtils.listSorted(poDir)) {
 				if (poFile.getName().endsWith(".po")) {
 					final String lang = poFile.getName().substring(0, poFile.getName().length() - 3);
 					final String outFile = "i18n/" + poDir.getName() + "/" + lang + ".mo";
 
-					Utils.bash("msgmerge", poFile.getAbsolutePath(), new File(poDir, poDir.getName() + ".pot").getAbsolutePath(), "-o", poFile.getAbsolutePath());
-					Utils.bash("mkdir", "-p", "i18n/" + poDir.getName());
-					Utils.bash("mkdir", "-p", "i18n/" + lang + "/LC_MESSAGES");
-					Utils.bash("msgfmt", poFile.getAbsolutePath(), "-o", outFile);
+					Utils.bashOutput("msgmerge", poFile.getAbsolutePath(), new File(poDir, poDir.getName() + ".pot").getAbsolutePath(), "-o", poFile.getAbsolutePath());
+					Utils.bashOutput("mkdir", "-p", "i18n/" + poDir.getName());
+					Utils.bashOutput("mkdir", "-p", "i18n/" + lang + "/LC_MESSAGES");
+					Utils.bashOutput("msgfmt", poFile.getAbsolutePath(), "-o", outFile);
 					// We permanently need to store MO files in two different
 					// locations for backwards compatibility.
-					Utils.bash("cp", outFile, lang + "/LC_MESSAGES/" + poDir.getName() + ".mo");
+					Utils.bashOutput("cp", outFile, "i18n/" + lang + "/LC_MESSAGES/" + poDir.getName() + ".mo");
 				}
 			}
 		}
 
 		ServerUtils.log("Gathering translation changes...");
 		List<String> changedMO = new ArrayList<>();
-		Utils.bash("git", "add", "i18n");
-		for (String changed : Utils.bashOutput("bash", "-c", "git status i18n/*.wad").split("\n")) {
+		Utils.bashOutput("git", "add", "i18n");
+		for (String changed : Utils.bashOutput("bash", "-c", "git status -s i18n/*.wad").split("\n")) {
+			if (changed.trim().isEmpty()) continue;
 			String[] split = changed.split(" ");  // "", "M", "i18n/fishy.wad/nds.mo"
 			changed = split[split.length - 1];    // "i18n/fishy.wad/nds.mo"
 			split = changed.split("/");           // "i18n", "fishy.wad", "nds.mo"
 			changedMO.add("+" + split[1]);        // "+fishy.wad"
 		}
 		UpdateList.main(changedMO.toArray(new String[0]));
-		Utils.bash("./skip_timestamp_only_po_changes.sh");
+		Utils._staticprofiles.clear();
+		Utils.bashOutput("./skip_timestamp_only_po_changes.sh");
 
 		ServerUtils.log("Pushing POT files to Transifex...");
-		Utils.bash("tx", "push", "-s");
-
-		Utils._staticprofiles.clear();
+		Utils.bashOutput("tx", "push", "-s");
 	}
 
 	private static class Issue {
