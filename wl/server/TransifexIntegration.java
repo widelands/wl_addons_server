@@ -38,16 +38,20 @@ public class TransifexIntegration {
 		for (File poDir : ServerUtils.listSorted(new File("po"))) {
 			for (File poFile : ServerUtils.listSorted(poDir)) {
 				if (poFile.getName().endsWith(".po")) {
-					final String lang = poFile.getName().substring(0, poFile.getName().length() - 3);
+					final String lang =
+					    poFile.getName().substring(0, poFile.getName().length() - 3);
 					final String outFile = "i18n/" + poDir.getName() + "/" + lang + ".mo";
 
-					Utils.bashOutput("msgmerge", poFile.getAbsolutePath(), new File(poDir, poDir.getName() + ".pot").getAbsolutePath(), "-o", poFile.getAbsolutePath());
+					Utils.bashOutput("msgmerge", poFile.getAbsolutePath(),
+					                 new File(poDir, poDir.getName() + ".pot").getAbsolutePath(),
+					                 "-o", poFile.getAbsolutePath());
 					Utils.bashOutput("mkdir", "-p", "i18n/" + poDir.getName());
 					Utils.bashOutput("mkdir", "-p", "i18n/" + lang + "/LC_MESSAGES");
 					Utils.bashOutput("msgfmt", poFile.getAbsolutePath(), "-o", outFile);
 					// We permanently need to store MO files in two different
 					// locations for backwards compatibility.
-					Utils.bashOutput("cp", outFile, "i18n/" + lang + "/LC_MESSAGES/" + poDir.getName() + ".mo");
+					Utils.bashOutput(
+					    "cp", outFile, "i18n/" + lang + "/LC_MESSAGES/" + poDir.getName() + ".mo");
 				}
 			}
 		}
@@ -55,7 +59,8 @@ public class TransifexIntegration {
 		ServerUtils.log("Gathering translation changes...");
 		List<String> changedMO = new ArrayList<>();
 		Utils.bashOutput("git", "add", "i18n");
-		for (String changed : Utils.bashOutput("bash", "-c", "git status -s i18n/*.wad").split("\n")) {
+		for (String changed :
+		     Utils.bashOutput("bash", "-c", "git status -s i18n/*.wad").split("\n")) {
 			if (changed.trim().isEmpty()) continue;
 			String[] split = changed.split(" ");  // "", "M", "i18n/fishy.wad/nds.mo"
 			changed = split[split.length - 1];    // "i18n/fishy.wad/nds.mo"
@@ -74,7 +79,7 @@ public class TransifexIntegration {
 		public final String issueID, message, string, stringID, occurrence, addon;
 
 		private Issue(
-			String issueID, String message, String string, String stringID, String occurrence) {
+		    String issueID, String message, String string, String stringID, String occurrence) {
 			this.issueID = issueID;
 			this.message = message;
 			this.string = string;
