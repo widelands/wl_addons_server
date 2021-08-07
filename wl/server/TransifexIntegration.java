@@ -132,7 +132,8 @@ public class TransifexIntegration {
 		    ServerUtils.Databases.kWebsite,
 		    "select id from notification_noticetype where label='addon_transifex_issues'");
 		final boolean noticeTypeKnown = sql.next();
-		if (!noticeTypeKnown) ServerUtils.log("Notification type addon_transifex_issues was not defined yet");
+		if (!noticeTypeKnown)
+			ServerUtils.log("Notification type addon_transifex_issues was not defined yet");
 		final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
 
 		for (String uploader : perUploader.keySet()) {
@@ -148,9 +149,9 @@ public class TransifexIntegration {
 
 			if (noticeTypeKnown) {
 				sql = ServerUtils.sqlQuery(
-					ServerUtils.Databases.kWebsite,
-					"select send from notification_noticesetting where user_id=" + sql.getLong("id") +
-					    " and medium=1 and notice_type_id=" + noticeTypeID);
+				    ServerUtils.Databases.kWebsite,
+				    "select send from notification_noticesetting where user_id=" +
+				        sql.getLong("id") + " and medium=1 and notice_type_id=" + noticeTypeID);
 				if (sql.next() && sql.getShort("send") < 1) {
 					ServerUtils.log("User '" + uploader + "' disabled notifications.");
 					continue;
