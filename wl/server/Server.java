@@ -94,6 +94,9 @@ public class Server {
 			case CMD_CONTACT:
 				h.handleCmdContact();
 				break;
+			case CMD_SETUP_TX:
+				h.handleCmdSetupTx();
+				break;
 			default:
 				throw new ServerUtils.WLProtocolException("Invalid command " + cmd[0]);
 		}

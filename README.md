@@ -101,9 +101,8 @@ Verification of **new** add-ons should be done **only** by a developer who is al
 To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `./update_lists.sh '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
 
 If the add-on was not up for translation on Transifex yet, you need to follow these steps afterwards to ensure that it can be translated:
-- Run `./setup_tx.sh cool_feature.wad` (where `cool_feature.wad` is the name of the add-on), then git add,commit,push.
-- Go to the repository’s Actions tab, select the ‘Update Translations’ action, and trigger a workflow run on the master branch.
-- Wait until the workflow completed (should take only a few minutes).
+- If the add-on was added to the repository manually, wait until the next server-GitHub sync (or trigger one manually on the server).
+- Send a `CMD_SETUP_TX addon_name.wad` command to the server *(not yet available via the Widelands user interface; use a CLI client instead)*.
 - Head over to https://www.transifex.com/widelands/widelands-addons/content/ and wait until the new resource(s) is/are available.
 - Edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!
 - Finally, set the Priority of all new resources. Add-ons officially provided by the Widelands Development Team get highest priority. Add-ons which have not been verified yet should not appear on Transifex in the first place, but if they do, they get the lowest priority. All other add-ons get medium priority. Also add appropriate category tags to the resources: Every resource gets the add-on’s category as a tag. The few official add-ons also get the "Official" tag and perhaps other tags as appropriate (e.g. "Tournament" for add-ons used in an official tournament).

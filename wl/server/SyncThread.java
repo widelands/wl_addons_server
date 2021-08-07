@@ -61,8 +61,8 @@ class SyncThread implements Runnable {
 
 				if (phase == 0) {
 					if (Boolean.parseBoolean(Utils.config("deploy"))) {
-						TransifexIntegration.checkIssues();
-						TransifexIntegration.sync();
+						TransifexIntegration.TX.checkIssues();
+						TransifexIntegration.TX.fullSync();
 					}
 
 					synchronized (ServerUtils.SYNCER) {

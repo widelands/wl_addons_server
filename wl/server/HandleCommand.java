@@ -201,6 +201,29 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	public void handleCmdSetupTx() throws Exception {
+		// Args: name
+		if (username.isEmpty() || !admin)
+			throw new ServerUtils.WLProtocolException("Only admins may do this");
+		ServerUtils.checkNrArgs(cmd, 1);
+		ServerUtils.checkNameValid(cmd[1], false);
+		ServerUtils.checkAddOnExists(cmd[1]);
+
+		synchronized (TransifexIntegration.TX) {
+			File potFile = new File("po/" + cmd[1] + "/" + cmd[1] + ".pot");
+			if (!potFile.isFile()) {
+				TransifexIntegration.TX.buildCatalogues();
+				if (!potFile.isFile()) throw new ServerUtils.WLProtocolException("Unable to create POT for " + cmd[1]);
+			}
+			String resource = "widelands-addons." + cmd[1].replaceAll("[._]", "-");
+			Utils.bash("tx", "config", "mapping", "--execute", "-r", resource,
+					"--source-lang", "en", "--type", "PO", "--source-file", potFile.getAbsolutePath(),
+					"--expression", "po/" + cmd[1] + "/<lang>.po");
+			TransifexIntegration.TX.push();
+		}
+		out.println("ENDOFSTREAM");
+	}
+
 	public void handleCmdContact() throws Exception {
 		// Args: lines
 		ServerUtils.checkNrArgs(cmd, 1);

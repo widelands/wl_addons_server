@@ -26,10 +26,25 @@ import org.json.simple.parser.*;
 import wl.utils.*;
 
 public class TransifexIntegration {
-	public static void sync() throws Exception {
+	public static TransifexIntegration TX = new TransifexIntegration();
+	private TransifexIntegration() {}
+
+	public synchronized void fullSync() throws Exception {
+		pull();
+		buildCatalogues();
+		push();
+	}
+
+	public synchronized void pull() throws Exception {
 		ServerUtils.log("Pulling translations from Transifex...");
 		Utils.bashOutput("tx", "pull", "-f", "-a");
+	}
+	public synchronized void push() throws Exception {
+		ServerUtils.log("Pushing POT files to Transifex...");
+		Utils.bashOutput("tx", "push", "-s");
+	}
 
+	public synchronized void buildCatalogues() throws Exception {
 		ServerUtils.log("Rebuilding catalogues...");
 		Buildcats.buildCatalogues();
 
@@ -70,9 +85,6 @@ public class TransifexIntegration {
 		UpdateList.main(changedMO.toArray(new String[0]));
 		Utils._staticprofiles.clear();
 		Utils.bashOutput("./skip_timestamp_only_po_changes.sh");
-
-		ServerUtils.log("Pushing POT files to Transifex...");
-		Utils.bashOutput("tx", "push", "-s");
 	}
 
 	private static class Issue {
@@ -90,7 +102,7 @@ public class TransifexIntegration {
 		}
 	}
 
-	public static void checkIssues() throws Exception {
+	public synchronized void checkIssues() throws Exception {
 		ServerUtils.log("Checking Transifex issues...");
 		List<Issue> allIssues = fetchIssues();
 		List<Issue> newIssues = new ArrayList<>();
@@ -197,7 +209,7 @@ public class TransifexIntegration {
 		}
 	}
 
-	private static List<Issue> fetchIssues() throws Exception {
+	private synchronized List<Issue> fetchIssues() throws Exception {
 		ContainerFactory cf = new ContainerFactory() {
 			public List creatArrayContainer() { return new LinkedList(); }
 			public Map createObjectContainer() { return new LinkedHashMap(); }

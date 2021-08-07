@@ -72,6 +72,7 @@ package wl.server;
  *   - Counter of CMD_SUBMIT            requests, \n
  *   - Counter of CMD_SUBMIT_SCREENSHOT requests, \n
  *   - Counter of CMD_CONTACT           requests, \n
+ *   - Counter of CMD_SETUP_TX          requests, \n
  *   - Counter of unsuccessful commands, \n
  *   - ENDOFSTREAM\n
  *   The connection is then closed by the server.
@@ -262,4 +263,12 @@ public enum Command {
 	 * Returns: ENDOFSTREAM\n or an error message\n
 	 */
 	CMD_CONTACT,
+
+	/**
+	 * CMD_SETUP_TX name
+	 * Set up transifex integration for an add-on. Only admins may do this.
+	 * Arg 1: Add-on name
+	 * Returns: ENDOFSTREAM\n or an error message\n
+	 */
+	CMD_SETUP_TX,
 }
