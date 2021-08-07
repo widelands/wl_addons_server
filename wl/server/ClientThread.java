@@ -32,7 +32,7 @@ class ClientThread implements Runnable {
 
 	@Override
 	public void run() {
-		synchronized (ServerUtils.SYNCER) { ServerUtils.SYNCER.tick(socket); }
+		ServerUtils.SYNCER.tick(socket);
 		PrintStream out = null;
 		long userDatabaseID = -1;
 		boolean didLogInSuccessfully = false, hideFromStats = false;
@@ -99,10 +99,8 @@ class ClientThread implements Runnable {
 			ServerUtils.MUNIN.registerLogin(userDatabaseID);
 			String cmd;
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
-				synchronized (ServerUtils.SYNCER) {
-					ServerUtils.SYNCER.tick(socket);
-					ServerUtils.log("Received command: " + cmd);
-				}
+				ServerUtils.SYNCER.tick(socket);
+				ServerUtils.log("Received command: " + cmd);
 				Server.handle(cmd.split(" "), out, in, protocolVersion, username, userDatabaseID,
 				              admin, locale);
 			}
@@ -119,6 +117,7 @@ class ClientThread implements Runnable {
 				}
 			}
 			if (out != null) out.close();
+			ServerUtils.SYNCER.threadClosed();
 		}
 	}
 }

@@ -77,6 +77,9 @@ class ThreadActivityAndGitHubSyncManager {
 	public synchronized void tick(Socket s) {
 		lastActivity.put(Thread.currentThread(), new Data(s));
 	}
+	public synchronized void threadClosed() {
+		lastActivity.remove(Thread.currentThread());
+	}
 	public synchronized void check() throws Exception {
 		final long time = System.currentTimeMillis();
 		HashMap<Thread, Long> kill = new HashMap<>();
@@ -87,7 +90,7 @@ class ThreadActivityAndGitHubSyncManager {
 			}
 		}
 		for (Thread t : kill.keySet()) {
-			ServerUtils.log("Force-closing socket for [" + Thread.currentThread().getName() +
+			ServerUtils.log("Force-closing socket for [" + t.getName() +
 			                "] (last activity was " + Utils.durationString(kill.get(t)) + " ago).");
 			Socket s = lastActivity.remove(t).socket;
 			s.close();
