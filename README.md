@@ -16,6 +16,8 @@ Before starting the server, ensure that a MySQL server is running somewhere with
 - There is a database (called the *website database*) with the following tables in it:
     - `auth_user` (`SELECT`): Contains at least an `int` column `id`, a `varchar` column `username`, and a `varchar` column `email`.
     - `wlggz_ggzauth` (`SELECT`): Contains at least an `int` column `user_id`, a `varchar` column `password`, and an `int` column `permissions` (in which `7` means normal user and `127` means admin).
+    - `notification_noticetype` (`SELECT`): Contains at least an `int` column `id` and a `varchar` column `label`.
+    - `notification_noticesetting` (`SELECT`): Contains at least an `int` column `user_id`, an `int` column `notice_type_id`, an `int` column `medium` (where `1` means e-mail), and a `tinyint` column `send` (where `0` means disabled and `1` enabled).
 - There is a (not necessarily separate) database (called the *add-ons database*) with the following tables in it:
     - `uservotes` (`SELECT`, `INSERT`, `DELETE`): Contains an `int` column `user_id`, a `varchar` column `addon`, and an `int` column `vote`.
     - `txissues` (`SELECT`, `INSERT`): Contains a `varchar` column `id`.
