@@ -51,6 +51,10 @@ Whenever an error that requires a maintainer’s attention occurs on the add-ons
 
 __This section explains how to add an add-on *manually* to this repository. It is strongly recommended to use the in-game add-ons manager instead, which will take care of everything automatically.__
 
+#### Deprecation notice
+
+__The possibility to add and maintain add-ons manually will be removed sometime in the future in favour of using only the in-game add-ons manager.__
+
 #### Add-On
 
 Just copy the folder from the widelands directory to the `addons/` folder in your branch.
@@ -107,7 +111,7 @@ If the add-on was not up for translation on Transifex yet, you need to follow th
 Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/   
 Do not modify any of the files in `po/` manually – your changes will be discarded during the automated translation updates.
 
-A GitHub action periodically syncs the translations with Transifex and compiles them by running `buildcats.sh`. **Do not** run this script manually! If you have to do it anyway for some reason, do this **only** on the master branch.
+The server periodically syncs the translations with Transifex and compiles them for download.
 
 #### Notes
 
