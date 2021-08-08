@@ -143,7 +143,7 @@ abstract class ServerUtils {
 			regularFiles = new ArrayList<>();
 			subdirs = new ArrayList<>();
 
-			for (File f : listSorted(dir)) {
+			for (File f : Utils.listSorted(dir)) {
 				if (f.isDirectory())
 					subdirs.add(new DirInfo(f));
 				else
@@ -178,12 +178,6 @@ abstract class ServerUtils {
 		if (cmd.length != expected + 1)
 			throw new WLProtocolException("Expected " + expected + " argument(s), found " +
 			                              (cmd.length - 1));
-	}
-
-	public static File[] listSorted(File dir) {
-		File[] files = dir.listFiles();
-		Arrays.sort(files);
-		return files;
 	}
 
 	public static void checkNameValid(String name, boolean directory) {
@@ -246,7 +240,7 @@ abstract class ServerUtils {
 	// to the database, and make the GitHub repo merely a mirror of the official server.
 	public static void rebuildMetadata() throws Exception {
 		log("Rebuilding metadata...");
-		for (File f : listSorted(new File("addons"))) ServerUtils.updateMetadataVotes(f.getName());
+		for (File f : Utils.listSorted(new File("addons"))) ServerUtils.updateMetadataVotes(f.getName());
 	}
 
 	public static void updateMetadataVotes(String addon) throws Exception {

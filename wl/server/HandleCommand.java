@@ -56,7 +56,7 @@ class HandleCommand {
 	public void handleCmdList() throws Exception {
 		// Args: –
 		ServerUtils.checkNrArgs(cmd, 0);
-		File[] names = ServerUtils.listSorted(new File("addons"));
+		File[] names = Utils.listSorted(new File("addons"));
 		String str = "" + names.length;
 		for (File s : names) str += "\n" + s.getName();
 		out.println(str);

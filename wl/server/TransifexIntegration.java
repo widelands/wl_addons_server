@@ -50,8 +50,8 @@ public class TransifexIntegration {
 
 		ServerUtils.log("Updating PO and MO files...");
 		Utils.bashOutput("rm", "-r", "i18n");
-		for (File poDir : ServerUtils.listSorted(new File("po"))) {
-			for (File poFile : ServerUtils.listSorted(poDir)) {
+		for (File poDir : Utils.listSorted(new File("po"))) {
+			for (File poFile : Utils.listSorted(poDir)) {
 				if (poFile.getName().endsWith(".po")) {
 					final String lang =
 					    poFile.getName().substring(0, poFile.getName().length() - 3);
