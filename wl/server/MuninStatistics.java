@@ -19,8 +19,8 @@
 
 package wl.server;
 
-import java.util.*;
 import java.io.*;
+import java.util.*;
 import wl.utils.*;
 
 public class MuninStatistics {
@@ -30,7 +30,7 @@ public class MuninStatistics {
 		final int version = Integer.valueOf(ServerUtils.readLine(in));
 		if (version != 1)
 			throw new ServerUtils.WLProtocolException("Unsupported munin version '" + version +
-			                              "' (only supported version is '1')");
+			                                          "' (only supported version is '1')");
 		ServerUtils.log("Munin version: " + version);
 		ServerUtils.checkEndOfStream(in);
 
