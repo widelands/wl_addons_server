@@ -240,7 +240,8 @@ abstract class ServerUtils {
 	// to the database, and make the GitHub repo merely a mirror of the official server.
 	public static void rebuildMetadata() throws Exception {
 		log("Rebuilding metadata...");
-		for (File f : Utils.listSorted(new File("addons"))) ServerUtils.updateMetadataVotes(f.getName());
+		for (File f : Utils.listSorted(new File("addons")))
+			ServerUtils.updateMetadataVotes(f.getName());
 	}
 
 	public static void updateMetadataVotes(String addon) throws Exception {
