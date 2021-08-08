@@ -318,7 +318,7 @@ abstract class ServerUtils {
 	public static class MuninStatistics {
 		private final long[] commandCounters;
 		private final long initTime;
-		private long currentTotalUsers, failedLogins, successfulLogins, successfulCommands;
+		private long currentUnregisteredUsers, failedLogins, successfulLogins, successfulCommands;
 		private final List<Long> currentRegisteredUsers, allRegisteredUsers;
 
 		public MuninStatistics() {
@@ -326,7 +326,7 @@ abstract class ServerUtils {
 			commandCounters = new long[Command.values().length];
 			for (int i = 0; i < commandCounters.length; i++) commandCounters[i] = 0;
 
-			currentTotalUsers = 0;
+			currentUnregisteredUsers = 0;
 			failedLogins = 0;
 			successfulLogins = 0;
 			successfulCommands = 0;
@@ -338,7 +338,7 @@ abstract class ServerUtils {
 			switch (version) {
 				case 1: {
 					out.println(System.currentTimeMillis() - initTime);
-					out.println(currentTotalUsers);
+					out.println(currentUnregisteredUsers);
 					out.println(currentRegisteredUsers.size());
 					out.println(allRegisteredUsers.size());
 					out.println(successfulLogins);
@@ -362,15 +362,19 @@ abstract class ServerUtils {
 		public synchronized void registerSuccessfulCommand() { successfulCommands++; }
 		public synchronized void registerLogin(long user) {
 			successfulLogins++;
-			currentTotalUsers++;
-			if (user >= 0) {
+			if (user < 0) {
+				currentUnregisteredUsers++;
+			} else {
 				currentRegisteredUsers.add(user);
 				if (!allRegisteredUsers.contains(user)) allRegisteredUsers.add(user);
 			}
 		}
 		public synchronized void registerLogout(Long user) {
-			currentTotalUsers--;
-			currentRegisteredUsers.remove((Object)user);
+			if (user < 0) {
+				currentUnregisteredUsers--;
+			} else {
+				currentRegisteredUsers.remove((Object)user);
+			}
 		}
 		public synchronized void registerFailedLogin() { failedLogins++; }
 	}
