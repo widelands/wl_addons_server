@@ -45,8 +45,8 @@ jobs:
         sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-12 100
         sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/clang-format-12 100
     - name: Formatting code
-      run: clang-format -i wl/*/*.java munin/*.java
+      run: clang-format -i wl/*/*.java
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: "Your code was automatically formatted."
-        file_pattern: list* wl/*/*.java munin/*.java
+        file_pattern: list* wl/*/*.java
