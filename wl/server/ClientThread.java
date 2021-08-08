@@ -48,7 +48,7 @@ class ClientThread implements Runnable {
 
 			if (protocolVersionString.equals("munin")) {
 				hideFromStats = true;
-				ServerUtils.handleMunin(in, out);
+				MuninStatistics.handleMunin(in, out);
 				return;
 			}
 
@@ -96,7 +96,7 @@ class ClientThread implements Runnable {
 			}
 
 			didLogInSuccessfully = true;
-			ServerUtils.MUNIN.registerLogin(userDatabaseID);
+			MuninStatistics.MUNIN.registerLogin(userDatabaseID);
 			String cmd;
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
 				ServerUtils.SYNCER.tick(socket);
@@ -111,9 +111,9 @@ class ClientThread implements Runnable {
 			ServerUtils.log("Connection quit.");
 			if (!hideFromStats) {
 				if (didLogInSuccessfully) {
-					ServerUtils.MUNIN.registerLogout(userDatabaseID);
+					MuninStatistics.MUNIN.registerLogout(userDatabaseID);
 				} else {
-					ServerUtils.MUNIN.registerFailedLogin();
+					MuninStatistics.MUNIN.registerFailedLogin();
 				}
 			}
 			if (out != null) out.close();

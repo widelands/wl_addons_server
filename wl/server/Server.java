@@ -53,7 +53,7 @@ public class Server {
 	                          boolean admin,
 	                          String locale) throws Exception {
 		Command command = Command.valueOf(cmd[0]);
-		ServerUtils.MUNIN.countCommand(command);
+		MuninStatistics.MUNIN.countCommand(command);
 		HandleCommand h =
 		    new HandleCommand(cmd, out, in, version, username, userDatabaseID, admin, locale);
 
@@ -101,6 +101,6 @@ public class Server {
 				throw new ServerUtils.WLProtocolException("Invalid command " + cmd[0]);
 		}
 
-		ServerUtils.MUNIN.registerSuccessfulCommand();
+		MuninStatistics.MUNIN.registerSuccessfulCommand();
 	}
 }
