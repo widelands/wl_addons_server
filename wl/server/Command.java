@@ -55,8 +55,8 @@ package wl.server;
  *   If the password is correct, the server replies not ADMIN/SUCCESS but instead
  *   prints out server statistics in the following format:
  *   - Time in milliseconds since the server was started, \n
- *   - Number of current unregistered users, \n
  *   - Number of current registered users, \n
+ *   - Number of current unregistered users, \n
  *   - Counter of unique registered users, \n
  *   - Counter of successful connection attempts, \n
  *   - Counter of unsuccessful connection attempts, \n

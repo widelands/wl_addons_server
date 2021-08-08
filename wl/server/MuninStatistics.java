@@ -61,8 +61,8 @@ public class MuninStatistics {
 		switch (version) {
 			case 1: {
 				out.println(System.currentTimeMillis() - initTime);
-				out.println(currentUnregisteredUsers);
 				out.println(currentRegisteredUsers.size());
+				out.println(currentUnregisteredUsers);
 				out.println(allRegisteredUsers.size());
 				out.println(successfulLogins);
 				out.println(failedLogins);
