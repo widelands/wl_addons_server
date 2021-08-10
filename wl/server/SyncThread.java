@@ -30,7 +30,7 @@ class SyncThread implements Runnable {
 		// We run a full sync every 24 hours, but in order to prevent SQL connection
 		// timeouts we run an arbitrary SQL statement every 6 hours as well.
 		boolean errored = false;
-		int phase = (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) + 3) / 6;
+		int phase = ((Calendar.getInstance().get(Calendar.HOUR_OF_DAY) + 3) / 6) % 4;
 		do {
 			try {
 				Calendar nextSync = Calendar.getInstance();
