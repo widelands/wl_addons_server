@@ -60,7 +60,8 @@ descriptions:new_productionsite_type {
 
    aihints = {
         supports_seafaring = true,
-        basic_amount = 1
+        basic_amount = 2,
+        prohibited_till = 1500
    },
 
    working_positions = {

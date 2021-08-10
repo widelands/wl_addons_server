@@ -88,7 +88,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=buckets:2"
+            "produce=buckets:4"
          }
       },
       produce_shovel = {
@@ -100,7 +100,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=shovel:2"
+            "produce=shovel:4"
          }
       },
       produce_saw = {
@@ -112,7 +112,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=saw:2"
+            "produce=saw:4"
          }
       },
       produce_hammer = {
@@ -124,7 +124,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=hammer:2"
+            "produce=hammer:4"
          }
       },
       produce_pick = {
@@ -136,7 +136,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=pick:2"
+            "produce=pick:4"
          }
       },
       produce_basket = {
@@ -148,7 +148,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=basket:2"
+            "produce=basket:4"
          }
       },
       produce_felling_ax = {
@@ -160,7 +160,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=felling_ax:2"
+            "produce=felling_ax:4"
          }
       },
       produce_fire_tongs = {
@@ -172,7 +172,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=fire_tongs:2"
+            "produce=fire_tongs:4"
          }
       },
       produce_scythe = {
@@ -184,7 +184,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=scythe:2"
+            "produce=scythe:4"
          }
       },
       produce_milking_tongs = {
@@ -196,7 +196,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=milking_tongs:2"
+            "produce=milking_tongs:4"
          }
       },
       produce_needles = {
@@ -208,7 +208,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=needles:2"
+            "produce=needles:4"
          }
       },
       produce_fishing_rod = {
@@ -220,7 +220,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=fishing_rod:2"
+            "produce=fishing_rod:4"
          }
       },
       produce_fishing_net = {
@@ -228,11 +228,11 @@ descriptions:new_productionsite_type {
          descname = _"making a fishing net",
          actions = {
             "return=skipped unless economy needs fishing_net",
-            "consume=spidercloth:2",
+            "consume=spidercloth:3",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=fishing_net:2"
+            "produce=fishing_net:4"
          }
       },
       produce_hunting_bow = {
@@ -244,7 +244,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=hunting_bow:2"
+            "produce=hunting_bow:4"
          }
       },
       produce_hunting_spear = {
@@ -256,7 +256,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=hunting_spear:2"
+            "produce=hunting_spear:4"
          }
       },
       produce_bread_paddle = {
@@ -268,7 +268,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=bread_paddle:2"
+            "produce=bread_paddle:4"
          }
       },
       produce_hook_pole = {
@@ -280,7 +280,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:15s",
-            "produce=hook_pole:2"
+            "produce=hook_pole:4"
          }
       },
       produce_spear_wooden = {

@@ -70,7 +70,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs water and not economy needs reed",
             "consume=water",
             "callworker=plant_reed",
-            "sleep=duration:8s"
+            "sleep=duration:6s"
          }
       },
       harvest_basic = {
@@ -89,7 +89,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs water and not economy needs reed",
             "callworker=harvest_reed",
-            "sleep=duration:3s"
+            "sleep=duration:2s"
          }
       },
    },
