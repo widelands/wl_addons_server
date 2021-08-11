@@ -14,20 +14,20 @@ descriptions:new_carrier_type {
 
    animations = {
       idle = {
-         hotspot = { 7, 22 },
+         hotspot = { 13, 24 },
          fps = 10
       },
       walk = {
-         hotspot = { 7, 20 },
+         hotspot = { 8, 25 },
          fps = 10,
          directional = true
       },
       walkload = {
-         hotspot = { 8, 22 },
+         hotspot = { 8, 25 },
          fps = 10,
          directional = true
       }
-   },
+   }
 }
 
 pop_textdomain()

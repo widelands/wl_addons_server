@@ -34,7 +34,9 @@ descriptions:new_productionsite_type {
       }
    },
 
-   aihints = {},
+   aihints = {
+      prohibited_till = 3000
+   },
 
    working_positions = {
       europeans_breeder_basic = 1

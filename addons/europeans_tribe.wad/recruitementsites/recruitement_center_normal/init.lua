@@ -72,8 +72,6 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=recruit_carrier_1",
-            "call=recruit_carrier_2",
             "call=recruit_builder",
             "call=recruit_smith",
             "call=recruit_farmer",
@@ -100,29 +98,10 @@ descriptions:new_productionsite_type {
             "call=recruit_geologist",
             "call=recruit_scout",
             "call=recruit_trainer",
+            "call=recruit_carrier_1",
+            "call=recruit_carrier_2",
+            "call=recruit_carrier_3",
             "return=skipped"
-         }
-      },
-      recruit_carrier_1 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting first carrier"),
-         actions = {
-            "return=skipped unless economy needs europeans_carrier_1",
-            "sleep=duration:20s",
-            "consume=europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_carrier_1"
-         }
-      },
-      recruit_carrier_2 = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting second carrier"),
-         actions = {
-            "return=skipped unless economy needs europeans_carrier_2",
-            "sleep=duration:20s",
-            "consume=basket europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_carrier_2"
          }
       },
       recruit_builder = {
@@ -409,6 +388,39 @@ descriptions:new_productionsite_type {
             "consume=armor,tabard spear_wooden europeans_carrier",
             "animate=working duration:30s",
             "recruit=europeans_trainer_normal"
+         }
+      },
+      recruit_carrier_1 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting first carrier"),
+         actions = {
+            "return=skipped unless economy needs europeans_carrier_1",
+            "sleep=duration:20s",
+            "consume=europeans_carrier",
+            "animate=working duration:30s",
+            "recruit=europeans_carrier_1"
+         }
+      },
+      recruit_carrier_2 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting second carrier"),
+         actions = {
+            "return=skipped unless economy needs europeans_carrier_2",
+            "sleep=duration:20s",
+            "consume=basket europeans_carrier",
+            "animate=working duration:30s",
+            "recruit=europeans_carrier_2"
+         }
+      },
+      recruit_carrier_3 = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting third carrier"),
+         actions = {
+            "return=skipped unless economy needs europeans_carrier_3",
+            "sleep=duration:20s",
+            "consume=basket europeans_carrier",
+            "animate=working duration:30s",
+            "recruit=europeans_carrier_3"
          }
       },
    }

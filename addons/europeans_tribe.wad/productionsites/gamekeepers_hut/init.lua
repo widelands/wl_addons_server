@@ -34,7 +34,10 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {},
+   aihints = {
+      basic_amount = 2,
+      prohibited_till = 1200
+   },
 
    working_positions = {
       europeans_gamekeeper_basic = 1
