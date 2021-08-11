@@ -959,6 +959,13 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "europeans_carrier_3",
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
+            }
+         },
+         {
             name = "europeans_builder",
             default_target_quantity = 2,
             preciousness = 16,
@@ -3449,6 +3456,7 @@ descriptions:new_tribe {
 
    -- Special types
    builder = "europeans_builder",
+   carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3"},
    carrier = "europeans_carrier_1",
    carrier2 = "europeans_carrier_2",
    geologist = "europeans_geologist",

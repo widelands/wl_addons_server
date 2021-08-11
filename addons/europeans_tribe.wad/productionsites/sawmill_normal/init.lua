@@ -66,6 +66,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs blackwood",
             "return=skipped when economy needs planks",
+            "return=skipped when economy needs log",
             "consume=log:2",
             "sleep=duration:60s",
             "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
@@ -91,6 +92,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs blackwood",
             "return=skipped when economy needs planks",
+            "return=skipped when economy needs log",
             "consume=log:2",
             "sleep=duration:60s",
             "playsound=sound/barbarians/blackwood priority:60%",

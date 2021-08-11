@@ -32,7 +32,8 @@ descriptions:new_productionsite_type {
 
    aihints = {
       needs_water = true,
-      --space_consumer = true
+      basic_amount = 3,
+      prohibited_till = 3300
    },
 
    working_positions = {
@@ -48,9 +49,9 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=making_clay",
             "callworker=check_sea",
             "call=fish_breeding_in_sea",
+            "call=making_clay",
             "callworker=check_pond",
             "call=fish_breeding_in_pond",
             "return=skipped"

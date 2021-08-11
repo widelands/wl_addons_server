@@ -58,7 +58,8 @@ descriptions:new_productionsite_type {
 
    aihints = {
       needs_water = true,
-      shipyard = true
+      shipyard = true,
+      prohibited_till = 3600
    },
 
    working_positions = {

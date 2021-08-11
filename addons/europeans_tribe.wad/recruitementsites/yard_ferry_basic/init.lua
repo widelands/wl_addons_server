@@ -48,7 +48,9 @@ descriptions:new_productionsite_type {
       }
    },
 
-   aihints = {},
+   aihints = {
+      prohibited_till = 3600
+   },
 
    working_positions = {
       europeans_shipwright_basic = 1

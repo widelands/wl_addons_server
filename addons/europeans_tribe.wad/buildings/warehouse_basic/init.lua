@@ -47,7 +47,9 @@ descriptions:new_warehouse_type {
       }
    },
 
-   aihints = {},
+   aihints = {
+      prohibited_till = 3600
+   },
 
    heal_per_second = 140,
 }

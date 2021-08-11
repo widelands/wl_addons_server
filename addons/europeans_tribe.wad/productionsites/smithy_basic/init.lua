@@ -51,7 +51,8 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
-      basic_amount = 1
+      basic_amount = 1,
+      prohibited_till = 2700
    },
 
    working_positions = {

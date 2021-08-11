@@ -47,7 +47,7 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
-      basic_amount = 4
+      basic_amount = 6
    },
 
    working_positions = {
