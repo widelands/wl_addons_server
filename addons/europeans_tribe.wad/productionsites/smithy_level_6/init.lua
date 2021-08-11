@@ -231,7 +231,7 @@ descriptions:new_productionsite_type {
          descname = _"making a fishing net",
          actions = {
             "return=skipped unless economy needs fishing_net",
-            "consume=spidercloth:2",
+            "consume=spidercloth:3",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:30s",
