@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-12 01:52+0000\n"
+"POT-Creation-Date: 2021-08-13 01:53+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -2704,10 +2704,9 @@ msgstr "eenen tweden Lastendrager antohüren"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:400
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:435
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:417
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting third carrier"
-msgstr "eenen eersten Lastendrager antohüren"
+msgstr "eenen darden Lastendrager antohüren"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:8
@@ -5559,10 +5558,9 @@ msgstr "Lastendrager 2"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_3/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carrier 3"
-msgstr "Lastendrager 1"
+msgstr "Lastendrager 3"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/charcoal_burner_advanced/init.lua:8
@@ -5929,6 +5927,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgid "Headquarters (Debug)"
-#~ msgstr "Raadhuus (tum Fehlersöken)"
