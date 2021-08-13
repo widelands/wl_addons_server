@@ -118,7 +118,7 @@ public class TransifexIntegration {
 			}
 		}
 
-		ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" + newIssues.size() +
+		ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" + allIssues.size() +
 		                " total).");
 		if (newIssues.isEmpty()) return;
 
