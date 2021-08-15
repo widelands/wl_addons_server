@@ -48,7 +48,7 @@ descriptions:new_productionsite_type {
 
    aihints = {
       --requires_supporters = true,
-      basic_amount = 2
+      basic_amount = 4
    },
 
    working_positions = {

@@ -387,7 +387,7 @@ descriptions:new_tribe {
         {
             name = "water",
             default_target_quantity = 32,
-            preciousness = 32,
+            preciousness = 50,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Water, part 1
@@ -881,55 +881,7 @@ descriptions:new_tribe {
                purpose = pgettext("europeans_ware", "These advanced shields are used by the best soldiers of the Europeans. They are produced in the advanced smithy and used in the advanced battle arena – together with food – to train soldiers in defense.")
             }
          }
-      },
-      {
-         -- Outdated
-         {
-            name = "armor_helmet",
-            default_target_quantity = 0,
-            preciousness = 0,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans ware: not used anymore
-               purpose = pgettext("europeans_ware", "Outdated ware, only for backward compatibility for old savegames.")
-            }
-         },
-         {
-            name = "helmet_golden",
-            default_target_quantity = 0,
-            preciousness = 1,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans ware: not used anymore
-               purpose = pgettext("europeans_ware", "Outdated ware, only for backward compatibility for old savegames.")
-            }
-         },
-         {
-            name = "helmet_warhelm",
-            default_target_quantity = 0,
-            preciousness = 1,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans ware: not used anymore
-               purpose = pgettext("europeans_ware", "Outdated ware, only for backward compatibility for old savegames.")
-            }
-         },
-         {
-            name = "trident_steel",
-            default_target_quantity = 0,
-            preciousness = 0,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans ware: not used anymore
-               purpose = pgettext("europeans_ware", "Outdated ware, only for backward compatibility for old savegames.")
-            }
-         },
-         {
-            name = "trident_heavy_double",
-            default_target_quantity = 0,
-            preciousness = 0,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans ware: not used anymore
-               purpose = pgettext("europeans_ware", "Outdated ware, only for backward compatibility for old savegames")
-            }
-         }
-       }
+      }
    },
    -- Workers positions in workers windows.
    -- This also gives us the information which workers the tribe uses.
@@ -2787,42 +2739,14 @@ descriptions:new_tribe {
          name = "europeans_tavern_level_1",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for a barbarian production site: Tavern
-            purpose = pgettext("building", "Prepares rations to feed the scouts and miners.")
+            purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the basic and deep mines.")
          }
       },
       {
          name = "europeans_tavern_level_2",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for a barbarian production site: Tavern
-            purpose = pgettext("building", "Prepares rations to feed the scouts and miners.")
-         }
-      },
-      {
-         name = "europeans_tavern_level_3",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for a barbarian production site: Inn
             purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the basic and deep mines.")
-         }
-      },
-      {
-         name = "europeans_tavern_level_4",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for a barbarian production site: Inn
-            purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the basic and deep mines.")
-         }
-      },
-      {
-         name = "europeans_tavern_level_5",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for a barbarian production site: Inn
-            purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the basic and deep mines.")
-         }
-      },
-      {
-         name = "europeans_inn_basic",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for a barbarian production site: Big Inn
-            purpose = pgettext("europeans_building", "Prepares rations, snacks and meals to feed all miners.")
          }
       },
       {

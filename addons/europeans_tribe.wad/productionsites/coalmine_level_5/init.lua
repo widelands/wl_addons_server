@@ -40,7 +40,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
          descname = _"mining coal",
          actions = {
-            "return=skipped unless economy needs coal or economy needs granite or economy needs diamond",
+            "return=skipped unless economy needs coal or economy needs granite or economy needs diamond or workers need experience",
             "consume=meal wine",
             "sleep=duration:5s",
             "call=mine_stone",

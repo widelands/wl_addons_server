@@ -54,7 +54,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
          descname = _"mining gold",
          actions = {
-            "return=skipped unless economy needs ore or economy needs granite or economy needs quartz",
+            "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
             "consume=snack mead",
             "sleep=duration:10s",
             "call=mine_stone",
