@@ -5,18 +5,20 @@ dirname = path.dirname(__file__)
 descriptions:new_productionsite_type {
    name = "europeans_tavern_basic",
    -- TRANSLATORS: This is a building name used in lists of buildings
-   descname = pgettext("europeans_building", "Basic Tavern"),
+   descname = pgettext("europeans_building", "Basic Tavern Level"),
    icon = dirname .. "menu.png",
    size = "medium",
 
    enhancement = {
         name = "europeans_tavern_level_1",
         enhancement_cost = {
-          log = 2,
-          reed = 1
+          blackwood = 2,
+          cloth = 1,
+          quartz = 1
         },
         enhancement_return_on_dismantle = {
-          log = 1
+          blackwood = 1,
+          quartz = 1
         },
    },
 
@@ -33,20 +35,20 @@ descriptions:new_productionsite_type {
    animations = {
       idle = {
          pictures = path.list_files(dirname .. "idle_??.png"),
-         hotspot = { 41, 58 },
+         hotspot = { 57, 88 },
       },
-      unoccupied = {
-         pictures = path.list_files(dirname .. "unoccupied_??.png"),
-         hotspot = { 41, 58 },
+      build = {
+         pictures = path.list_files(dirname .. "build_??.png"),
+         hotspot = { 57, 88 },
       },
       working = {
-         pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-         hotspot = { 41, 58 },
+         pictures = path.list_files(dirname .. "working_??.png"),
+         hotspot = { 57, 88 },
       },
    },
 
    aihints = {
-      basic_amount = 1,
+      basic_amount = 2,
       prohibited_till = 2400
    },
 
@@ -79,7 +81,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs water",
             "sleep=duration:60s",
             "consume=water flour fish,meat",
-            "animate=working duration:80s",
+            "animate=working duration:70s",
             "produce=ration"
          }
       },
@@ -91,7 +93,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs ration",
             "sleep=duration:10s",
             "consume=water:2 flour:2 fish,meat:2",
-            "animate=working duration:80s",
+            "animate=working duration:70s",
             "produce=ration:2"
          }
       },

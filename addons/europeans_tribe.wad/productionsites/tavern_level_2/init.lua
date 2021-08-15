@@ -10,13 +10,19 @@ descriptions:new_productionsite_type {
    size = "medium",
 
    enhancement = {
-        name = "europeans_tavern_level_3",
+        name = "europeans_inn_level_1",
         enhancement_cost = {
-          log = 2,
-          reed = 1
+          planks = 2,
+          brick = 1,
+          grout = 1,
+          marble_column = 1,
+          diamond = 1
         },
         enhancement_return_on_dismantle = {
-          log = 1
+          planks = 1,
+          granite = 1,
+          marble = 1,
+          diamond = 1
         },
    },
 
@@ -38,15 +44,15 @@ descriptions:new_productionsite_type {
    aihints = {},
 
    working_positions = {
-      europeans_baker_basic = 1,
-      europeans_smoker_basic = 1
+      europeans_baker_normal = 1,
+      europeans_smoker_normal = 1
    },
 
    inputs = {
-      { name = "water", amount = 8 },
-      { name = "flour", amount = 8 },
-      { name = "fish", amount = 4 },
-      { name = "meat", amount = 4 }
+      { name = "water", amount = 10 },
+      { name = "flour", amount = 10 },
+      { name = "fish", amount = 6 },
+      { name = "meat", amount = 6 }
    },
 
    programs = {
@@ -56,6 +62,8 @@ descriptions:new_productionsite_type {
          actions = {
             "call=produce_ration_basic",
             "call=produce_ration",
+            "call=produce_snack_basic",
+            "call=produce_snack",
             "return=skipped"
          }
       },
@@ -63,6 +71,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
          descname = _"preparing a ration",
          actions = {
+            "return=skipped when economy needs ration",
+            "return=skipped when economy needs snack",
             "return=skipped when economy needs water",
             "sleep=duration:60s",
             "consume=water flour fish,meat",
@@ -78,8 +88,33 @@ descriptions:new_productionsite_type {
             "return=skipped unless economy needs ration",
             "sleep=duration:10s",
             "consume=water:2 flour:2 fish,meat:2",
-            "animate=working duration:60s",
+            "animate=working duration:50s",
             "produce=ration:2"
+         }
+      },
+      produce_snack_basic = {
+         -- TRANSLATORS: Completed/Skipped/Did not start preparing a snack because ...
+         descname = _"preparing a snack",
+         actions = {
+            "return=skipped when economy needs ration",
+            "return=skipped when economy needs snack",
+            "return=skipped when economy needs water",
+            "sleep=duration:60s",
+            "consume=water:2 flour:2 fish,meat:2",
+            "animate=working duration:60s",
+            "produce=snack"
+         }
+      },
+      produce_snack = {
+         -- TRANSLATORS: Completed/Skipped/Did not start preparing a snack because ...
+         descname = _"preparing a snack",
+         actions = {
+            "return=skipped when economy needs water and not economy needs snack",
+            "return=skipped unless economy needs snack",
+            "sleep=duration:10s",
+            "consume=water:4 flour:4 fish,meat:4",
+            "animate=working duration:50s",
+            "produce=snack:3"
          }
       },
    },
