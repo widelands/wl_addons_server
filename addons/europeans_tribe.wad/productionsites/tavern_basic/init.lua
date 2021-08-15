@@ -47,7 +47,10 @@ descriptions:new_productionsite_type {
       },
    },
 
-   aihints = {},
+   aihints = {
+      basic_amount = 2,
+      prohibited_till = 2400
+   },
 
    working_positions = {
       europeans_baker_basic = 1,
