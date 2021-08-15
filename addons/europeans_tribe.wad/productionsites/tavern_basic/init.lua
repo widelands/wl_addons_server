@@ -10,7 +10,7 @@ descriptions:new_productionsite_type {
    size = "medium",
 
    enhancement = {
-        name = "europeans_tavern_level_2",
+        name = "europeans_tavern_level_1",
         enhancement_cost = {
           blackwood = 2,
           cloth = 1,
