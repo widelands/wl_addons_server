@@ -176,7 +176,7 @@ public class TransifexIntegration {
 			long total = 0;
 			for (List l : relevantIssues.values()) total += l.size();
 
-			File message = File.createTempFile("temp", null);
+			File message = File.createTempFile("txissues", null);
 			PrintWriter write = new PrintWriter(message);
 			write.println("From: noreply@widelands.org");
 			write.println("Subject: Transifex String Issues");
@@ -211,14 +211,18 @@ public class TransifexIntegration {
 		}
 	}
 
+	private static class CustomMap extends LinkedHashMap {
+		public CustomMap map(Object key) { return (CustomMap)get(key); }
+	}
+
 	private synchronized List<Issue> fetchIssues() throws Exception {
 		ContainerFactory cf = new ContainerFactory() {
 			public List creatArrayContainer() { return new LinkedList(); }
-			public Map createObjectContainer() { return new LinkedHashMap(); }
+			public Map createObjectContainer() { return new CustomMap(); }
 		};
 
 		JSONParser parser = new JSONParser();
-		Map json = (Map)parser.parse(
+		CustomMap json = (CustomMap)parser.parse(
 		    Utils.bashOutput("curl", "-g", "-H",
 		                     "Authorization: Bearer " + Utils.config("transifextoken"),
 		                     "https://rest.api.transifex.com/"
@@ -231,25 +235,23 @@ public class TransifexIntegration {
 
 		List<Issue> result = new ArrayList<>();
 		for (Object oneIssue : (List)json.get("data")) {
+			CustomMap i = (CustomMap)oneIssue;
 			String sourceStringURL =
-			    ((Map)((Map)((Map)((Map)oneIssue).get("relationships")).get("resource_string"))
-			         .get("links"))
-			        .get("related")
-			        .toString();
-			Map sourceStringQuery = (Map)parser.parse(
+			    i.map("relationships").map("resource_string").map("links").get("related").toString();
+			CustomMap sourceStringQuery = (CustomMap)parser.parse(
 			    Utils.bashOutput("curl", "-g", "-H",
 			                     "Authorization: Bearer " + Utils.config("transifextoken"),
 			                     sourceStringURL),
 			    cf);
 
 			result.add(new Issue(
-			    ((Map)oneIssue).get("id").toString(),
-			    ((Map)((Map)oneIssue).get("attributes")).get("message").toString(),
-			    ((Map)((Map)sourceStringQuery.get("data")).get("attributes")).get("key").toString(),
-			    ((Map)((Map)sourceStringQuery.get("data")).get("attributes"))
+			    i.get("id").toString(),
+			    i.map("attributes").get("message").toString(),
+			    sourceStringQuery.map("data").map("attributes").get("key").toString(),
+			    sourceStringQuery.map("data").map("attributes")
 			        .get("appearance_order")
 			        .toString(),
-			    ((Map)((Map)sourceStringQuery.get("data")).get("attributes"))
+			    sourceStringQuery.map("data").map("attributes")
 			        .get("occurrences")
 			        .toString()));
 		}
