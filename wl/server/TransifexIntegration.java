@@ -66,7 +66,9 @@ public class TransifexIntegration {
 					Utils.bashOutput("msgfmt", poFile.getAbsolutePath(), "-o", outFile);
 					// We permanently need to store MO files in two different
 					// locations for backwards compatibility.
-					Files.copy(new File(outFile).toPath(), new File("i18n/" + lang + "/LC_MESSAGES", poDir.getName() + ".mo").toPath());
+					Files.copy(new File(outFile).toPath(),
+					           new File("i18n/" + lang + "/LC_MESSAGES", poDir.getName() + ".mo")
+					               .toPath());
 				}
 			}
 		}

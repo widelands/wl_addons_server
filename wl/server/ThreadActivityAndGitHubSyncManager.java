@@ -77,7 +77,9 @@ class ThreadActivityAndGitHubSyncManager {
 	public synchronized void tick(Socket s) {
 		_allActiveClientThreads.put(Thread.currentThread(), new Data(s));
 	}
-	public synchronized void threadClosed() { _allActiveClientThreads.remove(Thread.currentThread()); }
+	public synchronized void threadClosed() {
+		_allActiveClientThreads.remove(Thread.currentThread());
+	}
 	public synchronized void check() throws Exception {
 		final long time = System.currentTimeMillis();
 		HashMap<Thread, Long> kill = new HashMap<>();
