@@ -236,8 +236,11 @@ public class TransifexIntegration {
 		List<Issue> result = new ArrayList<>();
 		for (Object oneIssue : (List)json.get("data")) {
 			CustomMap i = (CustomMap)oneIssue;
-			String sourceStringURL =
-			    i.map("relationships").map("resource_string").map("links").get("related").toString();
+			String sourceStringURL = i.map("relationships")
+			                             .map("resource_string")
+			                             .map("links")
+			                             .get("related")
+			                             .toString();
 			CustomMap sourceStringQuery = (CustomMap)parser.parse(
 			    Utils.bashOutput("curl", "-g", "-H",
 			                     "Authorization: Bearer " + Utils.config("transifextoken"),
@@ -245,15 +248,10 @@ public class TransifexIntegration {
 			    cf);
 
 			result.add(new Issue(
-			    i.get("id").toString(),
-			    i.map("attributes").get("message").toString(),
+			    i.get("id").toString(), i.map("attributes").get("message").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("key").toString(),
-			    sourceStringQuery.map("data").map("attributes")
-			        .get("appearance_order")
-			        .toString(),
-			    sourceStringQuery.map("data").map("attributes")
-			        .get("occurrences")
-			        .toString()));
+			    sourceStringQuery.map("data").map("attributes").get("appearance_order").toString(),
+			    sourceStringQuery.map("data").map("attributes").get("occurrences").toString()));
 		}
 		return result;
 	}
