@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-13 01:53+0000\n"
+"POT-Creation-Date: 2021-08-16 01:54+0000\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -682,7 +682,6 @@ msgstr "Pokročilý pivovar"
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:54
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:36
 #: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:32
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:62
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:58
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:41
 #: addons/europeans_tribe.wad/productionsites/lime_kiln/init.lua:73
@@ -711,12 +710,9 @@ msgstr "Pokročilý pivovar"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:50
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:53
 #: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:41
-#: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:68
-#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:55
-#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:55
-#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:57
-#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:54
-#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:58
+#: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:70
+#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:57
+#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:61
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:47
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:66
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:54
@@ -1440,64 +1436,44 @@ msgstr ""
 "postavit chatu hajného, aby vypouštěl divokou zvěř do volné přírody."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:8
+#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:8
 msgctxt "europeans_building"
-msgid "Basic Inn"
-msgstr "Jednoduchý hostinec"
+msgid "Inn Level 1"
+msgstr "Hostinec úrovně 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:75
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:71
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:85
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:54
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:68
-#: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:77
-#: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:88
-#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:64
-#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:75
-#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:64
-#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:75
-#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:68
-#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:81
-#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:65
-#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:78
-#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:69
-#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:82
+#: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:79
+#: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:90
+#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:68
+#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:81
+#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:72
+#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:85
 msgid "preparing a ration"
 msgstr "chystání malé svačiny"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a snack because ...
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:101
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:115
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:111
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:80
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:94
-#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:93
-#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:106
-#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:90
-#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:103
-#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:94
-#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:107
+#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:93
+#: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:106
+#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:97
+#: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:110
 msgid "preparing a snack"
 msgstr "chystání svačiny"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:127
-#: addons/europeans_tribe.wad/productionsites/inn_basic/init.lua:141
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:123
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:137
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:106
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:120
 msgid "preparing a meal"
 msgstr "vaření jídla"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:8
-msgctxt "europeans_building"
-msgid "Inn Level 1"
-msgstr "Hostinec úrovně 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:8
@@ -1935,7 +1911,7 @@ msgctxt "europeans_building"
 msgid "Basic Smithy"
 msgstr "Jednoduché kovářství"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:91
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:83
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:85
@@ -1946,10 +1922,10 @@ msgstr "Jednoduché kovářství"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:92
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:97
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:84
-msgid "making a pair of buckets"
-msgstr "vyrábění kýble"
+msgid "making a basket"
+msgstr "vyrábění koše"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:103
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:95
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:97
@@ -1960,10 +1936,10 @@ msgstr "vyrábění kýble"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:104
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:109
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:96
-msgid "making a shovel"
-msgstr "vyrábění lopaty"
+msgid "making a bread paddle"
+msgstr "vyrábění lopaty na chléb"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:115
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:107
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:109
@@ -1974,10 +1950,10 @@ msgstr "vyrábění lopaty"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:116
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:121
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:108
-msgid "making a saw"
-msgstr "vyrábění pily"
+msgid "making a pair of buckets"
+msgstr "vyrábění kýble"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:127
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:119
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:121
@@ -1988,10 +1964,10 @@ msgstr "vyrábění pily"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:128
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:133
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:120
-msgid "making a hammer"
-msgstr "vyrábění kladiva"
+msgid "making a felling ax"
+msgstr "vyrábění dřevorubecké sekery"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:139
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:131
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:133
@@ -2002,39 +1978,11 @@ msgstr "vyrábění kladiva"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:140
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:145
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:132
-msgid "making a pick"
-msgstr "vyrábění krumpáče"
+msgid "making fire tongs"
+msgstr "vyrábění kovářských kleští"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:151
-#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:143
-#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:145
-#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:149
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:144
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:143
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:147
-#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:152
-#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:157
-#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:144
-msgid "making a basket"
-msgstr "vyrábění koše"
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:163
-#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:155
-#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:157
-#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:161
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:156
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:155
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:159
-#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:164
-#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:169
-#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:156
-msgid "making a felling ax"
-msgstr "vyrábění dřevorubecké sekery"
-
-#. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:175
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:167
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:169
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:173
@@ -2044,11 +1992,11 @@ msgstr "vyrábění dřevorubecké sekery"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:176
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:181
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:168
-msgid "making fire tongs"
-msgstr "vyrábění kovářských kleští"
+msgid "making a hammer"
+msgstr "vyrábění kladiva"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:187
+#. TRANSLATORS: Completed/Skipped/Did not start making a hook pole because ...
+#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:163
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:179
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:181
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:185
@@ -2058,38 +2006,66 @@ msgstr "vyrábění kovářských kleští"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:188
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:193
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:180
-msgid "making a scythe"
-msgstr "vyrábění kosy"
+msgid "making a hook pole"
+msgstr "vyrábění háku na tyči"
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
+#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:175
+#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:239
+#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:241
+#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:245
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:240
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:239
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:243
+#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:248
+#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:253
+#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:240
+msgid "making a pick"
+msgstr "vyrábění krumpáče"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:199
-#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:191
-#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:193
-#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:197
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:192
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:191
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:195
-#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:200
-#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:205
-#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:192
+#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:187
+#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:215
+#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:217
+#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:221
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:216
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:215
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:219
+#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:224
+#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:229
+#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:216
 msgid "making milking tongs"
 msgstr "vyrábění pavoučích kleští"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:211
-#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:203
-#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:205
-#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:209
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:204
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:203
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:207
-#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:212
-#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:217
-#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:204
+#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:199
+#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:227
+#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:229
+#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:233
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:228
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:227
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:231
+#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:236
+#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:241
+#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:228
 msgid "making needles"
 msgstr "vyrábění jehlic"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
+#: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:211
+#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:251
+#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:253
+#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:257
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:252
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:251
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:255
+#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:260
+#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:265
+#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:252
+msgid "making a saw"
+msgstr "vyrábění pily"
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:223
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:263
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:265
@@ -2100,10 +2076,10 @@ msgstr "vyrábění jehlic"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:272
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:277
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:264
-msgid "making a bread paddle"
-msgstr "vyrábění lopaty na chléb"
+msgid "making a scythe"
+msgstr "vyrábění kosy"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a hook pole because ...
+#. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:235
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:275
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:277
@@ -2114,8 +2090,8 @@ msgstr "vyrábění lopaty na chléb"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:284
 #: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:289
 #: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:276
-msgid "making a hook pole"
-msgstr "vyrábění háku na tyči"
+msgid "making a shovel"
+msgstr "vyrábění lopaty"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:8
@@ -2123,55 +2099,55 @@ msgctxt "europeans_building"
 msgid "Smithy Level 1"
 msgstr "Kovářství úrovně 1"
 
-#. TRANSLATORS: Completed/Skipped/Did not start making a fishing rod because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:215
-#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:217
-#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:221
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:216
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:215
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:219
-#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:224
-#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:229
-#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:216
-msgid "making a fishing rod"
-msgstr "vyrábění rybářského prutu"
-
 #. TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:227
-#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:229
-#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:233
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:228
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:227
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:231
-#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:236
-#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:241
-#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:228
+#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:143
+#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:145
+#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:149
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:144
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:143
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:147
+#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:152
+#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:157
+#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:144
 msgid "making a fishing net"
 msgstr "vyrábění rybářské sítě"
 
+#. TRANSLATORS: Completed/Skipped/Did not start making a fishing rod because ...
+#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:155
+#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:157
+#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:161
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:156
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:155
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:159
+#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:164
+#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:169
+#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:156
+msgid "making a fishing rod"
+msgstr "vyrábění rybářského prutu"
+
 #. TRANSLATORS: Completed/Skipped/Did not start making a hunting bow because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:239
-#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:241
-#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:245
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:240
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:239
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:243
-#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:248
-#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:253
-#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:240
+#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:191
+#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:193
+#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:197
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:192
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:191
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:195
+#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:200
+#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:205
+#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:192
 msgid "making a hunting bow"
 msgstr "vyrábění loveckého luku"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hunting spear because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:251
-#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:253
-#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:257
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:252
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:251
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:255
-#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:260
-#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:265
-#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:252
+#: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:203
+#: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:205
+#: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:209
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:204
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:203
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:207
+#: addons/europeans_tribe.wad/productionsites/smithy_level_7/init.lua:212
+#: addons/europeans_tribe.wad/productionsites/smithy_level_8/init.lua:217
+#: addons/europeans_tribe.wad/productionsites/smithy_level_9/init.lua:204
 msgid "making a hunting spear"
 msgstr "vyrábění loveckého oštěpu"
 
@@ -2339,8 +2315,9 @@ msgstr "tesání mramorového sloupu"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:8
+#, fuzzy
 msgctxt "europeans_building"
-msgid "Basic Tavern"
+msgid "Basic Tavern Level"
 msgstr "Jednoduchá hospoda"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -2354,24 +2331,6 @@ msgstr "Hospoda úrovně 1"
 msgctxt "europeans_building"
 msgid "Tavern Level 2"
 msgstr "Hospoda úrovně 2"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites/tavern_level_3/init.lua:8
-msgctxt "europeans_building"
-msgid "Tavern Level 3"
-msgstr "Hospoda úrovně 3"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites/tavern_level_4/init.lua:8
-msgctxt "europeans_building"
-msgid "Tavern Level 4"
-msgstr "Hospoda úrovně 4"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites/tavern_level_5/init.lua:8
-msgctxt "europeans_building"
-msgid "Tavern Level 5"
-msgstr "Hospoda úrovně 5"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:8
@@ -4085,88 +4044,69 @@ msgstr ""
 "je používán v pokročilé bojové aréně – společně s jídlem – k výcviku obrany "
 "vojáků."
 
-#. TRANSLATORS: Helptext for an europeans ware: not used anymore
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:893
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:902
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:911
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:920
-msgctxt "europeans_ware"
-msgid "Outdated ware, only for backward compatibility for old savegames."
-msgstr ""
-"Zastaralá surovina, pouze pro zpětnou kompatibilitu se starými uloženými "
-"pozicemi."
-
-#. TRANSLATORS: Helptext for an europeans ware: not used anymore
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:929
-msgctxt "europeans_ware"
-msgid "Outdated ware, only for backward compatibility for old savegames"
-msgstr ""
-"Zastaralá surovina, pouze pro zpětnou kompatibilitu se starými uloženými "
-"pozicemi"
-
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:944
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:896
 msgctxt "europeans_worker"
 msgid "Used for recruiting all other workers."
 msgstr "Využíván k výcviku všech ostatních dělníků."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:951
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:903
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
 msgstr "Vlastníma rukama nosí předměty po cestách."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:958
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:965
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:910
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:917
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets."
 msgstr "Nosí předměty po cestách v koši."
 
 #. TRANSLATORS: Helptext for an europeans worker: Builder
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:974
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:926
 msgctxt "europeans_worker"
 msgid "Works at construction sites to raise new buildings."
 msgstr "Pracuje na staveništi a staví budovy."
 
 #. TRANSLATORS: Helptext for an europeans worker: Ferry
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:983
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:935
 msgctxt "europeans_worker"
 msgid "Ships wares across narrow rivers."
 msgstr "Dopravuje suroviny přes řeky a úžiny."
 
 #. TRANSLATORS: Helptext for an europeans worker: Shipwright
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:992
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1001
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1010
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:944
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:953
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:962
 msgctxt "europeans_worker"
 msgid "Works at the shipyard and constructs new ships."
 msgstr "Pracuje v loděnici na stavbě nových lodí."
 
 #. TRANSLATORS: Helptext for an europeans worker: Geologist
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1019
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:971
 msgctxt "europeans_worker"
 msgid "Discovers resources for mining."
 msgstr "Dělá průzkumné práce zdrojů pro těžbu."
 
 #. TRANSLATORS: Helptext for an europeans worker: Recruit
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1029
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:981
 msgctxt "europeans_worker"
 msgid "Eager to become a soldier and defend his tribe!"
 msgstr "Odhodlaný stát se vojákem a bránit svůj kmen!"
 
 #. TRANSLATORS: Helptext for an europeans worker: Trainer
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1038
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1047
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1056
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:990
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:999
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1008
 msgctxt "europeans_worker"
 msgid "Trains the soldiers."
 msgstr "Cvičí vojáky."
 
 #. TRANSLATORS: Helptext for an europeans worker: Scout
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1065
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1075
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1085
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1017
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1027
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1037
 msgctxt "europeans_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
@@ -4174,65 +4114,65 @@ msgstr ""
 "Průzkumníci, jako průzkumník Zdenda, zvídavě šmejdí neprozkoumanou krajinou."
 
 #. TRANSLATORS: Helptext for an europeans worker: Soldier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1095
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1047
 msgctxt "europeans_worker"
 msgid "Defend and Conquer!"
 msgstr "Bránit a dobývat!"
 
 #. TRANSLATORS: Helptext for an europeans worker: Lumberjack / Woodcutter
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1107
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1116
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1125
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1059
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1068
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1077
 msgctxt "europeans_worker"
 msgid "Fells trees."
 msgstr "Kácí stromy."
 
 #. TRANSLATORS: Helptext for an europeans worker: Ranger / Forester
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1134
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1143
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1152
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1086
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1095
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1104
 msgctxt "europeans_worker"
 msgid "Plant trees."
 msgstr "Sází stromy."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carpenter / Sawyer
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1161
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1170
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1179
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1113
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1122
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1131
 msgctxt "europeans_worker"
 msgid "Produces planks out of log."
 msgstr "Vyrábí prkna z klád."
 
 #. TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1191
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1200
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1143
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1152
 msgctxt "europeans_worker"
 msgid "Produces charcoal out of log."
 msgstr "Vyrábí dřevěné uhlí z klád."
 
 #. TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1209
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1161
 msgctxt "europeans_worker"
 msgid "Produces charcoal out of log or old planks."
 msgstr "Vyrábí dřevěné uhlí z klád a starých prken."
 
 #. TRANSLATORS: Helptext for an europeans worker: Stonecutter
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1218
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1227
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1236
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1170
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1179
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1188
 msgctxt "europeans_worker"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
 msgstr "Láme žulové a mramorové kvádry ze skal v okolí."
 
 #. TRANSLATORS: Helptext for an europeans worker: Stonemason
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1245
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1254
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1197
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1206
 msgctxt "europeans_worker"
 msgid "Burns bricks and grout out of clay, water and granite."
 msgstr "Vyrábí cihly a maltu z cihlářské hlíny, vody a žuly."
 
 #. TRANSLATORS: Helptext for an europeans worker: Stonemason
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1263
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1215
 msgctxt "europeans_worker"
 msgid ""
 "Burns bricks and grout out of clay, water and granite. Makes marble column "
@@ -4242,65 +4182,65 @@ msgstr ""
 "z mramoru."
 
 #. TRANSLATORS: Helptext for an europeans worker: Farmer
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1275
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1284
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1293
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1227
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1236
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1245
 msgctxt "europeans_worker"
 msgid "Plants and harvests fields."
 msgstr "Pěstuje a sklízí pole."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1302
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1311
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1320
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1254
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1263
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1272
 msgctxt "europeans_worker"
 msgid "Lets bees swarm over flowers, then gathers the honey."
 msgstr "Umožňuje včelím rojům opylovat květy a produkovat med."
 
 #. TRANSLATORS: Helptext for an europeans worker: Breeder
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1329
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1338
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1347
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1281
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1290
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1299
 msgctxt "europeans_worker"
 msgid "Breeds spiders and sheeps and produce silk and wool."
 msgstr "Chová pavouky a ovce, produkuje pavoučí hedvábí a vlnu."
 
 #. TRANSLATORS: Helptext for an europeans worker: Weaver
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1356
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1365
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1374
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1308
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1317
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1326
 msgctxt "europeans_worker"
 msgid "Produces cloth for ships, tools and armor."
 msgstr "Vyrábí látku pro lodě, nástroje a zbroje."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1386
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1395
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1404
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1338
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1347
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1356
 msgctxt "europeans_worker"
 msgid "Catches fish in the sea or in pond."
 msgstr "Chytá ryby v moři či jezeře."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1413
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1422
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1431
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1365
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1374
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1383
 msgctxt "europeans_worker"
 msgid "Breeds fish in pond and in the sea."
 msgstr "Chová ryby v jezeře a moři."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1440
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1449
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1458
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1392
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1401
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1410
 msgctxt "europeans_worker"
 msgid "The hunter brings fresh, raw meat to the colonists."
 msgstr "Lovec poskytuje osadníkům čerstvé, syrové maso."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1467
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1476
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1485
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1419
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1428
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1437
 msgctxt "europeans_worker"
 msgid ""
 "The gamekeeper makes sure that the natural population of animals never drops "
@@ -4310,70 +4250,70 @@ msgstr ""
 "příliš neklesla."
 
 #. TRANSLATORS: Helptext for an europeans worker: Miller
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1497
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1506
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1515
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1449
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1458
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1467
 msgctxt "europeans_worker"
 msgid "Grind rye and wheat to mixed flour."
 msgstr "Mele žito a pšenici na míšenou mouku."
 
 #. TRANSLATORS: Helptext for an europeans worker: Baker
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1524
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1533
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1542
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1476
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1485
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1494
 msgctxt "europeans_worker"
 msgid "Produce bread out of water, flour and cornmeal."
 msgstr "Vyrábí chleba z vody, mouky a kukuřičné mouky."
 
 #. TRANSLATORS: Helptext for an europeans worker: Brewer
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1551
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1560
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1503
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1512
 msgctxt "europeans_worker"
 msgid "Brewing beer and mead."
 msgstr "Vaří pivo a medovinu."
 
 #. TRANSLATORS: Helptext for an europeans worker: Brewer
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1569
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1521
 msgctxt "europeans_worker"
 msgid "Brewing beer and mead. Produces wine."
 msgstr "Vaří pivo a medovinu. Vyrábí víno."
 
 #. TRANSLATORS: Helptext for an europeans worker: Smoker
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1578
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1587
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1596
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1530
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1539
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1548
 msgctxt "europeans_worker"
 msgid "Smoking fish and meat."
 msgstr "Udí ryby a maso."
 
 #. TRANSLATORS: Helptext for an europeans worker: Miner
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1608
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1617
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1626
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1560
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1569
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1578
 msgctxt "europeans_worker"
 msgid "Mines ore and minerals."
 msgstr "Těží rudy a minerály."
 
 #. TRANSLATORS: Helptext for an europeans worker: Smelter
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1635
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1644
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1653
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1587
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1596
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1605
 msgctxt "europeans_worker"
 msgid "Smelts ore to metals."
 msgstr "Taví rudy na kovy."
 
 #. TRANSLATORS: Helptext for an europeans worker: Smith
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1662
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1671
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1680
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1614
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1623
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1632
 msgctxt "europeans_worker"
 msgid "Produce tools, armor and weapons."
 msgstr "Vyrábí nástroje, zbroje a zbraně."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an europeans immovable: Destroyed Building
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1691
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1698
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1643
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1650
 msgid "The remains of a destroyed building."
 msgstr "Pozůstatky zničené budovy."
 
@@ -4382,11 +4322,11 @@ msgstr "Pozůstatky zničené budovy."
 #. TRANSLATORS: Helptext for an europeans immovable: corn field
 #. TRANSLATORS: Helptext for an europeans immovable: rye field
 #. TRANSLATORS: Helptext for an europeans immovable: Wheat field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1705
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1992
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2027
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2125
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2160
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1657
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1944
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1979
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2077
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2112
 msgid "This field has just been planted."
 msgstr "Toto je právě oseté pole."
 
@@ -4395,16 +4335,16 @@ msgstr "Toto je právě oseté pole."
 #. TRANSLATORS: Helptext for an europeans immovable: corn field
 #. TRANSLATORS: Helptext for an europeans immovable: rye field
 #. TRANSLATORS: Helptext for an europeans immovable: Wheat field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1712
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1719
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1999
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2006
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2034
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2041
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2132
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2139
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2167
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2174
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1664
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1671
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1951
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1958
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1986
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1993
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2084
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2091
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2119
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2126
 msgid "This field is growing."
 msgstr "Toto je rostoucí pole."
 
@@ -4413,11 +4353,11 @@ msgstr "Toto je rostoucí pole."
 #. TRANSLATORS: Helptext for an europeans immovable: corn field
 #. TRANSLATORS: Helptext for an europeans immovable: rye field
 #. TRANSLATORS: Helptext for an europeans immovable: Wheat field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1726
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2013
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2048
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2146
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2181
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1678
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1965
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2000
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2098
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2133
 msgid "This field is ready for harvesting."
 msgstr "Toto pole je připraveno ke sklizni."
 
@@ -4426,69 +4366,69 @@ msgstr "Toto pole je připraveno ke sklizni."
 #. TRANSLATORS: Helptext for an europeans immovable: corn field
 #. TRANSLATORS: Helptext for an europeans immovable: rye field
 #. TRANSLATORS: Helptext for an europeans immovable: Wheat field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1733
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2020
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2055
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2153
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2188
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1685
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1972
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2007
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2105
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2140
 msgid "This field has been harvested."
 msgstr "Toto pole bylo sklizeno."
 
 #. TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1740
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1768
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1796
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1824
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1852
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1880
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1908
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1936
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1964
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1692
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1720
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1748
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1776
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1804
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1832
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1860
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1888
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1916
 msgid "This berry bush has just been planted."
 msgstr "Tento ovocný keř je čerstvě zasazený."
 
 #. TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1747
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1775
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1803
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1831
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1859
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1887
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1915
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1943
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1971
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1699
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1727
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1755
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1783
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1811
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1839
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1867
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1895
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1923
 msgid "This berry bush is growing."
 msgstr "Tento ovocný keř pomalu roste."
 
 #. TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1754
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1782
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1810
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1838
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1866
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1894
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1922
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1950
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1978
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1706
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1734
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1762
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1790
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1818
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1846
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1874
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1902
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1930
 msgid ""
 "This berry bush is flowering. Honey can be produced from it by a beekeeper."
 msgstr "Tento ovocný keř již kvete. Včelař tu může zajistit získání medu."
 
 #. TRANSLATORS: Helptext for a europeans immovable: One of the berry bushes
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1761
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1789
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1817
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1845
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1873
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1901
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1929
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1957
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1985
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1713
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1741
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1769
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1797
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1825
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1853
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1881
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1909
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1937
 msgid "This berry bush is ready for harvesting."
 msgstr "Ovocný keř dozrál ke sbírání."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2062
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2014
 msgid ""
 "When claydiggers dig up earth, they leave holes in the ground. These holes "
 "vanish after a while. Aqua farms can use them as ponds to grow fish in them, "
@@ -4499,7 +4439,7 @@ msgstr ""
 "chov ryb, zatímco uhlíři v nich budují své milíře."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2069
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2021
 msgid ""
 "Fish are maturing in this pond. A fisher working from an aqua farm will be "
 "able to catch them when they are bigger."
@@ -4508,7 +4448,7 @@ msgstr ""
 "rybí sádce moci vylovit."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2076
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2028
 msgid ""
 "Fish are living in this pond. A fisher working from an aqua farm can catch "
 "them as food."
@@ -4517,7 +4457,7 @@ msgstr ""
 "chytit, aby mohly posloužit jako jídlo."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2083
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2035
 msgid ""
 "A charcoal stack is burning in this earthen hole. When it has burnt down, a "
 "charcoal burner will be able to gather coal from it."
@@ -4526,97 +4466,97 @@ msgstr ""
 "získat uhlí."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2090
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2042
 msgid ""
 "A charcoal stack, which had been erected in this earthen hole, is ready for "
 "a charcoal burner to gather coal from it."
 msgstr "Milíř, který byl postaven v této jámě, je připraven na sběr uhlí."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Reed Field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2097
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2049
 msgid "This reed field has just been planted."
 msgstr "Toto je právě oseté rákosové pole."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Reed Field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2104
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2056
 msgid "This reed field is growing."
 msgstr "Toto je dorůstající rákosové pole."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Reed Field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2111
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2063
 msgid ""
 "This reed field is flowering. Honey can be produced from it by a beekeeper."
 msgstr "Toto rákosové pole právě kvete. Včelař tu může zajistit získání medu."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Reed Field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2118
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2070
 msgid "This reed field is ready for harvesting."
 msgstr "Toto rákosové pole je připraveno ke sklizni."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Grapevine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2195
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2147
 msgid "This grapevine has just been planted."
 msgstr "Tento vinný keř byl právě zasazen."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Grapevine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2202
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2209
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2154
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2161
 msgid "This grapevine is growing."
 msgstr "Toto je dorůstající vinný keř."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Grapevine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2216
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2168
 msgid "This grapevine is ready for harvesting."
 msgstr "Tento vinný keř je připraven ke sklizni."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: No resources
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2223
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2175
 msgid "There are no resources in the ground here."
 msgstr "Nebyly zde nalezeny žádné podzemní zdroje."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Water
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2230
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2182
 msgid "There is water in the ground here that can be pulled up by a well."
 msgstr "Zde se nachází podzemní voda, lze ji čerpat postavením studny."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Coal, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2238
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2282
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2190
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2234
 msgid "Coal veins contain coal that can be dug up by coal mines."
 msgstr "Ložiska uhlí obsahují uhlí, které lze těžit pomocí dolů na uhlí."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Coal, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2240
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2192
 msgid "There is only a little bit of coal here."
 msgstr "Zde se dá najít něco málo uhlí."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Iron, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2249
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2293
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2201
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2245
 msgid "Iron veins contain iron ore that can be dug up by iron mines."
 msgstr ""
 "Železná žíla obsahuje železnou rudu, kterou lze těžit pomocí dolů na železo."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Iron, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2251
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2203
 msgid "There is only a little bit of iron here."
 msgstr "Zde se dá najít něco málo železa."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Gold, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2260
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2304
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2212
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2256
 msgid "Gold veins contain gold ore that can be dug up by gold mines."
 msgstr ""
 "Zlatá žíla obsahuje zlatou rudu, kterou lze těžit pomocí dolů na zlato."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Gold, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2262
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2214
 msgid "There is only a little bit of gold here."
 msgstr "Zde se dá najít něco málo zlata."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Stones, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2271
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2315
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2223
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2267
 msgid ""
 "Marble is a basic building material and can be dug up by a marble mine. You "
 "will also get granite from the mine."
@@ -4625,37 +4565,37 @@ msgstr ""
 "důl produkuje při těžbě také žulu."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Stones, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2273
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2225
 msgid "There is only a little bit of marble here."
 msgstr "Zde se dá najít něco málo mramoru."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Coal, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2284
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2236
 msgid "There is a lot of coal here."
 msgstr "Zde je velké ložisko uhlí."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Iron, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2295
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2247
 msgid "There is a lot of iron here."
 msgstr "Zde je velké ložisko železné rudy."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Gold, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2306
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2258
 msgid "There is a lot of gold here."
 msgstr "Zde je to velké ložisko zlata."
 
 #. TRANSLATORS: Helptext for an europeans resource indicator: Stones, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2317
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2269
 msgid "There is a lot of marble here."
 msgstr "Zde je velké ložisko mramoru."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Ship Under Construction
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2325
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2277
 msgid "A ship is being constructed at this site."
 msgstr "Na tomto místě se staví loď."
 
 #. TRANSLATORS: Helptext for an europeans immovable usable by europeans: Dead Tree
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2333
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2285
 msgid "The remains of an old tree."
 msgstr "Torzo starého stromu."
 
@@ -4664,40 +4604,40 @@ msgstr "Torzo starého stromu."
 #. TRANSLATORS: Helptext for an amazon immovable usable by europeans: Rubber Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by europeans: Corn Field
 #. TRANSLATORS: Helptext for an amazon immovable usable by europeans: Rubber Tree
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2340
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2347
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2354
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2361
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2368
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2375
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2382
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2389
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2396
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2403
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2410
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2417
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2292
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2299
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2306
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2313
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2320
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2327
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2334
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2341
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2348
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2355
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2362
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2369
 msgid ""
 "This tree is only planted by the amazon tribe but can be harvested for logs."
 msgstr ""
 "Toto je strom vysazovaný kmenem Amazonek, i tak ho lze pokácet na dřevo."
 
 #. TRANSLATORS: Purpose helptext for an europeans warehouse: Headquarters
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2429
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2381
 msgctxt "europeans_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
 "Poskytuje ubytování tvým lidem a také skladuje tvé suroviny a nástroje."
 
 #. TRANSLATORS: Note helptext for an europeans warehouse: Headquarters
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2431
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2383
 msgctxt "europeans_building"
 msgid "The headquarters is your main building."
 msgstr "Hlavní budova je tvou klíčovou budovou."
 
 #. TRANSLATORS: Purpose helptext for an europeans warehouse: Warehouse
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2438
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2445
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2452
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2390
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2397
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2404
 msgctxt "europeans_building"
 msgid ""
 "Your workers and soldiers will find shelter here. Also stores your wares and "
@@ -4707,7 +4647,7 @@ msgstr ""
 "nářadí."
 
 #. TRANSLATORS: Purpose helptext for an europeans warehouse: Port
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2459
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2411
 msgctxt "europeans_building"
 msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
@@ -4717,9 +4657,9 @@ msgstr ""
 "nástroje a poskytuje přístřeší vojákům."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Well
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2468
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2475
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2482
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2420
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2427
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2434
 msgctxt "europeans_building"
 msgid "Draws water out of the deep."
 msgstr "Čerpá podzemní vodu."
@@ -4727,15 +4667,15 @@ msgstr "Čerpá podzemní vodu."
 #. TRANSLATORS: Purpose helptext for a europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Woodcutter's House
 #. TRANSLATORS: Purpose helptext for an europeans production site: Lumberjack's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2489
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2498
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2507
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2441
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2450
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2459
 msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
 msgstr "Kácí stromy ve svém okolí a zpracovává je na klády."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Lumberjack_s Hut
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2491
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2443
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
 msgstr ""
@@ -4743,7 +4683,7 @@ msgstr ""
 "kácení."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Woodcutter's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2500
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2452
 msgctxt "europeans_building"
 msgid "The woodcutter’s house needs trees to fell within the work area."
 msgstr ""
@@ -4751,7 +4691,7 @@ msgstr ""
 "kácení."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Lumberjack's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2509
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2461
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
 msgstr ""
@@ -4760,15 +4700,15 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Ranger's Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Forester's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2516
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2525
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2534
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2468
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2477
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2486
 msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
 msgstr "Vysazuje stromy ve svém okolí."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Ranger's Hut
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2518
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2470
 msgctxt "europeans_building"
 msgid ""
 "The ranger’s hut needs free space within the work area to plant the trees."
@@ -4777,8 +4717,8 @@ msgstr ""
 "vysazovat stromy."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Forester's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2527
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2536
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2479
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2488
 msgctxt "europeans_building"
 msgid ""
 "The forester’s house needs free space within the work area to plant the "
@@ -4788,34 +4728,34 @@ msgstr ""
 "vysazovat stromy."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Quarry
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2543
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2495
 msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr "Získává surovou žulu ze skal ve svém okolí."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Quarry
 #. TRANSLATORS: Note helptext for an europeans production site: Quarry
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2545
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2554
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2563
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2497
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2506
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2515
 msgctxt "europeans_building"
 msgid "The quarry needs rocks to cut within the work area."
 msgstr "Lom potřebuje ve své pracovní oblasti skály, které lze těžit."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Quarry
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2552
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2504
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite out of rocks in the vicinity."
 msgstr "Láme žulové kvádry ze skal v okolí."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Quarry
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2561
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2513
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
 msgstr "Láme žulové a mramorové kvádry ze skal v okolí."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Clay Pit
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2570
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2522
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Clay is "
@@ -4825,13 +4765,13 @@ msgstr ""
 "Cihlářská hlína se používá k výrobě cihel."
 
 #. TRANSLATORS: Purpose helptext for production site: Fisher's Hut
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2577
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2529
 msgctxt "europeans_building"
 msgid "Fishes on the coast near the fisher’s hut."
 msgstr "Rybaří na pobřeží poblíž rybářské chaty."
 
 #. TRANSLATORS: Note helptext for production site: Fisher's Hut
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2579
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2531
 msgctxt "europeans_building"
 msgid "The fisher’s hut needs water full of fish within the work area."
 msgstr ""
@@ -4839,16 +4779,16 @@ msgstr ""
 "ryby."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Fisher's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2586
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2599
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2538
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2551
 msgctxt "europeans_building"
 msgid "Fishes on the coast near the fisher’s house."
 msgstr "Rybaří na pobřeží přilehlém k domku rybáře."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Fisher's House, part 1
 #. TRANSLATORS: Note helptext for an europeans production site: Fisher's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2589
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2601
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2541
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2553
 msgctxt "europeans_building"
 msgid "The fisher’s house needs water full of fish within the work area."
 msgstr ""
@@ -4856,7 +4796,7 @@ msgstr ""
 "ryby."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Fisher's House, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2591
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2543
 msgctxt "europeans_building"
 msgid ""
 "Build a fish breeder’s house close to the fisher’s house to make sure that "
@@ -4866,22 +4806,22 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Hunter's Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Hunter's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2608
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2617
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2626
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2560
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2569
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2578
 msgctxt "europeans_building"
 msgid "Hunts animals to produce meat."
 msgstr "Loví zvířata a tím získává maso."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Hunter's Hut
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2610
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2562
 msgctxt "europeans_building"
 msgid "The hunter’s hut needs animals to hunt within the work area."
 msgstr "Lovecká chata potřebuje ve svém okolí zvěř."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Hunter's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2619
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2628
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2571
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2580
 msgctxt "europeans_building"
 msgid "The hunter’s house needs animals to hunt within the work area."
 msgstr ""
@@ -4889,14 +4829,14 @@ msgstr ""
 "měl lovec co lovit."
 
 #. TRANSLATORS: Purpose helptext for europeans production site: Gamekeeper's Hut
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2635
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2587
 msgctxt "europeans_building"
 msgid "Releases animals into the wild to steady the meat production."
 msgstr ""
 "Vysazuje zvěř do divoké přírody, aby umožnil udržitelnou produkci masa."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Beekeeper's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2642
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2594
 msgctxt "europeans_building"
 msgid "Keeps bees and lets them swarm over flowering fields to produce honey."
 msgstr ""
@@ -4904,7 +4844,7 @@ msgstr ""
 "produkovaly med."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Beekeeper's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2644
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2596
 msgctxt "europeans_building"
 msgid ""
 "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) or "
@@ -4915,22 +4855,22 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Scout's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2651
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2658
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2665
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2603
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2610
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2617
 msgctxt "building"
 msgid "Explores unknown territory."
 msgstr "Prozkoumává neznámá území."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Reed Yard
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2674
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2626
 msgctxt "europeans_building"
 msgid ""
 "Cultivates reed that serves two different purposes for the Europeans tribe."
 msgstr "Pěstuje rákos, který má u evropského kmene dvě různé využití."
 
 #. TRANSLATORS: Note helptext for a barbarian production site: Reed Yard
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2676
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2628
 msgctxt "europeans_building"
 msgid ""
 "Reed is the traditional material for roofing, and it is woven into the "
@@ -4940,24 +4880,24 @@ msgstr ""
 "extrémně odolného lana, které je používáno pro lodní plachtoví."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Sawmill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2683
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2690
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2697
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2635
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2642
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2649
 msgctxt "europeans_building"
 msgid "Saws logs to produce planks."
 msgstr "Řeže klády na prkna."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an europeans production site: Charcoal Kiln
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2704
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2711
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2718
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2656
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2663
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2670
 msgctxt "europeans_building"
 msgid "Burns logs into charcoal."
 msgstr "Pálí dřevo z klád na dřevěné uhlí."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Lime Kiln
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2725
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2677
 msgctxt "europeans_building"
 msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
@@ -4967,7 +4907,7 @@ msgstr ""
 "zpevnění staveb."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Lime Kiln
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2727
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2679
 msgctxt "europeans_building"
 msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
@@ -4978,19 +4918,19 @@ msgstr ""
 "vojenské objekty."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Stonemason's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2734
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2686
 msgctxt "europeans_building"
 msgid "Carves marble columns out of marble."
 msgstr "Tesá mramorové sloupy z mramoru."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Weaving Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2741
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2693
 msgctxt "europeans_building"
 msgid "Weaves spider cloth out of spider silk."
 msgstr "Spřádá pavoučí látku z pavoučího hedvábí."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2748
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2700
 msgctxt "europeans_building"
 msgid ""
 "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and "
@@ -4998,20 +4938,20 @@ msgid ""
 msgstr "Spřádá pavoučí látku pro budovy, lodní plachty a tabardy pro vojáky."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2755
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2707
 msgctxt "europeans_building"
 msgid "Weaves tabard and armor out of wool and silk."
 msgstr "Spřádá tabardy a zbroje z vlny a pavoučího vlákna."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2762
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2714
 msgctxt "europeans_building"
 msgid "Grinds corn to produce cornmeal."
 msgstr "Mele kukuřici na kukuřičnou mouku."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2769
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2776
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2721
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2728
 msgctxt "europeans_building"
 msgid ""
 "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed flour."
@@ -5019,19 +4959,16 @@ msgstr ""
 "Mele kukuřici na kukuřičnou mouku. Mele pšenice a žito na míchanou mouku."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Tavern
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2783
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2790
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2797
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2735
 msgctxt "building"
 msgid "Prepares rations to feed the scouts and miners."
 msgstr ""
 "Připravují se zde malé svačiny, které slouží jako potrava průzkumníků a "
 "horníků."
 
-#. TRANSLATORS: Purpose helptext for a barbarian production site: Inn
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2804
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2811
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2818
+#. TRANSLATORS: Purpose helptext for a barbarian production site: Tavern
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2742
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2749
 msgctxt "building"
 msgid ""
 "Prepares rations and snacks to feed the miners in the basic and deep mines."
@@ -5040,71 +4977,70 @@ msgstr ""
 "dolech."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Big Inn
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2825
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2832
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2839
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2756
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2763
 msgctxt "europeans_building"
 msgid "Prepares rations, snacks and meals to feed all miners."
 msgstr "Připravuje malé svačiny, svačiny a jídlo pro všechny horníky."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Brewery
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2846
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2770
 msgctxt "europeans_building"
 msgid "Produces beer to keep the miners strong and happy."
 msgstr "Vaří pivo, aby byli horníci silní a spokojení."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Brewery
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2853
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2777
 msgctxt "europeans_building"
 msgid "Produces beer and mead to keep the miners strong and happy."
 msgstr "Vyrábí pivo a medovinu, aby byli horníci silní a spokojení."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Brewery
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2860
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2784
 msgctxt "europeans_building"
 msgid "Produces beer, mead and strong_beer for trainingssites."
 msgstr "Vyrábí pivo, medovinu a silné pivo pro výcvikové tábory."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Winery
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2867
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2791
 msgctxt "europeans_building"
 msgid "Produces mead and wine."
 msgstr "Vyrábí medovinu a víno."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Smelting Works
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2874
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2798
 msgctxt "europeans_building"
 msgid "Smelts ore into iron."
 msgstr "Taví rudu na železo."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2881
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2805
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold."
 msgstr "Taví rudu na železo a zlato."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2888
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2812
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold. Recycles scrap metal."
 msgstr "Taví rudu na železo a zlato. Recykluje kovový šrot."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2895
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2902
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2909
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2916
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2819
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2826
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2833
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2840
 msgctxt "europeans_building"
 msgid "Forges all the tools that your workers need."
 msgstr "Ková všechny nástroje, které dělníci potřebují."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2923
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2930
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2937
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2944
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2951
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2958
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2847
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2854
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2861
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2868
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2875
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2882
 msgctxt "europeans_building"
 msgid ""
 "Forges all the tools that your workers need. Produces armor and weapons, too."
@@ -5112,46 +5048,46 @@ msgstr ""
 "Ková všechny nástroje, které dělníci potřebují. Vyrábí i zbroje a zbraně."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Recruitement Center
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2967
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2974
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2981
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2891
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2898
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2905
 msgctxt "europeans_building"
 msgid "Equips recruits and trains them as workers."
 msgstr "Vybavuje rekruty a cvičí je na dělníky."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2988
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2912
 msgctxt "europeans_building"
 msgid "Sows and harvests corn, rye and wheat."
 msgstr "Sází a sklízí kukuřici, žito a pšenici."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2995
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2919
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, corn, rye and wheat."
 msgstr "Sází a sklízí ječmen, kukuřici, žito a pšenici."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3002
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2926
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
 msgstr "Sází a sklízí ječmen, černý kořen, kukuřici, žito a pšenici."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3009
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2933
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
 msgstr ""
 "Sází a sklízí ječmen, černý kořen, kukuřici, ovoce, víno, žito a pšenici."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Spider Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3016
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2940
 msgctxt "europeans_building"
 msgid "Breeds spiders for silk."
 msgstr "Chová pavouky pro pavoučí hedvábí."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3023
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2947
 msgctxt "europeans_building"
 msgid "Keeps sheep for their wool."
 msgstr "Chová ovce pro jejich vlnu."
@@ -5162,12 +5098,12 @@ msgstr "Chová ovce pro jejich vlnu."
 #. TRANSLATORS: Purpose helptext for an europeans production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for an europeans production site: Coal Mine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3032
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3039
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3046
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3053
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3060
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3067
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2956
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2963
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2970
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2977
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2984
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2991
 msgctxt "europeans_building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr "Doluje uhlí v horském terénu."
@@ -5178,12 +5114,12 @@ msgstr "Doluje uhlí v horském terénu."
 #. TRANSLATORS: Purpose helptext for an europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an europeans production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for an europeans production site: Iron Mine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3074
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3081
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3088
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3095
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3102
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3109
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2998
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3005
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3012
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3019
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3026
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3033
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr "Doluje železnou rudu v horském terénu."
@@ -5194,18 +5130,18 @@ msgstr "Doluje železnou rudu v horském terénu."
 #. TRANSLATORS: Purpose helptext for an europeans production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for an europeans production site: Gold Mine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3116
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3123
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3130
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3137
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3144
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3151
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3040
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3047
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3054
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3061
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3068
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3075
 msgctxt "europeans_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
 msgstr "Doluje zlatou rudu v horském terénu."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Basic Training Camp, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3161
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3085
 msgctxt "europeans_building"
 msgid "Trains recruits in ‘Attack’ and ‘Health’."
 msgstr "Trénuje rekruty v útoku a zdraví."
@@ -5213,9 +5149,9 @@ msgstr "Trénuje rekruty v útoku a zdraví."
 #. TRANSLATORS: Purpose helptext for an europeans training site: Basic Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an europeans training site: Normal Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an europeans training site: Advanced Training Camp, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3163
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3185
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3207
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3087
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3109
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3131
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts and weapons."
 msgstr "Vybavuje rekruty všemi potřebnými částmi zbroje a zbraněmi."
@@ -5223,29 +5159,29 @@ msgstr "Vybavuje rekruty všemi potřebnými částmi zbroje a zbraněmi."
 #. TRANSLATORS: Purpose helptext for an europeans training site: Guardhall, part 1
 #. TRANSLATORS: Purpose helptext for an europeans training site: Dungeon, part 1
 #. TRANSLATORS: Purpose helptext for an europeans training site: Advanced Training Camp, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3172
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3194
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3205
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3096
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3118
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3129
 msgctxt "europeans_building"
 msgid "Trains recruits to soldiers."
 msgstr "Cvičí rekruty na vojáky."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Guardhall, part 2
 #. TRANSLATORS: Purpose helptext for an europeans training site: Dungeon, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3174
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3196
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3098
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3120
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts."
 msgstr "Vybavuje rekruty všemi potřebnými částmi zbroje."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Normal Training Camp, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3183
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3107
 msgctxt "europeans_building"
 msgid "Trains recruits  to soldiers."
 msgstr "Cvičí rekruty na vojáky."
 
 #. TRANSLATORS: Note helptext for a barbarian training site: Battle Arena
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3215
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3139
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’."
 msgstr "Cvičí vojáky v úhybu, zdraví a útoku."
@@ -5254,10 +5190,10 @@ msgstr "Cvičí vojáky v úhybu, zdraví a útoku."
 #. TRANSLATORS: Purpose helptext for an europeans training site: Labyrinth, part 1
 #. TRANSLATORS: Purpose helptext for an europeans training site: Arena, part 1
 #. TRANSLATORS: Purpose helptext for an europeans training site: Colosseum, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3223
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3234
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3245
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3256
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3147
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3158
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3169
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3180
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."
 msgstr "Cvičí vojáky v úhybu, zdraví a útoku a v obraně."
@@ -5266,10 +5202,10 @@ msgstr "Cvičí vojáky v úhybu, zdraví a útoku a v obraně."
 #. TRANSLATORS: Purpose helptext for an europeans training site: Labyrinth, part 2
 #. TRANSLATORS: Purpose helptext for an europeans training site: Arena, part 2
 #. TRANSLATORS: Purpose helptext for an europeans training site: Colosseum, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3225
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3236
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3247
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3258
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3149
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3160
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3171
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3182
 msgctxt "europeans_building"
 msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
@@ -5287,19 +5223,19 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an europeans military site: Castle
 #. TRANSLATORS: Purpose helptext for an europeans military site: Fortress
 #. TRANSLATORS: Purpose helptext for an europeans military site: Castle
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3268
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3277
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3286
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3295
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3304
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3313
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3322
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3331
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3340
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3349
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3358
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3367
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3376
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3192
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3201
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3210
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3219
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3228
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3237
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3246
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3255
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3264
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3273
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3282
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3291
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3300
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr "Obsazením budovy svou posádkou rozšiřuješ svá území."
@@ -5313,19 +5249,19 @@ msgstr "Obsazením budovy svou posádkou rozšiřuješ svá území."
 #. TRANSLATORS: Note helptext for an europeans military site: Castle
 #. TRANSLATORS: Note helptext for an europeans military site: Fortress
 #. TRANSLATORS: Note helptext for an europeans military site: Castle
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3270
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3279
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3288
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3297
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3306
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3315
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3324
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3333
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3342
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3351
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3360
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3369
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3378
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3194
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3203
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3212
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3221
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3230
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3239
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3248
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3257
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3266
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3275
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3284
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3293
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3302
 msgctxt "europeans_building"
 msgid ""
 "If you’re low on soldiers to occupy new military sites, use the downward "
@@ -5337,25 +5273,25 @@ msgstr ""
 "vojáka a poslat ho tak z budovy pryč."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Ferry Yard
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3387
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3396
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3405
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3311
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3320
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3329
 msgctxt "europeans_building"
 msgid "Builds ferries."
 msgstr "Staví přívozy."
 
 #. TRANSLATORS: Note helptext for an europeans production site: Ferry Yard
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3389
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3398
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3407
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3313
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3322
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3331
 msgctxt "europeans_building"
 msgid "Needs water nearby."
 msgstr "Potřebuje ve svém okolí vodní plochu."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Shipyard
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3414
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3421
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3428
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3338
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3345
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3352
 msgctxt "europeans_building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
@@ -5365,25 +5301,25 @@ msgstr ""
 "přístavy."
 
 #. TRANSLATORS: Lore helptext for an europeans building: Construction Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3437
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3361
 msgctxt "europeans_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr "„Nenadávej stavaři, který nemá všechen stavební materiál.“"
 
 #. TRANSLATORS: Lore author helptext for an europeans building: Construction Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3439
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3363
 msgctxt "europeans_building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr "Často užívané přísloví používané pro nesplnitelné úkoly všeho druhu"
 
 #. TRANSLATORS: Purpose helptext for an europeans building: Construction Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3441
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3365
 msgctxt "europeans_building"
 msgid "A new building is being built at this construction site."
 msgstr "Na tomto místě začala stavba nové budovy."
 
 #. TRANSLATORS: Lore helptext for an europeans building: Dismantle Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3448
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3372
 msgctxt "europeans_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
@@ -5391,13 +5327,13 @@ msgstr ""
 "\""
 
 #. TRANSLATORS: Lore author helptext for an europeans building: Dismantle Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3450
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3374
 msgctxt "europeans_building"
 msgid "Proverb"
 msgstr "Přísloví"
 
 #. TRANSLATORS: Purpose helptext for an europeans building: Dismantle Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3452
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3376
 msgctxt "europeans_building"
 msgid ""
 "A building is being dismantled at this dismantle site, returning some of the "
@@ -5904,3 +5840,31 @@ msgstr "Tkadlec"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Vrchní tkadlec"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Basic Inn"
+#~ msgstr "Jednoduchý hostinec"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Tavern Level 3"
+#~ msgstr "Hospoda úrovně 3"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Tavern Level 4"
+#~ msgstr "Hospoda úrovně 4"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Tavern Level 5"
+#~ msgstr "Hospoda úrovně 5"
+
+#~ msgctxt "europeans_ware"
+#~ msgid "Outdated ware, only for backward compatibility for old savegames."
+#~ msgstr ""
+#~ "Zastaralá surovina, pouze pro zpětnou kompatibilitu se starými uloženými "
+#~ "pozicemi."
+
+#~ msgctxt "europeans_ware"
+#~ msgid "Outdated ware, only for backward compatibility for old savegames"
+#~ msgstr ""
+#~ "Zastaralá surovina, pouze pro zpětnou kompatibilitu se starými uloženými "
+#~ "pozicemi"
