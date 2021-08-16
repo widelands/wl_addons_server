@@ -42,7 +42,8 @@ public class MuninStatistics {
 	private final long[] commandCounters;
 	private final long initTime;
 	private long currentUnregisteredUsers, failedLogins, successfulLogins, successfulCommands;
-	private final List<Long> currentRegisteredUsers, allRegisteredUsers;
+	private final List<Long> currentRegisteredUsers;
+	private final Set<Long> allRegisteredUsers;
 
 	private MuninStatistics() {
 		initTime = System.currentTimeMillis();
@@ -54,7 +55,7 @@ public class MuninStatistics {
 		successfulLogins = 0;
 		successfulCommands = 0;
 		currentRegisteredUsers = new ArrayList<>();
-		allRegisteredUsers = new ArrayList<>();
+		allRegisteredUsers = new HashSet<>();
 	}
 
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
@@ -89,7 +90,7 @@ public class MuninStatistics {
 			currentUnregisteredUsers++;
 		} else {
 			currentRegisteredUsers.add(user);
-			if (!allRegisteredUsers.contains(user)) allRegisteredUsers.add(user);
+			allRegisteredUsers.add(user);
 		}
 	}
 	public synchronized void registerLogout(Long user) {

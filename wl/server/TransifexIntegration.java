@@ -20,6 +20,7 @@
 package wl.server;
 
 import java.io.*;
+import java.nio.file.*;
 import java.sql.ResultSet;
 import java.util.*;
 import org.json.simple.parser.*;
@@ -49,7 +50,7 @@ public class TransifexIntegration {
 		Buildcats.buildCatalogues();
 
 		ServerUtils.log("Updating PO and MO files...");
-		Utils.bashOutput("rm", "-r", "i18n");
+		ServerUtils.doDelete(new File("i18n"));
 		for (File poDir : Utils.listSorted(new File("po"))) {
 			for (File poFile : Utils.listSorted(poDir)) {
 				if (poFile.getName().endsWith(".po")) {
@@ -60,13 +61,12 @@ public class TransifexIntegration {
 					Utils.bashOutput("msgmerge", poFile.getAbsolutePath(),
 					                 new File(poDir, poDir.getName() + ".pot").getAbsolutePath(),
 					                 "-o", poFile.getAbsolutePath());
-					Utils.bashOutput("mkdir", "-p", "i18n/" + poDir.getName());
-					Utils.bashOutput("mkdir", "-p", "i18n/" + lang + "/LC_MESSAGES");
+					new File("i18n", poDir.getName()).mkdirs();
+					new File("i18n/" + lang, "LC_MESSAGES").mkdirs();
 					Utils.bashOutput("msgfmt", poFile.getAbsolutePath(), "-o", outFile);
 					// We permanently need to store MO files in two different
 					// locations for backwards compatibility.
-					Utils.bashOutput(
-					    "cp", outFile, "i18n/" + lang + "/LC_MESSAGES/" + poDir.getName() + ".mo");
+					Files.copy(new File(outFile).toPath(), new File("i18n/" + lang + "/LC_MESSAGES", poDir.getName() + ".mo").toPath());
 				}
 			}
 		}
