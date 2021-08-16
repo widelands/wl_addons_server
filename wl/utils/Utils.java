@@ -62,10 +62,7 @@ public abstract class Utils {
 	}
 
 	public static String bashOutput(String... args) throws Exception {
-		ProcessBuilder pb = new ProcessBuilder(args);
-		pb.redirectErrorStream​(true);
-		Process p = pb.start();
-
+		Process p = new ProcessBuilder(args).start();
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 		String str, result = null;
 		while ((str = b.readLine()) != null) {
