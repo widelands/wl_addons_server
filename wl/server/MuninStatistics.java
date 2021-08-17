@@ -44,6 +44,7 @@ public class MuninStatistics {
 	private long currentUnregisteredUsers, failedLogins, successfulLogins, successfulCommands;
 	private final List<Long> currentRegisteredUsers;
 	private final Set<Long> allRegisteredUsers;
+	private final Map<Thread, Long> cmdInfoToSkip;
 
 	private MuninStatistics() {
 		initTime = System.currentTimeMillis();
@@ -56,6 +57,7 @@ public class MuninStatistics {
 		successfulCommands = 0;
 		currentRegisteredUsers = new ArrayList<>();
 		allRegisteredUsers = new HashSet<>();
+		cmdInfoToSkip = new HashMap<>();
 	}
 
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
@@ -82,7 +84,25 @@ public class MuninStatistics {
 		}
 	}
 
-	public synchronized void countCommand(Command cmd) { commandCounters[cmd.ordinal()]++; }
+	public synchronized void skipNextCmdInfo(long n) {
+		if (n > 0) cmdInfoToSkip.put(Thread.currentThread(), n);
+	}
+	public synchronized void countCommand(Command cmd) {
+		final Thread t = Thread.currentThread();
+		if (cmdInfoToSkip.containsKey(t)) {
+			long n = cmdInfoToSkip.get(t);
+			if (cmd == Command.CMD_INFO) {
+				if (n > 0) {
+					cmdInfoToSkip.put(t, n - 1);
+				} else {
+					cmdInfoToSkip.remove(t);
+				}
+				return;
+			}
+			cmdInfoToSkip.remove(t);
+		}
+		commandCounters[cmd.ordinal()]++;
+	}
 	public synchronized void registerSuccessfulCommand() { successfulCommands++; }
 	public synchronized void registerLogin(long user) {
 		successfulLogins++;

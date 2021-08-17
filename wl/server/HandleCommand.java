@@ -58,6 +58,7 @@ class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, 0);
 		File[] names = Utils.listSorted(new File("addons"));
 		String str = "" + names.length;
+		MuninStatistics.MUNIN.skipNextCmdInfo(names.length - 1);
 		for (File s : names) str += "\n" + s.getName();
 		out.println(str);
 		out.println("ENDOFSTREAM");

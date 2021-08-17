@@ -56,7 +56,7 @@ class SyncThread implements Runnable {
 				    "bash", "-c",
 				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
 				        Utils.config("databasepassword") + " -h" + Utils.config("databasehost") +
-				        " -P" + Utils.config("databaseport") + " " +
+				        " -P" + Utils.config("databaseport") + " --column-statistics=0 " +
 				        Utils.config("addonsdatabase") + " > _addons_database_backup_" +
 				        Calendar.getInstance().get(Calendar.DAY_OF_WEEK) + "_" + phase + ".sql"});
 

@@ -77,6 +77,8 @@ package wl.server;
  *   - ENDOFSTREAM\n
  *   The connection is then closed by the server.
  *   Counters refer to the total amount since the server was last started.
+ *   After a CMD_LIST command, the next N CMD_INFO commands are counted only
+ *   once total (where N is the number of add-ons listed by the CMD_LIST).
  */
 public enum Command {
 	/**
