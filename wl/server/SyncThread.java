@@ -55,18 +55,25 @@ class SyncThread implements Runnable {
 				Runtime.getRuntime().exec(new String[] {
 				    "bash", "-c",
 				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
-				        Utils.config("databasepassword") + " " + Utils.config("addonsdatabase") +
-				        " > _addons_database_backup.sql"});
+				        Utils.config("databasepassword") + " -h" + Utils.config("databasehost") +
+				        " -P" + Utils.config("databaseport") + " " +
+				        Utils.config("addonsdatabase") + " > _addons_database_backup_" +
+				        Calendar.getInstance().get(Calendar.DAY_OF_WEEK) + "_" + phase + ".sql"});
 
 				if (phase == 0) {
+					if (Boolean.parseBoolean(Utils.config("deploy"))) {
+						TransifexIntegration.TX.checkIssues();
+						TransifexIntegration.TX.fullSync();
+					}
+
 					synchronized (ServerUtils.SYNCER) {
 						ServerUtils.log("Cleaning up inactive threads...");
 						ServerUtils.SYNCER.check();
 						ServerUtils.rebuildMetadata();
 
 						if (errored)
-							throw new Exception("You still have not resolved the merge conflicts. "
-							                    + "Please do so soon!");
+							throw new Exception(
+							    "You still have not resolved the merge conflicts. Please do so soon!");
 
 						ServerUtils.log("Performing GitHub sync...");
 						Utils._staticprofiles.clear();

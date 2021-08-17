@@ -56,7 +56,7 @@ class HandleCommand {
 	public void handleCmdList() throws Exception {
 		// Args: –
 		ServerUtils.checkNrArgs(cmd, 0);
-		File[] names = ServerUtils.listSorted(new File("addons"));
+		File[] names = Utils.listSorted(new File("addons"));
 		String str = "" + names.length;
 		for (File s : names) str += "\n" + s.getName();
 		out.println(str);
@@ -156,8 +156,7 @@ class HandleCommand {
 			if (!msg.isEmpty()) msg += "\n";
 			msg += ServerUtils.readLine(in);
 		}
-		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-			throw new ServerUtils.WLProtocolException("Stream continues past its end");
+		ServerUtils.checkEndOfStream(in);
 		final String finalMsg = msg;
 		ServerUtils.semaphoreRW(
 		    cmd[1], () -> { Utils.comment(cmd[1], username, cmd[2], finalMsg); });
@@ -195,11 +194,34 @@ class HandleCommand {
 			msg += ServerUtils.readLine(in);
 		}
 
-		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-			throw new ServerUtils.WLProtocolException("Stream continues past its end");
+		ServerUtils.checkEndOfStream(in);
 		final String finalMsg = msg;
 		ServerUtils.semaphoreRW(
 		    cmd[1], () -> { Utils.editComment(cmd[1], cmd[2], username, finalMsg); });
+		out.println("ENDOFSTREAM");
+	}
+
+	public void handleCmdSetupTx() throws Exception {
+		// Args: name
+		if (username.isEmpty() || !admin)
+			throw new ServerUtils.WLProtocolException("Only admins may do this");
+		ServerUtils.checkNrArgs(cmd, 1);
+		ServerUtils.checkNameValid(cmd[1], false);
+		ServerUtils.checkAddOnExists(cmd[1]);
+
+		synchronized (TransifexIntegration.TX) {
+			File potFile = new File("po/" + cmd[1] + "/" + cmd[1] + ".pot");
+			if (!potFile.isFile()) {
+				TransifexIntegration.TX.buildCatalogues();
+				if (!potFile.isFile())
+					throw new ServerUtils.WLProtocolException("Unable to create POT for " + cmd[1]);
+			}
+			String resource = "widelands-addons." + cmd[1].replaceAll("[._]", "-");
+			Utils.bash("tx", "config", "mapping", "--execute", "-r", resource, "--source-lang",
+			           "en", "--type", "PO", "--source-file", potFile.getAbsolutePath(),
+			           "--expression", "po/" + cmd[1] + "/<lang>.po");
+			TransifexIntegration.TX.push();
+		}
 		out.println("ENDOFSTREAM");
 	}
 
@@ -217,10 +239,9 @@ class HandleCommand {
 			msg += "\n";
 			msg += ServerUtils.readLine(in);
 		}
-		if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-			throw new ServerUtils.WLProtocolException("Stream continues past its end");
-		ServerUtils.sendEnquiry(username, msg);
+		ServerUtils.checkEndOfStream(in);
 
+		ServerUtils.sendEnquiry(username, msg);
 		out.println("ENDOFSTREAM");
 	}
 
@@ -270,8 +291,7 @@ class HandleCommand {
 				if (!checksum.equals(cmd[3]))
 					throw new ServerUtils.WLProtocolException("Checksum mismatch: expected " +
 					                                          cmd[3] + ", found " + checksum);
-				if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-					throw new ServerUtils.WLProtocolException("Stream continues past its end");
+				ServerUtils.checkEndOfStream(in);
 				File result = new File("screenshots", cmd[1]);
 				result.mkdirs();
 				result = new File(result, filename);
@@ -369,8 +389,7 @@ class HandleCommand {
 					}
 				}
 
-				if (!ServerUtils.readLine(in).equals("ENDOFSTREAM"))
-					throw new ServerUtils.WLProtocolException("Stream continues past its end");
+				ServerUtils.checkEndOfStream(in);
 
 				File addOnDir = new File("addons", cmd[1]);
 				File addOnMain = new File(addOnDir, "addon");
@@ -444,15 +463,14 @@ class HandleCommand {
 				    "\n\nPlease review this add-on soonish.");
 				if (isUpdate) {
 					ServerUtils.doDelete(addOnDir);
-					synchronized (ServerUtils.SYNCER) {
-						TreeMap<String, Utils.Value> edit = new TreeMap<>();
-						edit.put(
-						    "version", new Utils.Value("version", newProfile.get("version").value));
-						edit.put("security", new Utils.Value("security", "unchecked"));
-						Utils.editMetadata(false, cmd[1], edit);
 
-						Utils._staticprofiles.remove(addOnMain);
-					}
+					TreeMap<String, Utils.Value> edit = new TreeMap<>();
+					edit.put(
+					    "version", new Utils.Value("version", newProfile.get("version").value));
+					edit.put("security", new Utils.Value("security", "unchecked"));
+					Utils.editMetadata(false, cmd[1], edit);
+
+					Utils._staticprofiles.remove(addOnMain);
 				}
 				tempDir.renameTo​(addOnDir);
 

@@ -86,7 +86,9 @@ abstract class ServerUtils {
 
 		for (Databases db : Databases.values()) {
 			_databases[db.ordinal()] = DriverManager.getConnection​(
-			    Utils.config("databaseserver") + Utils.config(db.configKey), connectionProps);
+			    "jdbc:mysql://" + Utils.config("databasehost") + ":" +
+			        Utils.config("databaseport") + "/" + Utils.config(db.configKey),
+			    connectionProps);
 		}
 	}
 
@@ -124,6 +126,11 @@ abstract class ServerUtils {
 		}
 	}
 
+	public static void checkEndOfStream(InputStream in) throws Exception {
+		if (!readLine(in).equals("ENDOFSTREAM"))
+			throw new WLProtocolException("Stream continues past its end");
+	}
+
 	public static class DirInfo {
 		public final File file;
 		public final ArrayList<File> regularFiles;
@@ -136,7 +143,7 @@ abstract class ServerUtils {
 			regularFiles = new ArrayList<>();
 			subdirs = new ArrayList<>();
 
-			for (File f : listSorted(dir)) {
+			for (File f : Utils.listSorted(dir)) {
 				if (f.isDirectory())
 					subdirs.add(new DirInfo(f));
 				else
@@ -173,15 +180,13 @@ abstract class ServerUtils {
 			                              (cmd.length - 1));
 	}
 
-	public static File[] listSorted(File dir) {
-		File[] files = dir.listFiles();
-		Arrays.sort(files);
-		return files;
-	}
-
 	public static void checkNameValid(String name, boolean directory) {
 		if (name == null || (!directory && name.isEmpty()))
 			throw new WLProtocolException("Empty name");
+		if (name.length() > 80)
+			throw new WLProtocolException("Name '" + name + "' is too long (" + name.length() +
+			                              " chars; limit is 80)");
+
 		for (char c : name.toCharArray()) {
 			if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '1' && c <= '9') ||
 			    c == '0' || c == '.' || c == '_' || c == '-')
@@ -190,6 +195,7 @@ abstract class ServerUtils {
 			throw new WLProtocolException("Name '" + name + "' may not contain the character '" +
 			                              c + "'");
 		}
+
 		if (name.startsWith("/"))
 			throw new WLProtocolException("Name '" + name + "' may not start with '/'");
 		if (name.contains(".."))
@@ -234,7 +240,7 @@ abstract class ServerUtils {
 	// to the database, and make the GitHub repo merely a mirror of the official server.
 	public static void rebuildMetadata() throws Exception {
 		log("Rebuilding metadata...");
-		for (File f : ServerUtils.listSorted(new File("addons")))
+		for (File f : Utils.listSorted(new File("addons")))
 			ServerUtils.updateMetadataVotes(f.getName());
 	}
 
@@ -279,6 +285,29 @@ abstract class ServerUtils {
 		                                     + "- User: " + username + "\n"
 		                                     + "- Filename: `" + filename + "`\n"
 		                                     + "- Message length: " + msg.length() + " characters");
+	}
+
+	public static void passwordAuthentification(InputStream in,
+	                                            PrintStream out,
+	                                            String correctPassword) throws Exception {
+		long r;
+		synchronized (RANDOM) { r = RANDOM.nextLong(); }
+		out.println(r);
+		out.println("ENDOFSTREAM");
+
+		Process p = Runtime.getRuntime().exec(new String[] {"md5sum"});
+		PrintWriter md5 = new PrintWriter(p.getOutputStream());
+		md5.println(correctPassword);
+		md5.println(r);
+		md5.close();
+		final String expected =
+		    new BufferedReader(new InputStreamReader(p.getInputStream())).readLine().split(" ")[0];
+
+		final String password = readLine(in);
+		checkEndOfStream(in);
+		if (!password.equals(expected)) {
+			throw new WLProtocolException("Wrong username or password");
+		}
 	}
 
 	public static void

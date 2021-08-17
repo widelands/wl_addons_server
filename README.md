@@ -14,10 +14,13 @@ Before running the server or adding add-ons to this repository be sure a java de
 
 Before starting the server, ensure that a MySQL server is running somewhere with the following settings:
 - There is a database (called the *website database*) with the following tables in it:
-    - `auth_user` (`SELECT`): Contains at least an `int` column `id` and a `varchar` column `username`.
+    - `auth_user` (`SELECT`): Contains at least an `int` column `id`, a `varchar` column `username`, and a `varchar` column `email`.
     - `wlggz_ggzauth` (`SELECT`): Contains at least an `int` column `user_id`, a `varchar` column `password`, and an `int` column `permissions` (in which `7` means normal user and `127` means admin).
-- There is a (not necessarily separate) database (called the *add-ons database*) with the following table in it:
+    - `notification_noticetype` (`SELECT`): Contains at least an `int` column `id` and a `varchar` column `label`.
+    - `notification_noticesetting` (`SELECT`): Contains at least an `int` column `user_id`, an `int` column `notice_type_id`, an `int` column `medium` (where `1` means e-mail), and a `tinyint` column `send` (where `0` means disabled and `1` enabled).
+- There is a (not necessarily separate) database (called the *add-ons database*) with the following tables in it:
     - `uservotes` (`SELECT`, `INSERT`, `DELETE`): Contains an `int` column `user_id`, a `varchar` column `addon`, and an `int` column `vote`.
+    - `txissues` (`SELECT`, `INSERT`): Contains a `varchar` column `id`.
 - There needs to be a user with the access permissions specified above in parentheses after the table names.
 
 Further, ensure that an ini-style config file called `config` exists in the working directory which contains the following keys:
@@ -27,7 +30,10 @@ Key                | Description                                                
 `port`             | Port number for the server                                         | `7388`
 `githubusername`   | User name for GitHub                                               | `bunnybot`
 `githubtoken`      | Personal Access Token for GitHub                                   | `123456abcdef`
-`databaseserver`   | Connection line for the MySQL server                               | `jdbc:mysql://localhost:3306/`
+`transifextoken`   | Bearer token for Transifex                                         | `1/abcdef123456`
+`muninpassword`    | Arbitrary password for munin integration scripts                   | `123456`
+`databasehost`     | IP address of the MySQL server                                     | `127.0.0.1`
+`databaseport`     | Port number of the MySQL server                                    | `3306`
 `websitedatabase`  | Name of the website database                                       | `wl_addons_server_website`
 `addonsdatabase`   | Name of the add-ons database                                       | `wl_addons_server_addons`
 `databaseuser`     | Database user name                                                 | `someuser`
@@ -46,6 +52,10 @@ Whenever an error that requires a maintainer’s attention occurs on the add-ons
 ### Adding / updating an add-on
 
 __This section explains how to add an add-on *manually* to this repository. It is strongly recommended to use the in-game add-ons manager instead, which will take care of everything automatically.__
+
+#### Deprecation notice
+
+__The possibility to add and maintain add-ons manually will be removed sometime in the future in favour of using only the in-game add-ons manager.__
 
 #### Add-On
 
@@ -91,9 +101,8 @@ Verification of **new** add-ons should be done **only** by a developer who is al
 To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `./update_lists.sh '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
 
 If the add-on was not up for translation on Transifex yet, you need to follow these steps afterwards to ensure that it can be translated:
-- Run `./setup_tx.sh cool_feature.wad` (where `cool_feature.wad` is the name of the add-on), then git add,commit,push.
-- Go to the repository’s Actions tab, select the ‘Update Translations’ action, and trigger a workflow run on the master branch.
-- Wait until the workflow completed (should take only a few minutes).
+- If the add-on was added to the repository manually, wait until the next server-GitHub sync (or trigger one manually on the server).
+- Send a `CMD_SETUP_TX addon_name.wad` command to the server *(not yet available via the Widelands user interface; use a CLI client instead)*.
 - Head over to https://www.transifex.com/widelands/widelands-addons/content/ and wait until the new resource(s) is/are available.
 - Edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!
 - Finally, set the Priority of all new resources. Add-ons officially provided by the Widelands Development Team get highest priority. Add-ons which have not been verified yet should not appear on Transifex in the first place, but if they do, they get the lowest priority. All other add-ons get medium priority. Also add appropriate category tags to the resources: Every resource gets the add-on’s category as a tag. The few official add-ons also get the "Official" tag and perhaps other tags as appropriate (e.g. "Tournament" for add-ons used in an official tournament).
@@ -103,7 +112,7 @@ If the add-on was not up for translation on Transifex yet, you need to follow th
 Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/   
 Do not modify any of the files in `po/` manually – your changes will be discarded during the automated translation updates.
 
-A GitHub action periodically syncs the translations with Transifex and compiles them by running `buildcats.sh`. **Do not** run this script manually! If you have to do it anyway for some reason, do this **only** on the master branch.
+The server periodically syncs the translations with Transifex and compiles them for download.
 
 #### Notes
 
@@ -114,3 +123,4 @@ If you want to submit a new add-on or update an existing one without using the i
 This repository and its contents are published under the same license as Widelands: [The GNU General Public License (GPL) v2.](https://github.com/widelands/widelands/blob/master/COPYING)
 
 The file `mysql-connector-java-8.0.23.jar` is third-party code which we use with great gratitude to the authors. It contains its own LICENSE file.
+The file `json-simple-1.1.1.jar` is third-party code which we use with great gratitude to the authors. It is licensed under the [Apache License 2.0](https://code.google.com/archive/p/json-simple/).

@@ -45,6 +45,38 @@ package wl.server;
  *
  * All arguments to commands are whitespace-terminated strings.
  * The return value is a \n-terminated string.
+ *
+ * The following "protocol version" string has a very special meaning:
+ * - munin
+ *   The 'munin' protocol is used to print statistics about the server.
+ *   In the initial contact, language and username are skipped; instead the munin protocol
+ *   version is printed (currently only version 1 is supported, which is the one described here).
+ *   The password authentication is then performed like for registered users.
+ *   If the password is correct, the server replies not ADMIN/SUCCESS but instead
+ *   prints out server statistics in the following format:
+ *   - Time in milliseconds since the server was started, \n
+ *   - Number of current registered users, \n
+ *   - Number of current unregistered users, \n
+ *   - Counter of unique registered users, \n
+ *   - Counter of successful connection attempts, \n
+ *   - Counter of unsuccessful connection attempts, \n
+ *   - Counter of CMD_LIST              requests, \n
+ *   - Counter of CMD_INFO              requests, \n
+ *   - Counter of CMD_DOWNLOAD          requests, \n
+ *   - Counter of CMD_I18N              requests, \n
+ *   - Counter of CMD_SCREENSHOT        requests, \n
+ *   - Counter of CMD_VOTE              requests, \n
+ *   - Counter of CMD_GET_VOTE          requests, \n
+ *   - Counter of CMD_COMMENT           requests, \n
+ *   - Counter of CMD_EDIT_COMMENT      requests, \n
+ *   - Counter of CMD_SUBMIT            requests, \n
+ *   - Counter of CMD_SUBMIT_SCREENSHOT requests, \n
+ *   - Counter of CMD_CONTACT           requests, \n
+ *   - Counter of CMD_SETUP_TX          requests, \n
+ *   - Counter of unsuccessful commands, \n
+ *   - ENDOFSTREAM\n
+ *   The connection is then closed by the server.
+ *   Counters refer to the total amount since the server was last started.
  */
 public enum Command {
 	/**
@@ -231,4 +263,12 @@ public enum Command {
 	 * Returns: ENDOFSTREAM\n or an error message\n
 	 */
 	CMD_CONTACT,
+
+	/**
+	 * CMD_SETUP_TX name
+	 * Set up transifex integration for an add-on. Only admins may do this.
+	 * Arg 1: Add-on name
+	 * Returns: ENDOFSTREAM\n or an error message\n
+	 */
+	CMD_SETUP_TX,
 }
