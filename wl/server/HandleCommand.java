@@ -412,7 +412,7 @@ class HandleCommand {
 					stream.write(b);
 				}
 				stream.close();
-				String checksum = UpdateList.checksum(file);
+				String checksum = Utils.checksum(file);
 				if (!checksum.equals(cmd[3]))
 					throw new ServerUtils.WLProtocolException("Checksum mismatch: expected " +
 					                                          cmd[3] + ", found " + checksum);
@@ -506,7 +506,7 @@ class HandleCommand {
 							stream.write(b);
 						}
 						stream.close();
-						String c = UpdateList.checksum(file);
+						String c = Utils.checksum(file);
 						if (!checksum.equals(c))
 							throw new ServerUtils.WLProtocolException(
 							    "Checksum mismatch for " + dirnames[i].getPath() + "/" + filename +

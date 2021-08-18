@@ -33,6 +33,20 @@ public abstract class Utils {
 		return files;
 	}
 
+	public static String checksum(File f) {
+		try {
+			Runtime rt = Runtime.getRuntime();
+			Process pr = rt.exec(new String[] {"md5sum", f.getPath()});
+			BufferedReader reader = new BufferedReader(new InputStreamReader(pr.getInputStream()));
+			pr.waitFor();
+			String md5 = reader.readLine();
+			return md5.split(" ")[0];
+		} catch (Exception e) {
+			System.err.println("checksumming error: " + e);
+		}
+		return "";
+	}
+
 	synchronized public static File createTempDir() {
 		File d;
 		do {

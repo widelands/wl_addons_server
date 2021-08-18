@@ -220,7 +220,7 @@ abstract class ServerUtils {
 	}
 
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
-		out.println(UpdateList.checksum(f));
+		out.println(Utils.checksum(f));
 		long l = f.length();
 		out.println(l);
 		FileInputStream read = new FileInputStream(f);

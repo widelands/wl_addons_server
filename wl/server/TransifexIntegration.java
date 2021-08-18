@@ -84,7 +84,7 @@ public class TransifexIntegration {
 			split = changed.split("/");           // "i18n", "fishy.wad", "nds.mo"
 			changedMO.add("+" + split[1]);        // "+fishy.wad"
 		}
-		UpdateList.main(changedMO.toArray(new String[0]));
+		UpdateList.rebuildLists(changedMO.toArray(new String[0]));
 		Utils._staticprofiles.clear();
 		Utils.bashOutput("./skip_timestamp_only_po_changes.sh");
 	}

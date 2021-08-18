@@ -229,20 +229,6 @@ public class UpdateList {
 		return result;
 	}
 
-	public static String checksum(File f) {
-		try {
-			Runtime rt = Runtime.getRuntime();
-			Process pr = rt.exec(new String[] {"md5sum", f.getPath()});
-			BufferedReader reader = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-			pr.waitFor();
-			String md5 = reader.readLine();
-			return md5.split(" ")[0];
-		} catch (Exception e) {
-			System.err.println("checksumming error: " + e);
-		}
-		return "";
-	}
-
 	private static void recurse(List<String> dirs,
 	                            List<String> files,
 	                            List<String> checksums,
@@ -254,7 +240,7 @@ public class UpdateList {
 			if (f.isFile()) {
 				files.add(prefix + f.getName());
 				size.add(f.length());
-				checksums.add(checksum(f));
+				checksums.add(Utils.checksum(f));
 			} else if (f.listFiles().length > 0) {
 				dirs.add(prefix + f.getName());
 				recurse(dirs, files, checksums, size, f, prefix + f.getName() + "/");
@@ -266,7 +252,7 @@ public class UpdateList {
 		for (File f : Utils.listSorted(new File(addon, "../../i18n/" + addon.getName()))) {
 			if (f.getName().endsWith(".mo")) {
 				locales.add(f.getName());
-				checksums.add(checksum(f));
+				checksums.add(Utils.checksum(f));
 			}
 		}
 	}
@@ -335,7 +321,8 @@ public class UpdateList {
 	}
 
 	private static final int kHighestListVersion = 3;
-	public static void main(String... args) throws Exception {
+	// NOCOM change the args parsing
+	public static void rebuildLists(String... args) throws Exception {
 		List<String> increase_i18n = new ArrayList<>();
 		List<String> verify = new ArrayList<>();
 		for (String s : args) {

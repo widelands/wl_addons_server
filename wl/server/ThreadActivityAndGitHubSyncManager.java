@@ -55,7 +55,7 @@ class ThreadActivityAndGitHubSyncManager {
 				}
 			}
 		}
-		UpdateList.main();
+		UpdateList.rebuildLists();
 		Utils.bash("bash", "-c", "git add .");
 		Utils.bash("bash", "-c", "git commit -m 'Automated server sync'");
 		Utils.bash("bash", "-c",
