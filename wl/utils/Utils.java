@@ -36,12 +36,12 @@ public abstract class Utils {
 			checksum = checksum(f);
 		}
 
-		@Override public boolean equals(Object o) {
-			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) && ((ChecksummedFile)o).checksum.equals(checksum);
+		@Override
+		public boolean equals(Object o) {
+			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) &&
+			    ((ChecksummedFile)o).checksum.equals(checksum);
 		}
-		public boolean valid() {
-			return checksum(file).equals(checksum);
-		}
+		public boolean valid() { return checksum(file).equals(checksum); }
 	}
 
 	public static void log(String msg) {
@@ -263,7 +263,8 @@ public abstract class Utils {
 		}
 	}
 
-	private static final TreeMap<ChecksummedFile, TreeMap<String, Value>> _staticprofiles = new TreeMap<>();
+	private static final TreeMap<ChecksummedFile, TreeMap<String, Value>> _staticprofiles =
+	    new TreeMap<>();
 
 	synchronized public static TreeMap<String, Value> readProfile(File f, String textdomain)
 	    throws Exception {
