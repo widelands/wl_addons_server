@@ -101,6 +101,17 @@ abstract class ServerUtils {
 		synchronized (c) { c.createStatement().execute(cmd); }
 	}
 
+	public static String getUsername(long id) throws Exception {
+		ResultSet r = sqlQuery(Databases.kWebsite, "select username from auth_user where id=" + id);
+		if (!r.next()) return null;
+		return r.getString("username");
+	}
+	public static Long getUserID(String name) throws Exception {
+		ResultSet r = sqlQuery(Databases.kWebsite, "select id from auth_user where username='" + name + "'");
+		if (!r.next()) return null;
+		return r.getLong("id");
+	}
+
 	public static class WLProtocolException extends RuntimeException {
 		public WLProtocolException(String msg) { super("WL Protocol Exception: " + msg); }
 		@Override
@@ -203,9 +214,7 @@ abstract class ServerUtils {
 	}
 
 	public static void checkAddOnExists(String name) {
-		if (!(new File("addons", name).isDirectory() &&
-		      new File("metadata", name + ".maintain").isFile() &&
-		      new File("metadata", name + ".server").isFile())) {
+		if (!(new File("addons/" + name, "addon").isFile())) {
 			throw new WLProtocolException("Add-on '" + name + "' does not exist");
 		}
 	}
@@ -236,34 +245,13 @@ abstract class ServerUtils {
 		f.delete();
 	}
 
-	// TODO: In the long run, get rid of the metadata files completely, move everything
-	// to the database, and make the GitHub repo merely a mirror of the official server.
-	public static void rebuildMetadata() throws Exception {
-		log("Rebuilding metadata...");
-		for (File f : Utils.listSorted(new File("addons")))
-			ServerUtils.updateMetadataVotes(f.getName());
-	}
-
-	public static void updateMetadataVotes(String addon) throws Exception {
-		TreeMap<String, Utils.Value> edit = new TreeMap<>();
-		for (int v = 1; v <= 10; v++) {
-			long count = 0;
-			ResultSet sql =
-			    sqlQuery(Databases.kAddOns, "select user_id from uservotes where vote=" + v +
-			                                    " and addon='" + addon + "'");
-			while (sql.next()) count++;
-			edit.put("votes_" + v, new Utils.Value("votes_" + v, Long.toString(count)));
-		}
-		Utils.editMetadata(true, addon, edit);
-	}
-
 	public static void registerVote(String addon, long user, int v) throws Exception {
 		sqlCmd(Databases.kAddOns,
 		       "delete from uservotes where user_id=" + user + " and addon='" + addon + "'");
-		if (v > 0)
+		if (v > 0) {
 			sqlCmd(Databases.kAddOns, "insert into uservotes (user_id, addon, vote) value (" +
 			                              user + ", '" + addon + "', " + v + ")");
-		updateMetadataVotes(addon);
+		}
 	}
 
 	private static Object _enquiry_syncer = new Object();
@@ -310,83 +298,42 @@ abstract class ServerUtils {
 		}
 	}
 
-	public static void
-	info(final int version, final String addon, final String locale, PrintStream out)
-	    throws Exception {
-		switch (version) {
-			case 4: {
-				TreeMap<String, Utils.Value> profile =
-				    Utils.readProfile(new File("addons/" + addon, "addon"), addon);
-				TreeMap<String, Utils.Value> metadataServer =
-				    Utils.readProfile(new File("metadata", addon + ".server"), addon);
-				TreeMap<String, Utils.Value> metadataMaintain =
-				    Utils.readProfile(new File("metadata", addon + ".maintain"), addon);
-				TreeMap<String, Utils.Value> screenies =
-				    Utils.readProfile(new File("screenshots/" + addon, "descriptions"), addon);
+	// Two helper functions for matchesWidelandsVersion()
+	private static int[] string_to_version(String str) {
+		String[] parts = str.split(".");
+		int[] result = new int[parts.length];
+		for (int i = 0; i < result.length; i++) result[i] = Integer.valueOf(parts[i]);
+		return result;
+	}
+	private static boolean less(int[] a, int[] b) {
+		int l = Math.min(a.length, b.length);
+		for (int i = 0; i < l; i++) if (a[i] != b[i]) return a[i] < b[i];
+		return a.length < b.length;
+	}
 
-				out.println(profile.get("name").value);
-				out.println(profile.get("name").value(locale));
-				out.println(profile.get("description").value);
-				out.println(profile.get("description").value(locale));
-				out.println(profile.get("author").value);
-				out.println(profile.get("author").value(locale));
-				out.println(metadataMaintain.get("uploader").value(locale));
-				out.println(profile.get("version").value);
-				out.println(metadataMaintain.get("i18n_version").value);
-				out.println(profile.get("category").value);
-				out.println(profile.get("requires").value);
-				out.println((profile.containsKey("min_wl_version") ?
-                                 profile.get("min_wl_version").value :
-                                 ""));
-				out.println((profile.containsKey("max_wl_version") ?
-                                 profile.get("max_wl_version").value :
-                                 ""));
-				out.println(
-				    (profile.containsKey("sync_safe") ? profile.get("sync_safe").value : ""));
-
-				out.println(screenies.size());
-				for (String key : screenies.keySet())
-					out.println(key + "\n" + screenies.get(key).value(locale));
-
-				out.println(Utils.filesize(new File("addons", addon)));
-				out.println(metadataMaintain.get("timestamp").value);
-				out.println(metadataServer.get("downloads").value);
-				for (int i = 1; i <= 10; ++i) out.println(metadataServer.get("votes_" + i).value);
-
-				int c = Integer.valueOf(metadataServer.get("comments").value);
-				out.println(c);
-				for (int i = 0; i < c; ++i) {
-					out.println(metadataServer.get("comment_name_" + i).value);
-					out.println(metadataServer.get("comment_timestamp_" + i).value);
-
-					Utils.Value v = metadataServer.get("comment_editor_" + i);
-					out.println(v == null ? "" : v.value);
-					v = metadataServer.get("comment_edit_timestamp_" + i);
-					out.println(v == null ? "0" : v.value);
-
-					out.println(metadataServer.get("comment_version_" + i).value);
-					int l = Integer.valueOf(metadataServer.get("comment_" + i).value);
-					out.println(l);
-					for (int j = 0; j <= l; ++j)
-						out.println(metadataServer.get("comment_" + i + "_" + j).value(locale));
-				}
-				out.println(
-				    metadataMaintain.get("version").value.equals(profile.get("version").value) ?
-                        metadataMaintain.get("security").value :
-                        "unchecked");
-
-				File iconFile = new File("addons/" + addon, "icon.png");
-				if (iconFile.isFile()) {
-					ServerUtils.writeOneFile(iconFile, out);
-				} else {
-					out.println("0\n0");
-				}
-
-				out.println("ENDOFSTREAM");
-				return;
-			}
-			default:
-				throw new WLProtocolException("Wrong version " + version);
+	public static boolean matchesWidelandsVersion(String wl_version, String min_wl_version, String max_wl_version) {
+		// For the comparison logic, see AddOnInfo::matches_widelands_version
+		if (min_wl_version == null && max_wl_version == null) {
+			return true;
 		}
+		final int tilde = wl_version.indexOf​('~');
+		if (tilde < 0) {
+			int[] wl = string_to_version(wl_version);
+			if (min_wl_version != null && less(wl, string_to_version(min_wl_version))) {
+				return false;
+			}
+			if (max_wl_version != null && less(string_to_version(max_wl_version), wl)) {
+				return false;
+			}
+		} else {
+			int[] next_wl = string_to_version(wl_version.substring(0, tilde));
+			if (min_wl_version != null && !less(string_to_version(min_wl_version), next_wl)) {
+				return false;
+			}
+			if (max_wl_version != null && less(string_to_version(max_wl_version), next_wl)) {
+				return false;
+			}
+		}
+		return true;
 	}
 }

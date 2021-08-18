@@ -31,8 +31,6 @@ public class Server {
 
 		ServerUtils.initDatabases();
 
-		ServerUtils.rebuildMetadata();
-
 		ServerUtils.log("Server starting...");
 		ServerSocket serverSocket = new ServerSocket(Integer.valueOf(Utils.config("port")));
 		new Thread(new SyncThread(), "Syncer").start();
@@ -47,7 +45,8 @@ public class Server {
 	public static void handle(String[] cmd,
 	                          PrintStream out,
 	                          InputStream in,
-	                          int version,
+	                          int protocolVersion,
+	                          String widelandsVersion,
 	                          String username,
 	                          long userDatabaseID,
 	                          boolean admin,
@@ -55,7 +54,7 @@ public class Server {
 		Command command = Command.valueOf(cmd[0]);
 		MuninStatistics.MUNIN.countCommand(command);
 		HandleCommand h =
-		    new HandleCommand(cmd, out, in, version, username, userDatabaseID, admin, locale);
+		    new HandleCommand(cmd, out, in, protocolVersion, widelandsVersion, username, userDatabaseID, admin, locale);
 
 		switch (command) {
 			case CMD_LIST:

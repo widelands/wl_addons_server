@@ -51,15 +51,6 @@ import wl.utils.*;
 // clang-format on
 
 public class MetadataToDatabase {
-	private static long UID(String name) throws Exception {
-		ResultSet sql =
-		    ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite,
-		                         "select id from auth_user where username='" + name + "'");
-		if (sql.next()) return sql.getLong​("id");
-		ServerUtils.log("WARNING: User '" + name + "' is not registered, assigning ID -1");
-		return -1;
-	}
-
 	public static void main(String[] args) throws Exception {
 		ServerUtils.initDatabases();
 
@@ -84,8 +75,8 @@ public class MetadataToDatabase {
 			sql.next();
 			final long addonID = sql.getLong​("id");
 
-			final long uid = UID(mdM.get("uploader").value);
-			if (uid >= 0) {
+			final Long uid = ServerUtils.getUserID(mdM.get("uploader").value);
+			if (uid != null) {
 				ServerUtils.sqlCmd(
 				    ServerUtils.Databases.kAddOns,
 				    "insert into uploaders (addon,user) value(" + addonID + "," + uid + ")");
@@ -109,7 +100,7 @@ public class MetadataToDatabase {
 				if (vEditTS != null) command += "edit_timestamp,";
 				command += "version,message) value(";
 				command += addonID + ",";
-				command += UID(mdS.get("comment_name_" + i).value) + ",";
+				command += ServerUtils.getUserID(mdS.get("comment_name_" + i).value) + ",";
 				command += mdS.get("comment_timestamp_" + i).value + ",";
 				if (vEditor != null) command += vEditor.value + ",";
 				if (vEditTS != null) command += vEditTS.value + ",";

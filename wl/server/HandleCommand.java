@@ -29,7 +29,8 @@ class HandleCommand {
 	private final String[] cmd;
 	private final PrintStream out;
 	private final InputStream in;
-	private final int version;
+	private final int protocolVersion;
+	private final String widelandsVersion;
 	private final String username;
 	private final long userDatabaseID;
 	private final boolean admin;
@@ -38,7 +39,8 @@ class HandleCommand {
 	public HandleCommand(String[] cmd,
 	                     PrintStream out,
 	                     InputStream in,
-	                     int version,
+	                     int protocolVersion,
+	                     String widelandsVersion,
 	                     String username,
 	                     long userDatabaseID,
 	                     boolean admin,
@@ -46,7 +48,8 @@ class HandleCommand {
 		this.cmd = cmd;
 		this.out = out;
 		this.in = in;
-		this.version = version;
+		this.protocolVersion = protocolVersion;
+		this.widelandsVersion = widelandsVersion;
 		this.username = username;
 		this.userDatabaseID = userDatabaseID;
 		this.admin = admin;
@@ -54,23 +57,144 @@ class HandleCommand {
 	}
 
 	public void handleCmdList() throws Exception {
-		// Args: –
-		ServerUtils.checkNrArgs(cmd, 0);
-		File[] names = Utils.listSorted(new File("addons"));
-		String str = "" + names.length;
-		MuninStatistics.MUNIN.skipNextCmdInfo(names.length - 1);
-		for (File s : names) str += "\n" + s.getName();
-		out.println(str);
+		// Args: [5+: all]
+		ServerUtils.checkNrArgs(cmd, protocolVersion < 5 ? 0 : 1);
+		final boolean versionCheck = widelandsVersion != null && !Boolean.parseBoolean(cmd[1]);
+		ArrayList<String> compatibleAddOns = new ArrayList<>();
+		for (File addon : Utils.listSorted(new File("addons"))) {
+			if (versionCheck) {
+				TreeMap<String, Utils.Value> profile = Utils.readProfile(new File(addon, "addon"), addon.getName());
+				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
+						profile.containsKey("min_wl_version") ? profile.get("min_wl_version").value : null,
+						profile.containsKey("max_wl_version") ? profile.get("max_wl_version").value : null)) {
+					continue;
+				}
+			}
+			compatibleAddOns.add(addon.getName());
+		}
+
+		MuninStatistics.MUNIN.skipNextCmdInfo(compatibleAddOns.size() - 1);
+		out.println(compatibleAddOns.size());
+		for (String name : compatibleAddOns) out.println(name);
 		out.println("ENDOFSTREAM");
 	}
 
+	private static class AddOnComment {
+		public final long userID, timestamp;
+		public final Long editorID, editTimestamp;
+		public final String version, message;
+		public AddOnComment(long userID, long timestamp, Long editorID, Long editTimestamp, String version, String message) {
+			this.userID = userID;
+			this.timestamp = timestamp;
+			this.editorID = editorID;
+			this.editTimestamp = editTimestamp;
+			this.version = version;
+			this.message = message;
+		}
+
+	}
 	public void handleCmdInfo() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
-		ServerUtils.semaphoreRO(cmd[1], () -> { ServerUtils.info(version, cmd[1], locale, out); });
+		ServerUtils.semaphoreRO(cmd[1], () -> {
+			ResultSet sqlMain = ServerUtils.sqlQuery(
+			    ServerUtils.Databases.kAddOns, "select * from addons where name='" + cmd[1] + "'");
+			if (!sqlMain.next()) throw new ServerUtils.WLProtocolException("Add-on '" + cmd[1] + "' is not in the database");
+
+			TreeMap<String, Utils.Value> profile =
+			    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]);
+			TreeMap<String, Utils.Value> screenies =
+			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1]);
+
+			out.println(profile.get("name").value);
+			out.println(profile.get("name").value(locale));
+			out.println(profile.get("description").value);
+			out.println(profile.get("description").value(locale));
+			out.println(profile.get("author").value);
+			out.println(profile.get("author").value(locale));
+
+			ResultSet sql = ServerUtils.sqlQuery(
+			    ServerUtils.Databases.kAddOns, "select user from uploaders where addon=" + sqlMain.getLong("id"));
+			String uploaders = "";
+			while (sql.next()) {
+				if (!uploaders.isEmpty()) uploaders += ",";
+				uploaders += ServerUtils.getUsername(sql.getLong("user"));
+				if (protocolVersion < 5) break;  // Version 4 assumes there is only one uploader
+			}
+			out.println(uploaders);
+
+			out.println(profile.get("version").value);
+			out.println(sqlMain.getLong("i18n_version"));
+			out.println(profile.get("category").value);
+			out.println(profile.get("requires").value);
+			out.println((profile.containsKey("min_wl_version") ?
+                             profile.get("min_wl_version").value :
+                             ""));
+			out.println((profile.containsKey("max_wl_version") ?
+                             profile.get("max_wl_version").value :
+                             ""));
+			out.println(
+			    (profile.containsKey("sync_safe") ? profile.get("sync_safe").value : ""));
+
+			out.println(screenies.size());
+			for (String key : screenies.keySet())
+				out.println(key + "\n" + screenies.get(key).value(locale));
+
+			out.println(Utils.filesize(new File("addons", cmd[1])));
+			out.println(sqlMain.getLong("timestamp"));
+			out.println(sqlMain.getLong("downloads"));
+
+			sql = ServerUtils.sqlQuery(
+			    ServerUtils.Databases.kAddOns, "select vote from uservotes where addon=" + sqlMain.getLong("id"));
+			long[] votes = new long[10];
+			for (int i = 0; i < votes.length; i++) votes[i] = 0;
+			while (sql.next()) votes[sql.getInt("vote") - 1]++;
+			for (long v : votes) out.println(v);
+
+			sql = ServerUtils.sqlQuery(
+			    ServerUtils.Databases.kAddOns, "select * from usercomments where addon=" + sqlMain.getLong("id"));
+			ArrayList<AddOnComment> comments = new ArrayList<>();
+			while (sql.next()) {
+				Long editorID = sql.getLong("editor");
+				if (sql.wasNull()) editorID = null;
+				Long editTS = sql.getLong("edit_timestamp");
+				if (sql.wasNull()) editTS = null;
+				comments.add(new AddOnComment(
+					sql.getLong("user"),
+					sql.getLong("timestamp"),
+					editorID,
+					editTS,
+					sql.getString("version"), 
+					sql.getString("message")));
+			}
+			out.println(comments.size());
+			for (AddOnComment c : comments) {
+				out.println(ServerUtils.getUsername(c.userID));
+				out.println(c.timestamp);
+				out.println(c.editorID == null ? "" : ServerUtils.getUsername(c.editorID));
+				out.println(c.editTimestamp == null ? 0 : c.editTimestamp);
+				out.println(c.version);
+
+				String[] msg = c.message.split("\n");
+				out.println(msg.length - 1);
+				for (String m : msg) out.println(m);
+			}
+
+			out.println(sqlMain.getString("security"));
+			if (protocolVersion >= 5) out.println(sqlMain.getLong("quality"));
+
+			File iconFile = new File("addons/" + cmd[1], "icon.png");
+			if (iconFile.isFile()) {
+				ServerUtils.writeOneFile(iconFile, out);
+			} else {
+				out.println("0\n0");
+			}
+
+			out.println("ENDOFSTREAM");
+		});
 	}
 
 	public void handleCmdDownload() throws Exception {

@@ -21,12 +21,10 @@ package wl.server;
 
 /**
  * After the first contact, the client must send the following info:
- *  - Protocol version
- *  - \n
- *  - Language name (e.g. "nds")
- *  - \n
- *  - Username (or "" for no user)
- *  - \n
+ *  - Protocol version, \n
+ *  - Language name (e.g. "nds"), \n
+ *  - [Protocol version >= 5]: Widelands version (e.g. "1.1~git25425[1317dd9@master]"), \n
+ *  - Username (or "" for no user), \n
  *  - ENDOFSTREAM\n
  * If the username is "", the server then replies ENDOFSTREAM\n.
  * Otherwise:
@@ -38,8 +36,8 @@ package wl.server;
  *     - ADMIN\n for accepted superuser
  *     - an error message for incorrect username or password
  *
- * The only currently supported protocol version is 4. All documentation here refers to version 4.
- * Note that compatibility for *all* versions *ever introduced* needs to be maintained
+ * The currently supported protocol versions are 4 to 5. All documentation here refers to these
+ * versions. Note that compatibility for *all* versions *ever introduced* needs to be maintained
  * *indefinitely*. The first supported version is 4; the version numbers 1-3 are used by the legacy
  * "GitHub Repo List" format.
  *
@@ -82,8 +80,11 @@ package wl.server;
  */
 public enum Command {
 	/**
-	 * CMD_LIST
+	 * CMD_LIST [5+: all]
 	 * List all available add-on names.
+	 * In version 4, no arguments are accepted.
+	 * In version 5, a boolean argument is required to indicate whether to list
+	 * all add-ons or only add-ons compatible with the Widelands version.
 	 * Returns:
 	 * - Number N of add-ons
 	 * - \n
@@ -103,7 +104,8 @@ public enum Command {
 	 *  - localized description, \n
 	 *  - unlocalized author, \n
 	 *  - localized author, \n
-	 *  - uploader name, \n
+	 *  - [Protocol version <= 4]: name of the main uploader, \n
+	 *  - [Protocol version >= 5]: comma-separated list of uploaders, \n
 	 *  - add-on version string, \n
 	 *  - i18n version string, \n
 	 *  - category string, \n
@@ -129,6 +131,7 @@ public enum Command {
 	 *      - number of \n characters in the message, \n
 	 *      - message, \n
 	 *  - "verified" or "unchecked", \n
+	 *  - [Protocol version >= 5]: Code quality rating (1-3) \n
 	 *  - icon checksum (0 for no icon), \n
 	 *  - icon filesize (0 for no icon), \n
 	 *  - icon file as a byte stream

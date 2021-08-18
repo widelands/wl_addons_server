@@ -53,29 +53,27 @@ class ClientThread implements Runnable {
 			}
 
 			final int protocolVersion = Integer.valueOf(protocolVersionString);
-			if (protocolVersion != 4) {
+			if (protocolVersion < 4 || protocolVersion > 5) {
 				throw new ServerUtils.WLProtocolException("Unsupported version '" +
 				                                          protocolVersion +
-				                                          "' (only supported version is '4')");
+				                                          "' (supported versions are 4-5)");
 			}
 			final String locale = ServerUtils.readLine(in);
 			ServerUtils.log("Locale: " + locale);
 			final String username = ServerUtils.readLine(in);
 			ServerUtils.log("Username: " + username);
+			final String widelandsVersion = (protocolVersion < 5) ? null : ServerUtils.readLine(in);
+			if (widelandsVersion != null) ServerUtils.log("Widelands: " + widelandsVersion);
 			ServerUtils.checkEndOfStream(in);
 			boolean admin = false;
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
-				ResultSet sql = ServerUtils.sqlQuery(
-				    ServerUtils.Databases.kWebsite,
-				    "select id from auth_user where username='" + username + "'");
-				if (!sql.next())
-					throw new ServerUtils.WLProtocolException("User " + username +
-					                                          " is not registered");
-				userDatabaseID = sql.getLong​("id");
+				Long uid = ServerUtils.getUserID(username);
+				if (uid == null) throw new ServerUtils.WLProtocolException("User " + username + " is not registered");
+				userDatabaseID = uid;
 
-				sql = ServerUtils.sqlQuery(
+				ResultSet sql = ServerUtils.sqlQuery(
 				    ServerUtils.Databases.kWebsite,
 				    "select permissions,password from wlggz_ggzauth where user_id=" +
 				        userDatabaseID);
@@ -101,7 +99,7 @@ class ClientThread implements Runnable {
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
 				ServerUtils.SYNCER.tick(socket);
 				ServerUtils.log("Received command: " + cmd);
-				Server.handle(cmd.split(" "), out, in, protocolVersion, username, userDatabaseID,
+				Server.handle(cmd.split(" "), out, in, protocolVersion, widelandsVersion, username, userDatabaseID,
 				              admin, locale);
 			}
 		} catch (Exception e) {

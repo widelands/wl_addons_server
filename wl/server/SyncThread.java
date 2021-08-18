@@ -69,7 +69,6 @@ class SyncThread implements Runnable {
 					synchronized (ServerUtils.SYNCER) {
 						ServerUtils.log("Cleaning up inactive threads...");
 						ServerUtils.SYNCER.check();
-						ServerUtils.rebuildMetadata();
 
 						if (errored)
 							throw new Exception(
