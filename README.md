@@ -6,24 +6,26 @@ If you want to contribute a new add-on, [information how to create add-ons can b
 
 New add-ons, or upgrades for existing ones, as well as new or updated screenshots, can be uploaded to the server from the in-game add-ons manager (Widelands 1.1 or newer). Alternatively it is possible to submit them by creating a pull request here. If you do not wish to do this, it is also possible to submit add-ons and screenshots on the forum: https://www.widelands.org/forum/topic/5073
 
-### Prerequisites
+## Prerequisites
 
 Before running the server or adding add-ons to this repository be sure a java development kit (JDK) is installed to compile the Java programs.
 
-### The server
+## The Server
 
-Before starting the server, ensure that a MySQL server is running somewhere with the following settings:
-- There is a database (called the *website database*) with the following tables in it:
-    - `auth_user` (`SELECT`): Contains at least an `int` column `id`, a `varchar` column `username`, and a `varchar` column `email`.
-    - `wlggz_ggzauth` (`SELECT`): Contains at least an `int` column `user_id`, a `varchar` column `password`, and an `int` column `permissions` (in which `7` means normal user and `127` means admin).
-    - `notification_noticetype` (`SELECT`): Contains at least an `int` column `id` and a `varchar` column `label`.
-    - `notification_noticesetting` (`SELECT`): Contains at least an `int` column `user_id`, an `int` column `notice_type_id`, an `int` column `medium` (where `1` means e-mail), and a `tinyint` column `send` (where `0` means disabled and `1` enabled).
-- There is a (not necessarily separate) database (called the *add-ons database*) with the following tables in it:
-    - `uservotes` (`SELECT`, `INSERT`, `DELETE`): Contains an `int` column `user_id`, a `varchar` column `addon`, and an `int` column `vote`.
-    - `txissues` (`SELECT`, `INSERT`): Contains a `varchar` column `id`.
-- There needs to be a user with the access permissions specified above in parentheses after the table names.
+Before starting the server, ensure that a MySQL server is running somewhere, and that an ini-style config file called `config` exists in the working directory. The setup is detailed below.
 
-Further, ensure that an ini-style config file called `config` exists in the working directory which contains the following keys:
+### Usage
+
+Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on the specified port of your machine. In order to connect to this server from the game, run Widelands with the commandline parameters `--addon_server_ip=127.0.0.1 --addon_server_port=7388` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server and `7388` with the port number from the config file).
+Note that the server runs as a daemon; that is, it is independent from your process and all output is redirected to a file called `server.log` which will be overwritten on every run. To terminate the server daemon, retrieve the PID of the process from the second line of the logfile and then type `kill <PID>`.
+
+The server protocol is documented in `wl/server/Command.java`.
+
+Widelands version 1.0 and older does not connect to the server. It instead downloads and parses the `list*` files in this repository and then downloads each file belonging to an add-on separately. Every change to an add-on must therefore be reflected in the `list*` files so that the full add-on selection is available also to Widelands 1.0 users.   
+For this reason, the server automatically syncs its repo checkout with the GitHub repo every night. Normally, all required steps are done fully automatically. Occasionally, a merge conflict may arise which may prove too difficult for the server to handle on its own.   
+Whenever an error that requires a maintainer’s attention occurs on the add-ons server, a notification will automatically be posted to https://github.com/widelands/wl_addons_server/issues/31. See there for instructions how to handle.
+
+### The `config` File
 
 Key                | Description                                                        | Example
 ------------------ | ------------------------------------------------------------------ | ------------------------------------------------------
@@ -40,51 +42,48 @@ Key                | Description                                                
 `databasepassword` | Password of the database user                                      | `123456`
 `deploy`           | Whether this server is the real thing, not just a test environment | `true` or `false`
 
-Starting the add-ons webserver is as simple as typing `./server.sh`. This will launch the webserver on the specified port of your machine. In order to connect to this server from the game, run Widelands with the commandline parameters `--addon_server_ip=127.0.0.1 --addon_server_port=7388` (where you replace `127.0.0.1` with the IP of the machine on which you’re running the server and `7388` with the port number from the config file).
-Note that the server runs as a daemon; that is, it is independent from your process and all output is redirected to a file called `server.log` which will be overwritten on every run. To terminate the server daemon, retrieve the PID of the process from the second line of the logfile and then type `kill <PID>`.
+### The Database
 
-The server protocol is documented in `wl/server/Command.java`.
+The MySQL server needs to have two databases called the *website database* and the *add-ons database*. You can also use just one database which meets the specifications of both, but it is recommended to keep them separate. There needs to be a MySQL user with `SELECT` access to the website database and (`SELECT`, `INSERT`, `DELETE`) access to the add-ons database.
 
-Widelands version 1.0 and older does not connect to the server. It instead downloads and parses the `list*` files in this repository and then downloads each file belonging to an add-on separately. Every change to an add-on must therefore be reflected in the `list*` files so that the full add-on selection is available also to Widelands 1.0 users.   
-For this reason, the server automatically syncs its repo checkout with the GitHub repo every night. Normally, all required steps are done fully automatically. Occasionally, a merge conflict may arise which may prove too difficult for the server to handle on its own.   
-Whenever an error that requires a maintainer’s attention occurs on the add-ons server, a notification will automatically be posted to https://github.com/widelands/wl_addons_server/issues/31. See there for instructions how to handle.
+#### The Website Database
 
-### Adding / updating an add-on
+Table                        | Column Names                                              | Column Types                                       | Comment
+---------------------------- | ----------------------------------------------------------| -------------------------------------------------- | -------
+`auth_user`                  | `id`      <br> `username`       <br> `email`              | `int` <br> `varchar` <br> `varchar`                | 
+`wlggz_ggzauth`              | `user_id` <br> `password`       <br> `permissions`        | `int` <br> `varchar` <br> `int`                    | -<br>-<br> `7` means normal user and `127` means admin
+`notification_noticetype`    | `id`      <br> `label`                                    | `int` <br> `varchar`                               | 
+`notification_noticesetting` | `user_id` <br> `notice_type_id` <br> `medium` <br> `send` | `int` <br> `int`     <br> `int`     <br> `tinyint` | -<br>-<br> `1` means e-mail <br> `0` means disabled and `1` enabled
 
-__This section explains how to add an add-on *manually* to this repository. It is strongly recommended to use the in-game add-ons manager instead, which will take care of everything automatically.__
+#### The Add-Ons Database
 
-#### Deprecation notice
+Table          | Column Names                                              | Column Types                                       | Comment
+-------------- | ----------------------------------------------------------| -------------------------------------------------- | -------
+`txissues`     | `id`                                                      | `varchar`                                          |
+`addons`       | `id` <br> `name` <br> `timestamp` <br> `i18n_version` <br> `security` <br> `quality` <br> `downloads` | `int` <br> `varchar` <br> `bigint` <br> `int` <br> `varchar` <br> `int` <br> `int` | Unique add-on ID<br>-<br>-<br>-<br>-<br>-<br>-
+`uploaders`    | `addon` <br> `user`                                       | `int` <br> `int`                                   | An add-on can have multiple uploaders.<br>Each uploader goes on a separate row.
+`uservotes`    | `addon` <br> `user` <br> `vote`                           | `int` <br> `int` <br> `int`                        |
+`usercomments` | `id` <br> `addon` <br> `user` <br> `timestamp` <br> `editor` <br> `edit_timestamp` <br> `version` <br> `message` | `int` <br> `int` <br> `int` <br> `bigint` <br> `int` <br> `bigint` <br> `varchar` <br> `varchar` | Unique comment ID<br>-<br>-<br>-<br> May be `NULL` <br> May be `NULL` <br>-<br>-
 
-__The possibility to add and maintain add-ons manually will be removed sometime in the future in favour of using only the in-game add-ons manager.__
+## Developers’ Corner
 
-#### Add-On
+### Verify a New or Updated Add-On
 
-Just copy the folder from the widelands directory to the `addons/` folder in your branch.
+To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces. Then, in the Widelands add-on manager, select the add-on in the Browse tab, go to the Comments & Votes window, and use the admin interface to mark the add-on as verified.
 
-#### Screenshots
+If the add-on was not up for translation on Transifex yet, you need to follow these steps afterwards to ensure that it can be translated:
+- Head over to https://www.transifex.com/widelands/widelands-addons/content/ and wait until the new resource(s) is/are available.
+- Edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!
+- Finally, set the Priority of all new resources. Add-ons officially provided by the Widelands Development Team get highest priority. Add-ons which have not been verified yet should not appear on Transifex in the first place, but if they do, they get the lowest priority. All other add-ons get medium priority. Also add appropriate category tags to the resources: Every resource gets the add-on’s category as a tag. The few official add-ons also get the "Official" tag and perhaps other tags as appropriate (e.g. "Tournament" for add-ons used in an official tournament).
 
-If you want to provide some screenshots for your addon, add the screenshots to the subfolder `screenshots/name_of_addon.wad` and create a file called `descriptions`. Refer to the examples to get used to this file.
+### Translations
 
-#### Apply changes
+Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/   
+Do not modify any of the files in `po/` manually – your changes will be discarded during the automated translation updates.
 
-After adding the addon and probably some screenshots, run `./update_lists.sh` inside the base folder, then git add,commit,push. Then create a pull request here.
+The server periodically syncs the translations with Transifex and compiles them for download.
 
-If you added a new add-on, the `UpdateList` program will prompt you to enter your uploader name.
-
-#### Updating an add-on
-
-Just replace the folder below `addons` with the new one.
-Same applies to screenshots: Just replace or add new ones. Be sure to update the `descriptions` file.
-
-After **any** change to an add-on’s contents (even very small ones), you need to increase the add-on’s version number.
-
-After you have done run `./update_lists.sh`, then git add,commit,push.
-
-#### Verifying add-ons
-
-Verifying add-ons is done by a member of the widelands development team. Updating an add-on will automatically set it to Not Verified. It is not allowed to mark an add-on as verified during the update.
-
-#### Issues
+### Issues
 
 If you encounter any issues related to a specific add-on, please **do not report them against the official game**! Report them on this repository instead.
 
@@ -92,33 +91,7 @@ Keep in mind that currently some of the add-ons here are meant as proof-of-conce
 
 Issues related to the add-on system in general, or not related to add-ons at all, should be reported [against the official game](https://github.com/widelands/widelands/issues).
 
-### Developers’ corner
-
-#### Verify a new or updated add-on
-
-Verification of **new** add-ons should be done **only** by a developer who is also a Transifex administrator!
-
-To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces and set the `sync_safe` key in the add-on’s `addon` file to the appropriate value. Then run `./update_lists.sh '/cool_feature.wad'` (don’t forget the '/' before the add-on’s name!), then git add,commit,push.
-
-If the add-on was not up for translation on Transifex yet, you need to follow these steps afterwards to ensure that it can be translated:
-- If the add-on was added to the repository manually, wait until the next server-GitHub sync (or trigger one manually on the server).
-- Send a `CMD_SETUP_TX addon_name.wad` command to the server *(not yet available via the Widelands user interface; use a CLI client instead)*.
-- Head over to https://www.transifex.com/widelands/widelands-addons/content/ and wait until the new resource(s) is/are available.
-- Edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!
-- Finally, set the Priority of all new resources. Add-ons officially provided by the Widelands Development Team get highest priority. Add-ons which have not been verified yet should not appear on Transifex in the first place, but if they do, they get the lowest priority. All other add-ons get medium priority. Also add appropriate category tags to the resources: Every resource gets the add-on’s category as a tag. The few official add-ons also get the "Official" tag and perhaps other tags as appropriate (e.g. "Tournament" for add-ons used in an official tournament).
-
-#### Translations
-
-Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/   
-Do not modify any of the files in `po/` manually – your changes will be discarded during the automated translation updates.
-
-The server periodically syncs the translations with Transifex and compiles them for download.
-
-#### Notes
-
-If you want to submit a new add-on or update an existing one without using the in-game add-ons manager, open a pull request with this change and make sure you followed the steps described above. In particular, be sure to re-run `./update_lists.sh` after *every* change (even small ones!).
-
-### License
+## License
 
 This repository and its contents are published under the same license as Widelands: [The GNU General Public License (GPL) v2.](https://github.com/widelands/widelands/blob/master/COPYING)
 

@@ -90,12 +90,14 @@ public class TransifexIntegration {
 	}
 
 	private static class Issue {
-		public final String issueID, message, string, stringID, occurrence, addon;
+		public final String issueID, message, priority, datetime_modified, string, stringID, occurrence, addon;
 
 		private Issue(
-		    String issueID, String message, String string, String stringID, String occurrence) {
+		    String issueID, String message, String priority, String datetime_modified, String string, String stringID, String occurrence) {
 			this.issueID = issueID;
 			this.message = message;
+			this.priority = priority;
+			this.datetime_modified = datetime_modified;
 			this.string = string;
 			this.stringID = stringID;
 			this.occurrence = occurrence;
@@ -193,9 +195,14 @@ public class TransifexIntegration {
 				for (Issue i : list) {
 					write.print(
 					    "\n --------------------------------------------------------------------------------"
-					    + "\n  Issue ID      : " + i.issueID + "\n  Source String : " + i.string +
-					    "\n  String ID     : " + i.stringID +
-					    "\n  Occurrences   : " + i.occurrence + "\n  Issue message : " + i.message);
+					    + "\n  Issue ID      : " + i.issueID
+					    + "\n  Source String : " + i.string
+					    + "\n  String ID     : " + i.stringID
+					    + "\n  Occurrences   : " + i.occurrence
+					    + "\n  Last modified : " + i.datetime_modified
+					    + "\n  Priority      : " + i.priority
+					    + "\n  Issue message : " + i.message
+					);
 				}
 				write.print(
 				    "\n################################################################################");
@@ -249,6 +256,8 @@ public class TransifexIntegration {
 
 			result.add(new Issue(
 			    i.get("id").toString(), i.map("attributes").get("message").toString(),
+			    i.map("data").map("attributes").get("priority").toString(),
+			    i.map("data").map("attributes").get("datetime_modified").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("key").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("appearance_order").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("occurrences").toString()));
