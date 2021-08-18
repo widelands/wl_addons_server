@@ -89,10 +89,13 @@ public class TransifexIntegration {
 			increasedMO.add(changed);
 
 			ResultSet sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns, "select id,i18n_version from addons where name='" + changed + "'");
+			    ServerUtils.Databases.kAddOns,
+			    "select id,i18n_version from addons where name='" + changed + "'");
 			if (!sql.next()) throw new Exception("Add-on '" + changed + "' is not in the database");
-			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns, "update addons set i18n_version=" + (sql.getLong("i18n_version") + 1) +
-					" where id=" + sql.getLong("id"));
+			ServerUtils.sqlCmd(
+			    ServerUtils.Databases.kAddOns,
+			    "update addons set i18n_version=" + (sql.getLong("i18n_version") + 1) +
+			        " where id=" + sql.getLong("id"));
 		}
 		UpdateList.rebuildLists();
 		Utils._staticprofiles.clear();

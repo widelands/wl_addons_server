@@ -560,14 +560,17 @@ class HandleCommand {
 
 					isUpdate = true;
 				} else {
-					ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-						"insert into addons (name,timestamp,i18n_version,security,quality,downloads) value('"
-							+ cmd[1] + "'," + (System.currentTimeMillis() / 1000) + ",0,0,0,0)"
-					);
-					ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns, "select id from addons where name='" + cmd[1] + "'");
+					ServerUtils.sqlCmd(
+					    ServerUtils.Databases.kAddOns,
+					    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value('" +
+					        cmd[1] + "'," + (System.currentTimeMillis() / 1000) + ",0,0,0,0)");
+					ResultSet sql =
+					    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+					                         "select id from addons where name='" + cmd[1] + "'");
 					sql.next();
 					ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-						"insert into uploaders (addon,user) value(" + sql.getLong("id") + "," + userDatabaseID + ")");
+					                   "insert into uploaders (addon,user) value(" +
+					                       sql.getLong("id") + "," + userDatabaseID + ")");
 				}
 
 				Utils.sendNotificationToGitHubThread(
