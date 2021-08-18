@@ -53,8 +53,8 @@ public class Server {
 	                          String locale) throws Exception {
 		Command command = Command.valueOf(cmd[0]);
 		MuninStatistics.MUNIN.countCommand(command);
-		HandleCommand h =
-		    new HandleCommand(cmd, out, in, protocolVersion, widelandsVersion, username, userDatabaseID, admin, locale);
+		HandleCommand h = new HandleCommand(cmd, out, in, protocolVersion, widelandsVersion,
+		                                    username, userDatabaseID, admin, locale);
 
 		switch (command) {
 			case CMD_LIST:

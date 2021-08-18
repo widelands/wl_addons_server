@@ -63,10 +63,15 @@ class HandleCommand {
 		ArrayList<String> compatibleAddOns = new ArrayList<>();
 		for (File addon : Utils.listSorted(new File("addons"))) {
 			if (versionCheck) {
-				TreeMap<String, Utils.Value> profile = Utils.readProfile(new File(addon, "addon"), addon.getName());
+				TreeMap<String, Utils.Value> profile =
+				    Utils.readProfile(new File(addon, "addon"), addon.getName());
 				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
-						profile.containsKey("min_wl_version") ? profile.get("min_wl_version").value : null,
-						profile.containsKey("max_wl_version") ? profile.get("max_wl_version").value : null)) {
+				                                         profile.containsKey("min_wl_version") ?
+                                                             profile.get("min_wl_version").value :
+                                                             null,
+				                                         profile.containsKey("max_wl_version") ?
+                                                             profile.get("max_wl_version").value :
+                                                             null)) {
 					continue;
 				}
 			}
@@ -83,7 +88,12 @@ class HandleCommand {
 		public final long userID, timestamp;
 		public final Long editorID, editTimestamp;
 		public final String version, message;
-		public AddOnComment(long userID, long timestamp, Long editorID, Long editTimestamp, String version, String message) {
+		public AddOnComment(long userID,
+		                    long timestamp,
+		                    Long editorID,
+		                    Long editTimestamp,
+		                    String version,
+		                    String message) {
 			this.userID = userID;
 			this.timestamp = timestamp;
 			this.editorID = editorID;
@@ -91,7 +101,6 @@ class HandleCommand {
 			this.version = version;
 			this.message = message;
 		}
-
 	}
 	public void handleCmdInfo() throws Exception {
 		// Args: name
@@ -102,7 +111,9 @@ class HandleCommand {
 		ServerUtils.semaphoreRO(cmd[1], () -> {
 			ResultSet sqlMain = ServerUtils.sqlQuery(
 			    ServerUtils.Databases.kAddOns, "select * from addons where name='" + cmd[1] + "'");
-			if (!sqlMain.next()) throw new ServerUtils.WLProtocolException("Add-on '" + cmd[1] + "' is not in the database");
+			if (!sqlMain.next())
+				throw new ServerUtils.WLProtocolException("Add-on '" + cmd[1] +
+				                                          "' is not in the database");
 
 			TreeMap<String, Utils.Value> profile =
 			    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]);
@@ -117,7 +128,8 @@ class HandleCommand {
 			out.println(profile.get("author").value(locale));
 
 			ResultSet sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns, "select user from uploaders where addon=" + sqlMain.getLong("id"));
+			    ServerUtils.Databases.kAddOns,
+			    "select user from uploaders where addon=" + sqlMain.getLong("id"));
 			String uploaders = "";
 			while (sql.next()) {
 				if (!uploaders.isEmpty()) uploaders += ",";
@@ -130,14 +142,11 @@ class HandleCommand {
 			out.println(sqlMain.getLong("i18n_version"));
 			out.println(profile.get("category").value);
 			out.println(profile.get("requires").value);
-			out.println((profile.containsKey("min_wl_version") ?
-                             profile.get("min_wl_version").value :
-                             ""));
-			out.println((profile.containsKey("max_wl_version") ?
-                             profile.get("max_wl_version").value :
-                             ""));
 			out.println(
-			    (profile.containsKey("sync_safe") ? profile.get("sync_safe").value : ""));
+			    (profile.containsKey("min_wl_version") ? profile.get("min_wl_version").value : ""));
+			out.println(
+			    (profile.containsKey("max_wl_version") ? profile.get("max_wl_version").value : ""));
+			out.println((profile.containsKey("sync_safe") ? profile.get("sync_safe").value : ""));
 
 			out.println(screenies.size());
 			for (String key : screenies.keySet())
@@ -148,27 +157,25 @@ class HandleCommand {
 			out.println(sqlMain.getLong("downloads"));
 
 			sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns, "select vote from uservotes where addon=" + sqlMain.getLong("id"));
+			    ServerUtils.Databases.kAddOns,
+			    "select vote from uservotes where addon=" + sqlMain.getLong("id"));
 			long[] votes = new long[10];
 			for (int i = 0; i < votes.length; i++) votes[i] = 0;
 			while (sql.next()) votes[sql.getInt("vote") - 1]++;
 			for (long v : votes) out.println(v);
 
 			sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns, "select * from usercomments where addon=" + sqlMain.getLong("id"));
+			    ServerUtils.Databases.kAddOns,
+			    "select * from usercomments where addon=" + sqlMain.getLong("id"));
 			ArrayList<AddOnComment> comments = new ArrayList<>();
 			while (sql.next()) {
 				Long editorID = sql.getLong("editor");
 				if (sql.wasNull()) editorID = null;
 				Long editTS = sql.getLong("edit_timestamp");
 				if (sql.wasNull()) editTS = null;
-				comments.add(new AddOnComment(
-					sql.getLong("user"),
-					sql.getLong("timestamp"),
-					editorID,
-					editTS,
-					sql.getString("version"), 
-					sql.getString("message")));
+				comments.add(new AddOnComment(sql.getLong("user"), sql.getLong("timestamp"),
+				                              editorID, editTS, sql.getString("version"),
+				                              sql.getString("message")));
 			}
 			out.println(comments.size());
 			for (AddOnComment c : comments) {

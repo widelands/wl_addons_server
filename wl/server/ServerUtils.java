@@ -107,7 +107,8 @@ abstract class ServerUtils {
 		return r.getString("username");
 	}
 	public static Long getUserID(String name) throws Exception {
-		ResultSet r = sqlQuery(Databases.kWebsite, "select id from auth_user where username='" + name + "'");
+		ResultSet r =
+		    sqlQuery(Databases.kWebsite, "select id from auth_user where username='" + name + "'");
 		if (!r.next()) return null;
 		return r.getLong("id");
 	}
@@ -307,11 +308,13 @@ abstract class ServerUtils {
 	}
 	private static boolean less(int[] a, int[] b) {
 		int l = Math.min(a.length, b.length);
-		for (int i = 0; i < l; i++) if (a[i] != b[i]) return a[i] < b[i];
+		for (int i = 0; i < l; i++)
+			if (a[i] != b[i]) return a[i] < b[i];
 		return a.length < b.length;
 	}
 
-	public static boolean matchesWidelandsVersion(String wl_version, String min_wl_version, String max_wl_version) {
+	public static boolean
+	matchesWidelandsVersion(String wl_version, String min_wl_version, String max_wl_version) {
 		// For the comparison logic, see AddOnInfo::matches_widelands_version
 		if (min_wl_version == null && max_wl_version == null) {
 			return true;

@@ -54,9 +54,8 @@ class ClientThread implements Runnable {
 
 			final int protocolVersion = Integer.valueOf(protocolVersionString);
 			if (protocolVersion < 4 || protocolVersion > 5) {
-				throw new ServerUtils.WLProtocolException("Unsupported version '" +
-				                                          protocolVersion +
-				                                          "' (supported versions are 4-5)");
+				throw new ServerUtils.WLProtocolException(
+				    "Unsupported version '" + protocolVersion + "' (supported versions are 4-5)");
 			}
 			final String locale = ServerUtils.readLine(in);
 			ServerUtils.log("Locale: " + locale);
@@ -70,7 +69,9 @@ class ClientThread implements Runnable {
 				out.println("ENDOFSTREAM");
 			} else {
 				Long uid = ServerUtils.getUserID(username);
-				if (uid == null) throw new ServerUtils.WLProtocolException("User " + username + " is not registered");
+				if (uid == null)
+					throw new ServerUtils.WLProtocolException("User " + username +
+					                                          " is not registered");
 				userDatabaseID = uid;
 
 				ResultSet sql = ServerUtils.sqlQuery(
@@ -99,8 +100,8 @@ class ClientThread implements Runnable {
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
 				ServerUtils.SYNCER.tick(socket);
 				ServerUtils.log("Received command: " + cmd);
-				Server.handle(cmd.split(" "), out, in, protocolVersion, widelandsVersion, username, userDatabaseID,
-				              admin, locale);
+				Server.handle(cmd.split(" "), out, in, protocolVersion, widelandsVersion, username,
+				              userDatabaseID, admin, locale);
 			}
 		} catch (Exception e) {
 			ServerUtils.log("ERROR: " + e);
