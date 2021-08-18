@@ -600,7 +600,6 @@ class HandleCommand {
 					                 Utils.getAddOnID(cmd[1]));
 
 					ServerUtils.doDelete(addOnDir);
-					Utils._staticprofiles.remove(addOnMain);
 				}
 				tempDir.renameTo​(addOnDir);
 

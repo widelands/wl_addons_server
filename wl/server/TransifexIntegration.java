@@ -97,7 +97,6 @@ public class TransifexIntegration {
 			                 " where id=" + sql.getLong("id"));
 		}
 		UpdateList.rebuildLists();
-		Utils._staticprofiles.clear();
 		Utils.bashOutput("./skip_timestamp_only_po_changes.sh");
 	}
 

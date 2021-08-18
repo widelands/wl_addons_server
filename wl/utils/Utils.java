@@ -27,7 +27,22 @@ import java.sql.ResultSet;
 import java.util.*;
 
 public abstract class Utils {
-	public static final TreeMap<File, TreeMap<String, Value>> _staticprofiles = new TreeMap<>();
+	private static class ChecksummedFile {
+		public final File file;
+		public final String checksum;
+
+		public ChecksummedFile(File f) {
+			file = f;
+			checksum = checksum(f);
+		}
+
+		@Override public boolean equals(Object o) {
+			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) && ((ChecksummedFile)o).checksum.equals(checksum);
+		}
+		public boolean valid() {
+			return checksum(file).equals(checksum);
+		}
+	}
 
 	public static void log(String msg) {
 		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
@@ -135,7 +150,7 @@ public abstract class Utils {
 			String md5 = reader.readLine();
 			return md5.split(" ")[0];
 		} catch (Exception e) {
-			System.err.println("checksumming error: " + e);
+			log("ERROR checksumming '" + (f == null ? "(null)" : f.getPath()) + "': " + e);
 		}
 		return "";
 	}
@@ -248,13 +263,22 @@ public abstract class Utils {
 		}
 	}
 
+	private static final TreeMap<ChecksummedFile, TreeMap<String, Value>> _staticprofiles = new TreeMap<>();
+
 	synchronized public static TreeMap<String, Value> readProfile(File f, String textdomain)
 	    throws Exception {
-		if (_staticprofiles.containsKey(f)) return _staticprofiles.get(f);
+		ChecksummedFile key = new ChecksummedFile(f);
+		if (_staticprofiles.containsKey(key)) return _staticprofiles.get(key);
+		for (ChecksummedFile cf : _staticprofiles.keySet()) {
+			if (cf.file.equals(f)) {
+				_staticprofiles.remove(cf);
+				break;
+			}
+		}
 
 		TreeMap<String, Value> profile = new TreeMap<>();
 		if (!f.isFile()) {
-			_staticprofiles.put(f, profile);
+			_staticprofiles.put(key, profile);
 			return profile;
 		}
 
@@ -284,7 +308,7 @@ public abstract class Utils {
 			                              localize ? textdomain == null ? "" : textdomain : null));
 		}
 
-		_staticprofiles.put(f, profile);
+		_staticprofiles.put(key, profile);
 		return profile;
 	}
 

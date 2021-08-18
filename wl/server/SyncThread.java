@@ -74,7 +74,6 @@ class SyncThread implements Runnable {
 							    "You still have not resolved the merge conflicts. Please do so soon!");
 
 						Utils.log("Performing GitHub sync...");
-						Utils._staticprofiles.clear();
 						ServerUtils.SYNCER.sync();
 					}
 				}
