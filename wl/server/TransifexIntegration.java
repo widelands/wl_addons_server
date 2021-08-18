@@ -130,12 +130,12 @@ public class TransifexIntegration {
 		    occurrence, addon;
 
 		public Issue(String issueID,
-		              String message,
-		              String priority,
-		              String datetime_modified,
-		              String string,
-		              String stringID,
-		              String occurrence) {
+		             String message,
+		             String priority,
+		             String datetime_modified,
+		             String string,
+		             String stringID,
+		             String occurrence) {
 			this.issueID = issueID;
 			this.message = message;
 			this.priority = priority;

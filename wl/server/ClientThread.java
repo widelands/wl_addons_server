@@ -111,7 +111,7 @@ class ClientThread implements Runnable {
 				ThreadActivityAndGitHubSyncManager.SYNCER.tick(socket);
 				Utils.log("Received command: " + cmd);
 				handle(cmd.split(" "), out, in, protocolVersion, widelandsVersion, username,
-				              userDatabaseID, admin, locale);
+				       userDatabaseID, admin, locale);
 			}
 		} catch (Exception e) {
 			Utils.log("ERROR: " + e);
@@ -136,7 +136,8 @@ class ClientThread implements Runnable {
 	 * @param out Stream to send data to the client.
 	 * @param in Stream to receive further data from the client.
 	 * @param protocolVersion Protocol version the client uses.
-	 * @param widelandsVersion Widelands version the client uses (\c null if protocol version is less than \c 5).
+	 * @param widelandsVersion Widelands version the client uses (\c null if protocol version is
+	 *     less than \c 5).
 	 * @param username Name of the user (\c "" for unregistered guests).
 	 * @param userDatabaseID ID of the user (only valid for registered users).
 	 * @param admin Whether the user is a registered administrator.
@@ -144,14 +145,14 @@ class ClientThread implements Runnable {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	private void handle(String[] cmd,
-	                          PrintStream out,
-	                          InputStream in,
-	                          int protocolVersion,
-	                          String widelandsVersion,
-	                          String username,
-	                          long userDatabaseID,
-	                          boolean admin,
-	                          String locale) throws Exception {
+	                    PrintStream out,
+	                    InputStream in,
+	                    int protocolVersion,
+	                    String widelandsVersion,
+	                    String username,
+	                    long userDatabaseID,
+	                    boolean admin,
+	                    String locale) throws Exception {
 		Command command = Command.valueOf(cmd[0]);
 		MuninStatistics.MUNIN.countCommand(command);
 		HandleCommand h = new HandleCommand(cmd, out, in, protocolVersion, widelandsVersion,

@@ -45,7 +45,8 @@ class HandleCommand {
 	 * @param out Stream to send data to the client.
 	 * @param in Stream to receive further data from the client.
 	 * @param protocolVersion Protocol version the client uses.
-	 * @param widelandsVersion Widelands version the client uses (\c null if protocol version is less than \c 5).
+	 * @param widelandsVersion Widelands version the client uses (\c null if protocol version is
+	 *     less than \c 5).
 	 * @param username Name of the user (\c "" for unregistered guests).
 	 * @param userDatabaseID ID of the user (only valid for registered users).
 	 * @param admin Whether the user is a registered administrator.

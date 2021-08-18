@@ -23,7 +23,8 @@ package wl.server;
  * After the first contact, the client must send the following info:
  *  - Protocol version, \n
  *  - Language name (e.g. "nds"), \n
- *  - {@literal Protocol version >= 5}: Widelands version (e.g. \c "1.1~git25425[1317dd9@master]"), \n
+ *  - {@literal Protocol version >= 5}: Widelands version (e.g. \c "1.1~git25425[1317dd9@master]"),
+ * \n
  *  - Username (or "" for no user), \n
  *  - ENDOFSTREAM\n
  * If the username is "", the server then replies ENDOFSTREAM\n.
