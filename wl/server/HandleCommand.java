@@ -214,8 +214,16 @@ class HandleCommand {
 			out.println(dir.totalDirs);
 			dir.writeAllDirNames(out, "");
 			dir.writeAllFileInfos(out);
-			Utils.registerDownload(cmd[1]);
 		});
+
+		ResultSet sql = ServerUtils.sqlQuery(
+		    ServerUtils.Databases.kAddOns,
+		    "select id,downloads from addons where name='" + cmd[1] + "'");
+		sql.next();
+		ServerUtils.sqlCmd(
+		    ServerUtils.Databases.kAddOns,
+		    "update addons set downloads=" + (sql.getLong("downloads") + 1) + " where id=" + sql.getLong("id"));
+
 		out.println("ENDOFSTREAM");
 	}
 
@@ -250,9 +258,16 @@ class HandleCommand {
 			throw new ServerUtils.WLProtocolException("You need to log in to vote");
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		ServerUtils.semaphoreRW(cmd[1], () -> {
-			ServerUtils.registerVote(cmd[1], userDatabaseID, Integer.valueOf(cmd[2]));
-		});
+
+		final long addon = ServerUtils.getAddOnID(cmd[1]);
+		final int vote = Integer.valueOf(cmd[2]);
+		ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+			   "delete from uservotes where user=" + userDatabaseID + " and addon=" + addon);
+		if (vote > 0) {
+			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns, "insert into uservotes (user, addon, vote) value (" +
+				                          userDatabaseID + "," + addon + "," + vote + ")");
+		}
+
 		out.println("ENDOFSTREAM");
 	}
 
@@ -265,12 +280,11 @@ class HandleCommand {
 		}
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
-		ServerUtils.semaphoreRO(cmd[1], () -> {
-			ResultSet sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns, "select vote from uservotes where user_id=" +
-			                                       userDatabaseID + " and addon='" + cmd[1] + "'");
-			out.println(sql.next() ? ("" + sql.getLong​(1)) : "0");
-		});
+
+		ResultSet sql = ServerUtils.sqlQuery(
+		    ServerUtils.Databases.kAddOns, "select vote from uservotes where user_id=" +
+		                                       userDatabaseID + " and addon='" + cmd[1] + "'");
+		out.println(sql.next() ? ("" + sql.getLong​(1)) : "0");
 		out.println("ENDOFSTREAM");
 	}
 
@@ -289,36 +303,51 @@ class HandleCommand {
 			msg += ServerUtils.readLine(in);
 		}
 		ServerUtils.checkEndOfStream(in);
-		final String finalMsg = msg;
-		ServerUtils.semaphoreRW(
-		    cmd[1], () -> { Utils.comment(cmd[1], username, cmd[2], finalMsg); });
+
+	    ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+	    	"insert into usercomments (addon,user,timestamp,version,message) value("
+	    	+ ServerUtils.getAddOnID(cmd[1]) + ","
+	    	+ userDatabaseID + ","
+	    	+ (System.currentTimeMillis() / 1000) + ",'"
+	    	+ cmd[2] + "','" + msg.replaceAll("'", "\\'") + "')");
+
 		out.println("ENDOFSTREAM");
 	}
 
 	public void handleCmdEditComment() throws Exception {
 		// Args: name index lines
-		ServerUtils.checkNrArgs(cmd, 3);
+		ServerUtils.checkNrArgs(cmd, protocolVersion < 5 ? 3 : 2);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("Log in to edit comments");
-		ServerUtils.checkNameValid(cmd[1], false);
-		ServerUtils.checkAddOnExists(cmd[1]);
-
-		if (!admin) {
-			if (!username.equals(Utils.readProfile(new File("metadata", cmd[1] + ".server"), cmd[1])
-			                         .get("comment_name_" + cmd[2])
-			                         .value)) {
-				throw new ServerUtils.WLProtocolException(
-				    "Forbidden to edit another user's comment");
-			}
-			Utils.Value v = Utils.readProfile(new File("metadata", cmd[1] + ".server"), cmd[1])
-			                    .get("comment_editor_" + cmd[2]);
-			if (v != null && !username.equals(v.value))
-				throw new ServerUtils.WLProtocolException(
-				    "Forbidden to edit a comment edited by a maintainer");
+		if (protocolVersion < 5) {
+			ServerUtils.checkNameValid(cmd[1], false);
+			ServerUtils.checkAddOnExists(cmd[1]);
 		}
 
-		int nrLines = Integer.valueOf(cmd[3]);
-		if (nrLines < 1 || nrLines > 100)
+		long commentID;
+		if (protocolVersion >= 5) {
+			commentID = Integer.valueOf(cmd[1]);
+		} else {
+			ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns, "select id from usercomments where addon=" + ServerUtils.getAddOnID(cmd[1]));
+			for (int i = Integer.valueOf(cmd[2]); i > 0; i--) {
+				if (!sql.next()) {
+					throw new ServerUtils.WLProtocolException("Invalid comment index " + cmd[2]);
+				}
+			}
+			commentID = sql.getLong("id");
+		}
+		ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+			"select user,editor from usercomments where id=" + commentID);
+		if (!sql.next()) throw new ServerUtils.WLProtocolException("Invalid comment ID " + commentID);
+
+		if (!admin) {
+			if (sql.getLong("user") != userDatabaseID) throw new ServerUtils.WLProtocolException("Forbidden to edit another user's comment");
+			final long editor = sql.getLong("editor");
+			if (!sql.wasNull() && editor != userDatabaseID) throw new ServerUtils.WLProtocolException("Forbidden to edit a comment edited by a maintainer");
+		}
+
+		int nrLines = Integer.valueOf(cmd[protocolVersion < 5 ? 3 : 2]);
+		if (nrLines < 0 || nrLines > 100 || (nrLines == 0 && protocolVersion < 5))
 			throw new ServerUtils.WLProtocolException("Comment too long (" + nrLines + " lines)");
 		String msg = "";
 		for (int i = nrLines; i > 0; --i) {
@@ -327,9 +356,16 @@ class HandleCommand {
 		}
 
 		ServerUtils.checkEndOfStream(in);
-		final String finalMsg = msg;
-		ServerUtils.semaphoreRW(
-		    cmd[1], () -> { Utils.editComment(cmd[1], cmd[2], username, finalMsg); });
+
+	    if (nrLines == 0) {
+			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+		    	"delete from usercomments where id=" + commentID);
+	    } else {
+			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+		    	"update usercomments set editor=" + userDatabaseID + ", edit_timestamp=" + (System.currentTimeMillis() / 1000)
+		    	+ ", message='" + msg.replaceAll("'", "\\'") + "' where id=" + commentID);
+	    }
+
 		out.println("ENDOFSTREAM");
 	}
 
@@ -564,13 +600,9 @@ class HandleCommand {
 					    ServerUtils.Databases.kAddOns,
 					    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value('" +
 					        cmd[1] + "'," + (System.currentTimeMillis() / 1000) + ",0,0,0,0)");
-					ResultSet sql =
-					    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
-					                         "select id from addons where name='" + cmd[1] + "'");
-					sql.next();
 					ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
 					                   "insert into uploaders (addon,user) value(" +
-					                       sql.getLong("id") + "," + userDatabaseID + ")");
+					                       ServerUtils.getAddOnID(cmd[1]) + "," + userDatabaseID + ")");
 				}
 
 				Utils.sendNotificationToGitHubThread(

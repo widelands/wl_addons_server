@@ -199,15 +199,7 @@ public abstract class Utils {
 		    new File("metadata", addon + (server ? ".server" : ".maintain")), addon, changes);
 	}
 
-	public static void registerDownload(String addon) throws Exception {
-		File f = new File("metadata", addon + ".server");
-		TreeMap<String, Value> ch = new TreeMap<>();
-		ch.put("downloads",
-		       new Value("downloads",
-		                 "" + (Long.valueOf(readProfile(f, addon).get("downloads").value) + 1)));
-		editMetadata(true, addon, ch);
-	}
-
+/* NOCOM
 	public static void comment(String addon, String user, String version, String message)
 	    throws Exception {
 		File f = new File("metadata", addon + ".server");
@@ -244,6 +236,7 @@ public abstract class Utils {
 
 		editMetadata(true, addon, ch);
 	}
+*/
 
 	public static String config(String key) throws Exception {
 		return readProfile(new File("config"), null).get(key).value;

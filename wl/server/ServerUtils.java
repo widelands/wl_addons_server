@@ -112,6 +112,11 @@ abstract class ServerUtils {
 		if (!r.next()) return null;
 		return r.getLong("id");
 	}
+	public static Long getAddOnID(String name) throws Exception {
+		ResultSet r = sqlQuery(Databases.kAddOns, "select id from addons where name='" + name + "'");
+		if (!r.next()) return null;
+		return r.getLong("id");
+	}
 
 	public static class WLProtocolException extends RuntimeException {
 		public WLProtocolException(String msg) { super("WL Protocol Exception: " + msg); }
@@ -244,15 +249,6 @@ abstract class ServerUtils {
 			}
 		}
 		f.delete();
-	}
-
-	public static void registerVote(String addon, long user, int v) throws Exception {
-		sqlCmd(Databases.kAddOns,
-		       "delete from uservotes where user_id=" + user + " and addon='" + addon + "'");
-		if (v > 0) {
-			sqlCmd(Databases.kAddOns, "insert into uservotes (user_id, addon, vote) value (" +
-			                              user + ", '" + addon + "', " + v + ")");
-		}
 	}
 
 	private static Object _enquiry_syncer = new Object();

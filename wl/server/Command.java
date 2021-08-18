@@ -226,12 +226,17 @@ public enum Command {
 	CMD_COMMENT,
 
 	/**
-	 * CMD_EDIT_COMMENT name index lines
+	 * CMD_EDIT_COMMENT [4: name] index lines
 	 * Edit an existing comment.
-	 * Arg 1: Add-on name
-	 * Arg 2: Index of the comment.
-	 * Arg 3: Number of lines in the message
+	 * Protocol version 4:
+	 *     Arg 1: Add-on name
+	 *     Arg 2: Index of the comment.
+	 *     Arg 3: Number of lines in the message
+	 * Protocol version 5:
+	 *     Arg 1: Database ID of the comment.
+	 *     Arg 2: Number of lines in the message
 	 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
+	 * In protocol version >= 5, 0 lines denote deletion of the comment.
 	 * Returns: ENDOFSTREAM\n or an error message\n
 	 */
 	CMD_EDIT_COMMENT,
