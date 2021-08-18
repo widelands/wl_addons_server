@@ -91,9 +91,7 @@ public class UpdateList {
 		}
 	}
 
-	private static String _defaultUploader = null;
-	private static Map<String, Data> detectAndUpdateMetadata(List<String> increase,
-	                                                         List<String> verify) throws Exception {
+	private static Map<String, Data> detectAndUpdateMetadata() throws Exception {
 		Map<String, Data> result = new HashMap<>();
 		File[] allAddons = Utils.listSorted(new File("addons"));
 		final int total = allAddons.length;
@@ -113,34 +111,12 @@ public class UpdateList {
 
 			File metadataFileMaintain = new File("metadata", addon + ".maintain");
 			File metadataFileServer = new File("metadata", addon + ".server");
-			if (!metadataFileMaintain.isFile()) {
-				while (_defaultUploader == null || _defaultUploader.isEmpty()) {
-					System.out.println("\nNew add-on '" + addon +
-					                   "' detected. Please enter your nickname:");
-					_defaultUploader =
-					    new BufferedReader(new InputStreamReader(System.in)).readLine();
-				}
-				Utils.initMetadata(addon, _defaultUploader);
-			}
 			TreeMap<String, Utils.Value> metadataMaintain =
 			    Utils.readProfile(metadataFileMaintain, addon);
 			TreeMap<String, Utils.Value> metadataServer =
 			    Utils.readProfile(metadataFileServer, addon);
 
 			TreeMap<String, Utils.Value> edit = new TreeMap<>();
-			boolean markUnsafeOnUpdate = false;
-			if (verify.contains(addon)) {
-				edit.put("security", new Utils.Value("security", "verified"));
-			} else {
-				markUnsafeOnUpdate = true;
-			}
-			if (increase.contains(addon)) {
-				edit.put(
-				    "i18n_version",
-				    new Utils.Value(
-				        "i18n_version",
-				        "" + (Integer.valueOf(metadataMaintain.get("i18n_version").value) + 1)));
-			}
 			metadataMaintain.putAll(edit);
 
 			int[] votes = new int[10];
@@ -217,10 +193,8 @@ public class UpdateList {
 
 			if (!d.cached_version.equals(d.new_version)) {
 				edit.put("version", new Utils.Value("version", d.new_version));
-				if (markUnsafeOnUpdate) {
-					d.verified = false;
-					edit.put("security", new Utils.Value("security", "unchecked"));
-				}
+				d.verified = false;
+				edit.put("security", new Utils.Value("security", "unchecked"));
 			}
 
 			if (!edit.isEmpty()) Utils.editMetadata(false, addon, edit);
@@ -321,33 +295,9 @@ public class UpdateList {
 	}
 
 	private static final int kHighestListVersion = 3;
-	// NOCOM change the args parsing
-	public static void rebuildLists(String... args) throws Exception {
-		List<String> increase_i18n = new ArrayList<>();
-		List<String> verify = new ArrayList<>();
-		for (String s : args) {
-			if (s.isEmpty()) continue;
-			String name = s.substring(1);
-			File check = new File("addons", name);
-			if (!check.isDirectory() || !check.getName().equals(name)) {
-				System.out.println("ERROR: Add-on '" + name + "' does not exist");
-				System.exit(2);
-			}
-			if (s.startsWith("+")) {
-				increase_i18n.add(name);
-			} else if (s.startsWith("/")) {
-				verify.add(name);
-			} else {
-				System.out.println("USAGE: java UpdateList {[+|/]NAME.wad}");
-				System.out.println("Rebuilds the add-ons list.");
-				System.out.println(
-				    "Prefix a filenames with ‘+’ to increase the i18n version by 1.");
-				System.out.println("Prefix a filename with ‘/’ to mark the add-on as verified.");
-				System.exit(1);
-				return;
-			}
-		}
-		final Map<String, Data> data = detectAndUpdateMetadata(increase_i18n, verify);
+
+	public static void rebuildLists() throws Exception {
+		final Map<String, Data> data = detectAndUpdateMetadata();
 		File[] files = Utils.listSorted(new File("addons"));
 		for (int listVersion = 1; listVersion <= kHighestListVersion; ++listVersion) {
 			System.out.print("Writing list version " + listVersion + " ");

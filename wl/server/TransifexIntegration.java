@@ -74,17 +74,27 @@ public class TransifexIntegration {
 		}
 
 		ServerUtils.log("Gathering translation changes...");
-		List<String> changedMO = new ArrayList<>();
 		Utils.bashOutput("git", "add", "i18n");
+		HashSet<String> increasedMO = new HashSet<>();
 		for (String changed :
 		     Utils.bashOutput("bash", "-c", "git status -s i18n/*.wad").split("\n")) {
 			if (changed.trim().isEmpty()) continue;
+
 			String[] split = changed.split(" ");  // "", "M", "i18n/fishy.wad/nds.mo"
 			changed = split[split.length - 1];    // "i18n/fishy.wad/nds.mo"
 			split = changed.split("/");           // "i18n", "fishy.wad", "nds.mo"
-			changedMO.add("+" + split[1]);        // "+fishy.wad"
+			changed = split[1];                   // "fishy.wad"
+
+			if (increasedMO.contains(changed)) continue;
+			increasedMO.add(changed);
+
+			ResultSet sql = ServerUtils.sqlQuery(
+			    ServerUtils.Databases.kAddOns, "select id,i18n_version from addons where name='" + changed + "'");
+			if (!sql.next()) throw new Exception("Add-on '" + changed + "' is not in the database");
+			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns, "update addons set i18n_version=" + (sql.getLong("i18n_version") + 1) +
+					" where id=" + sql.getLong("id"));
 		}
-		UpdateList.rebuildLists(changedMO.toArray(new String[0]));
+		UpdateList.rebuildLists();
 		Utils._staticprofiles.clear();
 		Utils.bashOutput("./skip_timestamp_only_po_changes.sh");
 	}

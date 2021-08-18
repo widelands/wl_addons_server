@@ -40,20 +40,8 @@ class ThreadActivityAndGitHubSyncManager {
 			Utils.bash("bash", "-c", "git status");
 			Process p = Runtime.getRuntime().exec(new String[] {"bash", "-c", "git status -s"});
 			BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
-			String str;
-			while ((str = b.readLine()) != null) {
-				String file = str.substring(3);
-				ServerUtils.log("Detected merge conflict in file: " + file);
-				if (file.startsWith("list")) {
-					ServerUtils.log("    Skipping (will be newly generated later).");
-				} else if (file.startsWith("metadata/")) {
-					ServerUtils.log(
-					    "    Attempting to resolve the merge conflicts automatically...");
-					Utils.resolveMergeConflicts(new File(file));
-				} else {
-					throw new Exception("Unable to resolve merge conflict in " + file);
-				}
-			}
+			String str = b.readLine();
+			if (str != null) throw new Exception("Detected merge conflicts: " + str);
 		}
 		UpdateList.rebuildLists();
 		Utils.bash("bash", "-c", "git add .");

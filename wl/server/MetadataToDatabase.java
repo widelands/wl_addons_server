@@ -29,7 +29,7 @@ import wl.utils.*;
 /* Tool to migrate the metadata to a database.
  *
  * Step 1: Prepare the databases in MySQL
- *     create table addons ( id int primary key auto_increment, name varchar(255), timestamp bigint, i18n_version int, security varchar(128), quality varchar(128), downloads int );
+ *     create table addons ( id int primary key auto_increment, name varchar(255), timestamp bigint, i18n_version int, security tinyint, quality int, downloads int );
  *     create table usercomments ( id int primary key auto_increment, addon int, user int, timestamp bigint, editor int, edit_timestamp bigint, version varchar(128), message varchar(1024));
  *     create table uploaders(addon int, user int, primary key(addon, user));
  *     select * from uservotes;
@@ -66,8 +66,8 @@ public class MetadataToDatabase {
 			    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value ("
 			        + "'" + addon.getName() + "'," + mdM.get("timestamp").value + "," +
 			        mdM.get("i18n_version").value + ","
-			        + "'" + mdM.get("security").value + "',"
-			        + "2," + mdS.get("downloads").value + ")");
+			        + "'" + (mdM.get("security").value.equals("verified") ? 1 : 0) + "',"
+			        + "0," + mdS.get("downloads").value + ")");
 
 			ResultSet sql =
 			    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,

@@ -131,7 +131,7 @@ public enum Command {
 	 *      - number of \n characters in the message, \n
 	 *      - message, \n
 	 *  - "verified" or "unchecked", \n
-	 *  - [Protocol version >= 5]: Code quality rating (1-3) \n
+	 *  - [Protocol version >= 5]: Code quality rating \n
 	 *  - icon checksum (0 for no icon), \n
 	 *  - icon filesize (0 for no icon), \n
 	 *  - icon file as a byte stream

@@ -190,7 +190,7 @@ class HandleCommand {
 				for (String m : msg) out.println(m);
 			}
 
-			out.println(sqlMain.getString("security"));
+			out.println(sqlMain.getLong("security") > 0 ? "verified" : "unchecked");
 			if (protocolVersion >= 5) out.println(sqlMain.getLong("quality"));
 
 			File iconFile = new File("addons/" + cmd[1], "icon.png");
@@ -560,7 +560,14 @@ class HandleCommand {
 
 					isUpdate = true;
 				} else {
-					Utils.initMetadata(cmd[1], username);
+					ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+						"insert into addons (name,timestamp,i18n_version,security,quality,downloads) value('"
+							+ cmd[1] + "'," + (System.currentTimeMillis() / 1000) + ",0,0,0,0)"
+					);
+					ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns, "select id from addons where name='" + cmd[1] + "'");
+					sql.next();
+					ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+						"insert into uploaders (addon,user) value(" + sql.getLong("id") + "," + userDatabaseID + ")");
 				}
 
 				Utils.sendNotificationToGitHubThread(
