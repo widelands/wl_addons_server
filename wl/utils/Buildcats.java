@@ -51,11 +51,12 @@ public class Buildcats {
 			File dir = new File("po", addon.getName());
 			dir.mkdirs();
 			String out = dir.getPath() + "/" + addon.getName() + ".pot";
-			Runtime.getRuntime().exec(new String[] {
-			            "xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
-			            "--copyright-holder=\"Widelands Development Team\"",
-			            "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
-			            addon.getPath() + "/addon"})
+			Runtime.getRuntime()
+			    .exec(new String[] {
+			        "xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
+			        "--copyright-holder=\"Widelands Development Team\"",
+			        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
+			        addon.getPath() + "/addon"})
 			    .waitFor();
 			recurse(out, new File("screenshots", addon.getName()));
 			recurse(out, addon);

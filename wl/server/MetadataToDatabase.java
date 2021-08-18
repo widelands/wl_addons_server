@@ -71,15 +71,14 @@ public class MetadataToDatabase {
 
 			ResultSet sql =
 			    Utils.sqlQuery(Utils.Databases.kAddOns,
-			                         "select id from addons where name='" + addon.getName() + "'");
+			                   "select id from addons where name='" + addon.getName() + "'");
 			sql.next();
 			final long addonID = sql.getLong​("id");
 
 			final Long uid = Utils.getUserID(mdM.get("uploader").value);
 			if (uid != null) {
-				Utils.sqlCmd(
-				    Utils.Databases.kAddOns,
-				    "insert into uploaders (addon,user) value(" + addonID + "," + uid + ")");
+				Utils.sqlCmd(Utils.Databases.kAddOns, "insert into uploaders (addon,user) value(" +
+				                                          addonID + "," + uid + ")");
 			}
 
 			final int nrComments = Integer.valueOf(mdS.get("comments").value);

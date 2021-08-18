@@ -41,15 +41,14 @@ class SyncThread implements Runnable {
 				long now = System.currentTimeMillis();
 				long then = nextSync.getTimeInMillis();
 				while (then < now + 60000) then += 1000 * 60 * 60 * 24;
-				Utils.log("Next " + (phase == 0 ? "full" : "SQL-only") +
-				                " sync scheduled for " + new Date(then) + " (" +
-				                Utils.durationString(then - now) + " remaining).");
+				Utils.log("Next " + (phase == 0 ? "full" : "SQL-only") + " sync scheduled for " +
+				          new Date(then) + " (" + Utils.durationString(then - now) +
+				          " remaining).");
 
 				Thread.sleep(then - now);
 
 				Utils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
-				for (Utils.Databases db : Utils.Databases.values())
-					Utils.sqlCmd(db, "show tables");
+				for (Utils.Databases db : Utils.Databases.values()) Utils.sqlCmd(db, "show tables");
 
 				Utils.log("Backing up the database...");
 				Runtime.getRuntime().exec(new String[] {

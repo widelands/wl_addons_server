@@ -110,7 +110,8 @@ class HandleCommand {
 			out.println(profile.get("author").value);
 			out.println(profile.get("author").value(locale));
 
-			out.println(Utils.getUploadersString(addOnID, protocolVersion < 5));  // Version 4 assumes there is only one uploader
+			out.println(Utils.getUploadersString(
+			    addOnID, protocolVersion < 5));  // Version 4 assumes there is only one uploader
 
 			out.println(profile.get("version").value);
 			out.println(sqlMain.getLong("i18n_version"));
@@ -133,8 +134,7 @@ class HandleCommand {
 			for (long v : Utils.getVotes(addOnID)) out.println(v);
 
 			ResultSet sql = Utils.sqlQuery(
-			    Utils.Databases.kAddOns,
-			    "select * from usercomments where addon=" + addOnID);
+			    Utils.Databases.kAddOns, "select * from usercomments where addon=" + addOnID);
 			ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
 			while (sql.next()) {
 				Long editorID = sql.getLong("editor");
@@ -142,8 +142,8 @@ class HandleCommand {
 				Long editTS = sql.getLong("edit_timestamp");
 				if (sql.wasNull()) editTS = null;
 				comments.add(new Utils.AddOnComment(sql.getLong("user"), sql.getLong("timestamp"),
-				                              editorID, editTS, sql.getString("version"),
-				                              sql.getString("message")));
+				                                    editorID, editTS, sql.getString("version"),
+				                                    sql.getString("message")));
 			}
 			out.println(comments.size());
 			for (Utils.AddOnComment c : comments) {
@@ -184,13 +184,12 @@ class HandleCommand {
 			dir.writeAllFileInfos(out);
 		});
 
-		ResultSet sql =
-		    Utils.sqlQuery(Utils.Databases.kAddOns,
-		                         "select id,downloads from addons where name='" + cmd[1] + "'");
+		ResultSet sql = Utils.sqlQuery(
+		    Utils.Databases.kAddOns, "select id,downloads from addons where name='" + cmd[1] + "'");
 		sql.next();
 		Utils.sqlCmd(Utils.Databases.kAddOns,
-		                   "update addons set downloads=" + (sql.getLong("downloads") + 1) +
-		                       " where id=" + sql.getLong("id"));
+		             "update addons set downloads=" + (sql.getLong("downloads") + 1) +
+		                 " where id=" + sql.getLong("id"));
 
 		out.println("ENDOFSTREAM");
 	}
@@ -229,13 +228,12 @@ class HandleCommand {
 
 		final long addon = Utils.getAddOnID(cmd[1]);
 		final int vote = Integer.valueOf(cmd[2]);
-		Utils.sqlCmd(
-		    Utils.Databases.kAddOns,
-		    "delete from uservotes where user=" + userDatabaseID + " and addon=" + addon);
+		Utils.sqlCmd(Utils.Databases.kAddOns,
+		             "delete from uservotes where user=" + userDatabaseID + " and addon=" + addon);
 		if (vote > 0) {
 			Utils.sqlCmd(
 			    Utils.Databases.kAddOns, "insert into uservotes (user, addon, vote) value (" +
-			                                       userDatabaseID + "," + addon + "," + vote + ")");
+			                                 userDatabaseID + "," + addon + "," + vote + ")");
 		}
 
 		out.println("ENDOFSTREAM");
@@ -252,8 +250,8 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ResultSet sql = Utils.sqlQuery(
-		    Utils.Databases.kAddOns, "select vote from uservotes where user_id=" +
-		                                       userDatabaseID + " and addon='" + cmd[1] + "'");
+		    Utils.Databases.kAddOns, "select vote from uservotes where user_id=" + userDatabaseID +
+		                                 " and addon='" + cmd[1] + "'");
 		out.println(sql.next() ? ("" + sql.getLong​(1)) : "0");
 		out.println("ENDOFSTREAM");
 	}
@@ -274,12 +272,11 @@ class HandleCommand {
 		}
 		ServerUtils.checkEndOfStream(in);
 
-		Utils.sqlCmd(
-		    Utils.Databases.kAddOns,
-		    "insert into usercomments (addon,user,timestamp,version,message) value(" +
-		        Utils.getAddOnID(cmd[1]) + "," + userDatabaseID + "," +
-		        (System.currentTimeMillis() / 1000) + ",'" + cmd[2] + "','" +
-		        msg.replaceAll("'", "\\'") + "')");
+		Utils.sqlCmd(Utils.Databases.kAddOns,
+		             "insert into usercomments (addon,user,timestamp,version,message) value(" +
+		                 Utils.getAddOnID(cmd[1]) + "," + userDatabaseID + "," +
+		                 (System.currentTimeMillis() / 1000) + ",'" + cmd[2] + "','" +
+		                 msg.replaceAll("'", "\\'") + "')");
 
 		out.println("ENDOFSTREAM");
 	}
@@ -298,9 +295,9 @@ class HandleCommand {
 		if (protocolVersion >= 5) {
 			commentID = Integer.valueOf(cmd[1]);
 		} else {
-			ResultSet sql = Utils.sqlQuery(
-			    Utils.Databases.kAddOns,
-			    "select id from usercomments where addon=" + Utils.getAddOnID(cmd[1]));
+			ResultSet sql =
+			    Utils.sqlQuery(Utils.Databases.kAddOns, "select id from usercomments where addon=" +
+			                                                Utils.getAddOnID(cmd[1]));
 			for (int i = Integer.valueOf(cmd[2]); i > 0; i--) {
 				if (!sql.next()) {
 					throw new ServerUtils.WLProtocolException("Invalid comment index " + cmd[2]);
@@ -308,9 +305,8 @@ class HandleCommand {
 			}
 			commentID = sql.getLong("id");
 		}
-		ResultSet sql =
-		    Utils.sqlQuery(Utils.Databases.kAddOns,
-		                         "select user,editor from usercomments where id=" + commentID);
+		ResultSet sql = Utils.sqlQuery(
+		    Utils.Databases.kAddOns, "select user,editor from usercomments where id=" + commentID);
 		if (!sql.next())
 			throw new ServerUtils.WLProtocolException("Invalid comment ID " + commentID);
 
@@ -336,14 +332,12 @@ class HandleCommand {
 		ServerUtils.checkEndOfStream(in);
 
 		if (nrLines == 0) {
-			Utils.sqlCmd(
-			    Utils.Databases.kAddOns, "delete from usercomments where id=" + commentID);
+			Utils.sqlCmd(Utils.Databases.kAddOns, "delete from usercomments where id=" + commentID);
 		} else {
 			Utils.sqlCmd(Utils.Databases.kAddOns,
-			                   "update usercomments set editor=" + userDatabaseID +
-			                       ", edit_timestamp=" + (System.currentTimeMillis() / 1000) +
-			                       ", message='" + msg.replaceAll("'", "\\'") +
-			                       "' where id=" + commentID);
+			             "update usercomments set editor=" + userDatabaseID + ", edit_timestamp=" +
+			                 (System.currentTimeMillis() / 1000) + ", message='" +
+			                 msg.replaceAll("'", "\\'") + "' where id=" + commentID);
 		}
 
 		out.println("ENDOFSTREAM");
@@ -565,10 +559,9 @@ class HandleCommand {
 					    Utils.Databases.kAddOns,
 					    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value('" +
 					        cmd[1] + "'," + (System.currentTimeMillis() / 1000) + ",0,0,0,0)");
-					Utils.sqlCmd(
-					    Utils.Databases.kAddOns, "insert into uploaders (addon,user) value(" +
-					                                       Utils.getAddOnID(cmd[1]) + "," +
-					                                       userDatabaseID + ")");
+					Utils.sqlCmd(Utils.Databases.kAddOns,
+					             "insert into uploaders (addon,user) value(" +
+					                 Utils.getAddOnID(cmd[1]) + "," + userDatabaseID + ")");
 				}
 
 				Utils.sendNotificationToGitHubThread(
@@ -603,8 +596,8 @@ class HandleCommand {
 				    "\n\nPlease review this add-on soonish.");
 				if (isUpdate) {
 					Utils.sqlCmd(Utils.Databases.kAddOns,
-					                   "update addons set security=0, quality=0 where id=" +
-					                       Utils.getAddOnID(cmd[1]));
+					             "update addons set security=0, quality=0 where id=" +
+					                 Utils.getAddOnID(cmd[1]));
 
 					ServerUtils.doDelete(addOnDir);
 					Utils._staticprofiles.remove(addOnMain);

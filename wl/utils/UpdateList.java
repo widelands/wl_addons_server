@@ -98,20 +98,20 @@ public class UpdateList {
 
 			List<Utils.AddOnComment> comments = new ArrayList<>();
 			ResultSet sql = Utils.sqlQuery(
-			    Utils.Databases.kAddOns,
-			    "select * from usercomments where addon=" + addOnID);
+			    Utils.Databases.kAddOns, "select * from usercomments where addon=" + addOnID);
 			while (sql.next()) {
-				comments.add(new Utils.AddOnComment(sql.getLong("user"), sql.getLong("timestamp"),
-                  null, null, sql.getString("version"),
-                  // These lists don't allow newlines, so we use two spaces instead. Localization is not possible here.
-                  sql.getString("message").replaceAll("[\n\r\t]", "  ")));
+				comments.add(
+				    new Utils.AddOnComment(sql.getLong("user"), sql.getLong("timestamp"), null,
+				                           null, sql.getString("version"),
+				                           // These lists don't allow newlines, so we use two spaces
+				                           // instead. Localization is not possible here.
+				                           sql.getString("message").replaceAll("[\n\r\t]", "  ")));
 			}
 
-			Data d = new Data(Utils.getUploadersString(addOnID, true),
-			                  sqlMain.getLong("i18n_version"),
-			                  sqlMain.getInt("security") > 0,
-			                  sqlMain.getLong("timestamp"),
-			                  sqlMain.getLong("downloads"), comments, votes);
+			Data d =
+			    new Data(Utils.getUploadersString(addOnID, true), sqlMain.getLong("i18n_version"),
+			             sqlMain.getInt("security") > 0, sqlMain.getLong("timestamp"),
+			             sqlMain.getLong("downloads"), comments, votes);
 			result.put(addon, d);
 
 			recurse(d.dirs, d.files, d.checksums, d.sizes, addonDir, "");

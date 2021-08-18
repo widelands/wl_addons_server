@@ -38,8 +38,8 @@ class ClientThread implements Runnable {
 		boolean didLogInSuccessfully = false, hideFromStats = false;
 		try {
 			Utils.log("Connection received from " + socket.getInetAddress() + " : " +
-			                socket.getPort() + " on " + socket.getLocalSocketAddress() + " (" +
-			                socket.getLocalAddress() + " : " + socket.getLocalPort() + ").");
+			          socket.getPort() + " on " + socket.getLocalSocketAddress() + " (" +
+			          socket.getLocalAddress() + " : " + socket.getLocalPort() + ").");
 			out = new PrintStream(socket.getOutputStream(), true);
 			InputStream in = socket.getInputStream();
 
@@ -74,10 +74,10 @@ class ClientThread implements Runnable {
 					                                          " is not registered");
 				userDatabaseID = uid;
 
-				ResultSet sql = Utils.sqlQuery(
-				    Utils.Databases.kWebsite,
-				    "select permissions,password from wlggz_ggzauth where user_id=" +
-				        userDatabaseID);
+				ResultSet sql =
+				    Utils.sqlQuery(Utils.Databases.kWebsite,
+				                   "select permissions,password from wlggz_ggzauth where user_id=" +
+				                       userDatabaseID);
 				if (!sql.next())
 					throw new ServerUtils.WLProtocolException(
 					    "User " + username + " did not set an online gaming password");

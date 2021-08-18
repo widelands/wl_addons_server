@@ -88,14 +88,13 @@ public class TransifexIntegration {
 			if (increasedMO.contains(changed)) continue;
 			increasedMO.add(changed);
 
-			ResultSet sql = Utils.sqlQuery(
-			    Utils.Databases.kAddOns,
-			    "select id,i18n_version from addons where name='" + changed + "'");
+			ResultSet sql =
+			    Utils.sqlQuery(Utils.Databases.kAddOns,
+			                   "select id,i18n_version from addons where name='" + changed + "'");
 			if (!sql.next()) throw new Exception("Add-on '" + changed + "' is not in the database");
-			Utils.sqlCmd(
-			    Utils.Databases.kAddOns,
-			    "update addons set i18n_version=" + (sql.getLong("i18n_version") + 1) +
-			        " where id=" + sql.getLong("id"));
+			Utils.sqlCmd(Utils.Databases.kAddOns,
+			             "update addons set i18n_version=" + (sql.getLong("i18n_version") + 1) +
+			                 " where id=" + sql.getLong("id"));
 		}
 		UpdateList.rebuildLists();
 		Utils._staticprofiles.clear();
@@ -131,18 +130,16 @@ public class TransifexIntegration {
 		List<Issue> newIssues = new ArrayList<>();
 
 		for (Issue i : allIssues) {
-			ResultSet sql =
-			    Utils.sqlQuery(Utils.Databases.kAddOns,
-			                         "select * from txissues where id='" + i.issueID + "'");
+			ResultSet sql = Utils.sqlQuery(
+			    Utils.Databases.kAddOns, "select * from txissues where id='" + i.issueID + "'");
 			if (!sql.next()) {
 				newIssues.add(i);
 				Utils.sqlCmd(Utils.Databases.kAddOns,
-				                   "insert into txissues (id) value ('" + i.issueID + "')");
+				             "insert into txissues (id) value ('" + i.issueID + "')");
 			}
 		}
 
-		Utils.log("Found " + newIssues.size() + " new issue(s) (" + allIssues.size() +
-		                " total).");
+		Utils.log("Found " + newIssues.size() + " new issue(s) (" + allIssues.size() + " total).");
 		if (newIssues.isEmpty()) return;
 
 		Map<String, List<Issue>> perAddOn = new LinkedHashMap<>();
@@ -153,9 +150,9 @@ public class TransifexIntegration {
 
 		Map<Long, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
-			ResultSet sql = Utils.sqlQuery(
-			    Utils.Databases.kAddOns,
-			    "select user from uploaders where addon=" + Utils.getAddOnID(addon));
+			ResultSet sql =
+			    Utils.sqlQuery(Utils.Databases.kAddOns,
+			                   "select user from uploaders where addon=" + Utils.getAddOnID(addon));
 			while (sql.next()) {
 				Long uploader = sql.getLong("user");
 				if (!perUploader.containsKey(uploader))
@@ -174,10 +171,10 @@ public class TransifexIntegration {
 
 		for (Long uploader : perUploader.keySet()) {
 			sql = Utils.sqlQuery(Utils.Databases.kWebsite,
-			                           "select email,username from auth_user where id=" + uploader);
+			                     "select email,username from auth_user where id=" + uploader);
 			if (!sql.next()) {
 				Utils.log("User #" + uploader +
-				                " does not seem to be a registered user. No e-mail will be sent.");
+				          " does not seem to be a registered user. No e-mail will be sent.");
 				continue;
 			}
 			final String email = sql.getString("email");

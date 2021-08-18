@@ -99,8 +99,8 @@ public abstract class Utils {
 	}
 
 	public static long[] getVotes(long addon) throws Exception {
-		ResultSet sql = sqlQuery(Databases.kAddOns,
-		    "select vote from uservotes where addon=" + addon);
+		ResultSet sql =
+		    sqlQuery(Databases.kAddOns, "select vote from uservotes where addon=" + addon);
 		long[] votes = new long[10];
 		for (int i = 0; i < votes.length; i++) votes[i] = 0;
 		while (sql.next()) votes[sql.getInt("vote") - 1]++;
@@ -109,8 +109,7 @@ public abstract class Utils {
 
 	public static String getUploadersString(long addon, boolean onlyFirst) throws Exception {
 		ResultSet sql = Utils.sqlQuery(
-		    Utils.Databases.kAddOns,
-		    "select user from uploaders where addon=" + addon);
+		    Utils.Databases.kAddOns, "select user from uploaders where addon=" + addon);
 		String uploaders = "";
 		while (sql.next()) {
 			if (!uploaders.isEmpty()) uploaders += ",";
