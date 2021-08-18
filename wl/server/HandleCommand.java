@@ -84,24 +84,6 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
-	private static class AddOnComment {
-		public final long userID, timestamp;
-		public final Long editorID, editTimestamp;
-		public final String version, message;
-		public AddOnComment(long userID,
-		                    long timestamp,
-		                    Long editorID,
-		                    Long editTimestamp,
-		                    String version,
-		                    String message) {
-			this.userID = userID;
-			this.timestamp = timestamp;
-			this.editorID = editorID;
-			this.editTimestamp = editTimestamp;
-			this.version = version;
-			this.message = message;
-		}
-	}
 	public void handleCmdInfo() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
@@ -109,11 +91,12 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ServerUtils.semaphoreRO(cmd[1], () -> {
-			ResultSet sqlMain = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns, "select * from addons where name='" + cmd[1] + "'");
+			ResultSet sqlMain = Utils.sqlQuery(
+			    Utils.Databases.kAddOns, "select * from addons where name='" + cmd[1] + "'");
 			if (!sqlMain.next())
 				throw new ServerUtils.WLProtocolException("Add-on '" + cmd[1] +
 				                                          "' is not in the database");
+			final long addOnID = sqlMain.getLong("id");
 
 			TreeMap<String, Utils.Value> profile =
 			    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]);
@@ -127,16 +110,7 @@ class HandleCommand {
 			out.println(profile.get("author").value);
 			out.println(profile.get("author").value(locale));
 
-			ResultSet sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns,
-			    "select user from uploaders where addon=" + sqlMain.getLong("id"));
-			String uploaders = "";
-			while (sql.next()) {
-				if (!uploaders.isEmpty()) uploaders += ",";
-				uploaders += ServerUtils.getUsername(sql.getLong("user"));
-				if (protocolVersion < 5) break;  // Version 4 assumes there is only one uploader
-			}
-			out.println(uploaders);
+			out.println(Utils.getUploadersString(addOnID, protocolVersion < 5));  // Version 4 assumes there is only one uploader
 
 			out.println(profile.get("version").value);
 			out.println(sqlMain.getLong("i18n_version"));
@@ -156,32 +130,26 @@ class HandleCommand {
 			out.println(sqlMain.getLong("timestamp"));
 			out.println(sqlMain.getLong("downloads"));
 
-			sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns,
-			    "select vote from uservotes where addon=" + sqlMain.getLong("id"));
-			long[] votes = new long[10];
-			for (int i = 0; i < votes.length; i++) votes[i] = 0;
-			while (sql.next()) votes[sql.getInt("vote") - 1]++;
-			for (long v : votes) out.println(v);
+			for (long v : Utils.getVotes(addOnID)) out.println(v);
 
-			sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns,
-			    "select * from usercomments where addon=" + sqlMain.getLong("id"));
-			ArrayList<AddOnComment> comments = new ArrayList<>();
+			ResultSet sql = Utils.sqlQuery(
+			    Utils.Databases.kAddOns,
+			    "select * from usercomments where addon=" + addOnID);
+			ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
 			while (sql.next()) {
 				Long editorID = sql.getLong("editor");
 				if (sql.wasNull()) editorID = null;
 				Long editTS = sql.getLong("edit_timestamp");
 				if (sql.wasNull()) editTS = null;
-				comments.add(new AddOnComment(sql.getLong("user"), sql.getLong("timestamp"),
+				comments.add(new Utils.AddOnComment(sql.getLong("user"), sql.getLong("timestamp"),
 				                              editorID, editTS, sql.getString("version"),
 				                              sql.getString("message")));
 			}
 			out.println(comments.size());
-			for (AddOnComment c : comments) {
-				out.println(ServerUtils.getUsername(c.userID));
+			for (Utils.AddOnComment c : comments) {
+				out.println(Utils.getUsername(c.userID));
 				out.println(c.timestamp);
-				out.println(c.editorID == null ? "" : ServerUtils.getUsername(c.editorID));
+				out.println(c.editorID == null ? "" : Utils.getUsername(c.editorID));
 				out.println(c.editTimestamp == null ? 0 : c.editTimestamp);
 				out.println(c.version);
 
@@ -217,10 +185,10 @@ class HandleCommand {
 		});
 
 		ResultSet sql =
-		    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+		    Utils.sqlQuery(Utils.Databases.kAddOns,
 		                         "select id,downloads from addons where name='" + cmd[1] + "'");
 		sql.next();
-		ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+		Utils.sqlCmd(Utils.Databases.kAddOns,
 		                   "update addons set downloads=" + (sql.getLong("downloads") + 1) +
 		                       " where id=" + sql.getLong("id"));
 
@@ -259,14 +227,14 @@ class HandleCommand {
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
-		final long addon = ServerUtils.getAddOnID(cmd[1]);
+		final long addon = Utils.getAddOnID(cmd[1]);
 		final int vote = Integer.valueOf(cmd[2]);
-		ServerUtils.sqlCmd(
-		    ServerUtils.Databases.kAddOns,
+		Utils.sqlCmd(
+		    Utils.Databases.kAddOns,
 		    "delete from uservotes where user=" + userDatabaseID + " and addon=" + addon);
 		if (vote > 0) {
-			ServerUtils.sqlCmd(
-			    ServerUtils.Databases.kAddOns, "insert into uservotes (user, addon, vote) value (" +
+			Utils.sqlCmd(
+			    Utils.Databases.kAddOns, "insert into uservotes (user, addon, vote) value (" +
 			                                       userDatabaseID + "," + addon + "," + vote + ")");
 		}
 
@@ -283,8 +251,8 @@ class HandleCommand {
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
-		ResultSet sql = ServerUtils.sqlQuery(
-		    ServerUtils.Databases.kAddOns, "select vote from uservotes where user_id=" +
+		ResultSet sql = Utils.sqlQuery(
+		    Utils.Databases.kAddOns, "select vote from uservotes where user_id=" +
 		                                       userDatabaseID + " and addon='" + cmd[1] + "'");
 		out.println(sql.next() ? ("" + sql.getLong​(1)) : "0");
 		out.println("ENDOFSTREAM");
@@ -306,10 +274,10 @@ class HandleCommand {
 		}
 		ServerUtils.checkEndOfStream(in);
 
-		ServerUtils.sqlCmd(
-		    ServerUtils.Databases.kAddOns,
+		Utils.sqlCmd(
+		    Utils.Databases.kAddOns,
 		    "insert into usercomments (addon,user,timestamp,version,message) value(" +
-		        ServerUtils.getAddOnID(cmd[1]) + "," + userDatabaseID + "," +
+		        Utils.getAddOnID(cmd[1]) + "," + userDatabaseID + "," +
 		        (System.currentTimeMillis() / 1000) + ",'" + cmd[2] + "','" +
 		        msg.replaceAll("'", "\\'") + "')");
 
@@ -330,9 +298,9 @@ class HandleCommand {
 		if (protocolVersion >= 5) {
 			commentID = Integer.valueOf(cmd[1]);
 		} else {
-			ResultSet sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns,
-			    "select id from usercomments where addon=" + ServerUtils.getAddOnID(cmd[1]));
+			ResultSet sql = Utils.sqlQuery(
+			    Utils.Databases.kAddOns,
+			    "select id from usercomments where addon=" + Utils.getAddOnID(cmd[1]));
 			for (int i = Integer.valueOf(cmd[2]); i > 0; i--) {
 				if (!sql.next()) {
 					throw new ServerUtils.WLProtocolException("Invalid comment index " + cmd[2]);
@@ -341,7 +309,7 @@ class HandleCommand {
 			commentID = sql.getLong("id");
 		}
 		ResultSet sql =
-		    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+		    Utils.sqlQuery(Utils.Databases.kAddOns,
 		                         "select user,editor from usercomments where id=" + commentID);
 		if (!sql.next())
 			throw new ServerUtils.WLProtocolException("Invalid comment ID " + commentID);
@@ -368,10 +336,10 @@ class HandleCommand {
 		ServerUtils.checkEndOfStream(in);
 
 		if (nrLines == 0) {
-			ServerUtils.sqlCmd(
-			    ServerUtils.Databases.kAddOns, "delete from usercomments where id=" + commentID);
+			Utils.sqlCmd(
+			    Utils.Databases.kAddOns, "delete from usercomments where id=" + commentID);
 		} else {
-			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+			Utils.sqlCmd(Utils.Databases.kAddOns,
 			                   "update usercomments set editor=" + userDatabaseID +
 			                       ", edit_timestamp=" + (System.currentTimeMillis() / 1000) +
 			                       ", message='" + msg.replaceAll("'", "\\'") +
@@ -432,7 +400,7 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit screenshots");
-		if (!admin && !ServerUtils.isUploader(cmd[1], userDatabaseID))
+		if (!admin && !Utils.isUploader(cmd[1], userDatabaseID))
 			throw new ServerUtils.WLProtocolException(
 			    "You can not submit screenshots for another person's add-on");
 		long size = Long.valueOf(cmd[2]);
@@ -496,7 +464,7 @@ class HandleCommand {
 		/* No need here to check if the add-on exists. */
 
 		ServerUtils.semaphoreRW(cmd[1], () -> {
-			if (!admin && !ServerUtils.isUploader(cmd[1], userDatabaseID))
+			if (!admin && !Utils.isUploader(cmd[1], userDatabaseID))
 				throw new ServerUtils.WLProtocolException(
 				    "You can not overwrite another person's existing add-on");
 			File tempDir = Utils.createTempDir();
@@ -593,13 +561,13 @@ class HandleCommand {
 
 					isUpdate = true;
 				} else {
-					ServerUtils.sqlCmd(
-					    ServerUtils.Databases.kAddOns,
+					Utils.sqlCmd(
+					    Utils.Databases.kAddOns,
 					    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value('" +
 					        cmd[1] + "'," + (System.currentTimeMillis() / 1000) + ",0,0,0,0)");
-					ServerUtils.sqlCmd(
-					    ServerUtils.Databases.kAddOns, "insert into uploaders (addon,user) value(" +
-					                                       ServerUtils.getAddOnID(cmd[1]) + "," +
+					Utils.sqlCmd(
+					    Utils.Databases.kAddOns, "insert into uploaders (addon,user) value(" +
+					                                       Utils.getAddOnID(cmd[1]) + "," +
 					                                       userDatabaseID + ")");
 				}
 
@@ -634,9 +602,9 @@ class HandleCommand {
                          newProfile.get("requires").value) +
 				    "\n\nPlease review this add-on soonish.");
 				if (isUpdate) {
-					ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+					Utils.sqlCmd(Utils.Databases.kAddOns,
 					                   "update addons set security=0, quality=0 where id=" +
-					                       ServerUtils.getAddOnID(cmd[1]));
+					                       Utils.getAddOnID(cmd[1]));
 
 					ServerUtils.doDelete(addOnDir);
 					Utils._staticprofiles.remove(addOnMain);

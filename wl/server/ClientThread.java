@@ -37,14 +37,14 @@ class ClientThread implements Runnable {
 		long userDatabaseID = -1;
 		boolean didLogInSuccessfully = false, hideFromStats = false;
 		try {
-			ServerUtils.log("Connection received from " + socket.getInetAddress() + " : " +
+			Utils.log("Connection received from " + socket.getInetAddress() + " : " +
 			                socket.getPort() + " on " + socket.getLocalSocketAddress() + " (" +
 			                socket.getLocalAddress() + " : " + socket.getLocalPort() + ").");
 			out = new PrintStream(socket.getOutputStream(), true);
 			InputStream in = socket.getInputStream();
 
 			final String protocolVersionString = ServerUtils.readLine(in);
-			ServerUtils.log("Version: " + protocolVersionString);
+			Utils.log("Version: " + protocolVersionString);
 
 			if (protocolVersionString.equals("munin")) {
 				hideFromStats = true;
@@ -58,24 +58,24 @@ class ClientThread implements Runnable {
 				    "Unsupported version '" + protocolVersion + "' (supported versions are 4-5)");
 			}
 			final String locale = ServerUtils.readLine(in);
-			ServerUtils.log("Locale: " + locale);
+			Utils.log("Locale: " + locale);
 			final String username = ServerUtils.readLine(in);
-			ServerUtils.log("Username: " + username);
+			Utils.log("Username: " + username);
 			final String widelandsVersion = (protocolVersion < 5) ? null : ServerUtils.readLine(in);
-			if (widelandsVersion != null) ServerUtils.log("Widelands: " + widelandsVersion);
+			if (widelandsVersion != null) Utils.log("Widelands: " + widelandsVersion);
 			ServerUtils.checkEndOfStream(in);
 			boolean admin = false;
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
-				Long uid = ServerUtils.getUserID(username);
+				Long uid = Utils.getUserID(username);
 				if (uid == null)
 					throw new ServerUtils.WLProtocolException("User " + username +
 					                                          " is not registered");
 				userDatabaseID = uid;
 
-				ResultSet sql = ServerUtils.sqlQuery(
-				    ServerUtils.Databases.kWebsite,
+				ResultSet sql = Utils.sqlQuery(
+				    Utils.Databases.kWebsite,
 				    "select permissions,password from wlggz_ggzauth where user_id=" +
 				        userDatabaseID);
 				if (!sql.next())
@@ -99,15 +99,15 @@ class ClientThread implements Runnable {
 			String cmd;
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
 				ServerUtils.SYNCER.tick(socket);
-				ServerUtils.log("Received command: " + cmd);
+				Utils.log("Received command: " + cmd);
 				Server.handle(cmd.split(" "), out, in, protocolVersion, widelandsVersion, username,
 				              userDatabaseID, admin, locale);
 			}
 		} catch (Exception e) {
-			ServerUtils.log("ERROR: " + e);
+			Utils.log("ERROR: " + e);
 			if (out != null) out.println(e);
 		} finally {
-			ServerUtils.log("Connection quit.");
+			Utils.log("Connection quit.");
 			if (!hideFromStats) {
 				if (didLogInSuccessfully) {
 					MuninStatistics.MUNIN.registerLogout(userDatabaseID);

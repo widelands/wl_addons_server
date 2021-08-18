@@ -29,12 +29,12 @@ public class Server {
 		Utils.bash("bash", "-c", "echo $PPID");  // Print our PID to the logfile so the maintainer
 		                                         // knows how to kill the server process.
 
-		ServerUtils.initDatabases();
+		Utils.initDatabases();
 
-		ServerUtils.log("Server starting...");
+		Utils.log("Server starting...");
 		ServerSocket serverSocket = new ServerSocket(Integer.valueOf(Utils.config("port")));
 		new Thread(new SyncThread(), "Syncer").start();
-		ServerUtils.log("Ready.");
+		Utils.log("Ready.");
 		long n = 0;
 		while (true) {
 			Socket s = serverSocket.accept();

@@ -52,17 +52,17 @@ import wl.utils.*;
 
 public class MetadataToDatabase {
 	public static void main(String[] args) throws Exception {
-		ServerUtils.initDatabases();
+		Utils.initDatabases();
 
 		for (File addon : Utils.listSorted(new File("addons"))) {
-			ServerUtils.log("Converting: " + addon.getName());
+			Utils.log("Converting: " + addon.getName());
 			TreeMap<String, Utils.Value> mdS = Utils.readProfile(
 			    new File("metadata", addon.getName() + ".server"), addon.getName());
 			TreeMap<String, Utils.Value> mdM = Utils.readProfile(
 			    new File("metadata", addon.getName() + ".maintain"), addon.getName());
 
-			ServerUtils.sqlCmd(
-			    ServerUtils.Databases.kAddOns,
+			Utils.sqlCmd(
+			    Utils.Databases.kAddOns,
 			    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value ("
 			        + "'" + addon.getName() + "'," + mdM.get("timestamp").value + "," +
 			        mdM.get("i18n_version").value + ","
@@ -70,21 +70,21 @@ public class MetadataToDatabase {
 			        + "0," + mdS.get("downloads").value + ")");
 
 			ResultSet sql =
-			    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+			    Utils.sqlQuery(Utils.Databases.kAddOns,
 			                         "select id from addons where name='" + addon.getName() + "'");
 			sql.next();
 			final long addonID = sql.getLong​("id");
 
-			final Long uid = ServerUtils.getUserID(mdM.get("uploader").value);
+			final Long uid = Utils.getUserID(mdM.get("uploader").value);
 			if (uid != null) {
-				ServerUtils.sqlCmd(
-				    ServerUtils.Databases.kAddOns,
+				Utils.sqlCmd(
+				    Utils.Databases.kAddOns,
 				    "insert into uploaders (addon,user) value(" + addonID + "," + uid + ")");
 			}
 
 			final int nrComments = Integer.valueOf(mdS.get("comments").value);
 			for (int i = 0; i < nrComments; ++i) {
-				ServerUtils.log("Converting comment #" + i);
+				Utils.log("Converting comment #" + i);
 				final int nrLines = Integer.valueOf(mdS.get("comment_" + i).value);
 				String message = "";
 				for (int j = 0; j <= nrLines; ++j) {
@@ -100,14 +100,14 @@ public class MetadataToDatabase {
 				if (vEditTS != null) command += "edit_timestamp,";
 				command += "version,message) value(";
 				command += addonID + ",";
-				command += ServerUtils.getUserID(mdS.get("comment_name_" + i).value) + ",";
+				command += Utils.getUserID(mdS.get("comment_name_" + i).value) + ",";
 				command += mdS.get("comment_timestamp_" + i).value + ",";
 				if (vEditor != null) command += vEditor.value + ",";
 				if (vEditTS != null) command += vEditTS.value + ",";
 				command += "'" + mdS.get("comment_version_" + i).value + "',";
 				command += "'" + message + "')";
 
-				ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns, command);
+				Utils.sqlCmd(Utils.Databases.kAddOns, command);
 			}
 		}
 	}

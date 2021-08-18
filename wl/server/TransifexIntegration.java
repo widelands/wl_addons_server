@@ -37,19 +37,19 @@ public class TransifexIntegration {
 	}
 
 	public synchronized void pull() throws Exception {
-		ServerUtils.log("Pulling translations from Transifex...");
+		Utils.log("Pulling translations from Transifex...");
 		Utils.bashOutput("tx", "pull", "-f", "-a");
 	}
 	public synchronized void push() throws Exception {
-		ServerUtils.log("Pushing POT files to Transifex...");
+		Utils.log("Pushing POT files to Transifex...");
 		Utils.bashOutput("tx", "push", "-s");
 	}
 
 	public synchronized void buildCatalogues() throws Exception {
-		ServerUtils.log("Rebuilding catalogues...");
+		Utils.log("Rebuilding catalogues...");
 		Buildcats.buildCatalogues();
 
-		ServerUtils.log("Updating PO and MO files...");
+		Utils.log("Updating PO and MO files...");
 		ServerUtils.doDelete(new File("i18n"));
 		for (File poDir : Utils.listSorted(new File("po"))) {
 			for (File poFile : Utils.listSorted(poDir)) {
@@ -73,7 +73,7 @@ public class TransifexIntegration {
 			}
 		}
 
-		ServerUtils.log("Gathering translation changes...");
+		Utils.log("Gathering translation changes...");
 		Utils.bashOutput("git", "add", "i18n");
 		HashSet<String> increasedMO = new HashSet<>();
 		for (String changed :
@@ -88,12 +88,12 @@ public class TransifexIntegration {
 			if (increasedMO.contains(changed)) continue;
 			increasedMO.add(changed);
 
-			ResultSet sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns,
+			ResultSet sql = Utils.sqlQuery(
+			    Utils.Databases.kAddOns,
 			    "select id,i18n_version from addons where name='" + changed + "'");
 			if (!sql.next()) throw new Exception("Add-on '" + changed + "' is not in the database");
-			ServerUtils.sqlCmd(
-			    ServerUtils.Databases.kAddOns,
+			Utils.sqlCmd(
+			    Utils.Databases.kAddOns,
 			    "update addons set i18n_version=" + (sql.getLong("i18n_version") + 1) +
 			        " where id=" + sql.getLong("id"));
 		}
@@ -126,22 +126,22 @@ public class TransifexIntegration {
 	}
 
 	public synchronized void checkIssues() throws Exception {
-		ServerUtils.log("Checking Transifex issues...");
+		Utils.log("Checking Transifex issues...");
 		List<Issue> allIssues = fetchIssues();
 		List<Issue> newIssues = new ArrayList<>();
 
 		for (Issue i : allIssues) {
 			ResultSet sql =
-			    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+			    Utils.sqlQuery(Utils.Databases.kAddOns,
 			                         "select * from txissues where id='" + i.issueID + "'");
 			if (!sql.next()) {
 				newIssues.add(i);
-				ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+				Utils.sqlCmd(Utils.Databases.kAddOns,
 				                   "insert into txissues (id) value ('" + i.issueID + "')");
 			}
 		}
 
-		ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" + allIssues.size() +
+		Utils.log("Found " + newIssues.size() + " new issue(s) (" + allIssues.size() +
 		                " total).");
 		if (newIssues.isEmpty()) return;
 
@@ -153,9 +153,9 @@ public class TransifexIntegration {
 
 		Map<Long, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
-			ResultSet sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kAddOns,
-			    "select user from uploaders where addon=" + ServerUtils.getAddOnID(addon));
+			ResultSet sql = Utils.sqlQuery(
+			    Utils.Databases.kAddOns,
+			    "select user from uploaders where addon=" + Utils.getAddOnID(addon));
 			while (sql.next()) {
 				Long uploader = sql.getLong("user");
 				if (!perUploader.containsKey(uploader))
@@ -164,19 +164,19 @@ public class TransifexIntegration {
 			}
 		}
 
-		ResultSet sql = ServerUtils.sqlQuery(
-		    ServerUtils.Databases.kWebsite,
+		ResultSet sql = Utils.sqlQuery(
+		    Utils.Databases.kWebsite,
 		    "select id from notification_noticetype where label='addon_transifex_issues'");
 		final boolean noticeTypeKnown = sql.next();
 		if (!noticeTypeKnown)
-			ServerUtils.log("Notification type addon_transifex_issues was not defined yet");
+			Utils.log("Notification type addon_transifex_issues was not defined yet");
 		final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
 
 		for (Long uploader : perUploader.keySet()) {
-			sql = ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite,
+			sql = Utils.sqlQuery(Utils.Databases.kWebsite,
 			                           "select email,username from auth_user where id=" + uploader);
 			if (!sql.next()) {
-				ServerUtils.log("User #" + uploader +
+				Utils.log("User #" + uploader +
 				                " does not seem to be a registered user. No e-mail will be sent.");
 				continue;
 			}
@@ -184,12 +184,12 @@ public class TransifexIntegration {
 			final String username = sql.getString("username");
 
 			if (noticeTypeKnown) {
-				sql = ServerUtils.sqlQuery(
-				    ServerUtils.Databases.kWebsite,
+				sql = Utils.sqlQuery(
+				    Utils.Databases.kWebsite,
 				    "select send from notification_noticesetting where user_id=" + uploader +
 				        " and medium=1 and notice_type_id=" + noticeTypeID);
 				if (sql.next() && sql.getShort("send") < 1) {
-					ServerUtils.log("User '" + username + "' disabled notifications.");
+					Utils.log("User '" + username + "' disabled notifications.");
 					continue;
 				}
 			}

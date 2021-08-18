@@ -31,7 +31,7 @@ public class MuninStatistics {
 		if (version != 1)
 			throw new ServerUtils.WLProtocolException("Unsupported munin version '" + version +
 			                                          "' (only supported version is '1')");
-		ServerUtils.log("Munin version: " + version);
+		Utils.log("Munin version: " + version);
 		ServerUtils.checkEndOfStream(in);
 
 		ServerUtils.passwordAuthentification(in, out, Utils.config("muninpassword"));

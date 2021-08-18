@@ -17,6 +17,8 @@ jobs:
         sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-12 100
         sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-12 100
         sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/clang-format-12 100
+    - name: Test building
+      run: ./compile.sh
     - name: Formatting code
       run: clang-format -i wl/*/*.java
     - uses: stefanzweifel/git-auto-commit-action@v4

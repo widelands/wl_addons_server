@@ -21,10 +21,104 @@ package wl.utils;
 
 import java.io.*;
 import java.nio.file.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.util.*;
 
 public abstract class Utils {
 	public static final TreeMap<File, TreeMap<String, Value>> _staticprofiles = new TreeMap<>();
+
+	public static void log(String msg) {
+		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
+		                   msg);
+	}
+
+	public static enum Databases {
+		kWebsite("websitedatabase"),
+		kAddOns("addonsdatabase");
+
+		public final String configKey;
+		private Databases(String k) { configKey = k; }
+	}
+	private static final Connection[] _databases = new Connection[Databases.values().length];
+
+	public static void initDatabases() throws Exception {
+		log("Initializing SQL...");
+
+		Properties connectionProps = new Properties();
+		connectionProps.put("user", Utils.config("databaseuser"));
+		connectionProps.put("password", Utils.config("databasepassword"));
+
+		for (Databases db : Databases.values()) {
+			_databases[db.ordinal()] = DriverManager.getConnection​(
+			    "jdbc:mysql://" + Utils.config("databasehost") + ":" +
+			        Utils.config("databaseport") + "/" + Utils.config(db.configKey),
+			    connectionProps);
+		}
+	}
+
+	public static ResultSet sqlQuery(Databases db, String query) throws Exception {
+		Connection c = _databases[db.ordinal()];
+		synchronized (c) { return c.createStatement().executeQuery(query); }
+	}
+	public static void sqlCmd(Databases db, String cmd) throws Exception {
+		Connection c = _databases[db.ordinal()];
+		synchronized (c) { c.createStatement().execute(cmd); }
+	}
+
+	public static String getUsername(long id) throws Exception {
+		ResultSet r = sqlQuery(Databases.kWebsite, "select username from auth_user where id=" + id);
+		if (!r.next()) return null;
+		return r.getString("username");
+	}
+	public static Long getUserID(String name) throws Exception {
+		ResultSet r =
+		    sqlQuery(Databases.kWebsite, "select id from auth_user where username='" + name + "'");
+		if (!r.next()) return null;
+		return r.getLong("id");
+	}
+	public static Long getAddOnID(String name) throws Exception {
+		ResultSet r =
+		    sqlQuery(Databases.kAddOns, "select id from addons where name='" + name + "'");
+		if (!r.next()) return null;
+		return r.getLong("id");
+	}
+
+	public static boolean isUploader(String addon, long userID) throws Exception {
+		ResultSet sql = sqlQuery(
+		    Databases.kAddOns, "select user from uploaders where addon=" + getAddOnID(addon));
+		boolean noUploaders = true;
+		while (sql.next()) {
+			if (sql.getLong("user") == userID) {
+				return true;
+			}
+			noUploaders = false;
+		}
+		return noUploaders;
+	}
+
+	public static long[] getVotes(long addon) throws Exception {
+		ResultSet sql = sqlQuery(Databases.kAddOns,
+		    "select vote from uservotes where addon=" + addon);
+		long[] votes = new long[10];
+		for (int i = 0; i < votes.length; i++) votes[i] = 0;
+		while (sql.next()) votes[sql.getInt("vote") - 1]++;
+		return votes;
+	}
+
+	public static String getUploadersString(long addon, boolean onlyFirst) throws Exception {
+		ResultSet sql = Utils.sqlQuery(
+		    Utils.Databases.kAddOns,
+		    "select user from uploaders where addon=" + addon);
+		String uploaders = "";
+		while (sql.next()) {
+			if (!uploaders.isEmpty()) uploaders += ",";
+			uploaders += getUsername(sql.getLong("user"));
+			if (onlyFirst) break;
+		}
+		return uploaders;
+	}
 
 	public static File[] listSorted(File dir) {
 		File[] files = dir.listFiles();
@@ -104,6 +198,25 @@ public abstract class Utils {
 		str = minutes + "min " + str;
 		if (hours == 0) return str;
 		return hours + "h " + str;
+	}
+
+	public static class AddOnComment {
+		public final long userID, timestamp;
+		public final Long editorID, editTimestamp;
+		public final String version, message;
+		public AddOnComment(long userID,
+		                    long timestamp,
+		                    Long editorID,
+		                    Long editTimestamp,
+		                    String version,
+		                    String message) {
+			this.userID = userID;
+			this.timestamp = timestamp;
+			this.editorID = editorID;
+			this.editTimestamp = editTimestamp;
+			this.version = version;
+			this.message = message;
+		}
 	}
 
 	public static class Value {

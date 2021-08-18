@@ -27,7 +27,7 @@ import wl.utils.*;
 class ThreadActivityAndGitHubSyncManager {
 	public synchronized void sync() throws Exception {
 		if (!Boolean.parseBoolean(Utils.config("deploy"))) {
-			ServerUtils.log("Test environment sync skipped");
+			Utils.log("Test environment sync skipped");
 			return;
 		}
 
@@ -78,7 +78,7 @@ class ThreadActivityAndGitHubSyncManager {
 			}
 		}
 		for (Thread t : kill.keySet()) {
-			ServerUtils.log("Force-closing socket for [" + t.getName() + "] (last activity was " +
+			Utils.log("Force-closing socket for [" + t.getName() + "] (last activity was " +
 			                Utils.durationString(kill.get(t)) + " ago).");
 			Socket s = _allActiveClientThreads.remove(t).socket;
 			s.close();
