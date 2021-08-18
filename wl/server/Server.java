@@ -34,6 +34,7 @@ public class Server {
 	 * The server's main loop. This runs forever until the server is killed
 	 * with Ctrl-C or ``kill PID``.
 	 * @param args Ignored.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void main(String[] args) throws Exception {
 		Utils.bash("bash", "-c", "echo $PPID");  // Print our PID to the logfile so the maintainer

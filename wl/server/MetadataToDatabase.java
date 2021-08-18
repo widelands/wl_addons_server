@@ -54,6 +54,7 @@ public class MetadataToDatabase {
 	/**
 	 * Migration main function.
 	 * @param args Ignored.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void main(String[] args) throws Exception {
 		Utils.initDatabases();

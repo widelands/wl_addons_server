@@ -39,8 +39,10 @@ abstract class ServerUtils {
 	 * Interface to describe a simple method that takes no parameters and may throw any %Exception.
 	 */
 	public static interface Functor {
+
 		/**
 		 * This can be any function at all.
+		 * @throws Exception If anything at all goes wrong, throw an %Exception.
 		 */
 		public void run() throws Exception;
 	}
@@ -64,6 +66,7 @@ abstract class ServerUtils {
 	 * thread has releases the resource again before starting to run your code.
 	 * @param addon Resource to protect.
 	 * @param f Code to execute.
+	 * @throws Exception Throw by #f.
 	 */
 	public static void semaphoreRO(String addon, Functor f) throws Exception {
 		doSemaphore(addon, 1, f);
@@ -77,6 +80,7 @@ abstract class ServerUtils {
 	 * all other threads have released the resource again before starting to run your code.
 	 * @param addon Resource to protect.
 	 * @param f Code to execute.
+	 * @throws Exception Thrown by #f.
 	 */
 	public static void semaphoreRW(String addon, Functor f) throws Exception {
 		doSemaphore(addon, SEMAPHORE_BLOCK_RW_ACCESS, f);
@@ -116,6 +120,7 @@ abstract class ServerUtils {
 	 * Read a single line of input from a stream.
 	 * @param in Stream to read from.
 	 * @return The text read.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
 
@@ -125,6 +130,7 @@ abstract class ServerUtils {
 	 * @param exceptionOnStreamEnd If this is \c false, no %Exception will be thrown if the stream
 	 *                             is closed during reading. Instead \c null will be returned.
 	 * @return The text read, or \c null if the stream was closed.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String readLine(InputStream in, boolean exceptionOnStreamEnd) throws Exception {
 		ByteArrayOutputStream buffer = new ByteArrayOutputStream();
@@ -146,6 +152,7 @@ abstract class ServerUtils {
 	 * Check that the next line of text from the given stream is the end-of-input delimiter.
 	 * Throws an exception if this is not the case.
 	 * @param in Stream to read from.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void checkEndOfStream(InputStream in) throws Exception {
 		if (!readLine(in).equals("ENDOFSTREAM"))
@@ -201,6 +208,7 @@ abstract class ServerUtils {
 		/**
 		 * Recursively write all files to a stream.
 		 * @param out Stream to write to.
+		 * @throws Exception If anything at all goes wrong, throw an %Exception.
 		 */
 		public void writeAllFileInfos(PrintStream out) throws Exception {
 			out.println(regularFiles.size());
@@ -217,8 +225,9 @@ abstract class ServerUtils {
 	 * Throws an exception if this is not the case.
 	 * @param cmd Command array (the arguments are positioned in index \c 1+).
 	 * @param expected Number of expected arguments (not counting the command itself).
+	 * @throws WLProtocolException If anything at all goes wrong, throw an %Exception.
 	 */
-	public static void checkNrArgs(String[] cmd, int expected) {
+	public static void checkNrArgs(String[] cmd, int expected) throws WLProtocolException {
 		if (cmd.length != expected + 1)
 			throw new WLProtocolException("Expected " + expected + " argument(s), found " +
 			                              (cmd.length - 1));
@@ -229,8 +238,9 @@ abstract class ServerUtils {
 	 * Throws an exception if this is not the case.
 	 * @param name Name to check.
 	 * @param directory Is this name supposed to denote a regular file or a directory.
+	 * @throws WLProtocolException If anything at all goes wrong, throw an %Exception.
 	 */
-	public static void checkNameValid(String name, boolean directory) {
+	public static void checkNameValid(String name, boolean directory) throws WLProtocolException {
 		if (name == null || (!directory && name.isEmpty()))
 			throw new WLProtocolException("Empty name");
 		if (name.length() > 80)
@@ -256,8 +266,9 @@ abstract class ServerUtils {
 	 * Check that an add-on exists.
 	 * Throws an exception if this is not the case.
 	 * @param name Name to check.
+	 * @throws WLProtocolException If anything at all goes wrong, throw an %Exception.
 	 */
-	public static void checkAddOnExists(String name) {
+	public static void checkAddOnExists(String name) throws WLProtocolException {
 		if (!(new File("addons/" + name, "addon").isFile())) {
 			throw new WLProtocolException("Add-on '" + name + "' does not exist");
 		}
@@ -267,6 +278,7 @@ abstract class ServerUtils {
 	 * Dump a file and some of its metadata to a stream.
 	 * @param f File to send.
 	 * @param out Stream to write to.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
 		out.println(Utils.checksum(f));
@@ -304,6 +316,7 @@ abstract class ServerUtils {
 	 * Process a client's enquiry.
 	 * @param username Name of the user who sent the enquiry.
 	 * @param msg Enquiry message.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void sendEnquiry(String username, String msg) throws Exception {
 		File dir = new File("enquiries");
@@ -331,6 +344,7 @@ abstract class ServerUtils {
 	 * @param in Stream to receive further data from the client.
 	 * @param out Stream to send data to the client.
 	 * @param correctPassword The password required for successful authentification.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void passwordAuthentification(InputStream in,
 	                                            PrintStream out,

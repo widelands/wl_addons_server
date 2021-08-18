@@ -23,7 +23,7 @@ package wl.server;
  * After the first contact, the client must send the following info:
  *  - Protocol version, \n
  *  - Language name (e.g. "nds"), \n
- *  - [Protocol version >= 5]: Widelands version (e.g. "1.1~git25425[1317dd9@master]"), \n
+ *  - {@literal Protocol version >= 5}: Widelands version (e.g. \c "1.1~git25425[1317dd9@master]"), \n
  *  - Username (or "" for no user), \n
  *  - ENDOFSTREAM\n
  * If the username is "", the server then replies ENDOFSTREAM\n.
@@ -80,7 +80,7 @@ package wl.server;
  */
 public enum Command {
 	/**
-	 * CMD_LIST [5+: all]
+	 * ``CMD_LIST [5+: all]``
 	 * List all available add-on names.
 	 * In version 4, no arguments are accepted.
 	 * In version 5, a boolean argument is required to indicate whether to list
@@ -94,7 +94,7 @@ public enum Command {
 	CMD_LIST,
 
 	/**
-	 * CMD_INFO name
+	 * ``CMD_INFO name``
 	 * Returns detailed info about a specific addon.
 	 * Arg 1: Add-on name
 	 * Returns:
@@ -104,8 +104,8 @@ public enum Command {
 	 *  - localized description, \n
 	 *  - unlocalized author, \n
 	 *  - localized author, \n
-	 *  - [Protocol version <= 4]: name of the main uploader, \n
-	 *  - [Protocol version >= 5]: comma-separated list of uploaders, \n
+	 *  - {@literal Protocol version <= 4}: name of the main uploader, \n
+	 *  - {@literal Protocol version >= 5}: comma-separated list of uploaders, \n
 	 *  - add-on version string, \n
 	 *  - i18n version string, \n
 	 *  - category string, \n
@@ -131,7 +131,7 @@ public enum Command {
 	 *      - number of \n characters in the message, \n
 	 *      - message, \n
 	 *  - "verified" or "unchecked", \n
-	 *  - [Protocol version >= 5]: Code quality rating \n
+	 *  - {@literal Protocol version >= 5}: Code quality rating \n
 	 *  - icon checksum (0 for no icon), \n
 	 *  - icon filesize (0 for no icon), \n
 	 *  - icon file as a byte stream
@@ -140,7 +140,7 @@ public enum Command {
 	CMD_INFO,
 
 	/**
-	 * CMD_DOWNLOAD name
+	 * ``CMD_DOWNLOAD name``
 	 * Download an add-on as a byte stream.
 	 * Arg 1: Add-on name
 	 * Returns:
@@ -163,14 +163,14 @@ public enum Command {
 	CMD_DOWNLOAD,
 
 	/**
-	 * CMD_I18N name
+	 * ``CMD_I18N name``
 	 * Download an add-on's translations as a byte stream.
 	 * Arg 1: Add-on name
 	 * Returns:
 	 *   - Integer string denoting number T of translations
 	 *   - \n
 	 *   - For each of the T languages:
-	 *     - <language_name>.mo
+	 *     - {@literal<language_name>}.mo
 	 *     - \n
 	 *     - checksum
 	 *     - \n
@@ -183,7 +183,7 @@ public enum Command {
 	CMD_I18N,
 
 	/**
-	 * CMD_SCREENSHOT addon screenie
+	 * ``CMD_SCREENSHOT addon screenie``
 	 * Download a screenshot.
 	 * Arg 1: Add-on name
 	 * Arg 2: Screenshot name
@@ -198,7 +198,7 @@ public enum Command {
 	CMD_SCREENSHOT,
 
 	/**
-	 * CMD_VOTE name vote
+	 * ``CMD_VOTE name vote``
 	 * Vote on an add-on.
 	 * Arg 1: Add-on name
 	 * Arg 2: Vote (as string) 1-10
@@ -207,7 +207,7 @@ public enum Command {
 	CMD_VOTE,
 
 	/**
-	 * CMD_GET_VOTE name
+	 * ``CMD_GET_VOTE name``
 	 * How the user voted an add-on.
 	 * Arg 1: Add-on name
 	 * Returns: NOT_LOGGED_IN\n, or vote as string followed by \n and ENDOFSTREAM\n
@@ -215,7 +215,7 @@ public enum Command {
 	CMD_GET_VOTE,
 
 	/**
-	 * CMD_COMMENT name version lines
+	 * ``CMD_COMMENT name version lines``
 	 * Comment on an add-on.
 	 * Arg 1: Add-on name
 	 * Arg 2: Add-on version
@@ -226,7 +226,7 @@ public enum Command {
 	CMD_COMMENT,
 
 	/**
-	 * CMD_EDIT_COMMENT [4: name] index lines
+	 * ``CMD_EDIT_COMMENT [4: name] index lines``
 	 * Edit an existing comment.
 	 * Protocol version 4:
 	 *     Arg 1: Add-on name
@@ -236,13 +236,13 @@ public enum Command {
 	 *     Arg 1: Database ID of the comment.
 	 *     Arg 2: Number of lines in the message
 	 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
-	 * In protocol version >= 5, 0 lines denote deletion of the comment.
+	 * In {@literal protocol version >= 5}, 0 lines denote deletion of the comment.
 	 * Returns: ENDOFSTREAM\n or an error message\n
 	 */
 	CMD_EDIT_COMMENT,
 
 	/**
-	 * CMD_SUBMIT name
+	 * ``CMD_SUBMIT name``
 	 * Upload an add-on.
 	 * Arg 1: Add-on name
 	 * Then, on the next line, the content of the add-on like the response for CMD_DOWNLOAD,
@@ -252,7 +252,7 @@ public enum Command {
 	CMD_SUBMIT,
 
 	/**
-	 * CMD_SUBMIT_SCREENSHOT name filesize checksum whitespaces description
+	 * ``CMD_SUBMIT_SCREENSHOT name filesize checksum whitespaces description``
 	 * Upload a screenshot.
 	 * Arg 1: Add-on name
 	 * Arg 2: Filesize in bytes
@@ -266,7 +266,7 @@ public enum Command {
 	CMD_SUBMIT_SCREENSHOT,
 
 	/**
-	 * CMD_CONTACT lines
+	 * ``CMD_CONTACT lines``
 	 * Send an enquiry to the Widelands Development Team.
 	 * Arg 1: Number of lines in the message
 	 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
@@ -275,7 +275,7 @@ public enum Command {
 	CMD_CONTACT,
 
 	/**
-	 * CMD_SETUP_TX name
+	 * ``CMD_SETUP_TX name``
 	 * Set up transifex integration for an add-on. Only admins may do this.
 	 * Arg 1: Add-on name
 	 * Returns: ENDOFSTREAM\n or an error message\n

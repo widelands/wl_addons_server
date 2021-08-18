@@ -70,13 +70,16 @@ public abstract class Utils {
 		 */
 		kAddOns("addonsdatabase");
 
+		/** The key in the config file that is mapped to this database's name. */
 		public final String configKey;
+
 		private Databases(String k) { configKey = k; }
 	}
 	private static final Connection[] _databases = new Connection[Databases.values().length];
 
 	/**
 	 * Initialize the databases. Call this only on startup.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void initDatabases() throws Exception {
 		log("Initializing SQL...");
@@ -98,6 +101,7 @@ public abstract class Utils {
 	 * @param db Database to use.
 	 * @param query Statement to execute.
 	 * @return The result of the query.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static ResultSet sqlQuery(Databases db, String query) throws Exception {
 		Connection c = _databases[db.ordinal()];
@@ -107,7 +111,8 @@ public abstract class Utils {
 	/**
 	 * Execute an SQL statement without returning anything.
 	 * @param db Database to use.
-	 * @param query Statement to execute.
+	 * @param cmd Statement to execute.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void sqlCmd(Databases db, String cmd) throws Exception {
 		Connection c = _databases[db.ordinal()];
@@ -118,6 +123,7 @@ public abstract class Utils {
 	 * Retrieve the name of a user from the database.
 	 * @param id The user's ID.
 	 * @return The user's name.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String getUsername(long id) throws Exception {
 		ResultSet r = sqlQuery(Databases.kWebsite, "select username from auth_user where id=" + id);
@@ -129,6 +135,7 @@ public abstract class Utils {
 	 * Retrieve the ID of a user from the database.
 	 * @param name The user's name.
 	 * @return The user's ID.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static Long getUserID(String name) throws Exception {
 		ResultSet r =
@@ -141,6 +148,7 @@ public abstract class Utils {
 	 * Retrieve the ID of an add-on from the database.
 	 * @param name The add-on's name.
 	 * @return The add-on's ID.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static Long getAddOnID(String name) throws Exception {
 		ResultSet r =
@@ -155,6 +163,7 @@ public abstract class Utils {
 	 * @param addon The add-on's name.
 	 * @param userID The user's ID.
 	 * @return The user has write access to the add-on.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static boolean isUploader(String addon, long userID) throws Exception {
 		ResultSet sql = sqlQuery(
@@ -173,6 +182,7 @@ public abstract class Utils {
 	 * Retrieve the voting statistics of an add-on from the database.
 	 * @param addon The add-on's ID.
 	 * @return An array of size \c 10 with the number of \c i votes in index ``(i-1)``.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static long[] getVotes(long addon) throws Exception {
 		ResultSet sql =
@@ -188,6 +198,7 @@ public abstract class Utils {
 	 * @param addon The add-on's ID.
 	 * @param onlyFirst List at most one uploader in the result.
 	 * @return Comma-separated of the uploaders.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String getUploadersString(long addon, boolean onlyFirst) throws Exception {
 		ResultSet sql = Utils.sqlQuery(
@@ -234,8 +245,8 @@ public abstract class Utils {
 
 	/**
 	 * Create a temporary directory.
+	 * The caller needs to ensure the directory is deleted later.
 	 * @return Path to an existing temporary directory.
-	 * @note The caller needs to ensure the directory is deleted later.
 	 */
 	synchronized public static File createTempDir() {
 		File d;
@@ -250,6 +261,7 @@ public abstract class Utils {
 	 * Run a shell script, and echo the whole script and its output to standard output.
 	 * @param args The command and its arguments.
 	 * @return The exit status of the command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static int bash(String... args) throws Exception {
 		System.out.print("    $");
@@ -275,6 +287,7 @@ public abstract class Utils {
 	 * The standard error and exit value are discarded.
 	 * @param args The command and its arguments.
 	 * @return The output.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String bashOutput(String... args) throws Exception {
 		Process p = new ProcessBuilder(args).start();
@@ -316,9 +329,24 @@ public abstract class Utils {
 	 * Class to represent a user's comment on an add-on.
 	 */
 	public static class AddOnComment {
-		public final long userID, timestamp;
-		public final Long editorID, editTimestamp;
-		public final String version, message;
+
+		/** The ID of the user who created this comment. */
+		public final long userID;
+
+		/** The timestamp when this comment was created. */
+		public final long timestamp;
+
+		/** The ID of the user who last edited this comment (may be \c null). */
+		public final Long editorID;
+
+		/** The timestamp when this comment was last edited (may be \c null). */
+		public final Long editTimestamp;
+
+		/** Version of the add-on about which the comment was written. */
+		public final String version;
+
+		/** Text of the comment. */
+		public final String message;
 
 		/**
 		 * Constructor.
@@ -348,7 +376,15 @@ public abstract class Utils {
 	 * Class to represent a key-value pair of an ini-style file.
 	 */
 	public static class Value {
-		public final String key, value, textdomain;
+
+		/** The key to which this value is mapped. */
+		public final String key;
+
+		/** The raw, untranslated value. */
+		public final String value;
+
+		/** The textdomain to use for translating (\c null for non-translatable strings). */
+		public final String textdomain;
 
 		/**
 		 * Return the localized value. If this %Value is not localizable, returns the raw value.
@@ -405,6 +441,7 @@ public abstract class Utils {
 	 * @param textdomain Textdomain for translatable strings in the file
 	 *                   (may be \c null if the file is not meant to be translated).
 	 * @return The key-value pairs.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	synchronized public static TreeMap<String, Value> readProfile(File f, String textdomain)
 	    throws Exception {
@@ -458,7 +495,8 @@ public abstract class Utils {
 	 * @param f File to use.
 	 * @param textdomain Textdomain for translatable strings in the file
 	 *                   (may be \c null if the file is not meant to be translated).
-	 * @changes The key-value pairs to modify.
+	 * @param changes The key-value pairs to modify.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	synchronized public static void
 	editProfile(File f, String textdomain, TreeMap<String, Value> changes) throws Exception {
@@ -481,6 +519,7 @@ public abstract class Utils {
 	 * Retrieve a value from the server config file.
 	 * @param key Key to look up.
 	 * @return The configured value.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String config(String key) throws Exception {
 		return readProfile(new File("config"), null).get(key).value;
@@ -524,6 +563,7 @@ public abstract class Utils {
 	 * for all events that require the attention of a server maintainer.
 	 * The thread is publicly visible, do not send sensitive data here.
 	 * @param msg Message to post.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void sendNotificationToGitHubThread(String msg) throws Exception {
 		msg = msg.replaceAll("\n", "\\\\n");

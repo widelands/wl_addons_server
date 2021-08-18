@@ -141,6 +141,7 @@ class ClientThread implements Runnable {
 	 * @param userDatabaseID ID of the user (only valid for registered users).
 	 * @param admin Whether the user is a registered administrator.
 	 * @param locale Language the client is speaking.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	private void handle(String[] cmd,
 	                          PrintStream out,

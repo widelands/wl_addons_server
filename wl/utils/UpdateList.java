@@ -260,6 +260,7 @@ public class UpdateList {
 
 	/**
 	 * Regenerate all list* files.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void rebuildLists() throws Exception {
 		final Map<String, Data> data = detectAndUpdateMetadata();

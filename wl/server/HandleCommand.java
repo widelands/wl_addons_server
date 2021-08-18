@@ -73,6 +73,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_LIST command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdList() throws Exception {
 		// Args: [5+: all]
@@ -104,6 +105,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_INFO command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdInfo() throws Exception {
 		// Args: name
@@ -195,6 +197,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_DOWNLOAD command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdDownload() throws Exception {
 		// Args: name
@@ -220,6 +223,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_I18N command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdI18n() throws Exception {
 		// Args: name
@@ -235,6 +239,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_SCREENSHOT command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdScreenshot() throws Exception {
 		// Args: addon screenie
@@ -250,6 +255,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_VOTE command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdVote() throws Exception {
 		// Args: name vote
@@ -274,6 +280,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_GET_VOTE command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdGetVote() throws Exception {
 		// Args: name
@@ -294,6 +301,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_COMMENT command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdComment() throws Exception {
 		// Args: name version lines
@@ -322,6 +330,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_EDIT_COMMENT command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdEditComment() throws Exception {
 		// Args: name index lines
@@ -387,6 +396,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_SETUP_TX command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdSetupTx() throws Exception {
 		// Args: name
@@ -414,6 +424,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_CONTACT command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdContact() throws Exception {
 		// Args: lines
@@ -437,6 +448,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_SUBMIT_SCREENSHOT command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdSubmitScreenshot() throws Exception {
 		// Args: name filesize checksum whitespaces description
@@ -502,6 +514,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_SUBMIT command.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public void handleCmdSubmit() throws Exception {
 		// Args: name

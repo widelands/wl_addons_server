@@ -37,6 +37,7 @@ public class MuninStatistics {
 	 * Handles all communication with a Munin client.
 	 * @param out Stream to send data to the client.
 	 * @param in Stream to receive further data from the client.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void handleMunin(InputStream in, PrintStream out) throws Exception {
 		final int version = Integer.valueOf(ServerUtils.readLine(in));
@@ -78,6 +79,7 @@ public class MuninStatistics {
 	 * Print all current statistics.
 	 * @param version Munin protocol version.
 	 * @param out The stream to print data to.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
 		switch (version) {

@@ -51,6 +51,7 @@ public class Buildcats {
 
 	/**
 	 * Regenerate all POT files for all add-ons.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void buildCatalogues() throws Exception {
 		for (File addon : Utils.listSorted(new File("addons"))) {
