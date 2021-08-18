@@ -30,7 +30,7 @@ import java.util.*;
  * Miscellaneous utility functions.
  */
 public abstract class Utils {
-	private static class ChecksummedFile {
+	private static class ChecksummedFile implements Comparable {
 		public final File file;
 		public final String checksum;
 
@@ -39,12 +39,18 @@ public abstract class Utils {
 			checksum = checksum(f);
 		}
 
+		public boolean valid() { return checksum(file).equals(checksum); }
+
+		@Override
+		public int compareTo(Object o) {
+			return (o instanceof ChecksummedFile) ? file.compareTo(((ChecksummedFile)o).file) : -1;
+		}
+
 		@Override
 		public boolean equals(Object o) {
 			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) &&
 			    ((ChecksummedFile)o).checksum.equals(checksum);
 		}
-		public boolean valid() { return checksum(file).equals(checksum); }
 	}
 
 	/**
