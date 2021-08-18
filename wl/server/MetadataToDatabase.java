@@ -52,7 +52,9 @@ import wl.utils.*;
 
 public class MetadataToDatabase {
 	private static long UID(String name) throws Exception {
-		ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite, "select id from auth_user where username='" + name + "'");
+		ResultSet sql =
+		    ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite,
+		                         "select id from auth_user where username='" + name + "'");
 		if (sql.next()) return sql.getLong​("id");
 		ServerUtils.log("WARNING: User '" + name + "' is not registered, assigning ID -1");
 		return -1;
@@ -63,27 +65,30 @@ public class MetadataToDatabase {
 
 		for (File addon : Utils.listSorted(new File("addons"))) {
 			ServerUtils.log("Converting: " + addon.getName());
-			TreeMap<String, Utils.Value> mdS = Utils.readProfile(new File("metadata", addon.getName() + ".server"  ), addon.getName());
-			TreeMap<String, Utils.Value> mdM = Utils.readProfile(new File("metadata", addon.getName() + ".maintain"), addon.getName());
+			TreeMap<String, Utils.Value> mdS = Utils.readProfile(
+			    new File("metadata", addon.getName() + ".server"), addon.getName());
+			TreeMap<String, Utils.Value> mdM = Utils.readProfile(
+			    new File("metadata", addon.getName() + ".maintain"), addon.getName());
 
-			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-				"insert into addons (name,timestamp,i18n_version,security,quality,downloads) value ("
-				+ "'" + addon.getName()         + "',"
-				+       mdM.get("timestamp"   ).value + ","
-				+       mdM.get("i18n_version").value + ","
-				+ "'" + mdM.get("security"    ).value + "',"
-				+       "2,"
-				+       mdS.get("downloads"   ).value + ")"
-			);
+			ServerUtils.sqlCmd(
+			    ServerUtils.Databases.kAddOns,
+			    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value ("
+			        + "'" + addon.getName() + "'," + mdM.get("timestamp").value + "," +
+			        mdM.get("i18n_version").value + ","
+			        + "'" + mdM.get("security").value + "',"
+			        + "2," + mdS.get("downloads").value + ")");
 
-			ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns, "select id from addons where name='" + addon.getName() + "'");
+			ResultSet sql =
+			    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+			                         "select id from addons where name='" + addon.getName() + "'");
 			sql.next();
 			final long addonID = sql.getLong​("id");
 
 			final long uid = UID(mdM.get("uploader").value);
 			if (uid >= 0) {
-				ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-					"insert into uploaders (addon,user) value(" + addonID + "," + uid + ")");
+				ServerUtils.sqlCmd(
+				    ServerUtils.Databases.kAddOns,
+				    "insert into uploaders (addon,user) value(" + addonID + "," + uid + ")");
 			}
 
 			final int nrComments = Integer.valueOf(mdS.get("comments").value);
