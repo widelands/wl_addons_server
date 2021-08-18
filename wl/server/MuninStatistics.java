@@ -41,7 +41,7 @@ public class MuninStatistics {
 
 	private final long[] commandCounters;
 	private final long initTime;
-	private long currentUnregisteredUsers, failedLogins, successfulLogins, successfulCommands;
+	private long currentUnregisteredUsers, failedLogins, successfulLogins, skippedCommands, successfulCommands;
 	private final List<Long> currentRegisteredUsers;
 	private final Set<Long> allRegisteredUsers;
 	private final Map<Thread, Long> cmdInfoToSkip;
@@ -54,6 +54,7 @@ public class MuninStatistics {
 		currentUnregisteredUsers = 0;
 		failedLogins = 0;
 		successfulLogins = 0;
+		skippedCommands = 0;
 		successfulCommands = 0;
 		currentRegisteredUsers = new ArrayList<>();
 		allRegisteredUsers = new HashSet<>();
@@ -70,7 +71,7 @@ public class MuninStatistics {
 				out.println(successfulLogins);
 				out.println(failedLogins);
 
-				long totalCmd = 0;
+				long totalCmd = skippedCommands;
 				for (long cmd : commandCounters) {
 					totalCmd += cmd;
 					out.println(cmd);
@@ -97,6 +98,7 @@ public class MuninStatistics {
 				} else {
 					cmdInfoToSkip.remove(t);
 				}
+				skippedCommands++;
 				return;
 			}
 			cmdInfoToSkip.remove(t);
