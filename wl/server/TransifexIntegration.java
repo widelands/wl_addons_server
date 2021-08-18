@@ -173,11 +173,11 @@ public class TransifexIntegration {
 		final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
 
 		for (Long uploader : perUploader.keySet()) {
-			sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kWebsite,
-			    "select email,username from auth_user where id=" + uploader);
+			sql = ServerUtils.sqlQuery(ServerUtils.Databases.kWebsite,
+			                           "select email,username from auth_user where id=" + uploader);
 			if (!sql.next()) {
-				ServerUtils.log("User #" + uploader + " does not seem to be a registered user. No e-mail will be sent.");
+				ServerUtils.log("User #" + uploader +
+				                " does not seem to be a registered user. No e-mail will be sent.");
 				continue;
 			}
 			final String email = sql.getString("email");
@@ -186,8 +186,8 @@ public class TransifexIntegration {
 			if (noticeTypeKnown) {
 				sql = ServerUtils.sqlQuery(
 				    ServerUtils.Databases.kWebsite,
-				    "select send from notification_noticesetting where user_id=" +
-				        uploader + " and medium=1 and notice_type_id=" + noticeTypeID);
+				    "select send from notification_noticesetting where user_id=" + uploader +
+				        " and medium=1 and notice_type_id=" + noticeTypeID);
 				if (sql.next() && sql.getShort("send") < 1) {
 					ServerUtils.log("User '" + username + "' disabled notifications.");
 					continue;

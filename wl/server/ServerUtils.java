@@ -120,8 +120,8 @@ abstract class ServerUtils {
 	}
 
 	public static boolean isUploader(String addon, long userID) throws Exception {
-		ResultSet sql = sqlQuery(Databases.kAddOns,
-		    "select user from uploaders where addon=" + getAddOnID(addon));
+		ResultSet sql = sqlQuery(
+		    Databases.kAddOns, "select user from uploaders where addon=" + getAddOnID(addon));
 		boolean noUploaders = true;
 		while (sql.next()) {
 			if (sql.getLong("user") == userID) {

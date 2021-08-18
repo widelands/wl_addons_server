@@ -433,7 +433,8 @@ class HandleCommand {
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit screenshots");
 		if (!admin && !ServerUtils.isUploader(cmd[1], userDatabaseID))
-			throw new ServerUtils.WLProtocolException("You can not submit screenshots for another person's add-on");
+			throw new ServerUtils.WLProtocolException(
+			    "You can not submit screenshots for another person's add-on");
 		long size = Long.valueOf(cmd[2]);
 		if (size > 4 * 1000 * 1000)
 			throw new ServerUtils.WLProtocolException(
@@ -496,7 +497,8 @@ class HandleCommand {
 
 		ServerUtils.semaphoreRW(cmd[1], () -> {
 			if (!admin && !ServerUtils.isUploader(cmd[1], userDatabaseID))
-				throw new ServerUtils.WLProtocolException("You can not overwrite another person's existing add-on");
+				throw new ServerUtils.WLProtocolException(
+				    "You can not overwrite another person's existing add-on");
 			File tempDir = Utils.createTempDir();
 
 			try {
@@ -633,7 +635,8 @@ class HandleCommand {
 				    "\n\nPlease review this add-on soonish.");
 				if (isUpdate) {
 					ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-						"update addons set security=0, quality=0 where id=" + ServerUtils.getAddOnID(cmd[1]));
+					                   "update addons set security=0, quality=0 where id=" +
+					                       ServerUtils.getAddOnID(cmd[1]));
 
 					ServerUtils.doDelete(addOnDir);
 					Utils._staticprofiles.remove(addOnMain);
