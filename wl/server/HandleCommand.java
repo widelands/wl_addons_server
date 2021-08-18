@@ -432,16 +432,8 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit screenshots");
-		if (!admin) {
-			String originalUploader =
-			    Utils.readProfile(new File("metadata", cmd[1] + ".maintain"), cmd[1])
-			        .get("uploader")
-			        .value(locale);
-			if (!username.equals(originalUploader))
-				throw new ServerUtils.WLProtocolException(
-				    "You can not submit screenshots for another person's (" + originalUploader +
-				    ") add-on");
-		}
+		if (!admin && !ServerUtils.isUploader(cmd[1], userDatabaseID))
+			throw new ServerUtils.WLProtocolException("You can not submit screenshots for another person's add-on");
 		long size = Long.valueOf(cmd[2]);
 		if (size > 4 * 1000 * 1000)
 			throw new ServerUtils.WLProtocolException(
@@ -503,17 +495,8 @@ class HandleCommand {
 		/* No need here to check if the add-on exists. */
 
 		ServerUtils.semaphoreRW(cmd[1], () -> {
-			if (!admin) {
-				File f = new File("metadata", cmd[1] + ".maintain");
-				if (f.exists()) {
-					String originalUploader =
-					    Utils.readProfile(f, cmd[1]).get("uploader").value(locale);
-					if (!username.equals(originalUploader))
-						throw new ServerUtils.WLProtocolException(
-						    "You can not overwrite another person's (" + originalUploader +
-						    ") existing add-on");
-				}
-			}
+			if (!admin && !ServerUtils.isUploader(cmd[1], userDatabaseID))
+				throw new ServerUtils.WLProtocolException("You can not overwrite another person's existing add-on");
 			File tempDir = Utils.createTempDir();
 
 			try {
@@ -649,14 +632,10 @@ class HandleCommand {
                          newProfile.get("requires").value) +
 				    "\n\nPlease review this add-on soonish.");
 				if (isUpdate) {
+					ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+						"update addons set security=0, quality=0 where id=" + ServerUtils.getAddOnID(cmd[1]));
+
 					ServerUtils.doDelete(addOnDir);
-
-					TreeMap<String, Utils.Value> edit = new TreeMap<>();
-					edit.put(
-					    "version", new Utils.Value("version", newProfile.get("version").value));
-					edit.put("security", new Utils.Value("security", "unchecked"));
-					Utils.editMetadata(false, cmd[1], edit);
-
 					Utils._staticprofiles.remove(addOnMain);
 				}
 				tempDir.renameTo​(addOnDir);

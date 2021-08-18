@@ -116,9 +116,6 @@ public class UpdateList {
 			TreeMap<String, Utils.Value> metadataServer =
 			    Utils.readProfile(metadataFileServer, addon);
 
-			TreeMap<String, Utils.Value> edit = new TreeMap<>();
-			metadataMaintain.putAll(edit);
-
 			int[] votes = new int[10];
 			for (int i = 1; i <= votes.length; ++i)
 				votes[i - 1] = Integer.valueOf(metadataServer.get("votes_" + i).value);
@@ -191,13 +188,6 @@ public class UpdateList {
 			}
 			for (Long l : d.sizes) d.totalSize += l;
 
-			if (!d.cached_version.equals(d.new_version)) {
-				edit.put("version", new Utils.Value("version", d.new_version));
-				d.verified = false;
-				edit.put("security", new Utils.Value("security", "unchecked"));
-			}
-
-			if (!edit.isEmpty()) Utils.editMetadata(false, addon, edit);
 			System.out.println(" done");
 		}
 		return result;

@@ -119,6 +119,19 @@ abstract class ServerUtils {
 		return r.getLong("id");
 	}
 
+	public static boolean isUploader(String addon, long userID) throws Exception {
+		ResultSet sql = sqlQuery(Databases.kAddOns,
+		    "select user from uploaders where addon=" + getAddOnID(addon));
+		boolean noUploaders = true;
+		while (sql.next()) {
+			if (sql.getLong("user") == userID) {
+				return true;
+			}
+			noUploaders = false;
+		}
+		return noUploaders;
+	}
+
 	public static class WLProtocolException extends RuntimeException {
 		public WLProtocolException(String msg) { super("WL Protocol Exception: " + msg); }
 		@Override

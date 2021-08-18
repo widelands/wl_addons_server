@@ -151,12 +151,13 @@ public class TransifexIntegration {
 			perAddOn.get(i.addon).add(i);
 		}
 
-		Map<String, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
+		Map<Long, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
-			for (String uploader :
-			     new String[] {Utils.readProfile(new File("metadata", addon + ".maintain"), addon)
-			                       .get("uploader")
-			                       .value}) {
+			ResultSet sql = ServerUtils.sqlQuery(
+			    ServerUtils.Databases.kAddOns,
+			    "select user from uploaders where addon=" + ServerUtils.getAddOnID(addon));
+			while (sql.next()) {
+				Long uploader = sql.getLong("user");
 				if (!perUploader.containsKey(uploader))
 					perUploader.put(uploader, new LinkedHashMap<>());
 				perUploader.get(uploader).put(addon, perAddOn.get(addon));
@@ -171,24 +172,24 @@ public class TransifexIntegration {
 			ServerUtils.log("Notification type addon_transifex_issues was not defined yet");
 		final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
 
-		for (String uploader : perUploader.keySet()) {
+		for (Long uploader : perUploader.keySet()) {
 			sql = ServerUtils.sqlQuery(
 			    ServerUtils.Databases.kWebsite,
-			    "select id,email from auth_user where username='" + uploader + "'");
+			    "select email,username from auth_user where id=" + uploader);
 			if (!sql.next()) {
-				ServerUtils.log("User '" + uploader +
-				                "' does not seem to be a registered user. No e-mail will be sent.");
+				ServerUtils.log("User #" + uploader + " does not seem to be a registered user. No e-mail will be sent.");
 				continue;
 			}
-			String email = sql.getString("email");
+			final String email = sql.getString("email");
+			final String username = sql.getString("username");
 
 			if (noticeTypeKnown) {
 				sql = ServerUtils.sqlQuery(
 				    ServerUtils.Databases.kWebsite,
 				    "select send from notification_noticesetting where user_id=" +
-				        sql.getLong("id") + " and medium=1 and notice_type_id=" + noticeTypeID);
+				        uploader + " and medium=1 and notice_type_id=" + noticeTypeID);
 				if (sql.next() && sql.getShort("send") < 1) {
-					ServerUtils.log("User '" + uploader + "' disabled notifications.");
+					ServerUtils.log("User '" + username + "' disabled notifications.");
 					continue;
 				}
 			}
@@ -203,7 +204,7 @@ public class TransifexIntegration {
 			write.println("Subject: Transifex String Issues");
 			write.println();
 
-			write.print("Dear " + uploader + ",\nthe translators have found " + total +
+			write.print("Dear " + username + ",\nthe translators have found " + total +
 			            " new issue(s) in " + relevantIssues.size() +
 			            " of your add-on(s). Below you may find a list of all new string issues.");
 			for (String addon : relevantIssues.keySet()) {
