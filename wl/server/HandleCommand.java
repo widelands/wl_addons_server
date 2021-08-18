@@ -250,8 +250,8 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ResultSet sql = Utils.sqlQuery(
-		    Utils.Databases.kAddOns, "select vote from uservotes where user_id=" + userDatabaseID +
-		                                 " and addon='" + cmd[1] + "'");
+		    Utils.Databases.kAddOns, "select vote from uservotes where user=" + userDatabaseID +
+		                                 " and addon=" + Utils.getAddOnID(cmd[1]));
 		out.println(sql.next() ? ("" + sql.getLong​(1)) : "0");
 		out.println("ENDOFSTREAM");
 	}
@@ -298,7 +298,7 @@ class HandleCommand {
 			ResultSet sql =
 			    Utils.sqlQuery(Utils.Databases.kAddOns, "select id from usercomments where addon=" +
 			                                                Utils.getAddOnID(cmd[1]));
-			for (int i = Integer.valueOf(cmd[2]); i > 0; i--) {
+			for (int i = Integer.valueOf(cmd[2]); i >= 0; i--) {
 				if (!sql.next()) {
 					throw new ServerUtils.WLProtocolException("Invalid comment index " + cmd[2]);
 				}
