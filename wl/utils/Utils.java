@@ -199,44 +199,43 @@ public abstract class Utils {
 		    new File("metadata", addon + (server ? ".server" : ".maintain")), addon, changes);
 	}
 
-/* NOCOM
-	public static void comment(String addon, String user, String version, String message)
-	    throws Exception {
-		File f = new File("metadata", addon + ".server");
-		TreeMap<String, Value> ch = new TreeMap<>();
+	/* NOCOM
+	    public static void comment(String addon, String user, String version, String message)
+	        throws Exception {
+	        File f = new File("metadata", addon + ".server");
+	        TreeMap<String, Value> ch = new TreeMap<>();
 
-		int c = Integer.valueOf(readProfile(f, addon).get("comments").value);
-		ch.put("comments", new Value("comments", "" + (c + 1)));
+	        int c = Integer.valueOf(readProfile(f, addon).get("comments").value);
+	        ch.put("comments", new Value("comments", "" + (c + 1)));
 
-		ch.put("comment_name_" + c, new Value("comment_name_" + c, user));
-		ch.put("comment_version_" + c, new Value("comment_version_" + c, version));
-		ch.put("comment_timestamp_" + c,
-		       new Value("comment_timestamp_" + c, "" + (System.currentTimeMillis() / 1000)));
-		String[] msg = message.split("\n");
-		ch.put("comment_" + c, new Value("comment_" + c, "" + (msg.length - 1)));
-		for (int i = 0; i < msg.length; ++i)
-			ch.put("comment_" + c + "_" + i, new Value("comment_" + c + "_" + i, msg[i]));
+	        ch.put("comment_name_" + c, new Value("comment_name_" + c, user));
+	        ch.put("comment_version_" + c, new Value("comment_version_" + c, version));
+	        ch.put("comment_timestamp_" + c,
+	               new Value("comment_timestamp_" + c, "" + (System.currentTimeMillis() / 1000)));
+	        String[] msg = message.split("\n");
+	        ch.put("comment_" + c, new Value("comment_" + c, "" + (msg.length - 1)));
+	        for (int i = 0; i < msg.length; ++i)
+	            ch.put("comment_" + c + "_" + i, new Value("comment_" + c + "_" + i, msg[i]));
 
-		editMetadata(true, addon, ch);
-	}
+	        editMetadata(true, addon, ch);
+	    }
 
-	public static void editComment(String addon, String index, String user, String message)
-	    throws Exception {
-		File f = new File("metadata", addon + ".server");
-		TreeMap<String, Value> ch = new TreeMap<>();
+	    public static void editComment(String addon, String index, String user, String message)
+	        throws Exception {
+	        File f = new File("metadata", addon + ".server");
+	        TreeMap<String, Value> ch = new TreeMap<>();
 
-		ch.put("comment_editor_" + index, new Value("comment_editor_" + index, user));
-		ch.put(
-		    "comment_edit_timestamp_" + index,
-		    new Value("comment_edit_timestamp_" + index, "" + (System.currentTimeMillis() / 1000)));
-		String[] msg = message.split("\n");
-		ch.put("comment_" + index, new Value("comment_" + index, "" + (msg.length - 1)));
-		for (int i = 0; i < msg.length; ++i)
-			ch.put("comment_" + index + "_" + i, new Value("comment_" + index + "_" + i, msg[i]));
+	        ch.put("comment_editor_" + index, new Value("comment_editor_" + index, user));
+	        ch.put(
+	            "comment_edit_timestamp_" + index,
+	            new Value("comment_edit_timestamp_" + index, "" + (System.currentTimeMillis() /
+	   1000))); String[] msg = message.split("\n"); ch.put("comment_" + index, new Value("comment_"
+	   + index, "" + (msg.length - 1))); for (int i = 0; i < msg.length; ++i) ch.put("comment_" +
+	   index + "_" + i, new Value("comment_" + index + "_" + i, msg[i]));
 
-		editMetadata(true, addon, ch);
-	}
-*/
+	        editMetadata(true, addon, ch);
+	    }
+	*/
 
 	public static String config(String key) throws Exception {
 		return readProfile(new File("config"), null).get(key).value;

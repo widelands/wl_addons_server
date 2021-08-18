@@ -113,7 +113,8 @@ abstract class ServerUtils {
 		return r.getLong("id");
 	}
 	public static Long getAddOnID(String name) throws Exception {
-		ResultSet r = sqlQuery(Databases.kAddOns, "select id from addons where name='" + name + "'");
+		ResultSet r =
+		    sqlQuery(Databases.kAddOns, "select id from addons where name='" + name + "'");
 		if (!r.next()) return null;
 		return r.getLong("id");
 	}

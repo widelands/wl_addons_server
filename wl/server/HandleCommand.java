@@ -216,13 +216,13 @@ class HandleCommand {
 			dir.writeAllFileInfos(out);
 		});
 
-		ResultSet sql = ServerUtils.sqlQuery(
-		    ServerUtils.Databases.kAddOns,
-		    "select id,downloads from addons where name='" + cmd[1] + "'");
+		ResultSet sql =
+		    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+		                         "select id,downloads from addons where name='" + cmd[1] + "'");
 		sql.next();
-		ServerUtils.sqlCmd(
-		    ServerUtils.Databases.kAddOns,
-		    "update addons set downloads=" + (sql.getLong("downloads") + 1) + " where id=" + sql.getLong("id"));
+		ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
+		                   "update addons set downloads=" + (sql.getLong("downloads") + 1) +
+		                       " where id=" + sql.getLong("id"));
 
 		out.println("ENDOFSTREAM");
 	}
@@ -261,11 +261,13 @@ class HandleCommand {
 
 		final long addon = ServerUtils.getAddOnID(cmd[1]);
 		final int vote = Integer.valueOf(cmd[2]);
-		ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-			   "delete from uservotes where user=" + userDatabaseID + " and addon=" + addon);
+		ServerUtils.sqlCmd(
+		    ServerUtils.Databases.kAddOns,
+		    "delete from uservotes where user=" + userDatabaseID + " and addon=" + addon);
 		if (vote > 0) {
-			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns, "insert into uservotes (user, addon, vote) value (" +
-				                          userDatabaseID + "," + addon + "," + vote + ")");
+			ServerUtils.sqlCmd(
+			    ServerUtils.Databases.kAddOns, "insert into uservotes (user, addon, vote) value (" +
+			                                       userDatabaseID + "," + addon + "," + vote + ")");
 		}
 
 		out.println("ENDOFSTREAM");
@@ -304,12 +306,12 @@ class HandleCommand {
 		}
 		ServerUtils.checkEndOfStream(in);
 
-	    ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-	    	"insert into usercomments (addon,user,timestamp,version,message) value("
-	    	+ ServerUtils.getAddOnID(cmd[1]) + ","
-	    	+ userDatabaseID + ","
-	    	+ (System.currentTimeMillis() / 1000) + ",'"
-	    	+ cmd[2] + "','" + msg.replaceAll("'", "\\'") + "')");
+		ServerUtils.sqlCmd(
+		    ServerUtils.Databases.kAddOns,
+		    "insert into usercomments (addon,user,timestamp,version,message) value(" +
+		        ServerUtils.getAddOnID(cmd[1]) + "," + userDatabaseID + "," +
+		        (System.currentTimeMillis() / 1000) + ",'" + cmd[2] + "','" +
+		        msg.replaceAll("'", "\\'") + "')");
 
 		out.println("ENDOFSTREAM");
 	}
@@ -328,7 +330,9 @@ class HandleCommand {
 		if (protocolVersion >= 5) {
 			commentID = Integer.valueOf(cmd[1]);
 		} else {
-			ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns, "select id from usercomments where addon=" + ServerUtils.getAddOnID(cmd[1]));
+			ResultSet sql = ServerUtils.sqlQuery(
+			    ServerUtils.Databases.kAddOns,
+			    "select id from usercomments where addon=" + ServerUtils.getAddOnID(cmd[1]));
 			for (int i = Integer.valueOf(cmd[2]); i > 0; i--) {
 				if (!sql.next()) {
 					throw new ServerUtils.WLProtocolException("Invalid comment index " + cmd[2]);
@@ -336,14 +340,20 @@ class HandleCommand {
 			}
 			commentID = sql.getLong("id");
 		}
-		ResultSet sql = ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
-			"select user,editor from usercomments where id=" + commentID);
-		if (!sql.next()) throw new ServerUtils.WLProtocolException("Invalid comment ID " + commentID);
+		ResultSet sql =
+		    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
+		                         "select user,editor from usercomments where id=" + commentID);
+		if (!sql.next())
+			throw new ServerUtils.WLProtocolException("Invalid comment ID " + commentID);
 
 		if (!admin) {
-			if (sql.getLong("user") != userDatabaseID) throw new ServerUtils.WLProtocolException("Forbidden to edit another user's comment");
+			if (sql.getLong("user") != userDatabaseID)
+				throw new ServerUtils.WLProtocolException(
+				    "Forbidden to edit another user's comment");
 			final long editor = sql.getLong("editor");
-			if (!sql.wasNull() && editor != userDatabaseID) throw new ServerUtils.WLProtocolException("Forbidden to edit a comment edited by a maintainer");
+			if (!sql.wasNull() && editor != userDatabaseID)
+				throw new ServerUtils.WLProtocolException(
+				    "Forbidden to edit a comment edited by a maintainer");
 		}
 
 		int nrLines = Integer.valueOf(cmd[protocolVersion < 5 ? 3 : 2]);
@@ -357,14 +367,16 @@ class HandleCommand {
 
 		ServerUtils.checkEndOfStream(in);
 
-	    if (nrLines == 0) {
+		if (nrLines == 0) {
+			ServerUtils.sqlCmd(
+			    ServerUtils.Databases.kAddOns, "delete from usercomments where id=" + commentID);
+		} else {
 			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-		    	"delete from usercomments where id=" + commentID);
-	    } else {
-			ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-		    	"update usercomments set editor=" + userDatabaseID + ", edit_timestamp=" + (System.currentTimeMillis() / 1000)
-		    	+ ", message='" + msg.replaceAll("'", "\\'") + "' where id=" + commentID);
-	    }
+			                   "update usercomments set editor=" + userDatabaseID +
+			                       ", edit_timestamp=" + (System.currentTimeMillis() / 1000) +
+			                       ", message='" + msg.replaceAll("'", "\\'") +
+			                       "' where id=" + commentID);
+		}
 
 		out.println("ENDOFSTREAM");
 	}
@@ -600,9 +612,10 @@ class HandleCommand {
 					    ServerUtils.Databases.kAddOns,
 					    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value('" +
 					        cmd[1] + "'," + (System.currentTimeMillis() / 1000) + ",0,0,0,0)");
-					ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-					                   "insert into uploaders (addon,user) value(" +
-					                       ServerUtils.getAddOnID(cmd[1]) + "," + userDatabaseID + ")");
+					ServerUtils.sqlCmd(
+					    ServerUtils.Databases.kAddOns, "insert into uploaders (addon,user) value(" +
+					                                       ServerUtils.getAddOnID(cmd[1]) + "," +
+					                                       userDatabaseID + ")");
 				}
 
 				Utils.sendNotificationToGitHubThread(
