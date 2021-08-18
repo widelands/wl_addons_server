@@ -24,6 +24,9 @@ import java.nio.file.*;
 import java.sql.ResultSet;
 import java.util.*;
 
+/**
+ * Class to update the legacy list* files.
+ */
 public class UpdateList {
 	private static class Data {
 
@@ -255,6 +258,9 @@ public class UpdateList {
 
 	private static final int kHighestListVersion = 3;
 
+	/**
+	 * Regenerate all list* files.
+	 */
 	public static void rebuildLists() throws Exception {
 		final Map<String, Data> data = detectAndUpdateMetadata();
 		File[] files = Utils.listSorted(new File("addons"));

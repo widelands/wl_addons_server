@@ -25,12 +25,25 @@ import java.util.*;
 import java.util.concurrent.*;
 import wl.utils.*;
 
+/**
+ * Miscellaneous utilities used by server processes.
+ */
 abstract class ServerUtils {
-	public static final ThreadActivityAndGitHubSyncManager SYNCER =
-	    new ThreadActivityAndGitHubSyncManager();
+
+	/**
+	 * A random generator. Use only this generator to generate random numbers.
+	 */
 	public static final Random RANDOM = new Random(System.currentTimeMillis());
 
-	public static interface Functor { public void run() throws Exception; }
+	/**
+	 * Interface to describe a simple method that takes no parameters and may throw any %Exception.
+	 */
+	public static interface Functor {
+		/**
+		 * This can be any function at all.
+		 */
+		public void run() throws Exception;
+	}
 
 	private static final Map<String, Semaphore> _semaphores = new HashMap<>();
 	private static final int SEMAPHORE_BLOCK_RW_ACCESS = 100;
@@ -42,12 +55,33 @@ abstract class ServerUtils {
 		}
 	}
 
+	/**
+	 * Execute code in a thread-safe manner.
+	 * The code is required not to modify the protected resource in any way.
+	 * Any number of threads may access the same resource through this function simultaneously,
+	 * but no modifications will happen to the resource while any such thread is running.
+	 * If the resource is currently being modified, this function will block until the other
+	 * thread has releases the resource again before starting to run your code.
+	 * @param addon Resource to protect.
+	 * @param f Code to execute.
+	 */
 	public static void semaphoreRO(String addon, Functor f) throws Exception {
 		doSemaphore(addon, 1, f);
 	}
+
+	/**
+	 * Execute code in a thread-safe manner.
+	 * The code may modify the protected resource in any way.
+	 * No other thread may access or modify the resource while the code is executing.
+	 * If the resource is currently being accessed or modified, this function will block until
+	 * all other threads have released the resource again before starting to run your code.
+	 * @param addon Resource to protect.
+	 * @param f Code to execute.
+	 */
 	public static void semaphoreRW(String addon, Functor f) throws Exception {
 		doSemaphore(addon, SEMAPHORE_BLOCK_RW_ACCESS, f);
 	}
+
 	private static void doSemaphore(String addon, final int i, Functor f) throws Exception {
 		Semaphore s = getSemaphore(addon);
 		s.acquire(i);
@@ -60,15 +94,38 @@ abstract class ServerUtils {
 		}
 	}
 
+	/**
+	 * An exception that indicates any form of invalid
+	 * communication between the server and a client.
+	 */
 	public static class WLProtocolException extends RuntimeException {
+
+		/**
+		 * Constructor.
+		 * @param msg Error message.
+		 */
 		public WLProtocolException(String msg) { super("WL Protocol Exception: " + msg); }
+
 		@Override
 		public String toString() {
 			return getMessage();
 		}
 	}
 
+	/**
+	 * Read a single line of input from a stream.
+	 * @param in Stream to read from.
+	 * @return The text read.
+	 */
 	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
+
+	/**
+	 * Read a single line of input from a stream.
+	 * @param in Stream to read from.
+	 * @param exceptionOnStreamEnd If this is \c false, no %Exception will be thrown if the stream
+	 *                             is closed during reading. Instead \c null will be returned.
+	 * @return The text read, or \c null if the stream was closed.
+	 */
 	public static String readLine(InputStream in, boolean exceptionOnStreamEnd) throws Exception {
 		ByteArrayOutputStream buffer = new ByteArrayOutputStream();
 		for (long count = 0;; count++) {
@@ -85,11 +142,19 @@ abstract class ServerUtils {
 		}
 	}
 
+	/**
+	 * Check that the next line of text from the given stream is the end-of-input delimiter.
+	 * Throws an exception if this is not the case.
+	 * @param in Stream to read from.
+	 */
 	public static void checkEndOfStream(InputStream in) throws Exception {
 		if (!readLine(in).equals("ENDOFSTREAM"))
 			throw new WLProtocolException("Stream continues past its end");
 	}
 
+	/**
+	 * Class to recursively write a directory structure.
+	 */
 	public static class DirInfo {
 		public final File file;
 		public final ArrayList<File> regularFiles;
@@ -97,6 +162,10 @@ abstract class ServerUtils {
 		public final int totalDirs;
 		public final int totalFiles;
 
+		/**
+		 * Constructor.
+		 * @param dir The directory to represent.
+		 */
 		public DirInfo(File dir) {
 			file = dir;
 			regularFiles = new ArrayList<>();
@@ -117,12 +186,22 @@ abstract class ServerUtils {
 			totalDirs = t;
 		}
 
+		/**
+		 * Recursively write all directory names to a stream.
+		 * @param out Stream to write to.
+		 * @param prefix Path to prepend to all directory paths.
+		 */
 		public void writeAllDirNames(PrintStream out, String prefix) {
 			for (DirInfo d : subdirs) {
 				out.println(prefix + d.file.getName());
 				d.writeAllDirNames(out, prefix + d.file.getName() + "/");
 			}
 		}
+
+		/**
+		 * Recursively write all files to a stream.
+		 * @param out Stream to write to.
+		 */
 		public void writeAllFileInfos(PrintStream out) throws Exception {
 			out.println(regularFiles.size());
 			for (File f : regularFiles) {
@@ -133,12 +212,24 @@ abstract class ServerUtils {
 		}
 	}
 
+	/**
+	 * Check that a client has sent exactly the expected number of arguments.
+	 * Throws an exception if this is not the case.
+	 * @param cmd Command array (the arguments are positioned in index \c 1+).
+	 * @param expected Number of expected arguments (not counting the command itself).
+	 */
 	public static void checkNrArgs(String[] cmd, int expected) {
 		if (cmd.length != expected + 1)
 			throw new WLProtocolException("Expected " + expected + " argument(s), found " +
 			                              (cmd.length - 1));
 	}
 
+	/**
+	 * Check that a given file or directory name is valid.
+	 * Throws an exception if this is not the case.
+	 * @param name Name to check.
+	 * @param directory Is this name supposed to denote a regular file or a directory.
+	 */
 	public static void checkNameValid(String name, boolean directory) {
 		if (name == null || (!directory && name.isEmpty()))
 			throw new WLProtocolException("Empty name");
@@ -161,12 +252,22 @@ abstract class ServerUtils {
 			throw new WLProtocolException("Name '" + name + "' may not contain '..'");
 	}
 
+	/**
+	 * Check that an add-on exists.
+	 * Throws an exception if this is not the case.
+	 * @param name Name to check.
+	 */
 	public static void checkAddOnExists(String name) {
 		if (!(new File("addons/" + name, "addon").isFile())) {
 			throw new WLProtocolException("Add-on '" + name + "' does not exist");
 		}
 	}
 
+	/**
+	 * Dump a file and some of its metadata to a stream.
+	 * @param f File to send.
+	 * @param out Stream to write to.
+	 */
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
 		out.println(Utils.checksum(f));
 		long l = f.length();
@@ -184,6 +285,10 @@ abstract class ServerUtils {
 		}
 	}
 
+	/**
+	 * Recursively delete a directory or file.
+	 * @param f Directory or file to delete.
+	 */
 	synchronized public static void doDelete(File f) {
 		if (f.isDirectory()) {
 			for (File file : f.listFiles()) {
@@ -194,6 +299,12 @@ abstract class ServerUtils {
 	}
 
 	private static Object _enquiry_syncer = new Object();
+
+	/**
+	 * Process a client's enquiry.
+	 * @param username Name of the user who sent the enquiry.
+	 * @param msg Enquiry message.
+	 */
 	public static void sendEnquiry(String username, String msg) throws Exception {
 		File dir = new File("enquiries");
 		dir.mkdir();
@@ -214,6 +325,13 @@ abstract class ServerUtils {
 		                                     + "- Message length: " + msg.length() + " characters");
 	}
 
+	/**
+	 * Check that a client sends the correct password over a stream.
+	 * Throws an exception if this is not the case.
+	 * @param in Stream to receive further data from the client.
+	 * @param out Stream to send data to the client.
+	 * @param correctPassword The password required for successful authentification.
+	 */
 	public static void passwordAuthentification(InputStream in,
 	                                            PrintStream out,
 	                                            String correctPassword) throws Exception {
@@ -251,6 +369,13 @@ abstract class ServerUtils {
 		return a.length < b.length;
 	}
 
+	/**
+	 * Check whether an add-on is compatible with a given version of Widelands.
+	 * @param wl_version The Widelands version.
+	 * @param min_wl_version The minimum version required by the add-on (may be \c null).
+	 * @param max_wl_version The maximum version supported by the add-on (may be \c null).
+	 * @return The add-on is compatible.
+	 */
 	public static boolean
 	matchesWidelandsVersion(String wl_version, String min_wl_version, String max_wl_version) {
 		// For the comparison logic, see AddOnInfo::matches_widelands_version

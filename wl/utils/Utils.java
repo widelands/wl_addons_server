@@ -26,6 +26,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.util.*;
 
+/**
+ * Miscellaneous utility functions.
+ */
 public abstract class Utils {
 	private static class ChecksummedFile {
 		public final File file;
@@ -44,13 +47,27 @@ public abstract class Utils {
 		public boolean valid() { return checksum(file).equals(checksum); }
 	}
 
+	/**
+	 * Print log output to standard output.
+	 * Output is formatted with a timestamp and the thread name.
+	 * @param msg Text to print.
+	 */
 	public static void log(String msg) {
 		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
 		                   msg);
 	}
 
+	/**
+	 * Which database to use for an SQL command.
+	 */
 	public static enum Databases {
+		/**
+		 * The read-only website database, which contains details abour registered users.
+		 */
 		kWebsite("websitedatabase"),
+		/**
+		 * The add-ons database, which contains moddable metadata about all add-ons.
+		 */
 		kAddOns("addonsdatabase");
 
 		public final String configKey;
@@ -58,6 +75,9 @@ public abstract class Utils {
 	}
 	private static final Connection[] _databases = new Connection[Databases.values().length];
 
+	/**
+	 * Initialize the databases. Call this only on startup.
+	 */
 	public static void initDatabases() throws Exception {
 		log("Initializing SQL...");
 
@@ -73,26 +93,55 @@ public abstract class Utils {
 		}
 	}
 
+	/**
+	 * Execute an SQL query statement, typically a SELECT operation.
+	 * @param db Database to use.
+	 * @param query Statement to execute.
+	 * @return The result of the query.
+	 */
 	public static ResultSet sqlQuery(Databases db, String query) throws Exception {
 		Connection c = _databases[db.ordinal()];
 		synchronized (c) { return c.createStatement().executeQuery(query); }
 	}
+
+	/**
+	 * Execute an SQL statement without returning anything.
+	 * @param db Database to use.
+	 * @param query Statement to execute.
+	 */
 	public static void sqlCmd(Databases db, String cmd) throws Exception {
 		Connection c = _databases[db.ordinal()];
 		synchronized (c) { c.createStatement().execute(cmd); }
 	}
 
+	/**
+	 * Retrieve the name of a user from the database.
+	 * @param id The user's ID.
+	 * @return The user's name.
+	 */
 	public static String getUsername(long id) throws Exception {
 		ResultSet r = sqlQuery(Databases.kWebsite, "select username from auth_user where id=" + id);
 		if (!r.next()) return null;
 		return r.getString("username");
 	}
+
+	/**
+	 * Retrieve the ID of a user from the database.
+	 * @param name The user's name.
+	 * @return The user's ID.
+	 */
 	public static Long getUserID(String name) throws Exception {
 		ResultSet r =
 		    sqlQuery(Databases.kWebsite, "select id from auth_user where username='" + name + "'");
 		if (!r.next()) return null;
 		return r.getLong("id");
 	}
+
+	/**
+	 * Retrieve the ID of an add-on from the database.
+	 * @param name The add-on's name.
+	 * @return The add-on's ID.
+	 */
 	public static Long getAddOnID(String name) throws Exception {
 		ResultSet r =
 		    sqlQuery(Databases.kAddOns, "select id from addons where name='" + name + "'");
@@ -100,6 +149,13 @@ public abstract class Utils {
 		return r.getLong("id");
 	}
 
+	/**
+	 * Check whether a given user is one of the uploaders for a given add-on.
+	 * If the add-on does not exist, the user is assumed to have permission to create it.
+	 * @param addon The add-on's name.
+	 * @param userID The user's ID.
+	 * @return The user has write access to the add-on.
+	 */
 	public static boolean isUploader(String addon, long userID) throws Exception {
 		ResultSet sql = sqlQuery(
 		    Databases.kAddOns, "select user from uploaders where addon=" + getAddOnID(addon));
@@ -113,6 +169,11 @@ public abstract class Utils {
 		return noUploaders;
 	}
 
+	/**
+	 * Retrieve the voting statistics of an add-on from the database.
+	 * @param addon The add-on's ID.
+	 * @return An array of size \c 10 with the number of \c i votes in index ``(i-1)``.
+	 */
 	public static long[] getVotes(long addon) throws Exception {
 		ResultSet sql =
 		    sqlQuery(Databases.kAddOns, "select vote from uservotes where addon=" + addon);
@@ -122,6 +183,12 @@ public abstract class Utils {
 		return votes;
 	}
 
+	/**
+	 * Retrieve the list of uploaders of an add-on from the database.
+	 * @param addon The add-on's ID.
+	 * @param onlyFirst List at most one uploader in the result.
+	 * @return Comma-separated of the uploaders.
+	 */
 	public static String getUploadersString(long addon, boolean onlyFirst) throws Exception {
 		ResultSet sql = Utils.sqlQuery(
 		    Utils.Databases.kAddOns, "select user from uploaders where addon=" + addon);
@@ -134,6 +201,11 @@ public abstract class Utils {
 		return uploaders;
 	}
 
+	/**
+	 * List all files in a directory, sorted alphabetically.
+	 * @param dir Directory to list.
+	 * @return Sorted array (never \c null).
+	 */
 	public static File[] listSorted(File dir) {
 		File[] files = dir.listFiles();
 		if (files == null) return new File[0];
@@ -141,6 +213,11 @@ public abstract class Utils {
 		return files;
 	}
 
+	/**
+	 * Compute the md5 checksum of a regular file.
+	 * @param f File to checksum.
+	 * @return The checksum as string, or \c "" in case of an error.
+	 */
 	public static String checksum(File f) {
 		try {
 			Runtime rt = Runtime.getRuntime();
@@ -155,6 +232,11 @@ public abstract class Utils {
 		return "";
 	}
 
+	/**
+	 * Create a temporary directory.
+	 * @return Path to an existing temporary directory.
+	 * @note The caller needs to ensure the directory is deleted later.
+	 */
 	synchronized public static File createTempDir() {
 		File d;
 		do {
@@ -164,6 +246,11 @@ public abstract class Utils {
 		return d;
 	}
 
+	/**
+	 * Run a shell script, and echo the whole script and its output to standard output.
+	 * @param args The command and its arguments.
+	 * @return The exit status of the command.
+	 */
 	public static int bash(String... args) throws Exception {
 		System.out.print("    $");
 		for (String a : args) System.out.print(" " + a);
@@ -183,6 +270,12 @@ public abstract class Utils {
 		return e;
 	}
 
+	/**
+	 * Run a shell script and return its standard output.
+	 * The standard error and exit value are discarded.
+	 * @param args The command and its arguments.
+	 * @return The output.
+	 */
 	public static String bashOutput(String... args) throws Exception {
 		Process p = new ProcessBuilder(args).start();
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -198,6 +291,11 @@ public abstract class Utils {
 		return (result == null ? "" : result);
 	}
 
+	/**
+	 * Format a time string.
+	 * @param millis Number of milliseconds.
+	 * @return Formatted time string.
+	 */
 	public static String durationString(long millis) {
 		long hours = millis / (1000 * 60 * 60);
 		millis -= hours * 1000 * 60 * 60;
@@ -214,10 +312,23 @@ public abstract class Utils {
 		return hours + "h " + str;
 	}
 
+	/**
+	 * Class to represent a user's comment on an add-on.
+	 */
 	public static class AddOnComment {
 		public final long userID, timestamp;
 		public final Long editorID, editTimestamp;
 		public final String version, message;
+
+		/**
+		 * Constructor.
+		 * @param userID ID of the comment author.
+		 * @param timestamp Timestamp when the comment was created.
+		 * @param editorID ID of the last person who edited the comment (may be \c null).
+		 * @param editTimestamp Timestamp when the comment was last edited (may be \c null).
+		 * @param version Version of the add-on about which the comment was written.
+		 * @param message Text of the comment.
+		 */
 		public AddOnComment(long userID,
 		                    long timestamp,
 		                    Long editorID,
@@ -233,8 +344,17 @@ public abstract class Utils {
 		}
 	}
 
+	/**
+	 * Class to represent a key-value pair of an ini-style file.
+	 */
 	public static class Value {
 		public final String key, value, textdomain;
+
+		/**
+		 * Return the localized value. If this %Value is not localizable, returns the raw value.
+		 * @param locale Locale to use.
+		 * @return Localized value.
+		 */
 		public String value(String locale) {
 			if (textdomain == null || textdomain.isEmpty()) return value;
 			try {
@@ -255,7 +375,20 @@ public abstract class Utils {
 				return value;
 			}
 		}
+
+		/**
+		 * Constructor for a non-translatable value.
+		 * @param k ini file key.
+		 * @param v Raw value.
+		 */
 		public Value(String k, String v) { this(k, v, null); }
+
+		/**
+		 * Constructor for a translatable value.
+		 * @param k ini file key.
+		 * @param v Raw value.
+		 * @param t Textdomain for translation.
+		 */
 		public Value(String k, String v, String t) {
 			key = k;
 			value = v;
@@ -266,6 +399,13 @@ public abstract class Utils {
 	private static final TreeMap<ChecksummedFile, TreeMap<String, Value>> _staticprofiles =
 	    new TreeMap<>();
 
+	/**
+	 * Parse an ini-style file and return its contents as a map of key-value pairs.
+	 * @param f File to parse.
+	 * @param textdomain Textdomain for translatable strings in the file
+	 *                   (may be \c null if the file is not meant to be translated).
+	 * @return The key-value pairs.
+	 */
 	synchronized public static TreeMap<String, Value> readProfile(File f, String textdomain)
 	    throws Exception {
 		ChecksummedFile key = new ChecksummedFile(f);
@@ -313,6 +453,13 @@ public abstract class Utils {
 		return profile;
 	}
 
+	/**
+	 * Modify an ini-style file.
+	 * @param f File to use.
+	 * @param textdomain Textdomain for translatable strings in the file
+	 *                   (may be \c null if the file is not meant to be translated).
+	 * @changes The key-value pairs to modify.
+	 */
 	synchronized public static void
 	editProfile(File f, String textdomain, TreeMap<String, Value> changes) throws Exception {
 		TreeMap<String, Value> profile = readProfile(f, textdomain);
@@ -330,10 +477,20 @@ public abstract class Utils {
 		out.close();
 	}
 
+	/**
+	 * Retrieve a value from the server config file.
+	 * @param key Key to look up.
+	 * @return The configured value.
+	 */
 	public static String config(String key) throws Exception {
 		return readProfile(new File("config"), null).get(key).value;
 	}
 
+	/**
+	 * Recursively calculate the total file size of a directory.
+	 * @param dir Directory to iterate.
+	 * @return The total size in bytes.
+	 */
 	public static long filesize(File dir) {
 		long l = 0;
 		for (File f : listSorted(dir)) {
@@ -345,6 +502,12 @@ public abstract class Utils {
 		return l;
 	}
 
+	/**
+	 * Something has gone very, VERY wrong. Print a verbose error message to
+	 * standard output and terminate the entire server abnormally.
+	 * @param str Descriptive message where the error happened.
+	 * @param x The %Exception that is responsible for this problem.
+	 */
 	public static void fatalError(String str, Exception x) {
 		System.out.println("#########################################################");
 		System.out.println(" VERY FATAL ERROR: " + str);
@@ -356,6 +519,12 @@ public abstract class Utils {
 		System.exit(1);
 	}
 
+	/**
+	 * Send a notification to the GitHub thread that serves as a notice board
+	 * for all events that require the attention of a server maintainer.
+	 * The thread is publicly visible, do not send sensitive data here.
+	 * @param msg Message to post.
+	 */
 	public static void sendNotificationToGitHubThread(String msg) throws Exception {
 		msg = msg.replaceAll("\n", "\\\\n");
 		msg = msg.replaceAll("\t", "\\\\t");

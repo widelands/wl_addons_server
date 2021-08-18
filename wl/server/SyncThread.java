@@ -24,7 +24,15 @@ import java.net.*;
 import java.util.*;
 import wl.utils.*;
 
+/**
+ * A thread that handles frequent maintenance tasks.
+ */
 class SyncThread implements Runnable {
+
+	/**
+	 * Main loop of the sync thread.
+	 * This runs forever until the server is terminated.
+	 */
 	@Override
 	public void run() {
 		// We run a full sync every 24 hours, but in order to prevent SQL connection
@@ -65,16 +73,16 @@ class SyncThread implements Runnable {
 						TransifexIntegration.TX.fullSync();
 					}
 
-					synchronized (ServerUtils.SYNCER) {
+					synchronized (ThreadActivityAndGitHubSyncManager.SYNCER) {
 						Utils.log("Cleaning up inactive threads...");
-						ServerUtils.SYNCER.check();
+						ThreadActivityAndGitHubSyncManager.SYNCER.check();
 
 						if (errored)
 							throw new Exception(
 							    "You still have not resolved the merge conflicts. Please do so soon!");
 
 						Utils.log("Performing GitHub sync...");
-						ServerUtils.SYNCER.sync();
+						ThreadActivityAndGitHubSyncManager.SYNCER.sync();
 					}
 				}
 			} catch (Exception e) {

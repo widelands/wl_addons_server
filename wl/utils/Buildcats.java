@@ -23,6 +23,9 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
+/**
+ * Class to rebuild a POT file for an add-on.
+ */
 public class Buildcats {
 	private static void recurse(String out, File dir) throws Exception {
 		for (File f : Utils.listSorted(dir)) {
@@ -46,6 +49,9 @@ public class Buildcats {
 		}
 	}
 
+	/**
+	 * Regenerate all POT files for all add-ons.
+	 */
 	public static void buildCatalogues() throws Exception {
 		for (File addon : Utils.listSorted(new File("addons"))) {
 			File dir = new File("po", addon.getName());

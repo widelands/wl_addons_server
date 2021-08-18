@@ -23,9 +23,21 @@ import java.io.*;
 import java.util.*;
 import wl.utils.*;
 
+/**
+ * Class to track statistics about the server.
+ */
 public class MuninStatistics {
+
+	/**
+	 * The singleton instance of this class.
+	 */
 	public static final MuninStatistics MUNIN = new MuninStatistics();
 
+	/**
+	 * Handles all communication with a Munin client.
+	 * @param out Stream to send data to the client.
+	 * @param in Stream to receive further data from the client.
+	 */
 	public static void handleMunin(InputStream in, PrintStream out) throws Exception {
 		final int version = Integer.valueOf(ServerUtils.readLine(in));
 		if (version != 1)
@@ -62,6 +74,11 @@ public class MuninStatistics {
 		cmdInfoToSkip = new HashMap<>();
 	}
 
+	/**
+	 * Print all current statistics.
+	 * @param version Munin protocol version.
+	 * @param out The stream to print data to.
+	 */
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
 		switch (version) {
 			case 1: {
@@ -86,9 +103,18 @@ public class MuninStatistics {
 		}
 	}
 
+	/**
+	 * Inform Munin not to record the next #N #CMD_INFO commands in the statistics.
+	 * @param n Number of commands to skip.
+	 */
 	public synchronized void skipNextCmdInfo(long n) {
 		if (n > 0) cmdInfoToSkip.put(Thread.currentThread(), n);
 	}
+
+	/**
+	 * Inform Munin to record a command.
+	 * @param cmd Command to record.
+	 */
 	public synchronized void countCommand(Command cmd) {
 		final Thread t = Thread.currentThread();
 		if (cmdInfoToSkip.containsKey(t)) {
@@ -106,7 +132,16 @@ public class MuninStatistics {
 		}
 		commandCounters[cmd.ordinal()]++;
 	}
+
+	/**
+	 * Inform Munin to record that a command terminated succesfully.
+	 */
 	public synchronized void registerSuccessfulCommand() { successfulCommands++; }
+
+	/**
+	 * Inform Munin to record a new login.
+	 * @param user ID of the user (\c -1 for unregistered users).
+	 */
 	public synchronized void registerLogin(long user) {
 		successfulLogins++;
 		if (user < 0) {
@@ -116,6 +151,11 @@ public class MuninStatistics {
 			allRegisteredUsers.add(user);
 		}
 	}
+
+	/**
+	 * Inform Munin that a user has quit the connection.
+	 * @param user ID of the user (\c -1 for unregistered users).
+	 */
 	public synchronized void registerLogout(Long user) {
 		if (user < 0) {
 			currentUnregisteredUsers--;
@@ -123,5 +163,9 @@ public class MuninStatistics {
 			currentRegisteredUsers.remove((Object)user);
 		}
 	}
+
+	/**
+	 * Inform Munin that a user has unsuccessfully attempted to connect.
+	 */
 	public synchronized void registerFailedLogin() { failedLogins++; }
 }

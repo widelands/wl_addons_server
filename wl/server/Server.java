@@ -24,7 +24,17 @@ import java.net.*;
 import java.util.*;
 import wl.utils.*;
 
+/**
+ * Main class that initializes all server processes
+ * and then keeps receiving client requests and creating threads to serve them.
+ */
 public class Server {
+
+	/**
+	 * The server's main loop. This runs forever until the server is killed
+	 * with Ctrl-C or ``kill PID``.
+	 * @param args Ignored.
+	 */
 	public static void main(String[] args) throws Exception {
 		Utils.bash("bash", "-c", "echo $PPID");  // Print our PID to the logfile so the maintainer
 		                                         // knows how to kill the server process.
@@ -40,66 +50,5 @@ public class Server {
 			Socket s = serverSocket.accept();
 			new Thread(new ClientThread(s), String.format("Client#%06d", ++n)).start();
 		}
-	}
-
-	public static void handle(String[] cmd,
-	                          PrintStream out,
-	                          InputStream in,
-	                          int protocolVersion,
-	                          String widelandsVersion,
-	                          String username,
-	                          long userDatabaseID,
-	                          boolean admin,
-	                          String locale) throws Exception {
-		Command command = Command.valueOf(cmd[0]);
-		MuninStatistics.MUNIN.countCommand(command);
-		HandleCommand h = new HandleCommand(cmd, out, in, protocolVersion, widelandsVersion,
-		                                    username, userDatabaseID, admin, locale);
-
-		switch (command) {
-			case CMD_LIST:
-				h.handleCmdList();
-				break;
-			case CMD_INFO:
-				h.handleCmdInfo();
-				break;
-			case CMD_DOWNLOAD:
-				h.handleCmdDownload();
-				break;
-			case CMD_I18N:
-				h.handleCmdI18n();
-				break;
-			case CMD_SCREENSHOT:
-				h.handleCmdScreenshot();
-				break;
-			case CMD_COMMENT:
-				h.handleCmdComment();
-				break;
-			case CMD_EDIT_COMMENT:
-				h.handleCmdEditComment();
-				break;
-			case CMD_VOTE:
-				h.handleCmdVote();
-				break;
-			case CMD_GET_VOTE:
-				h.handleCmdGetVote();
-				break;
-			case CMD_SUBMIT_SCREENSHOT:
-				h.handleCmdSubmitScreenshot();
-				break;
-			case CMD_SUBMIT:
-				h.handleCmdSubmit();
-				break;
-			case CMD_CONTACT:
-				h.handleCmdContact();
-				break;
-			case CMD_SETUP_TX:
-				h.handleCmdSetupTx();
-				break;
-			default:
-				throw new ServerUtils.WLProtocolException("Invalid command " + cmd[0]);
-		}
-
-		MuninStatistics.MUNIN.registerSuccessfulCommand();
 	}
 }

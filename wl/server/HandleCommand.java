@@ -25,6 +25,9 @@ import java.sql.ResultSet;
 import java.util.*;
 import wl.utils.*;
 
+/**
+ * Class to process a command that was sent from a client thread to the server.
+ */
 class HandleCommand {
 	private final String[] cmd;
 	private final PrintStream out;
@@ -36,6 +39,18 @@ class HandleCommand {
 	private final boolean admin;
 	private final String locale;
 
+	/**
+	 * Constructor.
+	 * @param cmd The command sent by the client. Parameters are in index \c 1+.
+	 * @param out Stream to send data to the client.
+	 * @param in Stream to receive further data from the client.
+	 * @param protocolVersion Protocol version the client uses.
+	 * @param widelandsVersion Widelands version the client uses (\c null if protocol version is less than \c 5).
+	 * @param username Name of the user (\c "" for unregistered guests).
+	 * @param userDatabaseID ID of the user (only valid for registered users).
+	 * @param admin Whether the user is a registered administrator.
+	 * @param locale Language the client is speaking.
+	 */
 	public HandleCommand(String[] cmd,
 	                     PrintStream out,
 	                     InputStream in,
@@ -56,6 +71,9 @@ class HandleCommand {
 		this.locale = locale;
 	}
 
+	/**
+	 * Handle a #CMD_LIST command.
+	 */
 	public void handleCmdList() throws Exception {
 		// Args: [5+: all]
 		ServerUtils.checkNrArgs(cmd, protocolVersion < 5 ? 0 : 1);
@@ -84,6 +102,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_INFO command.
+	 */
 	public void handleCmdInfo() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
@@ -172,6 +193,9 @@ class HandleCommand {
 		});
 	}
 
+	/**
+	 * Handle a #CMD_DOWNLOAD command.
+	 */
 	public void handleCmdDownload() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
@@ -194,6 +218,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_I18N command.
+	 */
 	public void handleCmdI18n() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
@@ -206,6 +233,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_SCREENSHOT command.
+	 */
 	public void handleCmdScreenshot() throws Exception {
 		// Args: addon screenie
 		ServerUtils.checkNrArgs(cmd, 2);
@@ -218,6 +248,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_VOTE command.
+	 */
 	public void handleCmdVote() throws Exception {
 		// Args: name vote
 		ServerUtils.checkNrArgs(cmd, 2);
@@ -239,6 +272,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_GET_VOTE command.
+	 */
 	public void handleCmdGetVote() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
@@ -256,6 +292,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_COMMENT command.
+	 */
 	public void handleCmdComment() throws Exception {
 		// Args: name version lines
 		ServerUtils.checkNrArgs(cmd, 3);
@@ -281,6 +320,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_EDIT_COMMENT command.
+	 */
 	public void handleCmdEditComment() throws Exception {
 		// Args: name index lines
 		ServerUtils.checkNrArgs(cmd, protocolVersion < 5 ? 3 : 2);
@@ -343,6 +385,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_SETUP_TX command.
+	 */
 	public void handleCmdSetupTx() throws Exception {
 		// Args: name
 		if (username.isEmpty() || !admin)
@@ -367,6 +412,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_CONTACT command.
+	 */
 	public void handleCmdContact() throws Exception {
 		// Args: lines
 		ServerUtils.checkNrArgs(cmd, 1);
@@ -387,6 +435,9 @@ class HandleCommand {
 		out.println("ENDOFSTREAM");
 	}
 
+	/**
+	 * Handle a #CMD_SUBMIT_SCREENSHOT command.
+	 */
 	public void handleCmdSubmitScreenshot() throws Exception {
 		// Args: name filesize checksum whitespaces description
 		ServerUtils.checkNrArgs(cmd, 5);
@@ -449,13 +500,16 @@ class HandleCommand {
 		});
 	}
 
+	/**
+	 * Handle a #CMD_SUBMIT command.
+	 */
 	public void handleCmdSubmit() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
 		ServerUtils.checkNameValid(cmd[1], false);
-		/* No need here to check if the add-on exists. */
+		// No need here to check if the add-on exists.
 
 		ServerUtils.semaphoreRW(cmd[1], () -> {
 			if (!admin && !Utils.isUploader(cmd[1], userDatabaseID))

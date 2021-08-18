@@ -26,25 +26,46 @@ import java.util.*;
 import org.json.simple.parser.*;
 import wl.utils.*;
 
+/**
+ * Class to handle all integration with Transifex.
+ */
 public class TransifexIntegration {
+
+	/**
+	 * The singleton instance of this class.
+	 */
 	public static TransifexIntegration TX = new TransifexIntegration();
+
 	private TransifexIntegration() {}
 
+	/**
+	 * Perform a full translations sync.
+	 */
 	public synchronized void fullSync() throws Exception {
 		pull();
 		buildCatalogues();
 		push();
 	}
 
+	/**
+	 * Pull translation files from Transifex. Does not perform any further processing.
+	 */
 	public synchronized void pull() throws Exception {
 		Utils.log("Pulling translations from Transifex...");
 		Utils.bashOutput("tx", "pull", "-f", "-a");
 	}
+
+	/**
+	 * Push the current POT files to Transifex.
+	 */
 	public synchronized void push() throws Exception {
 		Utils.log("Pushing POT files to Transifex...");
 		Utils.bashOutput("tx", "push", "-s");
 	}
 
+	/**
+	 * Update the POT files, synchronize the current PO files with them, and recompile all MO files.
+	 */
 	public synchronized void buildCatalogues() throws Exception {
 		Utils.log("Rebuilding catalogues...");
 		Buildcats.buildCatalogues();
@@ -104,7 +125,7 @@ public class TransifexIntegration {
 		public final String issueID, message, priority, datetime_modified, string, stringID,
 		    occurrence, addon;
 
-		private Issue(String issueID,
+		public Issue(String issueID,
 		              String message,
 		              String priority,
 		              String datetime_modified,
@@ -123,6 +144,10 @@ public class TransifexIntegration {
 		}
 	}
 
+	/**
+	 * Retrieve the list of open issues from Transifex
+	 * and send e-mails to add-on authors about any new ones.
+	 */
 	public synchronized void checkIssues() throws Exception {
 		Utils.log("Checking Transifex issues...");
 		List<Issue> allIssues = fetchIssues();

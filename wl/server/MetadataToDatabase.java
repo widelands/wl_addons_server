@@ -26,7 +26,8 @@ import wl.utils.*;
 
 // clang-format off
 
-/* Tool to migrate the metadata to a database.
+/**
+ * Tool to migrate the metadata to a database.
  *
  * Step 1: Prepare the databases in MySQL
  *     create table addons ( id int primary key auto_increment, name varchar(255), timestamp bigint, i18n_version int, security tinyint, quality int, downloads int );
@@ -47,10 +48,13 @@ import wl.utils.*;
  * Step 5:
  *     After the migration, delete this file and the whole `metadata` folder.
  */
-
 // clang-format on
-
 public class MetadataToDatabase {
+
+	/**
+	 * Migration main function.
+	 * @param args Ignored.
+	 */
 	public static void main(String[] args) throws Exception {
 		Utils.initDatabases();
 
