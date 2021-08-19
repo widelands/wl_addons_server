@@ -255,7 +255,7 @@ public class TransifexIntegration {
 			    +
 			    "To change how you receive notifications, please go to https://www.widelands.org/notification/.");
 			write.close();
-			Utils.bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
+			ServerUtils.sendEMail(email, message);
 			message.delete();
 		}
 	}

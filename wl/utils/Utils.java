@@ -267,7 +267,7 @@ public abstract class Utils {
 	 * Run a shell script, and echo the whole script and its output to standard output.
 	 * @param args The command and its arguments.
 	 * @return The exit status of the command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If the shell can't be accessed.
 	 */
 	public static int bash(String... args) throws Exception {
 		System.out.print("    $");
@@ -293,7 +293,7 @@ public abstract class Utils {
 	 * The standard error and exit value are discarded.
 	 * @param args The command and its arguments.
 	 * @return The output.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If the shell can't be accessed.
 	 */
 	public static String bashOutput(String... args) throws Exception {
 		Process p = new ProcessBuilder(args).start();

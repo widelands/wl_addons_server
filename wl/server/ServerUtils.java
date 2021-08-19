@@ -310,6 +310,25 @@ abstract class ServerUtils {
 		f.delete();
 	}
 
+	/**
+	 * Generate the Transifex resource name associated with an add-on.
+	 * @param name Name of the add-on.
+	 * @return Transifex resource name.
+	 */
+	public static String toTransifexResource(String name) {
+		return "widelands-addons." + name.replaceAll("[._]", "-");
+	}
+
+	/**
+	 * Send an e-mail.
+	 * @param email E-Mail address of the recipient.
+	 * @param message File containing the message as plaintext.
+	 * @throws Exception If the shell can't be accessed.
+	 */
+	public static void sendEMail(String email, File message) throws Exception {
+		Utils.bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
+	}
+
 	private static Object _enquiry_syncer = new Object();
 
 	/**

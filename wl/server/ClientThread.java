@@ -46,6 +46,7 @@ class ClientThread implements Runnable {
 		PrintStream out = null;
 		long userDatabaseID = -1;
 		boolean didLogInSuccessfully = false, hideFromStats = false;
+		final long timeOfConnection = System.currentTimeMillis();
 		try {
 			Utils.log("Connection received from " + socket.getInetAddress() + " : " +
 			          socket.getPort() + " on " + socket.getLocalSocketAddress() + " (" +
@@ -106,12 +107,13 @@ class ClientThread implements Runnable {
 
 			didLogInSuccessfully = true;
 			MuninStatistics.MUNIN.registerLogin(userDatabaseID);
+			HandleCommand handler = new HandleCommand(out, in, protocolVersion, widelandsVersion,
+				                                      username, userDatabaseID, admin, locale);
 			String cmd;
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
 				ThreadActivityAndGitHubSyncManager.SYNCER.tick(socket);
 				Utils.log("Received command: " + cmd);
-				handle(cmd.split(" "), out, in, protocolVersion, widelandsVersion, username,
-				       userDatabaseID, admin, locale);
+				handler.handle(cmd.split(" "));
 			}
 		} catch (Exception e) {
 			Utils.log("ERROR: " + e);
@@ -124,84 +126,10 @@ class ClientThread implements Runnable {
 				} else {
 					MuninStatistics.MUNIN.registerFailedLogin();
 				}
+				MuninStatistics.MUNIN.registerClientLifetime(System.currentTimeMillis() - timeOfConnection);
 			}
 			if (out != null) out.close();
 			ThreadActivityAndGitHubSyncManager.SYNCER.threadClosed();
 		}
-	}
-
-	/**
-	 * Handle a command.
-	 * @param cmd The command sent by the client. Parameters are in index 1+.
-	 * @param out Stream to send data to the client.
-	 * @param in Stream to receive further data from the client.
-	 * @param protocolVersion Protocol version the client uses.
-	 * @param widelandsVersion Widelands version the client uses (\c null if protocol version is
-	 *     less than \c 5).
-	 * @param username Name of the user (\c "" for unregistered guests).
-	 * @param userDatabaseID ID of the user (only valid for registered users).
-	 * @param admin Whether the user is a registered administrator.
-	 * @param locale Language the client is speaking.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
-	 */
-	private void handle(String[] cmd,
-	                    PrintStream out,
-	                    InputStream in,
-	                    int protocolVersion,
-	                    String widelandsVersion,
-	                    String username,
-	                    long userDatabaseID,
-	                    boolean admin,
-	                    String locale) throws Exception {
-		Command command = Command.valueOf(cmd[0]);
-		MuninStatistics.MUNIN.countCommand(command);
-		HandleCommand h = new HandleCommand(cmd, out, in, protocolVersion, widelandsVersion,
-		                                    username, userDatabaseID, admin, locale);
-
-		switch (command) {
-			case CMD_LIST:
-				h.handleCmdList();
-				break;
-			case CMD_INFO:
-				h.handleCmdInfo();
-				break;
-			case CMD_DOWNLOAD:
-				h.handleCmdDownload();
-				break;
-			case CMD_I18N:
-				h.handleCmdI18n();
-				break;
-			case CMD_SCREENSHOT:
-				h.handleCmdScreenshot();
-				break;
-			case CMD_COMMENT:
-				h.handleCmdComment();
-				break;
-			case CMD_EDIT_COMMENT:
-				h.handleCmdEditComment();
-				break;
-			case CMD_VOTE:
-				h.handleCmdVote();
-				break;
-			case CMD_GET_VOTE:
-				h.handleCmdGetVote();
-				break;
-			case CMD_SUBMIT_SCREENSHOT:
-				h.handleCmdSubmitScreenshot();
-				break;
-			case CMD_SUBMIT:
-				h.handleCmdSubmit();
-				break;
-			case CMD_CONTACT:
-				h.handleCmdContact();
-				break;
-			case CMD_SETUP_TX:
-				h.handleCmdSetupTx();
-				break;
-			default:
-				throw new ServerUtils.WLProtocolException("Invalid command " + cmd[0]);
-		}
-
-		MuninStatistics.MUNIN.registerSuccessfulCommand();
 	}
 }

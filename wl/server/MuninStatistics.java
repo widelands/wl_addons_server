@@ -56,7 +56,7 @@ public class MuninStatistics {
 	private final long initTime;
 	private long currentUnregisteredUsers, failedLogins, successfulLogins, skippedCommands,
 	    successfulCommands;
-	private final List<Long> currentRegisteredUsers;
+	private final List<Long> currentRegisteredUsers, clientLifetimes;
 	private final Set<Long> allRegisteredUsers;
 	private final Map<Thread, Long> cmdInfoToSkip;
 
@@ -70,6 +70,7 @@ public class MuninStatistics {
 		successfulLogins = 0;
 		skippedCommands = 0;
 		successfulCommands = 0;
+		clientLifetimes = new ArrayList<>();
 		currentRegisteredUsers = new ArrayList<>();
 		allRegisteredUsers = new HashSet<>();
 		cmdInfoToSkip = new HashMap<>();
@@ -82,27 +83,33 @@ public class MuninStatistics {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
-		switch (version) {
-			case 1: {
-				out.println(System.currentTimeMillis() - initTime);
-				out.println(currentRegisteredUsers.size());
-				out.println(currentUnregisteredUsers);
-				out.println(allRegisteredUsers.size());
-				out.println(successfulLogins);
-				out.println(failedLogins);
-
-				long totalCmd = skippedCommands;
-				for (long cmd : commandCounters) {
-					totalCmd += cmd;
-					out.println(cmd);
-				}
-				out.println(totalCmd - successfulCommands);
-
-				break;
+		out.println(System.currentTimeMillis() - initTime);
+		if (version > 1) {
+			double sum = 0;
+			long n = 0;
+			for (Long l : clientLifetimes) {
+				sum += l;
+				n++;
 			}
-			default:
-				throw new ServerUtils.WLProtocolException("Wrong version " + version);
+			out.println(n > 0 ? (sum / n) : 0);
 		}
+
+		out.println(currentRegisteredUsers.size());
+		out.println(currentUnregisteredUsers);
+		out.println(allRegisteredUsers.size());
+		out.println(successfulLogins);
+		out.println(failedLogins);
+
+		long totalCmd = skippedCommands;
+		int nrCmdLines = (version > 1 ? commandCounters.length : (Command.CMD_SETUP_TX.ordinal() + 1));
+		for (long cmd : commandCounters) {
+			totalCmd += cmd;
+			if (nrCmdLines > 0) {
+				out.println(cmd);
+				nrCmdLines--;
+			}
+		}
+		out.println(totalCmd - successfulCommands);
 	}
 
 	/**
@@ -136,7 +143,13 @@ public class MuninStatistics {
 	}
 
 	/**
-	 * Inform Munin to record that a command terminated succesfully.
+	 * Inform Munin how long a client has been connected in total.
+	 * @param ms Client's lifetime in milliseconds.
+	 */
+	public synchronized void registerClientLifetime(long ms) { clientLifetimes.add(ms); }
+
+	/**
+	 * Inform Munin to record that a command terminated successfully.
 	 */
 	public synchronized void registerSuccessfulCommand() { successfulCommands++; }
 

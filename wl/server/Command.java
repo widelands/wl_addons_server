@@ -49,11 +49,12 @@ package wl.server;
  * - munin
  *   The 'munin' protocol is used to print statistics about the server.
  *   In the initial contact, language and username are skipped; instead the munin protocol
- *   version is printed (currently only version 1 is supported, which is the one described here).
+ *   version is printed (currently supported versions are 1 and 2).
  *   The password authentication is then performed like for registered users.
  *   If the password is correct, the server replies not ADMIN/SUCCESS but instead
  *   prints out server statistics in the following format:
  *   - Time in milliseconds since the server was started, \n
+ *   - {@literal Protocol version >= 2}: Average client lifetime in milliseconds, \n
  *   - Number of current registered users, \n
  *   - Number of current unregistered users, \n
  *   - Counter of unique registered users, \n
@@ -72,6 +73,10 @@ package wl.server;
  *   - Counter of CMD_SUBMIT_SCREENSHOT requests, \n
  *   - Counter of CMD_CONTACT           requests, \n
  *   - Counter of CMD_SETUP_TX          requests, \n
+ *   - {@literal Protocol version >= 2}: Counter of CMD_ADMIN_DELETE    requests, \n
+ *   - {@literal Protocol version >= 2}: Counter of CMD_ADMIN_VERIFY    requests, \n
+ *   - {@literal Protocol version >= 2}: Counter of CMD_ADMIN_QUALITY   requests, \n
+ *   - {@literal Protocol version >= 2}: Counter of CMD_ADMIN_SYNC_SAFE requests, \n
  *   - Counter of unsuccessful commands, \n
  *   - ENDOFSTREAM\n
  *   The connection is then closed by the server.
@@ -132,7 +137,7 @@ public enum Command {
 	 *      - number of \n characters in the message, \n
 	 *      - message, \n
 	 *  - "verified" or "unchecked", \n
-	 *  - {@literal Protocol version >= 5}: Code quality rating \n
+	 *  - {@literal Protocol version >= 5}: Code quality rating (1-3) \n
 	 *  - icon checksum (0 for no icon), \n
 	 *  - icon filesize (0 for no icon), \n
 	 *  - icon file as a byte stream
@@ -282,4 +287,47 @@ public enum Command {
 	 * Returns: ENDOFSTREAM\n or an error message\n
 	 */
 	CMD_SETUP_TX,
+
+	/**
+	 * ``CMD_ADMIN_DELETE name lines``
+	 * Added in protocol version 5.
+	 * Irrevocably delete an add-on and all its metadata and translations from
+	 * the server and from Transifex. Only admins may do this.
+	 * Arg 1: Add-on name
+	 * Arg 2: Number of lines in the reason
+	 * Then #lines lines with a human-readable message explaining why the add-on was deleted,
+	 * then ENDOFSTREAM\n.
+	 * Returns: ENDOFSTREAM\n or an error message\n
+	 */
+	CMD_ADMIN_DELETE,
+
+	/**
+	 * ``CMD_ADMIN_VERIFY name verify``
+	 * Added in protocol version 5.
+	 * Change the verification status of an add-on. Only admins may do this.
+	 * Arg 1: Add-on name
+	 * Arg 2: 1 to verify the add-on, 0 to mark it unsafe
+	 * Returns: ENDOFSTREAM\n or an error message\n
+	 */
+	CMD_ADMIN_VERIFY,
+
+	/**
+	 * ``CMD_ADMIN_QUALITY name quality``
+	 * Added in protocol version 5.
+	 * Change the quality rating of an add-on. Only admins may do this.
+	 * Arg 1: Add-on name
+	 * Arg 2: New quality rating (1-3), 0 for not assessed
+	 * Returns: ENDOFSTREAM\n or an error message\n
+	 */
+	CMD_ADMIN_QUALITY,
+
+	/**
+	 * ``CMD_ADMIN_SYNC_SAFE name state``
+	 * Added in protocol version 5.
+	 * Change the sync safety status of an add-on. Only admins may do this.
+	 * Arg 1: Add-on name
+	 * Arg 2: 1 to mark the add-on sync-safe, 0 to mark it as desyncing
+	 * Returns: ENDOFSTREAM\n or an error message\n
+	 */
+	CMD_ADMIN_SYNC_SAFE,
 }
