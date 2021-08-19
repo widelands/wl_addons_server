@@ -589,6 +589,13 @@ class HandleCommand {
 			    "\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
 
 			ResultSet sql = Utils.sqlQuery(
+				Utils.Databases.kWebsite,
+				"select id from notification_noticetype where label='addon_deleted'");
+			final boolean noticeTypeKnown = sql.next();
+			if (!noticeTypeKnown) Utils.log("Notification type 'addon_deleted' was not defined yet");
+			final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
+
+			sql = Utils.sqlQuery(
 			    Utils.Databases.kAddOns, "select user from uploaders where addon=" + id);
 			while (sql.next()) {
 				long user = sql.getLong("user");
@@ -598,6 +605,10 @@ class HandleCommand {
 				if (!email.next()) {
 					Utils.log("User #" + user +
 					          " does not seem to be a registered user. No e-mail will be sent.");
+					continue;
+				}
+				if (noticeTypeKnown && Utils.checkUserDisabledNotifications(user, noticeTypeID)) {
+					Utils.log("User '" + username + "' disabled deletion notifications.");
 					continue;
 				}
 
@@ -612,7 +623,7 @@ class HandleCommand {
 				write.println(reason);
 				write.println("\n-------------------------");
 				write.print(
-				    "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/");
+				    "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/.");
 				write.close();
 
 				ServerUtils.sendEMail(email.getString("email"), message);

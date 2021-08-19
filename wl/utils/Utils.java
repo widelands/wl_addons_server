@@ -153,6 +153,21 @@ public abstract class Utils {
 	}
 
 	/**
+	 * Check if a user disabled e-mail notifications in their website settings.
+	 * @param user The user's ID.
+	 * @param notice The notice type ID.
+	 * @return The user disabled this type of notification.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static boolean checkUserDisabledNotifications(long user, long notice) throws Exception {
+		ResultSet sql = sqlQuery(
+			Databases.kWebsite,
+			"select send from notification_noticesetting where user_id=" + user +
+			    " and medium=1 and notice_type_id=" + notice);
+		return sql.next() && sql.getShort("send") < 1;
+	}
+
+	/**
 	 * Retrieve the ID of an add-on from the database.
 	 * @param name The add-on's name.
 	 * @return The add-on's ID.
