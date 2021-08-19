@@ -44,6 +44,7 @@ local init = {
             granite = 16,
             coal = 16,
             iron = 16,
+            ore = 16,
             spidercloth = 8,
             marble = 8,
             marble_column = 8,

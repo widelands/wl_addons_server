@@ -130,9 +130,9 @@ descriptions:new_tribe {
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Reed, part 1
-                  pgettext("europeans_ware", "Reed are an important building material."),
+                  pgettext("europeans_ware", "Reed is an important building material."),
                   -- TRANSLATORS: Helptext for an europeans ware: Reed, part 2
-                  pgettext("europeans_ware", "They are produced by reed yard."),
+                  pgettext("europeans_ware", "It is produced by reed yard."),
                }
             }
          },
@@ -208,9 +208,9 @@ descriptions:new_tribe {
             preciousness = 12,
             helptexts = {
                purpose = {
-                  -- TRANSLATORS: Helptext for an europeans ware: Granite, part 1
+                  -- TRANSLATORS: Helptext for an europeans ware: Clay, part 1
                   pgettext("europeans_ware", "Clay is needed to make bricks."),
-                  -- TRANSLATORS: Helptext for an europeans ware: Granite, part 2
+                  -- TRANSLATORS: Helptext for an europeans ware: Clay, part 2
                   pgettext("europeans_ware", "The europeans gets clay from claydiggers house.")
                }
             }
@@ -221,9 +221,9 @@ descriptions:new_tribe {
             preciousness = 48,
             helptexts = {
                purpose = {
-                  -- TRANSLATORS: Helptext for an europeans ware: Granite, part 1
+                  -- TRANSLATORS: Helptext for an europeans ware: Brick, part 1
                   pgettext("europeans_ware", "Brick is a basic building material."),
-                  -- TRANSLATORS: Helptext for an europeans ware: Granite, part 2
+                  -- TRANSLATORS: Helptext for an europeans ware: Brick, part 2
                   pgettext("europeans_ware", "The europeans produces bricks in lime kiln or stonemasons house out of clay, granite and water.")
                }
             }
@@ -313,10 +313,10 @@ descriptions:new_tribe {
             preciousness = 16,
             helptexts = {
                purpose = {
-                  -- TRANSLATORS: Helptext for an europeans ware: Wheat, part 1
+                  -- TRANSLATORS: Helptext for an europeans ware: Rye, part 1
                   pgettext("europeans_ware", "Rye is essential for survival."),
-                  -- TRANSLATORS: Helptext for an europeans ware: Wheat, part 2
-                  pgettext("europeans_ware", "Wheat is produced by farms and used by mills to produce mixed flour.")
+                  -- TRANSLATORS: Helptext for an europeans ware: Rye, part 2
+                  pgettext("europeans_ware", "Rye is produced by farms and used by mills to produce mixed flour.")
                }
             }
          },
@@ -362,7 +362,7 @@ descriptions:new_tribe {
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for a europeans ware: Snack, part 1
-                  pgettext("europeans_ware", "A bigger morsel than the ration. Used in mines and to train soldiers in battlearenas."),
+                  pgettext("europeans_ware", "A bigger morsel than the ration. Used in mines and to train soldiers in battle arenas."),
                   -- TRANSLATORS: Helptext for a europeans ware: Snack, part 2
                   pgettext("europeans_ware", "Snacks are produced in a tavern or an inn out of fish or meat and water and flour.")
                }
@@ -375,7 +375,7 @@ descriptions:new_tribe {
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for a europeans ware: Meal, part 1
-                  pgettext("europeans_ware", "A bigger food than the ration or snack. Used in the deepest mines and the most advanced trainingssites"),
+                  pgettext("europeans_ware", "A bigger food than the ration or snack. Used in the deepest mines and the most advanced trainingsites"),
                   -- TRANSLATORS: Helptext for a europeans ware: Meal, part 2
                   pgettext("europeans_ware", "Meals are produced in an inn out of fish or meat and water and flour.")
                }
@@ -481,7 +481,7 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for an europeans ware: Coal, part 1
                   pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
                   -- TRANSLATORS: Helptext for an europeans ware: Coal, part 2
-                  pgettext("europeans_ware", "The fires of the europeans smelting works, smithies are usually fed with coal.")
+                  pgettext("europeans_ware", "The fires of the europeans smelting works and smithies are usually fed with coal.")
                }
             }
          },
@@ -536,7 +536,7 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for an europeans ware: Gold, part 1
                   pgettext("ware", "Gold is the most valuable of all metals, and it is smelted out of ore."),
                   -- TRANSLATORS: Helptext for an europeans ware: Gold, part 2
-                  pgettext("europeans_ware", "It is produced by the smelting works. Armor and weapons are embellished with gold in the smithy. Some valuable buildings need gold to be build.")
+                  pgettext("europeans_ware", "It is produced by the smelting works. Armor and weapons are embellished with gold in the smithy. Some valuable buildings need gold to be built.")
                }
             }
          }
@@ -578,7 +578,7 @@ descriptions:new_tribe {
                    -- TRANSLATORS: Helptext for an europeans ware: Saw, part 1
                    pgettext("europeans_ware", "The saw is an essential tool. This saw is needed by the woodcutter and the carpenter."),
                    -- TRANSLATORS: Helptext for an europeans ware: Saw, part 2
-                   pgettext("europeans_ware", "It is produced produced by all smithies.")
+                   pgettext("europeans_ware", "It is produced by all smithies.")
                 }
             }
          },
@@ -672,7 +672,7 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for an europeans ware: Basket, part 1
                   pgettext("europeans_ware", "This basket is needed by the farmer for harvesting the fruits and grapes and needed by miller and by gamekeeper."),
                   -- TRANSLATORS: Helptext for an europeans ware: Basket, part 2
-                  pgettext("europeans_ware", " It is also used by advanced carrier to transport wares. It is produced produced by all smithies.")
+                  pgettext("europeans_ware", "It is also used by advanced carrier to transport wares. It is produced by all smithies.")
                }
             }
          },
@@ -888,7 +888,7 @@ descriptions:new_tribe {
    -- Each subtable is a column in the workers windows.
    workers_order = {
       {
-         -- Basic Workers
+         -- Carriers
          {
             name = "europeans_carrier",
             helptexts = {
@@ -898,32 +898,56 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_carrier_1",
+            default_target_quantity = 16,
+            preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carrier
                purpose = pgettext("europeans_worker", "Carries items along your roads with their hands.")
             }
          },
          {
+            name = "europeans_carrier_ox",
+            default_target_quantity = 16,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Carries items along your roads")
+            }
+         },
+         {
             name = "europeans_carrier_2",
+            default_target_quantity = 16,
+            preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carrier
                purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
+            }
+         },
+         {
+            name = "europeans_carrier_donkey",
+            default_target_quantity = 16,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Carries items along your roads.")
             }
          },
          {
             name = "europeans_carrier_3",
+            default_target_quantity = 16,
+            preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carrier
                purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
             }
          },
          {
-            name = "europeans_builder",
-            default_target_quantity = 2,
-            preciousness = 16,
+            name = "europeans_carrier_horse",
+            default_target_quantity = 16,
+            preciousness = 4,
             helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Builder
-               purpose = pgettext("europeans_worker", "Works at construction sites to raise new buildings.")
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Carries items along your roads.")
             }
          },
          {
@@ -933,6 +957,18 @@ descriptions:new_tribe {
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Ferry
                purpose = pgettext("europeans_worker", "Ships wares across narrow rivers.")
+            }
+         },
+      },
+      {
+         -- Basic Workers
+         {
+            name = "europeans_builder",
+            default_target_quantity = 2,
+            preciousness = 16,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Builder
+               purpose = pgettext("europeans_worker", "Works at construction sites to raise new buildings.")
             }
          },
          {
@@ -2906,6 +2942,27 @@ descriptions:new_tribe {
          }
       },
       {
+         name = "europeans_animal_farm_basic",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for a europeans production site: Cattle Farm
+            purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system."),
+         }
+      },
+      {
+         name = "europeans_animal_farm_normal",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Donkey Farm
+            purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system.")
+         }
+      },
+      {
+         name = "europeans_animal_farm_advanced",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Horse Farm
+            purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system.")
+         }
+      },
+      {
          name = "europeans_farm_basic",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for production site: Farm
@@ -3380,9 +3437,9 @@ descriptions:new_tribe {
 
    -- Special types
    builder = "europeans_builder",
-   carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3"},
+   carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse"},
    carrier = "europeans_carrier_1",
-   carrier2 = "europeans_carrier_2",
+   carrier2 = "europeans_carrier_ox",
    geologist = "europeans_geologist",
    scouts_house = "europeans_scouts_house_basic",
    soldier = "europeans_soldier",

@@ -53,6 +53,7 @@ init = {
          reed = 16,
          planks = 8,
          iron = 6,
+         ore = 6,
          gold = 4,
          europeans_fishbreeder_basic = 1,
          europeans_stonecutter_basic = 2,
