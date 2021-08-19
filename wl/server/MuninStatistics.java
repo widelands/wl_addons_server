@@ -94,7 +94,7 @@ public class MuninStatistics {
 		if (cmdInfoToSkip.containsKey(t)) {
 			long n = cmdInfoToSkip.get(t);
 			if (cmd == Command.CMD_INFO) {
-				if (n > 0) {
+				if (n > 1) {
 					cmdInfoToSkip.put(t, n - 1);
 				} else {
 					cmdInfoToSkip.remove(t);

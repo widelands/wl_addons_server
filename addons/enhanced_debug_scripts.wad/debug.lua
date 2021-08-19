@@ -260,7 +260,7 @@ function connect_road(startx, starty, targetx, targety)
             targetx = targetx + 1
         end
         if ((diffy == 1) or (diffy == -1)) and (diffx == 0) then
-            targety = targety + 1
+            targety = targety - 1
         end
 
         -- horizontal road --
@@ -284,7 +284,11 @@ function connect_road(startx, starty, targetx, targety)
         end
 
         -- vertical road --
-        if (diffx == 0) and (diffy == 3) then
+        if (diffx == 0) and (diffy == 3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "br", "bl", "br", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 0) and (diffy == 3) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "bl", "br", "bl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
@@ -293,7 +297,11 @@ function connect_road(startx, starty, targetx, targety)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         end
-        if (diffx == 0) and (diffy == -3) then
+        if (diffx == 0) and (diffy == -3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "tr", "tl", "tr", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 0) and (diffy == -3) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "tl", "tr", "tl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
@@ -309,7 +317,7 @@ function connect_road(startx, starty, targetx, targety)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == 2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "br", "br", "r", true)
+          road = player:place_road(roadtype, startflag, "br", "r", "br", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == 3) and (diffy == 1) then
@@ -327,11 +335,11 @@ function connect_road(startx, starty, targetx, targety)
         end
 
         if (diffx == -3) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tl", "l", "l", true)
+          road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -2) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", "l", true)
+          road = player:place_road(roadtype, startflag, "tl", "l", "tl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -3) and (diffy == -1) then
@@ -353,11 +361,11 @@ function connect_road(startx, starty, targetx, targety)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == 2) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tr", "tr", "r", true)
+          road = player:place_road(roadtype, startflag, "tr", "r", "tr", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == 3) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tr", "r", "tr", true)
+          road = player:place_road(roadtype, startflag, "tr", "r", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx > 0) and (diffy == -1) then
@@ -375,7 +383,7 @@ function connect_road(startx, starty, targetx, targety)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "l", true)
+          road = player:place_road(roadtype, startflag, "bl", "l", "bl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -3) and (diffy == 1) then
@@ -582,21 +590,21 @@ function dismantle_all_buildings(player_number, building_name)
     local tribe = player.tribe
     local tribe_name = tribe.name
 
-	for k, tplayer in ipairs(game.players) do
-		for i, tbuilding in ipairs(tplayer.tribe.buildings) do
-			for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-				if tbuilding.name == building_name then
-					building:dismantle(true)
-				elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
-					building:dismantle(true)
-				elseif string.find(tbuilding.name, building_name) then
-					building:dismantle(true)
-				elseif tbuilding.type_name == building_name then
-					building:dismantle(true)
-				end
-		   end
-		end
-	end
+    for k, tplayer in ipairs(game.players) do
+        for i, tbuilding in ipairs(tplayer.tribe.buildings) do
+            for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+                if tbuilding.name == building_name then
+                    building:dismantle(true)
+                elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+                    building:dismantle(true)
+                elseif string.find(tbuilding.name, building_name) then
+                    building:dismantle(true)
+                elseif tbuilding.type_name == building_name then
+                    building:dismantle(true)
+                end
+           end
+        end
+    end
 end
 
 function dismantle_idle_buildings(player_number, productivity_threshold)
