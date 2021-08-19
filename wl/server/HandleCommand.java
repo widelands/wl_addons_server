@@ -235,9 +235,9 @@ class HandleCommand {
 				if (sql.wasNull()) editorID = null;
 				Long editTS = sql.getLong("edit_timestamp");
 				if (sql.wasNull()) editTS = null;
-				comments.add(new Utils.AddOnComment(sql.getLong("id"), sql.getLong("user"), sql.getLong("timestamp"),
-				                                    editorID, editTS, sql.getString("version"),
-				                                    sql.getString("message")));
+				comments.add(new Utils.AddOnComment(
+				    sql.getLong("id"), sql.getLong("user"), sql.getLong("timestamp"), editorID,
+				    editTS, sql.getString("version"), sql.getString("message")));
 			}
 			out.println(comments.size());
 			for (Utils.AddOnComment c : comments) {

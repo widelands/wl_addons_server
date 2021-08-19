@@ -39,9 +39,7 @@ public abstract class Utils {
 			checksum = cs();
 		}
 
-		private String cs() {
-			return file.isFile() ? checksum(file) : "";
-		}
+		private String cs() { return file.isFile() ? checksum(file) : ""; }
 
 		public boolean valid() { return cs().equals(checksum); }
 
@@ -372,7 +370,7 @@ public abstract class Utils {
 		 * @param message Text of the comment.
 		 */
 		public AddOnComment(long commentID,
-		long userID,
+		                    long userID,
 		                    long timestamp,
 		                    Long editorID,
 		                    Long editTimestamp,
