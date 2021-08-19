@@ -589,10 +589,11 @@ class HandleCommand {
 			    "\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
 
 			ResultSet sql = Utils.sqlQuery(
-				Utils.Databases.kWebsite,
-				"select id from notification_noticetype where label='addon_deleted'");
+			    Utils.Databases.kWebsite,
+			    "select id from notification_noticetype where label='addon_deleted'");
 			final boolean noticeTypeKnown = sql.next();
-			if (!noticeTypeKnown) Utils.log("Notification type 'addon_deleted' was not defined yet");
+			if (!noticeTypeKnown)
+				Utils.log("Notification type 'addon_deleted' was not defined yet");
 			final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
 
 			sql = Utils.sqlQuery(

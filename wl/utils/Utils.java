@@ -161,9 +161,8 @@ public abstract class Utils {
 	 */
 	public static boolean checkUserDisabledNotifications(long user, long notice) throws Exception {
 		ResultSet sql = sqlQuery(
-			Databases.kWebsite,
-			"select send from notification_noticesetting where user_id=" + user +
-			    " and medium=1 and notice_type_id=" + notice);
+		    Databases.kWebsite, "select send from notification_noticesetting where user_id=" +
+		                            user + " and medium=1 and notice_type_id=" + notice);
 		return sql.next() && sql.getShort("send") < 1;
 	}
 
