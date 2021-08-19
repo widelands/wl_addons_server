@@ -36,10 +36,14 @@ public abstract class Utils {
 
 		public ChecksummedFile(File f) {
 			file = f;
-			checksum = checksum(f);
+			checksum = cs();
 		}
 
-		public boolean valid() { return checksum(file).equals(checksum); }
+		private String cs() {
+			return file.isFile() ? checksum(file) : "";
+		}
+
+		public boolean valid() { return cs().equals(checksum); }
 
 		@Override
 		public int compareTo(Object o) {
@@ -336,6 +340,9 @@ public abstract class Utils {
 	 */
 	public static class AddOnComment {
 
+		/** This comment's unique ID. */
+		public final long commentID;
+
 		/** The ID of the user who created this comment. */
 		public final long userID;
 
@@ -356,6 +363,7 @@ public abstract class Utils {
 
 		/**
 		 * Constructor.
+		 * @param commentID This comment's unique ID.
 		 * @param userID ID of the comment author.
 		 * @param timestamp Timestamp when the comment was created.
 		 * @param editorID ID of the last person who edited the comment (may be \c null).
@@ -363,12 +371,14 @@ public abstract class Utils {
 		 * @param version Version of the add-on about which the comment was written.
 		 * @param message Text of the comment.
 		 */
-		public AddOnComment(long userID,
+		public AddOnComment(long commentID,
+		long userID,
 		                    long timestamp,
 		                    Long editorID,
 		                    Long editTimestamp,
 		                    String version,
 		                    String message) {
+			this.commentID = commentID;
 			this.userID = userID;
 			this.timestamp = timestamp;
 			this.editorID = editorID;

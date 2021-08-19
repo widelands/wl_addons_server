@@ -104,7 +104,7 @@ public class UpdateList {
 			    Utils.Databases.kAddOns, "select * from usercomments where addon=" + addOnID);
 			while (sql.next()) {
 				comments.add(
-				    new Utils.AddOnComment(sql.getLong("user"), sql.getLong("timestamp"), null,
+				    new Utils.AddOnComment(sql.getLong("id"), sql.getLong("user"), sql.getLong("timestamp"), null,
 				                           null, sql.getString("version"),
 				                           // These lists don't allow newlines, so we use two spaces
 				                           // instead. Localization is not possible here.

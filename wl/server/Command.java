@@ -129,6 +129,7 @@ public enum Command {
 	 *  - number of '10' votes, \n
 	 *  - number of comments, \n
 	 *  - for each comment:
+	 *      - {@literal Protocol version >= 5}: Comment ID, \n
 	 *      - name, \n,
 	 *      - timestamp, \n,
 	 *      - last editor name (may be empty), \n,
