@@ -108,7 +108,7 @@ class ClientThread implements Runnable {
 			didLogInSuccessfully = true;
 			MuninStatistics.MUNIN.registerLogin(userDatabaseID);
 			HandleCommand handler = new HandleCommand(out, in, protocolVersion, widelandsVersion,
-				                                      username, userDatabaseID, admin, locale);
+			                                          username, userDatabaseID, admin, locale);
 			String cmd;
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
 				ThreadActivityAndGitHubSyncManager.SYNCER.tick(socket);
@@ -126,7 +126,8 @@ class ClientThread implements Runnable {
 				} else {
 					MuninStatistics.MUNIN.registerFailedLogin();
 				}
-				MuninStatistics.MUNIN.registerClientLifetime(System.currentTimeMillis() - timeOfConnection);
+				MuninStatistics.MUNIN.registerClientLifetime(System.currentTimeMillis() -
+				                                             timeOfConnection);
 			}
 			if (out != null) out.close();
 			ThreadActivityAndGitHubSyncManager.SYNCER.threadClosed();

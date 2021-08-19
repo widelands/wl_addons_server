@@ -101,7 +101,8 @@ public class MuninStatistics {
 		out.println(failedLogins);
 
 		long totalCmd = skippedCommands;
-		int nrCmdLines = (version > 1 ? commandCounters.length : (Command.CMD_SETUP_TX.ordinal() + 1));
+		int nrCmdLines =
+		    (version > 1 ? commandCounters.length : (Command.CMD_SETUP_TX.ordinal() + 1));
 		for (long cmd : commandCounters) {
 			totalCmd += cmd;
 			if (nrCmdLines > 0) {

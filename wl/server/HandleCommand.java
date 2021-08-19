@@ -484,9 +484,10 @@ class HandleCommand {
 				if (!potFile.isFile())
 					throw new ServerUtils.WLProtocolException("Unable to create POT for " + cmd[1]);
 			}
-			Utils.bash("tx", "config", "mapping", "--execute", "-r", ServerUtils.toTransifexResource(cmd[1]), "--source-lang",
-			           "en", "--type", "PO", "--source-file", potFile.getAbsolutePath(),
-			           "--expression", "po/" + cmd[1] + "/<lang>.po");
+			Utils.bash("tx", "config", "mapping", "--execute", "-r",
+			           ServerUtils.toTransifexResource(cmd[1]), "--source-lang", "en", "--type",
+			           "PO", "--source-file", potFile.getAbsolutePath(), "--expression",
+			           "po/" + cmd[1] + "/<lang>.po");
 			TransifexIntegration.TX.push();
 		}
 
@@ -506,8 +507,10 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		final int state = Integer.valueOf(cmd[2]);
-		if (state != 0 && state != 1) throw new ServerUtils.WLProtocolException("Invalid state " + cmd[2]);
-		Utils.sqlCmd(Utils.Databases.kAddOns, "update addons set security=" + state + " where name='" + cmd[1] + "'");
+		if (state != 0 && state != 1)
+			throw new ServerUtils.WLProtocolException("Invalid state " + cmd[2]);
+		Utils.sqlCmd(Utils.Databases.kAddOns,
+		             "update addons set security=" + state + " where name='" + cmd[1] + "'");
 
 		out.println("ENDOFSTREAM");
 	}
@@ -525,8 +528,10 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		final int quality = Integer.valueOf(cmd[2]);
-		if (quality < 0 || quality > 3) throw new ServerUtils.WLProtocolException("Invalid quality " + cmd[2]);
-		Utils.sqlCmd(Utils.Databases.kAddOns, "update addons set quality=" + quality + " where name='" + cmd[1] + "'");
+		if (quality < 0 || quality > 3)
+			throw new ServerUtils.WLProtocolException("Invalid quality " + cmd[2]);
+		Utils.sqlCmd(Utils.Databases.kAddOns,
+		             "update addons set quality=" + quality + " where name='" + cmd[1] + "'");
 
 		out.println("ENDOFSTREAM");
 	}
@@ -578,19 +583,20 @@ class HandleCommand {
 		ServerUtils.semaphoreRW(cmd[1], () -> {
 			final long id = Utils.getAddOnID(cmd[1]);
 			Utils.sendNotificationToGitHubThread(
-				"The add-on '" + cmd[1] + "' (#" + id + ") has been deleted by an administrator for the following reason:\n"
-				+ reason +
-				"\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
+			    "The add-on '" + cmd[1] + "' (#" + id +
+			    ") has been deleted by an administrator for the following reason:\n" + reason +
+			    "\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
 
-			ResultSet sql =
-			    Utils.sqlQuery(Utils.Databases.kAddOns,
-			                   "select user from uploaders where addon=" + id);
+			ResultSet sql = Utils.sqlQuery(
+			    Utils.Databases.kAddOns, "select user from uploaders where addon=" + id);
 			while (sql.next()) {
 				long user = sql.getLong("user");
-				ResultSet email = Utils.sqlQuery(Utils.Databases.kWebsite,
-					                 "select email,username from auth_user where id=" + user);
+				ResultSet email =
+				    Utils.sqlQuery(Utils.Databases.kWebsite,
+				                   "select email,username from auth_user where id=" + user);
 				if (!email.next()) {
-					Utils.log("User #" + user + " does not seem to be a registered user. No e-mail will be sent.");
+					Utils.log("User #" + user +
+					          " does not seem to be a registered user. No e-mail will be sent.");
 					continue;
 				}
 
@@ -599,10 +605,13 @@ class HandleCommand {
 				write.println("From: noreply@widelands.org");
 				write.println("Subject: Add-On Deleted");
 				write.println("\nDear " + email.getString("username") + ",");
-				write.println("your add-on '" + cmd[1] + "' has been deleted by the server administrators for the following reason:");
+				write.println(
+				    "your add-on '" + cmd[1] +
+				    "' has been deleted by the server administrators for the following reason:");
 				write.println(reason);
 				write.println("\n-------------------------");
-				write.print("If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/");
+				write.print(
+				    "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/");
 				write.close();
 
 				ServerUtils.sendEMail(email.getString("email"), message);
