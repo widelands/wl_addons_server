@@ -9,7 +9,7 @@ push_textdomain("europeans_tribe.wad", true)
 init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Harbors",
-    -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+    -- TRANSLATORS: This is the tooltip for the "Harbors" starting condition
     tooltip = _"Start the game with bundle of ports",
     func =  function(player, shared_in_start)
 
@@ -60,6 +60,7 @@ init = {
                 planks = 32,
                 cloth = 32,
                 iron = 32,
+                ore = 32,
                 coal = 32,
                 spidercloth = 32,
                 marble = 32,
@@ -116,6 +117,7 @@ init = {
             port:set_wares("blackwood", math.ceil(32 / #ports))
             port:set_wares("planks", math.ceil(32 / #ports))
             port:set_wares("iron", math.ceil(32 / #ports))
+            port:set_wares("ore", math.ceil(32 / #ports))
             port:set_wares("coal", math.ceil(32 / #ports))
             port:set_wares("spidercloth", math.ceil(32 / #ports))
             port:set_wares("marble", math.ceil(24 / #ports))

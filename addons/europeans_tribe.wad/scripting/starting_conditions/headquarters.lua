@@ -30,6 +30,7 @@ init = {
                 blackwood = 32,
                 planks = 32,
                 iron = 32,
+                ore = 32,
                 coal = 32,
                 spidercloth = 32,
                 grout = 32,

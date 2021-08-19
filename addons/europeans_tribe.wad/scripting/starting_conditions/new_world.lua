@@ -63,6 +63,7 @@ init = {
                 planks = 32,
                 cloth = 32,
                 iron = 32,
+                ore = 32,
                 coal = 32,
                 spidercloth = 32,
                 marble = 32,
@@ -118,6 +119,7 @@ init = {
             port:set_wares("blackwood", math.ceil(32 / #ports))
             port:set_wares("planks", math.ceil(32 / #ports))
             port:set_wares("iron", math.ceil(32 / #ports))
+            port:set_wares("ore", math.ceil(32 / #ports))
             port:set_wares("coal", math.ceil(32 / #ports))
             port:set_wares("spidercloth", math.ceil(32 / #ports))
             port:set_wares("marble", math.ceil(24 / #ports))

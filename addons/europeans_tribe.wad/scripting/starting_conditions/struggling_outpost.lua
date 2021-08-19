@@ -40,6 +40,7 @@ local r = {
             marble = 24,
             quartz = 24,
             iron = 16,
+            ore = 16,
             spidercloth = 16,
             marble_column = 8,
             diamond = 8,

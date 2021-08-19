@@ -30,6 +30,7 @@ init = {
             planks = 32,
             cloth = 32,
             iron = 32,
+            ore = 32,
             coal = 32,
             spidercloth = 32,
             marble = 32,

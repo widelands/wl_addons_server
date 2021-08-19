@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 descriptions:new_productionsite_type {
    name = "europeans_tavern_basic",
    -- TRANSLATORS: This is a building name used in lists of buildings
-   descname = pgettext("europeans_building", "Basic Tavern Level"),
+   descname = pgettext("europeans_building", "Basic Tavern"),
    icon = dirname .. "menu.png",
    size = "medium",
 
