@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-19 03:03+0200\n"
+"POT-Creation-Date: 2021-08-20 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -2331,10 +2331,9 @@ msgstr "eenen Marmelpieler to sniddjen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Tavern"
-msgstr "Spinner"
+msgstr "Lütte Kneipe"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:8
@@ -2434,48 +2433,42 @@ msgstr "Well"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Animal Farm"
-msgstr "Meisterbuur"
+msgstr "Grote Deertentüchteree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:48
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:70
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:63
-#, fuzzy
 msgctxt "europeans_building"
 msgid "rearing cattle"
-msgstr "een Mahl torechttomaken"
+msgstr "Beesten to tüchten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing donkeys because ...
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:60
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:75
-#, fuzzy
 msgctxt "europeans_building"
 msgid "rearing donkeys"
-msgstr "Hönnig to maken"
+msgstr "Langohren to tüchten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:72
-#, fuzzy
 msgctxt "europeans_building"
 msgid "breeding horses"
-msgstr "Fisse in de See to tüchten"
+msgstr "Peer to tüchten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Animal Farm"
-msgstr "Buurderee"
+msgstr "Lütte Deertentüchteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Animal Farm"
-msgstr "Goder Buur"
+msgstr "Deertentüchteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:8
@@ -3339,14 +3332,12 @@ msgstr "Se worden ok in de Smee, Warft un Fährenwarft bruukt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Reed, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:133
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Reed is an important building material."
 msgstr "Reit is een wichtigs Baumaterial."
 
 #. TRANSLATORS: Helptext for an europeans ware: Reed, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:135
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced by reed yard."
 msgstr "'t word vun de Reitplanteree produzeert."
@@ -3532,11 +3523,10 @@ msgstr "Sünner Rogg kann man nich överleven."
 
 #. TRANSLATORS: Helptext for an europeans ware: Rye, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:319
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Rye is produced by farms and used by mills to produce mixed flour."
 msgstr ""
-"Weit word vun Buurdereen produzeert un vun Möhlen bruukt, um misket Mehl to "
+"Rogg word vun Buurdereen produzeert un vun Möhlen bruukt, um misket Mehl to "
 "produzeren."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wheat, part 1
@@ -3585,7 +3575,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a europeans ware: Snack, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:365
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "A bigger morsel than the ration. Used in mines and to train soldiers in "
@@ -3606,7 +3595,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:378
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "A bigger food than the ration or snack. Used in the deepest mines and the "
@@ -3729,7 +3717,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Coal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:484
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The fires of the europeans smelting works and smithies are usually fed with "
@@ -3784,7 +3771,6 @@ msgstr "Gold is dat düürste vun allen Metallen un word ut Kluten smelt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Gold, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:539
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "It is produced by the smelting works. Armor and weapons are embellished with "
@@ -3840,7 +3826,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Saw, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:581
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced by all smithies."
 msgstr "'t word vun all de Smeden produzeert."
@@ -3931,7 +3916,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Basket, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:675
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "It is also used by advanced carrier to transport wares. It is produced by "
@@ -4156,10 +4140,9 @@ msgstr "Draggt Waren mit de Hannen över diene Straten."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:914
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carries items along your roads"
-msgstr "Draggt Waren mit Körven över diene Straten."
+msgstr "Draggt Waren över diene Straten."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:923
@@ -4171,10 +4154,9 @@ msgstr "Draggt Waren mit Körven över diene Straten."
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:932
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:950
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carries items along your roads."
-msgstr "Draggt Waren mit Körven över diene Straten."
+msgstr "Draggt Waren över diene Straten."
 
 #. TRANSLATORS: Helptext for an europeans worker: Ferry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:959
@@ -5163,7 +5145,7 @@ msgstr "Rüst Lehrwichter ut un maakt se to Arbeiders."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2948
 msgctxt "europeans_building"
 msgid "Breeds strong oxen for adding them to the transportation system."
-msgstr ""
+msgstr "Tücht starke Ossen för dat Stratennett."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Donkey Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2955
@@ -5171,7 +5153,7 @@ msgctxt "europeans_building"
 msgid ""
 "Breeds strong oxen and cute and helpful donkeys for adding them to the "
 "transportation system."
-msgstr ""
+msgstr "Tücht starke Ossen un nüte, godige Langohren för dat Stratennett."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Horse Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2962
@@ -5180,6 +5162,8 @@ msgid ""
 "Breeds strong oxen, cute and helpful donkeys and strong horses for adding "
 "them to the transportation system."
 msgstr ""
+"Tücht starke Ossen, nüte, godige Langohren un starke Peer för dat "
+"Stratennett."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2969
@@ -5603,19 +5587,19 @@ msgstr "Lastendrager 3"
 #: addons/europeans_tribe.wad/workers/carrier_donkey/init.lua:8
 msgctxt "europeans_worker"
 msgid "Donkey"
-msgstr ""
+msgstr "Langohr"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_horse/init.lua:8
 msgctxt "europeans_worker"
 msgid "Horse"
-msgstr ""
+msgstr "Peerd"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_ox/init.lua:8
 msgctxt "europeans_worker"
 msgid "Ox"
-msgstr ""
+msgstr "Oss"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/charcoal_burner_advanced/init.lua:8
@@ -5982,7 +5966,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Tavern Level"
-#~ msgstr "Lütte Kneipe"

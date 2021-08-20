@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-19 03:03+0200\n"
+"POT-Creation-Date: 2021-08-20 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -2318,10 +2318,9 @@ msgstr "tesání mramorového sloupu"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Tavern"
-msgstr "Tkadlec"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:8
@@ -2421,48 +2420,42 @@ msgstr "Běžná studna"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Animal Farm"
-msgstr "Mistr sedlák"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:48
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:70
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:63
-#, fuzzy
 msgctxt "europeans_building"
 msgid "rearing cattle"
-msgstr "vaření jídla"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing donkeys because ...
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:60
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:75
-#, fuzzy
 msgctxt "europeans_building"
 msgid "rearing donkeys"
-msgstr "výroba medu"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:72
-#, fuzzy
 msgctxt "europeans_building"
 msgid "breeding horses"
-msgstr "chování ryb v moři"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Animal Farm"
-msgstr "Jednoduché obilné pole"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Animal Farm"
-msgstr "Vrchní sedlák"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:8
@@ -3328,17 +3321,15 @@ msgstr "Jsou také používány v kovářství, převoznictví a loděnici."
 
 #. TRANSLATORS: Helptext for an europeans ware: Reed, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:133
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Reed is an important building material."
-msgstr "Rákos je důležitý stavební materiál."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Reed, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:135
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced by reed yard."
-msgstr "Je pěstován v rákosovém poli."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Cloth
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:145
@@ -3520,11 +3511,9 @@ msgstr "Žito je základem k přežití."
 
 #. TRANSLATORS: Helptext for an europeans ware: Rye, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:319
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Rye is produced by farms and used by mills to produce mixed flour."
 msgstr ""
-"Pšenice je produkována na statcích a zpracována mlýny na míchanou mouku."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wheat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:330
@@ -3570,14 +3559,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a europeans ware: Snack, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:365
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "A bigger morsel than the ration. Used in mines and to train soldiers in "
 "battle arenas."
 msgstr ""
-"O něco větší porce jídla než je malá svačina. Určená pro horníky v dolech a "
-"k výcviku vojáků v bojových arénách."
 
 #. TRANSLATORS: Helptext for a europeans ware: Snack, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:367
@@ -3590,14 +3576,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:378
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "A bigger food than the ration or snack. Used in the deepest mines and the "
 "most advanced trainingsites"
 msgstr ""
-"Větší porce než malá svačina a svačina. Určená pro horníky v nejhlubších "
-"dolech a k výcviku vojáků v nejpokročilejších výcvikových táborech."
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:380
@@ -3707,12 +3690,11 @@ msgstr "Uhlí se těží v dole na uhlí nebo se vyrábí z klád v uhlířské 
 
 #. TRANSLATORS: Helptext for an europeans ware: Coal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:484
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The fires of the europeans smelting works and smithies are usually fed with "
 "coal."
-msgstr "Výhně sléváren a kováren evropanů jsou většinou krmeny uhlím."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Iron Ore, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:495
@@ -3762,14 +3744,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Gold, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:539
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "It is produced by the smelting works. Armor and weapons are embellished with "
 "gold in the smithy. Some valuable buildings need gold to be built."
 msgstr ""
-"Je produkováno slévárnami. Zbroj a zbraně jsou zlaceny v kovárnách. Některé "
-"cenné budovy potřebují zlato ke své stavbě."
 
 #. TRANSLATORS: Helptext for an europeans ware: Buckets, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:553
@@ -3815,10 +3794,9 @@ msgstr "Pila je důležitý nástroj. Potřebují ji dřevorubec a tesař."
 
 #. TRANSLATORS: Helptext for an europeans ware: Saw, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:581
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced by all smithies."
-msgstr "Je vyráběna ve všech kovárnách."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Hammer, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:592
@@ -3903,14 +3881,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Basket, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:675
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "It is also used by advanced carrier to transport wares. It is produced by "
 "all smithies."
 msgstr ""
-"Je také používán pokročilým nosičem k přenášení surovin. Je vyráběn ve všech "
-"kovárnách."
 
 #. TRANSLATORS: Helptext for an europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:686
@@ -4121,10 +4096,9 @@ msgstr "Vlastníma rukama nosí předměty po cestách."
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:914
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carries items along your roads"
-msgstr "Nosí předměty po cestách v koši."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:923
@@ -4136,10 +4110,9 @@ msgstr "Nosí předměty po cestách v koši."
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:932
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:950
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carries items along your roads."
-msgstr "Nosí předměty po cestách v koši."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans worker: Ferry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:959
