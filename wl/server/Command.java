@@ -23,8 +23,7 @@ package wl.server;
  * After the first contact, the client must send the following info:
  *  - Protocol version, \n
  *  - Language name (e.g. "nds"), \n
- *  - {@literal Protocol version >= 5}: Widelands version (e.g. \c "1.1~git25425[1317dd9@master]"),
- * \n
+ *  - {@literal Protocol version >= 5}: Widelands version (e.g. \c "1.1~git34567"), \n
  *  - Username (or "" for no user), \n
  *  - ENDOFSTREAM\n
  * If the username is "", the server then replies ENDOFSTREAM\n.
@@ -53,8 +52,8 @@ package wl.server;
  *   The password authentication is then performed like for registered users.
  *   If the password is correct, the server replies not ADMIN/SUCCESS but instead
  *   prints out server statistics in the following format:
- *   - Time in milliseconds since the server was started, \n
- *   - {@literal Protocol version >= 2}: Average client lifetime in milliseconds, \n
+ *   - Time in [1: milliseconds | 2+: hours] since the server was started, \n
+ *   - {@literal Protocol version >= 2}: Average client lifetime in seconds, \n
  *   - Number of current registered users, \n
  *   - Number of current unregistered users, \n
  *   - Counter of unique registered users, \n
