@@ -433,7 +433,8 @@ public abstract class Utils {
 				                   .getInputStream()))
 				    .readLine();
 			} catch (Exception e) {
-				log("WARNING: gettext error for '" + key + "'='" + value + "' @ '" + textdomain + "' / '" + locale + "': " + e);
+				log("WARNING: gettext error for '" + key + "'='" + value + "' @ '" + textdomain +
+				    "' / '" + locale + "': " + e);
 				return value;
 			}
 		}
