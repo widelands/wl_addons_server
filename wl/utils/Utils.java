@@ -286,9 +286,9 @@ public abstract class Utils {
 	 * @throws Exception If the shell can't be accessed.
 	 */
 	public static int bash(String... args) throws Exception {
-		System.out.print("    $");
-		for (String a : args) System.out.print(" " + a);
-		System.out.println();
+		String logString = "    $";
+		for (String a : args) logString += " " + a;
+		log(logString);
 
 		ProcessBuilder pb = new ProcessBuilder(args);
 		pb.redirectErrorStream​(true);
@@ -296,11 +296,11 @@ public abstract class Utils {
 
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 		String str;
-		while ((str = b.readLine()) != null) System.out.println("    # " + str);
+		while ((str = b.readLine()) != null) log("    # " + str);
 
 		p.waitFor();
 		int e = p.exitValue();
-		System.out.println("    = " + e);
+		log("    = " + e);
 		return e;
 	}
 
@@ -433,9 +433,7 @@ public abstract class Utils {
 				                   .getInputStream()))
 				    .readLine();
 			} catch (Exception e) {
-				System.out.println("[" + Thread.currentThread().getName() +
-				                   "] WARNING: gettext error for '" + key + "'='" + value +
-				                   "' @ '" + textdomain + "' / '" + locale + "': " + e);
+				log("WARNING: gettext error for '" + key + "'='" + value + "' @ '" + textdomain + "' / '" + locale + "': " + e);
 				return value;
 			}
 		}
@@ -576,13 +574,13 @@ public abstract class Utils {
 	 * @param x The %Exception that is responsible for this problem.
 	 */
 	public static void fatalError(String str, Exception x) {
-		System.out.println("#########################################################");
-		System.out.println(" VERY FATAL ERROR: " + str);
-		System.out.println("  " + x);
-		System.out.println(" Something has gone seriously wrong here.");
-		System.out.println(" Killing the server in the hope that the maintainers");
-		System.out.println(" will hurry to resolve the problems.");
-		System.out.println("#########################################################");
+		log("#########################################################");
+		log(" VERY FATAL ERROR: " + str);
+		log("  " + x);
+		log(" Something has gone seriously wrong here.");
+		log(" Killing the server in the hope that the maintainers");
+		log(" will hurry to resolve the problems.");
+		log("#########################################################");
 		System.exit(1);
 	}
 
@@ -601,11 +599,11 @@ public abstract class Utils {
 		msg = msg.replaceAll("'", "❜");
 
 		if (!Boolean.parseBoolean(config("deploy"))) {
-			System.out.println("    SKIPPING message: " + msg);
+			log("    SKIPPING message: " + msg);
 			return;
 		}
 
-		System.out.println("    Sending message: " + msg);
+		log("    Sending message: " + msg);
 
 		Process p = Runtime.getRuntime().exec(new String[] {
 		    "bash", "-c",
@@ -618,10 +616,10 @@ public abstract class Utils {
 		boolean err = false;
 		String str;
 		while ((str = b.readLine()) != null) {
-			System.out.println("    # " + str);
+			log("    # " + str);
 			err |= str.contains("documentation_url");
 		}
-		System.out.println("    = " + p.exitValue());
+		log("    = " + p.exitValue());
 		if (err) throw new Exception("CURL output looks like failure");
 		if (p.exitValue() != 0) throw new Exception("CURL returned error code " + p.exitValue());
 	}

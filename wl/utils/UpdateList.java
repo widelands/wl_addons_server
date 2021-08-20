@@ -259,10 +259,21 @@ public class UpdateList {
 	private static final int kHighestListVersion = 3;
 
 	/**
+	 * Manual lists syncchronization main function.
+	 * @param args Ignored.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static void main(String[] args) throws Exception {
+		Utils.initDatabases();
+		rebuildLists();
+	}
+
+	/**
 	 * Regenerate all list* files.
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static void rebuildLists() throws Exception {
+		Utils.log("Rebuilding the lists...");
 		final Map<String, Data> data = detectAndUpdateMetadata();
 		File[] files = Utils.listSorted(new File("addons"));
 		for (int listVersion = 1; listVersion <= kHighestListVersion; ++listVersion) {
