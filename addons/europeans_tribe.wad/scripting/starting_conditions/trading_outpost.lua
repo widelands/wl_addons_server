@@ -58,6 +58,7 @@ init = {
                 europeans_carrier = 32,
                 europeans_builder = 16,
                 europeans_farmer_basic = 8,
+                europeans_miner_basic = 6,
                 europeans_trainer_basic = 3,
                 europeans_lumberjack_basic = 3,
                 europeans_carpenter_basic = 2,

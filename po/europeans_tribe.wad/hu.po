@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-19 03:03+0200\n"
+"POT-Creation-Date: 2021-08-21 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Hungarian (https://www.transifex.com/widelands/teams/35159/"
 "hu/)\n"
@@ -710,7 +710,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:60
 #: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:48
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:38
-#: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:62
+#: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:63
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:54
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:56
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:91
@@ -2373,7 +2373,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:48
-#: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:70
+#: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:71
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:63
 msgctxt "europeans_building"
 msgid "rearing cattle"
@@ -3254,7 +3254,7 @@ msgstr ""
 #. TRANSLATORS: Helptext for an europeans ware: Reed, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:135
 msgctxt "europeans_ware"
-msgid "It is produced by reed yard."
+msgid "It is produced by the reed yard."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Cloth
@@ -3474,7 +3474,7 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid ""
 "A bigger food than the ration or snack. Used in the deepest mines and the "
-"most advanced trainingsites"
+"most advanced trainingsites."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 2
@@ -3933,8 +3933,10 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:914
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:932
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:950
 msgctxt "europeans_worker"
-msgid "Carries items along your roads"
+msgid "Carries items along your roads."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
@@ -3942,13 +3944,6 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:941
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:932
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:950
-msgctxt "europeans_worker"
-msgid "Carries items along your roads."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans worker: Ferry
