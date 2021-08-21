@@ -132,7 +132,7 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for an europeans ware: Reed, part 1
                   pgettext("europeans_ware", "Reed is an important building material."),
                   -- TRANSLATORS: Helptext for an europeans ware: Reed, part 2
-                  pgettext("europeans_ware", "It is produced by reed yard."),
+                  pgettext("europeans_ware", "It is produced by the reed yard."),
                }
             }
          },
@@ -375,7 +375,7 @@ descriptions:new_tribe {
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for a europeans ware: Meal, part 1
-                  pgettext("europeans_ware", "A bigger food than the ration or snack. Used in the deepest mines and the most advanced trainingsites"),
+                  pgettext("europeans_ware", "A bigger food than the ration or snack. Used in the deepest mines and the most advanced trainingsites."),
                   -- TRANSLATORS: Helptext for a europeans ware: Meal, part 2
                   pgettext("europeans_ware", "Meals are produced in an inn out of fish or meat and water and flour.")
                }
@@ -911,7 +911,7 @@ descriptions:new_tribe {
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carrier
-               purpose = pgettext("europeans_worker", "Carries items along your roads")
+               purpose = pgettext("europeans_worker", "Carries items along your roads.")
             }
          },
          {
