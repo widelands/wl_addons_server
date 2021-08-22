@@ -211,6 +211,7 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		synchronized (TransifexIntegration.TX) {
+			Utils._staticprofiles.clear();
 			File potFile = new File("po/" + cmd[1] + "/" + cmd[1] + ".pot");
 			if (!potFile.isFile()) {
 				TransifexIntegration.TX.buildCatalogues();

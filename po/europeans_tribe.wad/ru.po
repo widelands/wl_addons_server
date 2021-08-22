@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-21 03:03+0200\n"
+"POT-Creation-Date: 2021-08-22 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -3329,10 +3329,9 @@ msgstr "Тростник - важный кровельный материал."
 
 #. TRANSLATORS: Helptext for an europeans ware: Reed, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:135
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
-msgstr "Выращивают тростник на плантациях."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Cloth
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:145
@@ -3573,14 +3572,11 @@ msgstr "Закуски готовят в тавернах и трактирах 
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:378
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "A bigger food than the ration or snack. Used in the deepest mines and the "
 "most advanced trainingsites."
 msgstr ""
-"Сытный обед. Им кормят шахтеров в глубоких шахтах и солдат, проходящих самые "
-"суровые тренировки."
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:380
@@ -5828,7 +5824,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr ""
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Carries items along your roads"
-#~ msgstr "Поставляет товары по вашим дорогам."
