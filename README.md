@@ -51,7 +51,7 @@ The MySQL server needs to have two databases called the *website database* and t
 Table                        | Column Names                                              | Column Types                                       | Comment
 ---------------------------- | ----------------------------------------------------------| -------------------------------------------------- | -------
 `auth_user`                  | `id`      <br> `username`       <br> `email`              | `int` <br> `varchar` <br> `varchar`                | 
-`wlggz_ggzauth`              | `user_id` <br> `password`       <br> `permissions`        | `int` <br> `varchar` <br> `int`                    | -<br>-<br> `7` means normal user and `127` means admin
+`wlggz_ggzauth`              | `user_id` <br> `password`       <br> `permissions` <br>   | `int` <br> `varchar` <br> `int` <br>               | -<br>-<br> `7` means normal user,<br>`127` means admin
 `notification_noticetype`    | `id`      <br> `label`                                    | `int` <br> `varchar`                               | 
 `notification_noticesetting` | `user_id` <br> `notice_type_id` <br> `medium` <br> `send` | `int` <br> `int`     <br> `int`     <br> `tinyint` | -<br>-<br> `1` means e-mail <br> `0` means disabled and `1` enabled
 
@@ -60,7 +60,7 @@ Table                        | Column Names                                     
 Table          | Column Names                                              | Column Types                                       | Comment
 -------------- | ----------------------------------------------------------| -------------------------------------------------- | -------
 `txissues`     | `id`                                                      | `varchar`                                          |
-`addons`       | `id` <br> `name` <br> `timestamp` <br> `i18n_version` <br> `security` <br> `quality` <br> `downloads` | `int` <br> `varchar` <br> `bigint` <br> `int` <br> `tinyint` <br> `int` <br> `int` | Unique add-on ID<br>-<br>-<br>-<br> `0` means unchecked, `1` means verified <br> `0` means unchecked, `1`/`2`/`3` means Bronze/Silver/Gold <br>-
+`addons`       | `id` <br> `name` <br> `timestamp` <br> `i18n_version` <br> `security` <br> `quality` <br> `downloads` | `int` <br> `varchar` <br> `bigint` <br> `int` <br> `tinyint` <br> `int` <br> `int` | Unique add-on ID<br>-<br>-<br>-<br> `0` means unchecked, `1` means verified <br> `0` means unchecked, `1`/`2`/`3` means Poor/Good/Excellent <br>-
 `uploaders`    | `addon` <br> `user`                                       | `int` <br> `int`                                   | An add-on can have multiple uploaders.<br>Each uploader goes on a separate row.
 `uservotes`    | `addon` <br> `user` <br> `vote`                           | `int` <br> `int` <br> `int`                        |
 `usercomments` | `id` <br> `addon` <br> `user` <br> `timestamp` <br> `editor` <br> `edit_timestamp` <br> `version` <br> `message` | `int` <br> `int` <br> `int` <br> `bigint` <br> `int` <br> `bigint` <br> `varchar` <br> `varchar` | Unique comment ID<br>-<br>-<br>-<br> May be `NULL` <br> May be `NULL` <br>-<br>-
