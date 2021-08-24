@@ -54,7 +54,8 @@ public class MuninStatistics {
 
 	private final long[] commandCounters;
 	private final long initTime;
-	private long registeredUsers, unregisteredUsers, failedLogins, skippedCommands, successfulCommands;
+	private long registeredUsers, unregisteredUsers, failedLogins, skippedCommands,
+	    successfulCommands;
 	private final List<Long> clientLifetimes;
 	private final Set<Long> allRegisteredUsers;
 	private final Map<Thread, Long> cmdInfoToSkip;
