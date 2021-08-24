@@ -634,6 +634,7 @@ class HandleCommand {
 			Utils.sqlCmd(Utils.Databases.kAddOns, "delete from uservotes where addon=" + id);
 			Utils.sqlCmd(Utils.Databases.kAddOns, "delete from usercomments where addon=" + id);
 			Utils.sqlCmd(Utils.Databases.kAddOns, "delete from addons where id=" + id);
+			Utils.sqlCmd(Utils.Databases.kAddOns, "delete from uploaders where addon=" + id);
 
 			ServerUtils.doDelete(new File("addons", cmd[1]));
 			ServerUtils.doDelete(new File("po", cmd[1]));
