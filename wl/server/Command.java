@@ -48,16 +48,20 @@ package wl.server;
  * - munin
  *   The 'munin' protocol is used to print statistics about the server.
  *   In the initial contact, language and username are skipped; instead the munin protocol
- *   version is printed (currently supported versions are 1 and 2).
+ *   version is printed (only currently supported version is 2).
  *   The password authentication is then performed like for registered users.
  *   If the password is correct, the server replies not ADMIN/SUCCESS but instead
  *   prints out server statistics in the following format:
  *   - Time in [1: milliseconds | 2+: hours] since the server was started, \n
  *   - {@literal Protocol version >= 2}: Average client lifetime in seconds, \n
- *   - Number of current registered users, \n
- *   - Number of current unregistered users, \n
+ *   - Protocol version 1:
+ *       - Number of current registered users, \n
+ *       - Number of current unregistered users, \n
+ *   - Protocol version 2:
+ *       - Counter of registered users, \n
+ *       - Counter of unregistered users, \n
  *   - Counter of unique registered users, \n
- *   - Counter of successful connection attempts, \n
+ *   - {@literal Protocol version <= 1}: Counter of successful connection attempts, \n
  *   - Counter of unsuccessful connection attempts, \n
  *   - Counter of CMD_LIST              requests, \n
  *   - Counter of CMD_INFO              requests, \n

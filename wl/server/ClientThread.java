@@ -121,11 +121,7 @@ class ClientThread implements Runnable {
 		} finally {
 			Utils.log("Connection quit.");
 			if (!hideFromStats) {
-				if (didLogInSuccessfully) {
-					MuninStatistics.MUNIN.registerLogout(userDatabaseID);
-				} else {
-					MuninStatistics.MUNIN.registerFailedLogin();
-				}
+				if (!didLogInSuccessfully) MuninStatistics.MUNIN.registerFailedLogin();
 				MuninStatistics.MUNIN.registerClientLifetime(System.currentTimeMillis() -
 				                                             timeOfConnection);
 			}

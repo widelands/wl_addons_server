@@ -41,9 +41,9 @@ public class MuninStatistics {
 	 */
 	public static void handleMunin(InputStream in, PrintStream out) throws Exception {
 		final int version = Integer.valueOf(ServerUtils.readLine(in));
-		if (version != 1)
+		if (version != 2)
 			throw new ServerUtils.WLProtocolException("Unsupported munin version '" + version +
-			                                          "' (only supported version is '1')");
+			                                          "' (only supported version is '2')");
 		Utils.log("Munin version: " + version);
 		ServerUtils.checkEndOfStream(in);
 
@@ -54,9 +54,8 @@ public class MuninStatistics {
 
 	private final long[] commandCounters;
 	private final long initTime;
-	private long currentUnregisteredUsers, failedLogins, successfulLogins, skippedCommands,
-	    successfulCommands;
-	private final List<Long> currentRegisteredUsers, clientLifetimes;
+	private long registeredUsers, unregisteredUsers, failedLogins, skippedCommands, successfulCommands;
+	private final List<Long> clientLifetimes;
 	private final Set<Long> allRegisteredUsers;
 	private final Map<Thread, Long> cmdInfoToSkip;
 
@@ -65,13 +64,12 @@ public class MuninStatistics {
 		commandCounters = new long[Command.values().length];
 		for (int i = 0; i < commandCounters.length; i++) commandCounters[i] = 0;
 
-		currentUnregisteredUsers = 0;
+		registeredUsers = 0;
+		unregisteredUsers = 0;
 		failedLogins = 0;
-		successfulLogins = 0;
 		skippedCommands = 0;
 		successfulCommands = 0;
 		clientLifetimes = new ArrayList<>();
-		currentRegisteredUsers = new ArrayList<>();
 		allRegisteredUsers = new HashSet<>();
 		cmdInfoToSkip = new HashMap<>();
 	}
@@ -84,31 +82,24 @@ public class MuninStatistics {
 	 */
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
 		out.println((System.currentTimeMillis() - initTime) / (version > 1 ? (1000 * 60 * 24) : 1));
-		if (version > 1) {
-			long sum = 0;
-			long n = 0;
-			for (Long l : clientLifetimes) {
-				sum += l;
-				n++;
-			}
-			out.println(n > 0 ? (sum / (1000.0 * n)) : 0);
-		}
 
-		out.println(currentRegisteredUsers.size());
-		out.println(currentUnregisteredUsers);
+		long sum = 0;
+		long n = 0;
+		for (Long l : clientLifetimes) {
+			sum += l;
+			n++;
+		}
+		out.println(n > 0 ? (sum / (1000.0 * n)) : 0);
+
+		out.println(registeredUsers);
+		out.println(unregisteredUsers);
 		out.println(allRegisteredUsers.size());
-		out.println(successfulLogins);
 		out.println(failedLogins);
 
 		long totalCmd = skippedCommands;
-		int nrCmdLines =
-		    (version > 1 ? commandCounters.length : (Command.CMD_SETUP_TX.ordinal() + 1));
 		for (long cmd : commandCounters) {
 			totalCmd += cmd;
-			if (nrCmdLines > 0) {
-				out.println(cmd);
-				nrCmdLines--;
-			}
+			out.println(cmd);
 		}
 		out.println(totalCmd - successfulCommands);
 	}
@@ -159,24 +150,11 @@ public class MuninStatistics {
 	 * @param user ID of the user (\c -1 for unregistered users).
 	 */
 	public synchronized void registerLogin(long user) {
-		successfulLogins++;
 		if (user < 0) {
-			currentUnregisteredUsers++;
+			unregisteredUsers++;
 		} else {
-			currentRegisteredUsers.add(user);
+			registeredUsers++;
 			allRegisteredUsers.add(user);
-		}
-	}
-
-	/**
-	 * Inform Munin that a user has quit the connection.
-	 * @param user ID of the user (\c -1 for unregistered users).
-	 */
-	public synchronized void registerLogout(Long user) {
-		if (user < 0) {
-			currentUnregisteredUsers--;
-		} else {
-			currentRegisteredUsers.remove((Object)user);
 		}
 	}
 
