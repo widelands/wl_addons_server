@@ -15,30 +15,60 @@ descriptions:new_worker_type {
 
    programs = {
       hunt = {
-         "findobject=type:bob radius:14 attrib:eatable",
+         "findobject=type:bob radius:10 attrib:eatable",
          "walk=object",
          "animate=idle duration:1s500ms",
          "removeobject",
          "createware=meat",
          "return"
+      },
+      release = {
+         "findspace=size:any radius:10",
+         "walk=coords",
+         "animate=releasein duration:4s",
+         "createbob=bunny chamois deer moose reindeer sheep stag wildboar wisent",
+         "animate=releaseout duration:4s",
+         "return"
       }
    },
 
-   animations = {
+   spritesheets = {
       idle = {
-         basename = "shooting",
-         hotspot = { 6, 29 },
-         fps = 10
+         fps = 10,
+         frames = 15,
+         rows = 5,
+         columns = 3,
+         hotspot = { 6, 29 }
       },
       walk = {
-         hotspot = { 14, 22 },
          fps = 10,
-         directional = true
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         directional = true,
+         hotspot = { 14, 22 }
       },
       walkload = {
-         hotspot = { 13, 23 },
          fps = 10,
-         directional = true
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         directional = true,
+         hotspot = { 13, 23 }
+      },
+      releasein = {
+         fps = 5,
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         hotspot = { 15, 22 }
+      },
+      releaseout = {
+         fps = 5,
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         hotspot = { 15, 22 }
       }
    }
 }

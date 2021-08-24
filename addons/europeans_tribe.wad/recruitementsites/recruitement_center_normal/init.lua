@@ -91,8 +91,7 @@ descriptions:new_productionsite_type {
             "call=recruit_miner",
             "call=recruit_smelter",
             "call=recruit_forester",
-            "call=recruit_fishbreeder",
-            "call=recruit_gamekeeper",
+            "call=recruit_claydigger",
             "call=recruit_beekeeper",
             "call=recruit_shipwright",
             "call=recruit_geologist",
@@ -220,7 +219,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs europeans_fisher_normal",
             "sleep=duration:20s",
-            "consume=fishing_rod fishing_net europeans_carrier",
+            "consume=buckets fishing_rod fishing_net europeans_carrier",
             "animate=working duration:30s",
             "recruit=europeans_fisher_normal"
          }
@@ -231,7 +230,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs europeans_hunter_normal",
             "sleep=duration:20s",
-            "consume=hunting_bow hunting_spear europeans_carrier",
+            "consume=basket hunting_bow hunting_spear europeans_carrier",
             "animate=working duration:30s",
             "recruit=europeans_hunter_normal"
          }
@@ -313,26 +312,15 @@ descriptions:new_productionsite_type {
             "recruit=europeans_forester_normal"
          }
       },
-      recruit_fishbreeder = {
+      recruit_claydigger = {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting fishbreeder"),
+         descname = pgettext("europeans_building", "recruiting claydigger"),
          actions = {
-            "return=skipped unless economy needs europeans_fishbreeder_normal",
+            "return=skipped unless economy needs europeans_claydigger_normal",
             "sleep=duration:20s",
             "consume=buckets shovel europeans_carrier",
             "animate=working duration:30s",
-            "recruit=europeans_fishbreeder_normal"
-         }
-      },
-      recruit_gamekeeper = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting gamekeeper"),
-         actions = {
-            "return=skipped unless economy needs europeans_gamekeeper_normal",
-            "sleep=duration:20s",
-            "consume=basket europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_gamekeeper_normal"
+            "recruit=europeans_claydigger_normal"
          }
       },
       recruit_beekeeper = {

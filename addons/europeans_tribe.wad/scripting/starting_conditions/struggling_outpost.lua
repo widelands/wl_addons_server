@@ -59,7 +59,6 @@ local r = {
             europeans_charcoal_burner_basic = 2,
             europeans_hunter_basic = 2,
             europeans_fisher_basic = 2,
-            europeans_fishbreeder_basic = 2,
             europeans_miller_basic = 2,
             europeans_baker_basic = 2,
             europeans_smoker_basic = 2,

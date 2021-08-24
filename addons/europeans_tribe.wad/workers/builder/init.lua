@@ -10,30 +10,41 @@ descriptions:new_worker_type {
    icon = dirname .. "menu.png",
    vision_range = 2,
 
-   animations = {
+   spritesheets = {
       idle = {
-         basename = "waiting",
-         hotspot = { 13, 21 },
-         fps = 10
+         fps = 10,
+         frames = 150,
+         rows = 13,
+         columns = 12,
+         hotspot = { 11, 21 }
+      },
+      walk = {
+         fps = 10,
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         directional = true,
+         hotspot = { 11, 23 }
+      },
+      walkload = {
+         basename = "walk",
+         fps = 10,
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         directional = true,
+         hotspot = { 11, 23 }
       },
       work = {
          sound_effect = {
             path = "sound/hammering/hammering",
             priority = "50%"
          },
-         hotspot = { 11, 21 },
-         fps = 10
-      },
-      walk = {
-         hotspot = { 11, 23 },
          fps = 10,
-         directional = true
-      },
-      walkload = {
-         basename = "walk",
-         hotspot = { 11, 23 },
-         fps = 10,
-         directional = true
+         frames = 92,
+         rows = 11,
+         columns = 9,
+         hotspot = { 11, 21 }
       }
    }
 }

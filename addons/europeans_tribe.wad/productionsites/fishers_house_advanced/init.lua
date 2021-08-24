@@ -21,6 +21,10 @@ descriptions:new_productionsite_type {
    working_positions = {
       europeans_fisher_advanced = 1
    },
+   
+   inputs = {
+      { name = "water", amount = 4 },
+   },
 
    programs = {
       main = {
@@ -28,8 +32,21 @@ descriptions:new_productionsite_type {
          descname = _"fishing",
          actions = {
             "call=fishing_in_sea",
-            "callworker=check_pond",
+            "call=breeding_in_sea",
+            "call=breeding_in_pond",
             "call=fishing_in_pond",
+            "return=skipped"
+         }
+      },
+      breeding_in_sea = {
+         -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
+         descname = _"breeding in sea",
+         actions = {
+            "return=skipped when economy needs water",
+            "consume=water",
+            "sleep=duration:10s",
+            "callworker=breed_in_sea",
+            "sleep=duration:20s",
          }
       },
       fishing_in_sea = {
@@ -40,13 +57,25 @@ descriptions:new_productionsite_type {
             "sleep=duration:30s",
          }
       },
+      breeding_in_pond = {
+         -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
+         descname = _"breeding in a pond",
+         actions = {
+            "return=skipped unless economy needs fish",
+            "return=skipped when economy needs water",
+            "consume=water",
+            "sleep=duration:10s",
+            "callworker=breed_in_pond",
+            "sleep=duration:10s",
+         }
+      },
       fishing_in_pond = {
          -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
          descname = _"fishing in pond",
          actions = {
             "return=skipped unless economy needs fish",
             "callworker=fish_in_pond",
-            "sleep=duration:15s",
+            "sleep=duration:20s",
          }
       },
    },
@@ -56,6 +85,8 @@ descriptions:new_productionsite_type {
       heading = _"Out of Fish",
       message = pgettext("europeans_building", "The fisher working out of this fisher’s house can’t find any fish in his work area. Remember that you can increase the number of existing fish by building a fish breeder’s house."),
    },
+   -- Translators: Productivity tooltip for Europeans fish breeders when all water fields are already full of fish
+   resource_not_needed_message = _"The fishing grounds are full";
 }
 
 pop_textdomain()

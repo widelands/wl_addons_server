@@ -15,11 +15,19 @@ descriptions:new_worker_type {
 
    programs = {
       hunt = {
-         "findobject=type:bob radius:10 attrib:eatable",
+         "findobject=type:bob radius:6 attrib:eatable",
          "walk=object",
          "animate=idle duration:2s",
          "removeobject",
          "createware=meat",
+         "return"
+      },
+      release = {
+         "findspace=size:any radius:6",
+         "walk=coords",
+         "animate=releasein duration:4s",
+         "createbob=bunny chamois deer moose reindeer sheep stag wildboar wisent",
+         "animate=releaseout duration:4s",
          "return"
       }
    },
@@ -31,6 +39,20 @@ descriptions:new_worker_type {
          rows = 5,
          columns = 4,
          hotspot = { 10, 20 }
+      },
+      releasein = {
+         fps = 5,
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         hotspot = { 15, 22 }
+      },
+      releaseout = {
+         fps = 5,
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         hotspot = { 15, 22 }
       },
       walk = {
          fps = 10,

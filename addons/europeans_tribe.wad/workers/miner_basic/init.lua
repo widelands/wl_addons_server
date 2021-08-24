@@ -15,7 +15,7 @@ descriptions:new_worker_type {
 
    animations = {
       idle = {
-         hotspot = { 4, 24 }
+         hotspot = { 5, 24 }
       }
    },
    spritesheets = {
@@ -25,7 +25,7 @@ descriptions:new_worker_type {
          rows = 4,
          columns = 3,
          directional = true,
-         hotspot = { 10, 24 }
+         hotspot = { 10, 25 }
       },
       walkload = {
          fps = 10,
@@ -33,7 +33,7 @@ descriptions:new_worker_type {
          rows = 5,
          columns = 4,
          directional = true,
-         hotspot = { 10, 27 }
+         hotspot = { 8, 26 }
       }
    }
 }

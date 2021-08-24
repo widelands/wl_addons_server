@@ -24,7 +24,14 @@ descriptions:new_worker_type {
    },
 
    ware_hotspot = {0, 20},
-
+   
+   animations = {
+      idle = {
+         directory = dirname,
+         basename = "idle",
+         hotspot = {8, 23}
+      },
+   },
    spritesheets = {
       walk = {
          basename = "walk",
@@ -52,14 +59,7 @@ descriptions:new_worker_type {
          rows = 20,
          hotspot = {26, 31}
       },
-   },
-   animations = {
-      idle = {
-         directory = dirname,
-         basename = "idle",
-         hotspot = {8, 23}
-      },
-   },
+   }
 }
 
 pop_textdomain()

@@ -45,7 +45,7 @@ descriptions:new_productionsite_type {
    aihints = {},
 
    working_positions = {
-      europeans_smith_basic = 2
+      europeans_smith_normal = 2
    },
 
    inputs = {
