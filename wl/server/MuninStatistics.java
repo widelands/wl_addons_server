@@ -82,7 +82,7 @@ public class MuninStatistics {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
-		out.println((System.currentTimeMillis() - initTime) / (version > 1 ? (1000 * 60 * 24) : 1));
+		out.println((System.currentTimeMillis() - initTime) / (1000.0 * 60 * 24));
 
 		long sum = 0;
 		long n = 0;
