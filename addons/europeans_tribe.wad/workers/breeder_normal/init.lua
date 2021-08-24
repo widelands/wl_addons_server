@@ -15,18 +15,27 @@ descriptions:new_worker_type {
 
    animations = {
       idle = {
-         hotspot = { 8, 22 }
+         hotspot = { 19, 23 },
       },
+   },
+   spritesheets = {
       walk = {
-         hotspot = { 10, 22 },
          fps = 10,
-         directional = true
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         directional = true,
+         hotspot = { 28, 26 }
       },
       walkload = {
-         hotspot = { 10, 22 },
+         basename = "walk",
          fps = 10,
-         directional = true
-      }
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         directional = true,
+         hotspot = { 28, 26 }
+      },
    }
 }
 

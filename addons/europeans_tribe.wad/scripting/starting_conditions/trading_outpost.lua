@@ -64,11 +64,10 @@ init = {
                 europeans_carpenter_basic = 2,
                 europeans_stonecutter_basic = 2,
                 europeans_stonemason_normal = 2,
+                europeans_smith_basic = 2,
                 europeans_weaver_basic = 1,
                 europeans_weaver_normal = 1,
-                europeans_smith_basic = 1,
-                europeans_shipwright_basic = 1,
-                europeans_fishbreeder_basic = 1
+                europeans_shipwright_basic = 1
           },
             soldiers = {
                 [{0,0,0,0}] = 16,

@@ -14,6 +14,16 @@ descriptions:new_worker_type {
    becomes = "europeans_fisher_normal",
 
    programs = {
+      check_sea = {
+         "findspace=size:any radius:6 breed resource:resource_fish",
+      },
+      breed_in_sea = {
+         "findspace=size:any radius:6 breed resource:resource_fish",
+         "walk=coords",
+         "animate=freeing duration:8s",
+         "breed=resource_fish radius:1",
+         "return"
+      },
       fish_in_sea = {
          "findspace=size:any radius:6 resource:resource_fish",
          "walk=coords",
@@ -26,6 +36,13 @@ descriptions:new_worker_type {
       },
       check_pond = {
          "findobject=attrib:pond_mature radius:6",
+      },
+      breed_in_pond = {
+         "findobject=attrib:pond_dry radius:6",
+         "walk=object",
+         "animate=freeing duration:8s",
+         "callobject=with_fish",
+         "return"
       },
       fish_in_pond = {
          "findobject=attrib:pond_mature radius:6",
@@ -50,6 +67,13 @@ descriptions:new_worker_type {
          columns = 3,
          directional = true,
          hotspot = { 8, 32 }
+      },
+      freeing = {
+         fps = 10,
+         frames = 30,
+         rows = 6,
+         columns = 5,
+         hotspot = { 10, 19 }
       },
       -- TODO(GunChleoc): Needs walkload animation, or some ware hotspot/sizing magic.
       fish = {

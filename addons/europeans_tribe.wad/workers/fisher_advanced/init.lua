@@ -11,6 +11,16 @@ descriptions:new_worker_type {
    vision_range = 2,
 
    programs = {
+      check_sea = {
+         "findspace=size:any radius:10 breed resource:resource_fish",
+      },
+      breed_in_sea = {
+         "findspace=size:any radius:10 breed resource:resource_fish",
+         "walk=coords",
+         "animate=freeing duration:4s",
+         "breed=resource_fish radius:1",
+         "return"
+      },
       fish_in_sea = {
          "findspace=size:any radius:10 resource:resource_fish",
          "walk=coords",
@@ -21,6 +31,13 @@ descriptions:new_worker_type {
       },
       check_pond = {
          "findobject=attrib:pond_mature radius:10",
+      },
+      breed_in_pond = {
+         "findobject=attrib:pond_dry radius:10",
+         "walk=object",
+         "animate=freeing duration:4s",
+         "callobject=with_fish",
+         "return"
       },
       fish_in_pond = {
          "findobject=attrib:pond_mature radius:10",
@@ -34,6 +51,12 @@ descriptions:new_worker_type {
 
    ware_hotspot = {0, 20},
 
+   animations = {
+      idle = {
+         basename = "idle",
+         hotspot = {8, 25}
+      },
+   },
    spritesheets = {
       walk = {
          basename = "walk",
@@ -61,19 +84,13 @@ descriptions:new_worker_type {
          rows = 6,
          hotspot = {9, 23}
       },
-      release = {
-         basename = "release",
+      freeing = {
+         basename = "freeing",
          fps = 10,
-         frames = 20,
+         frames = 30,
+         rows = 6,
          columns = 5,
-         rows = 4,
-         hotspot = {15, 20}
-      },
-   },
-   animations = {
-      idle = {
-         basename = "idle",
-         hotspot = {8, 25}
+         hotspot = { 10, 19 }
       },
    },
 }

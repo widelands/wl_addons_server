@@ -80,6 +80,8 @@ descriptions:new_productionsite_type {
       heading = _"Out of Fish",
       message = pgettext("europeans_building", "The fisher working out of this fisher’s hut can’t find any fish in his work area. You should consider enhancing it to increase its working area. Remember that you can increase the number of existing fish by building a fish breeder’s house."),
    },
+   -- Translators: Productivity tooltip for Europeans fish breeders when all water fields are already full of fish
+   resource_not_needed_message = _"The fishing grounds are full";
 }
 
 pop_textdomain()

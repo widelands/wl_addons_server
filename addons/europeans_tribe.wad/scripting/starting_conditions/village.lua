@@ -53,7 +53,6 @@ init = {
             europeans_charcoal_burner_basic = 2,
             europeans_hunter_basic = 2,
             europeans_fisher_basic = 2,
-            europeans_fishbreeder_basic = 2,
             europeans_miller_basic = 2,
             europeans_baker_basic = 2,
             europeans_smoker_basic = 2,
@@ -68,7 +67,6 @@ init = {
             europeans_smith_normal = 1,
             europeans_shipwright_basic = 1,
             europeans_beekeeper_basic = 1,
-            europeans_gamekeeper_basic = 1,
             europeans_geologist = 1
       },
         soldiers = {

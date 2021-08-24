@@ -12,11 +12,14 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_smithy_level_2",
         enhancement_cost = {
-          log = 2,
-          reed = 1,
+          blackwood = 2,
+          cloth = 1,
+          quartz = 1
         },
         enhancement_return_on_dismantle = {
-          log = 1,
+          blackwood = 1,
+          planks = 1,
+          quartz = 1
         },
    },
 
@@ -43,7 +46,7 @@ descriptions:new_productionsite_type {
    aihints = {},
 
    working_positions = {
-      europeans_smith_basic = 1
+      europeans_smith_basic = 2
    },
 
    inputs = {

@@ -9,46 +9,39 @@ descriptions:new_productionsite_type {
    icon = dirname .. "menu.png",
    size = "medium",
 
-   enhancement = {
-        name = "europeans_smithy_level_7",
-        enhancement_cost = {
-          planks = 2,
-          brick = 1,
-          grout = 1,
-          marble_column = 1,
-          diamond = 1
-        },
-        enhancement_return_on_dismantle = {
-          planks = 1,
-          granite = 1,
-          marble = 1,
-          diamond = 1
-        },
-   },
-
    animations = {
       idle = {
          pictures = path.list_files(dirname .. "idle_??.png"),
-         hotspot = { 50, 58 },
+         hotspot = { 50, 62 },
+      },
+      build = {
+         pictures = path.list_files(dirname .. "build_??.png"),
+         hotspot = { 50, 62 },
+      },
+      unoccupied = {
+         pictures = path.list_files(dirname .. "unoccupied_??.png"),
+         hotspot = { 50, 62 },
       },
       working = {
-         pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-         hotspot = { 50, 58 },
-      }
+         pictures = path.list_files(dirname .. "working_??.png"),
+         hotspot = { 50, 62 },
+         fps = 5
+      },
    },
 
    aihints = {},
 
    working_positions = {
-      europeans_smith_normal = 2
+      europeans_smith_advanced = 3
    },
 
    inputs = {
-      { name = "planks", amount = 6 },
-      { name = "spidercloth", amount = 6 },
-      { name = "armor", amount = 6 },
-      { name = "coal", amount = 6 },
-      { name = "iron", amount = 6 }
+      { name = "planks", amount = 8 },
+      { name = "spidercloth", amount = 8 },
+      { name = "armor", amount = 8 },
+      { name = "coal", amount = 8 },
+      { name = "iron", amount = 8 },
+      { name = "gold", amount = 8 }
    },
 
    programs = {
@@ -79,6 +72,10 @@ descriptions:new_productionsite_type {
             "call=produce_armor_chain",
             "call=produce_shield_steel",
             "call=produce_ax_broad",
+            "call=produce_armor_gilded",
+            "call=produce_tabard_golden",
+            "call=produce_shield_advanced",
+            "call=produce_sword_broad",
             "return=skipped"
          }
       },
@@ -90,7 +87,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=basket:3"
          }
       },
@@ -102,7 +99,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=bread_paddle:3"
          }
       },
@@ -114,7 +111,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=buckets:3"
          }
       },
@@ -126,7 +123,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=felling_ax:3"
          }
       },
@@ -138,7 +135,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=fire_tongs:3"
          }
       },
@@ -150,7 +147,7 @@ descriptions:new_productionsite_type {
             "consume=spidercloth:3",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=fishing_net:3"
          }
       },
@@ -162,7 +159,7 @@ descriptions:new_productionsite_type {
             "consume=planks spidercloth",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=fishing_rod:3"
          }
       },
@@ -174,7 +171,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=hammer:3"
          }
       },
@@ -186,7 +183,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=hook_pole:3"
          }
       },
@@ -198,7 +195,7 @@ descriptions:new_productionsite_type {
             "consume=planks spidercloth",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=hunting_bow:3"
          }
       },
@@ -210,7 +207,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=hunting_spear:3"
          }
       },
@@ -222,7 +219,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=milking_tongs:3"
          }
       },
@@ -234,7 +231,7 @@ descriptions:new_productionsite_type {
             "consume=iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=needles:3"
          }
       },
@@ -246,7 +243,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=pick:3"
          }
       },
@@ -258,7 +255,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=saw:3"
          }
       },
@@ -270,7 +267,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=scythe:3"
          }
       },
@@ -282,7 +279,7 @@ descriptions:new_productionsite_type {
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
+            "animate=working duration:15s",
             "produce=shovel:3"
          }
       },
@@ -292,11 +289,11 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs spear_wooden",
             "consume=planks",
-            "sleep=duration:10s",
+            "sleep=duration:5s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
             "animate=working duration:20s",
             "playsound=sound/smiths/sharpening priority:90%",
-            "sleep=duration:10s",
+            "sleep=duration:5s",
             "produce=spear_wooden"
          }
       },
@@ -304,13 +301,20 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
          descname = _"forging a mask",
          actions = {
-            "return=skipped unless economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced and not economy needs helmet_mask",
+            "return=skipped when economy needs armor_chain and not economy needs helmet_mask",
+            "return=skipped when economy needs shield_steel and not economy needs helmet_mask",
+            "return=skipped when economy needs ax_broad and not economy needs helmet_mask",
+            "return=skipped when economy needs armor_gilded and not economy needs helmet_mask",
+            "return=skipped when economy needs tabard_golden and not economy needs helmet_mask",
+            "return=skipped when economy needs shield_advanced and not economy needs helmet_mask",
+            "return=skipped when economy needs sword_broad and not economy needs helmet_mask",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "consume=coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:35s",
+            "animate=working duration:20s",
             "produce=helmet_mask"
          }
       },
@@ -318,16 +322,23 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
          descname = _"forging an advanced spear",
          actions = {
-            "return=skipped unless economy needs spear_advanced",
+            "return=skipped when economy needs helmet_mask and not economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain and not economy needs spear_advanced",
+            "return=skipped when economy needs shield_steel and not economy needs spear_advanced",
+            "return=skipped when economy needs ax_broad and not economy needs spear_advanced",
+            "return=skipped when economy needs armor_gilded and not economy needs spear_advanced",
+            "return=skipped when economy needs tabard_golden and not economy needs spear_advanced",
+            "return=skipped when economy needs shield_advanced and not economy needs spear_advanced",
+            "return=skipped when economy needs sword_broad and not economy needs spear_advanced",
             "return=skipped when economy needs planks",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "consume=planks coal iron",
-            "sleep=duration:10s",
+            "sleep=duration:5s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:35s",
+            "animate=working duration:20s",
             "playsound=sound/smiths/sharpening priority:90%",
-            "sleep=duration:10s",
+            "sleep=duration:5s",
             "produce=spear_advanced"
          }
       },
@@ -335,13 +346,20 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
          descname = _"forging a suit of chain armor",
          actions = {
-            "return=skipped unless economy needs armor_chain",
+            "return=skipped when economy needs helmet_mask and not economy needs armor_chain",
+            "return=skipped when economy needs spear_advanced and not economy needs armor_chain",
+            "return=skipped when economy needs shield_steel and not economy needs armor_chain",
+            "return=skipped when economy needs ax_broad and not economy needs armor_chain",
+            "return=skipped when economy needs armor_gilded and not economy needs armor_chain",
+            "return=skipped when economy needs tabard_golden and not economy needs armor_chain",
+            "return=skipped when economy needs shield_advanced and not economy needs armor_chain",
+            "return=skipped when economy needs sword_broad and not economy needs armor_chain",
             "return=skipped when economy needs armor",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "consume=armor coal iron",
             "sleep=duration:10s",
-            "animate=working duration:35s",
+            "animate=working duration:20s",
             "produce=armor_chain"
          }
       },
@@ -349,12 +367,19 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
          descname = _"forging a steel shield",
          actions = {
-            "return=skipped unless economy needs shield_steel",
+            "return=skipped when economy needs helmet_mask and not economy needs shield_steel",
+            "return=skipped when economy needs spear_advanced and not economy needs shield_steel",
+            "return=skipped when economy needs armor_chain and not economy needs shield_steel",
+            "return=skipped when economy needs ax_broad and not economy needs shield_steel",
+            "return=skipped when economy needs armor_gilded and not economy needs shield_steel",
+            "return=skipped when economy needs tabard_golden and not economy needs shield_steel",
+            "return=skipped when economy needs shield_advanced and not economy needs shield_steel",
+            "return=skipped when economy needs sword_broad and not economy needs shield_steel",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "consume=coal:2 iron:2",
             "sleep=duration:10s",
-            "animate=working duration:35s",
+            "animate=working duration:20s",
             "produce=shield_steel"
          }
       },
@@ -362,18 +387,114 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
          descname = _"forging a broad ax",
          actions = {
-            "return=skipped unless economy needs ax_broad",
+            "return=skipped when economy needs helmet_mask and not economy needs ax_broad",
+            "return=skipped when economy needs spear_advanced and not economy needs ax_broad",
+            "return=skipped when economy needs armor_chain and not economy needs ax_broad",
+            "return=skipped when economy needs shield_steel and not economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded and not economy needs ax_broad",
+            "return=skipped when economy needs tabard_golden and not economy needs ax_broad",
+            "return=skipped when economy needs shield_advanced and not economy needs ax_broad",
+            "return=skipped when economy needs sword_broad and not economy needs ax_broad",
             "return=skipped when economy needs planks",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "consume=planks coal:2 iron:2",
-            "sleep=duration:10s",
+            "sleep=duration:5s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",
-            "animate=working duration:35s",
+            "animate=working duration:20s",
             "playsound=sound/smiths/sharpening priority:90%",
-            "sleep=duration:10s",
+            "sleep=duration:5s",
             "produce=ax_broad"
          }
+      },
+      produce_armor_gilded = {
+         -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
+         descname = _"forging a suit of gilded armor",
+         actions = {
+            "return=skipped when economy needs helmet_mask and not economy needs armor_gilded",
+            "return=skipped when economy needs spear_advanced and not economy needs armor_gilded",
+            "return=skipped when economy needs armor_chain and not economy needs armor_gilded",
+            "return=skipped when economy needs shield_steel and not economy needs armor_gilded",
+            "return=skipped when economy needs ax_broad and not economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden and not economy needs armor_gilded",
+            "return=skipped when economy needs shield_advanced and not economy needs armor_gilded",
+            "return=skipped when economy needs sword_broad and not economy needs armor_gilded",
+            "return=skipped when economy needs armor",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
+            "return=skipped when economy needs gold",
+            "consume=armor coal iron gold",
+            "sleep=duration:10s",
+            "animate=working duration:20s",
+            "produce=armor_gilded"
+         }
+      },
+      produce_tabard_golden = {
+         -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
+         descname = _"forging a suit of golden tabard",
+         actions = {
+            "return=skipped when economy needs helmet_mask and not economy needs tabard_golden",
+            "return=skipped when economy needs spear_advanced and not economy needs tabard_golden",
+            "return=skipped when economy needs armor_chain and not economy needs tabard_golden",
+            "return=skipped when economy needs shield_steel and not economy needs tabard_golden",
+            "return=skipped when economy needs ax_broad and not economy needs tabard_golden",
+            "return=skipped when economy needs armor_gilded and not economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced and not economy needs tabard_golden",
+            "return=skipped when economy needs sword_broad and not economy needs tabard_golden",
+            "return=skipped when economy needs spidercloth and not economy needs tabard_golden",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
+            "return=skipped when economy needs gold",
+            "consume=spidercloth coal iron gold",
+            "sleep=duration:10s",
+            "animate=working duration:20s",
+            "produce=tabard_golden"
+         }
+      },
+      produce_shield_advanced = {
+         -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
+         descname = _"forging an advanced shield",
+         actions = {
+            "return=skipped when economy needs helmet_mask and not economy needs shield_advanced",
+            "return=skipped when economy needs spear_advanced and not economy needs shield_advanced",
+            "return=skipped when economy needs armor_chain and not economy needs shield_advanced",
+            "return=skipped when economy needs shield_steel and not economy needs shield_advanced",
+            "return=skipped when economy needs ax_broad and not economy needs shield_advanced",
+            "return=skipped when economy needs armor_gilded and not economy needs shield_advanced",
+            "return=skipped when economy needs tabard_golden and not economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad and not economy needs shield_advanced",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
+            "return=skipped when economy needs gold",
+            "consume=coal:2 iron:2 gold",
+            "sleep=duration:10s",
+            "animate=working duration:20s",
+            "produce=shield_advanced"
+         }
+      },      
+      produce_sword_broad = {
+         -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
+         descname = _"forging a broadsword",
+         actions = {
+            "return=skipped when economy needs helmet_mask and not economy needs sword_broad",
+            "return=skipped when economy needs spear_advanced and not economy needs sword_broad",
+            "return=skipped when economy needs armor_chain and not economy needs sword_broad",
+            "return=skipped when economy needs shield_steel and not economy needs sword_broad",
+            "return=skipped when economy needs ax_broad and not economy needs sword_broad",
+            "return=skipped when economy needs armor_gilded and not economy needs sword_broad",
+            "return=skipped when economy needs tabard_golden and not economy needs sword_broad",
+            "return=skipped when economy needs shield_advanced and not economy needs sword_broad",
+            "return=skipped when economy needs planks",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs iron",
+            "consume=planks coal:2 iron:2",
+            "sleep=duration:5s",
+            "playsound=sound/smiths/smith priority:50% allow_multiple",
+            "animate=working duration:20s",
+            "playsound=sound/smiths/sharpening priority:90%",
+            "sleep=duration:5s",
+            "produce=sword_broad"
+         },
       },
    },
 }

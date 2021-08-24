@@ -58,6 +58,14 @@ descriptions:new_productionsite_type {
 
    programs = {
       main = {
+         -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+         descname = _"working",
+         actions = {
+            "call=hunting",
+            "return=skipped"
+         }
+      },
+      hunting = {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _"hunting",
          actions = {

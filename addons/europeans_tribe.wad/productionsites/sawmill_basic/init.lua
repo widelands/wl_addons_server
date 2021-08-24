@@ -77,10 +77,10 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=saw_log_basic",
-            "call=saw_log",
             "call=hardening_wood_basic",
             "call=hardening_wood",
+            "call=saw_log_basic",
+            "call=saw_log",
             "return=skipped"
          }
       },

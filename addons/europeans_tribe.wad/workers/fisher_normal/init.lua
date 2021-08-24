@@ -14,6 +14,16 @@ descriptions:new_worker_type {
    becomes = "europeans_fisher_advanced",
 
    programs = {
+      check_sea = {
+         "findspace=size:any radius:8 breed resource:resource_fish",
+      },
+      breed_in_sea = {
+         "findspace=size:any radius:8 breed resource:resource_fish",
+         "walk=coords",
+         "animate=freeing duration:6s",
+         "breed=resource_fish radius:1",
+         "return"
+      },
       fish_in_sea = {
          "findspace=size:any radius:8 resource:resource_fish",
          "walk=coords",
@@ -26,6 +36,13 @@ descriptions:new_worker_type {
       },
       check_pond = {
          "findobject=attrib:pond_mature radius:8",
+      },
+      breed_in_pond = {
+         "findobject=attrib:pond_dry radius:8",
+         "walk=object",
+         "animate=freeing duration:6s",
+         "callobject=with_fish",
+         "return"
       },
       fish_in_pond = {
          "findobject=attrib:pond_mature radius:8",
@@ -41,20 +58,38 @@ descriptions:new_worker_type {
       idle = {
          hotspot = { 2, 20 },
       },
+   },
+   spritesheets = {
       fishing = {
-         hotspot = { 10, 21 },
-         fps = 10
+         fps = 10,
+         frames = 30,
+         rows = 6,
+         columns = 5,
+         hotspot = { 10, 21 }
+      },
+      freeing = {
+         fps = 10,
+         frames = 30,
+         rows = 6,
+         columns = 5,
+         hotspot = { 10, 19 }
       },
       walk = {
-         hotspot = { 8, 21 },
          fps = 20,
-         directional = true
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         directional = true,
+         hotspot = { 8, 21 }
       },
       walkload = {
-         hotspot = { 8, 20 },
          fps = 10,
-         directional = true
-      }
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         directional = true,
+         hotspot = { 8, 20 }
+      },
    }
 }
 

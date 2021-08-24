@@ -38,7 +38,7 @@ descriptions:new_carrier_type {
          directional = true,
          hotspot = { 19, 33 }
       },
-   },
+   }
 }
 
 pop_textdomain()

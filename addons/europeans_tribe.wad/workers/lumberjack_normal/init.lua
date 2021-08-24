@@ -26,24 +26,35 @@ descriptions:new_worker_type {
          "return"
       }
    },
-
+   
    animations = {
       idle = {
          hotspot = { 8, 22 }
       },
+   },
+   spritesheets = {
       sawing = {
-         hotspot = { 22, 19 },
-         fps = 10
+         fps = 10,
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         hotspot = { 22, 19 }
       },
       walk = {
-         hotspot = { 16, 31 },
          fps = 10,
-         directional = true
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         directional = true,
+         hotspot = { 16, 31 }
       },
       walkload = {
-         hotspot = { 13, 29 },
          fps = 10,
-         directional = true
+         frames = 10,
+         rows = 4,
+         columns = 3,
+         directional = true,
+         hotspot = { 13, 29 }
       }
    }
 }

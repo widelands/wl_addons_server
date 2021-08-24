@@ -21,9 +21,33 @@ descriptions:new_productionsite_type {
    working_positions = {
       europeans_hunter_advanced = 1
    },
+   
+   inputs = {
+      { name = "water", amount = 4 },
+   },
 
    programs = {
       main = {
+         -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+         descname = _"working",
+         actions = {
+            "call=hunting",
+            "call=breeding",
+            "return=skipped"
+         }
+      },
+      breeding = {
+         -- TRANSLATORS: Completed/Skipped/Did not start breeding because ...
+         descname = _"breeding",
+         actions = {
+            "return=skipped when economy needs water",
+            "consume=water",
+            "sleep=duration:10s",
+            "callworker=release",
+            "sleep=duration:20s"
+         }
+      },
+      hunting = {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _"hunting",
          actions = {
