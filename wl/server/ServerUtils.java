@@ -412,6 +412,8 @@ abstract class ServerUtils {
 	public static boolean
 	matchesWidelandsVersion(String wl_version, String min_wl_version, String max_wl_version) {
 		// For the comparison logic, see AddOnInfo::matches_widelands_version
+		if (min_wl_version != null && min_wl_version.isEmpty()) min_wl_version = null;
+		if (max_wl_version != null && max_wl_version.isEmpty()) max_wl_version = null;
 		if (min_wl_version == null && max_wl_version == null) {
 			return true;
 		}
