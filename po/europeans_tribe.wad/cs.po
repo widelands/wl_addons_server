@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-24 03:07+0200\n"
+"POT-Creation-Date: 2021-08-25 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -832,38 +832,33 @@ msgstr "Běžná uhlířská pec"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Clay Pit"
-msgstr "Jednoduchý důl na uhlí"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:49
-#, fuzzy
 msgid "making fish pond"
-msgstr "vyrábění rybářského prutu"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start diging clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:94
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:62
-#, fuzzy
 msgid "diging clay"
-msgstr "mísení cihlářské hlíny"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:108
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:76
-#, fuzzy
 msgid "diking clay"
-msgstr "mísení cihlářské hlíny"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Clay Pit"
-msgstr "Vrchní kovář"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_basic/init.lua:8
@@ -1147,9 +1142,8 @@ msgstr "chytání ryb"
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:43
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:57
-#, fuzzy
 msgid "breeding in sea"
-msgstr "chování ryb v moři"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:54
@@ -1160,9 +1154,8 @@ msgstr "chytání ryb na moři"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:62
-#, fuzzy
 msgid "breeding in a pond"
-msgstr "chování ryb v rybníčku"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:74
@@ -2543,10 +2536,9 @@ msgstr "výcvik lesníka"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:300
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:335
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:317
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting claydigger"
-msgstr "verbování"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:311
@@ -4017,10 +4009,9 @@ msgstr "Vlastníma rukama nosí předměty po cestách."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:914
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:932
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:950
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carries items along your roads. They are reared in an animal farm."
-msgstr "Vlastníma rukama nosí předměty po cestách."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:923
@@ -5519,24 +5510,21 @@ msgstr "Vrchní uhlíř"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/claydigger_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Clay Digger"
-msgstr "Mistr cvičitel"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/claydigger_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Clay Digger"
-msgstr "Jednoduchý důl na uhlí"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/claydigger_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Clay Digger"
-msgstr "Vrchní cvičitel"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/farmer_advanced/init.lua:8
@@ -5849,85 +5837,3 @@ msgstr "Tkadlec"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Vrchní tkadlec"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Clay Pit and Fish Breeder’s House"
-#~ msgstr "Hliniště a domek porybného"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The fish breeder working out of this fish breeder’s house can’t find any "
-#~ "fish in his work area. Remember that you can only regenerate your fish "
-#~ "resources if there are some fish left to breed."
-#~ msgstr ""
-#~ "Porybnému pracujícímu v tomto domku porybného, se nedaří ve svém okolí "
-#~ "najít žádné ryby. Nezapomeň, že obnovovat populaci ryb lze pouze tehdy, "
-#~ "pokud nějaké ryby stále zbývají."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Gamekeeper’s Hut"
-#~ msgstr "Chata hajného"
-
-#~ msgid "releasing game"
-#~ msgstr "navracení divoké zvěře"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smithy Level 7"
-#~ msgstr "Kovářství úrovně 7"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smithy Level 8"
-#~ msgstr "Kovářství úrovně 8"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smithy Level 9"
-#~ msgstr "Kovářství úrovně 9"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting fishbreeder"
-#~ msgstr "výcvik chovatele ryb"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting gamekeeper"
-#~ msgstr "výcvik hajného"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Breeds fish in pond and in the sea."
-#~ msgstr "Chová ryby v jezeře a moři."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "The gamekeeper makes sure that the natural population of animals never "
-#~ "drops too low."
-#~ msgstr ""
-#~ "Hajný se vypouštěním zvěře do přírody stará o to, aby populace zvířat "
-#~ "nikdy příliš neklesla."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Releases animals into the wild to steady the meat production."
-#~ msgstr ""
-#~ "Vysazuje zvěř do divoké přírody, aby umožnil udržitelnou produkci masa."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Fish Breeder"
-#~ msgstr "Mistr porybný"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Fish Breeder"
-#~ msgstr "Porybný"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Fish Breeder"
-#~ msgstr "Vrchní porybný"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Gamekeeper"
-#~ msgstr "Mistr hajný"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Gamekeeper"
-#~ msgstr "Hajný"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Gamekeeper"
-#~ msgstr "Vrchní hajný"

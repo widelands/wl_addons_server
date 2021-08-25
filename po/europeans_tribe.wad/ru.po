@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-24 03:07+0200\n"
+"POT-Creation-Date: 2021-08-25 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -834,38 +834,33 @@ msgstr "Печь углежога"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Clay Pit"
-msgstr "Поверхностная угольная шахта"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:49
-#, fuzzy
 msgid "making fish pond"
-msgstr "делает удочку"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start diging clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:94
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:62
-#, fuzzy
 msgid "diging clay"
-msgstr "месит глину"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:108
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:76
-#, fuzzy
 msgid "diking clay"
-msgstr "месит глину"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Clay Pit"
-msgstr "Каменоломня"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/coalmine_basic/init.lua:8
@@ -1149,9 +1144,8 @@ msgstr "рыбачит"
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:43
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:57
-#, fuzzy
 msgid "breeding in sea"
-msgstr "разводит рыбу в море"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:54
@@ -1162,9 +1156,8 @@ msgstr "рыбачит в море"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:62
-#, fuzzy
 msgid "breeding in a pond"
-msgstr "разводит рыбу в пруду"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:74
@@ -1377,9 +1370,8 @@ msgstr "Дом охотника"
 #. TRANSLATORS: Completed/Skipped/Did not start breeding because ...
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:41
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:57
-#, fuzzy
 msgid "breeding"
-msgstr "разводит лошадей"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:52
@@ -2546,10 +2538,9 @@ msgstr "нанимает лесника"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:300
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:335
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:317
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting claydigger"
-msgstr "нанимает солдата"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:311
@@ -3988,10 +3979,9 @@ msgstr "Носят товары по дорогам."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:914
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:932
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:950
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carries items along your roads. They are reared in an animal farm."
-msgstr "Носят товары по дорогам."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:923
@@ -5420,17 +5410,15 @@ msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/claydigger_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Clay Digger"
-msgstr "Усиленный сторожевой пост"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/claydigger_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Clay Digger"
-msgstr "Поверхностная угольная шахта"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/claydigger_normal/init.lua:8
@@ -5749,60 +5737,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr ""
-
-#~ msgctxt "europeans_building"
-#~ msgid "Clay Pit and Fish Breeder’s House"
-#~ msgstr "Глиняные карьеры и домик рыболова"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The fish breeder working out of this fish breeder’s house can’t find any "
-#~ "fish in his work area. Remember that you can only regenerate your fish "
-#~ "resources if there are some fish left to breed."
-#~ msgstr ""
-#~ "Местный рыбозаводчик не может найти рыбу в своей рабочей области. "
-#~ "Помните: восстанавливать косяки рыб вы можете лишь тогда, когда осталась "
-#~ "рыба на разведение."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Gamekeeper’s Hut"
-#~ msgstr "Хижина егеря"
-
-#~ msgid "releasing game"
-#~ msgstr "выпускает дичь"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smithy Level 7"
-#~ msgstr "Кузница 7 уровня"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smithy Level 8"
-#~ msgstr "Кузница 8 уровня"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smithy Level 9"
-#~ msgstr "Кузница 9 уровня"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting fishbreeder"
-#~ msgstr "нанимает рыбозаводчика"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting gamekeeper"
-#~ msgstr "нанимает егеря"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Carries items along your roads."
-#~ msgstr "Поставляет товары по вашим дорогам."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Breeds fish in pond and in the sea."
-#~ msgstr "Разводит рыбу в пруду и в море."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "The gamekeeper makes sure that the natural population of animals never "
-#~ "drops too low."
-#~ msgstr ""
-#~ "Егерь следит за тем, чтобы популяция диких животных не падала слишком "
-#~ "низко."
