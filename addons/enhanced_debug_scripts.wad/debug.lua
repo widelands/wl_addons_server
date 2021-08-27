@@ -253,7 +253,7 @@ function connect_road(startx, starty, targetx, targety)
         if math.abs(diffy) > mapy then
             diffy = diffy * - 1
         end
-        --print ("x:", diffx, "y:", diffy)
+        print ("create road tile with delta-x:", diffx, "and delta-y:", diffy)
 
         -- impossible road, change target --
         if ((diffx == 1) or (diffx == -1)) and (diffy == 0) then
@@ -262,29 +262,29 @@ function connect_road(startx, starty, targetx, targety)
         if ((diffy == 1) or (diffy == -1)) and (diffx == 0) then
             targety = targety - 1
         end
-
-        -- horizontal road --
+        
+        -- special end roads (3 tiles)-- 
         if (diffx == 3) and (diffy == 0) then
           road = player:place_road(roadtype, startflag, "r", "r", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx > 0) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "r", "r", true)
+        elseif (diffx == 3) and (diffy == 1) then
+          road = player:place_road(roadtype, startflag, "br", "r", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        end
-        if (diffx == -3) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "l", "l", "l", true)
+        elseif (diffx == 2) and (diffy == 2) then
+          road = player:place_road(roadtype, startflag, "br", "br", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx < 0) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "l", "l", true)
+        elseif (diffx == 2) and (diffy == 3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        end
-
-        -- vertical road --
-        if (diffx == 0) and (diffy == 3) and (targety % 2 == 1) then
+        elseif (diffx == 1) and (diffy == 3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 0) and (diffy == 3) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "br", "bl", "br", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
@@ -292,110 +292,116 @@ function connect_road(startx, starty, targetx, targety)
           road = player:place_road(roadtype, startflag, "bl", "br", "bl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == 0) and (diffy > 0) then
-          road = player:place_road(roadtype, startflag, "br", "bl", true)
+        elseif (diffx == -1) and (diffy == 3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "bl", "bl", "bl,", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        end
-        if (diffx == 0) and (diffy == -3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "tr", "tl", "tr", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 0) and (diffy == -3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "tl", "tr", "tl", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 0) and (diffy < 0) then
-          road = player:place_road(roadtype, startflag, "tl", "tr", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        end
-
-        -- diagonal road --
-        if (diffx == 3) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "br", "r", "br", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 3) and (diffy == 1) then
-          road = player:place_road(roadtype, startflag, "br", "r", "r", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx > 0) and (diffy == 1) then
-          road = player:place_road(roadtype, startflag, "br", "r", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx > 0) and (diffy > 1) then
-          road = player:place_road(roadtype, startflag, "br", "br", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        end
-
-        if (diffx == -3) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tl", "l", "tl", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == -3) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tl", "l", "l", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx < 0) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tl", "l", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx < 0) and (diffy < -1) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        end
-
-        if (diffx == 3) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tr", "tr", "tr", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 2) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tr", "r", "tr", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 3) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tr", "r", "r", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx > 0) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tr", "r", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx > 0) and (diffy < -1) then
-          road = player:place_road(roadtype, startflag, "tr", "tr", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        end
-
-        if (diffx == -3) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "bl", true)
+        elseif (diffx == -2) and (diffy == 3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "bl", "bl", "bl,", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "bl", "l", "bl", true)
+          road = player:place_road(roadtype, startflag, "bl", "bl", "l", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -3) and (diffy == 1) then
           road = player:place_road(roadtype, startflag, "bl", "l", "l", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx < 0) and (diffy == 1) then
+        elseif (diffx == -3) and (diffy == 0) then
+          road = player:place_road(roadtype, startflag, "l", "l", "l", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -3) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "tl", "l", "l", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -2) and (diffy == -2) then
+          road = player:place_road(roadtype, startflag, "tl", "tl", "l", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -2) and (diffy == -3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -1) and (diffy == -3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 0) and (diffy == -3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "tl", "tr", "tl", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 0) and (diffy == -3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "tr", "tl", "tr", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 1) and (diffy == -3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "tr", "tr", "tr", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 2) and (diffy == -3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "tr", "tr", "tr", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 2) and (diffy == -2) then
+          road = player:place_road(roadtype, startflag, "tr", "tr", "r", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 3) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "tr", "r", "r", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+
+        -- special end roads (2 tiles)-- 
+        elseif (diffx == 2) and (diffy == 1) then
+          road = player:place_road(roadtype, startflag, "br", "r", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -2) and (diffy == 1) then
           road = player:place_road(roadtype, startflag, "bl", "l", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx < 0) and (diffy > 1) then
+        elseif (diffx == -2) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "tl", "l", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 2) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "tr", "r", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+
+        -- standard roads (2 tiles) --
+        elseif (diffx > 0) and (diffy == 0) then
+          road = player:place_road(roadtype, startflag, "r", "r", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx > 0) and (diffy > 0) then
+          road = player:place_road(roadtype, startflag, "br", "br", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 0) and (diffy > 0) then
+          road = player:place_road(roadtype, startflag, "br", "bl", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx < 0) and (diffy > 0) then
           road = player:place_road(roadtype, startflag, "bl", "bl", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx < 0) and (diffy == 0) then
+          road = player:place_road(roadtype, startflag, "l", "l", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx < 0) and (diffy < 0) then
+          road = player:place_road(roadtype, startflag, "tl", "tl", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 0) and (diffy < 0) then
+          road = player:place_road(roadtype, startflag, "tl", "tr", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx > 0) and (diffy < 0) then
+          road = player:place_road(roadtype, startflag, "tr", "tr", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         end

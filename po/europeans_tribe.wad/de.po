@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-25 03:03+0200\n"
+"POT-Creation-Date: 2021-08-27 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -838,15 +838,16 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:81
-#: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:49
-msgid "making fish pond"
-msgstr ""
+#, fuzzy
+msgid "making a fish pond"
+msgstr "Das Herstellen einer Angel"
 
-#. TRANSLATORS: Completed/Skipped/Did not start diging clay because ...
+#. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:94
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:62
-msgid "diging clay"
-msgstr ""
+#, fuzzy
+msgid "digging clay"
+msgstr "Kohle abbauen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:108
@@ -858,6 +859,11 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Clay Pit"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
+#: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:49
+msgid "making fish pond"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -2773,11 +2779,11 @@ msgstr ""
 "den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
 "erfolgreich starten."
 
-#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:84
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:83
 msgid "Be careful"
 msgstr "Sei vorsichtig"
 
-#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:84
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:83
 msgid ""
 "You have only one iron for each tool you will need to start your economy. "
 "Make sure no unneeded tool is created."
@@ -3488,7 +3494,7 @@ msgstr "Wasser ist Leben!"
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:396
 msgctxt "europeans_ware"
 msgid ""
-"Water is used by fishbreeder, gamekeeper, by all farms, and in the tavern "
+"Water is used by claydigger, by forester, by all farms, and in the tavern "
 "and the brewery. The spider farm and the sheep farm need to be supplied with "
 "water, too."
 msgstr ""

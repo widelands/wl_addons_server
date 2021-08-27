@@ -94,7 +94,7 @@ descriptions:new_productionsite_type {
          descname = _"grinding rye and wheat",
          actions = {
             "return=skipped when economy needs flour",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "consume=wheat rye",
             "playsound=sound/mill/mill_turning priority:85% allow_multiple",
             "animate=working duration:60s",

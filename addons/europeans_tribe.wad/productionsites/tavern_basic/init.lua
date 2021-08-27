@@ -79,7 +79,7 @@ descriptions:new_productionsite_type {
          descname = _"preparing a ration",
          actions = {
             "return=skipped when economy needs water",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "consume=water flour fish,meat",
             "animate=working duration:70s",
             "produce=ration"

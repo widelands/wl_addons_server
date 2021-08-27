@@ -204,7 +204,7 @@ descriptions:new_tribe {
          },
          {
             name = "clay",
-            default_target_quantity = 4,
+            default_target_quantity = 8,
             preciousness = 12,
             helptexts = {
                purpose = {
@@ -393,7 +393,7 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for an europeans ware: Water, part 1
                   pgettext("ware", "Water is the essence of life!"),
                   -- TRANSLATORS: Helptext for an europeans ware: Water, part 2
-                  pgettext("europeans_ware", "Water is used by fishbreeder, gamekeeper, by all farms, and in the tavern and the brewery. The spider farm and the sheep farm need to be supplied with water, too.")
+                  pgettext("europeans_ware", "Water is used by claydigger, by forester, by all farms, and in the tavern and the brewery. The spider farm and the sheep farm need to be supplied with water, too.")
                }
             }
          },
