@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-25 03:03+0200\n"
+"POT-Creation-Date: 2021-08-27 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -838,15 +838,16 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:81
-#: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:49
-msgid "making fish pond"
-msgstr ""
+#, fuzzy
+msgid "making a fish pond"
+msgstr "vyrábění rybářského prutu"
 
-#. TRANSLATORS: Completed/Skipped/Did not start diging clay because ...
+#. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:94
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:62
-msgid "diging clay"
-msgstr ""
+#, fuzzy
+msgid "digging clay"
+msgstr "dolování uhlí"
 
 #. TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:108
@@ -858,6 +859,11 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Clay Pit"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
+#: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:49
+msgid "making fish pond"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -2764,11 +2770,11 @@ msgstr ""
 "Začni hru jen se skladem a nejzákladnějším minimem pro rozběh hospodářství. "
 "Pozor: UI za těchto podmínek nedokáže úspěšně zahájit hru."
 
-#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:84
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:83
 msgid "Be careful"
 msgstr "Dávej pozor"
 
-#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:84
+#: addons/europeans_tribe.wad/scripting/starting_conditions/poor_hamlet.lua:83
 msgid ""
 "You have only one iron for each tool you will need to start your economy. "
 "Make sure no unneeded tool is created."
@@ -3505,9 +3511,10 @@ msgstr "Voda je podstatou života!"
 
 #. TRANSLATORS: Helptext for an europeans ware: Water, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:396
+#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
-"Water is used by fishbreeder, gamekeeper, by all farms, and in the tavern "
+"Water is used by claydigger, by forester, by all farms, and in the tavern "
 "and the brewery. The spider farm and the sheep farm need to be supplied with "
 "water, too."
 msgstr ""

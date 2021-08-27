@@ -70,7 +70,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs ration",
             "return=skipped when economy needs snack",
             "return=skipped when economy needs water",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "consume=water flour fish,meat",
             "animate=working duration:60s",
             "produce=ration"
@@ -95,7 +95,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs ration",
             "return=skipped when economy needs snack",
             "return=skipped when economy needs water",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "consume=water:2 flour:2 fish,meat:2",
             "animate=working duration:60s",
             "produce=snack"

@@ -24,7 +24,7 @@ descriptions:new_productionsite_type {
    buildcost = {
       log = 2,
       reed = 2,
-      granite = 1
+      granite = 2
    },
    return_on_dismantle = {
       log = 1,
@@ -72,13 +72,13 @@ descriptions:new_productionsite_type {
             "callworker=check_dig",
             "call=making_pond",
             "callworker=check_dig",
-            "call=diging_clay",
+            "call=digging_clay",
             "return=skipped"
          }
       },
       making_pond = {
          -- TRANSLATORS: Completed/Skipped/Did not start making pond because ...
-         descname = _"making fish pond",
+         descname = _"making a fish pond",
          actions = {
             "return=skipped unless economy needs fish",
             "return=skipped when economy needs clay",
@@ -89,9 +89,9 @@ descriptions:new_productionsite_type {
             "animate=working duration:15s",
          },
       },
-      diging_clay = {
-         -- TRANSLATORS: Completed/Skipped/Did not start diging clay because ...
-         descname = _"diging clay",
+      digging_clay = {
+         -- TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
+         descname = _"digging clay",
          actions = {
             "return=skipped unless economy needs clay",
             "return=failed unless site has water",
