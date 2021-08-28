@@ -70,9 +70,11 @@ class ClientThread implements Runnable {
 			}
 
 			final int protocolVersion = Integer.valueOf(protocolVersionString);
-			if (protocolVersion < kOldestSupportedProtocolVersion || protocolVersion > kNewestSupportedProtocolVersion) {
+			if (protocolVersion < kOldestSupportedProtocolVersion ||
+			    protocolVersion > kNewestSupportedProtocolVersion) {
 				throw new ServerUtils.WLProtocolException(
-				    "Unsupported version '" + protocolVersion + "' (supported versions are " + kOldestSupportedProtocolVersion + "-" + kNewestSupportedProtocolVersion + ")");
+				    "Unsupported version '" + protocolVersion + "' (supported versions are " +
+				    kOldestSupportedProtocolVersion + "-" + kNewestSupportedProtocolVersion + ")");
 			}
 			final String locale = ServerUtils.readLine(in);
 			Utils.log("Locale: " + locale);
