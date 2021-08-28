@@ -32,16 +32,16 @@ import java.util.*;
 public abstract class Utils {
 	private static class ChecksummedFile implements Comparable {
 		public final File file;
-		public final String checksum;
+		public final String cachedChecksum;
 
 		public ChecksummedFile(File f) {
 			file = f;
-			checksum = cs();
+			cachedChecksum = cs();
 		}
 
 		private String cs() { return file.isFile() ? checksum(file) : ""; }
 
-		public boolean valid() { return cs().equals(checksum); }
+		public boolean valid() { return cs().equals(cachedChecksum); }
 
 		@Override
 		public int compareTo(Object o) {
@@ -51,7 +51,7 @@ public abstract class Utils {
 		@Override
 		public boolean equals(Object o) {
 			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) &&
-			    ((ChecksummedFile)o).checksum.equals(checksum);
+			    ((ChecksummedFile)o).cachedChecksum.equals(cachedChecksum);
 		}
 	}
 

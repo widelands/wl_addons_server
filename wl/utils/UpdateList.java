@@ -259,7 +259,7 @@ public class UpdateList {
 	private static final int kHighestListVersion = 3;
 
 	/**
-	 * Manual lists syncchronization main function.
+	 * Manual lists synchronization main function.
 	 * @param args Ignored.
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */

@@ -31,6 +31,12 @@ import wl.utils.*;
 class ClientThread implements Runnable {
 	private Socket socket;
 
+	/** The oldest protocol version the server supports. Never, ever change this. */
+	public static final int kOldestSupportedProtocolVersion = 4;
+
+	/** The newest protocol version the server supports. May be increased but never decreased. */
+	public static final int kNewestSupportedProtocolVersion = 5;
+
 	/**
 	 * Constructor.
 	 * @param s The socket via which we're connected to the client.
@@ -64,9 +70,9 @@ class ClientThread implements Runnable {
 			}
 
 			final int protocolVersion = Integer.valueOf(protocolVersionString);
-			if (protocolVersion < 4 || protocolVersion > 5) {
+			if (protocolVersion < kOldestSupportedProtocolVersion || protocolVersion > kNewestSupportedProtocolVersion) {
 				throw new ServerUtils.WLProtocolException(
-				    "Unsupported version '" + protocolVersion + "' (supported versions are 4-5)");
+				    "Unsupported version '" + protocolVersion + "' (supported versions are " + kOldestSupportedProtocolVersion + "-" + kNewestSupportedProtocolVersion + ")");
 			}
 			final String locale = ServerUtils.readLine(in);
 			Utils.log("Locale: " + locale);
