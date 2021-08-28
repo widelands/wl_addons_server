@@ -65,7 +65,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs water",
             "consume=water blackroot",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "playsound=sound/farm/sheep priority:50% allow_multiple",
             "animate=working duration:60s",
             "produce=wool"
@@ -75,7 +75,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start producing wool because ...
          descname = _"producing wool",
          actions = {
-            "return=skipped unless economy needs wool",
+            "return=skipped unless economy needs wool or workers need experience",
             "consume=water:2 blackroot:2",
             "sleep=duration:10s",
             "playsound=sound/farm/sheep priority:50% allow_multiple",

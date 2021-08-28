@@ -63,7 +63,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs water",
             "consume=corn water",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "animate=working duration:60s",
             "produce=spider_silk"
          }
@@ -72,7 +72,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
          descname = _"producing spider silk",
          actions = {
-            "return=skipped unless economy needs spider_silk",
+            "return=skipped unless economy needs spider_silk or workers need experience",
             "consume=corn:2 water:2",
             "sleep=duration:10s",
             "animate=working duration:60s",

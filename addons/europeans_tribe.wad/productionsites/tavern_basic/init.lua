@@ -90,7 +90,7 @@ descriptions:new_productionsite_type {
          descname = _"preparing a ration",
          actions = {
             "return=skipped when economy needs water and not economy needs ration",
-            "return=skipped unless economy needs ration",
+            "return=skipped unless economy needs ration or workers need experience",
             "sleep=duration:10s",
             "consume=water:2 flour:2 fish,meat:2",
             "animate=working duration:70s",

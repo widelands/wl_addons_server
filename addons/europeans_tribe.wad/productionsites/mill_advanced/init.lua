@@ -58,7 +58,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
          descname = _"grinding rye and wheat",
          actions = {
-            "return=skipped unless economy needs flour",
+            "return=skipped unless economy needs flour or workers need experience",
             "sleep=duration:10s",
             "consume=wheat:4 rye:4",
             "playsound=sound/mill/mill_turning priority:85% allow_multiple",

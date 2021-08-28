@@ -85,7 +85,7 @@ descriptions:new_productionsite_type {
          descname = _"preparing a ration",
          actions = {
             "return=skipped when economy needs water and not economy needs ration",
-            "return=skipped unless economy needs ration",
+            "return=skipped unless economy needs ration or workers need experience",
             "sleep=duration:10s",
             "consume=water:2 flour:2 fish,meat:2",
             "animate=working duration:50s",
@@ -110,7 +110,7 @@ descriptions:new_productionsite_type {
          descname = _"preparing a snack",
          actions = {
             "return=skipped when economy needs water and not economy needs snack",
-            "return=skipped unless economy needs snack",
+            "return=skipped unless economy needs snack or workers need experience",
             "sleep=duration:10s",
             "consume=water:4 flour:4 fish,meat:4",
             "animate=working duration:50s",

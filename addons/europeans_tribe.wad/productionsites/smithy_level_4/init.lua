@@ -85,14 +85,53 @@ descriptions:new_productionsite_type {
             "call=produce_armor_gilded",
             "call=produce_shield_advanced",
             "call=produce_tabard_golden",
+            "call=produce_idle",
             "return=skipped"
+         }
+      },
+      produce_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs buckets",
+            "return=skipped when economy needs shovel",
+            "return=skipped when economy needs saw",
+            "return=skipped when economy needs hammer",
+            "return=skipped when economy needs pick",
+            "return=skipped when economy needs felling_ax",
+            "return=skipped when economy needs fire_tongs",
+            "return=skipped when economy needs scythe",
+            "return=skipped when economy needs basket",
+            "return=skipped when economy needs milking_tongs",
+            "return=skipped when economy needs needles",
+            "return=skipped when economy needs fishing_rod",
+            "return=skipped when economy needs fishing_net",
+            "return=skipped when economy needs hunting_bow",
+            "return=skipped when economy needs hunting_spear",
+            "return=skipped when economy needs bread_paddle",
+            "return=skipped when economy needs hook_pole",
+            "return=skipped when economy needs spear_wooden",
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad",
+            "consume=coal iron",
+            "sleep=duration:60s",
+            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+            "animate=working duration:30s",
+            "produce=scrap_iron"
          }
       },
       produce_basket = {
          -- TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
          descname = _"making a basket",
          actions = {
-            "return=skipped unless economy needs basket",
+            "return=skipped unless economy needs basket or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -104,7 +143,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
          descname = _"making a bread paddle",
          actions = {
-            "return=skipped unless economy needs bread_paddle",
+            "return=skipped unless economy needs bread_paddle or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -116,7 +155,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
          descname = _"making a pair of buckets",
          actions = {
-            "return=skipped unless economy needs buckets",
+            "return=skipped unless economy needs buckets or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -128,7 +167,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
          descname = _"making a felling ax",
          actions = {
-            "return=skipped unless economy needs felling_ax",
+            "return=skipped unless economy needs felling_ax or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -140,7 +179,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
          descname = _"making fire tongs",
          actions = {
-            "return=skipped unless economy needs fire_tongs",
+            "return=skipped unless economy needs fire_tongs or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -152,7 +191,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
          descname = _"making a fishing net",
          actions = {
-            "return=skipped unless economy needs fishing_net",
+            "return=skipped unless economy needs fishing_net or workers need experience",
             "consume=spidercloth:3",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -164,7 +203,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a fishing rod because ...
          descname = _"making a fishing rod",
          actions = {
-            "return=skipped unless economy needs fishing_rod",
+            "return=skipped unless economy needs fishing_rod or workers need experience",
             "consume=planks spidercloth",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -176,7 +215,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
          descname = _"making a hammer",
          actions = {
-            "return=skipped unless economy needs hammer",
+            "return=skipped unless economy needs hammer or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -188,7 +227,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a hook pole because ...
          descname = _"making a hook pole",
          actions = {
-            "return=skipped unless economy needs hook_pole",
+            "return=skipped unless economy needs hook_pole or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -200,7 +239,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a hunting bow because ...
          descname = _"making a hunting bow",
          actions = {
-            "return=skipped unless economy needs hunting_bow",
+            "return=skipped unless economy needs hunting_bow or workers need experience",
             "consume=planks spidercloth",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -212,7 +251,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a hunting spear because ...
          descname = _"making a hunting spear",
          actions = {
-            "return=skipped unless economy needs hunting_spear",
+            "return=skipped unless economy needs hunting_spear or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -224,7 +263,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
          descname = _"making milking tongs",
          actions = {
-            "return=skipped unless economy needs milking_tongs",
+            "return=skipped unless economy needs milking_tongs or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -236,7 +275,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
          descname = _"making needles",
          actions = {
-            "return=skipped unless economy needs needles",
+            "return=skipped unless economy needs needles or workers need experience",
             "consume=iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -248,7 +287,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
          descname = _"making a pick",
          actions = {
-            "return=skipped unless economy needs pick",
+            "return=skipped unless economy needs pick or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -260,7 +299,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
          descname = _"making a saw",
          actions = {
-            "return=skipped unless economy needs saw",
+            "return=skipped unless economy needs saw or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -272,7 +311,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
          descname = _"making a scythe",
          actions = {
-            "return=skipped unless economy needs scythe",
+            "return=skipped unless economy needs scythe or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -284,7 +323,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
          descname = _"making a shovel",
          actions = {
-            "return=skipped unless economy needs shovel",
+            "return=skipped unless economy needs shovel or workers need experience",
             "consume=planks coal iron",
             "sleep=duration:10s",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -296,7 +335,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
          descname = _"forging a wooden spear",
          actions = {
-            "return=skipped unless economy needs spear_wooden",
+            "return=skipped unless economy needs spear_wooden or workers need experience",
             "consume=planks",
             "sleep=duration:5s",
             "playsound=sound/smiths/smith priority:50% allow_multiple",

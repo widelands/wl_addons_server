@@ -46,7 +46,7 @@ descriptions:new_productionsite_type {
          descname = _"making honey",
          actions = {
             "callworker=bees",
-            "sleep=duration:45s"
+            "sleep=duration:60s"
          }
       },
    },
