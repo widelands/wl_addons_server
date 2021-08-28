@@ -80,8 +80,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start making pond because ...
          descname = _"making a fish pond",
          actions = {
-            "return=skipped unless economy needs fish",
-            "return=skipped when economy needs clay",
+            "return=skipped unless economy needs fish or workers need experience",
+            "return=skipped when economy needs clay or workers need experience",
             "return=failed unless site has water",
             "callworker=dig",
             "consume=water",
@@ -93,7 +93,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
          descname = _"digging clay",
          actions = {
-            "return=skipped unless economy needs clay",
+            "return=skipped unless economy needs clay or workers need experience",
             "return=failed unless site has water",
             "callworker=dig",
             "consume=water",
@@ -107,7 +107,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
          descname = _"diking clay",
          actions = {
-            "return=skipped unless economy needs clay",
+            "return=skipped unless economy needs clay or workers need experience",
             "callworker=dike",
             "sleep=duration:10s",
             "animate=working duration:15s",

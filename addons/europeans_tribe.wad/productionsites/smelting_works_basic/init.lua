@@ -73,7 +73,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs iron",
             "consume=ore coal",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
             "animate=working duration:25s",
             "playsound=sound/metal/ironping priority:60%",
@@ -84,7 +84,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
          descname = _"smelting iron",
          actions = {
-            "return=skipped unless economy needs iron",
+            "return=skipped unless economy needs iron or workers need experience",
             "consume=ore:3 coal:3",
             "sleep=duration:10s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",

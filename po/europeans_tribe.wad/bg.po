@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-27 03:03+0200\n"
+"POT-Creation-Date: 2021-08-28 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Bulgarian (https://www.transifex.com/widelands/teams/35159/"
 "bg/)\n"
@@ -659,6 +659,12 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #. TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining water because ...
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining water because ...
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining water because ...
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:55
 #: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:63
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:55
@@ -708,8 +714,14 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:66
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:54
 #: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:32
+#: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:41
+#: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:52
 #: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:60
+#: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:69
+#: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:80
 #: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:48
+#: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:57
+#: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:68
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:38
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:63
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:54
@@ -1877,9 +1889,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:86
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:86
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:89
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:93
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:97
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:84
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:132
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:136
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:123
 msgid "making a basket"
 msgstr ""
 
@@ -1888,9 +1900,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:98
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:98
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:101
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:105
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:109
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:96
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:144
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:148
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:135
 msgid "making a bread paddle"
 msgstr ""
 
@@ -1899,9 +1911,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:110
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:110
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:113
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:117
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:121
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:108
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:156
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:160
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:147
 msgid "making a pair of buckets"
 msgstr ""
 
@@ -1910,9 +1922,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:122
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:122
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:125
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:129
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:133
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:120
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:168
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:172
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:159
 msgid "making a felling ax"
 msgstr ""
 
@@ -1921,9 +1933,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:134
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:134
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:137
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:141
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:145
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:132
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:180
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:184
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:171
 msgid "making fire tongs"
 msgstr ""
 
@@ -1932,9 +1944,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:170
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:170
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:173
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:177
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:181
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:168
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:216
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:220
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:207
 msgid "making a hammer"
 msgstr ""
 
@@ -1943,9 +1955,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:182
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:182
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:185
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:189
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:193
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:180
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:228
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:232
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:219
 msgid "making a hook pole"
 msgstr ""
 
@@ -1954,9 +1966,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:242
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:242
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:245
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:249
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:253
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:240
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:288
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:292
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:279
 msgid "making a pick"
 msgstr ""
 
@@ -1965,9 +1977,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:218
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:218
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:221
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:225
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:229
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:216
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:264
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:268
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:255
 msgid "making milking tongs"
 msgstr ""
 
@@ -1976,9 +1988,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:230
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:230
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:233
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:237
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:241
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:228
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:276
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:280
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:267
 msgid "making needles"
 msgstr ""
 
@@ -1987,9 +1999,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:254
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:254
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:257
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:261
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:265
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:252
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:300
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:304
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:291
 msgid "making a saw"
 msgstr ""
 
@@ -1998,9 +2010,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:266
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:266
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:269
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:273
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:277
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:264
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:312
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:316
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:303
 msgid "making a scythe"
 msgstr ""
 
@@ -2009,9 +2021,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:278
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:278
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:281
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:285
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:289
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:276
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:324
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:328
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:315
 msgid "making a shovel"
 msgstr ""
 
@@ -2025,9 +2037,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:146
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:146
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:149
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:153
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:157
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:144
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:192
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:196
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:183
 msgid "making a fishing net"
 msgstr ""
 
@@ -2035,9 +2047,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:158
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:158
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:161
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:165
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:169
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:156
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:204
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:208
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:195
 msgid "making a fishing rod"
 msgstr ""
 
@@ -2045,9 +2057,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:194
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:194
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:197
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:201
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:205
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:192
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:240
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:244
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:231
 msgid "making a hunting bow"
 msgstr ""
 
@@ -2055,9 +2067,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:206
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:206
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:209
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:213
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:217
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:204
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:252
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:256
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:243
 msgid "making a hunting spear"
 msgstr ""
 
@@ -2075,25 +2087,25 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:293
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:297
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:301
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:288
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:336
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:340
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:327
 msgid "forging a wooden spear"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:307
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:311
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:315
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:302
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:350
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:354
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:341
 msgid "forging a mask"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_level_3/init.lua:319
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:332
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:336
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:323
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:371
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:375
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:362
 msgid "forging an advanced spear"
 msgstr ""
 
@@ -2103,52 +2115,59 @@ msgctxt "europeans_building"
 msgid "Smithy Level 4"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:94
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:98
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:85
+msgid "idle program"
+msgstr ""
+
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:356
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:360
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:347
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:395
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:399
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:386
 msgid "forging a suit of chain armor"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:377
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:381
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:368
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:416
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:420
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:407
 msgid "forging a steel shield"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:397
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:401
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:388
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:436
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:440
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:427
 msgid "forging a broad ax"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:421
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:425
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:412
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:460
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:464
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:451
 msgid "forging a suit of gilded armor"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:443
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:447
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:434
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:482
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:486
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:473
 msgid "forging a suit of golden tabard"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:465
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:469
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:456
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:504
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:508
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:495
 msgid "forging an advanced shield"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
-#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:486
-#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:490
-#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:477
+#: addons/europeans_tribe.wad/productionsites/smithy_level_4/init.lua:525
+#: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:529
+#: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:516
 msgid "forging a broadsword"
 msgstr ""
 
@@ -2258,21 +2277,21 @@ msgctxt "europeans_building"
 msgid "Advanced Well"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:44
-#: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:72
-#: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:60
+#: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:65
+#: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:93
+#: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:81
 msgid "No Water"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:45
-#: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:73
-#: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:61
+#: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:66
+#: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:94
+#: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:82
 msgid "Out of Water"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:46
-#: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:74
-#: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:62
+#: addons/europeans_tribe.wad/productionsites/well_advanced/init.lua:67
+#: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:95
+#: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "The carrier working at this well can’t find any water in his well."
 msgstr ""

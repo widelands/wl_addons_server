@@ -58,7 +58,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs coal",
             "return=skipped when economy needs granite",
             "consume=coal granite water",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "playsound=sound/barbarians/stonegrind priority:80%",
             "animate=working duration:15s",
             "playsound=sound/barbarians/mortar priority:60%",
@@ -70,7 +70,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
          descname = _"mixing grout",
          actions = {
-            "return=skipped unless economy needs grout",
+            "return=skipped unless economy needs grout or workers need experience",
             "return=skipped when economy needs granite",
             "consume=coal:2 granite:3 water:3",
             "sleep=duration:10s",
@@ -91,7 +91,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs coal",
             "return=skipped when economy needs granite",
             "consume=coal granite clay",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "playsound=sound/barbarians/stonegrind priority:80%",
             "animate=working duration:15s",
             "sleep=duration:3s",
@@ -102,7 +102,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
          descname = _"burning bricks",
          actions = {
-            "return=skipped unless economy needs brick",
+            "return=skipped unless economy needs brick or workers need experience",
             "return=skipped when economy needs granite",
             "consume=coal:2 granite clay:3",
             "sleep=duration:10s",
@@ -116,7 +116,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
          descname = _"sculpting a marble column",
          actions = {
-            "return=skipped unless economy needs marble_column",
+            "return=skipped unless economy needs marble_column or workers need experience",
             "return=skipped when economy needs marble",
             "consume=marble:3",
             "sleep=duration:10s",

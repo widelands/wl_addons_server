@@ -67,7 +67,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs cloth",
             "return=skipped when economy needs reed",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "consume=reed",
             "playsound=sound/barbarians/weaver priority:90%",
             "animate=working duration:30s",
@@ -78,7 +78,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
          descname = _"weaving cloth",
          actions = {
-            "return=skipped unless economy needs cloth",
+            "return=skipped unless economy needs cloth or workers need experience",
             "sleep=duration:10s",
             "consume=reed:3",
             "playsound=sound/barbarians/weaver priority:90%",
@@ -92,7 +92,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs spidercloth",
             "return=skipped when economy needs tabard",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "consume=spider_silk",
             "playsound=sound/mill/weaving priority:90%",
             "animate=working duration:30s",
@@ -103,7 +103,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start weaving spidercloth because ...
          descname = _"weaving spidercloth",
          actions = {
-            "return=skipped unless economy needs spidercloth",
+            "return=skipped unless economy needs spidercloth or workers need experience",
             "consume=spider_silk:3",
             "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",
@@ -115,7 +115,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
          descname = _"tailoring a tabard",
          actions = {
-            "return=skipped unless economy needs tabard",
+            "return=skipped unless economy needs tabard or workers need experience",
             "consume=spider_silk",
             "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",

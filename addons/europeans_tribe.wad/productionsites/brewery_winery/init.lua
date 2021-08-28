@@ -60,7 +60,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs wine",
             "return=skipped when economy needs water",
             "consume=water barley",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "animate=working duration:60s",
             "produce=beer"
          }
@@ -70,7 +70,7 @@ descriptions:new_productionsite_type {
          descname = _"brewing beer",
          actions = {
             "return=skipped when economy needs water and not economy needs beer",
-            "return=skipped unless economy needs beer",
+            "return=skipped unless economy needs beer or workers need experience",
             "return=skipped when site has honey and economy needs mead and not economy needs beer",
             "return=skipped when site has barley and economy needs beer_strong and not economy needs beer",
             "consume=water:3 barley:3",
@@ -89,7 +89,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs wine",
             "return=skipped when economy needs water",
             "consume=water barley honey",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "animate=working duration:60s",
             "produce=mead"
          }
@@ -99,7 +99,7 @@ descriptions:new_productionsite_type {
          descname = _"brewing mead",
          actions = {
             "return=skipped when economy needs water and not economy needs mead",
-            "return=skipped unless economy needs mead",
+            "return=skipped unless economy needs mead or workers need experience",
             "return=skipped when site has barley and economy needs beer and not economy needs mead",
             "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
             "consume=water:3 barley:3 honey:3",
@@ -118,7 +118,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs wine",
             "return=skipped when economy needs water",
             "consume=water barley",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "animate=working duration:70s",
             "produce=beer_strong"
          }
@@ -128,7 +128,7 @@ descriptions:new_productionsite_type {
          descname = _"brewing strong beer",
          actions = {
             "return=skipped when economy needs water and not economy needs beer_strong",
-            "return=skipped unless economy needs beer_strong",
+            "return=skipped unless economy needs beer_strong or workers need experience",
             "return=skipped when site has barley and economy needs beer and not economy needs beer_strong",
             "return=skipped when site has honey and economy needs mead and not economy needs beer_strong",
             "consume=water:4 barley:4",
@@ -147,7 +147,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs wine",
             "return=skipped when economy needs water",
             "consume=water fruit grape",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "playsound=sound/empire/winebubble priority:40% allow_multiple",
             "animate=working duration:70s",
             "produce=wine"
@@ -159,7 +159,7 @@ descriptions:new_productionsite_type {
          actions = {
             -- Grapes are only needed for wine, so no need to check if wine is needed
             "return=skipped when economy needs water and not economy needs wine",
-            "return=skipped unless economy needs wine",
+            "return=skipped unless economy needs wine or workers need experience",
             "consume=water fruit grape:4",
             "sleep=duration:10s",
             "playsound=sound/empire/winebubble priority:40% allow_multiple",

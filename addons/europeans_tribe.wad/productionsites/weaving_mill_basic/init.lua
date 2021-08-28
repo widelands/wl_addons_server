@@ -76,7 +76,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs cloth",
             "return=skipped when economy needs reed",
-            "sleep=duration:60s",
+            "sleep=duration:90s",
             "consume=reed",
             "playsound=sound/barbarians/weaver priority:90%",
             "animate=working duration:30s",
