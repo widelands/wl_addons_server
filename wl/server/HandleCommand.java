@@ -195,7 +195,8 @@ class HandleCommand {
 			TreeMap<String, Utils.Value> profile =
 			    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]).contents;
 			TreeMap<String, Utils.Value> screenies =
-			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1]).contents;
+			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1])
+			        .contents;
 
 			out.println(profile.get("name").value);
 			out.println(profile.get("name").value(locale));
@@ -821,7 +822,8 @@ class HandleCommand {
 				boolean isUpdate = false;
 				String oldVersionString = null;
 				if (addOnDir.isDirectory()) {
-					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]).contents;
+					TreeMap<String, Utils.Value> oldProfile =
+					    Utils.readProfile(addOnMain, cmd[1]).contents;
 
 					if (!oldProfile.get("category").value.equals(newProfile.get("category").value))
 						throw new ServerUtils.WLProtocolException(

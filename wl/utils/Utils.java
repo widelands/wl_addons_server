@@ -484,8 +484,7 @@ public abstract class Utils {
 	 * @return The key-value pairs.
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
-	synchronized public static Profile readProfile(File f, String textdomain)
-	    throws Exception {
+	synchronized public static Profile readProfile(File f, String textdomain) throws Exception {
 		ChecksummedFile key = new ChecksummedFile(f);
 		if (_staticprofiles.containsKey(key)) return _staticprofiles.get(key);
 		for (ChecksummedFile cf : _staticprofiles.keySet()) {
@@ -527,8 +526,9 @@ public abstract class Utils {
 				arg = arg.substring(1);
 				if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
 			}
-			profile.contents.put(str[0], new Value(str[0], arg,
-			                              localize ? textdomain == null ? "" : textdomain : null));
+			profile.contents.put(
+			    str[0],
+			    new Value(str[0], arg, localize ? textdomain == null ? "" : textdomain : null));
 		}
 
 		_staticprofiles.put(key, profile);
