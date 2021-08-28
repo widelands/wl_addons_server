@@ -154,7 +154,7 @@ class HandleCommand {
 		for (File addon : Utils.listSorted(new File("addons"))) {
 			if (versionCheck) {
 				TreeMap<String, Utils.Value> profile =
-				    Utils.readProfile(new File(addon, "addon"), addon.getName());
+				    Utils.readProfile(new File(addon, "addon"), addon.getName()).contents;
 				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
 				                                         profile.containsKey("min_wl_version") ?
                                                              profile.get("min_wl_version").value :
@@ -193,9 +193,9 @@ class HandleCommand {
 			final long addOnID = sqlMain.getLong("id");
 
 			TreeMap<String, Utils.Value> profile =
-			    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]);
+			    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]).contents;
 			TreeMap<String, Utils.Value> screenies =
-			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1]);
+			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1]).contents;
 
 			out.println(profile.get("name").value);
 			out.println(profile.get("name").value(locale));
@@ -817,11 +817,11 @@ class HandleCommand {
 				File addOnMain = new File(addOnDir, "addon");
 
 				TreeMap<String, Utils.Value> newProfile =
-				    Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
+				    Utils.readProfile(new File(tempDir, "addon"), cmd[1]).contents;
 				boolean isUpdate = false;
 				String oldVersionString = null;
 				if (addOnDir.isDirectory()) {
-					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]);
+					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]).contents;
 
 					if (!oldProfile.get("category").value.equals(newProfile.get("category").value))
 						throw new ServerUtils.WLProtocolException(

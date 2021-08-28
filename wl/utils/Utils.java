@@ -459,8 +459,22 @@ public abstract class Utils {
 		}
 	}
 
-	private static final TreeMap<ChecksummedFile, TreeMap<String, Value>> _staticprofiles =
-	    new TreeMap<>();
+	/** Wrapper around the contents of an ini-style file. */
+	public static class Profile {
+
+		/** The name of the global section (may be null). */
+		public String name;
+
+		/** The actual contents of the file. */
+		public final TreeMap<String, Value> contents;
+
+		/** Default constructor. */
+		public Profile() {
+			name = null;
+			contents = new TreeMap<>();
+		}
+	}
+	private static final TreeMap<ChecksummedFile, Profile> _staticprofiles = new TreeMap<>();
 
 	/**
 	 * Parse an ini-style file and return its contents as a map of key-value pairs.
@@ -470,7 +484,7 @@ public abstract class Utils {
 	 * @return The key-value pairs.
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
-	synchronized public static TreeMap<String, Value> readProfile(File f, String textdomain)
+	synchronized public static Profile readProfile(File f, String textdomain)
 	    throws Exception {
 		ChecksummedFile key = new ChecksummedFile(f);
 		if (_staticprofiles.containsKey(key)) return _staticprofiles.get(key);
@@ -481,7 +495,7 @@ public abstract class Utils {
 			}
 		}
 
-		TreeMap<String, Value> profile = new TreeMap<>();
+		Profile profile = new Profile();
 		if (!f.isFile()) {
 			_staticprofiles.put(key, profile);
 			return profile;
@@ -489,12 +503,16 @@ public abstract class Utils {
 
 		for (String line : Files.readAllLines(f.toPath())) {
 			line = line.trim();
-			if (line.startsWith("#")) continue;
+			if (line.isEmpty() || line.startsWith("#")) continue;
+			if (line.startsWith("[") && line.endsWith("]")) {
+				profile.name = line;
+				continue;
+			}
 			String[] str = line.split("=");
 			for (int i = 0; i < str.length; i++) str[i] = str[i].trim();
 
 			if (str.length < 2) {
-				if (str.length == 1) profile.put(str[0], new Value(str[0], ""));
+				if (str.length == 1) profile.contents.put(str[0], new Value(str[0], ""));
 				continue;
 			}
 
@@ -509,7 +527,7 @@ public abstract class Utils {
 				arg = arg.substring(1);
 				if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
 			}
-			profile.put(str[0], new Value(str[0], arg,
+			profile.contents.put(str[0], new Value(str[0], arg,
 			                              localize ? textdomain == null ? "" : textdomain : null));
 		}
 
@@ -527,17 +545,23 @@ public abstract class Utils {
 	 */
 	synchronized public static void
 	editProfile(File f, String textdomain, TreeMap<String, Value> changes) throws Exception {
-		TreeMap<String, Value> profile = readProfile(f, textdomain);
-		profile.putAll(changes);
+		Profile profile = readProfile(f, textdomain);
+		profile.contents.putAll(changes);
 		f.getParentFile().mkdirs();
 		PrintStream out = new PrintStream(f);
-		for (String key : profile.keySet()) {
+		if (profile.name != null) out.println(profile.name);
+		for (String key : profile.contents.keySet()) {
 			out.print(key);
 			out.print("=");
-			if (profile.get(key).textdomain != null) out.print("_");
+			Value v = profile.contents.get(key);
+			if (v == null || v.value == null || v.value.isEmpty()) {
+				out.println();
+				continue;
+			}
+			if (v.textdomain != null) out.print("_");
 			out.print("\"");
-			out.print(profile.get(key).value);
-			out.print("\"\n");
+			out.print(v.value);
+			out.println("\"");
 		}
 		out.close();
 	}
@@ -549,7 +573,7 @@ public abstract class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String config(String key) throws Exception {
-		return readProfile(new File("config"), null).get(key).value;
+		return readProfile(new File("config"), null).contents.get(key).value;
 	}
 
 	/**
