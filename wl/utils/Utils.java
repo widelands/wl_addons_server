@@ -45,13 +45,13 @@ public abstract class Utils {
 
 		@Override
 		public int compareTo(Object o) {
-			return (o instanceof ChecksummedFile) ? file.compareTo(((ChecksummedFile)o).file) : -1;
+			return (o instanceof ChecksummedFile && valid() && ((ChecksummedFile)o).valid()) ? file.compareTo(((ChecksummedFile)o).file) : -1;
 		}
 
 		@Override
 		public boolean equals(Object o) {
 			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) &&
-			    ((ChecksummedFile)o).cachedChecksum.equals(cachedChecksum);
+					((ChecksummedFile)o).cachedChecksum.equals(cachedChecksum) && valid() && ((ChecksummedFile)o).valid();
 		}
 	}
 
@@ -462,16 +462,100 @@ public abstract class Utils {
 	/** Wrapper around the contents of an ini-style file. */
 	public static class Profile {
 
-		/** The name of the global section (may be null). */
-		public String name;
+		/** The name of the global section in an add-ons main file. */
+		public static final String kGlobalSection = "[global]";
 
-		/** The actual contents of the file. */
-		public final TreeMap<String, Value> contents;
+		/** A section in a Profile. */
+		public static class Section {
+
+			/** The name of this section (may be "" for files without section divisions). */
+			public final String name;
+
+			/** The actual contents of the file. */
+			public final Map<String, Value> contents;
+
+			/**
+			 * Constructor.
+			 * @param n Name of the section.
+			 */
+			public Section(String n) {
+				name = n;
+				contents = new TreeMap<>();
+			}
+		}
+
+		private final Map<String, Section> sections;
 
 		/** Default constructor. */
 		public Profile() {
-			name = null;
-			contents = new TreeMap<>();
+			sections = new TreeMap<>();
+		}
+
+		/**
+		 * Add a new section to the profile.
+		 * @param s The section to add.
+		 */
+		public void add(Section s) {
+			sections.put(s.name, s);
+		}
+
+		/**
+		 * Dump this profile to a file.
+		 * @param out Stream to print to.
+		 */
+		public void write(PrintStream out) {
+			for (Section s : sections.values()) {
+				if (!s.name.isEmpty()) out.println("\n" + s.name);
+				for (String key : s.contents.keySet()) {
+					out.print(key);
+					out.print("=");
+					Value v = s.contents.get(key);
+					if (v == null || v.value == null || v.value.isEmpty()) {
+						out.println();
+						continue;
+					}
+					if (v.textdomain != null) out.print("_");
+					out.print("\"");
+					out.print(v.value);
+					out.println("\"");
+				}
+			}
+		}
+
+		/**
+		 * Look up a value in this profile.
+		 * @param section The name of the section in which to look
+		 *                (needs to be enclosed in square brackets).
+		 * @param key The key of the entry.
+		 * @return The value, or null if it is not present.
+		 */
+		public Value get(String section, String key) {
+			Section s = sections.get(section);
+			if (s == null) return null;
+			return s.contents.get(key);
+		}
+
+		/**
+		 * Look up a value in this profile's global section.
+		 * @param key The key of the entry.
+		 * @return The value, or null if it is not present.
+		 */
+		public Value get(String key) {
+			Value v = get("", key);
+			if (v != null) return v;
+			return get(kGlobalSection, key);
+		}
+
+		/**
+		 * Look up a section in this profile. Creates the section if it doesn't exist yet.
+		 * @param name The name of the section.
+		 * @return The section, or null if it is not present.
+		 */
+		public Section getSection(String name) {
+			if (sections.containsKey(name)) return sections.get(name);
+			Section s = new Section(name);
+			add(s);
+			return s;
 		}
 	}
 	private static final TreeMap<ChecksummedFile, Profile> _staticprofiles = new TreeMap<>();
@@ -500,18 +584,20 @@ public abstract class Utils {
 			return profile;
 		}
 
+		Profile.Section section = new Profile.Section("");
 		for (String line : Files.readAllLines(f.toPath())) {
 			line = line.trim();
 			if (line.isEmpty() || line.startsWith("#")) continue;
 			if (line.startsWith("[") && line.endsWith("]")) {
-				profile.name = line;
+				if (!section.contents.isEmpty()) profile.add(section);
+				section = new Profile.Section(line);
 				continue;
 			}
 			String[] str = line.split("=");
 			for (int i = 0; i < str.length; i++) str[i] = str[i].trim();
 
 			if (str.length < 2) {
-				if (str.length == 1) profile.contents.put(str[0], new Value(str[0], ""));
+				if (str.length == 1) section.contents.put(str[0], new Value(str[0], ""));
 				continue;
 			}
 
@@ -526,43 +612,27 @@ public abstract class Utils {
 				arg = arg.substring(1);
 				if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
 			}
-			profile.contents.put(
+			section.contents.put(
 			    str[0],
 			    new Value(str[0], arg, localize ? textdomain == null ? "" : textdomain : null));
 		}
+		profile.add(section);
 
 		_staticprofiles.put(key, profile);
 		return profile;
 	}
 
 	/**
-	 * Modify an ini-style file.
+	 * Overwrite an ini-style file.
 	 * @param f File to use.
-	 * @param textdomain Textdomain for translatable strings in the file
-	 *                   (may be \c null if the file is not meant to be translated).
-	 * @param changes The key-value pairs to modify.
+	 * @param profile New profile to write.
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	synchronized public static void
-	editProfile(File f, String textdomain, TreeMap<String, Value> changes) throws Exception {
-		Profile profile = readProfile(f, textdomain);
-		profile.contents.putAll(changes);
+	editProfile(File f, Profile profile) throws Exception {
 		f.getParentFile().mkdirs();
 		PrintStream out = new PrintStream(f);
-		if (profile.name != null) out.println(profile.name);
-		for (String key : profile.contents.keySet()) {
-			out.print(key);
-			out.print("=");
-			Value v = profile.contents.get(key);
-			if (v == null || v.value == null || v.value.isEmpty()) {
-				out.println();
-				continue;
-			}
-			if (v.textdomain != null) out.print("_");
-			out.print("\"");
-			out.print(v.value);
-			out.println("\"");
-		}
+		profile.write(out);
 		out.close();
 	}
 
@@ -573,7 +643,7 @@ public abstract class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String config(String key) throws Exception {
-		return readProfile(new File("config"), null).contents.get(key).value;
+		return readProfile(new File("config"), null).get(key).value;
 	}
 
 	/**
