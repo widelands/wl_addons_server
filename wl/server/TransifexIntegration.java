@@ -26,30 +26,55 @@ import java.util.*;
 import org.json.simple.parser.*;
 import wl.utils.*;
 
+/**
+ * Class to handle all integration with Transifex.
+ */
 public class TransifexIntegration {
+
+	/**
+	 * The singleton instance of this class.
+	 */
 	public static TransifexIntegration TX = new TransifexIntegration();
+
 	private TransifexIntegration() {}
 
+	/**
+	 * Perform a full translations sync.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public synchronized void fullSync() throws Exception {
 		pull();
 		buildCatalogues();
 		push();
 	}
 
+	/**
+	 * Pull translation files from Transifex. Does not perform any further processing.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public synchronized void pull() throws Exception {
-		ServerUtils.log("Pulling translations from Transifex...");
+		Utils.log("Pulling translations from Transifex...");
 		Utils.bashOutput("tx", "pull", "-f", "-a");
 	}
+
+	/**
+	 * Push the current POT files to Transifex.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public synchronized void push() throws Exception {
-		ServerUtils.log("Pushing POT files to Transifex...");
+		Utils.log("Pushing POT files to Transifex...");
 		Utils.bashOutput("tx", "push", "-s");
 	}
 
+	/**
+	 * Update the POT files, synchronize the current PO files with them, and recompile all MO files.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public synchronized void buildCatalogues() throws Exception {
-		ServerUtils.log("Rebuilding catalogues...");
+		Utils.log("Rebuilding catalogues...");
 		Buildcats.buildCatalogues();
 
-		ServerUtils.log("Updating PO and MO files...");
+		Utils.log("Updating PO and MO files...");
 		ServerUtils.doDelete(new File("i18n"));
 		for (File poDir : Utils.listSorted(new File("po"))) {
 			for (File poFile : Utils.listSorted(poDir)) {
@@ -73,29 +98,48 @@ public class TransifexIntegration {
 			}
 		}
 
-		ServerUtils.log("Gathering translation changes...");
-		List<String> changedMO = new ArrayList<>();
+		Utils.log("Gathering translation changes...");
 		Utils.bashOutput("git", "add", "i18n");
+		HashSet<String> increasedMO = new HashSet<>();
 		for (String changed :
 		     Utils.bashOutput("bash", "-c", "git status -s i18n/*.wad").split("\n")) {
 			if (changed.trim().isEmpty()) continue;
+
 			String[] split = changed.split(" ");  // "", "M", "i18n/fishy.wad/nds.mo"
 			changed = split[split.length - 1];    // "i18n/fishy.wad/nds.mo"
 			split = changed.split("/");           // "i18n", "fishy.wad", "nds.mo"
-			changedMO.add("+" + split[1]);        // "+fishy.wad"
+			changed = split[1];                   // "fishy.wad"
+
+			if (increasedMO.contains(changed)) continue;
+			increasedMO.add(changed);
+
+			ResultSet sql =
+			    Utils.sqlQuery(Utils.Databases.kAddOns,
+			                   "select id,i18n_version from addons where name='" + changed + "'");
+			if (!sql.next()) throw new Exception("Add-on '" + changed + "' is not in the database");
+			Utils.sqlCmd(Utils.Databases.kAddOns,
+			             "update addons set i18n_version=" + (sql.getLong("i18n_version") + 1) +
+			                 " where id=" + sql.getLong("id"));
 		}
-		UpdateList.main(changedMO.toArray(new String[0]));
-		Utils._staticprofiles.clear();
+		UpdateList.rebuildLists();
 		Utils.bashOutput("./skip_timestamp_only_po_changes.sh");
 	}
 
 	private static class Issue {
-		public final String issueID, message, string, stringID, occurrence, addon;
+		public final String issueID, message, priority, datetime_modified, string, stringID,
+		    occurrence, addon;
 
-		private Issue(
-		    String issueID, String message, String string, String stringID, String occurrence) {
+		public Issue(String issueID,
+		             String message,
+		             String priority,
+		             String datetime_modified,
+		             String string,
+		             String stringID,
+		             String occurrence) {
 			this.issueID = issueID;
 			this.message = message;
+			this.priority = priority;
+			this.datetime_modified = datetime_modified;
 			this.string = string;
 			this.stringID = stringID;
 			this.occurrence = occurrence;
@@ -104,24 +148,27 @@ public class TransifexIntegration {
 		}
 	}
 
+	/**
+	 * Retrieve the list of open issues from Transifex
+	 * and send e-mails to add-on authors about any new ones.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public synchronized void checkIssues() throws Exception {
-		ServerUtils.log("Checking Transifex issues...");
+		Utils.log("Checking Transifex issues...");
 		List<Issue> allIssues = fetchIssues();
 		List<Issue> newIssues = new ArrayList<>();
 
 		for (Issue i : allIssues) {
-			ResultSet sql =
-			    ServerUtils.sqlQuery(ServerUtils.Databases.kAddOns,
-			                         "select * from txissues where id='" + i.issueID + "'");
+			ResultSet sql = Utils.sqlQuery(
+			    Utils.Databases.kAddOns, "select * from txissues where id='" + i.issueID + "'");
 			if (!sql.next()) {
 				newIssues.add(i);
-				ServerUtils.sqlCmd(ServerUtils.Databases.kAddOns,
-				                   "insert into txissues (id) value ('" + i.issueID + "')");
+				Utils.sqlCmd(Utils.Databases.kAddOns,
+				             "insert into txissues (id) value ('" + i.issueID + "')");
 			}
 		}
 
-		ServerUtils.log("Found " + newIssues.size() + " new issue(s) (" + allIssues.size() +
-		                " total).");
+		Utils.log("Found " + newIssues.size() + " new issue(s) (" + allIssues.size() + " total).");
 		if (newIssues.isEmpty()) return;
 
 		Map<String, List<Issue>> perAddOn = new LinkedHashMap<>();
@@ -130,46 +177,39 @@ public class TransifexIntegration {
 			perAddOn.get(i.addon).add(i);
 		}
 
-		Map<String, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
+		Map<Long, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
-			for (String uploader :
-			     new String[] {Utils.readProfile(new File("metadata", addon + ".maintain"), addon)
-			                       .get("uploader")
-			                       .value}) {
+			ResultSet sql =
+			    Utils.sqlQuery(Utils.Databases.kAddOns,
+			                   "select user from uploaders where addon=" + Utils.getAddOnID(addon));
+			while (sql.next()) {
+				Long uploader = sql.getLong("user");
 				if (!perUploader.containsKey(uploader))
 					perUploader.put(uploader, new LinkedHashMap<>());
 				perUploader.get(uploader).put(addon, perAddOn.get(addon));
 			}
 		}
 
-		ResultSet sql = ServerUtils.sqlQuery(
-		    ServerUtils.Databases.kWebsite,
+		ResultSet sql = Utils.sqlQuery(
+		    Utils.Databases.kWebsite,
 		    "select id from notification_noticetype where label='addon_transifex_issues'");
 		final boolean noticeTypeKnown = sql.next();
 		if (!noticeTypeKnown)
-			ServerUtils.log("Notification type addon_transifex_issues was not defined yet");
+			Utils.log("Notification type 'addon_transifex_issues' was not defined yet");
 		final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
 
-		for (String uploader : perUploader.keySet()) {
-			sql = ServerUtils.sqlQuery(
-			    ServerUtils.Databases.kWebsite,
-			    "select id,email from auth_user where username='" + uploader + "'");
+		for (Long uploader : perUploader.keySet()) {
+			sql = Utils.sqlQuery(Utils.Databases.kWebsite,
+			                     "select email,username from auth_user where id=" + uploader);
 			if (!sql.next()) {
-				ServerUtils.log("User '" + uploader +
-				                "' does not seem to be a registered user. No e-mail will be sent.");
+				Utils.log("User #" + uploader +
+				          " does not seem to be a registered user. No e-mail will be sent.");
 				continue;
 			}
-			String email = sql.getString("email");
-
-			if (noticeTypeKnown) {
-				sql = ServerUtils.sqlQuery(
-				    ServerUtils.Databases.kWebsite,
-				    "select send from notification_noticesetting where user_id=" +
-				        sql.getLong("id") + " and medium=1 and notice_type_id=" + noticeTypeID);
-				if (sql.next() && sql.getShort("send") < 1) {
-					ServerUtils.log("User '" + uploader + "' disabled notifications.");
-					continue;
-				}
+			final String username = sql.getString("username");
+			if (noticeTypeKnown && Utils.checkUserDisabledNotifications(uploader, noticeTypeID)) {
+				Utils.log("User '" + username + "' disabled Transifex issue notifications.");
+				continue;
 			}
 
 			Map<String, List<Issue>> relevantIssues = perUploader.get(uploader);
@@ -182,7 +222,7 @@ public class TransifexIntegration {
 			write.println("Subject: Transifex String Issues");
 			write.println();
 
-			write.print("Dear " + uploader + ",\nthe translators have found " + total +
+			write.print("Dear " + username + ",\nthe translators have found " + total +
 			            " new issue(s) in " + relevantIssues.size() +
 			            " of your add-on(s). Below you may find a list of all new string issues.");
 			for (String addon : relevantIssues.keySet()) {
@@ -194,8 +234,9 @@ public class TransifexIntegration {
 					write.print(
 					    "\n --------------------------------------------------------------------------------"
 					    + "\n  Issue ID      : " + i.issueID + "\n  Source String : " + i.string +
-					    "\n  String ID     : " + i.stringID +
-					    "\n  Occurrences   : " + i.occurrence + "\n  Issue message : " + i.message);
+					    "\n  String ID     : " + i.stringID + "\n  Occurrences   : " +
+					    i.occurrence + "\n  Last modified : " + i.datetime_modified +
+					    "\n  Priority      : " + i.priority + "\n  Issue message : " + i.message);
 				}
 				write.print(
 				    "\n################################################################################");
@@ -206,7 +247,7 @@ public class TransifexIntegration {
 			    +
 			    "To change how you receive notifications, please go to https://www.widelands.org/notification/.");
 			write.close();
-			Utils.bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
+			ServerUtils.sendEMail(sql.getString("email"), message);
 			message.delete();
 		}
 	}
@@ -249,6 +290,8 @@ public class TransifexIntegration {
 
 			result.add(new Issue(
 			    i.get("id").toString(), i.map("attributes").get("message").toString(),
+			    i.map("data").map("attributes").get("priority").toString(),
+			    i.map("data").map("attributes").get("datetime_modified").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("key").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("appearance_order").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("occurrences").toString()));

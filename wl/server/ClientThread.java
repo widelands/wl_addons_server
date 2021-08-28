@@ -25,26 +25,43 @@ import java.sql.ResultSet;
 import java.util.*;
 import wl.utils.*;
 
+/**
+ * A thread that handles all the server's interaction with one specific client.
+ */
 class ClientThread implements Runnable {
 	private Socket socket;
 
+	/** The oldest protocol version the server supports. Never, ever change this. */
+	public static final int kOldestSupportedProtocolVersion = 4;
+
+	/** The newest protocol version the server supports. May be increased but never decreased. */
+	public static final int kNewestSupportedProtocolVersion = 5;
+
+	/**
+	 * Constructor.
+	 * @param s The socket via which we're connected to the client.
+	 */
 	public ClientThread(Socket s) { socket = s; }
 
+	/**
+	 * Main method of a client thread.
+	 */
 	@Override
 	public void run() {
-		ServerUtils.SYNCER.tick(socket);
+		ThreadActivityAndGitHubSyncManager.SYNCER.tick(socket);
 		PrintStream out = null;
 		long userDatabaseID = -1;
 		boolean didLogInSuccessfully = false, hideFromStats = false;
+		final long timeOfConnection = System.currentTimeMillis();
 		try {
-			ServerUtils.log("Connection received from " + socket.getInetAddress() + " : " +
-			                socket.getPort() + " on " + socket.getLocalSocketAddress() + " (" +
-			                socket.getLocalAddress() + " : " + socket.getLocalPort() + ").");
+			Utils.log("Connection received from " + socket.getInetAddress() + " : " +
+			          socket.getPort() + " on " + socket.getLocalSocketAddress() + " (" +
+			          socket.getLocalAddress() + " : " + socket.getLocalPort() + ").");
 			out = new PrintStream(socket.getOutputStream(), true);
 			InputStream in = socket.getInputStream();
 
 			final String protocolVersionString = ServerUtils.readLine(in);
-			ServerUtils.log("Version: " + protocolVersionString);
+			Utils.log("Version: " + protocolVersionString);
 
 			if (protocolVersionString.equals("munin")) {
 				hideFromStats = true;
@@ -53,32 +70,33 @@ class ClientThread implements Runnable {
 			}
 
 			final int protocolVersion = Integer.valueOf(protocolVersionString);
-			if (protocolVersion != 4) {
-				throw new ServerUtils.WLProtocolException("Unsupported version '" +
-				                                          protocolVersion +
-				                                          "' (only supported version is '4')");
+			if (protocolVersion < kOldestSupportedProtocolVersion ||
+			    protocolVersion > kNewestSupportedProtocolVersion) {
+				throw new ServerUtils.WLProtocolException(
+				    "Unsupported version '" + protocolVersion + "' (supported versions are " +
+				    kOldestSupportedProtocolVersion + "-" + kNewestSupportedProtocolVersion + ")");
 			}
 			final String locale = ServerUtils.readLine(in);
-			ServerUtils.log("Locale: " + locale);
+			Utils.log("Locale: " + locale);
 			final String username = ServerUtils.readLine(in);
-			ServerUtils.log("Username: " + username);
+			Utils.log("Username: " + username);
+			final String widelandsVersion = (protocolVersion < 5) ? null : ServerUtils.readLine(in);
+			if (widelandsVersion != null) Utils.log("Widelands: " + widelandsVersion);
 			ServerUtils.checkEndOfStream(in);
 			boolean admin = false;
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
-				ResultSet sql = ServerUtils.sqlQuery(
-				    ServerUtils.Databases.kWebsite,
-				    "select id from auth_user where username='" + username + "'");
-				if (!sql.next())
+				Long uid = Utils.getUserID(username);
+				if (uid == null)
 					throw new ServerUtils.WLProtocolException("User " + username +
 					                                          " is not registered");
-				userDatabaseID = sql.getLong​("id");
+				userDatabaseID = uid;
 
-				sql = ServerUtils.sqlQuery(
-				    ServerUtils.Databases.kWebsite,
-				    "select permissions,password from wlggz_ggzauth where user_id=" +
-				        userDatabaseID);
+				ResultSet sql =
+				    Utils.sqlQuery(Utils.Databases.kWebsite,
+				                   "select permissions,password from wlggz_ggzauth where user_id=" +
+				                       userDatabaseID);
 				if (!sql.next())
 					throw new ServerUtils.WLProtocolException(
 					    "User " + username + " did not set an online gaming password");
@@ -97,27 +115,26 @@ class ClientThread implements Runnable {
 
 			didLogInSuccessfully = true;
 			MuninStatistics.MUNIN.registerLogin(userDatabaseID);
+			HandleCommand handler = new HandleCommand(out, in, protocolVersion, widelandsVersion,
+			                                          username, userDatabaseID, admin, locale);
 			String cmd;
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
-				ServerUtils.SYNCER.tick(socket);
-				ServerUtils.log("Received command: " + cmd);
-				Server.handle(cmd.split(" "), out, in, protocolVersion, username, userDatabaseID,
-				              admin, locale);
+				ThreadActivityAndGitHubSyncManager.SYNCER.tick(socket);
+				Utils.log("Received command: " + cmd);
+				handler.handle(cmd.split(" "));
 			}
 		} catch (Exception e) {
-			ServerUtils.log("ERROR: " + e);
+			Utils.log("ERROR: " + e);
 			if (out != null) out.println(e);
 		} finally {
-			ServerUtils.log("Connection quit.");
+			Utils.log("Connection quit.");
 			if (!hideFromStats) {
-				if (didLogInSuccessfully) {
-					MuninStatistics.MUNIN.registerLogout(userDatabaseID);
-				} else {
-					MuninStatistics.MUNIN.registerFailedLogin();
-				}
+				if (!didLogInSuccessfully) MuninStatistics.MUNIN.registerFailedLogin();
+				MuninStatistics.MUNIN.registerClientLifetime(System.currentTimeMillis() -
+				                                             timeOfConnection);
 			}
 			if (out != null) out.close();
-			ServerUtils.SYNCER.threadClosed();
+			ThreadActivityAndGitHubSyncManager.SYNCER.threadClosed();
 		}
 	}
 }

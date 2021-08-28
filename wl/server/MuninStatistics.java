@@ -23,15 +23,28 @@ import java.io.*;
 import java.util.*;
 import wl.utils.*;
 
+/**
+ * Class to track statistics about the server.
+ */
 public class MuninStatistics {
+
+	/**
+	 * The singleton instance of this class.
+	 */
 	public static final MuninStatistics MUNIN = new MuninStatistics();
 
+	/**
+	 * Handles all communication with a Munin client.
+	 * @param out Stream to send data to the client.
+	 * @param in Stream to receive further data from the client.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public static void handleMunin(InputStream in, PrintStream out) throws Exception {
 		final int version = Integer.valueOf(ServerUtils.readLine(in));
-		if (version != 1)
+		if (version != 2)
 			throw new ServerUtils.WLProtocolException("Unsupported munin version '" + version +
-			                                          "' (only supported version is '1')");
-		ServerUtils.log("Munin version: " + version);
+			                                          "' (only supported version is '2')");
+		Utils.log("Munin version: " + version);
 		ServerUtils.checkEndOfStream(in);
 
 		ServerUtils.passwordAuthentification(in, out, Utils.config("muninpassword"));
@@ -41,9 +54,9 @@ public class MuninStatistics {
 
 	private final long[] commandCounters;
 	private final long initTime;
-	private long currentUnregisteredUsers, failedLogins, successfulLogins, skippedCommands,
+	private long registeredUsers, unregisteredUsers, failedLogins, skippedCommands,
 	    successfulCommands;
-	private final List<Long> currentRegisteredUsers;
+	private final List<Long> clientLifetimes;
 	private final Set<Long> allRegisteredUsers;
 	private final Map<Thread, Long> cmdInfoToSkip;
 
@@ -52,43 +65,51 @@ public class MuninStatistics {
 		commandCounters = new long[Command.values().length];
 		for (int i = 0; i < commandCounters.length; i++) commandCounters[i] = 0;
 
-		currentUnregisteredUsers = 0;
+		registeredUsers = 0;
+		unregisteredUsers = 0;
 		failedLogins = 0;
-		successfulLogins = 0;
 		skippedCommands = 0;
 		successfulCommands = 0;
-		currentRegisteredUsers = new ArrayList<>();
+		clientLifetimes = new ArrayList<>();
 		allRegisteredUsers = new HashSet<>();
 		cmdInfoToSkip = new HashMap<>();
 	}
 
+	/**
+	 * Print all current statistics.
+	 * @param version Munin protocol version.
+	 * @param out The stream to print data to.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
-		switch (version) {
-			case 1: {
-				out.println(System.currentTimeMillis() - initTime);
-				out.println(currentRegisteredUsers.size());
-				out.println(currentUnregisteredUsers);
-				out.println(allRegisteredUsers.size());
-				out.println(successfulLogins);
-				out.println(failedLogins);
+		out.println((System.currentTimeMillis() - initTime) / (1000.0 * 60 * 24));
+		out.println(clientLifetimes.stream().mapToDouble​(a -> a).average().orElse​(0) / 1000);
 
-				long totalCmd = skippedCommands;
-				for (long cmd : commandCounters) {
-					totalCmd += cmd;
-					out.println(cmd);
-				}
-				out.println(totalCmd - successfulCommands);
+		out.println(registeredUsers);
+		out.println(unregisteredUsers);
+		out.println(allRegisteredUsers.size());
+		out.println(failedLogins);
 
-				break;
-			}
-			default:
-				throw new ServerUtils.WLProtocolException("Wrong version " + version);
+		long totalCmd = skippedCommands;
+		for (long cmd : commandCounters) {
+			totalCmd += cmd;
+			out.println(cmd);
 		}
+		out.println(totalCmd - successfulCommands);
 	}
 
+	/**
+	 * Inform Munin not to record the next #N #CMD_INFO commands in the statistics.
+	 * @param n Number of commands to skip.
+	 */
 	public synchronized void skipNextCmdInfo(long n) {
 		if (n > 0) cmdInfoToSkip.put(Thread.currentThread(), n);
 	}
+
+	/**
+	 * Inform Munin to record a command.
+	 * @param cmd Command to record.
+	 */
 	public synchronized void countCommand(Command cmd) {
 		final Thread t = Thread.currentThread();
 		if (cmdInfoToSkip.containsKey(t)) {
@@ -106,22 +127,33 @@ public class MuninStatistics {
 		}
 		commandCounters[cmd.ordinal()]++;
 	}
+
+	/**
+	 * Inform Munin how long a client has been connected in total.
+	 * @param ms Client's lifetime in milliseconds.
+	 */
+	public synchronized void registerClientLifetime(long ms) { clientLifetimes.add(ms); }
+
+	/**
+	 * Inform Munin to record that a command terminated successfully.
+	 */
 	public synchronized void registerSuccessfulCommand() { successfulCommands++; }
+
+	/**
+	 * Inform Munin to record a new login.
+	 * @param user ID of the user (\c -1 for unregistered users).
+	 */
 	public synchronized void registerLogin(long user) {
-		successfulLogins++;
 		if (user < 0) {
-			currentUnregisteredUsers++;
+			unregisteredUsers++;
 		} else {
-			currentRegisteredUsers.add(user);
+			registeredUsers++;
 			allRegisteredUsers.add(user);
 		}
 	}
-	public synchronized void registerLogout(Long user) {
-		if (user < 0) {
-			currentUnregisteredUsers--;
-		} else {
-			currentRegisteredUsers.remove((Object)user);
-		}
-	}
+
+	/**
+	 * Inform Munin that a user has unsuccessfully attempted to connect.
+	 */
 	public synchronized void registerFailedLogin() { failedLogins++; }
 }

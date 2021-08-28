@@ -24,10 +24,27 @@ import java.net.*;
 import java.util.*;
 import wl.utils.*;
 
+/**
+ * Class to manage frequent automated GitHub syncs
+ * as well as force-terminating stalled client threads.
+ */
 class ThreadActivityAndGitHubSyncManager {
+
+	/**
+	 * The singleton instance of this class.
+	 */
+	public static final ThreadActivityAndGitHubSyncManager SYNCER =
+	    new ThreadActivityAndGitHubSyncManager();
+
+	private ThreadActivityAndGitHubSyncManager() {}
+
+	/**
+	 * Perform a full GitHub sync.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public synchronized void sync() throws Exception {
 		if (!Boolean.parseBoolean(Utils.config("deploy"))) {
-			ServerUtils.log("Test environment sync skipped");
+			Utils.log("Test environment sync skipped");
 			return;
 		}
 
@@ -40,22 +57,10 @@ class ThreadActivityAndGitHubSyncManager {
 			Utils.bash("bash", "-c", "git status");
 			Process p = Runtime.getRuntime().exec(new String[] {"bash", "-c", "git status -s"});
 			BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
-			String str;
-			while ((str = b.readLine()) != null) {
-				String file = str.substring(3);
-				ServerUtils.log("Detected merge conflict in file: " + file);
-				if (file.startsWith("list")) {
-					ServerUtils.log("    Skipping (will be newly generated later).");
-				} else if (file.startsWith("metadata/")) {
-					ServerUtils.log(
-					    "    Attempting to resolve the merge conflicts automatically...");
-					Utils.resolveMergeConflicts(new File(file));
-				} else {
-					throw new Exception("Unable to resolve merge conflict in " + file);
-				}
-			}
+			String str = b.readLine();
+			if (str != null) throw new Exception("Detected merge conflicts: " + str);
 		}
-		UpdateList.main();
+		UpdateList.rebuildLists();
 		Utils.bash("bash", "-c", "git add .");
 		Utils.bash("bash", "-c", "git commit -m 'Automated server sync'");
 		Utils.bash("bash", "-c",
@@ -65,21 +70,36 @@ class ThreadActivityAndGitHubSyncManager {
 		Utils.bash("bash", "-c", "git stash clear");
 	}
 
-	public static class Data {
-		long lastActivityTime;
-		Socket socket;
-		Data(Socket s) {
+	private static class Data {
+		public long lastActivityTime;
+		public Socket socket;
+		public Data(Socket s) {
 			socket = s;
 			lastActivityTime = System.currentTimeMillis();
 		}
 	}
+
 	private final HashMap<Thread, Data> _allActiveClientThreads = new HashMap<>();
+
+	/**
+	 * Register that the current client thread is still active.
+	 * @param s The client thread's socket.
+	 */
 	public synchronized void tick(Socket s) {
 		_allActiveClientThreads.put(Thread.currentThread(), new Data(s));
 	}
+
+	/**
+	 * Register that the current client thread has terminated.
+	 */
 	public synchronized void threadClosed() {
 		_allActiveClientThreads.remove(Thread.currentThread());
 	}
+
+	/**
+	 * Force-close all threads that have been inactive for a long time.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public synchronized void check() throws Exception {
 		final long time = System.currentTimeMillis();
 		HashMap<Thread, Long> kill = new HashMap<>();
@@ -90,8 +110,8 @@ class ThreadActivityAndGitHubSyncManager {
 			}
 		}
 		for (Thread t : kill.keySet()) {
-			ServerUtils.log("Force-closing socket for [" + t.getName() + "] (last activity was " +
-			                Utils.durationString(kill.get(t)) + " ago).");
+			Utils.log("Force-closing socket for [" + t.getName() + "] (last activity was " +
+			          Utils.durationString(kill.get(t)) + " ago).");
 			Socket s = _allActiveClientThreads.remove(t).socket;
 			s.close();
 		}

@@ -24,7 +24,15 @@ import java.net.*;
 import java.util.*;
 import wl.utils.*;
 
+/**
+ * A thread that handles frequent maintenance tasks.
+ */
 class SyncThread implements Runnable {
+
+	/**
+	 * Main loop of the sync thread.
+	 * This runs forever until the server is terminated.
+	 */
 	@Override
 	public void run() {
 		// We run a full sync every 24 hours, but in order to prevent SQL connection
@@ -41,17 +49,16 @@ class SyncThread implements Runnable {
 				long now = System.currentTimeMillis();
 				long then = nextSync.getTimeInMillis();
 				while (then < now + 60000) then += 1000 * 60 * 60 * 24;
-				ServerUtils.log("Next " + (phase == 0 ? "full" : "SQL-only") +
-				                " sync scheduled for " + new Date(then) + " (" +
-				                Utils.durationString(then - now) + " remaining).");
+				Utils.log("Next " + (phase == 0 ? "full" : "SQL-only") + " sync scheduled for " +
+				          new Date(then) + " (" + Utils.durationString(then - now) +
+				          " remaining).");
 
 				Thread.sleep(then - now);
 
-				ServerUtils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
-				for (ServerUtils.Databases db : ServerUtils.Databases.values())
-					ServerUtils.sqlCmd(db, "show tables");
+				Utils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
+				for (Utils.Databases db : Utils.Databases.values()) Utils.sqlCmd(db, "show tables");
 
-				ServerUtils.log("Backing up the database...");
+				Utils.log("Backing up the database...");
 				Runtime.getRuntime().exec(new String[] {
 				    "bash", "-c",
 				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
@@ -66,23 +73,21 @@ class SyncThread implements Runnable {
 						TransifexIntegration.TX.fullSync();
 					}
 
-					synchronized (ServerUtils.SYNCER) {
-						ServerUtils.log("Cleaning up inactive threads...");
-						ServerUtils.SYNCER.check();
-						ServerUtils.rebuildMetadata();
+					synchronized (ThreadActivityAndGitHubSyncManager.SYNCER) {
+						Utils.log("Cleaning up inactive threads...");
+						ThreadActivityAndGitHubSyncManager.SYNCER.check();
 
 						if (errored)
 							throw new Exception(
 							    "You still have not resolved the merge conflicts. Please do so soon!");
 
-						ServerUtils.log("Performing GitHub sync...");
-						Utils._staticprofiles.clear();
-						ServerUtils.SYNCER.sync();
+						Utils.log("Performing GitHub sync...");
+						ThreadActivityAndGitHubSyncManager.SYNCER.sync();
 					}
 				}
 			} catch (Exception e) {
 				errored = true;
-				ServerUtils.log("GitHub sync ERROR: " + e);
+				Utils.log("GitHub sync ERROR: " + e);
 				try {
 					String str;
 					String msg = "@Noordfrees\n\n"

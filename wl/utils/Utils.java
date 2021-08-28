@@ -21,11 +21,224 @@ package wl.utils;
 
 import java.io.*;
 import java.nio.file.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.util.*;
 
+/**
+ * Miscellaneous utility functions.
+ */
 public abstract class Utils {
-	public static final TreeMap<File, TreeMap<String, Value>> _staticprofiles = new TreeMap<>();
+	private static class ChecksummedFile implements Comparable {
+		public final File file;
+		public final String cachedChecksum;
 
+		public ChecksummedFile(File f) {
+			file = f;
+			cachedChecksum = cs();
+		}
+
+		private String cs() { return file.isFile() ? checksum(file) : ""; }
+
+		public boolean valid() { return cs().equals(cachedChecksum); }
+
+		@Override
+		public int compareTo(Object o) {
+			return (o instanceof ChecksummedFile) ? file.compareTo(((ChecksummedFile)o).file) : -1;
+		}
+
+		@Override
+		public boolean equals(Object o) {
+			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) &&
+			    ((ChecksummedFile)o).cachedChecksum.equals(cachedChecksum);
+		}
+	}
+
+	/**
+	 * Print log output to standard output.
+	 * Output is formatted with a timestamp and the thread name.
+	 * @param msg Text to print.
+	 */
+	public static void log(String msg) {
+		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
+		                   msg);
+	}
+
+	/**
+	 * Which database to use for an SQL command.
+	 */
+	public static enum Databases {
+		/**
+		 * The read-only website database, which contains details abour registered users.
+		 */
+		kWebsite("websitedatabase"),
+		/**
+		 * The add-ons database, which contains moddable metadata about all add-ons.
+		 */
+		kAddOns("addonsdatabase");
+
+		/** The key in the config file that is mapped to this database's name. */
+		public final String configKey;
+
+		private Databases(String k) { configKey = k; }
+	}
+	private static final Connection[] _databases = new Connection[Databases.values().length];
+
+	/**
+	 * Initialize the databases. Call this only on startup.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static void initDatabases() throws Exception {
+		log("Initializing SQL...");
+
+		Properties connectionProps = new Properties();
+		connectionProps.put("user", Utils.config("databaseuser"));
+		connectionProps.put("password", Utils.config("databasepassword"));
+
+		for (Databases db : Databases.values()) {
+			_databases[db.ordinal()] = DriverManager.getConnection​(
+			    "jdbc:mysql://" + Utils.config("databasehost") + ":" +
+			        Utils.config("databaseport") + "/" + Utils.config(db.configKey),
+			    connectionProps);
+		}
+	}
+
+	/**
+	 * Execute an SQL query statement, typically a SELECT operation.
+	 * @param db Database to use.
+	 * @param query Statement to execute.
+	 * @return The result of the query.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static ResultSet sqlQuery(Databases db, String query) throws Exception {
+		Connection c = _databases[db.ordinal()];
+		synchronized (c) { return c.createStatement().executeQuery(query); }
+	}
+
+	/**
+	 * Execute an SQL statement without returning anything.
+	 * @param db Database to use.
+	 * @param cmd Statement to execute.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static void sqlCmd(Databases db, String cmd) throws Exception {
+		Connection c = _databases[db.ordinal()];
+		synchronized (c) { c.createStatement().execute(cmd); }
+	}
+
+	/**
+	 * Retrieve the name of a user from the database.
+	 * @param id The user's ID.
+	 * @return The user's name.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static String getUsername(long id) throws Exception {
+		ResultSet r = sqlQuery(Databases.kWebsite, "select username from auth_user where id=" + id);
+		if (!r.next()) return null;
+		return r.getString("username");
+	}
+
+	/**
+	 * Retrieve the ID of a user from the database.
+	 * @param name The user's name.
+	 * @return The user's ID.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static Long getUserID(String name) throws Exception {
+		ResultSet r =
+		    sqlQuery(Databases.kWebsite, "select id from auth_user where username='" + name + "'");
+		if (!r.next()) return null;
+		return r.getLong("id");
+	}
+
+	/**
+	 * Check if a user disabled e-mail notifications in their website settings.
+	 * @param user The user's ID.
+	 * @param notice The notice type ID.
+	 * @return The user disabled this type of notification.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static boolean checkUserDisabledNotifications(long user, long notice) throws Exception {
+		ResultSet sql = sqlQuery(
+		    Databases.kWebsite, "select send from notification_noticesetting where user_id=" +
+		                            user + " and medium=1 and notice_type_id=" + notice);
+		return sql.next() && sql.getShort("send") < 1;
+	}
+
+	/**
+	 * Retrieve the ID of an add-on from the database.
+	 * @param name The add-on's name.
+	 * @return The add-on's ID.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static Long getAddOnID(String name) throws Exception {
+		ResultSet r =
+		    sqlQuery(Databases.kAddOns, "select id from addons where name='" + name + "'");
+		if (!r.next()) return null;
+		return r.getLong("id");
+	}
+
+	/**
+	 * Check whether a given user is one of the uploaders for a given add-on.
+	 * If the add-on does not exist, the user is assumed to have permission to create it.
+	 * @param addon The add-on's name.
+	 * @param userID The user's ID.
+	 * @return The user has write access to the add-on.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static boolean isUploader(String addon, long userID) throws Exception {
+		ResultSet sql = sqlQuery(
+		    Databases.kAddOns, "select user from uploaders where addon=" + getAddOnID(addon));
+		boolean noUploaders = true;
+		while (sql.next()) {
+			if (sql.getLong("user") == userID) {
+				return true;
+			}
+			noUploaders = false;
+		}
+		return noUploaders;
+	}
+
+	/**
+	 * Retrieve the voting statistics of an add-on from the database.
+	 * @param addon The add-on's ID.
+	 * @return An array of size \c 10 with the number of \c i votes in index ``(i-1)``.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static long[] getVotes(long addon) throws Exception {
+		ResultSet sql =
+		    sqlQuery(Databases.kAddOns, "select vote from uservotes where addon=" + addon);
+		long[] votes = new long[10];
+		for (int i = 0; i < votes.length; i++) votes[i] = 0;
+		while (sql.next()) votes[sql.getInt("vote") - 1]++;
+		return votes;
+	}
+
+	/**
+	 * Retrieve the list of uploaders of an add-on from the database.
+	 * @param addon The add-on's ID.
+	 * @param onlyFirst List at most one uploader in the result.
+	 * @return Comma-separated of the uploaders.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
+	public static String getUploadersString(long addon, boolean onlyFirst) throws Exception {
+		ResultSet sql = Utils.sqlQuery(
+		    Utils.Databases.kAddOns, "select user from uploaders where addon=" + addon);
+		String uploaders = "";
+		while (sql.next()) {
+			if (!uploaders.isEmpty()) uploaders += ",";
+			uploaders += getUsername(sql.getLong("user"));
+			if (onlyFirst) break;
+		}
+		return uploaders;
+	}
+
+	/**
+	 * List all files in a directory, sorted alphabetically.
+	 * @param dir Directory to list.
+	 * @return Sorted array (never \c null).
+	 */
 	public static File[] listSorted(File dir) {
 		File[] files = dir.listFiles();
 		if (files == null) return new File[0];
@@ -33,6 +246,30 @@ public abstract class Utils {
 		return files;
 	}
 
+	/**
+	 * Compute the md5 checksum of a regular file.
+	 * @param f File to checksum.
+	 * @return The checksum as string, or \c "" in case of an error.
+	 */
+	public static String checksum(File f) {
+		try {
+			Runtime rt = Runtime.getRuntime();
+			Process pr = rt.exec(new String[] {"md5sum", f.getPath()});
+			BufferedReader reader = new BufferedReader(new InputStreamReader(pr.getInputStream()));
+			pr.waitFor();
+			String md5 = reader.readLine();
+			return md5.split(" ")[0];
+		} catch (Exception e) {
+			log("ERROR checksumming '" + (f == null ? "(null)" : f.getPath()) + "': " + e);
+		}
+		return "";
+	}
+
+	/**
+	 * Create a temporary directory.
+	 * The caller needs to ensure the directory is deleted later.
+	 * @return Path to an existing temporary directory.
+	 */
 	synchronized public static File createTempDir() {
 		File d;
 		do {
@@ -42,10 +279,16 @@ public abstract class Utils {
 		return d;
 	}
 
+	/**
+	 * Run a shell script, and echo the whole script and its output to standard output.
+	 * @param args The command and its arguments.
+	 * @return The exit status of the command.
+	 * @throws Exception If the shell can't be accessed.
+	 */
 	public static int bash(String... args) throws Exception {
-		System.out.print("    $");
-		for (String a : args) System.out.print(" " + a);
-		System.out.println();
+		String logString = "    $";
+		for (String a : args) logString += " " + a;
+		log(logString);
 
 		ProcessBuilder pb = new ProcessBuilder(args);
 		pb.redirectErrorStream​(true);
@@ -53,14 +296,21 @@ public abstract class Utils {
 
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
 		String str;
-		while ((str = b.readLine()) != null) System.out.println("    # " + str);
+		while ((str = b.readLine()) != null) log("    # " + str);
 
 		p.waitFor();
 		int e = p.exitValue();
-		System.out.println("    = " + e);
+		log("    = " + e);
 		return e;
 	}
 
+	/**
+	 * Run a shell script and return its standard output.
+	 * The standard error and exit value are discarded.
+	 * @param args The command and its arguments.
+	 * @return The output.
+	 * @throws Exception If the shell can't be accessed.
+	 */
 	public static String bashOutput(String... args) throws Exception {
 		Process p = new ProcessBuilder(args).start();
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -76,6 +326,11 @@ public abstract class Utils {
 		return (result == null ? "" : result);
 	}
 
+	/**
+	 * Format a time string.
+	 * @param millis Number of milliseconds.
+	 * @return Formatted time string.
+	 */
 	public static String durationString(long millis) {
 		long hours = millis / (1000 * 60 * 60);
 		millis -= hours * 1000 * 60 * 60;
@@ -92,8 +347,78 @@ public abstract class Utils {
 		return hours + "h " + str;
 	}
 
+	/**
+	 * Class to represent a user's comment on an add-on.
+	 */
+	public static class AddOnComment {
+
+		/** This comment's unique ID. */
+		public final long commentID;
+
+		/** The ID of the user who created this comment. */
+		public final long userID;
+
+		/** The timestamp when this comment was created. */
+		public final long timestamp;
+
+		/** The ID of the user who last edited this comment (may be \c null). */
+		public final Long editorID;
+
+		/** The timestamp when this comment was last edited (may be \c null). */
+		public final Long editTimestamp;
+
+		/** Version of the add-on about which the comment was written. */
+		public final String version;
+
+		/** Text of the comment. */
+		public final String message;
+
+		/**
+		 * Constructor.
+		 * @param commentID This comment's unique ID.
+		 * @param userID ID of the comment author.
+		 * @param timestamp Timestamp when the comment was created.
+		 * @param editorID ID of the last person who edited the comment (may be \c null).
+		 * @param editTimestamp Timestamp when the comment was last edited (may be \c null).
+		 * @param version Version of the add-on about which the comment was written.
+		 * @param message Text of the comment.
+		 */
+		public AddOnComment(long commentID,
+		                    long userID,
+		                    long timestamp,
+		                    Long editorID,
+		                    Long editTimestamp,
+		                    String version,
+		                    String message) {
+			this.commentID = commentID;
+			this.userID = userID;
+			this.timestamp = timestamp;
+			this.editorID = editorID;
+			this.editTimestamp = editTimestamp;
+			this.version = version;
+			this.message = message;
+		}
+	}
+
+	/**
+	 * Class to represent a key-value pair of an ini-style file.
+	 */
 	public static class Value {
-		public final String key, value, textdomain;
+
+		/** The key to which this value is mapped. */
+		public final String key;
+
+		/** The raw, untranslated value. */
+		public final String value;
+
+		/** The textdomain to use for translating (\c null for non-translatable strings). */
+		public final String textdomain;
+
+		/**
+		 * Return the localized value. If this %Value is not localizable, returns the raw value.
+		 * @param locale Locale to use.
+		 * @return Localized value.
+		 */
 		public String value(String locale) {
 			if (textdomain == null || textdomain.isEmpty()) return value;
 			try {
@@ -108,13 +433,25 @@ public abstract class Utils {
 				                   .getInputStream()))
 				    .readLine();
 			} catch (Exception e) {
-				System.out.println("[" + Thread.currentThread().getName() +
-				                   "] WARNING: gettext error for '" + key + "'='" + value +
-				                   "' @ '" + textdomain + "' / '" + locale + "': " + e);
+				log("WARNING: gettext error for '" + key + "'='" + value + "' @ '" + textdomain +
+				    "' / '" + locale + "': " + e);
 				return value;
 			}
 		}
+
+		/**
+		 * Constructor for a non-translatable value.
+		 * @param k ini file key.
+		 * @param v Raw value.
+		 */
 		public Value(String k, String v) { this(k, v, null); }
+
+		/**
+		 * Constructor for a translatable value.
+		 * @param k ini file key.
+		 * @param v Raw value.
+		 * @param t Textdomain for translation.
+		 */
 		public Value(String k, String v, String t) {
 			key = k;
 			value = v;
@@ -122,13 +459,31 @@ public abstract class Utils {
 		}
 	}
 
+	private static final TreeMap<ChecksummedFile, TreeMap<String, Value>> _staticprofiles =
+	    new TreeMap<>();
+
+	/**
+	 * Parse an ini-style file and return its contents as a map of key-value pairs.
+	 * @param f File to parse.
+	 * @param textdomain Textdomain for translatable strings in the file
+	 *                   (may be \c null if the file is not meant to be translated).
+	 * @return The key-value pairs.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	synchronized public static TreeMap<String, Value> readProfile(File f, String textdomain)
 	    throws Exception {
-		if (_staticprofiles.containsKey(f)) return _staticprofiles.get(f);
+		ChecksummedFile key = new ChecksummedFile(f);
+		if (_staticprofiles.containsKey(key)) return _staticprofiles.get(key);
+		for (ChecksummedFile cf : _staticprofiles.keySet()) {
+			if (cf.file.equals(f)) {
+				_staticprofiles.remove(cf);
+				break;
+			}
+		}
 
 		TreeMap<String, Value> profile = new TreeMap<>();
 		if (!f.isFile()) {
-			_staticprofiles.put(f, profile);
+			_staticprofiles.put(key, profile);
 			return profile;
 		}
 
@@ -158,10 +513,18 @@ public abstract class Utils {
 			                              localize ? textdomain == null ? "" : textdomain : null));
 		}
 
-		_staticprofiles.put(f, profile);
+		_staticprofiles.put(key, profile);
 		return profile;
 	}
 
+	/**
+	 * Modify an ini-style file.
+	 * @param f File to use.
+	 * @param textdomain Textdomain for translatable strings in the file
+	 *                   (may be \c null if the file is not meant to be translated).
+	 * @param changes The key-value pairs to modify.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	synchronized public static void
 	editProfile(File f, String textdomain, TreeMap<String, Value> changes) throws Exception {
 		TreeMap<String, Value> profile = readProfile(f, textdomain);
@@ -179,78 +542,21 @@ public abstract class Utils {
 		out.close();
 	}
 
-	synchronized public static void
-	editMetadata(boolean server, String addon, TreeMap<String, Value> changes) throws Exception {
-		editProfile(
-		    new File("metadata", addon + (server ? ".server" : ".maintain")), addon, changes);
-	}
-
-	synchronized public static void initMetadata(String addon, String uploader) throws Exception {
-		PrintWriter w = new PrintWriter(new File("metadata", addon + ".maintain"));
-		w.println("timestamp=\"" + (System.currentTimeMillis() / 1000) + "\"");
-		w.println("security=\"unchecked\"");
-		w.println("uploader=\"" + uploader + "\"");
-		w.println("i18n_version=\"1\"");
-		w.println("version=\"\"");
-		w.close();
-
-		w = new PrintWriter(new File("metadata", addon + ".server"));
-		w.println("downloads=\"0\"");
-		w.println("comments=\"0\"");
-		for (int i = 1; i <= 10; ++i) w.println("votes_" + i + "=\"0\"");
-		w.close();
-	}
-
-	public static void registerDownload(String addon) throws Exception {
-		File f = new File("metadata", addon + ".server");
-		TreeMap<String, Value> ch = new TreeMap<>();
-		ch.put("downloads",
-		       new Value("downloads",
-		                 "" + (Long.valueOf(readProfile(f, addon).get("downloads").value) + 1)));
-		editMetadata(true, addon, ch);
-	}
-
-	public static void comment(String addon, String user, String version, String message)
-	    throws Exception {
-		File f = new File("metadata", addon + ".server");
-		TreeMap<String, Value> ch = new TreeMap<>();
-
-		int c = Integer.valueOf(readProfile(f, addon).get("comments").value);
-		ch.put("comments", new Value("comments", "" + (c + 1)));
-
-		ch.put("comment_name_" + c, new Value("comment_name_" + c, user));
-		ch.put("comment_version_" + c, new Value("comment_version_" + c, version));
-		ch.put("comment_timestamp_" + c,
-		       new Value("comment_timestamp_" + c, "" + (System.currentTimeMillis() / 1000)));
-		String[] msg = message.split("\n");
-		ch.put("comment_" + c, new Value("comment_" + c, "" + (msg.length - 1)));
-		for (int i = 0; i < msg.length; ++i)
-			ch.put("comment_" + c + "_" + i, new Value("comment_" + c + "_" + i, msg[i]));
-
-		editMetadata(true, addon, ch);
-	}
-
-	public static void editComment(String addon, String index, String user, String message)
-	    throws Exception {
-		File f = new File("metadata", addon + ".server");
-		TreeMap<String, Value> ch = new TreeMap<>();
-
-		ch.put("comment_editor_" + index, new Value("comment_editor_" + index, user));
-		ch.put(
-		    "comment_edit_timestamp_" + index,
-		    new Value("comment_edit_timestamp_" + index, "" + (System.currentTimeMillis() / 1000)));
-		String[] msg = message.split("\n");
-		ch.put("comment_" + index, new Value("comment_" + index, "" + (msg.length - 1)));
-		for (int i = 0; i < msg.length; ++i)
-			ch.put("comment_" + index + "_" + i, new Value("comment_" + index + "_" + i, msg[i]));
-
-		editMetadata(true, addon, ch);
-	}
-
+	/**
+	 * Retrieve a value from the server config file.
+	 * @param key Key to look up.
+	 * @return The configured value.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public static String config(String key) throws Exception {
 		return readProfile(new File("config"), null).get(key).value;
 	}
 
+	/**
+	 * Recursively calculate the total file size of a directory.
+	 * @param dir Directory to iterate.
+	 * @return The total size in bytes.
+	 */
 	public static long filesize(File dir) {
 		long l = 0;
 		for (File f : listSorted(dir)) {
@@ -262,17 +568,30 @@ public abstract class Utils {
 		return l;
 	}
 
+	/**
+	 * Something has gone very, VERY wrong. Print a verbose error message to
+	 * standard output and terminate the entire server abnormally.
+	 * @param str Descriptive message where the error happened.
+	 * @param x The %Exception that is responsible for this problem.
+	 */
 	public static void fatalError(String str, Exception x) {
-		System.out.println("#########################################################");
-		System.out.println(" VERY FATAL ERROR: " + str);
-		System.out.println("  " + x);
-		System.out.println(" Something has gone seriously wrong here.");
-		System.out.println(" Killing the server in the hope that the maintainers");
-		System.out.println(" will hurry to resolve the problems.");
-		System.out.println("#########################################################");
+		log("#########################################################");
+		log(" VERY FATAL ERROR: " + str);
+		log("  " + x);
+		log(" Something has gone seriously wrong here.");
+		log(" Killing the server in the hope that the maintainers");
+		log(" will hurry to resolve the problems.");
+		log("#########################################################");
 		System.exit(1);
 	}
 
+	/**
+	 * Send a notification to the GitHub thread that serves as a notice board
+	 * for all events that require the attention of a server maintainer.
+	 * The thread is publicly visible, do not send sensitive data here.
+	 * @param msg Message to post.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public static void sendNotificationToGitHubThread(String msg) throws Exception {
 		msg = msg.replaceAll("\n", "\\\\n");
 		msg = msg.replaceAll("\t", "\\\\t");
@@ -281,11 +600,11 @@ public abstract class Utils {
 		msg = msg.replaceAll("'", "❜");
 
 		if (!Boolean.parseBoolean(config("deploy"))) {
-			System.out.println("    SKIPPING message: " + msg);
+			log("    SKIPPING message: " + msg);
 			return;
 		}
 
-		System.out.println("    Sending message: " + msg);
+		log("    Sending message: " + msg);
 
 		Process p = Runtime.getRuntime().exec(new String[] {
 		    "bash", "-c",
@@ -298,115 +617,11 @@ public abstract class Utils {
 		boolean err = false;
 		String str;
 		while ((str = b.readLine()) != null) {
-			System.out.println("    # " + str);
+			log("    # " + str);
 			err |= str.contains("documentation_url");
 		}
-		System.out.println("    = " + p.exitValue());
+		log("    = " + p.exitValue());
 		if (err) throw new Exception("CURL output looks like failure");
 		if (p.exitValue() != 0) throw new Exception("CURL returned error code " + p.exitValue());
-	}
-
-	private static enum MergeResolverStatus { kUnchanged, kHead, kSource }
-	public static void resolveMergeConflicts(File f) throws Exception {
-		if (_staticprofiles.containsKey(f)) _staticprofiles.remove(f);
-
-		TreeMap<String, Value> unchanged = new TreeMap<>();
-		TreeMap<String, Value> head = new TreeMap<>();
-		TreeMap<String, Value> source = new TreeMap<>();
-		MergeResolverStatus status = MergeResolverStatus.kUnchanged;
-
-		for (String line : Files.readAllLines(f.toPath())) {
-			if (line.trim().startsWith("#")) continue;
-			if (line.startsWith("<<<<<<<")) {
-				status = MergeResolverStatus.kHead;
-				continue;
-			}
-			if (line.startsWith(">>>>>>>")) {
-				status = MergeResolverStatus.kUnchanged;
-				continue;
-			}
-			if (line.startsWith("=======")) {
-				status = MergeResolverStatus.kSource;
-				continue;
-			}
-
-			TreeMap<String, Value> profile = null;
-			switch (status) {
-				case kUnchanged:
-					profile = unchanged;
-					break;
-				case kSource:
-					profile = source;
-					break;
-				case kHead:
-					profile = head;
-					break;
-			}
-
-			String[] str = line.split("=");
-			if (str.length < 2) {
-				if (str.length == 1) profile.put(str[0], new Value(str[0], ""));
-				continue;
-			}
-			String arg = str[1];
-			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
-			boolean localize = false;
-			if (arg.startsWith("_")) {
-				arg = arg.substring(1);
-				localize = true;
-			}
-			if (arg.startsWith("\"")) arg = arg.substring(1);
-			if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
-			profile.put(str[0], new Value(str[0], arg, localize ? "" : null));
-		}
-
-		for (String key : head.keySet()) {
-			if (source.containsKey(key)) {
-				String vh = head.get(key).value;
-				String vs = source.get(key).value;
-				String result = null;
-				switch (key) {
-					case "security":
-						result =
-						    (vh.equals("verified") && vs.equals("verified")) ? vh : "unchecked";
-						break;
-					case "i18n_version":
-						result = vs;
-						break;
-					case "version":
-					case "downloads":
-					case "timestamp":
-					case "uploader":
-						result = vh;
-						break;
-					default:
-						if (key.startsWith("vote") || key.startsWith("comment")) {
-							result = vh;
-							break;
-						}
-						throw new Exception("Unable to merge key '" + key + "' in file " +
-						                    f.getPath());
-				}
-				unchanged.put(key, new Value(key, result, head.get(key).textdomain));
-			} else {
-				unchanged.put(key, head.get(key));
-			}
-		}
-		for (String key : source.keySet()) {
-			if (!head.containsKey(key)) {
-				unchanged.put(key, source.get(key));
-			}
-		}
-
-		PrintStream out = new PrintStream(f);
-		for (String key : unchanged.keySet()) {
-			out.print(key);
-			out.print("=");
-			if (unchanged.get(key).textdomain != null) out.print("_");
-			out.print("\"");
-			out.print(unchanged.get(key).value);
-			out.print("\"\n");
-		}
-		out.close();
 	}
 }

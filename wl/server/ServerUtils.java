@@ -21,24 +21,31 @@ package wl.server;
 
 import java.io.*;
 import java.net.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.util.*;
 import java.util.concurrent.*;
 import wl.utils.*;
 
+/**
+ * Miscellaneous utilities used by server processes.
+ */
 abstract class ServerUtils {
-	public static final ThreadActivityAndGitHubSyncManager SYNCER =
-	    new ThreadActivityAndGitHubSyncManager();
+
+	/**
+	 * A random generator. Use only this generator to generate random numbers.
+	 */
 	public static final Random RANDOM = new Random(System.currentTimeMillis());
 
-	public static void log(String msg) {
-		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
-		                   msg);
-	}
+	/**
+	 * Interface to describe a simple method that takes no parameters and may throw any %Exception.
+	 */
+	public static interface Functor {
 
-	public static interface Functor { public void run() throws Exception; }
+		/**
+		 * This can be any function at all.
+		 * @throws Exception If anything at all goes wrong, throw an %Exception.
+		 */
+		public void run() throws Exception;
+	}
 
 	private static final Map<String, Semaphore> _semaphores = new HashMap<>();
 	private static final int SEMAPHORE_BLOCK_RW_ACCESS = 100;
@@ -50,12 +57,35 @@ abstract class ServerUtils {
 		}
 	}
 
+	/**
+	 * Execute code in a thread-safe manner.
+	 * The code is required not to modify the protected resource in any way.
+	 * Any number of threads may access the same resource through this function simultaneously,
+	 * but no modifications will happen to the resource while any such thread is running.
+	 * If the resource is currently being modified, this function will block until the other
+	 * thread has releases the resource again before starting to run your code.
+	 * @param addon Resource to protect.
+	 * @param f Code to execute.
+	 * @throws Exception Throw by #f.
+	 */
 	public static void semaphoreRO(String addon, Functor f) throws Exception {
 		doSemaphore(addon, 1, f);
 	}
+
+	/**
+	 * Execute code in a thread-safe manner.
+	 * The code may modify the protected resource in any way.
+	 * No other thread may access or modify the resource while the code is executing.
+	 * If the resource is currently being accessed or modified, this function will block until
+	 * all other threads have released the resource again before starting to run your code.
+	 * @param addon Resource to protect.
+	 * @param f Code to execute.
+	 * @throws Exception Thrown by #f.
+	 */
 	public static void semaphoreRW(String addon, Functor f) throws Exception {
 		doSemaphore(addon, SEMAPHORE_BLOCK_RW_ACCESS, f);
 	}
+
 	private static void doSemaphore(String addon, final int i, Functor f) throws Exception {
 		Semaphore s = getSemaphore(addon);
 		s.acquire(i);
@@ -68,48 +98,40 @@ abstract class ServerUtils {
 		}
 	}
 
-	public static enum Databases {
-		kWebsite("websitedatabase"),
-		kAddOns("addonsdatabase");
-
-		public final String configKey;
-		private Databases(String k) { configKey = k; }
-	}
-	private static final Connection[] _databases = new Connection[Databases.values().length];
-
-	public static void initDatabases() throws Exception {
-		log("Initializing SQL...");
-
-		Properties connectionProps = new Properties();
-		connectionProps.put("user", Utils.config("databaseuser"));
-		connectionProps.put("password", Utils.config("databasepassword"));
-
-		for (Databases db : Databases.values()) {
-			_databases[db.ordinal()] = DriverManager.getConnection​(
-			    "jdbc:mysql://" + Utils.config("databasehost") + ":" +
-			        Utils.config("databaseport") + "/" + Utils.config(db.configKey),
-			    connectionProps);
-		}
-	}
-
-	public static ResultSet sqlQuery(Databases db, String query) throws Exception {
-		Connection c = _databases[db.ordinal()];
-		synchronized (c) { return c.createStatement().executeQuery(query); }
-	}
-	public static void sqlCmd(Databases db, String cmd) throws Exception {
-		Connection c = _databases[db.ordinal()];
-		synchronized (c) { c.createStatement().execute(cmd); }
-	}
-
+	/**
+	 * An exception that indicates any form of invalid
+	 * communication between the server and a client.
+	 */
 	public static class WLProtocolException extends RuntimeException {
+
+		/**
+		 * Constructor.
+		 * @param msg Error message.
+		 */
 		public WLProtocolException(String msg) { super("WL Protocol Exception: " + msg); }
+
 		@Override
 		public String toString() {
 			return getMessage();
 		}
 	}
 
+	/**
+	 * Read a single line of input from a stream.
+	 * @param in Stream to read from.
+	 * @return The text read.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
+
+	/**
+	 * Read a single line of input from a stream.
+	 * @param in Stream to read from.
+	 * @param exceptionOnStreamEnd If this is \c false, no %Exception will be thrown if the stream
+	 *                             is closed during reading. Instead \c null will be returned.
+	 * @return The text read, or \c null if the stream was closed.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public static String readLine(InputStream in, boolean exceptionOnStreamEnd) throws Exception {
 		ByteArrayOutputStream buffer = new ByteArrayOutputStream();
 		for (long count = 0;; count++) {
@@ -126,11 +148,20 @@ abstract class ServerUtils {
 		}
 	}
 
+	/**
+	 * Check that the next line of text from the given stream is the end-of-input delimiter.
+	 * Throws an exception if this is not the case.
+	 * @param in Stream to read from.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public static void checkEndOfStream(InputStream in) throws Exception {
 		if (!readLine(in).equals("ENDOFSTREAM"))
 			throw new WLProtocolException("Stream continues past its end");
 	}
 
+	/**
+	 * Class to recursively write a directory structure.
+	 */
 	public static class DirInfo {
 		public final File file;
 		public final ArrayList<File> regularFiles;
@@ -138,6 +169,10 @@ abstract class ServerUtils {
 		public final int totalDirs;
 		public final int totalFiles;
 
+		/**
+		 * Constructor.
+		 * @param dir The directory to represent.
+		 */
 		public DirInfo(File dir) {
 			file = dir;
 			regularFiles = new ArrayList<>();
@@ -158,12 +193,23 @@ abstract class ServerUtils {
 			totalDirs = t;
 		}
 
+		/**
+		 * Recursively write all directory names to a stream.
+		 * @param out Stream to write to.
+		 * @param prefix Path to prepend to all directory paths.
+		 */
 		public void writeAllDirNames(PrintStream out, String prefix) {
 			for (DirInfo d : subdirs) {
 				out.println(prefix + d.file.getName());
 				d.writeAllDirNames(out, prefix + d.file.getName() + "/");
 			}
 		}
+
+		/**
+		 * Recursively write all files to a stream.
+		 * @param out Stream to write to.
+		 * @throws Exception If anything at all goes wrong, throw an %Exception.
+		 */
 		public void writeAllFileInfos(PrintStream out) throws Exception {
 			out.println(regularFiles.size());
 			for (File f : regularFiles) {
@@ -174,13 +220,27 @@ abstract class ServerUtils {
 		}
 	}
 
-	public static void checkNrArgs(String[] cmd, int expected) {
+	/**
+	 * Check that a client has sent exactly the expected number of arguments.
+	 * Throws an exception if this is not the case.
+	 * @param cmd Command array (the arguments are positioned in index \c 1+).
+	 * @param expected Number of expected arguments (not counting the command itself).
+	 * @throws WLProtocolException If anything at all goes wrong, throw an %Exception.
+	 */
+	public static void checkNrArgs(String[] cmd, int expected) throws WLProtocolException {
 		if (cmd.length != expected + 1)
 			throw new WLProtocolException("Expected " + expected + " argument(s), found " +
 			                              (cmd.length - 1));
 	}
 
-	public static void checkNameValid(String name, boolean directory) {
+	/**
+	 * Check that a given file or directory name is valid.
+	 * Throws an exception if this is not the case.
+	 * @param name Name to check.
+	 * @param directory Is this name supposed to denote a regular file or a directory.
+	 * @throws WLProtocolException If anything at all goes wrong, throw an %Exception.
+	 */
+	public static void checkNameValid(String name, boolean directory) throws WLProtocolException {
 		if (name == null || (!directory && name.isEmpty()))
 			throw new WLProtocolException("Empty name");
 		if (name.length() > 80)
@@ -202,16 +262,26 @@ abstract class ServerUtils {
 			throw new WLProtocolException("Name '" + name + "' may not contain '..'");
 	}
 
-	public static void checkAddOnExists(String name) {
-		if (!(new File("addons", name).isDirectory() &&
-		      new File("metadata", name + ".maintain").isFile() &&
-		      new File("metadata", name + ".server").isFile())) {
+	/**
+	 * Check that an add-on exists.
+	 * Throws an exception if this is not the case.
+	 * @param name Name to check.
+	 * @throws WLProtocolException If anything at all goes wrong, throw an %Exception.
+	 */
+	public static void checkAddOnExists(String name) throws WLProtocolException {
+		if (!(new File("addons/" + name, "addon").isFile())) {
 			throw new WLProtocolException("Add-on '" + name + "' does not exist");
 		}
 	}
 
+	/**
+	 * Dump a file and some of its metadata to a stream.
+	 * @param f File to send.
+	 * @param out Stream to write to.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
-		out.println(UpdateList.checksum(f));
+		out.println(Utils.checksum(f));
 		long l = f.length();
 		out.println(l);
 		FileInputStream read = new FileInputStream(f);
@@ -227,6 +297,10 @@ abstract class ServerUtils {
 		}
 	}
 
+	/**
+	 * Recursively delete a directory or file.
+	 * @param f Directory or file to delete.
+	 */
 	synchronized public static void doDelete(File f) {
 		if (f.isDirectory()) {
 			for (File file : f.listFiles()) {
@@ -236,37 +310,33 @@ abstract class ServerUtils {
 		f.delete();
 	}
 
-	// TODO: In the long run, get rid of the metadata files completely, move everything
-	// to the database, and make the GitHub repo merely a mirror of the official server.
-	public static void rebuildMetadata() throws Exception {
-		log("Rebuilding metadata...");
-		for (File f : Utils.listSorted(new File("addons")))
-			ServerUtils.updateMetadataVotes(f.getName());
+	/**
+	 * Generate the Transifex resource name associated with an add-on.
+	 * @param name Name of the add-on.
+	 * @return Transifex resource name.
+	 */
+	public static String toTransifexResource(String name) {
+		return "widelands-addons." + name.replaceAll("[._]", "-");
 	}
 
-	public static void updateMetadataVotes(String addon) throws Exception {
-		TreeMap<String, Utils.Value> edit = new TreeMap<>();
-		for (int v = 1; v <= 10; v++) {
-			long count = 0;
-			ResultSet sql =
-			    sqlQuery(Databases.kAddOns, "select user_id from uservotes where vote=" + v +
-			                                    " and addon='" + addon + "'");
-			while (sql.next()) count++;
-			edit.put("votes_" + v, new Utils.Value("votes_" + v, Long.toString(count)));
-		}
-		Utils.editMetadata(true, addon, edit);
-	}
-
-	public static void registerVote(String addon, long user, int v) throws Exception {
-		sqlCmd(Databases.kAddOns,
-		       "delete from uservotes where user_id=" + user + " and addon='" + addon + "'");
-		if (v > 0)
-			sqlCmd(Databases.kAddOns, "insert into uservotes (user_id, addon, vote) value (" +
-			                              user + ", '" + addon + "', " + v + ")");
-		updateMetadataVotes(addon);
+	/**
+	 * Send an e-mail.
+	 * @param email E-Mail address of the recipient.
+	 * @param message File containing the message as plaintext.
+	 * @throws Exception If the shell can't be accessed.
+	 */
+	public static void sendEMail(String email, File message) throws Exception {
+		Utils.bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
 	}
 
 	private static Object _enquiry_syncer = new Object();
+
+	/**
+	 * Process a client's enquiry.
+	 * @param username Name of the user who sent the enquiry.
+	 * @param msg Enquiry message.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public static void sendEnquiry(String username, String msg) throws Exception {
 		File dir = new File("enquiries");
 		dir.mkdir();
@@ -287,6 +357,14 @@ abstract class ServerUtils {
 		                                     + "- Message length: " + msg.length() + " characters");
 	}
 
+	/**
+	 * Check that a client sends the correct password over a stream.
+	 * Throws an exception if this is not the case.
+	 * @param in Stream to receive further data from the client.
+	 * @param out Stream to send data to the client.
+	 * @param correctPassword The password required for successful authentification.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 */
 	public static void passwordAuthentification(InputStream in,
 	                                            PrintStream out,
 	                                            String correctPassword) throws Exception {
@@ -310,83 +388,53 @@ abstract class ServerUtils {
 		}
 	}
 
-	public static void
-	info(final int version, final String addon, final String locale, PrintStream out)
-	    throws Exception {
-		switch (version) {
-			case 4: {
-				TreeMap<String, Utils.Value> profile =
-				    Utils.readProfile(new File("addons/" + addon, "addon"), addon);
-				TreeMap<String, Utils.Value> metadataServer =
-				    Utils.readProfile(new File("metadata", addon + ".server"), addon);
-				TreeMap<String, Utils.Value> metadataMaintain =
-				    Utils.readProfile(new File("metadata", addon + ".maintain"), addon);
-				TreeMap<String, Utils.Value> screenies =
-				    Utils.readProfile(new File("screenshots/" + addon, "descriptions"), addon);
+	// Two helper functions for matchesWidelandsVersion()
+	private static int[] string_to_version(String str) {
+		String[] parts = str.split(".");
+		int[] result = new int[parts.length];
+		for (int i = 0; i < result.length; i++) result[i] = Integer.valueOf(parts[i]);
+		return result;
+	}
+	private static boolean less(int[] a, int[] b) {
+		int l = Math.min(a.length, b.length);
+		for (int i = 0; i < l; i++)
+			if (a[i] != b[i]) return a[i] < b[i];
+		return a.length < b.length;
+	}
 
-				out.println(profile.get("name").value);
-				out.println(profile.get("name").value(locale));
-				out.println(profile.get("description").value);
-				out.println(profile.get("description").value(locale));
-				out.println(profile.get("author").value);
-				out.println(profile.get("author").value(locale));
-				out.println(metadataMaintain.get("uploader").value(locale));
-				out.println(profile.get("version").value);
-				out.println(metadataMaintain.get("i18n_version").value);
-				out.println(profile.get("category").value);
-				out.println(profile.get("requires").value);
-				out.println((profile.containsKey("min_wl_version") ?
-                                 profile.get("min_wl_version").value :
-                                 ""));
-				out.println((profile.containsKey("max_wl_version") ?
-                                 profile.get("max_wl_version").value :
-                                 ""));
-				out.println(
-				    (profile.containsKey("sync_safe") ? profile.get("sync_safe").value : ""));
-
-				out.println(screenies.size());
-				for (String key : screenies.keySet())
-					out.println(key + "\n" + screenies.get(key).value(locale));
-
-				out.println(Utils.filesize(new File("addons", addon)));
-				out.println(metadataMaintain.get("timestamp").value);
-				out.println(metadataServer.get("downloads").value);
-				for (int i = 1; i <= 10; ++i) out.println(metadataServer.get("votes_" + i).value);
-
-				int c = Integer.valueOf(metadataServer.get("comments").value);
-				out.println(c);
-				for (int i = 0; i < c; ++i) {
-					out.println(metadataServer.get("comment_name_" + i).value);
-					out.println(metadataServer.get("comment_timestamp_" + i).value);
-
-					Utils.Value v = metadataServer.get("comment_editor_" + i);
-					out.println(v == null ? "" : v.value);
-					v = metadataServer.get("comment_edit_timestamp_" + i);
-					out.println(v == null ? "0" : v.value);
-
-					out.println(metadataServer.get("comment_version_" + i).value);
-					int l = Integer.valueOf(metadataServer.get("comment_" + i).value);
-					out.println(l);
-					for (int j = 0; j <= l; ++j)
-						out.println(metadataServer.get("comment_" + i + "_" + j).value(locale));
-				}
-				out.println(
-				    metadataMaintain.get("version").value.equals(profile.get("version").value) ?
-                        metadataMaintain.get("security").value :
-                        "unchecked");
-
-				File iconFile = new File("addons/" + addon, "icon.png");
-				if (iconFile.isFile()) {
-					ServerUtils.writeOneFile(iconFile, out);
-				} else {
-					out.println("0\n0");
-				}
-
-				out.println("ENDOFSTREAM");
-				return;
-			}
-			default:
-				throw new WLProtocolException("Wrong version " + version);
+	/**
+	 * Check whether an add-on is compatible with a given version of Widelands.
+	 * @param wl_version The Widelands version.
+	 * @param min_wl_version The minimum version required by the add-on (may be \c null).
+	 * @param max_wl_version The maximum version supported by the add-on (may be \c null).
+	 * @return The add-on is compatible.
+	 */
+	public static boolean
+	matchesWidelandsVersion(String wl_version, String min_wl_version, String max_wl_version) {
+		// For the comparison logic, see AddOnInfo::matches_widelands_version
+		if (min_wl_version != null && min_wl_version.isEmpty()) min_wl_version = null;
+		if (max_wl_version != null && max_wl_version.isEmpty()) max_wl_version = null;
+		if (min_wl_version == null && max_wl_version == null) {
+			return true;
 		}
+		final int tilde = wl_version.indexOf​('~');
+		if (tilde < 0) {
+			int[] wl = string_to_version(wl_version);
+			if (min_wl_version != null && less(wl, string_to_version(min_wl_version))) {
+				return false;
+			}
+			if (max_wl_version != null && less(string_to_version(max_wl_version), wl)) {
+				return false;
+			}
+		} else {
+			int[] next_wl = string_to_version(wl_version.substring(0, tilde));
+			if (min_wl_version != null && !less(string_to_version(min_wl_version), next_wl)) {
+				return false;
+			}
+			if (max_wl_version != null && less(string_to_version(max_wl_version), next_wl)) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
