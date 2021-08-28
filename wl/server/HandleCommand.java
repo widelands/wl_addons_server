@@ -195,7 +195,8 @@ class HandleCommand {
 			Utils.Profile profile =
 			    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]);
 			Utils.Profile.Section screenies =
-			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1]).getSection("");
+			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1])
+			        .getSection("");
 
 			out.println(profile.get("name").value);
 			out.println(profile.get("name").value(locale));
@@ -552,7 +553,8 @@ class HandleCommand {
 		ServerUtils.semaphoreRW(cmd[1], () -> {
 			File file = new File("addons/" + cmd[1], "addon");
 			Utils.Profile profile = Utils.readProfile(file, cmd[1]);
-			profile.getSection(Utils.Profile.kGlobalSection).contents.put("sync_safe", new Utils.Value("sync_safe", cmd[2]));
+			profile.getSection(Utils.Profile.kGlobalSection)
+			    .contents.put("sync_safe", new Utils.Value("sync_safe", cmd[2]));
 			Utils.editProfile(file, profile);
 		});
 
@@ -734,7 +736,8 @@ class HandleCommand {
 
 				File descriptionsFile = new File("screenshots/" + cmd[1], "descriptions");
 				Utils.Profile profile = Utils.readProfile(descriptionsFile, cmd[1]);
-				profile.getSection("").contents.put(filename, new Utils.Value(filename, msg, cmd[1]));
+				profile.getSection("").contents.put(
+				    filename, new Utils.Value(filename, msg, cmd[1]));
 				Utils.editProfile(descriptionsFile, profile);
 
 				out.println("ENDOFSTREAM");
@@ -821,25 +824,27 @@ class HandleCommand {
 				File addOnDir = new File("addons", cmd[1]);
 				File addOnMain = new File(addOnDir, "addon");
 
-				Utils.Profile newProfile =
-				    Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
+				Utils.Profile newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
 				boolean isUpdate = false;
 				String oldVersionString = null;
 				int oldSecurity = -1, oldQuality = -1;
 				if (addOnDir.isDirectory()) {
 					isUpdate = true;
-					Utils.Profile oldProfile =
-					    Utils.readProfile(addOnMain, cmd[1]);
+					Utils.Profile oldProfile = Utils.readProfile(addOnMain, cmd[1]);
 
-					if (!oldProfile.get(Utils.Profile.kGlobalSection, "category").value.equals(newProfile.get(Utils.Profile.kGlobalSection, "category").value))
+					if (!oldProfile.get(Utils.Profile.kGlobalSection, "category")
+					         .value.equals(
+					             newProfile.get(Utils.Profile.kGlobalSection, "category").value))
 						throw new ServerUtils.WLProtocolException(
 						    "An add-on with the same name and a different category already exists. "
 						    + "Old category is '" + oldProfile.get("category").value +
 						    "', new category is '" + newProfile.get("category").value + "'.");
 
-					oldVersionString = oldProfile.get(Utils.Profile.kGlobalSection, "version").value;
+					oldVersionString =
+					    oldProfile.get(Utils.Profile.kGlobalSection, "version").value;
 					String[] oldVersion = oldVersionString.split("\\.");
-					String[] newVersion = newProfile.get(Utils.Profile.kGlobalSection, "version").value.split("\\.");
+					String[] newVersion =
+					    newProfile.get(Utils.Profile.kGlobalSection, "version").value.split("\\.");
 					Boolean newer = null;
 					for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
 						if (!oldVersion[i].equals(newVersion[i])) {

@@ -45,13 +45,16 @@ public abstract class Utils {
 
 		@Override
 		public int compareTo(Object o) {
-			return (o instanceof ChecksummedFile && valid() && ((ChecksummedFile)o).valid()) ? file.compareTo(((ChecksummedFile)o).file) : -1;
+			return (o instanceof ChecksummedFile && valid() && ((ChecksummedFile)o).valid()) ?
+                file.compareTo(((ChecksummedFile)o).file) :
+                -1;
 		}
 
 		@Override
 		public boolean equals(Object o) {
 			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) &&
-					((ChecksummedFile)o).cachedChecksum.equals(cachedChecksum) && valid() && ((ChecksummedFile)o).valid();
+			    ((ChecksummedFile)o).cachedChecksum.equals(cachedChecksum) && valid() &&
+			    ((ChecksummedFile)o).valid();
 		}
 	}
 
@@ -487,17 +490,13 @@ public abstract class Utils {
 		private final Map<String, Section> sections;
 
 		/** Default constructor. */
-		public Profile() {
-			sections = new TreeMap<>();
-		}
+		public Profile() { sections = new TreeMap<>(); }
 
 		/**
 		 * Add a new section to the profile.
 		 * @param s The section to add.
 		 */
-		public void add(Section s) {
-			sections.put(s.name, s);
-		}
+		public void add(Section s) { sections.put(s.name, s); }
 
 		/**
 		 * Dump this profile to a file.
@@ -628,8 +627,7 @@ public abstract class Utils {
 	 * @param profile New profile to write.
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
-	synchronized public static void
-	editProfile(File f, Profile profile) throws Exception {
+	synchronized public static void editProfile(File f, Profile profile) throws Exception {
 		f.getParentFile().mkdirs();
 		PrintStream out = new PrintStream(f);
 		profile.write(out);
