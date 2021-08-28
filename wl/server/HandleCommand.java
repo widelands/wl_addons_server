@@ -852,13 +852,15 @@ class HandleCommand {
 						    "', your version is '" + newProfile.get("version").value + "'.");
 					}
 
-					ResultSet sql = Utils.sqlQuery(Utils.Databases.kAddOns,
-					             "select id,security,quality from addons where name='" + cmd[1] + "'");
+					ResultSet sql = Utils.sqlQuery(
+					    Utils.Databases.kAddOns,
+					    "select id,security,quality from addons where name='" + cmd[1] + "'");
 					sql.next();
 					oldSecurity = sql.getInt("security");
 					oldQuality = sql.getInt("quality");
-					Utils.sqlCmd(Utils.Databases.kAddOns,
-					             "update addons set security=0, quality=0 where id=" + sql.getLong("id"));
+					Utils.sqlCmd(
+					    Utils.Databases.kAddOns,
+					    "update addons set security=0, quality=0 where id=" + sql.getLong("id"));
 
 					ServerUtils.doDelete(addOnDir);
 				} else {
@@ -900,10 +902,9 @@ class HandleCommand {
 				    (newProfile.get("requires").value.isEmpty() ?
                          "N/A" :
                          newProfile.get("requires").value) +
-				    (isUpdate ? (
-				    	"\n- Old security: " + oldSecurity +
-				    	"\n- Old quality: " + oldQuality
-				    ) : "") +
+				    (isUpdate ?
+                         ("\n- Old security: " + oldSecurity + "\n- Old quality: " + oldQuality) :
+                         "") +
 				    "\n\nPlease review this add-on soonish.");
 				tempDir.renameTo​(addOnDir);
 
