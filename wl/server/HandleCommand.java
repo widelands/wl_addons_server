@@ -821,7 +821,9 @@ class HandleCommand {
 				    Utils.readProfile(new File(tempDir, "addon"), cmd[1]).contents;
 				boolean isUpdate = false;
 				String oldVersionString = null;
+				int oldSecurity = -1, oldQuality = -1;
 				if (addOnDir.isDirectory()) {
+					isUpdate = true;
 					TreeMap<String, Utils.Value> oldProfile =
 					    Utils.readProfile(addOnMain, cmd[1]).contents;
 
@@ -850,7 +852,15 @@ class HandleCommand {
 						    "', your version is '" + newProfile.get("version").value + "'.");
 					}
 
-					isUpdate = true;
+					ResultSet sql = Utils.sqlQuery(Utils.Databases.kAddOns,
+					             "select id,security,quality from addons where name='" + cmd[1] + "'");
+					sql.next();
+					oldSecurity = sql.getInt("security");
+					oldQuality = sql.getInt("quality");
+					Utils.sqlCmd(Utils.Databases.kAddOns,
+					             "update addons set security=0, quality=0 where id=" + sql.getLong("id"));
+
+					ServerUtils.doDelete(addOnDir);
 				} else {
 					Utils.sqlCmd(
 					    Utils.Databases.kAddOns,
@@ -890,14 +900,11 @@ class HandleCommand {
 				    (newProfile.get("requires").value.isEmpty() ?
                          "N/A" :
                          newProfile.get("requires").value) +
+				    (isUpdate ? (
+				    	"\n- Old security: " + oldSecurity +
+				    	"\n- Old quality: " + oldQuality
+				    ) : "") +
 				    "\n\nPlease review this add-on soonish.");
-				if (isUpdate) {
-					Utils.sqlCmd(Utils.Databases.kAddOns,
-					             "update addons set security=0, quality=0 where id=" +
-					                 Utils.getAddOnID(cmd[1]));
-
-					ServerUtils.doDelete(addOnDir);
-				}
 				tempDir.renameTo​(addOnDir);
 
 				out.println("ENDOFSTREAM");
