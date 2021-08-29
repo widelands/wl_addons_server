@@ -95,7 +95,7 @@ public abstract class Utils {
 		connectionProps.put("password", Utils.config("databasepassword"));
 
 		for (Databases db : Databases.values()) {
-			_databases[db.ordinal()] = DriverManager.getConnection​(
+			_databases[db.ordinal()] = DriverManager.getConnection(
 			    "jdbc:mysql://" + Utils.config("databasehost") + ":" +
 			        Utils.config("databaseport") + "/" + Utils.config(db.configKey),
 			    connectionProps);
@@ -289,7 +289,7 @@ public abstract class Utils {
 		log(logString);
 
 		ProcessBuilder pb = new ProcessBuilder(args);
-		pb.redirectErrorStream​(true);
+		pb.redirectErrorStream(true);
 		Process p = pb.start();
 
 		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
