@@ -498,8 +498,10 @@ public abstract class Utils {
 		 * @param out Stream to print to.
 		 */
 		public void write(PrintStream out) {
+			out.println("# Automatically created by the Widelands Add-Ons Server.");
 			for (Section s : sections.values()) {
-				if (!s.name.isEmpty()) out.println("\n" + s.name);
+				out.println();
+				if (!s.name.isEmpty()) out.println(s.name);
 				for (String key : s.contents.keySet()) {
 					out.print(key);
 					out.print("=");
