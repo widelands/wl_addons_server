@@ -30,7 +30,7 @@ import java.util.*;
  * Miscellaneous utility functions.
  */
 public abstract class Utils {
-	private static class ChecksummedFile implements Comparable {
+	private static class ChecksummedFile {
 		public final File file;
 		public final String cachedChecksum;
 
@@ -41,20 +41,15 @@ public abstract class Utils {
 
 		private String cs() { return file.isFile() ? checksum(file) : ""; }
 
-		public boolean valid() { return cs().equals(cachedChecksum); }
-
-		@Override
-		public int compareTo(Object o) {
-			return (o instanceof ChecksummedFile && valid() && ((ChecksummedFile)o).valid()) ?
-                file.compareTo(((ChecksummedFile)o).file) :
-                -1;
-		}
-
 		@Override
 		public boolean equals(Object o) {
-			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) &&
-			    ((ChecksummedFile)o).cachedChecksum.equals(cachedChecksum) && valid() &&
-			    ((ChecksummedFile)o).valid();
+			if (!(o instanceof ChecksummedFile)) return false;
+
+			ChecksummedFile c = (ChecksummedFile)o;
+			if (!c.file.equals(file)) return false;
+
+			String newCS = cs();
+			return cachedChecksum.equals(newCS) && c.cachedChecksum.equals(newCS);
 		}
 	}
 
@@ -557,7 +552,7 @@ public abstract class Utils {
 			return s;
 		}
 	}
-	private static final TreeMap<ChecksummedFile, Profile> _staticprofiles = new TreeMap<>();
+	private static final Map<ChecksummedFile, Profile> _staticprofiles = new HashMap<>();
 
 	/**
 	 * Parse an ini-style file and return its contents as a map of key-value pairs.
@@ -570,6 +565,7 @@ public abstract class Utils {
 	synchronized public static Profile readProfile(File f, String textdomain) throws Exception {
 		ChecksummedFile key = new ChecksummedFile(f);
 		if (_staticprofiles.containsKey(key)) return _staticprofiles.get(key);
+
 		for (ChecksummedFile cf : _staticprofiles.keySet()) {
 			if (cf.file.equals(f)) {
 				_staticprofiles.remove(cf);
