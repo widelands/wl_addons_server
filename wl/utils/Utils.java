@@ -45,13 +45,16 @@ public abstract class Utils {
 
 		@Override
 		public int compareTo(Object o) {
-			return (o instanceof ChecksummedFile) ? file.compareTo(((ChecksummedFile)o).file) : -1;
+			return (o instanceof ChecksummedFile && valid() && ((ChecksummedFile)o).valid()) ?
+                file.compareTo(((ChecksummedFile)o).file) :
+                -1;
 		}
 
 		@Override
 		public boolean equals(Object o) {
 			return (o instanceof ChecksummedFile) && ((ChecksummedFile)o).file.equals(file) &&
-			    ((ChecksummedFile)o).cachedChecksum.equals(cachedChecksum);
+			    ((ChecksummedFile)o).cachedChecksum.equals(cachedChecksum) && valid() &&
+			    ((ChecksummedFile)o).valid();
 		}
 	}
 
