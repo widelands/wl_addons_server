@@ -153,13 +153,13 @@ class HandleCommand {
 		ArrayList<String> compatibleAddOns = new ArrayList<>();
 		for (File addon : Utils.listSorted(new File("addons"))) {
 			if (versionCheck) {
-				TreeMap<String, Utils.Value> profile =
+				Utils.Profile profile =
 				    Utils.readProfile(new File(addon, "addon"), addon.getName());
 				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
-				                                         profile.containsKey("min_wl_version") ?
+				                                         profile.get("min_wl_version") != null ?
                                                              profile.get("min_wl_version").value :
                                                              null,
-				                                         profile.containsKey("max_wl_version") ?
+				                                         profile.get("max_wl_version") != null ?
                                                              profile.get("max_wl_version").value :
                                                              null)) {
 					continue;
@@ -192,10 +192,11 @@ class HandleCommand {
 				                                          "' is not in the database");
 			final long addOnID = sqlMain.getLong("id");
 
-			TreeMap<String, Utils.Value> profile =
+			Utils.Profile profile =
 			    Utils.readProfile(new File("addons/" + cmd[1], "addon"), cmd[1]);
-			TreeMap<String, Utils.Value> screenies =
-			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1]);
+			Utils.Profile.Section screenies =
+			    Utils.readProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1])
+			        .getSection("");
 
 			out.println(profile.get("name").value);
 			out.println(profile.get("name").value(locale));
@@ -212,14 +213,14 @@ class HandleCommand {
 			out.println(profile.get("category").value);
 			out.println(profile.get("requires").value);
 			out.println(
-			    (profile.containsKey("min_wl_version") ? profile.get("min_wl_version").value : ""));
+			    (profile.get("min_wl_version") != null ? profile.get("min_wl_version").value : ""));
 			out.println(
-			    (profile.containsKey("max_wl_version") ? profile.get("max_wl_version").value : ""));
-			out.println((profile.containsKey("sync_safe") ? profile.get("sync_safe").value : ""));
+			    (profile.get("max_wl_version") != null ? profile.get("max_wl_version").value : ""));
+			out.println((profile.get("sync_safe") != null ? profile.get("sync_safe").value : ""));
 
-			out.println(screenies.size());
-			for (String key : screenies.keySet())
-				out.println(key + "\n" + screenies.get(key).value(locale));
+			out.println(screenies.contents.size());
+			for (String key : screenies.contents.keySet())
+				out.println(key + "\n" + screenies.contents.get(key).value(locale));
 
 			out.println(Utils.filesize(new File("addons", cmd[1])));
 			out.println(sqlMain.getLong("timestamp"));
@@ -550,9 +551,11 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ServerUtils.semaphoreRW(cmd[1], () -> {
-			TreeMap<String, Utils.Value> ch = new TreeMap<>();
-			ch.put("sync_safe", new Utils.Value("sync_safe", cmd[2]));
-			Utils.editProfile(new File("addons/" + cmd[1], "addon"), cmd[1], ch);
+			File file = new File("addons/" + cmd[1], "addon");
+			Utils.Profile profile = Utils.readProfile(file, cmd[1]);
+			profile.getSection(Utils.Profile.kGlobalSection)
+			    .contents.put("sync_safe", new Utils.Value("sync_safe", cmd[2]));
+			Utils.editProfile(file, profile);
 		});
 
 		out.println("ENDOFSTREAM");
@@ -723,15 +726,20 @@ class HandleCommand {
 				result = new File(result, filename);
 				file.renameTo​(result);
 				ServerUtils.doDelete(tempDir);
-				TreeMap<String, Utils.Value> ch = new TreeMap<>();
+
 				int whitespaces = Integer.valueOf(cmd[4]);
 				if (whitespaces < 0 || whitespaces > 1000)
 					throw new ServerUtils.WLProtocolException("Description too long (" +
 					                                          whitespaces + " words)");
 				String msg = cmd[5];
 				for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[6 + w];
-				ch.put(filename, new Utils.Value(filename, msg, cmd[1]));
-				Utils.editProfile(new File("screenshots/" + cmd[1], "descriptions"), cmd[1], ch);
+
+				File descriptionsFile = new File("screenshots/" + cmd[1], "descriptions");
+				Utils.Profile profile = Utils.readProfile(descriptionsFile, cmd[1]);
+				profile.getSection("").contents.put(
+				    filename, new Utils.Value(filename, msg, cmd[1]));
+				Utils.editProfile(descriptionsFile, profile);
+
 				out.println("ENDOFSTREAM");
 			} catch (Exception e) {
 				ServerUtils.doDelete(tempDir);
@@ -816,22 +824,27 @@ class HandleCommand {
 				File addOnDir = new File("addons", cmd[1]);
 				File addOnMain = new File(addOnDir, "addon");
 
-				TreeMap<String, Utils.Value> newProfile =
-				    Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
+				Utils.Profile newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
 				boolean isUpdate = false;
 				String oldVersionString = null;
+				int oldSecurity = -1, oldQuality = -1;
 				if (addOnDir.isDirectory()) {
-					TreeMap<String, Utils.Value> oldProfile = Utils.readProfile(addOnMain, cmd[1]);
+					isUpdate = true;
+					Utils.Profile oldProfile = Utils.readProfile(addOnMain, cmd[1]);
 
-					if (!oldProfile.get("category").value.equals(newProfile.get("category").value))
+					if (!oldProfile.get(Utils.Profile.kGlobalSection, "category")
+					         .value.equals(
+					             newProfile.get(Utils.Profile.kGlobalSection, "category").value))
 						throw new ServerUtils.WLProtocolException(
 						    "An add-on with the same name and a different category already exists. "
 						    + "Old category is '" + oldProfile.get("category").value +
 						    "', new category is '" + newProfile.get("category").value + "'.");
 
-					oldVersionString = oldProfile.get("version").value;
+					oldVersionString =
+					    oldProfile.get(Utils.Profile.kGlobalSection, "version").value;
 					String[] oldVersion = oldVersionString.split("\\.");
-					String[] newVersion = newProfile.get("version").value.split("\\.");
+					String[] newVersion =
+					    newProfile.get(Utils.Profile.kGlobalSection, "version").value.split("\\.");
 					Boolean newer = null;
 					for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
 						if (!oldVersion[i].equals(newVersion[i])) {
@@ -848,7 +861,17 @@ class HandleCommand {
 						    "', your version is '" + newProfile.get("version").value + "'.");
 					}
 
-					isUpdate = true;
+					ResultSet sql = Utils.sqlQuery(
+					    Utils.Databases.kAddOns,
+					    "select id,security,quality from addons where name='" + cmd[1] + "'");
+					sql.next();
+					oldSecurity = sql.getInt("security");
+					oldQuality = sql.getInt("quality");
+					Utils.sqlCmd(
+					    Utils.Databases.kAddOns,
+					    "update addons set security=0, quality=0 where id=" + sql.getLong("id"));
+
+					ServerUtils.doDelete(addOnDir);
 				} else {
 					Utils.sqlCmd(
 					    Utils.Databases.kAddOns,
@@ -873,29 +896,25 @@ class HandleCommand {
 				    "\n- Descname: " + newProfile.get("name").value +
 				    "\n- Description: " + newProfile.get("description").value +
 				    "\n- Category: " + newProfile.get("category").value +
-				    (newProfile.containsKey("sync_safe") ?
+				    (newProfile.get("sync_safe") != null ?
                          ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
                          ("\n- Sync-safe: N/A")) +
 				    "\n- Min WL version: " +
-				    (newProfile.containsKey("min_wl_version") ?
+				    (newProfile.get("min_wl_version") != null ?
                          newProfile.get("min_wl_version").value :
                          "N/A") +
 				    "\n- Max WL version: " +
-				    (newProfile.containsKey("max_wl_version") ?
+				    (newProfile.get("max_wl_version") != null ?
                          newProfile.get("max_wl_version").value :
                          "N/A") +
 				    "\n- Requires: " +
 				    (newProfile.get("requires").value.isEmpty() ?
                          "N/A" :
                          newProfile.get("requires").value) +
+				    (isUpdate ?
+                         ("\n- Old security: " + oldSecurity + "\n- Old quality: " + oldQuality) :
+                         "") +
 				    "\n\nPlease review this add-on soonish.");
-				if (isUpdate) {
-					Utils.sqlCmd(Utils.Databases.kAddOns,
-					             "update addons set security=0, quality=0 where id=" +
-					                 Utils.getAddOnID(cmd[1]));
-
-					ServerUtils.doDelete(addOnDir);
-				}
 				tempDir.renameTo​(addOnDir);
 
 				out.println("ENDOFSTREAM");
