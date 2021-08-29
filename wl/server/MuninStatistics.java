@@ -83,7 +83,7 @@ public class MuninStatistics {
 	 */
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
 		out.println((System.currentTimeMillis() - initTime) / (1000.0 * 60 * 24));
-		out.println(clientLifetimes.stream().mapToDouble​(a -> a).average().orElse​(0) / 1000);
+		out.println(clientLifetimes.stream().mapToDouble(a -> a).average().orElse(0) / 1000);
 
 		out.println(registeredUsers);
 		out.println(unregisteredUsers);

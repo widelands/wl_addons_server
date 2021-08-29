@@ -417,7 +417,7 @@ abstract class ServerUtils {
 		if (min_wl_version == null && max_wl_version == null) {
 			return true;
 		}
-		final int tilde = wl_version.indexOf​('~');
+		final int tilde = wl_version.indexOf('~');
 		if (tilde < 0) {
 			int[] wl = string_to_version(wl_version);
 			if (min_wl_version != null && less(wl, string_to_version(min_wl_version))) {

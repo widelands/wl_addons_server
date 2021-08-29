@@ -367,7 +367,7 @@ class HandleCommand {
 		ResultSet sql = Utils.sqlQuery(
 		    Utils.Databases.kAddOns, "select vote from uservotes where user=" + userDatabaseID +
 		                                 " and addon=" + Utils.getAddOnID(cmd[1]));
-		out.println(sql.next() ? ("" + sql.getLong​(1)) : "0");
+		out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
 		out.println("ENDOFSTREAM");
 	}
 
@@ -721,7 +721,7 @@ class HandleCommand {
 				File result = new File("screenshots", cmd[1]);
 				result.mkdirs();
 				result = new File(result, filename);
-				file.renameTo​(result);
+				file.renameTo(result);
 				ServerUtils.doDelete(tempDir);
 				TreeMap<String, Utils.Value> ch = new TreeMap<>();
 				int whitespaces = Integer.valueOf(cmd[4]);
@@ -896,7 +896,7 @@ class HandleCommand {
 
 					ServerUtils.doDelete(addOnDir);
 				}
-				tempDir.renameTo​(addOnDir);
+				tempDir.renameTo(addOnDir);
 
 				out.println("ENDOFSTREAM");
 			} catch (Exception e) {
