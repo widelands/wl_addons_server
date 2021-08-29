@@ -104,10 +104,6 @@ class SyncThread implements Runnable {
 					       + "has been restarted. Please resolve the merge conflicts quickly."
 					       + "  \nThank you :)";
 
-					Utils.bash("bash", "-c", "git status");
-					Utils.bash("bash", "-c", "git restore --staged .");
-					Utils.bash("bash", "-c", "git checkout .");
-
 					Utils.sendNotificationToGitHubThread(msg);
 				} catch (Exception x) {
 					Utils.fatalError("unable to send failure notification!", x);
