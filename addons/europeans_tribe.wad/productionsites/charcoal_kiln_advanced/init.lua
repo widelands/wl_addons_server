@@ -37,10 +37,10 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=burn_log_basic",
             "call=burn_log",
             "call=burn_blackwood",
             "call=burn_planks",
+            "call=burn_log_basic",
             "return=skipped"
          }
       },
@@ -60,7 +60,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
          descname = _"producing coal",
          actions = {
-            "return=skipped unless economy needs coal or workers need experience",
+            "return=skipped unless economy needs coal",
             "consume=log:12",
             "sleep=duration:10s",
             "animate=working duration:2m",
@@ -71,7 +71,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
          descname = _"producing coal",
          actions = {
-            "return=skipped unless economy needs coal or workers need experience",
+            "return=skipped unless economy needs coal",
             "return=skipped when economy needs blackwood",
             "consume=blackwood:6",
             "sleep=duration:10s",
@@ -83,7 +83,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
          descname = _"producing coal",
          actions = {
-            "return=skipped unless economy needs coal or workers need experience",
+            "return=skipped unless economy needs coal",
             "return=skipped when economy needs planks",
             "consume=planks:6",
             "sleep=duration:10s",

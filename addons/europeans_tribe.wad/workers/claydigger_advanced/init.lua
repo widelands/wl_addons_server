@@ -8,7 +8,7 @@ descriptions:new_worker_type {
    descname = pgettext ("europeans_worker", "Advanced Clay Digger"),
    icon = dirname .. "menu.png",
    vision_range = 2,
-
+   
    programs = {
       check_dike = {
          "findspace=size:swim radius:16 terraform:diking",

@@ -30,18 +30,8 @@ init = {
                     workers = {
                         europeans_carrier = 16,
                         europeans_builder = 12,
-                        europeans_farmer_basic = 8,
-                        europeans_miner_basic = 3,
-                        europeans_lumberjack_basic = 2,
-                        europeans_forester_basic = 2,
-                        europeans_carpenter_basic = 1,
-                        europeans_stonecutter_basic = 1,
-                        europeans_stonemason_normal = 1,
-                        europeans_weaver_basic = 1,
-                        europeans_weaver_normal = 1,
                         europeans_smith_basic = 1,
                         europeans_trainer_basic = 1,
-                        europeans_shipwright_basic = 1
                   },
                     soldiers = {
                         [{0,0,0,0}] = 6,
@@ -56,10 +46,10 @@ init = {
                 log = 192,
                 granite = 64,
                 reed = 64,
+                iron = 48,
                 blackwood = 32,
                 planks = 32,
                 cloth = 32,
-                iron = 32,
                 ore = 32,
                 coal = 32,
                 spidercloth = 32,
@@ -68,14 +58,15 @@ init = {
                 marble_column = 24,
                 diamond = 24,
                 gold = 4,
-                shovel = 16,
-                buckets = 10,
-                basket = 8,
+                buckets = 16,
+                basket = 16,
+                hammer = 12,
+                saw = 12,
+                shovel = 8,
                 pick = 6,
+                scythe = 6,
+                felling_ax = 4,
                 fire_tongs = 4,
-                hammer = 4,
-                saw = 4,
-                scythe = 4,
                 bread_paddle = 2,
                 fishing_net = 2,
                 fishing_rod = 2,
@@ -87,17 +78,7 @@ init = {
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 24,
-                europeans_farmer_basic = 12,
                 europeans_trainer_basic = 3,
-                europeans_lumberjack_basic = 3,
-                europeans_forester_basic = 3,
-                europeans_carpenter_basic = 2,
-                europeans_stonecutter_basic = 2,
-                europeans_stonemason_basic = 2,
-                europeans_smith_basic = 2,
-                europeans_weaver_basic = 1,
-                europeans_weaver_normal = 1,
-                europeans_shipwright_basic = 1,
           },
             soldiers = {
                 [{0,0,0,0}] = 16,
@@ -113,10 +94,10 @@ init = {
             port:set_wares("log", math.ceil(192 / #ports))
             port:set_wares("reed", math.ceil(96 / #ports))
             port:set_wares("granite", math.ceil(64 / #ports))
+            port:set_wares("iron", math.ceil(48 / #ports))
             port:set_wares("cloth", math.ceil(32 / #ports))
             port:set_wares("blackwood", math.ceil(32 / #ports))
             port:set_wares("planks", math.ceil(32 / #ports))
-            port:set_wares("iron", math.ceil(32 / #ports))
             port:set_wares("ore", math.ceil(32 / #ports))
             port:set_wares("coal", math.ceil(32 / #ports))
             port:set_wares("spidercloth", math.ceil(32 / #ports))
@@ -125,14 +106,15 @@ init = {
             port:set_wares("marble_column", math.ceil(24 / #ports))
             port:set_wares("diamond", math.ceil(16 / #ports))
             port:set_wares("gold", math.ceil(4 / #ports))
-            port:set_wares("shovel", math.ceil(16 / #ports))
-            port:set_wares("buckets", math.ceil(10 / #ports))
-            port:set_wares("basket", math.ceil(8 / #ports))
+            port:set_wares("buckets", math.ceil(16 / #ports))
+            port:set_wares("basket", math.ceil(16 / #ports))
+            port:set_wares("hammer", math.ceil(12 / #ports))
+            port:set_wares("saw", math.ceil(12 / #ports))
+            port:set_wares("shovel", math.ceil(8 / #ports))
             port:set_wares("pick", math.ceil(6 / #ports))
+            port:set_wares("scythe", math.ceil(6 / #ports))
+            port:set_wares("felling_ax", math.ceil(4 / #ports))
             port:set_wares("fire_tongs", math.ceil(4 / #ports))
-            port:set_wares("hammer", math.ceil(4 / #ports))
-            port:set_wares("saw", math.ceil(4 / #ports))
-            port:set_wares("scythe", math.ceil(4 / #ports))
             port:set_wares("bread_paddle", math.ceil(2 / #ports))
             port:set_wares("fishing_net", math.ceil(2 / #ports))
             port:set_wares("fishing_rod", math.ceil(2 / #ports))

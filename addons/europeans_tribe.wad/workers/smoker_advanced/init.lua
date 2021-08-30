@@ -9,7 +9,7 @@ descriptions:new_worker_type {
    animation_directory = dirname,
    icon = dirname .. "menu.png",
    vision_range = 2,
-
+   
    ware_hotspot = {0, 20},
 
    spritesheets = {

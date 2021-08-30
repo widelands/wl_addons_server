@@ -9,7 +9,7 @@ descriptions:new_worker_type {
    animation_directory = dirname,
    icon = dirname .. "menu.png",
    vision_range = 2,
-
+   
    programs = {
       plant = {
          "findspace=size:any radius:12 avoid:field saplingsearches:12",

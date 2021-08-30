@@ -23,8 +23,8 @@ descriptions:new_productionsite_type {
    aihints = {},
 
    working_positions = {
-      europeans_baker_advanced = 1,
-      europeans_smoker_advanced = 1
+      europeans_baker_advanced = 2,
+      europeans_smoker_advanced = 2
    },
 
 
@@ -40,12 +40,12 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=produce_ration_basic",
             "call=produce_ration",
-            "call=produce_snack_basic",
             "call=produce_snack",
-            "call=produce_meal_basic",
             "call=produce_meal",
+            "call=produce_ration_basic",
+            "call=produce_snack_basic",
+            "call=produce_meal_basic",
             "return=skipped"
          }
       },
@@ -68,7 +68,7 @@ descriptions:new_productionsite_type {
          descname = _"preparing a ration",
          actions = {
             "return=skipped when economy needs water and not economy needs ration",
-            "return=skipped unless economy needs ration or workers need experience",
+            "return=skipped unless economy needs ration",
             "sleep=duration:10s",
             "consume=water:2 flour:2 fish,meat:2",
             "animate=working duration:35s",
@@ -94,7 +94,7 @@ descriptions:new_productionsite_type {
          descname = _"preparing a snack",
          actions = {
             "return=skipped when economy needs water and not economy needs snack",
-            "return=skipped unless economy needs snack or workers need experience",
+            "return=skipped unless economy needs snack",
             "sleep=duration:10s",
             "consume=water:4 flour:4 fish,meat:4",
             "animate=working duration:35s",
@@ -120,7 +120,7 @@ descriptions:new_productionsite_type {
          descname = _"preparing a meal",
          actions = {
             "return=skipped when economy needs water and not economy needs meal",
-            "return=skipped unless economy needs meal or workers need experience",
+            "return=skipped unless economy needs meal",
             "sleep=duration:10s",
             "consume=water:4 flour:4 fish,meat:4",
             "animate=working duration:35s",

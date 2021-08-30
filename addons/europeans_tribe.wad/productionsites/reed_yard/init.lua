@@ -46,10 +46,11 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=plant_basic",
             "call=plant",
+            "call=harvest",
+            "call=plant_basic",
             "call=harvest_basic",
-            "call=harvest"
+            "return=skipped"
          }
       },
       plant_basic = {

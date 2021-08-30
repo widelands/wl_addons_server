@@ -393,7 +393,7 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for an europeans ware: Water, part 1
                   pgettext("ware", "Water is the essence of life!"),
                   -- TRANSLATORS: Helptext for an europeans ware: Water, part 2
-                  pgettext("europeans_ware", "Water is used by claydigger, by forester, by all farms, and in the tavern and the brewery. The spider farm and the sheep farm need to be supplied with water, too.")
+                  pgettext("europeans_ware", "Water is used by the claydigger, by the forester, by all farms, and in the tavern and the brewery. The spider farm and the sheep farm need to be supplied with water, too.")
                }
             }
          },
@@ -529,7 +529,7 @@ descriptions:new_tribe {
          },
          {
             name = "gold",
-            default_target_quantity = 32,
+            default_target_quantity = 16,
             preciousness = 16,
             helptexts = {
                purpose = {
@@ -544,8 +544,21 @@ descriptions:new_tribe {
       {
          -- Tools 1
          {
+            name = "basket",
+            default_target_quantity = 8,
+            preciousness = 0,
+             helptexts = {
+               purpose = {
+                  -- TRANSLATORS: Helptext for an europeans ware: Basket, part 1
+                  pgettext("europeans_ware", "This basket is needed by the farmer for harvesting the fruits and grapes and needed by miller and by gamekeeper."),
+                  -- TRANSLATORS: Helptext for an europeans ware: Basket, part 2
+                  pgettext("europeans_ware", "It is also used by advanced carrier to transport wares. It is produced by all smithies.")
+               }
+            }
+         },
+         {
             name = "buckets",
-            default_target_quantity = 2,
+            default_target_quantity = 8,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -558,7 +571,7 @@ descriptions:new_tribe {
          },
          {
             name = "shovel",
-            default_target_quantity = 2,
+            default_target_quantity = 8,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -570,8 +583,34 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "felling_ax",
+            default_target_quantity = 4,
+            preciousness = 1,
+            helptexts = {
+               purpose = {
+                  -- TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 1
+                  pgettext("europeans_ware", "The felling ax is the tool to chop down trees."),
+                  -- TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 2
+                  pgettext("europeans_ware", "Felling axes are used by lumberjacks and produced produced by all smithies.")
+               }
+            }
+         },
+         {
+            name = "pick",
+            default_target_quantity = 4,
+            preciousness = 1,
+            helptexts = {
+               purpose = {
+                   -- TRANSLATORS: Helptext for an europeans ware: Pick, part 1
+                   pgettext("europeans_ware", "The pick is an essential tool. Picks are used by stonemasons and miners."),
+                   -- TRANSLATORS: Helptext for an europeans ware: Pick, part 2
+                   pgettext("europeans_ware", "They are produced produced by all smithies.")
+                }
+            }
+         },
+         {
             name = "saw",
-            default_target_quantity = 2,
+            default_target_quantity = 4,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -584,7 +623,7 @@ descriptions:new_tribe {
          },
          {
             name = "hammer",
-            default_target_quantity = 2,
+            default_target_quantity = 4,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -592,32 +631,6 @@ descriptions:new_tribe {
                   pgettext("europeans_ware", "The hammer is an essential tool. Geologists, builders, and smiths all need a hammer."),
                   -- TRANSLATORS: Helptext for an europeans ware: Hammer, part 2
                   pgettext("europeans_ware", "Make sure you’ve always got some in reserve! They are produced by all smithies.")
-               }
-            }
-         },
-         {
-            name = "pick",
-            default_target_quantity = 2,
-            preciousness = 1,
-            helptexts = {
-               purpose = {
-                   -- TRANSLATORS: Helptext for an europeans ware: Pick, part 1
-                   pgettext("europeans_ware", "The pick is an essential tool. Picks are used by stonemasons and miners."),
-                   -- TRANSLATORS: Helptext for an europeans ware: Pick, part 2
-                   pgettext("europeans_ware", "They are produced produced by all smithies.")
-                }
-            }
-         },
-         {
-            name = "felling_ax",
-            default_target_quantity = 2,
-            preciousness = 1,
-            helptexts = {
-               purpose = {
-                  -- TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 1
-                  pgettext("europeans_ware", "The felling ax is the tool to chop down trees."),
-                  -- TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 2
-                  pgettext("europeans_ware", "Felling axes are used by lumberjacks and produced produced by all smithies.")
                }
             }
          },
@@ -631,19 +644,6 @@ descriptions:new_tribe {
                   pgettext("europeans_ware", "Fire tongs are the tools for smelting ores."),
                   -- TRANSLATORS: Helptext for an europeans ware: Fire Tongs, part 2
                   pgettext("europeans_ware", "They are used in the smelting works and smithies and produced produced by all smithies.")
-               }
-            }
-         },
-         {
-            name = "milking_tongs",
-            default_target_quantity = 2,
-            preciousness = 1,
-            helptexts = {
-               purpose = {
-                  -- TRANSLATORS: Helptext for an europeans ware: Milking Tongs, part 1
-                  pgettext("europeans_ware", "Milking tongs are used by the spider breeder to milk the spiders."),
-                  -- TRANSLATORS: Helptext for an europeans ware: Milking Tongs, part 2
-                  pgettext("europeans_ware", "They are produced by all smithies.")
                }
             }
          },
@@ -664,19 +664,6 @@ descriptions:new_tribe {
       {
          -- Tools 2
          {
-            name = "basket",
-            default_target_quantity = 2,
-            preciousness = 0,
-             helptexts = {
-               purpose = {
-                  -- TRANSLATORS: Helptext for an europeans ware: Basket, part 1
-                  pgettext("europeans_ware", "This basket is needed by the farmer for harvesting the fruits and grapes and needed by miller and by gamekeeper."),
-                  -- TRANSLATORS: Helptext for an europeans ware: Basket, part 2
-                  pgettext("europeans_ware", "It is also used by advanced carrier to transport wares. It is produced by all smithies.")
-               }
-            }
-         },
-         {
             name = "scythe",
             default_target_quantity = 2,
             preciousness = 0,
@@ -686,6 +673,19 @@ descriptions:new_tribe {
                   pgettext("europeans_ware", "The scythe is the tool of the farmers."),
                   -- TRANSLATORS: Helptext for an europeans ware: Scythe, part 2
                   pgettext("europeans_ware", "Scythes are produced by all smithies.")
+               }
+            }
+         },
+         {
+            name = "milking_tongs",
+            default_target_quantity = 2,
+            preciousness = 1,
+            helptexts = {
+               purpose = {
+                  -- TRANSLATORS: Helptext for an europeans ware: Milking Tongs, part 1
+                  pgettext("europeans_ware", "Milking tongs are used by the spider breeder to milk the spiders."),
+                  -- TRANSLATORS: Helptext for an europeans ware: Milking Tongs, part 2
+                  pgettext("europeans_ware", "They are produced by all smithies.")
                }
             }
          },
@@ -716,19 +716,6 @@ descriptions:new_tribe {
             }
          },
          {
-            name = "hunting_bow",
-            default_target_quantity = 2,
-            preciousness = 0,
-            helptexts = {
-               purpose = {
-                  -- TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 1
-                  pgettext("europeans_ware", "This bow is used by the hunter."),
-                  -- TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 2
-                  pgettext("europeans_ware", "They are produced by all smithies.")
-               }
-            }
-         },
-         {
             name = "hunting_spear",
             default_target_quantity = 2,
             preciousness = 0,
@@ -737,6 +724,19 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 1
                   pgettext("europeans_ware", "This spear is light enough to be thrown, but heavy enough to kill any animal in one blow. It is only used by hunters."),
                   -- TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 2
+                  pgettext("europeans_ware", "They are produced by all smithies.")
+               }
+            }
+         },
+         {
+            name = "hunting_bow",
+            default_target_quantity = 2,
+            preciousness = 0,
+            helptexts = {
+               purpose = {
+                  -- TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 1
+                  pgettext("europeans_ware", "This bow is used by the hunter."),
+                  -- TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 2
                   pgettext("europeans_ware", "They are produced by all smithies.")
                }
             }

@@ -72,10 +72,10 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=mixing_grout_basic",
-            "call=burning_bricks_basic",
             "call=mixing_grout",
             "call=burning_bricks",
+            "call=mixing_grout_basic",
+            "call=burning_bricks_basic",
             "return=skipped"
          }
       },
