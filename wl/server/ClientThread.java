@@ -94,9 +94,9 @@ class ClientThread implements Runnable {
 				userDatabaseID = uid;
 
 				ResultSet sql =
-				    Utils.sqlQuery(Utils.Databases.kWebsite,
-				                   "select permissions,password from wlggz_ggzauth where user_id=" +
-				                       userDatabaseID);
+				    Utils.sql(Utils.Databases.kWebsite,
+				              "select permissions,password from wlggz_ggzauth where user_id=?",
+				              userDatabaseID);
 				if (!sql.next())
 					throw new ServerUtils.WLProtocolException(
 					    "User " + username + " did not set an online gaming password");

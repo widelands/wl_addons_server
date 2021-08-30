@@ -56,7 +56,7 @@ class SyncThread implements Runnable {
 				Thread.sleep(then - now);
 
 				Utils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
-				for (Utils.Databases db : Utils.Databases.values()) Utils.sqlCmd(db, "show tables");
+				for (Utils.Databases db : Utils.Databases.values()) Utils.sql(db, "show tables");
 
 				Utils.log("Backing up the database...");
 				Runtime.getRuntime().exec(new String[] {

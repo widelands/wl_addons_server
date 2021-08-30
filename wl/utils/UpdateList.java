@@ -92,16 +92,16 @@ public class UpdateList {
 				continue;
 			}
 
-			ResultSet sqlMain = Utils.sqlQuery(
-			    Utils.Databases.kAddOns, "select * from addons where name='" + addon + "'");
+			ResultSet sqlMain =
+			    Utils.sql(Utils.Databases.kAddOns, "select * from addons where name=?", addon);
 			sqlMain.next();
 			final long addOnID = sqlMain.getLong("id");
 
 			long[] votes = Utils.getVotes(addOnID);
 
 			List<Utils.AddOnComment> comments = new ArrayList<>();
-			ResultSet sql = Utils.sqlQuery(
-			    Utils.Databases.kAddOns, "select * from usercomments where addon=" + addOnID);
+			ResultSet sql = Utils.sql(
+			    Utils.Databases.kAddOns, "select * from usercomments where addon=?", addOnID);
 			while (sql.next()) {
 				comments.add(new Utils.AddOnComment(
 				    sql.getLong("id"), sql.getLong("user"), sql.getLong("timestamp"), null, null,
