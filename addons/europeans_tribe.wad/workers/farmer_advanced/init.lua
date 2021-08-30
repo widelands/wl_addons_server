@@ -9,7 +9,7 @@ descriptions:new_worker_type {
    animation_directory = dirname,
    icon = dirname .. "menu.png",
    vision_range = 2,
-
+   
    programs = {
       plant_barley = {
          "findspace=size:any radius:4 space",

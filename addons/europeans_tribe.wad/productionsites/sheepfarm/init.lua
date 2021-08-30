@@ -54,8 +54,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=produce_wool_basic",
             "call=produce_wool",
+            "call=produce_wool_basic",
             "return=skipped"
          }
       },

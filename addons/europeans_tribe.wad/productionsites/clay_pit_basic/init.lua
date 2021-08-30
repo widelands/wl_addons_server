@@ -70,9 +70,9 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "callworker=check_dig",
-            "call=making_pond",
-            "callworker=check_dig",
             "call=digging_clay",
+            "callworker=check_dig",
+            "call=making_pond",
             "return=skipped"
          }
       },

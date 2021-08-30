@@ -69,8 +69,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=produce_ration_basic",
             "call=produce_ration",
+            "call=produce_ration_basic",
             "return=skipped"
          }
       },

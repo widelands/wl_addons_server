@@ -31,14 +31,14 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=mining_water_basic",
             "call=mining_water",
+            "call=mining_water_basic",
             "return=skipped"
          }
       },
       mining_water_basic = {
          -- TRANSLATORS: Completed/Skipped/Did not start mining water because ...
-         descname = _"working",
+         descname = _"mining water",
          actions = {
             "return=skipped when economy needs water",
             "sleep=duration:60s",
@@ -49,9 +49,9 @@ descriptions:new_productionsite_type {
       },
       mining_water = {
          -- TRANSLATORS: Completed/Skipped/Did not start mining water because ...
-         descname = _"working",
+         descname = _"mining water",
          actions = {
-            "return=skipped unless economy needs water or workers need experience",
+            "return=skipped unless economy needs water",
             "sleep=duration:5s",
             "animate=working duration:10s",
             "mine=resource_water radius:4 yield:100% when_empty:99%",

@@ -44,27 +44,25 @@ descriptions:new_productionsite_type {
    },
    
    inputs = {
-      { name = "europeans_carrier", amount = 6 },
-      { name = "basket", amount = 6 },
-      { name = "buckets", amount = 3 },
-      { name = "shovel", amount = 3 },
-      { name = "saw", amount = 3 },
-      { name = "hammer", amount = 3 },
-      { name = "pick", amount = 3 },
-      { name = "felling_ax", amount = 3 },
-      { name = "fire_tongs", amount = 3 },
-      { name = "scythe", amount = 3 },
-      { name = "milking_tongs", amount = 3 },
-      { name = "needles", amount = 3 },
-      { name = "fishing_rod", amount = 3 },
-      { name = "fishing_net", amount = 3 },
-      { name = "hunting_bow", amount = 3 },
-      { name = "hunting_spear", amount = 3 },
-      { name = "bread_paddle", amount = 3 },
-      { name = "hook_pole", amount = 3 },
-      { name = "spear_wooden", amount = 3 },
-      { name = "armor", amount = 3 },
-      { name = "tabard", amount = 3 }
+      { name = "europeans_carrier", amount = 4 },
+      { name = "basket", amount = 2 },
+      { name = "buckets", amount = 2 },
+      { name = "shovel", amount = 2 },
+      { name = "hammer", amount = 2 },
+      { name = "saw", amount = 2 },
+      { name = "pick", amount = 2 },
+      { name = "felling_ax", amount = 1 },
+      { name = "fire_tongs", amount = 1 },
+      { name = "needles", amount = 1 },
+      { name = "scythe", amount = 1 },
+      { name = "milking_tongs", amount = 1 },
+      { name = "fishing_rod", amount = 1 },
+      { name = "hunting_bow", amount = 1 },
+      { name = "bread_paddle", amount = 1 },
+      { name = "hook_pole", amount = 1 },
+      { name = "spear_wooden", amount = 2 },
+      { name = "armor", amount = 2 },
+      { name = "tabard", amount = 2 }
    },
 
    programs = {
@@ -72,6 +70,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
+            "call=recruit_baker",
             "call=recruit_builder",
             "call=recruit_smith",
             "call=recruit_farmer",
@@ -85,7 +84,6 @@ descriptions:new_productionsite_type {
             "call=recruit_fisher",
             "call=recruit_hunter",
             "call=recruit_miller",
-            "call=recruit_baker",
             "call=recruit_smoker",
             "call=recruit_brewer",
             "call=recruit_miner",
@@ -103,287 +101,12 @@ descriptions:new_productionsite_type {
             "return=skipped"
          }
       },
-      recruit_builder = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting builder"),
-         actions = {
-            "return=skipped unless economy needs europeans_builder",
-            "sleep=duration:20s",
-            "consume=hammer saw europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_builder"
-         }
-      },
-      recruit_smith = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting smith"),
-         actions = {
-            "return=skipped unless economy needs europeans_smith_normal",
-            "sleep=duration:20s",
-            "consume=hammer fire_tongs saw europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_smith_normal"
-         }
-      },
-      recruit_farmer = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting farmer"),
-         actions = {
-            "return=skipped unless economy needs europeans_farmer_normal",
-            "sleep=duration:20s",
-            "consume=scythe basket europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_farmer_normal"
-         }
-      },
-      recruit_lumberjack = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting lumberjack"),
-         actions = {
-            "return=skipped unless economy needs europeans_lumberjack_normal",
-            "sleep=duration:20s",
-            "consume=felling_ax saw europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_lumberjack_normal"
-         }
-      },
-      recruit_carpenter = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting carpenter"),
-         actions = {
-            "return=skipped unless economy needs europeans_carpenter_normal",
-            "sleep=duration:20s",
-            "consume=saw europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_carpenter_normal"
-         }
-      },
-      recruit_stonecutter = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting stonecutter"),
-         actions = {
-            "return=skipped unless economy needs europeans_stonecutter_normal",
-            "sleep=duration:20s",
-            "consume=pick europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_stonecutter_normal"
-         }
-      },
-      recruit_stonemason = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting stonemason"),
-         actions = {
-            "return=skipped unless economy needs europeans_stonemason_normal",
-            "sleep=duration:20s",
-            "consume=pick shovel buckets europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_stonemason_normal"
-         }
-      },
-      recruit_charcoal_burner = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting charcoal burner"),
-         actions = {
-            "return=skipped unless economy needs europeans_charcoal_burner_normal",
-            "sleep=duration:20s",
-            "consume=shovel buckets europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_charcoal_burner_normal"
-         }
-      },
-      recruit_breeder = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting breeder"),
-         actions = {
-            "return=skipped unless economy needs europeans_breeder_normal",
-            "sleep=duration:20s",
-            "consume=milking_tongs europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_breeder_normal"
-         }
-      },
-      recruit_weaver = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting weaver"),
-         actions = {
-            "return=skipped unless economy needs europeans_weaver_normal",
-            "sleep=duration:20s",
-            "consume=needles europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_weaver_normal"
-         }
-      },
-      recruit_fisher = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting fisher"),
-         actions = {
-            "return=skipped unless economy needs europeans_fisher_normal",
-            "sleep=duration:20s",
-            "consume=buckets fishing_rod fishing_net europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_fisher_normal"
-         }
-      },
-      recruit_hunter = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting hunter"),
-         actions = {
-            "return=skipped unless economy needs europeans_hunter_normal",
-            "sleep=duration:20s",
-            "consume=basket hunting_bow hunting_spear europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_hunter_normal"
-         }
-      },
-      recruit_miller = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting miller"),
-         actions = {
-            "return=skipped unless economy needs europeans_miller_normal",
-            "sleep=duration:20s",
-            "consume=basket europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_miller_normal"
-         }
-      },
-      recruit_baker = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting baker"),
-         actions = {
-            "return=skipped unless economy needs europeans_baker_normal",
-            "sleep=duration:20s",
-            "consume=bread_paddle europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_baker_normal"
-         }
-      },
-      recruit_smoker = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting smoker"),
-         actions = {
-            "return=skipped unless economy needs europeans_smoker_normal",
-            "sleep=duration:20s",
-            "consume=hook_pole europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_smoker_normal"
-         }
-      },
-      recruit_brewer = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting brewer"),
-         actions = {
-            "return=skipped unless economy needs europeans_brewer_normal",
-            "sleep=duration:20s",
-            "consume=buckets europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_brewer_normal"
-         }
-      },
-      recruit_miner = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting miner"),
-         actions = {
-            "return=skipped unless economy needs europeans_miner_normal",
-            "sleep=duration:20s",
-            "consume=pick shovel europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_miner_normal"
-         }
-      },
-      recruit_smelter = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting smelter"),
-         actions = {
-            "return=skipped unless economy needs europeans_smelter_normal",
-            "sleep=duration:20s",
-            "consume=fire_tongs shovel europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_smelter_normal"
-         }
-      },
-      recruit_forester = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting forester"),
-         actions = {
-            "return=skipped unless economy needs europeans_forester_normal",
-            "sleep=duration:20s",
-            "consume=buckets shovel europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_forester_normal"
-         }
-      },
-      recruit_claydigger = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting claydigger"),
-         actions = {
-            "return=skipped unless economy needs europeans_claydigger_normal",
-            "sleep=duration:20s",
-            "consume=buckets shovel europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_claydigger_normal"
-         }
-      },
-      recruit_beekeeper = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting beekeeper"),
-         actions = {
-            "return=skipped unless economy needs europeans_beekeeper_normal",
-            "sleep=duration:20s",
-            "consume=buckets europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_beekeeper_normal"
-         }
-      },
-      recruit_shipwright = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting shipwright"),
-         actions = {
-            "return=skipped unless economy needs europeans_shipwright_normal",
-            "sleep=duration:20s",
-            "consume=hammer saw europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_shipwright_normal"
-         }
-      },
-      recruit_geologist = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting geologist"),
-         actions = {
-            "return=skipped unless economy needs europeans_geologist",
-            "sleep=duration:20s",
-            "consume=hammer europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_geologist"
-         }
-      },
-      recruit_scout = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting scout"),
-         actions = {
-            "return=skipped unless economy needs europeans_scout_normal",
-            "sleep=duration:20s",
-            "consume=europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_scout_normal"
-         }
-      },
-      recruit_trainer = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-         descname = pgettext("europeans_building", "recruiting trainer"),
-         actions = {
-            "return=skipped unless economy needs europeans_trainer_normal",
-            "sleep=duration:20s",
-            "consume=armor,tabard spear_wooden europeans_carrier",
-            "animate=working duration:30s",
-            "recruit=europeans_trainer_normal"
-         }
-      },
       recruit_carrier_1 = {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
          descname = pgettext("europeans_building", "recruiting first carrier"),
          actions = {
             "return=skipped unless economy needs europeans_carrier_1",
-            "sleep=duration:20s",
+            "sleep=duration:10s",
             "consume=europeans_carrier",
             "animate=working duration:30s",
             "recruit=europeans_carrier_1"
@@ -394,7 +117,7 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting second carrier"),
          actions = {
             "return=skipped unless economy needs europeans_carrier_2",
-            "sleep=duration:20s",
+            "sleep=duration:10s",
             "consume=basket europeans_carrier",
             "animate=working duration:30s",
             "recruit=europeans_carrier_2"
@@ -405,10 +128,331 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting third carrier"),
          actions = {
             "return=skipped unless economy needs europeans_carrier_3",
-            "sleep=duration:20s",
+            "sleep=duration:10s",
             "consume=basket europeans_carrier",
             "animate=working duration:30s",
             "recruit=europeans_carrier_3"
+         }
+      },
+      recruit_baker = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting baker"),
+         actions = {
+            "return=skipped unless economy needs europeans_baker_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=bread_paddle",
+            "animate=working duration:15s",
+            "recruit=europeans_baker_normal"
+         }
+      },
+      recruit_beekeeper = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting beekeeper"),
+         actions = {
+            "return=skipped unless economy needs europeans_beekeeper_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_beekeeper_normal"
+         }
+      },
+      recruit_breeder = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting breeder"),
+         actions = {
+            "return=skipped unless economy needs europeans_breeder_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=milking_tongs buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_breeder_normal"
+         }
+      },
+      recruit_brewer = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting brewer"),
+         actions = {
+            "return=skipped unless economy needs europeans_brewer_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_brewer_normal"
+         }
+      },
+      recruit_builder = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting builder"),
+         actions = {
+            "return=skipped unless economy needs europeans_builder",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=hammer saw",
+            "animate=working duration:15s",
+            "recruit=europeans_builder"
+         }
+      },
+      recruit_carpenter = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting carpenter"),
+         actions = {
+            "return=skipped unless economy needs europeans_carpenter_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=saw",
+            "animate=working duration:15s",
+            "recruit=europeans_carpenter_normal"
+         }
+      },
+      recruit_charcoal_burner = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting charcoal burner"),
+         actions = {
+            "return=skipped unless economy needs europeans_charcoal_burner_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=shovel buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_charcoal_burner_normal"
+         }
+      },
+      recruit_claydigger = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting claydigger"),
+         actions = {
+            "return=skipped unless economy needs europeans_claydigger_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=shovel buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_claydigger_normal"
+         }
+      },
+      recruit_farmer = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting farmer"),
+         actions = {
+            "return=skipped unless economy needs europeans_farmer_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=scythe basket",
+            "animate=working duration:15s",
+            "recruit=europeans_farmer_normal"
+         }
+      },
+      recruit_fisher = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting fisher"),
+         actions = {
+            "return=skipped unless economy needs europeans_fisher_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=fishing_rod buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_fisher_normal"
+         }
+      },
+      recruit_forester = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting forester"),
+         actions = {
+            "return=skipped unless economy needs europeans_forester_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=shovel buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_forester_normal"
+         }
+      },
+      recruit_geologist = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting geologist"),
+         actions = {
+            "return=skipped unless economy needs europeans_geologist",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=hammer pick",
+            "animate=working duration:15s",
+            "recruit=europeans_geologist"
+         }
+      },
+      recruit_hunter = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting hunter"),
+         actions = {
+            "return=skipped unless economy needs europeans_hunter_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=hunting_bow basket",
+            "animate=working duration:15s",
+            "recruit=europeans_hunter_normal"
+         }
+      },
+      recruit_lumberjack = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting lumberjack"),
+         actions = {
+            "return=skipped unless economy needs europeans_lumberjack_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=felling_ax saw",
+            "animate=working duration:15s",
+            "recruit=europeans_lumberjack_normal"
+         }
+      },
+      recruit_miller = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting miller"),
+         actions = {
+            "return=skipped unless economy needs europeans_miller_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=basket buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_miller_normal"
+         }
+      },
+      recruit_miner = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting miner"),
+         actions = {
+            "return=skipped unless economy needs europeans_miner_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=pick buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_miner_normal"
+         }
+      },
+      recruit_scout = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting scout"),
+         actions = {
+            "return=skipped unless economy needs europeans_scout_normal",
+            "sleep=duration:10s",
+            "consume=europeans_carrier",
+            "animate=working duration:15s",
+            "recruit=europeans_scout_normal"
+         }
+      },
+      recruit_shipwright = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting shipwright"),
+         actions = {
+            "return=skipped unless economy needs europeans_shipwright_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=hammer saw",
+            "animate=working duration:15s",
+            "recruit=europeans_shipwright_normal"
+         }
+      },
+      recruit_smelter = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting smelter"),
+         actions = {
+            "return=skipped unless economy needs europeans_smelter_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=fire_tongs shovel buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_smelter_normal"
+         }
+      },
+      recruit_smith = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting smith"),
+         actions = {
+            "return=skipped unless economy needs europeans_smith_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=fire_tongs hammer saw",
+            "animate=working duration:15s",
+            "recruit=europeans_smith_normal"
+         }
+      },
+      recruit_smoker = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting smoker"),
+         actions = {
+            "return=skipped unless economy needs europeans_smoker_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=hook_pole",
+            "animate=working duration:15s",
+            "recruit=europeans_smoker_normal"
+         }
+      },
+      recruit_stonecutter = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting stonecutter"),
+         actions = {
+            "return=skipped unless economy needs europeans_stonecutter_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=pick buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_stonecutter_normal"
+         }
+      },
+      recruit_stonemason = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting stonemason"),
+         actions = {
+            "return=skipped unless economy needs europeans_stonemason_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=pick shovel buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_stonemason_normal"
+         }
+      },
+      recruit_trainer = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+         descname = pgettext("europeans_building", "recruiting trainer"),
+         actions = {
+            "return=skipped unless economy needs europeans_trainer_normal",
+            "sleep=duration:10s",
+            "consume=armor,tabard spear_wooden europeans_carrier",
+            "animate=working duration:15s",
+            "recruit=europeans_trainer_normal"
+         }
+      },
+      recruit_weaver = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting weaver"),
+         actions = {
+            "return=skipped unless economy needs europeans_weaver_normal",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=needles",
+            "animate=working duration:15s",
+            "recruit=europeans_weaver_normal"
          }
       },
    }

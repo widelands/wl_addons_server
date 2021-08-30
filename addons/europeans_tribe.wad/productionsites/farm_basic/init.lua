@@ -58,7 +58,7 @@ descriptions:new_productionsite_type {
    },
 
    working_positions = {
-      europeans_farmer_basic = 3
+      europeans_farmer_basic = 2
    },
    
    inputs = {

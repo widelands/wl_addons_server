@@ -24,7 +24,8 @@ descriptions:new_productionsite_type {
    buildcost = {
       log = 2,
       reed = 2,
-      granite = 2
+      granite = 2,
+      buckets = 1
    },
    return_on_dismantle = {
       log = 1,
@@ -59,25 +60,25 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=mining_water_basic",
             "call=mining_water",
+            "call=mining_water_basic",
             "return=skipped"
          }
       },
       mining_water_basic = {
          -- TRANSLATORS: Completed/Skipped/Did not start mining water because ...
-         descname = _"working",
+         descname = _"mining water",
          actions = {
             "return=skipped when economy needs water",
             "sleep=duration:60s",
-            "animate=working duration:10s",
+            "animate=working duration:30s",
             "mine=resource_water radius:1 yield:50% when_empty:50%",
             "produce=water"
          }
       },
       mining_water = {
          -- TRANSLATORS: Completed/Skipped/Did not start mining water because ...
-         descname = _"working",
+         descname = _"mining water",
          actions = {
             "return=skipped unless economy needs water or workers need experience",
             "sleep=duration:5s",

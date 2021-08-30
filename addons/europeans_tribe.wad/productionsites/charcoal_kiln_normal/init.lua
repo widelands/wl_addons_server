@@ -53,9 +53,9 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=burn_log_basic",
             "call=burn_log",
             "call=burn_blackwood",
+            "call=burn_log_basic",
             "return=skipped"
          }
       },

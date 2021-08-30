@@ -46,12 +46,12 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=produce_cloth_basic",
             "call=produce_cloth",
-            "call=produce_spidercloth_basic",
             "call=produce_spidercloth",
             "call=produce_tabard",
             "call=produce_armor",
+            "call=produce_cloth_basic",
+            "call=produce_spidercloth_basic",
             "return=skipped"
          }
       },
@@ -72,7 +72,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
          descname = _"weaving cloth",
          actions = {
-            "return=skipped unless economy needs cloth or workers need experience",
+            "return=skipped unless economy needs cloth",
             "sleep=duration:10s",
             "consume=reed:3",
             "playsound=sound/barbarians/weaver priority:90%",
@@ -98,7 +98,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start weaving spidercloth because ...
          descname = _"weaving spidercloth",
          actions = {
-            "return=skipped unless economy needs spidercloth or workers need experience",
+            "return=skipped unless economy needs spidercloth",
             "consume=spider_silk:3",
             "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",
@@ -110,7 +110,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
          descname = _"tailoring a tabard",
          actions = {
-            "return=skipped unless economy needs tabard or workers need experience",
+            "return=skipped unless economy needs tabard",
             "consume=spider_silk",
             "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",
@@ -122,7 +122,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
          descname = _"tailoring an armor",
          actions = {
-            "return=skipped unless economy needs armor or workers need experience",
+            "return=skipped unless economy needs armor",
             "consume=wool:2",
             "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",

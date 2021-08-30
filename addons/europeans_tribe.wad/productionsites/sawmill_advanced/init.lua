@@ -35,10 +35,10 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=saw_log_basic",
             "call=saw_log",
-            "call=hardening_wood_basic",
             "call=hardening_wood",
+            "call=saw_log_basic",
+            "call=hardening_wood_basic",
             "return=skipped"
          }
       },
@@ -60,7 +60,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
          descname = _"sawing logs",
          actions = {
-            "return=skipped unless economy needs planks or workers need experience",
+            "return=skipped unless economy needs planks",
             "consume=log:4",
             "sleep=duration:10s",
             "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
@@ -86,7 +86,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
          descname = _"hardening wood",
          actions = {
-            "return=skipped unless economy needs blackwood or workers need experience",
+            "return=skipped unless economy needs blackwood",
             "consume=log:4",
             "sleep=duration:10s",
             "playsound=sound/barbarians/blackwood priority:60%",

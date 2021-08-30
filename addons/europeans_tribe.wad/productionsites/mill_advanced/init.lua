@@ -37,8 +37,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=produce_mixed_flour_basic",
             "call=produce_mixed_flour",
+            "call=produce_mixed_flour_basic",
             "return=skipped"
          }
       },
@@ -58,7 +58,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
          descname = _"grinding rye and wheat",
          actions = {
-            "return=skipped unless economy needs flour or workers need experience",
+            "return=skipped unless economy needs flour",
             "sleep=duration:10s",
             "consume=wheat:4 rye:4",
             "playsound=sound/mill/mill_turning priority:85% allow_multiple",

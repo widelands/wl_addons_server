@@ -84,8 +84,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=produce_mixed_flour_basic",
             "call=produce_mixed_flour",
+            "call=produce_mixed_flour_basic",
             "return=skipped"
          }
       },

@@ -35,7 +35,7 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
-      prohibited_till = 3000
+      prohibited_till = 2700
    },
 
    working_positions = {
@@ -52,8 +52,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=produce_spidersilk_basic",
             "call=produce_spidersilk",
+            "call=produce_spidersilk_basic",
             "return=skipped"
          }
       },

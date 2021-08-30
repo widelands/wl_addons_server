@@ -14,7 +14,8 @@ descriptions:new_productionsite_type {
         enhancement_cost = {
           blackwood = 1,
           cloth = 1,
-          quartz = 1
+          quartz = 1,
+          basket = 1
         },
         enhancement_return_on_dismantle = {
           quartz = 1
