@@ -259,6 +259,7 @@ public abstract class Utils {
 			return md5.split(" ")[0];
 		} catch (Exception e) {
 			log("ERROR checksumming '" + (f == null ? "(null)" : f.getPath()) + "': " + e);
+			e.printStackTrace();
 		}
 		return "";
 	}
@@ -433,6 +434,7 @@ public abstract class Utils {
 			} catch (Exception e) {
 				log("WARNING: gettext error for '" + key + "'='" + value + "' @ '" + textdomain +
 				    "' / '" + locale + "': " + e);
+				e.printStackTrace();
 				return value;
 			}
 		}
@@ -668,6 +670,7 @@ public abstract class Utils {
 		log("#########################################################");
 		log(" VERY FATAL ERROR: " + str);
 		log("  " + x);
+		x.printStackTrace();
 		log(" Something has gone seriously wrong here.");
 		log(" Killing the server in the hope that the maintainers");
 		log(" will hurry to resolve the problems.");

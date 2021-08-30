@@ -88,6 +88,7 @@ class SyncThread implements Runnable {
 			} catch (Exception e) {
 				errored = true;
 				Utils.log("GitHub sync ERROR: " + e);
+				e.printStackTrace();
 				try {
 					String str;
 					String msg = "@Noordfrees\n\n"

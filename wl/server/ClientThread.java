@@ -125,6 +125,7 @@ class ClientThread implements Runnable {
 			}
 		} catch (Exception e) {
 			Utils.log("ERROR: " + e);
+			e.printStackTrace();
 			if (out != null) out.println(e);
 		} finally {
 			Utils.log("Connection quit.");

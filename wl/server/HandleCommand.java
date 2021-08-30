@@ -743,7 +743,7 @@ class HandleCommand {
 				out.println("ENDOFSTREAM");
 			} catch (Exception e) {
 				ServerUtils.doDelete(tempDir);
-				throw new ServerUtils.WLProtocolException(e.getMessage());
+				throw e;
 			}
 		});
 	}
@@ -920,7 +920,7 @@ class HandleCommand {
 				out.println("ENDOFSTREAM");
 			} catch (Exception e) {
 				ServerUtils.doDelete(tempDir);
-				throw new ServerUtils.WLProtocolException(e.toString());
+				throw e;
 			}
 		});
 	}
