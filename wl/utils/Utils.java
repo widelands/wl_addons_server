@@ -68,8 +68,8 @@ public abstract class Utils {
 	 * @param msg Text to print.
 	 */
 	public static void log(String msg) {
-		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() +
-		                   "] " + msg);
+		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
+		                   msg);
 	}
 
 	/**
