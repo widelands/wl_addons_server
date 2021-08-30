@@ -711,9 +711,11 @@ class HandleCommand {
 				PrintStream stream = new PrintStream(file);
 				for (long l = 0; l < size; ++l) {
 					int b = in.read();
-					if (b < 0)
+					if (b < 0) {
+						stream.close();
 						throw new ServerUtils.WLProtocolException(
 						    "Stream ended unexpectedly while reading file");
+					}
 					stream.write(b);
 				}
 				stream.close();
@@ -806,9 +808,11 @@ class HandleCommand {
 						PrintStream stream = new PrintStream(file);
 						for (long l = 0; l < size; ++l) {
 							int b = in.read();
-							if (b < 0)
+							if (b < 0) {
+								stream.close();
 								throw new ServerUtils.WLProtocolException(
 								    "Stream ended unexpectedly while reading file");
+							}
 							stream.write(b);
 						}
 						stream.close();
