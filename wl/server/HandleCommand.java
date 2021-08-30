@@ -19,11 +19,13 @@
 
 package wl.server;
 
-import java.io.*;
-import java.net.*;
+import java.io.File;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.sql.ResultSet;
-import java.util.*;
-import wl.utils.*;
+import java.util.ArrayList;
+import wl.utils.Utils;
 
 /**
  * Class to process commands sent from a client thread to the server.
@@ -708,9 +710,11 @@ class HandleCommand {
 				PrintStream stream = new PrintStream(file);
 				for (long l = 0; l < size; ++l) {
 					int b = in.read();
-					if (b < 0)
+					if (b < 0) {
+						stream.close();
 						throw new ServerUtils.WLProtocolException(
 						    "Stream ended unexpectedly while reading file");
+					}
 					stream.write(b);
 				}
 				stream.close();
@@ -803,9 +807,11 @@ class HandleCommand {
 						PrintStream stream = new PrintStream(file);
 						for (long l = 0; l < size; ++l) {
 							int b = in.read();
-							if (b < 0)
+							if (b < 0) {
+								stream.close();
 								throw new ServerUtils.WLProtocolException(
 								    "Stream ended unexpectedly while reading file");
+							}
 							stream.write(b);
 						}
 						stream.close();

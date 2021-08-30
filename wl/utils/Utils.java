@@ -19,10 +19,21 @@
 
 package wl.utils;
 
-import java.io.*;
-import java.nio.file.*;
-import java.sql.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
+import java.nio.file.Files;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+import java.util.TreeMap;
 
 /**
  * Miscellaneous utility functions.
@@ -57,8 +68,8 @@ public abstract class Utils {
 	 * @param msg Text to print.
 	 */
 	public static void log(String msg) {
-		System.out.println("[" + new java.util.Date() + " @ " + Thread.currentThread().getName() +
-		                   "] " + msg);
+		System.out.println("[" + new Date() + " @ " + Thread.currentThread().getName() + "] " +
+		                   msg);
 	}
 
 	/**
@@ -111,8 +122,8 @@ public abstract class Utils {
 	public static ResultSet sql(Databases db, String query, Object... values) throws Exception {
 		Connection c = _databases[db.ordinal()];
 		synchronized (c) {
-			PreparedStatement s = c.prepareStatement​(query);
-			for (int i = 0; i < values.length; i++) s.setObject​(i + 1, values[i]);
+			PreparedStatement s = c.prepareStatement(query);
+			for (int i = 0; i < values.length; i++) s.setObject(i + 1, values[i]);
 			return s.execute() ? s.getResultSet() : null;
 		}
 	}
