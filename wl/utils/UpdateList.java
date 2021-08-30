@@ -19,10 +19,14 @@
 
 package wl.utils;
 
-import java.io.*;
-import java.nio.file.*;
+import java.io.File;
+import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.sql.ResultSet;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Class to update the legacy list* files.

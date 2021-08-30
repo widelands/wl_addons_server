@@ -19,9 +19,7 @@
 
 package wl.utils;
 
-import java.io.*;
-import java.nio.file.*;
-import java.util.*;
+import java.io.File;
 
 /**
  * Class to rebuild a POT file for an add-on.

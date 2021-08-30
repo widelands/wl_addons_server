@@ -19,10 +19,13 @@
 
 package wl.server;
 
-import java.io.*;
-import java.net.*;
-import java.util.*;
-import wl.utils.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.Socket;
+import java.util.HashMap;
+
+import wl.utils.UpdateList;
+import wl.utils.Utils;
 
 /**
  * Class to manage frequent automated GitHub syncs

@@ -19,11 +19,13 @@
 
 package wl.server;
 
-import java.io.*;
-import java.net.*;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.net.Socket;
 import java.sql.ResultSet;
-import java.util.*;
-import wl.utils.*;
+import java.util.Base64;
+
+import wl.utils.Utils;
 
 /**
  * A thread that handles all the server's interaction with one specific client.

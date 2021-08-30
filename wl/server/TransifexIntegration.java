@@ -19,12 +19,23 @@
 
 package wl.server;
 
-import java.io.*;
-import java.nio.file.*;
+import java.io.File;
+import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.sql.ResultSet;
-import java.util.*;
-import org.json.simple.parser.*;
-import wl.utils.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import org.json.simple.parser.ContainerFactory;
+import org.json.simple.parser.JSONParser;
+
+import wl.utils.Buildcats;
+import wl.utils.UpdateList;
+import wl.utils.Utils;
 
 /**
  * Class to handle all integration with Transifex.
