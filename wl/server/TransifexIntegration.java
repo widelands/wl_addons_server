@@ -290,8 +290,8 @@ public class TransifexIntegration {
 
 			result.add(new Issue(
 			    i.get("id").toString(), i.map("attributes").get("message").toString(),
-			    i.map("data").map("attributes").get("priority").toString(),
-			    i.map("data").map("attributes").get("datetime_modified").toString(),
+			    i.map("attributes").get("priority").toString(),
+			    i.map("attributes").get("datetime_modified").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("key").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("appearance_order").toString(),
 			    sourceStringQuery.map("data").map("attributes").get("occurrences").toString()));
