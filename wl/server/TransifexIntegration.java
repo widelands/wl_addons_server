@@ -113,11 +113,11 @@ public class TransifexIntegration {
 			if (increasedMO.contains(changed)) continue;
 			increasedMO.add(changed);
 
-			ResultSet sql =
-			    Utils.sql(Utils.Databases.kAddOns,
-			                   "select id,i18n_version from addons where name=?", changed);
+			ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
+			                          "select id,i18n_version from addons where name=?", changed);
 			if (!sql.next()) throw new Exception("Add-on '" + changed + "' is not in the database");
-			Utils.sql(Utils.Databases.kAddOns, "update addons set i18n_version=? where id=?", sql.getLong("i18n_version") + 1, sql.getLong("id"));
+			Utils.sql(Utils.Databases.kAddOns, "update addons set i18n_version=? where id=?",
+			          sql.getLong("i18n_version") + 1, sql.getLong("id"));
 		}
 		UpdateList.rebuildLists();
 		Utils.bashOutput("./skip_timestamp_only_po_changes.sh");
@@ -157,11 +157,12 @@ public class TransifexIntegration {
 		List<Issue> newIssues = new ArrayList<>();
 
 		for (Issue i : allIssues) {
-			ResultSet sql = Utils.sql(
-			    Utils.Databases.kAddOns, "select * from txissues where id=?", i.issueID);
+			ResultSet sql =
+			    Utils.sql(Utils.Databases.kAddOns, "select * from txissues where id=?", i.issueID);
 			if (!sql.next()) {
 				newIssues.add(i);
-				Utils.sql(Utils.Databases.kAddOns, "insert into txissues (id) value (?)", i.issueID);
+				Utils.sql(
+				    Utils.Databases.kAddOns, "insert into txissues (id) value (?)", i.issueID);
 			}
 		}
 
@@ -177,8 +178,8 @@ public class TransifexIntegration {
 		Map<Long, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
 			ResultSet sql =
-			    Utils.sql(Utils.Databases.kAddOns,
-			                   "select user from uploaders where addon=?", Utils.getAddOnID(addon));
+			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
+			              Utils.getAddOnID(addon));
 			while (sql.next()) {
 				Long uploader = sql.getLong("user");
 				if (!perUploader.containsKey(uploader))
@@ -197,7 +198,7 @@ public class TransifexIntegration {
 
 		for (Long uploader : perUploader.keySet()) {
 			sql = Utils.sql(Utils.Databases.kWebsite,
-			                     "select email,username from auth_user where id=?", uploader);
+			                "select email,username from auth_user where id=?", uploader);
 			if (!sql.next()) {
 				Utils.log("User #" + uploader +
 				          " does not seem to be a registered user. No e-mail will be sent.");

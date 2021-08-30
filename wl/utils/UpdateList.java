@@ -92,8 +92,8 @@ public class UpdateList {
 				continue;
 			}
 
-			ResultSet sqlMain = Utils.sql(
-			    Utils.Databases.kAddOns, "select * from addons where name=?", addon);
+			ResultSet sqlMain =
+			    Utils.sql(Utils.Databases.kAddOns, "select * from addons where name=?", addon);
 			sqlMain.next();
 			final long addOnID = sqlMain.getLong("id");
 

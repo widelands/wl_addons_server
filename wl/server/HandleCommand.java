@@ -185,8 +185,8 @@ class HandleCommand {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ServerUtils.semaphoreRO(cmd[1], () -> {
-			ResultSet sqlMain = Utils.sql(
-			    Utils.Databases.kAddOns, "select * from addons where name=?", cmd[1]);
+			ResultSet sqlMain =
+			    Utils.sql(Utils.Databases.kAddOns, "select * from addons where name=?", cmd[1]);
 			if (!sqlMain.next())
 				throw new ServerUtils.WLProtocolException("Add-on '" + cmd[1] +
 				                                          "' is not in the database");
@@ -287,7 +287,8 @@ class HandleCommand {
 		ResultSet sql = Utils.sql(
 		    Utils.Databases.kAddOns, "select id,downloads from addons where name=?", cmd[1]);
 		sql.next();
-		Utils.sql(Utils.Databases.kAddOns, "update addons set downloads=? where id=?", sql.getLong("downloads") + 1, sql.getLong("id"));
+		Utils.sql(Utils.Databases.kAddOns, "update addons set downloads=? where id=?",
+		          sql.getLong("downloads") + 1, sql.getLong("id"));
 
 		out.println("ENDOFSTREAM");
 	}
@@ -338,10 +339,12 @@ class HandleCommand {
 
 		final long addon = Utils.getAddOnID(cmd[1]);
 		final int vote = Integer.valueOf(cmd[2]);
-		Utils.sql(Utils.Databases.kAddOns,
-		             "delete from uservotes where user=? and addon=?", userDatabaseID, addon);
+		Utils.sql(Utils.Databases.kAddOns, "delete from uservotes where user=? and addon=?",
+		          userDatabaseID, addon);
 		if (vote > 0) {
-			Utils.sql(Utils.Databases.kAddOns, "insert into uservotes (user, addon, vote) value (?,?,?)", userDatabaseID, addon, vote);
+			Utils.sql(Utils.Databases.kAddOns,
+			          "insert into uservotes (user, addon, vote) value (?,?,?)", userDatabaseID,
+			          addon, vote);
 		}
 
 		out.println("ENDOFSTREAM");
@@ -361,8 +364,9 @@ class HandleCommand {
 		ServerUtils.checkNameValid(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
-		ResultSet sql = Utils.sql(
-		    Utils.Databases.kAddOns, "select vote from uservotes where user=? and addon=?", userDatabaseID, Utils.getAddOnID(cmd[1]));
+		ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
+		                          "select vote from uservotes where user=? and addon=?",
+		                          userDatabaseID, Utils.getAddOnID(cmd[1]));
 		out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
 		out.println("ENDOFSTREAM");
 	}
@@ -387,10 +391,11 @@ class HandleCommand {
 		}
 		ServerUtils.checkEndOfStream(in);
 
-		Utils.sql(Utils.Databases.kAddOns,
-		             "insert into usercomments (addon,user,timestamp,version,message) value(?,?,?,?,?)",
-		                 Utils.getAddOnID(cmd[1]), userDatabaseID,
-		                 (System.currentTimeMillis() / 1000), cmd[2], msg);
+		Utils.sql(
+		    Utils.Databases.kAddOns,
+		    "insert into usercomments (addon,user,timestamp,version,message) value(?,?,?,?,?)",
+		    Utils.getAddOnID(cmd[1]), userDatabaseID, (System.currentTimeMillis() / 1000), cmd[2],
+		    msg);
 
 		out.println("ENDOFSTREAM");
 	}
@@ -415,7 +420,7 @@ class HandleCommand {
 		} else {
 			ResultSet sql =
 			    Utils.sql(Utils.Databases.kAddOns, "select id from usercomments where addon=?",
-			                                                Utils.getAddOnID(cmd[1]));
+			              Utils.getAddOnID(cmd[1]));
 			for (int i = Integer.valueOf(cmd[2]); i >= 0; i--) {
 				if (!sql.next()) {
 					throw new ServerUtils.WLProtocolException("Invalid comment index " + cmd[2]);
@@ -453,8 +458,8 @@ class HandleCommand {
 			Utils.sql(Utils.Databases.kAddOns, "delete from usercomments where id=?", commentID);
 		} else {
 			Utils.sql(Utils.Databases.kAddOns,
-			             "update usercomments set editor=?, edit_timestamp=?, message=? where id=?",
-			                 userDatabaseID, (System.currentTimeMillis() / 1000), msg, commentID);
+			          "update usercomments set editor=?, edit_timestamp=?, message=? where id=?",
+			          userDatabaseID, (System.currentTimeMillis() / 1000), msg, commentID);
 		}
 
 		out.println("ENDOFSTREAM");
@@ -504,8 +509,8 @@ class HandleCommand {
 		final int state = Integer.valueOf(cmd[2]);
 		if (state != 0 && state != 1)
 			throw new ServerUtils.WLProtocolException("Invalid state " + cmd[2]);
-		Utils.sql(Utils.Databases.kAddOns,
-		             "update addons set security=? where name=?", state, cmd[1]);
+		Utils.sql(
+		    Utils.Databases.kAddOns, "update addons set security=? where name=?", state, cmd[1]);
 
 		out.println("ENDOFSTREAM");
 	}
@@ -525,8 +530,8 @@ class HandleCommand {
 		final int quality = Integer.valueOf(cmd[2]);
 		if (quality < 0 || quality > 3)
 			throw new ServerUtils.WLProtocolException("Invalid quality " + cmd[2]);
-		Utils.sql(Utils.Databases.kAddOns,
-		             "update addons set quality=? where name=?", quality, cmd[1]);
+		Utils.sql(
+		    Utils.Databases.kAddOns, "update addons set quality=? where name=?", quality, cmd[1]);
 
 		out.println("ENDOFSTREAM");
 	}
@@ -584,21 +589,21 @@ class HandleCommand {
 			    ") has been deleted by an administrator for the following reason:\n" + reason +
 			    "\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
 
-			ResultSet sql = Utils.sql(
-			    Utils.Databases.kWebsite,
-			    "select id from notification_noticetype where label='addon_deleted'");
+			ResultSet sql =
+			    Utils.sql(Utils.Databases.kWebsite,
+			              "select id from notification_noticetype where label='addon_deleted'");
 			final boolean noticeTypeKnown = sql.next();
 			if (!noticeTypeKnown)
 				Utils.log("Notification type 'addon_deleted' was not defined yet");
 			final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
 
-			sql = Utils.sql(
-			    Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);
+			sql =
+			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);
 			while (sql.next()) {
 				long user = sql.getLong("user");
 				ResultSet email =
 				    Utils.sql(Utils.Databases.kWebsite,
-				                   "select email,username from auth_user where id=?", user);
+				              "select email,username from auth_user where id=?", user);
 				if (!email.next()) {
 					Utils.log("User #" + user +
 					          " does not seem to be a registered user. No e-mail will be sent.");
@@ -854,15 +859,15 @@ class HandleCommand {
 						    "', your version is '" + newProfile.get("version").value + "'.");
 					}
 
-					ResultSet sql = Utils.sql(
-					    Utils.Databases.kAddOns,
-					    "select id,security,quality from addons where name=?", cmd[1]);
+					ResultSet sql =
+					    Utils.sql(Utils.Databases.kAddOns,
+					              "select id,security,quality from addons where name=?", cmd[1]);
 					sql.next();
 					oldSecurity = sql.getInt("security");
 					oldQuality = sql.getInt("quality");
-					Utils.sql(
-					    Utils.Databases.kAddOns,
-					    "update addons set security=0, quality=0 where id=?", sql.getLong("id"));
+					Utils.sql(Utils.Databases.kAddOns,
+					          "update addons set security=0, quality=0 where id=?",
+					          sql.getLong("id"));
 
 					ServerUtils.doDelete(addOnDir);
 				} else {
@@ -871,8 +876,8 @@ class HandleCommand {
 					    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value(?,?,0,0,0,0)",
 					    cmd[1], (System.currentTimeMillis() / 1000));
 					Utils.sql(Utils.Databases.kAddOns,
-					             "insert into uploaders (addon,user) value(?,?)",
-					                 Utils.getAddOnID(cmd[1]), userDatabaseID);
+					          "insert into uploaders (addon,user) value(?,?)",
+					          Utils.getAddOnID(cmd[1]), userDatabaseID);
 				}
 
 				Utils.sendNotificationToGitHubThread(

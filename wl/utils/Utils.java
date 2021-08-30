@@ -57,7 +57,8 @@ public abstract class Utils {
 	 * @param msg Text to print.
 	 */
 	public static void log(String msg) {
-		System.out.println("[" + new java.util.Date() + " @ " + Thread.currentThread().getName() + "] " + msg);
+		System.out.println("[" + new java.util.Date() + " @ " + Thread.currentThread().getName() +
+		                   "] " + msg);
 	}
 
 	/**
@@ -135,8 +136,7 @@ public abstract class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static Long getUserID(String name) throws Exception {
-		ResultSet r =
-		    sql(Databases.kWebsite, "select id from auth_user where username=?", name);
+		ResultSet r = sql(Databases.kWebsite, "select id from auth_user where username=?", name);
 		if (!r.next()) return null;
 		return r.getLong("id");
 	}
@@ -150,7 +150,9 @@ public abstract class Utils {
 	 */
 	public static boolean checkUserDisabledNotifications(long user, long notice) throws Exception {
 		ResultSet sql = sql(
-		    Databases.kWebsite, "select send from notification_noticesetting where user_id=? and medium=1 and notice_type_id=?", user, notice);
+		    Databases.kWebsite,
+		    "select send from notification_noticesetting where user_id=? and medium=1 and notice_type_id=?",
+		    user, notice);
 		return sql.next() && sql.getShort("send") < 1;
 	}
 
@@ -175,8 +177,8 @@ public abstract class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static boolean isUploader(String addon, long userID) throws Exception {
-		ResultSet sql = sql(
-		    Databases.kAddOns, "select user from uploaders where addon=?", getAddOnID(addon));
+		ResultSet sql =
+		    sql(Databases.kAddOns, "select user from uploaders where addon=?", getAddOnID(addon));
 		boolean noUploaders = true;
 		while (sql.next()) {
 			if (sql.getLong("user") == userID) {
@@ -194,8 +196,7 @@ public abstract class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static long[] getVotes(long addon) throws Exception {
-		ResultSet sql =
-		    sql(Databases.kAddOns, "select vote from uservotes where addon=?", addon);
+		ResultSet sql = sql(Databases.kAddOns, "select vote from uservotes where addon=?", addon);
 		long[] votes = new long[10];
 		for (int i = 0; i < votes.length; i++) votes[i] = 0;
 		while (sql.next()) votes[sql.getInt("vote") - 1]++;
@@ -210,8 +211,8 @@ public abstract class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String getUploadersString(long addon, boolean onlyFirst) throws Exception {
-		ResultSet sql = Utils.sql(
-		    Utils.Databases.kAddOns, "select user from uploaders where addon=?", addon);
+		ResultSet sql =
+		    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", addon);
 		String uploaders = "";
 		while (sql.next()) {
 			if (!uploaders.isEmpty()) uploaders += ",";
