@@ -2,6 +2,10 @@
 set -f
 IFS='
 '
+GREEN="\033[0;32m"
+BLUE="\033[0;34m"
+PURPLE="\033[0;35m"
+NC="\033[0m"
 errors=0
 
 last_filename=
@@ -14,13 +18,13 @@ do
   filename="${f%%:*}"
   line="${f#*:}"
   line="${line%%:*}"
-  file_and_line="\033[0;35m$filename\033[0m:\033[0;34m$line\033[0m"
+  file_and_line="$PURPLE$filename$NC:$BLUE$line$NC"
 
   if [ "$filename" = "$last_filename" ]
   then
     if [[ "$last_line"+1 -ne "$line" ]]
     then
-      echo -e "Gap in \033[0;35m$filename\033[0m between import lines \033[0;34m$last_line\033[0m and \033[0;34m$line\033[0m"
+      echo -e "Gap in $PURPLE$filename$NC between import lines $BLUE$last_line$NC and $BLUE$line$NC"
       ((errors++))
     fi
   fi
@@ -36,16 +40,16 @@ do
     then
       package1="${last_import%.*}"
       package2="${fullimport%.*}"
-      if [[ "$package1" > "$package2" ]] || [[ "$package1" = "$package2" ]] && ! [[ "$last_import_class" < "$class" ]]
+      if [[ "$package1" > "$package2" ]] || ( [[ "$package1" = "$package2" ]] && ! [[ "$last_import_class" < "$class" ]] )
       then
-        echo -e "Unordered imports in \033[0;35m$filename\033[0m between import lines \033[0;34m$last_import_line\033[0m (\033[0;32m$last_import\033[0m) and \033[0;34m$line\033[0m (\033[0;32m$fullimport\033[0m)"
+        echo -e "Unordered imports in $PURPLE$filename$NC between import lines $BLUE$last_import_line$NC ($GREEN$last_import$NC) and $BLUE$line$NC ($GREEN$fullimport$NC)"
         ((errors++))
       fi
     fi
 
     if [ $(grep -w "$class" "$filename" | wc -l) -le 1 ]
     then
-      echo -e "Unused  import in $file_and_line:  \033[0;32m$class\033[0m (\033[0;32m$fullimport\033[0m)"
+      echo -e "Unused  import in $file_and_line:  $GREEN$class$NC ($GREEN$fullimport$NC)"
       ((errors++))
     fi
 
@@ -67,4 +71,3 @@ then
   echo "You have $errors import error(s), please fix."
   exit 1
 fi
-echo "All imports are clean :)"
