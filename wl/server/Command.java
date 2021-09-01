@@ -20,318 +20,473 @@
 package wl.server;
 
 /**
+ * This enum lists all commands that can be sent from clients to the server.
+ * <p>
  * After the first contact, the client must send the following info:
- *  - Protocol version, \n
- *  - Language name (e.g. "nds"), \n
- *  - {@literal Protocol version >= 5}: Widelands version (e.g. \c "1.1~git34567"), \n
- *  - Username (or "" for no user), \n
- *  - ENDOFSTREAM\n
- * If the username is "", the server then replies ENDOFSTREAM\n.
+ * <ul>
+ *  <li> Protocol version, <code>\n</code>
+ *  <li> Language name (e.g. "nds"), <code>\n</code>
+ *  <li> {@literal Protocol version >= 5}: Widelands version (e.g. "1.1~git34567"), <code>\n</code>
+ *  <li> Username (or "" for no user), <code>\n</code>
+ *  <li> <code>ENDOFSTREAM\n</code>
+ * </ul>
+ * If the username is "", the server then replies <code>ENDOFSTREAM\n</code>.
  * Otherwise:
- *   - The server replies with a random number followed by \nENDOFSTREAM\n.
- *   - The client calculates the hash of the password hash and the random number and sends the
- *     result followed by \nENDOFSTREAM\n.
- *   - The server checks whether the result is correct and sends one of these:
- *     - SUCCESS\n for accepted standard user
- *     - ADMIN\n for accepted superuser
- *     - an error message for incorrect username or password
+ * <ul>
+ *   <li> The server replies with a random number followed by <code>\nENDOFSTREAM\n</code>.
+ *   <li> The client calculates the hash of the password hash and the random number and sends the
+ *     result followed by <code>\nENDOFSTREAM\n</code>.
+ *   <li> The server checks whether the result is correct and sends one of these:
+ *     <ul>
+ *     <li> <code>SUCCESS\n</code> for accepted standard user
+ *     <li> <code>ADMIN\n</code> for accepted superuser
+ *     <li> an error message for incorrect username or password
+ * </ul></ul>
  *
+ * <p>
  * The currently supported protocol versions are 4 to 5. All documentation here refers to these
- * versions. Note that compatibility for *all* versions *ever introduced* needs to be maintained
- * *indefinitely*. The first supported version is 4; the version numbers 1-3 are used by the legacy
+ * versions. Note that compatibility for <strong>all</strong> versions <strong>ever introduced</strong> needs to be maintained
+ * <strong>indefinitely</strong>. The first supported version is 4; the version numbers 1-3 are used by the legacy
  * "GitHub Repo List" format.
  *
+ * <p>
  * All arguments to commands are whitespace-terminated strings.
- * The return value is a \n-terminated string.
+ * The return value is a <code>\n</code>-terminated string.
  *
+ * <p>
  * The following "protocol version" string has a very special meaning:
- * - munin
- *   The 'munin' protocol is used to print statistics about the server.
+ * <ul>
+ * <li> munin: <br>
+ *   The "munin" protocol is used to print statistics about the server.
  *   In the initial contact, language and username are skipped; instead the munin protocol
  *   version is printed (only currently supported version is 2).
  *   The password authentication is then performed like for registered users.
- *   If the password is correct, the server replies not ADMIN/SUCCESS but instead
+ *   If the password is correct, the server replies not <code>ADMIN</code>/<code>SUCCESS</code> but instead
  *   prints out server statistics in the following format:
- *   - Time in [1: milliseconds | 2+: hours] since the server was started, \n
- *   - {@literal Protocol version >= 2}: Average client lifetime in seconds, \n
- *   - Protocol version 1:
- *       - Number of current registered users, \n
- *       - Number of current unregistered users, \n
- *   - Protocol version 2:
- *       - Counter of registered users, \n
- *       - Counter of unregistered users, \n
- *   - Counter of unique registered users, \n
- *   - {@literal Protocol version <= 1}: Counter of successful connection attempts, \n
- *   - Counter of unsuccessful connection attempts, \n
- *   - Counter of CMD_LIST              requests, \n
- *   - Counter of CMD_INFO              requests, \n
- *   - Counter of CMD_DOWNLOAD          requests, \n
- *   - Counter of CMD_I18N              requests, \n
- *   - Counter of CMD_SCREENSHOT        requests, \n
- *   - Counter of CMD_VOTE              requests, \n
- *   - Counter of CMD_GET_VOTE          requests, \n
- *   - Counter of CMD_COMMENT           requests, \n
- *   - Counter of CMD_EDIT_COMMENT      requests, \n
- *   - Counter of CMD_SUBMIT            requests, \n
- *   - Counter of CMD_SUBMIT_SCREENSHOT requests, \n
- *   - Counter of CMD_CONTACT           requests, \n
- *   - Counter of CMD_SETUP_TX          requests, \n
- *   - {@literal Protocol version >= 2}: Counter of CMD_ADMIN_DELETE    requests, \n
- *   - {@literal Protocol version >= 2}: Counter of CMD_ADMIN_VERIFY    requests, \n
- *   - {@literal Protocol version >= 2}: Counter of CMD_ADMIN_QUALITY   requests, \n
- *   - {@literal Protocol version >= 2}: Counter of CMD_ADMIN_SYNC_SAFE requests, \n
- *   - Counter of unsuccessful commands, \n
- *   - ENDOFSTREAM\n
+ *   <ul>
+ *   <li> Time in [1: milliseconds | 2+: hours] since the server was started, <code>\n</code>
+ *   <li> {@literal Protocol version >= 2}: Average client lifetime in seconds, <code>\n</code>
+ *   <li> Protocol version 1:
+ *       <ul><li> Number of current registered users, <code>\n</code>
+ *       <li> Number of current unregistered users, <code>\n</code>
+ *       </ul>
+ *   <li> Protocol version 2:
+ *       <ul><li> Counter of registered users, <code>\n</code>
+ *       <li> Counter of unregistered users, <code>\n</code>
+ *       </ul>
+ *   <li> Counter of unique registered users, <code>\n</code>
+ *   <li> {@literal Protocol version <= 1}: Counter of successful connection attempts, <code>\n</code>
+ *   <li> Counter of unsuccessful connection attempts, <code>\n</code>
+ *   <li> Counter of <code>CMD_LIST              </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_INFO              </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_DOWNLOAD          </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_I18N              </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_SCREENSHOT        </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_VOTE              </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_GET_VOTE          </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_COMMENT           </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_EDIT_COMMENT      </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_SUBMIT            </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_SUBMIT_SCREENSHOT </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_CONTACT           </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_SETUP_TX          </code> requests, <code>\n</code>
+ *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_DELETE    </code> requests, <code>\n</code>
+ *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_VERIFY    </code> requests, <code>\n</code>
+ *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_QUALITY   </code> requests, <code>\n</code>
+ *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_SYNC_SAFE </code> requests, <code>\n</code>
+ *   <li> Counter of unsuccessful commands, <code>\n</code>
+ *   <li> <code>ENDOFSTREAM\n</code>
+ *   </ul>
  *   The connection is then closed by the server.
  *   Counters refer to the total amount since the server was last started.
- *   After a CMD_LIST command, the next N CMD_INFO commands are counted only
- *   once total (where N is the number of add-ons listed by the CMD_LIST).
+ *   After a <code>CMD_LIST</code> command, the next <var>N</var> <code>CMD_INFO</code> commands are counted only
+ *   once total (where <var>N</var> is the number of add-ons listed by the <code>CMD_LIST</code>).
+ * </ul>
  */
 public enum Command {
 	/**
-	 * ``CMD_LIST [5+: all]``
+	 * <code>CMD_LIST [5+: all]</code>
+	 *
+	 * <p>
 	 * List all available add-on names.
+	 *
+	 * <p>
 	 * In version 4, no arguments are accepted.
 	 * In version 5, a boolean argument is required to indicate whether to list
 	 * all add-ons or only add-ons compatible with the Widelands version.
+	 *
+	 * <p>
 	 * Returns:
-	 * - Number N of add-ons
-	 * - \n
-	 * - For each add-on: the add-on's internal name followed by \n
-	 * - ENDOFSTREAM\n
+	 * <ul>
+	 * <li> Number <var>N</var> of add-ons, <code>\n</code>
+	 * <li> For each add-on: the add-on's internal name followed by <code>\n</code>
+	 * <li> <code>ENDOFSTREAM\n</code>
+	 * </ul>
 	 */
 	CMD_LIST,
 
 	/**
-	 * ``CMD_INFO name``
+	 * <code>CMD_INFO name</code>
+	 *
+	 * <p>
 	 * Returns detailed info about a specific addon.
-	 * Arg 1: Add-on name
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * </ol>
+	 *
+	 * <p>
 	 * Returns:
-	 *  - unlocalized name, \n
-	 *  - localized name, \n
-	 *  - unlocalized description, \n
-	 *  - localized description, \n
-	 *  - unlocalized author, \n
-	 *  - localized author, \n
-	 *  - {@literal Protocol version <= 4}: name of the main uploader, \n
-	 *  - {@literal Protocol version >= 5}: comma-separated list of uploaders, \n
-	 *  - add-on version string, \n
-	 *  - i18n version string, \n
-	 *  - category string, \n
-	 *  - comma-separated list of requirements, \n
-	 *  - minimum Widelands version, \n
-	 *  - maximum Widelands version, \n
-	 *  - sync safety state ('true' if sync-safe), \n
-	 *  - number of screenshots, \n
-	 *  - for each screenshot: name, \n, localized description, \n
-	 *  - total filesize, \n
-	 *  - upload timestamp, \n
-	 *  - download count, \n
-	 *  - number of '1' votes, \n
-	 *  - ...
-	 *  - number of '10' votes, \n
-	 *  - number of comments, \n
-	 *  - for each comment:
-	 *      - {@literal Protocol version >= 5}: Comment ID, \n
-	 *      - name, \n,
-	 *      - timestamp, \n,
-	 *      - last editor name (may be empty), \n,
-	 *      - last edit timestamp, \n,
-	 *      - version, \n,
-	 *      - number of \n characters in the message, \n
-	 *      - message, \n
-	 *  - "verified" or "unchecked", \n
-	 *  - {@literal Protocol version >= 5}: Code quality rating (1-3) \n
-	 *  - icon checksum (0 for no icon), \n
-	 *  - icon filesize (0 for no icon), \n
-	 *  - icon file as a byte stream
-	 *  - ENDOFSTREAM\n
+	 * <ul>
+	 *  <li> unlocalized name, <code>\n</code>
+	 *  <li> localized name, <code>\n</code>
+	 *  <li> unlocalized description, <code>\n</code>
+	 *  <li> localized description, <code>\n</code>
+	 *  <li> unlocalized author, <code>\n</code>
+	 *  <li> localized author, <code>\n</code>
+	 *  <li> {@literal Protocol version <= 4}: name of the main uploader, <code>\n</code>
+	 *  <li> {@literal Protocol version >= 5}: comma-separated list of uploaders, <code>\n</code>
+	 *  <li> add-on version string, <code>\n</code>
+	 *  <li> i18n version string, <code>\n</code>
+	 *  <li> category string, <code>\n</code>
+	 *  <li> comma-separated list of requirements, <code>\n</code>
+	 *  <li> minimum Widelands version, <code>\n</code>
+	 *  <li> maximum Widelands version, <code>\n</code>
+	 *  <li> sync safety state (true/false), <code>\n</code>
+	 *  <li> number of screenshots, <code>\n</code>
+	 *  <li> for each screenshot: name, <code>\n</code>, localized description, <code>\n</code>
+	 *  <li> total filesize, <code>\n</code>
+	 *  <li> upload timestamp, <code>\n</code>
+	 *  <li> download count, <code>\n</code>
+	 *  <li> number of 1 votes, <code>\n</code>
+	 *  <li> ...
+	 *  <li> number of 10 votes, <code>\n</code>
+	 *  <li> number of comments, <code>\n</code>
+	 *  <li> for each comment:
+	 * <ul>
+	 *      <li> {@literal Protocol version >= 5}: Comment ID, <code>\n</code>
+	 *      <li> name, <code>\n</code>,
+	 *      <li> timestamp, <code>\n</code>,
+	 *      <li> last editor name (may be empty), <code>\n</code>,
+	 *      <li> last edit timestamp, <code>\n</code>,
+	 *      <li> version, <code>\n</code>,
+	 *      <li> number of <code>\n</code> characters in the message, <code>\n</code>
+	 *      <li> message, <code>\n</code>
+	 * </ul>
+	 *  <li> "verified" or "unchecked", <code>\n</code>
+	 *  <li> {@literal Protocol version >= 5}: Code quality rating (1-3) <code>\n</code>
+	 *  <li> icon checksum (0 for no icon), <code>\n</code>
+	 *  <li> icon filesize (0 for no icon), <code>\n</code>
+	 *  <li> icon file as a byte stream
+	 *  <li> <code>ENDOFSTREAM\n</code>
+	 * </ul>
 	 */
 	CMD_INFO,
 
 	/**
-	 * ``CMD_DOWNLOAD name``
+	 * <code>CMD_DOWNLOAD name</code>
+	 *
+	 * <p>
 	 * Download an add-on as a byte stream.
-	 * Arg 1: Add-on name
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * </ol>
+	 *
+	 * <p>
 	 * Returns:
-	 *   - Integer string denoting number D of directories
-	 *   - \n
-	 *   - D Directory names (with full paths), each followed by \n
-	 *   - For each of the D directories:
-	 *     - Number F of regular files in the directory
-	 *     - \n
-	 *     - For each of the F files in the directory:
-	 *       - filename
-	 *       - \n
-	 *       - checksum
-	 *       - \n
-	 *       - filesize in bytes
-	 *       - \n
-	 *       - The content of the file as a byte stream
-	 *   - ENDOFSTREAM\n
+	 * <ul>
+	 *   <li> Integer string denoting number <var>D</var> of directories, <code>\n</code>
+	 *   <li> <var>D</var> Directory names (with full paths), each followed by <code>\n</code>
+	 *   <li> For each of the <var>D</var> directories:
+	 *     <li> Number <var>F</var> of regular files in the directory, <code>\n</code>
+	 *     <li> For each of the <var>F</var> files in the directory:
+	 *       <li> filename, <code>\n</code>
+	 *       <li> checksum, <code>\n</code>
+	 *       <li> filesize in bytes, <code>\n</code>
+	 *       <li> The content of the file as a byte stream
+	 *   <li> <code>ENDOFSTREAM\n</code>
+	 * </ul>
 	 */
 	CMD_DOWNLOAD,
 
 	/**
-	 * ``CMD_I18N name``
+	 * <code>CMD_I18N name</code>
+	 *
+	 * <p>
 	 * Download an add-on's translations as a byte stream.
-	 * Arg 1: Add-on name
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * </ol>
+	 *
+	 * <p>
 	 * Returns:
-	 *   - Integer string denoting number T of translations
-	 *   - \n
-	 *   - For each of the T languages:
-	 *     - {@literal<language_name>}.mo
-	 *     - \n
-	 *     - checksum
-	 *     - \n
-	 *     - MO file size in bytes
-	 *     - \n
-	 *     - The content of the MO file as a byte stream
-	 *   - \n
-	 *   - ENDOFSTREAM\n
+	 * <ul>
+	 *   <li> Integer string denoting number <var>T</var> of translations, <code>\n</code>
+	 *   <li> For each of the <var>T</var> languages:
+	 *     <li> <var>{@literal<language_name>}</var>.mo, <code>\n</code>
+	 *     <li> checksum, <code>\n</code>
+	 *     <li> MO file size in bytes, <code>\n</code>
+	 *     <li> The content of the MO file as a byte stream, <code>\n</code>
+	 *   <li> <code>ENDOFSTREAM\n</code>
+	 * </ul>
 	 */
 	CMD_I18N,
 
 	/**
-	 * ``CMD_SCREENSHOT addon screenie``
+	 * <code>CMD_SCREENSHOT addon screenshot</code>
+	 *
+	 * <p>
 	 * Download a screenshot.
-	 * Arg 1: Add-on name
-	 * Arg 2: Screenshot name
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * <li> Screenshot name
+	 * </ol>
+	 *
+	 * <p>
 	 * Returns:
-	 *   - checksum
-	 *   - \n
-	 *   - file size in bytes
-	 *   - \n
-	 *   - content of the image file as a byte stream
-	 *   - ENDOFSTREAM\n
+	 * <ul>
+	 *   <li> checksum, <code>\n</code>
+	 *   <li> file size in bytes, <code>\n</code>
+	 *   <li> content of the image file as a byte stream
+	 *   <li> <code>ENDOFSTREAM\n</code>
+	 * </ul>
 	 */
 	CMD_SCREENSHOT,
 
 	/**
-	 * ``CMD_VOTE name vote``
+	 * <code>CMD_VOTE name vote</code>
+	 *
+	 * <p>
 	 * Vote on an add-on.
-	 * Arg 1: Add-on name
-	 * Arg 2: Vote (as string) 1-10
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * <li> Vote (as string) 1-10
+	 * </ol>
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_VOTE,
 
 	/**
-	 * ``CMD_GET_VOTE name``
+	 * <code>CMD_GET_VOTE name</code>
+	 *
+	 * <p>
 	 * How the user voted an add-on.
-	 * Arg 1: Add-on name
-	 * Returns: NOT_LOGGED_IN\n, or vote as string followed by \n and ENDOFSTREAM\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * </ol>
+	 *
+	 * <p>
+	 * Returns: <code>NOT_LOGGED_IN\n</code>, or vote as string followed by <code>\nENDOFSTREAM\n</code>
 	 */
 	CMD_GET_VOTE,
 
 	/**
-	 * ``CMD_COMMENT name version lines``
+	 * <code>CMD_COMMENT name version lines</code>
+	 *
+	 * <p>
 	 * Comment on an add-on.
-	 * Arg 1: Add-on name
-	 * Arg 2: Add-on version
-	 * Arg 3: Number of lines in the message
-	 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * <li> Add-on version
+	 * <li> Number of lines in the message
+	 * </ol>
+	 * Then, on separate lines, the actual message; then <code>ENDOFSTREAM\n</code>.
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_COMMENT,
 
 	/**
-	 * ``CMD_EDIT_COMMENT [4: name] index lines``
+	 * <code>CMD_EDIT_COMMENT [4: name] index lines</code>
+	 *
+	 * <p>
 	 * Edit an existing comment.
-	 * Protocol version 4:
-	 *     Arg 1: Add-on name
-	 *     Arg 2: Index of the comment.
-	 *     Arg 3: Number of lines in the message
-	 * Protocol version 5:
-	 *     Arg 1: Database ID of the comment.
-	 *     Arg 2: Number of lines in the message
-	 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
+	 *
+	 * <p> Parameters:
+	 * <ul>
+	 * <li> Protocol version 4:
+	 * <ol>
+	 *     <li> Add-on name
+	 *     <li> Index of the comment.
+	 *     <li> Number of lines in the message
+	 * </ol>
+	 * <li> Protocol version 5:
+	 * <ol>
+	 *     <li> Database ID of the comment.
+	 *     <li> Number of lines in the message
+	 * </ol>
+	 * </ul>
+	 * Then, on separate lines, the actual message; then <code>ENDOFSTREAM\n</code>.
+	 *
+	 * <p>
 	 * In {@literal protocol version >= 5}, 0 lines denote deletion of the comment.
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_EDIT_COMMENT,
 
 	/**
-	 * ``CMD_SUBMIT name``
+	 * <code>CMD_SUBMIT name</code>
+	 *
+	 * <p>
 	 * Upload an add-on.
-	 * Arg 1: Add-on name
-	 * Then, on the next line, the content of the add-on like the response for CMD_DOWNLOAD,
-	 * terminated by ENDOFSTREAM\n.
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * </ol>
+	 * Then, on the next line, the content of the add-on like the response for <code>CMD_DOWNLOAD</code>,
+	 * terminated by <code>ENDOFSTREAM\n</code>.
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_SUBMIT,
 
 	/**
-	 * ``CMD_SUBMIT_SCREENSHOT name filesize checksum whitespaces description``
+	 * <code>CMD_SUBMIT_SCREENSHOT name filesize checksum whitespaces description</code>
+	 *
+	 * <p>
 	 * Upload a screenshot.
-	 * Arg 1: Add-on name
-	 * Arg 2: Filesize in bytes
-	 * Arg 3: The file's checksum
-	 * Arg 4: Number of whitespaces in the description
-	 * Arg 5: Screenshot description
-	 * Then, on the next line, the content of the image file like for CMD_SCREENSHOT, terminated by
-	 * ENDOFSTREAM\n.
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * <li> Filesize in bytes
+	 * <li> The file's checksum
+	 * <li> Number of whitespaces in the description
+	 * <li> Screenshot description
+	 * </ol>
+	 * Then, on the next line, the content of the image file like for <code>CMD_SCREENSHOT</code>, terminated by
+	 * <code>ENDOFSTREAM\n</code>.
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_SUBMIT_SCREENSHOT,
 
 	/**
-	 * ``CMD_CONTACT lines``
+	 * <code>CMD_CONTACT lines</code>
+	 *
+	 * <p>
 	 * Send an enquiry to the Widelands Development Team.
-	 * Arg 1: Number of lines in the message
-	 * Then, on separate lines, the actual message; then ENDOFSTREAM\n.
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Number of lines in the message
+	 * </ol>
+	 * Then, on separate lines, the actual message; then <code>ENDOFSTREAM\n</code>.
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_CONTACT,
 
 	/**
-	 * ``CMD_SETUP_TX name``
+	 * <code>CMD_SETUP_TX name</code>
+	 *
+	 * <p>
 	 * Set up transifex integration for an add-on. Only admins may do this.
-	 * Arg 1: Add-on name
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * </ol>
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_SETUP_TX,
 
 	/**
-	 * ``CMD_ADMIN_DELETE name lines``
+	 * <code>CMD_ADMIN_DELETE name lines</code>
+	 *
+	 * <p>
 	 * Added in protocol version 5.
 	 * Irrevocably delete an add-on and all its metadata and translations from
 	 * the server and from Transifex. Only admins may do this.
-	 * Arg 1: Add-on name
-	 * Arg 2: Number of lines in the reason
-	 * Then #lines lines with a human-readable message explaining why the add-on was deleted,
-	 * then ENDOFSTREAM\n.
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * <li> Number of lines in the reason
+	 * </ol>
+	 * Then, on separate lines, the human-readable message explaining why the add-on was deleted,
+	 * then <code>ENDOFSTREAM\n</code>.
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_ADMIN_DELETE,
 
 	/**
-	 * ``CMD_ADMIN_VERIFY name verify``
+	 * <code>CMD_ADMIN_VERIFY name verify</code>
+	 *
+	 * <p>
 	 * Added in protocol version 5.
 	 * Change the verification status of an add-on. Only admins may do this.
-	 * Arg 1: Add-on name
-	 * Arg 2: 1 to verify the add-on, 0 to mark it unsafe
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * <li> 1 to verify the add-on, 0 to mark it unsafe
+	 * </ol>
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_ADMIN_VERIFY,
 
 	/**
-	 * ``CMD_ADMIN_QUALITY name quality``
+	 * <code>CMD_ADMIN_QUALITY name quality</code>
+	 *
+	 * <p>
 	 * Added in protocol version 5.
 	 * Change the quality rating of an add-on. Only admins may do this.
-	 * Arg 1: Add-on name
-	 * Arg 2: New quality rating (1-3), 0 for not assessed
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * <li> New quality rating (1-3), 0 for not assessed
+	 * </ol>
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_ADMIN_QUALITY,
 
 	/**
-	 * ``CMD_ADMIN_SYNC_SAFE name state``
+	 * <code>CMD_ADMIN_SYNC_SAFE name state</code>
+	 *
+	 * <p>
 	 * Added in protocol version 5.
 	 * Change the sync safety status of an add-on. Only admins may do this.
-	 * Arg 1: Add-on name
-	 * Arg 2: 1 to mark the add-on sync-safe, 0 to mark it as desyncing
-	 * Returns: ENDOFSTREAM\n or an error message\n
+	 *
+	 * <p> Parameters:
+	 * <ol>
+	 * <li> Add-on name
+	 * <li> 1 to mark the add-on sync-safe, 0 to mark it as desyncing
+	 * </ol>
+	 *
+	 * <p>
+	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
 	 */
 	CMD_ADMIN_SYNC_SAFE,
 }

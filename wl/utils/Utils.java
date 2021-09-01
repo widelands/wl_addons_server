@@ -77,7 +77,7 @@ public abstract class Utils {
 	 */
 	public static enum Databases {
 		/**
-		 * The read-only website database, which contains details abour registered users.
+		 * The read-only website database, which contains details about registered users.
 		 */
 		kWebsite("websitedatabase"),
 		/**
@@ -94,7 +94,7 @@ public abstract class Utils {
 
 	/**
 	 * Initialize the databases. Call this only on startup.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void initDatabases() throws Exception {
 		log("Initializing SQL...");
@@ -117,7 +117,7 @@ public abstract class Utils {
 	 * @param query Statement to execute. Use '?' for placeholders.
 	 * @param values Values to substitute for the placeholders.
 	 * @return The result of the query for SELECT statements; null for other statements.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static ResultSet sql(Databases db, String query, Object... values) throws Exception {
 		Connection c = _databases[db.ordinal()];
@@ -132,7 +132,7 @@ public abstract class Utils {
 	 * Retrieve the name of a user from the database.
 	 * @param id The user's ID.
 	 * @return The user's name.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static String getUsername(long id) throws Exception {
 		ResultSet r = sql(Databases.kWebsite, "select username from auth_user where id=?", id);
@@ -144,7 +144,7 @@ public abstract class Utils {
 	 * Retrieve the ID of a user from the database.
 	 * @param name The user's name.
 	 * @return The user's ID.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static Long getUserID(String name) throws Exception {
 		ResultSet r = sql(Databases.kWebsite, "select id from auth_user where username=?", name);
@@ -157,7 +157,7 @@ public abstract class Utils {
 	 * @param user The user's ID.
 	 * @param notice The notice type ID.
 	 * @return The user disabled this type of notification.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static boolean checkUserDisabledNotifications(long user, long notice) throws Exception {
 		ResultSet sql = sql(
@@ -171,7 +171,7 @@ public abstract class Utils {
 	 * Retrieve the ID of an add-on from the database.
 	 * @param name The add-on's name.
 	 * @return The add-on's ID.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static Long getAddOnID(String name) throws Exception {
 		ResultSet r = sql(Databases.kAddOns, "select id from addons where name=?", name);
@@ -185,7 +185,7 @@ public abstract class Utils {
 	 * @param addon The add-on's name.
 	 * @param userID The user's ID.
 	 * @return The user has write access to the add-on.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static boolean isUploader(String addon, long userID) throws Exception {
 		ResultSet sql =
@@ -203,8 +203,8 @@ public abstract class Utils {
 	/**
 	 * Retrieve the voting statistics of an add-on from the database.
 	 * @param addon The add-on's ID.
-	 * @return An array of size \c 10 with the number of \c i votes in index ``(i-1)``.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @return An array of size 10 with the number of i votes in index i-1.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static long[] getVotes(long addon) throws Exception {
 		ResultSet sql = sql(Databases.kAddOns, "select vote from uservotes where addon=?", addon);
@@ -219,7 +219,7 @@ public abstract class Utils {
 	 * @param addon The add-on's ID.
 	 * @param onlyFirst List at most one uploader in the result.
 	 * @return Comma-separated of the uploaders.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static String getUploadersString(long addon, boolean onlyFirst) throws Exception {
 		ResultSet sql =
@@ -236,7 +236,7 @@ public abstract class Utils {
 	/**
 	 * List all files in a directory, sorted alphabetically.
 	 * @param dir Directory to list.
-	 * @return Sorted array (never \c null).
+	 * @return Sorted array (never null).
 	 */
 	public static File[] listSorted(File dir) {
 		File[] files = dir.listFiles();
@@ -248,7 +248,7 @@ public abstract class Utils {
 	/**
 	 * Compute the md5 checksum of a regular file.
 	 * @param f File to checksum.
-	 * @return The checksum as string, or \c "" in case of an error.
+	 * @return The checksum as string, or "" in case of an error.
 	 */
 	public static String checksum(File f) {
 		try {
@@ -263,20 +263,6 @@ public abstract class Utils {
 			e.printStackTrace();
 		}
 		return "";
-	}
-
-	/**
-	 * Create a temporary directory.
-	 * The caller needs to ensure the directory is deleted later.
-	 * @return Path to an existing temporary directory.
-	 */
-	synchronized public static File createTempDir() {
-		File d;
-		do {
-			d = new File("temp", "temp_" + System.currentTimeMillis());
-		} while (d.exists());
-		d.mkdirs();
-		return d;
 	}
 
 	/**
@@ -361,10 +347,10 @@ public abstract class Utils {
 		/** The timestamp when this comment was created. */
 		public final long timestamp;
 
-		/** The ID of the user who last edited this comment (may be \c null). */
+		/** The ID of the user who last edited this comment (may be null). */
 		public final Long editorID;
 
-		/** The timestamp when this comment was last edited (may be \c null). */
+		/** The timestamp when this comment was last edited (may be null). */
 		public final Long editTimestamp;
 
 		/** Version of the add-on about which the comment was written. */
@@ -378,8 +364,8 @@ public abstract class Utils {
 		 * @param commentID This comment's unique ID.
 		 * @param userID ID of the comment author.
 		 * @param timestamp Timestamp when the comment was created.
-		 * @param editorID ID of the last person who edited the comment (may be \c null).
-		 * @param editTimestamp Timestamp when the comment was last edited (may be \c null).
+		 * @param editorID ID of the last person who edited the comment (may be null).
+		 * @param editTimestamp Timestamp when the comment was last edited (may be null).
 		 * @param version Version of the add-on about which the comment was written.
 		 * @param message Text of the comment.
 		 */
@@ -411,11 +397,11 @@ public abstract class Utils {
 		/** The raw, untranslated value. */
 		public final String value;
 
-		/** The textdomain to use for translating (\c null for non-translatable strings). */
+		/** The textdomain to use for translating (null for non-translatable strings). */
 		public final String textdomain;
 
 		/**
-		 * Return the localized value. If this %Value is not localizable, returns the raw value.
+		 * Return the localized value. If this Value is not localizable, returns the raw value.
 		 * @param locale Locale to use.
 		 * @return Localized value.
 		 */
@@ -563,9 +549,9 @@ public abstract class Utils {
 	 * Parse an ini-style file and return its contents as a map of key-value pairs.
 	 * @param f File to parse.
 	 * @param textdomain Textdomain for translatable strings in the file
-	 *                   (may be \c null if the file is not meant to be translated).
+	 *                   (may be null if the file is not meant to be translated).
 	 * @return The key-value pairs.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	synchronized public static Profile readProfile(File f, String textdomain) throws Exception {
 		ChecksummedFile key = new ChecksummedFile(f);
@@ -626,7 +612,7 @@ public abstract class Utils {
 	 * Overwrite an ini-style file.
 	 * @param f File to use.
 	 * @param profile New profile to write.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	synchronized public static void editProfile(File f, Profile profile) throws Exception {
 		f.getParentFile().mkdirs();
@@ -639,7 +625,7 @@ public abstract class Utils {
 	 * Retrieve a value from the server config file.
 	 * @param key Key to look up.
 	 * @return The configured value.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static String config(String key) throws Exception {
 		return readProfile(new File("config"), null).get(key).value;
@@ -665,7 +651,7 @@ public abstract class Utils {
 	 * Something has gone very, VERY wrong. Print a verbose error message to
 	 * standard output and terminate the entire server abnormally.
 	 * @param str Descriptive message where the error happened.
-	 * @param x The %Exception that is responsible for this problem.
+	 * @param x The Exception that is responsible for this problem.
 	 */
 	public static void fatalError(String str, Exception x) {
 		log("#########################################################");
@@ -684,7 +670,7 @@ public abstract class Utils {
 	 * for all events that require the attention of a server maintainer.
 	 * The thread is publicly visible, do not send sensitive data here.
 	 * @param msg Message to post.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void sendNotificationToGitHubThread(String msg) throws Exception {
 		msg = msg.replaceAll("\n", "\\\\n");

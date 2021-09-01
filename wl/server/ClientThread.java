@@ -29,13 +29,15 @@ import wl.utils.Utils;
 /**
  * A thread that handles all the server's interaction with one specific client.
  */
-class ClientThread implements Runnable {
+public class ClientThread implements Runnable {
 	private Socket socket;
 
-	/** The oldest protocol version the server supports. Never, ever change this. */
+	/** The oldest protocol version the server supports. */
+	// Never, ever change this!
 	public static final int kOldestSupportedProtocolVersion = 4;
 
-	/** The newest protocol version the server supports. May be increased but never decreased. */
+	/** The newest protocol version the server supports. */
+	// May be increased but never decreased.
 	public static final int kNewestSupportedProtocolVersion = 5;
 
 	/**

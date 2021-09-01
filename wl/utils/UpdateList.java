@@ -29,9 +29,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Class to update the legacy list* files.
+ * Class to update the legacy <code>list*</code> files.
  */
 public class UpdateList {
+	private UpdateList() {}
+
 	private static class Data {
 
 		public final String uploader;
@@ -265,7 +267,7 @@ public class UpdateList {
 	/**
 	 * Manual lists synchronization main function.
 	 * @param args Ignored.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void main(String[] args) throws Exception {
 		Utils.initDatabases();
@@ -273,8 +275,8 @@ public class UpdateList {
 	}
 
 	/**
-	 * Regenerate all list* files.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * Regenerate all <code>list*</code> files.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void rebuildLists() throws Exception {
 		Utils.log("Rebuilding the lists...");

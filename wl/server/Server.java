@@ -28,12 +28,13 @@ import wl.utils.Utils;
  * and then keeps receiving client requests and creating threads to serve them.
  */
 public class Server {
+	private Server() {}
 
 	/**
 	 * The server's main loop. This runs forever until the server is killed
-	 * with Ctrl-C or ``kill PID``.
+	 * with <kbd>^C</kbd> or <code>kill PID</code>.
 	 * @param args Ignored.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void main(String[] args) throws Exception {
 		Utils.bash("bash", "-c", "echo $PPID");  // Print our PID to the logfile so the maintainer
@@ -43,7 +44,7 @@ public class Server {
 
 		Utils.log("Server starting...");
 		ServerSocket serverSocket = new ServerSocket(Integer.valueOf(Utils.config("port")));
-		new Thread(new SyncThread(), "Syncer").start();
+		new Thread(SyncThread.INSTANCE, "Syncer").start();
 		Utils.log("Ready.");
 		long n = 0;
 		while (true) {

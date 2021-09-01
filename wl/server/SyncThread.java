@@ -28,7 +28,14 @@ import wl.utils.Utils;
 /**
  * A thread that handles frequent maintenance tasks.
  */
-class SyncThread implements Runnable {
+public class SyncThread implements Runnable {
+
+	/**
+	 * The singleton instance of this class.
+	 */
+	public static final SyncThread INSTANCE = new SyncThread();
+
+	private SyncThread() {}
 
 	/**
 	 * Main loop of the sync thread.
