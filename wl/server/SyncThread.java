@@ -20,6 +20,7 @@
 package wl.server;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.InputStreamReader;
 import java.util.Calendar;
 import java.util.Date;
@@ -67,12 +68,13 @@ public class SyncThread implements Runnable {
 				for (Utils.Databases db : Utils.Databases.values()) Utils.sql(db, "show tables");
 
 				Utils.log("Backing up the database...");
+				new File("backup").mkdir();
 				Runtime.getRuntime().exec(new String[] {
 				    "bash", "-c",
 				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
 				        Utils.config("databasepassword") + " -h" + Utils.config("databasehost") +
 				        " -P" + Utils.config("databaseport") + " --column-statistics=0 " +
-				        Utils.config("addonsdatabase") + " > _addons_database_backup_" +
+				        Utils.config("addonsdatabase") + " > backup/addons_database_backup_" +
 				        Calendar.getInstance().get(Calendar.DAY_OF_WEEK) + "_" + phase + ".sql"});
 
 				if (phase == 0) {
