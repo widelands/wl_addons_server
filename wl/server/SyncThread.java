@@ -120,6 +120,8 @@ public class SyncThread implements Runnable {
 					Utils.log("ERROR WHILE SENDING ERROR NOTIFICATION: " + x);
 					x.printStackTrace();
 					Utils.log("Error message being composed was:\n" + msg);
+					Utils.log("Something has gone seriously wrong here. Killing the server in the hope that the maintainers will hurry to resolve the problems.");
+					System.exit(1);
 				}
 			}
 			phase++;
