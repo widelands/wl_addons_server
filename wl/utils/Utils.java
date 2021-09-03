@@ -23,6 +23,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -100,13 +101,13 @@ public abstract class Utils {
 		log("Initializing SQL...");
 
 		Properties connectionProps = new Properties();
-		connectionProps.put("user", Utils.config("databaseuser"));
-		connectionProps.put("password", Utils.config("databasepassword"));
+		connectionProps.put("user", config("databaseuser"));
+		connectionProps.put("password", config("databasepassword"));
 
 		for (Databases db : Databases.values()) {
 			_databases[db.ordinal()] = DriverManager.getConnection(
-			    "jdbc:mysql://" + Utils.config("databasehost") + ":" +
-			        Utils.config("databaseport") + "/" + Utils.config(db.configKey),
+			    "jdbc:mysql://" + config("databasehost") + ":" +
+			        config("databaseport") + "/" + config(db.configKey),
 			    connectionProps);
 		}
 	}
@@ -222,8 +223,7 @@ public abstract class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
 	public static String getUploadersString(long addon, boolean onlyFirst) throws Exception {
-		ResultSet sql =
-		    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", addon);
+		ResultSet sql = sql(Databases.kAddOns, "select user from uploaders where addon=?", addon);
 		String uploaders = "";
 		while (sql.next()) {
 			if (!uploaders.isEmpty()) uploaders += ",";
@@ -662,60 +662,39 @@ public abstract class Utils {
 	}
 
 	/**
-	 * Something has gone very, VERY wrong. Print a verbose error message to
-	 * standard output and terminate the entire server abnormally.
-	 * @param str Descriptive message where the error happened.
-	 * @param x The %Exception that is responsible for this problem.
+	 * Send an e-mail.
+	 * @param email E-Mail address of the recipient.
+	 * @param subject Subject line of the mail.
+	 * @param body Message text to send.
+	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
-	public static void fatalError(String str, Exception x) {
-		log("#########################################################");
-		log(" VERY FATAL ERROR: " + str);
-		log("  " + x);
-		x.printStackTrace();
-		log(" Something has gone seriously wrong here.");
-		log(" Killing the server in the hope that the maintainers");
-		log(" will hurry to resolve the problems.");
-		log("#########################################################");
-		System.exit(1);
+	public static void sendEMail(String email, String subject, String body) throws Exception {
+		File message = Files.createTempFile(null, null).toFile();
+		PrintWriter write = new PrintWriter(message);
+		write.println("From: noreply@widelands.org");
+		write.println("Subject: " + subject);
+		write.println();
+		write.println(body);
+		write.print("\n-------------------------\n" +
+		    "To change how you receive notifications, please go to https://www.widelands.org/notification/.");
+		write.close();
+		bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
+		message.delete();
 	}
 
 	/**
-	 * Send a notification to the GitHub thread that serves as a notice board
-	 * for all events that require the attention of a server maintainer.
-	 * The thread is publicly visible, do not send sensitive data here.
-	 * @param msg Message to post.
+	 * Send a notification to all subscribed admins.
+	 * @param verbosity 1 for critical mails, 2 for FYI notices.
+	 * @param subject Subject line of the mail.
+	 * @param msg Message text to send.
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
-	public static void sendNotificationToGitHubThread(String msg) throws Exception {
-		msg = msg.replaceAll("\n", "\\\\n");
-		msg = msg.replaceAll("\t", "\\\\t");
-		msg = msg.replaceAll("\\$", "§");
-		msg = msg.replaceAll("\"", "❞");
-		msg = msg.replaceAll("'", "❜");
-
-		if (!Boolean.parseBoolean(config("deploy"))) {
-			log("    SKIPPING message: " + msg);
-			return;
+	public static void sendEMailToSubscribedAdmins(int verbosity, String subject, String msg) throws Exception {
+		ResultSet sql = sql(Databases.kAddOns, "select email,level from notifyadmins");
+		while (sql.next()) {
+			if (sql.getInt("level") >= verbosity) {
+				sendEMail(sql.getString("email"), subject, msg);
+			}
 		}
-
-		log("    Sending message: " + msg);
-
-		Process p = Runtime.getRuntime().exec(new String[] {
-		    "bash", "-c",
-		    "curl -X POST -H \"Accept: application/vnd.github.v3+json\" -u " +
-		        config("githubusername") + ":" + config("githubtoken") +
-		        " https://api.github.com/repos/widelands/wl_addons_server/issues/31/comments "
-		        + "-d '{\"body\":\"" + msg + "\"}'"});
-		p.waitFor();
-		BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
-		boolean err = false;
-		String str;
-		while ((str = b.readLine()) != null) {
-			log("    # " + str);
-			err |= str.contains("documentation_url");
-		}
-		log("    = " + p.exitValue());
-		if (err) throw new Exception("CURL output looks like failure");
-		if (p.exitValue() != 0) throw new Exception("CURL returned error code " + p.exitValue());
 	}
 }

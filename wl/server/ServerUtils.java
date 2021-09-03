@@ -330,44 +330,6 @@ abstract class ServerUtils {
 	}
 
 	/**
-	 * Send an e-mail.
-	 * @param email E-Mail address of the recipient.
-	 * @param message File containing the message as plaintext.
-	 * @throws Exception If the shell can't be accessed.
-	 */
-	public static void sendEMail(String email, File message) throws Exception {
-		Utils.bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
-	}
-
-	private static Object _enquiry_syncer = new Object();
-
-	/**
-	 * Process a client's enquiry.
-	 * @param username Name of the user who sent the enquiry.
-	 * @param msg Enquiry message.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
-	 */
-	public static void sendEnquiry(String username, String msg) throws Exception {
-		File dir = new File("enquiries");
-		dir.mkdir();
-		String filename =
-		    username + "_" + new Date().toString().replaceAll(" ", "_").replaceAll(":", "-");
-		synchronized (_enquiry_syncer) {
-			while (new File(dir, filename).exists()) filename += "+";
-		}
-		PrintWriter w = new PrintWriter(new File(dir, filename));
-		w.println(new Date());
-		w.println("The user '" + username + "' sent the following message.");
-		w.println("Please reply to https://www.widelands.org/messages/compose/" + username + "/");
-		w.print(msg);
-		w.close();
-		Utils.sendNotificationToGitHubThread("A user has sent an enquiry, please help!\n\n"
-		                                     + "- User: " + username + "\n"
-		                                     + "- Filename: `" + filename + "`\n"
-		                                     + "- Message length: " + msg.length() + " characters");
-	}
-
-	/**
 	 * Check that a client sends the correct password over a stream.
 	 * Throws an exception if this is not the case.
 	 * @param in Stream to receive further data from the client.

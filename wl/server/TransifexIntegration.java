@@ -223,39 +223,28 @@ public class TransifexIntegration {
 			long total = 0;
 			for (List l : relevantIssues.values()) total += l.size();
 
-			File message = File.createTempFile("txissues", null);
-			PrintWriter write = new PrintWriter(message);
-			write.println("From: noreply@widelands.org");
-			write.println("Subject: Transifex String Issues");
-			write.println();
-
-			write.print("Dear " + username + ",\nthe translators have found " + total +
+			String text = "Dear " + username + ",\nthe translators have found " + total +
 			            " new issue(s) in " + relevantIssues.size() +
-			            " of your add-on(s). Below you may find a list of all new string issues.");
+			            " of your add-on(s). Below you may find a list of all new string issues.";
 			for (String addon : relevantIssues.keySet()) {
 				List<Issue> list = relevantIssues.get(addon);
-				write.print(
-				    "\n\n################################################################################\n " +
-				    list.size() + " new issue(s) in add-on " + addon);
+				text += "\n\n################################################################################\n " +
+				    list.size() + " new issue(s) in add-on " + addon;
 				for (Issue i : list) {
-					write.print(
+					text +=
 					    "\n --------------------------------------------------------------------------------"
-					    + "\n  Issue ID      : " + i.issueID + "\n  Source String : " + i.string +
-					    "\n  String ID     : " + i.stringID + "\n  Occurrences   : " +
-					    i.occurrence + "\n  Last modified : " + i.datetime_modified +
-					    "\n  Priority      : " + i.priority + "\n  Issue message : " + i.message);
+					    // anti-linebreak comment
+					    + "\n  Issue ID      : " + i.issueID  // anti-linebreak comment
+					    + "\n  Source String : " + i.string  // anti-linebreak comment
+					    + "\n  String ID     : " + i.stringID  // anti-linebreak comment
+					    + "\n  Occurrences   : " + i.occurrence  // anti-linebreak comment
+					    + "\n  Last modified : " + i.datetime_modified  // anti-linebreak comment
+					    + "\n  Priority      : " + i.priority  // anti-linebreak comment
+					    + "\n  Issue message : " + i.message;
 				}
-				write.print(
-				    "\n################################################################################");
+				text += "\n################################################################################";
 			}
-
-			write.print(
-			    "\n\n-------------------------\n"
-			    +
-			    "To change how you receive notifications, please go to https://www.widelands.org/notification/.");
-			write.close();
-			ServerUtils.sendEMail(sql.getString("email"), message);
-			message.delete();
+			Utils.sendEMail(sql.getString("email"), "Transifex String Issues", text);
 		}
 	}
 

@@ -90,25 +90,26 @@ class SyncThread implements Runnable {
 				errored = true;
 				Utils.log("GitHub sync ERROR: " + e);
 				e.printStackTrace();
+
+				String msg = "The automated GitHub sync on the server has failed with the following error message:\n"
+					         + "```\n" + e + "\n```\n\n```\n$ git status";
 				try {
-					String str;
-					String msg = "@Noordfrees\n\n"
-					             + "The automated GitHub sync on the server "
-					             + "has failed with the following error message:\n"
-					             + "```\n" + e + "\n```\n\n```\n$ git status";
 					Process p =
-					    Runtime.getRuntime().exec(new String[] {"bash", "-c", "git status"});
+						Runtime.getRuntime().exec(new String[] {"bash", "-c", "git status"});
 					p.waitFor();
 					BufferedReader b =
-					    new BufferedReader(new InputStreamReader(p.getInputStream()));
+						new BufferedReader(new InputStreamReader(p.getInputStream()));
+					String str;
 					while ((str = b.readLine()) != null) msg += "\n" + str;
 					msg += "\n```\n\nThe automated syncs will discontinue until the server "
-					       + "has been restarted. Please resolve the merge conflicts quickly."
-					       + "  \nThank you :)";
+						   + "has been restarted. Please resolve the merge conflicts quickly."
+						   + "  \nThank you :)";
 
-					Utils.sendNotificationToGitHubThread(msg);
+					Utils.sendEMailToSubscribedAdmins(1, "Add-Ons Server Sync Error", msg);
 				} catch (Exception x) {
-					Utils.fatalError("unable to send failure notification!", x);
+					Utils.log("ERROR WHILE SENDING ERROR NOTIFICATION: " + x);
+					x.printStackTrace();
+					Utils.log("Error message being composed was:\n" + msg);
 				}
 			}
 			phase++;

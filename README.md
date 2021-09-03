@@ -64,6 +64,7 @@ Table          | Column Names                                              | Col
 `uploaders`    | `addon` <br> `user`                                       | `int` <br> `int`                                   | An add-on can have multiple uploaders.<br>Each uploader goes on a separate row.
 `uservotes`    | `addon` <br> `user` <br> `vote`                           | `int` <br> `int` <br> `int`                        |
 `usercomments` | `id` <br> `addon` <br> `user` <br> `timestamp` <br> `editor` <br> `edit_timestamp` <br> `version` <br> `message` | `int` <br> `int` <br> `int` <br> `bigint` <br> `int` <br> `bigint` <br> `varchar` <br> `varchar` | Unique comment ID<br>-<br>-<br>-<br> May be `NULL` <br> May be `NULL` <br>-<br>-
+`notifyadmins` | `email` <br> `level` | `varchar` <br> `int` | -<br> `0` means disabled, `1` critical only, `2` all notices
 
 ## Developers’ Corner
 
