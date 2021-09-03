@@ -44,17 +44,17 @@ descriptions:new_productionsite_type {
             "consume=meal wine",
             "sleep=duration:5s",
             "call=mine_stone",
-            "call=mine_produce",
-            "call=mine_produce",
+            "call=mine_ore",
+            "call=mine_ore",
             "consume=meal wine",
             "sleep=duration:5s",
             "call=mine_stone",
-            "call=mine_produce",
-            "call=mine_produce",
+            "call=mine_ore",
+            "call=mine_ore",
             "call=mine_quartz",
          }
       },
-      mine_produce = {
+      mine_ore = {
          descname = _"mining iron",
          actions = {
             "animate=working duration:35s",

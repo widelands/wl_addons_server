@@ -8,6 +8,20 @@ descriptions:new_productionsite_type {
    descname = pgettext("europeans_building", "Normal Clay Pit"),
    icon = dirname .. "menu.png",
    size = "small",
+   
+   enhancement = {
+        name = "europeans_clay_pit_advanced",
+        enhancement_cost = {
+          planks = 1,
+          brick = 1,
+          grout = 1,
+          marble = 1
+        },
+        enhancement_return_on_dismantle = {
+          granite = 1,
+          marble = 1
+        },
+   },
 
    animations = {
       idle = {
@@ -49,7 +63,7 @@ descriptions:new_productionsite_type {
          descname = _"making fish pond",
          actions = {
             "return=skipped unless economy needs fish or workers need experience",
-            "return=skipped when economy needs clay or workers need experience",
+            "return=skipped when economy needs clay",
             "return=failed unless site has water",
             "callworker=dig",
             "consume=water",

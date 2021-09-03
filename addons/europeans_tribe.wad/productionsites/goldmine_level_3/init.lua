@@ -58,17 +58,17 @@ descriptions:new_productionsite_type {
             "consume=snack mead",
             "sleep=duration:10s",
             "call=mine_stone",
-            "call=mine_produce",
-            "call=mine_produce",
+            "call=mine_ore",
+            "call=mine_ore",
             "consume=snack mead",
             "sleep=duration:10s",
             "call=mine_stone",
-            "call=mine_produce",
-            "call=mine_produce",
+            "call=mine_ore",
+            "call=mine_ore",
             "call=mine_quartz",
          }
       },
-      mine_produce = {
+      mine_ore = {
          descname = _"mining gold",
          actions = {
             "animate=working duration:25s",
