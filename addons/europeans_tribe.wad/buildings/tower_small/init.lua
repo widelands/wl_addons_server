@@ -11,11 +11,11 @@ descriptions:new_militarysite_type {
    vision_range = 12,
 
    enhancement = {
-        name = "europeans_blockhouse",
+        name = "europeans_sentry",
         enhancement_cost = {
             planks = 1,
-            cloth = 1,
-            granite = 1,
+            brick = 1,
+            grout = 1,
             quartz = 1
         },
         enhancement_return_on_dismantle = {

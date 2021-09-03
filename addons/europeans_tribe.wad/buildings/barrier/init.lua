@@ -14,13 +14,13 @@ descriptions:new_militarysite_type {
         enhancement_cost = {
             planks = 2,
             cloth = 2,
-            granite = 1,
-            quartz = 1
+            granite = 2,
+            quartz = 2
         },
         enhancement_return_on_dismantle = {
             planks = 1,
-            granite = 1,
-            quartz = 1
+            granite = 2,
+            quartz = 2
         },
    },
 
