@@ -39,7 +39,9 @@ import java.util.TreeMap;
 /**
  * Miscellaneous utility functions.
  */
-public abstract class Utils {
+public class Utils {
+	private Utils() {}
+
 	private static class ChecksummedFile {
 		public final File file;
 		public final String cachedChecksum;
@@ -77,10 +79,12 @@ public abstract class Utils {
 	 * Which database to use for an SQL command.
 	 */
 	public static enum Databases {
+
 		/**
 		 * The read-only website database, which contains details about registered users.
 		 */
 		kWebsite("websitedatabase"),
+
 		/**
 		 * The add-ons database, which contains moddable metadata about all add-ons.
 		 */
@@ -652,7 +656,7 @@ public abstract class Utils {
 	 * @param email E-Mail address of the recipient.
 	 * @param subject Subject line of the mail.
 	 * @param body Message text to send.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void sendEMail(String email, String subject, String body) throws Exception {
 		File message = Files.createTempFile(null, null).toFile();
@@ -670,12 +674,18 @@ public abstract class Utils {
 		message.delete();
 	}
 
+	/** Denotes that an e-mail notification is of critical importance. */
+	public static final int kEMailVerbosityCritical = 1;
+
+	/** Denotes that an e-mail notification is of low importance. */
+	public static final int kEMailVerbosityFYI = 2;
+
 	/**
 	 * Send a notification to all subscribed admins.
-	 * @param verbosity 1 for critical mails, 2 for FYI notices.
+	 * @param verbosity {@link #kEMailVerbosityCritical} or {@link #kEMailVerbosityFYI}.
 	 * @param subject Subject line of the mail.
 	 * @param msg Message text to send.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void sendEMailToSubscribedAdmins(int verbosity, String subject, String msg)
 	    throws Exception {
