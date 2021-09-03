@@ -2548,6 +2548,13 @@ descriptions:new_tribe {
          }
       },
       {
+         name = "europeans_clay_pit_advanced",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for a europeans production site: Clay Pit
+            purpose = pgettext("europeans_building", "Digs up mud from the ground and uses water to turn it into clay. Clay is used to make bricks.")
+         }
+      },
+      {
          name = "europeans_fishers_house_basic",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for production site: Fisher's Hut
@@ -3206,7 +3213,7 @@ descriptions:new_tribe {
       {
          name = "europeans_guardhouse",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an europeans military site: Blockhouse
+            -- TRANSLATORS: Purpose helptext for an europeans military site: Guardhouse
             purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
             -- TRANSLATORS: Note helptext for an europeans military site: Blockhouse
             note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
@@ -3215,16 +3222,7 @@ descriptions:new_tribe {
       {
          name = "europeans_tower_small",
          helptexts = {
-            -- TRANSLATORS: Purpose helptext for an europeans military site: Blockhouse
-            purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-            -- TRANSLATORS: Note helptext for an europeans military site: Blockhouse
-            note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-         }
-      },
-      {
-         name = "europeans_blockhouse",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for an europeans military site: Blockhouse
+            -- TRANSLATORS: Purpose helptext for an europeans military site: Small Tower
             purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
             -- TRANSLATORS: Note helptext for an europeans military site: Blockhouse
             note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")

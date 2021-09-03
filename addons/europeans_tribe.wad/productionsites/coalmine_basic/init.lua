@@ -74,14 +74,14 @@ descriptions:new_productionsite_type {
             "consume=ration beer",
             "sleep=duration:10s",
             "call=mine_stone",
-            "call=mine_produce",
+            "call=mine_coal",
             "consume=ration beer",
             "sleep=duration:10s",
             "call=mine_stone",
-            "call=mine_produce",
+            "call=mine_coal",
          }
       },
-      mine_produce = {
+      mine_coal = {
          descname = _"mining coal",
          actions = {
             "animate=working duration:10s",
