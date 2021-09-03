@@ -19,6 +19,7 @@
 
 package wl.server;
 
+// clang-format off
 /**
  * This enum lists all commands that can be sent from clients to the server.
  * <p>
@@ -490,3 +491,4 @@ public enum Command {
 	 */
 	CMD_ADMIN_SYNC_SAFE,
 }
+// clang-format on
