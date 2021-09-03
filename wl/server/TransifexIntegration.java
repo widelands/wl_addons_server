@@ -224,25 +224,27 @@ public class TransifexIntegration {
 			for (List l : relevantIssues.values()) total += l.size();
 
 			String text = "Dear " + username + ",\nthe translators have found " + total +
-			            " new issue(s) in " + relevantIssues.size() +
-			            " of your add-on(s). Below you may find a list of all new string issues.";
+			              " new issue(s) in " + relevantIssues.size() +
+			              " of your add-on(s). Below you may find a list of all new string issues.";
 			for (String addon : relevantIssues.keySet()) {
 				List<Issue> list = relevantIssues.get(addon);
-				text += "\n\n################################################################################\n " +
+				text +=
+				    "\n\n################################################################################\n " +
 				    list.size() + " new issue(s) in add-on " + addon;
 				for (Issue i : list) {
 					text +=
 					    "\n --------------------------------------------------------------------------------"
 					    // anti-linebreak comment
-					    + "\n  Issue ID      : " + i.issueID  // anti-linebreak comment
-					    + "\n  Source String : " + i.string  // anti-linebreak comment
-					    + "\n  String ID     : " + i.stringID  // anti-linebreak comment
-					    + "\n  Occurrences   : " + i.occurrence  // anti-linebreak comment
+					    + "\n  Issue ID      : " + i.issueID            // anti-linebreak comment
+					    + "\n  Source String : " + i.string             // anti-linebreak comment
+					    + "\n  String ID     : " + i.stringID           // anti-linebreak comment
+					    + "\n  Occurrences   : " + i.occurrence         // anti-linebreak comment
 					    + "\n  Last modified : " + i.datetime_modified  // anti-linebreak comment
-					    + "\n  Priority      : " + i.priority  // anti-linebreak comment
+					    + "\n  Priority      : " + i.priority           // anti-linebreak comment
 					    + "\n  Issue message : " + i.message;
 				}
-				text += "\n################################################################################";
+				text +=
+				    "\n################################################################################";
 			}
 			Utils.sendEMail(sql.getString("email"), "Transifex String Issues", text);
 		}

@@ -105,10 +105,10 @@ public abstract class Utils {
 		connectionProps.put("password", config("databasepassword"));
 
 		for (Databases db : Databases.values()) {
-			_databases[db.ordinal()] = DriverManager.getConnection(
-			    "jdbc:mysql://" + config("databasehost") + ":" +
-			        config("databaseport") + "/" + config(db.configKey),
-			    connectionProps);
+			_databases[db.ordinal()] =
+			    DriverManager.getConnection("jdbc:mysql://" + config("databasehost") + ":" +
+			                                    config("databaseport") + "/" + config(db.configKey),
+			                                connectionProps);
 		}
 	}
 
@@ -675,7 +675,9 @@ public abstract class Utils {
 		write.println("Subject: " + subject);
 		write.println();
 		write.println(body);
-		write.print("\n-------------------------\n" +
+		write.print(
+		    "\n-------------------------\n"
+		    +
 		    "To change how you receive notifications, please go to https://www.widelands.org/notification/.");
 		write.close();
 		bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
@@ -689,7 +691,8 @@ public abstract class Utils {
 	 * @param msg Message text to send.
 	 * @throws Exception If anything at all goes wrong, throw an %Exception.
 	 */
-	public static void sendEMailToSubscribedAdmins(int verbosity, String subject, String msg) throws Exception {
+	public static void sendEMailToSubscribedAdmins(int verbosity, String subject, String msg)
+	    throws Exception {
 		ResultSet sql = sql(Databases.kAddOns, "select email,level from notifyadmins");
 		while (sql.next()) {
 			if (sql.getInt("level") >= verbosity) {

@@ -91,19 +91,20 @@ class SyncThread implements Runnable {
 				Utils.log("GitHub sync ERROR: " + e);
 				e.printStackTrace();
 
-				String msg = "The automated GitHub sync on the server has failed with the following error message:\n"
-					         + "```\n" + e + "\n```\n\n```\n$ git status";
+				String msg =
+				    "The automated GitHub sync on the server has failed with the following error message:\n"
+				    + "```\n" + e + "\n```\n\n```\n$ git status";
 				try {
 					Process p =
-						Runtime.getRuntime().exec(new String[] {"bash", "-c", "git status"});
+					    Runtime.getRuntime().exec(new String[] {"bash", "-c", "git status"});
 					p.waitFor();
 					BufferedReader b =
-						new BufferedReader(new InputStreamReader(p.getInputStream()));
+					    new BufferedReader(new InputStreamReader(p.getInputStream()));
 					String str;
 					while ((str = b.readLine()) != null) msg += "\n" + str;
 					msg += "\n```\n\nThe automated syncs will discontinue until the server "
-						   + "has been restarted. Please resolve the merge conflicts quickly."
-						   + "  \nThank you :)";
+					       + "has been restarted. Please resolve the merge conflicts quickly."
+					       + "  \nThank you :)";
 
 					Utils.sendEMailToSubscribedAdmins(1, "Add-Ons Server Sync Error", msg);
 				} catch (Exception x) {
