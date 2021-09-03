@@ -20,7 +20,6 @@
 package wl.server;
 
 import java.io.File;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -49,7 +48,7 @@ public class TransifexIntegration {
 
 	/**
 	 * Perform a full translations sync.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public synchronized void fullSync() throws Exception {
 		pull();
@@ -59,7 +58,7 @@ public class TransifexIntegration {
 
 	/**
 	 * Pull translation files from Transifex. Does not perform any further processing.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public synchronized void pull() throws Exception {
 		Utils.log("Pulling translations from Transifex...");
@@ -68,7 +67,7 @@ public class TransifexIntegration {
 
 	/**
 	 * Push the current POT files to Transifex.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public synchronized void push() throws Exception {
 		Utils.log("Pushing POT files to Transifex...");
@@ -77,7 +76,7 @@ public class TransifexIntegration {
 
 	/**
 	 * Update the POT files, synchronize the current PO files with them, and recompile all MO files.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public synchronized void buildCatalogues() throws Exception {
 		Utils.log("Rebuilding catalogues...");
@@ -158,7 +157,7 @@ public class TransifexIntegration {
 	/**
 	 * Retrieve the list of open issues from Transifex
 	 * and send e-mails to add-on authors about any new ones.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public synchronized void checkIssues() throws Exception {
 		Utils.log("Checking Transifex issues...");

@@ -30,7 +30,7 @@ import wl.utils.Utils;
  * Class to manage frequent automated GitHub syncs
  * as well as force-terminating stalled client threads.
  */
-class ThreadActivityAndGitHubSyncManager {
+public class ThreadActivityAndGitHubSyncManager {
 
 	/**
 	 * The singleton instance of this class.
@@ -42,7 +42,7 @@ class ThreadActivityAndGitHubSyncManager {
 
 	/**
 	 * Perform a full GitHub sync.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public synchronized void sync() throws Exception {
 		if (!Boolean.parseBoolean(Utils.config("deploy"))) {
@@ -100,7 +100,7 @@ class ThreadActivityAndGitHubSyncManager {
 
 	/**
 	 * Force-close all threads that have been inactive for a long time.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public synchronized void check() throws Exception {
 		final long time = System.currentTimeMillis();
