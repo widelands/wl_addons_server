@@ -38,21 +38,24 @@ import wl.utils.Utils;
 /**
  * Miscellaneous utilities used by server processes.
  */
-abstract class ServerUtils {
+public class ServerUtils {
+	private ServerUtils() {}
 
 	/**
-	 * A random generator. Use only this generator to generate random numbers.
+	 * A random number generator.
+	 * <p>
+	 * Use only this generator to generate random numbers.
 	 */
 	public static final Random RANDOM = new Random(System.currentTimeMillis());
 
 	/**
-	 * Interface to describe a simple method that takes no parameters and may throw any %Exception.
+	 * Interface to describe a simple method that takes no parameters and may throw any Exception.
 	 */
 	public static interface Functor {
 
 		/**
 		 * This can be any function at all.
-		 * @throws Exception If anything at all goes wrong, throw an %Exception.
+		 * @throws Exception If anything at all goes wrong, throw an Exception.
 		 */
 		public void run() throws Exception;
 	}
@@ -76,7 +79,7 @@ abstract class ServerUtils {
 	 * thread has releases the resource again before starting to run your code.
 	 * @param addon Resource to protect.
 	 * @param f Code to execute.
-	 * @throws Exception Throw by #f.
+	 * @throws Exception Thrown by <var>f</var>.
 	 */
 	public static void semaphoreRO(String addon, Functor f) throws Exception {
 		doSemaphore(addon, 1, f);
@@ -90,7 +93,7 @@ abstract class ServerUtils {
 	 * all other threads have released the resource again before starting to run your code.
 	 * @param addon Resource to protect.
 	 * @param f Code to execute.
-	 * @throws Exception Thrown by #f.
+	 * @throws Exception Thrown by <var>f</var>.
 	 */
 	public static void semaphoreRW(String addon, Functor f) throws Exception {
 		doSemaphore(addon, SEMAPHORE_BLOCK_RW_ACCESS, f);
@@ -130,17 +133,17 @@ abstract class ServerUtils {
 	 * Read a single line of input from a stream.
 	 * @param in Stream to read from.
 	 * @return The text read.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static String readLine(InputStream in) throws Exception { return readLine(in, true); }
 
 	/**
 	 * Read a single line of input from a stream.
 	 * @param in Stream to read from.
-	 * @param exceptionOnStreamEnd If this is \c false, no %Exception will be thrown if the stream
-	 *                             is closed during reading. Instead \c null will be returned.
-	 * @return The text read, or \c null if the stream was closed.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @param exceptionOnStreamEnd If this is false, no Exception will be thrown if the stream
+	 *                             is closed during reading. Instead null will be returned.
+	 * @return The text read, or null if the stream was closed.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static String readLine(InputStream in, boolean exceptionOnStreamEnd) throws Exception {
 		ByteArrayOutputStream buffer = new ByteArrayOutputStream();
@@ -162,7 +165,7 @@ abstract class ServerUtils {
 	 * Check that the next line of text from the given stream is the end-of-input delimiter.
 	 * Throws an exception if this is not the case.
 	 * @param in Stream to read from.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void checkEndOfStream(InputStream in) throws Exception {
 		if (!readLine(in).equals("ENDOFSTREAM"))
@@ -173,10 +176,20 @@ abstract class ServerUtils {
 	 * Class to recursively write a directory structure.
 	 */
 	public static class DirInfo {
+
+		/** The base directory represented by this object. */
 		public final File file;
+
+		/** All regular files in this directory. */
 		public final ArrayList<File> regularFiles;
+
+		/** All subdirectories of this directory. */
 		public final ArrayList<DirInfo> subdirs;
+
+		/** Total number of all subdirectories, including nested subdirectories. */
 		public final int totalDirs;
+
+		/** Total number of all files, including those in subdirectories. */
 		public final int totalFiles;
 
 		/**
@@ -218,7 +231,7 @@ abstract class ServerUtils {
 		/**
 		 * Recursively write all files to a stream.
 		 * @param out Stream to write to.
-		 * @throws Exception If anything at all goes wrong, throw an %Exception.
+		 * @throws Exception If anything at all goes wrong, throw an Exception.
 		 */
 		public void writeAllFileInfos(PrintStream out) throws Exception {
 			out.println(regularFiles.size());
@@ -233,9 +246,9 @@ abstract class ServerUtils {
 	/**
 	 * Check that a client has sent exactly the expected number of arguments.
 	 * Throws an exception if this is not the case.
-	 * @param cmd Command array (the arguments are positioned in index \c 1+).
+	 * @param cmd Command array (the arguments are positioned in index 1+).
 	 * @param expected Number of expected arguments (not counting the command itself).
-	 * @throws WLProtocolException If anything at all goes wrong, throw an %Exception.
+	 * @throws WLProtocolException If anything at all goes wrong, throw an Exception.
 	 */
 	public static void checkNrArgs(String[] cmd, int expected) throws WLProtocolException {
 		if (cmd.length != expected + 1)
@@ -248,7 +261,7 @@ abstract class ServerUtils {
 	 * Throws an exception if this is not the case.
 	 * @param name Name to check.
 	 * @param directory Is this name supposed to denote a regular file or a directory.
-	 * @throws WLProtocolException If anything at all goes wrong, throw an %Exception.
+	 * @throws WLProtocolException If anything at all goes wrong, throw an Exception.
 	 */
 	public static void checkNameValid(String name, boolean directory) throws WLProtocolException {
 		if (name == null || (!directory && name.isEmpty()))
@@ -276,7 +289,7 @@ abstract class ServerUtils {
 	 * Check that an add-on exists.
 	 * Throws an exception if this is not the case.
 	 * @param name Name to check.
-	 * @throws WLProtocolException If anything at all goes wrong, throw an %Exception.
+	 * @throws WLProtocolException If anything at all goes wrong, throw an Exception.
 	 */
 	public static void checkAddOnExists(String name) throws WLProtocolException {
 		if (!(new File("addons/" + name, "addon").isFile())) {
@@ -288,7 +301,7 @@ abstract class ServerUtils {
 	 * Dump a file and some of its metadata to a stream.
 	 * @param f File to send.
 	 * @param out Stream to write to.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void writeOneFile(File f, PrintStream out) throws Exception {
 		out.println(Utils.checksum(f));
@@ -345,7 +358,7 @@ abstract class ServerUtils {
 	 * Process a client's enquiry.
 	 * @param username Name of the user who sent the enquiry.
 	 * @param msg Enquiry message.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void sendEnquiry(String username, String msg) throws Exception {
 		File dir = new File("enquiries");
@@ -373,7 +386,7 @@ abstract class ServerUtils {
 	 * @param in Stream to receive further data from the client.
 	 * @param out Stream to send data to the client.
 	 * @param correctPassword The password required for successful authentification.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void passwordAuthentification(InputStream in,
 	                                            PrintStream out,
@@ -415,8 +428,8 @@ abstract class ServerUtils {
 	/**
 	 * Check whether an add-on is compatible with a given version of Widelands.
 	 * @param wl_version The Widelands version.
-	 * @param min_wl_version The minimum version required by the add-on (may be \c null).
-	 * @param max_wl_version The maximum version supported by the add-on (may be \c null).
+	 * @param min_wl_version The minimum version required by the add-on (may be null).
+	 * @param max_wl_version The maximum version supported by the add-on (may be null).
 	 * @return The add-on is compatible.
 	 */
 	public static boolean

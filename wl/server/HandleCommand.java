@@ -23,6 +23,7 @@ import java.io.File;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import wl.utils.Utils;
@@ -30,7 +31,7 @@ import wl.utils.Utils;
 /**
  * Class to process commands sent from a client thread to the server.
  */
-class HandleCommand {
+public class HandleCommand {
 	private final PrintStream out;
 	private final InputStream in;
 	private final int protocolVersion;
@@ -48,8 +49,8 @@ class HandleCommand {
 	 * @param in Stream to receive further data from the client.
 	 * @param protocolVersion Protocol version the client uses.
 	 * @param widelandsVersion Widelands version the client uses
-	 *                         (\c null if protocol version is less than \c 5).
-	 * @param username Name of the user (\c "" for unregistered guests).
+	 *                         (null if protocol version is less than 5).
+	 * @param username Name of the user ("" for unregistered guests).
 	 * @param userDatabaseID ID of the user (only valid for registered users).
 	 * @param admin Whether the user is a registered administrator.
 	 * @param locale Language the client is speaking.
@@ -75,8 +76,8 @@ class HandleCommand {
 
 	/**
 	 * Handle a new command.
-	 * @param cmd The command sent by the client. Parameters are in index \c 1+.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @param c The command sent by the client. Parameters are in index 1+.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public void handle(String... c) throws Exception {
 		cmd = c;
@@ -146,7 +147,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_LIST command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdList() throws Exception {
 		// Args: [5+: all]
@@ -178,7 +179,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_INFO command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdInfo() throws Exception {
 		// Args: name
@@ -272,7 +273,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_DOWNLOAD command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdDownload() throws Exception {
 		// Args: name
@@ -297,7 +298,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_I18N command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdI18n() throws Exception {
 		// Args: name
@@ -313,7 +314,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_SCREENSHOT command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdScreenshot() throws Exception {
 		// Args: addon screenie
@@ -329,7 +330,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_VOTE command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdVote() throws Exception {
 		// Args: name vote
@@ -354,7 +355,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_GET_VOTE command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdGetVote() throws Exception {
 		// Args: name
@@ -375,7 +376,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_COMMENT command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdComment() throws Exception {
 		// Args: name version lines
@@ -404,7 +405,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_EDIT_COMMENT command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdEditComment() throws Exception {
 		// Args: name index lines
@@ -469,7 +470,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_SETUP_TX command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdSetupTx() throws Exception {
 		// Args: name
@@ -498,7 +499,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_ADMIN_VERIFY command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminVerify() throws Exception {
 		// Args: name state
@@ -519,7 +520,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_ADMIN_QUALITY command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminQuality() throws Exception {
 		// Args: name quality
@@ -540,7 +541,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_ADMIN_SYNC_SAFE command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminSyncSafe() throws Exception {
 		// Args: name state
@@ -563,7 +564,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_ADMIN_DELETE command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminDelete() throws Exception {
 		// Args: name lines
@@ -616,7 +617,7 @@ class HandleCommand {
 					continue;
 				}
 
-				File message = File.createTempFile("deladdon", null);
+				File message = Files.createTempFile(null, null).toFile();
 				PrintWriter write = new PrintWriter(message);
 				write.println("From: noreply@widelands.org");
 				write.println("Subject: Add-On Deleted");
@@ -655,7 +656,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_CONTACT command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdContact() throws Exception {
 		// Args: lines
@@ -679,7 +680,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_SUBMIT_SCREENSHOT command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdSubmitScreenshot() throws Exception {
 		// Args: name filesize checksum whitespaces description
@@ -698,7 +699,7 @@ class HandleCommand {
 			    + "If you really need to submit such a large image, "
 			    + "please contact the Widelands Development Team.");
 		ServerUtils.semaphoreRW(cmd[1], () -> {
-			File tempDir = Utils.createTempDir();
+			File tempDir = Files.createTempDirectory(null).toFile();
 
 			try {
 				String filename;
@@ -752,7 +753,7 @@ class HandleCommand {
 
 	/**
 	 * Handle a #CMD_SUBMIT command.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdSubmit() throws Exception {
 		// Args: name
@@ -766,7 +767,7 @@ class HandleCommand {
 			if (!admin && !Utils.isUploader(cmd[1], userDatabaseID))
 				throw new ServerUtils.WLProtocolException(
 				    "You can not overwrite another person's existing add-on");
-			File tempDir = Utils.createTempDir();
+			File tempDir = Files.createTempDirectory(null).toFile();
 
 			try {
 				final int nrDirs = Integer.valueOf(ServerUtils.readLine(in));

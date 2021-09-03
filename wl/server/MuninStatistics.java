@@ -43,7 +43,7 @@ public class MuninStatistics {
 	 * Handles all communication with a Munin client.
 	 * @param out Stream to send data to the client.
 	 * @param in Stream to receive further data from the client.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void handleMunin(InputStream in, PrintStream out) throws Exception {
 		final int version = Integer.valueOf(ServerUtils.readLine(in));
@@ -85,7 +85,7 @@ public class MuninStatistics {
 	 * Print all current statistics.
 	 * @param version Munin protocol version.
 	 * @param out The stream to print data to.
-	 * @throws Exception If anything at all goes wrong, throw an %Exception.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public synchronized void printStats(int version, PrintStream out) throws Exception {
 		out.println((System.currentTimeMillis() - initTime) / (1000.0 * 60 * 60));
@@ -105,7 +105,9 @@ public class MuninStatistics {
 	}
 
 	/**
-	 * Inform Munin not to record the next #N #CMD_INFO commands in the statistics.
+	 * Inform Munin not to record the next <var>n</var> <code>CMD_INFO</code> commands in the
+	 * statistics. <p> Each thread has its own skip counter. Registering a command other than
+	 * <code>CMD_INFO</code> resets the thread's skip counter.
 	 * @param n Number of commands to skip.
 	 */
 	public synchronized void skipNextCmdInfo(long n) {
@@ -147,7 +149,7 @@ public class MuninStatistics {
 
 	/**
 	 * Inform Munin to record a new login.
-	 * @param user ID of the user (\c -1 for unregistered users).
+	 * @param user ID of the user (-1 for unregistered users).
 	 */
 	public synchronized void registerLogin(long user) {
 		if (user < 0) {
