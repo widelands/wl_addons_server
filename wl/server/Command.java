@@ -45,9 +45,9 @@ package wl.server;
  *
  * <p>
  * The currently supported protocol versions are 4 to 5. All documentation here refers to these
- * versions. Note that compatibility for <strong>all</strong> versions <strong>ever
- * introduced</strong> needs to be maintained <strong>indefinitely</strong>. The first supported
- * version is 4; the version numbers 1-3 are used by the legacy "GitHub Repo List" format.
+ * versions. Note that compatibility for <strong>all</strong> versions <strong>ever introduced</strong> needs to be maintained
+ * <strong>indefinitely</strong>. The first supported version is 4; the version numbers 1-3 are used by the legacy
+ * "GitHub Repo List" format.
  *
  * <p>
  * All arguments to commands are whitespace-terminated strings.
@@ -61,23 +61,26 @@ package wl.server;
  *   In the initial contact, language and username are skipped; instead the munin protocol
  *   version is printed (only currently supported version is 2).
  *   The password authentication is then performed like for registered users.
- *   If the password is correct, the server replies not <code>ADMIN</code>/<code>SUCCESS</code> but
- * instead prints out server statistics in the following format: <ul> <li> Time in [1: milliseconds
- * | 2+: hours] since the server was started, <code>\n</code> <li> {@literal Protocol version >= 2}:
- * Average client lifetime in seconds, <code>\n</code> <li> Protocol version 1: <ul><li> Number of
- * current registered users, <code>\n</code> <li> Number of current unregistered users,
- * <code>\n</code>
+ *   If the password is correct, the server replies not <code>ADMIN</code>/<code>SUCCESS</code> but instead
+ *   prints out server statistics in the following format:
+ *   <ul>
+ *   <li> Time in [1: milliseconds | 2+: hours] since the server was started, <code>\n</code>
+ *   <li> {@literal Protocol version >= 2}: Average client lifetime in seconds, <code>\n</code>
+ *   <li> Protocol version 1:
+ *       <ul><li> Number of current registered users, <code>\n</code>
+ *       <li> Number of current unregistered users, <code>\n</code>
  *       </ul>
  *   <li> Protocol version 2:
  *       <ul><li> Counter of registered users, <code>\n</code>
  *       <li> Counter of unregistered users, <code>\n</code>
  *       </ul>
  *   <li> Counter of unique registered users, <code>\n</code>
- *   <li> {@literal Protocol version <= 1}: Counter of successful connection attempts,
- * <code>\n</code> <li> Counter of unsuccessful connection attempts, <code>\n</code> <li> Counter of
- * <code>CMD_LIST              </code> requests, <code>\n</code> <li> Counter of <code>CMD_INFO
- * </code> requests, <code>\n</code> <li> Counter of <code>CMD_DOWNLOAD          </code> requests,
- * <code>\n</code> <li> Counter of <code>CMD_I18N              </code> requests, <code>\n</code>
+ *   <li> {@literal Protocol version <= 1}: Counter of successful connection attempts, <code>\n</code>
+ *   <li> Counter of unsuccessful connection attempts, <code>\n</code>
+ *   <li> Counter of <code>CMD_LIST              </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_INFO              </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_DOWNLOAD          </code> requests, <code>\n</code>
+ *   <li> Counter of <code>CMD_I18N              </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_SCREENSHOT        </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_VOTE              </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_GET_VOTE          </code> requests, <code>\n</code>
@@ -87,18 +90,17 @@ package wl.server;
  *   <li> Counter of <code>CMD_SUBMIT_SCREENSHOT </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_CONTACT           </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_SETUP_TX          </code> requests, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_DELETE    </code> requests,
- * <code>\n</code> <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_VERIFY </code>
- * requests, <code>\n</code> <li> {@literal Protocol version >= 2}: Counter of
- * <code>CMD_ADMIN_QUALITY   </code> requests, <code>\n</code> <li> {@literal Protocol version >=
- * 2}: Counter of <code>CMD_ADMIN_SYNC_SAFE </code> requests, <code>\n</code> <li> Counter of
- * unsuccessful commands, <code>\n</code> <li> <code>ENDOFSTREAM\n</code>
+ *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_DELETE    </code> requests, <code>\n</code>
+ *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_VERIFY    </code> requests, <code>\n</code>
+ *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_QUALITY   </code> requests, <code>\n</code>
+ *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_SYNC_SAFE </code> requests, <code>\n</code>
+ *   <li> Counter of unsuccessful commands, <code>\n</code>
+ *   <li> <code>ENDOFSTREAM\n</code>
  *   </ul>
  *   The connection is then closed by the server.
  *   Counters refer to the total amount since the server was last started.
- *   After a <code>CMD_LIST</code> command, the next <var>N</var> <code>CMD_INFO</code> commands are
- * counted only once total (where <var>N</var> is the number of add-ons listed by the
- * <code>CMD_LIST</code>).
+ *   After a <code>CMD_LIST</code> command, the next <var>N</var> <code>CMD_INFO</code> commands are counted only
+ *   once total (where <var>N</var> is the number of add-ons listed by the <code>CMD_LIST</code>).
  * </ul>
  */
 public enum Command {
@@ -287,8 +289,7 @@ public enum Command {
 	 * </ol>
 	 *
 	 * <p>
-	 * Returns: <code>NOT_LOGGED_IN\n</code>, or vote as string followed by
-	 * <code>\nENDOFSTREAM\n</code>
+	 * Returns: <code>NOT_LOGGED_IN\n</code>, or vote as string followed by <code>\nENDOFSTREAM\n</code>
 	 */
 	CMD_GET_VOTE,
 
@@ -351,8 +352,8 @@ public enum Command {
 	 * <ol>
 	 * <li> Add-on name
 	 * </ol>
-	 * Then, on the next line, the content of the add-on like the response for
-	 * <code>CMD_DOWNLOAD</code>, terminated by <code>ENDOFSTREAM\n</code>.
+	 * Then, on the next line, the content of the add-on like the response for <code>CMD_DOWNLOAD</code>,
+	 * terminated by <code>ENDOFSTREAM\n</code>.
 	 *
 	 * <p>
 	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
@@ -373,8 +374,8 @@ public enum Command {
 	 * <li> Number of whitespaces in the description
 	 * <li> Screenshot description
 	 * </ol>
-	 * Then, on the next line, the content of the image file like for <code>CMD_SCREENSHOT</code>,
-	 * terminated by <code>ENDOFSTREAM\n</code>.
+	 * Then, on the next line, the content of the image file like for <code>CMD_SCREENSHOT</code>, terminated by
+	 * <code>ENDOFSTREAM\n</code>.
 	 *
 	 * <p>
 	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>

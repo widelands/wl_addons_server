@@ -105,9 +105,10 @@ public class MuninStatistics {
 	}
 
 	/**
-	 * Inform Munin not to record the next <var>n</var> <code>CMD_INFO</code> commands in the
-	 * statistics. <p> Each thread has its own skip counter. Registering a command other than
-	 * <code>CMD_INFO</code> resets the thread's skip counter.
+	 * Inform Munin not to record the next <var>n</var> <code>CMD_INFO</code> commands in the statistics.
+	 * <p>
+	 * Each thread has its own skip counter. Registering a command other than <code>CMD_INFO</code>
+	 * resets the thread's skip counter.
 	 * @param n Number of commands to skip.
 	 */
 	public synchronized void skipNextCmdInfo(long n) {
