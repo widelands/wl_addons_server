@@ -66,20 +66,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=burn_log",
-            "call=burn_log_basic",
+            "call=burn_log_idle",
             "return=skipped"
-         }
-      },
-      burn_log_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
-         descname = _"producing coal",
-         actions = {
-            "return=skipped when economy needs coal",
-            "return=skipped when economy needs log",
-            "consume=log:3",
-            "sleep=duration:60s",
-            "animate=working duration:1m30s",
-            "produce=coal"
          }
       },
       burn_log = {
@@ -93,6 +81,18 @@ descriptions:new_productionsite_type {
             "produce=coal:2",
          }
       },
+      burn_log_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs log",
+            "consume=log:3",
+            "sleep=duration:60s",
+            "animate=working duration:1m30s",
+            "produce=coal"
+         }
+      }
    },
 }
 

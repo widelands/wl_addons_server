@@ -49,6 +49,7 @@ descriptions:new_productionsite_type {
          actions = {
             "call=hunting",
             "call=breeding",
+            "call=hunting_idle",
             "return=skipped"
          }
       },
@@ -56,9 +57,10 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start breeding because ...
          descname = _"breeding",
          actions = {
+            "return=skipped unless economy needs meat or workers need experience",
             "return=skipped when economy needs water",
             "consume=water",
-            "sleep=duration:10s",
+            "sleep=duration:15s",
             "callworker=release",
             "sleep=duration:30s"
          }
@@ -67,10 +69,25 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _"hunting",
          actions = {
+            "return=skipped unless economy needs meat or workers need experience",
             "callworker=hunt",
-            "sleep=duration:40s"
+            "sleep=duration:45s"
          }
       },
+      hunting_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs meat",
+            "return=skipped when economy needs water",
+            "consume=water",
+            "sleep=duration:30s",
+            "callworker=release",
+            "sleep=duration:30s",
+            "callworker=hunt",
+            "sleep=duration:90s"
+         }
+      }
    },
    out_of_resource_notification = {
       -- Translators: Short for "Out of Game" for a resource

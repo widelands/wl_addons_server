@@ -43,27 +43,8 @@ descriptions:new_productionsite_type {
             "call=sculpting_marble_column",
             "call=mixing_grout",
             "call=burning_bricks",
-            "call=mixing_grout_basic",
-            "call=burning_bricks_basic",
+            "call=burning_bricks_idle",
             "return=skipped"
-         }
-      },
-      mixing_grout_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
-         descname = _"mixing grout",
-         actions = {
-            "return=skipped when economy needs brick",
-            "return=skipped when economy needs grout",
-            "return=skipped when economy needs marble_column",
-            "return=skipped when economy needs coal",
-            "return=skipped when economy needs granite",
-            "consume=coal granite water",
-            "sleep=duration:90s",
-            "playsound=sound/barbarians/stonegrind priority:80%",
-            "animate=working duration:15s",
-            "playsound=sound/barbarians/mortar priority:60%",
-            "sleep=duration:3s",
-            "produce=grout",
          }
       },
       mixing_grout = {
@@ -81,23 +62,6 @@ descriptions:new_productionsite_type {
             "produce=grout:3"
          }
       },
-      burning_bricks_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
-         descname = _"burning bricks",
-         actions = {
-            "return=skipped when economy needs brick",
-            "return=skipped when economy needs grout",
-            "return=skipped when economy needs marble_column",
-            "return=skipped when economy needs coal",
-            "return=skipped when economy needs granite",
-            "consume=coal granite clay",
-            "sleep=duration:90s",
-            "playsound=sound/barbarians/stonegrind priority:80%",
-            "animate=working duration:15s",
-            "sleep=duration:3s",
-            "produce=brick",
-         },
-      },
       burning_bricks = {
          -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
          descname = _"burning bricks",
@@ -110,7 +74,7 @@ descriptions:new_productionsite_type {
             "animate=working duration:30s",
             "sleep=duration:3s",
             "produce=brick:3"
-         },
+         }
       },
       sculpting_marble_column = {
          -- TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
@@ -129,6 +93,30 @@ descriptions:new_productionsite_type {
             "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",
             "animate=working duration:30s",
             "produce=marble_column:2"
+         }
+      },
+      burning_bricks_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs marble_column",
+            "return=skipped when economy needs brick",
+            "return=skipped when economy needs grout",
+            "return=skipped when economy needs coal",
+            "return=skipped when economy needs granite",
+            "return=skipped when economy needs water",
+            "sleep=duration:90s",
+            "consume=coal:2 granite:2 water clay",
+            "playsound=sound/barbarians/stonegrind priority:80%",
+            "animate=working duration:15s",
+            "sleep=duration:3s",
+            "produce=brick",
+            "sleep=duration:90s",
+            "playsound=sound/barbarians/stonegrind priority:80%",
+            "animate=working duration:15s",
+            "playsound=sound/barbarians/mortar priority:60%",
+            "sleep=duration:3s",
+            "produce=grout"
          }
       }
    },

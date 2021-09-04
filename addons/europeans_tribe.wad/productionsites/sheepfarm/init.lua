@@ -55,20 +55,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_wool",
-            "call=produce_wool_basic",
+            "call=produce_wool_idle",
             "return=skipped"
-         }
-      },
-      produce_wool_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start producing wool because ...
-         descname = _"producing wool",
-         actions = {
-            "return=skipped when economy needs water",
-            "consume=water blackroot",
-            "sleep=duration:90s",
-            "playsound=sound/farm/sheep priority:50% allow_multiple",
-            "animate=working duration:60s",
-            "produce=wool"
          }
       },
       produce_wool = {
@@ -83,6 +71,19 @@ descriptions:new_productionsite_type {
             "produce=wool:2"
          }
       },
+      produce_wool_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs wool",
+            "return=skipped when economy needs water",
+            "sleep=duration:90s",
+            "consume=water blackroot",
+            "playsound=sound/farm/sheep priority:50% allow_multiple",
+            "animate=working duration:60s",
+            "produce=wool"
+         }
+      }
    },
 }
 

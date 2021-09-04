@@ -133,6 +133,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
          descname = _"harvesting barley",
          actions = {
+            "return=skipped unless economy needs barley or workers need experience",
             "sleep=duration:4s",
             "callworker=harvest_barley",
             "animate=working duration:4s",
@@ -144,6 +145,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
          descname = _"harvesting berry",
          actions = {
+            "return=skipped unless economy needs fruit or workers need experience",
             "sleep=duration:4s",
             "callworker=harvest_berrybush",
             "animate=working duration:4s",
@@ -155,6 +157,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
          descname = _"harvesting blackroot",
          actions = {
+            "return=skipped unless economy needs blackroot or workers need experience",
             "sleep=duration:4s",
             "callworker=harvest_blackroot",
             "animate=working duration:4s",
@@ -166,6 +169,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
          descname = _"harvesting corn",
          actions = {
+            "return=skipped unless economy needs corn or workers need experience",
             "sleep=duration:4s",
             "callworker=harvest_corn",
             "animate=working duration:4s",
@@ -177,6 +181,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
          descname = _"harvesting grape",
          actions = {
+            "return=skipped unless economy needs grape or workers need experience",
             "sleep=duration:4s",
             "callworker=harvest_grape",
             "animate=working duration:4s",
@@ -188,6 +193,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
          descname = _"harvesting rye",
          actions = {
+            "return=skipped unless economy needs rye or workers need experience",
             "sleep=duration:4s",
             "callworker=harvest_rye",
             "animate=working duration:4s",
@@ -199,6 +205,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
          descname = _"harvesting wheat",
          actions = {
+            "return=skipped unless economy needs wheat or workers need experience",
             "sleep=duration:4s",
             "callworker=harvest_wheat",
             "animate=working duration:4s",

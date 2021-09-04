@@ -49,6 +49,7 @@ descriptions:new_productionsite_type {
          actions = {
             "call=fishing_in_sea",
             "call=breeding_in_sea",
+            "call=fishing_idle",
             "return=skipped"
          }
       },
@@ -56,9 +57,10 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
          descname = _"breeding in sea",
          actions = {
+            "return=skipped unless economy needs fish or workers need experience",
             "return=skipped when economy needs water",
             "consume=water",
-            "sleep=duration:10s",
+            "sleep=duration:15s",
             "callworker=breed_in_sea",
             "sleep=duration:30s",
          }
@@ -67,8 +69,23 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
          descname = _"fishing in sea",
          actions = {
+            "return=skipped unless economy needs fish or workers need experience",
             "callworker=fish_in_sea",
-            "sleep=duration:40s",
+            "sleep=duration:45s",
+         }
+      },
+      fishing_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs fish",
+            "return=skipped when economy needs water",
+            "consume=water",
+            "sleep=duration:30s",
+            "callworker=breed_in_sea",
+            "sleep=duration:30s",
+            "callworker=fish_in_sea",
+            "sleep=duration:90s",
          }
       }
    },

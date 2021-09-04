@@ -48,7 +48,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
          descname = _"planting trees",
          actions = {
-            "return=skipped when economy needs water",
+            "return=skipped when economy needs water and not economy needs log",
             "consume=water",
             "callworker=plant",
             "sleep=duration:10s"

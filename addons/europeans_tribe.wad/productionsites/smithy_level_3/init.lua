@@ -81,6 +81,7 @@ descriptions:new_productionsite_type {
             "call=produce_spear_wooden",
             "call=produce_spear_advanced",
             "call=produce_helmet_mask",
+            "call=produce_idle",
             "return=skipped"
          }
       },
@@ -326,6 +327,37 @@ descriptions:new_productionsite_type {
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:10s",
             "produce=spear_advanced"
+         }
+      },
+      produce_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs buckets",
+            "return=skipped when economy needs shovel",
+            "return=skipped when economy needs saw",
+            "return=skipped when economy needs hammer",
+            "return=skipped when economy needs pick",
+            "return=skipped when economy needs felling_ax",
+            "return=skipped when economy needs fire_tongs",
+            "return=skipped when economy needs scythe",
+            "return=skipped when economy needs basket",
+            "return=skipped when economy needs milking_tongs",
+            "return=skipped when economy needs needles",
+            "return=skipped when economy needs fishing_rod",
+            "return=skipped when economy needs fishing_net",
+            "return=skipped when economy needs hunting_bow",
+            "return=skipped when economy needs hunting_spear",
+            "return=skipped when economy needs bread_paddle",
+            "return=skipped when economy needs hook_pole",
+            "return=skipped when economy needs spear_wooden",
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "sleep=duration:90s",
+            "consume=planks:3 coal:3 iron:3",
+            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+            "animate=working duration:30s",
+            "produce=basket buckets shovel saw hammer fire_tongs pick felling_ax scythe"
          }
       }
    },

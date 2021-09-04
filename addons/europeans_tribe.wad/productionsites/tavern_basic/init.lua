@@ -70,19 +70,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_ration",
-            "call=produce_ration_basic",
+            "call=produce_ration_idle",
             "return=skipped"
-         }
-      },
-      produce_ration_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
-         descname = _"preparing a ration",
-         actions = {
-            "return=skipped when economy needs water",
-            "sleep=duration:90s",
-            "consume=water flour fish,meat",
-            "animate=working duration:70s",
-            "produce=ration"
          }
       },
       produce_ration = {
@@ -91,12 +80,24 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs water and not economy needs ration",
             "return=skipped unless economy needs ration or workers need experience",
-            "sleep=duration:10s",
             "consume=water:2 flour:2 fish,meat:2",
+            "sleep=duration:10s",
             "animate=working duration:70s",
             "produce=ration:2"
          }
       },
+      produce_ration_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs ration",
+            "return=skipped when economy needs water",
+            "sleep=duration:90s",
+            "consume=water flour fish,meat",
+            "animate=working duration:30s",
+            "produce=ration"
+         }
+      }
    },
 }
 

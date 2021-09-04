@@ -191,7 +191,7 @@ descriptions:new_tribe {
          },
          {
             name = "grout",
-            default_target_quantity = 16,
+            default_target_quantity = 32,
             preciousness = 48,
             helptexts = {
                purpose = {
@@ -217,7 +217,7 @@ descriptions:new_tribe {
          },
          {
             name = "brick",
-            default_target_quantity = 16,
+            default_target_quantity = 32,
             preciousness = 48,
             helptexts = {
                purpose = {
@@ -248,7 +248,7 @@ descriptions:new_tribe {
          },
          {
             name = "quartz",
-            default_target_quantity = 16,
+            default_target_quantity = 32,
             preciousness = 48,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Quartz
@@ -257,7 +257,7 @@ descriptions:new_tribe {
          },
          {
             name = "diamond",
-            default_target_quantity = 16,
+            default_target_quantity = 32,
             preciousness = 48,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Diamond
@@ -386,7 +386,7 @@ descriptions:new_tribe {
          -- Food 2
         {
             name = "water",
-            default_target_quantity = 32,
+            default_target_quantity = 64,
             preciousness = 50,
             helptexts = {
                purpose = {
@@ -475,7 +475,7 @@ descriptions:new_tribe {
          {
             name = "coal",
             default_target_quantity = 32,
-            preciousness = 48,
+            preciousness = 64,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Coal, part 1
@@ -488,7 +488,7 @@ descriptions:new_tribe {
          {
             name = "ore",
             default_target_quantity = 32,
-            preciousness = 48,
+            preciousness = 64,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Iron Ore, part 1
@@ -546,7 +546,7 @@ descriptions:new_tribe {
          {
             name = "basket",
             default_target_quantity = 8,
-            preciousness = 0,
+            preciousness = 1,
              helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Basket, part 1
@@ -666,7 +666,7 @@ descriptions:new_tribe {
          {
             name = "scythe",
             default_target_quantity = 2,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Scythe, part 1
@@ -692,7 +692,7 @@ descriptions:new_tribe {
          {
             name = "fishing_rod",
             default_target_quantity = 2,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Fishing Rod, part 1
@@ -705,7 +705,7 @@ descriptions:new_tribe {
          {
             name = "fishing_net",
             default_target_quantity = 2,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Fishing Net, part 1
@@ -718,7 +718,7 @@ descriptions:new_tribe {
          {
             name = "hunting_spear",
             default_target_quantity = 2,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 1
@@ -731,7 +731,7 @@ descriptions:new_tribe {
          {
             name = "hunting_bow",
             default_target_quantity = 2,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 1
@@ -744,7 +744,7 @@ descriptions:new_tribe {
          {
             name = "bread_paddle",
             default_target_quantity = 2,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Bread Paddle, part 1
@@ -757,7 +757,7 @@ descriptions:new_tribe {
          {
             name = "hook_pole",
             default_target_quantity = 2,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Hook Pole, part 1
@@ -857,7 +857,7 @@ descriptions:new_tribe {
          {
             name = "helmet_mask",
             default_target_quantity = 1,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Helmet Mask
                purpose = pgettext("europeans_ware", "The mask is the medium defense tool of a soldier. It is produced in a smithy and used in a battle arena – together with food – to train soldiers in defense.")

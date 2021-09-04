@@ -58,22 +58,8 @@ descriptions:new_productionsite_type {
          actions = {
             "call=produce_ration",
             "call=produce_snack",
-            "call=produce_ration_basic",
-            "call=produce_snack_basic",
+            "call=produce_snack_idle",
             "return=skipped"
-         }
-      },
-      produce_ration_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
-         descname = _"preparing a ration",
-         actions = {
-            "return=skipped when economy needs ration",
-            "return=skipped when economy needs snack",
-            "return=skipped when economy needs water",
-            "sleep=duration:90s",
-            "consume=water flour fish,meat",
-            "animate=working duration:60s",
-            "produce=ration"
          }
       },
       produce_ration = {
@@ -88,19 +74,6 @@ descriptions:new_productionsite_type {
             "produce=ration:2"
          }
       },
-      produce_snack_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start preparing a snack because ...
-         descname = _"preparing a snack",
-         actions = {
-            "return=skipped when economy needs ration",
-            "return=skipped when economy needs snack",
-            "return=skipped when economy needs water",
-            "sleep=duration:90s",
-            "consume=water:2 flour:2 fish,meat:2",
-            "animate=working duration:60s",
-            "produce=snack"
-         }
-      },
       produce_snack = {
          -- TRANSLATORS: Completed/Skipped/Did not start preparing a snack because ...
          descname = _"preparing a snack",
@@ -113,6 +86,22 @@ descriptions:new_productionsite_type {
             "produce=snack:3"
          }
       },
+      produce_snack_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs ration",
+            "return=skipped when economy needs snack",
+            "return=skipped when economy needs water",
+            "sleep=duration:90s",
+            "consume=water:3 flour:3 fish,meat:3",
+            "animate=working duration:30s",
+            "produce=ration",
+            "sleep=duration:90s",
+            "animate=working duration:30s",
+            "produce=snack"
+         }
+      }
    },
 }
 

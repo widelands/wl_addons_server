@@ -48,47 +48,24 @@ descriptions:new_productionsite_type {
          actions = {
             "call=plant",
             "call=harvest",
-            "call=plant_basic",
-            "call=harvest_basic",
             "return=skipped"
-         }
-      },
-      plant_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-         descname = _"planting reed",
-         actions = {
-            "return=skipped when economy needs reed",
-            "return=skipped when economy needs water",
-            "consume=water",
-            "callworker=plant_reed",
-            "sleep=duration:90s"
          }
       },
       plant = {
          -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
          descname = _"planting reed",
          actions = {
-            "return=skipped when economy needs water and not economy needs reed",
+            "return=skipped when economy needs water",
             "consume=water",
             "callworker=plant_reed",
             "sleep=duration:6s"
-         }
-      },
-      harvest_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-         descname = _"harvesting reed",
-         actions = {
-            "return=skipped when economy needs reed",
-            "return=skipped when economy needs water",
-            "callworker=harvest_reed",
-            "sleep=duration:90s"
          }
       },
       harvest = {
          -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
          descname = _"harvesting reed",
          actions = {
-            "return=skipped when economy needs water and not economy needs reed",
+            "return=skipped unless economy needs reed or workers need experience",
             "callworker=harvest_reed",
             "sleep=duration:2s"
          }

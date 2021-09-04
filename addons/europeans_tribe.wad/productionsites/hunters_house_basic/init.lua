@@ -63,6 +63,7 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=hunting",
+            "call=hunting_idle",
             "return=skipped"
          }
       },
@@ -70,10 +71,20 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _"hunting",
          actions = {
+            "return=skipped unless economy needs meat or workers need experience",
             "callworker=hunt",
-            "sleep=duration:50s"
+            "sleep=duration:60s"
          }
       },
+      hunting_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs meat",
+            "callworker=hunt",
+            "sleep=duration:90s"
+         }
+      }
    },
    out_of_resource_notification = {
       -- Translators: Short for "Out of Game" for a resource

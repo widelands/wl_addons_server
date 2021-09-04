@@ -47,6 +47,7 @@ descriptions:new_productionsite_type {
             "call=recycle_gold",
             "call=smelt_iron",
             "call=smelt_gold",
+            "call=smelt_iron_idle",
             "return=skipped"
          }
       },
@@ -102,6 +103,26 @@ descriptions:new_productionsite_type {
             "produce=gold"
          }
       },
+      smelt_iron_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs iron",
+            "return=skipped when economy needs gold",
+            "return=skipped when economy needs coal",
+            "sleep=duration:90s",
+            "consume=ore:2 coal:2",
+            "playsound=sound/metal/fizzle priority:20% allow_multiple",
+            "animate=working duration:25s",
+            "playsound=sound/metal/ironping priority:60%",
+            "produce=iron",
+            "sleep=duration:90s",
+            "playsound=sound/metal/fizzle priority:20% allow_multiple",
+            "animate=working duration:25s",
+            "playsound=sound/metal/ironping priority:60%",
+            "produce=gold",
+         }
+      }
    },
 }
 

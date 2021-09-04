@@ -63,20 +63,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=brew_beer",
-            "call=brew_beer_basic",
+            "call=brew_beer_idle",
             "return=skipped"
-         }
-      },
-      brew_beer_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
-         descname = _"brewing beer",
-         actions = {
-            "return=skipped when economy needs beer",
-            "return=skipped when economy needs water",
-            "consume=water barley",
-            "sleep=duration:90s",
-            "animate=working duration:80s",
-            "produce=beer"
          }
       },
       brew_beer = {
@@ -91,6 +79,18 @@ descriptions:new_productionsite_type {
             "produce=beer:3"
          }
       },
+      brew_beer_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program ",
+         actions = {
+            "return=skipped when economy needs beer",
+            "return=skipped when economy needs water",
+            "sleep=duration:90s",
+            "consume=water barley",
+            "animate=working duration:80s",
+            "produce=beer"
+         }
+      }
    },
 }
 

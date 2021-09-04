@@ -53,19 +53,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_spidersilk",
-            "call=produce_spidersilk_basic",
+            "call=produce_spidersilk_idle",
             "return=skipped"
-         }
-      },
-      produce_spidersilk_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
-         descname = _"producing spider silk",
-         actions = {
-            "return=skipped when economy needs water",
-            "consume=corn water",
-            "sleep=duration:90s",
-            "animate=working duration:60s",
-            "produce=spider_silk"
          }
       },
       produce_spidersilk = {
@@ -79,6 +68,18 @@ descriptions:new_productionsite_type {
             "produce=spider_silk:2"
          }
       },
+      produce_spidersilk_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs spider_silk",
+            "return=skipped when economy needs water",
+            "sleep=duration:90s",
+            "consume=corn water",
+            "animate=working duration:60s",
+            "produce=spider_silk"
+         }
+      }
    },
 }
 

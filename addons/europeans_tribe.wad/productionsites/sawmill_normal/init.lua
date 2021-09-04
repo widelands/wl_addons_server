@@ -55,23 +55,8 @@ descriptions:new_productionsite_type {
          actions = {
             "call=saw_log",
             "call=hardening_wood",
-            "call=saw_log_basic",
-            "call=hardening_wood_basic",
+            "call=saw_log_idle",
             "return=skipped"
-         }
-      },
-      saw_log_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
-         descname = _"sawing logs",
-         actions = {
-            "return=skipped when economy needs blackwood",
-            "return=skipped when economy needs planks",
-            "return=skipped when economy needs log",
-            "consume=log:2",
-            "sleep=duration:90s",
-            "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-            "animate=working duration:30s", 
-            "produce=planks"
          }
       },
       saw_log = {
@@ -86,20 +71,6 @@ descriptions:new_productionsite_type {
             "produce=planks:3"
          }
       },
-      hardening_wood_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
-         descname = _"hardening wood",
-         actions = {
-            "return=skipped when economy needs blackwood",
-            "return=skipped when economy needs planks",
-            "return=skipped when economy needs log",
-            "consume=log:2",
-            "sleep=duration:90s",
-            "playsound=sound/barbarians/blackwood priority:60%",
-            "animate=working duration:30s",
-            "produce=blackwood"
-         }
-      },
       hardening_wood = {
          -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
          descname = _"hardening wood",
@@ -110,6 +81,20 @@ descriptions:new_productionsite_type {
             "playsound=sound/barbarians/blackwood priority:60%",
             "animate=working duration:20s",
             "produce=blackwood:3"
+         }
+      },
+      saw_log_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs blackwood",
+            "return=skipped when economy needs planks",
+            "return=skipped when economy needs log",
+            "sleep=duration:90s",
+            "consume=log:2",
+            "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+            "animate=working duration:30s", 
+            "produce=planks"
          }
       },
    },

@@ -54,22 +54,9 @@ descriptions:new_productionsite_type {
             "callworker=check_dike",
             "call=diking_clay",
             "callworker=check_dig",
-            "call=making_pond",
+            "call=making_pond_idle",
             "return=skipped"
          }
-      },
-      making_pond = {
-         -- TRANSLATORS: Completed/Skipped/Did not start making pond because ...
-         descname = _"making fish pond",
-         actions = {
-            "return=skipped unless economy needs fish or workers need experience",
-            "return=skipped when economy needs clay",
-            "return=failed unless site has water",
-            "callworker=dig",
-            "consume=water",
-            "sleep=duration:10s",
-            "animate=working duration:15s",
-         },
       },
       digging_clay = {
          -- TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
@@ -83,7 +70,7 @@ descriptions:new_productionsite_type {
             "animate=working duration:15s",
             "sleep=duration:1s",
             "produce=clay"
-         },
+         }
       },
       diking_clay = {
          -- TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
@@ -95,8 +82,21 @@ descriptions:new_productionsite_type {
             "animate=working duration:15s",
             "sleep=duration:1s",
             "produce=clay"
-         },
+         }
       },
+      making_pond_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs clay",
+            "return=skipped when economy needs water",
+            "sleep=duration:90s",
+            "callworker=dig",
+            "consume=water",
+            "sleep=duration:10s",
+            "animate=working duration:15s",
+         }
+      }
    },
 }
 

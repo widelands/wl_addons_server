@@ -43,26 +43,8 @@ descriptions:new_productionsite_type {
             "call=brew_mead",
             "call=brew_strong_beer",
             "call=making_wine",
-            "call=brew_beer_basic",
-            "call=brew_mead_basic",
-            "call=brew_strong_beer_basic",
-            "call=making_wine_basic",
+            "call=making_wine_idle",
             "return=skipped"
-         }
-      },
-      brew_beer_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
-         descname = _"brewing beer",
-         actions = {
-            "return=skipped when economy needs beer",
-            "return=skipped when economy needs mead",
-            "return=skipped when economy needs beer_strong",
-            "return=skipped when economy needs wine",
-            "return=skipped when economy needs water",
-            "consume=water barley",
-            "sleep=duration:90s",
-            "animate=working duration:60s",
-            "produce=beer"
          }
       },
       brew_beer = {
@@ -79,21 +61,6 @@ descriptions:new_productionsite_type {
             "produce=beer:3"
          }
       },
-      brew_mead_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
-         descname = _"brewing mead",
-         actions = {
-            "return=skipped when economy needs beer",
-            "return=skipped when economy needs beer_strong",
-            "return=skipped when economy needs mead",
-            "return=skipped when economy needs wine",
-            "return=skipped when economy needs water",
-            "consume=water barley honey",
-            "sleep=duration:90s",
-            "animate=working duration:60s",
-            "produce=mead"
-         }
-      },
       brew_mead = {
          -- TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
          descname = _"brewing mead",
@@ -106,21 +73,6 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "animate=working duration:60s",
             "produce=mead:3"
-         }
-      },
-      brew_strong_beer_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
-         descname = _"brewing strong beer",
-         actions = {
-            "return=skipped when economy needs beer",
-            "return=skipped when economy needs beer_strong",
-            "return=skipped when economy needs mead",
-            "return=skipped when economy needs wine",
-            "return=skipped when economy needs water",
-            "consume=water barley",
-            "sleep=duration:90s",
-            "animate=working duration:70s",
-            "produce=beer_strong"
          }
       },
       brew_strong_beer = {
@@ -137,22 +89,6 @@ descriptions:new_productionsite_type {
             "produce=beer_strong:3"
          }
       },
-      making_wine_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start making wine because ...
-         descname = _"making wine",
-         actions = {
-            "return=skipped when economy needs beer",
-            "return=skipped when economy needs beer_strong",
-            "return=skipped when economy needs mead",
-            "return=skipped when economy needs wine",
-            "return=skipped when economy needs water",
-            "consume=water fruit grape",
-            "sleep=duration:90s",
-            "playsound=sound/empire/winebubble priority:40% allow_multiple",
-            "animate=working duration:70s",
-            "produce=wine"
-         }
-      },
       making_wine = {
          -- TRANSLATORS: Completed/Skipped/Did not start making wine because ...
          descname = _"making wine",
@@ -167,6 +103,31 @@ descriptions:new_productionsite_type {
             "produce=wine:3"
          }
       },
+      making_wine_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program ",
+         actions = {
+            "return=skipped when economy needs beer",
+            "return=skipped when economy needs beer_strong",
+            "return=skipped when economy needs mead",
+            "return=skipped when economy needs wine",
+            "return=skipped when economy needs water",
+            "sleep=duration:90s",
+            "consume=water:5 barley:4 honey fruit grape",
+            "animate=working duration:80s",
+            "produce=beer",
+            "sleep=duration:90s",
+            "animate=working duration:90s",
+            "produce=beer_strong",
+            "sleep=duration:90s",
+            "animate=working duration:90s",
+            "produce=mead",
+            "sleep=duration:90s",
+            "playsound=sound/empire/winebubble priority:40% allow_multiple",
+            "animate=working duration:70s",
+            "produce=wine"
+         }
+      }
    },
 }
 
