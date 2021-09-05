@@ -55,7 +55,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
          descname = _"planting reed",
          actions = {
-            "return=skipped when economy needs water",
+            "return=skipped unless site has water:2",
             "consume=water",
             "callworker=plant_reed",
             "sleep=duration:6s"

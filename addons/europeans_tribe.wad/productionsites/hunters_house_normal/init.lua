@@ -58,7 +58,7 @@ descriptions:new_productionsite_type {
          descname = _"breeding",
          actions = {
             "return=skipped unless economy needs meat or workers need experience",
-            "return=skipped when economy needs water",
+            "return=skipped unless site has water:2",
             "consume=water",
             "sleep=duration:15s",
             "callworker=release",

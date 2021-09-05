@@ -60,7 +60,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:5s",
             "animate=working duration:20s",
             "mine=resource_water radius:2 yield:100% when_empty:75%",
-            "produce=water"
+            "produce=water:2"
          }
       },
       mining_water_idle = {

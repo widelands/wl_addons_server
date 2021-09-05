@@ -84,6 +84,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs grout or workers need experience",
             "return=skipped when economy needs granite",
+            "return=skipped unless site has water:3",
             "consume=coal:2 granite:3 water:3",
             "sleep=duration:10s",
             "playsound=sound/barbarians/stonegrind priority:80%",

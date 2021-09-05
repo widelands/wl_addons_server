@@ -73,6 +73,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs water and not economy needs beer",
             "return=skipped unless economy needs beer or workers need experience",
+            "return=skipped unless site has water:3",
             "consume=water:3 barley:3",
             "sleep=duration:10s",
             "animate=working duration:80s",

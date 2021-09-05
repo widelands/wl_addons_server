@@ -62,6 +62,7 @@ descriptions:new_productionsite_type {
          descname = _"producing spider silk",
          actions = {
             "return=skipped unless economy needs spider_silk or workers need experience",
+            "return=skipped unless site has water:2",
             "consume=corn:2 water:2",
             "sleep=duration:10s",
             "animate=working duration:60s",

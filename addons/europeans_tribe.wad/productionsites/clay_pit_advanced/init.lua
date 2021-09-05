@@ -51,7 +51,7 @@ descriptions:new_productionsite_type {
          descname = _"digging clay",
          actions = {
             "return=skipped unless economy needs clay or workers need experience",
-            "return=failed unless site has water",
+            "return=skipped unless site has water:2",
             "callworker=dig",
             "consume=water",
             "sleep=duration:10s",

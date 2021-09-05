@@ -64,6 +64,7 @@ descriptions:new_productionsite_type {
          descname = _"producing wool",
          actions = {
             "return=skipped unless economy needs wool or workers need experience",
+            "return=skipped unless site has water:2",
             "consume=water:2 blackroot:2",
             "sleep=duration:10s",
             "playsound=sound/farm/sheep priority:50% allow_multiple",
