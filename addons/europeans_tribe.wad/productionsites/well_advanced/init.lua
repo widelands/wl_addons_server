@@ -32,19 +32,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=mining_water",
-            "call=mining_water_basic",
+            "call=mining_water_idle",
             "return=skipped"
-         }
-      },
-      mining_water_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start mining water because ...
-         descname = _"mining water",
-         actions = {
-            "return=skipped when economy needs water",
-            "sleep=duration:60s",
-            "animate=working duration:10s",
-            "mine=resource_water radius:4 yield:100% when_empty:99%",
-            "produce=water"
          }
       },
       mining_water = {
@@ -53,11 +42,22 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs water",
             "sleep=duration:5s",
-            "animate=working duration:10s",
+            "animate=working duration:20s",
+            "mine=resource_water radius:4 yield:100% when_empty:99%",
+            "produce=water:3"
+         }
+      },
+      mining_water_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs water",
+            "sleep=duration:60s",
+            "animate=working duration:20s",
             "mine=resource_water radius:4 yield:100% when_empty:99%",
             "produce=water"
          }
-      },
+      }
    },
    
    out_of_resource_notification = {

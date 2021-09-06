@@ -84,6 +84,7 @@ descriptions:new_productionsite_type {
             "call=produce_needles",
             "call=produce_bread_paddle",
             "call=produce_hook_pole",
+            "call=produce_idle",
             "return=skipped"
          }
       },
@@ -241,6 +242,30 @@ descriptions:new_productionsite_type {
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:60s",
             "produce=shovel:2"
+         }
+      },
+      produce_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs buckets",
+            "return=skipped when economy needs shovel",
+            "return=skipped when economy needs saw",
+            "return=skipped when economy needs hammer",
+            "return=skipped when economy needs pick",
+            "return=skipped when economy needs felling_ax",
+            "return=skipped when economy needs fire_tongs",
+            "return=skipped when economy needs scythe",
+            "return=skipped when economy needs basket",
+            "return=skipped when economy needs milking_tongs",
+            "return=skipped when economy needs needles",
+            "return=skipped when economy needs bread_paddle",
+            "return=skipped when economy needs hook_pole",
+            "sleep=duration:90s",
+            "consume=planks:3 coal:3 iron:3",
+            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+            "animate=working duration:30s",
+            "produce=basket buckets shovel saw hammer fire_tongs pick felling_ax scythe"
          }
       }
    },

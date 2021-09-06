@@ -66,6 +66,7 @@ descriptions:new_productionsite_type {
          descname = _"planting trees",
          actions = {
             "return=skipped when economy needs water and not economy needs log",
+            "return=skipped unless site has water:2",
             "consume=water",
             "callworker=plant",
             "sleep=duration:20s"

@@ -100,6 +100,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting second carrier"),
          actions = {
             "return=skipped unless economy needs europeans_carrier_2",
+            "return=skipped when economy needs europeans_farmer_advanced",
+            "return=skipped when economy needs europeans_miller_advanced",
+            "return=skipped when economy needs europeans_hunter_advanced",
             "sleep=duration:10s",
             "consume=basket europeans_carrier",
             "animate=working duration:30s",
@@ -111,6 +114,9 @@ descriptions:new_productionsite_type {
          descname = pgettext("europeans_building", "recruiting third carrier"),
          actions = {
             "return=skipped unless economy needs europeans_carrier_3",
+            "return=skipped when economy needs europeans_farmer_advanced",
+            "return=skipped when economy needs europeans_miller_advanced",
+            "return=skipped when economy needs europeans_hunter_advanced",
             "sleep=duration:10s",
             "consume=basket europeans_carrier",
             "animate=working duration:30s",

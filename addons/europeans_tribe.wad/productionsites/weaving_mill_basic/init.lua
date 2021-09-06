@@ -66,21 +66,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_cloth",
-            "call=produce_cloth_basic",
+            "call=produce_cloth_idle",
             "return=skipped"
-         }
-      },
-      produce_cloth_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
-         descname = _"weaving cloth",
-         actions = {
-            "return=skipped when economy needs cloth",
-            "return=skipped when economy needs reed",
-            "sleep=duration:90s",
-            "consume=reed",
-            "playsound=sound/barbarians/weaver priority:90%",
-            "animate=working duration:30s",
-            "produce=cloth"
          }
       },
       produce_cloth = {
@@ -88,13 +75,26 @@ descriptions:new_productionsite_type {
          descname = _"weaving cloth",
          actions = {
             "return=skipped unless economy needs cloth or workers need experience",
-            "sleep=duration:10s",
             "consume=reed:3",
+            "sleep=duration:10s",
             "playsound=sound/barbarians/weaver priority:90%",
             "animate=working duration:50s",
             "produce=cloth:3"
          }
       },
+      produce_cloth_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs cloth",
+            "return=skipped when economy needs reed",
+            "sleep=duration:90s",
+            "consume=reed",
+            "playsound=sound/barbarians/weaver priority:90%",
+            "animate=working duration:60s",
+            "produce=cloth"
+         }
+      }
    },
 }
 

@@ -63,21 +63,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=smelt_iron",
-            "call=smelt_iron_basic",
+            "call=smelt_iron_idle",
             "return=skipped"
-         }
-      },
-      smelt_iron_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
-         descname = _"smelting iron",
-         actions = {
-            "return=skipped when economy needs iron",
-            "consume=ore coal",
-            "sleep=duration:90s",
-            "playsound=sound/metal/fizzle priority:20% allow_multiple",
-            "animate=working duration:25s",
-            "playsound=sound/metal/ironping priority:60%",
-            "produce=iron",
          }
       },
       smelt_iron = {
@@ -85,6 +72,7 @@ descriptions:new_productionsite_type {
          descname = _"smelting iron",
          actions = {
             "return=skipped unless economy needs iron or workers need experience",
+            "return=skipped unless site has coal:3",
             "consume=ore:3 coal:3",
             "sleep=duration:10s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
@@ -93,6 +81,20 @@ descriptions:new_productionsite_type {
             "produce=iron:3",
          }
       },
+      smelt_iron_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs iron",
+            "return=skipped when economy needs coal",
+            "consume=ore coal",
+            "sleep=duration:90s",
+            "playsound=sound/metal/fizzle priority:20% allow_multiple",
+            "animate=working duration:25s",
+            "playsound=sound/metal/ironping priority:60%",
+            "produce=iron",
+         }
+      }
    },
 }
 

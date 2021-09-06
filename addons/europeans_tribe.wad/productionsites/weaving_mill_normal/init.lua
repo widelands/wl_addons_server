@@ -56,22 +56,8 @@ descriptions:new_productionsite_type {
             "call=produce_cloth",
             "call=produce_spidercloth",
             "call=produce_tabard",
-            "call=produce_cloth_basic",
-            "call=produce_spidercloth_basic",
+            "call=produce_spidercloth_idle",
             "return=skipped"
-         }
-      },
-      produce_cloth_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
-         descname = _"weaving cloth",
-         actions = {
-            "return=skipped when economy needs cloth",
-            "return=skipped when economy needs reed",
-            "sleep=duration:90s",
-            "consume=reed",
-            "playsound=sound/barbarians/weaver priority:90%",
-            "animate=working duration:30s",
-            "produce=cloth"
          }
       },
       produce_cloth = {
@@ -79,24 +65,11 @@ descriptions:new_productionsite_type {
          descname = _"weaving cloth",
          actions = {
             "return=skipped unless economy needs cloth or workers need experience",
-            "sleep=duration:10s",
             "consume=reed:3",
+            "sleep=duration:10s",
             "playsound=sound/barbarians/weaver priority:90%",
             "animate=working duration:40s",
             "produce=cloth:3"
-         }
-      },
-      produce_spidercloth_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start weaving spidercloth because ...
-         descname = _"weaving spidercloth",
-         actions = {
-            "return=skipped when economy needs spidercloth",
-            "return=skipped when economy needs tabard",
-            "sleep=duration:90s",
-            "consume=spider_silk",
-            "playsound=sound/mill/weaving priority:90%",
-            "animate=working duration:30s",
-            "produce=spidercloth"
          }
       },
       produce_spidercloth = {
@@ -123,6 +96,20 @@ descriptions:new_productionsite_type {
             "produce=tabard"
          }
       },
+      produce_spidercloth_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs cloth",
+            "return=skipped when economy needs spidercloth",
+            "return=skipped when economy needs tabard",
+            "sleep=duration:90s",
+            "consume=spider_silk",
+            "playsound=sound/mill/weaving priority:90%",
+            "animate=working duration:60s",
+            "produce=spidercloth"
+         }
+      }
    },
 }
 

@@ -23,7 +23,7 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "water", amount = 10 },
+      { name = "water", amount = 8 },
    },
    
    programs = {
@@ -48,7 +48,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
          descname = _"planting trees",
          actions = {
-            "return=skipped when economy needs water",
+            "return=skipped when economy needs water and not economy needs log",
+            "return=skipped unless site has water:2",
             "consume=water",
             "callworker=plant",
             "sleep=duration:10s"
@@ -58,7 +59,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
          descname = _"enhancing the fertility of land",
          actions = {
-            "return=skipped when economy needs water",
+            "return=skipped unless site has water:4",
             "consume=water:2",
             "callworker=terraform",
             "sleep=duration:10s"

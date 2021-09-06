@@ -47,6 +47,7 @@ descriptions:new_productionsite_type {
             "call=recycle_gold",
             "call=smelt_iron",
             "call=smelt_gold",
+            "call=smelt_iron_idle",
             "return=skipped"
          }
       },
@@ -55,6 +56,7 @@ descriptions:new_productionsite_type {
          descname = _"recycling iron",
          actions = {
             "return=skipped when economy needs coal",
+            "return=skipped unless site has scrap_iron:2",
             "consume=scrap_iron:2 coal:2",
             "sleep=duration:30s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
@@ -68,6 +70,7 @@ descriptions:new_productionsite_type {
          descname = _"recycling iron and gold",
          actions = {
             "return=skipped when economy needs coal",
+            "return=skipped unless site has scrap_metal_mixed:3",
             "consume=scrap_metal_mixed:3 coal:3",
             "sleep=duration:30s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
@@ -80,7 +83,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
          descname = _"smelting iron",
          actions = {
-            "return=skipped when economy needs coal and not economy needs iron",
+            "return=skipped unless economy needs iron or workers need experience",
+            "return=skipped unless site has coal:3",
             "consume=ore:3 coal:3",
             "sleep=duration:20s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
@@ -93,7 +97,8 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
          descname = _"smelting gold",
          actions = {
-            "return=skipped when economy needs coal and not economy needs gold",
+            "return=skipped unless economy needs gold or workers need experience",
+            "return=skipped unless site has coal:2",
             "consume=ore:2 coal:2",
             "sleep=duration:20s",
             "playsound=sound/metal/fizzle priority:20% allow_multiple",
@@ -102,6 +107,26 @@ descriptions:new_productionsite_type {
             "produce=gold"
          }
       },
+      smelt_iron_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs iron",
+            "return=skipped when economy needs gold",
+            "return=skipped when economy needs coal",
+            "sleep=duration:90s",
+            "consume=ore:2 coal:2",
+            "playsound=sound/metal/fizzle priority:20% allow_multiple",
+            "animate=working duration:25s",
+            "playsound=sound/metal/ironping priority:60%",
+            "produce=iron",
+            "sleep=duration:90s",
+            "playsound=sound/metal/fizzle priority:20% allow_multiple",
+            "animate=working duration:25s",
+            "playsound=sound/metal/ironping priority:60%",
+            "produce=gold",
+         }
+      }
    },
 }
 

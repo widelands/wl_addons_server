@@ -42,11 +42,30 @@ descriptions:new_productionsite_type {
 
    programs = {
       main = {
+         -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+         descname = _"working",
+         actions = {
+            "call=making_honey",
+            "call=making_honey_idle",
+            "return=skipped"
+         }
+      },
+      making_honey = {
          -- TRANSLATORS: Completed/Skipped/Did not start making honey because ...
          descname = _"making honey",
          actions = {
+            "return=skipped unless economy needs honey or workers need experience",
             "callworker=bees",
-            "sleep=duration:60s"
+            "sleep=duration:30s"
+         }
+      },
+      making_honey_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs honey",
+            "callworker=bees",
+            "sleep=duration:90s"
          }
       },
    },

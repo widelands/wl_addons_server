@@ -80,44 +80,6 @@ descriptions:new_productionsite_type {
             "return=skipped"
          }
       },
-      produce_idle = {
-         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-         descname = _"idle program",
-         actions = {
-            "return=skipped when economy needs buckets",
-            "return=skipped when economy needs shovel",
-            "return=skipped when economy needs saw",
-            "return=skipped when economy needs hammer",
-            "return=skipped when economy needs pick",
-            "return=skipped when economy needs felling_ax",
-            "return=skipped when economy needs fire_tongs",
-            "return=skipped when economy needs scythe",
-            "return=skipped when economy needs basket",
-            "return=skipped when economy needs milking_tongs",
-            "return=skipped when economy needs needles",
-            "return=skipped when economy needs fishing_rod",
-            "return=skipped when economy needs fishing_net",
-            "return=skipped when economy needs hunting_bow",
-            "return=skipped when economy needs hunting_spear",
-            "return=skipped when economy needs bread_paddle",
-            "return=skipped when economy needs hook_pole",
-            "return=skipped when economy needs spear_wooden",
-            "return=skipped when economy needs helmet_mask",
-            "return=skipped when economy needs spear_advanced",
-            "return=skipped when economy needs armor_chain",
-            "return=skipped when economy needs shield_steel",
-            "return=skipped when economy needs ax_broad",
-            "return=skipped when economy needs armor_gilded",
-            "return=skipped when economy needs tabard_golden",
-            "return=skipped when economy needs shield_advanced",
-            "return=skipped when economy needs sword_broad",
-            "consume=planks coal iron",
-            "sleep=duration:60s",
-            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
-            "produce=basket:3"
-         }
-      },
       produce_basket = {
          -- TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
          descname = _"making a basket",
@@ -510,7 +472,7 @@ descriptions:new_productionsite_type {
             "animate=working duration:20s",
             "produce=shield_advanced"
          }
-      },      
+      },
       produce_sword_broad = {
          -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
          descname = _"forging a broadsword",
@@ -533,8 +495,46 @@ descriptions:new_productionsite_type {
             "playsound=sound/smiths/sharpening priority:90%",
             "sleep=duration:5s",
             "produce=sword_broad"
-         },
+         }
       },
+      produce_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs buckets",
+            "return=skipped when economy needs shovel",
+            "return=skipped when economy needs saw",
+            "return=skipped when economy needs hammer",
+            "return=skipped when economy needs pick",
+            "return=skipped when economy needs felling_ax",
+            "return=skipped when economy needs fire_tongs",
+            "return=skipped when economy needs scythe",
+            "return=skipped when economy needs basket",
+            "return=skipped when economy needs milking_tongs",
+            "return=skipped when economy needs needles",
+            "return=skipped when economy needs fishing_rod",
+            "return=skipped when economy needs fishing_net",
+            "return=skipped when economy needs hunting_bow",
+            "return=skipped when economy needs hunting_spear",
+            "return=skipped when economy needs bread_paddle",
+            "return=skipped when economy needs hook_pole",
+            "return=skipped when economy needs spear_wooden",
+            "return=skipped when economy needs helmet_mask",
+            "return=skipped when economy needs spear_advanced",
+            "return=skipped when economy needs armor_chain",
+            "return=skipped when economy needs shield_steel",
+            "return=skipped when economy needs ax_broad",
+            "return=skipped when economy needs armor_gilded",
+            "return=skipped when economy needs tabard_golden",
+            "return=skipped when economy needs shield_advanced",
+            "return=skipped when economy needs sword_broad",
+            "sleep=duration:90s",
+            "consume=planks:3 coal:3 iron:3",
+            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+            "animate=working duration:30s",
+            "produce=basket buckets shovel saw hammer fire_tongs pick felling_ax scythe"
+         }
+      }
    },
 }
 

@@ -38,20 +38,8 @@ descriptions:new_productionsite_type {
          descname = _"working",
          actions = {
             "call=produce_mixed_flour",
-            "call=produce_mixed_flour_basic",
+            "call=produce_mixed_flour_idle",
             "return=skipped"
-         }
-      },
-      produce_mixed_flour_basic = {
-         -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
-         descname = _"grinding rye and wheat",
-         actions = {
-            "return=skipped when economy needs flour",
-            "sleep=duration:90s",
-            "consume=wheat rye",
-            "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-            "animate=working duration:40s",
-            "produce=flour"
          }
       },
       produce_mixed_flour = {
@@ -66,6 +54,18 @@ descriptions:new_productionsite_type {
             "produce=flour:7"
          }
       },
+      produce_mixed_flour_idle = {
+         -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+         descname = _"idle program",
+         actions = {
+            "return=skipped when economy needs flour",
+            "sleep=duration:90s",
+            "consume=wheat rye",
+            "playsound=sound/mill/mill_turning priority:85% allow_multiple",
+            "animate=working duration:60s",
+            "produce=flour"
+         }
+      }
    },
 }
 
