@@ -115,7 +115,7 @@ public class SyncThread implements Runnable {
 					       + "has been restarted. Please resolve the merge conflicts quickly."
 					       + "  \nThank you :)";
 
-					Utils.sendEMailToSubscribedAdmins(1, "Add-Ons Server Sync Error", msg);
+					Utils.sendEMailToSubscribedAdmins(Utils.kEMailVerbosityCritical, "Add-Ons Server Sync Error", msg);
 				} catch (Exception x) {
 					Utils.log("ERROR WHILE SENDING ERROR NOTIFICATION: " + x);
 					x.printStackTrace();

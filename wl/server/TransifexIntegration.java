@@ -245,7 +245,7 @@ public class TransifexIntegration {
 				text +=
 				    "\n################################################################################";
 			}
-			Utils.sendEMail(sql.getString("email"), "Transifex String Issues", text);
+			Utils.sendEMail(sql.getString("email"), "Transifex String Issues", text, true);
 		}
 	}
 

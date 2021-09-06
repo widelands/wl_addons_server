@@ -656,19 +656,20 @@ public class Utils {
 	 * @param email E-Mail address of the recipient.
 	 * @param subject Subject line of the mail.
 	 * @param body Message text to send.
+	 * @param footer Whether to append a footer with a link to the notifications settings.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	public static void sendEMail(String email, String subject, String body) throws Exception {
+	public static void sendEMail(String email, String subject, String body, boolean footer) throws Exception {
 		File message = Files.createTempFile(null, null).toFile();
 		PrintWriter write = new PrintWriter(message);
 		write.println("From: noreply@widelands.org");
 		write.println("Subject: " + subject);
 		write.println();
 		write.println(body);
-		write.print(
-		    "\n-------------------------\n"
-		    +
-		    "To change how you receive notifications, please go to https://www.widelands.org/notification/.");
+		if (footer) {
+			write.print("\n-------------------------\n" +
+				"To change how you receive notifications, please go to https://www.widelands.org/notification/.");
+		}
 		write.close();
 		bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
 		message.delete();
@@ -692,7 +693,7 @@ public class Utils {
 		ResultSet sql = sql(Databases.kAddOns, "select email,level from notifyadmins");
 		while (sql.next()) {
 			if (sql.getInt("level") >= verbosity) {
-				sendEMail(sql.getString("email"), subject, msg);
+				sendEMail(sql.getString("email"), subject, msg, false);
 			}
 		}
 	}

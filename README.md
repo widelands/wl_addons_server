@@ -98,6 +98,8 @@ If you encounter any issues related to a specific add-on, please **do not report
 
 Issues related to the add-on system in general, or not related to add-ons at all, should be reported [against the official game](https://github.com/widelands/widelands/issues).
 
+Keep in mind that some of the add-ons here (only the ‘Dummy Campaign’ currently) are meant as proof-of-concept dummies. Please do not report any errors regarding those.
+
 ## License
 
 This repository and its contents are published under the same license as Widelands: [The GNU General Public License (GPL) v2.](https://github.com/widelands/widelands/blob/master/COPYING)

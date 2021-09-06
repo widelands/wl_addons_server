@@ -587,7 +587,7 @@ public class HandleCommand {
 		ServerUtils.semaphoreRW(cmd[1], () -> {
 			final long id = Utils.getAddOnID(cmd[1]);
 			Utils.sendEMailToSubscribedAdmins(
-			    2, "Add-On Deleted",
+			    Utils.kEMailVerbosityFYI, "Add-On Deleted",
 			    "The add-on '" + cmd[1] + "' (#" + id + ") has been deleted by " + username +
 			        " for the following reason:\n" + reason +
 			        "\n\n-------------------------\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
@@ -623,7 +623,7 @@ public class HandleCommand {
 				        "' has been deleted by the server administrators for the following reason:\n" +
 				        reason + "\n\n-------------------------\n"
 				        +
-				        "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/.");
+				        "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/.", true);
 			}
 
 			Utils.sql(Utils.Databases.kAddOns, "delete from uservotes where addon=?", id);
@@ -666,7 +666,7 @@ public class HandleCommand {
 		ServerUtils.checkEndOfStream(in);
 
 		Utils.sendEMailToSubscribedAdmins(
-		    1, "Add-Ons User Enquiry",
+		    Utils.kEMailVerbosityCritical, "Add-Ons User Enquiry",
 		    "The user '" + username + "' has sent the following message.\n"
 		        + "Please reply to https://www.widelands.org/messages/compose/" + username +
 		        "/\n\n-------------------------\n" + msg);
@@ -885,7 +885,7 @@ public class HandleCommand {
 				}
 
 				Utils.sendEMailToSubscribedAdmins(
-				    2, (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
+				    Utils.kEMailVerbosityFYI, (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
 				    (isUpdate ? ("An add-on has been updated by " + username) :
                                 ("A new add-on has been submitted by " + username)) +
 				        ":\n"
