@@ -623,7 +623,8 @@ public class HandleCommand {
 				        "' has been deleted by the server administrators for the following reason:\n" +
 				        reason + "\n\n-------------------------\n"
 				        +
-				        "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/.", true);
+				        "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/.",
+				    true);
 			}
 
 			Utils.sql(Utils.Databases.kAddOns, "delete from uservotes where addon=?", id);

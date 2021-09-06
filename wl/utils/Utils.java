@@ -659,7 +659,8 @@ public class Utils {
 	 * @param footer Whether to append a footer with a link to the notifications settings.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	public static void sendEMail(String email, String subject, String body, boolean footer) throws Exception {
+	public static void sendEMail(String email, String subject, String body, boolean footer)
+	    throws Exception {
 		File message = Files.createTempFile(null, null).toFile();
 		PrintWriter write = new PrintWriter(message);
 		write.println("From: noreply@widelands.org");
@@ -667,8 +668,10 @@ public class Utils {
 		write.println();
 		write.println(body);
 		if (footer) {
-			write.print("\n-------------------------\n" +
-				"To change how you receive notifications, please go to https://www.widelands.org/notification/.");
+			write.print(
+			    "\n-------------------------\n"
+			    +
+			    "To change how you receive notifications, please go to https://www.widelands.org/notification/.");
 		}
 		write.close();
 		bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
