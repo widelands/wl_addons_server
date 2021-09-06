@@ -4,11 +4,11 @@ Repository providing an add-ons server for [@widelands](https://github.com/widel
 
 If you want to contribute a new add-on, [information how to create add-ons can be found here.](https://github.com/widelands/widelands/blob/master/doc/sphinx/source/add-ons.rst)
 
-New add-ons, or upgrades for existing ones, as well as new or updated screenshots, can be uploaded to the server from the in-game add-ons manager (Widelands 1.1 or newer). Alternatively it is possible to submit them by creating a pull request here. If you do not wish to do this, it is also possible to submit add-ons and screenshots on the forum: https://www.widelands.org/forum/topic/5073
+New add-ons, or upgrades for existing ones, as well as new or updated screenshots, can be uploaded to the server from the in-game add-ons manager (Widelands 1.1 or newer). It is also possible to submit add-ons and screenshots on the forum: https://www.widelands.org/forum/topic/5073
 
 ## Prerequisites
 
-Before running the server or adding add-ons to this repository be sure a java development kit (JDK) is installed to compile the Java programs.
+Before running the server, be sure a Java Development Kit (JDK) is installed to compile the Java programs.
 
 ## The Server
 
@@ -23,7 +23,7 @@ The server protocol is documented in `wl/server/Command.java`.
 
 Widelands version 1.0 and older does not connect to the server. It instead downloads and parses the `list*` files in this repository and then downloads each file belonging to an add-on separately. Every change to an add-on must therefore be reflected in the `list*` files so that the full add-on selection is available also to Widelands 1.0 users.   
 For this reason, the server automatically syncs its repo checkout with the GitHub repo every night. Normally, all required steps are done fully automatically. Occasionally, a merge conflict may arise which may prove too difficult for the server to handle on its own.   
-Whenever an error that requires a maintainer’s attention occurs on the add-ons server, a notification will automatically be posted to https://github.com/widelands/wl_addons_server/issues/31. See there for instructions how to handle.
+Whenever an error that requires a maintainer’s attention occurs on the add-ons server, an e-mail notification will automatically be posted to all subscribed maintainers.
 
 ### The `config` File
 
@@ -64,6 +64,7 @@ Table          | Column Names                                              | Col
 `uploaders`    | `addon` <br> `user`                                       | `int` <br> `int`                                   | An add-on can have multiple uploaders.<br>Each uploader goes on a separate row.
 `uservotes`    | `addon` <br> `user` <br> `vote`                           | `int` <br> `int` <br> `int`                        |
 `usercomments` | `id` <br> `addon` <br> `user` <br> `timestamp` <br> `editor` <br> `edit_timestamp` <br> `version` <br> `message` | `int` <br> `int` <br> `int` <br> `bigint` <br> `int` <br> `bigint` <br> `varchar` <br> `varchar` | Unique comment ID<br>-<br>-<br>-<br> May be `NULL` <br> May be `NULL` <br>-<br>-
+`notifyadmins` | `email` <br> `level` | `varchar` <br> `int` | -<br> `0` means disabled, `1` critical only, `2` all notices
 
 ## Developers’ Corner
 
@@ -77,6 +78,13 @@ If the add-on was not up for translation on Transifex yet, a translations **main
 - Edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!
 - Finally, set the Priority of all new resources. Add-ons officially provided by the Widelands Development Team get highest priority. Add-ons which have not been verified yet should not appear on Transifex in the first place, but if they do, they get the lowest priority. All other add-ons get medium priority. Also add appropriate category tags to the resources: Every resource gets the add-on’s category as a tag. The few official add-ons also get the "Official" tag and perhaps other tags as appropriate (e.g. "Tournament" for add-ons used in an official tournament).
 
+### Maintainer E-Mail Subscriptions
+
+Anyone who wants to be dropped a notification about important events such as server sync errors or add-on submissions should add themselves to the `notifyadmins` table. Use subscription level `1` to subscribe only to critical events, or any higher number to subscribe to all numbers; `0` disables notifications.
+```
+insert info notifyadmins (email, level) value ('my.address@example.com', 2);
+```
+
 ### Translations
 
 Translating should be done on Transifex: https://www.transifex.com/widelands/widelands-addons/   
@@ -88,9 +96,9 @@ The server periodically syncs the translations with Transifex and compiles them 
 
 If you encounter any issues related to a specific add-on, please **do not report them against the official game**! Report them on this repository instead.
 
-Keep in mind that currently some of the add-ons here are meant as proof-of-concept dummies. Please do not report any errors regarding those.
-
 Issues related to the add-on system in general, or not related to add-ons at all, should be reported [against the official game](https://github.com/widelands/widelands/issues).
+
+Keep in mind that some of the add-ons here (only the ‘Dummy Campaign’ currently) are meant as proof-of-concept dummies. Please do not report any errors regarding those.
 
 ## License
 

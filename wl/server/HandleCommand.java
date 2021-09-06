@@ -22,7 +22,6 @@ package wl.server;
 import java.io.File;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -587,10 +586,11 @@ public class HandleCommand {
 		final String reason = msg;  // Lambdas need "final or effectively final" local variables…
 		ServerUtils.semaphoreRW(cmd[1], () -> {
 			final long id = Utils.getAddOnID(cmd[1]);
-			Utils.sendNotificationToGitHubThread(
-			    "The add-on '" + cmd[1] + "' (#" + id +
-			    ") has been deleted by an administrator for the following reason:\n" + reason +
-			    "\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
+			Utils.sendEMailToSubscribedAdmins(
+			    Utils.kEMailVerbosityFYI, "Add-On Deleted",
+			    "The add-on '" + cmd[1] + "' (#" + id + ") has been deleted by " + username +
+			        " for the following reason:\n" + reason +
+			        "\n\n-------------------------\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
 
 			ResultSet sql =
 			    Utils.sql(Utils.Databases.kWebsite,
@@ -617,22 +617,14 @@ public class HandleCommand {
 					continue;
 				}
 
-				File message = Files.createTempFile(null, null).toFile();
-				PrintWriter write = new PrintWriter(message);
-				write.println("From: noreply@widelands.org");
-				write.println("Subject: Add-On Deleted");
-				write.println("\nDear " + email.getString("username") + ",");
-				write.println(
-				    "your add-on '" + cmd[1] +
-				    "' has been deleted by the server administrators for the following reason:");
-				write.println(reason);
-				write.println("\n-------------------------");
-				write.print(
-				    "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/.");
-				write.close();
-
-				ServerUtils.sendEMail(email.getString("email"), message);
-				message.delete();
+				Utils.sendEMail(
+				    email.getString("email"), "Add-On Deleted",
+				    "Dear " + email.getString("username") + ",\n\nyour add-on '" + cmd[1] +
+				        "' has been deleted by the server administrators for the following reason:\n" +
+				        reason + "\n\n-------------------------\n"
+				        +
+				        "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/.",
+				    true);
 			}
 
 			Utils.sql(Utils.Databases.kAddOns, "delete from uservotes where addon=?", id);
@@ -674,7 +666,11 @@ public class HandleCommand {
 		}
 		ServerUtils.checkEndOfStream(in);
 
-		ServerUtils.sendEnquiry(username, msg);
+		Utils.sendEMailToSubscribedAdmins(
+		    Utils.kEMailVerbosityCritical, "Add-Ons User Enquiry",
+		    "The user '" + username + "' has sent the following message.\n"
+		        + "Please reply to https://www.widelands.org/messages/compose/" + username +
+		        "/\n\n-------------------------\n" + msg);
 		out.println("ENDOFSTREAM");
 	}
 
@@ -831,7 +827,7 @@ public class HandleCommand {
 
 				Utils.Profile newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
 				boolean isUpdate = false;
-				String oldVersionString = null;
+				String oldVersionString = null, diff = null;
 				int oldSecurity = -1, oldQuality = -1;
 				if (addOnDir.isDirectory()) {
 					isUpdate = true;
@@ -866,6 +862,8 @@ public class HandleCommand {
 						    "', your version is '" + newProfile.get("version").value + "'.");
 					}
 
+					diff = Utils.bashOutput("diff", "-r", addOnDir.getPath(), tempDir.getPath());
+
 					ResultSet sql =
 					    Utils.sql(Utils.Databases.kAddOns,
 					              "select id,security,quality from addons where name=?", cmd[1]);
@@ -887,41 +885,43 @@ public class HandleCommand {
 					          Utils.getAddOnID(cmd[1]), userDatabaseID);
 				}
 
-				Utils.sendNotificationToGitHubThread(
+				Utils.sendEMailToSubscribedAdmins(
+				    Utils.kEMailVerbosityFYI, (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
 				    (isUpdate ? ("An add-on has been updated by " + username) :
                                 ("A new add-on has been submitted by " + username)) +
-				    ":\n"
-				    + "\n- Name: " + cmd[1] +
-				    (isUpdate ? ("\n- Old version: " + oldVersionString +
-				                 "\n- New version: " + newProfile.get("version").value) :
-                                ("\n- Version: " + newProfile.get("version").value)) +
-				    (username.equals(newProfile.get("author").value) ?
-                         ("\n- Author: " + newProfile.get("author").value) :
-                         ("\n- **Author: " + newProfile.get("author").value + "**")) +
-				    "\n- Descname: " + newProfile.get("name").value +
-				    "\n- Description: " + newProfile.get("description").value +
-				    "\n- Category: " + newProfile.get("category").value +
-				    (newProfile.get("sync_safe") != null ?
-                         ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
-                         ("\n- Sync-safe: N/A")) +
-				    "\n- Min WL version: " +
-				    (newProfile.get("min_wl_version") != null ?
-                         newProfile.get("min_wl_version").value :
-                         "N/A") +
-				    "\n- Max WL version: " +
-				    (newProfile.get("max_wl_version") != null ?
-                         newProfile.get("max_wl_version").value :
-                         "N/A") +
-				    "\n- Requires: " +
-				    (newProfile.get("requires").value.isEmpty() ?
-                         "N/A" :
-                         newProfile.get("requires").value) +
-				    (isUpdate ?
-                         ("\n- Old security: " + oldSecurity + "\n- Old quality: " + oldQuality) :
-                         "") +
-				    "\n\nPlease review this add-on soonish.");
-				tempDir.renameTo(addOnDir);
+				        ":\n"
+				        + "\n- Name: " + cmd[1] +
+				        (isUpdate ? ("\n- Old version: " + oldVersionString +
+				                     "\n- New version: " + newProfile.get("version").value) :
+                                    ("\n- Version: " + newProfile.get("version").value)) +
+				        (username.equals(newProfile.get("author").value) ?
+                             ("\n- Author: " + newProfile.get("author").value) :
+                             ("\n- **Author: " + newProfile.get("author").value + "**")) +
+				        "\n- Descname: " + newProfile.get("name").value +
+				        "\n- Description: " + newProfile.get("description").value +
+				        "\n- Category: " + newProfile.get("category").value +
+				        (newProfile.get("sync_safe") != null ?
+                             ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
+                             ("\n- Sync-safe: N/A")) +
+				        "\n- Min WL version: " +
+				        (newProfile.get("min_wl_version") != null ?
+                             newProfile.get("min_wl_version").value :
+                             "N/A") +
+				        "\n- Max WL version: " +
+				        (newProfile.get("max_wl_version") != null ?
+                             newProfile.get("max_wl_version").value :
+                             "N/A") +
+				        "\n- Requires: " +
+				        (newProfile.get("requires").value.isEmpty() ?
+                             "N/A" :
+                             newProfile.get("requires").value) +
+				        (isUpdate ? ("\n- Old security: " + oldSecurity +
+				                     "\n- Old quality: " + oldQuality) :
+                                    "") +
+				        "\n\nPlease review this add-on soonish." +
+				        (isUpdate ? ("\n\n-------------------------\n\n" + diff) : ""));
 
+				tempDir.renameTo(addOnDir);
 				out.println("ENDOFSTREAM");
 			} catch (Exception e) {
 				ServerUtils.doDelete(tempDir);

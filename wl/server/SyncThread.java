@@ -20,6 +20,7 @@
 package wl.server;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.InputStreamReader;
 import java.util.Calendar;
 import java.util.Date;
@@ -67,12 +68,13 @@ public class SyncThread implements Runnable {
 				for (Utils.Databases db : Utils.Databases.values()) Utils.sql(db, "show tables");
 
 				Utils.log("Backing up the database...");
+				new File("backup").mkdir();
 				Runtime.getRuntime().exec(new String[] {
 				    "bash", "-c",
 				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
 				        Utils.config("databasepassword") + " -h" + Utils.config("databasehost") +
 				        " -P" + Utils.config("databaseport") + " --column-statistics=0 " +
-				        Utils.config("addonsdatabase") + " > _addons_database_backup_" +
+				        Utils.config("addonsdatabase") + " > backup/addons_database_backup_" +
 				        Calendar.getInstance().get(Calendar.DAY_OF_WEEK) + "_" + phase + ".sql"});
 
 				if (phase == 0) {
@@ -97,25 +99,31 @@ public class SyncThread implements Runnable {
 				errored = true;
 				Utils.log("GitHub sync ERROR: " + e);
 				e.printStackTrace();
+
+				String msg =
+				    "The automated GitHub sync on the server has failed with the following error message:\n"
+				    + "```\n" + e + "\n```\n\n```\n$ git status";
 				try {
-					String str;
-					String msg = "@Noordfrees\n\n"
-					             + "The automated GitHub sync on the server "
-					             + "has failed with the following error message:\n"
-					             + "```\n" + e + "\n```\n\n```\n$ git status";
 					Process p =
 					    Runtime.getRuntime().exec(new String[] {"bash", "-c", "git status"});
 					p.waitFor();
 					BufferedReader b =
 					    new BufferedReader(new InputStreamReader(p.getInputStream()));
+					String str;
 					while ((str = b.readLine()) != null) msg += "\n" + str;
 					msg += "\n```\n\nThe automated syncs will discontinue until the server "
 					       + "has been restarted. Please resolve the merge conflicts quickly."
 					       + "  \nThank you :)";
 
-					Utils.sendNotificationToGitHubThread(msg);
+					Utils.sendEMailToSubscribedAdmins(
+					    Utils.kEMailVerbosityCritical, "Add-Ons Server Sync Error", msg);
 				} catch (Exception x) {
-					Utils.fatalError("unable to send failure notification!", x);
+					Utils.log("ERROR WHILE SENDING ERROR NOTIFICATION: " + x);
+					x.printStackTrace();
+					Utils.log("Error message being composed was:\n" + msg);
+					Utils.log(
+					    "Something has gone seriously wrong here. Killing the server in the hope that the maintainers will hurry to resolve the problems.");
+					System.exit(1);
 				}
 			}
 			phase++;
