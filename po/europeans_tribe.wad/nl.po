@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-05 03:03+0200\n"
+"POT-Creation-Date: 2021-09-06 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Dutch (https://www.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
@@ -680,6 +680,10 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:64
+#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:111
+#: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:85
+#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:111
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:112
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_advanced/init.lua:84
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_basic/init.lua:86
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:87
@@ -702,9 +706,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:112
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:88
 #: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:77
-#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:108
-#: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:85
-#: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:91
+#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:112
+#: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:86
+#: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:93
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:249
 #: addons/europeans_tribe.wad/productionsites/smithy_level_1/init.lua:291
 #: addons/europeans_tribe.wad/productionsites/smithy_level_2/init.lua:291
@@ -768,14 +772,6 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:82
 msgid "brewing strong beer"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-#: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:111
-#: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:85
-#: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:111
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:112
-msgid "idle program "
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1815,20 +1811,20 @@ msgid "recycling iron"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling iron and gold because ...
-#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:69
+#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:70
 msgid "recycling iron and gold"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
-#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:82
+#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:84
 #: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:72
 #: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:64
 msgid "smelting iron"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
-#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:95
-#: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:78
+#: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:98
+#: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:79
 msgid "smelting gold"
 msgstr ""
 

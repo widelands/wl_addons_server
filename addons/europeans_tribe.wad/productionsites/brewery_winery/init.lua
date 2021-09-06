@@ -109,7 +109,7 @@ descriptions:new_productionsite_type {
       },
       making_wine_idle = {
          -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-         descname = _"idle program ",
+         descname = _"idle program",
          actions = {
             "return=skipped when economy needs beer",
             "return=skipped when economy needs beer_strong",

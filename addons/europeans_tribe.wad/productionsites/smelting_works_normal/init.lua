@@ -65,6 +65,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs iron or workers need experience",
             "return=skipped when economy needs gold",
+            "return=skipped unless site has coal:2",
             "consume=ore:2 coal:2",
             "sleep=duration:10s",
             "playsound=sound/metal/fizzle priority:15% allow_multiple",
@@ -78,6 +79,7 @@ descriptions:new_productionsite_type {
          descname = _"smelting gold",
          actions = {
             "return=skipped unless economy needs gold or workers need experience",
+            "return=skipped unless site has coal:2",
             "consume=ore:2 coal:2",
             "sleep=duration:10s",
             "playsound=sound/metal/fizzle priority:15% allow_multiple",

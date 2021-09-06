@@ -108,7 +108,7 @@ descriptions:new_productionsite_type {
       },
       brew_mead_idle = {
          -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-         descname = _"idle program ",
+         descname = _"idle program",
          actions = {
             "return=skipped when economy needs beer",
             "return=skipped when economy needs beer_strong",

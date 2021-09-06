@@ -1000,7 +1000,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_shipwright_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Shipwright
@@ -1009,7 +1009,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_geologist",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Geologist
@@ -1046,7 +1046,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_trainer_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Trainer
@@ -1115,7 +1115,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_lumberjack_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Lumberjack / Woodcutter
@@ -1142,7 +1142,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_forester_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Ranger / Forester
@@ -1169,7 +1169,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_carpenter_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carpenter / Sawyer
@@ -1199,7 +1199,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_charcoal_burner_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
@@ -1226,7 +1226,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_stonecutter_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Stonecutter
@@ -1253,7 +1253,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_claydigger_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Clay Digger
@@ -1280,7 +1280,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_stonemason_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Stonemason
@@ -1292,7 +1292,7 @@ descriptions:new_tribe {
          -- Collectors, Supporters and Producer (Cloth)
          {
             name = "europeans_farmer_basic",
-            default_target_quantity = 3,
+            default_target_quantity = 1,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Farmer
@@ -1301,7 +1301,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_farmer_normal",
-            default_target_quantity = 3,
+            default_target_quantity = 1,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Farmer
@@ -1310,7 +1310,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_farmer_advanced",
-            default_target_quantity = 3,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Farmer
@@ -1337,7 +1337,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_beekeeper_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carrier
@@ -1364,7 +1364,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_breeder_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Breeder
@@ -1391,7 +1391,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_weaver_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Weaver
@@ -1421,7 +1421,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_fisher_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carrier
@@ -1448,7 +1448,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_hunter_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Carrier
@@ -1475,7 +1475,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_smoker_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Smoker
@@ -1505,7 +1505,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_brewer_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Brewer
@@ -1532,7 +1532,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_miller_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Miller
@@ -1559,7 +1559,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_baker_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Baker
@@ -1571,7 +1571,7 @@ descriptions:new_tribe {
          -- Miners, Smelters and Smiths
          {
             name = "europeans_miner_basic",
-            default_target_quantity = 3,
+            default_target_quantity = 1,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Miner
@@ -1580,7 +1580,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_miner_normal",
-            default_target_quantity = 3,
+            default_target_quantity = 1,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Miner
@@ -1589,7 +1589,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_miner_advanced",
-            default_target_quantity = 3,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Miner
@@ -1598,7 +1598,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_smelter_basic",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Smelter
@@ -1616,7 +1616,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_smelter_advanced",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Smelter
@@ -1634,7 +1634,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_smith_normal",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Smith

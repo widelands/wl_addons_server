@@ -82,7 +82,7 @@ descriptions:new_productionsite_type {
       },
       brew_beer_idle = {
          -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-         descname = _"idle program ",
+         descname = _"idle program",
          actions = {
             "return=skipped when economy needs beer",
             "return=skipped when economy needs water",
