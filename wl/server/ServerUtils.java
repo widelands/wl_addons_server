@@ -354,7 +354,7 @@ public class ServerUtils {
 	 * @param addon Add-on on which the user commented.
 	 * @param commenter The user who wrote the comment.
 	 * @param comment The comment message.
-	 * @param oldMessage The comment former message if this is an edit
+	 * @param oldMessage The former comment message if this is an edit
 	 *                   of an existing comment, otherwise null.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
@@ -429,6 +429,7 @@ public class ServerUtils {
 		}
 	}
 
+	// Helper function for sendCommentNotifications()
 	private static Set<String> findMentions(String text) {
 		Set<String> mentioned = new HashSet<>();
 		int len = text.length();
