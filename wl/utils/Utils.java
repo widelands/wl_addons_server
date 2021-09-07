@@ -185,6 +185,18 @@ public class Utils {
 	}
 
 	/**
+	 * Retrieve the name of an add-on from the database.
+	 * @param id The add-on's ID.
+	 * @return The add-on's name.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	public static String getAddOnName(long id) throws Exception {
+		ResultSet r = sql(Databases.kAddOns, "select name from addons where id=?", id);
+		if (!r.next()) return null;
+		return r.getString("name");
+	}
+
+	/**
 	 * Check whether a given user is one of the uploaders for a given add-on.
 	 * If the add-on does not exist, the user is assumed to have permission to create it.
 	 * @param addon The add-on's name.

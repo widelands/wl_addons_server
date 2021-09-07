@@ -398,6 +398,7 @@ public class HandleCommand {
 		    "insert into usercomments (addon,user,timestamp,version,message) value(?,?,?,?,?)",
 		    Utils.getAddOnID(cmd[1]), userDatabaseID, (System.currentTimeMillis() / 1000), cmd[2],
 		    msg);
+		ServerUtils.sendCommentNotifications(cmd[1], username, msg, null);
 
 		out.println("ENDOFSTREAM");
 	}
@@ -431,7 +432,7 @@ public class HandleCommand {
 			commentID = sql.getLong("id");
 		}
 		ResultSet sql = Utils.sql(
-		    Utils.Databases.kAddOns, "select user,editor from usercomments where id=?", commentID);
+		    Utils.Databases.kAddOns, "select user,editor,timestamp,addon,message from usercomments where id=?", commentID);
 		if (!sql.next())
 			throw new ServerUtils.WLProtocolException("Invalid comment ID " + commentID);
 
@@ -443,6 +444,9 @@ public class HandleCommand {
 			if (!sql.wasNull() && editor != userDatabaseID)
 				throw new ServerUtils.WLProtocolException(
 				    "Forbidden to edit a comment edited by a maintainer");
+			if (System.currentTimeMillis() / 1000 - sql.getLong("timestamp") > ServerUtils.kCommentEditTimeout)
+				throw new ServerUtils.WLProtocolException(
+				    "Forbidden to edit a comment later than one day after posting");
 		}
 
 		final int nrLines = Integer.valueOf(cmd[protocolVersion < 5 ? 3 : 2]);
@@ -459,6 +463,7 @@ public class HandleCommand {
 		if (nrLines == 0) {
 			Utils.sql(Utils.Databases.kAddOns, "delete from usercomments where id=?", commentID);
 		} else {
+			ServerUtils.sendCommentNotifications(Utils.getAddOnName(sql.getLong("addon")), username, msg, sql.getString("message"));
 			Utils.sql(Utils.Databases.kAddOns,
 			          "update usercomments set editor=?, edit_timestamp=?, message=? where id=?",
 			          userDatabaseID, (System.currentTimeMillis() / 1000), msg, commentID);
@@ -763,6 +768,8 @@ public class HandleCommand {
 			if (!admin && !Utils.isUploader(cmd[1], userDatabaseID))
 				throw new ServerUtils.WLProtocolException(
 				    "You can not overwrite another person's existing add-on");
+
+			final long timestamp = System.currentTimeMillis() / 1000;
 			File tempDir = Files.createTempDirectory(null).toFile();
 
 			try {
@@ -871,15 +878,15 @@ public class HandleCommand {
 					oldSecurity = sql.getInt("security");
 					oldQuality = sql.getInt("quality");
 					Utils.sql(Utils.Databases.kAddOns,
-					          "update addons set security=0, quality=0 where id=?",
-					          sql.getLong("id"));
+					          "update addons set security=0, quality=0, edit_timestamp=? where id=?",
+					          timestamp, sql.getLong("id"));
 
 					ServerUtils.doDelete(addOnDir);
 				} else {
 					Utils.sql(
 					    Utils.Databases.kAddOns,
-					    "insert into addons (name,timestamp,i18n_version,security,quality,downloads) value(?,?,0,0,0,0)",
-					    cmd[1], (System.currentTimeMillis() / 1000));
+					    "insert into addons (name,timestamp,edit_timestamp,i18n_version,security,quality,downloads) value(?,?,?,0,0,0,0)",
+					    cmd[1], timestamp, timestamp);
 					Utils.sql(Utils.Databases.kAddOns,
 					          "insert into uploaders (addon,user) value(?,?)",
 					          Utils.getAddOnID(cmd[1]), userDatabaseID);
