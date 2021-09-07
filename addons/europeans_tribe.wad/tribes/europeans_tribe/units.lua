@@ -545,7 +545,7 @@ descriptions:new_tribe {
          -- Tools 1
          {
             name = "basket",
-            default_target_quantity = 8,
+            default_target_quantity = 4,
             preciousness = 1,
              helptexts = {
                purpose = {
@@ -558,7 +558,7 @@ descriptions:new_tribe {
          },
          {
             name = "buckets",
-            default_target_quantity = 8,
+            default_target_quantity = 2,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -571,7 +571,7 @@ descriptions:new_tribe {
          },
          {
             name = "shovel",
-            default_target_quantity = 8,
+            default_target_quantity = 2,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -584,7 +584,7 @@ descriptions:new_tribe {
          },
          {
             name = "felling_ax",
-            default_target_quantity = 4,
+            default_target_quantity = 2,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -596,8 +596,21 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "scythe",
+            default_target_quantity = 2,
+            preciousness = 1,
+            helptexts = {
+               purpose = {
+                  -- TRANSLATORS: Helptext for an europeans ware: Scythe, part 1
+                  pgettext("europeans_ware", "The scythe is the tool of the farmers."),
+                  -- TRANSLATORS: Helptext for an europeans ware: Scythe, part 2
+                  pgettext("europeans_ware", "Scythes are produced by all smithies.")
+               }
+            }
+         },
+         {
             name = "pick",
-            default_target_quantity = 4,
+            default_target_quantity = 2,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -610,7 +623,7 @@ descriptions:new_tribe {
          },
          {
             name = "saw",
-            default_target_quantity = 4,
+            default_target_quantity = 2,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -623,7 +636,7 @@ descriptions:new_tribe {
          },
          {
             name = "hammer",
-            default_target_quantity = 4,
+            default_target_quantity = 2,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -646,39 +659,13 @@ descriptions:new_tribe {
                   pgettext("europeans_ware", "They are used in the smelting works and smithies and produced produced by all smithies.")
                }
             }
-         },
-         {
-            name = "needles",
-            default_target_quantity = 2,
-            preciousness = 1,
-            helptexts = {
-               purpose = {
-                  -- TRANSLATORS: Helptext for an europeans ware: Needles, part 1
-                  pgettext("europeans_ware", "Needles are used by weavers."),
-                  -- TRANSLATORS: Helptext for an europeans ware: Needles, part 2
-                  pgettext("europeans_ware", "They are produced by all smithies.")
-               }
-            }
          }
       },
       {
          -- Tools 2
          {
-            name = "scythe",
-            default_target_quantity = 2,
-            preciousness = 1,
-            helptexts = {
-               purpose = {
-                  -- TRANSLATORS: Helptext for an europeans ware: Scythe, part 1
-                  pgettext("europeans_ware", "The scythe is the tool of the farmers."),
-                  -- TRANSLATORS: Helptext for an europeans ware: Scythe, part 2
-                  pgettext("europeans_ware", "Scythes are produced by all smithies.")
-               }
-            }
-         },
-         {
             name = "milking_tongs",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -690,8 +677,21 @@ descriptions:new_tribe {
             }
          },
          {
+            name = "needles",
+            default_target_quantity = 1,
+            preciousness = 1,
+            helptexts = {
+               purpose = {
+                  -- TRANSLATORS: Helptext for an europeans ware: Needles, part 1
+                  pgettext("europeans_ware", "Needles are used by weavers."),
+                  -- TRANSLATORS: Helptext for an europeans ware: Needles, part 2
+                  pgettext("europeans_ware", "They are produced by all smithies.")
+               }
+            }
+         },
+         {
             name = "fishing_rod",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -704,7 +704,7 @@ descriptions:new_tribe {
          },
          {
             name = "fishing_net",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -717,7 +717,7 @@ descriptions:new_tribe {
          },
          {
             name = "hunting_spear",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -730,7 +730,7 @@ descriptions:new_tribe {
          },
          {
             name = "hunting_bow",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -743,7 +743,7 @@ descriptions:new_tribe {
          },
          {
             name = "bread_paddle",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 1,
             helptexts = {
                purpose = {
@@ -756,7 +756,7 @@ descriptions:new_tribe {
          },
          {
             name = "hook_pole",
-            default_target_quantity = 2,
+            default_target_quantity = 1,
             preciousness = 1,
             helptexts = {
                purpose = {

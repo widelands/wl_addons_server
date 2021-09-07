@@ -82,7 +82,7 @@ If the add-on was not up for translation on Transifex yet, a translations **main
 
 Anyone who wants to be dropped a notification about important events such as server sync errors or add-on submissions should add themselves to the `notifyadmins` table. Use subscription level `1` to subscribe only to critical events, or any higher number to subscribe to all numbers; `0` disables notifications.
 ```
-insert info notifyadmins (email, level) value ('my.address@example.com', 2);
+insert into notifyadmins (email, level) value ('my.address@example.com', 2);
 ```
 
 ### Translations

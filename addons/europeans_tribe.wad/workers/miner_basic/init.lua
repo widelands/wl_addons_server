@@ -10,7 +10,7 @@ descriptions:new_worker_type {
    icon = dirname .. "menu.png",
    vision_range = 2,
    
-   experience = 16,
+   experience = 32,
    becomes = "europeans_miner_normal",
 
    animations = {
