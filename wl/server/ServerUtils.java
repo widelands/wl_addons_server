@@ -358,14 +358,16 @@ public class ServerUtils {
 	 *                   of an existing comment, otherwise null.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	public static void sendCommentNotifications(String addon, String commenter, String comment, String oldMessage) throws Exception {
+	public static void
+	sendCommentNotifications(String addon, String commenter, String comment, String oldMessage)
+	    throws Exception {
 		Set<String> mentioned = findMentions(comment);
 		mentioned.remove(commenter);
 		if (oldMessage != null) mentioned.removeAll(findMentions(oldMessage));
 
-		ResultSet sql = Utils.sql(
-		    Utils.Databases.kWebsite,
-		    "select id from notification_noticetype where label='addon_comment_mention'");
+		ResultSet sql =
+		    Utils.sql(Utils.Databases.kWebsite,
+		              "select id from notification_noticetype where label='addon_comment_mention'");
 		boolean noticeTypeKnown = sql.next();
 		if (!noticeTypeKnown)
 			Utils.log("Notification type 'addon_comment_mention' was not defined yet");
@@ -373,7 +375,8 @@ public class ServerUtils {
 
 		Set<Long> uploadersToInform = new HashSet<>();
 		if (oldMessage == null) {
-			sql = Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", Utils.getAddOnID(addon));
+			sql = Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
+			                Utils.getAddOnID(addon));
 			while (sql.next()) uploadersToInform.add(sql.getLong("user"));
 			uploadersToInform.remove(Utils.getUserID(commenter));
 		}
@@ -386,19 +389,21 @@ public class ServerUtils {
 				continue;
 			}
 
-			if (noticeTypeKnown && Utils.checkUserDisabledNotifications(sql.getLong("id"), noticeTypeID)) {
+			if (noticeTypeKnown &&
+			    Utils.checkUserDisabledNotifications(sql.getLong("id"), noticeTypeID)) {
 				Utils.log("User '" + username + "' disabled comment mention notifications.");
 				continue;
 			}
 
 			uploadersToInform.remove(sql.getLong("id"));
-			Utils.sendEMail(sql.getString("email"), "Add-On Comment Mention", "Dear " + username +
-				",\n\nyou have been mentioned in a comment by " + commenter + " on the add-on '" + addon + "':\n\n" + comment, true);
+			Utils.sendEMail(sql.getString("email"), "Add-On Comment Mention",
+			                "Dear " + username + ",\n\nyou have been mentioned in a comment by " +
+			                    commenter + " on the add-on '" + addon + "':\n\n" + comment,
+			                true);
 		}
 
-		sql = Utils.sql(
-		    Utils.Databases.kWebsite,
-		    "select id from notification_noticetype where label='addon_comment_new'");
+		sql = Utils.sql(Utils.Databases.kWebsite,
+		                "select id from notification_noticetype where label='addon_comment_new'");
 		noticeTypeKnown = sql.next();
 		if (!noticeTypeKnown)
 			Utils.log("Notification type 'addon_comment_new' was not defined yet");
@@ -409,13 +414,18 @@ public class ServerUtils {
 			                "select username,email from auth_user where id=?", uploader);
 			sql.next();
 
-			if (noticeTypeKnown && Utils.checkUserDisabledNotifications(sql.getLong("id"), noticeTypeID)) {
-				Utils.log("User '" + sql.getString("username") + "' disabled new comment notifications.");
+			if (noticeTypeKnown &&
+			    Utils.checkUserDisabledNotifications(sql.getLong("id"), noticeTypeID)) {
+				Utils.log("User '" + sql.getString("username") +
+				          "' disabled new comment notifications.");
 				continue;
 			}
 
-			Utils.sendEMail(sql.getString("email"), "New Add-On Comment", "Dear " + sql.getString("username") +
-				",\n\n" + commenter + " has written a new comment on your add-on '" + addon + "':\n\n" + comment, true);
+			Utils.sendEMail(sql.getString("email"), "New Add-On Comment",
+			                "Dear " + sql.getString("username") + ",\n\n" + commenter +
+			                    " has written a new comment on your add-on '" + addon + "':\n\n" +
+			                    comment,
+			                true);
 		}
 	}
 
@@ -429,7 +439,8 @@ public class ServerUtils {
 			String name = "";
 			for (; i + 1 < len;) {
 				char c = text.charAt(++i);
-				if (Character.isLetterOrDigit​(c) || c == '-' || c == '_' || c == '.' || c == '+' || c == '@') {
+				if (Character.isLetterOrDigit​(c) || c == '-' || c == '_' || c == '.' ||
+				    c == '+' || c == '@') {
 					name += c;
 				} else {
 					break;
