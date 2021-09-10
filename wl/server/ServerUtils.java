@@ -485,7 +485,7 @@ public class ServerUtils {
 
 	// Two helper functions for matchesWidelandsVersion()
 	private static int[] string_to_version(String str) {
-		String[] parts = str.split(".");
+		String[] parts = str.split("\\.");
 		int[] result = new int[parts.length];
 		for (int i = 0; i < result.length; i++) result[i] = Integer.valueOf(parts[i]);
 		return result;
