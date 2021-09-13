@@ -455,11 +455,15 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "return=skipped when economy needs gold",
-            "sleep=duration:90s",
+            "sleep=duration:120s",
             "consume=armor spidercloth coal:2 iron:2 gold:2",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
-            "produce=armor_gilded tabard_golden"
+            "animate=working duration:45s",
+            "produce=armor_gilded",
+            "sleep=duration:120s",
+            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+            "animate=working duration:45s",
+            "produce=tabard_golden"
          }
       }
    },
