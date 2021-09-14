@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-13 03:04+0200\n"
+"POT-Creation-Date: 2021-09-14 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Swedish (https://www.transifex.com/widelands/teams/35159/"
 "sv/)\n"
@@ -613,7 +613,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:36
 #: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:32
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:32
-#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:63
+#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:62
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:48
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:58
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:41
@@ -692,10 +692,10 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:107
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:86
-#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:81
+#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:80
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:79
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:63
-#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:81
+#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:80
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:79
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:108
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:91
@@ -1128,7 +1128,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:32
-#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:63
+#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:62
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:48
 msgid "fishing"
 msgstr ""
@@ -1141,7 +1141,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:56
-#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:72
+#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:70
 msgid "fishing in sea"
 msgstr ""
@@ -1157,13 +1157,13 @@ msgid "fishing in pond"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:101
-#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:91
+#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:90
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:94
 msgid "No Fish"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:102
-#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:92
+#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:91
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:95
 msgid "Out of Fish"
 msgstr ""
@@ -1177,7 +1177,7 @@ msgid ""
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:106
-#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:96
+#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:95
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:99
 msgid "The fishing grounds are full"
 msgstr ""
@@ -1188,7 +1188,7 @@ msgctxt "europeans_building"
 msgid "Basic Fisher’s Hut"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:93
+#: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:92
 msgctxt "europeans_building"
 msgid ""
 "The fisher working out of this fisher’s hut can’t find any fish in his work "
@@ -1355,20 +1355,20 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:54
-#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:72
+#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:70
 msgid "hunting"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:78
-#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:91
+#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:90
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:94
 msgid "No Game"
 msgstr ""
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:80
-#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:93
+#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:92
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:96
 msgid "Out of Game"
 msgstr ""
@@ -1389,7 +1389,7 @@ msgid "Basic Hunter’s Hut"
 msgstr ""
 
 #. TRANSLATORS: "game" means animals that you can hunt
-#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:95
+#: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:94
 msgctxt "europeans_building"
 msgid ""
 "The hunter working out of this hunter’s hut can’t find any game in his work "
