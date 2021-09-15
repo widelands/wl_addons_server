@@ -27,7 +27,6 @@ descriptions:new_worker_type {
    
    animations = {
       idle = {
-         directory = dirname,
          basename = "idle",
          hotspot = {8, 23}
       },

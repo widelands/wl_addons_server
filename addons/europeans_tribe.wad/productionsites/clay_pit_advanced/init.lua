@@ -64,7 +64,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
          descname = _"diking clay",
          actions = {
-            "return=skipped unless economy needs clay or workers need experience",
+            "return=skipped when economy needs fish",
             "callworker=dike",
             "sleep=duration:10s",
             "animate=working duration:15s",

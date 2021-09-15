@@ -6,6 +6,7 @@ descriptions:new_worker_type {
    name = "europeans_claydigger_basic",
    -- TRANSLATORS: This is a worker name used in lists of workers
    descname = pgettext ("europeans_worker", "Basic Clay Digger"),
+   animation_directory = dirname,
    icon = dirname .. "menu.png",
    vision_range = 2,
    
@@ -39,14 +40,12 @@ descriptions:new_worker_type {
    
    animations = {
       idle = {
-         directory = dirname,
          basename = "idle",
          hotspot = {8, 23}
       },
    },
    spritesheets = {
       walk = {
-         directory = dirname,
          basename = "walk",
          fps = 15,
          frames = 10,
@@ -56,7 +55,6 @@ descriptions:new_worker_type {
          hotspot = {11, 24}
       },
       walkload = {
-         directory = dirname,
          basename = "walkload",
          fps = 15,
          frames = 10,
@@ -66,7 +64,6 @@ descriptions:new_worker_type {
          hotspot = {10, 26}
       },
       dig = {
-         directory = dirname,
          basename = "dig",
          fps = 20,
          frames = 10,

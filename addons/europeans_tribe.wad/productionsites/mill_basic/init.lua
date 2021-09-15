@@ -36,7 +36,6 @@ descriptions:new_productionsite_type {
 
    animations = {
       unoccupied = {
-         directory = dirname,
          basename = "unoccupied",
          hotspot = { 52, 64 },
       }

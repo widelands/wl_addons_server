@@ -872,7 +872,8 @@ public class HandleCommand {
 						    "', your version is '" + newProfile.get("version").value + "'.");
 					}
 
-					diff = Utils.bashOutput("diff", "-r", addOnDir.getPath(), tempDir.getPath());
+					diff =
+					    Utils.bashOutput("diff", "-r", "-u", addOnDir.getPath(), tempDir.getPath());
 
 					ResultSet sql =
 					    Utils.sql(Utils.Databases.kAddOns,

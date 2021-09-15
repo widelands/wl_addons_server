@@ -450,11 +450,19 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs planks",
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
-            "sleep=duration:90s",
+            "sleep=duration:120s",
             "consume=armor planks coal:5 iron:5",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:30s",
-            "produce=armor_chain shield_steel ax_broad"
+            "produce=armor_chain",
+            "sleep=duration:90s",
+            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+            "animate=working duration:30s",
+            "produce=shield_steel",
+            "sleep=duration:90s",
+            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+            "animate=working duration:30s",
+            "produce=ax_broad"
          }
       }
    },

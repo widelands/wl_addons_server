@@ -89,7 +89,7 @@ descriptions:new_tribe {
          {
             name = "log",
             default_target_quantity = 32,
-            preciousness = 32,
+            preciousness = 48,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Log, part 1
@@ -102,7 +102,7 @@ descriptions:new_tribe {
          {
             name = "blackwood",
             default_target_quantity = 16,
-            preciousness = 24,
+            preciousness = 16,
             helptexts = {
                -- TRANSLATORS: Helptext for a barbarian ware: Blackwood
                purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener (basic sawmill).")
@@ -111,7 +111,7 @@ descriptions:new_tribe {
          {
             name = "planks",
             default_target_quantity = 16,
-            preciousness = 24,
+            preciousness = 16,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Planks, part 1
@@ -126,7 +126,7 @@ descriptions:new_tribe {
          {
             name = "reed",
             default_target_quantity = 32,
-            preciousness = 24,
+            preciousness = 16,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Reed, part 1
@@ -139,7 +139,7 @@ descriptions:new_tribe {
          {
             name = "cloth",
             default_target_quantity = 32,
-            preciousness = 24,
+            preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Cloth
                purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
@@ -148,7 +148,7 @@ descriptions:new_tribe {
          {
             name = "spider_silk",
             default_target_quantity = 16,
-            preciousness = 8,
+            preciousness = 16,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Wool
                purpose = pgettext("europeans_ware", "Spidersilk is produced by spiderfarm. Weaving mills use it to make spidercloth and tabard.")
@@ -157,7 +157,7 @@ descriptions:new_tribe {
          {
             name = "wool",
             default_target_quantity = 16,
-            preciousness = 8,
+            preciousness = 16,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Wool
                purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor.")
@@ -179,7 +179,7 @@ descriptions:new_tribe {
          {
             name = "granite",
             default_target_quantity = 16,
-            preciousness = 16,
+            preciousness = 32,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Granite, part 1
@@ -192,7 +192,7 @@ descriptions:new_tribe {
          {
             name = "grout",
             default_target_quantity = 32,
-            preciousness = 48,
+            preciousness = 16,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Granite, part 1
@@ -205,7 +205,7 @@ descriptions:new_tribe {
          {
             name = "clay",
             default_target_quantity = 8,
-            preciousness = 12,
+            preciousness = 32,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Clay, part 1
@@ -218,7 +218,7 @@ descriptions:new_tribe {
          {
             name = "brick",
             default_target_quantity = 32,
-            preciousness = 48,
+            preciousness = 16,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Brick, part 1
@@ -231,7 +231,7 @@ descriptions:new_tribe {
          {
             name = "marble",
             default_target_quantity = 8,
-            preciousness = 24,
+            preciousness = 32,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Marble
                purpose = pgettext("europeans_ware", "Marble is the beautiful stone which is cut out of the mountains or produced in a quarry. Marble is used as a building material and gets chiseled into marble columns in the stonemason’s house.")
@@ -240,7 +240,7 @@ descriptions:new_tribe {
          {
             name = "marble_column",
             default_target_quantity = 32,
-            preciousness = 48,
+            preciousness = 16,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Marble Column
                purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the europeans, so they are needed for nearly every advanced building. They are produced out of marble at a stonemason’s house.")
@@ -249,7 +249,7 @@ descriptions:new_tribe {
          {
             name = "quartz",
             default_target_quantity = 32,
-            preciousness = 48,
+            preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Quartz
                purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
@@ -258,7 +258,7 @@ descriptions:new_tribe {
          {
             name = "diamond",
             default_target_quantity = 32,
-            preciousness = 48,
+            preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Diamond
                purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
@@ -270,7 +270,7 @@ descriptions:new_tribe {
          {
             name = "fish",
             default_target_quantity = 16,
-            preciousness = 16,
+            preciousness = 24,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Fish
                purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans. Taverns and Inns need fish or meat to prepare ration, snack or meal.")
@@ -279,7 +279,7 @@ descriptions:new_tribe {
          {
             name = "meat",
             default_target_quantity = 16,
-            preciousness = 16,
+            preciousness = 24,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Meat, part 1
@@ -310,7 +310,7 @@ descriptions:new_tribe {
          {
             name = "rye",
             default_target_quantity = 16,
-            preciousness = 16,
+            preciousness = 24,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Rye, part 1
@@ -323,7 +323,7 @@ descriptions:new_tribe {
          {
             name = "wheat",
             default_target_quantity = 16,
-            preciousness = 16,
+            preciousness = 24,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Wheat, part 1
@@ -345,7 +345,7 @@ descriptions:new_tribe {
          {
             name = "ration",
             default_target_quantity = 32,
-            preciousness = 32,
+            preciousness = 8,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for a europeans ware: Ration, part 1
@@ -358,7 +358,7 @@ descriptions:new_tribe {
          {
             name = "snack",
             default_target_quantity = 32,
-            preciousness = 32,
+            preciousness = 8,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for a europeans ware: Snack, part 1
@@ -371,7 +371,7 @@ descriptions:new_tribe {
          {
             name = "meal",
             default_target_quantity = 32,
-            preciousness = 32,
+            preciousness = 8,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for a europeans ware: Meal, part 1
@@ -387,7 +387,7 @@ descriptions:new_tribe {
         {
             name = "water",
             default_target_quantity = 64,
-            preciousness = 50,
+            preciousness = 64,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Water, part 1
@@ -400,7 +400,7 @@ descriptions:new_tribe {
          {
             name = "barley",
             default_target_quantity = 16,
-            preciousness = 16,
+            preciousness = 32,
             helptexts = {
                -- TRANSLATORS: Helptext for a europeans ware: Barley
                purpose = pgettext("europeans_ware", "Barley is a slow-growing grain that is used for brewing beer or mead.")
@@ -409,7 +409,7 @@ descriptions:new_tribe {
          {
             name = "honey",
             default_target_quantity = 16,
-            preciousness = 4,
+            preciousness = 16,
             helptexts = {
                -- TRANSLATORS: Helptext for a europeans ware: Honey
                purpose = pgettext("europeans_ware", "Honey is produced by bees belonging to a beekeeper. It is used to brew mead.")
@@ -418,7 +418,7 @@ descriptions:new_tribe {
          {
             name = "fruit",
             default_target_quantity = 16,
-            preciousness = 4,
+            preciousness = 16,
             helptexts = {
                -- TRANSLATORS: Helptext for a europeans ware: Fruit
                purpose = pgettext("europeans_ware", "Fruit are berries gathered from berry bushes by a fruit collector. They are used to brew fruit wine.")
@@ -427,7 +427,7 @@ descriptions:new_tribe {
          {
             name = "grape",
             default_target_quantity = 16,
-            preciousness = 4,
+            preciousness = 16,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Grape
                purpose = pgettext("europeans_ware", "These grapes are the base for a tasty wine. They are harvested in a advanced farm and processed in a winery.")
@@ -475,7 +475,7 @@ descriptions:new_tribe {
          {
             name = "coal",
             default_target_quantity = 32,
-            preciousness = 64,
+            preciousness = 32,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Coal, part 1
@@ -488,7 +488,7 @@ descriptions:new_tribe {
          {
             name = "ore",
             default_target_quantity = 32,
-            preciousness = 64,
+            preciousness = 32,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Iron Ore, part 1
@@ -500,7 +500,7 @@ descriptions:new_tribe {
          },
          {
             name = "scrap_iron",
-            preciousness = 0,
+            preciousness = 16,
             helptexts = {
                -- TRANSLATORS: Helptext for a europeans ware: Scrap Iron
                purpose = pgettext("europeans_ware", "Discarded weapons and armor can be recycled in an advanced smelting works to produce new tools, weapon and armor.")
@@ -509,7 +509,7 @@ descriptions:new_tribe {
          {
             name = "iron",
             default_target_quantity = 32,
-            preciousness = 8,
+            preciousness = 16,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Iron, part 1
@@ -521,7 +521,7 @@ descriptions:new_tribe {
          },
          {
             name = "scrap_metal_mixed",
-            preciousness = 1,
+            preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for a europeans ware: Scrap metal (mixed)
                purpose = pgettext("europeans_ware", "Discarded weapons and armor can be recycled in an advanced smelting works to produce new tools, weapon and armor.")
@@ -530,7 +530,7 @@ descriptions:new_tribe {
          {
             name = "gold",
             default_target_quantity = 16,
-            preciousness = 16,
+            preciousness = 8,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Gold, part 1
@@ -546,7 +546,7 @@ descriptions:new_tribe {
          {
             name = "basket",
             default_target_quantity = 4,
-            preciousness = 1,
+            preciousness = 4,
              helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Basket, part 1
@@ -559,7 +559,7 @@ descriptions:new_tribe {
          {
             name = "buckets",
             default_target_quantity = 2,
-            preciousness = 1,
+            preciousness = 4,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Buckets, part 1
@@ -572,7 +572,7 @@ descriptions:new_tribe {
          {
             name = "shovel",
             default_target_quantity = 2,
-            preciousness = 1,
+            preciousness = 4,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Shovel, part 1
@@ -585,7 +585,7 @@ descriptions:new_tribe {
          {
             name = "felling_ax",
             default_target_quantity = 2,
-            preciousness = 1,
+            preciousness = 4,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 1
@@ -598,7 +598,7 @@ descriptions:new_tribe {
          {
             name = "scythe",
             default_target_quantity = 2,
-            preciousness = 1,
+            preciousness = 4,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Scythe, part 1
@@ -611,7 +611,7 @@ descriptions:new_tribe {
          {
             name = "pick",
             default_target_quantity = 2,
-            preciousness = 1,
+            preciousness = 4,
             helptexts = {
                purpose = {
                    -- TRANSLATORS: Helptext for an europeans ware: Pick, part 1
@@ -624,7 +624,7 @@ descriptions:new_tribe {
          {
             name = "saw",
             default_target_quantity = 2,
-            preciousness = 1,
+            preciousness = 4,
             helptexts = {
                purpose = {
                    -- TRANSLATORS: Helptext for an europeans ware: Saw, part 1
@@ -637,7 +637,7 @@ descriptions:new_tribe {
          {
             name = "hammer",
             default_target_quantity = 2,
-            preciousness = 1,
+            preciousness = 4,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Hammer, part 1
@@ -650,7 +650,7 @@ descriptions:new_tribe {
          {
             name = "fire_tongs",
             default_target_quantity = 2,
-            preciousness = 1,
+            preciousness = 4,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Fire Tongs, part 1
@@ -666,7 +666,7 @@ descriptions:new_tribe {
          {
             name = "milking_tongs",
             default_target_quantity = 1,
-            preciousness = 1,
+            preciousness = 2,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Milking Tongs, part 1
@@ -679,7 +679,7 @@ descriptions:new_tribe {
          {
             name = "needles",
             default_target_quantity = 1,
-            preciousness = 1,
+            preciousness = 2,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Needles, part 1
@@ -692,7 +692,7 @@ descriptions:new_tribe {
          {
             name = "fishing_rod",
             default_target_quantity = 1,
-            preciousness = 1,
+            preciousness = 2,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Fishing Rod, part 1
@@ -705,7 +705,7 @@ descriptions:new_tribe {
          {
             name = "fishing_net",
             default_target_quantity = 1,
-            preciousness = 1,
+            preciousness = 2,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Fishing Net, part 1
@@ -718,7 +718,7 @@ descriptions:new_tribe {
          {
             name = "hunting_spear",
             default_target_quantity = 1,
-            preciousness = 1,
+            preciousness = 2,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 1
@@ -731,7 +731,7 @@ descriptions:new_tribe {
          {
             name = "hunting_bow",
             default_target_quantity = 1,
-            preciousness = 1,
+            preciousness = 2,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 1
@@ -744,7 +744,7 @@ descriptions:new_tribe {
          {
             name = "bread_paddle",
             default_target_quantity = 1,
-            preciousness = 1,
+            preciousness = 2,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Bread Paddle, part 1
@@ -757,7 +757,7 @@ descriptions:new_tribe {
          {
             name = "hook_pole",
             default_target_quantity = 1,
-            preciousness = 1,
+            preciousness = 2,
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Hook Pole, part 1
@@ -773,7 +773,7 @@ descriptions:new_tribe {
          {
             name = "armor",
             default_target_quantity = 16,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Armor
                purpose = pgettext("europeans_ware", "Basic armor for europeans soldiers. It is produced in the weaving mill. In combination with wooden speer, it is the equipment to fit out young soldiers.")
@@ -782,7 +782,7 @@ descriptions:new_tribe {
          {
             name = "tabard",
             default_target_quantity = 16,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Tabard
                purpose = pgettext("europeans_ware", "Basic tabard for europeans soldiers. It is produced in the weaving mill. In combination with wooden speer, it is the equipment to fit out young soldiers.")
@@ -791,7 +791,7 @@ descriptions:new_tribe {
          {
             name = "armor_chain",
             default_target_quantity = 1,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Chain Armor
                purpose = pgettext("europeans_ware", "The chain armor is a medium armor for europeans soldiers. It is produced in a smithy and used in a battle arena – together with food – to protect soldiers with additional health points.")
@@ -800,7 +800,7 @@ descriptions:new_tribe {
          {
             name = "armor_gilded",
             default_target_quantity = 1,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Gilded Armor
                purpose = pgettext("europeans_ware", "The gilded armor is an advanced armor of a soldier. It is produced in the a smithy and used in the battle arena – together with food – to protect soldiers with additional health points.")
@@ -809,7 +809,7 @@ descriptions:new_tribe {
          {
             name = "tabard_golden",
             default_target_quantity = 1,
-            preciousness = 0,
+            preciousness = 1,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans ware: Golden Tabard
                purpose = pgettext("europeans_ware", "The golden tabard is an advanced armor of a soldier. It is produced in the advanced smithy and used in a battle arena – together with food – to protect soldiers with additional health points.")

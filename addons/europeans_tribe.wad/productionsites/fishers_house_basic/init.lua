@@ -48,7 +48,6 @@ descriptions:new_productionsite_type {
 
    aihints = {
       needs_water = true,
-      requires_supporters = true,
       basic_amount = 2,
       prohibited_till = 900
    },

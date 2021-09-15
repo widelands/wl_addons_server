@@ -442,11 +442,15 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs coal",
             "return=skipped when economy needs iron",
             "return=skipped when economy needs gold",
-            "sleep=duration:90s",
+            "sleep=duration:120s",
             "consume=planks coal:4 iron:4 gold",
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-            "animate=working duration:30s",
-            "produce=shield_advanced sword_broad"
+            "animate=working duration:45s",
+            "produce=shield_advanced",
+            "sleep=duration:120s",
+            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+            "animate=working duration:45s",
+            "produce=sword_broad"
          }
       }
    },
