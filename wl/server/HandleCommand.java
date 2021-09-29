@@ -183,7 +183,7 @@ public class HandleCommand {
 	private void handleCmdInfo() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ServerUtils.semaphoreRO(cmd[1], () -> {
@@ -277,7 +277,7 @@ public class HandleCommand {
 	private void handleCmdDownload() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		ServerUtils.semaphoreRO(cmd[1], () -> {
 			ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File("addons", cmd[1]));
@@ -302,7 +302,7 @@ public class HandleCommand {
 	private void handleCmdI18n() throws Exception {
 		// Args: name
 		ServerUtils.checkNrArgs(cmd, 1);
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		ServerUtils.semaphoreRO(cmd[1], () -> {
 			ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File("i18n", cmd[1]));
@@ -318,8 +318,8 @@ public class HandleCommand {
 	private void handleCmdScreenshot() throws Exception {
 		// Args: addon screenie
 		ServerUtils.checkNrArgs(cmd, 2);
-		ServerUtils.checkNameValid(cmd[1], false);
-		ServerUtils.checkNameValid(cmd[2], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
+		cmd[2] = ServerUtils.sanitizeName(cmd[2], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		ServerUtils.semaphoreRO(cmd[1], () -> {
 			ServerUtils.writeOneFile(new File("screenshots/" + cmd[1], cmd[2]), out);
@@ -336,7 +336,7 @@ public class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, 2);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to vote");
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		final long addon = Utils.getAddOnID(cmd[1]);
@@ -363,7 +363,7 @@ public class HandleCommand {
 			out.println("NOT_LOGGED_IN");  // No exception here.
 			return;
 		}
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
@@ -381,7 +381,7 @@ public class HandleCommand {
 		// Args: name version lines
 		ServerUtils.checkNrArgs(cmd, 3);
 		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("Log in to comment");
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		int nrLines = Integer.valueOf(cmd[3]);
 		if (nrLines < 1 || nrLines > 100)
@@ -412,7 +412,7 @@ public class HandleCommand {
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("Log in to edit comments");
 		if (protocolVersion < 5) {
-			ServerUtils.checkNameValid(cmd[1], false);
+			cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 			ServerUtils.checkAddOnExists(cmd[1]);
 		}
 
@@ -476,7 +476,7 @@ public class HandleCommand {
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 1);
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		synchronized (TransifexIntegration.TX) {
@@ -505,7 +505,7 @@ public class HandleCommand {
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 2);
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		final int state = Integer.valueOf(cmd[2]);
@@ -526,7 +526,7 @@ public class HandleCommand {
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 2);
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		final int quality = Integer.valueOf(cmd[2]);
@@ -547,7 +547,7 @@ public class HandleCommand {
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 2);
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ServerUtils.semaphoreRW(cmd[1], () -> {
@@ -570,7 +570,7 @@ public class HandleCommand {
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 2);
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		int nrLines = Integer.valueOf(cmd[2]);
@@ -681,7 +681,7 @@ public class HandleCommand {
 	private void handleCmdSubmitScreenshot() throws Exception {
 		// Args: name filesize checksum whitespaces description
 		ServerUtils.checkNrArgs(cmd, 5);
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit screenshots");
@@ -756,7 +756,7 @@ public class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
-		ServerUtils.checkNameValid(cmd[1], false);
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		// No need here to check if the add-on exists.
 
 		ServerUtils.semaphoreRW(cmd[1], () -> {
@@ -775,8 +775,7 @@ public class HandleCommand {
 				File[] dirnames = new File[nrDirs];
 				for (int i = 0; i < nrDirs; ++i) {
 					String n = ServerUtils.readLine(in);
-					if (n.startsWith("/")) n = n.substring(1);
-					ServerUtils.checkNameValid(n, true);
+					n = ServerUtils.sanitizeName(n, true);
 					dirnames[i] = new File(tempDir, n);
 					dirnames[i].mkdirs();
 				}
@@ -790,8 +789,8 @@ public class HandleCommand {
 						    + "If you really want to submit such a large add-on, "
 						    + "please contact the Widelands Development Team.");
 					for (int j = 0; j < nrFiles; ++j) {
-						final String filename = ServerUtils.readLine(in);
-						ServerUtils.checkNameValid(filename, false);
+						String filename = ServerUtils.readLine(in);
+						filename = ServerUtils.sanitizeName(filename, false);
 						final String checksum = ServerUtils.readLine(in);
 						final long size = Long.valueOf(ServerUtils.readLine(in));
 						totalSize += size;

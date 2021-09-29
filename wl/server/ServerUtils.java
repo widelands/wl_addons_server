@@ -256,18 +256,24 @@ public class ServerUtils {
 	}
 
 	/**
-	 * Check that a given file or directory name is valid.
-	 * Throws an exception if this is not the case.
+	 * Check that a given file or directory name is valid, and replace sequences that are
+	 * problematic but valid. Throws an exception if the input is not a permitted name.
 	 * @param name Name to check.
 	 * @param directory Is this name supposed to denote a regular file or a directory.
+	 * @return Sanitized name.
 	 * @throws WLProtocolException If anything at all goes wrong, throw an Exception.
 	 */
-	public static void checkNameValid(String name, boolean directory) throws WLProtocolException {
+	public static String sanitizeName(String name, boolean directory) throws WLProtocolException {
 		if (name == null || (!directory && name.isEmpty()))
 			throw new WLProtocolException("Empty name");
 		if (name.length() > 80)
 			throw new WLProtocolException("Name '" + name + "' is too long (" + name.length() +
 			                              " chars; limit is 80)");
+
+		if (directory) {
+			name = name.replace('\\', '/');
+			if (name.startsWith("/")) name = name.substring(1);
+		}
 
 		for (char c : name.toCharArray()) {
 			if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '1' && c <= '9') ||
@@ -282,6 +288,8 @@ public class ServerUtils {
 			throw new WLProtocolException("Name '" + name + "' may not start with '/'");
 		if (name.contains(".."))
 			throw new WLProtocolException("Name '" + name + "' may not contain '..'");
+
+		return name;
 	}
 
 	/**
