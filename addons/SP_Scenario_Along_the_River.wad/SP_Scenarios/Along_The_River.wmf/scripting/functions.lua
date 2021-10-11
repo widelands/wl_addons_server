@@ -22,7 +22,7 @@ end
 
 function remove_type(point, _type)
    if point.immovable and point.immovable.descr.type_name == _type then
-      immovable:remove()
+      point.immovable:remove()
    end
 end
 
@@ -44,6 +44,7 @@ end
 
 -- Transports wares to flag, warehouse or productionsite.
 function transport_wares(player, point, ware, amount, alert, image)
+   push_textdomain("SP_Scenario_Along_the_River.wad", true)
    local count = amount
    while count > 0 do
       sleep(499)
@@ -63,6 +64,7 @@ function transport_wares(player, point, ware, amount, alert, image)
          end
       end
    end
+   pop_textdomain()
 end
 
 -- =======================================================================
