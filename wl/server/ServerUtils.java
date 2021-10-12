@@ -27,10 +27,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.concurrent.Semaphore;
 import wl.utils.Utils;
 
@@ -46,6 +49,11 @@ public class ServerUtils {
 	 * Use only this generator to generate random numbers.
 	 */
 	public static final Random RANDOM = new Random(System.currentTimeMillis());
+
+	/**
+	 * The duration in seconds how long a comment may be edited after posting.
+	 */
+	public static final long kCommentEditTimeout = 24 * 60 * 60;
 
 	/**
 	 * Interface to describe a simple method that takes no parameters and may throw any Exception.
@@ -347,6 +355,109 @@ public class ServerUtils {
 	 */
 	public static String toTransifexResource(String name) {
 		return "widelands-addons." + name.replaceAll("[._]", "-");
+	}
+
+	/**
+	 * Send notifications about a new comment to all affected and subscribed users.
+	 * @param addon Add-on on which the user commented.
+	 * @param commenter The user who wrote the comment.
+	 * @param comment The comment message.
+	 * @param oldMessage The former comment message if this is an edit
+	 *                   of an existing comment, otherwise null.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	public static void
+	sendCommentNotifications(String addon, String commenter, String comment, String oldMessage)
+	    throws Exception {
+		Set<String> mentioned = findMentions(comment);
+		mentioned.remove(commenter);
+		if (oldMessage != null) mentioned.removeAll(findMentions(oldMessage));
+
+		ResultSet sql =
+		    Utils.sql(Utils.Databases.kWebsite,
+		              "select id from notification_noticetype where label='addon_comment_mention'");
+		boolean noticeTypeKnown = sql.next();
+		if (!noticeTypeKnown)
+			Utils.log("Notification type 'addon_comment_mention' was not defined yet");
+		long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
+
+		Set<Long> uploadersToInform = new HashSet<>();
+		if (oldMessage == null) {
+			sql = Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
+			                Utils.getAddOnID(addon));
+			while (sql.next()) uploadersToInform.add(sql.getLong("user"));
+			uploadersToInform.remove(Utils.getUserID(commenter));
+		}
+
+		for (String username : mentioned) {
+			sql = Utils.sql(Utils.Databases.kWebsite,
+			                "select id,email from auth_user where username=?", username);
+			if (!sql.next()) {
+				Utils.log("User '" + username + "' is not registered.");
+				continue;
+			}
+
+			if (noticeTypeKnown &&
+			    Utils.checkUserDisabledNotifications(sql.getLong("id"), noticeTypeID)) {
+				Utils.log("User '" + username + "' disabled comment mention notifications.");
+				continue;
+			}
+
+			uploadersToInform.remove(sql.getLong("id"));
+			Utils.sendEMail(sql.getString("email"), "Add-On Comment Mention",
+			                "Dear " + username + ",\n\nyou have been mentioned in a comment by " +
+			                    commenter + " on the add-on '" + addon + "':\n\n" + comment,
+			                true);
+		}
+
+		sql = Utils.sql(Utils.Databases.kWebsite,
+		                "select id from notification_noticetype where label='addon_comment_new'");
+		noticeTypeKnown = sql.next();
+		if (!noticeTypeKnown)
+			Utils.log("Notification type 'addon_comment_new' was not defined yet");
+		noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
+
+		for (Long uploader : uploadersToInform) {
+			sql = Utils.sql(Utils.Databases.kWebsite,
+			                "select username,email from auth_user where id=?", uploader);
+			sql.next();
+
+			if (noticeTypeKnown &&
+			    Utils.checkUserDisabledNotifications(sql.getLong("id"), noticeTypeID)) {
+				Utils.log("User '" + sql.getString("username") +
+				          "' disabled new comment notifications.");
+				continue;
+			}
+
+			Utils.sendEMail(sql.getString("email"), "New Add-On Comment",
+			                "Dear " + sql.getString("username") + ",\n\n" + commenter +
+			                    " has written a new comment on your add-on '" + addon + "':\n\n" +
+			                    comment,
+			                true);
+		}
+	}
+
+	// Helper function for sendCommentNotifications()
+	private static Set<String> findMentions(String text) {
+		Set<String> mentioned = new HashSet<>();
+		int len = text.length();
+		for (int i = 0;;) {
+			i = text.indexOf('@', i);
+			if (i < 0) break;
+
+			String name = "";
+			for (; i + 1 < len;) {
+				char c = text.charAt(++i);
+				if (Character.isLetterOrDigit​(c) || c == '-' || c == '_' || c == '.' ||
+				    c == '+' || c == '@') {
+					name += c;
+				} else {
+					break;
+				}
+			}
+			mentioned.add(name);
+		}
+		return mentioned;
 	}
 
 	/**
