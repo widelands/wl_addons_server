@@ -145,15 +145,22 @@ public class HandleCommand {
 	// Command handling implementations below
 
 	/**
-	 * Handle a #CMD_LIST command.
+	 * Handle a CMD_LIST command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdList() throws Exception {
-		// Args: [5+: all]
+		// Args: [5+: control]
 		ServerUtils.checkNrArgs(cmd, protocolVersion < 5 ? 0 : 1);
-		final boolean versionCheck = widelandsVersion != null && !Boolean.parseBoolean(cmd[1]);
+
+		final boolean versionCheck = protocolVersion >= 5 &&
+				(cmd[1].equalsIgnoreCase("true") || cmd[1].equalsIgnoreCase("showall"));
+		final boolean appendInfo = protocolVersion >= 5 &&
+				(cmd[1].equalsIgnoreCase("showall") || cmd[1].equalsIgnoreCase("showcompatible"));
 		ArrayList<String> compatibleAddOns = new ArrayList<>();
-		for (File addon : Utils.listSorted(new File("addons"))) {
+
+		ResultSet sql = Utils.sql(Utils.Databases.kAddOns, "select name from addons order by name");
+		while (!sql.next()) {
+			final String addon = sql.getString("name");
 			if (versionCheck) {
 				Utils.Profile profile =
 				    Utils.readProfile(new File(addon, "addon"), addon.getName());
@@ -170,14 +177,20 @@ public class HandleCommand {
 			compatibleAddOns.add(addon.getName());
 		}
 
-		MuninStatistics.MUNIN.skipNextCmdInfo(compatibleAddOns.size() - 1);
+		MuninStatistics.MUNIN.skipNextCmdInfo(compatibleAddOns.size() - (appendInfo ? 0 : 1));
 		out.println(compatibleAddOns.size());
 		for (String name : compatibleAddOns) out.println(name);
 		out.println("ENDOFSTREAM");
+
+		if (appendInfo) {
+			for (String name : compatibleAddOns) {
+				handle("CMD_INFO", name);
+			}
+		}
 	}
 
 	/**
-	 * Handle a #CMD_INFO command.
+	 * Handle a CMD_INFO command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdInfo() throws Exception {
@@ -271,7 +284,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_DOWNLOAD command.
+	 * Handle a CMD_DOWNLOAD command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdDownload() throws Exception {
@@ -296,7 +309,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_I18N command.
+	 * Handle a CMD_I18N command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdI18n() throws Exception {
@@ -312,7 +325,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_SCREENSHOT command.
+	 * Handle a CMD_SCREENSHOT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdScreenshot() throws Exception {
@@ -328,7 +341,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_VOTE command.
+	 * Handle a CMD_VOTE command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdVote() throws Exception {
@@ -353,7 +366,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_GET_VOTE command.
+	 * Handle a CMD_GET_VOTE command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdGetVote() throws Exception {
@@ -374,7 +387,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_COMMENT command.
+	 * Handle a CMD_COMMENT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdComment() throws Exception {
@@ -404,7 +417,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_EDIT_COMMENT command.
+	 * Handle a CMD_EDIT_COMMENT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdEditComment() throws Exception {
@@ -476,7 +489,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_SETUP_TX command.
+	 * Handle a CMD_SETUP_TX command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdSetupTx() throws Exception {
@@ -505,7 +518,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_ADMIN_VERIFY command.
+	 * Handle a CMD_ADMIN_VERIFY command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminVerify() throws Exception {
@@ -526,7 +539,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_ADMIN_QUALITY command.
+	 * Handle a CMD_ADMIN_QUALITY command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminQuality() throws Exception {
@@ -547,7 +560,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_ADMIN_SYNC_SAFE command.
+	 * Handle a CMD_ADMIN_SYNC_SAFE command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminSyncSafe() throws Exception {
@@ -570,7 +583,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_ADMIN_DELETE command.
+	 * Handle a CMD_ADMIN_DELETE command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminDelete() throws Exception {
@@ -655,7 +668,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_CONTACT command.
+	 * Handle a CMD_CONTACT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdContact() throws Exception {
@@ -683,7 +696,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_SUBMIT_SCREENSHOT command.
+	 * Handle a CMD_SUBMIT_SCREENSHOT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdSubmitScreenshot() throws Exception {
@@ -756,7 +769,7 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_SUBMIT command.
+	 * Handle a CMD_SUBMIT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdSubmit() throws Exception {

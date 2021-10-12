@@ -106,15 +106,24 @@ package wl.server;
  */
 public enum Command {
 	/**
-	 * <code>CMD_LIST [5+: all]</code>
+	 * <code>CMD_LIST [5+: control]</code>
 	 *
 	 * <p>
 	 * List all available add-on names.
 	 *
-	 * <p>
-	 * In version 4, no arguments are accepted.
-	 * In version 5, a boolean argument is required to indicate whether to list
-	 * all add-ons or only add-ons compatible with the Widelands version.
+	 * <ul>
+	 * <li> In version 4, no arguments are accepted.
+	 * <li> In version 5, a "control" argument is required to finetune the behaviour.
+	 * Supported values (case-insensitive) are:
+	 * <ul>
+	 * <li> true – List all add-ons.
+	 * <li> false – List add-ons compatible with the Widelands version.
+	 * <li> showall – List all add-ons, and append the response for a
+	 * CMD_INFO for each add-on to the reply.
+	 * <li> showcompatible – List add-ons compatible with the Widelands version,
+	 * and append the response for a CMD_INFO for each add-on to the reply.
+	 * </ul>
+	 * </ul>
 	 *
 	 * <p>
 	 * Returns:
