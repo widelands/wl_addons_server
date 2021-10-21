@@ -82,7 +82,8 @@ public class HandleCommand {
 	 */
 	private void checkCommandVersion(int max) throws Exception {
 		if (commandVersion < 1 || commandVersion > max)
-			throw new ServerUtils.WLProtocolException("Invalid command version " + commandVersion + " (maximum supported is " + max + ")");
+			throw new ServerUtils.WLProtocolException("Invalid command version " + commandVersion +
+			                                          " (maximum supported is " + max + ")");
 	}
 
 	/**
@@ -95,15 +96,16 @@ public class HandleCommand {
 		Command command;
 		if (protocolVersion >= 6) {
 			String[] split = cmd[0].split(":");
-			if (split.length != 2) throw new ServerUtils.WLProtocolException("Invalid command/version sequence " + cmd[0]);
+			if (split.length != 2)
+				throw new ServerUtils.WLProtocolException("Invalid command/version sequence " +
+				                                          cmd[0]);
 			commandVersion = Integer.valueOf(split[0]);
 			command = Command.valueOf(split[1]);
 		} else {
 			command = Command.valueOf(cmd[0]);
-			if (protocolVersion == 5 && (
-					command == Command.CMD_LIST ||
-					command == Command.CMD_INFO ||
-					command == Command.CMD_EDIT_COMMENT)) {
+			if (protocolVersion == 5 &&
+			    (command == Command.CMD_LIST || command == Command.CMD_INFO ||
+			     command == Command.CMD_EDIT_COMMENT)) {
 				commandVersion = 2;
 			} else {
 				commandVersion = 1;
@@ -181,10 +183,12 @@ public class HandleCommand {
 		checkCommandVersion(2);
 		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 0 : 1);
 
-		final boolean versionCheck = widelandsVersion != null && commandVersion >= 2 &&
-				(cmd[1].equalsIgnoreCase("true") || cmd[1].equalsIgnoreCase("showall"));
-		final boolean appendInfo = commandVersion >= 2 &&
-				(cmd[1].equalsIgnoreCase("showall") || cmd[1].equalsIgnoreCase("showcompatible"));
+		final boolean versionCheck =
+		    widelandsVersion != null && commandVersion >= 2 &&
+		    (cmd[1].equalsIgnoreCase("true") || cmd[1].equalsIgnoreCase("showall"));
+		final boolean appendInfo =
+		    commandVersion >= 2 &&
+		    (cmd[1].equalsIgnoreCase("showall") || cmd[1].equalsIgnoreCase("showcompatible"));
 		ArrayList<String> compatibleAddOns = new ArrayList<>();
 
 		ResultSet sql = Utils.sql(Utils.Databases.kAddOns, "select name from addons order by name");
@@ -546,37 +550,45 @@ public class HandleCommand {
 					throw new ServerUtils.WLProtocolException("Unable to create POT for " + cmd[1]);
 			}
 			String resource = ServerUtils.toTransifexResource(cmd[1]);
-			Utils.bash("tx", "config", "mapping", "--execute", "-r",
-			           resource, "--source-lang", "en", "--type",
-			           "PO", "--source-file", potFile.getAbsolutePath(), "--expression",
-			           "po/" + cmd[1] + "/<lang>.po");
+			Utils.bash("tx", "config", "mapping", "--execute", "-r", resource, "--source-lang",
+			           "en", "--type", "PO", "--source-file", potFile.getAbsolutePath(),
+			           "--expression", "po/" + cmd[1] + "/<lang>.po");
 
 			if (commandVersion >= 2) {
 				final String priority = ServerUtils.readLine(in);
-				if (!priority.equals("normal") &&
-					!priority.equals("high") &&
-					!priority.equals("urgent")) {
-					throw new ServerUtils.WLProtocolException("Invalid add-on priority " + priority);
+				if (!priority.equals("normal") && !priority.equals("high") &&
+				    !priority.equals("urgent")) {
+					throw new ServerUtils.WLProtocolException("Invalid add-on priority " +
+					                                          priority);
 				}
 				final String displayname = ServerUtils.readLine(in);
-				if (displayname.trim().isEmpty()) throw new ServerUtils.WLProtocolException("Empty displayname");
-				for (char c : new char[]{ '\\', '"' }) { if (displayname.indexOf(c) >= 0) {
-					throw new ServerUtils.WLProtocolException("Displayname '" + displayname + "' may not contain '" + c + "'");
-				}}
+				if (displayname.trim().isEmpty())
+					throw new ServerUtils.WLProtocolException("Empty displayname");
+				for (char c : new char[] {'\\', '"'}) {
+					if (displayname.indexOf(c) >= 0) {
+						throw new ServerUtils.WLProtocolException("Displayname '" + displayname +
+						                                          "' may not contain '" + c + "'");
+					}
+				}
 
 				final String categories = ServerUtils.readLine(in);
 				if (!categories.matches("\\[\"[a-zA-Z]+\"(,\"[a-zA-Z]+\")*\\]")) {
-					throw new ServerUtils.WLProtocolException("Not a valid list of categories: " + categories);
+					throw new ServerUtils.WLProtocolException("Not a valid list of categories: " +
+					                                          categories);
 				}
 				ServerUtils.checkEndOfStream(in);
 
-			    resource = resource.substring(resource.indexOf('.') + 1);
-			    Utils.bash("curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
-						"--request", "PATCH", "-H", "Content-Type: application/vnd.api+json",
-						"https://rest.api.transifex.com/resources/o:widelands:p:widelands-addons:r:" + resource, "-d",
-					"{\"data\":{\"id\":\"o:widelands:p:widelands-addons:r:" + resource + "\",\"type\":\"resources\",\"attributes\":{\"name\":\""
-						+ displayname + "\",\"priority\":\"" + priority + "\",\"categories\":" + categories + "}}}"
-				);
+				resource = resource.substring(resource.indexOf('.') + 1);
+				Utils.bash(
+				    "curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
+				    "--request", "PATCH", "-H", "Content-Type: application/vnd.api+json",
+				    "https://rest.api.transifex.com/resources/o:widelands:p:widelands-addons:r:" +
+				        resource,
+				    "-d",
+				    "{\"data\":{\"id\":\"o:widelands:p:widelands-addons:r:" + resource +
+				        "\",\"type\":\"resources\",\"attributes\":{\"name\":\"" + displayname +
+				        "\",\"priority\":\"" + priority + "\",\"categories\":" + categories +
+				        "}}}");
 			}
 
 			TransifexIntegration.TX.push();
@@ -735,9 +747,11 @@ public class HandleCommand {
 
 			final String resource = ServerUtils.toTransifexResource(cmd[1]);
 			Utils.bash("tx", "delete", "-r", resource, "-f");
-		    Utils.bash("curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
-					"--request", "DELETE", "https://rest.api.transifex.com/resources/o:widelands:p:widelands-addons:r:" + resource
-			);
+			Utils.bash(
+			    "curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
+			    "--request", "DELETE",
+			    "https://rest.api.transifex.com/resources/o:widelands:p:widelands-addons:r:" +
+			        resource);
 		});
 
 		out.println("ENDOFSTREAM");
