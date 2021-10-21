@@ -545,12 +545,11 @@ public class HandleCommand {
 				if (!potFile.isFile())
 					throw new ServerUtils.WLProtocolException("Unable to create POT for " + cmd[1]);
 			}
-			final String resource = ServerUtils.toTransifexResource(cmd[1]);
+			String resource = ServerUtils.toTransifexResource(cmd[1]);
 			Utils.bash("tx", "config", "mapping", "--execute", "-r",
 			           resource, "--source-lang", "en", "--type",
 			           "PO", "--source-file", potFile.getAbsolutePath(), "--expression",
 			           "po/" + cmd[1] + "/<lang>.po");
-			TransifexIntegration.TX.push();
 
 			if (commandVersion >= 2) {
 				final String priority = ServerUtils.readLine(in);
@@ -571,6 +570,7 @@ public class HandleCommand {
 				}
 				ServerUtils.checkEndOfStream(in);
 
+			    resource = resource.substring(resource.indexOf('.') + 1);
 			    Utils.bash("curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
 						"--request", "PATCH", "-H", "Content-Type: application/vnd.api+json",
 						"https://rest.api.transifex.com/resources/o:widelands:p:widelands-addons:r:" + resource, "-d",
@@ -578,6 +578,8 @@ public class HandleCommand {
 						+ displayname + "\",\"priority\":\"" + priority + "\",\"categories\":" + categories + "}}}"
 				);
 			}
+
+			TransifexIntegration.TX.push();
 		}
 
 		out.println("ENDOFSTREAM");

@@ -114,7 +114,7 @@ package wl.server;
  */
 public enum Command {
 	/**
-	 * <code>CMD_LIST [5+: control]</code>
+	 * <code>CMD_LIST [2+: control]</code>
 	 *
 	 * <p>
 	 * Supported command versions: 1-2 (default: 4/1, 5/2)
