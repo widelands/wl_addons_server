@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-23 03:03+0200\n"
+"POT-Creation-Date: 2021-11-10 03:03+0100\n"
 "PO-Revision-Date: 2021-10-06 10:02+0000\n"
 "Last-Translator: Alen Ciga, 2021\n"
 "Language-Team: Italian (https://www.transifex.com/widelands/teams/35159/"
@@ -56,17 +56,17 @@ msgstr[1] ""
 msgid "Transport"
 msgstr "Trasporto"
 
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:202
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:210
 msgid ""
 "Four shovels for removing the swamps have been collected at the warehouse."
 msgstr "4 pale per rimuovere paludi sono state portate al magazzino."
 
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:202
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:209
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:210
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:217
 msgid "Shovels"
 msgstr "Pale"
 
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:209
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:217
 msgid ""
 "Four more shovels for removing the swamps have been collected at the "
 "warehouse."
@@ -636,7 +636,11 @@ msgstr ""
 msgid "Your name will be remembered forever."
 msgstr "Il vostro nome rimarrà inciso nella storia, imperituro nel tempo."
 
-#: addons/SP_Scenario_Along_the_River.wad/addon:6
+#: addons/SP_Scenario_Along_the_River.wad/addon:4
+msgid "SP_Scenario_Along_the_River"
+msgstr "SP_Scenario_Lungo_il_fiume"
+
+#: addons/SP_Scenario_Along_the_River.wad/addon:5
 msgid ""
 "Provides the scenario ''Along the River''.  This scenario was converted to "
 "be playable again with Widelands 1.0. It will be provided officially with "
@@ -645,10 +649,6 @@ msgstr ""
 "Descrive lo scenario \"Lungo il fiume\". Questo scenario è stato convertito "
 "per essere giocabile di nuovo in Widelands 1.0. Sarà disponibile "
 "ufficialmente in Widelands 1.1."
-
-#: addons/SP_Scenario_Along_the_River.wad/addon:9
-msgid "SP_Scenario_Along_the_River"
-msgstr "SP_Scenario_Lungo_il_fiume"
 
 #: addons/SP_Scenario_Along_the_River.wad/dirnames:4
 msgid "Singleplayer Scenarios"

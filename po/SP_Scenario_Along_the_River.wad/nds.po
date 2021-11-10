@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-12 03:03+0200\n"
+"POT-Creation-Date: 2021-11-10 03:03+0100\n"
 "PO-Revision-Date: 2021-10-06 10:02+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -56,18 +56,18 @@ msgstr[1] "%1% Delen %2% sünd to dienem »%3%«-Huus brocht worden."
 msgid "Transport"
 msgstr "Transporteren"
 
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:202
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:210
 msgid ""
 "Four shovels for removing the swamps have been collected at the warehouse."
 msgstr ""
 "Veer Schüppen, um de Broken wegtodoon, sünd in de Kraamhuus sammelt worden."
 
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:202
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:209
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:210
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:217
 msgid "Shovels"
 msgstr "Schüppen"
 
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:209
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:217
 msgid ""
 "Four more shovels for removing the swamps have been collected at the "
 "warehouse."
@@ -587,7 +587,11 @@ msgstr ""
 msgid "Your name will be remembered forever."
 msgstr "An dien Naam word man ewig torüggdenken."
 
-#: addons/SP_Scenario_Along_the_River.wad/addon:6
+#: addons/SP_Scenario_Along_the_River.wad/addon:4
+msgid "SP_Scenario_Along_the_River"
+msgstr "Een Speler: Langs de Stroom"
+
+#: addons/SP_Scenario_Along_the_River.wad/addon:5
 msgid ""
 "Provides the scenario ''Along the River''.  This scenario was converted to "
 "be playable again with Widelands 1.0. It will be provided officially with "
@@ -596,10 +600,6 @@ msgstr ""
 "Stellt de Rutfödderung »Langs de Stroom« paraat. Deese Rutfödderung is tu "
 "Spölen mit Widelands 1.0 klaarmaakt worden. Se word in Widelands 1.1 "
 "offiziell enthollen sien."
-
-#: addons/SP_Scenario_Along_the_River.wad/addon:9
-msgid "SP_Scenario_Along_the_River"
-msgstr "Een Speler: Langs de Stroom"
 
 #: addons/SP_Scenario_Along_the_River.wad/dirnames:4
 msgid "Singleplayer Scenarios"
