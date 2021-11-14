@@ -44,6 +44,7 @@ public class Server {
 
 		Utils.log("Server starting...");
 		ServerSocket serverSocket = new ServerSocket(Integer.valueOf(Utils.config("port")));
+		serverSocket.setReceiveBufferSize(Integer.MAX_VALUE);
 		new Thread(SyncThread.INSTANCE, "Syncer").start();
 		Utils.log("Ready.");
 		long n = 0;
