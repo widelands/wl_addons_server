@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 03:03+0100\n"
+"POT-Creation-Date: 2021-11-17 03:03+0100\n"
 "PO-Revision-Date: 2021-10-06 10:02+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -81,7 +81,7 @@ msgstr "Besiege Törver"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:9
 msgid "Defeat the Armies of Törver"
-msgstr ""
+msgstr "Besiege die Armeen von Törver"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:10
 msgid "Törver is the enemy in the north, who is fighting under the red banner."
@@ -93,13 +93,15 @@ msgstr "Baue einen Hafen"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:18
 msgid "Build a Port in the North"
-msgstr ""
+msgstr "Baue einen Hafen im Norden"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:19
 msgid ""
 "We should build a port in Törver’s former land to be ready to send an "
 "expedition as soon as we found out how to build ships."
 msgstr ""
+"Wir sollten in Törvers ehemaligem Land einen Hafen bauen, um bereit zu sein "
+"Expeditionen zu senden, sobald wir herausgefunden haben wie man Schiffe baut."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:25
 msgid "Conquer pirate sentry"
@@ -107,7 +109,7 @@ msgstr "Erobere den Piratenwachposten"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:27
 msgid "Conquer the Pirate Sentry"
-msgstr ""
+msgstr "Erobere den Piratenwachposten"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:28
 msgid ""
@@ -123,7 +125,7 @@ msgstr "Lagerhaus bauen"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:36
 msgid "Build a Warehouse near the Pirate Sentry"
-msgstr ""
+msgstr "Baue ein Lagerhaus in der Nähe des Piratenwachpostens"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:37
 msgid ""
@@ -131,6 +133,10 @@ msgid ""
 "will need it as a basis for further exploration. Furthermore we could use it "
 "to store some gold that we will mine from the surrounding hills."
 msgstr ""
+"Baue ein Lagerhaus nah bei dem eroberten Piratenwachposten am Bach. Wir "
+"werden es als Basis für weitere Erkundungen benötigen. Außerdem können wir "
+"es gebrauchen, um das Gold zu lagern, das wir aus den umliegenden Hügeln "
+"fördern werden."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:43
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:52
@@ -140,7 +146,7 @@ msgstr "Schaufeln bringen"
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:45
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:54
 msgid "Bring Four Shovels to the new Warehouse"
-msgstr ""
+msgstr "Bringe vier Schaufeln zum neuen Lagerhaus"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:46
 msgid "They will be handed out to some volunteers for drying up the swamps."
@@ -178,7 +184,7 @@ msgstr "Befreie unseren Kundschafter aus der Hand der Piraten"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:72
 msgid "Conquer the Stronghold on the Island"
-msgstr ""
+msgstr "Erobere die Befestigungen auf der Insel"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:73
 msgid "This is where the scout is held captive."
@@ -190,7 +196,7 @@ msgstr "Besiege Hjalmar"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:81
 msgid "Defeat the Armies of Hjalmar"
-msgstr ""
+msgstr "Besiege die Armeen von Hjalmar"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:82
 msgid ""
@@ -206,15 +212,15 @@ msgstr "Besiege Runar"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:90
 msgid "Defeat the Armies of Runar"
-msgstr ""
+msgstr "Besiege die Armeen von Runar"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:91
 msgid ""
 "Runar is the enemy south-east of the former pirates, who is fighting under "
 "the yellow banner."
 msgstr ""
-"Hjalmar ist der Feind süd-östlich der ehemaligen Piraten, der unter dem "
-"gelben Banner kämpft."
+"Runar ist der Feind süd-östlich der ehemaligen Piraten, der unter dem gelben "
+"Banner kämpft."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:10
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:26
@@ -273,8 +279,8 @@ msgid ""
 "strength is based on his vast industry and large armies."
 msgstr ""
 "Über den Fluss liegt das blühende Land des mysteriösen Königs Runar. Wir "
-"lagen mit ihm im Krieg bevor die Piraten die östliche Gegend besetzten. "
-"Seine Stärke beruht auf seiner gewaltigen Industrie uns großen Armeen."
+"lagen mit ihm im Krieg, bevor die Piraten die östliche Gegend besetzten. "
+"Seine Stärke beruht auf seiner gewaltigen Industrie und großen Armeen."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:20
 msgid ""
@@ -284,7 +290,7 @@ msgid ""
 msgstr ""
 "Die Gegend hinter den Piraten gehört einem hochentwickelten Stamm, der von "
 "ihrem mächtigen Häuptling Hjalmar angeführt wird. Sie hatten eine lange "
-"Vorbereitungszeit um ihre furchterregenden Armeen auszubilden."
+"Vorbereitungszeit, um ihre furchterregenden Armeen auszubilden."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:22
 msgid ""
@@ -424,6 +430,9 @@ msgid ""
 "have been looted from the gold diggers’ huts nearby. This gold ore will be "
 "transported to our headquarters."
 msgstr ""
+"Herr, wir haben 25 Einheiten Golderz im Piratenwachposten gefunden. Sie "
+"könnten von den Goldgräberhütten in der Nähe geplündert worden sein. Dieses "
+"Golderz wird in unser Hauptquartier gebracht werden. "
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:73
 msgid ""
@@ -432,6 +441,10 @@ msgid ""
 "this area. There is a good building spot only three steps away from the "
 "sentry."
 msgstr ""
+"Mit unserem erfolgreichen Vordringen in diese Gegend sollten wir den Bau "
+"eines Lagerhauses direkt im Südwesten des Wachpostens erwägen, um diese "
+"Gegend weiter zu erkunden. Es gibt einen guten Bauplatz nur drei Schritte "
+"entfernt vom Wachposten. "
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:79
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:86
@@ -480,6 +493,8 @@ msgid ""
 "Sire, we have defeated the pirates. They have hidden some gold in their last "
 "bastion which is now being transferred to our headquarters."
 msgstr ""
+"Herr, wir haben die Piraten besiegt. Sie haben etwas Gold in ihrer letzten "
+"Bastion versteckt, welches jetzt zu unserem Hauptquartier gebracht wird."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:106
 msgid "Pirates are regrouping"
@@ -625,7 +640,7 @@ msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:162
 msgid "Your name will be remembered forever."
-msgstr "Ihr Name wird für immer erinnert werden."
+msgstr "Euer Name wird für immer erinnert werden."
 
 #: addons/SP_Scenario_Along_the_River.wad/addon:4
 msgid "SP_Scenario_Along_the_River"
