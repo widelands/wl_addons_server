@@ -78,6 +78,7 @@ descriptions:new_productionsite_type {
       { name = "hunting_spear", amount = 1 },
       { name = "bread_paddle", amount = 1 },
       { name = "hook_pole", amount = 1 },
+      { name = "kitchen_tools", amount = 1 },
       { name = "spear_wooden", amount = 2 },
       { name = "armor", amount = 2 },
       { name = "tabard", amount = 2 }
@@ -88,7 +89,6 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
-            "call=recruit_baker",
             "call=recruit_builder",
             "call=recruit_smith",
             "call=recruit_farmer",
@@ -102,7 +102,7 @@ descriptions:new_productionsite_type {
             "call=recruit_fisher",
             "call=recruit_hunter",
             "call=recruit_miller",
-            "call=recruit_smoker",
+            "call=recruit_baker",
             "call=recruit_brewer",
             "call=recruit_miner",
             "call=recruit_smelter",
@@ -111,6 +111,7 @@ descriptions:new_productionsite_type {
             "call=recruit_beekeeper",
             "call=recruit_shipwright",
             "call=recruit_geologist",
+            "call=recruit_terraformer",
             "call=recruit_scout",
             "call=recruit_trainer",
             "call=recruit_carrier_1",
@@ -164,7 +165,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:5s",
             "consume=europeans_carrier",
             "sleep=duration:5s",
-            "consume=bread_paddle",
+            "consume=bread_paddle hook_pole kitchen_tools",
             "animate=working duration:15s",
             "recruit=europeans_baker_basic"
          }
@@ -414,19 +415,6 @@ descriptions:new_productionsite_type {
             "recruit=europeans_smith_basic"
          }
       },
-      recruit_smoker = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-         descname = pgettext("europeans_building", "recruiting smoker"),
-         actions = {
-            "return=skipped unless economy needs europeans_smoker_basic",
-            "sleep=duration:5s",
-            "consume=europeans_carrier",
-            "sleep=duration:5s",
-            "consume=hook_pole",
-            "animate=working duration:15s",
-            "recruit=europeans_smoker_basic"
-         }
-      },
       recruit_stonecutter = {
          -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
          descname = pgettext("europeans_building", "recruiting stonecutter"),
@@ -451,6 +439,19 @@ descriptions:new_productionsite_type {
             "consume=pick shovel buckets",
             "animate=working duration:15s",
             "recruit=europeans_stonemason_basic"
+         }
+      },
+      recruit_terraformer = {
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+         descname = pgettext("europeans_building", "recruiting terraformer"),
+         actions = {
+            "return=skipped unless economy needs europeans_terraformer_basic",
+            "sleep=duration:5s",
+            "consume=europeans_carrier",
+            "sleep=duration:5s",
+            "consume=pick shovel buckets",
+            "animate=working duration:15s",
+            "recruit=europeans_terraformer_basic"
          }
       },
       recruit_trainer = {

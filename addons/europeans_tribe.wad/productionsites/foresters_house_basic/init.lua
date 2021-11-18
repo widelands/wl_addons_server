@@ -49,7 +49,8 @@ descriptions:new_productionsite_type {
    aihints = {
       space_consumer = true,
       basic_amount = 2,
-      prohibited_till = 600
+      prohibited_till = 600,
+      forced_after = 1800
    },
 
    working_positions = {
@@ -69,7 +70,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless site has water:2",
             "consume=water",
             "callworker=plant",
-            "sleep=duration:20s"
+            "sleep=duration:25s"
          }
       },
    },

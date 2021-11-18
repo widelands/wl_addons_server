@@ -84,6 +84,7 @@ descriptions:new_productionsite_type {
             "call=produce_needles",
             "call=produce_bread_paddle",
             "call=produce_hook_pole",
+            "call=produce_kitchen_tools",
             "call=produce_idle",
             "return=skipped"
          }
@@ -170,6 +171,18 @@ descriptions:new_productionsite_type {
             "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
             "animate=working duration:60s",
             "produce=hook_pole:2"
+         }
+      },
+      produce_kitchen_tools = {
+         -- TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
+         descname = _"making kitchen tools",
+         actions = {
+            "return=skipped unless economy needs kitchen_tools",
+            "consume=planks coal iron",
+            "sleep=duration:10s",
+            "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+            "animate=working duration:60s",
+            "produce=kitchen_tools:2"
          }
       },
       produce_milking_tongs = {
