@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 03:03+0100\n"
+"POT-Creation-Date: 2021-11-20 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -1987,7 +1987,7 @@ msgstr "eene Staak mit Haken to maken"
 #: addons/europeans_tribe.wad/productionsites/smithy_level_5/init.lua:231
 #: addons/europeans_tribe.wad/productionsites/smithy_level_6/init.lua:218
 msgid "making kitchen tools"
-msgstr ""
+msgstr "Besteck to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
 #: addons/europeans_tribe.wad/productionsites/smithy_basic/init.lua:190
@@ -2248,26 +2248,26 @@ msgstr "Kneipe vun de Grött 2"
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Terraformer’s House"
-msgstr ""
+msgstr "Grote Landumackeree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming because ...
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_advanced/init.lua:39
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:67
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_normal/init.lua:54
 msgid "terraforming"
-msgstr ""
+msgstr "dat Land früchtbarer to maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Terraformer’s House"
-msgstr ""
+msgstr "Lütte Landumackeree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Terraformer’s House"
-msgstr ""
+msgstr "Landumackeree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:8
@@ -2606,7 +2606,7 @@ msgstr "eenen Steenbicker antohüren"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:430
 msgctxt "europeans_building"
 msgid "recruiting terraformer"
-msgstr ""
+msgstr "eenen Landumackereerer antohüren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:426
@@ -3761,6 +3761,7 @@ msgstr "De Boomslager-Ext is dat Waarktüüg, waar man Bomen mit ofkappt."
 msgctxt "europeans_ware"
 msgid "Felling axes are used by lumberjacks and produced by all smithies."
 msgstr ""
+"Boomslager-Exten worden vun Boomslagers bruukt un vun de Smeden produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:605
@@ -3881,7 +3882,7 @@ msgstr "De Jäger bruukt deesen Boog."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:751
 msgctxt "europeans_ware"
 msgid "This bread paddle is used by the baker in a tavern or in an inn."
-msgstr ""
+msgstr "De Backer in de Kneipen un Weertshusen bruukt deese Broodschüppe."
 
 #. TRANSLATORS: Helptext for an europeans ware: Bread Paddle, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:753
@@ -3905,13 +3906,13 @@ msgstr "'t word vun all de Smeden produzeert."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:777
 msgctxt "europeans_ware"
 msgid "This kitchen_tools are used by the cook in a tavern or in an inn."
-msgstr ""
+msgstr "De Kööksch in de Kneipen un Weertshusen bruukt deeses Besteck."
 
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:779
 msgctxt "europeans_ware"
 msgid "They are created by all smithies."
-msgstr ""
+msgstr "Se worden vun all de Smeden produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:792
@@ -4121,7 +4122,7 @@ msgstr "Finnt Mineraale to Ofboen."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1056
 msgctxt "europeans_worker"
 msgid "Terraforms desert and coast into fertile soil."
-msgstr ""
+msgstr "Ackert Wüüst un Küst in früchtbares Land um."
 
 #. TRANSLATORS: Helptext for an europeans worker: Recruit
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1066
@@ -4867,7 +4868,7 @@ msgstr "Förskt frömde Geweste ut."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2676
 msgctxt "building"
 msgid "Terraforms deserts and coasts into fertile soil."
-msgstr ""
+msgstr "Ackert Wüüsten un Küsten in früchtbares Land um."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Reed Yard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2685
@@ -5849,19 +5850,19 @@ msgstr "Goder Steenbicker"
 #: addons/europeans_tribe.wad/workers/terraformer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Terraformer"
-msgstr ""
+msgstr "Meister-Landumackereerer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/terraformer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
-msgstr ""
+msgstr "Landumackereerer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/terraformer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Terraformer"
-msgstr ""
+msgstr "Goder Landumackereerer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_advanced/init.lua:8

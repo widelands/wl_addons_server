@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-19 03:03+0100\n"
+"POT-Creation-Date: 2021-11-20 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -674,7 +674,7 @@ msgstr "Imkerei"
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:68
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:88
 msgid "working"
-msgstr "arbeiten"
+msgstr "Das Arbeiten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making honey because ...
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:55
@@ -733,7 +733,7 @@ msgstr "Das Sammeln von Honig"
 #: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/well_normal/init.lua:68
 msgid "idle program"
-msgstr ""
+msgstr "Das Leerlaufprogram"
 
 #: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:75
 msgid "No Flowers"
@@ -766,21 +766,21 @@ msgstr "Verbesserte Brauerei"
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:66
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:52
 msgid "brewing beer"
-msgstr "Bier brauen"
+msgstr "Das Brauen von Bier"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:67
 msgid "brewing mead"
-msgstr "Meet brauen"
+msgstr "Das Brauen von Met"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:96
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:82
 msgid "brewing strong beer"
-msgstr "Starkbier brauen"
+msgstr "Das Brauen von Starkbier"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:8
@@ -803,7 +803,7 @@ msgstr "Verbesserte Brauerei und Kellerei"
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:97
 msgid "making wine"
-msgstr "Wein keltern."
+msgstr "Das Keltern von Wein"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_advanced/init.lua:8
@@ -844,7 +844,7 @@ msgstr "Verbesserte Lehmgrube"
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:61
 msgid "digging clay"
-msgstr "Lehm abbauen"
+msgstr "Das Abbauen von Lehm"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:8
@@ -855,7 +855,7 @@ msgstr "Einfache Lehmgrube"
 #. TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
 #: addons/europeans_tribe.wad/productionsites/clay_pit_basic/init.lua:95
 msgid "diking clay"
-msgstr ""
+msgstr "Das Abbauen von Lehm"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/clay_pit_normal/init.lua:8
@@ -884,7 +884,7 @@ msgstr "Einfache Kohlemine"
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:41
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:58
 msgid "mining coal"
-msgstr "Kohle abbauen"
+msgstr "Das Fördern von Kohle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/europeans_tribe.wad/productionsites/coalmine_basic/init.lua:93
@@ -2198,7 +2198,7 @@ msgstr "Schmiede Stufe 6"
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:8
 msgctxt "europeans_building"
 msgid "Spider Farm"
-msgstr "Spinnenfarm"
+msgstr "Spinnenzucht"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:62
@@ -3263,6 +3263,8 @@ msgid ""
 "Spidersilk is produced by spiderfarm. Weaving mills use it to make "
 "spidercloth and tabard."
 msgstr ""
+"Spinnenseide wird von Spinnenzuchten erzeugt. Webereien nutzen sie um "
+"Spinnenstoff und  Wappenröcke zu weben."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wool
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:163
@@ -3277,6 +3279,8 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid "Spidercloth is consumed in the smithy to make tools and golden tabard."
 msgstr ""
+"Spinnenstoff wird von Schmieden benötigt um Werkzeuge und Goldene "
+"Wappenröcke herzustellen."
 
 #. TRANSLATORS: Helptext for an europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:186
@@ -3308,7 +3312,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:212
 msgctxt "europeans_ware"
 msgid "Clay is needed to make bricks."
-msgstr ""
+msgstr "Lehm wird zur Herstellung von Ziegeln gebraucht."
 
 #. TRANSLATORS: Helptext for an europeans ware: Clay, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:214
@@ -3398,7 +3402,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:298
 msgctxt "europeans_ware"
 msgid "Spider farms need to be provided with corn."
-msgstr ""
+msgstr "Spinnenzuchten müssen mit Mais versorgt werden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Blackroot
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:307
@@ -3419,6 +3423,8 @@ msgstr "Roggen ist überlebenswichtig."
 msgctxt "europeans_ware"
 msgid "Rye is produced by farms and used by mills to produce mixed flour."
 msgstr ""
+"Roggen wird auf Bauernhöfen erzeugt und von Mühlen zu gemischtem Mehl "
+"verarbeitet."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wheat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:330
@@ -3431,6 +3437,8 @@ msgstr "Weizen ist überlebenswichtig."
 msgctxt "europeans_ware"
 msgid "Wheat is produced by farms and used by mills to produce mixed flour."
 msgstr ""
+"Weizen wird auf Bauernhöfen erzeugt und von Mühlen zu gemischtem Mehl "
+"verarbeitet."
 
 #. TRANSLATORS: Helptext for an europeans ware: Flour
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:342
@@ -3508,6 +3516,9 @@ msgid ""
 "tavern and the brewery. The spider farm and the sheep farm need to be "
 "supplied with water, too."
 msgstr ""
+"Wasser wird vom Lehmgräber, vom Förster, von allen Bauernhöfen und in der "
+"Taverne und der Brauerei benötigt. Die Spinnenzucht und Schafzucht müssen "
+"auch mir Wasser versorgt werden."
 
 #. TRANSLATORS: Helptext for a europeans ware: Barley
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:406
@@ -3785,7 +3796,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:673
 msgctxt "europeans_ware"
 msgid "Milking tongs are used by the spider breeder to milk the spiders."
-msgstr ""
+msgstr "Melkzangen werden vom Spinnenzüchter benutzt, um Spinnen zu melken-"
 
 #. TRANSLATORS: Helptext for an europeans ware: Needles, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:686
@@ -3980,7 +3991,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:918
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
-msgstr ""
+msgstr "Transportiert Waren auf deinen Straßen mit seinen Händen."
 
 #. TRANSLATORS: Helptext for an europeans worker: Ox
 #. TRANSLATORS: Helptext for an europeans worker: Donkey
@@ -3999,7 +4010,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:954
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets."
-msgstr ""
+msgstr "Transportiert Waren auf deinen Straßen mit Körben."
 
 #. TRANSLATORS: Helptext for a europeans worker: Reindeer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:972
@@ -4098,7 +4109,7 @@ msgstr "Pflanzt Bäume."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1216
 msgctxt "europeans_worker"
 msgid "Produces planks out of log."
-msgstr ""
+msgstr "Sägt Bretter aus Stämmen."
 
 #. TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1228
@@ -4227,7 +4238,7 @@ msgstr "Bäckt Brot aus Wasser, Mehl und Maismehl."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1609
 msgctxt "europeans_worker"
 msgid "Mines ore and minerals."
-msgstr ""
+msgstr "Baut Erze und Mineralien ab."
 
 #. TRANSLATORS: Helptext for an europeans worker: Smelter
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1618
@@ -4243,7 +4254,7 @@ msgstr "Verhüttet Erz zu Metall."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1663
 msgctxt "europeans_worker"
 msgid "Produce tools, armor and weapons."
-msgstr ""
+msgstr "Schmiedet Werkzeuge, Rüstungen und Waffen."
 
 #. TRANSLATORS: Helptext for an europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an europeans immovable: Destroyed Building
@@ -4369,6 +4380,10 @@ msgid ""
 "vanish after a while. Aqua farms can use them as ponds to grow fish in them, "
 "whereas charcoal burners erect their charcoal stacks in them."
 msgstr ""
+"Wenn Lehmgräber Lehm ausgraben, hinterlassen sie Löcher im Boden. Diese "
+"Löcher verschwinden nach einiger Zeit von alleine. Fischzuchten können sie "
+"als Teiche nutzen um Fische zu züchten, während Köhler in Ihnen "
+"Holzkohlemeiler errichten können. "
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2052
@@ -4376,6 +4391,8 @@ msgid ""
 "Fish are maturing in this pond. A fisher working from an aqua farm will be "
 "able to catch them when they are bigger."
 msgstr ""
+"Fische wachsen in diesem Teich heran. Ein Fischer, der in einer Fischzucht "
+"arbeitet, kann sie abfischen wenn sie größer sind. "
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2059
@@ -4383,6 +4400,8 @@ msgid ""
 "Fish are living in this pond. A fisher working from an aqua farm can catch "
 "them as food."
 msgstr ""
+"Fische leben in diesem Teich. Ein Fischer in einer Fischzucht kann sie "
+"abfischen um Nahrung zu erzeugen."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2066
@@ -4390,6 +4409,8 @@ msgid ""
 "A charcoal stack is burning in this earthen hole. When it has burnt down, a "
 "charcoal burner will be able to gather coal from it."
 msgstr ""
+"Ein Holzkohlemeiler brennt in diesem Erdloch. Wenn er verbrannt ist, kann "
+"ein Köhler die Kohle einsammeln. "
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2073
@@ -4397,6 +4418,8 @@ msgid ""
 "A charcoal stack, which had been erected in this earthen hole, is ready for "
 "a charcoal burner to gather coal from it."
 msgstr ""
+"Ein Holzkohlemeiler, der in diesem Erdloch errichtet wurde, ist bereit vom "
+"Köhler eingesammelt zu werden."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2080
@@ -4653,7 +4676,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2526
 msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
-msgstr ""
+msgstr "Schneidet rohe Steinblöcke aus den Felsen in der Umgebung."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Quarry
 #. TRANSLATORS: Note helptext for an europeans production site: Quarry
@@ -4691,7 +4714,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2574
 msgctxt "europeans_building"
 msgid "Fishes on the coast near the fisher’s hut."
-msgstr ""
+msgstr "Fischt an der Küste nahe der Fischerhütte. "
 
 #. TRANSLATORS: Note helptext for production site: Fisher's Hut
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2576
@@ -4723,6 +4746,8 @@ msgid ""
 "Build a fish breeder’s house close to the fisher’s house to make sure that "
 "you don’t run out of fish."
 msgstr ""
+"Baue ein Fischzüchterhaus in der Nähe eines Fischerhauses, um "
+"sicherzustellen, dass dir der Fisch nicht ausgeht."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Hunter's Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Hunter's House
@@ -4751,6 +4776,8 @@ msgstr "Das Jagdhaus braucht Tiere innerhalb seines Arbeitsberechs."
 msgctxt "europeans_building"
 msgid "Keeps bees and lets them swarm over flowering fields to produce honey."
 msgstr ""
+"Hält Bienen und lässt sie über blühende Felder ausschwärmen, um Honig "
+"herzustellen. "
 
 #. TRANSLATORS: Note helptext for a europeans production site: Beekeeper's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2634
@@ -4836,7 +4863,7 @@ msgstr "Gestaltet Säulen aus Marmor."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2752
 msgctxt "europeans_building"
 msgid "Weaves spider cloth out of spider silk."
-msgstr ""
+msgstr "Webt Spinnenstoff aus Spinnenseide."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2759
@@ -4845,6 +4872,8 @@ msgid ""
 "Weaves spidercloth for buildings and ships’ sails, and tabards to equip and "
 "train the soldiers."
 msgstr ""
+"Webt Spinnenstoff für Gebäude und Schiffsegel, und Wappenröcke um die "
+"Soldaten auszustatten und auszubilden."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2766
@@ -4856,7 +4885,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2773
 msgctxt "europeans_building"
 msgid "Grinds corn to produce cornmeal."
-msgstr ""
+msgstr "Mahlt Mais zu Maismehl."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2780
@@ -4864,7 +4893,7 @@ msgstr ""
 msgctxt "europeans_building"
 msgid ""
 "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed flour."
-msgstr ""
+msgstr "Mahlt Mais zu Maismehl. Mahlt Weizen und Rogggen zu gemischtem Mehl."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Tavern
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2794
@@ -4909,25 +4938,25 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2850
 msgctxt "europeans_building"
 msgid "Produces mead and wine."
-msgstr ""
+msgstr "Erzeugt Met und Wein."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Smelting Works
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2857
 msgctxt "europeans_building"
 msgid "Smelts ore into iron."
-msgstr ""
+msgstr "Verhüttet Erze zu Eisen."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2864
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold."
-msgstr ""
+msgstr "Verhüttet Erze zu Eisen und Gold."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Smelting Works
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2871
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold. Recycles scrap metal."
-msgstr ""
+msgstr "Verhüttet Erze zu Eisen und Gold. Bereitet Altmetall wieder auf."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2878
@@ -4985,25 +5014,26 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2971
 msgctxt "europeans_building"
 msgid "Sows and harvests corn, rye and wheat."
-msgstr ""
+msgstr "Sät und erntet Mais, Roggen und Weizen."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2978
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, corn, rye and wheat."
-msgstr ""
+msgstr "Sät und erntet Gerste, Mais, Roggen und Weizen."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2985
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-msgstr ""
+msgstr "Sät und erntet Gerste, Schwarzwurzel, Mais, Roggen und Weizen."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2992
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
 msgstr ""
+"Sät und erntet Gerste, Schwarzwurzel, Mais, Beeren, Reben, Roggen und Weizen."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Spider Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2999
@@ -5089,7 +5119,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3188
 msgctxt "europeans_building"
 msgid "Trains recruits to soldiers."
-msgstr ""
+msgstr "Bildet Rekruten zu Soldaten aus."
 
 #. TRANSLATORS: Purpose helptext for an europeans training site: Guardhall, part 2
 #. TRANSLATORS: Purpose helptext for an europeans training site: Dungeon, part 2
@@ -5103,7 +5133,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3166
 msgctxt "europeans_building"
 msgid "Trains recruits  to soldiers."
-msgstr ""
+msgstr "Bildet Rekruten zu Soldaten aus."
 
 #. TRANSLATORS: Note helptext for a barbarian training site: Battle Arena
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3198
@@ -5294,7 +5324,7 @@ msgstr "Arbeiter kommen"
 #: addons/europeans_tribe.wad/wares/ore/init.lua:8
 msgctxt "ware"
 msgid "Ore"
-msgstr ""
+msgstr "Erz"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/rye/init.lua:8
@@ -5624,7 +5654,7 @@ msgstr "Bergmannsgeselle"
 #: addons/europeans_tribe.wad/workers/recruit/init.lua:8
 msgctxt "europeans_worker"
 msgid "Recruit"
-msgstr ""
+msgstr "Rekrut"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/scout_advanced/init.lua:8
