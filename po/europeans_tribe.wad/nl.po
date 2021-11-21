@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 03:04+0100\n"
+"POT-Creation-Date: 2021-11-21 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Dutch (https://www.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
@@ -491,63 +491,63 @@ msgid "Normal Warehouse"
 msgstr ""
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:8
-msgctxt "resource_indicator"
-msgid "No Resources"
-msgstr ""
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:31
-msgctxt "resource_indicator"
-msgid "Water"
-msgstr ""
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:54
+#: addons/europeans_tribe.wad/immovables/resi_coal/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Coal"
 msgstr ""
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:77
-msgctxt "resource_indicator"
-msgid "Some Gold"
-msgstr ""
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:100
-msgctxt "resource_indicator"
-msgid "Some Iron"
-msgstr ""
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:123
-msgctxt "resource_indicator"
-msgid "Some Crystals"
-msgstr ""
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:146
+#: addons/europeans_tribe.wad/immovables/resi_coal/init.lua:31
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
 msgstr ""
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:169
+#: addons/europeans_tribe.wad/immovables/resi_gold/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Gold"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_gold/init.lua:31
 msgctxt "resource_indicator"
 msgid "A Lot of Gold"
 msgstr ""
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:192
+#: addons/europeans_tribe.wad/immovables/resi_iron/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Iron"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_iron/init.lua:31
 msgctxt "resource_indicator"
 msgid "A Lot of Iron"
 msgstr ""
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:215
+#: addons/europeans_tribe.wad/immovables/resi_none/init.lua:8
+msgctxt "resource_indicator"
+msgid "No Resources"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_stones/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Crystals"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_stones/init.lua:31
 msgctxt "resource_indicator"
 msgid "A Lot of Crystals"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_water/init.lua:8
+msgctxt "resource_indicator"
+msgid "Water"
 msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
@@ -3736,7 +3736,7 @@ msgstr ""
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:777
 msgctxt "europeans_ware"
-msgid "This kitchen_tools are used by the cook in a tavern or in an inn."
+msgid "This kitchen tools are used by the cook in a tavern or in an inn."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 2

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-20 03:03+0100\n"
+"POT-Creation-Date: 2021-11-21 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -499,64 +499,64 @@ msgid "Normal Warehouse"
 msgstr "Normales Lagerhaus"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:8
-msgctxt "resource_indicator"
-msgid "No Resources"
-msgstr "Keine Rohstoffe"
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:31
-msgctxt "resource_indicator"
-msgid "Water"
-msgstr "Wasser"
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:54
+#: addons/europeans_tribe.wad/immovables/resi_coal/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Coal"
 msgstr "Wenig Kohle"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:77
-msgctxt "resource_indicator"
-msgid "Some Gold"
-msgstr "Wenig Gold"
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:100
-msgctxt "resource_indicator"
-msgid "Some Iron"
-msgstr "Wenig Eisen"
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:123
-msgctxt "resource_indicator"
-msgid "Some Crystals"
-msgstr "Wenig Kristalle"
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:146
+#: addons/europeans_tribe.wad/immovables/resi_coal/init.lua:31
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
 msgstr "Viel Kohle"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:169
+#: addons/europeans_tribe.wad/immovables/resi_gold/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Gold"
+msgstr "Wenig Gold"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_gold/init.lua:31
 msgctxt "resource_indicator"
 msgid "A Lot of Gold"
 msgstr "Viel Gold"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:192
+#: addons/europeans_tribe.wad/immovables/resi_iron/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Iron"
+msgstr "Wenig Eisen"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_iron/init.lua:31
 msgctxt "resource_indicator"
 msgid "A Lot of Iron"
 msgstr "Viel Eisen"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_tribe.wad/immovables/resi/init.lua:215
+#: addons/europeans_tribe.wad/immovables/resi_none/init.lua:8
+msgctxt "resource_indicator"
+msgid "No Resources"
+msgstr "Keine Rohstoffe"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_stones/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Crystals"
+msgstr "Wenig Kristalle"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_stones/init.lua:31
 msgctxt "resource_indicator"
 msgid "A Lot of Crystals"
 msgstr "Viele Kristalle"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_tribe.wad/immovables/resi_water/init.lua:8
+msgctxt "resource_indicator"
+msgid "Water"
+msgstr "Wasser"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/harvested/init.lua:8
@@ -3858,8 +3858,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:777
+#, fuzzy
 msgctxt "europeans_ware"
-msgid "This kitchen_tools are used by the cook in a tavern or in an inn."
+msgid "This kitchen tools are used by the cook in a tavern or in an inn."
 msgstr ""
 "Diese Küchengeräte werden vom Koch in einer Taverne oder einem Wirtshaus "
 "benutzt."

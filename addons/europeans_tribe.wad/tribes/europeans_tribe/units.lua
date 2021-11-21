@@ -774,7 +774,7 @@ descriptions:new_tribe {
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 1
-                  pgettext("europeans_ware", "This kitchen_tools are used by the cook in a tavern or in an inn."),
+                  pgettext("europeans_ware", "This kitchen tools are used by the cook in a tavern or in an inn."),
                   -- TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 2
                   pgettext("europeans_ware", "They are created by all smithies.")
                }
