@@ -71,6 +71,7 @@ init = {
                 fishing_net = 2,
                 fishing_rod = 2,
                 hook_pole = 2,
+                kitchen_tools = 2,
                 hunting_bow = 2,
                 hunting_spear = 2,
                 milking_tongs = 2,
@@ -119,6 +120,7 @@ init = {
             port:set_wares("fishing_net", math.ceil(2 / #ports))
             port:set_wares("fishing_rod", math.ceil(2 / #ports))
             port:set_wares("hook_pole", math.ceil(2 / #ports))
+            port:set_wares("kitchen_tools", math.ceil(2 / #ports))
             port:set_wares("hunting_bow", math.ceil(2 / #ports))
             port:set_wares("hunting_spear", math.ceil(2 / #ports))
             port:set_wares("milking_tongs", math.ceil(2 / #ports))

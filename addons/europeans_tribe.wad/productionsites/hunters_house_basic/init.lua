@@ -14,8 +14,7 @@ descriptions:new_productionsite_type {
         enhancement_cost = {
           blackwood = 1,
           cloth = 1,
-          quartz = 1,
-          basket = 1
+          quartz = 1
         },
         enhancement_return_on_dismantle = {
           quartz = 1
@@ -49,7 +48,8 @@ descriptions:new_productionsite_type {
 
    aihints = {
       basic_amount = 2,
-      prohibited_till = 900
+      prohibited_till = 900,
+      forced_after = 3600
    },
 
    working_positions = {

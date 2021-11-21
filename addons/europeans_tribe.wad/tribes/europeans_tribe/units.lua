@@ -591,7 +591,7 @@ descriptions:new_tribe {
                   -- TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 1
                   pgettext("europeans_ware", "The felling ax is the tool to chop down trees."),
                   -- TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 2
-                  pgettext("europeans_ware", "Felling axes are used by lumberjacks and produced produced by all smithies.")
+                  pgettext("europeans_ware", "Felling axes are used by lumberjacks and produced by all smithies.")
                }
             }
          },
@@ -748,7 +748,7 @@ descriptions:new_tribe {
             helptexts = {
                purpose = {
                   -- TRANSLATORS: Helptext for an europeans ware: Bread Paddle, part 1
-                  pgettext("europeans_ware", "The bread paddle is the tool of the baker, each baker needs one."),
+                  pgettext("europeans_ware", "This bread paddle is used by the baker in a tavern or in an inn."),
                   -- TRANSLATORS: Helptext for an europeans ware: Bread Paddle, part 2
                   pgettext("europeans_ware", "Bread paddles are produced by all smithies.")
                }
@@ -764,6 +764,19 @@ descriptions:new_tribe {
                   pgettext("europeans_ware", "This hook pole is used by the smoker in a tavern or in an inn."),
                   -- TRANSLATORS: Helptext for an europeans ware: Hook Pole, part 2
                   pgettext("europeans_ware", "It is created by all smithies.")
+               }
+            }
+         },
+         {
+            name = "kitchen_tools",
+            default_target_quantity = 1,
+            preciousness = 2,
+            helptexts = {
+               purpose = {
+                  -- TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 1
+                  pgettext("europeans_ware", "This kitchen tools are used by the cook in a tavern or in an inn."),
+                  -- TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 2
+                  pgettext("europeans_ware", "They are created by all smithies.")
                }
             }
          }
@@ -1014,6 +1027,33 @@ descriptions:new_tribe {
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Geologist
                purpose = pgettext("europeans_worker", "Discovers resources for mining.")
+            }
+         },
+         {
+            name = "europeans_terraformer_basic",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Terraformer
+               purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
+            }
+         },
+         {
+            name = "europeans_terraformer_normal",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Terraformer
+               purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
+            }
+         },
+         {
+            name = "europeans_terraformer_advanced",
+            default_target_quantity = 1,
+            preciousness = 4,
+            helptexts = {
+               -- TRANSLATORS: Helptext for an europeans worker: Terraformer
+               purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
             }
          },
       },
@@ -1318,33 +1358,6 @@ descriptions:new_tribe {
             }
          },
          {
-            name = "europeans_beekeeper_basic",
-            default_target_quantity = 1,
-            preciousness = 4,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Carrier
-               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
-            }
-         },
-         {
-            name = "europeans_beekeeper_normal",
-            default_target_quantity = 1,
-            preciousness = 4,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Carrier
-               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
-            }
-         },
-         {
-            name = "europeans_beekeeper_advanced",
-            default_target_quantity = 2,
-            preciousness = 4,
-            helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Carrier
-               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
-            }
-         },
-         {
             name = "europeans_breeder_basic",
             default_target_quantity = 1,
             preciousness = 8,
@@ -1456,30 +1469,30 @@ descriptions:new_tribe {
             }
          },
          {
-            name = "europeans_smoker_basic",
+            name = "europeans_beekeeper_basic",
             default_target_quantity = 1,
             preciousness = 4,
             helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Smoker
-               purpose = pgettext("europeans_worker", "Smoking fish and meat.")
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
             }
          },
          {
-            name = "europeans_smoker_normal",
+            name = "europeans_beekeeper_normal",
             default_target_quantity = 1,
             preciousness = 4,
             helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Smoker
-               purpose = pgettext("europeans_worker", "Smoking fish and meat.")
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
             }
          },
          {
-            name = "europeans_smoker_advanced",
+            name = "europeans_beekeeper_advanced",
             default_target_quantity = 2,
             preciousness = 4,
             helptexts = {
-               -- TRANSLATORS: Helptext for an europeans worker: Smoker
-               purpose = pgettext("europeans_worker", "Smoking fish and meat.")
+               -- TRANSLATORS: Helptext for an europeans worker: Carrier
+               purpose = pgettext("europeans_worker", "Lets bees swarm over flowers, then gathers the honey.")
             }
          }
       },
@@ -2640,6 +2653,27 @@ descriptions:new_tribe {
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Scout's House
             purpose = pgettext("building", "Explores unknown territory.")
+         }
+      },
+      {
+         name = "europeans_terraformers_house_basic",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for a europeans production site: Terraformer's Hut
+            purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
+         }
+      },
+      {
+         name = "europeans_terraformers_house_normal",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Terraformer's House
+            purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
+         }
+      },
+      {
+         name = "europeans_terraformers_house_advanced",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Terraformer's House
+            purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
          }
       },
 

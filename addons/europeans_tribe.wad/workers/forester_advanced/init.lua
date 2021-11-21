@@ -20,17 +20,6 @@ descriptions:new_worker_type {
          "animate=water duration:2s",
          "return"
       },
-      check = {
-         "findspace=size:any radius:12 terraform:amazons",
-      },
-      terraform = {
-         "findspace=size:any radius:12 terraform:amazons",
-         "walk=coords",
-         "animate=dig duration:2s",
-         "terraform=amazons",
-         "animate=dig duration:2s",
-         "return"
-      },
    },
 
    animations = {

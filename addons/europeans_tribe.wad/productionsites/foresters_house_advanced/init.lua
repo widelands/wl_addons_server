@@ -28,23 +28,6 @@ descriptions:new_productionsite_type {
    
    programs = {
       main = {
-         -- TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
-         descname = _"working",
-         actions = {
-            "call=plant",
-            "callworker=check",
-            "call=terraform",
-            "call=plant",
-            "call=terraform",
-            "call=plant",
-            "call=terraform",
-            "call=plant",
-            "call=terraform",
-            "call=plant",
-            "return=skipped"
-         }
-      },
-      plant = {
          -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
          descname = _"planting trees",
          actions = {
@@ -52,17 +35,7 @@ descriptions:new_productionsite_type {
             "return=skipped unless site has water:2",
             "consume=water",
             "callworker=plant",
-            "sleep=duration:10s"
-         }
-      },
-      terraform = {
-         -- TRANSLATORS: Completed/Skipped/Did not start enhancing the fertility of land because ...
-         descname = _"enhancing the fertility of land",
-         actions = {
-            "return=skipped unless site has water:4",
-            "consume=water:2",
-            "callworker=terraform",
-            "sleep=duration:10s"
+            "sleep=duration:15s"
          }
       },
    },

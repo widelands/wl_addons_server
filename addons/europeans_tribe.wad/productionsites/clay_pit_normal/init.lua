@@ -51,8 +51,6 @@ descriptions:new_productionsite_type {
          actions = {
             "callworker=check_dig",
             "call=digging_clay",
-            "callworker=check_dike",
-            "call=diking_clay",
             "callworker=check_dig",
             "call=making_pond_idle",
             "return=skipped"
@@ -66,18 +64,6 @@ descriptions:new_productionsite_type {
             "return=skipped unless site has water:2",
             "callworker=dig",
             "consume=water",
-            "sleep=duration:10s",
-            "animate=working duration:15s",
-            "sleep=duration:1s",
-            "produce=clay"
-         }
-      },
-      diking_clay = {
-         -- TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
-         descname = _"diking clay",
-         actions = {
-            "return=skipped unless economy needs clay or workers need experience",
-            "callworker=dike",
             "sleep=duration:10s",
             "animate=working duration:15s",
             "sleep=duration:1s",

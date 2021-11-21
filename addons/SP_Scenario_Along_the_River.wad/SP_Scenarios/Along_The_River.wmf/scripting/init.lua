@@ -182,8 +182,16 @@ function mission_thread()
          p1:hide_fields(warehouse:region(6))
       end)
       transport_wares(p1, hq, "gold_ore", 25, true, "tribes/buildings/warehouses/barbarians/headquarters_interim/idle_00.png")
-      while not immovable_has_name(warehouse.immovable, "barbarians_warehouse") do sleep(2053) end
-      o_build_warehouse.done = true
+      while not o_build_warehouse.done do
+         sleep(2053)
+         for i, field in pairs(map:get_field(53,92):region(8)) do
+            if immovable_has_name(field.immovable, "barbarians_warehouse") then
+               warehouse = field
+               o_build_warehouse.done = true
+               break
+            end
+         end
+      end
    end)
 
    while not (obj_done(o_build_warehouse) and obj_done(o_build_port)) do sleep(2063) end
@@ -194,25 +202,27 @@ function mission_thread()
 
    -- Wait for shovels in warehouse and hand them (done in "wares_collected_at_field" function)out.
    run(function()
-      push_textdomain("SP_Scenario_Along_the_River.wad", true)
       scroll_to_field(warehouse)
       campaign_message_box(briefing_bring_shovels_1)
       o_bring_shovels_1 = add_campaign_objective(obj_bring_shovels_1)
       while not wares_collected_at_field(warehouse, "shovel", 4) do sleep(2027) end
+      push_textdomain("SP_Scenario_Along_the_River.wad", true)
       send_to_inbox(p1, _"Shovels", li_image("tribes/buildings/warehouses/barbarians/warehouse/idle_1.png", _"Four shovels for removing the swamps have been collected at the warehouse."), { field = warehouse, popup = true, })
+      pop_textdomain()
       o_bring_shovels_1.done = true
       sleep(180000)
       scroll_to_field(warehouse)
       campaign_message_box(briefing_bring_shovels_2)
       o_bring_shovels_2 = add_campaign_objective(obj_bring_shovels_2)
       while not wares_collected_at_field(warehouse, "shovel", 4) do sleep(2027) end
+      push_textdomain("SP_Scenario_Along_the_River.wad", true)
       send_to_inbox(p1, _"Shovels", li_image("tribes/buildings/warehouses/barbarians/warehouse/idle_1.png", _"Four more shovels for removing the swamps have been collected at the warehouse."), { field = warehouse, popup = true, })
+      pop_textdomain()
       remove_swamps(p1)
       sleep(198000)
       -- After the work is done the shovels are returned to the Wh.
       transport_wares(p1, warehouse, "shovel", 8, true, "tribes/buildings/warehouses/barbarians/warehouse/menu.png")
       o_bring_shovels_2.done = true
-      pop_textdomain()
    end)
 
    while not obj_done(o_bring_shovels_2) do sleep(2029) end

@@ -6,7 +6,7 @@ local result = {
          name = "terrains_foreignplanet",
          -- TRANSLATORS: A category in the editor for placing terrains on the map.
          descname = _ "Foreign Planet",
-         picture = "addons/foreign_planet.wad/terrains/rocks2.png",
+         picture = "addons/foreign_planet.wad/terrains/rocks2/rocks2.png",
          items_per_row = 6,
          items = {
             "foreignplanet_rocks1",
