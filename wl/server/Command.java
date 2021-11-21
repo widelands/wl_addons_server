@@ -27,7 +27,7 @@ package wl.server;
  * <ul>
  *  <li> Protocol version (PV), <code>\n</code>
  *  <li> Language name (e.g. "nds"), <code>\n</code>
- *  <li> {@literal Protocol version >= 5}: Widelands version (e.g. "1.1~git34567"), <code>\n</code>
+ *  <li> PV 5+: Widelands version (e.g. "1.1~git34567"), <code>\n</code>
  *  <li> Username (or "" for no user), <code>\n</code>
  *  <li> <code>ENDOFSTREAM\n</code>
  * </ul>
@@ -54,8 +54,8 @@ package wl.server;
  * After the initial contact, the client may send any number of commands before closing the connection.
  * A command consists of one line with the command name and the command's arguments separated by whitespaces,
  * terminated by \n. The command line is followed by any number of argument lines if defined in the command's
- * specification. In protocol version 6 and newer, the command name is prefixed by the command version (CV)
- * followed by a colon; in older protocol versions the default command version as stated for each command
+ * specification. In PV 6 and newer, the command name is prefixed by the command version (CV)
+ * followed by a colon; in older PVs the default command version as stated for each command
  * individually is assumed.
  *
  * <p>
@@ -74,17 +74,17 @@ package wl.server;
  *   prints out server statistics in the following format:
  *   <ul>
  *   <li> Time in [1: milliseconds | 2+: hours] since the server was started, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Average client lifetime in seconds, <code>\n</code>
- *   <li> Protocol version 1:
+ *   <li> PV 2+: Average client lifetime in seconds, <code>\n</code>
+ *   <li> PV 1:
  *       <ul><li> Number of current registered users, <code>\n</code>
  *       <li> Number of current unregistered users, <code>\n</code>
  *       </ul>
- *   <li> Protocol version 2:
+ *   <li> PV 2:
  *       <ul><li> Counter of registered users, <code>\n</code>
  *       <li> Counter of unregistered users, <code>\n</code>
  *       </ul>
  *   <li> Counter of unique registered users, <code>\n</code>
- *   <li> {@literal Protocol version <= 1}: Counter of successful connection attempts, <code>\n</code>
+ *   <li> PV 1: Counter of successful connection attempts, <code>\n</code>
  *   <li> Counter of unsuccessful connection attempts, <code>\n</code>
  *   <li> Counter of <code>CMD_LIST              </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_INFO              </code> requests, <code>\n</code>
@@ -99,10 +99,10 @@ package wl.server;
  *   <li> Counter of <code>CMD_SUBMIT_SCREENSHOT </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_CONTACT           </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_SETUP_TX          </code> requests, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_DELETE    </code> requests, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_VERIFY    </code> requests, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_QUALITY   </code> requests, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_SYNC_SAFE </code> requests, <code>\n</code>
+ *   <li> PV 2+: Counter of <code>CMD_ADMIN_DELETE    </code> requests, <code>\n</code>
+ *   <li> PV 2+: Counter of <code>CMD_ADMIN_VERIFY    </code> requests, <code>\n</code>
+ *   <li> PV 2+: Counter of <code>CMD_ADMIN_QUALITY   </code> requests, <code>\n</code>
+ *   <li> PV 2+: Counter of <code>CMD_ADMIN_SYNC_SAFE </code> requests, <code>\n</code>
  *   <li> Counter of unsuccessful commands, <code>\n</code>
  *   <li> <code>ENDOFSTREAM\n</code>
  *   </ul>
@@ -122,9 +122,10 @@ public enum Command {
 	 * <p>
 	 * List all available add-on names.
 	 *
+	 * <p> Parameters:
 	 * <ul>
-	 * <li> In CV 1, no arguments are accepted.
-	 * <li> In CV 2+, a "control" argument is required to finetune the behaviour.
+	 * <li> CV 1: No arguments.
+	 * <li> CV 2+: A "control" argument is required to finetune the behaviour.
 	 * Supported values (case-insensitive) are:
 	 * <ul>
 	 * <li> true – List all add-ons.
@@ -468,7 +469,7 @@ public enum Command {
 	 * </ol>
 	 * In CV 2+, then on separate lines:
 	 * <ul>
-	 * <li> Priority
+	 * <li> Priority (one of "normal", "high", "urgent")
 	 * <li> Display Name
 	 * <li> Categories (a JSON list of 1 or more strings)
 	 * <li> ENDOFSTREAM
@@ -486,7 +487,7 @@ public enum Command {
 	 * Supported command versions: 1 (default: 1)
 	 *
 	 * <p>
-	 * Added in protocol version 5.
+	 * Added in PV 5.
 	 * Irrevocably delete an add-on and all its metadata and translations from
 	 * the server and from Transifex. Only admins may do this.
 	 *
@@ -510,7 +511,7 @@ public enum Command {
 	 * Supported command versions: 1 (default: 1)
 	 *
 	 * <p>
-	 * Added in protocol version 5.
+	 * Added in PV 5.
 	 * Change the verification status of an add-on. Only admins may do this.
 	 *
 	 * <p> Parameters:
@@ -531,7 +532,7 @@ public enum Command {
 	 * Supported command versions: 1 (default: 1)
 	 *
 	 * <p>
-	 * Added in protocol version 5.
+	 * Added in PV 5.
 	 * Change the quality rating of an add-on. Only admins may do this.
 	 *
 	 * <p> Parameters:
@@ -552,7 +553,7 @@ public enum Command {
 	 * Supported command versions: 1 (default: 1)
 	 *
 	 * <p>
-	 * Added in protocol version 5.
+	 * Added in PV 5.
 	 * Change the sync safety status of an add-on. Only admins may do this.
 	 *
 	 * <p> Parameters:
