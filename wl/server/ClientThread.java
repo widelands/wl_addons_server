@@ -38,7 +38,7 @@ public class ClientThread implements Runnable {
 
 	/** The newest protocol version the server supports. */
 	// May be increased but never decreased.
-	public static final int kNewestSupportedProtocolVersion = 5;
+	public static final int kNewestSupportedProtocolVersion = 6;
 
 	/**
 	 * Constructor.

@@ -41,6 +41,7 @@ public class HandleCommand {
 	private final String locale;
 
 	private String[] cmd;
+	private int commandVersion;
 
 	/**
 	 * Constructor.
@@ -63,6 +64,7 @@ public class HandleCommand {
 	                     boolean admin,
 	                     String locale) {
 		this.cmd = null;
+		this.commandVersion = 0;
 		this.out = out;
 		this.in = in;
 		this.protocolVersion = protocolVersion;
@@ -74,13 +76,41 @@ public class HandleCommand {
 	}
 
 	/**
+	 * Check that the command version is within the expected bounds.
+	 * @param max Maximum supported command version.
+	 * @throws Exception If the version is out of bounds.
+	 */
+	private void checkCommandVersion(int max) throws Exception {
+		if (commandVersion < 1 || commandVersion > max)
+			throw new ServerUtils.WLProtocolException("Invalid command version " + commandVersion +
+			                                          " (maximum supported is " + max + ")");
+	}
+
+	/**
 	 * Handle a new command.
 	 * @param c The command sent by the client. Parameters are in index 1+.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public void handle(String... c) throws Exception {
 		cmd = c;
-		Command command = Command.valueOf(cmd[0]);
+		Command command;
+		if (protocolVersion >= 6) {
+			String[] split = cmd[0].split(":");
+			if (split.length != 2)
+				throw new ServerUtils.WLProtocolException("Invalid command/version sequence " +
+				                                          cmd[0]);
+			commandVersion = Integer.valueOf(split[0]);
+			command = Command.valueOf(split[1]);
+		} else {
+			command = Command.valueOf(cmd[0]);
+			if (protocolVersion == 5 &&
+			    (command == Command.CMD_LIST || command == Command.CMD_INFO ||
+			     command == Command.CMD_EDIT_COMMENT)) {
+				commandVersion = 2;
+			} else {
+				commandVersion = 1;
+			}
+		}
 		MuninStatistics.MUNIN.countCommand(command);
 
 		switch (command) {
@@ -145,18 +175,28 @@ public class HandleCommand {
 	// Command handling implementations below
 
 	/**
-	 * Handle a #CMD_LIST command.
+	 * Handle a CMD_LIST command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdList() throws Exception {
-		// Args: [5+: all]
-		ServerUtils.checkNrArgs(cmd, protocolVersion < 5 ? 0 : 1);
-		final boolean versionCheck = widelandsVersion != null && !Boolean.parseBoolean(cmd[1]);
+		// Args: [2+: control]
+		checkCommandVersion(2);
+		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 0 : 1);
+
+		final boolean versionCheck =
+		    widelandsVersion != null && commandVersion >= 2 &&
+		    (cmd[1].equalsIgnoreCase("true") || cmd[1].equalsIgnoreCase("showall"));
+		final boolean appendInfo =
+		    commandVersion >= 2 &&
+		    (cmd[1].equalsIgnoreCase("showall") || cmd[1].equalsIgnoreCase("showcompatible"));
 		ArrayList<String> compatibleAddOns = new ArrayList<>();
-		for (File addon : Utils.listSorted(new File("addons"))) {
+
+		ResultSet sql = Utils.sql(Utils.Databases.kAddOns, "select name from addons order by name");
+		while (sql.next()) {
+			final String addon = sql.getString("name");
 			if (versionCheck) {
 				Utils.Profile profile =
-				    Utils.readProfile(new File(addon, "addon"), addon.getName());
+				    Utils.readProfile(new File("addons/" + addon + "/addon"), addon);
 				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
 				                                         profile.get("min_wl_version") != null ?
                                                              profile.get("min_wl_version").value :
@@ -167,21 +207,28 @@ public class HandleCommand {
 					continue;
 				}
 			}
-			compatibleAddOns.add(addon.getName());
+			compatibleAddOns.add(addon);
 		}
 
-		MuninStatistics.MUNIN.skipNextCmdInfo(compatibleAddOns.size() - 1);
+		MuninStatistics.MUNIN.skipNextCmdInfo(compatibleAddOns.size() - (appendInfo ? 0 : 1));
 		out.println(compatibleAddOns.size());
 		for (String name : compatibleAddOns) out.println(name);
 		out.println("ENDOFSTREAM");
+
+		if (appendInfo) {
+			for (String name : compatibleAddOns) {
+				handle("2:CMD_INFO", name);
+			}
+		}
 	}
 
 	/**
-	 * Handle a #CMD_INFO command.
+	 * Handle a CMD_INFO command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdInfo() throws Exception {
 		// Args: name
+		checkCommandVersion(2);
 		ServerUtils.checkNrArgs(cmd, 1);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
@@ -208,7 +255,7 @@ public class HandleCommand {
 			out.println(profile.get("author").value(locale));
 
 			out.println(Utils.getUploadersString(
-			    addOnID, protocolVersion < 5));  // Version 4 assumes there is only one uploader
+			    addOnID, commandVersion < 2));  // Version 1 assumes there is only one uploader
 
 			out.println(profile.get("version").value);
 			out.println(sqlMain.getLong("i18n_version"));
@@ -244,7 +291,7 @@ public class HandleCommand {
 			}
 			out.println(comments.size());
 			for (Utils.AddOnComment c : comments) {
-				if (protocolVersion >= 5) out.println(c.commentID);
+				if (commandVersion >= 2) out.println(c.commentID);
 				out.println(Utils.getUsername(c.userID));
 				out.println(c.timestamp);
 				out.println(c.editorID == null ? "" : Utils.getUsername(c.editorID));
@@ -257,7 +304,7 @@ public class HandleCommand {
 			}
 
 			out.println(sqlMain.getLong("security") > 0 ? "verified" : "unchecked");
-			if (protocolVersion >= 5) out.println(sqlMain.getLong("quality"));
+			if (commandVersion >= 2) out.println(sqlMain.getLong("quality"));
 
 			File iconFile = new File("addons/" + cmd[1], "icon.png");
 			if (iconFile.isFile()) {
@@ -271,11 +318,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_DOWNLOAD command.
+	 * Handle a CMD_DOWNLOAD command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdDownload() throws Exception {
 		// Args: name
+		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 1);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
@@ -296,11 +344,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_I18N command.
+	 * Handle a CMD_I18N command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdI18n() throws Exception {
 		// Args: name
+		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 1);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
@@ -312,11 +361,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_SCREENSHOT command.
+	 * Handle a CMD_SCREENSHOT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdScreenshot() throws Exception {
 		// Args: addon screenie
+		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 2);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		cmd[2] = ServerUtils.sanitizeName(cmd[2], false);
@@ -328,11 +378,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_VOTE command.
+	 * Handle a CMD_VOTE command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdVote() throws Exception {
 		// Args: name vote
+		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 2);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to vote");
@@ -353,11 +404,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_GET_VOTE command.
+	 * Handle a CMD_GET_VOTE command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdGetVote() throws Exception {
 		// Args: name
+		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty()) {
 			out.println("NOT_LOGGED_IN");  // No exception here.
@@ -374,11 +426,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_COMMENT command.
+	 * Handle a CMD_COMMENT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdComment() throws Exception {
 		// Args: name version lines
+		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 3);
 		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("Log in to comment");
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
@@ -404,21 +457,22 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_EDIT_COMMENT command.
+	 * Handle a CMD_EDIT_COMMENT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdEditComment() throws Exception {
 		// Args: name index lines
-		ServerUtils.checkNrArgs(cmd, protocolVersion < 5 ? 3 : 2);
+		checkCommandVersion(2);
+		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 3 : 2);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("Log in to edit comments");
-		if (protocolVersion < 5) {
+		if (commandVersion < 2) {
 			cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 			ServerUtils.checkAddOnExists(cmd[1]);
 		}
 
 		long commentID;
-		if (protocolVersion >= 5) {
+		if (commandVersion >= 2) {
 			commentID = Integer.valueOf(cmd[1]);
 		} else {
 			ResultSet sql =
@@ -451,8 +505,8 @@ public class HandleCommand {
 				    "Forbidden to edit a comment later than one day after posting");
 		}
 
-		final int nrLines = Integer.valueOf(cmd[protocolVersion < 5 ? 3 : 2]);
-		if (nrLines < 0 || nrLines > 100 || (nrLines == 0 && protocolVersion < 5))
+		final int nrLines = Integer.valueOf(cmd[commandVersion < 2 ? 3 : 2]);
+		if (nrLines < 0 || nrLines > 100 || (nrLines == 0 && commandVersion < 2))
 			throw new ServerUtils.WLProtocolException("Comment too long (" + nrLines + " lines)");
 		String msg = "";
 		for (int i = nrLines; i > 0; --i) {
@@ -476,11 +530,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_SETUP_TX command.
+	 * Handle a CMD_SETUP_TX command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdSetupTx() throws Exception {
 		// Args: name
+		checkCommandVersion(2);
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 1);
@@ -494,10 +549,48 @@ public class HandleCommand {
 				if (!potFile.isFile())
 					throw new ServerUtils.WLProtocolException("Unable to create POT for " + cmd[1]);
 			}
-			Utils.bash("tx", "config", "mapping", "--execute", "-r",
-			           ServerUtils.toTransifexResource(cmd[1]), "--source-lang", "en", "--type",
-			           "PO", "--source-file", potFile.getAbsolutePath(), "--expression",
-			           "po/" + cmd[1] + "/<lang>.po");
+			String resource = ServerUtils.toTransifexResource(cmd[1]);
+			Utils.bash("tx", "config", "mapping", "--execute", "-r", resource, "--source-lang",
+			           "en", "--type", "PO", "--source-file", potFile.getAbsolutePath(),
+			           "--expression", "po/" + cmd[1] + "/<lang>.po");
+
+			if (commandVersion >= 2) {
+				final String priority = ServerUtils.readLine(in);
+				if (!priority.equals("normal") && !priority.equals("high") &&
+				    !priority.equals("urgent")) {
+					throw new ServerUtils.WLProtocolException("Invalid add-on priority " +
+					                                          priority);
+				}
+				final String displayname = ServerUtils.readLine(in);
+				if (displayname.trim().isEmpty())
+					throw new ServerUtils.WLProtocolException("Empty displayname");
+				for (char c : new char[] {'\\', '"'}) {
+					if (displayname.indexOf(c) >= 0) {
+						throw new ServerUtils.WLProtocolException("Displayname '" + displayname +
+						                                          "' may not contain '" + c + "'");
+					}
+				}
+
+				final String categories = ServerUtils.readLine(in);
+				if (!categories.matches("\\[\"[a-zA-Z]+\"(,\"[a-zA-Z]+\")*\\]")) {
+					throw new ServerUtils.WLProtocolException("Not a valid list of categories: " +
+					                                          categories);
+				}
+				ServerUtils.checkEndOfStream(in);
+
+				resource = resource.substring(resource.indexOf('.') + 1);
+				Utils.bash(
+				    "curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
+				    "--request", "PATCH", "-H", "Content-Type: application/vnd.api+json",
+				    "https://rest.api.transifex.com/resources/o:widelands:p:widelands-addons:r:" +
+				        resource,
+				    "-d",
+				    "{\"data\":{\"id\":\"o:widelands:p:widelands-addons:r:" + resource +
+				        "\",\"type\":\"resources\",\"attributes\":{\"name\":\"" + displayname +
+				        "\",\"priority\":\"" + priority + "\",\"categories\":" + categories +
+				        "}}}");
+			}
+
 			TransifexIntegration.TX.push();
 		}
 
@@ -505,11 +598,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_ADMIN_VERIFY command.
+	 * Handle a CMD_ADMIN_VERIFY command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminVerify() throws Exception {
 		// Args: name state
+		checkCommandVersion(1);
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 2);
@@ -526,11 +620,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_ADMIN_QUALITY command.
+	 * Handle a CMD_ADMIN_QUALITY command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminQuality() throws Exception {
 		// Args: name quality
+		checkCommandVersion(1);
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 2);
@@ -547,11 +642,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_ADMIN_SYNC_SAFE command.
+	 * Handle a CMD_ADMIN_SYNC_SAFE command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminSyncSafe() throws Exception {
 		// Args: name state
+		checkCommandVersion(1);
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 2);
@@ -570,11 +666,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_ADMIN_DELETE command.
+	 * Handle a CMD_ADMIN_DELETE command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdAdminDelete() throws Exception {
 		// Args: name lines
+		checkCommandVersion(1);
 		if (username.isEmpty() || !admin)
 			throw new ServerUtils.WLProtocolException("Only admins may do this");
 		ServerUtils.checkNrArgs(cmd, 2);
@@ -648,18 +745,26 @@ public class HandleCommand {
 				if (f.isFile()) f.delete();
 			}
 
-			Utils.bash("tx", "delete", "-r", ServerUtils.toTransifexResource(cmd[1]), "-f");
+			String resource = ServerUtils.toTransifexResource(cmd[1]);
+			resource = resource.substring(resource.indexOf('.') + 1);
+			Utils.bash("tx", "delete", "-r", resource, "-f");
+			Utils.bash(
+			    "curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
+			    "--request", "DELETE",
+			    "https://rest.api.transifex.com/resources/o:widelands:p:widelands-addons:r:" +
+			        resource);
 		});
 
 		out.println("ENDOFSTREAM");
 	}
 
 	/**
-	 * Handle a #CMD_CONTACT command.
+	 * Handle a CMD_CONTACT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdContact() throws Exception {
 		// Args: lines
+		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to use the contact form");
@@ -683,11 +788,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_SUBMIT_SCREENSHOT command.
+	 * Handle a CMD_SUBMIT_SCREENSHOT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdSubmitScreenshot() throws Exception {
 		// Args: name filesize checksum whitespaces description
+		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 5);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
@@ -756,11 +862,12 @@ public class HandleCommand {
 	}
 
 	/**
-	 * Handle a #CMD_SUBMIT command.
+	 * Handle a CMD_SUBMIT command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	private void handleCmdSubmit() throws Exception {
 		// Args: name
+		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
