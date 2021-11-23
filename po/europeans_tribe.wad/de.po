@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-22 03:03+0100\n"
+"POT-Creation-Date: 2021-11-23 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -647,6 +647,9 @@ msgstr "Imkerei"
 #: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:69
 #: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:56
 #: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:60
+#: addons/europeans_tribe.wad/productionsites/terraformers_house_advanced/init.lua:39
+#: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:67
+#: addons/europeans_tribe.wad/productionsites/terraformers_house_normal/init.lua:54
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:47
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:66
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:54
@@ -2240,11 +2243,20 @@ msgctxt "europeans_building"
 msgid "Advanced Terraformer’s House"
 msgstr "Verbessertes Bodenverbessererhaus"
 
-#. TRANSLATORS: Completed/Skipped/Did not start terraforming because ...
-#: addons/europeans_tribe.wad/productionsites/terraformers_house_advanced/init.lua:39
-#: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:67
-#: addons/europeans_tribe.wad/productionsites/terraformers_house_normal/init.lua:54
-msgid "terraforming"
+#. TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
+#: addons/europeans_tribe.wad/productionsites/terraformers_house_advanced/init.lua:50
+#: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:78
+#: addons/europeans_tribe.wad/productionsites/terraformers_house_normal/init.lua:65
+#, fuzzy
+msgid "terraforming land"
+msgstr "Das Verbessern des Bodens"
+
+#. TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
+#: addons/europeans_tribe.wad/productionsites/terraformers_house_advanced/init.lua:61
+#: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:89
+#: addons/europeans_tribe.wad/productionsites/terraformers_house_normal/init.lua:76
+#, fuzzy
+msgid "terraforming coast"
 msgstr "Das Verbessern des Bodens"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -3858,9 +3870,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:777
+#, fuzzy
 msgctxt "europeans_ware"
-msgid "This kitchen tools are used by the cook in a tavern or in an inn."
+msgid "These kitchen tools are used by the cook in a tavern or in an inn."
 msgstr ""
+"Dieser Brotschieber wird vom Bäcker in einer Taverne oder einem Wirtshaus "
+"benutzt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:779

@@ -29,7 +29,7 @@ local r = {
     
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {
-            water = 128,
+            water = 255,
             log = 96,
             reed = 48,
             granite = 32,

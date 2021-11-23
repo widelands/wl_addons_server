@@ -35,7 +35,7 @@ local init = {
         
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {
-            water = 48,
+            water = 128,
             log = 48,
             reed = 32,
             iron = 32,

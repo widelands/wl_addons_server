@@ -42,7 +42,7 @@ init = {
     else
         prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {
-                water = 256,
+                water = 1023,
                 log = 192,
                 granite = 64,
                 reed = 64,
@@ -91,7 +91,7 @@ init = {
     
     if #ports > 0 then
         for i, port in ipairs(ports) do
-            port:set_wares("water", math.ceil(256/ #ports))
+            port:set_wares("water", math.ceil(1023/ #ports))
             port:set_wares("log", math.ceil(192 / #ports))
             port:set_wares("reed", math.ceil(96 / #ports))
             port:set_wares("granite", math.ceil(64 / #ports))

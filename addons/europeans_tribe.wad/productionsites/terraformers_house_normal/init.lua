@@ -50,17 +50,33 @@ descriptions:new_productionsite_type {
 
    programs = {
       main = {
-         -- TRANSLATORS: Completed/Skipped/Did not start terraforming because ...
-         descname = _"terraforming",
+         -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+         descname = _"working",
+         actions = {
+            "callworker=check_terraform_land",
+            "call=terraforming_land",
+            "callworker=check_terraform_coast",
+            "call=terraforming_coast",
+            "return=skipped"
+         }
+      },
+      terraforming_land = {
+         -- TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
+         descname = _"terraforming land",
+         actions = {
+            "return=skipped unless site has water:2",
+            "consume=snack mead",
+            "sleep=duration:15s",
+            "consume=water:2",
+            "callworker=terraform_land",
+         }
+      },
+      terraforming_coast = {
+         -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
+         descname = _"terraforming coast",
          actions = {
             "consume=snack mead",
             "sleep=duration:15s",
-            "callworker=check_terraform_land",
-            "consume=water:2",
-            "callworker=terraform_land",
-            "consume=snack mead",
-            "sleep=duration:15s",
-            "callworker=check_terraform_coast",
             "callworker=terraform_coast"
          }
       }
