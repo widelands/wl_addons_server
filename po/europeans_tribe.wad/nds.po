@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-23 03:03+0100\n"
+"POT-Creation-Date: 2021-11-24 03:04+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -2257,7 +2257,6 @@ msgstr "Grote Landumackeree"
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_advanced/init.lua:50
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:78
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_normal/init.lua:65
-#, fuzzy
 msgid "terraforming land"
 msgstr "dat Land früchtbarer to maken"
 
@@ -2265,9 +2264,8 @@ msgstr "dat Land früchtbarer to maken"
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_advanced/init.lua:61
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_normal/init.lua:76
-#, fuzzy
 msgid "terraforming coast"
-msgstr "dat Land früchtbarer to maken"
+msgstr "de Küst früchtbarer to maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:8
@@ -3916,7 +3914,6 @@ msgstr "'t word vun all de Smeden produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:777
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "These kitchen tools are used by the cook in a tavern or in an inn."
 msgstr "De Kööksch in de Kneipen un Weertshusen bruukt deeses Besteck."
