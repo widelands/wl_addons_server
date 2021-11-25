@@ -3,11 +3,27 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 descriptions:new_productionsite_type {
-   name = "europeans_well_advanced",
+   name = "europeans_well_level_4",
    -- TRANSLATORS: This is a building name used in lists of buildings
-   descname = pgettext("europeans_building", "Advanced Well"),
+   descname = pgettext("europeans_building", "Well Level 4"),
    icon = dirname .. "menu.png",
    size = "small",
+   
+   enhancement = {
+       name = "europeans_well_level_5",
+       enhancement_cost = {
+          planks = 1,
+          brick = 1,
+          grout = 1,
+          marble_column = 1,
+          diamond = 1
+       },
+       enhancement_return_on_dismantle = {
+          granite = 1,
+          marble = 1,
+          diamond = 1
+       },
+   },
 
    animations = {
       idle = {
@@ -42,8 +58,8 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs water",
             "sleep=duration:5s",
-            "animate=working duration:20s",
-            "mine=resource_water radius:4 yield:100% when_empty:99%",
+            "animate=working duration:10s",
+            "mine=resource_water radius:8 yield:90% when_empty:90%",
             "produce=water:3"
          }
       },
@@ -53,8 +69,8 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs water",
             "sleep=duration:60s",
-            "animate=working duration:20s",
-            "mine=resource_water radius:4 yield:100% when_empty:99%",
+            "animate=working duration:10s",
+            "mine=resource_water radius:8 yield:90% when_empty:90%",
             "produce=water"
          }
       }
@@ -65,7 +81,7 @@ descriptions:new_productionsite_type {
       title = _"No Water",
       heading = _"Out of Water",
       message = pgettext("europeans_building", "The carrier working at this well can’t find any water in his well."),
-      productivity_threshold = 1
+      productivity_threshold = 15
    },
 }
 

@@ -2452,14 +2452,35 @@ descriptions:new_tribe {
          }
       },
       {
-         name = "europeans_well_normal",
+         name = "europeans_well_level_1",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Well
             purpose = pgettext("europeans_building", "Draws water out of the deep.")
          }
       },
       {
-         name = "europeans_well_advanced",
+         name = "europeans_well_level_2",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Well
+            purpose = pgettext("europeans_building", "Draws water out of the deep.")
+         }
+      },
+      {
+         name = "europeans_well_level_3",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Well
+            purpose = pgettext("europeans_building", "Draws water out of the deep.")
+         }
+      },
+      {
+         name = "europeans_well_level_4",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans production site: Well
+            purpose = pgettext("europeans_building", "Draws water out of the deep.")
+         }
+      },
+      {
+         name = "europeans_well_level_5",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Well
             purpose = pgettext("europeans_building", "Draws water out of the deep.")

@@ -20,14 +20,14 @@ local init = {
     end
 
     -- forbid all advanced buildings, execpt for advanced quarry and stonemasons house, because of production of brick, grout and quartz for trainingsites
-    player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_hunters_house_advanced", "europeans_fishers_house_advanced", "europeans_well_advanced"}
+    player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_hunters_house_advanced", "europeans_fishers_house_advanced", "europeans_well_level_4", "europeans_well_level_5"}
     player:forbid_buildings{"europeans_farm_level_3", "europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", "europeans_inn_level_2", "europeans_inn_level_1", "europeans_inn_basic"}
     player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_sawmill_advanced", "europeans_smelting_works_advanced", "europeans_weaving_mill_advanced" }
     player:forbid_buildings{"europeans_smithy_level_9", "europeans_smithy_level_8", "europeans_smithy_level_7", "europeans_trainingscamp_level_4", "europeans_battlearena_level_4", "europeans_battlearena_level_3"}    
     player:forbid_buildings{"europeans_scouts_house_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced", "europeans_recruitement_center_advanced"}    
     
     -- forbid all normal buildings, execpt for farm level 1 and weaving mill, because of production of spidercloth for tools and tabard for soldiers
-    player:forbid_buildings{"europeans_lumberjacks_house_normal", "europeans_foresters_house_normal", "europeans_hunters_house_normal", "europeans_fishers_house_normal", "europeans_well_normal"}
+    player:forbid_buildings{"europeans_lumberjacks_house_normal", "europeans_foresters_house_normal", "europeans_hunters_house_normal", "europeans_fishers_house_normal", "europeans_well_level_2", "europeans_well_level_3"}
     player:forbid_buildings{"europeans_farm_level_2", "europeans_brewery_normal", "europeans_mill_normal", "europeans_tavern_level_5", "europeans_tavern_level_4"}
     player:forbid_buildings{"europeans_charcoal_kiln_normal", "europeans_sawmill_normal", "europeans_smelting_works_normal"}
     player:forbid_buildings{"europeans_smithy_level_6", "europeans_smithy_level_5", "europeans_smithy_level_4", "europeans_trainingscamp_level_3", "europeans_trainingscamp_level_2", "europeans_trainingscamp_level_1", "europeans_battlearena_level_2", "europeans_battlearena_level_1"}    
