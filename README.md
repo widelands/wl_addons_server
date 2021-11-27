@@ -50,10 +50,11 @@ The MySQL server needs to have two databases called the *website database* and t
 
 Table                        | Column Names                                              | Column Types                                       | Comment
 ---------------------------- | ----------------------------------------------------------| -------------------------------------------------- | -------
-`auth_user`                  | `id`      <br> `username`       <br> `email`              | `int` <br> `varchar` <br> `varchar`                | 
+`auth_user`                  | `id`  <br> `username` <br> `email` <br> `is_active`       | `int` <br> `varchar` <br> `varchar` <br> `tinyint` | -<br>-<br>-<br> `0` for inactive users
 `wlggz_ggzauth`              | `user_id` <br> `password`       <br> `permissions` <br>   | `int` <br> `varchar` <br> `int` <br>               | -<br>-<br> `7` means normal user,<br>`127` means admin
-`notification_noticetype`    | `id`      <br> `label`                                    | `int` <br> `varchar`                               | 
+`notification_noticetype`    | `id`      <br> `label`                                    | `int` <br> `varchar`                               |
 `notification_noticesetting` | `user_id` <br> `notice_type_id` <br> `medium` <br> `send` | `int` <br> `int`     <br> `int`     <br> `tinyint` | -<br>-<br> `1` means e-mail <br> `0` means disabled and `1` enabled
+`wlprofile_profile`          | `user_id` <br> `deleted`                                  | `int` <br> `tinyint`                               |
 
 #### The Add-Ons Database
 

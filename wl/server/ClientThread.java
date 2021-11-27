@@ -90,13 +90,16 @@ public class ClientThread implements Runnable {
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
-				Long uid = Utils.getUserID(username);
-				if (uid == null)
-					throw new ServerUtils.WLProtocolException("User " + username +
-					                                          " is not registered");
-				userDatabaseID = uid;
+				ResultSet sql = Utils.sql(Utils.Databases.kWebsite, "select id,is_active from auth_user where username=?", username);
+				if (!sql.next()) throw new ServerUtils.WLProtocolException("User " + username + " is not registered");
+				if (sql.getShort("is_active") == 0) throw new ServerUtils.WLProtocolException("Access denied for banned user " + username);
+				userDatabaseID = sql.getLong("id");
 
-				ResultSet sql =
+				sql = Utils.sql(Utils.Databases.kWebsite, "select deleted from wlprofile_profile where user_id=?", userDatabaseID);
+				if (!sql.next()) throw new ServerUtils.WLProtocolException("User " + username + " does not have a valid profile");
+				if (sql.getShort("deleted") != 0) throw new ServerUtils.WLProtocolException("Access denied for deleted user " + username);
+
+				sql =
 				    Utils.sql(Utils.Databases.kWebsite,
 				              "select permissions,password from wlggz_ggzauth where user_id=?",
 				              userDatabaseID);
