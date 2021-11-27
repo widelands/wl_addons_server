@@ -439,7 +439,9 @@ public class HandleCommand {
 		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 3);
 		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("Log in to comment");
-		if (blackWhiteList.contains("deny_comment")) throw new ServerUtils.WLProtocolException("You have been forbidden from writing comments");
+		if (blackWhiteList.contains("deny_comment"))
+			throw new ServerUtils.WLProtocolException(
+			    "You have been forbidden from writing comments");
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		int nrLines = Integer.valueOf(cmd[3]);
@@ -472,7 +474,9 @@ public class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 3 : 2);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("Log in to edit comments");
-		if (blackWhiteList.contains("deny_comment")) throw new ServerUtils.WLProtocolException("You have been forbidden from editing comments");
+		if (blackWhiteList.contains("deny_comment"))
+			throw new ServerUtils.WLProtocolException(
+			    "You have been forbidden from editing comments");
 		if (commandVersion < 2) {
 			cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 			ServerUtils.checkAddOnExists(cmd[1]);
@@ -813,7 +817,8 @@ public class HandleCommand {
 			throw new ServerUtils.WLProtocolException(
 			    "You can not submit screenshots for another person's add-on");
 		if (blackWhiteList.contains("deny_upload_screenshot"))
-			throw new ServerUtils.WLProtocolException("You have been forbidden from submitting screenshots");
+			throw new ServerUtils.WLProtocolException(
+			    "You have been forbidden from submitting screenshots");
 		long size = Long.valueOf(cmd[2]);
 		if (size > 4 * 1000 * 1000)
 			throw new ServerUtils.WLProtocolException(
@@ -884,7 +889,8 @@ public class HandleCommand {
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
 		if (blackWhiteList.contains("deny_upload_addon"))
-			throw new ServerUtils.WLProtocolException("You have been forbidden from submitting add-ons");
+			throw new ServerUtils.WLProtocolException(
+			    "You have been forbidden from submitting add-ons");
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		// No need here to check if the add-on exists.
 
