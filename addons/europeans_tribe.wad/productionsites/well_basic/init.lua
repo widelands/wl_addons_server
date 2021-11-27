@@ -10,14 +10,14 @@ descriptions:new_productionsite_type {
    size = "small",
    
    enhancement = {
-        name = "europeans_well_normal",
+        name = "europeans_well_level_1",
         enhancement_cost = {
-          blackwood = 1,
-          cloth = 1,
-          quartz = 1
+          log = 1,
+          reed = 1,
+          granite = 1
         },
         enhancement_return_on_dismantle = {
-          quartz = 1
+          granite = 1
         },
    },
 
@@ -71,8 +71,8 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs water or workers need experience",
             "sleep=duration:5s",
-            "animate=working duration:30s",
-            "mine=resource_water radius:1 yield:50% when_empty:50%",
+            "animate=working duration:20s",
+            "mine=resource_water radius:2 yield:50% when_empty:50%",
             "produce=water:2"
          }
       },
@@ -82,8 +82,8 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs water",
             "sleep=duration:60s",
-            "animate=working duration:30s",
-            "mine=resource_water radius:1 yield:50% when_empty:50%",
+            "animate=working duration:20s",
+            "mine=resource_water radius:2 yield:50% when_empty:50%",
             "produce=water"
          }
       }
@@ -94,7 +94,7 @@ descriptions:new_productionsite_type {
       title = _"No Water",
       heading = _"Out of Water",
       message = pgettext("europeans_building", "The carrier working at this well can’t find any water in his well."),
-      productivity_threshold = 33
+      productivity_threshold = 55
    },
 }
 

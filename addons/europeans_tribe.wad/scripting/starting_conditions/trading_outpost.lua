@@ -22,7 +22,7 @@ init = {
 
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {
-                water = 256,
+                water = 1023,
                 log = 192,
                 granite = 64,
                 reed = 64,
@@ -51,6 +51,7 @@ init = {
                 fishing_net = 2,
                 fishing_rod = 2,
                 hook_pole = 2,
+                kitchen_tools = 2,
                 hunting_bow = 2,
                 hunting_spear = 2,
                 milking_tongs = 2

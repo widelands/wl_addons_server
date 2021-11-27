@@ -62,7 +62,7 @@ public class TransifexIntegration {
 	 */
 	public synchronized void pull() throws Exception {
 		Utils.log("Pulling translations from Transifex...");
-		Utils.bashOutput("tx", "pull", "-f", "-a");
+		Utils.bash("tx", "pull", "-f", "-a");
 	}
 
 	/**
@@ -71,7 +71,7 @@ public class TransifexIntegration {
 	 */
 	public synchronized void push() throws Exception {
 		Utils.log("Pushing POT files to Transifex...");
-		Utils.bashOutput("tx", "push", "-s");
+		Utils.bash("tx", "push", "-s");
 	}
 
 	/**

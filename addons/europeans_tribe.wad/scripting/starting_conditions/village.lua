@@ -22,7 +22,7 @@ init = {
 
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {
-            water = 256,
+            water = 511,
             log = 192,
             granite = 64,
             reed = 64,
@@ -80,9 +80,9 @@ init = {
     })
     place_building_in_region(player, "europeans_farm_level_1", sf:region(16), {
     })
-    place_building_in_region(player, "europeans_well_normal", sf:region(16), {
+    place_building_in_region(player, "europeans_well_basic", sf:region(16), {
     })
-    place_building_in_region(player, "europeans_well_normal", sf:region(16), {
+    place_building_in_region(player, "europeans_well_basic", sf:region(16), {
     })
 end
 }

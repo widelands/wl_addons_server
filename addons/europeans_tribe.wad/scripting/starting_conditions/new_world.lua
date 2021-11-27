@@ -45,7 +45,7 @@ init = {
     else
         prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {
-                water = 256,
+                water = 511,
                 log = 192,
                 granite = 64,
                 reed = 64,
@@ -73,6 +73,7 @@ init = {
                 fishing_net = 2,
                 fishing_rod = 2,
                 hook_pole = 2,
+                kitchen_tools = 2,
                 hunting_bow = 2,
                 hunting_spear = 2,
                 milking_tongs = 2,
@@ -92,7 +93,7 @@ init = {
     
     if #ports > 0 then
         for i, port in ipairs(ports) do
-            port:set_wares("water", math.ceil(256/ #ports))
+            port:set_wares("water", math.ceil(511/ #ports))
             port:set_wares("log", math.ceil(192 / #ports))
             port:set_wares("reed", math.ceil(96 / #ports))
             port:set_wares("granite", math.ceil(64 / #ports))
@@ -121,6 +122,7 @@ init = {
             port:set_wares("fishing_net", math.ceil(2 / #ports))
             port:set_wares("fishing_rod", math.ceil(2 / #ports))
             port:set_wares("hook_pole", math.ceil(2 / #ports))
+            port:set_wares("kitchen_tools", math.ceil(2 / #ports))
             port:set_wares("hunting_bow", math.ceil(2 / #ports))
             port:set_wares("hunting_spear", math.ceil(2 / #ports))
             port:set_wares("milking_tongs", math.ceil(2 / #ports))

@@ -72,11 +72,7 @@ Table          | Column Names                                              | Col
 
 To verify a new add-on (or an existing one after an update), read the code carefully and make sure it does not contain malicious code. Also check for potentially desync-prone code pieces. Then, in the Widelands add-on manager, select the add-on in the Browse tab, go to the Comments & Votes window, and use the admin interface to set the add-on’s security, sync-safety, and quality properties as appropriate.
 
-If the add-on was not up for translation on Transifex yet, a translations **maintainer** needs to follow these steps afterwards to ensure that it can be translated:
-- Enable Transifex integration for the add-on via the admin interface.
-- Head over to https://www.transifex.com/widelands/widelands-addons/content/ and wait until the new resource(s) is/are available.
-- Edit each new resource’s name to match with the add-on’s name by clicking on the resource and choosing ··· → Settings. Only change the display name – **never, ever** modify the resource’s slug!
-- Finally, set the Priority of all new resources. Add-ons officially provided by the Widelands Development Team get highest priority. Add-ons which have not been verified yet should not appear on Transifex in the first place, but if they do, they get the lowest priority. All other add-ons get medium priority. Also add appropriate category tags to the resources: Every resource gets the add-on’s category as a tag. The few official add-ons also get the "Official" tag and perhaps other tags as appropriate (e.g. "Tournament" for add-ons used in an official tournament).
+If the add-on was not up for translation on Transifex yet, additionally enable Transifex integration for the add-on via the admin interface. You will need to set the Display Name (which should match the add-on’s name) and the Priority of the new resource. Add-ons officially provided by the Widelands Development Team get highest priority. Add-ons which have not been verified yet should not appear on Transifex in the first place, but if they do, they get the lowest priority. All other add-ons get medium priority. Also add appropriate category tags to the resources: Every resource gets the add-on’s category as a tag. The few official add-ons also get the "Official" tag and perhaps other tags as appropriate (e.g. "Tournament" for add-ons used in an official tournament).
 
 ### Maintainer E-Mail Subscriptions
 

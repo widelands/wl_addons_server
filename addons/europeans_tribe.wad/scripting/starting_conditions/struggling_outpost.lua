@@ -21,7 +21,7 @@ local r = {
     end
     
     -- forbid all advanced buildings, execpt for quarry and stonemasons house
-    player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_hunters_house_advanced", "europeans_fishers_house_advanced", "europeans_well_advanced"}
+    player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_hunters_house_advanced", "europeans_fishers_house_advanced", "europeans_well_level_4", "europeans_well_level_5"}
     player:forbid_buildings{"europeans_farm_level_3", "europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", "europeans_inn_level_2", "europeans_inn_level_1", "europeans_inn_basic"}
     player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_sawmill_advanced", "europeans_smelting_works_advanced", "europeans_weaving_mill_advanced" }
     player:forbid_buildings{"europeans_smithy_level_9", "europeans_smithy_level_8", "europeans_smithy_level_7", "europeans_trainingscamp_level_4", "europeans_battlearena_level_4", "europeans_battlearena_level_3"}    
@@ -29,7 +29,7 @@ local r = {
     
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {
-            water = 128,
+            water = 255,
             log = 96,
             reed = 48,
             granite = 32,

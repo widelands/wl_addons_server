@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-10 03:03+0100\n"
+"POT-Creation-Date: 2021-11-15 03:03+0100\n"
 "PO-Revision-Date: 2021-10-06 10:02+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/widelands/teams/35159/"
 "es/)\n"
@@ -51,11 +51,11 @@ msgid ""
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:210
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:217
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:219
 msgid "Shovels"
 msgstr ""
 
-#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:217
+#: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/init.lua:219
 msgid ""
 "Four more shovels for removing the swamps have been collected at the "
 "warehouse."
@@ -66,7 +66,7 @@ msgid "Defeat Törver"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:9
-msgid "Defeat the Armies of Törver."
+msgid "Defeat the Armies of Törver"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:10
@@ -78,12 +78,12 @@ msgid "Build a port"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:18
-msgid "Build a Port in the North."
+msgid "Build a Port in the North"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:19
 msgid ""
-"We should build a port in Törvers former land to be ready to send an "
+"We should build a port in Törver’s former land to be ready to send an "
 "expedition as soon as we found out how to build ships."
 msgstr ""
 
@@ -92,7 +92,7 @@ msgid "Conquer pirate sentry"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:27
-msgid "Conquer the Pirate Sentry."
+msgid "Conquer the Pirate Sentry"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:28
@@ -106,14 +106,14 @@ msgid "Build warehouse"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:36
-msgid "Build a Warehouse near the Pirate Sentry."
+msgid "Build a Warehouse near the Pirate Sentry"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:37
 msgid ""
 "Build a warehouse close to the conquered pirate sentry near the brook. We "
-"will need it as a basis for further exploitation. Furthermore we could use "
-"it to store some gold that we will mine from the surrounding hills."
+"will need it as a basis for further exploration. Furthermore we could use it "
+"to store some gold that we will mine from the surrounding hills."
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:43
@@ -123,7 +123,7 @@ msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:45
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:54
-msgid "Bring Four Shovels to the new Warehouse."
+msgid "Bring Four Shovels to the new Warehouse"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:46
@@ -155,7 +155,7 @@ msgid "Free our scout from the pirates"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:72
-msgid "Conquer the Stronghold on the Island."
+msgid "Conquer the Stronghold on the Island"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:73
@@ -167,7 +167,7 @@ msgid "Defeat Hjalmar"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:81
-msgid "Defeat the Armies of Hjalmar."
+msgid "Defeat the Armies of Hjalmar"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:82
@@ -181,7 +181,7 @@ msgid "Defeat Runar"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:90
-msgid "Defeat the Armies of Runar."
+msgid "Defeat the Armies of Runar"
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:91
@@ -348,14 +348,14 @@ msgstr ""
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:71
 msgid ""
 "Sire, we have found 25 units of gold ore inside the pirate sentry. They may "
-"have been looted from the gold digger’s huts nearby. This gold ore will be "
+"have been looted from the gold diggers’ huts nearby. This gold ore will be "
 "transported to our headquarters."
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:73
 msgid ""
 "With our successful expansion into this area we should consider building a "
-"warehouse to the direct southwest of the sentry in order to further exploit "
+"warehouse to the direct southwest of the sentry in order to further explore "
 "this area. There is a good building spot only three steps away from the "
 "sentry."
 msgstr ""
@@ -394,7 +394,7 @@ msgstr ""
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:101
 msgid ""
 "Sire, we have defeated the pirates. They have hidden some gold in their last "
-"bastion which is now transferred to our headquarters."
+"bastion which is now being transferred to our headquarters."
 msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:106

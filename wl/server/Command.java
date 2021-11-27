@@ -25,9 +25,9 @@ package wl.server;
  * <p>
  * After the first contact, the client must send the following info:
  * <ul>
- *  <li> Protocol version, <code>\n</code>
+ *  <li> Protocol version (PV), <code>\n</code>
  *  <li> Language name (e.g. "nds"), <code>\n</code>
- *  <li> {@literal Protocol version >= 5}: Widelands version (e.g. "1.1~git34567"), <code>\n</code>
+ *  <li> PV 5+: Widelands version (e.g. "1.1~git34567"), <code>\n</code>
  *  <li> Username (or "" for no user), <code>\n</code>
  *  <li> <code>ENDOFSTREAM\n</code>
  * </ul>
@@ -45,10 +45,18 @@ package wl.server;
  * </ul></ul>
  *
  * <p>
- * The currently supported protocol versions are 4 to 5. All documentation here refers to these
+ * The currently supported protocol versions are 4 to 6. All documentation here refers to these
  * versions. Note that compatibility for <strong>all</strong> versions <strong>ever introduced</strong> needs to be maintained
  * <strong>indefinitely</strong>. The first supported version is 4; the version numbers 1-3 are used by the legacy
  * "GitHub Repo List" format.
+ *
+ * <p>
+ * After the initial contact, the client may send any number of commands before closing the connection.
+ * A command consists of one line with the command name and the command's arguments separated by whitespaces,
+ * terminated by \n. The command line is followed by any number of argument lines if defined in the command's
+ * specification. In PV 6 and newer, the command name is prefixed by the command version (CV)
+ * followed by a colon; in older PVs the default command version as stated for each command
+ * individually is assumed.
  *
  * <p>
  * All arguments to commands are whitespace-terminated strings.
@@ -66,17 +74,17 @@ package wl.server;
  *   prints out server statistics in the following format:
  *   <ul>
  *   <li> Time in [1: milliseconds | 2+: hours] since the server was started, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Average client lifetime in seconds, <code>\n</code>
- *   <li> Protocol version 1:
+ *   <li> PV 2+: Average client lifetime in seconds, <code>\n</code>
+ *   <li> PV 1:
  *       <ul><li> Number of current registered users, <code>\n</code>
  *       <li> Number of current unregistered users, <code>\n</code>
  *       </ul>
- *   <li> Protocol version 2:
+ *   <li> PV 2:
  *       <ul><li> Counter of registered users, <code>\n</code>
  *       <li> Counter of unregistered users, <code>\n</code>
  *       </ul>
  *   <li> Counter of unique registered users, <code>\n</code>
- *   <li> {@literal Protocol version <= 1}: Counter of successful connection attempts, <code>\n</code>
+ *   <li> PV 1: Counter of successful connection attempts, <code>\n</code>
  *   <li> Counter of unsuccessful connection attempts, <code>\n</code>
  *   <li> Counter of <code>CMD_LIST              </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_INFO              </code> requests, <code>\n</code>
@@ -91,10 +99,10 @@ package wl.server;
  *   <li> Counter of <code>CMD_SUBMIT_SCREENSHOT </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_CONTACT           </code> requests, <code>\n</code>
  *   <li> Counter of <code>CMD_SETUP_TX          </code> requests, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_DELETE    </code> requests, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_VERIFY    </code> requests, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_QUALITY   </code> requests, <code>\n</code>
- *   <li> {@literal Protocol version >= 2}: Counter of <code>CMD_ADMIN_SYNC_SAFE </code> requests, <code>\n</code>
+ *   <li> PV 2+: Counter of <code>CMD_ADMIN_DELETE    </code> requests, <code>\n</code>
+ *   <li> PV 2+: Counter of <code>CMD_ADMIN_VERIFY    </code> requests, <code>\n</code>
+ *   <li> PV 2+: Counter of <code>CMD_ADMIN_QUALITY   </code> requests, <code>\n</code>
+ *   <li> PV 2+: Counter of <code>CMD_ADMIN_SYNC_SAFE </code> requests, <code>\n</code>
  *   <li> Counter of unsuccessful commands, <code>\n</code>
  *   <li> <code>ENDOFSTREAM\n</code>
  *   </ul>
@@ -106,15 +114,28 @@ package wl.server;
  */
 public enum Command {
 	/**
-	 * <code>CMD_LIST [5+: all]</code>
+	 * <code>CMD_LIST [2+: control]</code>
+	 *
+	 * <p>
+	 * Supported command versions: 1-2 (default: 4/1, 5/2)
 	 *
 	 * <p>
 	 * List all available add-on names.
 	 *
-	 * <p>
-	 * In version 4, no arguments are accepted.
-	 * In version 5, a boolean argument is required to indicate whether to list
-	 * all add-ons or only add-ons compatible with the Widelands version.
+	 * <p> Parameters:
+	 * <ul>
+	 * <li> CV 1: No arguments.
+	 * <li> CV 2+: A "control" argument is required to finetune the behaviour.
+	 * Supported values (case-insensitive) are:
+	 * <ul>
+	 * <li> true – List all add-ons.
+	 * <li> false – List add-ons compatible with the Widelands version.
+	 * <li> showall – List all add-ons, and append the response for a
+	 *                CMD_INFO for each add-on to the reply.
+	 * <li> showcompatible – List add-ons compatible with the Widelands version, and append
+	 *                       the response for a CMD_INFO for each add-on to the reply.
+	 * </ul>
+	 * </ul>
 	 *
 	 * <p>
 	 * Returns:
@@ -128,6 +149,9 @@ public enum Command {
 
 	/**
 	 * <code>CMD_INFO name</code>
+	 *
+	 * <p>
+	 * Supported command versions: 1-2 (default: 4/1, 5/2)
 	 *
 	 * <p>
 	 * Returns detailed info about a specific addon.
@@ -146,8 +170,8 @@ public enum Command {
 	 *  <li> localized description, <code>\n</code>
 	 *  <li> unlocalized author, <code>\n</code>
 	 *  <li> localized author, <code>\n</code>
-	 *  <li> {@literal Protocol version <= 4}: name of the main uploader, <code>\n</code>
-	 *  <li> {@literal Protocol version >= 5}: comma-separated list of uploaders, <code>\n</code>
+	 *  <li> CV 1: name of the main uploader, <code>\n</code>
+	 *  <li> CV 2+: comma-separated list of uploaders, <code>\n</code>
 	 *  <li> add-on version string, <code>\n</code>
 	 *  <li> i18n version string, <code>\n</code>
 	 *  <li> category string, <code>\n</code>
@@ -166,7 +190,7 @@ public enum Command {
 	 *  <li> number of comments, <code>\n</code>
 	 *  <li> for each comment:
 	 * <ul>
-	 *      <li> {@literal Protocol version >= 5}: Comment ID, <code>\n</code>
+	 *      <li> CV 2+: Comment ID, <code>\n</code>
 	 *      <li> name, <code>\n</code>,
 	 *      <li> timestamp, <code>\n</code>,
 	 *      <li> last editor name (may be empty), <code>\n</code>,
@@ -176,7 +200,7 @@ public enum Command {
 	 *      <li> message, <code>\n</code>
 	 * </ul>
 	 *  <li> "verified" or "unchecked", <code>\n</code>
-	 *  <li> {@literal Protocol version >= 5}: Code quality rating (1-3) <code>\n</code>
+	 *  <li> CV 2+: Code quality rating (1-3) <code>\n</code>
 	 *  <li> icon checksum (0 for no icon), <code>\n</code>
 	 *  <li> icon filesize (0 for no icon), <code>\n</code>
 	 *  <li> icon file as a byte stream
@@ -187,6 +211,9 @@ public enum Command {
 
 	/**
 	 * <code>CMD_DOWNLOAD name</code>
+	 *
+	 * <p>
+	 * Supported command versions: 1 (default: 1)
 	 *
 	 * <p>
 	 * Download an add-on as a byte stream.
@@ -217,6 +244,9 @@ public enum Command {
 	 * <code>CMD_I18N name</code>
 	 *
 	 * <p>
+	 * Supported command versions: 1 (default: 1)
+	 *
+	 * <p>
 	 * Download an add-on's translations as a byte stream.
 	 *
 	 * <p> Parameters:
@@ -242,6 +272,9 @@ public enum Command {
 	 * <code>CMD_SCREENSHOT addon screenshot</code>
 	 *
 	 * <p>
+	 * Supported command versions: 1 (default: 1)
+	 *
+	 * <p>
 	 * Download a screenshot.
 	 *
 	 * <p> Parameters:
@@ -265,6 +298,9 @@ public enum Command {
 	 * <code>CMD_VOTE name vote</code>
 	 *
 	 * <p>
+	 * Supported command versions: 1 (default: 1)
+	 *
+	 * <p>
 	 * Vote on an add-on.
 	 *
 	 * <p> Parameters:
@@ -280,6 +316,9 @@ public enum Command {
 
 	/**
 	 * <code>CMD_GET_VOTE name</code>
+	 *
+	 * <p>
+	 * Supported command versions: 1 (default: 1)
 	 *
 	 * <p>
 	 * How the user voted an add-on.
@@ -298,6 +337,9 @@ public enum Command {
 	 * <code>CMD_COMMENT name version lines</code>
 	 *
 	 * <p>
+	 * Supported command versions: 1 (default: 1)
+	 *
+	 * <p>
 	 * Comment on an add-on.
 	 *
 	 * <p> Parameters:
@@ -314,20 +356,23 @@ public enum Command {
 	CMD_COMMENT,
 
 	/**
-	 * <code>CMD_EDIT_COMMENT [4: name] index lines</code>
+	 * <code>CMD_EDIT_COMMENT [CV 1: name] index lines</code>
+	 *
+	 * <p>
+	 * Supported command versions: 1-2 (default: 4/1, 5/2)
 	 *
 	 * <p>
 	 * Edit an existing comment.
 	 *
 	 * <p> Parameters:
 	 * <ul>
-	 * <li> Protocol version 4:
+	 * <li> CV 1:
 	 * <ol>
 	 *     <li> Add-on name
 	 *     <li> Index of the comment.
 	 *     <li> Number of lines in the message
 	 * </ol>
-	 * <li> Protocol version 5:
+	 * <li> CV 2+:
 	 * <ol>
 	 *     <li> Database ID of the comment.
 	 *     <li> Number of lines in the message
@@ -336,7 +381,7 @@ public enum Command {
 	 * Then, on separate lines, the actual message; then <code>ENDOFSTREAM\n</code>.
 	 *
 	 * <p>
-	 * In {@literal protocol version >= 5}, 0 lines denote deletion of the comment.
+	 * In CV 2+, 0 lines denote deletion of the comment.
 	 *
 	 * <p>
 	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
@@ -345,6 +390,9 @@ public enum Command {
 
 	/**
 	 * <code>CMD_SUBMIT name</code>
+	 *
+	 * <p>
+	 * Supported command versions: 1 (default: 1)
 	 *
 	 * <p>
 	 * Upload an add-on.
@@ -363,6 +411,9 @@ public enum Command {
 
 	/**
 	 * <code>CMD_SUBMIT_SCREENSHOT name filesize checksum whitespaces description</code>
+	 *
+	 * <p>
+	 * Supported command versions: 1 (default: 1)
 	 *
 	 * <p>
 	 * Upload a screenshot.
@@ -387,6 +438,9 @@ public enum Command {
 	 * <code>CMD_CONTACT lines</code>
 	 *
 	 * <p>
+	 * Supported command versions: 1 (default: 1)
+	 *
+	 * <p>
 	 * Send an enquiry to the Widelands Development Team.
 	 *
 	 * <p> Parameters:
@@ -404,12 +458,22 @@ public enum Command {
 	 * <code>CMD_SETUP_TX name</code>
 	 *
 	 * <p>
+	 * Supported command versions: 1-2 (default: 1)
+	 *
+	 * <p>
 	 * Set up transifex integration for an add-on. Only admins may do this.
 	 *
 	 * <p> Parameters:
 	 * <ol>
 	 * <li> Add-on name
 	 * </ol>
+	 * In CV 2+, then on separate lines:
+	 * <ul>
+	 * <li> Priority (one of "normal", "high", "urgent")
+	 * <li> Display Name
+	 * <li> Categories (a JSON list of 1 or more strings)
+	 * <li> ENDOFSTREAM
+	 * </ul>
 	 *
 	 * <p>
 	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
@@ -420,7 +484,10 @@ public enum Command {
 	 * <code>CMD_ADMIN_DELETE name lines</code>
 	 *
 	 * <p>
-	 * Added in protocol version 5.
+	 * Supported command versions: 1 (default: 1)
+	 *
+	 * <p>
+	 * Added in PV 5.
 	 * Irrevocably delete an add-on and all its metadata and translations from
 	 * the server and from Transifex. Only admins may do this.
 	 *
@@ -441,7 +508,10 @@ public enum Command {
 	 * <code>CMD_ADMIN_VERIFY name verify</code>
 	 *
 	 * <p>
-	 * Added in protocol version 5.
+	 * Supported command versions: 1 (default: 1)
+	 *
+	 * <p>
+	 * Added in PV 5.
 	 * Change the verification status of an add-on. Only admins may do this.
 	 *
 	 * <p> Parameters:
@@ -459,7 +529,10 @@ public enum Command {
 	 * <code>CMD_ADMIN_QUALITY name quality</code>
 	 *
 	 * <p>
-	 * Added in protocol version 5.
+	 * Supported command versions: 1 (default: 1)
+	 *
+	 * <p>
+	 * Added in PV 5.
 	 * Change the quality rating of an add-on. Only admins may do this.
 	 *
 	 * <p> Parameters:
@@ -477,7 +550,10 @@ public enum Command {
 	 * <code>CMD_ADMIN_SYNC_SAFE name state</code>
 	 *
 	 * <p>
-	 * Added in protocol version 5.
+	 * Supported command versions: 1 (default: 1)
+	 *
+	 * <p>
+	 * Added in PV 5.
 	 * Change the sync safety status of an add-on. Only admins may do this.
 	 *
 	 * <p> Parameters:

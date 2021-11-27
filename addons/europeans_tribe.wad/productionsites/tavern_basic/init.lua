@@ -53,8 +53,7 @@ descriptions:new_productionsite_type {
    },
 
    working_positions = {
-      europeans_baker_basic = 1,
-      europeans_smoker_basic = 1
+      europeans_baker_basic = 1
    },
 
    inputs = {

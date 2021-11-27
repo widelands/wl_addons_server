@@ -23,8 +23,8 @@ descriptions:new_productionsite_type {
    aihints = {},
 
    working_positions = {
-      europeans_baker_advanced = 2,
-      europeans_smoker_advanced = 2
+      europeans_baker_normal = 1,
+      europeans_baker_advanced = 1
    },
 
 
