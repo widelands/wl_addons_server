@@ -554,7 +554,9 @@ public class HandleCommand {
 			           "en", "--type", "PO", "--source-file", potFile.getAbsolutePath(),
 			           "--expression", "po/" + cmd[1] + "/<lang>.po");
 
-			if (commandVersion >= 2) {
+			if (commandVersion < 2) {
+				TransifexIntegration.TX.push();
+			} else {
 				final String priority = ServerUtils.readLine(in);
 				if (!priority.equals("normal") && !priority.equals("high") &&
 				    !priority.equals("urgent")) {
@@ -578,6 +580,9 @@ public class HandleCommand {
 				}
 				ServerUtils.checkEndOfStream(in);
 
+				// We need to ensure that the resource exists before editing its properties
+				TransifexIntegration.TX.push();
+
 				resource = resource.substring(resource.indexOf('.') + 1);
 				Utils.bash(
 				    "curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
@@ -590,8 +595,6 @@ public class HandleCommand {
 				        "\",\"priority\":\"" + priority + "\",\"categories\":" + categories +
 				        "}}}");
 			}
-
-			TransifexIntegration.TX.push();
 		}
 
 		out.println("ENDOFSTREAM");
