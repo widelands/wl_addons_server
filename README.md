@@ -66,6 +66,7 @@ Table          | Column Names                                              | Col
 `uservotes`    | `addon` <br> `user` <br> `vote`                           | `int` <br> `int` <br> `int`                        |
 `usercomments` | `id` <br> `addon` <br> `user` <br> `timestamp` <br> `editor` <br> `edit_timestamp` <br> `version` <br> `message` | `int` <br> `int` <br> `int` <br> `bigint` <br> `int` <br> `bigint` <br> `varchar` <br> `varchar` | Unique comment ID<br>-<br>-<br>-<br> May be `NULL` <br> May be `NULL` <br>-<br>-
 `notifyadmins` | `email` <br> `level` | `varchar` <br> `int` | -<br> `0` means disabled, `1` critical only, `2` all notices
+`blackwhitelist` | `id` <br> `action` <br> `value`                         | `int` <br> `varchar` <br> `tinyint`                |
 
 ## Developers’ Corner
 
