@@ -962,18 +962,24 @@ public class HandleCommand {
 				File addOnMain = new File(addOnDir, "addon");
 
 				Utils.Profile newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
-				if (newProfile.get("min_wl_version") != null && !newProfile.get("min_wl_version").value.isEmpty()) {
+				if (newProfile.get("min_wl_version") != null &&
+				    !newProfile.get("min_wl_version").value.isEmpty()) {
 					try {
 						ServerUtils.string_to_version(newProfile.get("min_wl_version").value);
 					} catch (Exception e) {
-						throw new ServerUtils.WLProtocolException("Malformed min_wl_version string: " + newProfile.get("min_wl_version").value);
+						throw new ServerUtils.WLProtocolException(
+						    "Malformed min_wl_version string: " +
+						    newProfile.get("min_wl_version").value);
 					}
 				}
-				if (newProfile.get("max_wl_version") != null && !newProfile.get("max_wl_version").value.isEmpty()) {
+				if (newProfile.get("max_wl_version") != null &&
+				    !newProfile.get("max_wl_version").value.isEmpty()) {
 					try {
 						ServerUtils.string_to_version(newProfile.get("max_wl_version").value);
 					} catch (Exception e) {
-						throw new ServerUtils.WLProtocolException("Malformed max_wl_version string: " + newProfile.get("max_wl_version").value);
+						throw new ServerUtils.WLProtocolException(
+						    "Malformed max_wl_version string: " +
+						    newProfile.get("max_wl_version").value);
 					}
 				}
 
