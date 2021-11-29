@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-28 03:04+0100\n"
+"POT-Creation-Date: 2021-11-29 03:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,71 +17,75 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: addons/perma-resi.wad/addon:6
+#: addons/perma-resi.wad/addon:2
+msgid "Permanent Resource Indicators"
+msgstr ""
+
+#: addons/perma-resi.wad/addon:3
 msgid ""
 "Keep resource indicators until a mine starts to work in the area. Mines will "
 "gradually, but randomly remove matching indicators."
 msgstr ""
 
-#: addons/perma-resi.wad/addon:8
-msgid "Permanent Resource Indicators"
+#: addons/perma-resi.wad/postload.lua:22
+msgid "removing geologist markers"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:22
+#: addons/perma-resi.wad/postload.lua:36
 msgid "working"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:41 addons/perma-resi.wad/postload.lua:110
-#: addons/perma-resi.wad/postload.lua:169
-#: addons/perma-resi.wad/postload.lua:181
-#: addons/perma-resi.wad/postload.lua:190
-#: addons/perma-resi.wad/postload.lua:270
-#: addons/perma-resi.wad/postload.lua:279
-#: addons/perma-resi.wad/postload.lua:372
-#: addons/perma-resi.wad/postload.lua:384
+#: addons/perma-resi.wad/postload.lua:55 addons/perma-resi.wad/postload.lua:128
+#: addons/perma-resi.wad/postload.lua:192
+#: addons/perma-resi.wad/postload.lua:205
+#: addons/perma-resi.wad/postload.lua:215
+#: addons/perma-resi.wad/postload.lua:302
+#: addons/perma-resi.wad/postload.lua:312
+#: addons/perma-resi.wad/postload.lua:412
+#: addons/perma-resi.wad/postload.lua:425
 msgid "mining gold"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:54 addons/perma-resi.wad/postload.lua:81
-#: addons/perma-resi.wad/postload.lua:201
-#: addons/perma-resi.wad/postload.lua:308
-#: addons/perma-resi.wad/postload.lua:326
-#: addons/perma-resi.wad/postload.lua:413
-#: addons/perma-resi.wad/postload.lua:422
+#: addons/perma-resi.wad/postload.lua:69 addons/perma-resi.wad/postload.lua:98
+#: addons/perma-resi.wad/postload.lua:227
+#: addons/perma-resi.wad/postload.lua:344
+#: addons/perma-resi.wad/postload.lua:363
+#: addons/perma-resi.wad/postload.lua:457
+#: addons/perma-resi.wad/postload.lua:467
 msgid "mining granite"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:70 addons/perma-resi.wad/postload.lua:140
-#: addons/perma-resi.wad/postload.lua:149
-#: addons/perma-resi.wad/postload.lua:158
-#: addons/perma-resi.wad/postload.lua:251
-#: addons/perma-resi.wad/postload.lua:260
-#: addons/perma-resi.wad/postload.lua:353
-#: addons/perma-resi.wad/postload.lua:362
+#: addons/perma-resi.wad/postload.lua:86 addons/perma-resi.wad/postload.lua:160
+#: addons/perma-resi.wad/postload.lua:170
+#: addons/perma-resi.wad/postload.lua:180
+#: addons/perma-resi.wad/postload.lua:281
+#: addons/perma-resi.wad/postload.lua:291
+#: addons/perma-resi.wad/postload.lua:391
+#: addons/perma-resi.wad/postload.lua:401
 msgid "mining coal"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:90
+#: addons/perma-resi.wad/postload.lua:107
 msgid "mining quartz"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:99
+#: addons/perma-resi.wad/postload.lua:116
 msgid "mining diamonds"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:120
-#: addons/perma-resi.wad/postload.lua:212
-#: addons/perma-resi.wad/postload.lua:224
-#: addons/perma-resi.wad/postload.lua:233
-#: addons/perma-resi.wad/postload.lua:289
-#: addons/perma-resi.wad/postload.lua:298
-#: addons/perma-resi.wad/postload.lua:394
-#: addons/perma-resi.wad/postload.lua:403
+#: addons/perma-resi.wad/postload.lua:139
+#: addons/perma-resi.wad/postload.lua:239
+#: addons/perma-resi.wad/postload.lua:252
+#: addons/perma-resi.wad/postload.lua:262
+#: addons/perma-resi.wad/postload.lua:323
+#: addons/perma-resi.wad/postload.lua:333
+#: addons/perma-resi.wad/postload.lua:436
+#: addons/perma-resi.wad/postload.lua:446
 msgid "mining iron"
 msgstr ""
 
-#: addons/perma-resi.wad/postload.lua:317
-#: addons/perma-resi.wad/postload.lua:335
+#: addons/perma-resi.wad/postload.lua:353
+#: addons/perma-resi.wad/postload.lua:372
 msgid "mining marble"
 msgstr ""
 

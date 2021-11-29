@@ -2893,52 +2893,45 @@ descriptions:new_tribe {
          }
       },
       {
-         name = "europeans_smithy_basic",
+         name = "europeans_toolsmithy_basic",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
          }
       },
       {
-         name = "europeans_smithy_level_1",
+         name = "europeans_toolsmithy_normal",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
          }
       },
       {
-         name = "europeans_smithy_level_2",
+         name = "europeans_toolsmithy_advanced",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
             purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
          }
       },
       {
-         name = "europeans_smithy_level_3",
+         name = "europeans_armorsmithy_basic",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
-            purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
+            purpose = pgettext("europeans_building", "Produces armor and weapons.")
          }
       },
       {
-         name = "europeans_smithy_level_4",
+         name = "europeans_armorsmithy_normal",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
-            purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
+            purpose = pgettext("europeans_building", "Produces armor and weapons.")
          }
       },
       {
-         name = "europeans_smithy_level_5",
+         name = "europeans_armorsmithy_advanced",
          helptexts = {
             -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
-            purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
-         }
-      },
-      {
-         name = "europeans_smithy_level_6",
-         helptexts = {
-            -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
-            purpose = pgettext("europeans_building", "Forges all the tools that your workers need. Produces armor and weapons, too.")
+            purpose = pgettext("europeans_building", "Produces armor and weapons.")
          }
       },
 

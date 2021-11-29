@@ -60,7 +60,7 @@ init = {
     })
     place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
     })
-    place_building_in_region(player, "europeans_smithy_level_1", sf:region(6), {
+    place_building_in_region(player, "europeans_toolsmithy_basic", sf:region(6), {
         inputs = {planks = 4, iron = 4},
     })
     place_building_in_region(player, "europeans_sawmill_advanced", sf:region(10), {
