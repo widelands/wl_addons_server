@@ -15,25 +15,23 @@ descriptions:new_productionsite_type {
           planks = 3,
           brick = 3,
           grout = 3,
-          marble_column = 3,
-          diamond = 1
+          marble_column = 3
       },
       enhancement_return_on_dismantle = {
           granite = 3,
           marble = 3,
-          planks = 2,
-          diamond = 1
+          planks = 2
       }
    },
    
    animations = {
       idle = {
          pictures = path.list_files(dirname .. "idle_??.png"),
-         hotspot = { 64, 106 }
+         hotspot = { 80, 88 }
       },
       working = {
          pictures = path.list_files(dirname .. "idle_??.png"),
-         hotspot = { 64, 106 }
+         hotspot = { 80, 88 }
       },
    },
 

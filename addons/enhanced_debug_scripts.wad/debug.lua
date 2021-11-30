@@ -170,6 +170,18 @@ function destroy_object(startx, starty)
     map:get_field(startx, starty).immovable:destroy()
 end
 
+function remove_ship(player, ship_name)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local ships = player:get_ships()
+    
+    for i, ship in pairs(ships) do
+        -- print(i, ship.shipname)
+        if (ship.shipname == ship_name) or (ship_name == "") then
+            ship:remove()
+        end
+    end
+end
 
 -- general flag/road/street settings --
 function place_flag(player_number, startx, starty)

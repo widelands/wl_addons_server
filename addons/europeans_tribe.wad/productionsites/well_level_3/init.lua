@@ -16,13 +16,11 @@ descriptions:new_productionsite_type {
           brick = 1,
           grout = 1,
           marble_column = 1,
-          diamond = 1,
           buckets = 1
         },
         enhancement_return_on_dismantle = {
           granite = 1,
           marble = 1,
-          diamond = 1,
           buckets = 1
         },
    },

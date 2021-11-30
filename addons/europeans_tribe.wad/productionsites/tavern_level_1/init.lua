@@ -13,12 +13,10 @@ descriptions:new_productionsite_type {
         name = "europeans_tavern_level_2",
         enhancement_cost = {
           blackwood = 2,
-          cloth = 1,
-          quartz = 1
+          cloth = 1
         },
         enhancement_return_on_dismantle = {
-          blackwood = 1,
-          quartz = 1
+          blackwood = 1
         },
    },
 

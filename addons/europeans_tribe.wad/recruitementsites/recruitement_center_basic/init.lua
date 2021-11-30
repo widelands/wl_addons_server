@@ -14,13 +14,11 @@ descriptions:new_productionsite_type {
       enhancement_cost = {
           blackwood = 3,
           cloth = 3,
-          granite = 2,
-          quartz = 1
+          granite = 2
       },
       enhancement_return_on_dismantle = {
           blackwood = 2,
-          granite = 1,
-          quartz = 1
+          granite = 1
       }
    },
    

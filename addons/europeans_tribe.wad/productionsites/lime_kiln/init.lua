@@ -12,21 +12,19 @@ descriptions:new_productionsite_type {
    enhancement = {
         name = "europeans_stonemasons_house",
         enhancement_cost = {
-          blackwood = 2,
-          planks = 2,
-          cloth = 2,
-          granite = 1,
-          brick = 1,
-          grout = 1,
-          marble = 2,
-          quartz = 1
+            blackwood = 2,
+            planks = 2,
+            cloth = 2,
+            granite = 1,
+            brick = 1,
+            grout = 1,
+            marble = 2
         },
         enhancement_return_on_dismantle = {
-          blackwood = 1,
-          planks = 1,
-          granite = 2,
-          marble = 2,
-          quartz = 1
+            blackwood = 1,
+            planks = 1,
+            granite = 2,
+            marble = 2
         },
    },
 

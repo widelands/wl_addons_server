@@ -13,11 +13,9 @@ descriptions:new_productionsite_type {
         name = "europeans_terraformers_house_normal",
         enhancement_cost = {
           blackwood = 1,
-          cloth = 1,
-          quartz = 1
+          cloth = 1
         },
         enhancement_return_on_dismantle = {
-          quartz = 1
         },
    },
 

@@ -6,11 +6,11 @@ include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
-init = {
+local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "New World",
     -- TRANSLATORS: This is the tooltip for the "New World" starting condition
-    tooltip = _"Start the game with advanced castle and port",
+    tooltip = _"Start the game with advanced castle and port. AI might struggling with this condition on smaller maps.",
     map_tags = {"seafaring"},
 
     func = function(player, shared_in_start)
@@ -23,7 +23,7 @@ init = {
        player:allow_workers("all")
     end
     local h = player:place_building("europeans_advanced_castle", sf, false, true)
-    h:set_soldiers{[{4,4,4,4}] = 12}
+    h:set_soldiers{[{3,3,3,3}] = 12}
       
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
         for i, portfield in pairs(map.port_spaces) do
@@ -47,36 +47,41 @@ init = {
             wares = {
                 water = 511,
                 log = 192,
-                granite = 64,
-                reed = 64,
-                iron = 48,
-                blackwood = 32,
-                planks = 32,
-                cloth = 32,
-                ore = 32,
-                coal = 32,
-                spidercloth = 32,
-                marble = 32,
-                quartz = 32,
-                diamond = 24,
-                gold = 4,
-                buckets = 16,
-                basket = 16,
+                reed = 127,
+                granite = 63,
+                ore = 31,
+                coal = 31,
+                cloth = 31,
+                blackwood = 31,
+                planks = 15,
+                spidercloth = 15,
+                marble = 15,
+                marble_column = 7,
+                iron = 7,
+                gold = 7,
+                quartz = 15,
+                diamond = 15,
+                buckets = 15,
+                basket = 15,
                 hammer = 12,
                 saw = 12,
-                shovel = 8,
-                pick = 6,
-                scythe = 6,
-                felling_ax = 4,
-                fire_tongs = 4,
-                bread_paddle = 2,
+                scythe = 12,
+                shovel = 9,
+                pick = 9,
+                felling_ax = 9,
+                fire_tongs = 7,
+                milking_tongs = 3,
+                needles = 3,
+                bread_paddle = 3,
+                hook_pole = 3,
+                kitchen_tools = 3,
                 fishing_net = 2,
                 fishing_rod = 2,
-                hook_pole = 2,
-                kitchen_tools = 2,
                 hunting_bow = 2,
                 hunting_spear = 2,
-                milking_tongs = 2,
+                armor = 7,
+                tabard = 7,
+                spear_wooden = 7
             },
             workers = {
                 europeans_carrier = 32,
@@ -95,40 +100,41 @@ init = {
         for i, port in ipairs(ports) do
             port:set_wares("water", math.ceil(511/ #ports))
             port:set_wares("log", math.ceil(192 / #ports))
-            port:set_wares("reed", math.ceil(96 / #ports))
-            port:set_wares("granite", math.ceil(64 / #ports))
-            port:set_wares("iron", math.ceil(48 / #ports))
-            port:set_wares("cloth", math.ceil(32 / #ports))
-            port:set_wares("blackwood", math.ceil(32 / #ports))
-            port:set_wares("planks", math.ceil(32 / #ports))
-            port:set_wares("ore", math.ceil(32 / #ports))
-            port:set_wares("coal", math.ceil(32 / #ports))
-            port:set_wares("spidercloth", math.ceil(32 / #ports))
-            port:set_wares("marble", math.ceil(24 / #ports))
-            port:set_wares("quartz", math.ceil(24 / #ports))
-            port:set_wares("marble_column", math.ceil(24 / #ports))
-            port:set_wares("diamond", math.ceil(16 / #ports))
-            port:set_wares("gold", math.ceil(4 / #ports))
-            port:set_wares("buckets", math.ceil(16 / #ports))
-            port:set_wares("basket", math.ceil(16 / #ports))
+            port:set_wares("reed", math.ceil(127 / #ports))
+            port:set_wares("granite", math.ceil(63 / #ports))
+            port:set_wares("ore", math.ceil(31 / #ports))
+            port:set_wares("coal", math.ceil(31 / #ports))
+            port:set_wares("cloth", math.ceil(31 / #ports))
+            port:set_wares("blackwood", math.ceil(31 / #ports))
+            port:set_wares("planks", math.ceil(15 / #ports))
+            port:set_wares("spidercloth", math.ceil(15 / #ports))
+            port:set_wares("marble", math.ceil(15 / #ports))
+            port:set_wares("marble_column", math.ceil(7 / #ports))
+            port:set_wares("iron", math.ceil(7 / #ports))
+            port:set_wares("gold", math.ceil(7 / #ports))
+            port:set_wares("quartz", math.ceil(15 / #ports))
+            port:set_wares("diamond", math.ceil(15 / #ports))
+            port:set_wares("buckets", math.ceil(15 / #ports))
+            port:set_wares("basket", math.ceil(15 / #ports))
             port:set_wares("hammer", math.ceil(12 / #ports))
             port:set_wares("saw", math.ceil(12 / #ports))
-            port:set_wares("shovel", math.ceil(8 / #ports))
-            port:set_wares("pick", math.ceil(6 / #ports))
-            port:set_wares("scythe", math.ceil(6 / #ports))
-            port:set_wares("felling_ax", math.ceil(4 / #ports))
-            port:set_wares("fire_tongs", math.ceil(4 / #ports))
-            port:set_wares("bread_paddle", math.ceil(2 / #ports))
-            port:set_wares("fishing_net", math.ceil(2 / #ports))
-            port:set_wares("fishing_rod", math.ceil(2 / #ports))
-            port:set_wares("hook_pole", math.ceil(2 / #ports))
-            port:set_wares("kitchen_tools", math.ceil(2 / #ports))
-            port:set_wares("hunting_bow", math.ceil(2 / #ports))
-            port:set_wares("hunting_spear", math.ceil(2 / #ports))
-            port:set_wares("milking_tongs", math.ceil(2 / #ports))
-            port:set_wares("armor", math.ceil(6 / #ports))
-            port:set_wares("tabard", math.ceil(6 / #ports))
-            port:set_wares("spear_wooden", math.ceil(12 / #ports))
+            port:set_wares("scythe", math.ceil(12 / #ports))
+            port:set_wares("shovel", math.ceil(9 / #ports))
+            port:set_wares("pick", math.ceil(9 / #ports))
+            port:set_wares("felling_ax", math.ceil(9 / #ports))
+            port:set_wares("fire_tongs", math.ceil(7 / #ports))
+            port:set_wares("milking_tongs", math.ceil(3 / #ports))
+            port:set_wares("needles", math.ceil(3 / #ports))
+            port:set_wares("bread_paddle", math.ceil(3 / #ports))
+            port:set_wares("hook_pole", math.ceil(3 / #ports))
+            port:set_wares("kitchen_tools", math.ceil(3 / #ports))
+            port:set_wares("fishing_net", math.ceil(3 / #ports))
+            port:set_wares("fishing_rod", math.ceil(3 / #ports))
+            port:set_wares("hunting_bow", math.ceil(3 / #ports))
+            port:set_wares("hunting_spear", math.ceil(3 / #ports))
+            port:set_wares("armor", math.ceil(7 / #ports))
+            port:set_wares("tabard", math.ceil(7 / #ports))
+            port:set_wares("spear_wooden", math.ceil(7 / #ports))
         end
     end
 

@@ -6,11 +6,11 @@ include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
-init = {
+local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Headquarters",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-    tooltip = _"Start the game with your headquarters only",
+    tooltip = _"Start the game with your headquarters and a basic recruitement center only. AI might struggling with this condition on smaller maps.",
     func =  function(player, shared_in_start)
 
     local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -23,40 +23,42 @@ init = {
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {
                 water = 1023,
-                log = 192,
-                reed = 80,
-                granite = 64,
-                coal = 64,
-                ore = 64,
-                iron = 48,
-                cloth = 32,
-                blackwood = 32,
-                planks = 32,
-                spidercloth = 32,
-                grout = 32,
-                brick = 32,
-                marble = 32,
-                quartz = 32,
-                marble_column = 24,
-                diamond = 24,
-                gold = 4,
-                buckets = 16,
-                basket = 16,
-                hammer = 12,
-                saw = 12,
-                shovel = 8,
-                pick = 8,
-                scythe = 6,
-                fire_tongs = 4,
-                felling_ax = 4,
-                bread_paddle = 2,
-                fishing_net = 2,
-                fishing_rod = 2,
-                hook_pole = 2,
-                kitchen_tools = 2,
-                hunting_bow = 2,
-                hunting_spear = 2,
-                milking_tongs = 2,
+                log = 255,
+                reed = 127,
+                granite = 63,
+                coal = 63,
+                ore = 63,
+                cloth = 31,
+                blackwood = 31,
+                planks = 31,
+                spidercloth = 31,
+                marble = 31,
+                marble_column = 15,
+                iron = 7,
+                gold = 7,
+                quartz = 15,
+                diamond = 15,
+                buckets = 24,
+                basket = 24,
+                hammer = 15,
+                saw = 15,
+                scythe = 15,
+                shovel = 12,
+                pick = 12,
+                felling_ax = 12,
+                fire_tongs = 7,
+                milking_tongs = 5,
+                needles = 5,
+                bread_paddle = 5,
+                hook_pole = 5,
+                kitchen_tools = 5,
+                fishing_net = 3,
+                fishing_rod = 3,
+                hunting_bow = 3,
+                hunting_spear = 3,
+                armor = 15,
+                tabard = 15,
+                spear_wooden = 15
             },
             workers = {
                 europeans_carrier = 32,
@@ -65,7 +67,7 @@ init = {
                 europeans_smith_basic = 2
           },
             soldiers = {
-                [{0,0,0,0}] = 16,
+                [{0,0,0,0}] = 24,
           }
     })
     place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {

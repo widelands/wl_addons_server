@@ -2442,6 +2442,13 @@ descriptions:new_tribe {
             purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools.")
          }
       },
+      {
+         name = "europeans_market",
+         helptexts = {
+            -- TRANSLATORS: Purpose helptext for an europeans warehouse: Market
+            purpose = pgettext("europeans_building", "Market to exchange some build materials for quartz, diamond or gold.")
+         }
+      },
 
       -- Small
       {
@@ -3454,8 +3461,6 @@ descriptions:new_tribe {
    -- Special types
    builder = "europeans_builder",
    carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
-   carrier = "europeans_carrier_1",
-   carrier2 = "europeans_carrier_ox",
    geologist = "europeans_geologist",
    scouts_house = "europeans_scouts_house_basic",
    soldier = "europeans_soldier",

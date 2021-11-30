@@ -10,14 +10,14 @@ descriptions:new_productionsite_type {
    size = "medium",
 
    buildcost = {
-      log = 3,
-      reed = 3,
-      granite = 2
+        log = 3,
+        reed = 3,
+        granite = 2
    },
    return_on_dismantle = {
-      log = 2,
-      reed = 3,
-      granite = 1
+        log = 2,
+        reed = 3,
+        granite = 1
    },
 
    animations = {

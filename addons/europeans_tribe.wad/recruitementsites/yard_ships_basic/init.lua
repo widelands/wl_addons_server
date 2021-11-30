@@ -15,13 +15,11 @@ descriptions:new_productionsite_type {
         enhancement_cost = {
           blackwood = 2,
           cloth = 2,
-          granite = 1,
-          quartz = 1
+          granite = 1
         },
         enhancement_return_on_dismantle = {
           blackwood = 1,
-          granite = 1,
-          quartz = 1
+          granite = 1
         },
    },
 
@@ -70,7 +68,9 @@ descriptions:new_productionsite_type {
       { name = "blackwood", amount = 2 },
       { name = "planks", amount = 10 },
       { name = "reed", amount = 2 },
-      { name = "spidercloth", amount = 2 }
+      { name = "spidercloth", amount = 2 },
+      { name = "quartz", amount = 1 },
+      { name = "diamond", amount = 1 }
    },
 
    programs = {
@@ -90,6 +90,8 @@ descriptions:new_productionsite_type {
             "return=skipped when not site has blackwood",
             "return=skipped when not site has planks",
             "return=skipped when not site has spidercloth",
+            "return=skipped when not site has quartz",
+            "return=skipped when not site has diamond",
             "sleep=duration:15s",
             "construct=europeans_shipconstruction worker:buildship radius:5",
             "sleep=duration:15s",

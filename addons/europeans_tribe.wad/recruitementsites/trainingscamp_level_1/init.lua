@@ -15,15 +15,11 @@ descriptions:new_productionsite_type {
           planks = 1,
           cloth = 1,
           granite = 1,
-          quartz = 1,
-          diamond = 1,
           gold = 1
         },
         enhancement_return_on_dismantle = {
           planks = 1,
           granite = 1,
-          quartz = 1,
-          diamond = 1,
           scrap_metal_mixed = 1
         },
    },
@@ -53,8 +49,10 @@ descriptions:new_productionsite_type {
       { name = "ration", amount = 6 },
       { name = "beer", amount = 6 },
       { name = "spear_wooden", amount = 6 },
-      { name = "armor", amount = 3 },
-      { name = "tabard", amount = 3 }
+      { name = "armor", amount = 4 },
+      { name = "tabard", amount = 4 },
+      { name = "quartz", amount = 4 },
+      { name = "diamond", amount = 4 }
    },
    
    programs = {
@@ -72,7 +70,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs europeans_soldier",
             "sleep=duration:10s",
-            "consume=armor tabard spear_wooden:2 ration:2 beer:2 europeans_recruit:2",
+            "consume=armor tabard spear_wooden:2 ration:2 beer:2 europeans_recruit:2 quartz:2 diamond:2",
             "animate=working duration:90s",
             "recruit=europeans_soldier:2"
          }

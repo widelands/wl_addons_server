@@ -6,11 +6,11 @@ include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
-init = {
+local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Discovery",
     -- TRANSLATORS: This is the tooltip for the "Discovery" starting condition
-    tooltip = _"Start the game with three ships on the ocean and only a handful of supplies",
+    tooltip = _"Start the game with three ships on the ocean and only a handful of supplies. Not suitable for AI player.",
     map_tags = {"seafaring"},
 
     func = function(player, shared_in_start)
@@ -45,6 +45,8 @@ init = {
          milking_tongs = 2,
          buckets = 4,
          shovel = 2,
+         quartz = 7,
+         diamond = 7,
          europeans_soldier = 1,
       },
       {

@@ -10,17 +10,17 @@ descriptions:new_productionsite_type {
    size = "big",
 
    buildcost = {
-      blackwood = 2,
-      planks = 2,
-      reed = 2,
-      cloth = 2,
-      brick = 2,
-      grout = 2
+        blackwood = 2,
+        planks = 2,
+        reed = 2,
+        cloth = 2,
+        brick = 2,
+        grout = 2
    },
    return_on_dismantle = {
-      blackwood = 1,
-      planks = 1,
-      granite = 2
+        blackwood = 1,
+        planks = 1,
+        granite = 2
    },
 
    animations = {

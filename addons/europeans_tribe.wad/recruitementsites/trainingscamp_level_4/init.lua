@@ -36,7 +36,9 @@ descriptions:new_productionsite_type {
       { name = "wine", amount = 12 },
       { name = "spear_wooden", amount = 12 },
       { name = "armor", amount = 6 },
-      { name = "tabard", amount = 6 }
+      { name = "tabard", amount = 6 },
+      { name = "quartz", amount = 6 },
+      { name = "diamond", amount = 6 }
    },
    
    programs = {
@@ -54,7 +56,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs europeans_soldier",
             "sleep=duration:10s",
-            "consume=armor tabard spear_wooden:2 meal:2 wine:2 europeans_recruit:2",
+            "consume=armor tabard spear_wooden:2 meal:2 wine:2 europeans_recruit:2 quartz:2 diamond:2",
             "animate=working duration:60s",
             "recruit=europeans_soldier:2"
          }

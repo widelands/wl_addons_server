@@ -15,14 +15,12 @@ descriptions:new_productionsite_type {
           planks = 2,
           brick = 2,
           grout = 2,
-          marble_column = 2,
-          diamond = 1
+          marble_column = 2
       },
       enhancement_return_on_dismantle = {
           granite = 2,
           marble = 2,
-          planks = 1,
-          diamond = 1
+          planks = 1
       }
    },
 

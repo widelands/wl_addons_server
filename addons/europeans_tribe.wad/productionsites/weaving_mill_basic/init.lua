@@ -13,12 +13,10 @@ descriptions:new_productionsite_type {
         name = "europeans_weaving_mill_normal",
         enhancement_cost = {
           blackwood = 2,
-          cloth = 2,
-          quartz = 1
+          cloth = 2
         },
         enhancement_return_on_dismantle = {
-          blackwood = 1,
-          quartz = 1,
+          blackwood = 1
         },
    },
 
