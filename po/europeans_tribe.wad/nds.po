@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 03:04+0100\n"
+"POT-Creation-Date: 2021-12-01 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -27,14 +27,12 @@ msgid "Europeans Tribe"
 msgstr "Europäers-Volk"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings and workers from "
 "Barbarians, Atlanteans, and Empire, until own graphics are available."
 msgstr ""
-"Föögt een nejes Volk »Europäers« hento. Dat is noch nich stevig un bruukt "
-"Husen un Arbeiders vun de Willen Lüü, Atlantingers un vum Latiensken Riek, "
-"bit dat neje Billers gifft."
+"Föögt een nejes Volk »Europäers« hento. ’t bruukt Husen un Arbeiders vun de "
+"Willen Lüü, Atlantingers un vum Latiensken Riek, bit dat neje Billers gifft."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -298,7 +296,7 @@ msgstr "Raadhuus"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:8
 msgctxt "europeans_building"
 msgid "Market"
-msgstr ""
+msgstr "Markt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:58
@@ -386,215 +384,199 @@ msgstr "to Warken"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:98
 msgctxt "europeans_building"
 msgid "exchanging quartz and clay"
-msgstr ""
+msgstr "Blinkerflint un Lehm to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:110
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging diamond and clay"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Edelsteen un Lehm to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:122
 msgctxt "europeans_building"
 msgid "exchanging gold and clay"
-msgstr ""
+msgstr "Gold un Lehm to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:134
 msgctxt "europeans_building"
 msgid "exchanging granite and quartz"
-msgstr ""
+msgstr "Flint un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:146
 msgctxt "europeans_building"
 msgid "exchanging granite and diamond"
-msgstr ""
+msgstr "Flint un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:158
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging granite and gold"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Flint un Gold to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:170
 msgctxt "europeans_building"
 msgid "exchanging marble and quartz"
-msgstr ""
+msgstr "Marmel un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:182
 msgctxt "europeans_building"
 msgid "exchanging marble and diamond"
-msgstr ""
+msgstr "Marmel un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:194
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging marble and gold"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Marmel un Gold to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:206
 msgctxt "europeans_building"
 msgid "exchanging log and quartz"
-msgstr ""
+msgstr "Boomstamm un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:218
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging log and diamond"
-msgstr "Edelsteen oftoboen"
+msgstr "Boomstamm un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:230
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging log and gold"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Boomstamm un Gold to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:242
 msgctxt "europeans_building"
 msgid "exchanging blackwood and quartz"
-msgstr ""
+msgstr "Haartholt un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:254
 msgctxt "europeans_building"
 msgid "exchanging blackwood and diamond"
-msgstr ""
+msgstr "Haartholt un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:266
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging blackwood and gold"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Haartholt un Gold to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:278
 msgctxt "europeans_building"
 msgid "exchanging planks and quartz"
-msgstr ""
+msgstr "Planken un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:290
 msgctxt "europeans_building"
 msgid "exchanging planks and diamond"
-msgstr ""
+msgstr "Planken un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:302
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging planks and gold"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Planken un Gold to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:314
 msgctxt "europeans_building"
 msgid "exchanging reed and quartz"
-msgstr ""
+msgstr "Reit un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:326
 msgctxt "europeans_building"
 msgid "exchanging reed and diamond"
-msgstr ""
+msgstr "Reit un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:338
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging reed and gold"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Reit un Gold to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:350
 msgctxt "europeans_building"
 msgid "exchanging cloth and quartz"
-msgstr ""
+msgstr "Stoff un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:362
 msgctxt "europeans_building"
 msgid "exchanging cloth and diamond"
-msgstr ""
+msgstr "Stoff un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:374
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging cloth and gold"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Stoff un Gold to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:386
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging spidercloth and quartz"
-msgstr "Spinnenstoff"
+msgstr "Spinnenstoff un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:398
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging spidercloth and diamond"
-msgstr "Spinnenstoff"
+msgstr "Spinnenstoff un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:410
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging spidercloth and gold"
-msgstr "Spinnenstoff"
+msgstr "Spinnenstoff un Gold to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:422
 msgctxt "europeans_building"
 msgid "exchanging coal and quartz"
-msgstr ""
+msgstr "Köhl un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:434
 msgctxt "europeans_building"
 msgid "exchanging coal and diamond"
-msgstr ""
+msgstr "Köhl un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:446
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging coal and gold"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Köhl un Gold to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:458
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging iron and quartz"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Iesen un Blinkerflint to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:470
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging iron and diamond"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Iesen un Edelsteen to tuusken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:482
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging iron and gold"
-msgstr "Iesen un Gold to verweerten"
+msgstr "Iesen un Gold to tuusken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:8
@@ -1439,7 +1421,7 @@ msgid ""
 "fish breeder’s house."
 msgstr ""
 "De Fisker dat warkt bi deese Fiskeree hett keene Fiske tum Fangen. Överlegg "
-"di, of du 't utbauen willst, um dat Arbeidsgewest to vergrotern. Du kannst "
+"di, of du ’t utbauen willst, um dat Arbeidsgewest to vergrotern. Du kannst "
 "de Fiske vermehren, wenn du een Fisstüchteree baust."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1457,7 +1439,7 @@ msgid ""
 "fish breeder’s house."
 msgstr ""
 "De Fisker dat warkt bi deese Fiskeree hett keene Fiske tum Fangen. Överlegg "
-"di, of du 't utbauen willst, um dat Arbeidsgewest to vergrotern. Du kannst "
+"di, of du ’t utbauen willst, um dat Arbeidsgewest to vergrotern. Du kannst "
 "de Fiske vermehren, wenn du een Fisstüchteree baust."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1649,7 +1631,7 @@ msgid ""
 "wild."
 msgstr ""
 "De Jäger, de bi deese Jaggthuus warkt, hett keene Deerten tum Jagen. "
-"Överlegg di, of du 't utbauen willst, um dat Arbeidsgewest to vergrotern. Du "
+"Överlegg di, of du ’t utbauen willst, um dat Arbeidsgewest to vergrotern. Du "
 "kannst neje Deerten tüchten, wenn du een Deertentüchteree baust."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1668,7 +1650,7 @@ msgid ""
 "wild."
 msgstr ""
 "De Jäger, de bi deese Jaggthuus warkt, hett keene Deerten tum Jagen. "
-"Överlegg di, of du 't utbauen willst, um dat Arbeidsgewest to vergrotern. Du "
+"Överlegg di, of du ’t utbauen willst, um dat Arbeidsgewest to vergrotern. Du "
 "kannst neje Deerten tüchten, wenn du een Deertentüchteree baust."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1868,7 +1850,7 @@ msgid ""
 "building a ranger’s hut."
 msgstr ""
 "De Boomslager dat warkt bi deese Boomslageree hett keene Bomen tum Ofslaan. "
-"Överlegg di, of du 't utbauen willst, um dat Arbeidsgewest to vergrotern, of "
+"Överlegg di, of du ’t utbauen willst, um dat Arbeidsgewest to vergrotern, of "
 "of du dat Huus plattrieten of ofbrannen willt, of bau eene Boomplanteree."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1885,7 +1867,7 @@ msgid ""
 "area or building a forester’s house."
 msgstr ""
 "De Boomslager dat warkt bi deese Boomslageree hett keene Bomen tum Ofslaan. "
-"Överlegg di, of du 't utbauen willst, um dat Arbeidsgewest to vergrotern, of "
+"Överlegg di, of du ’t utbauen willst, um dat Arbeidsgewest to vergrotern, of "
 "of du dat Huus plattrieten of ofbrannen willt, of bau eene Boomplanteree."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1963,7 +1945,7 @@ msgid ""
 "area. You should consider enhancing it to increase its working area."
 msgstr ""
 "De Flintslager, de bi deese Flintslageree warkt, hett keene Stenen tum "
-"Ofboen. Överlegg di, of du 't utbauen willst, um dat Arbeidsgewest to "
+"Ofboen. Överlegg di, of du ’t utbauen willst, um dat Arbeidsgewest to "
 "vergrotern."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -2903,12 +2885,12 @@ msgstr "Utförsken"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
-#, fuzzy
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
 "Not suitable for AI player."
 msgstr ""
-"Begünn dat Speel mit dree Schippen up de See un blot een paar Materialien"
+"Begünn dat Speel mit dree Schippen up de See un blot een paar Materialien. "
+"Künstelk Spelers könen daar nich mit spölen."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
@@ -2921,6 +2903,8 @@ msgid ""
 "Start the game with bundle of ports. AI might struggling with this condition "
 "on smaller maps."
 msgstr ""
+"Begünn dat Speel mit eenigen Muden. Künstelk Spelers finnen dat up lütten "
+"Kaarten villicht swaar."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
@@ -2933,6 +2917,8 @@ msgid ""
 "Start the game with your headquarters and a basic recruitement center only. "
 "AI might struggling with this condition on smaller maps."
 msgstr ""
+"Begünn dat Speel mit nix as dienem Raadhuus un eener lütten Anhüreree. "
+"Künstelk Spelers finnen dat up lütten Kaarten villicht swaar."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:11
@@ -2941,11 +2927,12 @@ msgstr "Neje Welt"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
-#, fuzzy
 msgid ""
 "Start the game with advanced castle and port. AI might struggling with this "
 "condition on smaller maps."
-msgstr "Begünn dat Speel mit eenem Groten Slött un eener Muu"
+msgstr ""
+"Begünn dat Speel mit eenem groten Slött un eener Muu. Künstelk Spelers "
+"finnen dat up lütten Kaarten villicht swaar."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
@@ -2972,27 +2959,27 @@ msgid ""
 "This starting condition contains a market as an additional building, where "
 "some wares can be bought for gold, quartz and diamonds."
 msgstr ""
+"In deeser Anfangs-Kondiesje gifft ’t noch een Huus daarto: de Markt. Daar "
+"könen eenige Waren för Gold, Blinkerflint un Edelstenen koopt worden."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:11
-#, fuzzy
 msgid "Advanced Village"
-msgstr "Meistermüller"
+msgstr "Grotes Dörp"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a fortified village with advanced castle in its center. "
 "Useful starting condition for the AI."
 msgstr ""
-"Begünn dat Speel mit eenem groten Dörp un eenem Groten Slött in de Midde"
+"Begünn dat Speel mit eenem Dörp rings um een grotes Slött. Good för künstelk "
+"Spelers."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:11
-#, fuzzy
 msgid "Basic Village"
-msgstr "Müller"
+msgstr "Lüttes Dörp"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:13
@@ -3000,21 +2987,22 @@ msgid ""
 "Start the game with a small peaceful village with only basic buildings. "
 "Prefered starting condition for the AI."
 msgstr ""
+"Begünn dat Speel mit eenem lütten, freedsamen Dörp mit nix as lütten Husen. "
+"Dat is de beste Anfangs-Kondiesje för künstelk Spelers."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:11
-#, fuzzy
 msgid "Normal Village"
-msgstr "Goder Müller"
+msgstr "Dörp"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a village with some normal buildings. Useful starting "
 "condition for the AI."
 msgstr ""
-"Begünn dat Speel mit eenem groten Dörp un eenem Groten Slött in de Midde"
+"Begünn dat Speel mit eenem Dörp mit een paar Husen. Good för künstelk "
+"Spelers."
 
 #. TRANSLATORS: This is the europeans' ship's name used in lists of units
 #: addons/europeans_tribe.wad/ship/init.lua:83
@@ -3435,13 +3423,13 @@ msgstr "Reit is een wichtigs Baumaterial."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:135
 msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
-msgstr "'t word vun de Reitplanteree produzeert."
+msgstr "’t word vun de Reitplanteree produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Cloth
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:145
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
-msgstr "Eenige Husen bruken Stoff. 't word ut Reit maakt."
+msgstr "Eenige Husen bruken Stoff. ’t word ut Reit maakt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wool
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:154
@@ -3554,7 +3542,7 @@ msgid ""
 "They are mined as a byproduct in a deep iron mine or by advanced quarry."
 msgstr ""
 "Deeser schienende Blinkerflint word för eenige besünners gode Husen bruukt. "
-"'t word vun groten Flintslagerhusen un vun deepen Iesen-Bargwarken ofboot."
+"’t word vun groten Flintslagerhusen un vun deepen Iesen-Bargwarken ofboot."
 
 #. TRANSLATORS: Helptext for an europeans ware: Diamond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:264
@@ -3583,7 +3571,7 @@ msgid ""
 "Meat contains a lot of energy, and it is obtained from wild game taken by "
 "hunters."
 msgstr ""
-"In Fleesk steckt bannig vööl Energie. 't word vun Jägers produzeert, indeem "
+"In Fleesk steckt bannig vööl Energie. ’t word vun Jägers produzeert, indeem "
 "se wille Deerten jaggen."
 
 #. TRANSLATORS: Helptext for an europeans ware: Meat, part 2
@@ -3696,7 +3684,7 @@ msgid ""
 "most advanced trainingsites."
 msgstr ""
 "Een beters Eten as de Happ of Spies. De deepsten Bargwarken un de "
-"allerbesten Övens-Boen bruken 't."
+"allerbesten Övens-Boen bruken ’t."
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:380
@@ -3710,7 +3698,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:394
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr "Sünner Water gifft 't keen Leven!"
+msgstr "Sünner Water gifft ’t keen Leven!"
 
 #. TRANSLATORS: Helptext for an europeans ware: Water, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:396
@@ -3768,7 +3756,7 @@ msgid ""
 "in trainingssites and mines."
 msgstr ""
 "Deeses Beer word in de Broeree ut Garst un Water produzeert. Övens-Boen un "
-"Bargwarken bruken 't."
+"Bargwarken bruken ’t."
 
 #. TRANSLATORS: Helptext for an europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:451
@@ -3778,7 +3766,7 @@ msgid ""
 "consumed in trainingssites and mines."
 msgstr ""
 "Deeses deftig Beer word in de Broeree ut Garst un Water produzeert. Övens-"
-"Boen un Bargwarken bruken 't."
+"Boen un Bargwarken bruken ’t."
 
 #. TRANSLATORS: Helptext for a europeans ware: Mead
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:460
@@ -3787,7 +3775,7 @@ msgid ""
 "Mead is produced by breweries. Soldiers drink mead during advanced training. "
 "Advanced miners drinking mead, too."
 msgstr ""
-"Hönnigbeer word vun Broereen produzeert un vun Soldaten bi'm verwiederten "
+"Hönnigbeer word vun Broereen produzeert un vun Soldaten bi’m verwiederten "
 "Öven un vun Bargwarkskeerls drunken."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wine
@@ -3798,7 +3786,7 @@ msgid ""
 "miners in the deepest mines. It is produced in a winery."
 msgstr ""
 "Deeser gode Wien word vun Soldaten in de groten Slachtenringen un de "
-"Bargwarkskeerls in de deepsten Bargwarken drunken. 't word in de Wienmakeree "
+"Bargwarkskeerls in de deepsten Bargwarken drunken. ’t word in de Wienmakeree "
 "produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Coal, part 1
@@ -3827,7 +3815,7 @@ msgstr "Kluten worden in Kluten-Bargwarken ofboot."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:497
 msgctxt "europeans_ware"
 msgid "It is smelted in a smelting works to retrieve all the metals."
-msgstr "'t word in Smeltwarken smelt, um all de Metallen to winnen."
+msgstr "’t word in Smeltwarken smelt, um all de Metallen to winnen."
 
 #. TRANSLATORS: Helptext for a europeans ware: Scrap Iron
 #. TRANSLATORS: Helptext for a europeans ware: Scrap metal (mixed)
@@ -3854,7 +3842,7 @@ msgid ""
 "It is produced by the smelting works. Weapons, armor and tools are made of "
 "iron."
 msgstr ""
-"'t word vun de Smeltwark produzeert. Wapens, Wapenrocken un Warktüüg sünd ut "
+"’t word vun de Smeltwark produzeert. Wapens, Wapenrocken un Warktüüg sünd ut "
 "Iesen."
 
 #. TRANSLATORS: Helptext for an europeans ware: Gold, part 1
@@ -3870,7 +3858,7 @@ msgid ""
 "It is produced by the smelting works. Armor and weapons are embellished with "
 "gold in the smithy. Some valuable buildings need gold to be built."
 msgstr ""
-"'t word vun de Smeltwark produzeert. Wapenrocken un Wapens worden in de "
+"’t word vun de Smeltwark produzeert. Wapenrocken un Wapens worden in de "
 "Smeden mit Gold utrüst. Ok eenige gode Husen worden mit Gold baut."
 
 #. TRANSLATORS: Helptext for an europeans ware: Basket, part 1
@@ -3891,7 +3879,7 @@ msgid ""
 "all smithies."
 msgstr ""
 "Ok de goden Lastendragers bruken eenen, um Waren to dragen. All de Smeden "
-"produzeren 't."
+"produzeren ’t."
 
 #. TRANSLATORS: Helptext for an europeans ware: Buckets, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:566
@@ -3982,7 +3970,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:633
 msgctxt "europeans_ware"
 msgid "It is produced by all smithies."
-msgstr "'t word vun all de Smeden produzeert."
+msgstr "’t word vun all de Smeden produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Hammer, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:644
@@ -4001,7 +3989,7 @@ msgid ""
 "Make sure you’ve always got some in reserve! They are produced by all "
 "smithies."
 msgstr ""
-"Pass up, dat du alltieden welke över hest! All de Smeden produzeren 't."
+"Pass up, dat du alltieden welke över hest! All de Smeden produzeren ’t."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fire Tongs, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:657
@@ -4049,7 +4037,7 @@ msgid ""
 "in one blow. It is only used by hunters."
 msgstr ""
 "Deeser Speer is licht genoog tum smieten, aver swaar genoog, um elkeen Deert "
-"mit eenem Slag doodtomaken. Blot Jägers bruken 't."
+"mit eenem Slag doodtomaken. Blot Jägers bruken ’t."
 
 #. TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:738
@@ -4079,7 +4067,7 @@ msgstr "De Rökeler in de Kneipen un Weertshusen bruukt deese Staak mit Haken."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:766
 msgctxt "europeans_ware"
 msgid "It is created by all smithies."
-msgstr "'t word vun all de Smeden produzeert."
+msgstr "’t word vun all de Smeden produzeert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:777
@@ -4100,7 +4088,7 @@ msgid ""
 "Basic armor for europeans soldiers. It is produced in the weaving mill. In "
 "combination with wooden speer, it is the equipment to fit out young soldiers."
 msgstr ""
-"Een eenfacher Wapenrock för europäisk Soldaten. 't word in de "
+"Een eenfacher Wapenrock för europäisk Soldaten. ’t word in de "
 "Spinnwehlmöhlen produzeert. Tosamen mit eener Holtpieke is dat de Utrüstung "
 "för neje Soldaten."
 
@@ -4111,7 +4099,7 @@ msgid ""
 "Basic tabard for europeans soldiers. It is produced in the weaving mill. In "
 "combination with wooden speer, it is the equipment to fit out young soldiers."
 msgstr ""
-"Eene eenfache Kluft för europäisk Soldaten. 't word in de Spinnwehlmöhlen "
+"Eene eenfache Kluft för europäisk Soldaten. ’t word in de Spinnwehlmöhlen "
 "produzeert. Tosamen mit eener Holtpieke is dat de Utrüstung för neje "
 "Soldaten."
 
@@ -4123,7 +4111,7 @@ msgid ""
 "a smithy and used in a battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
-"De Stahl-Wapenrock is een middelster Wapenrock för europäisk Soldaten. 't "
+"De Stahl-Wapenrock is een middelster Wapenrock för europäisk Soldaten. ’t "
 "word in eener Smede produzeert un im Slachtenring – tosamen mit Spiesen – "
 "bruukt, um Soldaten mit mehr Gesundheid-Punkten uttorüsten."
 
@@ -4135,7 +4123,7 @@ msgid ""
 "smithy and used in the battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
-"De Goldene Wapenrock is een goder Wapenrock för europäisk Soldaten. 't word "
+"De Goldene Wapenrock is een goder Wapenrock för europäisk Soldaten. ’t word "
 "in eener Smede produzeert un im Slachtenring – tosamen mit Spiesen – bruukt, "
 "um Soldaten mit mehr Gesundheid-Punkten uttorüsten."
 
@@ -4147,7 +4135,7 @@ msgid ""
 "advanced smithy and used in a battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
-"De Goldene Kluft is een goder Wapenrock för europäisk Soldaten. 't word in "
+"De Goldene Kluft is een goder Wapenrock för europäisk Soldaten. ’t word in "
 "eener groten Smede produzeert un im Slachtenring – tosamen mit Spiesen – "
 "bruukt, um Soldaten mit mehr Gesundheid-Punkten uttorüsten."
 
@@ -4170,7 +4158,7 @@ msgid ""
 "This is a advanced spear with a steel tip. It is produced in a smithy and "
 "used in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
-"Deese gode Pieke hett eene Tipp vun Stahl. 't word in de Smeden produzeert "
+"Deese gode Pieke hett eene Tipp vun Stahl. ’t word in de Smeden produzeert "
 "un im Slachtenring – tosamen mit Spiesen – bruukt, um Soldaten im Angriff "
 "uttobilden."
 
@@ -4191,7 +4179,7 @@ msgid ""
 "This is a broad sword. It is produced in the advanced smithy and used in a "
 "battle arena – together with food – to train soldiers in attack."
 msgstr ""
-"Dat is een bredes Sweert. 't word in de groten Smeden produzeert un im "
+"Dat is een bredes Sweert. ’t word in de groten Smeden produzeert un im "
 "Slachtenring – tosamen mit Spiesen – bruukt, um Soldaten im Angriff "
 "uttobilden."
 
@@ -4655,7 +4643,7 @@ msgid ""
 "A charcoal stack is burning in this earthen hole. When it has burnt down, a "
 "charcoal burner will be able to gather coal from it."
 msgstr ""
-"Een Köhler-Stapel brannt in deesem Eerlock. Wenn 't daalbrannt is, kann een "
+"Een Köhler-Stapel brannt in deesem Eerlock. Wenn ’t daalbrannt is, kann een "
 "Holtköhlbranner de Köhl pottjen."
 
 #. TRANSLATORS: Helptext for a europeans immovable: Pond
@@ -4855,6 +4843,8 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Market to exchange some build materials for quartz, diamond or gold."
 msgstr ""
+"Een Markt, waar eenige Waren tegen Blinkerflint, Edelflint un Gold tuuskt "
+"worden könen."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Well
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2458
@@ -6083,47 +6073,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgid "Fortified Village"
-#~ msgstr "Schanzendörp"
-
-#~ msgid "Start the game with bundle of ports"
-#~ msgstr "Begünn dat Speel mit een paar Muden"
-
-#~ msgid "Start the game with your headquarters only"
-#~ msgstr "Begünn dat Speel mit nix as dien Raadhuus"
-
-#~ msgid "Poor Hamlet"
-#~ msgstr "Nares Dörp"
-
-#~ msgid ""
-#~ "Start the game with just a warehouse and the bare minimum for "
-#~ "bootstrapping an economy. Warning: the AI can’t successfully start from "
-#~ "this."
-#~ msgstr ""
-#~ "Begünn dat Speel mit nix as eenem Kraamhuus un so minn Waren as würrelk "
-#~ "nödig, um eene Weertskupp uptobauen. Wahrschau: Künstelk Spelers könen "
-#~ "daar nich mit spölen."
-
-#~ msgid "Be careful"
-#~ msgstr "Pass up"
-
-#~ msgid ""
-#~ "You have only one iron for each tool you will need to start your economy. "
-#~ "Make sure no unneeded tool is created."
-#~ msgstr ""
-#~ "Du hest blot een Deel Iesen för elkeen Warktüüg, wat du för eene "
-#~ "Weertskupp bruukst. Pass up, dat keen Warktüüg daarto maakt word."
-
-#~ msgid ""
-#~ "If this player runs low on important wares, they will be replenished for "
-#~ "free. Debug Mode."
-#~ msgstr ""
-#~ "Wenn de Speler nich mehr vööl vun wichtigen Waren hett, kriggt he welke "
-#~ "för umsünst. För Entwicklers."
-
-#~ msgid "Village"
-#~ msgstr "Dörp"
-
-#~ msgid "Start the game with a small peaceful village"
-#~ msgstr "Begünn dat Speel mit eenem lütten freedsamen Dörp"

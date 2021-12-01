@@ -47,6 +47,7 @@ local init = {
          shovel = 2,
          quartz = 7,
          diamond = 7,
+         coal = 15,
          europeans_soldier = 1,
       },
       {

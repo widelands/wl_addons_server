@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 03:04+0100\n"
+"POT-Creation-Date: 2021-12-01 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -29,14 +29,10 @@ msgid "Europeans Tribe"
 msgstr "Народы Европы"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings and workers from "
 "Barbarians, Atlanteans, and Empire, until own graphics are available."
 msgstr ""
-"Добавляет смесь из европейских народов. Опытный образец, который будет "
-"переиспользовать постройки и рабочих других племен, пока не нарисуем для них "
-"свои."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -392,10 +388,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:110
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging diamond and clay"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:122
@@ -417,10 +412,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:158
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging granite and gold"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:170
@@ -436,10 +430,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:194
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging marble and gold"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:206
@@ -449,17 +442,15 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:218
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging log and diamond"
-msgstr "добывает алмазы"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:230
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging log and gold"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:242
@@ -475,10 +466,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:266
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging blackwood and gold"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:278
@@ -494,10 +484,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:302
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging planks and gold"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:314
@@ -513,10 +502,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:338
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging reed and gold"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:350
@@ -532,31 +520,27 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:374
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging cloth and gold"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:386
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging spidercloth and quartz"
-msgstr "ткет паучий шелк"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:398
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging spidercloth and diamond"
-msgstr "ткет паучий шелк"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:410
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging spidercloth and gold"
-msgstr "ткет паучий шелк"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:422
@@ -572,31 +556,27 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:446
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging coal and gold"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:458
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging iron and quartz"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:470
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging iron and diamond"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:482
-#, fuzzy
 msgctxt "europeans_building"
 msgid "exchanging iron and gold"
-msgstr "переплавляет железо и золото"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:8
@@ -2891,11 +2871,10 @@ msgstr "Открытие"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
-#, fuzzy
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
 "Not suitable for AI player."
-msgstr "Начать игру с затерянным в океане кораблем и впритык ресурсов"
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
@@ -2928,11 +2907,10 @@ msgstr "Новый мир"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
-#, fuzzy
 msgid ""
 "Start the game with advanced castle and port. AI might struggling with this "
 "condition on smaller maps."
-msgstr "Начать игру, имея укрепленный замок и порт"
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
@@ -2962,23 +2940,20 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:11
-#, fuzzy
 msgid "Advanced Village"
-msgstr "Модернезированная мельница"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a fortified village with advanced castle in its center. "
 "Useful starting condition for the AI."
-msgstr "Начать с села с замком в центре"
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:11
-#, fuzzy
 msgid "Basic Village"
-msgstr "Простая мельница"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:13
@@ -2989,17 +2964,15 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:11
-#, fuzzy
 msgid "Normal Village"
-msgstr "Большая мельница"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a village with some normal buildings. Useful starting "
 "condition for the AI."
-msgstr "Начать с села с замком в центре"
+msgstr ""
 
 #. TRANSLATORS: This is the europeans' ship's name used in lists of units
 #: addons/europeans_tribe.wad/ship/init.lua:83
@@ -5946,47 +5919,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr ""
-
-#~ msgid "Fortified Village"
-#~ msgstr "Городище"
-
-#~ msgid "Start the game with bundle of ports"
-#~ msgstr "Игроки начинают с портов"
-
-#~ msgid "Start the game with your headquarters only"
-#~ msgstr "Начать игру, имея только штаб"
-
-#~ msgid "Poor Hamlet"
-#~ msgstr "Бедный Йорик"
-
-#~ msgid ""
-#~ "Start the game with just a warehouse and the bare minimum for "
-#~ "bootstrapping an economy. Warning: the AI can’t successfully start from "
-#~ "this."
-#~ msgstr ""
-#~ "Начать игру со складом и припасами, которых в обрез хватит на запуск "
-#~ "экономики. Внимание: ИИ не может полноценно начать игру по такому условию."
-
-#~ msgid "Be careful"
-#~ msgstr "Осторожнее"
-
-#~ msgid ""
-#~ "You have only one iron for each tool you will need to start your economy. "
-#~ "Make sure no unneeded tool is created."
-#~ msgstr ""
-#~ "У вас есть железо лишь для отковки инструментов, по штуке каждого, "
-#~ "необходимых для запуска экономики. Следите за тем, чтобы не потратить "
-#~ "железо на лишний инструмент, без которого можно было бы обойтись."
-
-#~ msgid ""
-#~ "If this player runs low on important wares, they will be replenished for "
-#~ "free. Debug Mode."
-#~ msgstr ""
-#~ "Если игроку будет не хватать важных ресурсов, он получит их бесплатно. "
-#~ "Для отладки."
-
-#~ msgid "Village"
-#~ msgstr "Деревня"
-
-#~ msgid "Start the game with a small peaceful village"
-#~ msgstr "Начать с маленькой мирной деревеньки"

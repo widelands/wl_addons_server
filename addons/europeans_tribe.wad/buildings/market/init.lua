@@ -20,25 +20,25 @@ descriptions:new_productionsite_type {
       },
    },
    
-   buildcost = {
-      blackwood = 6,
-      planks = 6,
-      cloth = 4,
-      reed = 4,
-      brick = 4,
-      grout = 4,
-      marble_column = 4,
-      quartz = 3,
-      diamond = 3
-   },
-   return_on_dismantle = {
-      blackwood = 3,
-      planks = 3,
-      granite = 4,
-      marble = 2,
-      quartz = 2,
-      diamond = 2
-   },
+   --buildcost = {
+      --blackwood = 6,
+      --planks = 6,
+      --cloth = 4,
+      --reed = 4,
+      --brick = 4,
+      --grout = 4,
+      --marble_column = 4,
+      --quartz = 3,
+      --diamond = 3
+   --},
+   --return_on_dismantle = {
+      --blackwood = 3,
+      --planks = 3,
+      --granite = 4,
+      --marble = 2,
+      --quartz = 2,
+      --diamond = 2
+   --},
 
    aihints = {},
    
@@ -102,7 +102,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "consume=quartz",
             "animate=working duration:30s",
-            "produce=clay:8"
+            "produce=clay:16"
          }
       },
       buy_clay_for_diamond = {
@@ -114,7 +114,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "consume=diamond",
             "animate=working duration:30s",
-            "produce=clay:16"
+            "produce=clay:32"
          }
       },
       buy_clay_for_gold = {
@@ -126,7 +126,7 @@ descriptions:new_productionsite_type {
             "sleep=duration:10s",
             "consume=gold",
             "animate=working duration:30s",
-            "produce=clay:16"
+            "produce=clay:32"
          }
       },
       buy_granite_for_quartz = {

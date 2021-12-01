@@ -46,8 +46,8 @@ local init = {
                 log = 255,
                 reed = 127,
                 granite = 63,
-                ore = 63,
                 coal = 63,
+                ore = 31,
                 blackwood = 31,
                 cloth = 31,
                 planks = 31,
@@ -99,8 +99,8 @@ local init = {
             port:set_wares("log", math.ceil(255 / #ports))
             port:set_wares("reed", math.ceil(127 / #ports))
             port:set_wares("granite", math.ceil(63 / #ports))
-            port:set_wares("ore", math.ceil(63 / #ports))
             port:set_wares("coal", math.ceil(63 / #ports))
+            port:set_wares("ore", math.ceil(31 / #ports))
             port:set_wares("cloth", math.ceil(31 / #ports))
             port:set_wares("blackwood", math.ceil(31 / #ports))
             port:set_wares("planks", math.ceil(31 / #ports))
