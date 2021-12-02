@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 03:04+0100\n"
+"POT-Creation-Date: 2021-12-02 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
@@ -903,7 +903,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:77
 #: addons/europeans_tribe.wad/productionsites/inn_level_1/init.lua:106
 #: addons/europeans_tribe.wad/productionsites/inn_level_2/init.lua:91
-#: addons/europeans_tribe.wad/productionsites/lime_kiln/init.lua:111
+#: addons/europeans_tribe.wad/productionsites/lime_kiln/init.lua:112
 #: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:59
 #: addons/europeans_tribe.wad/productionsites/mill_basic/init.lua:103
 #: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:75
@@ -921,7 +921,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_tools_basic/init.lua:276
 #: addons/europeans_tribe.wad/productionsites/smithy_tools_normal/init.lua:306
 #: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:74
-#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:101
+#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:102
 #: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:90
 #: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:94
@@ -2280,7 +2280,7 @@ msgid "Stonemason’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
-#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:82
+#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:83
 msgid "sculpting a marble column"
 msgstr ""
 
@@ -2823,7 +2823,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
-"Not suitable for AI player."
+"Not suitable for AI players."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
@@ -2834,8 +2834,8 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:13
 msgid ""
-"Start the game with bundle of ports. AI might struggling with this condition "
-"on smaller maps."
+"Start the game with a bundle of ports. AI might struggling with this "
+"starting condition on smaller maps."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
@@ -2858,8 +2858,8 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
 msgid ""
-"Start the game with advanced castle and port. AI might struggling with this "
-"condition on smaller maps."
+"Start the game with a advanced castle and a port. AI might struggling with "
+"this condition on smaller maps."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
@@ -2906,8 +2906,8 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:13
 msgid ""
-"Start the game with a small peaceful village with only basic buildings. "
-"Prefered starting condition for the AI."
+"Start the game with a small, peaceful village with only basic buildings. "
+"Preferred starting condition for the AI."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition

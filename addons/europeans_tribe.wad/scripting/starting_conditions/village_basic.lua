@@ -10,7 +10,7 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Basic Village",
     -- TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
-    tooltip = _"Start the game with a small peaceful village with only basic buildings. Prefered starting condition for the AI.",
+    tooltip = _"Start the game with a small, peaceful village with only basic buildings. Preferred starting condition for the AI.",
     func =  function(player, shared_in_start)
     
     local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -23,7 +23,7 @@ local init = {
     local h = player:place_building("europeans_castle", sf, false, true)
     h:set_soldiers{[{1,1,1,1}] = 12}
 
-    place_building_in_region(player, "europeans_warehouse_basic", sf:region(4), {
+    place_building_in_region(player, "europeans_warehouse_basic", sf:region(6), {
         wares = {
             water = 255,
             log = 192,
@@ -41,13 +41,13 @@ local init = {
             gold = 3,
             quartz = 15,
             diamond = 15,
+            buckets = 15,
             basket = 12,
-            buckets = 12,
+            pick = 12,
             saw = 9,
             hammer = 9,
             scythe = 9,
             shovel = 9,
-            pick = 9,
             felling_ax = 9,
             fire_tongs = 7,
             milking_tongs = 3,
@@ -74,9 +74,9 @@ local init = {
             [{0,0,0,0}] = 16,
       }
     })
-    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
+    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(8), {
     })
-    place_building_in_region(player, "europeans_toolsmithy_basic", sf:region(6), {
+    place_building_in_region(player, "europeans_toolsmithy_basic", sf:region(8), {
         inputs = {planks = 4, iron = 4, coal = 4},
     })
     place_building_in_region(player, "europeans_sawmill_basic", sf:region(10), {

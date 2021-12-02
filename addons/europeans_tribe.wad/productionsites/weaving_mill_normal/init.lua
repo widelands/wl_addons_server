@@ -62,7 +62,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
          descname = _"weaving cloth",
          actions = {
-            "return=skipped unless economy needs cloth or workers need experience",
+            "return=skipped when economy needs reed and not economy needs cloth",
             "consume=reed:3",
             "sleep=duration:10s",
             "playsound=sound/barbarians/weaver priority:90%",
@@ -74,7 +74,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start weaving spidercloth because ...
          descname = _"weaving spidercloth",
          actions = {
-            "return=skipped unless economy needs spidercloth or workers need experience",
+            "return=skipped unless economy needs spidercloth",
             "consume=spider_silk:3",
             "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",
@@ -86,7 +86,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
          descname = _"tailoring a tabard",
          actions = {
-            "return=skipped unless economy needs tabard or workers need experience",
+            "return=skipped unless economy needs tabard",
             "consume=spider_silk",
             "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",

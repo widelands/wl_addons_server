@@ -83,7 +83,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
          descname = _"smelting iron",
          actions = {
-            "return=skipped unless economy needs iron or workers need experience",
+            "return=skipped unless economy needs iron",
             "return=skipped unless site has coal:3",
             "consume=ore:3 coal:3",
             "sleep=duration:20s",
@@ -97,7 +97,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
          descname = _"smelting gold",
          actions = {
-            "return=skipped unless economy needs gold or workers need experience",
+            "return=skipped unless economy needs gold",
             "return=skipped unless site has coal:2",
             "consume=ore:2 coal:2",
             "sleep=duration:20s",

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-01 03:03+0100\n"
+"POT-Creation-Date: 2021-12-02 03:03+0100\n"
 "PO-Revision-Date: 2021-11-27 12:40+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -22,17 +22,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/perma-resi.wad/addon:2
-msgid "Permanent Resource Indicators"
-msgstr "Langlevig Mineraal-Wiesers"
-
-#: addons/perma-resi.wad/addon:3
+#: addons/perma-resi.wad/addon:6
 msgid ""
 "Keep resource indicators until a mine starts to work in the area. Mines will "
 "gradually, but randomly remove matching indicators."
 msgstr ""
 "Mineraal-Wiesers rumstahn laten, bit een Bargwark in de Naberskupp to warken "
 "begünnt. Bargwarken maken de passend Wiesers na un na, aver tofällig, weg."
+
+#: addons/perma-resi.wad/addon:8
+msgid "Permanent Resource Indicators"
+msgstr "Langlevig Mineraal-Wiesers"
 
 #: addons/perma-resi.wad/postload.lua:24
 msgid "working"
@@ -206,6 +206,3 @@ msgstr "Een bietje Marmel"
 msgctxt "resource_indicator"
 msgid "A Lot of Marble"
 msgstr "Mennig Marmel"
-
-#~ msgid "removing geologist markers"
-#~ msgstr "Schattsökers-Wiesers wegtomaken"

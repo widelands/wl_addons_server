@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-01 03:03+0100\n"
+"POT-Creation-Date: 2021-12-02 03:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: addons/perma-resi.wad/addon:2
-msgid "Permanent Resource Indicators"
-msgstr ""
-
-#: addons/perma-resi.wad/addon:3
+#: addons/perma-resi.wad/addon:6
 msgid ""
 "Keep resource indicators until a mine starts to work in the area. Mines will "
 "gradually, but randomly remove matching indicators."
+msgstr ""
+
+#: addons/perma-resi.wad/addon:8
+msgid "Permanent Resource Indicators"
 msgstr ""
 
 #: addons/perma-resi.wad/postload.lua:24

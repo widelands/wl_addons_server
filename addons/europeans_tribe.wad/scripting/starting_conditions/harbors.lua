@@ -10,7 +10,9 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Harbors",
     -- TRANSLATORS: This is the tooltip for the "Harbors" starting condition
-    tooltip = _"Start the game with bundle of ports. AI might struggling with this condition on smaller maps.",
+    tooltip = _"Start the game with a bundle of ports. AI might struggling with this starting condition on smaller maps.",
+    map_tags = {"seafaring"},
+    
     func =  function(player, shared_in_start)
 
     local map = wl.Game().map
@@ -58,13 +60,13 @@ local init = {
                 gold = 7,
                 quartz = 15,
                 diamond = 15,
-                buckets = 24,
+                buckets = 31,
                 basket = 24,
+                pick = 15,
                 hammer = 15,
                 saw = 15,
                 scythe = 15,
                 shovel = 12,
-                pick = 12,
                 felling_ax = 12,
                 fire_tongs = 7,
                 milking_tongs = 5,
@@ -111,13 +113,13 @@ local init = {
             port:set_wares("gold", math.ceil(7 / #ports))
             port:set_wares("quartz", math.ceil(15 / #ports))
             port:set_wares("diamond", math.ceil(15 / #ports))
-            port:set_wares("buckets", math.ceil(24 / #ports))
+            port:set_wares("buckets", math.ceil(31 / #ports))
             port:set_wares("basket", math.ceil(24 / #ports))
+            port:set_wares("pick", math.ceil(15 / #ports))
             port:set_wares("hammer", math.ceil(15 / #ports))
             port:set_wares("saw", math.ceil(15 / #ports))
             port:set_wares("scythe", math.ceil(15 / #ports))
             port:set_wares("shovel", math.ceil(12 / #ports))
-            port:set_wares("pick", math.ceil(12 / #ports))
             port:set_wares("felling_ax", math.ceil(12 / #ports))
             port:set_wares("fire_tongs", math.ceil(7 / #ports))
             port:set_wares("milking_tongs", math.ceil(5 / #ports))

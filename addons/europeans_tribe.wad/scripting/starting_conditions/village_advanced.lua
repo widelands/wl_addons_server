@@ -23,7 +23,7 @@ init = {
     local h = player:place_building("europeans_advanced_castle", sf, false, true)
     h:set_soldiers{[{2,2,2,2}] = 24}
       
-    place_building_in_region(player, "europeans_warehouse_advanced", sf:region(4), {
+    place_building_in_region(player, "europeans_warehouse_advanced", sf:region(6), {
         wares = {
             water = 511,
             log = 255,
@@ -41,13 +41,13 @@ init = {
             gold = 7,
             quartz = 15,
             diamond = 15,
-            basket = 15,
             buckets = 15,
+            basket = 15,
+            pick = 12,
             saw = 12,
             hammer = 12,
             scythe = 12,
             shovel = 9,
-            pick = 9,
             felling_ax = 9,
             fire_tongs = 7,
             milking_tongs = 3,
@@ -75,9 +75,9 @@ init = {
       }
     })
 
-    place_building_in_region(player, "europeans_recruitement_center_advanced", sf:region(6), {
+    place_building_in_region(player, "europeans_recruitement_center_advanced", sf:region(8), {
     })
-    place_building_in_region(player, "europeans_toolsmithy_advanced", sf:region(6), {
+    place_building_in_region(player, "europeans_toolsmithy_advanced", sf:region(8), {
         inputs = {planks = 4, iron = 4, coal = 4},
     })
     place_building_in_region(player, "europeans_sawmill_advanced", sf:region(10), {

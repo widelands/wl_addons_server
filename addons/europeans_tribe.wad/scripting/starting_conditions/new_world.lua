@@ -10,7 +10,7 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "New World",
     -- TRANSLATORS: This is the tooltip for the "New World" starting condition
-    tooltip = _"Start the game with advanced castle and port. AI might struggling with this condition on smaller maps.",
+    tooltip = _"Start the game with a advanced castle and a port. AI might struggling with this condition on smaller maps.",
     map_tags = {"seafaring"},
 
     func = function(player, shared_in_start)
@@ -63,11 +63,11 @@ local init = {
                 diamond = 15,
                 buckets = 15,
                 basket = 15,
+                pick = 12,
                 hammer = 12,
                 saw = 12,
                 scythe = 12,
                 shovel = 9,
-                pick = 9,
                 felling_ax = 9,
                 fire_tongs = 7,
                 milking_tongs = 3,
@@ -116,11 +116,11 @@ local init = {
             port:set_wares("diamond", math.ceil(15 / #ports))
             port:set_wares("buckets", math.ceil(15 / #ports))
             port:set_wares("basket", math.ceil(15 / #ports))
+            port:set_wares("pick", math.ceil(12 / #ports))
             port:set_wares("hammer", math.ceil(12 / #ports))
             port:set_wares("saw", math.ceil(12 / #ports))
             port:set_wares("scythe", math.ceil(12 / #ports))
             port:set_wares("shovel", math.ceil(9 / #ports))
-            port:set_wares("pick", math.ceil(9 / #ports))
             port:set_wares("felling_ax", math.ceil(9 / #ports))
             port:set_wares("fire_tongs", math.ceil(7 / #ports))
             port:set_wares("milking_tongs", math.ceil(3 / #ports))

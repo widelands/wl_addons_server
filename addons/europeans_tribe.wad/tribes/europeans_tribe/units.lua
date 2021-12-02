@@ -1584,7 +1584,7 @@ descriptions:new_tribe {
          -- Miners, Smelters and Smiths
          {
             name = "europeans_miner_basic",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Miner
@@ -1593,7 +1593,7 @@ descriptions:new_tribe {
          },
          {
             name = "europeans_miner_normal",
-            default_target_quantity = 1,
+            default_target_quantity = 2,
             preciousness = 8,
             helptexts = {
                -- TRANSLATORS: Helptext for an europeans worker: Miner

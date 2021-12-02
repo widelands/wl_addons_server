@@ -72,7 +72,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
          descname = _"weaving cloth",
          actions = {
-            "return=skipped unless economy needs cloth or workers need experience",
+            "return=skipped when economy needs reed and not economy needs cloth",
             "consume=reed:3",
             "sleep=duration:10s",
             "playsound=sound/barbarians/weaver priority:90%",
@@ -85,7 +85,7 @@ descriptions:new_productionsite_type {
          descname = _"idle program",
          actions = {
             "return=skipped when economy needs cloth",
-            "return=skipped when economy needs reed",
+            "return=skipped when economy needs reed and not workers need experience",
             "sleep=duration:90s",
             "consume=reed",
             "playsound=sound/barbarians/weaver priority:90%",

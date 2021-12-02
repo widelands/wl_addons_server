@@ -80,9 +80,9 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
          descname = _"mixing grout",
          actions = {
-            "return=skipped unless economy needs grout or workers need experience",
             "return=skipped when economy needs granite",
-            "return=skipped unless site has water:3",
+            "return=skipped when economy needs water and not economy needs grout",
+            "return=skipped when economy needs coal and not economy needs grout",
             "consume=coal:2 granite:3 water:3",
             "sleep=duration:10s",
             "playsound=sound/barbarians/stonegrind priority:80%",
@@ -96,8 +96,9 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
          descname = _"burning bricks",
          actions = {
-            "return=skipped unless economy needs brick or workers need experience",
             "return=skipped when economy needs granite",
+            "return=skipped when economy needs coal and not economy needs brick",
+            "return=skipped unless site has clay:3",
             "consume=coal:2 granite clay:3",
             "sleep=duration:10s",
             "playsound=sound/barbarians/stonegrind priority:80%",
@@ -112,9 +113,9 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped when economy needs brick",
             "return=skipped when economy needs grout",
-            "return=skipped when economy needs coal",
             "return=skipped when economy needs granite",
-            "return=skipped when economy needs water",
+            "return=skipped when economy needs coal and not workers need experience",
+            "return=skipped when economy needs water and not workers need experience",
             "sleep=duration:90s",
             "consume=coal:2 granite:2 water clay",
             "playsound=sound/barbarians/stonegrind priority:80%",
