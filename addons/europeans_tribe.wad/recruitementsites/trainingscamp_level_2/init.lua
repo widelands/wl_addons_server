@@ -50,7 +50,6 @@ descriptions:new_productionsite_type {
       { name = "snack", amount = 8 },
       { name = "mead", amount = 8 },
       { name = "spear_wooden", amount = 8 },
-      { name = "armor", amount = 4 },
       { name = "tabard", amount = 4 },
       { name = "quartz", amount = 4 },
       { name = "diamond", amount = 4 }
@@ -71,7 +70,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs europeans_soldier",
             "sleep=duration:10s",
-            "consume=armor tabard spear_wooden:2 snack:2 mead:2 europeans_recruit:2 quartz:2 diamond:2",
+            "consume=tabard:2 spear_wooden:2 snack:2 mead:2 europeans_recruit:2 quartz:2 diamond:2",
             "animate=working duration:80s",
             "recruit=europeans_soldier:2"
          }

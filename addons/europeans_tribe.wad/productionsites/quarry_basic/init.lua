@@ -54,13 +54,22 @@ descriptions:new_productionsite_type {
 
    programs = {
       main = {
+         -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+         descname = _"working",
+         actions = {
+            "callworker=check_rocks",
+            "call=cut_granite on failure fail",
+            "return=skipped"
+         }
+      },
+      cut_granite = {
          -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
          descname = _"quarrying granite",
          actions = {
             "callworker=cut_granite",
             "sleep=duration:17s500ms"
          }
-      },
+      }
    },
    out_of_resource_notification = {
       -- Translators: Short for "Out of ..." for a resource

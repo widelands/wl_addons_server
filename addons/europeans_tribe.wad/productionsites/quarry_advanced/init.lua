@@ -41,6 +41,7 @@ descriptions:new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start working because ...
          descname = _"working",
          actions = {
+            "callworker=check_stone",
             "call=mine_granite on failure fail",
             "call=mine_granite on failure fail",
             "call=mine_marble on failure fail", -- This will find marble 2 out of 8 times

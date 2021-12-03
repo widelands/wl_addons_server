@@ -85,7 +85,6 @@ descriptions:new_trainingsite_type {
       { name = "beer", amount = 6 },
       { name = "helmet_mask", amount = 2 },
       { name = "spear_advanced", amount = 2 },
-      { name = "armor", amount = 2 },
       { name = "tabard", amount = 2 }
    },
 
@@ -133,11 +132,11 @@ descriptions:new_trainingsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
          descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
          actions = {
-            "return=skipped when economy needs tabard and economy needs armor",
-            "checksoldier=soldier:health level:0", -- Fails when aren't any soldier of level 0 health
+            "return=skipped when economy needs tabard",
+            "checksoldier=soldier:health level:0",
             "sleep=duration:40s",
-            "checksoldier=soldier:health level:0", -- Because the soldier can be expelled by the player
-            "consume=ration beer armor,tabard",
+            "checksoldier=soldier:health level:0",
+            "consume=ration beer tabard",
             "train=soldier:health level:1"
          }
       },
@@ -146,9 +145,9 @@ descriptions:new_trainingsite_type {
          descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
          actions = {
             "return=skipped when economy needs beer",
-            "checksoldier=soldier:evade level:0", -- Fails when aren't any soldier of level 0 evade
+            "checksoldier=soldier:evade level:0",
             "sleep=duration:40s",
-            "checksoldier=soldier:evade level:0", -- Because the soldier can be expelled by the player
+            "checksoldier=soldier:evade level:0",
             "consume=ration:2 beer:2",
             "train=soldier:evade level:1"
          }
@@ -157,10 +156,9 @@ descriptions:new_trainingsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
          descname = pgettext("europeans_building", "upgrading soldier defense from level 0 to level 1"),
          actions = {
-            "return=skipped when economy needs helmet_mask",
-            "checksoldier=soldier:defense level:0", -- Fails when aren't any soldier of level 0 defense
+            "checksoldier=soldier:defense level:0",
             "sleep=duration:40s",
-            "checksoldier=soldier:defense level:0", -- Because the soldier can be expulsed by the player
+            "checksoldier=soldier:defense level:0",
             "consume=ration beer helmet_mask",
             "train=soldier:defense level:1",
             "produce=scrap_iron"
@@ -170,7 +168,6 @@ descriptions:new_trainingsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
          descname = pgettext("europeans_building", "upgrading soldier attack from level 0 to level 1"),
          actions = {
-            "return=skipped when economy needs spear_advanced",
             "checksoldier=soldier:attack level:0",
             "sleep=duration:40s",
             "checksoldier=soldier:attack level:0",

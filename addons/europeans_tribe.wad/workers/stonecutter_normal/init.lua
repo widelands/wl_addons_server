@@ -14,6 +14,12 @@ descriptions:new_worker_type {
    becomes = "europeans_stonecutter_advanced",
 
    programs = {
+      check_rocks = {
+         "findobject=attrib:rocks radius:8",
+      },
+      check_stone = {
+         "findspace=size:any radius:8 resource:resource_stones",
+      },
       cut_granite = {
          "findobject=attrib:rocks radius:8",
          "walk=object",

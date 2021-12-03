@@ -60,7 +60,6 @@ descriptions:new_productionsite_type {
       { name = "hook_pole", amount = 1 },
       { name = "kitchen_tools", amount = 1 },
       { name = "spear_wooden", amount = 2 },
-      { name = "armor", amount = 2 },
       { name = "tabard", amount = 2 }
    },
 
@@ -442,7 +441,7 @@ descriptions:new_productionsite_type {
          actions = {
             "return=skipped unless economy needs europeans_trainer_normal",
             "sleep=duration:10s",
-            "consume=armor,tabard spear_wooden europeans_carrier",
+            "consume=tabard spear_wooden europeans_carrier",
             "animate=working duration:15s",
             "recruit=europeans_trainer_normal"
          }
