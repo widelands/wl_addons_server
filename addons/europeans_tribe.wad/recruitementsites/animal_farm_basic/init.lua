@@ -42,6 +42,8 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
+      very_weak_ai_limit = 1,
+      weak_ai_limit = 1,
       prohibited_till = 3600,
       forced_after = 10800
    },

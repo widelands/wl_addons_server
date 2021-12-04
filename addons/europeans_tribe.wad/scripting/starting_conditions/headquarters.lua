@@ -10,7 +10,7 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Headquarters",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-    tooltip = _"Start the game with your headquarters and a basic recruitement center only. AI might struggling with this condition on smaller maps.",
+    tooltip = _"Start the game with your headquarters only. The AI might struggle with this condition on smaller maps.",
     func =  function(player, shared_in_start)
 
     local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -63,14 +63,20 @@ local init = {
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 16,
-                europeans_trainer_basic = 3,
+                europeans_farmer_basic = 8,
+                europeans_trainer_basic = 4,
+                europeans_lumberjack_basic = 6,
+                europeans_forester_basic = 6,
+                europeans_stonecutter_basic = 3,
+                europeans_hunter_basic = 2,
+                europeans_fisher_basic = 2,
+                europeans_carpenter_basic = 2,
+                europeans_charcoal_burner_basic = 2,
                 europeans_smith_basic = 2
           },
             soldiers = {
                 [{0,0,0,0}] = 24,
           }
-    })
-    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
     })
     
 end

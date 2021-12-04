@@ -10,7 +10,7 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "New World",
     -- TRANSLATORS: This is the tooltip for the "New World" starting condition
-    tooltip = _"Start the game with a advanced castle and a port. AI might struggling with this condition on smaller maps.",
+    tooltip = _"Start the game with a advanced castle and a port. The AI might struggle with this condition on smaller maps.",
     map_tags = {"seafaring"},
 
     func = function(player, shared_in_start)
@@ -33,8 +33,11 @@ local init = {
                     workers = {
                         europeans_carrier = 16,
                         europeans_builder = 8,
+                        europeans_farmer_basic = 2,
+                        europeans_trainer_basic = 2,
                         europeans_smith_basic = 1,
-                        europeans_trainer_basic = 1,
+                        europeans_lumberjack_basic = 1,
+                        europeans_stonecutter_basic = 1
                   },
                     soldiers = {
                         [{0,0,0,0}] = 6,
@@ -86,7 +89,11 @@ local init = {
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 12,
-                europeans_trainer_basic = 3
+                europeans_farmer_basic = 4,
+                europeans_trainer_basic = 4,
+                europeans_smith_basic = 2,
+                europeans_lumberjack_basic = 2,
+                europeans_stonecutter_basic = 2
           },
             soldiers = {
                 [{0,0,0,0}] = 16,

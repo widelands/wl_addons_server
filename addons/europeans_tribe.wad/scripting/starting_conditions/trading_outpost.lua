@@ -57,7 +57,15 @@ init = {
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 16,
-                europeans_trainer_basic = 3,
+                europeans_farmer_basic = 8,
+                europeans_trainer_basic = 4,
+                europeans_lumberjack_basic = 6,
+                europeans_forester_basic = 6,
+                europeans_stonecutter_basic = 3,
+                europeans_hunter_basic = 2,
+                europeans_fisher_basic = 2,
+                europeans_carpenter_basic = 2,
+                europeans_charcoal_burner_basic = 2,
                 europeans_smith_basic = 2
           },
             soldiers = {

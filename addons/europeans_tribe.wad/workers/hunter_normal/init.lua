@@ -10,7 +10,7 @@ descriptions:new_worker_type {
    icon = dirname .. "menu.png",
    vision_range = 2,
 
-   experience = 24,
+   experience = 36,
    becomes = "europeans_hunter_advanced",
 
    programs = {

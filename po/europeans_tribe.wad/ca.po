@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-03 03:04+0100\n"
+"POT-Creation-Date: 2021-12-04 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
 "ca/)\n"
@@ -353,10 +353,10 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/well_level_4/init.lua:46
 #: addons/europeans_tribe.wad/productionsites/well_level_5/init.lua:32
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:38
-#: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:61
+#: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:63
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:52
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:55
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:86
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:82
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:69
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:84
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_1/init.lua:60
@@ -2460,7 +2460,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_advanced/init.lua:48
-#: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:69
+#: addons/europeans_tribe.wad/recruitementsites/animal_farm_basic/init.lua:71
 #: addons/europeans_tribe.wad/recruitementsites/animal_farm_normal/init.lua:61
 msgctxt "europeans_building"
 msgid "rearing cattle"
@@ -2499,7 +2499,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:90
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:121
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:117
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:104
 msgctxt "europeans_building"
 msgid "recruiting first carrier"
@@ -2507,7 +2507,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:101
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:132
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:128
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:115
 msgctxt "europeans_building"
 msgid "recruiting second carrier"
@@ -2515,7 +2515,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:115
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:145
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:141
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:129
 msgctxt "europeans_building"
 msgid "recruiting third carrier"
@@ -2523,7 +2523,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:129
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:158
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:154
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:143
 msgctxt "europeans_building"
 msgid "recruiting baker"
@@ -2531,7 +2531,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:142
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:171
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:167
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:156
 msgctxt "europeans_building"
 msgid "recruiting beekeeper"
@@ -2539,7 +2539,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:155
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:184
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:180
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:169
 msgctxt "europeans_building"
 msgid "recruiting breeder"
@@ -2547,7 +2547,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:168
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:197
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:193
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:182
 msgctxt "europeans_building"
 msgid "recruiting brewer"
@@ -2555,7 +2555,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:181
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:210
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:206
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:195
 msgctxt "europeans_building"
 msgid "recruiting builder"
@@ -2563,7 +2563,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:194
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:223
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:219
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:208
 msgctxt "europeans_building"
 msgid "recruiting carpenter"
@@ -2571,7 +2571,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:207
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:236
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:232
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:221
 msgctxt "europeans_building"
 msgid "recruiting charcoal burner"
@@ -2579,7 +2579,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:220
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:249
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:245
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:234
 msgctxt "europeans_building"
 msgid "recruiting claydigger"
@@ -2587,7 +2587,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:233
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:262
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:258
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:247
 msgctxt "europeans_building"
 msgid "recruiting farmer"
@@ -2595,7 +2595,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:246
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:275
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:271
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:260
 msgctxt "europeans_building"
 msgid "recruiting fisher"
@@ -2603,7 +2603,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:259
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:288
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:284
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:273
 msgctxt "europeans_building"
 msgid "recruiting forester"
@@ -2611,7 +2611,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:272
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:301
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:297
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:286
 msgctxt "europeans_building"
 msgid "recruiting geologist"
@@ -2619,7 +2619,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:285
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:314
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:310
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:299
 msgctxt "europeans_building"
 msgid "recruiting hunter"
@@ -2627,7 +2627,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:298
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:327
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:323
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:312
 msgctxt "europeans_building"
 msgid "recruiting lumberjack"
@@ -2635,7 +2635,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:311
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:340
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:336
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:325
 msgctxt "europeans_building"
 msgid "recruiting miller"
@@ -2643,7 +2643,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:324
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:353
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:349
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:338
 msgctxt "europeans_building"
 msgid "recruiting miner"
@@ -2651,7 +2651,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:337
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:366
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:362
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:351
 msgctxt "europeans_building"
 msgid "recruiting scout"
@@ -2659,7 +2659,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:348
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:377
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:373
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:362
 msgctxt "europeans_building"
 msgid "recruiting shipwright"
@@ -2667,7 +2667,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:361
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:390
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:386
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:375
 msgctxt "europeans_building"
 msgid "recruiting smelter"
@@ -2675,7 +2675,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:374
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:403
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:399
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:388
 msgctxt "europeans_building"
 msgid "recruiting smith"
@@ -2683,7 +2683,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:387
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:416
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:412
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:401
 msgctxt "europeans_building"
 msgid "recruiting stonecutter"
@@ -2691,7 +2691,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:400
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:429
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:425
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:414
 msgctxt "europeans_building"
 msgid "recruiting stonemason"
@@ -2699,7 +2699,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:413
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:442
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:438
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:427
 msgctxt "europeans_building"
 msgid "recruiting terraformer"
@@ -2707,7 +2707,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:426
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:455
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:451
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:440
 msgctxt "europeans_building"
 msgid "recruiting trainer"
@@ -2715,7 +2715,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:437
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:466
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:462
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:451
 msgctxt "europeans_building"
 msgid "recruiting weaver"
@@ -2725,6 +2725,12 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Recruitement Center"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:475
+msgctxt "europeans_building"
+msgid "dummy program"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -2836,7 +2842,7 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:13
 msgid ""
-"Start the game with a bundle of ports. AI might struggling with this "
+"Start the game with a bundle of ports. The AI might struggle with this "
 "starting condition on smaller maps."
 msgstr ""
 
@@ -2848,8 +2854,8 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:13
 msgid ""
-"Start the game with your headquarters and a basic recruitement center only. "
-"AI might struggling with this condition on smaller maps."
+"Start the game with your headquarters only. The AI might struggle with this "
+"condition on smaller maps."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
@@ -2860,7 +2866,7 @@ msgstr ""
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
 msgid ""
-"Start the game with a advanced castle and a port. AI might struggling with "
+"Start the game with a advanced castle and a port. The AI might struggle with "
 "this condition on smaller maps."
 msgstr ""
 

@@ -13,27 +13,21 @@ descriptions:new_productionsite_type {
       name = "europeans_recruitement_center_normal",
       enhancement_cost = {
           blackwood = 3,
-          cloth = 3,
-          granite = 2
+          cloth = 3
       },
       enhancement_return_on_dismantle = {
           blackwood = 2,
-          granite = 1
+          cloth = 1
       }
    },
    
    buildcost = {
-      log = 2,
-      blackwood = 2,
-      planks = 2,
-      reed = 2,
-      cloth = 2,
-      granite = 2
+      log = 4,
+      reed = 4,
+      granite = 4
    },
    return_on_dismantle = {
-      log = 1,
-      blackwood = 1,
-      planks = 1,
+      log = 2,
       granite = 2
    },
 
@@ -51,8 +45,10 @@ descriptions:new_productionsite_type {
    aihints = {
       very_weak_ai_limit = 1,
       weak_ai_limit = 1,
+      normal_ai_limit = 1,
       basic_amount = 1,
-      prohibited_till = 3600
+      prohibited_till = 3000,
+      forced_after = 3600
    },
    
    working_positions = {
@@ -472,6 +468,15 @@ descriptions:new_productionsite_type {
             "consume=needles",
             "animate=working duration:15s",
             "recruit=europeans_weaver_basic"
+         }
+      },
+      dummy_programm = {
+         -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+         descname = pgettext("europeans_building", "dummy program"),
+         actions = {
+            "sleep=duration:10s",
+            "animate=working duration:15s",
+            "produce=gold"
          }
       },
    }
