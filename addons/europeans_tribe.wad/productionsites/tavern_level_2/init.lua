@@ -46,10 +46,10 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "water", amount = 10 },
-      { name = "flour", amount = 10 },
-      { name = "fish", amount = 6 },
-      { name = "meat", amount = 6 }
+      { name = "water", amount = 8 },
+      { name = "flour", amount = 8 },
+      { name = "fish", amount = 4 },
+      { name = "meat", amount = 4 }
    },
 
    programs = {

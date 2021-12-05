@@ -46,10 +46,10 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "europeans_recruit", amount = 8 },
-      { name = "snack", amount = 8 },
-      { name = "mead", amount = 8 },
-      { name = "spear_wooden", amount = 8 },
+      { name = "europeans_recruit", amount = 4 },
+      { name = "snack", amount = 4 },
+      { name = "mead", amount = 4 },
+      { name = "spear_wooden", amount = 4 },
       { name = "tabard", amount = 4 },
       { name = "quartz", amount = 4 },
       { name = "diamond", amount = 4 }

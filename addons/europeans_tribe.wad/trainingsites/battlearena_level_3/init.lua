@@ -65,7 +65,6 @@ descriptions:new_trainingsite_type {
       { name = "ax_broad", amount = 2 },
       { name = "sword_broad", amount = 2 },
       { name = "armor", amount = 2 },
-      { name = "tabard", amount = 2 },
       { name = "armor_chain", amount = 2 },
       { name = "armor_gilded", amount =  2 },
       { name = "tabard_golden", amount = 2 }
@@ -115,11 +114,11 @@ descriptions:new_trainingsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
          descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
          actions = {
-            "return=skipped when economy needs tabard and economy needs armor",
+            "return=skipped when economy needs armor",
             "checksoldier=soldier:health level:0",
             "sleep=duration:30s",
             "checksoldier=soldier:health level:0",
-            "consume=ration beer armor,tabard",
+            "consume=ration beer armor",
             "train=soldier:health level:1"
          }
       },

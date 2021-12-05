@@ -36,9 +36,9 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "reed", amount = 8 },
-      { name = "spider_silk", amount = 8 },
-      { name = "wool", amount = 6 }
+      { name = "reed", amount = 6 },
+      { name = "spider_silk", amount = 6 },
+      { name = "wool", amount = 4 }
    },
 
    programs = {
@@ -83,11 +83,11 @@ descriptions:new_productionsite_type {
          descname = _"tailoring a tabard",
          actions = {
             "return=skipped unless economy needs tabard",
-            "consume=spider_silk",
+            "consume=spider_silk:2",
             "sleep=duration:10s",
             "playsound=sound/mill/weaving priority:90%",
             "animate=working duration:30s",
-            "produce=tabard"
+            "produce=tabard:2"
          }
       },
       produce_armor = {

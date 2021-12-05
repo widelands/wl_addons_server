@@ -52,10 +52,10 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "planks", amount = 6 },
+      { name = "planks", amount = 4 },
       { name = "spidercloth", amount = 4 },
-      { name = "coal", amount = 6 },
-      { name = "iron", amount = 6 }
+      { name = "coal", amount = 4 },
+      { name = "iron", amount = 4 }
    },
 
    programs = {

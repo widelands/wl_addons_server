@@ -47,8 +47,8 @@ descriptions:new_productionsite_type {
       weak_ai_limit = 1,
       normal_ai_limit = 1,
       basic_amount = 1,
-      prohibited_till = 3000,
-      forced_after = 3600
+      prohibited_till = 3600,
+      forced_after = 4500
    },
    
    working_positions = {
@@ -470,13 +470,13 @@ descriptions:new_productionsite_type {
             "recruit=europeans_weaver_basic"
          }
       },
-      dummy_programm = {
+      dummy_program = {
          -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
          descname = pgettext("europeans_building", "dummy program"),
          actions = {
             "sleep=duration:10s",
             "animate=working duration:15s",
-            "produce=gold"
+            "produce=quartz"
          }
       },
    }

@@ -30,7 +30,8 @@ descriptions:new_productionsite_type {
    aihints = {
       space_consumer = true,
       supports_seafaring = true,
-      basic_amount = 4
+      basic_amount = 4,
+      forced_after = 1800
    },
 
    working_positions = {

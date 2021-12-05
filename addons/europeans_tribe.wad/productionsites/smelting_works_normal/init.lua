@@ -42,8 +42,8 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "coal", amount = 12 },
-      { name = "ore", amount = 12 }
+      { name = "coal", amount = 4 },
+      { name = "ore", amount = 4 }
    },
 
    programs = {

@@ -50,8 +50,12 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
+      very_weak_ai_limit = 1,
+      weak_ai_limit = 2,
+      normal_ai_limit = 3,
       basic_amount = 2,
-      prohibited_till = 3300
+      prohibited_till = 3300,
+      forced_after = 7200
    },
 
    working_positions = {
@@ -59,10 +63,10 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "granite", amount = 8 },
+      { name = "granite", amount = 6 },
       { name = "clay", amount = 6 },
       { name = "water", amount = 6 },
-      { name = "coal", amount = 6 }
+      { name = "coal", amount = 4 }
    },
 
    programs = {

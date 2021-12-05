@@ -27,7 +27,7 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "log", amount = 20 },
+      { name = "log", amount = 24 },
       { name = "blackwood", amount = 8 },
       { name = "planks", amount = 8 }
    },

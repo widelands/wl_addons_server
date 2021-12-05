@@ -57,6 +57,9 @@ descriptions:new_productionsite_type {
    aihints = {
       needs_water = true,
       shipyard = true,
+      very_weak_ai_limit = 1,
+      weak_ai_limit = 1,
+      normal_ai_limit = 2,
       prohibited_till = 3600
    },
 

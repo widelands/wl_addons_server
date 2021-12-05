@@ -27,10 +27,10 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "water", amount = 12 },
-      { name = "barley", amount = 10 },
+      { name = "water", amount = 8 },
+      { name = "barley", amount = 8 },
       { name = "honey", amount = 6 },
-      { name = "fruit", amount = 8 },
+      { name = "fruit", amount = 4 },
       { name = "grape", amount = 8 }
    },
 

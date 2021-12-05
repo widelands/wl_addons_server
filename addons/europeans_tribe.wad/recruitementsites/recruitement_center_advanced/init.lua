@@ -445,6 +445,15 @@ descriptions:new_productionsite_type {
             "recruit=europeans_weaver_advanced"
          }
       },
+      dummy_program = {
+         -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+         descname = pgettext("europeans_building", "dummy program"),
+         actions = {
+            "sleep=duration:10s",
+            "animate=working duration:15s",
+            "produce=diamond"
+         }
+      },
    }
 }
 

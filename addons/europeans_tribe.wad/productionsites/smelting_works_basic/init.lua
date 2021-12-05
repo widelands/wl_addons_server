@@ -42,8 +42,12 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
+      very_weak_ai_limit = 1,
+      weak_ai_limit = 1,
+      normal_ai_limit = 2,
       basic_amount = 1,
-      prohibited_till = 3300
+      prohibited_till = 3300,
+      forced_after = 7200
    },
 
    working_positions = {
@@ -51,8 +55,8 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "coal", amount = 8 },
-      { name = "ore", amount = 8 }
+      { name = "coal", amount = 6 },
+      { name = "ore", amount = 6 }
    },
 
    programs = {

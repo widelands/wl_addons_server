@@ -42,8 +42,9 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "reed", amount = 8 },
-      { name = "spider_silk", amount = 8 }
+      { name = "reed", amount = 6 },
+      { name = "spider_silk", amount = 6 },
+      { name = "wool", amount = 2 }
    },
 
    programs = {
@@ -54,6 +55,7 @@ descriptions:new_productionsite_type {
             "call=produce_cloth",
             "call=produce_spidercloth",
             "call=produce_tabard",
+            "call=produce_armor",
             "call=produce_spidercloth_idle",
             "return=skipped"
          }
@@ -94,6 +96,19 @@ descriptions:new_productionsite_type {
             "produce=tabard"
          }
       },
+      produce_armor = {
+         -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
+         descname = _"tailoring an armor",
+         actions = {
+            "return=skipped unless economy needs armor",
+            "consume=wool",
+            "sleep=duration:10s",
+            "playsound=sound/mill/weaving priority:90%",
+            "animate=working duration:40s",
+            "sleep=duration:5s",
+            "produce=armor"
+         }
+      },
       produce_spidercloth_idle = {
          -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
          descname = _"idle program",
@@ -101,6 +116,7 @@ descriptions:new_productionsite_type {
             "return=skipped when economy needs cloth",
             "return=skipped when economy needs spidercloth",
             "return=skipped when economy needs tabard",
+            "return=skipped when economy needs armor",
             "sleep=duration:90s",
             "consume=spider_silk",
             "playsound=sound/mill/weaving priority:90%",

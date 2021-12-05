@@ -32,10 +32,10 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "coal", amount = 16 },
-      { name = "ore", amount = 8 },
-      { name = "scrap_iron", amount = 8 },
-      { name = "scrap_metal_mixed", amount = 8 }
+      { name = "coal", amount = 6 },
+      { name = "ore", amount = 6 },
+      { name = "scrap_iron", amount = 6 },
+      { name = "scrap_metal_mixed", amount = 6 }
    },
 
    programs = {

@@ -83,7 +83,7 @@ local init = {
         inputs = {log = 8},
     })
     place_building_in_region(player, "europeans_lime_kiln", sf:region(10), {
-        inputs = {granite = 8, clay = 6, water = 6, coal = 6},
+        inputs = {granite = 8, clay = 6, water = 6, coal = 4},
     })
     place_building_in_region(player, "europeans_weaving_mill_basic", sf:region(12), {
         inputs = {reed = 8},

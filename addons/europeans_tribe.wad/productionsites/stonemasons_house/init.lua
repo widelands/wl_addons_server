@@ -28,11 +28,11 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "marble", amount = 8 },
-      { name = "granite", amount = 8 },
+      { name = "marble", amount = 9 },
+      { name = "granite", amount = 9 },
       { name = "clay", amount = 6 },
       { name = "water", amount = 6 },
-      { name = "coal", amount = 6 }
+      { name = "coal", amount = 4 }
    },
 
    programs = {

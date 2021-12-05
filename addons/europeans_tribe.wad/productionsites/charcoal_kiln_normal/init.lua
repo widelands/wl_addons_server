@@ -42,7 +42,7 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "log", amount = 16 },
+      { name = "log", amount = 18 },
       { name = "blackwood", amount = 8 }
    },
 

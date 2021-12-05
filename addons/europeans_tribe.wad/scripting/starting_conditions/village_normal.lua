@@ -83,7 +83,7 @@ init = {
         inputs = {log = 8},
     })
     place_building_in_region(player, "europeans_stonemasons_house", sf:region(10), {
-        inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 6},
+        inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 4},
     })
     place_building_in_region(player, "europeans_weaving_mill_normal", sf:region(12), {
         inputs = {spider_silk = 6, reed = 6},

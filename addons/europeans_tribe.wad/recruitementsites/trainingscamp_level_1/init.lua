@@ -45,13 +45,13 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "europeans_recruit", amount = 6 },
-      { name = "ration", amount = 6 },
-      { name = "beer", amount = 6 },
-      { name = "spear_wooden", amount = 6 },
-      { name = "tabard", amount = 4 },
-      { name = "quartz", amount = 4 },
-      { name = "diamond", amount = 4 }
+      { name = "europeans_recruit", amount = 3 },
+      { name = "ration", amount = 3 },
+      { name = "beer", amount = 3 },
+      { name = "spear_wooden", amount = 3 },
+      { name = "tabard", amount = 3 },
+      { name = "quartz", amount = 3 },
+      { name = "diamond", amount = 3 }
    },
    
    programs = {

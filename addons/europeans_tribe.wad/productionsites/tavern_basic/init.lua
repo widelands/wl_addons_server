@@ -46,8 +46,12 @@ descriptions:new_productionsite_type {
    },
 
    aihints = {
+      very_weak_ai_limit = 1,
+      weak_ai_limit = 3,
+      normal_ai_limit = 5,
       basic_amount = 2,
-      prohibited_till = 2400
+      prohibited_till = 2400,
+      forced_after = 7200
    },
 
    working_positions = {
@@ -55,10 +59,10 @@ descriptions:new_productionsite_type {
    },
 
    inputs = {
-      { name = "water", amount = 6 },
-      { name = "flour", amount = 6 },
-      { name = "fish", amount = 4 },
-      { name = "meat", amount = 4 }
+      { name = "water", amount = 4 },
+      { name = "flour", amount = 4 },
+      { name = "fish", amount = 2 },
+      { name = "meat", amount = 2 }
    },
 
    programs = {
