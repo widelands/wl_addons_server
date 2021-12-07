@@ -33,15 +33,33 @@ function forbid_militarysites(player_number)
     end
 end
 
+function allow_barracks(player_number)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local tribe = player.tribe
+
+    if tribe.name == "europeans" then
+        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_level_1", "europeans_trainingscamp_level_2", "europeans_trainingscamp_level_3", "europeans_trainingscamp_level_4"}
+    end
+end
+
+function forbid_barracks(player_number)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local tribe = player.tribe
+    
+    if tribe.name == "europeans" then
+        player:forbid_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_level_1", "europeans_trainingscamp_level_2", "europeans_trainingscamp_level_3", "europeans_trainingscamp_level_4"}
+    end
+end
+
 function allow_trainingssites(player_number)
     local game = wl.Game()
     local player = game.players[player_number]
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_guardhall", "europeans_dungeon"}
-        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
-        player:allow_buildings{"europeans_labyrinth", "europeans_arena", "europeans_colosseum"}
+        player:allow_buildings{"europeans_battlearena_basic", "europeans_battlearena_level_1", "europeans_battlearena_level_2", "europeans_battlearena_level_3", "europeans_battlearena_level_4"}
     end
 end
 
@@ -51,9 +69,7 @@ function forbid_trainingssites(player_number)
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_guardhall", "europeans_dungeon"}
-        player:forbid_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
-        player:forbid_buildings{"europeans_labyrinth", "europeans_arena", "europeans_colosseum"}
+        player:forbid_buildings{"europeans_battlearena_basic", "europeans_battlearena_level_1", "europeans_battlearena_level_2", "europeans_battlearena_level_3", "europeans_battlearena_level_4"}
     end
 end
 

@@ -638,6 +638,19 @@ function dismantle_idle_buildings(player_number, productivity_threshold)
     end
 end
 
+function dismantle_stopped_buildings(player_number)
+    local game = wl.Game()
+    local player = game.players[player_number]
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == "productionsite" and building.is_stopped == true then
+             building:dismantle(true)
+          end
+       end
+    end
+end
+
 function enhance_building(startx, starty)
     local game = wl.Game()
     local map = game.map

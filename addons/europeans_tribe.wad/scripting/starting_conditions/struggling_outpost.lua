@@ -69,18 +69,18 @@ local init = {
         },
         workers = {
             europeans_carrier = 32,
-            europeans_builder = 6,
+            europeans_builder = 12,
+            europeans_farmer_basic = 6,
+            europeans_trainer_basic = 4,
             europeans_smith_basic = 2,
-            europeans_trainer_basic = 1,
-            europeans_geologist = 1
+            europeans_lumberjack_basic = 2,
+            europeans_stonecutter_basic = 2
       },
         soldiers = {
             [{0,0,0,0}] = 16,
       }
     })
     
-    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
-    })
     
     -- Get all trainingsite types
     local trainingsite_types = {}
