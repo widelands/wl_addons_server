@@ -3461,8 +3461,8 @@ descriptions:new_tribe {
     -- Special types
     builder = "europeans_builder",
     carrier = "europeans_carrier_1",
-    carrier_2 = "europeans_carrier_2",
-    carrier_3 = "europeans_carrier_3",
+    carrier2 = "europeans_carrier_2",
+    carrier3 = "europeans_carrier_3",
     carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
     geologist = "europeans_geologist",
     scouts_house = "europeans_scouts_house_basic",
