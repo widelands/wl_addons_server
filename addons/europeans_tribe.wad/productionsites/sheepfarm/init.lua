@@ -40,7 +40,7 @@ descriptions:new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 3,
-        prohibited_till = 3000,
+        prohibited_till = 3600,
         forced_after = 7200
     },
 

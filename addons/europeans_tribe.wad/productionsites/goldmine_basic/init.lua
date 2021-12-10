@@ -52,7 +52,7 @@ descriptions:new_productionsite_type {
     },
 
     aihints = {
-        prohibited_till = 3300,
+        prohibited_till = 3600,
         forced_after = 7200
     },
 
