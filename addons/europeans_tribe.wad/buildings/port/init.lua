@@ -44,6 +44,8 @@ descriptions:new_warehouse_type {
     },
 
     aihints = {
+        prohibited_till = 7200,
+        forced_after = 8100
     },
 
     conquers = 6,

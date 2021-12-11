@@ -29,10 +29,8 @@ local init = {
     
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {
-            quartz = 7,
-            diamond = 7,
-            water = 255,
-            log = 96,
+            water = 63,
+            log = 63,
             reed = 63,
             granite = 31,
             coal = 31,
@@ -43,6 +41,8 @@ local init = {
             spidercloth = 15,
             marble = 15,
             marble_column = 7,
+            quartz = 7,
+            diamond = 7,
             iron = 3,
             gold = 3,
             buckets = 15,

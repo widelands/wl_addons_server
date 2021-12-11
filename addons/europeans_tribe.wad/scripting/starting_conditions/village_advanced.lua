@@ -25,8 +25,8 @@ init = {
       
     place_building_in_region(player, "europeans_warehouse_advanced", sf:region(6), {
         wares = {
-            water = 511,
-            log = 255,
+            water = 127,
+            log = 127,
             reed = 63,
             granite = 63,
             coal = 63,

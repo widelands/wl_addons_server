@@ -73,8 +73,8 @@ descriptions:new_trainingsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 3,
-        prohibited_till = 3600,
-        forced_after = 7200
+        prohibited_till = 6000,
+        forced_after = 6900
     },
 
     working_positions = {

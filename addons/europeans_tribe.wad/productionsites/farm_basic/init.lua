@@ -53,7 +53,7 @@ descriptions:new_productionsite_type {
         space_consumer = true,
         basic_amount = 2,
         prohibited_till = 600,
-        forced_after = 3600
+        forced_after = 1500
     },
 
     working_positions = {
