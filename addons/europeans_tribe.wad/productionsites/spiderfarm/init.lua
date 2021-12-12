@@ -38,8 +38,8 @@ descriptions:new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 3,
-        prohibited_till = 3900,
-        forced_after = 4800
+        prohibited_till = 6000,
+        forced_after = 6900
     },
 
     working_positions = {

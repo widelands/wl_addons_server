@@ -39,7 +39,10 @@ descriptions:new_warehouse_type {
 
 
     aihints = {
-        prohibited_till = 18000
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 1,
+        normal_ai_limit = 2,
+        prohibited_till = 9600
     },
 
     heal_per_second = 220,

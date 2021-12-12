@@ -52,8 +52,8 @@ descriptions:new_productionsite_type {
     },
 
     aihints = {
-        prohibited_till = 4500,
-        forced_after = 5400
+        prohibited_till = 4800,
+        forced_after = 5700
     },
 
     working_positions = {
