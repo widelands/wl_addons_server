@@ -9,6 +9,21 @@ descriptions:new_productionsite_type {
     icon = dirname .. "menu.png",
     size = "medium",
 
+    buildcost = {
+        blackwood = 3,
+        planks = 3,
+        cloth = 3,
+        brick = 2,
+        grout = 2,
+        marble = 2
+    },
+    return_on_dismantle = {
+        blackwood = 1,
+        planks = 1,
+        granite = 2,
+        marble = 2
+    },
+
     animations = {
         idle = {
             pictures = path.list_files(dirname .. "idle_??.png"),
@@ -20,7 +35,13 @@ descriptions:new_productionsite_type {
         },
     },
 
-    aihints = {},
+    aihints = {
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 1,
+        normal_ai_limit = 1,
+        prohibited_till = 7200,
+        forced_after = 8100
+    },
 
     working_positions = {
         europeans_stonemason_normal = 1,

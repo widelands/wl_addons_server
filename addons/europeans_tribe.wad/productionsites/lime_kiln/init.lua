@@ -15,7 +15,6 @@ descriptions:new_productionsite_type {
             blackwood = 2,
             planks = 2,
             cloth = 2,
-            granite = 1,
             brick = 1,
             grout = 1,
             marble = 2
@@ -23,7 +22,7 @@ descriptions:new_productionsite_type {
         enhancement_return_on_dismantle = {
             blackwood = 1,
             planks = 1,
-            granite = 2,
+            granite = 1,
             marble = 2
         },
     },
@@ -51,8 +50,8 @@ descriptions:new_productionsite_type {
 
     aihints = {
         very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 3,
+        weak_ai_limit = 1,
+        normal_ai_limit = 1,
         basic_amount = 1,
         prohibited_till = 3000,
         forced_after = 3900
