@@ -170,15 +170,6 @@ local init = {
             port:set_wares("spear_wooden", math.ceil(7 / #ports))
         end
     end
-
-    -- Get all trainingsite types
-    local trainingsite_types = {}
-    local trainingsites = {}
-    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
-        if (building.type_name == "trainingsite") then
-            table.insert(trainingsite_types, building.name)
-        end
-    end
     
     for i = 1, 1000 do
         -- Delay of 15 min between actions
@@ -186,55 +177,9 @@ local init = {
         
         -- Time-dependent activation (gametime)
         if i == 8 then
-            if (player_slot.name == "Sweden") and (sf.x == 24) and (sf.y == 422) then
-                place_port(player, 23, 452)
-                place_building(player, 23, 452, 6, "europeans_clay_pit")
-                place_building(player, 23, 452, 6, "europeans_fishers_house_normal")
-            end 
-            if (player_slot.name == "England") and (sf.x == 380) and (sf.y == 499) then
-                -- Shetland
-                place_port(player, 412, 362, 1)
-                place_building(player, 412, 362, 6, "europeans_clay_pit")
-                place_building(player, 412, 362, 6, "europeans_fishers_house_normal")
-                -- Orkney
-                place_port(player, 386, 386, 1)
-                place_building(player, 386, 386, 6, "europeans_clay_pit")
-                place_building(player, 386, 386, 6, "europeans_fishers_house_normal")
-                -- Lewis / Harris
-                place_port(player, 359, 390, 1)
-                place_building(player, 359, 390, 6, "europeans_quarry_normal")
-                place_building(player, 359, 390, 6, "europeans_clay_pit")
-                place_building(player, 359, 390, 6, "europeans_fishers_house_normal")
-            end 
-            if (player_slot.name == "Italy") and (sf.x == 491) and (sf.y == 170) then
-                -- Sizilia
-                place_port(player, 478, 221, 1)
-                place_building(player, 478, 221, 6, "europeans_quarry_normal")
-                place_building(player, 478, 221, 6, "europeans_clay_pit")
-                place_building(player, 478, 221, 6, "europeans_fishers_house_normal")
-                -- Corsica
-                place_port(player, 438, 170, 1)
-                place_building(player, 438, 170, 6, "europeans_quarry_normal")
-                -- Sardenya
-                place_port(player, 437, 186, 1)
-                place_building(player, 437, 186, 6, "europeans_quarry_normal")
-            end 
             place_ship_random(player, 64)
         end
         if i == 12 then
-            if (player_slot.name == "England") and (sf.x == 380) and (sf.y == 499) then
-                -- Ireland
-                place_port(player, 348, 434, 1)
-                -- Island
-                place_port(player, 335, 363, 1)
-                place_building(player, 335, 363, 4, "europeans_quarry_advanced")
-            end
-            if (player_slot.name == "Italy") and (sf.x == 491) and (sf.y == 170) then
-                -- Greece
-                place_port(player, 31, 213, 1)
-                place_port(player, 47, 224, 1)
-                place_building(player, 47, 224, 6, "europeans_quarry_normal")
-            end
             place_ship_random(player, 64)
         end
     end

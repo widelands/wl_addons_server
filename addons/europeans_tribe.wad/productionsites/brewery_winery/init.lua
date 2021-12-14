@@ -23,7 +23,8 @@ descriptions:new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_brewer_advanced = 2
+        europeans_brewer_normal = 1,
+        europeans_brewer_advanced = 1
     },
 
     inputs = {

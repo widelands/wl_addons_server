@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 03:03+0100\n"
+"POT-Creation-Date: 2021-12-14 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -304,7 +304,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:53
 #: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:65
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:53
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:40
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:41
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_advanced/init.lua:38
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_basic/init.lua:68
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:52
@@ -314,7 +314,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:70
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:50
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:52
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:36
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:37
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:32
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:60
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:46
@@ -924,7 +924,7 @@ msgstr "Das Sammeln von Honig"
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:109
 #: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:87
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:109
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:112
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:113
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_advanced/init.lua:84
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_basic/init.lua:88
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_normal/init.lua:85
@@ -1002,21 +1002,21 @@ msgstr "Verbesserte Brauerei"
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:64
 #: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:74
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:64
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:52
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:53
 msgid "brewing beer"
 msgstr "Das Brauen von Bier"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:79
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:79
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:67
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:68
 msgid "brewing mead"
 msgstr "Das Brauen von Met"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:94
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:94
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:82
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:83
 msgid "brewing strong beer"
 msgstr "Das Brauen von Starkbier"
 
@@ -1039,7 +1039,7 @@ msgid "Advanced Brewery and Winery"
 msgstr "Verbesserte Brauerei und Kellerei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
-#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:97
+#: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:98
 msgid "making wine"
 msgstr "Das Keltern von Wein"
 
@@ -1235,7 +1235,7 @@ msgstr "Einfacher Bauernhof"
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:83
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:65
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:69
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:57
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:58
 msgid "planting barley"
 msgstr "Das Pflanzen von Gerste"
 
@@ -1243,7 +1243,7 @@ msgstr "Das Pflanzen von Gerste"
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:94
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:87
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:102
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:112
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:113
 msgid "planting rye"
 msgstr "Das Pflanzen von Roggen"
 
@@ -1251,7 +1251,7 @@ msgstr "Das Pflanzen von Roggen"
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:105
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:98
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:113
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:123
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:124
 msgid "planting wheat"
 msgstr "Das Pflanzen von Weizen"
 
@@ -1259,7 +1259,7 @@ msgstr "Das Pflanzen von Weizen"
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:116
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:109
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:124
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:134
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:135
 msgid "harvesting barley"
 msgstr "Das Ernten von Gerste"
 
@@ -1267,7 +1267,7 @@ msgstr "Das Ernten von Gerste"
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:128
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:133
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:160
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:194
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:195
 msgid "harvesting rye"
 msgstr "Das Ernten von Roggen"
 
@@ -1275,14 +1275,14 @@ msgstr "Das Ernten von Roggen"
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:140
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:145
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:172
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:206
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:207
 msgid "harvesting wheat"
 msgstr "Das Ernten von Weizen"
 
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:153
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:158
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:185
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:219
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:220
 #: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:77
 msgid "No Fields"
 msgstr "Keine Felder"
@@ -1290,7 +1290,7 @@ msgstr "Keine Felder"
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:154
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:159
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:186
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:220
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:221
 #: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:78
 msgid "Out of Fields"
 msgstr "Keine Felder"
@@ -1298,7 +1298,7 @@ msgstr "Keine Felder"
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:155
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:160
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:187
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:221
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:222
 msgctxt "europeans_building"
 msgid "The farmer working at this farm has no cleared soil to plant his seeds."
 msgstr ""
@@ -1313,14 +1313,14 @@ msgstr "Bauernhof Stufe 1"
 #. TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:76
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:80
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:90
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:91
 msgid "planting corn"
 msgstr "Das Pflanzen von Mais"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:121
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:148
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:170
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:171
 msgid "harvesting corn"
 msgstr "Das Ernten von Mais"
 
@@ -1332,13 +1332,13 @@ msgstr "Bauernhof Stufe 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:91
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:79
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:80
 msgid "planting blackroot"
 msgstr "Das Pflanzen von Dunkelrüben"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:136
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:158
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:159
 msgid "harvesting blackroot"
 msgstr "Das Ernten von Dunkelrüben"
 
@@ -1349,22 +1349,22 @@ msgid "Farm Level 3"
 msgstr "Bauernhof Stufe 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:68
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:69
 msgid "planting berrybush"
 msgstr "Das Pflanzen von Beerenbüschen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:101
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:102
 msgid "planting grape"
 msgstr "Das Pflanzen von Weinreben"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:146
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:147
 msgid "harvesting berry"
 msgstr "Das Ernten von Beeren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:182
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:183
 msgid "harvesting grape"
 msgstr "Das Ernten von Weintrauben"
 

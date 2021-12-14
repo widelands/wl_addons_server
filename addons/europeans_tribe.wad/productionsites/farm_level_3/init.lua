@@ -23,7 +23,8 @@ descriptions:new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_farmer_advanced = 3
+        europeans_farmer_normal = 1,
+        europeans_farmer_advanced = 2
     },
     
     inputs = {
