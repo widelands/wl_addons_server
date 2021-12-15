@@ -8,20 +8,6 @@ descriptions:new_productionsite_type {
     descname = pgettext("europeans_building", "Advanced Quarry"),
     icon = dirname .. "menu.png",
     size = "small",
-    
-    buildcost = {
-        planks = 3,
-        reed = 2,
-        cloth = 1,
-        brick = 1,
-        grout = 1,
-        marble = 1
-    },
-    return_on_dismantle = {
-        planks = 2,
-        granite = 1,
-        marble = 1
-    },
 
     animations = {
         idle = {
@@ -31,11 +17,6 @@ descriptions:new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 3,
-        prohibited_till = 7200,
-        forced_after = 8100
     },
 
     working_positions = {
@@ -47,6 +28,29 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=quarrying",
+                "call=mining",
+                "return=skipped"
+            }
+        },
+        quarrying = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+            descname = _"quarrying",
+            actions = {
+                "callworker=check_rocks",
+                "call=cut_granite on failure fail",
+                "call=cut_granite on failure fail",
+                "call=cut_marble on failure fail", -- This will find marble 2 out of 6 times
+                "call=cut_granite on failure fail",
+                "call=cut_granite on failure fail",
+                "call=cut_marble on failure fail", -- This will find marble 2 out of 6 times
+                "return=skipped"
+            }
+        },
+        mining = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+            descname = _"mining",
+            actions = {
                 "callworker=check_stone",
                 "call=mine_granite on failure fail",
                 "call=mine_granite on failure fail",
@@ -57,6 +61,22 @@ descriptions:new_productionsite_type {
                 "call=mine_marble on failure fail", -- This will find marble 2 out of 8 times
                 "call=mine_diamond on failure fail", -- This will find diamond 1 out of 8 times
                 "return=skipped"
+            }
+        },
+        cut_granite = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+            descname = _"quarrying granite",
+            actions = {
+                "callworker=cut_granite",
+                "sleep=duration:15s"
+            }
+        },
+        cut_marble = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+            descname = _"quarrying marble",
+            actions = {
+                "callworker=cut_marble",
+                "sleep=duration:15s"
             }
         },
         mine_granite = {

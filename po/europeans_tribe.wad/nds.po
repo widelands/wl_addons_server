@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-14 03:03+0100\n"
+"POT-Creation-Date: 2021-12-15 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -324,7 +324,7 @@ msgstr "Markt"
 #: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:38
 #: addons/europeans_tribe.wad/productionsites/mill_basic/init.lua:86
 #: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:54
-#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:48
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:29
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:58
 #: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:42
 #: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:48
@@ -1143,7 +1143,8 @@ msgstr "Köhlen oftoboen"
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_3/init.lua:80
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_4/init.lua:81
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:66
-#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:64
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:84
+#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:95
 msgid "mining granite"
 msgstr "Flint oftoboen"
 
@@ -1201,7 +1202,7 @@ msgstr "Köhle-Bargwark vun de Grött 3"
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_3/init.lua:88
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_4/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/coalmine_level_5/init.lua:74
-#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:88
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:108
 msgid "mining diamond"
 msgstr "Edelsteen oftoboen"
 
@@ -1572,7 +1573,8 @@ msgstr "Gold-Bargwark vun de Grött 3"
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_3/init.lua:88
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_4/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/goldmine_level_5/init.lua:74
-#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:72
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:92
+#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:103
 msgid "mining marble"
 msgstr "Marmel oftoboen"
 
@@ -1790,7 +1792,7 @@ msgstr "Iesen-Bargwark vun de Grött 3"
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_3/init.lua:88
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_4/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/ironmine_level_5/init.lua:74
-#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:80
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:100
 msgid "mining quartz"
 msgstr "Blinkerflint oftoboen"
 
@@ -1935,19 +1937,46 @@ msgctxt "europeans_building"
 msgid "Advanced Quarry"
 msgstr "Grote Flintslageree"
 
-#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:97
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:38
+#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:51
+#, fuzzy
+msgid "quarrying"
+msgstr "Marmel to slagen"
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:52
+#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:65
+#, fuzzy
+msgid "mining"
+msgstr "Köhlen oftoboen"
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:68
+#: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:67
+#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:79
+msgid "quarrying granite"
+msgstr "Flint to slagen"
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:76
+#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:87
+msgid "quarrying marble"
+msgstr "Marmel to slagen"
+
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:117
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:76
-#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:73
+#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:112
 msgid "No Rocks"
 msgstr "Keene Stenen"
 
-#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:98
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:118
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:77
-#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:74
+#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:113
 msgid "Out of Rocks"
 msgstr "Hebb keene Stenen mehr"
 
-#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:99
+#: addons/europeans_tribe.wad/productionsites/quarry_advanced/init.lua:119
 msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any stone in his work area."
@@ -1960,12 +1989,6 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Basic Quarry"
 msgstr "Lütte Flintslageree"
-
-#. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
-#: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:67
-#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:56
-msgid "quarrying granite"
-msgstr "Flint to slagen"
 
 #: addons/europeans_tribe.wad/productionsites/quarry_basic/init.lua:78
 msgctxt "europeans_building"
@@ -1983,12 +2006,7 @@ msgctxt "europeans_building"
 msgid "Normal Quarry"
 msgstr "Flintslageree"
 
-#. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
-#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:64
-msgid "quarrying marble"
-msgstr "Marmel to slagen"
-
-#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:75
+#: addons/europeans_tribe.wad/productionsites/quarry_normal/init.lua:114
 msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any rocks in his work area."

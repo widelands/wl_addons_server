@@ -41,6 +41,15 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=quarrying",
+                "call=mining",
+                "return=skipped"
+            }
+        },
+        quarrying = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+            descname = _"quarrying",
+            actions = {
                 "callworker=check_rocks",
                 "call=cut_granite on failure fail",
                 "call=cut_granite on failure fail",
@@ -48,6 +57,20 @@ descriptions:new_productionsite_type {
                 "call=cut_granite on failure fail",
                 "call=cut_granite on failure fail",
                 "call=cut_marble on failure fail", -- This will find marble 2 out of 6 times
+                "return=skipped"
+            }
+        },
+        mining = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+            descname = _"mining",
+            actions = {
+                "callworker=check_stone",
+                "call=mine_granite on failure fail",
+                "call=mine_granite on failure fail",
+                "call=mine_marble on failure fail", -- This will find marble 2 out of 6 times
+                "call=mine_granite on failure fail",
+                "call=mine_granite on failure fail",
+                "call=mine_marble on failure fail", -- This will find marble 2 out of 6 times
                 "return=skipped"
             }
         },
@@ -64,6 +87,22 @@ descriptions:new_productionsite_type {
             descname = _"quarrying marble",
             actions = {
                 "callworker=cut_marble",
+                "sleep=duration:15s"
+            }
+        },
+        mine_granite = {
+            -- TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
+            descname = _"mining granite",
+            actions = {
+                "callworker=mine_granite",
+                "sleep=duration:15s"
+            }
+        },
+        mine_marble = {
+            -- TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+            descname = _"mining marble",
+            actions = {
+                "callworker=mine_marble",
                 "sleep=duration:15s"
             }
         },
