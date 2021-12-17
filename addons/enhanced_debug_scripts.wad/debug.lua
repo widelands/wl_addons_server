@@ -234,13 +234,18 @@ function remove_road(startx, starty)
 end
 
 function connect_road(startx, starty, targetx, targety)
+    local roadtype = "normal"
+    
     local game = wl.Game()
     local map = game.map
     local startfield = map:get_field(startx, starty)
-    local startflag = startfield.immovable
-    local player = startflag.owner
-    local roadtype = "normal"
+    local player = startfield.owner
+    
+    if not (startfield.immovable) then
+        player:place_flag(map:get_field(startx, starty))
+    end
 
+    local startflag = startfield.immovable
     local mapx = math.floor(map.width / 2)
     local mapy = math.floor(map.height / 2)
     local diffx = targetx - startx
@@ -365,21 +370,21 @@ function connect_road(startx, starty, targetx, targety)
           startflag = road.end_flag
           startfield = startflag.fields[1]
 
-        -- special end roads (2 tiles)-- 
-        elseif (diffx == 2) and (diffy == 1) then
+        -- special roads (2 tiles)-- 
+        elseif (diffx > 0) and (diffy == 1) then
           road = player:place_road(roadtype, startflag, "br", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == 1) then
+        elseif (diffx < 0) and (diffy == 1) then
           road = player:place_road(roadtype, startflag, "bl", "l", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tl", "l", true)
+        elseif (diffx < 0) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "l", "tl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == 2) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tr", "r", true)
+        elseif (diffx > 0) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "r", "tr", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
 
