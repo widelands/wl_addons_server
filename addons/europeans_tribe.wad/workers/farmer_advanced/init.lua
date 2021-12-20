@@ -54,9 +54,9 @@ descriptions:new_worker_type {
         plant_reed = {
             "findspace=size:any radius:4 space",
             "walk=coords",
-            "animate=planting duration:4s",
+            "animate=planting duration:2s",
             "plant=attrib:seed_reed",
-            "animate=planting duration:4s",
+            "animate=planting duration:2s",
             "return"
         },
         plant_rye = {

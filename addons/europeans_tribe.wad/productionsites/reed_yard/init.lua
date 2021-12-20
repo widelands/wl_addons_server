@@ -59,7 +59,7 @@ descriptions:new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant_reed",
-                "sleep=duration:6s"
+                "sleep=duration:4s"
             }
         },
         harvest = {

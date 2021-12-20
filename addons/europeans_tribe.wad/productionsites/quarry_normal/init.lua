@@ -47,7 +47,7 @@ descriptions:new_productionsite_type {
             }
         },
         quarrying = {
-            -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
             descname = _"quarrying",
             actions = {
                 "callworker=check_rocks",
@@ -61,7 +61,7 @@ descriptions:new_productionsite_type {
             }
         },
         mining = {
-            -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start mining because ...
             descname = _"mining",
             actions = {
                 "callworker=check_stone",
@@ -79,7 +79,7 @@ descriptions:new_productionsite_type {
             descname = _"quarrying granite",
             actions = {
                 "callworker=cut_granite",
-                "sleep=duration:15s"
+                "sleep=duration:10s"
             }
         },
         cut_marble = {
@@ -87,7 +87,7 @@ descriptions:new_productionsite_type {
             descname = _"quarrying marble",
             actions = {
                 "callworker=cut_marble",
-                "sleep=duration:15s"
+                "sleep=duration:10s"
             }
         },
         mine_granite = {
@@ -95,7 +95,7 @@ descriptions:new_productionsite_type {
             descname = _"mining granite",
             actions = {
                 "callworker=mine_granite",
-                "sleep=duration:15s"
+                "sleep=duration:10s"
             }
         },
         mine_marble = {
@@ -103,7 +103,7 @@ descriptions:new_productionsite_type {
             descname = _"mining marble",
             actions = {
                 "callworker=mine_marble",
-                "sleep=duration:15s"
+                "sleep=duration:10s"
             }
         },
     },

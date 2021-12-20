@@ -58,7 +58,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs water or workers need experience",
                 "sleep=duration:5s",
-                "animate=working duration:15s",
+                "animate=working duration:10s",
                 "mine=resource_water radius:4 yield:80% when_empty:80%",
                 "produce=water:2"
             }
@@ -69,7 +69,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water",
                 "sleep=duration:60s",
-                "animate=working duration:15s",
+                "animate=working duration:10s",
                 "mine=resource_water radius:4 yield:80% when_empty:80%",
                 "produce=water"
             }

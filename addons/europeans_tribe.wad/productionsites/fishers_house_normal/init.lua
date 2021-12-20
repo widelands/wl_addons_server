@@ -60,7 +60,7 @@ descriptions:new_productionsite_type {
                 "consume=water",
                 "sleep=duration:15s",
                 "callworker=breed_in_sea",
-                "sleep=duration:30s",
+                "sleep=duration:20s",
             }
         },
         fishing_in_sea = {
@@ -69,7 +69,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fish or workers need experience",
                 "callworker=fish_in_sea",
-                "sleep=duration:45s",
+                "sleep=duration:35s",
             }
         },
         fishing_idle = {

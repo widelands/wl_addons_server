@@ -71,7 +71,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fish or workers need experience",
                 "callworker=fish_in_sea",
-                "sleep=duration:60s",
+                "sleep=duration:50s",
             }
         },
         fishing_idle = {

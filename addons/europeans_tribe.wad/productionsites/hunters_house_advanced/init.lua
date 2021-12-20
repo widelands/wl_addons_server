@@ -46,7 +46,7 @@ descriptions:new_productionsite_type {
                 "consume=water",
                 "sleep=duration:10s",
                 "callworker=release",
-                "sleep=duration:20s"
+                "sleep=duration:10s"
             }
         },
         hunting = {
@@ -55,7 +55,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs meat or workers need experience",
                 "callworker=hunt",
-                "sleep=duration:30s"
+                "sleep=duration:20s"
             }
         },
         hunting_idle = {

@@ -70,7 +70,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs meat or workers need experience",
                 "callworker=hunt",
-                "sleep=duration:60s"
+                "sleep=duration:50s"
             }
         },
         hunting_idle = {

@@ -57,7 +57,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs ore or economy needs granite or economy needs marble or workers need experience",
                 "consume=snack mead",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",

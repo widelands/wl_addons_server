@@ -20,7 +20,7 @@ descriptions:new_worker_type {
             "animate=dig duration:3s", -- Play a planting animation
             "animate=planting duration:2s", -- Play a planting animation
             "plant=attrib:tree_sapling",
-            "animate=water duration:3s",
+            "animate=water duration:2s",
             "return"
         }
     },

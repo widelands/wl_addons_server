@@ -49,9 +49,9 @@ descriptions:new_worker_type {
         plant_grape = {
             "findspace=size:any radius:2 space",
             "walk=coords",
-            "animate=plant duration:8s",
+            "animate=plant duration:6s",
             "plant=attrib:seed_grapes",
-            "animate=plant duration:8s",
+            "animate=plant duration:6s",
             "return"
         },
         plant_reed = {

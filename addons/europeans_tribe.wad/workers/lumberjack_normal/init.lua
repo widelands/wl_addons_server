@@ -18,7 +18,7 @@ descriptions:new_worker_type {
             "findobject=attrib:tree radius:14",
             "walk=object",
             "playsound=sound/atlanteans/saw/sawing priority:80% allow_multiple",
-            "animate=sawing duration:12s",
+            "animate=sawing duration:8s",
             "playsound=sound/woodcutting/tree_falling priority:100%",
             "callobject=fall",
             "animate=idle duration:2s",

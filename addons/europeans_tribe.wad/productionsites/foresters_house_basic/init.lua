@@ -68,7 +68,7 @@ descriptions:new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant",
-                "sleep=duration:25s"
+                "sleep=duration:20s"
             }
         },
     },
