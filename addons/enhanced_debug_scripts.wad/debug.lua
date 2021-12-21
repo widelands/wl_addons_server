@@ -170,6 +170,18 @@ function destroy_object(startx, starty)
     map:get_field(startx, starty).immovable:destroy()
 end
 
+function remove_ship(player, ship_name)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local ships = player:get_ships()
+    
+    for i, ship in pairs(ships) do
+        -- print(i, ship.shipname)
+        if (ship.shipname == ship_name) or (ship_name == "") then
+            ship:remove()
+        end
+    end
+end
 
 -- general flag/road/street settings --
 function place_flag(player_number, startx, starty)
@@ -222,13 +234,18 @@ function remove_road(startx, starty)
 end
 
 function connect_road(startx, starty, targetx, targety)
+    local roadtype = "normal"
+    
     local game = wl.Game()
     local map = game.map
     local startfield = map:get_field(startx, starty)
-    local startflag = startfield.immovable
-    local player = startflag.owner
-    local roadtype = "normal"
+    local player = startfield.owner
+    
+    if not (startfield.immovable) then
+        player:place_flag(map:get_field(startx, starty))
+    end
 
+    local startflag = startfield.immovable
     local mapx = math.floor(map.width / 2)
     local mapy = math.floor(map.height / 2)
     local diffx = targetx - startx
@@ -353,21 +370,21 @@ function connect_road(startx, starty, targetx, targety)
           startflag = road.end_flag
           startfield = startflag.fields[1]
 
-        -- special end roads (2 tiles)-- 
-        elseif (diffx == 2) and (diffy == 1) then
+        -- special roads (2 tiles)-- 
+        elseif (diffx > 0) and (diffy == 1) then
           road = player:place_road(roadtype, startflag, "br", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == 1) then
+        elseif (diffx < 0) and (diffy == 1) then
           road = player:place_road(roadtype, startflag, "bl", "l", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tl", "l", true)
+        elseif (diffx < 0) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "l", "tl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == 2) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tr", "r", true)
+        elseif (diffx > 0) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "r", "tr", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
 
@@ -620,6 +637,19 @@ function dismantle_idle_buildings(player_number, productivity_threshold)
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
           if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
+             building:dismantle(true)
+          end
+       end
+    end
+end
+
+function dismantle_stopped_buildings(player_number)
+    local game = wl.Game()
+    local player = game.players[player_number]
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == "productionsite" and building.is_stopped == true then
              building:dismantle(true)
           end
        end

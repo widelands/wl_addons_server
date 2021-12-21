@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Stephan Lutz <stephan-lutz@gmx.de>, 2021
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-02 03:03+0100\n"
+"PO-Revision-Date: 2021-11-27 12:40+0000\n"
+"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2021\n"
+"Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/perma-resi.wad/addon:6
+msgid ""
+"Keep resource indicators until a mine starts to work in the area. Mines will "
+"gradually, but randomly remove matching indicators."
+msgstr ""
+"Behalte die Rohstoffanzeiger bis eine Mine ihre Arbeit in der Umgebung "
+"beginnt. Minen werden langsam und zufällig zugehörige Anzeiger entfernen."
+
+#: addons/perma-resi.wad/addon:8
+msgid "Permanent Resource Indicators"
+msgstr "Permanente Rohstoffanzeiger"
+
+#: addons/perma-resi.wad/postload.lua:24
+msgid "working"
+msgstr "Das Arbeiten"
+
+#: addons/perma-resi.wad/postload.lua:42 addons/perma-resi.wad/postload.lua:111
+#: addons/perma-resi.wad/postload.lua:170
+#: addons/perma-resi.wad/postload.lua:182
+#: addons/perma-resi.wad/postload.lua:191
+#: addons/perma-resi.wad/postload.lua:271
+#: addons/perma-resi.wad/postload.lua:280
+#: addons/perma-resi.wad/postload.lua:373
+#: addons/perma-resi.wad/postload.lua:385
+msgid "mining gold"
+msgstr "Das Schürfen von Gold"
+
+#: addons/perma-resi.wad/postload.lua:55 addons/perma-resi.wad/postload.lua:82
+#: addons/perma-resi.wad/postload.lua:202
+#: addons/perma-resi.wad/postload.lua:309
+#: addons/perma-resi.wad/postload.lua:327
+#: addons/perma-resi.wad/postload.lua:414
+#: addons/perma-resi.wad/postload.lua:423
+msgid "mining granite"
+msgstr "Das Abbauen von Stein"
+
+#: addons/perma-resi.wad/postload.lua:71 addons/perma-resi.wad/postload.lua:141
+#: addons/perma-resi.wad/postload.lua:150
+#: addons/perma-resi.wad/postload.lua:159
+#: addons/perma-resi.wad/postload.lua:252
+#: addons/perma-resi.wad/postload.lua:261
+#: addons/perma-resi.wad/postload.lua:354
+#: addons/perma-resi.wad/postload.lua:363
+msgid "mining coal"
+msgstr "Das Fördern von Kohle"
+
+#: addons/perma-resi.wad/postload.lua:91
+msgid "mining quartz"
+msgstr "Das Abbauen von Bergkristall"
+
+#: addons/perma-resi.wad/postload.lua:100
+msgid "mining diamonds"
+msgstr "Das Abbauen von Diamanten"
+
+#: addons/perma-resi.wad/postload.lua:121
+#: addons/perma-resi.wad/postload.lua:213
+#: addons/perma-resi.wad/postload.lua:225
+#: addons/perma-resi.wad/postload.lua:234
+#: addons/perma-resi.wad/postload.lua:290
+#: addons/perma-resi.wad/postload.lua:299
+#: addons/perma-resi.wad/postload.lua:395
+#: addons/perma-resi.wad/postload.lua:404
+msgid "mining iron"
+msgstr "Das Schürfen von Eisen"
+
+#: addons/perma-resi.wad/postload.lua:318
+#: addons/perma-resi.wad/postload.lua:336
+msgid "mining marble"
+msgstr "Das Abbauen von Marmor"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/amazons/init.lua:8
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:8
+#: addons/perma-resi.wad/resi/barbarians/init.lua:8
+#: addons/perma-resi.wad/resi/empire/init.lua:8
+#: addons/perma-resi.wad/resi/frisians/init.lua:8
+msgctxt "resource_indicator"
+msgid "No Resources"
+msgstr "Keine Rohstoffe"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/amazons/init.lua:23
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:74
+#: addons/perma-resi.wad/resi/barbarians/init.lua:65
+#: addons/perma-resi.wad/resi/empire/init.lua:65
+#: addons/perma-resi.wad/resi/frisians/init.lua:74
+msgctxt "resource_indicator"
+msgid "Some Gold"
+msgstr "Wenig Gold"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/amazons/init.lua:38
+#: addons/perma-resi.wad/resi/barbarians/init.lua:103
+#: addons/perma-resi.wad/resi/frisians/init.lua:118
+msgctxt "resource_indicator"
+msgid "Some Granite"
+msgstr "Wenig Stein"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/amazons/init.lua:53
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:162
+#: addons/perma-resi.wad/resi/barbarians/init.lua:141
+#: addons/perma-resi.wad/resi/empire/init.lua:141
+#: addons/perma-resi.wad/resi/frisians/init.lua:162
+msgctxt "resource_indicator"
+msgid "A Lot of Gold"
+msgstr "Viel Gold"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/amazons/init.lua:68
+#: addons/perma-resi.wad/resi/barbarians/init.lua:179
+#: addons/perma-resi.wad/resi/frisians/init.lua:206
+msgctxt "resource_indicator"
+msgid "A Lot of Granite"
+msgstr "Viel Stein"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:30
+#: addons/perma-resi.wad/resi/barbarians/init.lua:27
+#: addons/perma-resi.wad/resi/empire/init.lua:27
+#: addons/perma-resi.wad/resi/frisians/init.lua:30
+msgctxt "resource_indicator"
+msgid "Water"
+msgstr "Wasser"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:52
+#: addons/perma-resi.wad/resi/barbarians/init.lua:46
+#: addons/perma-resi.wad/resi/empire/init.lua:46
+#: addons/perma-resi.wad/resi/frisians/init.lua:52
+msgctxt "resource_indicator"
+msgid "Some Coal"
+msgstr "Wenig Kohle"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:96
+#: addons/perma-resi.wad/resi/barbarians/init.lua:84
+#: addons/perma-resi.wad/resi/empire/init.lua:84
+#: addons/perma-resi.wad/resi/frisians/init.lua:96
+msgctxt "resource_indicator"
+msgid "Some Iron"
+msgstr "Wenig Eisen"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:118
+msgctxt "resource_indicator"
+msgid "Some Crystals"
+msgstr "Wenig Edelsteine"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:140
+#: addons/perma-resi.wad/resi/barbarians/init.lua:122
+#: addons/perma-resi.wad/resi/empire/init.lua:122
+#: addons/perma-resi.wad/resi/frisians/init.lua:140
+msgctxt "resource_indicator"
+msgid "A Lot of Coal"
+msgstr "Viel Kohle"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:184
+#: addons/perma-resi.wad/resi/barbarians/init.lua:160
+#: addons/perma-resi.wad/resi/empire/init.lua:160
+#: addons/perma-resi.wad/resi/frisians/init.lua:184
+msgctxt "resource_indicator"
+msgid "A Lot of Iron"
+msgstr "Viel Eisen"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/atlanteans/init.lua:206
+msgctxt "resource_indicator"
+msgid "A Lot of Crystals"
+msgstr "Viele Edelsteine"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/empire/init.lua:103
+msgctxt "resource_indicator"
+msgid "Some Marble"
+msgstr "Wenig Marmor"
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/perma-resi.wad/resi/empire/init.lua:179
+msgctxt "resource_indicator"
+msgid "A Lot of Marble"
+msgstr "Viel Marmor"
