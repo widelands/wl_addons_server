@@ -78,61 +78,61 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 descriptions:new_ship_type {
-   name = "europeans_ship",
-   -- TRANSLATORS: This is the europeans' ship's name used in lists of units
-   descname = pgettext("europeans_ship", "Ship"),
-   animation_directory = dirname,
-   icon = dirname .. "menu.png",
-   capacity = 32,
-   vision_range = 4,
+    name = "europeans_ship",
+    -- TRANSLATORS: This is the europeans' ship's name used in lists of units
+    descname = pgettext("europeans_ship", "Ship"),
+    animation_directory = dirname,
+    icon = dirname .. "menu.png",
+    capacity = 32,
+    vision_range = 4,
 
-   animations = {
-      idle = {
-         hotspot = { 89, 86 },
-         fps = 10
-      },
-      sinking = {
-         hotspot = { 89, 86 },
-         fps = 7
-      },
-      sail = {
-         hotspot = { 89, 86 },
-         fps = 10,
-         directional = true
-      }
-   },
+    animations = {
+        idle = {
+            hotspot = { 89, 86 },
+            fps = 10
+        },
+        sinking = {
+            hotspot = { 89, 86 },
+            fps = 7
+        },
+        sail = {
+            hotspot = { 89, 86 },
+            fps = 10,
+            directional = true
+        }
+    },
 
-   names = {
-      -- TRANSLATORS: This europeans ship is named after a continent
-      pgettext("shipname", "Europa"),
-      pgettext("shipname", "Europe"),
-      pgettext("shipname", "Island"),
-      pgettext("shipname", "Great Britain"),
-      pgettext("shipname", "Scandinavia"),
-      pgettext("shipname", "Alpinia"),
-      pgettext("shipname", "Iberia"),
-      pgettext("shipname", "Italia"),
-      pgettext("shipname", "Francia"),
-      pgettext("shipname", "Germania"),
-      pgettext("shipname", "Polandia"),
-      pgettext("shipname", "Czechia"),
-      pgettext("shipname", "Slowakia"),
-      pgettext("shipname", "Hungaria"),
-      pgettext("shipname", "Romania"),
-      pgettext("shipname", "Bulgaria"),
-      pgettext("shipname", "Ukrainia"),
-      pgettext("shipname", "Georgia"),
-      pgettext("shipname", "Russia"),
-      pgettext("shipname", "Baltika"),
-      pgettext("shipname", "Balkania"),
-      pgettext("shipname", "Benelux"),
-      pgettext("shipname", "Greece"),
-      pgettext("shipname", "Sizilia"),
-      pgettext("shipname", "Corsica"),
-      pgettext("shipname", "Sardenia"),
-      pgettext("shipname", "Malta"),
-      pgettext("shipname", "Cypria"),
-   }
+    names = {
+        -- TRANSLATORS: This europeans ship is named after a continent
+        pgettext("shipname", "Europa"),
+        pgettext("shipname", "Europe"),
+        pgettext("shipname", "Island"),
+        pgettext("shipname", "Great Britain"),
+        pgettext("shipname", "Scandinavia"),
+        pgettext("shipname", "Alpinia"),
+        pgettext("shipname", "Iberia"),
+        pgettext("shipname", "Italia"),
+        pgettext("shipname", "Francia"),
+        pgettext("shipname", "Germania"),
+        pgettext("shipname", "Polandia"),
+        pgettext("shipname", "Czechia"),
+        pgettext("shipname", "Slowakia"),
+        pgettext("shipname", "Hungaria"),
+        pgettext("shipname", "Romania"),
+        pgettext("shipname", "Bulgaria"),
+        pgettext("shipname", "Ukrainia"),
+        pgettext("shipname", "Georgia"),
+        pgettext("shipname", "Russia"),
+        pgettext("shipname", "Baltika"),
+        pgettext("shipname", "Balkania"),
+        pgettext("shipname", "Benelux"),
+        pgettext("shipname", "Greece"),
+        pgettext("shipname", "Sizilia"),
+        pgettext("shipname", "Corsica"),
+        pgettext("shipname", "Sardenia"),
+        pgettext("shipname", "Malta"),
+        pgettext("shipname", "Cypria"),
+    }
 }
 
 pop_textdomain()

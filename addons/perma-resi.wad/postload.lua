@@ -1,8 +1,10 @@
+push_textdomain("tribes")
+
 descriptions = wl.Descriptions()
 
 function set_miner_prg(name, r, what)
    descriptions:modify_unit("worker", name, "programs", "set", "remove_resi_" .. what, {
-      "findobject=attrib:resi_" .. what .. " radius:" .. r,
+      "findobject=attrib:resi attrib:" .. what .. " radius:" .. r .. " no_notify",
       "removeobject"
    })
 end
@@ -25,10 +27,9 @@ function set_water_prg(tribe)
             "animate=working duration:20s",
             "mine=resource_water radius:1 yield:100% when_empty:65%",
             "produce=water",
-            "callworker=remove_resi_water",
+            "callworker=remove_resi_water on failure complete",
    }})
 end
-
 
 
 -- Amazons --
@@ -46,7 +47,7 @@ descriptions:modify_unit("productionsite", "amazons_gold_digger_dwelling",
          "animate=working duration:20s",
          "mine=resource_gold radius:1 yield:100% when_empty:5%",
          "produce=gold_dust",
-         "callworker=remove_resi_gold",
+         "callworker=remove_resi_gold on failure complete",
 }})
 
 descriptions:modify_unit("productionsite", "amazons_stonemine", "programs",
@@ -56,7 +57,7 @@ descriptions:modify_unit("productionsite", "amazons_stonemine", "programs",
          "animate=working duration:10s",
          "mine=resource_stones radius:1 yield:100% when_empty:20%",
          "produce=granite",
-         "callworker=remove_resi_stones",
+         "callworker=remove_resi_stones on failure complete",
 }})
 
 
@@ -72,7 +73,7 @@ descriptions:modify_unit("productionsite", "atlanteans_coalmine", "programs",
          "animate=working duration:10s",
          "mine=resource_coal radius:4 yield:100% when_empty:5%",
          "produce=coal",
-         "callworker=remove_resi_coal",
+         "callworker=remove_resi_coal on failure complete",
 }})
 
   -- crystal mine (3 produce programs) --
@@ -83,7 +84,7 @@ descriptions:modify_unit("productionsite", "atlanteans_crystalmine", "programs",
          "animate=working duration:15s",
          "mine=resource_stones radius:4 yield:100% when_empty:5%",
          "produce=granite",
-         "callworker=remove_resi_stones",
+         "callworker=remove_resi_stones on failure complete",
 }})
 descriptions:modify_unit("productionsite", "atlanteans_crystalmine", "programs",
    "set", "a_mine_produce_quartz", {
@@ -92,7 +93,7 @@ descriptions:modify_unit("productionsite", "atlanteans_crystalmine", "programs",
          "animate=working duration:10s",
          "mine=resource_stones radius:4 yield:100% when_empty:5%",
          "produce=quartz",
-         "callworker=remove_resi_stones",
+         "callworker=remove_resi_stones on failure complete",
 }})
 descriptions:modify_unit("productionsite", "atlanteans_crystalmine", "programs",
    "set", "a_mine_produce_diamond", {
@@ -101,7 +102,7 @@ descriptions:modify_unit("productionsite", "atlanteans_crystalmine", "programs",
          "animate=working duration:25s",
          "mine=resource_stones radius:4 yield:100% when_empty:5%",
          "produce=diamond",
-         "callworker=remove_resi_stones",
+         "callworker=remove_resi_stones on failure complete",
 }})
   -- end crystal mine --
 
@@ -112,7 +113,7 @@ descriptions:modify_unit("productionsite", "atlanteans_goldmine", "programs",
          "animate=working duration:22s",
          "mine=resource_gold radius:4 yield:100% when_empty:5%",
          "produce=gold_ore",
-         "callworker=remove_resi_gold",
+         "callworker=remove_resi_gold on failure complete",
 }})
 
 descriptions:modify_unit("productionsite", "atlanteans_ironmine", "programs",
@@ -122,7 +123,7 @@ descriptions:modify_unit("productionsite", "atlanteans_ironmine", "programs",
          "animate=working duration:14s",
          "mine=resource_iron radius:4 yield:100% when_empty:5%",
          "produce=iron_ore",
-         "callworker=remove_resi_iron",
+         "callworker=remove_resi_iron on failure complete",
 }})
 
 
@@ -142,7 +143,7 @@ descriptions:modify_unit("productionsite", "barbarians_coalmine", "programs",
          "animate=working duration:10s",
          "mine=resource_coal radius:2 yield:33.33% when_empty:5% experience_on_fail:17%",
          "produce=coal",
-         "callworker=remove_resi_coal",
+         "callworker=remove_resi_coal on failure complete",
 }})
 descriptions:modify_unit("productionsite", "barbarians_coalmine_deep", "programs",
    "set", "mine_produce", {
@@ -151,7 +152,7 @@ descriptions:modify_unit("productionsite", "barbarians_coalmine_deep", "programs
          "animate=working duration:9s500ms",
          "mine=resource_coal radius:2 yield:66.66% when_empty:5% experience_on_fail:17%",
          "produce=coal",
-         "callworker=remove_resi_coal",
+         "callworker=remove_resi_coal on failure complete",
 }})
 descriptions:modify_unit("productionsite", "barbarians_coalmine_deeper", "programs",
    "set", "mine_produce", {
@@ -160,7 +161,7 @@ descriptions:modify_unit("productionsite", "barbarians_coalmine_deeper", "progra
          "animate=working duration:7s",
          "mine=resource_coal radius:2 yield:100% when_empty:10% experience_on_fail:2%",
          "produce=coal",
-         "callworker=remove_resi_coal",
+         "callworker=remove_resi_coal on failure complete",
 }})
 
   -- gold --
@@ -174,7 +175,7 @@ descriptions:modify_unit("productionsite", "barbarians_goldmine", "programs",
          "animate=working duration:20s",
          "mine=resource_gold radius:2 yield:33.33% when_empty:5% experience_on_fail:17%",
          "produce=gold_ore",
-         "callworker=remove_resi_gold",
+         "callworker=remove_resi_gold on failure complete",
 }})
 descriptions:modify_unit("productionsite", "barbarians_goldmine_deep", "programs",
    "set", "mine_produce", {
@@ -183,7 +184,7 @@ descriptions:modify_unit("productionsite", "barbarians_goldmine_deep", "programs
          "animate=working duration:9s500ms",
          "mine=resource_gold radius:2 yield:66.66% when_empty:5% experience_on_fail:17%",
          "produce=gold_ore",
-         "callworker=remove_resi_gold",
+         "callworker=remove_resi_gold on failure complete",
 }})
 descriptions:modify_unit("productionsite", "barbarians_goldmine_deeper", "programs",
    "set", "mine_produce", {
@@ -192,7 +193,7 @@ descriptions:modify_unit("productionsite", "barbarians_goldmine_deeper", "progra
          "animate=working duration:9s",
          "mine=resource_gold radius:2 yield:100% when_empty:10% experience_on_fail:2%",
          "produce=gold_ore",
-         "callworker=remove_resi_gold",
+         "callworker=remove_resi_gold on failure complete",
 }})
 
   -- granite --
@@ -203,7 +204,7 @@ descriptions:modify_unit("productionsite", "barbarians_granitemine", "programs",
          "animate=working duration:10s",
          "mine=resource_stones radius:2 yield:100% when_empty:5% experience_on_fail:2%",
          "produce=granite",
-         "callworker=remove_resi_stones",
+         "callworker=remove_resi_stones on failure complete",
 }})
 
   -- iron --
@@ -217,7 +218,7 @@ descriptions:modify_unit("productionsite", "barbarians_ironmine", "programs",
          "animate=working duration:20s",
          "mine=resource_iron radius:2 yield:33.33% when_empty:5% experience_on_fail:17%",
          "produce=iron_ore",
-         "callworker=remove_resi_iron",
+         "callworker=remove_resi_iron on failure complete",
 }})
 descriptions:modify_unit("productionsite", "barbarians_ironmine_deep", "programs",
    "set", "mine_produce", {
@@ -226,7 +227,7 @@ descriptions:modify_unit("productionsite", "barbarians_ironmine_deep", "programs
          "animate=working duration:9s500ms",
          "mine=resource_iron radius:2 yield:66.66% when_empty:5% experience_on_fail:17%",
          "produce=iron_ore",
-         "callworker=remove_resi_iron",
+         "callworker=remove_resi_iron on failure complete",
 }})
 descriptions:modify_unit("productionsite", "barbarians_ironmine_deeper", "programs",
    "set", "mine_produce", {
@@ -235,7 +236,7 @@ descriptions:modify_unit("productionsite", "barbarians_ironmine_deeper", "progra
          "animate=working duration:10s",
          "mine=resource_iron radius:2 yield:100% when_empty:10% experience_on_fail:2%",
          "produce=iron_ore",
-         "callworker=remove_resi_iron",
+         "callworker=remove_resi_iron on failure complete",
 }})
 
 
@@ -253,7 +254,7 @@ descriptions:modify_unit("productionsite", "empire_coalmine", "programs",
       "animate=working duration:14s",
       "mine=resource_coal radius:2 yield:50% when_empty:5% experience_on_fail:17%",
       "produce=coal",
-      "callworker=remove_resi_coal",
+      "callworker=remove_resi_coal on failure complete",
 }})
 descriptions:modify_unit("productionsite", "empire_coalmine_deep", "programs",
    "set", "mine_produce", {
@@ -262,7 +263,7 @@ descriptions:modify_unit("productionsite", "empire_coalmine_deep", "programs",
       "animate=working duration:8s",
       "mine=resource_coal radius:2 yield:100% when_empty:5% experience_on_fail:2%",
       "produce=coal",
-      "callworker=remove_resi_coal",
+      "callworker=remove_resi_coal on failure complete",
 }})
 
 descriptions:modify_unit("productionsite", "empire_goldmine", "programs",
@@ -272,7 +273,7 @@ descriptions:modify_unit("productionsite", "empire_goldmine", "programs",
       "animate=working duration:21s",
       "mine=resource_gold radius:2 yield:50% when_empty:5% experience_on_fail:17%",
       "produce=gold_ore",
-      "callworker=remove_resi_gold",
+      "callworker=remove_resi_gold on failure complete",
 }})
 descriptions:modify_unit("productionsite", "empire_goldmine_deep", "programs",
    "set", "mine_produce", {
@@ -281,7 +282,7 @@ descriptions:modify_unit("productionsite", "empire_goldmine_deep", "programs",
       "animate=working duration:13s",
       "mine=resource_gold radius:2 yield:100% when_empty:5% experience_on_fail:2%",
       "produce=gold_ore",
-      "callworker=remove_resi_gold",
+      "callworker=remove_resi_gold on failure complete",
 }})
 
 descriptions:modify_unit("productionsite", "empire_ironmine", "programs",
@@ -291,7 +292,7 @@ descriptions:modify_unit("productionsite", "empire_ironmine", "programs",
       "animate=working duration:14s",
       "mine=resource_iron radius:2 yield:50% when_empty:5% experience_on_fail:17%",
       "produce=iron_ore",
-      "callworker=remove_resi_iron",
+      "callworker=remove_resi_iron on failure complete",
 }})
 descriptions:modify_unit("productionsite", "empire_ironmine_deep", "programs",
    "set", "mine_produce", {
@@ -300,7 +301,7 @@ descriptions:modify_unit("productionsite", "empire_ironmine_deep", "programs",
       "animate=working duration:10s",
       "mine=resource_iron radius:2 yield:100% when_empty:5% experience_on_fail:2%",
       "produce=iron_ore",
-      "callworker=remove_resi_iron",
+      "callworker=remove_resi_iron on failure complete",
 }})
 
 descriptions:modify_unit("productionsite", "empire_marblemine", "programs",
@@ -310,7 +311,7 @@ descriptions:modify_unit("productionsite", "empire_marblemine", "programs",
       "animate=working duration:10s500ms",
       "mine=resource_stones radius:2 yield:50% when_empty:5% experience_on_fail:17%",
       "produce=granite",
-      "callworker=remove_resi_stones",
+      "callworker=remove_resi_stones on failure complete",
 }})
 descriptions:modify_unit("productionsite", "empire_marblemine", "programs",
    "set", "a_mine_produce_marble", {
@@ -319,7 +320,7 @@ descriptions:modify_unit("productionsite", "empire_marblemine", "programs",
       "animate=working duration:10s500ms",
       "mine=resource_stones radius:2 yield:50% when_empty:5% experience_on_fail:17%",
       "produce=marble",
-      "callworker=remove_resi_stones",
+      "callworker=remove_resi_stones on failure complete",
 }})
 descriptions:modify_unit("productionsite", "empire_marblemine_deep", "programs",
    "set", "mine_produce_granite", {
@@ -328,7 +329,7 @@ descriptions:modify_unit("productionsite", "empire_marblemine_deep", "programs",
       "animate=working duration:7s800ms",
       "mine=resource_stones radius:2 yield:100% when_empty:5% experience_on_fail:2%",
       "produce=granite",
-      "callworker=remove_resi_stones",
+      "callworker=remove_resi_stones on failure complete",
 }})
 descriptions:modify_unit("productionsite", "empire_marblemine_deep", "programs",
    "set", "mine_produce_marble", {
@@ -337,7 +338,7 @@ descriptions:modify_unit("productionsite", "empire_marblemine_deep", "programs",
       "animate=working duration:7s800ms",
       "mine=resource_stones radius:2 yield:100% when_empty:5% experience_on_fail:2%",
       "produce=marble",
-      "callworker=remove_resi_stones",
+      "callworker=remove_resi_stones on failure complete",
 }})
 
 
@@ -355,7 +356,7 @@ descriptions:modify_unit("productionsite", "frisians_coalmine", "programs",
       "animate=working duration:15s",
       "mine=resource_coal radius:3 yield:50% when_empty:5% experience_on_fail:20%",
       "produce=coal",
-      "callworker=remove_resi_coal",
+      "callworker=remove_resi_coal on failure complete",
 }})
 descriptions:modify_unit("productionsite", "frisians_coalmine_deep", "programs",
    "set", "mine_produce", {
@@ -364,7 +365,7 @@ descriptions:modify_unit("productionsite", "frisians_coalmine_deep", "programs",
       "animate=working duration:8s700ms",
       "mine=resource_coal radius:3 yield:100% when_empty:10% experience_on_fail:5%",
       "produce=coal",
-      "callworker=remove_resi_coal",
+      "callworker=remove_resi_coal on failure complete",
 }})
 
 descriptions:modify_unit("productionsite", "frisians_goldmine", "programs",
@@ -377,7 +378,7 @@ descriptions:modify_unit("productionsite", "frisians_goldmine", "programs",
       "animate=working duration:20s",
       "mine=resource_gold radius:3 yield:50% when_empty:5% experience_on_fail:20%",
       "produce=gold_ore",
-      "callworker=remove_resi_gold",
+      "callworker=remove_resi_gold on failure complete",
 }})
 descriptions:modify_unit("productionsite", "frisians_goldmine_deep", "programs",
    "set", "mine_produce", {
@@ -386,7 +387,7 @@ descriptions:modify_unit("productionsite", "frisians_goldmine_deep", "programs",
       "animate=working duration:12s200ms",
       "mine=resource_coal radius:3 yield:100% when_empty:10% experience_on_fail:5%",
       "produce=gold_ore",
-      "callworker=remove_resi_gold",
+      "callworker=remove_resi_gold on failure complete",
 }})
 
 descriptions:modify_unit("productionsite", "frisians_ironmine", "programs",
@@ -396,7 +397,7 @@ descriptions:modify_unit("productionsite", "frisians_ironmine", "programs",
       "animate=working duration:20s",
       "mine=resource_iron radius:3 yield:50% when_empty:5% experience_on_fail:20%",
       "produce=iron_ore",
-      "callworker=remove_resi_iron",
+      "callworker=remove_resi_iron on failure complete",
 }})
 descriptions:modify_unit("productionsite", "frisians_ironmine_deep", "programs",
    "set", "mine_produce", {
@@ -405,7 +406,7 @@ descriptions:modify_unit("productionsite", "frisians_ironmine_deep", "programs",
       "animate=working duration:8s700ms",
       "mine=resource_coal radius:3 yield:100% when_empty:10% experience_on_fail:5%",
       "produce=iron_ore",
-      "callworker=remove_resi_iron",
+      "callworker=remove_resi_iron on failure complete",
 }})
 
 descriptions:modify_unit("productionsite", "frisians_rockmine", "programs",
@@ -415,7 +416,7 @@ descriptions:modify_unit("productionsite", "frisians_rockmine", "programs",
       "animate=working duration:21s",
       "mine=resource_stones radius:3 yield:50% when_empty:5% experience_on_fail:20%",
       "produce=granite",
-      "callworker=remove_resi_stones",
+      "callworker=remove_resi_stones on failure complete",
 }})
 descriptions:modify_unit("productionsite", "frisians_rockmine_deep", "programs",
    "set", "mine_produce_granite", {
@@ -424,7 +425,10 @@ descriptions:modify_unit("productionsite", "frisians_rockmine_deep", "programs",
       "animate=working duration:8s700ms",
       "mine=resource_coal radius:3 yield:100% when_empty:10% experience_on_fail:5%",
       "produce=granite",
-      "callworker=remove_resi_stones",
+      "callworker=remove_resi_stones on failure complete",
 }})
 
+--------
+
+pop_textdomain()
 

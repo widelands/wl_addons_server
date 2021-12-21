@@ -10,140 +10,81 @@ init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _"Trading Outpost",
     -- TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
-    tooltip = _"If this player runs low on important wares, they will be replenished for free. Debug Mode.",
+    tooltip = _"This starting condition contains a market as an additional building, where some wares can be bought for gold, quartz and diamonds.",
     func =  function(player, shared_in_start)
 
     local sf = wl.Game().map.player_slots[player.number].starting_field
     if shared_in_start then
-     sf = shared_in_start
+        sf = shared_in_start
     else
-     player:allow_workers("all")
+        player:allow_workers("all")
     end
-
+       
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {
-                water = 1023,
-                log = 192,
-                granite = 64,
-                reed = 64,
-                coal = 48,
-                blackwood = 32,
-                planks = 32,
-                cloth = 32,
-                ore = 32,
-                iron = 32,
-                spidercloth = 32,
-                marble = 32,
-                quartz = 32,
-                marble_column = 24,
-                diamond = 24,
-                gold = 4,
-                buckets = 16,
-                basket = 16,
-                hammer = 12,
-                saw = 12,
-                shovel = 8,
-                pick = 8,
-                scythe = 6,
-                fire_tongs = 4,
-                felling_ax = 4,
-                bread_paddle = 2,
-                fishing_net = 2,
-                fishing_rod = 2,
-                hook_pole = 2,
-                kitchen_tools = 2,
-                hunting_bow = 2,
-                hunting_spear = 2,
-                milking_tongs = 2
+                water = 63,
+                log = 15,
+                reed = 15,
+                granite = 15,
+                coal = 15,
+                ore = 15,
+                iron = 15,
+                gold = 15,
+                quartz = 63,
+                diamond = 63,
+                buckets = 24,
+                basket = 15,
+                pick = 9,
+                hammer = 9,
+                saw = 9,
+                scythe = 7,
+                shovel = 7,
+                felling_ax = 7,
+                fire_tongs = 5,
+                milking_tongs = 3,
+                bread_paddle = 3,
+                hook_pole = 3,
+                kitchen_tools = 3,
+                fishing_net = 3,
+                fishing_rod = 3,
+                hunting_bow = 3,
+                hunting_spear = 3,
+                needles = 2,
+                armor = 15,
+                tabard = 15,
+                spear_wooden = 15
             },
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 16,
-                europeans_trainer_basic = 3,
-                europeans_smith_basic = 2
+                europeans_farmer_basic = 8,
+                europeans_miner_basic = 6,
+                europeans_lumberjack_basic = 6,
+                europeans_forester_basic = 6,
+                europeans_trainer_basic = 4,
+                europeans_stonecutter_basic = 3,
+                europeans_hunter_basic = 2,
+                europeans_fisher_basic = 2,
+                europeans_carpenter_basic = 2,
+                europeans_charcoal_burner_basic = 2,
+                europeans_stonemason_basic = 2,
+                europeans_smith_basic = 2,
+                europeans_brewer_basic = 1,
+                europeans_miller_basic = 1,
+                europeans_baker_basic = 1,
+                europeans_smelter_basic = 1,
+                europeans_weaver_basic = 1,
+                europeans_claydigger_basic = 1
           },
             soldiers = {
-                [{0,0,0,0}] = 16,
+                [{0,0,0,0}] = 24,
           }
     })
-    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(6), {
+    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(8), {
     })
-
-    -- Get all warehouse types
-    local warehouse_types = {}
-    local warehouses = {}
-    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
-        if (building.type_name == "warehouse") then
-            table.insert(warehouse_types, building.name)
-        end
-    end
+    place_building_in_region(player, "europeans_market", sf:region(6), {
+    })
     
-    -- Get all trainingsite types
-    local trainingsite_types = {}
-    local trainingsites = {}
-    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
-        if (building.type_name == "trainingsite") then
-            table.insert(trainingsite_types, building.name)
-        end
-    end
-
-    -- index of a warehouse we will add to. Used to 'rotate' warehouses
-    local idx = 1
-
-    for i = 1, 10000 do
-        sleep(300000)
-
-        -- collect all ~warehouses and pick one to insert the wares
-        for i, building_name in ipairs(warehouse_types) do
-            warehouses = array_combine(warehouses, player:get_buildings(building_name))
-        end
-
-        if #warehouses > 0 then
-            -- adding to a warehouse with index idx, if out of range, adding to wh 1
-            if idx > #warehouses then
-                idx = 1
-            end
-
-            local wh = warehouses[idx]
-            local added = 0
-            if player:get_wares("water") < 2 then
-                wh:set_wares("water", wh:get_wares("water") + 2)
-                added = added + 1
-            end
-            if player:get_wares("log") < 2 then
-                wh:set_wares("log", wh:get_wares("log") + 2)
-                added = added + 1
-            end
-            if player:get_wares("reed") < 2 then
-                wh:set_wares("reed", wh:get_wares("log") + 2)
-                added = added + 1
-            end
-            if player:get_wares("granite") < 2 then
-                wh:set_wares("granite", wh:get_wares("granite") + 2)
-                added = added + 1
-            end
-            if player:get_wares("marble") < 2 then
-                wh:set_wares("marble", wh:get_wares("marble") + 2)
-                added = added + 1
-            end
-            if player:get_wares("ore") < 2 then
-                wh:set_wares("ore", wh:get_wares("ore") + 2)
-                added = added + 1
-            end
-            if player:get_wares("quartz") < 1 then
-                wh:set_wares("quartz", wh:get_wares("quartz") + 1)
-                added = added + 1
-            end
-            if player:get_wares("diamond") < 1 then
-                wh:set_wares("diamond", wh:get_wares("diamond") + 1)
-                added = added + 1
-            end
-            if (added > 0) then
-                print (player.number..": "..added.." types of ware added to warehouse "..idx.." of "..#warehouses.." (cheating mode)")
-            end
-            idx = idx + 1
-        end
-    end
 end
 }
 
