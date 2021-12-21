@@ -48,7 +48,7 @@ descriptions:new_productionsite_type {
         needs_water = true,
         basic_amount = 1,
         prohibited_till = 300,
-        forced_after = 1200
+        forced_after = 1800
     },
 
     working_positions = {

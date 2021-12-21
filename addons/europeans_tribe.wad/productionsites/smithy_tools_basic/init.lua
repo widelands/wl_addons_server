@@ -56,8 +56,8 @@ descriptions:new_productionsite_type {
         weak_ai_limit = 1,
         normal_ai_limit = 1,
         basic_amount = 1,
-        prohibited_till = 4200,
-        forced_after = 5100
+        prohibited_till = 3300,
+        forced_after = 4200
     },
 
     working_positions = {
@@ -75,21 +75,21 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=produce_felling_ax",
+                "call=produce_scythe",
+                "call=produce_pick",
                 "call=produce_buckets",
+                "call=produce_basket",
                 "call=produce_shovel",
                 "call=produce_saw",
                 "call=produce_hammer",
-                "call=produce_pick",
-                "call=produce_felling_ax",
                 "call=produce_fire_tongs",
-                "call=produce_scythe",
-                "call=produce_basket",
-                "call=produce_milking_tongs",
-                "call=produce_needles",
                 "call=produce_hunting_spear",
                 "call=produce_bread_paddle",
                 "call=produce_hook_pole",
                 "call=produce_kitchen_tools",
+                "call=produce_milking_tongs",
+                "call=produce_needles",
                 "call=produce_idle",
                 "return=skipped"
             }

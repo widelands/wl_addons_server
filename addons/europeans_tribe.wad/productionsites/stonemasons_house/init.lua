@@ -39,8 +39,9 @@ descriptions:new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 1,
-        prohibited_till = 7200,
-        forced_after = 8100
+        basic_amount = 1,
+        prohibited_till = 5400,
+        forced_after = 6300
     },
 
     working_positions = {

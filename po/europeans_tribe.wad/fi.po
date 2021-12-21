@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-20 03:03+0100\n"
+"POT-Creation-Date: 2021-12-21 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Finnish (https://www.transifex.com/widelands/teams/35159/"
 "fi/)\n"
@@ -294,7 +294,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:63
-#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:49
+#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:50
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:53
 #: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:65
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:53
@@ -325,7 +325,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:36
 #: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:80
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:52
-#: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:59
+#: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:60
 #: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:44
 #: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:65
 #: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:52
@@ -335,8 +335,8 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_tools_advanced/init.lua:40
 #: addons/europeans_tribe.wad/productionsites/smithy_tools_basic/init.lua:76
 #: addons/europeans_tribe.wad/productionsites/smithy_tools_normal/init.lua:64
-#: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:57
-#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:62
+#: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:58
+#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:63
 #: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:54
 #: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:58
@@ -344,7 +344,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_basic/init.lua:67
 #: addons/europeans_tribe.wad/productionsites/terraformers_house_normal/init.lua:52
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:47
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:67
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:68
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:53
 #: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:62
 #: addons/europeans_tribe.wad/productionsites/well_level_1/init.lua:49
@@ -908,13 +908,13 @@ msgid "Beekeepers House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making honey because ...
-#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:58
+#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:59
 msgid "making honey"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
-#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:67
+#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:68
 #: addons/europeans_tribe.wad/productionsites/brewery_advanced/init.lua:109
 #: addons/europeans_tribe.wad/productionsites/brewery_basic/init.lua:87
 #: addons/europeans_tribe.wad/productionsites/brewery_normal/init.lua:109
@@ -940,7 +940,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:70
 #: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:114
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:86
-#: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:81
+#: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:82
 #: addons/europeans_tribe.wad/productionsites/smelting_works_advanced/init.lua:112
 #: addons/europeans_tribe.wad/productionsites/smelting_works_basic/init.lua:88
 #: addons/europeans_tribe.wad/productionsites/smelting_works_normal/init.lua:91
@@ -950,13 +950,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/smithy_tools_advanced/init.lua:282
 #: addons/europeans_tribe.wad/productionsites/smithy_tools_basic/init.lua:279
 #: addons/europeans_tribe.wad/productionsites/smithy_tools_normal/init.lua:306
-#: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:78
-#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:123
+#: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:79
+#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:124
 #: addons/europeans_tribe.wad/productionsites/tavern_basic/init.lua:93
 #: addons/europeans_tribe.wad/productionsites/tavern_level_1/init.lua:90
 #: addons/europeans_tribe.wad/productionsites/tavern_level_2/init.lua:94
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:108
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:88
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:89
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:114
 #: addons/europeans_tribe.wad/productionsites/well_basic/init.lua:82
 #: addons/europeans_tribe.wad/productionsites/well_level_1/init.lua:69
@@ -967,15 +967,15 @@ msgstr ""
 msgid "idle program"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:78
+#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:79
 msgid "No Flowers"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:79
+#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:80
 msgid "Out of Flowers"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:80
+#: addons/europeans_tribe.wad/productionsites/beekeepers_house/init.lua:81
 msgctxt "europeans_building"
 msgid ""
 "The beekeeper working at this beekeepers’s house can’t find any flowering "
@@ -1782,13 +1782,13 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
 #: addons/europeans_tribe.wad/productionsites/lime_kiln/init.lua:84
-#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:73
+#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:74
 msgid "mixing grout"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
 #: addons/europeans_tribe.wad/productionsites/lime_kiln/init.lua:100
-#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:89
+#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:90
 msgid "burning bricks"
 msgstr ""
 
@@ -2016,7 +2016,7 @@ msgid "Sheep Farm"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing wool because ...
-#: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:68
+#: addons/europeans_tribe.wad/productionsites/sheepfarm/init.lua:69
 msgid "producing wool"
 msgstr ""
 
@@ -2290,7 +2290,7 @@ msgid "Spider Farm"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing spider silk because ...
-#: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:66
+#: addons/europeans_tribe.wad/productionsites/spiderfarm/init.lua:67
 msgid "producing spider silk"
 msgstr ""
 
@@ -2301,7 +2301,7 @@ msgid "Stonemason’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
-#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:104
+#: addons/europeans_tribe.wad/productionsites/stonemasons_house/init.lua:105
 msgid "sculpting a marble column"
 msgstr ""
 
@@ -2363,7 +2363,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_advanced/init.lua:59
-#: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:76
+#: addons/europeans_tribe.wad/productionsites/weaving_mill_basic/init.lua:77
 #: addons/europeans_tribe.wad/productionsites/weaving_mill_normal/init.lua:65
 msgid "weaving cloth"
 msgstr ""

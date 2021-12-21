@@ -63,17 +63,15 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=produce_felling_ax",
+                "call=produce_scythe",
+                "call=produce_pick",
                 "call=produce_buckets",
+                "call=produce_basket",
                 "call=produce_shovel",
                 "call=produce_saw",
                 "call=produce_hammer",
-                "call=produce_pick",
-                "call=produce_felling_ax",
                 "call=produce_fire_tongs",
-                "call=produce_scythe",
-                "call=produce_basket",
-                "call=produce_milking_tongs",
-                "call=produce_needles",
                 "call=produce_fishing_rod",
                 "call=produce_fishing_net",
                 "call=produce_hunting_bow",
@@ -81,6 +79,8 @@ descriptions:new_productionsite_type {
                 "call=produce_bread_paddle",
                 "call=produce_hook_pole",
                 "call=produce_kitchen_tools",
+                "call=produce_milking_tongs",
+                "call=produce_needles",
                 "call=produce_idle",
                 "return=skipped"
             }
