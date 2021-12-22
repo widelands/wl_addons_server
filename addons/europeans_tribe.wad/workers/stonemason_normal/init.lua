@@ -14,6 +14,12 @@ descriptions:new_worker_type {
     becomes = "europeans_stonemason_advanced",
 
     programs = {
+        check_rocks = {
+            "findobject=attrib:rocks radius:8",
+        },
+        check_stone = {
+            "findspace=size:any radius:8 resource:resource_stones",
+        },
         cut_granite = {
             "findobject=attrib:rocks radius:8",
             "walk=object",
@@ -31,9 +37,27 @@ descriptions:new_worker_type {
             "callobject=shrink",
             "createware=marble",
             "return"
+        },
+        mine_granite = {
+            "findspace=size:any radius:8 resource:resource_stones",
+            "walk=object",
+            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "animate=hacking duration:15s",
+            "mine=resource_stones radius:1",
+            "createware=granite",
+            "return"
+        },
+        mine_marble = {
+            "findspace=size:any radius:8 resource:resource_stones",
+            "walk=object",
+            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "animate=hacking duration:15s",
+            "mine=resource_stones radius:1",
+            "createware=marble",
+            "return"
         }
     },
-
+    
     animations = {
         idle = {
             hotspot = { 7, 20 }
