@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-27 03:03+0100\n"
+"POT-Creation-Date: 2021-12-28 03:03+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: D M <kamera001dm@gmail.com>, 2021\n"
 "Language-Team: Swedish (https://www.transifex.com/widelands/teams/35159/"
@@ -71,10 +71,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:8
-#, fuzzy
 msgctxt "frisians_building"
 msgid "Oat Farm"
-msgstr "Råggård"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:65
@@ -88,15 +87,13 @@ msgstr "arbeta"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73
-#, fuzzy
 msgid "planting oat"
-msgstr "plantera råg"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:81
-#, fuzzy
 msgid "harvesting oat"
-msgstr "skörda råg"
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:90
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
@@ -109,46 +106,40 @@ msgid "Out of Fields"
 msgstr "Slut på fält"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:92
-#, fuzzy
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this oat farm has no cleared soil to plant his seeds."
-msgstr "Bonden som arbetar på denna råggård har ingen ledig mark för sådd."
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/harvested/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr "Rågfält (skördat)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/medium/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr "Rågfält (under tillväxt)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/ripe/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (ripe)"
-msgstr "Rågfält (moget)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/small/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr "Rågfält (ungt)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/tiny/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr "Rågfält (nysått)"
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:10
 msgid "This rye field has been harvested."
@@ -172,30 +163,24 @@ msgid "This rye field has just been planted."
 msgstr "Detta rågfält har just planterats."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:26
-#, fuzzy
 msgid "This oat field has been harvested."
-msgstr "Rågfältet har skördats."
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:29
-#, fuzzy
 msgid "This oat field is ready for harvesting."
-msgstr "Rågfältet är redo för skörd."
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:32
-#, fuzzy
 msgid "This oat field is flowering. Beekeepers can use it to produce honey."
 msgstr ""
-"Detta rågfält blommar. Biodlare kan använda det för att producera honung."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:35
-#, fuzzy
 msgid "This oat field is growing."
-msgstr "Detta rågfält växer."
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:38
-#, fuzzy
 msgid "This oat field has just been planted."
-msgstr "Detta rågfält har just planterats."
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:46
 msgid "Salt is washed from the sea and used to conserve meat and fish."
@@ -214,9 +199,8 @@ msgid "After being ground to flour, barley can be used to bake bread."
 msgstr "Efter att ha malts till mjöl kan korn användas för att baka bröd."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:58
-#, fuzzy
 msgid "Oat is used to bake bread and also fed to the reindeer."
-msgstr "Råg används till brödbak men först måste det malas till mjöl."
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:61
 msgid "Fur can be tanned into leather, which is needed to produce garments."
@@ -260,9 +244,8 @@ msgid "The rye farm sows and harvests rye."
 msgstr "Råggården sår och skördar råg."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:135
-#, fuzzy
 msgid "The oat farm sows and harvests oat."
-msgstr "Råggården sår och skördar råg."
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:145

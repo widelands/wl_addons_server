@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-27 03:03+0100\n"
+"POT-Creation-Date: 2021-12-28 03:03+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Atanase Albaran, 2021\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
@@ -70,10 +70,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:8
-#, fuzzy
 msgctxt "frisians_building"
 msgid "Oat Farm"
-msgstr "Ferme de seigle"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:65
@@ -87,15 +86,13 @@ msgstr "travaille"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73
-#, fuzzy
 msgid "planting oat"
-msgstr "à planter du seigle"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:81
-#, fuzzy
 msgid "harvesting oat"
-msgstr "à moissonner le seigle"
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:90
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
@@ -108,48 +105,40 @@ msgid "Out of Fields"
 msgstr "Hors des champs"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:92
-#, fuzzy
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this oat farm has no cleared soil to plant his seeds."
 msgstr ""
-"Le fermier travaillant dans cette ferme de seigle n'a pas de parcelle "
-"défrichée pour planter ses semences.."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/harvested/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr "Champ de seigle (moissonné)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/medium/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr "Champ de seigle (moyen)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/ripe/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (ripe)"
-msgstr "Champ de seigle (mûr)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/small/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr "Champ de seigle (petit)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/tiny/init.lua:6
-#, fuzzy
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr "Champ de seigle (minuscule)"
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:10
 msgid "This rye field has been harvested."
@@ -174,31 +163,24 @@ msgid "This rye field has just been planted."
 msgstr "Ce champ de seigle vient juste d'être semé."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:26
-#, fuzzy
 msgid "This oat field has been harvested."
-msgstr "Ce champ de seigle a été moissonné."
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:29
-#, fuzzy
 msgid "This oat field is ready for harvesting."
-msgstr "Ce champ de seigle est prêt pour la moisson."
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:32
-#, fuzzy
 msgid "This oat field is flowering. Beekeepers can use it to produce honey."
 msgstr ""
-"Ce champ de seigle est en fleurs. Les apiculteurs peuvent l'utiliser pour "
-"produire du miel."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:35
-#, fuzzy
 msgid "This oat field is growing."
-msgstr "Ce champ de seigle pousse."
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:38
-#, fuzzy
 msgid "This oat field has just been planted."
-msgstr "Ce champ de seigle vient juste d'être semé."
+msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:46
 msgid "Salt is washed from the sea and used to conserve meat and fish."
@@ -225,11 +207,8 @@ msgstr ""
 "pain."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:58
-#, fuzzy
 msgid "Oat is used to bake bread and also fed to the reindeer."
 msgstr ""
-"Le seigle est utilisé pour faire du pain. Il doit d'abord être réduit en "
-"farine."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:61
 msgid "Fur can be tanned into leather, which is needed to produce garments."
@@ -274,9 +253,8 @@ msgid "The rye farm sows and harvests rye."
 msgstr "La ferme de seigle sème et récolte du seigle."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:135
-#, fuzzy
 msgid "The oat farm sows and harvests oat."
-msgstr "La ferme de seigle sème et récolte du seigle."
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:145
