@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 02:06+0000\n"
+"POT-Creation-Date: 2021-12-28 03:03+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2021\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -63,6 +63,86 @@ msgctxt "frisians_worker"
 msgid "Miller"
 msgstr "Müller"
 
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/frisians-economy-ultra.wad/oat/init.lua:8
+msgctxt "ware"
+msgid "Oat"
+msgstr "Hafer"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/frisians-economy-ultra.wad/oat_farm/init.lua:8
+msgctxt "frisians_building"
+msgid "Oat Farm"
+msgstr "Hafer-Buurderee"
+
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#: addons/frisians-economy-ultra.wad/oat_farm/init.lua:65
+#: addons/frisians-economy-ultra.wad/postload.lua:164
+#: addons/frisians-economy-ultra.wad/postload.lua:202
+#: addons/frisians-economy-ultra.wad/postload.lua:258
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
+#: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
+msgid "working"
+msgstr "to Warken"
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
+#: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73
+msgid "planting oat"
+msgstr "Hafer to planten"
+
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
+#: addons/frisians-economy-ultra.wad/oat_farm/init.lua:81
+msgid "harvesting oat"
+msgstr "Hafer to arnten"
+
+#: addons/frisians-economy-ultra.wad/oat_farm/init.lua:90
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
+msgid "No Fields"
+msgstr "Keene Meedjes"
+
+#: addons/frisians-economy-ultra.wad/oat_farm/init.lua:91
+#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
+msgid "Out of Fields"
+msgstr "Hebb keene Medjes mehr"
+
+#: addons/frisians-economy-ultra.wad/oat_farm/init.lua:92
+msgctxt "frisians_building"
+msgid ""
+"The farmer working at this oat farm has no cleared soil to plant his seeds."
+msgstr ""
+"De Buur dat warkt bi deese Hafer-Buurderee hett keen Meedland waar he wat "
+"anplanten kann."
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/frisians-economy-ultra.wad/oatfield/harvested/init.lua:6
+msgctxt "immovable"
+msgid "Oat Field (harvested)"
+msgstr "Haferfeld (arnt)"
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/frisians-economy-ultra.wad/oatfield/medium/init.lua:6
+msgctxt "immovable"
+msgid "Oat Field (medium)"
+msgstr "Haferfeld (middel)"
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/frisians-economy-ultra.wad/oatfield/ripe/init.lua:6
+msgctxt "immovable"
+msgid "Oat Field (ripe)"
+msgstr "Haferfeld (riep)"
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/frisians-economy-ultra.wad/oatfield/small/init.lua:6
+msgctxt "immovable"
+msgid "Oat Field (small)"
+msgstr "Haferfeld (lütt)"
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/frisians-economy-ultra.wad/oatfield/tiny/init.lua:6
+msgctxt "immovable"
+msgid "Oat Field (tiny)"
+msgstr "Haferfeld (ganz lütt)"
+
 #: addons/frisians-economy-ultra.wad/postload.lua:10
 msgid "This rye field has been harvested."
 msgstr "Deeses Roggfeld is arnt worden."
@@ -83,96 +163,129 @@ msgstr "Deeses Roggfeld wasst."
 msgid "This rye field has just been planted."
 msgstr "Deeses Roggfeld is jüüst plant worden."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:30
+#: addons/frisians-economy-ultra.wad/postload.lua:26
+msgid "This oat field has been harvested."
+msgstr "Deeses Haferfeld is arnt worden."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:29
+msgid "This oat field is ready for harvesting."
+msgstr "Deeses Haferfeld is klaar tum arnten."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:32
+msgid "This oat field is flowering. Beekeepers can use it to produce honey."
+msgstr "Deeses Haferfeld blöömt. Imkers könen daar Hönnig mit winnen."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:35
+msgid "This oat field is growing."
+msgstr "Deeses Haferfeld wasst."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:38
+msgid "This oat field has just been planted."
+msgstr "Deeses Haferfeld is jüüst plant worden."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:46
 msgid "Salt is washed from the sea and used to conserve meat and fish."
 msgstr ""
 "Solt word ut de See waschen un word tum Dürabel-Maken vun Fleesk un Fiss "
 "bruukt."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:33
+#: addons/frisians-economy-ultra.wad/postload.lua:49
 msgid "Rye is used to bake bread. It needs to be ground into flour first."
 msgstr "Rogg word tum Broodbacken brukkt. ’t mutt eerst to Mehl mahlt worden."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:36
+#: addons/frisians-economy-ultra.wad/postload.lua:52
 msgid "After being ground to flour, rye can be used to bake bread."
 msgstr "Nadeem ’t to Mehl mahlt worden is, kann man ut Rogg Brood backen."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:39
+#: addons/frisians-economy-ultra.wad/postload.lua:55
 msgid "After being ground to flour, barley can be used to bake bread."
 msgstr "Nadeem ’t to Mehl mahlt worden is, kann man ut Garst Brood backen."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:42
+#: addons/frisians-economy-ultra.wad/postload.lua:58
+msgid "Oat is used to bake bread and also fed to the reindeer."
+msgstr "Ut Hafer backt man Brood, un 't word ok an de Sneeihirsken föddt."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:61
 msgid "Fur can be tanned into leather, which is needed to produce garments."
 msgstr ""
 "Fell kann to Leer taant worden, wat man bruukt, um Fellkluften to produzeren."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:68
+#: addons/frisians-economy-ultra.wad/postload.lua:105
 msgid "The salter washes salt from the shores of the sea."
 msgstr "De Söölsieder wascht Solt ut de See."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:71
+#: addons/frisians-economy-ultra.wad/postload.lua:108
 msgid "The miller grinds barley and rye into flour."
 msgstr "De Müller mahlt Garst un Rogg to Mehl."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:74
+#: addons/frisians-economy-ultra.wad/postload.lua:111
 msgid "The tanner tans furs to produce leather."
 msgstr "De Taaner taant Fell, um Leer to produzeren."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:82
+#: addons/frisians-economy-ultra.wad/postload.lua:119
 msgid "The salter working at the salt works washes salt from the sea."
 msgstr "De Söölsieder, well in de Söölsiederee warkt, wascht Solt ut de See."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:83
+#: addons/frisians-economy-ultra.wad/postload.lua:120
 msgid "The salter needs water within its work area."
 msgstr "De Söölsieder bruukt Water in sienem Arbeidsgewest."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:86
+#: addons/frisians-economy-ultra.wad/postload.lua:123
 msgid "The tannery tans fur into leather."
 msgstr "De Taaneree taant Fell to Leer."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:89
+#: addons/frisians-economy-ultra.wad/postload.lua:126
 msgid "The barley mill grinds barley into barley flour."
 msgstr "De Garstmöhlen mahlt Garst to Garstmehl."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:92
+#: addons/frisians-economy-ultra.wad/postload.lua:129
 msgid "The rye mill grinds rye into rye flour."
 msgstr "De Roggmöhlen mahlt Rogg to Roggmehl."
 
-#: addons/frisians-economy-ultra.wad/postload.lua:95
+#: addons/frisians-economy-ultra.wad/postload.lua:132
 msgid "The rye farm sows and harvests rye."
-msgstr "De Roggbuurderee saiht un arnt Rogg."
+msgstr "De Rogg-Buurderee saiht un arnt Rogg."
+
+#: addons/frisians-economy-ultra.wad/postload.lua:135
+msgid "The oat farm sows and harvests oat."
+msgstr "De Hafer-Buurderee saiht un arnt Hafer."
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
-#: addons/frisians-economy-ultra.wad/postload.lua:105
+#: addons/frisians-economy-ultra.wad/postload.lua:145
 msgid "smoking fish"
 msgstr "Fisse to rökeln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking meat because ...
-#: addons/frisians-economy-ultra.wad/postload.lua:114
+#: addons/frisians-economy-ultra.wad/postload.lua:154
 msgid "smoking meat"
 msgstr "Fleesk to rökeln"
 
-#. TRANSLATORS: Completed/Skipped/Did not start working because ...
-#: addons/frisians-economy-ultra.wad/postload.lua:124
-#: addons/frisians-economy-ultra.wad/postload.lua:168
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
-#: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
-msgid "working"
-msgstr "to Warken"
+#. TRANSLATORS: Completed/Skipped/Did not start rearing reindeer because ...
+#: addons/frisians-economy-ultra.wad/postload.lua:172
+msgctxt "frisians_building"
+msgid "rearing reindeer"
+msgstr "Sneeihirsken to tüchten"
+
+#. TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
+#: addons/frisians-economy-ultra.wad/postload.lua:182
+#: addons/frisians-economy-ultra.wad/postload.lua:192
+msgctxt "frisians_building"
+msgid "producing fur"
+msgstr "Fell to produzeren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
-#: addons/frisians-economy-ultra.wad/postload.lua:135
-#: addons/frisians-economy-ultra.wad/postload.lua:159
+#: addons/frisians-economy-ultra.wad/postload.lua:218
+#: addons/frisians-economy-ultra.wad/postload.lua:247
 msgid "baking bread"
 msgstr "Brood to backen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking honey bread because ...
-#: addons/frisians-economy-ultra.wad/postload.lua:150
+#: addons/frisians-economy-ultra.wad/postload.lua:236
 msgid "baking honey bread"
 msgstr "Hönnigbrood to backen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
-#: addons/frisians-economy-ultra.wad/postload.lua:178
+#: addons/frisians-economy-ultra.wad/postload.lua:268
 msgid "sewing fur garment"
 msgstr "eene Fellkluft to naihen"
 
@@ -197,14 +310,6 @@ msgstr "Rogg to planten"
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:60
 msgid "harvesting rye"
 msgstr "Rogg to arnten"
-
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
-msgid "No Fields"
-msgstr "Keene Meedjes"
-
-#: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
-msgid "Out of Fields"
-msgstr "Hebb keene Medjes mehr"
 
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:71
 msgctxt "frisians_building"

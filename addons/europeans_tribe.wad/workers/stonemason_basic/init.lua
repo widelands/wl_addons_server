@@ -14,12 +14,27 @@ descriptions:new_worker_type {
     becomes = "europeans_stonemason_normal",
 
     programs = {
+        check_rocks = {
+            "findobject=attrib:rocks radius:6",
+        },
+        check_stone = {
+            "findspace=size:any radius:6 resource:resource_stones",
+        },
         cut_granite = {
             "findobject=attrib:rocks radius:6",
             "walk=object",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hack duration:17s500ms",
             "callobject=shrink",
+            "createware=granite",
+            "return"
+        },
+        mine_granite = {
+            "findspace=size:any radius:6 resource:resource_stones",
+            "walk=object",
+            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "animate=hack duration:17s500ms",
+            "mine=resource_stones radius:1",
             "createware=granite",
             "return"
         }

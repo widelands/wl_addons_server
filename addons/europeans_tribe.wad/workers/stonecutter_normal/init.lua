@@ -55,7 +55,7 @@ descriptions:new_worker_type {
             "mine=resource_stones radius:1",
             "createware=marble",
             "return"
-        },
+        }
     },
 
     animations = {

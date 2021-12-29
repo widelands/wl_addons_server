@@ -11,6 +11,12 @@ descriptions:new_worker_type {
     vision_range = 2,
     
     programs = {
+        check_rocks = {
+            "findobject=attrib:rocks radius:12",
+        },
+        check_stone = {
+            "findspace=size:any radius:12 resource:resource_stones",
+        },
         cut_granite = {
             "findobject=attrib:rocks radius:12",
             "walk=object",
@@ -27,6 +33,42 @@ descriptions:new_worker_type {
             "animate=hacking duration:12s500ms",
             "callobject=shrink",
             "createware=marble",
+            "return"
+        },
+        mine_granite = {
+            "findspace=size:any radius:12 resource:resource_stones",
+            "walk=coords",
+            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "animate=hacking duration:12s500ms",
+            "mine=resource_stones radius:1",
+            "createware=granite",
+            "return"
+        },
+        mine_marble = {
+            "findspace=size:any radius:12 resource:resource_stones",
+            "walk=coords",
+            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "animate=hacking duration:12s500ms",
+            "mine=resource_stones radius:1",
+            "createware=marble",
+            "return"
+        },
+        mine_quartz = {
+            "findspace=size:any radius:12 resource:resource_stones",
+            "walk=coords",
+            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "animate=hacking duration:12s500ms",
+            "mine=resource_stones radius:1",
+            "createware=quartz",
+            "return"
+        },
+        mine_diamond = {
+            "findspace=size:any radius:12 resource:resource_stones",
+            "walk=coords",
+            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "animate=hacking duration:12s500ms",
+            "mine=resource_stones radius:1",
+            "createware=diamond",
             "return"
         }
     },
