@@ -23,8 +23,8 @@ descriptions:new_worker_type {
         cut_granite = {
             "findobject=attrib:rocks radius:8",
             "walk=object",
-            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
-            "animate=hacking duration:15s",
+            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "animate=hacking duration:14s",
             "callobject=shrink",
             "createware=granite",
             "return"
@@ -32,8 +32,8 @@ descriptions:new_worker_type {
         cut_marble = {
             "findobject=attrib:rocks radius:8",
             "walk=object",
-            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
-            "animate=hacking duration:15s",
+            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "animate=hacking duration:14s",
             "callobject=shrink",
             "createware=marble",
             "return"
@@ -42,7 +42,7 @@ descriptions:new_worker_type {
             "findspace=size:any radius:8 resource:resource_stones",
             "walk=object",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
-            "animate=hacking duration:15s",
+            "animate=hacking duration:14s",
             "mine=resource_stones radius:1",
             "createware=granite",
             "return"
@@ -51,7 +51,7 @@ descriptions:new_worker_type {
             "findspace=size:any radius:8 resource:resource_stones",
             "walk=object",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
-            "animate=hacking duration:15s",
+            "animate=hacking duration:14s",
             "mine=resource_stones radius:1",
             "createware=marble",
             "return"

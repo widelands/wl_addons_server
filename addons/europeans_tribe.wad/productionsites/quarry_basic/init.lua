@@ -70,6 +70,8 @@ descriptions:new_productionsite_type {
                 "call=cut_granite on failure fail",
                 "call=cut_granite on failure fail",
                 "call=cut_granite on failure fail",
+                "call=cut_granite on failure fail",
+                "call=cut_marble on failure fail", -- This will find marble 1 out of 5 times
                 "return=skipped"
             }
         },
@@ -81,6 +83,8 @@ descriptions:new_productionsite_type {
                 "call=mine_granite on failure fail",
                 "call=mine_granite on failure fail",
                 "call=mine_granite on failure fail",
+                "call=mine_granite on failure fail",
+                "call=mine_marble on failure fail", -- This will find marble 1 out of 5 times
                 "return=skipped"
             }
         },
@@ -92,11 +96,27 @@ descriptions:new_productionsite_type {
                 "sleep=duration:10s"
             }
         },
+        cut_marble = {
+            -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+            descname = _"quarrying marble",
+            actions = {
+                "callworker=cut_marble",
+                "sleep=duration:10s"
+            }
+        },
         mine_granite = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
             descname = _"mining granite",
             actions = {
                 "callworker=mine_granite",
+                "sleep=duration:10s"
+            }
+        },
+        mine_marble = {
+            -- TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+            descname = _"mining marble",
+            actions = {
+                "callworker=mine_marble",
                 "sleep=duration:10s"
             }
         }
