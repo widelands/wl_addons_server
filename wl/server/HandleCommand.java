@@ -808,7 +808,12 @@ public class HandleCommand {
 	private void handleCmdSubmitScreenshot() throws Exception {
 		// Args: name filesize checksum whitespaces description
 		checkCommandVersion(1);
-		ServerUtils.checkNrArgs(cmd, 5);
+		if (cmd.length < 6) {
+			throw new ServerUtils.WLProtocolException("Expected at least 5 argument(s), found " +
+			                                          (cmd.length - 1));
+		}
+		final int whitespaces = Integer.valueOf(cmd[4]);
+		ServerUtils.checkNrArgs(cmd, 5 + whitespaces);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		if (username.isEmpty())
@@ -857,7 +862,6 @@ public class HandleCommand {
 				file.renameTo(result);
 				ServerUtils.doDelete(tempDir);
 
-				int whitespaces = Integer.valueOf(cmd[4]);
 				if (whitespaces < 0 || whitespaces > 1000)
 					throw new ServerUtils.WLProtocolException("Description too long (" +
 					                                          whitespaces + " words)");

@@ -492,6 +492,11 @@ public class ServerUtils {
 	}
 
 	// Two helper functions for matchesWidelandsVersion()
+	/**
+	 * Convert a version string to an array of version numbers.
+	 * @param str Version string.
+	 * @return The version as an array.
+	 */
 	public static int[] string_to_version(String str) {
 		String[] parts = str.split("\\.");
 		int[] result = new int[parts.length];
