@@ -38,7 +38,7 @@ descriptions:new_worker_type {
         mine_granite = {
             "findspace=size:any radius:12 resource:resource_stones",
             "walk=coords",
-            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
             "animate=hacking duration:12s500ms",
             "mine=resource_stones radius:1",
             "createware=granite",
@@ -47,7 +47,7 @@ descriptions:new_worker_type {
         mine_marble = {
             "findspace=size:any radius:12 resource:resource_stones",
             "walk=coords",
-            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
             "animate=hacking duration:12s500ms",
             "mine=resource_stones radius:1",
             "createware=marble",
@@ -56,7 +56,7 @@ descriptions:new_worker_type {
         mine_quartz = {
             "findspace=size:any radius:12 resource:resource_stones",
             "walk=coords",
-            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
             "animate=hacking duration:12s500ms",
             "mine=resource_stones radius:1",
             "createware=quartz",
@@ -65,7 +65,7 @@ descriptions:new_worker_type {
         mine_diamond = {
             "findspace=size:any radius:12 resource:resource_stones",
             "walk=coords",
-            "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
+            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
             "animate=hacking duration:12s500ms",
             "mine=resource_stones radius:1",
             "createware=diamond",
