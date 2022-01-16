@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-19 03:03+0200\n"
+"POT-Creation-Date: 2022-01-16 03:03+0100\n"
 "PO-Revision-Date: 2021-03-02 22:51+0000\n"
 "Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -24,17 +24,17 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: addons/minimalistic_theme.wad/addon:4
-msgid "Minimalistic Theme"
-msgstr "Аскетичная тема"
-
-#: addons/minimalistic_theme.wad/addon:5
+#: addons/minimalistic_theme.wad/addon:6
 msgid ""
 "Minimalistic theme with reduced colors. Note that you have to enable the "
 "theme in the options menu after installing."
 msgstr ""
 "Аскетичная тема менее пестрая. Обратите внимание: тема включается в меню "
 "настроек после установки."
+
+#: addons/minimalistic_theme.wad/addon:9
+msgid "Minimalistic Theme"
+msgstr "Аскетичная тема"
 
 #: screenshots/minimalistic_theme.wad/descriptions:1
 msgid "Window Options"
