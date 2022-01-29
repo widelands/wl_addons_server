@@ -37,9 +37,11 @@ Key                | Description                                                
 `databasehost`     | IP address of the MySQL server                                     | `127.0.0.1`
 `databaseport`     | Port number of the MySQL server                                    | `3306`
 `websitedatabase`  | Name of the website database                                       | `wl_addons_server_website`
+`websitedbuser`    | The database user of the websitedatabase                           | `websiteuser`
+`websitedbpassword`| Password for the website database user                             | `123456`
 `addonsdatabase`   | Name of the add-ons database                                       | `wl_addons_server_addons`
-`databaseuser`     | Database user name                                                 | `someuser`
-`databasepassword` | Password of the database user                                      | `123456`
+`addonsdbuser`     | The database user of the addons database                           | `addonuser`
+`addonsdbpassword` | Password of the addons database user                               | `123456`
 `deploy`           | Whether this server is the real thing, not just a test environment | `true` or `false`
 
 ### The Database
