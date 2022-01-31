@@ -354,7 +354,7 @@ public class ServerUtils {
 	 * @param src File or directory to move from
 	 * @param target File or directory to move to
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
-	*/
+	 */
 	synchronized public static void doMove(File src, File target) throws Exception {
 		if (src.isDirectory()) {
 			target.mkdir();
