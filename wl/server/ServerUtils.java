@@ -27,6 +27,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -346,6 +347,24 @@ public class ServerUtils {
 			}
 		}
 		f.delete();
+	}
+
+	/**
+	 * Recursively move a directory and its content.
+	 * @param src File or directory to move from
+	 * @param target File or directory to move to
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	*/
+	synchronized public static void doMove(File src, File target) throws Exception {
+		if (src.isDirectory()) {
+			target.mkdir();
+			for (File file : src.listFiles()) {
+				doMove(file, new File(target, file.getName()));
+			}
+			src.delete();
+		} else {
+			Files.move(src.toPath(), target.toPath());
+		}
 	}
 
 	/**
