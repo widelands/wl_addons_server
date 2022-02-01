@@ -82,15 +82,15 @@ public class Utils {
 		/**
 		 * The read-only website database, which contains details about registered users.
 		 */
-		kWebsite("websitedatabase", "websitedbuser", "websitedbpassword"),
+		kWebsite("website_database", "website_db_user", "website_db_password"),
 
 		/**
 		 * The add-ons database, which contains moddable metadata about all add-ons.
 		 */
-		kAddOns("addonsdatabase", "addonsdbuser", "addonsdbpassword");
+		kAddOns("addons_database", "addons_db_user", "addons_db_password");
 
 		/** The key in the config file that is mapped to this database name. */
-		public final String db_name;
+		public final String dbName;
 
 		/** The key in the config file that is mapped to this database user. */
 		public final String user;
@@ -99,7 +99,7 @@ public class Utils {
 		public final String password;
 
 		private Databases(String db, String user, String password) {
-			this.db_name = db;
+			this.dbName = db;
 			this.user = user;
 			this.password = password;
 		}
@@ -116,7 +116,7 @@ public class Utils {
 		for (Databases db : Databases.values()) {
 			_databases[db.ordinal()] =
 			    DriverManager.getConnection("jdbc:mysql://" + config("databasehost") + ":" +
-			                                    config("databaseport") + "/" + config(db.db_name),
+			                                    config("databaseport") + "/" + config(db.dbName),
 			                                config(db.user), config(db.password));
 		}
 	}
