@@ -65,14 +65,14 @@ public class SyncThread implements Runnable {
 				Thread.sleep(then - now);
 
 				Utils.log("Waking up for " + (phase == 0 ? "full" : "SQL-only") + " sync.");
-				for (Utils.Databases db : Utils.Databases.values()) Utils.sql(db, "show tables");
+				for (Utils.Databases db : Utils.Databases.values()) Utils.sql(db.db_name, "show tables");
 
 				Utils.log("Backing up the database...");
 				new File("backup").mkdir();
 				Runtime.getRuntime().exec(new String[] {
 				    "bash", "-c",
-				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
-				        Utils.config("databasepassword") + " -h" + Utils.config("databasehost") +
+				    "mysqldump -u" + Utils.config("addondbeuser") + " -p" +
+				        Utils.config("addondbpassword") + " -h" + Utils.config("databasehost") +
 				        " -P" + Utils.config("databaseport") + " --column-statistics=0 " +
 				        Utils.config("addonsdatabase") + " > backup/addons_database_backup_" +
 				        Calendar.getInstance().get(Calendar.DAY_OF_WEEK) + "_" + phase + ".sql"});
