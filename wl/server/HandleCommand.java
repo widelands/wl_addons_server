@@ -1039,7 +1039,7 @@ public class HandleCommand {
 				        "\n\nPlease review this add-on soonish." +
 				        (isUpdate ? ("\n\n-------------------------\n\n" + diff) : ""));
 
-				tempDir.renameTo(addOnDir);
+				ServerUtils.doMove(tempDir, addOnDir);
 				out.println("ENDOFSTREAM");
 			} catch (Exception e) {
 				ServerUtils.doDelete(tempDir);
