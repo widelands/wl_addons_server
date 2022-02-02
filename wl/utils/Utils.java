@@ -33,7 +33,6 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 import java.util.TreeMap;
 
 /**
@@ -83,17 +82,27 @@ public class Utils {
 		/**
 		 * The read-only website database, which contains details about registered users.
 		 */
-		kWebsite("websitedatabase"),
+		kWebsite("website_database", "website_db_user", "website_db_password"),
 
 		/**
 		 * The add-ons database, which contains moddable metadata about all add-ons.
 		 */
-		kAddOns("addonsdatabase");
+		kAddOns("addons_database", "addons_db_user", "addons_db_password");
 
-		/** The key in the config file that is mapped to this database's name. */
-		public final String configKey;
+		/** The key in the config file that is mapped to this database name. */
+		public final String dbName;
 
-		private Databases(String k) { configKey = k; }
+		/** The key in the config file that is mapped to this database user. */
+		public final String user;
+
+		/** The key in the config file that is mapped to this database password. */
+		public final String password;
+
+		private Databases(String db, String user, String password) {
+			this.dbName = db;
+			this.user = user;
+			this.password = password;
+		}
 	}
 	private static final Connection[] _databases = new Connection[Databases.values().length];
 
@@ -104,15 +113,11 @@ public class Utils {
 	public static void initDatabases() throws Exception {
 		log("Initializing SQL...");
 
-		Properties connectionProps = new Properties();
-		connectionProps.put("user", config("databaseuser"));
-		connectionProps.put("password", config("databasepassword"));
-
 		for (Databases db : Databases.values()) {
 			_databases[db.ordinal()] =
 			    DriverManager.getConnection("jdbc:mysql://" + config("databasehost") + ":" +
-			                                    config("databaseport") + "/" + config(db.configKey),
-			                                connectionProps);
+			                                    config("databaseport") + "/" + config(db.dbName),
+			                                config(db.user), config(db.password));
 		}
 	}
 

@@ -71,10 +71,10 @@ public class SyncThread implements Runnable {
 				new File("backup").mkdir();
 				Runtime.getRuntime().exec(new String[] {
 				    "bash", "-c",
-				    "mysqldump -u" + Utils.config("databaseuser") + " -p" +
-				        Utils.config("databasepassword") + " -h" + Utils.config("databasehost") +
+				    "mysqldump -u" + Utils.config("addons_db_user") + " -p" +
+				        Utils.config("addons_db_password") + " -h" + Utils.config("databasehost") +
 				        " -P" + Utils.config("databaseport") + " --column-statistics=0 " +
-				        Utils.config("addonsdatabase") + " > backup/addons_database_backup_" +
+				        Utils.config("addons_database") + " > backup/addons_database_backup_" +
 				        Calendar.getInstance().get(Calendar.DAY_OF_WEEK) + "_" + phase + ".sql"});
 
 				if (phase == 0) {
