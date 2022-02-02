@@ -37,8 +37,9 @@ public class Server {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void main(String[] args) throws Exception {
-		Utils.bash("bash", "-c", "echo $PPID");  // Print our PID to the logfile so the maintainer
-		                                         // knows how to kill the server process.
+		Utils.bash(
+		    "bash", "-c", "echo PID: $PPID");  // Print our PID to the logfile so the maintainer
+		                                       // knows how to kill the server process.
 
 		Utils.initDatabases();
 
