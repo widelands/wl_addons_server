@@ -383,9 +383,12 @@ public class ServerUtils {
 	 * @return All users who should receive a notification.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	public static Set<Long> getNotificationSubscribers(String noticetype, Set<Long> limitToUsers) throws Exception {
-		ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-				"select id,send_default from wladdons_settings_addonnoticetype where slug=?", noticetype);
+	public static Set<Long> getNotificationSubscribers(String noticetype, Set<Long> limitToUsers)
+	    throws Exception {
+		ResultSet sql =
+		    Utils.sql(Utils.Databases.kWebsite,
+		              "select id,send_default from wladdons_settings_addonnoticetype where slug=?",
+		              noticetype);
 		if (!sql.next()) {
 			Utils.log("WARNING: Notice type '" + noticetype + "' is not known");
 			return new HashSet<Long>();
@@ -400,18 +403,23 @@ public class ServerUtils {
 			} else {
 				// Send the e-mail to affected users only, sending a mail by default.
 				for (Long user : limitToUsers) {
-					sql = Utils.sql(Utils.Databases.kWebsite,
-							"select shouldsend from wladdons_settings_addonnoticeuser where notice_type_id=? and user_id=?", noticetypeID, user);
+					sql = Utils.sql(
+					    Utils.Databases.kWebsite,
+					    "select shouldsend from wladdons_settings_addonnoticeuser where notice_type_id=? and user_id=?",
+					    noticetypeID, user);
 					if (!sql.next() || sql.getLong("shouldsend") > 0) usersToSendMailTo.add(user);
 				}
 			}
 		} else {
 			// Send the e-mail to users who explicitly subscribed.
-			sql = Utils.sql(Utils.Databases.kWebsite,
-					"select user_id from wladdons_settings_addonnoticeuser where notice_type_id=? and shouldsend>0", noticetypeID);
+			sql = Utils.sql(
+			    Utils.Databases.kWebsite,
+			    "select user_id from wladdons_settings_addonnoticeuser where notice_type_id=? and shouldsend>0",
+			    noticetypeID);
 			while (sql.next()) {
 				long user = sql.getLong("user_id");
-				if (limitToUsers == null || limitToUsers.contains(user)) usersToSendMailTo.add(user);
+				if (limitToUsers == null || limitToUsers.contains(user))
+					usersToSendMailTo.add(user);
 			}
 		}
 
@@ -436,15 +444,16 @@ public class ServerUtils {
 
 		Set<Long> uploadersToInform = new HashSet<>();
 		if (oldMessage == null) {
-			ResultSet sql = Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
-			                Utils.getAddOnID(addon));
+			ResultSet sql =
+			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
+			              Utils.getAddOnID(addon));
 			while (sql.next()) uploadersToInform.add(sql.getLong("user"));
 			uploadersToInform.remove(Utils.getUserID(commenter));
 		}
 
 		for (String username : mentioned) {
 			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-			                "select id,email from auth_user where username=?", username);
+			                          "select id,email from auth_user where username=?", username);
 			if (!sql.next()) {
 				Utils.log("User '" + username + "' is not registered.");
 				continue;
@@ -463,7 +472,7 @@ public class ServerUtils {
 
 		for (Long uploader : uploadersToInform) {
 			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-			                "select username,email from auth_user where id=?", uploader);
+			                          "select username,email from auth_user where id=?", uploader);
 			sql.next();
 			Utils.sendEMail(sql.getString("email"), "New Add-On Comment",
 			                "Dear " + sql.getString("username") + ",\n\n" + commenter +

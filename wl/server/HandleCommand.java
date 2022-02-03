@@ -706,9 +706,8 @@ public class HandleCommand {
 			notifyUsers = ServerUtils.getNotificationSubscribers("deleted", notifyUsers);
 
 			for (Long user : notifyUsers) {
-				sql =
-				    Utils.sql(Utils.Databases.kWebsite,
-				              "select email,username from auth_user where id=?", user);
+				sql = Utils.sql(Utils.Databases.kWebsite,
+				                "select email,username from auth_user where id=?", user);
 				sql.next();
 
 				Utils.sendEMail(
@@ -993,17 +992,20 @@ public class HandleCommand {
 				}
 
 				for (Long user : ServerUtils.getNotificationSubscribers("new", null)) {
-					ResultSet sql = Utils.sql(Utils.Databases.kWebsite, "select email from auth_user where id=?", user);
+					ResultSet sql = Utils.sql(
+					    Utils.Databases.kWebsite, "select email from auth_user where id=?", user);
 					sql.next();
 					Utils.sendEMail(
-						sql.getString("email"), (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
-							(isUpdate ? ("An add-on has been updated by " + username) :
-                                ("A new add-on has been submitted by " + username)) + ":\n\n" +
-							"Name: " + newProfile.get("name").value + "\n" +
-							"Description: " + newProfile.get("description").value + "\n" +
-							"Category: " + newProfile.get("category").value + "\n" +
-							"Version: " + newProfile.get("version").value
-						, true);
+					    sql.getString("email"),
+					    (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
+					    (isUpdate ? ("An add-on has been updated by " + username) :
+                                    ("A new add-on has been submitted by " + username)) +
+					        ":\n\n"
+					        + "Name: " + newProfile.get("name").value + "\n"
+					        + "Description: " + newProfile.get("description").value + "\n"
+					        + "Category: " + newProfile.get("category").value + "\n"
+					        + "Version: " + newProfile.get("version").value,
+					    true);
 				}
 
 				Utils.sendEMailToSubscribedAdmins(

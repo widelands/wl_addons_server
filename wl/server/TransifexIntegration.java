@@ -197,11 +197,12 @@ public class TransifexIntegration {
 			}
 		}
 
-		Set<Long> subscribed = ServerUtils.getNotificationSubscribers("transifex-issues", perUploader.keySet());
+		Set<Long> subscribed =
+		    ServerUtils.getNotificationSubscribers("transifex-issues", perUploader.keySet());
 
 		for (Long uploader : perUploader.keySet()) {
 			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-			                "select email,username from auth_user where id=?", uploader);
+			                          "select email,username from auth_user where id=?", uploader);
 			sql.next();
 			final String username = sql.getString("username");
 			if (!subscribed.contains(uploader)) continue;
