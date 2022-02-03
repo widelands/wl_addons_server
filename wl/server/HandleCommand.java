@@ -979,28 +979,26 @@ public class HandleCommand {
 	// between command versions. We need to keep support for all older versions around
 	// indefinitely, so this section will accumulate a lot of legacy code over time.
 
-	private void doHandleCmdSubmit_CheckUpdateIsValid(File existing, File updated) throws Exception {
+	private void doHandleCmdSubmit_CheckUpdateIsValid(File existing, File updated)
+	    throws Exception {
 		Utils.Profile oldProfile = Utils.readProfile(existing, cmd[1]);
 		Utils.Profile newProfile = Utils.readProfile(updated, cmd[1]);
 
 		if (!oldProfile.get(Utils.Profile.kGlobalSection, "category")
-		         .value.equals(
-		             newProfile.get(Utils.Profile.kGlobalSection, "category").value))
+		         .value.equals(newProfile.get(Utils.Profile.kGlobalSection, "category").value))
 			throw new ServerUtils.WLProtocolException(
 			    "An add-on with the same name and a different category already exists. "
-			    + "Old category is '" + oldProfile.get("category").value +
-			    "', new category is '" + newProfile.get("category").value + "'.");
+			    + "Old category is '" + oldProfile.get("category").value + "', new category is '" +
+			    newProfile.get("category").value + "'.");
 
-		String oldVersionString =
-		    oldProfile.get(Utils.Profile.kGlobalSection, "version").value;
+		String oldVersionString = oldProfile.get(Utils.Profile.kGlobalSection, "version").value;
 		String[] oldVersion = oldVersionString.split("\\.");
 		String[] newVersion =
 		    newProfile.get(Utils.Profile.kGlobalSection, "version").value.split("\\.");
 		Boolean newer = null;
 		for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
 			if (!oldVersion[i].equals(newVersion[i])) {
-				newer =
-				    (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
+				newer = (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
 				break;
 			}
 		}
@@ -1090,7 +1088,8 @@ public class HandleCommand {
 	}
 
 	// Helper for doHandleCmdSubmit_New()
-	private static void recursivelyFindExistingChecksums(Map<String, File> existingChecksums, File dir) {
+	private static void recursivelyFindExistingChecksums(Map<String, File> existingChecksums,
+	                                                     File dir) {
 		for (File f : dir.listFiles()) {
 			if (f.isDirectory()) {
 				recursivelyFindExistingChecksums(existingChecksums, f);
@@ -1166,7 +1165,8 @@ public class HandleCommand {
 		ArrayList<AbstractFile> filesToRequest = new ArrayList<>();
 		for (AbstractFile f : abstractFiles) {
 			if (f.directory.isEmpty() && f.name.equals("addon")) mainFile = f;
-			if (!existingChecksums.containsKey(f.checksum) && !missingChecksums.contains(f.checksum)) {
+			if (!existingChecksums.containsKey(f.checksum) &&
+			    !missingChecksums.contains(f.checksum)) {
 				missingChecksums.add(f.checksum);
 				filesToRequest.add(f);
 			}
@@ -1178,7 +1178,8 @@ public class HandleCommand {
 			if (Utils.checksum(addOnMain).equals(mainFile.checksum))
 				throw new ServerUtils.WLProtocolException("You forgot to update the `addon` file");
 			if (existingChecksums.containsKey(mainFile.checksum))
-				doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, existingChecksums.get(mainFile.checksum));
+				doHandleCmdSubmit_CheckUpdateIsValid(
+				    addOnMain, existingChecksums.get(mainFile.checksum));
 		}
 
 		if (missingChecksums.contains(mainFile.checksum)) {
@@ -1212,21 +1213,23 @@ public class HandleCommand {
 			stream.close();
 			String c = Utils.checksum(output);
 			if (!f.checksum.equals(c))
-				throw new ServerUtils.WLProtocolException(
-				    "Checksum mismatch for " + f.directory + "/" + f.name +
-				    ": expected " + f.checksum + ", found " + c);
+				throw new ServerUtils.WLProtocolException("Checksum mismatch for " + f.directory +
+				                                          "/" + f.name + ": expected " +
+				                                          f.checksum + ", found " + c);
 
 			// Automatically shrink PNGs during uploading to speed up subsequent downloads
 			if (f.name.endsWith(".png")) {
 				File optimized = Files.createTempFile(null, null).toFile();
-				if (Utils.bash(
-								"bash", "-c", "pngquant 256 < '" + output.getAbsolutePath() + "' > '" + optimized.getAbsolutePath() + "'"
-						) == 0 && optimized.length() < output.length()) {
+				if (Utils.bash("bash", "-c",
+				               "pngquant 256 < '" + output.getAbsolutePath() + "' > '" +
+				                   optimized.getAbsolutePath() + "'") == 0 &&
+				    optimized.length() < output.length()) {
 					output = optimized;
 				}
 			}
 
-			if (f == mainFile && addOnMain.exists()) doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, output);
+			if (f == mainFile && addOnMain.exists())
+				doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, output);
 
 			existingChecksums.put(f.checksum, output);
 		}
