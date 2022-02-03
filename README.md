@@ -54,8 +54,8 @@ Table                        | Column Names                                     
 ---------------------------- | ----------------------------------------------------------| -------------------------------------------------- | -------
 `auth_user`                  | `id`      <br> `username`       <br> `email`              | `int` <br> `varchar` <br> `varchar`                | 
 `wlggz_ggzauth`              | `user_id` <br> `password`       <br> `permissions` <br>   | `int` <br> `varchar` <br> `int` <br>               | -<br>-<br> `7` means normal user,<br>`127` means admin
-`notification_noticetype`    | `id`      <br> `label`                                    | `int` <br> `varchar`                               | 
-`notification_noticesetting` | `user_id` <br> `notice_type_id` <br> `medium` <br> `send` | `int` <br> `int`     <br> `int`     <br> `tinyint` | -<br>-<br> `1` means e-mail <br> `0` means disabled and `1` enabled
+`wladdons_settings_addonnoticetype` | `id`      <br> `slug` <br> `send_default` <br> `author_related_default` | `int` <br> `varchar` <br> `tinyint` <br> `tinyint` | 
+`wladdons_settings_addonnoticeuser` | `user_id` <br> `notice_type_id`           <br> `shouldsend`             | `int` <br> `int`                    <br> `tinyint` | 
 
 #### The Add-Ons Database
 

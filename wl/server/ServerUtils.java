@@ -377,6 +377,48 @@ public class ServerUtils {
 	}
 
 	/**
+	 * Check which users should receive notifications of a given type.
+	 * @param noticetype Internal name of the notice type.
+	 * @param limitToUsers If not null, do not send a message to users not listed in this set.
+	 * @return All users who should receive a notification.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	public static Set<Long> getNotificationSubscribers(String noticetype, Set<Long> limitToUsers) throws Exception {
+		ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
+				"select id,send_default from wladdons_settings_addonnoticetype where slug=?", noticetype);
+		if (!sql.next()) {
+			Utils.log("WARNING: Notice type '" + noticetype + "' is not known");
+			return new HashSet<Long>();
+		}
+		final long noticetypeID = sql.getLong("id");
+		final boolean sendDefault = sql.getLong("send_default") > 0;
+
+		Set<Long> usersToSendMailTo = new HashSet<>();
+		if (sendDefault) {
+			if (limitToUsers == null) {
+				Utils.log("WARNING: Refusing to send mass e-mail to all users by default");
+			} else {
+				// Send the e-mail to affected users only, sending a mail by default.
+				for (Long user : limitToUsers) {
+					sql = Utils.sql(Utils.Databases.kWebsite,
+							"select shouldsend from wladdons_settings_addonnoticeuser where notice_type_id=? and user_id=?", noticetypeID, user);
+					if (!sql.next() || sql.getLong("shouldsend") > 0) usersToSendMailTo.add(user);
+				}
+			}
+		} else {
+			// Send the e-mail to users who explicitly subscribed.
+			sql = Utils.sql(Utils.Databases.kWebsite,
+					"select user_id from wladdons_settings_addonnoticeuser where notice_type_id=? and shouldsend>0", noticetypeID);
+			while (sql.next()) {
+				long user = sql.getLong("user_id");
+				if (limitToUsers == null || limitToUsers.contains(user)) usersToSendMailTo.add(user);
+			}
+		}
+
+		return usersToSendMailTo;
+	}
+
+	/**
 	 * Send notifications about a new comment to all affected and subscribed users.
 	 * @param addon Add-on on which the user commented.
 	 * @param commenter The user who wrote the comment.
@@ -392,62 +434,37 @@ public class ServerUtils {
 		mentioned.remove(commenter);
 		if (oldMessage != null) mentioned.removeAll(findMentions(oldMessage));
 
-		ResultSet sql =
-		    Utils.sql(Utils.Databases.kWebsite,
-		              "select id from notification_noticetype where label='addon_comment_mention'");
-		boolean noticeTypeKnown = sql.next();
-		if (!noticeTypeKnown)
-			Utils.log("Notification type 'addon_comment_mention' was not defined yet");
-		long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
-
 		Set<Long> uploadersToInform = new HashSet<>();
 		if (oldMessage == null) {
-			sql = Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
+			ResultSet sql = Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
 			                Utils.getAddOnID(addon));
 			while (sql.next()) uploadersToInform.add(sql.getLong("user"));
 			uploadersToInform.remove(Utils.getUserID(commenter));
 		}
 
 		for (String username : mentioned) {
-			sql = Utils.sql(Utils.Databases.kWebsite,
+			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
 			                "select id,email from auth_user where username=?", username);
 			if (!sql.next()) {
 				Utils.log("User '" + username + "' is not registered.");
 				continue;
 			}
+			final long id = sql.getLong("id");
+			if (getNotificationSubscribers("comment-mention", Set.of(id)).isEmpty()) continue;
 
-			if (noticeTypeKnown &&
-			    Utils.checkUserDisabledNotifications(sql.getLong("id"), noticeTypeID)) {
-				Utils.log("User '" + username + "' disabled comment mention notifications.");
-				continue;
-			}
-
-			uploadersToInform.remove(sql.getLong("id"));
+			uploadersToInform.remove(id);
 			Utils.sendEMail(sql.getString("email"), "Add-On Comment Mention",
 			                "Dear " + username + ",\n\nyou have been mentioned in a comment by " +
 			                    commenter + " on the add-on '" + addon + "':\n\n" + comment,
 			                true);
 		}
 
-		sql = Utils.sql(Utils.Databases.kWebsite,
-		                "select id from notification_noticetype where label='addon_comment_new'");
-		noticeTypeKnown = sql.next();
-		if (!noticeTypeKnown)
-			Utils.log("Notification type 'addon_comment_new' was not defined yet");
-		noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
+		uploadersToInform = getNotificationSubscribers("comment-added", uploadersToInform);
 
 		for (Long uploader : uploadersToInform) {
-			sql = Utils.sql(Utils.Databases.kWebsite,
+			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
 			                "select username,email from auth_user where id=?", uploader);
 			sql.next();
-
-			if (noticeTypeKnown &&
-			    Utils.checkUserDisabledNotifications(sql.getLong("id"), noticeTypeID)) {
-				Utils.log("User '" + sql.getString("username") +
-				          "' disabled new comment notifications.");
-				continue;
-			}
-
 			Utils.sendEMail(sql.getString("email"), "New Add-On Comment",
 			                "Dear " + sql.getString("username") + ",\n\n" + commenter +
 			                    " has written a new comment on your add-on '" + addon + "':\n\n" +
