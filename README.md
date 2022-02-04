@@ -30,6 +30,7 @@ Whenever an error that requires a maintainer’s attention occurs on the add-ons
 Key                  | Description                                                        | Example
 -------------------- | ------------------------------------------------------------------ | ------------------------------------------------------
 `port`               | Port number for the server                                         | `7388`
+`name`               | Human-readable name to show to the user.                           | `Alpha`
 `githubusername`     | User name for GitHub                                               | `bunnybot`
 `githubtoken`        | Personal Access Token for GitHub                                   | `123456abcdef`
 `transifextoken`     | Bearer token for Transifex                                         | `1/abcdef123456`
