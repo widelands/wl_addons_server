@@ -903,7 +903,8 @@ public class HandleCommand {
 				int oldSecurity = -1, oldQuality = -1;
 				if (addOnDir.isDirectory()) {
 					isUpdate = true;
-					oldVersionString = doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, newAddOnMain);
+					oldVersionString =
+					    doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, newAddOnMain);
 
 					diff =
 					    Utils.bashOutput("diff", "-r", "-u", addOnDir.getPath(), tempDir.getPath());
