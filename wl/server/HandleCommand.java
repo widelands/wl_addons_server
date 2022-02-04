@@ -903,7 +903,7 @@ public class HandleCommand {
 				int oldSecurity = -1, oldQuality = -1;
 				if (addOnDir.isDirectory()) {
 					isUpdate = true;
-					doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, newAddOnMain);
+					oldVersionString = doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, newAddOnMain);
 
 					diff =
 					    Utils.bashOutput("diff", "-r", "-u", addOnDir.getPath(), tempDir.getPath());
@@ -979,7 +979,14 @@ public class HandleCommand {
 	// between command versions. We need to keep support for all older versions around
 	// indefinitely, so this section will accumulate a lot of legacy code over time.
 
-	private void doHandleCmdSubmit_CheckUpdateIsValid(File existing, File updated)
+	/**
+	 * Check that a given attempt to update an add-on is valid.
+	 * @param existing The existing add-on config file.
+	 * @param updated The new add-on config file.
+	 * @return The version of the existing add-on.
+	 * @throws Exception If the update is not permitted.
+	 */
+	private String doHandleCmdSubmit_CheckUpdateIsValid(File existing, File updated)
 	    throws Exception {
 		Utils.Profile oldProfile = Utils.readProfile(existing, cmd[1]);
 		Utils.Profile newProfile = Utils.readProfile(updated, cmd[1]);
@@ -1009,6 +1016,8 @@ public class HandleCommand {
 			    + "already exists. Existing version is '" + oldVersionString +
 			    "', your version is '" + newProfile.get("version").value + "'.");
 		}
+
+		return oldVersionString;
 	}
 
 	/**
@@ -1073,7 +1082,10 @@ public class HandleCommand {
 		ServerUtils.checkEndOfStream(in);
 	}
 
-	// Helper for doHandleCmdSubmit_New()
+	/**
+	 * Helper for doHandleCmdSubmit_New().
+	 * Abstract representation of a filename in a directory plus a file checksum.
+	 */
 	private static class AbstractFile {
 		public final String directory;
 		public final String name;
@@ -1087,7 +1099,12 @@ public class HandleCommand {
 		}
 	}
 
-	// Helper for doHandleCmdSubmit_New()
+	/**
+	 * Helper for doHandleCmdSubmit_New().
+	 * Create all AbstractFile infos for the files under a directory.
+	 * @param existingChecksums Map to which the files will be added.
+	 * @param dir Directory to traverse.
+	 */
 	private static void recursivelyFindExistingChecksums(Map<String, File> existingChecksums,
 	                                                     File dir) {
 		for (File f : dir.listFiles()) {
