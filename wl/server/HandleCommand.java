@@ -702,33 +702,19 @@ public class HandleCommand {
 			        "\n\n-------------------------\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
 
 			ResultSet sql =
-			    Utils.sql(Utils.Databases.kWebsite,
-			              "select id from notification_noticetype where label='addon_deleted'");
-			final boolean noticeTypeKnown = sql.next();
-			if (!noticeTypeKnown)
-				Utils.log("Notification type 'addon_deleted' was not defined yet");
-			final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
-
-			sql =
 			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);
-			while (sql.next()) {
-				long user = sql.getLong("user");
-				ResultSet email =
-				    Utils.sql(Utils.Databases.kWebsite,
-				              "select email,username from auth_user where id=?", user);
-				if (!email.next()) {
-					Utils.log("User #" + user +
-					          " does not seem to be a registered user. No e-mail will be sent.");
-					continue;
-				}
-				if (noticeTypeKnown && Utils.checkUserDisabledNotifications(user, noticeTypeID)) {
-					Utils.log("User '" + username + "' disabled deletion notifications.");
-					continue;
-				}
+			Set<Long> notifyUsers = new HashSet<>();
+			while (sql.next()) notifyUsers.add(sql.getLong("user"));
+			notifyUsers = ServerUtils.getNotificationSubscribers("deleted", notifyUsers);
+
+			for (Long user : notifyUsers) {
+				sql = Utils.sql(Utils.Databases.kWebsite,
+				                "select email,username from auth_user where id=?", user);
+				sql.next();
 
 				Utils.sendEMail(
-				    email.getString("email"), "Add-On Deleted",
-				    "Dear " + email.getString("username") + ",\n\nyour add-on '" + cmd[1] +
+				    sql.getString("email"), "Add-On Deleted",
+				    "Dear " + sql.getString("username") + ",\n\nyour add-on '" + cmd[1] +
 				        "' has been deleted by the server administrators for the following reason:\n" +
 				        reason + "\n\n-------------------------\n"
 				        +
@@ -929,6 +915,23 @@ public class HandleCommand {
 					Utils.sql(Utils.Databases.kAddOns,
 					          "insert into uploaders (addon,user) value(?,?)",
 					          Utils.getAddOnID(cmd[1]), userDatabaseID);
+				}
+
+				for (Long user : ServerUtils.getNotificationSubscribers("new", null)) {
+					ResultSet sql = Utils.sql(
+					    Utils.Databases.kWebsite, "select email from auth_user where id=?", user);
+					sql.next();
+					Utils.sendEMail(
+					    sql.getString("email"),
+					    (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
+					    (isUpdate ? ("An add-on has been updated by " + username) :
+                                    ("A new add-on has been submitted by " + username)) +
+					        ":\n\n"
+					        + "Name: " + newProfile.get("name").value + "\n"
+					        + "Description: " + newProfile.get("description").value + "\n"
+					        + "Category: " + newProfile.get("category").value + "\n"
+					        + "Version: " + newProfile.get("version").value,
+					    true);
 				}
 
 				Utils.sendEMailToSubscribedAdmins(
