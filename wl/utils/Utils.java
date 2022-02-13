@@ -688,7 +688,7 @@ public class Utils {
 			write.print(
 			    "\n-------------------------\n"
 			    +
-			    "To change how you receive notifications, please go to https://www.widelands.org/notification/.");
+			    "To change how you receive notifications, please go to https://www.widelands.org/addons/.");
 		}
 		write.close();
 		bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());

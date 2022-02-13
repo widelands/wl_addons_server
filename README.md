@@ -27,23 +27,28 @@ Whenever an error that requires a maintainer’s attention occurs on the add-ons
 
 ### The `config` File
 
-Key                  | Description                                                        | Example
--------------------- | ------------------------------------------------------------------ | ------------------------------------------------------
-`port`               | Port number for the server                                         | `7388`
-`name`               | Human-readable name to show to the user.                           | `Alpha`
-`githubusername`     | User name for GitHub                                               | `bunnybot`
-`githubtoken`        | Personal Access Token for GitHub                                   | `123456abcdef`
-`transifextoken`     | Bearer token for Transifex                                         | `1/abcdef123456`
-`muninpassword`      | Arbitrary password for munin integration scripts                   | `123456`
-`databasehost`       | IP address of the MySQL server                                     | `127.0.0.1`
-`databaseport`       | Port number of the MySQL server                                    | `3306`
-`website_database`   | Name of the website database                                       | `wl_addons_server_website`
-`website_db_user`    | The database user of the websitedatabase                           | `websiteuser`
-`website_db_password`| Password for the website database user                             | `123456`
-`addons_database`    | Name of the add-ons database                                       | `wl_addons_server_addons`
-`addons_db_user`     | The database user of the addons database                           | `addonuser`
-`addons_db_password` | Password of the addons database user                               | `123456`
-`deploy`             | Whether this server is the real thing, not just a test environment | `true` or `false`
+Key                           | Description                                                                 | Example
+----------------------------- | --------------------------------------------------------------------------- | -----------------------------
+`port`                        | Port number for the server                                                  | `7388`
+`name`                        | Human-readable name to show to the user.                                    | `Alpha`
+`githubusername`              | User name for GitHub                                                        | `bunnybot`
+`githubtoken`                 | Personal Access Token for GitHub                                            | `123456abcdef`
+`transifextoken`              | Bearer token for Transifex                                                  | `1/abcdef123456`
+`muninpassword`               | Arbitrary password for munin integration scripts                            | `123456`
+`databasehost`                | IP address of the MySQL server                                              | `127.0.0.1`
+`databaseport`                | Port number of the MySQL server                                             | `3306`
+`website_database`            | Name of the website database                                                | `wl_addons_server_website`
+`website_db_user`             | The database user of the websitedatabase                                    | `websiteuser`
+`website_db_password`         | Password for the website database user                                      | `123456`
+`addons_database`             | Name of the add-ons database                                                | `wl_addons_server_addons`
+`addons_db_user`              | The database user of the addons database                                    | `addonuser`
+`addons_db_password`          | Password of the addons database user                                        | `123456`
+`noticetype_new`              | Name of the notice type for new add-ons in the website database             | `new`
+`noticetype_deleted`          | Name of the notice type for add-on deletion in the website database         | `deleted`
+`noticetype_transifex-issues` | Name of the notice type for Transifex string issues in the website database | `transifex-issues`
+`noticetype_comment-added`    | Name of the notice type for new comments in the website database            | `comment-added`
+`noticetype_comment-mention`  | Name of the notice type for @mentions in comments in the website database   | `comment-mention`
+`deploy`                      | Whether this server is the real thing, not just a test environment          | `true` or `false`
 
 ### The Database
 
@@ -55,8 +60,8 @@ Table                        | Column Names                                     
 ---------------------------- | ----------------------------------------------------------| -------------------------------------------------- | -------
 `auth_user`                  | `id`      <br> `username`       <br> `email`              | `int` <br> `varchar` <br> `varchar`                | 
 `wlggz_ggzauth`              | `user_id` <br> `password`       <br> `permissions` <br>   | `int` <br> `varchar` <br> `int` <br>               | -<br>-<br> `7` means normal user,<br>`127` means admin
-`notification_noticetype`    | `id`      <br> `label`                                    | `int` <br> `varchar`                               | 
-`notification_noticesetting` | `user_id` <br> `notice_type_id` <br> `medium` <br> `send` | `int` <br> `int`     <br> `int`     <br> `tinyint` | -<br>-<br> `1` means e-mail <br> `0` means disabled and `1` enabled
+`wladdons_settings_addonnoticetype` | `id`      <br> `slug` <br> `send_default` <br> `author_related_default` | `int` <br> `varchar` <br> `tinyint` <br> `tinyint` | 
+`wladdons_settings_addonnoticeuser` | `user_id` <br> `notice_type_id`           <br> `shouldsend`             | `int` <br> `int`                    <br> `tinyint` | 
 
 #### The Add-Ons Database
 

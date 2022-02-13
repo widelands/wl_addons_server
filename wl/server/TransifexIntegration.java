@@ -28,6 +28,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import org.json.simple.parser.ContainerFactory;
 import org.json.simple.parser.JSONParser;
 import wl.utils.Buildcats;
@@ -196,27 +197,15 @@ public class TransifexIntegration {
 			}
 		}
 
-		ResultSet sql = Utils.sql(
-		    Utils.Databases.kWebsite,
-		    "select id from notification_noticetype where label='addon_transifex_issues'");
-		final boolean noticeTypeKnown = sql.next();
-		if (!noticeTypeKnown)
-			Utils.log("Notification type 'addon_transifex_issues' was not defined yet");
-		final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
+		Set<Long> subscribed =
+		    ServerUtils.getNotificationSubscribers("transifex-issues", perUploader.keySet());
 
 		for (Long uploader : perUploader.keySet()) {
-			sql = Utils.sql(Utils.Databases.kWebsite,
-			                "select email,username from auth_user where id=?", uploader);
-			if (!sql.next()) {
-				Utils.log("User #" + uploader +
-				          " does not seem to be a registered user. No e-mail will be sent.");
-				continue;
-			}
+			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
+			                          "select email,username from auth_user where id=?", uploader);
+			sql.next();
 			final String username = sql.getString("username");
-			if (noticeTypeKnown && Utils.checkUserDisabledNotifications(uploader, noticeTypeID)) {
-				Utils.log("User '" + username + "' disabled Transifex issue notifications.");
-				continue;
-			}
+			if (!subscribed.contains(uploader)) continue;
 
 			Map<String, List<Issue>> relevantIssues = perUploader.get(uploader);
 			long total = 0;
