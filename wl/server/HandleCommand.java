@@ -828,7 +828,8 @@ public class HandleCommand {
 						extension = ".jpg";
 						break;
 					default:
-						throw new ServerUtils.WLProtocolException("Illegal image type '" + mimetype + "' (only PNG and JPG are allowed)");
+						throw new ServerUtils.WLProtocolException(
+						    "Illegal image type '" + mimetype + "' (only PNG and JPG are allowed)");
 				}
 
 				String filename;
