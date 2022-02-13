@@ -378,7 +378,8 @@ public class ServerUtils {
 
 	/**
 	 * Check which users should receive notifications of a given type.
-	 * @param noticetype Internal name of the notice type.
+	 * @param noticetype Internal name of the notice type (config file key without prefix,
+	 *                   e.g. 'comment-mention' for the key 'noticetype_comment-mention').
 	 * @param limitToUsers If not null, do not send a message to users not listed in this set.
 	 * @return All users who should receive a notification.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
@@ -388,7 +389,7 @@ public class ServerUtils {
 		ResultSet sql =
 		    Utils.sql(Utils.Databases.kWebsite,
 		              "select id,send_default from wladdons_settings_addonnoticetype where slug=?",
-		              noticetype);
+		              Utils.config("noticetype_" + noticetype));
 		if (!sql.next()) {
 			Utils.log("WARNING: Notice type '" + noticetype + "' is not known");
 			return new HashSet<Long>();

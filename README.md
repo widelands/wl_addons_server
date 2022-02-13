@@ -27,22 +27,27 @@ Whenever an error that requires a maintainer’s attention occurs on the add-ons
 
 ### The `config` File
 
-Key                  | Description                                                        | Example
--------------------- | ------------------------------------------------------------------ | ------------------------------------------------------
-`port`               | Port number for the server                                         | `7388`
-`githubusername`     | User name for GitHub                                               | `bunnybot`
-`githubtoken`        | Personal Access Token for GitHub                                   | `123456abcdef`
-`transifextoken`     | Bearer token for Transifex                                         | `1/abcdef123456`
-`muninpassword`      | Arbitrary password for munin integration scripts                   | `123456`
-`databasehost`       | IP address of the MySQL server                                     | `127.0.0.1`
-`databaseport`       | Port number of the MySQL server                                    | `3306`
-`website_database`   | Name of the website database                                       | `wl_addons_server_website`
-`website_db_user`    | The database user of the websitedatabase                           | `websiteuser`
-`website_db_password`| Password for the website database user                             | `123456`
-`addons_database`    | Name of the add-ons database                                       | `wl_addons_server_addons`
-`addons_db_user`     | The database user of the addons database                           | `addonuser`
-`addons_db_password` | Password of the addons database user                               | `123456`
-`deploy`             | Whether this server is the real thing, not just a test environment | `true` or `false`
+Key                           | Description                                                                 | Example
+----------------------------- | --------------------------------------------------------------------------- | -----------------------------
+`port`                        | Port number for the server                                                  | `7388`
+`githubusername`              | User name for GitHub                                                        | `bunnybot`
+`githubtoken`                 | Personal Access Token for GitHub                                            | `123456abcdef`
+`transifextoken`              | Bearer token for Transifex                                                  | `1/abcdef123456`
+`muninpassword`               | Arbitrary password for munin integration scripts                            | `123456`
+`databasehost`                | IP address of the MySQL server                                              | `127.0.0.1`
+`databaseport`                | Port number of the MySQL server                                             | `3306`
+`website_database`            | Name of the website database                                                | `wl_addons_server_website`
+`website_db_user`             | The database user of the websitedatabase                                    | `websiteuser`
+`website_db_password`         | Password for the website database user                                      | `123456`
+`addons_database`             | Name of the add-ons database                                                | `wl_addons_server_addons`
+`addons_db_user`              | The database user of the addons database                                    | `addonuser`
+`addons_db_password`          | Password of the addons database user                                        | `123456`
+`noticetype_new`              | Name of the notice type for new add-ons in the website database             | `new`
+`noticetype_deleted`          | Name of the notice type for add-on deletion in the website database         | `deleted`
+`noticetype_transifex-issues` | Name of the notice type for Transifex string issues in the website database | `transifex-issues`
+`noticetype_comment-added`    | Name of the notice type for new comments in the website database            | `comment-added`
+`noticetype_comment-mention`  | Name of the notice type for @mentions in comments in the website database   | `comment-mention`
+`deploy`                      | Whether this server is the real thing, not just a test environment          | `true` or `false`
 
 ### The Database
 
