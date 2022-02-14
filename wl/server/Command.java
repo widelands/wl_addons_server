@@ -22,8 +22,8 @@ package wl.server;
 // clang-format off
 /**
  * This enum lists all commands that can be sent from clients to the server.
- * <p>
- * After the first contact, the client must send the following info:
+ * <ul>
+ * <li> After the first contact, the client must send the following info:
  * <ul>
  *  <li> Protocol version (PV), <code>\n</code>
  *  <li> Language name (e.g. "nds"), <code>\n</code>
@@ -31,7 +31,8 @@ package wl.server;
  *  <li> Username (or "" for no user), <code>\n</code>
  *  <li> <code>ENDOFSTREAM\n</code>
  * </ul>
- * If the username is "", the server then replies <code>ENDOFSTREAM\n</code>.
+ * <li> In PV 7+, the server then sends the server's display name followed by <code>\n</code>.
+ * <li> If the username is "", the server then replies <code>ENDOFSTREAM\n</code>.
  * Otherwise:
  * <ul>
  *   <li> The server replies with a random number followed by <code>\nENDOFSTREAM\n</code>.
@@ -42,10 +43,10 @@ package wl.server;
  *     <li> <code>SUCCESS\n</code> for accepted standard user
  *     <li> <code>ADMIN\n</code> for accepted superuser
  *     <li> an error message for incorrect username or password
- * </ul></ul>
+ * </ul></ul></ul>
  *
  * <p>
- * The currently supported protocol versions are 4 to 6. All documentation here refers to these
+ * The currently supported protocol versions are 4 to 7. All documentation here refers to these
  * versions. Note that compatibility for <strong>all</strong> versions <strong>ever introduced</strong> needs to be maintained
  * <strong>indefinitely</strong>. The first supported version is 4; the version numbers 1-3 are used by the legacy
  * "GitHub Repo List" format.

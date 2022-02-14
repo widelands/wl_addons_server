@@ -38,7 +38,7 @@ public class ClientThread implements Runnable {
 
 	/** The newest protocol version the server supports. */
 	// May be increased but never decreased.
-	public static final int kNewestSupportedProtocolVersion = 6;
+	public static final int kNewestSupportedProtocolVersion = 7;
 
 	/**
 	 * Constructor.
@@ -87,6 +87,7 @@ public class ClientThread implements Runnable {
 			if (widelandsVersion != null) Utils.log("Widelands: " + widelandsVersion);
 			ServerUtils.checkEndOfStream(in);
 			boolean admin = false;
+			if (protocolVersion >= 7) out.println(Utils.config("name"));
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
