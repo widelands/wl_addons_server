@@ -818,7 +818,7 @@ public class HandleCommand {
 					                                          cmd[3] + ", found " + checksum);
 				ServerUtils.checkEndOfStream(in);
 
-				String mimetype = Utils.bashOutput("mimetype", "--brief", file.getPath());
+				String mimetype = Utils.bashOutput("mimetype", "-M", "-b", file.getPath());
 				String extension;
 				switch (mimetype) {
 					case "image/png":
