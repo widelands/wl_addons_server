@@ -55,7 +55,6 @@ descriptions:new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 1,
-        basic_amount = 1,
         prohibited_till = 3300,
         forced_after = 4200
     },

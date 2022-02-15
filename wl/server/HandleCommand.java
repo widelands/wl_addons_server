@@ -808,12 +808,7 @@ public class HandleCommand {
 			File tempDir = Files.createTempDirectory(null).toFile();
 
 			try {
-				String filename;
-				for (long i = System.currentTimeMillis();; ++i) {
-					filename = "image" + i + ".png";
-					if (!new File("screenshots/" + cmd[1], filename).exists()) break;
-				}
-				File file = new File(tempDir, filename);
+				File file = new File(tempDir, "image");
 				PrintStream stream = new PrintStream(file);
 				for (long l = 0; l < size; ++l) {
 					int b = in.read();
@@ -830,6 +825,26 @@ public class HandleCommand {
 					throw new ServerUtils.WLProtocolException("Checksum mismatch: expected " +
 					                                          cmd[3] + ", found " + checksum);
 				ServerUtils.checkEndOfStream(in);
+
+				String mimetype = Utils.bashOutput("mimetype", "-M", "-b", file.getPath());
+				String extension;
+				switch (mimetype) {
+					case "image/png":
+						extension = ".png";
+						break;
+					case "image/jpeg":
+						extension = ".jpg";
+						break;
+					default:
+						throw new ServerUtils.WLProtocolException(
+						    "Illegal image type '" + mimetype + "' (only PNG and JPG are allowed)");
+				}
+
+				String filename;
+				for (long i = System.currentTimeMillis();; ++i) {
+					filename = "image" + i + extension;
+					if (!new File("screenshots/" + cmd[1], filename).exists()) break;
+				}
 				File result = new File("screenshots", cmd[1]);
 				result.mkdirs();
 				result = new File(result, filename);
