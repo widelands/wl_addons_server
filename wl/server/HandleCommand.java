@@ -782,7 +782,9 @@ public class HandleCommand {
 	private void handleCmdSubmitScreenshot() throws Exception {
 		// Args: name filesize checksum whitespaces description
 		checkCommandVersion(1);
-		ServerUtils.checkNrArgs(cmd, 5);
+		if (cmd.length < 5)
+			throw new ServerUtils.WLProtocolException("Expected at least 5 argument(s), found " +
+			                                          (cmd.length - 1));
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		if (username.isEmpty())
@@ -790,6 +792,12 @@ public class HandleCommand {
 		if (!admin && !Utils.isUploader(cmd[1], userDatabaseID))
 			throw new ServerUtils.WLProtocolException(
 			    "You can not submit screenshots for another person's add-on");
+
+		int whitespaces = Integer.valueOf(cmd[4]);
+		if (whitespaces < 0 || whitespaces > 1000)
+			throw new ServerUtils.WLProtocolException("Description too long (" + whitespaces +
+			                                          " words)");
+		ServerUtils.checkNrArgs(cmd, 5 + whitespaces);
 		long size = Long.valueOf(cmd[2]);
 		if (size > 4 * 1000 * 1000)
 			throw new ServerUtils.WLProtocolException(
@@ -833,7 +841,7 @@ public class HandleCommand {
 				}
 
 				String filename;
-				for (int i = 1;; ++i) {
+				for (long i = System.currentTimeMillis();; ++i) {
 					filename = "image" + i + extension;
 					if (!new File("screenshots/" + cmd[1], filename).exists()) break;
 				}
@@ -843,10 +851,6 @@ public class HandleCommand {
 				file.renameTo(result);
 				ServerUtils.doDelete(tempDir);
 
-				int whitespaces = Integer.valueOf(cmd[4]);
-				if (whitespaces < 0 || whitespaces > 1000)
-					throw new ServerUtils.WLProtocolException("Description too long (" +
-					                                          whitespaces + " words)");
 				String msg = cmd[5];
 				for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[6 + w];
 
@@ -855,6 +859,11 @@ public class HandleCommand {
 				profile.getSection("").contents.put(
 				    filename, new Utils.Value(filename, msg, cmd[1]));
 				Utils.editProfile(descriptionsFile, profile);
+
+				Utils.sendEMailToSubscribedAdmins(
+				    Utils.kEMailVerbosityFYI, "Add-On Screenshot Uploaded",
+				    "A new screenshot has been uploaded for the add-on " + cmd[1] + " by " +
+				        username + ".\n\nDescription: " + msg);
 
 				out.println("ENDOFSTREAM");
 			} catch (Exception e) {
