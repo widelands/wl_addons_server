@@ -9,10 +9,7 @@ descriptions:new_worker_type {
     animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
-    
-    experience = 12,
-    becomes = "europeans_stonemason_advanced",
-    
+        
     programs = {
         check_rocks = {
             "findobject=attrib:rocks radius:12",

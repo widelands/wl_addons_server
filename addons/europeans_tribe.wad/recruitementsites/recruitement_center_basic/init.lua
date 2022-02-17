@@ -46,7 +46,6 @@ descriptions:new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 1,
-        basic_amount = 1,
         prohibited_till = 3600,
         forced_after = 4500
     },
@@ -107,8 +106,6 @@ descriptions:new_productionsite_type {
                 "call=recruit_scout",
                 "call=recruit_trainer",
                 "call=recruit_carrier_1",
-                "call=recruit_carrier_2",
-                "call=recruit_carrier_3",
                 "return=skipped"
             }
         },
@@ -121,32 +118,6 @@ descriptions:new_productionsite_type {
                 "consume=europeans_carrier",
                 "animate=working duration:30s",
                 "recruit=europeans_carrier_1"
-            }
-        },
-        recruit_carrier_2 = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting second carrier"),
-            actions = {
-                "return=skipped unless economy needs europeans_carrier_2",
-                "return=skipped when economy needs europeans_farmer_basic",
-                "return=skipped when economy needs europeans_miller_basic",
-                "sleep=duration:10s",
-                "consume=basket europeans_carrier",
-                "animate=working duration:30s",
-                "recruit=europeans_carrier_2"
-            }
-        },
-        recruit_carrier_3 = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting third carrier"),
-            actions = {
-                "return=skipped unless economy needs europeans_carrier_3",
-                "return=skipped when economy needs europeans_farmer_basic",
-                "return=skipped when economy needs europeans_miller_basic",
-                "sleep=duration:10s",
-                "consume=basket europeans_carrier",
-                "animate=working duration:30s",
-                "recruit=europeans_carrier_3"
             }
         },
         recruit_baker = {
@@ -476,7 +447,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "sleep=duration:10s",
                 "animate=working duration:15s",
-                "produce=quartz"
+                "produce=marble"
             }
         },
     }

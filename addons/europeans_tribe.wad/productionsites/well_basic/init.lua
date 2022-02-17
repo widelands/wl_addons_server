@@ -48,7 +48,7 @@ descriptions:new_productionsite_type {
     },
 
     aihints = {
-        basic_amount = 5,
+        basic_amount = 2,
         forced_after = 900
     },
 
