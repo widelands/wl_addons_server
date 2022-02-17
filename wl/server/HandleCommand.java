@@ -25,6 +25,7 @@ import java.io.PrintStream;
 import java.nio.file.Files;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Set;
 import wl.utils.Utils;
 
@@ -712,33 +713,19 @@ public class HandleCommand {
 			        "\n\n-------------------------\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
 
 			ResultSet sql =
-			    Utils.sql(Utils.Databases.kWebsite,
-			              "select id from notification_noticetype where label='addon_deleted'");
-			final boolean noticeTypeKnown = sql.next();
-			if (!noticeTypeKnown)
-				Utils.log("Notification type 'addon_deleted' was not defined yet");
-			final long noticeTypeID = noticeTypeKnown ? sql.getLong("id") : -1;
-
-			sql =
 			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);
-			while (sql.next()) {
-				long user = sql.getLong("user");
-				ResultSet email =
-				    Utils.sql(Utils.Databases.kWebsite,
-				              "select email,username from auth_user where id=?", user);
-				if (!email.next()) {
-					Utils.log("User #" + user +
-					          " does not seem to be a registered user. No e-mail will be sent.");
-					continue;
-				}
-				if (noticeTypeKnown && Utils.checkUserDisabledNotifications(user, noticeTypeID)) {
-					Utils.log("User '" + username + "' disabled deletion notifications.");
-					continue;
-				}
+			Set<Long> notifyUsers = new HashSet<>();
+			while (sql.next()) notifyUsers.add(sql.getLong("user"));
+			notifyUsers = ServerUtils.getNotificationSubscribers("deleted", notifyUsers);
+
+			for (Long user : notifyUsers) {
+				sql = Utils.sql(Utils.Databases.kWebsite,
+				                "select email,username from auth_user where id=?", user);
+				sql.next();
 
 				Utils.sendEMail(
-				    email.getString("email"), "Add-On Deleted",
-				    "Dear " + email.getString("username") + ",\n\nyour add-on '" + cmd[1] +
+				    sql.getString("email"), "Add-On Deleted",
+				    "Dear " + sql.getString("username") + ",\n\nyour add-on '" + cmd[1] +
 				        "' has been deleted by the server administrators for the following reason:\n" +
 				        reason + "\n\n-------------------------\n"
 				        +
@@ -808,12 +795,9 @@ public class HandleCommand {
 	private void handleCmdSubmitScreenshot() throws Exception {
 		// Args: name filesize checksum whitespaces description
 		checkCommandVersion(1);
-		if (cmd.length < 6) {
+		if (cmd.length < 5)
 			throw new ServerUtils.WLProtocolException("Expected at least 5 argument(s), found " +
 			                                          (cmd.length - 1));
-		}
-		final int whitespaces = Integer.valueOf(cmd[4]);
-		ServerUtils.checkNrArgs(cmd, 5 + whitespaces);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		if (username.isEmpty())
@@ -824,6 +808,12 @@ public class HandleCommand {
 		if (blackWhiteList.contains("deny_upload_screenshot"))
 			throw new ServerUtils.WLProtocolException(
 			    "You have been forbidden from submitting screenshots");
+
+		int whitespaces = Integer.valueOf(cmd[4]);
+		if (whitespaces < 0 || whitespaces > 1000)
+			throw new ServerUtils.WLProtocolException("Description too long (" + whitespaces +
+			                                          " words)");
+		ServerUtils.checkNrArgs(cmd, 5 + whitespaces);
 		long size = Long.valueOf(cmd[2]);
 		if (size > 4 * 1000 * 1000)
 			throw new ServerUtils.WLProtocolException(
@@ -834,12 +824,7 @@ public class HandleCommand {
 			File tempDir = Files.createTempDirectory(null).toFile();
 
 			try {
-				String filename;
-				for (int i = 1;; ++i) {
-					filename = "image" + i + ".png";
-					if (!new File("screenshots/" + cmd[1], filename).exists()) break;
-				}
-				File file = new File(tempDir, filename);
+				File file = new File(tempDir, "image");
 				PrintStream stream = new PrintStream(file);
 				for (long l = 0; l < size; ++l) {
 					int b = in.read();
@@ -856,15 +841,32 @@ public class HandleCommand {
 					throw new ServerUtils.WLProtocolException("Checksum mismatch: expected " +
 					                                          cmd[3] + ", found " + checksum);
 				ServerUtils.checkEndOfStream(in);
+
+				String mimetype = Utils.bashOutput("mimetype", "-M", "-b", file.getPath());
+				String extension;
+				switch (mimetype) {
+					case "image/png":
+						extension = ".png";
+						break;
+					case "image/jpeg":
+						extension = ".jpg";
+						break;
+					default:
+						throw new ServerUtils.WLProtocolException(
+						    "Illegal image type '" + mimetype + "' (only PNG and JPG are allowed)");
+				}
+
+				String filename;
+				for (long i = System.currentTimeMillis();; ++i) {
+					filename = "image" + i + extension;
+					if (!new File("screenshots/" + cmd[1], filename).exists()) break;
+				}
 				File result = new File("screenshots", cmd[1]);
 				result.mkdirs();
 				result = new File(result, filename);
 				file.renameTo(result);
 				ServerUtils.doDelete(tempDir);
 
-				if (whitespaces < 0 || whitespaces > 1000)
-					throw new ServerUtils.WLProtocolException("Description too long (" +
-					                                          whitespaces + " words)");
 				String msg = cmd[5];
 				for (int w = 0; w < whitespaces; ++w) msg += " " + cmd[6 + w];
 
@@ -873,6 +875,11 @@ public class HandleCommand {
 				profile.getSection("").contents.put(
 				    filename, new Utils.Value(filename, msg, cmd[1]));
 				Utils.editProfile(descriptionsFile, profile);
+
+				Utils.sendEMailToSubscribedAdmins(
+				    Utils.kEMailVerbosityFYI, "Add-On Screenshot Uploaded",
+				    "A new screenshot has been uploaded for the add-on " + cmd[1] + " by " +
+				        username + ".\n\nDescription: " + msg);
 
 				out.println("ENDOFSTREAM");
 			} catch (Exception e) {
@@ -1048,6 +1055,23 @@ public class HandleCommand {
 					Utils.sql(Utils.Databases.kAddOns,
 					          "insert into uploaders (addon,user) value(?,?)",
 					          Utils.getAddOnID(cmd[1]), userDatabaseID);
+				}
+
+				for (Long user : ServerUtils.getNotificationSubscribers("new", null)) {
+					ResultSet sql = Utils.sql(
+					    Utils.Databases.kWebsite, "select email from auth_user where id=?", user);
+					sql.next();
+					Utils.sendEMail(
+					    sql.getString("email"),
+					    (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
+					    (isUpdate ? ("An add-on has been updated by " + username) :
+                                    ("A new add-on has been submitted by " + username)) +
+					        ":\n\n"
+					        + "Name: " + newProfile.get("name").value + "\n"
+					        + "Description: " + newProfile.get("description").value + "\n"
+					        + "Category: " + newProfile.get("category").value + "\n"
+					        + "Version: " + newProfile.get("version").value,
+					    true);
 				}
 
 				Utils.sendEMailToSubscribedAdmins(

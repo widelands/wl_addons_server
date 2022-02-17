@@ -9,54 +9,11 @@ descriptions:new_worker_type {
     animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
+    
+    buildcost = { europeans_stonecutter_basic = 1 },
 
     experience = 16,
     becomes = "europeans_stonemason_normal",
-
-    programs = {
-        check_rocks = {
-            "findobject=attrib:rocks radius:6",
-        },
-        check_stone = {
-            "findspace=size:any radius:6 resource:resource_stones",
-        },
-        cut_granite = {
-            "findobject=attrib:rocks radius:6",
-            "walk=object",
-            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
-            "animate=hack duration:17s500ms",
-            "callobject=shrink",
-            "createware=granite",
-            "return"
-        },
-        cut_marble = {
-            "findobject=attrib:rocks radius:6",
-            "walk=object",
-            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
-            "animate=hack duration:17s500ms",
-            "callobject=shrink",
-            "createware=marble",
-            "return"
-        },
-        mine_granite = {
-            "findspace=size:any radius:6 resource:resource_stones",
-            "walk=object",
-            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
-            "animate=hack duration:17s500ms",
-            "mine=resource_stones radius:1",
-            "createware=granite",
-            "return"
-        },
-        mine_marble = {
-            "findspace=size:any radius:6 resource:resource_stones",
-            "walk=object",
-            "playsound=sound/stonecutting/stonecutter priority:70% allow_multiple",
-            "animate=hack duration:17s500ms",
-            "mine=resource_stones radius:1",
-            "createware=marble",
-            "return"
-        }
-    },
 
     animations = {
         idle = {

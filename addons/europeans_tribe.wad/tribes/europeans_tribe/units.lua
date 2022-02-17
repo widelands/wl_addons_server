@@ -1220,33 +1220,6 @@ descriptions:new_tribe {
         {
             -- Collectors and Producer (Clay and Stone)
             {
-                name = "europeans_charcoal_burner_basic",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
-                    purpose = pgettext("europeans_worker", "Produces charcoal out of log.")
-                }
-            },
-            {
-                name = "europeans_charcoal_burner_normal",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
-                    purpose = pgettext("europeans_worker", "Produces charcoal out of log.")
-                }
-            },
-            {
-                name = "europeans_charcoal_burner_advanced",
-                default_target_quantity = 2,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
-                    purpose = pgettext("europeans_worker", "Produces charcoal out of log or old planks.")
-                }
-            },
-            {
                 name = "europeans_stonecutter_basic",
                 default_target_quantity = 1,
                 preciousness = 8,
@@ -1274,33 +1247,6 @@ descriptions:new_tribe {
                 }
             },
             {
-                name = "europeans_claydigger_basic",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an europeans worker: Clay Digger
-                    purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
-                }
-            },
-            {
-                name = "europeans_claydigger_normal",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an europeans worker: Clay Digger
-                    purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
-                }
-            },
-            {
-                name = "europeans_claydigger_advanced",
-                default_target_quantity = 2,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an europeans worker: Clay Digger
-                    purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
-                }
-            },
-            {
                 name = "europeans_stonemason_basic",
                 default_target_quantity = 1,
                 preciousness = 8,
@@ -1325,6 +1271,33 @@ descriptions:new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an europeans worker: Stonemason
                     purpose = pgettext("europeans_worker", "Burns bricks and grout out of clay, water and granite. Makes marble column out of marble.")
+                }
+            },
+            {
+                name = "europeans_claydigger_basic",
+                default_target_quantity = 1,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an europeans worker: Clay Digger
+                    purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
+                }
+            },
+            {
+                name = "europeans_claydigger_normal",
+                default_target_quantity = 1,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an europeans worker: Clay Digger
+                    purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
+                }
+            },
+            {
+                name = "europeans_claydigger_advanced",
+                default_target_quantity = 2,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an europeans worker: Clay Digger
+                    purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
                 }
             }
         },
@@ -1581,7 +1554,7 @@ descriptions:new_tribe {
             }
         },
         {
-            -- Miners, Smelters and Smiths
+            -- Miners, Burners, Smelters and Smiths
             {
                 name = "europeans_miner_basic",
                 default_target_quantity = 2,
@@ -1607,6 +1580,33 @@ descriptions:new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an europeans worker: Miner
                     purpose = pgettext("europeans_worker", "Mines ore and minerals.")
+                }
+            },
+            {
+                name = "europeans_charcoal_burner_basic",
+                default_target_quantity = 1,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
+                    purpose = pgettext("europeans_worker", "Produces charcoal out of log.")
+                }
+            },
+            {
+                name = "europeans_charcoal_burner_normal",
+                default_target_quantity = 1,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
+                    purpose = pgettext("europeans_worker", "Produces charcoal out of log.")
+                }
+            },
+            {
+                name = "europeans_charcoal_burner_advanced",
+                default_target_quantity = 2,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an europeans worker: Charcoal Burner
+                    purpose = pgettext("europeans_worker", "Produces charcoal out of log or old planks.")
                 }
             },
             {
