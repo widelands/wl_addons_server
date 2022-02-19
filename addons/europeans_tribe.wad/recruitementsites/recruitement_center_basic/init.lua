@@ -447,7 +447,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "sleep=duration:10s",
                 "animate=working duration:15s",
-                "produce=marble"
+                "recruit=europeans_carrier_ox"
             }
         },
     }

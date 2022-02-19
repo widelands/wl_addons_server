@@ -93,8 +93,20 @@ descriptions:new_productionsite_type {
                 "call=recruit_terraformer",
                 "call=recruit_scout",
                 "call=recruit_trainer",
+                "call=recruit_carrier_1",
                 "call=recruit_carrier_2",
                 "return=skipped"
+            }
+        },
+        recruit_carrier_1 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+            descname = pgettext("europeans_building", "recruiting first carrier"),
+            actions = {
+                "return=skipped unless economy needs europeans_carrier_1",
+                "sleep=duration:10s",
+                "consume=europeans_carrier",
+                "animate=working duration:30s",
+                "recruit=europeans_carrier_1"
             }
         },
         recruit_carrier_2 = {
@@ -438,7 +450,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "sleep=duration:10s",
                 "animate=working duration:15s",
-                "produce=quartz"
+                "recruit=europeans_carrier_donkey"
             }
         },
     }
