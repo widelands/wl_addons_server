@@ -69,6 +69,12 @@ descriptions:new_productionsite_type {
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
+                "consume=ration beer",
+                "sleep=duration:5s",
+                "call=mine_stone",
+                "call=mine_ore",
+                "call=mine_ore",
+                "call=mine_quartz",
             }
         },
         mine_ore = {
@@ -87,12 +93,20 @@ descriptions:new_productionsite_type {
                 "produce=granite",
             }
         },
+        mine_quartz = {
+            descname = _"mining quartz",
+            actions = {
+                "animate=working duration:25s",
+                "mine=resource_iron radius:4 yield:60% when_empty:10% experience_on_fail:10%",
+                "produce=quartz",
+            }
+        },
         encyclopedia = {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=ration:2 beer:2",
-                "produce=ore:4 granite:2",
+                "consume=ration:3 beer:3",
+                "produce=ore:6 granite:6 quartz",
             }
         },
     },

@@ -2923,21 +2923,21 @@ descriptions:new_tribe {
         {
             name = "europeans_armorsmithy_basic",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Armorsmithy
                 purpose = pgettext("europeans_building", "Produces armor and weapons.")
             }
         },
         {
             name = "europeans_armorsmithy_normal",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Armorsmithy
                 purpose = pgettext("europeans_building", "Produces armor and weapons.")
             }
         },
         {
             name = "europeans_armorsmithy_advanced",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Toolsmithy
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Armorsmithy
                 purpose = pgettext("europeans_building", "Produces armor and weapons.")
             }
         },

@@ -48,8 +48,8 @@ descriptions:new_productionsite_type {
     },
 
     inputs = {
-        { name = "ration", amount = 4 },
-        { name = "beer", amount = 4 }
+        { name = "ration", amount = 6 },
+        { name = "beer", amount = 6 }
     },
 
     programs = {
@@ -67,6 +67,11 @@ descriptions:new_productionsite_type {
                 "sleep=duration:5s",
                 "call=mine_stone",
                 "call=mine_coal",
+                "consume=ration beer",
+                "sleep=duration:5s",
+                "call=mine_stone",
+                "call=mine_coal",
+                "call=mine_diamond",
             }
         },
         mine_coal = {
@@ -85,12 +90,20 @@ descriptions:new_productionsite_type {
                 "produce=granite",
             }
         },
+        mine_diamond = {
+            descname = _"mining diamond",
+            actions = {
+                "animate=working duration:25s",
+                "mine=resource_coal radius:4 yield:40% when_empty:5% experience_on_fail:10%",
+                "produce=diamond",
+            }
+        },
         encyclopedia = {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=ration:2 beer:2",
-                "produce=coal:3 granite:2",
+                "consume=ration:3 beer:3",
+                "produce=coal:4 granite:3 diamond",
             }
         },
     },
