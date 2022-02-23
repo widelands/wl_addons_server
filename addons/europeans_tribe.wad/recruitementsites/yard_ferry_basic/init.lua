@@ -52,7 +52,7 @@ descriptions:new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 2,
-        prohibited_till = 9000
+        prohibited_till = 3600
     },
 
     working_positions = {

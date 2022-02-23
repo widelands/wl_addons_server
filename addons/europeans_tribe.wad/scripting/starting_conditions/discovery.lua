@@ -26,6 +26,7 @@ local init = {
     launch_expeditions(player, {
       {
          log = 32,
+         water = 16,
          reed = 16,
          granite = 16,
          blackwood = 8,

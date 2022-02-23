@@ -2944,6 +2944,13 @@ descriptions:new_tribe {
 
         -- Big
         {
+            name = "europeans_well_big",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Big Well
+                purpose = pgettext("europeans_building", "Draws water out of the deep.")
+            }
+        },
+        {
             name = "europeans_recruitement_center_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Recruitement Center

@@ -3,27 +3,52 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 descriptions:new_productionsite_type {
-    name = "europeans_well_level_5",
+    name = "europeans_well_big",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Well Level 5"),
+    descname = pgettext("europeans_building", "Big Well"),
     icon = dirname .. "menu.png",
-    size = "small",
-
+    size = "big",
+    
     animations = {
         idle = {
             pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 43, 43 },
+            hotspot = { 64, 106 }
         },
         working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 43, 43 },
+            pictures = path.list_files(dirname .. "idle_??.png"),
+            hotspot = { 64, 106 }
         },
     },
+    
+    buildcost = {
+        log = 4,
+        reed = 4,
+        blackwood = 2,
+        cloth = 2,
+        planks = 2,
+        brick = 2,
+        grout = 2
+    },
+    return_on_dismantle = {
+        log = 2,
+        blackwood = 2,
+        planks = 2,
+        granite = 2
+    },
 
-    aihints = {},
-
+    aihints = {
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 4,
+        prohibited_till = 900,
+        forced_after = 1200
+    },
+    
     working_positions = {
-        europeans_carrier = 1
+        europeans_carrier = 3
+    },
+    
+    inputs = {
     },
 
     programs = {
@@ -42,9 +67,9 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs water",
                 "sleep=duration:5s",
-                "animate=working duration:5s",
-                "mine=resource_water radius:8 yield:100% when_empty:99%",
-                "produce=water:3"
+                "animate=working duration:10s",
+                "mine=resource_water radius:16 yield:100% when_empty:99%",
+                "produce=water:8"
             }
         },
         mining_water_idle = {
@@ -53,9 +78,18 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water",
                 "sleep=duration:60s",
-                "animate=working duration:5s",
-                "mine=resource_water radius:8 yield:100% when_empty:99%",
-                "produce=water"
+                "animate=working duration:10s",
+                "mine=resource_water radius:16 yield:100% when_empty:99%",
+                "produce=water:2"
+            }
+        },
+        dummy_program = {
+            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+            descname = pgettext("europeans_building", "dummy program"),
+            actions = {
+                "sleep=duration:10s",
+                "animate=working duration:10s",
+                "produce=quartz"
             }
         },
     },
@@ -66,7 +100,7 @@ descriptions:new_productionsite_type {
         heading = _"Out of Water",
         message = pgettext("europeans_building", "The carrier working at this well can’t find any water in his well."),
         productivity_threshold = 1
-    },
+    }
 }
 
 pop_textdomain()

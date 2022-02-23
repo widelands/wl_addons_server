@@ -31,7 +31,7 @@ descriptions:new_productionsite_type {
         space_consumer = true,
         supports_seafaring = true,
         basic_amount = 2,
-        forced_after = 900
+        forced_after = 10
     },
 
     working_positions = {

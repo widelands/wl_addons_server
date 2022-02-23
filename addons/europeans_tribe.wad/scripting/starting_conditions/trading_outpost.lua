@@ -22,7 +22,7 @@ init = {
        
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {
-                water = 63,
+                water = 31,
                 log = 15,
                 reed = 15,
                 granite = 15,
