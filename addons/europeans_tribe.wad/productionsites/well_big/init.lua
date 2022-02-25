@@ -27,13 +27,15 @@ descriptions:new_productionsite_type {
         cloth = 2,
         planks = 2,
         brick = 2,
-        grout = 2
+        grout = 2,
+        buckets = 2
     },
     return_on_dismantle = {
         log = 2,
         blackwood = 2,
         planks = 2,
-        granite = 2
+        granite = 2,
+        buckets = 2
     },
 
     aihints = {

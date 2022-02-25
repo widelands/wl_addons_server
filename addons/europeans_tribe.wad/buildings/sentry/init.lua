@@ -22,9 +22,9 @@ descriptions:new_militarysite_type {
         mountain_conqueror = true
     },
 
-    max_soldiers = 4,
+    max_soldiers = 2,
     heal_per_second = 120,
-    conquers = 7,
+    conquers = 8,
     prefer_heroes = true,
 
     messages = {

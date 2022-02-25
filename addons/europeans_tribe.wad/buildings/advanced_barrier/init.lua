@@ -8,6 +8,7 @@ descriptions:new_militarysite_type {
     descname = pgettext("europeans_building", "Advanced Barrier"),
     icon = dirname .. "menu.png",
     size = "medium",
+    vision_range = 12,
 
     animations = {
         idle = {
@@ -20,9 +21,9 @@ descriptions:new_militarysite_type {
         fighting = true
     },
 
-    max_soldiers = 8,
-    heal_per_second = 200,
-    conquers = 8,
+    max_soldiers = 6,
+    heal_per_second = 180,
+    conquers = 10,
     prefer_heroes = true,
 
     messages = {

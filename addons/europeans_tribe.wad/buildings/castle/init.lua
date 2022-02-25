@@ -8,6 +8,7 @@ descriptions:new_militarysite_type {
     descname = pgettext("europeans_building", "Castle"),
     icon = dirname .. "menu.png",
     size = "big",
+    vision_range = 20,
     
     enhancement = {
         name = "europeans_fortress",
@@ -52,7 +53,7 @@ descriptions:new_militarysite_type {
         prohibited_till = 9600
     },
 
-    max_soldiers = 12,
+    max_soldiers = 6,
     heal_per_second = 200,
     conquers = 14,
     prefer_heroes = true,

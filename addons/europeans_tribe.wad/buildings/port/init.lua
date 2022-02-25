@@ -9,6 +9,7 @@ descriptions:new_warehouse_type {
     icon = dirname .. "menu.png",
     size = "port",
     map_check = {"seafaring"},
+    vision_range = 20,
 
     buildcost = {
         blackwood = 3,
@@ -47,7 +48,7 @@ descriptions:new_warehouse_type {
     },
 
     conquers = 6,
-    heal_per_second = 170,
+    heal_per_second = 180,
 }
 
 pop_textdomain()

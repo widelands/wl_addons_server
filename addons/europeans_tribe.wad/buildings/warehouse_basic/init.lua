@@ -8,6 +8,7 @@ descriptions:new_warehouse_type {
     descname = pgettext("europeans_building", "Basic Warehouse"),
     icon = dirname .. "menu.png",
     size = "medium",
+    vision_range = 16,
     
     enhancement = {
         name = "europeans_warehouse_normal",
@@ -54,7 +55,7 @@ descriptions:new_warehouse_type {
         prohibited_till = 3600
     },
 
-    heal_per_second = 140,
+    heal_per_second = 160,
 }
 
 pop_textdomain()

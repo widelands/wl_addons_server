@@ -8,6 +8,7 @@ descriptions:new_militarysite_type {
     descname = pgettext("europeans_building", "Barrier"),
     icon = dirname .. "menu.png",
     size = "medium",
+    vision_range = 10,
     
     enhancement = {
         name = "europeans_outpost",
@@ -54,7 +55,7 @@ descriptions:new_militarysite_type {
         fighting = true
     },
 
-    max_soldiers = 6,
+    max_soldiers = 4,
     heal_per_second = 120,
     conquers = 6,
     prefer_heroes = true,

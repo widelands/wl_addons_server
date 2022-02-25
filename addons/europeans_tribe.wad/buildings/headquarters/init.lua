@@ -9,6 +9,7 @@ descriptions:new_warehouse_type {
     icon = dirname .. "menu.png",
     size = "big",
     destructible = true,
+    vision_range = 24,
 
     animations = {
         idle = {
@@ -45,7 +46,7 @@ descriptions:new_warehouse_type {
         prohibited_till = 7200
     },
 
-    heal_per_second = 220,
+    heal_per_second = 320,
     conquers = 16,
 }
 
