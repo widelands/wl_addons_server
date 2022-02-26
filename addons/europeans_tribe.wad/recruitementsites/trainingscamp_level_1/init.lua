@@ -69,7 +69,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "sleep=duration:10s",
-                "consume=tabard:2 spear_wooden:2 ration:2 beer:2 europeans_recruit:2 quartz:2 diamond:2",
+                "consume=tabard:2 spear_wooden:2 ration:2 beer:2 europeans_recruit:2 quartz diamond",
                 "animate=working duration:90s",
                 "recruit=europeans_soldier:2"
             }

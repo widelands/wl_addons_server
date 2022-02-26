@@ -21,7 +21,7 @@ init = {
     end
 
     local h = player:place_building("europeans_advanced_castle", sf, false, true)
-    h:set_soldiers{[{2,2,2,2}] = 24}
+    h:set_soldiers{[{2,2,2,2}] = 18}
       
     place_building_in_region(player, "europeans_warehouse_advanced", sf:region(6), {
         wares = {
