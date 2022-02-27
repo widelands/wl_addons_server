@@ -230,12 +230,16 @@ public enum Command {
 	 *   <li> Integer string denoting number <var>D</var> of directories, <code>\n</code>
 	 *   <li> <var>D</var> Directory names (with full paths), each followed by <code>\n</code>
 	 *   <li> For each of the <var>D</var> directories:
+	 *   <ul>
 	 *     <li> Number <var>F</var> of regular files in the directory, <code>\n</code>
 	 *     <li> For each of the <var>F</var> files in the directory:
+	 *     <ul>
 	 *       <li> filename, <code>\n</code>
 	 *       <li> checksum, <code>\n</code>
 	 *       <li> filesize in bytes, <code>\n</code>
 	 *       <li> The content of the file as a byte stream
+	 *     </ul>
+	 *   </ul>
 	 *   <li> <code>ENDOFSTREAM\n</code>
 	 * </ul>
 	 */
@@ -260,10 +264,12 @@ public enum Command {
 	 * <ul>
 	 *   <li> Integer string denoting number <var>T</var> of translations, <code>\n</code>
 	 *   <li> For each of the <var>T</var> languages:
+	 *   <ul>
 	 *     <li> <var>{@literal<language_name>}</var>.mo, <code>\n</code>
 	 *     <li> checksum, <code>\n</code>
 	 *     <li> MO file size in bytes, <code>\n</code>
 	 *     <li> The content of the MO file as a byte stream, <code>\n</code>
+	 *   </ul>
 	 *   <li> <code>ENDOFSTREAM\n</code>
 	 * </ul>
 	 */
@@ -393,7 +399,7 @@ public enum Command {
 	 * <code>CMD_SUBMIT name</code>
 	 *
 	 * <p>
-	 * Supported command versions: 1 (default: 1)
+	 * Supported command versions: 1-2 (default: 1)
 	 *
 	 * <p>
 	 * Upload an add-on.
@@ -402,8 +408,40 @@ public enum Command {
 	 * <ol>
 	 * <li> Add-on name
 	 * </ol>
+	 *
+	 * <p> In CV 1:
 	 * Then, on the next line, the content of the add-on like the response for <code>CMD_DOWNLOAD</code>,
 	 * terminated by <code>ENDOFSTREAM\n</code>.
+	 *
+	 * <p> In CV 2+:
+	 * Then, on the next lines:
+	 * <ul>
+	 *   <li> Integer string denoting number <var>D</var> of directories, <code>\n</code>
+	 *   <li> For each of the <var>D</var> directories:
+	 *   <ul>
+	 *     <li> Directory name with full path, <code>\n</code>
+	 *     <li> Number <var>F</var> of regular files in the directory, <code>\n</code>
+	 *     <li> For each of the <var>F</var> files in the directory:
+	 *     <ul>
+	 *       <li> filename, <code>\n</code>
+	 *       <li> checksum, <code>\n</code>
+	 *       <li> filesize in bytes, <code>\n</code>
+	 *     </ul>
+	 *   </ul>
+	 *   <li> <code>ENDOFSTREAM\n</code>
+	 * </ul>
+	 * The server then uses the checksums to determine which files the server needs to send and replies:
+	 * <ul>
+	 *   <li> Integer string denoting number <var>N</var> of files to send, <code>\n</code>
+	 *   <li> For each of the <var>N</var> files:
+	 *   <ul>
+	 *     <li> The file's directory, <code>\n</code>
+	 *     <li> The file's filename, <code>\n</code>
+	 *   </ul>
+	 *   <li> <code>ENDOFSTREAM\n</code>
+	 * </ul>
+	 * The client then sends the content of each file as a byte stream with no
+	 * separators between them, terminated by <code>ENDOFSTREAM\n</code>.
 	 *
 	 * <p>
 	 * Returns: <code>ENDOFSTREAM\n</code> or an error message followed by <code>\n</code>
