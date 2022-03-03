@@ -89,7 +89,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting first carrier"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_1",
+                "return=skipped unless economy needs europeans_carrier_1 or workers need experience",
                 "sleep=duration:10s",
                 "consume=europeans_carrier",
                 "animate=working duration:30s",
@@ -100,7 +100,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting second carrier"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_2",
+                "return=skipped unless economy needs europeans_carrier_2 or workers need experience",
                 "return=skipped when economy needs europeans_farmer_advanced",
                 "return=skipped when economy needs europeans_miller_advanced",
                 "return=skipped when economy needs europeans_hunter_advanced",
@@ -114,7 +114,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting third carrier"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_3",
+                "return=skipped unless economy needs europeans_carrier_3 or workers need experience",
                 "return=skipped when economy needs europeans_farmer_advanced",
                 "return=skipped when economy needs europeans_miller_advanced",
                 "return=skipped when economy needs europeans_hunter_advanced",
@@ -327,7 +327,7 @@ descriptions:new_productionsite_type {
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
-                "consume=pick buckets",
+                "consume=pick shovel buckets",
                 "animate=working duration:15s",
                 "recruit=europeans_miner_advanced"
             }

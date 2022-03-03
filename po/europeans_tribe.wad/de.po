@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-01 03:03+0100\n"
+"POT-Creation-Date: 2022-03-03 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2022\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -315,6 +315,9 @@ msgstr "Markt"
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:50
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:52
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:37
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:32
+#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:65
+#: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:46
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:32
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:57
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:46
@@ -386,7 +389,7 @@ msgstr "Das Arbeiten"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:103
 msgctxt "europeans_building"
 msgid "exchanging quartz and clay"
-msgstr "Das Austauschen von Quartz und Lehm"
+msgstr "Das Austauschen von Bergkristall und Lehm"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:115
@@ -404,7 +407,7 @@ msgstr "Das Austauschen von Gold und Lehm"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:139
 msgctxt "europeans_building"
 msgid "exchanging granite and quartz"
-msgstr "Das Austauschen von Stein und Quartz"
+msgstr "Das Austauschen von Stein und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:151
@@ -422,7 +425,7 @@ msgstr "Das Austauschen von Stein und Gold"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:175
 msgctxt "europeans_building"
 msgid "exchanging marble and quartz"
-msgstr "Das Austauschen von Marmor und Quartz"
+msgstr "Das Austauschen von Marmor und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:187
@@ -440,7 +443,7 @@ msgstr "Das Austauschen von Marmor und Gold"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:211
 msgctxt "europeans_building"
 msgid "exchanging log and quartz"
-msgstr "Das Austauschen von Stämmen und Quartz"
+msgstr "Das Austauschen von Stämmen und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:223
@@ -458,7 +461,7 @@ msgstr "Das Austauschen von Stämmen und Gold"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:247
 msgctxt "europeans_building"
 msgid "exchanging blackwood and quartz"
-msgstr "Das Austauschen von Hartholz und Quartz"
+msgstr "Das Austauschen von Hartholz und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:259
@@ -476,7 +479,7 @@ msgstr "Das Austauschen von Hartholz und Gold"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:283
 msgctxt "europeans_building"
 msgid "exchanging planks and quartz"
-msgstr "Das Austauschen von Brettern und Quartz"
+msgstr "Das Austauschen von Brettern und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:295
@@ -494,7 +497,7 @@ msgstr "Das Austauschen von Brettern und Gold"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:319
 msgctxt "europeans_building"
 msgid "exchanging reed and quartz"
-msgstr "Das Austauschen von Reet und Quartz"
+msgstr "Das Austauschen von Reet und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:331
@@ -512,7 +515,7 @@ msgstr "Das Austauschen von Reet und Gold"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:355
 msgctxt "europeans_building"
 msgid "exchanging cloth and quartz"
-msgstr "Das Austauschen von Stoff und Quartz"
+msgstr "Das Austauschen von Stoff und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:367
@@ -530,7 +533,7 @@ msgstr "Das Austauschen von Stoff und Gold"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:391
 msgctxt "europeans_building"
 msgid "exchanging spidercloth and quartz"
-msgstr "Das Austauschen von Spinnenstoff und Quartz"
+msgstr "Das Austauschen von Spinnenstoff und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:403
@@ -548,7 +551,7 @@ msgstr "Das Austauschen von Spinnenstoff und Gold"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:427
 msgctxt "europeans_building"
 msgid "exchanging coal and quartz"
-msgstr "Das Austauschen von Kohle und Quartz"
+msgstr "Das Austauschen von Kohle und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:439
@@ -566,7 +569,7 @@ msgstr "Das Austauschen von Kohle und Gold"
 #: addons/europeans_tribe.wad/buildings/market/init.lua:463
 msgctxt "europeans_building"
 msgid "exchanging iron and quartz"
-msgstr "Das Austauschen von Eisen und Quartz"
+msgstr "Das Austauschen von Eisen und Bergkristall"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:475
@@ -941,6 +944,9 @@ msgstr "Das Sammeln von Honig"
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:86
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:76
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:77
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:52
+#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:85
+#: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:66
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:63
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:75
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:77
@@ -950,6 +956,7 @@ msgstr "Das Sammeln von Honig"
 #: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:59
 #: addons/europeans_tribe.wad/productionsites/mill_basic/init.lua:105
 #: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:75
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:78
 #: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:70
 #: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:113
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:86
@@ -1277,41 +1284,41 @@ msgid "harvesting barley"
 msgstr "Das Ernten von Gerste"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:144
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:154
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:183
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:222
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:145
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:156
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:186
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:227
 msgid "harvesting rye"
 msgstr "Das Ernten von Roggen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:155
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:165
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:194
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:233
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:157
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:168
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:198
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:239
 msgid "harvesting wheat"
 msgstr "Das Ernten von Weizen"
 
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:167
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:177
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:206
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:245
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:77
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:170
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:181
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:211
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:252
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:90
 msgid "No Fields"
 msgstr "Keine Felder"
 
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:168
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:178
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:207
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:246
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:78
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:171
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:182
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:212
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:253
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:91
 msgid "Out of Fields"
 msgstr "Keine Felder"
 
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:169
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:179
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:208
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:247
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:172
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:183
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:213
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:254
 msgctxt "europeans_building"
 msgid "The farmer working at this farm has no cleared soil to plant his seeds."
 msgstr ""
@@ -1331,9 +1338,9 @@ msgid "planting corn"
 msgstr "Das Pflanzen von Mais"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:143
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:172
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:200
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:144
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:174
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:203
 msgid "harvesting corn"
 msgstr "Das Ernten von Mais"
 
@@ -1350,8 +1357,8 @@ msgid "planting blackroot"
 msgstr "Das Pflanzen von Dunkelrüben"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:161
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:189
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:162
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:191
 msgid "harvesting blackroot"
 msgstr "Das Ernten von Dunkelrüben"
 
@@ -1372,12 +1379,12 @@ msgid "planting grape"
 msgstr "Das Pflanzen von Weinreben"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:178
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:179
 msgid "harvesting berry"
 msgstr "Das Ernten von Beeren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:211
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:215
 msgid "harvesting grape"
 msgstr "Das Ernten von Weintrauben"
 
@@ -1460,6 +1467,10 @@ msgid ""
 "Remember that you can increase the number of existing fish by building a "
 "fish breeder’s house."
 msgstr ""
+"Der Fischer in dieser Fischerhütte kann keinen Fisch in seinem "
+"Arbeitsbereich finden. Du solltest erwägen sie auszubauen, um seinen "
+"Arbeitsbereich zu vergrößern. Denke daran, dass du die Fischbestände mit "
+"einem Fischzüchterhaus vergrößern kannst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:8
@@ -1475,6 +1486,10 @@ msgid ""
 "Remember that you can increase the number of existing fish by building a "
 "fish breeder’s house."
 msgstr ""
+"Der Fischer in diesem Fischerhaus kann keinen Fisch in seinem Arbeitsbereich "
+"finden. Du solltest erwägen es auszubauen, um seinen Arbeitsbereich zu "
+"vergrößern. Denke daran, dass du die Fischbestände mit einem "
+"Fischzüchterhaus vergrößern kannst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:8
@@ -1483,9 +1498,9 @@ msgid "Advanced Forester’s House"
 msgstr "Verbessertes Forsthaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
-#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:32
-#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:65
-#: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:46
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:41
+#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:74
+#: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:55
 msgid "planting trees"
 msgstr "Das Pflanzen von Bäumen"
 
@@ -2032,16 +2047,16 @@ msgid "Reed Yard"
 msgstr "Reethof"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:57
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:58
 msgid "planting reed"
 msgstr "Das Pflanzen von Reet"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:67
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:69
 msgid "harvesting reed"
 msgstr "Das Ernten von Reet"
 
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:79
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:92
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
@@ -3007,7 +3022,7 @@ msgid ""
 "some wares can be bought for gold, quartz and diamonds."
 msgstr ""
 "Diese Startbedingung enthält einen Markt als zusätzliches Gebäude, bei dem "
-"einige Waren für Gold, Quartz und Diamanten gekauft werden können."
+"einige Waren für Gold, Bergkristall und Diamanten gekauft werden können."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:11
@@ -3438,6 +3453,9 @@ msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
 "buildings. It is produced out of logs in the wood hardener (basic sawmill)."
 msgstr ""
+" Dieses vom Feuer gehärtete Holz ist so hart wie Eisen und wird für einige "
+"Gebäude benötigt. Es wird vom Holzhärter in einer einfachen Sägemühle aus "
+"Stämmen hergestellt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Planks, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:118
@@ -3590,6 +3608,9 @@ msgid ""
 "These transparent quartz gems are used to build some exclusive buildings. "
 "They are mined as a byproduct in a deep iron mine or by advanced quarry."
 msgstr ""
+"Dieser durchsichtige Bergkristall wird beim Bau einiger besonderer Gebäude "
+"verwendet. Er wird als Nebenprodukt in einer tiefen Eisenmine oder von einem "
+"verbesserten Steinbruch abgebaut."
 
 #. TRANSLATORS: Helptext for an europeans ware: Diamond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:264
@@ -3598,6 +3619,9 @@ msgid ""
 "These wonderful diamonds are used to build advanced buildings. They are "
 "mined as a byproduct in a deep coal mine or by advanced quarry."
 msgstr ""
+" Diese wunderbaren Diamanten werden beim Bau verbesserter Gebäude verwendet. "
+"Sie werden als Nebenprodukt in einer tiefen Kohlemine oder von einem "
+"verbesserten Steinbruch abgebaut."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fish
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:276
@@ -3606,6 +3630,9 @@ msgid ""
 "Fish is one of the biggest food resources of the Europeans. Taverns and Inns "
 "need fish or meat to prepare ration, snack or meal."
 msgstr ""
+"Fisch ist eine der größten Nahrungsquellen für die Europäer. Tavernen und "
+"Wirtshäuser benötigen Fleisch oder Fisch um Rationen, Snacks oder Mahlzeiten "
+"zuzubereiten."
 
 #. TRANSLATORS: Helptext for an europeans ware: Meat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:286
@@ -3622,6 +3649,8 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid "Taverns and Inns need meat or fish to prepare ration, snack or meal."
 msgstr ""
+"Tavernen und Wirtshäuser benötigen Fleisch oder Fisch um Rationen, Snacks "
+"oder Mahlzeiten zuzubereiten."
 
 #. TRANSLATORS: Helptext for an europeans ware: Corn
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:298
@@ -3636,6 +3665,8 @@ msgid ""
 "Blackroots are a special kind of root. Sheep farms need to be provided with "
 "blackroot."
 msgstr ""
+"Dunkelrüben sind eine besondere Art Wurzeln. Schafzuchten müssen mit "
+"Dunkelrüben versorgt werden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Rye, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:317
@@ -3672,6 +3703,9 @@ msgid ""
 "Mixed flour is produced by the mill out of rye and wheat and is needed in "
 "the tavern or inn to produce ration, snack or meal."
 msgstr ""
+"Gemischtes Mehl wird in der Mühle aus Roggen und  Weizen hergestellt und "
+"wird von der Tavernen und Wirtshäusern benötigt, um Rationen, Snacks und "
+"Mahlzeiten zu produzieren."
 
 #. TRANSLATORS: Helptext for a europeans ware: Ration, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:352
@@ -3700,6 +3734,8 @@ msgid ""
 "A bigger morsel than the ration. Used in mines and to train soldiers in "
 "battle arenas."
 msgstr ""
+"Größere Nahrungspüortion als die Ration. Wird in Minen benötigt, und um "
+"Soldaten in Kampfarenen auszubilden."
 
 #. TRANSLATORS: Helptext for a europeans ware: Snack, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:367
@@ -3759,6 +3795,8 @@ msgctxt "europeans_ware"
 msgid ""
 "Honey is produced by bees belonging to a beekeeper. It is used to brew mead."
 msgstr ""
+" Honig wird von den Bienen eines Imkers gesammelt. Er wird benutzt, um Met "
+"zu brauen."
 
 #. TRANSLATORS: Helptext for a europeans ware: Fruit
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:424
@@ -3767,6 +3805,8 @@ msgid ""
 "Fruit are berries gathered from berry bushes by a fruit collector. They are "
 "used to brew fruit wine."
 msgstr ""
+" Beeren werden von Beerensträuchern durch einen Beerensammler gesammelt. Sie "
+"werden benutzt um Fruchtwein zu keltern."
 
 #. TRANSLATORS: Helptext for an europeans ware: Grape
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:433
@@ -3806,6 +3846,8 @@ msgid ""
 "Mead is produced by breweries. Soldiers drink mead during advanced training. "
 "Advanced miners drinking mead, too."
 msgstr ""
+"Met wird in Brauereien gebraut. Soldaten drinken Met in der "
+"fortgeschrittenen Ausbildung. Bergwerksmeister trinken auch Met."
 
 #. TRANSLATORS: Helptext for an europeans ware: Wine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:469
@@ -3893,6 +3935,8 @@ msgid ""
 "This basket is needed by the farmer for harvesting the fruits and grapes and "
 "needed by miller and by gamekeeper."
 msgstr ""
+"Dieser Korb wird vom Bauern benötigt, um Beeren und Trauben zu ernten. Auch "
+"Müller und Wildhüter brauchen einen Korb."
 
 #. TRANSLATORS: Helptext for an europeans ware: Basket, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:555
@@ -3937,6 +3981,8 @@ msgid ""
 "The shovel is an essential tool. Therefore the forester, the claydigger and "
 "the farmer use them."
 msgstr ""
+"Die Schaufel ist ein unverzichtbares Werkzeug. Der Förster, der Lehmgräber "
+"und der Bauer benutzen sie."
 
 #. TRANSLATORS: Helptext for an europeans ware: Felling Ax, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:592
@@ -3986,6 +4032,8 @@ msgid ""
 "The saw is an essential tool. This saw is needed by the woodcutter and the "
 "carpenter."
 msgstr ""
+"Die Säge ist ein unentbehrliches Werkzeug. Der Holzfäller und der Tischler "
+"benötigen eine Säge."
 
 #. TRANSLATORS: Helptext for an europeans ware: Saw, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:633
@@ -4010,6 +4058,8 @@ msgid ""
 "Make sure you’ve always got some in reserve! They are produced by all "
 "smithies."
 msgstr ""
+"Stelle sicher, das du immer einige in Reserve hast! sie werden in allen "
+"Schmieden produziert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Fire Tongs, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:657
@@ -4024,6 +4074,8 @@ msgid ""
 "They are used in the smelting works and smithies and produced produced by "
 "all smithies."
 msgstr ""
+"Sie werden in den Hochöfen und Schmieden benutzt und werden von allen "
+"Schmieden produziert."
 
 #. TRANSLATORS: Helptext for an europeans ware: Milking Tongs, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:673
@@ -4047,7 +4099,7 @@ msgstr "Angeln werden vom Fischer benutzt, um Fische zu fangen."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:712
 msgctxt "europeans_ware"
 msgid "The fishing net is used by the fisher alongsite with fishing rod."
-msgstr ""
+msgstr "Das Fischernetz wird zusammen mit der Angel von den Fischern benutzt. "
 
 #. TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:725
@@ -4056,6 +4108,8 @@ msgid ""
 "This spear is light enough to be thrown, but heavy enough to kill any animal "
 "in one blow. It is only used by hunters."
 msgstr ""
+"Obwohl er leicht zu werfen ist, kann der Jagdspeer jedes Tier sofort "
+"erlegen. Er wird ausschließlich von den Jägern verwendet."
 
 #. TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:738
@@ -4082,18 +4136,21 @@ msgstr "Brotschieber werden von allen Schmieden hergestellt."
 msgctxt "europeans_ware"
 msgid "This hook pole is used by the smoker in a tavern or in an inn."
 msgstr ""
+"Diese Hakenstange wird vom Räucherer in Tavernen oder Wirtshäusern verwendet."
 
 #. TRANSLATORS: Helptext for an europeans ware: Hook Pole, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:766
 msgctxt "europeans_ware"
 msgid "It is created by all smithies."
-msgstr ""
+msgstr "Sie wird von allen Schmieden hergestellt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:777
 msgctxt "europeans_ware"
 msgid "These kitchen tools are used by the cook in a tavern or in an inn."
 msgstr ""
+"Diese Küchengeräte werden vom Koch in einer Taverne oder einem Wirtshaus "
+"benutzt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Kitchen Tools, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:779
@@ -4421,7 +4478,7 @@ msgstr "Der Jäger bringt gutes Fleisch zu den Siedlern."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1468
 msgctxt "europeans_worker"
 msgid "Lets bees swarm over flowers, then gathers the honey."
-msgstr ""
+msgstr " Lässt Bienen über Blumen ausschwärmen und sammelt ihren Honig."
 
 #. TRANSLATORS: Helptext for an europeans worker: Brewer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1480
@@ -4845,6 +4902,7 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Market to exchange some build materials for quartz, diamond or gold."
 msgstr ""
+"Ein Markt zum Tausch von Baumaterial für Bergkristall, Diamanten oder Gold."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an europeans production site: Big Well
@@ -4953,6 +5011,8 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Clay is "
 "used to make bricks."
 msgstr ""
+" Gräbt Tonerde aus und mischt sie mit Wasser zu Lehm. Lehm wird zum "
+"Ziegelbrennen benutzt."
 
 #. TRANSLATORS: Purpose helptext for production site: Fisher's Hut
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2602
@@ -5030,6 +5090,8 @@ msgid ""
 "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) or "
 "bushes (berry bushes or grapevines) nearby."
 msgstr ""
+" Braucht mittelgroße Felder (Gerste, Roggen, Weizen, Reet, Mais oder "
+"Dunkelrüben) oder Büsche (Beerenbüsche oder Weinreben) in der Nähe."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an europeans production site: Scout's House
@@ -5088,6 +5150,8 @@ msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
 "solidifies and so reinforces masonry."
 msgstr ""
+"Benutzt Lehm und Stein um Ziegel zu brennen und ‘Mörtel’, eine Masse um "
+"Mauerwerk zu verbinden und so zu verstärken, zu mischen."
 
 #. TRANSLATORS: Note helptext for a europeans production site: Lime Kiln
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2766
@@ -5123,7 +5187,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2794
 msgctxt "europeans_building"
 msgid "Weaves tabard and armor out of wool and silk."
-msgstr ""
+msgstr "Webt Wappenröcke und Rüstungen aus Wolle und Seide."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2801
@@ -5152,6 +5216,8 @@ msgctxt "building"
 msgid ""
 "Prepares rations and snacks to feed the miners in the basic and deep mines."
 msgstr ""
+"Bereitet Rationen und Snacks zu, um die Bergleute in den einfachen und "
+"tiefen Minen zu ernähren."
 
 #. TRANSLATORS: Purpose helptext for a barbarian production site: Big Inn
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2843
@@ -5159,6 +5225,7 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Prepares rations, snacks and meals to feed all miners."
 msgstr ""
+" Bereitet Rationen, Snacks und Mahlzeiten zu, um alle Bergleute zu ernähren."
 
 #. TRANSLATORS: Purpose helptext for a europeans production site: Brewery
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2857
@@ -5170,13 +5237,13 @@ msgstr "Stellt Bier her, um die Bergleute bei Laune zu halten."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2864
 msgctxt "europeans_building"
 msgid "Produces beer and mead to keep the miners strong and happy."
-msgstr ""
+msgstr "Braut Bier und Met, um die Bergleute bei Kraft und Laune zu halten."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Brewery
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2871
 msgctxt "europeans_building"
 msgid "Produces beer, mead and strong_beer for trainingssites."
-msgstr ""
+msgstr "Braut Bier, Met und Starkbier für die Ausbildungsgebäude."
 
 #. TRANSLATORS: Purpose helptext for an europeans production site: Winery
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2878

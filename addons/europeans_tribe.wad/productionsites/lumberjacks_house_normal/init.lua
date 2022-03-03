@@ -42,7 +42,7 @@ descriptions:new_productionsite_type {
             descname = _"felling trees",
             actions = {
                 "callworker=harvest",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "produce=log"
             }
         },

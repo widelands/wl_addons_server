@@ -9,6 +9,8 @@ descriptions:new_worker_type {
     animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
+    
+    buildcost = { europeans_geologist = 1, fire_tongs = 1, buckets = 1, shovel = 1 },
 
     experience = 36,
     becomes = "europeans_smelter_advanced",

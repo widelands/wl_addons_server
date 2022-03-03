@@ -28,6 +28,15 @@ descriptions:new_productionsite_type {
     
     programs = {
         main = {
+            -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+            descname = _"working",
+            actions = {
+                "call=plant_trees",
+                "call=plant_trees_idle",
+                "return=skipped"
+            }
+        },
+        plant_trees = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
             descname = _"planting trees",
             actions = {
@@ -36,6 +45,17 @@ descriptions:new_productionsite_type {
                 "consume=water",
                 "callworker=plant",
                 "sleep=duration:10s"
+            }
+        },
+        plant_trees_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs log",
+                "return=skipped when economy needs water",
+                "consume=water",
+                "callworker=plant",
+                "sleep=duration:60s"
             }
         },
     },

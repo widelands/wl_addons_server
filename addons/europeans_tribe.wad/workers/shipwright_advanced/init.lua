@@ -10,6 +10,8 @@ descriptions:new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
     
+    buildcost = { europeans_builder = 1, hammer = 1, saw = 1 },
+    
     programs = {
         buildship = {
             "walk=object-or-coords",

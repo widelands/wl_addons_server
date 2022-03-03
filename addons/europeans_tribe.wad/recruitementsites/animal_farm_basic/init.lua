@@ -70,7 +70,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_ox",
+                "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
                 "consume=corn water",
                 "sleep=duration:10s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",

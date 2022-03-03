@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-01 03:03+0100\n"
+"POT-Creation-Date: 2022-03-03 03:03+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Swedish (https://www.transifex.com/widelands/teams/35159/"
 "sv/)\n"
@@ -309,6 +309,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:50
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:52
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:37
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:32
+#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:65
+#: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:46
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:32
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:57
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:46
@@ -935,6 +938,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/fishers_house_advanced/init.lua:86
 #: addons/europeans_tribe.wad/productionsites/fishers_house_basic/init.lua:76
 #: addons/europeans_tribe.wad/productionsites/fishers_house_normal/init.lua:77
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:52
+#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:85
+#: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:66
 #: addons/europeans_tribe.wad/productionsites/hunters_house_advanced/init.lua:63
 #: addons/europeans_tribe.wad/productionsites/hunters_house_basic/init.lua:75
 #: addons/europeans_tribe.wad/productionsites/hunters_house_normal/init.lua:77
@@ -944,6 +950,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/mill_advanced/init.lua:59
 #: addons/europeans_tribe.wad/productionsites/mill_basic/init.lua:105
 #: addons/europeans_tribe.wad/productionsites/mill_normal/init.lua:75
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:78
 #: addons/europeans_tribe.wad/productionsites/sawmill_advanced/init.lua:70
 #: addons/europeans_tribe.wad/productionsites/sawmill_basic/init.lua:113
 #: addons/europeans_tribe.wad/productionsites/sawmill_normal/init.lua:86
@@ -1264,41 +1271,41 @@ msgid "harvesting barley"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:144
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:154
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:183
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:222
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:145
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:156
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:186
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:227
 msgid "harvesting rye"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:155
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:165
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:194
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:233
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:157
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:168
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:198
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:239
 msgid "harvesting wheat"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:167
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:177
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:206
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:245
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:77
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:170
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:181
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:211
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:252
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:90
 msgid "No Fields"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:168
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:178
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:207
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:246
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:78
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:171
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:182
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:212
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:253
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:91
 msgid "Out of Fields"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:169
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:179
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:208
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:247
+#: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:172
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:183
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:213
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:254
 msgctxt "europeans_building"
 msgid "The farmer working at this farm has no cleared soil to plant his seeds."
 msgstr ""
@@ -1317,9 +1324,9 @@ msgid "planting corn"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:143
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:172
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:200
+#: addons/europeans_tribe.wad/productionsites/farm_level_1/init.lua:144
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:174
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:203
 msgid "harvesting corn"
 msgstr ""
 
@@ -1336,8 +1343,8 @@ msgid "planting blackroot"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:161
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:189
+#: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:162
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:191
 msgid "harvesting blackroot"
 msgstr ""
 
@@ -1358,12 +1365,12 @@ msgid "planting grape"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:178
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:179
 msgid "harvesting berry"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
-#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:211
+#: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:215
 msgid "harvesting grape"
 msgstr ""
 
@@ -1466,9 +1473,9 @@ msgid "Advanced Forester’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
-#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:32
-#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:65
-#: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:46
+#: addons/europeans_tribe.wad/productionsites/foresters_house_advanced/init.lua:41
+#: addons/europeans_tribe.wad/productionsites/foresters_house_basic/init.lua:74
+#: addons/europeans_tribe.wad/productionsites/foresters_house_normal/init.lua:55
 msgid "planting trees"
 msgstr ""
 
@@ -1980,16 +1987,16 @@ msgid "Reed Yard"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:57
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:58
 msgid "planting reed"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:67
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:69
 msgid "harvesting reed"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:79
+#: addons/europeans_tribe.wad/productionsites/reed_yard/init.lua:92
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "

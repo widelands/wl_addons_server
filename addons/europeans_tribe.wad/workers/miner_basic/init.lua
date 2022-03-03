@@ -10,7 +10,7 @@ descriptions:new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
     
-    buildcost = { europeans_stonecutter_basic = 1 },
+    buildcost = { europeans_stonecutter_basic = 1, shovel = 1 },
     
     experience = 32,
     becomes = "europeans_miner_normal",

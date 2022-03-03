@@ -81,7 +81,7 @@ descriptions:new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs barley or economy needs rye or economy needs wheat",
-                "return=skipped unless site has water:3",
+                "return=skipped when economy needs water",
                 "consume=water:3",
                 "callworker=plant_barley",
                 "animate=working duration:6s",
@@ -132,6 +132,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
             descname = _"harvesting barley",
             actions = {
+                "return=skipped unless economy needs barley or workers need experience",
                 "sleep=duration:6s",
                 "callworker=harvest_barley",
                 "animate=working duration:6s",
@@ -143,6 +144,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
             descname = _"harvesting rye",
             actions = {
+                "return=skipped unless economy needs rye or workers need experience",
                 "sleep=duration:6s",
                 "callworker=harvest_rye",
                 "animate=working duration:6s",
@@ -154,6 +156,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
             descname = _"harvesting wheat",
             actions = {
+                "return=skipped unless economy needs wheat or workers need experience",
                 "sleep=duration:6s",
                 "callworker=harvest_wheat",
                 "animate=working duration:6s",
