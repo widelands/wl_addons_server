@@ -2,7 +2,7 @@ dirname = path.dirname(__file__)
 
 push_textdomain("frisians-economy-ultra.wad", true)
 
-descriptions:new_productionsite_type {
+wl.Descriptions():new_productionsite_type {
    name = "frisians_salt_works",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("frisians_building", "Salt Works"),
