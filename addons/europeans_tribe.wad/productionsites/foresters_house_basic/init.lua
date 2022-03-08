@@ -47,8 +47,8 @@ descriptions:new_productionsite_type {
     aihints = {
         space_consumer = true,
         basic_amount = 1,
-        prohibited_till = 300,
-        forced_after = 1800
+        prohibited_till = 900,
+        forced_after = 1200
     },
 
     working_positions = {
@@ -61,6 +61,15 @@ descriptions:new_productionsite_type {
     
     programs = {
         main = {
+            -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+            descname = _"working",
+            actions = {
+                "call=plant_trees",
+                "call=plant_trees_idle",
+                "return=skipped"
+            }
+        },
+        plant_trees = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
             descname = _"planting trees",
             actions = {
@@ -69,6 +78,17 @@ descriptions:new_productionsite_type {
                 "consume=water",
                 "callworker=plant",
                 "sleep=duration:20s"
+            }
+        },
+        plant_trees_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs log",
+                "return=skipped when economy needs water",
+                "consume=water",
+                "callworker=plant",
+                "sleep=duration:60s"
             }
         },
     },

@@ -79,15 +79,42 @@ descriptions:new_productionsite_type {
                 "call=recruit_terraformer",
                 "call=recruit_scout",
                 "call=recruit_trainer",
+                "call=recruit_carrier_1",
+                "call=recruit_carrier_2",
                 "call=recruit_carrier_3",
                 "return=skipped"
+            }
+        },
+        recruit_carrier_1 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+            descname = pgettext("europeans_building", "recruiting first carrier"),
+            actions = {
+                "return=skipped unless economy needs europeans_carrier_1 or workers need experience",
+                "sleep=duration:10s",
+                "consume=europeans_carrier",
+                "animate=working duration:30s",
+                "recruit=europeans_carrier_1"
+            }
+        },
+        recruit_carrier_2 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+            descname = pgettext("europeans_building", "recruiting second carrier"),
+            actions = {
+                "return=skipped unless economy needs europeans_carrier_2 or workers need experience",
+                "return=skipped when economy needs europeans_farmer_advanced",
+                "return=skipped when economy needs europeans_miller_advanced",
+                "return=skipped when economy needs europeans_hunter_advanced",
+                "sleep=duration:10s",
+                "consume=basket europeans_carrier",
+                "animate=working duration:30s",
+                "recruit=europeans_carrier_2"
             }
         },
         recruit_carrier_3 = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting third carrier"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_3",
+                "return=skipped unless economy needs europeans_carrier_3 or workers need experience",
                 "return=skipped when economy needs europeans_farmer_advanced",
                 "return=skipped when economy needs europeans_miller_advanced",
                 "return=skipped when economy needs europeans_hunter_advanced",
@@ -300,7 +327,7 @@ descriptions:new_productionsite_type {
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
-                "consume=pick buckets",
+                "consume=pick shovel buckets",
                 "animate=working duration:15s",
                 "recruit=europeans_miner_advanced"
             }
@@ -424,7 +451,7 @@ descriptions:new_productionsite_type {
             actions = {
                 "sleep=duration:10s",
                 "animate=working duration:15s",
-                "produce=diamond"
+                "recruit=europeans_carrier_horse"
             }
         },
     }

@@ -70,10 +70,10 @@ all_levels_emp = {
     min_attack = 0,
     min_defense = 0,
     min_evade = 0,
-    max_health = 6,
-    max_attack = 6,
-    max_defense = 6,
-    max_evade = 6,
+    max_health = 3,
+    max_attack = 3,
+    max_defense = 3,
+    max_evade = 3,
 }
 
 descriptions:new_soldier_type {
@@ -89,8 +89,8 @@ descriptions:new_soldier_type {
     -- Battle attributes - initial values and per level increase
     health = {
         max_level = 3,
-        base = 12800,
-        increase_per_level = 3100,
+        base = 13500,
+        increase_per_level = 3500,
         pictures = path.list_files(dirname .. "health_level?.png"),
     },
     evade = {
@@ -107,8 +107,8 @@ descriptions:new_soldier_type {
     },
     attack = {
         max_level = 3,
-        base = 1150,
-        maximum = 1450,
+        base = 1000,
+        maximum = 1500,
         increase_per_level = 1000,
         pictures = path.list_files(dirname .. "attack_level?.png"),
     },

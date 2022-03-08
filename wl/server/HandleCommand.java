@@ -25,7 +25,9 @@ import java.io.PrintStream;
 import java.nio.file.Files;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import wl.utils.Utils;
 
@@ -895,7 +897,7 @@ public class HandleCommand {
 	 */
 	private void handleCmdSubmit() throws Exception {
 		// Args: name
-		checkCommandVersion(1);
+		checkCommandVersion(2);
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
@@ -914,65 +916,17 @@ public class HandleCommand {
 			File tempDir = Files.createTempDirectory(null).toFile();
 
 			try {
-				final int nrDirs = Integer.valueOf(ServerUtils.readLine(in));
-				if (nrDirs < 0 || nrDirs > 1000)
-					throw new ServerUtils.WLProtocolException(
-					    "Directory count limit of 1000 exceeded. "
-					    + "If you really want to submit such a large add-on, "
-					    + "please contact the Widelands Development Team.");
-				File[] dirnames = new File[nrDirs];
-				for (int i = 0; i < nrDirs; ++i) {
-					String n = ServerUtils.readLine(in);
-					n = ServerUtils.sanitizeName(n, true);
-					dirnames[i] = new File(tempDir, n);
-					dirnames[i].mkdirs();
+				if (commandVersion == 1) {
+					doHandleCmdSubmit_V1(tempDir);
+				} else {
+					doHandleCmdSubmit_New(tempDir);
 				}
-
-				long totalSize = 0;
-				for (int i = 0; i < nrDirs; ++i) {
-					final int nrFiles = Integer.valueOf(ServerUtils.readLine(in));
-					if (nrFiles < 0 || nrFiles > 1000)
-						throw new ServerUtils.WLProtocolException(
-						    "File count limit of 1000 exceeded. "
-						    + "If you really want to submit such a large add-on, "
-						    + "please contact the Widelands Development Team.");
-					for (int j = 0; j < nrFiles; ++j) {
-						String filename = ServerUtils.readLine(in);
-						filename = ServerUtils.sanitizeName(filename, false);
-						final String checksum = ServerUtils.readLine(in);
-						final long size = Long.valueOf(ServerUtils.readLine(in));
-						totalSize += size;
-						if (totalSize < 0 || totalSize > 200 * 1000 * 1000)
-							throw new ServerUtils.WLProtocolException(
-							    "Filesize limit of 200 MB exceeded. "
-							    + "If you really want to submit such a large add-on, "
-							    + "please contact the Widelands Development Team.");
-						File file = new File(dirnames[i], filename);
-						PrintStream stream = new PrintStream(file);
-						for (long l = 0; l < size; ++l) {
-							int b = in.read();
-							if (b < 0) {
-								stream.close();
-								throw new ServerUtils.WLProtocolException(
-								    "Stream ended unexpectedly while reading file");
-							}
-							stream.write(b);
-						}
-						stream.close();
-						String c = Utils.checksum(file);
-						if (!checksum.equals(c))
-							throw new ServerUtils.WLProtocolException(
-							    "Checksum mismatch for " + dirnames[i].getPath() + "/" + filename +
-							    ": expected " + checksum + ", found " + c);
-					}
-				}
-
-				ServerUtils.checkEndOfStream(in);
 
 				File addOnDir = new File("addons", cmd[1]);
 				File addOnMain = new File(addOnDir, "addon");
 
-				Utils.Profile newProfile = Utils.readProfile(new File(tempDir, "addon"), cmd[1]);
+				File newAddOnMain = new File(tempDir, "addon");
+				Utils.Profile newProfile = Utils.readProfile(newAddOnMain, cmd[1]);
 				if (newProfile.get("min_wl_version") != null &&
 				    !newProfile.get("min_wl_version").value.isEmpty()) {
 					try {
@@ -999,36 +953,8 @@ public class HandleCommand {
 				int oldSecurity = -1, oldQuality = -1;
 				if (addOnDir.isDirectory()) {
 					isUpdate = true;
-					Utils.Profile oldProfile = Utils.readProfile(addOnMain, cmd[1]);
-
-					if (!oldProfile.get(Utils.Profile.kGlobalSection, "category")
-					         .value.equals(
-					             newProfile.get(Utils.Profile.kGlobalSection, "category").value))
-						throw new ServerUtils.WLProtocolException(
-						    "An add-on with the same name and a different category already exists. "
-						    + "Old category is '" + oldProfile.get("category").value +
-						    "', new category is '" + newProfile.get("category").value + "'.");
-
 					oldVersionString =
-					    oldProfile.get(Utils.Profile.kGlobalSection, "version").value;
-					String[] oldVersion = oldVersionString.split("\\.");
-					String[] newVersion =
-					    newProfile.get(Utils.Profile.kGlobalSection, "version").value.split("\\.");
-					Boolean newer = null;
-					for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
-						if (!oldVersion[i].equals(newVersion[i])) {
-							newer =
-							    (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
-							break;
-						}
-					}
-					if (newer == null) newer = (oldVersion.length < newVersion.length);
-					if (!newer) {
-						throw new ServerUtils.WLProtocolException(
-						    "An add-on with the same name and an equal or newer version "
-						    + "already exists. Existing version is '" + oldVersionString +
-						    "', your version is '" + newProfile.get("version").value + "'.");
-					}
+					    doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, newAddOnMain);
 
 					diff =
 					    Utils.bashOutput("diff", "-r", "-u", addOnDir.getPath(), tempDir.getPath());
@@ -1117,5 +1043,290 @@ public class HandleCommand {
 				throw e;
 			}
 		});
+	}
+
+	// Below are implementation details for features whose protocol significantly differs
+	// between command versions. We need to keep support for all older versions around
+	// indefinitely, so this section will accumulate a lot of legacy code over time.
+
+	/**
+	 * Check that a given attempt to update an add-on is valid.
+	 * @param existing The existing add-on config file.
+	 * @param updated The new add-on config file.
+	 * @return The version of the existing add-on.
+	 * @throws Exception If the update is not permitted.
+	 */
+	private String doHandleCmdSubmit_CheckUpdateIsValid(File existing, File updated)
+	    throws Exception {
+		Utils.Profile oldProfile = Utils.readProfile(existing, cmd[1]);
+		Utils.Profile newProfile = Utils.readProfile(updated, cmd[1]);
+
+		if (!oldProfile.get(Utils.Profile.kGlobalSection, "category")
+		         .value.equals(newProfile.get(Utils.Profile.kGlobalSection, "category").value))
+			throw new ServerUtils.WLProtocolException(
+			    "An add-on with the same name and a different category already exists. "
+			    + "Old category is '" + oldProfile.get("category").value + "', new category is '" +
+			    newProfile.get("category").value + "'.");
+
+		String oldVersionString = oldProfile.get(Utils.Profile.kGlobalSection, "version").value;
+		String[] oldVersion = oldVersionString.split("\\.");
+		String[] newVersion =
+		    newProfile.get(Utils.Profile.kGlobalSection, "version").value.split("\\.");
+		Boolean newer = null;
+		for (int i = 0; i < oldVersion.length && i < newVersion.length; ++i) {
+			if (!oldVersion[i].equals(newVersion[i])) {
+				newer = (Integer.valueOf(oldVersion[i]) < Integer.valueOf(newVersion[i]));
+				break;
+			}
+		}
+		if (newer == null) newer = (oldVersion.length < newVersion.length);
+		if (!newer) {
+			throw new ServerUtils.WLProtocolException(
+			    "An add-on with the same name and an equal or newer version "
+			    + "already exists. Existing version is '" + oldVersionString +
+			    "', your version is '" + newProfile.get("version").value + "'.");
+		}
+
+		return oldVersionString;
+	}
+
+	/**
+	 * Handle the CMD_SUBMIT client/server communication at command version 1.
+	 * @param tempDir The directory in which to assemble the add-on.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	private void doHandleCmdSubmit_V1(File tempDir) throws Exception {
+		final int nrDirs = Integer.valueOf(ServerUtils.readLine(in));
+		if (nrDirs < 0 || nrDirs > 1000)
+			throw new ServerUtils.WLProtocolException(
+			    "Directory count limit of 1000 exceeded. "
+			    + "If you really want to submit such a large add-on, "
+			    + "please contact the Widelands Development Team.");
+		File[] dirnames = new File[nrDirs];
+		for (int i = 0; i < nrDirs; ++i) {
+			String n = ServerUtils.readLine(in);
+			n = ServerUtils.sanitizeName(n, true);
+			dirnames[i] = new File(tempDir, n);
+			dirnames[i].mkdirs();
+		}
+
+		long totalSize = 0;
+		for (int i = 0; i < nrDirs; ++i) {
+			final int nrFiles = Integer.valueOf(ServerUtils.readLine(in));
+			if (nrFiles < 0 || nrFiles > 1000)
+				throw new ServerUtils.WLProtocolException(
+				    "File count limit of 1000 exceeded. "
+				    + "If you really want to submit such a large add-on, "
+				    + "please contact the Widelands Development Team.");
+			for (int j = 0; j < nrFiles; ++j) {
+				String filename = ServerUtils.readLine(in);
+				filename = ServerUtils.sanitizeName(filename, false);
+				final String checksum = ServerUtils.readLine(in);
+				final long size = Long.valueOf(ServerUtils.readLine(in));
+				totalSize += size;
+				if (totalSize < 0 || totalSize > 200 * 1000 * 1000)
+					throw new ServerUtils.WLProtocolException(
+					    "Filesize limit of 200 MB exceeded. "
+					    + "If you really want to submit such a large add-on, "
+					    + "please contact the Widelands Development Team.");
+				File file = new File(dirnames[i], filename);
+				PrintStream stream = new PrintStream(file);
+				for (long l = 0; l < size; ++l) {
+					int b = in.read();
+					if (b < 0) {
+						stream.close();
+						throw new ServerUtils.WLProtocolException(
+						    "Stream ended unexpectedly while reading file");
+					}
+					stream.write(b);
+				}
+				stream.close();
+				String c = Utils.checksum(file);
+				if (!checksum.equals(c))
+					throw new ServerUtils.WLProtocolException(
+					    "Checksum mismatch for " + dirnames[i].getPath() + "/" + filename +
+					    ": expected " + checksum + ", found " + c);
+			}
+		}
+
+		ServerUtils.checkEndOfStream(in);
+	}
+
+	/**
+	 * Helper for doHandleCmdSubmit_New().
+	 * Abstract representation of a filename in a directory plus a file checksum.
+	 */
+	private static class AbstractFile {
+		public final String directory;
+		public final String name;
+		public final String checksum;
+		public final long size;
+		public AbstractFile(String d, String n, String c, long s) {
+			directory = d;
+			name = n;
+			checksum = c;
+			size = s;
+		}
+	}
+
+	/**
+	 * Helper for doHandleCmdSubmit_New().
+	 * Create all AbstractFile infos for the files under a directory.
+	 * @param existingChecksums Map to which the files will be added.
+	 * @param dir Directory to traverse.
+	 */
+	private static void recursivelyFindExistingChecksums(Map<String, File> existingChecksums,
+	                                                     File dir) {
+		for (File f : dir.listFiles()) {
+			if (f.isDirectory()) {
+				recursivelyFindExistingChecksums(existingChecksums, f);
+			} else {
+				existingChecksums.put(Utils.checksum(f), f);
+			}
+		}
+	}
+
+	/**
+	 * Handle the CMD_SUBMIT client/server communication at command versions newer than 1.
+	 * @param tempDir The directory in which to assemble the add-on.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	private void doHandleCmdSubmit_New(File tempDir) throws Exception {
+		// Phase 1: The client tells us what he wants to send.
+
+		final int nrDirs = Integer.valueOf(ServerUtils.readLine(in));
+		if (nrDirs < 0 || nrDirs > 1000)
+			throw new ServerUtils.WLProtocolException(
+			    "Directory count limit of 1000 exceeded. "
+			    + "If you really want to submit such a large add-on, "
+			    + "please contact the Widelands Development Team.");
+
+		Set<AbstractFile> abstractFiles = new HashSet<>();
+
+		long totalSize = 0;
+		for (int i = 0; i < nrDirs; ++i) {
+			String dirname = ServerUtils.readLine(in);
+			dirname = ServerUtils.sanitizeName(dirname, true);
+
+			final int nrFiles = Integer.valueOf(ServerUtils.readLine(in));
+			if (nrFiles < 0 || nrFiles > 1000)
+				throw new ServerUtils.WLProtocolException(
+				    "File count limit of 1000 exceeded. "
+				    + "If you really want to submit such a large add-on, "
+				    + "please contact the Widelands Development Team.");
+
+			for (int j = 0; j < nrFiles; ++j) {
+				String filename = ServerUtils.readLine(in);
+				filename = ServerUtils.sanitizeName(filename, false);
+				final String checksum = ServerUtils.readLine(in);
+
+				final long size = Long.valueOf(ServerUtils.readLine(in));
+				totalSize += size;
+				if (totalSize < 0 || totalSize > 200 * 1000 * 1000)
+					throw new ServerUtils.WLProtocolException(
+					    "Filesize limit of 200 MB exceeded. "
+					    + "If you really want to submit such a large add-on, "
+					    + "please contact the Widelands Development Team.");
+
+				abstractFiles.add(new AbstractFile(dirname, filename, checksum, size));
+			}
+		}
+
+		ServerUtils.checkEndOfStream(in);
+
+		if (abstractFiles.isEmpty())
+			throw new ServerUtils.WLProtocolException("Your add-on contains no files");
+
+		// Phase 2: We check which checksums we already have and which ones we need.
+
+		File addOnDir = new File("addons", cmd[1]);
+		File addOnMain = new File(addOnDir, "addon");
+
+		Map<String, File> existingChecksums = new HashMap<>();
+		if (addOnDir.exists()) {
+			recursivelyFindExistingChecksums(existingChecksums, addOnDir);
+		}
+
+		AbstractFile mainFile = null;
+		Set<String> missingChecksums = new HashSet<>();
+		ArrayList<AbstractFile> filesToRequest = new ArrayList<>();
+		for (AbstractFile f : abstractFiles) {
+			if (f.directory.isEmpty() && f.name.equals("addon")) mainFile = f;
+			if (!existingChecksums.containsKey(f.checksum) &&
+			    !missingChecksums.contains(f.checksum)) {
+				missingChecksums.add(f.checksum);
+				filesToRequest.add(f);
+			}
+		}
+
+		if (mainFile == null)
+			throw new ServerUtils.WLProtocolException("Your add-on contains no `addon` file");
+		if (addOnMain.exists()) {
+			if (Utils.checksum(addOnMain).equals(mainFile.checksum))
+				throw new ServerUtils.WLProtocolException("You forgot to update the `addon` file");
+			if (existingChecksums.containsKey(mainFile.checksum))
+				doHandleCmdSubmit_CheckUpdateIsValid(
+				    addOnMain, existingChecksums.get(mainFile.checksum));
+		}
+
+		if (missingChecksums.contains(mainFile.checksum)) {
+			// The main file should be sent first so that we can check its integrity early
+			filesToRequest.remove(mainFile);
+			filesToRequest.add(0, mainFile);
+		}
+
+		out.println(filesToRequest.size());
+		for (AbstractFile f : filesToRequest) {
+			out.println(f.directory);
+			out.println(f.name);
+		}
+		out.println("ENDOFSTREAM");
+
+		// Phase 3: Receive missing files and build the directory tree
+
+		for (AbstractFile f : filesToRequest) {
+			File output = Files.createTempFile(null, null).toFile();
+
+			PrintStream stream = new PrintStream(output);
+			for (long l = 0; l < f.size; ++l) {
+				int b = in.read();
+				if (b < 0) {
+					stream.close();
+					throw new ServerUtils.WLProtocolException(
+					    "Stream ended unexpectedly while reading file");
+				}
+				stream.write(b);
+			}
+			stream.close();
+			String c = Utils.checksum(output);
+			if (!f.checksum.equals(c))
+				throw new ServerUtils.WLProtocolException("Checksum mismatch for " + f.directory +
+				                                          "/" + f.name + ": expected " +
+				                                          f.checksum + ", found " + c);
+
+			// Automatically shrink PNGs during uploading to speed up subsequent downloads
+			if (f.name.endsWith(".png")) {
+				File optimized = Files.createTempFile(null, null).toFile();
+				if (Utils.bash("bash", "-c",
+				               "pngquant 256 < '" + output.getAbsolutePath() + "' > '" +
+				                   optimized.getAbsolutePath() + "'") == 0 &&
+				    optimized.length() < output.length()) {
+					output = optimized;
+				}
+			}
+
+			if (f == mainFile && addOnMain.exists())
+				doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, output);
+
+			existingChecksums.put(f.checksum, output);
+		}
+
+		ServerUtils.checkEndOfStream(in);
+
+		for (AbstractFile f : abstractFiles) {
+			File file = new File(tempDir, f.directory);
+			file.mkdirs();
+			Files.copy(existingChecksums.get(f.checksum).toPath(), new File(file, f.name).toPath());
+		}
 	}
 }

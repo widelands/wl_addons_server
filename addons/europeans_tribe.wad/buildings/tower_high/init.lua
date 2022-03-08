@@ -40,8 +40,8 @@ descriptions:new_militarysite_type {
         prohibited_till = 3600
     },
 
-    max_soldiers = 6,
-    heal_per_second = 170,
+    max_soldiers = 4,
+    heal_per_second = 160,
     conquers = 12,
     prefer_heroes = true,
 

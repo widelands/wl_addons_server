@@ -50,10 +50,7 @@ descriptions:new_productionsite_type {
     },
 
     aihints = {
-        space_consumer = true,
-        basic_amount = 1,
-        prohibited_till = 600,
-        forced_after = 1800
+        space_consumer = true
     },
 
     working_positions = {
@@ -69,19 +66,37 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=plant_wheat",
-                "call=plant_rye",
+                "call=plant_idle",
                 "call=plant_barley",
-                "call=harvest_wheat",
-                "call=harvest_rye",
+                "call=plant_rye",
+                "call=plant_wheat",
                 "call=harvest_barley",
+                "call=harvest_rye",
+                "call=harvest_wheat",
                 "return=skipped"
+            }
+        },
+        plant_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs barley or economy needs rye or economy needs wheat",
+                "return=skipped when economy needs water",
+                "consume=water:3",
+                "callworker=plant_barley",
+                "animate=working duration:6s",
+                "callworker=plant_rye",
+                "animate=working duration:6s",
+                "callworker=plant_wheat",
+                "animate=working duration:6s",
+                "sleep=duration:20s"
             }
         },
         plant_barley = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
             descname = _"planting barley",
             actions = {
+                "return=skipped unless economy needs barley or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant_barley",
@@ -93,6 +108,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
             descname = _"planting rye",
             actions = {
+                "return=skipped unless economy needs rye or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant_rye",
@@ -104,6 +120,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
             descname = _"planting wheat",
             actions = {
+                "return=skipped unless economy needs wheat or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant_wheat",

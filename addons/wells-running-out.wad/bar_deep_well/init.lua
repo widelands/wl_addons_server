@@ -1,7 +1,7 @@
 dirname = path.dirname(__file__)
 push_textdomain("wells-running-out.wad", true)
 
-descriptions:new_productionsite_type {
+wl.Descriptions():new_productionsite_type {
    name = "barbarians_well_deep",
    -- TRANSLATORS: This is a building name used in lists of buildings
    descname = pgettext("barbarians_building", "Deep Well"),

@@ -74,7 +74,7 @@ descriptions:new_productionsite_type {
                 "mine=resource_water radius:2 yield:60% when_empty:60%",
                 "produce=water"
             }
-        }
+        },
     },
 
     out_of_resource_notification = {

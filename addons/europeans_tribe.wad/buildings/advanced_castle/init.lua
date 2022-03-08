@@ -8,6 +8,7 @@ descriptions:new_militarysite_type {
     descname = pgettext("europeans_building", "Advanced Castle"),
     icon = dirname .. "menu.png",
     size = "big",
+    vision_range = 24,
 
     animations = {
         idle = {
@@ -23,7 +24,7 @@ descriptions:new_militarysite_type {
         prohibited_till = 9600
     },
 
-    max_soldiers = 24,
+    max_soldiers = 18,
     heal_per_second = 300,
     conquers = 24,
     prefer_heroes = true,

@@ -8,6 +8,7 @@ descriptions:new_warehouse_type {
     descname = pgettext("europeans_building", "Advanced Warehouse"),
     icon = dirname .. "menu.png",
     size = "medium",
+    vision_range = 24,
 
     animations = {
         idle = {

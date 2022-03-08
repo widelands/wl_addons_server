@@ -1,4 +1,4 @@
-push_textdomain("tribes")
+push_textdomain("europeans_tribe.wad", true)
 
 dirname = path.dirname(__file__)
 
@@ -9,6 +9,8 @@ descriptions:new_worker_type {
     animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
+    
+    buildcost = { europeans_soldier = 1 },
 
     experience = 32,
     becomes = "europeans_trainer_normal",

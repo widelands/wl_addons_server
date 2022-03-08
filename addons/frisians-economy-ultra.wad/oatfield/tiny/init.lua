@@ -1,6 +1,6 @@
 dirname = path.dirname(__file__)
 
-descriptions:new_immovable_type {
+wl.Descriptions():new_immovable_type {
    name = "oatfield_tiny",
    -- TRANSLATORS: This is an immovable name used in lists of immovables
    descname = pgettext("immovable", "Oat Field (tiny)"),

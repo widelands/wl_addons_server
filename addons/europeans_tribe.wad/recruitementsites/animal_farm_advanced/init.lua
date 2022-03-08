@@ -1,4 +1,4 @@
-push_textdomain("tribes")
+push_textdomain("europeans_tribe.wad", true)
 
 dirname = path.dirname(__file__)
 
@@ -47,7 +47,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_ox",
+                "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
                 "consume=corn blackroot water",
                 "sleep=duration:10s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
@@ -59,7 +59,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start rearing donkeys because ...
             descname = pgettext("europeans_building", "rearing donkeys"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_donkey",
+                "return=skipped unless economy needs europeans_carrier_donkey or workers need experience",
                 "consume=corn blackroot water",
                 "sleep=duration:10s",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
@@ -71,7 +71,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
             descname = pgettext("europeans_building", "breeding horses"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_horse",
+                "return=skipped unless economy needs europeans_carrier_horse or workers need experience",
                 "consume=corn blackroot water",
                 "sleep=duration:10s",
                 "playsound=sound/farm/horse priority:50% allow_multiple",

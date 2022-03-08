@@ -49,7 +49,7 @@ descriptions:new_militarysite_type {
         }
     },
 
-    max_soldiers = 4,
+    max_soldiers = 2,
     heal_per_second = 120,
     conquers = 8,
     prefer_heroes = false,

@@ -49,7 +49,7 @@ descriptions:new_productionsite_type {
 
     aihints = {
         basic_amount = 2,
-        forced_after = 900
+        forced_after = 10
     },
 
     working_positions = {
@@ -87,7 +87,7 @@ descriptions:new_productionsite_type {
                 "mine=resource_water radius:2 yield:50% when_empty:50%",
                 "produce=water"
             }
-        }
+        },
     },
 
     out_of_resource_notification = {

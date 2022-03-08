@@ -59,8 +59,8 @@ descriptions:new_productionsite_type {
     },
 
     inputs = {
-        { name = "ration", amount = 4 },
-        { name = "beer", amount = 4 }
+        { name = "ration", amount = 6 },
+        { name = "beer", amount = 6 }
     },
 
     programs = {
@@ -68,7 +68,7 @@ descriptions:new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
             descname = _"mining iron",
             actions = {
-                "return=skipped unless economy needs ore or economy needs granite or workers need experience",
+                "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
                 "consume=ration beer",
                 "sleep=duration:5s",
                 "call=mine_stone",
@@ -77,6 +77,11 @@ descriptions:new_productionsite_type {
                 "sleep=duration:5s",
                 "call=mine_stone",
                 "call=mine_ore",
+                "consume=ration beer",
+                "sleep=duration:5s",
+                "call=mine_stone",
+                "call=mine_ore",
+                "call=mine_quartz",
             }
         },
         mine_ore = {
@@ -95,12 +100,20 @@ descriptions:new_productionsite_type {
                 "produce=granite",
             }
         },
+        mine_quartz = {
+            descname = _"mining quartz",
+            actions = {
+                "animate=working duration:25s",
+                "mine=resource_iron radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "produce=quartz",
+            }
+        },
         encyclopedia = {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=ration:2 beer:2",
-                "produce=ore:2 granite:2",
+                "consume=ration:3 beer:3",
+                "produce=ore:3 granite:3 quartz",
             }
         },
     },

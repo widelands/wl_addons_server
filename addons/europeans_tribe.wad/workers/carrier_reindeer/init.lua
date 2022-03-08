@@ -1,6 +1,6 @@
-push_textdomain("tribes")
+push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname (__file__)
+dirname = path.dirname(__file__)
 
 descriptions:new_carrier_type {
     name = "europeans_carrier_reindeer",

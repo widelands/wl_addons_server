@@ -21,15 +21,15 @@ init = {
     end
     
     local h = player:place_building("europeans_fortress", sf, false, true)
-    h:set_soldiers{[{1,1,1,1}] = 18}
+    h:set_soldiers{[{1,1,1,1}] = 12}
 
     place_building_in_region(player, "europeans_warehouse_normal", sf:region(6), {
         wares = {
-            water = 127,
             log = 127,
             reed = 127,
             coal = 63,
             granite = 48,
+            water = 31,
             ore = 15,
             blackwood = 15,
             cloth = 15,
