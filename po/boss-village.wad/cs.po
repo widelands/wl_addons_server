@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-15 03:03+0100\n"
+"PO-Revision-Date: 2022-03-14 08:53+0000\n"
+"Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/boss-village.wad/addon:4 addons/boss-village.wad/amazons.lua:11
+#: addons/boss-village.wad/atlanteans.lua:11
+#: addons/boss-village.wad/barbarians.lua:11
+#: addons/boss-village.wad/empire.lua:11
+#: addons/boss-village.wad/frisians.lua:11
+msgid "Boss Village"
+msgstr ""
+
+#: addons/boss-village.wad/addon:5
+msgid "No description"
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Boss Village" starting condition
+#: addons/boss-village.wad/amazons.lua:13
+#: addons/boss-village.wad/atlanteans.lua:13
+#: addons/boss-village.wad/barbarians.lua:13
+#: addons/boss-village.wad/empire.lua:13
+#: addons/boss-village.wad/frisians.lua:13
+msgid "Start the game with a village and many strong soldiers"
+msgstr ""
