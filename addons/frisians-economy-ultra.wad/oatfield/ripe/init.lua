@@ -1,5 +1,7 @@
 dirname = path.dirname(__file__)
 
+push_textdomain("frisians-economy-ultra.wad", true)
+
 wl.Descriptions():new_immovable_type {
    name = "oatfield_ripe",
    -- TRANSLATORS: This is an immovable name used in lists of immovables
@@ -23,3 +25,4 @@ wl.Descriptions():new_immovable_type {
       }
    }
 }
+pop_textdomain()
