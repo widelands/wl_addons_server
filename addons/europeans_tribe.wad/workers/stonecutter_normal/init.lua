@@ -15,13 +15,13 @@ descriptions:new_worker_type {
 
     programs = {
         check_rocks = {
-            "findobject=attrib:rocks radius:8",
+            "findobject=attrib:rocks radius:10",
         },
         check_stone = {
-            "findspace=size:any radius:8 resource:resource_stones",
+            "findspace=size:any radius:10 resource:resource_stones",
         },
         cut_granite = {
-            "findobject=attrib:rocks radius:8",
+            "findobject=attrib:rocks radius:10",
             "walk=object",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hacking duration:14s",
@@ -30,7 +30,7 @@ descriptions:new_worker_type {
             "return"
         },
         cut_marble = {
-            "findobject=attrib:rocks radius:8",
+            "findobject=attrib:rocks radius:10",
             "walk=object",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hacking duration:14s",
@@ -39,7 +39,7 @@ descriptions:new_worker_type {
             "return"
         },
         mine_granite = {
-            "findspace=size:any radius:8 resource:resource_stones",
+            "findspace=size:any radius:10 resource:resource_stones",
             "walk=object",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hacking duration:14s",
@@ -48,7 +48,7 @@ descriptions:new_worker_type {
             "return"
         },
         mine_marble = {
-            "findspace=size:any radius:8 resource:resource_stones",
+            "findspace=size:any radius:10 resource:resource_stones",
             "walk=object",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hacking duration:14s",
