@@ -1221,7 +1221,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings and workers from Barba
 MarkMcWire
 MarkMcWire
 1621788282
-168
+170
 0
 0
 0
@@ -1232,11 +1232,15 @@ MarkMcWire
 0
 0
 0
-1
+2
 Nordfriese
 <font bold=true>WARNING</font>: The current version of this add-on may cause Widelands v1.0 to fail to start! Install the <font shadow=1 italic=1 color=ffffff>enhanced_debug_scripts.wad</font> add-on along this one to be safe.
 1.6.1
 1628154806
+Nordfriese
+The current version of this add-on has a bug that prevents the game from starting under some circumstances: Many of its <font shadow=1 italic=1>init.lua</font> files reference the global variable <font shadow=1 italic=1>descriptions</font> which may be undefined. Please change all occurrences to <font shadow=1 italic=1>wl.Descriptions()</font> instead.    @MarkMcWire
+2.4.6
+1650721500
 2.4.6
 95
 78694880
