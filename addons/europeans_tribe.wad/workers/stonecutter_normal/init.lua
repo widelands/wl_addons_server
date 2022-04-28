@@ -40,7 +40,7 @@ descriptions:new_worker_type {
         },
         mine_granite = {
             "findspace=size:any radius:10 resource:resource_stones",
-            "walk=object",
+            "walk=coords",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hacking duration:14s",
             "mine=resource_stones radius:1",
@@ -49,7 +49,7 @@ descriptions:new_worker_type {
         },
         mine_marble = {
             "findspace=size:any radius:10 resource:resource_stones",
-            "walk=object",
+            "walk=coords",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hacking duration:14s",
             "mine=resource_stones radius:1",

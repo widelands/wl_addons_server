@@ -205,7 +205,7 @@ hessenfarmer
 0.0
 0
 1.0.5
-19
+20
 573358
 maps
 0
@@ -288,7 +288,7 @@ ccd4bf8b6e1e07143d17d7139d1b9678
 7f9a4779b1a8232d1f737160d8e93168
 651a9f2ab4c830aad0dffc6b634ef64b
 cb5eab54a9e3c66a9c7d64fe9c88eddc
-50d9acfde9fe24f0f615465f4986d10a
+fab4bacd0654f11e83a957a7228048a2
 d5bbe8e9d492b5e6cb861789b2a05185
 c3f974d60296faed7e56a65a0c9d2608
 0661ffdd80d2b9f51bd955f774c58f2e
@@ -722,7 +722,7 @@ This is a big challenge. Playing these maps might be frustrating sometimes
 1.0.3
 1627826341
 1.0.3
-28
+29
 6029153
 maps
 0
@@ -877,7 +877,7 @@ fce7fd5d6ab7632e78efbf414d87d839
 a75cce884db668fea6a118bf3cb4e723
 64515655a8abbf86893a11ebf2519b89
 ad18231c9f68efeacba5baf83d94426a
-62ddb0c3ec99332608f76b271d5b5522
+51abe9429443a300de140ba7719d153c
 e3dea91606cd8924181e4f45105a4216
 71b64ddbb9f020767dd96ebfb1ec6e7b
 480c2e19feec39258bd42ea5fbadf2c9
@@ -1131,7 +1131,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings and workers from Barba
 MarkMcWire
 MarkMcWire
 1621788282
-170
+171
 1
 7.0
 2
@@ -1143,7 +1143,7 @@ Nordfriese
 The current version of this add-on has a bug that prevents the game from starting under some circumstances: Many of its <font shadow=1 italic=1>init.lua</font> files reference the global variable <font shadow=1 italic=1>descriptions</font> which may be undefined. Please change all occurrences to <font shadow=1 italic=1>wl.Descriptions()</font> instead.    @MarkMcWire
 2.4.6
 1650721500
-2.4.6
+2.4.7
 95
 78694880
 tribes
@@ -9355,7 +9355,7 @@ ru.mo
 sk.mo
 sv.mo
 7960
-bb53b32022da62fc2c0d0878053df713
+f9a9e010fba7248204b2762fb7771a41
 fbbd5b53033a58de73a4fe01bcb2f66f
 6c9f256ee4a6c93b1b5781d2bf378a9e
 c9b395400e4109b69954a8160c7cfd7a
@@ -16402,7 +16402,7 @@ f3d003229088812f944a94ece1ff151f
 ea1a52767dd4eeca32a952f26e032c2c
 273179237810267d63e83862e3e260ce
 0ffda0d5d3ccef519aa56397ccf0d811
-fbc97c27e39a73dd1718b133ee68b84c
+333ef20e5b0513785f8d9b1cb53eaa82
 8af953fcee1e86ac71559459f2ec5cf0
 97e07db95c47ebc0e3f713b86015ee00
 021cac8d0ba5c08a4ee3e5add8d57cf0
@@ -16505,7 +16505,7 @@ f57ea84fe1f84ffff190a84ba8891dde
 fca363e24b9cd0612376f1c7e40f8281
 2806cc1a1cff651c451234036c3ef987
 eb895386c24568b02cccfa7f6c80f484
-91ca408e1cce32960835478447ecc177
+3e49471f675d90fa26ee6c3995e48e67
 ffbc2922b69c09a728cc6457b4db6b2b
 41baa5b3d0cdfe094ca1d8269ff6755b
 6216d1a11460119be08da8b1efd44bcc
@@ -21045,7 +21045,7 @@ v0.3 includes only minor cleanups and a failed attempt to fix the failing progra
 0.3
 1638106315
 0.5
-8
+9
 47693
 tribes
 0
@@ -21107,7 +21107,7 @@ a8464aa40dd0c6dfc2a611d54a301621
 f452bc2c5b5b2d9bc89ac780a5439b0c
 05b58bd4e4ea29dc5687282936191e13
 8493fc0cb2525e253112b7bd931f6e76
-9a4ee47c0f86aac469185c553854b7fd
+f948f10ac8a30cbaf1bb210dfe2d7b62
 3866bbbed8e3ee6135ab27d03622af8e
 73c6d70c81c3d18ed010386377fce77b
 e4880628d81070e0dd98b85c578eb2d0
@@ -22279,7 +22279,7 @@ OIPUN
 9.0
 0
 1.0.1
-10
+11
 333433
 world
 0
@@ -22658,7 +22658,7 @@ a4a91da8921f4fcbfb0f549803bc0ce0
 7286e23fe903f3138093c91e6f7f11c4
 048883e1682ca7cf095f2d15022dbe2b
 cbfb48c1cbdeaf784407e94c458da1de
-92bf2d68d7b9f738890f48f498acfc81
+97a093a559e4d1b6881c57aa4fcc5f55
 44515aa7c02f7d7e940b79fa6c0b3aff
 82266d69852a20dcf883f93850163d8c
 6fa827b7e58882005a5e53c86f298611
