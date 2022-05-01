@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Juanjo, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-05-01 03:03+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -27,6 +31,8 @@ msgid ""
 "Very complex economy model for the frisian tribe with numerous new wares and "
 "buildings."
 msgstr ""
+"Un model econòmic molt complex de la cultura frisona amb molts béns i "
+"edificis nous."
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/barley_flour/init.lua:8
@@ -43,7 +49,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
-msgstr ""
+msgstr "moldre civada"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/leather/init.lua:8
@@ -77,7 +83,7 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
-msgstr ""
+msgstr "treballar"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73
@@ -141,7 +147,7 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:12
 msgid "This rye field is ready for harvesting."
-msgstr ""
+msgstr "Aquest camp de civada ja es pot segar."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:15
 msgid "This rye field is flowering. Beekeepers can use it to produce honey."
@@ -177,11 +183,11 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:45
 msgid "Salt is washed from the sea and used to conserve meat and fish."
-msgstr ""
+msgstr "La sal del mar es renta i s'usa per conservar carn i peix."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:48
 msgid "Rye is used to bake bread. It needs to be ground into flour first."
-msgstr ""
+msgstr "La civada s'usa per fer pa. Caldrà moldre-la per fer farina."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:51
 msgid "After being ground to flour, rye can be used to bake bread."
@@ -247,7 +253,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start smoking meat because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:153
 msgid "smoking meat"
-msgstr ""
+msgstr "fumar carn"
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing reindeer because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:171
@@ -266,7 +272,7 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/postload.lua:217
 #: addons/frisians-economy-ultra.wad/postload.lua:246
 msgid "baking bread"
-msgstr ""
+msgstr "coure pa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking honey bread because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:235
@@ -321,7 +327,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:51
 msgid "grinding rye"
-msgstr ""
+msgstr "moldre civada"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:8
