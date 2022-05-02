@@ -76,7 +76,7 @@ all_levels_emp = {
     max_evade = 3,
 }
 
-descriptions:new_soldier_type {
+wl.Descriptions():new_soldier_type {
     name = "europeans_soldier",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Soldier"),

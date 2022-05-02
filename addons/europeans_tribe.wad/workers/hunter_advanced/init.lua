@@ -2,7 +2,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 dirname = path.dirname(__file__)
 
-descriptions:new_worker_type {
+wl.Descriptions():new_worker_type {
     name = "europeans_hunter_advanced",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Advanced Hunter"),

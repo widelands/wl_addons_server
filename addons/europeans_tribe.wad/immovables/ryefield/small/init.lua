@@ -2,7 +2,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 dirname = path.dirname(__file__)
 
-descriptions:new_immovable_type {
+wl.Descriptions():new_immovable_type {
     name = "ryefield_small",
     -- TRANSLATORS: This is an immovable name used in lists of immovables
     descname = pgettext("immovable", "Rye Field (small)"),

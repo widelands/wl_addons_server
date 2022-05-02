@@ -7,7 +7,7 @@ push_textdomain("europeans_tribe.wad", true)
 -- For formatting time strings
 include "tribes/scripting/help/time_strings.lua"
 
-descriptions:new_tribe {
+wl.Descriptions():new_tribe {
     name = "europeans",
     military_capacity_script = path.dirname(__file__) .. "military_capacity.lua",
     animation_directory = image_dirname,
