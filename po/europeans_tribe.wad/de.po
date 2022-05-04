@@ -6,15 +6,16 @@
 # Translators:
 # Thomas Ho <tomohnetom@web.de>, 2021
 # Stephan Lutz <stephan-lutz@gmx.de>, 2022
+# Matze Niemand, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-05-04 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
-"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2022\n"
+"Last-Translator: Matze Niemand, 2022\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +75,7 @@ msgstr "Deine Soldaten haben den Feind vor der verbesserten Barriere besiegt."
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Castle"
-msgstr "Verbessertes Schloss"
+msgstr "Verbesserte Burg"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:34
@@ -3754,6 +3755,8 @@ msgid ""
 "A bigger food than the ration or snack. Used in the deepest mines and the "
 "most advanced trainingsites."
 msgstr ""
+"Eine größere Mahlzeit als eine Ration oder ein Snack. Sie wird in den "
+"tiefsten Minen und den fortgeschrittensten Trainingslagern verwendet."
 
 #. TRANSLATORS: Helptext for a europeans ware: Meal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:380
@@ -3856,6 +3859,9 @@ msgid ""
 "This tasty wine is drunk by soldiers to train in advanced battlearena and by "
 "miners in the deepest mines. It is produced in a winery."
 msgstr ""
+"Dieser köstliche Wein wird von Soldaten während Kämpfen in höheren Arenen "
+"und Bergleuten in den tiefsten Mienen getrunken. Er wird in Weinkellereien "
+"hergestellt."
 
 #. TRANSLATORS: Helptext for an europeans ware: Coal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:482
@@ -3896,6 +3902,8 @@ msgid ""
 "Discarded weapons and armor can be recycled in an advanced smelting works to "
 "produce new tools, weapon and armor."
 msgstr ""
+"Ausrangierte Waffen und Rüstung können in einem fortgeschrittenem "
+"Schmelzprozess zu neuen Werkzeugen, Waffen und Rüstung verarbeitet werden."
 
 #. TRANSLATORS: Helptext for an europeans ware: Iron, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:516
@@ -3952,7 +3960,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:566
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester, the claydigger, and the fish breeder."
-msgstr ""
+msgstr "Große Eimer für den Förster, Lehmgräber und Fischzüchter."
 
 #. TRANSLATORS: Helptext for an europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an europeans ware: Shovel, part 2
