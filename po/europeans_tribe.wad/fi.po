@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-05 03:03+0200\n"
+"POT-Creation-Date: 2022-05-06 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Atte Timonen, 2022\n"
 "Language-Team: Finnish (https://www.transifex.com/widelands/teams/35159/"
@@ -3326,8 +3326,8 @@ msgstr[1] ""
 msgctxt "europeans_building"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1% sotilas"
+msgstr[1] "%1% sotilasta"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/military_capacity.lua:16
@@ -5347,25 +5347,25 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3460
 msgctxt "europeans"
 msgid "Worker missing"
-msgstr ""
+msgstr "Työläinen puuttuu"
 
 #. TRANSLATORS: Productivity label on an empire building if there is 1 worker coming
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3462
 msgctxt "europeans"
 msgid "Worker is coming"
-msgstr ""
+msgstr "Työläinen on matkalla"
 
 #. TRANSLATORS: Productivity label on an empire building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3464
 msgctxt "europeans"
 msgid "Workers missing"
-msgstr ""
+msgstr "Työläiset puuttuu"
 
 #. TRANSLATORS: Productivity label on an empire building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3466
 msgctxt "europeans"
 msgid "Workers are coming"
-msgstr ""
+msgstr "Työläiset ovat matkalla"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ore/init.lua:8
