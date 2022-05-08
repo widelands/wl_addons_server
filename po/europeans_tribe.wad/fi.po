@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-06 03:04+0200\n"
+"POT-Creation-Date: 2022-05-08 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Atte Timonen, 2022\n"
 "Language-Team: Finnish (https://www.transifex.com/widelands/teams/35159/"
@@ -655,37 +655,37 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:8
 msgctxt "europeans_building"
 msgid "Sentry"
-msgstr ""
+msgstr "Vartiomökki"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:32
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your sentry."
-msgstr ""
+msgstr "Sotilaasi ovat saapuneet vartiomökillesi."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:34
 msgctxt "europeans_building"
 msgid "Your sentry discovered an aggressor."
-msgstr ""
+msgstr "Vartiomökkisi havaitsi vastustajan."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:36
 msgctxt "europeans_building"
 msgid "Your sentry is under attack."
-msgstr ""
+msgstr "Vartiomökkiisi on hyökätty."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:38
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the sentry."
-msgstr ""
+msgstr "Vihollisen sotilaat päihittivät sotilaasi vartiomökillä."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:40
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the sentry."
-msgstr ""
+msgstr "Sotilaasi päihittivät vihollisen vartiomökillä."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:8
@@ -3318,8 +3318,8 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1% sotilas (+%2%)"
+msgstr[1] "%1% sotilasta (+%2%)"
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/military_capacity.lua:11
@@ -3334,16 +3334,16 @@ msgstr[1] "%1% sotilasta"
 msgctxt "europeans_building"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1%(+%2%) sotilas (+%3%)"
+msgstr[1] "%1%(+%2%) sotilasta (+%3%)"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/military_capacity.lua:19
 msgctxt "europeans_building"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1%(+%2%) sotilasta"
+msgstr[1] "%1%(+%2%) sotilasta"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental europeans tribe."
@@ -5779,7 +5779,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/workers/soldier/init.lua:82
 msgctxt "europeans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Sotilas"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonecutter_advanced/init.lua:8
