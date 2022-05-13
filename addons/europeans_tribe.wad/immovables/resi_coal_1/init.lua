@@ -2,7 +2,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 dirname = path.dirname(__file__)
 
-descriptions:new_immovable_type {
+wl.Descriptions():new_immovable_type {
     name = "europeans_resi_coal_1",
     -- TRANSLATORS: This is a resource name used in lists of resources
     descname = pgettext("resource_indicator", "Some Coal"),

@@ -2,7 +2,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 dirname = path.dirname(__file__)
 
-descriptions:new_worker_type {
+wl.Descriptions():new_worker_type {
     name = "europeans_stonecutter_basic",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Basic Stonecutter"),
@@ -15,13 +15,13 @@ descriptions:new_worker_type {
 
     programs = {
         check_rocks = {
-            "findobject=attrib:rocks radius:6",
+            "findobject=attrib:rocks radius:8",
         },
         check_stone = {
-            "findspace=size:any radius:6 resource:resource_stones",
+            "findspace=size:any radius:8 resource:resource_stones",
         },
         cut_granite = {
-            "findobject=attrib:rocks radius:6",
+            "findobject=attrib:rocks radius:8",
             "walk=object",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hack duration:16s",
@@ -30,7 +30,7 @@ descriptions:new_worker_type {
             "return"
         },
         cut_marble = {
-            "findobject=attrib:rocks radius:6",
+            "findobject=attrib:rocks radius:8",
             "walk=object",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hack duration:16s",
@@ -39,8 +39,8 @@ descriptions:new_worker_type {
             "return"
         },
         mine_granite = {
-            "findspace=size:any radius:6 resource:resource_stones",
-            "walk=object",
+            "findspace=size:any radius:8 resource:resource_stones",
+            "walk=coords",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hack duration:16s",
             "mine=resource_stones radius:1",
@@ -48,8 +48,8 @@ descriptions:new_worker_type {
             "return"
         },
         mine_marble = {
-            "findspace=size:any radius:6 resource:resource_stones",
-            "walk=object",
+            "findspace=size:any radius:8 resource:resource_stones",
+            "walk=coords",
             "playsound=sound/stonecutting/stonecutter priority:50% allow_multiple",
             "animate=hack duration:16s",
             "mine=resource_stones radius:1",

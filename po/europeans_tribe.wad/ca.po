@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-06 03:03+0100\n"
+"POT-Creation-Date: 2022-05-11 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -31,6 +31,8 @@ msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings and workers from "
 "Barbarians, Atlanteans, and Empire, until own graphics are available."
 msgstr ""
+"Afegeix una cultura nova, anomenada «europeus». Usa edificis i treballadors "
+"dels bàrbars, atlants i de l'Imperi fins que disposi de gràfics propis."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -180,7 +182,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:8
 msgctxt "europeans_building"
 msgid "Castle"
-msgstr ""
+msgstr "Castell"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:63
@@ -381,7 +383,7 @@ msgstr "Mercat"
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:68
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:90
 msgid "working"
-msgstr ""
+msgstr "treballar"
 
 #. TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
 #: addons/europeans_tribe.wad/buildings/market/init.lua:103
@@ -621,7 +623,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/port/init.lua:8
 msgctxt "europeans_building"
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/scouts_house_advanced/init.lua:8
@@ -637,7 +639,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/scouts_house_normal/init.lua:51
 #: addons/europeans_tribe.wad/buildings/scouts_house_normal/init.lua:59
 msgid "scouting"
-msgstr ""
+msgstr "explorar"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/scouts_house_basic/init.lua:8
@@ -763,7 +765,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:8
 msgctxt "europeans_building"
 msgid "Small Tower"
-msgstr ""
+msgstr "Torre petita"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:47
@@ -799,109 +801,109 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/warehouse_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Warehouse"
-msgstr ""
+msgstr "Magatzem avançat"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Warehouse"
-msgstr ""
+msgstr "Magatzem bàsic"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Warehouse"
-msgstr ""
+msgstr "Magatzem normal"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_coal_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Coal"
-msgstr ""
+msgstr "Una mica de carbó"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_coal_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
-msgstr ""
+msgstr "Un muntó de carbó"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_gold_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Gold"
-msgstr ""
+msgstr "Una mica d'or"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_gold_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Gold"
-msgstr ""
+msgstr "Un muntó d'or"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_iron_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Iron"
-msgstr ""
+msgstr "Una mica de ferro"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_iron_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Iron"
-msgstr ""
+msgstr "Un muntó de ferro"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_none/init.lua:8
 msgctxt "resource_indicator"
 msgid "No Resources"
-msgstr ""
+msgstr "Sense recursos"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_stones_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Crystals"
-msgstr ""
+msgstr "Una mica de pedres precioses"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_stones_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Crystals"
-msgstr ""
+msgstr "Un muntó de pedres precioses"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_water/init.lua:8
 msgctxt "resource_indicator"
 msgid "Water"
-msgstr ""
+msgstr "Aigua"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "Camp de sègol (recol·lectat)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "Camp de sègol (sègol per madurar)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr ""
+msgstr "Camp de sègol (sègol madur)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/small/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "Camp de sègol (jove)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "Camp de sègol (molt jove)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/shipconstruction_europeans/init.lua:8
@@ -1051,7 +1053,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
 #: addons/europeans_tribe.wad/productionsites/brewery_winery/init.lua:98
 msgid "making wine"
-msgstr ""
+msgstr "fer vi"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites/charcoal_kiln_advanced/init.lua:8
@@ -1248,7 +1250,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:90
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:83
 msgid "planting barley"
-msgstr ""
+msgstr "plantar ordi"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:109
@@ -1256,7 +1258,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:126
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:143
 msgid "planting rye"
-msgstr ""
+msgstr "plantar sègol"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:121
@@ -1264,7 +1266,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites/farm_level_2/init.lua:138
 #: addons/europeans_tribe.wad/productionsites/farm_level_3/init.lua:155
 msgid "planting wheat"
-msgstr ""
+msgstr "plantar blat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
 #: addons/europeans_tribe.wad/productionsites/farm_basic/init.lua:133
@@ -5521,7 +5523,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/workers/carrier_reindeer/init.lua:8
 msgctxt "europeans_worker"
 msgid "Reindeer"
-msgstr ""
+msgstr "Ren"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/charcoal_burner_advanced/init.lua:8

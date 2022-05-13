@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-07 03:03+0100\n"
+"POT-Creation-Date: 2022-03-27 04:03+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/widelands/teams/35159/"
 "es/)\n"
@@ -46,6 +46,21 @@ msgstr ""
 msgid "working"
 msgstr ""
 
+#: addons/wells-running-out.wad/bar_deep_well/init.lua:36
+#: addons/wells-running-out.wad/fri_deep_well/init.lua:36
+msgid "No Water"
+msgstr ""
+
+#: addons/wells-running-out.wad/bar_deep_well/init.lua:37
+#: addons/wells-running-out.wad/fri_deep_well/init.lua:37
+msgid "Out of Water"
+msgstr ""
+
+#: addons/wells-running-out.wad/bar_deep_well/init.lua:38
+msgctxt "barbarians_building"
+msgid "The carrier working at this deep well can’t find any water in his well."
+msgstr ""
+
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/wells-running-out.wad/bar_well_keeper/init.lua:7
 msgctxt "barbarians_worker"
@@ -56,6 +71,11 @@ msgstr ""
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:7
 msgctxt "frisians_building"
 msgid "Deep Well"
+msgstr ""
+
+#: addons/wells-running-out.wad/fri_deep_well/init.lua:38
+msgctxt "frisians_building"
+msgid "The carrier working at this deep well can’t find any water in his well."
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers

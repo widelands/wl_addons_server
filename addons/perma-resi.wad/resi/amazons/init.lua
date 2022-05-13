@@ -2,6 +2,8 @@ push_textdomain("tribes")
 
 dirname = "tribes/immovables/resi/amazons/"
 
+descriptions = wl.Descriptions()
+
 descriptions:new_immovable_type {
    name = "amazons_resi_none",
    -- TRANSLATORS: This is a resource name used in lists of resources

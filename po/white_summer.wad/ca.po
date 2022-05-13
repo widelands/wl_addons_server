@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Juanjo, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 02:06+0000\n"
+"POT-Creation-Date: 2022-05-09 03:03+0200\n"
 "PO-Revision-Date: 2021-06-05 18:17+0000\n"
+"Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -21,7 +25,7 @@ msgstr ""
 #: addons/white_summer.wad/addon:2 addons/white_summer.wad/editor.lua:7
 #: addons/white_summer.wad/editor.lua:35
 msgid "White Summer"
-msgstr ""
+msgstr "Estiu blanc"
 
 #: addons/white_summer.wad/addon:3
 msgid ""
@@ -31,147 +35,152 @@ msgid ""
 "planting trees. Dolomites contain stone as a default resource in amount of "
 "10."
 msgstr ""
+"Conté prats florits, clarianes, dolomites, terra argilós, aigua verda, aigua "
+"fangosa i 3 tipus nous d'arbres. Els prats florits són més difícils de "
+"convertir a bosc, però són millors per posar-hi pous d'aigua. Les clarianes "
+"són ideals per plantar-hi arbres. Les dolomites contenen pedra com a recurs "
+"per defecte, amb una quantitat de 10."
 
 #: addons/white_summer.wad/immovables/linden/init.lua:16
 msgid "Linden (Sapling)"
-msgstr ""
+msgstr "Tell (plançó)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:41
 msgid "Linden (Pole)"
-msgstr ""
+msgstr "Tell (jove)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:67
 msgid "Linden (Mature)"
-msgstr ""
+msgstr "Tell (adult)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:93
 msgid "Linden (Old)"
-msgstr ""
+msgstr "Tell (vell)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:94
 msgid "Linden"
-msgstr ""
+msgstr "Tell"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:17
 msgid "Pine (Sapling)"
-msgstr ""
+msgstr "Pi (plançó)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:42
 msgid "Pine (Pole)"
-msgstr ""
+msgstr "Pi (jove)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:68
 msgid "Pine (Mature)"
-msgstr ""
+msgstr "Pi (adult)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:94
 msgid "Pine (Old)"
-msgstr ""
+msgstr "Pi (vell)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:95
 msgid "Pine"
-msgstr ""
+msgstr "Pi"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:95
 msgid "Red Maple"
-msgstr ""
+msgstr "Auró roig"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:68
 msgid "Red Maple (Mature)"
-msgstr ""
+msgstr "Auró roig (adult)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:94
 msgid "Red Maple (Old)"
-msgstr ""
+msgstr "Auró roig (vell)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:42
 msgid "Red Maple (Pole)"
-msgstr ""
+msgstr "Auró roig (jove)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:17
 msgid "Red Maple (Sapling)"
-msgstr ""
+msgstr "Auró roig (plançó)"
 
 #: addons/white_summer.wad/terrains/init.lua:10
 msgid "Flowering Meadow 1"
-msgstr ""
+msgstr "Prat florit 1"
 
 #: addons/white_summer.wad/terrains/init.lua:24
 msgid "Flowering Meadow 2"
-msgstr ""
+msgstr "Prat florit 2"
 
 #: addons/white_summer.wad/terrains/init.lua:38
 msgid "Flowering Meadow 3"
-msgstr ""
+msgstr "Prat florit 3"
 
 #: addons/white_summer.wad/terrains/init.lua:52
 msgid "Flowering Meadow 4"
-msgstr ""
+msgstr "Prat florit 4"
 
 #: addons/white_summer.wad/terrains/init.lua:66
 msgid "Clearing 1"
-msgstr ""
+msgstr "Clariana 1"
 
 #: addons/white_summer.wad/terrains/init.lua:79
 msgid "Clearing 2"
-msgstr ""
+msgstr "Clariana 2"
 
 #: addons/white_summer.wad/terrains/init.lua:93
 msgid "Clearing 3"
-msgstr ""
+msgstr "Clariana 3"
 
 #: addons/white_summer.wad/terrains/init.lua:107
 msgid "Forested Dolomites 1"
-msgstr ""
+msgstr "Dolomites boscoses 1"
 
 #: addons/white_summer.wad/terrains/init.lua:121
 msgid "Forested Dolomites 2"
-msgstr ""
+msgstr "Dolomites boscoses 2"
 
 #: addons/white_summer.wad/terrains/init.lua:135
 msgid "Forested Dolomites 3"
-msgstr ""
+msgstr "Dolomites boscoses 3"
 
 #: addons/white_summer.wad/terrains/init.lua:150
 msgid "Dolomites 1"
-msgstr ""
+msgstr "Dolomites 1"
 
 #: addons/white_summer.wad/terrains/init.lua:165
 msgid "Dolomites 2"
-msgstr ""
+msgstr "Dolomites 2"
 
 #: addons/white_summer.wad/terrains/init.lua:180
 msgid "Dolomites Meadow"
-msgstr ""
+msgstr "Prat de dolomites"
 
 #: addons/white_summer.wad/terrains/init.lua:193
 msgid "Clay Soil"
-msgstr ""
+msgstr "Terreny argilós"
 
 #: addons/white_summer.wad/terrains/init.lua:207
 msgid "Green Water 1"
-msgstr ""
+msgstr "Aigua verda 1"
 
 #: addons/white_summer.wad/terrains/init.lua:222
 msgid "Green Water 2"
-msgstr ""
+msgstr "Aigua verda 2"
 
 #: addons/white_summer.wad/terrains/init.lua:237
 msgid "Green Water 3"
-msgstr ""
+msgstr "Aigua verda 3"
 
 #: addons/white_summer.wad/terrains/init.lua:252
 msgid "Muddy Water"
-msgstr ""
+msgstr "Aigua fangosa"
 
 #: screenshots/white_summer.wad/descriptions:1
 msgid "White Summer (1)"
-msgstr ""
+msgstr "Estiu blanc (1)"
 
 #: screenshots/white_summer.wad/descriptions:2
 msgid "White Summer (2)"
-msgstr ""
+msgstr "Estiu blanc (2)"
 
 #: screenshots/white_summer.wad/descriptions:3
 msgid "White Summer (3)"
-msgstr ""
+msgstr "Estiu blanc (3)"

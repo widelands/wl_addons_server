@@ -30,5 +30,13 @@ wl.Descriptions():new_productionsite_type {
          }
       },
    },
+
+   out_of_resource_notification = {
+      -- Translators: Short for "Out of ..." for a resource
+      title = _("No Water"),
+      heading = _("Out of Water"),
+      message = pgettext("barbarians_building", "The carrier working at this deep well can’t find any water in his well."),
+      productivity_threshold = 33
+   },
 }
 pop_textdomain()
