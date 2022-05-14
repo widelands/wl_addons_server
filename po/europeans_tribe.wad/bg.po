@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-05-14 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Bulgarian (https://www.transifex.com/widelands/teams/35159/"
 "bg/)\n"
@@ -2771,6 +2771,11 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:426
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:421
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:425
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:104
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_1/init.lua:80
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_2/init.lua:81
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_3/init.lua:81
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_4/init.lua:66
 msgctxt "europeans_building"
 msgid "recruiting trainer"
 msgstr ""
@@ -2802,11 +2807,11 @@ msgid "Basic Trainingscamp"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:92
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_1/init.lua:68
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_2/init.lua:69
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_3/init.lua:69
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_4/init.lua:54
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:93
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_1/init.lua:69
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_2/init.lua:70
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_3/init.lua:70
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_4/init.lua:55
 msgctxt "europeans_building"
 msgid "recruiting soldier"
 msgstr ""
