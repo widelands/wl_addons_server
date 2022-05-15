@@ -19,7 +19,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_fisher_advanced = 1
+        europeans_fisher_advanced = 1,
+        europeans_fisher_basic = 1
     },
     
     inputs = {
@@ -46,9 +47,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs fish or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "callworker=breed_in_sea",
-                "sleep=duration:10s",
             }
         },
         fishing_in_sea = {
@@ -57,7 +57,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fish or workers need experience",
                 "callworker=fish_in_sea",
-                "sleep=duration:20s",
+                "sleep=duration:5s",
             }
         },
         breeding_in_pond = {
@@ -67,9 +67,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs fish or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
-                "sleep=duration:10s",
-                "callworker=breed_in_pond",
                 "sleep=duration:5s",
+                "callworker=breed_in_pond",
             }
         },
         fishing_in_pond = {
@@ -78,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fish or workers need experience",
                 "callworker=fish_in_pond",
-                "sleep=duration:15s",
+                "sleep=duration:5s",
             }
         },
         fishing_idle = {

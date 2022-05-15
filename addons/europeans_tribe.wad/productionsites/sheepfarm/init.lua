@@ -58,6 +58,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_wool",
+                "call=produce_wool",
+                "call=produce_wool",
+                "call=produce_meat",
                 "call=produce_wool_idle",
                 "return=skipped"
             }
@@ -73,6 +76,19 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/farm/sheep priority:50% allow_multiple",
                 "animate=working duration:60s",
                 "produce=wool:2"
+            }
+        },
+        produce_meat = {
+            -- TRANSLATORS: Completed/Skipped/Did not start producing wool because ...
+            descname = _"producing wool",
+            actions = {
+                "return=skipped unless economy needs wool or workers need experience",
+                "return=skipped unless site has water:2",
+                "consume=water:2 blackroot:2",
+                "sleep=duration:10s",
+                "playsound=sound/farm/sheep priority:50% allow_multiple",
+                "animate=working duration:60s",
+                "produce=meat:3"
             }
         },
         produce_wool_idle = {

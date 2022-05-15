@@ -50,8 +50,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_fire_tongs",
                 "call=produce_fishing_rod",
                 "call=produce_fishing_net",
-                "call=produce_hunting_bow",
-                "call=produce_hunting_spear",
                 "call=produce_bread_paddle",
                 "call=produce_hook_pole",
                 "call=produce_kitchen_tools",
@@ -167,30 +165,6 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
                 "produce=hook_pole:3"
-            }
-        },
-        produce_hunting_bow = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making a hunting bow because ...
-            descname = _"making a hunting bow",
-            actions = {
-                "return=skipped unless economy needs hunting_bow",
-                "consume=planks spidercloth",
-                "sleep=duration:10s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:25s",
-                "produce=hunting_bow:3"
-            }
-        },
-        produce_hunting_spear = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making a hunting spear because ...
-            descname = _"making a hunting spear",
-            actions = {
-                "return=skipped unless economy needs hunting_spear",
-                "consume=planks coal iron",
-                "sleep=duration:10s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:25s",
-                "produce=hunting_spear:3"
             }
         },
         produce_kitchen_tools = {

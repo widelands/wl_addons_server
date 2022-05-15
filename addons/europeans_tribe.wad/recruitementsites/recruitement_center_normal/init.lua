@@ -55,7 +55,6 @@ wl.Descriptions():new_productionsite_type {
         { name = "scythe", amount = 1 },
         { name = "milking_tongs", amount = 1 },
         { name = "fishing_rod", amount = 1 },
-        { name = "hunting_bow", amount = 1 },
         { name = "bread_paddle", amount = 1 },
         { name = "hook_pole", amount = 1 },
         { name = "kitchen_tools", amount = 1 },
@@ -73,7 +72,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_farmer",
                 "call=recruit_stonecutter",
                 "call=recruit_fisher",
-                "call=recruit_hunter",
                 "call=recruit_forester",
                 "call=recruit_claydigger",
                 "call=recruit_miner",
@@ -116,7 +114,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_carrier_2 or workers need experience",
                 "return=skipped when economy needs europeans_farmer_normal",
                 "return=skipped when economy needs europeans_miller_normal",
-                "return=skipped when economy needs europeans_hunter_normal",
                 "sleep=duration:10s",
                 "consume=basket europeans_carrier",
                 "animate=working duration:30s",
@@ -277,19 +274,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=hammer pick",
                 "animate=working duration:15s",
                 "recruit=europeans_geologist"
-            }
-        },
-        recruit_hunter = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting hunter"),
-            actions = {
-                "return=skipped unless economy needs europeans_hunter_normal",
-                "sleep=duration:5s",
-                "consume=europeans_carrier",
-                "sleep=duration:5s",
-                "consume=hunting_bow basket",
-                "animate=working duration:15s",
-                "recruit=europeans_hunter_normal"
             }
         },
         recruit_lumberjack = {

@@ -39,7 +39,6 @@ local init = {
                         europeans_miner_basic = 3,
                         europeans_trainer_basic = 2,
                         europeans_stonecutter_basic = 1,
-                        europeans_hunter_basic = 1,
                         europeans_fisher_basic = 1,
                         europeans_carpenter_basic = 1,
                         europeans_charcoal_burner_basic = 1,
@@ -93,8 +92,6 @@ local init = {
                 kitchen_tools = 3,
                 fishing_net = 2,
                 fishing_rod = 2,
-                hunting_bow = 2,
-                hunting_spear = 2,
                 armor = 7,
                 tabard = 7,
                 spear_wooden = 7
@@ -108,7 +105,6 @@ local init = {
                 europeans_forester_basic = 4,
                 europeans_trainer_basic = 2,
                 europeans_stonecutter_basic = 2,
-                europeans_hunter_basic = 2,
                 europeans_fisher_basic = 2,
                 europeans_carpenter_basic = 2,
                 europeans_charcoal_burner_basic = 2,
@@ -163,8 +159,6 @@ local init = {
             port:set_wares("kitchen_tools", math.ceil(3 / #ports))
             port:set_wares("fishing_net", math.ceil(3 / #ports))
             port:set_wares("fishing_rod", math.ceil(3 / #ports))
-            port:set_wares("hunting_bow", math.ceil(3 / #ports))
-            port:set_wares("hunting_spear", math.ceil(3 / #ports))
             port:set_wares("armor", math.ceil(7 / #ports))
             port:set_wares("tabard", math.ceil(7 / #ports))
             port:set_wares("spear_wooden", math.ceil(7 / #ports))

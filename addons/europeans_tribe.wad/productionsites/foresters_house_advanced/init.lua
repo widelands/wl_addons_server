@@ -19,7 +19,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_forester_advanced = 1
+        europeans_forester_advanced = 1,
+        europeans_forester_basic = 1
     },
 
     inputs = {
@@ -44,7 +45,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant",
-                "sleep=duration:10s"
+                "sleep=duration:5s"
             }
         },
         plant_trees_idle = {
@@ -55,7 +56,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "consume=water",
                 "callworker=plant",
-                "sleep=duration:60s"
+                "sleep=duration:30s"
             }
         },
     },

@@ -283,7 +283,7 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an europeans ware: Meat, part 1
-                        pgettext("europeans_ware", "Meat contains a lot of energy, and it is obtained from wild game taken by hunters."),
+                        pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced  in piggeries."),
                         -- TRANSLATORS: Helptext for an europeans ware: Meat, part 2
                         pgettext("europeans_ware", "Taverns and Inns need meat or fish to prepare ration, snack or meal.")
                     }
@@ -711,32 +711,6 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an europeans ware: Fishing Net, part 1
                         pgettext("europeans_ware", "The fishing net is used by the fisher alongsite with fishing rod."),
                         -- TRANSLATORS: Helptext for an europeans ware: Fishing Net, part 2
-                        pgettext("europeans_ware", "They are produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "hunting_spear",
-                default_target_quantity = 1,
-                preciousness = 2,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 1
-                        pgettext("europeans_ware", "This spear is light enough to be thrown, but heavy enough to kill any animal in one blow. It is only used by hunters."),
-                        -- TRANSLATORS: Helptext for an europeans ware: Hunting Spear, part 2
-                        pgettext("europeans_ware", "They are produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "hunting_bow",
-                default_target_quantity = 1,
-                preciousness = 2,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 1
-                        pgettext("europeans_ware", "This bow is used by the hunter."),
-                        -- TRANSLATORS: Helptext for an europeans ware: Hunting Bow, part 2
                         pgettext("europeans_ware", "They are produced by all smithies.")
                     }
                 }
@@ -1412,33 +1386,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an europeans worker: Carrier
                     purpose = pgettext("europeans_worker", "Catches fish in the sea or in pond.")
-                }
-            },
-            {
-                name = "europeans_hunter_basic",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an europeans worker: Carrier
-                    purpose = pgettext("europeans_worker", "The hunter brings fresh, raw meat to the colonists.")
-                }
-            },
-            {
-                name = "europeans_hunter_normal",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an europeans worker: Carrier
-                    purpose = pgettext("europeans_worker", "The hunter brings fresh, raw meat to the colonists.")
-                }
-            },
-            {
-                name = "europeans_hunter_advanced",
-                default_target_quantity = 2,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an europeans worker: Carrier
-                    purpose = pgettext("europeans_worker", "The hunter brings fresh, raw meat to the colonists.")
                 }
             },
             {
@@ -2627,33 +2574,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_hunters_house_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a europeans production site: Hunter's Hut
-                purpose = pgettext("europeans_building", "Hunts animals to produce meat."),
-                -- TRANSLATORS: Note helptext for a europeans production site: Hunter's Hut
-                note = pgettext("europeans_building", "The hunter’s hut needs animals to hunt within the work area."),
-            }
-        },
-        {
-            name = "europeans_hunters_house_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Hunter's House
-                purpose = pgettext("europeans_building", "Hunts animals to produce meat."),
-                -- TRANSLATORS: Note helptext for an europeans production site: Hunter's House
-                note = pgettext("europeans_building", "The hunter’s house needs animals to hunt within the work area.")
-            }
-        },
-        {
-            name = "europeans_hunters_house_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Hunter's House
-                purpose = pgettext("europeans_building", "Hunts animals to produce meat."),
-                -- TRANSLATORS: Note helptext for an europeans production site: Hunter's House
-                note = pgettext("europeans_building", "The hunter’s house needs animals to hunt within the work area.")
-            }
-        },
-        {
             name = "europeans_beekeepers_house",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a europeans production site: Beekeeper's House
@@ -2813,6 +2733,13 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Mill
                 purpose = pgettext("europeans_building", "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed flour.")
+            }
+        },
+               {
+            name = "europeans_fish_farm",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Fish Farm
+                purpose = pgettext("europeans_building", "Breeds and produces fish for food production.")
             }
         },
         {
@@ -2993,6 +2920,13 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "europeans_animal_farm_piggery",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Piggery
+                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additional producing meat for food production.")
+            }
+        },
+        {
             name = "europeans_farm_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Farm
@@ -3031,7 +2965,7 @@ wl.Descriptions():new_tribe {
             name = "europeans_sheepfarm",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
-                purpose = pgettext("europeans_building", "Keeps sheep for their wool.")
+                purpose = pgettext("europeans_building", "Keeps sheep for their wool. Additional producing meat from sheep for food prodution.")
             }
         },
 

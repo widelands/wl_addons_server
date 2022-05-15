@@ -23,7 +23,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_carpenter_advanced = 1
+        europeans_carpenter_advanced = 1,
+        europeans_carpenter_basic = 1
     },
 
     inputs = {
@@ -47,9 +48,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs planks",
                 "consume=log:4",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:15s",
+                "animate=working duration:10s",
                 "produce=planks:3"
             }
         },
@@ -59,9 +60,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs blackwood",
                 "consume=log:4",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:15s",
+                "animate=working duration:10s",
                 "produce=blackwood:3"
             }
         },

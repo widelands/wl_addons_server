@@ -19,6 +19,21 @@ wl.Descriptions():new_productionsite_type {
             hotspot = { 85, 78 },
         },
     },
+    
+    enhancement = {
+        name = "europeans_animal_farm_piggery",
+        enhancement_cost = {
+            planks = 2,
+            brick = 1,
+            grout = 1,
+            marble_column = 1
+        },
+        enhancement_return_on_dismantle = {
+            granite = 1,
+            marble = 1,
+            planks = 1
+        }
+    },
 
     aihints = {},
 

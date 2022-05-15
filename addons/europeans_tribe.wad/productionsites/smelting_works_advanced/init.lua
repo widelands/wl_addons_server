@@ -28,7 +28,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_smelter_advanced = 1
+        europeans_smelter_advanced = 1,
+        europeans_smelter_basic = 1
     },
 
     inputs = {
@@ -58,9 +59,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coal",
                 "return=skipped unless site has scrap_iron:2",
                 "consume=scrap_iron:2 coal:2",
-                "sleep=duration:30s",
+                "sleep=duration:5s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:35s",
+                "animate=working duration:20s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron:2"
             }
@@ -72,9 +73,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coal",
                 "return=skipped unless site has scrap_metal_mixed:3",
                 "consume=scrap_metal_mixed:3 coal:3",
-                "sleep=duration:30s",
+                "sleep=duration:5s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:35s",
+                "animate=working duration:20s",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=iron gold:2"
             }
@@ -86,9 +87,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs iron",
                 "return=skipped unless site has coal:3",
                 "consume=ore:3 coal:3",
-                "sleep=duration:20s",
+                "sleep=duration:5s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:35s",
+                "animate=working duration:20s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron:3",
             }
@@ -100,9 +101,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs gold",
                 "return=skipped unless site has coal:2",
                 "consume=ore:2 coal:2",
-                "sleep=duration:20s",
+                "sleep=duration:5s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:35s",
+                "animate=working duration:20s",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=gold"
             }

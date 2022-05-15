@@ -23,7 +23,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_claydigger_advanced = 1
+        europeans_claydigger_advanced = 1,
+        europeans_claydigger_basic = 1
     },
 
     inputs = {
@@ -50,8 +51,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "callworker=dig",
                 "consume=water",
-                "sleep=duration:10s",
-                "animate=working duration:15s",
+                "sleep=duration:5s",
+                "animate=working duration:10s",
                 "sleep=duration:1s",
                 "produce=clay"
             }
@@ -66,7 +67,7 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=dig",
                 "consume=water",
                 "sleep=duration:10s",
-                "animate=working duration:15s",
+                "animate=working duration:10s",
             }
         }
     },

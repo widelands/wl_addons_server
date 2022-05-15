@@ -24,7 +24,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_miller_advanced = 1
+        europeans_miller_advanced = 1,
+        europeans_miller_basic = 1
     },
 
     inputs = {
@@ -47,10 +48,10 @@ wl.Descriptions():new_productionsite_type {
             descname = _"grinding rye and wheat",
             actions = {
                 "return=skipped unless economy needs flour",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "consume=wheat:4 rye:4",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:40s",
+                "animate=working duration:20s",
                 "produce=flour:7"
             }
         },

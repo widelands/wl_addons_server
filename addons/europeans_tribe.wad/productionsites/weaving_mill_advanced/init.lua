@@ -32,7 +32,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_weaver_advanced = 1
+        europeans_weaver_advanced = 1,
+        europeans_weaver_basic = 1
     },
 
     inputs = {
@@ -60,9 +61,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs cloth",
                 "consume=reed:3",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=cloth:3"
             }
         },
@@ -72,9 +73,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs spidercloth",
                 "consume=spider_silk:3",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=spidercloth:3"
             }
         },
@@ -84,9 +85,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs tabard",
                 "consume=spider_silk:2",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=tabard:2"
             }
         },
@@ -96,9 +97,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs armor",
                 "consume=wool:2",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "sleep=duration:5s",
                 "produce=armor:2"
             }
