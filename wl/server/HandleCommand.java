@@ -897,6 +897,13 @@ public class HandleCommand {
 			File tempDir = Files.createTempDirectory(null).toFile();
 
 			try {
+				ResultSet sql = Utils.sql(Utils.Databases.kAddOns, "select edit_timestamp from addons where name=?", cmd[1]);
+				if (sql.next() && timestamp - sql.getLong("edit_timestamp") < 60 * 60 * 24 * 3) {
+					throw new ServerUtils.WLProtocolException(
+						"Please do not upload updates for an add-on more often than every three days. "
+						+ "In urgent cases please contact the Widelands Development Team.");
+				}
+
 				if (commandVersion == 1) {
 					doHandleCmdSubmit_V1(tempDir);
 				} else {
@@ -919,7 +926,7 @@ public class HandleCommand {
 					diff =
 					    Utils.bashOutput("diff", "-r", "-u", addOnDir.getPath(), tempDir.getPath());
 
-					ResultSet sql =
+					sql =
 					    Utils.sql(Utils.Databases.kAddOns,
 					              "select id,security,quality from addons where name=?", cmd[1]);
 					sql.next();
@@ -942,7 +949,7 @@ public class HandleCommand {
 				}
 
 				for (Long user : ServerUtils.getNotificationSubscribers("new", null)) {
-					ResultSet sql = Utils.sql(
+					sql = Utils.sql(
 					    Utils.Databases.kWebsite, "select email from auth_user where id=?", user);
 					sql.next();
 					Utils.sendEMail(
