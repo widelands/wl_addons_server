@@ -46,6 +46,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=recruit_soldier",
+                "call=recruit_trainer",
                 "return=skipped"
             }
         },
@@ -58,6 +59,17 @@ wl.Descriptions():new_productionsite_type {
                 "consume=armor:2 spear_wooden:2 meal:2 wine:2 europeans_recruit:2 quartz diamond",
                 "animate=working duration:60s",
                 "recruit=europeans_soldier:2"
+            }
+        },
+         recruit_trainer= {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+            descname = pgettext("europeans_building", "recruiting trainer"),
+            actions = {
+                "return=skipped unless economy needs europeans_trainer_advanced",
+                "sleep=duration:10s",
+                "consume=armor spear_wooden meal wine europeans_recruit quartz,diamond",
+                "animate=working duration:60s",
+                "recruit=europeans_trainer_advanced"
             }
         },
     },

@@ -19,7 +19,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_lumberjack_advanced = 1
+        europeans_lumberjack_advanced = 1,
+        europeans_lumberjack_basic = 1
     },
 
     programs = {
@@ -28,7 +29,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"felling trees",
             actions = {
                 "callworker=harvest",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "produce=log"
             }
         },

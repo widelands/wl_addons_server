@@ -21,7 +21,7 @@ local init = {
     end
     
     -- forbid all advanced buildings, execpt for quarry and stonemasons house
-    player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_hunters_house_advanced", "europeans_fishers_house_advanced", "europeans_well_level_4", "europeans_well_level_5"}
+    player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_well_level_4", "europeans_well_level_5"}
     player:forbid_buildings{"europeans_farm_level_3", "europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", "europeans_inn_level_2", "europeans_inn_level_1"}
     player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_sawmill_advanced", "europeans_smelting_works_advanced", "europeans_weaving_mill_advanced" }
     player:forbid_buildings{"europeans_toolsmithy_advanced", "europeans_armorsmithy_advanced", "europeans_trainingscamp_level_4", "europeans_battlearena_level_4", "europeans_battlearena_level_3"}    
@@ -38,7 +38,6 @@ local init = {
             blackwood = 15,
             cloth = 15,
             planks = 15,
-            spidercloth = 15,
             marble = 15,
             marble_column = 7,
             quartz = 7,
@@ -46,7 +45,7 @@ local init = {
             iron = 3,
             gold = 3,
             buckets = 15,
-            basket = 12,
+            basket = 15,
             pick = 7,
             saw = 7,
             hammer = 7,
@@ -54,15 +53,10 @@ local init = {
             shovel = 5,
             felling_ax = 5,
             fire_tongs = 5,
-            milking_tongs = 3,
             needles = 3,
             bread_paddle = 3,
             hook_pole = 3,
             kitchen_tools = 3,
-            fishing_net = 3,
-            fishing_rod = 3,
-            hunting_bow = 3,
-            hunting_spear = 3,
             armor = 5,
             tabard = 5,
             spear_wooden = 5
@@ -76,8 +70,6 @@ local init = {
             europeans_forester_basic = 4,
             europeans_trainer_basic = 2,
             europeans_stonecutter_basic = 2,
-            europeans_hunter_basic = 2,
-            europeans_fisher_basic = 2,
             europeans_carpenter_basic = 2,
             europeans_charcoal_burner_basic = 2,
             europeans_smith_basic = 2,

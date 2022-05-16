@@ -24,7 +24,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_terraformer_advanced = 1
+        europeans_terraformer_advanced = 1,
+        europeans_terraformer_basic = 1
     },
 
     inputs = {
@@ -51,7 +52,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless site has water:2",
                 "consume=meal wine",
-                "sleep=duration:15s",
+                "sleep=duration:10s",
                 "consume=water:2",
                 "callworker=terraform_land",
             }
@@ -61,7 +62,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"terraforming coast",
             actions = {
                 "consume=meal wine",
-                "sleep=duration:15s",
+                "sleep=duration:10s",
                 "callworker=terraform_coast"
             }
         }

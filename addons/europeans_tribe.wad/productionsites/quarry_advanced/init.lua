@@ -20,7 +20,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_stonecutter_advanced = 1
+        europeans_stonecutter_advanced = 1,
+        europeans_stonecutter_basic = 1
     },
 
     programs = {
@@ -68,7 +69,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"quarrying granite",
             actions = {
                 "callworker=cut_granite",
-                "sleep=duration:10s"
+                "sleep=duration:5s"
             }
         },
         cut_marble = {
@@ -76,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"quarrying marble",
             actions = {
                 "callworker=cut_marble",
-                "sleep=duration:10s"
+                "sleep=duration:5s"
             }
         },
         mine_granite = {
@@ -84,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"mining granite",
             actions = {
                 "callworker=mine_granite",
-                "sleep=duration:10s"
+                "sleep=duration:5s"
             }
         },
         mine_marble = {
@@ -92,7 +93,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"mining marble",
             actions = {
                 "callworker=mine_marble",
-                "sleep=duration:10s"
+                "sleep=duration:5s"
             }
         },
         mine_quartz = {
@@ -100,7 +101,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"mining quartz",
             actions = {
                 "callworker=mine_quartz",
-                "sleep=duration:10s"
+                "sleep=duration:5s"
             }
         },
         mine_diamond = {
@@ -108,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"mining diamond",
             actions = {
                 "callworker=mine_diamond",
-                "sleep=duration:10s"
+                "sleep=duration:5s"
             }
         },
     },

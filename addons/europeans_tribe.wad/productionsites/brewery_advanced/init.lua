@@ -38,7 +38,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_brewer_advanced = 1
+        europeans_brewer_advanced = 1,
+        europeans_brewer_basic = 1
     },
 
     inputs = {
@@ -69,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs beer",
                 "return=skipped unless site has water:3",
                 "consume=water:3 barley:3",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "animate=working duration:60s",
                 "produce=beer:3"
             }
@@ -84,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
                 "return=skipped unless site has water:3",
                 "consume=water:3 barley:3 honey:3",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "animate=working duration:60s",
                 "produce=mead:3"
             }
@@ -99,7 +100,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when site has honey and economy needs mead and not economy needs beer_strong",
                 "return=skipped unless site has water:4",
                 "consume=water:4 barley:4",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "animate=working duration:80s",
                 "produce=beer_strong:3"
             }

@@ -48,7 +48,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 4 },
-        { name = "spidercloth", amount = 4 },
+        { name = "cloth", amount = 4 },
         { name = "armor", amount = 4 },
         { name = "coal", amount = 4 },
         { name = "iron", amount = 4 },
@@ -166,7 +166,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"forging a suit of golden tabard",
             actions = {
                 "return=skipped unless economy needs tabard_golden",
-                "consume=spidercloth coal iron gold",
+                "consume=cloth coal iron gold",
                 "sleep=duration:10s",
                 "animate=working duration:30s",
                 "produce=tabard_golden"
@@ -210,12 +210,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs fire_tongs",
                 "return=skipped when economy needs scythe",
                 "return=skipped when economy needs basket",
-                "return=skipped when economy needs milking_tongs",
                 "return=skipped when economy needs needles",
-                "return=skipped when economy needs fishing_rod",
-                "return=skipped when economy needs fishing_net",
-                "return=skipped when economy needs hunting_bow",
-                "return=skipped when economy needs hunting_spear",
                 "return=skipped when economy needs bread_paddle",
                 "return=skipped when economy needs hook_pole",
                 "return=skipped when economy needs kitchen_tools",
@@ -234,7 +229,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs iron",
                 "return=skipped when economy needs gold",
                 "sleep=duration:120s",
-                "consume=armor spidercloth coal:2 iron:2 gold:2",
+                "consume=armor cloth coal:2 iron:2 gold:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:45s",
                 "produce=armor_gilded",

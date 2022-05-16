@@ -34,7 +34,6 @@ init = {
             cloth = 31,
             blackwood = 31,
             planks = 15,
-            spidercloth = 15,
             marble = 15,
             marble_column = 15,
             iron = 7,
@@ -50,15 +49,10 @@ init = {
             shovel = 9,
             felling_ax = 9,
             fire_tongs = 7,
-            milking_tongs = 3,
             needles = 3,
             bread_paddle = 3,
             hook_pole = 3,
             kitchen_tools = 3,
-            fishing_net = 3,
-            fishing_rod = 3,
-            hunting_bow = 3,
-            hunting_spear = 3,
             armor = 7,
             tabard = 7,
             spear_wooden = 7
@@ -93,9 +87,9 @@ init = {
         inputs = {log = 12},
     })
     place_building_in_region(player, "europeans_weaving_mill_advanced", sf:region(12), {
-        inputs = {reed = 6, spider_silk = 6},
+        inputs = {reed = 6},
     })
-    place_building_in_region(player, "europeans_spiderfarm", sf:region(12), {
+    place_building_in_region(player, "europeans_fish_farm", sf:region(12), {
         inputs = {water = 6, corn = 6},
     })
     place_building_in_region(player, "europeans_sheepfarm", sf:region(12), {

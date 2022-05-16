@@ -9,8 +9,6 @@ wl.Descriptions():new_worker_type {
     animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
-    
-    buildcost = { europeans_stonecutter_advanced = 1, shovel = 1 },
         
     spritesheets = {
         idle = {

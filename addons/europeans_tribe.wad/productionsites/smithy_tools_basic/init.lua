@@ -82,11 +82,9 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_saw",
                 "call=produce_hammer",
                 "call=produce_fire_tongs",
-                "call=produce_hunting_spear",
                 "call=produce_bread_paddle",
                 "call=produce_hook_pole",
                 "call=produce_kitchen_tools",
-                "call=produce_milking_tongs",
                 "call=produce_needles",
                 "call=produce_idle",
                 "return=skipped"
@@ -188,32 +186,8 @@ wl.Descriptions():new_productionsite_type {
                 "produce=kitchen_tools:2"
             }
         },
-        produce_hunting_spear = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making a hunting spear because ...
-            descname = _"making a hunting spear",
-            actions = {
-                "return=skipped unless economy needs hunting_spear",
-                "consume=planks coal iron",
-                "sleep=duration:10s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:60s",
-                "produce=hunting_spear:2"
-            }
-        },
-        produce_milking_tongs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
-            descname = _"making milking tongs",
-            actions = {
-                "return=skipped unless economy needs milking_tongs",
-                "consume=planks coal iron",
-                "sleep=duration:10s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:60s",
-                "produce=milking_tongs:2"
-            }
-        },
         produce_needles = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start making needles because ...
             descname = _"making needles",
             actions = {
                 "return=skipped unless economy needs needles",
@@ -285,7 +259,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs fire_tongs",
                 "return=skipped when economy needs scythe",
                 "return=skipped when economy needs basket",
-                "return=skipped when economy needs milking_tongs",
                 "return=skipped when economy needs needles",
                 "return=skipped when economy needs hunting_spear",
                 "return=skipped when economy needs bread_paddle",

@@ -29,7 +29,6 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 4 },
-        { name = "spidercloth", amount = 4 },
         { name = "coal", amount = 4 },
         { name = "iron", amount = 4 }
     },
@@ -48,14 +47,9 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_saw",
                 "call=produce_hammer",
                 "call=produce_fire_tongs",
-                "call=produce_fishing_rod",
-                "call=produce_fishing_net",
-                "call=produce_hunting_bow",
-                "call=produce_hunting_spear",
                 "call=produce_bread_paddle",
                 "call=produce_hook_pole",
                 "call=produce_kitchen_tools",
-                "call=produce_milking_tongs",
                 "call=produce_needles",
                 "call=produce_idle",
                 "return=skipped"
@@ -121,30 +115,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=fire_tongs:3"
             }
         },
-        produce_fishing_net = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making a fishing net because ...
-            descname = _"making a fishing net",
-            actions = {
-                "return=skipped unless economy needs fishing_net",
-                "consume=spidercloth:3",
-                "sleep=duration:10s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:25s",
-                "produce=fishing_net:3"
-            }
-        },
-         produce_fishing_rod = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making a fishing rod because ...
-            descname = _"making a fishing rod",
-            actions = {
-                "return=skipped unless economy needs fishing_rod",
-                "consume=planks spidercloth",
-                "sleep=duration:10s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:25s",
-                "produce=fishing_rod:3"
-            }
-        },
         produce_hammer = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
             descname = _"making a hammer",
@@ -169,30 +139,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=hook_pole:3"
             }
         },
-        produce_hunting_bow = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making a hunting bow because ...
-            descname = _"making a hunting bow",
-            actions = {
-                "return=skipped unless economy needs hunting_bow",
-                "consume=planks spidercloth",
-                "sleep=duration:10s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:25s",
-                "produce=hunting_bow:3"
-            }
-        },
-        produce_hunting_spear = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making a hunting spear because ...
-            descname = _"making a hunting spear",
-            actions = {
-                "return=skipped unless economy needs hunting_spear",
-                "consume=planks coal iron",
-                "sleep=duration:10s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:25s",
-                "produce=hunting_spear:3"
-            }
-        },
         produce_kitchen_tools = {
             -- TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
             descname = _"making kitchen tools",
@@ -205,20 +151,8 @@ wl.Descriptions():new_productionsite_type {
                 "produce=kitchen_tools:3"
             }
         },
-        produce_milking_tongs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
-            descname = _"making milking tongs",
-            actions = {
-                "return=skipped unless economy needs milking_tongs",
-                "consume=planks coal iron",
-                "sleep=duration:10s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:25s",
-                "produce=milking_tongs:3"
-            }
-        },
         produce_needles = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making milking tongs because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start making needles because ...
             descname = _"making needles",
             actions = {
                 "return=skipped unless economy needs needles",
@@ -290,12 +224,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs fire_tongs",
                 "return=skipped when economy needs scythe",
                 "return=skipped when economy needs basket",
-                "return=skipped when economy needs milking_tongs",
                 "return=skipped when economy needs needles",
-                "return=skipped when economy needs fishing_rod",
-                "return=skipped when economy needs fishing_net",
-                "return=skipped when economy needs hunting_bow",
-                "return=skipped when economy needs hunting_spear",
                 "return=skipped when economy needs bread_paddle",
                 "return=skipped when economy needs hook_pole",
                 "return=skipped when economy needs kitchen_tools",

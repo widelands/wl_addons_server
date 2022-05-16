@@ -65,9 +65,6 @@ wl.Descriptions():new_productionsite_type {
         { name = "fire_tongs", amount = 1 },
         { name = "needles", amount = 1 },
         { name = "scythe", amount = 1 },
-        { name = "milking_tongs", amount = 1 },
-        { name = "fishing_rod", amount = 1 },
-        { name = "hunting_spear", amount = 1 },
         { name = "bread_paddle", amount = 1 },
         { name = "hook_pole", amount = 1 },
         { name = "kitchen_tools", amount = 1 },
@@ -83,8 +80,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_lumberjack",
                 "call=recruit_farmer",
                 "call=recruit_stonecutter",
-                "call=recruit_fisher",
-                "call=recruit_hunter",
                 "call=recruit_forester",
                 "call=recruit_claydigger",
                 "call=recruit_miner",
@@ -105,6 +100,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_scout",
                 "call=recruit_trainer",
                 "call=recruit_carrier_1",
+                "call=recruit_smith_workarround",
                 "return=skipped"
             }
         },
@@ -153,7 +149,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
-                "consume=milking_tongs buckets",
+                "consume=basket buckets",
                 "animate=working duration:15s",
                 "recruit=europeans_breeder_basic"
             }
@@ -236,19 +232,6 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_farmer_basic"
             }
         },
-        recruit_fisher = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting fisher"),
-            actions = {
-                "return=skipped unless economy needs europeans_fisher_basic",
-                "sleep=duration:5s",
-                "consume=europeans_carrier",
-                "sleep=duration:5s",
-                "consume=fishing_rod",
-                "animate=working duration:15s",
-                "recruit=europeans_fisher_basic"
-            }
-        },
         recruit_forester = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting forester"),
@@ -273,19 +256,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=hammer pick",
                 "animate=working duration:15s",
                 "recruit=europeans_geologist"
-            }
-        },
-        recruit_hunter = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting hunter"),
-            actions = {
-                "return=skipped unless economy needs europeans_hunter_basic",
-                "sleep=duration:5s",
-                "consume=europeans_carrier",
-                "sleep=duration:5s",
-                "consume=hunting_spear",
-                "animate=working duration:15s",
-                "recruit=europeans_hunter_basic"
             }
         },
         recruit_lumberjack = {
@@ -373,6 +343,21 @@ wl.Descriptions():new_productionsite_type {
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
                 "consume=fire_tongs hammer saw",
+                "animate=working duration:15s",
+                "recruit=europeans_smith_basic"
+            }
+        },
+        recruit_smith_workarround = { -- recruit a smith, if tools smithies are not fully occupied and the economy of AI stalls, because lack of hammer and saw
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+            descname = pgettext("europeans_building", "recruiting smith"),
+            actions = {
+                "return=skipped unless economy needs europeans_smith_basic",
+                "return=skipped unless economy needs hammer",
+                "return=skipped unless economy needs saw",
+                "sleep=duration:5s",
+                "consume=europeans_carrier",
+                "sleep=duration:5s",
+                "consume=fire_tongs",
                 "animate=working duration:15s",
                 "recruit=europeans_smith_basic"
             }

@@ -23,7 +23,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_charcoal_burner_advanced = 1
+        europeans_charcoal_burner_advanced = 1,
+        europeans_charcoal_burner_basic = 1
     },
 
     inputs = {
@@ -50,8 +51,8 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs coal",
                 "consume=log:12",
-                "sleep=duration:10s",
-                "animate=working duration:2m",
+                "sleep=duration:5s",
+                "animate=working duration:1m30s",
                 "produce=coal:5",
             }
         },
@@ -62,8 +63,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs coal",
                 "return=skipped when economy needs blackwood",
                 "consume=blackwood:6",
-                "sleep=duration:10s",
-                "animate=working duration:2m", -- Charcoal fires will burn for some days in real life
+                "sleep=duration:5s",
+                "animate=working duration:1m30s", -- Charcoal fires will burn for some days in real life
                 "produce=coal:3"
             }
         },
@@ -74,8 +75,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs coal",
                 "return=skipped when economy needs planks",
                 "consume=planks:6",
-                "sleep=duration:10s",
-                "animate=working duration:2m", -- Charcoal fires will burn for some days in real life
+                "sleep=duration:5s",
+                "animate=working duration:1m30s", -- Charcoal fires will burn for some days in real life
                 "produce=coal:3"
             }
         },

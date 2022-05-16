@@ -34,7 +34,6 @@ init = {
             blackwood = 15,
             cloth = 15,
             planks = 15,
-            spidercloth = 15,
             marble = 15,
             marble_column = 7,
             iron = 3,
@@ -42,7 +41,7 @@ init = {
             quartz = 15,
             diamond = 15,
             buckets = 15,
-            basket = 12,
+            basket = 15,
             pick = 12,
             saw = 9,
             hammer = 9,
@@ -50,15 +49,10 @@ init = {
             shovel = 9,
             felling_ax = 9,
             fire_tongs = 7,
-            milking_tongs = 3,
             needles = 3,
             bread_paddle = 3,
             hook_pole = 3,
             kitchen_tools = 3,
-            fishing_net = 3,
-            fishing_rod = 3,
-            hunting_bow = 3,
-            hunting_spear = 3,
             armor = 7,
             tabard = 7,
             spear_wooden = 7
@@ -86,9 +80,9 @@ init = {
         inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 4},
     })
     place_building_in_region(player, "europeans_weaving_mill_normal", sf:region(12), {
-        inputs = {spider_silk = 6, reed = 6},
+        inputs = {reed = 6},
     })
-    place_building_in_region(player, "europeans_spiderfarm", sf:region(12), {
+    place_building_in_region(player, "europeans_sheepfarm", sf:region(12), {
         inputs = {water = 6, corn = 6},
     })
     place_building_in_region(player, "europeans_reed_yard", sf:region(16), {

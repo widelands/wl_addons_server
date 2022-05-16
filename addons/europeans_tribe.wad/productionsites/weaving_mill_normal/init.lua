@@ -43,7 +43,6 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "reed", amount = 6 },
-        { name = "spider_silk", amount = 6 },
         { name = "wool", amount = 2 }
     },
 
@@ -53,10 +52,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_cloth",
-                "call=produce_spidercloth",
                 "call=produce_tabard",
                 "call=produce_armor",
-                "call=produce_spidercloth_idle",
+                "call=produce_armor_idle",
                 "return=skipped"
             }
         },
@@ -72,24 +70,12 @@ wl.Descriptions():new_productionsite_type {
                 "produce=cloth:3"
             }
         },
-        produce_spidercloth = {
-            -- TRANSLATORS: Completed/Skipped/Did not start weaving spidercloth because ...
-            descname = _"weaving spidercloth",
-            actions = {
-                "return=skipped unless economy needs spidercloth",
-                "consume=spider_silk:3",
-                "sleep=duration:10s",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:40s",
-                "produce=spidercloth:3"
-            }
-        },
         produce_tabard = {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
             descname = _"tailoring a tabard",
             actions = {
                 "return=skipped unless economy needs tabard",
-                "consume=spider_silk",
+                "consume=reed",
                 "sleep=duration:10s",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:40s",
@@ -109,19 +95,19 @@ wl.Descriptions():new_productionsite_type {
                 "produce=armor"
             }
         },
-        produce_spidercloth_idle = {
+        produce_armor_idle = {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs cloth",
-                "return=skipped when economy needs spidercloth",
                 "return=skipped when economy needs tabard",
                 "return=skipped when economy needs armor",
                 "sleep=duration:90s",
-                "consume=spider_silk",
+                "consume=reed wool",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:60s",
-                "produce=spidercloth"
+                "produce=tabard",
+                "animate=working duration:60s",
+                "produce=armor"
             }
         }
     },
