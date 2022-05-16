@@ -53,8 +53,6 @@ wl.Descriptions():new_productionsite_type {
         { name = "fire_tongs", amount = 1 },
         { name = "needles", amount = 1 },
         { name = "scythe", amount = 1 },
-        { name = "milking_tongs", amount = 1 },
-        { name = "fishing_rod", amount = 1 },
         { name = "bread_paddle", amount = 1 },
         { name = "hook_pole", amount = 1 },
         { name = "kitchen_tools", amount = 1 },
@@ -71,7 +69,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_lumberjack",
                 "call=recruit_farmer",
                 "call=recruit_stonecutter",
-                "call=recruit_fisher",
                 "call=recruit_forester",
                 "call=recruit_claydigger",
                 "call=recruit_miner",
@@ -154,7 +151,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
-                "consume=milking_tongs buckets",
+                "consume=basket buckets",
                 "animate=working duration:15s",
                 "recruit=europeans_breeder_normal"
             }
@@ -235,19 +232,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=scythe basket",
                 "animate=working duration:15s",
                 "recruit=europeans_farmer_normal"
-            }
-        },
-        recruit_fisher = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting fisher"),
-            actions = {
-                "return=skipped unless economy needs europeans_fisher_normal",
-                "sleep=duration:5s",
-                "consume=europeans_carrier",
-                "sleep=duration:5s",
-                "consume=fishing_rod buckets",
-                "animate=working duration:15s",
-                "recruit=europeans_fisher_normal"
             }
         },
         recruit_forester = {

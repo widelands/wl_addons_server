@@ -39,7 +39,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "blackwood", amount = 2 },
         { name = "planks", amount = 10 },
         { name = "reed", amount = 2 },
-        { name = "spidercloth", amount = 2 },
+        { name = "cloth", amount = 2 },
         { name = "quartz", amount = 1 },
         { name = "diamond", amount = 1 }
     },
@@ -60,7 +60,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when not site has blackwood",
                 "return=skipped when not site has planks",
-                "return=skipped when not site has spidercloth",
+                "return=skipped when not site has cloth",
                 "return=skipped when not site has quartz",
                 "return=skipped when not site has diamond",
                 "sleep=duration:15s",

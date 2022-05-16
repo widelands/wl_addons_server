@@ -14,8 +14,7 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_mill_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2,
-            spidercloth = 2
+            cloth = 4
         },
         enhancement_return_on_dismantle = {
             blackwood = 1

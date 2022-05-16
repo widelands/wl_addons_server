@@ -86,9 +86,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=buy_cloth_for_quartz",
                 "call=buy_cloth_for_diamond",
                 "call=buy_cloth_for_gold",
-                "call=buy_spidercloth_for_quartz",
-                "call=buy_spidercloth_for_diamond",
-                "call=buy_spidercloth_for_gold",
                 "call=buy_coal_for_quartz",
                 "call=buy_coal_for_diamond",
                 "call=buy_coal_for_gold",
@@ -384,42 +381,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=gold",
                 "animate=working duration:30s",
                 "produce=cloth:16"
-            }
-        },
-        buy_spidercloth_for_quartz = {
-            -- TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
-            descname = pgettext("europeans_building", "exchanging spidercloth and quartz"),
-            actions = {
-                "return=skipped unless economy needs spidercloth",
-                "return=skipped when economy needs quartz",
-                "sleep=duration:10s",
-                "consume=quartz",
-                "animate=working duration:30s",
-                "produce=spidercloth:6"
-            }
-        },
-        buy_spidercloth_for_diamond = {
-            -- TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
-            descname = pgettext("europeans_building", "exchanging spidercloth and diamond"),
-            actions = {
-                "return=skipped unless economy needs spidercloth",
-                "return=skipped when economy needs diamond",
-                "sleep=duration:10s",
-                "consume=diamond",
-                "animate=working duration:30s",
-                "produce=spidercloth:12"
-            }
-        },
-        buy_spidercloth_for_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start exhanging wares because ...
-            descname = pgettext("europeans_building", "exchanging spidercloth and gold"),
-            actions = {
-                "return=skipped unless economy needs spidercloth",
-                "return=skipped when economy needs gold",
-                "sleep=duration:10s",
-                "consume=gold",
-                "animate=working duration:30s",
-                "produce=spidercloth:12"
             }
         },
         buy_coal_for_quartz = {

@@ -17,7 +17,7 @@ wl.Descriptions():new_immovable_type {
     buildcost = {
         planks = 10,
         blackwood = 2,
-        spidercloth = 4,
+        cloth = 4,
         quartz = 1,
         diamond = 1
     },

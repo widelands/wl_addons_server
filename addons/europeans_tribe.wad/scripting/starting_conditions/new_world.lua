@@ -39,7 +39,6 @@ local init = {
                         europeans_miner_basic = 3,
                         europeans_trainer_basic = 2,
                         europeans_stonecutter_basic = 1,
-                        europeans_fisher_basic = 1,
                         europeans_carpenter_basic = 1,
                         europeans_charcoal_burner_basic = 1,
                         europeans_stonemason_basic = 1,
@@ -69,7 +68,6 @@ local init = {
                 cloth = 31,
                 blackwood = 31,
                 planks = 15,
-                spidercloth = 15,
                 marble = 15,
                 marble_column = 7,
                 iron = 7,
@@ -85,13 +83,10 @@ local init = {
                 shovel = 5,
                 felling_ax = 5,
                 fire_tongs = 5,
-                milking_tongs = 3,
                 needles = 3,
                 bread_paddle = 3,
                 hook_pole = 3,
                 kitchen_tools = 3,
-                fishing_net = 2,
-                fishing_rod = 2,
                 armor = 7,
                 tabard = 7,
                 spear_wooden = 7
@@ -105,7 +100,6 @@ local init = {
                 europeans_forester_basic = 4,
                 europeans_trainer_basic = 2,
                 europeans_stonecutter_basic = 2,
-                europeans_fisher_basic = 2,
                 europeans_carpenter_basic = 2,
                 europeans_charcoal_burner_basic = 2,
                 europeans_smith_basic = 2,
@@ -136,7 +130,6 @@ local init = {
             port:set_wares("cloth", math.ceil(31 / #ports))
             port:set_wares("blackwood", math.ceil(31 / #ports))
             port:set_wares("planks", math.ceil(15 / #ports))
-            port:set_wares("spidercloth", math.ceil(15 / #ports))
             port:set_wares("marble", math.ceil(15 / #ports))
             port:set_wares("marble_column", math.ceil(7 / #ports))
             port:set_wares("iron", math.ceil(7 / #ports))
@@ -152,13 +145,10 @@ local init = {
             port:set_wares("shovel", math.ceil(5 / #ports))
             port:set_wares("felling_ax", math.ceil(5 / #ports))
             port:set_wares("fire_tongs", math.ceil(5 / #ports))
-            port:set_wares("milking_tongs", math.ceil(3 / #ports))
             port:set_wares("needles", math.ceil(3 / #ports))
             port:set_wares("bread_paddle", math.ceil(3 / #ports))
             port:set_wares("hook_pole", math.ceil(3 / #ports))
             port:set_wares("kitchen_tools", math.ceil(3 / #ports))
-            port:set_wares("fishing_net", math.ceil(3 / #ports))
-            port:set_wares("fishing_rod", math.ceil(3 / #ports))
             port:set_wares("armor", math.ceil(7 / #ports))
             port:set_wares("tabard", math.ceil(7 / #ports))
             port:set_wares("spear_wooden", math.ceil(7 / #ports))

@@ -7,7 +7,7 @@ wl.Descriptions():new_productionsite_type {
      -- TRANSLATORS: This is a building name used in lists of buildings
      descname = pgettext("europeans_building", "Fish Farm"),
     icon = dirname .. "menu.png",
-    size = "medium",
+    size = "big",
 
     buildcost = {
         blackwood = 2,
@@ -23,21 +23,15 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    animation_directory = dirname,
     animations = {
         idle = {
-            hotspot = { 54, 74 },
+            pictures = path.list_files(dirname .. "idle_??.png"),
+            hotspot = { 87, 75 },
         },
-    },
-
-    spritesheets = {
         working = {
-            fps = 20,
-            frames = 5,
-            columns = 5,
-            rows = 1,
-            hotspot = { 54, 74 },
-        },
+            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
+            hotspot = { 87, 75 },
+        }
     },
 
     aihints = {
@@ -48,7 +42,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_fisher_basic = 2
+        europeans_breeder_basic = 2
     },
 
     inputs = {
