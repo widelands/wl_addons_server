@@ -20,8 +20,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_stonecutter_advanced = 1,
-        europeans_stonecutter_basic = 1
+        europeans_stonecutter_advanced = 1
     },
 
     programs = {

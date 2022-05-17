@@ -59,6 +59,7 @@ local init = {
                 europeans_builder = 16,
                 europeans_farmer_basic = 12,
                 europeans_lumberjack_basic = 8,
+                europeans_breeder_basic = 6,
                 europeans_miner_basic = 6,
                 europeans_forester_basic = 6,
                 europeans_trainer_basic = 4,

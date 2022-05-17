@@ -65,6 +65,7 @@ local init = {
             europeans_carrier = 32,
             europeans_builder = 12,
             europeans_farmer_basic = 8,
+            europeans_breeder_basic = 4,
             europeans_lumberjack_basic = 4,
             europeans_miner_basic = 4,
             europeans_forester_basic = 4,

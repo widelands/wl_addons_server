@@ -38,50 +38,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=produce_cattle",
                 "call=produce_meat",
-                "call=produce_donkey",
                 "call=produce_meat",
-                "call=produce_horse",
+                "call=produce_meat",
                 "call=produce_wool",
-                "call=produce_meat",
+                "call=produce_meat_idle",
                 "return=skipped"
-            }
-        },
-        produce_cattle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
-            descname = pgettext("europeans_building", "rearing cattle"),
-            actions = {
-                "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
-                "consume=corn blackroot water",
-                "sleep=duration:10s",
-                "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:20s", -- Animation of feeding the cattle
-                "recruit=europeans_carrier_ox"
-            }
-        },
-        produce_donkey = {
-            -- TRANSLATORS: Completed/Skipped/Did not start rearing donkeys because ...
-            descname = pgettext("europeans_building", "rearing donkeys"),
-            actions = {
-                "return=skipped unless economy needs europeans_carrier_donkey or workers need experience",
-                "consume=corn blackroot water",
-                "sleep=duration:10s",
-                "playsound=sound/farm/donkey priority:50% allow_multiple",
-                "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
-                "recruit=europeans_carrier_donkey"
-            }
-        },
-        produce_horse = {
-            -- TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
-            descname = pgettext("europeans_building", "breeding horses"),
-            actions = {
-                "return=skipped unless economy needs europeans_carrier_horse or workers need experience",
-                "consume=corn blackroot water",
-                "sleep=duration:10s",
-                "playsound=sound/farm/horse priority:50% allow_multiple",
-                "animate=working duration:20s", -- Feeding cute little foals ;)
-                "recruit=europeans_carrier_horse"
             }
         },
         produce_meat = {
@@ -89,7 +51,7 @@ wl.Descriptions():new_productionsite_type {
            descname = pgettext("europeans_building", "raising pigs"),
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
-                "consume=corn:2 blackroot:2 water:2",
+                "consume=corn:2 blackroot:2 water:4",
                 "sleep=duration:10s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
@@ -106,6 +68,19 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=wool:3"
+           }
+        },
+        produce_meat_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+           actions = {
+                "return=skipped when economy needs meat",
+                "return=skipped when economy needs water",
+                "consume=corn blackroot water:2",
+                "sleep=duration:90s",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "produce=meat"
            }
         },
     },

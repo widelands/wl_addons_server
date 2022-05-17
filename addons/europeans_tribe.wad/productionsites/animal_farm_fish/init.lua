@@ -46,9 +46,9 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "corn", amount = 6 },
-        { name = "fruit", amount = 6 },
         { name = "water", amount = 6 },
+        { name = "corn", amount = 6 },
+        { name = "fruit", amount = 6 }
     },
 
     programs = {
@@ -67,7 +67,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fish or workers need experience",
                 "return=skipped unless site has water:2",
-                "consume=water:2 fruit:2 corn:2",
+                "consume=water:2 corn:2 fruit:2",
                 "sleep=duration:10s",
                 "animate=working duration:60s",
                 "produce=fish:3"
@@ -80,7 +80,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs fish",
                 "return=skipped when economy needs water",
                 "sleep=duration:90s",
-                "consume=water fruit corn",
+                "consume=water corn fruit",
                 "animate=working duration:60s",
                 "produce=fish"
             }

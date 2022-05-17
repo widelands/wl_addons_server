@@ -23,8 +23,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_claydigger_advanced = 1,
-        europeans_claydigger_basic = 1
+        europeans_claydigger_advanced = 1
     },
 
     inputs = {

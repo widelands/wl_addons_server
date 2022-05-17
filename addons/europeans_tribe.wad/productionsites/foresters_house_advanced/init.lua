@@ -19,8 +19,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_forester_advanced = 1,
-        europeans_forester_basic = 1
+        europeans_forester_advanced = 1
     },
 
     inputs = {

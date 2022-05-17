@@ -19,8 +19,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_lumberjack_advanced = 1,
-        europeans_lumberjack_basic = 1
+        europeans_lumberjack_advanced = 1
     },
 
     programs = {

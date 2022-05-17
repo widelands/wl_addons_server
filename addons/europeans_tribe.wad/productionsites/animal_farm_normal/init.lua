@@ -12,15 +12,15 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_animal_farm_advanced",
         enhancement_cost = {
-            planks = 1,
-            brick = 1,
-            grout = 1,
-            marble_column = 1
+            planks = 3,
+            brick = 3,
+            grout = 3,
+            marble_column = 2
         },
         enhancement_return_on_dismantle = {
-            granite = 1,
-            marble = 1,
-            planks = 1
+            granite = 3,
+            marble = 2,
+            planks = 2
         }
     },
 
@@ -38,7 +38,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_breeder_normal = 1
+        europeans_breeder_normal = 1,
+        europeans_breeder_basic = 1
     },
 
     inputs = {

@@ -42,8 +42,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_stonemason_normal = 1,
-        europeans_stonemason_advanced = 1
+        europeans_stonemason_advanced = 1,
+        europeans_stonemason_basic = 1
     },
 
     inputs = {

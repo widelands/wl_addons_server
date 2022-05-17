@@ -38,8 +38,9 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_farmer_normal = 2,
-        europeans_farmer_advanced = 1
+        europeans_farmer_advanced = 1,
+        europeans_farmer_normal = 1,
+        europeans_farmer_basic = 1
     },
 
     inputs = {

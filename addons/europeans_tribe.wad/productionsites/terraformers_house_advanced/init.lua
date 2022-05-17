@@ -24,8 +24,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_terraformer_advanced = 1,
-        europeans_terraformer_basic = 1
+        europeans_terraformer_advanced = 1
     },
 
     inputs = {

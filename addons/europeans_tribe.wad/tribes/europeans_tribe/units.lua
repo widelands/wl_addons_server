@@ -264,7 +264,7 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an europeans ware: Meat, part 1
-                        pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced  in piggeries."),
+                        pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms."),
                         -- TRANSLATORS: Helptext for an europeans ware: Meat, part 2
                         pgettext("europeans_ware", "Taverns and Inns need meat or fish to prepare ration, snack or meal.")
                     }
@@ -2788,35 +2788,35 @@ wl.Descriptions():new_tribe {
             name = "europeans_animal_farm_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a europeans production site: Cattle Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additional producing meat for food production."),
+                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat for food production."),
             }
         },
         {
             name = "europeans_animal_farm_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Donkey Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additional producing meat for food production.")
+                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally produces meat for food production.")
             }
         },
         {
             name = "europeans_animal_farm_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Horse Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additional producing meat for food production.")
+                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additionally produces meat for food production.")
             }
         },
         {
-            name = "europeans_animal_farm_piggery",
+            name = "europeans_piggery",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Piggery
-                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additional producing meat for food production.")
+                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additionally produces meat for food production.")
             }
         },
         {
             name = "europeans_sheepfarm",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
-                purpose = pgettext("europeans_building", "Keeps sheep for their wool. Additional producing meat from sheep for food prodution.")
+                purpose = pgettext("europeans_building", "Keeps sheep for their wool. Additionally produces meat from sheep for food prodution.")
             }
         },
         {

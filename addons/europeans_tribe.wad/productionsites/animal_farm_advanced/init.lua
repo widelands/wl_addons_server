@@ -20,24 +20,11 @@ wl.Descriptions():new_productionsite_type {
         },
     },
     
-    enhancement = {
-        name = "europeans_animal_farm_piggery",
-        enhancement_cost = {
-            planks = 1,
-            brick = 1,
-            grout = 1,
-            marble_column = 1
-        },
-        enhancement_return_on_dismantle = {
-            granite = 1,
-            marble = 1
-        }
-    },
-
     aihints = {},
 
     working_positions = {
-        europeans_breeder_advanced = 1
+        europeans_breeder_advanced = 1,
+        europeans_breeder_basic = 1
     },
 
     inputs = {
