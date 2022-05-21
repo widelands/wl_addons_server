@@ -53,9 +53,11 @@ wl.Descriptions():new_productionsite_type {
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
-            descname = _"mining coal",
+            descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs coal or economy needs granite or economy needs diamond or workers need experience",
+                "return=skipped unless site has snack:2",
+                "return=skipped unless site has mead:2",
                 "consume=snack mead",
                 "sleep=duration:5s",
                 "call=mine_stone",
@@ -70,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         mine_coal = {
-            descname = _"mining coal",
+            descname = pgettext("europeans_building", "mining coal"),
             actions = {
                 "animate=working duration:30s",
                 "mine=resource_coal radius:8 yield:90% when_empty:15% experience_on_fail:10%",
@@ -78,7 +80,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         mine_stone = {
-            descname = _"mining granite",
+            descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:30s",
                 "mine=resource_coal radius:8 yield:90% when_empty:15% experience_on_fail:10%",
@@ -86,7 +88,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         mine_diamond = {
-            descname = _"mining diamond",
+            descname = pgettext("europeans_building", "mining diamond"),
             actions = {
                 "animate=working duration:30s",
                 "mine=resource_coal radius:8 yield:90% when_empty:15% experience_on_fail:10%",

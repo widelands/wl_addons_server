@@ -38,7 +38,7 @@ wl.Descriptions():new_productionsite_type {
         },
         mining_water = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining water because ...
-            descname = _"mining water",
+            descname = pgettext("europeans_building", "mining water"),
             actions = {
                 "return=skipped unless economy needs water",
                 "sleep=duration:5s",

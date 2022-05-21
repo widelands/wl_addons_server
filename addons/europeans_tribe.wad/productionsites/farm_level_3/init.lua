@@ -80,7 +80,7 @@ wl.Descriptions():new_productionsite_type {
         },
         plant_barley = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
-            descname = _"planting barley",
+            descname = pgettext("europeans_building", "planting barley"),
             actions = {
                 "return=skipped unless economy needs barley or workers need experience",
                 "return=skipped unless site has water:3",
@@ -92,7 +92,7 @@ wl.Descriptions():new_productionsite_type {
         },
         plant_berrybush = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
-            descname = _"planting berrybush",
+            descname = pgettext("europeans_building", "planting berrybush"),
             actions = {
                 "return=skipped unless economy needs fruit or workers need experience",
                 "return=skipped unless site has water:3",
@@ -104,7 +104,7 @@ wl.Descriptions():new_productionsite_type {
         },
         plant_blackroot = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
-            descname = _"planting blackroot",
+            descname = pgettext("europeans_building", "planting blackroot"),
             actions = {
                 "return=skipped unless economy needs blackroot or workers need experience",
                 "return=skipped unless site has water:3",
@@ -116,7 +116,7 @@ wl.Descriptions():new_productionsite_type {
         },
         plant_corn = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
-            descname = _"planting corn",
+            descname = pgettext("europeans_building", "planting corn"),
             actions = {
                 "return=skipped unless economy needs corn or workers need experience",
                 "return=skipped unless site has water:3",
@@ -128,7 +128,7 @@ wl.Descriptions():new_productionsite_type {
         },
         plant_grape = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
-            descname = _"planting grape",
+            descname = pgettext("europeans_building", "planting grape"),
             actions = {
                 "return=skipped unless economy needs grape or workers need experience",
                 "return=skipped unless site has water:3",
@@ -140,7 +140,7 @@ wl.Descriptions():new_productionsite_type {
         },
         plant_rye = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
-            descname = _"planting rye",
+            descname = pgettext("europeans_building", "planting rye"),
             actions = {
                 "return=skipped unless economy needs rye or workers need experience",
                 "return=skipped unless site has water:3",
@@ -152,7 +152,7 @@ wl.Descriptions():new_productionsite_type {
         },
         plant_wheat = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
-            descname = _"planting wheat",
+            descname = pgettext("europeans_building", "planting wheat"),
             actions = {
                 "return=skipped unless economy needs wheat or workers need experience",
                 "return=skipped unless site has water:3",
@@ -164,7 +164,7 @@ wl.Descriptions():new_productionsite_type {
         },
         harvest_barley = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
-            descname = _"harvesting barley",
+            descname = pgettext("europeans_building", "harvesting barley"),
             actions = {
                 "return=skipped unless economy needs barley or workers need experience",
                 "sleep=duration:4s",
@@ -176,7 +176,7 @@ wl.Descriptions():new_productionsite_type {
         },
         harvest_berry = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
-            descname = _"harvesting berry",
+            descname = pgettext("europeans_building", "harvesting berry"),
             actions = {
                 "return=skipped unless economy needs fruit or workers need experience",
                 "sleep=duration:4s",
@@ -188,7 +188,7 @@ wl.Descriptions():new_productionsite_type {
         },
         harvest_blackroot = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
-            descname = _"harvesting blackroot",
+            descname = pgettext("europeans_building", "harvesting blackroot"),
             actions = {
                 "return=skipped unless economy needs blackroot or workers need experience",
                 "sleep=duration:4s",
@@ -200,7 +200,7 @@ wl.Descriptions():new_productionsite_type {
         },
         harvest_corn = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
-            descname = _"harvesting corn",
+            descname = pgettext("europeans_building", "harvesting corn"),
             actions = {
                 "return=skipped unless economy needs corn or workers need experience",
                 "sleep=duration:4s",
@@ -212,7 +212,7 @@ wl.Descriptions():new_productionsite_type {
         },
         harvest_grape = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
-            descname = _"harvesting grape",
+            descname = pgettext("europeans_building", "harvesting grape"),
             actions = {
                 "return=skipped unless economy needs grape or workers need experience",
                 "sleep=duration:4s",
@@ -224,7 +224,7 @@ wl.Descriptions():new_productionsite_type {
         },
         harvest_rye = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
-            descname = _"harvesting rye",
+            descname = pgettext("europeans_building", "harvesting rye"),
             actions = {
                 "return=skipped unless economy needs rye or workers need experience",
                 "sleep=duration:4s",
@@ -236,7 +236,7 @@ wl.Descriptions():new_productionsite_type {
         },
         harvest_wheat = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
-            descname = _"harvesting wheat",
+            descname = pgettext("europeans_building", "harvesting wheat"),
             actions = {
                 "return=skipped unless economy needs wheat or workers need experience",
                 "sleep=duration:4s",

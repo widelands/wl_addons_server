@@ -45,11 +45,13 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 2,
-        prohibited_till = 3600
+        prohibited_till = 5400,
+        forced_after = 7200
     },
 
     working_positions = {
-        europeans_breeder_basic = 2
+        europeans_breeder_normal = 1,
+        europeans_breeder_basic = 1
     },
 
     inputs = {
@@ -72,7 +74,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
-                "consume=corn water",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has corn:2",
+                "consume=corn:2 water:2",
                 "sleep=duration:10s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:40s", -- Animation of feeding the cattle
@@ -84,7 +88,9 @@ wl.Descriptions():new_productionsite_type {
            descname = pgettext("europeans_building", "raising pigs"),
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
-                "consume=corn water",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has corn:2",
+                "consume=corn:2 water:2",
                 "sleep=duration:10s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",

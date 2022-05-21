@@ -62,13 +62,14 @@ wl.Descriptions():new_productionsite_type {
         },
         brew_beer = {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
-            descname = _"brewing beer",
+            descname = pgettext("europeans_building", "brewing beer"),
             actions = {
                 "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped unless economy needs beer or workers need experience",
                 "return=skipped when site has honey and economy needs mead and not economy needs beer",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs beer",
                 "return=skipped unless site has water:3",
+                "return=skipped unless site has barley:3",
                 "consume=water:3 barley:3",
                 "sleep=duration:5s",
                 "animate=working duration:60s",
@@ -77,13 +78,15 @@ wl.Descriptions():new_productionsite_type {
         },
         brew_mead = {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
-            descname = _"brewing mead",
+            descname = pgettext("europeans_building", "brewing mead"),
             actions = {
                 "return=skipped when economy needs water and not economy needs mead",
                 "return=skipped unless economy needs mead or workers need experience",
                 "return=skipped when site has barley and economy needs beer and not economy needs mead",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
                 "return=skipped unless site has water:3",
+                "return=skipped unless site has barley:3",
+                "return=skipped unless site has honey:3",
                 "consume=water:3 barley:3 honey:3",
                 "sleep=duration:5s",
                 "animate=working duration:60s",
@@ -92,13 +95,14 @@ wl.Descriptions():new_productionsite_type {
         },
         brew_strong_beer = {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
-            descname = _"brewing strong beer",
+            descname = pgettext("europeans_building", "brewing strong beer"),
             actions = {
                 "return=skipped when economy needs water and not economy needs beer_strong",
                 "return=skipped unless economy needs beer_strong or workers need experience",
                 "return=skipped when site has barley and economy needs beer and not economy needs beer_strong",
                 "return=skipped when site has honey and economy needs mead and not economy needs beer_strong",
                 "return=skipped unless site has water:4",
+                "return=skipped unless site has barley:4",
                 "consume=water:4 barley:4",
                 "sleep=duration:5s",
                 "animate=working duration:80s",

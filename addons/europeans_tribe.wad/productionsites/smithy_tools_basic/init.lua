@@ -53,9 +53,10 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 1,
-        prohibited_till = 1800
+        weak_ai_limit = 2,
+        normal_ai_limit = 2,
+        prohibited_till = 3000,
+        forced_after = 3600
     },
 
     working_positions = {
@@ -92,7 +93,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_basket = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
-            descname = _"making a basket",
+            descname = pgettext("europeans_building", "making baskets"),
             actions = {
                 "return=skipped unless economy needs basket",
                 "consume=planks coal iron",
@@ -104,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_bread_paddle = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
-            descname = _"making a bread paddle",
+            descname = pgettext("europeans_building", "making bread paddles"),
             actions = {
                 "return=skipped unless economy needs bread_paddle",
                 "consume=planks coal iron",
@@ -116,7 +117,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_buckets = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
-            descname = _"making a pair of buckets",
+            descname = pgettext("europeans_building", "making buckets"),
             actions = {
                 "return=skipped unless economy needs buckets",
                 "consume=planks coal iron",
@@ -128,7 +129,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_felling_ax = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
-            descname = _"making a felling ax",
+            descname = pgettext("europeans_building", "making felling axes"),
             actions = {
                 "return=skipped unless economy needs felling_ax",
                 "consume=planks coal iron",
@@ -140,7 +141,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_fire_tongs = {
             -- TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
-            descname = _"making fire tongs",
+            descname = pgettext("europeans_building", "making fire tongs"),
             actions = {
                 "return=skipped unless economy needs fire_tongs",
                 "consume=planks coal iron",
@@ -152,7 +153,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_hammer = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
-            descname = _"making a hammer",
+            descname = pgettext("europeans_building", "making hammers"),
             actions = {
                 "return=skipped unless economy needs hammer",
                 "consume=planks coal iron",
@@ -164,7 +165,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_hook_pole = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a hook pole because ...
-            descname = _"making a hook pole",
+            descname = pgettext("europeans_building", "making hook poles"),
             actions = {
                 "return=skipped unless economy needs hook_pole",
                 "consume=planks coal iron",
@@ -176,7 +177,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_kitchen_tools = {
             -- TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
-            descname = _"making kitchen tools",
+            descname = pgettext("europeans_building", "making kitchen tools"),
             actions = {
                 "return=skipped unless economy needs kitchen_tools",
                 "consume=planks coal iron",
@@ -188,7 +189,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_needles = {
             -- TRANSLATORS: Completed/Skipped/Did not start making needles because ...
-            descname = _"making needles",
+            descname = pgettext("europeans_building", "making needles"),
             actions = {
                 "return=skipped unless economy needs needles",
                 "consume=coal iron",
@@ -200,7 +201,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_pick = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
-            descname = _"making a pick",
+            descname = pgettext("europeans_building", "making picks"),
             actions = {
                 "return=skipped unless economy needs pick",
                 "consume=planks coal iron",
@@ -212,7 +213,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_saw = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
-            descname = _"making a saw",
+            descname = pgettext("europeans_building", "making saws"),
             actions = {
                 "return=skipped unless economy needs saw",
                 "consume=planks coal iron",
@@ -224,7 +225,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_scythe = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
-            descname = _"making a scythe",
+            descname = pgettext("europeans_building", "making sycthes"),
             actions = {
                 "return=skipped unless economy needs scythe",
                 "consume=planks coal iron",
@@ -236,7 +237,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_shovel = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
-            descname = _"making a shovel",
+            descname = pgettext("europeans_building", "making shovels"),
             actions = {
                 "return=skipped unless economy needs shovel",
                 "consume=planks coal iron",

@@ -45,7 +45,8 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 2,
-        prohibited_till = 1800
+        prohibited_till = 3000,
+        forced_after = 3600
     },
 
     working_positions = {
@@ -69,10 +70,11 @@ wl.Descriptions():new_productionsite_type {
         },
         smelt_iron = {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
-            descname = _"smelting iron",
+            descname = pgettext("europeans_building", "smelting iron"),
             actions = {
                 "return=skipped unless economy needs iron or workers need experience",
                 "return=skipped unless site has coal:3",
+                "return=skipped unless site has ore:3",
                 "consume=ore:3 coal:3",
                 "sleep=duration:10s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",

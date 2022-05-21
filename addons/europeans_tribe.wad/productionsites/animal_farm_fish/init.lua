@@ -37,8 +37,10 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
-        normal_ai_limit = 3,
-        prohibited_till = 1800
+        normal_ai_limit = 4,
+        basic_amount = 1,
+        prohibited_till = 2400,
+        forced_after = 3000
     },
 
     working_positions = {
@@ -54,7 +56,7 @@ wl.Descriptions():new_productionsite_type {
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
-            descname = _("working"),
+            descname = _"working",
             actions = {
                 "call=produce_fish",
                 "call=produce_fish_idle",
@@ -63,7 +65,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_fish = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing fish because ...
-            descname = _"producing fish",
+           descname = pgettext("europeans_building", "breeding fish"),
             actions = {
                 "return=skipped unless economy needs fish or workers need experience",
                 "return=skipped unless site has water:2",

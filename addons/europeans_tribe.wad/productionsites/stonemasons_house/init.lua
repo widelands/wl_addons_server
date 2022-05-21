@@ -68,11 +68,14 @@ wl.Descriptions():new_productionsite_type {
         },
         mixing_grout = {
             -- TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
-            descname = _"mixing grout",
+            descname = pgettext("europeans_building", "mixing grout"),
             actions = {
                 "return=skipped when economy needs granite",
                 "return=skipped when economy needs water and not economy needs grout",
                 "return=skipped when economy needs coal and not economy needs grout",
+                "return=skipped unless site has coal:2",
+                "return=skipped unless site has granite:3",
+                "return=skipped unless site has water:3",
                 "consume=coal:2 granite:3 water:3",
                 "sleep=duration:10s",
                 "playsound=sound/barbarians/stonegrind priority:80%",
@@ -84,10 +87,11 @@ wl.Descriptions():new_productionsite_type {
         },
         burning_bricks = {
             -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
-            descname = _"burning bricks",
+            descname = pgettext("europeans_building", "burning bricks"),
             actions = {
                 "return=skipped when economy needs granite",
                 "return=skipped when economy needs coal and not economy needs brick",
+                "return=skipped unless site has coal:2",
                 "return=skipped unless site has clay:3",
                 "consume=coal:2 granite clay:3",
                 "sleep=duration:10s",
@@ -99,10 +103,11 @@ wl.Descriptions():new_productionsite_type {
         },
         sculpting_marble_column = {
             -- TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
-            descname = _"sculpting a marble column",
+            descname = pgettext("europeans_building", "sculpting a marble column"),
             actions = {
                 "return=skipped unless economy needs marble_column or workers need experience",
                 "return=skipped when economy needs marble",
+                "return=skipped unless site has marble:6",
                 "consume=marble:3",
                 "sleep=duration:10s",
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",

@@ -45,9 +45,11 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_mixed_flour = {
             -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
-            descname = _"grinding rye and wheat",
+            descname = pgettext("europeans_building", "grinding rye and wheat"),
             actions = {
                 "return=skipped unless economy needs flour",
+                "return=skipped unless site has rye:4",
+                "return=skipped unless site has wheat:4",
                 "sleep=duration:5s",
                 "consume=wheat:4 rye:4",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",

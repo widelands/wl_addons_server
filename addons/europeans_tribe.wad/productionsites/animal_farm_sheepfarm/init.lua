@@ -48,9 +48,10 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_meat = {
          -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-           descname = pgettext("europeans_building", "raising pigs"),
+           descname = pgettext("europeans_building", "producing meat"),
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
+                "return=skipped unless site has water:4",
                 "consume=corn:2 blackroot:2 water:4",
                 "sleep=duration:10s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
@@ -60,9 +61,10 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_wool = {
          -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-           descname = pgettext("europeans_building", "raising pigs"),
+           descname = pgettext("europeans_building", "producing wool"),
            actions = {
                 "return=skipped unless economy needs wool or workers need experience",
+                "return=skipped unless site has water:2",
                 "consume=corn:2 blackroot:2 water:2",
                 "sleep=duration:10s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",

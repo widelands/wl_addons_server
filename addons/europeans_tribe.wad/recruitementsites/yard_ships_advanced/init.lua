@@ -56,7 +56,7 @@ wl.Descriptions():new_productionsite_type {
         },
         ship = {
             -- TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
-            descname = _"constructing a ship",
+            descname = pgettext("europeans_building", "constructing a ship"),
             actions = {
                 "return=skipped when not site has blackwood",
                 "return=skipped when not site has planks",

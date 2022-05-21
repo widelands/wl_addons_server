@@ -60,8 +60,9 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 4,
-        prohibited_till = 900,
-        forced_after = 1200
+        basic_amount = 1,
+        prohibited_till = 1200,
+        forced_after = 1800
     },
 
     working_positions = {
@@ -85,9 +86,10 @@ wl.Descriptions():new_productionsite_type {
         },
         saw_log = {
             -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
-            descname = _"sawing logs",
+            descname = pgettext("europeans_building", "sawing logs"),
             actions = {
                 "return=skipped when economy needs log and not economy needs planks",
+                "return=skipped unless site has log:4",
                 "consume=log:4",
                 "sleep=duration:10s",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
@@ -97,9 +99,10 @@ wl.Descriptions():new_productionsite_type {
         },
         hardening_wood = {
             -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
-            descname = _"hardening wood",
+            descname = pgettext("europeans_building", "hardening wood"),
             actions = {
                 "return=skipped when economy needs log and not economy needs blackwood",
+                "return=skipped unless site has log:4",
                 "consume=log:4",
                 "sleep=duration:10s",
                 "playsound=sound/barbarians/blackwood priority:60%",

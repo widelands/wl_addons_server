@@ -30,7 +30,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         space_consumer = true,
         supports_seafaring = true,
-        basic_amount = 2,
+        basic_amount = 4,
         forced_after = 10
     },
 
@@ -55,7 +55,7 @@ wl.Descriptions():new_productionsite_type {
         },
         plant_reed = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-            descname = _"planting reed",
+            descname = pgettext("europeans_building", "planting reed"),
             actions = {
                 "return=skipped unless economy needs reed or workers need experience",
                 "return=skipped unless site has water:2",
@@ -66,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
         },
         harvest_reed = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-            descname = _"harvesting reed",
+            descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
                 "return=skipped unless economy needs reed or workers need experience",
                 "callworker=harvest_reed",

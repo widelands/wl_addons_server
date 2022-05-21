@@ -71,6 +71,8 @@ local init = {
                 planks = 15,
                 marble = 15,
                 marble_column = 7,
+                grout = 7,
+                brick = 7,
                 iron = 7,
                 gold = 7,
                 quartz = 15,
@@ -134,6 +136,8 @@ local init = {
             port:set_wares("planks", math.ceil(15 / #ports))
             port:set_wares("marble", math.ceil(15 / #ports))
             port:set_wares("marble_column", math.ceil(7 / #ports))
+            port:set_wares("grout", math.ceil(7 / #ports))
+            port:set_wares("brick", math.ceil(7 / #ports))
             port:set_wares("iron", math.ceil(7 / #ports))
             port:set_wares("gold", math.ceil(7 / #ports))
             port:set_wares("quartz", math.ceil(15 / #ports))

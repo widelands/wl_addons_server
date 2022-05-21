@@ -52,6 +52,11 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
+        prohibited_till = 3000,
+        forced_after = 3600
     },
 
     working_positions = {
@@ -66,9 +71,12 @@ wl.Descriptions():new_productionsite_type {
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
-            descname = _"mining iron",
+            descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
+                "return=skipped when economy needs coal",
+                "return=skipped unless site has ration:3",
+                "return=skipped unless site has beer:3",
                 "consume=ration beer",
                 "sleep=duration:5s",
                 "call=mine_stone",
@@ -85,7 +93,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         mine_ore = {
-            descname = _"mining iron",
+            descname = pgettext("europeans_building", "mining ore"),
             actions = {
                 "animate=working duration:10s",
                 "mine=resource_iron radius:4 yield:20% when_empty:2% experience_on_fail:10%",
@@ -93,7 +101,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         mine_stone = {
-            descname = _"mining granite",
+            descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:10s",
                 "mine=resource_iron radius:4 yield:20% when_empty:2% experience_on_fail:10%",
@@ -101,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         mine_quartz = {
-            descname = _"mining quartz",
+            descname = pgettext("europeans_building", "mining quartz"),
             actions = {
                 "animate=working duration:25s",
                 "mine=resource_iron radius:4 yield:20% when_empty:2% experience_on_fail:10%",

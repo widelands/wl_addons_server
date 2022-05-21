@@ -48,8 +48,8 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 3,
-        prohibited_till = 9000,
-        forced_after = 9600
+        prohibited_till = 7200,
+        forced_after = 7800
     },
 
     working_positions = {
@@ -76,7 +76,7 @@ wl.Descriptions():new_productionsite_type {
         },
         terraforming_land = {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
-            descname = _"terraforming land",
+            descname = pgettext("europeans_building", "terraforming land"),
             actions = {
                 "return=skipped unless site has water:2",
                 "consume=ration beer",
@@ -87,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
         },
         terraforming_coast = {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-            descname = _"terraforming coast",
+            descname = pgettext("europeans_building", "terraforming coast"),
             actions = {
                 "consume=ration beer",
                 "sleep=duration:15s",

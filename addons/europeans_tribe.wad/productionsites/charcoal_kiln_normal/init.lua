@@ -59,9 +59,10 @@ wl.Descriptions():new_productionsite_type {
         },
         burn_log = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
-            descname = _"producing coal",
+            descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal or workers need experience",
+                "return=skipped unless site has log:9",
                 "consume=log:9",
                 "sleep=duration:10s",
                 "animate=working duration:2m30s",
@@ -70,10 +71,11 @@ wl.Descriptions():new_productionsite_type {
         },
         burn_blackwood = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
-            descname = _"producing coal",
+            descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal or workers need experience",
                 "return=skipped when economy needs blackwood",
+                "return=skipped unless site has blackwood:6",
                 "consume=blackwood:6",
                 "sleep=duration:10s",
                 "animate=working duration:2m30s", -- Charcoal fires will burn for some days in real life

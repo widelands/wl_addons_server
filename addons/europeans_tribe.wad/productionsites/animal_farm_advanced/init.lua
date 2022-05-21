@@ -24,7 +24,7 @@ wl.Descriptions():new_productionsite_type {
 
     working_positions = {
         europeans_breeder_advanced = 1,
-        europeans_breeder_basic = 1
+        europeans_breeder_normal = 1
     },
 
     inputs = {
@@ -50,7 +50,10 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
-                "consume=corn blackroot water",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has corn",
+                "return=skipped unless site has blackroot",
+                "consume=corn blackroot water:2",
                 "sleep=duration:10s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
@@ -62,7 +65,10 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing donkeys"),
             actions = {
                 "return=skipped unless economy needs europeans_carrier_donkey or workers need experience",
-                "consume=corn blackroot water",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has corn",
+                "return=skipped unless site has blackroot",
+                "consume=corn blackroot water:2",
                 "sleep=duration:10s",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
@@ -74,7 +80,10 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "breeding horses"),
             actions = {
                 "return=skipped unless economy needs europeans_carrier_horse or workers need experience",
-                "consume=corn blackroot water",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has corn",
+                "return=skipped unless site has blackroot",
+                "consume=corn blackroot water:2",
                 "sleep=duration:10s",
                 "playsound=sound/farm/horse priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little foals ;)
@@ -83,9 +92,12 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_meat = {
          -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-           descname = pgettext("europeans_building", "raising pigs"),
+           descname = pgettext("europeans_building", "breeding pigs"),
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has corn",
+                "return=skipped unless site has blackroot",
                 "consume=corn blackroot water:2",
                 "sleep=duration:10s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",

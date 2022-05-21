@@ -50,10 +50,11 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 1,
-        prohibited_till = 900,
-        forced_after = 1200
+        weak_ai_limit = 2,
+        normal_ai_limit = 2,
+        basic_amount = 1,
+        prohibited_till = 1200,
+        forced_after = 1800
     },
 
     working_positions = {
@@ -80,11 +81,14 @@ wl.Descriptions():new_productionsite_type {
         },
         mixing_grout = {
             -- TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
-            descname = _"mixing grout",
+            descname = pgettext("europeans_building", "mixing grout"),
             actions = {
                 "return=skipped when economy needs granite",
                 "return=skipped when economy needs water and not economy needs grout",
                 "return=skipped when economy needs coal and not economy needs grout",
+                "return=skipped unless site has coal:2",
+                "return=skipped unless site has granite:3",
+                "return=skipped unless site has water:3",
                 "consume=coal:2 granite:3 water:3",
                 "sleep=duration:10s",
                 "playsound=sound/barbarians/stonegrind priority:80%",
@@ -96,10 +100,11 @@ wl.Descriptions():new_productionsite_type {
         },
         burning_bricks = {
             -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
-            descname = _"burning bricks",
+            descname = pgettext("europeans_building", "burning bricks"),
             actions = {
                 "return=skipped when economy needs granite",
                 "return=skipped when economy needs coal and not economy needs brick",
+                "return=skipped unless site has coal:2",
                 "return=skipped unless site has clay:3",
                 "consume=coal:2 granite clay:3",
                 "sleep=duration:10s",

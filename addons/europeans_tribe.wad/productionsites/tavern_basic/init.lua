@@ -49,7 +49,9 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 4,
-        prohibited_till = 1800
+        basic_amount = 1,
+        prohibited_till = 2400,
+        forced_after = 3000
     },
 
     working_positions = {
@@ -75,11 +77,12 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_ration = {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
-            descname = _"preparing a ration",
+            descname = pgettext("europeans_building", "preparing a ration"),
             actions = {
                 "return=skipped when economy needs water and not economy needs ration",
                 "return=skipped unless economy needs ration or workers need experience",
                 "return=skipped unless site has water:2",
+                "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2 fish,meat:2",
                 "sleep=duration:10s",
                 "animate=working duration:70s",

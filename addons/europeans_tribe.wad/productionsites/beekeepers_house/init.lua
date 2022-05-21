@@ -35,7 +35,8 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 3,
-        prohibited_till = 1800
+        prohibited_till = 3000,
+        forced_after = 3600
     },
 
     working_positions = {
@@ -54,7 +55,7 @@ wl.Descriptions():new_productionsite_type {
         },
         making_honey = {
             -- TRANSLATORS: Completed/Skipped/Did not start making honey because ...
-            descname = _"making honey",
+            descname = pgettext("europeans_building", "making honey"),
             actions = {
                 "return=skipped unless economy needs honey or workers need experience",
                 "callworker=bees",

@@ -49,7 +49,8 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 4,
-        prohibited_till = 1800
+        prohibited_till = 3000,
+        forced_after = 3600
     },
 
     working_positions = {
@@ -72,9 +73,10 @@ wl.Descriptions():new_productionsite_type {
         },
         burn_log = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
-            descname = _"producing coal",
+            descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal or workers need experience",
+                "return=skipped unless site has log:6",
                 "consume=log:6",
                 "sleep=duration:10s",
                 "animate=working duration:3m",

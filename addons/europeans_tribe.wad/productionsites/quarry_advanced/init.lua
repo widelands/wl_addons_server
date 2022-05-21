@@ -35,7 +35,7 @@ wl.Descriptions():new_productionsite_type {
         },
         quarrying = {
             -- TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
-            descname = _"quarrying",
+           descname = pgettext("europeans_building", "quarrying"),
             actions = {
                 "callworker=check_rocks",
                 "call=cut_granite on failure fail",
@@ -49,7 +49,7 @@ wl.Descriptions():new_productionsite_type {
         },
         mining = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining because ...
-            descname = _"mining",
+            descname = pgettext("europeans_building", "mining"),
             actions = {
                 "callworker=check_stone",
                 "call=mine_granite on failure fail",
@@ -65,7 +65,7 @@ wl.Descriptions():new_productionsite_type {
         },
         cut_granite = {
             -- TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
-            descname = _"quarrying granite",
+           descname = pgettext("europeans_building", "quarrying granite"),
             actions = {
                 "callworker=cut_granite",
                 "sleep=duration:5s"
@@ -73,7 +73,7 @@ wl.Descriptions():new_productionsite_type {
         },
         cut_marble = {
             -- TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
-            descname = _"quarrying marble",
+           descname = pgettext("europeans_building", "quarrying marble"),
             actions = {
                 "callworker=cut_marble",
                 "sleep=duration:5s"
@@ -81,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
         },
         mine_granite = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
-            descname = _"mining granite",
+            descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "callworker=mine_granite",
                 "sleep=duration:5s"
@@ -89,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
         },
         mine_marble = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
-            descname = _"mining marble",
+            descname = pgettext("europeans_building", "mining marble"),
             actions = {
                 "callworker=mine_marble",
                 "sleep=duration:5s"
@@ -97,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
         },
         mine_quartz = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
-            descname = _"mining quartz",
+            descname = pgettext("europeans_building", "mining quartz"),
             actions = {
                 "callworker=mine_quartz",
                 "sleep=duration:5s"
@@ -105,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
         },
         mine_diamond = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining diamond because ...
-            descname = _"mining diamond",
+            descname = pgettext("europeans_building", "mining diamond"),
             actions = {
                 "callworker=mine_diamond",
                 "sleep=duration:5s"

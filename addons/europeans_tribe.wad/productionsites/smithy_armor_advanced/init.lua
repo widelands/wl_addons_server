@@ -65,7 +65,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_spear_wooden = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
-            descname = _"forging a wooden spear",
+            descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
                 "return=skipped unless economy needs spear_wooden",
                 "consume=planks",
@@ -79,7 +79,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_helmet_mask = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
-            descname = _"forging a mask",
+            descname = pgettext("europeans_building", "forging a mask"),
             actions = {
                 "return=skipped unless economy needs helmet_mask",
                 "consume=coal iron",
@@ -91,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_spear_advanced = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
-            descname = _"forging an advanced spear",
+            descname = pgettext("europeans_building", "forging an advanced spear"),
             actions = {
                 "return=skipped unless economy needs spear_advanced",
                 "consume=planks coal iron",
@@ -105,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_armor_chain = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
-            descname = _"forging a suit of chain armor",
+            descname = pgettext("europeans_building", "forging a suit of chain armor"),
             actions = {
                 "return=skipped unless economy needs armor_chain",
                 "consume=armor coal iron",
@@ -116,7 +116,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_shield_steel = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
-            descname = _"forging a steel shield",
+            descname = pgettext("europeans_building", "forging a steel shield"),
             actions = {
                 "return=skipped unless economy needs shield_steel",
                 "consume=coal:2 iron:2",
@@ -127,7 +127,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_ax_broad = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
-            descname = _"forging a broad ax",
+            descname = pgettext("europeans_building", "forging a broad ax"),
             actions = {
                 "return=skipped unless economy needs ax_broad",
                 "consume=planks coal:2 iron:2",
@@ -141,7 +141,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_armor_gilded = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
-            descname = _"forging a suit of gilded armor",
+            descname = pgettext("europeans_building", "forging a suit of gilded armor"),
             actions = {
                 "return=skipped unless economy needs armor_gilded",
                 "consume=armor coal iron gold",
@@ -152,7 +152,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_tabard_golden = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
-            descname = _"forging a suit of golden tabard",
+            descname = pgettext("europeans_building", "forging a suit of golden tabard"),
             actions = {
                 "return=skipped unless economy needs tabard_golden",
                 "consume=cloth coal iron gold",
@@ -163,7 +163,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_shield_advanced = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
-            descname = _"forging an advanced shield",
+            descname = pgettext("europeans_building", "forging an advanced shield"),
             actions = {
                 "return=skipped unless economy needs shield_advanced",
                 "consume=coal:2 iron:2 gold",
@@ -174,7 +174,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_sword_broad = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
-            descname = _"forging a broadsword",
+            descname = pgettext("europeans_building", "forging a broadsword"),
             actions = {
                 "return=skipped unless economy needs sword_broad",
                 "consume=planks coal:2 iron:2",

@@ -54,7 +54,8 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 1,
-        prohibited_till = 3600
+        prohibited_till = 3600,
+        forced_after = 5400
     },
 
     working_positions = {
@@ -81,7 +82,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_spear_wooden = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
-            descname = _"forging a wooden spear",
+            descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
                 "return=skipped unless economy needs spear_wooden",
                 "consume=planks",
@@ -95,7 +96,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_helmet_mask = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
-            descname = _"forging a mask",
+            descname = pgettext("europeans_building", "forging a mask"),
             actions = {
                 "return=skipped unless economy needs helmet_mask",
                 "consume=coal iron",
@@ -107,7 +108,7 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_spear_advanced = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
-            descname = _"forging an advanced spear",
+            descname = pgettext("europeans_building", "forging an advanced spear"),
             actions = {
                 "return=skipped unless economy needs spear_advanced",
                 "consume=planks coal iron",

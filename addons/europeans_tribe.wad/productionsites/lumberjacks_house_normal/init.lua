@@ -39,7 +39,7 @@ wl.Descriptions():new_productionsite_type {
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-            descname = _"felling trees",
+            descname = pgettext("europeans_building", "felling trees"),
             actions = {
                 "callworker=harvest",
                 "sleep=duration:15s",

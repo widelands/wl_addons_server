@@ -54,9 +54,10 @@ wl.Descriptions():new_productionsite_type {
         },
         recycle_iron = {
             -- TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
-            descname = _"recycling iron",
+            descname = pgettext("europeans_building", "recycling iron"),
             actions = {
                 "return=skipped when economy needs coal",
+                "return=skipped unless site has coal:2",
                 "return=skipped unless site has scrap_iron:2",
                 "consume=scrap_iron:2 coal:2",
                 "sleep=duration:5s",
@@ -68,9 +69,10 @@ wl.Descriptions():new_productionsite_type {
         },
         recycle_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start recyling iron and gold because ...
-            descname = _"recycling iron and gold",
+            descname = pgettext("europeans_building", "recycling iron and gold"),
             actions = {
                 "return=skipped when economy needs coal",
+                "return=skipped unless site has coal:3",
                 "return=skipped unless site has scrap_metal_mixed:3",
                 "consume=scrap_metal_mixed:3 coal:3",
                 "sleep=duration:5s",
@@ -82,10 +84,11 @@ wl.Descriptions():new_productionsite_type {
         },
         smelt_iron = {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
-            descname = _"smelting iron",
+            descname = pgettext("europeans_building", "smelting iron"),
             actions = {
                 "return=skipped unless economy needs iron",
                 "return=skipped unless site has coal:3",
+                "return=skipped unless site has ore:3",
                 "consume=ore:3 coal:3",
                 "sleep=duration:5s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
@@ -96,10 +99,11 @@ wl.Descriptions():new_productionsite_type {
         },
         smelt_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
-            descname = _"smelting gold",
+            descname = pgettext("europeans_building", "smelting gold"),
             actions = {
                 "return=skipped unless economy needs gold",
                 "return=skipped unless site has coal:2",
+                "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
                 "sleep=duration:5s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",

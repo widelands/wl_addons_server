@@ -59,13 +59,14 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
-        normal_ai_limit = 3,
-        prohibited_till = 1800
+        normal_ai_limit = 4,
+        basic_amount = 1,
+        prohibited_till = 1800,
+        forced_after = 2400
     },
 
     working_positions = {
-          europeans_breeder_normal = 1,
-          europeans_breeder_basic = 1
+          europeans_breeder_basic = 2
     },
 
     inputs = {
@@ -82,17 +83,97 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=produce_meat_from_barley",
+                "call=produce_meat_from_rye",
+                "call=produce_meat_from_wheat",
+                "call=produce_meat_from_corn",
+                "call=produce_meat_from_blackroot",
+                "call=produce_meat",
                 "call=produce_meat",
                 "call=produce_meat_idle",
                 "return=skipped"
             }
         },
-        produce_meat = {
+        produce_meat_from_barley = {
          -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-           descname = pgettext("europeans_building", "raising pigs"),
+           descname = pgettext("europeans_building", "breeding pigs with barley"),
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
-                "consume=corn,blackroot,rye,wheat,barley:4 water:4",
+                "return=skipped when economy needs beer or economy needs beer_strong or economy needs mead",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has barley:4",
+                "consume=barley:4 water:4",
+                "sleep=duration:10s",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "produce=meat:3"
+           }
+        },
+        produce_meat_from_rye = {
+         -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
+           descname = pgettext("europeans_building", "breeding pigs with rye"),
+           actions = {
+                "return=skipped unless economy needs meat or workers need experience",
+                "return=skipped when economy needs flour",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has rye:4",
+                "consume=rye:4 water:4",
+                "sleep=duration:10s",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "produce=meat:3"
+           }
+        },
+        produce_meat_from_wheat = {
+         -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
+           descname = pgettext("europeans_building", "breeding pigs with wheat"),
+           actions = {
+                "return=skipped unless economy needs meat or workers need experience",
+                "return=skipped when economy needs flour",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has wheat:4",
+                "consume=wheat:4 water:4",
+                "sleep=duration:10s",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "produce=meat:3"
+           }
+        },
+        produce_meat_from_corn = {
+         -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
+           descname = pgettext("europeans_building", "breeding pigs with corn"),
+           actions = {
+                "return=skipped unless economy needs meat or workers need experience",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has corn:4",
+                "consume=corn:4 water:4",
+                "sleep=duration:10s",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "produce=meat:3"
+           }
+        },
+        produce_meat_from_blackroot = {
+         -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
+           descname = pgettext("europeans_building", "breeding pigs with blackroot"),
+           actions = {
+                "return=skipped unless economy needs meat or workers need experience",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has blackroot:4",
+                "consume=blackroot:4 water:4",
+                "sleep=duration:10s",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "produce=meat:3"
+           }
+        },
+        produce_meat = {
+         -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
+           descname = pgettext("europeans_building", "breeding pigs"),
+           actions = {
+                "return=skipped unless economy needs meat or workers need experience",
+                "return=skipped unless site has water:4",
+                "consume=blackroot,corn,wheat,rye,barley:4 water:4",
                 "sleep=duration:10s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",

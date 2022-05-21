@@ -47,7 +47,7 @@ wl.Descriptions():new_productionsite_type {
         },
         terraforming_land = {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
-            descname = _"terraforming land",
+            descname = pgettext("europeans_building", "terraforming land"),
             actions = {
                 "return=skipped unless site has water:2",
                 "consume=meal wine",
@@ -58,7 +58,7 @@ wl.Descriptions():new_productionsite_type {
         },
         terraforming_coast = {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-            descname = _"terraforming coast",
+            descname = pgettext("europeans_building", "terraforming coast"),
             actions = {
                 "consume=meal wine",
                 "sleep=duration:10s",

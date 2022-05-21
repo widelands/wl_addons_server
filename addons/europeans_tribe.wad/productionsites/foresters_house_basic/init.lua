@@ -47,8 +47,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         space_consumer = true,
         basic_amount = 1,
-        prohibited_till = 900,
-        forced_after = 1200
+        prohibited_till = 300,
+        forced_after = 900
     },
 
     working_positions = {
@@ -71,7 +71,7 @@ wl.Descriptions():new_productionsite_type {
         },
         plant_trees = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
-            descname = _"planting trees",
+            descname = pgettext("europeans_building", "planting trees"),
             actions = {
                 "return=skipped when economy needs water and not economy needs log",
                 "return=skipped unless site has water:2",

@@ -39,10 +39,11 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
-        prohibited_till = 900,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
+        basic_amount = 2,
+        prohibited_till = 600,
         forced_after = 1200
     },
     
@@ -65,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
         },
         mining_water = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining water because ...
-            descname = _"mining water",
+            descname = pgettext("europeans_building", "mining water"),
             actions = {
                 "return=skipped unless economy needs water",
                 "sleep=duration:5s",

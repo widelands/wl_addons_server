@@ -49,7 +49,9 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 3,
-        prohibited_till = 3600
+        basic_amount = 1,
+        prohibited_till = 1200,
+        forced_after = 1800
     },
 
     working_positions = {
@@ -72,9 +74,10 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_cloth = {
             -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
-            descname = _"weaving cloth",
+            descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped when economy needs reed and not economy needs cloth",
+                "return=skipped unless site has reed:3",
                 "consume=reed:3",
                 "sleep=duration:10s",
                 "playsound=sound/barbarians/weaver priority:90%",

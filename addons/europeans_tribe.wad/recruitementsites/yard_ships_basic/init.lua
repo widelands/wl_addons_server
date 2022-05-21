@@ -60,7 +60,7 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
         normal_ai_limit = 2,
-        prohibited_till = 3600
+        prohibited_till = 7200
     },
 
     working_positions = {
@@ -88,7 +88,7 @@ wl.Descriptions():new_productionsite_type {
         },
         ship = {
             -- TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
-            descname = _"constructing a ship",
+            descname = pgettext("europeans_building", "constructing a ship"),
             actions = {
                 "return=skipped when not site has blackwood",
                 "return=skipped when not site has planks",

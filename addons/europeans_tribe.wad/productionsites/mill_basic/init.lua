@@ -65,7 +65,9 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 3,
-        prohibited_till = 1800
+        basic_amount = 1,
+        prohibited_till = 1800,
+        forced_after = 2400
     },
 
     working_positions = {
@@ -89,9 +91,11 @@ wl.Descriptions():new_productionsite_type {
         },
         produce_mixed_flour = {
             -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
-            descname = _"grinding rye and wheat",
+            descname = pgettext("europeans_building", "grinding rye and wheat"),
             actions = {
                 "return=skipped unless economy needs flour or workers need experience",
+                "return=skipped unless site has rye:2",
+                "return=skipped unless site has wheat:2",
                 "sleep=duration:10s",
                 "consume=wheat:2 rye:2",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",

@@ -38,9 +38,12 @@ wl.Descriptions():new_productionsite_type {
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
-            descname = _"mining iron",
+            descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
+                "return=skipped when economy needs coal",
+                "return=skipped unless site has meal:2",
+                "return=skipped unless site has wine:2",
                 "consume=meal wine",
                 "sleep=duration:5s",
                 "call=mine_stone",
@@ -52,10 +55,11 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_quartz",
+                "return=skipped"
             }
         },
         mine_ore = {
-            descname = _"mining iron",
+            descname = pgettext("europeans_building", "mining ore"),
             actions = {
                 "animate=working duration:35s",
                 "mine=resource_iron radius:12 yield:100% when_empty:20% experience_on_fail:10%",
@@ -63,7 +67,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         mine_stone = {
-            descname = _"mining granite",
+            descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:35s",
                 "mine=resource_iron radius:12 yield:100% when_empty:20% experience_on_fail:10%",
@@ -71,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         mine_quartz = {
-            descname = _"mining quartz",
+            descname = pgettext("europeans_building", "mining quartz"),
             actions = {
                 "animate=working duration:35s",
                 "mine=resource_iron radius:12 yield:100% when_empty:20% experience_on_fail:10%",
