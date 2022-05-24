@@ -4,22 +4,23 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Atanase Albaran, 2021
+# Atanase Albaran, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 03:03+0200\n"
+"POT-Creation-Date: 2022-05-24 03:03+0200\n"
 "PO-Revision-Date: 2021-05-01 11:43+0000\n"
-"Last-Translator: Atanase Albaran, 2021\n"
+"Last-Translator: Atanase Albaran, 2022\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
 
 #: addons/Tournament_2021_win_condition.wad/addon:4
 #: addons/Tournament_2021_win_condition.wad/init.lua:32
@@ -45,6 +46,9 @@ msgstr[0] ""
 "Le joueur qui a au moins %1% soldat entraîné au plus haut niveau dans sa "
 "réserve gagne la partie"
 msgstr[1] ""
+"Le joueur qui a au moins %1% soldats entraînés au plus haut niveau dans sa "
+"réserve gagne la partie"
+msgstr[2] ""
 "Le joueur qui a au moins %1% soldats entraînés au plus haut niveau dans sa "
 "réserve gagne la partie"
 
@@ -78,6 +82,7 @@ msgid "%1% hero"
 msgid_plural "%1% heroes"
 msgstr[0] "%1% héro"
 msgstr[1] "%1% héros"
+msgstr[2] "%1% héros"
 
 #. TRANSLATORS: This is an item in a list in the form "Player Name: 3 heroes"
 #: addons/Tournament_2021_win_condition.wad/init.lua:119
@@ -85,3 +90,4 @@ msgid "%1%: %2% hero"
 msgid_plural "%1%: %2% heroes"
 msgstr[0] "%1% : %2% héro"
 msgstr[1] "%1% : %2% héros"
+msgstr[2] "%1% : %2% héros"
