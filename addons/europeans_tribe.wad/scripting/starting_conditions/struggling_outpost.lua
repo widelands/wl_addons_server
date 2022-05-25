@@ -22,7 +22,8 @@ local init = {
     
     -- forbid all advanced buildings, execpt for quarry and stonemasons house
     player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_well_level_4", "europeans_well_level_5"}
-    player:forbid_buildings{"europeans_farm_level_3", "europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", "europeans_inn_level_2", "europeans_inn_level_1"}
+    player:forbid_buildings{"europeans_farm_level_3", "europeans_farm_level_4", "europeans_farm_level_5", "europeans_animal_farm_level_3", "europeans_animal_farm_level_4", "europeans_animal_farm_level_5"}
+    player:forbid_buildings{"europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", "europeans_inn_level_2", "europeans_inn_level_1"}
     player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_sawmill_advanced", "europeans_smelting_works_advanced", "europeans_weaving_mill_advanced" }
     player:forbid_buildings{"europeans_toolsmithy_advanced", "europeans_armorsmithy_advanced", "europeans_trainingscamp_level_4", "europeans_battlearena_level_4", "europeans_battlearena_level_3"}    
     player:forbid_buildings{"europeans_scouts_house_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced", "europeans_recruitement_center_advanced"}    

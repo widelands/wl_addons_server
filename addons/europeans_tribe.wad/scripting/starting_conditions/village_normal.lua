@@ -73,26 +73,25 @@ init = {
     place_building_in_region(player, "europeans_toolsmithy_normal", sf:region(8), {
         inputs = {planks = 4, iron = 4, coal = 4},
     })
+    place_building_in_region(player, "europeans_well_big", sf:region(8), {
+    })
     place_building_in_region(player, "europeans_sawmill_normal", sf:region(10), {
         inputs = {log = 8},
     })
-    place_building_in_region(player, "europeans_stonemasons_house", sf:region(10), {
-        inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 4},
-    })
-    place_building_in_region(player, "europeans_weaving_mill_normal", sf:region(12), {
+    place_building_in_region(player, "europeans_weaving_mill_normal", sf:region(10), {
         inputs = {reed = 6},
     })
-    place_building_in_region(player, "europeans_sheepfarm", sf:region(12), {
+    place_building_in_region(player, "europeans_stonemasons_house_normal", sf:region(10), {
+        inputs = {granite = 9, clay = 6, water = 6, coal = 4},
+    })
+    place_building_in_region(player, "europeans_farm_medium_normal", sf:region(12), {
+        inputs = {water = 4},
+    })
+    place_building_in_region(player, "europeans_animal_farm_level_1", sf:region(12), {
         inputs = {water = 6, corn = 6},
     })
-    place_building_in_region(player, "europeans_reed_yard", sf:region(16), {
-        inputs = {water = 6},
-    })
     place_building_in_region(player, "europeans_farm_level_1", sf:region(16), {
-    })
-    place_building_in_region(player, "europeans_well_level_2", sf:region(16), {
-    })
-    place_building_in_region(player, "europeans_well_level_2", sf:region(16), {
+        inputs = {water = 6},
     })
 end
 }

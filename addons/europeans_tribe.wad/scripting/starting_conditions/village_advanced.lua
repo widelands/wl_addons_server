@@ -74,38 +74,32 @@ init = {
     place_building_in_region(player, "europeans_toolsmithy_advanced", sf:region(8), {
         inputs = {planks = 4, iron = 4, coal = 4},
     })
+    place_building_in_region(player, "europeans_well_big", sf:region(8), {
+    })
     place_building_in_region(player, "europeans_sawmill_advanced", sf:region(10), {
         inputs = {log = 8},
     })
-    place_building_in_region(player, "europeans_stonemasons_house", sf:region(10), {
-        inputs = {marble = 8, granite = 8, clay = 6, water = 6, coal = 4},
+    place_building_in_region(player, "europeans_weaving_mill_advanced", sf:region(10), {
+        inputs = {reed = 6, wool = 4},
     })
-    place_building_in_region(player, "europeans_smelting_works_advanced", sf:region(10), {
+    place_building_in_region(player, "europeans_stonemasons_house_advanced", sf:region(10), {
+        inputs = {marble = 9, granite = 9, clay = 6, water = 6, coal = 4},
+    })
+    place_building_in_region(player, "europeans_farm_medium_advanced", sf:region(12), {
+        inputs = {water = 4},
+    })
+    place_building_in_region(player, "europeans_smelting_works_advanced", sf:region(12), {
         inputs = {coal = 6, ore = 6},
     })
-    place_building_in_region(player, "europeans_charcoal_kiln_advanced", sf:region(10), {
+    place_building_in_region(player, "europeans_charcoal_kiln_advanced", sf:region(12), {
         inputs = {log = 12},
     })
-    place_building_in_region(player, "europeans_weaving_mill_advanced", sf:region(12), {
-        inputs = {reed = 6},
-    })
-    place_building_in_region(player, "europeans_fish_farm", sf:region(12), {
-        inputs = {water = 6, corn = 6},
-    })
-    place_building_in_region(player, "europeans_sheepfarm", sf:region(12), {
-        inputs = {water = 6, blackroot = 6},
-    })
-    place_building_in_region(player, "europeans_reed_yard", sf:region(16), {
-        inputs = {water = 6},
+    place_building_in_region(player, "europeans_animal_farm_level_3", sf:region(12), {
+        inputs = {water = 8, corn = 4, blackroot = 4},
     })
     place_building_in_region(player, "europeans_farm_level_3", sf:region(16), {
         inputs = {water = 6},
     })
-    place_building_in_region(player, "europeans_well_level_4", sf:region(16), {
-    })
-    place_building_in_region(player, "europeans_well_level_4", sf:region(16), {
-    })
-    
 end
 }
 

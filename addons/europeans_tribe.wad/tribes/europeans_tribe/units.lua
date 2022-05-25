@@ -1252,7 +1252,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an europeans worker: Weaver
-                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armor.")
+                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
                 }
             },
             {
@@ -1261,7 +1261,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an europeans worker: Weaver
-                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armor.")
+                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
                 }
             },
             {
@@ -1270,7 +1270,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an europeans worker: Weaver
-                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armor.")
+                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
                 }
             }
         },
@@ -2458,7 +2458,25 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_beekeepers_house",
+            name = "europeans_beekeepers_house_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a europeans production site: Beekeeper's House
+                purpose = pgettext("europeans_building", "Keeps bees and lets them swarm over flowering fields to produce honey."),
+                -- TRANSLATORS: Note helptext for a europeans production site: Beekeeper's House
+                note = pgettext("europeans_building", "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) or bushes (berry bushes or grapevines) nearby."),
+            }
+        },
+        {
+            name = "europeans_beekeepers_house_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a europeans production site: Beekeeper's House
+                purpose = pgettext("europeans_building", "Keeps bees and lets them swarm over flowering fields to produce honey."),
+                -- TRANSLATORS: Note helptext for a europeans production site: Beekeeper's House
+                note = pgettext("europeans_building", "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) or bushes (berry bushes or grapevines) nearby."),
+            }
+        },
+        {
+            name = "europeans_beekeepers_house_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a europeans production site: Beekeeper's House
                 purpose = pgettext("europeans_building", "Keeps bees and lets them swarm over flowering fields to produce honey."),
@@ -2511,12 +2529,30 @@ wl.Descriptions():new_tribe {
 
         -- Medium
         {
-            name = "europeans_reed_yard",
+            name = "europeans_farm_medium_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a europeans production site: Reed Yard
                 purpose = pgettext("europeans_building", "Cultivates reed that serves two different purposes for the Europeans tribe."),
                 -- TRANSLATORS: Note helptext for a europeans production site: Reed Yard
                 note = pgettext("europeans_building", "Reed is the traditional material for roofing, and it is woven into the extremely durable rope that they use for their ships’ sails."),
+            }
+        },
+        {
+            name = "europeans_farm_medium_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a europeans production site: Fruit Farm
+                purpose = pgettext("europeans_building", "Cultivates fruit that serves two different purposes for the Europeans tribe."),
+                -- TRANSLATORS: Note helptext for a europeans production site: Fruit Farm
+                note = pgettext("europeans_building", "Fruit is needed to feed fish in animal farm and to refine wine with a fruity aroma."),
+            }
+        },
+        {
+            name = "europeans_farm_medium_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a europeans production site: Vineyard
+                purpose = pgettext("europeans_building", "Cultivates grapes and fruit."),
+                -- TRANSLATORS: Note helptext for a europeans production site: Vineyard
+                note = pgettext("europeans_building", "Grape is needed to produce wine in vinery."),
             }
         },
         {
@@ -2562,19 +2598,30 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_lime_kiln",
+            name = "europeans_stonemasons_house_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a europeans production site: Lime Kiln
                 purpose = pgettext("europeans_building", "Processes clay and granite to make bricks and ‘grout’, a substance that solidifies and so reinforces masonry."),
                 -- TRANSLATORS: Note helptext for a europeans production site: Lime Kiln
-                note = pgettext("europeans_building", "The lime kiln’s output will only go to construction sites that need it. Those are predominantly houses that work with fire, and some military sites."),
+                note = pgettext("europeans_building", "The lime kiln’s output will only go to construction sites that need it. Brick and grout only used by advanced buildings."),
             }
         },
         {
-            name = "europeans_stonemasons_house",
+            name = "europeans_stonemasons_house_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a europeans production site: Lime Kiln
+                purpose = pgettext("europeans_building", "Processes clay and granite to make bricks and ‘grout’, a substance that solidifies and so reinforces masonry."),
+                -- TRANSLATORS: Note helptext for a europeans production site: Lime Kiln
+                note = pgettext("europeans_building", "The lime kiln’s output will only go to construction sites that need it. Brick and grout only used by advanced buildings."),
+            }
+        },
+        {
+            name = "europeans_stonemasons_house_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Stonemason's House
-                purpose = pgettext("europeans_building", "Carves marble columns out of marble.")
+                purpose = pgettext("europeans_building", "Processes clay and granite to make bricks and ‘grout’, a substance that solidifies and so reinforces masonry. Additionally carves marble columns out of marble."),
+                -- TRANSLATORS: Note helptext for a europeans production site: Lime Kiln
+                note = pgettext("europeans_building", "The stonemason’s house's output will only go to construction sites that need it. Marble column only used by advanced buildings."),
             }
         },
         {
@@ -2652,15 +2699,6 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a europeans production site: Big Inn
                 purpose = pgettext("europeans_building", "Prepares rations, snacks and meals to feed all miners.")
-            }
-        },
-        {
-            name = "europeans_farm_fruit",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a europeans production site: Fruit Farm
-                purpose = pgettext("europeans_building", "Cultivates grapes and fruit that serves two different purposes for the Europeans tribe."),
-                -- TRANSLATORS: Note helptext for a europeans production site: Fruit Farm
-                note = pgettext("europeans_building", "Grape is needed to produce wine in vinery and fruit is needed to feed fish in fish farm."),
             }
         },
         {
@@ -2757,13 +2795,6 @@ wl.Descriptions():new_tribe {
 
         -- Big
         {
-            name = "europeans_well_big",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Big Well
-                purpose = pgettext("europeans_building", "Draws water out of the deep.")
-            }
-        },
-        {
             name = "europeans_recruitement_center_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Recruitement Center
@@ -2785,38 +2816,10 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_animal_farm_basic",
+            name = "europeans_well_big",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for a europeans production site: Cattle Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat for food production."),
-            }
-        },
-        {
-            name = "europeans_animal_farm_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Donkey Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally produces meat for food production.")
-            }
-        },
-        {
-            name = "europeans_animal_farm_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Horse Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additionally produces meat for food production.")
-            }
-        },
-        {
-            name = "europeans_piggery",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Piggery
-                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additionally produces meat for food production.")
-            }
-        },
-        {
-            name = "europeans_sheepfarm",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
-                purpose = pgettext("europeans_building", "Keeps sheep for their wool. Additionally produces meat from sheep for food prodution.")
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Big Well
+                purpose = pgettext("europeans_building", "Draws water out of the deep.")
             }
         },
         {
@@ -2843,15 +2846,64 @@ wl.Descriptions():new_tribe {
         {
             name = "europeans_farm_level_3",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an europeans production site: Blackroot Farm
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Advanced Farm
                 purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."),
             }
         },
         {
-            name = "europeans_fish_farm",
+            name = "europeans_farm_level_4",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Advanced Farm
+                purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."),
+            }
+        },
+        {
+            name = "europeans_farm_level_5",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Advanced Farm
+                purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."),
+            }
+        },
+        {
+            name = "europeans_animal_farm_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a europeans production site: Cattle Farm
+                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat for food production."),
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_1",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an europeans production site: Fish Farm
-                purpose = pgettext("europeans_building", "Breeds and produces fish for food production.")
+                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat and fish for food production."),
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Donkey Farm
+                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally produces meat and fish for food production.")
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_3",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Piggery
+                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally produces meat and fish for food production.")
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_4",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Sheep Farm
+                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally keeps sheep for wool prodution and produces meat and fish for food production.")
+            }
+        },
+        {
+            name = "europeans_animal_farm_level_5",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an europeans production site: Horse Farm
+                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additionally keeps sheep for wool prodution and produces meat and fish for food production.")
             }
         },
 
@@ -3011,7 +3063,7 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 purpose = {
                     -- TRANSLATORS: Purpose helptext for an europeans training site: Normal Training Camp, part 1
-                    pgettext("europeans_building", "Trains recruits  to soldiers."),
+                    pgettext("europeans_building", "Trains recruits to soldiers."),
                     -- TRANSLATORS: Purpose helptext for an europeans training site: Normal Training Camp, part 2
                     pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
                 },
