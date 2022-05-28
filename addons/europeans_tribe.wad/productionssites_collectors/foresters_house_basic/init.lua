@@ -84,7 +84,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant",
-                "sleep=duration:20s"
+                "sleep=duration:15s",
+                "consume=water",
+                "callworker=plant",
+                "sleep=duration:15s"
             }
         },
         plant_trees_idle = {

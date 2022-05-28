@@ -15,7 +15,7 @@ wl.Descriptions():new_productionsite_type {
             planks = 1,
             brick = 1,
             grout = 1,
-            marble_column = 1
+            marble = 1
         },
         enhancement_return_on_dismantle = {
             granite = 1,

@@ -15,7 +15,7 @@ wl.Descriptions():new_productionsite_type {
             planks = 1,
             brick = 1,
             grout = 1,
-            marble_column = 1
+            marble = 1
         },
         enhancement_return_on_dismantle = {
             granite = 1,
@@ -37,7 +37,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 4 },
+        { name = "water", amount = 6 },
     },
     
     programs = {
@@ -58,7 +58,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant",
-                "sleep=duration:15s"
+                "sleep=duration:10s",
+                "consume=water",
+                "callworker=plant",
+                "sleep=duration:10s"
             }
         },
         plant_trees_idle = {

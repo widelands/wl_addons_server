@@ -84,6 +84,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
+                "return=skipped when economy needs meat or economy needs fish or economy needs wool",
                 "return=skipped unless site has water:3",
                 "consume=water:3 blackroot,corn:3",
                 "sleep=duration:5s",
@@ -97,6 +98,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing donkeys"),
             actions = {
                 "return=skipped unless economy needs europeans_carrier_donkey or workers need experience",
+                "return=skipped when economy needs meat or economy needs fish or economy needs wool",
                 "return=skipped unless site has water:3",
                 "consume=water:3 blackroot,corn:3",
                 "sleep=duration:5s",

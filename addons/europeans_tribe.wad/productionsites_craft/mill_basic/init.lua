@@ -94,6 +94,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "grinding rye and wheat"),
             actions = {
                 "return=skipped unless economy needs flour or workers need experience",
+                "return=skipped when economy needs meat and not economy needs flour",
                 "return=skipped unless site has rye:2",
                 "return=skipped unless site has wheat:2",
                 "sleep=duration:10s",

@@ -15,7 +15,7 @@ wl.Descriptions():new_productionsite_type {
             planks = 1,
             brick = 1,
             grout = 1,
-            marble_column = 1
+            marble = 1
         },
         enhancement_return_on_dismantle = {
             granite = 1,
@@ -75,6 +75,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
+                "return=skipped when economy needs meat or economy needs fish",
                 "return=skipped unless site has water:3",
                 "consume=water:3 blackroot,corn:3",
                 "sleep=duration:5s",
@@ -88,6 +89,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing donkeys"),
             actions = {
                 "return=skipped unless economy needs europeans_carrier_donkey or workers need experience",
+                "return=skipped when economy needs meat or economy needs fish",
                 "return=skipped unless site has water:3",
                 "consume=water:3 blackroot,corn:3",
                 "sleep=duration:5s",

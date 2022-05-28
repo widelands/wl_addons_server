@@ -75,6 +75,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
+                "return=skipped when economy needs meat",
                 "return=skipped unless site has water:2",
                 "consume=water:4 rye,wheat:4 ",
                 "sleep=duration:10s",

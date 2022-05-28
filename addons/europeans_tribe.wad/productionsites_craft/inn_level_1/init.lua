@@ -13,14 +13,14 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_inn_level_2",
         enhancement_cost = {
             planks = 2,
-            brick = 1,
-            grout = 1,
-            marble_column = 1
+            brick = 2,
+            grout = 2,
+            marble_column = 2
         },
         enhancement_return_on_dismantle = {
-            planks = 1,
-            granite = 1,
-            marble = 1
+            granite =2,
+            marble = 2,
+            planks = 1
         },
     },
 

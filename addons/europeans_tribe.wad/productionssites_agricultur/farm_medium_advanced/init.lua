@@ -40,7 +40,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=harvest_berry",
                 "call=harvest_grape",
                 "call=harvest_reed",
-                "call=plant_reed_idle",
+                "call=plant_grape_idles",
                 "return=skipped"
             }
         },
@@ -109,14 +109,14 @@ wl.Descriptions():new_productionsite_type {
                 "produce=reed"
             }
         },
-        plant_reed_idle = {
+        plant_grape_idle = {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs reed",
+                "return=skipped when economy needs grape or economy needs fruit or economy needs reed",
                 "return=skipped when economy needs water",
-                "consume=water",
-                "callworker=plant_reed",
+                "consume=water:2",
+                "callworker=plant_grape",
                 "sleep=duration:60s"
             }
         },
@@ -125,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
         -- Translators: Short for "Out of ..." for a resource
         title = _("No Fields"),
         heading = _("Out of Fields"),
-        message = pgettext("europeans_building", "The farmer working at this farm has no cleared soil to plant his seeds."),
+        message = pgettext("europeans_building", "The farmer working at this vineyard has no cleared soil to plant his seeds."),
         productivity_threshold = 30
     },
 }

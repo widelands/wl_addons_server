@@ -15,7 +15,7 @@ wl.Descriptions():new_productionsite_type {
             planks = 1,
             brick = 1,
             grout = 1,
-            marble_column = 1
+            marble = 1
         },
         enhancement_return_on_dismantle = {
             granite = 1,
@@ -101,6 +101,10 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=plant_barley",
                 "animate=working duration:4s",
+                "sleep=duration:1s",
+                "consume=water",
+                "callworker=plant_barley",
+                "animate=working duration:4s",
                 "sleep=duration:1s"
             }
         },
@@ -125,6 +129,10 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=plant_blackroot",
                 "animate=working duration:4s",
+                "sleep=duration:1s",
+                "consume=water",
+                "callworker=plant_blackroot",
+                "animate=working duration:4s",
                 "sleep=duration:1s"
             }
         },
@@ -134,6 +142,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs corn or workers need experience",
                 "return=skipped unless site has water:3",
+                "consume=water",
+                "callworker=plant_corn",
+                "animate=working duration:4s",
+                "sleep=duration:1s",
                 "consume=water",
                 "callworker=plant_corn",
                 "animate=working duration:4s",
@@ -161,6 +173,10 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=plant_rye",
                 "animate=working duration:4s",
+                "sleep=duration:1s",
+                "consume=water",
+                "callworker=plant_rye",
+                "animate=working duration:4s",
                 "sleep=duration:1s"
             }
         },
@@ -173,6 +189,10 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=plant_wheat",
                 "animate=working duration:4s",
+                "sleep=duration:1s",
+                "consume=water",
+                "callworker=plant_wheat",
+                "animate=working duration:4s",
                 "sleep=duration:1s"
             }
         },
@@ -181,6 +201,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting barley"),
             actions = {
                 "return=skipped unless economy needs barley or workers need experience",
+                "sleep=duration:4s",
+                "callworker=harvest_barley",
+                "animate=working duration:4s",
+                "sleep=duration:1s",
+                "produce=barley",
                 "sleep=duration:4s",
                 "callworker=harvest_barley",
                 "animate=working duration:4s",
@@ -209,6 +234,11 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=harvest_blackroot",
                 "animate=working duration:4s",
                 "sleep=duration:1s",
+                "produce=blackroot",
+                "sleep=duration:4s",
+                "callworker=harvest_blackroot",
+                "animate=working duration:4s",
+                "sleep=duration:1s",
                 "produce=blackroot"
             }
         },
@@ -217,6 +247,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting corn"),
             actions = {
                 "return=skipped unless economy needs corn or workers need experience",
+                "sleep=duration:4s",
+                "callworker=harvest_corn",
+                "animate=working duration:4s",
+                "sleep=duration:1s",
+                "produce=corn",
                 "sleep=duration:4s",
                 "callworker=harvest_corn",
                 "animate=working duration:4s",
@@ -245,6 +280,11 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=harvest_rye",
                 "animate=working duration:4s",
                 "sleep=duration:1s",
+                "produce=rye",
+                "sleep=duration:4s",
+                "callworker=harvest_rye",
+                "animate=working duration:4s",
+                "sleep=duration:1s",
                 "produce=rye"
             }
         },
@@ -253,6 +293,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting wheat"),
             actions = {
                 "return=skipped unless economy needs wheat or workers need experience",
+                "sleep=duration:4s",
+                "callworker=harvest_wheat",
+                "animate=working duration:4s",
+                "sleep=duration:1s",
+                "produce=wheat",
                 "sleep=duration:4s",
                 "callworker=harvest_wheat",
                 "animate=working duration:4s",

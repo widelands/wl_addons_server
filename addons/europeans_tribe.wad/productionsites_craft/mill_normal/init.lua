@@ -15,7 +15,7 @@ wl.Descriptions():new_productionsite_type {
             planks = 2,
             brick = 2,
             grout = 2,
-            marble_column = 2,
+            marble = 2,
             cloth = 2
         },
         enhancement_return_on_dismantle = {
@@ -63,6 +63,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "grinding rye and wheat"),
             actions = {
                 "return=skipped unless economy needs flour or workers need experience",
+                "return=skipped when economy needs meat and not economy needs flour",
                 "return=skipped unless site has rye:3",
                 "return=skipped unless site has wheat:3",
                 "sleep=duration:10s",
