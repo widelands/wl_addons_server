@@ -77,6 +77,14 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:15s",
                 "callworker=terraform_coast"
             }
+        },
+        dummy_program = {
+            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+            descname = _"dummy program",
+            actions = {
+                "sleep=duration:10s",
+                "produce=coal"
+            }
         }
     },
 }

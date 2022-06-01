@@ -61,8 +61,8 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "water", amount = 4 },
         { name = "flour", amount = 4 },
-        { name = "fish", amount = 2 },
-        { name = "meat", amount = 2 }
+        { name = "meat", amount = 4 },
+        { name = "fish", amount = 2 }
     },
 
     programs = {

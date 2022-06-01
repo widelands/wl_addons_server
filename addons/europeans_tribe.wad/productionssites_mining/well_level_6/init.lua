@@ -3,49 +3,24 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_well_big",
+    name = "europeans_well_level_6",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Big Well"),
     icon = dirname .. "menu.png",
-    size = "big",
+    size = "medium",
     
     animations = {
         idle = {
             pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 64, 106 }
+            hotspot = { 40, 55 }
         },
         working = {
             pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 64, 106 }
+            hotspot = { 40, 55 }
         },
     },
     
-    buildcost = {
-        log = 4,
-        reed = 4,
-        blackwood = 2,
-        cloth = 2,
-        planks = 2,
-        brick = 2,
-        grout = 2,
-        buckets = 2
-    },
-    return_on_dismantle = {
-        log = 2,
-        blackwood = 2,
-        planks = 2,
-        granite = 2,
-        buckets = 2
-    },
-
-    aihints = {
-        very_weak_ai_limit = 2,
-        weak_ai_limit = 4,
-        normal_ai_limit = 8,
-        basic_amount = 2,
-        prohibited_till = 600,
-        forced_after = 1200
-    },
+    aihints = {},
     
     working_positions = {
         europeans_carrier = 3
@@ -71,7 +46,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs water",
                 "sleep=duration:5s",
                 "animate=working duration:10s",
-                "mine=resource_water radius:16 yield:100% when_empty:99%",
+                "mine=resource_water radius:12 yield:100% when_empty:99%",
                 "produce=water:8"
             }
         },
@@ -82,19 +57,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "sleep=duration:60s",
                 "animate=working duration:10s",
-                "mine=resource_water radius:16 yield:100% when_empty:99%",
+                "mine=resource_water radius:12 yield:100% when_empty:99%",
                 "produce=water:2"
             }
-        },
-        dummy_program = {
-            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
-            descname = _"dummy program",
-            actions = {
-                "sleep=duration:10s",
-                "animate=working duration:10s",
-                "produce=quartz"
-            }
-        },
+        }
     },
     
     out_of_resource_notification = {

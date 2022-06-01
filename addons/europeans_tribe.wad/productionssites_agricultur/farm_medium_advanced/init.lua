@@ -40,7 +40,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=harvest_berry",
                 "call=harvest_grape",
                 "call=harvest_reed",
-                "call=plant_grape_idles",
+                "call=plant_grape_idle",
                 "return=skipped"
             }
         },

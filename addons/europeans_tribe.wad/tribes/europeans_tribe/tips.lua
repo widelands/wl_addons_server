@@ -1,7 +1,7 @@
 push_textdomain("europeans_tribe.wad", true)
 tips = {
     {
-        text = _"This is the experimental europeans tribe.",
+        text = _"This is the experimental Europeans tribe.",
         seconds = 6
     },
 }

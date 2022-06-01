@@ -7,7 +7,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Well"),
     icon = dirname .. "menu.png",
-    size = "small",
+    size = "medium",
     
     enhancement = {
         name = "europeans_well_level_1",
@@ -48,7 +48,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        basic_amount = 4,
+        basic_amount = 6,
         forced_after = 10
     },
 
@@ -73,7 +73,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs water or workers need experience",
                 "sleep=duration:5s",
                 "animate=working duration:15s",
-                "mine=resource_water radius:2 yield:50% when_empty:50%",
+                "mine=resource_water radius:3 yield:50% when_empty:50%",
                 "produce=water:2"
             }
         },
@@ -84,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "sleep=duration:60s",
                 "animate=working duration:20s",
-                "mine=resource_water radius:2 yield:50% when_empty:50%",
+                "mine=resource_water radius:3 yield:50% when_empty:50%",
                 "produce=water"
             }
         },

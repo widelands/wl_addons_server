@@ -45,9 +45,8 @@ wl.Descriptions():new_productionsite_type {
         very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 2,
-        basic_amount = 1,
-        prohibited_till = 1200,
-        forced_after = 1800
+        prohibited_till = 4200,
+        forced_after = 5400
     },
 
     working_positions = {

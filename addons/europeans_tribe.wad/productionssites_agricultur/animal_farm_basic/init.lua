@@ -76,6 +76,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
                 "return=skipped when economy needs meat",
+                "return=skipped when economy needs flour",
                 "return=skipped unless site has water:2",
                 "consume=water:4 rye,wheat:4 ",
                 "sleep=duration:10s",
@@ -103,10 +104,20 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs meat",
                 "return=skipped when economy needs water",
+                "return=skipped when economy needs flour",
                 "sleep=duration:90s",
                 "consume=water wheat rye",
                 "animate=working duration:60s",
                 "produce=meat"
+            }
+        },
+        dummy_program = {
+            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+            descname = _"dummy program",
+            actions = {
+                "sleep=duration:10s",
+                "animate=working duration:10s",
+                "produce=quartz"
             }
         }
     },

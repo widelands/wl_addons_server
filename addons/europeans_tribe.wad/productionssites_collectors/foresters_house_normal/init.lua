@@ -55,7 +55,10 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "planting trees"),
             actions = {
                 "return=skipped when economy needs water and not economy needs log",
-                "return=skipped unless site has water:2",
+                "return=skipped unless site has water:3",
+                "consume=water",
+                "callworker=plant",
+                "sleep=duration:10s",
                 "consume=water",
                 "callworker=plant",
                 "sleep=duration:10s",

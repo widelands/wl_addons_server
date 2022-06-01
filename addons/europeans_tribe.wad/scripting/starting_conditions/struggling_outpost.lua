@@ -1,5 +1,5 @@
 -- =======================================================================
---                Hardcore Starting conditions for europeans
+--                Hardcore Starting conditions for Europeans
 -- =======================================================================
 
 include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"

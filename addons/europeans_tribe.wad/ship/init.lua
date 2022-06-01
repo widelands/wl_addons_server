@@ -79,7 +79,7 @@ dirname = path.dirname(__file__)
 
 wl.Descriptions():new_ship_type {
     name = "europeans_ship",
-    -- TRANSLATORS: This is the europeans' ship's name used in lists of units
+    -- TRANSLATORS: This is the Europeans' ship's name used in lists of units
     descname = pgettext("europeans_ship", "Ship"),
     animation_directory = dirname,
     icon = dirname .. "menu.png",
@@ -103,7 +103,7 @@ wl.Descriptions():new_ship_type {
     },
 
     names = {
-        -- TRANSLATORS: This europeans ship is named after a continent
+        -- TRANSLATORS: These European ships are named after the continent or states / countries on this contintent.
         pgettext("shipname", "Europa"),
         pgettext("shipname", "Europe"),
         pgettext("shipname", "Island"),

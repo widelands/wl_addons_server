@@ -1,5 +1,5 @@
 -- =======================================================================
---           Test script for debugging.
+--           Test script for debugging europeans tribe.
 -- =======================================================================
 
 include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"

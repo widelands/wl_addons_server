@@ -7,7 +7,23 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Well Level 5"),
     icon = dirname .. "menu.png",
-    size = "small",
+    size = "medium",
+    
+    enhancement = {
+        name = "europeans_well_level_6",
+        enhancement_cost = {
+            planks = 1,
+            brick = 1,
+            grout = 1,
+            marble_column = 1,
+            buckets = 1
+        },
+        enhancement_return_on_dismantle = {
+            granite = 1,
+            marble = 1,
+            buckets = 1
+        },
+    },
 
     animations = {
         idle = {
@@ -43,8 +59,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs water",
                 "sleep=duration:5s",
                 "animate=working duration:5s",
-                "mine=resource_water radius:8 yield:100% when_empty:99%",
-                "produce=water:3"
+                "mine=resource_water radius:12 yield:100% when_empty:99%",
+                "produce=water:6"
             }
         },
         mining_water_idle = {
@@ -54,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "sleep=duration:60s",
                 "animate=working duration:5s",
-                "mine=resource_water radius:8 yield:100% when_empty:99%",
+                "mine=resource_water radius:12 yield:100% when_empty:99%",
                 "produce=water"
             }
         },
