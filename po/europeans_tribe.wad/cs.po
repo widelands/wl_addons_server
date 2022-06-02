@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-01 03:04+0200\n"
+"POT-Creation-Date: 2022-06-02 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -3428,9 +3428,8 @@ msgstr[2] "%1%(+%2%) vojáků"
 msgstr[3] "%1%(+%2%) vojáků"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
-#, fuzzy
 msgid "This is the experimental Europeans tribe."
-msgstr "Toto jsou experimentální evropské kmeny."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:96
@@ -3444,14 +3443,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:98
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
-"Dřevorubci Evropanů kácí stromy, lesníci zajišťují jejich obnovu. Klády jsou "
-"také využity v uhlířské peci, přístavu a pile."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:108
@@ -3513,10 +3509,9 @@ msgstr "Žula je základním stavebním materiálem."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:169
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr "Evropané získavají žulové bloky z lomů."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:180
@@ -3526,14 +3521,11 @@ msgstr "Malta je základním stavebním materiálem."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:182
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces grout in lime kiln or stonemasons house out of "
 "granite and water."
 msgstr ""
-"Evropané získávají maltu ve vápenné peci nebo v domku kameníka ze žuly a "
-"vody."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:193
@@ -3543,10 +3535,9 @@ msgstr "Pro výrobu cihel je potřeba cihlářská hlína."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:195
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from claydiggers house."
-msgstr "Evropané získávají cihlářskou hlínu v domku kopáčů hlíny."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
@@ -3556,14 +3547,11 @@ msgstr "Cihla je základním stavebním materiálem."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:208
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
 "granite and water."
 msgstr ""
-"Evropané získávají cihly ve vápenné peci nebo v domku kameníka z cihlářské "
-"hlíny, žuly a vody."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:218
@@ -3579,15 +3567,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble Column
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:227
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Marble columns represent the high culture of the Europeans, so they are "
 "needed for nearly every advanced building. They are produced out of marble "
 "at a stonemason’s house."
 msgstr ""
-"Mramorové sloupy představují vznešenou kulturu Evropanů, takže jsou potřeba "
-"téměř pro každou pokročilou budovu. Jsou vyráběny z mramoru v domku kameníka."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:236
@@ -3835,13 +3820,11 @@ msgstr "Uhlí se těží v dole na uhlí nebo se vyrábí z klád v uhlířské 
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:465
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The fires of the Europeans smelting works and smithies are usually fed with "
 "coal."
 msgstr ""
-"Jsou používány ve slévárnách a kovárnách. Dokáže je vyrobit každá kovárna."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:476
@@ -4065,38 +4048,28 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:708
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
-"Základní zbroj pro evropské vojáky. Vyrábí se v tkalcovně. V kombinaci s "
-"dřevěným oštěpem se jedná o výbavu vhodnou pro mladé vojáky."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:717
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic tabard for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden speer, it is the equipment to fit out young soldiers."
 msgstr ""
-"Základní tabard pro evropské vojáky. Vyrábí se v tkalcovně. V kombinaci s "
-"dřevěným oštěpem se jedná o výbavu vhodnou pro mladé vojáky."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:726
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The chain armor is a medium armor for European soldiers. It is produced in a "
 "smithy and used in a battle arena – together with food – to protect soldiers "
 "with additional health points."
 msgstr ""
-"Kroužková zbroj je střední zbrojí pro evropské vojáky. Vyrábí se v kovárně a "
-"je využívána v bojové aréně – společně s jídlem – aby poskytla vojákům "
-"ochranu v podobě více bodů zdraví."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gilded Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:735
@@ -4124,16 +4097,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:756
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
 "produced in the smithy. In combination with armor or tabard, it is the "
 "equipment to fit out young soldiers."
 msgstr ""
-"Tento dřevěný oštěp je základní zbraní evropského vojenského systému. Vyrábí "
-"se v kovárně. V kombinaci se zbrojí nebo tabardem se jedná o výbavu vhodnou "
-"pro mladé vojáky."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:765

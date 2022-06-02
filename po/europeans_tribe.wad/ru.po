@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-01 03:04+0200\n"
+"POT-Creation-Date: 2022-06-02 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: nskdmitry, 2021\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -3432,9 +3432,8 @@ msgstr[2] ""
 msgstr[3] ""
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
-#, fuzzy
 msgid "This is the experimental Europeans tribe."
-msgstr "Опыт по внедрению европейцев."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:96
@@ -3446,14 +3445,11 @@ msgstr "Бревна - весьма ценное сырье. Добываетс�
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:98
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
-"Дровосек рубит деревья; лесник же садит саженцы. Бревна идут на обжиг угля, "
-"верфи и лесопилки."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:108
@@ -3516,10 +3512,9 @@ msgstr "Гранит - один из основных стройматериал
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:169
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr "Европейцы добывают блоки гранита на каменоломнях."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:180
@@ -3529,14 +3524,11 @@ msgstr "Цемент - это важнейший стройматериал."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:182
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces grout in lime kiln or stonemasons house out of "
 "granite and water."
 msgstr ""
-"Европейцы готовят цемент в печи для обжига извести или в доме каменщика из "
-"гранита и воды."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:193
@@ -3546,10 +3538,9 @@ msgstr "Глина идет на кирпичи."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:195
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from claydiggers house."
-msgstr "Неадертальцы добывают глину в домике глинокопателя."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
@@ -3559,14 +3550,11 @@ msgstr "Кирпич - основной стройматериал."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:208
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
 "granite and water."
 msgstr ""
-"Из глины, гранита и воды европейцы получают кирпичи в печи для обжига "
-"извести или в домике каменщика."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:218
@@ -3582,15 +3570,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble Column
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:227
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Marble columns represent the high culture of the Europeans, so they are "
 "needed for nearly every advanced building. They are produced out of marble "
 "at a stonemason’s house."
 msgstr ""
-"Будучи знаком высокой европейской культуры, мраморные колонны нужны едва ли "
-"не во всех крупных зданиях. Их из мрамора вырезает каменщик."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:236
@@ -3825,12 +3810,11 @@ msgstr "Уголь добывают в шахтах или путем обжиг
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:465
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The fires of the Europeans smelting works and smithies are usually fed with "
 "coal."
-msgstr "Огонь в европейских плавильнях и кузницах поддерживает уголь."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:476
@@ -4056,38 +4040,28 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:708
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
-"Основной доспех европейских солдат. Шьется на ткацком станке. Каждый рекрут "
-"получает кожанку и простое деревянное копье."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:717
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic tabard for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden speer, it is the equipment to fit out young soldiers."
 msgstr ""
-"Основная одежка европейских солдат. Шьют на ткацком станке. В сочетании с "
-"простым деревянным копьем является снаряжением новобранца."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:726
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The chain armor is a medium armor for European soldiers. It is produced in a "
 "smithy and used in a battle arena – together with food – to protect soldiers "
 "with additional health points."
 msgstr ""
-"Кольчуга – более-менее надежный европейский доспех. Кузнец сплетает их, "
-"после чего доспехи и еда поступают на арену, где солдаты и облачаются в "
-"кольчуги, повышая свой уровень здоровья."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gilded Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:735
@@ -4112,15 +4086,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:756
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
 "produced in the smithy. In combination with armor or tabard, it is the "
 "equipment to fit out young soldiers."
 msgstr ""
-"Основной доспех европейских солдат. Шьется на ткацком станке. Каждый рекрут "
-"получает кожанку и простое деревянное копье."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:765

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-01 03:04+0200\n"
+"POT-Creation-Date: 2022-06-02 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2022\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -3449,9 +3449,8 @@ msgstr[0] "%1%(+%2%) Soldat"
 msgstr[1] "%1%(+%2%) Soldaten"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
-#, fuzzy
 msgid "This is the experimental Europeans tribe."
-msgstr "Das ist der experimentelle Stamm der Europäer."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:96
@@ -3465,15 +3464,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:98
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
-"Beim den Europäern werden die Bäume von einem Holzfäller gefällt; Förster "
-"kümmern sich um den Baumnachwuchs. Stämme werden auch in der Köhlerei, der "
-"Werft und dem Sägewerk verwendet."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:108
@@ -3540,10 +3535,9 @@ msgstr "Stein ist ein grundlegendes Baumaterial."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:169
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr "Die Europäer produzieren Steinblöcke in Steinbrüchen."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:180
@@ -3553,14 +3547,11 @@ msgstr "Mörtel ist ein grundlegendes Baumaterial."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:182
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces grout in lime kiln or stonemasons house out of "
 "granite and water."
 msgstr ""
-"Die Europäer produzieren Mörtel in Kalköfen oder Steinmetzen aus Lehm, Stein "
-"und Wasser."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:193
@@ -3570,10 +3561,9 @@ msgstr "Lehm wird zur Herstellung von Ziegeln gebraucht."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:195
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from claydiggers house."
-msgstr "Die Europäer gewinnen Lehm in Lehmgruben."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
@@ -3583,14 +3573,11 @@ msgstr "Ziegel ist ein grundlegendes Baumaterial."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:208
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
 "granite and water."
 msgstr ""
-"Die Europäer produzieren Ziegel in Kalköfen oder Steinmetzen aus Lehm, Stein "
-"und Wasser."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:218
@@ -3606,16 +3593,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble Column
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:227
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Marble columns represent the high culture of the Europeans, so they are "
 "needed for nearly every advanced building. They are produced out of marble "
 "at a stonemason’s house."
 msgstr ""
-"Marmorsäulen repräsentieren die hohe Kultur der Europäer, sodass sie für "
-"beinahe jedes verbesserte Gebäude benötigt werden. Sie werden vom Steinmetz "
-"aus Marmor geformt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:236
@@ -3881,14 +3864,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:465
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The fires of the Europeans smelting works and smithies are usually fed with "
 "coal."
 msgstr ""
-"Die Feuer in Hochöfen und Schmieden der Europäer werden normalerweise mit "
-"Kohle geheizt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:476
@@ -4149,16 +4129,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:726
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The chain armor is a medium armor for European soldiers. It is produced in a "
 "smithy and used in a battle arena – together with food – to protect soldiers "
 "with additional health points."
 msgstr ""
-"Dies ist eine Breitaxt. Sie wird in der Schmiede hergestellt und in der "
-"Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten im Angriff "
-"auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gilded Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:735
@@ -5561,31 +5537,27 @@ msgstr ""
 
 #. TRANSLATORS: Productivity label on an empire building if there is 1 worker missing
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3332
-#, fuzzy
 msgctxt "Europeans"
 msgid "Worker missing"
-msgstr "Ein Arbeiter fehlt"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an empire building if there is 1 worker coming
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3334
-#, fuzzy
 msgctxt "Europeans"
 msgid "Worker is coming"
-msgstr "Arbeiter kommt"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an empire building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3336
-#, fuzzy
 msgctxt "Europeans"
 msgid "Workers missing"
-msgstr "Arbeiter fehlen"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an empire building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3338
-#, fuzzy
 msgctxt "Europeans"
 msgid "Workers are coming"
-msgstr "Arbeiter kommen"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ore/init.lua:8

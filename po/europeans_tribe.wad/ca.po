@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-01 03:04+0200\n"
+"POT-Creation-Date: 2022-06-02 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -3427,9 +3427,8 @@ msgstr[0] "%1% (+%2%) soldat"
 msgstr[1] "%1% (+%2%) soldats"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
-#, fuzzy
 msgid "This is the experimental Europeans tribe."
-msgstr "Aquesta és la cultura dels europeus."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:96
@@ -3509,10 +3508,9 @@ msgstr "El granit és un material de construcció bàsic."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:169
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr "Els europeus produeixen blocs de granit a les pedreres."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:180
@@ -4016,25 +4014,19 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:708
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
-"Armadura bàsica pels soldats europeus. Es produeix al taller de teixir. En "
-"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:717
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic tabard for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden speer, it is the equipment to fit out young soldiers."
 msgstr ""
-"Armadura bàsica pels soldats europeus. Es produeix al taller de teixir. En "
-"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:726
@@ -4065,15 +4057,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:756
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
 "produced in the smithy. In combination with armor or tabard, it is the "
 "equipment to fit out young soldiers."
 msgstr ""
-"Armadura bàsica pels soldats europeus. Es produeix al taller de teixir. En "
-"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:765
@@ -5426,31 +5415,27 @@ msgstr ""
 
 #. TRANSLATORS: Productivity label on an empire building if there is 1 worker missing
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3332
-#, fuzzy
 msgctxt "Europeans"
 msgid "Worker missing"
-msgstr "Fa falta un treballador"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an empire building if there is 1 worker coming
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3334
-#, fuzzy
 msgctxt "Europeans"
 msgid "Worker is coming"
-msgstr "Està venint un treballador."
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an empire building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3336
-#, fuzzy
 msgctxt "Europeans"
 msgid "Workers missing"
-msgstr "Fan falta treballadors"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an empire building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3338
-#, fuzzy
 msgctxt "Europeans"
 msgid "Workers are coming"
-msgstr "Estan venint treballadors."
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ore/init.lua:8
