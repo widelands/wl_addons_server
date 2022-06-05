@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-02 03:04+0200\n"
+"POT-Creation-Date: 2022-06-05 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -1266,7 +1266,7 @@ msgstr "forjar una armadura daurada"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:155
 msgctxt "europeans_building"
 msgid "tailoring a golden tabard"
-msgstr ""
+msgstr "confeccionar un tabard daurat"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:166
@@ -1298,7 +1298,7 @@ msgstr "Taller d'armadures normal"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:166
 msgctxt "europeans_building"
 msgid "forging a suit of golden tabard"
-msgstr ""
+msgstr "forjar un tabard daurat"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:8
@@ -1511,7 +1511,7 @@ msgstr "modificar la costa"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:459
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:454
 msgid "dummy program"
-msgstr ""
+msgstr "programa fictici"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_basic/init.lua:8
@@ -1544,14 +1544,14 @@ msgstr "teixir tela"
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:77
 msgctxt "europeans_building"
 msgid "tailoring a tabard"
-msgstr ""
+msgstr "confeccionant un tabard"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:84
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:90
 msgctxt "europeans_building"
 msgid "forging a suit of armor"
-msgstr ""
+msgstr "forjar una armadura"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:8
@@ -1996,6 +1996,8 @@ msgctxt "europeans_building"
 msgid ""
 "The farmer working at this fruit farm has no cleared soil to plant his seeds."
 msgstr ""
+"L'agricultor d'aquesta masoveria de fruita no té terreny lliure per sembrar-"
+"hi llavors."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_advanced/init.lua:8
@@ -2019,13 +2021,13 @@ msgstr "Fossa de fang bàsic"
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_normal/init.lua:61
 msgctxt "europeans_building"
 msgid "digging clay"
-msgstr ""
+msgstr "extraure argila"
 
 #. TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:96
 msgctxt "europeans_building"
 msgid "diking clay"
-msgstr ""
+msgstr "fer dics d'argila"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_normal/init.lua:8
@@ -2383,6 +2385,8 @@ msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"El filó principal d'aquesta mina de carbó s'ha esgotat. Les extraccions es "
+"reduiran considerablement. Considereu desmantellar-la o destruir-la."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionssites_mining/goldmine_basic/init.lua:8
@@ -2569,7 +2573,7 @@ msgstr "Pou bàsic"
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_6/init.lua:44
 msgctxt "europeans_building"
 msgid "mining water"
-msgstr ""
+msgstr "extraure aigua"
 
 #: addons/europeans_tribe.wad/productionssites_mining/well_basic/init.lua:95
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_1/init.lua:82
@@ -2600,7 +2604,7 @@ msgstr "Sense aigua"
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_6/init.lua:70
 msgctxt "europeans_building"
 msgid "The carrier working at this well can’t find any water in his well."
-msgstr ""
+msgstr "El treballador d'aquest pou no pot trobar aigua."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_1/init.lua:8
@@ -2629,7 +2633,7 @@ msgstr "Pou d'aigua de nivell 4"
 #. TRANSLATORS: Completed/Skipped/Did not start mining water because ...
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_4/init.lua:55
 msgid "mining water"
-msgstr ""
+msgstr "extraure aigua"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_5/init.lua:8
@@ -2732,7 +2736,7 @@ msgstr "reclutar un carboner"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:225
 msgctxt "europeans_building"
 msgid "recruiting claydigger"
-msgstr ""
+msgstr "reclutar un excavador d'argila"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:239
@@ -3038,7 +3042,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:11
 msgid "Advanced Village"
-msgstr ""
+msgstr "Vila avançada"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:13
@@ -3050,7 +3054,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:11
 msgid "Basic Village"
-msgstr ""
+msgstr "Vila bàsica"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:13
@@ -3062,7 +3066,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:11
 msgid "Normal Village"
-msgstr ""
+msgstr "Vila normal"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:13
@@ -3510,7 +3514,7 @@ msgstr "El granit és un material de construcció bàsic."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:169
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr ""
+msgstr "Els europeus produeixen blocs de granit a les pedreres."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:180
@@ -3536,7 +3540,7 @@ msgstr "L'argila s'usa per fer maons."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:195
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from claydiggers house."
-msgstr ""
+msgstr "Els europeus aconsegueixen argila a la casa dels excavadors d'argila."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
@@ -4141,7 +4145,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:870
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets."
-msgstr ""
+msgstr "Porta béns amb cistells pels camins."
 
 #. TRANSLATORS: Helptext for a Europeans worker: Reindeer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:888
@@ -4150,6 +4154,8 @@ msgid ""
 "Reindeer help to carry items along busy roads. They are reared in an animal "
 "farm."
 msgstr ""
+"Els rens ajuden a transportar béns en camins molt transitats. Es crien en "
+"granges d'animals."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ferry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:897
@@ -4236,7 +4242,7 @@ msgstr "Planta arbres."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1132
 msgctxt "europeans_worker"
 msgid "Produces planks out of log."
-msgstr ""
+msgstr "Produeix taulons a partir de troncs."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Stonecutter
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1144
@@ -4251,7 +4257,7 @@ msgstr "Talla blocs de granit i marbre de les roques properes."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1180
 msgctxt "europeans_worker"
 msgid "Burns bricks and grout out of clay, water and granite."
-msgstr ""
+msgstr "Cou maons i lletades de calç a partir d'argila, aigua i granit."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Stonemason
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1189
@@ -4260,6 +4266,8 @@ msgid ""
 "Burns bricks and grout out of clay, water and granite. Makes marble column "
 "out of marble."
 msgstr ""
+"Cou maons i lletades de calç a partir d'argila, aigua i granit. Aconsegueix "
+"tallar columnes a partir de marbre."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Clay Digger
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1198
@@ -5197,7 +5205,7 @@ msgstr "Extreu carbó del terra en terreny muntanyós."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2992
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Extreu mineral de ferro del terra en terreny muntanyós."
 
 #. TRANSLATORS: Purpose helptext for production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
@@ -5417,25 +5425,25 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3332
 msgctxt "Europeans"
 msgid "Worker missing"
-msgstr ""
+msgstr "Fa falta un treballador"
 
 #. TRANSLATORS: Productivity label on an empire building if there is 1 worker coming
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3334
 msgctxt "Europeans"
 msgid "Worker is coming"
-msgstr ""
+msgstr "Està venint un treballador."
 
 #. TRANSLATORS: Productivity label on an empire building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3336
 msgctxt "Europeans"
 msgid "Workers missing"
-msgstr ""
+msgstr "Fan falta treballadors"
 
 #. TRANSLATORS: Productivity label on an empire building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3338
 msgctxt "Europeans"
 msgid "Workers are coming"
-msgstr ""
+msgstr "Estan venint treballadors."
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ore/init.lua:8
