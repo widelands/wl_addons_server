@@ -91,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs cloth",
                 "return=skipped when economy needs reed and not workers need experience",
-                "sleep=duration:90s",
+                "sleep=duration:120s",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:60s",

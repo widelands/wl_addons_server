@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-01 03:04+0200\n"
+"POT-Creation-Date: 2022-06-06 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/widelands/teams/35159/"
 "es/)\n"
@@ -326,12 +326,12 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/tavern_level_1/init.lua:54
 #: addons/europeans_tribe.wad/productionsites_craft/tavern_level_2/init.lua:58
 #: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_advanced/init.lua:39
-#: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_basic/init.lua:68
+#: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_basic/init.lua:69
 #: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_normal/init.lua:52
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:47
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:68
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:53
-#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:66
+#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:67
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_1/init.lua:56
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_2/init.lua:51
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_3/init.lua:60
@@ -802,6 +802,288 @@ msgctxt "europeans_building"
 msgid "Normal Warehouse"
 msgstr ""
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/barleyfield/harvested/init.lua:8
+msgctxt "immovable"
+msgid "Barley Field (harvested)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/barleyfield/medium/init.lua:8
+msgctxt "immovable"
+msgid "Barley Field (medium)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/barleyfield/ripe/init.lua:8
+msgctxt "immovable"
+msgid "Barley Field (ripe)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/barleyfield/small/init.lua:8
+msgctxt "immovable"
+msgid "Barley Field (small)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/barleyfield/tiny/init.lua:8
+msgctxt "immovable"
+msgid "Barley Field (tiny)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/medium/init.lua:9
+msgid "Blueberry Bush (medium)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/ripe/init.lua:9
+msgid "Blueberry Bush (ripe)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/small/init.lua:9
+msgid "Blueberry Bush (small)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/tiny/init.lua:9
+msgid "Blueberry Bush (tiny)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/currant_black/medium/init.lua:9
+msgid "Black Currant (medium)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/currant_black/ripe/init.lua:9
+msgid "Black Currant (ripe)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/currant_black/small/init.lua:9
+msgid "Black Currant (small)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/currant_black/tiny/init.lua:9
+msgid "Black Currant (tiny)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/currant_red/medium/init.lua:9
+msgid "Red Currant (medium)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/currant_red/ripe/init.lua:9
+msgid "Red Currant (ripe)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/currant_red/small/init.lua:9
+msgid "Red Currant (small)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/currant_red/tiny/init.lua:9
+msgid "Red Currant (tiny)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/desert_hackberry/medium/init.lua:9
+msgid "Desert Hackberry (medium)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/desert_hackberry/ripe/init.lua:9
+msgid "Desert Hackberry (ripe)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/desert_hackberry/small/init.lua:9
+msgid "Desert Hackberry (small)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/desert_hackberry/tiny/init.lua:9
+msgid "Desert Hackberry (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/berry_bushes/grapevine/medium/init.lua:10
+msgctxt "immovable"
+msgid "Grapevine (medium)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/berry_bushes/grapevine/ripe/init.lua:10
+msgctxt "immovable"
+msgid "Grapevine (ripe)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/berry_bushes/grapevine/small/init.lua:10
+msgctxt "immovable"
+msgid "Grapevine (small)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/berry_bushes/grapevine/tiny/init.lua:10
+msgctxt "immovable"
+msgid "Grapevine (tiny)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/juniper/medium/init.lua:9
+msgid "Juniper (medium)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/juniper/ripe/init.lua:9
+msgid "Juniper (ripe)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/juniper/small/init.lua:9
+msgid "Juniper (small)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/juniper/tiny/init.lua:9
+msgid "Juniper (tiny)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/raspberry/medium/init.lua:9
+msgid "Raspberry Bush (medium)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/raspberry/ripe/init.lua:9
+msgid "Raspberry Bush (ripe)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/raspberry/small/init.lua:9
+msgid "Raspberry Bush (small)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/raspberry/tiny/init.lua:9
+msgid "Raspberry Bush (tiny)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/sea_buckthorn/medium/init.lua:9
+msgid "Sea Buckthorn (medium)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/sea_buckthorn/ripe/init.lua:9
+msgid "Sea Buckthorn (ripe)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/sea_buckthorn/small/init.lua:9
+msgid "Sea Buckthorn (small)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/sea_buckthorn/tiny/init.lua:9
+msgid "Sea Buckthorn (tiny)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/stink_tree/medium/init.lua:9
+msgid "Stink Shepherd’s Tree (medium)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/stink_tree/ripe/init.lua:9
+msgid "Stink Shepherd’s Tree (ripe)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/stink_tree/small/init.lua:9
+msgid "Stink Shepherd’s Tree (small)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/stink_tree/tiny/init.lua:9
+msgid "Stink Shepherd’s Tree (tiny)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/strawberry/medium/init.lua:9
+msgid "Strawberries (medium)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/strawberry/ripe/init.lua:9
+msgid "Strawberries (ripe)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/strawberry/small/init.lua:9
+msgid "Strawberries (small)"
+msgstr ""
+
+#: addons/europeans_tribe.wad/immovables/berry_bushes/strawberry/tiny/init.lua:9
+msgid "Strawberries (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/blackrootfield/harvested/init.lua:8
+msgctxt "immovable"
+msgid "Blackroot Field (harvested)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/blackrootfield/medium/init.lua:8
+msgctxt "immovable"
+msgid "Blackroot Field (medium)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/blackrootfield/ripe/init.lua:8
+msgctxt "immovable"
+msgid "Blackroot Field (ripe)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/blackrootfield/small/init.lua:8
+msgctxt "immovable"
+msgid "Blackroot Field (small)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/blackrootfield/tiny/init.lua:8
+msgctxt "immovable"
+msgid "Blackroot Field (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/cornfield/harvested/init.lua:8
+msgctxt "immovable"
+msgid "Cornfield (harvested)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/cornfield/medium/init.lua:8
+msgctxt "immovable"
+msgid "Cornfield (medium)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/cornfield/ripe/init.lua:8
+msgctxt "immovable"
+msgid "Cornfield (ripe)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/cornfield/small/init.lua:8
+msgctxt "immovable"
+msgid "Cornfield (small)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/cornfield/tiny/init.lua:8
+msgctxt "immovable"
+msgid "Cornfield (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/reedfield/medium/init.lua:8
+msgctxt "immovable"
+msgid "Reed Field (medium)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/reedfield/ripe/init.lua:8
+msgctxt "immovable"
+msgid "Reed Field (ripe)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/reedfield/small/init.lua:8
+msgctxt "immovable"
+msgid "Reed Field (small)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/reedfield/tiny/init.lua:8
+msgctxt "immovable"
+msgid "Reed Field (tiny)"
+msgstr ""
+
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_coal_1/init.lua:8
 msgctxt "resource_indicator"
@@ -898,6 +1180,36 @@ msgctxt "immovable"
 msgid "Ship Under Construction"
 msgstr ""
 
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/wheatfield/harvested/init.lua:8
+msgctxt "immovable"
+msgid "Wheat Field (harvested)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/wheatfield/medium/init.lua:8
+msgctxt "immovable"
+msgid "Wheat Field (medium)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/wheatfield/ripe/init.lua:8
+msgctxt "immovable"
+msgid "Wheat Field (ripe)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/wheatfield/small/init.lua:8
+msgctxt "immovable"
+msgid "Wheat Field (small)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_tribe.wad/immovables/wheatfield/tiny/init.lua:8
+msgctxt "immovable"
+msgid "Wheat Field (tiny)"
+msgstr ""
+
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_advanced/init.lua:8
 msgctxt "europeans_building"
@@ -931,6 +1243,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_advanced/init.lua:114
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_basic/init.lua:88
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_normal/init.lua:113
@@ -964,7 +1277,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:98
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:90
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:104
-#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:103
+#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:104
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_1/init.lua:112
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_1/init.lua:124
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_2/init.lua:123
@@ -1000,6 +1313,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_4/init.lua:66
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_5/init.lua:68
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_6/init.lua:55
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:86
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:111
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:99
 msgid "idle program"
 msgstr ""
 
@@ -1483,7 +1799,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
 #: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_advanced/init.lua:50
-#: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_basic/init.lua:79
+#: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_basic/init.lua:80
 #: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_normal/init.lua:63
 msgctxt "europeans_building"
 msgid "terraforming land"
@@ -1491,7 +1807,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
 #: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_advanced/init.lua:61
-#: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_basic/init.lua:90
+#: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_basic/init.lua:91
 #: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_normal/init.lua:74
 msgctxt "europeans_building"
 msgid "terraforming coast"
@@ -1499,12 +1815,12 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
 #: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_advanced/init.lua:70
-#: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_basic/init.lua:99
+#: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_basic/init.lua:100
 #: addons/europeans_tribe.wad/productionsites_craft/terraformers_house_normal/init.lua:83
-#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:116
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:453
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:459
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:454
+#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:117
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:460
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:461
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:459
 msgid "dummy program"
 msgstr ""
 
@@ -1567,7 +1883,7 @@ msgid "Basic Animal Farm"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
-#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:75
+#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:76
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_1/init.lua:70
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_2/init.lua:66
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_3/init.lua:75
@@ -1578,7 +1894,7 @@ msgid "rearing cattle"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:90
+#: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:91
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_1/init.lua:85
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_2/init.lua:96
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_level_3/init.lua:103
@@ -2616,199 +2932,199 @@ msgid "Advanced Recruitement Center"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:85
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:110
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:98
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:107
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:127
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:118
 msgctxt "europeans_building"
 msgid "recruiting first carrier"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:96
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:109
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:118
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:129
 msgctxt "europeans_building"
 msgid "recruiting second carrier"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:108
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:130
 msgctxt "europeans_building"
 msgid "recruiting third carrier"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:120
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:121
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:121
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:142
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:138
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:141
 msgctxt "europeans_building"
 msgid "recruiting builder"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:134
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:134
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:135
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:156
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:151
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:155
 msgctxt "europeans_building"
 msgid "recruiting baker"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:149
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:148
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:150
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:170
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:164
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:169
 msgctxt "europeans_building"
 msgid "recruiting beekeeper"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:164
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:163
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:165
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:184
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:178
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:183
 msgctxt "europeans_building"
 msgid "recruiting breeder"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:179
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:178
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:180
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:198
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:192
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:197
 msgctxt "europeans_building"
 msgid "recruiting brewer"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:194
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:193
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:195
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:212
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:206
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:211
 msgctxt "europeans_building"
 msgid "recruiting carpenter"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:209
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:207
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:210
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:226
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:219
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:225
 msgctxt "europeans_building"
 msgid "recruiting charcoal burner"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:224
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:222
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:225
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:240
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:233
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:239
 msgctxt "europeans_building"
 msgid "recruiting claydigger"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:239
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:237
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:240
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:254
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:247
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:253
 msgctxt "europeans_building"
 msgid "recruiting farmer"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:254
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:251
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:255
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:269
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:261
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:268
 msgctxt "europeans_building"
 msgid "recruiting forester"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:269
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:265
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:270
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:283
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:274
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:282
 msgctxt "europeans_building"
 msgid "recruiting geologist"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:283
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:279
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:284
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:297
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:288
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:296
 msgctxt "europeans_building"
 msgid "recruiting lumberjack"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:298
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:293
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:299
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:311
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:301
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:310
 msgctxt "europeans_building"
 msgid "recruiting miller"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:313
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:308
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:314
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:325
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:315
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:324
 msgctxt "europeans_building"
 msgid "recruiting miner"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:328
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:322
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:329
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:339
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:328
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:338
 msgctxt "europeans_building"
 msgid "recruiting scout"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:339
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:333
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:340
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:350
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:339
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:349
 msgctxt "europeans_building"
 msgid "recruiting shipwright"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:353
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:347
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:354
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:364
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:353
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:363
 msgctxt "europeans_building"
 msgid "recruiting smelter"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:368
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:361
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:374
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:369
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:378
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:366
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:379
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:377
 msgctxt "europeans_building"
 msgid "recruiting smith"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:382
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:389
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:383
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:392
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:394
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:391
 msgctxt "europeans_building"
 msgid "recruiting stonecutter"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:397
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:404
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:398
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:406
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:408
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:405
 msgctxt "europeans_building"
 msgid "recruiting stonemason"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:412
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:419
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:413
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:420
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:422
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:419
 msgctxt "europeans_building"
 msgid "recruiting terraformer"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:427
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:434
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:428
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:435
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:437
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:434
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:105
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_1/init.lua:80
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_2/init.lua:81
@@ -2819,9 +3135,9 @@ msgid "recruiting trainer"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:438
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:445
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:439
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:446
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:448
+#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:445
 msgctxt "europeans_building"
 msgid "recruiting weaver"
 msgstr ""
@@ -4334,8 +4650,8 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1550
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1837
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1872
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1970
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2005
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1998
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2033
 msgid "This field has just been planted."
 msgstr ""
 
@@ -4350,10 +4666,10 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1851
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1879
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1886
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1977
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1984
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2005
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2012
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2019
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2040
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2047
 msgid "This field is growing."
 msgstr ""
 
@@ -4365,8 +4681,8 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1571
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1858
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1893
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1991
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2026
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2019
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2054
 msgid "This field is ready for harvesting."
 msgstr ""
 
@@ -4378,8 +4694,8 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1578
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1865
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1900
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1998
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2033
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2026
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2061
 msgid "This field has been harvested."
 msgstr ""
 
@@ -4436,8 +4752,24 @@ msgstr ""
 msgid "This berry bush is ready for harvesting."
 msgstr ""
 
-#. TRANSLATORS: Helptext for a Europeans immovable: Pond
+#. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1907
+msgid "This grapevine has just been planted."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1914
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1921
+msgid "This grapevine is growing."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1928
+msgid "This grapevine is ready for harvesting."
+msgstr ""
+
+#. TRANSLATORS: Helptext for a Europeans immovable: Pond
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1935
 msgid ""
 "When claydiggers dig up earth, they leave holes in the ground. These holes "
 "vanish after a while. Aqua farms can use them as ponds to grow fish in them, "
@@ -4445,68 +4777,52 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1914
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
 msgid ""
 "Fish are maturing in this pond. A fisher working from an aqua farm will be "
 "able to catch them when they are bigger."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1921
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1949
 msgid ""
 "Fish are living in this pond. A fisher working from an aqua farm can catch "
 "them as food."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1928
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1956
 msgid ""
 "A charcoal stack is burning in this earthen hole. When it has burnt down, a "
 "charcoal burner will be able to gather coal from it."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1935
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1963
 msgid ""
 "A charcoal stack, which had been erected in this earthen hole, is ready for "
 "a charcoal burner to gather coal from it."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1970
 msgid "This reed field has just been planted."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1949
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1977
 msgid "This reed field is growing."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1956
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1984
 msgid ""
 "This reed field is flowering. Honey can be produced from it by a beekeeper."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1963
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1991
 msgid "This reed field is ready for harvesting."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2040
-msgid "This grapevine has just been planted."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2047
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2054
-msgid "This grapevine is growing."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2061
-msgid "This grapevine is ready for harvesting."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources

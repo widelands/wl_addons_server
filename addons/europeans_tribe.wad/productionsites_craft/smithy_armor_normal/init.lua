@@ -228,7 +228,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coal",
                 "return=skipped when economy needs iron",
                 "return=skipped when economy needs gold",
-                "sleep=duration:120s",
+                "sleep=duration:180s",
                 "consume=armor cloth coal:2 iron:2 gold:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:45s",

@@ -115,7 +115,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs granite",
                 "return=skipped when economy needs coal and not workers need experience",
                 "return=skipped when economy needs water and not workers need experience",
-                "sleep=duration:90s",
+                "sleep=duration:120s",
                 "consume=coal:2 granite:2 water clay",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:30s",

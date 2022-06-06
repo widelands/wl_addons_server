@@ -89,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs beer",
                 "return=skipped when economy needs water",
-                "sleep=duration:90s",
+                "sleep=duration:120s",
                 "consume=water barley",
                 "animate=working duration:80s",
                 "produce=beer"

@@ -90,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood",
                 "return=skipped when economy needs planks",
                 "return=skipped when economy needs log",
-                "sleep=duration:90s",
+                "sleep=duration:120s",
                 "consume=log:2",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:30s", 

@@ -116,7 +116,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs beer_strong",
                 "return=skipped when economy needs mead",
                 "return=skipped when economy needs water",
-                "sleep=duration:90s",
+                "sleep=duration:120s",
                 "consume=water:4 barley:4 honey",
                 "animate=working duration:80s",
                 "produce=beer",

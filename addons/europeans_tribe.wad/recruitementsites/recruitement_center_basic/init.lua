@@ -101,8 +101,25 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_scout",
                 "call=recruit_trainer",
                 "call=recruit_carrier_1",
+                "call=recruit_carrier_idle",
                 "call=recruit_smith_workarround",
                 "return=skipped"
+            }
+        },
+        recruit_carrier_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs europeans_builder or economy needs europeans_geologist or economy needs europeans_carrier_1",
+                "return=skipped when economy needs europeans_farmer_basic or economy needs europeans_lumberjack_basic or economy needs europeans_forester_basic or economy needs europeans_breeder_basic",
+                "return=skipped when economy needs europeans_beekeeper_basic or economy needs europeans_brewer_basic or economy needs europeans_miller_basic or economy needs europeans_baker_basic",
+                "return=skipped when economy needs europeans_stonecutter_basic or economy needs europeans_claydigger_basic or economy needs europeans_miner_basic or economy needs europeans_stonemason_basic",
+                "return=skipped when economy needs europeans_carpenter_basic or economy needs europeans_weaver_basic or economy needs europeans_charcoal_burner_basic or economy needs europeans_smelter_basic",
+                "return=skipped when economy needs europeans_smith_basic or economy needs europeans_shipwright_basic or economy needs europeans_terraformer_basic or economy needs europeans_scout_basic",
+                "sleep=duration:180s",
+                "consume=europeans_carrier",
+                "animate=working duration:30s",
+                "recruit=europeans_carrier_1"
             }
         },
         recruit_carrier_1 = {
@@ -133,8 +150,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting baker"),
             actions = {
-                "return=skipped unless economy needs europeans_baker_basic",
-                "return=skipped unless economy needs ration or economy needs snack or economy needs meal",
+                "return=skipped unless economy needs europeans_baker_basic or economy needs ration or economy needs snack or economy needs meal",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -147,9 +163,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting beekeeper"),
             actions = {
-                "return=skipped unless economy needs europeans_beekeeper_basic",
+                "return=skipped unless economy needs europeans_beekeeper_basic or economy needs honey",
                 "return=skipped when economy needs buckets and economy needs water",
-                "return=skipped unless economy needs honey",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -162,9 +177,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting breeder"),
             actions = {
-                "return=skipped unless economy needs europeans_breeder_basic",
+                "return=skipped unless economy needs europeans_breeder_basic or economy needs meat or economy needs fish",
                 "return=skipped when economy needs buckets and economy needs water",
-                "return=skipped unless economy needs meat or economy needs fish",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -177,9 +191,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting brewer"),
             actions = {
-                "return=skipped unless economy needs europeans_brewer_basic",
+                "return=skipped unless economy needs europeans_brewer_basic or economy needs beer or economy needs beer_strong or economy needs mead or economy needs wine",
                 "return=skipped when economy needs buckets and economy needs water",
-                "return=skipped unless economy needs beer or economy needs beer_strong or economy needs mead or economy needs wine",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -192,8 +205,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting carpenter"),
             actions = {
-                "return=skipped unless economy needs europeans_carpenter_basic",
-                "return=skipped unless economy needs blackwood or economy needs planks",
+                "return=skipped unless economy needs europeans_carpenter_basic or economy needs blackwood or economy needs planks",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -206,9 +218,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting charcoal burner"),
             actions = {
-                "return=skipped unless economy needs europeans_charcoal_burner_basic",
+                "return=skipped unless economy needs europeans_charcoal_burner_basic or economy needs coal",
                 "return=skipped when economy needs buckets and economy needs water",
-                "return=skipped unless economy needs coal",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -221,9 +232,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting claydigger"),
             actions = {
-                "return=skipped unless economy needs europeans_claydigger_basic",
+                "return=skipped unless economy needs europeans_claydigger_basic or economy needs clay",
                 "return=skipped when economy needs buckets and economy needs water",
-                "return=skipped unless economy needs clay",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -250,8 +260,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting forester"),
             actions = {
-                "return=skipped unless economy needs europeans_forester_basic",
-                "return=skipped unless economy needs log",
+                "return=skipped unless economy needs europeans_forester_basic or economy needs log",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -278,8 +287,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting lumberjack"),
             actions = {
-                "return=skipped unless economy needs europeans_lumberjack_basic",
-                "return=skipped unless economy needs log",
+                "return=skipped unless economy needs europeans_lumberjack_basic or economy needs log",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -292,9 +300,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting miller"),
             actions = {
-                "return=skipped unless economy needs europeans_miller_basic",
+                "return=skipped unless economy needs europeans_miller_basic or economy needs flour",
                 "return=skipped when economy needs buckets and economy needs water",
-                "return=skipped unless economy needs flour",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -307,8 +314,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting miner"),
             actions = {
-                "return=skipped unless economy needs europeans_miner_basic",
-                "return=skipped unless economy needs granite or economy needs marble or economy needs quartz or economy needs diamond or economy needs coal or economy needs ore",
+                "return=skipped unless economy needs europeans_miner_basic or economy needs quartz or economy needs diamond or economy needs coal or economy needs ore",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -346,8 +352,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting smelter"),
             actions = {
-                "return=skipped unless economy needs europeans_smelter_basic",
-                "return=skipped unless economy needs iron or economy needs gold",
+                "return=skipped unless economy needs europeans_smelter_basic or economy needs iron or economy needs gold",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -388,9 +393,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting stonecutter"),
             actions = {
-                "return=skipped unless economy needs europeans_stonecutter_basic",
+                "return=skipped unless economy needs europeans_stonecutter_basic or economy needs granite or economy needs marble",
                 "return=skipped when economy needs buckets and economy needs water",
-                "return=skipped unless economy needs granite or economy needs marble",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -403,9 +407,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting stonemason"),
             actions = {
-                "return=skipped unless economy needs europeans_stonemason_basic",
+                "return=skipped unless economy needs europeans_stonemason_basic or economy needs grout or economy needs brick or economy needs marble_column",
                 "return=skipped when economy needs buckets and economy needs water",
-                "return=skipped unless economy needs grout or economy needs brick or economy needs marble_column",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",
@@ -444,8 +447,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting weaver"),
             actions = {
-                "return=skipped unless economy needs europeans_weaver_basic",
-                "return=skipped unless economy needs cloth or economy needs armor or economy needs tabard",
+                "return=skipped unless economy needs europeans_weaver_basic or economy needs cloth or economy needs armor or economy needs tabard",
                 "sleep=duration:5s",
                 "consume=europeans_carrier",
                 "sleep=duration:5s",

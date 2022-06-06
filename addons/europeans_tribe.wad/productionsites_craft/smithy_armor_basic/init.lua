@@ -143,7 +143,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs planks",
                 "return=skipped when economy needs coal",
                 "return=skipped when economy needs iron",
-                "sleep=duration:120s",
+                "sleep=duration:180s",
                 "consume=planks:2 coal:2 iron:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:30s",

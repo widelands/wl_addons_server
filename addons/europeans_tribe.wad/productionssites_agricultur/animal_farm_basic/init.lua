@@ -57,7 +57,8 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "water", amount = 8 },
         { name = "wheat", amount = 4 },
-        { name = "rye", amount = 4 }
+        { name = "rye", amount = 4 },
+        { name = "barley", amount = 4 }
     },
 
     programs = {
@@ -76,9 +77,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
                 "return=skipped when economy needs meat",
-                "return=skipped when economy needs flour",
-                "return=skipped unless site has water:2",
-                "consume=water:4 rye,wheat:4 ",
+                "return=skipped when economy needs flour and economy needs beer",
+                "return=skipped unless site has water:4",
+                "consume=water:4 rye,wheat,barley:4 ",
                 "sleep=duration:10s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:60s", -- Animation of feeding the cattle
@@ -90,8 +91,8 @@ wl.Descriptions():new_productionsite_type {
            descname = pgettext("europeans_building", "producing meat"),
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
-                "return=skipped unless site has water:2",
-                "consume=water:4 rye,wheat:4",
+                "return=skipped unless site has water:4",
+                "consume=water:4 rye,wheat,barley:4",
                 "sleep=duration:10s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:60s",
@@ -104,9 +105,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs meat",
                 "return=skipped when economy needs water",
-                "return=skipped when economy needs flour",
-                "sleep=duration:90s",
-                "consume=water wheat rye",
+                "return=skipped when economy needs flour or economy needs beer",
+                "sleep=duration:120s",
+                "consume=water:2 wheat rye,barley",
                 "animate=working duration:60s",
                 "produce=meat"
             }

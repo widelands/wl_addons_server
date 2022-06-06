@@ -75,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood",
                 "return=skipped when economy needs planks",
                 "return=skipped when economy needs log",
-                "sleep=duration:90s",
+                "sleep=duration:120s",
                 "consume=log:4",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:15s",

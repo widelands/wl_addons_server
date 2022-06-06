@@ -1901,6 +1901,34 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "grapevine_tiny",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
+                purpose = _("This grapevine has just been planted.")
+            }
+        },
+        {
+            name = "grapevine_small",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
+                purpose = _("This grapevine is growing.")
+            }
+        },
+        {
+            name = "grapevine_medium",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
+                purpose = _("This grapevine is growing.")
+            }
+        },
+        {
+            name = "grapevine_ripe",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
+                purpose = _("This grapevine is ready for harvesting.")
+            }
+        },
+        {
             name = "pond_dry",
             helptexts = {
                 -- TRANSLATORS: Helptext for a Europeans immovable: Pond
@@ -2031,34 +2059,6 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Helptext for an Europeans immovable: Wheat field
                 purpose = _("This field has been harvested.")
-            }
-        },
-        {
-            name = "grapevine_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-                purpose = _("This grapevine has just been planted.")
-            }
-        },
-        {
-            name = "grapevine_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-                purpose = _("This grapevine is growing.")
-            }
-        },
-        {
-            name = "grapevine_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-                purpose = _("This grapevine is growing.")
-            }
-        },
-        {
-            name = "grapevine_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-                purpose = _("This grapevine is ready for harvesting.")
             }
         },
         {

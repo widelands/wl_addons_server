@@ -85,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2 fish,meat:2",
                 "sleep=duration:10s",
-                "animate=working duration:70s",
+                "animate=working duration:60s",
                 "produce=ration:2"
             }
         },
@@ -95,7 +95,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs ration",
                 "return=skipped when economy needs water",
-                "sleep=duration:90s",
+                "sleep=duration:120s",
                 "consume=water flour fish,meat",
                 "animate=working duration:30s",
                 "produce=ration"

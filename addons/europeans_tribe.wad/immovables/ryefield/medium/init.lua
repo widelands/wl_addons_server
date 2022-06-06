@@ -10,7 +10,7 @@ wl.Descriptions():new_immovable_type {
     size = "small",
     programs = {
         main = {
-            "animate=idle duration:50s",
+            "animate=idle duration:40s",
             "transform=ryefield_ripe",
         }
     },

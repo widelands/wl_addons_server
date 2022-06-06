@@ -90,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs iron",
                 "return=skipped when economy needs coal",
                 "consume=ore coal",
-                "sleep=duration:90s",
+                "sleep=duration:120s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:25s",
                 "playsound=sound/metal/ironping priority:60%",

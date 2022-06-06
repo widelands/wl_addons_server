@@ -9,7 +9,7 @@ wl.Descriptions():new_immovable_type {
     icon = dirname .. "menu.png",
     programs = {
         main = {
-            "animate=idle duration:8m20s",
+            "animate=idle duration:7m30s",
             "remove=",
         }
     },

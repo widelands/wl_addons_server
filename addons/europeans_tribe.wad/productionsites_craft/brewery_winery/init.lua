@@ -123,7 +123,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs mead",
                 "return=skipped when economy needs wine",
                 "return=skipped when economy needs water",
-                "sleep=duration:90s",
+                "sleep=duration:120s",
                 "consume=water:5 barley:4 honey fruit grape",
                 "animate=working duration:80s",
                 "produce=beer",
