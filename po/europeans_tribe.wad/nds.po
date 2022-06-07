@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-06 03:04+0200\n"
+"POT-Creation-Date: 2022-06-07 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2022\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -809,313 +809,285 @@ msgstr "Kraamhuus"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/barleyfield/harvested/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Barley Field (harvested)"
-msgstr "Roggfeld (arnt)"
+msgstr "Garstenacker (arnt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/barleyfield/medium/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Barley Field (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Garstenacker (middel)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/barleyfield/ripe/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Barley Field (ripe)"
-msgstr "Roggfeld (riep)"
+msgstr "Garstenacker (riep)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/barleyfield/small/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Barley Field (small)"
-msgstr "Roggfeld (lütt)"
+msgstr "Garstenacker (lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/barleyfield/tiny/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Barley Field (tiny)"
-msgstr "Roggfeld (ganz lütt)"
+msgstr "Garstenacker (ganz lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/medium/init.lua:9
 msgid "Blueberry Bush (medium)"
-msgstr ""
+msgstr "Bickbeei (middel)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/ripe/init.lua:9
 msgid "Blueberry Bush (ripe)"
-msgstr ""
+msgstr "Bickbeei (riep)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/small/init.lua:9
 msgid "Blueberry Bush (small)"
-msgstr ""
+msgstr "Bickbeei (lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/tiny/init.lua:9
 msgid "Blueberry Bush (tiny)"
-msgstr ""
+msgstr "Bickbeei (ganz lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/currant_black/medium/init.lua:9
 msgid "Black Currant (medium)"
-msgstr ""
+msgstr "Kakelbeei (middel)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/currant_black/ripe/init.lua:9
 msgid "Black Currant (ripe)"
-msgstr ""
+msgstr "Kakelbeei (riep)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/currant_black/small/init.lua:9
 msgid "Black Currant (small)"
-msgstr ""
+msgstr "Kakelbeei (lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/currant_black/tiny/init.lua:9
 msgid "Black Currant (tiny)"
-msgstr ""
+msgstr "Kakelbeei (ganz lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/currant_red/medium/init.lua:9
-#, fuzzy
 msgid "Red Currant (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Albeei (middel)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/currant_red/ripe/init.lua:9
 msgid "Red Currant (ripe)"
-msgstr ""
+msgstr "Albeei (riep)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/currant_red/small/init.lua:9
-#, fuzzy
 msgid "Red Currant (small)"
-msgstr "Roggfeld (lütt)"
+msgstr "Albeei (lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/currant_red/tiny/init.lua:9
 msgid "Red Currant (tiny)"
-msgstr ""
+msgstr "Albeei (ganz lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/desert_hackberry/medium/init.lua:9
 msgid "Desert Hackberry (medium)"
-msgstr ""
+msgstr "Wüüstenbeei (middel)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/desert_hackberry/ripe/init.lua:9
 msgid "Desert Hackberry (ripe)"
-msgstr ""
+msgstr "Wüüstenbeei (riep)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/desert_hackberry/small/init.lua:9
 msgid "Desert Hackberry (small)"
-msgstr ""
+msgstr "Wüüstenbeei (lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/desert_hackberry/tiny/init.lua:9
 msgid "Desert Hackberry (tiny)"
-msgstr ""
+msgstr "Wüüstenbeei (ganz lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/berry_bushes/grapevine/medium/init.lua:10
-#, fuzzy
 msgctxt "immovable"
 msgid "Grapevine (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Wiendruven (middel)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/berry_bushes/grapevine/ripe/init.lua:10
-#, fuzzy
 msgctxt "immovable"
 msgid "Grapevine (ripe)"
-msgstr "Roggfeld (riep)"
+msgstr "Wiendruven (riep)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/berry_bushes/grapevine/small/init.lua:10
-#, fuzzy
 msgctxt "immovable"
 msgid "Grapevine (small)"
-msgstr "Roggfeld (lütt)"
+msgstr "Wiendruven (lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/berry_bushes/grapevine/tiny/init.lua:10
-#, fuzzy
 msgctxt "immovable"
 msgid "Grapevine (tiny)"
-msgstr "Roggfeld (ganz lütt)"
+msgstr "Wiendruven (ganz lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/juniper/medium/init.lua:9
-#, fuzzy
 msgid "Juniper (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Wacholder (middel)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/juniper/ripe/init.lua:9
 msgid "Juniper (ripe)"
-msgstr ""
+msgstr "Wacholder (riep)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/juniper/small/init.lua:9
-#, fuzzy
 msgid "Juniper (small)"
-msgstr "Roggfeld (lütt)"
+msgstr "Wacholder (lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/juniper/tiny/init.lua:9
 msgid "Juniper (tiny)"
-msgstr ""
+msgstr "Wacholder (ganz lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/raspberry/medium/init.lua:9
 msgid "Raspberry Bush (medium)"
-msgstr ""
+msgstr "Henntjebeei (middel)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/raspberry/ripe/init.lua:9
 msgid "Raspberry Bush (ripe)"
-msgstr ""
+msgstr "Henntjebeei (riep)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/raspberry/small/init.lua:9
 msgid "Raspberry Bush (small)"
-msgstr ""
+msgstr "Henntjebeei (lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/raspberry/tiny/init.lua:9
 msgid "Raspberry Bush (tiny)"
-msgstr ""
+msgstr "Henntjebeei (ganz lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/sea_buckthorn/medium/init.lua:9
 msgid "Sea Buckthorn (medium)"
-msgstr ""
+msgstr "Sanddoorn (middel)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/sea_buckthorn/ripe/init.lua:9
 msgid "Sea Buckthorn (ripe)"
-msgstr ""
+msgstr "Sanddoorn (riep)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/sea_buckthorn/small/init.lua:9
 msgid "Sea Buckthorn (small)"
-msgstr ""
+msgstr "Sanddoorn (lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/sea_buckthorn/tiny/init.lua:9
 msgid "Sea Buckthorn (tiny)"
-msgstr ""
+msgstr "Sanddoorn (ganz lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/stink_tree/medium/init.lua:9
 msgid "Stink Shepherd’s Tree (medium)"
-msgstr ""
+msgstr "Stinkerboomtje (middel)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/stink_tree/ripe/init.lua:9
 msgid "Stink Shepherd’s Tree (ripe)"
-msgstr ""
+msgstr "Stinkerboomtje (riep)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/stink_tree/small/init.lua:9
 msgid "Stink Shepherd’s Tree (small)"
-msgstr ""
+msgstr "Stinkerboomtje (lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/stink_tree/tiny/init.lua:9
 msgid "Stink Shepherd’s Tree (tiny)"
-msgstr ""
+msgstr "Stinkerboomtje (ganz lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/strawberry/medium/init.lua:9
-#, fuzzy
 msgid "Strawberries (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Eerdjebeei (middel)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/strawberry/ripe/init.lua:9
 msgid "Strawberries (ripe)"
-msgstr ""
+msgstr "Eerdjebeei (riep)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/strawberry/small/init.lua:9
 msgid "Strawberries (small)"
-msgstr ""
+msgstr "Eerdjebeei (lütt)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/strawberry/tiny/init.lua:9
 msgid "Strawberries (tiny)"
-msgstr ""
+msgstr "Eerdjebeei (ganz lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/blackrootfield/harvested/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Blackroot Field (harvested)"
-msgstr "Roggfeld (arnt)"
+msgstr "Swartwuddels-Acker (arnt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/blackrootfield/medium/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Blackroot Field (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Swartwuddels-Acker (middel)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/blackrootfield/ripe/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Blackroot Field (ripe)"
-msgstr "Roggfeld (riep)"
+msgstr "Swartwuddels-Acker (riep)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/blackrootfield/small/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Blackroot Field (small)"
-msgstr "Roggfeld (lütt)"
+msgstr "Swartwuddels-Acker (lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/blackrootfield/tiny/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Blackroot Field (tiny)"
-msgstr "Roggfeld (ganz lütt)"
+msgstr "Swartwuddels-Acker (lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/cornfield/harvested/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Cornfield (harvested)"
-msgstr "Roggfeld (arnt)"
+msgstr "Maisacker (arnt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/cornfield/medium/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Cornfield (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Maisacker (middel)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/cornfield/ripe/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Cornfield (ripe)"
-msgstr "Roggfeld (riep)"
+msgstr "Maisacker (riep)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/cornfield/small/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Cornfield (small)"
-msgstr "Roggfeld (lütt)"
+msgstr "Maisacker (lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/cornfield/tiny/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Cornfield (tiny)"
-msgstr "Roggfeld (ganz lütt)"
+msgstr "Maisacker (ganz lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/medium/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Reed Field (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Reitacker (middel)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/ripe/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Reed Field (ripe)"
-msgstr "Roggfeld (riep)"
+msgstr "Reitacker (riep)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/small/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Reed Field (small)"
-msgstr "Roggfeld (lütt)"
+msgstr "Reitacker (lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/tiny/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Reed Field (tiny)"
-msgstr "Roggfeld (ganz lütt)"
+msgstr "Reitacker (ganz lütt)"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_coal_1/init.lua:8
@@ -1181,31 +1153,31 @@ msgstr "Water"
 #: addons/europeans_tribe.wad/immovables/ryefield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr "Roggfeld (arnt)"
+msgstr "Roggacker (arnt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Roggacker (middel)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr "Roggfeld (riep)"
+msgstr "Roggacker (riep)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/small/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr "Roggfeld (lütt)"
+msgstr "Roggacker (lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr "Roggfeld (ganz lütt)"
+msgstr "Roggacker (ganz lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/shipconstruction_europeans/init.lua:8
@@ -1215,38 +1187,33 @@ msgstr "Schipp-Baustee"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/wheatfield/harvested/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Wheat Field (harvested)"
-msgstr "Roggfeld (arnt)"
+msgstr "Weitacker (arnt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/wheatfield/medium/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Wheat Field (medium)"
-msgstr "Roggfeld (middel)"
+msgstr "Weitacker (middel)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/wheatfield/ripe/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Wheat Field (ripe)"
-msgstr "Roggfeld (riep)"
+msgstr "Weitacker (riep)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/wheatfield/small/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Wheat Field (small)"
-msgstr "Roggfeld (lütt)"
+msgstr "Weitacker (lütt)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/wheatfield/tiny/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Wheat Field (tiny)"
-msgstr "Roggfeld (ganz lütt)"
+msgstr "Weitacker (ganz lütt)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_advanced/init.lua:8
@@ -2039,7 +2006,7 @@ msgid ""
 "fields or bushes in his work area. You should consider building another farm "
 "or berry farm nearby, or dismantling or destroying this building."
 msgstr ""
-"De Imker dat warkt bi deese Imkeree hett keene Felden of Busken mit Blössems "
+"De Imker dat warkt bi deese Imkeree hett keene Ackers of Busken mit Blössems "
 "in de Naberskupp. Bau eene Buurderee of Buskenplanteree of överlegg di, of "
 "du dat Huus plattrieten of ofbrannen willst."
 
@@ -4768,7 +4735,7 @@ msgstr "Maakt Lehm för de Kalkbranneree un Steenbickerhuus."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1246
 msgctxt "europeans_worker"
 msgid "Plants and harvests fields."
-msgstr "Plant un arnt Felden."
+msgstr "Plant un arnt Ackers."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Weaver
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1255
@@ -4878,7 +4845,7 @@ msgstr "Wat vun eenem verneelten Huus över blievt."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1998
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2033
 msgid "This field has just been planted."
-msgstr "Deeses Feld is jüüst plant worden."
+msgstr "Deeser Acker is jüüst plant worden."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: blackroot field
@@ -4896,7 +4863,7 @@ msgstr "Deeses Feld is jüüst plant worden."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2040
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2047
 msgid "This field is growing."
-msgstr "Deeses Feld wasst."
+msgstr "Deeser Acker wasst."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: blackroot field
@@ -4909,7 +4876,7 @@ msgstr "Deeses Feld wasst."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2019
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2054
 msgid "This field is ready for harvesting."
-msgstr "Deeses Feld is klaar tum arnten."
+msgstr "Deeser Acker is klaar tum arnten."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: blackroot field
@@ -4922,7 +4889,7 @@ msgstr "Deeses Feld is klaar tum arnten."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2026
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2061
 msgid "This field has been harvested."
-msgstr "Deeses Feld is arnt."
+msgstr "Deeser Acker is arnt."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1585
@@ -5043,12 +5010,12 @@ msgstr ""
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1970
 msgid "This reed field has just been planted."
-msgstr "Deeses Reitfeld is jüüst plant worden."
+msgstr "Deeser Reitacker is jüüst plant worden."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1977
 msgid "This reed field is growing."
-msgstr "Deeses Reitfeld wasst."
+msgstr "Deeser Reitacker wasst."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1984
@@ -5059,7 +5026,7 @@ msgstr "Deeser Reitacker blöömt. Een Imker kaan daarmit Hönnig maken."
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1991
 msgid "This reed field is ready for harvesting."
-msgstr "Deeses Reitfeld is klaar tum arnten."
+msgstr "Deeser Reitacker is klaar tum arnten."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2068
@@ -5319,7 +5286,7 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Keeps bees and lets them swarm over flowering fields to produce honey."
 msgstr ""
-"Tücht Immen un lett se över flörige Felden swarmen, um Hönnig to produzeren."
+"Tücht Immen un lett se över flörige Ackers swarmen, um Hönnig to produzeren."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Beekeeper's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2424
@@ -5330,7 +5297,7 @@ msgid ""
 "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) or "
 "bushes (berry bushes or grapevines) nearby."
 msgstr ""
-"Bruukt middelgrote Felden (Garst, Rogg, Weit, Reit, Mais of Swartwuddels) of "
+"Bruukt middelgrote Ackers (Garst, Rogg, Weit, Reit, Mais of Swartwuddels) of "
 "Busken (Bejen of Druven) in de Naberskupp."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
