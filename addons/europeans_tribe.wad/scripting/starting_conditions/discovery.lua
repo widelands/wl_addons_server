@@ -34,7 +34,12 @@ local init = {
          saw = 4,
          shovel = 2,
          buckets = 4,
-         europeans_soldier = 1,
+         europeans_stonecutter_basic = 2,
+         europeans_lumberjack_basic = 2,
+         europeans_carpenter_basic = 1,
+         europeans_weaver_basic = 1,
+         europeans_stonemason_basic = 1,
+         europeans_soldier = 2,
       },
       {
          water = 16,
@@ -48,7 +53,9 @@ local init = {
          quartz = 7,
          diamond = 7,
          coal = 15,
-         europeans_soldier = 1,
+         europeans_farmer_basic = 6,
+         europeans_breeder_basic = 4,
+         europeans_soldier = 2,
       },
       {
          water = 16,
@@ -68,10 +75,11 @@ local init = {
          fire_tongs = 4,
          hammer = 8,
          saw = 8,
+         europeans_miner_basic = 4,
          europeans_smith_basic = 1,
          europeans_trainer_basic = 1,
          europeans_geologist = 1,
-         europeans_soldier = 1,
+         europeans_soldier = 2,
       },
     })
     

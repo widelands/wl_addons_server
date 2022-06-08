@@ -62,7 +62,7 @@ wl.Descriptions():new_productionsite_type {
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start scouting because ...
-            descname = _"scouting",
+            descname = pgettext("europeans_building", "scouting"),
             actions = {
                 "consume=ration beer",
                 "sleep=duration:30s",
@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         targeted_scouting = {
-            descname = _"scouting",
+            descname = pgettext("europeans_building", "scouting"),
             actions = {
                 "consume=ration beer",
                 "callworker=targeted_scouting"

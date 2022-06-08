@@ -32,12 +32,13 @@ local init = {
                     workers = {
                         europeans_carrier = 16,
                         europeans_builder = 8,
-                        europeans_farmer_basic = 6,
+                        europeans_farmer_basic = 8,
+                        europeans_breeder_basic = 4,
                         europeans_lumberjack_basic = 4,
                         europeans_forester_basic = 3,
                         europeans_miner_basic = 3,
                         europeans_trainer_basic = 2,
-                        europeans_stonecutter_basic = 1,
+                        europeans_stonecutter_basic = 2,
                         europeans_carpenter_basic = 1,
                         europeans_charcoal_burner_basic = 1,
                         europeans_stonemason_basic = 1,
@@ -69,6 +70,8 @@ local init = {
                 planks = 31,
                 marble = 31,
                 marble_column = 15,
+                grout = 15,
+                brick = 15,
                 iron = 7,
                 gold = 7,
                 quartz = 15,
@@ -93,12 +96,13 @@ local init = {
             workers = {
                 europeans_carrier = 32,
                 europeans_builder = 16,
-                europeans_farmer_basic = 8,
+                europeans_farmer_basic = 12,
+                europeans_breeder_basic = 6,
                 europeans_miner_basic = 6,
                 europeans_lumberjack_basic = 6,
                 europeans_forester_basic = 6,
+                europeans_stonecutter_basic = 4,
                 europeans_trainer_basic = 4,
-                europeans_stonecutter_basic = 3,
                 europeans_carpenter_basic = 2,
                 europeans_charcoal_burner_basic = 2,
                 europeans_stonemason_basic = 2,
@@ -131,6 +135,8 @@ local init = {
             port:set_wares("planks", math.ceil(31 / #ports))
             port:set_wares("marble", math.ceil(31 / #ports))
             port:set_wares("marble_column", math.ceil(15 / #ports))
+            port:set_wares("grout", math.ceil(15 / #ports))
+            port:set_wares("brick", math.ceil(15 / #ports))
             port:set_wares("iron", math.ceil(7 / #ports))
             port:set_wares("gold", math.ceil(7 / #ports))
             port:set_wares("quartz", math.ceil(15 / #ports))
