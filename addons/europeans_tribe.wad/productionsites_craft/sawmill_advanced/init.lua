@@ -49,10 +49,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs planks",
                 "return=skipped unless site has log:4",
                 "consume=log:4",
-                "sleep=duration:5s",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:10s",
-                "produce=planks:3"
+                "produce=planks:3",
+                "sleep=duration:30s"
             }
         },
         hardening_wood = {
@@ -62,10 +62,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs blackwood",
                 "return=skipped unless site has log:4",
                 "consume=log:4",
-                "sleep=duration:5s",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:10s",
-                "produce=blackwood:3"
+                "produce=blackwood:3",
+                "sleep=duration:30s"
             }
         },
         saw_log_idle = {
@@ -75,7 +75,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood",
                 "return=skipped when economy needs planks",
                 "return=skipped when economy needs log",
-                "sleep=duration:120s",
                 "consume=log:4",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:15s",
@@ -83,7 +82,8 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:90s",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:15s", 
-                "produce=planks"
+                "produce=planks",
+                "sleep=duration:90s"
             }
         }
     },

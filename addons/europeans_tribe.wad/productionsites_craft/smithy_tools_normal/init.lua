@@ -85,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs basket",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=basket:3"
@@ -97,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs bread_paddle",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=bread_paddle:3"
@@ -109,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs buckets",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=buckets:3"
@@ -121,7 +121,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs felling_ax",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=felling_ax:3"
@@ -133,7 +133,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fire_tongs",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=fire_tongs:3"
@@ -145,7 +145,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs hammer",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=hammer:3"
@@ -157,7 +157,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs hook_pole",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=hook_pole:3"
@@ -169,7 +169,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs kitchen_tools",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=kitchen_tools:3"
@@ -181,7 +181,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs needles",
                 "consume=coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=needles:3"
@@ -193,7 +193,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs pick",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=pick:3"
@@ -205,7 +205,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs saw",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=saw:3"
@@ -217,7 +217,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs scythe",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=scythe:3"
@@ -229,7 +229,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs shovel",
                 "consume=planks:2 coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=shovel:3"

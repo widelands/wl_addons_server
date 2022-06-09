@@ -49,13 +49,13 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs flour",
                 "return=skipped when economy needs meat and not economy needs flour",
-                "return=skipped unless site has rye:4",
-                "return=skipped unless site has wheat:4",
-                "sleep=duration:15s",
-                "consume=wheat:4 rye:4",
+                "return=skipped unless site has rye:8",
+                "return=skipped unless site has wheat:8",
+                "consume=wheat:8 rye:8",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:60s",
-                "produce=flour:7"
+                "animate=working duration:45s",
+                "produce=flour:12",
+                "sleep=duration:60s"
             }
         },
         produce_mixed_flour_idle = {
@@ -63,11 +63,11 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs flour",
-                "sleep=duration:120s",
                 "consume=wheat rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
                 "animate=working duration:60s",
-                "produce=flour"
+                "produce=flour",
+                 "sleep=duration:120s"
             }
         }
     },

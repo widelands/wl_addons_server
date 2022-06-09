@@ -53,12 +53,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water and not economy needs ration",
                 "return=skipped unless economy needs ration",
-                "return=skipped unless site has water:2",
-                "return=skipped unless site has flour:2",
-                "consume=water:2 flour:2 fish,meat:2",
-                "sleep=duration:5s",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has flour:4",
+                "consume=water:4 flour:4 fish,meat:4",
                 "animate=working duration:20s",
-                "produce=ration:2"
+                "produce=ration:4",
+                "sleep=duration:30s"
             }
         },
         produce_snack = {
@@ -70,9 +70,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:4",
                 "return=skipped unless site has flour:4",
                 "consume=water:4 flour:4 fish,meat:4",
-                "sleep=duration:5s",
                 "animate=working duration:40s",
-                "produce=snack:3"
+                "produce=snack:3",
+                "sleep=duration:30s"
             }
         },
         produce_meal = {
@@ -84,9 +84,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:4",
                 "return=skipped unless site has flour:4",
                 "consume=water:4 flour:4 fish,meat:4",
-                "sleep=duration:5s",
                 "animate=working duration:30s",
-                "produce=meal:2"
+                "produce=meal:2",
+                "sleep=duration:30s"
             }
         },
         produce_meal_idle = {
@@ -97,7 +97,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs snack",
                 "return=skipped when economy needs meal",
                 "return=skipped when economy needs water",
-                "sleep=duration:120s",
                 "consume=water:6 flour:6 fish,meat:6",
                 "animate=working duration:30s",
                 "produce=ration",
@@ -106,7 +105,8 @@ wl.Descriptions():new_productionsite_type {
                 "produce=snack",
                 "sleep=duration:90s",
                 "animate=working duration:30s",
-                "produce=meal"
+                "produce=meal",
+                "sleep=duration:120s"
             }
         }
     },

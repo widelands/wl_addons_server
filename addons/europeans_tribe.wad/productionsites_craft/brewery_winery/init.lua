@@ -28,11 +28,11 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 8 },
-        { name = "barley", amount = 8 },
-        { name = "honey", amount = 6 },
-        { name = "fruit", amount = 4 },
-        { name = "grape", amount = 8 }
+        { name = "water", amount = 14 },
+        { name = "barley", amount = 12 },
+        { name = "honey", amount = 4 },
+        { name = "grape", amount = 6 },
+        { name = "fruit", amount = 2 }
     },
 
     programs = {
@@ -56,12 +56,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs beer or workers need experience",
                 "return=skipped when site has honey and economy needs mead and not economy needs beer",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs beer",
-                "return=skipped unless site has water:3",
-                "return=skipped unless site has barley:3",
-                "consume=water:3 barley:3",
-                "sleep=duration:5s",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has barley:4",
+                "consume=water:4 barley:4",
                 "animate=working duration:60s",
-                "produce=beer:3"
+                "produce=beer:4",
+                "sleep=duration:30s"
             }
         },
         brew_mead = {
@@ -72,13 +72,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs mead or workers need experience",
                 "return=skipped when site has barley and economy needs beer and not economy needs mead",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
-                "return=skipped unless site has water:3",
-                "return=skipped unless site has barley:3",
-                "return=skipped unless site has honey:3",
-                "consume=water:3 barley:3 honey:3",
-                "sleep=duration:5s",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has barley:4",
+                "return=skipped unless site has honey:4",
+                "consume=water:4 barley:4 honey:4",
                 "animate=working duration:60s",
-                "produce=mead:3"
+                "produce=mead:4",
+                "sleep=duration:30s"
             }
         },
         brew_strong_beer = {
@@ -92,9 +92,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:4",
                 "return=skipped unless site has barley:4",
                 "consume=water:4 barley:4",
-                "sleep=duration:5s",
                 "animate=working duration:70s",
-                "produce=beer_strong:3"
+                "produce=beer_strong:3",
+                "sleep=duration:30s"
             }
         },
         making_wine = {
@@ -104,14 +104,14 @@ wl.Descriptions():new_productionsite_type {
                 -- Grapes are only needed for wine, so no need to check if wine is needed
                 "return=skipped when economy needs water and not economy needs wine",
                 "return=skipped unless economy needs wine or workers need experience",
-                "return=skipped unless site has water",
-                "return=skipped unless site has fruit",
-                "return=skipped unless site has grape:4",
-                "consume=water fruit grape:4",
-                "sleep=duration:5s",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has fruit:2",
+                "return=skipped unless site has grape:6",
+                "consume=water:2 fruit:2 grape:6",
                 "playsound=sound/empire/winebubble priority:40% allow_multiple",
                 "animate=working duration:70s",
-                "produce=wine:3"
+                "produce=wine:6",
+                "sleep=duration:30s"
             }
         },
         making_wine_idle = {
@@ -123,7 +123,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs mead",
                 "return=skipped when economy needs wine",
                 "return=skipped when economy needs water",
-                "sleep=duration:120s",
                 "consume=water:5 barley:4 honey fruit grape",
                 "animate=working duration:80s",
                 "produce=beer",
@@ -136,7 +135,8 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:90s",
                 "playsound=sound/empire/winebubble priority:40% allow_multiple",
                 "animate=working duration:70s",
-                "produce=wine"
+                "produce=wine",
+                "sleep=duration:120s"
             }
         }
     },

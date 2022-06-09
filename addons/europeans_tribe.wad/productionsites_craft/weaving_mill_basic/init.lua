@@ -59,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 6 }
+        { name = "reed", amount = 4 }
     },
 
     programs = {
@@ -77,12 +77,12 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped when economy needs reed and not economy needs cloth",
-                "return=skipped unless site has reed:3",
-                "consume=reed:3",
-                "sleep=duration:10s",
+                "return=skipped unless site has reed:4",
+                "consume=reed:4",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:50s",
-                "produce=cloth:3"
+                "produce=cloth:4",
+                "sleep=duration:60s"
             }
         },
         produce_cloth_idle = {
@@ -91,11 +91,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs cloth",
                 "return=skipped when economy needs reed and not workers need experience",
-                "sleep=duration:120s",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:60s",
-                "produce=cloth"
+                "produce=cloth",
+                "sleep=duration:120s"
             }
         }
     },

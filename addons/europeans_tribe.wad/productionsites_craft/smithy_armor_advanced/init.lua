@@ -69,11 +69,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs spear_wooden",
                 "consume=planks",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "produce=spear_wooden"
             }
         },
@@ -83,7 +83,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs helmet_mask",
                 "consume=coal iron",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=helmet_mask"
@@ -95,11 +95,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs spear_advanced",
                 "consume=planks coal iron",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "produce=spear_advanced"
             }
         },
@@ -109,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs armor_chain",
                 "consume=armor coal iron",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "animate=working duration:20s",
                 "produce=armor_chain"
             }
@@ -120,7 +120,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs shield_steel",
                 "consume=coal:2 iron:2",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "animate=working duration:20s",
                 "produce=shield_steel"
             }
@@ -131,11 +131,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs ax_broad",
                 "consume=planks coal:2 iron:2",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "produce=ax_broad"
             }
         },
@@ -145,7 +145,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs armor_gilded",
                 "consume=armor coal iron gold",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "animate=working duration:20s",
                 "produce=armor_gilded"
             }
@@ -156,7 +156,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs tabard_golden",
                 "consume=cloth coal iron gold",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "animate=working duration:20s",
                 "produce=tabard_golden"
             }
@@ -167,7 +167,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs shield_advanced",
                 "consume=coal:2 iron:2 gold",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "animate=working duration:20s",
                 "produce=shield_advanced"
             }
@@ -178,11 +178,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs sword_broad",
                 "consume=planks coal:2 iron:2",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "produce=sword_broad"
             }
         },

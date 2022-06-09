@@ -54,8 +54,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coal", amount = 6 },
-        { name = "ore", amount = 6 }
+        { name = "coal", amount = 4 },
+        { name = "ore", amount = 4 }
     },
 
     programs = {
@@ -73,14 +73,14 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "smelting iron"),
             actions = {
                 "return=skipped unless economy needs iron or workers need experience",
-                "return=skipped unless site has coal:3",
-                "return=skipped unless site has ore:3",
-                "consume=ore:3 coal:3",
-                "sleep=duration:10s",
+                "return=skipped unless site has coal:4",
+                "return=skipped unless site has ore:4",
+                "consume=ore:4 coal:4",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:35s",
+                "animate=working duration:40s",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=iron:3",
+                "produce=iron:4",
+                "sleep=duration:60s"
             }
         },
         smelt_iron_idle = {
@@ -90,11 +90,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs iron",
                 "return=skipped when economy needs coal",
                 "consume=ore coal",
-                "sleep=duration:120s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:25s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron",
+                "sleep=duration:120s"
             }
         }
     },

@@ -60,10 +60,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs cloth",
                 "return=skipped unless site has reed:3",
                 "consume=reed:3",
-                "sleep=duration:5s",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:20s",
-                "produce=cloth:3"
+                "produce=cloth:3",
+                "sleep=duration:30s"
             }
         },
         produce_tabard = {
@@ -71,12 +71,12 @@ wl.Descriptions():new_productionsite_type {
            descname = pgettext("europeans_building", "tailoring a tabard"),
             actions = {
                 "return=skipped unless economy needs tabard",
-                "return=skipped unless site has reed:2",
-                "consume=reed:2",
-                "sleep=duration:5s",
+                "return=skipped unless site has reed:3",
+                "consume=reed:3",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:20s",
-                "produce=tabard:2"
+                "produce=tabard:3",
+                "sleep=duration:30s"
             }
         },
         produce_armor = {
@@ -84,13 +84,12 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a suit of armor"),
             actions = {
                 "return=skipped unless economy needs armor",
-                "return=skipped unless site has wool:2",
-                "consume=wool:2",
-                "sleep=duration:5s",
+                "return=skipped unless site has wool:4",
+                "consume=wool:4",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:20s",
-                "sleep=duration:5s",
-                "produce=armor:2"
+                "produce=armor:4",
+                "sleep=duration:30s"
             }
         },
         produce_armor_idle = {
@@ -99,13 +98,13 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs tabard",
                 "return=skipped when economy needs armor",
-                "sleep=duration:120s",
                 "consume=reed wool",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:60s",
                 "produce=tabard",
                 "animate=working duration:60s",
-                "produce=armor"
+                "produce=armor",
+                "sleep=duration:120s"
             }
         }
     },

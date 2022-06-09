@@ -86,11 +86,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs spear_wooden",
                 "consume=planks",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "produce=spear_wooden"
             }
         },
@@ -100,7 +100,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs helmet_mask",
                 "consume=coal iron",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "produce=helmet_mask"
@@ -112,11 +112,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs spear_advanced",
                 "consume=planks coal iron",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "produce=spear_advanced"
             }
         },

@@ -48,8 +48,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "ration", amount = 6 },
-        { name = "beer", amount = 6 }
+        { name = "ration", amount = 5 },
+        { name = "beer", amount = 5 }
     },
 
     programs = {

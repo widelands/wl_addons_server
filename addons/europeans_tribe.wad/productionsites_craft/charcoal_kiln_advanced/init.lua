@@ -28,7 +28,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 24 },
+        { name = "log", amount = 16 },
         { name = "blackwood", amount = 8 },
         { name = "planks", amount = 8 }
     },
@@ -50,11 +50,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal",
-                "return=skipped unless site has log:12",
-                "consume=log:12",
-                "sleep=duration:5s",
+                "return=skipped unless site has log:16",
+                "consume=log:16",
                 "animate=working duration:1m30s",
-                "produce=coal:5",
+                "produce=coal:10",
+                "sleep=duration:60s"
             }
         },
         burn_blackwood = {
@@ -63,11 +63,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs coal",
                 "return=skipped when economy needs blackwood",
-                "return=skipped unless site has blackwood:6",
-                "consume=blackwood:6",
-                "sleep=duration:5s",
+                "return=skipped unless site has blackwood:8",
+                "consume=blackwood:8",
                 "animate=working duration:1m30s", -- Charcoal fires will burn for some days in real life
-                "produce=coal:3"
+                "produce=coal:5",
+                "sleep=duration:30s"
             }
         },
         burn_planks = {
@@ -76,11 +76,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs coal",
                 "return=skipped when economy needs planks",
-                "return=skipped unless site has planks:6",
-                "consume=planks:6",
-                "sleep=duration:5s",
+                "return=skipped unless site has planks:8",
+                "consume=planks:8",
                 "animate=working duration:1m30s", -- Charcoal fires will burn for some days in real life
-                "produce=coal:3"
+                "produce=coal:6",
+                "sleep=duration:30s"
             }
         },
         burn_log_idle = {
@@ -90,9 +90,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coal",
                 "return=skipped when economy needs log",
                 "consume=log:3",
-                "sleep=duration:60s",
                 "animate=working duration:1m30s",
-                "produce=coal"
+                "produce=coal",
+                "sleep=duration:60s"
             }
         }
     },

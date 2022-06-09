@@ -87,16 +87,9 @@ local init = {
     })
     place_building_in_region(player, "europeans_well_basic", sf:region(6), {
     })
-    sleep(10000)
-    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
+    place_building_in_region(player, "europeans_well_basic", sf:region(6), {
     })
-    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
-        inputs = {water = 4},
-    })
-    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
-    })
-    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
-        inputs = {water = 4},
+    place_building_in_region(player, "europeans_well_basic", sf:region(6), {
     })
     sleep(20000)
     place_building_in_region(player, "europeans_farm_basic", sf:region(16), {
@@ -105,11 +98,24 @@ local init = {
     place_building_in_region(player, "europeans_farm_basic", sf:region(16), {
         inputs = {water = 6},
     })
-    sleep(20000)
+    sleep(30000)
     place_building_in_region(player, "europeans_farm_medium_basic", sf:region(12), {
         inputs = {water = 4},
     })
     place_building_in_region(player, "europeans_farm_medium_basic", sf:region(12), {
+        inputs = {water = 4},
+    })
+    sleep(30000)
+    place_building_in_region(player, "europeans_quarry_basic", sf:region(12), {
+    })
+    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
+    })
+    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
+        inputs = {water = 4},
+    })
+    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
+    })
+    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
         inputs = {water = 4},
     })
 end

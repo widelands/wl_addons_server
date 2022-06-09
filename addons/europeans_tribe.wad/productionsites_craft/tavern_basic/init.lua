@@ -62,7 +62,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "water", amount = 4 },
         { name = "flour", amount = 4 },
         { name = "meat", amount = 4 },
-        { name = "fish", amount = 2 }
+        { name = "fish", amount = 4 }
     },
 
     programs = {
@@ -81,12 +81,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water and not economy needs ration",
                 "return=skipped unless economy needs ration or workers need experience",
-                "return=skipped unless site has water:2",
-                "return=skipped unless site has flour:2",
-                "consume=water:2 flour:2 fish,meat:2",
-                "sleep=duration:10s",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has flour:4",
+                "consume=water:4 flour:4 fish,meat:4",
                 "animate=working duration:60s",
-                "produce=ration:2"
+                "produce=ration:4",
+                "sleep=duration:30s"
             }
         },
         produce_ration_idle = {
@@ -95,10 +95,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs ration",
                 "return=skipped when economy needs water",
-                "sleep=duration:120s",
                 "consume=water flour fish,meat",
                 "animate=working duration:30s",
-                "produce=ration"
+                "produce=ration",
+                "sleep=duration:120s"
             }
         }
     },

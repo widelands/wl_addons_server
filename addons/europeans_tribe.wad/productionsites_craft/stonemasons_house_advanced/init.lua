@@ -62,12 +62,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has granite:3",
                 "return=skipped unless site has water:3",
                 "consume=coal:2 granite:3 water:3",
-                "sleep=duration:5s",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:30s",
                 "playsound=sound/barbarians/mortar priority:60%",
                 "sleep=duration:3s",
-                "produce=grout:3"
+                "produce=grout:3",
+                "sleep=duration:30s"
             }
         },
         burning_bricks = {
@@ -79,11 +79,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has clay:3",
                 "consume=coal:2 granite clay:3",
-                "sleep=duration:5s",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:30s",
                 "sleep=duration:3s",
-                "produce=brick:3"
+                "produce=brick:3",
+                "sleep=duration:30s"
             }
         },
         sculpting_marble_column = {
@@ -94,7 +94,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs marble",
                 "return=skipped unless site has marble:6",
                 "consume=marble:3",
-                "sleep=duration:5s",
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "produce=marble_column:2",
@@ -103,7 +102,8 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5s",
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",
                 "animate=working duration:30s",
-                "produce=marble_column:2"
+                "produce=marble_column:2",
+                "sleep=duration:30s"
             }
         },
         burning_bricks_idle = {
@@ -116,7 +116,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs granite",
                 "return=skipped when economy needs coal",
                 "return=skipped when economy needs water",
-                "sleep=duration:120s",
                 "consume=coal:2 granite:2 water clay",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:15s",
@@ -127,7 +126,8 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:15s",
                 "playsound=sound/barbarians/mortar priority:60%",
                 "sleep=duration:3s",
-                "produce=grout"
+                "produce=grout",
+                "sleep=duration:120s"
             }
         }
     },

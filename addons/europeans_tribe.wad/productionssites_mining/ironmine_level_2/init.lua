@@ -59,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
-                "return=skipped when economy needs coal",
+                "return=skipped when economy needs coal and not economy needs ore",
                 "return=skipped unless site has ration:3",
                 "return=skipped unless site has beer:3",
                 "consume=ration beer",

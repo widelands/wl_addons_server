@@ -75,12 +75,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped unless economy needs beer or workers need experience",
-                "return=skipped unless site has water:3",
-                "return=skipped unless site has barley:3",
-                "consume=water:3 barley:3",
-                "sleep=duration:10s",
+                "return=skipped unless site has water:6",
+                "return=skipped unless site has barley:6",
+                "consume=water:6 barley:6",
                 "animate=working duration:80s",
-                "produce=beer:3"
+                "produce=beer:6",
+                "sleep=duration:60s"
             }
         },
         brew_beer_idle = {
@@ -89,10 +89,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs beer",
                 "return=skipped when economy needs water",
-                "sleep=duration:120s",
                 "consume=water barley",
                 "animate=working duration:80s",
-                "produce=beer"
+                "produce=beer",
+                "sleep=duration:120s"
             }
         }
     },
