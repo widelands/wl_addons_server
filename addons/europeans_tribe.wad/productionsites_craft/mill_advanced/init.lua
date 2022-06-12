@@ -29,8 +29,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "rye", amount = 8 },
-        { name = "wheat", amount = 8 }
+        { name = "rye", amount = 4 },
+        { name = "wheat", amount = 4 }
     },
 
     programs = {
@@ -49,13 +49,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs flour",
                 "return=skipped when economy needs meat and not economy needs flour",
-                "return=skipped unless site has rye:8",
-                "return=skipped unless site has wheat:8",
-                "consume=wheat:8 rye:8",
+                "return=skipped unless site has rye",
+                "return=skipped unless site has wheat",
+                "consume=wheat rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:45s",
-                "produce=flour:12",
-                "sleep=duration:60s"
+                "animate=working duration:10s",
+                "produce=flour:2"
             }
         },
         produce_mixed_flour_idle = {
@@ -65,9 +64,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs flour",
                 "consume=wheat rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:60s",
+                "animate=working duration:10s",
                 "produce=flour",
-                 "sleep=duration:120s"
+                 "sleep=duration:90s"
             }
         }
     },

@@ -71,8 +71,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs reed or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
-                "callworker=plant_reed",
-                "sleep=duration:3s"
+                "callworker=plant_reed"
             }
         },
         harvest_reed = {
@@ -80,8 +79,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
                 "return=skipped unless economy needs reed or workers need experience",
-                "callworker=harvest_reed",
-                "sleep=duration:6s"
+                "callworker=harvest_reed"
             }
         },
         plant_reed_idle = {

@@ -80,7 +80,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs flour and economy needs beer",
                 "return=skipped unless site has water:4",
                 "consume=water:4 rye,wheat,barley:4 ",
-                "sleep=duration:10s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:60s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
@@ -93,7 +92,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs meat or workers need experience",
                 "return=skipped unless site has water:4",
                 "consume=water:4 rye,wheat,barley:4",
-                "sleep=duration:10s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:60s",
                 "produce=meat:2"
@@ -106,10 +104,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat",
                 "return=skipped when economy needs water",
                 "return=skipped when economy needs flour or economy needs beer",
-                "sleep=duration:120s",
                 "consume=water:2 wheat rye,barley",
                 "animate=working duration:60s",
-                "produce=meat"
+                "produce=meat",
+                "sleep=duration:120s"
             }
         },
         dummy_program = {

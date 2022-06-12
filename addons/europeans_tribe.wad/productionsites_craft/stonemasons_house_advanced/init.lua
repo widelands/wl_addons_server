@@ -65,9 +65,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:30s",
                 "playsound=sound/barbarians/mortar priority:60%",
-                "sleep=duration:3s",
-                "produce=grout:3",
-                "sleep=duration:30s"
+                "produce=grout:3"
             }
         },
         burning_bricks = {
@@ -81,9 +79,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coal:2 granite clay:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:30s",
-                "sleep=duration:3s",
-                "produce=brick:3",
-                "sleep=duration:30s"
+                "produce=brick:3"
             }
         },
         sculpting_marble_column = {
@@ -97,13 +93,10 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "produce=marble_column:2",
-                "sleep=duration:5s",
                 "consume=marble:3",
-                "sleep=duration:5s",
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",
                 "animate=working duration:30s",
-                "produce=marble_column:2",
-                "sleep=duration:30s"
+                "produce=marble_column:2"
             }
         },
         burning_bricks_idle = {
@@ -119,13 +112,11 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coal:2 granite:2 water clay",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:15s",
-                "sleep=duration:3s",
                 "produce=brick",
                 "sleep=duration:90s",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:15s",
                 "playsound=sound/barbarians/mortar priority:60%",
-                "sleep=duration:3s",
                 "produce=grout",
                 "sleep=duration:120s"
             }

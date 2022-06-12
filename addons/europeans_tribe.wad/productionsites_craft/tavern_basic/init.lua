@@ -81,12 +81,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water and not economy needs ration",
                 "return=skipped unless economy needs ration or workers need experience",
-                "return=skipped unless site has water:4",
-                "return=skipped unless site has flour:4",
-                "consume=water:4 flour:4 fish,meat:4",
-                "animate=working duration:60s",
-                "produce=ration:4",
-                "sleep=duration:30s"
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has flour:2",
+                "consume=water:2 flour:2 fish,meat",
+                "animate=working duration:30s",
+                "produce=ration:2"
             }
         },
         produce_ration_idle = {

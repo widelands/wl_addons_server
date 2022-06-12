@@ -62,21 +62,20 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has ration:3",
                 "return=skipped unless site has beer:3",
                 "consume=ration beer",
-                "sleep=duration:5s",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
                 "sleep=duration:5s",
                 "consume=ration beer",
-                "sleep=duration:5s",
                 "call=mine_stone",
+                "call=mine_ore",
                 "call=mine_ore",
                 "sleep=duration:5s",
                 "consume=ration beer",
-                "sleep=duration:5s",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_marble",
+                "sleep=duration:5s",
             }
         },
         mine_ore = {
@@ -108,7 +107,7 @@ wl.Descriptions():new_productionsite_type {
             descname = "encyclopedia",
             actions = {
                 "consume=ration:3 beer:3",
-                "produce=ore:4 granite:3 marble",
+                "produce=ore:5 granite:3 marble",
             }
         },
     },

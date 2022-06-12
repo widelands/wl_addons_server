@@ -38,12 +38,31 @@ wl.Descriptions():new_productionsite_type {
 
     programs = {
         main = {
+            -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+            descname = _"working",
+            actions = {
+                "call=felling_trees",
+                "call=felling_trees_idle",
+                "return=skipped"
+            }
+        },
+        felling_trees = {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
+                "return=skipped unless economy needs log or workers need experience",
                 "callworker=harvest",
-                "sleep=duration:15s",
                 "produce=log"
+            }
+        },
+        felling_trees_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs log",
+                "callworker=harvest",
+                "produce=log",
+                "sleep=duration:55s"
             }
         },
     },
@@ -51,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
         -- Translators: Short for "Out of ..." for a resource
         title = _"No Trees",
         heading = _"Out of Trees",
-        message = pgettext("europeans_building", "The woodcutter working at this woodcutter’s house can’t find any trees in his work area.  You should consider enhancing it to increase its working area or building a forester’s house."),
+        message = pgettext("europeans_building", "The woodcutter working at this woodcutter’s house can’t find any trees in his work area. You should consider enhancing it to increase its working area or building a forester’s house."),
         productivity_threshold = 60
     },
 }

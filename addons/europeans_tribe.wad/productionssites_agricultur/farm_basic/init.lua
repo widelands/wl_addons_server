@@ -95,7 +95,7 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:6s",
                 "callworker=plant_wheat",
                 "animate=working duration:6s",
-                "sleep=duration:20s"
+                "sleep=duration:30s"
             }
         },
         plant_barley = {
@@ -107,11 +107,9 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=plant_barley",
                 "animate=working duration:6s",
-                "sleep=duration:5s",
                 "consume=water",
                 "callworker=plant_barley",
-                "animate=working duration:6s",
-                "sleep=duration:5s"
+                "animate=working duration:6s"
             }
         },
         plant_rye = {
@@ -123,11 +121,9 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=plant_rye",
                 "animate=working duration:6s",
-                "sleep=duration:5s",
                 "consume=water",
                 "callworker=plant_rye",
-                "animate=working duration:6s",
-                "sleep=duration:5s"
+                "animate=working duration:6s"
             }
         },
         plant_wheat = {
@@ -139,11 +135,9 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=plant_wheat",
                 "animate=working duration:6s",
-                "sleep=duration:5s",
                 "consume=water",
                 "callworker=plant_wheat",
-                "animate=working duration:6s",
-                "sleep=duration:5s"
+                "animate=working duration:6s"
             }
         },
         harvest_barley = {
@@ -151,15 +145,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting barley"),
             actions = {
                 "return=skipped unless economy needs barley or workers need experience",
-                "sleep=duration:6s",
                 "callworker=harvest_barley",
                 "animate=working duration:6s",
-                "sleep=duration:5s",
                 "produce=barley",
-                "sleep=duration:6s",
                 "callworker=harvest_barley",
                 "animate=working duration:6s",
-                "sleep=duration:5s",
                 "produce=barley"
             }
         },
@@ -168,15 +158,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting rye"),
             actions = {
                 "return=skipped unless economy needs rye or workers need experience",
-                "sleep=duration:6s",
                 "callworker=harvest_rye",
                 "animate=working duration:6s",
-                "sleep=duration:5s",
                 "produce=rye",
-                "sleep=duration:6s",
                 "callworker=harvest_rye",
                 "animate=working duration:6s",
-                "sleep=duration:5s",
                 "produce=rye"
             }
         },
@@ -185,15 +171,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting wheat"),
             actions = {
                 "return=skipped unless economy needs wheat or workers need experience",
-                "sleep=duration:6s",
                 "callworker=harvest_wheat",
                 "animate=working duration:6s",
-                "sleep=duration:5s",
                 "produce=wheat",
-                "sleep=duration:6s",
                 "callworker=harvest_wheat",
                 "animate=working duration:6s",
-                "sleep=duration:5s",
                 "produce=wheat"
             }
         },

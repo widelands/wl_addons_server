@@ -58,7 +58,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 8 }
+        { name = "log", amount = 4 }
     },
 
     programs = {
@@ -76,11 +76,10 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal or workers need experience",
-                "return=skipped unless site has log:8",
-                "consume=log:8",
-                "animate=working duration:3m",
-                "produce=coal:3",
-                "sleep=duration:60s"
+                "return=skipped unless site has log:3",
+                "consume=log:3",
+                "animate=working duration:1m30s",
+                "produce=coal"
             }
         },
         burn_log_idle = {

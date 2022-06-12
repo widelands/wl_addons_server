@@ -72,6 +72,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=terraforming_land",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
+                "sleep=duration:30s",
                 "return=skipped"
             }
         },
@@ -81,7 +82,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless site has water:2",
                 "consume=ration beer",
-                "sleep=duration:15s",
                 "consume=water:2",
                 "callworker=terraform_land",
             }
@@ -91,7 +91,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "terraforming coast"),
             actions = {
                 "consume=ration beer",
-                "sleep=duration:15s",
                 "callworker=terraform_coast"
             }
         },

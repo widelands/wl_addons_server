@@ -61,21 +61,20 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has ration:3",
                 "return=skipped unless site has beer:3",
                 "consume=ration beer",
-                "sleep=duration:5s",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
                 "consume=ration beer",
-                "sleep=duration:5s",
                 "call=mine_stone",
+                "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
                 "consume=ration beer",
-                "sleep=duration:5s",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_diamond",
+                "sleep=duration:5s",
             }
         },
         mine_coal = {
@@ -107,7 +106,7 @@ wl.Descriptions():new_productionsite_type {
             descname = "encyclopedia",
             actions = {
                 "consume=ration:3 beer:3",
-                "produce=coal:4 granite:3 diamond",
+                "produce=coal:5 granite:3 diamond",
             }
         },
     },

@@ -71,8 +71,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs fruit or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water:2",
-                "callworker=plant_berrybush",
-                "sleep=duration:2s"
+                "callworker=plant_berrybush"
             }
         },
         plant_reed = {
@@ -82,8 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs reed or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
-                "callworker=plant_reed",
-                "sleep=duration:2s"
+                "callworker=plant_reed"
             }
         },
         harvest_berry = {
@@ -91,9 +89,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting berry"),
             actions = {
                 "return=skipped unless economy needs fruit or workers need experience",
-                "sleep=duration:4s",
                 "callworker=harvest_berrybush",
-                "sleep=duration:4s",
                 "produce=fruit"
             }
         },
@@ -103,7 +99,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs reed or workers need experience",
                 "callworker=harvest_reed",
-                "sleep=duration:4s",
                 "produce=reed"
             }
         },

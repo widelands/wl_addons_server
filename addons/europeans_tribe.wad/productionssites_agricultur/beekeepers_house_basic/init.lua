@@ -79,8 +79,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making honey"),
             actions = {
                 "return=skipped unless economy needs honey or workers need experience",
-                "callworker=bees",
-                "sleep=duration:60s"
+                "callworker=bees"
             }
         },
         making_honey_idle = {

@@ -55,8 +55,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 6 },
-        { name = "barley", amount = 6 }
+        { name = "water", amount = 4 },
+        { name = "barley", amount = 4 }
     },
 
     programs = {
@@ -75,12 +75,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped unless economy needs beer or workers need experience",
-                "return=skipped unless site has water:6",
-                "return=skipped unless site has barley:6",
-                "consume=water:6 barley:6",
-                "animate=working duration:80s",
-                "produce=beer:6",
-                "sleep=duration:60s"
+                "return=skipped unless site has water",
+                "return=skipped unless site has barley",
+                "consume=water barley",
+                "animate=working duration:20s",
+                "produce=beer"
             }
         },
         brew_beer_idle = {
@@ -90,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs beer",
                 "return=skipped when economy needs water",
                 "consume=water barley",
-                "animate=working duration:80s",
+                "animate=working duration:30s",
                 "produce=beer",
                 "sleep=duration:120s"
             }

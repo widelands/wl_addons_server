@@ -50,9 +50,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "callworker=dig",
                 "consume=water",
-                "sleep=duration:5s",
                 "animate=working duration:10s",
-                "sleep=duration:1s",
                 "produce=clay"
             }
         },
@@ -62,11 +60,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs clay",
                 "return=skipped when economy needs water",
-                "sleep=duration:90s",
                 "callworker=dig",
                 "consume=water",
-                "sleep=duration:10s",
                 "animate=working duration:10s",
+                "sleep=duration:90s"
             }
         }
     },

@@ -28,7 +28,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 8 }
+        { name = "log", amount = 4 }
     },
 
     programs = {
@@ -47,12 +47,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "sawing logs"),
             actions = {
                 "return=skipped unless economy needs planks",
-                "return=skipped unless site has log:4",
-                "consume=log:4",
+                "return=skipped unless site has log:2",
+                "consume=log:2",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:10s",
-                "produce=planks:3",
-                "sleep=duration:30s"
+                "produce=planks"
             }
         },
         hardening_wood = {
@@ -60,12 +59,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
                 "return=skipped unless economy needs blackwood",
-                "return=skipped unless site has log:4",
-                "consume=log:4",
+                "return=skipped unless site has log:2",
+                "consume=log:2",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:10s",
-                "produce=blackwood:3",
-                "sleep=duration:30s"
+                "produce=blackwood:2"
             }
         },
         saw_log_idle = {
@@ -77,13 +75,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs log",
                 "consume=log:4",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:15s",
+                "animate=working duration:10s",
                 "produce=blackwood",
-                "sleep=duration:90s",
+                "sleep=duration:30s",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:15s", 
+                "animate=working duration:10s", 
                 "produce=planks",
-                "sleep=duration:90s"
+                "sleep=duration:60s"
             }
         }
     },

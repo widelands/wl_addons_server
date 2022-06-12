@@ -43,7 +43,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 6 },
+        { name = "reed", amount = 4 },
         { name = "wool", amount = 4 }
     },
 
@@ -64,12 +64,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped when economy needs reed and not economy needs cloth",
-                "return=skipped unless site has reed:3",
-                "consume=reed:3",
+                "return=skipped unless site has reed",
+                "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:40s",
-                "produce=cloth:3",
-                "sleep=duration:30s"
+                "animate=working duration:20s",
+                "produce=cloth"
             }
         },
         produce_tabard = {
@@ -77,12 +76,11 @@ wl.Descriptions():new_productionsite_type {
            descname = pgettext("europeans_building", "tailoring a tabard"),
             actions = {
                 "return=skipped unless economy needs tabard",
-                "return=skipped unless site has reed:3",
-                "consume=reed:3",
+                "return=skipped unless site has reed",
+                "consume=reed",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:40s",
-                "produce=tabard:3",
-                "sleep=duration:30s"
+                "animate=working duration:20s",
+                "produce=tabard"
             }
         },
         produce_armor = {
@@ -90,12 +88,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a suit of armor"),
             actions = {
                 "return=skipped unless economy needs armor",
-                "return=skipped unless site has wool:4",
-                "consume=wool:4",
+                "return=skipped unless site has wool",
+                "consume=wool",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:40s",
-                "produce=armor:4",
-                "sleep=duration:30s"
+                "animate=working duration:20s",
+                "produce=armor"
             }
         },
         produce_armor_idle = {
@@ -106,11 +103,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor",
                 "consume=reed wool",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:60s",
+                "animate=working duration:20s",
                 "produce=tabard",
-                "animate=working duration:60s",
+                "animate=working duration:20s",
                 "produce=armor",
-                "sleep=duration:120s"
+                "sleep=duration:90s"
             }
         }
     },

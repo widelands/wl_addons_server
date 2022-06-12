@@ -59,12 +59,31 @@ wl.Descriptions():new_productionsite_type {
 
     programs = {
         main = {
+            -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+            descname = _"working",
+            actions = {
+                "call=felling_trees",
+                "call=felling_trees_idle",
+                "return=skipped"
+            }
+        },
+        felling_trees = {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = _"felling trees",
             actions = {
+                "return=skipped unless economy needs log or workers need experience",
                 "callworker=harvest",
-                "sleep=duration:20s",
                 "produce=log"
+            }
+        },
+        felling_trees_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs log",
+                "callworker=harvest",
+                "produce=log",
+                "sleep=duration:65s"
             }
         },
     },

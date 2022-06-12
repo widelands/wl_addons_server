@@ -62,14 +62,13 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "smelting iron"),
             actions = {
                 "return=skipped unless economy needs iron or workers need experience",
-                "return=skipped unless site has coal:4",
-                "return=skipped unless site has ore:4",
-                "consume=ore:4 coal:4",
+                "return=skipped unless site has coal:2",
+                "return=skipped unless site has ore:2",
+                "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=iron:4",
-                "sleep=duration:60s"
+                "produce=iron:2"
             }
         },
         smelt_gold = {
@@ -82,10 +81,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=gold",
-                "sleep=duration:30s"
+                "produce=gold"
             }
         },
         smelt_iron_idle = {
@@ -97,12 +95,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coal",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:25s",
+                "animate=working duration:20s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron",
-                "sleep=duration:120s",
+                "sleep=duration:30s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:25s",
+                "animate=working duration:20s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=gold",
                 "sleep=duration:90s"

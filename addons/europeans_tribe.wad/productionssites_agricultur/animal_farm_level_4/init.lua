@@ -73,7 +73,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs wool or workers need experience",
                 "return=skipped unless site has water:3",
                 "consume=water:3 blackroot,corn:3",
-                "sleep=duration:10s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "produce=wool:3"
@@ -87,7 +86,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat or economy needs fish or economy needs wool",
                 "return=skipped unless site has water:3",
                 "consume=water:3 blackroot,corn:3",
-                "sleep=duration:5s",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:30s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
@@ -101,7 +99,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat or economy needs fish or economy needs wool",
                 "return=skipped unless site has water:3",
                 "consume=water:3 blackroot,corn:3",
-                "sleep=duration:5s",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:30s", -- Feeding cute little baby donkeys ;)
                 "recruit=europeans_carrier_donkey"
@@ -114,7 +111,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs meat or workers need experience",
                 "return=skipped unless site has water:3",
                 "consume=water:4 blackroot:2 corn:2 fruit:2",
-                "sleep=duration:5s",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "produce=meat:4"
@@ -127,7 +123,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs fish or workers need experience",
                 "return=skipped unless site has water:3",
                 "consume=water:4 blackroot:2 corn:2 fruit:2",
-                "sleep=duration:5s",
                 "animate=working duration:30s",
                 "produce=fish:4"
             }
@@ -138,10 +133,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs meat",
                 "return=skipped when economy needs water",
-                "sleep=duration:90s",
                 "consume=water:2 blackroot corn fruit",
                 "animate=working duration:60s",
-                "produce=meat"
+                "produce=meat",
+                "sleep=duration:90s"
             }
         },
         produce_fish_idle = {
@@ -150,10 +145,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs fish",
                 "return=skipped when economy needs water",
-                "sleep=duration:90s",
                 "consume=water:2 blackroot  corn fruit",
                 "animate=working duration:60s",
-                "produce=fish"
+                "produce=fish",
+                "sleep=duration:90s"
             }
         }
     },

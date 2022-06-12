@@ -18,7 +18,7 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:rocks radius:12",
         },
         check_stone = {
-            "findspace=size:any radius:10 resource:resource_stones",
+            "findspace=size:any radius:12 resource:resource_stones",
         },
         cut_granite = {
             "findobject=attrib:rocks radius:12",

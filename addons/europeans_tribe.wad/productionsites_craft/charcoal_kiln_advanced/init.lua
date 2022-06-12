@@ -28,7 +28,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 16 },
+        { name = "log", amount = 8 },
         { name = "blackwood", amount = 8 },
         { name = "planks", amount = 8 }
     },
@@ -50,11 +50,10 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal",
-                "return=skipped unless site has log:16",
-                "consume=log:16",
+                "return=skipped unless site has log:8",
+                "consume=log:8",
                 "animate=working duration:1m30s",
-                "produce=coal:10",
-                "sleep=duration:60s"
+                "produce=coal:5"
             }
         },
         burn_blackwood = {
@@ -66,8 +65,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has blackwood:8",
                 "consume=blackwood:8",
                 "animate=working duration:1m30s", -- Charcoal fires will burn for some days in real life
-                "produce=coal:5",
-                "sleep=duration:30s"
+                "produce=coal:5"
             }
         },
         burn_planks = {
@@ -79,8 +77,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has planks:8",
                 "consume=planks:8",
                 "animate=working duration:1m30s", -- Charcoal fires will burn for some days in real life
-                "produce=coal:6",
-                "sleep=duration:30s"
+                "produce=coal:6"
             }
         },
         burn_log_idle = {

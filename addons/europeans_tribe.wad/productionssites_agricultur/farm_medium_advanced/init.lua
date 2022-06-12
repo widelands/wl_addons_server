@@ -51,8 +51,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs fruit or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water:2",
-                "callworker=plant_berrybush",
-                "sleep=duration:1s"
+                "callworker=plant_berrybush"
             }
         },
         plant_grape = {
@@ -62,8 +61,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs grape or workers need experience",
                 "return=skipped unless site has water:3",
                 "consume=water:2",
-                "callworker=plant_grape",
-                "sleep=duration:1s"
+                "callworker=plant_grape"
             }
         },
         plant_reed = {
@@ -73,8 +71,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs reed or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
-                "callworker=plant_reed",
-                "sleep=duration:1s"
+                "callworker=plant_reed"
             }
         },
         harvest_berry = {
@@ -82,9 +79,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting berry"),
             actions = {
                 "return=skipped unless economy needs fruit or workers need experience",
-                "sleep=duration:3s",
                 "callworker=harvest_berrybush",
-                "sleep=duration:3s",
                 "produce=fruit"
             }
         },
@@ -93,9 +88,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting grape"),
             actions = {
                 "return=skipped unless economy needs grape or workers need experience",
-                "sleep=duration:3s",
                 "callworker=harvest_grape",
-                "sleep=duration:3s",
                 "produce=grape"
             }
         },
@@ -105,7 +98,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs reed or workers need experience",
                 "callworker=harvest_reed",
-                "sleep=duration:3s",
                 "produce=reed"
             }
         },

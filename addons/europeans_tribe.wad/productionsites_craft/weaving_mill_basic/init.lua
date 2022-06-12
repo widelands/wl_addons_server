@@ -77,12 +77,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped when economy needs reed and not economy needs cloth",
-                "return=skipped unless site has reed:4",
-                "consume=reed:4",
+                "return=skipped unless site has reed:2",
+                "consume=reed:2",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:50s",
-                "produce=cloth:4",
-                "sleep=duration:60s"
+                "animate=working duration:30s",
+                "produce=cloth:2"
             }
         },
         produce_cloth_idle = {
@@ -93,9 +92,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs reed and not workers need experience",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:60s",
+                "animate=working duration:30s",
                 "produce=cloth",
-                "sleep=duration:120s"
+                "sleep=duration:90s"
             }
         }
     },

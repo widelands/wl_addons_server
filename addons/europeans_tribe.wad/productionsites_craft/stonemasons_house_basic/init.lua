@@ -85,9 +85,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:60s",
                 "playsound=sound/barbarians/mortar priority:60%",
-                "sleep=duration:3s",
-                "produce=grout:3",
-                "sleep=duration:30s"
+                "produce=grout:3"
             }
         },
         burning_bricks = {
@@ -101,9 +99,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coal:2 granite clay:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:60s",
-                "sleep=duration:3s",
-                "produce=brick:3",
-                "sleep=duration:30s"
+                "produce=brick:3"
             }
         },
         burning_bricks_idle = {
@@ -118,13 +114,11 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coal:2 granite:2 water clay",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:30s",
-                "sleep=duration:3s",
                 "produce=brick",
                 "sleep=duration:90s",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:30s",
                 "playsound=sound/barbarians/mortar priority:60%",
-                "sleep=duration:3s",
                 "produce=grout",
                 "sleep=duration:120s"
             }

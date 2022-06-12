@@ -42,6 +42,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=mining_water",
+                "call=mining_water",
+                "call=mining_water",
                 "call=mining_water_idle",
                 "return=skipped"
             }
@@ -51,7 +53,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining water"),
             actions = {
                 "return=skipped unless economy needs water or workers need experience",
-                "sleep=duration:5s",
                 "animate=working duration:10s",
                 "mine=resource_water radius:6 yield:70% when_empty:70%",
                 "produce=water:4"
@@ -62,10 +63,10 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs water",
-                "sleep=duration:60s",
                 "animate=working duration:10s",
                 "mine=resource_water radius:6 yield:70% when_empty:70%",
-                "produce=water"
+                "produce=water",
+                "sleep=duration:60s"
             }
         },
     },
