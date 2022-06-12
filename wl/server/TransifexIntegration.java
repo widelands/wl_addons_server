@@ -23,6 +23,7 @@ import java.io.File;
 import java.nio.file.Files;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -164,6 +165,8 @@ public class TransifexIntegration {
 		Utils.log("Checking Transifex issues...");
 		List<Issue> allIssues = fetchIssues();
 		List<Issue> newIssues = new ArrayList<>();
+		List<Issue> oldIssuesToSend = new ArrayList<>();
+		final boolean shouldSendOldIssues = Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 1;
 
 		for (Issue i : allIssues) {
 			ResultSet sql =
@@ -172,19 +175,25 @@ public class TransifexIntegration {
 				newIssues.add(i);
 				Utils.sql(
 				    Utils.Databases.kAddOns, "insert into txissues (id) value (?)", i.issueID);
+			} else if (shouldSendOldIssues) {
+				oldIssuesToSend.add(i);
 			}
 		}
 
-		Utils.log("Found " + newIssues.size() + " new issue(s) (" + allIssues.size() + " total).");
-		if (newIssues.isEmpty()) return;
+		Utils.log("Found " + newIssues.size() + " new issue(s) (" + allIssues.size() + " total). Sending " + oldIssuesToSend.size() + " old issues.");
+		if (newIssues.isEmpty() && oldIssuesToSend.isEmpty()) return;
 
-		Map<String, List<Issue>> perAddOn = new LinkedHashMap<>();
+		Map<String, List[]> perAddOn = new LinkedHashMap<>();
 		for (Issue i : newIssues) {
-			if (!perAddOn.containsKey(i.addon)) perAddOn.put(i.addon, new ArrayList<>());
-			perAddOn.get(i.addon).add(i);
+			if (!perAddOn.containsKey(i.addon)) perAddOn.put(i.addon, new List[] { new ArrayList<>(), new ArrayList<>() });
+			perAddOn.get(i.addon)[0].add(i);
+		}
+		for (Issue i : oldIssuesToSend) {
+			if (!perAddOn.containsKey(i.addon)) perAddOn.put(i.addon, new List[] { new ArrayList<>(), new ArrayList<>() });
+			perAddOn.get(i.addon)[1].add(i);
 		}
 
-		Map<Long, Map<String, List<Issue>>> perUploader = new LinkedHashMap<>();
+		Map<Long, Map<String, List[]>> perUploader = new LinkedHashMap<>();
 		for (String addon : perAddOn.keySet()) {
 			ResultSet sql =
 			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?",
@@ -207,32 +216,56 @@ public class TransifexIntegration {
 			final String username = sql.getString("username");
 			if (!subscribed.contains(uploader)) continue;
 
-			Map<String, List<Issue>> relevantIssues = perUploader.get(uploader);
-			long total = 0;
-			for (List l : relevantIssues.values()) total += l.size();
+			Map<String, List[]> relevantIssues = perUploader.get(uploader);
+			long totalNew = 0;
+			long totalOld = 0;
+			for (List[] l : relevantIssues.values()) {
+				totalNew += l[0].size();
+				totalNew += l[1].size();
+			}
 
-			String text = "Dear " + username + ",\nthe translators have found " + total +
-			              " new issue(s) in " + relevantIssues.size() +
-			              " of your add-on(s). Below you may find a list of all new string issues.";
+			String text = "Dear " + username + ",\n";
+			if (totalNew > 0 && totalOld > 0) {
+				text += "the translators have found " + totalNew +
+					    " new issue(s) in your add-on(s). Additionally, " +
+					    totalOld + " issue(s) in your add-on(s) reported" +
+					    " by the translators are still unresolved. This" +
+					    " affects a total of " + relevantIssues.size() +
+					    " of your add-ons.";
+			} else if (totalNew > 0) {
+				text += "the translators have found " + totalNew +
+					    " new issue(s) in " + relevantIssues.size() +
+					    " of your add-on(s).";
+			} else {
+				text += "this is your monthly reminder that " + totalOld +
+					    " issue(s) in " + relevantIssues.size() +
+					    " of your add-on(s) reported by the" +
+					    " translators are still unresolved.";
+			}
+			text += " Below you may find a list of the string issues.";
 			for (String addon : relevantIssues.keySet()) {
-				List<Issue> list = relevantIssues.get(addon);
-				text +=
-				    "\n\n################################################################################\n " +
-				    list.size() + " new issue(s) in add-on " + addon;
-				for (Issue i : list) {
+				for (int index = 0; index <= 1; ++index) {
+					List<Issue> list = (List<Issue>)relevantIssues.get(addon)[index];
+					if (list.isEmpty()) continue;
 					text +=
-					    "\n --------------------------------------------------------------------------------"
-					    // anti-linebreak comment
-					    + "\n  Issue ID      : " + i.issueID            // anti-linebreak comment
-					    + "\n  Source String : " + i.string             // anti-linebreak comment
-					    + "\n  String ID     : " + i.stringID           // anti-linebreak comment
-					    + "\n  Occurrences   : " + i.occurrence         // anti-linebreak comment
-					    + "\n  Last modified : " + i.datetime_modified  // anti-linebreak comment
-					    + "\n  Priority      : " + i.priority           // anti-linebreak comment
-					    + "\n  Issue message : " + i.message;
+						"\n\n################################################################################\n " +
+						list.size() + " " + (index == 0 ? "new" : "existing") +
+						" issue(s) in add-on " + addon;
+					for (Issue i : list) {
+						text +=
+							"\n --------------------------------------------------------------------------------"
+							// linebreak comment
+							+ "\n  Issue ID      : " + i.issueID            // linebreak comment
+							+ "\n  Source String : " + i.string             // linebreak comment
+							+ "\n  String ID     : " + i.stringID           // linebreak comment
+							+ "\n  Occurrences   : " + i.occurrence         // linebreak comment
+							+ "\n  Last modified : " + i.datetime_modified  // linebreak comment
+							+ "\n  Priority      : " + i.priority           // linebreak comment
+							+ "\n  Issue message : " + i.message;
+					}
+					text +=
+						"\n################################################################################";
 				}
-				text +=
-				    "\n################################################################################";
 			}
 			Utils.sendEMail(sql.getString("email"), "Transifex String Issues", text, true);
 		}
