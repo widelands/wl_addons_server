@@ -224,7 +224,7 @@ public class TransifexIntegration {
 			long totalOld = 0;
 			for (List[] l : relevantIssues.values()) {
 				totalNew += l[0].size();
-				totalNew += l[1].size();
+				totalOld += l[1].size();
 			}
 
 			String text = "Dear " + username + ",\n";
