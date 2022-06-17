@@ -57,9 +57,6 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         supports_seafaring = true,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
         basic_amount = 1,
         prohibited_till = 1800,
         forced_after = 2400
@@ -92,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has log:2",
                 "consume=log:2",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=planks"
             }
         },
@@ -104,7 +101,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has log:2",
                 "consume=log:2",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=blackwood:2"
             }
         },
@@ -117,7 +114,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs log",
                 "consume=log:2",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=blackwood",
                 "sleep=duration:120s"
             }

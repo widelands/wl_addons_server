@@ -42,9 +42,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 2,
         prohibited_till = 4200,
         forced_after = 5400
     },
@@ -77,7 +74,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron:2"
             }
@@ -90,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coal",
                 "consume=ore coal",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron",
                 "sleep=duration:120s"

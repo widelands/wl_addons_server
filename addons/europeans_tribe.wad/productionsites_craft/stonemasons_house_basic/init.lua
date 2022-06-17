@@ -42,9 +42,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 2,
         prohibited_till = 4200,
         forced_after = 5400
     },
@@ -113,11 +110,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water and not workers need experience",
                 "consume=coal:2 granite:2 water clay",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=brick",
-                "sleep=duration:90s",
+                "sleep=duration:60s",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "playsound=sound/barbarians/mortar priority:60%",
                 "produce=grout",
                 "sleep=duration:120s"

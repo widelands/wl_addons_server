@@ -77,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=cut_granite on failure fail",
                 "call=cut_granite on failure fail",
                 "call=cut_marble on failure fail", -- This will find marble 1 out of 5 times
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "return=skipped"
             }
         },
@@ -91,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_granite on failure fail",
                 "call=mine_granite on failure fail",
                 "call=mine_marble on failure fail", -- This will find marble 1 out of 5 times
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "return=skipped"
             }
         },

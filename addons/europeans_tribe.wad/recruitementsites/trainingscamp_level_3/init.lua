@@ -70,9 +70,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting soldier"),
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
-                "sleep=duration:10s",
                 "consume=armor:2 spear_wooden:2 snack:2 mead:2 europeans_recruit:2 quartz diamond",
-                "animate=working duration:70s",
+                "animate=working duration:140s",
                 "recruit=europeans_soldier:2"
             }
         },
@@ -81,9 +80,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting trainer"),
             actions = {
                 "return=skipped unless economy needs europeans_trainer_normal",
-                "sleep=duration:10s",
                 "consume=armor spear_wooden snack mead europeans_recruit quartz,diamond",
-                "animate=working duration:60s",
+                "animate=working duration:140s",
                 "recruit=europeans_trainer_normal"
             }
         },

@@ -61,7 +61,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has scrap_iron:2",
                 "consume=scrap_iron:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:15s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron:2"
             }
@@ -75,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has scrap_metal_mixed:2",
                 "consume=scrap_metal_mixed:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:15s",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=iron gold"
             }
@@ -89,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:30s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron:2"
             }
@@ -103,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:30s",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=gold"
             }
@@ -117,12 +117,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coal",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:30s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron",
                 "sleep=duration:30s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:30s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=gold",
                 "sleep=duration:90s"

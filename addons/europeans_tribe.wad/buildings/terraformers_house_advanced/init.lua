@@ -69,7 +69,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"dummy program",
             actions = {
                 "sleep=duration:10s",
-                "produce=coal"
+                "produce=gold"
             }
         }
     },

@@ -3,47 +3,61 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_terraformers_house_normal",
+    name = "europeans_terraformers_house_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Normal Terraformer’s House"),
+    descname = pgettext("europeans_building", "Basic Terraformer’s House"),
     icon = dirname .. "menu.png",
     size = "small",
 
     enhancement = {
-        name = "europeans_terraformers_house_advanced",
+        name = "europeans_terraformers_house_normal",
         enhancement_cost = {
-            planks = 1,
-            brick = 1,
-            grout = 1,
-            marble = 1
+            blackwood = 1,
+            cloth = 1
         },
         enhancement_return_on_dismantle = {
-            granite = 1,
-            marble = 1
-        }
+        },
+    },
+
+    buildcost = {
+        log = 2,
+        reed = 2,
+        granite = 2
+    },
+    return_on_dismantle = {
+        log = 1,
+        granite = 1
     },
 
     animations = {
         idle = {
             pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 41, 44 },
+            hotspot = { 45, 92 },
         },
         build = {
             pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 41, 44 },
-        }
+            hotspot = { 45, 92 },
+        },
+        unoccupied = {
+            pictures = path.list_files(dirname .. "unoccupied_??.png"),
+            hotspot = { 45, 92 },
+        },
     },
 
-    aihints = {},
+    aihints = {
+        needs_water = true,
+        prohibited_till = 7200,
+        forced_after = 7800
+    },
 
     working_positions = {
-        europeans_terraformer_normal = 1
+        europeans_terraformer_basic = 1
     },
 
     inputs = {
         { name = "water", amount = 4 },
-        { name = "snack", amount = 2 },
-        { name = "mead", amount = 2 }
+        { name = "ration", amount = 2 },
+        { name = "beer", amount = 2 }
     },
 
     programs = {
@@ -55,7 +69,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=terraforming_land",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
-                "sleep=duration:20s",
+                "sleep=duration:30s",
                 "return=skipped"
             }
         },
@@ -64,7 +78,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "terraforming land"),
             actions = {
                 "return=skipped unless site has water:2",
-                "consume=snack mead",
+                "consume=ration beer",
                 "consume=water:2",
                 "callworker=terraform_land",
             }
@@ -73,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
             descname = pgettext("europeans_building", "terraforming coast"),
             actions = {
-                "consume=snack mead",
+                "consume=ration beer",
                 "callworker=terraform_coast"
             }
         },
@@ -82,7 +96,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"dummy program",
             actions = {
                 "sleep=duration:10s",
-                "produce=coal"
+                "produce=iron"
             }
         }
     },

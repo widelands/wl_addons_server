@@ -16,12 +16,14 @@ wl.Descriptions():new_productionsite_type {
             planks = 2,
             brick = 2,
             grout = 2,
-            marble_column = 2
+            marble_column = 2,
+            gold = 1
         },
         enhancement_return_on_dismantle = {
             granite = 2,
             marble = 2,
-            planks = 1
+            planks = 1,
+            gold = 1
         }
     },
 

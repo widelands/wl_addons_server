@@ -78,7 +78,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=coal:2 granite:3 water:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:40s",
+                "animate=working duration:45s",
                 "playsound=sound/barbarians/mortar priority:60%",
                 "produce=grout:3"
             }
@@ -93,7 +93,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has clay:3",
                 "consume=coal:2 granite clay:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:40s",
+                "animate=working duration:45s",
                 "produce=brick:3"
             }
         },
@@ -108,11 +108,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water and not workers need experience",
                 "consume=coal:2 granite:2 water clay",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:20s",
+                "animate=working duration:45s",
                 "produce=brick",
-                "sleep=duration:90s",
+                "sleep=duration:60s",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:20s",
+                "animate=working duration:45s",
                 "playsound=sound/barbarians/mortar priority:60%",
                 "produce=grout",
                 "sleep=duration:120s"

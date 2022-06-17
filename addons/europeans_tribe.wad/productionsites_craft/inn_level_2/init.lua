@@ -56,7 +56,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2 fish,meat",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "produce=ration:2"
             }
         },
@@ -69,7 +69,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2 fish,meat",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "produce=snack:2"
             }
         },
@@ -82,7 +82,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2 fish,meat",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "produce=meal"
             }
         },
@@ -95,15 +95,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meal",
                 "return=skipped when economy needs water",
                 "consume=water:6 flour:6 fish,meat:6",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "produce=ration",
-                "sleep=duration:10s",
-                "animate=working duration:10s",
+                "sleep=duration:30s",
+                "animate=working duration:20s",
                 "produce=snack",
-                "sleep=duration:10s",
-                "animate=working duration:10s",
+                "sleep=duration:30s",
+                "animate=working duration:20s",
                 "produce=meal",
-                "sleep=duration:120s"
+                "sleep=duration:90s"
             }
         }
     },

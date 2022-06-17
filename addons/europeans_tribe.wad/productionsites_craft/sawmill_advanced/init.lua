@@ -50,7 +50,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has log:2",
                 "consume=log:2",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:30s",
                 "produce=planks"
             }
         },
@@ -62,7 +62,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has log:2",
                 "consume=log:2",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:10s",
+                "animate=working duration:30s",
                 "produce=blackwood:2"
             }
         },
@@ -75,13 +75,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs log",
                 "consume=log:4",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:10s",
+                "animate=working duration:30s",
                 "produce=blackwood",
                 "sleep=duration:30s",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:10s", 
+                "animate=working duration:30s", 
                 "produce=planks",
-                "sleep=duration:60s"
+                "sleep=duration:90s"
             }
         }
     },

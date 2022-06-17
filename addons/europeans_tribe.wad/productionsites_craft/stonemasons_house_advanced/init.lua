@@ -21,9 +21,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 1
     },
 
     working_positions = {
@@ -111,11 +108,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "consume=coal:2 granite:2 water clay",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=brick",
-                "sleep=duration:90s",
+                "sleep=duration:60s",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "playsound=sound/barbarians/mortar priority:60%",
                 "produce=grout",
                 "sleep=duration:120s"

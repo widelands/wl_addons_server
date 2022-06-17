@@ -46,9 +46,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 3,
         basic_amount = 1,
         prohibited_till = 2400,
         forced_after = 3000
@@ -80,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed:2",
                 "consume=reed:2",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=cloth:2"
             }
         },
@@ -92,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs reed and not workers need experience",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=cloth",
                 "sleep=duration:90s"
             }

@@ -46,9 +46,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
         basic_amount = 1,
         prohibited_till = 2400,
         forced_after = 3000
@@ -84,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2 fish,meat",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=ration:2"
             }
         },
@@ -95,7 +92,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ration",
                 "return=skipped when economy needs water",
                 "consume=water flour fish,meat",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=ration",
                 "sleep=duration:120s"
             }

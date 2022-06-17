@@ -53,7 +53,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has wheat",
                 "consume=wheat rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:15s",
                 "produce=flour:2"
             }
         },
@@ -64,9 +64,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs flour",
                 "consume=wheat rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:15s",
                 "produce=flour",
-                 "sleep=duration:90s"
+                 "sleep=duration:120s"
             }
         }
     },

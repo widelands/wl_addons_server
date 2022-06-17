@@ -62,9 +62,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 3,
         basic_amount = 1,
         prohibited_till = 1800,
         forced_after = 2400
@@ -99,7 +96,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has wheat",
                 "consume=wheat rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:45s",
                 "produce=flour:2"
             }
         },
@@ -110,7 +107,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs flour",
                 "consume=wheat rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:45s",
                 "produce=flour",
                 "sleep=duration:120s"
             }

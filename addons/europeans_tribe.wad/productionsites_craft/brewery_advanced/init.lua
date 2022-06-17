@@ -71,7 +71,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "produce=beer"
             }
         },
@@ -87,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has barley",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "produce=mead"
             }
         },
@@ -102,7 +102,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "produce=beer_strong"
             }
         },
@@ -115,15 +115,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs mead",
                 "return=skipped when economy needs water",
                 "consume=water:4 barley:4 honey",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "produce=beer",
-                "sleep=duration:10s",
-                "animate=working duration:15s",
+                "sleep=duration:30s",
+                "animate=working duration:20s",
                 "produce=beer_strong",
-                "sleep=duration:10s",
-                "animate=working duration:15s",
+                "sleep=duration:30s",
+                "animate=working duration:20s",
                 "produce=mead",
-                "sleep=duration:120s"
+                "sleep=duration:90s"
             }
         }
     },

@@ -53,9 +53,6 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         requires_supporters = true,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 3,
         prohibited_till = 3000,
         forced_after = 3600
     },
@@ -88,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs honey",
                 "callworker=bees",
-                "sleep=duration:90s"
+                "sleep=duration:120s"
             }
         },
     },

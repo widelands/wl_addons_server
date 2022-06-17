@@ -68,7 +68,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2 fish,meat",
-                "animate=working duration:25s",
+                "animate=working duration:45s",
                 "produce=ration:2"
             }
         },
@@ -81,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2 fish,meat",
-                "animate=working duration:25s",
+                "animate=working duration:45s",
                 "produce=snack:2"
             }
         },
@@ -93,12 +93,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs snack",
                 "return=skipped when economy needs water",
                 "consume=water:3 flour:3 fish,meat:3",
-                "animate=working duration:25s",
+                "animate=working duration:45s",
                 "produce=ration",
-                "sleep=duration:10s",
-                "animate=working duration:25s",
+                "sleep=duration:30s",
+                "animate=working duration:45s",
                 "produce=snack",
-                "sleep=duration:120s"
+                "sleep=duration:90s"
             }
         }
     },

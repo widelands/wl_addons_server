@@ -59,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:10s",
+                "animate=working duration:15s",
                 "produce=beer:4"
             }
         },
@@ -75,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has barley",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
-                "animate=working duration:10s",
+                "animate=working duration:15s",
                 "produce=mead"
             }
         },
@@ -90,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:10s",
+                "animate=working duration:15s",
                 "produce=beer_strong"
             }
         },
@@ -106,7 +106,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has grape:2",
                 "consume=water fruit grape:2",
                 "playsound=sound/empire/winebubble priority:40% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "produce=wine"
             }
         },
@@ -120,19 +120,19 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs wine",
                 "return=skipped when economy needs water",
                 "consume=water:4 barley:4 honey fruit grape",
-                "animate=working duration:10s",
+                "animate=working duration:15s",
                 "produce=beer",
-                "sleep=duration:10s",
-                "animate=working duration:10s",
+                "sleep=duration:30s",
+                "animate=working duration:15s",
                 "produce=beer_strong",
-                "sleep=duration:10s",
-                "animate=working duration:10s",
+                "sleep=duration:30s",
+                "animate=working duration:15s",
                 "produce=mead",
-                "sleep=duration:10s",
+                "sleep=duration:30s",
                 "playsound=sound/empire/winebubble priority:40% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:15s",
                 "produce=wine",
-                "sleep=duration:120s"
+                "sleep=duration:90s"
             }
         }
     },

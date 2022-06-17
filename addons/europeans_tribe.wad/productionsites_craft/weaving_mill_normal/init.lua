@@ -67,7 +67,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:20s",
+                "animate=working duration:45s",
                 "produce=cloth"
             }
         },
@@ -79,7 +79,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed",
                 "consume=reed",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:20s",
+                "animate=working duration:45s",
                 "produce=tabard"
             }
         },
@@ -91,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has wool",
                 "consume=wool",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:20s",
+                "animate=working duration:45s",
                 "produce=armor"
             }
         },
@@ -103,9 +103,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor",
                 "consume=reed wool",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:20s",
+                "animate=working duration:45s",
                 "produce=tabard",
-                "animate=working duration:20s",
+                "animate=working duration:45s",
                 "produce=armor",
                 "sleep=duration:90s"
             }
