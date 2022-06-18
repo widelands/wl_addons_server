@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# 천영준, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-06-18 03:04+0200\n"
 "PO-Revision-Date: 2021-05-28 19:24+0000\n"
+"Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://www.transifex.com/widelands/teams/35159/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: addons/no_default_resources.wad/addon:2
 msgid "Terrains without default resources"
-msgstr ""
+msgstr "기본 자원이 없는 지형"
 
 #: addons/no_default_resources.wad/addon:3
 msgid ""
@@ -27,115 +31,118 @@ msgid ""
 "add-on adds the same terrains but without any default resources. Keep in "
 "mind to set resources manually."
 msgstr ""
+"일부 지형은 자원 (물과 물고기)이 자동으로 적용됩니다. 이 확장팩은 동일한 지형"
+"을 제공하지만 기본 자원은 없습니다. 모든 자원은 플레이어가 수동으로 추가해야 "
+"합니다."
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/no_default_resources.wad/editor.lua:7
 msgid "Summer terrains without default resources"
-msgstr ""
+msgstr "기본 자원이 없는 여름 지형"
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/no_default_resources.wad/editor.lua:24
 msgid "Wasteland terrains without default resources"
-msgstr ""
+msgstr "기본 자원이 없는 황무지 지형"
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/no_default_resources.wad/editor.lua:40
 msgid "Winter terrains without default resources"
-msgstr ""
+msgstr "기본 자원이 없는 겨울 지형"
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/no_default_resources.wad/editor.lua:55
 msgid "Desert terrains without default resources"
-msgstr ""
+msgstr "기본 자원이 없는 사막 지형"
 
 #: addons/no_default_resources.wad/world/terrains/desert/desert4/init.lua:5
 msgid "Desert (dry)"
-msgstr ""
+msgstr "사막 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/desert/drysoil/init.lua:5
 msgid "Dry Soil (dry)"
-msgstr ""
+msgstr "마른 흙 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/desert/meadow/init.lua:5
 msgid "Meadow (dry)"
-msgstr ""
+msgstr "목초지 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/desert/steppe/init.lua:5
 #: addons/no_default_resources.wad/world/terrains/summer/steppe/init.lua:5
 msgid "Steppe (dry)"
-msgstr ""
+msgstr "스텝 지대 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/desert/water/init.lua:5
 #: addons/no_default_resources.wad/world/terrains/summer/water/init.lua:5
 #: addons/no_default_resources.wad/world/terrains/wasteland/water/init.lua:5
 #: addons/no_default_resources.wad/world/terrains/winter/water/init.lua:5
 msgid "Water (no fish)"
-msgstr ""
+msgstr "물가 (물고기 없음)"
 
 #: addons/no_default_resources.wad/world/terrains/summer/meadow1/init.lua:5
 msgid "Meadow 1 (dry)"
-msgstr ""
+msgstr "목초지 1 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/summer/meadow2/init.lua:5
 msgid "Meadow 2 (dry)"
-msgstr ""
+msgstr "목초지 2 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/summer/meadow3/init.lua:5
 msgid "Meadow 3 (dry)"
-msgstr ""
+msgstr "목초지 3 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/summer/meadow4/init.lua:5
 msgid "Meadow 4 (dry)"
-msgstr ""
+msgstr "목초지 4 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/summer/steppe_barren/init.lua:5
 msgid "Barren Steppe (dry)"
-msgstr ""
+msgstr "척박한 스텝 지대 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/summer/swamp/init.lua:5
 msgid "Swamp (dry)"
-msgstr ""
+msgstr "늪 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/ashes1/init.lua:5
 msgid "Ashes 1 (dry)"
-msgstr ""
+msgstr "재 1 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/ashes2/init.lua:5
 msgid "Ashes 2 (dry)"
-msgstr ""
+msgstr "재 2 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/hardground1/init.lua:5
 msgid "Hard Ground 1 (dry)"
-msgstr ""
+msgstr "단단한 지반 1 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/hardground2/init.lua:5
 msgid "Hard Ground 2 (dry)"
-msgstr ""
+msgstr "단단한 지반 2 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/hardground3/init.lua:5
 msgid "Hard Ground 3 (dry)"
-msgstr ""
+msgstr "단단한 지반 3 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/hardground4/init.lua:5
 msgid "Hard Ground 4 (dry)"
-msgstr ""
+msgstr "단단한 지반 4 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/winter/taiga/init.lua:5
 msgid "Taiga (dry)"
-msgstr ""
+msgstr "타이가 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/winter/tundra/init.lua:5
 msgid "Tundra 1 (dry)"
-msgstr ""
+msgstr "툰드라 1 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/winter/tundra2/init.lua:5
 msgid "Tundra 2 (dry)"
-msgstr ""
+msgstr "툰드라 2 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/winter/tundra3/init.lua:5
 msgid "Tundra 3 (dry)"
-msgstr ""
+msgstr "툰드라 3 (건조)"
 
 #: addons/no_default_resources.wad/world/terrains/winter/tundra_taiga/init.lua:5
 msgid "Tundra Taiga (dry)"
-msgstr ""
+msgstr "툰드라 타이가 (건조)"

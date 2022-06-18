@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# 천영준, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-06-18 03:04+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://www.transifex.com/widelands/teams/35159/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -19,17 +23,19 @@ msgstr ""
 
 #: addons/stronger-trading-outpost.wad/addon:2
 msgid "Stronger Trading Outpost"
-msgstr ""
+msgstr "강화된 교역소"
 
 #: addons/stronger-trading-outpost.wad/addon:3
 msgid ""
 "Enhanced Trading Outpost starting conditions for all official tribes. "
 "Intended to give AIs a stronger start."
 msgstr ""
+"모든 공식 부족들에게 강화된 교역소가 시작 조건으로 주어집니다. AI로 하여금 더"
+"욱 앞서 나갈 수 있게 해 줍니다."
 
 #: addons/stronger-trading-outpost.wad/addon:4
 msgid "Nordfriese & the-x"
-msgstr ""
+msgstr "북프리지안 & x"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/stronger-trading-outpost.wad/amazons.lua:11
@@ -38,7 +44,7 @@ msgstr ""
 #: addons/stronger-trading-outpost.wad/empire.lua:11
 #: addons/stronger-trading-outpost.wad/frisians.lua:11
 msgid "AI Trading Outpost"
-msgstr ""
+msgstr "AI 교역소"
 
 #. TRANSLATORS: This is the tooltip for the "AI Trading Outpost" starting condition
 #: addons/stronger-trading-outpost.wad/amazons.lua:13
@@ -48,4 +54,4 @@ msgstr ""
 #: addons/stronger-trading-outpost.wad/frisians.lua:13
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
-msgstr ""
+msgstr "해당 플레이어가 중요 자원이 부족해지면 자원들이 무료로 보충됩니다."
