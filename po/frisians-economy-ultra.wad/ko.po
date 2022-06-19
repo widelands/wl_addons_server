@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-18 03:04+0200\n"
+"POT-Creation-Date: 2022-06-19 03:04+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://www.transifex.com/widelands/teams/35159/ko/)\n"
@@ -106,7 +106,7 @@ msgstr "수확지 부족"
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this oat farm has no cleared soil to plant his seeds."
-msgstr "이 귀리 농장에서 일하는 농부는 식토가 없습니다."
+msgstr "이 귀리 농장은 더 이상 재배가 불가능합니다."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/harvested/init.lua:8
@@ -309,7 +309,7 @@ msgstr "호밀 수확"
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this rye farm has no cleared soil to plant his seeds."
-msgstr "이 호밀 농장에서 일하는 농부는 식토가 없습니다."
+msgstr "이 호밀 농장은 더 이상 재배가 불가능합니다."
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/rye_flour/init.lua:8
@@ -332,7 +332,7 @@ msgstr "호밀 제분"
 #: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr "호밀 수확지 (수학 완료)"
+msgstr "호밀 수확지 (수확 완료)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/medium/init.lua:8
