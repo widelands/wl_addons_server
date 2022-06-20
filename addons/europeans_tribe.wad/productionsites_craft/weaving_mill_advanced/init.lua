@@ -95,10 +95,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs tabard",
                 "return=skipped when economy needs armor",
-                "consume=reed wool",
+                "consume=reed",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
                 "produce=tabard",
+                "consume=wool",
+                "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
                 "produce=armor",
                 "sleep=duration:90s"

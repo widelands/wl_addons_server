@@ -5,5 +5,7 @@ if N then
       ryefield_tiny = { "field", "seed_rye", "__replace_if_exists" }
     }
 else
-    return {}
+    return {
+      ryefield_tiny = { "field", "seed_rye", "__replace_if_exists" }
+    }
 end

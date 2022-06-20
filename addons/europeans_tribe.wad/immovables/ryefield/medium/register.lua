@@ -5,5 +5,7 @@ if N then
       ryefield_medium = { "field", "flowering", "__replace_if_exists" }
     }
 else
-    return {}
+    return {
+      ryefield_medium = { "field", "flowering", "__replace_if_exists" }
+    }
 end

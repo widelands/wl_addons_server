@@ -3346,6 +3346,8 @@ wl.Descriptions():new_tribe {
     ship = "europeans_ship",
     ferry = "europeans_ferry",
     port = "europeans_port",
+    carrier = "europeans_carrier_1",
+    carrier2 = "europeans_carrier_3",
 }
 
 pop_textdomain()

@@ -75,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs coal or workers need experience",
                 "return=skipped unless site has log:3",
                 "consume=log:3",
-                "animate=working duration:1m30s",
+                "animate=working duration:90s",
                 "produce=coal"
             }
         },
@@ -86,7 +86,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coal",
                 "return=skipped when economy needs log",
                 "consume=log:3",
-                "animate=working duration:1m30s",
+                "animate=working duration:90s",
                 "produce=coal",
                 "sleep=duration:60s"
             }

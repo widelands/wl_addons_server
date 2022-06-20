@@ -69,9 +69,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat or economy needs fish",
                 "return=skipped unless site has water:3",
                 "return=skipped unless site has corn:3",
-                "consume=water:3 corn:3",
+                "consume=water corn",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:40s", -- Animation of feeding the cattle
+                "animate=working duration:10s", -- Animation of feeding the cattle
+                "consume=water corn",
+                "playsound=sound/farm/ox priority:50% allow_multiple",
+                "animate=working duration:10s", -- Animation of feeding the cattle
+                "consume=water corn",
+                "playsound=sound/farm/ox priority:50% allow_multiple",
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
             }
         },
@@ -83,9 +89,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat or economy needs fish",
                 "return=skipped unless site has water:3",
                 "return=skipped unless site has corn:3",
-                "consume=water:3 corn:3",
+                "consume=water corn",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
-                "animate=working duration:40s", -- Feeding cute little baby donkeys ;)
+                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
+                "consume=water corn",
+                "playsound=sound/farm/donkey priority:50% allow_multiple",
+                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
+                "consume=water corn",
+                "playsound=sound/farm/donkey priority:50% allow_multiple",
+                "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
                 "recruit=europeans_carrier_donkey"
             }
         },
@@ -96,9 +108,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs meat or workers need experience",
                 "return=skipped unless site has water:3",
                 "return=skipped unless site has corn:3",
-                "consume=water:3 corn:3",
+                "consume=water corn",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:40s",
+                "animate=working duration:10s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:10s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
                 "produce=meat:2"
            }
         },
@@ -109,8 +127,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs fish or workers need experience",
                 "return=skipped unless site has water:3",
                 "return=skipped unless site has corn:3",
-                "consume=water:3 corn:3",
-                "animate=working duration:40s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:10s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:10s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
                 "produce=fish:2"
             }
         },

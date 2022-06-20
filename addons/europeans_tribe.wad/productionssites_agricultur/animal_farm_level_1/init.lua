@@ -70,9 +70,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat or economy needs fish",
                 "return=skipped unless site has water:3",
                 "return=skipped unless site has corn:3",
-                "consume=water:3 corn:3",
+                "consume=water corn",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:50s", -- Animation of feeding the cattle
+                "animate=working duration:15s", -- Animation of feeding the cattle
+                "consume=water corn",
+                "playsound=sound/farm/ox priority:50% allow_multiple",
+                "animate=working duration:15s", -- Animation of feeding the cattle
+                "consume=water corn",
+                "playsound=sound/farm/ox priority:50% allow_multiple",
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
             }
         },
@@ -83,9 +89,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs meat or workers need experience",
                 "return=skipped unless site has water:3",
                 "return=skipped unless site has corn:3",
-                "consume=water:3 corn:3",
+                "consume=water corn",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:50s",
+                "animate=working duration:10s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
                 "produce=meat:2"
            }
         },
@@ -96,8 +108,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs fish or workers need experience",
                 "return=skipped unless site has water:3",
                 "return=skipped unless site has corn:3",
-                "consume=water:3 corn:3",
-                "animate=working duration:50s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:10s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
                 "produce=fish:2"
             }
         },

@@ -5,5 +5,7 @@ if N then
       ryefield_ripe = { "field", "ripe_rye", "__replace_if_exists" }
     }
 else
-    return {}
+    return {
+      ryefield_ripe = { "field", "ripe_rye", "__replace_if_exists" }
+    }
 end

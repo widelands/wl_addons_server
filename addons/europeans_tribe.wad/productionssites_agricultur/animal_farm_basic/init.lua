@@ -76,9 +76,18 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat",
                 "return=skipped when economy needs flour and economy needs beer",
                 "return=skipped unless site has water:4",
-                "consume=water:4 rye,wheat,barley:4 ",
+                "consume=water rye,wheat,barley",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:60s", -- Animation of feeding the cattle
+                "animate=working duration:15s", -- Animation of feeding the cattle
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/ox priority:50% allow_multiple",
+                "animate=working duration:15s", -- Animation of feeding the cattle
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/ox priority:50% allow_multiple",
+                "animate=working duration:15s", -- Animation of feeding the cattle
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/ox priority:50% allow_multiple",
+                "animate=working duration:15s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
             }
         },
@@ -88,9 +97,18 @@ wl.Descriptions():new_productionsite_type {
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
                 "return=skipped unless site has water:4",
-                "consume=water:4 rye,wheat,barley:4",
+                "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:60s",
+                "animate=working duration:15s",
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:15s",
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:15s",
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:15s",
                 "produce=meat:2"
            }
         },

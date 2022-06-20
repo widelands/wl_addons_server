@@ -75,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
            descname = pgettext("europeans_building", "tailoring a tabard"),
             actions = {
-                "return=skipped unless economy needs tabard",
+                "return=skipped when economy needs reed and not economy needs tabard",
                 "return=skipped unless site has reed",
                 "consume=reed",
                 "playsound=sound/mill/weaving priority:90%",
@@ -87,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
             descname = pgettext("europeans_building", "forging a suit of armor"),
             actions = {
-                "return=skipped unless economy needs armor",
+                "return=skipped when economy needs wool and not economy needs armor",
                 "return=skipped unless site has wool",
                 "consume=wool",
                 "playsound=sound/mill/weaving priority:90%",
@@ -101,10 +101,13 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs tabard",
                 "return=skipped when economy needs armor",
-                "consume=reed wool",
+                "return=skipped when economy needs reed and not workers need experience",
+                "consume=reed",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:45s",
                 "produce=tabard",
+                "consume=wool",
+                "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:45s",
                 "produce=armor",
                 "sleep=duration:90s"

@@ -77,9 +77,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
                 "return=skipped when economy needs meat or economy needs fish",
                 "return=skipped unless site has water:3",
-                "consume=water:3 blackroot,corn:3",
+                "consume=water blackroot,corn",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:30s", -- Animation of feeding the cattle
+                "animate=working duration:10s", -- Animation of feeding the cattle
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/ox priority:50% allow_multiple",
+                "animate=working duration:10s", -- Animation of feeding the cattle
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/ox priority:50% allow_multiple",
+                "animate=working duration:10s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
             }
         },
@@ -90,9 +96,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_carrier_donkey or workers need experience",
                 "return=skipped when economy needs meat or economy needs fish",
                 "return=skipped unless site has water:3",
-                "consume=water:3 blackroot,corn:3",
+                "consume=water blackroot,corn",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
-                "animate=working duration:30s", -- Feeding cute little baby donkeys ;)
+                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/donkey priority:50% allow_multiple",
+                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/donkey priority:50% allow_multiple",
+                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
                 "recruit=europeans_carrier_donkey"
             }
         },
@@ -102,9 +114,15 @@ wl.Descriptions():new_productionsite_type {
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
                 "return=skipped unless site has water:3",
-                "consume=water:4 blackroot,corn:4",
+                "consume=water blackroot,corn",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:10s",
+                "consume=water:2 blackroot,corn:2",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:10s",
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:10s",
                 "produce=meat:3"
            }
         },
@@ -114,8 +132,15 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fish or workers need experience",
                 "return=skipped unless site has water:3",
-                "consume=water:4 blackroot,corn:4",
-                "animate=working duration:30s",
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:10s",
+                "consume=water:2 blackroot,corn:2",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:10s",
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:10s",
                 "produce=fish:3"
             }
         },

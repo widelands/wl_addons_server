@@ -63,9 +63,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs log and not economy needs planks",
                 "return=skipped unless site has log:2",
-                "consume=log:2",
+                "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:20s",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:25s",
                 "produce=planks"
             }
         },
@@ -75,9 +78,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs log and not economy needs blackwood",
                 "return=skipped unless site has log:2",
-                "consume=log:2",
+                "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:45s",
+                "animate=working duration:20s",
+                "consume=log",
+                "playsound=sound/barbarians/blackwood priority:60%",
+                "animate=working duration:25s",
                 "produce=blackwood:2"
             }
         },
@@ -88,10 +94,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood",
                 "return=skipped when economy needs planks",
                 "return=skipped when economy needs log",
-                "consume=log:2",
+                "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:45s", 
-                "produce=planks",
+                "animate=working duration:20s",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:25s",
                 "sleep=duration:120s"
             }
         },

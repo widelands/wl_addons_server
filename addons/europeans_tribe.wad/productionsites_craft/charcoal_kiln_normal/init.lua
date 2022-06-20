@@ -64,7 +64,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs coal or workers need experience",
                 "return=skipped unless site has log:4",
                 "consume=log:6",
-                "animate=working duration:1m30s",
+                "animate=working duration:90s",
                 "produce=coal:3"
             }
         },
@@ -76,7 +76,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood",
                 "return=skipped unless site has blackwood:6",
                 "consume=blackwood:6",
-                "animate=working duration:1m30s", -- Charcoal fires will burn for some days in real life
+                "animate=working duration:90s", -- Charcoal fires will burn for some days in real life
                 "produce=coal:3"
             }
         },
@@ -87,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coal",
                 "return=skipped when economy needs log",
                 "consume=log:3",
-                "animate=working duration:1m30s",
+                "animate=working duration:90s",
                 "produce=coal",
                 "sleep=duration:60s"
             }
