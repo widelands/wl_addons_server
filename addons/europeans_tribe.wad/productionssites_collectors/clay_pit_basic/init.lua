@@ -52,6 +52,7 @@ wl.Descriptions():new_productionsite_type {
    },
 
     aihints = {
+        needs_water = true,
         prohibited_till = 3000,
         forced_after = 3600
     },

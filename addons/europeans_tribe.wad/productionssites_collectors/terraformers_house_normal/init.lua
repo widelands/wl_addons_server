@@ -1,0 +1,97 @@
+push_textdomain("europeans_tribe.wad", true)
+
+dirname = path.dirname(__file__)
+
+wl.Descriptions():new_productionsite_type {
+    name = "europeans_terraformers_house_normal",
+    -- TRANSLATORS: This is a building name used in lists of buildings
+    descname = pgettext("europeans_building", "Normal Terraformer’s House"),
+    icon = dirname .. "menu.png",
+    size = "small",
+
+    enhancement = {
+        name = "europeans_terraformers_house_advanced",
+        enhancement_cost = {
+            planks = 1,
+            brick = 1,
+            grout = 1,
+            marble = 1
+        },
+        enhancement_return_on_dismantle = {
+            granite = 1,
+            marble = 1
+        }
+    },
+    
+    animation_directory = dirname,
+    animations = {
+          idle = {
+             hotspot = { 34, 74 },
+          },
+          working = {
+             basename = "idle", -- TODO(GunChleoc): No animation yet.
+             hotspot = { 34, 74 },
+          }
+    },
+
+    aihints = {},
+
+    working_positions = {
+        europeans_terraformer_normal = 1
+    },
+
+    inputs = {
+        { name = "snack", amount = 4 },
+        { name = "mead", amount = 4 }
+    },
+
+    programs = {
+        main = {
+            -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+            descname = _"working",
+            actions = {
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "sleep=duration:30s",
+                "return=skipped"
+            }
+        },
+        terraforming_pond = {
+            -- TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
+            descname = pgettext("europeans_building", "terraforming pond"),
+            actions = {
+                "consume=snack mead",
+                "callworker=terraform_pond",
+            }
+        },
+        terraforming_coast = {
+            -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
+            descname = pgettext("europeans_building", "terraforming coast"),
+            actions = {
+                "consume=snack mead",
+                "callworker=terraform_coast"
+            }
+        },
+        dummy_program = {
+            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+            descname = _"dummy program",
+            actions = {
+                "callworker=check_water_fish",
+                "sleep=duration:1s",
+                "callworker=check_water_breed_fish",
+                "sleep=duration:10s",
+                "recruit=europeans_carrier_2",
+                "sleep=duration:10s",
+                "recruit=europeans_carrier_donkey"
+            }
+        }
+    },
+}
+
+pop_textdomain()

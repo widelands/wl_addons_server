@@ -111,7 +111,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
             descname = pgettext("europeans_building", "planting rye"),
             actions = {
-                "return=skipped unless economy needs rye",
+                "return=skipped unless economy needs rye or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant_rye",
@@ -125,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
             descname = pgettext("europeans_building", "planting wheat"),
             actions = {
-                "return=skipped unless economy needs wheat",
+                "return=skipped unless economy needs wheat or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=plant_wheat",
@@ -165,7 +165,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
             descname = pgettext("europeans_building", "harvesting rye"),
             actions = {
-                "return=skipped unless economy needs rye",
+                "return=skipped unless economy needs rye or workers need experience",
                 "callworker=harvest_rye",
                 "animate=working duration:6s",
                 "produce=rye",
@@ -178,7 +178,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
             descname = pgettext("europeans_building", "harvesting wheat"),
             actions = {
-                "return=skipped unless economy needs wheat",
+                "return=skipped unless economy needs wheat or workers need experience",
                 "callworker=harvest_wheat",
                 "animate=working duration:6s",
                 "produce=wheat",

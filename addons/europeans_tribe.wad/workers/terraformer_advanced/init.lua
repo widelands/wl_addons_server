@@ -11,11 +11,17 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
+        check_water_fish = {
+            "findspace=size:any radius:8 resource:resource_fish",
+        },
+        check_water_breed_fish = {
+            "findspace=size:any radius:8 breed resource:resource_fish",
+        },
         check_terraform_coast = {
-            "findspace=size:swim radius:32 terraform:diking",
+            "findspace=size:swim radius:16 terraform:diking",
         },
         terraform_coast = {
-            "findspace=size:swim radius:32 terraform:diking",
+            "findspace=size:swim radius:16 terraform:diking",
             "walk=coords",
             "animate=dig duration:2s",
             "terraform=diking",
@@ -23,14 +29,26 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         check_terraform_land = {
-            "findspace=size:any radius:32 terraform:amazons",
+            "findspace=size:any radius:16 terraform:amazons",
         },
         terraform_land = {
-            "findspace=size:any radius:32 terraform:amazons",
+            "findspace=size:any radius:16 terraform:amazons",
             "walk=coords",
             "animate=dig duration:2s",
             "terraform=amazons",
             "animate=dig duration:2s",
+            "return"
+        },
+        check_terraform_pond = {
+            "findobject=attrib:pond_water radius:16",
+        },
+        terraform_pond= {
+            "findobject=attrib:pond_water radius:16",
+            "walk=object",
+            "animate=dig duration:2s",
+            "callobject=remove_pond",
+            "animate=dig duration:2s",
+            "terraform=amazons",
             "return"
         },
     },

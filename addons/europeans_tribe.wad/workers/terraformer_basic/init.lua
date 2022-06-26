@@ -14,6 +14,12 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_terraformer_normal",
     
     programs = {
+        check_water_fish = {
+            "findspace=size:any radius:8 resource:resource_fish",
+        },
+        check_water_breed_fish = {
+            "findspace=size:any radius:8 breed resource:resource_fish",
+        },
         check_terraform_coast = {
             "findspace=size:swim radius:8 terraform:diking",
         },
@@ -34,6 +40,18 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:2s",
             "terraform=amazons",
             "animate=dig duration:2s",
+            "return"
+        },
+        check_terraform_pond = {
+            "findobject=attrib:pond_water radius:8",
+        },
+        terraform_pond= {
+            "findobject=attrib:pond_water radius:8",
+            "walk=object",
+            "animate=dig duration:2s",
+            "callobject=remove_pond",
+            "animate=dig duration:2s",
+            "terraform=amazons",
             "return"
         },
     },

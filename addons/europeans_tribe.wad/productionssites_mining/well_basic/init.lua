@@ -48,7 +48,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        basic_amount = 6,
+        basic_amount = 10,
         forced_after = 10
     },
 

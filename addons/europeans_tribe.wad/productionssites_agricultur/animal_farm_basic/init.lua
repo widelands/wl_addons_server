@@ -65,6 +65,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=produce_cattle",
                 "call=produce_meat",
+                "call=produce_meat_idle",
                 "return=skipped"
             }
         },

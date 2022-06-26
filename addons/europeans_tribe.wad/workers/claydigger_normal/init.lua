@@ -15,23 +15,23 @@ wl.Descriptions():new_worker_type {
 
     programs = {
         check_dike = {
-            "findspace=size:swim radius:12 terraform:diking",
+            "findspace=size:swim radius:8 terraform:diking",
         },
         dike = {
-            "findspace=size:swim radius:12 terraform:diking",
+            "findspace=size:swim radius:8 terraform:diking",
             "walk=coords",
             "animate=dig duration:4s",
             "terraform=diking",
             "return"
         },
         check_dig = {
-            "findspace=size:any radius:12 avoid:field",
+            "findspace=size:any radius:8 avoid:field terraform:amazons",
         },
         dig = {
-            "findspace=size:any radius:12 avoid:field",
+            "findspace=size:any radius:8 avoid:field terraform:amazons",
             "walk=coords",
             "animate=dig duration:4s",
-            "plant=attrib:pond_dry",
+            "plant=attrib:pond_water",
             "return"
         }
     },

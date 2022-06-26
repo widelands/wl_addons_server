@@ -1932,35 +1932,14 @@ wl.Descriptions():new_tribe {
             name = "pond_dry",
             helptexts = {
                 -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("When claydiggers dig up earth, they leave holes in the ground. These holes vanish after a while. Aqua farms can use them as ponds to grow fish in them, whereas charcoal burners erect their charcoal stacks in them.")
+                purpose = _("Ponds with water becomes dry after some time. These dry holes vanish after a while.")
             }
         },
         {
-            name = "pond_growing",
+            name = "pond_water",
             helptexts = {
                 -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("Fish are maturing in this pond. A fisher working from an aqua farm will be able to catch them when they are bigger.")
-            }
-        },
-        {
-            name = "pond_mature",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("Fish are living in this pond. A fisher working from an aqua farm can catch them as food.")
-            }
-        },
-        {
-            name = "pond_burning",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("A charcoal stack is burning in this earthen hole. When it has burnt down, a charcoal burner will be able to gather coal from it.")
-            }
-        },
-        {
-            name = "pond_coal",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("A charcoal stack, which had been erected in this earthen hole, is ready for a charcoal burner to gather coal from it.")
+                purpose = _("When claydiggers dig up earth, they leave holes with water in the ground. These falls dry after a while or can be used by terraformer to produce new soil.")
             }
         },
         {
@@ -3339,7 +3318,8 @@ wl.Descriptions():new_tribe {
 
     -- Special types
     builder = "europeans_builder",
-    carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
+    -- carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
+    carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3"},
     geologist = "europeans_geologist",
     scouts_house = "europeans_scouts_house_basic",
     soldier = "europeans_soldier",
