@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-26 03:03+0200\n"
+"POT-Creation-Date: 2022-07-02 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2022\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -1072,13 +1072,13 @@ msgstr "Maisacker (ganz lütt)"
 #: addons/europeans_tribe.wad/immovables/pond/dry/init.lua:8
 msgctxt "immovable"
 msgid "Dry Pond"
-msgstr ""
+msgstr "Dröge Pool"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/with_water/init.lua:8
 msgctxt "immovable"
 msgid "Pond with water"
-msgstr ""
+msgstr "Pool mit Water"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/medium/init.lua:8
@@ -2617,10 +2617,9 @@ msgstr "Grote Landumackeree"
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:57
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:76
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:67
-#, fuzzy
 msgctxt "europeans_building"
 msgid "terraforming pond"
-msgstr "dat Land früchtbarer to maken"
+msgstr "Polen umtowanneln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:65
@@ -5001,18 +5000,19 @@ msgid ""
 "Ponds with water becomes dry after some time. These dry holes vanish after a "
 "while."
 msgstr ""
+"Polen mit Water worden na eeniger Tied dröge. Deese drögen Locken gahn na "
+"eeniger Tied weg."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
-#, fuzzy
 msgid ""
 "When claydiggers dig up earth, they leave holes with water in the ground. "
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
-"Wenn Lehmgravers Klei upgraven, laten se Locken in de Eer. Deese Locken "
-"verswinnen na eeniger Tied. Fissbuurdereen könen se as Polen bruken, um "
-"daarin Fisse to tüchten, un Holtköhlbranners bauen daarin hör Köhler-Stapels."
+"Wenn Lehmgravers Klei upgraven, blieven Locken mit Water in de Grund torügg. "
+"Se worden na eeniger Tied dröge of könen vun eenem  Landumackereerer bruukt "
+"worden, um neje Eer to maken."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1949
@@ -6390,31 +6390,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgid ""
-#~ "Fish are maturing in this pond. A fisher working from an aqua farm will "
-#~ "be able to catch them when they are bigger."
-#~ msgstr ""
-#~ "Fisse wassen in deesem Pool. Een Fisker, well bi eener Fissbuurderee "
-#~ "warkt, kann se fangen, wenn se groter sünd."
-
-#~ msgid ""
-#~ "Fish are living in this pond. A fisher working from an aqua farm can "
-#~ "catch them as food."
-#~ msgstr ""
-#~ "Fisse leven in deesem Pool. Een Fisker, well bi eener Fissbuurderee "
-#~ "warkt, kann se tum Eten fangen."
-
-#~ msgid ""
-#~ "A charcoal stack is burning in this earthen hole. When it has burnt down, "
-#~ "a charcoal burner will be able to gather coal from it."
-#~ msgstr ""
-#~ "Een Köhler-Stapel brannt in deesem Eerlock. Wenn ’t daalbrannt is, kann "
-#~ "een Holtköhlbranner de Köhl pottjen."
-
-#~ msgid ""
-#~ "A charcoal stack, which had been erected in this earthen hole, is ready "
-#~ "for a charcoal burner to gather coal from it."
-#~ msgstr ""
-#~ "Een Köhler-Stapel, wat in deesem Eerlock baut wurr, is klaar, dat een "
-#~ "Holtköhlbranner de Köhl pottjen kann."

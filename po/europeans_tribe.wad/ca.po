@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-26 03:03+0200\n"
+"POT-Creation-Date: 2022-07-02 03:03+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -2613,10 +2613,9 @@ msgstr "Casa del terraformador avançada"
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:57
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:76
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:67
-#, fuzzy
 msgctxt "europeans_building"
 msgid "terraforming pond"
-msgstr "modificar el terreny"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:65
@@ -4919,16 +4918,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
-#, fuzzy
 msgid ""
 "When claydiggers dig up earth, they leave holes with water in the ground. "
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
-"Quan els excavadors d'argila caven el terra, deixen forats al terra. Aquests "
-"forats desapareixeran amb el temps. Les granges aqüícoles els poden usar com "
-"a estanys on criar-hi peixos, mentre que els carboners hi posaran piles de "
-"fusta."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1949
@@ -6299,31 +6293,3 @@ msgstr "Teixidor bàsic"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Teixidor normal"
-
-#~ msgid ""
-#~ "Fish are maturing in this pond. A fisher working from an aqua farm will "
-#~ "be able to catch them when they are bigger."
-#~ msgstr ""
-#~ "Els peixos de l'estany estan creixent. Un pescador treballant en una "
-#~ "granja aqüícola en podrà treure per fer menjar quan siguin més grans."
-
-#~ msgid ""
-#~ "Fish are living in this pond. A fisher working from an aqua farm can "
-#~ "catch them as food."
-#~ msgstr ""
-#~ "En aquest estany hi ha peixos. Un pescador treballant en una granja "
-#~ "aqüícola en pot agafar per fer menjar."
-
-#~ msgid ""
-#~ "A charcoal stack is burning in this earthen hole. When it has burnt down, "
-#~ "a charcoal burner will be able to gather coal from it."
-#~ msgstr ""
-#~ "En aquest forat hi crema una pila de fusta. Quan hagi cremat, un carboner "
-#~ "en traurà carbó."
-
-#~ msgid ""
-#~ "A charcoal stack, which had been erected in this earthen hole, is ready "
-#~ "for a charcoal burner to gather coal from it."
-#~ msgstr ""
-#~ "Una pila de fusta aixecada en un forat, d'on un carboner en pot treure "
-#~ "carbó."
