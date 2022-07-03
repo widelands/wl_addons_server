@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-02 03:03+0200\n"
+"POT-Creation-Date: 2022-07-03 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -352,7 +352,7 @@ msgstr "Mercat"
 #: addons/europeans_tribe.wad/productionssites_agricultur/farm_medium_basic/init.lua:59
 #: addons/europeans_tribe.wad/productionssites_agricultur/farm_medium_normal/init.lua:57
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_advanced/init.lua:36
-#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:71
+#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:74
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_normal/init.lua:50
 #: addons/europeans_tribe.wad/productionssites_collectors/foresters_house_advanced/init.lua:32
 #: addons/europeans_tribe.wad/productionssites_collectors/foresters_house_basic/init.lua:72
@@ -361,10 +361,10 @@ msgstr "Mercat"
 #: addons/europeans_tribe.wad/productionssites_collectors/lumberjacks_house_basic/init.lua:63
 #: addons/europeans_tribe.wad/productionssites_collectors/lumberjacks_house_normal/init.lua:42
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:29
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:63
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:66
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:42
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:39
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:64
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:65
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:51
 #: addons/europeans_tribe.wad/productionssites_mining/well_basic/init.lua:62
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_1/init.lua:49
@@ -1321,7 +1321,7 @@ msgstr "preparar cervesa negra"
 #: addons/europeans_tribe.wad/productionssites_agricultur/farm_medium_basic/init.lua:87
 #: addons/europeans_tribe.wad/productionssites_agricultur/farm_medium_normal/init.lua:107
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_advanced/init.lua:59
-#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:102
+#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:105
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_normal/init.lua:73
 #: addons/europeans_tribe.wad/productionssites_collectors/foresters_house_advanced/init.lua:57
 #: addons/europeans_tribe.wad/productionssites_collectors/foresters_house_basic/init.lua:93
@@ -1884,9 +1884,9 @@ msgstr "produir carn"
 
 #. TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:131
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:83
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:92
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:83
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:87
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:95
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:85
 msgid "dummy program"
 msgstr "programa fictici"
 
@@ -2314,14 +2314,14 @@ msgid "Basic Clay Pit"
 msgstr "Fossa de fang bàsic"
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:82
+#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:85
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_normal/init.lua:61
 msgctxt "europeans_building"
 msgid "digging clay"
 msgstr "extraure argila"
 
 #. TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:93
+#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:96
 msgctxt "europeans_building"
 msgid "diking clay"
 msgstr "fer dics d'argila"
@@ -2438,7 +2438,7 @@ msgstr "Pedrera avançada"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:38
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:72
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:75
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:51
 msgctxt "europeans_building"
 msgid "quarrying"
@@ -2450,7 +2450,7 @@ msgstr "tallar pedra"
 #. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:53
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:86
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:89
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:66
 #: addons/europeans_tribe.wad/productionssites_mining/coalmine_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionssites_mining/coalmine_level_1/init.lua:58
@@ -2476,7 +2476,7 @@ msgstr "extraure recursos"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:70
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:100
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:103
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:81
 msgctxt "europeans_building"
 msgid "quarrying granite"
@@ -2484,7 +2484,7 @@ msgstr "tallar granit"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:77
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:107
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:110
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:88
 msgctxt "europeans_building"
 msgid "quarrying marble"
@@ -2492,7 +2492,7 @@ msgstr "tallar marbre"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:84
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:114
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:117
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:95
 #: addons/europeans_tribe.wad/productionssites_mining/coalmine_basic/init.lua:101
 #: addons/europeans_tribe.wad/productionssites_mining/coalmine_level_1/init.lua:89
@@ -2518,7 +2518,7 @@ msgstr "extraure granit"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:91
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:121
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:124
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:103
 #: addons/europeans_tribe.wad/productionssites_mining/goldmine_basic/init.lua:110
 #: addons/europeans_tribe.wad/productionssites_mining/goldmine_level_1/init.lua:98
@@ -2555,13 +2555,13 @@ msgid "mining diamond"
 msgstr "extraure diamants"
 
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:113
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:129
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:132
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:111
 msgid "No Rocks"
 msgstr "No hi ha roques"
 
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:114
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:130
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:133
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:112
 msgid "Out of Rocks"
 msgstr "Sense roques"
@@ -2580,7 +2580,7 @@ msgctxt "europeans_building"
 msgid "Basic Quarry"
 msgstr "Pedrera bàsica"
 
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:131
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:134
 msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any rocks in his work "
@@ -2610,23 +2610,23 @@ msgid "Advanced Terraformer’s House"
 msgstr "Casa del terraformador avançada"
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:57
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:76
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:67
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:61
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:79
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:69
 msgctxt "europeans_building"
 msgid "terraforming pond"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:65
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:69
 msgctxt "europeans_building"
 msgid "terraforming land"
 msgstr "modificar el terreny"
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:75
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:84
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:75
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:79
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:87
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:77
 msgctxt "europeans_building"
 msgid "terraforming coast"
 msgstr "modificar la costa"
@@ -3330,6 +3330,8 @@ msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
 "Not suitable for AI players."
 msgstr ""
+"Es comença la partida amb tres vaixells a l'oceà i uns pocs "
+"subministraments. Aquesta condició inicial no és adequada per a jugadors IA."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
@@ -3342,6 +3344,8 @@ msgid ""
 "Start the game with a bundle of ports. The AI might struggle with this "
 "starting condition on smaller maps."
 msgstr ""
+"Es comença la partida amb uns quants ports. La IA pot patir una mica amb "
+"aquesta condició inicial en mapes petits."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
@@ -3948,6 +3952,9 @@ msgid ""
 "These transparent quartz gems are used to build some exclusive buildings. "
 "They are mined as a byproduct in a deep iron mine or by advanced quarry."
 msgstr ""
+"Aquestes gemmes de quars transparent s'usen per construir edificis "
+"exclusius. S'extrauen de les mines profundes de ferro com a subproducte i en "
+"pedreres avançades."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:245
@@ -4022,6 +4029,8 @@ msgstr "El blat és essencial per sobreviure."
 msgctxt "europeans_ware"
 msgid "Wheat is produced by farms and used by mills to produce mixed flour."
 msgstr ""
+"El blat es produeix a les masoveries i s'usa en molins per aconseguir-ne "
+"farina barrejada."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Flour
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:323
@@ -4080,6 +4089,7 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid "Meals are produced in an inn out of fish or meat and water and flour."
 msgstr ""
+"Els àpats es produeixen en hostals a partir d'aigua, farina i carn o bé peix."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:375
@@ -4169,6 +4179,9 @@ msgid ""
 "This tasty wine is drunk by soldiers to train in advanced battlearena and by "
 "miners in the deepest mines. It is produced in a winery."
 msgstr ""
+"Aquest vi saborós el beuen els soldats per entrenar a les palestres "
+"d'entrenament i pels miners de les mines més profundes. Es produeix als "
+"cellers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:463
@@ -4207,6 +4220,8 @@ msgid ""
 "Discarded weapons and armor can be recycled in an advanced smelting works to "
 "produce new tools, weapon and armor."
 msgstr ""
+"Les armes i armadures fetes malbé es poden reciclar en un forn de metalls "
+"avançat per produir eines, armes i armadures noves."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:497
@@ -4258,6 +4273,8 @@ msgid ""
 "The shovel is an essential tool. Therefore the forester, the claydigger and "
 "the farmer use them."
 msgstr ""
+"La pala és una eina essencial. Per això la fan servir el guarda forestal, "
+"l'excavador d'argila i el granger."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
@@ -4289,12 +4306,13 @@ msgctxt "europeans_ware"
 msgid ""
 "The pick is an essential tool. Picks are used by stonemasons and miners."
 msgstr ""
+"El pic és una eina essencial que utilitzen els picapedrers i els miners."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Pick, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:575
 msgctxt "europeans_ware"
 msgid "They are produced produced by all smithies."
-msgstr ""
+msgstr "Es produeixen en tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:586
@@ -4318,6 +4336,7 @@ msgid ""
 "The hammer is an essential tool. Geologists, builders, and smiths all need a "
 "hammer."
 msgstr ""
+"El martell és una eina essencial per als geòlegs, constructors i ferrers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:601
@@ -4340,6 +4359,7 @@ msgid ""
 "They are used in the smelting works and smithies and produced produced by "
 "all smithies."
 msgstr ""
+"S'usen als forns de metall i els tallers i es produeixen a tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:628
@@ -4348,6 +4368,8 @@ msgid ""
 "This basket is needed by the farmer for harvesting the fruits and grapes and "
 "needed by miller and by gamekeeper."
 msgstr ""
+"Els masovers necessiten cistells per recollir el raïm i altres tipus de "
+"fruita. També en necessiten el guarda de peces de caça i el moliner."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:630
@@ -4485,6 +4507,8 @@ msgid ""
 "This is a broad sword. It is produced in the advanced smithy and used in a "
 "battle arena – together with food – to train soldiers in attack."
 msgstr ""
+"Els sabres es produeixen als tallers avançats i s'usa a les palestres "
+"d'entrenament, amb menjar, per entrenar els soldats en atac."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:792
@@ -4674,7 +4698,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1216
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house."
-msgstr ""
+msgstr "Obté argila per als forns de calç o les cases dels picapedrers."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Farmer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1228
@@ -5101,6 +5125,8 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Market to exchange some build materials for quartz, diamond or gold."
 msgstr ""
+"Mercat per intercanviar alguns materials de construcció com quars, diamant o "
+"or."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutter's House

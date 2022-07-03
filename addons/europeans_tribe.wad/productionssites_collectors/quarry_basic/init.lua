@@ -50,7 +50,10 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         basic_amount = 1,
-        forced_after = 300
+        forced_after = 300,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 2,
+        normal_ai_limit = 4
     },
 
     working_positions = {

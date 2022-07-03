@@ -209,7 +209,7 @@ Provides the scenario ''Along the River''.  This scenario was converted to be pl
 hessenfarmer, fk
 hessenfarmer
 1633431899
-35
+37
 0
 0
 0
@@ -684,7 +684,7 @@ No description
 Mr_Reibekuchen
 Mr_Reibekuchen
 1647247922
-12
+13
 0
 0
 0
@@ -1221,7 +1221,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings and workers from Barba
 MarkMcWire
 MarkMcWire
 1621788282
-228
+229
 0
 0
 0
@@ -1241,9 +1241,9 @@ Nordfriese
 The current version of this add-on has a bug that prevents the game from starting under some circumstances: Many of its <font shadow=1 italic=1>init.lua</font> files reference the global variable <font shadow=1 italic=1>descriptions</font> which may be undefined. Please change all occurrences to <font shadow=1 italic=1>wl.Descriptions()</font> instead.    @MarkMcWire
 2.4.6
 1650721500
-3.0.2
-128
-75776470
+3.0.3
+129
+75777120
 tribes
 0
 325
@@ -9357,7 +9357,7 @@ ru.mo
 sk.mo
 sv.mo
 7782
-c676eb7e0f453f5a1fe620f073d1bed8
+080019ae5ba0a77c9e7df0ca0d432abc
 fbbd5b53033a58de73a4fe01bcb2f66f
 bad9355d7073787cbdc44e655de9ff98
 c9b395400e4109b69954a8160c7cfd7a
@@ -11141,7 +11141,7 @@ a0d8704e5b671837fc884c1450cb6372
 0d5c969ee1bcf43744a0beb4eb61cde2
 7dd7452af449fdde221587e50cd9b210
 ded586a8858d7f6ffb68fa8496c82c55
-2d239498fa748c6c14b683bae2800e2e
+17abcc0cacd756aababb3c26bf63fd9d
 36f8c1996ba922a3fac14c6f0087df60
 342ccf161ac1c1f65daa32cef7535458
 b6c63852e63e54202ebb16888ba97df4
@@ -11194,7 +11194,7 @@ dcb9d0e8733033c6aca2c46208ef2679
 b5262d2062533c067c00389ac4bde63d
 cff4285fbd3f47772c92f8a9d4f5c829
 a9dcf48f8fdb649b394b4db5c4caa362
-655a9f93f565742bf353e105ce9e8275
+e20715aadab9a7dcbf9c80a0a9d17161
 744bbf8e031a6b45425f052f46fbb9df
 7d7d3b78c1fde63a90f9753398949d26
 b5c15b6298eaf992b63a7e975cfe7cef
@@ -11231,7 +11231,7 @@ cad9698d7a04b13f4d129f95cbc36eb2
 66cd1966102a7948484031d48404d7de
 b5725a92c743787795a9b2739d3f9270
 385c1b2253475d5fdc22fa182356111f
-126f1a0767a07648baa2196538e4abdf
+5d900d39bea72e8f60f92275784f43c0
 89e400cd4af02e6ff3a7fe0cc43268fa
 261d48fc3c03de8847ac7ade789f230d
 d470f90a39119ae0c63a9b8d38aba642
@@ -11242,7 +11242,7 @@ c91782b8fd5964c94c4f7885d949aafc
 6d93cff2f7d8f4c29beda75ab70ffc07
 bd203a64418f295a9647cf90fb6221ae
 76628045dadad57f4ef527a2ee836a40
-06c2021b4085694ac02151b06a5e3246
+b551f44e61d3ddafa023afbb66d4f46e
 924f8bfd9e8fdf622e5198728ab5f236
 b6e2b2f7358fb0895a60f97b4427998c
 dba79929ee268335a2b309a63adcb24a
@@ -11253,7 +11253,7 @@ dba79929ee268335a2b309a63adcb24a
 76573ddc90ddd23a6490ac6ab38e6662
 d6f9adf3e66ceab26dda4d242b031b5c
 e406e53a2d77ab59540ba8e939f41e5f
-68511cb17abc8bc5973eab480529736c
+7f0bdd6176a0bc039e24e3faf40adddd
 f9e07090e47c6f48b7ca93652f798ff9
 7d6c22084d6c95186ae8c9fcb85d2b4f
 bda98249b3b1a320f12e4c5de0668693
@@ -17119,7 +17119,7 @@ c79c08269cf78db82061fa883449952f
 061eace57b6883eb5bdde7959920e305
 922931452056931d38de0b06deaa6ec4
 732065690b7e3e718e7bf31b19936a8e
-2f7fd31e98817f4d52740a38548a092a
+9beda6a7fedacc7afdaa3d8eba6bf871
 ab48237d5031e3962547d5e0e99b1206
 e4ba6cb0cfe1ee48b382da3b425268f6
 d4d43c09499d60b5152dd28f9c4459fb
@@ -17371,7 +17371,7 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-32
+33
 0
 0
 0
@@ -17836,7 +17836,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-66
+67
 0
 0
 0
@@ -21043,7 +21043,7 @@ Keep resource indicators until a mine starts to work in the area. Mines will gra
 tothxa
 tothxa
 1638011892
-38
+39
 0
 0
 0

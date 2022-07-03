@@ -41,12 +41,13 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        -- space_consumer = true,
         needs_water = true,
-        -- shipyard = true,
         requires_supporters = true,
         prohibited_till = 7200,
-        forced_after = 7800
+        forced_after = 7800,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 2,
+        normal_ai_limit = 4
     },
 
     working_positions = {
@@ -63,6 +64,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "return=skipped unless site has ration:2",
+                "return=skipped unless site has beer:2",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_pond",

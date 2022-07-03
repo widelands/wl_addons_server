@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-26 03:03+0200\n"
+"POT-Creation-Date: 2022-07-03 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Bulgarian (https://www.transifex.com/widelands/teams/35159/"
 "bg/)\n"
@@ -346,7 +346,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionssites_agricultur/farm_medium_basic/init.lua:59
 #: addons/europeans_tribe.wad/productionssites_agricultur/farm_medium_normal/init.lua:57
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_advanced/init.lua:36
-#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:71
+#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:74
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_normal/init.lua:50
 #: addons/europeans_tribe.wad/productionssites_collectors/foresters_house_advanced/init.lua:32
 #: addons/europeans_tribe.wad/productionssites_collectors/foresters_house_basic/init.lua:72
@@ -355,10 +355,10 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionssites_collectors/lumberjacks_house_basic/init.lua:63
 #: addons/europeans_tribe.wad/productionssites_collectors/lumberjacks_house_normal/init.lua:42
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:29
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:63
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:66
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:42
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:39
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:64
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:65
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:51
 #: addons/europeans_tribe.wad/productionssites_mining/well_basic/init.lua:62
 #: addons/europeans_tribe.wad/productionssites_mining/well_level_1/init.lua:49
@@ -1315,7 +1315,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionssites_agricultur/farm_medium_basic/init.lua:87
 #: addons/europeans_tribe.wad/productionssites_agricultur/farm_medium_normal/init.lua:107
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_advanced/init.lua:59
-#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:102
+#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:105
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_normal/init.lua:73
 #: addons/europeans_tribe.wad/productionssites_collectors/foresters_house_advanced/init.lua:57
 #: addons/europeans_tribe.wad/productionssites_collectors/foresters_house_basic/init.lua:93
@@ -1878,9 +1878,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
 #: addons/europeans_tribe.wad/productionssites_agricultur/animal_farm_basic/init.lua:131
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:83
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:92
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:83
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:87
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:95
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:85
 msgid "dummy program"
 msgstr ""
 
@@ -2297,14 +2297,14 @@ msgid "Basic Clay Pit"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:82
+#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:85
 #: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_normal/init.lua:61
 msgctxt "europeans_building"
 msgid "digging clay"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start diking clay because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:93
+#: addons/europeans_tribe.wad/productionssites_collectors/clay_pit_basic/init.lua:96
 msgctxt "europeans_building"
 msgid "diking clay"
 msgstr ""
@@ -2415,7 +2415,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:38
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:72
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:75
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:51
 msgctxt "europeans_building"
 msgid "quarrying"
@@ -2427,7 +2427,7 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:53
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:86
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:89
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:66
 #: addons/europeans_tribe.wad/productionssites_mining/coalmine_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionssites_mining/coalmine_level_1/init.lua:58
@@ -2453,7 +2453,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:70
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:100
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:103
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:81
 msgctxt "europeans_building"
 msgid "quarrying granite"
@@ -2461,7 +2461,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:77
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:107
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:110
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:88
 msgctxt "europeans_building"
 msgid "quarrying marble"
@@ -2469,7 +2469,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:84
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:114
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:117
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:95
 #: addons/europeans_tribe.wad/productionssites_mining/coalmine_basic/init.lua:101
 #: addons/europeans_tribe.wad/productionssites_mining/coalmine_level_1/init.lua:89
@@ -2495,7 +2495,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:91
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:121
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:124
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:103
 #: addons/europeans_tribe.wad/productionssites_mining/goldmine_basic/init.lua:110
 #: addons/europeans_tribe.wad/productionssites_mining/goldmine_level_1/init.lua:98
@@ -2532,13 +2532,13 @@ msgid "mining diamond"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:113
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:129
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:132
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:111
 msgid "No Rocks"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:114
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:130
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:133
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_normal/init.lua:112
 msgid "Out of Rocks"
 msgstr ""
@@ -2555,7 +2555,7 @@ msgctxt "europeans_building"
 msgid "Basic Quarry"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:131
+#: addons/europeans_tribe.wad/productionssites_collectors/quarry_basic/init.lua:134
 msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any rocks in his work "
@@ -2581,23 +2581,23 @@ msgid "Advanced Terraformer’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:57
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:76
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:67
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:61
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:79
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:69
 msgctxt "europeans_building"
 msgid "terraforming pond"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:65
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:69
 msgctxt "europeans_building"
 msgid "terraforming land"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:75
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:84
-#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:75
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:79
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_basic/init.lua:87
+#: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:77
 msgctxt "europeans_building"
 msgid "terraforming coast"
 msgstr ""
