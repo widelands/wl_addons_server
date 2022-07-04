@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-03 03:04+0200\n"
+"POT-Creation-Date: 2022-07-04 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -1072,13 +1072,13 @@ msgstr "Panissar (molt jove)"
 #: addons/europeans_tribe.wad/immovables/pond/dry/init.lua:8
 msgctxt "immovable"
 msgid "Dry Pond"
-msgstr ""
+msgstr "Estany sec"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/with_water/init.lua:8
 msgctxt "immovable"
 msgid "Pond with water"
-msgstr ""
+msgstr "Estany amb aigua"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/medium/init.lua:8
@@ -2615,7 +2615,7 @@ msgstr "Casa del terraformador avançada"
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_normal/init.lua:69
 msgctxt "europeans_building"
 msgid "terraforming pond"
-msgstr ""
+msgstr "modificar l'estany"
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
 #: addons/europeans_tribe.wad/productionssites_collectors/terraformers_house_advanced/init.lua:69
@@ -3358,6 +3358,8 @@ msgid ""
 "Start the game with your headquarters only. The AI might struggle with this "
 "condition on smaller maps."
 msgstr ""
+"Es comença la partida només amb un quarter general. La IA pot patir una mica "
+"amb aquesta condició inicial en mapes petits."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:11
@@ -3370,6 +3372,8 @@ msgid ""
 "Start the game with a advanced castle and a port. The AI might struggle with "
 "this condition on smaller maps."
 msgstr ""
+"Es comença la partida només amb un castell avançat i un port. La IA pot "
+"patir una mica amb aquesta condició inicial en mapes petits."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
@@ -3825,6 +3829,9 @@ msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
 "buildings. It is produced out of logs in the wood hardener (basic sawmill)."
 msgstr ""
+"Aquesta fusta endurida amb foc és tan dura com el ferro i s'usa en diversos "
+"edificis. Es produeix a partir de troncs a l'enduridor de fusta (una "
+"serradora bàsica)."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:118
@@ -3897,6 +3904,8 @@ msgid ""
 "The Europeans produces grout in lime kiln or stonemasons house out of "
 "granite and water."
 msgstr ""
+"Els europeus produeixen lletades de calç en forns de calç o als tallers de "
+"pedra amb granit i aigua."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:193
@@ -3923,6 +3932,8 @@ msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
 "granite and water."
 msgstr ""
+"Els europeus produeixen maons en forns de calç o als tallers de pedra amb "
+"argila, granit i aigua."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:218
@@ -4017,6 +4028,8 @@ msgstr "El sègol és essencial per sobreviure."
 msgctxt "europeans_ware"
 msgid "Rye is produced by farms and used by mills to produce mixed flour."
 msgstr ""
+"El sègol es produeix a les masoveries i s'usa en molins per obtenir barreja "
+"de farina."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wheat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:311
@@ -4039,6 +4052,8 @@ msgid ""
 "Mixed flour is produced by the mill out of rye and wheat and is needed in "
 "the tavern or inn to produce ration, snack or meal."
 msgstr ""
+"La barreja de farina es produeix als molins amb sègol i blat i es fa servir "
+"a les tavernes i hostals per produir racions, aperitius i àpats."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Ration, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:333
@@ -4067,6 +4082,8 @@ msgid ""
 "A bigger morsel than the ration. Used in mines and to train soldiers in "
 "battle arenas."
 msgstr ""
+"Un mos més gran que la ració. S'usa a les mines i per entrenar soldats en "
+"palestres d'entrenament."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Snack, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:348
@@ -4075,6 +4092,8 @@ msgid ""
 "Snacks are produced in a tavern or an inn out of fish or meat and water and "
 "flour."
 msgstr ""
+"Els aperitius es produeixen a la taverna o a l'hostal amb aigua, farina i "
+"carn o bé peix."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Meal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:359
@@ -4083,6 +4102,8 @@ msgid ""
 "A bigger food than the ration or snack. Used in the deepest mines and the "
 "most advanced trainingsites."
 msgstr ""
+"Menjar més abundant que una ració o un aperitiu. S'usa en les mines més "
+"profundes i en la majoria de llocs d'entrenament avançat. "
 
 #. TRANSLATORS: Helptext for a Europeans ware: Meal, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:361
@@ -4105,6 +4126,8 @@ msgid ""
 "tavern and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
+"Molts edificis i treballadors fan servir aigua: l'excavador d'argila, el "
+"guarda forestal, les masoveries, les granges, la taverna i la cerveseria."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Barley
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:387
@@ -4198,6 +4221,8 @@ msgid ""
 "The fires of the Europeans smelting works and smithies are usually fed with "
 "coal."
 msgstr ""
+"Els focs dels forns de metalls i tallers dels europeus habitualment "
+"s'alimenten amb carbó."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:476
@@ -4345,6 +4370,7 @@ msgid ""
 "Make sure you’ve always got some in reserve! They are produced by all "
 "smithies."
 msgstr ""
+"Assegureu-vos que en teniu de reserva. Es produeixen a tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:612
@@ -4378,6 +4404,8 @@ msgid ""
 "It is also used by advanced carrier to transport wares. It is produced by "
 "all smithies."
 msgstr ""
+"També n'usen els transportistes avançats per transportar béns. Es produeix "
+"en tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:641
@@ -4437,6 +4465,8 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Armadura bàsica pels soldats europeus. Es produeix al taller de teixir. En "
+"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:717
@@ -4445,6 +4475,8 @@ msgid ""
 "Basic tabard for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden speer, it is the equipment to fit out young soldiers."
 msgstr ""
+"Tabard bàsic pels soldats europeus. Es produeix al taller de teixir. En "
+"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:726
@@ -4463,6 +4495,9 @@ msgid ""
 "smithy and used in the battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
+"L'armadura daurada és una una armadura avançada que fan servir els soldats. "
+"Es produeix al taller i s'usa a la palestra d'entrenament –amb menjar– per "
+"protegir els soldats amb punts de vida addicionals."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Golden Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:744
@@ -4472,6 +4507,9 @@ msgid ""
 "advanced smithy and used in a battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
+"El tabard d'or és una armadura avançada per als soldats. Es produeix als "
+"tallers avançats i s'usa a les palestres d'entrenament –amb menjar– per "
+"protegir els soldats amb punts de vida addicionals."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:756
@@ -4499,6 +4537,8 @@ msgid ""
 "This is an broad ax. It is produced in a smithy and used in a battle arena – "
 "together with food – to train soldiers in attack."
 msgstr ""
+"Les destrals amples es produeixen en tallers i s'usen a la palestra "
+"d'entrenament –amb menjar– per entrenar l'atac dels soldats."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:783
@@ -4518,6 +4558,9 @@ msgid ""
 "and used in a battle arena – together with food – to train soldiers in "
 "defense."
 msgstr ""
+"La màscara és l'eina de defensa mitjana d'un soldat. Es produeix als tallers "
+"i s'usa a la palestra d'entrenament –amb menjar– per entrenar la defensa "
+"dels soldats."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:801
@@ -4526,6 +4569,8 @@ msgid ""
 "This steel shield is produced in a smithy and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
+"Aquest escut d'acer es produeix a tots els tallers en palestres "
+"d'entrenament –amb menjar– per entrenar la defensa dels soldats."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:810
@@ -4560,6 +4605,7 @@ msgstr "Porta béns pels camins amb les seves mans."
 msgctxt "europeans_worker"
 msgid "Carries items along your roads. They are reared in an animal farm."
 msgstr ""
+"Porta coses d'un lloc a l'altre pels camins. Es crien en granges d'animals."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:852
@@ -4722,7 +4768,7 @@ msgstr "Produeix teles pels vaixells, eines i armadures."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1303
 msgctxt "europeans_worker"
 msgid "Breeds animals and produce wool and mead."
-msgstr ""
+msgstr "Cria animals i produeix llana i aiguamel."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1312
@@ -4939,6 +4985,8 @@ msgid ""
 "Ponds with water becomes dry after some time. These dry holes vanish after a "
 "while."
 msgstr ""
+"Els estanys amb aigua es poden assecar amb el pas del temps. Aquests forats "
+"secs, si no s'aprofiten, desapareixen amb el pas del temps."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
@@ -4947,6 +4995,9 @@ msgid ""
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
+"Quan els excavadors d'argila excaven la terra, deixen forats amb aigua. "
+"Aquests s'acaben assecant al cap del temps o es poden usar pel terraformador "
+"per produir més terreny."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1949
@@ -5365,6 +5416,9 @@ msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
 "Brick and grout only used by advanced buildings."
 msgstr ""
+"Els productes que genera el forn de calç només es destinaran a les "
+"construccions que en necessitin. Els maons i les lletades de calç s'usen "
+"només en edificis avançats."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Stonemason's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2608
@@ -5396,6 +5450,8 @@ msgid ""
 "Weaves cloth for buildings and ships’ sails, and tabards to equip and train "
 "the soldiers."
 msgstr ""
+"Teixeix teles pels edificis, les veles dels vaixells i per equipar amb "
+"tabards els soldats per poder entrenar-los."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2631
