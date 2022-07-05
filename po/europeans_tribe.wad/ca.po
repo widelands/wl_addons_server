@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-04 03:04+0200\n"
+"POT-Creation-Date: 2022-07-05 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -2429,6 +2429,9 @@ msgid ""
 "his work area. You should consider enhancing it to increase its working area "
 "or building a forester’s house."
 msgstr ""
+"El llenyataire d'aquesta casa no pot trobar més arbres a la seva àrea de "
+"treball. Hauríeu de considerar desmantellar-la, destruir-la o construir una "
+"casa de guarda forestal."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionssites_collectors/quarry_advanced/init.lua:8
@@ -3217,13 +3220,13 @@ msgstr "Centre de reclutament bàsic"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:418
 msgctxt "europeans_building"
 msgid "recruiting smith workaround"
-msgstr ""
+msgstr "reclutar una alternativa a un ferrer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:432
 msgctxt "europeans_building"
 msgid "recruiting smith workaround with no tools"
-msgstr ""
+msgstr "reclutar una alternativa a un ferrer sense eines"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:8
@@ -3821,6 +3824,9 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
+"Els llenyataires europeus talen arbres i els guardes forestals s'encarreguen "
+"de replantar-ne. Els troncs també es fan servir als forns de carbó, a les "
+"drassanes i les serradores."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:108
@@ -3955,6 +3961,9 @@ msgid ""
 "needed for nearly every advanced building. They are produced out of marble "
 "at a stonemason’s house."
 msgstr ""
+"Les columnes de marbre són un element representatiu de la cultura europea. "
+"Es fan servir en quasi tots els edificis avançats. Les columnes es tallen a "
+"partir de blocs de marbre al taller de la pedra."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:236
@@ -4278,6 +4287,8 @@ msgid ""
 "It is produced by the smelting works. Armor and weapons are embellished with "
 "gold in the smithy. Some valuable buildings need gold to be built."
 msgstr ""
+"Es produeix als forns de metalls. Les armadures i armes es decoren amb or "
+"als tallers. També es necessita or per construir alguns edificis."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:534
@@ -4486,6 +4497,10 @@ msgid ""
 "smithy and used in a battle arena – together with food – to protect soldiers "
 "with additional health points."
 msgstr ""
+"La cota de malla és una una armadura de nivell mitjà que fan servir els "
+"soldats europeus. Es produeix als tallers i s'usa a la palestra "
+"d'entrenament –amb menjar– per protegir els soldats amb punts de vida "
+"addicionals."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gilded Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:735
@@ -4519,6 +4534,9 @@ msgid ""
 "produced in the smithy. In combination with armor or tabard, it is the "
 "equipment to fit out young soldiers."
 msgstr ""
+"Aquesta llança de fusta és l'arma bàsica del sistema militar europeu. Es "
+"produeix als tallers. Junt amb armadures o tabards, és l'equipament dels "
+"soldats joves."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:765
@@ -5428,6 +5446,9 @@ msgid ""
 "solidifies and so reinforces masonry. Additionally carves marble columns out "
 "of marble."
 msgstr ""
+"Processa argila i granit per fer-ne maons i lletades de calç, una substància "
+"que es solidifica i reforça les construccions. També talla columnes de "
+"marbre."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2610
@@ -5436,6 +5457,9 @@ msgid ""
 "The stonemason’s house's output will only go to construction sites that need "
 "it. Marble column only used by advanced buildings."
 msgstr ""
+"Els productes que elabora el taller de la pedra només es destinaran a "
+"construccions que les necessitin. Les columnes de marbre només són "
+"necessàries per fer edificis avançats."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2617
@@ -5600,6 +5624,8 @@ msgid ""
 "Breeds strong oxen for adding them to the transportation system. "
 "Additionally produces meat for food production."
 msgstr ""
+"Cria bous per al sistema de transport. També produeix carn per cuinar-la i "
+"fer-ne menjar."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Fish Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2857
@@ -5608,6 +5634,8 @@ msgid ""
 "Breeds strong oxen for adding them to the transportation system. "
 "Additionally produces meat and fish for food production."
 msgstr ""
+"Cria bous per al sistema de transport. També produeix carn i peix per fer-ne "
+"menjar."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Donkey Farm
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Piggery
@@ -5619,6 +5647,8 @@ msgid ""
 "transportation system. Additionally produces meat and fish for food "
 "production."
 msgstr ""
+"Cria bous i ases per al sistema de transport. També produeix carn i peix per "
+"fer-ne menjar."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sheep Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2878
@@ -5628,6 +5658,8 @@ msgid ""
 "transportation system. Additionally keeps sheep for wool prodution and "
 "produces meat and fish for food production."
 msgstr ""
+"Cria bous i ases per al sistema de transport. També cuida ovelles per "
+"produir-ne llana i produeix carn i peix per fer-ne menjar."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Horse Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2885
@@ -5637,6 +5669,8 @@ msgid ""
 "them to the transportation system. Additionally keeps sheep for wool "
 "prodution and produces meat and fish for food production."
 msgstr ""
+"Cria bous, ases i cavalls per al sistema de transport. També cuida ovelles "
+"per produir-ne llana i produeix carn i peix per fer-ne menjar."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
