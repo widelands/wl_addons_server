@@ -23,7 +23,7 @@ wl.Descriptions():new_productionsite_type {
             granite = 2,
             marble = 2,
             planks = 1,
-            gold = 1
+            scrap_metal_mixed = 1
         }
     },
 

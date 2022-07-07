@@ -13,10 +13,12 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_armorsmithy_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2
+            cloth = 2,
+            gold = 1
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            blackwood = 1,
+            scrap_metal_mixed = 1
         },
     },
     
@@ -137,9 +139,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs spear_wooden",
                 "return=skipped when economy needs helmet_mask",
                 "return=skipped when economy needs spear_advanced",
-                "return=skipped when economy needs planks",
-                "return=skipped when economy needs coal",
-                "return=skipped when economy needs iron",
                 "sleep=duration:180s",
                 "consume=planks:2 coal:2 iron:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",

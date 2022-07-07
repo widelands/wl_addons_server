@@ -118,7 +118,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:35s",
                 "produce=brick",
-                "sleep=duration:60s",
+                "sleep=duration:180s",
                 "consume=coal granite",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:40s",
@@ -126,7 +126,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/mortar priority:60%",
                 "animate=working duration:5s",
                 "produce=grout",
-                "sleep=duration:120s"
+                "sleep=duration:180s"
             }
         }
     },

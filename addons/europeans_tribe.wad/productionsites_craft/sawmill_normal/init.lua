@@ -100,7 +100,8 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:25s",
-                "sleep=duration:120s"
+                "produce=planks",
+                "sleep=duration:180s"
             }
         },
     },

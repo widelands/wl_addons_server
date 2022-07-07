@@ -976,13 +976,6 @@ wl.Descriptions():new_tribe {
         {
             -- Military and Expansion
             {
-                name = "europeans_recruit",
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Recruit
-                    purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
-                }
-            },
-            {
                 name = "europeans_trainer_basic",
                 default_target_quantity = 1,
                 preciousness = 4,
@@ -1037,6 +1030,15 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Scout
                     purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
                     -- (c) WiHack Team 02.01.2010
+                }
+            },
+            {
+                name = "europeans_recruit",
+                default_target_quantity = 16,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Recruit
+                    purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
                 }
             },
             {

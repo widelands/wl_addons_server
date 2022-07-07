@@ -94,7 +94,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:60s",
                 "produce=cloth",
-                "sleep=duration:90s"
+                "sleep=duration:180s"
             }
         }
     },

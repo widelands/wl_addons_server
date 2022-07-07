@@ -125,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:60s",
                 "produce=blackwood",
-                "sleep=duration:120s"
+                "sleep=duration:180s"
             }
         },
     },

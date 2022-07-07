@@ -43,7 +43,6 @@ wl.Descriptions():new_productionsite_type {
         { name = "kitchen_tools", amount = 1 },
         { name = "spear_wooden", amount = 2 },
         { name = "armor", amount = 2 },
-        { name = "tabard", amount = 2 }
     },
 
     programs = {
@@ -76,10 +75,12 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:20s",
                 "call=recruit_geologist",
                 "call=recruit_scout",
+                "call=recruit_recruit",
                 "call=recruit_trainer",
                 "call=recruit_carrier_1",
                 "call=recruit_carrier_2",
                 "call=recruit_carrier_3",
+                "sleep=duration:30s",
                 "call=recruit_carrier_idle",
                 "sleep=duration:30s",
                 "return=skipped"
@@ -307,6 +308,16 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_miner_advanced"
             }
         },
+        recruit_recruit = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting recruit because ...
+            descname = pgettext("europeans_building", "recruiting recruit"),
+            actions = {
+                "return=skipped unless economy needs europeans_recruit",
+                "consume=spear_wooden armor europeans_carrier",
+                "animate=working duration:60s",
+                "recruit=europeans_recruit"
+            }
+        },
         recruit_scout = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting scout"),
@@ -391,11 +402,11 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         recruit_trainer = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting trainer"),
             actions = {
                 "return=skipped unless economy needs europeans_trainer_advanced",
-                "consume=armor,tabard spear_wooden europeans_carrier",
+                "consume=armor spear_wooden europeans_carrier",
                 "animate=working duration:180s",
                 "recruit=europeans_trainer_advanced"
             }

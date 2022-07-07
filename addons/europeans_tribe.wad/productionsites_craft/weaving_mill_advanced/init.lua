@@ -103,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
                 "produce=armor",
-                "sleep=duration:90s"
+                "sleep=duration:180s"
             }
         }
     },

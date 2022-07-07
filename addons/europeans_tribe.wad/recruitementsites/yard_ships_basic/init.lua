@@ -21,7 +21,7 @@ wl.Descriptions():new_productionsite_type {
         enhancement_return_on_dismantle = {
             blackwood = 1,
             granite = 1,
-            gold = 1
+            scrap_metal_mixed = 1
         },
     },
 
