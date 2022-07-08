@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# CrisiusXIII <chris@cborn.nl>, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-07-08 03:04+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: CrisiusXIII <chris@cborn.nl>, 2022\n"
 "Language-Team: Dutch (https://www.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -26,23 +30,25 @@ msgid ""
 "Very complex economy model for the frisian tribe with numerous new wares and "
 "buildings."
 msgstr ""
+"Zeer complex economisch stelsel for de frisian stam met diverse nieuwe "
+"goederen en gebouwen."
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/barley_flour/init.lua:8
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr ""
+msgstr "Gerstemeel"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Barley Mill"
-msgstr ""
+msgstr "Gerstmolen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
-msgstr ""
+msgstr "gerst malen"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/leather/init.lua:8
@@ -76,7 +82,7 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
-msgstr ""
+msgstr "werkende"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73
@@ -136,23 +142,24 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:9
 msgid "This rye field has been harvested."
-msgstr ""
+msgstr "Dit roggeveld is geoogst."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:12
 msgid "This rye field is ready for harvesting."
-msgstr ""
+msgstr "Dit roggeveld kan worden geoogst."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:15
 msgid "This rye field is flowering. Beekeepers can use it to produce honey."
 msgstr ""
+"Dit roggeveld staat in bloei. Imkers kunnen het gebruiken om honing te maken."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:18
 msgid "This rye field is growing."
-msgstr ""
+msgstr "Dit roggeveld staat te groeien."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:21
 msgid "This rye field has just been planted."
-msgstr ""
+msgstr "Dit roggeveld is net geplant."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:25
 msgid "This oat field has been harvested."
@@ -181,14 +188,19 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/postload.lua:48
 msgid "Rye is used to bake bread. It needs to be ground into flour first."
 msgstr ""
+"Rogge wordt gebruikt om brood te bakken. Het moet eerst tot meel vermalen "
+"worden."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:51
 msgid "After being ground to flour, rye can be used to bake bread."
 msgstr ""
+"Na tot bloem te zijn vermalen, kan rogge worden gebruikt om brood mee te "
+"bakken."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:54
 msgid "After being ground to flour, barley can be used to bake bread."
 msgstr ""
+"Na to meel vermalen te zijn, kan gerst gebruikt worden om brood te bakken."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:57
 msgid "Oat is used to bake bread and also fed to the reindeer."
@@ -204,7 +216,7 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:107
 msgid "The miller grinds barley and rye into flour."
-msgstr ""
+msgstr "De molenaar maalt gerst en rogge tot meel."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:110
 msgid "The tanner tans furs to produce leather."
@@ -224,15 +236,15 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:125
 msgid "The barley mill grinds barley into barley flour."
-msgstr ""
+msgstr "De gerstmolen maalt gerst tot gerstemeel."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:128
 msgid "The rye mill grinds rye into rye flour."
-msgstr ""
+msgstr "De roggemolen maalt rogge tot roggemeel."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:131
 msgid "The rye farm sows and harvests rye."
-msgstr ""
+msgstr "De roggeboerderij zaait en oogst rogge."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:134
 msgid "The oat farm sows and harvests oat."
@@ -265,7 +277,7 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/postload.lua:217
 #: addons/frisians-economy-ultra.wad/postload.lua:246
 msgid "baking bread"
-msgstr ""
+msgstr "brood bakken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking honey bread because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:235
@@ -281,76 +293,78 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "Rogge"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Farm"
-msgstr ""
+msgstr "Roggeboerderij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:52
 msgid "planting rye"
-msgstr ""
+msgstr "rogge planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:60
 msgid "harvesting rye"
-msgstr ""
+msgstr "rogge oogsten"
 
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:71
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this rye farm has no cleared soil to plant his seeds."
 msgstr ""
+"De boer die op deze roggeboerderij werkt heeft geen vrije grond om zijn "
+"zaden te planten."
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/rye_flour/init.lua:8
 msgctxt "ware"
 msgid "Rye Flour"
-msgstr ""
+msgstr "Roggemeel"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Mill"
-msgstr ""
+msgstr "Roggemolen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:51
 msgid "grinding rye"
-msgstr ""
+msgstr "rogge malen"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "Roggeveld (geoogst)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "Roggeveld (gemiddeld)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr ""
+msgstr "Roggeveld (rijp)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/small/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "Roggeveld (klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "Roggeveld (zeer klein)"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/salt/init.lua:8
