@@ -15,12 +15,11 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             blackwood = 2,
             cloth = 2,
-            granite = 1,
+            grout = 2,
             gold = 1
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1,
-            granite = 1,
+            scrap_wood = 2,
             scrap_metal_mixed = 1
         },
     },
@@ -33,8 +32,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
     return_on_dismantle = {
-        log = 2,
-        blackwood = 1,
+        scrap_wood = 3,
         planks = 1,
         reed = 1,
         granite = 1

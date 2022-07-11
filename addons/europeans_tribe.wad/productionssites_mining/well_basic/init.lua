@@ -17,6 +17,7 @@ wl.Descriptions():new_productionsite_type {
             granite = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 1,
             granite = 1
         },
     },
@@ -28,7 +29,7 @@ wl.Descriptions():new_productionsite_type {
         buckets = 1
     },
     return_on_dismantle = {
-        log = 1,
+        scrap_wood = 2,
         granite = 1
     },
 

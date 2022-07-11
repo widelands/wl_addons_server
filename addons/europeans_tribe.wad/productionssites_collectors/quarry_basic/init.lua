@@ -13,9 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_quarry_normal",
         enhancement_cost = {
             blackwood = 1,
-            cloth = 1
+            cloth = 1,
+            grout = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 1
         },
     },
 
@@ -25,8 +27,8 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
     return_on_dismantle = {
+        scrap_wood = 2,
         granite = 2,
-        log = 1
     },
 
    animation_directory = dirname,

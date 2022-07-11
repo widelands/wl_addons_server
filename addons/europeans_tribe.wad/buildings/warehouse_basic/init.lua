@@ -19,7 +19,7 @@ wl.Descriptions():new_warehouse_type {
             diamond = 1
         },
         enhancement_return_on_dismantle = {
-            planks = 2,
+            scrap_wood = 3,
             quartz = 1,
             diamond = 1
         },
@@ -32,7 +32,7 @@ wl.Descriptions():new_warehouse_type {
         diamond = 1
     },
     return_on_dismantle = {
-        blackwood = 3,
+        scrap_wood = 4,
         reed = 1,
         quartz = 1,
         diamond = 1

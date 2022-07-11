@@ -17,6 +17,7 @@ wl.Descriptions():new_productionsite_type {
             buckets = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 1,
             buckets = 1
         },
     },

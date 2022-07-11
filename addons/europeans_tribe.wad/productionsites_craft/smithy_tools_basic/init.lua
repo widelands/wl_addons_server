@@ -13,11 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_toolsmithy_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2
+            cloth = 2,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1,
-            planks = 1
+            scrap_wood = 2
         },
     },
     
@@ -27,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 
@@ -56,7 +56,7 @@ wl.Descriptions():new_productionsite_type {
         forced_after = 5400,
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
-        normal_ai_limit = 3
+        normal_ai_limit = 2
     },
 
     working_positions = {
@@ -256,6 +256,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs bread_paddle",
                 "return=skipped when economy needs hook_pole",
                 "return=skipped when economy needs kitchen_tools",
+                "return=skipped when economy needs iron",
+                "return=skipped when economy needs gold",
                 "sleep=duration:360s",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -311,7 +313,15 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:60s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:15s",
-                "produce=kitchen_tools"
+                "produce=kitchen_tools",
+                "consume=planks coal iron",
+                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+                "animate=working duration:15s",
+                "produce=basket:2",
+                "sleep=duration:60s",
+                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+                "animate=working duration:15s",
+                "produce=buckets:2"
             }
         }
     },

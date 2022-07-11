@@ -8,6 +8,18 @@ wl.Descriptions():new_productionsite_type {
     descname = pgettext("europeans_building", "Advanced Toolsmithy"),
     icon = dirname .. "menu.png",
     size = "medium",
+    
+    enhancement = {
+        name = "europeans_armorsmithy_advanced",
+        enhancement_cost = {
+            marble_column = 1,
+            gold = 1
+        },
+        enhancement_return_on_dismantle = {
+            marble = 1,
+            scrap_metal_mixed = 1
+        },
+    },
 
     animations = {
         idle = {
@@ -225,6 +237,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs bread_paddle",
                 "return=skipped when economy needs hook_pole",
                 "return=skipped when economy needs kitchen_tools",
+                "return=skipped when economy needs iron",
+                "return=skipped when economy needs gold",
                 "sleep=duration:360s",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
@@ -280,7 +294,15 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:60s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:15s",
-                "produce=kitchen_tools"
+                "produce=kitchen_tools",
+                "consume=planks coal iron",
+                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+                "animate=working duration:15s",
+                "produce=basket:2",
+                "sleep=duration:60s",
+                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
+                "animate=working duration:15s",
+                "produce=buckets:2"
             }
         }
     },

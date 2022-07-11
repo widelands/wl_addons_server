@@ -13,10 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_tavern_level_1",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 1
+            cloth = 1,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2
         },
     },
 
@@ -26,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 

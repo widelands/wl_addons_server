@@ -7,7 +7,23 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Trainingscamp Level 4"),
     icon = dirname .. "menu.png",
-    size = "medium",
+    size = "big",
+    
+    enhancement = {
+        name = "europeans_battlearena_level_3",
+        enhancement_cost = {
+            marble_column = 1,
+            quartz = 1,
+            diamond = 1,
+            gold = 1
+        },
+        enhancement_return_on_dismantle = {
+            marble = 1,
+            quartz = 1,
+            diamond = 1,
+            scrap_metal_mixed = 1
+        },
+    },
         
     animations = {
         idle = {

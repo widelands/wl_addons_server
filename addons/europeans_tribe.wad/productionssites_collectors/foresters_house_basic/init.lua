@@ -13,9 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_foresters_house_normal",
         enhancement_cost = {
             blackwood = 1,
-            cloth = 1
+            cloth = 1,
+            grout = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 1
         },
     },
 
@@ -25,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
     return_on_dismantle = {
-        log = 1,
+        scrap_wood = 2,
         granite = 1
     },
 

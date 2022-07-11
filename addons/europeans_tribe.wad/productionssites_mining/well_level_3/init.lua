@@ -14,11 +14,11 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 1,
             brick = 1,
-            grout = 1,
             marble = 1,
             buckets = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 1,
             granite = 1,
             marble = 1,
             buckets = 1

@@ -13,7 +13,6 @@ wl.Descriptions():new_trainingsite_type {
         name = "europeans_battlearena_level_3",
         enhancement_cost = {
             brick = 3,
-            grout = 3,
             marble_column = 3,
             quartz = 1,
             diamond = 1,

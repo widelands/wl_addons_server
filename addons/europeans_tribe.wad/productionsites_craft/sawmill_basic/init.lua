@@ -14,10 +14,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_sawmill_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 4
+            cloth = 4,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 2
+            scrap_wood = 2
         },
     },
 
@@ -27,7 +28,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 
@@ -96,6 +97,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:30s",
+                "produce=scrap_wood:2",
                 "produce=planks"
             }
         },
@@ -111,6 +113,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:30s",
+                "produce=scrap_wood:2",
                 "produce=blackwood:2"
             }
         },
@@ -124,6 +127,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:60s",
+                "produce=scrap_wood",
                 "produce=blackwood",
                 "sleep=duration:180s"
             }

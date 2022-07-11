@@ -14,13 +14,12 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            grout = 2,
             marble = 2
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 2,
             granite = 2,
-            marble = 2,
-            planks = 1
+            marble = 2
         }
     },
 
@@ -69,6 +68,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:25s",
+                "produce=scrap_wood:2",
                 "produce=planks"
             }
         },
@@ -84,6 +84,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:25s",
+                "produce=scrap_wood:2",
                 "produce=blackwood:2"
             }
         },
@@ -100,6 +101,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:25s",
+                "produce=scrap_wood:2",
                 "produce=planks",
                 "sleep=duration:180s"
             }

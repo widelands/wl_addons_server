@@ -14,13 +14,12 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            grout = 2,
             marble = 2
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 2,
             granite = 2,
-            marble = 2,
-            planks = 1
+            marble = 2
         }
     },
 
@@ -42,8 +41,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 6 },
-        { name = "blackwood", amount = 6 }
+        { name = "scrap_wood", amount = 6 },
     },
 
     programs = {
@@ -51,42 +49,28 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=burn_log",
-                "call=burn_blackwood",
-                "call=burn_log_idle",
+                "call=burn_wood",
+                "call=burn_wood_idle",
                 "return=skipped"
             }
         },
-        burn_log = {
+        burn_wood = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal or workers need experience",
-                "return=skipped unless site has log:4",
-                "consume=log:6",
+                "return=skipped unless site has scrap_wood:4",
+                "consume=scrap_wood:6",
                 "animate=working duration:90s",
                 "produce=coal:3"
             }
         },
-        burn_blackwood = {
-            -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
-            descname = pgettext("europeans_building", "producing coal"),
-            actions = {
-                "return=skipped unless economy needs coal or workers need experience",
-                "return=skipped when economy needs blackwood",
-                "return=skipped unless site has blackwood:6",
-                "consume=blackwood:6",
-                "animate=working duration:90s", -- Charcoal fires will burn for some days in real life
-                "produce=coal:3"
-            }
-        },
-        burn_log_idle = {
+        burn_wood_idle = {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs coal",
-                "return=skipped when economy needs log",
-                "consume=log:3",
+                "consume=scrap_wood:3",
                 "animate=working duration:90s",
                 "produce=coal",
                 "sleep=duration:60s"

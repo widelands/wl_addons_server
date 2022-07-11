@@ -14,12 +14,12 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            grout = 2,
-            marble = 2,
+            marble = 1,
+            marble_column = 1,
             gold = 1
         },
         enhancement_return_on_dismantle = {
-            planks = 1,
+            scrap_wood = 2,
             granite = 2,
             marble = 2,
             scrap_metal_mixed = 1
@@ -215,6 +215,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs tabard_golden",
                 "return=skipped when economy needs shield_advanced",
                 "return=skipped when economy needs sword_broad",
+                "return=skipped when economy needs iron",
+                "return=skipped when economy needs gold",
                 "sleep=duration:180s",
                 "consume=armor cloth coal:2 iron:2 gold:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",

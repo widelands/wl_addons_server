@@ -14,10 +14,11 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             blackwood = 2,
             cloth = 2,
+            grout = 2,
             gold = 1
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1,
+            scrap_wood = 2,
             scrap_metal_mixed = 1
         },
     },
@@ -28,7 +29,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 
@@ -57,7 +58,7 @@ wl.Descriptions():new_productionsite_type {
         forced_after = 7200,
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
-        normal_ai_limit = 3
+        normal_ai_limit = 2
     },
 
     working_positions = {
@@ -139,6 +140,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs spear_wooden",
                 "return=skipped when economy needs helmet_mask",
                 "return=skipped when economy needs spear_advanced",
+                "return=skipped when economy needs iron",
+                "return=skipped when economy needs gold",
                 "sleep=duration:180s",
                 "consume=planks:2 coal:2 iron:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",

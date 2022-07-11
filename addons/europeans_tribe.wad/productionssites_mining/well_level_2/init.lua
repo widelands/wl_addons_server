@@ -16,6 +16,7 @@ wl.Descriptions():new_productionsite_type {
             cloth = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 1
         },
     },
 

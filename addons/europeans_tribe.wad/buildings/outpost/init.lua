@@ -20,7 +20,7 @@ wl.Descriptions():new_militarysite_type {
             diamond = 2
         },
         enhancement_return_on_dismantle = {
-            planks = 1,
+            scrap_wood = 2,
             granite = 2,
             marble = 2,
             diamond = 2

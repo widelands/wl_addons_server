@@ -13,22 +13,23 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_farm_medium_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2
+            cloth = 2,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2
         },
     },
 
     buildcost = {
         log = 3,
         reed = 3,
-        granite = 2
+        granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         reed = 3,
-        granite = 1
+        granite = 2
     },
 
     animations = {

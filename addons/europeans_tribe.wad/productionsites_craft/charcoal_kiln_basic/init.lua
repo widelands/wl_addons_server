@@ -13,10 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_charcoal_kiln_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2
+            cloth = 2,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2
         },
     },
 
@@ -26,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 
@@ -58,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 4 }
+        { name = "scrap_wood", amount = 4 }
     },
 
     programs = {
@@ -66,29 +67,28 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=burn_log",
-                "call=burn_log_idle",
+                "call=burn_wood",
+                "call=burn_wood_idle",
                 "return=skipped"
             }
         },
-        burn_log = {
+        burn_wood = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal or workers need experience",
-                "return=skipped unless site has log:3",
-                "consume=log:3",
+                "return=skipped unless site has scrap_wood:3",
+                "consume=scrap_wood:3",
                 "animate=working duration:90s",
                 "produce=coal"
             }
         },
-        burn_log_idle = {
+        burn_wood_idle = {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs coal",
-                "return=skipped when economy needs log",
-                "consume=log:3",
+                "consume=scrap_wood:3",
                 "animate=working duration:90s",
                 "produce=coal",
                 "sleep=duration:60s"

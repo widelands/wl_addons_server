@@ -18,7 +18,7 @@ wl.Descriptions():new_productionsite_type {
             reed = 1
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2
         }
     },
 

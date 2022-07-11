@@ -8,6 +8,16 @@ wl.Descriptions():new_productionsite_type {
     descname = pgettext("europeans_building", "Advanced Terraformer’s House"),
     icon = dirname .. "menu.png",
     size = "small",
+    
+    enhancement = {
+        name = "europeans_foresters_house_advanced",
+        enhancement_cost = {
+            marble = 1
+        },
+        enhancement_return_on_dismantle = {
+            marble = 1
+        },
+    },
 
     animations = {
         idle = {
@@ -40,16 +50,16 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless site has meal:6",
                 "return=skipped unless site has wine:6",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
                 "callworker=check_terraform_land",
                 "call=terraforming_land",
                 "callworker=check_terraform_land",
                 "call=terraforming_land",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
                 "callworker=check_terraform_pond",
                 "call=terraforming_pond",
                 "sleep=duration:30s",

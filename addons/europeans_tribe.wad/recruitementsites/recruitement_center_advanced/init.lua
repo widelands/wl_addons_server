@@ -9,6 +9,22 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
     size = "big",
     
+    enhancement = {
+        name = "europeans_battlearena_level_3",
+        enhancement_cost = {
+            marble_column = 1,
+            quartz = 1,
+            diamond = 1,
+            gold = 1
+        },
+        enhancement_return_on_dismantle = {
+            marble = 1,
+            quartz = 1,
+            diamond = 1,
+            scrap_metal_mixed = 1
+        },
+    },
+    
     animations = {
         idle = {
             pictures = path.list_files(dirname .. "idle_??.png"),
@@ -50,33 +66,34 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=recruit_builder",
+                "call=recruit_farmer",
                 "call=recruit_lumberjack",
                 "call=recruit_forester",
-                "call=recruit_farmer",
+                "call=recruit_stonecutter",
+                "call=recruit_claydigger",
+                "sleep=duration:20s",
+                "call=recruit_builder",
+                "call=recruit_weaver",
+                "call=recruit_carpenter",
+                "call=recruit_charcoal_burner",
+                "call=recruit_stonemason",
+                "call=recruit_miner",
+                "sleep=duration:20s",
                 "call=recruit_breeder",
                 "call=recruit_miller",
                 "call=recruit_baker",
                 "call=recruit_brewer",
-                "sleep=duration:20s",
-                "call=recruit_miner",
-                "call=recruit_stonecutter",
-                "call=recruit_claydigger",
-                "call=recruit_carpenter",
-                "call=recruit_weaver",
-                "call=recruit_stonemason",
-                "sleep=duration:20s",
-                "call=recruit_charcoal_burner",
-                "call=recruit_smelter",
-                "call=recruit_smith",
                 "call=recruit_beekeeper",
-                "call=recruit_shipwright",
                 "call=recruit_terraformer",
                 "sleep=duration:20s",
+                "call=recruit_smelter",
+                "call=recruit_smith",
+                "call=recruit_shipwright",
+                "call=recruit_trainer",
                 "call=recruit_geologist",
                 "call=recruit_scout",
+                "sleep=duration:20s",
                 "call=recruit_recruit",
-                "call=recruit_trainer",
                 "call=recruit_carrier_1",
                 "call=recruit_carrier_2",
                 "call=recruit_carrier_3",
@@ -422,7 +439,7 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:180s",
                 "recruit=europeans_weaver_advanced"
             }
-        },
+        }
     }
 }
 

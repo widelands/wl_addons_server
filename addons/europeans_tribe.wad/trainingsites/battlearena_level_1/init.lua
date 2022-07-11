@@ -20,7 +20,7 @@ wl.Descriptions():new_trainingsite_type {
             gold = 1
         },
         enhancement_return_on_dismantle = {
-            planks = 2,
+            scrap_wood = 2,
             granite = 1,
             quartz = 1,
             diamond = 1,

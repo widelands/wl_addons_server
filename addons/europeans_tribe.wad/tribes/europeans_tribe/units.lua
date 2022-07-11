@@ -124,6 +124,15 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "scrap_wood",
+                default_target_quantity = 16,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Scrap wood
+                    purpose = pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills. It can be processed into charcoal in charcoal burners.")
+                }
+            },
+            {
                 name = "reed",
                 default_target_quantity = 32,
                 preciousness = 16,
@@ -156,7 +165,7 @@ wl.Descriptions():new_tribe {
             }            
         },
         {
-            -- Building Materials 1
+            -- Building Materials 2
             {
                 name = "granite",
                 default_target_quantity = 16,

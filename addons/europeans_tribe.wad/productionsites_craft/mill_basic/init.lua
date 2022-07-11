@@ -14,10 +14,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_mill_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 4
+            cloth = 4,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2
         },
     },
 
@@ -27,7 +28,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 

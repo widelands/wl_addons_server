@@ -54,6 +54,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:15s",
+                "produce=scrap_wood:2",
                 "produce=planks"
             }
         },
@@ -69,6 +70,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:15s",
+                "produce=scrap_wood:2",
                 "produce=blackwood:2"
             }
         },
@@ -83,6 +85,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:30s",
                 "produce=blackwood",
+                "produce=scrap_wood",
                 "sleep=duration:30s",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
@@ -90,7 +93,9 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:15s",
-                "sleep=duration:90s"
+                "produce=scrap_wood:2",
+                "produce=planks",
+                "sleep=duration:90s",
             }
         }
     },

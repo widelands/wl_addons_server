@@ -13,10 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_animal_farm_level_2",
         enhancement_cost = {
             blackwood = 3,
-            cloth = 3
+            cloth = 3,
+            grout = 3
         },
         enhancement_return_on_dismantle = {
-            blackwood = 2
+            scrap_wood = 3
         },
     },
 

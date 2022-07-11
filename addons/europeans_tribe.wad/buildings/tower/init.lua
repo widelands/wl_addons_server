@@ -19,7 +19,7 @@ wl.Descriptions():new_militarysite_type {
             quartz = 2
         },
         enhancement_return_on_dismantle = {
-            planks = 1,
+            scrap_wood = 2,
             granite = 2,
             quartz = 2
         },
@@ -31,7 +31,7 @@ wl.Descriptions():new_militarysite_type {
         granite = 2
     },
     return_on_dismantle = {
-        blackwood = 2,
+        scrap_wood = 3,
         reed = 1,
         granite = 1
     },
