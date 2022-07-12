@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-11 03:03+0200\n"
+"POT-Creation-Date: 2022-07-12 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -27,14 +27,14 @@ msgid "Europeans Tribe"
 msgstr "Europeus"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings and workers from "
 "Barbarians, Atlanteans, and Empire, until own graphics are available. (Not "
 "compatible with Version 3.0 or earlier.)"
 msgstr ""
 "Afegeix una cultura nova, anomenada «europeus». Usa edificis i treballadors "
-"dels bàrbars, atlants i de l'Imperi fins que disposi de gràfics propis."
+"dels bàrbars, atlants i de l'Imperi fins que disposi de gràfics propis. No "
+"és compatible amb la versió 3.0 o anterior."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -3136,7 +3136,7 @@ msgstr "reclutar un miner"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:329
 msgctxt "europeans_building"
 msgid "recruiting recruit"
-msgstr ""
+msgstr "reclutar un soldat novell"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:340
@@ -3872,6 +3872,8 @@ msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
 "or from sawmills. It can be processed into charcoal in charcoal burners."
 msgstr ""
+"Les restes de fusta són materials descartats a les serradores i dels "
+"desmuntatges d'edificis. Es poden usar per obtenir carbó vegetal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:142
@@ -5974,7 +5976,7 @@ msgstr "Sègol"
 #: addons/europeans_tribe.wad/wares/scrap_wood/init.lua:8
 msgctxt "ware"
 msgid "Scrap wood"
-msgstr ""
+msgstr "Restes de fusta "
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/baker_advanced/init.lua:8
