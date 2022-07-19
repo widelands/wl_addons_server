@@ -89,10 +89,10 @@ local init = {
     place_building_in_region(player, "europeans_well_basic", sf:region(6), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_well_basic", sf:region(6), {
+    place_building_in_region(player, "europeans_well_basic", sf:region(8), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_well_basic", sf:region(6), {
+    place_building_in_region(player, "europeans_well_basic", sf:region(8), {
     })
     sleep(5000)
     place_building_in_region(player, "europeans_farm_basic", sf:region(16), {

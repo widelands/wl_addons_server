@@ -114,10 +114,14 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs europeans_carpenter_advanced or economy needs europeans_weaver_advanced or economy needs europeans_charcoal_burner_advanced or economy needs europeans_smelter_advanced",
                 "return=skipped when economy needs europeans_smith_advanced or economy needs europeans_shipwright_advanced or economy needs europeans_terraformer_advanced or economy needs europeans_scout_advanced",
                 "return=skipped when economy needs basket",
+                "return=skipped when economy needs iron",
+                "return=skipped when economy needs gold",
                 "sleep=duration:180s",
-                "consume=europeans_carrier:2 basket",
+                "consume=europeans_carrier",
                 "animate=working duration:120s",
                 "recruit=europeans_carrier_1",
+                "sleep=duration:30s",
+                "consume=europeans_carrier basket",
                 "animate=working duration:120s",
                 "recruit=europeans_carrier_2"
             }

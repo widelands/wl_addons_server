@@ -57,7 +57,7 @@ wl.Descriptions():new_productionsite_type {
         needs_water = true,
         prohibited_till = 3000,
         forced_after = 3600,
-        very_weak_ai_limit = 2,
+        very_weak_ai_limit = 1,
         weak_ai_limit = 2,
         normal_ai_limit = 4
     },

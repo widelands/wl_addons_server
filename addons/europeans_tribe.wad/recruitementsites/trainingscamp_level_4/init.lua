@@ -24,7 +24,7 @@ wl.Descriptions():new_productionsite_type {
             scrap_metal_mixed = 1
         },
     },
-        
+    
     animations = {
         idle = {
             pictures = path.list_files(dirname .. "idle_??.png"),
@@ -36,11 +36,7 @@ wl.Descriptions():new_productionsite_type {
         }
     },
 
-    aihints = {
-        very_weak_ai_limit = 0,
-        weak_ai_limit = 0,
-      --normal_ai_limit = 2
-    },
+    aihints = {},
 
     working_positions = {
         europeans_trainer_advanced = 1

@@ -175,7 +175,7 @@ wl.Descriptions():new_trainingsite_type {
                 "train=soldier:attack level:1",
                 "produce=scrap_iron"
             }
-        },
+        }
     },
     
     soldier_capacity = 12,

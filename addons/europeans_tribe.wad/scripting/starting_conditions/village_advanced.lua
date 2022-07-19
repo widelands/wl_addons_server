@@ -83,16 +83,16 @@ init = {
       }
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_well_level_4", sf:region(6), {
+    place_building_in_region(player, "europeans_well_level_4", sf:region(10), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_well_level_4", sf:region(6), {
+    place_building_in_region(player, "europeans_well_level_4", sf:region(10), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_well_level_4", sf:region(6), {
+    place_building_in_region(player, "europeans_well_level_4", sf:region(12), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_well_level_4", sf:region(6), {
+    place_building_in_region(player, "europeans_well_level_4", sf:region(12), {
     })
     sleep(5000)
     place_building_in_region(player, "europeans_farm_level_3", sf:region(16), {

@@ -34,11 +34,7 @@ wl.Descriptions():new_productionsite_type {
         }
     },
 
-    aihints = {
-        very_weak_ai_limit = 0,
-        weak_ai_limit = 1,
-      --normal_ai_limit = 2
-    },
+    aihints = {},
 
     working_positions = {
         europeans_trainer_basic = 1

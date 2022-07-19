@@ -49,9 +49,9 @@ wl.Descriptions():new_warehouse_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 2,
-        weak_ai_limit = 4,
-        normal_ai_limit = 6,
+        very_weak_ai_limit = 3,
+        weak_ai_limit = 6,
+        normal_ai_limit = 12,
         prohibited_till = 7200,
         forced_after = 7800
     },
