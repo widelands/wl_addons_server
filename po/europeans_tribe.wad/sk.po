@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-19 03:04+0200\n"
+"POT-Creation-Date: 2022-07-29 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: Slovak (https://www.transifex.com/widelands/teams/35159/sk/)\n"
 "Language: sk\n"
@@ -4446,28 +4446,40 @@ msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
 msgstr ""
 
-#. TRANSLATORS: Helptext for an Europeans worker: Ox
-#. TRANSLATORS: Helptext for an Europeans worker: Donkey
-#. TRANSLATORS: Helptext for an Europeans worker: Horse
+#. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:852
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:861
+msgctxt "europeans_worker"
+msgid "Carries items along your roads with baskets."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Ox
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:870
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:888
 msgctxt "europeans_worker"
 msgid "Carries items along your roads. They are reared in an animal farm."
 msgstr ""
 
-#. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:861
+#. TRANSLATORS: Helptext for an Europeans worker: Donkey
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:879
 msgctxt "europeans_worker"
-msgid "Carries items along your roads with baskets."
+msgid ""
+"Donkeys help to carry items along busy roads. They are reared in an animal "
+"farm."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans worker: Horse
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:888
+msgctxt "europeans_worker"
+msgid ""
+"Horses help to carry items along busy roads. They are reared in an animal "
+"farm."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans worker: Reindeer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:897
 msgctxt "europeans_worker"
 msgid ""
-"Reindeer help to carry items along busy roads. They are reared in an animal "
+"Reindeers help to carry items along busy roads. They are reared in an animal "
 "farm."
 msgstr ""
 

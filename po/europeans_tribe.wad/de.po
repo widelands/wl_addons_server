@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-19 03:04+0200\n"
+"POT-Creation-Date: 2022-07-29 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2022\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -4612,30 +4612,49 @@ msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
 msgstr "Transportiert Waren auf deinen Straßen mit seinen Händen."
 
-#. TRANSLATORS: Helptext for an Europeans worker: Ox
-#. TRANSLATORS: Helptext for an Europeans worker: Donkey
-#. TRANSLATORS: Helptext for an Europeans worker: Horse
+#. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:852
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:861
+msgctxt "europeans_worker"
+msgid "Carries items along your roads with baskets."
+msgstr "Transportiert Waren auf deinen Straßen mit Körben."
+
+#. TRANSLATORS: Helptext for an Europeans worker: Ox
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:870
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:888
 msgctxt "europeans_worker"
 msgid "Carries items along your roads. They are reared in an animal farm."
 msgstr ""
 "Transportiert Gegenstände entlang deiner Straßen. Sie werden in einer "
 "Tierzucht großgezogen."
 
-#. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:861
+#. TRANSLATORS: Helptext for an Europeans worker: Donkey
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:879
+#, fuzzy
 msgctxt "europeans_worker"
-msgid "Carries items along your roads with baskets."
-msgstr "Transportiert Waren auf deinen Straßen mit Körben."
+msgid ""
+"Donkeys help to carry items along busy roads. They are reared in an animal "
+"farm."
+msgstr ""
+"Rentiere helfen dabei, Gegenstände entlang ausgelasteter Straßen zu "
+"transportieren. Sie werden in einer Tierzucht großgezogen."
+
+#. TRANSLATORS: Helptext for an Europeans worker: Horse
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:888
+#, fuzzy
+msgctxt "europeans_worker"
+msgid ""
+"Horses help to carry items along busy roads. They are reared in an animal "
+"farm."
+msgstr ""
+"Rentiere helfen dabei, Gegenstände entlang ausgelasteter Straßen zu "
+"transportieren. Sie werden in einer Tierzucht großgezogen."
 
 #. TRANSLATORS: Helptext for a Europeans worker: Reindeer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:897
+#, fuzzy
 msgctxt "europeans_worker"
 msgid ""
-"Reindeer help to carry items along busy roads. They are reared in an animal "
+"Reindeers help to carry items along busy roads. They are reared in an animal "
 "farm."
 msgstr ""
 "Rentiere helfen dabei, Gegenstände entlang ausgelasteter Straßen zu "

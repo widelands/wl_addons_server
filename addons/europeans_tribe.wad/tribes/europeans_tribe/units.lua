@@ -844,30 +844,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_carrier_ox",
-                default_target_quantity = 16,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Ox
-                    purpose = pgettext("europeans_worker", "Carries items along your roads. They are reared in an animal farm.")
-                }
-            },
-            {
                 name = "europeans_carrier_2",
                 default_target_quantity = 16,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
                     purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
-                }
-            },
-            {
-                name = "europeans_carrier_donkey",
-                default_target_quantity = 16,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Donkey
-                    purpose = pgettext("europeans_worker", "Carries items along your roads. They are reared in an animal farm.")
                 }
             },
             {
@@ -880,12 +862,30 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "europeans_carrier_ox",
+                default_target_quantity = 16,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Ox
+                    purpose = pgettext("europeans_worker", "Carries items along your roads. They are reared in an animal farm.")
+                }
+            },
+            {
+                name = "europeans_carrier_donkey",
+                default_target_quantity = 16,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Donkey
+                    purpose = pgettext("europeans_worker", "Donkeys help to carry items along busy roads. They are reared in an animal farm.")
+                }
+            },
+            {
                 name = "europeans_carrier_horse",
                 default_target_quantity = 16,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Horse
-                    purpose = pgettext("europeans_worker", "Carries items along your roads. They are reared in an animal farm.")
+                    purpose = pgettext("europeans_worker", "Horses help to carry items along busy roads. They are reared in an animal farm.")
                 }
             },
             {
@@ -894,7 +894,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans worker: Reindeer
-                    purpose = pgettext("europeans_worker", "Reindeer help to carry items along busy roads. They are reared in an animal farm.")
+                    purpose = pgettext("europeans_worker", "Reindeers help to carry items along busy roads. They are reared in an animal farm.")
                 }
             },
             {
@@ -3330,7 +3330,7 @@ wl.Descriptions():new_tribe {
     -- Special types
     builder = "europeans_builder",
     -- carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
-    carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3"},
+    carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3", "europeans_carrier_donkey", "europeans_carrier_horse"},
     geologist = "europeans_geologist",
     scouts_house = "europeans_scouts_house_basic",
     soldier = "europeans_soldier",
