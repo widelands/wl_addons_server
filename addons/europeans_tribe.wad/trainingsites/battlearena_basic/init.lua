@@ -20,7 +20,7 @@ wl.Descriptions():new_trainingsite_type {
             gold = 1
         },
         enhancement_return_on_dismantle = {
-            planks = 2,
+            scrap_wood = 2,
             granite = 1,
             quartz = 1,
             diamond = 1,
@@ -39,8 +39,7 @@ wl.Descriptions():new_trainingsite_type {
         gold = 1
     },
     return_on_dismantle = {
-        blackwood = 1,
-        planks = 1,
+        scrap_wood = 3,
         granite = 1,
         quartz = 1,
         diamond = 1,
@@ -176,7 +175,7 @@ wl.Descriptions():new_trainingsite_type {
                 "train=soldier:attack level:1",
                 "produce=scrap_iron"
             }
-        },
+        }
     },
     
     soldier_capacity = 12,

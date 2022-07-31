@@ -14,10 +14,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_mill_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 4
+            cloth = 4,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2
         },
     },
 
@@ -27,7 +28,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 
@@ -62,9 +63,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 3,
         basic_amount = 1,
         prohibited_till = 1800,
         forced_after = 2400
@@ -95,13 +93,15 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs flour or workers need experience",
                 "return=skipped when economy needs meat and not economy needs flour",
-                "return=skipped unless site has rye:2",
-                "return=skipped unless site has wheat:2",
-                "sleep=duration:30s",
-                "consume=wheat:2 rye:2",
+                "return=skipped unless site has rye",
+                "return=skipped unless site has wheat",
+                "consume=rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:50s",
-                "produce=flour:3"
+                "animate=working duration:20s",
+                "consume=wheat",
+                "playsound=sound/mill/mill_turning priority:85% allow_multiple",
+                "animate=working duration:25s",
+                "produce=flour:2"
             }
         },
         produce_mixed_flour_idle = {
@@ -109,11 +109,14 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs flour",
-                "sleep=duration:120s",
-                "consume=wheat rye",
+                "consume=rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:50s",
-                "produce=flour"
+                "animate=working duration:20s",
+                "consume=wheat",
+                "playsound=sound/mill/mill_turning priority:85% allow_multiple",
+                "animate=working duration:25s",
+                "produce=flour",
+                "sleep=duration:120s"
             }
         }
     },

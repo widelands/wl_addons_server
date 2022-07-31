@@ -13,10 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_weaving_mill_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2
+            cloth = 2,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2
         },
     },
 
@@ -26,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 
@@ -46,12 +47,12 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 3,
         basic_amount = 1,
         prohibited_till = 2400,
-        forced_after = 3000
+        forced_after = 3000,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 4,
+        normal_ai_limit = 8
     },
 
     working_positions = {
@@ -59,7 +60,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 6 }
+        { name = "reed", amount = 4 }
     },
 
     programs = {
@@ -77,12 +78,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped when economy needs reed and not economy needs cloth",
-                "return=skipped unless site has reed:3",
-                "consume=reed:3",
-                "sleep=duration:10s",
+                "return=skipped unless site has reed:2",
+                "consume=reed:2",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:50s",
-                "produce=cloth:3"
+                "animate=working duration:60s",
+                "produce=cloth:2"
             }
         },
         produce_cloth_idle = {
@@ -91,11 +91,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs cloth",
                 "return=skipped when economy needs reed and not workers need experience",
-                "sleep=duration:120s",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:60s",
-                "produce=cloth"
+                "produce=cloth",
+                "sleep=duration:180s"
             }
         }
     },

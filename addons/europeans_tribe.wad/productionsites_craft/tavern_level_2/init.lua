@@ -14,13 +14,12 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            grout = 2,
             marble = 2
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 2,
             granite = 2,
-            marble = 2,
-            planks = 1,
+            marble = 2
         },
     },
 
@@ -46,8 +45,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 8 },
-        { name = "flour", amount = 8 },
+        { name = "water", amount = 6 },
+        { name = "flour", amount = 6 },
         { name = "meat", amount = 6 },
         { name = "fish", amount = 4 }
     },
@@ -71,9 +70,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs ration or workers need experience",
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
-                "consume=water:2 flour:2 fish,meat:2",
-                "sleep=duration:10s",
-                "animate=working duration:40s",
+                "consume=water:2 flour:2",
+                "animate=working duration:25s",
+                "consume=fish,meat",
+                "animate=working duration:15s",
                 "produce=ration:2"
             }
         },
@@ -83,12 +83,13 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water and not economy needs snack",
                 "return=skipped unless economy needs snack or workers need experience",
-                "return=skipped unless site has water:4",
-                "return=skipped unless site has flour:4",
-                "consume=water:4 flour:4 fish,meat:4",
-                "sleep=duration:10s",
-                "animate=working duration:60s",
-                "produce=snack:3"
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has flour:2",
+                "consume=water:2 flour:2",
+                "animate=working duration:25s",
+                "consume=fish,meat",
+                "animate=working duration:15s",
+                "produce=snack:2"
             }
         },
         produce_snack_idle = {
@@ -98,13 +99,18 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ration",
                 "return=skipped when economy needs snack",
                 "return=skipped when economy needs water",
-                "sleep=duration:120s",
-                "consume=water:3 flour:3 fish,meat:3",
-                "animate=working duration:30s",
+                "consume=water flour",
+                "animate=working duration:25s",
+                "consume=fish,meat",
+                "animate=working duration:15s",
                 "produce=ration",
-                "sleep=duration:90s",
-                "animate=working duration:30s",
-                "produce=snack"
+                "sleep=duration:30s",
+                "consume=water:2 flour:2",
+                "animate=working duration:25s",
+                "consume=fish,meat",
+                "animate=working duration:15s",
+                "produce=snack",
+                "sleep=duration:90s"
             }
         }
     },

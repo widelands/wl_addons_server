@@ -14,13 +14,12 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            grout = 2,
-            marble_column = 2
+            marble = 2
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 2,
             granite = 2,
-            marble = 2,
-            planks = 1
+            marble = 2
         }
     },
 
@@ -43,9 +42,9 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 8 },
-        { name = "barley", amount = 8 },
-        { name = "honey", amount = 6 }
+        { name = "water", amount = 6 },
+        { name = "barley", amount = 6 },
+        { name = "honey", amount = 2 }
     },
 
     programs = {
@@ -68,12 +67,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs beer or workers need experience",
                 "return=skipped when site has honey and economy needs mead and not economy needs beer",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs beer",
-                "return=skipped unless site has water:3",
-                "return=skipped unless site has barley:3",
-                "consume=water:3 barley:3",
-                "sleep=duration:5s",
-                "animate=working duration:60s",
-                "produce=beer:3"
+                "return=skipped unless site has water",
+                "return=skipped unless site has barley",
+                "consume=water barley",
+                "animate=working duration:20s",
+                "produce=beer"
             }
         },
         brew_mead = {
@@ -84,13 +82,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs mead or workers need experience",
                 "return=skipped when site has barley and economy needs beer and not economy needs mead",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
-                "return=skipped unless site has water:3",
-                "return=skipped unless site has barley:3",
-                "return=skipped unless site has honey:3",
-                "consume=water:3 barley:3 honey:3",
-                "sleep=duration:5s",
-                "animate=working duration:60s",
-                "produce=mead:3"
+                "return=skipped unless site has water",
+                "return=skipped unless site has barley",
+                "return=skipped unless site has honey",
+                "consume=water barley honey",
+                "animate=working duration:20s",
+                "produce=mead"
             }
         },
         brew_strong_beer = {
@@ -101,12 +98,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs beer_strong or workers need experience",
                 "return=skipped when site has barley and economy needs beer and not economy needs beer_strong",
                 "return=skipped when site has honey and economy needs mead and not economy needs beer_strong",
-                "return=skipped unless site has water:4",
-                "return=skipped unless site has barley:4",
-                "consume=water:4 barley:4",
-                "sleep=duration:5s",
-                "animate=working duration:80s",
-                "produce=beer_strong:3"
+                "return=skipped unless site has water",
+                "return=skipped unless site has barley",
+                "consume=water barley",
+                "animate=working duration:20s",
+                "produce=beer_strong"
             }
         },
         brew_mead_idle = {
@@ -117,16 +113,18 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs beer_strong",
                 "return=skipped when economy needs mead",
                 "return=skipped when economy needs water",
-                "sleep=duration:120s",
-                "consume=water:4 barley:4 honey",
-                "animate=working duration:80s",
+                "consume=water barley",
+                "animate=working duration:20s",
                 "produce=beer",
-                "sleep=duration:90s",
-                "animate=working duration:90s",
+                "sleep=duration:30s",
+                "consume=water barley",
+                "animate=working duration:20s",
                 "produce=beer_strong",
-                "sleep=duration:90s",
-                "animate=working duration:90s",
-                "produce=mead"
+                "sleep=duration:30s",
+                "consume=water barley honey",
+                "animate=working duration:20s",
+                "produce=mead",
+                "sleep=duration:90s"
             }
         }
     },

@@ -28,7 +28,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 8 }
+        { name = "log", amount = 4 }
     },
 
     programs = {
@@ -47,12 +47,15 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "sawing logs"),
             actions = {
                 "return=skipped unless economy needs planks",
-                "return=skipped unless site has log:4",
-                "consume=log:4",
-                "sleep=duration:5s",
+                "return=skipped unless site has log:2",
+                "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:10s",
-                "produce=planks:3"
+                "animate=working duration:15s",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:15s",
+                "produce=scrap_wood:2",
+                "produce=planks"
             }
         },
         hardening_wood = {
@@ -60,12 +63,15 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
                 "return=skipped unless economy needs blackwood",
-                "return=skipped unless site has log:4",
-                "consume=log:4",
-                "sleep=duration:5s",
+                "return=skipped unless site has log:2",
+                "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:10s",
-                "produce=blackwood:3"
+                "animate=working duration:15s",
+                "consume=log",
+                "playsound=sound/barbarians/blackwood priority:60%",
+                "animate=working duration:15s",
+                "produce=scrap_wood:2",
+                "produce=blackwood:2"
             }
         },
         saw_log_idle = {
@@ -75,15 +81,21 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood",
                 "return=skipped when economy needs planks",
                 "return=skipped when economy needs log",
-                "sleep=duration:120s",
-                "consume=log:4",
+                "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=blackwood",
-                "sleep=duration:90s",
+                "produce=scrap_wood",
+                "sleep=duration:30s",
+                "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:15s", 
-                "produce=planks"
+                "animate=working duration:15s",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:15s",
+                "produce=scrap_wood:2",
+                "produce=planks",
+                "sleep=duration:90s",
             }
         }
     },

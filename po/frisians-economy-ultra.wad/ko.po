@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# 천영준, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-06-19 03:04+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://www.transifex.com/widelands/teams/35159/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -19,54 +23,54 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/addon:2
 msgid "Frisians Economy Ultra"
-msgstr ""
+msgstr "프리시안 경제"
 
 #: addons/frisians-economy-ultra.wad/addon:3
 msgid ""
 "Very complex economy model for the frisian tribe with numerous new wares and "
 "buildings."
-msgstr ""
+msgstr "다양한 자원과 건물을 활용한 프리시안 부족의 복잡한 경제 모델"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/barley_flour/init.lua:8
 msgctxt "ware"
 msgid "Barley Flour"
-msgstr ""
+msgstr "보리 가루"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Barley Mill"
-msgstr ""
+msgstr "보리 제분소"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/frisians-economy-ultra.wad/barley_mill/init.lua:51
 msgid "grinding barley"
-msgstr ""
+msgstr "보리 제분"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/leather/init.lua:8
 msgctxt "ware"
 msgid "Leather"
-msgstr ""
+msgstr "가죽"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/miller/init.lua:8
 msgctxt "frisians_worker"
 msgid "Miller"
-msgstr ""
+msgstr "제분기"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/oat/init.lua:8
 msgctxt "ware"
 msgid "Oat"
-msgstr ""
+msgstr "귀리"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Oat Farm"
-msgstr ""
+msgstr "귀리 농장"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:65
@@ -76,317 +80,319 @@ msgstr ""
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:44
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:40
 msgid "working"
-msgstr ""
+msgstr "작업중"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73
 msgid "planting oat"
-msgstr ""
+msgstr "귀리 심기"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:81
 msgid "harvesting oat"
-msgstr ""
+msgstr "귀리 수확"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:90
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
 msgid "No Fields"
-msgstr ""
+msgstr "수확지 없음"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:91
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:70
 msgid "Out of Fields"
-msgstr ""
+msgstr "수확지 부족"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:92
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this oat farm has no cleared soil to plant his seeds."
-msgstr ""
+msgstr "이 귀리 농장은 더 이상 재배가 불가능합니다."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr ""
+msgstr "귀리 수확지 (수확 완료)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr ""
+msgstr "귀리 수확지 (중간 단계)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (ripe)"
-msgstr ""
+msgstr "귀리 수확지 (수확 가능)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr ""
+msgstr "귀리 수확지 (초반 단계)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr ""
+msgstr "귀리 수확지 (극초반 단계)"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:9
 msgid "This rye field has been harvested."
-msgstr ""
+msgstr "이 호밀 수확지는 이미 수확되었습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:12
 msgid "This rye field is ready for harvesting."
-msgstr ""
+msgstr "이 호밀 수확지는 수확 가능합니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:15
 msgid "This rye field is flowering. Beekeepers can use it to produce honey."
-msgstr ""
+msgstr "호밀 수확지에서 꽃이 피었습니다. 양봉업자가 꿀을 생산할 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:18
 msgid "This rye field is growing."
-msgstr ""
+msgstr "이 호밀 수확지는 성장중입니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:21
 msgid "This rye field has just been planted."
-msgstr ""
+msgstr "이 호밀 수확지는 방금 식물을 심었습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:25
 msgid "This oat field has been harvested."
-msgstr ""
+msgstr "이 귀리 수확지는 이미 수확되었습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:28
 msgid "This oat field is ready for harvesting."
-msgstr ""
+msgstr "이 귀리 수확지는 수확 가능합니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:31
 msgid "This oat field is flowering. Beekeepers can use it to produce honey."
-msgstr ""
+msgstr "귀리 수확지에서 꽃이 피었습니다. 양봉업자가 꿀을 생산할 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:34
 msgid "This oat field is growing."
-msgstr ""
+msgstr "이 귀리 수확지는 성장중입니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:37
 msgid "This oat field has just been planted."
-msgstr ""
+msgstr "이 귀리 수확지는 방금 식물을 심었습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:45
 msgid "Salt is washed from the sea and used to conserve meat and fish."
-msgstr ""
+msgstr "소금은 바닷물로부터 추출해 고기와 생선을 저장하는 데 사용됩니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:48
 msgid "Rye is used to bake bread. It needs to be ground into flour first."
 msgstr ""
+"호밀은 빵을 만드는 데 사용됩니다. 단, 먼저 가루 형태로 제분되어야 합니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:51
 msgid "After being ground to flour, rye can be used to bake bread."
-msgstr ""
+msgstr "가루 형태로 제분된 다음, 호밀로 빵을 만들 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:54
 msgid "After being ground to flour, barley can be used to bake bread."
-msgstr ""
+msgstr "가루 형태로 제분된 다음, 보리로 빵을 만들 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:57
 msgid "Oat is used to bake bread and also fed to the reindeer."
-msgstr ""
+msgstr "귀리는 빵이나 사슴의 먹이로 사용 가능합니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:60
 msgid "Fur can be tanned into leather, which is needed to produce garments."
 msgstr ""
+"털은 무두질을 하면 가죽으로 만들수 있으며, 가죽은 의복 제작에 쓰입니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:104
 msgid "The salter washes salt from the shores of the sea."
-msgstr ""
+msgstr "제염기를 이용해 바다 연안에서 소금을 얻을 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:107
 msgid "The miller grinds barley and rye into flour."
-msgstr ""
+msgstr "제분기로 보리와 호밀을 가루 형태로 빻을 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:110
 msgid "The tanner tans furs to produce leather."
-msgstr ""
+msgstr "무두기를 이용해 털을 가죽으로 만들 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:118
 msgid "The salter working at the salt works washes salt from the sea."
-msgstr ""
+msgstr "소금 제작을 위해 쓰이는 제염기는 바다에서 소금을 추출할 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:119
 msgid "The salter needs water within its work area."
-msgstr ""
+msgstr "제염기는 사용할 때 물이 필요합니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:122
 msgid "The tannery tans fur into leather."
-msgstr ""
+msgstr "무두질 공장에서 털을 가죽으로 만들 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:125
 msgid "The barley mill grinds barley into barley flour."
-msgstr ""
+msgstr "보리 제분소에서는 보리를 보리 가루로 제분할 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:128
 msgid "The rye mill grinds rye into rye flour."
-msgstr ""
+msgstr "호밀 제분소에서는 호밀을 호밀 가루로 제분할 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:131
 msgid "The rye farm sows and harvests rye."
-msgstr ""
+msgstr "호밀 농장에서는 호밀을 심고 수확할 수 있습니다."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:134
 msgid "The oat farm sows and harvests oat."
-msgstr ""
+msgstr "귀리 농장에서는 귀리를 심고 수확할 수 있습니다."
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:144
 msgid "smoking fish"
-msgstr ""
+msgstr "생선 훈제"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking meat because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:153
 msgid "smoking meat"
-msgstr ""
+msgstr "고기 훈제"
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing reindeer because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:171
 msgctxt "frisians_building"
 msgid "rearing reindeer"
-msgstr ""
+msgstr "사슴 사육"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:181
 #: addons/frisians-economy-ultra.wad/postload.lua:191
 msgctxt "frisians_building"
 msgid "producing fur"
-msgstr ""
+msgstr "털 생산"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:217
 #: addons/frisians-economy-ultra.wad/postload.lua:246
 msgid "baking bread"
-msgstr ""
+msgstr "빵 굽기"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking honey bread because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:235
 msgid "baking honey bread"
-msgstr ""
+msgstr "허니브레드 굽기"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sewing fur garment because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:267
 msgid "sewing fur garment"
-msgstr ""
+msgstr "털 의복 제작"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "호밀"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Farm"
-msgstr ""
+msgstr "호밀 농장"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:52
 msgid "planting rye"
-msgstr ""
+msgstr "호밀 심기"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:60
 msgid "harvesting rye"
-msgstr ""
+msgstr "호밀 수확"
 
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:71
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this rye farm has no cleared soil to plant his seeds."
-msgstr ""
+msgstr "이 호밀 농장은 더 이상 재배가 불가능합니다."
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/rye_flour/init.lua:8
 msgctxt "ware"
 msgid "Rye Flour"
-msgstr ""
+msgstr "호밀 가루"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:8
 msgctxt "frisians_building"
 msgid "Rye Mill"
-msgstr ""
+msgstr "호밀 제분소"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye because ...
 #: addons/frisians-economy-ultra.wad/rye_mill/init.lua:51
 msgid "grinding rye"
-msgstr ""
+msgstr "호밀 제분"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "호밀 수확지 (수확 완료)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "호밀 수확지 (중간 단계)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr ""
+msgstr "호밀 수확지 (수확 가능)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/small/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "호밀 수확지 (초반 단계)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/ryefield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "호밀 수확지 (극초반 단계)"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/frisians-economy-ultra.wad/salt/init.lua:8
 msgctxt "ware"
 msgid "Salt"
-msgstr ""
+msgstr "소금"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/salt_works/init.lua:8
 msgctxt "frisians_building"
 msgid "Salt Works"
-msgstr ""
+msgstr "소금 생산"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/salter/init.lua:8
 msgctxt "frisians_worker"
 msgid "Salter"
-msgstr ""
+msgstr "제염기"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/frisians-economy-ultra.wad/tanner/init.lua:8
 msgctxt "frisians_worker"
 msgid "Tanner"
-msgstr ""
+msgstr "무두기"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:8
 msgctxt "frisians_building"
 msgid "Tannery"
-msgstr ""
+msgstr "무두질 공장"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tanning fur because ...
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:47
 msgid "tanning fur"
-msgstr ""
+msgstr "털 무두질"
 
 #: screenshots/frisians-economy-ultra.wad/descriptions:1
 msgid "Example screenshot of version 1"
-msgstr ""
+msgstr "버전 1의 스크린샷"

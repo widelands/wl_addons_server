@@ -7,17 +7,18 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Trainingscamp Level 3"),
     icon = dirname .. "menu.png",
-    size = "medium",
+    size = "big",
 
     enhancement = {
         name = "europeans_trainingscamp_level_4",
         enhancement_cost = {
+            planks = 2,
             brick = 2,
-            grout = 2,
             marble_column = 2,
             gold = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 2,
             granite = 2,
             marble = 2,
             scrap_metal_mixed = 1
@@ -35,11 +36,7 @@ wl.Descriptions():new_productionsite_type {
         }
     },
 
-    aihints = {
-        very_weak_ai_limit = 0,
-        weak_ai_limit = 0,
-      --normal_ai_limit = 2
-    },
+    aihints = { },
 
     working_positions = {
         europeans_trainer_normal = 1
@@ -70,9 +67,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting soldier"),
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
-                "sleep=duration:10s",
                 "consume=armor:2 spear_wooden:2 snack:2 mead:2 europeans_recruit:2 quartz diamond",
-                "animate=working duration:70s",
+                "animate=working duration:140s",
                 "recruit=europeans_soldier:2"
             }
         },
@@ -81,9 +77,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting trainer"),
             actions = {
                 "return=skipped unless economy needs europeans_trainer_normal",
-                "sleep=duration:10s",
                 "consume=armor spear_wooden snack mead europeans_recruit quartz,diamond",
-                "animate=working duration:60s",
+                "animate=working duration:140s",
                 "recruit=europeans_trainer_normal"
             }
         },

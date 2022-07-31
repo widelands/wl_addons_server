@@ -23,8 +23,7 @@ wl.Descriptions():new_warehouse_type {
         diamond = 2
     },
     return_on_dismantle = {
-        blackwood = 1,
-        planks = 1,
+        scrap_wood = 4,
         reed = 2,
         granite = 2,
         marble = 2,

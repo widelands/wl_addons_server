@@ -30,8 +30,7 @@ wl.Descriptions():new_warehouse_type {
         diamond = 3
     },
     return_on_dismantle = {
-        blackwood = 3,
-        planks = 3,
+        scrap_wood = 8,
         granite = 4,
         marble = 2,
         quartz = 2,
@@ -42,7 +41,7 @@ wl.Descriptions():new_warehouse_type {
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
-        normal_ai_limit = 2,
+        normal_ai_limit = 1,
         prohibited_till = 7200
     },
 

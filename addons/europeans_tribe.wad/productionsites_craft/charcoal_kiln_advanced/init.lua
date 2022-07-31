@@ -28,9 +28,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 24 },
-        { name = "blackwood", amount = 8 },
-        { name = "planks", amount = 8 }
+        { name = "scrap_wood", amount = 8 }
     },
 
     programs = {
@@ -38,61 +36,31 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=burn_log",
-                "call=burn_blackwood",
-                "call=burn_planks",
-                "call=burn_log_idle",
+                "call=burn_wood",
+                "call=burn_wood_idle",
                 "return=skipped"
             }
         },
-        burn_log = {
+        burn_wood = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal",
-                "return=skipped unless site has log:12",
-                "consume=log:12",
-                "sleep=duration:5s",
-                "animate=working duration:1m30s",
-                "produce=coal:5",
+                "return=skipped unless site has scrap_wood:8",
+                "consume=scrap_wood:8",
+                "animate=working duration:90s",
+                "produce=coal:5"
             }
         },
-        burn_blackwood = {
-            -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
-            descname = pgettext("europeans_building", "producing coal"),
-            actions = {
-                "return=skipped unless economy needs coal",
-                "return=skipped when economy needs blackwood",
-                "return=skipped unless site has blackwood:6",
-                "consume=blackwood:6",
-                "sleep=duration:5s",
-                "animate=working duration:1m30s", -- Charcoal fires will burn for some days in real life
-                "produce=coal:3"
-            }
-        },
-        burn_planks = {
-            -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
-            descname = pgettext("europeans_building", "producing coal"),
-            actions = {
-                "return=skipped unless economy needs coal",
-                "return=skipped when economy needs planks",
-                "return=skipped unless site has planks:6",
-                "consume=planks:6",
-                "sleep=duration:5s",
-                "animate=working duration:1m30s", -- Charcoal fires will burn for some days in real life
-                "produce=coal:3"
-            }
-        },
-        burn_log_idle = {
+        burn_wood_idle = {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs coal",
-                "return=skipped when economy needs log",
-                "consume=log:3",
-                "sleep=duration:60s",
-                "animate=working duration:1m30s",
-                "produce=coal"
+                "consume=scrap_wood:3",
+                "animate=working duration:90s",
+                "produce=coal",
+                "sleep=duration:60s"
             }
         }
     },

@@ -13,10 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_tavern_level_1",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 1
+            cloth = 1,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2
         },
     },
 
@@ -26,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 
@@ -46,9 +47,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
         basic_amount = 1,
         prohibited_till = 2400,
         forced_after = 3000
@@ -62,7 +60,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "water", amount = 4 },
         { name = "flour", amount = 4 },
         { name = "meat", amount = 4 },
-        { name = "fish", amount = 2 }
+        { name = "fish", amount = 4 }
     },
 
     programs = {
@@ -83,9 +81,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs ration or workers need experience",
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
-                "consume=water:2 flour:2 fish,meat:2",
-                "sleep=duration:10s",
-                "animate=working duration:60s",
+                "consume=water:2 flour:2",
+                "animate=working duration:40s",
+                "consume=fish,meat",
+                "animate=working duration:20s",
                 "produce=ration:2"
             }
         },
@@ -95,10 +94,12 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs ration",
                 "return=skipped when economy needs water",
-                "sleep=duration:120s",
-                "consume=water flour fish,meat",
+                "consume=water flour",
                 "animate=working duration:30s",
-                "produce=ration"
+                "consume=fish,meat",
+                "animate=working duration:30s",
+                "produce=ration",
+                "sleep=duration:120s"
             }
         }
     },

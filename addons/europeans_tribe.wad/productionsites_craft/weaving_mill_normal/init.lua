@@ -14,13 +14,12 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            grout = 2,
             marble = 2
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 2,
             granite = 2,
-            marble = 2,
-            planks = 1
+            marble = 2
         }
     },
 
@@ -43,7 +42,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 6 },
+        { name = "reed", amount = 4 },
         { name = "wool", amount = 4 }
     },
 
@@ -64,24 +63,22 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped when economy needs reed and not economy needs cloth",
-                "return=skipped unless site has reed:3",
-                "consume=reed:3",
-                "sleep=duration:10s",
+                "return=skipped unless site has reed",
+                "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:40s",
-                "produce=cloth:3"
+                "animate=working duration:45s",
+                "produce=cloth"
             }
         },
         produce_tabard = {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
            descname = pgettext("europeans_building", "tailoring a tabard"),
             actions = {
-                "return=skipped unless economy needs tabard",
-                "return=skipped unless site has reed:2",
+                "return=skipped when economy needs reed and not economy needs tabard",
+                "return=skipped unless site has reed",
                 "consume=reed",
-                "sleep=duration:10s",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:40s",
+                "animate=working duration:45s",
                 "produce=tabard"
             }
         },
@@ -89,13 +86,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
             descname = pgettext("europeans_building", "forging a suit of armor"),
             actions = {
-                "return=skipped unless economy needs armor",
-                "return=skipped unless site has wool:2",
+                "return=skipped when economy needs wool and not economy needs armor",
+                "return=skipped unless site has wool",
                 "consume=wool",
-                "sleep=duration:10s",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:40s",
-                "sleep=duration:5s",
+                "animate=working duration:45s",
                 "produce=armor"
             }
         },
@@ -105,13 +100,16 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs tabard",
                 "return=skipped when economy needs armor",
-                "sleep=duration:120s",
-                "consume=reed wool",
+                "return=skipped when economy needs reed and not workers need experience",
+                "consume=reed",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:60s",
+                "animate=working duration:45s",
                 "produce=tabard",
-                "animate=working duration:60s",
-                "produce=armor"
+                "consume=wool",
+                "playsound=sound/mill/weaving priority:90%",
+                "animate=working duration:45s",
+                "produce=armor",
+                "sleep=duration:180s"
             }
         }
     },

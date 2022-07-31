@@ -281,68 +281,48 @@ function connect_road(startx, starty, targetx, targety)
         end
         
         -- special end roads (3 tiles)-- 
-        if (diffx == 3) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "r", "r", "r", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 3) and (diffy == 1) then
-          road = player:place_road(roadtype, startflag, "br", "r", "r", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "br", "br", "r", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 2) and (diffy == 3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 1) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 0) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "br", "bl", "br", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == 0) and (diffy == 3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "bl", "br", "bl", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == -1) and (diffy == 3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "bl,", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "bl,", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "l", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == -3) and (diffy == 1) then
-          road = player:place_road(roadtype, startflag, "bl", "l", "l", true)
+        if (diffx == -3) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "tl", "l", "l", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -3) and (diffy == 0) then
           road = player:place_road(roadtype, startflag, "l", "l", "l", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == -3) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tl", "l", "l", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", "l", true)
+        elseif (diffx == -3) and (diffy == 1) then
+          road = player:place_road(roadtype, startflag, "bl", "l", "l", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -2) and (diffy == -3) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
+        elseif (diffx == -2) and (diffy == -2) then
+          road = player:place_road(roadtype, startflag, "tl", "tl", "l", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -2) and (diffy == -1) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "l", "tl", "l", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -2) and (diffy == 1) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "l", "bl", "l", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -2) and (diffy == 2) then
+          road = player:place_road(roadtype, startflag, "bl", "bl", "l", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -2) and (diffy == 3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "bl", "bl", "bl,", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
         elseif (diffx == -1) and (diffy == -3) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == -1) and (diffy == 3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "bl", "bl", "bl,", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == 0) and (diffy == -3) and (targety % 2 == 0) then
@@ -353,8 +333,20 @@ function connect_road(startx, starty, targetx, targety)
           road = player:place_road(roadtype, startflag, "tr", "tl", "tr", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
+        elseif (diffx == 0) and (diffy == 3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "bl", "br", "bl", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 0) and (diffy == 3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "br", "bl", "br", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
         elseif (diffx == 1) and (diffy == -3) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "tr", "tr", "tr", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 1) and (diffy == 3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == 2) and (diffy == -3) and (targety % 2 == 0) then
@@ -365,10 +357,6 @@ function connect_road(startx, starty, targetx, targety)
           road = player:place_road(roadtype, startflag, "tr", "tr", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == 3) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "tr", "r", "r", true)
-          startflag = road.end_flag
-          startfield = startflag.fields[1]
         elseif (diffx == 2) and (diffy == -1) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "r", "tr", "r", true)
           startflag = road.end_flag
@@ -377,12 +365,24 @@ function connect_road(startx, starty, targetx, targety)
           road = player:place_road(roadtype, startflag, "r", "br", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == -1) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "l", "tl", "l", true)
+        elseif (diffx == 2) and (diffy == 2) then
+          road = player:place_road(roadtype, startflag, "br", "br", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
-        elseif (diffx == -2) and (diffy == 1) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "l", "bl", "l", true)
+       elseif (diffx == 2) and (diffy == 3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "br", "r", "br", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 3) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "tr", "r", "r", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 3) and (diffy == 0) then
+          road = player:place_road(roadtype, startflag, "r", "r", "r", true)
+          startflag = road.end_flag
+          startfield = startflag.fields[1]
+        elseif (diffx == 3) and (diffy == 1) then
+          road = player:place_road(roadtype, startflag, "br", "r", "r", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
 
@@ -646,19 +646,6 @@ function dismantle_all_buildings(player_number, building_name)
     end
 end
 
-function dismantle_idle_buildings(player_number, productivity_threshold)
-    local game = wl.Game()
-    local player = game.players[player_number]
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
-             building:dismantle(true)
-          end
-       end
-    end
-end
-
 function dismantle_stopped_buildings(player_number)
     local game = wl.Game()
     local player = game.players[player_number]
@@ -672,24 +659,16 @@ function dismantle_stopped_buildings(player_number)
     end
 end
 
-function enhance_building(startx, starty)
+function dismantle_idle_buildings(player_number, productivity_threshold)
     local game = wl.Game()
-    local map = game.map
+    local player = game.players[player_number]
 
-    if (map:get_field(startx, starty).immovable.descr.type_name == "productionsite") then
-       map:get_field(startx, starty).immovable:enhance(true)
-    end
-    if (map:get_field(startx, starty).immovable.descr.type_name == "trainingsite") then
-       map:get_field(startx, starty).immovable:enhance(true)
-    end
-    if (map:get_field(startx, starty).immovable.descr.type_name == "militarysite") then
-       map:get_field(startx, starty).immovable:enhance(true)
-    end
-    if (map:get_field(startx, starty).immovable.descr.type_name == "warehouse") then
-       map:get_field(startx, starty).immovable:enhance(true)
-    end
-    if (map:get_field(startx, starty).immovable.descr.type_name == "market") then
-       map:get_field(startx, starty).immovable:enhance(true)
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
+             building:dismantle(true)
+          end
+       end
     end
 end
 
@@ -714,27 +693,6 @@ function upgrade_building(startx, starty)
     end
 end
 
-function enhance_all_buildings(player_number, building_name)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-    local tribe_name = tribe.name
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.name == building_name then
-             building:enhance(true)
-          elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
-             building:enhance(true)
-          elseif string.find(tbuilding.name, building_name) then
-             building:enhance(true)
-          elseif tbuilding.type_name == building_name then
-             building:enhance(true)
-          end
-       end
-    end
-end
-
 function upgrade_all_buildings(player_number, building_name)
     local game = wl.Game()
     local player = game.players[player_number]
@@ -756,13 +714,13 @@ function upgrade_all_buildings(player_number, building_name)
     end
 end
 
-function enhance_idle_buildings(player_number, productivity_threshold)
+function upgrade_stopped_buildings(player_number)
     local game = wl.Game()
     local player = game.players[player_number]
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
+          if tbuilding.type_name == "productionsite" and building.is_stopped == true then
              building:enhance(true)
           end
        end
@@ -799,7 +757,6 @@ function start_all_buildings(player_number, building_name)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          print (tbuilding.name, string.find(tbuilding.name, building_name))
           if tbuilding.name == building_name then
              if (building.is_stopped == true) then
                  building:toggle_start_stop()
@@ -984,6 +941,15 @@ function set_warehouse_waretype_policy(startx, starty, waretype, policiename)
             end
         end
     elseif waretype == "metals" then
+        for i, tbuilding in pairs(tribe.buildings) do
+            if string.find(tbuilding.name, "smelting") then
+                if tbuilding.output_ware_types then
+                    for k, waretype, warecount in pairs(tbuilding.output_ware_types) do
+                        set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
+                    end
+                end
+            end
+        end
     end
 end
 

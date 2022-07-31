@@ -124,6 +124,15 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "scrap_wood",
+                default_target_quantity = 16,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Scrap wood
+                    purpose = pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills. It can be processed into charcoal in charcoal burners.")
+                }
+            },
+            {
                 name = "reed",
                 default_target_quantity = 32,
                 preciousness = 16,
@@ -156,7 +165,7 @@ wl.Descriptions():new_tribe {
             }            
         },
         {
-            -- Building Materials 1
+            -- Building Materials 2
             {
                 name = "granite",
                 default_target_quantity = 16,
@@ -835,30 +844,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_carrier_ox",
-                default_target_quantity = 16,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Ox
-                    purpose = pgettext("europeans_worker", "Carries items along your roads. They are reared in an animal farm.")
-                }
-            },
-            {
                 name = "europeans_carrier_2",
                 default_target_quantity = 16,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
                     purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
-                }
-            },
-            {
-                name = "europeans_carrier_donkey",
-                default_target_quantity = 16,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Donkey
-                    purpose = pgettext("europeans_worker", "Carries items along your roads. They are reared in an animal farm.")
                 }
             },
             {
@@ -871,12 +862,30 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "europeans_carrier_ox",
+                default_target_quantity = 16,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Ox
+                    purpose = pgettext("europeans_worker", "Carries items along your roads. They are reared in an animal farm.")
+                }
+            },
+            {
+                name = "europeans_carrier_donkey",
+                default_target_quantity = 16,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Donkey
+                    purpose = pgettext("europeans_worker", "Donkeys help to carry items along busy roads. They are reared in an animal farm.")
+                }
+            },
+            {
                 name = "europeans_carrier_horse",
                 default_target_quantity = 16,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Horse
-                    purpose = pgettext("europeans_worker", "Carries items along your roads. They are reared in an animal farm.")
+                    purpose = pgettext("europeans_worker", "Horses help to carry items along busy roads. They are reared in an animal farm.")
                 }
             },
             {
@@ -885,7 +894,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans worker: Reindeer
-                    purpose = pgettext("europeans_worker", "Reindeer help to carry items along busy roads. They are reared in an animal farm.")
+                    purpose = pgettext("europeans_worker", "Reindeers help to carry items along busy roads. They are reared in an animal farm.")
                 }
             },
             {
@@ -976,13 +985,6 @@ wl.Descriptions():new_tribe {
         {
             -- Military and Expansion
             {
-                name = "europeans_recruit",
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Recruit
-                    purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
-                }
-            },
-            {
                 name = "europeans_trainer_basic",
                 default_target_quantity = 1,
                 preciousness = 4,
@@ -1037,6 +1039,15 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Scout
                     purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
                     -- (c) WiHack Team 02.01.2010
+                }
+            },
+            {
+                name = "europeans_recruit",
+                default_target_quantity = 16,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Recruit
+                    purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
                 }
             },
             {
@@ -1932,35 +1943,14 @@ wl.Descriptions():new_tribe {
             name = "pond_dry",
             helptexts = {
                 -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("When claydiggers dig up earth, they leave holes in the ground. These holes vanish after a while. Aqua farms can use them as ponds to grow fish in them, whereas charcoal burners erect their charcoal stacks in them.")
+                purpose = _("Ponds with water becomes dry after some time. These dry holes vanish after a while.")
             }
         },
         {
-            name = "pond_growing",
+            name = "pond_water",
             helptexts = {
                 -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("Fish are maturing in this pond. A fisher working from an aqua farm will be able to catch them when they are bigger.")
-            }
-        },
-        {
-            name = "pond_mature",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("Fish are living in this pond. A fisher working from an aqua farm can catch them as food.")
-            }
-        },
-        {
-            name = "pond_burning",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("A charcoal stack is burning in this earthen hole. When it has burnt down, a charcoal burner will be able to gather coal from it.")
-            }
-        },
-        {
-            name = "pond_coal",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: Pond
-                purpose = _("A charcoal stack, which had been erected in this earthen hole, is ready for a charcoal burner to gather coal from it.")
+                purpose = _("When claydiggers dig up earth, they leave holes with water in the ground. These falls dry after a while or can be used by terraformer to produce new soil.")
             }
         },
         {
@@ -3339,16 +3329,16 @@ wl.Descriptions():new_tribe {
 
     -- Special types
     builder = "europeans_builder",
-    carrier = "europeans_carrier_1",
-    carrier2 = "europeans_carrier_2",
-    carrier3 = "europeans_carrier_3",
-    carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
+    -- carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
+    carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3", "europeans_carrier_donkey", "europeans_carrier_horse"},
     geologist = "europeans_geologist",
     scouts_house = "europeans_scouts_house_basic",
     soldier = "europeans_soldier",
     ship = "europeans_ship",
     ferry = "europeans_ferry",
     port = "europeans_port",
+    carrier = "europeans_carrier_1",
+    carrier2 = "europeans_carrier_3",
 }
 
 pop_textdomain()

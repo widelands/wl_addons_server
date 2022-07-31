@@ -10,8 +10,6 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
 
-    buildcost = {}, -- This will give the worker the property "buildable"
-
     spritesheets = {
         idle = {
             fps = 5,

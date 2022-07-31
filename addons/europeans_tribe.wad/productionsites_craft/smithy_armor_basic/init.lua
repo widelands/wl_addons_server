@@ -13,10 +13,13 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_armorsmithy_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2
+            cloth = 2,
+            grout = 2,
+            gold = 1
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2,
+            scrap_metal_mixed = 1
         },
     },
     
@@ -26,7 +29,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 
@@ -51,15 +54,16 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 1,
         prohibited_till = 5400,
-        forced_after = 7200
+        forced_after = 7200,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3
     },
 
     working_positions = {
-        europeans_smith_basic = 2
+        europeans_smith_basic = 1,
+        europeans_smith_normal = 1
     },
 
     inputs = {
@@ -77,6 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_spear_advanced",
                 "call=produce_helmet_mask",
                 "call=produce_idle",
+                "sleep=duration:30s",
                 "return=skipped"
             }
         },
@@ -86,11 +91,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs spear_wooden",
                 "consume=planks",
-                "sleep=duration:10s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "sleep=duration:10s",
                 "produce=spear_wooden"
             }
         },
@@ -100,7 +103,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs helmet_mask",
                 "consume=coal iron",
-                "sleep=duration:10s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "produce=helmet_mask"
@@ -112,11 +114,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs spear_advanced",
                 "consume=planks coal iron",
-                "sleep=duration:10s",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "sleep=duration:10s",
                 "produce=spear_advanced"
             }
         },
@@ -140,9 +140,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs spear_wooden",
                 "return=skipped when economy needs helmet_mask",
                 "return=skipped when economy needs spear_advanced",
-                "return=skipped when economy needs planks",
-                "return=skipped when economy needs coal",
                 "return=skipped when economy needs iron",
+                "return=skipped when economy needs gold",
                 "sleep=duration:180s",
                 "consume=planks:2 coal:2 iron:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",

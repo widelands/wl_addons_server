@@ -16,6 +16,7 @@ wl.Descriptions():new_productionsite_type {
             cloth = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 1
         },
     },
 
@@ -25,7 +26,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
     return_on_dismantle = {
-        log = 1,
+        scrap_wood = 2,
         granite = 1
     },
 
@@ -47,7 +48,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
-        normal_ai_limit = 2
+        normal_ai_limit = 1
     },
 
     working_positions = {

@@ -14,13 +14,12 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            grout = 2,
             marble = 2
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 2,
             granite = 2,
-            marble = 2,
-            planks = 1
+            marble = 2
         }
     },
 
@@ -42,8 +41,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coal", amount = 4 },
-        { name = "ore", amount = 4 }
+        { name = "coal", amount = 6 },
+        { name = "ore", amount = 6 }
     },
 
     programs = {
@@ -62,13 +61,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "smelting iron"),
             actions = {
                 "return=skipped unless economy needs iron or workers need experience",
-                "return=skipped when economy needs gold",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
-                "sleep=duration:10s",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=working duration:35s",
+                "animate=working duration:45s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron:2"
             }
@@ -81,9 +78,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
-                "sleep=duration:10s",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=working duration:35s",
+                "animate=working duration:45s",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=gold"
             }
@@ -95,17 +91,17 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs iron",
                 "return=skipped when economy needs gold",
                 "return=skipped when economy needs coal",
-                "sleep=duration:120s",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:25s",
+                "animate=working duration:45s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron",
-                "sleep=duration:90s",
+                "sleep=duration:30s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:25s",
+                "animate=working duration:45s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=gold",
+                "sleep=duration:90s"
             }
         }
     },

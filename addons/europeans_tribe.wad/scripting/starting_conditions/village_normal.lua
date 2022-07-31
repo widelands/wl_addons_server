@@ -82,36 +82,67 @@ init = {
             [{0,0,0,0}] = 16,
       }
     })
-    sleep(10000)
-    place_building_in_region(player, "europeans_well_level_2", sf:region(6), {
+    sleep(5000)
+    place_building_in_region(player, "europeans_well_level_2", sf:region(8), {
     })
-    place_building_in_region(player, "europeans_well_level_2", sf:region(6), {
+    sleep(5000)
+    place_building_in_region(player, "europeans_well_level_2", sf:region(8), {
     })
-    sleep(10000)
-    place_building_in_region(player, "europeans_lumberjacks_house_normal", sf:region(12), {
+    sleep(5000)
+    place_building_in_region(player, "europeans_well_level_2", sf:region(10), {
     })
-    place_building_in_region(player, "europeans_foresters_house_normal", sf:region(12), {
-        inputs = {water = 6},
+    sleep(5000)
+    place_building_in_region(player, "europeans_well_level_2", sf:region(10), {
     })
-    place_building_in_region(player, "europeans_lumberjacks_house_normal", sf:region(12), {
-    })
-    place_building_in_region(player, "europeans_foresters_house_normal", sf:region(12), {
-        inputs = {water = 6},
-    })
-    sleep(20000)
+    sleep(5000)
     place_building_in_region(player, "europeans_farm_level_1", sf:region(16), {
         inputs = {water = 6},
     })
+    sleep(5000)
     place_building_in_region(player, "europeans_farm_level_1", sf:region(16), {
         inputs = {water = 6},
     })
-    sleep(20000)
+    sleep(5000)
     place_building_in_region(player, "europeans_farm_medium_normal", sf:region(12), {
         inputs = {water = 4},
     })
+    sleep(5000)
     place_building_in_region(player, "europeans_farm_medium_normal", sf:region(12), {
         inputs = {water = 4},
     })
+    sleep(5000)
+    place_building_in_region(player, "europeans_quarry_normal", sf:region(12), {
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_lumberjacks_house_normal", sf:region(12), {
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_foresters_house_normal", sf:region(12), {
+        inputs = {water = 6},
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_lumberjacks_house_normal", sf:region(12), {
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_foresters_house_normal", sf:region(12), {
+        inputs = {water = 6},
+    })
+    
+    -- run script for 8760 hours of gametime = 1 year
+    for i = 1, 35040 do
+        -- Delay of 15 min between actions, 4 loops = 1 hour of gametime
+        sleep(900000)
+        
+        -- Activate the script after 6 hours of gametime
+        if i > 24 then
+            -- dismantle buildings automatically, that are stopped
+            dismantle_stopped_buildings(player)
+            -- enhance productionssites automatically, which productivity is lower than 25 %
+            enhance_idle_buildings(player, 25)
+            -- enhance productionssites automatically, which productivity is lower than 5 %
+            dismantle_idle_buildings(player, 5)
+        end
+    end
 end
 }
 

@@ -7,8 +7,24 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Trainingscamp Level 4"),
     icon = dirname .. "menu.png",
-    size = "medium",
-        
+    size = "big",
+    
+    enhancement = {
+        name = "europeans_battlearena_level_3",
+        enhancement_cost = {
+            marble_column = 1,
+            quartz = 1,
+            diamond = 1,
+            gold = 1
+        },
+        enhancement_return_on_dismantle = {
+            marble = 1,
+            quartz = 1,
+            diamond = 1,
+            scrap_metal_mixed = 1
+        },
+    },
+    
     animations = {
         idle = {
             pictures = path.list_files(dirname .. "idle_??.png"),
@@ -20,11 +36,7 @@ wl.Descriptions():new_productionsite_type {
         }
     },
 
-    aihints = {
-        very_weak_ai_limit = 0,
-        weak_ai_limit = 0,
-      --normal_ai_limit = 2
-    },
+    aihints = {},
 
     working_positions = {
         europeans_trainer_advanced = 1
@@ -55,9 +67,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting soldier"),
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
-                "sleep=duration:10s",
                 "consume=armor:2 spear_wooden:2 meal:2 wine:2 europeans_recruit:2 quartz diamond",
-                "animate=working duration:60s",
+                "animate=working duration:120s",
                 "recruit=europeans_soldier:2"
             }
         },
@@ -66,9 +77,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting trainer"),
             actions = {
                 "return=skipped unless economy needs europeans_trainer_advanced",
-                "sleep=duration:10s",
                 "consume=armor spear_wooden meal wine europeans_recruit quartz,diamond",
-                "animate=working duration:60s",
+                "animate=working duration:120s",
                 "recruit=europeans_trainer_advanced"
             }
         },

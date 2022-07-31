@@ -13,10 +13,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_brewery_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2
+            cloth = 2,
+            grout = 2
         },
         enhancement_return_on_dismantle = {
-            blackwood = 1
+            scrap_wood = 2
         }
     },
 
@@ -26,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 3
     },
     return_on_dismantle = {
-        log = 2,
+        scrap_wood = 3,
         granite = 2
     },
 
@@ -42,9 +43,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
         basic_amount = 1,
         prohibited_till = 2400,
         forced_after = 3000
@@ -55,8 +53,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 6 },
-        { name = "barley", amount = 6 }
+        { name = "water", amount = 4 },
+        { name = "barley", amount = 4 }
     },
 
     programs = {
@@ -75,12 +73,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped unless economy needs beer or workers need experience",
-                "return=skipped unless site has water:3",
-                "return=skipped unless site has barley:3",
-                "consume=water:3 barley:3",
-                "sleep=duration:10s",
-                "animate=working duration:80s",
-                "produce=beer:3"
+                "return=skipped unless site has water",
+                "return=skipped unless site has barley",
+                "consume=water barley",
+                "animate=working duration:45s",
+                "produce=beer"
             }
         },
         brew_beer_idle = {
@@ -89,10 +86,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs beer",
                 "return=skipped when economy needs water",
-                "sleep=duration:120s",
                 "consume=water barley",
-                "animate=working duration:80s",
-                "produce=beer"
+                "animate=working duration:45s",
+                "produce=beer",
+                "sleep=duration:120s"
             }
         }
     },

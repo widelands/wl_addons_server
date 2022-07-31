@@ -13,7 +13,6 @@ wl.Descriptions():new_trainingsite_type {
         name = "europeans_battlearena_level_4",
         enhancement_cost = {
             brick = 3,
-            grout = 3,
             marble_column = 3,
             quartz = 1,
             diamond = 1,
@@ -253,7 +252,7 @@ wl.Descriptions():new_trainingsite_type {
                 "train=soldier:attack level:3",
                 "produce=scrap_iron"
             }
-        },
+        }
     },
     
     soldier_capacity = 12,

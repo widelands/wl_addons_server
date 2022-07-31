@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# 천영준, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-06-18 03:04+0200\n"
 "PO-Revision-Date: 2021-06-05 18:17+0000\n"
+"Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://www.transifex.com/widelands/teams/35159/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +24,7 @@ msgstr ""
 #: addons/white_summer.wad/addon:2 addons/white_summer.wad/editor.lua:7
 #: addons/white_summer.wad/editor.lua:35
 msgid "White Summer"
-msgstr ""
+msgstr "하얀 여름"
 
 #: addons/white_summer.wad/addon:3
 msgid ""
@@ -30,147 +34,151 @@ msgid ""
 "planting trees. Dolomites contain stone as a default resource in amount of "
 "10."
 msgstr ""
+"꽃 목초지, 빈 터, 백운석, 식토, 그린 워터, 흙탕물과 3가지의 새로운 식물을 포"
+"함합니다. 꽃 목초지는 숲으로 만들기 더 어렵지만 배치하기에 더 좋습니다. 빈 터"
+"는 식물을 심기에 이상적입니다. 백운석은 10만큼의 기본 자원을 포함하고 있는 광"
+"석입니다."
 
 #: addons/white_summer.wad/immovables/linden/init.lua:16
 msgid "Linden (Sapling)"
-msgstr ""
+msgstr "린덴 (묘목)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:41
 msgid "Linden (Pole)"
-msgstr ""
+msgstr "린덴 (줄기)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:67
 msgid "Linden (Mature)"
-msgstr ""
+msgstr "린덴 (성체)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:93
 msgid "Linden (Old)"
-msgstr ""
+msgstr "린덴 (노목)"
 
 #: addons/white_summer.wad/immovables/linden/init.lua:94
 msgid "Linden"
-msgstr ""
+msgstr "린덴"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:17
 msgid "Pine (Sapling)"
-msgstr ""
+msgstr "소나무 (묘목)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:42
 msgid "Pine (Pole)"
-msgstr ""
+msgstr "소나무 (줄기)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:68
 msgid "Pine (Mature)"
-msgstr ""
+msgstr "소나무 (성체)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:94
 msgid "Pine (Old)"
-msgstr ""
+msgstr "소나무 (노목)"
 
 #: addons/white_summer.wad/immovables/pine/init.lua:95
 msgid "Pine"
-msgstr ""
+msgstr "소나무"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:95
 msgid "Red Maple"
-msgstr ""
+msgstr "홍단풍"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:68
 msgid "Red Maple (Mature)"
-msgstr ""
+msgstr "홍단풍 (성체)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:94
 msgid "Red Maple (Old)"
-msgstr ""
+msgstr "홍단풍 (노목)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:42
 msgid "Red Maple (Pole)"
-msgstr ""
+msgstr "홍단풍 (줄기)"
 
 #: addons/white_summer.wad/immovables/red maple/init.lua:17
 msgid "Red Maple (Sapling)"
-msgstr ""
+msgstr "홍단풍 (묘목)"
 
 #: addons/white_summer.wad/terrains/init.lua:10
 msgid "Flowering Meadow 1"
-msgstr ""
+msgstr "꽃 목초지 1"
 
 #: addons/white_summer.wad/terrains/init.lua:24
 msgid "Flowering Meadow 2"
-msgstr ""
+msgstr "꽃 목초지 2"
 
 #: addons/white_summer.wad/terrains/init.lua:38
 msgid "Flowering Meadow 3"
-msgstr ""
+msgstr "꽃 목초지 3"
 
 #: addons/white_summer.wad/terrains/init.lua:52
 msgid "Flowering Meadow 4"
-msgstr ""
+msgstr "꽃 목초지 4"
 
 #: addons/white_summer.wad/terrains/init.lua:66
 msgid "Clearing 1"
-msgstr ""
+msgstr "빈 터 1"
 
 #: addons/white_summer.wad/terrains/init.lua:79
 msgid "Clearing 2"
-msgstr ""
+msgstr "빈 터 2"
 
 #: addons/white_summer.wad/terrains/init.lua:93
 msgid "Clearing 3"
-msgstr ""
+msgstr "빈 터 3"
 
 #: addons/white_summer.wad/terrains/init.lua:107
 msgid "Forested Dolomites 1"
-msgstr ""
+msgstr "숲 속의 백운석 1"
 
 #: addons/white_summer.wad/terrains/init.lua:121
 msgid "Forested Dolomites 2"
-msgstr ""
+msgstr "숲 속의 백운석 2"
 
 #: addons/white_summer.wad/terrains/init.lua:135
 msgid "Forested Dolomites 3"
-msgstr ""
+msgstr "숲 속의 백운석 3"
 
 #: addons/white_summer.wad/terrains/init.lua:150
 msgid "Dolomites 1"
-msgstr ""
+msgstr "백운석 1"
 
 #: addons/white_summer.wad/terrains/init.lua:165
 msgid "Dolomites 2"
-msgstr ""
+msgstr "백운석 2"
 
 #: addons/white_summer.wad/terrains/init.lua:180
 msgid "Dolomites Meadow"
-msgstr ""
+msgstr "백운석 목초지"
 
 #: addons/white_summer.wad/terrains/init.lua:193
 msgid "Clay Soil"
-msgstr ""
+msgstr "식토"
 
 #: addons/white_summer.wad/terrains/init.lua:207
 msgid "Green Water 1"
-msgstr ""
+msgstr "그린 워터 1"
 
 #: addons/white_summer.wad/terrains/init.lua:222
 msgid "Green Water 2"
-msgstr ""
+msgstr "그린 워터 2"
 
 #: addons/white_summer.wad/terrains/init.lua:237
 msgid "Green Water 3"
-msgstr ""
+msgstr "그린 워터 3"
 
 #: addons/white_summer.wad/terrains/init.lua:252
 msgid "Muddy Water"
-msgstr ""
+msgstr "흙탕물"
 
 #: screenshots/white_summer.wad/descriptions:1
 msgid "White Summer (1)"
-msgstr ""
+msgstr "하얀 여름 (1)"
 
 #: screenshots/white_summer.wad/descriptions:2
 msgid "White Summer (2)"
-msgstr ""
+msgstr "하얀 여름 (2)"
 
 #: screenshots/white_summer.wad/descriptions:3
 msgid "White Summer (3)"
-msgstr ""
+msgstr "하얀 여름 (3)"

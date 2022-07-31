@@ -7,7 +7,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Trainingscamp Level 1"),
     icon = dirname .. "menu.png",
-    size = "medium",
+    size = "big",
 
     enhancement = {
         name = "europeans_trainingscamp_level_2",
@@ -18,7 +18,7 @@ wl.Descriptions():new_productionsite_type {
             gold = 1
         },
         enhancement_return_on_dismantle = {
-            planks = 1,
+            scrap_wood = 1,
             granite = 1,
             scrap_metal_mixed = 1
         },
@@ -34,11 +34,7 @@ wl.Descriptions():new_productionsite_type {
         }
     },
 
-    aihints = {
-        very_weak_ai_limit = 0,
-        weak_ai_limit = 1,
-      --normal_ai_limit = 2
-    },
+    aihints = {},
 
     working_positions = {
         europeans_trainer_basic = 1
@@ -69,9 +65,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting soldier"),
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
-                "sleep=duration:10s",
                 "consume=tabard:2 spear_wooden:2 ration:2 beer:2 europeans_recruit:2 quartz diamond",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_soldier:2"
             }
         },
@@ -80,9 +75,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting trainer"),
             actions = {
                 "return=skipped unless economy needs europeans_trainer_basic",
-                "sleep=duration:10s",
                 "consume=tabard spear_wooden ration beer europeans_recruit quartz,diamond",
-                "animate=working duration:60s",
+                "animate=working duration:180s",
                 "recruit=europeans_trainer_basic"
             }
         },

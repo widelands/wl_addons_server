@@ -34,9 +34,9 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "coal", amount = 6 },
-        { name = "ore", amount = 6 },
-        { name = "scrap_iron", amount = 6 },
-        { name = "scrap_metal_mixed", amount = 6 }
+        { name = "ore", amount = 4 },
+        { name = "scrap_iron", amount = 4 },
+        { name = "scrap_metal_mixed", amount = 4 }
     },
 
     programs = {
@@ -60,9 +60,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has scrap_iron:2",
                 "consume=scrap_iron:2 coal:2",
-                "sleep=duration:5s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:15s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron:2"
             }
@@ -72,14 +71,13 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recycling iron and gold"),
             actions = {
                 "return=skipped when economy needs coal",
-                "return=skipped unless site has coal:3",
-                "return=skipped unless site has scrap_metal_mixed:3",
-                "consume=scrap_metal_mixed:3 coal:3",
-                "sleep=duration:5s",
+                "return=skipped unless site has coal:2",
+                "return=skipped unless site has scrap_metal_mixed:2",
+                "consume=scrap_metal_mixed:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:15s",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=iron gold:2"
+                "produce=iron gold"
             }
         },
         smelt_iron = {
@@ -87,14 +85,14 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "smelting iron"),
             actions = {
                 "return=skipped unless economy needs iron",
-                "return=skipped unless site has coal:3",
-                "return=skipped unless site has ore:3",
-                "consume=ore:3 coal:3",
-                "sleep=duration:5s",
+                "return=skipped when economy needs ore and site has scrap_iron:2",
+                "return=skipped unless site has coal:2",
+                "return=skipped unless site has ore:2",
+                "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:30s",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=iron:3",
+                "produce=iron:2"
             }
         },
         smelt_gold = {
@@ -102,12 +100,12 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "smelting gold"),
             actions = {
                 "return=skipped unless economy needs gold",
+                "return=skipped when economy needs ore and site has scrap_metal_mixed:2",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
-                "sleep=duration:5s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:30s",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=gold"
             }
@@ -119,17 +117,17 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs iron",
                 "return=skipped when economy needs gold",
                 "return=skipped when economy needs coal",
-                "sleep=duration:120s",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:25s",
+                "animate=working duration:30s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron",
-                "sleep=duration:90s",
+                "sleep=duration:30s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:25s",
+                "animate=working duration:30s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=gold",
+                "sleep=duration:90s"
             }
         }
     },

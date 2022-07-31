@@ -260,3 +260,42 @@ function place_port(player, startx, starty, radius)
         end
     end
 end
+
+function enhance_idle_buildings(player, productivity_threshold)
+    local game = wl.Game()
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
+             building:enhance(true)
+             sleep(15000)
+          end
+       end
+    end
+end
+
+function dismantle_idle_buildings(player, productivity_threshold)
+    local game = wl.Game()
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
+             building:dismantle(true)
+             sleep(15000)
+          end
+       end
+    end
+end
+
+function dismantle_stopped_buildings(player)
+    local game = wl.Game()
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+          if tbuilding.type_name == "productionsite" and building.is_stopped == true then
+             building:dismantle(true)
+             sleep(15000)
+          end
+       end
+    end
+end
