@@ -35,10 +35,8 @@ public class Buildcats {
 	private static boolean isXGettextInput(String filename) {
 		String[] f = filename.toLowerCase().split("[/\\\\]");
 		filename = f[f.length - 1];
-		return filename.endsWith("lua") ||
-	           filename.equals("elemental") ||
-	           filename.equals("dirnames") ||
-	           filename.equals("descriptions");
+		return filename.endsWith("lua") || filename.equals("elemental") ||
+		    filename.equals("dirnames") || filename.equals("descriptions");
 	}
 
 	private static void recurse(String out, File dir) throws Exception {
@@ -47,19 +45,18 @@ public class Buildcats {
 				recurse(out, f);
 			} else if (f.getName().toLowerCase().endsWith("wmf")) {
 				ZipFile zip = new ZipFile(f);
-				for (Enumeration e = zip.entries(); e.hasMoreElements(); ) {
-					ZipEntry entry = (ZipEntry) e.nextElement();
+				for (Enumeration e = zip.entries(); e.hasMoreElements();) {
+					ZipEntry entry = (ZipEntry)e.nextElement();
 					if (entry.isDirectory() || !isXGettextInput(entry.getName())) continue;
 					InputStream input = zip.getInputStream(entry);
 					ProcessBuilder pb = new ProcessBuilder(new String[] {
-						"xgettext", "-k_", "--keyword=_", "--flag=_:1:pass-lua-format",
-						"--keyword=ngettext:1,2", "--flag=ngettext:1:pass-lua-format",
-						"--flag=ngettext:2:pass-lua-format", "--keyword=pgettext:1c,2",
-						"--flag=pgettext:2:pass-lua-format", "--keyword=npgettext:1c,2,3",
-						"--flag=npgettext:2:pass-lua-format", "--flag=npgettext:3:pass-lua-format",
-						"--language=Lua", "--from-code=UTF-8", "-F",
-						"-c TRANSLATORS:", "--join-existing", "--output=" + out, "-"
-					});
+					    "xgettext", "-k_", "--keyword=_", "--flag=_:1:pass-lua-format",
+					    "--keyword=ngettext:1,2", "--flag=ngettext:1:pass-lua-format",
+					    "--flag=ngettext:2:pass-lua-format", "--keyword=pgettext:1c,2",
+					    "--flag=pgettext:2:pass-lua-format", "--keyword=npgettext:1c,2,3",
+					    "--flag=npgettext:2:pass-lua-format", "--flag=npgettext:3:pass-lua-format",
+					    "--language=Lua", "--from-code=UTF-8", "-F",
+					    "-c TRANSLATORS:", "--join-existing", "--output=" + out, "-"});
 					Process p = pb.start();
 					OutputStream pipe = p.getOutputStream();
 					for (;;) {
