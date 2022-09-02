@@ -20,6 +20,11 @@
 package wl.utils;
 
 import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Enumeration;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 
 /**
  * Class to rebuild a POT file for an add-on.
@@ -27,14 +32,47 @@ import java.io.File;
 public class Buildcats {
 	private Buildcats() {}
 
+	private static boolean isXGettextInput(String filename) {
+		String[] f = filename.toLowerCase().split("[/\\\\]");
+		filename = f[f.length - 1];
+		return filename.endsWith("lua") ||
+	           filename.equals("elemental") ||
+	           filename.equals("dirnames") ||
+	           filename.equals("descriptions");
+	}
+
 	private static void recurse(String out, File dir) throws Exception {
 		for (File f : Utils.listSorted(dir)) {
 			if (f.isDirectory()) {
 				recurse(out, f);
-			} else if (f.getName().toLowerCase().endsWith("lua") ||
-			           f.getName().equalsIgnoreCase("elemental") ||
-			           f.getName().equalsIgnoreCase("dirnames") ||
-			           f.getName().equalsIgnoreCase("descriptions")) {
+			} else if (f.getName().toLowerCase().endsWith("wmf")) {
+				ZipFile zip = new ZipFile(f);
+				for (Enumeration e = zip.entries(); e.hasMoreElements(); ) {
+					ZipEntry entry = (ZipEntry) e.nextElement();
+					if (entry.isDirectory() || !isXGettextInput(entry.getName())) continue;
+					InputStream input = zip.getInputStream(entry);
+					ProcessBuilder pb = new ProcessBuilder(new String[] {
+						"xgettext", "-k_", "--keyword=_", "--flag=_:1:pass-lua-format",
+						"--keyword=ngettext:1,2", "--flag=ngettext:1:pass-lua-format",
+						"--flag=ngettext:2:pass-lua-format", "--keyword=pgettext:1c,2",
+						"--flag=pgettext:2:pass-lua-format", "--keyword=npgettext:1c,2,3",
+						"--flag=npgettext:2:pass-lua-format", "--flag=npgettext:3:pass-lua-format",
+						"--language=Lua", "--from-code=UTF-8", "-F",
+						"-c TRANSLATORS:", "--join-existing", "--output=" + out, "-"
+					});
+					Process p = pb.start();
+					OutputStream pipe = p.getOutputStream();
+					for (;;) {
+						int i = input.read();
+						if (i < 0) break;
+						pipe.write(i);
+					}
+					pipe.flush();
+					pipe.close();
+					input.close();
+					p.waitFor();
+				}
+			} else if (isXGettextInput(f.getName())) {
 				Runtime.getRuntime()
 				    .exec(new String[] {
 				        "xgettext", "-k_", "--keyword=_", "--flag=_:1:pass-lua-format",
