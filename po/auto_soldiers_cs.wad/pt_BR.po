@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Willian Francisco Urbano, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-05 03:04+0200\n"
+"POT-Creation-Date: 2022-09-03 03:04+0200\n"
 "PO-Revision-Date: 2021-02-18 19:31+0000\n"
+"Last-Translator: Willian Francisco Urbano, 2022\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/widelands/"
 "teams/35159/pt_BR/)\n"
 "Language: pt_BR\n"
@@ -21,7 +25,7 @@ msgstr ""
 
 #: addons/auto_soldiers_cs.wad/addon:2
 msgid "Automatic Soldier Setting for Military Construction Sites"
-msgstr ""
+msgstr "Configuração automática de soldados para canteiros de obras militares"
 
 #: addons/auto_soldiers_cs.wad/addon:3
 msgid ""
@@ -30,3 +34,8 @@ msgid ""
 "military buildings in sight prefer always heroes and set capacity to max. "
 "Once a player adjusted one of these settings, this script does nothing."
 msgstr ""
+"Se não houver nenhum edifício militar inimigo à vista, cada novo local de "
+"construção é definido para preferir novatos e reduzir a capacidade para 1. "
+"Se houver edifícios militares inimigos à vista, prefira sempre heróis e "
+"defina a capacidade para o máximo. Uma vez que um jogador ajustou uma dessas "
+"configurações, esse script não faz nada."
