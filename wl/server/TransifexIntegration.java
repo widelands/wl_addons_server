@@ -152,7 +152,7 @@ public class TransifexIntegration {
 			this.stringID = stringID;
 			this.occurrence = occurrence;
 
-			addon = occurrence.split("/")[1];
+			addon = issueID.split(":")[5];
 		}
 	}
 
