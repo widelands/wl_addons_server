@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-03 03:03+0200\n"
+"POT-Creation-Date: 2022-09-16 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2022\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -2078,7 +2078,7 @@ msgstr "Verbessertes Bodenverbessererhaus"
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:69
 msgctxt "europeans_building"
 msgid "terraforming pond"
-msgstr ""
+msgstr "Das Verbessern des Bodens am Teich"
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:79
@@ -2092,7 +2092,7 @@ msgstr "Das Verbessern des Bodens"
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:77
 msgctxt "europeans_building"
 msgid "terraforming coast"
-msgstr "Dys Gewinnen von Land"
+msgstr "Das Gewinnen von Land"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_basic/init.lua:8
@@ -2632,7 +2632,7 @@ msgstr "Das Schneidern eines Wappenrocks"
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:87
 msgctxt "europeans_building"
 msgid "forging a suit of armor"
-msgstr ""
+msgstr "Das Schmieden eines Harnischs"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:8
@@ -3226,13 +3226,13 @@ msgstr "Einfaches Ausbildungsgilde"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:432
 msgctxt "europeans_building"
 msgid "recruiting smith workaround"
-msgstr ""
+msgstr " Die Ausbildung eines Schmiedes"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:446
 msgctxt "europeans_building"
 msgid "recruiting smith workaround with no tools"
-msgstr ""
+msgstr " Die Ausbildung eines Schmiedes"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:8
@@ -4507,6 +4507,9 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Basisrüstung für Soldaten der Europäer. Er wird in Webereien hergestellt. In "
+"Kombination mit einem hölzernen Speer ist er die Ausrüstung für junge "
+"Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:726
@@ -4515,6 +4518,9 @@ msgid ""
 "Basic tabard for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden speer, it is the equipment to fit out young soldiers."
 msgstr ""
+"Basisbekleidung für Soldaten der Europäer. Er wird in Webereien hergestellt. "
+"In Kombination mit einem hölzernen Speer ist er die Ausrüstung für junge "
+"Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:735
@@ -4524,6 +4530,10 @@ msgid ""
 "smithy and used in a battle arena – together with food – to protect soldiers "
 "with additional health points."
 msgstr ""
+"Das Kettenhemd ist die mittlere Rüstung der Soldaten der Europäer. Es wird "
+"in einer normalen Rüstungsschmiede hergestellt und in der Kampfarena – "
+"zusammen mit Nahrung – benötigt, um die Soldaten durch zusätzliche "
+"Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gilded Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:744
@@ -4533,6 +4543,10 @@ msgid ""
 "smithy and used in the battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
+"Der Goldharnisch ist eine fortgeschrittene Rüstung eines Soldaten. Er wird "
+"in einer normalen Rüstungsschmiede hergestellt und in der Kampfarena – "
+"zusammen mit Nahrung – benötigt, um die Soldaten durch zusätzliche "
+"Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Golden Tabard
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:753
@@ -4542,6 +4556,10 @@ msgid ""
 "advanced smithy and used in a battle arena – together with food – to protect "
 "soldiers with additional health points."
 msgstr ""
+"Der goldene Wappenrock ist eine fortgeschrittene Rüstung eines Soldaten. Er "
+"wird in der verbesserten Rüstungsschmiede hergestellt und in der Kampfarena "
+"– zusammen mit Nahrung – benötigt, um die Soldaten durch zusätzliche "
+"Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:765
@@ -4551,6 +4569,9 @@ msgid ""
 "produced in the smithy. In combination with armor or tabard, it is the "
 "equipment to fit out young soldiers."
 msgstr ""
+"Dieser Holzspeer ist die Grundwaffe des europäischen Militärsystems. Er wird "
+"in der einfachen Rüstungsschmiede hergestellt. Zusammen mit einem Harnisch "
+"oder Wappenrock ist er die Ausrüstung für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:774
@@ -4593,6 +4614,9 @@ msgid ""
 "and used in a battle arena – together with food – to train soldiers in "
 "defense."
 msgstr ""
+"Die Maske ist die mittlere Verteidigungsausrüstung eines Soldaten. Sie wird "
+"in der einfachen Rüstungsschmiede hergestellt und in der Kampfarena – "
+"zusammen mit Nahrung – benötigt, um die Soldaten in Verteidigung auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:810
@@ -4601,6 +4625,9 @@ msgid ""
 "This steel shield is produced in a smithy and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
+"Dieser Stahlschild wird in der normalen Rüstungsschmiede hergestellt und in "
+"der Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten in "
+"Verteidigung auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:819
@@ -4610,6 +4637,10 @@ msgid ""
 "are produced in the advanced smithy and used in the advanced battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
+"Diese verbesserten Schilde werden von den besten Soldaten der Europäer "
+"benutzt. Sie werden in der verbesserten Rüstungsschmiede hergestellt und in "
+"der Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten in "
+"Verteidigung auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:834
@@ -5027,6 +5058,8 @@ msgid ""
 "Ponds with water becomes dry after some time. These dry holes vanish after a "
 "while."
 msgstr ""
+"Wasserteiche fallen nach einiger Zeit trocken. Diese trockenen Löcher "
+"verschwinden nach einer Weile."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1953
@@ -5035,6 +5068,9 @@ msgid ""
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
+"Wenn Lehmgräber Erde ausgraben, hinterlassen sie Löcher mit Waser im Boden. "
+"Diese fallen nach einiger Zeit trocken oder können von Bodenverbesserern "
+"benutzt werden um das Land fruchtbarer zu machen.  "
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1960
@@ -5377,6 +5413,8 @@ msgid ""
 "Reed is the traditional material for roofing, and it is woven into the "
 "extremely durable rope that they use for their ships’ sails."
 msgstr ""
+"Reet ist das traditionelle Material zur Dachabdeckung und es wird zu extrem "
+"haltbaren Seilen verwoben die für die Schiffsegel verwendet werden. "
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Fruit Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2541
@@ -5443,6 +5481,8 @@ msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
 "Brick and grout only used by advanced buildings."
 msgstr ""
+"Die Produkte des Kalkofens werden nur zu den Baustellen geliefert, die sie "
+"benötigen. Ziegel und Mörtel werden nur von verbesserten Gebäuden benötigt."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Stonemason's House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2619
@@ -5452,6 +5492,9 @@ msgid ""
 "solidifies and so reinforces masonry. Additionally carves marble columns out "
 "of marble."
 msgstr ""
+"Verarbeitet Lehm und Granit um Ziegel und Mörtel, eine Substanz die durch "
+"Aushärtung Mauerwerk verstärkt, herzustellen. Schneidet zusätzlich "
+"Marmorsäulen  aus Marmor."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2621
@@ -5460,6 +5503,8 @@ msgid ""
 "The stonemason’s house's output will only go to construction sites that need "
 "it. Marble column only used by advanced buildings."
 msgstr ""
+"Die Produkte des Steinmetz werden nur zu den Baustellen geliefert, die sie "
+"benötigen. Marmorsäulen werden nur von verbesserten Gebäuden benötigt."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2628
