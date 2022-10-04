@@ -56,7 +56,6 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "granite", amount = 6 },
-        { name = "clay", amount = 6 },
         { name = "water", amount = 6 },
         { name = "coal", amount = 4 }
     },
@@ -67,8 +66,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=mixing_grout",
-                "call=burning_bricks",
-                "call=burning_bricks_idle",
+                "call=mixing_grout_idle",
                 "return=skipped"
             }
         },
@@ -91,40 +89,14 @@ wl.Descriptions():new_productionsite_type {
                 "produce=grout:3"
             }
         },
-        burning_bricks = {
-            -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
-            descname = pgettext("europeans_building", "burning bricks"),
-            actions = {
-                "return=skipped when economy needs granite",
-                "return=skipped when economy needs coal and not economy needs brick",
-                "return=skipped unless site has coal:2",
-                "return=skipped unless site has clay:3",
-                "consume=granite clay:3",
-                "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:15s",
-                "consume=coal:2",
-                "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:45s",
-                "produce=brick:3"
-            }
-        },
-        burning_bricks_idle = {
+        mixing_grout_idle = {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs brick",
                 "return=skipped when economy needs grout",
                 "return=skipped when economy needs granite",
                 "return=skipped when economy needs coal and not workers need experience",
                 "return=skipped when economy needs water and not workers need experience",
-                "consume=granite clay",
-                "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:15s",
-                "consume=coal",
-                "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:45s",
-                "produce=brick",
-                "sleep=duration:180s",
                 "consume=coal granite",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:55s",
@@ -132,7 +104,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/mortar priority:60%",
                 "animate=working duration:5s",
                 "produce=grout",
-                "sleep=duration:180s"
+                "sleep=duration:240s"
             }
         }
     },

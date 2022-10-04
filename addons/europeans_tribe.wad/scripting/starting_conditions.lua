@@ -253,7 +253,7 @@ function place_port(player, startx, starty, radius)
         for i, portfield in pairs(map.port_spaces) do
              for j, field in pairs(fields) do
                  if (portfield.x == field.x) and (portfield.y == field.y) then
-                     print (i, portfield.x , portfield.y)
+                     print (i, portfield.x, portfield.y)
                      place_building(player, portfield.x, portfield.y, 0, portname)
                  end
              end
@@ -261,40 +261,20 @@ function place_port(player, startx, starty, radius)
     end
 end
 
-function enhance_idle_buildings(player, productivity_threshold)
+function change_idle_stopped_buildings(player, productivity_threshold)
     local game = wl.Game()
+    N = (get_build_id():find("1.0") ~= 1)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
-             building:enhance(true)
-             sleep(15000)
-          end
-       end
-    end
-end
-
-function dismantle_idle_buildings(player, productivity_threshold)
-    local game = wl.Game()
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
+          if tbuilding.type_name == "productionsite" and (building.productivity < productivity_threshold or building.is_stopped == true) then
+             print (tbuilding.name, building.productivity)
+             if N then
+                 building:enhance(true)
+             end
+             sleep(5000)
              building:dismantle(true)
-             sleep(15000)
-          end
-       end
-    end
-end
-
-function dismantle_stopped_buildings(player)
-    local game = wl.Game()
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and building.is_stopped == true then
-             building:dismantle(true)
-             sleep(15000)
+             sleep(10000)
           end
        end
     end

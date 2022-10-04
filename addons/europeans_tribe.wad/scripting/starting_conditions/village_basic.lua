@@ -111,38 +111,34 @@ local init = {
         inputs = {water = 4},
     })
     sleep(5000)
+    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
+        inputs = {water = 4},
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
+        inputs = {water = 4},
+    })
+    sleep(5000)
     place_building_in_region(player, "europeans_quarry_basic", sf:region(12), {
     })
-    sleep(5000)
-    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
-    })
-    sleep(5000)
-    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
-        inputs = {water = 4},
-    })
-    sleep(5000)
-    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
-    })
-    sleep(5000)
-    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
-        inputs = {water = 4},
-    })
     
-    -- run script for 8760 hours of gametime = 1 year
-    for i = 1, 35040 do
-        -- Delay of 15 min between actions, 4 loops = 1 hour of gametime
-        sleep(900000)
+    ---- run script for 8760 hours of gametime = 1 year
+    --for i = 1, 17520 do
+        ---- Delay of 30 min between actions, 4 loops = 1 hour of gametime
+        --sleep(1800000)
         
-        -- Activate the script after 6 hours of gametime
-        if i > 24 then
-            -- dismantle buildings automatically, that are stopped
-            dismantle_stopped_buildings(player)
-            -- enhance productionssites automatically, which productivity is lower than 25 %
-            enhance_idle_buildings(player, 25)
-            -- enhance productionssites automatically, which productivity is lower than 5 %
-            dismantle_idle_buildings(player, 5)
-        end
-    end
+        ---- Activate the script after 6 hours of gametime
+        --if i >= 12 then
+            ---- enhance or dismantle productionssites automatically, which productivity is lower than 20 %
+            --change_idle_stopped_buildings(player, 20)
+        --end
+    --end
 end
 }
 

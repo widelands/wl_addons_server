@@ -9,22 +9,6 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
     size = "big",
     
-    enhancement = {
-        name = "europeans_battlearena_level_3",
-        enhancement_cost = {
-            marble_column = 1,
-            quartz = 1,
-            diamond = 1,
-            gold = 1
-        },
-        enhancement_return_on_dismantle = {
-            marble = 1,
-            quartz = 1,
-            diamond = 1,
-            scrap_metal_mixed = 1
-        },
-    },
-    
     animations = {
         idle = {
             pictures = path.list_files(dirname .. "idle_??.png"),

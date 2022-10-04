@@ -7,6 +7,13 @@ push_textdomain("europeans_tribe.wad", true)
 -- For formatting time strings
 include "tribes/scripting/help/time_strings.lua"
 
+-- For lore texts
+-- TRANSLATORS: Format string for a latin quote and its translation
+quote_with_translation_format = pgettext("europeans_lore", "‘%1%’<br>(%2%)")
+function latin_lore(latin, translation)
+   return quote_with_translation_format:bformat(latin, translation)
+end
+
 wl.Descriptions():new_tribe {
     name = "europeans",
     military_capacity_script = path.dirname(__file__) .. "military_capacity.lua",
@@ -3318,15 +3325,37 @@ wl.Descriptions():new_tribe {
         }
     },
     
-    -- TRANSLATORS: Productivity label on an empire building if there is 1 worker missing
-    productionsite_worker_missing = pgettext("Europeans", "Worker missing"),
-    -- TRANSLATORS: Productivity label on an empire building if there is 1 worker coming
-    productionsite_worker_coming = pgettext("Europeans", "Worker is coming"),
-    -- TRANSLATORS: Productivity label on an empire building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-    productionsite_workers_missing = pgettext("Europeans", "Workers missing"),
-    -- TRANSLATORS: Productivity label on an empire building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-    productionsite_workers_coming = pgettext("Europeans", "Workers are coming"),
+   -- Productionsite status strings
 
+   -- TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
+   productionsite_worker_missing = pgettext("europeans", "Worker missing"),
+   -- TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
+   productionsite_worker_coming = pgettext("europeans", "Worker is coming"),
+   -- TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
+   productionsite_workers_missing = pgettext("europeans", "Workers missing"),
+   -- TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
+   productionsite_workers_coming = pgettext("europeans", "Workers are coming"),
+
+   -- Soldier strings to be used in Military Status strings
+
+   soldier_context = "europeans_soldier",
+   soldier_0_sg = "%1% soldier (+%2%)",
+   soldier_0_pl = "%1% soldiers (+%2%)",
+   soldier_1_sg = "%1% soldier",
+   soldier_1_pl = "%1% soldiers",
+   soldier_2_sg = "%1%(+%2%) soldier (+%3%)",
+   soldier_2_pl = "%1%(+%2%) soldiers (+%3%)",
+   soldier_3_sg = "%1%(+%2%) soldier",
+   soldier_3_pl = "%1%(+%2%) soldiers",
+   -- TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
+   UNUSED_soldier_0 = npgettext("europeans_soldier", "%1% soldier (+%2%)", "%1% soldiers (+%2%)", 0),
+   -- TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
+   UNUSED_soldier_1 = npgettext("europeans_soldier", "%1% soldier", "%1% soldiers", 0),
+   -- TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
+   UNUSED_soldier_2 = npgettext("europeans_soldier", "%1%(+%2%) soldier (+%3%)", "%1%(+%2%) soldiers (+%3%)", 0),
+   -- TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
+   UNUSED_soldier_3 = npgettext("europeans_soldier", "%1%(+%2%) soldier", "%1%(+%2%) soldiers", 0),
+   
     -- Special types
     builder = "europeans_builder",
     -- carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
@@ -3339,6 +3368,57 @@ wl.Descriptions():new_tribe {
     port = "europeans_port",
     carrier = "europeans_carrier_1",
     carrier2 = "europeans_carrier_3",
+    
+   fastplace = {
+      warehouse = "europeans_warehouse_basic",
+      port = "europeans_port",
+      training_small = "europeans_battlearena_basic",
+      training_large = "europeans_battlearena_level_3",
+      military_small_primary = "europeans_guardhouse",
+      military_small_secondary = "europeans_sentry",
+      military_medium_primary = "europeans_barrier",
+      military_medium_secondary = "europeans_outpost",
+      military_tower = "europeans_tower",
+      military_fortress = "europeans_castle_basic",
+      well = "europeans_well_basic",
+      woodcutter = "europeans_lumberjacks_house_basic",
+      forester = "europeans_foresters_house_basic",
+      quarry = "europeans_quarry_basic",
+      mine_stone = "europeans_quarry_basic",
+      building_materials_primary = "europeans_farm_medium_basic",
+      building_materials_secondary = "europeans_sawmill_basic",
+      building_materials_tertiary = "europeans_stonemasons_house_basic",
+      charcoal = "europeans_charcoal_kiln_basic",
+      weaving_mill = "europeans_weaving_mill_basic",
+      fisher = "europeans_animal_farm_level_1",
+      hunter = "europeans_animal_farm_basic",
+      fish_meat_replenisher = "europeans_animal_farm_basic",
+      farm_primary = "europeans_farm_basic",
+      farm_secondary = "europeans_farm_level_1",
+      farm_tertiary = "europeans_farm_level_2",
+      agriculture_producer = "europeans_farm_medium_advanced",
+      agriculture_consumer_primary = "europeans_brewery_winery",
+      agriculture_consumer_secondary = "europeans_beekeepers_house_basic",
+      mill = "europeans_mill_basic",
+      bakery = "europeans_tavern_basic",
+      brewery = "europeans_brewery_basic",
+      tavern = "europeans_tavern_basic",
+      mine_coal = "europeans_coalmine_basic",
+      mine_iron = "europeans_ironmine_basic",
+      mine_gold = "europeans_goldmine_basic",
+      smelting = "europeans_smelting_works_basic",
+      tool_smithy = "europeans_toolsmithy_basic",
+      weapon_smithy = "europeans_armorsmithy_basic",
+      armor_smithy = "europeans_armorsmithy_basic",
+      shipyard = "europeans_shipyard_basic",
+      ferry_yard = "europeans_ferry_yard_basic",
+      scout = "europeans_scouts_house_basic",
+      barracks = "europeans_trainingscamp_basic",
+      second_carrier = "europeans_animal_farm_level_2",
+      industry_supporter = "europeans_animal_farm_level_3",
+      industry_alternative = "europeans_weaving_mill_basic",
+      terraforming = "europeans_terraformers_house_basic",
+   },
 }
 
 pop_textdomain()
