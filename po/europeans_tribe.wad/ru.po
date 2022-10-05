@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 03:04+0200\n"
+"POT-Creation-Date: 2022-10-05 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Vasilii Anosov, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -5754,75 +5754,67 @@ msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3331
-#, fuzzy
 msgctxt "europeans"
 msgid "Worker missing"
-msgstr "Рабочий потерян"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3333
-#, fuzzy
 msgctxt "europeans"
 msgid "Worker is coming"
-msgstr "Рабочий прибывает"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3335
-#, fuzzy
 msgctxt "europeans"
 msgid "Workers missing"
-msgstr "Рабочие потеряны"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3337
-#, fuzzy
 msgctxt "europeans"
 msgid "Workers are coming"
-msgstr "Рабочие прибывают"
+msgstr ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3351
-#, fuzzy
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
-msgstr[0] "%1% солдат"
-msgstr[1] "%1% солдата"
-msgstr[2] "%1% солдат"
-msgstr[3] "%1% солдатов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3353
-#, fuzzy
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
-msgstr[0] "%1% солдат"
-msgstr[1] "%1% солдата"
-msgstr[2] "%1% солдат"
-msgstr[3] "%1% солдатов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3355
-#, fuzzy
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
-msgstr[0] "%1% солдат"
-msgstr[1] "%1% солдата"
-msgstr[2] "%1% солдат"
-msgstr[3] "%1% солдатов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3357
-#, fuzzy
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
-msgstr[0] "%1% солдат"
-msgstr[1] "%1% солдата"
-msgstr[2] "%1% солдат"
-msgstr[3] "%1% солдатов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ore/init.lua:8
