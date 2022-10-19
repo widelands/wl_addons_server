@@ -78,6 +78,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat",
                 "return=skipped when economy needs flour and economy needs beer",
                 "return=skipped unless site has water:4",
+                "return=skipped unless site has rye:4 or site has wheat:4 or site has barley:4",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:15s", -- Animation of feeding the cattle
@@ -99,6 +100,7 @@ wl.Descriptions():new_productionsite_type {
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
                 "return=skipped unless site has water:4",
+                "return=skipped unless site has wheat,rye,barley:4",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:15s",

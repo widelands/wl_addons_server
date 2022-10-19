@@ -579,7 +579,7 @@ No description
 Solstice
 Solstice_s_Return
 1657988804
-11
+12
 0
 0.0
 0
@@ -1302,9 +1302,9 @@ Nordfriese
 The current version of this add-on has a bug that prevents the game from starting under some circumstances: Many of its <font shadow=1 italic=1>init.lua</font> files reference the global variable <font shadow=1 italic=1>descriptions</font> which may be undefined. Please change all occurrences to <font shadow=1 italic=1>wl.Descriptions()</font> instead.    @MarkMcWire
 2.4.6
 1650721500
-3.1.5
+3.1.6
 145
-75824238
+75824476
 tribes
 0
 326
@@ -9427,7 +9427,7 @@ ru.mo
 sk.mo
 sv.mo
 7790
-1bde929746bffd3bdc1cbb50dc7c3889
+0289d6f717e73971bc745b3c8c9cd37b
 fbbd5b53033a58de73a4fe01bcb2f66f
 bad9355d7073787cbdc44e655de9ff98
 c9b395400e4109b69954a8160c7cfd7a
@@ -10244,7 +10244,7 @@ f0ed4fa84a0305205c2222b5a702c945
 57243846d79cd4e7a6add29252f3648d
 95aa7601b2476726c438e923480e2839
 2b856e6edf905b14d4471f5a02ee287b
-b32eef5753a504ff161ff796d9050ec7
+57d940718fd18e8ad4b16e2df5a46721
 96350c34cacc54bc91934abda6e12d56
 8c2b75f4691d8f75dbf4866112d8f0f0
 cba2b440eee72164631fceaf3e1e6162
@@ -11135,7 +11135,7 @@ f71a8b0693b63d22c8db95b3460097a9
 b7096a8c4f9fdb5d20df3ec092e2821a
 9c33d80ab0b38e24d1b0de83bd64b721
 b7096a8c4f9fdb5d20df3ec092e2821a
-92732601e3dc39780e62f5cff6eee183
+1738e7730b416ac74fa444155adf71ee
 68d670e2f1bd8354a4ce5a16b107490c
 c02297326f1679edc04302348547cd52
 098ed5297d3cca202cb147e52d6d4783
@@ -17217,7 +17217,7 @@ a486018f1b0bf7bbcb102eeb5346c879
 ad4be0f77020198723ec8555d2a02c50
 0118bd7e520bcd565a0bb17b3a39db7d
 ffed1299c6dd0198d59cdf9aecf0ab70
-verified
+unchecked
 fast_1v1_maps.wad
 Fast 1v1 Maps
 1v1 Maps for strategically interesting gameplay. Requires the add-on “the-x’s ‘Tournament’ Mode”.

@@ -81,6 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs ration or workers need experience",
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
+                "return=skipped unless site has meat or site has fish",
                 "consume=water:2 flour:2",
                 "animate=working duration:40s",
                 "consume=fish,meat",
