@@ -598,8 +598,6 @@ public class HandleCommand {
 				        "\",\"priority\":\"" + priority + "\",\"categories\":" + categories +
 				        "}}}");
 			}
-
-			TransifexIntegration.TX.push();
 		}
 
 		out.println("ENDOFSTREAM");
