@@ -3379,7 +3379,7 @@ wl.Descriptions():new_tribe {
       military_medium_primary = "europeans_barrier",
       military_medium_secondary = "europeans_outpost",
       military_tower = "europeans_tower",
-      military_fortress = "europeans_castle_basic",
+      military_fortress = "europeans_castle",
       well = "europeans_well_basic",
       woodcutter = "europeans_lumberjacks_house_basic",
       forester = "europeans_foresters_house_basic",

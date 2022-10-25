@@ -19,17 +19,23 @@ wl.Descriptions():new_productionsite_type {
         },
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 50, 53 },
-            fps = 10
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 50, 53 },
-        },
-    },
+   animation_directory = dirname,
+
+   spritesheets = {
+      build = {
+         frames = 3,
+         columns = 3,
+         rows = 1,
+         hotspot = { 55, 57 }
+      },
+      idle = {
+         fps = 10,
+         frames = 12,
+         columns = 6,
+         rows = 2,
+         hotspot = { 55, 57 }
+      },
+   },
 
     aihints = {},
 

@@ -31,25 +31,30 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 57, 76 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 57, 76 },
-        },
-        unoccupied = {
-            pictures = path.list_files(dirname .. "unoccupied_??.png"),
-            hotspot = { 57, 76 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 57, 76 },
-            fps = 10
-        },
-    },
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 57, 76 },
+      },
+      unoccupied = {
+         hotspot = { 57, 76 },
+      },
+   },
+   spritesheets = {
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 57, 64 }
+      },
+      working = {
+         fps = 10,
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 57, 75 }
+      }
+   },
 
     aihints = {
         prohibited_till = 3600,
@@ -90,7 +95,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_hook_pole",
                 "call=produce_kitchen_tools",
                 "call=produce_needles",
-                "call=produce_idle",
                 "sleep=duration:20s",
                 "return=skipped"
             }
@@ -238,92 +242,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=shovel:2"
             }
         },
-        produce_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs buckets",
-                "return=skipped when economy needs shovel",
-                "return=skipped when economy needs saw",
-                "return=skipped when economy needs hammer",
-                "return=skipped when economy needs pick",
-                "return=skipped when economy needs felling_ax",
-                "return=skipped when economy needs fire_tongs",
-                "return=skipped when economy needs scythe",
-                "return=skipped when economy needs basket",
-                "return=skipped when economy needs needles",
-                "return=skipped when economy needs hunting_spear",
-                "return=skipped when economy needs bread_paddle",
-                "return=skipped when economy needs hook_pole",
-                "return=skipped when economy needs kitchen_tools",
-                "return=skipped when economy needs iron",
-                "return=skipped when economy needs gold",
-                "sleep=duration:360s",
-                "consume=planks coal iron",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=basket",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=buckets",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=shovel",
-                "consume=planks coal iron",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=saw",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=hammer",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=fire_tongs",
-                "consume=planks coal iron",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=pick",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=felling_ax",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=scythe",
-                "consume=planks coal iron",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=needles",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=bread_paddle",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=hook_pole",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=kitchen_tools",
-                "consume=planks coal iron",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=basket:2",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=buckets:2"
-            }
-        }
     },
 }
 

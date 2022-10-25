@@ -31,21 +31,28 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 50, 71 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 50, 71 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 50, 71 },
-        },
-    },
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 50, 71 },
+      },
+   },
 
+   spritesheets = {
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 50, 51 }
+      },
+      working = {
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 50, 71 }
+      },
+   },
+   
     aihints = {
         prohibited_till = 4200,
         forced_after = 5400,

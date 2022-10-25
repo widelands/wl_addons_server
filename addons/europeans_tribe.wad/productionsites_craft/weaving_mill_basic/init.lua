@@ -31,20 +31,18 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 36, 74 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 36, 74 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 36, 74 },
-        },
-    },
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 36, 74 },
+      },
+      build = {
+         hotspot = { 36, 74 },
+      },
+      working = {
+         hotspot = { 36, 74 },
+      },
+   },
 
     aihints = {
         basic_amount = 1,

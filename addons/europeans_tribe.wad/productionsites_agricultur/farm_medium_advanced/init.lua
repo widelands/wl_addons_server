@@ -9,15 +9,15 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
     size = "medium",
 
-    animation_directory = dirname,
-    spritesheets = {
-        idle = {
-            frames = 1,
-            columns = 1,
-            rows = 1,
-            hotspot = { 59, 65 },
-        },
-    },
+   animation_directory = dirname,
+   spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 59, 65 },
+      },
+   },
 
     aihints = {},
 

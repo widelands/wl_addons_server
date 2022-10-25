@@ -23,16 +23,21 @@ wl.Descriptions():new_productionsite_type {
         }
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 47, 57 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 47, 60 },
-        },
-    },
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 50, 61 },
+      },
+   },
+
+   spritesheets = {
+      working = {
+         frames = 5,
+         columns = 5,
+         rows = 1,
+         hotspot = { 50, 61 },
+      },
+   },
 
     aihints = {},
 

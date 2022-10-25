@@ -6,7 +6,6 @@ wl.Descriptions():new_productionsite_type {
     name = "europeans_mill_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Mill"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     size = "medium",
     
@@ -32,35 +31,19 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    animations = {
-        unoccupied = {
-            basename = "unoccupied",
-            hotspot = { 52, 64 },
-        }
-    },
-    spritesheets = {
-        idle = {
-            basename = "idle",
-            frames = 20,
-            columns = 4,
-            rows = 5,
-            hotspot = { 50, 65 }
-        },
-        build = {
-            basename = "build",
-            frames = 4,
-            columns = 2,
-            rows = 2,
-            hotspot = { 50, 61 }
-        },
-        working = {
-            basename = "working",
-            frames = 20,
-            columns = 4,
-            rows = 5,
-            hotspot = { 53, 65 }
-        }
-    },
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 41, 58 },
+      },
+      unoccupied = {
+         hotspot = { 41, 58 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 41, 58 },
+      },
+   },
 
     aihints = {
         basic_amount = 1,

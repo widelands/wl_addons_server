@@ -31,16 +31,16 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 44, 58 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 44, 58 },
-        },
-    },
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 44, 58 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 44, 58 },
+      },
+   },
 
     aihints = {
         prohibited_till = 4200,

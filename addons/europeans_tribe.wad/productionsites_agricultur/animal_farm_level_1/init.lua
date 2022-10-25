@@ -21,16 +21,16 @@ wl.Descriptions():new_productionsite_type {
         },
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 87, 75 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 87, 75 },
-        }
-    },
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 86, 78 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 86, 78 },
+      }
+   },
 
     aihints = {
         basic_amount = 1,

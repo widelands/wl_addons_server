@@ -31,16 +31,16 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 57, 80 },
-        },
-        working = {
-            basename = "idle", -- TODO(GunChleoc): No animation yet.
-            hotspot = { 57, 80 },
-        },
-    },
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 57, 80 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 57, 80 },
+      },
+   },
 
     aihints = {
         basic_amount = 1,
@@ -127,15 +127,6 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:60s",
                 "produce=meat",
                 "sleep=duration:120s"
-            }
-        },
-        dummy_program = {
-            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
-            descname = _"dummy program",
-            actions = {
-                "sleep=duration:10s",
-                "animate=working duration:10s",
-                "produce=quartz"
             }
         }
     },

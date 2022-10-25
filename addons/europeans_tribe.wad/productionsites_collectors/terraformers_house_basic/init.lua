@@ -31,16 +31,21 @@ wl.Descriptions():new_productionsite_type {
         granite = 1
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 41, 44 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 41, 44 },
-        }
-    },
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 44, 49 },
+      },
+   },
+
+   spritesheets = {
+      build = {
+         frames = 3,
+         columns = 3,
+         rows = 1,
+         hotspot = { 44, 49 },
+      },
+   },
 
     aihints = {
         needs_water = true,

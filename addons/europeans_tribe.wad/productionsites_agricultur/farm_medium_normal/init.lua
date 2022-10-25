@@ -28,6 +28,7 @@ wl.Descriptions():new_productionsite_type {
       idle = {
          hotspot = { 54, 74 },
       },
+
    },
 
    spritesheets = {

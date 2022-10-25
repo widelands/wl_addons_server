@@ -22,12 +22,13 @@ wl.Descriptions():new_productionsite_type {
             marble = 1
         },
     },
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 36, 44 },
-        },
-    },
+    
+   animation_directory = dirname,
+   animations = {
+      idle = {
+         hotspot = { 40, 49 },
+      },
+   },
 
     aihints = {},
 

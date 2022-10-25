@@ -34,10 +34,10 @@ wl.Descriptions():new_productionsite_type {
    animation_directory = dirname,
    animations = {
       unoccupied = {
-         hotspot = { 45, 49 },
+         hotspot = { 44, 43 },
       },
    },
-   
+
    spritesheets = {
       build = {
          frames = 4,

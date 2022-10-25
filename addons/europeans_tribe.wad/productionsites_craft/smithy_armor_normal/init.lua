@@ -26,21 +26,34 @@ wl.Descriptions():new_productionsite_type {
         },
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 44, 61 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 44, 61 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 44, 61 },
-            fps = 2
-        },
-    },
+   animation_directory = dirname,
+   spritesheets = {
+      idle = {
+         frames = 1,
+         rows = 1,
+         columns = 1,
+         hotspot = { 48, 65 },
+      },
+      build = {
+         frames = 4,
+         columns = 4,
+         rows = 1,
+         hotspot = { 48, 65 },
+      },
+      unoccupied = {
+         frames = 1,
+         rows = 1,
+         columns = 1,
+         hotspot = { 48, 65 },
+      },
+      working = {
+         fps = 2,
+         frames = 20,
+         columns = 10,
+         rows = 2,
+         hotspot = { 48, 65 },
+      },
+   },
 
     aihints = {},
 
@@ -74,7 +87,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_tabard_golden",
                 "call=produce_shield_advanced",
                 "call=produce_sword_broad",
-                "call=produce_idle",
                 "sleep=duration:15s",
                 "return=skipped"
             }
@@ -186,46 +198,6 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:30s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=sword_broad"
-            }
-        },
-        produce_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs buckets",
-                "return=skipped when economy needs shovel",
-                "return=skipped when economy needs saw",
-                "return=skipped when economy needs hammer",
-                "return=skipped when economy needs pick",
-                "return=skipped when economy needs felling_ax",
-                "return=skipped when economy needs fire_tongs",
-                "return=skipped when economy needs scythe",
-                "return=skipped when economy needs basket",
-                "return=skipped when economy needs needles",
-                "return=skipped when economy needs bread_paddle",
-                "return=skipped when economy needs hook_pole",
-                "return=skipped when economy needs kitchen_tools",
-                "return=skipped when economy needs spear_wooden",
-                "return=skipped when economy needs helmet_mask",
-                "return=skipped when economy needs spear_advanced",
-                "return=skipped when economy needs armor_chain",
-                "return=skipped when economy needs shield_steel",
-                "return=skipped when economy needs ax_broad",
-                "return=skipped when economy needs armor_gilded",
-                "return=skipped when economy needs tabard_golden",
-                "return=skipped when economy needs shield_advanced",
-                "return=skipped when economy needs sword_broad",
-                "return=skipped when economy needs iron",
-                "return=skipped when economy needs gold",
-                "sleep=duration:180s",
-                "consume=armor cloth coal:2 iron:2 gold:2",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:45s",
-                "produce=armor_gilded",
-                "sleep=duration:120s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:45s",
-                "produce=tabard_golden"
             }
         }
     },

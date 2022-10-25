@@ -9,16 +9,22 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
     size = "medium",
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 58, 61 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 58, 61 },
-        },
-    },
+   animation_directory = dirname,
+   spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 63, 64 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 63, 64 },
+      },
+   },
 
     aihints = {
     },

@@ -20,10 +20,12 @@ local init = {
       player:allow_workers("all")
     end
     
+    player:forbid_buildings{"europeans_headquarters"}
+    
     local h = player:place_building("europeans_castle", sf, false, true)
     h:set_soldiers{[{1,1,1,1}] = 6}
 
-    place_building_in_region(player, "europeans_warehouse_basic", sf:region(2), {
+    place_building_in_region(player, "europeans_warehouse_basic", sf:region(3), {
         wares = {
             log = 127,
             reed = 127,
@@ -127,18 +129,6 @@ local init = {
     sleep(5000)
     place_building_in_region(player, "europeans_quarry_basic", sf:region(12), {
     })
-    
-    ---- run script for 8760 hours of gametime = 1 year
-    --for i = 1, 17520 do
-        ---- Delay of 30 min between actions, 4 loops = 1 hour of gametime
-        --sleep(1800000)
-        
-        ---- Activate the script after 6 hours of gametime
-        --if i >= 12 then
-            ---- enhance or dismantle productionssites automatically, which productivity is lower than 20 %
-            --change_idle_stopped_buildings(player, 20)
-        --end
-    --end
 end
 }
 

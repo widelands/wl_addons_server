@@ -6,7 +6,6 @@ wl.Descriptions():new_productionsite_type {
     name = "europeans_sawmill_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Sawmill"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     size = "medium",
 
@@ -32,29 +31,32 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    spritesheets = {
-        idle = {
-            basename = "idle",
-            frames = 20,
-            columns = 4,
-            rows = 5,
-            hotspot = { 50, 65 }
-        },
-        build = {
-            basename = "build",
-            frames = 4,
-            columns = 2,
-            rows = 2,
-            hotspot = { 50, 61 }
-        },
-        working = {
-            basename = "working",
-            frames = 20,
-            columns = 4,
-            rows = 5,
-            hotspot = { 53, 65 }
-        }
-    },
+   animation_directory = dirname,
+   animations = {
+      unoccupied = {
+         hotspot = { 52, 64 },
+      }
+   },
+   spritesheets = {
+      idle = {
+         frames = 20,
+         columns = 4,
+         rows = 5,
+         hotspot = { 50, 65 }
+      },
+      build = {
+         frames = 4,
+         columns = 2,
+         rows = 2,
+         hotspot = { 50, 61 }
+      },
+      working = {
+         frames = 20,
+         columns = 4,
+         rows = 5,
+         hotspot = { 53, 65 }
+      }
+   },
 
     aihints = {
         supports_seafaring = true,
