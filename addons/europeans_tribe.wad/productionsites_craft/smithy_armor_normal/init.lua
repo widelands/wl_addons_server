@@ -7,27 +7,9 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Armorsmithy"),
     icon = dirname .. "menu.png",
-    size = "medium",
-
-    enhancement = {
-        name = "europeans_armorsmithy_advanced",
-        enhancement_cost = {
-            planks = 2,
-            brick = 2,
-            marble = 1,
-            marble_column = 1,
-            gold = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2,
-            marble = 2,
-            scrap_metal_mixed = 1
-        },
-    },
-
-   animation_directory = dirname,
-   spritesheets = {
+    
+    animation_directory = dirname,
+    spritesheets = {
       idle = {
          frames = 1,
          rows = 1,
@@ -53,7 +35,25 @@ wl.Descriptions():new_productionsite_type {
          rows = 2,
          hotspot = { 48, 65 },
       },
-   },
+    },
+    
+    size = "medium",
+    enhancement = {
+        name = "europeans_armorsmithy_advanced",
+        enhancement_cost = {
+            planks = 2,
+            brick = 2,
+            marble = 1,
+            marble_column = 1,
+            gold = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 2,
+            granite = 2,
+            marble = 2,
+            scrap_metal_mixed = 1
+        },
+    },
 
     aihints = {},
 
@@ -95,7 +95,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
             descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
-                "return=skipped unless economy needs spear_wooden",
+                "return=skipped unless economy needs spear_wooden or workers need experience",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",

@@ -7,8 +7,15 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Beekeeper’s House"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 40, 49 },
+      },
+    },
+    
     size = "small",
-
     enhancement = {
         name = "europeans_beekeepers_house_advanced",
         enhancement_cost = {
@@ -23,13 +30,6 @@ wl.Descriptions():new_productionsite_type {
         },
     },
     
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 40, 49 },
-      },
-   },
-
     aihints = {},
 
     working_positions = {

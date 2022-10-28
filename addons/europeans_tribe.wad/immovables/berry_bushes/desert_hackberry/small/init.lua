@@ -16,6 +16,7 @@ wl.Descriptions():new_immovable_type {
          "grow=berry_bush_desert_hackberry_medium",
       },
    },
+   
    animation_directory = dirname,
    spritesheets = {
       idle = {

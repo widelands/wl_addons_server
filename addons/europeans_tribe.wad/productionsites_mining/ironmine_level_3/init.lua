@@ -7,8 +7,31 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Iron Mine Level 3"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 51, 54 },
+      },
+      empty = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 51, 54 },
+      },
+      working = {
+         fps = 10,
+         frames = 10,
+         columns = 10,
+         rows = 1,
+         hotspot = { 51, 54 },
+      },
+    },
+    
     size = "mine",
-
     enhancement = {
         name = "europeans_ironmine_level_4",
         enhancement_cost = {
@@ -20,22 +43,6 @@ wl.Descriptions():new_productionsite_type {
         enhancement_return_on_dismantle = {
             scrap_wood = 1
         }
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 49, 49 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 49, 49 },
-            fps = 10
-        },
-        empty = {
-            pictures = path.list_files(dirname .. "empty_??.png"),
-            hotspot = { 49, 49 },
-        },
     },
 
     aihints = {},

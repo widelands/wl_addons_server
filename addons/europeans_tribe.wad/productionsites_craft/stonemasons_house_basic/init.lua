@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Lime Kiln"),
     icon = dirname .. "menu.png",
-    size = "medium",
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 45, 53 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 45, 53 },
+      },
+    },
+    
+    size = "medium",
     enhancement = {
         name = "europeans_stonemasons_house_normal",
         enhancement_cost = {
@@ -20,7 +31,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2
         },
     },
-
     buildcost = {
         log = 3,
         reed = 3,
@@ -30,17 +40,6 @@ wl.Descriptions():new_productionsite_type {
         scrap_wood = 3,
         granite = 3
     },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 45, 53 },
-      },
-      working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
-         hotspot = { 45, 53 },
-      },
-   },
 
     aihints = {
         prohibited_till = 4200,

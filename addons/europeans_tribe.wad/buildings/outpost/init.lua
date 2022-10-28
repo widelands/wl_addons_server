@@ -7,9 +7,18 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Outpost"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 59, 77 }
+      }
+    },
+    
     size = "medium",
-    vision_range = 12,
-
     enhancement = {
         name = "europeans_advanced_barrier",
         enhancement_cost = {
@@ -27,18 +36,12 @@ wl.Descriptions():new_militarysite_type {
         },
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 57, 77 }
-        }
-    },
-
     aihints = {
         fighting = true
     },
 
     max_soldiers = 4,
+    vision_range = 12,
     heal_per_second = 160,
     conquers = 8,
     prefer_heroes = true,

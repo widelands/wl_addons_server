@@ -7,9 +7,22 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Shipyard"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 62, 48 },
+      },
+      unoccupied = {
+         hotspot = { 62, 48 },
+      },
+      working = {
+         hotspot = { 61, 47 },
+      },
+    },
+    
     size = "medium",
     map_check = {"seafaring"},
-    
     enhancement = {
         name = "europeans_shipyard_normal",
         enhancement_cost = {
@@ -23,7 +36,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_metal_mixed = 1
         },
     },
-
     buildcost = {
         log = 3,
         blackwood = 2,
@@ -36,22 +48,6 @@ wl.Descriptions():new_productionsite_type {
         planks = 1,
         reed = 1,
         granite = 1
-    },
-
-    animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 62, 48 },
-        },
-        build = {
-            hotspot = { 62, 48 },
-        },
-        unoccupied = {
-            hotspot = { 62, 48 },
-        },
-        working = {
-            hotspot = { 62, 48 },
-        },
     },
 
     aihints = {

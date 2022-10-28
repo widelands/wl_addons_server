@@ -7,22 +7,9 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Toolsmithy"),
     icon = dirname .. "menu.png",
-    size = "medium",
     
-    enhancement = {
-        name = "europeans_armorsmithy_advanced",
-        enhancement_cost = {
-            marble_column = 1,
-            gold = 1
-        },
-        enhancement_return_on_dismantle = {
-            marble = 1,
-            scrap_metal_mixed = 1
-        },
-    },
-
-   animation_directory = dirname,
-   spritesheets = {
+    animation_directory = dirname,
+    spritesheets = {
       idle = {
          frames = 1,
          columns = 1,
@@ -36,7 +23,20 @@ wl.Descriptions():new_productionsite_type {
          rows = 1,
          hotspot = { 63, 64 },
       },
-   },
+    },
+    
+    size = "medium",
+    enhancement = {
+        name = "europeans_armorsmithy_advanced",
+        enhancement_cost = {
+            marble_column = 1,
+            gold = 1
+        },
+        enhancement_return_on_dismantle = {
+            marble = 1,
+            scrap_metal_mixed = 1
+        },
+    },
 
     aihints = {},
 

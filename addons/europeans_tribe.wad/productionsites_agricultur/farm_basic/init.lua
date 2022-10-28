@@ -7,38 +7,14 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Farm"),
     icon = dirname .. "menu.png",
-    size = "big",
-
-    enhancement = {
-        name = "europeans_farm_level_1",
-        enhancement_cost = {
-            blackwood = 3,
-            cloth = 3,
-            grout = 3
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 3
-        },
-    },
-
-    buildcost = {
-        log = 4,
-        reed = 4,
-        granite = 3
-    },
-    return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 2
-    },
-
-   animation_directory = dirname,
-   animations = {
+    
+    animation_directory = dirname,
+    animations = {
       unoccupied = {
          hotspot = { 69, 76 },
       },
-   },
-
-   spritesheets = {
+    },
+    spritesheets = {
       idle = {
          frames = 20,
          rows = 5,
@@ -57,7 +33,29 @@ wl.Descriptions():new_productionsite_type {
          columns = 4,
          hotspot = { 69, 76 }
       },
-   },
+    },
+    
+    size = "big",
+    enhancement = {
+        name = "europeans_farm_level_1",
+        enhancement_cost = {
+            blackwood = 3,
+            cloth = 3,
+            grout = 3
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 3
+        },
+    },
+    buildcost = {
+        log = 4,
+        reed = 4,
+        granite = 3
+    },
+    return_on_dismantle = {
+        scrap_wood = 4,
+        granite = 2
+    },
 
     aihints = {
         space_consumer = true,

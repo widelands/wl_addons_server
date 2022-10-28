@@ -13,6 +13,7 @@ wl.Descriptions():new_immovable_type {
          "remove=",
       }
    },
+   
    animations = {
       idle = {
          directory = dirname,

@@ -7,38 +7,14 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Tavern"),
     icon = dirname .. "menu.png",
-    size = "medium",
-
-    enhancement = {
-        name = "europeans_tavern_level_1",
-        enhancement_cost = {
-            blackwood = 2,
-            cloth = 1,
-            grout = 2
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2
-        },
-    },
-
-    buildcost = {
-        log = 3,
-        reed = 3,
-        granite = 3
-    },
-    return_on_dismantle = {
-        scrap_wood = 3,
-        granite = 2
-    },
-
-   animation_directory = dirname,
-   animations = {
+    
+    animation_directory = dirname,
+    animations = {
       idle = {
          hotspot = { 57, 88 },
       },
-   },
-
-   spritesheets = {
+    },
+    spritesheets = {
       build = {
          frames = 4,
          rows = 2,
@@ -51,7 +27,29 @@ wl.Descriptions():new_productionsite_type {
          columns = 4,
          hotspot = { 51, 70 }
       },
-   },
+    },
+    
+    size = "medium",
+    enhancement = {
+        name = "europeans_tavern_level_1",
+        enhancement_cost = {
+            blackwood = 2,
+            cloth = 1,
+            grout = 2
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 2
+        },
+    },
+    buildcost = {
+        log = 3,
+        reed = 3,
+        granite = 3
+    },
+    return_on_dismantle = {
+        scrap_wood = 3,
+        granite = 2
+    },
 
     aihints = {
         basic_amount = 1,

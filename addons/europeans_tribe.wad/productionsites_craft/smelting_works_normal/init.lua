@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Smelting Works"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 62, 76 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 62, 76 },
+      }
+    },
+    
     size = "medium",
-
     enhancement = {
         name = "europeans_smelting_works_advanced",
         enhancement_cost = {
@@ -22,17 +33,6 @@ wl.Descriptions():new_productionsite_type {
             marble = 2
         }
     },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 62, 76 },
-      },
-      working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
-         hotspot = { 62, 76 },
-      }
-   },
 
     aihints = {},
 

@@ -16,6 +16,7 @@ wl.Descriptions():new_immovable_type {
          "grow=berry_bush_currant_black_ripe",
       },
    },
+   
    animation_directory = dirname,
    spritesheets = {
       idle = {

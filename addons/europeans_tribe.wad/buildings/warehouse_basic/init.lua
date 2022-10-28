@@ -7,9 +7,24 @@ wl.Descriptions():new_warehouse_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Warehouse"),
     icon = dirname .. "menu.png",
-    size = "medium",
-    vision_range = 16,
     
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         rows = 1,
+         columns = 1,
+         hotspot = { 60, 78 }
+      },
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 60, 78 }
+      },
+    },
+    
+    size = "medium",
     enhancement = {
         name = "europeans_warehouse_normal",
         enhancement_cost = {
@@ -24,7 +39,6 @@ wl.Descriptions():new_warehouse_type {
             diamond = 1
         },
     },
-
     buildcost = {
         blackwood = 4,
         reed = 4,
@@ -38,16 +52,6 @@ wl.Descriptions():new_warehouse_type {
         diamond = 1
     },
 
-    animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 60, 78 },
-        },
-        build = {
-            hotspot = { 60, 78 },
-        }
-    },
-
     aihints = {
         very_weak_ai_limit = 3,
         weak_ai_limit = 6,
@@ -55,7 +59,8 @@ wl.Descriptions():new_warehouse_type {
         prohibited_till = 7200,
         forced_after = 7800
     },
-
+    
+    vision_range = 16,
     heal_per_second = 160,
 }
 

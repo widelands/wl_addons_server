@@ -7,22 +7,22 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Gold Mine Level 5"),
     icon = dirname .. "menu.png",
-    size = "mine",
 
+    animation_directory = dirname,
     animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 50, 56 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 50, 56 },
-        },
-        empty = {
-            pictures = path.list_files(dirname .. "empty_??.png"),
-            hotspot = { 50, 56 },
-        },
+      idle = {
+         hotspot = { 53, 61 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 53, 61 },
+      },
+      empty = {
+         hotspot = { 53, 61 },
+      },
     },
+   
+    size = "mine",
 
     aihints = {},
 

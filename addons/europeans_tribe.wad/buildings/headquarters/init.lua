@@ -7,17 +7,19 @@ wl.Descriptions():new_warehouse_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Headquarters"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 100, 115 },
+      },
+    },
+    
     size = "big",
     destructible = true,
-    vision_range = 24,
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 95, 109 },
-        },
-    },
-
     buildcost = {
         blackwood = 6,
         planks = 6,
@@ -37,7 +39,6 @@ wl.Descriptions():new_warehouse_type {
         diamond = 2
     },
 
-
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
@@ -45,6 +46,7 @@ wl.Descriptions():new_warehouse_type {
         prohibited_till = 7200
     },
 
+    vision_range = 24,
     heal_per_second = 320,
     conquers = 16,
 }

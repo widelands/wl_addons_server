@@ -7,33 +7,17 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Toolsmithy"),
     icon = dirname .. "menu.png",
-    size = "medium",
     
-    enhancement = {
-        name = "europeans_toolsmithy_advanced",
-        enhancement_cost = {
-            planks = 2,
-            brick = 2,
-            marble = 2
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2,
-            marble = 2
-        },
-    },
-
-   animation_directory = dirname,
-   animations = {
+    animation_directory = dirname,
+    animations = {
       idle = {
          hotspot = { 57, 76 },
       },
       unoccupied = {
          hotspot = { 57, 76 },
       },
-   },
-
-   spritesheets = {
+    },
+    spritesheets = {
       build = {
          frames = 5,
          rows = 3,
@@ -47,8 +31,23 @@ wl.Descriptions():new_productionsite_type {
          columns = 4,
          hotspot = { 57, 76 }
       },
-   },
-   
+    },
+    
+    size = "medium",
+    enhancement = {
+        name = "europeans_toolsmithy_advanced",
+        enhancement_cost = {
+            planks = 2,
+            brick = 2,
+            marble = 2
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 2,
+            granite = 2,
+            marble = 2
+        },
+    },
+  
     aihints = {},
 
     working_positions = {
@@ -97,7 +96,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
             descname = pgettext("europeans_building", "making baskets"),
             actions = {
-                "return=skipped unless economy needs basket",
+                "return=skipped unless economy needs basket or workers need experience",
                 "consume=planks:2 coal:2 iron:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
@@ -119,7 +118,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
             descname = pgettext("europeans_building", "making buckets"),
             actions = {
-                "return=skipped unless economy needs buckets",
+                "return=skipped unless economy needs buckets or workers need experience",
                 "consume=planks:2 coal:2 iron:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",

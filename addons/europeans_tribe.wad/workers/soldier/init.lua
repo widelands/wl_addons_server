@@ -85,7 +85,7 @@ wl.Descriptions():new_soldier_type {
     vision_range = 2,
 
     animations = animations,
-    
+        
     -- Battle attributes - initial values and per level increase
     health = {
         max_level = 3,

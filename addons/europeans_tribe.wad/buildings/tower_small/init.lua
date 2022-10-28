@@ -7,9 +7,15 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Small Tower"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 46, 71 },
+      }
+    },
+    
     size = "small",
-    vision_range = 12,
-
     enhancement = {
         name = "europeans_sentry",
         enhancement_cost = {
@@ -25,13 +31,6 @@ wl.Descriptions():new_militarysite_type {
         },
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 42, 65 },
-        }
-    },
-
     aihints = {
         fighting = true,
         expansion = true,
@@ -39,6 +38,7 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 2,
+    vision_range = 12,
     heal_per_second = 80,
     conquers = 6,
     prefer_heroes = false,

@@ -7,38 +7,14 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Charcoal Kiln"),
     icon = dirname .. "menu.png",
-    size = "medium",
-
-    enhancement = {
-        name = "europeans_charcoal_kiln_normal",
-        enhancement_cost = {
-            blackwood = 2,
-            cloth = 2,
-            grout = 2
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2
-        },
-    },
-
-    buildcost = {
-        log = 3,
-        reed = 3,
-        granite = 3
-    },
-    return_on_dismantle = {
-        scrap_wood = 3,
-        granite = 2
-    },
-
-   animation_directory = dirname,
-   animations = {
+    
+    animation_directory = dirname,
+    animations = {
       idle = {
          hotspot = { 50, 71 },
       },
-   },
-
-   spritesheets = {
+    },
+    spritesheets = {
       build = {
          frames = 4,
          rows = 2,
@@ -51,7 +27,29 @@ wl.Descriptions():new_productionsite_type {
          columns = 4,
          hotspot = { 50, 71 }
       },
-   },
+    },
+    
+    size = "medium",
+    enhancement = {
+        name = "europeans_charcoal_kiln_normal",
+        enhancement_cost = {
+            blackwood = 2,
+            cloth = 2,
+            grout = 2
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 2
+        },
+    },
+    buildcost = {
+        log = 3,
+        reed = 3,
+        granite = 3
+    },
+    return_on_dismantle = {
+        scrap_wood = 3,
+        granite = 2
+    },
    
     aihints = {
         prohibited_till = 4200,

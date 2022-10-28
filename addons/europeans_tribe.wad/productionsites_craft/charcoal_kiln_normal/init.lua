@@ -7,8 +7,23 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Charcoal Kiln"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 50, 61 },
+      },
+    },
+    spritesheets = {
+      working = {
+         frames = 5,
+         columns = 5,
+         rows = 1,
+         hotspot = { 50, 61 },
+      },
+    },
+    
     size = "medium",
-
     enhancement = {
         name = "europeans_charcoal_kiln_advanced",
         enhancement_cost = {
@@ -22,22 +37,6 @@ wl.Descriptions():new_productionsite_type {
             marble = 2
         }
     },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 50, 61 },
-      },
-   },
-
-   spritesheets = {
-      working = {
-         frames = 5,
-         columns = 5,
-         rows = 1,
-         hotspot = { 50, 61 },
-      },
-   },
 
     aihints = {},
 

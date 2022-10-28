@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Trainingscamp Level 1"),
     icon = dirname .. "menu.png",
-    size = "big",
 
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 62, 73 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 62, 73 },
+      }
+    },
+
+    size = "big",
     enhancement = {
         name = "europeans_trainingscamp_level_2",
         enhancement_cost = {
@@ -23,17 +34,7 @@ wl.Descriptions():new_productionsite_type {
             scrap_metal_mixed = 1
         },
     },
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 58, 72 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 58, 72 },
-        }
-    },
-
+    
     aihints = {},
 
     working_positions = {
@@ -65,9 +66,14 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting soldier"),
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
-                "consume=tabard:2 spear_wooden:2 ration:2 beer:2 europeans_recruit:2 quartz diamond",
-                "animate=working duration:180s",
-                "recruit=europeans_soldier:2"
+                "consume=europeans_recruit",
+                "consume=tabard spear_wooden ration beer diamond",
+                "animate=working duration:90s",
+                "recruit=europeans_soldier",
+                "consume=europeans_recruit",
+                "consume=tabard spear_wooden ration beer quartz",
+                "animate=working duration:90s",
+                "recruit=europeans_soldier"
             }
         },
         recruit_trainer= {
@@ -75,7 +81,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting trainer"),
             actions = {
                 "return=skipped unless economy needs europeans_trainer_basic",
-                "consume=tabard spear_wooden ration beer europeans_recruit quartz,diamond",
+                "consume=europeans_recruit",
+                "consume=tabard spear_wooden ration beer quartz,diamond",
                 "animate=working duration:180s",
                 "recruit=europeans_trainer_basic"
             }

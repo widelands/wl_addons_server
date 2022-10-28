@@ -7,21 +7,25 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Barrier"),
     icon = dirname .. "menu.png",
-    size = "medium",
-    vision_range = 12,
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 49, 77 }
-        }
+    
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 52, 79 }
+      }
     },
+    
+    size = "medium",
 
     aihints = {
         fighting = true
     },
 
     max_soldiers = 6,
+    vision_range = 12,
     heal_per_second = 180,
     conquers = 10,
     prefer_heroes = true,

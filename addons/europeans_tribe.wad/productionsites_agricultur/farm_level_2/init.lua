@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Farm Level 2"),
     icon = dirname .. "menu.png",
-    size = "big",
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 86, 78 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 86, 78 },
+      },
+    },
+    
+    size = "big",
     enhancement = {
         name = "europeans_farm_level_3",
         enhancement_cost = {
@@ -22,17 +33,6 @@ wl.Descriptions():new_productionsite_type {
             marble = 1
         }
     },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 86, 78 },
-      },
-      working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
-         hotspot = { 86, 78 },
-      },
-   },
 
     aihints = {},
 

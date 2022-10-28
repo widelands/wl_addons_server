@@ -7,16 +7,19 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Castle"),
     icon = dirname .. "menu.png",
-    size = "big",
-    vision_range = 24,
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 94, 106 }
-        }
+    
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 98, 114 }
+      }
     },
-
+    
+    size = "big",
+    
     aihints = {
         expansion = true,
         fighting = true,
@@ -25,6 +28,7 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 18,
+    vision_range = 24,
     heal_per_second = 300,
     conquers = 24,
     prefer_heroes = true,

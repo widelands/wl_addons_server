@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Brewery"),
     icon = dirname .. "menu.png",
-    size = "medium",
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 60, 59 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 60, 59 },
+      },
+    },
+    
+    size = "medium",
     enhancement = {
         name = "europeans_brewery_advanced",
         enhancement_cost = {
@@ -22,17 +33,6 @@ wl.Descriptions():new_productionsite_type {
             marble = 2
         }
     },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 60, 59 },
-      },
-      working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
-         hotspot = { 60, 59 },
-      },
-   },
 
     aihints = {},
 

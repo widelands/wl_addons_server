@@ -7,10 +7,9 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Armorsmithy"),
     icon = dirname .. "menu.png",
-    size = "medium",
 
-   animation_directory = dirname,
-   spritesheets = {
+    animation_directory = dirname,
+    spritesheets = {
       idle = {
          frames = 1,
          columns = 1,
@@ -36,9 +35,10 @@ wl.Descriptions():new_productionsite_type {
          rows = 2,
          hotspot = { 50, 66 }
       },
-   },
+    },
 
-
+    size = "medium",
+    
     aihints = {},
 
     working_positions = {

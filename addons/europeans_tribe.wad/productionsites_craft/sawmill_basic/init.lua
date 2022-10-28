@@ -7,37 +7,14 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Sawmill"),
     icon = dirname .. "menu.png",
-    size = "medium",
-
-    enhancement = {
-        name = "europeans_sawmill_normal",
-        enhancement_cost = {
-            blackwood = 2,
-            cloth = 4,
-            grout = 2
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2
-        },
-    },
-
-    buildcost = {
-        log = 3,
-        reed = 3,
-        granite = 3
-    },
-    return_on_dismantle = {
-        scrap_wood = 3,
-        granite = 2
-    },
-
-   animation_directory = dirname,
-   animations = {
+    
+    animation_directory = dirname,
+    animations = {
       unoccupied = {
          hotspot = { 52, 64 },
       }
-   },
-   spritesheets = {
+    },
+    spritesheets = {
       idle = {
          frames = 20,
          columns = 4,
@@ -56,7 +33,29 @@ wl.Descriptions():new_productionsite_type {
          rows = 5,
          hotspot = { 53, 65 }
       }
-   },
+    },
+   
+    size = "medium",
+    enhancement = {
+        name = "europeans_sawmill_normal",
+        enhancement_cost = {
+            blackwood = 2,
+            cloth = 4,
+            grout = 2
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 2
+        },
+    },
+    buildcost = {
+        log = 3,
+        reed = 3,
+        granite = 3
+    },
+    return_on_dismantle = {
+        scrap_wood = 3,
+        granite = 2
+    },
 
     aihints = {
         supports_seafaring = true,

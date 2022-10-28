@@ -19,6 +19,7 @@ wl.Descriptions():new_immovable_type {
          "remove=",
       }
    },
+   
    animation_directory = dirname,
    spritesheets = {
       idle = {

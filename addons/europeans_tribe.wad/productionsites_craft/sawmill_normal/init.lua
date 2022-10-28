@@ -7,8 +7,24 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Sawmill"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 60, 68 },
+      },
+    },
+    spritesheets = {
+      working = {
+         fps = 25,
+         frames = 19,
+         columns = 10,
+         rows = 2,
+         hotspot = { 60, 68 },
+      },
+    },
+    
     size = "medium",
-
     enhancement = {
         name = "europeans_sawmill_advanced",
         enhancement_cost = {
@@ -22,23 +38,6 @@ wl.Descriptions():new_productionsite_type {
             marble = 2
         }
     },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 60, 68 },
-      },
-   },
-
-   spritesheets = {
-      working = {
-         fps = 25,
-         frames = 19,
-         columns = 10,
-         rows = 2,
-         hotspot = { 60, 68 },
-      },
-   },
 
     aihints = {},
 

@@ -7,29 +7,14 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Well Level 1"),
     icon = dirname .. "menu.png",
-    size = "medium",
-    
-    enhancement = {
-        name = "europeans_well_level_2",
-        enhancement_cost = {
-            blackwood = 1,
-            cloth = 1,
-            buckets = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 1,
-            buckets = 1
-        },
-    },
 
-   animation_directory = dirname,
-   animations = {
+    animation_directory = dirname,
+    animations = {
       idle = {
          hotspot = { 19, 33 },
       },
-   },
-
-   spritesheets = {
+    },
+    spritesheets = {
       build = {
          frames = 4,
          rows = 2,
@@ -42,7 +27,21 @@ wl.Descriptions():new_productionsite_type {
          columns = 2,
          hotspot = { 19, 33 }
       },
-   },
+    },
+
+    size = "medium",
+    enhancement = {
+        name = "europeans_well_level_2",
+        enhancement_cost = {
+            blackwood = 1,
+            cloth = 1,
+            buckets = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 1,
+            buckets = 1
+        },
+    },
 
     aihints = {
     },

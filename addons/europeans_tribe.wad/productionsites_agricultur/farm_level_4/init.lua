@@ -7,24 +7,9 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Farm Level 4"),
     icon = dirname .. "menu.png",
-    size = "big",
-    
-    enhancement = {
-        name = "europeans_farm_level_5",
-        enhancement_cost = {
-            planks = 1,
-            brick = 1,
-            marble = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 1,
-            granite = 1,
-            marble = 1
-        }
-    },
 
-   animation_directory = dirname,
-   spritesheets = {
+    animation_directory = dirname,
+    spritesheets = {
       idle = {
          frames = 1,
          columns = 1,
@@ -38,7 +23,22 @@ wl.Descriptions():new_productionsite_type {
          rows = 1,
          hotspot = { 89, 82 },
       },
-   },
+    },
+
+    size = "big",
+    enhancement = {
+        name = "europeans_farm_level_5",
+        enhancement_cost = {
+            planks = 1,
+            brick = 1,
+            marble = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 1,
+            granite = 1,
+            marble = 1
+        }
+    },
 
     aihints = {},
 

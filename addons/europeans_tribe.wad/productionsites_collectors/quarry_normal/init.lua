@@ -7,8 +7,15 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Quarry"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 40, 49 },
+      },
+    },
+    
     size = "small",
-
     enhancement = {
         name = "europeans_quarry_advanced",
         enhancement_cost = {
@@ -22,13 +29,6 @@ wl.Descriptions():new_productionsite_type {
             marble = 1
         },
     },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 40, 49 },
-      },
-   },
 
     aihints = {},
 

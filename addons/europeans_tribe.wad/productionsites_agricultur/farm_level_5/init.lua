@@ -7,10 +7,9 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Farm Level 5"),
     icon = dirname .. "menu.png",
-    size = "big",
 
-   animation_directory = dirname,
-   spritesheets = {
+    animation_directory = dirname,
+    spritesheets = {
       idle = {
          frames = 1,
          columns = 1,
@@ -24,8 +23,10 @@ wl.Descriptions():new_productionsite_type {
          rows = 1,
          hotspot = { 89, 82 },
       },
-   },
+    },
 
+    size = "big",
+    
     aihints = {},
 
     working_positions = {
