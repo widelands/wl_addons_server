@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-28 03:04+0200\n"
+"POT-Creation-Date: 2022-10-29 03:04+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -3221,17 +3221,15 @@ msgstr "Centre de reclutament bàsic"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:359
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting miner with no tools (workaround)"
-msgstr "reclutar una alternativa a un ferrer"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:442
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting smith with no tools (workaround)"
-msgstr "reclutar una alternativa a un ferrer"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:8
@@ -6484,7 +6482,3 @@ msgstr "Teixidor bàsic"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Teixidor normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting smith workaround with no tools"
-#~ msgstr "reclutar una alternativa a un ferrer sense eines"
