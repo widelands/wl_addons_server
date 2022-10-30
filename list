@@ -1,5 +1,5 @@
 1
-40
+41
 1v1_high_level_map_pool.wad
 1v1 High Level Map Pool
 For high level 1v1 Gameplay add the-x addon
@@ -205,7 +205,7 @@ Nilpanda
 10.0
 0
 1.0.0
-1
+2
 51866
 maps
 0
@@ -260,7 +260,7 @@ a6c6747f6464f93c0184b3aca8543246
 ade5a571a4e86a0844c01d7ee0ea2235
 208663ee7e1024832cd13cbcccd9d3bc
 a17995721191d49bc6f6b1c11fe04415
-3e29efa6f020a829eb5d40f4c9d5113c
+06c00f609b32af4c9badc9253da77dbf
 c96fd7ef9c7213b73599919d1495a0e0
 fd697914d7f9493b3859e16a00cabd75
 54393e8a1031aa92f37929cc7fc1b1fb
@@ -392,7 +392,7 @@ This map-addon ads the map ''World of elements''
 TRueDesk
 TRueDesk
 1666686938
-6
+7
 1
 8.0
 0
@@ -939,7 +939,7 @@ No description
 Mr_Reibekuchen
 Mr_Reibekuchen
 1647247922
-18
+19
 0
 0.0
 0
@@ -1467,7 +1467,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings and workers from Barba
 MarkMcWire
 MarkMcWire
 1621788282
-274
+275
 2
 6.5
 2
@@ -1480,7 +1480,7 @@ The current version of this add-on has a bug that prevents the game from startin
 2.4.6
 1650721500
 3.1.8
-147
+148
 78103825
 tribes
 0
@@ -16554,7 +16554,7 @@ ed82413f7e9311222600079702764d1a
 632eb7f34dfb910fa64f8edea4f43e76
 3a48e0442f256246432831a34427533e
 e60be85b6402c1c67d3c00963a3f787d
-024786096bfe51229721cfbeffc5eeeb
+9e5429f95dff6da21d4118e2c4eb6759
 e8af86ec8182f1fdfa9c5e2245ac172c
 a486018f1b0bf7bbcb102eeb5346c879
 21b814b4c4e92aa0c172b08a89493398
@@ -16563,13 +16563,83 @@ ad4be0f77020198723ec8555d2a02c50
 0118bd7e520bcd565a0bb17b3a39db7d
 ffed1299c6dd0198d59cdf9aecf0ab70
 verified
+explorer-wins.wad
+explorer wins
+The player who has explored most of the world wins the game
+aDiscoverer
+aDiscoverer
+1667043185
+1
+1
+10.0
+0
+0.1.0
+1
+7930
+win_condition
+0
+0
+3
+addon
+debug_string.lua
+init.lua
+22
+bg.mo
+ca.mo
+cs.mo
+da.mo
+de.mo
+en_GB.mo
+es.mo
+fi.mo
+fr.mo
+gd.mo
+hu.mo
+it.mo
+ja.mo
+ko.mo
+nds.mo
+nl.mo
+pl.mo
+pt.mo
+pt_BR.mo
+ru.mo
+sk.mo
+sv.mo
+25
+75b3a2815cd6a2a1cd26fa47d2d56048
+3de47ff020367475ca0bcc244c322b0f
+95293c51cd9a5583e7a8a0c42fdd432b
+c277a6aae31af693d49029ae2f580da1
+759edbf15a94a0a6870b55b735e40ef3
+b45bc476104cef6d93e5db03ef752cd0
+edc5f4262cb072c1a46df631588abacf
+8f8da1617e6661dacb48250a9aa858c9
+e5d2938c786106eab5fb37ecf5786c2e
+bdfd7e1cf4fd5f146c22984616c83eb1
+3062509c6590a43a32b5c57332fd0bec
+244edd5c4033f71e46661a6c283b79f6
+71a75e695fcd6611a86497ed9c0c12b8
+245d6823c39444f9cec4b2f40710c8d4
+e64530f5d4170b18cf80459c702b59da
+08cb5a3758e4648fcdc8996c5df44bca
+8cb9f1b8ebe21c26df08924496b98ddb
+96ebed3e226d751749476d6b89b94890
+e15f2c4ba41ccb8c002361622548b50d
+0aefce38cf2a8c7d5b5eef700e26eaf5
+a25cc01f50545df0f8788e6dce1ddecf
+dae2a26e11a0979645a7e6ff7d5f1df7
+d1d1e1badd735f50540c2d28413598c5
+fc2061d5ae704fd0e2c2a3a6546be427
+86e3e3ff03a96f3012161a25c76bdb9d
+verified
 fast_1v1_maps.wad
 Fast 1v1 Maps
 1v1 Maps for strategically interesting gameplay. Requires the add-on “the-x’s ‘Tournament’ Mode”.
 the-x
 the-x
 1621860628
-21
+22
 0
 0.0
 0
@@ -20641,7 +20711,7 @@ A tournament mode for Widelands, or: The mode that guarantees games of less than
 the-x & Nordfriese
 the-x
 1621506858
-19
+20
 1
 5.0
 0

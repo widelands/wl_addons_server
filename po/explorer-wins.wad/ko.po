@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-30 02:04+0100\n"
+"PO-Revision-Date: 2022-10-29 17:44+0000\n"
+"Language-Team: Korean (https://www.transifex.com/widelands/teams/35159/ko/)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: addons/explorer-wins.wad/addon:6
+msgid "The player who has explored most of the world wins the game"
+msgstr ""
+
+#: addons/explorer-wins.wad/addon:9
+msgid "explorer wins"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:19
+msgid "Explorer Wins"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:21
+#, lua-format
+msgid "The player who has explored %1d%% of the world wins the game"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:25
+msgid "% explored"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:34
+msgid "You can explore by expanding, with a scout, with ships, ..."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:54
+msgid ""
+"There are %1$d fields on the map, but only %2$d are terrestrial, which is "
+"%3$d%%. You need to explore %4$d%%."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:59
+msgid "Probably not winnable"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:59
+msgid "This map is probably not winnable with %1$s."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:61
+msgid "Maybe not winnable"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:61
+msgid "This map is maybe not winnable with %1$s."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:133
+#, lua-format
+msgid "Player %1d has explored %1d%%"
+msgstr ""
