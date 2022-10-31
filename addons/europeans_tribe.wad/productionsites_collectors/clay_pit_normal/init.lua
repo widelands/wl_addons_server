@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Clay Pit"),
     icon = dirname .. "menu.png",
-    size = "small",
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 40, 50 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 40, 50 },
+      },
+    },
+    
+    size = "small",
     enhancement = {
         name = "europeans_clay_pit_advanced",
         enhancement_cost = {
@@ -20,17 +31,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 1,
             granite = 1,
             marble = 1
-        },
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 34, 42 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 34, 42 },
         },
     },
 

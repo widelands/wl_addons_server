@@ -7,8 +7,21 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Weaving Mill"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 36, 74 },
+      },
+      build = {
+         hotspot = { 36, 74 },
+      },
+      working = {
+         hotspot = { 36, 74 },
+      },
+    },
+    
     size = "medium",
-
     enhancement = {
         name = "europeans_weaving_mill_normal",
         enhancement_cost = {
@@ -20,7 +33,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2
         },
     },
-
     buildcost = {
         log = 3,
         reed = 3,
@@ -29,21 +41,6 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 3,
         granite = 2
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 36, 74 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 36, 74 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 36, 74 },
-        },
     },
 
     aihints = {

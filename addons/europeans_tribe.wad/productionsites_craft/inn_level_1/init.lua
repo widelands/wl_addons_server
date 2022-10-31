@@ -7,8 +7,25 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Inn Level 1"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 46, 55 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 46, 55 },
+      },
+    },
+    
     size = "medium",
-
     enhancement = {
         name = "europeans_inn_level_2",
         enhancement_cost = {
@@ -20,17 +37,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2,
             granite =2,
             marble = 2
-        },
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 52, 58 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 52, 58 },
         },
     },
 

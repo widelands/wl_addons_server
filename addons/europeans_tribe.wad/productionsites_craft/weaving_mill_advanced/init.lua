@@ -7,27 +7,33 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Weaving Mill"),
     icon = dirname .. "menu.png",
-    size = "medium",
 
+    animation_directory = dirname,
     animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 65, 62 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 65, 62 },
-        },
-        unoccupied = {
-            pictures = path.list_files(dirname .. "unoccupied_??.png"),
-            hotspot = { 65, 62 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 65, 62 },
-            fps = 5
-        },
+      idle = {
+         hotspot = { 65, 62 },
+      },
+      unoccupied = {
+         hotspot = { 65, 62 },
+      },
     },
+    spritesheets = {
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 65, 62 }
+      },
+      working = {
+         fps = 5,
+         frames = 11,
+         rows = 4,
+         columns = 3,
+         hotspot = { 65, 62 }
+      },
+    },
+    
+    size = "medium",
 
     aihints = {},
 

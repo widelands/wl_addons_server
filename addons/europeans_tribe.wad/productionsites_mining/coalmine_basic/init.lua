@@ -7,8 +7,32 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Coal Mine"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 21, 36 },
+      },
+      empty = {
+         hotspot = { 21, 36 },
+      },
+    },
+    spritesheets = {
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 21, 36 }
+      },
+      working = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 21, 36 }
+      },
+    },
+    
     size = "mine",
-
     enhancement = {
         name = "europeans_coalmine_level_1",
         enhancement_cost = {
@@ -21,7 +45,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2
         }
     },
-
     buildcost = {
         log = 2,
         blackwood = 2,
@@ -30,25 +53,6 @@ wl.Descriptions():new_productionsite_type {
     },
     return_on_dismantle = {
         scrap_wood = 2
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 21, 36 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 21, 36 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 21, 36 },
-        },
-        empty = {
-            pictures = path.list_files(dirname .. "empty_??.png"),
-            hotspot = { 21, 36 },
-        },
     },
 
     aihints = {
@@ -71,6 +75,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs coal or economy needs granite or economy needs diamond or workers need experience",
+                "call=mine_stone_basic",
                 "return=skipped unless site has ration:3",
                 "return=skipped unless site has beer:3",
                 "consume=ration beer",
@@ -101,6 +106,17 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "animate=working duration:10s",
+                "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "produce=granite",
+            }
+        },
+        mine_stone_basic = {
+            descname = pgettext("europeans_building", "mining granite"),
+            actions = {
+                "return=skipped unless economy needs granite",
+                "return=skipped when site has ration:3",
+                "return=skipped when site has beer:3",
+                "animate=working duration:30s",
                 "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:10%",
                 "produce=granite",
             }

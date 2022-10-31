@@ -11,7 +11,16 @@ function switch_player(player_number1, player_number2)
     player:switchplayer(player_number2)
 end
 
-function observer_mode(player_number)
+function observer_mode_team(team_number)
+    local game = wl.Game()
+    for k, tplayer in ipairs(game.players) do
+        if tplayer.team == team_number then
+            tplayer.see_all = true
+        end
+    end
+end
+
+function observer_mode_player(player_number)
     local game = wl.Game()
     local player = game.players[player_number]
     player.see_all = true

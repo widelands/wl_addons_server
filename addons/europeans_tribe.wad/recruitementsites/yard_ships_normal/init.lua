@@ -7,9 +7,24 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Shipyard"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 56, 72 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 56, 72 },
+      },
+      unoccupied = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 56, 72 },
+      }
+    },
+    
     size = "medium",
     map_check = {"seafaring"},
-    
     enhancement = {
         name = "europeans_shipyard_advanced",
         enhancement_cost = {
@@ -24,25 +39,6 @@ wl.Descriptions():new_productionsite_type {
             granite = 2,
             marble = 2,
             scrap_metal_mixed = 1
-        }
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 53, 66 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 53, 66 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 53, 66 },
-        },
-        unoccupied = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 53, 66 },
         }
     },
 

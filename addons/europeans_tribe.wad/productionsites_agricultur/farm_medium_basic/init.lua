@@ -7,8 +7,15 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Reed Yard"),
     icon = dirname .. "menu.png",
-    size = "medium",
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 46, 44 },
+      },
+    },
+    
+    size = "medium",
     enhancement = {
         name = "europeans_farm_medium_normal",
         enhancement_cost = {
@@ -20,7 +27,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2
         },
     },
-
     buildcost = {
         log = 3,
         reed = 3,
@@ -30,13 +36,6 @@ wl.Descriptions():new_productionsite_type {
         scrap_wood = 3,
         reed = 3,
         granite = 2
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 46, 44 },
-        },
     },
 
     aihints = {

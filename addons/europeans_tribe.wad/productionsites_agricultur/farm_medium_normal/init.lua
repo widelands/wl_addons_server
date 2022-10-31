@@ -7,8 +7,25 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Fruit Farm"),
     icon = dirname .. "menu.png",
-    size = "medium",
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 54, 74 },
+      },
+
+    },
+    spritesheets = {
+      working = {
+         fps = 20,
+         frames = 5,
+         columns = 5,
+         rows = 1,
+         hotspot = { 54, 74 },
+      },
+    },
+    
+    size = "medium",
     enhancement = {
         name = "europeans_farm_medium_advanced",
         enhancement_cost = {
@@ -22,23 +39,6 @@ wl.Descriptions():new_productionsite_type {
             marble = 2
         },
     },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 54, 74 },
-      },
-   },
-
-   spritesheets = {
-      working = {
-         fps = 20,
-         frames = 5,
-         columns = 5,
-         rows = 1,
-         hotspot = { 54, 74 },
-      },
-   },
 
     aihints = {},
 

@@ -7,18 +7,25 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Animal Farm Level 5"),
     icon = dirname .. "menu.png",
-    size = "big",
 
     animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 85, 78 },
-        },
-        working = {
-            basename = "idle", -- TODO(GunChleoc): No animation yet.
-            hotspot = { 85, 78 },
-        },
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 89, 82 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 89, 82 },
+      },
     },
+    
+    size = "big",
     
     aihints = {},
 

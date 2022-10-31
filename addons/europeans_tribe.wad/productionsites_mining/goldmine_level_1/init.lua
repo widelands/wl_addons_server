@@ -7,8 +7,32 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Gold Mine Level 1"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 21, 37 },
+      },
+      empty = {
+         hotspot = { 21, 37 },
+      },
+    },
+    spritesheets = {
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 21, 37 }
+      },
+      working = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 21, 37 }
+      },
+    },
+    
     size = "mine",
-
     enhancement = {
         name = "europeans_goldmine_level_2",
         enhancement_cost = {
@@ -20,25 +44,6 @@ wl.Descriptions():new_productionsite_type {
         enhancement_return_on_dismantle = {
             scrap_wood = 2
         }
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 21, 37 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 21, 37 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 21, 37 },
-        },
-        empty = {
-            pictures = path.list_files(dirname .. "empty_??.png"),
-            hotspot = { 21, 37 },
-        },
     },
 
     aihints = {},

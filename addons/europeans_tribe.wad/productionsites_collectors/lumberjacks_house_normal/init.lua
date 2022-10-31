@@ -7,8 +7,15 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Lumberjack's House"),
     icon = dirname .. "menu.png",
-    size = "small",
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 42, 48 },
+      },
+    },
+    
+    size = "small",
     enhancement = {
         name = "europeans_lumberjacks_house_advanced",
         enhancement_cost = {
@@ -20,13 +27,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 1,
             granite = 1,
             marble = 1
-        },
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 37, 44 },
         },
     },
 

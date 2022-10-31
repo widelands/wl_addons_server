@@ -7,14 +7,18 @@ wl.Descriptions():new_trainingsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Battle Arena Level 4"),
     icon = dirname .. "menu.png",
-    size = "big",
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 81, 106 }
-        }
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 91, 114 }
+      }
     },
+
+    size = "big",
 
     aihints = {
         trainingsites_max_percent = 20,

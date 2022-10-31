@@ -6,7 +6,6 @@ wl.Descriptions():new_immovable_type {
     name = "europeans_resi_water",
     -- TRANSLATORS: This is a resource name used in lists of resources
     descname = pgettext("resource_indicator", "Water"),
-    animation_directory = dirname,
     icon = dirname .. "water.png",
     programs = {
         main = {
@@ -14,6 +13,8 @@ wl.Descriptions():new_immovable_type {
             "remove="
         }
     },
+    
+    animation_directory = dirname,
     spritesheets = {
         idle = {
             basename = "water",

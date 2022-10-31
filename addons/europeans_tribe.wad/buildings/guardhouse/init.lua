@@ -7,9 +7,15 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Guardhouse"),
     icon = dirname .. "menu.png",
-    size = "small",
-    vision_range = 10,
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 40, 47 },
+      }
+    },
+    
+    size = "small",
     enhancement = {
         name = "europeans_tower_small",
         enhancement_cost = {
@@ -24,7 +30,6 @@ wl.Descriptions():new_militarysite_type {
             quartz = 1
         },
     },
-
     buildcost = {
         blackwood = 2,
         reed = 2,
@@ -34,20 +39,14 @@ wl.Descriptions():new_militarysite_type {
         scrap_wood = 2,
         granite = 1
     },
-
+    
     aihints = {
         expansion = true,
         mountain_conqueror = true
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 33, 41 },
-        }
-    },
-
     max_soldiers = 1,
+    vision_range = 10,
     heal_per_second = 60,
     conquers = 6,
     prefer_heroes = false,

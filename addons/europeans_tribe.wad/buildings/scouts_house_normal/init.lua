@@ -7,8 +7,23 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Scout’s House"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 44, 49 },
+      },
+    },
+    spritesheets = {
+      build = {
+         frames = 3,
+         columns = 3,
+         rows = 1,
+         hotspot = { 44, 49 },
+      },
+    },
+    
     size = "small",
-
     enhancement = {
         name = "europeans_scouts_house_advanced",
         enhancement_cost = {
@@ -20,17 +35,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 1,
             granite = 1,
             marble = 1
-        }
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 41, 44 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 41, 44 },
         }
     },
 

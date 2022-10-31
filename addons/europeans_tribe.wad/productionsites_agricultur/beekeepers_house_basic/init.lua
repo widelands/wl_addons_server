@@ -7,38 +7,14 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Beekeeper’s Hut"),
     icon = dirname .. "menu.png",
-    size = "small",
-
-    enhancement = {
-        name = "europeans_beekeepers_house_normal",
-        enhancement_cost = {
-            blackwood = 1,
-            cloth = 1,
-            grout = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 1
-        },
-    },
-
-    buildcost = {
-        log = 2,
-        reed = 2,
-        granite = 2
-    },
-    return_on_dismantle = {
-        scrap_wood = 2,
-        granite = 1
-    },
-
-   animation_directory = dirname,
-   animations = {
+    
+    animation_directory = dirname,
+    animations = {
       unoccupied = {
-         hotspot = { 45, 49 },
+         hotspot = { 44, 43 },
       },
-   },
-   
-   spritesheets = {
+    },
+    spritesheets = {
       build = {
          frames = 4,
          rows = 2,
@@ -51,7 +27,29 @@ wl.Descriptions():new_productionsite_type {
          columns = 4,
          hotspot = { 44, 43 }
       },
-   },
+    },
+    
+    size = "small",
+    enhancement = {
+        name = "europeans_beekeepers_house_normal",
+        enhancement_cost = {
+            blackwood = 1,
+            cloth = 1,
+            grout = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 1
+        },
+    },
+    buildcost = {
+        log = 2,
+        reed = 2,
+        granite = 2
+    },
+    return_on_dismantle = {
+        scrap_wood = 2,
+        granite = 1
+    },
 
     aihints = {
         requires_supporters = true,

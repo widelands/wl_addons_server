@@ -7,19 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Market"),
     icon = dirname .. "menu.png",
-    size = "big",
     
+    animation_directory = dirname,
     animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 64, 106 }
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 64, 106 }
-        },
+      idle = {
+         hotspot = { 84, 117 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 84, 117 },
+      },
     },
     
+    size = "big",
     --buildcost = {
         --blackwood = 6,
         --planks = 6,

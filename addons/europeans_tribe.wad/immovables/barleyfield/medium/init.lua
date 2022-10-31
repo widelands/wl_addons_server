@@ -14,6 +14,7 @@ wl.Descriptions():new_immovable_type {
          "transform=barleyfield_ripe",
       }
    },
+   
    animations = {
       idle = {
          directory = dirname,

@@ -7,8 +7,35 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Farm"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      unoccupied = {
+         hotspot = { 69, 76 },
+      },
+    },
+    spritesheets = {
+      idle = {
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 69, 76 }
+      },
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 69, 76 }
+      },
+      working = {
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 69, 76 }
+      },
+    },
+    
     size = "big",
-
     enhancement = {
         name = "europeans_farm_level_1",
         enhancement_cost = {
@@ -20,7 +47,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 3
         },
     },
-
     buildcost = {
         log = 4,
         reed = 4,
@@ -29,25 +55,6 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 2
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 69, 76 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 69, 76 },
-        },
-        unoccupied = {
-            pictures = path.list_files(dirname .. "unoccupied_??.png"),
-            hotspot = { 69, 76 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 69, 76 },
-        },
     },
 
     aihints = {

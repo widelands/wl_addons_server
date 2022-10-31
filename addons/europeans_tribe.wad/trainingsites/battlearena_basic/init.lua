@@ -7,8 +7,37 @@ wl.Descriptions():new_trainingsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Battle Arena"),
     icon = dirname .. "menu.png",
-    size = "big",
     
+    animation_directory = dirname,
+    animations = {
+      unoccupied = {
+         hotspot = { 110, 72 }
+      },
+    },
+    spritesheets = {
+      idle = {
+         fps = 10,
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 110, 72 }
+      },
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 110, 72 }
+      },
+      working = {
+         fps = 1,
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 110, 72 }
+      },
+    },
+    
+    size = "big",
     enhancement = {
         name = "europeans_battlearena_level_1",
         enhancement_cost = {
@@ -27,7 +56,6 @@ wl.Descriptions():new_trainingsite_type {
             scrap_metal_mixed = 1
         },
     },
-
     buildcost = {
         blackwood = 2,
         planks = 2,
@@ -44,27 +72,6 @@ wl.Descriptions():new_trainingsite_type {
         quartz = 1,
         diamond = 1,
         scrap_metal_mixed = 1
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 110, 72 },
-            fps = 10
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 110, 72 },
-        },
-        unoccupied = {
-            pictures = path.list_files(dirname .. "unoccupied_??.png"),
-            hotspot = { 110, 72 }
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 110, 72 },
-            fps = 1
-        }
     },
 
     aihints = {

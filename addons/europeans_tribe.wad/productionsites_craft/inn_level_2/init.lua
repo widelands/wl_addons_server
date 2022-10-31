@@ -7,18 +7,25 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Inn Level 2"),
     icon = dirname .. "menu.png",
-    size = "medium",
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 52, 75 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 52, 75 },
-        },
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 46, 74 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 46, 74 },
+      },
     },
+    
+    size = "medium",
 
     aihints = {},
 
@@ -26,7 +33,6 @@ wl.Descriptions():new_productionsite_type {
         europeans_baker_advanced = 1,
         europeans_baker_normal = 1
     },
-
 
     inputs = {
         { name = "water", amount = 8 },

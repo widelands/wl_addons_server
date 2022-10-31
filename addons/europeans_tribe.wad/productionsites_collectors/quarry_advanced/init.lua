@@ -7,14 +7,18 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Quarry"),
     icon = dirname .. "menu.png",
-    size = "small",
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 42, 57 },
-        },
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 40, 57 },
+      },
     },
+
+    size = "small",
 
     aihints = {
     },

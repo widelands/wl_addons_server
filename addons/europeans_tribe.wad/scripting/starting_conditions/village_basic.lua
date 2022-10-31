@@ -20,10 +20,12 @@ local init = {
       player:allow_workers("all")
     end
     
+    player:forbid_buildings{"europeans_headquarters"}
+    
     local h = player:place_building("europeans_castle", sf, false, true)
     h:set_soldiers{[{1,1,1,1}] = 6}
 
-    place_building_in_region(player, "europeans_warehouse_basic", sf:region(2), {
+    place_building_in_region(player, "europeans_warehouse_basic", sf:region(3), {
         wares = {
             log = 127,
             reed = 127,
@@ -111,38 +113,22 @@ local init = {
         inputs = {water = 4},
     })
     sleep(5000)
+    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
+        inputs = {water = 4},
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
+        inputs = {water = 4},
+    })
+    sleep(5000)
     place_building_in_region(player, "europeans_quarry_basic", sf:region(12), {
     })
-    sleep(5000)
-    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
-    })
-    sleep(5000)
-    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
-        inputs = {water = 4},
-    })
-    sleep(5000)
-    place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
-    })
-    sleep(5000)
-    place_building_in_region(player, "europeans_foresters_house_basic", sf:region(12), {
-        inputs = {water = 4},
-    })
-    
-    -- run script for 8760 hours of gametime = 1 year
-    for i = 1, 35040 do
-        -- Delay of 15 min between actions, 4 loops = 1 hour of gametime
-        sleep(900000)
-        
-        -- Activate the script after 6 hours of gametime
-        if i > 24 then
-            -- dismantle buildings automatically, that are stopped
-            dismantle_stopped_buildings(player)
-            -- enhance productionssites automatically, which productivity is lower than 25 %
-            enhance_idle_buildings(player, 25)
-            -- enhance productionssites automatically, which productivity is lower than 5 %
-            dismantle_idle_buildings(player, 5)
-        end
-    end
 end
 }
 

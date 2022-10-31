@@ -7,9 +7,30 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Barrier"),
     icon = dirname .. "menu.png",
-    size = "medium",
-    vision_range = 10,
     
+    animation_directory = dirname,
+    animations = {
+      unoccupied = {
+         hotspot = { 44, 62 },
+      }
+    },
+    spritesheets = {
+      idle = {
+         fps = 10,
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 44, 62 }
+      },
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 44, 62 }
+      },
+    },
+    
+    size = "medium",
     enhancement = {
         name = "europeans_outpost",
         enhancement_cost = {
@@ -24,7 +45,6 @@ wl.Descriptions():new_militarysite_type {
             quartz = 2
         },
     },
-
     buildcost = {
         blackwood = 3,
         reed = 3,
@@ -35,27 +55,12 @@ wl.Descriptions():new_militarysite_type {
         granite = 1
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 44, 62 },
-            fps = 10
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 44, 62 },
-        },
-        unoccupied = {
-            pictures = path.list_files(dirname .. "unoccupied_??.png"),
-            hotspot = { 44, 62 },
-        }
-    },
-
     aihints = {
         fighting = true
     },
 
     max_soldiers = 4,
+    vision_range = 10,
     heal_per_second = 120,
     conquers = 6,
     prefer_heroes = true,

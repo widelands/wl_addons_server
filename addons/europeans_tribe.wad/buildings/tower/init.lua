@@ -7,9 +7,15 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Medium Tower"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 53, 85 },
+      }
+    },
+    
     size = "medium",
-    vision_range = 16,
-
     enhancement = {
         name = "europeans_tower_high",
         enhancement_cost = {
@@ -24,7 +30,6 @@ wl.Descriptions():new_militarysite_type {
             quartz = 2
         },
     },
-
     buildcost = {
         blackwood = 3,
         reed = 3,
@@ -35,21 +40,15 @@ wl.Descriptions():new_militarysite_type {
         reed = 1,
         granite = 1
     },
-
+    
     aihints = {
         expansion = true,
         mountain_conqueror = true,
         prohibited_till = 1800
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 46, 58 },
-        }
-    },
-
     max_soldiers = 2,
+    vision_range = 16,
     heal_per_second = 120,
     conquers = 8,
     prefer_heroes = false,

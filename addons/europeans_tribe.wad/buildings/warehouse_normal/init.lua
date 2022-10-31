@@ -7,9 +7,15 @@ wl.Descriptions():new_warehouse_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Warehouse"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 63, 68 }
+      }
+    },
+       
     size = "medium",
-    vision_range = 20,
-
     enhancement = {
         name = "europeans_warehouse_advanced",
         enhancement_cost = {
@@ -26,17 +32,11 @@ wl.Descriptions():new_warehouse_type {
         },
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 58, 62 }
-        }
-    },
-
     aihints = {
         prohibited_till = 3600
     },
 
+    vision_range = 20,
     heal_per_second = 180,
 }
 

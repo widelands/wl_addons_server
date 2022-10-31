@@ -7,34 +7,29 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Trainingscamp Level 4"),
     icon = dirname .. "menu.png",
-    size = "big",
     
-    enhancement = {
-        name = "europeans_battlearena_level_3",
-        enhancement_cost = {
-            marble_column = 1,
-            quartz = 1,
-            diamond = 1,
-            gold = 1
-        },
-        enhancement_return_on_dismantle = {
-            marble = 1,
-            quartz = 1,
-            diamond = 1,
-            scrap_metal_mixed = 1
-        },
-    },
-    
+    animation_directory = dirname,
+    -- TODO(Nordfriese): Make animations.
     animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 56, 68 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 56, 68 },
-        }
+      idle = {
+         hotspot = {51, 71}
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = {51, 71}
+      },
     },
+
+    spritesheets = {
+      build = {
+         hotspot = {51, 71},
+         frames = 3,
+         columns = 1,
+         rows = 3
+      }
+    },
+
+    size = "big",
 
     aihints = {},
 
@@ -67,9 +62,14 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting soldier"),
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
-                "consume=armor:2 spear_wooden:2 meal:2 wine:2 europeans_recruit:2 quartz diamond",
-                "animate=working duration:120s",
-                "recruit=europeans_soldier:2"
+                "consume=europeans_recruit",
+                "consume=armor spear_wooden meal wine diamond",
+                "animate=working duration:60s",
+                "recruit=europeans_soldier",
+                "consume=europeans_recruit",
+                "consume=armor spear_wooden meal wine quartz",
+                "animate=working duration:60s",
+                "recruit=europeans_soldier"
             }
         },
          recruit_trainer= {
@@ -77,7 +77,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting trainer"),
             actions = {
                 "return=skipped unless economy needs europeans_trainer_advanced",
-                "consume=armor spear_wooden meal wine europeans_recruit quartz,diamond",
+                "consume=europeans_recruit",
+                "consume=armor spear_wooden meal wine quartz,diamond",
                 "animate=working duration:120s",
                 "recruit=europeans_trainer_advanced"
             }

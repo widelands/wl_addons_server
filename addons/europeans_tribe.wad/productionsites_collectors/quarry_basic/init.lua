@@ -7,8 +7,26 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Quarry"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 45, 48 },
+      },
+      unoccupied = {
+         hotspot = { 45, 48 },
+      },
+    },
+    spritesheets = {
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 45, 48 }
+      },
+    },
+    
     size = "small",
-
     enhancement = {
         name = "europeans_quarry_normal",
         enhancement_cost = {
@@ -20,7 +38,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 1
         },
     },
-
     buildcost = {
         log = 2,
         reed = 2,
@@ -30,25 +47,6 @@ wl.Descriptions():new_productionsite_type {
         scrap_wood = 2,
         granite = 2,
     },
-
-   animation_directory = dirname,
-   animations = {
-      idle = {
-         hotspot = { 45, 48 },
-      },
-      unoccupied = {
-         hotspot = { 45, 48 },
-      },
-   },
-
-   spritesheets = {
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 45, 48 }
-      },
-   },
 
     aihints = {
         basic_amount = 1,

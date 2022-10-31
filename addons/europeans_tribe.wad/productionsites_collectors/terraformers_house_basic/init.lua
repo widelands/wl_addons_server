@@ -7,8 +7,23 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Terraformer’s House"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 44, 49 },
+      },
+    },
+    spritesheets = {
+      build = {
+         frames = 3,
+         columns = 3,
+         rows = 1,
+         hotspot = { 44, 49 },
+      },
+    },
+    
     size = "small",
-
     enhancement = {
         name = "europeans_terraformers_house_normal",
         enhancement_cost = {
@@ -20,7 +35,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 1
         },
     },
-
     buildcost = {
         log = 2,
         reed = 2,
@@ -29,17 +43,6 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 2,
         granite = 1
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 41, 44 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 41, 44 },
-        }
     },
 
     aihints = {
@@ -68,6 +71,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless site has ration:2",
                 "return=skipped unless site has beer:2",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_pond",

@@ -6,10 +6,36 @@ wl.Descriptions():new_productionsite_type {
     name = "europeans_sawmill_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Sawmill"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      unoccupied = {
+         hotspot = { 52, 64 },
+      }
+    },
+    spritesheets = {
+      idle = {
+         frames = 20,
+         columns = 4,
+         rows = 5,
+         hotspot = { 50, 65 }
+      },
+      build = {
+         frames = 4,
+         columns = 2,
+         rows = 2,
+         hotspot = { 50, 61 }
+      },
+      working = {
+         frames = 20,
+         columns = 4,
+         rows = 5,
+         hotspot = { 53, 65 }
+      }
+    },
+   
     size = "medium",
-
     enhancement = {
         name = "europeans_sawmill_normal",
         enhancement_cost = {
@@ -21,7 +47,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2
         },
     },
-
     buildcost = {
         log = 3,
         reed = 3,
@@ -30,30 +55,6 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 3,
         granite = 2
-    },
-
-    spritesheets = {
-        idle = {
-            basename = "idle",
-            frames = 20,
-            columns = 4,
-            rows = 5,
-            hotspot = { 50, 65 }
-        },
-        build = {
-            basename = "build",
-            frames = 4,
-            columns = 2,
-            rows = 2,
-            hotspot = { 50, 61 }
-        },
-        working = {
-            basename = "working",
-            frames = 20,
-            columns = 4,
-            rows = 5,
-            hotspot = { 53, 65 }
-        }
     },
 
     aihints = {

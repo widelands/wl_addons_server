@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Well Level 3"),
     icon = dirname .. "menu.png",
+
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 36, 42 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 36, 42 },
+      },
+    },
+
     size = "medium",
-    
     enhancement = {
         name = "europeans_well_level_4",
         enhancement_cost = {
@@ -22,17 +33,6 @@ wl.Descriptions():new_productionsite_type {
             granite = 1,
             marble = 1,
             buckets = 1
-        },
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 31, 32 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 31, 32 },
         },
     },
 

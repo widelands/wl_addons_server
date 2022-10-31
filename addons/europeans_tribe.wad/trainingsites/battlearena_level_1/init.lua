@@ -7,8 +7,30 @@ wl.Descriptions():new_trainingsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Battle Arena Level 1"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      unoccupied = {
+         hotspot = { 110, 75 }
+      }
+    },
+    spritesheets = {
+      idle = {
+         fps = 10,
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 110, 75 }
+      },
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 110, 77 }
+      },
+    },
+    
     size = "big",
-
     enhancement = {
         name = "europeans_battlearena_level_2",
         enhancement_cost = {
@@ -26,22 +48,6 @@ wl.Descriptions():new_trainingsite_type {
             diamond = 1,
             scrap_metal_mixed = 1
         },
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 110, 75 },
-            fps = 10
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 110, 77 },
-        },
-        unoccupied = {
-            pictures = path.list_files(dirname .. "unoccupied_??.png"),
-            hotspot = { 110, 75 }
-        }
     },
 
     aihints = {

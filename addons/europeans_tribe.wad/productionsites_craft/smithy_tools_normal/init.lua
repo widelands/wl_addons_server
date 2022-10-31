@@ -7,8 +7,33 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Toolsmithy"),
     icon = dirname .. "menu.png",
-    size = "medium",
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 57, 76 },
+      },
+      unoccupied = {
+         hotspot = { 57, 76 },
+      },
+    },
+    spritesheets = {
+      build = {
+         frames = 5,
+         rows = 3,
+         columns = 2,
+         hotspot = { 57, 76 }
+      },
+      working = {
+         fps = 10,
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 57, 76 }
+      },
+    },
+    
+    size = "medium",
     enhancement = {
         name = "europeans_toolsmithy_advanced",
         enhancement_cost = {
@@ -22,27 +47,7 @@ wl.Descriptions():new_productionsite_type {
             marble = 2
         },
     },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 57, 76 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 57, 76 },
-        },
-        unoccupied = {
-            pictures = path.list_files(dirname .. "unoccupied_??.png"),
-            hotspot = { 57, 76 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 57, 76 },
-            fps = 10
-        },
-    },
-
+  
     aihints = {},
 
     working_positions = {
@@ -83,7 +88,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_hook_pole",
                 "call=produce_kitchen_tools",
                 "call=produce_needles",
-                "call=produce_idle",
                 "sleep=duration:15s",
                 "return=skipped"
             }
@@ -92,7 +96,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
             descname = pgettext("europeans_building", "making baskets"),
             actions = {
-                "return=skipped unless economy needs basket",
+                "return=skipped unless economy needs basket or workers need experience",
                 "consume=planks:2 coal:2 iron:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
@@ -114,7 +118,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
             descname = pgettext("europeans_building", "making buckets"),
             actions = {
-                "return=skipped unless economy needs buckets",
+                "return=skipped unless economy needs buckets or workers need experience",
                 "consume=planks:2 coal:2 iron:2",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
@@ -231,91 +235,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=shovel:3"
             }
         },
-        produce_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs buckets",
-                "return=skipped when economy needs shovel",
-                "return=skipped when economy needs saw",
-                "return=skipped when economy needs hammer",
-                "return=skipped when economy needs pick",
-                "return=skipped when economy needs felling_ax",
-                "return=skipped when economy needs fire_tongs",
-                "return=skipped when economy needs scythe",
-                "return=skipped when economy needs basket",
-                "return=skipped when economy needs needles",
-                "return=skipped when economy needs bread_paddle",
-                "return=skipped when economy needs hook_pole",
-                "return=skipped when economy needs kitchen_tools",
-                "return=skipped when economy needs iron",
-                "return=skipped when economy needs gold",
-                "sleep=duration:360s",
-                "consume=planks coal iron",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=basket",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=buckets",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=shovel",
-                "consume=planks coal iron",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=saw",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=hammer",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=fire_tongs",
-                "consume=planks coal iron",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=pick",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=felling_ax",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=scythe",
-                "consume=planks coal iron",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=needles",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=bread_paddle",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=hook_pole",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=kitchen_tools",
-                "consume=planks coal iron",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=basket:2",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=buckets:2"
-            }
-        }
     },
 }
 

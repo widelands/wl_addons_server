@@ -6,10 +6,23 @@ wl.Descriptions():new_productionsite_type {
     name = "europeans_mill_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Mill"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
-    size = "medium",
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 41, 58 },
+      },
+      unoccupied = {
+         hotspot = { 41, 58 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 41, 58 },
+      },
+    },
+    
+    size = "medium",
     enhancement = {
         name = "europeans_mill_normal",
         enhancement_cost = {
@@ -21,7 +34,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2
         },
     },
-
     buildcost = {
         log = 3,
         reed = 3,
@@ -30,36 +42,6 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 3,
         granite = 2
-    },
-
-    animations = {
-        unoccupied = {
-            basename = "unoccupied",
-            hotspot = { 52, 64 },
-        }
-    },
-    spritesheets = {
-        idle = {
-            basename = "idle",
-            frames = 20,
-            columns = 4,
-            rows = 5,
-            hotspot = { 50, 65 }
-        },
-        build = {
-            basename = "build",
-            frames = 4,
-            columns = 2,
-            rows = 2,
-            hotspot = { 50, 61 }
-        },
-        working = {
-            basename = "working",
-            frames = 20,
-            columns = 4,
-            rows = 5,
-            hotspot = { 53, 65 }
-        }
     },
 
     aihints = {

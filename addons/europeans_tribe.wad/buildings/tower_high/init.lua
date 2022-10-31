@@ -7,9 +7,15 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "High Tower"),
     icon = dirname .. "menu.png",
-    size = "medium",
-    vision_range = 20,
     
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 53, 85 },
+      }
+    },
+    
+    size = "medium",
     enhancement = {
         name = "europeans_advanced_tower",
         enhancement_cost = {
@@ -27,13 +33,6 @@ wl.Descriptions():new_militarysite_type {
         },
     },
     
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 47, 78 },
-        }
-    },
-
     aihints = {
       fighting = true,
         mountain_conqueror = true,
@@ -41,6 +40,7 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 4,
+    vision_range = 20,
     heal_per_second = 160,
     conquers = 12,
     prefer_heroes = true,

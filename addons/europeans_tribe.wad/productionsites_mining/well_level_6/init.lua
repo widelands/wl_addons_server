@@ -7,7 +7,6 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Big Well"),
     icon = dirname .. "menu.png",
-    size = "medium",
     
     animations = {
         idle = {
@@ -20,6 +19,9 @@ wl.Descriptions():new_productionsite_type {
         },
     },
     
+
+    size = "medium",
+
     aihints = {},
     
     working_positions = {

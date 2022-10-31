@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Terraformer’s House"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 34, 74 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 34, 74 },
+      }
+    },
+    
     size = "small",
-
     enhancement = {
         name = "europeans_terraformers_house_advanced",
         enhancement_cost = {
@@ -23,17 +34,6 @@ wl.Descriptions():new_productionsite_type {
         }
     },
     
-    animation_directory = dirname,
-    animations = {
-          idle = {
-             hotspot = { 34, 74 },
-          },
-          working = {
-             basename = "idle", -- TODO(GunChleoc): No animation yet.
-             hotspot = { 34, 74 },
-          }
-    },
-
     aihints = {},
 
     working_positions = {
@@ -54,12 +54,20 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has mead:4",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_pond",
                 "call=terraforming_pond",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
                 "sleep=duration:30s",
                 "return=skipped"
             }

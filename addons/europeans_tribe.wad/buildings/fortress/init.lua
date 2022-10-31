@@ -7,9 +7,24 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Fortress"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 99, 113 }
+      },
+      build = {
+         frames = 4,
+         columns = 4,
+         rows = 1,
+         hotspot = { 99, 113 }
+      },
+    },
+    
     size = "big",
-    vision_range = 24,
-
     enhancement = {
         name = "europeans_advanced_castle",
         enhancement_cost = {
@@ -27,17 +42,6 @@ wl.Descriptions():new_militarysite_type {
         },
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 90, 105 }
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 90, 105 },
-        }
-    },
-
     aihints = {
         expansion = true,
         fighting = true,
@@ -46,6 +50,7 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 12,
+    vision_range = 24,
     heal_per_second = 240,
     conquers = 20,
     prefer_heroes = true,

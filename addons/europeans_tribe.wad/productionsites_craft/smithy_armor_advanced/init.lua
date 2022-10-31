@@ -7,28 +7,38 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Armorsmithy"),
     icon = dirname .. "menu.png",
-    size = "medium",
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 50, 62 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 50, 62 },
-        },
-        unoccupied = {
-            pictures = path.list_files(dirname .. "unoccupied_??.png"),
-            hotspot = { 50, 62 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 50, 62 },
-            fps = 5
-        },
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 50, 66 },
+      },
+      unoccupied = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 50, 66 },
+      },
+      build = {
+         frames = 4,
+         columns = 4,
+         rows = 1,
+         hotspot = { 50, 66 }
+      },
+      working = {
+         fps = 5,
+         frames = 20,
+         columns = 10,
+         rows = 2,
+         hotspot = { 50, 66 }
+      },
     },
 
+    size = "medium",
+    
     aihints = {},
 
     working_positions = {
@@ -178,7 +188,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs buckets",
                 "return=skipped when economy needs shovel",
                 "return=skipped when economy needs saw",
                 "return=skipped when economy needs hammer",
@@ -186,7 +195,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax",
                 "return=skipped when economy needs fire_tongs",
                 "return=skipped when economy needs scythe",
-                "return=skipped when economy needs basket",
                 "return=skipped when economy needs needles",
                 "return=skipped when economy needs bread_paddle",
                 "return=skipped when economy needs hook_pole",
@@ -202,16 +210,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs shield_advanced",
                 "return=skipped when economy needs sword_broad",
                 "return=skipped when economy needs iron",
-                "return=skipped when economy needs gold",
-                "sleep=duration:180s",
-                "consume=planks coal:4 iron:4 gold",
+                "sleep=duration:300s",
+                "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:45s",
-                "produce=shield_advanced",
-                "sleep=duration:120s",
+                "animate=working duration:15s",
+                "produce=basket:2",
+                "sleep=duration:60s",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:45s",
-                "produce=sword_broad"
+                "animate=working duration:15s",
+                "produce=buckets:2"
             }
         }
     },

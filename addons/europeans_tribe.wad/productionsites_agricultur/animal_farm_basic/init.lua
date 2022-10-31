@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Animal Farm"),
     icon = dirname .. "menu.png",
-    size = "big",
 
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 57, 80 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 57, 80 },
+      },
+    },
+    
+    size = "big",
     enhancement = {
         name = "europeans_animal_farm_level_1",
         enhancement_cost = {
@@ -20,7 +31,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 3
         },
     },
-
     buildcost = {
         log = 4,
         reed = 4,
@@ -29,17 +39,6 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 2
-    },
-
-    animation_directory = dirname,
-    animations = {
-        idle = {
-            hotspot = { 57, 80 },
-        },
-        working = {
-            basename = "idle", -- TODO(GunChleoc): No animation yet.
-            hotspot = { 57, 80 },
-        },
     },
 
     aihints = {
@@ -78,6 +77,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat",
                 "return=skipped when economy needs flour and economy needs beer",
                 "return=skipped unless site has water:4",
+                "return=skipped unless site has rye:4 or site has wheat:4 or site has barley:4",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:15s", -- Animation of feeding the cattle
@@ -99,6 +99,7 @@ wl.Descriptions():new_productionsite_type {
            actions = {
                 "return=skipped unless economy needs meat or workers need experience",
                 "return=skipped unless site has water:4",
+                "return=skipped unless site has wheat,rye,barley:4",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:15s",
@@ -125,15 +126,6 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:60s",
                 "produce=meat",
                 "sleep=duration:120s"
-            }
-        },
-        dummy_program = {
-            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
-            descname = _"dummy program",
-            actions = {
-                "sleep=duration:10s",
-                "animate=working duration:10s",
-                "produce=quartz"
             }
         }
     },

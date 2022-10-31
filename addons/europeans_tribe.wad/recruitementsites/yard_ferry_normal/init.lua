@@ -7,9 +7,17 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Normal Ferry Yard"),
     icon = dirname .. "menu.png",
+    
+    -- TODO(Nordfriese): Make animations
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 56, 72 },
+      }
+    },
+    
     size = "medium",
     map_check = {"waterways"},
-    
     enhancement = {
         name = "europeans_ferry_yard_advanced",
         enhancement_cost = {
@@ -24,14 +32,6 @@ wl.Descriptions():new_productionsite_type {
             granite = 2,
             marble = 2,
             scrap_metal_mixed = 1
-        }
-    },
-
-    -- TODO(Nordfriese): Make animations
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 53, 66 },
         }
     },
 

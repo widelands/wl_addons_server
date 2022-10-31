@@ -7,8 +7,31 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Gold Mine Level 4"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 51, 66 },
+      },
+      empty = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 51, 66 },
+      },
+      working = {
+         fps = 10,
+         frames = 10,
+         columns = 10,
+         rows = 1,
+         hotspot = { 51, 66 },
+      },
+    },
+    
     size = "mine",
-
     enhancement = {
         name = "europeans_goldmine_level_5",
         enhancement_cost = {
@@ -22,22 +45,6 @@ wl.Descriptions():new_productionsite_type {
         }
     },
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 49, 61 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 49, 61 },
-            fps = 10
-        },
-        empty = {
-            pictures = path.list_files(dirname .. "empty_??.png"),
-            hotspot = { 49, 61 },
-        },
-    },
-    
     aihints = {},
 
     working_positions = {

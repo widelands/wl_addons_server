@@ -7,8 +7,19 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Brewery"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 42, 50 },
+      },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 42, 50 },
+      },
+    },
+    
     size = "medium",
-
     enhancement = {
         name = "europeans_brewery_normal",
         enhancement_cost = {
@@ -20,7 +31,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2
         }
     },
-
     buildcost = {
         log = 3,
         reed = 3,
@@ -29,17 +39,6 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 3,
         granite = 2
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 42, 50 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "idle_??.png"), -- TODO(GunChleoc): No animation yet.
-            hotspot = { 42, 50 },
-        },
     },
 
     aihints = {

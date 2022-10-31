@@ -7,8 +7,29 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Basic Tavern"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 57, 88 },
+      },
+    },
+    spritesheets = {
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 51, 70 }
+      },
+      working = {
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 51, 70 }
+      },
+    },
+    
     size = "medium",
-
     enhancement = {
         name = "europeans_tavern_level_1",
         enhancement_cost = {
@@ -20,7 +41,6 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 2
         },
     },
-
     buildcost = {
         log = 3,
         reed = 3,
@@ -29,21 +49,6 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 3,
         granite = 2
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 57, 88 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 57, 88 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 57, 88 },
-        },
     },
 
     aihints = {
@@ -81,6 +86,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs ration or workers need experience",
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
+                "return=skipped unless site has meat or site has fish",
                 "consume=water:2 flour:2",
                 "animate=working duration:40s",
                 "consume=fish,meat",

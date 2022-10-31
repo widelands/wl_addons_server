@@ -7,22 +7,26 @@ wl.Descriptions():new_militarysite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Sentry"),
     icon = dirname .. "menu.png",
-    size = "small",
-    vision_range = 16,
 
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 37, 60 }
-        }
+    animation_directory = dirname,
+    spritesheets = {
+      idle = {
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 38, 61 }
+      }
     },
 
+    size = "small",
+    
     aihints = {
         fighting = true,
         mountain_conqueror = true
     },
 
     max_soldiers = 2,
+    vision_range = 16,
     heal_per_second = 120,
     conquers = 8,
     prefer_heroes = true,

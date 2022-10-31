@@ -7,8 +7,29 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Tavern Level 1"),
     icon = dirname .. "menu.png",
+    
+    animation_directory = dirname,
+    animations = {
+      idle = {
+         hotspot = { 57, 88 },
+      },
+    },
+    spritesheets = {
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 51, 81 }
+      },
+      working = {
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 51, 81 }
+      },
+    },
+    
     size = "medium",
-
     enhancement = {
         name = "europeans_tavern_level_2",
         enhancement_cost = {
@@ -18,21 +39,6 @@ wl.Descriptions():new_productionsite_type {
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2
-        },
-    },
-
-    animations = {
-        idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
-            hotspot = { 57, 88 },
-        },
-        build = {
-            pictures = path.list_files(dirname .. "build_??.png"),
-            hotspot = { 57, 88 },
-        },
-        working = {
-            pictures = path.list_files(dirname .. "working_??.png"),
-            hotspot = { 57, 88 },
         },
     },
 
