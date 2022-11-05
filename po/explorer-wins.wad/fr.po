@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# C138, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 02:04+0100\n"
+"POT-Creation-Date: 2022-11-05 03:04+0100\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
+"Last-Translator: C138, 2022\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -21,51 +25,56 @@ msgstr ""
 #: addons/explorer-wins.wad/addon:6
 msgid "The player who has explored most of the world wins the game"
 msgstr ""
+"Le joueur qui a exploré la plus grande partie du monde remporte la partie"
 
 #: addons/explorer-wins.wad/addon:9
 msgid "explorer wins"
-msgstr ""
+msgstr "l'explorateur gagne"
 
 #: addons/explorer-wins.wad/init.lua:19
 msgid "Explorer Wins"
-msgstr ""
+msgstr "L'explorateur gagne"
 
 #: addons/explorer-wins.wad/init.lua:21
 #, lua-format
 msgid "The player who has explored %1d%% of the world wins the game"
-msgstr ""
+msgstr "Le joueur qui a exploré %1d%% du monde remporte la partie"
 
 #: addons/explorer-wins.wad/init.lua:25
 msgid "% explored"
-msgstr ""
+msgstr "% exploré"
 
 #: addons/explorer-wins.wad/init.lua:34
 msgid "You can explore by expanding, with a scout, with ships, ..."
 msgstr ""
+"Vous pouvez explorer en vous étendant, avec un éclaireur, avec des "
+"navires, ..."
 
 #: addons/explorer-wins.wad/init.lua:54
 msgid ""
 "There are %1$d fields on the map, but only %2$d are terrestrial, which is "
 "%3$d%%. You need to explore %4$d%%."
 msgstr ""
+"Il y a %1$d champs sur la carte, mais seuls %2$d sont terrestres, soit %3$d%"
+"%. Vous devez explorer %4$d%%."
 
 #: addons/explorer-wins.wad/init.lua:59
 msgid "Probably not winnable"
-msgstr ""
+msgstr "Probablement pas gagnable"
 
 #: addons/explorer-wins.wad/init.lua:59
 msgid "This map is probably not winnable with %1$s."
-msgstr ""
+msgstr "Cette carte n'est probablement pas gagnable avec %1$s. "
 
 #: addons/explorer-wins.wad/init.lua:61
 msgid "Maybe not winnable"
-msgstr ""
+msgstr "Peut-être pas gagnable"
 
 #: addons/explorer-wins.wad/init.lua:61
 msgid "This map is maybe not winnable with %1$s."
-msgstr ""
+msgstr "Cette carte n'est peut-être pas gagnable avec %1$s."
 
 #: addons/explorer-wins.wad/init.lua:133
 #, lua-format
 msgid "Player %1d has explored %1d%%"
-msgstr ""
+msgstr "Le joueur %1d a exploré %1d %%"
