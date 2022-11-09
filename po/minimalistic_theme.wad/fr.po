@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-24 03:03+0200\n"
+"POT-Creation-Date: 2022-11-09 03:04+0100\n"
 "PO-Revision-Date: 2021-03-02 22:51+0000\n"
 "Last-Translator: C138, 2021\n"
 "Language-Team: French (https://www.transifex.com/widelands/teams/35159/fr/)\n"
@@ -23,9 +23,10 @@ msgstr ""
 "1000000 == 0 ? 1 : 2;\n"
 
 #: addons/minimalistic_theme.wad/addon:6
+#, fuzzy
 msgid ""
-"Minimalistic theme with reduced colors. Note that you have to enable the "
-"theme in the options menu after installing."
+"Minimalistic theme with reduced colors. For widelands version 1.0 you have "
+"to enable the theme in the options menu after installing."
 msgstr ""
 "Thème minimaliste avec des couleurs réduites. Notez que vous devez activer "
 "le thème dans le menu des options après l'installation."
@@ -34,10 +35,14 @@ msgstr ""
 msgid "Minimalistic Theme"
 msgstr "Thème minimaliste"
 
-#: screenshots/minimalistic_theme.wad/descriptions:1
+#: screenshots/minimalistic_theme.wad/descriptions:3
+msgid "Reduced Borders since version 1.4"
+msgstr ""
+
+#: screenshots/minimalistic_theme.wad/descriptions:4
 msgid "Window Options"
 msgstr ""
 
-#: screenshots/minimalistic_theme.wad/descriptions:2
+#: screenshots/minimalistic_theme.wad/descriptions:5
 msgid "Ingame Windows"
 msgstr ""
