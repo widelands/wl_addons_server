@@ -19,6 +19,15 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "small",
+    enhancement = {
+        name = "europeans_foresters_house_advanced",
+        enhancement_cost = {
+            marble = 1
+        },
+        enhancement_return_on_dismantle = {
+            marble = 1
+        },
+    },
     
     aihints = {},
 

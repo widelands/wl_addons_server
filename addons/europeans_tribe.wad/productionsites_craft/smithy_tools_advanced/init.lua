@@ -78,7 +78,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_hook_pole",
                 "call=produce_kitchen_tools",
                 "call=produce_needles",
-                "call=produce_idle",
                 "sleep=duration:10s",
                 "return=skipped"
             }
@@ -87,7 +86,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
             descname = pgettext("europeans_building", "making baskets"),
             actions = {
-                "return=skipped unless economy needs basket",
+                "return=skipped unless economy needs basket or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -98,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
             descname = pgettext("europeans_building", "making bread paddles"),
             actions = {
-                "return=skipped unless economy needs bread_paddle",
+                "return=skipped unless economy needs bread_paddle or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -109,7 +108,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
             descname = pgettext("europeans_building", "making buckets"),
             actions = {
-                "return=skipped unless economy needs buckets",
+                "return=skipped unless economy needs buckets or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -120,7 +119,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
             descname = pgettext("europeans_building", "making felling axes"),
             actions = {
-                "return=skipped unless economy needs felling_ax",
+                "return=skipped unless economy needs felling_ax or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -131,7 +130,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
             descname = pgettext("europeans_building", "making fire tongs"),
             actions = {
-                "return=skipped unless economy needs fire_tongs",
+                "return=skipped unless economy needs fire_tongs or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -142,7 +141,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
             descname = pgettext("europeans_building", "making hammers"),
             actions = {
-                "return=skipped unless economy needs hammer",
+                "return=skipped unless economy needs hammer or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -153,7 +152,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a hook pole because ...
             descname = pgettext("europeans_building", "making hook poles"),
             actions = {
-                "return=skipped unless economy needs hook_pole",
+                "return=skipped unless economy needs hook_pole or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -164,7 +163,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
             descname = pgettext("europeans_building", "making kitchen tools"),
             actions = {
-                "return=skipped unless economy needs kitchen_tools",
+                "return=skipped unless economy needs kitchen_tools or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -175,7 +174,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making needles because ...
             descname = pgettext("europeans_building", "making needles"),
             actions = {
-                "return=skipped unless economy needs needles",
+                "return=skipped unless economy needs needles or workers need experience",
                 "consume=coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -186,7 +185,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
             descname = pgettext("europeans_building", "making picks"),
             actions = {
-                "return=skipped unless economy needs pick",
+                "return=skipped unless economy needs pick or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -197,7 +196,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
             descname = pgettext("europeans_building", "making saws"),
             actions = {
-                "return=skipped unless economy needs saw",
+                "return=skipped unless economy needs saw or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -208,7 +207,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
             descname = pgettext("europeans_building", "making sycthes"),
             actions = {
-                "return=skipped unless economy needs scythe",
+                "return=skipped unless economy needs scythe or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -219,42 +218,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
             descname = pgettext("europeans_building", "making shovels"),
             actions = {
-                "return=skipped unless economy needs shovel",
+                "return=skipped unless economy needs shovel or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",
                 "produce=shovel:3"
             }
         },
-        produce_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs buckets",
-                "return=skipped when economy needs shovel",
-                "return=skipped when economy needs saw",
-                "return=skipped when economy needs hammer",
-                "return=skipped when economy needs pick",
-                "return=skipped when economy needs felling_ax",
-                "return=skipped when economy needs fire_tongs",
-                "return=skipped when economy needs scythe",
-                "return=skipped when economy needs basket",
-                "return=skipped when economy needs needles",
-                "return=skipped when economy needs bread_paddle",
-                "return=skipped when economy needs hook_pole",
-                "return=skipped when economy needs kitchen_tools",
-                "return=skipped when economy needs iron",
-                "sleep=duration:300s",
-                "consume=planks coal iron",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=basket:2",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=buckets:2"
-            }
-        }
     },
 }
 

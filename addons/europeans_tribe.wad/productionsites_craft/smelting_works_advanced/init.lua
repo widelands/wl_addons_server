@@ -125,17 +125,17 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs iron",
                 "return=skipped when economy needs gold",
                 "return=skipped when economy needs coal",
-                "consume=ore:2 coal:2",
+                "consume=ore:3 coal:3",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:30s",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=iron",
-                "sleep=duration:30s",
+                "produce=iron:2",
+                "sleep=duration:60s",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:30s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=gold",
-                "sleep=duration:90s"
+                "sleep=duration:120s"
             }
         }
     },

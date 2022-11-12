@@ -42,7 +42,9 @@ wl.Descriptions():new_productionsite_type {
             reed = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1
+            scrap_wood = 1,
+            granite = 1,
+            marble = 1
         }
     },
     buildcost = {
@@ -52,7 +54,9 @@ wl.Descriptions():new_productionsite_type {
         reed = 2
     },
     return_on_dismantle = {
-        scrap_wood = 2
+        scrap_wood = 2,
+        granite = 1,
+        marble = 1
     },
 
     aihints = {
@@ -74,7 +78,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs ore or economy needs granite or economy needs marble or workers need experience",
+                "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
                 "call=mine_stone_basic",
                 "return=skipped when economy needs coal",
                 "return=skipped unless site has ration:3",
@@ -87,11 +91,12 @@ wl.Descriptions():new_productionsite_type {
                 "consume=ration beer",
                 "call=mine_stone",
                 "call=mine_ore",
+                "call=mine_marble",
                 "sleep=duration:5s",
                 "consume=ration beer",
                 "call=mine_stone",
                 "call=mine_ore",
-                "call=mine_marble",
+                "call=mine_quartz",
                 "sleep=duration:5s",
             }
         },
@@ -130,12 +135,20 @@ wl.Descriptions():new_productionsite_type {
                 "produce=marble",
             }
         },
+        mine_quartz = {
+            descname = pgettext("europeans_building", "mining quartz"),
+            actions = {
+                "animate=working duration:25s",
+                "mine=resource_gold radius:4 yield:20% when_empty:2% experience_on_fail:10%",
+                "produce=quartz",
+            }
+        },
         encyclopedia = {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
                 "consume=ration:3 beer:3",
-                "produce=ore:4 granite:3 marble",
+                "produce=ore:4 granite:3 marble quartz",
             }
         },
     },

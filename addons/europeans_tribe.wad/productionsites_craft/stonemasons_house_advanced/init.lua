@@ -94,8 +94,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
             descname = pgettext("europeans_building", "sculpting a marble column"),
             actions = {
-                "return=skipped unless economy needs marble_column or workers need experience",
                 "return=skipped when economy needs marble",
+                "return=skipped unless economy needs marble_column or workers need experience",
                 "return=skipped unless site has marble:6",
                 "consume=marble:3",
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",

@@ -46,12 +46,12 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 10 },
-        { name = "cloth", amount = 4 },
+        { name = "planks", amount = 8 },
+        { name = "coal", amount = 12 },
+        { name = "iron", amount = 12 },
+        { name = "gold", amount = 8 },
         { name = "armor", amount = 4 },
-        { name = "coal", amount = 10 },
-        { name = "iron", amount = 10 },
-        { name = "gold", amount = 4 }
+        { name = "cloth", amount = 2 }
     },
 
     programs = {
@@ -62,6 +62,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_spear_wooden",
                 "call=produce_helmet_mask",
                 "call=produce_spear_advanced",
+                "sleep=duration:10s",
                 "call=produce_armor_chain",
                 "call=produce_shield_steel",
                 "call=produce_ax_broad",
@@ -70,7 +71,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_tabard_golden",
                 "call=produce_shield_advanced",
                 "call=produce_sword_broad",
-                "call=produce_idle",
                 "sleep=duration:10s",
                 "return=skipped"
             }
@@ -125,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a steel shield"),
             actions = {
                 "return=skipped unless economy needs shield_steel",
-                "consume=coal:2 iron:2",
+                "consume=coal iron",
                 "animate=working duration:20s",
                 "produce=shield_steel"
             }
@@ -135,7 +135,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a broad ax"),
             actions = {
                 "return=skipped unless economy needs ax_broad",
-                "consume=planks coal:2 iron:2",
+                "consume=planks coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -167,7 +167,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging an advanced shield"),
             actions = {
                 "return=skipped unless economy needs shield_advanced",
-                "consume=coal:2 iron:2 gold",
+                "consume=coal iron gold",
                 "animate=working duration:20s",
                 "produce=shield_advanced"
             }
@@ -177,48 +177,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a broadsword"),
             actions = {
                 "return=skipped unless economy needs sword_broad",
-                "consume=planks coal:2 iron:2",
+                "consume=planks coal iron gold",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=sword_broad"
-            }
-        },
-        produce_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs shovel",
-                "return=skipped when economy needs saw",
-                "return=skipped when economy needs hammer",
-                "return=skipped when economy needs pick",
-                "return=skipped when economy needs felling_ax",
-                "return=skipped when economy needs fire_tongs",
-                "return=skipped when economy needs scythe",
-                "return=skipped when economy needs needles",
-                "return=skipped when economy needs bread_paddle",
-                "return=skipped when economy needs hook_pole",
-                "return=skipped when economy needs kitchen_tools",
-                "return=skipped when economy needs spear_wooden",
-                "return=skipped when economy needs helmet_mask",
-                "return=skipped when economy needs spear_advanced",
-                "return=skipped when economy needs armor_chain",
-                "return=skipped when economy needs shield_steel",
-                "return=skipped when economy needs ax_broad",
-                "return=skipped when economy needs armor_gilded",
-                "return=skipped when economy needs tabard_golden",
-                "return=skipped when economy needs shield_advanced",
-                "return=skipped when economy needs sword_broad",
-                "return=skipped when economy needs iron",
-                "sleep=duration:300s",
-                "consume=planks coal iron",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=basket:2",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=buckets:2"
             }
         }
     },
