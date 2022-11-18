@@ -29,10 +29,9 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_foresters_house_advanced",
         enhancement_cost = {
-            marble = 1
+            planks = 1
         },
         enhancement_return_on_dismantle = {
-            marble = 1
         },
     },
 
@@ -53,8 +52,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "return=skipped unless site has meal:6",
-                "return=skipped unless site has wine:6",
+                "return=skipped unless site has meal:4",
+                "return=skipped unless site has wine:4",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_pond",

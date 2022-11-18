@@ -42,7 +42,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "coal", amount = 6 },
-        { name = "ore", amount = 4 },
+        { name = "ore", amount = 6 },
         { name = "scrap_iron", amount = 4 },
         { name = "scrap_metal_mixed", amount = 4 }
     },

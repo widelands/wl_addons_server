@@ -50,8 +50,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "return=skipped unless site has snack:4",
-                "return=skipped unless site has mead:4",
+                "return=skipped unless site has snack:3",
+                "return=skipped unless site has mead:3",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_pond",

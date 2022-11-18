@@ -71,7 +71,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 6 },
+        { name = "planks", amount = 4 },
         { name = "coal", amount = 4 },
         { name = "iron", amount = 4 }
     },
@@ -97,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_wooden"
+                "produce=spear_wooden:2"
             }
         },
         produce_helmet_mask = {
@@ -108,7 +108,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
-                "produce=helmet_mask"
+                "produce=helmet_mask:2"
             }
         },
         produce_spear_advanced = {
@@ -120,7 +120,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_advanced"
+                "produce=spear_advanced:2"
             }
         },
     },

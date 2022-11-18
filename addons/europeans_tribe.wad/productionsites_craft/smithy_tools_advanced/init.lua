@@ -46,9 +46,9 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 12 },
-        { name = "coal", amount = 12 },
-        { name = "iron", amount = 12 }
+        { name = "planks", amount = 6 },
+        { name = "coal", amount = 6 },
+        { name = "iron", amount = 6 }
     },
 
     programs = {
@@ -56,9 +56,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "return=skipped unless site has planks:12",
-                "return=skipped unless site has coal:12",
-                "return=skipped unless site has iron:12",
                 "call=produce_buckets",
                 "call=produce_basket",
                 "call=produce_felling_ax",
@@ -68,9 +65,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_saw",
                 "call=produce_hammer",
                 "sleep=duration:10s",
-                "return=skipped unless site has planks:8",
-                "return=skipped unless site has coal:8",
-                "return=skipped unless site has iron:8",
                 "call=produce_buckets",
                 "call=produce_basket",
                 "call=produce_fire_tongs",

@@ -14,6 +14,9 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_scout_advanced",
 
     programs = {
+        find_pole = {
+            "findobject=attrib:tradepole radius:80",
+        },
         scout = {
             "scout=radius:15 duration:1m15s",
             "return"

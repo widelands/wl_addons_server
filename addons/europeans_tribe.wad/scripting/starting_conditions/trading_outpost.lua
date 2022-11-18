@@ -83,7 +83,9 @@ init = {
     })
     place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(8), {
     })
-    place_building_in_region(player, "europeans_market", sf:region(6), {
+    place_building_in_region(player, "europeans_trading_post", sf:region(6), {
+    })
+    place_building_in_region(player, "europeans_trade_pole", sf:region(6), {
     })
     
 end

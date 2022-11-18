@@ -28,9 +28,6 @@ wl.Descriptions():new_productionsite_type {
         europeans_carrier = 3
     },
     
-    inputs = {
-    },
-
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...

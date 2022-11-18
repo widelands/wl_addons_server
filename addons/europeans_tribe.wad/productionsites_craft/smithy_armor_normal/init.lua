@@ -64,9 +64,9 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 6 },
-        { name = "coal", amount = 8 },
-        { name = "iron", amount = 8 },
-        { name = "armor", amount = 2 },
+        { name = "coal", amount = 6 },
+        { name = "iron", amount = 6 },
+        { name = "armor", amount = 4 },
     },
 
     programs = {
@@ -94,7 +94,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_wooden"
+                "produce=spear_wooden:2"
             }
         },
         produce_helmet_mask = {
@@ -105,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
-                "produce=helmet_mask"
+                "produce=helmet_mask:2"
             }
         },
         produce_spear_advanced = {
@@ -117,7 +117,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_advanced"
+                "produce=spear_advanced:2"
             }
         },
         produce_armor_chain = {
@@ -125,9 +125,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a suit of chain armor"),
             actions = {
                 "return=skipped unless economy needs armor_chain or workers need experience",
-                "consume=armor coal iron",
+                "consume=armor:2 coal iron",
                 "animate=working duration:30s",
-                "produce=armor_chain"
+                "produce=armor_chain:2"
             }
         },
         produce_shield_steel = {
@@ -137,7 +137,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs shield_steel or workers need experience",
                 "consume=coal iron",
                 "animate=working duration:30s",
-                "produce=shield_steel"
+                "produce=shield_steel:2"
             }
         },
         produce_ax_broad = {
@@ -149,7 +149,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=ax_broad"
+                "produce=ax_broad:2"
             }
         },
     },

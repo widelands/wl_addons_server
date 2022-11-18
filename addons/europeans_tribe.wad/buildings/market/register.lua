@@ -1,3 +1,3 @@
 return {
-   europeans_market = {"__replace_if_exists"},
+   europeans_market = {"market", "__replace_if_exists"},
 }
