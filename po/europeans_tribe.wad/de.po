@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 03:45+0100\n"
+"POT-Creation-Date: 2022-11-19 03:04+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2022\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -29,7 +29,6 @@ msgid "Europeans Tribe"
 msgstr "Europäer"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings and workers from "
 "Barbarians, Atlanteans, and Empire, until own graphics are available. (Not "
@@ -37,7 +36,7 @@ msgid ""
 msgstr ""
 "Fügt den Stamm der \"Europäer\" hinzu. Dieser nutzt Gebäude sowie Arbeiter "
 "der Barbaren, Atlanter und des Imperiums, bis eigene Grafiken verfügbar "
-"sind. (Nicht mehr kompatibel mit Version 3.0 dieses Addons oder früher)"
+"sind. (Nicht mehr kompatibel mit Version 3.1.9 dieses Addons oder früher)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -326,7 +325,7 @@ msgstr "Markt"
 #: addons/europeans_tribe.wad/buildings/trading_post/init.lua:99
 #: addons/europeans_tribe.wad/buildings/trading_post/init.lua:112
 msgid "trading"
-msgstr ""
+msgstr "Das Handeln"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:8
@@ -443,7 +442,7 @@ msgstr " Deine Soldaten haben den Feind vor dem Wachposten besiegt."
 #: addons/europeans_tribe.wad/buildings/store/init.lua:8
 msgctxt "europeans_building"
 msgid "Store"
-msgstr ""
+msgstr "Geschäft"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:8
@@ -555,7 +554,6 @@ msgstr "Deine Soldaten haben den Feind vor dem Spähturm besiegt."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/trading_post/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trading Post"
 msgstr "Handelsposten"
@@ -972,7 +970,7 @@ msgstr "Schiffsbaustelle"
 #: addons/europeans_tribe.wad/immovables/trade_pole/init.lua:8
 msgctxt "immovable"
 msgid "Trade Pole"
-msgstr ""
+msgstr "Handelsplatz"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/wheatfield/harvested/init.lua:8
@@ -5879,17 +5877,15 @@ msgstr "Arbeiter kommen"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3415
-#, fuzzy
 msgctxt "europeans"
 msgid "Expert missing"
-msgstr "Ein Arbeiter fehlt"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3417
-#, fuzzy
 msgctxt "europeans"
 msgid "Experts missing"
-msgstr "Arbeiter fehlen"
+msgstr ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3431
@@ -6426,153 +6422,3 @@ msgstr "Weberlehrling"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Webergeselle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging quartz and clay"
-#~ msgstr "Das Austauschen von Bergkristall und Lehm"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging diamond and clay"
-#~ msgstr "Das Austauschen von Diamanten und Lehm"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging gold and clay"
-#~ msgstr "Das Austauschen von Gold und Lehm"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging granite and quartz"
-#~ msgstr "Das Austauschen von Stein und Bergkristall"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging granite and diamond"
-#~ msgstr "Das Austauschen von Stein und Diamanten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging granite and gold"
-#~ msgstr "Das Austauschen von Stein und Gold"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging marble and quartz"
-#~ msgstr "Das Austauschen von Marmor und Bergkristall"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging marble and diamond"
-#~ msgstr "Das Austauschen von Marmor und Diamanten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging marble and gold"
-#~ msgstr "Das Austauschen von Marmor und Gold"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging log and quartz"
-#~ msgstr "Das Austauschen von Stämmen und Bergkristall"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging log and diamond"
-#~ msgstr "Das Austauschen von Stämmen und Diamanten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging log and gold"
-#~ msgstr "Das Austauschen von Stämmen und Gold"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging blackwood and quartz"
-#~ msgstr "Das Austauschen von Hartholz und Bergkristall"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging blackwood and diamond"
-#~ msgstr "Das Austauschen von Hartholz und Diamanten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging blackwood and gold"
-#~ msgstr "Das Austauschen von Hartholz und Gold"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging planks and quartz"
-#~ msgstr "Das Austauschen von Brettern und Bergkristall"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging planks and diamond"
-#~ msgstr "Das Austauschen von Brettern und Diamanten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging planks and gold"
-#~ msgstr "Das Austauschen von Brettern und Gold"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging reed and quartz"
-#~ msgstr "Das Austauschen von Reet und Bergkristall"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging reed and diamond"
-#~ msgstr "Das Austauschen von Reet und Diamanten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging reed and gold"
-#~ msgstr "Das Austauschen von Reet und Gold"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging cloth and quartz"
-#~ msgstr "Das Austauschen von Stoff und Bergkristall"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging cloth and diamond"
-#~ msgstr "Das Austauschen von Stoff und Diamanten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging cloth and gold"
-#~ msgstr "Das Austauschen von Stoff und Gold"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging coal and quartz"
-#~ msgstr "Das Austauschen von Kohle und Bergkristall"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging coal and diamond"
-#~ msgstr "Das Austauschen von Kohle und Diamanten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging coal and gold"
-#~ msgstr "Das Austauschen von Kohle und Gold"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging iron and quartz"
-#~ msgstr "Das Austauschen von Eisen und Bergkristall"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging iron and diamond"
-#~ msgstr "Das Austauschen von Eisen und Diamanten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging iron and gold"
-#~ msgstr "Das Austauschen von Eisen und Gold"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1% soldier (+%2%)"
-#~ msgid_plural "%1% soldiers (+%2%)"
-#~ msgstr[0] "%1% Soldat (+%2%)"
-#~ msgstr[1] "%1% Soldaten (+%2%)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1% soldier"
-#~ msgid_plural "%1% soldiers"
-#~ msgstr[0] "%1% Soldat"
-#~ msgstr[1] "%1% Soldaten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1%(+%2%) soldier (+%3%)"
-#~ msgid_plural "%1%(+%2%) soldiers (+%3%)"
-#~ msgstr[0] "%1%(+%2%) Soldat (+%3%)"
-#~ msgstr[1] "%1%(+%2%) Soldaten (+%3%)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1%(+%2%) soldier"
-#~ msgid_plural "%1%(+%2%) soldiers"
-#~ msgstr[0] "%1%(+%2%) Soldat"
-#~ msgstr[1] "%1%(+%2%) Soldaten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market to exchange some build materials for quartz, diamond or gold."
-#~ msgstr ""
-#~ "Ein Markt zum Tausch von Baumaterial für Bergkristall, Diamanten oder "
-#~ "Gold."

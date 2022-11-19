@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 03:45+0100\n"
+"POT-Creation-Date: 2022-11-19 03:04+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://www.transifex.com/widelands/teams/35159/cs/)\n"
@@ -549,10 +549,9 @@ msgstr "Nízká věž nepřítele dobyta."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/trading_post/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trading Post"
-msgstr "Obchodní stanice"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_advanced/init.lua:8
@@ -6273,35 +6272,3 @@ msgstr "Tkadlec"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Vrchní tkadlec"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1% soldier (+%2%)"
-#~ msgid_plural "%1% soldiers (+%2%)"
-#~ msgstr[0] "%1% voják (+%2%)"
-#~ msgstr[1] "%1% vojáci (+%2%)"
-#~ msgstr[2] "%1% vojáků (+%2%)"
-#~ msgstr[3] "%1% vojáků (+%2%)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1% soldier"
-#~ msgid_plural "%1% soldiers"
-#~ msgstr[0] "%1% voják"
-#~ msgstr[1] "%1% vojáci"
-#~ msgstr[2] "%1% vojáků"
-#~ msgstr[3] "%1% vojáků"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1%(+%2%) soldier (+%3%)"
-#~ msgid_plural "%1%(+%2%) soldiers (+%3%)"
-#~ msgstr[0] "%1%(+%2%) voják (+%3%)"
-#~ msgstr[1] "%1%(+%2%) vojáci (+%3%)"
-#~ msgstr[2] "%1%(+%2%) vojáků (+%3%)"
-#~ msgstr[3] "%1%(+%2%) vojáků (+%3%)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1%(+%2%) soldier"
-#~ msgid_plural "%1%(+%2%) soldiers"
-#~ msgstr[0] "%1%(+%2%) voják"
-#~ msgstr[1] "%1%(+%2%) vojáci"
-#~ msgstr[2] "%1%(+%2%) vojáků"
-#~ msgstr[3] "%1%(+%2%) vojáků"

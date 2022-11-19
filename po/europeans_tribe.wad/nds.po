@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 03:45+0100\n"
+"POT-Creation-Date: 2022-11-19 03:04+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2022\n"
 "Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
@@ -27,15 +27,11 @@ msgid "Europeans Tribe"
 msgstr "Europäers-Volk"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings and workers from "
 "Barbarians, Atlanteans, and Empire, until own graphics are available. (Not "
 "compatible with Version 3.1.9 or earlier.)"
 msgstr ""
-"Föögt een nejes Volk »Europäers« hento. ’t bruukt Husen un Arbeiders vun de "
-"Willen Lüü, Atlantingers un vum Latiensken Riek, bit dat neje Billers gifft. "
-"(Nich mit Versioon 3.0 un oller verdragelk.)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -553,10 +549,9 @@ msgstr "Diene Soldaten hebben de Feinde in eenem Toorntje manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/trading_post/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trading Post"
-msgstr "Hannelsposten"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_advanced/init.lua:8
@@ -5843,17 +5838,15 @@ msgstr "Arbeiders kummen"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3415
-#, fuzzy
 msgctxt "europeans"
 msgid "Expert missing"
-msgstr "Arbeider föhlt"
+msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3417
-#, fuzzy
 msgctxt "europeans"
 msgid "Experts missing"
-msgstr "Arbeiders föhlen"
+msgstr ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3431
@@ -6390,153 +6383,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging quartz and clay"
-#~ msgstr "Blinkerflint un Lehm to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging diamond and clay"
-#~ msgstr "Edelsteen un Lehm to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging gold and clay"
-#~ msgstr "Gold un Lehm to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging granite and quartz"
-#~ msgstr "Flint un Blinkerflint to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging granite and diamond"
-#~ msgstr "Flint un Edelsteen to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging granite and gold"
-#~ msgstr "Flint un Gold to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging marble and quartz"
-#~ msgstr "Marmel un Blinkerflint to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging marble and diamond"
-#~ msgstr "Marmel un Edelsteen to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging marble and gold"
-#~ msgstr "Marmel un Gold to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging log and quartz"
-#~ msgstr "Boomstamm un Blinkerflint to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging log and diamond"
-#~ msgstr "Boomstamm un Edelsteen to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging log and gold"
-#~ msgstr "Boomstamm un Gold to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging blackwood and quartz"
-#~ msgstr "Haartholt un Blinkerflint to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging blackwood and diamond"
-#~ msgstr "Haartholt un Edelsteen to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging blackwood and gold"
-#~ msgstr "Haartholt un Gold to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging planks and quartz"
-#~ msgstr "Planken un Blinkerflint to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging planks and diamond"
-#~ msgstr "Planken un Edelsteen to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging planks and gold"
-#~ msgstr "Planken un Gold to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging reed and quartz"
-#~ msgstr "Reit un Blinkerflint to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging reed and diamond"
-#~ msgstr "Reit un Edelsteen to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging reed and gold"
-#~ msgstr "Reit un Gold to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging cloth and quartz"
-#~ msgstr "Stoff un Blinkerflint to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging cloth and diamond"
-#~ msgstr "Stoff un Edelsteen to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging cloth and gold"
-#~ msgstr "Stoff un Gold to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging coal and quartz"
-#~ msgstr "Köhl un Blinkerflint to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging coal and diamond"
-#~ msgstr "Köhl un Edelsteen to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging coal and gold"
-#~ msgstr "Köhl un Gold to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging iron and quartz"
-#~ msgstr "Iesen un Blinkerflint to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging iron and diamond"
-#~ msgstr "Iesen un Edelsteen to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "exchanging iron and gold"
-#~ msgstr "Iesen un Gold to tuusken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1% soldier (+%2%)"
-#~ msgid_plural "%1% soldiers (+%2%)"
-#~ msgstr[0] "%1% Soldat (+%2%)"
-#~ msgstr[1] "%1% Soldaten (+%2%)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1% soldier"
-#~ msgid_plural "%1% soldiers"
-#~ msgstr[0] "%1% Soldat"
-#~ msgstr[1] "%1% Soldaten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1%(+%2%) soldier (+%3%)"
-#~ msgid_plural "%1%(+%2%) soldiers (+%3%)"
-#~ msgstr[0] "%1%(+%2%) Soldat (+%3%)"
-#~ msgstr[1] "%1%(+%2%) Soldaten (+%3%)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "%1%(+%2%) soldier"
-#~ msgid_plural "%1%(+%2%) soldiers"
-#~ msgstr[0] "%1%(+%2%) Soldat"
-#~ msgstr[1] "%1%(+%2%) Soldaten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market to exchange some build materials for quartz, diamond or gold."
-#~ msgstr ""
-#~ "Een Markt, waar eenige Waren tegen Blinkerflint, Edelflint un Gold tuuskt "
-#~ "worden könen."
