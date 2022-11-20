@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-19 03:04+0100\n"
+"POT-Creation-Date: 2022-11-20 03:04+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://www.transifex.com/widelands/teams/35159/"
@@ -32,6 +32,9 @@ msgid ""
 "Barbarians, Atlanteans, and Empire, until own graphics are available. (Not "
 "compatible with Version 3.1.9 or earlier.)"
 msgstr ""
+"Afegeix una cultura nova, anomenada «europeus». Usa edificis i treballadors "
+"dels bàrbars, atlants i de l'Imperi fins que disposi de gràfics propis. No "
+"és compatible amb la versió 3.1.9 o anterior."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -320,7 +323,7 @@ msgstr "Mercat"
 #: addons/europeans_tribe.wad/buildings/trading_post/init.lua:99
 #: addons/europeans_tribe.wad/buildings/trading_post/init.lua:112
 msgid "trading"
-msgstr ""
+msgstr "comerciar"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:8
@@ -437,7 +440,7 @@ msgstr "Els soldats han vençut l'enemic a la guarda sentinella."
 #: addons/europeans_tribe.wad/buildings/store/init.lua:8
 msgctxt "europeans_building"
 msgid "Store"
-msgstr ""
+msgstr "Botiga"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:8
@@ -551,7 +554,7 @@ msgstr "Els soldats han vençut l'enemic a la torre petita."
 #: addons/europeans_tribe.wad/buildings/trading_post/init.lua:8
 msgctxt "europeans_building"
 msgid "Trading Post"
-msgstr ""
+msgstr "Post de mercaderies"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_advanced/init.lua:8
@@ -965,7 +968,7 @@ msgstr "Vaixell en construcció"
 #: addons/europeans_tribe.wad/immovables/trade_pole/init.lua:8
 msgctxt "immovable"
 msgid "Trade Pole"
-msgstr ""
+msgstr "Pal de comerç"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/wheatfield/harvested/init.lua:8
@@ -4141,7 +4144,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:549
 msgctxt "ware"
 msgid "Wood coins are money made of wood. Its simplest barter object."
-msgstr ""
+msgstr "Monedes fetes de fusta que serveixen per a negociar."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:560
@@ -4150,18 +4153,20 @@ msgid ""
 "Wood coins are money made of copper or bronze (copper and tin). Its the "
 "standard barter object."
 msgstr ""
+"Monedes fetes de coure o bronze (coure i estany) que serveixen per a "
+"negociar."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Silver Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:571
 msgctxt "ware"
 msgid "Wood coins are money made of silver. Its a valuable barter object."
-msgstr ""
+msgstr "Monedes fetes de plata que serveixen per a negociar."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:582
 msgctxt "ware"
 msgid "Wood coins are money made of gold. Its most valuable barter object."
-msgstr ""
+msgstr "Monedes fetes d'or que serveixen per a negociar."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:596
@@ -4591,6 +4596,8 @@ msgid ""
 "Traders work in markets or in trading posts to exchange wares with other "
 "tribes."
 msgstr ""
+"Els comerciants treballen a les botigues o als posts de mercaderies i "
+"intercanvien béns amb altres tribus."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Recruit
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1112
@@ -5027,7 +5034,7 @@ msgstr "En aquest lloc es construeix un vaixell."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2229
 msgctxt "europeans_building"
 msgid "Open market to exchange wares with other allied tribes."
-msgstr ""
+msgstr "Mercat obert per a intercanviar béns amb altres tribus aliades."
 
 #. TRANSLATORS: Helptext for an Europeans immovable usable by Europeans: Dead Tree
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2237
@@ -5096,19 +5103,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2370
 msgctxt "europeans_building"
 msgid "Market building to sale wares to other allied tribes."
-msgstr ""
+msgstr "Un edifici per a vendre béns a altres tribus aliades."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2377
 msgctxt "europeans_building"
 msgid "Store building to purchase wares from other allied tribes."
-msgstr ""
+msgstr "Magatzem des d'on es poden comprar béns d'altres tribus aliades."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Market
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2384
 msgctxt "europeans_building"
 msgid "Trading building to purchase wares from other allied tribes."
-msgstr ""
+msgstr "Edifici comercial per a comprar béns d'altres tribus aliades."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutter's House
@@ -5859,13 +5866,13 @@ msgstr "Vénen treballadors."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3415
 msgctxt "europeans"
 msgid "Expert missing"
-msgstr ""
+msgstr "Fa falta un expert"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3417
 msgctxt "europeans"
 msgid "Experts missing"
-msgstr ""
+msgstr "Fan falta experts"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3431
@@ -5903,25 +5910,25 @@ msgstr[1] "%1%(+%2%) soldats"
 #: addons/europeans_tribe.wad/wares/coin_copper/init.lua:8
 msgctxt "ware"
 msgid "Copper Coin"
-msgstr ""
+msgstr "Moneda de coure"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_gold/init.lua:8
 msgctxt "ware"
 msgid "Gold Coin"
-msgstr ""
+msgstr "Moneda d'or"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_silver/init.lua:8
 msgctxt "ware"
 msgid "Silver Coin"
-msgstr ""
+msgstr "Moneda de plata"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_wood/init.lua:8
 msgctxt "ware"
 msgid "Wood Coin"
-msgstr ""
+msgstr "Moneda de fusta"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ore/init.lua:8
@@ -6365,7 +6372,7 @@ msgstr "Terraformador normal"
 #: addons/europeans_tribe.wad/workers/trader/init.lua:8
 msgctxt "europeans_worker"
 msgid "Trader"
-msgstr ""
+msgstr "Comerciant"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_advanced/init.lua:8
