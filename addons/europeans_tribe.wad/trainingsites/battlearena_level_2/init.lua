@@ -46,10 +46,8 @@ wl.Descriptions():new_trainingsite_type {
     },
     
     inputs = {
-        { name = "ration", amount = 8 },
-        { name = "snack", amount = 8 },
-        { name = "beer", amount = 8 },
-        { name = "mead", amount = 8 },
+        { name = "coin_copper", amount = 6 },
+        { name = "coin_silver", amount = 6 },
         { name = "helmet_mask", amount = 2 },
         { name = "shield_steel", amount = 2 }, 
         { name = "spear_advanced", amount = 2 },
@@ -59,33 +57,21 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     ["soldier health"] = {
-        food = {
-          {"ration", "snack"},
-          {"beer", "mead"}
-        },
+        food = {{"coin_copper"}, {"coin_silver"}},
         weapons = {"armor", "tabard", "armor_chain"}
     },
 
     ["soldier evade"] = {
-        food = {
-          {"ration", "snack"},
-          {"beer", "mead"}
-        }
+        food = {{"coin_copper"}, {"coin_silver"}},
     },
         
     ["soldier defense"] = {
-        food = {
-          {"ration", "snack"},
-          {"beer", "mead"}
-        },
+        food = {{"coin_copper"}, {"coin_silver"}},
         weapons = {"helmet_mask", "shield_steel"}
     },
 
     ["soldier attack"] = {
-        food = {
-          {"ration", "snack"},
-          {"beer", "mead"}
-        },
+        food = {{"coin_copper"}, {"coin_silver"}},
         weapons = {"spear_advanced", "ax_broad"}
     },
   
@@ -106,7 +92,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:health level:0",
-                "consume=ration beer armor",
+                "consume=coin_copper armor",
                 "train=soldier:health level:1"
             }
         },
@@ -117,7 +103,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:health level:1",
-                "consume=snack mead armor_chain",
+                "consume=coin_silver armor_chain",
                 "train=soldier:health level:2",
                 "produce=scrap_iron"
             }
@@ -130,7 +116,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:evade level:0",
-                "consume=ration:2 beer:2",
+                "consume=coin_copper:2",
                 "train=soldier:evade level:1"
             }
         },
@@ -142,7 +128,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:evade level:1",
-                "consume=snack:2 mead:2",
+                "consume=coin_silver:2",
                 "train=soldier:evade level:2"
             }
         },
@@ -153,7 +139,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:defense level:0",
-                "consume=ration beer helmet_mask",
+                "consume=coin_copper helmet_mask",
                 "train=soldier:defense level:1",
                 "produce=scrap_iron"
             }
@@ -165,7 +151,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:defense level:1",
-                "consume=snack mead shield_steel",
+                "consume=coin_silver shield_steel",
                 "train=soldier:defense level:2",
                 "produce=scrap_iron"
             }
@@ -177,7 +163,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:attack level:0",
-                "consume=ration beer spear_advanced",
+                "consume=coin_copper spear_advanced",
                 "train=soldier:attack level:1",
                 "produce=scrap_iron"
             }
@@ -189,7 +175,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:attack level:1",
-                "consume=snack mead ax_broad",
+                "consume=coin_silver ax_broad",
                 "train=soldier:attack level:2",
                 "produce=scrap_iron"
             }

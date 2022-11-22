@@ -39,8 +39,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "europeans_recruit", amount = 4 },
-        { name = "meal", amount = 4 },
-        { name = "wine", amount = 4 },
+        { name = "coin_wood", amount = 4 },
         { name = "spear_wooden", amount = 4 },
         { name = "armor", amount = 4 },
         { name = "quartz", amount = 4 },
@@ -63,11 +62,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "consume=europeans_recruit",
-                "consume=armor spear_wooden meal wine diamond",
+                "consume=armor spear_wooden coin_wood diamond",
                 "animate=working duration:60s",
                 "recruit=europeans_soldier",
                 "consume=europeans_recruit",
-                "consume=armor spear_wooden meal wine quartz",
+                "consume=armor spear_wooden coin_wood quartz",
                 "animate=working duration:60s",
                 "recruit=europeans_soldier"
             }
@@ -78,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_trainer_advanced",
                 "consume=europeans_recruit",
-                "consume=armor spear_wooden meal wine quartz,diamond",
+                "consume=armor spear_wooden coin_wood quartz,diamond",
                 "animate=working duration:120s",
                 "recruit=europeans_trainer_advanced"
             }

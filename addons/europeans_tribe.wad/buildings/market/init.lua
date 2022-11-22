@@ -35,18 +35,18 @@ wl.Descriptions():new_productionsite_type {
     },
     return_on_dismantle = {
         scrap_wood = 8,
-        granite = 4,
-        marble = 2,
+        granite = 6,
+        marble = 4,
         quartz = 2,
         diamond = 2
     },
     
     aihints = {
           very_weak_ai_limit = 1,
-          weak_ai_limit = 1,
-          normal_ai_limit = 1,
-          prohibited_till = 9000,
-          forced_after = 9600
+          weak_ai_limit = 2,
+          normal_ai_limit = 4,
+          prohibited_till = 5400,
+          forced_after = 7200
     },
 
     working_positions = {
@@ -58,12 +58,12 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "ration", amount = 8 },
-        { name = "snack", amount = 8 },
-        { name = "meal", amount = 8 },
         { name = "beer", amount = 8 },
+        { name = "snack", amount = 8 },
         { name = "beer_strong", amount = 8 },
         { name = "mead", amount = 8 },
         { name = "wine", amount = 8 },
+        { name = "meal", amount = 8 },
     },
 
     programs = {
@@ -72,10 +72,11 @@ wl.Descriptions():new_productionsite_type {
             descname = _("trading"),
             actions = {
                 "call=trade_ration",
-                "call=trade_snack",
-                "call=trade_meal",
                 "call=trade_beer",
+                "call=trade_beer_strong",
+                "call=trade_snack",
                 "call=trade_mead",
+                "call=trade_meal",
                 "call=trade_wine",
             }
         },
@@ -88,33 +89,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has ration:4",
                 "consume=ration:4",
                 "animate=working duration:15s",
-                "produce=coin_wood:2",
-                "sleep=duration:30s",
-            }
-        },
-        trade_snack = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs coin_wood",
-                "return=skipped when economy needs snack",
-                "return=failed unless site has snack:4",
-                "consume=snack:4",
-                "animate=working duration:15s",
                 "produce=coin_wood:3",
-                "sleep=duration:30s",
-            }
-        },
-        trade_meal = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs coin_copper",
-                "return=skipped when economy needs meal",
-                "return=failed unless site has meal:4",
-                "consume=meal:4",
-                "animate=working duration:15s",
-                "produce=coin_copper:2",
                 "sleep=duration:30s",
             }
         },
@@ -122,13 +97,25 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs coin_copper",
+                "return=skipped unless economy needs coin_wood",
                 "return=skipped when economy needs beer",
                 "return=failed unless site has beer:4",
-                "return=failed unless site has beer_strong:4",
-                "consume=beer:4 beer_strong:4",
+                "consume=beer:4",
                 "animate=working duration:15s",
-                "produce=coin_copper:4",
+                "produce=coin_wood:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_snack = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs coin_copper",
+                "return=skipped when economy needs snack",
+                "return=failed unless site has snack:4",
+                "consume=snack:4",
+                "animate=working duration:15s",
+                "produce=coin_copper:3",
                 "sleep=duration:30s",
             }
         },
@@ -136,12 +123,38 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs coin_silver",
+                "return=skipped unless economy needs coin_copper",
                 "return=skipped when economy needs mead",
                 "return=failed unless site has mead:4",
                 "consume=mead:4",
                 "animate=working duration:15s",
-                "produce=coin_silver:2",
+                "produce=coin_copper:2 coin_silver:2",
+                "sleep=duration:30s",
+            }
+        },
+        trade_beer_strong = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs coin_silver",
+                "return=skipped when economy needs beer_strong",
+                "return=failed unless site has beer_strong:4",
+                "consume=beer_strong:4",
+                "animate=working duration:15s",
+                "produce=coin_silver:3",
+                "sleep=duration:30s",
+            }
+        },
+        trade_meal = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs coin_silver",
+                "return=skipped when economy needs meal",
+                "return=failed unless site has meal:4",
+                "consume=meal:4",
+                "animate=working duration:15s",
+                "produce=coin_silver:2 coin_gold",
                 "sleep=duration:30s",
             }
         },
@@ -154,7 +167,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has wine:4",
                 "consume=wine:4",
                 "animate=working duration:15s",
-                "produce=coin_gold:2",
+                "produce=coin_gold:3",
                 "sleep=duration:30s",
             }
         },

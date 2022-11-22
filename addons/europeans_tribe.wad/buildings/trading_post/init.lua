@@ -6,13 +6,23 @@ wl.Descriptions():new_productionsite_type {
     name = "europeans_trading_post",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Trading Post"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
 
-    animations = {
-        idle = {
-            hotspot = { 60, 59 },
-        },
+    animation_directory = dirname,
+    spritesheets = {
+      build = {
+         frames = 3,
+         columns = 3,
+         rows = 1,
+         hotspot = { 55, 57 }
+      },
+      idle = {
+         fps = 10,
+         frames = 12,
+         columns = 6,
+         rows = 2,
+         hotspot = { 55, 57 }
+      },
     },
     
     size = "small",
