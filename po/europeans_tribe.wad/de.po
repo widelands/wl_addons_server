@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 03:04+0100\n"
+"POT-Creation-Date: 2022-11-24 03:04+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2022\n"
 "Language-Team: German (https://www.transifex.com/widelands/teams/35159/de/)\n"
@@ -4152,6 +4152,8 @@ msgstr ""
 msgctxt "ware"
 msgid "Wood coins are money made of wood. Its simplest barter object."
 msgstr ""
+"Holzmünzen sind Geld gefertigt aus Holz. Sie sind das einfachste "
+"Tauschobjekt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:560
@@ -4160,18 +4162,24 @@ msgid ""
 "Wood coins are money made of copper or bronze (copper and tin). Its the "
 "standard barter object."
 msgstr ""
+"Kupfermünzen Sind Geld aus Kupfer oder Bronze (Kupfer und Zinn). Sie sind "
+"das Standardtauschobjekt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Silver Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:571
 msgctxt "ware"
 msgid "Wood coins are money made of silver. Its a valuable barter object."
 msgstr ""
+"Silbermünzen sind Geld gefertigt aus Silber. Sie sind ein wertvolles "
+"Tauschobjekt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:582
 msgctxt "ware"
 msgid "Wood coins are money made of gold. Its most valuable barter object."
 msgstr ""
+"Goldmünzen sind Geld gefertigt aus Gold. Sie sind das wertvollste "
+"Tauschobjekt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:596
@@ -4618,6 +4626,8 @@ msgid ""
 "Traders work in markets or in trading posts to exchange wares with other "
 "tribes."
 msgstr ""
+"Händler arbeiten in Märkten oder Handelsposten um Warten mit anderen Stämmen "
+"auszutauschen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Recruit
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1112
@@ -5049,7 +5059,7 @@ msgstr "Hier wird ein Schiff gebaut."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2229
 msgctxt "europeans_building"
 msgid "Open market to exchange wares with other allied tribes."
-msgstr ""
+msgstr "Ein offener Markt um Waren mit alliierten Stämmen auszutauschen."
 
 #. TRANSLATORS: Helptext for an Europeans immovable usable by Europeans: Dead Tree
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2237
@@ -5119,19 +5129,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2370
 msgctxt "europeans_building"
 msgid "Market building to sale wares to other allied tribes."
-msgstr ""
+msgstr "Marktgebäude um Waren an andere Stämme zu verkaufen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2377
 msgctxt "europeans_building"
 msgid "Store building to purchase wares from other allied tribes."
-msgstr ""
+msgstr "Lagergebäude um Waren von allierten Stämmen zu kaufen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Market
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2384
 msgctxt "europeans_building"
 msgid "Trading building to purchase wares from other allied tribes."
-msgstr ""
+msgstr "Handelsgebäude um Waren von allierten Stämmen zu kaufen."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutter's House
