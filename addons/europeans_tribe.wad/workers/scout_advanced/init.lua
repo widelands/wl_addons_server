@@ -18,12 +18,12 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:tradepole radius:80",
         },
         scout = {
-            "scout=radius:18 duration:1m30s",
+            "scout=radius:18 duration:1m45s",
             "return"
         },
         targeted_scouting = {
             "walk=object",
-            "scout=radius:18 duration:1m30s",
+            "scout=radius:18 duration:1m45s",
             "return"
         }
     },

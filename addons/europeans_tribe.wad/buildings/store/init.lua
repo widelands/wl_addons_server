@@ -34,8 +34,8 @@ wl.Descriptions():new_productionsite_type {
     },
     return_on_dismantle = {
         scrap_wood = 8,
-        granite = 4,
-        marble = 2,
+        granite = 6,
+        marble = 3,
         quartz = 2,
         diamond = 2
     },

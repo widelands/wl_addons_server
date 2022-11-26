@@ -9,15 +9,21 @@ wl.Descriptions():new_worker_type {
     animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 3,
+    
+    buildcost = {
+        europeans_scout_advanced = 1,
+        europeans_carrier_horse = 1,
+        gold = 1
+    },
 
     programs = {
           scout = {
-                "scout=radius:18 duration:1m30s",
+                "scout=radius:18 duration:1m45s",
                 "return"
           },
           targeted_scouting = {
                 "walk=object",
-                "scout=radius:18 duration:1m30s",
+                "scout=radius:18 duration:1m45s",
                 "return"
           },
           create_pole = {

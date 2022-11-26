@@ -200,7 +200,7 @@ This addon adds my maps ''Java and Sumatra 1.0'', ''Java and Sumatra 1.1'' and '
 Nilpanda
 Nilpanda
 1666688231
-28
+29
 1
 10.0
 0
@@ -396,7 +396,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-30
+31
 2
 9.0
 0
@@ -1057,7 +1057,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-79
+80
 3
 9.666667
 1
@@ -1421,7 +1421,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-78
+79
 0
 0.0
 0
@@ -1491,7 +1491,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings and workers from Barba
 MarkMcWire
 MarkMcWire
 1621788282
-335
+336
 2
 6.5
 2
@@ -1503,9 +1503,9 @@ Nordfriese
 The current version of this add-on has a bug that prevents the game from starting under some circumstances: Many of its <font shadow=1 italic=1>init.lua</font> files reference the global variable <font shadow=1 italic=1>descriptions</font> which may be undefined. Please change all occurrences to <font shadow=1 italic=1>wl.Descriptions()</font> instead.    @MarkMcWire
 2.4.6
 1650721500
-3.2.1
+3.2.2
 157
-78114169
+78114284
 tribes
 0
 336
@@ -9345,7 +9345,7 @@ ru.mo
 sk.mo
 sv.mo
 7497
-c49b9eeb097faec02212426f64f631ab
+335ed18cb538badb99845a623cfdaab8
 7d672b6105fabbc2e717e81e40efd29b
 fbbd5b53033a58de73a4fe01bcb2f66f
 a08c175b1f94c27817eb9f4d6d07a9ff
@@ -9435,7 +9435,7 @@ c5ce1638f29614abb08d5d279154b394
 10eec0d7806691dec8a0a17ee61ec465
 72f9e09fb955be8a02912bdd2bbb1f51
 a472ce45cdc8d7311d223471dce49189
-804511b7a81c650c5ce189b8dfb1a24d
+6245ef894a06820a853cfd39aad63827
 4fba1dc7d4755a049e4fe96527bf6bcb
 7fd85e23230482974387a59d90d121ce
 7b1c5a21d5a80108c0e623804c61186a
@@ -9526,7 +9526,7 @@ db53a58813c56d6dbdd67c9506d9e203
 e39bfec60069778bcb8de03b21e9f86b
 0ad0039d36410c0f596d34d1c00b356b
 ff459358ca1771722280fd89abd8d14d
-3f971fc1b3707612b3be6ab1cd4214f2
+ceedaf95e066f02c6808f7039fe75b5c
 582f9b5c8ef7b65c4bc357d426dc576f
 9ec7b7c94a84d4f357e04d8d6f2780e4
 03a4e5c488803e3a18915cd89a1079bf
@@ -14814,7 +14814,7 @@ fefea900ac0b998e551258108cc829b8
 7209ada6174e5ac7ee68211d47c3726f
 bec6399f342d7c8b107ae7e9d759e1f5
 182de5469ded05a531274cffcee007a9
-dae541f23ae585f4ba48e329f7045d0e
+8b84a0502da9bb70baf6fefe16777155
 5b05b62953898037ab104c578de255b6
 3fc6e8c29fa8ce1575955dd601272b1b
 cf0f48642b68a421a9d83b887a9b32f0
@@ -14890,7 +14890,7 @@ aed0add481620a68ffb076a17e09d661
 0e8f4504dda0739b20a8709a8e28d050
 e2ede37aaa4d50808dcb334892375ae4
 69e48559cd6285e3901c142d00ecdfd1
-7b2ce11b70ed86409761b0b38b1a6b8d
+61aa643ec6548dfeadc3473f7105a78b
 a6ba75644fd3bb839d0b65875e2248b3
 045c7126e7657b02df3a156268b9506f
 b5b3093029d9328ad89ad2591124a2b9
@@ -16510,7 +16510,7 @@ d890ca8de62360deaa777868747830aa
 064d1f2d1765f7c8949166be2b33df56
 65f45af72a12f79f4482c9fe9d864379
 3716ddd05e7b02068c8efd038d6f62b5
-1992efb31f5a082ac90870eb823e593c
+bc550e027553ae3c9985da77b649a266
 f5a6517dac5d7d6b2e4d32b74a203843
 89c74c62056d24b0ac747438b11786cd
 f2822ec7a64734eb94ab63efdff14249
@@ -16842,7 +16842,7 @@ a486018f1b0bf7bbcb102eeb5346c879
 f92bf3c9f58daf3c2f3954a925e37cf8
 0118bd7e520bcd565a0bb17b3a39db7d
 ffed1299c6dd0198d59cdf9aecf0ab70
-verified
+unchecked
 explorer-wins.wad
 explorer wins
 The player who has explored most of the world wins the game
@@ -17207,7 +17207,7 @@ A strange new world.
 Nordfriese
 Nordfriese
 1600000000
-73
+75
 3
 9.666667
 0
@@ -17418,7 +17418,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-101
+102
 4
 9.75
 0
@@ -18810,7 +18810,7 @@ Shallow water terrains, impassable for ships but walkable.
 kaputtnik
 kaputtnik
 1600000000
-36
+37
 2
 9.5
 0
@@ -19744,7 +19744,7 @@ Minimalistic theme with reduced colors. For widelands version 1.0 you have to en
 kaputtnik
 kaputtnik
 1614637671
-46
+47
 2
 8.5
 0
@@ -20005,7 +20005,7 @@ This set of maps contains 6 small and medium-sized maps for 3-6 players. You can
 OIPUN
 OIPUN
 1615637480
-53
+54
 0
 0.0
 0
@@ -21965,7 +21965,7 @@ Contains flowering meadows, clearings, dolomites, clay soil, green water, muddy 
 OIPUN
 OIPUN
 1622916439
-55
+56
 1
 9.0
 0
@@ -22380,7 +22380,7 @@ White Summer Add-On is needed to play these maps.
 OIPUN
 OIPUN
 1623262581
-38
+39
 0
 0.0
 0

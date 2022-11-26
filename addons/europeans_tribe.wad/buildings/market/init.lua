@@ -29,14 +29,14 @@ wl.Descriptions():new_productionsite_type {
         reed = 4,
         brick = 4,
         grout = 4,
-        marble_column = 4,
+        marble = 4,
         quartz = 3,
         diamond = 3
     },
     return_on_dismantle = {
         scrap_wood = 8,
         granite = 6,
-        marble = 4,
+        marble = 3,
         quartz = 2,
         diamond = 2
     },
@@ -62,8 +62,8 @@ wl.Descriptions():new_productionsite_type {
         { name = "snack", amount = 8 },
         { name = "beer_strong", amount = 8 },
         { name = "mead", amount = 8 },
-        { name = "wine", amount = 8 },
         { name = "meal", amount = 8 },
+        { name = "wine", amount = 8 },
     },
 
     programs = {
