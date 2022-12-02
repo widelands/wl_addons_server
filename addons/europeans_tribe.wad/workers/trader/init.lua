@@ -11,8 +11,10 @@ wl.Descriptions():new_worker_type {
     vision_range = 3,
     
     buildcost = {
-        europeans_scout_advanced = 1,
+        europeans_carrier_3 = 1,
         europeans_carrier_horse = 1,
+        quartz = 1,
+        diamond = 1,
         gold = 1
     },
 
