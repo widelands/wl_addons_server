@@ -209,7 +209,7 @@ This addon adds my maps ''Java and Sumatra 1.0'', ''Java and Sumatra 1.1'' and '
 Nilpanda
 Nilpanda
 1666688231
-39
+40
 0
 0
 0
@@ -297,7 +297,7 @@ Provides the scenario ''Along the River''.  This scenario was converted to be pl
 hessenfarmer, fk
 hessenfarmer
 1633431899
-56
+57
 0
 0
 0
@@ -425,7 +425,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-39
+40
 0
 0
 0
@@ -512,7 +512,7 @@ Maps for the 2021 Tournament
 hessenfarmer
 hessenfarmer
 1619867883
-49
+50
 0
 0
 0
@@ -714,7 +714,7 @@ Win Condition for the 2021 Tournament: Create 10 Heroes without any coal from mo
 hessenfarmer
 hessenfarmer
 1619867883
-20
+21
 0
 0
 0
@@ -796,7 +796,7 @@ No description
 Solstice
 Solstice_s_Return
 1657988804
-45
+47
 0
 0
 0
@@ -1027,7 +1027,7 @@ No description
 Mr_Reibekuchen
 Mr_Reibekuchen
 1647247922
-27
+28
 0
 0
 0
@@ -1149,7 +1149,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-85
+88
 0
 0
 0
@@ -1540,7 +1540,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-88
+89
 0
 0
 0
@@ -1619,7 +1619,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings and workers from Barba
 MarkMcWire
 MarkMcWire
 1621788282
-363
+364
 0
 0
 0
@@ -1639,9 +1639,9 @@ Nordfriese
 The current version of this add-on has a bug that prevents the game from starting under some circumstances: Many of its <font shadow=1 italic=1>init.lua</font> files reference the global variable <font shadow=1 italic=1>descriptions</font> which may be undefined. Please change all occurrences to <font shadow=1 italic=1>wl.Descriptions()</font> instead.    @MarkMcWire
 2.4.6
 1650721500
-3.2.3
+3.2.4
 157
-78114320
+78114731
 tribes
 0
 336
@@ -9481,7 +9481,7 @@ ru.mo
 sk.mo
 sv.mo
 7497
-5d45d17635c9f1eee7dc3d34607bcdf2
+aa0d61a93c16a36dcc7a82782a4799a8
 7d672b6105fabbc2e717e81e40efd29b
 fbbd5b53033a58de73a4fe01bcb2f66f
 a08c175b1f94c27817eb9f4d6d07a9ff
@@ -11600,15 +11600,15 @@ d091e2c4c5e76b574b165c866c05952d
 a216c677836ef4ca53382c44145f882c
 03a7db3c2b456e2b5ce8d35545856e35
 8249e56074c3f8bb0641584424f06648
-c140209091734a50ad4a999f25692fbf
-6b4430c46117c13dac225be626d240a1
-0e7d3275e19705e76fabb6cbbc4b5605
-1497b421d892a45d977c68f20afea240
-01a56733050b3cf7f0dabe7de2db1798
-002c38149f26abdafe0956894c0d3908
-2ebbedbf7b6265d69bc55d07c8652f82
-2ae7c963ff2fe32eae2f3d57b3e4a54c
-8930a672ab016c84f0f76ef5f829a2e3
+54cde9a8bf4ae1d9e11ef1ba289d76eb
+16998e55167f091376a2622f0833549c
+fd08a4bb3bf4a018d81c9f06a0bd8ee6
+7ff5820e37226d31d2d83671faeae2ab
+c9345dd68bb96452e73fb09743a81c60
+90b19841c15bdd3048f416302520ed6f
+81d53cda2fba38b9f98fbe3e90bcb708
+5f755e9b6c92671179ce087a0f40a21b
+506b7a02e0cc7fa797ed6b6de553dd8c
 57d5808548fe0e2b43d9c45c7c17402a
 92b75ebe3b692dcc3b5cf97787536090
 d270ed57bc0dc755c97caebd1baa49b4
@@ -16979,14 +16979,14 @@ f92bf3c9f58daf3c2f3954a925e37cf8
 0118bd7e520bcd565a0bb17b3a39db7d
 ffed1299c6dd0198d59cdf9aecf0ab70
 0
-verified
+unchecked
 explorer-wins.wad
 explorer wins
 The player who has explored most of the world wins the game
 aDiscoverer
 aDiscoverer
 1667043185
-19
+20
 0
 0
 0
@@ -17299,7 +17299,7 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-61
+62
 0
 0
 0
@@ -17380,7 +17380,7 @@ A strange new world.
 Nordfriese
 Nordfriese
 1600000000
-81
+82
 0
 0
 0
@@ -17608,7 +17608,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-113
+115
 0
 0
 0
@@ -17776,7 +17776,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-132
+135
 0
 0
 0
@@ -18948,7 +18948,7 @@ Increases all worker experience thresholds to 40 times the default value.
 Nordfriese
 Nordfriese
 1600000000
-38
+39
 0
 0
 0
@@ -19029,7 +19029,7 @@ Shallow water terrains, impassable for ships but walkable.
 kaputtnik
 kaputtnik
 1600000000
-38
+40
 0
 0
 0
@@ -20020,7 +20020,7 @@ Minimalistic theme with reduced colors. For widelands version 1.0 you have to en
 kaputtnik
 kaputtnik
 1614637671
-54
+55
 0
 0
 0
@@ -20222,7 +20222,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-44
+45
 0
 0
 0
@@ -21225,7 +21225,7 @@ A headquarters-like starting condition with approximately 30% more wares and wor
 the-x
 the-x
 1622124029
-40
+41
 0
 0
 0
@@ -21829,7 +21829,7 @@ Make the ‘water’ resource more useful by giving wells a larger radius and a 
 Nordfriese
 Nordfriese
 1600000000
-60
+61
 0
 0
 0
@@ -22362,7 +22362,7 @@ Contains flowering meadows, clearings, dolomites, clay soil, green water, muddy 
 OIPUN
 OIPUN
 1622916439
-59
+60
 0
 0
 0
