@@ -10,7 +10,7 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 4,
     
-    experience = 36,
+    experience = 12,
     becomes = "europeans_trader",
 
     programs = {

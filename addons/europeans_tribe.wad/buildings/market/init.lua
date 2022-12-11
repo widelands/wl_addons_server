@@ -128,7 +128,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has mead:4",
                 "consume=mead:4",
                 "animate=working duration:15s",
-                "produce=coin_copper:2 coin_silver:2",
+                "produce=coin_copper:4",
                 "sleep=duration:30s",
             }
         },
@@ -136,12 +136,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs coin_silver",
+                "return=skipped unless economy needs coin_copper or economy needs coin_silver",
                 "return=skipped when economy needs beer_strong",
                 "return=failed unless site has beer_strong:4",
                 "consume=beer_strong:4",
                 "animate=working duration:15s",
-                "produce=coin_silver:3",
+                "produce=coin_copper:2 coin_silver:2",
                 "sleep=duration:30s",
             }
         },
@@ -154,7 +154,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has meal:4",
                 "consume=meal:4",
                 "animate=working duration:15s",
-                "produce=coin_silver:2 coin_gold",
+                "produce=coin_silver:3",
                 "sleep=duration:30s",
             }
         },

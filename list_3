@@ -215,7 +215,7 @@ Nilpanda
 
 sync_safe
 1666688231
-41
+43
 0
 0
 0
@@ -437,7 +437,7 @@ TRueDesk
 
 sync_safe
 1666686938
-40
+42
 0
 0
 0
@@ -1582,7 +1582,7 @@ MarkMcWire
 
 sync_safe
 1625854267
-89
+90
 0
 0
 0
@@ -1664,7 +1664,7 @@ MarkMcWire
 
 sync_safe
 1621788282
-371
+378
 0
 0
 0
@@ -1684,9 +1684,9 @@ Nordfriese
 The current version of this add-on has a bug that prevents the game from starting under some circumstances: Many of its <font shadow=1 italic=1>init.lua</font> files reference the global variable <font shadow=1 italic=1>descriptions</font> which may be undefined. Please change all occurrences to <font shadow=1 italic=1>wl.Descriptions()</font> instead.    @MarkMcWire
 2.4.6
 1650721500
-3.2.4
+3.2.7
 157
-78114731
+78128165
 tribes
 0
 336
@@ -9526,7 +9526,7 @@ ru.mo
 sk.mo
 sv.mo
 7497
-aa0d61a93c16a36dcc7a82782a4799a8
+9c490d942b40bdec81c71fbbbebcedf2
 7d672b6105fabbc2e717e81e40efd29b
 fbbd5b53033a58de73a4fe01bcb2f66f
 a08c175b1f94c27817eb9f4d6d07a9ff
@@ -9603,7 +9603,7 @@ a17cc7fa28f9d3a3b4014b9cdce27c1b
 c110811cf02fdc377e4146251eb3cc7c
 2fa07288946022006d5ad3abcacdb6e0
 58113b79f098818db2fefe38ac656732
-c1d824609243cf08cc1ed8636a4533c0
+d86153e51658cbad692c161bc776a6a9
 57048fa6864636a12901ca49876c6c1b
 4bef98512bd5e3c3f86084278eb7e9d6
 2447b56420c4c5c5a5180e0c33f8bbf6
@@ -9616,7 +9616,7 @@ c5ce1638f29614abb08d5d279154b394
 10eec0d7806691dec8a0a17ee61ec465
 72f9e09fb955be8a02912bdd2bbb1f51
 a472ce45cdc8d7311d223471dce49189
-6245ef894a06820a853cfd39aad63827
+1103ac4f0a4669909bcb645f6c394c33
 4fba1dc7d4755a049e4fe96527bf6bcb
 7fd85e23230482974387a59d90d121ce
 7b1c5a21d5a80108c0e623804c61186a
@@ -12385,7 +12385,7 @@ e514ac56f8dda3a486779342cf0615fc
 1036ea1a0498f30e177f3484e2149cbb
 0d1ff099bd1ec6987a7a50ce47765d9a
 85dcc7032c1f882708b13bf0683d5d93
-ea977548f157caec9e0d5996fe1b660c
+ecd50f712d52c7d708487fd9d8697406
 4a222102485217a03b01a518101f1e60
 f0c44f025d4dfe0b1ec67d0035373dae
 84f41cf30b68b7c038ace9d3b1d080f3
@@ -14995,7 +14995,7 @@ fefea900ac0b998e551258108cc829b8
 7209ada6174e5ac7ee68211d47c3726f
 bec6399f342d7c8b107ae7e9d759e1f5
 182de5469ded05a531274cffcee007a9
-8b84a0502da9bb70baf6fefe16777155
+7bde19de2412a53aba6d0023df456de6
 5b05b62953898037ab104c578de255b6
 3fc6e8c29fa8ce1575955dd601272b1b
 cf0f48642b68a421a9d83b887a9b32f0
@@ -17440,7 +17440,7 @@ Nordfriese
 
 sync_safe
 1600000000
-83
+84
 0
 0
 0
@@ -17671,7 +17671,7 @@ Nordfriese
 
 sync_safe
 1600000000
-116
+117
 0
 0
 0
@@ -17842,7 +17842,7 @@ Nordfriese
 
 sync_safe
 1600000000
-136
+137
 0
 0
 0
@@ -20398,7 +20398,7 @@ OIPUN
 
 sync_safe
 1615637480
-65
+67
 0
 0
 0
