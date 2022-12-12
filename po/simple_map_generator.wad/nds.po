@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Benedikt Straub <benedikt-straub@web.de>, 2022
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-12 03:04+0100\n"
+"PO-Revision-Date: 2022-12-11 09:24+0000\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2022\n"
+"Language-Team: Low German (https://www.transifex.com/widelands/teams/35159/"
+"nds/)\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/simple_map_generator.wad/addon:2
+msgid "Simple Map Generator"
+msgstr "Slichter Kaartmaker"
+
+#: addons/simple_map_generator.wad/addon:3
+msgid "A proof-of-concept map generator that generates very, very simple maps."
+msgstr ""
+"Een Kaartmaker, wat blots daarto daar is, dat man sücht, dat Kaartmaker-"
+"Verwiederns gahn, un wenn ganz slichte Kaarten maakt."
+
+#: addons/simple_map_generator.wad/init.lua:4
+msgid "Initializing map generator…"
+msgstr "Kaartmaker vörbereiden …"
+
+#: addons/simple_map_generator.wad/init.lua:122
+msgid "Generating map… (%1$d / %2$d)"
+msgstr "Maakt Kaart … (%1$d / %2$d)"
+
+#: addons/simple_map_generator.wad/init.lua:193
+msgid "Finalizing map…"
+msgstr "Kaart fardig maken …"
+
+#: addons/simple_map_generator.wad/init.lua:201
+#, lua-format
+msgid "Random Player %u"
+msgstr "Tofällig Speler %u"
