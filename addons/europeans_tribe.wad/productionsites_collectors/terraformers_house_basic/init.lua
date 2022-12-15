@@ -51,8 +51,8 @@ wl.Descriptions():new_productionsite_type {
         prohibited_till = 7200,
         forced_after = 7800,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 3,
-        normal_ai_limit = 6
+        weak_ai_limit = 4,
+        normal_ai_limit = 8
     },
 
     working_positions = {
@@ -71,10 +71,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has coin_wood:4",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
-                "callworker=check_terraform_pond",
-                "call=terraforming_pond",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
                 "callworker=check_terraform_pond",
                 "call=terraforming_pond",
                 "sleep=duration:30s",
