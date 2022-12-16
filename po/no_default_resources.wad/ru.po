@@ -5,15 +5,16 @@
 #
 # Translators:
 # nskdmitry, 2021
+# Yuriy Sokolov <lention@mail.ru>, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-12-16 03:04+0100\n"
 "PO-Revision-Date: 2021-05-28 19:24+0000\n"
-"Last-Translator: nskdmitry, 2021\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -26,7 +27,7 @@ msgstr ""
 
 #: addons/no_default_resources.wad/addon:2
 msgid "Terrains without default resources"
-msgstr "Виды земель, отсутствующие по-умолчанию"
+msgstr "Ландшафты без ресурсов по-умолчанию"
 
 #: addons/no_default_resources.wad/addon:3
 msgid ""
@@ -34,28 +35,29 @@ msgid ""
 "add-on adds the same terrains but without any default resources. Keep in "
 "mind to set resources manually."
 msgstr ""
-"Такие ресурсы, как вода и рыба, могут примениться автоматически. Остальные "
-"вам будет нужно добавлять вручную."
+"Некоторых ландшафтах поставляются с автоматически добавленными ресурсами "
+"(водой и рыбой). Это дополнение добавляет те же ландшафты, но без каких-либо "
+"ресурсов по умолчанию. Не забывайте устанавливать ресурсы вручную."
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/no_default_resources.wad/editor.lua:7
 msgid "Summer terrains without default resources"
-msgstr "Виды земель не по-умолчанию, лето"
+msgstr "Летние ландшафты без основных ресурсов"
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/no_default_resources.wad/editor.lua:24
 msgid "Wasteland terrains without default resources"
-msgstr "Пустоши, отсутствующие по-умолчанию"
+msgstr "Пустоши без ресурсов по-умолчанию"
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/no_default_resources.wad/editor.lua:40
 msgid "Winter terrains without default resources"
-msgstr "Виды земель не по-умолчанию, зима"
+msgstr "Зимние ландшафты без ресурсов по-умолчанию"
 
 #. TRANSLATORS: A category in the editor for placing terrains on the map.
 #: addons/no_default_resources.wad/editor.lua:55
 msgid "Desert terrains without default resources"
-msgstr "Пустынные ландшафты, отсутствующие по-умолчанию"
+msgstr "Пустынные ландшафты, без ресурсов по-умолчанию"
 
 #: addons/no_default_resources.wad/world/terrains/desert/desert4/init.lua:5
 msgid "Desert (dry)"
@@ -103,7 +105,7 @@ msgstr "Бесплодная сухая степь"
 
 #: addons/no_default_resources.wad/world/terrains/summer/swamp/init.lua:5
 msgid "Swamp (dry)"
-msgstr "Подсохшее болото"
+msgstr "Сухое болото"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/ashes1/init.lua:5
 msgid "Ashes 1 (dry)"
@@ -115,19 +117,19 @@ msgstr "Сухой пепел 2"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/hardground1/init.lua:5
 msgid "Hard Ground 1 (dry)"
-msgstr "Каменистая земля 1"
+msgstr "Сухая Каменистая земля 1"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/hardground2/init.lua:5
 msgid "Hard Ground 2 (dry)"
-msgstr "Каменистая земля 2"
+msgstr "Сухая Каменистая земля 2"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/hardground3/init.lua:5
 msgid "Hard Ground 3 (dry)"
-msgstr "Каменистая земля 3"
+msgstr "Сухая Каменистая земля 3"
 
 #: addons/no_default_resources.wad/world/terrains/wasteland/hardground4/init.lua:5
 msgid "Hard Ground 4 (dry)"
-msgstr "Каменистая земля 4"
+msgstr "Сухая Каменистая земля 4"
 
 #: addons/no_default_resources.wad/world/terrains/winter/taiga/init.lua:5
 msgid "Taiga (dry)"
@@ -147,4 +149,4 @@ msgstr "Сухая тундра 3"
 
 #: addons/no_default_resources.wad/world/terrains/winter/tundra_taiga/init.lua:5
 msgid "Tundra Taiga (dry)"
-msgstr "Сухая тундра 4"
+msgstr "Сухая Тундро-тайга 4"

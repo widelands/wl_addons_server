@@ -6,15 +6,16 @@
 # Translators:
 # nskdmitry, 2021
 # Vasilii Anosov, 2022
+# Yuriy Sokolov <lention@mail.ru>, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-22 03:04+0100\n"
+"POT-Creation-Date: 2022-12-16 03:04+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
-"Last-Translator: Vasilii Anosov, 2022\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -27,7 +28,7 @@ msgstr ""
 
 #: addons/europeans_tribe.wad/addon:2
 msgid "Europeans Tribe"
-msgstr "Народы Европы"
+msgstr "Племя Европейцев"
 
 #: addons/europeans_tribe.wad/addon:3
 msgid ""
@@ -40,145 +41,145 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Barrier"
-msgstr "Усиленный сторожевой пост"
+msgstr "Продвинутый Форпост"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:35
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced barrier."
-msgstr "Солдаты пополнили гарнизон вашего усиленного сторожевого поста."
+msgstr "Ваши солдаты заняли продвинутый форпост."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:37
 msgctxt "europeans_building"
 msgid "Your advanced barrier discovered an aggressor."
-msgstr "Усиленный сторожевой пост заметил приближение врага."
+msgstr "Ваш продвинутый Форпост обнаружил врага."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:39
 msgctxt "europeans_building"
 msgid "Your advanced barrier is under attack."
-msgstr "Усиленный сторожевой пост атакован."
+msgstr "Ваш продвинутый Форпост атакован."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:41
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced barrier."
-msgstr "Защитники сторожевого поста перебиты."
+msgstr "Враг перебил защитников продвинутого Форпоста."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:43
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced barrier."
-msgstr "Ваши войска перебили охрану усиленного сторожевого поста."
+msgstr "Ваши солдаты разбили врага у продвинутого Форпоста."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Castle"
-msgstr "Укрепленный замок"
+msgstr "Продвинутый замок"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:38
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced castle."
-msgstr "Ваши солдаты заняли укрепленный замок."
+msgstr "Ваши солдаты заняли продвинутый Замок."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:40
 msgctxt "europeans_building"
 msgid "Your advanced castle discovered an aggressor."
-msgstr "В окрестностях укрепленного замка - враг."
+msgstr "Ваш продвинутый Замок обнаружил врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:42
 msgctxt "europeans_building"
 msgid "Your advanced castle is under attack."
-msgstr "Ваш укрепленный замок атакован."
+msgstr "Ваш продвинутый Замок атакован."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:44
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced castle."
-msgstr "Враг преодолел сопротивление гарнизона вашего укрепленного замка."
+msgstr "Враг перебил защитников продвинутого Замка."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_castle/init.lua:46
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced castle."
-msgstr "Нападение на ваш укрепленный замок отбито."
+msgstr "Ваши солдаты разбили врага у продвинутого замка."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Tower"
-msgstr "Укрепленная башня"
+msgstr "Продвинутая башня"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:42
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced tower."
-msgstr "Ваши солдаты заняли укрепленную башню."
+msgstr "Ваши солдаты заняли продвинутую башню."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:44
 msgctxt "europeans_building"
 msgid "Your advanced tower discovered an aggressor."
-msgstr "В окрестностях укрепленной башни - враг."
+msgstr "Ваша продвинутая Башня обнаружила врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:46
 msgctxt "europeans_building"
 msgid "Your advanced tower is under attack."
-msgstr "Ваша укрепленная башня атакована."
+msgstr "Ваша продвинутая Башня атакована."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:48
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced tower."
-msgstr "Враг преодолел сопротивление гарнизона вашей укрепленной башни."
+msgstr "Враг перебил защитников продвинутой Башни."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/advanced_tower/init.lua:50
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced tower."
-msgstr "Нападение на вашу укрепленную башню отбито."
+msgstr "Ваши солдаты разбили врага у продвинутой башни."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:8
 msgctxt "europeans_building"
 msgid "Barrier"
-msgstr "Сторожевой пост"
+msgstr "Форпост"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:70
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your barrier."
-msgstr "Ваши солдаты заняли сторожевой пост."
+msgstr "Ваши солдаты заняли Форпост."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:72
 msgctxt "europeans_building"
 msgid "Your barrier discovered an aggressor."
-msgstr "В окрестностях сторожевого поста - враг."
+msgstr "Ваш Форпост обнаружил врага."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:74
 msgctxt "europeans_building"
 msgid "Your barrier is under attack."
-msgstr "Ваш сторожевой пост атакован."
+msgstr "Ваш Форпост атакован."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:76
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the barrier."
-msgstr "Враг преодолел сопротивление гарнизона вашего сторожевого поста."
+msgstr "Враг перебил защитников Форпоста."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
 #: addons/europeans_tribe.wad/buildings/barrier/init.lua:78
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the barrier."
-msgstr "Нападение на сторожевой пост отбито."
+msgstr "Ваши солдаты разбили врага у Форпоста."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:8
@@ -196,7 +197,7 @@ msgstr "Ваши солдаты заняли замок."
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:65
 msgctxt "europeans_building"
 msgid "Your castle discovered an aggressor."
-msgstr "В окрестностях замка - враг."
+msgstr "Ваш Замок обнаружил врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:67
@@ -208,49 +209,49 @@ msgstr "Ваш замок атакован."
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:69
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the castle."
-msgstr "Враг преодолел сопротивление гарнизона замка."
+msgstr "Враг перебил защитников замка."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/castle/init.lua:71
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the castle."
-msgstr "Нападение на замок отбито."
+msgstr "Ваши солдаты разбили врага у замка."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:8
 msgctxt "europeans_building"
 msgid "Fortress"
-msgstr "Форт"
+msgstr "Крепость"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:60
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your fortress."
-msgstr "Ваши солдаты заняли форт."
+msgstr "Ваши солдаты заняли Крепость."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:62
 msgctxt "europeans_building"
 msgid "Your fortress discovered an aggressor."
-msgstr "В окрестностях форта - враг."
+msgstr "Ваша Крепость обнаружила врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:64
 msgctxt "europeans_building"
 msgid "Your fortress is under attack."
-msgstr "Ваш форт атакован."
+msgstr "Ваша Крепость атакована."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:66
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the fortress."
-msgstr "Враг преодолел сопротивление гарнизона форта."
+msgstr "Враг перебил защитников крепости."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/fortress/init.lua:68
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the fortress."
-msgstr "Нападение на форт отбито."
+msgstr "Ваши солдаты разбили врага у Крепости."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:8
@@ -268,25 +269,25 @@ msgstr "Ваши солдаты заняли сторожку."
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:58
 msgctxt "europeans_building"
 msgid "Your guardhouse discovered an aggressor."
-msgstr "В окрестностях сторожки - враг."
+msgstr "Ваша Сторожка обнаружила врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:60
 msgctxt "europeans_building"
 msgid "Your guardhouse is under attack."
-msgstr "На вашу сторожку напали."
+msgstr "Ваша Сторожка атакована."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:62
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the guardhouse."
-msgstr "Враг преодолел сопротивление гарнизона сторожки."
+msgstr "Враг перебил защитников сторожки"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/guardhouse/init.lua:64
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the guardhouse."
-msgstr "Нападение на сторожку отбито."
+msgstr "Ваши солдаты разбили врага у Сторожки."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/headquarters/init.lua:8
@@ -342,25 +343,25 @@ msgstr "Ваши солдаты заняли заставу."
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:53
 msgctxt "europeans_building"
 msgid "Your outpost discovered an aggressor."
-msgstr "В окрестностях заставы - враг."
+msgstr "Ваша застава обнаружила врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:55
 msgctxt "europeans_building"
 msgid "Your outpost is under attack."
-msgstr "На вашу заставу напали."
+msgstr "Ваш застава атакована."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:57
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the outpost."
-msgstr "Враг преодолел сопротивление гарнизона заставы."
+msgstr "Враг перебил защитников заставы."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/outpost/init.lua:59
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the outpost."
-msgstr "Нападение на сторожку отбито."
+msgstr "Ваши солдаты разбили врага у заставы."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/port/init.lua:8
@@ -372,7 +373,7 @@ msgstr "Порт"
 #: addons/europeans_tribe.wad/buildings/scouts_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Scout’s House"
-msgstr "Штаб разведки"
+msgstr "Продвинутый Дом Разведчика"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/europeans_tribe.wad/buildings/scouts_house_advanced/init.lua:60
@@ -384,7 +385,7 @@ msgstr "разведывает"
 #: addons/europeans_tribe.wad/buildings/scouts_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Scouts House"
-msgstr "Лачуга разведчика"
+msgstr "Базовый дом разведчика"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/europeans_tribe.wad/buildings/scouts_house_basic/init.lua:74
@@ -399,7 +400,7 @@ msgstr "разведка"
 #: addons/europeans_tribe.wad/buildings/scouts_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Scout’s House"
-msgstr "Дом разведчика"
+msgstr "Обычный Дом разведчика"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:8
@@ -417,25 +418,25 @@ msgstr "Ваши солдаты заняли караульную."
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:38
 msgctxt "europeans_building"
 msgid "Your sentry discovered an aggressor."
-msgstr "В окрестностях вашей караульной - враг."
+msgstr "Ваша Караульная обнаружила врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:40
 msgctxt "europeans_building"
 msgid "Your sentry is under attack."
-msgstr "На вашу караульную напали."
+msgstr "Ваша Караульная атакована."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:42
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the sentry."
-msgstr "Враг преодолел сопротивление гарнизона вашей караульной."
+msgstr "Враг перебил защитников Караульной."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:44
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the sentry."
-msgstr "Нападение на караульную отбито."
+msgstr "Ваши солдаты разбили врага у Караульной."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/store/init.lua:8
@@ -447,73 +448,73 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:8
 msgctxt "europeans_building"
 msgid "Medium Tower"
-msgstr "Башня"
+msgstr "Средняя Башня"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:58
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your medium tower."
-msgstr "Ваши солдаты заняли башню."
+msgstr "Ваши солдаты заняли среднюю башню."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:60
 msgctxt "europeans_building"
 msgid "Your medium tower discovered an aggressor."
-msgstr "В окрестностях башни - враг."
+msgstr "Ваша средняя Башня обнаружила врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:62
 msgctxt "europeans_building"
 msgid "Your medium tower is under attack."
-msgstr "На вашу башню напали."
+msgstr "Ваша средняя Башня атакована."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:64
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the medium tower."
-msgstr "Враг преодолел сопротивление гарнизона башни."
+msgstr "Враг перебил защитников средней башни."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower/init.lua:66
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the medium tower."
-msgstr "Нападение на башню отбито."
+msgstr "Ваши солдаты разбили врага у средней башни."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:8
 msgctxt "europeans_building"
 msgid "High Tower"
-msgstr "Высокая башня"
+msgstr "Дозорная Башня"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:50
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your high tower."
-msgstr "Ваши солдаты заняли высокую башню."
+msgstr "Ваши солдаты заняли Дозорную Башню."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:52
 msgctxt "europeans_building"
 msgid "Your high tower discovered an aggressor."
-msgstr "В окрестностях высокой башни - враг."
+msgstr "Ваша Дозорная Башня обнаружила врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:54
 msgctxt "europeans_building"
 msgid "Your high tower is under attack."
-msgstr "На вашу высокую башню напали."
+msgstr "Ваша Дозорная Башня атакована."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:56
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the high tower."
-msgstr "Враг преодолел сопротивление гарнизона вашей высокой башни."
+msgstr "Враг перебил защитников Дозорной Башни."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_high/init.lua:58
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the high tower."
-msgstr "Нападение на высокую башню отбито."
+msgstr "Ваши солдаты разбили врага у Дозорной Башни."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:8
@@ -531,25 +532,25 @@ msgstr "Ваши солдаты заняли малую башню."
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:50
 msgctxt "europeans_building"
 msgid "Your small tower discovered an aggressor."
-msgstr "В окрестностях малой башни - враг."
+msgstr "Ваша малая башня обнаружила врага."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:52
 msgctxt "europeans_building"
 msgid "Your small tower is under attack."
-msgstr "На вашу малую башню напали."
+msgstr "Ваша Малая Башня атакована."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:54
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the small tower."
-msgstr "Враг преодолел сопротивление гарнизона малой башни."
+msgstr "Враг перебил защитников Малой Башни."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/buildings/tower_small/init.lua:56
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the small tower."
-msgstr "Нападение на малую башню отбито."
+msgstr "Ваши солдаты разбили врага у Малой Башни."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/trading_post/init.lua:8
@@ -561,19 +562,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/warehouse_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Warehouse"
-msgstr "Расширенный склад"
+msgstr "Продвинутый склад"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Warehouse"
-msgstr "Простой склад"
+msgstr "Базовый склад"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/warehouse_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Warehouse"
-msgstr "Обустроенный склад"
+msgstr "Обычный склад"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/barleyfield/harvested/init.lua:8
@@ -879,7 +880,7 @@ msgstr "Немного угля"
 #: addons/europeans_tribe.wad/immovables/resi_coal_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
-msgstr "Сколько-то угля"
+msgstr "Много угля"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_gold_1/init.lua:8
@@ -891,7 +892,7 @@ msgstr "Немного золота"
 #: addons/europeans_tribe.wad/immovables/resi_gold_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Gold"
-msgstr "Сколько-то золота"
+msgstr "Много золота"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_iron_1/init.lua:8
@@ -903,7 +904,7 @@ msgstr "Немного железа"
 #: addons/europeans_tribe.wad/immovables/resi_iron_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Iron"
-msgstr "Сколько-то железа"
+msgstr "Много железа"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_none/init.lua:8
@@ -921,7 +922,7 @@ msgstr "Немного кристаллов"
 #: addons/europeans_tribe.wad/immovables/resi_stones_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Crystals"
-msgstr "Сколько-то кристаллов"
+msgstr "Много кристаллов"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_water/init.lua:8
@@ -933,7 +934,7 @@ msgstr "Вода"
 #: addons/europeans_tribe.wad/immovables/ryefield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr "Рожь (засеяно)"
+msgstr "Ржаное поле (убрано)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/medium/init.lua:8
@@ -945,19 +946,19 @@ msgstr "Рожь (растущая)"
 #: addons/europeans_tribe.wad/immovables/ryefield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr "Рожь (убрана)"
+msgstr "Ржаное поле (спелое)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/small/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr "Рожь (всходит)"
+msgstr "Ржаное поле (ростки)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/ryefield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr "Рожь (дала ростки)"
+msgstr "Ржаное поле (крохотное)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/shipconstruction_europeans/init.lua:8
@@ -1005,7 +1006,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Animal Farm"
-msgstr "Скотный двор"
+msgstr "Базовый скотный двор"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_basic/init.lua:64
@@ -1099,7 +1100,7 @@ msgstr "Скотный двор"
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:66
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:88
 msgid "working"
-msgstr "занят"
+msgstr "работает"
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_basic/init.lua:74
@@ -1264,7 +1265,7 @@ msgstr "разводит лошадей"
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Beekeeper’s House"
-msgstr ""
+msgstr "Продвинутая Пасека"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making honey because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:41
@@ -1303,19 +1304,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Beekeeper’s Hut"
-msgstr ""
+msgstr "Базовая Пасека"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Beekeeper’s House"
-msgstr ""
+msgstr "Обычная Пасека"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Farm"
-msgstr "Ферма"
+msgstr "Базовая Ферма"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_basic/init.lua:108
@@ -1575,14 +1576,16 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_medium_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Reed Yard"
-msgstr "Тростниковая ферма"
+msgstr "Плантация"
 
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_medium_basic/init.lua:101
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
-msgstr "Здешний пахарь не имеет места под засев ячменя."
+msgstr ""
+"Садовник, работающий на плантации тростника не имеет свободной земли под "
+"засев."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_medium_normal/init.lua:8
@@ -1601,6 +1604,8 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Advanced Clay Pit"
 msgstr ""
+" \n"
+"Продвинутый Глиняный карьер"
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/clay_pit_advanced/init.lua:54
@@ -1611,7 +1616,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/clay_pit_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Clay Pit"
-msgstr ""
+msgstr "Базовый Глиняный карьер"
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/clay_pit_basic/init.lua:85
@@ -1630,13 +1635,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/clay_pit_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Clay Pit"
-msgstr ""
+msgstr "Обычный Глиняный карьер"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Forester’s House"
-msgstr "Усадьба лесника"
+msgstr "Продвинутый Дом Лесника"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:45
@@ -1650,19 +1655,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Ranger’s Hut"
-msgstr "Лачуга стрелка"
+msgstr "Базовая Хижина лесничего"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Forester’s House"
-msgstr "Дом лесника"
+msgstr "Обычный Дом лесника"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Lumberjack’s House"
-msgstr "Дом лесоруба"
+msgstr "Продвинутый Дом дровосека"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:41
@@ -1690,19 +1695,19 @@ msgid ""
 "his work area. You should consider dismantling or destroying the building or "
 "building a forester’s house."
 msgstr ""
-"Здешний лесоруб не может найти деревья в своей рабочей области. Вам стоило "
+"Здешний Дровосек не может найти деревья в своей рабочей области. Вам стоило "
 "бы разобрать/снести это здание или поставить рядом домик лесника."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Lumberjack’s Hut"
-msgstr "Лачуга лесоруба"
+msgstr "Базовая Хижина дровосека"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:72
 msgid "felling trees"
-msgstr "рубит деревья"
+msgstr "валит деревья"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:94
 msgctxt "europeans_building"
@@ -1711,15 +1716,15 @@ msgid ""
 "work area. You should consider enhancing it to increase its working area or "
 "building a ranger’s hut."
 msgstr ""
-"Здешний лесник не может найти деревья в своей рабочей области. Вам стоит "
-"перестроить дом для расширения рабочей области или поставить рядом домик "
-"лесника."
+"Здешний Дровосек не может найти деревья в своей рабочей области. Вам стоит "
+"перестроить дом для расширения рабочей области или поставить рядом дом "
+"лесничего."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Lumberjack's House"
-msgstr ""
+msgstr "Обычный дом дровосека"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:73
 msgctxt "europeans_building"
@@ -1733,7 +1738,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Quarry"
-msgstr "Расширенная каменоломня"
+msgstr "Продвинутая каменоломня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_advanced/init.lua:42
@@ -1885,13 +1890,13 @@ msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any stone in his work area."
 msgstr ""
-"Здешний каменотес не может найти скалы в пределах своей рабочей области."
+"Здешний Камнетёс не может найти скалы в пределах своей рабочей области."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Quarry"
-msgstr "Домик каменотеса"
+msgstr "Базовая каменоломня"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_basic/init.lua:134
 msgctxt "europeans_building"
@@ -1906,20 +1911,20 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Quarry"
-msgstr "Каменоломня"
+msgstr "Обычная Каменоломня"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_normal/init.lua:113
 msgctxt "europeans_building"
 msgid ""
 "The stonecutter working at this quarry can’t find any rocks in his work area."
 msgstr ""
-"Здешний каменотес не может найти скалы в пределах своей рабочей области."
+"Здешний Камнетёс не может найти скалы в пределах своей рабочей области."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Terraformer’s House"
-msgstr ""
+msgstr "Продвинутый дом терраформера"
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:73
@@ -1954,19 +1959,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Terraformer’s House"
-msgstr ""
+msgstr "Базовый дом терраформера"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Terraformer’s House"
-msgstr ""
+msgstr "Обычный дом терраформера"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Brewery"
-msgstr "Обновленная пивоварня"
+msgstr "Продвинутая пивоварня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_advanced/init.lua:70
@@ -1997,19 +2002,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Brewery"
-msgstr "Пивоварня"
+msgstr "Базовая Пивоварня"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Brewery"
-msgstr "Хорошая пивоварня"
+msgstr "Обычная пивоварня"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_winery/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Brewery and Winery"
-msgstr "Расширенная пивовиноварня"
+msgstr "Продвинутая пивоварня и Винодельня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
 #: addons/europeans_tribe.wad/productionsites_craft/brewery_winery/init.lua:106
@@ -2035,13 +2040,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Charcoal Kiln"
-msgstr "Простая печь углежога"
+msgstr "Базовая печь углежога"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Charcoal Kiln"
-msgstr "Печь углежога"
+msgstr "Обычная Печь углежога"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/inn_level_1/init.lua:8
@@ -2085,7 +2090,7 @@ msgstr "Трактир 2 уровня"
 #: addons/europeans_tribe.wad/productionsites_craft/mill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Mill"
-msgstr "Модернезированная мельница"
+msgstr "Продвинутая мельница"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
 #: addons/europeans_tribe.wad/productionsites_craft/mill_advanced/init.lua:66
@@ -2099,19 +2104,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/mill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Mill"
-msgstr "Простая мельница"
+msgstr "Базовая мельница"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/mill_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Mill"
-msgstr "Большая мельница"
+msgstr "Обычная  мельница"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Sawmill"
-msgstr "Лесоперерабатывающий завод"
+msgstr "Продвинутая Лесопилка"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:54
@@ -2133,19 +2138,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Sawmill"
-msgstr "Скоропалительная лесопилка"
+msgstr "Базовая лесопилка"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Sawmill"
-msgstr "Лесопилка"
+msgstr "Обычная Лесопилка"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Smelting Works"
-msgstr "Улучшенная плавильня"
+msgstr "Продвинутая Литейная"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:65
@@ -2178,19 +2183,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Smelting Works"
-msgstr "Простая плавильня"
+msgstr "Базовая Литейная"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Smelting Works"
-msgstr "Плавильня"
+msgstr "Обычная Литейная"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Armorsmithy"
-msgstr ""
+msgstr "Продвинутая бронная"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:80
@@ -2265,19 +2270,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Armorsmithy"
-msgstr ""
+msgstr "Базовая Бронная"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Armorsmithy"
-msgstr ""
+msgstr "Обычная Бронная"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Toolsmithy"
-msgstr ""
+msgstr "Продвинутая Инструментальная мастерская"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:81
@@ -2387,19 +2392,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Toolsmithy"
-msgstr ""
+msgstr "Базовая Инструментальная мастерская"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Toolsmithy"
-msgstr ""
+msgstr "Обычная Инструментальная мастерская"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Stonemason’s House"
-msgstr ""
+msgstr "Продвинутый Дом Каменщика"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:60
@@ -2426,19 +2431,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Lime Kiln"
-msgstr ""
+msgstr "Базовая Цементная Печь"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Lime Kiln"
-msgstr ""
+msgstr "Обычная Цементная Печь"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tavern_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Tavern"
-msgstr "Малая таверна"
+msgstr "Базовая таверна"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tavern_level_1/init.lua:8
@@ -2456,7 +2461,7 @@ msgstr "Таверна 2 уровня"
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Weaving Mill"
-msgstr "Ткацкая фабрика"
+msgstr "Продвинутая Ткацкая фабрика"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:64
@@ -2484,19 +2489,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Weaving Mill"
-msgstr "Ткацкий станок"
+msgstr "Базовая Ткацкая фабрика"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Weaving Mill"
-msgstr "Ткацкий цех"
+msgstr "Обычная Ткацкая фабрика"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Coal Mine"
-msgstr "Поверхностная угольная шахта"
+msgstr "Базовая угольная шахта"
 
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:100
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:87
@@ -2561,7 +2566,7 @@ msgstr "Угольная шахта 3 уровня"
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 4"
-msgstr "Угольная ахта 4 уровня"
+msgstr "Угольная шахта 4 уровня"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_5/init.lua:8
@@ -2582,7 +2587,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Gold Mine"
-msgstr "Поверхностная золотая шахта"
+msgstr "Базовая золотая шахта"
 
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:104
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:89
@@ -2674,7 +2679,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Iron Mine"
-msgstr "Поверхностная железная шахта"
+msgstr "Базовый железный рудник"
 
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:157
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:131
@@ -2743,14 +2748,14 @@ msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
-"Залежи железа исчерпаны. Ожидается спад добычи при сохранении издержек. Вы "
-"можете разобрать или снести шахту."
+"Главная жила железного рудника исчерпана. Ожидается спад добычи при "
+"сохранении затрат. Вы можете разобрать или снести шахту."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_mining/well_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Well"
-msgstr "Неглубокий колодец"
+msgstr "Базовый Колодец"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining water because ...
 #: addons/europeans_tribe.wad/productionsites_mining/well_basic/init.lua:78
@@ -2792,7 +2797,7 @@ msgstr "Вода вычерпана"
 #: addons/europeans_tribe.wad/productionsites_mining/well_level_6/init.lua:70
 msgctxt "europeans_building"
 msgid "The carrier working at this well can’t find any water in his well."
-msgstr "Носильщик не может набрать воду в этом колодце."
+msgstr "Носильщик не может найти воду в этом колодце."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_mining/well_level_1/init.lua:8
@@ -2839,7 +2844,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Recruitement Center"
-msgstr "Расширенный отдел кадров"
+msgstr "Продвинутый отдел кадров"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:126
@@ -2892,7 +2897,7 @@ msgstr "нанимает пасечника"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:190
 msgctxt "europeans_building"
 msgid "recruiting breeder"
-msgstr "нанимает скотовода"
+msgstr "нанимает заводчика скота"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:206
@@ -2956,7 +2961,7 @@ msgstr "нанимает геолога"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:294
 msgctxt "europeans_building"
 msgid "recruiting lumberjack"
-msgstr "нанимает лесоруба"
+msgstr "нанимает Дровосека"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:303
@@ -3004,7 +3009,7 @@ msgstr "нанимает карабела"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:368
 msgctxt "europeans_building"
 msgid "recruiting smelter"
-msgstr "нанимает плавильщика"
+msgstr "нанимает Литейщика"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:372
@@ -3020,7 +3025,7 @@ msgstr "нанимает кузнеца"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:394
 msgctxt "europeans_building"
 msgid "recruiting stonecutter"
-msgstr "нанимает каменотеса"
+msgstr "нанимает Камнетёса"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:396
@@ -3050,7 +3055,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_level_4/init.lua:76
 msgctxt "europeans_building"
 msgid "recruiting trainer"
-msgstr "нанимает сержанта"
+msgstr "нанимает Инструктора"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:432
@@ -3064,7 +3069,7 @@ msgstr "нанимает ткача"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Recruitement Center"
-msgstr "Отдел кадров"
+msgstr "Базовый отдел кадров"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:359
@@ -3082,13 +3087,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Recruitement Center"
-msgstr "Обустроенный отдел кадров"
+msgstr "Обычный отдел кадров"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Trainingscamp"
-msgstr "Простой тренировочный лагень"
+msgstr "Простой тренировочный лагерь"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:96
@@ -3128,25 +3133,25 @@ msgstr "Тренировочный лагерь 4 уровня"
 #: addons/europeans_tribe.wad/recruitementsites/yard_ferry_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Ferry Yard"
-msgstr "Большая паромная мастерская"
+msgstr "Продвинутая паромная верфь"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ferry_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Ferry Yard"
-msgstr "Домик паромного мастера"
+msgstr "Базовая Паромная верфь"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ferry_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Ferry Yard"
-msgstr "Паромная мастерская"
+msgstr "Обычная Паромная верфь"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Shipyard"
-msgstr "Большая верфь"
+msgstr "Продвинутая верфь"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_advanced/init.lua:69
@@ -3159,13 +3164,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Shipyard"
-msgstr "Корабельная мастерская"
+msgstr "Базовая Верфь"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Shipyard"
-msgstr "Верфь"
+msgstr "Обычная Верфь"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/europeans_tribe.wad/recruitementsites/yard_ships_normal/init.lua:75
@@ -3223,7 +3228,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
 msgid "Struggling Outpost"
-msgstr "Осажденная застава"
+msgstr "Колония первопроходцев"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:13
@@ -3237,7 +3242,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost"
-msgstr "Торговое поселение"
+msgstr "Торговая застава"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:13
@@ -3249,7 +3254,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:11
 msgid "Advanced Village"
-msgstr ""
+msgstr "Продвинутая Деревня"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:13
@@ -3261,7 +3266,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:11
 msgid "Basic Village"
-msgstr ""
+msgstr "Базовая Деревня"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:13
@@ -3273,7 +3278,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:11
 msgid "Normal Village"
-msgstr ""
+msgstr "Обычная Деревня"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:13
@@ -3433,7 +3438,7 @@ msgstr "Кипр"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Battle Arena"
-msgstr "Простой тренировочный плац"
+msgstr "Базовая Арена поединков"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:119
@@ -3482,7 +3487,7 @@ msgstr "повышает уровень защиты солдата с 0 до 1"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:188
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
-msgstr "повышает уровень атаки солдата с 0 до 1"
+msgstr "повышает уровень урона солдата с 0 до 1"
 
 #. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:180
@@ -3508,7 +3513,7 @@ msgstr "Нет солдат предыдущего уровня для обуч�
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 1"
-msgstr "Тренировочный плац 1 уровня"
+msgstr "Арена поединков 1 уровня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:118
@@ -3544,19 +3549,19 @@ msgstr "повышает уровень защиты солдата с 1 до 2"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:200
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr "повышает уровень атаки солдат с 1 до 2"
+msgstr "повышает уровень урона солдат с 1 до 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 2"
-msgstr "Тренировочный плац 2 уровня"
+msgstr "Арена поединков 2 уровня"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 3"
-msgstr "Тренировочный плац 3 уровня"
+msgstr "Арена поединков 3 уровня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:127
@@ -3584,13 +3589,13 @@ msgstr "повышает уровень защиты солдата с 2 до 3"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:212
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr "повышает уровень атаки солдат с 2 до 3"
+msgstr "повышает уровень урона солдат с 2 до 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Battle Arena Level 4"
-msgstr "Тренировочный плац 4 уровня"
+msgstr "Арена поединков 4 уровня"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/init.lua:10
 msgid "Mark McWire"
@@ -3599,11 +3604,11 @@ msgstr "Марк МакВайр"
 #. TRANSLATORS: This is a tribe name
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/init.lua:12
 msgid "Europeans"
-msgstr "Европейские страны"
+msgstr "Европейцы"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/init.lua:13
 msgid "This is the culture of the Europeans."
-msgstr "Передает европейскую культуру."
+msgstr "Это культура Европейцев."
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental Europeans tribe."
@@ -3651,7 +3656,7 @@ msgstr "Доски - важнейший стройматериал."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:126
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr "На них пилят бревна на лесопилке."
+msgstr "Их получают из брёвен на лесопилке."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:128
@@ -3683,14 +3688,15 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:160
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
-msgstr "Сукно нужно для ряда зданий. Ткут его из тростника."
+msgstr "Полотно нужно для ряда зданий. Ткут его из тростника."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:169
 msgctxt "europeans_ware"
 msgid "Wool is the hair of sheep. Weaving mills use it to make armor."
 msgstr ""
-"Шерсть состригают с овец. Ткацкий цех использует его для обшивки доспехов."
+"Шерсть - это волосяной покров овец. Ткацкий цех использует его для "
+"изготовления доспехов."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:182
@@ -3942,7 +3948,7 @@ msgid ""
 "Fruit are berries gathered from berry bushes by a fruit collector. They are "
 "used to brew fruit wine."
 msgstr ""
-"Ягоды растут на плодовых кустах, пока их не соберет садовник. Из них варят "
+"Ягоды растут на плодовых кустах, пока их не соберет собиратель. Из них варят "
 "настойки."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Grape
@@ -4367,7 +4373,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:896
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
-msgstr "Носят товары по дорогам."
+msgstr "Носят товары по дорогам в руках."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:905
@@ -4410,7 +4416,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:959
 msgctxt "europeans_worker"
 msgid "Ships wares across narrow rivers."
-msgstr "Перевозит товары через водные препятствия."
+msgstr "Перевозит товары через узкие протоки."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Builder
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:971
@@ -5277,13 +5283,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2816
 msgctxt "europeans_building"
 msgid "Smelts ore into iron."
-msgstr "Плавка руды в железо."
+msgstr "Плавит руду в железо."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2823
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold."
-msgstr "Плавка руды в железо и золото."
+msgstr "Плавит руду в железо и золото."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2830
@@ -5761,37 +5767,37 @@ msgstr "Обычный Пекарь"
 #: addons/europeans_tribe.wad/workers/beekeeper_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Beekeeper"
-msgstr "Продвинутый Пчеловод"
+msgstr "Продвинутый Пасечник"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Beekeeper"
-msgstr "Базовый Пчеловод"
+msgstr "Базовый Пасечник"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/beekeeper_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Beekeeper"
-msgstr "Обычный Пчеловод"
+msgstr "Обычный Пасечник"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Breeder"
-msgstr "Продвинутый Селекционер"
+msgstr "Продвинутый заводчик скота"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Breeder"
-msgstr "Базовый Селекционер"
+msgstr "Базовый заводчик скота"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/breeder_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Breeder"
-msgstr "Обычный Селекционер"
+msgstr "Обычный заводчик скота"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/brewer_advanced/init.lua:8
@@ -5821,37 +5827,37 @@ msgstr "Строитель"
 #: addons/europeans_tribe.wad/workers/carpenter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Carpenter / Sawyer"
-msgstr "Продвинутый Плотник / Пильщик"
+msgstr "Продвинутый Плотник / Распиловщик"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carpenter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Carpenter / Sawyer"
-msgstr "Базовый Плотник / Пильщик"
+msgstr "Базовый Плотник / Распиловщик"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carpenter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Carpenter / Sawyer"
-msgstr "Обычный Плотник / Пильщик"
+msgstr "Обычный Плотник / Распиловщик"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier/init.lua:8
 msgctxt "europeans_worker"
 msgid "Carrier"
-msgstr "Перевозчик"
+msgstr "Носильщик"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_1/init.lua:8
 msgctxt "europeans_worker"
 msgid "Carrier 1"
-msgstr "Перевозчик 1"
+msgstr "Носильщик 1"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_2/init.lua:8
 msgctxt "europeans_worker"
 msgid "Carrier 2"
-msgstr "Перевозчик 2"
+msgstr "Носильщик 2"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/carrier_3/init.lua:8
@@ -5905,19 +5911,19 @@ msgstr "Обычный Углежог"
 #: addons/europeans_tribe.wad/workers/claydigger_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Clay Digger"
-msgstr "Продвинутый Глинокоп"
+msgstr "Продвинутый землекоп"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/claydigger_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Clay Digger"
-msgstr "Базовый Глинокоп"
+msgstr "Базовый землекоп"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/claydigger_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Clay Digger"
-msgstr "Обычный Глинокоп"
+msgstr "Обычный землекоп"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/farmer_advanced/init.lua:8
@@ -5941,7 +5947,7 @@ msgstr "Обычный Фермер"
 #: addons/europeans_tribe.wad/workers/ferry/init.lua:8
 msgctxt "europeans_worker"
 msgid "Ferry"
-msgstr "Паром"
+msgstr "Перевозчик"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/forester_advanced/init.lua:8
@@ -5953,7 +5959,7 @@ msgstr "Продвинутый Лесник"
 #: addons/europeans_tribe.wad/workers/forester_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Forester / Ranger"
-msgstr "Базовый Лесник / Рейнджер"
+msgstr "Базовый Лесник / Лесничий"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/forester_normal/init.lua:8
@@ -5971,13 +5977,13 @@ msgstr "Геолог"
 #: addons/europeans_tribe.wad/workers/lumberjack_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Lumberjack"
-msgstr "Продвинутый Лесоруб"
+msgstr "Продвинутый Дровосек"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/lumberjack_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Lumberjack"
-msgstr "Базовый Лесоруб"
+msgstr "Базовый Дровосек"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/lumberjack_normal/init.lua:8
@@ -6067,19 +6073,19 @@ msgstr "Обычный Корабел"
 #: addons/europeans_tribe.wad/workers/smelter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Smelter"
-msgstr "Продвинутый Плавильщик"
+msgstr "Продвинутый Литейщик"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smelter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Smelter"
-msgstr "Базовый Плавильщик"
+msgstr "Базовый Литейщик"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smelter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Smelter"
-msgstr "Обычный Плавильщик"
+msgstr "Обычный Литейщик"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/smith_advanced/init.lua:8
@@ -6109,19 +6115,19 @@ msgstr "Солдат"
 #: addons/europeans_tribe.wad/workers/stonecutter_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Stonecutter"
-msgstr "Продвинутый Горняк"
+msgstr "Продвинутый Камнетёс"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonecutter_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Stonecutter"
-msgstr "Базовый Горняк"
+msgstr "Базовый Камнетёс"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonecutter_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Stonecutter"
-msgstr "Обычный Горняк"
+msgstr "Обычный Камнетёс"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/stonemason_advanced/init.lua:8
@@ -6169,19 +6175,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/workers/trainer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Trainer"
-msgstr "Продвинутый Тренер"
+msgstr "Продвинутый Инструктор"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Trainer"
-msgstr "Базовый Тренер"
+msgstr "Базовый Инструктор"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/trainer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Trainer"
-msgstr "Обычный Тренер"
+msgstr "Обычный Инструктор"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/weaver_advanced/init.lua:8

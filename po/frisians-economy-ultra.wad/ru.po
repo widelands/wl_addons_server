@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-15 03:04+0100\n"
+"POT-Creation-Date: 2022-12-16 03:04+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -206,7 +206,7 @@ msgstr ""
 
 #: addons/frisians-economy-ultra.wad/postload.lua:60
 msgid "Fur can be tanned into leather, which is needed to produce garments."
-msgstr "Мех идет на оторочку кожаной одежды."
+msgstr "Из щкур выделываются кожи, идущие на производство одежды."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:104
 msgid "The salter washes salt from the shores of the sea."
@@ -218,7 +218,7 @@ msgstr "Мельник перемалывает ячмень и рожь в му
 
 #: addons/frisians-economy-ultra.wad/postload.lua:110
 msgid "The tanner tans furs to produce leather."
-msgstr "Овчар состригает шерсть для производства одежды."
+msgstr "Кожевник обрабатывает шкуры для производства кожи."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:118
 msgid "The salter working at the salt works washes salt from the sea."
@@ -230,7 +230,7 @@ msgstr "Для добычи соли солевару нужна морская 
 
 #: addons/frisians-economy-ultra.wad/postload.lua:122
 msgid "The tannery tans fur into leather."
-msgstr "Овчар состригает пух для одежды."
+msgstr "Кожевник выделывает кожи из шкур."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:125
 msgid "The barley mill grinds barley into barley flour."
@@ -384,18 +384,18 @@ msgstr "Солевар"
 #: addons/frisians-economy-ultra.wad/tanner/init.lua:8
 msgctxt "frisians_worker"
 msgid "Tanner"
-msgstr "Овчар"
+msgstr "Кожевник"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:8
 msgctxt "frisians_building"
 msgid "Tannery"
-msgstr "Овчарня"
+msgstr "Дубильня"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tanning fur because ...
 #: addons/frisians-economy-ultra.wad/tannery/init.lua:47
 msgid "tanning fur"
-msgstr "стрижет шерсть"
+msgstr "Дубит кожи"
 
 #: screenshots/frisians-economy-ultra.wad/descriptions:1
 msgid "Example screenshot of version 1"
