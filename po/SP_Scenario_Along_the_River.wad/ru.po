@@ -6,15 +6,16 @@
 # Translators:
 # nskdmitry, 2021
 # Владимир Шевцов, 2022
+# Yuriy Sokolov <lention@mail.ru>, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-12-17 03:04+0100\n"
 "PO-Revision-Date: 2021-10-06 10:02+0000\n"
-"Last-Translator: Владимир Шевцов, 2022\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -78,7 +79,7 @@ msgstr "Свыше четырёх лопат со склада понадобя�
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:7
 msgid "Defeat Törver"
-msgstr "Убейте Тёрва"
+msgstr "Победите Тёрвера"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:9
 msgid "Defeat the Armies of Törver"
@@ -86,7 +87,7 @@ msgstr ""
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:10
 msgid "Törver is the enemy in the north, who is fighting under the red banner."
-msgstr "С севера нам угрожает Тёрв, сражающий под красный знаменем."
+msgstr "С севера нам угрожает Тёрвер, сражающий под красный знаменем."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:16
 msgid "Build a port"
@@ -136,7 +137,7 @@ msgstr ""
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:43
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:52
 msgid "Bring shovels"
-msgstr "Переброска лопат"
+msgstr "Несёт лопаты"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:45
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:54
@@ -150,7 +151,8 @@ msgstr "Они понадобятся для осушения болот наш�
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:55
 msgid ""
 "They will be handed out to additional volunteers for drying up the swamps."
-msgstr "Они понадобятся для оснащения добровольцев в последствии."
+msgstr ""
+"Они понадобятся для оснащения добровольцев которые займутся осушением болот."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/objectives.lua:61
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:93
@@ -237,7 +239,7 @@ msgstr "Вдоль реки"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:12
 msgid "Sire, let me inform you about the surrounding tribes."
-msgstr "Сэр, позвольте сообщить вам об окрестных племенах."
+msgstr "Сир, позвольте сообщить вам об окрестных племенах."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:14
 msgid ""
@@ -245,8 +247,9 @@ msgid ""
 "Törver, that is rapidly building up its armies. They may soon have become "
 "too strong to be defeated."
 msgstr ""
-"С севера нам грозит воинственное племя, возглавляемое военачальником Тёрвом, "
-"быстро наращивающее свои силы. Со временем они могут стать сильнее нас."
+"С севера нам грозит воинственное племя, возглавляемое военачальником "
+"Тёрвером, быстро наращивающее свои силы. Со временем они могут стать сильнее "
+"нас."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:16
 msgid ""
@@ -431,7 +434,7 @@ msgid ""
 "lost strength. Our dwindling resources can become a problem with such a "
 "mighty enemy in front of us."
 msgstr ""
-"Сэр, по итогу нашего удара пираты начали готовить контрудар в союзе с "
+"Сир, по итогу нашего удара пираты начали готовить контрудар в союзе с "
 "пиратами из других племён. Похоже на то, что они восстановят большую часть "
 "своих сил. Наши же ресурсы истощаются, и это может стать проблемой перед "
 "лицом столь мощного врага."
@@ -468,7 +471,7 @@ msgid ""
 "their island. He is the only person who knows the way through the swamps "
 "towards Hjalmar."
 msgstr ""
-"Сэр, одного из наших разведчиков схватили пираты и увели на свой остров. "
+"Сир, одного из наших разведчиков схватили пираты и увели на свой остров. "
 "Между тем он единственный, кто знает, как добраться до Хьялмара через болота."
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:127
@@ -526,7 +529,7 @@ msgstr "Победа!"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:158
 msgid "Sire, my congratulations!"
-msgstr "Мои поздравления, сэр!"
+msgstr "Мои поздравления, сир!"
 
 #: addons/SP_Scenario_Along_the_River.wad/SP_Scenarios/Along_The_River.wmf/scripting/texts.lua:160
 msgid ""
