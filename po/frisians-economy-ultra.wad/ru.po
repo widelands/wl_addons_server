@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-16 03:04+0100\n"
+"POT-Creation-Date: 2022-12-19 03:04+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
@@ -70,13 +70,13 @@ msgstr "Мельник"
 #: addons/frisians-economy-ultra.wad/oat/init.lua:8
 msgctxt "ware"
 msgid "Oat"
-msgstr ""
+msgstr "Овес"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:8
 msgctxt "frisians_building"
 msgid "Oat Farm"
-msgstr ""
+msgstr "Овсяная ферма"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:65
@@ -91,12 +91,12 @@ msgstr "работает"
 #. TRANSLATORS: Completed/Skipped/Did not start planting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:73
 msgid "planting oat"
-msgstr ""
+msgstr "выращивает овёс"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting oat because ...
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:81
 msgid "harvesting oat"
-msgstr ""
+msgstr "убирает овёс"
 
 #: addons/frisians-economy-ultra.wad/oat_farm/init.lua:90
 #: addons/frisians-economy-ultra.wad/rye_farm/init.lua:69
@@ -112,37 +112,37 @@ msgstr "Место под засев исчерпано"
 msgctxt "frisians_building"
 msgid ""
 "The farmer working at this oat farm has no cleared soil to plant his seeds."
-msgstr ""
+msgstr "Работник этой овсяной фермы не имеет свободной земли под засев."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (harvested)"
-msgstr ""
+msgstr "Овсяное поле (убрано)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (medium)"
-msgstr ""
+msgstr "Овсяное поле (растет)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (ripe)"
-msgstr ""
+msgstr "Овсяное поле (спелое)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (small)"
-msgstr ""
+msgstr "Овсяное поле (ростки)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/frisians-economy-ultra.wad/oatfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Oat Field (tiny)"
-msgstr ""
+msgstr "Овсяное поле (крохотное)"
 
 #: addons/frisians-economy-ultra.wad/postload.lua:9
 msgid "This rye field has been harvested."
@@ -166,23 +166,23 @@ msgstr "Это ржаное поле только что засеяно."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:25
 msgid "This oat field has been harvested."
-msgstr ""
+msgstr "Этот овёс уже сжат."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:28
 msgid "This oat field is ready for harvesting."
-msgstr ""
+msgstr "Этот овёс готов к жатве."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:31
 msgid "This oat field is flowering. Beekeepers can use it to produce honey."
-msgstr ""
+msgstr "Овсяное поле цветет. Пасечник может производить мед."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:34
 msgid "This oat field is growing."
-msgstr ""
+msgstr "Овёс растет."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:37
 msgid "This oat field has just been planted."
-msgstr ""
+msgstr "Это овсяное поле только что засеяно."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:45
 msgid "Salt is washed from the sea and used to conserve meat and fish."
@@ -202,7 +202,7 @@ msgstr "После того как будет получна мука, пека�
 
 #: addons/frisians-economy-ultra.wad/postload.lua:57
 msgid "Oat is used to bake bread and also fed to the reindeer."
-msgstr ""
+msgstr "Овёс нужен для выпечки хлеба и кормления оленей."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:60
 msgid "Fur can be tanned into leather, which is needed to produce garments."
@@ -246,7 +246,7 @@ msgstr "Ржаная ферма сеет и собирает рожь."
 
 #: addons/frisians-economy-ultra.wad/postload.lua:134
 msgid "The oat farm sows and harvests oat."
-msgstr ""
+msgstr "Овсяная ферма сеет и собирает овёс."
 
 #. TRANSLATORS: Completed/Skipped/Did not start smoking fish because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:144
@@ -262,14 +262,14 @@ msgstr "коптит мясо"
 #: addons/frisians-economy-ultra.wad/postload.lua:171
 msgctxt "frisians_building"
 msgid "rearing reindeer"
-msgstr ""
+msgstr "растит оленей"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fur because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:181
 #: addons/frisians-economy-ultra.wad/postload.lua:191
 msgctxt "frisians_building"
 msgid "producing fur"
-msgstr ""
+msgstr "производит мех"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
 #: addons/frisians-economy-ultra.wad/postload.lua:217
