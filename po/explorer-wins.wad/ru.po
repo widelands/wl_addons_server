@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Yuriy Sokolov <lention@mail.ru>, 2022
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 02:04+0100\n"
+"POT-Creation-Date: 2022-12-20 03:04+0100\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -22,52 +26,56 @@ msgstr ""
 
 #: addons/explorer-wins.wad/addon:6
 msgid "The player who has explored most of the world wins the game"
-msgstr ""
+msgstr "Игрок, исследовавший большую часть мира, выигрывает игру"
 
 #: addons/explorer-wins.wad/addon:9
 msgid "explorer wins"
-msgstr ""
+msgstr "исследователь побеждает"
 
 #: addons/explorer-wins.wad/init.lua:19
 msgid "Explorer Wins"
-msgstr ""
+msgstr "Исследователь Побеждает"
 
 #: addons/explorer-wins.wad/init.lua:21
 #, lua-format
 msgid "The player who has explored %1d%% of the world wins the game"
-msgstr ""
+msgstr "Игрок, который исследует %1d%% мира, побеждает в игре"
 
 #: addons/explorer-wins.wad/init.lua:25
 msgid "% explored"
-msgstr ""
+msgstr "% исследовано"
 
 #: addons/explorer-wins.wad/init.lua:34
 msgid "You can explore by expanding, with a scout, with ships, ..."
 msgstr ""
+"Вы можете исследовать, расширяясь, с помощью разведчика, с помощью "
+"кораблей, ..."
 
 #: addons/explorer-wins.wad/init.lua:54
 msgid ""
 "There are %1$d fields on the map, but only %2$d are terrestrial, which is "
 "%3$d%%. You need to explore %4$d%%."
 msgstr ""
+"На карте %1$d полей, но только %2$d из них являются сушей, а именно %3$d%%. "
+"Вам нужно исследовать %4$d%%."
 
 #: addons/explorer-wins.wad/init.lua:59
 msgid "Probably not winnable"
-msgstr ""
+msgstr "Выиграть, скорее всего, невозможно"
 
 #: addons/explorer-wins.wad/init.lua:59
 msgid "This map is probably not winnable with %1$s."
-msgstr ""
+msgstr "Эту карту, вероятно, нельзя выиграть с %1$s."
 
 #: addons/explorer-wins.wad/init.lua:61
 msgid "Maybe not winnable"
-msgstr ""
+msgstr "Есть вероятность, что выиграть невозможно"
 
 #: addons/explorer-wins.wad/init.lua:61
 msgid "This map is maybe not winnable with %1$s."
-msgstr ""
+msgstr "Эту карту, по-видимому, нельзя выиграть с %1$s."
 
 #: addons/explorer-wins.wad/init.lua:133
 #, lua-format
 msgid "Player %1d has explored %1d%%"
-msgstr ""
+msgstr "Игрок %1d исследовал %1d%%"
