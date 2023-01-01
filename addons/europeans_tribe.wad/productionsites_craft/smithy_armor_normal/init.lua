@@ -63,12 +63,10 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 8 },
-        { name = "cloth", amount = 4 },
+        { name = "planks", amount = 6 },
+        { name = "coal", amount = 6 },
+        { name = "iron", amount = 6 },
         { name = "armor", amount = 4 },
-        { name = "coal", amount = 8 },
-        { name = "iron", amount = 8 },
-        { name = "gold", amount = 4 }
     },
 
     programs = {
@@ -79,14 +77,10 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_spear_wooden",
                 "call=produce_helmet_mask",
                 "call=produce_spear_advanced",
+                "sleep=duration:15s",
                 "call=produce_armor_chain",
                 "call=produce_shield_steel",
                 "call=produce_ax_broad",
-                "sleep=duration:15s",
-                "call=produce_armor_gilded",
-                "call=produce_tabard_golden",
-                "call=produce_shield_advanced",
-                "call=produce_sword_broad",
                 "sleep=duration:15s",
                 "return=skipped"
             }
@@ -100,106 +94,64 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_wooden"
+                "produce=spear_wooden:2"
             }
         },
         produce_helmet_mask = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
             descname = pgettext("europeans_building", "forging a mask"),
             actions = {
-                "return=skipped unless economy needs helmet_mask",
+                "return=skipped unless economy needs helmet_mask or workers need experience",
                 "consume=coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
-                "produce=helmet_mask"
+                "produce=helmet_mask:2"
             }
         },
         produce_spear_advanced = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
             descname = pgettext("europeans_building", "forging an advanced spear"),
             actions = {
-                "return=skipped unless economy needs spear_advanced",
+                "return=skipped unless economy needs spear_advanced or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_advanced"
+                "produce=spear_advanced:2"
             }
         },
         produce_armor_chain = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
             descname = pgettext("europeans_building", "forging a suit of chain armor"),
             actions = {
-                "return=skipped unless economy needs armor_chain",
-                "consume=armor coal iron",
+                "return=skipped unless economy needs armor_chain or workers need experience",
+                "consume=armor:2 coal iron",
                 "animate=working duration:30s",
-                "produce=armor_chain"
+                "produce=armor_chain:2"
             }
         },
         produce_shield_steel = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
             descname = pgettext("europeans_building", "forging a steel shield"),
             actions = {
-                "return=skipped unless economy needs shield_steel",
-                "consume=coal:2 iron:2",
+                "return=skipped unless economy needs shield_steel or workers need experience",
+                "consume=coal iron",
                 "animate=working duration:30s",
-                "produce=shield_steel"
+                "produce=shield_steel:2"
             }
         },
         produce_ax_broad = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
             descname = pgettext("europeans_building", "forging a broad ax"),
             actions = {
-                "return=skipped unless economy needs ax_broad",
-                "consume=planks coal:2 iron:2",
+                "return=skipped unless economy needs ax_broad or workers need experience",
+                "consume=planks coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=ax_broad"
+                "produce=ax_broad:2"
             }
         },
-        produce_armor_gilded = {
-            -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
-            descname = pgettext("europeans_building", "forging a suit of gilded armor"),
-            actions = {
-                "return=skipped unless economy needs armor_gilded",
-                "consume=armor coal iron gold",
-                "animate=working duration:30s",
-                "produce=armor_gilded"
-            }
-        },
-        produce_tabard_golden = {
-            -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
-            descname = pgettext("europeans_building", "forging a suit of golden tabard"),
-            actions = {
-                "return=skipped unless economy needs tabard_golden",
-                "consume=cloth coal iron gold",
-                "animate=working duration:30s",
-                "produce=tabard_golden"
-            }
-        },
-        produce_shield_advanced = {
-            -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
-            descname = pgettext("europeans_building", "forging an advanced shield"),
-            actions = {
-                "return=skipped unless economy needs shield_advanced",
-                "consume=coal:2 iron:2 gold",
-                "animate=working duration:30s",
-                "produce=shield_advanced"
-            }
-        },      
-        produce_sword_broad = {
-            -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
-            descname = pgettext("europeans_building", "forging a broadsword"),
-            actions = {
-                "return=skipped unless economy needs sword_broad",
-                "consume=planks coal:2 iron:2",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
-                "playsound=sound/smiths/sharpening priority:90%",
-                "produce=sword_broad"
-            }
-        }
     },
 }
 

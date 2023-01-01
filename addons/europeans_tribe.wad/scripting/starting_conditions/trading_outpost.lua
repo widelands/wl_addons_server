@@ -65,6 +65,7 @@ init = {
                 europeans_lumberjack_basic = 6,
                 europeans_forester_basic = 6,
                 europeans_stonecutter_basic = 6,
+                europeans_trader = 6,
                 europeans_trainer_basic = 4,
                 europeans_carpenter_basic = 2,
                 europeans_charcoal_burner_basic = 2,
@@ -83,7 +84,9 @@ init = {
     })
     place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(8), {
     })
-    place_building_in_region(player, "europeans_market", sf:region(6), {
+    place_building_in_region(player, "europeans_trading_post", sf:region(6), {
+    })
+    place_building_in_region(player, "europeans_trade_pole", sf:region(6), {
     })
     
 end

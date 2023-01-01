@@ -16,7 +16,6 @@ end
 
 wl.Descriptions():new_tribe {
     name = "europeans",
-    military_capacity_script = path.dirname(__file__) .. "military_capacity.lua",
     animation_directory = image_dirname,
     animations = {
         frontier = { hotspot = {1, 19} },
@@ -539,6 +538,53 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+           -- Money
+            {
+                name = "coin_wood",
+                default_target_quantity = 16,
+                preciousness = 4,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Wood Coin
+                        pgettext("ware", "Wood coins are money made of wood. Its simplest barter object."),
+                    }
+                }
+            },
+            {
+                name = "coin_copper",
+                default_target_quantity = 16,
+                preciousness = 8,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Copper Coin
+                        pgettext("ware", "Wood coins are money made of copper or bronze (copper and tin). Its the standard barter object."),
+                    }
+                }
+            },
+            {
+                name = "coin_silver",
+                default_target_quantity = 16,
+                preciousness = 16,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Silver Coin
+                        pgettext("ware", "Wood coins are money made of silver. Its a valuable barter object."),
+                    }
+                }
+            },
+            {
+                name = "coin_gold",
+                default_target_quantity = 16,
+                preciousness = 32,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Gold Coin
+                        pgettext("ware", "Wood coins are money made of gold. Its most valuable barter object."),
+                    }
+                }
+            }
+        },
+        {
             -- Tools 1
             {
                 name = "scythe",
@@ -1046,6 +1092,15 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Scout
                     purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
                     -- (c) WiHack Team 02.01.2010
+                }
+            },
+            {
+                name = "europeans_trader",
+                default_target_quantity = 3,
+                preciousness = 4,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Scout
+                    purpose = pgettext("europeans_worker", "Traders work in markets or in trading posts to exchange wares with other tribes.")
                 }
             },
             {
@@ -2167,6 +2222,13 @@ wl.Descriptions():new_tribe {
                 purpose = _("A ship is being constructed at this site.")
             }
         },
+        {
+            name = "europeans_trade_pole",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans immovable: Trade Pole
+                purpose = pgettext("europeans_building", "Open market to exchange wares with other allied tribes.")
+            }
+        },
         -- non imperial Immovables used by the woodcutter
         {
             name = "deadtree7",
@@ -2305,7 +2367,21 @@ wl.Descriptions():new_tribe {
             name = "europeans_market",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Market
-                purpose = pgettext("europeans_building", "Market to exchange some build materials for quartz, diamond or gold.")
+                purpose = pgettext("europeans_building", "Market building to sale wares to other allied tribes.")
+            }
+        },
+        {
+            name = "europeans_store",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
+                purpose = pgettext("europeans_building", "Store building to purchase wares from other allied tribes.")
+            }
+        },
+        {
+            name = "europeans_trading_post",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Market
+                purpose = pgettext("europeans_building", "Trading building to purchase wares from other allied tribes.")
             }
         },
 
@@ -3335,6 +3411,10 @@ wl.Descriptions():new_tribe {
    productionsite_workers_missing = pgettext("europeans", "Workers missing"),
    -- TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
    productionsite_workers_coming = pgettext("europeans", "Workers are coming"),
+   -- TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
+   productionsite_experienced_worker_missing = pgettext("europeans", "Expert missing"),
+   -- TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
+   productionsite_experienced_workers_missing = pgettext("europeans", "Experts missing"),
 
    -- Soldier strings to be used in Military Status strings
 

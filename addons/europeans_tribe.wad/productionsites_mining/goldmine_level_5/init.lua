@@ -40,7 +40,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs ore or economy needs granite or economy needs marble or workers need experience",
+                "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
                 "return=skipped when economy needs coal and not economy needs ore",
                 "return=skipped unless site has meal:4",
                 "return=skipped unless site has wine:4",
@@ -49,9 +49,17 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_ore",
+                "call=mine_marble",
                 "sleep=duration:5s",
                 "consume=meal wine",
                 "call=mine_stone",
+                "call=mine_ore",
+                "call=mine_ore",
+                "call=mine_quartz",
+                "sleep=duration:5s",
+                "consume=meal wine",
+                "call=mine_stone",
+                "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_marble",
@@ -60,13 +68,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
-                "call=mine_ore",
-                "sleep=duration:5s",
-                "consume=meal wine",
-                "call=mine_stone",
-                "call=mine_ore",
-                "call=mine_ore",
-                "call=mine_marble",
+                "call=mine_quartz",
                 "sleep=duration:5s",
                 "return=skipped"
             }
@@ -95,12 +97,20 @@ wl.Descriptions():new_productionsite_type {
                 "produce=marble",
             }
         },
+        mine_quartz = {
+            descname = pgettext("europeans_building", "mining quartz"),
+            actions = {
+                "animate=working duration:35s",
+                "mine=resource_gold radius:12 yield:100% when_empty:20% experience_on_fail:10%",
+                "produce=quartz",
+            }
+        },
         encyclopedia = {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
                 "consume=meal:4 wine:4",
-                "produce=ore:10 granite:4 marble:2",
+                "produce=ore:10 granite:4 marble:2 quartz:2",
             }
         },
     },

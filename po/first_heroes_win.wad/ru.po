@@ -5,15 +5,16 @@
 #
 # Translators:
 # nskdmitry, 2021
+# Yuriy Sokolov <lention@mail.ru>, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-12-16 03:04+0100\n"
 "PO-Revision-Date: 2021-03-20 17:12+0000\n"
-"Last-Translator: nskdmitry, 2021\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -26,15 +27,15 @@ msgstr ""
 
 #: addons/first_heroes_win.wad/addon:2 addons/first_heroes_win.wad/init.lua:32
 msgid "First Heroes Win"
-msgstr "Победа через героев"
+msgstr "Побеждают ветераны"
 
 #: addons/first_heroes_win.wad/addon:3
 msgid ""
 "The first player who has at least 4 fully trained soldiers in his warehouses "
 "wins the game. Teams are not supported yet."
 msgstr ""
-"Игрок, первым собравший 4 полностью обученных солдата на своих складах, "
-"победит в игру. Командная игра не поддерживается. "
+"Игрок, первым собравший 4 полностью обученных солдат на своих складах, "
+"победит в игре. Командная игра не поддерживается. "
 
 #: addons/first_heroes_win.wad/init.lua:35
 msgid ""
@@ -58,11 +59,11 @@ msgstr[3] ""
 
 #: addons/first_heroes_win.wad/init.lua:41
 msgid "Number of heroes"
-msgstr "Число героев"
+msgstr "Число ветеранов"
 
 #: addons/first_heroes_win.wad/init.lua:98
 msgid "Hero created!"
-msgstr "Герой готов!"
+msgstr "Ветеран готов!"
 
 #: addons/first_heroes_win.wad/init.lua:99
 msgid "%1% has created a hero!"
@@ -70,11 +71,11 @@ msgstr "%1% снарядил героя!"
 
 #: addons/first_heroes_win.wad/init.lua:101
 msgid "You have a new Hero!"
-msgstr "У вас новый герой!"
+msgstr "У вас новый ветеран!"
 
 #: addons/first_heroes_win.wad/init.lua:103
 msgid "Hero Statistics:"
-msgstr "Статистика по героям:"
+msgstr "Статистика ветеранов:"
 
 #. TRANSLATORS: "Player x has y Heroes"
 #: addons/first_heroes_win.wad/init.lua:106
@@ -84,16 +85,16 @@ msgstr "У %1% уже %2%"
 #: addons/first_heroes_win.wad/init.lua:106
 msgid "%1% hero"
 msgid_plural "%1% heroes"
-msgstr[0] "%1% герой"
-msgstr[1] "%1% героя"
-msgstr[2] "%1% героев"
-msgstr[3] "%1% героев"
+msgstr[0] "%1% ветеран"
+msgstr[1] "%1% ветерана"
+msgstr[2] "%1% ветеранов"
+msgstr[3] "%1% ветеранов"
 
 #. TRANSLATORS: This is an item in a list in the form "Player Name: 3 heroes"
 #: addons/first_heroes_win.wad/init.lua:119
 msgid "%1%: %2% hero"
 msgid_plural "%1%: %2% heroes"
-msgstr[0] "%1%: %2% герой"
-msgstr[1] "%1%: %2% героя"
-msgstr[2] "%1%: %2% героев"
-msgstr[3] "%1%: %2% героев"
+msgstr[0] "%1%: %2% ветеран"
+msgstr[1] "%1%: %2% ветерана"
+msgstr[2] "%1%: %2% ветеранов"
+msgstr[3] "%1%: %2% ветеранов"

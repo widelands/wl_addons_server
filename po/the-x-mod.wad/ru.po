@@ -5,15 +5,16 @@
 #
 # Translators:
 # nskdmitry, 2021
+# Yuriy Sokolov <lention@mail.ru>, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-12-16 03:04+0100\n"
 "PO-Revision-Date: 2021-05-23 11:14+0000\n"
-"Last-Translator: nskdmitry, 2021\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -85,7 +86,7 @@ msgstr "коптит рыбу"
 #: addons/the-x-mod.wad/frisians/productionsites.lua:60
 #: addons/the-x-mod.wad/frisians/productionsites.lua:112
 msgid "working"
-msgstr "занят делом"
+msgstr "работает"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:189
@@ -95,12 +96,12 @@ msgstr "кует стальной щит"
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:200
 msgid "forging an advanced shield"
-msgstr "кует укрепленный щит"
+msgstr "кует Улучшенный щит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a light trident because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:224
 msgid "forging a light trident"
-msgstr "кует тонкий трезубец"
+msgstr "кует Лёгкий Трезубец"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a long trident because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:238
@@ -138,18 +139,18 @@ msgstr "плавит железо"
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:382
 msgid "felling trees"
-msgstr "садит деревья"
+msgstr "валит деревья"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:392
 #: addons/the-x-mod.wad/empire/productionsites.lua:97
 msgid "sawing logs"
-msgstr "пилит дрова"
+msgstr "пилит брёвна"
 
 #. TRANSLATORS: Completed/Skipped/Did not start spinning gold because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:418
 msgid "spinning gold"
-msgstr "намывает золото"
+msgstr "прядёт золото"
 
 #. TRANSLATORS: Completed/Skipped/Did not start baking bread because ...
 #: addons/the-x-mod.wad/atlanteans/productionsites.lua:434
@@ -181,19 +182,19 @@ msgstr "спит"
 #: addons/the-x-mod.wad/atlanteans/trainingsites.lua:33
 msgctxt "atlanteans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
-msgstr "повышает уровень атаки солдата с 0 до 1"
+msgstr "повышает уровень урона солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading soldier attack from level 2 to level 3 because ...
 #: addons/the-x-mod.wad/atlanteans/trainingsites.lua:44
 msgctxt "atlanteans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr "повышает уровень атаки солдата с 2 до 3"
+msgstr "повышает уровень урона солдата с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading soldier attack from level 3 to level 4 because ...
 #: addons/the-x-mod.wad/atlanteans/trainingsites.lua:55
 msgctxt "atlanteans_building"
 msgid "upgrading soldier attack from level 3 to level 4"
-msgstr "повышает уровень атаки солдата с 3 до 4"
+msgstr "повышает уровень урона солдата с 3 до 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/atlanteans/trainingsites.lua:94
@@ -264,7 +265,7 @@ msgstr "готовит закуску"
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:428
 msgid "preparing a ration"
-msgstr "готовит пайку"
+msgstr "готовит Паёк"
 
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:452
@@ -289,7 +290,7 @@ msgstr "кует маску"
 #. TRANSLATORS: Completed/Skipped/Did not start forging a warhelm because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:578
 msgid "forging a warhelm"
-msgstr "кует каску"
+msgstr "кует Боевой Шлем"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:603
@@ -306,7 +307,7 @@ msgstr "кует острый топор"
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:648
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:687
 msgid "forging a broad ax"
-msgstr "кует широкий топор"
+msgstr "кует Секиру"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a bronze ax because ...
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:701
@@ -323,7 +324,7 @@ msgstr "кует боевой топор"
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:729
 #: addons/the-x-mod.wad/barbarians/productionsites.lua:757
 msgid "forging a warrior’s ax"
-msgstr "кует секиру"
+msgstr "кует Топор воина"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/barbarians/trainingsites.lua:16
@@ -341,31 +342,31 @@ msgstr "повышает уровень уклонения солдата с 1 �
 #: addons/the-x-mod.wad/barbarians/trainingsites.lua:72
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 0 to level 1"
-msgstr "повышает уровень атаки солдата с 0 до 1"
+msgstr "повышает уровень урона солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/barbarians/trainingsites.lua:84
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr "повышает уровень атаки солдат с 1 до 2"
+msgstr "повышает уровень урона солдат с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/barbarians/trainingsites.lua:97
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr "повышает уровень атаки солдат с 2 до 3"
+msgstr "повышает уровень урона солдат с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/barbarians/trainingsites.lua:111
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 3 to level 4"
-msgstr "повышает уровень атаки солдата с 3 до 4"
+msgstr "повышает уровень урона солдата с 3 до 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/barbarians/trainingsites.lua:125
 msgctxt "barbarians_building"
 msgid "upgrading soldier attack from level 4 to level 5"
-msgstr "повышает уровень атаки солдат с 4 до 5"
+msgstr "повышает уровень урона солдат с 4 до 5"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/barbarians/trainingsites.lua:139
@@ -413,7 +414,7 @@ msgstr "кует позолоченные доспехи"
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/the-x-mod.wad/empire/productionsites.lua:188
 msgid "forging a wooden spear"
-msgstr "изготавливает копье"
+msgstr "изготавливает Деревянное копьё"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a spear because ...
 #: addons/the-x-mod.wad/empire/productionsites.lua:202
@@ -423,17 +424,17 @@ msgstr "изготавливает копье"
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/the-x-mod.wad/empire/productionsites.lua:216
 msgid "forging an advanced spear"
-msgstr "кует рогатину"
+msgstr "кует Улучшенное копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a heavy spear because ...
 #: addons/the-x-mod.wad/empire/productionsites.lua:230
 msgid "forging a heavy spear"
-msgstr "кует окованную рогатину"
+msgstr "кует Тяжелое копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a war spear because ...
 #: addons/the-x-mod.wad/empire/productionsites.lua:244
 msgid "forging a war spear"
-msgstr "кует пику"
+msgstr "кует Боевое копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
 #: addons/the-x-mod.wad/empire/productionsites.lua:270
@@ -464,25 +465,25 @@ msgstr "повышает уровень уклонения солдата с 1 �
 #: addons/the-x-mod.wad/empire/trainingsites.lua:103
 msgctxt "empire_building"
 msgid "upgrading soldier attack from level 0 to level 1"
-msgstr "повышает уровень атаки солдата с 0 до 1"
+msgstr "повышает уровень урона солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/empire/trainingsites.lua:116
 msgctxt "empire_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr "повышает уровень атаки солдат с 1 до 2"
+msgstr "повышает уровень урона солдат с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/empire/trainingsites.lua:129
 msgctxt "empire_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr "повышает уровень атаки солдат с 2 до 3"
+msgstr "повышает уровень урона солдат с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/empire/trainingsites.lua:142
 msgctxt "empire_building"
 msgid "upgrading soldier attack from level 3 to level 4"
-msgstr "повышает уровень атаки солдата с 3 до 4"
+msgstr "повышает уровень урона солдата с 3 до 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/empire/trainingsites.lua:155
@@ -521,7 +522,7 @@ msgstr "кует длинный меч"
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
 #: addons/the-x-mod.wad/frisians/productionsites.lua:73
 msgid "forging a broadsword"
-msgstr "кует широкий меч"
+msgstr "кует Тесак"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a double-edged sword because ...
 #: addons/the-x-mod.wad/frisians/productionsites.lua:87
@@ -531,25 +532,25 @@ msgstr "кует обоюдоострый меч"
 #. TRANSLATORS: Completed/Skipped/Did not start forging a golden helmet because ...
 #: addons/the-x-mod.wad/frisians/productionsites.lua:101
 msgid "forging a golden helmet"
-msgstr "кует позолоченный шлем"
+msgstr "кует золотой шлем"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/frisians/trainingsites.lua:31
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 0 to level 1"
-msgstr "повышает уровень атаки солдата с 0 до 1"
+msgstr "повышает уровень урона солдата с 0 до 1"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/frisians/trainingsites.lua:46
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr "повышает уровень атаки солдат с 1 до 2"
+msgstr "повышает уровень урона солдат с 1 до 2"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/frisians/trainingsites.lua:61
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr "повышает уровень атаки солдат с 2 до 3"
+msgstr "повышает уровень урона солдат с 2 до 3"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/frisians/trainingsites.lua:77
@@ -567,19 +568,19 @@ msgstr "повышает уровень защиты солдата с 0 до 1"
 #: addons/the-x-mod.wad/frisians/trainingsites.lua:124
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 3 to level 4"
-msgstr "повышает уровень атаки солдата с 3 до 4"
+msgstr "повышает уровень урона солдата с 3 до 4"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/frisians/trainingsites.lua:139
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 4 to level 5"
-msgstr "повышает уровень атаки солдат с 4 до 5"
+msgstr "повышает уровень урона солдат с 4 до 5"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/frisians/trainingsites.lua:155
 msgctxt "frisians_building"
 msgid "upgrading soldier attack from level 5 to level 6"
-msgstr "повышает уровень атаки солдат с 5 до 6"
+msgstr "повышает уровень урона солдат с 5 до 6"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/the-x-mod.wad/frisians/trainingsites.lua:172

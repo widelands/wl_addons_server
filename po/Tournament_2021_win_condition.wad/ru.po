@@ -5,15 +5,16 @@
 #
 # Translators:
 # nskdmitry, 2021
+# Yuriy Sokolov <lention@mail.ru>, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-12-16 03:04+0100\n"
 "PO-Revision-Date: 2021-05-01 11:43+0000\n"
-"Last-Translator: nskdmitry, 2021\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -34,8 +35,8 @@ msgid ""
 "Win Condition for the 2021 Tournament: Create 10 Heroes without any coal "
 "from mountains"
 msgstr ""
-"Условие победы в турнире 2021 года: снарядите 10 героев при отсутствии угля "
-"в горах"
+"Условие победы в турнире 2021 года: снарядите 10 ветеранов при отсутствии "
+"угля в горах"
 
 #: addons/Tournament_2021_win_condition.wad/init.lua:35
 msgid ""
@@ -59,23 +60,23 @@ msgstr[3] ""
 
 #: addons/Tournament_2021_win_condition.wad/init.lua:41
 msgid "Number of heroes"
-msgstr "Героев"
+msgstr "Число ветеранов"
 
 #: addons/Tournament_2021_win_condition.wad/init.lua:98
 msgid "Hero created!"
-msgstr "Герой снаряжен!"
+msgstr "Ветеран обучен!"
 
 #: addons/Tournament_2021_win_condition.wad/init.lua:99
 msgid "%1% has created a hero!"
-msgstr "%1% снарядил героя!"
+msgstr "%1% снарядил ветерана!"
 
 #: addons/Tournament_2021_win_condition.wad/init.lua:101
 msgid "You have a new Hero!"
-msgstr "У вас новый герой!"
+msgstr "У вас новый ветеран!"
 
 #: addons/Tournament_2021_win_condition.wad/init.lua:103
 msgid "Hero Statistics:"
-msgstr "Статистика по героям:"
+msgstr "Статистика ветеранов:"
 
 #. TRANSLATORS: "Player x has y Heroes"
 #: addons/Tournament_2021_win_condition.wad/init.lua:106
@@ -85,16 +86,16 @@ msgstr "У %1% - %2%"
 #: addons/Tournament_2021_win_condition.wad/init.lua:106
 msgid "%1% hero"
 msgid_plural "%1% heroes"
-msgstr[0] "%1% герой"
-msgstr[1] "%1% героя"
-msgstr[2] "%1% героев"
-msgstr[3] "%1% героя"
+msgstr[0] "%1% ветеран"
+msgstr[1] "%1% ветерана"
+msgstr[2] "%1% ветеранов"
+msgstr[3] "%1% ветеранов"
 
 #. TRANSLATORS: This is an item in a list in the form "Player Name: 3 heroes"
 #: addons/Tournament_2021_win_condition.wad/init.lua:119
 msgid "%1%: %2% hero"
 msgid_plural "%1%: %2% heroes"
-msgstr[0] "%1%: %2% герой"
-msgstr[1] "%1%: %2% героя"
-msgstr[2] "%1%: %2% героев"
-msgstr[3] "%1%: %2% героя"
+msgstr[0] "%1%: %2% ветеран"
+msgstr[1] "%1%: %2% ветерана"
+msgstr[2] "%1%: %2% ветеранов"
+msgstr[3] "%1%: %2% ветеранов"

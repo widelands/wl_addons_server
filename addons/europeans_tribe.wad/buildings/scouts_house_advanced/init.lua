@@ -26,6 +26,22 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "small",
+    enhancement = {
+        name = "europeans_trading_post",
+        enhancement_cost = {
+            planks = 1,
+            brick = 1,
+            marble = 1,
+            quartz = 1,
+            diamond = 1,
+            gold = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 1,
+            granite = 1,
+            marble = 1
+        }
+    },
 
     aihints = {},
 

@@ -46,12 +46,12 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 10 },
-        { name = "cloth", amount = 4 },
+        { name = "planks", amount = 6 },
+        { name = "coal", amount = 6 },
+        { name = "iron", amount = 6 },
+        { name = "gold", amount = 4 },
         { name = "armor", amount = 4 },
-        { name = "coal", amount = 10 },
-        { name = "iron", amount = 10 },
-        { name = "gold", amount = 4 }
+        { name = "cloth", amount = 4 }
     },
 
     programs = {
@@ -62,6 +62,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_spear_wooden",
                 "call=produce_helmet_mask",
                 "call=produce_spear_advanced",
+                "sleep=duration:10s",
                 "call=produce_armor_chain",
                 "call=produce_shield_steel",
                 "call=produce_ax_broad",
@@ -70,7 +71,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_tabard_golden",
                 "call=produce_shield_advanced",
                 "call=produce_sword_broad",
-                "call=produce_idle",
                 "sleep=duration:10s",
                 "return=skipped"
             }
@@ -84,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_wooden"
+                "produce=spear_wooden:2"
             }
         },
         produce_helmet_mask = {
@@ -95,7 +95,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "produce=helmet_mask"
+                "produce=helmet_mask:2"
             }
         },
         produce_spear_advanced = {
@@ -107,7 +107,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_advanced"
+                "produce=spear_advanced:2"
             }
         },
         produce_armor_chain = {
@@ -117,7 +117,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs armor_chain",
                 "consume=armor coal iron",
                 "animate=working duration:20s",
-                "produce=armor_chain"
+                "produce=armor_chain:2"
             }
         },
         produce_shield_steel = {
@@ -125,9 +125,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a steel shield"),
             actions = {
                 "return=skipped unless economy needs shield_steel",
-                "consume=coal:2 iron:2",
+                "consume=coal iron",
                 "animate=working duration:20s",
-                "produce=shield_steel"
+                "produce=shield_steel:2"
             }
         },
         produce_ax_broad = {
@@ -135,11 +135,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a broad ax"),
             actions = {
                 "return=skipped unless economy needs ax_broad",
-                "consume=planks coal:2 iron:2",
+                "consume=planks coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=ax_broad"
+                "produce=ax_broad:2"
             }
         },
         produce_armor_gilded = {
@@ -147,9 +147,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a suit of gilded armor"),
             actions = {
                 "return=skipped unless economy needs armor_gilded",
-                "consume=armor coal iron gold",
+                "consume=armor:2 coal iron gold",
                 "animate=working duration:20s",
-                "produce=armor_gilded"
+                "produce=armor_gilded:2"
             }
         },
         produce_tabard_golden = {
@@ -157,9 +157,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a golden tabard"),
             actions = {
                 "return=skipped unless economy needs tabard_golden",
-                "consume=cloth coal iron gold",
+                "consume=cloth:2 coal iron gold",
                 "animate=working duration:20s",
-                "produce=tabard_golden"
+                "produce=tabard_golden:2"
             }
         },
         produce_shield_advanced = {
@@ -167,9 +167,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging an advanced shield"),
             actions = {
                 "return=skipped unless economy needs shield_advanced",
-                "consume=coal:2 iron:2 gold",
+                "consume=coal iron gold",
                 "animate=working duration:20s",
-                "produce=shield_advanced"
+                "produce=shield_advanced:2"
             }
         },
         produce_sword_broad = {
@@ -177,48 +177,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a broadsword"),
             actions = {
                 "return=skipped unless economy needs sword_broad",
-                "consume=planks coal:2 iron:2",
+                "consume=planks coal iron gold",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=sword_broad"
-            }
-        },
-        produce_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs shovel",
-                "return=skipped when economy needs saw",
-                "return=skipped when economy needs hammer",
-                "return=skipped when economy needs pick",
-                "return=skipped when economy needs felling_ax",
-                "return=skipped when economy needs fire_tongs",
-                "return=skipped when economy needs scythe",
-                "return=skipped when economy needs needles",
-                "return=skipped when economy needs bread_paddle",
-                "return=skipped when economy needs hook_pole",
-                "return=skipped when economy needs kitchen_tools",
-                "return=skipped when economy needs spear_wooden",
-                "return=skipped when economy needs helmet_mask",
-                "return=skipped when economy needs spear_advanced",
-                "return=skipped when economy needs armor_chain",
-                "return=skipped when economy needs shield_steel",
-                "return=skipped when economy needs ax_broad",
-                "return=skipped when economy needs armor_gilded",
-                "return=skipped when economy needs tabard_golden",
-                "return=skipped when economy needs shield_advanced",
-                "return=skipped when economy needs sword_broad",
-                "return=skipped when economy needs iron",
-                "sleep=duration:300s",
-                "consume=planks coal iron",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=basket:2",
-                "sleep=duration:60s",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=buckets:2"
+                "produce=sword_broad:2"
             }
         }
     },

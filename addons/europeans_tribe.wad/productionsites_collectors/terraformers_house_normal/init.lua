@@ -41,8 +41,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "snack", amount = 4 },
-        { name = "mead", amount = 4 }
+        { name = "coin_wood", amount = 6 },
+        { name = "coin_copper", amount = 6 }
     },
 
     programs = {
@@ -50,24 +50,24 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "return=skipped unless site has snack:4",
-                "return=skipped unless site has mead:4",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
+                "return=skipped unless site has coin_wood:4",
+                "return=skipped unless site has coin_copper:4",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
                 "callworker=check_terraform_pond",
                 "call=terraforming_pond",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
-                "callworker=check_terraform_pond",
-                "call=terraforming_pond",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_pond",
                 "call=terraforming_pond",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
                 "callworker=check_terraform_pond",
                 "call=terraforming_pond",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
                 "sleep=duration:30s",
                 "return=skipped"
             }
@@ -76,7 +76,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
             descname = pgettext("europeans_building", "terraforming pond"),
             actions = {
-                "consume=snack mead",
+                "consume=coin_wood",
                 "callworker=terraform_pond",
             }
         },
@@ -84,7 +84,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
             descname = pgettext("europeans_building", "terraforming coast"),
             actions = {
-                "consume=snack mead",
+                "consume=coin_copper",
+                "callworker=terraform_coast",
                 "callworker=terraform_coast"
             }
         },

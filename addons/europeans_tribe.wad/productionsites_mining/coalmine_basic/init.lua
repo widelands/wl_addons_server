@@ -42,7 +42,8 @@ wl.Descriptions():new_productionsite_type {
             reed = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2
+            scrap_wood = 2,
+            granite = 1
         }
     },
     buildcost = {
@@ -52,7 +53,8 @@ wl.Descriptions():new_productionsite_type {
         reed = 2
     },
     return_on_dismantle = {
-        scrap_wood = 2
+        scrap_wood = 2,
+        granite = 1
     },
 
     aihints = {

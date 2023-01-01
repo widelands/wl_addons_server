@@ -19,7 +19,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "small",
-    
+   
     aihints = {},
 
     working_positions = {

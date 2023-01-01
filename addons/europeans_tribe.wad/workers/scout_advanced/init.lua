@@ -9,15 +9,21 @@ wl.Descriptions():new_worker_type {
     animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 4,
+    
+    experience = 12,
+    becomes = "europeans_trader",
 
     programs = {
+        find_pole = {
+            "findobject=attrib:tradepole radius:80",
+        },
         scout = {
-            "scout=radius:18 duration:1m30s",
+            "scout=radius:18 duration:1m45s",
             "return"
         },
         targeted_scouting = {
             "walk=object",
-            "scout=radius:18 duration:1m30s",
+            "scout=radius:18 duration:1m45s",
             "return"
         }
     },

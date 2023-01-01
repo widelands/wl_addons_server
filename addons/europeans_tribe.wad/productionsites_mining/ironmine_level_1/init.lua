@@ -42,7 +42,9 @@ wl.Descriptions():new_productionsite_type {
             reed = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2
+            scrap_wood = 2,
+            granite = 1,
+            marble = 1
         }
     },
 
@@ -62,7 +64,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
+                "return=skipped unless economy needs ore or economy needs granite or economy needs marble or workers need experience",
                 "return=skipped when economy needs coal and not economy needs ore",
                 "return=skipped unless site has ration:3",
                 "return=skipped unless site has beer:3",
@@ -74,12 +76,12 @@ wl.Descriptions():new_productionsite_type {
                 "consume=ration beer",
                 "call=mine_stone",
                 "call=mine_ore",
-                "call=mine_ore",
+                "call=mine_quartz",
                 "sleep=duration:5s",
                 "consume=ration beer",
                 "call=mine_stone",
                 "call=mine_ore",
-                "call=mine_quartz",
+                "call=mine_marble",
                 "sleep=duration:5s",
             }
         },
@@ -99,6 +101,14 @@ wl.Descriptions():new_productionsite_type {
                 "produce=granite",
             }
         },
+        mine_marble = {
+            descname = pgettext("europeans_building", "mining marble"),
+            actions = {
+                "animate=working duration:25s",
+                "mine=resource_iron radius:4 yield:40% when_empty:5% experience_on_fail:10%",
+                "produce=marble",
+            }
+        },
         mine_quartz = {
             descname = pgettext("europeans_building", "mining quartz"),
             actions = {
@@ -112,7 +122,7 @@ wl.Descriptions():new_productionsite_type {
             descname = "encyclopedia",
             actions = {
                 "consume=ration:3 beer:3",
-                "produce=ore:5 granite:3 quartz",
+                "produce=ore:4 granite:3 marble quartz",
             }
         },
     },

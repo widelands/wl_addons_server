@@ -9,30 +9,19 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-    spritesheets = {
-      build = {
-         frames = 3,
-         columns = 3,
-         rows = 1,
-         hotspot = { 55, 57 }
-      },
-      idle = {
-         fps = 10,
-         frames = 12,
-         columns = 6,
-         rows = 2,
-         hotspot = { 55, 57 }
-      },
+    animations = {
+        idle = {
+            hotspot = { 60, 59 },
+        },
     },
     
     size = "small",
     enhancement = {
         name = "europeans_foresters_house_advanced",
         enhancement_cost = {
-            marble = 1
+            planks = 1
         },
         enhancement_return_on_dismantle = {
-            marble = 1
         },
     },
 
@@ -44,8 +33,9 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 6 },
-        { name = "meal", amount = 6 },
-        { name = "wine", amount = 6 }
+        { name = "coin_copper", amount = 4 },
+        { name = "coin_silver", amount = 4 },
+        { name = "coin_gold", amount = 4 }
     },
 
     programs = {
@@ -53,26 +43,27 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "return=skipped unless site has meal:6",
-                "return=skipped unless site has wine:6",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
+                "return=skipped unless site has coin_copper:3",
+                "return=skipped unless site has coin_silver:3",
+                "return=skipped unless site has coin_gold:3",
+                "callworker=check_terraform_land",
+                "call=terraforming_land",
                 "callworker=check_terraform_pond",
                 "call=terraforming_pond",
                 "callworker=check_terraform_land",
                 "call=terraforming_land",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
                 "callworker=check_terraform_pond",
                 "call=terraforming_pond",
                 "callworker=check_terraform_land",
                 "call=terraforming_land",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
                 "callworker=check_terraform_pond",
                 "call=terraforming_pond",
-                "callworker=check_terraform_land",
-                "call=terraforming_land",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
                 "sleep=duration:30s",
                 "return=skipped"
             }
@@ -81,8 +72,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
             descname = pgettext("europeans_building", "terraforming pond"),
             actions = {
-                "consume=meal wine",
+                "consume=coin_copper",
                 "callworker=terraform_pond",
+                "callworker=terraform_pond"
             }
         },
         terraforming_land = {
@@ -90,7 +82,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "terraforming land"),
             actions = {
                 "return=skipped unless site has water:2",
-                "consume=meal wine",
+                "consume=coin_gold",
                 "consume=water:2",
                 "callworker=terraform_land",
             }
@@ -99,7 +91,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
             descname = pgettext("europeans_building", "terraforming coast"),
             actions = {
-                "consume=meal wine",
+                "consume=coin_silver",
+                "callworker=terraform_coast",
                 "callworker=terraform_coast"
             }
         },

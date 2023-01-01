@@ -5,15 +5,16 @@
 #
 # Translators:
 # nskdmitry, 2021
+# Yuriy Sokolov <lention@mail.ru>, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-12-16 03:04+0100\n"
 "PO-Revision-Date: 2021-05-29 21:09+0000\n"
-"Last-Translator: nskdmitry, 2021\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -35,7 +36,7 @@ msgid ""
 "might contain more and better trees, and other stuff. The terrains DON'T "
 "support Amazonians' rare trees or terraforming ... yet."
 msgstr ""
-"Местность и (альфа-тест) деревья из тропических регионов. Когда-нибудь в "
+"Ландшафты и (альфа-тест) деревья из тропических регионов. Когда-нибудь в "
 "будущем это дополнение будет содержать гораздо больше деревьев и более "
 "высокого качества, да и всякого прочего. Данная местность не поддерживает "
 "редкие амазонские деревья и преобразование местности... увы."
@@ -51,7 +52,7 @@ msgstr "Коримбия (молодая)"
 
 #: addons/tropics.wad/immovables/trees/corymbia/init.lua:39
 msgid "Corymbia (Pole)"
-msgstr "Коримбия (огрызок)"
+msgstr "Коримбия (саженец)"
 
 #: addons/tropics.wad/immovables/trees/corymbia/init.lua:65
 msgid "Corymbia (Mature)"
@@ -107,23 +108,23 @@ msgstr "Хлопковое дерево"
 
 #: addons/tropics.wad/immovables/trees/lapacho/init.lua:14
 msgid "Lapacho (Sapling)"
-msgstr "Лапачо (молодое)"
+msgstr "Муравьиное дерево (молодое)"
 
 #: addons/tropics.wad/immovables/trees/lapacho/init.lua:39
 msgid "Lapacho (Pole)"
-msgstr "Лапчо (саженец)"
+msgstr "Муравьиное дерево (саженец)"
 
 #: addons/tropics.wad/immovables/trees/lapacho/init.lua:65
 msgid "Lapacho (Mature)"
-msgstr "Лапачо (зрелое)"
+msgstr "Муравьиное дерево (зрелое)"
 
 #: addons/tropics.wad/immovables/trees/lapacho/init.lua:92
 msgid "Lapacho (Old)"
-msgstr "Лапачо (старое)"
+msgstr "Муравьиное дерево (старое)"
 
 #: addons/tropics.wad/immovables/trees/lapacho/init.lua:93
 msgid "Lapacho"
-msgstr "Тахибо"
+msgstr "Муравьиное дерево"
 
 #: addons/tropics.wad/immovables/trees/mangrove/init.lua:14
 msgid "Mangrove (Sapling)"
@@ -167,23 +168,23 @@ msgstr "Персиковая пальма"
 
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:14
 msgid "Syargus Palm (Sapling)"
-msgstr "Саргасовая пальма (молодая)"
+msgstr "Кокосовая пальма (молодая)"
 
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:39
 msgid "Syargus Palm (Pole)"
-msgstr "Саргасовая пальма (саженец)"
+msgstr "Кокосовая пальма (саженец)"
 
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:65
 msgid "Syargus Palm (Mature)"
-msgstr "Саргасовая пальма (зрелая)"
+msgstr "Кокосовая пальма (зрелая)"
 
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:90
 msgid "Syargus Palm (Old)"
-msgstr "Саргасовая пальма (старая)"
+msgstr "Кокосовая пальма (старая)"
 
 #: addons/tropics.wad/immovables/trees/syagruspalm/init.lua:91
 msgid "Syargus Palm"
-msgstr "Саргасовая пальма"
+msgstr "Кокосовая пальма"
 
 #: addons/tropics.wad/terrains/init.lua:10
 msgid "Wet Soil 1"
@@ -247,11 +248,11 @@ msgstr "Топь 2"
 
 #: addons/tropics.wad/terrains/init.lua:210
 msgid "Tropical Swamp"
-msgstr "Трясина"
+msgstr "Тропическая трясина"
 
 #: addons/tropics.wad/terrains/init.lua:225
 msgid "Tropical Water"
-msgstr "Воды"
+msgstr "Тропические Воды"
 
 #: addons/tropics.wad/terrains/init.lua:239
 msgid "Muddy river water"

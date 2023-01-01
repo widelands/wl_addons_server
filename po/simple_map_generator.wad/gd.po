@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-12 03:04+0100\n"
+"PO-Revision-Date: 2022-12-11 09:24+0000\n"
+"Language-Team: Gaelic, Scottish (https://www.transifex.com/widelands/"
+"teams/35159/gd/)\n"
+"Language: gd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
+"(n > 2 && n < 20) ? 2 : 3;\n"
+
+#: addons/simple_map_generator.wad/addon:2
+msgid "Simple Map Generator"
+msgstr ""
+
+#: addons/simple_map_generator.wad/addon:3
+msgid "A proof-of-concept map generator that generates very, very simple maps."
+msgstr ""
+
+#: addons/simple_map_generator.wad/init.lua:4
+msgid "Initializing map generator…"
+msgstr ""
+
+#: addons/simple_map_generator.wad/init.lua:122
+msgid "Generating map… (%1$d / %2$d)"
+msgstr ""
+
+#: addons/simple_map_generator.wad/init.lua:193
+msgid "Finalizing map…"
+msgstr ""
+
+#: addons/simple_map_generator.wad/init.lua:201
+#, lua-format
+msgid "Random Player %u"
+msgstr ""

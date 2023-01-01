@@ -36,8 +36,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "marble", amount = 9 },
-        { name = "granite", amount = 9 },
+        { name = "granite", amount = 6 },
+        { name = "marble", amount = 6 },
         { name = "clay", amount = 6 },
         { name = "water", amount = 6 },
         { name = "coal", amount = 4 }
@@ -94,9 +94,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
             descname = pgettext("europeans_building", "sculpting a marble column"),
             actions = {
-                "return=skipped unless economy needs marble_column or workers need experience",
                 "return=skipped when economy needs marble",
-                "return=skipped unless site has marble:6",
+                "return=skipped unless economy needs marble_column or workers need experience",
+                "return=skipped unless site has marble:4",
                 "consume=marble:3",
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",
                 "animate=working duration:30s",

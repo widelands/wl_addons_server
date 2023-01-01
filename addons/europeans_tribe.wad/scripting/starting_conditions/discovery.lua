@@ -79,7 +79,8 @@ local init = {
          europeans_smith_basic = 1,
          europeans_trainer_basic = 1,
          europeans_geologist = 1,
-         europeans_soldier = 2,
+         europeans_soldier = 3,
+         europeans_trader = 3,
       },
     })
     

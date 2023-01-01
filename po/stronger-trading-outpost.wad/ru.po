@@ -5,15 +5,16 @@
 #
 # Translators:
 # nskdmitry, 2021
+# Yuriy Sokolov <lention@mail.ru>, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-27 04:03+0200\n"
+"POT-Creation-Date: 2022-12-15 03:04+0100\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
-"Last-Translator: nskdmitry, 2021\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -26,14 +27,14 @@ msgstr ""
 
 #: addons/stronger-trading-outpost.wad/addon:2
 msgid "Stronger Trading Outpost"
-msgstr "Усиленные торговые поселения"
+msgstr "Усиленные Торговые заставы"
 
 #: addons/stronger-trading-outpost.wad/addon:3
 msgid ""
 "Enhanced Trading Outpost starting conditions for all official tribes. "
 "Intended to give AIs a stronger start."
 msgstr ""
-"Усиливает влияние стартового условия \"Торговое поселение\" для всех базовых "
+"Усиливает влияние стартового условия \"Торговая застава\" для всех базовых "
 "племен. Способствует усилению ИИ на старте."
 
 #: addons/stronger-trading-outpost.wad/addon:4
@@ -47,7 +48,7 @@ msgstr "Nordfriese & the-x"
 #: addons/stronger-trading-outpost.wad/empire.lua:11
 #: addons/stronger-trading-outpost.wad/frisians.lua:11
 msgid "AI Trading Outpost"
-msgstr "Торговое поселение ИИ"
+msgstr "Торговая застава ИИ"
 
 #. TRANSLATORS: This is the tooltip for the "AI Trading Outpost" starting condition
 #: addons/stronger-trading-outpost.wad/amazons.lua:13
@@ -58,4 +59,5 @@ msgstr "Торговое поселение ИИ"
 msgid ""
 "If this player runs low on important wares, they will be replenished for free"
 msgstr ""
-"Если у этого игрока закончатся ресурсы, то они будут пополняться бесплатно"
+"Если у этого игрока закончатся важные ресурсы, то они будут пополняться "
+"бесплатно"

@@ -97,30 +97,30 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_wooden"
+                "produce=spear_wooden:2"
             }
         },
         produce_helmet_mask = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
             descname = pgettext("europeans_building", "forging a mask"),
             actions = {
-                "return=skipped unless economy needs helmet_mask",
+                "return=skipped unless economy needs helmet_mask or workers need experience",
                 "consume=coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
-                "produce=helmet_mask"
+                "produce=helmet_mask:2"
             }
         },
         produce_spear_advanced = {
             -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
             descname = pgettext("europeans_building", "forging an advanced spear"),
             actions = {
-                "return=skipped unless economy needs spear_advanced",
+                "return=skipped unless economy needs spear_advanced or workers need experience",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_advanced"
+                "produce=spear_advanced:2"
             }
         },
     },
