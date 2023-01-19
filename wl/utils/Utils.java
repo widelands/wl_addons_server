@@ -334,6 +334,19 @@ public class Utils {
 	}
 
 	/**
+	 * Run a shell script and return its exit value.
+	 * The standard output and error are discarded.
+	 * @param args The command and its arguments.
+	 * @return The output.
+	 * @throws Exception If the shell can't be accessed.
+	 */
+	public static int bashResult(String... args) throws Exception {
+		Process p = new ProcessBuilder(args).start();
+		p.waitFor();
+		return p.exitValue();
+	}
+
+	/**
 	 * Format a time string.
 	 * @param millis Number of milliseconds.
 	 * @return Formatted time string.
