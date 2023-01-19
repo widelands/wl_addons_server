@@ -941,6 +941,9 @@ public class HandleCommand {
 
 					ServerUtils.doDelete(addOnDir);
 				} else {
+					diff =
+					    Utils.bashOutput("diff", "-r", "-u", "/dev/null", tempDir.getPath());
+
 					Utils.sql(
 					    Utils.Databases.kAddOns,
 					    "insert into addons (name,timestamp,edit_timestamp,i18n_version,security,quality,downloads) value(?,?,?,0,0,0,0)",
@@ -1001,7 +1004,7 @@ public class HandleCommand {
 				                     "\n- Old quality: " + oldQuality) :
                                     "") +
 				        "\n\nPlease review this add-on soonish." +
-				        (isUpdate ? ("\n\n-------------------------\n\n" + diff) : ""));
+				        "\n\n-------------------------\n\n" + diff);
 
 				ServerUtils.doMove(tempDir, addOnDir);
 				out.println("ENDOFSTREAM");
