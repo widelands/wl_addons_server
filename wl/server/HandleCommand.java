@@ -941,7 +941,8 @@ public class HandleCommand {
 
 					ServerUtils.doDelete(addOnDir);
 				} else {
-					diff = Utils.bashOutput("diff", "-r", "-u", "/dev/null", tempDir.getPath());
+					File emptyDir = Files.createTempDirectory(null).toFile();
+					diff = Utils.bashOutput("diff", "-r", "-u", emptyDir.getPath(), tempDir.getPath());
 
 					Utils.sql(
 					    Utils.Databases.kAddOns,
