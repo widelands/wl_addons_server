@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# D M <kamera001dm@gmail.com>, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-22 03:04+0100\n"
+"POT-Creation-Date: 2023-02-26 03:05+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
+"Last-Translator: D M <kamera001dm@gmail.com>, 2023\n"
 "Language-Team: Swedish (https://www.transifex.com/widelands/teams/35159/"
 "sv/)\n"
 "Language: sv\n"
@@ -365,19 +369,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/scouts_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Scout’s House"
-msgstr ""
+msgstr "Avancerad spejarbostad"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/europeans_tribe.wad/buildings/scouts_house_advanced/init.lua:60
 #: addons/europeans_tribe.wad/buildings/scouts_house_advanced/init.lua:68
 msgid "scouting"
-msgstr ""
+msgstr "speja"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/scouts_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Scouts House"
-msgstr ""
+msgstr "Enkel spejarbostad"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/europeans_tribe.wad/buildings/scouts_house_basic/init.lua:74
@@ -386,13 +390,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/buildings/scouts_house_normal/init.lua:63
 msgctxt "europeans_building"
 msgid "scouting"
-msgstr ""
+msgstr "utforska"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/scouts_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Scout’s House"
-msgstr ""
+msgstr "Normal spejarbostad"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/sentry/init.lua:8
@@ -2957,7 +2961,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:344
 msgctxt "europeans_building"
 msgid "recruiting scout"
-msgstr ""
+msgstr "rekryterar spejare"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:348
@@ -3815,6 +3819,8 @@ msgid ""
 "A small bite to keep miners strong and working. The scout also consumes "
 "rations on his scouting trips."
 msgstr ""
+"En liten tugga för att hålla gruvarbetarna starka och arbetande. Spejaren "
+"konsumerar också matbitar under sina vandringar."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Ration, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:350
@@ -4383,7 +4389,7 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
-msgstr ""
+msgstr "Scouter rekognoserar okända områden."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Scout
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1103
@@ -5160,7 +5166,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2753
 msgctxt "building"
 msgid "Prepares rations to feed the scouts and miners."
-msgstr ""
+msgstr "Lagar matbitar för att mätta spejare och gruvarbetare."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2760
@@ -5951,19 +5957,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/workers/scout_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Scout"
-msgstr ""
+msgstr "Avancerad spejare"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/scout_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Scout"
-msgstr ""
+msgstr "Enkel spejare"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/scout_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Scout"
-msgstr ""
+msgstr "Normal spejare"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/shipwright_advanced/init.lua:8
