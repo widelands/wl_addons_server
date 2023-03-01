@@ -52,7 +52,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        basic_amount = 1,
         prohibited_till = 2400,
         forced_after = 3000
     },

@@ -59,9 +59,8 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         space_consumer = true,
-        basic_amount = 4,
-        prohibited_till = 600,
-        forced_after = 1200
+        prohibited_till = 1200,
+        forced_after = 1800
     },
 
     working_positions = {
