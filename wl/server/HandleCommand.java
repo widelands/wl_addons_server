@@ -556,7 +556,7 @@ public class HandleCommand {
 			String resource = ServerUtils.toTransifexResource(cmd[1]);
 			Utils.bash("tx", "add", "--organization", "widelands", "--project", "widelands-addons",
 			           "--resource", resource, "--file-filter", ("po/" + cmd[1] + "/<lang>.po"),
-			           "--type", "PO", potFile.getAbsolutePath());
+			           "--type", "PO", potFile.getPath());
 			if (commandVersion < 2) {
 				TransifexIntegration.TX.push();
 			} else {
