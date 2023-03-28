@@ -554,6 +554,8 @@ public class HandleCommand {
 					throw new ServerUtils.WLProtocolException("Unable to create POT for " + cmd[1]);
 			}
 			String resource = ServerUtils.toTransifexResource(cmd[1]);
+			resource = resource.substring(resource.indexOf('.') + 1);
+
 			Utils.bash("tx", "add", "--organization", "widelands", "--project", "widelands-addons",
 			           "--resource", resource, "--file-filter", ("po/" + cmd[1] + "/<lang>.po"),
 			           "--type", "PO", potFile.getPath());
@@ -586,7 +588,6 @@ public class HandleCommand {
 				// We need to ensure that the resource exists before editing its properties
 				TransifexIntegration.TX.push();
 
-				resource = resource.substring(resource.indexOf('.') + 1);
 				Utils.bash(
 				    "curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
 				    "--request", "PATCH", "-H", "Content-Type: application/vnd.api+json",
