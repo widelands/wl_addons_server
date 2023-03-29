@@ -19,6 +19,12 @@ source_file = po/Call_of_death.wad/Call_of_death.wad.pot
 source_lang = en
 type        = PO
 
+[o:widelands:p:widelands-addons:r:Down-the-Mountain-wad]
+file_filter  = po/Down_the_Mountain.wad/<lang>.po
+source_file  = po/Down_the_Mountain.wad/Down_the_Mountain.wad.pot
+type         = PO
+minimum_perc = 0
+
 [o:widelands:p:widelands-addons:r:Java-and-Sumatra-Map-addon-wad]
 file_filter = po/Java_and_Sumatra_Map_addon.wad/<lang>.po
 source_file = po/Java_and_Sumatra_Map_addon.wad/Java_and_Sumatra_Map_addon.wad.pot
