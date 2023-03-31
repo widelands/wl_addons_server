@@ -67,6 +67,12 @@ source_file = po/Tournament_2021_win_condition.wad/Tournament_2021_win_condition
 source_lang = en
 type        = PO
 
+[o:widelands:p:widelands-addons:r:WideGreen-wad]
+file_filter  = po/WideGreen.wad/<lang>.po
+source_file  = po/WideGreen.wad/WideGreen.wad.pot
+type         = PO
+minimum_perc = 0
+
 [o:widelands:p:widelands-addons:r:australia-tasmania-newzealand-wad]
 file_filter = po/australia_tasmania_newzealand.wad/<lang>.po
 source_file = po/australia_tasmania_newzealand.wad/australia_tasmania_newzealand.wad.pot
