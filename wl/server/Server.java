@@ -30,6 +30,8 @@ import wl.utils.Utils;
 public class Server {
 	private Server() {}
 
+	undeclared identifier error;
+
 	/**
 	 * The server's main loop. This runs forever until the server is killed
 	 * with <kbd>^C</kbd> or <code>kill PID</code>.
