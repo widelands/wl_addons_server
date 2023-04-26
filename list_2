@@ -721,7 +721,7 @@ Ohne Seefahrt kommt man nicht weit.
 Whiskey  Charlie Lima
 WeirdCatLord
 1674388992
-49
+50
 0
 0
 0
@@ -885,7 +885,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-190
+191
 0
 0
 0
@@ -1256,7 +1256,7 @@ Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind e
 auktionadmin
 auktionadmin
 1680190966
-30
+31
 0
 0
 0
@@ -1668,7 +1668,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-239
+240
 0
 0
 0
@@ -2059,7 +2059,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-214
+215
 0
 0
 0
@@ -2149,7 +2149,7 @@ MarkMcWire
 0
 0
 0
-2
+3
 Nordfriese
 <font bold=true>WARNING</font>: The current version of this add-on may cause Widelands v1.0 to fail to start! Install the <font shadow=1 italic=1 color=ffffff>enhanced_debug_scripts.wad</font> add-on along this one to be safe.
 1.6.1
@@ -2158,6 +2158,10 @@ Nordfriese
 The current version of this add-on has a bug that prevents the game from starting under some circumstances: Many of its <font shadow=1 italic=1>init.lua</font> files reference the global variable <font shadow=1 italic=1>descriptions</font> which may be undefined. Please change all occurrences to <font shadow=1 italic=1>wl.Descriptions()</font> instead.    @MarkMcWire
 2.4.6
 1650721500
+dreieck
+This tribe misses the "sticky node" animation which makes the game crash if a sticky note is placed. Please add a sticky note animation:    https://github.com/widelands/widelands/issues/5860  
+3.2.9
+1682425239
 3.2.9
 165
 78131618
@@ -17739,7 +17743,7 @@ The first player who has at least 4 fully trained soldiers in his warehouses win
 kaputtnik
 kaputtnik
 1616241721
-89
+90
 0
 0
 0
@@ -17818,7 +17822,7 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-159
+160
 0
 0
 0
@@ -18295,7 +18299,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-328
+330
 0
 0
 0
@@ -20585,7 +20589,7 @@ Minimalistic theme with reduced colors. For widelands version 1.0 you have to en
 kaputtnik
 kaputtnik
 1614637671
-118
+119
 0
 0
 0
@@ -20787,7 +20791,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-132
+133
 0
 0
 0
@@ -22258,7 +22262,7 @@ A tournament mode for Widelands, or: The mode that guarantees games of less than
 the-x & Nordfriese
 the-x
 1621506858
-73
+74
 0
 0
 0
@@ -23223,7 +23227,7 @@ Contains flowering meadows, clearings, dolomites, clay soil, green water, muddy 
 OIPUN
 OIPUN
 1622916439
-162
+163
 0
 0
 0
@@ -23653,7 +23657,7 @@ White Summer Add-On is needed to play these maps.
 OIPUN
 OIPUN
 1623262581
-111
+112
 0
 0
 0
