@@ -189,7 +189,7 @@ public class HandleCommand {
 
 		final boolean versionCheck =
 		    widelandsVersion != null && commandVersion >= 2 &&
-		    (cmd[1].equalsIgnoreCase("true") || cmd[1].equalsIgnoreCase("showall"));
+		    !(cmd[1].equalsIgnoreCase("true") || cmd[1].equalsIgnoreCase("showall"));
 		final boolean appendInfo =
 		    commandVersion >= 2 &&
 		    (cmd[1].equalsIgnoreCase("showall") || cmd[1].equalsIgnoreCase("showcompatible"));
