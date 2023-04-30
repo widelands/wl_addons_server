@@ -202,9 +202,7 @@ public class HandleCommand {
 				Utils.Profile profile =
 				    Utils.readProfile(new File("addons/" + addon + "/addon"), addon);
 				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
-				                                         profile.get("min_wl_version") != null ?
-                                                             profile.get("min_wl_version").value :
-                                                             null,
+				                                         ServerUtils.findMinWlVersion(addon),
 				                                         profile.get("max_wl_version") != null ?
                                                              profile.get("max_wl_version").value :
                                                              null)) {
@@ -265,8 +263,7 @@ public class HandleCommand {
 			out.println(sqlMain.getLong("i18n_version"));
 			out.println(profile.get("category").value);
 			out.println(profile.get("requires").value);
-			out.println(
-			    (profile.get("min_wl_version") != null ? profile.get("min_wl_version").value : ""));
+			out.println(ServerUtils.findMinWlVersion(cmd[1]));
 			out.println(
 			    (profile.get("max_wl_version") != null ? profile.get("max_wl_version").value : ""));
 			out.println((profile.get("sync_safe") != null ? profile.get("sync_safe").value : ""));
@@ -695,6 +692,8 @@ public class HandleCommand {
 		}
 		ServerUtils.checkEndOfStream(in);
 
+		ServerUtils.clearMinVersionCache(cmd[1]);
+
 		final String reason = msg;  // Lambdas need "final or effectively final" local variables…
 		ServerUtils.semaphoreRW(cmd[1], () -> {
 			final long id = Utils.getAddOnID(cmd[1]);
@@ -895,6 +894,8 @@ public class HandleCommand {
 			if (!admin && !Utils.isUploader(cmd[1], userDatabaseID))
 				throw new ServerUtils.WLProtocolException(
 				    "You can not overwrite another person's existing add-on");
+
+			ServerUtils.clearMinVersionCache(cmd[1]);
 
 			final long timestamp = System.currentTimeMillis() / 1000;
 			File tempDir = Files.createTempDirectory(null).toFile();
