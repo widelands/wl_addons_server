@@ -187,6 +187,12 @@ source_file = po/larger_font_theme.wad/larger_font_theme.wad.pot
 source_lang = en
 type        = PO
 
+[o:widelands:p:widelands-addons:r:larger-fonts-1-2devel-wad]
+file_filter  = po/larger_fonts_1_2devel.wad/<lang>.po
+source_file  = po/larger_fonts_1_2devel.wad/larger_fonts_1_2devel.wad.pot
+type         = PO
+minimum_perc = 0
+
 [o:widelands:p:widelands-addons:r:legacy-terrains-wad]
 file_filter = po/legacy_terrains.wad/<lang>.po
 source_file = po/legacy_terrains.wad/legacy_terrains.wad.pot
