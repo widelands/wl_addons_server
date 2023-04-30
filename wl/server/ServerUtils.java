@@ -558,7 +558,8 @@ public class ServerUtils {
 		}
 
 		Utils.Profile profile = Utils.readProfile(addonsFile, addon);
-		String nominal_min_wl_version = profile.get("min_wl_version") == null ? "" : profile.get("min_wl_version").value;
+		String nominal_min_wl_version =
+		    profile.get("min_wl_version") == null ? "" : profile.get("min_wl_version").value;
 
 		if (!profile.get("category").value.equals("maps")) {
 			_addon_min_version_cache.put(addon, nominal_min_wl_version);
@@ -569,18 +570,21 @@ public class ServerUtils {
 		for (File mapFile : Utils.findMaps(new File("addons/" + addon))) {
 			String versionNeeded = null;
 			if (mapFile.isDirectory()) {
-				Utils.Value value = Utils.readProfile(new File(mapFile, "version"), addon).get("minimum_required_widelands_version");
+				Utils.Value value = Utils.readProfile(new File(mapFile, "version"), addon)
+				                        .get("minimum_required_widelands_version");
 				if (value != null) versionNeeded = value.value;
 			} else {
 				ZipFile zip = new ZipFile(mapFile);
 				ZipEntry entry = zip.getEntry("/version");
 				if (entry != null) {
-					Utils.Value value = Utils.readProfile(zip.getInputStream(entry), addon).get("minimum_required_widelands_version");
+					Utils.Value value = Utils.readProfile(zip.getInputStream(entry), addon)
+					                        .get("minimum_required_widelands_version");
 					if (value != null) versionNeeded = value.value;
 				}
 			}
 			int[] map_version = string_to_version(versionNeeded);
-			if (smallest_map_version == null || less(map_version, smallest_map_version)) smallest_map_version = map_version;
+			if (smallest_map_version == null || less(map_version, smallest_map_version))
+				smallest_map_version = map_version;
 		}
 
 		int[] min_version = string_to_version(nominal_min_wl_version);

@@ -631,7 +631,8 @@ public class Utils {
 	 * @return The key-value pairs.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	synchronized public static Profile readProfile(InputStream stream, String textdomain) throws Exception {
+	synchronized public static Profile readProfile(InputStream stream, String textdomain)
+	    throws Exception {
 		List<String> lines = new ArrayList<>();
 		BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
 		for (;;) {
@@ -650,7 +651,8 @@ public class Utils {
 	 * @return The key-value pairs.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	synchronized public static Profile readProfile(List<String> lines, String textdomain) throws Exception {
+	synchronized public static Profile readProfile(List<String> lines, String textdomain)
+	    throws Exception {
 		Profile profile = new Profile();
 		Profile.Section section = new Profile.Section("");
 		for (String line : lines) {
