@@ -21,19 +21,24 @@ package wl.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.stream.Stream;
 
 /**
  * Miscellaneous utility functions.
@@ -264,6 +269,22 @@ public class Utils {
 		if (files == null) return new File[0];
 		Arrays.sort(files);
 		return files;
+	}
+
+	/**
+	 * Recursively list all Widelands maps in a directory.
+	 * @param dir Directory to search.
+	 * @return List of found maps.
+	 * @throws Exception If the directory can not be traversed.
+	 */
+	public static List<File> findMaps(File dir) throws Exception {
+		List<File> maps = new ArrayList<>();
+		Stream<Path> walkStream = Files.walk(dir.toPath());
+		walkStream.forEach(f -> {
+			File file = f.toFile();
+			if (file.getName().endsWith(".wmf")) maps.add(file);
+		});
+		return maps;
 	}
 
 	/**
@@ -591,21 +612,48 @@ public class Utils {
 		ChecksummedFile key = new ChecksummedFile(f);
 		if (_staticprofiles.containsKey(key)) return _staticprofiles.get(key);
 
-		for (ChecksummedFile cf : _staticprofiles.keySet()) {
-			if (cf.file.equals(f)) {
-				_staticprofiles.remove(cf);
-				break;
-			}
+		Profile profile;
+		if (f.isFile()) {
+			profile = readProfile(Files.readAllLines(f.toPath()), textdomain);
+		} else {
+			profile = new Profile();
 		}
 
+		_staticprofiles.put(key, profile);
+		return profile;
+	}
+
+	/**
+	 * Parse an ini-style file and return its contents as a map of key-value pairs.
+	 * @param stream Stream to read from.
+	 * @param textdomain Textdomain for translatable strings in the file
+	 *                   (may be null if the file is not meant to be translated).
+	 * @return The key-value pairs.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	synchronized public static Profile readProfile(InputStream stream, String textdomain) throws Exception {
+		List<String> lines = new ArrayList<>();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+		for (;;) {
+			String str = reader.readLine();
+			if (str == null) break;
+			lines.add(str);
+		}
+		return readProfile(lines, textdomain);
+	}
+
+	/**
+	 * Parse an ini-style file and return its contents as a map of key-value pairs.
+	 * @param lines All lines in the file.
+	 * @param textdomain Textdomain for translatable strings in the file
+	 *                   (may be null if the file is not meant to be translated).
+	 * @return The key-value pairs.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	synchronized public static Profile readProfile(List<String> lines, String textdomain) throws Exception {
 		Profile profile = new Profile();
-		if (!f.isFile()) {
-			_staticprofiles.put(key, profile);
-			return profile;
-		}
-
 		Profile.Section section = new Profile.Section("");
-		for (String line : Files.readAllLines(f.toPath())) {
+		for (String line : lines) {
 			line = line.trim();
 			if (line.isEmpty() || line.startsWith("#")) continue;
 			if (line.startsWith("[") && line.endsWith("]")) {
@@ -638,7 +686,6 @@ public class Utils {
 		}
 		profile.add(section);
 
-		_staticprofiles.put(key, profile);
 		return profile;
 	}
 
