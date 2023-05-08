@@ -43,8 +43,7 @@ wl.Descriptions():new_trainingsite_type {
         { name = "sword_broad", amount = 2 },
         { name = "armor", amount = 2 },
         { name = "armor_chain", amount = 2 },
-        { name = "armor_gilded", amount =  2 },
-        { name = "tabard_golden", amount = 2 }
+        { name = "armor_advanced", amount =  2 }
     },
 
     ["soldier health"] = {
@@ -106,9 +105,9 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:2",
                 "sleep=duration:20s",
                 "checksoldier=soldier:health level:2",
-                "consume=coin_gold armor_gilded,tabard_golden",
+                "consume=coin_gold armor_advanced",
                 "train=soldier:health level:3",
-                "produce=scrap_metal_mixed"
+                "produce=scrap_iron"
             }
         },
         upgrade_soldier_evade_0 = {
@@ -180,7 +179,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:2",
                 "consume=coin_gold shield_advanced",
                 "train=soldier:defense level:3",
-                "produce=scrap_metal_mixed"
+                "produce=scrap_iron"
             }
         },
         upgrade_soldier_attack_0 = {

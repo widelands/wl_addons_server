@@ -49,7 +49,6 @@ wl.Descriptions():new_productionsite_type {
         { name = "planks", amount = 6 },
         { name = "coal", amount = 6 },
         { name = "iron", amount = 6 },
-        { name = "gold", amount = 4 },
         { name = "armor", amount = 4 },
         { name = "cloth", amount = 4 }
     },
@@ -67,8 +66,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_shield_steel",
                 "call=produce_ax_broad",
                 "sleep=duration:10s",
-                "call=produce_armor_gilded",
-                "call=produce_tabard_golden",
+                "call=produce_armor_advanced",
                 "call=produce_shield_advanced",
                 "call=produce_sword_broad",
                 "sleep=duration:10s",
@@ -142,24 +140,14 @@ wl.Descriptions():new_productionsite_type {
                 "produce=ax_broad:2"
             }
         },
-        produce_armor_gilded = {
+        produce_armor_advanced= {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
-            descname = pgettext("europeans_building", "forging a suit of gilded armor"),
+            descname = pgettext("europeans_building", "forging a suit of advanced armor"),
             actions = {
-                "return=skipped unless economy needs armor_gilded",
-                "consume=armor:2 coal iron gold",
+                "return=skipped unless economy needs armor_advanced",
+                "consume=armor cloth coal iron",
                 "animate=working duration:20s",
                 "produce=armor_gilded:2"
-            }
-        },
-        produce_tabard_golden = {
-            -- TRANSLATORS: Completed/Skipped/Did not start forging a suit of golden tabard because ...
-            descname = pgettext("europeans_building", "tailoring a golden tabard"),
-            actions = {
-                "return=skipped unless economy needs tabard_golden",
-                "consume=cloth:2 coal iron gold",
-                "animate=working duration:20s",
-                "produce=tabard_golden:2"
             }
         },
         produce_shield_advanced = {
@@ -167,7 +155,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging an advanced shield"),
             actions = {
                 "return=skipped unless economy needs shield_advanced",
-                "consume=coal iron gold",
+                "consume=coal iron:2",
                 "animate=working duration:20s",
                 "produce=shield_advanced:2"
             }
@@ -177,7 +165,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a broadsword"),
             actions = {
                 "return=skipped unless economy needs sword_broad",
-                "consume=planks coal iron gold",
+                "consume=planks coal iron:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "playsound=sound/smiths/sharpening priority:90%",

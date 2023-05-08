@@ -400,7 +400,7 @@ The legend says: ''When ever one goes down our mountain, he never comes back''. 
 kaputtnik
 kaputtnik
 1679920754
-49
+51
 0
 0.0
 1
@@ -477,7 +477,7 @@ This addon adds my maps ''Java and Sumatra 1.0'', ''Java and Sumatra 1.1'' and '
 Nilpanda
 Nilpanda
 1666688231
-217
+219
 1
 10.0
 0
@@ -673,7 +673,7 @@ Ohne Seefahrt kommt man nicht weit.
 Whiskey  Charlie Lima
 WeirdCatLord
 1674388992
-61
+65
 1
 7.0
 0
@@ -746,7 +746,7 @@ Ohne Seefahrt kommt man nicht weit.
 Whiskey  Charlie Lima
 WeirdCatLord
 1674389456
-67
+72
 0
 0.0
 0
@@ -897,7 +897,7 @@ Maps for the 2021 Tournament
 hessenfarmer
 hessenfarmer
 1619867883
-147
+151
 0
 0.0
 0
@@ -1163,7 +1163,7 @@ Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind e
 auktionadmin
 auktionadmin
 1680190966
-40
+41
 0
 0.0
 3
@@ -1248,7 +1248,7 @@ No description
 Solstice
 Solstice_s_Return
 1657988804
-190
+191
 2
 9.5
 1
@@ -1543,7 +1543,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-254
+258
 3
 9.666667
 1
@@ -1907,7 +1907,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-221
+225
 0
 0.0
 0
@@ -1973,11 +1973,11 @@ b6ffc2f1d00b14ac6bf1b966e9e7ca8a
 verified
 europeans_tribe.wad
 Europeans Tribe
-Adds a new tribe named ‘Europeans’. It uses buildings and workers from Barbarians, Atlanteans, and Empire, until own graphics are available. (Not compatible with Version 3.1.9 or earlier.)
+Adds a new tribe named ‘Europeans’. It uses buildings and workers from Barbarians, Atlanteans, and Empire, until own graphics are available. (Not compatible with Version 3.2.9 or earlier.)
 MarkMcWire
 MarkMcWire
 1621788282
-557
+562
 2
 6.5
 3
@@ -1993,12 +1993,12 @@ dreieck
 This tribe misses the "sticky node" animation which makes the game crash if a sticky note is placed. Please add a sticky note animation:    https://github.com/widelands/widelands/issues/5860  
 3.2.9
 1682425239
-3.2.9
-165
-78131618
+3.3.0
+166
+78155306
 tribes
 0
-336
+337
 buildings
 buildings/advanced_barrier
 buildings/advanced_castle
@@ -2250,6 +2250,7 @@ tribes/europeans_tribe/images
 tribes/workers
 tribes/workers/soldier
 wares
+wares/armor_advanced
 wares/coin_copper
 wares/coin_gold
 wares/coin_silver
@@ -2335,7 +2336,7 @@ workers/trainer_normal
 workers/weaver_advanced
 workers/weaver_basic
 workers/weaver_normal
-7474
+7486
 addon
 buildings/advanced_barrier/idle_0.5.png
 buildings/advanced_barrier/idle_00.png
@@ -5140,6 +5141,14 @@ tribes/europeans_tribe/images/flag_15_pc.png
 tribes/europeans_tribe/images/frontier_00.png
 tribes/europeans_tribe/images/frontier_00_pc.png
 tribes/europeans_tribe/images/icon.png
+tribes/europeans_tribe/images/pinned_note_0.5.png
+tribes/europeans_tribe/images/pinned_note_0.5_pc.png
+tribes/europeans_tribe/images/pinned_note_1.png
+tribes/europeans_tribe/images/pinned_note_1_pc.png
+tribes/europeans_tribe/images/pinned_note_2.png
+tribes/europeans_tribe/images/pinned_note_2_pc.png
+tribes/europeans_tribe/images/pinned_note_4.png
+tribes/europeans_tribe/images/pinned_note_4_pc.png
 tribes/europeans_tribe/images/roadt_busy.png
 tribes/europeans_tribe/images/roadt_normal_00.png
 tribes/europeans_tribe/images/roadt_normal_01.png
@@ -5164,6 +5173,10 @@ tribes/workers/soldier/health_level0.png
 tribes/workers/soldier/health_level1.png
 tribes/workers/soldier/health_level2.png
 tribes/workers/soldier/health_level3.png
+wares/armor_advanced/idle.png
+wares/armor_advanced/init.lua
+wares/armor_advanced/menu.png
+wares/armor_advanced/register.lua
 wares/coin_copper/idle.png
 wares/coin_copper/init.lua
 wares/coin_copper/menu.png
@@ -9834,8 +9847,8 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-7497
-ad07d71d587e94b43e479b95ff74092e
+7509
+a6800428615ee21ef871b6df3787aae1
 7d672b6105fabbc2e717e81e40efd29b
 fbbd5b53033a58de73a4fe01bcb2f66f
 a08c175b1f94c27817eb9f4d6d07a9ff
@@ -9925,7 +9938,7 @@ c5ce1638f29614abb08d5d279154b394
 10eec0d7806691dec8a0a17ee61ec465
 72f9e09fb955be8a02912bdd2bbb1f51
 a472ce45cdc8d7311d223471dce49189
-407cb9416a1472e2512ad4337f46ccf1
+7caa108fe4aba111e98b29d92608d9a6
 4fba1dc7d4755a049e4fe96527bf6bcb
 7fd85e23230482974387a59d90d121ce
 7b1c5a21d5a80108c0e623804c61186a
@@ -10016,7 +10029,7 @@ db53a58813c56d6dbdd67c9506d9e203
 e39bfec60069778bcb8de03b21e9f86b
 0ad0039d36410c0f596d34d1c00b356b
 ff459358ca1771722280fd89abd8d14d
-ceedaf95e066f02c6808f7039fe75b5c
+871ec09ddf0a7cb9e42da6dda5253f79
 582f9b5c8ef7b65c4bc357d426dc576f
 9ec7b7c94a84d4f357e04d8d6f2780e4
 03a4e5c488803e3a18915cd89a1079bf
@@ -11234,7 +11247,7 @@ a86ea0cb40c6997771085e34d1eeb035
 0ad73f702f9166ae982e635345b5aee1
 c4fff002a9feae001d7b57f56e4a5115
 0eaab047bbbec6e9504b89fd1ba4b0e0
-58a10b09d35fc2a5e0b3fc202b1f28d3
+3492415660511c02b43e7ac857a81b97
 78be7e690749dc2b1b3a501af52e75bc
 7dec94ec507cc54684410066736b9465
 c74dfc63aea2a4d55505b8c58fff1289
@@ -12587,7 +12600,7 @@ e742ffe942ff53ccea5f05b9eb4b560e
 8eee716375856c125b431fff6c3dbfa4
 81a3919803aff7b95bc4afdc927db7e9
 a37b27b07b20bf70cebd8f24e2bd09c3
-f7bf9e80a3e9da5e9283084344bfd476
+338abfd031a201e720150570f0170948
 6f6342196a31eecff51418ef0e7766fb
 85425b9b46e4e57d96605631607af239
 262b330caf8ac34e818e610d01f5d5c4
@@ -12595,7 +12608,7 @@ f7bf9e80a3e9da5e9283084344bfd476
 187538af9098a172c650e8c6d4c44f2b
 a0fb4f5dd0fecd8fa6df11e5c9e8795e
 5299bc6bea4d6dec5f40841c5a7adfc6
-35ecb22b989318bcb0f756dc4bba729c
+67c0d9660245cb164f55322833315b74
 e192c5fecaab7abb7e0eb2026893f983
 07293069658863912c9736bcd1156163
 ddeece953b2517cb8a7af9e8602c0af5
@@ -12639,6 +12652,14 @@ d4f88d2e63ef9aed6ca5675df0707f6e
 90aa17d58ff64635608d3b12c700fe16
 b1eddb8a7925945a04a98a12b9c28817
 14e5e0fe027685bfc57ddc6821caa0cd
+88b05093b109c693ea2bd4cfddde3b25
+0c1937d614491f7a8fac8d6db8217a9a
+e091734fe0db0ec62295e97caecb6201
+17b2d3485163a08d65ec20ffbe20767e
+a18075f98c02a0db1c99e44e688fbd67
+0eba7f4ca5618a22c61155db548d8ef8
+d509d6f555a13b078b5874aa2daa72ce
+e3f08632a5d1dedcf40096620165887c
 5f30d67cb98b946f2544c6ffe2eb1e71
 a4556719d17258905d7be2761cd0487d
 7063b6f5d16863042a7254979c2a21f5
@@ -12646,7 +12667,7 @@ cdb69082530e277d638acf1e1d67a32c
 f9535866c7d646605d5bf64a69a93c5c
 d703f64b9ed78ce8a16b678a168eb6ac
 49887d8a8a2758f7fa58838695193c4c
-be7d6bcd1b6d10e00f37147c758f0557
+5ce9be212228f228af126f2a22535c27
 218d406eb17b86106d73146e2c5ecbc8
 5e858bd844dcf67f82864931cfbd945f
 051aa29669f6ec0865610b368a0fa40e
@@ -12663,6 +12684,10 @@ fe5bde03db9742d9a91124857459aae6
 6b3ca7be22922cdb254ea8ed4261acf2
 f76b0152518219ec295018cb707e7980
 ad2c19046636030b86b0ed32237be53f
+cdd87a541d3f770ce75c0ef9ba4502de
+8f4351f4ae1a2a378fdef5de03b7967d
+01aee306e5f8e90353842ff9fe0eb70c
+4b7b3b8ffd54fe1030f66ec83d175819
 6efe987b4c0e74643e7bd3f2f926ca29
 3cc86e99a2b251a2ed6dabfc314d653d
 b69572530191611ab07fd411c721a2e7
@@ -12694,7 +12719,7 @@ e514ac56f8dda3a486779342cf0615fc
 1036ea1a0498f30e177f3484e2149cbb
 0d1ff099bd1ec6987a7a50ce47765d9a
 85dcc7032c1f882708b13bf0683d5d93
-70274a77e9d4a0e8f95a782c86746134
+56afd169e4b812c7d5320463c040f6b9
 4a222102485217a03b01a518101f1e60
 f0c44f025d4dfe0b1ec67d0035373dae
 84f41cf30b68b7c038ace9d3b1d080f3
@@ -17310,10 +17335,10 @@ c79c08269cf78db82061fa883449952f
 061eace57b6883eb5bdde7959920e305
 922931452056931d38de0b06deaa6ec4
 cc93fe8cb2fecfcff51a3dddc933c111
-a3d44544b9fafa92807bd8867e13d5e2
-eb3139e5b3edf4dd204899b8b3661d4a
+ca93e71e1cee98da7938c4acbdd4786c
+4136cb9f83cf852762f78ef3dfde365c
 f1d4d3cc5cf35a9311de0fef22047f82
-90fea7314d41e3e619043757f1f9bcaf
+8e7f9fe6ba7483280096e823a262191f
 bdc55325db9453dffd3a0d58a315dd45
 de3126f331f67b93b0ee13460807f040
 03f1834048ef357b715f54b4805f31a9
@@ -17323,13 +17348,13 @@ e0c8e1a5607bab851ff6096d5f08f873
 003f98c5e1ad5c955ecf84b177aeddd3
 63fa50b14fd7c603a2ba51ea883abfaa
 0a5ec43664b1590f2598681b3e4509c6
-856084c00575980fe611b208a89d131e
-c8c9137daf6c662c2f1b23fa1d054217
+7ab4b1bd62f485ded7a50d019a609dce
+37841dd178aff24d82479a3e6e84ab1b
 2869c39c68c4b4f7f7004d2c178c2842
 2172b8dbdbc95270a41e8ea8ec2d4e1a
 54384e0f8dcf1713722e6ba5080bf144
 2fb207496ab05de5016461df14335581
-12c033870ac9d957884e447251d056e0
+95e32f900f9de5031bb8b440b190e204
 3b9e8545cdac3069996c2e0cde953e5a
 83ffe5cf72c4fea3b594581f248b560e
 verified
@@ -17555,7 +17580,7 @@ The first player who has at least 4 fully trained soldiers in his warehouses win
 kaputtnik
 kaputtnik
 1616241721
-92
+93
 1
 10.0
 0
@@ -17908,7 +17933,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-348
+352
 5
 9.6
 0
@@ -18067,7 +18092,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-333
+334
 2
 10.0
 0
@@ -19300,7 +19325,7 @@ Shallow water terrains, impassable for ships but walkable.
 kaputtnik
 kaputtnik
 1600000000
-128
+129
 2
 9.5
 0
@@ -20611,7 +20636,7 @@ This set of maps contains 6 small and medium-sized maps for 3-6 players. You can
 OIPUN
 OIPUN
 1615637480
-191
+192
 0
 0.0
 0
@@ -21559,7 +21584,7 @@ Dark theme (very loosely) based on kaputtnik's minimalistic theme and adwaita.
 atomikaya
 atomikaya
 1671793402
-76
+77
 0
 0.0
 0
@@ -22011,7 +22036,7 @@ Terrains and (alpha) trees for tropical areas. Someday in future this add-on mig
 Yo...
 Yo...
 1622321739
-117
+118
 2
 9.0
 0
@@ -22839,7 +22864,7 @@ Contains flowering meadows, clearings, dolomites, clay soil, green water, muddy 
 OIPUN
 OIPUN
 1622916439
-168
+169
 1
 9.0
 0

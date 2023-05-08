@@ -56,9 +56,9 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coin_wood", amount = 10 },
-        { name = "coin_copper", amount = 8 },
-        { name = "coin_silver", amount = 6 },
+        { name = "coin_wood", amount = 12 },
+        { name = "coin_copper", amount = 12 },
+        { name = "coin_silver", amount = 8 },
         { name = "coin_gold", amount = 4 },
     },
 
@@ -69,10 +69,15 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=trade_granite",
                 "call=trade_marble",
-                "call=trade_quartz",
-                "call=trade_diamond",
-                "call=trade_iron",
-                "call=trade_gold",
+                "call=trade_quartz_copper",
+                "call=trade_quartz_silver",
+                "call=trade_quartz_gold",
+                "call=trade_diamond_copper",
+                "call=trade_diamond_silver",
+                "call=trade_diamond_gold",
+                "call=trade_iron_copper",
+                "call=trade_iron_silver",
+                "call=trade_iron_gold"
             }
         },
         trade_granite = {
@@ -80,8 +85,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _("trading"),
             actions = {
                 "return=skipped unless economy needs granite",
-                "return=failed unless site has coin_wood:5",
-                "consume=coin_wood:5",
+                "return=failed unless site has coin_wood:4",
+                "consume=coin_wood:4",
                 "animate=working duration:15s",
                 "produce=granite:2",
                 "sleep=duration:30s",
@@ -92,14 +97,14 @@ wl.Descriptions():new_productionsite_type {
             descname = _("trading"),
             actions = {
                 "return=skipped unless economy needs marble",
-                "return=failed unless site has coin_wood:8",
-                "consume=coin_wood:8",
+                "return=failed unless site has coin_wood:6",
+                "consume=coin_wood:6",
                 "animate=working duration:15s",
                 "produce=marble:2",
                 "sleep=duration:30s",
             }
         },
-        trade_quartz = {
+        trade_quartz_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
@@ -111,39 +116,99 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
             }
         },
-        trade_diamond = {
+        trade_quartz_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs quartz",
+                "return=failed unless site has coin_silver:2",
+                "consume=coin_silver:2",
+                "animate=working duration:15s",
+                "produce=quartz",
+                "sleep=duration:30s",
+            }
+        },
+        trade_quartz_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs quartz",
+                "return=failed unless site has coin_gold",
+                "consume=coin_gold",
+                "animate=working duration:15s",
+                "produce=quartz",
+                "sleep=duration:30s",
+            }
+        },
+        trade_diamond_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
                 "return=skipped unless economy needs diamond",
-                "return=failed unless site has coin_copper:8",
-                "consume=coin_copper:8",
+                "return=failed unless site has coin_copper:4",
+                "consume=coin_copper:4",
                 "animate=working duration:15s",
                 "produce=diamond",
                 "sleep=duration:30s",
             }
         },
-        trade_iron = {
+        trade_diamond_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs diamond",
+                "return=failed unless site has coin_silver:2",
+                "consume=coin_silver:2",
+                "animate=working duration:15s",
+                "produce=diamond",
+                "sleep=duration:30s",
+            }
+        },
+        trade_diamond_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs diamond",
+                "return=failed unless site has coin_gold",
+                "consume=coin_gold",
+                "animate=working duration:15s",
+                "produce=diamond",
+                "sleep=duration:30s",
+            }
+        },
+        trade_iron_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
                 "return=skipped unless economy needs iron",
-                "return=failed unless site has coin_silver:6",
-                "consume=coin_silver:6",
+                "return=failed unless site has coin_copper:4",
+                "consume=coin_copper:4",
                 "animate=working duration:15s",
                 "produce=iron",
                 "sleep=duration:30s",
             }
         },
-        trade_gold = {
+        trade_iron_silver = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs gold",
-                "return=failed unless site has coin_gold:4",
-                "consume=coin_gold:4",
+                "return=skipped unless economy needs iron",
+                "return=failed unless site has coin_silver:2",
+                "consume=coin_silver:2",
                 "animate=working duration:15s",
-                "produce=gold",
+                "produce=iron",
+                "sleep=duration:30s",
+            }
+        },
+        trade_iron_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless economy needs iron",
+                "return=failed unless site has coin_gold",
+                "consume=coin_gold",
+                "animate=working duration:15s",
+                "produce=iron",
                 "sleep=duration:30s",
             }
         },

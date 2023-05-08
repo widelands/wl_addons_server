@@ -20,6 +20,7 @@ wl.Descriptions():new_tribe {
     animations = {
         frontier = { hotspot = {1, 19} },
         flag = { hotspot = {14, 38}, fps = 10 },
+        pinned_note = { hotspot = {18, 67} },
         bridge_normal_e = { hotspot = {-2, 12} },
         bridge_busy_e = { hotspot = {-2, 12} },
         bridge_normal_se = { hotspot = {5, 2} },
@@ -35,8 +36,7 @@ wl.Descriptions():new_tribe {
         { ware = "armor", points = 1},
         { ware = "tabard", points = 1},
         { ware = "armor_chain", points = 4},
-        { ware = "armor_gilded", points = 6},
-        { ware = "tabard_golden", points = 6},
+        { ware = "armor_advanced", points = 6},
         { ware = "spear_wooden", points = 1},
         { ware = "spear_advanced", points = 2},
         { ware = "ax_broad", points = 4},
@@ -785,25 +785,16 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Chain Armor
-                    purpose = pgettext("europeans_ware", "The chain armor is a medium armor for European soldiers. It is produced in a smithy and used in a battle arena – together with food – to protect soldiers with additional health points.")
+                    purpose = pgettext("europeans_ware", "The chain armor is a medium armor for European soldiers. It is produced in a smithy and used in a battle arena to protect soldiers with additional health points.")
                 }
             },
             {
-                name = "armor_gilded",
+                name = "armor_advanced",
                 default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Gilded Armor
-                    purpose = pgettext("europeans_ware", "The gilded armor is an advanced armor of a soldier. It is produced in the a smithy and used in the battle arena – together with food – to protect soldiers with additional health points.")
-                }
-            },
-            {
-                name = "tabard_golden",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Golden Tabard
-                    purpose = pgettext("europeans_ware", "The golden tabard is an advanced armor of a soldier. It is produced in the advanced smithy and used in a battle arena – together with food – to protect soldiers with additional health points.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
+                    purpose = pgettext("europeans_ware", "The advanced armor is produced in the a smithy and used in the battle arena to protect soldiers with additional health points.")
                 }
             }
         },
@@ -3446,8 +3437,6 @@ wl.Descriptions():new_tribe {
     ship = "europeans_ship",
     ferry = "europeans_ferry",
     port = "europeans_port",
-    carrier = "europeans_carrier_1",
-    carrier2 = "europeans_carrier_3",
     
    fastplace = {
       warehouse = "europeans_warehouse_basic",
