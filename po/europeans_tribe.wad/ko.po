@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 03:05+0200\n"
+"POT-Creation-Date: 2023-05-09 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -2236,10 +2236,9 @@ msgstr "넓은 도끼 제작"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:145
-#, fuzzy
 msgctxt "europeans_building"
 msgid "forging a suit of advanced armor"
-msgstr "판금 갑옷 제작"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:155
@@ -5641,10 +5640,9 @@ msgstr[0] ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/armor_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Armor"
-msgstr "강화 대장간"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_copper/init.lua:8
@@ -6149,7 +6147,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr ""
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a golden tabard"
-#~ msgstr "황금 외투 제작"

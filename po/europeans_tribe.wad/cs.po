@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 03:05+0200\n"
+"POT-Creation-Date: 2023-05-09 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -4276,28 +4276,20 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:788
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The chain armor is a medium armor for European soldiers. It is produced in a "
 "smithy and used in a battle arena to protect soldiers with additional health "
 "points."
 msgstr ""
-"Zlacená zbroj je pokročilou zbrojí vojáků. Vyrábí se v kovárně a je "
-"využívána v bojové aréně – společně s jídlem – aby poskytla vojákům ochranu "
-"v podobě více bodů zdraví."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:797
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a smithy and used in the battle arena "
 "to protect soldiers with additional health points."
 msgstr ""
-"Zlacená zbroj je pokročilou zbrojí vojáků. Vyrábí se v kovárně a je "
-"využívána v bojové aréně – společně s jídlem – aby poskytla vojákům ochranu "
-"v podobě více bodů zdraví."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:809
@@ -5763,10 +5755,9 @@ msgstr[3] ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/armor_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Armor"
-msgstr "Mistr sedlák"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_copper/init.lua:8
@@ -6271,13 +6262,3 @@ msgstr "Tkadlec"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Vrchní tkadlec"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The golden tabard is an advanced armor of a soldier. It is produced in "
-#~ "the advanced smithy and used in a battle arena – together with food – to "
-#~ "protect soldiers with additional health points."
-#~ msgstr ""
-#~ "Zlacený tabard je pokročilou zbrojí vojáků. Vyrábí se v pokročilé kovárně "
-#~ "a je využívána v bojové aréně – společně s jídlem – aby poskytl vojákům "
-#~ "ochranu v podobě více bodů zdraví."

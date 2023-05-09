@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 03:05+0200\n"
+"POT-Creation-Date: 2023-05-09 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2022\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -29,15 +29,11 @@ msgid "Europeans Tribe"
 msgstr "Europäer"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings and workers from "
 "Barbarians, Atlanteans, and Empire, until own graphics are available. (Not "
 "compatible with Version 3.2.9 or earlier.)"
 msgstr ""
-"Fügt den Stamm der \"Europäer\" hinzu. Dieser nutzt Gebäude sowie Arbeiter "
-"der Barbaren, Atlanter und des Imperiums, bis eigene Grafiken verfügbar "
-"sind. (Nicht mehr kompatibel mit Version 3.1.9 dieses Addons oder früher)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -2260,10 +2256,9 @@ msgstr "Das Schmieden einer Breitaxt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:145
-#, fuzzy
 msgctxt "europeans_building"
 msgid "forging a suit of advanced armor"
-msgstr "Das Schmieden eines Goldharnischs"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:155
@@ -4392,30 +4387,20 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:788
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The chain armor is a medium armor for European soldiers. It is produced in a "
 "smithy and used in a battle arena to protect soldiers with additional health "
 "points."
 msgstr ""
-"Das Kettenhemd ist die mittlere Rüstung der Soldaten der Europäer. Es wird "
-"in einer normalen Rüstungsschmiede hergestellt und in der Kampfarena – "
-"zusammen mit Nahrung – benötigt, um die Soldaten durch zusätzliche "
-"Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:797
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a smithy and used in the battle arena "
 "to protect soldiers with additional health points."
 msgstr ""
-"Der Goldharnisch ist eine fortgeschrittene Rüstung eines Soldaten. Er wird "
-"in einer normalen Rüstungsschmiede hergestellt und in der Kampfarena – "
-"zusammen mit Nahrung – benötigt, um die Soldaten durch zusätzliche "
-"Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:809
@@ -5921,10 +5906,9 @@ msgstr[1] "%1%(+%2%) Soldat"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/armor_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Armor"
-msgstr "Bauernmeister"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_copper/init.lua:8
@@ -6429,18 +6413,3 @@ msgstr "Weberlehrling"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Webergeselle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a golden tabard"
-#~ msgstr "Das Schneidern eines goldenen Wappenrocks"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The golden tabard is an advanced armor of a soldier. It is produced in "
-#~ "the advanced smithy and used in a battle arena – together with food – to "
-#~ "protect soldiers with additional health points."
-#~ msgstr ""
-#~ "Der goldene Wappenrock ist eine fortgeschrittene Rüstung eines Soldaten. "
-#~ "Er wird in der verbesserten Rüstungsschmiede hergestellt und in der "
-#~ "Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten durch "
-#~ "zusätzliche Lebenspunkte zu schützen."

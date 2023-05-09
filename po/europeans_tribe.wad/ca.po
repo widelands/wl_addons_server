@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 03:05+0200\n"
+"POT-Creation-Date: 2023-05-09 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -27,15 +27,11 @@ msgid "Europeans Tribe"
 msgstr "Europeus"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings and workers from "
 "Barbarians, Atlanteans, and Empire, until own graphics are available. (Not "
 "compatible with Version 3.2.9 or earlier.)"
 msgstr ""
-"Afegeix una cultura nova, anomenada «europeus». Usa edificis i treballadors "
-"dels bàrbars, atlants i de l'Imperi fins que disposi de gràfics propis. No "
-"és compatible amb la versió 3.1.9 o anterior."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -2259,10 +2255,9 @@ msgstr "forjar una destral ampla"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:145
-#, fuzzy
 msgctxt "europeans_building"
 msgid "forging a suit of advanced armor"
-msgstr "forjar una armadura daurada"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:155
@@ -4371,29 +4366,20 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:788
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The chain armor is a medium armor for European soldiers. It is produced in a "
 "smithy and used in a battle arena to protect soldiers with additional health "
 "points."
 msgstr ""
-"La cota de malla és una una armadura de nivell mitjà que fan servir els "
-"soldats europeus. Es produeix als tallers i s'usa a la palestra "
-"d'entrenament –amb menjar– per protegir els soldats amb punts de vida "
-"addicionals."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:797
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a smithy and used in the battle arena "
 "to protect soldiers with additional health points."
 msgstr ""
-"L'armadura daurada és una una armadura avançada que fan servir els soldats. "
-"Es produeix al taller i s'usa a la palestra d'entrenament –amb menjar– per "
-"protegir els soldats amb punts de vida addicionals."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:809
@@ -5899,10 +5885,9 @@ msgstr[1] "%1%(+%2%) soldats"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/armor_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Armor"
-msgstr "Agricultor avançat"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_copper/init.lua:8
@@ -6407,17 +6392,3 @@ msgstr "Teixidor bàsic"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Teixidor normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a golden tabard"
-#~ msgstr "confeccionar un tabard daurat"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The golden tabard is an advanced armor of a soldier. It is produced in "
-#~ "the advanced smithy and used in a battle arena – together with food – to "
-#~ "protect soldiers with additional health points."
-#~ msgstr ""
-#~ "El tabard d'or és una armadura avançada per als soldats. Es produeix als "
-#~ "tallers avançats i s'usa a les palestres d'entrenament –amb menjar– per "
-#~ "protegir els soldats amb punts de vida addicionals."

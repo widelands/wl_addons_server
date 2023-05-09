@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 03:05+0200\n"
+"POT-Creation-Date: 2023-05-09 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -27,7 +27,6 @@ msgid "Europeans Tribe"
 msgstr "Europäers-Volk"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings and workers from "
 "Barbarians, Atlanteans, and Empire, until own graphics are available. (Not "
@@ -35,7 +34,7 @@ msgid ""
 msgstr ""
 "Föögt een nejes Volk »Europäers« hento. ’t bruukt Husen un Arbeiders vun de "
 "Willen Lüü, Atlantingers un vum Latiensken Riek, bit dat neje Billers gifft. "
-"(Nich mit Versioon 3.1.9 un oller verdragelk.)"
+"(Nich mit Versioon 3.2.9 un oller verdragelk.)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -2260,10 +2259,9 @@ msgstr "eene Brede Ext to smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of gilded armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:145
-#, fuzzy
 msgctxt "europeans_building"
 msgid "forging a suit of advanced armor"
-msgstr "eenen Goldenen Wapenrock to smeden"
+msgstr "eenen Goden Wapenrock to smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:155
@@ -4371,7 +4369,6 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:788
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The chain armor is a medium armor for European soldiers. It is produced in a "
@@ -4379,19 +4376,17 @@ msgid ""
 "points."
 msgstr ""
 "De Stahl-Wapenrock is een middelster Wapenrock för europäisk Soldaten. ’t "
-"word in eener Smede produzeert un im Slachtenring – tosamen mit Spiesen – "
-"bruukt, um Soldaten mit mehr Gesundheid-Punkten uttorüsten."
+"word in eener Smede produzeert un im Slachtenring bruukt, um Soldaten mit "
+"mehr Gesundheid-Punkten uttorüsten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:797
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a smithy and used in the battle arena "
 "to protect soldiers with additional health points."
 msgstr ""
-"De Goldene Wapenrock is een goder Wapenrock för europäisk Soldaten. ’t word "
-"in eener Smede produzeert un im Slachtenring – tosamen mit Spiesen – bruukt, "
+"De Gode Wapenrock word in eener Smede produzeert un im Slachtenring bruukt, "
 "um Soldaten mit mehr Gesundheid-Punkten uttorüsten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
@@ -5880,10 +5875,9 @@ msgstr[1] "%1%(+%2%) Soldaten"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/armor_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Armor"
-msgstr "Meisterbuur"
+msgstr "Gode Wapenrock"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_copper/init.lua:8
@@ -6388,17 +6382,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a golden tabard"
-#~ msgstr "eene Goldene Kluft to sniedern"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The golden tabard is an advanced armor of a soldier. It is produced in "
-#~ "the advanced smithy and used in a battle arena – together with food – to "
-#~ "protect soldiers with additional health points."
-#~ msgstr ""
-#~ "De Goldene Kluft is een goder Wapenrock för europäisk Soldaten. ’t word "
-#~ "in eener groten Smede produzeert un im Slachtenring – tosamen mit Spiesen "
-#~ "– bruukt, um Soldaten mit mehr Gesundheid-Punkten uttorüsten."
