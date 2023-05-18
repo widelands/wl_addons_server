@@ -7,16 +7,16 @@
 # Thomas Ho <tomohnetom@web.de>, 2021
 # Matze Niemand, 2022
 # Benedikt Straub <benedikt-straub@web.de>, 2022
-# Stephan Lutz <stephan-lutz@gmx.de>, 2022
+# Stephan Lutz <stephan-lutz@gmx.de>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 03:05+0200\n"
+"POT-Creation-Date: 2023-05-18 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
-"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2022\n"
+"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -34,6 +34,9 @@ msgid ""
 "Barbarians, Atlanteans, and Empire, until own graphics are available. (Not "
 "compatible with Version 3.2.9 or earlier.)"
 msgstr ""
+"Fügt den Stamm der \"Europäer\" hinzu. Dieser nutzt Gebäude sowie Arbeiter "
+"der Barbaren, Atlanter und des Imperiums, bis eigene Grafiken verfügbar "
+"sind. (Nicht mehr kompatibel mit Version 3.2.9 dieses Addons oder früher)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -2258,7 +2261,7 @@ msgstr "Das Schmieden einer Breitaxt"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:145
 msgctxt "europeans_building"
 msgid "forging a suit of advanced armor"
-msgstr ""
+msgstr "Das Schmieden eines verbesserten Harnischs"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:155
@@ -4393,6 +4396,9 @@ msgid ""
 "smithy and used in a battle arena to protect soldiers with additional health "
 "points."
 msgstr ""
+"Das Kettenhemd ist die mittlere Rüstung der Soldaten der Europäer. Es wird "
+"in einer normalen Rüstungsschmiede hergestellt und in der Kampfarena "
+"benötigt, um die Soldaten durch zusätzliche Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:797
@@ -4401,6 +4407,9 @@ msgid ""
 "The advanced armor is produced in the a smithy and used in the battle arena "
 "to protect soldiers with additional health points."
 msgstr ""
+"Der verbesserte Harnisch wird in einer normalen Rüstungsschmiede hergestellt "
+"und in der Kampfarena benötigt, um die Soldaten durch zusätzliche "
+"Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:809
@@ -5908,7 +5917,7 @@ msgstr[1] "%1%(+%2%) Soldat"
 #: addons/europeans_tribe.wad/wares/armor_advanced/init.lua:8
 msgctxt "ware"
 msgid "Advanced Armor"
-msgstr ""
+msgstr "Verbesserter Harnisch"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_copper/init.lua:8
