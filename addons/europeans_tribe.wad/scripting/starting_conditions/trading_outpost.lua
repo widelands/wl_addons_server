@@ -10,7 +10,7 @@ init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _"Trading Outpost",
     -- TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
-    tooltip = _"This starting condition contains a market as an additional building, where some wares can be bought for gold, quartz and diamonds.",
+    tooltip = _"This starting condition contains a market as an additional building, where some wares can be bought for gold, quartz and diamonds. Disabled seafaring because of lack of compatibility with terraforming (diking of water bodies).",
     func =  function(player, shared_in_start)
 
     local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -19,6 +19,8 @@ init = {
     else
         player:allow_workers("all")
     end
+    
+    player:forbid_buildings{"europeans_port", "europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced"}
        
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {

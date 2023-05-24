@@ -10,7 +10,7 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "New World",
     -- TRANSLATORS: This is the tooltip for the "New World" starting condition
-    tooltip = _"Start the game with a advanced castle and a port. The AI might struggle with this condition on smaller maps.",
+    tooltip = _"Start the game with a advanced castle and a port. The AI might struggle with this condition on smaller maps. Disabled terraforming (diking of water bodies) because of lack of compatibility with seafaring.",
     map_tags = {"seafaring"},
 
     func = function(player, shared_in_start)
@@ -22,6 +22,9 @@ local init = {
     else
        player:allow_workers("all")
     end
+    
+    player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
+    
     local h = player:place_building("europeans_advanced_castle", sf, false, true)
     h:set_soldiers{[{3,3,3,3}] = 12}
       

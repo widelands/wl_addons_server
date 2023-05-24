@@ -10,7 +10,7 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Discovery",
     -- TRANSLATORS: This is the tooltip for the "Discovery" starting condition
-    tooltip = _"Start the game with three ships on the ocean and only a handful of supplies. Not suitable for AI players.",
+    tooltip = _"Start the game with three ships on the ocean and only a handful of supplies. Not suitable for AI players. Disabled terraforming (diking of water bodies) because of lack of compatibility with seafaring.",
     map_tags = {"seafaring"},
 
     func = function(player, shared_in_start)
@@ -22,6 +22,8 @@ local init = {
     else
        player:allow_workers("all")
     end
+    
+    player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
 
     launch_expeditions(player, {
       {

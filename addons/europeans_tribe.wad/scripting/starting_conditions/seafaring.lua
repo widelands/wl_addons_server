@@ -8,9 +8,9 @@ push_textdomain("europeans_tribe.wad", true)
 
 local init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Headquarters",
+    descname = _ "Seafaring",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-    tooltip = _"Start the game with your headquarters only. Disabled seafaring because of lack of compatibility with terraforming (diking of water bodies).",
+    tooltip = _"Start the game with your headquarters only. Disabled terraforming (diking of water bodies) because of lack of compatibility with seafaring.",
     func =  function(player, shared_in_start)
 
     local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -20,7 +20,7 @@ local init = {
         player:allow_workers("all")
     end
     
-    player:forbid_buildings{"europeans_port", "europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced"}
+    player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
        
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
             wares = {

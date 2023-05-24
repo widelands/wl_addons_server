@@ -10,7 +10,7 @@ init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Normal Village",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-    tooltip = _"Start the game with a village with some normal buildings. Useful starting condition for the AI.",
+    tooltip = _"Start the game with a village with some normal buildings. Disabled seafaring because of lack of compatibility with terraforming (diking of water bodies).",
     func =  function(player, shared_in_start)
 
     local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -20,7 +20,7 @@ init = {
       player:allow_workers("all")
     end
     
-    player:forbid_buildings{"europeans_headquarters"}
+    player:forbid_buildings{"europeans_headquarters", "europeans_port", "europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced"}
     
     local h = player:place_building("europeans_fortress", sf, false, true)
     h:set_soldiers{[{1,1,1,1}] = 12}
