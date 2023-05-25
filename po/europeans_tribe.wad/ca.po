@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-24 03:05+0200\n"
+"POT-Creation-Date: 2023-05-25 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -3192,14 +3192,11 @@ msgstr "Descoberta"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
-#, fuzzy
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
 "Not suitable for AI players. Disabled terraforming (diking of water bodies) "
 "because of lack of compatibility with seafaring."
 msgstr ""
-"Es comença la partida amb tres vaixells a l'oceà i uns pocs "
-"subministraments. Aquesta condició inicial no és adequada per a jugadors IA."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
@@ -3208,14 +3205,11 @@ msgstr "Ports"
 
 #. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a bundle of ports. The AI might struggle with this "
 "starting condition on smaller maps. Disabled terraforming (diking of water "
 "bodies) because of lack of compatibility with seafaring."
 msgstr ""
-"Es comença la partida amb uns quants ports. La IA pot patir una mica amb "
-"aquesta condició inicial en mapes petits."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
@@ -3224,13 +3218,10 @@ msgstr "Quarter general"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:13
-#, fuzzy
 msgid ""
 "Start the game with your headquarters only. Disabled seafaring because of "
 "lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
-"Es comença la partida només amb un quarter general. La IA pot patir una mica "
-"amb aquesta condició inicial en mapes petits."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:11
@@ -3239,14 +3230,11 @@ msgstr "Un món nou"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a advanced castle and a port. The AI might struggle with "
 "this condition on smaller maps. Disabled terraforming (diking of water "
 "bodies) because of lack of compatibility with seafaring."
 msgstr ""
-"Es comença la partida només amb un castell avançat i un port. La IA pot "
-"patir una mica amb aquesta condició inicial en mapes petits."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:11
@@ -3267,16 +3255,12 @@ msgstr "Post de mercaderies en dificultats"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:13
-#, fuzzy
 msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from "
 "this. Disabled seafaring because of lack of compatibility with terraforming "
 "(diking of water bodies)."
 msgstr ""
-"Comenceu la partida només amb un quarter general i molts pocs béns per "
-"desenvolupar l'economia. Avís: les IA poden no desenvolupar-se adequadament "
-"si comencen amb aquesta condició inicial."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -3285,14 +3269,11 @@ msgstr "Post de mercaderies"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:13
-#, fuzzy
 msgid ""
 "This starting condition contains a market as an additional building, where "
 "some wares can be bought for gold, quartz and diamonds. Disabled seafaring "
 "because of lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
-"Aquesta condició inicial té un mercat com a edifici addicional, on es poden "
-"comprar alguns béns amb or, quars i diamants."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:11
@@ -3301,14 +3282,11 @@ msgstr "Vila avançada"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a fortified village with advanced castle in its center. "
 "Disabled seafaring because of lack of compatibility with terraforming "
 "(diking of water bodies)."
 msgstr ""
-"Es comença la partida amb una vila fortificada amb un castell avançat al "
-"centre. Condició inicial adequada per a la IA."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:11
@@ -3317,14 +3295,11 @@ msgstr "Vila bàsica"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a small, peaceful village with only basic buildings. "
 "Disabled seafaring because of lack of compatibility with terraforming "
 "(diking of water bodies)."
 msgstr ""
-"Es comença la partida amb una vila pacífica petita només amb els edificis "
-"bàsics. Aquesta és la condició preferida per les IA."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:11
@@ -3333,13 +3308,10 @@ msgstr "Vila normal"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a village with some normal buildings. Disabled seafaring "
 "because of lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
-"Es comença la partida amb una vila amb alguns edificis normals. Condició "
-"inicial útil per les IA."
 
 #. TRANSLATORS: This is the Europeans' ship's name used in lists of units
 #: addons/europeans_tribe.wad/ship/init.lua:83

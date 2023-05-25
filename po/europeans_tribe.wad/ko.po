@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-24 03:05+0200\n"
+"POT-Creation-Date: 2023-05-25 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -3170,14 +3170,11 @@ msgstr "발견"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
-#, fuzzy
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
 "Not suitable for AI players. Disabled terraforming (diking of water bodies) "
 "because of lack of compatibility with seafaring."
 msgstr ""
-"넉넉한 보급품과 세 척의 배로 게임을 시작하세요. AI 플레이어에 적용되지 않습니"
-"다."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
@@ -3186,12 +3183,11 @@ msgstr "항구"
 
 #. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a bundle of ports. The AI might struggle with this "
 "starting condition on smaller maps. Disabled terraforming (diking of water "
 "bodies) because of lack of compatibility with seafaring."
-msgstr "여러 항구와 함께 게임을 시작하세요. AI에겐 더 작은 구역이 주어집니다."
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
@@ -3200,11 +3196,10 @@ msgstr "본부"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:13
-#, fuzzy
 msgid ""
 "Start the game with your headquarters only. Disabled seafaring because of "
 "lack of compatibility with terraforming (diking of water bodies)."
-msgstr "본부만 가지고 게임을 시작하세요. AI에겐 더 작은 구역이 주어집니다."
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:11
@@ -3213,14 +3208,11 @@ msgstr "신세계"
 
 #. TRANSLATORS: This is the tooltip for the "New World" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a advanced castle and a port. The AI might struggle with "
 "this condition on smaller maps. Disabled terraforming (diking of water "
 "bodies) because of lack of compatibility with seafaring."
 msgstr ""
-"강화된 성채와 항구를 가지고 게임을 시작하세요. AI에겐 더 작은 구역이 주어집니"
-"다."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:11
@@ -3241,15 +3233,12 @@ msgstr "교역소"
 
 #. TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:13
-#, fuzzy
 msgid ""
 "Start the game with just your headquarters and very few wares for "
 "bootstrapping an economy. Warning: the AI can’t successfully start from "
 "this. Disabled seafaring because of lack of compatibility with terraforming "
 "(diking of water bodies)."
 msgstr ""
-"본부와 같이 주어지는 최소한의 자원만으로 게임을 시작하세요. 경고: AI는 이 조"
-"건으로 성공적으로 시작할 수 없습니다."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -3258,14 +3247,11 @@ msgstr "교역소"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:13
-#, fuzzy
 msgid ""
 "This starting condition contains a market as an additional building, where "
 "some wares can be bought for gold, quartz and diamonds. Disabled seafaring "
 "because of lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
-"시작 조건으로 주어지는 상점에서 금, 석영, 다이아몬드로 추가 자원을 구입할 수 "
-"있습니다."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:11
@@ -3274,14 +3260,11 @@ msgstr "강화 마을"
 
 #. TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a fortified village with advanced castle in its center. "
 "Disabled seafaring because of lack of compatibility with terraforming "
 "(diking of water bodies)."
 msgstr ""
-"강화된 성체가 중앙에 있는 요새화된 마을로 게임을 시작하세요. AI에게 유용한 시"
-"작 조건입니다."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:11
@@ -3290,14 +3273,11 @@ msgstr "기본 마을"
 
 #. TRANSLATORS: This is the tooltip for the "Poor Hamlet" (minimum) starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a small, peaceful village with only basic buildings. "
 "Disabled seafaring because of lack of compatibility with terraforming "
 "(diking of water bodies)."
 msgstr ""
-"기본적인 건물만 있는 평화로운 마을로 게임을 시작하세요. AI에게 추천되는 시작 "
-"조건입니다."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:11
@@ -3306,12 +3286,10 @@ msgstr "일반 마을"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:13
-#, fuzzy
 msgid ""
 "Start the game with a village with some normal buildings. Disabled seafaring "
 "because of lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
-"일반적인 건물이 있는 마을로 게임을 시작하세요. AI에게 유용한 시작 조건입니다."
 
 #. TRANSLATORS: This is the Europeans' ship's name used in lists of units
 #: addons/europeans_tribe.wad/ship/init.lua:83
