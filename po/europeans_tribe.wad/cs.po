@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-25 03:05+0200\n"
+"POT-Creation-Date: 2023-05-27 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -5695,44 +5695,754 @@ msgstr ""
 "Na tomto staveništi dochází k rozebírání budovy. Do tvého kmenového skladu "
 "budou vráceny některé ze surovin, které byly použity při stavbě této budovy."
 
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3397
+msgctxt "warehousename"
+msgid "Amsterdam"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3399
+msgctxt "warehousename"
+msgid "Andorra la Vella"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3401
+msgctxt "warehousename"
+msgid "Antwerpen"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3403
+msgctxt "warehousename"
+msgid "Astrachan"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3405
+msgctxt "warehousename"
+msgid "Athen"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3407
+msgctxt "warehousename"
+msgid "Balaschicha"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3409
+msgctxt "warehousename"
+msgid "Barcelona"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3411
+msgctxt "warehousename"
+msgid "Beograd"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3413
+msgctxt "warehousename"
+msgid "Berlin"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3415
+msgctxt "warehousename"
+msgid "Bern"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3417
+msgctxt "warehousename"
+msgid "Birmingham"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3419
+msgctxt "warehousename"
+msgid "Bradford"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3421
+msgctxt "warehousename"
+msgid "Bremen"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3423
+msgctxt "warehousename"
+msgid "Bruxelles"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3425
+msgctxt "warehousename"
+msgid "București"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3427
+msgctxt "warehousename"
+msgid "Budapest"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3429
+msgctxt "warehousename"
+msgid "Charkiw"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3431
+msgctxt "warehousename"
+msgid "Chișinău"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3433
+msgctxt "warehousename"
+msgid "Den Haag"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3435
+msgctxt "warehousename"
+msgid "Dnipro"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3437
+msgctxt "warehousename"
+msgid "Donezk"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3439
+msgctxt "warehousename"
+msgid "Dortmund"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3441
+msgctxt "warehousename"
+msgid "Dresden"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3443
+msgctxt "warehousename"
+msgid "Dublin"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3445
+msgctxt "warehousename"
+msgid "Duisburg"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3447
+msgctxt "warehousename"
+msgid "Düsseldorf"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3449
+msgctxt "warehousename"
+msgid "Edinburgh"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3451
+msgctxt "warehousename"
+msgid "Essen"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3453
+msgctxt "warehousename"
+msgid "Frankfurt am Main"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3455
+msgctxt "warehousename"
+msgid "Genova"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3457
+msgctxt "warehousename"
+msgid "Glasgow"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3459
+msgctxt "warehousename"
+msgid "Göteborg"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3461
+msgctxt "warehousename"
+msgid "Hamburg"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3463
+msgctxt "warehousename"
+msgid "Hannover"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3465
+msgctxt "warehousename"
+msgid "Helsinki"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3467
+msgctxt "warehousename"
+msgid "Homel"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3469
+msgctxt "warehousename"
+msgid "Ischewsk"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3471
+msgctxt "warehousename"
+msgid "Istanbul"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3473
+msgctxt "warehousename"
+msgid "Jaroslawl"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3475
+msgctxt "warehousename"
+msgid "Kasan"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3477
+msgctxt "warehousename"
+msgid "Kirow"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3479
+msgctxt "warehousename"
+msgid "København"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3481
+msgctxt "warehousename"
+msgid "Köln"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3483
+msgctxt "warehousename"
+msgid "Kraków"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3485
+msgctxt "warehousename"
+msgid "Krasnodar"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3487
+msgctxt "warehousename"
+msgid "Krywyj Rih"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3489
+msgctxt "warehousename"
+msgid "Kyiv"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3491
+msgctxt "warehousename"
+msgid "Leeds"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3493
+msgctxt "warehousename"
+msgid "Leipzig"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3495
+msgctxt "warehousename"
+msgid "Lipezk"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3497
+msgctxt "warehousename"
+msgid "Lisboa"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3499
+msgctxt "warehousename"
+msgid "Ljubljana"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3501
+msgctxt "warehousename"
+msgid "Łódź"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3503
+msgctxt "warehousename"
+msgid "London"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3505
+msgctxt "warehousename"
+msgid "Luxemburg"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3507
+msgctxt "warehousename"
+msgid "Lwiw"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3509
+msgctxt "warehousename"
+msgid "Lyon"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3511
+msgctxt "warehousename"
+msgid "Machatschkala"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3513
+msgctxt "warehousename"
+msgid "Madrid"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3515
+msgctxt "warehousename"
+msgid "Málaga"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3517
+msgctxt "warehousename"
+msgid "Manchester"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3519
+msgctxt "warehousename"
+msgid "Marseille"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3521
+msgctxt "warehousename"
+msgid "Milano"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3523
+msgctxt "warehousename"
+msgid "Minsk"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3525
+msgctxt "warehousename"
+msgid "Monaco"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3527
+msgctxt "warehousename"
+msgid "Moskwa"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3529
+msgctxt "warehousename"
+msgid "München"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3531
+msgctxt "warehousename"
+msgid "Nabereschnyje Tschelny"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3533
+msgctxt "warehousename"
+msgid "Napoli"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3535
+msgctxt "warehousename"
+msgid "Nikosia"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3537
+msgctxt "warehousename"
+msgid "Nischni Nowgorod"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3539
+msgctxt "warehousename"
+msgid "Nürnberg"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3541
+msgctxt "warehousename"
+msgid "Odessa"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3543
+msgctxt "warehousename"
+msgid "Orenburg"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3545
+msgctxt "warehousename"
+msgid "Oslo"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3547
+msgctxt "warehousename"
+msgid "Palermo"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3549
+msgctxt "warehousename"
+msgid "Paris"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3551
+msgctxt "warehousename"
+msgid "Pensa"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3553
+msgctxt "warehousename"
+msgid "Perm"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3555
+msgctxt "warehousename"
+msgid "Podgorica"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3557
+msgctxt "warehousename"
+msgid "Poznań"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3559
+msgctxt "warehousename"
+msgid "Praha"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3561
+msgctxt "warehousename"
+msgid "Prishtina"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3563
+msgctxt "warehousename"
+msgid "Reykjavík"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3565
+msgctxt "warehousename"
+msgid "Rīga"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3567
+msgctxt "warehousename"
+msgid "Rjasan"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3569
+#, fuzzy
+msgctxt "warehousename"
+msgid "Roma"
+msgstr "Rumunsko"
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3571
+msgctxt "warehousename"
+msgid "Rostow-na-Donu"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3573
+msgctxt "warehousename"
+msgid "Rotterdam"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3575
+msgctxt "warehousename"
+msgid "San Marino"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3577
+msgctxt "warehousename"
+msgid "Samara"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3579
+msgctxt "warehousename"
+msgid "Sankt Petersburg"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3581
+msgctxt "warehousename"
+msgid "Saporischschja"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3583
+msgctxt "warehousename"
+msgid "Sarajevo"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3585
+msgctxt "warehousename"
+msgid "Saratow"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3587
+msgctxt "warehousename"
+msgid "Sevilla"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3589
+msgctxt "warehousename"
+msgid "Sheffield"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3591
+msgctxt "warehousename"
+msgid "Skopje"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3593
+msgctxt "warehousename"
+msgid "Sofia"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3595
+msgctxt "warehousename"
+msgid "Stockholm"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3597
+msgctxt "warehousename"
+msgid "Stuttgart"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3599
+msgctxt "warehousename"
+msgid "Tallinn"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3601
+msgctxt "warehousename"
+msgid "Tirana"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3603
+msgctxt "warehousename"
+msgid "Toljatti"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3605
+msgctxt "warehousename"
+msgid "Torino"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3607
+msgctxt "warehousename"
+msgid "Ufa"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3609
+msgctxt "warehousename"
+msgid "Uljanowsk"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3611
+msgctxt "warehousename"
+msgid "Vaduz"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3613
+#, fuzzy
+msgctxt "warehousename"
+msgid "Valencia"
+msgstr "Francie"
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3615
+msgctxt "warehousename"
+msgid "Valletta"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3617
+msgctxt "warehousename"
+msgid "Vilnius"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3619
+msgctxt "warehousename"
+msgid "Warszawa"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3621
+msgctxt "warehousename"
+msgid "Wien"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3623
+msgctxt "warehousename"
+msgid "Wolgograd"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3625
+msgctxt "warehousename"
+msgid "Woronesch"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3627
+msgctxt "warehousename"
+msgid "Wrocław"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3629
+msgctxt "warehousename"
+msgid "Zagreb"
+msgstr ""
+
+#. TRANSLATORS: This Europeans warehouse is named after a Europeans town
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3631
+msgctxt "warehousename"
+msgid "Zaragoza"
+msgstr ""
+
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3398
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3637
 msgctxt "europeans"
 msgid "Worker missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3400
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3639
 msgctxt "europeans"
 msgid "Worker is coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3402
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3641
 msgctxt "europeans"
 msgid "Workers missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3404
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3643
 msgctxt "europeans"
 msgid "Workers are coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3406
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3645
 msgctxt "europeans"
 msgid "Expert missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3408
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3647
 msgctxt "europeans"
 msgid "Experts missing"
 msgstr ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3422
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3661
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
@@ -5742,7 +6452,7 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3424
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3663
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
@@ -5752,7 +6462,7 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3426
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3665
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
@@ -5762,7 +6472,7 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3428
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3667
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"

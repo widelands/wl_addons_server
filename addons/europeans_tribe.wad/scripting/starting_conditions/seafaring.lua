@@ -11,6 +11,8 @@ local init = {
     descname = _ "Seafaring",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
     tooltip = _"Start the game with your headquarters only. Disabled terraforming (diking of water bodies) because of lack of compatibility with seafaring.",
+    map_tags = {"seafaring"},
+    
     func =  function(player, shared_in_start)
 
     local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -20,69 +22,71 @@ local init = {
         player:allow_workers("all")
     end
     
+    player:forbid_buildings{"europeans_headquarters", "europeans_warehouse_normal", "europeans_warehouse_advanced"}
     player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
        
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
-            wares = {
-                log = 127,
-                reed = 127,
-                granite = 63,
-                coal = 63,
-                water = 31,
-                ore = 31,
-                cloth = 31,
-                blackwood = 31,
-                planks = 31,
-                marble = 31,
-                marble_column = 15,
-                grout = 15,
-                brick = 15,
-                iron = 7,
-                gold = 7,
-                quartz = 15,
-                diamond = 15,
-                buckets = 31,
-                basket = 31,
-                pick = 9,
-                hammer = 9,
-                saw = 9,
-                scythe = 7,
-                shovel = 7,
-                felling_ax = 7,
-                fire_tongs = 5,
-                bread_paddle = 3,
-                hook_pole = 3,
-                kitchen_tools = 3,
-                needles = 2,
-                armor = 15,
-                tabard = 15,
-                spear_wooden = 15
-            },
-            workers = {
-                europeans_carrier = 32,
-                europeans_builder = 16,
-                europeans_farmer_basic = 16,
-                europeans_lumberjack_basic = 8,
-                europeans_breeder_basic = 6,
-                europeans_miner_basic = 6,
-                europeans_forester_basic = 6,
-                europeans_stonecutter_basic = 6,
-                europeans_trainer_basic = 4,
-                europeans_trader = 4,
-                europeans_carpenter_basic = 2,
-                europeans_charcoal_burner_basic = 2,
-                europeans_smith_basic = 2,
-                europeans_stonemason_basic = 2,
-                europeans_brewer_basic = 2,
-                europeans_miller_basic = 2,
-                europeans_baker_basic = 2,
-                europeans_smelter_basic = 1,
-                europeans_weaver_basic = 1,
-                europeans_claydigger_basic = 1
-          },
-            soldiers = {
-                [{0,0,0,0}] = 24,
-          }
+        wares = {
+            log = 127,
+            reed = 127,
+            granite = 63,
+            coal = 63,
+            water = 31,
+            ore = 31,
+            cloth = 31,
+            blackwood = 31,
+            planks = 31,
+            marble = 31,
+            marble_column = 15,
+            grout = 15,
+            brick = 15,
+            iron = 7,
+            gold = 7,
+            quartz = 15,
+            diamond = 15,
+            buckets = 31,
+            basket = 31,
+            pick = 9,
+            hammer = 9,
+            saw = 9,
+            scythe = 7,
+            shovel = 7,
+            felling_ax = 7,
+            fire_tongs = 5,
+            bread_paddle = 3,
+            hook_pole = 3,
+            kitchen_tools = 3,
+            needles = 2,
+            armor = 15,
+            tabard = 15,
+            spear_wooden = 15
+        },
+        workers = {
+            europeans_geologist = 1,
+            europeans_carrier = 32,
+            europeans_builder = 16,
+            europeans_farmer_basic = 16,
+            europeans_lumberjack_basic = 8,
+            europeans_breeder_basic = 6,
+            europeans_miner_basic = 6,
+            europeans_forester_basic = 6,
+            europeans_stonecutter_basic = 6,
+            europeans_trainer_basic = 4,
+            europeans_trader = 4,
+            europeans_carpenter_basic = 2,
+            europeans_charcoal_burner_basic = 2,
+            europeans_smith_basic = 2,
+            europeans_stonemason_basic = 2,
+            europeans_brewer_basic = 2,
+            europeans_miller_basic = 2,
+            europeans_baker_basic = 2,
+            europeans_smelter_basic = 1,
+            europeans_weaver_basic = 1,
+            europeans_claydigger_basic = 1
+      },
+        soldiers = {
+            [{0,0,0,0}] = 24,
+      }
     })
     
 end

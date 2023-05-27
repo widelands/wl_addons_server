@@ -3392,6 +3392,245 @@ wl.Descriptions():new_tribe {
         }
     },
     
+   warehouse_names = { -- Capital cities or big cities with more than 500.000 people
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Amsterdam"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Andorra la Vella"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Antwerpen"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Astrachan"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Athen"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Balaschicha"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Barcelona"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Beograd"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Berlin"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Bern"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Birmingham"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Bradford"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Bremen"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Bruxelles"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "București"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Budapest"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Charkiw"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Chișinău"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Den Haag"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Dnipro"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Donezk"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Dortmund"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Dresden"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Dublin"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Duisburg"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Düsseldorf"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Edinburgh"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Essen"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Frankfurt am Main"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Genova"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Glasgow"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Göteborg"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Hamburg"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Hannover"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Helsinki"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Homel"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Ischewsk"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Istanbul"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Jaroslawl"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Kasan"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Kirow"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "København"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Köln"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Kraków"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Krasnodar"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Krywyj Rih"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Kyiv"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Leeds"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Leipzig"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Lipezk"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Lisboa"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Ljubljana"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Łódź"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "London"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Luxemburg"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Lwiw"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Lyon"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Machatschkala"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Madrid"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Málaga"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Manchester"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Marseille"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Milano"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Minsk"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Monaco"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Moskwa"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "München"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Nabereschnyje Tschelny"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Napoli"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Nikosia"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Nischni Nowgorod"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Nürnberg"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Odessa"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Orenburg"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Oslo"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Palermo"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Paris"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Pensa"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Perm"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Podgorica"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Poznań"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Praha"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Prishtina"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Reykjavík"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Rīga"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Rjasan"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Roma"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Rostow-na-Donu"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Rotterdam"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "San Marino"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Samara"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Sankt Petersburg"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Saporischschja"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Sarajevo"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Saratow"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Sevilla"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Sheffield"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Skopje"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Sofia"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Stockholm"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Stuttgart"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Tallinn"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Tirana"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Toljatti"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Torino"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Ufa"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Uljanowsk"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Vaduz"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Valencia"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Valletta"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Vilnius"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Warszawa"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Wien"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Wolgograd"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Woronesch"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Wrocław"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Zagreb"),
+      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
+      pgettext("warehousename", "Zaragoza"),
+   },
+    
    -- Productionsite status strings
 
    -- TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing

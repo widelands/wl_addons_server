@@ -21,6 +21,7 @@ local init_europeans = {
         "addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua";
+        "addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua";

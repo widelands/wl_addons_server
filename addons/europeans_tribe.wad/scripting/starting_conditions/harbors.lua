@@ -27,6 +27,7 @@ local init = {
     player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
    
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
+        player:forbid_buildings{"europeans_headquarters", "europeans_warehouse_basic", "europeans_warehouse_normal", "europeans_warehouse_advanced"}
         for i, portfield in pairs(map.port_spaces) do
             if (math.abs(portfield.x - sf.x) < 12) and (math.abs(portfield.y - sf.y) < 12) then
                 port = prefilled_buildings(player, { "europeans_port", portfield.x, portfield.y,
@@ -97,6 +98,7 @@ local init = {
                 spear_wooden = 15
             },
             workers = {
+                europeans_geologist = 1,
                 europeans_carrier = 32,
                 europeans_builder = 16,
                 europeans_farmer_basic = 12,

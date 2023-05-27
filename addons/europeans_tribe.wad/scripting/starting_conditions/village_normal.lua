@@ -60,6 +60,7 @@ init = {
             spear_wooden = 7
         },
         workers = {
+            europeans_geologist = 1,
             europeans_carrier = 32,
             europeans_builder = 16,
             europeans_farmer_basic = 16,

@@ -67,6 +67,7 @@ local init = {
             spear_wooden = 5
         },
         workers = {
+            europeans_geologist = 1,
             europeans_carrier = 32,
             europeans_builder = 12,
             europeans_farmer_basic = 8,

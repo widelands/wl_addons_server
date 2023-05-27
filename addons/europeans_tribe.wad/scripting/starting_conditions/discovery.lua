@@ -23,6 +23,7 @@ local init = {
        player:allow_workers("all")
     end
     
+    player:forbid_buildings{"europeans_headquarters", "europeans_warehouse_normal", "europeans_warehouse_advanced"}
     player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
 
     launch_expeditions(player, {
