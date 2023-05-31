@@ -38,14 +38,13 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
+        europeans_trainer_normal = 1,
         europeans_trainer_basic = 1
     },
 
     inputs = {
         { name = "europeans_recruit", amount = 3 },
         { name = "coin_wood", amount = 3 },
-        { name = "spear_wooden", amount = 3 },
-        { name = "tabard", amount = 3 },
         { name = "quartz", amount = 3 },
         { name = "diamond", amount = 3 }
     },
@@ -56,7 +55,6 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=recruit_soldier",
-                "call=recruit_trainer",
                 "return=skipped"
             }
         },
@@ -66,24 +64,13 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "consume=europeans_recruit",
-                "consume=tabard spear_wooden coin_wood diamond",
+                "consume=coin_wood diamond",
                 "animate=working duration:90s",
                 "recruit=europeans_soldier",
                 "consume=europeans_recruit",
-                "consume=tabard spear_wooden coin_wood  quartz",
+                "consume=coin_wood quartz",
                 "animate=working duration:90s",
                 "recruit=europeans_soldier"
-            }
-        },
-        recruit_trainer= {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-            descname = pgettext("europeans_building", "recruiting trainer"),
-            actions = {
-                "return=skipped unless economy needs europeans_trainer_basic",
-                "consume=europeans_recruit",
-                "consume=tabard spear_wooden coin_wood quartz,diamond",
-                "animate=working duration:180s",
-                "recruit=europeans_trainer_basic"
             }
         },
     },

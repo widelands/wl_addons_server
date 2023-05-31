@@ -70,7 +70,9 @@ wl.Descriptions():new_productionsite_type {
         { name = "bread_paddle", amount = 1 },
         { name = "hook_pole", amount = 1 },
         { name = "kitchen_tools", amount = 1 },
-        { name = "spear_wooden", amount = 2 }
+        { name = "spear_wooden", amount = 2 },
+        { name = "helmet_wooden", amount = 2 },
+        { name = "armor_wooden", amount = 2 }
     },
 
     programs = {
@@ -374,7 +376,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_recruit",
                 "consume=europeans_carrier",
-                "consume=spear_wooden",
+                "consume=armor_wooden spear_wooden helmet_wooden",
                 "animate=working duration:90s",
                 "recruit=europeans_recruit"
             }
@@ -506,7 +508,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_trainer_advanced",
                 "return=skipped when not site has needles",
                 "consume=europeans_carrier",
-                "consume=spear_wooden",
+                "consume=armor_wooden spear_wooden helmet_wooden",
                 "animate=working duration:90s",
                 "recruit=europeans_trainer_basic"
             }

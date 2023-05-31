@@ -9,6 +9,7 @@ wl.Descriptions():new_immovable_type {
    size = "small",
    icon = dirname .. "tradepole_1.png",
 
+    animation_directory = dirname,
     animations = {
       idle = {
          directory = dirname,

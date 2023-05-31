@@ -6,12 +6,12 @@ wl.Descriptions():new_carrier_type {
     name = "europeans_carrier",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Carrier"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
 
     buildcost = {}, -- This will give the worker the property "buildable"
 
+    animation_directory = dirname,
     spritesheets = {
         idle = {
             fps = 5,

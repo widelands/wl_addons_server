@@ -30,7 +30,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
     
     working_positions = {
-        europeans_trainer_advanced = 1
+        europeans_trainer_advanced = 1,
+        europeans_trainer_basic = 1
     },
     
     inputs = {
@@ -49,7 +50,8 @@ wl.Descriptions():new_productionsite_type {
         { name = "hook_pole", amount = 1 },
         { name = "kitchen_tools", amount = 1 },
         { name = "spear_wooden", amount = 2 },
-        { name = "armor", amount = 2 },
+        { name = "helmet_wooden", amount = 2 },
+        { name = "armor_wooden", amount = 2 }
     },
 
     programs = {
@@ -328,7 +330,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_recruit",
                 "consume=europeans_carrier",
-                "consume=armor spear_wooden",
+                "consume=armor_wooden spear_wooden helmet_wooden",
                 "animate=working duration:60s",
                 "recruit=europeans_recruit"
             }
@@ -422,7 +424,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_trainer_advanced",
                 "consume=europeans_carrier",
-                "consume=armor spear_wooden",
+                "consume=armor_wooden spear_wooden helmet_wooden",
                 "animate=working duration:180s",
                 "recruit=europeans_trainer_advanced"
             }

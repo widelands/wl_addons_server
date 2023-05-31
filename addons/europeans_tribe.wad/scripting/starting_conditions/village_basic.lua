@@ -55,8 +55,8 @@ local init = {
             bread_paddle = 3,
             hook_pole = 3,
             kitchen_tools = 3,
-            armor = 7,
-            tabard = 7,
+            armor_wooden = 7,
+            helmet_wooden = 7,
             spear_wooden = 7
         },
         workers = {

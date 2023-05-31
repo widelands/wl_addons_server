@@ -51,31 +51,37 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     working_positions = {
-        europeans_trainer_normal = 2
+        europeans_trainer_advanced = 1,
+        europeans_trainer_normal = 1,
+        europeans_trainer_basic = 1
     },
 
     inputs = {
-        { name = "coin_copper", amount = 6 },
-        { name = "coin_silver", amount = 6 },
-        { name = "coin_gold", amount = 6 },
+        { name = "coin_copper", amount = 4 },
+        { name = "coin_silver", amount = 4 },
+        { name = "coin_gold", amount = 4 },
         { name = "helmet_mask", amount = 2 },
         { name = "shield_steel", amount = 2 },
         { name = "shield_advanced", amount = 2 }, 
         { name = "spear_advanced", amount = 2 },
         { name = "ax_broad", amount = 2 },
         { name = "sword_broad", amount = 2 },
-        { name = "armor", amount = 2 },
+        { name = "armor_processed", amount = 2 },
         { name = "armor_chain", amount = 2 },
-        { name = "armor_advanced", amount =  2 }
+        { name = "armor_advanced", amount =  2 },
+        { name = "boots_sturdy", amount = 2 },
+        { name = "boots_swift", amount = 2 },
+        { name = "boots_advanced", amount =  2 }
     },
 
     ["soldier health"] = {
         food = {{"coin_copper"}, {"coin_silver"}, {"coin_gold"}},
-        weapons = {"armor", "tabard", "armor_chain", "armor_gilded", "tabard_golden"}
+        weapons = {"armor_processed", "armor_chain", "armor_advanced"}
     },
 
     ["soldier evade"] = {
         food = {{"coin_copper"}, {"coin_silver"}, {"coin_gold"}},
+        weapons = {"boots_sturdy", "boots_swift", "boots_advanced"}
     },
         
     ["soldier defense"] = {
@@ -101,11 +107,10 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
             actions = {
-                "return=skipped when economy needs armor",
                 "checksoldier=soldier:health level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:health level:0",
-                "consume=coin_copper armor",
+                "consume=coin_copper armor_processed",
                 "train=soldier:health level:1"
             }
         },
@@ -137,11 +142,10 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
             actions = {
-                "return=skipped when economy needs beer",
                 "checksoldier=soldier:evade level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:evade level:0",
-                "consume=coin_copper:2",
+                "consume=coin_copper boots_sturdy",
                 "train=soldier:evade level:1"
             }
         },
@@ -149,11 +153,10 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier evade from level 1 to level 2"),
             actions = {
-                "return=skipped when economy needs beer_strong and economy needs mead",
                 "checksoldier=soldier:evade level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:evade level:1",
-                "consume=coin_silver:2",
+                "consume=coin_silver boots_swift",
                 "train=soldier:evade level:2"
             }
         },
@@ -161,11 +164,10 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier evade from level 2 to level 3"),
             actions = {
-                "return=skipped when economy needs wine",
                 "checksoldier=soldier:evade level:2",
                 "sleep=duration:30s",
                 "checksoldier=soldier:evade level:2",
-                "consume=coin_gold:2",
+                "consume=coin_gold boots_advanced",
                 "train=soldier:evade level:3"
             }
         },

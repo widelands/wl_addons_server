@@ -80,10 +80,10 @@ wl.Descriptions():new_soldier_type {
     name = "europeans_soldier",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Soldier"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
 
+    animation_directory = dirname,
     animations = animations,
         
     -- Battle attributes - initial values and per level increase

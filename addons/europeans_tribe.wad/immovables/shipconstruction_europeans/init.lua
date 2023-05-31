@@ -22,6 +22,7 @@ wl.Descriptions():new_immovable_type {
         diamond = 1
     },
 
+    animation_directory = dirname,
     animations = {
         idle = {
             pictures = path.list_files(dirname .. "build_??.png"),

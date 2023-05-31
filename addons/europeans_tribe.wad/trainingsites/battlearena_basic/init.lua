@@ -84,23 +84,25 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     working_positions = {
-        europeans_trainer_basic = 1
+        europeans_trainer_basic = 2
     },
 
     inputs = {
-        { name = "coin_copper", amount = 6 },
+        { name = "coin_copper", amount = 4 },
         { name = "helmet_mask", amount = 2 },
         { name = "spear_advanced", amount = 2 },
-        { name = "tabard", amount = 2 }
+        { name = "armor_processed", amount = 2 },
+        { name = "boots_sturdy", amount = 2 },
     },
 
     ["soldier health"] = {
         food = {{"coin_copper"}},
-        weapons = {"armor", "tabard"}
+        weapons = {"armor_processed"}
     },
 
     ["soldier evade"] = {
         food = {{"coin_copper"}},
+        weapons = {"boots_sturdy"}
     },
         
     ["soldier defense"] = {
@@ -126,11 +128,10 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
             actions = {
-                "return=skipped when economy needs tabard",
                 "checksoldier=soldier:health level:0",
                 "sleep=duration:40s",
                 "checksoldier=soldier:health level:0",
-                "consume=coin_copper tabard",
+                "consume=coin_copper armor_processed",
                 "train=soldier:health level:1"
             }
         },
@@ -138,11 +139,10 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
             actions = {
-                "return=skipped when economy needs beer",
                 "checksoldier=soldier:evade level:0",
                 "sleep=duration:40s",
                 "checksoldier=soldier:evade level:0",
-                "consume=coin_copper:2",
+                "consume=coin_copper boots_sturdy",
                 "train=soldier:evade level:1"
             }
         },

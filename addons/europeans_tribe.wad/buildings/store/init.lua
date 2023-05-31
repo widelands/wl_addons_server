@@ -6,9 +6,9 @@ wl.Descriptions():new_productionsite_type {
     name = "europeans_store",
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Store"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
 
+    animation_directory = dirname,
     animations = {
         idle = {
          hotspot = { 84, 117 },

@@ -96,8 +96,8 @@ local init = {
                 bread_paddle = 3,
                 hook_pole = 3,
                 kitchen_tools = 3,
-                armor = 7,
-                tabard = 7,
+                armor_wooden = 7,
+                helmet_wooden = 7,
                 spear_wooden = 7
             },
             workers = {
@@ -162,8 +162,8 @@ local init = {
             port:set_wares("bread_paddle", math.ceil(3 / #ports))
             port:set_wares("hook_pole", math.ceil(3 / #ports))
             port:set_wares("kitchen_tools", math.ceil(3 / #ports))
-            port:set_wares("armor", math.ceil(7 / #ports))
-            port:set_wares("tabard", math.ceil(7 / #ports))
+            port:set_wares("armor_wooden", math.ceil(7 / #ports))
+            port:set_wares("helmet_wooden", math.ceil(7 / #ports))
             port:set_wares("spear_wooden", math.ceil(7 / #ports))
         end
     end

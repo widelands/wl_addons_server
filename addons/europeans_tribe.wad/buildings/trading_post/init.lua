@@ -48,8 +48,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=trade_marble",
                 "call=trade_quartz",
                 "call=trade_diamond",
-                "call=trade_iron",
-                "call=trade_gold",
+                "call=trade_iron"
             }
         },
         trade_granite = {
@@ -72,7 +71,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs marble",
                 "callworker=find_pole",
                 "return=failed unless site has coin_wood:8",
-                "consume=coin_wood:8",
+                "consume=coin_copper:4",
                 "callworker=purchase_marble",
                 "produce=marble:2",
                 "sleep=duration:30s",
@@ -85,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs quartz",
                 "callworker=find_pole",
                 "return=failed unless site has coin_copper:4",
-                "consume=coin_copper:4",
+                "consume=coin_silver:4",
                 "callworker=purchase_quartz",
                 "produce=quartz",
                 "sleep=duration:30s",
@@ -98,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs diamond",
                 "callworker=find_pole",
                 "return=failed unless site has coin_copper:8",
-                "consume=coin_copper:8",
+                "consume=coin_gold:4",
                 "callworker=purchase_diamond",
                 "produce=diamond",
                 "sleep=duration:30s",
@@ -111,22 +110,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs iron",
                 "callworker=find_pole",
                 "return=failed unless site has coin_silver:6",
-                "consume=coin_silver:6",
+                "consume=coin_silver:4",
                 "callworker=purchase_iron",
                 "produce=iron",
-                "sleep=duration:30s",
-            }
-        },
-        trade_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped unless economy needs gold",
-                "callworker=find_pole",
-                "return=failed unless site has coin_gold:4",
-                "consume=coin_gold:4",
-                "callworker=purchase_gold",
-                "produce=gold",
                 "sleep=duration:30s",
             }
         },

@@ -48,7 +48,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_shipwright_normal = 1
+        europeans_shipwright_normal = 1,
+        europeans_shipwright_basic = 1
     },
 
     inputs = {

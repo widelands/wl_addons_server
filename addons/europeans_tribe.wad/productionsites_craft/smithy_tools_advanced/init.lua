@@ -42,7 +42,7 @@ wl.Descriptions():new_productionsite_type {
 
     working_positions = {
         europeans_smith_advanced = 1,
-        europeans_smith_normal = 1
+        europeans_smith_basic = 1
     },
 
     inputs = {

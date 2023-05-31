@@ -53,7 +53,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_shipwright_advanced = 1
+        europeans_shipwright_advanced = 1,
+        europeans_shipwright_basic = 1
     },
 
     inputs = {

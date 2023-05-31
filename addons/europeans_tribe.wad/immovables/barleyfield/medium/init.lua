@@ -15,6 +15,7 @@ wl.Descriptions():new_immovable_type {
       }
    },
    
+   animation_directory = dirname,
    animations = {
       idle = {
          directory = dirname,

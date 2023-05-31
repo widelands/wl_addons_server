@@ -6,7 +6,6 @@ wl.Descriptions():new_worker_type {
     name = "europeans_beekeeper_basic",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext ("europeans_worker", "Basic Beekeeper"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
 
@@ -25,6 +24,7 @@ wl.Descriptions():new_worker_type {
 
     ware_hotspot = {0, 20},
     
+    animation_directory = dirname,
     animations = {
         idle = {
             basename = "idle",

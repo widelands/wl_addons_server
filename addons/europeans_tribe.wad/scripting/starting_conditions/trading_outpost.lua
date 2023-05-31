@@ -54,8 +54,8 @@ init = {
                 hook_pole = 3,
                 kitchen_tools = 3,
                 needles = 2,
-                armor = 15,
-                tabard = 15,
+                armor_wooden = 15,
+                helmet_wooden = 15,
                 spear_wooden = 15
             },
             workers = {

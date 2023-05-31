@@ -33,14 +33,15 @@ wl.Descriptions():new_tribe {
     
     collectors_points_table = {
         { ware = "gold", points = 2},
-        { ware = "armor", points = 1},
-        { ware = "tabard", points = 1},
+        { ware = "armor_wooden", points = 1},
+        { ware = "armor", points = 2},
         { ware = "armor_chain", points = 4},
         { ware = "armor_advanced", points = 6},
         { ware = "spear_wooden", points = 1},
         { ware = "spear_advanced", points = 2},
         { ware = "ax_broad", points = 4},
         { ware = "sword_broad", points = 6},
+        { ware = "helmet_wooden", points = 1},
         { ware = "helmet_mask", points = 2},
         { ware = "shield_steel", points = 4},
         { ware = "shield_advanced", points = 6},
@@ -525,7 +526,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "gold",
-                default_target_quantity = 16,
+                default_target_quantity = 8,
                 preciousness = 8,
                 helptexts = {
                     purpose = {
@@ -762,21 +763,30 @@ wl.Descriptions():new_tribe {
         {
             -- Armor
             {
+                name = "armor_wooden",
+                default_target_quantity = 16,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
+                    purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the armoe smithy. In combination with wooden spear, it is the equipment to fit out young soldiers.")
+                }
+            },
+            {
                 name = "armor",
                 default_target_quantity = 16,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Armor
-                    purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the weaving mill. In combination with wooden spear, it is the equipment to fit out young soldiers.")
+                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill.")
                 }
             },
             {
-                name = "tabard",
+                name = "armor_processed",
                 default_target_quantity = 16,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Tabard
-                    purpose = pgettext("europeans_ware", "Basic tabard for European soldiers. It is produced in the weaving mill. In combination with wooden speer, it is the equipment to fit out young soldiers.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Processed Armor
+                    purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the weaving mill. In combination with wooden spear, it is the equipment to fit out young soldiers.")
                 }
             },
             {
@@ -796,6 +806,33 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
                     purpose = pgettext("europeans_ware", "The advanced armor is produced in the a smithy and used in the battle arena to protect soldiers with additional health points.")
                 }
+            },
+            {
+                name = "boots_sturdy",
+                default_target_quantity = 1,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
+                    purpose = pgettext("europeans_ware", "Sturdy boots are excellent footwear for soldiers to be quicker on their feet. They are produced by the dressmaker and used to train soldiers’ evade from level 0 to level 1.")
+                }
+            },
+            {
+                name = "boots_swift",
+                default_target_quantity = 1,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
+                    purpose = pgettext("europeans_ware", "Swift boots are light and durable footwear for soldiers to be quicker on their feet. They are produced by the dressmaker and used to train soldiers’ evade from level 1 to level 2.")
+                }
+            },
+            {
+                name = "boots_advanced",
+                default_target_quantity = 1,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
+                    purpose = pgettext("europeans_ware", "Hero boots! The only suitable footwear for a real hero. They are produced by the dressmaker and used to train soldiers’ evade from level 2 to level 3.")
+                }
             }
         },
         {
@@ -806,7 +843,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
-                    purpose = pgettext("europeans_ware", "This wooden spear is the basic weapon in the European military system. It is produced in the smithy. In combination with armor or tabard, it is the equipment to fit out young soldiers.")
+                    purpose = pgettext("europeans_ware", "This wooden spear is the basic weapon in the European military system. It is produced in the smithy. In combination with armor, it is the equipment to fit out young soldiers.")
                 }
             },
             {
@@ -834,6 +871,15 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Broad Sword
                     purpose = pgettext("europeans_ware", "This is a broad sword. It is produced in the advanced smithy and used in a battle arena – together with food – to train soldiers in attack.")
+                }
+            },
+            {
+                name = "helmet_wooden",
+                default_target_quantity = 1,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
+                    purpose = pgettext("europeans_ware", "The helmet is the basic defense tool of a soldier. It is produced in the smithy. In combination with armor, it is the equipment to fit out young soldiers.")
                 }
             },
             {
@@ -2706,14 +2752,14 @@ wl.Descriptions():new_tribe {
             name = "europeans_weaving_mill_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-                purpose = pgettext("europeans_building", "Weaves cloth for buildings and ships’ sails, and tabards to equip and train the soldiers.")
+                purpose = pgettext("europeans_building", "Weaves cloth for buildings and ships’ sails, and armor to equip and train the soldiers.")
             }
         },
         {
             name = "europeans_weaving_mill_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-                purpose = pgettext("europeans_building", "Weaves armor and tabard out of wool and reed.")
+                purpose = pgettext("europeans_building", "Weaves cloth and armor out of wool and reed.")
             }
         },
         {

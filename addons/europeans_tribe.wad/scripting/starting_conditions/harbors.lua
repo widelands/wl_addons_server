@@ -93,8 +93,8 @@ local init = {
                 bread_paddle = 3,
                 hook_pole = 3,
                 kitchen_tools = 3,
-                armor = 15,
-                tabard = 15,
+                armor_wooden = 15,
+                helmet_wooden = 15,
                 spear_wooden = 15
             },
             workers = {
@@ -160,8 +160,8 @@ local init = {
             port:set_wares("bread_paddle", math.ceil(3 / #ports))
             port:set_wares("hook_pole", math.ceil(3 / #ports))
             port:set_wares("kitchen_tools", math.ceil(3 / #ports))
-            port:set_wares("armor", math.ceil(15 / #ports))
-            port:set_wares("tabard", math.ceil(15 / #ports))
+            port:set_wares("armor_wooden", math.ceil(15 / #ports))
+            port:set_wares("helmet_wooden", math.ceil(15 / #ports))
             port:set_wares("spear_wooden", math.ceil(15 / #ports))
         end
         place_building_in_region(player, "europeans_shipyard_basic", ports[1].fields[1]:region(3), {

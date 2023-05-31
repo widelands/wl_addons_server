@@ -81,11 +81,11 @@ wl.Descriptions():new_ship_type {
     name = "europeans_ship",
     -- TRANSLATORS: This is the Europeans' ship's name used in lists of units
     descname = pgettext("europeans_ship", "Ship"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     capacity = 32,
     vision_range = 4,
 
+    animation_directory = dirname,
     animations = {
         idle = {
             hotspot = { 89, 86 },

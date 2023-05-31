@@ -58,15 +58,16 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_smith_normal = 1,
-        europeans_smith_advanced = 1
+        europeans_smith_advanced = 1,
+        europeans_smith_basic = 1
     },
 
     inputs = {
         { name = "planks", amount = 6 },
         { name = "coal", amount = 6 },
         { name = "iron", amount = 6 },
-        { name = "armor", amount = 4 },
+        { name = "armor", amount = 6 },
+        { name = "cloth", amount = 6 }
     },
 
     programs = {
@@ -74,15 +75,44 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=produce_armor_wooden",
+                "call=produce_helmet_wooden",
                 "call=produce_spear_wooden",
+                "call=produce_armor_processed",
+                "call=produce_boots_sturdy",
                 "call=produce_helmet_mask",
                 "call=produce_spear_advanced",
                 "sleep=duration:15s",
                 "call=produce_armor_chain",
+                "call=produce_boots_swift",
                 "call=produce_shield_steel",
                 "call=produce_ax_broad",
                 "sleep=duration:15s",
                 "return=skipped"
+            }
+        },
+        produce_armor_wooden = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
+            descname = pgettext("europeans_building", "making a wooden armor"),
+            actions = {
+                "return=skipped unless economy needs armor_wooden or workers need experience",
+                "consume=planks",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "animate=working duration:30s",
+                "playsound=sound/smiths/sharpening priority:90%",
+                "produce=armor_wooden:2"
+            }
+        },
+        produce_helmet_wooden = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
+            descname = pgettext("europeans_building", "making a wooden helmet"),
+            actions = {
+                "return=skipped unless economy needs helmet_wooden or workers need experience",
+                "consume=planks",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "animate=working duration:30s",
+                "playsound=sound/smiths/sharpening priority:90%",
+                "produce=helmet_wooden:2"
             }
         },
         produce_spear_wooden = {
@@ -95,6 +125,28 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:30s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=spear_wooden:2"
+            }
+        },
+        produce_armor_processed = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making processed armor because ...
+            descname = pgettext("europeans_building", "making processed armor"),
+            actions = {
+                "return=skipped unless economy needs armor_processed",
+                "consume=armor cloth",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "animate=working duration:30s",
+                "produce=armor_processed:2"
+            }
+        },
+        produce_boots_sturdy = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
+            descname = pgettext("europeans_building", "making study boots"),
+            actions = {
+                "return=skipped unless economy needs boots_sturdy",
+                "consume=planks armor cloth",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "animate=working duration:30s",
+                "produce=boots_sturdy:2"
             }
         },
         produce_helmet_mask = {
@@ -128,6 +180,17 @@ wl.Descriptions():new_productionsite_type {
                 "consume=armor:2 coal iron",
                 "animate=working duration:30s",
                 "produce=armor_chain:2"
+            }
+        },
+        produce_boots_swift = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
+            descname = pgettext("europeans_building", "making swift boots"),
+            actions = {
+                "return=skipped unless economy needs boots_swift",
+                "consume=planks armor cloth",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "animate=working duration:30s",
+                "produce=boots_swift:2"
             }
         },
         produce_shield_steel = {

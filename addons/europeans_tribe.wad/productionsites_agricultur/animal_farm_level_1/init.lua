@@ -35,8 +35,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_breeder_normal = 2,
-        europeans_breeder_basic = 1
+        europeans_breeder_normal = 1,
+        europeans_breeder_basic = 2
     },
 
     inputs = {

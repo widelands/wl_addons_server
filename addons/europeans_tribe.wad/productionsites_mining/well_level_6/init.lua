@@ -8,13 +8,13 @@ wl.Descriptions():new_productionsite_type {
     descname = pgettext("europeans_building", "Big Well"),
     icon = dirname .. "menu.png",
     
+    animation_directory = dirname,
     animations = {
         idle = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
             hotspot = { 40, 55 }
         },
         working = {
-            pictures = path.list_files(dirname .. "idle_??.png"),
+            basename = "idle", -- TODO(GunChleoc): No animation yet.
             hotspot = { 40, 55 }
         },
     },

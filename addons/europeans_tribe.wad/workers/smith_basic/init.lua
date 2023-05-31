@@ -6,13 +6,13 @@ wl.Descriptions():new_worker_type {
     name = "europeans_smith_basic",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Basic Smith"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
     
     experience = 24,
     becomes = "europeans_smith_normal",
 
+    animation_directory = dirname,
     animations = {
         idle = {
             hotspot = { 6, 28 },

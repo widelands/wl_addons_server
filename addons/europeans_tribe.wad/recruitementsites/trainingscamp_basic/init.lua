@@ -9,7 +9,6 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-    -- TODO(Nordfriese): Make animations.
     animations = {
       idle = {
          hotspot = {55, 49}
@@ -75,8 +74,6 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "europeans_recruit", amount = 2 },
         { name = "coin_wood", amount = 2 },
-        { name = "spear_wooden", amount = 2 },
-        { name = "tabard", amount = 2 },
         { name = "quartz", amount = 2 },
         { name = "diamond", amount = 2 }
     },
@@ -87,7 +84,6 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=recruit_soldier",
-                "call=recruit_trainer",
                 "return=skipped"
             }
         },
@@ -97,20 +93,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "consume=europeans_recruit",
-                "consume=tabard spear_wooden coin_wood quartz,diamond",
+                "consume=coin_wood quartz,diamond",
                 "animate=working duration:180s",
                 "recruit=europeans_soldier"
-            }
-        },
-        recruit_trainer= {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-            descname = pgettext("europeans_building", "recruiting trainer"),
-            actions = {
-                "return=skipped unless economy needs europeans_trainer_basic",
-                "consume=europeans_recruit",
-                "consume=tabard spear_wooden coin_wood quartz,diamond",
-                "animate=working duration:180s",
-                "recruit=europeans_trainer_basic"
             }
         },
     },

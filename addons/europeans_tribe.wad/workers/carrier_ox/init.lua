@@ -6,12 +6,12 @@ wl.Descriptions():new_carrier_type {
     name = "europeans_carrier_ox",
     -- TRANSLATORS: This is a worker name used in lists of workers
     descname = pgettext("europeans_worker", "Ox"),
-    animation_directory = dirname,
     icon = dirname .. "menu.png",
     vision_range = 2,
 
     ware_hotspot = { -2, 13 },
 
+    animation_directory = dirname,
     spritesheets = {
         idle = {
             fps = 20,

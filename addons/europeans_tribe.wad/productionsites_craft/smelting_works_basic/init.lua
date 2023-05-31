@@ -63,9 +63,24 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=smelt_gold",
                 "call=smelt_iron",
                 "call=smelt_iron_idle",
                 "return=skipped"
+            }
+        },
+        smelt_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
+            descname = pgettext("europeans_building", "smelting gold"),
+            actions = {
+                "return=skipped unless economy needs gold or workers need experience",
+                "return=skipped unless site has coal:2",
+                "return=skipped unless site has ore:2",
+                "consume=ore:2 coal:2",
+                "playsound=sound/metal/fizzle priority:15% allow_multiple",
+                "animate=working duration:60s",
+                "playsound=sound/metal/goldping priority:60%",
+                "produce=gold"
             }
         },
         smelt_iron = {
