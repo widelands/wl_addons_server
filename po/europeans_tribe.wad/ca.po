@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-31 03:06+0200\n"
+"POT-Creation-Date: 2023-06-01 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2022\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -2212,19 +2212,17 @@ msgstr "Taller d'armadures avançat"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:85
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:98
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:96
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making a wooden armor"
-msgstr "forjar una llança de fusta"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:97
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:110
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:108
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making a wooden helmet"
-msgstr "forjar una llança de fusta"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:109
@@ -2246,10 +2244,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:132
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:145
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:143
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making study boots"
-msgstr "fabricar dalles"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:143
@@ -2277,10 +2274,9 @@ msgstr "forjar una cota de malla"
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:176
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:187
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making swift boots"
-msgstr "fabricar serres"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:187
@@ -2304,10 +2300,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:219
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making advanced boots"
-msgstr "fabricar estris de cuina"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:230
@@ -2529,10 +2524,9 @@ msgstr "teixir tela"
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:75
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:74
-#, fuzzy
 msgctxt "europeans_building"
 msgid "tailoring a suit of armor"
-msgstr "forjar una armadura"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:8
@@ -3225,9 +3219,8 @@ msgstr "construir un vaixell"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/debug.lua:11
-#, fuzzy
 msgid "Debug Europeans"
-msgstr "Europeus"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/debug.lua:13
@@ -4396,14 +4389,11 @@ msgstr "Ho fabriquen tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:771
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the armoe smithy. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
-"Armadura bàsica pels soldats europeus. Es produeix al taller de teixir. En "
-"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:780
@@ -4467,16 +4457,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:846
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
 "produced in the smithy. In combination with armor, it is the equipment to "
 "fit out young soldiers."
 msgstr ""
-"Aquesta llança de fusta és l'arma bàsica del sistema militar europeu. Es "
-"produeix als tallers. Junt amb armadures o tabards, és l'equipament dels "
-"soldats joves."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:855
@@ -4510,16 +4496,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:882
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The helmet is the basic defense tool of a soldier. It is produced in the "
 "smithy. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
-"Aquesta llança de fusta és l'arma bàsica del sistema militar europeu. Es "
-"produeix als tallers. Junt amb armadures o tabards, és l'equipament dels "
-"soldats joves."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:891
@@ -5464,21 +5446,17 @@ msgstr "Teixeix tela amb juncs."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2755
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Weaves cloth for buildings and ships’ sails, and armor to equip and train "
 "the soldiers."
 msgstr ""
-"Teixeix teles pels edificis, les veles dels vaixells i per equipar amb "
-"tabards els soldats per poder entrenar-los."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2762
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Weaves cloth and armor out of wool and reed."
-msgstr "Teixeix armadures amb llana i juncs."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2769
@@ -6771,10 +6749,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/boots_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Boots"
-msgstr "Explorador avançat"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/boots_sturdy/init.lua:8
@@ -6790,10 +6767,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/bread_paddle/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Bread Paddle"
-msgstr "fabricar pales de forner"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/brick/init.lua:8
@@ -6821,10 +6797,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coal/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Coal"
-msgstr "No hi ha carbó"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_copper/init.lua:8
@@ -6864,10 +6839,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/felling_ax/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Felling Ax"
-msgstr "tallar arbres"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/fire_tongs/init.lua:8
@@ -6889,17 +6863,15 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/fruit/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Fruit"
-msgstr "Hort de fruita"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/gold/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Gold"
-msgstr "No hi ha or"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/granite/init.lua:8
@@ -6951,17 +6923,15 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/iron/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Iron"
-msgstr "No hi ha ferro"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/kitchen_tools/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Kitchen Tools"
-msgstr "fabricar estris de cuina"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/log/init.lua:8
@@ -7043,10 +7013,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares. Used for thatching roofs and as a fiber for weaving cloth, fishing nets etc.
 #: addons/europeans_tribe.wad/wares/reed/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Reed"
-msgstr "Camp de juncs"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/rye/init.lua:8
@@ -7062,10 +7031,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/scrap_iron/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Scrap Iron"
-msgstr "Restes de fusta "
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/scrap_metal_mixed/init.lua:8
@@ -7087,10 +7055,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/shield_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Shield"
-msgstr "Drassana avançada"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/shield_steel/init.lua:8
@@ -7118,10 +7085,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/spear_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Spear"
-msgstr "Drassana avançada"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/spear_wooden/init.lua:8
@@ -7137,10 +7103,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/water/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Water"
-msgstr "Aigua"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/wheat/init.lua:8
@@ -7621,16 +7586,3 @@ msgstr "Teixidor bàsic"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Teixidor normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a tabard"
-#~ msgstr "confeccionant un tabard"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Basic tabard for European soldiers. It is produced in the weaving mill. "
-#~ "In combination with wooden speer, it is the equipment to fit out young "
-#~ "soldiers."
-#~ msgstr ""
-#~ "Tabard bàsic pels soldats europeus. Es produeix al taller de teixir. En "
-#~ "combinació amb la llança de fusta, és l'equipament dels soldats novells."

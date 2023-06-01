@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-31 03:06+0200\n"
+"POT-Creation-Date: 2023-06-01 03:05+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -29,15 +29,14 @@ msgid "Europeans Tribe"
 msgstr "Europäer"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings, workers and some "
 "wares from other tribes, until own graphics are available. (Not compatible "
 "with Version 3.3.9 or earlier.)"
 msgstr ""
-"Fügt den Stamm der \"Europäer\" hinzu. Dieser nutzt Gebäude sowie Arbeiter "
-"der Barbaren, Atlanter und des Imperiums, bis eigene Grafiken verfügbar "
-"sind. (Nicht mehr kompatibel mit Version 3.2.9 dieses Addons oder früher)"
+"Fügt den Stamm der \"Europäer\" hinzu. Dieser nutzt Gebäude, Arbeiter und "
+"einige Waren von anderen Stämmen, bis eigene Grafiken verfügbar sind. (Nicht "
+"mehr kompatibel mit Version 3.3.9 dieses Addons oder früher)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -2217,19 +2216,17 @@ msgstr "Verbesserte Rüstungsschmiede"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:85
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:98
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:96
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making a wooden armor"
-msgstr "Das Herstellen eines Holzspeers"
+msgstr "Das Herstellen einer hölzernen Rüstung"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:97
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:110
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:108
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making a wooden helmet"
-msgstr "Das Herstellen eines Holzspeers"
+msgstr "Das Herstellen eine hölzernen Helms"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:109
@@ -2245,16 +2242,15 @@ msgstr "Das Herstellen eines Holzspeers"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:132
 msgctxt "europeans_building"
 msgid "making processed armor"
-msgstr ""
+msgstr "Das Herstellen eines überarbeitete Harnischs"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:132
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:145
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:143
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making study boots"
-msgstr "Das Herstellen von Sensen"
+msgstr "Das Herstellen robuster Stiefel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:143
@@ -2282,10 +2278,9 @@ msgstr "Das Schmieden eines Kettenhemds"
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:176
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:187
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making swift boots"
-msgstr "Das Herstellen von Sägen"
+msgstr "Das Herstellen flinker Stiefel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:187
@@ -2309,10 +2304,9 @@ msgstr "Das Schmieden eines verbesserten Harnischs"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:219
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making advanced boots"
-msgstr "Das Herstellen von Küchengeräten"
+msgstr "Das Herstellen verbesserter Stiefel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:230
@@ -2534,10 +2528,9 @@ msgstr "Das Weben von Stoff"
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:75
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:74
-#, fuzzy
 msgctxt "europeans_building"
 msgid "tailoring a suit of armor"
-msgstr "Das Schmieden eines Harnischs"
+msgstr "Das Schneidern einer Rüstung"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:8
@@ -3227,14 +3220,13 @@ msgstr "Das Bauen eines Schiffs"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/debug.lua:11
-#, fuzzy
 msgid "Debug Europeans"
-msgstr "Europäer"
+msgstr "Debugge die Europäer"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/debug.lua:13
 msgid "Only for debug purposes. No regular starting condition"
-msgstr ""
+msgstr "Nur für Debuggingzwecke. Keine reguläre Startbedingung"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:11
@@ -3248,6 +3240,9 @@ msgid ""
 "Not suitable for AI players. Disabled terraforming (diking of water bodies) "
 "because of lack of compatibility with seafaring."
 msgstr ""
+"Beginne das Spiel mit drei Schiffen auf dem Ozean und nur einer Hand voll an "
+"Gütern. Nicht geeignet für KI Spieler. Das Terraforming (Eindeichen von "
+"Wasserfeldern) wurde deaktiviert, da es nicht kompatibel mit Seefahrt ist."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
@@ -3261,6 +3256,10 @@ msgid ""
 "starting condition on smaller maps. Disabled terraforming (diking of water "
 "bodies) because of lack of compatibility with seafaring."
 msgstr ""
+"Beginne das Spiel mit einer Hand voll Häfen. Die KI kann sich mit dieser "
+"Startbedingung auf kleinen Karten schwer tun. Das Terraforming (Eindeichen "
+"von Wasserfeldern) wurde deaktiviert, da es nicht kompatibel mit Seefahrt "
+"ist."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
@@ -3273,6 +3272,9 @@ msgid ""
 "Start the game with your headquarters only. Disabled seafaring because of "
 "lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
+"Beginne das Spiel nur mit deinem Hauptquartier. Die Seefahrt wurde "
+"deaktiviert, aufgrund fehlender Kompatibilität mit dem Terraforming "
+"(Eindeichen von Wasserfeldern)."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:11
@@ -3286,11 +3288,15 @@ msgid ""
 "this condition on smaller maps. Disabled terraforming (diking of water "
 "bodies) because of lack of compatibility with seafaring."
 msgstr ""
+"Beginne das Spiel mit einer fortgeschritenen Festung und einem Hafen. Die KI "
+"kann sich mit dieser Startbedingung auf kleinen Karten schwer tun. Das "
+"Terraforming (Eindeichen von Wasserfeldern) wurde deaktiviert, da es nicht "
+"kompatibel mit Seefahrt ist."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:11
 msgid "Seafaring"
-msgstr ""
+msgstr "Seefahrt"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:13
@@ -3298,6 +3304,9 @@ msgid ""
 "Start the game with your headquarters only. Disabled terraforming (diking of "
 "water bodies) because of lack of compatibility with seafaring."
 msgstr ""
+"Beginne das Spiel nur mit deinem Hauptquartier. Das Terraforming (Eindeichen "
+"von Wasserfeldern) wurde deaktiviert, da es nicht kompatibel mit Seefahrt "
+"ist."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/struggling_outpost.lua:11
@@ -3312,6 +3321,10 @@ msgid ""
 "this. Disabled seafaring because of lack of compatibility with terraforming "
 "(diking of water bodies)."
 msgstr ""
+"Am Anfang des Spieles stehen nur ein Hauptquartier und sehr wenige Waren für "
+"den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
+"erfolgreich starten. Die Seefahrt wurde deaktiviert, aufgrund fehlender "
+"Kompatibilität mit dem Terraforming (Eindeichen von Wasserfeldern)."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua:11
@@ -3325,6 +3338,10 @@ msgid ""
 "some wares can be bought for gold, quartz and diamonds. Disabled seafaring "
 "because of lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
+"Diese Startbedingungenthält einen Markt als zusätzliches Gebäude, in dem man "
+"einige Waren für Gold, Bergkristall oder Diamanten kaufen kann. Die Seefahrt "
+"wurde deaktiviert, aufgrund fehlender Kompatibilität mit dem Terraforming "
+"(Eindeichen von Wasserfeldern)."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_advanced.lua:11
@@ -3338,6 +3355,9 @@ msgid ""
 "Disabled seafaring because of lack of compatibility with terraforming "
 "(diking of water bodies)."
 msgstr ""
+"Beginne das Spiel mit einem befestigten Dorf mit einer fortgeschrittenen "
+"Festung in der Mitte. Die Seefahrt wurde deaktiviert, aufgrund fehlender "
+"Kompatibilität mit dem Terraforming (Eindeichen von Wasserfeldern)."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua:11
@@ -3351,6 +3371,9 @@ msgid ""
 "Disabled seafaring because of lack of compatibility with terraforming "
 "(diking of water bodies)."
 msgstr ""
+"Beginne das Spiel mit einem kleinen friedlichen Dorf mit nur einfachen "
+"Gebäuden. Die Seefahrt wurde deaktiviert, aufgrund fehlender Kompatibilität "
+"mit dem Terraforming (Eindeichen von Wasserfeldern)."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua:11
@@ -3363,6 +3386,9 @@ msgid ""
 "Start the game with a village with some normal buildings. Disabled seafaring "
 "because of lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
+"Beginne das Spiel mit einem Dorf mit nur normalen Gebäuden. Die Seefahrt "
+"wurde deaktiviert, aufgrund fehlender Kompatibilität mit dem Terraforming "
+"(Eindeichen von Wasserfeldern)."
 
 #. TRANSLATORS: This is the Europeans' ship's name used in lists of units
 #: addons/europeans_tribe.wad/ship/init.lua:83
@@ -4419,15 +4445,14 @@ msgstr "Sie werden von allen Schmieden hergestellt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:771
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the armoe smithy. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
-"Basisrüstung für Soldaten der Europäer. Er wird in Webereien hergestellt. In "
-"Kombination mit einem hölzernen Speer ist er die Ausrüstung für junge "
-"Soldaten."
+"Basisrüstung für Soldaten der Europäer. Sie wird in der Rüstungsschmiede "
+"hergestellt. In Kombination mit einem hölzernen Speer ist sie die Ausrüstung "
+"für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:780
@@ -4435,6 +4460,7 @@ msgctxt "europeans_ware"
 msgid ""
 "Raw material for some sorts of armor. It is produced in the weaving mill."
 msgstr ""
+"Rohmaterial für einige Arten von Rüstungen. Wird in der Weberei hergestellt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:789
@@ -4478,6 +4504,9 @@ msgid ""
 "feet. They are produced by the dressmaker and used to train soldiers’ evade "
 "from level 0 to level 1."
 msgstr ""
+"Robuste Stiefel sind ein ausgezeichnetes Schuhwerk für Soldaten, um "
+"schneller zu Fuß zu sein. Sie werden in der Schneiderei gefertigt und dienen "
+"dazu, das Ausweichen eines Soldaten von Stufe 0 auf Stufe 1 auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:825
@@ -4487,6 +4516,10 @@ msgid ""
 "their feet. They are produced by the dressmaker and used to train soldiers’ "
 "evade from level 1 to level 2."
 msgstr ""
+"Flinke Stiefel sind ein leichtes und widerstandsfähiges Schuhwerk für "
+"Soldaten, um schneller zu Fuß zu sein. Sie werden in der Schneiderei "
+"gefertigt und dienen dazu, das Ausweichen eines Soldaten von Stufe 1 auf "
+"Stufe 2 auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:834
@@ -4495,10 +4528,12 @@ msgid ""
 "Hero boots! The only suitable footwear for a real hero. They are produced by "
 "the dressmaker and used to train soldiers’ evade from level 2 to level 3."
 msgstr ""
+"Heldenstiefel! Das einzig wahre Schuhwerk eines echten Helden. Sie werden in "
+"der Schneiderei gefertigt und dienen dazu, das Ausweichen eines Soldaten von "
+"Stufe 2 auf Stufe 3 auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:846
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
@@ -4507,7 +4542,7 @@ msgid ""
 msgstr ""
 "Dieser Holzspeer ist die Grundwaffe des europäischen Militärsystems. Er wird "
 "in der einfachen Rüstungsschmiede hergestellt. Zusammen mit einem Harnisch "
-"oder Wappenrock ist er die Ausrüstung für junge Soldaten."
+"ist er die Ausrüstung für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:855
@@ -4544,16 +4579,15 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:882
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The helmet is the basic defense tool of a soldier. It is produced in the "
 "smithy. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
-"Dieser Holzspeer ist die Grundwaffe des europäischen Militärsystems. Er wird "
-"in der einfachen Rüstungsschmiede hergestellt. Zusammen mit einem Harnisch "
-"oder Wappenrock ist er die Ausrüstung für junge Soldaten."
+"Der Helm ist die Grundverteidigung eines Soldaten. Er wird in "
+"Rüstungsschmieden hergestellt. Zusammen mit einem Harnisch ist er die "
+"Grundausrüstung für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:891
@@ -5490,21 +5524,19 @@ msgstr "Webt Stoff aus Reet."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2755
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Weaves cloth for buildings and ships’ sails, and armor to equip and train "
 "the soldiers."
 msgstr ""
-"Webt Stoff für Gebäude und Schiffsegel, und Wappenröcke um die Soldaten "
+"Webt Stoff für Gebäude und Schiffsegel, und Harnische um die Soldaten "
 "auszustatten und auszubilden."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2762
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Weaves cloth and armor out of wool and reed."
-msgstr "Webt Rüstungen und Wappenröcke aus Wolle und Reet."
+msgstr "Webt Rüstungen und Harnische aus Wolle und Reet."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2769
@@ -5950,709 +5982,709 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3443
 msgctxt "warehousename"
 msgid "Amsterdam"
-msgstr ""
+msgstr "Amsterdam"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3445
 msgctxt "warehousename"
 msgid "Andorra la Vella"
-msgstr ""
+msgstr "Andorra la Vella"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3447
 msgctxt "warehousename"
 msgid "Antwerpen"
-msgstr ""
+msgstr "Antwerpen"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3449
 msgctxt "warehousename"
 msgid "Astrachan"
-msgstr ""
+msgstr "Astrachan"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3451
 msgctxt "warehousename"
 msgid "Athen"
-msgstr ""
+msgstr "Athen"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3453
 msgctxt "warehousename"
 msgid "Balaschicha"
-msgstr ""
+msgstr "Balaschicha"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3455
 msgctxt "warehousename"
 msgid "Barcelona"
-msgstr ""
+msgstr "Barcelona"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3457
 msgctxt "warehousename"
 msgid "Beograd"
-msgstr ""
+msgstr "Beograd"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3459
 msgctxt "warehousename"
 msgid "Berlin"
-msgstr ""
+msgstr "Berlin"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3461
 msgctxt "warehousename"
 msgid "Bern"
-msgstr ""
+msgstr "Bern"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3463
 msgctxt "warehousename"
 msgid "Birmingham"
-msgstr ""
+msgstr "Birmingham"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3465
 msgctxt "warehousename"
 msgid "Bradford"
-msgstr ""
+msgstr "Bradford"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3467
 msgctxt "warehousename"
 msgid "Bremen"
-msgstr ""
+msgstr "Bremen"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3469
 msgctxt "warehousename"
 msgid "Bruxelles"
-msgstr ""
+msgstr "Bruxelles"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3471
 msgctxt "warehousename"
 msgid "București"
-msgstr ""
+msgstr "București"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3473
 msgctxt "warehousename"
 msgid "Budapest"
-msgstr ""
+msgstr "Budapest"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3475
 msgctxt "warehousename"
 msgid "Charkiw"
-msgstr ""
+msgstr "Charkiw"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3477
 msgctxt "warehousename"
 msgid "Chișinău"
-msgstr ""
+msgstr "Chișinău"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3479
 msgctxt "warehousename"
 msgid "Den Haag"
-msgstr ""
+msgstr "Den Haag"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3481
 msgctxt "warehousename"
 msgid "Dnipro"
-msgstr ""
+msgstr "Dnipro"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3483
 msgctxt "warehousename"
 msgid "Donezk"
-msgstr ""
+msgstr "Donezk"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3485
 msgctxt "warehousename"
 msgid "Dortmund"
-msgstr ""
+msgstr "Dortmund"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3487
 msgctxt "warehousename"
 msgid "Dresden"
-msgstr ""
+msgstr "Dresden"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3489
 msgctxt "warehousename"
 msgid "Dublin"
-msgstr ""
+msgstr "Dublin"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3491
 msgctxt "warehousename"
 msgid "Duisburg"
-msgstr ""
+msgstr "Duisburg"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3493
 msgctxt "warehousename"
 msgid "Düsseldorf"
-msgstr ""
+msgstr "Düsseldorf"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3495
 msgctxt "warehousename"
 msgid "Edinburgh"
-msgstr ""
+msgstr "Edinburgh"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3497
 msgctxt "warehousename"
 msgid "Essen"
-msgstr ""
+msgstr "Essen"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3499
 msgctxt "warehousename"
 msgid "Frankfurt am Main"
-msgstr ""
+msgstr "Frankfurt am Main"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3501
 msgctxt "warehousename"
 msgid "Genova"
-msgstr ""
+msgstr "Genova"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3503
 msgctxt "warehousename"
 msgid "Glasgow"
-msgstr ""
+msgstr "Glasgow"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3505
 msgctxt "warehousename"
 msgid "Göteborg"
-msgstr ""
+msgstr "Göteborg"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3507
 msgctxt "warehousename"
 msgid "Hamburg"
-msgstr ""
+msgstr "Hamburg"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3509
 msgctxt "warehousename"
 msgid "Hannover"
-msgstr ""
+msgstr "Hannover"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3511
 msgctxt "warehousename"
 msgid "Helsinki"
-msgstr ""
+msgstr "Helsinki"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3513
 msgctxt "warehousename"
 msgid "Homel"
-msgstr ""
+msgstr "Homel"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3515
 msgctxt "warehousename"
 msgid "Ischewsk"
-msgstr ""
+msgstr "Ischewsk"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3517
 msgctxt "warehousename"
 msgid "Istanbul"
-msgstr ""
+msgstr "Istanbul"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3519
 msgctxt "warehousename"
 msgid "Jaroslawl"
-msgstr ""
+msgstr "Jaroslawl"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3521
 msgctxt "warehousename"
 msgid "Kasan"
-msgstr ""
+msgstr "Kasan"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3523
 msgctxt "warehousename"
 msgid "Kirow"
-msgstr ""
+msgstr "Kirow"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3525
 msgctxt "warehousename"
 msgid "København"
-msgstr ""
+msgstr "København"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3527
 msgctxt "warehousename"
 msgid "Köln"
-msgstr ""
+msgstr "Köln"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3529
 msgctxt "warehousename"
 msgid "Kraków"
-msgstr ""
+msgstr "Kraków"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3531
 msgctxt "warehousename"
 msgid "Krasnodar"
-msgstr ""
+msgstr "Krasnodar"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3533
 msgctxt "warehousename"
 msgid "Krywyj Rih"
-msgstr ""
+msgstr "Krywyj Rih"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3535
 msgctxt "warehousename"
 msgid "Kyiv"
-msgstr ""
+msgstr "Kyiv"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3537
 msgctxt "warehousename"
 msgid "Leeds"
-msgstr ""
+msgstr "Leeds"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3539
 msgctxt "warehousename"
 msgid "Leipzig"
-msgstr ""
+msgstr "Leipzig"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3541
 msgctxt "warehousename"
 msgid "Lipezk"
-msgstr ""
+msgstr "Lipezk"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3543
 msgctxt "warehousename"
 msgid "Lisboa"
-msgstr ""
+msgstr "Lisboa"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3545
 msgctxt "warehousename"
 msgid "Ljubljana"
-msgstr ""
+msgstr "Ljubljana"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3547
 msgctxt "warehousename"
 msgid "Łódź"
-msgstr ""
+msgstr "Łódź"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3549
 msgctxt "warehousename"
 msgid "London"
-msgstr ""
+msgstr "London"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3551
 msgctxt "warehousename"
 msgid "Luxemburg"
-msgstr ""
+msgstr "Luxemburg"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3553
 msgctxt "warehousename"
 msgid "Lwiw"
-msgstr ""
+msgstr "Lwiw"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3555
 msgctxt "warehousename"
 msgid "Lyon"
-msgstr ""
+msgstr "Lyon"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3557
 msgctxt "warehousename"
 msgid "Machatschkala"
-msgstr ""
+msgstr "Machatschkala"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3559
 msgctxt "warehousename"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3561
 msgctxt "warehousename"
 msgid "Málaga"
-msgstr ""
+msgstr "Málaga"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3563
 msgctxt "warehousename"
 msgid "Manchester"
-msgstr ""
+msgstr "Manchester"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3565
 msgctxt "warehousename"
 msgid "Marseille"
-msgstr ""
+msgstr "Marseille"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3567
 msgctxt "warehousename"
 msgid "Milano"
-msgstr ""
+msgstr "Milano"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3569
 msgctxt "warehousename"
 msgid "Minsk"
-msgstr ""
+msgstr "Minsk"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3571
 msgctxt "warehousename"
 msgid "Monaco"
-msgstr ""
+msgstr "Monaco"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3573
 msgctxt "warehousename"
 msgid "Moskwa"
-msgstr ""
+msgstr "Moskwa"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3575
 msgctxt "warehousename"
 msgid "München"
-msgstr ""
+msgstr "München"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3577
 msgctxt "warehousename"
 msgid "Nabereschnyje Tschelny"
-msgstr ""
+msgstr "Nabereschnyje Tschelny"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3579
 msgctxt "warehousename"
 msgid "Napoli"
-msgstr ""
+msgstr "Napoli"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3581
 msgctxt "warehousename"
 msgid "Nikosia"
-msgstr ""
+msgstr "Nikosia"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3583
 msgctxt "warehousename"
 msgid "Nischni Nowgorod"
-msgstr ""
+msgstr "Nischni Nowgorod"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3585
 msgctxt "warehousename"
 msgid "Nürnberg"
-msgstr ""
+msgstr "Nürnberg"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3587
 msgctxt "warehousename"
 msgid "Odessa"
-msgstr ""
+msgstr "Odessa"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3589
 msgctxt "warehousename"
 msgid "Orenburg"
-msgstr ""
+msgstr "Orenburg"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3591
 msgctxt "warehousename"
 msgid "Oslo"
-msgstr ""
+msgstr "Oslo"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3593
 msgctxt "warehousename"
 msgid "Palermo"
-msgstr ""
+msgstr "Palermo"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3595
 msgctxt "warehousename"
 msgid "Paris"
-msgstr ""
+msgstr "Paris"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3597
 msgctxt "warehousename"
 msgid "Pensa"
-msgstr ""
+msgstr "Pensa"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3599
 msgctxt "warehousename"
 msgid "Perm"
-msgstr ""
+msgstr "Perm"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3601
 msgctxt "warehousename"
 msgid "Podgorica"
-msgstr ""
+msgstr "Podgorica"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3603
 msgctxt "warehousename"
 msgid "Poznań"
-msgstr ""
+msgstr "Poznań"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3605
 msgctxt "warehousename"
 msgid "Praha"
-msgstr ""
+msgstr "Praha"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3607
 msgctxt "warehousename"
 msgid "Prishtina"
-msgstr ""
+msgstr "Prishtina"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3609
 msgctxt "warehousename"
 msgid "Reykjavík"
-msgstr ""
+msgstr "Reykjavík"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3611
 msgctxt "warehousename"
 msgid "Rīga"
-msgstr ""
+msgstr "Rīga"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3613
 msgctxt "warehousename"
 msgid "Rjasan"
-msgstr ""
+msgstr "Rjasan"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3615
 msgctxt "warehousename"
 msgid "Roma"
-msgstr ""
+msgstr "Roma"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3617
 msgctxt "warehousename"
 msgid "Rostow-na-Donu"
-msgstr ""
+msgstr "Rostow-na-Donu"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3619
 msgctxt "warehousename"
 msgid "Rotterdam"
-msgstr ""
+msgstr "Rotterdam"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3621
 msgctxt "warehousename"
 msgid "San Marino"
-msgstr ""
+msgstr "San Marino"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3623
 msgctxt "warehousename"
 msgid "Samara"
-msgstr ""
+msgstr "Samara"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3625
 msgctxt "warehousename"
 msgid "Sankt Petersburg"
-msgstr ""
+msgstr "Sankt Petersburg"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3627
 msgctxt "warehousename"
 msgid "Saporischschja"
-msgstr ""
+msgstr "Saporischschja"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3629
 msgctxt "warehousename"
 msgid "Sarajevo"
-msgstr ""
+msgstr "Sarajevo"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3631
 msgctxt "warehousename"
 msgid "Saratow"
-msgstr ""
+msgstr "Saratow"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3633
 msgctxt "warehousename"
 msgid "Sevilla"
-msgstr ""
+msgstr "Sevilla"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3635
 msgctxt "warehousename"
 msgid "Sheffield"
-msgstr ""
+msgstr "Sheffield"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3637
 msgctxt "warehousename"
 msgid "Skopje"
-msgstr ""
+msgstr "Skopje"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3639
 msgctxt "warehousename"
 msgid "Sofia"
-msgstr ""
+msgstr "Sofia"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3641
 msgctxt "warehousename"
 msgid "Stockholm"
-msgstr ""
+msgstr "Stockholm"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3643
 msgctxt "warehousename"
 msgid "Stuttgart"
-msgstr ""
+msgstr "Stuttgart"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3645
 msgctxt "warehousename"
 msgid "Tallinn"
-msgstr ""
+msgstr "Tallinn"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3647
 msgctxt "warehousename"
 msgid "Tirana"
-msgstr ""
+msgstr "Tirana"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3649
 msgctxt "warehousename"
 msgid "Toljatti"
-msgstr ""
+msgstr "Toljatti"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3651
 msgctxt "warehousename"
 msgid "Torino"
-msgstr ""
+msgstr "Torino"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3653
 msgctxt "warehousename"
 msgid "Ufa"
-msgstr ""
+msgstr "Ufa"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3655
 msgctxt "warehousename"
 msgid "Uljanowsk"
-msgstr ""
+msgstr "Uljanowsk"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3657
 msgctxt "warehousename"
 msgid "Vaduz"
-msgstr ""
+msgstr "Vaduz"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3659
 msgctxt "warehousename"
 msgid "Valencia"
-msgstr ""
+msgstr "Valencia"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3661
 msgctxt "warehousename"
 msgid "Valletta"
-msgstr ""
+msgstr "Valletta"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3663
 msgctxt "warehousename"
 msgid "Vilnius"
-msgstr ""
+msgstr "Vilnius"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3665
 msgctxt "warehousename"
 msgid "Warszawa"
-msgstr ""
+msgstr "Warszawa"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3667
 msgctxt "warehousename"
 msgid "Wien"
-msgstr ""
+msgstr "Wien"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3669
 msgctxt "warehousename"
 msgid "Wolgograd"
-msgstr ""
+msgstr "Wolgograd"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3671
 msgctxt "warehousename"
 msgid "Woronesch"
-msgstr ""
+msgstr "Woronesch"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3673
 msgctxt "warehousename"
 msgid "Wrocław"
-msgstr ""
+msgstr "Wrocław"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3675
 msgctxt "warehousename"
 msgid "Zagreb"
-msgstr ""
+msgstr "Zagreb"
 
 #. TRANSLATORS: This Europeans warehouse is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3677
 msgctxt "warehousename"
 msgid "Zaragoza"
-msgstr ""
+msgstr "Zaragoza"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3683
@@ -6726,7 +6758,7 @@ msgstr[1] "%1%(+%2%) Soldat"
 #: addons/europeans_tribe.wad/wares/armor/init.lua:77
 msgctxt "ware"
 msgid "Armor"
-msgstr ""
+msgstr "Harnisch"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/armor_advanced/init.lua:8
@@ -6736,128 +6768,123 @@ msgstr "Verbesserter Harnisch"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/armor_chain/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Chain Armor"
-msgstr "Verbesserter Harnisch"
+msgstr "Kettenhemd"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/armor_processed/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Processed Armor"
-msgstr "Verbesserter Harnisch"
+msgstr "Überarbeiteter Harnisch "
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/armor_wooden/init.lua:8
 msgctxt "ware"
 msgid "Light Wooden Armor"
-msgstr ""
+msgstr "Leichte hölzerne Rüstung"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ax/init.lua:8
 msgctxt "ware"
 msgid "Ax"
-msgstr ""
+msgstr "Axt"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ax_broad/init.lua:8
 msgctxt "ware"
 msgid "Broad Ax"
-msgstr ""
+msgstr "Breitaxt"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/barley/init.lua:8
 msgctxt "ware"
 msgid "Barley"
-msgstr ""
+msgstr "Gerste"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/basket/init.lua:8
 msgctxt "ware"
 msgid "Basket"
-msgstr ""
+msgstr "Korb"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/beer/init.lua:8
 msgctxt "ware"
 msgid "Beer"
-msgstr ""
+msgstr "Bier"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/beer_strong/init.lua:8
 msgctxt "ware"
 msgid "Strong Beer"
-msgstr ""
+msgstr "Starkbier"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/blackroot/init.lua:8
 msgctxt "ware"
 msgid "Blackroot"
-msgstr ""
+msgstr "Dunkelrübe"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/blackwood/init.lua:8
 msgctxt "ware"
 msgid "Blackwood"
-msgstr ""
+msgstr "Hartholz"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/boots_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Boots"
-msgstr "Kundschaftermeister"
+msgstr "Verbesserte Stiefel"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/boots_sturdy/init.lua:8
 msgctxt "ware"
 msgid "Sturdy Boots"
-msgstr ""
+msgstr "Robuste Stiefel"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/boots_swift/init.lua:8
 msgctxt "ware"
 msgid "Swift Boots"
-msgstr ""
+msgstr "Flinke Stiefel"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/bread_paddle/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Bread Paddle"
-msgstr "Das Herstellen von Brotschiebern"
+msgstr "Brotschieber"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/brick/init.lua:8
 msgctxt "ware"
 msgid "Brick"
-msgstr ""
+msgstr "Ziegel"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/buckets/init.lua:8
 msgctxt "ware"
 msgid "Buckets"
-msgstr ""
+msgstr "Eimer"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/clay/init.lua:8
 msgctxt "ware"
 msgid "Clay"
-msgstr ""
+msgstr "Lehm"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/cloth/init.lua:8
 msgctxt "ware"
 msgid "Cloth"
-msgstr ""
+msgstr "Stoff"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coal/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Coal"
-msgstr "Keine Kohle"
+msgstr "Kohle"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/coin_copper/init.lua:8
@@ -6887,162 +6914,157 @@ msgstr "Holzmünze"
 #: addons/europeans_tribe.wad/wares/corn/init.lua:8
 msgctxt "ware"
 msgid "Corn"
-msgstr ""
+msgstr "Mais"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/diamond/init.lua:8
 msgctxt "ware"
 msgid "Diamond"
-msgstr ""
+msgstr "Diamant"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/felling_ax/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Felling Ax"
-msgstr "Das Fällen von Bäumen"
+msgstr "Holzfälleraxt"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/fire_tongs/init.lua:8
 msgctxt "ware"
 msgid "Fire Tongs"
-msgstr ""
+msgstr "Feuerzange"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/fish/init.lua:8
 msgctxt "ware"
 msgid "Fish"
-msgstr ""
+msgstr "Fisch"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/flour/init.lua:8
 msgctxt "ware"
 msgid "Flour"
-msgstr ""
+msgstr "Mehl"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/fruit/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Fruit"
-msgstr "Obstplantage"
+msgstr "Beeren"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/gold/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Gold"
-msgstr "Kein Gold"
+msgstr "Gold"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/granite/init.lua:8
 msgctxt "ware"
 msgid "Granite"
-msgstr ""
+msgstr "Stein"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/grape/init.lua:8
 msgctxt "ware"
 msgid "Grape"
-msgstr ""
+msgstr "Weintrauben"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/grout/init.lua:8
 msgctxt "ware"
 msgid "Grout"
-msgstr ""
+msgstr "Mörtel"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/hammer/init.lua:8
 msgctxt "ware"
 msgid "Hammer"
-msgstr ""
+msgstr "Hammer"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/helmet_mask/init.lua:8
 msgctxt "ware"
 msgid "Mask"
-msgstr ""
+msgstr "Maske"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/helmet_wooden/init.lua:8
 msgctxt "ware"
 msgid "Wooden Helmet"
-msgstr ""
+msgstr "Hölzerner Helm"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/honey/init.lua:8
 msgctxt "ware"
 msgid "Honey"
-msgstr ""
+msgstr "Honig"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/hook_pole/init.lua:8
 msgctxt "ware"
 msgid "Hook Pole"
-msgstr ""
+msgstr "Hakenstange"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/iron/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Iron"
-msgstr "Kein Eisen"
+msgstr "Eisen"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/kitchen_tools/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Kitchen Tools"
-msgstr "Das Herstellen von Küchengeräten"
+msgstr "Küchengeräte"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/log/init.lua:8
 msgctxt "ware"
 msgid "Log"
-msgstr ""
+msgstr "Stamm"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/marble/init.lua:8
 msgctxt "ware"
 msgid "Marble"
-msgstr ""
+msgstr "Marmor"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/marble_column/init.lua:8
 msgctxt "ware"
 msgid "Marble Column"
-msgstr ""
+msgstr "Marmorsäule"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/mead/init.lua:8
 msgctxt "ware"
 msgid "Mead"
-msgstr ""
+msgstr "Met"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/meal/init.lua:8
 msgctxt "ware"
 msgid "Meal"
-msgstr ""
+msgstr "Mahlzeit"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/meat/init.lua:8
 msgctxt "ware"
 msgid "Meat"
-msgstr ""
+msgstr "Fleisch"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/milking_tongs/init.lua:8
 msgctxt "ware"
 msgid "Milking Tongs"
-msgstr ""
+msgstr "Melkzange"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/needles/init.lua:8
 msgctxt "ware"
 msgid "Needles"
-msgstr ""
+msgstr "Nadeln"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ore/init.lua:8
@@ -7054,32 +7076,31 @@ msgstr "Erz"
 #: addons/europeans_tribe.wad/wares/pick/init.lua:8
 msgctxt "ware"
 msgid "Pick"
-msgstr ""
+msgstr "Spitzhacke"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/planks/init.lua:8
 msgctxt "ware"
 msgid "Planks"
-msgstr ""
+msgstr "Bretter"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/quartz/init.lua:8
 msgctxt "ware"
 msgid "Quartz"
-msgstr ""
+msgstr "Bergkristall"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/ration/init.lua:8
 msgctxt "ware"
 msgid "Ration"
-msgstr ""
+msgstr "Ration"
 
 #. TRANSLATORS: This is a ware name used in lists of wares. Used for thatching roofs and as a fiber for weaving cloth, fishing nets etc.
 #: addons/europeans_tribe.wad/wares/reed/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Reed"
-msgstr "Reethof"
+msgstr "Reet"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/rye/init.lua:8
@@ -7091,20 +7112,19 @@ msgstr "Roggen"
 #: addons/europeans_tribe.wad/wares/saw/init.lua:8
 msgctxt "ware"
 msgid "Saw"
-msgstr ""
+msgstr "Säge"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/scrap_iron/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Scrap Iron"
-msgstr "Holzabfall"
+msgstr "Alteisen"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/scrap_metal_mixed/init.lua:8
 msgctxt "ware"
 msgid "Mixed Scrap Metal"
-msgstr ""
+msgstr "Altmetall"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/scrap_wood/init.lua:8
@@ -7116,61 +7136,58 @@ msgstr "Holzabfall"
 #: addons/europeans_tribe.wad/wares/scythe/init.lua:8
 msgctxt "ware"
 msgid "Scythe"
-msgstr ""
+msgstr "Sense"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/shield_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Shield"
-msgstr "Verbesserte Werft"
+msgstr "Verbesserter Schild"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/shield_steel/init.lua:8
 msgctxt "ware"
 msgid "Steel Shield"
-msgstr ""
+msgstr "Stahlschild"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/shovel/init.lua:8
 msgctxt "ware"
 msgid "Shovel"
-msgstr ""
+msgstr "Schaufel"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/snack/init.lua:8
 msgctxt "ware"
 msgid "Snack"
-msgstr ""
+msgstr "Snack"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/spear/init.lua:8
 msgctxt "ware"
 msgid "Spear"
-msgstr ""
+msgstr "Speer"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/spear_advanced/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Advanced Spear"
-msgstr "Verbesserte Werft"
+msgstr "Verbesserter Speer"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/spear_wooden/init.lua:8
 msgctxt "ware"
 msgid "Wooden Spear"
-msgstr ""
+msgstr "Holzspeer"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/sword_broad/init.lua:8
 msgctxt "ware"
 msgid "Broadsword"
-msgstr ""
+msgstr "Breitschwert"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/water/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Water"
 msgstr "Wasser"
@@ -7179,19 +7196,19 @@ msgstr "Wasser"
 #: addons/europeans_tribe.wad/wares/wheat/init.lua:8
 msgctxt "ware"
 msgid "Wheat"
-msgstr ""
+msgstr "Weizen"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/wine/init.lua:8
 msgctxt "ware"
 msgid "Wine"
-msgstr ""
+msgstr "Wein"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/wares/wool/init.lua:8
 msgctxt "ware"
 msgid "Wool"
-msgstr ""
+msgstr "Wolle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/workers/baker_advanced/init.lua:8
@@ -7654,17 +7671,3 @@ msgstr "Weberlehrling"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Webergeselle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a tabard"
-#~ msgstr "Das Schneidern eines Wappenrocks"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Basic tabard for European soldiers. It is produced in the weaving mill. "
-#~ "In combination with wooden speer, it is the equipment to fit out young "
-#~ "soldiers."
-#~ msgstr ""
-#~ "Basisbekleidung für Soldaten der Europäer. Er wird in Webereien "
-#~ "hergestellt. In Kombination mit einem hölzernen Speer ist er die "
-#~ "Ausrüstung für junge Soldaten."
