@@ -111,7 +111,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:15s",
-                "produce=meat:2"
+                "produce=meat:2 leather"
            }
         },
         produce_meat_idle = {
@@ -123,7 +123,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs flour or economy needs beer",
                 "consume=water:2 wheat rye,barley",
                 "animate=working duration:60s",
-                "produce=meat",
+                "produce=meat leather",
                 "sleep=duration:120s"
             }
         }

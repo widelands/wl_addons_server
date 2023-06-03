@@ -74,7 +74,8 @@ wl.Descriptions():new_productionsite_type {
         { name = "coal", amount = 4 },
         { name = "iron", amount = 4 },
         { name = "armor", amount = 4 },
-        { name = "cloth", amount = 4 }
+        { name = "cloth", amount = 4 },
+        { name = "leather", amount = 4 }
     },
 
     programs = {
@@ -145,7 +146,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
                 "return=skipped unless economy needs boots_sturdy",
-                "consume=planks armor cloth",
+                "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
                 "produce=boots_sturdy:2"

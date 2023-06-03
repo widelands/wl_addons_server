@@ -76,10 +76,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs armor",
                 "return=skipped unless site has wool",
-                "consume=wool",
+                "consume=wool reed",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
-                "produce=armor"
+                "produce=armor:2"
             }
         },
         produce_armor_idle = {
@@ -91,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
                 "produce=cloth",
-                "consume=wool",
+                "consume=wool,reed",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
                 "produce=armor",

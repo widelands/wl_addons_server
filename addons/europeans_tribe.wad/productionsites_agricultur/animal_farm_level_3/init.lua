@@ -123,7 +123,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:10s",
-                "produce=meat:3"
+                "produce=meat:3 leather"
            }
         },
         produce_fish = {
@@ -152,7 +152,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "consume=water:2 blackroot,corn:2",
                 "animate=working duration:60s",
-                "produce=meat",
+                "produce=meat leather",
                 "sleep=duration:90s"
             }
         },

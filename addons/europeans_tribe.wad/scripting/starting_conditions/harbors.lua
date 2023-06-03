@@ -10,7 +10,7 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Harbors",
     -- TRANSLATORS: This is the tooltip for the "Harbors" starting condition
-    tooltip = _"Start the game with a bundle of ports. The AI might struggle with this starting condition on smaller maps. Disabled terraforming (diking of water bodies) because of lack of compatibility with seafaring.",
+    tooltip = _"Start the game with a bundle of ports. Disabled terraforming (diking of water bodies) because of lack of compatibility with seafaring.",
     map_tags = {"seafaring"},
     
     func =  function(player, shared_in_start)

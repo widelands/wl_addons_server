@@ -67,7 +67,8 @@ wl.Descriptions():new_productionsite_type {
         { name = "coal", amount = 6 },
         { name = "iron", amount = 6 },
         { name = "armor", amount = 6 },
-        { name = "cloth", amount = 6 }
+        { name = "cloth", amount = 6 },
+        { name = "leather", amount = 6 }
     },
 
     programs = {
@@ -143,7 +144,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
                 "return=skipped unless economy needs boots_sturdy",
-                "consume=planks armor cloth",
+                "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "produce=boots_sturdy:2"
@@ -187,7 +188,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making swift boots"),
             actions = {
                 "return=skipped unless economy needs boots_swift",
-                "consume=planks armor cloth",
+                "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "produce=boots_swift:2"

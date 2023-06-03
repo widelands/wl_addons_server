@@ -42,8 +42,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 4 },
-        { name = "wool", amount = 4 }
+        { name = "reed", amount = 4 }
     },
 
     programs = {
@@ -63,19 +62,19 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs reed and not economy needs cloth",
                 "return=skipped unless site has reed",
-                "consume=reed",
+                "consume=reed:2",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:45s",
-                "produce=cloth"
+                "produce=cloth:2"
             }
         },
         produce_armor = {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
-                "return=skipped when economy needs wool and not economy needs armor",
-                "return=skipped unless site has wool",
-                "consume=wool,reed",
+                "return=skipped when economy needs reed and not economy needs armor",
+                "return=skipped unless site has reed:2",
+                "consume=reed:2",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:45s",
                 "produce=armor"
@@ -91,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:45s",
                 "produce=cloth",
-                "consume=wool,reed",
+                "consume=reed",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:45s",
                 "produce=armor",

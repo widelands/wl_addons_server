@@ -65,9 +65,22 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=produce_armor",
                 "call=produce_cloth",
                 "call=produce_cloth_idle",
                 "return=skipped"
+            }
+        },
+        produce_armor = {
+            -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
+            descname = pgettext("europeans_building", "tailoring a suit of armor"),
+            actions = {
+                "return=skipped when economy needs reed and not economy needs armor",
+                "return=skipped unless site has reed:2",
+                "consume=reed:2",
+                "playsound=sound/mill/weaving priority:90%",
+                "animate=working duration:60s",
+                "produce=armor"
             }
         },
         produce_cloth = {

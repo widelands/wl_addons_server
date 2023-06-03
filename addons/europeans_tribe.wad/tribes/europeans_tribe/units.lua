@@ -92,7 +92,7 @@ wl.Descriptions():new_tribe {
     -- Each subtable is a column in the wares windows.
     wares_order = {
         {
-            -- Building Materials 1
+            -- Building Materials 1 (Growing)
             {
                 name = "log",
                 default_target_quantity = 32,
@@ -162,17 +162,26 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "leather",
+                default_target_quantity = 16,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
+                }
+            },
+            {
                 name = "wool",
                 default_target_quantity = 16,
                 preciousness = 16,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wool
-                    purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor.")
+                    purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms with level 4 or 5 can produce wool.")
                 }
-            }            
+            }
         },
         {
-            -- Building Materials 2
+            -- Building Materials 1 (Mining)
             {
                 name = "granite",
                 default_target_quantity = 16,
@@ -261,6 +270,32 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
                 }
             },
+            {
+                name = "coal",
+                default_target_quantity = 32,
+                preciousness = 32,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
+                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
+                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
+                    }
+                }
+            },
+            {
+                name = "ore",
+                default_target_quantity = 32,
+                preciousness = 32,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
+                        pgettext("default_ware", "Ore is mined in ore mines."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
+                        pgettext("europeans_ware", "It is smelted in a smelting works to retrieve all the metals.")
+                    }
+                }
+            }
         },
         {
             -- Food 1
@@ -468,33 +503,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            -- Mining
-            {
-                name = "coal",
-                default_target_quantity = 32,
-                preciousness = 32,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
-                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
-                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
-                    }
-                }
-            },
-            {
-                name = "ore",
-                default_target_quantity = 32,
-                preciousness = 32,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
-                        pgettext("default_ware", "Ore is mined in ore mines."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
-                        pgettext("europeans_ware", "It is smelted in a smelting works to retrieve all the metals.")
-                    }
-                }
-            },
+           -- Metals and Money
             {
                 name = "scrap_iron",
                 preciousness = 16,
@@ -536,10 +545,7 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "It is produced by the smelting works. Armor and weapons are embellished with gold in the smithy. Some valuable buildings need gold to be built.")
                     }
                 }
-            }
-        },
-        {
-           -- Money
+            },
             {
                 name = "coin_wood",
                 default_target_quantity = 16,
