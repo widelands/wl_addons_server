@@ -60,15 +60,15 @@ wl.Descriptions():new_trainingsite_type {
         { name = "coin_copper", amount = 4 },
         { name = "coin_silver", amount = 4 },
         { name = "coin_gold", amount = 4 },
-        { name = "helmet_mask", amount = 2 },
-        { name = "shield_steel", amount = 2 },
-        { name = "shield_advanced", amount = 2 }, 
-        { name = "spear_advanced", amount = 2 },
-        { name = "ax_broad", amount = 2 },
-        { name = "sword_broad", amount = 2 },
         { name = "armor_processed", amount = 2 },
         { name = "armor_chain", amount = 2 },
         { name = "armor_advanced", amount =  2 },
+        { name = "spear_advanced", amount = 2 },
+        { name = "ax_broad", amount = 2 },
+        { name = "sword_broad", amount = 2 },
+        { name = "helmet_mask", amount = 2 },
+        { name = "shield_steel", amount = 2 },
+        { name = "shield_advanced", amount = 2 }, 
         { name = "boots_sturdy", amount = 2 },
         { name = "boots_swift", amount = 2 },
         { name = "boots_advanced", amount =  2 }
@@ -78,20 +78,20 @@ wl.Descriptions():new_trainingsite_type {
         food = {{"coin_copper"}, {"coin_silver"}, {"coin_gold"}},
         weapons = {"armor_processed", "armor_chain", "armor_advanced"}
     },
-
-    ["soldier evade"] = {
+    
+    ["soldier attack"] = {
         food = {{"coin_copper"}, {"coin_silver"}, {"coin_gold"}},
-        weapons = {"boots_sturdy", "boots_swift", "boots_advanced"}
+        weapons = {"spear_advanced", "ax_broad", "sword_broad"}
     },
-        
+
     ["soldier defense"] = {
         food = {{"coin_copper"}, {"coin_silver"}, {"coin_gold"}},
         weapons = {"helmet_mask", "shield_steel", "shield_advanced"}
     },
 
-    ["soldier attack"] = {
+    ["soldier evade"] = {
         food = {{"coin_copper"}, {"coin_silver"}, {"coin_gold"}},
-        weapons = {"spear_advanced", "ax_broad", "sword_broad"}
+        weapons = {"boots_sturdy", "boots_swift", "boots_advanced"}
     },
   
     programs = {
@@ -138,37 +138,40 @@ wl.Descriptions():new_trainingsite_type {
                 "produce=scrap_iron"
             }
         },
-        upgrade_soldier_evade_0 = {
+        upgrade_soldier_attack_0 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
+            descname = pgettext("europeans_building", "upgrading soldier attack from level 0 to level 1"),
             actions = {
-                "checksoldier=soldier:evade level:0",
+                "checksoldier=soldier:attack level:0",
                 "sleep=duration:30s",
-                "checksoldier=soldier:evade level:0",
-                "consume=coin_copper boots_sturdy",
-                "train=soldier:evade level:1"
+                "checksoldier=soldier:attack level:0",
+                "consume=coin_copper spear_advanced",
+                "train=soldier:attack level:1",
+                "produce=scrap_iron"
             }
         },
-        upgrade_soldier_evade_1 = {
+        upgrade_soldier_attack_1 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier evade from level 1 to level 2"),
+            descname = pgettext("europeans_building", "upgrading soldier attack from level 1 to level 2"),
             actions = {
-                "checksoldier=soldier:evade level:1",
+                "checksoldier=soldier:attack level:1",
                 "sleep=duration:30s",
-                "checksoldier=soldier:evade level:1",
-                "consume=coin_silver boots_swift",
-                "train=soldier:evade level:2"
+                "checksoldier=soldier:attack level:1",
+                "consume=coin_silver ax_broad",
+                "train=soldier:attack level:2",
+                "produce=scrap_iron"
             }
         },
-        upgrade_soldier_evade_2 = {
+        upgrade_soldier_attack_2 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier evade from level 2 to level 3"),
+            descname = pgettext("europeans_building", "upgrading soldier attack from level 2 to level 3"),
             actions = {
-                "checksoldier=soldier:evade level:2",
+                "checksoldier=soldier:attack level:2",
                 "sleep=duration:30s",
-                "checksoldier=soldier:evade level:2",
-                "consume=coin_gold boots_advanced",
-                "train=soldier:evade level:3"
+                "checksoldier=soldier:attack level:2",
+                "consume=coin_gold sword_broad",
+                "train=soldier:attack level:3",
+                "produce=scrap_iron"
             }
         },
         upgrade_soldier_defense_0 = {
@@ -207,42 +210,39 @@ wl.Descriptions():new_trainingsite_type {
                 "produce=scrap_iron"
             }
         },
-        upgrade_soldier_attack_0 = {
+        upgrade_soldier_evade_0 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier attack from level 0 to level 1"),
+            descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
             actions = {
-                "checksoldier=soldier:attack level:0",
+                "checksoldier=soldier:evade level:0",
                 "sleep=duration:30s",
-                "checksoldier=soldier:attack level:0",
-                "consume=coin_copper spear_advanced",
-                "train=soldier:attack level:1",
-                "produce=scrap_iron"
+                "checksoldier=soldier:evade level:0",
+                "consume=coin_copper boots_sturdy",
+                "train=soldier:evade level:1"
             }
         },
-        upgrade_soldier_attack_1 = {
+        upgrade_soldier_evade_1 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier attack from level 1 to level 2"),
+            descname = pgettext("europeans_building", "upgrading soldier evade from level 1 to level 2"),
             actions = {
-                "checksoldier=soldier:attack level:1",
+                "checksoldier=soldier:evade level:1",
                 "sleep=duration:30s",
-                "checksoldier=soldier:attack level:1",
-                "consume=coin_silver ax_broad",
-                "train=soldier:attack level:2",
-                "produce=scrap_iron"
+                "checksoldier=soldier:evade level:1",
+                "consume=coin_silver boots_swift",
+                "train=soldier:evade level:2"
             }
         },
-        upgrade_soldier_attack_2 = {
+        upgrade_soldier_evade_2 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier attack from level 2 to level 3"),
+            descname = pgettext("europeans_building", "upgrading soldier evade from level 2 to level 3"),
             actions = {
-                "checksoldier=soldier:attack level:2",
+                "checksoldier=soldier:evade level:2",
                 "sleep=duration:30s",
-                "checksoldier=soldier:attack level:2",
-                "consume=coin_gold sword_broad",
-                "train=soldier:attack level:3",
-                "produce=scrap_iron"
+                "checksoldier=soldier:evade level:2",
+                "consume=coin_gold boots_advanced",
+                "train=soldier:evade level:3"
             }
-        }
+        },
     },
     
     soldier_capacity = 12,

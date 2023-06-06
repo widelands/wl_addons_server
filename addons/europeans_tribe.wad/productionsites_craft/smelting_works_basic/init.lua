@@ -74,6 +74,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "smelting gold"),
             actions = {
                 "return=skipped unless economy needs gold or workers need experience",
+                "return=skipped when economy needs iron",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
@@ -102,6 +103,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs iron",
+                "return=skipped when economy needs gold",
                 "return=skipped when economy needs coal",
                 "consume=ore coal",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
