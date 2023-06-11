@@ -32,9 +32,7 @@ wl.Descriptions():new_warehouse_type {
         },
     },
 
-    aihints = {
-        prohibited_till = 3600
-    },
+    aihints = {},
 
     vision_range = 20,
     heal_per_second = 180,

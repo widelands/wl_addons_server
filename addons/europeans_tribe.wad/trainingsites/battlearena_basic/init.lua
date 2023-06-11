@@ -77,10 +77,8 @@ wl.Descriptions():new_trainingsite_type {
     aihints = {
         trainingsites_max_percent = 20,
         very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 2,
-        prohibited_till = 5400,
-        forced_after = 7200
+        weak_ai_limit = 2,
+        --normal_ai_limit = 4,
     },
 
     working_positions = {
@@ -95,26 +93,6 @@ wl.Descriptions():new_trainingsite_type {
         { name = "boots_sturdy", amount = 2 },
     },
 
-    ["soldier health"] = {
-        food = {{"coin_copper"}},
-        weapons = {"armor_processed"}
-    },
-
-    ["soldier attack"] = {
-        food = {{"coin_copper"}},
-        weapons = {"spear_advanced"}
-    },
-
-    ["soldier defense"] = {
-        food = {{"coin_copper"}},
-        weapons = {"helmet_mask"}
-    },
-
-    ["soldier evade"] = {
-        food = {{"coin_copper"}},
-        weapons = {"boots_sturdy"}
-    },
-  
     programs = {
         sleep = {
             -- TRANSLATORS: Completed/Skipped/Did not start sleeping because ...

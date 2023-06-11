@@ -36,7 +36,7 @@ wl.Descriptions():new_productionsite_type {
         },
     },
 
-    aihints = { },
+    aihints = {},
 
     working_positions = {
         europeans_trainer_advanced = 1,

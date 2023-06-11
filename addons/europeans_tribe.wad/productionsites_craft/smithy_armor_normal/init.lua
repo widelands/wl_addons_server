@@ -132,7 +132,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making processed armor because ...
             descname = pgettext("europeans_building", "making processed armor"),
             actions = {
-                "return=skipped unless economy needs armor_processed",
+                "return=skipped unless economy needs armor_processed or workers need experience",
                 "consume=armor cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
@@ -143,7 +143,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
-                "return=skipped unless economy needs boots_sturdy",
+                "return=skipped unless economy needs boots_sturdy or workers need experience",
                 "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
@@ -187,7 +187,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
             descname = pgettext("europeans_building", "making swift boots"),
             actions = {
-                "return=skipped unless economy needs boots_swift",
+                "return=skipped unless economy needs boots_swift or workers need experience",
                 "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",

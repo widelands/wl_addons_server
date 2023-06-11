@@ -51,10 +51,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    aihints = {
-        prohibited_till = 2400,
-        forced_after = 3000
-    },
+    aihints = {},
 
     working_positions = {
         europeans_baker_basic = 1
@@ -100,9 +97,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ration",
                 "return=skipped when economy needs water",
                 "consume=water flour",
-                "animate=working duration:30s",
+                "animate=working duration:40s",
                 "consume=fish,meat",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "produce=ration",
                 "sleep=duration:120s"
             }

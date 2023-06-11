@@ -48,6 +48,12 @@ wl.Descriptions():new_warehouse_type {
     },
 
     aihints = {
+        supports_seafaring = true,
+        very_weak_ai_limit = 4,
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
+        prohibited_till = 7200,
+        forced_after = 9600
     },
 
     vision_range = 20,

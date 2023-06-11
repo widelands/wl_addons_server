@@ -33,11 +33,7 @@ wl.Descriptions():new_militarysite_type {
         },
     },
     
-    aihints = {
-      fighting = true,
-        mountain_conqueror = true,
-        prohibited_till = 3600
-    },
+    aihints = {},
 
     max_soldiers = 4,
     vision_range = 20,

@@ -27,8 +27,7 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
 
-    aihints = {
-    },
+    aihints = {},
 
     working_positions = {
         europeans_stonemason_advanced = 1,

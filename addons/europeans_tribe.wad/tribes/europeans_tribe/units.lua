@@ -1129,7 +1129,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_scout_advanced",
-                default_target_quantity = 1,
+                default_target_quantity = 2,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Scout
@@ -1139,7 +1139,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_trader",
-                default_target_quantity = 3,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Scout
@@ -1148,7 +1148,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_recruit",
-                default_target_quantity = 16,
+                default_target_quantity = 64,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Recruit
@@ -1157,7 +1157,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_soldier",
-                default_target_quantity = 16,
+                default_target_quantity = 64,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Soldier

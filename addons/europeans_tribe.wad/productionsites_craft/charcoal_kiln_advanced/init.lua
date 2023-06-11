@@ -52,7 +52,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
-                "return=skipped unless economy needs coal",
+                "return=skipped unless economy needs coal or workers need experience",
                 "return=skipped unless site has scrap_wood:8",
                 "consume=scrap_wood:8",
                 "animate=working duration:90s",

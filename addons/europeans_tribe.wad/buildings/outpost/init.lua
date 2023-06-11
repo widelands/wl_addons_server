@@ -36,9 +36,7 @@ wl.Descriptions():new_militarysite_type {
         },
     },
 
-    aihints = {
-        fighting = true
-    },
+    aihints = {},
 
     max_soldiers = 4,
     vision_range = 12,

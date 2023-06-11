@@ -20,10 +20,7 @@ wl.Descriptions():new_militarysite_type {
 
     size = "small",
     
-    aihints = {
-        fighting = true,
-        mountain_conqueror = true
-    },
+    aihints = {},
 
     max_soldiers = 2,
     vision_range = 16,

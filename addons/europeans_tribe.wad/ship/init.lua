@@ -86,21 +86,30 @@ wl.Descriptions():new_ship_type {
     vision_range = 4,
 
     animation_directory = dirname,
-    animations = {
+    spritesheets = {
         idle = {
-            hotspot = { 89, 86 },
-            fps = 10
-        },
-        sinking = {
-            hotspot = { 89, 86 },
-            fps = 7
+           fps = 10,
+           frames = 39,
+           rows = 7,
+           columns = 6,
+           hotspot = { 58, 55 }
         },
         sail = {
-            hotspot = { 89, 86 },
-            fps = 10,
-            directional = true
-        }
-    },
+           fps = 10,
+           frames = 40,
+           rows = 7,
+           columns = 6,
+           directional = true,
+           hotspot = { 86, 85 }
+        },
+        sinking = {
+           fps = 7,
+           frames = 22,
+           rows = 6,
+           columns = 4,
+           hotspot = { 58, 54 }
+        },
+   },
 
     names = {
         -- TRANSLATORS: These European ships are named after the continent or states / countries on this contintent.

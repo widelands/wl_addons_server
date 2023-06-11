@@ -44,10 +44,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    aihints = {
-        prohibited_till = 1800,
-        forced_after = 2400
-    },
+    aihints = {},
 
     working_positions = {
         europeans_miller_basic = 1
@@ -81,7 +78,7 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:20s",
                 "consume=wheat",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:25s",
+                "animate=working duration:20s",
                 "produce=flour:2"
             }
         },
@@ -95,7 +92,7 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:20s",
                 "consume=wheat",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:25s",
+                "animate=working duration:20s",
                 "produce=flour",
                 "sleep=duration:120s"
             }

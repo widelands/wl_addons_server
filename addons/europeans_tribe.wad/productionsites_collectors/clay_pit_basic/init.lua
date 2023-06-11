@@ -53,12 +53,6 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         needs_water = true,
-        basic_amount = 1,
-        prohibited_till = 300,
-        forced_after = 900,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4
     },
 
     working_positions = {

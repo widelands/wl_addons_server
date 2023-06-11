@@ -41,10 +41,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    aihints = {
-        prohibited_till = 1800,
-        forced_after = 2400
-    },
+    aihints = {},
 
     working_positions = {
         europeans_breeder_basic = 2

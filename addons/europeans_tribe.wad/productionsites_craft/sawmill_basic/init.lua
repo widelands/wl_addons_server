@@ -59,12 +59,7 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         supports_seafaring = true,
-        basic_amount = 1,
-        prohibited_till = 600,
-        forced_after = 1200,
-        very_weak_ai_limit = 2,
-        weak_ai_limit = 4,
-        normal_ai_limit = 8
+        basic_amount = 2,
     },
 
     working_positions = {

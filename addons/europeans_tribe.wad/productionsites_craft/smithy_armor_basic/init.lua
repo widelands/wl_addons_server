@@ -57,13 +57,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    aihints = {
-        prohibited_till = 5400,
-        forced_after = 7200,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 3
-    },
+    aihints = {},
 
     working_positions = {
         europeans_smith_basic = 2
@@ -134,7 +128,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making processed armor because ...
             descname = pgettext("europeans_building", "making processed armor"),
             actions = {
-                "return=skipped unless economy needs armor_processed",
+                "return=skipped unless economy needs armor_processed or workers need experience",
                 "consume=armor cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
@@ -145,7 +139,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
-                "return=skipped unless economy needs boots_sturdy",
+                "return=skipped unless economy needs boots_sturdy or workers need experience",
                 "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",

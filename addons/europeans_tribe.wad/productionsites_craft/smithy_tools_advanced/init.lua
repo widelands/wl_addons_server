@@ -169,6 +169,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making needles"),
             actions = {
                 "return=skipped unless economy needs needles or workers need experience",
+                "return=skipped when economy needs basket or economy needs bread_paddle or economy needs buckets or economy needs felling_ax or economy needs fire_tongs",
+                "return=skipped when economy needs hammer or economy needs hook_pole or economy needs kitchen_tools or economy needs pick or economy needs saw or economy needs scythe or economy needs shovel",
                 "consume=coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:25s",

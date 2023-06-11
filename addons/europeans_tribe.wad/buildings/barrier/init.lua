@@ -55,9 +55,7 @@ wl.Descriptions():new_militarysite_type {
         granite = 1
     },
 
-    aihints = {
-        fighting = true
-    },
+    aihints = {},
 
     max_soldiers = 4,
     vision_range = 10,

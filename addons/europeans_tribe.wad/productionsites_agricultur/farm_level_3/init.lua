@@ -82,19 +82,19 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "consume=water:6",
                 "callworker=plant_barley",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "callworker=plant_rye",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "callworker=plant_wheat",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "callworker=plant_corn",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "callworker=plant_blackroot",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "callworker=plant_berrybush",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "callworker=plant_grape",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "sleep=duration:30s"
             }
         },
@@ -106,11 +106,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water",
                 "callworker=plant_barley",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "sleep=duration:1s",
                 "consume=water",
                 "callworker=plant_barley",
-                "animate=working duration:4s"
+                "animate=working duration:3s"
             }
         },
         plant_berrybush = {
@@ -121,7 +121,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water:2",
                 "callworker=plant_berrybush",
-                "animate=working duration:4s"
+                "animate=working duration:3s"
             }
         },
         plant_blackroot = {
@@ -132,10 +132,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water",
                 "callworker=plant_blackroot",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "consume=water",
                 "callworker=plant_blackroot",
-                "animate=working duration:4s"
+                "animate=working duration:3s"
             }
         },
         plant_corn = {
@@ -146,10 +146,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water",
                 "callworker=plant_corn",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "consume=water",
                 "callworker=plant_corn",
-                "animate=working duration:4s"
+                "animate=working duration:3s"
             }
         },
         plant_grape = {
@@ -160,7 +160,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water:2",
                 "callworker=plant_grape",
-                "animate=working duration:4s"
+                "animate=working duration:3s"
             }
         },
         plant_rye = {
@@ -171,10 +171,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water",
                 "callworker=plant_rye",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "consume=water",
                 "callworker=plant_rye",
-                "animate=working duration:4s"
+                "animate=working duration:3s"
             }
         },
         plant_wheat = {
@@ -185,10 +185,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water",
                 "callworker=plant_wheat",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "consume=water",
                 "callworker=plant_wheat",
-                "animate=working duration:4s"
+                "animate=working duration:3s"
             }
         },
         harvest_barley = {
@@ -197,10 +197,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs barley or workers need experience",
                 "callworker=harvest_barley",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=barley",
                 "callworker=harvest_barley",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=barley"
             }
         },
@@ -210,7 +210,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fruit or workers need experience",
                 "callworker=harvest_berrybush",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=fruit"
             }
         },
@@ -220,10 +220,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs blackroot or workers need experience",
                 "callworker=harvest_blackroot",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=blackroot",
                 "callworker=harvest_blackroot",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=blackroot"
             }
         },
@@ -233,10 +233,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs corn or workers need experience",
                 "callworker=harvest_corn",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=corn",
                 "callworker=harvest_corn",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=corn"
             }
         },
@@ -246,7 +246,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs grape or workers need experience",
                 "callworker=harvest_grape",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=grape"
             }
         },
@@ -256,10 +256,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs rye or workers need experience",
                 "callworker=harvest_rye",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=rye",
                 "callworker=harvest_rye",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=rye"
             }
         },
@@ -269,10 +269,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs wheat or workers need experience",
                 "callworker=harvest_wheat",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=wheat",
                 "callworker=harvest_wheat",
-                "animate=working duration:4s",
+                "animate=working duration:3s",
                 "produce=wheat"
             }
         },
