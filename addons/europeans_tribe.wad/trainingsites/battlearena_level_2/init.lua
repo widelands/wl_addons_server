@@ -9,10 +9,19 @@ wl.Descriptions():new_trainingsite_type {
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-    animations = {
+    spritesheets = {
       idle = {
-         hotspot = { 86, 96 },
-      }
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 91, 89 }
+      },
+      build = {
+         frames = 4,
+         columns = 4,
+         rows = 1,
+         hotspot = { 91, 89 }
+      },
     },
     
     size = "big",
@@ -34,26 +43,33 @@ wl.Descriptions():new_trainingsite_type {
         },
     },
 
+    size = "big",
+
     aihints = {
-        trainingsites_max_percent = 20,
+        trainingsites_max_percent = 25,
     },
 
     working_positions = {
-        europeans_trainer_normal = 2,
-        europeans_trainer_basic = 1
+        europeans_trainer_advanced = 1,
+        europeans_trainer_normal = 2
     },
-    
+
     inputs = {
-        { name = "coin_copper", amount = 4 },
-        { name = "coin_silver", amount = 4 },
+        { name = "coin_copper", amount = 6 },
+        { name = "coin_silver", amount = 6 },
+        { name = "coin_gold", amount = 6 },
         { name = "armor_processed", amount = 2 },
         { name = "armor_chain", amount = 2 },
+        { name = "armor_advanced", amount =  2 },
         { name = "spear_advanced", amount = 2 },
         { name = "ax_broad", amount = 2 },
+        { name = "sword_broad", amount = 2 },
         { name = "helmet_mask", amount = 2 },
-        { name = "shield_steel", amount = 2 }, 
+        { name = "shield_steel", amount = 2 },
+        { name = "shield_advanced", amount = 2 }, 
         { name = "boots_sturdy", amount = 2 },
         { name = "boots_swift", amount = 2 },
+        { name = "boots_advanced", amount =  2 }
     },
 
     programs = {
@@ -88,6 +104,18 @@ wl.Descriptions():new_trainingsite_type {
                 "produce=scrap_iron"
             }
         },
+        upgrade_soldier_health_2 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier health from level 2 to level 3"),
+            actions = {
+                "checksoldier=soldier:health level:2",
+                "sleep=duration:30s",
+                "checksoldier=soldier:health level:2",
+                "consume=coin_gold armor_advanced",
+                "train=soldier:health level:3",
+                "produce=scrap_iron"
+            }
+        },
         upgrade_soldier_attack_0 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier attack from level 0 to level 1"),
@@ -109,6 +137,18 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:1",
                 "consume=coin_silver ax_broad",
                 "train=soldier:attack level:2",
+                "produce=scrap_iron"
+            }
+        },
+        upgrade_soldier_attack_2 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier attack from level 2 to level 3"),
+            actions = {
+                "checksoldier=soldier:attack level:2",
+                "sleep=duration:30s",
+                "checksoldier=soldier:attack level:2",
+                "consume=coin_gold sword_broad",
+                "train=soldier:attack level:3",
                 "produce=scrap_iron"
             }
         },
@@ -136,6 +176,18 @@ wl.Descriptions():new_trainingsite_type {
                 "produce=scrap_iron"
             }
         },
+        upgrade_soldier_defense_2 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier defense from level 2 to level 3"),
+            actions = {
+                "checksoldier=soldier:defense level:2",
+                "sleep=duration:30s",
+                "checksoldier=soldier:defense level:2",
+                "consume=coin_gold shield_advanced",
+                "train=soldier:defense level:3",
+                "produce=scrap_iron"
+            }
+        },
         upgrade_soldier_evade_0 = {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
@@ -158,10 +210,21 @@ wl.Descriptions():new_trainingsite_type {
                 "train=soldier:evade level:2"
             }
         },
+        upgrade_soldier_evade_2 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier evade from level 2 to level 3"),
+            actions = {
+                "checksoldier=soldier:evade level:2",
+                "sleep=duration:30s",
+                "checksoldier=soldier:evade level:2",
+                "consume=coin_gold boots_advanced",
+                "train=soldier:evade level:3"
+            }
+        },
     },
     
     soldier_capacity = 12,
-    trainer_patience = 18,
+    trainer_patience = 28,
     
     messages = {
         -- TRANSLATORS: Empire training site tooltip when it has no soldiers assigned

@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_trainingscamp_level_4",
+    name = "europeans_trainingscamp_advanced",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Trainingscamp Level 4"),
+    descname = pgettext("europeans_building", "Advanced Trainingscamp"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -30,6 +30,23 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "big",
+    enhancement = {
+        name = "europeans_battlearena_level_2",
+        enhancement_cost = {
+            brick = 3,
+            marble_column = 3,
+            quartz = 1,
+            diamond = 1,
+            gold = 1
+        },
+        enhancement_return_on_dismantle = {
+            granite = 3,
+            marble = 3,
+            quartz = 1,
+            diamond = 1,
+            scrap_metal_mixed = 1
+        },
+    },
 
     aihints = {},
 

@@ -34,16 +34,15 @@ wl.Descriptions():new_trainingsite_type {
     enhancement = {
         name = "europeans_battlearena_level_2",
         enhancement_cost = {
-            planks = 3,
-            cloth = 3,
-            granite = 2,
+            brick = 3,
+            marble_column = 3,
             quartz = 1,
             diamond = 1,
             gold = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 1,
+            granite = 3,
+            marble = 3,
             quartz = 1,
             diamond = 1,
             scrap_metal_mixed = 1
@@ -51,11 +50,11 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     aihints = {
-        trainingsites_max_percent = 20,
+        trainingsites_max_percent = 25,
     },
 
     working_positions = {
-        europeans_trainer_normal = 1,
+        europeans_trainer_normal = 2,
         europeans_trainer_basic = 1
     },
 

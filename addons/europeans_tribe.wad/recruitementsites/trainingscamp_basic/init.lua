@@ -29,16 +29,16 @@ wl.Descriptions():new_productionsite_type {
     
     size = "big",
     enhancement = {
-        name = "europeans_trainingscamp_level_1",
+        name = "europeans_trainingscamp_normal",
         enhancement_cost = {
-            planks = 1,
-            cloth = 1,
-            granite = 1,
+            planks = 2,
+            cloth = 2,
+            grout = 2,
             gold = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1,
-            granite = 1,
+            scrap_wood = 2,
+            granite = 2,
             scrap_metal_mixed = 1
         },
     },
@@ -92,7 +92,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_soldier",
                 "consume=europeans_recruit",
                 "consume=coin_wood quartz,diamond",
-                "animate=working duration:180s",
+                "animate=working duration:120s",
                 "recruit=europeans_soldier"
             }
         },

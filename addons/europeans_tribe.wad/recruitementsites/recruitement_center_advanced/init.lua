@@ -26,6 +26,15 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "big",
+    enhancement = {
+        name = "europeans_trainingscamp_advanced",
+        enhancement_cost = {
+            gold = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_metal_mixed = 1
+        },
+    },
     
     aihints = {},
     

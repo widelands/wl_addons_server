@@ -70,6 +70,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
                 "return=skipped unless economy needs blackwood or workers need experience",
+                "return=skipped when economy needs planks and not economy needs blackwood",
                 "return=skipped unless site has log:2",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",

@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_market",
+    name = "europeans_market_big",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Market"),
+    descname = pgettext("europeans_building", "Big Market"),
     animation_directory = dirname,
     icon = dirname .. "menu.png",
 
@@ -99,12 +99,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs coin_wood",
+                "return=skipped unless economy needs coin_wood or economy needs coin_copper",
                 "return=skipped when economy needs beer",
                 "return=failed unless site has beer:4",
-                "consume=beer:4 planks",
+                "consume=beer:4 planks gold",
                 "animate=working duration:15s",
-                "produce=coin_wood:4",
+                "produce=coin_wood:2 coin_copper:2",
                 "sleep=duration:30s",
             }
         },
@@ -112,12 +112,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs coin_copper",
+                "return=skipped unless economy needs coin_wood or economy needs coin_copper",
                 "return=skipped when economy needs snack",
                 "return=failed unless site has snack:4",
-                "consume=snack:4 gold",
+                "consume=snack:4 planks gold",
                 "animate=working duration:15s",
-                "produce=coin_copper:4",
+                "produce=coin_wood:2 coin_copper:2",
                 "sleep=duration:30s",
             }
         },
@@ -156,8 +156,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has meal:4",
                 "consume=meal:4 gold",
                 "animate=working duration:15s",
-                "produce=coin_silver:2",
-                "produce=coin_gold:2",
+                "produce=coin_silver:2 coin_gold:2",
                 "sleep=duration:30s",
             }
         },

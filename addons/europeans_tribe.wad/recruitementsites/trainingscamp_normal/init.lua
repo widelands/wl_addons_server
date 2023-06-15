@@ -3,34 +3,43 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_trainingscamp_level_1",
+    name = "europeans_trainingscamp_normal",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Trainingscamp Level 1"),
+    descname = pgettext("europeans_building", "Normal Trainingscamp"),
     icon = dirname .. "menu.png",
-
+    
     animation_directory = dirname,
     animations = {
       idle = {
-         hotspot = { 62, 73 },
+         hotspot = {50, 56}
       },
       working = {
          basename = "idle", -- TODO(GunChleoc): No animation yet.
-         hotspot = { 62, 73 },
+         hotspot = {50, 56}
+      },
+    },
+    spritesheets = {
+      build = {
+         hotspot = {50, 56},
+         frames = 3,
+         columns = 1,
+         rows = 3
       }
     },
-
+    
     size = "big",
     enhancement = {
-        name = "europeans_trainingscamp_level_2",
+        name = "europeans_trainingscamp_advanced",
         enhancement_cost = {
-            planks = 1,
-            cloth = 1,
-            granite = 1,
+            planks = 2,
+            brick = 2,
+            marble_column = 2,
             gold = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1,
-            granite = 1,
+            scrap_wood = 2,
+            granite = 2,
+            marble = 2,
             scrap_metal_mixed = 1
         },
     },
@@ -43,10 +52,10 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "europeans_recruit", amount = 3 },
-        { name = "coin_wood", amount = 3 },
-        { name = "quartz", amount = 3 },
-        { name = "diamond", amount = 3 }
+        { name = "europeans_recruit", amount = 4 },
+        { name = "coin_wood", amount = 4 },
+        { name = "quartz", amount = 4 },
+        { name = "diamond", amount = 4 }
     },
     
     programs = {
@@ -65,11 +74,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_soldier",
                 "consume=europeans_recruit",
                 "consume=coin_wood diamond",
-                "animate=working duration:90s",
+                "animate=working duration:80s",
                 "recruit=europeans_soldier",
                 "consume=europeans_recruit",
                 "consume=coin_wood quartz",
-                "animate=working duration:90s",
+                "animate=working duration:80s",
                 "recruit=europeans_soldier"
             }
         },
@@ -77,3 +86,4 @@ wl.Descriptions():new_productionsite_type {
 }
 
 pop_textdomain()
+

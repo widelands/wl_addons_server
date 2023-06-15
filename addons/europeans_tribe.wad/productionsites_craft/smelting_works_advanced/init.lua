@@ -94,6 +94,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs iron",
                 "return=skipped when economy needs ore and site has scrap_iron:2",
+                "return=skipped when economy needs gold and not economy needs iron",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
@@ -109,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs gold",
                 "return=skipped when economy needs ore and site has scrap_metal_mixed:2",
-                "return=skipped when economy needs iron",
+                "return=skipped when economy needs iron and not economy needs gold",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",

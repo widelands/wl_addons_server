@@ -2407,9 +2407,16 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_market",
+            name = "europeans_market_small",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Market
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Market
+                purpose = pgettext("europeans_building", "Market building to sale wares to other allied tribes.")
+            }
+        },
+        {
+            name = "europeans_market_big",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
                 purpose = pgettext("europeans_building", "Market building to sale wares to other allied tribes.")
             }
         },
@@ -3164,18 +3171,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_trainingscamp_level_1",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Guardhall, part 1
-                    pgettext("europeans_building", "Trains recruits to soldiers."),
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Guardhall, part 2
-                    pgettext("europeans_building", "Equips the recruits with all necessary armor parts.")
-                },
-            }
-        },
-        {
-            name = "europeans_trainingscamp_level_2",
+            name = "europeans_trainingscamp_normal",
             helptexts = {
                 purpose = {
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 1
@@ -3186,18 +3182,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_trainingscamp_level_3",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Dungeon, part 1
-                    pgettext("europeans_building", "Trains recruits to soldiers."),
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Dungeon, part 2
-                    pgettext("europeans_building", "Equips the recruits with all necessary armor parts.")
-                },
-            }
-        },
-        {
-            name = "europeans_trainingscamp_level_4",
+            name = "europeans_trainingscamp_advanced",
             helptexts = {
                 purpose = {
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 1
@@ -3229,17 +3214,6 @@ wl.Descriptions():new_tribe {
             name = "europeans_battlearena_level_2",
             helptexts = {
                 purpose = {
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Labyrinth, part 1
-                    pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."),
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Labyrinth, part 2
-                    pgettext("europeans_building", "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to remain totally unaffected.")
-                },
-            }
-        },
-        {
-            name = "europeans_battlearena_level_3",
-            helptexts = {
-                purpose = {
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 1
                     pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."),
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 2
@@ -3248,7 +3222,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_battlearena_level_4",
+            name = "europeans_battlearena_level_3",
             helptexts = {
                 purpose = {
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 1
