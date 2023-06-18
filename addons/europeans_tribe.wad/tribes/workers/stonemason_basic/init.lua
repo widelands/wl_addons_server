@@ -11,7 +11,7 @@ wl.Descriptions():new_worker_type {
 
     experience = 16,
     becomes = "europeans_stonemason_normal",
-
+    
     animation_directory = dirname,
     animations = {
         idle = {

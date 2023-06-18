@@ -99,11 +99,11 @@ init = {
     place_building_in_region(player, "europeans_well_level_2", sf:region(10), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_farm_level_1", sf:region(16), {
+    place_building_in_region(player, "europeans_farm_normal", sf:region(16), {
         inputs = {water = 6},
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_farm_level_1", sf:region(16), {
+    place_building_in_region(player, "europeans_farm_normal", sf:region(16), {
         inputs = {water = 6},
     })
     sleep(5000)

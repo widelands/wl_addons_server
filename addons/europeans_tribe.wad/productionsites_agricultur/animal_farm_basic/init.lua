@@ -21,7 +21,7 @@ wl.Descriptions():new_productionsite_type {
     
     size = "big",
     enhancement = {
-        name = "europeans_animal_farm_level_1",
+        name = "europeans_animal_farm_normal",
         enhancement_cost = {
             blackwood = 3,
             cloth = 3,
@@ -71,7 +71,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
                 "return=skipped when economy needs meat",
-                "return=skipped when economy needs flour and economy needs beer",
+                "return=skipped when economy needs flour or economy needs water",
                 "return=skipped unless site has water:4",
                 "return=skipped unless site has rye:4 or site has wheat:4 or site has barley:4",
                 "consume=water rye,wheat,barley",

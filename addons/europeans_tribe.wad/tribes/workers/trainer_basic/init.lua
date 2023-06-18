@@ -11,6 +11,12 @@ wl.Descriptions():new_worker_type {
 
     experience = 32,
     becomes = "europeans_trainer_normal",
+    
+    buildcost = {
+        europeans_recruit = 1,
+        quartz = 1,
+        diamond = 1
+    },
 
     animation_directory = dirname,
     animations = {

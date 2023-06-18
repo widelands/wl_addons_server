@@ -9,6 +9,24 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 3,
     
+    animation_directory = dirname,
+    spritesheets = {
+        idle = {
+            frames = 1,
+            rows = 1,
+            columns = 1,
+            hotspot = { 36, 44 }
+        },
+        walk = {
+            fps = 10,
+            frames = 10,
+            rows = 2,
+            columns = 5,
+            directional = true,
+            hotspot = { 36, 44 }
+        },
+    },
+    
     buildcost = {
         europeans_carrier_3 = 1,
         europeans_carrier_horse = 1,
@@ -121,24 +139,6 @@ wl.Descriptions():new_worker_type {
                 "return"
           },
     },
-
-    animation_directory = dirname,
-    spritesheets = {
-        idle = {
-            frames = 1,
-            rows = 1,
-            columns = 1,
-            hotspot = { 36, 44 }
-        },
-        walk = {
-            fps = 10,
-            frames = 10,
-            rows = 2,
-            columns = 5,
-            directional = true,
-            hotspot = { 36, 44 }
-        },
-    }
 }
 
 pop_textdomain()

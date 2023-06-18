@@ -19,6 +19,34 @@ wl.Descriptions():new_worker_type {
             "animate=water duration:1s",
             "return"
         },
+        check_terraform_land = {
+            "findspace=size:any radius:12 terraform:amazons",
+        },
+        terraform_land = {
+            "findspace=size:any radius:12 terraform:amazons",
+            "walk=coords",
+            "animate=dig duration:2s",
+            "terraform=amazons",
+            "animate=dig duration:2s",
+            "animate=planting duration:1s",
+            "plant=attrib:tree_sapling",
+            "return"
+        },
+        check_terraform_pond = {
+            "findobject=attrib:pond_water radius:12",
+        },
+        terraform_pond= {
+            "findobject=attrib:pond_water radius:12",
+            "walk=object",
+            "animate=dig duration:1s",
+            "callobject=remove_pond",
+            "animate=dig duration:1s",
+            "terraform=amazons",
+            "animate=dig duration:1s",
+            "animate=planting duration:1s",
+            "plant=attrib:tree_sapling",
+            "return"
+        },
     },
 
     animation_directory = dirname,

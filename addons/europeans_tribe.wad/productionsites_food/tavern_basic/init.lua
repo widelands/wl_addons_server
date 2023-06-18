@@ -31,7 +31,7 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
     enhancement = {
-        name = "europeans_tavern_level_1",
+        name = "europeans_tavern_normal",
         enhancement_cost = {
             blackwood = 2,
             cloth = 1,

@@ -11,7 +11,7 @@ wl.Descriptions():new_worker_type {
 
     experience = 24,
     becomes = "europeans_forester_normal",
-
+    
     programs = {
         plant = {
             "findspace=size:any radius:5 avoid:field saplingsearches:5",
@@ -21,7 +21,22 @@ wl.Descriptions():new_worker_type {
             "plant=attrib:tree_sapling",
             "animate=water duration:2s500ms",
             "return"
-        }
+        },
+        check_terraform_pond = {
+            "findobject=attrib:pond_water radius:5",
+        },
+        terraform_pond= {
+            "findobject=attrib:pond_water radius:5",
+            "walk=object",
+            "animate=dig duration:2s",
+            "callobject=remove_pond",
+            "animate=dig duration:2s",
+            "terraform=amazons",
+            "animate=dig duration:2s",
+            "animate=plant duration:2s",
+            "plant=attrib:tree_sapling",
+            "return"
+        },
     },
 
     animation_directory = dirname,

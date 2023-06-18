@@ -47,6 +47,8 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=plant_trees",
                 "call=plant_trees_idle",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
                 "return=skipped"
             }
         },
@@ -62,6 +64,13 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=plant",
                 "consume=water",
                 "callworker=plant"
+            }
+        },
+        terraforming_pond = {
+            -- TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
+            descname = pgettext("europeans_building", "terraforming pond"),
+            actions = {
+                "callworker=terraform_pond"
             }
         },
         plant_trees_idle = {

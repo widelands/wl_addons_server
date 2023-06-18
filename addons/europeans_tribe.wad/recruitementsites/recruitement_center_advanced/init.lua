@@ -27,11 +27,17 @@ wl.Descriptions():new_productionsite_type {
 
     size = "big",
     enhancement = {
-        name = "europeans_trainingscamp_advanced",
+        name = "europeans_battlearena_level_2",
         enhancement_cost = {
+            marble_column = 1,
+            quartz = 1,
+            diamond = 1,
             gold = 1
         },
         enhancement_return_on_dismantle = {
+            marble = 1,
+            quartz = 1,
+            diamond = 1,
             scrap_metal_mixed = 1
         },
     },

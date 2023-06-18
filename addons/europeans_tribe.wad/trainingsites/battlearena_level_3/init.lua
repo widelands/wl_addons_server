@@ -64,7 +64,8 @@ wl.Descriptions():new_trainingsite_type {
                 "sleep=duration:20s",
                 "checksoldier=soldier:health level:0",
                 "consume=coin_copper armor_processed",
-                "train=soldier:health level:1"
+                "train=soldier:health level:1",
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_health_1 = {
@@ -76,7 +77,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:1",
                 "consume=coin_silver armor_chain",
                 "train=soldier:health level:2",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_health_2 = {
@@ -88,7 +89,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:2",
                 "consume=coin_gold armor_advanced",
                 "train=soldier:health level:3",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_attack_0 = {
@@ -100,7 +101,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:0",
                 "consume=coin_copper spear_advanced",
                 "train=soldier:attack level:1",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_attack_1 = {
@@ -112,7 +113,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:1",
                 "consume=coin_silver ax_broad",
                 "train=soldier:attack level:2",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_attack_2 = {
@@ -124,7 +125,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:2",
                 "consume=coin_gold sword_broad",
                 "train=soldier:attack level:3",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_defense_0 = {
@@ -136,7 +137,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:0",
                 "consume=coin_copper helmet_mask",
                 "train=soldier:defense level:1",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_defense_1 = {
@@ -148,7 +149,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:1",
                 "consume=coin_silver shield_steel",
                 "train=soldier:defense level:2",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_defense_2 = {
@@ -160,7 +161,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:2",
                 "consume=coin_gold shield_advanced",
                 "train=soldier:defense level:3",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_evade_0 = {
@@ -171,7 +172,8 @@ wl.Descriptions():new_trainingsite_type {
                 "sleep=duration:20s",
                 "checksoldier=soldier:evade level:0",
                 "consume=coin_copper boots_sturdy",
-                "train=soldier:evade level:1"
+                "train=soldier:evade level:1",
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_evade_1 = {
@@ -182,7 +184,8 @@ wl.Descriptions():new_trainingsite_type {
                 "sleep=duration:20s",
                 "checksoldier=soldier:evade level:1",
                 "consume=coin_silver boots_swift",
-                "train=soldier:evade level:2"
+                "train=soldier:evade level:2",
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_evade_2 = {
@@ -193,7 +196,8 @@ wl.Descriptions():new_trainingsite_type {
                 "sleep=duration:20s",
                 "checksoldier=soldier:evade level:2",
                 "consume=coin_gold boots_advanced",
-                "train=soldier:evade level:3"
+                "train=soldier:evade level:3",
+                "produce=scrap_metal_mixed"
             }
         },
     },

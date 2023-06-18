@@ -9,8 +9,6 @@ wl.Descriptions():new_carrier_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
 
-    buildcost = {}, -- This will give the worker the property "buildable"
-
     animation_directory = dirname,
     spritesheets = {
         idle = {
@@ -36,7 +34,9 @@ wl.Descriptions():new_carrier_type {
             directional = true,
             hotspot = { 6, 18 }
         }
-    }
+    },
+    
+    buildcost = {}, -- This will give the worker the property "buildable"
 }
 
 pop_textdomain()

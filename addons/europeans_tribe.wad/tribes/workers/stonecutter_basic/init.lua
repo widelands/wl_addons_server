@@ -11,7 +11,7 @@ wl.Descriptions():new_worker_type {
 
     experience = 24,
     becomes = "europeans_stonecutter_normal",
-
+    
     programs = {
         check_rocks = {
             "findobject=attrib:rocks radius:8",

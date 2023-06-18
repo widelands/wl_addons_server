@@ -16,12 +16,27 @@ wl.Descriptions():new_worker_type {
         plant = {
             "findspace=size:any radius:8 avoid:field saplingsearches:8",
             "walk=coords",
-            "animate=dig duration:3s", -- Play a planting animation
-            "animate=planting duration:2s", -- Play a planting animation
+            "animate=dig duration:3s",
+            "animate=planting duration:2s",
             "plant=attrib:tree_sapling",
             "animate=water duration:2s",
             "return"
-        }
+        },
+        check_terraform_pond = {
+            "findobject=attrib:pond_water radius:8",
+        },
+        terraform_pond= {
+            "findobject=attrib:pond_water radius:8",
+            "walk=object",
+            "animate=dig duration:2s",
+            "callobject=remove_pond",
+            "animate=dig duration:2s",
+            "terraform=amazons",
+            "animate=dig duration:1s",
+            "animate=planting duration:2s",
+            "plant=attrib:tree_sapling",
+            "return"
+        },
     },
 
     animation_directory = dirname,

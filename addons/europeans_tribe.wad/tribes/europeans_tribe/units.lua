@@ -1157,7 +1157,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_soldier",
-                default_target_quantity = 64,
+                default_target_quantity = 128,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Soldier
@@ -2804,28 +2804,21 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_tavern_level_1",
+            name = "europeans_tavern_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
                 purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the basic and deep mines.")
             }
         },
         {
-            name = "europeans_tavern_level_2",
+            name = "europeans_tavern_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
-                purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the basic and deep mines.")
+                purpose = pgettext("building", "Prepares rations, snacks and meals to feed all miners.")
             }
         },
         {
-            name = "europeans_inn_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Big Inn
-                purpose = pgettext("europeans_building", "Prepares rations, snacks and meals to feed all miners.")
-            }
-        },
-        {
-            name = "europeans_inn_level_2",
+            name = "europeans_tavern_inn",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Big Inn
                 purpose = pgettext("europeans_building", "Prepares rations, snacks and meals to feed all miners.")
@@ -2953,35 +2946,14 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_farm_level_1",
+            name = "europeans_farm_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Farm
-                purpose = pgettext("europeans_building", "Sows and harvests barley, corn, rye and wheat."),
-            }
-        },
-        {
-            name = "europeans_farm_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Blackroot Farm
                 purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, rye and wheat."),
             }
         },
         {
-            name = "europeans_farm_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-                purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."),
-            }
-        },
-        {
-            name = "europeans_farm_level_4",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-                purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."),
-            }
-        },
-        {
-            name = "europeans_farm_level_5",
+            name = "europeans_farm_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
                 purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."),
@@ -2995,35 +2967,21 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_animal_farm_level_1",
+            name = "europeans_animal_farm_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Fish Farm
                 purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat and fish for food production."),
             }
         },
         {
-            name = "europeans_animal_farm_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Donkey Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally produces meat and fish for food production.")
-            }
-        },
-        {
-            name = "europeans_animal_farm_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Piggery
-                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally produces meat and fish for food production.")
-            }
-        },
-        {
-            name = "europeans_animal_farm_level_4",
+            name = "europeans_animal_farm_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Sheep Farm
                 purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally keeps sheep for wool prodution and produces meat and fish for food production.")
             }
         },
         {
-            name = "europeans_animal_farm_level_5",
+            name = "europeans_animal_farm_big",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Horse Farm
                 purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additionally keeps sheep for wool prodution and produces meat and fish for food production.")
@@ -3728,8 +3686,8 @@ wl.Descriptions():new_tribe {
       hunter = "europeans_animal_farm_basic",
       fish_meat_replenisher = "europeans_animal_farm_basic",
       farm_primary = "europeans_farm_basic",
-      farm_secondary = "europeans_farm_level_1",
-      farm_tertiary = "europeans_farm_level_2",
+      farm_secondary = "europeans_farm_normal",
+      farm_tertiary = "europeans_farm_advanced",
       agriculture_producer = "europeans_farm_medium_advanced",
       agriculture_consumer_primary = "europeans_brewery_winery",
       agriculture_consumer_secondary = "europeans_beekeepers_house_basic",

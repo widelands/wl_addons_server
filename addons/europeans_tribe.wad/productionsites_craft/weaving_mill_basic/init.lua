@@ -71,6 +71,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
+                "return=skipped when economy needs cloth and not economy needs armor",
                 "return=skipped when economy needs reed and not economy needs armor",
                 "return=skipped unless site has reed:2",
                 "consume=reed:2",
@@ -83,6 +84,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
+                "return=skipped when economy needs armor and not economy needs cloth",
                 "return=skipped when economy needs reed and not economy needs cloth",
                 "return=skipped unless site has reed:2",
                 "consume=reed:2",

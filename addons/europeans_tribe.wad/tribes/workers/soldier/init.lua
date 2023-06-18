@@ -85,6 +85,13 @@ wl.Descriptions():new_soldier_type {
 
     animation_directory = dirname,
     animations = animations,
+    
+    -- buildcost = {
+        -- europeans_recruit = 1,
+        -- coin_wood = 1,
+        -- quartz = 1,
+        -- diamond = 1
+    -- },
         
     -- Battle attributes - initial values and per level increase
     health = {
