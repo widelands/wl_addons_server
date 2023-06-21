@@ -477,7 +477,7 @@ This addon adds my maps ''Java and Sumatra 1.0'', ''Java and Sumatra 1.1'' and '
 Nilpanda
 Nilpanda
 1666688231
-247
+249
 1
 10.0
 0
@@ -819,7 +819,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-229
+231
 2
 9.0
 0
@@ -1248,7 +1248,7 @@ No description
 Solstice
 Solstice_s_Return
 1657988804
-222
+223
 2
 9.5
 1
@@ -1543,7 +1543,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-297
+298
 3
 9.666667
 1
@@ -1911,9 +1911,9 @@ MarkMcWire
 0
 0.0
 0
-1.3.5
+1.3.6
 22
-1479044
+1479040
 maps
 0
 0
@@ -1947,8 +1947,8 @@ sk.mo
 sv.mo
 26
 99b3be8e5639b78e19ae0fdfe3f51708
-7001db0aaee0a177b361931fee5d97e4
-f16a93a30f910fd30fb54ae1bd3ce74c
+3875ae7768533441ddca9cb7f05e8e2b
+ad831265e73ebe1d4bef2bbb7cf83f6e
 f9e04ab3ea3befd2390795321d333d44
 8b50058788ed1715045391ac8b2efeb8
 d2fc183ec2c55e600fe62820e81af6a7
@@ -1995,9 +1995,9 @@ dreieck
 This tribe misses the "sticky node" animation which makes the game crash if a sticky note is placed. Please add a sticky note animation:    https://github.com/widelands/widelands/issues/5860  
 3.2.9
 1682425239
-3.5.0
+3.5.1
 177
-69727149
+69791874
 tribes
 0
 397
@@ -2398,7 +2398,7 @@ tribes/workers/trainer_normal
 tribes/workers/weaver_advanced
 tribes/workers/weaver_basic
 tribes/workers/weaver_normal
-7111
+7112
 addon
 buildings/advanced_barrier/idle_0.5.png
 buildings/advanced_barrier/idle_00.png
@@ -4449,6 +4449,7 @@ recruitementsites/yard_ships_normal/menu.png
 recruitementsites/yard_ships_normal/register.lua
 scripting/debug_europeans.lua
 scripting/starting_conditions/debug.lua
+scripting/starting_conditions/debug_seafaring.lua
 scripting/starting_conditions/discovery.lua
 scripting/starting_conditions/harbors.lua
 scripting/starting_conditions/headquarters.lua
@@ -9534,8 +9535,8 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-7134
-83aa4f304c955726117d5ccc6e7715cf
+7135
+6e1ecb17f5ee664a4c1f31fb9e54974c
 7d672b6105fabbc2e717e81e40efd29b
 fbbd5b53033a58de73a4fe01bcb2f66f
 a08c175b1f94c27817eb9f4d6d07a9ff
@@ -9625,7 +9626,7 @@ c5ce1638f29614abb08d5d279154b394
 10eec0d7806691dec8a0a17ee61ec465
 72f9e09fb955be8a02912bdd2bbb1f51
 a472ce45cdc8d7311d223471dce49189
-fb5b52222233f563641948b4c3385239
+e889378a74a95bf90c91316f4fec2b47
 4fba1dc7d4755a049e4fe96527bf6bcb
 16f6e4af282597d52b4c5fa202a5b475
 960e99e0031d594c606e7f576a467e11
@@ -9638,7 +9639,7 @@ fb5b52222233f563641948b4c3385239
 0a9dbe39e961168c6a5857d027e5b9eb
 d20bfe57e876216fd9b527da74692873
 7fea7505d35cfb15cfd46e5653b6a6d0
-f3108bb8a37cd122eb3cdf1ab58bb3ce
+78a8246badab7ade288c7fdb590a6320
 4256f998205facb55425168aa272a81d
 6824e110831c044ff0c47ebf6c566eee
 7b1c5a21d5a80108c0e623804c61186a
@@ -10383,7 +10384,7 @@ c678a7e7f2d5d7fc6180402b3e4fb5bf
 8e41567ff223e775bc835a3b1e5cdd4f
 8a3d080e380f0f9c1694750a7db2689d
 178960c0f638746f603f14d6a578a92c
-42e247103f461442866f1a77d4a07145
+89cafc6e577885026d7b0cf4716fc381
 95b510f554956a2b0135c4f276da1a64
 0c542e061fc06e26753329cc5b0a5b4d
 c1ddf542419140c2f77758744f482f85
@@ -10603,7 +10604,7 @@ ae42bd98d6a4bf9bf9cace1b0c304bb0
 01d7206118255ac3e867f84a57e510b8
 77da86fa69ebb6ee56b6002a8a19d2f5
 e634811f77280145f80773982c7b74ab
-f752957172dd5f3579f0a71cba7f353f
+04ed4b8db20ce3260eac23baad367c4d
 cee72e9d8ceb773db2eb2e654c5dbf72
 261d48fc3c03de8847ac7ade789f230d
 b2be5f1a4be1bbb6d7221c42ce193812
@@ -10630,7 +10631,7 @@ ed17ad6c038403957d0dfb904bc75977
 bddbe15962b7ec5a71932177e70795ad
 8adf0d20b468a3a7a0285c955f17b54b
 542d2106366842a02aff88844888f3f0
-d1c1c3402b3f3c3c685d5a365f2ba1f4
+512d90274e8847ce054208ee01b4cb95
 f9b9cce6319e1c692a0f97053491f7e6
 b6e2b2f7358fb0895a60f97b4427998c
 dba79929ee268335a2b309a63adcb24a
@@ -10641,7 +10642,7 @@ dba79929ee268335a2b309a63adcb24a
 76573ddc90ddd23a6490ac6ab38e6662
 d6f9adf3e66ceab26dda4d242b031b5c
 e406e53a2d77ab59540ba8e939f41e5f
-e1d745f9a513f096002facff2c5d6d8d
+ac104b2846204d672a8a1c8023afecec
 f9e07090e47c6f48b7ca93652f798ff9
 7d6c22084d6c95186ae8c9fcb85d2b4f
 17c74e6d47e515cf9f82f04dadc23c6b
@@ -10765,7 +10766,7 @@ a86ea0cb40c6997771085e34d1eeb035
 0ad73f702f9166ae982e635345b5aee1
 c4fff002a9feae001d7b57f56e4a5115
 0eaab047bbbec6e9504b89fd1ba4b0e0
-b63b45fd1a489a3a63bb473a9e8c2a27
+e86ca2af64c764743f8bc292cb5177f7
 78be7e690749dc2b1b3a501af52e75bc
 7dec94ec507cc54684410066736b9465
 c74dfc63aea2a4d55505b8c58fff1289
@@ -10784,7 +10785,7 @@ fb81ca224f6bd6a5a9e2a79274faa42d
 d1e860e53fb27585d6c54882f5c767d4
 6b7938495c396d6a29fdc225c5b2fecf
 f7f19a46987a4198d57210205160eb2a
-f53f1c65ed6d61b28e1252ebdb4ac2b8
+519e04e0c4feeb2c516f90d7da49b9cc
 8980313c2ebb5f96b18b5090fd8cb218
 4f5256f010785536a27d9faf8279fa9b
 f3838e3896c043d804b7043812e3c7e3
@@ -10799,7 +10800,7 @@ eb170e297a53e608629f34bacf3469a8
 2df40d2108e92657668d1b691563c624
 23cdb582bc066a2ef78f6179c8121232
 a2230b6079d8fc7e99bc8f3a283caf3f
-e9d93cab5b2ed0fb60b3052df013bf3c
+02e8a34eb7cdd8c3ae430f1940fc3012
 6020a467e9066009690168c385d11e90
 121fe96ec07e4a923ebb1af49f6cb745
 ceb206f69c47b71904b63d74869ef878
@@ -10815,14 +10816,14 @@ a2c94f62f4f847d08bc28a1f7aa9ab68
 b89c32c1c74696704a030f99a08f2f32
 a382e483458dce873ebee79cc8063fae
 ba5f554beb2174f528df049b521eb041
-1c86c0046106e95e966ee0b28faed31b
+1553b73e539b8e74660c6ac2709f8abe
 07db59635b352706d19c961cada79d13
 4fc491c4bf0556882e107aa43365efa8
 0b5629794952d1f00e58aca68e5fbc46
 9142f373b240bb6cae9d976cfef931c4
 80c6837de18195f8f4cdc10b30461f9f
 52d956a522b474ab4ded969f9d672d65
-7298dc92509d286ae75e7251a24b96ab
+d268a27c1cc07eeea67f8065af783985
 242ec05755ebd6e5aa7f438709bb67ec
 be9259873f6549de326fc6e0142b21ab
 093e01a06ea7ff8d941cbfd38c421fb7
@@ -10833,7 +10834,7 @@ d908afe8734724e74ecebceaadbd4f0e
 7b33d99a16161890552dd1e195f71a25
 932a4dacfc070304dc2aec44eeb8ab1e
 0a22c541ee0ea3ee428d1f43983e1030
-842c1c85cda636f21efbc3f6ef84ff39
+2845b95dac1f3e8117511704079e436f
 67d206cb11ca143d53743d36eb54968d
 00ee474831769a5df286a08244ce1d01
 f4c613ce3e3f0f0381212a7ab959d2e5
@@ -11584,7 +11585,8 @@ bef678b9ed00a14d47999685b9772c53
 a216c677836ef4ca53382c44145f882c
 03a7db3c2b456e2b5ce8d35545856e35
 e3ae4263285cd242976adcc0f5461f31
-8bfc47d71c5fde74ff82c8e46bd727a0
+a5d1ca973794f636440c6ccf342b655c
+d19c99b9f034ede3da07dd6cdbd10321
 d9177fd0d7fbfa99bb0a6cbd98de061e
 7831896e4b6491000d4457684794b49e
 c8b6ca1126686c8ae4ebe9bf89c70ca6
@@ -11706,9 +11708,9 @@ a4556719d17258905d7be2761cd0487d
 7063b6f5d16863042a7254979c2a21f5
 cdb69082530e277d638acf1e1d67a32c
 f9535866c7d646605d5bf64a69a93c5c
-dca827cc3bfbddfba555374fe6d311cc
+28ff715a5fad66a766048e37664a1a03
 49887d8a8a2758f7fa58838695193c4c
-ada86f261e40dcfc1d4a449a61cd897b
+fcb16e34cf31635e173924bd6a9e5492
 63c5b6f9375e6af54609fbe6ccc740f3
 d59651b2f48e30eb79262e0f458d3311
 e42f1711d5fda6dabeb84df9fe724e18
@@ -16676,7 +16678,7 @@ The player who has explored most of the world wins the game
 aDiscoverer
 aDiscoverer
 1667043185
-100
+101
 1
 10.0
 0
@@ -16892,7 +16894,7 @@ The first player who has at least 4 fully trained soldiers in his warehouses win
 kaputtnik
 kaputtnik
 1616241721
-103
+104
 1
 10.0
 0
@@ -16962,7 +16964,7 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-186
+187
 0
 0.0
 0
@@ -17034,7 +17036,7 @@ A strange new world.
 Nordfriese
 Nordfriese
 1600000000
-231
+232
 3
 9.666667
 0
@@ -17245,7 +17247,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-382
+384
 5
 9.6
 0
@@ -17404,7 +17406,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-372
+374
 2
 10.0
 0
@@ -18637,7 +18639,7 @@ Shallow water terrains, impassable for ships but walkable.
 kaputtnik
 kaputtnik
 1600000000
-142
+144
 2
 9.5
 0
@@ -19388,7 +19390,7 @@ Replaces some terrain graphics with those from the ancient Widelands days.
 Nordfriese
 Nordfriese
 1621620072
-75
+77
 1
 10.0
 0

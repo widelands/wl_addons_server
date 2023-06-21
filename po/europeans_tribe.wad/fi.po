@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-18 03:01+0200\n"
+"POT-Creation-Date: 2023-06-21 03:01+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: LINUX-SAUNA, 2022\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
@@ -300,16 +300,32 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/buildings/market_big/init.lua:74
-#: addons/europeans_tribe.wad/buildings/market_big/init.lua:87
-#: addons/europeans_tribe.wad/buildings/market_big/init.lua:100
-#: addons/europeans_tribe.wad/buildings/market_big/init.lua:113
-#: addons/europeans_tribe.wad/buildings/market_big/init.lua:126
-#: addons/europeans_tribe.wad/buildings/market_big/init.lua:139
-#: addons/europeans_tribe.wad/buildings/market_big/init.lua:152
-#: addons/europeans_tribe.wad/buildings/market_big/init.lua:165
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:101
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:115
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:129
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:143
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:157
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:171
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:185
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:199
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:213
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:227
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:241
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:255
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:269
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:283
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:297
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:311
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:325
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:339
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:353
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:367
+#: addons/europeans_tribe.wad/buildings/market_big/init.lua:381
 #: addons/europeans_tribe.wad/buildings/market_small/init.lua:69
-#: addons/europeans_tribe.wad/buildings/market_small/init.lua:77
-#: addons/europeans_tribe.wad/buildings/market_small/init.lua:90
+#: addons/europeans_tribe.wad/buildings/market_small/init.lua:79
+#: addons/europeans_tribe.wad/buildings/market_small/init.lua:93
+#: addons/europeans_tribe.wad/buildings/market_small/init.lua:107
+#: addons/europeans_tribe.wad/buildings/market_small/init.lua:122
 #: addons/europeans_tribe.wad/buildings/store/init.lua:68
 #: addons/europeans_tribe.wad/buildings/store/init.lua:85
 #: addons/europeans_tribe.wad/buildings/store/init.lua:97
@@ -1045,9 +1061,9 @@ msgstr "Edistynyt linna"
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_advanced/init.lua:32
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_basic/init.lua:62
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_normal/init.lua:42
-#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:44
+#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:42
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_basic/init.lua:69
-#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:51
+#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:50
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:44
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:69
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:55
@@ -1233,9 +1249,10 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_normal/init.lua:8
+#, fuzzy
 msgctxt "europeans_building"
-msgid "Normal Animal Farm Level"
-msgstr ""
+msgid "Normal Animal Farm"
+msgstr "Edistynyt linna"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:8
@@ -1562,16 +1579,16 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:61
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:81
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:71
-#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:73
+#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:71
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_basic/init.lua:86
-#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:77
+#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:75
 msgctxt "europeans_building"
 msgid "terraforming pond"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:68
-#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:82
+#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:80
 msgctxt "europeans_building"
 msgid "terraforming land"
 msgstr ""
@@ -1843,17 +1860,17 @@ msgid "Advanced Terraformer’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:92
+#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:90
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_basic/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:85
+#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "terraforming coast"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:101
+#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_advanced/init.lua:99
 #: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_basic/init.lua:102
-#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:94
+#: addons/europeans_tribe.wad/productionsites_collectors/terraformers_house_normal/init.lua:92
 msgid "dummy program"
 msgstr ""
 
@@ -1990,101 +2007,101 @@ msgid "making a wooden armor"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:98
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:105
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:109
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:100
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:107
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:111
 msgctxt "europeans_building"
 msgid "making a wooden helmet"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:110
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:117
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:121
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:114
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:121
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:125
 msgctxt "europeans_building"
 msgid "forging a wooden spear"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making processed armor because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:122
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:129
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:133
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:128
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:135
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:139
 msgctxt "europeans_building"
 msgid "making processed armor"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:133
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:140
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:144
-msgctxt "europeans_building"
-msgid "making study boots"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:144
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:151
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:155
-msgctxt "europeans_building"
-msgid "forging a mask"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:155
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:162
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:166
-msgctxt "europeans_building"
-msgid "forging an advanced spear"
-msgstr ""
-
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of chain armor because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:167
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:178
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:141
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:151
 msgctxt "europeans_building"
 msgid "forging a suit of chain armor"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:177
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:188
-msgctxt "europeans_building"
-msgid "making swift boots"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:188
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:199
-msgctxt "europeans_building"
-msgid "forging a steel shield"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:198
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:209
-msgctxt "europeans_building"
-msgid "forging a broad ax"
-msgstr ""
-
 #. TRANSLATORS: Completed/Skipped/Did not start forging a suit of advanced armor because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:210
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:153
 msgctxt "europeans_building"
 msgid "forging a suit of advanced armor"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:165
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:146
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:162
+msgctxt "europeans_building"
+msgid "making study boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:178
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:174
+msgctxt "europeans_building"
+msgid "making swift boots"
+msgstr ""
+
 #. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:220
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:191
 msgctxt "europeans_building"
 msgid "making advanced boots"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:204
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:157
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:186
+msgctxt "europeans_building"
+msgid "forging a mask"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:217
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:198
+msgctxt "europeans_building"
+msgid "forging a steel shield"
+msgstr ""
+
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:231
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:229
 msgctxt "europeans_building"
 msgid "forging an advanced shield"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
+#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:241
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_basic/init.lua:168
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:209
+msgctxt "europeans_building"
+msgid "forging an advanced spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:255
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_normal/init.lua:222
+msgctxt "europeans_building"
+msgid "forging a broad ax"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_armor_advanced/init.lua:269
 msgctxt "europeans_building"
 msgid "forging a broadsword"
 msgstr ""
@@ -2116,97 +2133,97 @@ msgid "making baskets"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a bread paddle because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:92
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:108
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:102
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:104
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:120
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:114
 msgctxt "europeans_building"
 msgid "making bread paddles"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:103
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:119
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:113
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:127
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:143
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:137
 msgctxt "europeans_building"
 msgid "making buckets"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:114
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:130
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:124
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:138
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:154
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:148
 msgctxt "europeans_building"
 msgid "making felling axes"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:125
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:141
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:135
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:161
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:177
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:171
 msgctxt "europeans_building"
 msgid "making fire tongs"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:136
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:152
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:146
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:184
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:200
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:194
 msgctxt "europeans_building"
 msgid "making hammers"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hook pole because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:147
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:163
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:157
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:207
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:223
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:217
 msgctxt "europeans_building"
 msgid "making hook poles"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making kitchen tools because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:158
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:174
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:168
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:230
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:246
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:240
 msgctxt "europeans_building"
 msgid "making kitchen tools"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making needles because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:169
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:185
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:179
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:253
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:269
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:263
 msgctxt "europeans_building"
 msgid "making needles"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:182
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:198
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:192
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:276
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:292
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:286
 msgctxt "europeans_building"
 msgid "making picks"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:193
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:209
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:203
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:299
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:315
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:309
 msgctxt "europeans_building"
 msgid "making saws"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:204
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:220
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:214
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:322
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:338
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:332
 msgctxt "europeans_building"
 msgid "making sycthes"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:215
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:231
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:225
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:345
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:361
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:355
 msgctxt "europeans_building"
 msgid "making shovels"
 msgstr ""
@@ -3069,8 +3086,15 @@ msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/debug.lua:14
+#: addons/europeans_tribe.wad/scripting/starting_conditions/debug_seafaring.lua:14
 msgid "Only for AI debug purposes. No regular starting condition."
 msgstr ""
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/debug_seafaring.lua:12
+#, fuzzy
+msgid "Debug Europeans Seafaring"
+msgstr "Eurooppalaisheimo"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:11

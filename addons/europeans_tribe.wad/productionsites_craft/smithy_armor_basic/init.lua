@@ -93,6 +93,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped unless economy needs armor_wooden or workers need experience",
+                "return=skipped when economy needs helmet_wooden and not economy needs armor_wooden",
+                "return=skipped when economy needs spear_wooden and not economy needs armor_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
@@ -105,6 +107,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden helmet"),
             actions = {
                 "return=skipped unless economy needs helmet_wooden or workers need experience",
+                "return=skipped when economy needs armor_wooden and not economy needs helmet_wooden",
+                "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",
@@ -117,6 +121,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
                 "return=skipped unless economy needs spear_wooden or workers need experience",
+                "return=skipped when economy needs armor_wooden and not economy needs spear_wooden",
+                "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:50s",

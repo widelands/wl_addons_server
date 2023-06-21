@@ -97,6 +97,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped unless economy needs armor_wooden or workers need experience",
+                "return=skipped when economy needs helmet_wooden and not economy needs armor_wooden",
+                "return=skipped when economy needs spear_wooden and not economy needs armor_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
@@ -109,6 +111,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden helmet"),
             actions = {
                 "return=skipped unless economy needs helmet_wooden or workers need experience",
+                "return=skipped when economy needs armor_wooden and not economy needs helmet_wooden",
+                "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
@@ -121,6 +125,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
                 "return=skipped unless economy needs spear_wooden or workers need experience",
+                "return=skipped when economy needs armor_wooden and not economy needs spear_wooden",
+                "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
@@ -133,44 +139,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making processed armor"),
             actions = {
                 "return=skipped unless economy needs armor_processed or workers need experience",
+                "return=skipped when economy needs armor_chain and not economy needs armor_processed",
                 "consume=armor cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "produce=armor_processed:2"
-            }
-        },
-        produce_boots_sturdy = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
-            descname = pgettext("europeans_building", "making study boots"),
-            actions = {
-                "return=skipped unless economy needs boots_sturdy or workers need experience",
-                "consume=planks leather cloth",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
-                "produce=boots_sturdy:2"
-            }
-        },
-        produce_helmet_mask = {
-            -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
-            descname = pgettext("europeans_building", "forging a mask"),
-            actions = {
-                "return=skipped unless economy needs helmet_mask or workers need experience",
-                "consume=coal iron",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
-                "produce=helmet_mask:2"
-            }
-        },
-        produce_spear_advanced = {
-            -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
-            descname = pgettext("europeans_building", "forging an advanced spear"),
-            actions = {
-                "return=skipped unless economy needs spear_advanced or workers need experience",
-                "consume=planks coal iron",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
-                "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_advanced:2"
             }
         },
         produce_armor_chain = {
@@ -178,9 +151,22 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a suit of chain armor"),
             actions = {
                 "return=skipped unless economy needs armor_chain or workers need experience",
+                "return=skipped when economy needs armor_processed and not economy needs armor_chain",
                 "consume=armor:2 coal iron",
                 "animate=working duration:30s",
                 "produce=armor_chain:2"
+            }
+        },
+        produce_boots_sturdy = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
+            descname = pgettext("europeans_building", "making study boots"),
+            actions = {
+                "return=skipped unless economy needs boots_sturdy or workers need experience",
+                "return=skipped when economy needs boots_swift and not economy needs boots_sturdy",
+                "consume=planks leather cloth",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "animate=working duration:30s",
+                "produce=boots_sturdy:2"
             }
         },
         produce_boots_swift = {
@@ -188,10 +174,23 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making swift boots"),
             actions = {
                 "return=skipped unless economy needs boots_swift or workers need experience",
+                "return=skipped when economy needs boots_sturdy and not economy needs boots_swift",
                 "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "produce=boots_swift:2"
+            }
+        },
+        produce_helmet_mask = {
+            -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
+            descname = pgettext("europeans_building", "forging a mask"),
+            actions = {
+                "return=skipped unless economy needs helmet_mask or workers need experience",
+                "return=skipped when economy needs shield_steel and not economy needs helmet_mask",
+                "consume=coal iron",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "animate=working duration:30s",
+                "produce=helmet_mask:2"
             }
         },
         produce_shield_steel = {
@@ -199,9 +198,23 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a steel shield"),
             actions = {
                 "return=skipped unless economy needs shield_steel or workers need experience",
+                "return=skipped when economy needs helmet_mask and not economy needs shield_steel",
                 "consume=coal iron",
                 "animate=working duration:30s",
                 "produce=shield_steel:2"
+            }
+        },
+        produce_spear_advanced = {
+            -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
+            descname = pgettext("europeans_building", "forging an advanced spear"),
+            actions = {
+                "return=skipped unless economy needs spear_advanced or workers need experience",
+                "return=skipped when economy needs ax_broad and not economy needs spear_advanced",
+                "consume=planks coal iron",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "animate=working duration:30s",
+                "playsound=sound/smiths/sharpening priority:90%",
+                "produce=spear_advanced:2"
             }
         },
         produce_ax_broad = {
@@ -209,6 +222,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a broad ax"),
             actions = {
                 "return=skipped unless economy needs ax_broad or workers need experience",
+                "return=skipped when economy needs spear_advanced and not economy needs ax_broad",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:30s",

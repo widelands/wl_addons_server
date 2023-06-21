@@ -33,9 +33,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 6 },
-        { name = "coin_copper", amount = 4 },
-        { name = "coin_silver", amount = 4 },
-        { name = "coin_gold", amount = 4 }
+        { name = "coin_wood", amount = 12 }
     },
 
     programs = {
@@ -43,23 +41,23 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "return=skipped unless site has coin_copper:3",
-                "return=skipped unless site has coin_silver:3",
-                "return=skipped unless site has coin_gold:3",
-                "callworker=check_terraform_land",
-                "call=terraforming_land",
-                "callworker=check_terraform_pond",
-                "call=terraforming_pond",
-                "callworker=check_terraform_land",
-                "call=terraforming_land",
-                "callworker=check_terraform_pond",
-                "call=terraforming_pond",
-                "callworker=check_terraform_land",
-                "call=terraforming_land",
-                "callworker=check_terraform_pond",
-                "call=terraforming_pond",
+                "return=skipped unless site has coin_wood:10",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
+                "callworker=check_terraform_coast",
+                "call=terraforming_coast",
+                "callworker=check_terraform_land",
+                "call=terraforming_land",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
+                "callworker=check_terraform_land",
+                "call=terraforming_land",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
+                "callworker=check_terraform_land",
+                "call=terraforming_land",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_coast",
@@ -72,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
             descname = pgettext("europeans_building", "terraforming pond"),
             actions = {
-                "consume=coin_copper",
+                "consume=coin_wood",
                 "callworker=terraform_pond",
                 "callworker=terraform_pond"
             }
@@ -82,7 +80,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "terraforming land"),
             actions = {
                 "return=skipped unless site has water:2",
-                "consume=coin_gold",
+                "consume=coin_wood",
                 "consume=water:2",
                 "callworker=terraform_land",
             }
@@ -91,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
             descname = pgettext("europeans_building", "terraforming coast"),
             actions = {
-                "consume=coin_silver",
+                "consume=coin_wood",
                 "callworker=terraform_coast",
                 "callworker=terraform_coast"
             }

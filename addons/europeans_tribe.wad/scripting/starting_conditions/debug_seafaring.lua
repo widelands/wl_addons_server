@@ -9,7 +9,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 local init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Debug Europeans Economy",
+    descname = _ "Debug Europeans Seafaring",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
     tooltip = _"Only for AI debug purposes. No regular starting condition.",
     func =  function(player, shared_in_start)
@@ -126,13 +126,13 @@ local init = {
         elseif i == 20 then
             player:allow_buildings{"europeans_armorsmithy_basic", }
         elseif i == 21 then
-            player:allow_buildings{"europeans_market_small", "europeans_warehouse_basic", }
+            player:allow_buildings{"europeans_market_small", "europeans_port", }
         elseif i == 22 then
             player:allow_buildings{"europeans_recruitement_center_basic", }
         elseif i == 23 then
             player:allow_buildings{"europeans_battlearena_basic", }
         elseif i == 24 then
-            player:allow_buildings{"europeans_trainingscamp_basic", "europeans_terraformers_house_basic", }
+            player:allow_buildings{"europeans_trainingscamp_basic", "europeans_shipyard_basic", "europeans_ferry_yard_basic", }
         end
         -- Normal Buildings
         if i == 25 then
@@ -177,13 +177,13 @@ local init = {
         elseif i == 44 then
             player:allow_buildings{"europeans_armorsmithy_normal", }
         elseif i == 45 then
-            player:allow_buildings{"europeans_market_big", "europeans_warehouse_normal", }
+            player:allow_buildings{"europeans_market_big", }
         elseif i == 46 then
             player:allow_buildings{"europeans_recruitement_center_normal", }
         elseif i == 47 then
             player:allow_buildings{"europeans_battlearena_level_1", }
         elseif i == 48 then
-            player:allow_buildings{"europeans_trainingscamp_normal", "europeans_terraformers_house_normal", }
+            player:allow_buildings{"europeans_trainingscamp_normal", "europeans_shipyard_normal", "europeans_ferry_yard_normal", }
         end
         -- Advanced Buildings
         if i == 49 then
@@ -228,17 +228,23 @@ local init = {
         elseif i == 68 then
             player:allow_buildings{"europeans_armorsmithy_advanced", }
         elseif i == 69 then
-            player:allow_buildings{"europeans_store", "europeans_trading_post", "europeans_headquarters", "europeans_warehouse_advanced", }
+            player:allow_buildings{"europeans_store", "europeans_trading_post", "europeans_headquarters", }
         elseif i == 70 then
             player:allow_buildings{"europeans_recruitement_center_advanced", }
         elseif i == 71 then
             player:allow_buildings{"europeans_battlearena_level_2", "europeans_battlearena_level_3", }
         elseif i == 72 then
-            player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_terraformers_house_advanced", }
+            player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_shipyard_advanced", "europeans_ferry_yard_advanced", }
         end
         
-        -- Experimental actions
-        if (i >= 72) and (i % 6 == 1) then
+       -- Experimental actions
+        if (bo_allow_seafaring == true) and ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (player.number == 1) and (i == 24) then
+            place_ship_random(player, 64)
+            place_ship_random(player, 64)
+        elseif (bo_allow_seafaring == true) and ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (player.number == 1) and (i == 48) then
+            place_ship_random(player, 64)
+            place_ship_random(player, 64)
+        elseif (i >= 72) and (i % 6 == 1) then
             for j, building in ipairs(player:get_buildings("europeans_guardhouse")) do
                 if (j == 1) then
                     building:enhance(true)

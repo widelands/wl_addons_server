@@ -16,6 +16,7 @@ local init_europeans = {
 
     starting_conditions = {
         "addons/europeans_tribe.wad/scripting/starting_conditions/debug.lua";
+        "addons/europeans_tribe.wad/scripting/starting_conditions/debug_seafaring.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/village_basic.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/village_normal.lua";

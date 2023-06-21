@@ -41,8 +41,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coin_wood", amount = 6 },
-        { name = "coin_copper", amount = 6 }
+        { name = "coin_wood", amount = 10 }
     },
 
     programs = {
@@ -50,12 +49,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "return=skipped unless site has coin_wood:4",
-                "return=skipped unless site has coin_copper:4",
-                "callworker=check_terraform_pond",
-                "call=terraforming_pond",
-                "callworker=check_terraform_pond",
-                "call=terraforming_pond",
+                "return=skipped unless site has coin_wood:8",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_coast",
@@ -68,6 +62,10 @@ wl.Descriptions():new_productionsite_type {
                 "call=terraforming_coast",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
+                "callworker=check_terraform_pond",
+                "call=terraforming_pond",
                 "sleep=duration:30s",
                 "return=skipped"
             }
@@ -84,7 +82,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
             descname = pgettext("europeans_building", "terraforming coast"),
             actions = {
-                "consume=coin_copper",
+                "consume=coin_wood",
                 "callworker=terraform_coast",
                 "callworker=terraform_coast"
             }
