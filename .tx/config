@@ -277,6 +277,12 @@ source_file = po/the-x-mod.wad/the-x-mod.wad.pot
 source_lang = en
 type        = PO
 
+[o:widelands:p:widelands-addons:r:time-limitted-peaceful-wad]
+file_filter  = po/time-limitted-peaceful.wad/<lang>.po
+source_file  = po/time-limitted-peaceful.wad/time-limitted-peaceful.wad.pot
+type         = PO
+minimum_perc = 0
+
 [o:widelands:p:widelands-addons:r:tropics-wad]
 file_filter = po/tropics.wad/<lang>.po
 source_file = po/tropics.wad/tropics.wad.pot
