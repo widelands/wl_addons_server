@@ -16,32 +16,34 @@ wl.Descriptions():new_militarysite_type {
     },
 
     size = "big",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_fortress",
         enhancement_cost = {
-            planks = 3,
-            brick = 3,
+            blackwood = 3,
+            cloth = 3,
             grout = 3,
-            marble_column = 3,
-            quartz = 3
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
-            marble = 3,
-            quartz = 3
+            quartz = 1
         },
     },
 
     buildcost = {
-        blackwood = 4,
-        reed = 4,
-        granite = 2,
+        blackwood = 3,
+        reed = 3,
+        cloth = 3,
+        granite = 3,
         quartz = 1
     },
     return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 1,
+        scrap_wood = 3,
+        reed = 1,
+        granite = 2,
         quartz = 1
     },
 

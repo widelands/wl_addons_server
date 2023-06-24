@@ -256,29 +256,24 @@ local init = {
                 end
             end
         elseif (i >= 72) and (i % 6 == 2) then
-            for j, building in ipairs(player:get_buildings("europeans_tower")) do
-                if (j == 1) then
-                    building:enhance(true)
-                end
-            end
-        elseif (i >= 72) and (i % 6 == 3) then
-            for j, building in ipairs(player:get_buildings("europeans_castle")) do
-                if (j == 1) then
-                    building:enhance(true)
-                end
-            end
-            for j, building in ipairs(player:get_buildings("europeans_recruitement_center_advanced")) do
-                if (j == 1) then
-                    building:enhance(true)
-                end
-            end
-        elseif (i >= 72) and (i % 6 == 4) then
             for j, building in ipairs(player:get_buildings("europeans_tower_small")) do
                 if (j == 1) then
                     building:enhance(true)
                 end
             end
             for j, building in ipairs(player:get_buildings("europeans_outpost")) do
+                if (j == 1) then
+                    building:enhance(true)
+                end
+            end
+        elseif (i >= 72) and (i % 6 == 3) then
+            for j, building in ipairs(player:get_buildings("europeans_tower")) do
+                if (j == 1) then
+                    building:enhance(true)
+                end
+            end
+        elseif (i >= 72) and (i % 6 == 4) then
+            for j, building in ipairs(player:get_buildings("europeans_castle")) do
                 if (j == 1) then
                     building:enhance(true)
                 end
@@ -296,6 +291,7 @@ local init = {
                 end
             end
         end
+
 
         -- Delay of 10 min between actions
         sleep(600000)

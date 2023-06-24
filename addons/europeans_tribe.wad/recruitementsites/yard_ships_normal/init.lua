@@ -24,7 +24,9 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "medium",
+    destructible = true,
     map_check = {"seafaring"},
+    
     enhancement = {
         name = "europeans_shipyard_advanced",
         enhancement_cost = {
@@ -32,13 +34,13 @@ wl.Descriptions():new_productionsite_type {
             brick = 2,
             marble = 1,
             marble_column = 1,
-            gold = 1
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
             marble = 2,
-            scrap_metal_mixed = 1
+            diamond = 1
         }
     },
 

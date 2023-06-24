@@ -19,6 +19,7 @@ wl.Descriptions():new_warehouse_type {
     },
 
     size = "medium",
+    destructible = false,
     
     aihints = {},
 

@@ -26,25 +26,26 @@ wl.Descriptions():new_warehouse_type {
     },
     
     size = "port",
+    destructible = false,
     map_check = {"seafaring"},
+    
     buildcost = {
         blackwood = 3,
+        cloth = 3,
+        grout = 3,
         planks = 3,
-        reed = 2,
-        cloth = 2,
-        brick = 2,
-        grout = 2,
+        brick = 3,
+        marble = 3,
         marble_column = 2,
-        quartz = 2,
-        diamond = 2
+        quartz = 1,
+        diamond = 1
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        reed = 2,
-        granite = 2,
-        marble = 2,
-        quartz = 2,
-        diamond = 2
+        granite = 4,
+        marble = 5,
+        quartz = 1,
+        diamond = 1
     },
 
     aihints = {

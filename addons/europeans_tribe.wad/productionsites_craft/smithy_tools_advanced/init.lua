@@ -30,11 +30,11 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_armorsmithy_advanced",
         enhancement_cost = {
             marble_column = 1,
-            gold = 1
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             marble = 1,
-            scrap_metal_mixed = 1
+            diamond = 1
         },
     },
 

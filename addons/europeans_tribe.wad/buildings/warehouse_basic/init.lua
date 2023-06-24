@@ -25,31 +25,38 @@ wl.Descriptions():new_warehouse_type {
     },
     
     size = "medium",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_warehouse_normal",
         enhancement_cost = {
-            planks = 3,
+            blackwood = 3,
             cloth = 3,
-            quartz = 1,
-            diamond = 1
+            grout = 3,
+            marble_column = 1,
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
-            quartz = 1,
-            diamond = 1
+            granite = 3,
+            marble = 1,
+            quartz = 1
+            
         },
     },
     buildcost = {
-        blackwood = 4,
-        reed = 4,
-        quartz = 1,
-        diamond = 1
+        log = 3,
+        reed = 3,
+        granite = 3,
+        marble_column = 1,
+        quartz = 1
     },
     return_on_dismantle = {
-        scrap_wood = 4,
+        scrap_wood = 3,
         reed = 1,
-        quartz = 1,
-        diamond = 1
+        granite = 2,
+        marble = 1,
+        quartz = 1
     },
 
     aihints = {

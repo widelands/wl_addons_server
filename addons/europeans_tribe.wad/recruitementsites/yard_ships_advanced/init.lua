@@ -37,6 +37,7 @@ wl.Descriptions():new_productionsite_type {
     },
    
     size = "medium",
+    destructible = true,
     map_check = {"seafaring"},
 
     aihints = {},

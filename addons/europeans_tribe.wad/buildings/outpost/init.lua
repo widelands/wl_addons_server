@@ -19,20 +19,21 @@ wl.Descriptions():new_militarysite_type {
     },
     
     size = "medium",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_advanced_barrier",
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            grout = 2,
             marble_column = 2,
-            diamond = 2
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
             marble = 2,
-            diamond = 2
+            diamond = 1
         },
     },
 

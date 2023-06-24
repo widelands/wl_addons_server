@@ -28,35 +28,36 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "big",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_trainingscamp_normal",
         enhancement_cost = {
-            planks = 2,
-            cloth = 2,
-            grout = 2,
-            gold = 1
+            blackwood = 3,
+            cloth = 3,
+            grout = 3,
+            marble_column = 1,
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2,
-            scrap_metal_mixed = 1
+            scrap_wood = 3,
+            granite = 3,
+            marble = 1,
+            quartz = 1
         },
     },
     buildcost = {
-        blackwood = 2,
-        planks = 2,
-        reed = 2,
-        granite = 2,
-        quartz = 1,
-        diamond = 1,
-        gold = 1
+        log = 4,
+        reed = 4,
+        granite = 4,
+        marble_column = 1,
+        quartz = 1
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        granite = 1,
-        quartz = 1,
-        diamond = 1,
-        scrap_metal_mixed = 1
+        granite = 2,
+        marble = 1,
+        quartz = 1
     },
 
     aihints = {
@@ -71,9 +72,11 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "europeans_recruit", amount = 2 },
-        { name = "coin_wood", amount = 2 },
-        { name = "quartz", amount = 2 },
-        { name = "diamond", amount = 2 }
+        { name = "spear_wooden", amount = 2 },
+        { name = "helmet_wooden", amount = 2 },
+        { name = "armor_wooden", amount = 2 },
+        { name = "boots_wooden", amount = 2 },
+        { name = "coin_wood", amount = 4 }
     },
     
     programs = {
@@ -91,7 +94,8 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "consume=europeans_recruit",
-                "consume=coin_wood quartz,diamond",
+                "consume=armor_wooden boots_wooden helmet_wooden spear_wooden",
+                "consume=coin_wood:2",
                 "animate=working duration:120s",
                 "recruit=europeans_soldier"
             }

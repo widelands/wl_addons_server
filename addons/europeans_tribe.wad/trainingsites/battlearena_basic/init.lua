@@ -38,40 +38,36 @@ wl.Descriptions():new_trainingsite_type {
     },
     
     size = "big",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_battlearena_level_1",
         enhancement_cost = {
-            planks = 3,
+            blackwood = 3,
             cloth = 3,
-            granite = 2,
-            quartz = 1,
-            diamond = 1,
-            gold = 1
+            grout = 3,
+            marble_column = 1,
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 1,
-            quartz = 1,
-            diamond = 1,
-            scrap_metal_mixed = 1
+            scrap_wood = 3,
+            granite = 3,
+            marble = 1,
+            quartz = 1
         },
     },
     buildcost = {
-        blackwood = 2,
-        planks = 2,
-        reed = 2,
-        cloth = 2,
-        granite = 2,
-        quartz = 1,
-        diamond = 1,
-        gold = 1
+        log = 4,
+        reed = 4,
+        granite = 4,
+        marble_column = 1,
+        quartz = 1
     },
     return_on_dismantle = {
-        scrap_wood = 3,
-        granite = 1,
-        quartz = 1,
-        diamond = 1,
-        scrap_metal_mixed = 1
+        scrap_wood = 4,
+        granite = 3,
+        marble = 1,
+        quartz = 1
     },
 
     aihints = {

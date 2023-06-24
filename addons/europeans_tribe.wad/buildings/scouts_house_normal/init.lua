@@ -24,6 +24,8 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "small",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_scouts_house_advanced",
         enhancement_cost = {

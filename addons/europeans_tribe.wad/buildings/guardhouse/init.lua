@@ -16,12 +16,14 @@ wl.Descriptions():new_militarysite_type {
     },
     
     size = "small",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_tower_small",
         enhancement_cost = {
-            planks = 1,
+            blackwood = 1,
             cloth = 1,
-            granite = 1,
+            grout = 1,
             quartz = 1
         },
         enhancement_return_on_dismantle = {
@@ -33,11 +35,13 @@ wl.Descriptions():new_militarysite_type {
     buildcost = {
         blackwood = 2,
         reed = 2,
-        granite = 1
+        granite = 1,
+        quartz = 1
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 1
+        granite = 1,
+        quartz = 1
     },
     
     aihints = {

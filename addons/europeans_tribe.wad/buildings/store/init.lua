@@ -21,23 +21,24 @@ wl.Descriptions():new_productionsite_type {
     
     size = "big",
     destructible = true,
+    
     buildcost = {
         blackwood = 6,
         planks = 6,
         cloth = 4,
-        reed = 4,
         brick = 4,
         grout = 4,
-        marble_column = 4,
-        quartz = 3,
-        diamond = 3
+        marble = 4,
+        marble_column = 1,
+        quartz = 1,
+        diamond = 1
     },
     return_on_dismantle = {
         scrap_wood = 8,
         granite = 6,
-        marble = 3,
-        quartz = 2,
-        diamond = 2
+        marble = 5,
+        quartz = 1,
+        diamond = 1
     },
     
     aihints = {

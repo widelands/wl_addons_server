@@ -40,11 +40,11 @@ wl.Descriptions():new_productionsite_type {
             blackwood = 2,
             cloth = 2,
             grout = 2,
-            gold = 1
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
-            scrap_metal_mixed = 1
+            quartz = 1
         },
     },
     buildcost = {
@@ -78,13 +78,15 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_armor_wooden",
+                "call=produce_boots_wooden",
                 "call=produce_helmet_wooden",
                 "call=produce_spear_wooden",
+                "sleep=duration:20s",
                 "call=produce_armor_processed",
                 "call=produce_boots_sturdy",
                 "call=produce_helmet_mask",
                 "call=produce_spear_advanced",
-                "sleep=duration:30s",
+                "sleep=duration:20s",
                 "return=skipped"
             }
         },
@@ -93,6 +95,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped unless economy needs armor_wooden or workers need experience",
+                "return=skipped when economy needs boots_wooden and not economy needs armor_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs armor_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs armor_wooden",
                 "consume=planks",
@@ -102,12 +105,28 @@ wl.Descriptions():new_productionsite_type {
                 "produce=armor_wooden:2"
             }
         },
+        produce_boots_wooden = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
+            descname = pgettext("europeans_building", "making a pair of wooden boots"),
+            actions = {
+                "return=skipped unless economy needs boots_wooden or workers need experience",
+                "return=skipped when economy needs armor_wooden and not economy needs boots_wooden",
+                "return=skipped when economy needs helmet_wooden and not economy needs boots_wooden",
+                "return=skipped when economy needs spear_wooden and not economy needs boots_wooden",
+                "consume=planks",
+                "playsound=sound/smiths/smith priority:50% allow_multiple",
+                "animate=working duration:50s",
+                "playsound=sound/smiths/sharpening priority:90%",
+                "produce=boots_wooden:2"
+            }
+        },
         produce_helmet_wooden = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
             descname = pgettext("europeans_building", "making a wooden helmet"),
             actions = {
                 "return=skipped unless economy needs helmet_wooden or workers need experience",
                 "return=skipped when economy needs armor_wooden and not economy needs helmet_wooden",
+                "return=skipped when economy needs boots_wooden and not economy needs helmet_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
@@ -122,6 +141,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs spear_wooden or workers need experience",
                 "return=skipped when economy needs armor_wooden and not economy needs spear_wooden",
+                "return=skipped when economy needs boots_wooden and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",

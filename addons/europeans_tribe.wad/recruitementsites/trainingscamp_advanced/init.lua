@@ -30,6 +30,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "big",
+    destructible = true,
 
     aihints = {},
 
@@ -39,10 +40,12 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "europeans_recruit", amount = 4 },
-        { name = "coin_wood", amount = 4 },
-        { name = "quartz", amount = 4 },
-        { name = "diamond", amount = 4 }
+        { name = "europeans_recruit", amount = 8 },
+        { name = "spear_wooden", amount = 8 },
+        { name = "helmet_wooden", amount = 8 },
+        { name = "armor_wooden", amount = 8 },
+        { name = "boots_wooden", amount = 8 },
+        { name = "coin_wood", amount = 12 },
     },
     
     programs = {
@@ -60,11 +63,24 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "consume=europeans_recruit",
-                "consume=coin_wood diamond",
+                "consume=armor_wooden boots_wooden helmet_wooden spear_wooden",
+                "consume=coin_wood:2",
                 "animate=working duration:60s",
                 "recruit=europeans_soldier",
                 "consume=europeans_recruit",
-                "consume=coin_wood quartz",
+                "consume=armor_wooden boots_wooden helmet_wooden spear_wooden",
+                "consume=coin_wood:2",
+                "animate=working duration:60s",
+                "recruit=europeans_soldier",
+                "sleep=duration:30s",
+                "consume=europeans_recruit",
+                "consume=armor_wooden boots_wooden helmet_wooden spear_wooden",
+                "consume=coin_wood:2",
+                "animate=working duration:60s",
+                "recruit=europeans_soldier",
+                "consume=europeans_recruit",
+                "consume=armor_wooden boots_wooden helmet_wooden spear_wooden",
+                "consume=coin_wood:2",
                 "animate=working duration:60s",
                 "recruit=europeans_soldier"
             }

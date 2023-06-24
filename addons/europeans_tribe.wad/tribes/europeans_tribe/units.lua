@@ -32,19 +32,25 @@ wl.Descriptions():new_tribe {
     bridge_height = 8,
     
     collectors_points_table = {
-        { ware = "gold", points = 2},
-        { ware = "armor_wooden", points = 1},
-        { ware = "armor", points = 2},
-        { ware = "armor_chain", points = 4},
-        { ware = "armor_advanced", points = 6},
-        { ware = "spear_wooden", points = 1},
-        { ware = "spear_advanced", points = 2},
-        { ware = "ax_broad", points = 4},
-        { ware = "sword_broad", points = 6},
-        { ware = "helmet_wooden", points = 1},
-        { ware = "helmet_mask", points = 2},
-        { ware = "shield_steel", points = 4},
-        { ware = "shield_advanced", points = 6},
+        { ware = "gold", points = 2 },
+        { ware = "quartz", points = 2 },
+        { ware = "diamond", points = 2 },
+        { ware = "armor_wooden", points = 1 },
+        { ware = "armor_processed", points = 2 },
+        { ware = "armor_chain", points = 4 },
+        { ware = "armor_advanced", points = 6 },
+        { ware = "boots_wooden", points = 1 },
+        { ware = "boots_sturdy", points = 2 },
+        { ware = "boots_swift", points = 4 },
+        { ware = "boots_advanced", points = 6 },
+        { ware = "spear_wooden", points = 1 },
+        { ware = "spear_advanced", points = 2 },
+        { ware = "ax_broad", points = 4 },
+        { ware = "sword_broad", points = 6 },
+        { ware = "helmet_wooden", points = 1 },
+        { ware = "helmet_mask", points = 2 },
+        { ware = "shield_steel", points = 4 },
+        { ware = "shield_advanced", points = 6 },
     },
 
     -- Image file paths for this tribe's road and waterway textures
@@ -132,7 +138,6 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_wood",
-                default_target_quantity = 16,
                 preciousness = 16,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Scrap wood
@@ -178,7 +183,16 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wool
                     purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms with level 4 or 5 can produce wool.")
                 }
-            }
+            },
+            {
+                name = "armor",
+                default_target_quantity = 16,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
+                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
+                }
+            },
         },
         {
             -- Building Materials 1 (Mining)
@@ -236,7 +250,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "marble",
-                default_target_quantity = 8,
+                default_target_quantity = 16,
                 preciousness = 32,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Marble
@@ -535,7 +549,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "gold",
-                default_target_quantity = 8,
+                default_target_quantity = 16,
                 preciousness = 8,
                 helptexts = {
                     purpose = {
@@ -548,7 +562,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "coin_wood",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 4,
                 helptexts = {
                     purpose = {
@@ -715,7 +729,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "needles",
-                default_target_quantity = 1,
+                default_target_quantity = 2,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -728,7 +742,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "bread_paddle",
-                default_target_quantity = 1,
+                default_target_quantity = 2,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -741,7 +755,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "hook_pole",
-                default_target_quantity = 1,
+                default_target_quantity = 2,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -754,7 +768,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "kitchen_tools",
-                default_target_quantity = 1,
+                default_target_quantity = 2,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -778,17 +792,8 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "armor",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
-                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill.")
-                }
-            },
-            {
                 name = "armor_processed",
-                default_target_quantity = 16,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Processed Armor
@@ -797,7 +802,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "armor_chain",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Chain Armor
@@ -806,7 +811,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "armor_advanced",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
@@ -814,8 +819,17 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "boots_wooden",
+                default_target_quantity = 16,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
+                    purpose = pgettext("europeans_ware", "Wooden boots are basic footwear for soldiers to be protect on their feet. They are produced by the dressmaker.")
+                }
+            },
+            {
                 name = "boots_sturdy",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
@@ -824,7 +838,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "boots_swift",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
@@ -833,7 +847,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "boots_advanced",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
@@ -845,7 +859,7 @@ wl.Descriptions():new_tribe {
             -- Weapons, Shields and Helmets
             {
                 name = "spear_wooden",
-                default_target_quantity = 32,
+                default_target_quantity = 16,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
@@ -854,7 +868,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "spear_advanced",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
@@ -863,7 +877,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "ax_broad",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Broad Ax
@@ -872,7 +886,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "sword_broad",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Broad Sword
@@ -881,7 +895,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "helmet_wooden",
-                default_target_quantity = 1,
+                default_target_quantity = 16,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
@@ -890,7 +904,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "helmet_mask",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
@@ -899,7 +913,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "shield_steel",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Steel Shield
@@ -908,7 +922,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "shield_advanced",
-                default_target_quantity = 1,
+                default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Shield

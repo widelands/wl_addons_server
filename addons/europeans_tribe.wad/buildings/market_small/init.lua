@@ -22,6 +22,7 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
     destructible = true,
+    
     buildcost = {
         blackwood = 4,
         planks = 4,
@@ -30,13 +31,14 @@ wl.Descriptions():new_productionsite_type {
         brick = 2,
         grout = 2,
         marble = 2,
+        marble_column = 1,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 2,
-        marble = 2,
+        scrap_wood = 6,
+        granite = 3,
+        marble = 3,
         quartz = 1,
         diamond = 1
     },

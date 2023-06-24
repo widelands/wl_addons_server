@@ -26,6 +26,8 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "small",
+    destructible = true,
+    
     aihints = {},
 
     working_positions = {

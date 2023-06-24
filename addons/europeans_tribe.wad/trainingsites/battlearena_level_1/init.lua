@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_battlearena_level_1",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Battle Arena Level 1"),
+    descname = pgettext("europeans_building", "Normal Battle Arena"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -31,21 +31,22 @@ wl.Descriptions():new_trainingsite_type {
     },
     
     size = "big",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_battlearena_level_2",
         enhancement_cost = {
+            planks = 3,
             brick = 3,
+            marble = 3,
             marble_column = 3,
-            quartz = 1,
-            diamond = 1,
-            gold = 1
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 3,
             granite = 3,
-            marble = 3,
-            quartz = 1,
-            diamond = 1,
-            scrap_metal_mixed = 1
+            marble = 6,
+            diamond = 1
         },
     },
 

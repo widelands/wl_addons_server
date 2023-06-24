@@ -17,18 +17,20 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "medium",
+    destructible = true,
     map_check = {"waterways"},
+    
     enhancement = {
         name = "europeans_ferry_yard_normal",
         enhancement_cost = {
             blackwood = 2,
             cloth = 2,
             grout = 2,
-            gold = 1
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
-            gold = 1
+            quartz = 1
         },
     },
     buildcost = {

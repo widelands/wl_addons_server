@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_militarysite_type {
     name = "europeans_sentry",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Sentry"),
+    descname = pgettext("europeans_building", "Advanced Sentry"),
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
@@ -19,6 +19,7 @@ wl.Descriptions():new_militarysite_type {
     },
 
     size = "small",
+    destructible = false,
     
     aihints = {},
 

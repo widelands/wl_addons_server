@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_battlearena_level_3",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Battle Arena Level 3"),
+    descname = pgettext("europeans_building", "Colosseum"),
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
@@ -19,6 +19,7 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     size = "big",
+    destructible = true,
 
     aihints = {
         trainingsites_max_percent = 25,

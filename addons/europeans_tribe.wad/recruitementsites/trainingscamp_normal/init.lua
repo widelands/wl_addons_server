@@ -28,19 +28,22 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "big",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_trainingscamp_advanced",
         enhancement_cost = {
-            planks = 2,
-            brick = 2,
-            marble_column = 2,
-            gold = 1
+            planks = 3,
+            brick = 3,
+            marble = 3,
+            marble_column = 1,
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2,
-            marble = 2,
-            scrap_metal_mixed = 1
+            scrap_wood = 3,
+            granite = 3,
+            marble = 4,
+            diamond = 1
         },
     },
     
@@ -53,9 +56,11 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "europeans_recruit", amount = 4 },
-        { name = "coin_wood", amount = 4 },
-        { name = "quartz", amount = 4 },
-        { name = "diamond", amount = 4 }
+        { name = "spear_wooden", amount = 4 },
+        { name = "helmet_wooden", amount = 4 },
+        { name = "armor_wooden", amount = 4 },
+        { name = "boots_wooden", amount = 4 },
+        { name = "coin_wood", amount = 8 }
     },
     
     programs = {
@@ -73,11 +78,14 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_soldier",
                 "consume=europeans_recruit",
-                "consume=coin_wood diamond",
+                "consume=armor_wooden boots_wooden helmet_wooden spear_wooden",
+                "consume=coin_wood:2",
                 "animate=working duration:80s",
                 "recruit=europeans_soldier",
+                "sleep=duration:20s",
                 "consume=europeans_recruit",
-                "consume=coin_wood quartz",
+                "consume=armor_wooden boots_wooden helmet_wooden spear_wooden",
+                "consume=coin_wood:2",
                 "animate=working duration:80s",
                 "recruit=europeans_soldier"
             }

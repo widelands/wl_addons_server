@@ -31,28 +31,33 @@ wl.Descriptions():new_militarysite_type {
     },
     
     size = "medium",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_outpost",
         enhancement_cost = {
-            planks = 2,
+            blackwood = 2,
             cloth = 2,
-            granite = 2,
-            quartz = 2
+            grout = 2,
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
-            quartz = 2
+            quartz = 1
         },
     },
     buildcost = {
         blackwood = 3,
         reed = 3,
-        granite = 2
+        granite = 2,
+        quartz = 1
     },
     return_on_dismantle = {
         scrap_wood = 3,
-        granite = 1
+        reed = 1,
+        granite = 1,
+        quartz = 1
     },
 
     aihints = {},

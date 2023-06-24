@@ -16,18 +16,21 @@ wl.Descriptions():new_warehouse_type {
     },
        
     size = "medium",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_warehouse_advanced",
         enhancement_cost = {
+            planks = 3,
             brick = 3,
-            marble_column = 3,
-            quartz = 1,
+            marble = 3,
+            marble_column = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
+            scrap_wood = 3,
             granite = 3,
-            marble = 3,
-            quartz = 1,
+            marble = 4,
             diamond = 1
         },
     },
