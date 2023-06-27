@@ -25,55 +25,58 @@ local init = {
     end
 
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
-            wares = {
-                log = 128,
-                reed = 128,
-                granite = 128,
-                blackwood = 128,
-                water = 64,
-                coal = 64,
-                cloth = 32,
-                planks = 32,
-                marble = 32,
-                marble_column = 16,
-                grout = 16,
-                brick = 16,
-                gold = 16,
-                quartz = 16,
-                diamond = 16,
-                buckets = 32,
-                basket = 32
-            },
-            workers = {
-                europeans_carrier = 64,
-                europeans_farmer_basic = 48,
-                europeans_builder = 24,
-                europeans_lumberjack_basic = 16,
-                europeans_forester_basic = 16,
-                europeans_miner_basic = 16,
-                europeans_stonecutter_basic = 8,
-                europeans_carpenter_basic = 8,
-                europeans_charcoal_burner_basic = 8,
-                europeans_stonemason_basic = 8,
-                europeans_weaver_basic = 8,
-                europeans_breeder_basic = 8,
-                europeans_brewer_basic = 8,
-                europeans_miller_basic = 8,
-                europeans_baker_basic = 8,
-                europeans_smelter_basic = 8,
-                europeans_smith_basic = 8,
-                europeans_trainer_basic = 8,
-                europeans_trader = 8,
-                europeans_claydigger_basic = 4,
-                europeans_beekeeper_basic = 4,
-                europeans_shipwright_basic = 4,
-                europeans_terraformer_basic = 2,
-                europeans_scout_basic = 2,
-                europeans_geologist = 1
-          },
-            soldiers = {
-                [{0,0,0,0}] = 32,
-          }
+        wares = {
+            log = 128,
+            reed = 128,
+            granite = 128,
+            blackwood = 64,
+            cloth = 64,
+            grout = 64,
+            planks = 32,
+            brick = 32,
+            marble = 32,
+            marble_column = 16,
+            quartz = 32,
+            diamond = 16,
+            water = 64,
+            coal = 64,
+            ore = 16,
+            iron = 4,
+            gold = 4,
+            buckets = 16,
+            basket = 16,
+            armor_wooden = 8,
+            boots_wooden = 8,
+            helmet_wooden = 8,
+            spear_wooden = 8
+        },
+        workers = {
+            europeans_geologist = 1,
+            europeans_carrier = 32,
+            europeans_builder = 32,
+            europeans_farmer_basic = 32,
+            europeans_lumberjack_basic = 12,
+            europeans_miner_basic = 12,
+            europeans_trader = 10,
+            europeans_forester_basic = 8,
+            europeans_breeder_basic = 6,
+            europeans_trainer_basic = 6,
+            europeans_weaver_basic = 4,
+            europeans_stonecutter_basic = 4,
+            europeans_carpenter_basic = 4,
+            europeans_charcoal_burner_basic = 4,
+            europeans_stonemason_basic = 4,
+            europeans_brewer_basic = 4,
+            europeans_miller_basic = 4,
+            europeans_baker_basic = 4,
+            europeans_smelter_basic = 4,
+            europeans_smith_basic = 4,
+            europeans_claydigger_basic = 4,
+            europeans_terraformer_basic = 4
+      },
+        soldiers = {
+            [{0,0,0,0}] = 32,
+      }
     })
     
     player:forbid_buildings("all")
@@ -126,13 +129,13 @@ local init = {
         elseif i == 20 then
             player:allow_buildings{"europeans_armorsmithy_basic", }
         elseif i == 21 then
-            player:allow_buildings{"europeans_market_small", "europeans_warehouse_basic", }
+            player:allow_buildings{"europeans_market_small", }
         elseif i == 22 then
             player:allow_buildings{"europeans_recruitement_center_basic", }
         elseif i == 23 then
-            player:allow_buildings{"europeans_battlearena_basic", }
+            player:allow_buildings{"europeans_trainingscamp_basic", "europeans_battlearena_basic", }
         elseif i == 24 then
-            player:allow_buildings{"europeans_trainingscamp_basic", "europeans_terraformers_house_basic", }
+            player:allow_buildings{"europeans_terraformers_house_basic", "europeans_warehouse_basic", }
         end
         -- Normal Buildings
         if i == 25 then
@@ -177,13 +180,13 @@ local init = {
         elseif i == 44 then
             player:allow_buildings{"europeans_armorsmithy_normal", }
         elseif i == 45 then
-            player:allow_buildings{"europeans_market_big", "europeans_warehouse_normal", }
+            player:allow_buildings{"europeans_market_big", }
         elseif i == 46 then
             player:allow_buildings{"europeans_recruitement_center_normal", }
         elseif i == 47 then
-            player:allow_buildings{"europeans_battlearena_level_1", }
+            player:allow_buildings{"europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
         elseif i == 48 then
-            player:allow_buildings{"europeans_trainingscamp_normal", "europeans_terraformers_house_normal", }
+            player:allow_buildings{"europeans_terraformers_house_normal", "europeans_warehouse_normal", }
         end
         -- Advanced Buildings
         if i == 49 then
@@ -228,13 +231,13 @@ local init = {
         elseif i == 68 then
             player:allow_buildings{"europeans_armorsmithy_advanced", }
         elseif i == 69 then
-            player:allow_buildings{"europeans_store", "europeans_trading_post", "europeans_headquarters", "europeans_warehouse_advanced", }
+            player:allow_buildings{"europeans_store", "europeans_trading_post", }
         elseif i == 70 then
             player:allow_buildings{"europeans_recruitement_center_advanced", }
         elseif i == 71 then
-            player:allow_buildings{"europeans_battlearena_level_2", "europeans_battlearena_level_3", }
+            player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_battlearena_level_2", "europeans_battlearena_level_3", }
         elseif i == 72 then
-            player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_terraformers_house_advanced", }
+            player:allow_buildings{"europeans_terraformers_house_advanced", "europeans_warehouse_advanced", "europeans_headquarters", }
         end
         
         -- Experimental actions

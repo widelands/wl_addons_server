@@ -21,9 +21,9 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_fortress",
         enhancement_cost = {
-            blackwood = 3,
-            cloth = 3,
-            grout = 3,
+            planks = 3,
+            brick = 3,
+            marble_column = 3,
             quartz = 1
         },
         enhancement_return_on_dismantle = {
@@ -34,16 +34,14 @@ wl.Descriptions():new_militarysite_type {
     },
 
     buildcost = {
-        blackwood = 3,
-        reed = 3,
-        cloth = 3,
-        granite = 3,
+        blackwood = 4,
+        cloth = 4,
+        grout = 4,
         quartz = 1
     },
     return_on_dismantle = {
         scrap_wood = 3,
-        reed = 1,
-        granite = 2,
+        granite = 3,
         quartz = 1
     },
 

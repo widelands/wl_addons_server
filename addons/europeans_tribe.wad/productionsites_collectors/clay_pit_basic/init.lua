@@ -68,10 +68,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "callworker=check_dig_dry",
+                "call=making_pond_idle",
                 "callworker=check_dig",
                 "call=digging_clay",
-                "callworker=check_dig",
-                "call=making_pond_idle",
                 "return=skipped"
             }
         },
@@ -79,10 +79,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
             descname = pgettext("europeans_building", "digging clay"),
             actions = {
-                "return=skipped unless economy needs clay or workers need experience",
+                "return=skipped unless economy needs clay or economy needs brick or workers need experience",
                 "return=skipped unless site has water:2",
-                "callworker=dig",
                 "consume=water",
+                "callworker=dig",
                 "produce=clay"
             }
         },
@@ -99,10 +99,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs clay",
-                "return=skipped when economy needs water",
-                "callworker=dig",
-                "consume=water",
+                "return=skipped when economy needs clay or economy needs brick",
+                "callworker=dig_dry",
                 "sleep=duration:120s"
             }
         }

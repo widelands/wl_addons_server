@@ -32,10 +32,10 @@ wl.Descriptions():new_worker_type {
             "plant=attrib:tree_sapling",
             "return"
         },
-        check_terraform_pond = {
+        check_terraform_pond_water = {
             "findobject=attrib:pond_water radius:12",
         },
-        terraform_pond= {
+        terraform_pond_water = {
             "findobject=attrib:pond_water radius:12",
             "walk=object",
             "animate=dig duration:1s",
@@ -43,7 +43,20 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:1s",
             "terraform=amazons",
             "animate=dig duration:1s",
+            "callobject=remove_pond",
             "animate=planting duration:1s",
+            "plant=attrib:tree_sapling",
+            "return"
+        },
+        check_terraform_pond_dry = {
+            "findobject=attrib:pond_dry radius:12",
+        },
+        terraform_pond_dry = {
+            "findobject=attrib:pond_dry radius:12",
+            "walk=object",
+            "animate=planting duration:2s",
+            "callobject=remove_pond",
+            "animate=dig duration:2s",
             "plant=attrib:tree_sapling",
             "return"
         },

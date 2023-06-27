@@ -28,20 +28,6 @@ wl.Descriptions():new_productionsite_type {
     size = "big",
     destructible = true,
     
-    enhancement = {
-        name = "europeans_battlearena_level_2",
-        enhancement_cost = {
-            marble_column = 1,
-            quartz = 1,
-            diamond = 1
-        },
-        enhancement_return_on_dismantle = {
-            marble = 1,
-            quartz = 1,
-            diamond = 1
-        },
-    },
-    
     aihints = {},
     
     working_positions = {

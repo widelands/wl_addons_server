@@ -36,11 +36,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=plant_trees",
-                "call=plant_trees_idle",
                 "callworker=check_terraform_land",
                 "call=terraforming_land",
-                "callworker=check_terraform_pond",
-                "call=terraforming_pond",
                 "return=skipped"
             }
         },
@@ -49,39 +46,25 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "planting trees"),
             actions = {
                 "return=skipped when economy needs water and not economy needs log",
-                "return=skipped unless site has water:2",
+                "return=skipped unless site has water:4",
+                "consume=water",
+                "callworker=plant",
+                "consume=water",
+                "callworker=plant",
                 "consume=water",
                 "callworker=plant",
                 "consume=water",
                 "callworker=plant"
             }
         },
-        terraforming_pond = {
-            -- TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
-            descname = pgettext("europeans_building", "terraforming pond"),
-            actions = {
-                "callworker=terraform_pond"
-            }
-        },
         terraforming_land = {
-            -- TRANSLATORS: Completed/Skipped/Did not start terraforming land because ...
-            descname = pgettext("europeans_building", "terraforming land"),
+            -- TRANSLATORS: Completed/Skipped/Did not start planting trees on terraformed land because ...
+            descname = pgettext("europeans_building", "planting trees on terraformed land"),
             actions = {
-                "return=skipped when economy needs water and not economy needs log",
+                "return=skipped when economy needs water",
                 "return=skipped unless site has water:2",
                 "consume=water:2",
                 "callworker=terraform_land",
-            }
-        },
-        plant_trees_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs log",
-                "return=skipped when economy needs water",
-                "consume=water",
-                "callworker=plant",
-                "sleep=duration:40s"
             }
         },
     },

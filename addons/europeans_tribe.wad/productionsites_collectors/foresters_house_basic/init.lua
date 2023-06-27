@@ -70,17 +70,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=plant_trees",
-                "call=plant_trees_idle",
-                "callworker=check_terraform_pond",
-                "call=terraforming_pond",
+                "callworker=check_terraform_pond_water",
+                "call=terraforming_pond_water",
                 "return=skipped"
-            }
-        },
-        terraforming_pond = {
-            -- TRANSLATORS: Completed/Skipped/Did not start terraforming pond because ...
-            descname = pgettext("europeans_building", "terraforming pond"),
-            actions = {
-                "callworker=terraform_pond"
             }
         },
         plant_trees = {
@@ -95,15 +87,11 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=plant"
             }
         },
-        plant_trees_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
+        terraforming_pond_water = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting trees in pond with water because ...
+            descname = pgettext("europeans_building", "planting trees in pond with water"),
             actions = {
-                "return=skipped when economy needs log",
-                "return=skipped when economy needs water",
-                "consume=water",
-                "callworker=plant",
-                "sleep=duration:60s"
+                "callworker=terraform_pond_water"
             }
         },
     },

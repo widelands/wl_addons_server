@@ -25,7 +25,7 @@ wl.Descriptions():new_militarysite_type {
     },
     
     size = "medium",
-    destructible = false,
+    destructible = true,
 
     aihints = {},
 

@@ -21,26 +21,27 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_tower_small",
         enhancement_cost = {
-            blackwood = 1,
-            cloth = 1,
-            grout = 1,
+            planks = 1,
+            brick = 1,
+            marble_column = 1,
             quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1,
             granite = 1,
+            marble = 1,
             quartz = 1
         },
     },
     buildcost = {
         blackwood = 2,
-        reed = 2,
-        granite = 1,
+        cloth = 2,
+        grout = 2,
         quartz = 1
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 1,
+        granite = 2,
         quartz = 1
     },
     

@@ -32,6 +32,16 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:4s",
             "plant=attrib:pond_water",
             "return"
+        },
+        check_dig_dry = {
+            "findspace=size:any radius:6 avoid:field",
+        },
+        dig_dry = {
+            "findspace=size:any radius:6 avoid:field",
+            "walk=coords",
+            "animate=dig duration:4s",
+            "plant=attrib:pond_dry",
+            "return"
         }
     },
 
