@@ -353,8 +353,8 @@ public class ServerUtils {
 
 	/**
 	 * Recursively move a directory and its content.
-	 * @param src File or directory to move from
-	 * @param target File or directory to move to
+	 * @param src File or directory to move from.
+	 * @param target File or directory to move to.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	synchronized public static void doMove(File src, File target) throws Exception {
@@ -367,6 +367,20 @@ public class ServerUtils {
 		} else {
 			Files.move(src.toPath(), target.toPath());
 		}
+	}
+
+	/**
+	 * Generate a human-readable diff between two files or directories.
+	 * @param a First directory to compare.
+	 * @param b Second directory to compare.
+	 * @return The diff text.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	public static String diff(String a, String b) throws Exception {
+		String tempfile = Files.createTempFile(null, null).toFile().getPath();
+		String rawDiff = Utils.bashOutput("bash", "-c", "diff -N -r -u '" + a + "' '" + b + "' | tee '" + tempfile + "'");
+		String diffstats = Utils.bashOutput("bash", "-c", "diffstat -T < '" + tempfile + "'");
+		return diffstats + "\n\n" + rawDiff;
 	}
 
 	/**

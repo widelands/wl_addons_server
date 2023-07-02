@@ -928,8 +928,7 @@ public class HandleCommand {
 					oldVersionString =
 					    doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, newAddOnMain);
 
-					diff = Utils.bashOutput(
-					    "diff", "-N", "-r", "-u", addOnDir.getPath(), tempDir.getPath());
+					diff = ServerUtils.diff(addOnDir.getPath(), tempDir.getPath());
 
 					sql = Utils.sql(Utils.Databases.kAddOns,
 					                "select id,security,quality from addons where name=?", cmd[1]);
@@ -944,8 +943,7 @@ public class HandleCommand {
 					ServerUtils.doDelete(addOnDir);
 				} else {
 					File emptyDir = Files.createTempDirectory(null).toFile();
-					diff = Utils.bashOutput(
-					    "diff", "-N", "-r", "-u", emptyDir.getPath(), tempDir.getPath());
+					diff = ServerUtils.diff(emptyDir.getPath(), tempDir.getPath());
 
 					Utils.sql(
 					    Utils.Databases.kAddOns,
