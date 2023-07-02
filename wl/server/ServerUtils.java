@@ -378,7 +378,8 @@ public class ServerUtils {
 	 */
 	public static String diff(String a, String b) throws Exception {
 		String tempfile = Files.createTempFile(null, null).toFile().getPath();
-		String rawDiff = Utils.bashOutput("bash", "-c", "diff -N -r -u '" + a + "' '" + b + "' | tee '" + tempfile + "'");
+		String rawDiff = Utils.bashOutput(
+		    "bash", "-c", "diff -N -r -u '" + a + "' '" + b + "' | tee '" + tempfile + "'");
 		String diffstats = Utils.bashOutput("bash", "-c", "diffstat -T < '" + tempfile + "'");
 		return diffstats + "\n\n" + rawDiff;
 	}
