@@ -25,7 +25,7 @@ init = {
     local h = player:place_building("europeans_fortress", sf, false, true)
     h:set_soldiers{[{1,1,1,1}] = 12}
 
-    place_building_in_region(player, "europeans_warehouse_normal", sf:region(3), {
+    place_building_in_region(player, "europeans_warehouse", sf:region(3), {
         wares = {
             log = 128,
             reed = 128,
@@ -75,7 +75,7 @@ init = {
             europeans_claydigger_basic = 1
       },
         soldiers = {
-            [{0,0,0,0}] = 16,
+            [{2,2,2,2}] = 16,
       }
     })
     sleep(5000)

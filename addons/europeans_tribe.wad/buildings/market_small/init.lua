@@ -24,10 +24,9 @@ wl.Descriptions():new_productionsite_type {
     destructible = true,
     
     buildcost = {
-        blackwood = 4,
-        planks = 4,
+        blackwood = 2,
+        planks = 2,
         cloth = 2,
-        reed = 2,
         brick = 2,
         grout = 2,
         marble = 2,
@@ -36,7 +35,7 @@ wl.Descriptions():new_productionsite_type {
         diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 6,
+        scrap_wood = 4,
         granite = 3,
         marble = 3,
         quartz = 1,

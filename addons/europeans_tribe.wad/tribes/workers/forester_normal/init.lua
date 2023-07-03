@@ -13,6 +13,9 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_forester_advanced",
 
     programs = {
+        check_space = {
+            "findspace=size:any radius:8 avoid:field saplingsearches:8"
+        },
         plant = {
             "findspace=size:any radius:8 avoid:field saplingsearches:8",
             "walk=coords",
@@ -22,7 +25,7 @@ wl.Descriptions():new_worker_type {
             "animate=water duration:2s",
             "return"
         },
-        check_terraform_pond_water = {
+        check_pond_water = {
             "findobject=attrib:pond_water radius:8",
         },
         terraform_pond_water = {
@@ -38,7 +41,7 @@ wl.Descriptions():new_worker_type {
             "plant=attrib:tree_sapling",
             "return"
         },
-        check_terraform_pond_dry = {
+        check_pond_dry = {
             "findobject=attrib:pond_dry radius:8",
         },
         terraform_pond_dry = {

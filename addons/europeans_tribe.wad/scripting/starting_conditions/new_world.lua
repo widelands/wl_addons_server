@@ -29,7 +29,7 @@ local init = {
     h:set_soldiers{[{3,3,3,3}] = 12}
       
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
-        player:forbid_buildings{"europeans_headquarters", "europeans_warehouse_basic", "europeans_warehouse_normal", "europeans_warehouse_advanced"}
+        player:forbid_buildings{"europeans_headquarters", "europeans_warehouse"}
         for i, portfield in pairs(map.port_spaces) do
             if (math.abs(portfield.x - sf.x) < 12) and (math.abs(portfield.y - sf.y) < 12) then
                 prefilled_buildings(player, { "europeans_port", portfield.x, portfield.y,

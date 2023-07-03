@@ -2393,21 +2393,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_warehouse_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Warehouse
-                purpose = pgettext("europeans_building", "Your workers and soldiers will find shelter here. Also stores your wares and tools.")
-            }
-        },
-        {
-            name = "europeans_warehouse_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Warehouse
-                purpose = pgettext("europeans_building", "Your workers and soldiers will find shelter here. Also stores your wares and tools.")
-            }
-        },
-        {
-            name = "europeans_warehouse_advanced",
+            name = "europeans_warehouse",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Warehouse
                 purpose = pgettext("europeans_building", "Your workers and soldiers will find shelter here. Also stores your wares and tools.")
@@ -2435,7 +2421,14 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_store",
+            name = "europeans_store_small",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
+                purpose = pgettext("europeans_building", "Store building to purchase wares from other allied tribes.")
+            }
+        },
+        {
+            name = "europeans_store_big",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
                 purpose = pgettext("europeans_building", "Store building to purchase wares from other allied tribes.")
@@ -3676,7 +3669,7 @@ wl.Descriptions():new_tribe {
     port = "europeans_port",
     
    fastplace = {
-      warehouse = "europeans_warehouse_basic",
+      warehouse = "europeans_warehouse",
       port = "europeans_port",
       training_small = "europeans_battlearena_basic",
       training_large = "europeans_battlearena_level_3",

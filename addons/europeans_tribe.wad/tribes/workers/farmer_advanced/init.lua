@@ -10,6 +10,9 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
+        check_space = {
+            "findspace=size:any radius:6 space"
+        },
         plant_barley = {
             "findspace=size:any radius:6 space",
             "walk=coords",

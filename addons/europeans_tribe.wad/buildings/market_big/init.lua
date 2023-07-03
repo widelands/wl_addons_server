@@ -15,7 +15,7 @@ wl.Descriptions():new_productionsite_type {
             hotspot = { 86, 96 },
         },
         working = {
-             basename = "idle", -- TODO(GunChleoc): No animation yet.
+             basename = "idle",
              hotspot = { 86, 96 },
         },
     },
@@ -24,8 +24,8 @@ wl.Descriptions():new_productionsite_type {
     destructible = true,
     
     buildcost = {
-        blackwood = 6,
-        planks = 6,
+        blackwood = 4,
+        planks = 4,
         cloth = 4,
         brick = 4,
         grout = 4,

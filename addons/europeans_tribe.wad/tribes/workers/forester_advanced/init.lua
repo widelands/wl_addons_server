@@ -10,6 +10,9 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
+        check_space = {
+            "findspace=size:any radius:12 avoid:field saplingsearches:12"
+        },
         plant = {
             "findspace=size:any radius:12 avoid:field saplingsearches:12",
             "walk=coords",
@@ -19,10 +22,10 @@ wl.Descriptions():new_worker_type {
             "animate=water duration:1s",
             "return"
         },
-        check_terraform_land = {
+        check_land = {
             "findspace=size:any radius:12 terraform:amazons",
         },
-        terraform_land = {
+        plant_terraformed_land = {
             "findspace=size:any radius:12 terraform:amazons",
             "walk=coords",
             "animate=dig duration:2s",
@@ -32,7 +35,7 @@ wl.Descriptions():new_worker_type {
             "plant=attrib:tree_sapling",
             "return"
         },
-        check_terraform_pond_water = {
+        check_pond_water = {
             "findobject=attrib:pond_water radius:12",
         },
         terraform_pond_water = {
@@ -48,7 +51,7 @@ wl.Descriptions():new_worker_type {
             "plant=attrib:tree_sapling",
             "return"
         },
-        check_terraform_pond_dry = {
+        check_pond_dry = {
             "findobject=attrib:pond_dry radius:12",
         },
         terraform_pond_dry = {

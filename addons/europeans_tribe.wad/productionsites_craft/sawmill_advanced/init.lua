@@ -35,7 +35,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 4 }
+        { name = "log", amount = 8 }
     },
 
     programs = {
@@ -90,11 +90,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood",
                 "return=skipped when economy needs planks",
                 "return=skipped when economy needs log",
+                "return=skipped unless site has log:3",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:30s",
-                "produce=blackwood",
-                "produce=scrap_wood",
                 "sleep=duration:30s",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
@@ -102,7 +101,8 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:15s",
-                "produce=scrap_wood:2",
+                "produce=scrap_wood:3",
+                "produce=blackwood",
                 "produce=planks",
                 "sleep=duration:90s",
             }

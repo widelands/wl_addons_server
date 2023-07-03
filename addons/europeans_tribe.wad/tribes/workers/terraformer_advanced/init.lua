@@ -16,6 +16,16 @@ wl.Descriptions():new_worker_type {
         check_water_breed_fish = {
             "findspace=size:any radius:8 breed resource:resource_fish",
         },
+        check_dike = {
+            "findspace=size:swim radius:8 terraform:diking",
+        },
+        dike = {
+            "findspace=size:swim radius:8 terraform:diking",
+            "walk=coords",
+            "animate=dig duration:4s",
+            "terraform=diking",
+            "return"
+        },
         check_terraform_coast = {
             "findspace=size:swim radius:16 terraform:diking",
         },
@@ -25,24 +35,27 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:2s",
             "terraform=diking",
             "animate=dig duration:2s",
-            "return"
-        },
-        check_terraform_land = {
-            "findspace=size:any radius:16 terraform:amazons",
-        },
-        terraform_land = {
-            "findspace=size:any radius:16 terraform:amazons",
-            "walk=coords",
-            "animate=dig duration:2s",
             "terraform=amazons",
             "animate=dig duration:2s",
             "return"
         },
-        check_terraform_pond = {
+        check_pond_water = {
             "findobject=attrib:pond_water radius:16",
         },
-        terraform_pond= {
+        terraform_pond_water = {
             "findobject=attrib:pond_water radius:16",
+            "walk=object",
+            "animate=dig duration:2s",
+            "callobject=remove_pond",
+            "animate=dig duration:2s",
+            "terraform=amazons",
+            "return"
+        },
+        check_pond_dry = {
+            "findobject=attrib:pond_dry radius:16",
+        },
+        terraform_pond_dry = {
+            "findobject=attrib:pond_dry radius:16",
             "walk=object",
             "animate=dig duration:2s",
             "callobject=remove_pond",

@@ -24,10 +24,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         check_dig = {
-            "findspace=size:any radius:6 avoid:field terraform:amazons",
+            "findspace=size:any radius:6 avoid:field",
         },
         dig = {
-            "findspace=size:any radius:6 avoid:field terraform:amazons",
+            "findspace=size:any radius:6 avoid:field",
             "walk=coords",
             "animate=dig duration:4s",
             "plant=attrib:pond_water",

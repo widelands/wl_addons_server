@@ -47,7 +47,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 4 }
+        { name = "log", amount = 6 }
     },
 
     programs = {

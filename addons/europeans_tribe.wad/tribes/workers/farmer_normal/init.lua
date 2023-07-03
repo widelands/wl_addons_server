@@ -13,6 +13,9 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_farmer_advanced",
 
     programs = {
+        check_space = {
+            "findspace=size:any radius:4 space"
+        },
         plant_barley = {
             "findspace=size:any radius:4 space",
             "walk=coords",
