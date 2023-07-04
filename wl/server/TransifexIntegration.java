@@ -73,7 +73,7 @@ public class TransifexIntegration {
 	 */
 	public synchronized void push() throws Exception {
 		Utils.log("Pushing POT files to Transifex...");
-		Utils.bash("tx", "push", "-s");
+		Utils.bash("tx", "push", "-s", "-r", "*");
 	}
 
 	/**
