@@ -22,15 +22,15 @@ type        = PO
 [o:widelands:p:widelands-addons:r:Down-the-Mountain-wad]
 file_filter  = po/Down_the_Mountain.wad/<lang>.po
 source_file  = po/Down_the_Mountain.wad/Down_the_Mountain.wad.pot
+source_lang  = en
 type         = PO
-source_lang = en
 minimum_perc = 0
 
 [o:widelands:p:widelands-addons:r:Europa-1-2-with-straits-of-bosporus-wad]
 file_filter  = po/Europa_1_2_with_straits_of_bosporus.wad/<lang>.po
 source_file  = po/Europa_1_2_with_straits_of_bosporus.wad/Europa_1_2_with_straits_of_bosporus.wad.pot
+source_lang  = en
 type         = PO
-source_lang = en
 minimum_perc = 0
 
 [o:widelands:p:widelands-addons:r:Java-and-Sumatra-Map-addon-wad]
@@ -38,6 +38,12 @@ file_filter = po/Java_and_Sumatra_Map_addon.wad/<lang>.po
 source_file = po/Java_and_Sumatra_Map_addon.wad/Java_and_Sumatra_Map_addon.wad.pot
 source_lang = en
 type        = PO
+
+[o:widelands:p:widelands-addons:r:Maps-from-Teayo-wad]
+file_filter  = po/Maps_from_Teayo.wad/<lang>.po
+source_file  = po/Maps_from_Teayo.wad/Maps_from_Teayo.wad.pot
+type         = PO
+minimum_perc = 0
 
 [o:widelands:p:widelands-addons:r:SP-Scenario-Along-the-River-wad]
 file_filter = po/SP_Scenario_Along_the_River.wad/<lang>.po
@@ -48,8 +54,8 @@ type        = PO
 [o:widelands:p:widelands-addons:r:Teayo-Maps-Bundle-1-wad]
 file_filter  = po/Teayo_Maps_Bundle_1.wad/<lang>.po
 source_file  = po/Teayo_Maps_Bundle_1.wad/Teayo_Maps_Bundle_1.wad.pot
+source_lang  = en
 type         = PO
-source_lang = en
 minimum_perc = 0
 
 [o:widelands:p:widelands-addons:r:The-Long-Way-to-Tiperary--for-16-players--experimental--wad]
@@ -85,8 +91,8 @@ type        = PO
 [o:widelands:p:widelands-addons:r:WideGreen-wad]
 file_filter  = po/WideGreen.wad/<lang>.po
 source_file  = po/WideGreen.wad/WideGreen.wad.pot
+source_lang  = en
 type         = PO
-source_lang = en
 minimum_perc = 0
 
 [o:widelands:p:widelands-addons:r:australia-tasmania-newzealand-wad]
@@ -206,8 +212,8 @@ type        = PO
 [o:widelands:p:widelands-addons:r:larger-fonts-1-2devel-wad]
 file_filter  = po/larger_fonts_1_2devel.wad/<lang>.po
 source_file  = po/larger_fonts_1_2devel.wad/larger_fonts_1_2devel.wad.pot
+source_lang  = en
 type         = PO
-source_lang = en
 minimum_perc = 0
 
 [o:widelands:p:widelands-addons:r:legacy-terrains-wad]
@@ -291,8 +297,8 @@ type        = PO
 [o:widelands:p:widelands-addons:r:time-limitted-peaceful-wad]
 file_filter  = po/time-limitted-peaceful.wad/<lang>.po
 source_file  = po/time-limitted-peaceful.wad/time-limitted-peaceful.wad.pot
+source_lang  = en
 type         = PO
-source_lang = en
 minimum_perc = 0
 
 [o:widelands:p:widelands-addons:r:tropics-wad]
