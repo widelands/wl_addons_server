@@ -44,13 +44,6 @@ source_file = po/SP_Scenario_Along_the_River.wad/SP_Scenario_Along_the_River.wad
 source_lang = en
 type        = PO
 
-[o:widelands:p:widelands-addons:r:Teayo-Maps-Bundle-1-wad]
-file_filter  = po/Teayo_Maps_Bundle_1.wad/<lang>.po
-source_file  = po/Teayo_Maps_Bundle_1.wad/Teayo_Maps_Bundle_1.wad.pot
-source_lang  = en
-type         = PO
-minimum_perc = 0
-
 [o:widelands:p:widelands-addons:r:The-Long-Way-to-Tiperary--for-16-players--experimental--wad]
 file_filter = po/The_Long_Way_to_Tiperary__for_16_players__experimental_.wad/<lang>.po
 source_file = po/The_Long_Way_to_Tiperary__for_16_players__experimental_.wad/The_Long_Way_to_Tiperary__for_16_players__experimental_.wad.pot
@@ -62,6 +55,12 @@ file_filter = po/The_Long_Way_to_Tiperary__for_8_players_.wad/<lang>.po
 source_file = po/The_Long_Way_to_Tiperary__for_8_players_.wad/The_Long_Way_to_Tiperary__for_8_players_.wad.pot
 source_lang = en
 type        = PO
+
+[o:widelands:p:widelands-addons:r:The-Sea-Kingdom-wad]
+file_filter  = po/The_Sea_Kingdom.wad/<lang>.po
+source_file  = po/The_Sea_Kingdom.wad/The_Sea_Kingdom.wad.pot
+type         = PO
+minimum_perc = 0
 
 [o:widelands:p:widelands-addons:r:The-world-of-elements-wad]
 file_filter = po/The_world_of_elements.wad/<lang>.po
