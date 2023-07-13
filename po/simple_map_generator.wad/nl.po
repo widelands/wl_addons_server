@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-22 03:05+0200\n"
+"POT-Creation-Date: 2023-07-13 03:06+0200\n"
 "PO-Revision-Date: 2022-12-11 09:24+0000\n"
+"Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,25 +23,27 @@ msgstr ""
 
 #: addons/simple_map_generator.wad/addon:2
 msgid "Simple Map Generator"
-msgstr ""
+msgstr "Eenvoudige Kaart Generator"
 
 #: addons/simple_map_generator.wad/addon:3
 msgid "A proof-of-concept map generator that generates very, very simple maps."
 msgstr ""
+"Een voorbeeld van een kaartgenerator die zeer, zeer eenvoudige kaarten "
+"genereert."
 
 #: addons/simple_map_generator.wad/init.lua:4
 msgid "Initializing map generator…"
-msgstr ""
+msgstr "Kaartgenerator initialiseren..."
 
 #: addons/simple_map_generator.wad/init.lua:122
 msgid "Generating map… (%1$d / %2$d)"
-msgstr ""
+msgstr "Kaart genereren... (%1$d / %2$d)"
 
 #: addons/simple_map_generator.wad/init.lua:193
 msgid "Finalizing map…"
-msgstr ""
+msgstr "Kaart afmaken..."
 
 #: addons/simple_map_generator.wad/init.lua:201
 #, lua-format
 msgid "Random Player %u"
-msgstr ""
+msgstr "Willekeurige Speler %u"
