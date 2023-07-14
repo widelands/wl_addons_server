@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 03:06+0200\n"
+"POT-Creation-Date: 2023-07-14 03:06+0200\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
+"Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,12 +23,13 @@ msgstr ""
 
 #: addons/time-limitted-peaceful.wad/addon:4
 msgid "limits the peaceful mode to 45 minutes"
-msgstr ""
+msgstr "beperkt de vredige modus tot 45 minuten"
 
 #: addons/time-limitted-peaceful.wad/init.lua:20
 msgid "peaceful mode ends now"
-msgstr ""
+msgstr "vreedzame modus eindigt nu"
 
 #: addons/time-limitted-peaceful.wad/init.lua:21
 msgid "all players can attack each other now (team mates excluded of course)"
 msgstr ""
+"alle spelers kunnen elkaar nu aanvallen (teamgenoten uitgezonderd natuurlijk)"

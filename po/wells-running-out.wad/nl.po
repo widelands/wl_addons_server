@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-22 03:05+0200\n"
+"POT-Creation-Date: 2023-07-14 03:06+0200\n"
 "PO-Revision-Date: 2021-02-12 13:13+0000\n"
+"Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: addons/wells-running-out.wad/addon:2
 msgid "Water Resource Efficiency"
-msgstr ""
+msgstr "Efficiënt Gebruik Waterbronnen"
 
 #: addons/wells-running-out.wad/addon:3
 msgid ""
@@ -28,12 +32,16 @@ msgid ""
 "and frisian wells can be enhanced to deep wells when the worker has enough "
 "experience."
 msgstr ""
+"Maak de bron 'water' nuttiger door putten een grotere straal te geven en een "
+"kans van slechts 5% om water te vinden als ze uitgeput zijn. Daarnaast "
+"kunnen de barbaarse en Friese putten worden verbeterd tot diepe putten als "
+"de werker genoeg ervaring heeft."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:7
 msgctxt "barbarians_building"
 msgid "Deep Well"
-msgstr ""
+msgstr "Diepe Bron"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:25
@@ -43,60 +51,64 @@ msgstr ""
 #: addons/wells-running-out.wad/postload.lua:41
 #: addons/wells-running-out.wad/postload.lua:76
 msgid "working"
-msgstr ""
+msgstr "werkende"
 
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:36
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:36
 msgid "No Water"
-msgstr ""
+msgstr "Geen Water"
 
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:37
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:37
 msgid "Out of Water"
-msgstr ""
+msgstr "Zonder Water"
 
 #: addons/wells-running-out.wad/bar_deep_well/init.lua:38
 msgctxt "barbarians_building"
 msgid "The carrier working at this deep well can’t find any water in his well."
 msgstr ""
+"De waterdrager die aan deze diepe put werkt, kan geen water in zijn put "
+"vinden."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/wells-running-out.wad/bar_well_keeper/init.lua:7
 msgctxt "barbarians_worker"
 msgid "Well Keeper"
-msgstr ""
+msgstr "Bron-bewaarder"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:7
 msgctxt "frisians_building"
 msgid "Deep Well"
-msgstr ""
+msgstr "Diepe Bron"
 
 #: addons/wells-running-out.wad/fri_deep_well/init.lua:38
 msgctxt "frisians_building"
 msgid "The carrier working at this deep well can’t find any water in his well."
 msgstr ""
+"De waterdrager die aan deze diepe put werkt, kan geen water in zijn put "
+"vinden."
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/wells-running-out.wad/fri_well_keeper/init.lua:7
 msgctxt "frisians_worker"
 msgid "Well Keeper"
-msgstr ""
+msgstr "Bron-bewaarder"
 
 #. TRANSLATORS: Purpose helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:33
 #: addons/wells-running-out.wad/postload.lua:68
 msgctxt "building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Haalt water uit de diepte."
 
 #: addons/wells-running-out.wad/postload.lua:35
 #: addons/wells-running-out.wad/postload.lua:70
 #, lua-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d seconde"
+msgstr[1] "%d seconden"
 
 #. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:35
@@ -104,12 +116,13 @@ msgstr[1] ""
 msgctxt "frisians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
 msgstr ""
+"De diepe waterbron heeft gemiddeld %s nodig om één emmer water te produceren."
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
 #: addons/wells-running-out.wad/postload.lua:39
 msgctxt "frisians_worker"
 msgid "Operates the deep wells."
-msgstr ""
+msgstr "Bedient de diepe waterbronnen."
 
 #. TRANSLATORS: Performance helptext for a frisian production site: Deep Well
 #: addons/wells-running-out.wad/postload.lua:70
@@ -117,9 +130,10 @@ msgstr ""
 msgctxt "barbarians_building"
 msgid "The deep well needs %s on average to produce one bucket of water."
 msgstr ""
+"De diepe waterbron heeft gemiddeld %s nodig om één emmer water te produceren."
 
 #. TRANSLATORS: Purpose helptext for a frisian worker: Well Keeper
 #: addons/wells-running-out.wad/postload.lua:74
 msgctxt "barbarians_worker"
 msgid "Operates the deep wells."
-msgstr ""
+msgstr "Bedient de diepe waterbronnen."
