@@ -87,6 +87,12 @@ source_lang  = en
 type         = PO
 minimum_perc = 0
 
+[o:widelands:p:widelands-addons:r:Wikinger--Die-Fjorde-Seefahrer-Turnierkarte-wad]
+file_filter  = po/Wikinger__Die_Fjorde_Seefahrer_Turnierkarte.wad/<lang>.po
+source_file  = po/Wikinger__Die_Fjorde_Seefahrer_Turnierkarte.wad/Wikinger__Die_Fjorde_Seefahrer_Turnierkarte.wad.pot
+type         = PO
+minimum_perc = 0
+
 [o:widelands:p:widelands-addons:r:australia-tasmania-newzealand-wad]
 file_filter = po/australia_tasmania_newzealand.wad/<lang>.po
 source_file = po/australia_tasmania_newzealand.wad/australia_tasmania_newzealand.wad.pot
