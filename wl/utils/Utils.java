@@ -655,10 +655,10 @@ public class Utils {
 	    throws Exception {
 		Profile profile = new Profile();
 		Profile.Section section = new Profile.Section("");
-		for (String line : lines) {
-			line = line.trim();
-			if (line.isEmpty() || line.startsWith("#")) continue;
-			if (line.startsWith("[") && line.endsWith("]")) {
+		for (int lineNr = 0; lineNr < lines.size(); ++lineNr) {
+			String line = lines.get(lineNr).trim();
+			if (line.isEmpty() || line.startsWith("#")) continue;  // Comment
+			if (line.startsWith("[") && line.endsWith("]")) {      // Section
 				if (!section.contents.isEmpty()) profile.add(section);
 				section = new Profile.Section(line);
 				continue;
@@ -666,7 +666,7 @@ public class Utils {
 			String[] str = line.split("=");
 			for (int i = 0; i < str.length; i++) str[i] = str[i].trim();
 
-			if (str.length < 2) {
+			if (str.length < 2) {  // Empty value
 				if (str.length == 1) section.contents.put(str[0], new Value(str[0], ""));
 				continue;
 			}
@@ -674,14 +674,31 @@ public class Utils {
 			String arg = str[1];
 			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
 			boolean localize = false;
-			if (arg.startsWith("_")) {
+			if (arg.startsWith("_")) {  // Translatable
 				arg = arg.substring(1).trim();
 				localize = true;
 			}
-			if (arg.startsWith("\"")) {
+
+			if (arg.startsWith("\"\"")) {  // Double-quoted multi-line string
+				arg = arg.substring(2);
+				for (;;) {
+					if (arg.endsWith("\"\"")) {  // End of multi-line string
+						arg = arg.substring(0, arg.length() - 2);
+						break;
+					}
+					if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
+
+					++lineNr;  // Fetch next line
+					line = lines.get(lineNr).trim();
+					if (line.startsWith("\"")) line = line.substring(1);
+					arg += "<br>" + line;
+				}
+
+			} else if (arg.startsWith("\"")) {  // Quoted single-line string
 				arg = arg.substring(1);
 				if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
 			}
+
 			section.contents.put(
 			    str[0],
 			    new Value(str[0], arg, localize ? textdomain == null ? "" : textdomain : null));
