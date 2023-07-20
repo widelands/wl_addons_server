@@ -123,6 +123,12 @@ source_file = po/dummy-campaign.wad/dummy-campaign.wad.pot
 source_lang = en
 type        = PO
 
+[o:widelands:p:widelands-addons:r:editor-swap-terrains-wad]
+file_filter  = po/editor_swap_terrains.wad/<lang>.po
+source_file  = po/editor_swap_terrains.wad/editor_swap_terrains.wad.pot
+type         = PO
+minimum_perc = 0
+
 [o:widelands:p:widelands-addons:r:enhanced-debug-scripts-wad]
 file_filter = po/enhanced_debug_scripts.wad/<lang>.po
 source_file = po/enhanced_debug_scripts.wad/enhanced_debug_scripts.wad.pot
