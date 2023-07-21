@@ -161,7 +161,8 @@ public class UpdateList {
 						if (arg.equalsIgnoreCase("true")) d.syncSafe = "sync_safe";
 						break;
 					case "requires":
-						for (String req : arg.split(",")) d.requires.add(req);
+						for (String req : arg.split(",")) d.requires
+						.add(req);
 						break;
 					default:
 						break;
