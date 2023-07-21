@@ -208,8 +208,8 @@ public class HandleCommand {
 				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
 				                                         ServerUtils.findMinWlVersion(addon),
 				                                         profile.get("max_wl_version") != null ?
-				                                             profile.get("max_wl_version").value :
-				                                             null)) {
+                                                             profile.get("max_wl_version").value :
+                                                             null)) {
 					continue;
 				}
 			}
@@ -1001,7 +1001,7 @@ public class HandleCommand {
 					    sql.getString("email"),
 					    (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
 					    (isUpdate ? ("An add-on has been updated by " + username) :
-					                ("A new add-on has been submitted by " + username)) +
+                                    ("A new add-on has been submitted by " + username)) +
 					        ":\n\n"
 					        + "Name: " + newProfile.get("name").value + "\n"
 					        + "Description: " + newProfile.get("description").value + "\n"
@@ -1013,36 +1013,36 @@ public class HandleCommand {
 				Utils.sendEMailToSubscribedAdmins(
 				    Utils.kEMailVerbosityFYI, (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
 				    (isUpdate ? ("An add-on has been updated by " + username) :
-				                ("A new add-on has been submitted by " + username)) +
+                                ("A new add-on has been submitted by " + username)) +
 				        ":\n"
 				        + "\n- Name: " + cmd[1] +
 				        (isUpdate ? ("\n- Old version: " + oldVersionString +
 				                     "\n- New version: " + newProfile.get("version").value) :
-				                    ("\n- Version: " + newProfile.get("version").value)) +
+                                    ("\n- Version: " + newProfile.get("version").value)) +
 				        (username.equals(newProfile.get("author").value) ?
-				             ("\n- Author: " + newProfile.get("author").value) :
-				             ("\n- **Author: " + newProfile.get("author").value + "**")) +
+                             ("\n- Author: " + newProfile.get("author").value) :
+                             ("\n- **Author: " + newProfile.get("author").value + "**")) +
 				        "\n- Descname: " + newProfile.get("name").value +
 				        "\n- Description: " + newProfile.get("description").value +
 				        "\n- Category: " + newProfile.get("category").value +
 				        (newProfile.get("sync_safe") != null ?
-				             ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
-				             ("\n- Sync-safe: N/A")) +
+                             ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
+                             ("\n- Sync-safe: N/A")) +
 				        "\n- Min WL version: " +
 				        (newProfile.get("min_wl_version") != null ?
-				             newProfile.get("min_wl_version").value :
-				             "N/A") +
+                             newProfile.get("min_wl_version").value :
+                             "N/A") +
 				        "\n- Max WL version: " +
 				        (newProfile.get("max_wl_version") != null ?
-				             newProfile.get("max_wl_version").value :
-				             "N/A") +
+                             newProfile.get("max_wl_version").value :
+                             "N/A") +
 				        "\n- Requires: " +
 				        (newProfile.get("requires").value.isEmpty() ?
-				             "N/A" :
-				             newProfile.get("requires").value) +
+                             "N/A" :
+                             newProfile.get("requires").value) +
 				        (isUpdate ? ("\n- Old security: " + oldSecurity +
 				                     "\n- Old quality: " + oldQuality) :
-				                    "") +
+                                    "") +
 				        "\n\nPlease review this add-on soonish."
 				        + "\n\n-------------------------\n\n" + diff);
 

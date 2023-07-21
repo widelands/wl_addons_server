@@ -46,7 +46,8 @@ public class UpdateList {
 
 		public String descname, descr, author, category, new_version, minWLVersion, maxWLVersion,
 		    syncSafe;
-		public final List<String> requires, dirs, files, locales, checksums, screenies;
+		public final List<String>
+		requires, dirs, files, locales, checksums, screenies;
 		public final List<Long> sizes;
 		public long totalSize;
 
