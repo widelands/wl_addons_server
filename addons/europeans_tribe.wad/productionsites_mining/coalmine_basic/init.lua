@@ -57,10 +57,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 1
     },
 
-    aihints = {
-        prohibited_till = 3000,
-        forced_after = 3600
-    },
+    aihints = {},
 
     working_positions = {
         europeans_miner_basic = 1

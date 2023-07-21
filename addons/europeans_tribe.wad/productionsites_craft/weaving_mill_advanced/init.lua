@@ -53,7 +53,6 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_cloth",
-                "call=produce_tabard",
                 "call=produce_armor",
                 "call=produce_armor_idle",
                 "return=skipped"
@@ -63,7 +62,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
-                "return=skipped unless economy needs cloth",
+                "return=skipped unless economy needs cloth or workers need experience",
                 "return=skipped unless site has reed",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
@@ -71,41 +70,28 @@ wl.Descriptions():new_productionsite_type {
                 "produce=cloth"
             }
         },
-        produce_tabard = {
-            -- TRANSLATORS: Completed/Skipped/Did not start tailoring a tabard because ...
-           descname = pgettext("europeans_building", "tailoring a tabard"),
-            actions = {
-                "return=skipped unless economy needs tabard",
-                "return=skipped unless site has reed",
-                "consume=reed",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:30s",
-                "produce=tabard"
-            }
-        },
         produce_armor = {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
-            descname = pgettext("europeans_building", "forging a suit of armor"),
+            descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
-                "return=skipped unless economy needs armor",
+                "return=skipped unless economy needs armor or workers need experience",
                 "return=skipped unless site has wool",
-                "consume=wool",
+                "consume=wool reed",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
-                "produce=armor"
+                "produce=armor:2"
             }
         },
         produce_armor_idle = {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs tabard",
                 "return=skipped when economy needs armor",
                 "consume=reed",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
-                "produce=tabard",
-                "consume=wool",
+                "produce=cloth",
+                "consume=wool,reed",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
                 "produce=armor",

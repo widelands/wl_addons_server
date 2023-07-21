@@ -25,29 +25,25 @@ wl.Descriptions():new_militarysite_type {
     },
     
     size = "big",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_advanced_castle",
         enhancement_cost = {
             planks = 3,
             brick = 3,
-            grout = 3,
             marble_column = 3,
-            diamond = 3
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
             marble = 3,
-            diamond = 3
+            diamond = 1
         },
     },
 
-    aihints = {
-        expansion = true,
-        fighting = true,
-        mountain_conqueror = true,
-        prohibited_till = 9600
-    },
+    aihints = {},
 
     max_soldiers = 12,
     vision_range = 24,

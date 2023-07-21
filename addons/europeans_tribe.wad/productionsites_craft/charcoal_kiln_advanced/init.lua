@@ -35,7 +35,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "scrap_wood", amount = 8 }
+        { name = "scrap_wood", amount = 8 },
+        { name = "log", amount = 8 }
     },
 
     programs = {
@@ -44,7 +45,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=burn_wood",
+                "call=burn_log",
                 "call=burn_wood_idle",
+                "call=burn_log_idle",
                 "return=skipped"
             }
         },
@@ -52,9 +55,21 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
-                "return=skipped unless economy needs coal",
+                "return=skipped unless economy needs coal or workers need experience",
                 "return=skipped unless site has scrap_wood:8",
                 "consume=scrap_wood:8",
+                "animate=working duration:90s",
+                "produce=coal:5"
+            }
+        },
+        burn_log = {
+            -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
+            descname = pgettext("europeans_building", "producing coal"),
+            actions = {
+                "return=skipped unless economy needs coal or workers need experience",
+                "return=skipped when economy needs log or economy needs blackwood or economy needs planks",
+                "return=skipped unless site has log:8",
+                "consume=log:8",
                 "animate=working duration:90s",
                 "produce=coal:5"
             }
@@ -67,6 +82,18 @@ wl.Descriptions():new_productionsite_type {
                 "consume=scrap_wood:3",
                 "animate=working duration:90s",
                 "produce=coal",
+                "sleep=duration:60s"
+            }
+        },
+        burn_log_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs coal",
+                "return=skipped when economy needs log or economy needs blackwood or economy needs planks",
+                "consume=log:4",
+                "animate=working duration:90s",
+                "produce=coal:2",
                 "sleep=duration:60s"
             }
         }

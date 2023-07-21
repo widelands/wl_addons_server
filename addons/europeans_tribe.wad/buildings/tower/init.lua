@@ -16,35 +16,38 @@ wl.Descriptions():new_militarysite_type {
     },
     
     size = "medium",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_tower_high",
         enhancement_cost = {
             planks = 2,
-            cloth = 2,
-            granite = 2,
-            quartz = 2
+            brick = 2,
+            marble_column = 2,
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
-            quartz = 2
+            marble = 2,
+            quartz = 1
         },
     },
     buildcost = {
         blackwood = 3,
-        reed = 3,
-        granite = 2
+        cloth = 3,
+        grout = 3,
+        quartz = 1
     },
     return_on_dismantle = {
         scrap_wood = 3,
-        reed = 1,
-        granite = 1
+        granite = 2,
+        quartz = 1
     },
     
     aihints = {
         expansion = true,
-        mountain_conqueror = true,
-        prohibited_till = 1800
+        mountain_conqueror = true
     },
 
     max_soldiers = 2,

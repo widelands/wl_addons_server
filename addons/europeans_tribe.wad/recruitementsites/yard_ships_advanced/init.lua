@@ -37,12 +37,14 @@ wl.Descriptions():new_productionsite_type {
     },
    
     size = "medium",
+    destructible = true,
     map_check = {"seafaring"},
 
     aihints = {},
 
     working_positions = {
-        europeans_shipwright_advanced = 1
+        europeans_shipwright_advanced = 1,
+        europeans_shipwright_basic = 1
     },
 
     inputs = {

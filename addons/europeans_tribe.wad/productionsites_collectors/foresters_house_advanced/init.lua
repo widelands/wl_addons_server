@@ -35,8 +35,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "callworker=check_space",
                 "call=plant_trees",
                 "call=plant_trees_idle",
+                "callworker=check_land",
+                "call=planting_land",
                 "return=skipped"
             }
         },
@@ -64,7 +67,38 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "consume=water",
                 "callworker=plant",
-                "sleep=duration:40s"
+                "sleep=duration:60s"
+            }
+        },
+        planting_pond_water = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting trees in pond with water because ...
+            descname = pgettext("europeans_building", "planting trees in pond with water"),
+            actions = {
+                "callworker=check_pond_water",
+                "callworker=terraform_pond_water",
+                "return=skipped"
+            }
+        },
+        planting_pond_dry = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting trees in dry pond because ...
+            descname = pgettext("europeans_building", "planting trees in dry pond"),
+            actions = {
+                "return=skipped when economy needs water",
+                "return=skipped unless site has water",
+                "callworker=check_pond_dry",
+                "consume=water",
+                "callworker=terraform_pond_dry",
+                "return=skipped"
+            }
+        },
+        planting_land = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting trees on terraformed land because ...
+            descname = pgettext("europeans_building", "planting trees on terraformed land"),
+            actions = {
+                "return=skipped when economy needs water",
+                "return=skipped unless site has water:2",
+                "consume=water:2",
+                "callworker=plant_terraformed_land",
             }
         },
     },

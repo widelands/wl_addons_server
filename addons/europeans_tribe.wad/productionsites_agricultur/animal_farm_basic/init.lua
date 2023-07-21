@@ -21,7 +21,7 @@ wl.Descriptions():new_productionsite_type {
     
     size = "big",
     enhancement = {
-        name = "europeans_animal_farm_level_1",
+        name = "europeans_animal_farm_normal",
         enhancement_cost = {
             blackwood = 3,
             cloth = 3,
@@ -41,11 +41,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    aihints = {
-        basic_amount = 1,
-        prohibited_till = 1800,
-        forced_after = 2400
-    },
+    aihints = {},
 
     working_positions = {
         europeans_breeder_basic = 2
@@ -75,7 +71,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
                 "return=skipped when economy needs meat",
-                "return=skipped when economy needs flour and economy needs beer",
+                "return=skipped when economy needs flour or economy needs water",
                 "return=skipped unless site has water:4",
                 "return=skipped unless site has rye:4 or site has wheat:4 or site has barley:4",
                 "consume=water rye,wheat,barley",
@@ -112,7 +108,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:15s",
-                "produce=meat:2"
+                "produce=meat:2 leather"
            }
         },
         produce_meat_idle = {
@@ -124,7 +120,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs flour or economy needs beer",
                 "consume=water:2 wheat rye,barley",
                 "animate=working duration:60s",
-                "produce=meat",
+                "produce=meat leather",
                 "sleep=duration:120s"
             }
         }

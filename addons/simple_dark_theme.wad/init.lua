@@ -182,13 +182,13 @@ local disabled_font = {
 }
 
 local small_font = {
-    color = window_bg_color,
+    color = window_fg_color,
     face = default_face,
     size = s_size,
 }
 
 local xs_tip_font = {
-    color = window_bg_color,
+    color = window_fg_color,
     face = tip_face,
     size = xs_size,
 }

@@ -10,7 +10,7 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "New World",
     -- TRANSLATORS: This is the tooltip for the "New World" starting condition
-    tooltip = _"Start the game with a advanced castle and a port. The AI might struggle with this condition on smaller maps.",
+    tooltip = _"Start the game with a advanced castle and a port. The AI might struggle with this condition on smaller maps. Disabled terraforming (diking of water bodies) because of lack of compatibility with seafaring.",
     map_tags = {"seafaring"},
 
     func = function(player, shared_in_start)
@@ -22,22 +22,27 @@ local init = {
     else
        player:allow_workers("all")
     end
+    
+    player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
+    
     local h = player:place_building("europeans_advanced_castle", sf, false, true)
     h:set_soldiers{[{3,3,3,3}] = 12}
       
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
+        player:forbid_buildings{"europeans_headquarters", "europeans_warehouse"}
         for i, portfield in pairs(map.port_spaces) do
             if (math.abs(portfield.x - sf.x) < 12) and (math.abs(portfield.y - sf.y) < 12) then
                 prefilled_buildings(player, { "europeans_port", portfield.x, portfield.y,
                     wares = {},
                     workers = {
+                        europeans_geologist = 1,
                         europeans_carrier = 16,
                         europeans_builder = 8,
                         europeans_farmer_basic = 8,
                         europeans_breeder_basic = 4,
                         europeans_lumberjack_basic = 4,
-                        europeans_forester_basic = 3,
-                        europeans_miner_basic = 3,
+                        europeans_forester_basic = 4,
+                        europeans_miner_basic = 4,
                         europeans_trainer_basic = 2,
                         europeans_trader = 2,
                         europeans_stonecutter_basic = 2,
@@ -91,8 +96,8 @@ local init = {
                 bread_paddle = 3,
                 hook_pole = 3,
                 kitchen_tools = 3,
-                armor = 7,
-                tabard = 7,
+                armor_wooden = 7,
+                helmet_wooden = 7,
                 spear_wooden = 7
             },
             workers = {
@@ -157,8 +162,8 @@ local init = {
             port:set_wares("bread_paddle", math.ceil(3 / #ports))
             port:set_wares("hook_pole", math.ceil(3 / #ports))
             port:set_wares("kitchen_tools", math.ceil(3 / #ports))
-            port:set_wares("armor", math.ceil(7 / #ports))
-            port:set_wares("tabard", math.ceil(7 / #ports))
+            port:set_wares("armor_wooden", math.ceil(7 / #ports))
+            port:set_wares("helmet_wooden", math.ceil(7 / #ports))
             port:set_wares("spear_wooden", math.ceil(7 / #ports))
         end
     end

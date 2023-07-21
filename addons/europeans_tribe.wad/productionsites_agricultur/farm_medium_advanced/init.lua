@@ -23,7 +23,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_farmer_advanced = 1
+        europeans_farmer_advanced = 1,
+        europeans_farmer_basic = 1
     },
     
     inputs = {
@@ -35,6 +36,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "callworker=check_space",
                 "call=plant_berrybush",
                 "call=plant_grape",
                 "call=plant_reed",

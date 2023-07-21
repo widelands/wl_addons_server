@@ -193,7 +193,7 @@ public class HandleCommand {
 
 		final boolean versionCheck =
 		    widelandsVersion != null && commandVersion >= 2 &&
-		    (cmd[1].equalsIgnoreCase("false") || cmd[1].equalsIgnoreCase("showcompatible"));
+		    !(cmd[1].equalsIgnoreCase("true") || cmd[1].equalsIgnoreCase("showall"));
 		final boolean appendInfo =
 		    commandVersion >= 2 &&
 		    (cmd[1].equalsIgnoreCase("showall") || cmd[1].equalsIgnoreCase("showcompatible"));
@@ -206,12 +206,10 @@ public class HandleCommand {
 				Utils.Profile profile =
 				    Utils.readProfile(new File("addons/" + addon + "/addon"), addon);
 				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
-				                                         profile.get("min_wl_version") != null ?
-                                                             profile.get("min_wl_version").value :
-                                                             null,
+				                                         ServerUtils.findMinWlVersion(addon),
 				                                         profile.get("max_wl_version") != null ?
-                                                             profile.get("max_wl_version").value :
-                                                             null)) {
+				                                             profile.get("max_wl_version").value :
+				                                             null)) {
 					continue;
 				}
 			}
@@ -269,8 +267,7 @@ public class HandleCommand {
 			out.println(sqlMain.getLong("i18n_version"));
 			out.println(profile.get("category").value);
 			out.println(profile.get("requires").value);
-			out.println(
-			    (profile.get("min_wl_version") != null ? profile.get("min_wl_version").value : ""));
+			out.println(ServerUtils.findMinWlVersion(cmd[1]));
 			out.println(
 			    (profile.get("max_wl_version") != null ? profile.get("max_wl_version").value : ""));
 			out.println((profile.get("sync_safe") != null ? profile.get("sync_safe").value : ""));
@@ -564,10 +561,11 @@ public class HandleCommand {
 					throw new ServerUtils.WLProtocolException("Unable to create POT for " + cmd[1]);
 			}
 			String resource = ServerUtils.toTransifexResource(cmd[1]);
-			Utils.bash("tx", "config", "mapping", "--execute", "-r", resource, "--source-lang",
-			           "en", "--type", "PO", "--source-file", potFile.getAbsolutePath(),
-			           "--expression", "po/" + cmd[1] + "/<lang>.po");
+			resource = resource.substring(resource.indexOf('.') + 1);
 
+			Utils.bash("tx", "add", "--organization", "widelands", "--project", "widelands-addons",
+			           "--resource", resource, "--file-filter", ("po/" + cmd[1] + "/<lang>.po"),
+			           "--type", "PO", potFile.getPath());
 			if (commandVersion < 2) {
 				TransifexIntegration.TX.push();
 			} else {
@@ -597,7 +595,6 @@ public class HandleCommand {
 				// We need to ensure that the resource exists before editing its properties
 				TransifexIntegration.TX.push();
 
-				resource = resource.substring(resource.indexOf('.') + 1);
 				Utils.bash(
 				    "curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),
 				    "--request", "PATCH", "-H", "Content-Type: application/vnd.api+json",
@@ -704,6 +701,8 @@ public class HandleCommand {
 			msg += ServerUtils.readLine(in);
 		}
 		ServerUtils.checkEndOfStream(in);
+
+		ServerUtils.clearMinVersionCache(cmd[1]);
 
 		final String reason = msg;  // Lambdas need "final or effectively final" local variables…
 		ServerUtils.semaphoreRW(cmd[1], () -> {
@@ -912,6 +911,8 @@ public class HandleCommand {
 				throw new ServerUtils.WLProtocolException(
 				    "You can not overwrite another person's existing add-on");
 
+			ServerUtils.clearMinVersionCache(cmd[1]);
+
 			final long timestamp = System.currentTimeMillis() / 1000;
 			File tempDir = Files.createTempDirectory(null).toFile();
 
@@ -964,8 +965,7 @@ public class HandleCommand {
 					oldVersionString =
 					    doHandleCmdSubmit_CheckUpdateIsValid(addOnMain, newAddOnMain);
 
-					diff =
-					    Utils.bashOutput("diff", "-r", "-u", addOnDir.getPath(), tempDir.getPath());
+					diff = ServerUtils.diff(addOnDir.getPath(), tempDir.getPath());
 
 					sql = Utils.sql(Utils.Databases.kAddOns,
 					                "select id,security,quality from addons where name=?", cmd[1]);
@@ -981,6 +981,9 @@ public class HandleCommand {
 
 					ServerUtils.doDelete(addOnDir);
 				} else {
+					File emptyDir = Files.createTempDirectory(null).toFile();
+					diff = ServerUtils.diff(emptyDir.getPath(), tempDir.getPath());
+
 					Utils.sql(
 					    Utils.Databases.kAddOns,
 					    "insert into addons (name,timestamp,edit_timestamp,i18n_version,security,quality,downloads) value(?,?,?,0,?,0,0)",
@@ -998,7 +1001,7 @@ public class HandleCommand {
 					    sql.getString("email"),
 					    (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
 					    (isUpdate ? ("An add-on has been updated by " + username) :
-                                    ("A new add-on has been submitted by " + username)) +
+					                ("A new add-on has been submitted by " + username)) +
 					        ":\n\n"
 					        + "Name: " + newProfile.get("name").value + "\n"
 					        + "Description: " + newProfile.get("description").value + "\n"
@@ -1010,38 +1013,38 @@ public class HandleCommand {
 				Utils.sendEMailToSubscribedAdmins(
 				    Utils.kEMailVerbosityFYI, (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
 				    (isUpdate ? ("An add-on has been updated by " + username) :
-                                ("A new add-on has been submitted by " + username)) +
+				                ("A new add-on has been submitted by " + username)) +
 				        ":\n"
 				        + "\n- Name: " + cmd[1] +
 				        (isUpdate ? ("\n- Old version: " + oldVersionString +
 				                     "\n- New version: " + newProfile.get("version").value) :
-                                    ("\n- Version: " + newProfile.get("version").value)) +
+				                    ("\n- Version: " + newProfile.get("version").value)) +
 				        (username.equals(newProfile.get("author").value) ?
-                             ("\n- Author: " + newProfile.get("author").value) :
-                             ("\n- **Author: " + newProfile.get("author").value + "**")) +
+				             ("\n- Author: " + newProfile.get("author").value) :
+				             ("\n- **Author: " + newProfile.get("author").value + "**")) +
 				        "\n- Descname: " + newProfile.get("name").value +
 				        "\n- Description: " + newProfile.get("description").value +
 				        "\n- Category: " + newProfile.get("category").value +
 				        (newProfile.get("sync_safe") != null ?
-                             ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
-                             ("\n- Sync-safe: N/A")) +
+				             ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
+				             ("\n- Sync-safe: N/A")) +
 				        "\n- Min WL version: " +
 				        (newProfile.get("min_wl_version") != null ?
-                             newProfile.get("min_wl_version").value :
-                             "N/A") +
+				             newProfile.get("min_wl_version").value :
+				             "N/A") +
 				        "\n- Max WL version: " +
 				        (newProfile.get("max_wl_version") != null ?
-                             newProfile.get("max_wl_version").value :
-                             "N/A") +
+				             newProfile.get("max_wl_version").value :
+				             "N/A") +
 				        "\n- Requires: " +
 				        (newProfile.get("requires").value.isEmpty() ?
-                             "N/A" :
-                             newProfile.get("requires").value) +
+				             "N/A" :
+				             newProfile.get("requires").value) +
 				        (isUpdate ? ("\n- Old security: " + oldSecurity +
 				                     "\n- Old quality: " + oldQuality) :
-                                    "") +
-				        "\n\nPlease review this add-on soonish." +
-				        (isUpdate ? ("\n\n-------------------------\n\n" + diff) : ""));
+				                    "") +
+				        "\n\nPlease review this add-on soonish."
+				        + "\n\n-------------------------\n\n" + diff);
 
 				ServerUtils.doMove(tempDir, addOnDir);
 				out.println("ENDOFSTREAM");

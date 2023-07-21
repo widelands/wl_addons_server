@@ -27,12 +27,11 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
 
-    aihints = {
-    },
+    aihints = {},
 
     working_positions = {
         europeans_stonemason_advanced = 1,
-        europeans_stonemason_basic = 2
+        europeans_stonemason_basic = 1
     },
 
     inputs = {

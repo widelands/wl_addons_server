@@ -41,13 +41,7 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    aihints = {
-        prohibited_till = 4200,
-        forced_after = 5400,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4
-    },
+    aihints = {},
 
     working_positions = {
         europeans_smelter_basic = 1
@@ -63,15 +57,32 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=smelt_gold",
                 "call=smelt_iron",
                 "call=smelt_iron_idle",
                 "return=skipped"
+            }
+        },
+        smelt_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
+            descname = pgettext("europeans_building", "smelting gold"),
+            actions = {
+                "return=skipped when economy needs iron and not economy needs gold",
+                "return=skipped unless economy needs gold or workers need experience",
+                "return=skipped unless site has coal:2",
+                "return=skipped unless site has ore:2",
+                "consume=ore:2 coal:2",
+                "playsound=sound/metal/fizzle priority:15% allow_multiple",
+                "animate=working duration:60s",
+                "playsound=sound/metal/goldping priority:60%",
+                "produce=gold"
             }
         },
         smelt_iron = {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
             descname = pgettext("europeans_building", "smelting iron"),
             actions = {
+                "return=skipped when economy needs gold and not economy needs iron",
                 "return=skipped unless economy needs iron or workers need experience",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has ore:2",
@@ -87,6 +98,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs iron",
+                "return=skipped when economy needs gold",
                 "return=skipped when economy needs coal",
                 "consume=ore coal",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",

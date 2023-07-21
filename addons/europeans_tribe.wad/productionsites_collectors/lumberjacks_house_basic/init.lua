@@ -49,8 +49,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        basic_amount = 1,
-        forced_after = 300
+        basic_amount = 4
     },
 
     working_positions = {

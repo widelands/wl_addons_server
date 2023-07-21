@@ -41,11 +41,13 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_charcoal_burner_normal = 1
+        europeans_charcoal_burner_normal = 1,
+        europeans_charcoal_burner_basic = 1
     },
 
     inputs = {
         { name = "scrap_wood", amount = 6 },
+        { name = "log", amount = 6 }
     },
 
     programs = {
@@ -54,7 +56,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=burn_wood",
+                "call=burn_log",
                 "call=burn_wood_idle",
+                "call=burn_log_idle",
                 "return=skipped"
             }
         },
@@ -69,12 +73,36 @@ wl.Descriptions():new_productionsite_type {
                 "produce=coal:3"
             }
         },
+        burn_log = {
+            -- TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
+            descname = pgettext("europeans_building", "producing coal"),
+            actions = {
+                "return=skipped unless economy needs coal or workers need experience",
+                "return=skipped when economy needs log or economy needs blackwood or economy needs planks",
+                "return=skipped unless site has log:6",
+                "consume=log:6",
+                "animate=working duration:90s",
+                "produce=coal:3"
+            }
+        },
         burn_wood_idle = {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs coal",
                 "consume=scrap_wood:3",
+                "animate=working duration:90s",
+                "produce=coal",
+                "sleep=duration:60s"
+            }
+        },
+        burn_log_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs coal",
+                "return=skipped when economy needs log or economy needs blackwood or economy needs planks",
+                "consume=log:3",
                 "animate=working duration:90s",
                 "produce=coal",
                 "sleep=duration:60s"

@@ -10,7 +10,7 @@ init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Advanced Village",
     -- TRANSLATORS: This is the tooltip for the "Fortified Village" starting condition
-    tooltip = _"Start the game with a fortified village with advanced castle in its center. Useful starting condition for the AI.",
+    tooltip = _"Start the game with a fortified village with advanced castle in its center. Disabled seafaring because of lack of compatibility with terraforming (diking of water bodies).",
     func =  function(player, shared_in_start)
 
     local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -20,46 +20,39 @@ init = {
       player:allow_workers("all")
     end
 
-    player:forbid_buildings{"europeans_headquarters"}
+    player:forbid_buildings{"europeans_headquarters", "europeans_port", "europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced"}
 
     local h = player:place_building("europeans_advanced_castle", sf, false, true)
     h:set_soldiers{[{2,2,2,2}] = 18}
       
-    place_building_in_region(player, "europeans_warehouse_advanced", sf:region(3), {
+    place_building_in_region(player, "europeans_warehouse", sf:region(3), {
         wares = {
-            log = 127,
-            reed = 63,
-            granite = 63,
-            coal = 63,
-            water = 31,
-            ore = 31,
-            cloth = 31,
-            blackwood = 31,
-            planks = 15,
-            marble = 15,
-            marble_column = 15,
-            iron = 7,
-            gold = 7,
-            quartz = 15,
-            diamond = 15,
-            buckets = 15,
-            basket = 15,
-            pick = 12,
-            saw = 12,
-            hammer = 12,
-            scythe = 12,
-            shovel = 9,
-            felling_ax = 9,
-            fire_tongs = 7,
-            needles = 3,
-            bread_paddle = 3,
-            hook_pole = 3,
-            kitchen_tools = 3,
-            armor = 7,
-            tabard = 7,
-            spear_wooden = 7
+            log = 128,
+            reed = 128,
+            coal = 64,
+            granite = 48,
+            blackwood = 32,
+            cloth = 32,
+            grout = 32,
+            water = 32,
+            ore = 16,
+            planks = 16,
+            brick = 16,
+            marble = 16,
+            marble_column = 8,
+            iron = 4,
+            gold = 4,
+            quartz = 16,
+            diamond = 16,
+            buckets = 16,
+            basket = 16,
+            armor_wooden = 8,
+            boots_wooden = 8,
+            helmet_wooden = 8,
+            spear_wooden = 8
         },
         workers = {
+            europeans_geologist = 1,
             europeans_carrier = 32,
             europeans_builder = 16,
             europeans_farmer_basic = 16,
@@ -68,7 +61,7 @@ init = {
             europeans_miner_basic = 6,
             europeans_forester_basic = 6,
             europeans_stonecutter_basic = 6,
-            europeans_trainer_basic = 4,
+            europeans_trainer_basic = 6,
             europeans_trader = 4,
             europeans_carpenter_basic = 2,
             europeans_charcoal_burner_basic = 2,
@@ -82,7 +75,7 @@ init = {
             europeans_claydigger_basic = 1
       },
         soldiers = {
-            [{0,0,0,0}] = 16,
+            [{3,3,3,3}] = 16,
       }
     })
     sleep(5000)
@@ -98,11 +91,11 @@ init = {
     place_building_in_region(player, "europeans_well_level_4", sf:region(12), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_farm_level_3", sf:region(16), {
+    place_building_in_region(player, "europeans_farm_advanced", sf:region(16), {
         inputs = {water = 6},
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_farm_level_3", sf:region(16), {
+    place_building_in_region(player, "europeans_farm_advanced", sf:region(16), {
         inputs = {water = 6},
     })
     sleep(5000)

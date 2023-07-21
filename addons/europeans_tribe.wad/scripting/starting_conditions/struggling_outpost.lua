@@ -10,7 +10,7 @@ local init = {
     -- TRANSLATORS: This is the name of a starting condition
     descname = _ "Struggling Outpost",
     -- TRANSLATORS: This is the tooltip for the "Hardcore" starting condition
-    tooltip = _"Start the game with just your headquarters and very few wares for bootstrapping an economy. Warning: the AI can’t successfully start from this.",
+    tooltip = _"Start the game with just your headquarters and very few wares for bootstrapping an economy. Warning: the AI can’t successfully start from this. Disabled seafaring because of lack of compatibility with terraforming (diking of water bodies).",
     func =  function(player, shared_in_start)
 
     local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -20,61 +20,54 @@ local init = {
         player:allow_workers("all")
     end
     
-    -- forbid all advanced buildings, execpt for quarry and stonemasons house
-    player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_well_level_4", "europeans_well_level_5"}
-    player:forbid_buildings{"europeans_farm_level_3", "europeans_farm_level_4", "europeans_farm_level_5", "europeans_animal_farm_level_3", "europeans_animal_farm_level_4", "europeans_animal_farm_level_5"}
-    player:forbid_buildings{"europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", "europeans_inn_level_2", "europeans_inn_level_1"}
-    player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_sawmill_advanced", "europeans_smelting_works_advanced", "europeans_weaving_mill_advanced" }
-    player:forbid_buildings{"europeans_toolsmithy_advanced", "europeans_armorsmithy_advanced", "europeans_trainingscamp_level_4", "europeans_battlearena_level_4", "europeans_battlearena_level_3"}    
-    player:forbid_buildings{"europeans_scouts_house_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced", "europeans_recruitement_center_advanced"}    
+    player:forbid_buildings{"europeans_port", "europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced", }
+    
+    -- forbid all advanced buildings
+    player:forbid_buildings{"europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_well_level_4", "europeans_well_level_5", }
+    player:forbid_buildings{"europeans_farm_advanced", "europeans_animal_farm_advanced", }
+    player:forbid_buildings{"europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", "europeans_tavern_advanced", }
+    player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_sawmill_advanced", "europeans_smelting_works_advanced", "europeans_weaving_mill_advanced", }
+    player:forbid_buildings{"europeans_toolsmithy_advanced", "europeans_armorsmithy_advanced", "europeans_trainingscamp_advanced", "europeans_battlearena_level_3", }
+    player:forbid_buildings{"europeans_scouts_house_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced", "europeans_recruitement_center_advanced", }
     
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {
-            log = 63,
-            reed = 63,
-            water = 31,
-            granite = 31,
-            coal = 31,
-            ore = 15,
-            blackwood = 15,
-            cloth = 15,
-            planks = 15,
-            marble = 15,
-            marble_column = 7,
-            grout = 7,
-            brick = 7,
-            quartz = 7,
-            diamond = 7,
-            iron = 3,
-            gold = 3,
-            buckets = 15,
-            basket = 15,
-            pick = 7,
-            saw = 7,
-            hammer = 7,
-            scythe = 5,
-            shovel = 5,
-            felling_ax = 5,
-            fire_tongs = 5,
-            needles = 3,
-            bread_paddle = 3,
-            hook_pole = 3,
-            kitchen_tools = 3,
-            armor = 5,
-            tabard = 5,
-            spear_wooden = 5
+            log = 64,
+            reed = 64,
+            coal = 32,
+            granite = 24,
+            blackwood = 16,
+            cloth = 16,
+            grout = 16,
+            water = 16,
+            ore = 8,
+            planks = 8,
+            brick = 8,
+            marble = 8,
+            marble_column = 4,
+            iron = 4,
+            gold = 4,
+            quartz = 8,
+            diamond = 8,
+            buckets = 8,
+            basket = 8,
+            armor_wooden = 4,
+            boots_wooden = 4,
+            helmet_wooden = 4,
+            spear_wooden = 4
         },
         workers = {
+            europeans_geologist = 1,
             europeans_carrier = 32,
-            europeans_builder = 12,
-            europeans_farmer_basic = 8,
-            europeans_breeder_basic = 4,
-            europeans_lumberjack_basic = 4,
-            europeans_miner_basic = 4,
-            europeans_forester_basic = 4,
-            europeans_trader = 3,
-            europeans_trainer_basic = 2,
-            europeans_stonecutter_basic = 2,
+            europeans_builder = 16,
+            europeans_farmer_basic = 16,
+            europeans_lumberjack_basic = 8,
+            europeans_breeder_basic = 6,
+            europeans_miner_basic = 6,
+            europeans_forester_basic = 6,
+            europeans_stonecutter_basic = 6,
+            europeans_trainer_basic = 6,
+            europeans_trader = 4,
             europeans_carpenter_basic = 2,
             europeans_charcoal_burner_basic = 2,
             europeans_smith_basic = 2,

@@ -44,12 +44,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        basic_amount = 1,
-        prohibited_till = 2400,
-        forced_after = 3000,
-        very_weak_ai_limit = 2,
-        weak_ai_limit = 4,
-        normal_ai_limit = 8
+        supports_seafaring = true,
+        basic_amount = 2,
     },
 
     working_positions = {
@@ -65,15 +61,30 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=produce_armor",
                 "call=produce_cloth",
                 "call=produce_cloth_idle",
                 "return=skipped"
+            }
+        },
+        produce_armor = {
+            -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
+            descname = pgettext("europeans_building", "tailoring a suit of armor"),
+            actions = {
+                "return=skipped when economy needs cloth and not economy needs armor",
+                "return=skipped when economy needs reed and not economy needs armor",
+                "return=skipped unless site has reed:2",
+                "consume=reed:2",
+                "playsound=sound/mill/weaving priority:90%",
+                "animate=working duration:60s",
+                "produce=armor"
             }
         },
         produce_cloth = {
             -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
+                "return=skipped when economy needs armor and not economy needs cloth",
                 "return=skipped when economy needs reed and not economy needs cloth",
                 "return=skipped unless site has reed:2",
                 "consume=reed:2",

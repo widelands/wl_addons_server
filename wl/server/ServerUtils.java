@@ -36,6 +36,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.Semaphore;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 import wl.utils.Utils;
 
 /**
@@ -351,8 +353,8 @@ public class ServerUtils {
 
 	/**
 	 * Recursively move a directory and its content.
-	 * @param src File or directory to move from
-	 * @param target File or directory to move to
+	 * @param src File or directory to move from.
+	 * @param target File or directory to move to.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	synchronized public static void doMove(File src, File target) throws Exception {
@@ -365,6 +367,21 @@ public class ServerUtils {
 		} else {
 			Files.move(src.toPath(), target.toPath());
 		}
+	}
+
+	/**
+	 * Generate a human-readable diff between two files or directories.
+	 * @param a First directory to compare.
+	 * @param b Second directory to compare.
+	 * @return The diff text.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	public static String diff(String a, String b) throws Exception {
+		String tempfile = Files.createTempFile(null, null).toFile().getPath();
+		String rawDiff = Utils.bashOutput(
+		    "bash", "-c", "diff -N -r -u '" + a + "' '" + b + "' | tee '" + tempfile + "'");
+		String diffstats = Utils.bashOutput("bash", "-c", "diffstat -T < '" + tempfile + "'");
+		return diffstats + "\n\n" + rawDiff;
 	}
 
 	/**
@@ -537,6 +554,77 @@ public class ServerUtils {
 		}
 	}
 
+	private static final Map<String, String> _addon_min_version_cache = new HashMap<>();
+
+	/**
+	 * Compute the actual minimum Widelands version required for an add-on.
+	 * @param addon Internal name of the add-on to check.
+	 * @return The add-on's minimum version (may be empty but never null).
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	public static String findMinWlVersion(String addon) throws Exception {
+		String cached = _addon_min_version_cache.get(addon);
+		if (cached != null) return cached;
+
+		File addonsFile = new File("addons/" + addon + "/addon");
+		if (!addonsFile.isFile()) {
+			_addon_min_version_cache.put(addon, "");
+			return "";
+		}
+
+		Utils.Profile profile = Utils.readProfile(addonsFile, addon);
+		String nominal_min_wl_version =
+		    profile.get("min_wl_version") == null ? "" : profile.get("min_wl_version").value;
+
+		if (!profile.get("category").value.equals("maps")) {
+			_addon_min_version_cache.put(addon, nominal_min_wl_version);
+			return nominal_min_wl_version;
+		}
+
+		int[] smallest_map_version = null;
+		for (File mapFile : Utils.findMaps(new File("addons/" + addon))) {
+			String versionNeeded = null;
+			if (mapFile.isDirectory()) {
+				Utils.Value value = Utils.readProfile(new File(mapFile, "version"), addon)
+				                        .get("minimum_required_widelands_version");
+				if (value != null) versionNeeded = value.value;
+			} else {
+				ZipFile zip = new ZipFile(mapFile);
+				ZipEntry entry = zip.getEntry("/version");
+				if (entry != null) {
+					Utils.Value value = Utils.readProfile(zip.getInputStream(entry), addon)
+					                        .get("minimum_required_widelands_version");
+					if (value != null) versionNeeded = value.value;
+				}
+			}
+			int[] map_version = string_to_version(versionNeeded);
+			if (smallest_map_version == null || less(map_version, smallest_map_version))
+				smallest_map_version = map_version;
+		}
+
+		int[] min_version = string_to_version(nominal_min_wl_version);
+		if (less(min_version, smallest_map_version)) min_version = smallest_map_version;
+
+		String actual_min_version;
+		if (min_version.length == 0) {
+			actual_min_version = "";
+		} else {
+			actual_min_version = Integer.toString(min_version[0]);
+			for (int i = 1; i < min_version.length; ++i) actual_min_version += "." + min_version[i];
+		}
+
+		_addon_min_version_cache.put(addon, actual_min_version);
+		return actual_min_version;
+	}
+
+	/**
+	 * Clear the cached actual minimum version for an add-on.
+	 * @param addon Internal name of the add-on.
+	 */
+	public static void clearMinVersionCache(String addon) {
+		_addon_min_version_cache.remove(addon);
+	}
+
 	// Two helper functions for matchesWidelandsVersion()
 	/**
 	 * Convert a version string to an array of version numbers.
@@ -544,11 +632,18 @@ public class ServerUtils {
 	 * @return The version as an array.
 	 */
 	public static int[] string_to_version(String str) {
+		if (str == null || str.isEmpty()) return new int[0];
+
+		if (str.startsWith("build")) {
+			return new int[] {0, Integer.valueOf(str.replaceAll("\\D", ""))};
+		}
+
 		String[] parts = str.split("\\.");
 		int[] result = new int[parts.length];
 		for (int i = 0; i < result.length; i++) result[i] = Integer.valueOf(parts[i]);
 		return result;
 	}
+
 	private static boolean less(int[] a, int[] b) {
 		int l = Math.min(a.length, b.length);
 		for (int i = 0; i < l; i++)
@@ -571,24 +666,18 @@ public class ServerUtils {
 		if (min_wl_version == null && max_wl_version == null) {
 			return true;
 		}
+
 		final int tilde = wl_version.indexOf('~');
-		if (tilde < 0) {
-			int[] wl = string_to_version(wl_version);
-			if (min_wl_version != null && less(wl, string_to_version(min_wl_version))) {
-				return false;
-			}
-			if (max_wl_version != null && less(string_to_version(max_wl_version), wl)) {
-				return false;
-			}
-		} else {
-			int[] next_wl = string_to_version(wl_version.substring(0, tilde));
-			if (min_wl_version != null && !less(string_to_version(min_wl_version), next_wl)) {
-				return false;
-			}
-			if (max_wl_version != null && less(string_to_version(max_wl_version), next_wl)) {
-				return false;
-			}
+		if (tilde >= 0) wl_version = wl_version.substring(0, tilde);
+
+		int[] wl = string_to_version(wl_version);
+		if (min_wl_version != null && less(wl, string_to_version(min_wl_version))) {
+			return false;
 		}
+		if (max_wl_version != null && less(string_to_version(max_wl_version), wl)) {
+			return false;
+		}
+
 		return true;
 	}
 }

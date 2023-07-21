@@ -22,6 +22,8 @@ package wl.server;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
+import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import wl.utils.Utils;
@@ -78,6 +80,47 @@ public class SyncThread implements Runnable {
 				        Calendar.getInstance().get(Calendar.DAY_OF_WEEK) + "_" + phase + ".sql"});
 
 				if (phase == 0) {
+					ArrayList<String> unverified = new ArrayList<>();
+					ArrayList<String> unassessed = new ArrayList<>();
+					ArrayList<String> notx = new ArrayList<>();
+					ResultSet sql =
+					    Utils.sql(Utils.Databases.kAddOns,
+					              "select name from addons where security=0 order by name");
+					while (sql.next()) unverified.add(sql.getString("name"));
+					sql = Utils.sql(
+					    Utils.Databases.kAddOns,
+					    "select name from addons where security>0 and quality=0 order by name");
+					while (sql.next()) unassessed.add(sql.getString("name"));
+					sql = Utils.sql(
+					    Utils.Databases.kAddOns,
+					    "select name from addons where security>0 and quality>0 order by name");
+					while (sql.next()) {
+						String name = sql.getString("name");
+						if (Utils.bashResult(
+						        "tx", "status", "-r", ServerUtils.toTransifexResource(name)) != 0)
+							notx.add(name);
+					}
+					if (!unverified.isEmpty() || !unassessed.isEmpty() || !notx.isEmpty()) {
+						String message = String.format(
+						    "There are currently %d unverified add-ons, %d add-on awaiting quality review, and %d add-ons without Transifex integration.",
+						    unverified.size(), unassessed.size(), notx.size());
+						if (!unverified.isEmpty()) {
+							message += "\n\nUnverified:";
+							for (String str : unverified) message += "\n- " + str;
+						}
+						if (!unassessed.isEmpty()) {
+							message += "\n\nUnassessed:";
+							for (String str : unassessed) message += "\n- " + str;
+						}
+						if (!notx.isEmpty()) {
+							message += "\n\nNo Transifex integration:";
+							for (String str : notx) message += "\n- " + str;
+						}
+
+						Utils.sendEMailToSubscribedAdmins(
+						    Utils.kEMailVerbosityFYI, "Moderation Report", message);
+					}
+
 					if (Boolean.parseBoolean(Utils.config("deploy"))) {
 						TransifexIntegration.TX.checkIssues();
 						TransifexIntegration.TX.fullSync();

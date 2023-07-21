@@ -20,6 +20,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "big",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_recruitement_center_advanced",
         enhancement_cost = {
@@ -27,20 +29,21 @@ wl.Descriptions():new_productionsite_type {
             brick = 3,
             marble = 3,
             marble_column = 1,
-            gold = 1
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
             marble = 4,
-            scrap_metal_mixed = 1
+            diamond = 1
         }
     },
     
     aihints = {},
     
     working_positions = {
-        europeans_trainer_normal = 1
+        europeans_trainer_normal = 1,
+        europeans_trainer_basic = 1
     },
     
     inputs = {
@@ -57,9 +60,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "scythe", amount = 1 },
         { name = "bread_paddle", amount = 1 },
         { name = "hook_pole", amount = 1 },
-        { name = "kitchen_tools", amount = 1 },
-        { name = "spear_wooden", amount = 2 },
-        { name = "tabard", amount = 2 }
+        { name = "kitchen_tools", amount = 1 }
     },
 
     programs = {
@@ -334,7 +335,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_recruit",
                 "consume=europeans_carrier",
-                "consume=tabard spear_wooden",
                 "animate=working duration:60s",
                 "recruit=europeans_recruit"
             }
@@ -436,7 +436,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_trainer_normal",
                 "return=skipped unless economy needs europeans_trainer_advanced",
                 "consume=europeans_carrier",
-                "consume=tabard spear_wooden",
                 "animate=working duration:120s",
                 "recruit=europeans_trainer_normal"
             }

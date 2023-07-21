@@ -17,9 +17,10 @@ wl.Descriptions():new_immovable_type {
          "remove=",
       },
    },
+   
+   animation_directory = dirname,
    animations = {
       idle = {
-         directory = dirname,
          basename = "idle",
          hotspot = {8, 5}
       }

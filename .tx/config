@@ -1,243 +1,331 @@
 [main]
 host = https://www.transifex.com
 
-[widelands-addons.auto-soldiers-cs-wad]
-file_filter = po/auto_soldiers_cs.wad/<lang>.po
-source_file = po/auto_soldiers_cs.wad/auto_soldiers_cs.wad.pot
+[o:widelands:p:widelands-addons:r:1v1-high-level-map-pool-wad]
+file_filter = po/1v1_high_level_map_pool.wad/<lang>.po
+source_file = po/1v1_high_level_map_pool.wad/1v1_high_level_map_pool.wad.pot
 source_lang = en
-type = PO
+type        = PO
 
-[widelands-addons.challenge-map-set-wad]
-file_filter = po/challenge-map-set.wad/<lang>.po
-source_file = po/challenge-map-set.wad/challenge-map-set.wad.pot
+[o:widelands:p:widelands-addons:r:Artifacts-race-wad]
+file_filter = po/Artifacts_race.wad/<lang>.po
+source_file = po/Artifacts_race.wad/Artifacts_race.wad.pot
 source_lang = en
-type = PO
+type        = PO
 
-[widelands-addons.dummy-campaign-wad]
-file_filter = po/dummy-campaign.wad/<lang>.po
-source_file = po/dummy-campaign.wad/dummy-campaign.wad.pot
+[o:widelands:p:widelands-addons:r:Call-of-death-wad]
+file_filter = po/Call_of_death.wad/<lang>.po
+source_file = po/Call_of_death.wad/Call_of_death.wad.pot
 source_lang = en
-type = PO
+type        = PO
 
-[widelands-addons.fishy-wad]
-file_filter = po/fishy.wad/<lang>.po
-source_file = po/fishy.wad/fishy.wad.pot
-source_lang = en
-type = PO
+[o:widelands:p:widelands-addons:r:Down-the-Mountain-wad]
+file_filter  = po/Down_the_Mountain.wad/<lang>.po
+source_file  = po/Down_the_Mountain.wad/Down_the_Mountain.wad.pot
+source_lang  = en
+type         = PO
+minimum_perc = 0
 
-[widelands-addons.foreign-planet-wad]
-file_filter = po/foreign_planet.wad/<lang>.po
-source_file = po/foreign_planet.wad/foreign_planet.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.formerly-official-maps-wad]
-file_filter = po/formerly_official_maps.wad/<lang>.po
-source_file = po/formerly_official_maps.wad/formerly_official_maps.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.frisians-economy-ultra-wad]
-file_filter = po/frisians-economy-ultra.wad/<lang>.po
-source_file = po/frisians-economy-ultra.wad/frisians-economy-ultra.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.higher-experience-wad]
-file_filter = po/higher-experience.wad/<lang>.po
-source_file = po/higher-experience.wad/higher-experience.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.impassable-water-wad]
-file_filter = po/impassable_water.wad/<lang>.po
-source_file = po/impassable_water.wad/impassable_water.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.legacy-ui-wad]
-file_filter = po/legacy_ui.wad/<lang>.po
-source_file = po/legacy_ui.wad/legacy_ui.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.minimalistic-theme-wad]
-file_filter = po/minimalistic_theme.wad/<lang>.po
-source_file = po/minimalistic_theme.wad/minimalistic_theme.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.more-fish-and-water-wad]
-file_filter = po/more-fish-and-water.wad/<lang>.po
-source_file = po/more-fish-and-water.wad/more-fish-and-water.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.stronger-trading-outpost-wad]
-file_filter = po/stronger-trading-outpost.wad/<lang>.po
-source_file = po/stronger-trading-outpost.wad/stronger-trading-outpost.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.wells-running-out-wad]
-file_filter = po/wells-running-out.wad/<lang>.po
-source_file = po/wells-running-out.wad/wells-running-out.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.mostly-balanced-maps-wad]
-file_filter = po/mostly_balanced_maps.wad/<lang>.po
-source_file = po/mostly_balanced_maps.wad/mostly_balanced_maps.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.first-heroes-win-wad]
-file_filter = po/first_heroes_win.wad/<lang>.po
-source_file = po/first_heroes_win.wad/first_heroes_win.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.Tournament-2021-maps-wad]
-file_filter = po/Tournament_2021_maps.wad/<lang>.po
-source_file = po/Tournament_2021_maps.wad/Tournament_2021_maps.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.Tournament-2021-win-condition-wad]
-file_filter = po/Tournament_2021_win_condition.wad/<lang>.po
-source_file = po/Tournament_2021_win_condition.wad/Tournament_2021_win_condition.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.legacy-terrains-wad]
-file_filter = po/legacy_terrains.wad/<lang>.po
-source_file = po/legacy_terrains.wad/legacy_terrains.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.the-x-mod-wad]
-file_filter = po/the-x-mod.wad/<lang>.po
-source_file = po/the-x-mod.wad/the-x-mod.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.europeans-tribe-wad]
-file_filter = po/europeans_tribe.wad/<lang>.po
-source_file = po/europeans_tribe.wad/europeans_tribe.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.fast-1v1-maps-wad]
-file_filter = po/fast_1v1_maps.wad/<lang>.po
-source_file = po/fast_1v1_maps.wad/fast_1v1_maps.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.pioneer-post-wad]
-file_filter = po/pioneer-post.wad/<lang>.po
-source_file = po/pioneer-post.wad/pioneer-post.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.royal-wad]
-file_filter = po/royal.wad/<lang>.po
-source_file = po/royal.wad/royal.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.no-default-resources-wad]
-file_filter = po/no_default_resources.wad/<lang>.po
-source_file = po/no_default_resources.wad/no_default_resources.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.tropics-wad]
-file_filter = po/tropics.wad/<lang>.po
-source_file = po/tropics.wad/tropics.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.white-summer-wad]
-file_filter = po/white_summer.wad/<lang>.po
-source_file = po/white_summer.wad/white_summer.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.white-summer-maps-wad]
-file_filter = po/white_summer_maps.wad/<lang>.po
-source_file = po/white_summer_maps.wad/white_summer_maps.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.enhanced-debug-scripts-wad]
-file_filter = po/enhanced_debug_scripts.wad/<lang>.po
-source_file = po/enhanced_debug_scripts.wad/enhanced_debug_scripts.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.europeans-map-modified-wad]
-file_filter = po/europeans_map_modified.wad/<lang>.po
-source_file = po/europeans_map_modified.wad/europeans_map_modified.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.SP-Scenario-Along-the-River-wad]
-file_filter = po/SP_Scenario_Along_the_River.wad/<lang>.po
-source_file = po/SP_Scenario_Along_the_River.wad/SP_Scenario_Along_the_River.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.perma-resi-wad]
-file_filter = po/perma-resi.wad/<lang>.po
-source_file = po/perma-resi.wad/perma-resi.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.boss-village-wad]
-file_filter = po/boss-village.wad/<lang>.po
-source_file = po/boss-village.wad/boss-village.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.larger-font-theme-wad]
-file_filter = po/larger_font_theme.wad/<lang>.po
-source_file = po/larger_font_theme.wad/larger_font_theme.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.australia-tasmania-newzealand-wad]
-file_filter = po/australia_tasmania_newzealand.wad/<lang>.po
-source_file = po/australia_tasmania_newzealand.wad/australia_tasmania_newzealand.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.The-world-of-elements-wad]
-file_filter = po/The_world_of_elements.wad/<lang>.po
-source_file = po/The_world_of_elements.wad/The_world_of_elements.wad.pot
-source_lang = en
-type = PO
-
-[widelands-addons.Java-and-Sumatra-Map-addon-wad]
+[o:widelands:p:widelands-addons:r:Java-and-Sumatra-Map-addon-wad]
 file_filter = po/Java_and_Sumatra_Map_addon.wad/<lang>.po
 source_file = po/Java_and_Sumatra_Map_addon.wad/Java_and_Sumatra_Map_addon.wad.pot
 source_lang = en
-type = PO
+type        = PO
 
-[widelands-addons.explorer-wins-wad]
+[o:widelands:p:widelands-addons:r:Maps-from-Teayo-wad]
+file_filter  = po/Maps_from_Teayo.wad/<lang>.po
+source_file  = po/Maps_from_Teayo.wad/Maps_from_Teayo.wad.pot
+type         = PO
+minimum_perc = 0
+
+[o:widelands:p:widelands-addons:r:SP-Scenario-Along-the-River-wad]
+file_filter = po/SP_Scenario_Along_the_River.wad/<lang>.po
+source_file = po/SP_Scenario_Along_the_River.wad/SP_Scenario_Along_the_River.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:The-Long-Way-to-Tiperary--for-16-players--experimental--wad]
+file_filter = po/The_Long_Way_to_Tiperary__for_16_players__experimental_.wad/<lang>.po
+source_file = po/The_Long_Way_to_Tiperary__for_16_players__experimental_.wad/The_Long_Way_to_Tiperary__for_16_players__experimental_.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:The-Long-Way-to-Tiperary--for-8-players--wad]
+file_filter = po/The_Long_Way_to_Tiperary__for_8_players_.wad/<lang>.po
+source_file = po/The_Long_Way_to_Tiperary__for_8_players_.wad/The_Long_Way_to_Tiperary__for_8_players_.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:The-Sea-Kingdom-wad]
+file_filter  = po/The_Sea_Kingdom.wad/<lang>.po
+source_file  = po/The_Sea_Kingdom.wad/The_Sea_Kingdom.wad.pot
+type         = PO
+minimum_perc = 0
+
+[o:widelands:p:widelands-addons:r:The-world-of-elements-wad]
+file_filter = po/The_world_of_elements.wad/<lang>.po
+source_file = po/The_world_of_elements.wad/The_world_of_elements.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:Tournament-2021-maps-wad]
+file_filter = po/Tournament_2021_maps.wad/<lang>.po
+source_file = po/Tournament_2021_maps.wad/Tournament_2021_maps.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:Tournament-2021-win-condition-wad]
+file_filter = po/Tournament_2021_win_condition.wad/<lang>.po
+source_file = po/Tournament_2021_win_condition.wad/Tournament_2021_win_condition.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:WideGreen-wad]
+file_filter  = po/WideGreen.wad/<lang>.po
+source_file  = po/WideGreen.wad/WideGreen.wad.pot
+source_lang  = en
+type         = PO
+minimum_perc = 0
+
+[o:widelands:p:widelands-addons:r:Wikinger--Die-Fjorde-Seefahrer-Turnierkarte-wad]
+file_filter  = po/Wikinger__Die_Fjorde_Seefahrer_Turnierkarte.wad/<lang>.po
+source_file  = po/Wikinger__Die_Fjorde_Seefahrer_Turnierkarte.wad/Wikinger__Die_Fjorde_Seefahrer_Turnierkarte.wad.pot
+type         = PO
+minimum_perc = 0
+
+[o:widelands:p:widelands-addons:r:australia-tasmania-newzealand-wad]
+file_filter = po/australia_tasmania_newzealand.wad/<lang>.po
+source_file = po/australia_tasmania_newzealand.wad/australia_tasmania_newzealand.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:auto-soldiers-cs-wad]
+file_filter = po/auto_soldiers_cs.wad/<lang>.po
+source_file = po/auto_soldiers_cs.wad/auto_soldiers_cs.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:boss-village-wad]
+file_filter = po/boss-village.wad/<lang>.po
+source_file = po/boss-village.wad/boss-village.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:challenge-map-set-wad]
+file_filter = po/challenge-map-set.wad/<lang>.po
+source_file = po/challenge-map-set.wad/challenge-map-set.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:dummy-campaign-wad]
+file_filter = po/dummy-campaign.wad/<lang>.po
+source_file = po/dummy-campaign.wad/dummy-campaign.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:editor-swap-terrains-wad]
+file_filter  = po/editor_swap_terrains.wad/<lang>.po
+source_file  = po/editor_swap_terrains.wad/editor_swap_terrains.wad.pot
+type         = PO
+minimum_perc = 0
+
+[o:widelands:p:widelands-addons:r:enhanced-debug-scripts-wad]
+file_filter = po/enhanced_debug_scripts.wad/<lang>.po
+source_file = po/enhanced_debug_scripts.wad/enhanced_debug_scripts.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:europeans-map-modified-wad]
+file_filter = po/europeans_map_modified.wad/<lang>.po
+source_file = po/europeans_map_modified.wad/europeans_map_modified.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:europeans-tribe-wad]
+file_filter = po/europeans_tribe.wad/<lang>.po
+source_file = po/europeans_tribe.wad/europeans_tribe.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:explorer-wins-wad]
 file_filter = po/explorer-wins.wad/<lang>.po
 source_file = po/explorer-wins.wad/explorer-wins.wad.pot
 source_lang = en
-type = PO
+type        = PO
 
-[widelands-addons.simple-map-generator-wad]
-file_filter = po/simple_map_generator.wad/<lang>.po
-source_file = po/simple_map_generator.wad/simple_map_generator.wad.pot
+[o:widelands:p:widelands-addons:r:fast-1v1-maps-wad]
+file_filter = po/fast_1v1_maps.wad/<lang>.po
+source_file = po/fast_1v1_maps.wad/fast_1v1_maps.wad.pot
 source_lang = en
-type = PO
+type        = PO
 
-[widelands-addons.simple-dark-theme-wad]
+[o:widelands:p:widelands-addons:r:first-heroes-win-wad]
+file_filter = po/first_heroes_win.wad/<lang>.po
+source_file = po/first_heroes_win.wad/first_heroes_win.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:fishy-wad]
+file_filter = po/fishy.wad/<lang>.po
+source_file = po/fishy.wad/fishy.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:foreign-planet-wad]
+file_filter = po/foreign_planet.wad/<lang>.po
+source_file = po/foreign_planet.wad/foreign_planet.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:formerly-official-maps-wad]
+file_filter = po/formerly_official_maps.wad/<lang>.po
+source_file = po/formerly_official_maps.wad/formerly_official_maps.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:frisians-economy-ultra-wad]
+file_filter = po/frisians-economy-ultra.wad/<lang>.po
+source_file = po/frisians-economy-ultra.wad/frisians-economy-ultra.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:higher-experience-wad]
+file_filter = po/higher-experience.wad/<lang>.po
+source_file = po/higher-experience.wad/higher-experience.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:impassable-water-wad]
+file_filter = po/impassable_water.wad/<lang>.po
+source_file = po/impassable_water.wad/impassable_water.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:intelligent-teamplay-maps-wad]
+file_filter = po/intelligent_teamplay_maps.wad/<lang>.po
+source_file = po/intelligent_teamplay_maps.wad/intelligent_teamplay_maps.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:larger-font-theme-wad]
+file_filter = po/larger_font_theme.wad/<lang>.po
+source_file = po/larger_font_theme.wad/larger_font_theme.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:larger-fonts-1-2devel-wad]
+file_filter  = po/larger_fonts_1_2devel.wad/<lang>.po
+source_file  = po/larger_fonts_1_2devel.wad/larger_fonts_1_2devel.wad.pot
+source_lang  = en
+type         = PO
+minimum_perc = 0
+
+[o:widelands:p:widelands-addons:r:legacy-terrains-wad]
+file_filter = po/legacy_terrains.wad/<lang>.po
+source_file = po/legacy_terrains.wad/legacy_terrains.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:legacy-ui-wad]
+file_filter = po/legacy_ui.wad/<lang>.po
+source_file = po/legacy_ui.wad/legacy_ui.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:minimalistic-theme-wad]
+file_filter = po/minimalistic_theme.wad/<lang>.po
+source_file = po/minimalistic_theme.wad/minimalistic_theme.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:more-fish-and-water-wad]
+file_filter = po/more-fish-and-water.wad/<lang>.po
+source_file = po/more-fish-and-water.wad/more-fish-and-water.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:mostly-balanced-maps-wad]
+file_filter = po/mostly_balanced_maps.wad/<lang>.po
+source_file = po/mostly_balanced_maps.wad/mostly_balanced_maps.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:no-default-resources-wad]
+file_filter = po/no_default_resources.wad/<lang>.po
+source_file = po/no_default_resources.wad/no_default_resources.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:perma-resi-wad]
+file_filter = po/perma-resi.wad/<lang>.po
+source_file = po/perma-resi.wad/perma-resi.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:pioneer-post-wad]
+file_filter = po/pioneer-post.wad/<lang>.po
+source_file = po/pioneer-post.wad/pioneer-post.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:royal-wad]
+file_filter = po/royal.wad/<lang>.po
+source_file = po/royal.wad/royal.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:simple-dark-theme-wad]
 file_filter = po/simple_dark_theme.wad/<lang>.po
 source_file = po/simple_dark_theme.wad/simple_dark_theme.wad.pot
 source_lang = en
-type = PO
+type        = PO
+
+[o:widelands:p:widelands-addons:r:simple-map-generator-wad]
+file_filter = po/simple_map_generator.wad/<lang>.po
+source_file = po/simple_map_generator.wad/simple_map_generator.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:stronger-trading-outpost-wad]
+file_filter = po/stronger-trading-outpost.wad/<lang>.po
+source_file = po/stronger-trading-outpost.wad/stronger-trading-outpost.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:the-x-mod-wad]
+file_filter = po/the-x-mod.wad/<lang>.po
+source_file = po/the-x-mod.wad/the-x-mod.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:time-limitted-peaceful-wad]
+file_filter  = po/time-limitted-peaceful.wad/<lang>.po
+source_file  = po/time-limitted-peaceful.wad/time-limitted-peaceful.wad.pot
+source_lang  = en
+type         = PO
+minimum_perc = 0
+
+[o:widelands:p:widelands-addons:r:tropics-wad]
+file_filter = po/tropics.wad/<lang>.po
+source_file = po/tropics.wad/tropics.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:wells-running-out-wad]
+file_filter = po/wells-running-out.wad/<lang>.po
+source_file = po/wells-running-out.wad/wells-running-out.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:white-summer-maps-wad]
+file_filter = po/white_summer_maps.wad/<lang>.po
+source_file = po/white_summer_maps.wad/white_summer_maps.wad.pot
+source_lang = en
+type        = PO
+
+[o:widelands:p:widelands-addons:r:white-summer-wad]
+file_filter = po/white_summer.wad/<lang>.po
+source_file = po/white_summer.wad/white_summer.wad.pot
+source_lang = en
+type        = PO
 

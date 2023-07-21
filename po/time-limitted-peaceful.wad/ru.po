@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-12 03:06+0200\n"
+"PO-Revision-Date: 2023-06-22 14:38+0000\n"
+"Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
+"ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: addons/time-limitted-peaceful.wad/addon:4
+msgid "limits the peaceful mode to 45 minutes"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:20
+msgid "peaceful mode ends now"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:21
+msgid "all players can attack each other now (team mates excluded of course)"
+msgstr ""

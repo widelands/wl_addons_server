@@ -20,8 +20,7 @@ wl.Descriptions():new_productionsite_type {
 
     size = "small",
 
-    aihints = {
-    },
+    aihints = {},
 
     working_positions = {
         europeans_stonecutter_advanced = 1

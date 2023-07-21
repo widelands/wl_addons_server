@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_trainingsite_type {
     name = "europeans_battlearena_level_1",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Battle Arena Level 1"),
+    descname = pgettext("europeans_building", "Normal Battle Arena"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -31,67 +31,48 @@ wl.Descriptions():new_trainingsite_type {
     },
     
     size = "big",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_battlearena_level_2",
         enhancement_cost = {
             planks = 3,
-            cloth = 3,
-            granite = 2,
-            quartz = 1,
-            diamond = 1,
-            gold = 1
+            brick = 3,
+            marble = 3,
+            marble_column = 3,
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 1,
-            quartz = 1,
-            diamond = 1,
-            scrap_metal_mixed = 1
+            scrap_wood = 3,
+            granite = 3,
+            marble = 6,
+            diamond = 1
         },
     },
 
     aihints = {
-        trainingsites_max_percent = 20,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-      --normal_ai_limit = 4
+        trainingsites_max_percent = 25,
     },
 
     working_positions = {
+        europeans_trainer_normal = 2,
         europeans_trainer_basic = 1
     },
 
     
     inputs = {
-        { name = "coin_copper", amount = 6 },
-        { name = "coin_silver", amount = 6 },
-        { name = "helmet_mask", amount = 2 },
-        { name = "shield_steel", amount = 2 }, 
+        { name = "coin_copper", amount = 4 },
+        { name = "coin_silver", amount = 4 },
+        { name = "armor_processed", amount = 2 },
+        { name = "armor_chain", amount = 2 },
         { name = "spear_advanced", amount = 2 },
         { name = "ax_broad", amount = 2 },
-        { name = "tabard", amount = 2 },
-        { name = "armor_chain", amount = 2 }
+        { name = "helmet_mask", amount = 2 },
+        { name = "shield_steel", amount = 2 }, 
+        { name = "boots_sturdy", amount = 2 },
+        { name = "boots_swift", amount = 2 },
     },
 
-    ["soldier health"] = {
-        food = {{"coin_copper"}, {"coin_silver"}},
-        weapons = {"armor", "tabard", "armor_chain"}
-    },
-
-    ["soldier evade"] = {
-        food = {{"coin_copper"}, {"coin_silver"}},
-    },
-        
-    ["soldier defense"] = {
-        food = {{"coin_copper"}, {"coin_silver"}},
-        weapons = {"helmet_mask", "shield_steel"}
-    },
-
-    ["soldier attack"] = {
-        food = {{"coin_copper"}, {"coin_silver"}},
-        weapons = {"spear_advanced", "ax_broad"}
-    },
-  
     programs = {
         sleep = {
             -- TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
@@ -105,12 +86,12 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
             descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
             actions = {
-                "return=skipped when economy needs tabard",
                 "checksoldier=soldier:health level:0",
                 "sleep=duration:40s",
                 "checksoldier=soldier:health level:0",
-                "consume=coin_copper tabard",
-                "train=soldier:health level:1"
+                "consume=coin_copper armor_processed",
+                "train=soldier:health level:1",
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_health_1 = {
@@ -122,55 +103,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:1",
                 "consume=coin_silver armor_chain",
                 "train=soldier:health level:2",
-                "produce=scrap_iron"
-            }
-        },
-        upgrade_soldier_evade_0 = {
-            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
-            actions = {
-                "return=skipped when economy needs beer",
-                "checksoldier=soldier:evade level:0",
-                "sleep=duration:40s",
-                "checksoldier=soldier:evade level:0",
-                "consume=coin_copper:2",
-                "train=soldier:evade level:1"
-            }
-        },
-        upgrade_soldier_evade_1 = {
-            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier evade from level 1 to level 2"),
-            actions = {
-                "return=skipped when economy needs beer_strong and economy needs mead",
-                "checksoldier=soldier:evade level:1",
-                "sleep=duration:40s",
-                "checksoldier=soldier:evade level:1",
-                "consume=coin_silver:2",
-                "train=soldier:evade level:2"
-            }
-        },
-        upgrade_soldier_defense_0 = {
-            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier defense from level 0 to level 1"),
-            actions = {
-                "checksoldier=soldier:defense level:0",
-                "sleep=duration:40s",
-                "checksoldier=soldier:defense level:0",
-                "consume=coin_copper helmet_mask",
-                "train=soldier:defense level:1",
-                "produce=scrap_iron"
-            }
-        },
-        upgrade_soldier_defense_1 = {
-            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-            descname = pgettext("europeans_building", "upgrading soldier defense from level 1 to level 2"),
-            actions = {
-                "checksoldier=soldier:defense level:1",
-                "sleep=duration:40s",
-                "checksoldier=soldier:defense level:1",
-                "consume=coin_silver shield_steel",
-                "train=soldier:defense level:2",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_attack_0 = {
@@ -182,7 +115,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:0",
                 "consume=coin_copper spear_advanced",
                 "train=soldier:attack level:1",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
         },
         upgrade_soldier_attack_1 = {
@@ -194,9 +127,57 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:1",
                 "consume=coin_silver ax_broad",
                 "train=soldier:attack level:2",
-                "produce=scrap_iron"
+                "produce=scrap_metal_mixed"
             }
-        }
+        },
+        upgrade_soldier_defense_0 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier defense from level 0 to level 1"),
+            actions = {
+                "checksoldier=soldier:defense level:0",
+                "sleep=duration:40s",
+                "checksoldier=soldier:defense level:0",
+                "consume=coin_copper helmet_mask",
+                "train=soldier:defense level:1",
+                "produce=scrap_metal_mixed"
+            }
+        },
+        upgrade_soldier_defense_1 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier defense from level 1 to level 2"),
+            actions = {
+                "checksoldier=soldier:defense level:1",
+                "sleep=duration:40s",
+                "checksoldier=soldier:defense level:1",
+                "consume=coin_silver shield_steel",
+                "train=soldier:defense level:2",
+                "produce=scrap_metal_mixed"
+            }
+        },
+        upgrade_soldier_evade_0 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
+            actions = {
+                "checksoldier=soldier:evade level:0",
+                "sleep=duration:40s",
+                "checksoldier=soldier:evade level:0",
+                "consume=coin_copper boots_sturdy",
+                "train=soldier:evade level:1",
+                "produce=scrap_metal_mixed"
+            }
+        },
+        upgrade_soldier_evade_1 = {
+            -- TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+            descname = pgettext("europeans_building", "upgrading soldier evade from level 1 to level 2"),
+            actions = {
+                "checksoldier=soldier:evade level:1",
+                "sleep=duration:40s",
+                "checksoldier=soldier:evade level:1",
+                "consume=coin_silver boots_swift",
+                "train=soldier:evade level:2",
+                "produce=scrap_metal_mixed"
+            }
+        },
     },
     
     soldier_capacity = 12,

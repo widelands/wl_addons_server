@@ -37,23 +37,14 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "medium",
+    destructible = true,
     map_check = {"waterways"},
-    enhancement = {
-        name = "europeans_shipyard_basic",
-        enhancement_cost = {
-            planks = 2,
-            gold = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            scrap_metal_mixed = 1
-        }
-    },
-
+    
     aihints = {},
 
     working_positions = {
-        europeans_shipwright_advanced = 1
+        europeans_shipwright_advanced = 1,
+        europeans_shipwright_basic = 1
     },
 
     inputs = {

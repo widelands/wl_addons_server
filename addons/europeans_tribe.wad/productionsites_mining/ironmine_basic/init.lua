@@ -59,10 +59,7 @@ wl.Descriptions():new_productionsite_type {
         marble = 1
     },
 
-    aihints = {
-        prohibited_till = 3600,
-        forced_after = 5400
-    },
+    aihints = {},
 
     working_positions = {
         europeans_miner_basic = 1

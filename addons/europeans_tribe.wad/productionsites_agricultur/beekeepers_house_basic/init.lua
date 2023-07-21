@@ -53,8 +53,6 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         requires_supporters = true,
-        prohibited_till = 3000,
-        forced_after = 3600
     },
 
     working_positions = {

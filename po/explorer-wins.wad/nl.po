@@ -3,14 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 02:04+0100\n"
+"POT-Creation-Date: 2023-07-12 03:06+0200\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
-"Language-Team: Dutch (https://www.transifex.com/widelands/teams/35159/nl/)\n"
+"Last-Translator: Alex Rijckaert, 2023\n"
+"Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,51 +24,55 @@ msgstr ""
 #: addons/explorer-wins.wad/addon:6
 msgid "The player who has explored most of the world wins the game"
 msgstr ""
+"De speler die het grootste deel van de wereld heeft verkend, wint het spel."
 
 #: addons/explorer-wins.wad/addon:9
 msgid "explorer wins"
-msgstr ""
+msgstr "verkenner wint"
 
 #: addons/explorer-wins.wad/init.lua:19
 msgid "Explorer Wins"
-msgstr ""
+msgstr "Verkenner Wint"
 
 #: addons/explorer-wins.wad/init.lua:21
 #, lua-format
 msgid "The player who has explored %1d%% of the world wins the game"
-msgstr ""
+msgstr "De speler die %1d%% van de wereld heeft verkend, wint het spel."
 
 #: addons/explorer-wins.wad/init.lua:25
 msgid "% explored"
-msgstr ""
+msgstr "% verkend"
 
 #: addons/explorer-wins.wad/init.lua:34
 msgid "You can explore by expanding, with a scout, with ships, ..."
 msgstr ""
+"Je kunt verkennen door uit te breiden, met een verkenner, met schepen, ..."
 
 #: addons/explorer-wins.wad/init.lua:54
 msgid ""
 "There are %1$d fields on the map, but only %2$d are terrestrial, which is "
 "%3$d%%. You need to explore %4$d%%."
 msgstr ""
+"Er zijn %1$d velden op de kaart, maar slechts %2$d zijn land, wat %3$d%%. Je "
+"moet %4$d%% verkennen."
 
 #: addons/explorer-wins.wad/init.lua:59
 msgid "Probably not winnable"
-msgstr ""
+msgstr "Waarschijnlijk niet te winnen"
 
 #: addons/explorer-wins.wad/init.lua:59
 msgid "This map is probably not winnable with %1$s."
-msgstr ""
+msgstr "Deze kaart is waarschijnlijk niet te winnen met %1$s."
 
 #: addons/explorer-wins.wad/init.lua:61
 msgid "Maybe not winnable"
-msgstr ""
+msgstr "Misschien niet te winnen"
 
 #: addons/explorer-wins.wad/init.lua:61
 msgid "This map is maybe not winnable with %1$s."
-msgstr ""
+msgstr "Deze kaart is misschien niet te winnen met %1$s."
 
 #: addons/explorer-wins.wad/init.lua:133
 #, lua-format
 msgid "Player %1d has explored %1d%%"
-msgstr ""
+msgstr "Speler %1d heeft %1d%% verkend"

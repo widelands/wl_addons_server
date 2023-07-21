@@ -20,17 +20,19 @@ wl.Descriptions():new_productionsite_type {
     },
    
     size = "big",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_recruitement_center_normal",
         enhancement_cost = {
             blackwood = 3,
             cloth = 3,
             grout = 3,
-            gold = 1
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
-            scrap_metal_mixed = 1
+            quartz = 1
         }
     },
     buildcost = {
@@ -46,9 +48,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
-        normal_ai_limit = 1,
-        prohibited_till = 3600,
-        forced_after = 5400
+        --normal_ai_limit = 2,
     },
     
     working_positions = {
@@ -69,8 +69,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "needles", amount = 1 },
         { name = "bread_paddle", amount = 1 },
         { name = "hook_pole", amount = 1 },
-        { name = "kitchen_tools", amount = 1 },
-        { name = "spear_wooden", amount = 2 }
+        { name = "kitchen_tools", amount = 1 }
     },
 
     programs = {
@@ -91,7 +90,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_charcoal_burner",
                 "call=recruit_stonemason",
                 "call=recruit_miner",
-                "call=recruit_miner_workaround_notools",
                 "sleep=duration:20s",
                 "call=recruit_farmer",
                 "call=recruit_breeder",
@@ -105,7 +103,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_lumberjack",
                 "call=recruit_smelter",
                 "call=recruit_smith",
-                "call=recruit_smith_workaround_notools",
                 "call=recruit_shipwright",
                 "call=recruit_trainer",
                 "call=recruit_geologist",
@@ -354,27 +351,12 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_miner_basic"
             }
         },
-        recruit_miner_workaround_notools = { -- recruit a miner, if mines are not fully occupied and the economy of AI stalls, because lack of iron or coal and lack of tools
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting miner with no tools (workaround)"),
-            actions = {
-                "return=skipped unless economy needs europeans_miner_basic",
-                "return=skipped unless economy needs europeans_miner_normal",
-                "return=skipped unless economy needs europeans_miner_advanced",
-                "return=skipped unless economy needs coal or economy needs ore",
-                "return=skipped when site has buckets and site has pick and site has shovel",
-                "consume=europeans_carrier",
-                "animate=working duration:120s",
-                "recruit=europeans_miner_basic"
-            }
-        },
         recruit_recruit = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting recruit because ...
             descname = pgettext("europeans_building", "recruiting recruit"),
             actions = {
                 "return=skipped unless economy needs europeans_recruit",
                 "consume=europeans_carrier",
-                "consume=spear_wooden",
                 "animate=working duration:90s",
                 "recruit=europeans_recruit"
             }
@@ -437,20 +419,6 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_smith_basic"
             }
         },
-        recruit_smith_workaround_notools = { -- recruit a smith, if tools smithies are not fully occupied and the economy of AI stalls, because lack of tools
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting smith with no tools (workaround)"),
-            actions = {
-                "return=skipped unless economy needs europeans_smith_basic",
-                "return=skipped unless economy needs europeans_smith_normal",
-                "return=skipped unless economy needs europeans_smith_advanced",
-                "return=skipped unless economy needs hammer or economy needs saw or economy needs fire_tongs",
-                "return=skipped when site has hammer and site has saw and site has fire_tongs",
-                "consume=europeans_carrier",
-                "animate=working duration:120s",
-                "recruit=europeans_smith_basic"
-            }
-        },
         recruit_stonecutter = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting stonecutter"),
@@ -506,7 +474,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_trainer_advanced",
                 "return=skipped when not site has needles",
                 "consume=europeans_carrier",
-                "consume=spear_wooden",
                 "animate=working duration:90s",
                 "recruit=europeans_trainer_basic"
             }

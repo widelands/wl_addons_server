@@ -59,12 +59,7 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         supports_seafaring = true,
-        basic_amount = 1,
-        prohibited_till = 1800,
-        forced_after = 2400,
-        very_weak_ai_limit = 2,
-        weak_ai_limit = 4,
-        normal_ai_limit = 8
+        basic_amount = 2,
     },
 
     working_positions = {
@@ -90,6 +85,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
             descname = pgettext("europeans_building", "sawing logs"),
             actions = {
+                "return=skipped when economy needs blackwood and not economy needs planks",
                 "return=skipped when economy needs log and not economy needs planks",
                 "return=skipped unless site has log:2",
                 "consume=log",
@@ -106,6 +102,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
+                "return=skipped when economy needs planks and not economy needs blackwood",
                 "return=skipped when economy needs log and not economy needs blackwood",
                 "return=skipped unless site has log:2",
                 "consume=log",

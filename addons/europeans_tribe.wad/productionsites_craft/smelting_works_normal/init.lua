@@ -37,7 +37,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_smelter_normal = 1
+        europeans_smelter_normal = 1,
+        europeans_smelter_basic = 1
     },
 
     inputs = {
@@ -56,24 +57,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped"
             }
         },
-        smelt_iron = {
-            -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
-            descname = pgettext("europeans_building", "smelting iron"),
-            actions = {
-                "return=skipped unless economy needs iron or workers need experience",
-                "return=skipped unless site has coal:2",
-                "return=skipped unless site has ore:2",
-                "consume=ore:2 coal:2",
-                "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=working duration:45s",
-                "playsound=sound/metal/ironping priority:60%",
-                "produce=iron:2"
-            }
-        },
         smelt_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
             descname = pgettext("europeans_building", "smelting gold"),
             actions = {
+                "return=skipped when economy needs iron and not economy needs gold",
                 "return=skipped unless economy needs gold or workers need experience",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has ore:2",
@@ -82,6 +70,21 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:45s",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=gold"
+            }
+        },
+        smelt_iron = {
+            -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
+            descname = pgettext("europeans_building", "smelting iron"),
+            actions = {
+                "return=skipped when economy needs gold and not economy needs iron",
+                "return=skipped unless economy needs iron or workers need experience",
+                "return=skipped unless site has coal:2",
+                "return=skipped unless site has ore:2",
+                "consume=ore:2 coal:2",
+                "playsound=sound/metal/fizzle priority:15% allow_multiple",
+                "animate=working duration:45s",
+                "playsound=sound/metal/ironping priority:60%",
+                "produce=iron:2"
             }
         },
         smelt_iron_idle = {

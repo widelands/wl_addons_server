@@ -21,19 +21,24 @@ package wl.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.stream.Stream;
 
 /**
  * Miscellaneous utility functions.
@@ -267,6 +272,22 @@ public class Utils {
 	}
 
 	/**
+	 * Recursively list all Widelands maps in a directory.
+	 * @param dir Directory to search.
+	 * @return List of found maps.
+	 * @throws Exception If the directory can not be traversed.
+	 */
+	public static List<File> findMaps(File dir) throws Exception {
+		List<File> maps = new ArrayList<>();
+		Stream<Path> walkStream = Files.walk(dir.toPath());
+		walkStream.forEach(f -> {
+			File file = f.toFile();
+			if (file.getName().endsWith(".wmf")) maps.add(file);
+		});
+		return maps;
+	}
+
+	/**
 	 * Compute the md5 checksum of a regular file.
 	 * @param f File to checksum.
 	 * @return The checksum as string, or "" in case of an error.
@@ -331,6 +352,19 @@ public class Utils {
 			}
 		}
 		return (result == null ? "" : result);
+	}
+
+	/**
+	 * Run a shell script and return its exit value.
+	 * The standard output and error are discarded.
+	 * @param args The command and its arguments.
+	 * @return The output.
+	 * @throws Exception If the shell can't be accessed.
+	 */
+	public static int bashResult(String... args) throws Exception {
+		Process p = new ProcessBuilder(args).start();
+		p.waitFor();
+		return p.exitValue();
 	}
 
 	/**
@@ -578,24 +612,53 @@ public class Utils {
 		ChecksummedFile key = new ChecksummedFile(f);
 		if (_staticprofiles.containsKey(key)) return _staticprofiles.get(key);
 
-		for (ChecksummedFile cf : _staticprofiles.keySet()) {
-			if (cf.file.equals(f)) {
-				_staticprofiles.remove(cf);
-				break;
-			}
+		Profile profile;
+		if (f.isFile()) {
+			profile = readProfile(Files.readAllLines(f.toPath()), textdomain);
+		} else {
+			profile = new Profile();
 		}
 
+		_staticprofiles.put(key, profile);
+		return profile;
+	}
+
+	/**
+	 * Parse an ini-style file and return its contents as a map of key-value pairs.
+	 * @param stream Stream to read from.
+	 * @param textdomain Textdomain for translatable strings in the file
+	 *                   (may be null if the file is not meant to be translated).
+	 * @return The key-value pairs.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	synchronized public static Profile readProfile(InputStream stream, String textdomain)
+	    throws Exception {
+		List<String> lines = new ArrayList<>();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+		for (;;) {
+			String str = reader.readLine();
+			if (str == null) break;
+			lines.add(str);
+		}
+		return readProfile(lines, textdomain);
+	}
+
+	/**
+	 * Parse an ini-style file and return its contents as a map of key-value pairs.
+	 * @param lines All lines in the file.
+	 * @param textdomain Textdomain for translatable strings in the file
+	 *                   (may be null if the file is not meant to be translated).
+	 * @return The key-value pairs.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 */
+	synchronized public static Profile readProfile(List<String> lines, String textdomain)
+	    throws Exception {
 		Profile profile = new Profile();
-		if (!f.isFile()) {
-			_staticprofiles.put(key, profile);
-			return profile;
-		}
-
 		Profile.Section section = new Profile.Section("");
-		for (String line : Files.readAllLines(f.toPath())) {
-			line = line.trim();
-			if (line.isEmpty() || line.startsWith("#")) continue;
-			if (line.startsWith("[") && line.endsWith("]")) {
+		for (int lineNr = 0; lineNr < lines.size(); ++lineNr) {
+			String line = lines.get(lineNr).trim();
+			if (line.isEmpty() || line.startsWith("#")) continue;  // Comment
+			if (line.startsWith("[") && line.endsWith("]")) {      // Section
 				if (!section.contents.isEmpty()) profile.add(section);
 				section = new Profile.Section(line);
 				continue;
@@ -603,7 +666,7 @@ public class Utils {
 			String[] str = line.split("=");
 			for (int i = 0; i < str.length; i++) str[i] = str[i].trim();
 
-			if (str.length < 2) {
+			if (str.length < 2) {  // Empty value
 				if (str.length == 1) section.contents.put(str[0], new Value(str[0], ""));
 				continue;
 			}
@@ -611,21 +674,37 @@ public class Utils {
 			String arg = str[1];
 			for (int i = 2; i < str.length; ++i) arg += "=" + str[i];
 			boolean localize = false;
-			if (arg.startsWith("_")) {
+			if (arg.startsWith("_")) {  // Translatable
 				arg = arg.substring(1).trim();
 				localize = true;
 			}
-			if (arg.startsWith("\"")) {
+
+			if (arg.startsWith("\"\"")) {  // Double-quoted multi-line string
+				arg = arg.substring(2);
+				for (;;) {
+					if (arg.endsWith("\"\"")) {  // End of multi-line string
+						arg = arg.substring(0, arg.length() - 2);
+						break;
+					}
+					if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
+
+					++lineNr;  // Fetch next line
+					line = lines.get(lineNr).trim();
+					if (line.startsWith("\"")) line = line.substring(1);
+					arg += "<br>" + line;
+				}
+
+			} else if (arg.startsWith("\"")) {  // Quoted single-line string
 				arg = arg.substring(1);
 				if (arg.endsWith("\"")) arg = arg.substring(0, arg.length() - 1);
 			}
+
 			section.contents.put(
 			    str[0],
 			    new Value(str[0], arg, localize ? textdomain == null ? "" : textdomain : null));
 		}
 		profile.add(section);
 
-		_staticprofiles.put(key, profile);
 		return profile;
 	}
 

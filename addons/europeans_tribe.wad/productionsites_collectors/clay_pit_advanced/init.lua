@@ -17,7 +17,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 39, 61 }
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          frames = 1,
          columns = 1,
          rows = 1,
@@ -42,10 +42,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=making_pond_idle",
                 "callworker=check_dig",
                 "call=digging_clay",
-                "callworker=check_dig",
-                "call=making_pond_idle",
                 "return=skipped"
             }
         },
@@ -53,10 +52,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
             descname = _"digging clay",
             actions = {
-                "return=skipped unless economy needs clay or workers need experience",
+                "return=skipped unless economy needs clay or economy needs brick or workers need experience",
                 "return=skipped unless site has water:2",
-                "callworker=dig",
                 "consume=water",
+                "callworker=dig",
                 "animate=working duration:10s",
                 "produce=clay"
             }
@@ -65,12 +64,26 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs clay",
-                "return=skipped when economy needs water",
-                "callworker=dig",
-                "consume=water",
+                "return=skipped when economy needs clay or economy needs brick",
+                "callworker=check_dig_dry",
+                "callworker=dig_dry",
                 "animate=working duration:10s",
-                "sleep=duration:90s"
+                "return=skipped when economy needs water",
+                "callworker=check_dig",
+                "consume=water",
+                "callworker=dig",
+                "animate=working duration:10s",
+                "sleep=duration:120s"
+            }
+        },
+        dummy_program = {
+            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+            descname = _"dummy program",
+            actions = {
+                "callworker=check_dike",
+                "sleep=duration:1s",
+                "callworker=dike",
+                "sleep=duration:10s",
             }
         }
     },

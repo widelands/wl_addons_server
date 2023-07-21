@@ -53,9 +53,7 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         space_consumer = true,
-        basic_amount = 1,
-        prohibited_till = 300,
-        forced_after = 900
+        basic_amount = 4
     },
 
     working_positions = {
@@ -71,8 +69,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "callworker=check_space",
                 "call=plant_trees",
                 "call=plant_trees_idle",
+                "callworker=check_pond_water",
+                "call=planting_pond_water",
+                "callworker=check_pond_dry",
+                "call=planting_pond_dry",
                 "return=skipped"
             }
         },
@@ -97,6 +100,25 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=plant",
                 "sleep=duration:60s"
+            }
+        },
+        planting_pond_water = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting trees in pond with water because ...
+            descname = pgettext("europeans_building", "planting trees in pond with water"),
+            actions = {
+                "callworker=terraform_pond_water",
+                "return=skipped"
+            }
+        },
+        planting_pond_dry = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting trees in dry pond because ...
+            descname = pgettext("europeans_building", "planting trees in dry pond"),
+            actions = {
+                "return=skipped when economy needs water",
+                "return=skipped unless site has water",
+                "consume=water",
+                "callworker=terraform_pond_dry",
+                "return=skipped"
             }
         },
     },

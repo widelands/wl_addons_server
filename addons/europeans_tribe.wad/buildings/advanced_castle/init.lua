@@ -19,13 +19,9 @@ wl.Descriptions():new_militarysite_type {
     },
     
     size = "big",
+    destructible = false,
     
-    aihints = {
-        expansion = true,
-        fighting = true,
-        mountain_conqueror = true,
-        prohibited_till = 9600
-    },
+    aihints = {},
 
     max_soldiers = 18,
     vision_range = 24,

@@ -26,6 +26,8 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "small",
+    destructible = true,
+    
     enhancement = {
         name = "europeans_trading_post",
         enhancement_cost = {
@@ -33,8 +35,7 @@ wl.Descriptions():new_productionsite_type {
             brick = 1,
             marble = 1,
             quartz = 1,
-            diamond = 1,
-            gold = 1
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1,
