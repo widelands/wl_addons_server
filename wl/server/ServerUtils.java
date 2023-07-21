@@ -384,13 +384,12 @@ public class ServerUtils {
 		return diffstats + "\n\n" + rawDiff;
 	}
 
-
 	/**
 	 * Generate the Transifex resource name associated with an add-on.
 	 * @param name Name of the add-on.
 	 * @return Transifex resource name.
 	 */
-	public static String toTransifexResource ( String name ) {
+	public static String toTransifexResource(String name) {
 		return "widelands-addons." + name.replaceAll("[._]", "-");
 	}
 
