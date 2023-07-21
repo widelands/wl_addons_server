@@ -46,8 +46,7 @@ public class UpdateList {
 
 		public String descname, descr, author, category, new_version, minWLVersion, maxWLVersion,
 		    syncSafe;
-		public final List<String>
-		requires, dirs, files, locales, checksums, screenies;
+		public final List<String> requires, dirs, files, locales, checksums, screenies;
 		public final List<Long> sizes;
 		public long totalSize;
 
@@ -161,8 +160,7 @@ public class UpdateList {
 						if (arg.equalsIgnoreCase("true")) d.syncSafe = "sync_safe";
 						break;
 					case "requires":
-						for (String req : arg.split(",")) d.requires
-						.add(req);
+						for (String req : arg.split(",")) d.requires.add(req);
 						break;
 					default:
 						break;
