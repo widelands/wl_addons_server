@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 03:06+0200\n"
+"POT-Creation-Date: 2023-07-22 03:05+0200\n"
 "PO-Revision-Date: 2023-07-19 18:08+0000\n"
 "Language-Team: Polish (https://app.transifex.com/widelands/teams/35159/pl/)\n"
 "Language: pl\n"
@@ -24,11 +24,12 @@ msgid "Editor: Swap Terrains"
 msgstr ""
 
 #: addons/editor_swap_terrains.wad/addon:3
-msgid "A plugin for the editor to easily swap two terrain types."
+msgid ""
+"A plugin for the editor to easily replace or swap two terrain types globally."
 msgstr ""
 
 #: addons/editor_swap_terrains.wad/init.lua:8
-#: addons/editor_swap_terrains.wad/show_window.lua:23
+#: addons/editor_swap_terrains.wad/show_window.lua:24
 msgid "Swap Terrains"
 msgstr ""
 
@@ -36,10 +37,19 @@ msgstr ""
 msgid "Globally exchange two terrains with each other"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:67
+#: addons/editor_swap_terrains.wad/show_window.lua:77
+msgid "Replace"
+msgstr ""
+
+#: addons/editor_swap_terrains.wad/show_window.lua:78
+msgid ""
+"Globally replace all occurrences of the left terrain with the right terrain"
+msgstr ""
+
+#: addons/editor_swap_terrains.wad/show_window.lua:90
 msgid "Swap"
 msgstr ""
 
-#: addons/editor_swap_terrains.wad/show_window.lua:68
-msgid "Swap the two selected terrains"
+#: addons/editor_swap_terrains.wad/show_window.lua:91
+msgid "Globally swap the two selected terrains"
 msgstr ""

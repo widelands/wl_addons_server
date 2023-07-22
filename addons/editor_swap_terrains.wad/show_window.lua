@@ -12,9 +12,10 @@ all_terrains[1].select = true
 
 local listw = wl.ui.MapView().width // 3
 local listh = wl.ui.MapView().height // 2
+local buttonw = listw // 2
 
 local spacing = 16
-local buttonh = 24
+local buttonh = 28
 
 wl.ui.MapView():create_child({
 	widget   = "unique_window",
@@ -62,41 +63,41 @@ wl.ui.MapView():create_child({
 				value  = spacing,
 			},
 			{
-				widget   = "button",
-				name     = "ok",
-				title    = _("Swap"),
-				tooltip  = _("Swap the two selected terrains"),
-				style    = "primary",
-				w        = listw,
-				h        = buttonh,
-				on_click = [[
-					local map = wl.Editor and wl.Editor().map or wl.Game().map
-					local window = wl.ui.MapView():get_child("swap_terrains_plugin_window")
-
-					local progressbarbox = window:get_child("progressbarbox")
-					local progressbar = progressbarbox:get_child("progress")
-					progressbar.state = 0
-					progressbar.total = map.width
-					progressbarbox.visible = true
-
-					local t1 = window:get_child("list1").selection
-					local t2 = window:get_child("list2").selection
-					if t1 == nil or t2 == nil or t1 == t2 then return end
-
-					for x = 0, map.width - 1 do
-						for y = 0, map.height - 1 do
-							local f = map:get_field(x, y)
-							if     f.terr == t1 then f.terr = t2
-							elseif f.terr == t2 then f.terr = t1 end
-							if     f.terd == t1 then f.terd = t2
-							elseif f.terd == t2 then f.terd = t1 end
-						end
-						progressbar.state = x
-						window:force_redraw()
-					end
-
-					progressbarbox.visible = false
-				]]
+				widget      = "box",
+				name        = "buttons_box",
+				orientation = "horz",
+				resizing    = "fullsize",
+				children    = {
+					{
+						widget = "inf_space",
+					},
+					{
+						widget   = "button",
+						name     = "ok_unidir",
+						title    = _("Replace"),
+						tooltip  = _("Globally replace all occurrences of the left terrain with the right terrain"),
+						style    = "primary",
+						w        = buttonw,
+						h        = buttonh,
+						on_click = [[ include("addons/editor_swap_terrains.wad/callback.lua"); editor_swap_terrains_action(false) ]],
+					},
+					{
+						widget = "inf_space",
+					},
+					{
+						widget   = "button",
+						name     = "ok_bidir",
+						title    = _("Swap"),
+						tooltip  = _("Globally swap the two selected terrains"),
+						style    = "primary",
+						w        = buttonw,
+						h        = buttonh,
+						on_click = [[ include("addons/editor_swap_terrains.wad/callback.lua"); editor_swap_terrains_action(true) ]],
+					},
+					{
+						widget = "inf_space",
+					},
+				},
 			},
 			{
 				widget      = "box",
