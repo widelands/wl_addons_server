@@ -38,6 +38,12 @@ source_file  = po/Maps_from_Teayo.wad/Maps_from_Teayo.wad.pot
 type         = PO
 minimum_perc = 0
 
+[o:widelands:p:widelands-addons:r:Naval-Tournament-23-Maps-wad]
+file_filter  = po/Naval_Tournament_23_Maps.wad/<lang>.po
+source_file  = po/Naval_Tournament_23_Maps.wad/Naval_Tournament_23_Maps.wad.pot
+type         = PO
+minimum_perc = 0
+
 [o:widelands:p:widelands-addons:r:SP-Scenario-Along-the-River-wad]
 file_filter = po/SP_Scenario_Along_the_River.wad/<lang>.po
 source_file = po/SP_Scenario_Along_the_River.wad/SP_Scenario_Along_the_River.wad.pot
