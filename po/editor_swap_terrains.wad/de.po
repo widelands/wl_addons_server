@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Stephan Lutz <stephan-lutz@gmx.de>, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-22 03:05+0200\n"
+"POT-Creation-Date: 2023-07-26 03:06+0200\n"
 "PO-Revision-Date: 2023-07-19 18:08+0000\n"
+"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -19,35 +23,39 @@ msgstr ""
 
 #: addons/editor_swap_terrains.wad/addon:2
 msgid "Editor: Swap Terrains"
-msgstr ""
+msgstr "Editor: Geländearten tauschen"
 
 #: addons/editor_swap_terrains.wad/addon:3
 msgid ""
 "A plugin for the editor to easily replace or swap two terrain types globally."
 msgstr ""
+"Eine Erweiterung für den Editor um zwei Geländearten auf der ganzen Karte "
+"einfach zu ersetzen oder auszutauschen."
 
 #: addons/editor_swap_terrains.wad/init.lua:8
 #: addons/editor_swap_terrains.wad/show_window.lua:24
 msgid "Swap Terrains"
-msgstr ""
+msgstr "Tausche Geländearten"
 
 #: addons/editor_swap_terrains.wad/init.lua:9
 msgid "Globally exchange two terrains with each other"
-msgstr ""
+msgstr "Tausche zwei Geländearten auf der Karte miteinander aus"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:77
 msgid "Replace"
-msgstr ""
+msgstr "Ersetzen"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:78
 msgid ""
 "Globally replace all occurrences of the left terrain with the right terrain"
 msgstr ""
+"Ersetze alle Vorkommen der linken Geländeart auf der ganzen Karte mit der "
+"rechten Geländeart"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:90
 msgid "Swap"
-msgstr ""
+msgstr "Tausche"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:91
 msgid "Globally swap the two selected terrains"
-msgstr ""
+msgstr "Tausche die beiden ausgewählten Geländearten auf der Karte miteinander"
