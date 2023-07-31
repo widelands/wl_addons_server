@@ -602,6 +602,11 @@ public class ServerUtils {
 				smallest_map_version = map_version;
 		}
 
+		if (smallest_map_version == null) {
+			_addon_min_version_cache.put(addon, nominal_min_wl_version);
+			return nominal_min_wl_version;
+		}
+
 		int[] min_version = string_to_version(nominal_min_wl_version);
 		if (less(min_version, smallest_map_version)) min_version = smallest_map_version;
 
