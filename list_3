@@ -1,5 +1,5 @@
 3
-57
+58
 1v1_high_level_map_pool.wad
 1v1 High Level Map Pool
 For high level 1v1 Gameplay add the-x addon
@@ -532,7 +532,7 @@ Nilpanda
 
 sync_safe
 1666688231
-300
+302
 0
 0
 0
@@ -632,11 +632,11 @@ sync_safe
 0
 0
 0
-0
+1
 0
 0
 2
-10
+11
 1081824
 maps
 0
@@ -742,7 +742,7 @@ a31801ed68624f1fc1a757063984c138
 d5eade64108b902b76573bd5dc86b660
 9326999e02a9eaff147641014fc25eae
 9f406f66f4995e0dd729202c70908998
-7920aa286a5d4e2a962742c380f7ef50
+6aeca75a1ce33c35ca2712bc3448ce08
 fc7273caac61bcee7e4cc8e7b974368a
 e55d27ccd51c459feeaaa5857b1782a5
 13
@@ -782,7 +782,7 @@ hessenfarmer
 
 sync_safe
 1690230129
-8
+9
 0
 0
 0
@@ -1297,7 +1297,7 @@ TRueDesk
 
 sync_safe
 1666686938
-284
+286
 0
 0
 0
@@ -1899,7 +1899,7 @@ Solstice_s_Return
 
 sync_safe
 1657988804
-278
+280
 0
 0
 0
@@ -2230,7 +2230,7 @@ Nordfriese
 
 sync_safe
 1600000000
-340
+341
 0
 0
 0
@@ -2537,6 +2537,98 @@ f96d1e4184ae81b733f779e0257d0726
 0378e611fc8cfcc195bfa80c2b8144f9
 0
 verified
+editor_copy_area.wad
+Editor: Copy Area
+A plugin for the editor to copy the contents of a map region to another region.
+Nordfriese
+Nordfriese
+1.2
+
+sync_safe
+1691145323
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1.0
+1
+16781
+ui_plugin
+0
+0
+6
+addon
+callback.lua
+icon.png
+icon32.png
+init.lua
+show_window.lua
+23
+bg.mo
+ca.mo
+cs.mo
+da.mo
+de.mo
+en_GB.mo
+eo.mo
+es.mo
+fi.mo
+fr.mo
+gd.mo
+hu.mo
+it.mo
+ja.mo
+ko.mo
+nds.mo
+nl.mo
+pl.mo
+pt.mo
+pt_BR.mo
+ru.mo
+sk.mo
+sv.mo
+29
+c153cfb0110c0bdedca9d28e541b835a
+391a04731cdced7dfe85b319170489e6
+a9663798d897da8ade2f4a0715638931
+aef09956b3ca8ff5562b113cea791d43
+09c51c75a8619ac08a660dfbb1bd870e
+f4e20c8dc6922acdaf23c971069e6214
+041298c8c8f2f85b00e8902757eeb66c
+9b6937549c6257141ba98a4014deebbb
+a6d2db81a14f19940ef6c0dee7ad4c3e
+3f211f75e3753006db8a6607bd7e3022
+098230228b95727741130599e2061b9f
+6234552fc10d470b9d3518c5f262effb
+c9d14b411adcc53d878e0c415866e2af
+ea9683a6d2472d126dd9430c411213d3
+97b72cf3847ad8609fd744dccecb6e5f
+6e9f8fa230ab37d35e824591bc592754
+31e0f6a0d59fea29a2a5048c7a95560b
+dae63c57f51ec2044091cb9b01dc3bd7
+8c14e7ff2215c08c238a73b954700c2c
+b7cf9d60dc31724409d77eeb4e503418
+c2667e9340d4d6011f94ba56dc850ad6
+5774fa9d48418a3cfcb4fc58fbfed06b
+57faacd6b725476c66405d99e8237a55
+8ad2e5c3cb891a00810b938c848dca33
+086c9ab242ed5665fb7d8c7f7d3c07e9
+638d9d0cd1083c2a16bf0c01b0ea1717
+0b8d0995e81d0745b448a30e54eb0469
+2f18649b010190c2dc1ff479705b359b
+966c76412a174d76e1b0c9105338360a
+1
+image1691148857711.png
+Create perfectly repetitive maps with ease
+verified
 editor_swap_terrains.wad
 Editor: Swap Terrains
 A plugin for the editor to easily replace or swap two terrain types globally.
@@ -2804,7 +2896,7 @@ MarkMcWire
 
 sync_safe
 1621788282
-773
+775
 0
 0
 0
@@ -17737,7 +17829,7 @@ kaputtnik
 
 sync_safe
 1616241721
-121
+122
 0
 0
 0
@@ -17819,7 +17911,7 @@ Nordfriese
 
 sync_safe
 1600000000
-210
+211
 0
 0
 0
@@ -17903,7 +17995,7 @@ Nordfriese
 
 sync_safe
 1600000000
-263
+264
 0
 0
 0
@@ -18305,7 +18397,7 @@ Nordfriese
 
 sync_safe
 1600000000
-434
+435
 0
 0
 0
@@ -19564,7 +19656,7 @@ kaputtnik
 
 sync_safe
 1600000000
-168
+170
 0
 0
 0
@@ -22603,7 +22695,7 @@ Yo...
 
 sync_safe
 1622321739
-155
+156
 0
 0
 0
@@ -22923,7 +23015,7 @@ Nordfriese
 
 sync_safe
 1600000000
-171
+172
 0
 0
 0
@@ -23459,7 +23551,7 @@ OIPUN
 
 sync_safe
 1622916439
-222
+223
 0
 0
 0
