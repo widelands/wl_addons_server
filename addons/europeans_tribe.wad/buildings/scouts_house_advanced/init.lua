@@ -51,8 +51,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "meal", amount = 2 },
-        { name = "wine", amount = 2 }
+        { name = "coin_wood", amount = 2 }
     },
 
     programs = {
@@ -60,7 +59,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start scouting because ...
             descname = _"scouting",
             actions = {
-                "consume=meal wine",
+                "return=skipped when economy needs coin_wood",
+                "consume=coin_wood",
                 "sleep=duration:30s",
                 "callworker=scout"
             }
@@ -68,7 +68,7 @@ wl.Descriptions():new_productionsite_type {
         targeted_scouting = {
             descname = _"scouting",
             actions = {
-                "consume=meal wine",
+                "consume=coin_wood",
                 "callworker=targeted_scouting"
             }
         },

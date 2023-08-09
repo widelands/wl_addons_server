@@ -64,8 +64,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "ration", amount = 4 },
-        { name = "beer", amount = 4 }
+        { name = "coin_wood", amount = 4 }
     },
 
     programs = {
@@ -75,18 +74,17 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs coal or economy needs granite or economy needs diamond or workers need experience",
                 "call=mine_stone_basic",
-                "return=skipped unless site has ration:3",
-                "return=skipped unless site has beer:3",
-                "consume=ration beer",
+                "return=skipped unless site has coin_wood:3",
+                "consume=coin_wood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=ration beer",
+                "consume=coin_wood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=ration beer",
+                "consume=coin_wood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_diamond",
@@ -113,8 +111,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "return=skipped unless economy needs granite",
-                "return=skipped when site has ration:3",
-                "return=skipped when site has beer:3",
+                "return=skipped when site has coin_wood:3",
                 "animate=working duration:30s",
                 "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:10%",
                 "produce=granite",
@@ -132,7 +129,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=ration:3 beer:3",
+                "consume=coin_wood:3",
                 "produce=coal:4 granite:3 diamond",
             }
         },

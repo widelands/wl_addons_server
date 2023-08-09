@@ -47,8 +47,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "snack", amount = 2 },
-        { name = "mead", amount = 2 }
+        { name = "coin_wood", amount = 2 }
     },
 
     programs = {
@@ -56,7 +55,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start scouting because ...
             descname = pgettext("europeans_building", "scouting"),
             actions = {
-                "consume=snack mead",
+                "return=skipped when economy needs coin_wood",
+                "consume=coin_wood",
                 "sleep=duration:30s",
                 "callworker=scout"
             }
@@ -64,7 +64,7 @@ wl.Descriptions():new_productionsite_type {
         targeted_scouting = {
             descname = pgettext("europeans_building", "scouting"),
             actions = {
-                "consume=snack mead",
+                "consume=coin_wood",
                 "callworker=targeted_scouting"
             }
         },

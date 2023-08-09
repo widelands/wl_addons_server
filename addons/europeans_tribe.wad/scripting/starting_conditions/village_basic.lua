@@ -79,10 +79,10 @@ local init = {
       }
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_well_basic", sf:region(6), {
+    place_building_in_region(player, "europeans_well_basic", sf:region(8), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_well_basic", sf:region(6), {
+    place_building_in_region(player, "europeans_well_basic", sf:region(8), {
     })
     sleep(5000)
     place_building_in_region(player, "europeans_well_basic", sf:region(8), {
@@ -91,20 +91,24 @@ local init = {
     place_building_in_region(player, "europeans_well_basic", sf:region(8), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_farm_basic", sf:region(16), {
-        inputs = {water = 6},
-    })
-    sleep(5000)
-    place_building_in_region(player, "europeans_farm_basic", sf:region(16), {
-        inputs = {water = 6},
-    })
-    sleep(5000)
-    place_building_in_region(player, "europeans_farm_medium_basic", sf:region(12), {
+    place_building_in_region(player, "europeans_farm_medium_basic", sf:region(16), {
         inputs = {water = 4},
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_farm_medium_basic", sf:region(12), {
+    place_building_in_region(player, "europeans_farm_medium_basic", sf:region(16), {
         inputs = {water = 4},
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_sawmill_basic", sf:region(12), {
+        inputs = {log = 4},
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_weaving_mill_basic", sf:region(12), {
+        inputs = {reed = 4},
+    })
+    sleep(5000)
+    place_building_in_region(player, "europeans_stonemasons_house_basic", sf:region(12), {
+        inputs = {water = 6, granite = 6, coal = 4},
     })
     sleep(5000)
     place_building_in_region(player, "europeans_lumberjacks_house_basic", sf:region(12), {
