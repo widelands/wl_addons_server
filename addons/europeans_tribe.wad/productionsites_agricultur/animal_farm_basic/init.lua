@@ -59,10 +59,22 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=feed_idle",
                 "call=produce_cattle",
                 "call=produce_meat",
-                "call=produce_meat_idle",
                 "return=skipped"
+            }
+        },
+        feed_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs meat or economy needs leather",
+                "return=skipped when economy needs water",
+                "return=skipped when economy needs flour or economy needs beer",
+                "consume=water:2 wheat rye barley",
+                "animate=working duration:60s",
+                "sleep=duration:120s"
             }
         },
         produce_cattle = {
@@ -110,19 +122,6 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:15s",
                 "produce=meat:2 leather"
            }
-        },
-        produce_meat_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs meat",
-                "return=skipped when economy needs water",
-                "return=skipped when economy needs flour or economy needs beer",
-                "consume=water:2 wheat rye,barley",
-                "animate=working duration:60s",
-                "produce=meat leather",
-                "sleep=duration:120s"
-            }
         }
     },
 }

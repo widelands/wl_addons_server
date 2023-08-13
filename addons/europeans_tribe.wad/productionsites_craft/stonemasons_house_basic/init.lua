@@ -61,7 +61,6 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=mixing_grout",
-                "call=mixing_grout_idle",
                 "return=skipped"
             }
         },
@@ -69,9 +68,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
             descname = pgettext("europeans_building", "mixing grout"),
             actions = {
-                "return=skipped when economy needs granite",
+                "return=skipped unless economy needs grout or workers need experience",
                 "return=skipped when economy needs water and not economy needs grout",
                 "return=skipped when economy needs coal and not economy needs grout",
+                "return=skipped when economy needs granite",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has granite:3",
                 "return=skipped unless site has water:3",
@@ -82,24 +82,6 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/mortar priority:60%",
                 "animate=working duration:5s",
                 "produce=grout:3"
-            }
-        },
-        mixing_grout_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs grout",
-                "return=skipped when economy needs granite",
-                "return=skipped when economy needs coal and not workers need experience",
-                "return=skipped when economy needs water and not workers need experience",
-                "consume=coal granite",
-                "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:55s",
-                "consume=water",
-                "playsound=sound/barbarians/mortar priority:60%",
-                "animate=working duration:5s",
-                "produce=grout",
-                "sleep=duration:240s"
             }
         }
     },

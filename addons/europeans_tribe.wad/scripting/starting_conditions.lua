@@ -261,6 +261,78 @@ function place_port(player, startx, starty, radius)
     end
 end
 
+function balance_warehouse_wares(player)
+    local game = wl.Game()
+    local map = game.map
+    local tribe = player.tribe
+    
+    for i, ware in ipairs(tribe.wares) do
+        for k, building in ipairs(player:get_buildings("europeans_headquarters")) do
+            if (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) then
+                building:set_warehouse_policies(ware.name, "dontstock")
+            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) or (building:get_wares(ware.name) < 2) then
+                building:set_warehouse_policies(ware.name, "prefer")
+            else
+                building:set_warehouse_policies(ware.name, "normal")
+            end
+        end
+        for k, building in ipairs(player:get_buildings("europeans_warehouse")) do
+            if (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) then
+                building:set_warehouse_policies(ware.name, "dontstock")
+            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) or (building:get_wares(ware.name) < 2) then
+                building:set_warehouse_policies(ware.name, "prefer")
+            else
+                building:set_warehouse_policies(ware.name, "normal")
+            end
+        end
+        for k, building in ipairs(player:get_buildings("europeans_port")) do
+            if (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) then
+                building:set_warehouse_policies(ware.name, "dontstock")
+            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) or (building:get_wares(ware.name) < 2) then
+                building:set_warehouse_policies(ware.name, "prefer")
+            else
+                building:set_warehouse_policies(ware.name, "normal")
+            end
+        end
+    end
+end
+
+function balance_workerhouse_workers(player)
+    local game = wl.Game()
+    local map = game.map
+    local tribe = player.tribe
+    
+    for i, worker in ipairs(tribe.workers) do
+        for k, building in ipairs(player:get_buildings("europeans_headquarters")) do
+            if (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.5)) then
+                building:set_warehouse_policies(worker.name, "dontstock")
+            elseif (building:get_workers(worker.name) < building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name)) or (building:get_workers(worker.name) < 1) then
+                building:set_warehouse_policies(worker.name, "prefer")
+            else
+                building:set_warehouse_policies(worker.name, "normal")
+            end
+        end
+        for k, building in ipairs(player:get_buildings("europeans_warehouse")) do
+            if (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.5)) then
+                building:set_warehouse_policies(worker.name, "dontstock")
+            elseif (building:get_workers(worker.name) < building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name)) or (building:get_workers(worker.name) < 1) then
+                building:set_warehouse_policies(worker.name, "prefer")
+            else
+                building:set_warehouse_policies(worker.name, "normal")
+            end
+        end
+        for k, building in ipairs(player:get_buildings("europeans_port")) do
+            if (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.5)) then
+                building:set_warehouse_policies(worker.name, "dontstock")
+            elseif (building:get_workers(worker.name) < building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name)) or (building:get_workers(worker.name) < 1) then
+                building:set_warehouse_policies(worker.name, "prefer")
+            else
+                building:set_warehouse_policies(worker.name, "normal")
+            end
+        end
+    end
+end
+
 function change_idle_stopped_buildings(player, productivity_threshold)
     local game = wl.Game()
     N = (get_build_id():find("1.0") ~= 1)

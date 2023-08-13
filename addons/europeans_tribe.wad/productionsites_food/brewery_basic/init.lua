@@ -58,7 +58,6 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=brew_beer",
-                "call=brew_beer_idle",
                 "return=skipped"
             }
         },
@@ -66,25 +65,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
             descname = pgettext("europeans_building", "brewing beer"),
             actions = {
-                "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped unless economy needs beer or workers need experience",
+                "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
                 "animate=working duration:45s",
                 "produce=beer"
-            }
-        },
-        brew_beer_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs beer",
-                "return=skipped when economy needs water",
-                "consume=water barley",
-                "animate=working duration:45s",
-                "produce=beer",
-                "sleep=duration:120s"
             }
         }
     },

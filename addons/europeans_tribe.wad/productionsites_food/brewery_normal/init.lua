@@ -55,7 +55,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=brew_beer",
                 "call=brew_mead",
                 "call=brew_strong_beer",
-                "call=brew_mead_idle",
                 "return=skipped"
             }
         },
@@ -63,8 +62,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
             descname = pgettext("europeans_building", "brewing beer"),
             actions = {
-                "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped unless economy needs beer or workers need experience",
+                "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped when site has honey and economy needs mead and not economy needs beer",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs beer",
                 "return=skipped unless site has water",
@@ -78,8 +77,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
             descname = pgettext("europeans_building", "brewing mead"),
             actions = {
-                "return=skipped when economy needs water and not economy needs mead",
                 "return=skipped unless economy needs mead or workers need experience",
+                "return=skipped when economy needs water and not economy needs mead",
                 "return=skipped when site has barley and economy needs beer and not economy needs mead",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
                 "return=skipped unless site has water",
@@ -94,8 +93,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
             descname = pgettext("europeans_building", "brewing strong beer"),
             actions = {
-                "return=skipped when economy needs water and not economy needs beer_strong",
                 "return=skipped unless economy needs beer_strong or workers need experience",
+                "return=skipped when economy needs water and not economy needs beer_strong",
                 "return=skipped when site has barley and economy needs beer and not economy needs beer_strong",
                 "return=skipped when site has honey and economy needs mead and not economy needs beer_strong",
                 "return=skipped unless site has water",
@@ -103,28 +102,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water barley",
                 "animate=working duration:30s",
                 "produce=beer_strong"
-            }
-        },
-        brew_mead_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs beer",
-                "return=skipped when economy needs beer_strong",
-                "return=skipped when economy needs mead",
-                "return=skipped when economy needs water",
-                "consume=water barley",
-                "animate=working duration:30s",
-                "produce=beer",
-                "sleep=duration:30s",
-                "consume=water barley",
-                "animate=working duration:30s",
-                "produce=beer_strong",
-                "sleep=duration:30s",
-                "consume=water barley honey",
-                "animate=working duration:30s",
-                "produce=mead",
-                "sleep=duration:90s"
             }
         }
     },

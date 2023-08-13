@@ -50,7 +50,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=sculpting_marble_column",
                 "call=mixing_grout",
                 "call=burning_bricks",
-                "call=burning_bricks_idle",
                 "return=skipped"
             }
         },
@@ -58,9 +57,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
             descname = pgettext("europeans_building", "mixing grout"),
             actions = {
-                "return=skipped when economy needs granite",
+                "return=skipped unless economy needs grout or workers need experience",
                 "return=skipped when economy needs water and not economy needs grout",
                 "return=skipped when economy needs coal and not economy needs grout",
+                "return=skipped when economy needs granite",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has granite:3",
                 "return=skipped unless site has water:3",
@@ -76,8 +76,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
             descname = pgettext("europeans_building", "burning bricks"),
             actions = {
-                "return=skipped when economy needs granite",
+                "return=skipped unless economy needs brick or workers need experience",
                 "return=skipped when economy needs coal and not economy needs brick",
+                "return=skipped when economy needs granite",
                 "return=skipped unless site has coal:2",
                 "return=skipped unless site has clay:3",
                 "consume=granite clay:3",
@@ -93,8 +94,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
             descname = pgettext("europeans_building", "sculpting a marble column"),
             actions = {
-                "return=skipped when economy needs marble",
                 "return=skipped unless economy needs marble_column or workers need experience",
+                "return=skipped when economy needs marble",
                 "return=skipped unless site has marble:4",
                 "consume=marble:3",
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",
@@ -104,34 +105,6 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",
                 "animate=working duration:30s",
                 "produce=marble_column:2"
-            }
-        },
-        burning_bricks_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs marble_column",
-                "return=skipped when economy needs brick",
-                "return=skipped when economy needs grout",
-                "return=skipped when economy needs granite",
-                "return=skipped when economy needs coal",
-                "return=skipped when economy needs water",
-                "consume=granite clay",
-                "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:5s",
-                "consume=coal",
-                "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:25s",
-                "produce=brick",
-                "sleep=duration:180s",
-                "consume=coal granite",
-                "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:25s",
-                "consume=water",
-                "playsound=sound/barbarians/mortar priority:60%",
-                "animate=working duration:5s",
-                "produce=grout",
-                "sleep=duration:180s"
             }
         }
     },

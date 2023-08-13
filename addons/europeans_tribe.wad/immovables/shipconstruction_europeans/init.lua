@@ -15,11 +15,10 @@ wl.Descriptions():new_immovable_type {
         }
     },
     buildcost = {
-        planks = 10,
+        planks = 8,
         blackwood = 2,
         cloth = 4,
-        quartz = 1,
-        diamond = 1
+        reed = 2
     },
 
     animation_directory = dirname,

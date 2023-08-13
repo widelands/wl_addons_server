@@ -63,27 +63,14 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=produce_armor",
                 "call=produce_cloth",
-                "call=produce_cloth_idle",
                 "return=skipped"
-            }
-        },
-        produce_armor = {
-            -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
-            descname = pgettext("europeans_building", "tailoring a suit of armor"),
-            actions = {
-                "return=skipped when economy needs cloth and not economy needs armor",
-                "return=skipped when economy needs reed and not economy needs armor",
-                "return=skipped unless site has reed:2",
-                "consume=reed:2",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:60s",
-                "produce=armor"
             }
         },
         produce_cloth = {
             -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
+                "return=skipped unless economy needs cloth or workers need experience",
                 "return=skipped when economy needs armor and not economy needs cloth",
                 "return=skipped when economy needs reed and not economy needs cloth",
                 "return=skipped unless site has reed:2",
@@ -93,17 +80,18 @@ wl.Descriptions():new_productionsite_type {
                 "produce=cloth:2"
             }
         },
-        produce_cloth_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
+        produce_armor = {
+            -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
+            descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
-                "return=skipped when economy needs cloth",
-                "return=skipped when economy needs reed and not workers need experience",
-                "consume=reed",
-                "playsound=sound/barbarians/weaver priority:90%",
+                "return=skipped unless economy needs armor or workers need experience",
+                "return=skipped when economy needs cloth and not economy needs armor",
+                "return=skipped when economy needs reed and not economy needs armor",
+                "return=skipped unless site has reed:2",
+                "consume=reed:2",
+                "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:60s",
-                "produce=cloth",
-                "sleep=duration:180s"
+                "produce=armor"
             }
         }
     },

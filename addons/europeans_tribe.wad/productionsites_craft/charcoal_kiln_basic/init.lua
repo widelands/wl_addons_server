@@ -69,7 +69,6 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=burn_wood",
-                "call=burn_wood_idle",
                 "return=skipped"
             }
         },
@@ -82,17 +81,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=scrap_wood:3",
                 "animate=working duration:90s",
                 "produce=coal"
-            }
-        },
-        burn_wood_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs coal",
-                "consume=scrap_wood:3",
-                "animate=working duration:90s",
-                "produce=coal",
-                "sleep=duration:60s"
             }
         }
     },

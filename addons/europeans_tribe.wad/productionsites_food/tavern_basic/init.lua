@@ -70,7 +70,6 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_ration",
-                "call=produce_ration_idle",
                 "return=skipped"
             }
         },
@@ -78,8 +77,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
             descname = pgettext("europeans_building", "preparing a ration"),
             actions = {
-                "return=skipped when economy needs water and not economy needs ration",
                 "return=skipped unless economy needs ration or workers need experience",
+                "return=skipped when economy needs water and not economy needs ration",
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "return=skipped unless site has meat or site has fish",
@@ -88,20 +87,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=fish,meat",
                 "animate=working duration:20s",
                 "produce=ration:2"
-            }
-        },
-        produce_ration_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs ration",
-                "return=skipped when economy needs water",
-                "consume=water flour",
-                "animate=working duration:40s",
-                "consume=fish,meat",
-                "animate=working duration:20s",
-                "produce=ration",
-                "sleep=duration:120s"
             }
         }
     },

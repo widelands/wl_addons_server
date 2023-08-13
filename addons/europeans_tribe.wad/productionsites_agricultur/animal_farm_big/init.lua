@@ -17,7 +17,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 89, 82 },
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          frames = 1,
          columns = 1,
          rows = 1,
@@ -46,6 +46,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=feed_idle",
                 "call=produce_wool",
                 "call=produce_wool",
                 "call=produce_meat",
@@ -55,9 +56,20 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_cattle",
                 "call=produce_donkey",
                 "call=produce_horse",
-                "call=produce_meat_idle",
-                "call=produce_fish_idle",
                 "return=skipped"
+            }
+        },
+        feed_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs meat or economy needs leather or economy needs fish or economy needs wool",
+                "return=skipped when economy needs europeans_carrier_ox or economy needs europeans_carrier_donkey or economy needs europeans_carrier_horse",
+                "return=skipped when economy needs water",
+                "return=skipped when economy needs flour or economy needs beer",
+                "consume=water:2 corn blackroot fruit",
+                "animate=working duration:60s",
+                "sleep=duration:120s"
             }
         },
         produce_wool = {
@@ -175,30 +187,6 @@ wl.Descriptions():new_productionsite_type {
                 "produce=fish:4"
             }
         },
-        produce_meat_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs meat",
-                "return=skipped when economy needs water",
-                "consume=water:2 blackroot corn fruit",
-                "animate=working duration:60s",
-                "produce=meat leather",
-                "sleep=duration:90s"
-            }
-        },
-        produce_fish_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs fish",
-                "return=skipped when economy needs water",
-                "consume=water:2 blackroot corn fruit",
-                "animate=working duration:60s",
-                "produce=fish",
-                "sleep=duration:90s"
-            }
-        }
     },
 }
 

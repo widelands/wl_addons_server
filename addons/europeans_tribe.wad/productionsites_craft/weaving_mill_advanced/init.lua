@@ -54,7 +54,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=produce_cloth",
                 "call=produce_armor",
-                "call=produce_armor_idle",
                 "return=skipped"
             }
         },
@@ -80,22 +79,6 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:30s",
                 "produce=armor:2"
-            }
-        },
-        produce_armor_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs armor",
-                "consume=reed",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:30s",
-                "produce=cloth",
-                "consume=wool,reed",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:30s",
-                "produce=armor",
-                "sleep=duration:180s"
             }
         }
     },

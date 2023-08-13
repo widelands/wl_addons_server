@@ -45,7 +45,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=saw_log",
                 "call=hardening_wood",
-                "call=saw_log_idle",
                 "return=skipped"
             }
         },
@@ -53,8 +52,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
             descname = pgettext("europeans_building", "sawing logs"),
             actions = {
+                "return=skipped unless economy needs planks or economy needs scrap_wood or workers need experience",
                 "return=skipped when economy needs blackwood and not economy needs planks",
-                "return=skipped unless economy needs planks or workers need experience",
+                "return=skipped when economy needs log and not economy needs planks",
                 "return=skipped unless site has log:2",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
@@ -70,8 +70,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
+                "return=skipped unless economy needs blackwood or economy needs scrap_wood or workers need experience",
                 "return=skipped when economy needs planks and not economy needs blackwood",
-                "return=skipped unless economy needs blackwood or workers need experience",
+                "return=skipped when economy needs log and not economy needs blackwood",
                 "return=skipped unless site has log:2",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -81,30 +82,6 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:15s",
                 "produce=scrap_wood:2",
                 "produce=blackwood:2"
-            }
-        },
-        saw_log_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs blackwood",
-                "return=skipped when economy needs planks",
-                "return=skipped when economy needs log",
-                "return=skipped unless site has log:3",
-                "consume=log",
-                "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:30s",
-                "sleep=duration:30s",
-                "consume=log",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "consume=log",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:15s",
-                "produce=scrap_wood:3",
-                "produce=blackwood",
-                "produce=planks",
-                "sleep=duration:90s",
             }
         }
     },

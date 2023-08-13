@@ -46,8 +46,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=burn_wood",
                 "call=burn_log",
-                "call=burn_wood_idle",
-                "call=burn_log_idle",
                 "return=skipped"
             }
         },
@@ -72,29 +70,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log:8",
                 "animate=working duration:90s",
                 "produce=coal:5"
-            }
-        },
-        burn_wood_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs coal",
-                "consume=scrap_wood:3",
-                "animate=working duration:90s",
-                "produce=coal",
-                "sleep=duration:60s"
-            }
-        },
-        burn_log_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs coal",
-                "return=skipped when economy needs log or economy needs blackwood or economy needs planks",
-                "consume=log:4",
-                "animate=working duration:90s",
-                "produce=coal:2",
-                "sleep=duration:60s"
             }
         }
     },

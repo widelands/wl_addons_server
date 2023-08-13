@@ -562,7 +562,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "coin_wood",
-                default_target_quantity = 32,
+                default_target_quantity = 128,
                 preciousness = 4,
                 helptexts = {
                     purpose = {
@@ -573,7 +573,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "coin_copper",
-                default_target_quantity = 16,
+                default_target_quantity = 64,
                 preciousness = 8,
                 helptexts = {
                     purpose = {
@@ -584,7 +584,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "coin_silver",
-                default_target_quantity = 16,
+                default_target_quantity = 64,
                 preciousness = 16,
                 helptexts = {
                     purpose = {
@@ -595,7 +595,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "coin_gold",
-                default_target_quantity = 16,
+                default_target_quantity = 64,
                 preciousness = 32,
                 helptexts = {
                     purpose = {

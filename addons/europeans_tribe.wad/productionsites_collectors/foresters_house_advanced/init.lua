@@ -36,8 +36,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "callworker=check_space",
-                "call=plant_trees",
                 "call=plant_trees_idle",
+                "call=plant_trees",
                 "callworker=check_land",
                 "call=planting_land",
                 "return=skipped"

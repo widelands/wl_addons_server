@@ -77,7 +77,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=hardening_wood",
                 "call=saw_log",
-                "call=hardening_wood_idle",
                 "return=skipped"
             }
         },
@@ -85,6 +84,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
             descname = pgettext("europeans_building", "sawing logs"),
             actions = {
+                "return=skipped unless economy needs planks or economy needs scrap_wood or workers need experience",
                 "return=skipped when economy needs blackwood and not economy needs planks",
                 "return=skipped when economy needs log and not economy needs planks",
                 "return=skipped unless site has log:2",
@@ -102,6 +102,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
+                "return=skipped unless economy needs blackwood or economy needs scrap_wood or workers need experience",
                 "return=skipped when economy needs planks and not economy needs blackwood",
                 "return=skipped when economy needs log and not economy needs blackwood",
                 "return=skipped unless site has log:2",
@@ -114,22 +115,7 @@ wl.Descriptions():new_productionsite_type {
                 "produce=scrap_wood:2",
                 "produce=blackwood:2"
             }
-        },
-        hardening_wood_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs blackwood",
-                "return=skipped when economy needs planks",
-                "return=skipped when economy needs log",
-                "consume=log",
-                "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:60s",
-                "produce=scrap_wood",
-                "produce=blackwood",
-                "sleep=duration:180s"
-            }
-        },
+        }
     },
 }
 

@@ -79,8 +79,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs coin_wood",
-                "return=skipped when economy needs ration",
+                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
                 "return=skipped unless site has ration:4",
                 "return=failed unless site has planks",
                 "consume=ration:4 planks",
@@ -93,8 +92,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
                 "return=skipped unless economy needs coin_wood",
-                "return=skipped when economy needs beer",
                 "return=skipped unless site has beer:4",
                 "return=failed unless site has planks",
                 "consume=beer:4 planks",
@@ -107,14 +106,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs coin_wood or economy needs coin_copper",
-                "return=skipped when economy needs ration",
+                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "return=skipped unless site has gold",
                 "return=skipped unless site has ration:4",
                 "return=failed unless site has planks",
-                "consume=ration:4 planks gold",
+                "consume=ration:4 gold",
                 "animate=working duration:15s",
-                "produce=coin_wood:2 coin_copper:2",
+                "produce=coin_copper:4",
                 "sleep=duration:30s",
             }
         },
@@ -122,14 +120,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs coin_wood or economy needs coin_copper",
-                "return=skipped when economy needs beer",
+                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "return=skipped unless site has gold",
                 "return=skipped unless site has beer:4",
                 "return=failed unless site has planks",
-                "consume=beer:4 planks gold",
+                "consume=beer:4 gold",
                 "animate=working duration:15s",
-                "produce=coin_wood:2 coin_copper:2",
+                "produce=coin_copper:4",
                 "sleep=duration:30s",
             }
         },

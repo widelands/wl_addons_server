@@ -13,6 +13,10 @@ wl.Descriptions():new_productionsite_type {
       idle = {
          hotspot = { 46, 44 },
       },
+      working = {
+         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         hotspot = { 46, 44 },
+      },
     },
     
     size = "medium",
@@ -50,7 +54,7 @@ wl.Descriptions():new_productionsite_type {
     },
     
     inputs = {
-        { name = "water", amount = 4},
+        { name = "water", amount = 4 },
     },
     
     programs = {
@@ -59,10 +63,22 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "callworker=check_space",
+                "call=plant_idle",
                 "call=plant_reed",
                 "call=harvest_reed",
-                "call=plant_reed_idle",
                 "return=skipped"
+            }
+        },
+        plant_idle = {
+            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+            descname = _"idle program",
+            actions = {
+                "return=skipped when economy needs reed",
+                "return=skipped when economy needs water",
+                "consume=water",
+                "callworker=plant_reed",
+                "animate=working duration:3s",
+                "sleep=duration:60s"
             }
         },
         plant_reed = {
@@ -72,7 +88,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs reed or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
-                "callworker=plant_reed"
+                "callworker=plant_reed",
+                "animate=working duration:3s"
             }
         },
         harvest_reed = {
@@ -80,18 +97,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
                 "return=skipped unless economy needs reed or workers need experience",
-                "callworker=harvest_reed"
-            }
-        },
-        plant_reed_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs reed",
-                "return=skipped when economy needs water",
-                "consume=water",
-                "callworker=plant_reed",
-                "sleep=duration:60s"
+                "callworker=harvest_reed",
+                "animate=working duration:3s",
+                "produce=reed"
             }
         },
     },

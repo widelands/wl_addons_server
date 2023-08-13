@@ -63,7 +63,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=produce_ration",
                 "call=produce_snack",
-                "call=produce_snack_idle",
                 "return=skipped"
             }
         },
@@ -71,9 +70,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing a ration because ...
             descname = pgettext("europeans_building", "preparing a ration"),
             actions = {
+                "return=skipped unless economy needs ration or workers need experience",
                 "return=skipped when economy needs snack and not economy needs ration",
                 "return=skipped when economy needs water and not economy needs ration",
-                "return=skipped unless economy needs ration or workers need experience",
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "return=skipped unless site has meat or site has fish",
@@ -88,9 +87,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start preparing a snack because ...
             descname = pgettext("europeans_building", "preparing a snack"),
             actions = {
+                "return=skipped unless economy needs snack or workers need experience",
                 "return=skipped when economy needs ration and not economy needs snack",
                 "return=skipped when economy needs water and not economy needs snack",
-                "return=skipped unless economy needs snack or workers need experience",
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "return=skipped unless site has meat or site has fish",
@@ -99,27 +98,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=fish,meat",
                 "animate=working duration:15s",
                 "produce=snack:2"
-            }
-        },
-        produce_snack_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs ration",
-                "return=skipped when economy needs snack",
-                "return=skipped when economy needs water",
-                "consume=water flour",
-                "animate=working duration:30s",
-                "consume=fish,meat",
-                "animate=working duration:15s",
-                "produce=ration",
-                "sleep=duration:30s",
-                "consume=water:2 flour:2",
-                "animate=working duration:30s",
-                "consume=fish,meat",
-                "animate=working duration:15s",
-                "produce=snack",
-                "sleep=duration:90s"
             }
         }
     },

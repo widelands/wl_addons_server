@@ -52,7 +52,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=produce_cloth",
                 "call=produce_armor",
-                "call=produce_armor_idle",
                 "return=skipped"
             }
         },
@@ -60,6 +59,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
+                "return=skipped unless economy needs cloth or workers need experience",
                 "return=skipped when economy needs armor and not economy needs cloth",
                 "return=skipped when economy needs reed and not economy needs cloth",
                 "return=skipped unless site has reed",
@@ -73,6 +73,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
+                "return=skipped unless economy needs armor or workers need experience",
                 "return=skipped when economy needs cloth and not economy needs armor",
                 "return=skipped when economy needs reed and not economy needs armor",
                 "return=skipped unless site has reed:2",
@@ -80,23 +81,6 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:45s",
                 "produce=armor"
-            }
-        },
-        produce_armor_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs armor",
-                "return=skipped when economy needs reed and not workers need experience",
-                "consume=reed",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:45s",
-                "produce=cloth",
-                "consume=reed",
-                "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:45s",
-                "produce=armor",
-                "sleep=duration:180s"
             }
         }
     },

@@ -65,12 +65,11 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
+        { name = "planks", amount = 8 },
+        { name = "cloth", amount = 4 },
         { name = "blackwood", amount = 2 },
-        { name = "planks", amount = 10 },
         { name = "reed", amount = 2 },
-        { name = "cloth", amount = 2 },
-        { name = "quartz", amount = 1 },
-        { name = "diamond", amount = 1 }
+        { name = "coin_copper", amount = 2 }
     },
 
     programs = {
@@ -79,6 +78,21 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=ship on failure fail",
+                "sleep=duration:25s",
+                "call=ship on failure fail",
+                "sleep=duration:25s",
+                "call=ship on failure fail",
+                "sleep=duration:25s",
+                "call=ship on failure fail",
+                "sleep=duration:25s",
+                "call=ship on failure fail",
+                "sleep=duration:25s",
+                "call=ship on failure fail",
+                "sleep=duration:25s",
+                "call=ship on failure fail",
+                "sleep=duration:25s",
+                "call=ship on failure fail",
+                "sleep=duration:25s",
                 "call=ship_preparation",
                 "return=completed"
             }
@@ -90,17 +104,16 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has blackwood",
                 "return=skipped when not site has planks",
                 "return=skipped when not site has cloth",
-                "return=skipped when not site has quartz",
-                "return=skipped when not site has diamond",
-                "sleep=duration:15s",
+                "return=skipped when not site has coin_copper",
+                "animate=working duration:25s",
                 "construct=europeans_shipconstruction worker:buildship radius:5",
-                "sleep=duration:15s",
             }
         },
         ship_preparation = {
             descname = _"working",
             actions = {
-                "animate=working duration:50s",
+                "consume=coin_copper",
+                "animate=working duration:40s",
             }
         },
     },

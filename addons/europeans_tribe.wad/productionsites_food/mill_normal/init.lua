@@ -58,7 +58,6 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_mixed_flour",
-                "call=produce_mixed_flour_idle",
                 "return=skipped"
             }
         },
@@ -77,21 +76,6 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
                 "animate=working duration:15s",
                 "produce=flour:2"
-            }
-        },
-        produce_mixed_flour_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs flour",
-                "consume=rye",
-                "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:15s",
-                "consume=wheat",
-                "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:15s",
-                "produce=flour",
-                "sleep=duration:120s"
             }
         }
     },
