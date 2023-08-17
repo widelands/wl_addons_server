@@ -29,7 +29,6 @@ wl.Descriptions():new_carrier_type {
             hotspot = { 19, 33 }
         },
         walkload = {
-            -- TODO(hessenfarmer): Make animation
             basename = "walk",
             fps = 10,
             frames = 20,

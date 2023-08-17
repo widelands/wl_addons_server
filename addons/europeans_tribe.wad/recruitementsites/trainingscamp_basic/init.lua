@@ -14,7 +14,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = {55, 49}
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          hotspot = {55, 49}
       }
     },

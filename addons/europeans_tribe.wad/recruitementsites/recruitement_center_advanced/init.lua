@@ -17,7 +17,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 87, 113 }
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          frames = 1,
          columns = 1,
          rows = 1,
@@ -37,18 +37,17 @@ wl.Descriptions():new_productionsite_type {
     
     inputs = {
         { name = "europeans_carrier", amount = 4 },
-        { name = "basket", amount = 2 },
+        { name = "basket", amount = 3 },
+        { name = "hammer", amount = 3 },
         { name = "buckets", amount = 2 },
+        { name = "felling_ax", amount = 2 },
+        { name = "scythe", amount = 2 },
         { name = "shovel", amount = 2 },
-        { name = "hammer", amount = 2 },
         { name = "saw", amount = 2 },
         { name = "pick", amount = 2 },
-        { name = "felling_ax", amount = 1 },
-        { name = "fire_tongs", amount = 1 },
-        { name = "needles", amount = 1 },
-        { name = "scythe", amount = 1 },
+        { name = "needles", amount = 2 },
+        { name = "fire_tongs", amount = 2 },
         { name = "bread_paddle", amount = 1 },
-        { name = "hook_pole", amount = 1 },
         { name = "kitchen_tools", amount = 1 }
     },
 
@@ -78,9 +77,9 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:20s",
                 "call=recruit_smelter",
                 "call=recruit_smith",
-                "call=recruit_shipwright",
+                "call=recruit_tailor",
+                "call=recruit_shoemaker",
                 "call=recruit_trainer",
-                "call=recruit_geologist",
                 "call=recruit_scout",
                 "sleep=duration:20s",
                 "call=recruit_builder",
@@ -90,6 +89,8 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_carrier_3",
                 "sleep=duration:30s",
                 "call=recruit_builder",
+                "call=recruit_shipwright",
+                "call=recruit_geologist",
                 "call=recruit_carrier_idle",
                 "sleep=duration:30s",
                 "return=skipped"
@@ -171,9 +172,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting baker"),
             actions = {
                 "return=skipped unless economy needs europeans_baker_advanced",
-                "return=skipped when economy needs bread_paddle or economy needs hook_pole or economy needs kitchen_tools",
+                "return=skipped when economy needs bread_paddle or economy needs kitchen_tools",
                 "consume=europeans_carrier",
-                "consume=bread_paddle hook_pole kitchen_tools",
+                "consume=bread_paddle kitchen_tools",
                 "animate=working duration:180s",
                 "recruit=europeans_baker_advanced"
             }
@@ -355,6 +356,18 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_shipwright_advanced"
             }
         },
+        recruit_shoemaker = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+            descname = pgettext("europeans_building", "recruiting shoemaker"),
+            actions = {
+                "return=skipped unless economy needs europeans_shoemaker_advanced",
+                "return=skipped when economy needs hammer or economy needs needles",
+                "consume=europeans_carrier",
+                "consume=hammer needles",
+                "animate=working duration:180s",
+                "recruit=europeans_shoemaker_advanced"
+            }
+        },
         recruit_smelter = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting smelter"),
@@ -403,6 +416,18 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_stonemason_advanced"
             }
         },
+        recruit_tailor = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
+            descname = pgettext("europeans_building", "recruiting tailor"),
+            actions = {
+                "return=skipped unless economy needs europeans_tailor_advanced",
+                "return=skipped when economy needs needles",
+                "consume=europeans_carrier",
+                "consume=needles",
+                "animate=working duration:180s",
+                "recruit=europeans_tailor_advanced"
+            }
+        },
         recruit_terraformer = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting terraformer"),
@@ -431,9 +456,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting weaver"),
             actions = {
                 "return=skipped unless economy needs europeans_weaver_advanced",
-                "return=skipped when economy needs needles",
                 "consume=europeans_carrier",
-                "consume=needles",
                 "animate=working duration:180s",
                 "recruit=europeans_weaver_advanced"
             }

@@ -314,48 +314,8 @@ wl.Descriptions():new_tribe {
         {
             -- Food 1
             {
-                name = "fish",
-                default_target_quantity = 16,
-                preciousness = 24,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
-                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans. Taverns and Inns need fish or meat to prepare ration, snack or meal.")
-                }
-            },
-            {
-                name = "meat",
-                default_target_quantity = 16,
-                preciousness = 24,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
-                        pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 2
-                        pgettext("europeans_ware", "Taverns and Inns need meat or fish to prepare ration, snack or meal.")
-                    }
-                }
-            },
-            {
-                name = "corn",
-                default_target_quantity = 16,
-                preciousness = 24,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Corn
-                    purpose = pgettext("europeans_ware", "Fish farms need to be provided with corn.")
-                }
-            },
-            {
-                name = "blackroot",
-                default_target_quantity = 16,
-                preciousness = 24,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Blackroot
-                    purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Sheep farms need to be provided with blackroot.")
-                }
-            },
-            {
                 name = "rye",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 24,
                 helptexts = {
                     purpose = {
@@ -368,7 +328,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "wheat",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 24,
                 helptexts = {
                     purpose = {
@@ -381,50 +341,56 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "flour",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 16,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Flour
-                    purpose = pgettext("europeans_ware", "Mixed flour is produced by the mill out of rye and wheat and is needed in the tavern or inn to produce ration, snack or meal.")
+                    purpose = pgettext("europeans_ware", "Mixed flour is produced by the mill out of rye and wheat and is needed in the bakery to produce bread.")
                 }
             },
             {
-                name = "ration",
+                name = "bread",
                 default_target_quantity = 32,
                 preciousness = 8,
                 helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for a Europeans ware: Ration, part 1
-                        pgettext("europeans_ware", "A small bite to keep miners strong and working. The scout also consumes rations on his scouting trips."),
-                        -- TRANSLATORS: Helptext for a Europeans ware: Ration, part 2
-                        pgettext("europeans_ware", "Rations are produced in a tavern or an inn out of fish or meat and water and flour.")
-                    }
+                    -- TRANSLATORS: Helptext for a Europeans ware: Bread
+                    purpose = pgettext("europeans_ware", "Bread are produced in a bakery out of water and flour.")
                 }
             },
             {
-                name = "snack",
+                name = "corn",
                 default_target_quantity = 32,
-                preciousness = 8,
+                preciousness = 24,
                 helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for a Europeans ware: Snack, part 1
-                        pgettext("europeans_ware", "A bigger morsel than the ration. Used in mines and to train soldiers in battle arenas."),
-                        -- TRANSLATORS: Helptext for a Europeans ware: Snack, part 2
-                        pgettext("europeans_ware", "Snacks are produced in a tavern or an inn out of fish or meat and water and flour.")
-                    }
+                    -- TRANSLATORS: Helptext for an Europeans ware: Corn
+                    purpose = pgettext("europeans_ware", "Fish farms need to be provided with corn.")
                 }
             },
             {
-                name = "meal",
+                name = "blackroot",
                 default_target_quantity = 32,
-                preciousness = 8,
+                preciousness = 24,
                 helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for a Europeans ware: Meal, part 1
-                        pgettext("europeans_ware", "A bigger food than the ration or snack. Used in the deepest mines and the most advanced trainingsites."),
-                        -- TRANSLATORS: Helptext for a Europeans ware: Meal, part 2
-                        pgettext("europeans_ware", "Meals are produced in an inn out of fish or meat and water and flour.")
-                    }
+                    -- TRANSLATORS: Helptext for an Europeans ware: Blackroot
+                    purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Sheep farms need to be provided with blackroot.")
+                }
+            },
+            {
+                name = "meat",
+                default_target_quantity = 32,
+                preciousness = 24,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
+                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms.")
+                }
+            },
+            {
+                name = "fish",
+                default_target_quantity = 32,
+                preciousness = 24,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
+                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms.")
                 }
             }
         },
@@ -439,13 +405,13 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Water, part 1
                         pgettext("ware", "Water is the essence of life!"),
                         -- TRANSLATORS: Helptext for an Europeans ware: Water, part 2
-                        pgettext("europeans_ware", "Water is used by the claydigger, by the forester, by all farms, and in the tavern and the brewery. The fish farm and the sheep farm need to be supplied with water, too.")
+                        pgettext("europeans_ware", "Water is used by the claydigger, by the forester, by all farms, and in the bakery and the brewery. The fish farm and the sheep farm need to be supplied with water, too.")
                     }
                 }
             },
             {
                 name = "barley",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 32,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Barley
@@ -454,7 +420,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "honey",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 16,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Honey
@@ -463,7 +429,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "fruit",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 16,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Fruit
@@ -472,7 +438,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "grape",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 16,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Grape
@@ -549,7 +515,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "gold",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 8,
                 helptexts = {
                     purpose = {
@@ -684,19 +650,6 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "Make sure you’ve always got some in reserve! They are produced by all smithies.")
                     }
                 }
-            },
-            {
-                name = "fire_tongs",
-                default_target_quantity = 2,
-                preciousness = 4,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 1
-                        pgettext("europeans_ware", "Fire tongs are the tools for smelting ores."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 2
-                        pgettext("europeans_ware", "They are used in the smelting works and smithies and produced produced by all smithies.")
-                    }
-                }
             }
         },
         {
@@ -728,6 +681,32 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "bread_paddle",
+                default_target_quantity = 2,
+                preciousness = 2,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Bread Paddle, part 1
+                        pgettext("europeans_ware", "This bread paddle is used by the baker in a bakery."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Bread Paddle, part 2
+                        pgettext("europeans_ware", "Bread paddles are produced by all smithies.")
+                    }
+                }
+            },
+            {
+                name = "kitchen_tools",
+                default_target_quantity = 2,
+                preciousness = 2,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Kitchen Tools, part 1
+                        pgettext("europeans_ware", "These kitchen tools are used by the baker in a bakery."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Kitchen Tools, part 2
+                        pgettext("europeans_ware", "They are created by all smithies.")
+                    }
+                }
+            },
+            {
                 name = "needles",
                 default_target_quantity = 2,
                 preciousness = 2,
@@ -741,41 +720,15 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "bread_paddle",
+                name = "fire_tongs",
                 default_target_quantity = 2,
-                preciousness = 2,
+                preciousness = 4,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Bread Paddle, part 1
-                        pgettext("europeans_ware", "This bread paddle is used by the baker in a tavern or in an inn."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Bread Paddle, part 2
-                        pgettext("europeans_ware", "Bread paddles are produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "hook_pole",
-                default_target_quantity = 2,
-                preciousness = 2,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Hook Pole, part 1
-                        pgettext("europeans_ware", "This hook pole is used by the smoker in a tavern or in an inn."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Hook Pole, part 2
-                        pgettext("europeans_ware", "It is created by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "kitchen_tools",
-                default_target_quantity = 2,
-                preciousness = 2,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Kitchen Tools, part 1
-                        pgettext("europeans_ware", "These kitchen tools are used by the cook in a tavern or in an inn."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Kitchen Tools, part 2
-                        pgettext("europeans_ware", "They are created by all smithies.")
+                        -- TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 1
+                        pgettext("europeans_ware", "Fire tongs are the tools for smelting ores."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 2
+                        pgettext("europeans_ware", "They are used in the smelting works and smithies and produced produced by all smithies.")
                     }
                 }
             }
@@ -793,7 +746,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "armor_processed",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Processed Armor
@@ -802,7 +755,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "armor_chain",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Chain Armor
@@ -811,7 +764,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "armor_advanced",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
@@ -829,7 +782,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "boots_sturdy",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
@@ -838,7 +791,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "boots_swift",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
@@ -847,7 +800,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "boots_advanced",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
@@ -868,7 +821,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "spear_advanced",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
@@ -877,7 +830,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "ax_broad",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Broad Ax
@@ -886,7 +839,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "sword_broad",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Broad Sword
@@ -904,7 +857,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "helmet_mask",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
@@ -913,7 +866,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "shield_steel",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Steel Shield
@@ -922,7 +875,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "shield_advanced",
-                default_target_quantity = 4,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
@@ -1021,7 +974,7 @@ wl.Descriptions():new_tribe {
             -- Basic Workers
             {
                 name = "europeans_builder",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 16,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Builder
@@ -1048,7 +1001,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_shipwright_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Shipwright
@@ -1084,7 +1037,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_terraformer_advanced",
-                default_target_quantity = 1,
+                default_target_quantity = 2,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
@@ -1114,7 +1067,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_trainer_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Trainer
@@ -1201,7 +1154,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_lumberjack_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
@@ -1228,7 +1181,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_forester_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
@@ -1255,7 +1208,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_carpenter_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carpenter / Sawyer
@@ -1285,7 +1238,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_stonecutter_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Stonecutter
@@ -1312,7 +1265,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_stonemason_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Stonemason
@@ -1339,7 +1292,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_claydigger_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Clay Digger
@@ -1348,7 +1301,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            -- Collectors, Supporters and Producer (Cloth)
+            -- Agriculture workers
             {
                 name = "europeans_farmer_basic",
                 default_target_quantity = 1,
@@ -1369,43 +1322,13 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_farmer_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Farmer
                     purpose = pgettext("europeans_worker", "Plants and harvests fields.")
                 }
             },
-            {
-                name = "europeans_weaver_basic",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Weaver
-                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
-                }
-            },
-            {
-                name = "europeans_weaver_normal",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Weaver
-                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
-                }
-            },
-            {
-                name = "europeans_weaver_advanced",
-                default_target_quantity = 2,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Weaver
-                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
-                }
-            }
-        },
-        {
-            -- Collectors and Supporters (Food)
             {
                 name = "europeans_breeder_basic",
                 default_target_quantity = 1,
@@ -1426,7 +1349,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_breeder_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Breeder
@@ -1453,7 +1376,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_beekeeper_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
@@ -1483,7 +1406,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_brewer_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Brewer
@@ -1510,7 +1433,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_miller_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Miller
@@ -1522,8 +1445,8 @@ wl.Descriptions():new_tribe {
                 default_target_quantity = 1,
                 preciousness = 4,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Baker
-                    purpose = pgettext("europeans_worker", "Produce bread out of water, flour and cornmeal.")
+                    -- TRANSLATORS: Helptext for an Europeans worker: baker
+                    purpose = pgettext("europeans_worker", "Produce bread out of water and flour.")
                 }
             },
             {
@@ -1531,22 +1454,22 @@ wl.Descriptions():new_tribe {
                 default_target_quantity = 1,
                 preciousness = 4,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Baker
-                    purpose = pgettext("europeans_worker", "Produce bread out of water, flour and cornmeal.")
+                    -- TRANSLATORS: Helptext for an Europeans worker: baker
+                    purpose = pgettext("europeans_worker", "Produce bread out of water and flour.")
                 }
             },
             {
                 name = "europeans_baker_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Baker
-                    purpose = pgettext("europeans_worker", "Produce bread out of water, flour and cornmeal.")
+                    -- TRANSLATORS: Helptext for an Europeans worker: baker
+                    purpose = pgettext("europeans_worker", "Produce bread out of water and flour.")
                 }
             }
         },
         {
-            -- Miners, Burners, Smelters and Smiths
+            -- Miners, Burners and, Smelters
             {
                 name = "europeans_miner_basic",
                 default_target_quantity = 2,
@@ -1567,7 +1490,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_miner_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Miner
@@ -1594,7 +1517,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_charcoal_burner_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Charcoal Burner
@@ -1621,11 +1544,95 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_smelter_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Smelter
                     purpose = pgettext("europeans_worker", "Smelts ore to metals.")
+                }
+            }
+        },
+        {
+            -- Weavers, Tailors, Shoemakers and Smiths
+            {
+                name = "europeans_weaver_basic",
+                default_target_quantity = 1,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Weaver
+                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
+                }
+            },
+            {
+                name = "europeans_weaver_normal",
+                default_target_quantity = 1,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Weaver
+                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
+                }
+            },
+            {
+                name = "europeans_weaver_advanced",
+                default_target_quantity = 4,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Weaver
+                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
+                }
+            },
+            {
+                name = "europeans_tailor_basic",
+                default_target_quantity = 1,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Tailor
+                    purpose = pgettext("europeans_worker", "Produce clothing and armor.")
+                }
+            },
+            {
+                name = "europeans_tailor_normal",
+                default_target_quantity = 1,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Tailor
+                    purpose = pgettext("europeans_worker", "Produce clothing and armor.")
+                }
+            },
+            {
+                name = "europeans_tailor_advanced",
+                default_target_quantity = 4,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Tailor
+                    purpose = pgettext("europeans_worker", "Produce clothing and armor.")
+                }
+            },
+            {
+                name = "europeans_shoemaker_basic",
+                default_target_quantity = 1,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Shoemaker
+                    purpose = pgettext("europeans_worker", "Produce shoes and boots.")
+                }
+            },
+            {
+                name = "europeans_shoemaker_normal",
+                default_target_quantity = 1,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Shoemaker
+                    purpose = pgettext("europeans_worker", "Produce shoes and boots.")
+                }
+            },
+            {
+                name = "europeans_shoemaker_advanced",
+                default_target_quantity = 4,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Shoemaker
+                    purpose = pgettext("europeans_worker", "Produce shoes and boots.")
                 }
             },
             {
@@ -1634,7 +1641,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Smith
-                    purpose = pgettext("europeans_worker", "Produce tools, armor and weapons.")
+                    purpose = pgettext("europeans_worker", "Produce tools and weapons.")
                 }
             },
             {
@@ -1643,16 +1650,16 @@ wl.Descriptions():new_tribe {
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Smith
-                    purpose = pgettext("europeans_worker", "Produce tools, armor and weapons.")
+                    purpose = pgettext("europeans_worker", "Produce tools and weapons.")
                 }
             },
             {
                 name = "europeans_smith_advanced",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Smith
-                    purpose = pgettext("europeans_worker", "Produce tools, armor and weapons.")
+                    purpose = pgettext("europeans_worker", "Produce tools and weapons.")
                 }
             }
         }
@@ -2804,31 +2811,24 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_tavern_basic",
+            name = "europeans_bakery_basic",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
                 purpose = pgettext("building", "Prepares rations to feed the scouts and miners.")
             }
         },
         {
-            name = "europeans_tavern_normal",
+            name = "europeans_bakery_normal",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
                 purpose = pgettext("building", "Prepares rations and snacks to feed the miners in the basic and deep mines.")
             }
         },
         {
-            name = "europeans_tavern_advanced",
+            name = "europeans_bakery_advanced",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Tavern
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
                 purpose = pgettext("building", "Prepares rations, snacks and meals to feed all miners.")
-            }
-        },
-        {
-            name = "europeans_tavern_inn",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Big Inn
-                purpose = pgettext("europeans_building", "Prepares rations, snacks and meals to feed all miners.")
             }
         },
         {
@@ -2902,24 +2902,66 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_armorsmithy_basic",
+            name = "europeans_tailors_house_basic",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Armorsmithy
-                purpose = pgettext("europeans_building", "Produces armor and weapons.")
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
+                purpose = pgettext("europeans_building", "Produces clothing and armor.")
             }
         },
         {
-            name = "europeans_armorsmithy_normal",
+            name = "europeans_tailors_house_normal",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Armorsmithy
-                purpose = pgettext("europeans_building", "Produces armor and weapons.")
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
+                purpose = pgettext("europeans_building", "Produces clothing and armor.")
             }
         },
         {
-            name = "europeans_armorsmithy_advanced",
+            name = "europeans_tailors_house_advanced",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Armorsmithy
-                purpose = pgettext("europeans_building", "Produces armor and weapons.")
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
+                purpose = pgettext("europeans_building", "Produces clothing and armor.")
+            }
+        },
+        {
+            name = "europeans_shoemakers_house_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
+                purpose = pgettext("europeans_building", "Produces shoes and boots.")
+            }
+        },
+        {
+            name = "europeans_shoemakers_house_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
+                purpose = pgettext("europeans_building", "Produces shoes and boots.")
+            }
+        },
+        {
+            name = "europeans_shoemakers_house_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
+                purpose = pgettext("europeans_building", "Produces shoes and boots.")
+            }
+        },
+        {
+            name = "europeans_weaponsmithy_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
+                purpose = pgettext("europeans_building", "Produces shields and weapons.")
+            }
+        },
+        {
+            name = "europeans_weaponsmithy_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
+                purpose = pgettext("europeans_building", "Produces shields and weapons.")
+            }
+        },
+        {
+            name = "europeans_weaponsmithy_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
+                purpose = pgettext("europeans_building", "Produces shields and weapons.")
             }
         },
 
@@ -3699,16 +3741,16 @@ wl.Descriptions():new_tribe {
       agriculture_consumer_primary = "europeans_brewery_winery",
       agriculture_consumer_secondary = "europeans_beekeepers_house_basic",
       mill = "europeans_mill_basic",
-      bakery = "europeans_tavern_basic",
+      bakery = "europeans_bakery_basic",
       brewery = "europeans_brewery_basic",
-      tavern = "europeans_tavern_basic",
+      bakery = "europeans_bakery_basic",
       mine_coal = "europeans_coalmine_basic",
       mine_iron = "europeans_ironmine_basic",
       mine_gold = "europeans_goldmine_basic",
       smelting = "europeans_smelting_works_basic",
       tool_smithy = "europeans_toolsmithy_basic",
-      weapon_smithy = "europeans_armorsmithy_basic",
-      armor_smithy = "europeans_armorsmithy_basic",
+      weapon_smithy = "europeans_weaponsmithy_basic",
+      armor_smithy = "europeans_tailors_house_basic",
       shipyard = "europeans_shipyard_basic",
       ferry_yard = "europeans_ferry_yard_basic",
       scout = "europeans_scouts_house_basic",

@@ -27,7 +27,7 @@ local init = {
     player:forbid_buildings{"europeans_farm_advanced", "europeans_animal_farm_advanced", }
     player:forbid_buildings{"europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", "europeans_tavern_advanced", }
     player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_sawmill_advanced", "europeans_smelting_works_advanced", "europeans_weaving_mill_advanced", }
-    player:forbid_buildings{"europeans_toolsmithy_advanced", "europeans_armorsmithy_advanced", "europeans_trainingscamp_advanced", "europeans_battlearena_level_3", }
+    player:forbid_buildings{"europeans_toolsmithy_advanced", "europeans_weaponsmithy_advanced", "europeans_trainingscamp_advanced", "europeans_battlearena_level_3", }
     player:forbid_buildings{"europeans_scouts_house_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced", "europeans_recruitement_center_advanced", }
     
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
@@ -77,6 +77,8 @@ local init = {
             europeans_baker_basic = 1,
             europeans_smelter_basic = 1,
             europeans_weaver_basic = 1,
+            europeans_tailor_basic = 1,
+            europeans_shoemaker_basic = 1,
             europeans_claydigger_basic = 1
       },
         soldiers = {

@@ -17,7 +17,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 42, 66 },
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          frames = 1,
          columns = 1,
          rows = 1,
@@ -65,7 +65,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "produce=beer:4"
             }
         },
@@ -81,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has barley",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "produce=mead"
             }
         },
@@ -96,7 +96,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "produce=beer_strong"
             }
         },

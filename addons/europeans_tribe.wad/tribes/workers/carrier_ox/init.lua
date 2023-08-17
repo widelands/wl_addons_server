@@ -20,7 +20,6 @@ wl.Descriptions():new_carrier_type {
             columns = 4,
             hotspot = { 10, 25 }
         },
-        -- TODO(hessenfarmer): Make real oxen animations
         walk = {
             fps = 20,
             frames = 20,

@@ -66,6 +66,8 @@ local init = {
             europeans_baker_basic = 4,
             europeans_smelter_basic = 4,
             europeans_smith_basic = 4,
+            europeans_tailor_basic = 4,
+            europeans_shoemaker_basic = 4,
             europeans_claydigger_basic = 4,
             europeans_forester_basic = 4,
             europeans_shipwright_basic = 4
@@ -83,7 +85,7 @@ local init = {
     -- Delay of 10 min between actions
     local time_min = 10
     
-    for i = 0, 1023 do
+    for i = 0, 1024 do
         -- Time-dependent activation (gametime)
         -- Basic Buildings
         if i == 1 then
@@ -105,7 +107,7 @@ local init = {
         elseif i == 9 then
             player:allow_buildings{"europeans_brewery_basic", "europeans_mill_basic", }
         elseif i == 10 then
-            player:allow_buildings{"europeans_tavern_basic", }
+            player:allow_buildings{"europeans_bakery_basic", }
         elseif i == 11 then
             player:allow_buildings{"europeans_market_small", }
         elseif i == 12 then
@@ -119,7 +121,7 @@ local init = {
         elseif i == 15 then
             player:allow_buildings{"europeans_recruitement_center_basic", }
         elseif i == 16 then
-            player:allow_buildings{"europeans_armorsmithy_basic", }
+            player:allow_buildings{"europeans_tailors_house_basic", "europeans_shoemakers_house_basic", "europeans_weaponsmithy_basic", }
         elseif i == 17 then
             player:allow_buildings{"europeans_trainingscamp_basic", "europeans_battlearena_basic", }
         elseif i == 18 then
@@ -145,7 +147,7 @@ local init = {
         elseif i == 27 then
             player:allow_buildings{"europeans_brewery_normal", "europeans_mill_normal", }
         elseif i == 28 then
-            player:allow_buildings{"europeans_tavern_normal", }
+            player:allow_buildings{"europeans_bakery_normal", }
         elseif i == 29 then
             player:allow_buildings{"europeans_market_big", }
         elseif i == 30 then
@@ -159,7 +161,7 @@ local init = {
         elseif i == 33 then
             player:allow_buildings{"europeans_recruitement_center_normal", }
         elseif i == 34 then
-            player:allow_buildings{"europeans_armorsmithy_normal", }
+            player:allow_buildings{"europeans_tailors_house_normal", "europeans_shoemakers_house_normal", "europeans_weaponsmithy_normal", }
         elseif i == 35 then
             player:allow_buildings{"europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
         elseif i == 36 then
@@ -185,7 +187,7 @@ local init = {
         elseif i == 45 then
             player:allow_buildings{"europeans_brewery_advanced", "europeans_brewery_winery", "europeans_mill_advanced", }
         elseif i == 46 then
-            player:allow_buildings{"europeans_tavern_advanced", "europeans_tavern_inn", }
+            player:allow_buildings{"europeans_bakery_advanced", }
         elseif i == 47 then
             player:allow_buildings{"europeans_trading_post", }
         elseif i == 48 then
@@ -199,27 +201,32 @@ local init = {
         elseif i == 51 then
             player:allow_buildings{"europeans_recruitement_center_advanced", }
         elseif i == 52 then
-            player:allow_buildings{"europeans_armorsmithy_advanced", }
+            player:allow_buildings{"europeans_tailors_house_advanced", "europeans_shoemakers_house_advanced", "europeans_weaponsmithy_advanced", }
         elseif i == 53 then
             player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_battlearena_level_2", "europeans_battlearena_level_3", }
         elseif i == 54 then
             player:allow_buildings{"europeans_scouts_house_advanced", "europeans_store_big", }
         end
         
-       -- Experimental actions
-        if (i >= 54) then
-            balance_warehouse_wares(player)
-            balance_workerhouse_workers(player)
+       -- Map-depend and Time-depend activation (gametime)
+        if (map.waterway_max_length > 0) and (i == 18) then
+            player:allow_buildings{"europeans_ferry_yard_basic", }
+            place_ship_random(player, 64)
+        elseif (map.waterway_max_length > 0) and (i == 36) then
+            player:allow_buildings{"europeans_ferry_yard_normal", }
+            place_ship_random(player, 64)
+        elseif (map.waterway_max_length > 0) and (i == 54) then
+            player:allow_buildings{"europeans_ferry_yard_advanced", }
+            place_ship_random(player, 64)
         end
-        
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (i == 18) then
-            player:allow_buildings{"europeans_port", "europeans_shipyard_basic", "europeans_ferry_yard_basic", }
+            player:allow_buildings{"europeans_port", "europeans_shipyard_basic", }
             place_ship_random(player, 64)
         elseif ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (i == 36) then
-            player:allow_buildings{"europeans_shipyard_normal", "europeans_ferry_yard_normal", }
+            player:allow_buildings{"europeans_shipyard_normal", }
             place_ship_random(player, 64)
         elseif ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (i == 54) then
-            player:allow_buildings{"europeans_shipyard_advanced", "europeans_ferry_yard_advanced", }
+            player:allow_buildings{"europeans_shipyard_advanced", }
             place_ship_random(player, 64)
         end
         if ((map.allows_seafaring == false) or (map.number_of_port_spaces == 0)) and (i == 18) then
@@ -228,6 +235,14 @@ local init = {
             player:allow_buildings{"europeans_terraformers_house_normal", }
         elseif ((map.allows_seafaring == false) or (map.number_of_port_spaces == 0)) and (i == 54) then
             player:allow_buildings{"europeans_headquarters", "europeans_terraformers_house_advanced", }
+        end
+        
+       -- Experimental actions
+        if (i >= 54) and (i % 6 == 3) then
+            balance_warehouse_wares(player)
+            balance_workerhouse_workers(player)
+        elseif (i >= 54) and (i % 6 == 0) then
+            reset_warehouse_policy(player)
         end
         
         if (i >= 54) and (i % 6 == 1) then

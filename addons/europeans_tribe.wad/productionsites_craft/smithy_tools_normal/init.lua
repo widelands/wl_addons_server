@@ -8,30 +8,16 @@ wl.Descriptions():new_productionsite_type {
     descname = pgettext("europeans_building", "Normal Toolsmithy"),
     icon = dirname .. "menu.png",
     
-    animation_directory = dirname,
-    animations = {
+   animation_directory = dirname,
+   animations = {
       idle = {
-         hotspot = { 57, 76 },
-      },
-      unoccupied = {
-         hotspot = { 57, 76 },
-      },
-    },
-    spritesheets = {
-      build = {
-         frames = 5,
-         rows = 3,
-         columns = 2,
-         hotspot = { 57, 76 }
+         hotspot = { 56, 61 },
       },
       working = {
-         fps = 10,
-         frames = 20,
-         rows = 5,
-         columns = 4,
-         hotspot = { 57, 76 }
-      },
-    },
+         basename = "idle",
+         hotspot = { 56, 61 },
+      }
+   },
     
     size = "medium",
     enhancement = {
@@ -79,7 +65,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_basket",
                 "call=produce_fire_tongs",
                 "call=produce_bread_paddle",
-                "call=produce_hook_pole",
                 "call=produce_kitchen_tools",
                 "call=produce_needles",
                 "sleep=duration:15s",
@@ -96,7 +81,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax and not economy needs basket",
                 "return=skipped when economy needs fire_tongs and not economy needs basket",
                 "return=skipped when economy needs hammer and not economy needs basket",
-                "return=skipped when economy needs hook_pole and not economy needs basket",
                 "return=skipped when economy needs kitchen_tools and not economy needs basket",
                 "return=skipped when economy needs needles and not economy needs basket",
                 "return=skipped when economy needs pick and not economy needs basket",
@@ -119,7 +103,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax and not economy needs bread_paddle",
                 "return=skipped when economy needs fire_tongs and not economy needs bread_paddle",
                 "return=skipped when economy needs hammer and not economy needs bread_paddle",
-                "return=skipped when economy needs hook_pole and not economy needs bread_paddle",
                 "return=skipped when economy needs kitchen_tools and not economy needs bread_paddle",
                 "return=skipped when economy needs needles and not economy needs bread_paddle",
                 "return=skipped when economy needs pick and not economy needs bread_paddle",
@@ -142,7 +125,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax and not economy needs buckets",
                 "return=skipped when economy needs fire_tongs and not economy needs buckets",
                 "return=skipped when economy needs hammer and not economy needs buckets",
-                "return=skipped when economy needs hook_pole and not economy needs buckets",
                 "return=skipped when economy needs kitchen_tools and not economy needs buckets",
                 "return=skipped when economy needs needles and not economy needs buckets",
                 "return=skipped when economy needs pick and not economy needs buckets",
@@ -165,7 +147,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs buckets and not economy needs felling_ax",
                 "return=skipped when economy needs fire_tongs and not economy needs felling_ax",
                 "return=skipped when economy needs hammer and not economy needs felling_ax",
-                "return=skipped when economy needs hook_pole and not economy needs felling_ax",
                 "return=skipped when economy needs kitchen_tools and not economy needs felling_ax",
                 "return=skipped when economy needs needles and not economy needs felling_ax",
                 "return=skipped when economy needs pick and not economy needs felling_ax",
@@ -188,7 +169,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs buckets and not economy needs fire_tongs",
                 "return=skipped when economy needs felling_ax and not economy needs fire_tongs",
                 "return=skipped when economy needs hammer and not economy needs fire_tongs",
-                "return=skipped when economy needs hook_pole and not economy needs fire_tongs",
                 "return=skipped when economy needs kitchen_tools and not economy needs fire_tongs",
                 "return=skipped when economy needs needles and not economy needs fire_tongs",
                 "return=skipped when economy needs pick and not economy needs fire_tongs",
@@ -211,7 +191,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs buckets and not economy needs hammer",
                 "return=skipped when economy needs felling_ax and not economy needs hammer",
                 "return=skipped when economy needs fire_tongs and not economy needs hammer",
-                "return=skipped when economy needs hook_pole and not economy needs hammer",
                 "return=skipped when economy needs kitchen_tools and not economy needs hammer",
                 "return=skipped when economy needs needles and not economy needs hammer",
                 "return=skipped when economy needs pick and not economy needs hammer",
@@ -222,29 +201,6 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:40s",
                 "produce=hammer:3"
-            }
-        },
-        produce_hook_pole = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making a hook pole because ...
-            descname = pgettext("europeans_building", "making hook poles"),
-            actions = {
-                "return=skipped unless economy needs hook_pole or workers need experience",
-                "return=skipped when economy needs basket and not economy needs hook_pole",
-                "return=skipped when economy needs bread_paddle and not economy needs hook_pole",
-                "return=skipped when economy needs buckets and not economy needs hook_pole",
-                "return=skipped when economy needs felling_ax and not economy needs hook_pole",
-                "return=skipped when economy needs fire_tongs and not economy needs hook_pole",
-                "return=skipped when economy needs hammer and not economy needs hook_pole",
-                "return=skipped when economy needs kitchen_tools and not economy needs hook_pole",
-                "return=skipped when economy needs needles and not economy needs hook_pole",
-                "return=skipped when economy needs pick and not economy needs hook_pole",
-                "return=skipped when economy needs saw and not economy needs hook_pole",
-                "return=skipped when economy needs scythe and not economy needs hook_pole",
-                "return=skipped when economy needs shovel and not economy needs hook_pole",
-                "consume=planks:2 coal:2 iron:2",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:40s",
-                "produce=hook_pole:3"
             }
         },
         produce_kitchen_tools = {
@@ -258,7 +214,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax and not economy needs kitchen_tools",
                 "return=skipped when economy needs fire_tongs and not economy needs kitchen_tools",
                 "return=skipped when economy needs hammer and not economy needs kitchen_tools",
-                "return=skipped when economy needs hook_pole and not economy needs kitchen_tools",
                 "return=skipped when economy needs needles and not economy needs kitchen_tools",
                 "return=skipped when economy needs pick and not economy needs kitchen_tools",
                 "return=skipped when economy needs saw and not economy needs kitchen_tools",
@@ -281,7 +236,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax and not economy needs needles",
                 "return=skipped when economy needs fire_tongs and not economy needs needles",
                 "return=skipped when economy needs hammer and not economy needs needles",
-                "return=skipped when economy needs hook_pole and not economy needs needles",
                 "return=skipped when economy needs kitchen_tools and not economy needs needles",
                 "return=skipped when economy needs pick and not economy needs needles",
                 "return=skipped when economy needs saw and not economy needs needles",
@@ -304,7 +258,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax and not economy needs pick",
                 "return=skipped when economy needs fire_tongs and not economy needs pick",
                 "return=skipped when economy needs hammer and not economy needs pick",
-                "return=skipped when economy needs hook_pole and not economy needs pick",
                 "return=skipped when economy needs kitchen_tools and not economy needs pick",
                 "return=skipped when economy needs needles and not economy needs pick",
                 "return=skipped when economy needs saw and not economy needs pick",
@@ -327,7 +280,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax and not economy needs saw",
                 "return=skipped when economy needs fire_tongs and not economy needs saw",
                 "return=skipped when economy needs hammer and not economy needs saw",
-                "return=skipped when economy needs hook_pole and not economy needs saw",
                 "return=skipped when economy needs kitchen_tools and not economy needs saw",
                 "return=skipped when economy needs needles and not economy needs saw",
                 "return=skipped when economy needs pick and not economy needs saw",
@@ -350,7 +302,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax and not economy needs scythe",
                 "return=skipped when economy needs fire_tongs and not economy needs scythe",
                 "return=skipped when economy needs hammer and not economy needs scythe",
-                "return=skipped when economy needs hook_pole and not economy needs scythe",
                 "return=skipped when economy needs kitchen_tools and not economy needs scythe",
                 "return=skipped when economy needs needles and not economy needs scythe",
                 "return=skipped when economy needs pick and not economy needs scythe",
@@ -373,7 +324,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs felling_ax and not economy needs shovel",
                 "return=skipped when economy needs fire_tongs and not economy needs shovel",
                 "return=skipped when economy needs hammer and not economy needs shovel",
-                "return=skipped when economy needs hook_pole and not economy needs shovel",
                 "return=skipped when economy needs kitchen_tools and not economy needs shovel",
                 "return=skipped when economy needs needles and not economy needs shovel",
                 "return=skipped when economy needs pick and not economy needs shovel",

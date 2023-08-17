@@ -72,6 +72,8 @@ local init = {
             europeans_baker_basic = 1,
             europeans_smelter_basic = 1,
             europeans_weaver_basic = 1,
+            europeans_tailor_basic = 1,
+            europeans_shoemaker_basic = 1,
             europeans_claydigger_basic = 1
       },
         soldiers = {

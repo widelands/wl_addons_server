@@ -14,7 +14,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 44, 58 },
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          hotspot = { 44, 58 },
       },
     },
@@ -57,8 +57,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=smelt_gold",
                 "call=smelt_iron",
+                "call=smelt_gold",
                 "return=skipped"
             }
         },

@@ -9,13 +9,12 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-    -- TODO(Nordfriese): Make animations.
     animations = {
       idle = {
          hotspot = {51, 71}
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          hotspot = {51, 71}
       },
     },

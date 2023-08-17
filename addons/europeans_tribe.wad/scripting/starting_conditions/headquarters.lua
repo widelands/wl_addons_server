@@ -69,6 +69,8 @@ local init = {
             europeans_baker_basic = 4,
             europeans_smelter_basic = 4,
             europeans_smith_basic = 4,
+            europeans_tailor_basic = 4,
+            europeans_shoemaker_basic = 4,
             europeans_claydigger_basic = 4,
             europeans_terraformer_basic = 4
       },

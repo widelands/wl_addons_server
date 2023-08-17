@@ -70,10 +70,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has wheat",
                 "consume=rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=wheat",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "produce=flour:2"
             }
         }

@@ -14,7 +14,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 66, 71 },
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          hotspot = { 66, 71 },
       }
     },
@@ -65,7 +65,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed",
                 "consume=reed:2",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:45s",
+                "animate=working duration:50s",
                 "produce=cloth:2"
             }
         },
@@ -79,7 +79,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed:2",
                 "consume=reed:2",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:45s",
+                "animate=working duration:50s",
                 "produce=armor"
             }
         }

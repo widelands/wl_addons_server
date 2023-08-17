@@ -96,23 +96,23 @@ wl.Descriptions():new_worker_type {
                 "createware=gold",
                 "return"
           },
-          sale_ration = {
+          sale_bread = {
                 "findobject=attrib:tradepole radius:80",
-                "createware=ration",
+                "createware=bread",
                 "walk=object",
                 "createware=coin_wood",
                 "return"
           },
-          sale_snack = {
+          sale_meat = {
                 "findobject=attrib:tradepole radius:80",
-                "createware=snack",
+                "createware=meat",
                 "walk=object",
                 "createware=coin_wood",
                 "return"
           },
-          sale_meal = {
+          sale_fish = {
                 "findobject=attrib:tradepole radius:80",
-                "createware=meal",
+                "createware=fish",
                 "walk=object",
                 "createware=coin_copper",
                 "return"

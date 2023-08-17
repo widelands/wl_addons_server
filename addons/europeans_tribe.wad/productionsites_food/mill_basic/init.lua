@@ -17,7 +17,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 41, 58 },
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          hotspot = { 41, 58 },
       },
     },
@@ -74,10 +74,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has wheat",
                 "consume=rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:30s",
                 "consume=wheat",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:30s",
                 "produce=flour:2"
             }
         }

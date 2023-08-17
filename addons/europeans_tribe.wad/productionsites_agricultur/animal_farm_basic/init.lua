@@ -14,7 +14,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 57, 80 },
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          hotspot = { 57, 80 },
       },
     },
@@ -61,6 +61,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=feed_idle",
                 "call=produce_cattle",
+                "call=produce_meat_leather",
                 "call=produce_meat",
                 "return=skipped"
             }
@@ -88,16 +89,16 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has rye:4 or site has wheat:4 or site has barley:4",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:15s", -- Animation of feeding the cattle
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:15s", -- Animation of feeding the cattle
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:15s", -- Animation of feeding the cattle
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:15s", -- Animation of feeding the cattle
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
             }
         },
@@ -110,16 +111,38 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has wheat,rye,barley:4",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
+                "produce=meat:2"
+           }
+        },
+        produce_meat_leather = {
+         -- TRANSLATORS: Completed/Skipped/Did not start producing meat and leather because ...
+           descname = pgettext("europeans_building", "producing meat and leather"),
+           actions = {
+                "return=skipped unless economy needs leather or workers need experience",
+                "return=skipped unless site has water:4",
+                "return=skipped unless site has wheat,rye,barley:4",
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water rye,wheat,barley",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
                 "produce=meat:2 leather"
            }
         }

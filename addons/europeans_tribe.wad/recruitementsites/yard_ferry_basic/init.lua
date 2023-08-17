@@ -8,7 +8,6 @@ wl.Descriptions():new_productionsite_type {
     descname = pgettext("europeans_building", "Basic Ferry Yard"),
     icon = dirname .. "menu.png",
     
-    -- TODO(Nordfriese): Make animations
     animation_directory = dirname,
     animations = {
       idle = {

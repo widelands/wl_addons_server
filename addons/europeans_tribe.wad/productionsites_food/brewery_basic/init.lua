@@ -14,7 +14,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 42, 50 },
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          hotspot = { 42, 50 },
       },
     },
@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:45s",
+                "animate=working duration:60s",
                 "produce=beer"
             }
         }

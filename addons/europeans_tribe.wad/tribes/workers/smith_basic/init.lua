@@ -32,7 +32,6 @@ wl.Descriptions():new_worker_type {
             directional = true,
             hotspot = { 11, 24 }
         }
-        -- TODO(GunChleoc): Needs walkload animation
     }
 }
 

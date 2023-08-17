@@ -14,7 +14,7 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 83, 75 },
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle",
          hotspot = { 83, 75 },
       }
     },
@@ -55,7 +55,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=feed_idle",
                 "call=produce_meat",
-                "call=produce_meat",
+                "call=produce_meat_leather",
                 "call=produce_fish",
                 "call=produce_fish",
                 "call=produce_cattle",
@@ -86,10 +86,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has blackroot,corn:3",
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:10s", -- Animation of feeding the cattle
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:10s", -- Animation of feeding the cattle
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
@@ -107,10 +107,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has blackroot,corn:3",
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
-                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
+                "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
-                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
+                "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
@@ -126,10 +126,29 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has blackroot,corn:3",
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "produce=meat:2"
+           }
+        },
+        produce_meat_leather = {
+         -- TRANSLATORS: Completed/Skipped/Did not start producing meat and leather because ...
+           descname = pgettext("europeans_building", "producing meat and leather"),
+           actions = {
+                "return=skipped unless economy needs leather or workers need experience",
+                "return=skipped unless site has water:3",
+                "return=skipped unless site has blackroot,corn:3",
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
@@ -146,10 +165,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has blackroot,corn:3",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",

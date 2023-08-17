@@ -50,7 +50,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_wool",
                 "call=produce_wool",
                 "call=produce_meat",
-                "call=produce_meat",
+                "call=produce_meat_leather",
                 "call=produce_fish",
                 "call=produce_fish",
                 "call=produce_cattle",
@@ -81,13 +81,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/sheep priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/sheep priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/sheep priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "produce=wool:3"
            }
         },
@@ -101,13 +101,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:10s", -- Animation of feeding the cattle
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:10s", -- Animation of feeding the cattle
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
-                "animate=working duration:10s", -- Animation of feeding the cattle
+                "animate=working duration:20s", -- Animation of feeding the cattle
                 "recruit=europeans_carrier_ox"
             }
         },
@@ -121,13 +121,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
-                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
+                "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
-                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
+                "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
-                "animate=working duration:10s", -- Feeding cute little baby donkeys ;)
+                "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
                 "recruit=europeans_carrier_donkey"
             }
         },
@@ -141,13 +141,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/horse priority:50% allow_multiple",
-                "animate=working duration:10s", -- Feeding cute little foals ;)
+                "animate=working duration:20s", -- Feeding cute little foals ;)
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/horse priority:50% allow_multiple",
-                "animate=working duration:10s", -- Feeding cute little foals ;)
+                "animate=working duration:20s", -- Feeding cute little foals ;)
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/horse priority:50% allow_multiple",
-                "animate=working duration:10s", -- Feeding cute little foals ;)
+                "animate=working duration:20s", -- Feeding cute little foals ;)
                 "recruit=europeans_carrier_horse"
             }
         },
@@ -159,13 +159,31 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=water:2 blackroot,corn:2 fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
+                "produce=meat:4"
+           }
+        },
+        produce_meat_leather = {
+         -- TRANSLATORS: Completed/Skipped/Did not start producing meat and leather because ...
+           descname = pgettext("europeans_building", "producing meat and leather"),
+           actions = {
+                "return=skipped unless economy needs leather or workers need experience",
+                "return=skipped unless site has water:3",
+                "consume=water blackroot,corn fruit",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water:2 blackroot,corn:2 fruit",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water blackroot,corn fruit",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
                 "produce=meat:4 leather"
            }
         },
@@ -177,13 +195,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=water:2 blackroot,corn:2 fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "consume=water blackroot,corn fruit",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:20s",
                 "produce=fish:4"
             }
         },
