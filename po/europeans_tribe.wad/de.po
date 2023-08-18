@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 03:06+0200\n"
+"POT-Creation-Date: 2023-08-18 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -29,15 +29,11 @@ msgid "Europeans Tribe"
 msgstr "Europäer"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings, workers and some "
 "wares from other tribes, until own graphics are available. (Not compatible "
 "with Version 3.6.9 or earlier.)"
 msgstr ""
-"Fügt den Stamm der \"Europäer\" hinzu. Dieser nutzt Gebäude, Arbeiter und "
-"einige Waren von anderen Stämmen, bis eigene Grafiken verfügbar sind. (Nicht "
-"mehr kompatibel mit Version 3.5.9 dieses Addons oder früher)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -1216,10 +1212,9 @@ msgstr "Die Herstellung von Fleisch"
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_basic/init.lua:129
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_big/init.lua:174
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_normal/init.lua:141
-#, fuzzy
 msgctxt "europeans_building"
 msgid "producing meat and leather"
-msgstr "Die Herstellung von Fleisch"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fish because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_advanced/init.lua:183
@@ -1990,10 +1985,9 @@ msgstr "Normale Sägemühle"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Shoemakers House"
-msgstr "Verbesserter Steinmetz"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:61
@@ -2026,17 +2020,15 @@ msgstr "Das Herstellen verbesserter Stiefel"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Shoemakers House"
-msgstr "Einfaches Kundschafterhaus"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Shoemakers House"
-msgstr "Normales Forsthaus"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:8
@@ -2200,10 +2192,9 @@ msgstr "Normale Werkzeugschmiede"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Weaponsmithy"
-msgstr "Verbesserte Werkzeugschmiede"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:78
@@ -2265,17 +2256,15 @@ msgstr "Das Schmieden eines Breitschwertes"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Weaponsmithy"
-msgstr "Einfache Werkzeugschmiede"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Weaponsmithy"
-msgstr "Normale Werkzeugschmiede"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:8
@@ -2318,10 +2307,9 @@ msgstr "Normaler Kalkofen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Tailors House"
-msgstr "Verbessertes Bodenverbessererhaus"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:75
@@ -2335,39 +2323,34 @@ msgstr "Das Herstellen einer hölzernen Rüstung"
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:87
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:97
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:80
-#, fuzzy
 msgctxt "europeans_building"
 msgid "tailoring processed armor"
-msgstr "Das Herstellen eines überarbeitete Harnischs"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:100
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:92
-#, fuzzy
 msgctxt "europeans_building"
 msgid "tailoring a suit of chain armor"
-msgstr "Das Schmieden eines Kettenhemds"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:112
-#, fuzzy
 msgctxt "europeans_building"
 msgid "tailoring a suit of advanced armor"
-msgstr "Das Schmieden eines verbesserten Harnischs"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Tailors House"
-msgstr "Einfaches Kundschafterhaus"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Tailors House"
-msgstr "Normales Bodenverbessererhaus"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:8
@@ -2405,33 +2388,29 @@ msgstr "Normale Weberei"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Bakery"
-msgstr "Bäckermeister"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:59
 #: addons/europeans_tribe.wad/productionsites_food/bakery_basic/init.lua:77
 #: addons/europeans_tribe.wad/productionsites_food/bakery_normal/init.lua:70
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Baking bread"
-msgstr "Das Herstellen von Brotschiebern"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_food/bakery_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Bakery"
-msgstr "Bäckerlehrling"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_food/bakery_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Bakery"
-msgstr "Bäckergeselle"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_food/brewery_advanced/init.lua:8
@@ -3024,10 +3003,9 @@ msgstr "Die Ausbildung eines Schiffbauers"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:361
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:393
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:370
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting shoemaker"
-msgstr "Die Ausbildung eines Bäckers"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:373
@@ -3065,10 +3043,9 @@ msgstr "Die Ausbildung eines Steinmetzes"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:421
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:470
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:435
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting tailor"
-msgstr "Die Ausbildung eines Ausbilders"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:433
@@ -3938,24 +3915,17 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Flour
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:348
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Mixed flour is produced by the mill out of rye and wheat and is needed in "
 "the bakery to produce bread."
 msgstr ""
-"Gemischtes Mehl wird in der Mühle aus Roggen und  Weizen hergestellt und "
-"wird von der Tavernen und Wirtshäusern benötigt, um Rationen, Snacks und "
-"Mahlzeiten zu produzieren."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Bread
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:357
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Bread are produced in a bakery out of water and flour."
 msgstr ""
-"Mahlzeiten werden in einem Wirtshaus aus Fisch oder Fleisch und Wasser und "
-"Mehl hergestellt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Corn
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:366
@@ -3981,15 +3951,11 @@ msgstr "Fleisch liefert eine Menge Energie und wird in Tierzuchten produziert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fish
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:393
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Fish is one of the biggest food resources of the Europeans, and it is "
 "produced in animal farms."
 msgstr ""
-"Fisch ist eine der größten Nahrungsquellen für die Europäer. Tavernen und "
-"Wirtshäuser benötigen Fleisch oder Fisch um Rationen, Snacks oder Mahlzeiten "
-"zuzubereiten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:406
@@ -3999,16 +3965,12 @@ msgstr "Wasser ist Leben!"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:408
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Water is used by the claydigger, by the forester, by all farms, and in the "
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
-"Wasser wird vom Lehmgräber, vom Förster, von allen Bauernhöfen und in der "
-"Taverne und der Brauerei benötigt. Die Fischzucht und Schafzucht müssen auch "
-"mir Wasser versorgt werden."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Barley
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:418
@@ -4293,12 +4255,9 @@ msgstr "Große Eimer für den Förster, Lehmgräber und Fischzüchter."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Bread Paddle, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:690
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "This bread paddle is used by the baker in a bakery."
 msgstr ""
-"Dieser Brotschieber wird vom Bäcker in einer Taverne oder einem Wirtshaus "
-"benutzt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Bread Paddle, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:692
@@ -4308,12 +4267,9 @@ msgstr "Brotschieber werden von allen Schmieden hergestellt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Kitchen Tools, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:703
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "These kitchen tools are used by the baker in a bakery."
 msgstr ""
-"Diese Küchengeräte werden vom Koch in einer Taverne oder einem Wirtshaus "
-"benutzt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Kitchen Tools, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:705
@@ -4765,10 +4721,9 @@ msgstr "Mahlt Roggen und Weizen zu gemischtem Mehl."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1449
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1458
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1467
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Produce bread out of water and flour."
-msgstr "Bäckt Brot aus Wasser, Mehl und Maismehl."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Miner
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1479
@@ -4811,28 +4766,25 @@ msgstr "Webt Stoff für Schiffe, Werkzeuge und Rüstungen."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1590
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1599
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1608
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Produce clothing and armor."
-msgstr "Webt Stoff für Schiffe, Werkzeuge und Rüstungen."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Shoemaker
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1617
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1626
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1635
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Produce shoes and boots."
-msgstr "Schmiedet Rüstungen und Waffen."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Smith
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1644
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1653
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1662
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Produce tools and weapons."
-msgstr "Schmiedet Werkzeuge, Rüstungen und Waffen."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
@@ -5551,28 +5503,25 @@ msgstr "Stellt alle Werkzeuge her, die deine Arbeiter brauchen."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2908
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2915
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2922
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Produces clothing and armor."
-msgstr "Webt Stoff für Schiffe, Werkzeuge und Rüstungen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2929
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2936
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2943
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Produces shoes and boots."
-msgstr "Schmiedet Rüstungen und Waffen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2950
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2957
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2964
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Produces shields and weapons."
-msgstr "Schmiedet Rüstungen und Waffen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Recruitement Center
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2973
@@ -7432,24 +7381,21 @@ msgstr "Schiffbauergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/shoemaker_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Shoemaker"
-msgstr "Bäckermeister"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/shoemaker_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Shoemaker"
-msgstr "Bäckerlehrling"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/shoemaker_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Shoemaker"
-msgstr "Bäckergeselle"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/smelter_advanced/init.lua:8
@@ -7531,24 +7477,21 @@ msgstr "Steinmetzgeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/tailor_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Tailor"
-msgstr "Ausbildermeister"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/tailor_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Tailor"
-msgstr "Ausbilderlehrling"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/tailor_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Tailor"
-msgstr "Ausbildergeselle"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/terraformer_advanced/init.lua:8
@@ -7609,125 +7552,3 @@ msgstr "Weberlehrling"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Webergeselle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Armorsmithy"
-#~ msgstr "Verbesserte Rüstungsschmiede"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Armorsmithy"
-#~ msgstr "Einfache Rüstungsschmiede"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Armorsmithy"
-#~ msgstr "Normale Rüstungsschmiede"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making hook poles"
-#~ msgstr "Das Herstellen von Hakenstangen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Tavern"
-#~ msgstr "Verbesserte Taverne"
-
-#~ msgctxt "europeans_building"
-#~ msgid "preparing a ration"
-#~ msgstr "Das Zubereiten einer Ration"
-
-#~ msgctxt "europeans_building"
-#~ msgid "preparing a snack"
-#~ msgstr "Das Zubereiten eines Snacks"
-
-#~ msgctxt "europeans_building"
-#~ msgid "preparing a meal"
-#~ msgstr "Das Zubereiten einer Mahlzeit"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Tavern"
-#~ msgstr "Einfache Taverne"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Inn"
-#~ msgstr "Wirtshaus"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Tavern"
-#~ msgstr "Normale Taverne"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Taverns and Inns need meat or fish to prepare ration, snack or meal."
-#~ msgstr ""
-#~ "Tavernen und Wirtshäuser benötigen Fleisch oder Fisch um Rationen, Snacks "
-#~ "oder Mahlzeiten zuzubereiten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "A small bite to keep miners strong and working. The scout also consumes "
-#~ "rations on his scouting trips."
-#~ msgstr ""
-#~ "Ein kleiner Happen, um Bergleute bei Kräften zu halten oder den "
-#~ "Kundschafter auf seinen Erkundungsreisen zu ernähren."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Rations are produced in a tavern or an inn out of fish or meat and water "
-#~ "and flour."
-#~ msgstr ""
-#~ "Rationen werden in einer Taverne oder einem Wirtshaus aus Fisch oder "
-#~ "Fleisch und Wasser und Mehl hergestellt."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "A bigger morsel than the ration. Used in mines and to train soldiers in "
-#~ "battle arenas."
-#~ msgstr ""
-#~ "Größere Nahrungspüortion als die Ration. Wird in Minen benötigt, und um "
-#~ "Soldaten in Kampfarenen auszubilden."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Snacks are produced in a tavern or an inn out of fish or meat and water "
-#~ "and flour."
-#~ msgstr ""
-#~ "Snacks werden in einer Taverne oder einem Wirtshaus aus Fisch oder "
-#~ "Fleisch und Wasser und Mehl hergestellt."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "A bigger food than the ration or snack. Used in the deepest mines and the "
-#~ "most advanced trainingsites."
-#~ msgstr ""
-#~ "Eine größere Mahlzeit als eine Ration oder ein Snack. Sie wird in den "
-#~ "tiefsten Minen und den fortgeschrittensten Trainingslagern verwendet."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "This hook pole is used by the smoker in a tavern or in an inn."
-#~ msgstr ""
-#~ "Diese Hakenstange wird vom Räucherer in Tavernen oder Wirtshäusern "
-#~ "verwendet."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "It is created by all smithies."
-#~ msgstr "Sie wird von allen Schmieden hergestellt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Prepares rations, snacks and meals to feed all miners."
-#~ msgstr ""
-#~ " Bereitet Rationen, Snacks und Mahlzeiten zu, um alle Bergleute zu "
-#~ "ernähren."
-
-#~ msgctxt "ware"
-#~ msgid "Hook Pole"
-#~ msgstr "Hakenstange"
-
-#~ msgctxt "ware"
-#~ msgid "Meal"
-#~ msgstr "Mahlzeit"
-
-#~ msgctxt "ware"
-#~ msgid "Ration"
-#~ msgstr "Ration"
-
-#~ msgctxt "ware"
-#~ msgid "Snack"
-#~ msgstr "Snack"
