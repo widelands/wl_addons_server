@@ -26,64 +26,67 @@ init = {
         wares = {
             log = 128,
             reed = 128,
-            coal = 64,
-            granite = 48,
-            blackwood = 32,
-            cloth = 32,
-            grout = 32,
-            water = 32,
-            ore = 16,
-            planks = 16,
-            brick = 16,
-            marble = 16,
+            granite = 128,
+            water = 64,
+            blackwood = 64,
+            cloth = 64,
+            grout = 64,
+            planks = 32,
+            brick = 32,
+            marble = 32,
+            coal = 32,
+            quartz = 8,
+            diamond = 8,
             marble_column = 8,
-            iron = 4,
-            gold = 4,
-            quartz = 16,
-            diamond = 16,
+            coin_wood = 32,
+            coin_copper = 16,
+            coin_silver = 8,
+            coin_gold = 8,
             buckets = 16,
             basket = 16,
-            armor_wooden = 8,
-            boots_wooden = 8,
-            helmet_wooden = 8,
-            spear_wooden = 8
         },
         workers = {
             europeans_geologist = 1,
             europeans_carrier = 32,
-            europeans_builder = 16,
-            europeans_farmer_basic = 16,
-            europeans_lumberjack_basic = 8,
+            europeans_builder = 32,
+            europeans_farmer_basic = 32,
+            europeans_lumberjack_basic = 12,
+            europeans_miner_basic = 12,
+            europeans_trader = 10,
+            europeans_forester_basic = 8,
             europeans_breeder_basic = 6,
-            europeans_miner_basic = 6,
-            europeans_forester_basic = 6,
-            europeans_stonecutter_basic = 6,
             europeans_trainer_basic = 6,
-            europeans_trader = 4,
-            europeans_carpenter_basic = 2,
-            europeans_charcoal_burner_basic = 2,
-            europeans_smith_basic = 2,
-            europeans_stonemason_basic = 2,
-            europeans_brewer_basic = 1,
-            europeans_miller_basic = 1,
-            europeans_baker_basic = 1,
-            europeans_smelter_basic = 1,
-            europeans_weaver_basic = 1,
-            europeans_tailor_basic = 1,
-            europeans_shoemaker_basic = 1,
-            europeans_claydigger_basic = 1
-          },
-            soldiers = {
-                [{0,0,0,0}] = 24,
-          }
+            europeans_weaver_basic = 4,
+            europeans_stonecutter_basic = 4,
+            europeans_carpenter_basic = 4,
+            europeans_charcoal_burner_basic = 4,
+            europeans_stonemason_basic = 4,
+            europeans_brewer_basic = 4,
+            europeans_miller_basic = 4,
+            europeans_baker_basic = 4,
+            europeans_smelter_basic = 4,
+            europeans_smith_basic = 4,
+            europeans_tailor_basic = 4,
+            europeans_shoemaker_basic = 4,
+            europeans_claydigger_basic = 4,
+            europeans_terraformer_basic = 4
+      },
+        soldiers = {
+            [{0,0,0,0}] = 24,
+      }
     })
-    place_building_in_region(player, "europeans_recruitement_center_basic", sf:region(8), {
+    place_building_in_region(player, "europeans_market_big", sf:region(12), {
     })
-    place_building_in_region(player, "europeans_trading_post", sf:region(6), {
+    place_building_in_region(player, "europeans_market_small", sf:region(12), {
     })
-    place_building_in_region(player, "europeans_trade_pole", sf:region(6), {
+    place_building_in_region(player, "europeans_store_big", sf:region(12), {
     })
-    
+    place_building_in_region(player, "europeans_store_small", sf:region(12), {
+    })
+    place_building_in_region(player, "europeans_trading_post", sf:region(12), {
+    })
+    place_building_in_region(player, "europeans_trade_pole", sf:region(12), {
+    })
 end
 }
 

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 03:06+0200\n"
+"POT-Creation-Date: 2023-08-21 03:07+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -3178,8 +3178,8 @@ msgstr "Descoberta"
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
-"Not suitable for AI players. Disabled terraforming (diking of water bodies) "
-"because of lack of compatibility with seafaring."
+"Disabled terraforming (diking of water bodies) because of lack of "
+"compatibility with seafaring."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
@@ -3204,19 +3204,6 @@ msgstr "Quarter general"
 msgid ""
 "Start the game with your headquarters only. Disabled seafaring because of "
 "lack of compatibility with terraforming (diking of water bodies)."
-msgstr ""
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:11
-msgid "New World"
-msgstr "Un món nou"
-
-#. TRANSLATORS: This is the tooltip for the "New World" starting condition
-#: addons/europeans_tribe.wad/scripting/starting_conditions/new_world.lua:13
-msgid ""
-"Start the game with a advanced castle and a port. The AI might struggle with "
-"this condition on smaller maps. Disabled terraforming (diking of water "
-"bodies) because of lack of compatibility with seafaring."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
@@ -7471,3 +7458,6 @@ msgstr "Teixidor bàsic"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Teixidor normal"
+
+#~ msgid "New World"
+#~ msgstr "Un món nou"

@@ -554,7 +554,7 @@ This Addon contains all of my Maps. Some of my Maps are also on the Widelands We
 Teayo
 Teayo
 1688747564
-15
+16
 1
 9.0
 0
@@ -869,7 +869,7 @@ Favorite 1v1 Maps Collection
 the-x
 the-x
 1691924177
-2
+3
 0
 0.0
 0
@@ -900,7 +900,7 @@ Keine Grenzen sind auf dieser Karte gesetzt, ob du ganz im Wald startetest als U
 the-x
 the-x
 1692450525
-2
+3
 0
 0.0
 0
@@ -1851,7 +1851,7 @@ If there is no enemy military building in sight, every new construction site is 
 kaputtnik
 kaputtnik
 1613666291
-122
+123
 1
 9.0
 0
@@ -2591,7 +2591,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings, workers and some ware
 MarkMcWire
 MarkMcWire
 1621788282
-820
+827
 2
 6.5
 3
@@ -2607,9 +2607,9 @@ dreieck
 This tribe misses the "sticky node" animation which makes the game crash if a sticky note is placed. Please add a sticky note animation:    https://github.com/widelands/widelands/issues/5860  
 3.2.9
 1682425239
-3.7.0
-188
-72690279
+3.7.1
+189
+72683615
 tribes
 0
 405
@@ -3018,7 +3018,7 @@ tribes/workers/trainer_normal
 tribes/workers/weaver_advanced
 tribes/workers/weaver_basic
 tribes/workers/weaver_normal
-7430
+7429
 addon
 buildings/advanced_barrier/idle_0.5.png
 buildings/advanced_barrier/idle_00.png
@@ -5118,7 +5118,6 @@ scripting/starting_conditions/ai_optimized.lua
 scripting/starting_conditions/discovery.lua
 scripting/starting_conditions/harbors.lua
 scripting/starting_conditions/headquarters.lua
-scripting/starting_conditions/new_world.lua
 scripting/starting_conditions/seafaring.lua
 scripting/starting_conditions/struggling_outpost.lua
 scripting/starting_conditions/trading_outpost.lua
@@ -10473,8 +10472,8 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-7453
-063e2ba7ae32697d6b4c02fecbe1f3de
+7452
+7c9d460eeb27721ba310adb1542f6cc5
 7d672b6105fabbc2e717e81e40efd29b
 fbbd5b53033a58de73a4fe01bcb2f66f
 a08c175b1f94c27817eb9f4d6d07a9ff
@@ -11893,7 +11892,7 @@ effb610c5ebd25baf69e4a808794cdfc
 83f637190789efd1e6bd4622a6d38fc7
 b9d99f5f4a75665e384147f64d64e6eb
 a104d5eac823aa4c018a97a717ed0b4e
-95bbee4c7757584b30bea4c421f8dc93
+5454469aef9821636576a721a13b0b15
 aaefb6af8497258fc2450acf7361bd1f
 acf6536e56ea16183598e06b408fafbf
 d48cc661f1c8a1205d9ce9e6e9a67af2
@@ -12570,16 +12569,15 @@ a216c677836ef4ca53382c44145f882c
 03a7db3c2b456e2b5ce8d35545856e35
 886bed360fc9e84e70f580afa6f297cd
 e2b0dacfeb40a33c334d6d290b91e4ee
-833ca09946fb03b0b71b5b550612c16d
+ab5f1c37e2183092e08cf2947f78ec45
 d1feda187217e76ea35cf0896112dcb4
 a6460270aa454cbae879093d1c02a6b8
-68b7b63333153bb8e7ffb438d5bc8db7
 f96261cd01a972529bd5ff9a5fe0a1af
-31923f3ace99757163ddfaa7710a8b48
-627c52ef57f836c90e6c65d25071de73
-b877caa2ac2014f78177fb26f4a3fbc0
-57c9df23a03519326ec33ce55840b303
-536219443aafb0661656dae6b061cb5a
+4b5868e2c5414f14eb7212a954d884b7
+3f8d0c2b9db670c094be2103d39632ca
+0c053e8ca73282e00f467490042829ce
+9d336a321f4d97e7ff18ea3ddd7cef67
+fba0545335df9b00f283e52e981dddc7
 865f8dacda0d2d7683694a4f7480ede8
 39611571dbc06cf7bd3c3c874151658d
 7163c88c78681f4c04de5e1d97834dae
@@ -12691,7 +12689,7 @@ a4556719d17258905d7be2761cd0487d
 7063b6f5d16863042a7254979c2a21f5
 cdb69082530e277d638acf1e1d67a32c
 f9535866c7d646605d5bf64a69a93c5c
-8c378a35d1a1acc7c836c335fedc2f87
+233aadf0da5852e9413bf6a709f08cb7
 49887d8a8a2758f7fa58838695193c4c
 c77f58e6c15dde59d0eaa33e7bb6314f
 63c5b6f9375e6af54609fbe6ccc740f3
@@ -14833,7 +14831,7 @@ c28d4e8764dc81875b0bceff2129e2cd
 ec7e5b0da1faeb48b632059282208580
 6c339ed0e1a1c2873a9678e12ede8c49
 6dca159eace4ee4dff4a90f0a9f9bf28
-beb43b241badf16bcc71677d7580146c
+38a79ee0e0e556e16b1f72985c790e05
 e8a6b25ada0f058883eb8543c1d39bc0
 e3aa6286a938f5418acdf94d84a20d1c
 e2f74322bd0aad89a79cf3da114de9e9
@@ -14874,7 +14872,7 @@ a3a47f94de4b46ae8b9acb7bab97d1a7
 ada2a57fee5e413953e8a533b9a8bf25
 e497851f08e388906ae56a627cfc364e
 3630e1aa734e7ca9753bf5322ca1ad9f
-7c31cc7030d99db9b2d921b1c7aae70b
+ffcb3bbd9a8ac2b28afb9c228f50b507
 c47c6ba3b4a90b6eddaed58078dd6ae7
 ff9214414dbba84823a36ec4e1138c32
 31db2a09a2ca2e91b1b9099b849fac7b
@@ -14987,7 +14985,7 @@ f727f9694f7bc83527ff2726c446c4fd
 42d3a1e10a5eedfc29f8f1a8f6b94a91
 a39d40af0035b6552b53865249c4354f
 51a15c96d10d586fceba9fda1e4b7df2
-9022eaabd29c6cb179c556ebf96b2b86
+0319404a586fe08ffaf897cdd8256c7d
 264045db7f99ec958a9d98e3c3af6b2b
 e2250139098adec7118406896fb3e299
 8a0102479ce7ee5be56173c87581a9f0
@@ -17905,10 +17903,10 @@ c79c08269cf78db82061fa883449952f
 061eace57b6883eb5bdde7959920e305
 922931452056931d38de0b06deaa6ec4
 cc93fe8cb2fecfcff51a3dddc933c111
-d42bf8c80f80aa1b03d6abc53c06e3ca
-d29b50856166911216cb24a7b2aed171
+c586356e7606de41dd3fb512648d82ae
+d6749c6f540b2ff55a52d5776dcd63e0
 f1d4d3cc5cf35a9311de0fef22047f82
-feb77ea4e61145a06d7a3d0298bcaa3e
+a566d614b67719c49f24b0646ad7d3c5
 bdc55325db9453dffd3a0d58a315dd45
 de3126f331f67b93b0ee13460807f040
 03f1834048ef357b715f54b4805f31a9
@@ -17918,13 +17916,13 @@ e0c8e1a5607bab851ff6096d5f08f873
 003f98c5e1ad5c955ecf84b177aeddd3
 63fa50b14fd7c603a2ba51ea883abfaa
 0a5ec43664b1590f2598681b3e4509c6
-d0f4295284d73b99381b702849e5d323
-7f3d655340456e3b88bc482cde3f793c
-b5b5203f72dd27fbb673c2fe68b6b66f
+f517f6cf6460da5d8c56c35fa0effcfe
+3ca7b36bcdec6866985d3751b881a2dc
+6c480c70f8fe0fa08250a94727b3ceb8
 2172b8dbdbc95270a41e8ea8ec2d4e1a
 54384e0f8dcf1713722e6ba5080bf144
 2fb207496ab05de5016461df14335581
-9c95fee64a7c86391d67c2127decd63a
+31d697e39ea02fe5d28f1f5defc83733
 3b9e8545cdac3069996c2e0cde953e5a
 6494ea1ee2ddad623e5efd5c034dcd5e
 verified
@@ -18220,7 +18218,7 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-222
+223
 0
 0.0
 0
@@ -21896,7 +21894,7 @@ Keep resource indicators until a mine starts to work in the area. Mines will gra
 tothxa
 tothxa
 1638011892
-143
+144
 0
 0.0
 2

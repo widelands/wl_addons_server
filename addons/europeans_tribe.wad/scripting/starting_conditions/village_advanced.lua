@@ -23,9 +23,9 @@ init = {
     player:forbid_buildings{"europeans_headquarters", "europeans_port", "europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced"}
 
     local h = player:place_building("europeans_advanced_castle", sf, false, true)
-    h:set_soldiers{[{2,2,2,2}] = 18}
+    h:set_soldiers{[{3,3,3,3}] = 18}
       
-    place_building_in_region(player, "europeans_warehouse", sf:region(3), {
+    place_building_in_region(player, "europeans_warehouse", sf:region(8), {
         wares = {
             log = 128,
             reed = 128,
