@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 03:07+0200\n"
+"POT-Creation-Date: 2023-08-22 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -3186,15 +3186,13 @@ msgstr "Utförsken"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
-#, fuzzy
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
 "Disabled terraforming (diking of water bodies) because of lack of "
 "compatibility with seafaring."
 msgstr ""
 "Begünn dat Speel mit dree Schippen up de See un blot een paar Materialien. "
-"Künstelk Spelers könen daar nich mit spölen. Keen Diekbau an de Waterkant is "
-"verlöövt, denn dat gaht nich mit Seefahrt."
+"Keen Diekbau an de Waterkant is verlöövt, denn dat gaht nich mit Seefahrt."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
@@ -7509,15 +7507,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgid "New World"
-#~ msgstr "Neje Welt"
-
-#~ msgid ""
-#~ "Start the game with a advanced castle and a port. The AI might struggle "
-#~ "with this condition on smaller maps. Disabled terraforming (diking of "
-#~ "water bodies) because of lack of compatibility with seafaring."
-#~ msgstr ""
-#~ "Begünn dat Speel mit eenem groten Slött un eener Muu. Künstelk Spelers "
-#~ "finnen dat up lütten Kaarten villicht swaar. Keen Diekbau an de Waterkant "
-#~ "is verlöövt, denn dat gaht nich mit Seefahrt."

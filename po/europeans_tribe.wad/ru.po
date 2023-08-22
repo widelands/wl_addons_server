@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 03:07+0200\n"
+"POT-Creation-Date: 2023-08-22 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -3172,15 +3172,11 @@ msgstr "Открытие"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
-#, fuzzy
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
 "Disabled terraforming (diking of water bodies) because of lack of "
 "compatibility with seafaring."
 msgstr ""
-"Начните игру с тремя кораблями в океане и всего лишь горсткой припасов. Не "
-"подходит для ИИ-игроков. Отключено терраформирование (осушение водоемов) из-"
-"за несовместимости с мореплаванием."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
@@ -7487,15 +7483,3 @@ msgstr "Базовый Ткач"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Обычный Ткач"
-
-#~ msgid "New World"
-#~ msgstr "Новый мир"
-
-#~ msgid ""
-#~ "Start the game with a advanced castle and a port. The AI might struggle "
-#~ "with this condition on smaller maps. Disabled terraforming (diking of "
-#~ "water bodies) because of lack of compatibility with seafaring."
-#~ msgstr ""
-#~ "Начните игру с продвинутым замком и портом. ИИ может не справиться с "
-#~ "этими условиями на небольших картах. Отключено терраформирование "
-#~ "(осушение водоемов) из-за несовместимости с мореплаванием."
