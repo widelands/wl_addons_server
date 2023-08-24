@@ -7,7 +7,7 @@ include "scripting/infrastructure.lua"
 -- -----------------------
 --
 -- This script contains some convenience functions intended mainly for use
--- in the Discovery and New World starting conditions.
+-- in the Discovery and AI starting conditions.
 --
 -- To make these functions available include this file at the beginning
 -- of a script via:
@@ -230,6 +230,15 @@ function place_random_rocks(startx, starty, radius, objectcount)
         place_objects(startx, starty, radius, randomrock, rcount)
         objectcount = objectcount - rcount
     end
+end
+
+function place_trade_pole(player, fields)
+   while #fields > 0 do
+      local idx = math.random(#fields)
+      local f = fields[idx]
+
+      place_object(f.x, f.y, "europeans_trade_pole")
+   end
 end
 
 function place_building(player, startx, starty, radius, buildingname)

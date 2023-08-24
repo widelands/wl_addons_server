@@ -85,8 +85,7 @@ init = {
     })
     place_building_in_region(player, "europeans_trading_post", sf:region(12), {
     })
-    place_building_in_region(player, "europeans_trade_pole", sf:region(12), {
-    })
+    place_trade_pole(player, sf:region(12))
 end
 }
 

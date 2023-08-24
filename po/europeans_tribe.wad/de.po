@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-22 03:06+0200\n"
+"POT-Creation-Date: 2023-08-24 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -3158,22 +3158,25 @@ msgid "constructing a ship"
 msgstr "Das Bauen eines Schiffs"
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/scripting/starting_conditions/ai_optimized.lua:12
-msgid "AI optimized starting condition, not for human player"
-msgstr ""
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_tribe.wad/scripting/starting_conditions/ai_optimized.lua:14
-msgid "Only for AI debug purposes. No regular starting condition."
-msgstr "Nur für KI Debuggingzwecke. Keine reguläre Startbedingung"
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:11
-msgid "Discovery"
+#: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_ai.lua:11
+#, fuzzy
+msgid "Discovery (AI Player)"
 msgstr "Entdeckung"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
-#: addons/europeans_tribe.wad/scripting/starting_conditions/discovery.lua:13
+#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_ai.lua:13
+#: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_ai.lua:14
+msgid "AI optimized starting condition, not for human player."
+msgstr ""
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_human.lua:11
+msgid "Discovery (Human Player)"
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_human.lua:13
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies. "
 "Disabled terraforming (diking of water bodies) because of lack of "
@@ -3181,24 +3184,9 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:11
-msgid "Harbors (for European map)"
-msgstr "Häfen (für die Europakarte)"
-
-#. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
-#: addons/europeans_tribe.wad/scripting/starting_conditions/harbors.lua:13
-msgid ""
-"Start the game with a bundle of ports. Disabled terraforming (diking of "
-"water bodies) because of lack of compatibility with seafaring."
-msgstr ""
-"Beginne das Spiel mit einer Hand voll Häfen. Das Terraforming (Eindeichen "
-"von Wasserfeldern) wurde deaktiviert, da es nicht kompatibel mit Seefahrt "
-"ist."
-
-#. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
-msgid "Headquarters"
-msgstr "Hauptquartier"
+msgid "Headquarters (without seafaring)"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:13
@@ -3211,9 +3199,15 @@ msgstr ""
 "(Eindeichen von Wasserfeldern)."
 
 #. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_ai.lua:12
+#, fuzzy
+msgid "Headquarters (AI optimized)"
+msgstr "Hauptquartier"
+
+#. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:11
-msgid "Seafaring"
-msgstr "Seefahrt"
+msgid "Headquarters (with seafaring)"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:13
@@ -7532,3 +7526,20 @@ msgstr "Weberlehrling"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Webergeselle"
+
+#~ msgid "Only for AI debug purposes. No regular starting condition."
+#~ msgstr "Nur für KI Debuggingzwecke. Keine reguläre Startbedingung"
+
+#~ msgid "Harbors (for European map)"
+#~ msgstr "Häfen (für die Europakarte)"
+
+#~ msgid ""
+#~ "Start the game with a bundle of ports. Disabled terraforming (diking of "
+#~ "water bodies) because of lack of compatibility with seafaring."
+#~ msgstr ""
+#~ "Beginne das Spiel mit einer Hand voll Häfen. Das Terraforming (Eindeichen "
+#~ "von Wasserfeldern) wurde deaktiviert, da es nicht kompatibel mit Seefahrt "
+#~ "ist."
+
+#~ msgid "Seafaring"
+#~ msgstr "Seefahrt"

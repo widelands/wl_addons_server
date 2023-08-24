@@ -477,7 +477,7 @@ This addon adds my maps ''Java and Sumatra 1.0'', ''Java and Sumatra 1.1'' and '
 Nilpanda
 Nilpanda
 1666688231
-319
+321
 1
 10.0
 0
@@ -1174,7 +1174,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-300
+301
 2
 9.0
 0
@@ -1704,7 +1704,7 @@ No description
 Solstice
 Solstice_s_Return
 1657988804
-294
+295
 2
 9.5
 1
@@ -2519,7 +2519,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-369
+371
 0
 0.0
 0
@@ -2591,7 +2591,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings, workers and some ware
 MarkMcWire
 MarkMcWire
 1621788282
-834
+839
 2
 6.5
 3
@@ -2607,9 +2607,9 @@ dreieck
 This tribe misses the "sticky node" animation which makes the game crash if a sticky note is placed. Please add a sticky note animation:    https://github.com/widelands/widelands/issues/5860  
 3.2.9
 1682425239
-3.7.1
-190
-72683615
+3.7.2
+191
+72677119
 tribes
 0
 405
@@ -5114,10 +5114,10 @@ recruitementsites/yard_ships_normal/init.lua
 recruitementsites/yard_ships_normal/menu.png
 recruitementsites/yard_ships_normal/register.lua
 scripting/debug_europeans.lua
-scripting/starting_conditions/ai_optimized.lua
-scripting/starting_conditions/discovery.lua
-scripting/starting_conditions/harbors.lua
+scripting/starting_conditions/discovery_ai.lua
+scripting/starting_conditions/discovery_human.lua
 scripting/starting_conditions/headquarters.lua
+scripting/starting_conditions/headquarters_ai.lua
 scripting/starting_conditions/seafaring.lua
 scripting/starting_conditions/struggling_outpost.lua
 scripting/starting_conditions/trading_outpost.lua
@@ -10473,7 +10473,7 @@ ru.mo
 sk.mo
 sv.mo
 7452
-7c9d460eeb27721ba310adb1542f6cc5
+50baaa43dca4620a343db48c64aff09d
 7d672b6105fabbc2e717e81e40efd29b
 fbbd5b53033a58de73a4fe01bcb2f66f
 a08c175b1f94c27817eb9f4d6d07a9ff
@@ -12568,17 +12568,17 @@ d091e2c4c5e76b574b165c866c05952d
 a216c677836ef4ca53382c44145f882c
 03a7db3c2b456e2b5ce8d35545856e35
 886bed360fc9e84e70f580afa6f297cd
-e2b0dacfeb40a33c334d6d290b91e4ee
-ab5f1c37e2183092e08cf2947f78ec45
-d1feda187217e76ea35cf0896112dcb4
-a6460270aa454cbae879093d1c02a6b8
-f96261cd01a972529bd5ff9a5fe0a1af
+5a2fd6cc19bb1f1a4c18dbba6091e2ef
+3541b0bf4ccf95539fa5584a8039e29c
+f1820fb0c91d8d2c344f9dd19250acd7
+8b799f541d4528ea6b7f48ec40f23e50
+139063da3e3d797151d686ddf055f01e
 4b5868e2c5414f14eb7212a954d884b7
-3f8d0c2b9db670c094be2103d39632ca
+c1655012f39390227568db3497004829
 0c053e8ca73282e00f467490042829ce
 9d336a321f4d97e7ff18ea3ddd7cef67
 fba0545335df9b00f283e52e981dddc7
-865f8dacda0d2d7683694a4f7480ede8
+dbc67f8621ad902d05bf5829ffe3338d
 39611571dbc06cf7bd3c3c874151658d
 7163c88c78681f4c04de5e1d97834dae
 0781ecd4351127f34dfa3be25438097a
@@ -12689,7 +12689,7 @@ a4556719d17258905d7be2761cd0487d
 7063b6f5d16863042a7254979c2a21f5
 cdb69082530e277d638acf1e1d67a32c
 f9535866c7d646605d5bf64a69a93c5c
-233aadf0da5852e9413bf6a709f08cb7
+59b9e50c2eb0ca5a90753acf091705f0
 49887d8a8a2758f7fa58838695193c4c
 c77f58e6c15dde59d0eaa33e7bb6314f
 63c5b6f9375e6af54609fbe6ccc740f3
@@ -17903,10 +17903,10 @@ c79c08269cf78db82061fa883449952f
 061eace57b6883eb5bdde7959920e305
 922931452056931d38de0b06deaa6ec4
 cc93fe8cb2fecfcff51a3dddc933c111
-c586356e7606de41dd3fb512648d82ae
-d6749c6f540b2ff55a52d5776dcd63e0
+ae086fe8c27e1cfbab0a21ebf3e86d13
+811296cc5649cb468eb93a23d33ceff5
 f1d4d3cc5cf35a9311de0fef22047f82
-a566d614b67719c49f24b0646ad7d3c5
+697783cbe288487437454002a9eebf59
 bdc55325db9453dffd3a0d58a315dd45
 de3126f331f67b93b0ee13460807f040
 03f1834048ef357b715f54b4805f31a9
@@ -17916,13 +17916,13 @@ e0c8e1a5607bab851ff6096d5f08f873
 003f98c5e1ad5c955ecf84b177aeddd3
 63fa50b14fd7c603a2ba51ea883abfaa
 0a5ec43664b1590f2598681b3e4509c6
-f517f6cf6460da5d8c56c35fa0effcfe
-9a99ec001b5303773b828d790c77742c
-6c480c70f8fe0fa08250a94727b3ceb8
+5a9d59fda2a12e752fe1a1e671db18c7
+6833d707e73953844d04d01ab1096d57
+a8e4e1113ed3fce2e2e3410ce6663588
 2172b8dbdbc95270a41e8ea8ec2d4e1a
 54384e0f8dcf1713722e6ba5080bf144
 2fb207496ab05de5016461df14335581
-31d697e39ea02fe5d28f1f5defc83733
+e4ee46224a2be520eec105083043deab
 3b9e8545cdac3069996c2e0cde953e5a
 6494ea1ee2ddad623e5efd5c034dcd5e
 verified
@@ -18501,7 +18501,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-458
+460
 5
 9.6
 0
@@ -21204,7 +21204,7 @@ This set of maps contains 6 small and medium-sized maps for 3-6 players. You can
 OIPUN
 OIPUN
 1615637480
-269
+271
 0
 0.0
 0
