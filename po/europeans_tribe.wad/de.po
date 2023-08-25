@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-24 03:06+0200\n"
+"POT-Creation-Date: 2023-08-25 03:08+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -34,6 +34,9 @@ msgid ""
 "wares from other tribes, until own graphics are available. (Not compatible "
 "with Version 3.6.9 or earlier.)"
 msgstr ""
+"Fügt den Stamm der \"Europäer\" hinzu. Dieser nutzt Gebäude, Arbeiter und "
+"einige Waren von anderen Stämmen, bis eigene Grafiken verfügbar sind. (Nicht "
+"mehr kompatibel mit Version 3.6.9 dieses Addons oder früher)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/buildings/advanced_barrier/init.lua:8
@@ -1214,7 +1217,7 @@ msgstr "Die Herstellung von Fleisch"
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_normal/init.lua:141
 msgctxt "europeans_building"
 msgid "producing meat and leather"
-msgstr ""
+msgstr "Die Herstellung von Fleisch und Leder"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fish because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_advanced/init.lua:183
@@ -1987,7 +1990,7 @@ msgstr "Normale Sägemühle"
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Shoemakers House"
-msgstr ""
+msgstr "Verbessertes Schuhmacherhaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:61
@@ -2022,13 +2025,13 @@ msgstr "Das Herstellen verbesserter Stiefel"
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Shoemakers House"
-msgstr ""
+msgstr "Einfaches Schuhmacherhaus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Shoemakers House"
-msgstr ""
+msgstr "Normales Schuhmacherhaus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:8
@@ -2194,7 +2197,7 @@ msgstr "Normale Werkzeugschmiede"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Weaponsmithy"
-msgstr ""
+msgstr "Verbesserte Waffenschmiede"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:78
@@ -2258,13 +2261,13 @@ msgstr "Das Schmieden eines Breitschwertes"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Weaponsmithy"
-msgstr ""
+msgstr "Einfache Waffenschmiede"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Weaponsmithy"
-msgstr ""
+msgstr "Normale Waffenschmiede"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:8
@@ -2309,7 +2312,7 @@ msgstr "Normaler Kalkofen"
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Tailors House"
-msgstr ""
+msgstr "Verbessertes Schneiderhaus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:75
@@ -2325,32 +2328,32 @@ msgstr "Das Herstellen einer hölzernen Rüstung"
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:80
 msgctxt "europeans_building"
 msgid "tailoring processed armor"
-msgstr ""
+msgstr "Das Schneidern eines überarbeiteten Harnischs"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:100
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:92
 msgctxt "europeans_building"
 msgid "tailoring a suit of chain armor"
-msgstr ""
+msgstr "Das Schneidern eines Kettenhemds"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:112
 msgctxt "europeans_building"
 msgid "tailoring a suit of advanced armor"
-msgstr ""
+msgstr "Das Schneidern eines verbesserten Harnischs"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Tailors House"
-msgstr ""
+msgstr "Einfaches Schneiderhaus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Tailors House"
-msgstr ""
+msgstr "Normales Schneiderhaus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:8
@@ -2390,7 +2393,7 @@ msgstr "Normale Weberei"
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Bakery"
-msgstr ""
+msgstr "Verbesserte Bäckerei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:59
@@ -2398,19 +2401,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_food/bakery_normal/init.lua:70
 msgctxt "europeans_building"
 msgid "Baking bread"
-msgstr ""
+msgstr "Das Backen von Brot"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_food/bakery_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Bakery"
-msgstr ""
+msgstr "Einfache Bäckerei"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_food/bakery_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Bakery"
-msgstr ""
+msgstr "Normale Bäckerei"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_food/brewery_advanced/init.lua:8
@@ -3005,7 +3008,7 @@ msgstr "Die Ausbildung eines Schiffbauers"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:370
 msgctxt "europeans_building"
 msgid "recruiting shoemaker"
-msgstr ""
+msgstr "Die Ausbildung eines Schuhmachers"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:373
@@ -3045,7 +3048,7 @@ msgstr "Die Ausbildung eines Steinmetzes"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:435
 msgctxt "europeans_building"
 msgid "recruiting tailor"
-msgstr ""
+msgstr "Die Ausbildung eines Schneiders"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:433
@@ -3159,9 +3162,8 @@ msgstr "Das Bauen eines Schiffs"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_ai.lua:11
-#, fuzzy
 msgid "Discovery (AI Player)"
-msgstr "Entdeckung"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
@@ -3182,6 +3184,9 @@ msgid ""
 "Disabled terraforming (diking of water bodies) because of lack of "
 "compatibility with seafaring."
 msgstr ""
+"Beginne das Spiel mit drei Schiffen auf dem Ozean und nur einer Hand voll an "
+"Gütern. Das Terraforming (Eindeichen von Wasserfeldern) wurde deaktiviert, "
+"da es nicht kompatibel mit Seefahrt ist."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
@@ -3200,9 +3205,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_ai.lua:12
-#, fuzzy
 msgid "Headquarters (AI optimized)"
-msgstr "Hauptquartier"
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:11
@@ -3894,12 +3898,14 @@ msgid ""
 "Mixed flour is produced by the mill out of rye and wheat and is needed in "
 "the bakery to produce bread."
 msgstr ""
+"Gemischtes Mehl wird in der Mühle aus Roggen und  Weizen hergestellt und "
+"wird von der Bäckerei benötigt, um Brot zu backen."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Bread
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:357
 msgctxt "europeans_ware"
 msgid "Bread are produced in a bakery out of water and flour."
-msgstr ""
+msgstr "Brot wird in der Bäckerei aus Wasser und Mehl gebacken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Corn
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:366
@@ -3945,6 +3951,9 @@ msgid ""
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
+"Wasser wird vom Lehmgräber, vom Förster, von allen Bauernhöfen und in der "
+"Bäckerei und der Brauerei benötigt. Die Fischzucht und Schafzucht müssen "
+"auch mir Wasser versorgt werden."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Barley
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:418
@@ -4697,7 +4706,7 @@ msgstr "Mahlt Roggen und Weizen zu gemischtem Mehl."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1467
 msgctxt "europeans_worker"
 msgid "Produce bread out of water and flour."
-msgstr ""
+msgstr "Bäckt Brot aus Wasser und Mehl."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Miner
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1479
@@ -6685,7 +6694,7 @@ msgstr "Holzschuhe"
 #: addons/europeans_tribe.wad/tribes/wares/bread/init.lua:8
 msgctxt "ware"
 msgid "Bread"
-msgstr ""
+msgstr "Brot"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/bread_paddle/init.lua:8
@@ -7357,19 +7366,19 @@ msgstr "Schiffbauergeselle"
 #: addons/europeans_tribe.wad/tribes/workers/shoemaker_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Shoemaker"
-msgstr ""
+msgstr "Schuhmachermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/shoemaker_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Shoemaker"
-msgstr ""
+msgstr "Schuhmacherlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/shoemaker_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Shoemaker"
-msgstr ""
+msgstr "Schuhmachergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/smelter_advanced/init.lua:8
@@ -7453,19 +7462,19 @@ msgstr "Steinmetzgeselle"
 #: addons/europeans_tribe.wad/tribes/workers/tailor_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Tailor"
-msgstr ""
+msgstr "Schneidermeister"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/tailor_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Tailor"
-msgstr ""
+msgstr "Schneiderlehrling"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/tailor_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Tailor"
-msgstr ""
+msgstr "Schneidergeselle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/terraformer_advanced/init.lua:8
@@ -7526,20 +7535,3 @@ msgstr "Weberlehrling"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Webergeselle"
-
-#~ msgid "Only for AI debug purposes. No regular starting condition."
-#~ msgstr "Nur für KI Debuggingzwecke. Keine reguläre Startbedingung"
-
-#~ msgid "Harbors (for European map)"
-#~ msgstr "Häfen (für die Europakarte)"
-
-#~ msgid ""
-#~ "Start the game with a bundle of ports. Disabled terraforming (diking of "
-#~ "water bodies) because of lack of compatibility with seafaring."
-#~ msgstr ""
-#~ "Beginne das Spiel mit einer Hand voll Häfen. Das Terraforming (Eindeichen "
-#~ "von Wasserfeldern) wurde deaktiviert, da es nicht kompatibel mit Seefahrt "
-#~ "ist."
-
-#~ msgid "Seafaring"
-#~ msgstr "Seefahrt"

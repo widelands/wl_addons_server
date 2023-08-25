@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-24 03:06+0200\n"
+"POT-Creation-Date: 2023-08-25 03:08+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -3164,9 +3164,8 @@ msgstr "een schip bouwen"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_ai.lua:11
-#, fuzzy
 msgid "Discovery (AI Player)"
-msgstr "Ontdekking"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
@@ -3204,9 +3203,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_ai.lua:12
-#, fuzzy
 msgid "Headquarters (AI optimized)"
-msgstr "Hoofdkwartier"
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:11
@@ -7526,20 +7524,3 @@ msgstr "Basis Wever"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Normale Wever"
-
-#~ msgid "Only for AI debug purposes. No regular starting condition."
-#~ msgstr "Alleen voor AI-debugdoeleinden. Geen normale startvoorwaarde."
-
-#~ msgid "Harbors (for European map)"
-#~ msgstr "Havens (voor Europese kaart)"
-
-#~ msgid ""
-#~ "Start the game with a bundle of ports. Disabled terraforming (diking of "
-#~ "water bodies) because of lack of compatibility with seafaring."
-#~ msgstr ""
-#~ "Begin het spel met een bundel havens. Uitgeschakeld terreinvorming "
-#~ "(bedijken van watermassa's) vanwege gebrek aan compatibiliteit met "
-#~ "zeevaart."
-
-#~ msgid "Seafaring"
-#~ msgstr "Zeevaart"

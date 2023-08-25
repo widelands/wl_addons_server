@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-24 03:06+0200\n"
+"POT-Creation-Date: 2023-08-25 03:08+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -3168,24 +3168,22 @@ msgstr "een Schipp to timmern"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_ai.lua:11
-#, fuzzy
 msgid "Discovery (AI Player)"
-msgstr "Utförsken"
+msgstr "Utförsken (künstelk Speler)"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_ai.lua:13
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_ai.lua:14
-#, fuzzy
 msgid "AI optimized starting condition, not for human player."
 msgstr ""
 "Anfangskondiesje, wat för künstelk Spelers dacht is un nich för de minskelk "
-"Speler"
+"Speler."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_human.lua:11
 msgid "Discovery (Human Player)"
-msgstr ""
+msgstr "Utförsken (minskelk Speler)"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/discovery_human.lua:13
@@ -3200,7 +3198,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:11
 msgid "Headquarters (without seafaring)"
-msgstr ""
+msgstr "Raadhuus (sünner Seefahrt)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters.lua:13
@@ -3213,14 +3211,13 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_ai.lua:12
-#, fuzzy
 msgid "Headquarters (AI optimized)"
-msgstr "Raadhuus"
+msgstr "Raadhuus (künstelk Speler)"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:11
 msgid "Headquarters (with seafaring)"
-msgstr ""
+msgstr "Raadhuus (mit Seefahrt)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_tribe.wad/scripting/starting_conditions/seafaring.lua:13
@@ -7502,20 +7499,3 @@ msgstr "Spinner"
 msgctxt "europeans_worker"
 msgid "Normal Weaver"
 msgstr "Goder Spinner"
-
-#~ msgid "Only for AI debug purposes. No regular starting condition."
-#~ msgstr ""
-#~ "Blots tum Fehlersöken mit künstelk Spelers; keene echte Anfangskondiesje."
-
-#~ msgid "Harbors (for European map)"
-#~ msgstr "Muden (för Europäers-Kaart)"
-
-#~ msgid ""
-#~ "Start the game with a bundle of ports. Disabled terraforming (diking of "
-#~ "water bodies) because of lack of compatibility with seafaring."
-#~ msgstr ""
-#~ "Begünn dat Speel mit eenigen Muden. Keen Diekbau an de Waterkant is "
-#~ "verlöövt, denn dat gaht nich mit Seefahrt."
-
-#~ msgid "Seafaring"
-#~ msgstr "Seefahrt"
