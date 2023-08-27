@@ -54,27 +54,16 @@ init = {
         workers = {
             europeans_geologist = 1,
             europeans_carrier = 32,
-            europeans_builder = 16,
-            europeans_farmer_basic = 16,
-            europeans_lumberjack_basic = 8,
-            europeans_breeder_basic = 6,
-            europeans_miner_basic = 6,
-            europeans_forester_basic = 6,
-            europeans_stonecutter_basic = 6,
-            europeans_trainer_basic = 6,
-            europeans_trader = 4,
-            europeans_carpenter_basic = 2,
-            europeans_charcoal_burner_basic = 2,
-            europeans_smith_basic = 2,
-            europeans_stonemason_basic = 2,
-            europeans_brewer_basic = 1,
-            europeans_miller_basic = 1,
-            europeans_baker_basic = 1,
-            europeans_smelter_basic = 1,
-            europeans_weaver_basic = 1,
-            europeans_tailor_basic = 1,
-            europeans_shoemaker_basic = 1,
-            europeans_claydigger_basic = 1
+            europeans_builder = 32,
+            europeans_worker_advanced = 32,
+            europeans_farmer_advanced = 16,
+            europeans_miner_advanced = 12,
+            europeans_trader = 8,
+            europeans_trainer_advanced = 8,
+            europeans_lumberjack_advanced = 6,
+            europeans_forester_advanced = 6,
+            europeans_stonecutter_advanced = 4,
+            europeans_claydigger_advanced = 4,
       },
         soldiers = {
             [{3,3,3,3}] = 16,
@@ -93,11 +82,11 @@ init = {
     place_building_in_region(player, "europeans_well_level_4", sf:region(12), {
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_farm_medium_advanced", sf:region(16), {
+    place_building_in_region(player, "europeans_farm_advanced", sf:region(16), {
         inputs = {water = 4},
     })
     sleep(5000)
-    place_building_in_region(player, "europeans_farm_medium_advanced", sf:region(16), {
+    place_building_in_region(player, "europeans_farm_advanced", sf:region(16), {
         inputs = {water = 4},
     })
     sleep(5000)

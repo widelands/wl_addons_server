@@ -44,7 +44,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_smelter_basic = 1
+        europeans_worker_basic = 1
     },
 
     inputs = {

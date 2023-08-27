@@ -38,8 +38,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_weaver_advanced = 1,
-        europeans_weaver_basic = 1
+        europeans_worker_advanced = 1,
+        europeans_worker_basic = 1
     },
 
     inputs = {

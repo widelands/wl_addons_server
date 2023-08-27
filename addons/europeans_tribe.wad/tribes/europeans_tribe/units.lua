@@ -572,7 +572,33 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            -- Tools 1
+            -- Tools
+            {
+                name = "buckets",
+                default_target_quantity = 2,
+                preciousness = 4,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
+                        pgettext("europeans_ware", "Big buckets for the forester, the claydigger, and the fish breeder."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
+                        pgettext("europeans_ware", "They are produced by all smithies.")
+                    }
+                }
+            },
+            {
+                name = "basket",
+                default_target_quantity = 4,
+                preciousness = 4,
+                 helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
+                        pgettext("europeans_ware", "This basket is needed by the farmer for harvesting the fruits and grapes and needed by miller and by gamekeeper."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
+                        pgettext("europeans_ware", "It is also used by advanced carrier to transport wares. It is produced by all smithies.")
+                    }
+                }
+            },
             {
                 name = "scythe",
                 default_target_quantity = 2,
@@ -583,19 +609,6 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "The scythe is the tool of the farmers."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
                         pgettext("europeans_ware", "Scythes are produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "shovel",
-                default_target_quantity = 2,
-                preciousness = 4,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
-                        pgettext("europeans_ware", "The shovel is an essential tool. Therefore the forester, the claydigger and the farmer use them."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
-                        pgettext("europeans_ware", "They are produced by all smithies.")
                     }
                 }
             },
@@ -626,16 +639,16 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "saw",
+                name = "shovel",
                 default_target_quantity = 2,
                 preciousness = 4,
                 helptexts = {
                     purpose = {
-                         -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
-                         pgettext("europeans_ware", "The saw is an essential tool. This saw is needed by the woodcutter and the carpenter."),
-                         -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
-                         pgettext("europeans_ware", "It is produced by all smithies.")
-                     }
+                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
+                        pgettext("europeans_ware", "The shovel is an essential tool. Therefore the forester, the claydigger and the farmer use them."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
+                        pgettext("europeans_ware", "They are produced by all smithies.")
+                    }
                 }
             },
             {
@@ -650,59 +663,30 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "Make sure you’ve always got some in reserve! They are produced by all smithies.")
                     }
                 }
-            }
-        },
-        {
-            -- Tools 2
-            {
-                name = "basket",
-                default_target_quantity = 4,
-                preciousness = 4,
-                 helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
-                        pgettext("europeans_ware", "This basket is needed by the farmer for harvesting the fruits and grapes and needed by miller and by gamekeeper."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
-                        pgettext("europeans_ware", "It is also used by advanced carrier to transport wares. It is produced by all smithies.")
-                    }
-                }
             },
             {
-                name = "buckets",
+                name = "saw",
                 default_target_quantity = 2,
                 preciousness = 4,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
-                        pgettext("europeans_ware", "Big buckets for the forester, the claydigger, and the fish breeder."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
-                        pgettext("europeans_ware", "They are produced by all smithies.")
-                    }
+                         -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
+                         pgettext("europeans_ware", "The saw is an essential tool. This saw is needed by the woodcutter and the carpenter."),
+                         -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
+                         pgettext("europeans_ware", "It is produced by all smithies.")
+                     }
                 }
             },
             {
-                name = "bread_paddle",
+                name = "fire_tongs",
                 default_target_quantity = 2,
-                preciousness = 2,
+                preciousness = 4,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Bread Paddle, part 1
-                        pgettext("europeans_ware", "This bread paddle is used by the baker in a bakery."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Bread Paddle, part 2
-                        pgettext("europeans_ware", "Bread paddles are produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "kitchen_tools",
-                default_target_quantity = 2,
-                preciousness = 2,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Kitchen Tools, part 1
-                        pgettext("europeans_ware", "These kitchen tools are used by the baker in a bakery."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Kitchen Tools, part 2
-                        pgettext("europeans_ware", "They are created by all smithies.")
+                        -- TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 1
+                        pgettext("europeans_ware", "Fire tongs are the tools for smelting ores."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 2
+                        pgettext("europeans_ware", "They are used in the smelting works and smithies and produced produced by all smithies.")
                     }
                 }
             },
@@ -716,19 +700,6 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "Needles are used by weavers."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Needles, part 2
                         pgettext("europeans_ware", "They are produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "fire_tongs",
-                default_target_quantity = 2,
-                preciousness = 4,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 1
-                        pgettext("europeans_ware", "Fire tongs are the tools for smelting ores."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 2
-                        pgettext("europeans_ware", "They are used in the smelting works and smithies and produced produced by all smithies.")
                     }
                 }
             }
@@ -982,6 +953,33 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "europeans_worker_basic",
+                default_target_quantity = 1,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Worker
+                    purpose = pgettext("europeans_worker", "General worker with no special ability.")
+                }
+            },
+            {
+                name = "europeans_worker_normal",
+                default_target_quantity = 2,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Worker
+                    purpose = pgettext("europeans_worker", "General worker with no special ability.")
+                }
+            },
+            {
+                name = "europeans_worker_advanced",
+                default_target_quantity = 4,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Worker
+                    purpose = pgettext("europeans_worker", "General worker with no special ability.")
+                }
+            },
+            {
                 name = "europeans_shipwright_basic",
                 default_target_quantity = 1,
                 preciousness = 4,
@@ -1015,33 +1013,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Geologist
                     purpose = pgettext("europeans_worker", "Discovers resources for mining.")
-                }
-            },
-            {
-                name = "europeans_terraformer_basic",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
-                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
-                }
-            },
-            {
-                name = "europeans_terraformer_normal",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
-                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
-                }
-            },
-            {
-                name = "europeans_terraformer_advanced",
-                default_target_quantity = 2,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
-                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
                 }
             },
         },
@@ -1188,33 +1159,6 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_worker", "Plant trees.")
                 }
             },
-            {
-                name = "europeans_carpenter_basic",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Carpenter / Sawyer
-                    purpose = pgettext("europeans_worker", "Produces planks out of log.")
-                }
-            },
-            {
-                name = "europeans_carpenter_normal",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Carpenter / Sawyer
-                    purpose = pgettext("europeans_worker", "Produces planks out of log.")
-                }
-            },
-            {
-                name = "europeans_carpenter_advanced",
-                default_target_quantity = 4,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Carpenter / Sawyer
-                    purpose = pgettext("europeans_worker", "Produces planks out of log.")
-                }
-            }
         },
         {
             -- Collectors and Producer (Clay and Stone)
@@ -1246,33 +1190,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_stonemason_basic",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Stonemason
-                    purpose = pgettext("europeans_worker", "Burns bricks and grout out of clay, water and granite.")
-                }
-            },
-            {
-                name = "europeans_stonemason_normal",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Stonemason
-                    purpose = pgettext("europeans_worker", "Burns bricks and grout out of clay, water and granite.")
-                }
-            },
-            {
-                name = "europeans_stonemason_advanced",
-                default_target_quantity = 4,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Stonemason
-                    purpose = pgettext("europeans_worker", "Burns bricks and grout out of clay, water and granite. Makes marble column out of marble.")
-                }
-            },
-            {
                 name = "europeans_claydigger_basic",
                 default_target_quantity = 1,
                 preciousness = 4,
@@ -1298,7 +1215,7 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Clay Digger
                     purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
                 }
-            }
+            },
         },
         {
             -- Agriculture workers
@@ -1330,33 +1247,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_breeder_basic",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Breeder
-                    purpose = pgettext("europeans_worker", "Breeds animals and produce wool and mead.")
-                }
-            },
-            {
-                name = "europeans_breeder_normal",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Breeder
-                    purpose = pgettext("europeans_worker", "Breeds animals and produce wool and mead.")
-                }
-            },
-            {
-                name = "europeans_breeder_advanced",
-                default_target_quantity = 4,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Breeder
-                    purpose = pgettext("europeans_worker", "Breeds animals and produce wool and mead.")
-                }
-            },
-            {
                 name = "europeans_beekeeper_basic",
                 default_target_quantity = 1,
                 preciousness = 4,
@@ -1385,91 +1275,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            -- Producer (Food)
-            {
-                name = "europeans_brewer_basic",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Brewer
-                    purpose = pgettext("europeans_worker", "Brewing beer and mead.")
-                }
-            },
-            {
-                name = "europeans_brewer_normal",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Brewer
-                    purpose = pgettext("europeans_worker", "Brewing beer and mead.")
-                }
-            },
-            {
-                name = "europeans_brewer_advanced",
-                default_target_quantity = 4,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Brewer
-                    purpose = pgettext("europeans_worker", "Brewing beer and mead. Produces wine.")
-                }
-            },
-            {
-                name = "europeans_miller_basic",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Miller
-                    purpose = pgettext("europeans_worker", "Grind rye and wheat to mixed flour.")
-                }
-            },
-            {
-                name = "europeans_miller_normal",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Miller
-                    purpose = pgettext("europeans_worker", "Grind rye and wheat to mixed flour.")
-                }
-            },
-            {
-                name = "europeans_miller_advanced",
-                default_target_quantity = 4,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Miller
-                    purpose = pgettext("europeans_worker", "Grind rye and wheat to mixed flour." )
-                }
-            },
-            {
-                name = "europeans_baker_basic",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: baker
-                    purpose = pgettext("europeans_worker", "Produce bread out of water and flour.")
-                }
-            },
-            {
-                name = "europeans_baker_normal",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: baker
-                    purpose = pgettext("europeans_worker", "Produce bread out of water and flour.")
-                }
-            },
-            {
-                name = "europeans_baker_advanced",
-                default_target_quantity = 4,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: baker
-                    purpose = pgettext("europeans_worker", "Produce bread out of water and flour.")
-                }
-            }
-        },
-        {
-            -- Miners, Burners and, Smelters
+            -- Miners and Terraformers
             {
                 name = "europeans_miner_basic",
                 default_target_quantity = 2,
@@ -1498,171 +1304,33 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_charcoal_burner_basic",
+                name = "europeans_terraformer_basic",
                 default_target_quantity = 1,
                 preciousness = 4,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Charcoal Burner
-                    purpose = pgettext("europeans_worker", "Produces charcoal out of log.")
+                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
+                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
                 }
             },
             {
-                name = "europeans_charcoal_burner_normal",
+                name = "europeans_terraformer_normal",
                 default_target_quantity = 1,
                 preciousness = 4,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Charcoal Burner
-                    purpose = pgettext("europeans_worker", "Produces charcoal out of log.")
+                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
+                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
                 }
             },
             {
-                name = "europeans_charcoal_burner_advanced",
-                default_target_quantity = 4,
+                name = "europeans_terraformer_advanced",
+                default_target_quantity = 2,
                 preciousness = 4,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Charcoal Burner
-                    purpose = pgettext("europeans_worker", "Produces charcoal out of log or old planks.")
-                }
-            },
-            {
-                name = "europeans_smelter_basic",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Smelter
-                    purpose = pgettext("europeans_worker", "Smelts ore to metals.")
-                }
-            },
-            {
-                name = "europeans_smelter_normal",
-                default_target_quantity = 1,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Smelter
-                    purpose = pgettext("europeans_worker", "Smelts ore to metals.")
-                }
-            },
-            {
-                name = "europeans_smelter_advanced",
-                default_target_quantity = 4,
-                preciousness = 4,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Smelter
-                    purpose = pgettext("europeans_worker", "Smelts ore to metals.")
+                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
+                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
                 }
             }
         },
-        {
-            -- Weavers, Tailors, Shoemakers and Smiths
-            {
-                name = "europeans_weaver_basic",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Weaver
-                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
-                }
-            },
-            {
-                name = "europeans_weaver_normal",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Weaver
-                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
-                }
-            },
-            {
-                name = "europeans_weaver_advanced",
-                default_target_quantity = 4,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Weaver
-                    purpose = pgettext("europeans_worker", "Produces cloth for ships, tools and armors.")
-                }
-            },
-            {
-                name = "europeans_tailor_basic",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Tailor
-                    purpose = pgettext("europeans_worker", "Produce clothing and armor.")
-                }
-            },
-            {
-                name = "europeans_tailor_normal",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Tailor
-                    purpose = pgettext("europeans_worker", "Produce clothing and armor.")
-                }
-            },
-            {
-                name = "europeans_tailor_advanced",
-                default_target_quantity = 4,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Tailor
-                    purpose = pgettext("europeans_worker", "Produce clothing and armor.")
-                }
-            },
-            {
-                name = "europeans_shoemaker_basic",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Shoemaker
-                    purpose = pgettext("europeans_worker", "Produce shoes and boots.")
-                }
-            },
-            {
-                name = "europeans_shoemaker_normal",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Shoemaker
-                    purpose = pgettext("europeans_worker", "Produce shoes and boots.")
-                }
-            },
-            {
-                name = "europeans_shoemaker_advanced",
-                default_target_quantity = 4,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Shoemaker
-                    purpose = pgettext("europeans_worker", "Produce shoes and boots.")
-                }
-            },
-            {
-                name = "europeans_smith_basic",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Smith
-                    purpose = pgettext("europeans_worker", "Produce tools and weapons.")
-                }
-            },
-            {
-                name = "europeans_smith_normal",
-                default_target_quantity = 1,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Smith
-                    purpose = pgettext("europeans_worker", "Produce tools and weapons.")
-                }
-            },
-            {
-                name = "europeans_smith_advanced",
-                default_target_quantity = 4,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Smith
-                    purpose = pgettext("europeans_worker", "Produce tools and weapons.")
-                }
-            }
-        }
     },
 
     immovables = {
@@ -2673,33 +2341,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_farm_medium_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Reed Yard
-                purpose = pgettext("europeans_building", "Cultivates reed that serves two different purposes for the Europeans tribe."),
-                -- TRANSLATORS: Note helptext for a Europeans production site: Reed Yard
-                note = pgettext("europeans_building", "Reed is the traditional material for roofing, and it is woven into the extremely durable rope that they use for their ships’ sails."),
-            }
-        },
-        {
-            name = "europeans_farm_medium_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Fruit Farm
-                purpose = pgettext("europeans_building", "Cultivates fruit that serves two different purposes for the Europeans tribe."),
-                -- TRANSLATORS: Note helptext for a Europeans production site: Fruit Farm
-                note = pgettext("europeans_building", "Fruit is needed to feed fish in animal farm and to refine wine with a fruity aroma."),
-            }
-        },
-        {
-            name = "europeans_farm_medium_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Vineyard
-                purpose = pgettext("europeans_building", "Cultivates grapes and fruit."),
-                -- TRANSLATORS: Note helptext for a Europeans production site: Vineyard
-                note = pgettext("europeans_building", "Grape is needed to produce wine in vinery."),
-            }
-        },
-        {
             name = "europeans_sawmill_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
@@ -3012,28 +2653,28 @@ wl.Descriptions():new_tribe {
             name = "europeans_animal_farm_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Cattle Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat for food production."),
+                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat for food production and leather for shoemaker."),
             }
         },
         {
             name = "europeans_animal_farm_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Fish Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat and fish for food production."),
+                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat and fish for food production and leather for shoemaker."),
             }
         },
         {
             name = "europeans_animal_farm_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Sheep Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally keeps sheep for wool prodution and produces meat and fish for food production.")
+                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally keeps sheep for wool production and produces meat and fish for food production.")
             }
         },
         {
             name = "europeans_animal_farm_big",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Horse Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additionally keeps sheep for wool prodution and produces meat and fish for food production.")
+                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additionally keeps sheep for wool production and produces meat and fish for food production.")
             }
         },
 
@@ -3425,243 +3066,67 @@ wl.Descriptions():new_tribe {
         }
     },
     
-   warehouse_names = { -- Capital cities or big cities with more than 500.000 people
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Amsterdam"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Andorra la Vella"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Antwerpen"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Astrachan"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Athen"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Balaschicha"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Barcelona"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Beograd"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Berlin"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Bern"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Birmingham"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Bradford"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Bremen"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Bruxelles"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "București"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Budapest"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Charkiw"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Chișinău"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Den Haag"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Dnipro"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Donezk"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Dortmund"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Dresden"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Dublin"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Duisburg"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Düsseldorf"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Edinburgh"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Essen"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Frankfurt am Main"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Genova"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Glasgow"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Göteborg"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Hamburg"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Hannover"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Helsinki"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Homel"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Ischewsk"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Istanbul"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Jaroslawl"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Kasan"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Kirow"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "København"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Köln"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Kraków"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Krasnodar"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Krywyj Rih"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Kyiv"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Leeds"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Leipzig"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Lipezk"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Lisboa"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Ljubljana"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Łódź"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "London"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Luxemburg"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Lwiw"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Lyon"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Machatschkala"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Madrid"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Málaga"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Manchester"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Marseille"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Milano"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Minsk"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Monaco"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Moskwa"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "München"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Nabereschnyje Tschelny"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Napoli"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Nikosia"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Nischni Nowgorod"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Nürnberg"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Odessa"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Orenburg"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Oslo"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Palermo"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Paris"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Pensa"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Perm"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Podgorica"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Poznań"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Praha"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Prishtina"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Reykjavík"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Rīga"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Rjasan"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Roma"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Rostow-na-Donu"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Rotterdam"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "San Marino"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Samara"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Sankt Petersburg"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Saporischschja"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Sarajevo"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Saratow"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Sevilla"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Sheffield"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Skopje"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Sofia"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Stockholm"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Stuttgart"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Tallinn"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Tirana"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Toljatti"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Torino"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Ufa"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Uljanowsk"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Vaduz"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Valencia"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Valletta"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Vilnius"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Warszawa"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Wien"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Wolgograd"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Woronesch"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Wrocław"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Zagreb"),
-      -- TRANSLATORS: This Europeans warehouse is named after a Europeans town
-      pgettext("warehousename", "Zaragoza"),
+   warehouse_names = { 
+        -- European countries or regions
+        pgettext("warehousename", "Europe"),
+        pgettext("warehousename", "Åland"),
+        pgettext("warehousename", "Albania"),
+        pgettext("warehousename", "Andorra"),
+        pgettext("warehousename", "Austria"),
+        pgettext("warehousename", "Azerbaijan"),
+        pgettext("warehousename", "Belarus"),
+        pgettext("warehousename", "Belgium"),
+        pgettext("warehousename", "Bosnia"),
+        pgettext("warehousename", "Bulgaria"),
+        pgettext("warehousename", "Croatia"),
+        pgettext("warehousename", "Cyprus"),
+        pgettext("warehousename", "Czechia"),
+        pgettext("warehousename", "Denmark"),
+        pgettext("warehousename", "Estonia"),
+        pgettext("warehousename", "Faroe Islands"),
+        pgettext("warehousename", "Finland"),
+        pgettext("warehousename", "France"),
+        pgettext("warehousename", "Georgia"),
+        pgettext("warehousename", "Germany"),
+        pgettext("warehousename", "Gibraltar"),
+        pgettext("warehousename", "Greece"),
+        pgettext("warehousename", "Guernsey"),
+        pgettext("warehousename", "Herzegovina"),
+        pgettext("warehousename", "Hungary"),
+        pgettext("warehousename", "Iceland"),
+        pgettext("warehousename", "Isle of Man"),
+        pgettext("warehousename", "Ireland"),
+        pgettext("warehousename", "Italy"),
+        pgettext("warehousename", "Jersey"),
+        pgettext("warehousename", "Kazakhstan"),
+        pgettext("warehousename", "Kosovo"),
+        pgettext("warehousename", "Latvia"),
+        pgettext("warehousename", "Liechtenstein"),
+        pgettext("warehousename", "Lithuania"),
+        pgettext("warehousename", "Luxembourg"),
+        pgettext("warehousename", "Malta"),
+        pgettext("warehousename", "Moldova"),
+        pgettext("warehousename", "Monaco"),
+        pgettext("warehousename", "Montenegro"),
+        pgettext("warehousename", "Netherlands"),
+        pgettext("warehousename", "North Macedonia"),
+        pgettext("warehousename", "Norway"),
+        pgettext("warehousename", "Poland"),
+        pgettext("warehousename", "Portugal"),
+        pgettext("warehousename", "Romania"),
+        pgettext("warehousename", "Russia"),
+        pgettext("warehousename", "San Marino"),
+        pgettext("warehousename", "Serbia"),
+        pgettext("warehousename", "Slovakia"),
+        pgettext("warehousename", "Slovenia"),
+        pgettext("warehousename", "Spain"),
+        pgettext("warehousename", "Svalbard"),
+        pgettext("warehousename", "Sweden"),
+        pgettext("warehousename", "Switzerland"),
+        pgettext("warehousename", "Turkey"),
+        pgettext("warehousename", "Ukraine"),
+        pgettext("warehousename", "United Kingdom"),
+        pgettext("warehousename", "Vatican City"),
    },
     
    -- Productionsite status strings
@@ -3726,7 +3191,7 @@ wl.Descriptions():new_tribe {
       forester = "europeans_foresters_house_basic",
       quarry = "europeans_quarry_basic",
       mine_stone = "europeans_quarry_basic",
-      building_materials_primary = "europeans_farm_medium_basic",
+      building_materials_primary = "europeans_farm_basic",
       building_materials_secondary = "europeans_sawmill_basic",
       building_materials_tertiary = "europeans_stonemasons_house_basic",
       charcoal = "europeans_charcoal_kiln_basic",
@@ -3737,7 +3202,7 @@ wl.Descriptions():new_tribe {
       farm_primary = "europeans_farm_basic",
       farm_secondary = "europeans_farm_normal",
       farm_tertiary = "europeans_farm_advanced",
-      agriculture_producer = "europeans_farm_medium_advanced",
+      agriculture_producer = "europeans_farm_advanced",
       agriculture_consumer_primary = "europeans_brewery_winery",
       agriculture_consumer_secondary = "europeans_beekeepers_house_basic",
       mill = "europeans_mill_basic",

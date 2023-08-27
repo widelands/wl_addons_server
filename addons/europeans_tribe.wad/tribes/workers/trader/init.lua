@@ -30,9 +30,9 @@ wl.Descriptions():new_worker_type {
     buildcost = {
         europeans_carrier_3 = 1,
         europeans_carrier_horse = 1,
-        quartz = 1,
-        diamond = 1,
-        gold = 1
+        coin_copper = 1,
+        coin_silver = 1,
+        coin_gold = 1
     },
 
     programs = {

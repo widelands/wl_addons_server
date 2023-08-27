@@ -8,7 +8,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 local init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Headquarters (without seafaring)",
+    descname = _ "Headquarters (with terraforming)",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
     tooltip = _"Start the game with your headquarters only. Disabled seafaring because of lack of compatibility with terraforming (diking of water bodies).",
     func =  function(player, shared_in_start)
@@ -52,25 +52,14 @@ local init = {
             europeans_geologist = 1,
             europeans_carrier = 32,
             europeans_builder = 32,
-            europeans_farmer_basic = 32,
-            europeans_lumberjack_basic = 12,
+            europeans_worker_basic = 32,
+            europeans_farmer_basic = 16,
             europeans_miner_basic = 12,
-            europeans_trader = 10,
-            europeans_forester_basic = 8,
-            europeans_breeder_basic = 6,
-            europeans_trainer_basic = 6,
-            europeans_weaver_basic = 4,
+            europeans_trader = 8,
+            europeans_trainer_basic = 8,
+            europeans_lumberjack_basic = 6,
+            europeans_forester_basic = 6,
             europeans_stonecutter_basic = 4,
-            europeans_carpenter_basic = 4,
-            europeans_charcoal_burner_basic = 4,
-            europeans_stonemason_basic = 4,
-            europeans_brewer_basic = 4,
-            europeans_miller_basic = 4,
-            europeans_baker_basic = 4,
-            europeans_smelter_basic = 4,
-            europeans_smith_basic = 4,
-            europeans_tailor_basic = 4,
-            europeans_shoemaker_basic = 4,
             europeans_claydigger_basic = 4,
             europeans_terraformer_basic = 4
       },

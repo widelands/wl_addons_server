@@ -11,6 +11,13 @@ wl.Descriptions():new_worker_type {
     
     experience = 24,
     becomes = "europeans_scout_normal",
+    
+    buildcost = {
+        europeans_recruit = 1,
+        coin_copper = 1,
+        coin_silver = 1,
+        coin_gold = 1
+    },
 
     programs = {
         find_pole = {

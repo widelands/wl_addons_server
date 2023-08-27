@@ -43,8 +43,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_smith_advanced = 1,
-        europeans_smith_normal = 1
+        europeans_worker_advanced = 1,
+        europeans_worker_normal = 1
     },
 
     inputs = {

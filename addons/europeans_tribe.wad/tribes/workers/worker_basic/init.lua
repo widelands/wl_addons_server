@@ -3,37 +3,29 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_worker_type {
-    name = "europeans_miner_basic",
+    name = "europeans_worker_basic",
     -- TRANSLATORS: This is a worker name used in lists of workers
-    descname = pgettext("europeans_worker", "Basic Miner"),
+    descname = pgettext("europeans_worker", "Basic Worker"),
     icon = dirname .. "menu.png",
     vision_range = 2,
     
-    experience = 32,
-    becomes = "europeans_miner_normal",
+    experience = 24,
+    becomes = "europeans_worker_normal",
 
     animation_directory = dirname,
     animations = {
         idle = {
-            hotspot = { 5, 24 }
+            hotspot = { 6, 28 },
         }
     },
     spritesheets = {
         walk = {
-            fps = 10,
+            fps = 15,
             frames = 10,
             rows = 4,
             columns = 3,
             directional = true,
-            hotspot = { 10, 25 }
-        },
-        walkload = {
-            fps = 10,
-            frames = 20,
-            rows = 5,
-            columns = 4,
-            directional = true,
-            hotspot = { 8, 26 }
+            hotspot = { 11, 24 }
         }
     }
 }

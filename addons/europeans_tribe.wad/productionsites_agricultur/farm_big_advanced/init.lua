@@ -35,7 +35,7 @@ wl.Descriptions():new_productionsite_type {
     },
     
     inputs = {
-        { name = "water", amount = 12 }
+        { name = "water", amount = 16 }
     },
 
     programs = {
@@ -45,6 +45,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "callworker=check_space",
                 "call=plant_idle",
+                "call=plant_reed",
                 "call=plant_berrybush",
                 "call=plant_grape",
                 "call=plant_blackroot",
@@ -52,6 +53,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=plant_barley",
                 "call=plant_rye",
                 "call=plant_wheat",
+                "call=harvest_reed",
                 "call=harvest_berry",
                 "call=harvest_grape",
                 "call=harvest_blackroot",
@@ -66,21 +68,30 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs barley or economy needs rye or economy needs wheat or economy needs corn or economy needs blackroot or economy needs fruit or economy needs grape",
+                "return=skipped when economy needs barley or economy needs rye or economy needs wheat or economy needs corn or economy needs blackroot or economy needs fruit or economy needs grape or economy needs reed",
                 "return=skipped when economy needs water",
-                "consume=water:6",
+                "consume=water",
+                "callworker=plant_reed",
+                "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_barley",
                 "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_rye",
                 "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_wheat",
                 "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_corn",
                 "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_blackroot",
                 "animate=working duration:1s",
+                "consume=water:2",
                 "callworker=plant_berrybush",
                 "animate=working duration:1s",
+                "consume=water:2",
                 "callworker=plant_grape",
                 "animate=working duration:1s",
                 "sleep=duration:30s"
@@ -92,9 +103,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs barley or workers need experience",
                 "return=skipped unless site has water:3",
-                "consume=water:2",
+                "consume=water",
                 "callworker=plant_barley",
                 "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_barley",
                 "animate=working duration:1s"
             }
@@ -105,9 +117,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs fruit or workers need experience",
                 "return=skipped unless site has water:4",
-                "consume=water:4",
+                "consume=water:2",
                 "callworker=plant_berrybush",
                 "animate=working duration:1s",
+                "consume=water:2",
                 "callworker=plant_berrybush",
                 "animate=working duration:1s"
             }
@@ -118,9 +131,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs blackroot or workers need experience",
                 "return=skipped unless site has water:3",
-                "consume=water:2",
+                "consume=water",
                 "callworker=plant_blackroot",
                 "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_blackroot",
                 "animate=working duration:1s"
             }
@@ -131,9 +145,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs corn or workers need experience",
                 "return=skipped unless site has water:3",
-                "consume=water:2",
+                "consume=water",
                 "callworker=plant_corn",
                 "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_corn",
                 "animate=working duration:1s"
             }
@@ -144,10 +159,24 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs grape or workers need experience",
                 "return=skipped unless site has water:4",
-                "consume=water:4",
+                "consume=water:2",
                 "callworker=plant_grape",
                 "animate=working duration:1s",
+                "consume=water:2",
                 "callworker=plant_grape",
+                "animate=working duration:1s"
+            }
+        },
+        plant_reed = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
+            descname = pgettext("europeans_building", "planting reed"),
+            actions = {
+                "return=skipped unless economy needs reed or workers need experience",
+                "consume=water",
+                "callworker=plant_reed",
+                "animate=working duration:1s",
+                "consume=water",
+                "callworker=plant_reed",
                 "animate=working duration:1s"
             }
         },
@@ -157,9 +186,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs rye or workers need experience",
                 "return=skipped unless site has water:3",
-                "consume=water:2",
+                "consume=water",
                 "callworker=plant_rye",
                 "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_rye",
                 "animate=working duration:1s"
             }
@@ -170,9 +200,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs wheat or workers need experience",
                 "return=skipped unless site has water:3",
-                "consume=water:2",
+                "consume=water",
                 "callworker=plant_wheat",
                 "animate=working duration:1s",
+                "consume=water",
                 "callworker=plant_wheat",
                 "animate=working duration:1s"
             }
@@ -240,6 +271,19 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=harvest_grape",
                 "animate=working duration:1s",
                 "produce=grape"
+            }
+        },
+        harvest_reed = {
+            -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
+            descname = pgettext("europeans_building", "harvesting reed"),
+            actions = {
+                "return=skipped unless economy needs reed or workers need experience",
+                "callworker=harvest_reed",
+                "animate=working duration:1s",
+                "produce=reed",
+                "callworker=harvest_reed",
+                "animate=working duration:1s",
+                "produce=reed"
             }
         },
         harvest_rye = {

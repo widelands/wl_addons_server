@@ -8,6 +8,11 @@ wl.Descriptions():new_worker_type {
     descname = pgettext("europeans_worker", "Geologist"),
     icon = dirname .. "menu.png",
     vision_range = 2,
+    
+    buildcost = {
+        europeans_builder = 1,
+        coin_gold = 1,
+    },
 
     programs = {
         -- Expedition is the main program

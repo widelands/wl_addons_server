@@ -30,8 +30,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_charcoal_burner_advanced = 1,
-        europeans_charcoal_burner_basic = 1
+        europeans_worker_advanced = 1,
+        europeans_worker_basic = 1
     },
 
     inputs = {

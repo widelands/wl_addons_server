@@ -11,6 +11,11 @@ wl.Descriptions():new_worker_type {
 
     experience = 24,
     becomes = "europeans_shipwright_normal",
+    
+    buildcost = {
+        europeans_builder = 1,
+        coin_gold = 1,
+    },
 
     programs = {
         buildship = {

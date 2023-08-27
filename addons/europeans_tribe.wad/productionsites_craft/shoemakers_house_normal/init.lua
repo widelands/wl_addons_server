@@ -8,26 +8,21 @@ wl.Descriptions():new_productionsite_type {
     descname = pgettext("europeans_building", "Normal Shoemakers House"),
     icon = dirname .. "menu.png",
     
-   animation_directory = dirname,
-   animations = {
+    animation_directory = dirname,
+    animations = {
       idle = {
-         hotspot = { 57, 88 },
+         hotspot = { 54, 74 },
       },
-   },
-   spritesheets = {
+    },
+    spritesheets = {
       working = {
-         frames = 20,
-         rows = 5,
-         columns = 4,
-         hotspot = { 57, 81 }
+         fps = 20,
+         frames = 5,
+         columns = 5,
+         rows = 1,
+         hotspot = { 54, 74 },
       },
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 57, 67 }
-      }
-   },
+    },
     
     size = "medium",
     enhancement = {
@@ -47,8 +42,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
 
     working_positions = {
-        europeans_shoemaker_advanced = 1,
-        europeans_shoemaker_basic = 1
+        europeans_worker_advanced = 1,
+        europeans_worker_basic = 1
     },
 
     inputs = {

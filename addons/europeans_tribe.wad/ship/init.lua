@@ -112,35 +112,243 @@ wl.Descriptions():new_ship_type {
    },
 
     names = {
-        -- TRANSLATORS: These European ships are named after the continent or states / countries on this contintent.
-        pgettext("shipname", "Europa"),
-        pgettext("shipname", "Europe"),
-        pgettext("shipname", "Island"),
-        pgettext("shipname", "Great Britain"),
-        pgettext("shipname", "Scandinavia"),
-        pgettext("shipname", "Alpinia"),
-        pgettext("shipname", "Iberia"),
-        pgettext("shipname", "Italia"),
-        pgettext("shipname", "Francia"),
-        pgettext("shipname", "Germania"),
-        pgettext("shipname", "Polandia"),
-        pgettext("shipname", "Czechia"),
-        pgettext("shipname", "Slowakia"),
-        pgettext("shipname", "Hungaria"),
-        pgettext("shipname", "Romania"),
-        pgettext("shipname", "Bulgaria"),
-        pgettext("shipname", "Ukrainia"),
-        pgettext("shipname", "Georgia"),
-        pgettext("shipname", "Russia"),
-        pgettext("shipname", "Baltika"),
-        pgettext("shipname", "Balkania"),
-        pgettext("shipname", "Benelux"),
-        pgettext("shipname", "Greece"),
-        pgettext("shipname", "Sizilia"),
-        pgettext("shipname", "Corsica"),
-        pgettext("shipname", "Sardenia"),
-        pgettext("shipname", "Malta"),
-        pgettext("shipname", "Cypria"),
+          -- Capital cities or big cities with more than 500.000 people
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Amsterdam"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Andorra la Vella"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Antwerpen"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Astrachan"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Athen"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Balaschicha"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Barcelona"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Beograd"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Berlin"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Bern"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Birmingham"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Bradford"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Bremen"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Bruxelles"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "București"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Budapest"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Charkiw"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Chișinău"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Den Haag"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Dnipro"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Donezk"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Dortmund"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Dresden"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Dublin"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Duisburg"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Düsseldorf"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Edinburgh"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Essen"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Frankfurt am Main"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Genova"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Glasgow"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Göteborg"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Hamburg"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Hannover"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Helsinki"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Homel"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Ischewsk"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Istanbul"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Jaroslawl"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Kasan"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Kirow"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "København"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Köln"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Kraków"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Krasnodar"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Krywyj Rih"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Kyiv"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Leeds"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Leipzig"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Lipezk"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Lisboa"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Ljubljana"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Łódź"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "London"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Luxemburg"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Lwiw"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Lyon"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Machatschkala"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Madrid"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Málaga"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Manchester"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Marseille"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Milano"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Minsk"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Monaco"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Moskwa"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "München"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Nabereschnyje Tschelny"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Napoli"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Nikosia"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Nischni Nowgorod"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Nürnberg"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Odessa"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Orenburg"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Oslo"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Palermo"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Paris"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Pensa"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Perm"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Podgorica"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Poznań"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Praha"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Prishtina"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Reykjavík"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Rīga"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Rjasan"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Roma"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Rostow-na-Donu"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Rotterdam"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "San Marino"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Samara"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Sankt Petersburg"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Saporischschja"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Sarajevo"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Saratow"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Sevilla"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Sheffield"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Skopje"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Sofia"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Stockholm"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Stuttgart"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Tallinn"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Tirana"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Toljatti"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Torino"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Ufa"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Uljanowsk"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Vaduz"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Valencia"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Valletta"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Vilnius"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Warszawa"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Wien"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Wolgograd"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Woronesch"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Wrocław"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Zagreb"),
+          -- TRANSLATORS: This Europeans ship is named after a Europeans town
+          pgettext("shipname", "Zaragoza"),
     }
 }
 

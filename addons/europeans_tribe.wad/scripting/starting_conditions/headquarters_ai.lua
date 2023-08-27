@@ -50,27 +50,17 @@ local init = {
             europeans_geologist = 1,
             europeans_carrier = 32,
             europeans_builder = 32,
-            europeans_farmer_basic = 32,
-            europeans_lumberjack_basic = 12,
+            europeans_worker_basic = 32,
+            europeans_farmer_basic = 16,
             europeans_miner_basic = 12,
-            europeans_trader = 10,
-            europeans_carpenter_basic = 6,
-            europeans_stonemason_basic = 6,
-            europeans_breeder_basic = 6,
-            europeans_trainer_basic = 6,
-            europeans_weaver_basic = 4,
+            europeans_trader = 8,
+            europeans_trainer_basic = 8,
+            europeans_lumberjack_basic = 6,
+            europeans_forester_basic = 6,
             europeans_stonecutter_basic = 4,
-            europeans_charcoal_burner_basic = 4,
-            europeans_brewer_basic = 4,
-            europeans_miller_basic = 4,
-            europeans_baker_basic = 4,
-            europeans_smelter_basic = 4,
-            europeans_smith_basic = 4,
-            europeans_tailor_basic = 4,
-            europeans_shoemaker_basic = 4,
             europeans_claydigger_basic = 4,
-            europeans_forester_basic = 4,
-            europeans_shipwright_basic = 4
+            europeans_shipwright_basic = 2,
+            europeans_terraformer_basic = 2
       },
         soldiers = {
             [{0,0,0,0}] = 32,
@@ -83,26 +73,26 @@ local init = {
     player:allow_buildings{"europeans_sentry", "europeans_advanced_tower", "europeans_advanced_barrier", "europeans_advanced_castle", }
     sleep(900000)
     player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", }
-    player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", "europeans_farm_medium_basic", }
+    player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", "europeans_farm_basic", }
     sleep(900000)
     player:allow_buildings{"europeans_clay_pit_basic", "europeans_foresters_house_basic", }
     player:allow_buildings{"europeans_sawmill_basic", "europeans_weaving_mill_basic", } 
     player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_stonemasons_house_basic", }
     sleep(1800000)
     player:allow_buildings{"europeans_lumberjacks_house_normal", "europeans_quarry_normal", }
-    player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", "europeans_farm_medium_normal", }
+    player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", "europeans_farm_normal", }
     player:allow_buildings{"europeans_clay_pit_normal", "europeans_foresters_house_normal", }
     player:allow_buildings{"europeans_sawmill_normal", "europeans_weaving_mill_normal", }
     player:allow_buildings{"europeans_charcoal_kiln_normal", "europeans_stonemasons_house_normal", }
     sleep(1800000)
     player:allow_buildings{"europeans_lumberjacks_house_advanced", "europeans_quarry_advanced", }
-    player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_well_level_6", "europeans_farm_medium_advanced", }
+    player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_well_level_6", "europeans_farm_advanced", }
     player:allow_buildings{"europeans_clay_pit_advanced", "europeans_foresters_house_advanced", }
     player:allow_buildings{"europeans_sawmill_advanced", "europeans_weaving_mill_advanced", }
     player:allow_buildings{"europeans_charcoal_kiln_advanced", "europeans_stonemasons_house_advanced", }
     sleep(1800000)
-    player:allow_buildings{"europeans_farm_basic", "europeans_beekeepers_house_basic", }
-    player:allow_buildings{"europeans_animal_farm_basic", "europeans_brewery_basic", "europeans_mill_basic", "europeans_bakery_basic", }
+    player:allow_buildings{"europeans_animal_farm_basic", "europeans_beekeepers_house_basic", }
+    player:allow_buildings{"europeans_brewery_basic", "europeans_mill_basic", "europeans_bakery_basic", }
     sleep(1800000)
     player:allow_buildings{"europeans_scouts_house_basic", "europeans_market_small", }
     player:allow_buildings{"europeans_coalmine_basic", "europeans_ironmine_basic", "europeans_goldmine_basic", }
@@ -111,8 +101,8 @@ local init = {
     player:allow_buildings{"europeans_smelting_works_basic", "europeans_toolsmithy_basic", "europeans_recruitement_center_basic", }
     player:allow_buildings{"europeans_shoemakers_house_basic", "europeans_tailors_house_basic", "europeans_weaponsmithy_basic", "europeans_trainingscamp_basic", "europeans_battlearena_basic", }
     sleep(1800000)
-    player:allow_buildings{"europeans_farm_normal", "europeans_beekeepers_house_normal", }
-    player:allow_buildings{"europeans_animal_farm_normal", "europeans_brewery_normal", "europeans_mill_normal", "europeans_bakery_normal", }
+    player:allow_buildings{"europeans_animal_farm_normal", "europeans_beekeepers_house_normal", }
+    player:allow_buildings{"europeans_brewery_normal", "europeans_mill_normal", "europeans_bakery_normal", }
     sleep(1800000)
     player:allow_buildings{"europeans_scouts_house_normal", "europeans_market_big", }
     player:allow_buildings{"europeans_coalmine_level_2", "europeans_ironmine_level_2", "europeans_goldmine_level_2", }
@@ -121,8 +111,8 @@ local init = {
     player:allow_buildings{"europeans_smelting_works_normal", "europeans_toolsmithy_normal", "europeans_recruitement_center_normal", }
     player:allow_buildings{"europeans_shoemakers_house_normal", "europeans_tailors_house_normal", "europeans_weaponsmithy_normal", "europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
     sleep(1800000)
-    player:allow_buildings{"europeans_farm_advanced", "europeans_beekeepers_house_advanced", }
-    player:allow_buildings{"europeans_animal_farm_advanced", "europeans_brewery_advanced", "europeans_mill_advanced", "europeans_bakery_advanced", }
+    player:allow_buildings{"europeans_animal_farm_advanced", "europeans_beekeepers_house_advanced", }
+    player:allow_buildings{"europeans_brewery_advanced", "europeans_mill_advanced", "europeans_bakery_advanced", }
     sleep(1800000)
     player:allow_buildings{"europeans_scouts_house_advanced", "europeans_trading_post", }
     player:allow_buildings{"europeans_coalmine_level_4", "europeans_ironmine_level_4", "europeans_goldmine_level_4", }
@@ -132,46 +122,50 @@ local init = {
     player:allow_buildings{"europeans_shoemakers_house_advanced", "europeans_tailors_house_advanced", "europeans_weaponsmithy_advanced", "europeans_trainingscamp_advanced", "europeans_battlearena_level_2", "europeans_battlearena_level_3", }
     sleep(3600000)
     player:allow_buildings{"europeans_animal_farm_big", "europeans_store_small", "europeans_store_big", }
-
-    -- Delay of 10 min between actions
-    local time_min = 10
+    sleep(1800000)
+    if (map.waterway_max_length > 0) then
+        player:allow_buildings{"europeans_ferry_yard_basic", }
+    end
+    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+        player:allow_buildings{"europeans_port", "europeans_shipyard_basic", }
+        place_ship_random(player, 64)
+    else
+        player:allow_buildings{"europeans_warehouse", "europeans_terraformers_house_basic", }
+    end
+    sleep(900000)
+    if (map.waterway_max_length > 0) then
+        player:allow_buildings{"europeans_ferry_yard_normal", }
+    end
+    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+        player:allow_buildings{"europeans_shipyard_normal", }
+        place_ship_random(player, 64)
+    else
+        player:allow_buildings{"europeans_terraformers_house_normal", }
+    end
+    sleep(900000)
+    if (map.waterway_max_length > 0) then
+        player:allow_buildings{"europeans_ferry_yard_advanced", }
+    end
+    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+        player:allow_buildings{"europeans_shipyard_advanced", }
+        place_ship_random(player, 64)
+    else
+        player:allow_buildings{"europeans_headquarters", "europeans_terraformers_house_advanced", }
+    end
     
-    for i = 0, 1024 do
-       -- Map-depend and Time-depend activation (gametime)
-        if (map.waterway_max_length > 0) and (i == 1) then
-            player:allow_buildings{"europeans_ferry_yard_basic", }
-        elseif (map.waterway_max_length > 0) and (i == 2) then
-            player:allow_buildings{"europeans_ferry_yard_normal", }
-        elseif (map.waterway_max_length > 0) and (i == 3) then
-            player:allow_buildings{"europeans_ferry_yard_advanced", }
-        end
-        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (i == 1) then
-            player:allow_buildings{"europeans_port", "europeans_shipyard_basic", }
-            place_ship_random(player, 64)
-        elseif ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (i == 2) then
-            player:allow_buildings{"europeans_shipyard_normal", }
-            place_ship_random(player, 64)
-        elseif ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (i == 3) then
-            player:allow_buildings{"europeans_shipyard_advanced", }
-            place_ship_random(player, 64)
-        end
-        if ((map.allows_seafaring == false) or (map.number_of_port_spaces == 0)) and (i == 1) then
-            player:allow_buildings{"europeans_warehouse", "europeans_terraformers_house_basic", }
-        elseif ((map.allows_seafaring == false) or (map.number_of_port_spaces == 0)) and (i == 2) then
-            player:allow_buildings{"europeans_terraformers_house_normal", }
-        elseif ((map.allows_seafaring == false) or (map.number_of_port_spaces == 0)) and (i == 3) then
-            player:allow_buildings{"europeans_headquarters", "europeans_terraformers_house_advanced", }
-        end
-        
+    -- Delay of 10 min between actions
+    local time_min = 15
+    
+    for i = 0, 672 do
        -- Experimental actions
-        if (i >= 1) and (i % 6 == 3) then
+        if (i % 8 < 4) then
             balance_warehouse_wares(player)
             balance_workerhouse_workers(player)
-        elseif (i >= 1) and (i % 6 == 0) then
+        else
             reset_warehouse_policy(player)
         end
         
-        if (i >= 1) and (i % 6 == 1) then
+        if (i % 4 == 0) then
             for j, building in ipairs(player:get_buildings("europeans_guardhouse")) do
                 if (j == 1) then
                     building:enhance(true)
@@ -182,19 +176,18 @@ local init = {
                     building:enhance(true)
                 end
             end
-        elseif (i >= 1) and (i % 6 == 2) then
+        elseif (i % 4 == 1) then
             for j, building in ipairs(player:get_buildings("europeans_barrier")) do
                 if (j == 1) then
                     building:enhance(true)
                 end
             end
-        elseif (i >= 1) and (i % 6 == 3) then
             for j, building in ipairs(player:get_buildings("europeans_tower")) do
                 if (j == 1) then
                     building:enhance(true)
                 end
             end
-        elseif (i >= 1) and (i % 6 == 4) then
+        elseif (i % 6 == 2) then
             for j, building in ipairs(player:get_buildings("europeans_tower_small")) do
                 if (j == 1) then
                     building:enhance(true)
@@ -205,13 +198,12 @@ local init = {
                     building:enhance(true)
                 end
             end
-        elseif (i >= 1) and (i % 6 == 5) then
+        elseif (i % 4 == 3) then
             for j, building in ipairs(player:get_buildings("europeans_tower_high")) do
                 if (j == 1) then
                     building:enhance(true)
                 end
             end
-        elseif (i >= 1) and (i % 6 == 0) then
             for j, building in ipairs(player:get_buildings("europeans_outpost")) do
                 if (j == 1) then
                     building:enhance(true)

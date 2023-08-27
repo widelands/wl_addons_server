@@ -63,7 +63,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_carpenter_basic = 1
+        europeans_worker_basic = 1
     },
 
     inputs = {
