@@ -575,7 +575,7 @@ wl.Descriptions():new_tribe {
             -- Tools
             {
                 name = "buckets",
-                default_target_quantity = 2,
+                default_target_quantity = 4,
                 preciousness = 4,
                 helptexts = {
                     purpose = {
@@ -3078,6 +3078,7 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Belgium"),
         pgettext("warehousename", "Bosnia"),
         pgettext("warehousename", "Bulgaria"),
+        pgettext("warehousename", "Corsica"),
         pgettext("warehousename", "Croatia"),
         pgettext("warehousename", "Cyprus"),
         pgettext("warehousename", "Czechia"),
@@ -3116,6 +3117,7 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Romania"),
         pgettext("warehousename", "Russia"),
         pgettext("warehousename", "San Marino"),
+        pgettext("warehousename", "Sardinia"),
         pgettext("warehousename", "Serbia"),
         pgettext("warehousename", "Slovakia"),
         pgettext("warehousename", "Slovenia"),

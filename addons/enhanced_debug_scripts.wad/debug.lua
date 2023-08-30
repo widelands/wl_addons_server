@@ -492,8 +492,10 @@ end
 function force_headquarters(player_number, startx, starty, radius)
     local game = wl.Game()
     local player = game.players[player_number]
+    local tribe = player.tribe
+    local tribe_name = tribe.name
     
-    place_headquarters(player, startx, starty, radius)
+    force_building(player, startx, starty, radius, "headquarters")
 end
 
 function force_port(player_number, startx, starty, radius)
@@ -875,6 +877,11 @@ function set_warehouse_waretype_policy(startx, starty, waretype, policiename)
     local field = map:get_field(startx, starty).immovable
 
     if waretype == "build" then
+        for i, ware in ipairs(tribe.wares) do
+            if (ware.is_construction_material(tribe.name)) then
+                warehouse_ware_policy(startx, starty, warename, policiename)
+            end
+        end
         for i, tbuilding in ipairs(tribe.buildings) do
             for warename, warecount in pairs(tbuilding.buildcost) do
                 warehouse_ware_policy(startx, starty, warename, policiename)
@@ -902,12 +909,7 @@ function set_warehouse_waretype_policy(startx, starty, waretype, policiename)
                 end
             end
         end
-    elseif waretype == "armor" then
-        for i, tworker in ipairs(tribe.workers) do
-            for warename, warecount in pairs(tworker.buildcost) do
-                set_warehouse_ware_policy(startx, starty, warename, policiename)
-            end
-        end
+    elseif waretype == "weapons" then
         for i, tbuilding in pairs(tribe.buildings) do
             if tbuilding.type_name == "productionsite" and tbuilding.output_worker_types then
                 for j, output in pairs(tbuilding.output_worker_types) do
@@ -919,19 +921,8 @@ function set_warehouse_waretype_policy(startx, starty, waretype, policiename)
                 end
             end
         end
-    elseif waretype == "weapons" then
         for i, tbuilding in pairs(tribe.buildings) do
             if tbuilding.type_name == "trainingsite" then
-                if tbuilding.inputs then
-                    for k, waretype, warecount in pairs(tbuilding.inputs) do
-                        set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
-                    end
-                end
-            end
-        end
-    elseif waretype == "food" then
-        for i, tbuilding in pairs(tribe.buildings) do
-            if tbuilding.is_mine then
                 if tbuilding.inputs then
                     for k, waretype, warecount in pairs(tbuilding.inputs) do
                         set_warehouse_ware_policy(startx, starty, waretype.name, policiename)
