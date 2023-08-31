@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Juanjo, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 03:06+0200\n"
+"POT-Creation-Date: 2023-08-31 03:06+0200\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
+"Last-Translator: Juanjo, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
 "ca/)\n"
 "Language: ca\n"
@@ -20,12 +24,14 @@ msgstr ""
 
 #: addons/time-limitted-peaceful.wad/addon:4
 msgid "limits the peaceful mode to 45 minutes"
-msgstr ""
+msgstr "limita el mode pacífic a 45 minuts"
 
 #: addons/time-limitted-peaceful.wad/init.lua:20
 msgid "peaceful mode ends now"
-msgstr ""
+msgstr "el mode pacífic ha acabat"
 
 #: addons/time-limitted-peaceful.wad/init.lua:21
 msgid "all players can attack each other now (team mates excluded of course)"
 msgstr ""
+"a partir d'ara, tots els jugadors es poden atacar (excepte entre companys "
+"d'equip, òbviament)"
