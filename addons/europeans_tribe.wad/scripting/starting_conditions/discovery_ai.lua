@@ -233,7 +233,7 @@ local init = {
                     building:enhance(true)
                 end
             end
-        elseif (i % 6 == 2) then
+        elseif (i % 4 == 2) then
             for j, building in ipairs(player:get_buildings("europeans_tower_small")) do
                 if (j == 1) then
                     building:enhance(true)

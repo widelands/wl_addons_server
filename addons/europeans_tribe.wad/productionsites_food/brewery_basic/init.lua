@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:60s",
+                "animate=working duration:90s",
                 "produce=beer"
             }
         }

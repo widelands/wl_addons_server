@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 03:06+0200\n"
+"POT-Creation-Date: 2023-09-02 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Markus Göpfert, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -1144,9 +1144,9 @@ msgstr "Das Arbeiten"
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_basic/init.lua:72
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_big/init.lua:65
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_normal/init.lua:69
-#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:49
-#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:82
-#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:59
+#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:50
+#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:83
+#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:60
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_big_advanced/init.lua:69
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_big_basic/init.lua:98
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_big_normal/init.lua:74
@@ -1260,21 +1260,21 @@ msgctxt "europeans_building"
 msgid "making honey"
 msgstr "Das Sammeln von Honig"
 
-#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:60
-#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:93
-#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:70
-msgid "No Flowers"
-msgstr "Keine Blumen"
-
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:61
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:94
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:71
-msgid "Out of Flowers"
+msgid "No Flowers"
 msgstr "Keine Blumen"
 
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:62
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:95
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:72
+msgid "Out of Flowers"
+msgstr "Keine Blumen"
+
+#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:63
+#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:96
+#: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:73
 msgctxt "europeans_building"
 msgid ""
 "The beekeeper working at this beekeepers’s house can’t find any flowering "
@@ -6057,327 +6057,344 @@ msgstr "Andorra"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3075
 msgctxt "warehousename"
+msgid "Armenia"
+msgstr ""
+
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3076
+msgctxt "warehousename"
 msgid "Austria"
 msgstr "Österreich"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3076
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3077
 msgctxt "warehousename"
 msgid "Azerbaijan"
 msgstr "Aserbaidschan"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3077
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3078
 msgctxt "warehousename"
 msgid "Belarus"
 msgstr "Belarus"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3078
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3079
 msgctxt "warehousename"
 msgid "Belgium"
 msgstr "Belgien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3079
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3080
 msgctxt "warehousename"
 msgid "Bosnia"
 msgstr "Bosnien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3080
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3081
 msgctxt "warehousename"
 msgid "Bulgaria"
 msgstr "Bulgarien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3081
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3082
 msgctxt "warehousename"
 msgid "Corsica"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3082
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3083
 msgctxt "warehousename"
 msgid "Croatia"
 msgstr "Kroatien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3083
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3084
 msgctxt "warehousename"
 msgid "Cyprus"
 msgstr "Zypern"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3084
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3085
 msgctxt "warehousename"
 msgid "Czechia"
 msgstr "Tschechien "
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3085
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3086
 msgctxt "warehousename"
 msgid "Denmark"
 msgstr "Dänemark"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3086
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3087
+#, fuzzy
+msgctxt "warehousename"
+msgid "England"
+msgstr "Finnland"
+
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3088
 msgctxt "warehousename"
 msgid "Estonia"
 msgstr "Estland"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3087
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3089
 msgctxt "warehousename"
 msgid "Faroe Islands"
 msgstr "Faröer"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3088
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3090
 msgctxt "warehousename"
 msgid "Finland"
 msgstr "Finnland"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3089
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3091
 msgctxt "warehousename"
 msgid "France"
 msgstr "Frankreich"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3090
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3092
 msgctxt "warehousename"
 msgid "Georgia"
 msgstr "Georgien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3091
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3093
 msgctxt "warehousename"
 msgid "Germany"
 msgstr "Deutschland"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3092
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3094
 msgctxt "warehousename"
 msgid "Gibraltar"
 msgstr "Gibraltar"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3093
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3095
 msgctxt "warehousename"
 msgid "Greece"
 msgstr "Griechenland"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3094
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3096
 msgctxt "warehousename"
 msgid "Guernsey"
 msgstr "Guernsey"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3095
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3097
 msgctxt "warehousename"
 msgid "Herzegovina"
 msgstr "Herzegowina"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3096
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3098
 msgctxt "warehousename"
 msgid "Hungary"
 msgstr "Ungarn"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3097
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3099
 msgctxt "warehousename"
 msgid "Iceland"
 msgstr "Island"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3098
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3100
 msgctxt "warehousename"
 msgid "Isle of Man"
 msgstr "Isle of Man"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3099
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3101
 msgctxt "warehousename"
 msgid "Ireland"
 msgstr "Irland"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3100
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3102
 msgctxt "warehousename"
 msgid "Italy"
 msgstr "Italien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3101
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3103
 msgctxt "warehousename"
 msgid "Jersey"
 msgstr "Jersey"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3102
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3104
 msgctxt "warehousename"
 msgid "Kazakhstan"
 msgstr "Kasachstan"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3103
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3105
 msgctxt "warehousename"
 msgid "Kosovo"
 msgstr "Kosovo"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3104
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3106
 msgctxt "warehousename"
 msgid "Latvia"
 msgstr "Lettland"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3105
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3107
 msgctxt "warehousename"
 msgid "Liechtenstein"
 msgstr "Liechtenstein"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3106
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3108
 msgctxt "warehousename"
 msgid "Lithuania"
 msgstr "Litauen"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3107
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3109
 msgctxt "warehousename"
 msgid "Luxembourg"
 msgstr "Luxemburg"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3108
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3110
 msgctxt "warehousename"
 msgid "Malta"
 msgstr "Malta"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3109
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3111
 msgctxt "warehousename"
 msgid "Moldova"
 msgstr "Moldawien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3110
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3112
 msgctxt "warehousename"
 msgid "Monaco"
 msgstr "Monaco"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3111
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3113
 msgctxt "warehousename"
 msgid "Montenegro"
 msgstr "Montenegro"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3112
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3114
 msgctxt "warehousename"
 msgid "Netherlands"
 msgstr "Niederlande"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3113
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3115
 msgctxt "warehousename"
 msgid "North Macedonia"
 msgstr "Nordmazedonien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3114
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3116
 msgctxt "warehousename"
 msgid "Norway"
 msgstr "Norwegen"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3115
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3117
 msgctxt "warehousename"
 msgid "Poland"
 msgstr "Polen"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3116
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3118
 msgctxt "warehousename"
 msgid "Portugal"
 msgstr "Portugal"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3117
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3119
 msgctxt "warehousename"
 msgid "Romania"
 msgstr "Rumänien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3118
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3120
 msgctxt "warehousename"
 msgid "Russia"
 msgstr "Russland"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3119
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3121
 msgctxt "warehousename"
 msgid "San Marino"
 msgstr "San Marino"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3120
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3122
 msgctxt "warehousename"
 msgid "Sardinia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3121
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3123
+#, fuzzy
+msgctxt "warehousename"
+msgid "Scotland"
+msgstr "Polen"
+
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3124
 msgctxt "warehousename"
 msgid "Serbia"
 msgstr "Serbien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3122
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3125
 msgctxt "warehousename"
 msgid "Slovakia"
 msgstr "Slowakei"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3123
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3126
 msgctxt "warehousename"
 msgid "Slovenia"
 msgstr "Slowenien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3124
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3127
 msgctxt "warehousename"
 msgid "Spain"
 msgstr "Spanien"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3125
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3128
 msgctxt "warehousename"
 msgid "Svalbard"
 msgstr "Svalbard"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3126
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3129
 msgctxt "warehousename"
 msgid "Sweden"
 msgstr "Schweden"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3127
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3130
 msgctxt "warehousename"
 msgid "Switzerland"
 msgstr "Schweiz"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3128
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3131
 msgctxt "warehousename"
 msgid "Turkey"
 msgstr "Türkei"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3129
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3132
 msgctxt "warehousename"
 msgid "Ukraine"
 msgstr "Ukraine"
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3130
-msgctxt "warehousename"
-msgid "United Kingdom"
-msgstr "Vereinigtes Königreich"
-
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3131
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3133
 msgctxt "warehousename"
 msgid "Vatican City"
 msgstr "Vatikanstadt"
 
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3134
+msgctxt "warehousename"
+msgid "Wales"
+msgstr ""
+
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3137
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3140
 msgctxt "europeans"
 msgid "Worker missing"
 msgstr "Ein Arbeiter fehlt"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3139
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3142
 msgctxt "europeans"
 msgid "Worker is coming"
 msgstr "Arbeiter kommt"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3141
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3144
 msgctxt "europeans"
 msgid "Workers missing"
 msgstr "Arbeiter fehlen"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3143
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3146
 msgctxt "europeans"
 msgid "Workers are coming"
 msgstr "Arbeiter kommen"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3145
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3148
 msgctxt "europeans"
 msgid "Expert missing"
 msgstr "Ein Meister fehlt"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3147
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3150
 msgctxt "europeans"
 msgid "Experts missing"
 msgstr "Meister fehlen"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3161
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3164
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
@@ -6385,7 +6402,7 @@ msgstr[0] "%1% Soldat (+%2%)"
 msgstr[1] "%1% Soldaten (+%2%)"
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3163
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3166
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
@@ -6393,7 +6410,7 @@ msgstr[0] "%1% Soldat"
 msgstr[1] "%1% Soldaten"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3165
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3168
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
@@ -6401,7 +6418,7 @@ msgstr[0] "%1%(+%2%) Soldat (+%3%)"
 msgstr[1] "%1%(+%2%) Soldaten (+%3%)"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3167
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3170
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
@@ -7145,3 +7162,7 @@ msgstr "Lehrling"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Geselle"
+
+#~ msgctxt "warehousename"
+#~ msgid "United Kingdom"
+#~ msgstr "Vereinigtes Königreich"

@@ -3072,6 +3072,7 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Åland"),
         pgettext("warehousename", "Albania"),
         pgettext("warehousename", "Andorra"),
+        pgettext("warehousename", "Armenia"),
         pgettext("warehousename", "Austria"),
         pgettext("warehousename", "Azerbaijan"),
         pgettext("warehousename", "Belarus"),
@@ -3083,6 +3084,7 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Cyprus"),
         pgettext("warehousename", "Czechia"),
         pgettext("warehousename", "Denmark"),
+        pgettext("warehousename", "England"),
         pgettext("warehousename", "Estonia"),
         pgettext("warehousename", "Faroe Islands"),
         pgettext("warehousename", "Finland"),
@@ -3118,6 +3120,7 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Russia"),
         pgettext("warehousename", "San Marino"),
         pgettext("warehousename", "Sardinia"),
+        pgettext("warehousename", "Scotland"),
         pgettext("warehousename", "Serbia"),
         pgettext("warehousename", "Slovakia"),
         pgettext("warehousename", "Slovenia"),
@@ -3127,8 +3130,8 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Switzerland"),
         pgettext("warehousename", "Turkey"),
         pgettext("warehousename", "Ukraine"),
-        pgettext("warehousename", "United Kingdom"),
         pgettext("warehousename", "Vatican City"),
+        pgettext("warehousename", "Wales"),
    },
     
    -- Productionsite status strings

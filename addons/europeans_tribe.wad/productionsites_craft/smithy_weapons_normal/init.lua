@@ -72,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=helmet_wooden:2"
             }
@@ -85,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=spear_wooden:2"
             }
@@ -98,7 +98,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs shield_steel and not economy needs helmet_mask",
                 "consume=coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=helmet_mask:2"
             }
         },
@@ -109,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs shield_steel or workers need experience",
                 "return=skipped when economy needs helmet_mask and not economy needs shield_steel",
                 "consume=coal iron",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=shield_steel:2"
             }
         },
@@ -121,7 +121,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs spear_advanced",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=spear_advanced:2"
             }
@@ -134,7 +134,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs spear_advanced and not economy needs ax_broad",
                 "consume=planks coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=ax_broad:2"
             }

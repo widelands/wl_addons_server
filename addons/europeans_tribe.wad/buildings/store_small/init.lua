@@ -95,7 +95,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs granite",
                 "return=failed unless site has coin_wood:4",
                 "consume=coin_wood:4",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=granite:2",
                 "sleep=duration:30s",
             }
@@ -107,7 +107,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs marble",
                 "return=failed unless site has coin_wood:6",
                 "consume=coin_wood:6",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=marble:2",
                 "sleep=duration:30s",
             }
@@ -119,7 +119,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs quartz",
                 "return=failed unless site has coin_wood:6",
                 "consume=coin_wood:6",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=quartz",
                 "sleep=duration:30s",
             }
@@ -131,7 +131,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs quartz",
                 "return=failed unless site has coin_copper:4",
                 "consume=coin_copper:4",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=quartz",
                 "sleep=duration:30s",
             }
@@ -143,7 +143,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs diamond",
                 "return=failed unless site has coin_wood:8",
                 "consume=coin_wood:8",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=diamond",
                 "sleep=duration:30s",
             }
@@ -155,7 +155,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs diamond",
                 "return=failed unless site has coin_copper:4",
                 "consume=coin_copper:4",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=diamond",
                 "sleep=duration:30s",
             }
@@ -167,7 +167,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs iron",
                 "return=failed unless site has coin_wood:8",
                 "consume=coin_wood:8",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=iron",
                 "sleep=duration:30s",
             }
@@ -179,7 +179,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs iron",
                 "return=failed unless site has coin_copper:4",
                 "consume=coin_copper:4",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=iron",
                 "sleep=duration:30s",
             }

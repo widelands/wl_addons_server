@@ -89,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has bread:4",
                 "return=failed unless site has planks",
                 "consume=bread:4 planks",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=coin_wood:3",
                 "sleep=duration:30s",
             }
@@ -103,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has beer:4",
                 "return=failed unless site has planks",
                 "consume=beer:4 planks",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=coin_wood:3",
                 "sleep=duration:30s",
             }
@@ -117,7 +117,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has bread:4",
                 "return=failed unless site has planks",
                 "consume=bread:4 gold",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",
             }
@@ -131,7 +131,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has beer:4",
                 "return=failed unless site has planks",
                 "consume=beer:4 gold",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",
             }
@@ -144,7 +144,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has meat:4",
                 "return=skipped unless site has planks",
                 "consume=meat:4 planks",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=coin_wood:4",
                 "sleep=duration:30s",
             }
@@ -157,7 +157,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has meat:4",
                 "return=skipped unless site has gold",
                 "consume=meat:4 gold",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",
             }
@@ -170,7 +170,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has fish:2",
                 "return=skipped unless site has planks",
                 "consume=fish:2 planks",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=coin_wood:4",
                 "sleep=duration:30s",
             }
@@ -183,7 +183,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has fish:4",
                 "return=skipped unless site has gold",
                 "consume=fish:4 gold",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",
             }

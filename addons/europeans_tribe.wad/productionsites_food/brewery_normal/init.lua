@@ -69,7 +69,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:40s",
+                "animate=working duration:60s",
                 "produce=beer"
             }
         },
@@ -85,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has barley",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
-                "animate=working duration:40s",
+                "animate=working duration:60s",
                 "produce=mead"
             }
         },
@@ -100,7 +100,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
                 "consume=water barley",
-                "animate=working duration:40s",
+                "animate=working duration:60s",
                 "produce=beer_strong"
             }
         }

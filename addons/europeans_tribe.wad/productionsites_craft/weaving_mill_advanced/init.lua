@@ -65,7 +65,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:40s",
+                "animate=working duration:45s",
                 "produce=cloth"
             }
         },
@@ -77,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has wool",
                 "consume=wool reed",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:40s",
+                "animate=working duration:45s",
                 "produce=armor:2"
             }
         }

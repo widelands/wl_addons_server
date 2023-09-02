@@ -80,7 +80,7 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:55s",
                 "consume=water:3",
                 "playsound=sound/barbarians/mortar priority:60%",
-                "animate=working duration:5s",
+                "animate=working duration:35s",
                 "produce=grout:3"
             }
         }

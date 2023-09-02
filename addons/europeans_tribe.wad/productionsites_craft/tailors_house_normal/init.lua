@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs armor_wooden or workers need experience",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=armor_wooden:2"
             }
@@ -83,7 +83,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_chain and not economy needs armor_processed",
                 "consume=armor cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=armor_processed:2"
             }
         },
@@ -94,7 +94,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs armor_chain or workers need experience",
                 "return=skipped when economy needs armor_processed and not economy needs armor_chain",
                 "consume=armor:2 coal iron",
-                "animate=working duration:30s",
+                "animate=working duration:60s",
                 "produce=armor_chain:2"
             }
         }

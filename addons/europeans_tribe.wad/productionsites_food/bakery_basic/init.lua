@@ -81,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2",
-                "animate=working duration:60s",
+                "animate=working duration:90s",
                 "produce=bread:2"
             }
         }

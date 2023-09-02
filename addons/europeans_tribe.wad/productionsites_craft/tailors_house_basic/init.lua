@@ -87,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs armor_wooden or workers need experience",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:50s",
+                "animate=working duration:90s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=armor_wooden:2"
             }
@@ -99,7 +99,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs armor_processed or workers need experience",
                 "consume=armor cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:50s",
+                "animate=working duration:90s",
                 "produce=armor_processed:2"
             }
         }

@@ -276,12 +276,14 @@ function balance_warehouse_wares(player)
     local tribe = player.tribe
     
     for i, ware in ipairs(tribe.wares) do
+        local ware_description = game:get_ware_description(ware.name)
+        local is_build_material = ware_description:is_construction_material(tribe.name)
         for k, building in ipairs(player:get_buildings("europeans_headquarters")) do
             if (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.9)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 8)) then
                 building:set_warehouse_policies(ware.name, "remove")
             elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 2)) then
                 building:set_warehouse_policies(ware.name, "dontstock")
-            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) and (player:get_wares(ware.name) > building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) then
+            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) and (is_build_material == true) then
                 building:set_warehouse_policies(ware.name, "prefer")
             else
                 building:set_warehouse_policies(ware.name, "normal")
@@ -292,7 +294,7 @@ function balance_warehouse_wares(player)
                 building:set_warehouse_policies(ware.name, "remove")
             elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 2)) then
                 building:set_warehouse_policies(ware.name, "dontstock")
-            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) and (player:get_wares(ware.name) > building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) then
+            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) and (is_build_material == true) then
                 building:set_warehouse_policies(ware.name, "prefer")
             else
                 building:set_warehouse_policies(ware.name, "normal")
@@ -303,7 +305,7 @@ function balance_warehouse_wares(player)
                 building:set_warehouse_policies(ware.name, "remove")
             elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 2)) then
                 building:set_warehouse_policies(ware.name, "dontstock")
-            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) and (player:get_wares(ware.name) > building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) then
+            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) and (is_build_material == true) then
                 building:set_warehouse_policies(ware.name, "prefer")
             else
                 building:set_warehouse_policies(ware.name, "normal")
@@ -323,8 +325,6 @@ function balance_workerhouse_workers(player)
                 building:set_warehouse_policies(worker.name, "dontstock")
             elseif (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.5)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * 2)) then
                 building:set_warehouse_policies(worker.name, "dontstock")
-            elseif (building:get_workers(worker.name) < building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name)) and (player:get_workers(worker.name) > building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name)) then
-                building:set_warehouse_policies(worker.name, "prefer")
             else
                 building:set_warehouse_policies(worker.name, "normal")
             end
@@ -334,8 +334,6 @@ function balance_workerhouse_workers(player)
                 building:set_warehouse_policies(worker.name, "dontstock")
             elseif (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.5)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * 2)) then
                 building:set_warehouse_policies(worker.name, "dontstock")
-            elseif (building:get_workers(worker.name) < building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name)) and (player:get_workers(worker.name) > building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name)) then
-                building:set_warehouse_policies(worker.name, "prefer")
             else
                 building:set_warehouse_policies(worker.name, "normal")
             end
@@ -345,8 +343,6 @@ function balance_workerhouse_workers(player)
                 building:set_warehouse_policies(worker.name, "dontstock")
             elseif (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.5)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * 2)) then
                 building:set_warehouse_policies(worker.name, "dontstock")
-            elseif (building:get_workers(worker.name) < building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name)) and (player:get_workers(worker.name) > building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name)) then
-                building:set_warehouse_policies(worker.name, "prefer")
             else
                 building:set_warehouse_policies(worker.name, "normal")
             end

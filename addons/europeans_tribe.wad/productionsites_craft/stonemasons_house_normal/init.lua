@@ -76,10 +76,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=coal:2 granite:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:40s",
+                "animate=working duration:35s",
                 "consume=water:3",
                 "playsound=sound/barbarians/mortar priority:60%",
-                "animate=working duration:5s",
+                "animate=working duration:25s",
                 "produce=grout:3"
             }
         },
@@ -94,7 +94,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has clay:3",
                 "consume=granite clay:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:10s",
+                "animate=working duration:25s",
                 "consume=coal:2",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:35s",
