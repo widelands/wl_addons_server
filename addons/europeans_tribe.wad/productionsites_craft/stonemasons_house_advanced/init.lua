@@ -47,8 +47,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:10s",
                 "call=sculpting_marble_column",
+                "sleep=duration:10s",
                 "call=mixing_grout",
+                "sleep=duration:10s",
                 "call=burning_bricks",
                 "return=skipped"
             }
@@ -66,9 +69,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=coal:2 granite:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:45s",
+                "animate=working duration:30s",
                 "consume=water:3",
                 "playsound=sound/barbarians/mortar priority:60%",
+                "animate=working duration:20s",
                 "produce=grout:3"
             }
         },
@@ -83,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has clay:3",
                 "consume=granite clay:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:15s",
+                "animate=working duration:20s",
                 "consume=coal:2",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:30s",
@@ -103,7 +107,7 @@ wl.Descriptions():new_productionsite_type {
                 "produce=marble_column:2",
                 "consume=marble:3",
                 "playsound=sound/stonecutting/stonemason priority:50% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:25s",
                 "produce=marble_column:2"
             }
         }

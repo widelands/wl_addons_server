@@ -35,8 +35,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "scrap_wood", amount = 8 },
-        { name = "log", amount = 8 }
+        { name = "scrap_wood", amount = 10 },
+        { name = "log", amount = 10 }
     },
 
     programs = {
@@ -44,7 +44,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:30s",
                 "call=burn_wood",
+                "sleep=duration:30s",
                 "call=burn_log",
                 "return=skipped"
             }

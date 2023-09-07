@@ -42,7 +42,9 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 8 },
-        { name = "flour", amount = 8 }
+        { name = "flour", amount = 8 },
+        { name = "honey", amount = 4 },
+        { name = "fruit", amount = 4 }
     },
 
     programs = {
@@ -51,6 +53,10 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_bread",
+                "sleep=duration:15s",
+                "call=produce_honey_bread",
+                "sleep=duration:15s",
+                "call=produce_biscuits",
                 "return=skipped"
             }
         },
@@ -65,6 +71,34 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water:2 flour:2",
                 "animate=working duration:45s",
                 "produce=bread:2"
+            }
+        },
+        produce_honey_bread = {
+            -- TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
+            descname = pgettext("europeans_building", "Baking honey bread"),
+            actions = {
+                "return=skipped unless economy needs honey_bread or workers need experience",
+                "return=skipped when economy needs water and not economy needs honey_bread",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has flour:2",
+                "return=skipped unless site has honey",
+                "consume=water:2 flour:2 honey",
+                "animate=working duration:45s",
+                "produce=honey_bread:2"
+            }
+        },
+        produce_biscuits = {
+            -- TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
+            descname = pgettext("europeans_building", "Baking fruit biscuits"),
+            actions = {
+                "return=skipped unless economy needs biscuit or workers need experience",
+                "return=skipped when economy needs water and not economy needs biscuit",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has flour:2",
+                "return=skipped unless site has honey",
+                "consume=water:2 flour:2 honey fruit:2",
+                "animate=working duration:45s",
+                "produce=biscuit:2"
             }
         },
     },

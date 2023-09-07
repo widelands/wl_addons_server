@@ -17,9 +17,9 @@ wl.Descriptions():new_worker_type {
             "walk=object-or-coords",
             "plant=attrib:europeans_shipconstruction unless object",
             "playsound=sound/sawmill/sawmill priority:80% allow_multiple",
-            "animate=idle duration:500ms",
+            "animate=idle duration:3s",
             "construct",
-            "animate=idle duration:6s",
+            "animate=idle duration:3s",
             "return"
         },
         buildferry_1 = {
@@ -28,7 +28,7 @@ wl.Descriptions():new_worker_type {
         buildferry_2 = {
             "findspace=size:swim radius:6",
             "walk=coords",
-            "animate=idle duration:15s",
+            "animate=idle duration:40s",
             "createbob=europeans_ferry",
             "return"
         },

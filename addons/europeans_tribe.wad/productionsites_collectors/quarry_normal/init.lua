@@ -42,6 +42,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=quarrying",
+                "sleep=duration:10s",
                 "call=mining",
                 "return=skipped"
             }

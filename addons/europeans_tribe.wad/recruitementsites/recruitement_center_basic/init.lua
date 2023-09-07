@@ -97,7 +97,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_builder",
                 "call=recruit_shipwright",
                 "call=recruit_carrier_idle",
-                "sleep=duration:30s",
                 "return=skipped"
             }
         },
@@ -111,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs europeans_beekeeper_advanced or europeans_shipwright_advanced or economy needs europeans_terraformer_advanced or economy needs europeans_scout_advanced",
                 "sleep=duration:180s",
                 "consume=europeans_carrier",
-                "animate=working duration:60s",
+                "animate=working duration:180s",
                 "recruit=europeans_carrier_1"
             }
         },
@@ -121,7 +120,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_carrier_1 or workers need experience",
                 "consume=europeans_carrier",
-                "animate=working duration:60s",
+                "animate=working duration:120s",
                 "recruit=europeans_carrier_1"
             }
         },
@@ -130,11 +129,14 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting builder"),
             actions = {
                 "return=skipped unless economy needs europeans_builder",
+                "return=skipped when economy needs europeans_worker_basic",
+                "return=skipped when economy needs europeans_worker_normal",
+                "return=skipped when economy needs europeans_worker_advanced",
                 "return=skipped when not site has hammer",
                 "return=skipped when not site has saw",
                 "consume=europeans_carrier",
                 "consume=hammer saw",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_builder"
             }
         },
@@ -148,7 +150,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs buckets and economy needs water",
                 "consume=europeans_carrier",
                 "consume=buckets",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_beekeeper_basic"
             }
         },
@@ -163,7 +165,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has shovel",
                 "consume=europeans_carrier",
                 "consume=shovel buckets",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_claydigger_basic"
             }
         },
@@ -179,7 +181,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has basket",
                 "consume=europeans_carrier",
                 "consume=scythe basket",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_farmer_basic"
             }
         },
@@ -194,7 +196,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has buckets",
                 "consume=europeans_carrier",
                 "consume=shovel buckets",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_forester_basic"
             }
         },
@@ -203,12 +205,15 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting geologist"),
             actions = {
                 "return=skipped unless economy needs europeans_geologist",
+                "return=skipped when economy needs europeans_worker_basic",
+                "return=skipped when economy needs europeans_worker_normal",
+                "return=skipped when economy needs europeans_worker_advanced",
                 "return=skipped when economy needs hammer or economy needs pick",
                 "return=skipped when not site has hammer",
                 "return=skipped when not site has pick",
                 "consume=europeans_carrier",
                 "consume=hammer pick",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_geologist"
             }
         },
@@ -222,7 +227,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has felling_ax",
                 "consume=europeans_carrier",
                 "consume=felling_ax",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_lumberjack_basic"
             }
         },
@@ -238,7 +243,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has buckets",
                 "consume=europeans_carrier",
                 "consume=pick shovel buckets",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_miner_basic"
             }
         },
@@ -248,7 +253,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_recruit",
                 "consume=europeans_carrier",
-                "animate=working duration:90s",
+                "animate=working duration:150s",
                 "recruit=europeans_recruit"
             }
         },
@@ -260,7 +265,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_scout_normal",
                 "return=skipped unless economy needs europeans_scout_advanced",
                 "consume=europeans_carrier",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_scout_basic"
             }
         },
@@ -271,10 +276,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_shipwright_basic",
                 "return=skipped unless economy needs europeans_shipwright_normal",
                 "return=skipped unless economy needs europeans_shipwright_advanced",
+                "return=skipped when economy needs europeans_worker_basic",
+                "return=skipped when economy needs europeans_worker_normal",
+                "return=skipped when economy needs europeans_worker_advanced",
                 "return=skipped when economy needs hammer or economy needs saw",
                 "consume=europeans_carrier",
                 "consume=hammer saw",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_shipwright_basic"
             }
         },
@@ -289,7 +297,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has pick",
                 "consume=europeans_carrier",
                 "consume=pick buckets",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_stonecutter_basic"
             }
         },
@@ -304,7 +312,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water",
                 "consume=europeans_carrier",
                 "consume=pick shovel buckets",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_terraformer_basic"
             }
         },
@@ -317,7 +325,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_trainer_advanced",
                 "return=skipped when not site has needles",
                 "consume=europeans_carrier",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_trainer_basic"
             }
         },
@@ -334,7 +342,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has needles",
                 "consume=europeans_carrier",
                 "consume=hammer saw fire_tongs needles",
-                "animate=working duration:90s",
+                "animate=working duration:180s",
                 "recruit=europeans_worker_basic"
             }
         },

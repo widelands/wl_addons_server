@@ -57,8 +57,10 @@ wl.Descriptions():new_productionsite_type {
                 "call=feed_idle",
                 "call=produce_meat",
                 "call=produce_meat_leather",
+                "sleep=duration:10s",
                 "call=produce_fish",
                 "call=produce_fish",
+                "sleep=duration:10s",
                 "call=produce_cattle",
                 "call=produce_donkey",
                 "return=skipped"

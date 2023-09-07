@@ -61,6 +61,8 @@ wl.Descriptions():new_productionsite_type {
         { name = "planks", amount = 4 },
         { name = "gold", amount = 4 },
         { name = "bread", amount = 12 },
+        { name = "honey_bread", amount = 12 },
+        { name = "biscuit", amount = 12 },
         { name = "meat", amount = 12 },
         { name = "fish", amount = 12 },
         { name = "beer", amount = 12 },
@@ -77,68 +79,37 @@ wl.Descriptions():new_productionsite_type {
                 "call=trade_bread",
                 "call=trade_bread_copper",
                 "call=trade_bread_silver",
+                "call=trade_bread_gold",
+                "sleep=duration:10s",
                 "call=trade_beer",
                 "call=trade_beer_copper",
                 "call=trade_beer_silver",
                 "call=trade_beer_gold",
+                "sleep=duration:10s",
                 "call=trade_meat",
                 "call=trade_meat_copper",
                 "call=trade_meat_silver",
+                "call=trade_meat_gold",
+                "sleep=duration:10s",
+                "call=trade_biscuit",
+                "call=trade_biscuit_copper",
+                "call=trade_biscuit_silver",
+                "call=trade_biscuit_gold",
+                "sleep=duration:10s",
                 "call=trade_mead",
                 "call=trade_mead_copper",
                 "call=trade_mead_silver",
+                "call=trade_mead_gold",
+                "sleep=duration:10s",
                 "call=trade_fish",
                 "call=trade_fish_copper",
                 "call=trade_fish_silver",
                 "call=trade_fish_gold",
+                "sleep=duration:10s",
                 "call=trade_wine",
                 "call=trade_wine_copper",
                 "call=trade_wine_silver",
                 "call=trade_wine_gold",
-            }
-        },
-        trade_bread = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped unless site has bread:4",
-                "return=skipped unless site has planks",
-                "consume=bread:4 planks",
-                "animate=working duration:30s",
-                "produce=coin_wood:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_bread_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
-                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
-                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
-                "return=skipped unless site has bread:4",
-                "return=skipped unless site has gold",
-                "consume=bread:4 gold",
-                "animate=working duration:30s",
-                "produce=coin_copper:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_bread_silver = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
-                "return=skipped when economy needs coin_copper and not economy needs coin_silver",
-                "return=skipped when economy needs coin_gold and not economy needs coin_silver",
-                "return=skipped unless site has bread:6",
-                "return=skipped unless site has gold",
-                "consume=bread:6 gold",
-                "animate=working duration:30s",
-                "produce=coin_silver:4",
-                "sleep=duration:30s",
             }
         },
         trade_beer = {
@@ -177,7 +148,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs coin_wood and not economy needs coin_silver",
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
-                "return=skipped unless site has beer:6",
+                "return=skipped unless site has beer_strong:4",
                 "return=skipped unless site has gold",
                 "consume=beer:6 gold",
                 "animate=working duration:30s",
@@ -200,47 +171,181 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
             }
         },
-        trade_meat = {
+        trade_biscuit = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_wood",
                 "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped unless site has meat:4",
+                "return=skipped unless site has biscuit:2",
                 "return=skipped unless site has planks",
-                "consume=meat:4 planks",
+                "consume=biscuit:2 planks",
                 "animate=working duration:30s",
                 "produce=coin_wood:4",
                 "sleep=duration:30s",
             }
         },
-        trade_meat_copper = {
+        trade_biscuit_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
                 "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
-                "return=skipped unless site has meat:4",
+                "return=skipped unless site has biscuit:4",
                 "return=skipped unless site has gold",
-                "consume=meat:4 gold",
+                "consume=biscuit:4 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",
             }
         },
-        trade_meat_silver = {
+        trade_biscuit_silver = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
                 "return=skipped when economy needs coin_wood and not economy needs coin_silver",
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
-                "return=skipped unless site has meat:6",
+                "return=skipped unless site has biscuit:6",
                 "return=skipped unless site has gold",
-                "consume=meat:6 gold",
+                "consume=biscuit:6 gold",
                 "animate=working duration:30s",
                 "produce=coin_silver:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_biscuit_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_gold",
+                "return=skipped when economy needs coin_copper and not economy needs coin_gold",
+                "return=skipped when economy needs coin_silver and not economy needs coin_gold",
+                "return=skipped unless site has biscuit:8",
+                "return=skipped unless site has gold",
+                "consume=biscuit:8 gold",
+                "animate=working duration:30s",
+                "produce=coin_gold:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_bread = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
+                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
+                "return=skipped unless site has bread:4",
+                "return=skipped unless site has planks",
+                "consume=bread:4 planks",
+                "animate=working duration:30s",
+                "produce=coin_wood:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_bread_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
+                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
+                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
+                "return=skipped unless site has bread:4",
+                "return=skipped unless site has gold",
+                "consume=bread:4 gold",
+                "animate=working duration:30s",
+                "produce=coin_copper:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_bread_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
+                "return=skipped when economy needs coin_copper and not economy needs coin_silver",
+                "return=skipped when economy needs coin_gold and not economy needs coin_silver",
+                "return=skipped unless site has honey_bread:6",
+                "return=skipped unless site has gold",
+                "consume=bread:6 gold",
+                "animate=working duration:30s",
+                "produce=coin_silver:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_bread_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_gold",
+                "return=skipped when economy needs coin_copper and not economy needs coin_gold",
+                "return=skipped when economy needs coin_silver and not economy needs coin_gold",
+                "return=skipped unless site has honey_bread:8",
+                "return=skipped unless site has gold",
+                "consume=honey_bread:8 gold",
+                "animate=working duration:30s",
+                "produce=coin_gold:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_fish = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
+                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
+                "return=skipped when economy needs coin_gold and not economy needs coin_wood",
+                "return=skipped unless site has fish:2",
+                "return=skipped unless site has planks",
+                "consume=fish:2 planks",
+                "animate=working duration:30s",
+                "produce=coin_wood:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_fish_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
+                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
+                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
+                "return=skipped unless site has fish:4",
+                "return=skipped unless site has gold",
+                "consume=fish:4 gold",
+                "animate=working duration:30s",
+                "produce=coin_copper:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_fish_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
+                "return=skipped when economy needs coin_copper and not economy needs coin_silver",
+                "return=skipped when economy needs coin_gold and not economy needs coin_silver",
+                "return=skipped unless site has fish:6",
+                "return=skipped unless site has gold",
+                "consume=fish:4 gold",
+                "animate=working duration:30s",
+                "produce=coin_silver:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_fish_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_gold",
+                "return=skipped when economy needs coin_copper and not economy needs coin_gold",
+                "return=skipped when economy needs coin_silver and not economy needs coin_gold",
+                "return=skipped unless site has fish:8",
+                "return=skipped unless site has gold",
+                "consume=fish:6 gold",
+                "animate=working duration:30s",
+                "produce=coin_gold:4",
                 "sleep=duration:30s",
             }
         },
@@ -288,61 +393,75 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
             }
         },
-        trade_fish = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped when economy needs coin_gold and not economy needs coin_wood",
-                "return=skipped unless site has fish:2",
-                "return=skipped unless site has planks",
-                "consume=fish:2 planks",
-                "animate=working duration:30s",
-                "produce=coin_wood:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_fish_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
-                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
-                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
-                "return=skipped unless site has fish:4",
-                "return=skipped unless site has gold",
-                "consume=fish:4 gold",
-                "animate=working duration:30s",
-                "produce=coin_copper:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_fish_silver = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
-                "return=skipped when economy needs coin_copper and not economy needs coin_silver",
-                "return=skipped when economy needs coin_gold and not economy needs coin_silver",
-                "return=skipped unless site has fish:4",
-                "return=skipped unless site has gold",
-                "consume=fish:4 gold",
-                "animate=working duration:30s",
-                "produce=coin_silver:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_fish_gold = {
+        trade_mead_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
                 "return=skipped when economy needs coin_wood and not economy needs coin_gold",
                 "return=skipped when economy needs coin_copper and not economy needs coin_gold",
                 "return=skipped when economy needs coin_silver and not economy needs coin_gold",
-                "return=skipped unless site has fish:6",
+                "return=skipped unless site has mead:8",
                 "return=skipped unless site has gold",
-                "consume=fish:6 gold",
+                "consume=mead:8 gold",
+                "animate=working duration:30s",
+                "produce=coin_gold:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_meat = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
+                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
+                "return=skipped unless site has meat:2",
+                "return=skipped unless site has planks",
+                "consume=meat:4 planks",
+                "animate=working duration:30s",
+                "produce=coin_wood:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_meat_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
+                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
+                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
+                "return=skipped unless site has meat:4",
+                "return=skipped unless site has gold",
+                "consume=meat:4 gold",
+                "animate=working duration:30s",
+                "produce=coin_copper:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_meat_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
+                "return=skipped when economy needs coin_copper and not economy needs coin_silver",
+                "return=skipped when economy needs coin_gold and not economy needs coin_silver",
+                "return=skipped unless site has meat:6",
+                "return=skipped unless site has gold",
+                "consume=meat:6 gold",
+                "animate=working duration:30s",
+                "produce=coin_silver:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_meat_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs coin_wood and not economy needs coin_gold",
+                "return=skipped when economy needs coin_copper and not economy needs coin_gold",
+                "return=skipped when economy needs coin_silver and not economy needs coin_gold",
+                "return=skipped unless site has meat:8",
+                "return=skipped unless site has gold",
+                "consume=meat:8 gold",
                 "animate=working duration:30s",
                 "produce=coin_gold:4",
                 "sleep=duration:30s",

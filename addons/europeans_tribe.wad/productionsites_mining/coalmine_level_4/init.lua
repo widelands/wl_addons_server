@@ -87,7 +87,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_diamond",
-                "sleep=duration:5s",
             }
         },
         mine_coal = {

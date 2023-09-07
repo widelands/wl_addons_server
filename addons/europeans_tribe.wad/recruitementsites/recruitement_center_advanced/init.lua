@@ -70,7 +70,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_scout",
                 "call=recruit_geologist",
                 "sleep=duration:20s",
-                "call=recruit_builder",
                 "call=recruit_recruit",
                 "call=recruit_carrier_1",
                 "call=recruit_carrier_2",
@@ -79,7 +78,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_builder",
                 "call=recruit_shipwright",
                 "call=recruit_carrier_idle",
-                "sleep=duration:30s",
                 "return=skipped"
             }
         },
@@ -113,7 +111,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_carrier_1 or workers need experience",
                 "consume=europeans_carrier",
-                "animate=working duration:60s",
+                "animate=working duration:120s",
                 "recruit=europeans_carrier_1"
             }
         },
@@ -124,7 +122,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_carrier_2 or workers need experience",
                 "return=skipped when economy needs basket",
                 "consume=basket europeans_carrier",
-                "animate=working duration:60s",
+                "animate=working duration:120s",
                 "recruit=europeans_carrier_2"
             }
         },
@@ -135,7 +133,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_carrier_3 or workers need experience",
                 "return=skipped when economy needs basket",
                 "consume=basket europeans_carrier",
-                "animate=working duration:60s",
+                "animate=working duration:120s",
                 "recruit=europeans_carrier_3"
             }
         },
@@ -144,6 +142,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting builder"),
             actions = {
                 "return=skipped unless economy needs europeans_builder",
+                "return=skipped when economy needs europeans_worker_advanced",
                 "return=skipped when economy needs hammer and economy needs saw",
                 "consume=europeans_carrier",
                 "consume=hammer saw",
@@ -205,6 +204,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting geologist"),
             actions = {
                 "return=skipped unless economy needs europeans_geologist",
+                "return=skipped when economy needs europeans_worker_advanced",
                 "return=skipped when economy needs hammer or economy needs pick",
                 "consume=europeans_carrier",
                 "consume=hammer pick",
@@ -242,7 +242,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_recruit",
                 "consume=europeans_carrier",
-                "animate=working duration:60s",
+                "animate=working duration:90s",
                 "recruit=europeans_recruit"
             }
         },
@@ -261,6 +261,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting shipwright"),
             actions = {
                 "return=skipped unless economy needs europeans_shipwright_advanced",
+                "return=skipped when economy needs europeans_worker_advanced",
                 "return=skipped when economy needs hammer or economy needs saw",
                 "consume=europeans_carrier",
                 "consume=hammer saw",

@@ -73,6 +73,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs coal or economy needs granite or economy needs diamond or workers need experience",
+                "sleep=duration:5s",
                 "call=mine_stone_basic",
                 "return=skipped unless site has coin_wood:3",
                 "consume=coin_wood",
@@ -88,7 +89,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_diamond",
-                "sleep=duration:5s",
             }
         },
         mine_coal = {

@@ -60,6 +60,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:30s",
                 "call=mixing_grout",
                 "return=skipped"
             }
@@ -77,10 +78,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:3",
                 "consume=coal:2 granite:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
-                "animate=working duration:55s",
+                "animate=working duration:90s",
                 "consume=water:3",
                 "playsound=sound/barbarians/mortar priority:60%",
-                "animate=working duration:35s",
+                "animate=working duration:60s",
                 "produce=grout:3"
             }
         }

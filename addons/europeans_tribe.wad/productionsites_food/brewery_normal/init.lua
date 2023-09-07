@@ -52,9 +52,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:30s",
                 "call=brew_beer",
+                "sleep=duration:30s",
                 "call=brew_mead",
-                "call=brew_strong_beer",
                 "return=skipped"
             }
         },
@@ -87,21 +88,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water barley honey",
                 "animate=working duration:60s",
                 "produce=mead"
-            }
-        },
-        brew_strong_beer = {
-            -- TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
-            descname = pgettext("europeans_building", "brewing strong beer"),
-            actions = {
-                "return=skipped unless economy needs beer_strong or workers need experience",
-                "return=skipped when economy needs water and not economy needs beer_strong",
-                "return=skipped when site has barley and economy needs beer and not economy needs beer_strong",
-                "return=skipped when site has honey and economy needs mead and not economy needs beer_strong",
-                "return=skipped unless site has water",
-                "return=skipped unless site has barley",
-                "consume=water barley",
-                "animate=working duration:60s",
-                "produce=beer_strong"
             }
         }
     },

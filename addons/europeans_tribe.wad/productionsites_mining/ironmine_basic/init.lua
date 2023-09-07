@@ -92,7 +92,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_marble",
-                "sleep=duration:5s",
             }
         },
         mine_ore = {

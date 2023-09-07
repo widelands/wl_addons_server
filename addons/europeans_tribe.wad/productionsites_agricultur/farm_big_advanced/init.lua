@@ -53,6 +53,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=plant_barley",
                 "call=plant_rye",
                 "call=plant_wheat",
+                "sleep=duration:10s",
                 "call=harvest_reed",
                 "call=harvest_berry",
                 "call=harvest_grape",

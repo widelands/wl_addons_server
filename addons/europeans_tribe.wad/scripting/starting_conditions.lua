@@ -270,7 +270,7 @@ function place_port(player, startx, starty, radius)
     end
 end
 
-function balance_warehouse_wares(player)
+function balance_player_warehouse_wares(player)
     local game = wl.Game()
     local map = game.map
     local tribe = player.tribe
@@ -314,7 +314,7 @@ function balance_warehouse_wares(player)
     end
 end
 
-function balance_workerhouse_workers(player)
+function balance_player_warehouse_workers(player)
     local game = wl.Game()
     local map = game.map
     local tribe = player.tribe
@@ -350,7 +350,7 @@ function balance_workerhouse_workers(player)
     end
 end
 
-function reset_warehouse_policy(player)
+function reset_player_warehouse_policy(player)
     local game = wl.Game()
     local map = game.map
     local tribe = player.tribe

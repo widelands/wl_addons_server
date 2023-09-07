@@ -62,6 +62,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=feed_idle",
                 "call=produce_cattle",
+                "sleep=duration:10s",
                 "call=produce_meat_leather",
                 "call=produce_meat",
                 "return=skipped"

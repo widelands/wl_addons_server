@@ -50,7 +50,8 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "water", amount = 6 },
         { name = "barley", amount = 6 },
-        { name = "honey", amount = 2 }
+        { name = "honey", amount = 2 },
+        { name = "fruit", amount = 2 }
     },
 
     programs = {
@@ -58,8 +59,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:20s",
                 "call=brew_beer",
+                "sleep=duration:20s",
                 "call=brew_mead",
+                "sleep=duration:20s",
                 "call=brew_strong_beer",
                 "return=skipped"
             }
@@ -105,7 +109,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when site has honey and economy needs mead and not economy needs beer_strong",
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
-                "consume=water barley",
+                "return=skipped unless site has fruit",
+                "consume=water barley fruit",
                 "animate=working duration:45s",
                 "produce=beer_strong"
             }

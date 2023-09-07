@@ -53,8 +53,11 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=recycle_iron",
+                "sleep=duration:20s",
                 "call=recycle_gold",
+                "sleep=duration:20s",
                 "call=smelt_iron",
+                "sleep=duration:20s",
                 "call=smelt_gold",
                 "return=skipped"
             }
@@ -97,7 +100,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:40s",
                 "playsound=sound/metal/ironping priority:60%",
                 "produce=iron:2"
             }
@@ -112,7 +115,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has ore:2",
                 "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:40s",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=gold"
             }

@@ -84,11 +84,14 @@ wl.Descriptions():new_productionsite_type {
                 "call=plant_barley",
                 "call=plant_reed",
                 "call=plant_rye",
+                "call=plant_reed",
                 "call=plant_wheat",
+                "sleep=duration:10s",
                 "call=harvest_reed",
                 "call=harvest_barley",
                 "call=harvest_reed",
                 "call=harvest_rye",
+                "call=harvest_reed",
                 "call=harvest_wheat",
                 "return=skipped"
             }

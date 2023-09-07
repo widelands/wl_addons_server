@@ -100,7 +100,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "consume=coin_silver",
-                "animate=working duration:35s",
+                "animate=working duration:40s",
             }
         },
     },

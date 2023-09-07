@@ -65,6 +65,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=making_honey",
+                "sleep=duration:10s",
                 "call=making_honey_idle",
                 "return=skipped"
             }

@@ -67,7 +67,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_quartz",
-                "sleep=duration:5s",
                 "return=skipped"
             }
         },

@@ -78,21 +78,21 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=ship on failure fail",
-                "sleep=duration:25s",
+                "sleep=duration:30s",
                 "call=ship on failure fail",
-                "sleep=duration:25s",
+                "sleep=duration:30s",
                 "call=ship on failure fail",
-                "sleep=duration:25s",
+                "sleep=duration:30s",
                 "call=ship on failure fail",
-                "sleep=duration:25s",
+                "sleep=duration:30s",
                 "call=ship on failure fail",
-                "sleep=duration:25s",
+                "sleep=duration:30s",
                 "call=ship on failure fail",
-                "sleep=duration:25s",
+                "sleep=duration:30s",
                 "call=ship on failure fail",
-                "sleep=duration:25s",
+                "sleep=duration:30s",
                 "call=ship on failure fail",
-                "sleep=duration:25s",
+                "sleep=duration:30s",
                 "call=ship_preparation",
                 "return=completed"
             }
@@ -105,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has planks",
                 "return=skipped when not site has cloth",
                 "return=skipped when not site has coin_copper",
-                "animate=working duration:25s",
+                "animate=working duration:30s",
                 "construct=europeans_shipconstruction worker:buildship radius:5",
             }
         },
@@ -113,7 +113,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "consume=coin_copper",
-                "animate=working duration:40s",
+                "animate=working duration:60s",
             }
         },
     },

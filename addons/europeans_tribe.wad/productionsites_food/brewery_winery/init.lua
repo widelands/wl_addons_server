@@ -38,8 +38,8 @@ wl.Descriptions():new_productionsite_type {
         { name = "water", amount = 6 },
         { name = "barley", amount = 6 },
         { name = "honey", amount = 2 },
-        { name = "grape", amount = 4 },
-        { name = "fruit", amount = 2 }
+        { name = "fruit", amount = 2 },
+        { name = "grape", amount = 4 }
     },
 
     programs = {
@@ -48,9 +48,13 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=brew_beer",
+                "sleep=duration:15s",
                 "call=brew_mead",
+                "sleep=duration:15s",
                 "call=brew_strong_beer",
+                "sleep=duration:15s",
                 "call=making_wine",
+                "sleep=duration:15s",
                 "return=skipped"
             }
         },
@@ -95,7 +99,8 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when site has honey and economy needs mead and not economy needs beer_strong",
                 "return=skipped unless site has water",
                 "return=skipped unless site has barley",
-                "consume=water barley",
+                "return=skipped unless site has fruit",
+                "consume=water barley fruit",
                 "animate=working duration:45s",
                 "produce=beer_strong"
             }
@@ -107,10 +112,8 @@ wl.Descriptions():new_productionsite_type {
                 -- Grapes are only needed for wine, so no need to check if wine is needed
                 "return=skipped unless economy needs wine or workers need experience",
                 "return=skipped when economy needs water and not economy needs wine",
-                "return=skipped unless site has water",
-                "return=skipped unless site has fruit",
                 "return=skipped unless site has grape:2",
-                "consume=water fruit grape:2",
+                "consume=grape:2",
                 "playsound=sound/empire/winebubble priority:40% allow_multiple",
                 "animate=working duration:45s",
                 "produce=wine"

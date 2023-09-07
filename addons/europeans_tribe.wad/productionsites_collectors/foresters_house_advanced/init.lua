@@ -38,6 +38,7 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_space",
                 "call=plant_trees_idle",
                 "call=plant_trees",
+                "sleep=duration:10s",
                 "callworker=check_land",
                 "call=planting_land",
                 "return=skipped"

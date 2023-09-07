@@ -48,8 +48,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=trade_granite",
                 "call=trade_marble",
+                "sleep=duration:10s",
                 "call=trade_quartz",
                 "call=trade_diamond",
+                "sleep=duration:10s",
                 "call=trade_iron"
             }
         },

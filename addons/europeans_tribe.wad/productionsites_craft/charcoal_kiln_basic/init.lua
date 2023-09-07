@@ -60,7 +60,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "scrap_wood", amount = 4 }
+        { name = "scrap_wood", amount = 6 }
     },
 
     programs = {
@@ -68,6 +68,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:30s",
                 "call=burn_wood",
                 "return=skipped"
             }
@@ -78,9 +79,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs coal or workers need experience",
                 "return=skipped unless site has scrap_wood:3",
-                "consume=scrap_wood:3",
+                "consume=scrap_wood:4",
                 "animate=working duration:90s",
-                "produce=coal"
+                "produce=coal:2"
             }
         }
     },

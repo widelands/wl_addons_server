@@ -46,13 +46,12 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_boots_wooden",
-                "sleep=duration:5s",
+                "sleep=duration:20s",
                 "call=produce_boots_sturdy",
-                "sleep=duration:5s",
+                "sleep=duration:20s",
                 "call=produce_boots_swift",
-                "sleep=duration:5s",
+                "sleep=duration:20s",
                 "call=produce_boots_advanced",
-                "sleep=duration:5s",
                 "return=skipped"
             }
         },
@@ -63,7 +62,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs boots_wooden or workers need experience",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:120s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=boots_wooden:2"
             }
@@ -77,7 +76,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_advanced and not economy needs boots_sturdy",
                 "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:120s",
                 "produce=boots_sturdy:2"
             }
         },
@@ -90,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_advanced and not economy needs boots_swift",
                 "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:120s",
                 "produce=boots_swift:2"
             }
         },
@@ -103,7 +102,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_swift and not economy needs boots_advanced",
                 "consume=planks leather cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:120s",
                 "produce=boots_advanced:2"
             }
         }

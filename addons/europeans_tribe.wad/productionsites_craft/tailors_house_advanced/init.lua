@@ -59,14 +59,14 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:15s",
                 "call=produce_armor_wooden",
-                "sleep=duration:5s",
+                "sleep=duration:15s",
                 "call=produce_armor_processed",
-                "sleep=duration:5s",
+                "sleep=duration:15s",
                 "call=produce_armor_chain",
-                "sleep=duration:5s",
+                "sleep=duration:15s",
                 "call=produce_armor_advanced",
-                "sleep=duration:5s",
                 "return=skipped"
             }
         },
@@ -77,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs armor_wooden or workers need experience",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:120s",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=armor_wooden:2"
             }
@@ -91,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_advanced and not economy needs armor_processed",
                 "consume=armor cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:120s",
                 "produce=armor_processed:2"
             }
         },
@@ -103,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_processed and not economy needs armor_chain",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_chain",
                 "consume=armor coal iron",
-                "animate=working duration:45s",
+                "animate=working duration:120s",
                 "produce=armor_chain:2"
             }
         },
@@ -115,7 +115,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_processed and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_chain and not economy needs armor_advanced",
                 "consume=armor cloth coal iron",
-                "animate=working duration:45s",
+                "animate=working duration:120s",
                 "produce=armor_advanced:2"
             }
         }

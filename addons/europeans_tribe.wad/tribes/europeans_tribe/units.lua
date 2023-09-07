@@ -313,6 +313,19 @@ wl.Descriptions():new_tribe {
         },
         {
             -- Food 1
+          {
+                name = "water",
+                default_target_quantity = 64,
+                preciousness = 50,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Water, part 1
+                        pgettext("ware", "Water is the essence of life!"),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Water, part 2
+                        pgettext("europeans_ware", "Water is used by the claydigger, by the forester, by all farms, and in the bakery and the brewery. The fish farm and the sheep farm need to be supplied with water, too.")
+                    }
+                }
+            },
             {
                 name = "rye",
                 default_target_quantity = 32,
@@ -340,21 +353,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "flour",
+                name = "barley",
                 default_target_quantity = 32,
-                preciousness = 16,
+                preciousness = 32,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Flour
-                    purpose = pgettext("europeans_ware", "Mixed flour is produced by the mill out of rye and wheat and is needed in the bakery to produce bread.")
-                }
-            },
-            {
-                name = "bread",
-                default_target_quantity = 32,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Bread
-                    purpose = pgettext("europeans_ware", "Bread are produced in a bakery out of water and flour.")
+                    -- TRANSLATORS: Helptext for a Europeans ware: Barley
+                    purpose = pgettext("europeans_ware", "Barley is a slow-growing grain that is used for brewing beer or mead.")
                 }
             },
             {
@@ -363,7 +367,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 24,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Corn
-                    purpose = pgettext("europeans_ware", "Fish farms need to be provided with corn.")
+                    purpose = pgettext("europeans_ware", "Advanced farms need to be provided with corn to feed the farm animals.")
                 }
             },
             {
@@ -372,50 +376,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 24,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Blackroot
-                    purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Sheep farms need to be provided with blackroot.")
-                }
-            },
-            {
-                name = "meat",
-                default_target_quantity = 32,
-                preciousness = 24,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
-                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms.")
-                }
-            },
-            {
-                name = "fish",
-                default_target_quantity = 32,
-                preciousness = 24,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
-                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms.")
-                }
-            }
-        },
-        {
-            -- Food 2
-          {
-                name = "water",
-                default_target_quantity = 64,
-                preciousness = 50,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Water, part 1
-                        pgettext("ware", "Water is the essence of life!"),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Water, part 2
-                        pgettext("europeans_ware", "Water is used by the claydigger, by the forester, by all farms, and in the bakery and the brewery. The fish farm and the sheep farm need to be supplied with water, too.")
-                    }
-                }
-            },
-            {
-                name = "barley",
-                default_target_quantity = 32,
-                preciousness = 32,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Barley
-                    purpose = pgettext("europeans_ware", "Barley is a slow-growing grain that is used for brewing beer or mead.")
+                    purpose = pgettext("europeans_ware", "Blackroots are a special kind of root. Advanced farms need to be provided with blackroot.")
                 }
             },
             {
@@ -444,6 +405,63 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans ware: Grape
                     purpose = pgettext("europeans_ware", "These grapes are the base for a tasty wine. They are harvested in a advanced farm and processed in a winery.")
                 }
+            }
+        },
+        {
+            -- Food 2
+            {
+                name = "flour",
+                default_target_quantity = 32,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Flour
+                    purpose = pgettext("europeans_ware", "Mixed flour is produced by the mill out of rye and wheat and is needed in the bakery to produce bread.")
+                }
+            },
+            {
+                name = "bread",
+                default_target_quantity = 32,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Bread
+                    purpose = pgettext("europeans_ware", "Bread are produced in a bakery out of water and flour. It is offered for sale on the small and big market in exchange for coins.")
+                }
+            },
+            {
+                name = "honey_bread",
+                default_target_quantity = 32,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Honey Bread
+                    purpose = pgettext("europeans_ware", "Honey Bread are produced in a bakery out of water, honey and flour. It is offered for sale on the big market in exchange for coins.")
+                }
+            },
+            {
+                name = "biscuit",
+                default_target_quantity = 32,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Biscuit
+                    purpose = pgettext("europeans_ware", "Biscuits are produced in a bakery out of water, flour, honey and fruits. It is offered for sale on the big market in exchange for coins.")
+                }
+            },
+            {
+                name = "meat",
+                default_target_quantity = 32,
+                preciousness = 24,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
+                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms. It is offered for sale on the small and big market in exchange for coins.")
+                }
+            },
+            {
+                name = "fish",
+                default_target_quantity = 32,
+                preciousness = 24,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
+                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms. It is offered for sale on the big market in exchange for coins.")
+                }
             },
             {
                 name = "beer",
@@ -451,16 +469,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Beer
-                    purpose = pgettext("europeans_ware", "This beer is produced in a brewery out of barley and water. It is consumed in trainingssites and mines.")
-                }
-            },
-            {
-                name = "beer_strong",
-                default_target_quantity = 32,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Beer
-                    purpose = pgettext("europeans_ware", "This strong beer is produced in a brewery out of barley and water. It is consumed in trainingssites and mines.")
+                    purpose = pgettext("europeans_ware", "This beer is produced in a brewery out of barley and water. It is offered for sale on the small and big market in exchange for coins.")
                 }
             },
             {
@@ -469,7 +478,16 @@ wl.Descriptions():new_tribe {
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Mead
-                    purpose = pgettext("europeans_ware", "Mead is produced by breweries. Soldiers drink mead during advanced training. Advanced miners drinking mead, too.")
+                    purpose = pgettext("europeans_ware", "Mead is produced by breweries out of water, barley and honey. It is offered for sale on the big market in exchange for coins.")
+                }
+            },
+            {
+                name = "beer_strong",
+                default_target_quantity = 32,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Beer
+                    purpose = pgettext("europeans_ware", "This strong beer is produced in a brewery out of barley and water. It is offered for sale on the big market in exchange for coins.")
                 }
             },
             {
@@ -478,7 +496,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wine
-                    purpose = pgettext("europeans_ware", "This tasty wine is drunk by soldiers to train in advanced battlearena and by miners in the deepest mines. It is produced in a winery.")
+                    purpose = pgettext("europeans_ware", "It is produced in a winery out of grape and is offered for sale on the big market in exchange for coins.")
                 }
             }
         },

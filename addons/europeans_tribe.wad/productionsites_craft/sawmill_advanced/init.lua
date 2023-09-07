@@ -44,6 +44,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=saw_log",
+                "sleep=duration:20s",
                 "call=hardening_wood",
                 "return=skipped"
             }
@@ -58,10 +59,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has log:2",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:25s",
+                "animate=working duration:10s",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:20s",
+                "animate=working duration:10s",
                 "produce=scrap_wood:2",
                 "produce=planks"
             }
@@ -76,10 +77,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has log:2",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:25s",
+                "animate=working duration:10s",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:20s",
+                "animate=working duration:10s",
                 "produce=scrap_wood:2",
                 "produce=blackwood:2"
             }

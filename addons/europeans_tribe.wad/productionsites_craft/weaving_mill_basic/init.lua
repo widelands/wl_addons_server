@@ -11,13 +11,13 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     animations = {
       idle = {
-         hotspot = { 36, 74 },
+         hotspot = { 27, 56 },
       },
       build = {
-         hotspot = { 36, 74 },
+         hotspot = { 27, 56 },
       },
       working = {
-         hotspot = { 36, 74 },
+         hotspot = { 27, 56 },
       },
     },
     
@@ -61,7 +61,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:30s",
                 "call=produce_armor",
+                "sleep=duration:30s",
                 "call=produce_cloth",
                 "return=skipped"
             }

@@ -53,7 +53,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 6 },
-        { name = "flour", amount = 6 }
+        { name = "flour", amount = 6 },
+        { name = "honey", amount = 4 }
     },
 
     programs = {
@@ -62,6 +63,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_bread",
+                "sleep=duration:30s",
+                "call=produce_honey_bread",
                 "return=skipped"
             }
         },
@@ -77,7 +80,21 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:60s",
                 "produce=bread:2"
             }
-        }
+        },
+        produce_honey_bread = {
+            -- TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
+            descname = pgettext("europeans_building", "Baking honey bread"),
+            actions = {
+                "return=skipped unless economy needs honey_bread or workers need experience",
+                "return=skipped when economy needs water and not economy needs honey_bread",
+                "return=skipped unless site has water:2",
+                "return=skipped unless site has flour:2",
+                "return=skipped unless site has honey",
+                "consume=water:2 flour:2 honey",
+                "animate=working duration:60s",
+                "produce=honey_bread:2"
+            }
+        },
     },
 }
 

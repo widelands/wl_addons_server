@@ -52,7 +52,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:20s",
                 "call=produce_cloth",
+                "sleep=duration:20s",
                 "call=produce_armor",
                 "return=skipped"
             }
@@ -65,7 +67,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:45s",
+                "animate=working duration:40s",
                 "produce=cloth"
             }
         },
@@ -77,7 +79,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has wool",
                 "consume=wool reed",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:45s",
+                "animate=working duration:40s",
                 "produce=armor:2"
             }
         }
