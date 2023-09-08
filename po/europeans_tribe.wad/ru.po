@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-07 03:06+0200\n"
+"POT-Creation-Date: 2023-09-08 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -2190,17 +2190,15 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:78
 #: addons/europeans_tribe.wad/productionsites_food/bakery_normal/init.lua:86
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Baking honey bread"
-msgstr "собирает мед"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:92
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Baking fruit biscuits"
-msgstr "делает лёгкие ботинки"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_food/bakery_basic/init.lua:8
@@ -4305,19 +4303,17 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Corn
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:370
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Advanced farms need to be provided with corn to feed the farm animals."
-msgstr "Рыбные фермы нужно снабжать кукурузой"
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Blackroot
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:379
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Blackroots are a special kind of root. Advanced farms need to be provided "
 "with blackroot."
-msgstr "Козелец - особый корешок. Им подкармливают овец на фермах."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:388
@@ -4380,12 +4376,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:454
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Meat contains a lot of energy, and it is produced in animal farms. It is "
 "offered for sale on the small and big market in exchange for coins."
-msgstr "Мясо содержит много энергии, и его производят на скотных дворах."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fish
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:463
@@ -4398,13 +4393,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:472
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This beer is produced in a brewery out of barley and water. It is offered "
 "for sale on the small and big market in exchange for coins."
 msgstr ""
-"Пиво варят из ячменя и воды. Его любят на тренировочных площадках и в шахтах."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Mead
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:481
@@ -4416,14 +4409,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:490
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This strong beer is produced in a brewery out of barley and water. It is "
 "offered for sale on the big market in exchange for coins."
 msgstr ""
-"Крепкое пиво варят из ячменя и воды. Его пьют шахтеры и солдаты во время "
-"учений."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:499
@@ -6652,10 +6642,9 @@ msgstr "Мёд"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/honey_bread/init.lua:8
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Honey Bread"
-msgstr "Мёд"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/iron/init.lua:8
@@ -7142,20 +7131,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Mead is produced by breweries. Soldiers drink mead during advanced "
-#~ "training. Advanced miners drinking mead, too."
-#~ msgstr ""
-#~ "Медовуху варят на пивоварнях. Ее пьют солдаты на учениях, равно как и "
-#~ "опытные шахтеры."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This tasty wine is drunk by soldiers to train in advanced battlearena and "
-#~ "by miners in the deepest mines. It is produced in a winery."
-#~ msgstr ""
-#~ "Это вкусное вино пьют солдаты, тренирующиеся на продвинутой арене "
-#~ "поединков, и шахтеры в самых глубоких шахтах. Его производят на "
-#~ "винодельне."

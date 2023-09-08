@@ -9,15 +9,16 @@
 # Benedikt Straub <benedikt-straub@web.de>, 2022
 # Markus Göpfert, 2023
 # Stephan Lutz <stephan-lutz@gmx.de>, 2023
+# Iwan Gabovitch, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-07 03:06+0200\n"
+"POT-Creation-Date: 2023-09-08 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
-"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
+"Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -2195,17 +2196,15 @@ msgstr "Das Backen von Brot"
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:78
 #: addons/europeans_tribe.wad/productionsites_food/bakery_normal/init.lua:86
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Baking honey bread"
-msgstr "Das Backen von Brot"
+msgstr "Das Backen von Honigbrot"
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:92
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Baking fruit biscuits"
-msgstr "Das Herstellen flinker Stiefel"
+msgstr "Das Backen von Beerenkeksen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_food/bakery_basic/init.lua:8
@@ -4336,21 +4335,21 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Corn
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:370
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Advanced farms need to be provided with corn to feed the farm animals."
-msgstr "Fischzuchten müssen mit Mais versorgt werden."
+msgstr ""
+"Verbesserte Bauernhöfe müssen mit Mais versorgt werden, um die Nutztiere zu "
+"füttern."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Blackroot
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:379
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Blackroots are a special kind of root. Advanced farms need to be provided "
 "with blackroot."
 msgstr ""
-"Dunkelrüben sind eine besondere Art Wurzeln. Schafzuchten müssen mit "
-"Dunkelrüben versorgt werden."
+"Dunkelrüben sind eine besondere Art von Wurzel. Verbesserte Bauernhöfe "
+"müssen mit Dunkelrüben versorgt werden."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:388
@@ -4399,6 +4398,8 @@ msgid ""
 "Bread are produced in a bakery out of water and flour. It is offered for "
 "sale on the small and big market in exchange for coins."
 msgstr ""
+"Brot wird in Bäckereien aus Wasser und Mehl hergestellt. Es wird auf kleinen "
+"und großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey Bread
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:436
@@ -4407,6 +4408,8 @@ msgid ""
 "Honey Bread are produced in a bakery out of water, honey and flour. It is "
 "offered for sale on the big market in exchange for coins."
 msgstr ""
+"Honigbrot wird in Bäckereien aus Wasser, Honig und Mehl hergestellt. Es wird "
+"auf großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Biscuit
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:445
@@ -4415,38 +4418,40 @@ msgid ""
 "Biscuits are produced in a bakery out of water, flour, honey and fruits. It "
 "is offered for sale on the big market in exchange for coins."
 msgstr ""
+"Kekse werden in Bäckereien aus Wasser, Mehl, Honig und Beeren hergestellt. "
+"Sie werden auf großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:454
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Meat contains a lot of energy, and it is produced in animal farms. It is "
 "offered for sale on the small and big market in exchange for coins."
-msgstr "Fleisch liefert eine Menge Energie und wird in Tierzuchten produziert."
+msgstr ""
+"Fleisch enthält viel Energie und wird in der Tierzucht hergestellt. Es wird "
+"auf kleinen und großen Märkten im Tausch gegen Münzen zum Verkauf angeboten"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fish
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:463
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Fish is one of the biggest food resources of the Europeans, and it is "
 "produced in animal farms. It is offered for sale on the big market in "
 "exchange for coins."
 msgstr ""
-"Fisch ist eine der größten Nahrungsquellen für die Europäer und er wird in "
-"Tierzuchten erzeugt."
+"Fisch ist eine der größten Nahrungsressourcen der Europäer und wird in der "
+"Tierzucht produziert. Er wird auf großen Märkten im Tausch gegen Münzen zum "
+"Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:472
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This beer is produced in a brewery out of barley and water. It is offered "
 "for sale on the small and big market in exchange for coins."
 msgstr ""
-"Dieses Bier wird in Brauereien aus Gerste und Wasser gebraut. Es wird von "
-"Trainingsgebäuden und Minen benötigt."
+"Dieses Bier wird in Brauereien aus Gerste und Wasser hergestellt. Es wird "
+"auf kleinen und großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Mead
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:481
@@ -4455,17 +4460,18 @@ msgid ""
 "Mead is produced by breweries out of water, barley and honey. It is offered "
 "for sale on the big market in exchange for coins."
 msgstr ""
+"Met wird in Brauereien aus Wasser, Gerste und Honig hergestellt. Er wird auf "
+"großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:490
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This strong beer is produced in a brewery out of barley and water. It is "
 "offered for sale on the big market in exchange for coins."
 msgstr ""
-"Dieses Starkbier wird in Brauereien aus Gerste und Wasser gebraut. Es wird "
-"von Trainingsgebäuden und Minen benötigt."
+"Dieses Starkbier wird in Brauereien aus Gerste und Wasser hergestellt. Es "
+"wird auf großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:499
@@ -4474,6 +4480,8 @@ msgid ""
 "It is produced in a winery out of grape and is offered for sale on the big "
 "market in exchange for coins."
 msgstr ""
+"Es wird in einer Weinkellerei aus Weintrauben hergestellt und auf großen "
+"Märkten gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap metal (mixed)
@@ -6536,7 +6544,7 @@ msgstr "Starkbier"
 #: addons/europeans_tribe.wad/tribes/wares/biscuit/init.lua:8
 msgctxt "empire_ware"
 msgid "Biscuit"
-msgstr ""
+msgstr "Keks"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/blackroot/init.lua:8
@@ -6726,10 +6734,9 @@ msgstr "Honig"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/honey_bread/init.lua:8
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Honey Bread"
-msgstr "Brot"
+msgstr "Honigbrot"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/iron/init.lua:8
@@ -7216,24 +7223,3 @@ msgstr "Lehrling"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Geselle"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Bread are produced in a bakery out of water and flour."
-#~ msgstr "Brot wird in der Bäckerei aus Wasser und Mehl gebacken."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Mead is produced by breweries. Soldiers drink mead during advanced "
-#~ "training. Advanced miners drinking mead, too."
-#~ msgstr ""
-#~ "Met wird in Brauereien gebraut. Soldaten drinken Met in der "
-#~ "fortgeschrittenen Ausbildung. Bergwerksmeister trinken auch Met."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This tasty wine is drunk by soldiers to train in advanced battlearena and "
-#~ "by miners in the deepest mines. It is produced in a winery."
-#~ msgstr ""
-#~ "Dieser köstliche Wein wird von Soldaten während Kämpfen in höheren Arenen "
-#~ "und Bergleuten in den tiefsten Mienen getrunken. Er wird in "
-#~ "Weinkellereien hergestellt."

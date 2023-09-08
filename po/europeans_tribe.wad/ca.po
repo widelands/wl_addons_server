@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-07 03:06+0200\n"
+"POT-Creation-Date: 2023-09-08 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -2189,10 +2189,9 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:78
 #: addons/europeans_tribe.wad/productionsites_food/bakery_normal/init.lua:86
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Baking honey bread"
-msgstr "fer mel"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_tribe.wad/productionsites_food/bakery_advanced/init.lua:92
@@ -4295,21 +4294,17 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Corn
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:370
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Advanced farms need to be provided with corn to feed the farm animals."
-msgstr "Les granges de peixos necessiten panís."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Blackroot
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:379
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Blackroots are a special kind of root. Advanced farms need to be provided "
 "with blackroot."
 msgstr ""
-"La negrarrel és un tipus especial d'arrel. Les granges d'ovelles en "
-"necessiten  per alimentar els animals."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:388
@@ -4373,12 +4368,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:454
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Meat contains a lot of energy, and it is produced in animal farms. It is "
 "offered for sale on the small and big market in exchange for coins."
-msgstr "La carn conté molta energia i es produeix en granges d'animals."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fish
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:463
@@ -4391,14 +4385,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:472
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This beer is produced in a brewery out of barley and water. It is offered "
 "for sale on the small and big market in exchange for coins."
 msgstr ""
-"La cervesa es produeix a la cerveseria amb ordi i aigua. Es consumeix als "
-"camps d'entrenament i a les mines."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Mead
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:481
@@ -4410,14 +4401,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:490
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This strong beer is produced in a brewery out of barley and water. It is "
 "offered for sale on the big market in exchange for coins."
 msgstr ""
-"La cervesa negra es produeix a les cerveseries amb ordi i aigua. Es "
-"consumeix als camps d'entrenament i a les mines."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wine
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:499
@@ -6233,7 +6221,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3139
 msgctxt "warehousename"
 msgid "San Marino"
-msgstr ""
+msgstr "San Marino"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3140
 msgctxt "warehousename"
@@ -6628,10 +6616,9 @@ msgstr "Mel"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/honey_bread/init.lua:8
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Honey Bread"
-msgstr "Mel"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/iron/init.lua:8
@@ -7118,20 +7105,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Mead is produced by breweries. Soldiers drink mead during advanced "
-#~ "training. Advanced miners drinking mead, too."
-#~ msgstr ""
-#~ "L'aiguamel es produeix a les cerveseries. Els soldats en beuen quan fan "
-#~ "entrenaments avançats. Els miners avançats també en consumeixen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This tasty wine is drunk by soldiers to train in advanced battlearena and "
-#~ "by miners in the deepest mines. It is produced in a winery."
-#~ msgstr ""
-#~ "Aquest vi saborós el beuen els soldats per entrenar a les palestres "
-#~ "d'entrenament i pels miners de les mines més profundes. Es produeix als "
-#~ "cellers."
