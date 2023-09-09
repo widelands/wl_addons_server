@@ -247,8 +247,8 @@ kaputtnik
 kaputtnik
 1674478722
 95
-0
-0.0
+1
+9.0
 0
 1
 11
@@ -477,7 +477,7 @@ This addon adds my maps ''Java and Sumatra 1.0'', ''Java and Sumatra 1.1'' and '
 Nilpanda
 Nilpanda
 1666688231
-340
+341
 1
 10.0
 0
@@ -675,7 +675,7 @@ Maps for the Naval Tournament 23
 hessenfarmer
 hessenfarmer
 1690230129
-31
+33
 0
 0.0
 0
@@ -900,10 +900,14 @@ Keine Grenzen sind auf dieser Karte gesetzt, ob du ganz im Wald startetest als U
 the-x
 the-x
 1692450525
-6
-0
-0.0
-0
+7
+1
+1.0
+1
+Cupper
+<font bold=true><font size=18>Map Error</font></font>  Editor mistake: Player 8 has no starting point !!
+1
+1694185582
 1
 0
 115911
@@ -1518,7 +1522,7 @@ Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind e
 auktionadmin
 auktionadmin
 1680190966
-122
+123
 0
 0.0
 3
@@ -1851,7 +1855,7 @@ If there is no enemy military building in sight, every new construction site is 
 kaputtnik
 kaputtnik
 1613666291
-129
+131
 1
 9.0
 0
@@ -2369,7 +2373,7 @@ A plugin for the editor to easily replace or swap two terrain types globally.
 Nordfriese
 Nordfriese
 1689789945
-13
+14
 0
 0.0
 0
@@ -2591,10 +2595,10 @@ Adds a new tribe named ‘Europeans’. It uses buildings, workers and some ware
 MarkMcWire
 MarkMcWire
 1621788282
-896
-2
-6.5
+897
 3
+6.6666665
+6
 Nordfriese
 <font bold=true>WARNING</font>: The current version of this add-on may cause Widelands v1.0 to fail to start! Install the <font shadow=1 italic=1 color=ffffff>enhanced_debug_scripts.wad</font> add-on along this one to be safe.
 1.6.1
@@ -2607,6 +2611,18 @@ dreieck
 This tribe misses the "sticky node" animation which makes the game crash if a sticky note is placed. Please add a sticky note animation:    https://github.com/widelands/widelands/issues/5860  
 3.2.9
 1682425239
+Cupper
+<font bold=true>WARNING !!!</font>  Tribe "Europeans" v3.8.4 don't like "Frisians" !!  When in use 2 buildiings doesn't work correctly !  "Charcoal Burner's House"  -- no coal, only air  "Aqua Farm" --  no fish; <font bold=true>please fix it.</font>  So far: "Europeans" Tribe, <font bold=true><font italic=true>I Like it much.  </font></font>
+3.8.4
+1694178583
+MarkMcWire
+Okay, I look at this. But in my Widelands Version 1.2, there seems to be all okay.
+3.8.4
+1694185289
+Cupper
+This is Widelands version (PPA: daily) <font bold=true><font italic=true><font italic=true>1.2~bzr10752-202309040847 Release</font></font></font><br>but there must be newer ones, because e.g. editor-ui-add-ons crash <font italic=true><font bold=true>(WARNING: Add-on 'editor_swap_terrains.wad' requires minimum Widelands version 1.2 from the future.  WARNING: Make sure your development build is up to date!)</font></font>  i don't understand why ????? but that is another prob.
+3.8.4
+1694197932
 3.8.4
 200
 59782476
@@ -14536,7 +14552,7 @@ aDiscoverer
 aDiscoverer
 1667043185
 134
-1
+2
 10.0
 0
 0.1.0
@@ -14821,7 +14837,7 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-231
+232
 0
 0.0
 0
@@ -14894,8 +14910,8 @@ Nordfriese
 Nordfriese
 1600000000
 285
-3
-9.666667
+4
+9.75
 0
 1.0.3
 32
@@ -15104,7 +15120,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-483
+484
 5
 9.6
 0
@@ -15264,7 +15280,7 @@ Nordfriese
 Nordfriese
 1600000000
 477
-2
+3
 10.0
 0
 2.2.2
@@ -16497,8 +16513,8 @@ kaputtnik
 kaputtnik
 1600000000
 187
-2
-9.5
+3
+9.666667
 0
 1.3
 32
@@ -17733,7 +17749,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-205
+206
 0
 0.0
 0
@@ -19581,7 +19597,7 @@ Make the ‘water’ resource more useful by giving wells a larger radius and a 
 Nordfriese
 Nordfriese
 1600000000
-186
+188
 0
 0.0
 0
