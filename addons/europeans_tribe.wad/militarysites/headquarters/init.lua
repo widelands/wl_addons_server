@@ -22,9 +22,9 @@ wl.Descriptions():new_warehouse_type {
     destructible = false,
     
     buildcost = {
-        blackwood = 6,
-        cloth = 6,
-        grout = 6,
+        blackwood = 4,
+        cloth = 4,
+        grout = 4,
         planks = 4,
         brick = 4,
         marble = 4,
@@ -33,8 +33,8 @@ wl.Descriptions():new_warehouse_type {
         diamond = 2
     },
     return_on_dismantle = {
-        scrap_wood = 8,
-        granite = 8,
+        scrap_wood = 6,
+        granite = 6,
         marble = 6,
         quartz = 2,
         diamond = 2

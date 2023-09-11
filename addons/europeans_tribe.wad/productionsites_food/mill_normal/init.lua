@@ -57,9 +57,18 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
                 "sleep=duration:30s",
                 "call=produce_mixed_flour",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for rye and wheat"),
+            actions = {
+                "return=skipped when not economy needs rye and not economy needs wheat",
+                "sleep=duration:5m",
             }
         },
         produce_mixed_flour = {
@@ -68,8 +77,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs flour or workers need experience",
                 "return=skipped when economy needs meat and not economy needs flour",
-                "return=skipped unless site has rye",
-                "return=skipped unless site has wheat",
                 "consume=rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
                 "animate=working duration:30s",

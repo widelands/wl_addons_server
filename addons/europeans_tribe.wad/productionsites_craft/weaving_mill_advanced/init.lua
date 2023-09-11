@@ -52,6 +52,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
                 "sleep=duration:20s",
                 "call=produce_cloth",
                 "sleep=duration:20s",
@@ -59,12 +60,19 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped"
             }
         },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for reed"),
+            actions = {
+                "return=skipped when not economy needs reed",
+                "sleep=duration:5m",
+            }
+        },
         produce_cloth = {
             -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped unless economy needs cloth or workers need experience",
-                "return=skipped unless site has reed",
                 "consume=reed",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:40s",
@@ -76,7 +84,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
                 "return=skipped unless economy needs armor or workers need experience",
-                "return=skipped unless site has wool",
                 "consume=wool reed",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:40s",

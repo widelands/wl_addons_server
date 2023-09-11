@@ -47,8 +47,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 6 },
-        { name = "coal", amount = 6 },
-        { name = "iron", amount = 6 }
+        { name = "iron", amount = 6 },
+        { name = "coal", amount = 6 }
     },
 
     programs = {
@@ -56,6 +56,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
+                "sleep=duration:15s",
                 "call=produce_buckets",
                 "call=produce_basket",
                 "sleep=duration:15s",
@@ -74,6 +76,14 @@ wl.Descriptions():new_productionsite_type {
                 "call=produce_fire_tongs",
                 "call=produce_needles",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            descname = pgettext("europeans_building", "pausing production for planks, iron and coal"),
+            actions = {
+                "return=skipped when not economy needs planks and not economy needs iron and not economy needs coal",
+                "sleep=duration:5m",
             }
         },
         produce_basket = {

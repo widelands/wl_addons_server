@@ -45,8 +45,8 @@ wl.Descriptions():new_productionsite_type {
         { name = "armor", amount = 6 },
         { name = "cloth", amount = 4 },
         { name = "planks", amount = 4 },
-        { name = "coal", amount = 4 },
-        { name = "iron", amount = 4 }
+        { name = "iron", amount = 4 },
+        { name = "coal", amount = 4 }
     },
 
     programs = {
@@ -54,6 +54,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
                 "sleep=duration:20s",
                 "call=produce_armor_wooden",
                 "sleep=duration:20s",
@@ -61,6 +62,14 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:20s",
                 "call=produce_armor_chain",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            descname = pgettext("europeans_building", "pausing production for planks, cloth, armor, iron and coal"),
+            actions = {
+                "return=skipped when not economy needs planks and not economy needs cloth and not economy needs armor and not economy needs iron and not economy needs coal",
+                "sleep=duration:5m",
             }
         },
         produce_armor_wooden = {

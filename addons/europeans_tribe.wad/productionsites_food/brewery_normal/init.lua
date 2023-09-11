@@ -52,11 +52,20 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
                 "sleep=duration:30s",
                 "call=brew_beer",
                 "sleep=duration:30s",
                 "call=brew_mead",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for water and barley"),
+            actions = {
+                "return=skipped when not economy needs water and not economy needs barley",
+                "sleep=duration:5m",
             }
         },
         brew_beer = {
@@ -67,8 +76,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped when site has honey and economy needs mead and not economy needs beer",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs beer",
-                "return=skipped unless site has water",
-                "return=skipped unless site has barley",
                 "consume=water barley",
                 "animate=working duration:60s",
                 "produce=beer"
@@ -82,8 +89,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water and not economy needs mead",
                 "return=skipped when site has barley and economy needs beer and not economy needs mead",
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
-                "return=skipped unless site has water",
-                "return=skipped unless site has barley",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
                 "animate=working duration:60s",

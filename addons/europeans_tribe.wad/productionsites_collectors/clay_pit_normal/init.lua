@@ -64,7 +64,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water:2",
                 "consume=water",
                 "callworker=dig",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "produce=clay"
             }
         },
@@ -75,12 +75,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs clay or economy needs brick",
                 "callworker=check_dig_dry",
                 "callworker=dig_dry",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "return=skipped when economy needs water",
                 "callworker=check_dig",
                 "consume=water",
                 "callworker=dig",
-                "animate=working duration:15s",
+                "animate=working duration:30s",
                 "sleep=duration:120s"
             }
         },

@@ -66,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"mining water",
             actions = {
                 "return=skipped unless economy needs water",
-                "animate=working duration:4s",
+                "animate=working duration:7s",
                 "mine=resource_water radius:12 yield:90% when_empty:90%",
                 "produce=water:6"
             }
@@ -76,7 +76,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs water",
-                "animate=working duration:4s",
+                "animate=working duration:7s",
                 "mine=resource_water radius:12 yield:90% when_empty:90%",
                 "produce=water",
                 "sleep=duration:60s"

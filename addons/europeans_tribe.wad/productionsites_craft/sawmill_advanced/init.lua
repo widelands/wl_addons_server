@@ -43,10 +43,20 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
+                "sleep=duration:20s",
                 "call=saw_log",
                 "sleep=duration:20s",
                 "call=hardening_wood",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for log"),
+            actions = {
+                "return=skipped when not economy needs log",
+                "sleep=duration:5m",
             }
         },
         saw_log = {
@@ -56,14 +66,14 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs planks or economy needs scrap_wood or workers need experience",
                 "return=skipped when economy needs blackwood and not economy needs planks",
                 "return=skipped when economy needs log and not economy needs planks",
-                "return=skipped unless site has log:2",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:10s",
+                "produce=scrap_wood",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
                 "animate=working duration:10s",
-                "produce=scrap_wood:2",
+                "produce=scrap_wood",
                 "produce=planks"
             }
         },
@@ -74,14 +84,14 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs blackwood or economy needs scrap_wood or workers need experience",
                 "return=skipped when economy needs planks and not economy needs blackwood",
                 "return=skipped when economy needs log and not economy needs blackwood",
-                "return=skipped unless site has log:2",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:10s",
+                "produce=scrap_wood",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:10s",
-                "produce=scrap_wood:2",
+                "produce=scrap_wood",
                 "produce=blackwood:2"
             }
         }

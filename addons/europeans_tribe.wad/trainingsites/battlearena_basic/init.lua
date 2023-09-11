@@ -47,13 +47,15 @@ wl.Descriptions():new_trainingsite_type {
             cloth = 3,
             grout = 3,
             marble_column = 1,
-            quartz = 1
+            quartz = 1,
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
             marble = 1,
-            quartz = 1
+            quartz = 1,
+            diamond = 1
         },
     },
     buildcost = {
@@ -61,13 +63,15 @@ wl.Descriptions():new_trainingsite_type {
         reed = 4,
         granite = 4,
         marble_column = 1,
-        quartz = 1
+        quartz = 1,
+        diamond = 1
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 3,
         marble = 1,
-        quartz = 1
+        quartz = 1,
+        diamond = 1
     },
 
     aihints = {

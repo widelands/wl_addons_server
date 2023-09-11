@@ -45,14 +45,24 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
+                "sleep=duration:15s",
                 "call=produce_boots_wooden",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "call=produce_boots_sturdy",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "call=produce_boots_swift",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "call=produce_boots_advanced",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            descname = pgettext("europeans_building", "pausing production for planks, cloth and leather"),
+            actions = {
+                "return=skipped when not economy needs planks and not economy needs cloth and not economy needs leather",
+                "sleep=duration:5m",
             }
         },
         produce_boots_wooden = {

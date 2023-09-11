@@ -79,6 +79,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "callworker=check_space",
+                "return=skipped unless site has water:4",
                 "call=plant_idle",
                 "call=plant_reed",
                 "call=plant_barley",
@@ -121,6 +122,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
             descname = pgettext("europeans_building", "planting barley"),
             actions = {
+                "return=skipped when economy needs reed and not economy needs barley",
+                "return=skipped when economy needs rye and not economy needs barley",
+                "return=skipped when economy needs wheat and not economy needs barley",
                 "return=skipped unless economy needs barley or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
@@ -148,6 +152,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
             descname = pgettext("europeans_building", "planting rye"),
             actions = {
+                "return=skipped when economy needs barley and not economy needs rye",
+                "return=skipped when economy needs reed and not economy needs rye",
+                "return=skipped when economy needs wheat and not economy needs rye",
                 "return=skipped unless economy needs rye or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
@@ -162,6 +169,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
             descname = pgettext("europeans_building", "planting wheat"),
             actions = {
+                "return=skipped when economy needs barley and not economy needs wheat",
+                "return=skipped when economy needs reed and not economy needs wheat",
+                "return=skipped when economy needs rye and not economy needs wheat",
                 "return=skipped unless economy needs wheat or workers need experience",
                 "return=skipped unless site has water:2",
                 "consume=water",
@@ -176,6 +186,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
             descname = pgettext("europeans_building", "harvesting barley"),
             actions = {
+                "return=skipped when economy needs reed and not economy needs barley",
+                "return=skipped when economy needs rye and not economy needs barley",
+                "return=skipped when economy needs wheat and not economy needs barley",
                 "return=skipped unless economy needs barley or workers need experience",
                 "callworker=harvest_barley",
                 "animate=working duration:5s",
@@ -202,6 +215,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
             descname = pgettext("europeans_building", "harvesting rye"),
             actions = {
+                "return=skipped when economy needs barley and not economy needs rye",
+                "return=skipped when economy needs reed and not economy needs rye",
+                "return=skipped when economy needs wheat and not economy needs rye",
                 "return=skipped unless economy needs rye or workers need experience",
                 "callworker=harvest_rye",
                 "animate=working duration:5s",
@@ -215,6 +231,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
             descname = pgettext("europeans_building", "harvesting wheat"),
             actions = {
+                "return=skipped when economy needs barley and not economy needs wheat",
+                "return=skipped when economy needs reed and not economy needs wheat",
+                "return=skipped when economy needs rye and not economy needs wheat",
                 "return=skipped unless economy needs wheat or workers need experience",
                 "callworker=harvest_wheat",
                 "animate=working duration:5s",

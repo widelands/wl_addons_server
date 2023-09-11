@@ -77,32 +77,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
                 "call=recruit_builder",
                 "call=recruit_shipwright",
-                "call=recruit_carrier_idle",
                 "return=skipped"
-            }
-        },
-        recruit_carrier_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs europeans_builder or economy needs europeans_geologist or economy needs europeans_carrier_1 or economy needs europeans_worker_advanced",
-                "return=skipped when economy needs europeans_farmer_advanced or economy needs europeans_lumberjack_advanced or economy needs europeans_forester_advanced ",
-                "return=skipped when economy needs europeans_stonecutter_advanced or economy needs europeans_claydigger_advanced or economy needs europeans_miner_advanced",
-                "return=skipped when economy needs europeans_beekeeper_advanced or europeans_shipwright_advanced or economy needs europeans_terraformer_advanced or economy needs europeans_scout_advanced",                "return=skipped when economy needs basket",
-                "return=skipped when economy needs iron",
-                "return=skipped when economy needs gold",
-                "sleep=duration:180s",
-                "consume=europeans_carrier",
-                "animate=working duration:180s",
-                "recruit=europeans_carrier_1",
-                "sleep=duration:15s",
-                "consume=europeans_carrier basket",
-                "animate=working duration:180s",
-                "recruit=europeans_carrier_2",
-                "sleep=duration:15s",
-                "consume=europeans_carrier basket",
-                "animate=working duration:180s",
-                "recruit=europeans_carrier_3"
             }
         },
         recruit_carrier_1 = {

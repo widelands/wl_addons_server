@@ -48,8 +48,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coal", amount = 4 },
-        { name = "ore", amount = 4 }
+        { name = "coal", amount = 6 },
+        { name = "ore", amount = 6 }
     },
 
     programs = {
@@ -57,11 +57,20 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
                 "sleep=duration:30s",
                 "call=smelt_iron",
                 "sleep=duration:30s",
                 "call=smelt_gold",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for ore and coal"),
+            actions = {
+                "return=skipped when not economy needs ore and not economy needs coal",
+                "sleep=duration:5m",
             }
         },
         smelt_gold = {
@@ -70,13 +79,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs gold or workers need experience",
                 "return=skipped when economy needs iron and not economy needs gold",
-                "return=skipped unless site has coal:2",
-                "return=skipped unless site has ore:2",
-                "consume=ore:2 coal:2",
+                "consume=ore:3 coal:3",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:120s",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=gold"
+                "produce=gold:2"
             }
         },
         smelt_iron = {
@@ -85,13 +92,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs iron or workers need experience",
                 "return=skipped when economy needs gold and not economy needs iron",
-                "return=skipped unless site has coal:2",
-                "return=skipped unless site has ore:2",
-                "consume=ore:2 coal:2",
+                "consume=ore:3 coal:3",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:120s",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=iron:2"
+                "produce=iron:3"
             }
         }
     },

@@ -24,19 +24,16 @@ wl.Descriptions():new_productionsite_type {
     destructible = true,
     
     buildcost = {
-        blackwood = 4,
         planks = 4,
-        cloth = 4,
         brick = 4,
-        grout = 4,
         marble = 4,
         marble_column = 1,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 8,
-        granite = 6,
+        scrap_wood = 4,
+        granite = 4,
         marble = 5,
         quartz = 1,
         diamond = 1
@@ -76,6 +73,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "call=pausing_production",
+                "sleep=duration:10s",
                 "call=trade_bread",
                 "call=trade_bread_copper",
                 "call=trade_bread_silver",
@@ -110,6 +109,14 @@ wl.Descriptions():new_productionsite_type {
                 "call=trade_wine_copper",
                 "call=trade_wine_silver",
                 "call=trade_wine_gold",
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for planks and gold"),
+            actions = {
+                "return=skipped when not economy needs planks and not economy needs gold",
+                "sleep=duration:5m",
             }
         },
         trade_beer = {

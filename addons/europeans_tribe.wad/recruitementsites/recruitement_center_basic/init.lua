@@ -28,11 +28,15 @@ wl.Descriptions():new_productionsite_type {
             blackwood = 3,
             cloth = 3,
             grout = 3,
-            quartz = 1
+            marble_column = 1,
+            quartz = 1,
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
-            quartz = 1
+            marble = 1,
+            quartz = 1,
+            diamond = 1
         }
     },
     buildcost = {
@@ -96,22 +100,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
                 "call=recruit_builder",
                 "call=recruit_shipwright",
-                "call=recruit_carrier_idle",
                 "return=skipped"
-            }
-        },
-        recruit_carrier_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs europeans_builder or economy needs europeans_geologist or economy needs europeans_carrier_1 or economy needs europeans_worker_advanced",
-                "return=skipped when economy needs europeans_farmer_advanced or economy needs europeans_lumberjack_advanced or economy needs europeans_forester_advanced ",
-                "return=skipped when economy needs europeans_stonecutter_advanced or economy needs europeans_claydigger_advanced or economy needs europeans_miner_advanced",
-                "return=skipped when economy needs europeans_beekeeper_advanced or europeans_shipwright_advanced or economy needs europeans_terraformer_advanced or economy needs europeans_scout_advanced",
-                "sleep=duration:180s",
-                "consume=europeans_carrier",
-                "animate=working duration:180s",
-                "recruit=europeans_carrier_1"
             }
         },
         recruit_carrier_1 = {

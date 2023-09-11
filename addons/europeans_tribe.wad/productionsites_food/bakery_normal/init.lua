@@ -62,10 +62,20 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
+                "sleep=duration:20s",
                 "call=produce_bread",
-                "sleep=duration:30s",
+                "sleep=duration:20s",
                 "call=produce_honey_bread",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for water and flour"),
+            actions = {
+                "return=skipped when not economy needs water and not economy needs flour",
+                "sleep=duration:5m",
             }
         },
         produce_bread = {
@@ -74,10 +84,8 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs bread or workers need experience",
                 "return=skipped when economy needs water and not economy needs bread",
-                "return=skipped unless site has water:2",
-                "return=skipped unless site has flour:2",
                 "consume=water:2 flour:2",
-                "animate=working duration:60s",
+                "animate=working duration:90s",
                 "produce=bread:2"
             }
         },
@@ -87,11 +95,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs honey_bread or workers need experience",
                 "return=skipped when economy needs water and not economy needs honey_bread",
-                "return=skipped unless site has water:2",
-                "return=skipped unless site has flour:2",
                 "return=skipped unless site has honey",
                 "consume=water:2 flour:2 honey",
-                "animate=working duration:60s",
+                "animate=working duration:90s",
                 "produce=honey_bread:2"
             }
         },

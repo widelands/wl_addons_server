@@ -25,11 +25,8 @@ wl.Descriptions():new_productionsite_type {
     
     buildcost = {
         blackwood = 2,
-        planks = 2,
         cloth = 2,
-        brick = 2,
         grout = 2,
-        marble = 2,
         marble_column = 1,
         quartz = 1,
         diamond = 1
@@ -71,17 +68,27 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "call=pausing_production",
+                "sleep=duration:15s",
                 "call=trade_bread",
                 "call=trade_bread_copper",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "call=trade_meat",
                 "call=trade_meat_copper",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "call=trade_beer",
                 "call=trade_beer_copper",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "call=trade_honey",
                 "call=trade_honey_copper",
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for planks and gold"),
+            actions = {
+                "return=skipped when not economy needs planks and not economy needs gold",
+                "sleep=duration:5m",
             }
         },
         trade_beer = {

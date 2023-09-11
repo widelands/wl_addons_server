@@ -49,8 +49,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 6 },
-        { name = "coal", amount = 6 },
-        { name = "iron", amount = 6 }
+        { name = "iron", amount = 6 },
+        { name = "coal", amount = 6 }
     },
 
     programs = {
@@ -58,6 +58,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
+                "sleep=duration:5s",
+                "call=pausing_production_tools",
+                "sleep=duration:5s",
                 "call=produce_helmet_wooden",
                 "sleep=duration:10s",
                 "call=produce_spear_wooden",
@@ -74,6 +78,22 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "call=produce_sword_broad",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            descname = pgettext("europeans_building", "pausing production for planks, iron and coal"),
+            actions = {
+                "return=skipped when not economy needs planks and not economy needs iron and not economy needs coal",
+                "sleep=duration:5m",
+            }
+        },
+        pausing_production_tools = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            descname = pgettext("europeans_building", "pausing production for tools"),
+            actions = {
+                "return=skipped when not economy needs basket and not economy needs buckets and not economy needs felling_ax and not economy needs felling_ax and not economy needs fire_tongs and not economy needs hammer and not economy needs needles and not economy needs pick and not economy needs saw and not economy needs scythe and not economy needs shovel",
+                "sleep=duration:5m",
             }
         },
         produce_helmet_wooden = {

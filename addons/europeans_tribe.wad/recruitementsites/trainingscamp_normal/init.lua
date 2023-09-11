@@ -37,12 +37,14 @@ wl.Descriptions():new_productionsite_type {
             brick = 3,
             marble = 3,
             marble_column = 1,
+            quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
             marble = 4,
+            quartz = 1,
             diamond = 1
         },
     },

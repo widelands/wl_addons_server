@@ -80,7 +80,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining water"),
             actions = {
                 "return=skipped unless economy needs water or workers need experience",
-                "animate=working duration:12s",
+                "animate=working duration:15s",
                 "mine=resource_water radius:3 yield:50% when_empty:50%",
                 "produce=water:2"
             }
@@ -90,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs water",
-                "animate=working duration:12s",
+                "animate=working duration:15s",
                 "mine=resource_water radius:3 yield:50% when_empty:50%",
                 "produce=water",
                 "sleep=duration:60s"

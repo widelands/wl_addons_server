@@ -60,9 +60,18 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
                 "sleep=duration:30s",
                 "call=mixing_grout",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for granite, water and coal"),
+            actions = {
+                "return=skipped when not economy needs granite and not economy needs water and not economy needs coal",
+                "sleep=duration:5m",
             }
         },
         mixing_grout = {
@@ -73,9 +82,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water and not economy needs grout",
                 "return=skipped when economy needs coal and not economy needs grout",
                 "return=skipped when economy needs granite",
-                "return=skipped unless site has coal:2",
-                "return=skipped unless site has granite:3",
-                "return=skipped unless site has water:3",
                 "consume=coal:2 granite:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
                 "animate=working duration:90s",

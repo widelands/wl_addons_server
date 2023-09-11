@@ -25,11 +25,15 @@ wl.Descriptions():new_productionsite_type {
             blackwood = 2,
             cloth = 2,
             grout = 2,
-            quartz = 1
+            marble_column = 1,
+            quartz = 1,
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
-            quartz = 1
+            marble = 1,
+            quartz = 1,
+            diamond = 1
         },
     },
     buildcost = {

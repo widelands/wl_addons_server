@@ -76,7 +76,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=making_pond_idle",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "callworker=check_dig",
                 "call=digging_clay",
                 "return=skipped"
@@ -90,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "consume=water",
                 "callworker=dig",
-                "animate=working duration:20s",
+                "animate=working duration:40s",
                 "produce=clay"
             }
         },
@@ -101,12 +101,12 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs clay or economy needs brick",
                 "callworker=check_dig_dry",
                 "callworker=dig_dry",
-                "animate=working duration:20s",
+                "animate=working duration:40s",
                 "return=skipped when economy needs water",
                 "callworker=check_dig",
                 "consume=water",
                 "callworker=dig",
-                "animate=working duration:20s",
+                "animate=working duration:40s",
                 "sleep=duration:120s"
             }
         },
