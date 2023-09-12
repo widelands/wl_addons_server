@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-11 03:06+0200\n"
+"POT-Creation-Date: 2023-09-12 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -32,6 +32,9 @@ msgid ""
 "wares from other tribes, until own graphics are available. (Not compatible "
 "with Version 3.7.9 or earlier.)"
 msgstr ""
+"Afegeix una cultura nova, anomenada «europeus». Fa servir edificis, "
+"treballadors i alguns béns de les altres tribus, fins que es disposi de "
+"gràfics propis. No és compatible amb la versió 3.7.9 o anterior."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/barleyfield/harvested/init.lua:8
@@ -535,7 +538,7 @@ msgstr "Els soldats han vençut l'enemic al castell avançat."
 #: addons/europeans_tribe.wad/militarysites/advanced_sentry/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Sentry"
-msgstr ""
+msgstr "Guarda sentinella avançada"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/militarysites/advanced_sentry/init.lua:34
@@ -907,13 +910,13 @@ msgstr "Els soldats han vençut l'enemic a la torre petita."
 #: addons/europeans_tribe.wad/militarysites/warehouse/init.lua:8
 msgctxt "europeans_building"
 msgid "Warehouse"
-msgstr ""
+msgstr "Magatzem"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Animal Farm"
-msgstr ""
+msgstr "Granja d'animals avançada"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_advanced/init.lua:61
@@ -1074,7 +1077,7 @@ msgstr "produir carn"
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_normal/init.lua:144
 msgctxt "europeans_building"
 msgid "producing meat and leather"
-msgstr ""
+msgstr "produir carn i pell"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fish because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_advanced/init.lua:186
@@ -1094,7 +1097,7 @@ msgstr "Granja d'animals bàsica"
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_big/init.lua:8
 msgctxt "europeans_building"
 msgid "Big Animal Farm"
-msgstr ""
+msgstr "Granja d'animals gran"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_big/init.lua:139
@@ -1106,7 +1109,7 @@ msgstr "criar cavalls"
 #: addons/europeans_tribe.wad/productionsites_agricultur/animal_farm_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Animal Farm"
-msgstr ""
+msgstr "Granja d'animals normal"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:8
@@ -1164,7 +1167,7 @@ msgstr "Casa de l'apicultor normal"
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_big_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Farm"
-msgstr ""
+msgstr "Granja avançada"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_big_advanced/init.lua:104
@@ -1312,7 +1315,7 @@ msgstr "Granja bàsica"
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_big_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Farm"
-msgstr ""
+msgstr "Granja normal"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
 #: addons/europeans_tribe.wad/productionsites_agricultur/farm_big_normal/init.lua:125
@@ -2362,10 +2365,9 @@ msgstr "Molí avançat"
 #: addons/europeans_tribe.wad/productionsites_food/mill_advanced/init.lua:67
 #: addons/europeans_tribe.wad/productionsites_food/mill_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionsites_food/mill_normal/init.lua:68
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for rye and wheat"
-msgstr "moldre sègol i blat"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
 #: addons/europeans_tribe.wad/productionsites_food/mill_advanced/init.lua:75
@@ -2737,7 +2739,7 @@ msgstr "Pou gran"
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:8
 msgctxt "europeans_building"
 msgid "Big Market"
-msgstr ""
+msgstr "Mercat gran"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:74
@@ -2822,7 +2824,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:8
 msgctxt "europeans_building"
 msgid "Small Market"
-msgstr ""
+msgstr "Mercat petit"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_trading/scouts_house_advanced/init.lua:8
@@ -3247,7 +3249,7 @@ msgstr "No s'ha trobat cap soldat per entrenar aquest nivell."
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Battle Arena"
-msgstr ""
+msgstr "Palestra d'entrenament normal"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_1/init.lua:101
@@ -3285,7 +3287,7 @@ msgstr "promoure l'evasió del soldat de nivell 1 a nivell 2"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Battle Arena"
-msgstr ""
+msgstr "Palestra d'entrenament avançada"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_2/init.lua:113
@@ -3344,31 +3346,31 @@ msgstr "Vaixell"
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:117
 msgctxt "shipname"
 msgid "Amsterdam"
-msgstr ""
+msgstr "Amsterdam"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:119
 msgctxt "shipname"
 msgid "Andorra la Vella"
-msgstr ""
+msgstr "Andorra la Vella"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:121
 msgctxt "shipname"
 msgid "Antwerpen"
-msgstr ""
+msgstr "Antwerpen"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:123
 msgctxt "shipname"
 msgid "Astrachan"
-msgstr ""
+msgstr "Astrachan"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:125
 msgctxt "shipname"
 msgid "Athen"
-msgstr ""
+msgstr "Atenes"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:127
@@ -3392,19 +3394,19 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:133
 msgctxt "shipname"
 msgid "Berlin"
-msgstr ""
+msgstr "Berlin"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:135
 msgctxt "shipname"
 msgid "Bern"
-msgstr ""
+msgstr "Bern"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:137
 msgctxt "shipname"
 msgid "Birmingham"
-msgstr ""
+msgstr "Birmingham"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:139
@@ -3692,31 +3694,31 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:233
 msgctxt "shipname"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:235
 msgctxt "shipname"
 msgid "Málaga"
-msgstr ""
+msgstr "Màlaga"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:237
 msgctxt "shipname"
 msgid "Manchester"
-msgstr ""
+msgstr "Manchester"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:239
 msgctxt "shipname"
 msgid "Marseille"
-msgstr ""
+msgstr "Marsella"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:241
 msgctxt "shipname"
 msgid "Milano"
-msgstr ""
+msgstr "Milà"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:243
@@ -3752,7 +3754,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:253
 msgctxt "shipname"
 msgid "Napoli"
-msgstr ""
+msgstr "Nàpols"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:255
@@ -3788,7 +3790,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:265
 msgctxt "shipname"
 msgid "Oslo"
-msgstr ""
+msgstr "Oslo"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:267
@@ -3800,7 +3802,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:269
 msgctxt "shipname"
 msgid "Paris"
-msgstr ""
+msgstr "París"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:271
@@ -3860,7 +3862,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:289
 msgctxt "shipname"
 msgid "Roma"
-msgstr ""
+msgstr "Roma"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:291
@@ -3872,13 +3874,13 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:293
 msgctxt "shipname"
 msgid "Rotterdam"
-msgstr ""
+msgstr "Rotterdam"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:295
 msgctxt "shipname"
 msgid "San Marino"
-msgstr ""
+msgstr "San Marino"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:297
@@ -3914,7 +3916,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:307
 msgctxt "shipname"
 msgid "Sevilla"
-msgstr ""
+msgstr "Sevilla"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:309
@@ -3932,7 +3934,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:313
 msgctxt "shipname"
 msgid "Sofia"
-msgstr ""
+msgstr "Sofia"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:315
@@ -3968,7 +3970,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:325
 msgctxt "shipname"
 msgid "Torino"
-msgstr ""
+msgstr "Torí"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:327
@@ -3992,7 +3994,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:333
 msgctxt "shipname"
 msgid "Valencia"
-msgstr ""
+msgstr "València"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:335
@@ -4046,7 +4048,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:351
 msgctxt "shipname"
 msgid "Zaragoza"
-msgstr ""
+msgstr "Saragossa"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental Europeans tribe."
@@ -6032,7 +6034,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3091
 msgctxt "warehousename"
 msgid "Albania"
-msgstr ""
+msgstr "Albània"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3092
 msgctxt "warehousename"
@@ -6042,12 +6044,12 @@ msgstr "Andorra"
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3093
 msgctxt "warehousename"
 msgid "Armenia"
-msgstr ""
+msgstr "Armènia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3094
 msgctxt "warehousename"
 msgid "Austria"
-msgstr ""
+msgstr "Àustria"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3095
 msgctxt "warehousename"
@@ -6062,27 +6064,27 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3097
 msgctxt "warehousename"
 msgid "Belgium"
-msgstr ""
+msgstr "Bèlgica"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3098
 msgctxt "warehousename"
 msgid "Bosnia"
-msgstr ""
+msgstr "Bòsnia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3099
 msgctxt "warehousename"
 msgid "Bulgaria"
-msgstr ""
+msgstr "Bulgària"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3100
 msgctxt "warehousename"
 msgid "Corsica"
-msgstr ""
+msgstr "Còrsega"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3101
 msgctxt "warehousename"
 msgid "Croatia"
-msgstr ""
+msgstr "Croàcia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3102
 msgctxt "warehousename"
@@ -6107,7 +6109,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3106
 msgctxt "warehousename"
 msgid "Estonia"
-msgstr ""
+msgstr "Estònia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3107
 msgctxt "warehousename"
@@ -6137,12 +6139,12 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3112
 msgctxt "warehousename"
 msgid "Gibraltar"
-msgstr ""
+msgstr "Gibraltar"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3113
 msgctxt "warehousename"
 msgid "Greece"
-msgstr ""
+msgstr "Grècia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3114
 msgctxt "warehousename"
@@ -6162,7 +6164,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3117
 msgctxt "warehousename"
 msgid "Iceland"
-msgstr ""
+msgstr "Islàndia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3118
 msgctxt "warehousename"
@@ -6172,12 +6174,12 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3119
 msgctxt "warehousename"
 msgid "Ireland"
-msgstr ""
+msgstr "Irlanda"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3120
 msgctxt "warehousename"
 msgid "Italy"
-msgstr ""
+msgstr "Itàlia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3121
 msgctxt "warehousename"
@@ -6217,7 +6219,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3128
 msgctxt "warehousename"
 msgid "Malta"
-msgstr ""
+msgstr "Malta"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3129
 msgctxt "warehousename"
@@ -6247,17 +6249,17 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3134
 msgctxt "warehousename"
 msgid "Norway"
-msgstr ""
+msgstr "Noruega"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3135
 msgctxt "warehousename"
 msgid "Poland"
-msgstr ""
+msgstr "Polònia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3136
 msgctxt "warehousename"
 msgid "Portugal"
-msgstr ""
+msgstr "Portugal"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3137
 msgctxt "warehousename"
@@ -6267,7 +6269,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3138
 msgctxt "warehousename"
 msgid "Russia"
-msgstr ""
+msgstr "Rússia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3139
 msgctxt "warehousename"
@@ -6287,7 +6289,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3142
 msgctxt "warehousename"
 msgid "Serbia"
-msgstr ""
+msgstr "Sèrbia"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3143
 msgctxt "warehousename"
@@ -6302,7 +6304,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3145
 msgctxt "warehousename"
 msgid "Spain"
-msgstr ""
+msgstr "Espanya"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:3146
 msgctxt "warehousename"
@@ -7156,15 +7158,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgid "Struggling Outpost"
-#~ msgstr "Post de mercaderies en dificultats"
-
-#~ msgid "Advanced Village"
-#~ msgstr "Vila avançada"
-
-#~ msgid "Basic Village"
-#~ msgstr "Vila bàsica"
-
-#~ msgid "Normal Village"
-#~ msgstr "Vila normal"

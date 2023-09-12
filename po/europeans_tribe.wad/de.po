@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-11 03:06+0200\n"
+"POT-Creation-Date: 2023-09-12 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -1808,10 +1808,9 @@ msgstr "Verbessertes Schuhmacherhaus"
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:62
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:86
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:72
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for planks, cloth and leather"
-msgstr "Die Herstellung von Fleisch und Leder"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:70
@@ -2370,10 +2369,9 @@ msgstr "Verbesserte Mühle"
 #: addons/europeans_tribe.wad/productionsites_food/mill_advanced/init.lua:67
 #: addons/europeans_tribe.wad/productionsites_food/mill_basic/init.lua:71
 #: addons/europeans_tribe.wad/productionsites_food/mill_normal/init.lua:68
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for rye and wheat"
-msgstr "Das Mahlen von Roggen und Weizen"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
 #: addons/europeans_tribe.wad/productionsites_food/mill_advanced/init.lua:75
@@ -7262,53 +7260,3 @@ msgstr "Lehrling"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Geselle"
-
-#~ msgid "Struggling Outpost"
-#~ msgstr "Mühsamer Vorposten"
-
-#~ msgid ""
-#~ "Start the game with just your headquarters and very few wares for "
-#~ "bootstrapping an economy. Warning: the AI can’t successfully start from "
-#~ "this. Disabled seafaring because of lack of compatibility with "
-#~ "terraforming (diking of water bodies)."
-#~ msgstr ""
-#~ "Am Anfang des Spieles stehen nur ein Hauptquartier und sehr wenige Waren "
-#~ "für den Aufbau einer Wirtschaft bereit. Warnung: Die KI kann damit nicht "
-#~ "erfolgreich starten. Die Seefahrt wurde deaktiviert, aufgrund fehlender "
-#~ "Kompatibilität mit dem Terraforming (Eindeichen von Wasserfeldern)."
-
-#~ msgid "Advanced Village"
-#~ msgstr "Fortgeschrittenes Dorf"
-
-#~ msgid ""
-#~ "Start the game with a fortified village with advanced castle in its "
-#~ "center. Disabled seafaring because of lack of compatibility with "
-#~ "terraforming (diking of water bodies)."
-#~ msgstr ""
-#~ "Beginne das Spiel mit einem befestigten Dorf mit einer fortgeschrittenen "
-#~ "Festung in der Mitte. Die Seefahrt wurde deaktiviert, aufgrund fehlender "
-#~ "Kompatibilität mit dem Terraforming (Eindeichen von Wasserfeldern)."
-
-#~ msgid "Basic Village"
-#~ msgstr "Einfaches Dorf"
-
-#~ msgid ""
-#~ "Start the game with a small, peaceful village with only basic buildings. "
-#~ "Disabled seafaring because of lack of compatibility with terraforming "
-#~ "(diking of water bodies)."
-#~ msgstr ""
-#~ "Beginne das Spiel mit einem kleinen friedlichen Dorf mit nur einfachen "
-#~ "Gebäuden. Die Seefahrt wurde deaktiviert, aufgrund fehlender "
-#~ "Kompatibilität mit dem Terraforming (Eindeichen von Wasserfeldern)."
-
-#~ msgid "Normal Village"
-#~ msgstr "Normales Dorf"
-
-#~ msgid ""
-#~ "Start the game with a village with some normal buildings. Disabled "
-#~ "seafaring because of lack of compatibility with terraforming (diking of "
-#~ "water bodies)."
-#~ msgstr ""
-#~ "Beginne das Spiel mit einem Dorf mit nur normalen Gebäuden. Die Seefahrt "
-#~ "wurde deaktiviert, aufgrund fehlender Kompatibilität mit dem Terraforming "
-#~ "(Eindeichen von Wasserfeldern)."
