@@ -68,8 +68,18 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
+                "sleep=duration:30s",
                 "call=burn_wood",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for wood"),
+            actions = {
+                "return=skipped when site has scrap_wood:4",
+                "sleep=duration:5m",
             }
         },
         burn_wood = {
@@ -77,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "producing coal"),
             actions = {
                 "return=skipped unless economy needs coal or workers need experience",
-                "return=skipped unless site has scrap_wood:3",
+                "return=skipped unless site has scrap_wood:4",
                 "consume=scrap_wood:4",
                 "animate=working duration:120s",
                 "produce=coal:2"

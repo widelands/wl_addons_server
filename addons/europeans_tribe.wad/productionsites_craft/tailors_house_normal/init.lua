@@ -45,8 +45,8 @@ wl.Descriptions():new_productionsite_type {
         { name = "armor", amount = 6 },
         { name = "cloth", amount = 4 },
         { name = "planks", amount = 4 },
-        { name = "iron", amount = 4 },
-        { name = "coal", amount = 4 }
+        { name = "iron", amount = 2 },
+        { name = "coal", amount = 2 }
     },
 
     programs = {
@@ -65,10 +65,10 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         pausing_production = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for planks, cloth, armor, iron and coal"),
             actions = {
-                "return=skipped when not economy needs planks and not economy needs cloth and not economy needs armor and not economy needs iron and not economy needs coal",
+                "return=skipped when site has planks:2 and site has cloth:2 and site has armor:3 and site has iron and site has coal",
                 "sleep=duration:5m",
             }
         },

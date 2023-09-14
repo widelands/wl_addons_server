@@ -46,14 +46,12 @@ wl.Descriptions():new_trainingsite_type {
             blackwood = 3,
             cloth = 3,
             grout = 3,
-            marble_column = 1,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
-            marble = 1,
             quartz = 1,
             diamond = 1
         },
@@ -62,14 +60,12 @@ wl.Descriptions():new_trainingsite_type {
         log = 4,
         reed = 4,
         granite = 4,
-        marble_column = 1,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 3,
-        marble = 1,
         quartz = 1,
         diamond = 1
     },

@@ -47,16 +47,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
-                "sleep=duration:15s",
-                "call=brew_beer",
-                "sleep=duration:15s",
-                "call=brew_mead",
-                "sleep=duration:15s",
-                "call=brew_strong_beer",
-                "sleep=duration:15s",
                 "call=making_wine",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
+                "call=brew_strong_beer",
+                "sleep=duration:20s",
+                "call=brew_mead",
+                "sleep=duration:20s",
+                "call=brew_beer",
                 "return=skipped"
             }
         },
@@ -64,7 +61,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for water and barley"),
             actions = {
-                "return=skipped when not economy needs water and not economy needs barley",
+                "return=skipped when site has water:4 and site has barley:4",
                 "sleep=duration:5m",
             }
         },

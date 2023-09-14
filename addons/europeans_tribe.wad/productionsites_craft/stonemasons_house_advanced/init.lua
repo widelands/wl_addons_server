@@ -35,8 +35,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
+        { name = "marble", amount = 8 },
         { name = "granite", amount = 6 },
-        { name = "marble", amount = 6 },
         { name = "clay", amount = 6 },
         { name = "water", amount = 6 },
         { name = "coal", amount = 4 }
@@ -61,7 +61,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for granite, water and coal"),
             actions = {
-                "return=skipped when not economy needs granite and not economy needs water and not economy needs coal",
+                "return=skipped when site has granite:3 and site has water:3 and site has coal:2",
+                "return=skipped when site has granite and site has clay:3 and site has coal:2",
+                "return=skipped when site has marble:6",
                 "sleep=duration:5m",
             }
         },

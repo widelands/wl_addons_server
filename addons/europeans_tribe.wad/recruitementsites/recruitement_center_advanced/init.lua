@@ -54,6 +54,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
+                "sleep=duration:20s",
                 "call=recruit_farmer",
                 "call=recruit_lumberjack",
                 "call=recruit_forester",
@@ -75,9 +77,18 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_carrier_2",
                 "call=recruit_carrier_3",
                 "sleep=duration:30s",
+                "call=recruit_worker",
                 "call=recruit_builder",
                 "call=recruit_shipwright",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            descname = pgettext("europeans_building", "pausing production because lack of tools"),
+            actions = {
+                "return=skipped when site has basket and site has buckets and site has felling_ax and site has scythe and site has shovel and site has pick and site has hammer and site has saw and site has fire_tongs and site has needles",
+                "sleep=duration:10m",
             }
         },
         recruit_carrier_1 = {
@@ -118,7 +129,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_builder",
                 "return=skipped when economy needs europeans_worker_advanced",
-                "return=skipped when economy needs hammer and economy needs saw",
                 "consume=europeans_carrier",
                 "consume=hammer saw",
                 "animate=working duration:180s",
@@ -130,7 +140,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting beekeeper"),
             actions = {
                 "return=skipped unless economy needs europeans_beekeeper_advanced",
-                "return=skipped when economy needs buckets",
                 "consume=europeans_carrier",
                 "consume=buckets",
                 "animate=working duration:180s",
@@ -142,7 +151,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting claydigger"),
             actions = {
                 "return=skipped unless economy needs europeans_claydigger_advanced",
-                "return=skipped when economy needs buckets or economy needs shovel",
                 "consume=europeans_carrier",
                 "consume=shovel buckets",
                 "animate=working duration:180s",
@@ -155,7 +163,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_farmer_advanced",
                 "return=skipped unless economy needs reed or economy needs barley or economy needs rye or economy needs wheat or economy needs corn or economy needs blackroot or economy needs fruit or economy needs grape",
-                "return=skipped when economy needs basket or economy needs scythe",
                 "consume=europeans_carrier",
                 "consume=scythe basket",
                 "animate=working duration:180s",
@@ -167,7 +174,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting forester"),
             actions = {
                 "return=skipped unless economy needs europeans_forester_advanced",
-                "return=skipped when economy needs buckets or economy needs shovel",
                 "consume=europeans_carrier",
                 "consume=shovel buckets",
                 "animate=working duration:180s",
@@ -180,7 +186,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_geologist",
                 "return=skipped when economy needs europeans_worker_advanced",
-                "return=skipped when economy needs hammer or economy needs pick",
                 "consume=europeans_carrier",
                 "consume=hammer pick",
                 "animate=working duration:180s",
@@ -192,7 +197,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting lumberjack"),
             actions = {
                 "return=skipped unless economy needs europeans_lumberjack_advanced",
-                "return=skipped when economy needs felling_ax or economy needs saw",
                 "consume=europeans_carrier",
                 "consume=felling_ax saw",
                 "animate=working duration:180s",
@@ -204,7 +208,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting miner"),
             actions = {
                 "return=skipped unless economy needs europeans_miner_advanced",
-                "return=skipped when economy needs buckets or economy needs shovel or economy needs pick",
                 "consume=europeans_carrier",
                 "consume=pick shovel buckets",
                 "animate=working duration:180s",
@@ -237,7 +240,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_shipwright_advanced",
                 "return=skipped when economy needs europeans_worker_advanced",
-                "return=skipped when economy needs hammer or economy needs saw",
                 "consume=europeans_carrier",
                 "consume=hammer saw",
                 "animate=working duration:180s",
@@ -249,7 +251,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting stonecutter"),
             actions = {
                 "return=skipped unless economy needs europeans_stonecutter_advanced",
-                "return=skipped when economy needs buckets or economy needs pick",
                 "consume=europeans_carrier",
                 "consume=pick buckets",
                 "animate=working duration:180s",
@@ -284,10 +285,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting general worker"),
             actions = {
                 "return=skipped unless economy needs europeans_worker_advanced",
-                "return=skipped when not site has hammer",
-                "return=skipped when not site has saw",
-                "return=skipped when not site has fire_tongs",
-                "return=skipped when not site has needles",
                 "consume=europeans_carrier",
                 "consume=hammer saw fire_tongs needles",
                 "animate=working duration:180s",

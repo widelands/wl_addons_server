@@ -42,9 +42,9 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 6 },
-        { name = "iron", amount = 6 },
-        { name = "coal", amount = 6 }
+        { name = "planks", amount = 10 },
+        { name = "iron", amount = 10 },
+        { name = "coal", amount = 10 }
     },
 
     programs = {
@@ -75,10 +75,10 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         pausing_production = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for planks, iron and coal"),
             actions = {
-                "return=skipped when not economy needs planks and not economy needs iron and not economy needs coal",
+                "return=skipped when site has planks:8 and site has iron:8 and site has coal:8",
                 "sleep=duration:5m",
             }
         },
@@ -96,10 +96,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs basket",
                 "return=skipped when economy needs scythe and not economy needs basket",
                 "return=skipped when economy needs shovel and not economy needs basket",
-                "consume=planks:2 coal:2 iron:2",
+                "consume=planks iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=basket:3"
+                "animate=working duration:90s",
+                "produce=basket:2"
             }
         },
         produce_buckets = {
@@ -116,10 +116,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs buckets",
                 "return=skipped when economy needs scythe and not economy needs buckets",
                 "return=skipped when economy needs shovel and not economy needs buckets",
-                "consume=planks:2 coal:2 iron:2",
+                "consume=planks iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=buckets:3"
+                "animate=working duration:90s",
+                "produce=buckets:2"
             }
         },
         produce_felling_ax = {
@@ -136,10 +136,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs felling_ax",
                 "return=skipped when economy needs scythe and not economy needs felling_ax",
                 "return=skipped when economy needs shovel and not economy needs felling_ax",
-                "consume=planks:2 coal:2 iron:2",
+                "consume=planks iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=felling_ax:3"
+                "animate=working duration:90s",
+                "produce=felling_ax:2"
             }
         },
         produce_fire_tongs = {
@@ -156,10 +156,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs fire_tongs",
                 "return=skipped when economy needs scythe and not economy needs fire_tongs",
                 "return=skipped when economy needs shovel and not economy needs fire_tongs",
-                "consume=planks:2 coal:2 iron:2",
+                "consume=planks iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=fire_tongs:3"
+                "animate=working duration:90s",
+                "produce=fire_tongs:2"
             }
         },
         produce_hammer = {
@@ -176,10 +176,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs hammer",
                 "return=skipped when economy needs scythe and not economy needs hammer",
                 "return=skipped when economy needs shovel and not economy needs hammer",
-                "consume=planks:2 coal:2 iron:2",
+                "consume=planks iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=hammer:3"
+                "animate=working duration:90s",
+                "produce=hammer:2"
             }
         },
         produce_needles = {
@@ -196,10 +196,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs needles",
                 "return=skipped when economy needs scythe and not economy needs needles",
                 "return=skipped when economy needs shovel and not economy needs needles",
-                "consume=coal:2 iron:2",
+                "consume=coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=needles:3"
+                "animate=working duration:90s",
+                "produce=needles:2"
             }
         },
         produce_pick = {
@@ -216,10 +216,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs pick",
                 "return=skipped when economy needs scythe and not economy needs pick",
                 "return=skipped when economy needs shovel and not economy needs pick",
-                "consume=planks:2 coal:2 iron:2",
+                "consume=planks iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=pick:3"
+                "animate=working duration:90s",
+                "produce=pick:2"
             }
         },
         produce_saw = {
@@ -236,10 +236,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs pick and not economy needs saw",
                 "return=skipped when economy needs scythe and not economy needs saw",
                 "return=skipped when economy needs shovel and not economy needs saw",
-                "consume=planks:2 coal:2 iron:2",
+                "consume=planks iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=saw:3"
+                "animate=working duration:90s",
+                "produce=saw:2"
             }
         },
         produce_scythe = {
@@ -256,10 +256,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs pick and not economy needs scythe",
                 "return=skipped when economy needs saw and not economy needs scythe",
                 "return=skipped when economy needs shovel and not economy needs scythe",
-                "consume=planks:2 coal:2 iron:2",
+                "consume=planks iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=scythe:3"
+                "animate=working duration:90s",
+                "produce=scythe:2"
             }
         },
         produce_shovel = {
@@ -276,10 +276,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs pick and not economy needs shovel",
                 "return=skipped when economy needs saw and not economy needs shovel",
                 "return=skipped when economy needs scythe and not economy needs shovel",
-                "consume=planks:2 coal:2 iron:2",
+                "consume=planks iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:120s",
-                "produce=shovel:3"
+                "animate=working duration:90s",
+                "produce=shovel:2"
             }
         },
     },

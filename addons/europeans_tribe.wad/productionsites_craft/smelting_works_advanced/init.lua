@@ -41,7 +41,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coal", amount = 6 },
+        { name = "coal", amount = 10 },
         { name = "ore", amount = 8 },
         { name = "scrap_iron", amount = 4 },
         { name = "scrap_metal_mixed", amount = 4 }
@@ -68,7 +68,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for ore and coal"),
             actions = {
-                "return=skipped when not economy needs ore and not economy needs coal",
+                "return=skipped when site has ore:6 and site has coal:6",
+                "return=skipped when site has scrap_iron:2 and site has coal:2",
+                "return=skipped when site has scrap_metal_mixed:2 and site has coal:2",
                 "sleep=duration:5m",
             }
         },

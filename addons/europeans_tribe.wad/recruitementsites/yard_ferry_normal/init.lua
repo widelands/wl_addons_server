@@ -24,7 +24,7 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            marble = 1,
+            marble = 2,
             marble_column = 1,
             quartz = 1,
             diamond = 1

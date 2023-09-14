@@ -82,10 +82,10 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         pausing_production = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for planks, cloth and armor"),
             actions = {
-                "return=skipped when not economy needs planks and not economy needs cloth and not economy needs armor",
+                "return=skipped when site has planks:2 and site has cloth:2 and site has armor:2",
                 "sleep=duration:5m",
             }
         },

@@ -27,14 +27,12 @@ wl.Descriptions():new_productionsite_type {
         blackwood = 2,
         cloth = 2,
         grout = 2,
-        marble_column = 1,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 3,
-        marble = 3,
+        scrap_wood = 2,
+        granite = 2,
         quartz = 1,
         diamond = 1
     },
@@ -55,8 +53,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 2 },
-        { name = "gold", amount = 2 },
+        { name = "planks", amount = 4 },
+        { name = "gold", amount = 4 },
         { name = "bread", amount = 8 },
         { name = "meat", amount = 8 },
         { name = "beer", amount = 8 },
@@ -68,26 +66,52 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "call=pausing_production",
-                "sleep=duration:15s",
-                "call=trade_bread",
-                "call=trade_bread_copper",
-                "sleep=duration:15s",
-                "call=trade_meat",
-                "call=trade_meat_copper",
-                "sleep=duration:15s",
-                "call=trade_beer",
-                "call=trade_beer_copper",
-                "sleep=duration:15s",
-                "call=trade_honey",
-                "call=trade_honey_copper",
+                "call=trading_for_wood",
+                "sleep=duration:30s",
+                "call=trading_for_copper"
             }
         },
-        pausing_production = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for planks and gold"),
+        trading_for_wood = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+            descname = pgettext("europeans_building", "trading food for wood coins"),
             actions = {
-                "return=skipped when not economy needs planks and not economy needs gold",
+                "return=skipped unless economy needs coin_wood",
+                "call=pausing_production_for_planks",
+                "sleep=duration:15s",
+                "call=trade_bread",
+                "call=trade_meat",
+                "sleep=duration:15s",
+                "call=trade_beer",
+                "call=trade_honey",
+            }
+        },
+        trading_for_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+            descname = pgettext("europeans_building", "trading food for copper coins"),
+            actions = {
+                "return=skipped unless economy needs coin_copper",
+                "call=pausing_production_for_gold",
+                "sleep=duration:15s",
+                "call=trade_bread_copper",
+                "call=trade_meat_copper",
+                "sleep=duration:15s",
+                "call=trade_beer_copper",
+                "call=trade_honey_copper"
+            }
+        },
+        pausing_production_for_planks = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing trading of planks"),
+            actions = {
+                "return=skipped when site has planks:2",
+                "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing trading of gold"),
+            actions = {
+                "return=skipped when site has gold:3",
                 "sleep=duration:5m",
             }
         },

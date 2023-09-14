@@ -38,14 +38,12 @@ wl.Descriptions():new_productionsite_type {
         blackwood = 2,
         cloth = 2,
         grout = 2,
-        marble_column = 1,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 3,
-        marble = 3,
+        scrap_wood = 2,
+        granite = 2,
         quartz = 1,
         diamond = 1
     },

@@ -42,7 +42,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 4 }
+        { name = "reed", amount = 6 }
     },
 
     programs = {
@@ -62,7 +62,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for reed"),
             actions = {
-                "return=skipped when not economy needs reed",
+                "return=skipped when site has reed:4",
                 "sleep=duration:5m",
             }
         },

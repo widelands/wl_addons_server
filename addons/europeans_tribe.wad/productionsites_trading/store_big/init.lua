@@ -26,7 +26,7 @@ wl.Descriptions():new_productionsite_type {
         planks = 4,
         brick = 4,
         marble = 4,
-        marble_column = 1,
+        marble_column = 2,
         quartz = 1,
         diamond = 1
     },

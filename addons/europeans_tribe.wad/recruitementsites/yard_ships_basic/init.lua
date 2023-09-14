@@ -31,13 +31,11 @@ wl.Descriptions():new_productionsite_type {
             blackwood = 2,
             cloth = 2,
             grout = 2,
-            marble_column = 1,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
-            marble = 1,
             quartz = 1,
             diamond = 1
         },
@@ -47,13 +45,17 @@ wl.Descriptions():new_productionsite_type {
         blackwood = 2,
         planks = 2,
         reed = 3,
-        granite = 2
+        granite = 2,
+        quartz = 1,
+        diamond = 1
     },
     return_on_dismantle = {
         scrap_wood = 3,
         planks = 1,
         reed = 1,
-        granite = 1
+        granite = 1,
+        quartz = 1,
+        diamond = 1
     },
 
     aihints = {

@@ -39,14 +39,14 @@ wl.Descriptions():new_trainingsite_type {
             planks = 3,
             brick = 3,
             marble = 3,
-            marble_column = 3,
+            marble_column = 2,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
-            marble = 6,
+            marble = 5,
             quartz = 1,
             diamond = 1
         },

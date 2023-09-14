@@ -67,7 +67,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 4 }
+        { name = "log", amount = 6 }
     },
 
     programs = {
@@ -87,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for log"),
             actions = {
-                "return=skipped when not economy needs log",
+                "return=skipped when site has log:4",
                 "sleep=duration:5m",
             }
         },

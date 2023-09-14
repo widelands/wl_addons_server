@@ -32,7 +32,7 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             planks = 2,
             brick = 2,
-            marble = 1,
+            marble = 2,
             marble_column = 1,
             quartz = 1,
             diamond = 1
@@ -40,7 +40,7 @@ wl.Descriptions():new_productionsite_type {
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
-            marble = 2,
+            marble = 3,
             quartz = 1,
             diamond = 1
         }

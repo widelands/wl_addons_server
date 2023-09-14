@@ -36,14 +36,12 @@ wl.Descriptions():new_productionsite_type {
             blackwood = 3,
             cloth = 3,
             grout = 3,
-            marble_column = 1,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
-            marble = 1,
             quartz = 1,
             diamond = 1
         },
@@ -52,14 +50,12 @@ wl.Descriptions():new_productionsite_type {
         log = 4,
         reed = 4,
         granite = 4,
-        marble_column = 1,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
         scrap_wood = 4,
         granite = 2,
-        marble = 1,
         quartz = 1,
         diamond = 1
     },
@@ -88,8 +84,18 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=pausing_production",
+                "sleep=duration:20s",
                 "call=recruit_soldier",
                 "return=skipped"
+            }
+        },
+        pausing_production = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            descname = pgettext("europeans_building", "pausing production for planks, iron and coal"),
+            actions = {
+                "return=skipped when not economy needs spear_wooden and not economy needs helmet_wooden and not economy needs armor_wooden and not economy needs boots_wooden",
+                "sleep=duration:10m",
             }
         },
         recruit_soldier = {

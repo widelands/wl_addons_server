@@ -27,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
         planks = 4,
         brick = 4,
         marble = 4,
-        marble_column = 1,
+        marble_column = 2,
         quartz = 1,
         diamond = 1
     },
@@ -55,8 +55,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 4 },
-        { name = "gold", amount = 4 },
+        { name = "planks", amount = 8 },
+        { name = "gold", amount = 8 },
         { name = "bread", amount = 12 },
         { name = "honey_bread", amount = 12 },
         { name = "biscuit", amount = 12 },
@@ -73,49 +73,100 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "call=pausing_production",
-                "sleep=duration:10s",
-                "call=trade_bread",
-                "call=trade_bread_copper",
-                "call=trade_bread_silver",
-                "call=trade_bread_gold",
-                "sleep=duration:10s",
-                "call=trade_beer",
-                "call=trade_beer_copper",
-                "call=trade_beer_silver",
-                "call=trade_beer_gold",
-                "sleep=duration:10s",
-                "call=trade_meat",
-                "call=trade_meat_copper",
-                "call=trade_meat_silver",
-                "call=trade_meat_gold",
-                "sleep=duration:10s",
-                "call=trade_biscuit",
-                "call=trade_biscuit_copper",
-                "call=trade_biscuit_silver",
-                "call=trade_biscuit_gold",
-                "sleep=duration:10s",
-                "call=trade_mead",
-                "call=trade_mead_copper",
-                "call=trade_mead_silver",
-                "call=trade_mead_gold",
-                "sleep=duration:10s",
-                "call=trade_fish",
-                "call=trade_fish_copper",
-                "call=trade_fish_silver",
-                "call=trade_fish_gold",
-                "sleep=duration:10s",
-                "call=trade_wine",
-                "call=trade_wine_copper",
-                "call=trade_wine_silver",
-                "call=trade_wine_gold",
+                "call=trading_for_wood",
+                "sleep=duration:15s",
+                "call=trading_for_copper",
+                "sleep=duration:15s",
+                "call=trading_for_wood",
+                "sleep=duration:15s",
+                "call=trading_for_silver",
+                "sleep=duration:15s",
+                "call=trading_for_wood",
+                "sleep=duration:15s",
+                "call=trading_for_gold"
             }
         },
-        pausing_production = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for planks and gold"),
+        trading_for_wood = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+            descname = pgettext("europeans_building", "trading food for wood coins"),
             actions = {
-                "return=skipped when not economy needs planks and not economy needs gold",
+                "return=skipped unless economy needs coin_wood",
+                "call=pausing_production_for_planks",
+                "sleep=duration:15s",
+                "call=trade_bread",
+                "call=trade_meat",
+                "call=trade_biscuit",
+                "call=trade_fish",
+                "sleep=duration:15s",
+                "call=trade_beer",
+                "call=trade_mead",
+                "call=trade_wine"
+            }
+        },
+        trading_for_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+            descname = pgettext("europeans_building", "trading food for copper coins"),
+            actions = {
+                "return=skipped unless economy needs coin_copper",
+                "call=pausing_production_for_gold",
+                "sleep=duration:10s",
+                "call=trade_bread_copper",
+                "call=trade_meat_copper",
+                "call=trade_fish_copper",
+                "call=trade_biscuit_copper",
+                "sleep=duration:10s",
+                "call=trade_beer_copper",
+                "call=trade_mead_copper",
+                "call=trade_wine_copper"
+            }
+        },
+        trading_for_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+            descname = pgettext("europeans_building", "trading food for silver coins"),
+            actions = {
+                "return=skipped unless economy needs coin_silver",
+                "call=pausing_production_for_gold",
+                "sleep=duration:10s",
+                "call=trade_bread_silver",
+                "call=trade_meat_silver",
+                "call=trade_fish_silver",
+                "call=trade_biscuit_silver",
+                "sleep=duration:10s",
+                "call=trade_beer_silver",
+                "call=trade_mead_silver",
+                "call=trade_wine_silver"
+            }
+        },
+        trading_for_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+            descname = pgettext("europeans_building", "trading food for gold coins"),
+            actions = {
+                "return=skipped unless economy needs coin_gold",
+                "call=pausing_production_for_gold",
+                "sleep=duration:10s",
+                "call=trade_bread_gold",
+                "call=trade_meat_gold",
+                "call=trade_biscuit_gold",
+                "call=trade_fish_gold",
+                "sleep=duration:10s",
+                "call=trade_beer_gold",
+                "call=trade_mead_gold",
+                "call=trade_wine_gold"
+            }
+        },
+        pausing_production_for_planks = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing trading of planks"),
+            actions = {
+                "return=skipped when site has planks:4",
+                "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing trading of gold"),
+            actions = {
+                "return=skipped when site has gold:4",
                 "sleep=duration:5m",
             }
         },

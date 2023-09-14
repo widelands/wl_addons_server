@@ -69,7 +69,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for ore and coal"),
             actions = {
-                "return=skipped when not economy needs ore and not economy needs coal",
+                "return=skipped when site has ore:4 and site has coal:4",
                 "sleep=duration:5m",
             }
         },
@@ -79,11 +79,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs gold or workers need experience",
                 "return=skipped when economy needs iron and not economy needs gold",
-                "consume=ore:3 coal:3",
+                "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
                 "animate=working duration:120s",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=gold:2"
+                "produce=gold"
             }
         },
         smelt_iron = {
@@ -92,11 +92,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs iron or workers need experience",
                 "return=skipped when economy needs gold and not economy needs iron",
-                "consume=ore:3 coal:3",
+                "consume=ore:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:120s",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=iron:3"
+                "produce=iron:2"
             }
         }
     },

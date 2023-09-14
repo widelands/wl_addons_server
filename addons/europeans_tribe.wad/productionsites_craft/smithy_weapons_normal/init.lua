@@ -53,9 +53,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=pausing_production",
-                "sleep=duration:5s",
-                "call=pausing_production_tools",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "call=produce_helmet_wooden",
                 "sleep=duration:15s",
                 "call=produce_spear_wooden",
@@ -69,18 +67,10 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         pausing_production = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for planks, iron and coal"),
             actions = {
-                "return=skipped when not economy needs planks and not economy needs iron and not economy needs coal",
-                "sleep=duration:5m",
-            }
-        },
-        pausing_production_tools = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
-            descname = pgettext("europeans_building", "pausing production for tools"),
-            actions = {
-                "return=skipped when not economy needs basket and not economy needs buckets and not economy needs felling_ax and not economy needs felling_ax and not economy needs fire_tongs and not economy needs hammer and not economy needs needles and not economy needs pick and not economy needs saw and not economy needs scythe and not economy needs shovel",
+                "return=skipped when site has planks:4 and site has iron:4 and site has coal:4",
                 "sleep=duration:5m",
             }
         },

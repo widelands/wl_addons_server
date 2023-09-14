@@ -28,7 +28,7 @@ wl.Descriptions():new_warehouse_type {
         planks = 4,
         brick = 4,
         marble = 4,
-        marble_column = 2,
+        marble_column = 3,
         quartz = 2,
         diamond = 2
     },

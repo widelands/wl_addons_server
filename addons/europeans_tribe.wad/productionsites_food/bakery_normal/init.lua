@@ -74,7 +74,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for water and flour"),
             actions = {
-                "return=skipped when not economy needs water and not economy needs flour",
+                "return=skipped when site has water:4 and site has flour:4",
                 "sleep=duration:5m",
             }
         },
