@@ -1,0 +1,13 @@
+name: Test Compiling
+on:
+  push:
+
+jobs:
+  format:
+    name: Test compiling
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Test compiling
+      run: ./compile.sh
