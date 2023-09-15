@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-14 03:07+0200\n"
+"POT-Creation-Date: 2023-09-15 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1757,10 +1757,9 @@ msgstr "Lütte Holtköhlbranneree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:79
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for wood"
-msgstr "dat Produzeren för Warktüüg antohollen"
+msgstr "dat Produzeren för Holt antohollen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:8
@@ -2826,42 +2825,40 @@ msgstr "to hanneln"
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:76
 msgctxt "europeans_building"
 msgid "trading food for wood coins"
-msgstr ""
+msgstr "Eten tegen Holtdeiten to hanneln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:108
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:90
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
-msgstr ""
+msgstr "Eten tegen Koperdeiten to hanneln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:125
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
-msgstr ""
+msgstr "Eten tegen Sülverdeiten to hanneln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:142
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
-msgstr ""
+msgstr "Eten tegen Golddeiten to hanneln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:159
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:104
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing trading of planks"
-msgstr "dat Produzeren för Planken un Gold antohollen"
+msgstr "dat Hanneln vun Planken antohollen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:167
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:112
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing trading of gold"
-msgstr "dat Produzeren för Warktüüg antohollen"
+msgstr "dat Hanneln vun Gold antohollen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:8
@@ -2930,10 +2927,9 @@ msgstr "Grote Anhüreree"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:88
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:113
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:100
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production because lack of tools"
-msgstr "dat Produzeren för Warktüüg antohollen"
+msgstr "dat Produzeren um de Mangel an Warktüüg antohollen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:96
