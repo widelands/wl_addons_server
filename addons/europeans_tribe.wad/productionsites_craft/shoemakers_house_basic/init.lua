@@ -64,8 +64,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 4 },
-        { name = "cloth", amount = 2 },
-        { name = "leather", amount = 2 }
+        { name = "cloth", amount = 4 }
     },
 
     programs = {
@@ -85,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for planks, cloth and leather"),
             actions = {
-                "return=skipped when site has planks:2 and site has cloth and site has leather",
+                "return=skipped when site has planks:2 and site has cloth:2",
                 "sleep=duration:5m",
             }
         },
@@ -106,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
                 "return=skipped unless economy needs boots_sturdy or workers need experience",
-                "consume=planks leather cloth",
+                "consume=planks cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:180s",
                 "produce=boots_sturdy:2"

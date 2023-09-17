@@ -29,7 +29,6 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_carrier_3 = 1,
-        europeans_carrier_horse = 1,
         coin_copper = 1,
         coin_silver = 1,
         coin_gold = 1
@@ -96,46 +95,18 @@ wl.Descriptions():new_worker_type {
                 "createware=gold",
                 "return"
           },
-          sale_bread = {
+          sale_fruit = {
                 "findobject=attrib:tradepole radius:80",
-                "createware=bread",
+                "createware=fruit",
                 "walk=object",
                 "createware=coin_wood",
                 "return"
           },
-          sale_meat = {
+          sale_grape = {
                 "findobject=attrib:tradepole radius:80",
-                "createware=meat",
-                "walk=object",
-                "createware=coin_wood",
-                "return"
-          },
-          sale_fish = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=fish",
+                "createware=grape",
                 "walk=object",
                 "createware=coin_copper",
-                "return"
-          },
-          sale_beer= {
-                "findobject=attrib:tradepole radius:80",
-                "createware=beer_strong",
-                "walk=object",
-                "createware=coin_copper",
-                "return"
-          },
-          sale_mead = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=mead",
-                "walk=object",
-                "createware=coin_silver",
-                "return"
-          },
-          sale_wine = {
-                "findobject=attrib:tradepole radius:80",
-                "createware=wine",
-                "walk=object",
-                "createware=coin_gold",
                 "return"
           },
     },

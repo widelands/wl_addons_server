@@ -16,35 +16,11 @@ wl.Descriptions():new_worker_type {
         check_space = {
             "findspace=size:any radius:3 space"
         },
-        plant_barley = {
-            "findspace=size:any radius:3 space",
-            "walk=coords",
-            "animate=plant duration:6s",
-            "plant=attrib:seed_barley",
-            "animate=plant duration:6s",
-            "return"
-        },
         plant_berrybush = {
             "findspace=size:any radius:3 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_berrybush",
-            "animate=plant duration:6s",
-            "return"
-        },
-        plant_blackroot = {
-            "findspace=size:any radius:3 space",
-            "walk=coords",
-            "animate=plant duration:6s",
-            "plant=attrib:seed_blackroot",
-            "animate=plant duration:6s",
-            "return"
-        },
-        plant_corn = {
-            "findspace=size:any radius:3 space",
-            "walk=coords",
-            "animate=plant duration:6s",
-            "plant=attrib:seed_corn",
             "animate=plant duration:6s",
             "return"
         },
@@ -64,32 +40,6 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:6s",
             "return"
         },
-        plant_rye = {
-            "findspace=size:any radius:3 space",
-            "walk=coords",
-            "animate=plant duration:6s",
-            "plant=attrib:seed_rye",
-            "animate=plant duration:6s",
-            "return"
-        },
-        plant_wheat = {
-            "findspace=size:any radius:3 space",
-            "walk=coords",
-            "animate=plant duration:6s",
-            "plant=attrib:seed_wheat",
-            "animate=plant duration:6s",
-            "return"
-        },
-        harvest_barley = {
-            "findobject=attrib:ripe_barley radius:3",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvest duration:6s",
-            "callobject=harvest",
-            "animate=gather duration:6s",
-            "createware=barley",
-            "return"
-        },
         harvest_berrybush = {
             "findobject=attrib:ripe_bush radius:3",
             "walk=object",
@@ -98,26 +48,6 @@ wl.Descriptions():new_worker_type {
             "callobject=harvest",
             "animate=gather duration:6s",
             "createware=fruit",
-            "return"
-        },
-        harvest_blackroot = {
-            "findobject=attrib:ripe_blackroot radius:3",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvest duration:6s",
-            "callobject=harvest",
-            "animate=gather duration:6s",
-            "createware=blackroot",
-            "return"
-        },
-        harvest_corn = {
-            "findobject=attrib:ripe_corn radius:3",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvest duration:6s",
-            "callobject=harvest",
-            "animate=gather duration:6s",
-            "createware=corn",
             "return"
         },
         harvest_grape = {
@@ -138,26 +68,6 @@ wl.Descriptions():new_worker_type {
             "callobject=harvest",
             "animate=gather duration:6s",
             "createware=reed",
-            "return"
-        },
-        harvest_rye = {
-            "findobject=attrib:ripe_rye radius:3",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvest duration:6s",
-            "callobject=harvest",
-            "animate=gather duration:6s",
-            "createware=rye",
-            "return"
-        },
-        harvest_wheat = {
-            "findobject=attrib:ripe_wheat radius:3",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvest duration:6s",
-            "callobject=harvest",
-            "animate=gather duration:6s",
-            "createware=wheat",
             "return"
         }
     },

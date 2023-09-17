@@ -43,8 +43,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 6 },
-        { name = "wool", amount = 6 }
+        { name = "reed", amount = 8 }
     },
 
     programs = {
@@ -64,7 +63,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for reed"),
             actions = {
-                "return=skipped when site has reed:4 and site has wool:3",
+                "return=skipped when site has reed:4",
                 "sleep=duration:5m",
             }
         },
@@ -84,10 +83,10 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
                 "return=skipped unless economy needs armor or workers need experience",
-                "consume=wool:3 reed",
+                "consume=reed:3",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:60s",
-                "produce=armor:3"
+                "produce=armor:2"
             }
         }
     },

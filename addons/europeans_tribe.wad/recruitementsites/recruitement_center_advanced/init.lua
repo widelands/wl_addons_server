@@ -65,7 +65,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=recruit_miner",
                 "sleep=duration:20s",
                 "call=recruit_worker",
-                "call=recruit_beekeeper",
                 "call=recruit_terraformer",
                 "sleep=duration:20s",
                 "call=recruit_trainer",
@@ -135,17 +134,6 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_builder"
             }
         },
-        recruit_beekeeper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting beekeeper"),
-            actions = {
-                "return=skipped unless economy needs europeans_beekeeper_advanced",
-                "consume=europeans_carrier",
-                "consume=buckets",
-                "animate=working duration:180s",
-                "recruit=europeans_beekeeper_advanced"
-            }
-        },
         recruit_claydigger = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting claydigger"),
@@ -162,7 +150,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting farmer"),
             actions = {
                 "return=skipped unless economy needs europeans_farmer_advanced",
-                "return=skipped unless economy needs reed or economy needs barley or economy needs rye or economy needs wheat or economy needs corn or economy needs blackroot or economy needs fruit or economy needs grape",
+                "return=skipped unless economy needs reed or economy needs fruit or economy needs grape",
                 "consume=europeans_carrier",
                 "consume=scythe basket",
                 "animate=working duration:180s",
