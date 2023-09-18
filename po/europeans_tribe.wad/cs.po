@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-17 03:06+0200\n"
+"POT-Creation-Date: 2023-09-18 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -954,11 +954,10 @@ msgid "Out of Fields"
 msgstr "Došla pole"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:146
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
-msgstr "Sedlák pracující na tomto statku nemá žádnou volnou půdu pro osev."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:8
@@ -967,26 +966,23 @@ msgid "Reed Yard"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:108
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
-msgstr "Sedlák pracující na tomto statku nemá žádnou volnou půdu pro osev."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Fruit Farm"
-msgstr "Jednoduché obilné pole"
+msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this fruit farm has no cleared soil to plant his seeds."
-msgstr "Sedlák pracující na tomto statku nemá žádnou volnou půdu pro osev."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -4682,24 +4678,21 @@ msgstr "Čerpá podzemní vodu."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1921
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
-msgstr "Sází a sklízí kukuřici, žito a pšenici."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1928
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed and fruits."
-msgstr "Sází a sklízí kukuřici, žito a pšenici."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1935
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed, fruits and grape."
-msgstr "Sází a sklízí kukuřici, žito a pšenici."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
@@ -6058,197 +6051,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (harvested)"
-#~ msgstr "Žitné pole (sklizené)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (medium)"
-#~ msgstr "Žitné pole (vzrostlé)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (ripe)"
-#~ msgstr "Žitné pole (zralé)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (small)"
-#~ msgstr "Žitné pole (malé)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (tiny)"
-#~ msgstr "Žitné pole (oseté)"
-
-#~ msgid "No Flowers"
-#~ msgstr "Žádné květy"
-
-#~ msgid "Out of Flowers"
-#~ msgstr "Došly květy"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The beekeeper working at this beekeepers’s house can’t find any flowering "
-#~ "fields or bushes in his work area. You should consider building another "
-#~ "farm or berry farm nearby, or dismantling or destroying this building."
-#~ msgstr ""
-#~ "Včelař pracující v tomto domku včelaře nemůže ve svém okolí najít žádné "
-#~ "kvetoucí pole nebo keře. Zvaž jeho rozebrání, jeho zničení, nebo "
-#~ "postavení statku či sadu ovocných bobulí v okolí."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery"
-#~ msgstr "Pokročilý pivovar"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Brewery"
-#~ msgstr "Jednoduchý pivovar"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Brewery"
-#~ msgstr "Běžný pivovar"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery and Winery"
-#~ msgstr "Pokročilý pivovar a vinařství"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Mill"
-#~ msgstr "Pokročilý mlýn"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Mill"
-#~ msgstr "Jednoduchý mlýn"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Mill"
-#~ msgstr "Běžný mlýn"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting beekeeper"
-#~ msgstr "výcvik včelaře"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Rye is essential for survival."
-#~ msgstr "Žito je základem k přežití."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Wheat is essential for survival."
-#~ msgstr "Pšenice je základem k přežití."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Wheat is produced by farms and used by mills to produce mixed flour."
-#~ msgstr ""
-#~ "Pšenice je produkována na statcích a zpracována mlýny na míchanou mouku."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Barley is a slow-growing grain that is used for brewing beer or mead."
-#~ msgstr ""
-#~ "Ječmen je pomalu rostoucí plodina, která je využívána k vaření piva nebo "
-#~ "medoviny."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Honey is produced by bees belonging to a beekeeper. It is used to brew "
-#~ "mead."
-#~ msgstr ""
-#~ "Med je produkován včelami, o které se stará včelař. Je používána k výrobě "
-#~ "medoviny."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Lets bees swarm over flowers, then gathers the honey."
-#~ msgstr "Umožňuje včelím rojům opylovat květy a produkovat med."
-
-#~ msgid "This field has just been planted."
-#~ msgstr "Toto je právě oseté pole."
-
-#~ msgid "This field is growing."
-#~ msgstr "Toto je rostoucí pole."
-
-#~ msgid "This field is ready for harvesting."
-#~ msgstr "Toto pole je připraveno ke sklizni."
-
-#~ msgid "This field has been harvested."
-#~ msgstr "Toto pole bylo sklizeno."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Keeps bees and lets them swarm over flowering fields to produce honey."
-#~ msgstr ""
-#~ "Chová včely a zajišťuje, aby se rojily v místech kvetoucích polí a "
-#~ "produkovaly med."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) "
-#~ "or bushes (berry bushes or grapevines) nearby."
-#~ msgstr ""
-#~ "Vyžaduje poblíž středně velké (ječmen, žito, pšenice, rákosí, kukuřice "
-#~ "nebo černý kořen) nebo keře (ovocné keře nebo víno)."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Grinds corn to produce cornmeal."
-#~ msgstr "Mele kukuřici na kukuřičnou mouku."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed "
-#~ "flour."
-#~ msgstr ""
-#~ "Mele kukuřici na kukuřičnou mouku. Mele pšenice a žito na míchanou mouku."
-
-#~ msgctxt "building"
-#~ msgid "Prepares rations to feed the scouts and miners."
-#~ msgstr ""
-#~ "Připravují se zde malé svačiny, které slouží jako potrava průzkumníků a "
-#~ "horníků."
-
-#~ msgctxt "building"
-#~ msgid ""
-#~ "Prepares rations and snacks to feed the miners in the basic and deep "
-#~ "mines."
-#~ msgstr ""
-#~ "Připravuje malé svačiny a svačiny pro horníky v základních a hlubinných "
-#~ "dolech."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer to keep the miners strong and happy."
-#~ msgstr "Vaří pivo, aby byli horníci silní a spokojení."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer and mead to keep the miners strong and happy."
-#~ msgstr "Vyrábí pivo a medovinu, aby byli horníci silní a spokojení."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer, mead and strong_beer for trainingssites."
-#~ msgstr "Vyrábí pivo, medovinu a silné pivo pro výcvikové tábory."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces mead and wine."
-#~ msgstr "Vyrábí medovinu a víno."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-#~ msgstr "Sází a sklízí ječmen, černý kořen, kukuřici, žito a pšenici."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
-#~ msgstr ""
-#~ "Sází a sklízí ječmen, černý kořen, kukuřici, ovoce, víno, žito a pšenici."
-
-#~ msgctxt "ware"
-#~ msgid "Rye"
-#~ msgstr "Žito"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Beekeeper"
-#~ msgstr "Mistr včelař"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Beekeeper"
-#~ msgstr "Včelař"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Beekeeper"
-#~ msgstr "Vrchní včelař"

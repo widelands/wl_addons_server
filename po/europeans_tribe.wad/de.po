@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-17 03:06+0200\n"
+"POT-Creation-Date: 2023-09-18 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -31,14 +31,10 @@ msgid "Europeans Tribe"
 msgstr "Europäer"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings, workers and some "
 "wares from other tribes, until own graphics are available."
 msgstr ""
-"Fügt den Stamm der \"Europäer\" hinzu. Dieser nutzt Gebäude, Arbeiter und "
-"einige Waren von anderen Stämmen, bis eigene Grafiken verfügbar sind. (Nicht "
-"mehr kompatibel mit Version 3.7.9 dieses Addons oder früher)"
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/medium/init.lua:9
 msgid "Blueberry Bush (medium)"
@@ -916,10 +912,9 @@ msgstr "Das Pflanzen von Beerenbüschen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting grape"
-msgstr "Das Pflanzen von Weinreben"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
@@ -938,10 +933,9 @@ msgstr "Das Ernten von Beeren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting grape"
-msgstr "Das Ernten von Weintrauben"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
@@ -964,43 +958,35 @@ msgid "Out of Fields"
 msgstr "Keine Felder"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:146
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
 msgstr ""
-"Der Bauer auf diesem Bauernhof hat keinen freien Platz um seine Sat zu säen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Reed Yard"
-msgstr "Reet"
+msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:108
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
 msgstr ""
-"Der Bauer auf diesem Bauernhof hat keinen freien Platz um seine Sat zu säen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Fruit Farm"
-msgstr "Beeren"
+msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this fruit farm has no cleared soil to plant his seeds."
 msgstr ""
-"Der Bauer auf diesem Bauernhof hat keinen freien Platz um seine Sat zu säen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -4809,24 +4795,21 @@ msgstr "Fördert Wasser aus der Tiefe."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1921
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
-msgstr "Sät und erntet Mais, Roggen und Weizen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1928
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed and fruits."
-msgstr "Sät und erntet Mais, Roggen und Weizen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1935
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed, fruits and grape."
-msgstr "Sät und erntet Mais, Roggen und Weizen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
@@ -6190,724 +6173,3 @@ msgstr "Lehrling"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Geselle"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (harvested)"
-#~ msgstr "Gerstenfeld (abgeerntet)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (medium)"
-#~ msgstr "Gerstenfeld (mittel)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (ripe)"
-#~ msgstr "Gerstenfeld (reif)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (small)"
-#~ msgstr "Gerstenfeld (klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (tiny)"
-#~ msgstr "Gerstenfeld (jung)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (harvested)"
-#~ msgstr "Dunkelrübenfeld (abgeerntet)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (medium)"
-#~ msgstr "Dunkelrübenfeld (mittel)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (ripe)"
-#~ msgstr "Dunkelrübenfeld (reif)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (small)"
-#~ msgstr "Dunkelrübenfeld (klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (tiny)"
-#~ msgstr "Dunkelrübenfeld (jung)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (harvested)"
-#~ msgstr "Maisfeld (abgeerntet)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (medium)"
-#~ msgstr "Maisfeld (mittel)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (ripe)"
-#~ msgstr "Maisfeld (reif)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (small)"
-#~ msgstr "Maisfeld (klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (tiny)"
-#~ msgstr "Maisfeld (jung)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (harvested)"
-#~ msgstr "Roggenfeld (abgeerntet)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (medium)"
-#~ msgstr "Roggenfeld (mittel)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (ripe)"
-#~ msgstr "Roggenfeld (reif)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (small)"
-#~ msgstr "Roggenfeld (klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (tiny)"
-#~ msgstr "Roggenfeld (jung)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (harvested)"
-#~ msgstr "Weizenfeld (abgeerntet)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (medium)"
-#~ msgstr "Weizenfeld (mittel)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (ripe)"
-#~ msgstr "Weizenfeld (reif)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (small)"
-#~ msgstr "Weizenfeld (klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (tiny)"
-#~ msgstr "Weizenfeld (jung)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Animal Farm"
-#~ msgstr "Verbesserte Tierzucht"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing wool"
-#~ msgstr "Die Herstellung von Wolle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "rearing cattle"
-#~ msgstr "Das Züchten von Rindern"
-
-#~ msgctxt "europeans_building"
-#~ msgid "rearing donkeys"
-#~ msgstr "Das Züchten von Eseln"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing meat"
-#~ msgstr "Die Herstellung von Fleisch"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing meat and leather"
-#~ msgstr "Die Herstellung von Fleisch und Leder"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding fish"
-#~ msgstr "Das Züchten von Fischen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Animal Farm"
-#~ msgstr "Einfache Tierzucht"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Big Animal Farm"
-#~ msgstr "Große Tierzucht"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding horses"
-#~ msgstr "Das Züchten von Pferden"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Animal Farm"
-#~ msgstr "Normale Tierzucht"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Beekeeper’s House"
-#~ msgstr "Verbessertes Imkerhaus"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making honey"
-#~ msgstr "Das Sammeln von Honig"
-
-#~ msgid "No Flowers"
-#~ msgstr "Keine Blumen"
-
-#~ msgid "Out of Flowers"
-#~ msgstr "Keine Blumen"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The beekeeper working at this beekeepers’s house can’t find any flowering "
-#~ "fields or bushes in his work area. You should consider building another "
-#~ "farm or berry farm nearby, or dismantling or destroying this building."
-#~ msgstr ""
-#~ "Der Imker in dieser Imkerei kann keine blühenden Felder in seinem "
-#~ "Arbeitsbereich finden. Du solltest dieses Gebäude abreißen oder zerstören "
-#~ "oder einen Bauernhof oder eine Beerenzucht in der Nähe bauen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Beekeeper’s Hut"
-#~ msgstr "Einfache Imkerhütte"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Beekeeper’s House"
-#~ msgstr "Normales Imkerhaus"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Farm"
-#~ msgstr "Verbesserter Bauernhof"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting barley"
-#~ msgstr "Das Pflanzen von Gerste"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting berry bushes"
-#~ msgstr "Das Pflanzen von Beerenbüschen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting blackroot"
-#~ msgstr "Das Pflanzen von Dunkelrüben"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting corn"
-#~ msgstr "Das Pflanzen von Mais"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting rye"
-#~ msgstr "Das Pflanzen von Roggen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting wheat"
-#~ msgstr "Das Pflanzen von Weizen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting barley"
-#~ msgstr "Das Ernten von Gerste"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting berries"
-#~ msgstr "Das Ernten von Beeren"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting blackroot"
-#~ msgstr "Das Ernten von Dunkelrüben"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting corn"
-#~ msgstr "Das Ernten von Mais"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting rye"
-#~ msgstr "Das Ernten von Roggen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting wheat"
-#~ msgstr "Das Ernten von Weizen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Farm"
-#~ msgstr "Einfacher Bauernhof"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Farm"
-#~ msgstr "Normaler Bauernhof"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Bakery"
-#~ msgstr "Verbesserte Bäckerei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Baking bread"
-#~ msgstr "Das Backen von Brot"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Baking honey bread"
-#~ msgstr "Das Backen von Honigbrot"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Baking fruit biscuits"
-#~ msgstr "Das Backen von Beerenkeksen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Bakery"
-#~ msgstr "Einfache Bäckerei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Bakery"
-#~ msgstr "Normale Bäckerei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery"
-#~ msgstr "Verbesserte Brauerei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing beer"
-#~ msgstr "Das Brauen von Bier"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing mead"
-#~ msgstr "Das Brauen von Met"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing strong beer"
-#~ msgstr "Das Brauen von Starkbier"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Brewery"
-#~ msgstr "Einfache Brauerei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Brewery"
-#~ msgstr "Normale Brauerei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery and Winery"
-#~ msgstr "Verbesserte Brauerei und Kellerei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making wine"
-#~ msgstr "Das Keltern von Wein"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Mill"
-#~ msgstr "Verbesserte Mühle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "grinding rye and wheat"
-#~ msgstr "Das Mahlen von Roggen und Weizen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Mill"
-#~ msgstr "Einfache Mühle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Mill"
-#~ msgstr "Normale Mühle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting beekeeper"
-#~ msgstr "Die Ausbildung eines Imkers"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The animal farm produces leather, which is used as a raw material for "
-#~ "making boots."
-#~ msgstr ""
-#~ "Die Tierzucht produziert Leder, welches als Rohmaterial für die "
-#~ "Stiefelherstellung benutzt wird."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Wool is the hair of sheep. Weaving mills use it to make armor. Animal "
-#~ "farms with level 4 or 5 can produce wool."
-#~ msgstr ""
-#~ "Wolle ist das Haar der Schafe. Webereien nutzen sie zur Herstellung von "
-#~ "Rüstungen. Tierzuchten der Stufe 4 oder 5 können Wolle produzieren."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Rye is essential for survival."
-#~ msgstr "Roggen ist überlebenswichtig."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Rye is produced by farms and used by mills to produce mixed flour."
-#~ msgstr ""
-#~ "Roggen wird auf Bauernhöfen erzeugt und von Mühlen zu gemischtem Mehl "
-#~ "verarbeitet."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Wheat is essential for survival."
-#~ msgstr "Weizen ist überlebenswichtig."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Wheat is produced by farms and used by mills to produce mixed flour."
-#~ msgstr ""
-#~ "Weizen wird auf Bauernhöfen erzeugt und von Mühlen zu gemischtem Mehl "
-#~ "verarbeitet."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Barley is a slow-growing grain that is used for brewing beer or mead."
-#~ msgstr ""
-#~ "Gerste ist ein langsam wachsendes Getreide, das zum Brauen von Bier oder "
-#~ "Met verwendet wird."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Advanced farms need to be provided with corn to feed the farm animals."
-#~ msgstr ""
-#~ "Verbesserte Bauernhöfe müssen mit Mais versorgt werden, um die Nutztiere "
-#~ "zu füttern."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Blackroots are a special kind of root. Advanced farms need to be provided "
-#~ "with blackroot."
-#~ msgstr ""
-#~ "Dunkelrüben sind eine besondere Art von Wurzel. Verbesserte Bauernhöfe "
-#~ "müssen mit Dunkelrüben versorgt werden."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Honey is produced by bees belonging to a beekeeper. It is used to brew "
-#~ "mead."
-#~ msgstr ""
-#~ " Honig wird von den Bienen eines Imkers gesammelt. Er wird benutzt, um "
-#~ "Met zu brauen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Mixed flour is produced by the mill out of rye and wheat and is needed in "
-#~ "the bakery to produce bread."
-#~ msgstr ""
-#~ "Gemischtes Mehl wird in der Mühle aus Roggen und  Weizen hergestellt und "
-#~ "wird von der Bäckerei benötigt, um Brot zu backen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Bread are produced in a bakery out of water and flour. It is offered for "
-#~ "sale on the small and big market in exchange for coins."
-#~ msgstr ""
-#~ "Brot wird in Bäckereien aus Wasser und Mehl hergestellt. Es wird auf "
-#~ "kleinen und großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Honey Bread are produced in a bakery out of water, honey and flour. It is "
-#~ "offered for sale on the big market in exchange for coins."
-#~ msgstr ""
-#~ "Honigbrot wird in Bäckereien aus Wasser, Honig und Mehl hergestellt. Es "
-#~ "wird auf großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Biscuits are produced in a bakery out of water, flour, honey and fruits. "
-#~ "It is offered for sale on the big market in exchange for coins."
-#~ msgstr ""
-#~ "Kekse werden in Bäckereien aus Wasser, Mehl, Honig und Beeren "
-#~ "hergestellt. Sie werden auf großen Märkten im Tausch gegen Münzen zum "
-#~ "Verkauf angeboten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Meat contains a lot of energy, and it is produced in animal farms. It is "
-#~ "offered for sale on the small and big market in exchange for coins."
-#~ msgstr ""
-#~ "Fleisch enthält viel Energie und wird in der Tierzucht hergestellt. Es "
-#~ "wird auf kleinen und großen Märkten im Tausch gegen Münzen zum Verkauf "
-#~ "angeboten"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Fish is one of the biggest food resources of the Europeans, and it is "
-#~ "produced in animal farms. It is offered for sale on the big market in "
-#~ "exchange for coins."
-#~ msgstr ""
-#~ "Fisch ist eine der größten Nahrungsressourcen der Europäer und wird in "
-#~ "der Tierzucht produziert. Er wird auf großen Märkten im Tausch gegen "
-#~ "Münzen zum Verkauf angeboten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This beer is produced in a brewery out of barley and water. It is offered "
-#~ "for sale on the small and big market in exchange for coins."
-#~ msgstr ""
-#~ "Dieses Bier wird in Brauereien aus Gerste und Wasser hergestellt. Es wird "
-#~ "auf kleinen und großen Märkten im Tausch gegen Münzen zum Verkauf "
-#~ "angeboten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Mead is produced by breweries out of water, barley and honey. It is "
-#~ "offered for sale on the big market in exchange for coins."
-#~ msgstr ""
-#~ "Met wird in Brauereien aus Wasser, Gerste und Honig hergestellt. Er wird "
-#~ "auf großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This strong beer is produced in a brewery out of barley and water. It is "
-#~ "offered for sale on the big market in exchange for coins."
-#~ msgstr ""
-#~ "Dieses Starkbier wird in Brauereien aus Gerste und Wasser hergestellt. Es "
-#~ "wird auf großen Märkten im Tausch gegen Münzen zum Verkauf angeboten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "It is produced in a winery out of grape and is offered for sale on the "
-#~ "big market in exchange for coins."
-#~ msgstr ""
-#~ "Es wird in einer Weinkellerei aus Weintrauben hergestellt und auf großen "
-#~ "Märkten gegen Münzen zum Verkauf angeboten."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Carries items along your roads. They are reared in an animal farm."
-#~ msgstr ""
-#~ "Transportiert Gegenstände entlang deiner Straßen. Sie werden in einer "
-#~ "Tierzucht großgezogen."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Donkeys help to carry items along busy roads. They are reared in an "
-#~ "animal farm."
-#~ msgstr ""
-#~ "Esel helfen dabei, Gegenstände entlang ausgelasteter Straßen zu "
-#~ "transportieren. Sie werden in einer Tierzucht großgezogen."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Horses help to carry items along busy roads. They are reared in an animal "
-#~ "farm."
-#~ msgstr ""
-#~ "Pferde helfen dabei, Gegenstände entlang ausgelasteter Straßen zu "
-#~ "transportieren. Sie werden in einer Tierzucht großgezogen."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Reindeers help to carry items along busy roads. They are reared in an "
-#~ "animal farm."
-#~ msgstr ""
-#~ "Rentiere helfen dabei, Gegenstände entlang ausgelasteter Straßen zu "
-#~ "transportieren. Sie werden in einer Tierzucht großgezogen."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Lets bees swarm over flowers, then gathers the honey."
-#~ msgstr " Lässt Bienen über Blumen ausschwärmen und sammelt ihren Honig."
-
-#~ msgid "This field has just been planted."
-#~ msgstr "Dieses Feld wurde eben erst bepflanzt."
-
-#~ msgid "This field is growing."
-#~ msgstr "Dieses Feld wächst."
-
-#~ msgid "This field is ready for harvesting."
-#~ msgstr "Dieses Feld ist erntereif."
-
-#~ msgid "This field has been harvested."
-#~ msgstr "Dieses Feld wurde abgeerntet."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Keeps bees and lets them swarm over flowering fields to produce honey."
-#~ msgstr ""
-#~ "Hält Bienen und lässt sie über blühende Felder ausschwärmen, um Honig "
-#~ "herzustellen. "
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) "
-#~ "or bushes (berry bushes or grapevines) nearby."
-#~ msgstr ""
-#~ " Braucht mittelgroße Felder (Gerste, Roggen, Weizen, Reet, Mais oder "
-#~ "Dunkelrüben) oder Büsche (Beerenbüsche oder Weinreben) in der Nähe."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Grinds corn to produce cornmeal."
-#~ msgstr "Mahlt Mais zu Maismehl."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed "
-#~ "flour."
-#~ msgstr ""
-#~ "Mahlt Mais zu Maismehl. Mahlt Weizen und Rogggen zu gemischtem Mehl."
-
-#~ msgctxt "building"
-#~ msgid "Prepares rations to feed the scouts and miners."
-#~ msgstr "Bereitet Rationen für die Kundschafter und Bergleute zu."
-
-#~ msgctxt "building"
-#~ msgid ""
-#~ "Prepares rations and snacks to feed the miners in the basic and deep "
-#~ "mines."
-#~ msgstr ""
-#~ "Bereitet Rationen und Snacks zu, um die Bergleute in den einfachen und "
-#~ "tiefen Minen zu ernähren."
-
-#~ msgctxt "building"
-#~ msgid "Prepares rations, snacks and meals to feed all miners."
-#~ msgstr ""
-#~ " Bereitet Rationen, Snacks und Mahlzeiten zu, um alle Bergleute zu "
-#~ "ernähren."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer to keep the miners strong and happy."
-#~ msgstr "Stellt Bier her, um die Bergleute bei Laune zu halten."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer and mead to keep the miners strong and happy."
-#~ msgstr "Braut Bier und Met, um die Bergleute bei Kraft und Laune zu halten."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer, mead and strong_beer for trainingssites."
-#~ msgstr "Braut Bier, Met und Starkbier für die Ausbildungsgebäude."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces mead and wine."
-#~ msgstr "Erzeugt Met und Wein."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-#~ msgstr "Sät und erntet Gerste, Schwarzwurzel, Mais, Roggen und Weizen."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
-#~ msgstr ""
-#~ "Sät und erntet Gerste, Schwarzwurzel, Mais, Beeren, Reben, Roggen und "
-#~ "Weizen."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Breeds strong oxen for adding them to the transportation system. "
-#~ "Additionally produces meat for food production and leather for shoemaker."
-#~ msgstr ""
-#~ "Züchtet starke Ochsen, um sie dem Verkehrssystem hinzuzufügen. Produziert "
-#~ "auch Fleisch für die Nahrungsmittelherstellung und Leder für den "
-#~ "Schuhmacher."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Breeds strong oxen for adding them to the transportation system. "
-#~ "Additionally produces meat and fish for food production and leather for "
-#~ "shoemaker."
-#~ msgstr ""
-#~ "Züchtet starke Ochsen, um sie dem Verkehrssystem hinzuzufügen. Produziert "
-#~ "auch Fleisch und Fisch für die Nahrungsmittelherstellung und Leder für "
-#~ "den Schuhmacher."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Breeds strong oxen and cute and helpful donkeys for adding them to the "
-#~ "transportation system. Additionally keeps sheep for wool production and "
-#~ "produces meat and fish for food production."
-#~ msgstr ""
-#~ "Züchtet starke Ochsen und niedliche und hilfreiche Esel, um sie dem "
-#~ "Verkehrssystem hinzuzufügen. Hält zusätzlich auch Schafe zur "
-#~ "Wollherstellung und produziert Fleisch und Fisch für die "
-#~ "Nahrungsmittelherstellung."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Breeds strong oxen, cute and helpful donkeys and strong horses for adding "
-#~ "them to the transportation system. Additionally keeps sheep for wool "
-#~ "production and produces meat and fish for food production."
-#~ msgstr ""
-#~ "Züchtet starke Ochsen, niedliche und hilfreiche Esel und starke Pferde, "
-#~ "um sie dem Verkehrssystem hinzuzufügen. Hält zusätzlich auch Schafe zur "
-#~ "Wollherstellung und produziert Fleisch und Fisch für die "
-#~ "Nahrungsmittelherstellung."
-
-#~ msgctxt "ware"
-#~ msgid "Barley"
-#~ msgstr "Gerste"
-
-#~ msgctxt "ware"
-#~ msgid "Beer"
-#~ msgstr "Bier"
-
-#~ msgctxt "ware"
-#~ msgid "Strong Beer"
-#~ msgstr "Starkbier"
-
-#~ msgctxt "empire_ware"
-#~ msgid "Biscuit"
-#~ msgstr "Keks"
-
-#~ msgctxt "ware"
-#~ msgid "Blackroot"
-#~ msgstr "Dunkelrübe"
-
-#~ msgctxt "ware"
-#~ msgid "Bread"
-#~ msgstr "Brot"
-
-#~ msgctxt "ware"
-#~ msgid "Corn"
-#~ msgstr "Mais"
-
-#~ msgctxt "ware"
-#~ msgid "Fish"
-#~ msgstr "Fisch"
-
-#~ msgctxt "ware"
-#~ msgid "Flour"
-#~ msgstr "Mehl"
-
-#~ msgctxt "ware"
-#~ msgid "Honey"
-#~ msgstr "Honig"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Honey Bread"
-#~ msgstr "Honigbrot"
-
-#~ msgctxt "ware"
-#~ msgid "Leather"
-#~ msgstr "Leder"
-
-#~ msgctxt "ware"
-#~ msgid "Mead"
-#~ msgstr "Met"
-
-#~ msgctxt "ware"
-#~ msgid "Meat"
-#~ msgstr "Fleisch"
-
-#~ msgctxt "ware"
-#~ msgid "Rye"
-#~ msgstr "Roggen"
-
-#~ msgctxt "ware"
-#~ msgid "Wheat"
-#~ msgstr "Weizen"
-
-#~ msgctxt "ware"
-#~ msgid "Wine"
-#~ msgstr "Wein"
-
-#~ msgctxt "ware"
-#~ msgid "Wool"
-#~ msgstr "Wolle"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Beekeeper"
-#~ msgstr "Imkermeister"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Beekeeper"
-#~ msgstr "Imkerlehrling"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Beekeeper"
-#~ msgstr "Imkergeselle"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Donkey"
-#~ msgstr "Esel"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Horse"
-#~ msgstr "Pferd"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Ox"
-#~ msgstr "Ochse"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Reindeer"
-#~ msgstr "Rentier"

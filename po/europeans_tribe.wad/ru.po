@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-17 03:06+0200\n"
+"POT-Creation-Date: 2023-09-18 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -914,10 +914,9 @@ msgstr "садит ягодник"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting grape"
-msgstr "садит виноград"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
@@ -936,10 +935,9 @@ msgstr "собирает ягоды"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting grape"
-msgstr "собирает виноград"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
@@ -962,40 +960,35 @@ msgid "Out of Fields"
 msgstr "Место под засев исчерпано"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:146
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
-msgstr "Работник этой фермы не имеет свободной земли под засев."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Reed Yard"
-msgstr "Тростник"
+msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:108
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
-msgstr "Работник этой фермы не имеет свободной земли под засев."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Fruit Farm"
-msgstr "Фрукт"
+msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this fruit farm has no cleared soil to plant his seeds."
-msgstr "Работник этой фермы не имеет свободной земли под засев."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -4756,24 +4749,21 @@ msgstr "Черпает воду из недр."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1921
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
-msgstr "Сеет и убирает кукурузу, рожь и пшеницу."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1928
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed and fruits."
-msgstr "Сеет и убирает кукурузу, рожь и пшеницу."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1935
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed, fruits and grape."
-msgstr "Сеет и убирает кукурузу, рожь и пшеницу."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
@@ -6142,534 +6132,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (harvested)"
-#~ msgstr "Ячменное поле (убрано)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (medium)"
-#~ msgstr "Ячменное поле (растет)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (ripe)"
-#~ msgstr "Ячменное поле (спелое)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (small)"
-#~ msgstr "Ячменное поле (ростки)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (tiny)"
-#~ msgstr "Ячменное поле (крохотное)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (harvested)"
-#~ msgstr "Козельцовое поле (убрано)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (medium)"
-#~ msgstr "Козельцовое поле (среднее)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (ripe)"
-#~ msgstr "Козельцовое поле (крохотное)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (small)"
-#~ msgstr "Козельцовое поле (малое)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (tiny)"
-#~ msgstr "Козельцовое поле (крохотное)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (harvested)"
-#~ msgstr "Кукурузное поле (убрано)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (medium)"
-#~ msgstr "Кукурузное поле (среднее)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (ripe)"
-#~ msgstr "Кукурузное поле (зрелое)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (small)"
-#~ msgstr "Кукурузное поле (малое)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (tiny)"
-#~ msgstr "Кукурузное поле (крохотное)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (harvested)"
-#~ msgstr "Ржаное поле (убрано)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (medium)"
-#~ msgstr "Рожь (растущая)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (ripe)"
-#~ msgstr "Ржаное поле (спелое)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (small)"
-#~ msgstr "Ржаное поле (ростки)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (tiny)"
-#~ msgstr "Ржаное поле (крохотное)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (harvested)"
-#~ msgstr "Пшеничное поле (убрано)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (medium)"
-#~ msgstr "Пшеничное поле (среднее)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (ripe)"
-#~ msgstr "Пшеничное поле (зрелое)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (small)"
-#~ msgstr "Пшеничное поле (малое)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (tiny)"
-#~ msgstr "Пшеничное поле (крохотное)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Animal Farm"
-#~ msgstr "Продвинутая звероферма"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing wool"
-#~ msgstr "стрижет шерсть"
-
-#~ msgctxt "europeans_building"
-#~ msgid "rearing cattle"
-#~ msgstr "растит скот"
-
-#~ msgctxt "europeans_building"
-#~ msgid "rearing donkeys"
-#~ msgstr "растит ослов"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing meat"
-#~ msgstr "производит мясо"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding fish"
-#~ msgstr "разводит рыбу"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Animal Farm"
-#~ msgstr "Базовый скотный двор"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Big Animal Farm"
-#~ msgstr "Большая звероферма"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding horses"
-#~ msgstr "разводит лошадей"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Animal Farm"
-#~ msgstr "Стандартная звероферма"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Beekeeper’s House"
-#~ msgstr "Продвинутая Пасека"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making honey"
-#~ msgstr "собирает мед"
-
-#~ msgid "No Flowers"
-#~ msgstr "Нет цветов"
-
-#~ msgid "Out of Flowers"
-#~ msgstr "Больше нет цветов"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The beekeeper working at this beekeepers’s house can’t find any flowering "
-#~ "fields or bushes in his work area. You should consider building another "
-#~ "farm or berry farm nearby, or dismantling or destroying this building."
-#~ msgstr ""
-#~ "Пасечник отсюда не может найти цветущие поля или кусты в своей рабочей "
-#~ "области. Вам стоит построить неподалеку фермы или разбить ягодник, или же "
-#~ "разобрать или снести это здание."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Beekeeper’s Hut"
-#~ msgstr "Базовая Пасека"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Beekeeper’s House"
-#~ msgstr "Обычная Пасека"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Farm"
-#~ msgstr "Продвинутая ферма"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting barley"
-#~ msgstr "сеет ячмень"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting berry bushes"
-#~ msgstr "садит ягодник"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting blackroot"
-#~ msgstr "сеет козелец"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting corn"
-#~ msgstr "сеет кукурузу"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting rye"
-#~ msgstr "сеет рожь"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting wheat"
-#~ msgstr "сеет пшеницу"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting barley"
-#~ msgstr "жнет ячмень"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting berries"
-#~ msgstr "собирает ягоды"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting blackroot"
-#~ msgstr "собирает козелец"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting corn"
-#~ msgstr "собирает кукурузу"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting rye"
-#~ msgstr "жнет рожь"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting wheat"
-#~ msgstr "жнет пшеницу"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Farm"
-#~ msgstr "Базовая Ферма"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Farm"
-#~ msgstr "Стандартная ферма"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery"
-#~ msgstr "Продвинутая пивоварня"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing beer"
-#~ msgstr "варит пиво"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing mead"
-#~ msgstr "варит медовуху"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing strong beer"
-#~ msgstr "варит крепкое пиво"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Brewery"
-#~ msgstr "Базовая Пивоварня"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Brewery"
-#~ msgstr "Обычная пивоварня"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery and Winery"
-#~ msgstr "Продвинутая пивоварня и Винодельня"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making wine"
-#~ msgstr "делает вино"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Mill"
-#~ msgstr "Продвинутая мельница"
-
-#~ msgctxt "europeans_building"
-#~ msgid "grinding rye and wheat"
-#~ msgstr "мелет рожь и пшеницу"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Mill"
-#~ msgstr "Базовая мельница"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Mill"
-#~ msgstr "Обычная  мельница"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting beekeeper"
-#~ msgstr "нанимает пасечника"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The animal farm produces leather, which is used as a raw material for "
-#~ "making boots."
-#~ msgstr ""
-#~ "Звероферма производит кожу, которая используется в качестве сырья для "
-#~ "изготовления ботинок."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Wool is the hair of sheep. Weaving mills use it to make armor. Animal "
-#~ "farms with level 4 or 5 can produce wool."
-#~ msgstr ""
-#~ "Шерсть - это волосяной покров овец. Ткацкие фабрики изготавливают из нее "
-#~ "доспехи. Зверофермы с уровнем 4 или 5 могут производить шерсть."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Rye is essential for survival."
-#~ msgstr "Рожь - основа выживания."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Rye is produced by farms and used by mills to produce mixed flour."
-#~ msgstr ""
-#~ "Выращенную на полях рожь и пшеницу мелят в мучную смесь на мельницах."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Wheat is essential for survival."
-#~ msgstr "Без пшеницы нет и жизни."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Wheat is produced by farms and used by mills to produce mixed flour."
-#~ msgstr "Растет пшеница на полях, из нее на мельнице мелят муку."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Barley is a slow-growing grain that is used for brewing beer or mead."
-#~ msgstr ""
-#~ "Ячмень - медленно растущая культура, идущая на приготовление пива и "
-#~ "медовухи."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Honey is produced by bees belonging to a beekeeper. It is used to brew "
-#~ "mead."
-#~ msgstr "Мед забирается пасечником из ульев. Из него варят медовуху."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Carries items along your roads. They are reared in an animal farm."
-#~ msgstr "Перевозят грузы по дорогам. Их выращивают на скотных дворах."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Donkeys help to carry items along busy roads. They are reared in an "
-#~ "animal farm."
-#~ msgstr ""
-#~ "Ослы помогают перевозить предметы по оживленным дорогам. Они выращиваются "
-#~ "на скотном дворе."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Horses help to carry items along busy roads. They are reared in an animal "
-#~ "farm."
-#~ msgstr ""
-#~ "Лошади помогают перевозить предметы по оживленным дорогам. Они "
-#~ "выращиваются на скотном дворе."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Reindeers help to carry items along busy roads. They are reared in an "
-#~ "animal farm."
-#~ msgstr ""
-#~ "Олени помогают перевозить предметы по оживленным дорогам. Они "
-#~ "выращиваются на скотном дворе."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Lets bees swarm over flowers, then gathers the honey."
-#~ msgstr "Выпускает пчел собирать нектар и собирает мед."
-
-#~ msgid "This field has just been planted."
-#~ msgstr "Это поле только что засеяно."
-
-#~ msgid "This field is growing."
-#~ msgstr "Это поле растет."
-
-#~ msgid "This field is ready for harvesting."
-#~ msgstr "Поле готово к уборке."
-
-#~ msgid "This field has been harvested."
-#~ msgstr "Урожай с этого поля собран."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Keeps bees and lets them swarm over flowering fields to produce honey."
-#~ msgstr ""
-#~ "Содержит пчел и позволяет им роиться над цветущими полями для "
-#~ "производства меда."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) "
-#~ "or bushes (berry bushes or grapevines) nearby."
-#~ msgstr ""
-#~ "Нужны поля среднего размера (ячмень, рожь, пшеница, тростник, кукуруза "
-#~ "или козелец) или кустарники (ягодные кусты или виноградная лоза) "
-#~ "поблизости."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Grinds corn to produce cornmeal."
-#~ msgstr "Перемалывает кукурузу, в кукурузную муку."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed "
-#~ "flour."
-#~ msgstr ""
-#~ "Размалывает кукурузу в муку. Размалывает пшеницу и рожь в смешаную муку."
-
-#~ msgctxt "building"
-#~ msgid "Prepares rations to feed the scouts and miners."
-#~ msgstr "Готовит пайки для питания разведчиков и шахтеров."
-
-#~ msgctxt "building"
-#~ msgid ""
-#~ "Prepares rations and snacks to feed the miners in the basic and deep "
-#~ "mines."
-#~ msgstr ""
-#~ "Готовит пайки и закуски для питания шахтеров в простых и глубоких шахтах."
-
-#~ msgctxt "building"
-#~ msgid "Prepares rations, snacks and meals to feed all miners."
-#~ msgstr "Готовит пайки, закуски и обеды для питания всех шахтеров."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer to keep the miners strong and happy."
-#~ msgstr "Производит пиво, чтобы шахтеры были сильны и довольны."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer and mead to keep the miners strong and happy."
-#~ msgstr "Производит пиво и медовуху, чтобы шахтеры были сильны и довольны."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer, mead and strong_beer for trainingssites."
-#~ msgstr "Производит пиво, медовуху и крепкое пиво для тренировочных центров."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces mead and wine."
-#~ msgstr "Производит медовуху и вино."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-#~ msgstr "Сеет и убирает ячмень, козелец, кукурузу, рожь и пшеницу."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
-#~ msgstr ""
-#~ "Сеет и собирает урожай ячменя, козельца, кукурузы, фруктов, винограда, "
-#~ "ржи и пшеницы."
-
-#~ msgctxt "ware"
-#~ msgid "Barley"
-#~ msgstr "Ячмень"
-
-#~ msgctxt "ware"
-#~ msgid "Beer"
-#~ msgstr "Пиво"
-
-#~ msgctxt "ware"
-#~ msgid "Strong Beer"
-#~ msgstr "Крепкое пиво"
-
-#~ msgctxt "ware"
-#~ msgid "Blackroot"
-#~ msgstr "Козелец"
-
-#~ msgctxt "ware"
-#~ msgid "Corn"
-#~ msgstr "Кукуруза"
-
-#~ msgctxt "ware"
-#~ msgid "Fish"
-#~ msgstr "Рыба"
-
-#~ msgctxt "ware"
-#~ msgid "Flour"
-#~ msgstr "Мука"
-
-#~ msgctxt "ware"
-#~ msgid "Honey"
-#~ msgstr "Мёд"
-
-#~ msgctxt "ware"
-#~ msgid "Leather"
-#~ msgstr "Кожа"
-
-#~ msgctxt "ware"
-#~ msgid "Mead"
-#~ msgstr "Медовуха"
-
-#~ msgctxt "ware"
-#~ msgid "Meat"
-#~ msgstr "Мясо"
-
-#~ msgctxt "ware"
-#~ msgid "Rye"
-#~ msgstr "Рожь"
-
-#~ msgctxt "ware"
-#~ msgid "Wheat"
-#~ msgstr "Пшеница"
-
-#~ msgctxt "ware"
-#~ msgid "Wine"
-#~ msgstr "Вино"
-
-#~ msgctxt "ware"
-#~ msgid "Wool"
-#~ msgstr "Шерсть"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Beekeeper"
-#~ msgstr "Продвинутый Пасечник"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Beekeeper"
-#~ msgstr "Базовый Пасечник"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Beekeeper"
-#~ msgstr "Обычный Пасечник"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Donkey"
-#~ msgstr "Осёл"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Horse"
-#~ msgstr "Лошадь"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Ox"
-#~ msgstr "Бык"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Reindeer"
-#~ msgstr "Северный олень"

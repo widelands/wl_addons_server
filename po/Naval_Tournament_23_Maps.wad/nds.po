@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 03:06+0200\n"
+"POT-Creation-Date: 2023-09-18 03:06+0200\n"
 "PO-Revision-Date: 2023-07-24 20:43+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -22,13 +22,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/Naval_Tournament_23_Maps.wad/addon:6
-msgid "Maps for the Naval Tournament 23"
-msgstr "Kaarten för de Seekriegs-Weddstried ’23"
-
-#: addons/Naval_Tournament_23_Maps.wad/addon:9
+#: addons/Naval_Tournament_23_Maps.wad/addon:4
 msgid "Naval Tournament 23 Maps"
 msgstr "Seekriegs-Weddstried ’23 – Kaarten"
+
+#: addons/Naval_Tournament_23_Maps.wad/addon:5
+msgid "Maps for the Naval Tournament 23"
+msgstr "Kaarten för de Seekriegs-Weddstried ’23"
 
 #: addons/Naval_Tournament_23_Maps.wad/dirnames:4
 msgid "Naval Tournament 23"
@@ -39,8 +39,18 @@ msgid "Naval Ice wars"
 msgstr "See-Ieskriegen"
 
 #: input:8 standard
+msgid "Plateau (Naval Warfare)"
+msgstr ""
+
+#: input:8 standard
 msgid "Together We’re Strong (naval invasion)"
 msgstr "Mitnanner sünd wi stark (Seekrieg)"
+
+#: input:10 standard
+msgid ""
+"A large island with coastal plains and a forested plateau. Rich in resources "
+"and plenty of flat building space along the coasts."
+msgstr ""
 
 #: input:10 standard
 msgid "Autumn became winter. Some things are frozen, but not the war."

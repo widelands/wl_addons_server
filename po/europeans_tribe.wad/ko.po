@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-17 03:06+0200\n"
+"POT-Creation-Date: 2023-09-18 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -907,10 +907,9 @@ msgstr "베리 덤불 심기"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting grape"
-msgstr "포도 심기"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
@@ -929,10 +928,9 @@ msgstr "베리 수확"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting grape"
-msgstr "포도 수확"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
@@ -955,11 +953,10 @@ msgid "Out of Fields"
 msgstr "수확지 부족"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:146
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
-msgstr "이 농장은 더 이상 재배가 불가능합니다."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:8
@@ -968,26 +965,23 @@ msgid "Reed Yard"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:108
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
-msgstr "이 농장은 더 이상 재배가 불가능합니다."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Fruit Farm"
-msgstr "기본 농장"
+msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this fruit farm has no cleared soil to plant his seeds."
-msgstr "이 농장은 더 이상 재배가 불가능합니다."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -4622,10 +4616,9 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1921
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
-msgstr "갈대 수확"
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1928
@@ -5971,262 +5964,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (harvested)"
-#~ msgstr "보리 수확지 (수확 완료)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (medium)"
-#~ msgstr "보리 수확지 (중간 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (ripe)"
-#~ msgstr "보리 수확지 (수확 가능)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (small)"
-#~ msgstr "보리 수확지 (초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (tiny)"
-#~ msgstr "보리 수확지 (극초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (harvested)"
-#~ msgstr "검단나무 수확지 (수확 완료)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (medium)"
-#~ msgstr "검단나무 수확지 (중간 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (ripe)"
-#~ msgstr "검단나무 수확지 (수확 가능)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (small)"
-#~ msgstr "검단나무 수확지 (초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (tiny)"
-#~ msgstr "검단나무 수확지 (극초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (harvested)"
-#~ msgstr "옥수수 수확지 (수확 완료)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (medium)"
-#~ msgstr "옥수수 수확지 (중간 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (ripe)"
-#~ msgstr "옥수수 수확지 (수확 가능)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (small)"
-#~ msgstr "옥수수 수확지 (초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (tiny)"
-#~ msgstr "옥수수 수확지 (극초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (harvested)"
-#~ msgstr "호밀 수확지 (수확 완료)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (medium)"
-#~ msgstr "호밀 수확지 (중간 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (ripe)"
-#~ msgstr "호밀 수확지 (수확 가능)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (small)"
-#~ msgstr "호밀 수확지 (초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (tiny)"
-#~ msgstr "호밀 수확지 (극초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (harvested)"
-#~ msgstr "밀 수확지 (수확 완료)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (medium)"
-#~ msgstr "밀 수확지 (중간 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (ripe)"
-#~ msgstr "밀 수확지 (수확 가능)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (small)"
-#~ msgstr "밀 수확지 (초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (tiny)"
-#~ msgstr "밀 수확지 (극초반 단계)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing wool"
-#~ msgstr "모피 생산"
-
-#~ msgctxt "europeans_building"
-#~ msgid "rearing cattle"
-#~ msgstr "가축 사육"
-
-#~ msgctxt "europeans_building"
-#~ msgid "rearing donkeys"
-#~ msgstr "당나귀 사육"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing meat"
-#~ msgstr "고기 생산"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding fish"
-#~ msgstr "물고기 양식"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Animal Farm"
-#~ msgstr "기본 동물 농장"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding horses"
-#~ msgstr "말 사육"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Beekeeper’s House"
-#~ msgstr "강화 양봉업소"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making honey"
-#~ msgstr "꿀 생산"
-
-#~ msgid "No Flowers"
-#~ msgstr "꽃 없음"
-
-#~ msgid "Out of Flowers"
-#~ msgstr "꽃 부족"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The beekeeper working at this beekeepers’s house can’t find any flowering "
-#~ "fields or bushes in his work area. You should consider building another "
-#~ "farm or berry farm nearby, or dismantling or destroying this building."
-#~ msgstr ""
-#~ "양봉업자가 이 양봉업소에서 더 이상 꽃을 찾을 수 없습니다. 주변에 새 농장"
-#~ "을 짓거나 기존의 농장을 제거하세요."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Beekeeper’s Hut"
-#~ msgstr "기본 양봉업자의 오두막"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Beekeeper’s House"
-#~ msgstr "일반 양봉업자의 오두막"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting barley"
-#~ msgstr "보리 심기"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting berry bushes"
-#~ msgstr "베리 덤불 심기"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting blackroot"
-#~ msgstr "검단나무 심기"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting corn"
-#~ msgstr "옥수수 심기"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting rye"
-#~ msgstr "호밀 심기"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting wheat"
-#~ msgstr "밀 심기"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting barley"
-#~ msgstr "보리 수확"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting berries"
-#~ msgstr "베리 수확"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting blackroot"
-#~ msgstr "검단나무 수확"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting corn"
-#~ msgstr "옥수수 수확"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting rye"
-#~ msgstr "호밀 수확"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting wheat"
-#~ msgstr "밀 수확"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery"
-#~ msgstr "강화 양조장"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing beer"
-#~ msgstr "맥주 제작"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing mead"
-#~ msgstr "벌꿀 술 제작"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing strong beer"
-#~ msgstr "독한 맥주 제작"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Brewery"
-#~ msgstr "기본 양조장"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Brewery"
-#~ msgstr "일반 양조장"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery and Winery"
-#~ msgstr "강화 양조장"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making wine"
-#~ msgstr "와인 제조"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Mill"
-#~ msgstr "강화 제분소"
-
-#~ msgctxt "europeans_building"
-#~ msgid "grinding rye and wheat"
-#~ msgstr "호밀과 밀 갈기"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Mill"
-#~ msgstr "기본 제분소"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Mill"
-#~ msgstr "일반 제분소"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting beekeeper"
-#~ msgstr "양봉업자 모집"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-17 03:06+0200\n"
+"POT-Creation-Date: 2023-09-18 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -27,14 +27,10 @@ msgid "Europeans Tribe"
 msgstr "Europeus"
 
 #: addons/europeans_tribe.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings, workers and some "
 "wares from other tribes, until own graphics are available."
 msgstr ""
-"Afegeix una cultura nova, anomenada «europeus». Fa servir edificis, "
-"treballadors i alguns béns de les altres tribus, fins que es disposi de "
-"gràfics propis. No és compatible amb la versió 3.7.9 o anterior."
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/medium/init.lua:9
 msgid "Blueberry Bush (medium)"
@@ -912,10 +908,9 @@ msgstr "plantar un arbust de baies"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting grape"
-msgstr "plantar ceps"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
@@ -934,10 +929,9 @@ msgstr "recol·lectar les baies"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting grape"
-msgstr "veremar"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
@@ -960,12 +954,10 @@ msgid "Out of Fields"
 msgstr "Sense camps"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:146
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
 msgstr ""
-"L'agricultor d'aquesta granja no té terreny lliure per sembrar-hi llavors."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:8
@@ -974,28 +966,23 @@ msgid "Reed Yard"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:108
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
 msgstr ""
-"L'agricultor d'aquesta granja no té terreny lliure per sembrar-hi llavors."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Fruit Farm"
-msgstr "Fruita"
+msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this fruit farm has no cleared soil to plant his seeds."
 msgstr ""
-"L'agricultor d'aquesta granja no té terreny lliure per sembrar-hi llavors."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -4753,24 +4740,21 @@ msgstr "Extrau aigua del sòl."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1921
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
-msgstr "Sembra i conrea panís, sègol i blat."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1928
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed and fruits."
-msgstr "Sembra i conrea panís, sègol i blat."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1935
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed, fruits and grape."
-msgstr "Sembra i conrea panís, sègol i blat."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1942
@@ -6130,498 +6114,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (harvested)"
-#~ msgstr "Camp d'ordi (recol·lectat)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (medium)"
-#~ msgstr "Camp d'ordi (ordi per madurar)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (ripe)"
-#~ msgstr "Camp d'ordi (ordi madurat)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (small)"
-#~ msgstr "Camp d'ordi (jove)"
-
-#~ msgctxt "immovable"
-#~ msgid "Barley Field (tiny)"
-#~ msgstr "Camp d'ordi (molt jove)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (harvested)"
-#~ msgstr "Camp de negrarrel (recol·lectat)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (medium)"
-#~ msgstr "Camp de negrarrel (negrarrel per madurar)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (ripe)"
-#~ msgstr "Camp de negrarrel (negrarrel madura)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (small)"
-#~ msgstr "Camp de negrarrel (jove)"
-
-#~ msgctxt "immovable"
-#~ msgid "Blackroot Field (tiny)"
-#~ msgstr "Camp de negrarrel (molt jove)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (harvested)"
-#~ msgstr "Panissar (recol·lectat)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (medium)"
-#~ msgstr "Panissar (panís per madurar)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (ripe)"
-#~ msgstr "Panissar (panís madur)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (small)"
-#~ msgstr "Panissar (jove)"
-
-#~ msgctxt "immovable"
-#~ msgid "Cornfield (tiny)"
-#~ msgstr "Panissar (molt jove)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (harvested)"
-#~ msgstr "Camp de sègol (recol·lectat)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (medium)"
-#~ msgstr "Camp de sègol (sègol per madurar)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (ripe)"
-#~ msgstr "Camp de sègol (sègol madur)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (small)"
-#~ msgstr "Camp de sègol (jove)"
-
-#~ msgctxt "immovable"
-#~ msgid "Rye Field (tiny)"
-#~ msgstr "Camp de sègol (molt jove)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (harvested)"
-#~ msgstr "Camp de blat (recol·lectat)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (medium)"
-#~ msgstr "Camp de blat (blat per madurar)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (ripe)"
-#~ msgstr "Camp de blat (blat madur)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (small)"
-#~ msgstr "Camp de blat (jove)"
-
-#~ msgctxt "immovable"
-#~ msgid "Wheat Field (tiny)"
-#~ msgstr "Camp de blat (molt jove)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Animal Farm"
-#~ msgstr "Granja d'animals avançada"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing wool"
-#~ msgstr "produir llana"
-
-#~ msgctxt "europeans_building"
-#~ msgid "rearing cattle"
-#~ msgstr "criar bous"
-
-#~ msgctxt "europeans_building"
-#~ msgid "rearing donkeys"
-#~ msgstr "criar ases"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing meat"
-#~ msgstr "produir carn"
-
-#~ msgctxt "europeans_building"
-#~ msgid "producing meat and leather"
-#~ msgstr "produir carn i pell"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding fish"
-#~ msgstr "criar peixos"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Animal Farm"
-#~ msgstr "Granja d'animals bàsica"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Big Animal Farm"
-#~ msgstr "Granja d'animals gran"
-
-#~ msgctxt "europeans_building"
-#~ msgid "breeding horses"
-#~ msgstr "criar cavalls"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Animal Farm"
-#~ msgstr "Granja d'animals normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Beekeeper’s House"
-#~ msgstr "Casa de l'apicultor avançada"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making honey"
-#~ msgstr "fer mel"
-
-#~ msgid "No Flowers"
-#~ msgstr "No hi ha flors"
-
-#~ msgid "Out of Flowers"
-#~ msgstr "Sense flors"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The beekeeper working at this beekeepers’s house can’t find any flowering "
-#~ "fields or bushes in his work area. You should consider building another "
-#~ "farm or berry farm nearby, or dismantling or destroying this building."
-#~ msgstr ""
-#~ "L'apicultor que viu aquí no pot trobar camps de flors o arbustos per "
-#~ "treballar a la seva àrea de treball. Hauríeu de considerar construir una "
-#~ "altra masoveria de blat o de baies prop, o desmantellar o destruir aquest "
-#~ "edifici."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Beekeeper’s Hut"
-#~ msgstr "Cabana de l'apicultor bàsica"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Beekeeper’s House"
-#~ msgstr "Casa de l'apicultor normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Farm"
-#~ msgstr "Granja avançada"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting barley"
-#~ msgstr "plantar ordi"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting berry bushes"
-#~ msgstr "plantar arbustos de baies"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting blackroot"
-#~ msgstr "plantar negrarrel"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting corn"
-#~ msgstr "plantar panís"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting rye"
-#~ msgstr "plantar sègol"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting wheat"
-#~ msgstr "plantar blat"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting barley"
-#~ msgstr "recol·lectar ordi"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting berries"
-#~ msgstr "recollir baies"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting blackroot"
-#~ msgstr "recol·lectar negrarrel"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting corn"
-#~ msgstr "recol·lectar panís"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting rye"
-#~ msgstr "recol·lectar sègol"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting wheat"
-#~ msgstr "recol·lectar blat"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Farm"
-#~ msgstr "Granja bàsica"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Farm"
-#~ msgstr "Granja normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery"
-#~ msgstr "Cerveseria avançada"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing beer"
-#~ msgstr "preparar cervesa"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing mead"
-#~ msgstr "preparar aiguamel"
-
-#~ msgctxt "europeans_building"
-#~ msgid "brewing strong beer"
-#~ msgstr "preparar cervesa negra"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Brewery"
-#~ msgstr "Cerveseria bàsica"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Brewery"
-#~ msgstr "Cerveseria normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Brewery and Winery"
-#~ msgstr "Cerveseria i celler avançats"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making wine"
-#~ msgstr "fer vi"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Mill"
-#~ msgstr "Molí avançat"
-
-#~ msgctxt "europeans_building"
-#~ msgid "grinding rye and wheat"
-#~ msgstr "moldre sègol i blat"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Mill"
-#~ msgstr "Molí bàsic"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Mill"
-#~ msgstr "Molí normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting beekeeper"
-#~ msgstr "reclutar un apicultor"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Rye is essential for survival."
-#~ msgstr "El sègol és essencial per sobreviure."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Rye is produced by farms and used by mills to produce mixed flour."
-#~ msgstr ""
-#~ "El sègol es produeix a les masoveries i s'usa en molins per obtenir "
-#~ "barreja de farina."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Wheat is essential for survival."
-#~ msgstr "El blat és essencial per sobreviure."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Wheat is produced by farms and used by mills to produce mixed flour."
-#~ msgstr ""
-#~ "El blat es produeix a les masoveries i s'usa en molins per aconseguir-ne "
-#~ "farina barrejada."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Barley is a slow-growing grain that is used for brewing beer or mead."
-#~ msgstr ""
-#~ "L'ordi és un gra de creixement lent que s'usa per fer fermentar cervesa o "
-#~ "aiguamel."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Honey is produced by bees belonging to a beekeeper. It is used to brew "
-#~ "mead."
-#~ msgstr ""
-#~ "La mel la produeixen les abelles d'un apicultor. S'empra per fer aiguamel."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Carries items along your roads. They are reared in an animal farm."
-#~ msgstr ""
-#~ "Porta coses d'un lloc a l'altre pels camins. Es crien en granges "
-#~ "d'animals."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Donkeys help to carry items along busy roads. They are reared in an "
-#~ "animal farm."
-#~ msgstr ""
-#~ "Els ases ajuden a transportar béns en camins molt transitats. Es crien en "
-#~ "granges d'animals."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Horses help to carry items along busy roads. They are reared in an animal "
-#~ "farm."
-#~ msgstr ""
-#~ "Els cavalls ajuden a transportar béns en camins molt transitats. Es crien "
-#~ "en granges d'animals."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Reindeers help to carry items along busy roads. They are reared in an "
-#~ "animal farm."
-#~ msgstr ""
-#~ "Els rens ajuden a transportar béns en camins molt transitats. Es crien en "
-#~ "granges d'animals."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Lets bees swarm over flowers, then gathers the honey."
-#~ msgstr ""
-#~ "Condueix les abelles cap a les flors i després en recol·lecta la mel."
-
-#~ msgid "This field has just been planted."
-#~ msgstr "Aquest camp acaba de plantar-se."
-
-#~ msgid "This field is growing."
-#~ msgstr "El camp està creixent."
-
-#~ msgid "This field is ready for harvesting."
-#~ msgstr "Aquest camp ja es pot segar."
-
-#~ msgid "This field has been harvested."
-#~ msgstr "Ja s'ha fet la collita d'aquest camp."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Keeps bees and lets them swarm over flowering fields to produce honey."
-#~ msgstr ""
-#~ "Cuida abelles i les condueix cap a camps de flors per obtenir-ne mel."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Needs medium-sized fields (barley, rye, wheat, reed, corn or blackroot) "
-#~ "or bushes (berry bushes or grapevines) nearby."
-#~ msgstr ""
-#~ "Necessita camps mitjans (ordi, sègol, blat, juncs, panís o negrarrel) o "
-#~ "arbustos (ceps o altres arbustos de baies) a prop."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Grinds corn to produce cornmeal."
-#~ msgstr "Mol el panís per fer-ne farina."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed "
-#~ "flour."
-#~ msgstr ""
-#~ "Mol el panís per fer-ne farina. Mol el blat i el sègol per fer-ne farina "
-#~ "barrejada."
-
-#~ msgctxt "building"
-#~ msgid "Prepares rations to feed the scouts and miners."
-#~ msgstr "Elabora racions per alimentar els exploradors i els miners."
-
-#~ msgctxt "building"
-#~ msgid ""
-#~ "Prepares rations and snacks to feed the miners in the basic and deep "
-#~ "mines."
-#~ msgstr ""
-#~ "Elabora racions i aperitius per als miners de les mines bàsiques i mines "
-#~ "profundes."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer to keep the miners strong and happy."
-#~ msgstr "Produeix cervesa per mantenir els miners forts i feliços."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer and mead to keep the miners strong and happy."
-#~ msgstr ""
-#~ "Produeix cervesa i aiguamel per mantenir els miners forts i feliços."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces beer, mead and strong_beer for trainingssites."
-#~ msgstr ""
-#~ "Produeix cervesa, aiguamel i cervesa negra per als camps d'entrenament."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces mead and wine."
-#~ msgstr "Produeix aiguamel i vi."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-#~ msgstr "Sembra i conrea ordi, negrarrel, panís, sègol i blat."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
-#~ msgstr "Sembra i conrea ordi, negrarrel, panís, fruita, raïm, sègol i blat."
-
-#~ msgctxt "ware"
-#~ msgid "Beer"
-#~ msgstr "Cervesa"
-
-#~ msgctxt "ware"
-#~ msgid "Corn"
-#~ msgstr "Panís"
-
-#~ msgctxt "ware"
-#~ msgid "Fish"
-#~ msgstr "Peix"
-
-#~ msgctxt "ware"
-#~ msgid "Flour"
-#~ msgstr "Farina"
-
-#~ msgctxt "ware"
-#~ msgid "Honey"
-#~ msgstr "Mel"
-
-#~ msgctxt "ware"
-#~ msgid "Rye"
-#~ msgstr "Sègol"
-
-#~ msgctxt "ware"
-#~ msgid "Wine"
-#~ msgstr "Vi"
-
-#~ msgctxt "ware"
-#~ msgid "Wool"
-#~ msgstr "Llana"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Beekeeper"
-#~ msgstr "Apicultor avançat"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Beekeeper"
-#~ msgstr "Apicultor bàsic"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Beekeeper"
-#~ msgstr "Apicultor normal"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Donkey"
-#~ msgstr "Ase"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Horse"
-#~ msgstr "Cavall"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Ox"
-#~ msgstr "Bou"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Reindeer"
-#~ msgstr "Ren"
