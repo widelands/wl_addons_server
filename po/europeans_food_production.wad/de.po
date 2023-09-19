@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Iwan Gabovitch, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 03:06+0200\n"
+"POT-Creation-Date: 2023-09-19 03:06+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
+"Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -531,6 +535,9 @@ msgid ""
 "fields or bushes in his work area. You should consider building another farm "
 "or berry farm nearby, or dismantling or destroying this building."
 msgstr ""
+"Der Imker in dieser Imkerei kann keine blühenden Felder in seinem "
+"Arbeitsbereich finden. Du solltest dieses Gebäude abreißen oder zerstören "
+"oder einen Bauernhof oder eine Beerenzucht in der Nähe bauen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:8
@@ -1247,16 +1254,19 @@ msgid ""
 "Disabled terraforming (diking of water bodies) because of lack of "
 "compatibility with seafaring."
 msgstr ""
+"Beginne das Spiel mit drei Schiffen auf dem Ozean und nur einer Hand voll an "
+"Gütern. Das Terraforming (Eindeichen von Wasserfeldern) wurde deaktiviert, "
+"da es nicht kompatibel mit Seefahrt ist."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_ai.lua:11
 msgid "Headquarters (AI optimized)"
-msgstr ""
+msgstr "Hauptquartier (KI optimiert)"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_seafaring.lua:11
 msgid "Headquarters (with seafaring)"
-msgstr ""
+msgstr "Hauptquartier (mit Seefahrt)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_seafaring.lua:13
@@ -1264,11 +1274,14 @@ msgid ""
 "Start the game with your headquarters only. Disabled terraforming (diking of "
 "water bodies) because of lack of compatibility with seafaring."
 msgstr ""
+"Beginne das Spiel nur mit deinem Hauptquartier. Das Terraforming (Eindeichen "
+"von Wasserfeldern) wurde deaktiviert, da es nicht kompatibel mit Seefahrt "
+"ist."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_terraforming.lua:11
 msgid "Headquarters (with terraforming)"
-msgstr ""
+msgstr "Hauptquartier (mit Bodenverbesserung)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_terraforming.lua:13
@@ -1276,11 +1289,14 @@ msgid ""
 "Start the game with your headquarters only. Disabled seafaring because of "
 "lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
+"Beginne das Spiel nur mit deinem Hauptquartier. Die Seefahrt wurde "
+"deaktiviert, aufgrund fehlender Kompatibilität mit dem Terraforming "
+"(Eindeichen von Wasserfeldern)."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost"
-msgstr ""
+msgstr "Handelsposten"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:13
@@ -1289,6 +1305,10 @@ msgid ""
 "some wares can be bought for gold, quartz and diamonds. Disabled seafaring "
 "because of lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
+"Diese Startbedingungenthält einen Markt als zusätzliches Gebäude, in dem man "
+"einige Waren für Gold, Bergkristall oder Diamanten kaufen kann. Die Seefahrt "
+"wurde deaktiviert, aufgrund fehlender Kompatibilität mit dem Terraforming "
+"(Eindeichen von Wasserfeldern)."
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/init.lua:10
 msgid "Mark McWire"
@@ -1301,23 +1321,23 @@ msgstr ""
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/init.lua:13
 msgid "This is the culture of the Europeans."
-msgstr ""
+msgstr "Das ist die Kultur der Europäer."
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental Europeans tribe."
-msgstr ""
+msgstr "Das ist der experimentelle Stamm der Europäer."
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:12
 msgctxt "europeans_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "‘%1%’<br>(%2%)"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:109
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Wasser ist Leben!"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:111
@@ -1327,6 +1347,9 @@ msgid ""
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
+"Wasser wird vom Lehmgräber, vom Förster, von allen Bauernhöfen und in der "
+"Bäckerei und der Brauerei benötigt. Die Fischzucht und Schafzucht müssen "
+"auch mir Wasser versorgt werden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:122
@@ -1335,6 +1358,8 @@ msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
 msgstr ""
+"Stämme sind ein grundlegendes Baumaterial. Sie werden durch das Fällen von "
+"Bäumen produziert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:124
@@ -1343,6 +1368,9 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
+"Bei den Europäern werden die Bäume von einem Holzfäller gefällt; Förster "
+"kümmern sich um den Baumnachwuchs. Stämme werden auch in der Köhlerei, der "
+"Werft und dem Sägewerk verwendet."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:134
@@ -1351,12 +1379,15 @@ msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
 "buildings. It is produced out of logs in the wood hardener (basic sawmill)."
 msgstr ""
+" Dieses vom Feuer gehärtete Holz ist so hart wie Eisen und wird für einige "
+"Gebäude benötigt. Es wird vom Holzhärter in einer einfachen Sägemühle aus "
+"Stämmen hergestellt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:144
 msgctxt "europeans_ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Bretter sind ein wichtiges Baumaterial."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:146
@@ -1377,6 +1408,8 @@ msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
 "or from sawmills. It can be processed into charcoal in charcoal burners."
 msgstr ""
+"Holzabfall ist ein Abfallprodukt dass in der Sägemühle oder beim Abriss von "
+"Gebäuden entsteht. Es kann in der Köhlerei zu Holzkohle verarbeitet werden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:167
@@ -1395,6 +1428,7 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
 msgstr ""
+"Stoff wird zum Bau einiger Gebäude benötigt. Er wird aus Reet produziert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:188
@@ -1403,6 +1437,8 @@ msgid ""
 "The animal farm produces leather, which is used as a raw material for making "
 "boots."
 msgstr ""
+"Die Tierzucht produziert Leder, welches als Rohmaterial für die "
+"Stiefelherstellung benutzt wird."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:197
@@ -1411,6 +1447,8 @@ msgid ""
 "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms "
 "with level 4 or 5 can produce wool."
 msgstr ""
+"Wolle ist das Haar der Schafe. Webereien nutzen sie zur Herstellung von "
+"Rüstungen. Tierzuchten der Stufe 4 oder 5 können Wolle produzieren."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:206
@@ -1471,6 +1509,8 @@ msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
 "granite and water."
 msgstr ""
+"Die Europäer produzieren Ziegel in Kalköfen oder Steinmetzen aus Lehm, Stein "
+"und Wasser."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:270
@@ -1480,6 +1520,9 @@ msgid ""
 "in a quarry. Marble is used as a building material and gets chiseled into "
 "marble columns in the stonemason’s house."
 msgstr ""
+"Marmor ist der wunderschöne Stein, welcher aus dem Berg geschnitten oder in "
+"Steinbrüchen abgebaut wird. Marmor wird als Baumaterial verwendet oder beim "
+"Steinmetz zu Marmorsäulen geformt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble Column
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:279
@@ -1489,6 +1532,9 @@ msgid ""
 "needed for nearly every advanced building. They are produced out of marble "
 "at a stonemason’s house."
 msgstr ""
+"Marmorsäulen repräsentieren die hohe Kultur der Europäer, sodass sie für "
+"beinahe jedes verbesserte Gebäude benötigt werden. Sie werden vom Steinmetz "
+"aus Marmor geformt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:288
@@ -1828,6 +1874,8 @@ msgid ""
 "The hammer is an essential tool. Geologists, builders, and smiths all need a "
 "hammer."
 msgstr ""
+"Der Hammer ist ein unentbehrliches Werkzeug. Geologen, Bauarbeiter und "
+"Schmiede benötigen alle einen Hammer."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:681
@@ -1878,6 +1926,9 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the armoe smithy. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Basisrüstung für Soldaten der Europäer. Sie wird in der Rüstungsschmiede "
+"hergestellt. In Kombination mit einem hölzernen Speer ist sie die Ausrüstung "
+"für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:742
@@ -1886,6 +1937,9 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Basisrüstung für Soldaten der Europäer. Er wird in Webereien hergestellt. In "
+"Kombination mit einem hölzernen Speer ist er die Ausrüstung für junge "
+"Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:751
@@ -1895,6 +1949,9 @@ msgid ""
 "smithy and used in a battle arena to protect soldiers with additional health "
 "points."
 msgstr ""
+"Das Kettenhemd ist die mittlere Rüstung der Soldaten der Europäer. Es wird "
+"in einer normalen Rüstungsschmiede hergestellt und in der Kampfarena "
+"benötigt, um die Soldaten durch zusätzliche Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:760
@@ -1903,6 +1960,9 @@ msgid ""
 "The advanced armor is produced in the a smithy and used in the battle arena "
 "to protect soldiers with additional health points."
 msgstr ""
+"Der verbesserte Harnisch wird in einer normalen Rüstungsschmiede hergestellt "
+"und in der Kampfarena benötigt, um die Soldaten durch zusätzliche "
+"Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:769
@@ -1911,6 +1971,8 @@ msgid ""
 "Wooden boots are basic footwear for soldiers to be protect on their feet. "
 "They are produced by the dressmaker."
 msgstr ""
+"Holzschuhe sind die Standard Fußbekleidung der Soldaten zum Schutz der Füße. "
+"Sie werden von einem Schneider hergestellt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:778
@@ -1920,6 +1982,9 @@ msgid ""
 "feet. They are produced by the dressmaker and used to train soldiers’ evade "
 "from level 0 to level 1."
 msgstr ""
+"Robuste Stiefel sind ein ausgezeichnetes Schuhwerk für Soldaten, um "
+"schneller zu Fuß zu sein. Sie werden in der Schneiderei gefertigt und dienen "
+"dazu, das Ausweichen eines Soldaten von Stufe 0 auf Stufe 1 auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:787
@@ -1929,6 +1994,10 @@ msgid ""
 "their feet. They are produced by the dressmaker and used to train soldiers’ "
 "evade from level 1 to level 2."
 msgstr ""
+"Flinke Stiefel sind ein leichtes und widerstandsfähiges Schuhwerk für "
+"Soldaten, um schneller zu Fuß zu sein. Sie werden in der Schneiderei "
+"gefertigt und dienen dazu, das Ausweichen eines Soldaten von Stufe 1 auf "
+"Stufe 2 auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:796
@@ -1937,6 +2006,9 @@ msgid ""
 "Hero boots! The only suitable footwear for a real hero. They are produced by "
 "the dressmaker and used to train soldiers’ evade from level 2 to level 3."
 msgstr ""
+"Heldenstiefel! Das einzig wahre Schuhwerk eines echten Helden. Sie werden in "
+"der Schneiderei gefertigt und dienen dazu, das Ausweichen eines Soldaten von "
+"Stufe 2 auf Stufe 3 auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:808
@@ -1946,6 +2018,9 @@ msgid ""
 "produced in the smithy. In combination with armor, it is the equipment to "
 "fit out young soldiers."
 msgstr ""
+"Dieser Holzspeer ist die Grundwaffe des europäischen Militärsystems. Er wird "
+"in der einfachen Rüstungsschmiede hergestellt. Zusammen mit einem Harnisch "
+"ist er die Ausrüstung für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:817
@@ -1954,6 +2029,9 @@ msgid ""
 "This is a advanced spear with a steel tip. It is produced in a smithy and "
 "used in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
+"Dies ist ein verbesserter Speer mit Stahlspitze. Er wird in der Schmiede "
+"hergestellt und in der Kampfarena – zusammen mit Nahrung – benötigt, um die "
+"Soldaten im Angriff auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:826
@@ -1962,6 +2040,9 @@ msgid ""
 "This is an broad ax. It is produced in a smithy and used in a battle arena – "
 "together with food – to train soldiers in attack."
 msgstr ""
+"Dies ist eine Breitaxt. Sie wird in der Schmiede hergestellt und in der "
+"Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten im Angriff "
+"auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:835
@@ -1970,6 +2051,9 @@ msgid ""
 "This is a broad sword. It is produced in the advanced smithy and used in a "
 "battle arena – together with food – to train soldiers in attack."
 msgstr ""
+"Dies ist ein Breitschwert. Es wird in der Schmiede hergestellt und in der "
+"Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten im Angriff "
+"auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:844
@@ -1979,6 +2063,9 @@ msgid ""
 "smithy. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
+"Der Helm ist die Grundverteidigung eines Soldaten. Er wird in "
+"Rüstungsschmieden hergestellt. Zusammen mit einem Harnisch ist er die "
+"Grundausrüstung für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:853
@@ -1988,6 +2075,9 @@ msgid ""
 "and used in a battle arena – together with food – to train soldiers in "
 "defense."
 msgstr ""
+"Die Maske ist die mittlere Verteidigungsausrüstung eines Soldaten. Sie wird "
+"in der einfachen Rüstungsschmiede hergestellt und in der Kampfarena – "
+"zusammen mit Nahrung – benötigt, um die Soldaten in Verteidigung auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:862
@@ -1996,6 +2086,9 @@ msgid ""
 "This steel shield is produced in a smithy and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
+"Dieser Stahlschild wird in der normalen Rüstungsschmiede hergestellt und in "
+"der Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten in "
+"Verteidigung auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:871
@@ -2005,6 +2098,10 @@ msgid ""
 "are produced in the advanced smithy and used in the advanced battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
+"Diese verbesserten Schilde werden von den besten Soldaten der Europäer "
+"benutzt. Sie werden in der verbesserten Rüstungsschmiede hergestellt und in "
+"der Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten in "
+"Verteidigung auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:886
@@ -2337,6 +2434,9 @@ msgid ""
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
+"Wenn Lehmgräber Erde ausgraben, hinterlassen sie Löcher mit Waser im Boden. "
+"Diese fallen nach einiger Zeit trocken oder können von Bodenverbesserern "
+"benutzt werden um das Land fruchtbarer zu machen.  "
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1772
@@ -2706,6 +2806,8 @@ msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
 "solidifies and so reinforces masonry."
 msgstr ""
+"Benutzt Lehm und Stein um Ziegel zu brennen und ‘Mörtel’, eine Masse um "
+"Mauerwerk zu verbinden und so zu verstärken, zu mischen."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2430
@@ -2715,6 +2817,8 @@ msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
 "Brick and grout only used by advanced buildings."
 msgstr ""
+"Die Produkte des Kalkofens werden nur zu den Baustellen geliefert, die sie "
+"benötigen. Ziegel und Mörtel werden nur von verbesserten Gebäuden benötigt."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Stonemason's House
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2446
@@ -2724,6 +2828,9 @@ msgid ""
 "solidifies and so reinforces masonry. Additionally carves marble columns out "
 "of marble."
 msgstr ""
+"Verarbeitet Lehm und Granit um Ziegel und Mörtel, eine Substanz die durch "
+"Aushärtung Mauerwerk verstärkt, herzustellen. Schneidet zusätzlich "
+"Marmorsäulen  aus Marmor."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2448
@@ -2732,6 +2839,8 @@ msgid ""
 "The stonemason’s house's output will only go to construction sites that need "
 "it. Marble column only used by advanced buildings."
 msgstr ""
+"Die Produkte des Steinmetz werden nur zu den Baustellen geliefert, die sie "
+"benötigen. Marmorsäulen werden nur von verbesserten Gebäuden benötigt."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2455
@@ -2873,6 +2982,8 @@ msgid ""
 "Breeds strong oxen for adding them to the transportation system. "
 "Additionally produces meat for food production and leather for shoemaker."
 msgstr ""
+"Züchtet starke Ochsen, um sie dem Verkehrssystem hinzuzufügen. Produziert "
+"auch Fleisch für die Nahrungsmittelherstellung und Leder für den Schuhmacher."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Fish Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2681
@@ -2882,6 +2993,9 @@ msgid ""
 "Additionally produces meat and fish for food production and leather for "
 "shoemaker."
 msgstr ""
+"Züchtet starke Ochsen, um sie dem Verkehrssystem hinzuzufügen. Produziert "
+"auch Fleisch und Fisch für die Nahrungsmittelherstellung und Leder für den "
+"Schuhmacher."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sheep Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2688
@@ -2891,6 +3005,9 @@ msgid ""
 "transportation system. Additionally keeps sheep for wool production and "
 "produces meat and fish for food production."
 msgstr ""
+"Züchtet starke Ochsen und niedliche und hilfreiche Esel, um sie dem "
+"Verkehrssystem hinzuzufügen. Hält zusätzlich auch Schafe zur Wollherstellung "
+"und produziert Fleisch und Fisch für die Nahrungsmittelherstellung."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Horse Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2695
@@ -2900,6 +3017,10 @@ msgid ""
 "them to the transportation system. Additionally keeps sheep for wool "
 "production and produces meat and fish for food production."
 msgstr ""
+"Züchtet starke Ochsen, niedliche und hilfreiche Esel und starke Pferde, um "
+"sie dem Verkehrssystem hinzuzufügen. Hält zusätzlich auch Schafe zur "
+"Wollherstellung und produziert Fleisch und Fisch für die "
+"Nahrungsmittelherstellung."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -3000,6 +3121,8 @@ msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
 "remain totally unaffected."
 msgstr ""
+"„Ausweichen“ erhöht die Wahrscheinlichkeit, dass der Soldat nicht vom Gegner "
+"getroffen wird und daher keinen Schaden nimmt."
 
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Guardhouse
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Small Tower
@@ -3054,6 +3177,10 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a soldier to "
 "send him away."
 msgstr ""
+"Wenn du nur wenige Soldaten hast, die neue Militärgebäude besetzen können, "
+"benutze die Schaltfläche mit dem nach unten zeigenden Pfeil, um die "
+"Kapazität in diesem Gebäude zu verringern. Du kannst auch auf einen Soldaten "
+"klicken, um ihn wegzuschicken (er wird, wenn möglich, ersetzt werden)."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3017

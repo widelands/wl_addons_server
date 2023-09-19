@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:06+0200\n"
+"POT-Creation-Date: 2023-09-19 03:06+0200\n"
 "PO-Revision-Date: 2023-07-07 18:30+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -27,14 +27,17 @@ msgid ""
 "Widelands Website Maps archive aviable. Maps Total : 25 , Major Maps : 9 , "
 "Variant Maps : 15 , Major Maps with Variant Maps : 5"
 msgstr ""
+"Deze Addon bevat al mijn kaarten. Sommige van mijn kaarten staan ook op het "
+"Widelands Website Maps archief. Totaal kaarten : 25 , Grote kaarten : 9 , "
+"Variante kaarten : 15 , Grote kaarten met variante kaarten : 5"
 
 #: addons/Maps_from_Teayo.wad/addon:9
 msgid "Maps_from_Teayo"
-msgstr "Maps_from_Teayo"
+msgstr "Kaarten_van_Teayo"
 
 #: addons/Maps_from_Teayo.wad/dirnames:4
 msgid "Teayo's Karten"
-msgstr ""
+msgstr "Teayo's Kaarten"
 
 #: input:8 standard
 msgid "Circle Island"
@@ -42,27 +45,27 @@ msgstr "Cirkelvormig Eiland"
 
 #: input:8 standard
 msgid "Far islands"
-msgstr ""
+msgstr "Far eilanden"
 
 #: input:8 standard
 msgid "Far side horizontal 14-128-256"
-msgstr ""
+msgstr "Far side horizontaal 14-128-256"
 
 #: input:8 standard
 msgid "Far side horizontal 18-256-512"
-msgstr ""
+msgstr "Far side horizontaal 18-256-512"
 
 #: input:8 standard
 msgid "Far side vertical 14-128-256"
-msgstr ""
+msgstr "Far side verticaal 14-128-256"
 
 #: input:8 standard
 msgid "Far side vertical 18-256-512"
-msgstr ""
+msgstr "Far side verticaal 18-256-512"
 
 #: input:8 standard
 msgid "Far small islands"
-msgstr ""
+msgstr "Far kleine eilanden"
 
 #: input:8 standard
 msgid "Lack of Space 08-64"
@@ -74,7 +77,7 @@ msgstr "Plaatsgebrek 16-96"
 
 #: input:8 standard
 msgid "Ozean Raster Vorlage"
-msgstr ""
+msgstr "Ozean Raster Voorgrond"
 
 #: input:8 standard
 msgid "Rectangle Valley - Variant 1"
@@ -150,6 +153,18 @@ msgid ""
 "ferry range is 10 fields. * There seems to be only one way to the other "
 "side, across the sea."
 msgstr ""
+"* Een 128 lange strandlinie die moeilijk te controleren is en tijd kost om "
+"volledig onder controle te krijgen. * Maakt het mogelijk aan de andere kant "
+"een strandhoofd te vestigen als dat zo vroeg mogelijk gebeurt. * 158 brede "
+"oceaan (diep en ondiep) waarvan de oversteek door schepen lang duurt, "
+"waardoor het moeilijk is om een strandhoofd aan de andere kant te "
+"bevoorraden. * Door de lange oversteek kan een landing aan de andere kant "
+"alleen slagen als er voldoende soldaten tegelijk kunnen aanvallen en de "
+"veroverde posities lang genoeg kunnen vasthouden om versterkingen te laten "
+"arriveren. * Alle soorten grondstoffen zijn er in overvloed. * Steen en "
+"Kolen vind je aan de kust. IJzer en Goud is in de buurt van Snow Peak. * Er "
+"zijn veel bouwplaatsen voor havens. * Het maximale bereik van veerboten is "
+"10 velden. * Er lijkt maar één weg te zijn naar de andere kant, over de zee."
 
 #: input:10 standard
 msgid ""
@@ -165,6 +180,18 @@ msgid ""
 "ferry range is 10 fields. * There seems to be only one way to the other "
 "side, across the sea."
 msgstr ""
+"* Een 256 lange strandlinie die moeilijk te controleren is en tijd kost om "
+"volledig onder controle te krijgen. * Maakt het mogelijk een strandhoofd te "
+"vestigen aan de andere kant als dit zo vroeg mogelijk gebeurt. * 386 brede "
+"oceaan (diep en ondiep) waarvan de oversteek door schepen lang duurt, "
+"waardoor het moeilijk is om een strandhoofd aan de andere kant te "
+"bevoorraden. * Door de lange oversteek kan een landing aan de overkant "
+"alleen slagen als er voldoende soldaten tegelijk kunnen aanvallen en de "
+"veroverde posities lang genoeg kunnen vasthouden om versterkingen te laten "
+"arriveren. * Alle soorten grondstoffen zijn er in overvloed. * Steen en "
+"Kolen vind je aan de kust. IJzer en Goud is in de buurt van Snow Peak. * Er "
+"zijn veel bouwplaatsen voor havens. * Het maximale bereik van veerboten is "
+"10 velden. * Er lijkt maar één weg te zijn naar de andere kant, over de zee."
 
 #: input:10 standard
 msgid ""
@@ -260,6 +287,13 @@ msgid ""
 "protected from landings. Each island is sufficiently large and therefore "
 "offers sufficient building space."
 msgstr ""
+"Acht eilanden in het midden van de oceaan. Elk eiland heeft zes "
+"havenbouwplaatsen, één havenbouwplaats in elke hoek van het eiland. Alle "
+"eilanden zijn even groot en gelijkmatig gerangschikt, zodat de afstand "
+"tussen de afzonderlijke eilanden zo gelijk mogelijk is. De startpositie is "
+"in het midden van het eiland en door de nabijheid van de kust is het "
+"nauwelijks beschermd tegen landingen. Elk eiland is voldoende groot en biedt "
+"daarom voldoende bouwruimte."
 
 #: input:10 standard
 msgid ""
@@ -273,6 +307,16 @@ msgid ""
 "mountains. Each island is very large and therefore offers enough building "
 "space."
 msgstr ""
+"Acht eilanden liggen in de oceaan. Elk eiland heeft twee havenbouwplaatsen. "
+"De havenbouwplaatsen liggen langs een rechte as over het eiland samen met de "
+"startpositie. Alle eilanden zijn even groot en gelijkmatig gerangschikt, "
+"zodat de afstand tussen de afzonderlijke eilanden zo gelijk mogelijk is. De "
+"startpositie bevindt zich in het midden van het eiland, beschermd tegen "
+"landingen vanaf de kust door tegenstanders. Bovendien ligt de startpositie "
+"aanzienlijk hoger dan de kust en is deze weer omringd door bergen. Elk "
+"eiland is erg groot en biedt daarom voldoende bouwruimte.\n"
+"\n"
+"Translated with DeepL"
 
 #: input:10 standard
 msgid ""
@@ -280,6 +324,8 @@ msgid ""
 "Grundlage um eine symetrische, ausgewogene Karte darauf aufbauend zu "
 "erstellen."
 msgstr ""
+"Een Sjabloonkaart zonder spelers en met een raster op een oceaan. Een goede "
+"basis om een symmetrische, evenwichtige kaart op te baseren."
 
 #: input:10 standard
 msgid ""
@@ -622,6 +668,11 @@ msgid ""
 "Rocks : ? , Animals : ? , Fishes : Few 2/5 (1 per Point) , Max ferry path "
 "length : 10 Fields , Height steepness : ? , Big building Places : ?"
 msgstr ""
+"Havens : 107 ( Blauwe Zijde : 52 ( 14 Eilanden , 19 Eilandhavens , 33 "
+"Vastelandhavens ) , Rode Zijde : 55 ( 16 Eilanden , 25 Eilandhavens , 30 "
+"Vastelandhavens ) ) , Voorwerpen : Geen , Berg Hulpbronnen : Veel 4/5 , "
+"Bomen : ? , Rotsen : ? , Dieren : ? , Vissen : Weinig 2/5 (1 per punt) , Max "
+"veerweglengte : 10 Velden , Hoogte steilheid : ? , Groot gebouw Plaatsen : ?"
 
 #: input:11 standard
 msgid ""
@@ -631,6 +682,11 @@ msgid ""
 "Rocks : ? , Animals : ? , Fishes : Few 2/5 (1 per Point) , Max ferry path "
 "length : 10 Fields , Height steepness : ? , Big building Places : ?"
 msgstr ""
+"Havens : 134 ( Blauwe Zijde : 61 ( 18 Eilanden , 28 Eilandhavens , 33 "
+"Vastelandhavens ) , Rode Zijde : 73 ( 20 Eilanden , 29 Eilandhavens , 44 "
+"Vastelandhavens ) ) , Voorwerpen : Geen , Berg Hulpbronnen : Veel 4/5 , "
+"Bomen : ? , Rotsen : ? , Dieren : ? , Vissen : Weinig 2/5 (1 per punt) , Max "
+"veerweglengte : 10 Velden , Hoogte steilheid : ? , Groot gebouw Plaatsen : ?"
 
 #: input:11 standard
 msgid ""
@@ -638,6 +694,9 @@ msgid ""
 "4/5 , Trees : ? , Rocks : ? , Animals : ? , Fishes : Few 2/5 (3 per Point) , "
 "Max ferry path length : None , Height steepness : ? , Big building Places : ?"
 msgstr ""
+"Havens : 32 (4 per eiland) , Voorwerpen : Geen , Berg grondstoffen : Veel "
+"4/5 , Bomen : ? , Rotsen : ? Dieren : ? , Vissen : Weinig 2/5 (3 per punt) , "
+"Max veerpadlengte : Geen , Hoogte steilheid : ? , Groot gebouw Plaatsen : ?"
 
 #: input:11 standard
 msgid ""
@@ -647,6 +706,11 @@ msgid ""
 "Rocks : ? , Animals : ? , Fishes : Few 2/5 (1 per Point) , Max ferry path "
 "length : 10 Fields , Height steepness : ? , Big building Places : ?"
 msgstr ""
+"Havens : 34 ( Blauwe Zijde : 17 ( 6 eilanden , 9 eiland havens , 8 vasteland "
+"havens ) , Rode Zijde : 17 ( 6 eilanden , 9 eiland havens , 8 vasteland "
+"havens ) ) , Voorwerpen : Geen , Berg Hulpbronnen : Veel 4/5 , Bomen : ? , "
+"Rotsen : ? , Dieren : ? , Vissen : Weinig 2/5 (1 per punt) , Max "
+"veerweglengte : 10 Velden , Hoogte steilheid : ? , Groot gebouw Plaatsen : ?"
 
 #: input:11 standard
 msgid ""
@@ -656,6 +720,11 @@ msgid ""
 "Rocks : ? , Animals : ? , Fishes : Few 2/5 (1 per Point) , Max ferry path "
 "length : 10 Fields , Height steepness : ? , Big building Places : ?"
 msgstr ""
+"Havens : 40 ( Blauwe Zijde : 20 ( 7 Eilanden , 10 Eilandhavens , 10 "
+"Vastelandhavens ) , Rode Zijde : 20 ( 6 Eilanden , 10 Eilandhavens , 10 "
+"Vastelandhavens ) ) , Voorwerpen : Geen , Berg Hulpbronnen : Veel 4/5 , "
+"Bomen : ? , Rotsen : ? , Dieren : ? , Vissen : Weinig 2/5 (1 per punt) , Max "
+"veerweglengte : 10 Velden , Hoogte steilheid : ? , Groot gebouw Plaatsen : ?"
 
 #: input:11 standard
 msgid ""
@@ -665,6 +734,11 @@ msgid ""
 "path length : None , Height steepness : Medium 3/5 , Big building Places : "
 "Medium 3/5"
 msgstr ""
+"Havens : 54 (6 per eiland, 1 per eilandhoek) , Voorwerpen : 1 "
+"(Centrumeiland) , Bergrijkdommen : Veel 5/5 , Bomen : Veel 5/5 , Rotsen : "
+"Middelmatig 3/5 , Dieren : Veel 4/5 , Vissen : Middelmatig 3/5 (5 per "
+"punt) , Max veerpadlengte : Geen , Hoogte steilheid : Middelmatig 3/5 , "
+"Groot gebouw Plaatsen : Middelmatig 3/5"
 
 #: input:11 standard
 msgid ""
@@ -941,4 +1015,4 @@ msgstr "Een overzicht van de kaart Tichupane - Woestijn in de Editor"
 
 #: screenshots/Maps_from_Teayo.wad/descriptions:15
 msgid "A Overview of the Islands from the Map"
-msgstr ""
+msgstr "Een Overzicht van de Eilanden op de Kaart"

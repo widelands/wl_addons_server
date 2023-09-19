@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 03:06+0200\n"
+"POT-Creation-Date: 2023-09-19 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -30,6 +30,9 @@ msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings, workers and some "
 "wares from other tribes, until own graphics are available."
 msgstr ""
+"Voegt een nieuwe stam genaamd 'Europeanen' toe. Het gebruikt gebouwen, "
+"arbeiders en sommige waren van andere stammen, totdat eigen afbeeldingen "
+"beschikbaar zijn."
 
 #: addons/europeans_tribe.wad/immovables/berry_bushes/blueberry/medium/init.lua:9
 msgid "Blueberry Bush (medium)"
@@ -896,7 +899,7 @@ msgstr "Normale Kleiput"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Vineyard"
-msgstr ""
+msgstr "Wijngaard"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:77
@@ -909,7 +912,7 @@ msgstr "bessenstruik planten"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
 msgctxt "europeans_building"
 msgid "planting grape"
-msgstr ""
+msgstr "druif planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
@@ -930,7 +933,7 @@ msgstr "bes oogsten"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
 msgctxt "europeans_building"
 msgid "harvesting grape"
-msgstr ""
+msgstr "druif oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
@@ -957,12 +960,14 @@ msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
 msgstr ""
+"De boer die aan deze wijngaard werkt, heeft geen vrijgemaakte grond om zijn "
+"zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Reed Yard"
-msgstr ""
+msgstr "Rietveld"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:108
 msgctxt "europeans_building"
@@ -970,18 +975,22 @@ msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
 msgstr ""
+"De tuinman die op dit rietveld werkt, heeft geen vrijgemaakte grond om zijn "
+"zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Fruit Farm"
-msgstr ""
+msgstr "Fruitkwekerij"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this fruit farm has no cleared soil to plant his seeds."
 msgstr ""
+"De boer die op dit fruitteeltbedrijf werkt, heeft geen vrijgemaakte grond om "
+"zijn zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -1350,7 +1359,7 @@ msgstr "Geavanceerde Houtskooloven"
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:68
 msgctxt "europeans_building"
 msgid "pausing production for log"
-msgstr ""
+msgstr "Productie onderbreken voor log"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:66
@@ -1372,7 +1381,7 @@ msgstr "Basis Houtskooloven"
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:79
 msgctxt "europeans_building"
 msgid "pausing production for wood"
-msgstr ""
+msgstr "Productie onderbreken voor hout"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:8
@@ -1418,7 +1427,7 @@ msgstr "Normale Houtzagerij"
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Shoemakers House"
-msgstr ""
+msgstr "Geavanceerd Schoenmakershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:61
@@ -1426,7 +1435,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:71
 msgctxt "europeans_building"
 msgid "pausing production for planks, cloth and leather"
-msgstr ""
+msgstr "de productie van planken, stof en leer pauzeren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:69
@@ -1461,13 +1470,13 @@ msgstr "geavanceerde laarzen maken"
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Shoemakers House"
-msgstr ""
+msgstr "Basis Schoenmakershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Shoemakers House"
-msgstr ""
+msgstr "Normaal Schoenmakershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:8
@@ -1481,7 +1490,7 @@ msgstr "Geavanceerde Smelterij"
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:64
 msgctxt "europeans_building"
 msgid "pausing production for ore and coal"
-msgstr ""
+msgstr "pauzeren van de productie voor erts en kolen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:79
@@ -1542,7 +1551,7 @@ msgstr "Geavanceerde Gereedschapsmakerij"
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
 msgctxt "europeans_building"
 msgid "pausing production for planks, iron and coal"
-msgstr ""
+msgstr "pauzeren van de productie voor planken, ijzer en kolen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:91
@@ -1640,7 +1649,7 @@ msgstr "Normale Gereedschapsmakerij"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Weaponsmithy"
-msgstr ""
+msgstr "Gevorderde Wapenmakerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:91
@@ -1704,13 +1713,13 @@ msgstr "een slagzwaard smeden"
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Weaponsmithy"
-msgstr ""
+msgstr "Basis Wapenmakerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Weaponsmithy"
-msgstr ""
+msgstr "Normale Wapenmakerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:8
@@ -1724,7 +1733,7 @@ msgstr "Geavanceerd Steenhouwershuis"
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:71
 msgctxt "europeans_building"
 msgid "pausing production for granite, water and coal"
-msgstr ""
+msgstr "pauzeren van de productie voor graniet, water en kolen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:72
@@ -1763,14 +1772,14 @@ msgstr "Normale Kalkoven"
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Tailors House"
-msgstr ""
+msgstr "Geavanceerd Kleermakershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:76
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:69
 msgctxt "europeans_building"
 msgid "pausing production for planks, cloth, armor, iron and coal"
-msgstr ""
+msgstr "pauzeren van de productie van planken, stof, pantser, ijzer en kolen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:84
@@ -1786,26 +1795,26 @@ msgstr "een houten harnas maken"
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:89
 msgctxt "europeans_building"
 msgid "tailoring processed armor"
-msgstr ""
+msgstr "op maat maken van wapenrusting"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:109
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:101
 msgctxt "europeans_building"
 msgid "tailoring a suit of chain armor"
-msgstr ""
+msgstr "een maliënkolder maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:121
 msgctxt "europeans_building"
 msgid "tailoring a suit of advanced armor"
-msgstr ""
+msgstr "een geavanceerd harnas maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Tailors House"
-msgstr ""
+msgstr "Basis Kleermakershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:86
