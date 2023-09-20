@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 03:06+0200\n"
+"POT-Creation-Date: 2023-09-20 03:06+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
+"Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,361 +23,363 @@ msgstr ""
 
 #: addons/europeans_food_production.wad/addon:2
 msgid "Europeans food production addon for Europeans tribe"
-msgstr ""
+msgstr "Europeanen voedselproductie addon voor Europeanen stam"
 
 #: addons/europeans_food_production.wad/addon:3
 msgid ""
 "Adds some additional wares, workers and buildings to Europeans tribes "
 "economy for more complexity."
 msgstr ""
+"Voegt wat extra waren, arbeiders en gebouwen toe aan de Europese "
+"stammeneconomie voor meer complexiteit."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/barleyfield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Barley Field (harvested)"
-msgstr ""
+msgstr "Gerstveld (geoogst)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/barleyfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Barley Field (medium)"
-msgstr ""
+msgstr "Gerstveld (half rijp)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/barleyfield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Barley Field (ripe)"
-msgstr ""
+msgstr "Gerstveld (rijp)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/barleyfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Barley Field (small)"
-msgstr ""
+msgstr "Gerstveld (klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/barleyfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Barley Field (tiny)"
-msgstr ""
+msgstr "Gerstveld (zeer klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/blueberry/medium/init.lua:9
 msgid "Blueberry Bush (medium)"
-msgstr ""
+msgstr "Bosbessenstruik (medium)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/blueberry/ripe/init.lua:9
 msgid "Blueberry Bush (ripe)"
-msgstr ""
+msgstr "Bosbessenstruik (rijp)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/blueberry/small/init.lua:9
 msgid "Blueberry Bush (small)"
-msgstr ""
+msgstr "Bosbessenstruik (klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/blueberry/tiny/init.lua:9
 msgid "Blueberry Bush (tiny)"
-msgstr ""
+msgstr "Bosbessenstruik (zeer klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/currant_black/medium/init.lua:9
 msgid "Black Currant (medium)"
-msgstr ""
+msgstr "Zwarte Bes (medium)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/currant_black/ripe/init.lua:9
 msgid "Black Currant (ripe)"
-msgstr ""
+msgstr "Zwarte Bes (rijp)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/currant_black/small/init.lua:9
 msgid "Black Currant (small)"
-msgstr ""
+msgstr "Zwarte Bes (klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/currant_black/tiny/init.lua:9
 msgid "Black Currant (tiny)"
-msgstr ""
+msgstr "Zwarte Bes (zeer klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/currant_red/medium/init.lua:9
 msgid "Red Currant (medium)"
-msgstr ""
+msgstr "Aalbes (medium)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/currant_red/ripe/init.lua:9
 msgid "Red Currant (ripe)"
-msgstr ""
+msgstr "Aalbes (rijp)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/currant_red/small/init.lua:9
 msgid "Red Currant (small)"
-msgstr ""
+msgstr "Aalbes (klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/currant_red/tiny/init.lua:9
 msgid "Red Currant (tiny)"
-msgstr ""
+msgstr "Aalbes (zeer klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/desert_hackberry/medium/init.lua:9
 msgid "Desert Hackberry (medium)"
-msgstr ""
+msgstr "Woestijn Hackberry (medium)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/desert_hackberry/ripe/init.lua:9
 msgid "Desert Hackberry (ripe)"
-msgstr ""
+msgstr "Woestijn Hackberry (rijp)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/desert_hackberry/small/init.lua:9
 msgid "Desert Hackberry (small)"
-msgstr ""
+msgstr "Woestijn Hackberry klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/desert_hackberry/tiny/init.lua:9
 msgid "Desert Hackberry (tiny)"
-msgstr ""
+msgstr "Woestijn Hackberry (zeer klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/berry_bushes/grapevine/medium/init.lua:10
 msgctxt "immovable"
 msgid "Grapevine (medium)"
-msgstr ""
+msgstr "Wijnrank (medium)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/berry_bushes/grapevine/ripe/init.lua:10
 msgctxt "immovable"
 msgid "Grapevine (ripe)"
-msgstr ""
+msgstr "Wijnrank (rijp)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/berry_bushes/grapevine/small/init.lua:10
 msgctxt "immovable"
 msgid "Grapevine (small)"
-msgstr ""
+msgstr "Wijnrank (klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/berry_bushes/grapevine/tiny/init.lua:10
 msgctxt "immovable"
 msgid "Grapevine (tiny)"
-msgstr ""
+msgstr "Wijnrank (zeer klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/juniper/medium/init.lua:9
 msgid "Juniper (medium)"
-msgstr ""
+msgstr "Jeneverbes (medium)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/juniper/ripe/init.lua:9
 msgid "Juniper (ripe)"
-msgstr ""
+msgstr "Jeneverbes (rijp)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/juniper/small/init.lua:9
 msgid "Juniper (small)"
-msgstr ""
+msgstr "Jeneverbes (klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/juniper/tiny/init.lua:9
 msgid "Juniper (tiny)"
-msgstr ""
+msgstr "Jeneverbes (zeer klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/raspberry/medium/init.lua:9
 msgid "Raspberry Bush (medium)"
-msgstr ""
+msgstr "Frambozenstruik (medium)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/raspberry/ripe/init.lua:9
 msgid "Raspberry Bush (ripe)"
-msgstr ""
+msgstr "Frambozenstruik (rijp)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/raspberry/small/init.lua:9
 msgid "Raspberry Bush (small)"
-msgstr ""
+msgstr "Frambozenstruik (klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/raspberry/tiny/init.lua:9
 msgid "Raspberry Bush (tiny)"
-msgstr ""
+msgstr "Frambozenstruik ( zeer klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/sea_buckthorn/medium/init.lua:9
 msgid "Sea Buckthorn (medium)"
-msgstr ""
+msgstr "Duindoorn (medium)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/sea_buckthorn/ripe/init.lua:9
 msgid "Sea Buckthorn (ripe)"
-msgstr ""
+msgstr "Duindoorn (rijp)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/sea_buckthorn/small/init.lua:9
 msgid "Sea Buckthorn (small)"
-msgstr ""
+msgstr "Duindoorn (klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/sea_buckthorn/tiny/init.lua:9
 msgid "Sea Buckthorn (tiny)"
-msgstr ""
+msgstr "Duindoorn (zeer klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/stink_tree/medium/init.lua:9
 msgid "Stink Shepherd’s Tree (medium)"
-msgstr ""
+msgstr "Stinkende Herdersboom (medium)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/stink_tree/ripe/init.lua:9
 msgid "Stink Shepherd’s Tree (ripe)"
-msgstr ""
+msgstr "Stinkende Herdersboom (rijp)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/stink_tree/small/init.lua:9
 msgid "Stink Shepherd’s Tree (small)"
-msgstr ""
+msgstr "Stinkende Herdersboom (klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/stink_tree/tiny/init.lua:9
 msgid "Stink Shepherd’s Tree (tiny)"
-msgstr ""
+msgstr "Stinkende Herdersboom (zeer klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/strawberry/medium/init.lua:9
 msgid "Strawberries (medium)"
-msgstr ""
+msgstr "Aardbeien (medium)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/strawberry/ripe/init.lua:9
 msgid "Strawberries (ripe)"
-msgstr ""
+msgstr "Aardbeien (rijp)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/strawberry/small/init.lua:9
 msgid "Strawberries (small)"
-msgstr ""
+msgstr "Aardbeien (klein)"
 
 #: addons/europeans_food_production.wad/immovables/berry_bushes/strawberry/tiny/init.lua:9
 msgid "Strawberries (tiny)"
-msgstr ""
+msgstr "Aardbeien (zeer klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/blackrootfield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Blackroot Field (harvested)"
-msgstr ""
+msgstr "Blackroot Veld (geoogst)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/blackrootfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Blackroot Field (medium)"
-msgstr ""
+msgstr "Blackroot Veld (medium)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/blackrootfield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Blackroot Field (ripe)"
-msgstr ""
+msgstr "Blackroot Veld (rijp)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/blackrootfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Blackroot Field (small)"
-msgstr ""
+msgstr "Blackroot Veld (klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/blackrootfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Blackroot Field (tiny)"
-msgstr ""
+msgstr "Blackroot Veld (zeer klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/cornfield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Cornfield (harvested)"
-msgstr ""
+msgstr "Korenveld (geoogst)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/cornfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Cornfield (medium)"
-msgstr ""
+msgstr "Maïsveld (medium)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/cornfield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Cornfield (ripe)"
-msgstr ""
+msgstr "Maïsveld (rijp)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/cornfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Cornfield (small)"
-msgstr ""
+msgstr "Maïsveld (klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/cornfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Cornfield (tiny)"
-msgstr ""
+msgstr "Maïsveld (zeer klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/reedfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (medium)"
-msgstr ""
+msgstr "Rietveld (medium)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/reedfield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (ripe)"
-msgstr ""
+msgstr "Rietveld (rijp)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/reedfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (small)"
-msgstr ""
+msgstr "Rietveld (klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/reedfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (tiny)"
-msgstr ""
+msgstr "Rietveld (zeer klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/ryefield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (harvested)"
-msgstr ""
+msgstr "Roggeveld (geoogst)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/ryefield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (medium)"
-msgstr ""
+msgstr "Roggeveld (gemiddeld)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/ryefield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (ripe)"
-msgstr ""
+msgstr "Roggeveld (rijp)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/ryefield/small/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (small)"
-msgstr ""
+msgstr "Roggeveld (klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/ryefield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Rye Field (tiny)"
-msgstr ""
+msgstr "Roggeveld (zeer klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/wheatfield/harvested/init.lua:8
 msgctxt "immovable"
 msgid "Wheat Field (harvested)"
-msgstr ""
+msgstr "Tarweveld (geoogst)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/wheatfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Wheat Field (medium)"
-msgstr ""
+msgstr "Tarweveld (medium)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/wheatfield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Wheat Field (ripe)"
-msgstr ""
+msgstr "Tarweveld (rijp)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/wheatfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Wheat Field (small)"
-msgstr ""
+msgstr "Tarweveld (klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/wheatfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Wheat Field (tiny)"
-msgstr ""
+msgstr "Tarweveld (zeer klein)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Animal Farm"
-msgstr ""
+msgstr "Geavanceerde Dierenboerderij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:62
@@ -406,7 +412,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_basic/init.lua:81
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:68
 msgid "working"
-msgstr ""
+msgstr "werkende"
 
 #. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:80
@@ -420,14 +426,14 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_basic/init.lua:101
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:76
 msgid "idle program"
-msgstr ""
+msgstr "rustprogramma"
 
 #. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:92
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_big/init.lua:81
 msgctxt "europeans_building"
 msgid "producing wool"
-msgstr ""
+msgstr "wol produceren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:111
@@ -436,7 +442,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "rearing cattle"
-msgstr ""
+msgstr "veeteelt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing donkeys because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:131
@@ -444,7 +450,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_normal/init.lua:104
 msgctxt "europeans_building"
 msgid "rearing donkeys"
-msgstr ""
+msgstr "ezels houden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:151
@@ -453,7 +459,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_normal/init.lua:125
 msgctxt "europeans_building"
 msgid "producing meat"
-msgstr ""
+msgstr "vleesproductie"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing meat and leather because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:169
@@ -462,7 +468,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_normal/init.lua:144
 msgctxt "europeans_building"
 msgid "producing meat and leather"
-msgstr ""
+msgstr "productie van vlees en leer"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing fish because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:187
@@ -470,37 +476,37 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_normal/init.lua:163
 msgctxt "europeans_building"
 msgid "breeding fish"
-msgstr ""
+msgstr "kweekvissen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Animal Farm"
-msgstr ""
+msgstr "Basis Dierenboerderij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_big/init.lua:8
 msgctxt "europeans_building"
 msgid "Big Animal Farm"
-msgstr ""
+msgstr "Grote Dierenboerderij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_big/init.lua:140
 msgctxt "europeans_building"
 msgid "breeding horses"
-msgstr ""
+msgstr "paarden fokken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Animal Farm"
-msgstr ""
+msgstr "Normale Dierenboerderij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Beekeeper’s House"
-msgstr ""
+msgstr "Geavanceerd Imkerhuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making honey because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:42
@@ -508,19 +514,19 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:52
 msgctxt "europeans_building"
 msgid "making honey"
-msgstr ""
+msgstr "honing maken"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:62
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:95
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:72
 msgid "No Flowers"
-msgstr ""
+msgstr "Geen Bloemen"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:63
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:96
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:73
 msgid "Out of Flowers"
-msgstr ""
+msgstr "Zonder Bloemen"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_advanced/init.lua:64
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:97
@@ -531,24 +537,28 @@ msgid ""
 "fields or bushes in his work area. You should consider building another farm "
 "or berry farm nearby, or dismantling or destroying this building."
 msgstr ""
+"De imker die in dit imkerhuis werkt, kan geen bloeiende velden of struiken "
+"vinden in zijn werkgebied. Je moet overwegen om een andere boerderij of "
+"bessenkwekerij in de buurt te bouwen, of om dit gebouw te ontmantelen of te "
+"vernietigen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Beekeeper’s Hut"
-msgstr ""
+msgstr "Basis Imkershut"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/beekeepers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Beekeeper’s House"
-msgstr ""
+msgstr "Normaal Imkerhuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Farm"
-msgstr ""
+msgstr "Geavanceerde Boerderij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:104
@@ -556,33 +566,33 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:106
 msgctxt "europeans_building"
 msgid "planting barley"
-msgstr ""
+msgstr "gerst planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:124
 msgctxt "europeans_building"
 msgid "planting berry bushes"
-msgstr ""
+msgstr "bessenstruiken planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting blackroot because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:144
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:144
 msgctxt "europeans_building"
 msgid "planting blackroot"
-msgstr ""
+msgstr "blackroot planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting corn because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:164
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:163
 msgctxt "europeans_building"
 msgid "planting corn"
-msgstr ""
+msgstr "maïs planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:184
 msgctxt "europeans_building"
 msgid "planting grapes"
-msgstr ""
+msgstr "druiven planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:204
@@ -590,7 +600,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:182
 msgctxt "europeans_building"
 msgid "planting reed"
-msgstr ""
+msgstr "riet planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:223
@@ -598,7 +608,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:200
 msgctxt "europeans_building"
 msgid "planting rye"
-msgstr ""
+msgstr "rogge planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting wheat because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:243
@@ -606,7 +616,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:219
 msgctxt "europeans_building"
 msgid "planting wheat"
-msgstr ""
+msgstr "tarwe planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:263
@@ -614,33 +624,33 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:238
 msgctxt "europeans_building"
 msgid "harvesting barley"
-msgstr ""
+msgstr "gerst oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:282
 msgctxt "europeans_building"
 msgid "harvesting berries"
-msgstr ""
+msgstr "bessen oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting blackroot because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:301
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:274
 msgctxt "europeans_building"
 msgid "harvesting blackroot"
-msgstr ""
+msgstr "blackroot oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting corn because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:320
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:292
 msgctxt "europeans_building"
 msgid "harvesting corn"
-msgstr ""
+msgstr "maïs oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:339
 msgctxt "europeans_building"
 msgid "harvesting grapes"
-msgstr ""
+msgstr "druiven oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:358
@@ -648,7 +658,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:310
 msgctxt "europeans_building"
 msgid "harvesting reed"
-msgstr ""
+msgstr "riet oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:377
@@ -656,7 +666,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:328
 msgctxt "europeans_building"
 msgid "harvesting rye"
-msgstr ""
+msgstr "rogge oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting wheat because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:396
@@ -664,19 +674,19 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:346
 msgctxt "europeans_building"
 msgid "harvesting wheat"
-msgstr ""
+msgstr "tarwe oogsten"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:416
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_basic/init.lua:248
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:365
 msgid "No Fields"
-msgstr ""
+msgstr "Geen Velden"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:417
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_basic/init.lua:249
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:366
 msgid "Out of Fields"
-msgstr ""
+msgstr "Zonder Velden"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:418
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_basic/init.lua:250
@@ -684,36 +694,38 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "The farmer working at this farm has no cleared soil to plant his seeds."
 msgstr ""
+"De boer die op deze boerderij werkt, heeft geen vrijgemaakte grond om zijn "
+"zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Farm"
-msgstr ""
+msgstr "Basis Boerderij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Farm"
-msgstr ""
+msgstr "Normale Boerderij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:125
 msgctxt "europeans_building"
 msgid "planting berrybush"
-msgstr ""
+msgstr "bessenstruik planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:256
 msgctxt "europeans_building"
 msgid "harvesting berry"
-msgstr ""
+msgstr "bes oogsten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Shoemakers House"
-msgstr ""
+msgstr "Geavanceerd Schoenmakershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:62
@@ -721,7 +733,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:72
 msgctxt "europeans_building"
 msgid "pausing production for planks, cloth and leather"
-msgstr ""
+msgstr "de productie van planken, stof en leer pauzeren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:70
@@ -729,7 +741,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:80
 msgctxt "europeans_building"
 msgid "making a pair of wooden boots"
-msgstr ""
+msgstr "een paar houten laarzen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:82
@@ -737,38 +749,38 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:92
 msgctxt "europeans_building"
 msgid "making study boots"
-msgstr ""
+msgstr "werklaarzen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:95
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:104
 msgctxt "europeans_building"
 msgid "making swift boots"
-msgstr ""
+msgstr "vlotte laarzen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:108
 msgctxt "europeans_building"
 msgid "making advanced boots"
-msgstr ""
+msgstr "geavanceerde laarzen maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Shoemakers House"
-msgstr ""
+msgstr "Basis Schoenmakershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Shoemakers House"
-msgstr ""
+msgstr "Normaal Schoenmakershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Weaving Mill"
-msgstr ""
+msgstr "Geavanceerde Weverij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:65
@@ -776,7 +788,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:63
 msgctxt "europeans_building"
 msgid "pausing production for reed"
-msgstr ""
+msgstr "pauzeren van de productie voor riet"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:73
@@ -784,7 +796,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:71
 msgctxt "europeans_building"
 msgid "weaving cloth"
-msgstr ""
+msgstr "stof weven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:84
@@ -792,25 +804,25 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:84
 msgctxt "europeans_building"
 msgid "tailoring a suit of armor"
-msgstr ""
+msgstr "een harnas op maat maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Weaving Mill"
-msgstr ""
+msgstr "Basis Weverij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Weaving Mill"
-msgstr ""
+msgstr "Normale Weverij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Bakery"
-msgstr ""
+msgstr "Gevorderde Bakker"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:67
@@ -818,7 +830,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:75
 msgctxt "europeans_building"
 msgid "pausing production for water and flour"
-msgstr ""
+msgstr "pauzeren van de productie voor water en meel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:75
@@ -826,38 +838,38 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "Baking bread"
-msgstr ""
+msgstr "Brood bakken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:86
 #: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:94
 msgctxt "europeans_building"
 msgid "Baking honey bread"
-msgstr ""
+msgstr "Honingbrood bakken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
 #: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:98
 msgctxt "europeans_building"
 msgid "Baking fruit biscuits"
-msgstr ""
+msgstr "Fruitkoekjes bakken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/bakery_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Bakery"
-msgstr ""
+msgstr "Basis Bakkerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Bakery"
-msgstr ""
+msgstr "Normale Bakkerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Brewery"
-msgstr ""
+msgstr "Geavanceerde Brouwerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:74
@@ -866,7 +878,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:62
 msgctxt "europeans_building"
 msgid "pausing production for water and barley"
-msgstr ""
+msgstr "pauzeren van de productie voor water en gerst"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
 #: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:82
@@ -875,7 +887,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:70
 msgctxt "europeans_building"
 msgid "brewing beer"
-msgstr ""
+msgstr "bier brouwen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
 #: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:95
@@ -883,44 +895,44 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:83
 msgctxt "europeans_building"
 msgid "brewing mead"
-msgstr ""
+msgstr "honingwijn brouwen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
 #: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:109
 #: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:97
 msgctxt "europeans_building"
 msgid "brewing strong beer"
-msgstr ""
+msgstr "sterk bier brouwen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/brewery_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Brewery"
-msgstr ""
+msgstr "Basis Brouwerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/brewery_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Brewery"
-msgstr ""
+msgstr "Normale Brouwerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Brewery and Winery"
-msgstr ""
+msgstr "Geavanceerde Brouwerij en Wijnmakerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
 #: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:111
 msgctxt "europeans_building"
 msgid "making wine"
-msgstr ""
+msgstr "wijn maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/mill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Mill"
-msgstr ""
+msgstr "Geavanceerde Molen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_food/mill_advanced/init.lua:67
@@ -928,7 +940,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:68
 msgctxt "europeans_building"
 msgid "pausing production for rye and wheat"
-msgstr ""
+msgstr "pauzeren van de productie van rogge en tarwe"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
 #: addons/europeans_food_production.wad/productionsites_food/mill_advanced/init.lua:75
@@ -936,25 +948,25 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:76
 msgctxt "europeans_building"
 msgid "grinding rye and wheat"
-msgstr ""
+msgstr "rogge en tarwe malen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/mill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Mill"
-msgstr ""
+msgstr "Basis Molen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Mill"
-msgstr ""
+msgstr "Normale Molen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:8
 msgctxt "europeans_building"
 msgid "Big Market"
-msgstr ""
+msgstr "Grote Markt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:74
@@ -1002,65 +1014,65 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_trading/trading_post/init.lua:99
 #: addons/europeans_food_production.wad/productionsites_trading/trading_post/init.lua:112
 msgid "trading"
-msgstr ""
+msgstr "handel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:91
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:76
 msgctxt "europeans_building"
 msgid "trading food for wood coins"
-msgstr ""
+msgstr "voedsel ruilen voor houtmunten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:108
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:90
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
-msgstr ""
+msgstr "voedsel ruilen voor koperen munten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:125
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
-msgstr ""
+msgstr "voedsel ruilen voor zilveren munten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:142
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
-msgstr ""
+msgstr "voedsel ruilen voor gouden munten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:159
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:104
 msgctxt "europeans_building"
 msgid "pausing trading of planks"
-msgstr ""
+msgstr "pauzeren van de handel in planken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:167
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:112
 msgctxt "europeans_building"
 msgid "pausing trading of gold"
-msgstr ""
+msgstr "pauzeren van de handel in goud"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:8
 msgctxt "europeans_building"
 msgid "Small Market"
-msgstr ""
+msgstr "Kleine Markt"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_trading/trading_post/init.lua:8
 msgctxt "europeans_building"
 msgid "Trading Post"
-msgstr ""
+msgstr "Handelspost"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Recruitement Center"
-msgstr ""
+msgstr "Geavanceerd Aanwervingscentrum"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:88
@@ -1068,7 +1080,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:100
 msgctxt "europeans_building"
 msgid "pausing production because lack of tools"
-msgstr ""
+msgstr "pauzeren van de productie wegens gebrek aan gereedschap"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:96
@@ -1076,20 +1088,20 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:108
 msgctxt "europeans_building"
 msgid "recruiting first carrier"
-msgstr ""
+msgstr "eerste waterdrager aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:106
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:118
 msgctxt "europeans_building"
 msgid "recruiting second carrier"
-msgstr ""
+msgstr "tweede waterdrager aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:117
 msgctxt "europeans_building"
 msgid "recruiting third carrier"
-msgstr ""
+msgstr "derde waterdrager aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:128
@@ -1097,7 +1109,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:129
 msgctxt "europeans_building"
 msgid "recruiting builder"
-msgstr ""
+msgstr "bouwer aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:140
@@ -1105,7 +1117,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:142
 msgctxt "europeans_building"
 msgid "recruiting beekeeper"
-msgstr ""
+msgstr "imker aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:151
@@ -1113,7 +1125,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:154
 msgctxt "europeans_building"
 msgid "recruiting claydigger"
-msgstr ""
+msgstr "kleigraver aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:162
@@ -1121,7 +1133,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:166
 msgctxt "europeans_building"
 msgid "recruiting farmer"
-msgstr ""
+msgstr "landbouwer aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:174
@@ -1129,7 +1141,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:179
 msgctxt "europeans_building"
 msgid "recruiting forester"
-msgstr ""
+msgstr "boswachter aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:185
@@ -1137,7 +1149,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:191
 msgctxt "europeans_building"
 msgid "recruiting geologist"
-msgstr ""
+msgstr "geoloog aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:197
@@ -1145,7 +1157,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:204
 msgctxt "europeans_building"
 msgid "recruiting lumberjack"
-msgstr ""
+msgstr "houthakker aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:208
@@ -1153,7 +1165,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:216
 msgctxt "europeans_building"
 msgid "recruiting miner"
-msgstr ""
+msgstr "mijnwerker aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting recruit because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:219
@@ -1161,7 +1173,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:228
 msgctxt "europeans_building"
 msgid "recruiting recruit"
-msgstr ""
+msgstr "recruut aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:229
@@ -1169,7 +1181,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:238
 msgctxt "europeans_building"
 msgid "recruiting scout"
-msgstr ""
+msgstr "verkenner aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:239
@@ -1177,7 +1189,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:249
 msgctxt "europeans_building"
 msgid "recruiting shipwright"
-msgstr ""
+msgstr "scheepsbouwer aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:251
@@ -1185,7 +1197,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:263
 msgctxt "europeans_building"
 msgid "recruiting stonecutter"
-msgstr ""
+msgstr "steenhouwer aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:262
@@ -1193,7 +1205,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:275
 msgctxt "europeans_building"
 msgid "recruiting terraformer"
-msgstr ""
+msgstr "terreinvormer aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:275
@@ -1201,7 +1213,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:289
 msgctxt "europeans_building"
 msgid "recruiting trainer"
-msgstr ""
+msgstr "trainer aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:285
@@ -1209,36 +1221,36 @@ msgstr ""
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:300
 msgctxt "europeans_building"
 msgid "recruiting general worker"
-msgstr ""
+msgstr "werving algemeen medewerker"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Recruitement Center"
-msgstr ""
+msgstr "Basis Wervingscentrum"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Recruitement Center"
-msgstr ""
+msgstr "Normaal Wervingscentrum"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_ai.lua:11
 msgid "Discovery (AI optimized)"
-msgstr ""
+msgstr "Ontdekking (AI geoptimaliseerd)"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_ai.lua:13
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_ai.lua:13
 msgid "AI optimized starting condition, not for human player."
-msgstr ""
+msgstr "AI geoptimaliseerde startconditie, niet voor menselijke speler."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_human.lua:11
 msgid "Discovery (Human Player)"
-msgstr ""
+msgstr "Ontdekking ( Menselijke Speler)"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_human.lua:13
@@ -1247,16 +1259,19 @@ msgid ""
 "Disabled terraforming (diking of water bodies) because of lack of "
 "compatibility with seafaring."
 msgstr ""
+"Begin het spel met drie schepen op de oceaan en slechts een handvol "
+"voorraden. Schakel terravorming (bedijken van watermassa's) uit omdat het "
+"niet compatibel is met zeevaart."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_ai.lua:11
 msgid "Headquarters (AI optimized)"
-msgstr ""
+msgstr "Hoofdkwartier (AI geoptimaliseerd)"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_seafaring.lua:11
 msgid "Headquarters (with seafaring)"
-msgstr ""
+msgstr "Hoofdkwartier (met zeevaart)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_seafaring.lua:13
@@ -1264,11 +1279,13 @@ msgid ""
 "Start the game with your headquarters only. Disabled terraforming (diking of "
 "water bodies) because of lack of compatibility with seafaring."
 msgstr ""
+"Begin het spel alleen met je hoofdkwartier. Uitgeschakeld terreinvorming "
+"(bedijken van watermassa's) vanwege gebrek aan compatibiliteit met zeevaart."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_terraforming.lua:11
 msgid "Headquarters (with terraforming)"
-msgstr ""
+msgstr "Hoofdkwartier (met terravorming)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_terraforming.lua:13
@@ -1276,11 +1293,13 @@ msgid ""
 "Start the game with your headquarters only. Disabled seafaring because of "
 "lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
+"Begin het spel alleen met je hoofdkwartier. Zeevaart uitgeschakeld vanwege "
+"gebrek aan compatibiliteit met terreinvorming (bedijken van watermassa's)."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost"
-msgstr ""
+msgstr "Handelsvoorpost"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:13
@@ -1289,35 +1308,39 @@ msgid ""
 "some wares can be bought for gold, quartz and diamonds. Disabled seafaring "
 "because of lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
+"Deze startvoorwaarde bevat een markt als extra gebouw, waar sommige waren "
+"kunnen worden gekocht voor goud, kwarts en diamanten. Uitgeschakeld zeevaart "
+"vanwege gebrek aan compatibiliteit met terreinvorming (bedijken van "
+"watermassa's)."
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/init.lua:10
 msgid "Mark McWire"
-msgstr ""
+msgstr "Mark McWire"
 
 #. TRANSLATORS: This is a tribe name
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/init.lua:12
 msgid "Europeans (Food Addon)"
-msgstr ""
+msgstr "Europeanen ( Voedseladdon)"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/init.lua:13
 msgid "This is the culture of the Europeans."
-msgstr ""
+msgstr "Dit is de cultuur van de Europeanen."
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental Europeans tribe."
-msgstr ""
+msgstr "Dit is de experimentele Europese stam."
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:12
 msgctxt "europeans_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "‘%1%’<br>(%2%)"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:109
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Water is de essentie van het leven!"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:111
@@ -1327,6 +1350,9 @@ msgid ""
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
+"Water wordt gebruikt door de kleigraver, door de boswachter, door alle "
+"boerderijen, en in de bakkerij en de brouwerij. Ook de viskwekerij en de "
+"schapenhouderij hebben water nodig."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:122
@@ -1335,6 +1361,8 @@ msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
 msgstr ""
+"Rondhout is een belangrijk basismateriaal voor de bouw. Ze worden "
+"geproduceerd door bomen te vellen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:124
@@ -1343,6 +1371,9 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
+"Europese houthakkers vellen de bomen; boswachters zorgen voor de aanvoer van "
+"bomen. Houtblokken worden ook gebruikt voor de houtskooloven, de scheepswerf "
+"en de zagerij."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:134
@@ -1351,24 +1382,27 @@ msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
 "buildings. It is produced out of logs in the wood hardener (basic sawmill)."
 msgstr ""
+"Dit vuurharde hout is zo hard als ijzer en wordt gebruikt voor verschillende "
+"gebouwen. Het wordt geproduceerd uit boomstammen in de houtverharder (basis "
+"zagerij)."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:144
 msgctxt "europeans_ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Planken zijn een belangrijk bouwmateriaal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:146
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Ze worden door de zagerij gemaakt van boomstammen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:148
 msgctxt "europeans_ware"
 msgid "They are also used by the smithy, ferryyard and shipyard."
-msgstr ""
+msgstr "Ze worden ook gebruikt door de smederij, veerbootwerf en scheepswerf."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap wood
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:157
@@ -1377,24 +1411,28 @@ msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
 "or from sawmills. It can be processed into charcoal in charcoal burners."
 msgstr ""
+"Houtafval is afvalmateriaal dat ontstaat bij de sloop van gebouwen of in "
+"zagerijen. Het kan worden verwerkt tot houtskool in houtskoolbranders."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:167
 msgctxt "europeans_ware"
 msgid "Reed is an important building material."
-msgstr ""
+msgstr "Riet is een belangrijk bouwmateriaal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:169
 msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
-msgstr ""
+msgstr "Het wordt geproduceerd op de rietvelden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cloth
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:179
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
 msgstr ""
+"Linnen is nodig om verschillende gebouwen te bouwen. Het wordt gemaakt van "
+"riet."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:188
@@ -1403,6 +1441,8 @@ msgid ""
 "The animal farm produces leather, which is used as a raw material for making "
 "boots."
 msgstr ""
+"De dierenboerderij produceert leer, dat wordt gebruikt als grondstof voor "
+"het maken van laarzen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:197
@@ -1411,6 +1451,8 @@ msgid ""
 "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms "
 "with level 4 or 5 can produce wool."
 msgstr ""
+"Wol is het haar van schapen. Weverijen gebruiken het om harnassen van te "
+"maken. Dierenboerderijen met niveau 4 of 5 kunnen wol produceren."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:206
@@ -1419,18 +1461,20 @@ msgid ""
 "Raw material for some sorts of armor. It is produced in the weaving mill out "
 "of wool or reed."
 msgstr ""
+"Grondstof voor sommige soorten harnassen. Het wordt in de weverij gemaakt "
+"van wol of riet."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:219
 msgctxt "europeans_ware"
 msgid "Granite is a basic building material."
-msgstr ""
+msgstr "Graniet is een fundamenteel bouwmateriaal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:221
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr ""
+msgstr "De Europeanen produceren granieten blokken in steengroeven."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:232
