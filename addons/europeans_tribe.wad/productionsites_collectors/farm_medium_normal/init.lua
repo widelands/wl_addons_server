@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_productionsite_type {
     name = "europeans_farm_medium_normal",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Fruit Farm"),
+    descname = pgettext("europeans_building", "Cotton Farm"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -59,9 +59,9 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_space",
                 "return=skipped unless site has water:4",
                 "call=plant_idle",
-                "call=plant_berrybush",
+                "call=plant_cotton",
                 "call=plant_reed",
-                "call=harvest_berry",
+                "call=harvest_cotton",
                 "call=harvest_reed",
                 "return=skipped"
             }
@@ -70,23 +70,23 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs fruit or economy needs reed or economy needs water",
+                "return=skipped when economy needs cotton or economy needs reed or economy needs water",
                 "consume=water",
                 "callworker=plant_reed",
                 "animate=working duration:3s",
                 "consume=water:2",
-                "callworker=plant_berrybush",
+                "callworker=plant_cotton",
                 "animate=working duration:3s",
                 "sleep=duration:30s"
             }
         },
-        plant_berrybush = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
-            descname = pgettext("europeans_building", "planting berrybush"),
+        plant_cotton = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
+            descname = pgettext("europeans_building", "planting cotton"),
             actions = {
-                "return=skipped when economy needs reed and not economy needs fruit",
+                "return=skipped when economy needs reed and not economy needs cotton",
                 "consume=water:2",
-                "callworker=plant_berrybush",
+                "callworker=plant_cotton",
                 "animate=working duration:3s"
             }
         },
@@ -100,14 +100,14 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:3s"
             }
         },
-        harvest_berry = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
-            descname = pgettext("europeans_building", "harvesting berry"),
+        harvest_cotton = {
+            -- TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
+            descname = pgettext("europeans_building", "harvesting cotton"),
             actions = {
-                "return=skipped when economy needs reed and not economy needs fruit",
-                "callworker=harvest_berrybush",
+                "return=skipped when economy needs reed and not economy needs cotton",
+                "callworker=harvest_cotton",
                 "animate=working duration:3s",
-                "produce=fruit"
+                "produce=cotton"
             }
         },
         harvest_reed = {
@@ -125,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
         -- Translators: Short for "Out of ..." for a resource
         title = _("No Fields"),
         heading = _("Out of Fields"),
-        message = pgettext("europeans_building", "The farmer working at this fruit farm has no cleared soil to plant his seeds."),
+        message = pgettext("europeans_building", "The farmer working at this cotton farm has no cleared soil to plant his seeds."),
         productivity_threshold = 30
     },
 }

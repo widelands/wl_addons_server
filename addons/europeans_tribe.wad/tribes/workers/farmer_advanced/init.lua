@@ -13,19 +13,19 @@ wl.Descriptions():new_worker_type {
         check_space = {
             "findspace=size:any radius:7 space"
         },
-        plant_berrybush = {
+        plant_cotton = {
             "findspace=size:any radius:7 space",
             "walk=coords",
             "animate=planting duration:4s",
-            "plant=attrib:seed_berrybush",
+            "plant=attrib:seed_cotton",
             "animate=planting duration:4s",
             "return"
         },
-        plant_grape = {
+        plant_rubber = {
             "findspace=size:any radius:7 space",
             "walk=coords",
             "animate=planting duration:4s",
-            "plant=attrib:seed_grapes",
+            "plant=attrib:tree_rubber_sapling",
             "animate=planting duration:4s",
             "return"
         },
@@ -37,24 +37,24 @@ wl.Descriptions():new_worker_type {
             "animate=planting duration:2s",
             "return"
         },
-        harvest_berrybush = {
-            "findobject=attrib:ripe_bush radius:7",
+        harvest_cotton = {
+            "findobject=attrib:ripe_cotton radius:7",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvesting duration:4s",
             "callobject=harvest",
             "animate=gathering duration:2s",
-            "createware=fruit",
+            "createware=cotton",
             "return"
         },
-        harvest_grape = {
-            "findobject=attrib:ripe_grapes radius:7",
+        harvest_rubber = {
+            "findobject=attrib:tree_rubber_mature radius:7",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvesting duration:4s",
             "callobject=harvest",
             "animate=gathering duration:2s",
-            "createware=grape",
+            "createware=rubber",
             "return"
         },
         harvest_reed = {

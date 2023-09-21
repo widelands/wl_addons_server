@@ -36,7 +36,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 8 },
-        { name = "cloth", amount = 8 }
+        { name = "cloth", amount = 8 },
+        { name = "rubber", amount = 8 }
     },
 
     programs = {
@@ -96,7 +97,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs boots_swift or workers need experience",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_swift",
                 "return=skipped when economy needs boots_advanced and not economy needs boots_swift",
-                "consume=planks cloth:2",
+                "consume=planks rubber cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:120s",
                 "produce=boots_swift:2"
@@ -109,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs boots_advanced or workers need experience",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_advanced",
                 "return=skipped when economy needs boots_swift and not economy needs boots_advanced",
-                "consume=planks cloth:2",
+                "consume=planks rubber cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:120s",
                 "produce=boots_advanced:2"

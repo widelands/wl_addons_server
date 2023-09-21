@@ -55,7 +55,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 8 },
         { name = "gold", amount = 8 },
         { name = "bread", amount = 12 },
         { name = "honey_bread", amount = 12 },
@@ -73,34 +72,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "call=trading_for_wood",
-                "sleep=duration:15s",
                 "call=trading_for_copper",
-                "sleep=duration:15s",
-                "call=trading_for_wood",
-                "sleep=duration:15s",
+                "sleep=duration:30s",
                 "call=trading_for_silver",
-                "sleep=duration:15s",
-                "call=trading_for_wood",
-                "sleep=duration:15s",
+                "sleep=duration:30s",
                 "call=trading_for_gold"
-            }
-        },
-        trading_for_wood = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
-            descname = pgettext("europeans_building", "trading food for wood coins"),
-            actions = {
-                "return=skipped unless economy needs coin_wood",
-                "call=pausing_production_for_planks",
-                "sleep=duration:15s",
-                "call=trade_bread",
-                "call=trade_meat",
-                "call=trade_biscuit",
-                "call=trade_fish",
-                "sleep=duration:15s",
-                "call=trade_beer",
-                "call=trade_mead",
-                "call=trade_wine"
             }
         },
         trading_for_copper = {
@@ -154,34 +130,12 @@ wl.Descriptions():new_productionsite_type {
                 "call=trade_wine_gold"
             }
         },
-        pausing_production_for_planks = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing trading of planks"),
-            actions = {
-                "return=skipped when site has planks:4",
-                "sleep=duration:5m",
-            }
-        },
         pausing_production_for_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing trading of gold"),
             actions = {
                 "return=skipped when site has gold:4",
                 "sleep=duration:5m",
-            }
-        },
-        trade_beer = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped unless site has beer:4",
-                "return=skipped unless site has planks",
-                "consume=beer:4 planks",
-                "animate=working duration:30s",
-                "produce=coin_wood:4",
-                "sleep=duration:30s",
             }
         },
         trade_beer_copper = {
@@ -226,20 +180,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=beer_strong:8 gold",
                 "animate=working duration:30s",
                 "produce=coin_gold:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_biscuit = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped unless site has biscuit:2",
-                "return=skipped unless site has planks",
-                "consume=biscuit:2 planks",
-                "animate=working duration:30s",
-                "produce=coin_wood:4",
                 "sleep=duration:30s",
             }
         },
@@ -288,20 +228,6 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
             }
         },
-        trade_bread = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped unless site has bread:4",
-                "return=skipped unless site has planks",
-                "consume=bread:4 planks",
-                "animate=working duration:30s",
-                "produce=coin_wood:4",
-                "sleep=duration:30s",
-            }
-        },
         trade_bread_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
@@ -344,21 +270,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=honey_bread:8 gold",
                 "animate=working duration:30s",
                 "produce=coin_gold:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_fish = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped when economy needs coin_gold and not economy needs coin_wood",
-                "return=skipped unless site has fish:2",
-                "return=skipped unless site has planks",
-                "consume=fish:2 planks",
-                "animate=working duration:30s",
-                "produce=coin_wood:4",
                 "sleep=duration:30s",
             }
         },
@@ -407,20 +318,6 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
             }
         },
-        trade_mead = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped unless site has mead:4",
-                "return=skipped unless site has planks",
-                "consume=mead:4 planks",
-                "animate=working duration:30s",
-                "produce=coin_wood:4",
-                "sleep=duration:30s",
-            }
-        },
         trade_mead_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
@@ -466,20 +363,6 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
             }
         },
-        trade_meat = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped unless site has meat:2",
-                "return=skipped unless site has planks",
-                "consume=meat:4 planks",
-                "animate=working duration:30s",
-                "produce=coin_wood:4",
-                "sleep=duration:30s",
-            }
-        },
         trade_meat_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
@@ -522,21 +405,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=meat:8 gold",
                 "animate=working duration:30s",
                 "produce=coin_gold:4",
-                "sleep=duration:30s",
-            }
-        },
-        trade_wine = {
-            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = _("trading"),
-            actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs coin_silver and not economy needs coin_wood",
-                "return=skipped when economy needs coin_gold and not economy needs coin_wood",
-                "return=skipped unless site has wine:2",
-                "return=skipped unless site has planks",
-                "consume=wine:2 planks",
-                "animate=working duration:30s",
-                "produce=coin_wood:4",
                 "sleep=duration:30s",
             }
         },

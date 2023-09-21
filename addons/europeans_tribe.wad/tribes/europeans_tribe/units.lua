@@ -180,6 +180,15 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "cotton",
+                default_target_quantity = 32,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Cotton
+                    purpose = pgettext("europeans_ware", "Cotton is a raw material used to make clothing.")
+                }
+            },
+            {
                 name = "armor",
                 default_target_quantity = 16,
                 preciousness = 16,
@@ -189,21 +198,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "fruit",
+                name = "rubber",
                 default_target_quantity = 32,
                 preciousness = 16,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Fruit
-                    purpose = pgettext("europeans_ware", "Fruit are berries gathered from berry bushes by a fruit collector. They are used to brew fruit wine.")
-                }
-            },
-            {
-                name = "grape",
-                default_target_quantity = 32,
-                preciousness = 16,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Grape
-                    purpose = pgettext("europeans_ware", "These grapes are the base for a tasty wine. They are harvested in a advanced farm and processed in a winery.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Rubber
+                    purpose = pgettext("europeans_ware", "Rubber is needed to make improved boots.")
                 }
             }
         },
@@ -1118,290 +1118,38 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "cottonfield_tiny",
+            helptexts = {
+                -- TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
+                purpose = _("This cotton field has just been planted.")
+            }
+        },
+        {
+            name = "cottonfield_small",
+            helptexts = {
+                -- TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
+                purpose = _("This cotton field is growing.")
+            }
+        },
+        {
+            name = "cottonfield_medium",
+            helptexts = {
+                -- TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
+                purpose = _("This cotton field is flowering. Honey can be produced from it by a beekeeper.")
+            }
+        },
+        {
+            name = "cottonfield_ripe",
+            helptexts = {
+                -- TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
+                purpose = _("This cotton field is ready for harvesting.")
+            }
+        },
+        {
             name = "destroyed_building",
             helptexts = {
                 -- TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
                 purpose = _("The remains of a destroyed building.")
-            }
-        },
-        {
-            name = "berry_bush_blueberry_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush has just been planted.")
-            }
-        },
-        {
-            name = "berry_bush_blueberry_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is growing.")
-            }
-        },
-        {
-            name = "berry_bush_blueberry_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
-            }
-        },
-        {
-            name = "berry_bush_blueberry_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is ready for harvesting.")
-            }
-        },
-        {
-            name = "berry_bush_currant_red_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush has just been planted.")
-            }
-        },
-        {
-            name = "berry_bush_currant_red_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is growing.")
-            }
-        },
-        {
-            name = "berry_bush_currant_red_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
-            }
-        },
-        {
-            name = "berry_bush_currant_red_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is ready for harvesting.")
-            }
-        },
-        {
-            name = "berry_bush_juniper_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush has just been planted.")
-            }
-        },
-        {
-            name = "berry_bush_juniper_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is growing.")
-            }
-        },
-        {
-            name = "berry_bush_juniper_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
-            }
-        },
-        {
-            name = "berry_bush_juniper_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is ready for harvesting.")
-            }
-        },
-        {
-            name = "berry_bush_raspberry_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush has just been planted.")
-            }
-        },
-        {
-            name = "berry_bush_raspberry_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is growing.")
-            }
-        },
-        {
-            name = "berry_bush_raspberry_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
-            }
-        },
-        {
-            name = "berry_bush_raspberry_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is ready for harvesting.")
-            }
-        },
-        {
-            name = "berry_bush_currant_black_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush has just been planted.")
-            }
-        },
-        {
-            name = "berry_bush_currant_black_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is growing.")
-            }
-        },
-        {
-            name = "berry_bush_currant_black_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
-            }
-        },
-        {
-            name = "berry_bush_currant_black_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is ready for harvesting.")
-            }
-        },
-        {
-            name = "berry_bush_strawberry_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush has just been planted.")
-            }
-        },
-        {
-            name = "berry_bush_strawberry_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is growing.")
-            }
-        },
-        {
-            name = "berry_bush_strawberry_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
-            }
-        },
-        {
-            name = "berry_bush_strawberry_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is ready for harvesting.")
-            }
-        },
-        {
-            name = "berry_bush_stink_tree_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush has just been planted.")
-            }
-        },
-        {
-            name = "berry_bush_stink_tree_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is growing.")
-            }
-        },
-        {
-            name = "berry_bush_stink_tree_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
-            }
-        },
-        {
-            name = "berry_bush_stink_tree_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is ready for harvesting.")
-            }
-        },
-        {
-            name = "berry_bush_desert_hackberry_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush has just been planted.")
-            }
-        },
-        {
-            name = "berry_bush_desert_hackberry_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is growing.")
-            }
-        },
-        {
-            name = "berry_bush_desert_hackberry_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
-            }
-        },
-        {
-            name = "berry_bush_desert_hackberry_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is ready for harvesting.")
-            }
-        },
-        {
-            name = "berry_bush_sea_buckthorn_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush has just been planted.")
-            }
-        },
-        {
-            name = "berry_bush_sea_buckthorn_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is growing.")
-            }
-        },
-        {
-            name = "berry_bush_sea_buckthorn_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is flowering. Honey can be produced from it by a beekeeper.")
-            }
-        },
-        {
-            name = "berry_bush_sea_buckthorn_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-                purpose = _("This berry bush is ready for harvesting.")
-            }
-        },
-        {
-            name = "grapevine_tiny",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-                purpose = _("This grapevine has just been planted.")
-            }
-        },
-        {
-            name = "grapevine_small",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-                purpose = _("This grapevine is growing.")
-            }
-        },
-        {
-            name = "grapevine_medium",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-                purpose = _("This grapevine is growing.")
-            }
-        },
-        {
-            name = "grapevine_ripe",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-                purpose = _("This grapevine is ready for harvesting.")
             }
         },
         {
@@ -1444,6 +1192,118 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Helptext for a Europeans immovable: Reed Field
                 purpose = _("This reed field is ready for harvesting.")
+            }
+        },
+        {
+            name = "rubber_amazons_sapling",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Sapling
+                purpose = _("This rubber tree has just been planted.")
+            }
+        },
+        {
+            name = "rubber_amazons_pole",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
+                purpose = _("This rubber tree is growing.")
+            }
+        },
+        {
+            name = "rubber_amazons_mature",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
+                purpose = _("This rubber tree is fully grown. Lianas can be gathered from it.")
+            }
+        },
+        {
+            name = "rubber_amazons_old",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Old
+                purpose = _("This rubber tree is ready for harvesting rubber by a master woodcutter. Other tribes can harvest it for normal logs.")
+            }
+        },
+        {
+            name = "rubber_black_amazons_sapling",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Sapling
+                purpose = _("This rubber tree has just been planted.")
+            }
+        },
+        {
+            name = "rubber_black_amazons_pole",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
+                purpose = _("This rubber tree is growing.")
+            }
+        },
+        {
+            name = "rubber_black_amazons_mature",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
+                purpose = _("This rubber tree is fully grown. Lianas can be gathered from it.")
+            }
+        },
+        {
+            name = "rubber_black_amazons_old",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Old
+                purpose = _("This rubber tree is ready for harvesting rubber by a master woodcutter. Other tribes can harvest it for normal logs.")
+            }
+        },
+        {
+            name = "rubber_desert_amazons_sapling",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Sapling
+                purpose = _("This rubber tree has just been planted.")
+            }
+        },
+        {
+            name = "rubber_desert_amazons_pole",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
+                purpose = _("This rubber tree is growing.")
+            }
+        },
+        {
+            name = "rubber_desert_amazons_mature",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
+                purpose = _("This rubber tree is fully grown. Lianas can be gathered from it.")
+            }
+        },
+        {
+            name = "rubber_desert_amazons_old",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Old
+                purpose = _("This rubber tree is ready for harvesting rubber by a master woodcutter. Other tribes can harvest it for normal logs.")
+            }
+        },
+        {
+            name = "rubber_winter_amazons_sapling",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Sapling
+                purpose = _("This rubber tree has just been planted.")
+            }
+        },
+        {
+            name = "rubber_winter_amazons_pole",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
+                purpose = _("This rubber tree is growing.")
+            }
+        },
+        {
+            name = "rubber_winter_amazons_mature",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
+                purpose = _("This rubber tree is fully grown. Lianas can be gathered from it.")
+            }
+        },
+        {
+            name = "rubber_winter_amazons_old",
+            helptexts = {
+                -- TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Old
+                purpose = _("This rubber tree is ready for harvesting rubber by a master woodcutter. Other tribes can harvest it for normal logs.")
             }
         },
         {
@@ -1623,34 +1483,6 @@ wl.Descriptions():new_tribe {
             name = "ironwood_winter_amazons_old",
             helptexts = {
                 -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
-                purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
-            }
-        },
-        {
-            name = "rubber_amazons_old",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
-                purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
-            }
-        },
-        {
-            name = "rubber_black_amazons_old",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
-                purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
-            }
-        },
-        {
-            name = "rubber_desert_amazons_old",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
-                purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
-            }
-        },
-        {
-            name = "rubber_winter_amazons_old",
-            helptexts = {
-                -- TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
                 purpose = _("This tree is only planted by the amazon tribe but can be harvested for logs.")
             }
         },

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 03:06+0200\n"
+"POT-Creation-Date: 2023-09-21 03:06+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/widelands/"
 "teams/35159/pt_BR/)\n"
@@ -959,35 +959,28 @@ msgid "Big Market"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:74
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:175
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:189
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:204
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:219
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:234
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:73
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:143
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:158
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:173
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:188
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:203
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:218
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:233
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:248
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:263
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:278
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:293
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:307
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:322
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:337
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:352
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:367
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:382
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:397
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:412
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:426
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:441
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:456
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:471
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:485
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:500
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:515
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:530
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:545
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:560
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:575
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:308
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:323
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:338
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:353
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:368
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:383
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:398
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:413
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:428
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:443
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:67
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:120
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:134
@@ -1007,40 +1000,26 @@ msgid "trading"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:91
-#: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:76
-msgctxt "europeans_building"
-msgid "trading food for wood coins"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:108
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:84
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:90
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:125
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:101
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:142
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:118
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:159
-#: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:104
-msgctxt "europeans_building"
-msgid "pausing trading of planks"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:167
+#: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:135
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:112
 msgctxt "europeans_building"
 msgid "pausing trading of gold"
@@ -1050,6 +1029,18 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:8
 msgctxt "europeans_building"
 msgid "Small Market"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+#: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:76
+msgctxt "europeans_building"
+msgid "trading food for wood coins"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+#: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:104
+msgctxt "europeans_building"
+msgid "pausing trading of planks"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -3515,175 +3506,187 @@ msgstr[1] ""
 msgstr[2] ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/barley/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/barley/init.lua:8
 msgctxt "ware"
 msgid "Barley"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/beer/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/beer/init.lua:8
 msgctxt "ware"
 msgid "Beer"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/beer_strong/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/beer_strong/init.lua:8
 msgctxt "ware"
 msgid "Strong Beer"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/biscuit/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/biscuit/init.lua:8
 msgctxt "empire_ware"
 msgid "Biscuit"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/blackroot/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/blackroot/init.lua:8
 msgctxt "ware"
 msgid "Blackroot"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/bread/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/bread/init.lua:8
 msgctxt "ware"
 msgid "Bread"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/corn/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/corn/init.lua:8
 msgctxt "ware"
 msgid "Corn"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/fish/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/fish/init.lua:8
 msgctxt "ware"
 msgid "Fish"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/flour/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/flour/init.lua:8
 msgctxt "ware"
 msgid "Flour"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/honey/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/fruit/init.lua:8
+msgctxt "ware"
+msgid "Fruit"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_food_production.wad/tribes/wares/grape/init.lua:8
+msgctxt "ware"
+msgid "Grape"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_food_production.wad/tribes/wares/honey/init.lua:8
 msgctxt "ware"
 msgid "Honey"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/honey_bread/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/honey_bread/init.lua:8
 msgctxt "europeans_ware"
 msgid "Honey Bread"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/leather/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/leather/init.lua:8
 msgctxt "ware"
 msgid "Leather"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/mead/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/mead/init.lua:8
 msgctxt "ware"
 msgid "Mead"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/meat/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/meat/init.lua:8
 msgctxt "ware"
 msgid "Meat"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/rye/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/wheat/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/wheat/init.lua:8
 msgctxt "ware"
 msgid "Wheat"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/wine/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/wine/init.lua:8
 msgctxt "ware"
 msgid "Wine"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/wares/wool/init.lua:8
+#: addons/europeans_food_production.wad/tribes/wares/wool/init.lua:8
 msgctxt "ware"
 msgid "Wool"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/beekeeper_advanced/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/beekeeper_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Beekeeper"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/beekeeper_basic/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/beekeeper_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Beekeeper"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/beekeeper_normal/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/beekeeper_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Beekeeper"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/carrier_donkey/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/carrier_donkey/init.lua:8
 msgctxt "europeans_worker"
 msgid "Donkey"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/carrier_horse/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/carrier_horse/init.lua:8
 msgctxt "europeans_worker"
 msgid "Horse"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/carrier_ox/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/carrier_ox/init.lua:8
 msgctxt "europeans_worker"
 msgid "Ox"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/carrier_reindeer/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/carrier_reindeer/init.lua:8
 msgctxt "europeans_worker"
 msgid "Reindeer"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/farmer_advanced/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/farmer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Farmer"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/farmer_basic/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/farmer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Farmer"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/farmer_normal/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/farmer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
 msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/workers/trader/init.lua:8
+#: addons/europeans_food_production.wad/tribes/workers/trader/init.lua:8
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr ""

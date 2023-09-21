@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_productionsite_type {
     name = "europeans_farm_medium_advanced",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Vineyard"),
+    descname = pgettext("europeans_building", "Rubber Farm"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -46,11 +46,11 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_space",
                 "return=skipped unless site has water:6",
                 "call=plant_idle",
-                "call=plant_berrybush",
-                "call=plant_grape",
+                "call=plant_cotton",
+                "call=plant_rubber",
                 "call=plant_reed",
-                "call=harvest_berry",
-                "call=harvest_grape",
+                "call=harvest_cotton",
+                "call=harvest_rubber",
                 "call=harvest_reed",
                 "return=skipped"
             }
@@ -59,38 +59,38 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
             descname = _"idle program",
             actions = {
-                "return=skipped when economy needs fruit or economy needs grape or economy needs reed or economy needs water",
+                "return=skipped when economy needs cotton or economy needs rubber or economy needs reed or economy needs water",
                 "consume=water",
                 "callworker=plant_reed",
                 "animate=working duration:1s",
                 "consume=water:2",
-                "callworker=plant_berrybush",
+                "callworker=plant_cotton",
                 "animate=working duration:1s",
                 "consume=water:2",
-                "callworker=plant_grape",
+                "callworker=plant_rubber",
                 "animate=working duration:1s",
                 "sleep=duration:30s"
             }
         },
-        plant_berrybush = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
-            descname = pgettext("europeans_building", "planting berrybush"),
+        plant_cotton = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
+            descname = pgettext("europeans_building", "planting cotton"),
             actions = {
-                "return=skipped when economy needs grape and not economy needs fruit",
-                "return=skipped when economy needs reed and not economy needs fruit",
+                "return=skipped when economy needs rubber and not economy needs cotton",
+                "return=skipped when economy needs reed and not economy needs cotton",
                 "consume=water:2",
-                "callworker=plant_berrybush",
+                "callworker=plant_cotton",
                 "animate=working duration:1s"
             }
         },
-        plant_grape = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
-            descname = pgettext("europeans_building", "planting grape"),
+        plant_rubber = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
+            descname = pgettext("europeans_building", "planting rubber"),
             actions = {
-                "return=skipped when economy needs fruit and not economy needs grape",
-                "return=skipped when economy needs reed and not economy needs grape",
+                "return=skipped when economy needs cotton and not economy needs rubber",
+                "return=skipped when economy needs reed and not economy needs rubber",
                 "consume=water:2",
-                "callworker=plant_grape",
+                "callworker=plant_rubber",
                 "animate=working duration:1s",
             }
         },
@@ -98,41 +98,41 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
             descname = pgettext("europeans_building", "planting reed"),
             actions = {
-                "return=skipped when economy needs fruit and not economy needs reed",
-                "return=skipped when economy needs grape and not economy needs reed",
+                "return=skipped when economy needs cotton and not economy needs reed",
+                "return=skipped when economy needs rubber and not economy needs reed",
                 "consume=water",
                 "callworker=plant_reed",
                 "animate=working duration:1s",
             }
         },
-        harvest_berry = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
-            descname = pgettext("europeans_building", "harvesting berry"),
+        harvest_cotton = {
+            -- TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
+            descname = pgettext("europeans_building", "harvesting cotton"),
             actions = {
-                "return=skipped when economy needs grape and not economy needs fruit",
-                "return=skipped when economy needs reed and not economy needs fruit",
-                "callworker=harvest_berrybush",
+                "return=skipped when economy needs rubber and not economy needs cotton",
+                "return=skipped when economy needs reed and not economy needs cotton",
+                "callworker=harvest_cotton",
                 "animate=working duration:1s",
-                "produce=fruit"
+                "produce=cotton"
             }
         },
-        harvest_grape = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
-            descname = pgettext("europeans_building", "harvesting grape"),
+        harvest_rubber = {
+            -- TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
+            descname = pgettext("europeans_building", "harvesting rubber"),
             actions = {
-                "return=skipped when economy needs fruit and not economy needs grape",
-                "return=skipped when economy needs reed and not economy needs grape",
-                "callworker=harvest_grape",
+                "return=skipped when economy needs cotton and not economy needs rubber",
+                "return=skipped when economy needs reed and not economy needs rubber",
+                "callworker=harvest_rubber",
                 "animate=working duration:1s",
-                "produce=grape"
+                "produce=rubber"
             }
         },
         harvest_reed = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
-                "return=skipped when economy needs fruit and not economy needs reed",
-                "return=skipped when economy needs grape and not economy needs reed",
+                "return=skipped when economy needs cotton and not economy needs reed",
+                "return=skipped when economy needs rubber and not economy needs reed",
                 "callworker=harvest_reed",
                 "animate=working duration:1s",
                 "produce=reed"

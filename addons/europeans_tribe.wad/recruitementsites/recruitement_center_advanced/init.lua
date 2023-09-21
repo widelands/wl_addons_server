@@ -150,7 +150,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "recruiting farmer"),
             actions = {
                 "return=skipped unless economy needs europeans_farmer_advanced",
-                "return=skipped unless economy needs reed or economy needs fruit or economy needs grape",
+                "return=skipped unless economy needs reed or economy needs cotton or economy needs rubber",
                 "consume=europeans_carrier",
                 "consume=scythe basket",
                 "animate=working duration:180s",
