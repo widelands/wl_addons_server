@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-21 03:06+0200\n"
+"POT-Creation-Date: 2023-09-22 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -32,24 +32,20 @@ msgid ""
 msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/medium/init.lua:9
-#, fuzzy
 msgid "Cotton Field (medium)"
-msgstr "갈대 수확지 (중간 단계)"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/ripe/init.lua:9
-#, fuzzy
 msgid "Cotton Field (ripe)"
-msgstr "갈대 수확지 (수확 가능)"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/small/init.lua:9
-#, fuzzy
 msgid "Cotton Field (small)"
-msgstr "갈대 수확지 (초반 단계)"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/tiny/init.lua:9
-#, fuzzy
 msgid "Cotton Field (tiny)"
-msgstr "갈대 수확지 (극초반 단계)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/dry/init.lua:8
@@ -793,17 +789,15 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:77
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:85
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting cotton"
-msgstr "나무 심기"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting rubber"
-msgstr "갈대 심기"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
@@ -816,17 +810,15 @@ msgstr "갈대 심기"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:110
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:105
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr "갈대 수확"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting rubber"
-msgstr "베리 수확"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
@@ -874,12 +866,11 @@ msgid "Cotton Farm"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
 "seeds."
-msgstr "해당 우물에 물이 더 이상 없습니다."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -5841,131 +5832,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgid "Blueberry Bush (medium)"
-#~ msgstr "블루베리 덤불 (중간 단계)"
-
-#~ msgid "Blueberry Bush (ripe)"
-#~ msgstr "블루베리 덤불 (수확 가능)"
-
-#~ msgid "Blueberry Bush (small)"
-#~ msgstr "블루베리 덤불 (초반 단계)"
-
-#~ msgid "Blueberry Bush (tiny)"
-#~ msgstr "블루베리 덤불 (극초반 단계)"
-
-#~ msgid "Black Currant (medium)"
-#~ msgstr "블랙커런트 (중간 단계)"
-
-#~ msgid "Black Currant (ripe)"
-#~ msgstr "블랙커런트 (수확 가능)"
-
-#~ msgid "Black Currant (small)"
-#~ msgstr "블랙커런트 (초반 단계)"
-
-#~ msgid "Black Currant (tiny)"
-#~ msgstr "블랙커런트 (극초반 단계)"
-
-#~ msgid "Red Currant (medium)"
-#~ msgstr "레드커런트 (중간 단계)"
-
-#~ msgid "Red Currant (ripe)"
-#~ msgstr "레드커런트 (수확 가능)"
-
-#~ msgid "Red Currant (small)"
-#~ msgstr "레드커런트 (초반 단계)"
-
-#~ msgid "Red Currant (tiny)"
-#~ msgstr "레드커런트 (극초반 단계)"
-
-#~ msgid "Desert Hackberry (medium)"
-#~ msgstr "사막 팽나무 (중간 단계)"
-
-#~ msgid "Desert Hackberry (ripe)"
-#~ msgstr "사막 팽나무 (수확 가능)"
-
-#~ msgid "Desert Hackberry (small)"
-#~ msgstr "사막 팽나무 (초반 단계)"
-
-#~ msgid "Desert Hackberry (tiny)"
-#~ msgstr "사막 팽나무 (극초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (medium)"
-#~ msgstr "포도 덩굴 (중간 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (ripe)"
-#~ msgstr "포도 덩굴 (수확 가능)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (small)"
-#~ msgstr "포도 덩굴 (초반 단계)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (tiny)"
-#~ msgstr "포도 덩굴 (극초반 단계)"
-
-#~ msgid "Juniper (medium)"
-#~ msgstr "항나무 (중간 단계)"
-
-#~ msgid "Juniper (ripe)"
-#~ msgstr "항나무 (수확 가능)"
-
-#~ msgid "Juniper (small)"
-#~ msgstr "항나무 (초반 단계)"
-
-#~ msgid "Juniper (tiny)"
-#~ msgstr "항나무 (극초반 단계)"
-
-#~ msgid "Raspberry Bush (medium)"
-#~ msgstr "라즈베리 덤불 (중간 단계)"
-
-#~ msgid "Raspberry Bush (ripe)"
-#~ msgstr "라즈베리 덤불 (수확 가능)"
-
-#~ msgid "Raspberry Bush (small)"
-#~ msgstr "라즈베리 덤불 (초반 단계)"
-
-#~ msgid "Raspberry Bush (tiny)"
-#~ msgstr "라즈베리 덤불 (극초반 단계)"
-
-#~ msgid "Sea Buckthorn (medium)"
-#~ msgstr "산자나무 (중간 단계)"
-
-#~ msgid "Sea Buckthorn (ripe)"
-#~ msgstr "산자나무 (수확 가능)"
-
-#~ msgid "Sea Buckthorn (small)"
-#~ msgstr "산자나무 (초반 단계)"
-
-#~ msgid "Sea Buckthorn (tiny)"
-#~ msgstr "산자나무 (극초반 단계)"
-
-#~ msgid "Stink Shepherd’s Tree (medium)"
-#~ msgstr "냄새나는 양치기 나무 (중간 단계)"
-
-#~ msgid "Stink Shepherd’s Tree (ripe)"
-#~ msgstr "냄새나는 양치기 나무 (수확 가능)"
-
-#~ msgid "Stink Shepherd’s Tree (small)"
-#~ msgstr "냄새나는 양치기 나무 (초반 단계)"
-
-#~ msgid "Stink Shepherd’s Tree (tiny)"
-#~ msgstr "냄새나는 양치기 나무 (극초반 단계)"
-
-#~ msgid "Strawberries (medium)"
-#~ msgstr "딸기 (중간 단계)"
-
-#~ msgid "Strawberries (ripe)"
-#~ msgstr "딸기 (수확 가능)"
-
-#~ msgid "Strawberries (small)"
-#~ msgstr "딸기 (초반 단계)"
-
-#~ msgid "Strawberries (tiny)"
-#~ msgstr "딸기 (극초반 단계)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting berrybush"
-#~ msgstr "베리 덤불 심기"

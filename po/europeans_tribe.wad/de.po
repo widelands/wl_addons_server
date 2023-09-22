@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-21 03:06+0200\n"
+"POT-Creation-Date: 2023-09-22 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -39,24 +39,20 @@ msgstr ""
 "und einige Waren von anderen Stämmen, bis eigene Grafiken verfügbar sind."
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/medium/init.lua:9
-#, fuzzy
 msgid "Cotton Field (medium)"
-msgstr "Reetfeld (mittel)"
+msgstr "Baumwellfeld (mittel)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/ripe/init.lua:9
-#, fuzzy
 msgid "Cotton Field (ripe)"
-msgstr "Reetfeld (reif)"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/small/init.lua:9
-#, fuzzy
 msgid "Cotton Field (small)"
-msgstr "Reetfeld (klein)"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/tiny/init.lua:9
-#, fuzzy
 msgid "Cotton Field (tiny)"
-msgstr "Reetfeld (jung)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/dry/init.lua:8
@@ -800,17 +796,15 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:77
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:85
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting cotton"
-msgstr "Das Pflanzen von Bäumen"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting rubber"
-msgstr "Das Pflanzen von Reet"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
@@ -823,17 +817,15 @@ msgstr "Das Pflanzen von Reet"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:110
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:105
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr "Das Ernten von Reet"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting rubber"
-msgstr "Das Ernten von Beeren"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
@@ -884,14 +876,11 @@ msgid "Cotton Farm"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
 "seeds."
 msgstr ""
-"Der Bauer, der auf dieser Beerenplantage arbeitet, hat keinen freien Platz, "
-"um Beeren zu pflanzen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -1739,10 +1728,9 @@ msgstr "Verbesserte Weberei"
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:64
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:63
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for cotton"
-msgstr "Produktionspause von Holz"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:72
@@ -3581,10 +3569,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved boots."
-msgstr "Lehm wird zur Herstellung von Ziegeln gebraucht."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:219
@@ -4285,28 +4272,24 @@ msgstr "Die Überreste eines zerstörten Gebäudes."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1124
-#, fuzzy
 msgid "This cotton field has just been planted."
-msgstr "Dieses Reetfeld wurde eben erst bepflanzt."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1131
-#, fuzzy
 msgid "This cotton field is growing."
-msgstr "Dieses Reetfeld wächst."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1138
-#, fuzzy
 msgid ""
 "This cotton field is flowering. Honey can be produced from it by a beekeeper."
-msgstr "Dieser Reet blüht. Honig kann von einem Imker geerntet werden."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1145
-#, fuzzy
 msgid "This cotton field is ready for harvesting."
-msgstr "Dieses Reetfeld ist erntereif."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1159
@@ -4354,18 +4337,16 @@ msgstr "Dieses Reetfeld ist erntereif."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1229
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1257
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1285
-#, fuzzy
 msgid "This rubber tree has just been planted."
-msgstr "Dieses Reetfeld wurde eben erst bepflanzt."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1208
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1236
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1264
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1292
-#, fuzzy
 msgid "This rubber tree is growing."
-msgstr "Dieses Reetfeld wächst."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1215
@@ -6060,196 +6041,3 @@ msgstr "Lehrling"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Geselle"
-
-#~ msgid "Blueberry Bush (medium)"
-#~ msgstr "Blaubeerbusch (mittel)"
-
-#~ msgid "Blueberry Bush (ripe)"
-#~ msgstr "Blaubeerbusch (reif)"
-
-#~ msgid "Blueberry Bush (small)"
-#~ msgstr "Blaubeerbusch (klein)"
-
-#~ msgid "Blueberry Bush (tiny)"
-#~ msgstr "Blaubeerbusch (jung)"
-
-#~ msgid "Black Currant (medium)"
-#~ msgstr "Schwarze Johannisbeere (mittel)"
-
-#~ msgid "Black Currant (ripe)"
-#~ msgstr "Schwarze Johannisbeere (reif)"
-
-#~ msgid "Black Currant (small)"
-#~ msgstr "Schwarze Johannisbeere (klein)"
-
-#~ msgid "Black Currant (tiny)"
-#~ msgstr "Schwarze Johannisbeere (jung)"
-
-#~ msgid "Red Currant (medium)"
-#~ msgstr "Rote Johannisbeere (mittel)"
-
-#~ msgid "Red Currant (ripe)"
-#~ msgstr "Rote Johannisbeere (reif)"
-
-#~ msgid "Red Currant (small)"
-#~ msgstr "Rote Johannisbeere (klein)"
-
-#~ msgid "Red Currant (tiny)"
-#~ msgstr "Rote Johannisbeere (jung)"
-
-#~ msgid "Desert Hackberry (medium)"
-#~ msgstr "Wüstenzürgelbaum (mittel)"
-
-#~ msgid "Desert Hackberry (ripe)"
-#~ msgstr "Wüstenzürgelbaum (reif)"
-
-#~ msgid "Desert Hackberry (small)"
-#~ msgstr "Wüstenzürgelbaum (klein)"
-
-#~ msgid "Desert Hackberry (tiny)"
-#~ msgstr "Wüstenzürgelbaum (jung)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (medium)"
-#~ msgstr "Weinreben (mittel)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (ripe)"
-#~ msgstr "Weinreben (reif)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (small)"
-#~ msgstr "Weinreben (klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (tiny)"
-#~ msgstr "Weinreben (jung)"
-
-#~ msgid "Juniper (medium)"
-#~ msgstr "Wacholder (mittel)"
-
-#~ msgid "Juniper (ripe)"
-#~ msgstr "Wacholder (reif)"
-
-#~ msgid "Juniper (small)"
-#~ msgstr "Wacholder (klein)"
-
-#~ msgid "Juniper (tiny)"
-#~ msgstr "Wacholder (jung)"
-
-#~ msgid "Raspberry Bush (medium)"
-#~ msgstr "Himbeerbusch (mittel)"
-
-#~ msgid "Raspberry Bush (ripe)"
-#~ msgstr "Himbeerbusch (reif)"
-
-#~ msgid "Raspberry Bush (small)"
-#~ msgstr "Himbeerbusch (klein)"
-
-#~ msgid "Raspberry Bush (tiny)"
-#~ msgstr "Himbeerbusch (jung)"
-
-#~ msgid "Sea Buckthorn (medium)"
-#~ msgstr "Seekreuzdorn (mittel)"
-
-#~ msgid "Sea Buckthorn (ripe)"
-#~ msgstr "Seekreuzdorn (reif)"
-
-#~ msgid "Sea Buckthorn (small)"
-#~ msgstr "Seekreuzdorn (klein)"
-
-#~ msgid "Sea Buckthorn (tiny)"
-#~ msgstr "Seekreuzdorn (jung)"
-
-#~ msgid "Stink Shepherd’s Tree (medium)"
-#~ msgstr "Stinkender Hirtenbaum (mittel)"
-
-#~ msgid "Stink Shepherd’s Tree (ripe)"
-#~ msgstr "Stinkender Hirtenbaum (reif)"
-
-#~ msgid "Stink Shepherd’s Tree (small)"
-#~ msgstr "Stinkender Hirtenbaum (klein)"
-
-#~ msgid "Stink Shepherd’s Tree (tiny)"
-#~ msgstr "Stinkender Hirtenbaum (jung)"
-
-#~ msgid "Strawberries (medium)"
-#~ msgstr "Erdbeerfeld (mittel)"
-
-#~ msgid "Strawberries (ripe)"
-#~ msgstr "Erdbeerfeld (reif)"
-
-#~ msgid "Strawberries (small)"
-#~ msgstr "Erdbeerfeld (klein)"
-
-#~ msgid "Strawberries (tiny)"
-#~ msgstr "Erdbeerfeld (jung)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Vineyard"
-#~ msgstr "Weinberg"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting berrybush"
-#~ msgstr "Das Pflanzen von Beerenbüschen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting grape"
-#~ msgstr "Das Pflanzen von Weintrauben"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting grape"
-#~ msgstr "Das Ernten von Weintrauben"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Fruit Farm"
-#~ msgstr "Beerenplantage"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Fruit are berries gathered from berry bushes by a fruit collector. They "
-#~ "are used to brew fruit wine."
-#~ msgstr ""
-#~ " Beeren werden von Beerensträuchern durch einen Beerensammler gesammelt. "
-#~ "Sie werden benutzt um Fruchtwein zu keltern."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "These grapes are the base for a tasty wine. They are harvested in a "
-#~ "advanced farm and processed in a winery."
-#~ msgstr ""
-#~ "Diese Weintrauben sind die Grundlage für einen fruchtigen Wein. Sie "
-#~ "werden auf einem verbesserten Bauernhof geerntet und in einer "
-#~ "Weinkellerei gekeltert."
-
-#~ msgid "This berry bush has just been planted."
-#~ msgstr "Dieser Beerenbusch wurde eben erst angepflanzt."
-
-#~ msgid "This berry bush is growing."
-#~ msgstr "Dieser Beerenbusch wächst."
-
-#~ msgid ""
-#~ "This berry bush is flowering. Honey can be produced from it by a "
-#~ "beekeeper."
-#~ msgstr ""
-#~ "Dieser Beerenbusch blüht. Honig kann von einem Imker geerntet werden."
-
-#~ msgid "This berry bush is ready for harvesting."
-#~ msgstr "Dieser Beerenbusch ist erntereif."
-
-#~ msgid "This grapevine has just been planted."
-#~ msgstr "Diese Weinreben wurden eben erst angepflanzt."
-
-#~ msgid "This grapevine is growing."
-#~ msgstr "Diese Weinreben wachsen."
-
-#~ msgid "This grapevine is ready for harvesting."
-#~ msgstr "Diese Weinreben sind bereit für die Lese."
-
-#~ msgctxt "ware"
-#~ msgid "Fruit"
-#~ msgstr "Beeren"
-
-#~ msgctxt "ware"
-#~ msgid "Grape"
-#~ msgstr "Weintrauben"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-21 03:06+0200\n"
+"POT-Creation-Date: 2023-09-22 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -811,10 +811,9 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:110
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:105
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr "výcvik průzkumníka"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
@@ -868,12 +867,11 @@ msgid "Cotton Farm"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
 "seeds."
-msgstr "Nosič pracující u této studny nemá ve studni žádnou vodu."
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -3527,10 +3525,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved boots."
-msgstr "Pro výrobu cihel je potřeba cihlářská hlína."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:219
@@ -4155,28 +4152,24 @@ msgstr "Pozůstatky zničené budovy."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1124
-#, fuzzy
 msgid "This cotton field has just been planted."
-msgstr "Toto je právě oseté rákosové pole."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1131
-#, fuzzy
 msgid "This cotton field is growing."
-msgstr "Toto je dorůstající rákosové pole."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1138
-#, fuzzy
 msgid ""
 "This cotton field is flowering. Honey can be produced from it by a beekeeper."
-msgstr "Toto rákosové pole právě kvete. Včelař tu může zajistit získání medu."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1145
-#, fuzzy
 msgid "This cotton field is ready for harvesting."
-msgstr "Toto rákosové pole je připraveno ke sklizni."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1159
@@ -4219,18 +4212,16 @@ msgstr "Toto rákosové pole je připraveno ke sklizni."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1229
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1257
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1285
-#, fuzzy
 msgid "This rubber tree has just been planted."
-msgstr "Toto je právě oseté rákosové pole."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1208
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1236
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1264
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1292
-#, fuzzy
 msgid "This rubber tree is growing."
-msgstr "Toto je dorůstající rákosové pole."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1215
@@ -5924,42 +5915,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Fruit are berries gathered from berry bushes by a fruit collector. They "
-#~ "are used to brew fruit wine."
-#~ msgstr ""
-#~ "Ovoce je sbíráno z ovocných keřů sběračem ovoce. Je používáno k výrobě "
-#~ "ovocného vína."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "These grapes are the base for a tasty wine. They are harvested in a "
-#~ "advanced farm and processed in a winery."
-#~ msgstr ""
-#~ "Hrozny jsou základní pro chutné víno. Sbírají se v pokročilém statku a "
-#~ "zpracovávají se ve vinném sklepě."
-
-#~ msgid "This berry bush has just been planted."
-#~ msgstr "Tento ovocný keř je čerstvě zasazený."
-
-#~ msgid "This berry bush is growing."
-#~ msgstr "Tento ovocný keř pomalu roste."
-
-#~ msgid ""
-#~ "This berry bush is flowering. Honey can be produced from it by a "
-#~ "beekeeper."
-#~ msgstr "Tento ovocný keř již kvete. Včelař tu může zajistit získání medu."
-
-#~ msgid "This berry bush is ready for harvesting."
-#~ msgstr "Ovocný keř dozrál ke sbírání."
-
-#~ msgid "This grapevine has just been planted."
-#~ msgstr "Tento vinný keř byl právě zasazen."
-
-#~ msgid "This grapevine is growing."
-#~ msgstr "Toto je dorůstající vinný keř."
-
-#~ msgid "This grapevine is ready for harvesting."
-#~ msgstr "Tento vinný keř je připraven ke sklizni."

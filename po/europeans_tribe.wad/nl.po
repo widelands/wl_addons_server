@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-21 03:06+0200\n"
+"POT-Creation-Date: 2023-09-22 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -35,24 +35,20 @@ msgstr ""
 "beschikbaar zijn."
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/medium/init.lua:9
-#, fuzzy
 msgid "Cotton Field (medium)"
-msgstr "Rietveld (medium)"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/ripe/init.lua:9
-#, fuzzy
 msgid "Cotton Field (ripe)"
-msgstr "Rietveld (rijp)"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/small/init.lua:9
-#, fuzzy
 msgid "Cotton Field (small)"
-msgstr "Rietveld (klein)"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/tiny/init.lua:9
-#, fuzzy
 msgid "Cotton Field (tiny)"
-msgstr "Rietveld (zeer klein)"
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/dry/init.lua:8
@@ -796,17 +792,15 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:77
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:85
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting cotton"
-msgstr "bomen planten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting rubber"
-msgstr "riet planten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
@@ -819,17 +813,15 @@ msgstr "riet planten"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:110
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:105
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr "riet oogsten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting rubber"
-msgstr "bes oogsten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
@@ -881,14 +873,11 @@ msgid "Cotton Farm"
 msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
 "seeds."
 msgstr ""
-"De boer die op dit fruitteeltbedrijf werkt, heeft geen vrijgemaakte grond om "
-"zijn zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -1735,10 +1724,9 @@ msgstr "Geavanceerde Weverij"
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:64
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:63
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for cotton"
-msgstr "Productie onderbreken voor hout"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:72
@@ -3580,10 +3568,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved boots."
-msgstr "Klei is nodig om bakstenen te maken."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:219
@@ -4278,28 +4265,24 @@ msgstr "De overblijfselen van een verwoest gebouw."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1124
-#, fuzzy
 msgid "This cotton field has just been planted."
-msgstr "Dit rietveld is net geplant."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1131
-#, fuzzy
 msgid "This cotton field is growing."
-msgstr "Dit rietveld groeit."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1138
-#, fuzzy
 msgid ""
 "This cotton field is flowering. Honey can be produced from it by a beekeeper."
-msgstr "Dit rietveld staat in bloei. Een imker kan er honing van maken."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1145
-#, fuzzy
 msgid "This cotton field is ready for harvesting."
-msgstr "Dit rietveld kan worden geoogst."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1159
@@ -4347,18 +4330,16 @@ msgstr "Dit rietveld kan worden geoogst."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1229
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1257
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1285
-#, fuzzy
 msgid "This rubber tree has just been planted."
-msgstr "Dit rietveld is net geplant."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1208
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1236
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1264
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1292
-#, fuzzy
 msgid "This rubber tree is growing."
-msgstr "Dit rietveld groeit."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1215
@@ -6057,195 +6038,3 @@ msgstr "Basis Werker"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Normale Werker"
-
-#~ msgid "Blueberry Bush (medium)"
-#~ msgstr "Bosbessenstruik (medium)"
-
-#~ msgid "Blueberry Bush (ripe)"
-#~ msgstr "Bosbessenstruik (rijp)"
-
-#~ msgid "Blueberry Bush (small)"
-#~ msgstr "Bosbessenstruik (klein)"
-
-#~ msgid "Blueberry Bush (tiny)"
-#~ msgstr "Bosbessenstruik (zeer klein)"
-
-#~ msgid "Black Currant (medium)"
-#~ msgstr "Zwarte Bes (medium)"
-
-#~ msgid "Black Currant (ripe)"
-#~ msgstr "Zwarte Bes (rijp)"
-
-#~ msgid "Black Currant (small)"
-#~ msgstr "Zwarte Bes (klein)"
-
-#~ msgid "Black Currant (tiny)"
-#~ msgstr "Zwarte Bes (zeer klein)"
-
-#~ msgid "Red Currant (medium)"
-#~ msgstr "Aalbes (medium)"
-
-#~ msgid "Red Currant (ripe)"
-#~ msgstr "Aalbes (rijp)"
-
-#~ msgid "Red Currant (small)"
-#~ msgstr "Aalbes (klein)"
-
-#~ msgid "Red Currant (tiny)"
-#~ msgstr "Aalbes (zeer klein)"
-
-#~ msgid "Desert Hackberry (medium)"
-#~ msgstr "Woestijn Hackberry (medium)"
-
-#~ msgid "Desert Hackberry (ripe)"
-#~ msgstr "Woestijn Hackberry (rijp)"
-
-#~ msgid "Desert Hackberry (small)"
-#~ msgstr "Woestijn Hackberry klein)"
-
-#~ msgid "Desert Hackberry (tiny)"
-#~ msgstr "Woestijn Hackberry (zeer klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (medium)"
-#~ msgstr "Wijnrank (medium)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (ripe)"
-#~ msgstr "Wijnrank (rijp)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (small)"
-#~ msgstr "Wijnrank (klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Grapevine (tiny)"
-#~ msgstr "Wijnrank (zeer klein)"
-
-#~ msgid "Juniper (medium)"
-#~ msgstr "Jeneverbes (medium)"
-
-#~ msgid "Juniper (ripe)"
-#~ msgstr "Jeneverbes (rijp)"
-
-#~ msgid "Juniper (small)"
-#~ msgstr "Jeneverbes (klein)"
-
-#~ msgid "Juniper (tiny)"
-#~ msgstr "Jeneverbes (zeer klein)"
-
-#~ msgid "Raspberry Bush (medium)"
-#~ msgstr "Frambozenstruik (medium)"
-
-#~ msgid "Raspberry Bush (ripe)"
-#~ msgstr "Frambozenstruik (rijp)"
-
-#~ msgid "Raspberry Bush (small)"
-#~ msgstr "Frambozenstruik (klein)"
-
-#~ msgid "Raspberry Bush (tiny)"
-#~ msgstr "Frambozenstruik ( zeer klein)"
-
-#~ msgid "Sea Buckthorn (medium)"
-#~ msgstr "Duindoorn (medium)"
-
-#~ msgid "Sea Buckthorn (ripe)"
-#~ msgstr "Duindoorn (rijp)"
-
-#~ msgid "Sea Buckthorn (small)"
-#~ msgstr "Duindoorn (klein)"
-
-#~ msgid "Sea Buckthorn (tiny)"
-#~ msgstr "Duindoorn (zeer klein)"
-
-#~ msgid "Stink Shepherd’s Tree (medium)"
-#~ msgstr "Stinkende Herdersboom (medium)"
-
-#~ msgid "Stink Shepherd’s Tree (ripe)"
-#~ msgstr "Stinkende Herdersboom (rijp)"
-
-#~ msgid "Stink Shepherd’s Tree (small)"
-#~ msgstr "Stinkende Herdersboom (klein)"
-
-#~ msgid "Stink Shepherd’s Tree (tiny)"
-#~ msgstr "Stinkende Herdersboom (zeer klein)"
-
-#~ msgid "Strawberries (medium)"
-#~ msgstr "Aardbeien (medium)"
-
-#~ msgid "Strawberries (ripe)"
-#~ msgstr "Aardbeien (rijp)"
-
-#~ msgid "Strawberries (small)"
-#~ msgstr "Aardbeien (klein)"
-
-#~ msgid "Strawberries (tiny)"
-#~ msgstr "Aardbeien (zeer klein)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Vineyard"
-#~ msgstr "Wijngaard"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting berrybush"
-#~ msgstr "bessenstruik planten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting grape"
-#~ msgstr "druif planten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting grape"
-#~ msgstr "druif oogsten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Fruit Farm"
-#~ msgstr "Fruitkwekerij"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Fruit are berries gathered from berry bushes by a fruit collector. They "
-#~ "are used to brew fruit wine."
-#~ msgstr ""
-#~ "Fruit zijn bessen die door een fruitplukker worden verzameld van "
-#~ "bessenstruiken. Ze worden gebruikt om vruchtenwijn van te maken."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "These grapes are the base for a tasty wine. They are harvested in a "
-#~ "advanced farm and processed in a winery."
-#~ msgstr ""
-#~ "Deze druiven vormen de basis voor een lekkere wijn. Ze worden geoogst op "
-#~ "een geavanceerde boerderij en verwerkt in een wijnmakerij."
-
-#~ msgid "This berry bush has just been planted."
-#~ msgstr "Deze bessenstruik is net geplant."
-
-#~ msgid "This berry bush is growing."
-#~ msgstr "Deze bessenstruik groeit."
-
-#~ msgid ""
-#~ "This berry bush is flowering. Honey can be produced from it by a "
-#~ "beekeeper."
-#~ msgstr ""
-#~ "Deze bessenstruik staat in bloei. Een imker kan er honing van maken."
-
-#~ msgid "This berry bush is ready for harvesting."
-#~ msgstr "Deze bessenstruik is klaar om geoogst te worden."
-
-#~ msgid "This grapevine has just been planted."
-#~ msgstr "Deze wijnstok is net geplant."
-
-#~ msgid "This grapevine is growing."
-#~ msgstr "Deze wijnstok groeit."
-
-#~ msgid "This grapevine is ready for harvesting."
-#~ msgstr "Deze wijnstok is klaar om geoogst te worden."
-
-#~ msgctxt "ware"
-#~ msgid "Fruit"
-#~ msgstr "Fruit"
-
-#~ msgctxt "ware"
-#~ msgid "Grape"
-#~ msgstr "Druif"
