@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-22 03:06+0200\n"
+"POT-Creation-Date: 2023-09-23 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -44,15 +44,15 @@ msgstr "Baumwellfeld (mittel)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/ripe/init.lua:9
 msgid "Cotton Field (ripe)"
-msgstr ""
+msgstr "Cotton Field (reif)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/small/init.lua:9
 msgid "Cotton Field (small)"
-msgstr ""
+msgstr "Cotton Field (klein)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/tiny/init.lua:9
 msgid "Cotton Field (tiny)"
-msgstr ""
+msgstr "Cotton Field (jung)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/dry/init.lua:8
@@ -168,7 +168,7 @@ msgstr "Handelsplatz"
 #: addons/europeans_tribe.wad/immovables/trees/rubber/mature/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/mature/winter/init.lua:11
 msgid "Rubber Tree (Mature)"
-msgstr ""
+msgstr "Kautschukbaum (herangewachsen)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/black/init.lua:11
@@ -176,7 +176,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/winter/init.lua:11
 msgid "Rubber Tree (Old)"
-msgstr ""
+msgstr "Kautschukbaum (alt)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/black/init.lua:13
@@ -184,7 +184,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/green/init.lua:13
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/winter/init.lua:13
 msgid "Rubber Tree"
-msgstr ""
+msgstr "Kautschukbaum"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/black/init.lua:11
@@ -192,7 +192,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/winter/init.lua:11
 msgid "Rubber Tree (Pole)"
-msgstr ""
+msgstr "Kautschukbaum (jung)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/black/init.lua:11
@@ -200,7 +200,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/winter/init.lua:11
 msgid "Rubber Tree (Sapling)"
-msgstr ""
+msgstr "Kautschukbaum (Setzling)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/militarysites/advanced_barrier/init.lua:8
@@ -791,20 +791,20 @@ msgstr "Normale Lehmgrube"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Rubber Farm"
-msgstr ""
+msgstr "Kautschukbaum-Plantage"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:77
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:85
 msgctxt "europeans_building"
 msgid "planting cotton"
-msgstr ""
+msgstr "Das Pflanzen von Baumwolle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
 msgctxt "europeans_building"
 msgid "planting rubber"
-msgstr ""
+msgstr "Das Pflanzen von Kautschuk"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
@@ -819,13 +819,13 @@ msgstr "Das Pflanzen von Reet"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:105
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr ""
+msgstr "Das Ernten von Baumwolle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
 msgctxt "europeans_building"
 msgid "harvesting rubber"
-msgstr ""
+msgstr "Das Ernten von Kautschuk"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
@@ -873,7 +873,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Cotton Farm"
-msgstr ""
+msgstr "Baumwollplantage"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
 msgctxt "europeans_building"
@@ -881,6 +881,8 @@ msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
 "seeds."
 msgstr ""
+"Der Bauer, der auf dieser Baumwollplantage arbeitet, hat keinen freien "
+"Platz, um seine Saat zu pflanzen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -1730,7 +1732,7 @@ msgstr "Verbesserte Weberei"
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:63
 msgctxt "europeans_building"
 msgid "pausing production for cotton"
-msgstr ""
+msgstr "Produktionspause von Baumwolle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:72
@@ -3556,6 +3558,7 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid "Cotton is a raw material used to make clothing."
 msgstr ""
+"Baumwolle ist ein Rohstoff, der zur Herstellung von Kleidung verwendet wird."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:197
@@ -3571,7 +3574,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved boots."
-msgstr ""
+msgstr "Kautschuk wird benötigt, um verbesserte Stiefel herzustellen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:219
@@ -4273,23 +4276,23 @@ msgstr "Die Überreste eines zerstörten Gebäudes."
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1124
 msgid "This cotton field has just been planted."
-msgstr ""
+msgstr "Dieses Baumwollfeld wurde eben erst bepflanzt."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1131
 msgid "This cotton field is growing."
-msgstr ""
+msgstr "Dieses Baumwollfeld wächst."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1138
 msgid ""
 "This cotton field is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Dieses Baumwollfeld blüht. Honig kann von einem Imker geerntet werden."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1145
 msgid "This cotton field is ready for harvesting."
-msgstr ""
+msgstr "Dieses Baumwollfeld ist erntereif."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1159
@@ -4338,7 +4341,7 @@ msgstr "Dieses Reetfeld ist erntereif."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1257
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1285
 msgid "This rubber tree has just been planted."
-msgstr ""
+msgstr "Dieser Kautschukbaum wurde eben erst angepflanzt."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1208
@@ -4346,7 +4349,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1264
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1292
 msgid "This rubber tree is growing."
-msgstr ""
+msgstr "Dieser Kautschukbaum wächst."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1215
@@ -4355,6 +4358,8 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1299
 msgid "This rubber tree is fully grown. Lianas can be gathered from it."
 msgstr ""
+"Dieser Kautschukbaum ist voll ausgewachsen. Lianen können von ihm nun "
+"geerntet werden."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Old
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1222
@@ -4365,6 +4370,9 @@ msgid ""
 "This rubber tree is ready for harvesting rubber by a master woodcutter. "
 "Other tribes can harvest it for normal logs."
 msgstr ""
+"Dieser Kautschukbaum ist bereit für die Kautschukernte durch einen "
+"Holzfällermeister. Andere Volksstämme können von ihm normale Baumstämme "
+"ernten."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1313
@@ -5578,7 +5586,7 @@ msgstr "Holzmünze"
 #: addons/europeans_tribe.wad/tribes/wares/cotton/init.lua:8
 msgctxt "ware"
 msgid "Cotton"
-msgstr ""
+msgstr "Baumwolle"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/diamond/init.lua:8
@@ -5704,7 +5712,7 @@ msgstr "Reet"
 #: addons/europeans_tribe.wad/tribes/wares/rubber/init.lua:8
 msgctxt "ware"
 msgid "Rubber"
-msgstr ""
+msgstr "Kautschuk"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/saw/init.lua:8
