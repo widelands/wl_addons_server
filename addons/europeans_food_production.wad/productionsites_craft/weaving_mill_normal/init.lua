@@ -42,7 +42,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "reed", amount = 6 }
+        { name = "cotton", amount = 6 },
+        { name = "wool", amount = 6 }
     },
 
     programs = {
@@ -60,9 +61,9 @@ wl.Descriptions():new_productionsite_type {
         },
         pausing_production = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for reed"),
+            descname = pgettext("europeans_building", "pausing production for cotton"),
             actions = {
-                "return=skipped when site has reed:4",
+                "return=skipped when site has cotton:4 or site has wool:4",
                 "sleep=duration:5m",
             }
         },
@@ -72,11 +73,10 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs cloth or workers need experience",
                 "return=skipped when economy needs armor and not economy needs cloth",
-                "return=skipped when economy needs reed and not economy needs cloth",
-                "consume=reed:2",
+                "consume=cotton,wool:3",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:60s",
-                "produce=cloth:2"
+                "produce=cloth:3"
             }
         },
         produce_armor = {
@@ -85,8 +85,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs armor or workers need experience",
                 "return=skipped when economy needs cloth and not economy needs armor",
-                "return=skipped when economy needs reed and not economy needs armor",
-                "consume=reed:2",
+                "consume=cotton,wool:2",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:60s",
                 "produce=armor"

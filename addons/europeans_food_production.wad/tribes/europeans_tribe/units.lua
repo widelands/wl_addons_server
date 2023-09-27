@@ -98,7 +98,7 @@ wl.Descriptions():new_tribe {
     -- Each subtable is a column in the wares windows.
     wares_order = {
         {
-            -- Building Materials 1 (Growing)
+            -- Building Materials 1 (Basic)
             {
                 name = "water",
                 default_target_quantity = 64,
@@ -109,6 +109,19 @@ wl.Descriptions():new_tribe {
                         pgettext("ware", "Water is the essence of life!"),
                         -- TRANSLATORS: Helptext for an Europeans ware: Water, part 2
                         pgettext("europeans_ware", "Water is used by the claydigger, by the forester, by all farms, and in the bakery and the brewery. The fish farm and the sheep farm need to be supplied with water, too.")
+                    }
+                }
+            },
+            {
+                name = "granite",
+                default_target_quantity = 16,
+                preciousness = 32,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
+                        pgettext("europeans_ware", "Granite is a basic building material."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
+                        pgettext("europeans_ware", "The Europeans produces granite blocks in quarries.")
                     }
                 }
             },
@@ -126,38 +139,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "blackwood",
-                default_target_quantity = 16,
-                preciousness = 16,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Blackwood
-                    purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener (basic sawmill).")
-                }
-            },
-            {
-                name = "planks",
-                default_target_quantity = 16,
-                preciousness = 16,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
-                        pgettext("europeans_ware", "Planks are an important building material."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
-                        pgettext("europeans_ware", "They are produced out of logs by the sawmill."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
-                        pgettext("europeans_ware", "They are also used by the smithy, ferryyard and shipyard.")
-                    }
-                }
-            },
-            {
-                name = "scrap_wood",
-                preciousness = 16,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Scrap wood
-                    purpose = pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills. It can be processed into charcoal in charcoal burners.")
-                }
-            },
-            {
                 name = "reed",
                 default_target_quantity = 32,
                 preciousness = 16,
@@ -171,21 +152,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "cloth",
+                name = "cotton",
                 default_target_quantity = 32,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
-                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
-                }
-            },
-            {
-                name = "leather",
-                default_target_quantity = 16,
                 preciousness = 16,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
-                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
+                    -- TRANSLATORS: Helptext for a Europeans ware: Cotton
+                    purpose = pgettext("europeans_ware", "Cotton is a raw material used to make clothing.")
                 }
             },
             {
@@ -198,27 +170,26 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "armor",
-                default_target_quantity = 16,
+                name = "scrap_wood",
                 preciousness = 16,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
-                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
+                    -- TRANSLATORS: Helptext for a Europeans ware: Scrap wood
+                    purpose = pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills. It can be processed into charcoal in charcoal burners.")
                 }
-            },
+            }
         },
         {
-            -- Building Materials 1 (Mining)
+            -- Building Materials 2 (Normal)
             {
-                name = "granite",
-                default_target_quantity = 16,
+                name = "coal",
+                default_target_quantity = 32,
                 preciousness = 32,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
-                        pgettext("europeans_ware", "Granite is a basic building material."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
-                        pgettext("europeans_ware", "The Europeans produces granite blocks in quarries.")
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
+                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
+                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
                     }
                 }
             },
@@ -235,6 +206,54 @@ wl.Descriptions():new_tribe {
                     }
                 }
             },
+            {
+                name = "blackwood",
+                default_target_quantity = 16,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Blackwood
+                    purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener (basic sawmill).")
+                }
+            },
+            {
+                name = "cloth",
+                default_target_quantity = 32,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
+                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
+                }
+            },
+            {
+                name = "quartz",
+                default_target_quantity = 32,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
+                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
+                }
+            },
+            {
+                name = "rubber",
+                default_target_quantity = 32,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Rubber
+                    purpose = pgettext("europeans_ware", "Rubber is needed to make improved boots.")
+                }
+            }
+            {
+                name = "leather",
+                default_target_quantity = 16,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
+                }
+            },
+        },
+        {
+            -- Building Materials 3 (Advanced)
             {
                 name = "clay",
                 default_target_quantity = 8,
@@ -262,6 +281,30 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "planks",
+                default_target_quantity = 16,
+                preciousness = 16,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
+                        pgettext("europeans_ware", "Planks are an important building material."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
+                        pgettext("europeans_ware", "They are produced out of logs by the sawmill."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
+                        pgettext("europeans_ware", "They are also used by the smithy, ferryyard and shipyard.")
+                    }
+                }
+            },
+            {
+                name = "armor",
+                default_target_quantity = 16,
+                preciousness = 16,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
+                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
+                }
+            },
+            {
                 name = "marble",
                 default_target_quantity = 16,
                 preciousness = 32,
@@ -280,47 +323,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "quartz",
-                default_target_quantity = 32,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
-                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
-                }
-            },
-            {
                 name = "diamond",
                 default_target_quantity = 32,
                 preciousness = 8,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Diamond
                     purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
-                }
-            },
-            {
-                name = "coal",
-                default_target_quantity = 32,
-                preciousness = 32,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
-                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
-                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
-                    }
-                }
-            },
-            {
-                name = "ore",
-                default_target_quantity = 32,
-                preciousness = 32,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
-                        pgettext("default_ware", "Ore is mined in ore mines."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
-                        pgettext("europeans_ware", "It is smelted in a smelting works to retrieve all the metals.")
-                    }
                 }
             }
         },
@@ -502,6 +510,19 @@ wl.Descriptions():new_tribe {
         },
         {
            -- Metals and Money
+            {
+                name = "ore",
+                default_target_quantity = 32,
+                preciousness = 32,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
+                        pgettext("default_ware", "Ore is mined in ore mines."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
+                        pgettext("europeans_ware", "It is smelted in a smelting works to retrieve all the metals.")
+                    }
+                }
+            },
             {
                 name = "scrap_iron",
                 preciousness = 16,
