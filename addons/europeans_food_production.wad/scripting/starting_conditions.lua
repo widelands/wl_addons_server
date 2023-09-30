@@ -405,7 +405,7 @@ function doing_ai_stuff(player, increment)
         player:forbid_buildings("all")
         player:allow_buildings{"europeans_guardhouse", "europeans_tower", "europeans_barrier", "europeans_castle", }
         player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", }
-        player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", "europeans_farm_basic", }
+        player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", "europeans_farm_medium_basic", "europeans_farm_basic", }
         player:allow_buildings{"europeans_clay_pit_basic", "europeans_foresters_house_basic", }
     end
     if (increment == 1) then
@@ -430,7 +430,7 @@ function doing_ai_stuff(player, increment)
     end
     if (increment == 10) then
         player:allow_buildings{"europeans_lumberjacks_house_normal", "europeans_quarry_normal", }
-        player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", "europeans_farm_normal", }
+        player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", "europeans_farm_medium_normal", "europeans_farm_normal", }
         player:allow_buildings{"europeans_clay_pit_normal", "europeans_foresters_house_normal", }
         player:allow_buildings{"europeans_sawmill_normal", "europeans_weaving_mill_normal", }
         player:allow_buildings{"europeans_charcoal_kiln_normal", "europeans_stonemasons_house_normal", }
@@ -445,7 +445,7 @@ function doing_ai_stuff(player, increment)
     end
     if (increment == 14) then
         player:allow_buildings{"europeans_lumberjacks_house_advanced", "europeans_quarry_advanced", }
-        player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_well_level_6", "europeans_farm_advanced", }
+        player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_well_level_6", "europeans_farm_medium_advanced", "europeans_farm_advanced", }
         player:allow_buildings{"europeans_clay_pit_advanced", "europeans_foresters_house_advanced", }
         player:allow_buildings{"europeans_sawmill_advanced", "europeans_weaving_mill_advanced", }
         player:allow_buildings{"europeans_charcoal_kiln_advanced", "europeans_stonemasons_house_advanced", }

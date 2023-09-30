@@ -24,19 +24,19 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:6s",
             "return"
         },
-        plant_rubber = {
-            "findspace=size:any radius:3 space",
-            "walk=coords",
-            "animate=plant duration:6s",
-            "plant=attrib:tree_rubber_sapling",
-            "animate=plant duration:6s",
-            "return"
-        },
         plant_reed = {
             "findspace=size:any radius:3 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_reed",
+            "animate=plant duration:6s",
+            "return"
+        },
+        plant_rubber = {
+            "findspace=size:any radius:3 space",
+            "walk=coords",
+            "animate=plant duration:6s",
+            "plant=attrib:tree_rubber_sapling",
             "animate=plant duration:6s",
             "return"
         },
@@ -50,6 +50,16 @@ wl.Descriptions():new_worker_type {
             "createware=cotton",
             "return"
         },
+        harvest_reed = {
+            "findobject=attrib:ripe_reed radius:3",
+            "walk=object",
+            "playsound=sound/farm/scythe priority:70% allow_multiple",
+            "animate=harvest duration:6s",
+            "callobject=harvest",
+            "animate=gather duration:6s",
+            "createware=reed",
+            "return"
+        },
         harvest_rubber = {
             "findobject=attrib:tree_rubber_mature radius:3",
             "walk=object",
@@ -60,16 +70,6 @@ wl.Descriptions():new_worker_type {
             "createware=rubber",
             "return"
         },
-        harvest_reed = {
-            "findobject=attrib:ripe_reed radius:3",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvest duration:6s",
-            "callobject=harvest",
-            "animate=gather duration:6s",
-            "createware=reed",
-            "return"
-        }
     },
 
     animation_directory = dirname,

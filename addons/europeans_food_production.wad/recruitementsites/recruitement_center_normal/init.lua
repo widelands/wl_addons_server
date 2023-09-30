@@ -167,7 +167,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_farmer_normal",
                 "return=skipped unless economy needs europeans_farmer_advanced",
-                "return=skipped unless economy needs reed or economy needs barley or economy needs rye or economy needs wheat or economy needs corn or economy needs blackroot or economy needs fruit or economy needs grape",
                 "consume=europeans_carrier",
                 "consume=scythe basket",
                 "animate=working duration:180s",

@@ -2,7 +2,7 @@
 --                 Start conditions for Discovery
 -- =======================================================================
 
-include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
+include "addons/europeans_food_production.wad/scripting/starting_conditions.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 

@@ -48,6 +48,14 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:6s",
             "return"
         },
+        plant_cotton = {
+            "findspace=size:any radius:3 space",
+            "walk=coords",
+            "animate=plant duration:6s",
+            "plant=attrib:seed_cotton",
+            "animate=plant duration:6s",
+            "return"
+        },
         plant_grape = {
             "findspace=size:any radius:3 space",
             "walk=coords",
@@ -61,6 +69,14 @@ wl.Descriptions():new_worker_type {
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_reed",
+            "animate=plant duration:6s",
+            "return"
+        },
+        plant_rubber = {
+            "findspace=size:any radius:3 space",
+            "walk=coords",
+            "animate=plant duration:6s",
+            "plant=attrib:tree_rubber_sapling",
             "animate=plant duration:6s",
             "return"
         },
@@ -120,6 +136,16 @@ wl.Descriptions():new_worker_type {
             "createware=corn",
             "return"
         },
+        harvest_cotton = {
+            "findobject=attrib:ripe_cotton radius:3",
+            "walk=object",
+            "playsound=sound/farm/scythe priority:70% allow_multiple",
+            "animate=harvest duration:6s",
+            "callobject=harvest",
+            "animate=gather duration:6s",
+            "createware=cotton",
+            "return"
+        },        
         harvest_grape = {
             "findobject=attrib:ripe_grapes radius:3",
             "walk=object",
@@ -138,6 +164,16 @@ wl.Descriptions():new_worker_type {
             "callobject=harvest",
             "animate=gather duration:6s",
             "createware=reed",
+            "return"
+        },
+        harvest_rubber = {
+            "findobject=attrib:tree_rubber_mature radius:3",
+            "walk=object",
+            "playsound=sound/farm/scythe priority:70% allow_multiple",
+            "animate=harvest duration:6s",
+            "callobject=harvest",
+            "animate=gather duration:6s",
+            "createware=rubber",
             "return"
         },
         harvest_rye = {

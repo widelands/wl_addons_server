@@ -2,13 +2,13 @@
 --          Trading Outpost Starting Conditions for the Europeans
 -- =======================================================================
 
-include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
+include "addons/europeans_food_production.wad/scripting/starting_conditions.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
 init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _"Trading Outpost",
+    descname = _"Trading Outpost (Food)",
     -- TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
     tooltip = _"This starting condition contains a market as an additional building, where some wares can be bought for gold, quartz and diamonds. Disabled seafaring because of lack of compatibility with terraforming (diking of water bodies).",
     func =  function(player, shared_in_start)

@@ -216,15 +216,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "quartz",
-                default_target_quantity = 32,
-                preciousness = 8,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
-                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
-                }
-            },
-            {
                 name = "rubber",
                 default_target_quantity = 32,
                 preciousness = 16,
@@ -233,6 +224,15 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_ware", "Rubber is needed to make improved boots.")
                 }
             },
+            {
+                name = "quartz",
+                default_target_quantity = 32,
+                preciousness = 8,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
+                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
+                }
+            }
         },
         {
             -- Building Materials 3 (Advanced)
@@ -1760,14 +1760,14 @@ wl.Descriptions():new_tribe {
             name = "europeans_farm_medium_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Farm
-                purpose = pgettext("europeans_building", "Sows and harvests reed and fruits."),
+                purpose = pgettext("europeans_building", "Sows and harvests reed and cotton."),
             }
         },
         {
             name = "europeans_farm_medium_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-                purpose = pgettext("europeans_building", "Sows and harvests reed, fruits and grape."),
+                purpose = pgettext("europeans_building", "Sows and harvests reed, cotton and rubber."),
             }
         },
         {

@@ -24,20 +24,20 @@ wl.Descriptions():new_worker_type {
             "animate=planting duration:5s",
             "return"
         },
-        plant_rubber = {
-            "findspace=size:any radius:5 space",
-            "walk=coords",
-            "animate=planting duration:5s",
-            "plant=attrib:tree_rubber_sapling",
-            "animate=planting duration:5s",
-            "return"
-        },
         plant_reed = {
             "findspace=size:any radius:5 space",
             "walk=coords",
             "animate=planting duration:4s",
             "plant=attrib:seed_reed",
             "animate=planting duration:4s",
+            "return"
+        },
+        plant_rubber = {
+            "findspace=size:any radius:5 space",
+            "walk=coords",
+            "animate=planting duration:5s",
+            "plant=attrib:tree_rubber_sapling",
+            "animate=planting duration:5s",
             "return"
         },
         harvest_cotton = {
@@ -50,6 +50,16 @@ wl.Descriptions():new_worker_type {
             "createware=cotton",
             "return"
         },
+        harvest_reed = {
+            "findobject=attrib:ripe_reed radius:5",
+            "walk=object",
+            "playsound=sound/farm/scythe priority:70% allow_multiple",
+            "animate=harvesting duration:5s",
+            "callobject=harvest",
+            "animate=gathering duration:4s",
+            "createware=reed",
+            "return"
+        },
         harvest_rubber = {
             "findobject=attrib:tree_rubber_mature radius:5",
             "walk=object",
@@ -60,16 +70,6 @@ wl.Descriptions():new_worker_type {
             "createware=rubber",
             "return"
         },
-        harvest_reed = {
-            "findobject=attrib:ripe_reed radius:5",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=harvesting duration:5s",
-            "callobject=harvest",
-            "animate=gathering duration:4s",
-            "createware=reed",
-            "return"
-        }
     },
     
     animation_directory = dirname,
