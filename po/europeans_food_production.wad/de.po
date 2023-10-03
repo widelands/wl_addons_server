@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 03:08+0200\n"
+"POT-Creation-Date: 2023-10-03 03:06+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -785,7 +785,7 @@ msgstr "Verbesserte Weberei"
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:64
 msgctxt "europeans_building"
 msgid "pausing production for cotton"
-msgstr ""
+msgstr "Produktionspause von Baumwolle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:73
@@ -1295,7 +1295,7 @@ msgstr ""
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost (Food)"
-msgstr ""
+msgstr "Handelsposten (Nahrung)"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:13
@@ -1400,6 +1400,7 @@ msgstr "Er wird in einem Reethof erzeugt."
 msgctxt "europeans_ware"
 msgid "Cotton is a raw material used to make clothing."
 msgstr ""
+"Baumwolle ist ein Rohstoff, der zur Herstellung von Kleidung verwendet wird."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:169
@@ -1477,7 +1478,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:233
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved boots."
-msgstr ""
+msgstr "Kautschuk wird benötigt, um verbesserte Stiefel herzustellen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:242
@@ -2897,19 +2898,19 @@ msgstr "Holt Wasser aus der Tiefe."
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2386
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
-msgstr ""
+msgstr "Sät und erntet Reet."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2393
 msgctxt "europeans_building"
 msgid "Sows and harvests reed and cotton."
-msgstr ""
+msgstr "Sät und erntet Reet und Baumwolle."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2400
 msgctxt "europeans_building"
 msgid "Sows and harvests reed, cotton and rubber."
-msgstr ""
+msgstr "Sät und erntet Reet, Baumwolle und Kautschuk."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2407
