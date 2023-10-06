@@ -72,7 +72,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
             descname = pgettext("europeans_building", "trading food for wood coins"),
             actions = {
-                "return=skipped unless economy needs coin_wood",
+                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
+                "return=skipped when economy needs planks",
                 "call=pausing_production_for_planks",
                 "sleep=duration:15s",
                 "call=trade_cloth"
@@ -82,7 +83,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
             descname = pgettext("europeans_building", "trading food for copper coins"),
             actions = {
-                "return=skipped unless economy needs coin_copper",
+                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "call=pausing_production_for_gold",
                 "sleep=duration:15s",
                 "call=trade_cloth_copper"
@@ -108,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
+                "return=skipped when economy needs cloth",
                 "return=skipped unless site has cloth:4",
                 "return=skipped unless site has planks",
                 "consume=cloth:4 planks",
@@ -121,7 +122,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
+                "return=skipped when economy needs cloth",
                 "return=skipped unless site has cloth:4",
                 "return=skipped unless site has gold",
                 "consume=cloth:4 gold",

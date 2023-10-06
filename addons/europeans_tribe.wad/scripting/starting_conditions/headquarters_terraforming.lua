@@ -20,7 +20,7 @@ local init = {
         player:allow_workers("all")
     end
     
-    player:forbid_buildings{"europeans_port", "europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced"}
+    player:forbid_buildings{"europeans_port", "europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced", "europeans_store_big", "europeans_store_small"}
        
     prefilled_buildings(player, { "europeans_headquarters", sf.x, sf.y,
         wares = {

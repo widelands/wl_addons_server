@@ -77,7 +77,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
             descname = pgettext("europeans_building", "trading food for copper coins"),
             actions = {
-                "return=skipped unless economy needs coin_copper",
+                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
+                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
+                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "call=pausing_production_for_gold",
                 "sleep=duration:10s",
                 "call=trade_armor_copper",
@@ -91,7 +93,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
             descname = pgettext("europeans_building", "trading food for silver coins"),
             actions = {
-                "return=skipped unless economy needs coin_silver",
+                "return=skipped when economy needs coin_copper and not economy needs coin_silver",
+                "return=skipped when economy needs coin_gold and not economy needs coin_silver",
+                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
                 "call=pausing_production_for_gold",
                 "sleep=duration:10s",
                 "call=trade_armor_silver",
@@ -105,7 +109,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
             descname = pgettext("europeans_building", "trading food for gold coins"),
             actions = {
-                "return=skipped unless economy needs coin_gold",
+                "return=skipped when economy needs coin_copper and not economy needs coin_gold",
+                "return=skipped when economy needs coin_silver and not economy needs coin_gold",
+                "return=skipped when economy needs coin_wood and not economy needs coin_gold",
                 "call=pausing_production_for_gold",
                 "sleep=duration:10s",
                 "call=trade_armor_gold",
@@ -127,9 +133,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
-                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
-                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
+                "return=skipped when economy needs armor",
                 "return=skipped unless site has armor:4",
                 "return=skipped unless site has gold",
                 "consume=armor:4 gold",
@@ -142,9 +146,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
-                "return=skipped when economy needs coin_copper and not economy needs coin_silver",
-                "return=skipped when economy needs coin_gold and not economy needs coin_silver",
+                "return=skipped when economy needs armor",
                 "return=skipped unless site has armor:6",
                 "return=skipped unless site has gold",
                 "consume=armor:6 gold",
@@ -157,9 +159,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_gold",
-                "return=skipped when economy needs coin_copper and not economy needs coin_gold",
-                "return=skipped when economy needs coin_silver and not economy needs coin_gold",
+                "return=skipped when economy needs armor",
                 "return=skipped unless site has armor:8",
                 "return=skipped unless site has gold",
                 "consume=armor:8 gold",
@@ -172,9 +172,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
-                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
-                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
+                "return=skipped when economy needs cloth",
                 "return=skipped unless site has cloth:4",
                 "return=skipped unless site has gold",
                 "consume=cloth:4 gold",
@@ -187,9 +185,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
-                "return=skipped when economy needs coin_copper and not economy needs coin_silver",
-                "return=skipped when economy needs coin_gold and not economy needs coin_silver",
+                "return=skipped when economy needs cloth",
                 "return=skipped unless site has cloth:6",
                 "return=skipped unless site has gold",
                 "consume=cloth:6 gold",
@@ -202,9 +198,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_gold",
-                "return=skipped when economy needs coin_copper and not economy needs coin_gold",
-                "return=skipped when economy needs coin_silver and not economy needs coin_gold",
+                "return=skipped when economy needs cloth",
                 "return=skipped unless site has cloth:8",
                 "return=skipped unless site has gold",
                 "consume=cloth:8 gold",
@@ -217,9 +211,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
-                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
-                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
+                "return=skipped when economy needs rubber",
                 "return=skipped unless site has rubber:4",
                 "return=skipped unless site has gold",
                 "consume=rubber:4 gold",
@@ -232,9 +224,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
-                "return=skipped when economy needs coin_copper and not economy needs coin_silver",
-                "return=skipped when economy needs coin_gold and not economy needs coin_silver",
+                "return=skipped when economy needs rubber",
                 "return=skipped unless site has rubber:6",
                 "return=skipped unless site has gold",
                 "consume=rubber:4 gold",
@@ -247,9 +237,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_gold",
-                "return=skipped when economy needs coin_copper and not economy needs coin_gold",
-                "return=skipped when economy needs coin_silver and not economy needs coin_gold",
+                "return=skipped when economy needs rubber",
                 "return=skipped unless site has rubber:8",
                 "return=skipped unless site has gold",
                 "consume=rubber:6 gold",

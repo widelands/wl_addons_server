@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-30 03:06+0200\n"
+"POT-Creation-Date: 2023-10-06 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
 "teams/35159/en_GB/)\n"
@@ -1225,7 +1225,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:66
-#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:77
+#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:76
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:87
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:77
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:88
@@ -1266,7 +1266,7 @@ msgid "sawing logs"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:82
+#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:81
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:114
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:94
 msgctxt "europeans_building"
@@ -2076,18 +2076,18 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:67
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:128
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:143
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:158
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:134
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:147
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:160
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:173
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:188
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:203
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:218
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:233
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:248
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:186
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:199
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:212
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:225
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:238
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:64
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:109
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:122
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:110
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:123
 #: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:66
 #: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:89
 #: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:101
@@ -2123,26 +2123,26 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:78
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:83
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:84
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:92
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:94
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:106
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:110
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:120
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:101
+#: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:126
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:102
 msgctxt "europeans_building"
 msgid "pausing trading of gold"
 msgstr ""
@@ -2160,7 +2160,7 @@ msgid "trading food for wood coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:93
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:94
 msgctxt "europeans_building"
 msgid "pausing trading of planks"
 msgstr ""
