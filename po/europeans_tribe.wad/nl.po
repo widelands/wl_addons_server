@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-06 03:06+0200\n"
+"POT-Creation-Date: 2023-10-19 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1242,7 +1242,7 @@ msgstr "Geavanceerde Houtskooloven"
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:57
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:68
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:56
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:88
+#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:86
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:68
 msgctxt "europeans_building"
 msgid "pausing production for log"
@@ -1284,7 +1284,6 @@ msgstr "Geavanceerde Houtzagerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:64
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:96
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:76
 msgctxt "europeans_building"
 msgid "sawing logs"
@@ -1292,7 +1291,7 @@ msgstr "boomstammen zagen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:81
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:114
+#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:94
 #: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:94
 msgctxt "europeans_building"
 msgid "hardening wood"
@@ -1320,8 +1319,9 @@ msgstr "Geavanceerd Schoenmakershuis"
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:62
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:85
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:71
+#, fuzzy
 msgctxt "europeans_building"
-msgid "pausing production for planks, cloth and leather"
+msgid "pausing production for log, cloth and leather"
 msgstr "de productie van planken, stof en leer pauzeren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
@@ -1426,18 +1426,15 @@ msgid "Advanced Toolsmithy"
 msgstr "Geavanceerde Gereedschapsmakerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#. TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:83
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:99
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:79
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:83
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:90
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:71
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:63
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:95
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
+#, fuzzy
 msgctxt "europeans_building"
-msgid "pausing production for planks, iron and coal"
+msgid "pausing production for log, iron and coal"
 msgstr "pauzeren van de productie voor planken, ijzer en kolen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
@@ -1663,7 +1660,6 @@ msgstr "Geavanceerd Kleermakershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:76
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:69
 msgctxt "europeans_building"
 msgid "pausing production for planks, cloth, armor, iron and coal"
 msgstr "pauzeren van de productie van planken, stof, pantser, ijzer en kolen"
@@ -1705,8 +1701,9 @@ msgstr "Basis Kleermakershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:86
+#, fuzzy
 msgctxt "europeans_building"
-msgid "pausing production for planks, cloth and armor"
+msgid "pausing production for log, cloth and armor"
 msgstr "pauzeren van de productie van planken, stof en pantser"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1714,6 +1711,13 @@ msgstr "pauzeren van de productie van planken, stof en pantser"
 msgctxt "europeans_building"
 msgid "Normal Tailors House"
 msgstr "Normaal Kleermakershuis"
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:69
+#, fuzzy
+msgctxt "europeans_building"
+msgid "pausing production for log, cloth, armor, iron and coal"
+msgstr "pauzeren van de productie van planken, stof, pantser, ijzer en kolen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:8
@@ -2422,6 +2426,14 @@ msgstr "Normaal Wervingscentrum"
 msgctxt "europeans_building"
 msgid "Advanced Trainingscamp"
 msgstr "Geavanceerd Trainingskamp"
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:63
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:95
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
+msgctxt "europeans_building"
+msgid "pausing production for planks, iron and coal"
+msgstr "pauzeren van de productie voor planken, ijzer en kolen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:71
@@ -3643,8 +3655,9 @@ msgstr "Ze worden door de zagerij gemaakt van boomstammen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:276
+#, fuzzy
 msgctxt "europeans_ware"
-msgid "They are also used by the smithy, ferryyard and shipyard."
+msgid "They are also used by the ferryyard and shipyard."
 msgstr "Ze worden ook gebruikt door de smederij, veerbootwerf en scheepswerf."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor

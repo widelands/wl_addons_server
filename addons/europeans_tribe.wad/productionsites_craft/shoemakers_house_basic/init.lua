@@ -63,7 +63,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 4 },
+        { name = "log", amount = 4 },
         { name = "cloth", amount = 4 }
     },
 
@@ -82,9 +82,9 @@ wl.Descriptions():new_productionsite_type {
         },
         pausing_production = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for planks, cloth and leather"),
+            descname = pgettext("europeans_building", "pausing production for log, cloth and leather"),
             actions = {
-                "return=skipped when site has planks:2 and site has cloth:2",
+                "return=skipped when site has log:2 and site has cloth:2",
                 "sleep=duration:5m",
             }
         },
@@ -93,7 +93,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a pair of wooden boots"),
             actions = {
                 "return=skipped unless economy needs boots_wooden or workers need experience",
-                "consume=planks",
+                "consume=log",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:180s",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -105,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
                 "return=skipped unless economy needs boots_sturdy or workers need experience",
-                "consume=planks cloth:2",
+                "consume=log cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:180s",
                 "produce=boots_sturdy:2"

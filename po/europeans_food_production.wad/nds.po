@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-06 03:06+0200\n"
+"POT-Creation-Date: 2023-10-19 03:06+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -731,8 +731,9 @@ msgstr "Grote Schoosteree"
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:63
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_basic/init.lua:85
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:72
+#, fuzzy
 msgctxt "europeans_building"
-msgid "pausing production for planks, cloth and leather"
+msgid "pausing production for log, cloth and leather"
 msgstr "dat Produzeren för Planken, Stoff un Leer antohollen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
@@ -1535,8 +1536,9 @@ msgstr "Se worden in de Saagmöhlen ut Boomstammen produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:294
+#, fuzzy
 msgctxt "europeans_ware"
-msgid "They are also used by the smithy, ferryyard and shipyard."
+msgid "They are also used by the ferryyard and shipyard."
 msgstr "Se worden ok in de Smee, Warft un Fährenwarft bruukt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor

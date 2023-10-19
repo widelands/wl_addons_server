@@ -273,7 +273,7 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
                         pgettext("europeans_ware", "They are produced out of logs by the sawmill."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
-                        pgettext("europeans_ware", "They are also used by the smithy, ferryyard and shipyard.")
+                        pgettext("europeans_ware", "They are also used by the ferryyard and shipyard.")
                     }
                 }
             },

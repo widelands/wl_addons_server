@@ -47,7 +47,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 6 },
+        { name = "log", amount = 6 },
         { name = "cloth", amount = 6 }
     },
 
@@ -68,9 +68,9 @@ wl.Descriptions():new_productionsite_type {
         },
         pausing_production = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for planks, cloth and leather"),
+            descname = pgettext("europeans_building", "pausing production for log, cloth and leather"),
             actions = {
-                "return=skipped when site has planks:4 and site has cloth:4",
+                "return=skipped when site has log:4 and site has cloth:4",
                 "sleep=duration:5m",
             }
         },
@@ -79,7 +79,7 @@ wl.Descriptions():new_productionsite_type {
                         descname = pgettext("europeans_building", "making a pair of wooden boots"),
             actions = {
                 "return=skipped unless economy needs boots_wooden or workers need experience",
-                "consume=planks",
+                "consume=log",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:150s",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -92,7 +92,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs boots_sturdy or workers need experience",
                 "return=skipped when economy needs boots_swift and not economy needs boots_sturdy",
-                "consume=planks cloth:2",
+                "consume=log cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:150s",
                 "produce=boots_sturdy:2"
@@ -104,7 +104,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs boots_swift or workers need experience",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_swift",
-                "consume=planks cloth:2",
+                "consume=log cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:150s",
                 "produce=boots_swift:2"

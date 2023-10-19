@@ -48,7 +48,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 6 },
+        { name = "log", amount = 6 },
         { name = "iron", amount = 6 },
         { name = "coal", amount = 6 }
     },
@@ -80,9 +80,9 @@ wl.Descriptions():new_productionsite_type {
         },
         pausing_production = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for planks, iron and coal"),
+            descname = pgettext("europeans_building", "pausing production for log, iron and coal"),
             actions = {
-                "return=skipped when site has planks:4 and site has iron:4 and site has coal:4",
+                "return=skipped when site has log:4 and site has iron:4 and site has coal:4",
                 "sleep=duration:5m",
             }
         },
@@ -92,7 +92,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs helmet_wooden or workers need experience",
                 "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
-                "consume=planks",
+                "consume=log",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:120s",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -105,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs spear_wooden or workers need experience",
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
-                "consume=planks",
+                "consume=log",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:120s",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -156,7 +156,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs spear_advanced or workers need experience",
                 "return=skipped when economy needs ax_broad and not economy needs spear_advanced",
                 "return=skipped when economy needs sword_broad and not economy needs spear_advanced",
-                "consume=planks coal iron",
+                "consume=log coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:120s",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -170,7 +170,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs ax_broad or workers need experience",
                 "return=skipped when economy needs spear_advanced and not economy needs ax_broad",
                 "return=skipped when economy needs sword_broad and not economy needs ax_broad",
-                "consume=planks coal iron",
+                "consume=log coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:120s",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -184,7 +184,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs sword_broad or workers need experience",
                 "return=skipped when economy needs spear_advanced and not economy needs sword_broad",
                 "return=skipped when economy needs ax_broad and not economy needs sword_broad",
-                "consume=planks coal iron:2",
+                "consume=log coal iron:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:120s",
                 "playsound=sound/smiths/sharpening priority:90%",

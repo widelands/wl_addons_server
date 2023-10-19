@@ -44,7 +44,7 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "armor", amount = 6 },
         { name = "cloth", amount = 4 },
-        { name = "planks", amount = 4 },
+        { name = "log", amount = 4 },
         { name = "iron", amount = 2 },
         { name = "coal", amount = 2 }
     },
@@ -66,9 +66,9 @@ wl.Descriptions():new_productionsite_type {
         },
         pausing_production = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for planks, cloth, armor, iron and coal"),
+            descname = pgettext("europeans_building", "pausing production for log, cloth, armor, iron and coal"),
             actions = {
-                "return=skipped when site has planks:2 and site has cloth:2 and site has armor:3 and site has iron and site has coal",
+                "return=skipped when site has log:2 and site has cloth:2 and site has armor:3 and site has iron and site has coal",
                 "sleep=duration:5m",
             }
         },
@@ -77,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped unless economy needs armor_wooden or workers need experience",
-                "consume=planks",
+                "consume=log",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:150s",
                 "playsound=sound/smiths/sharpening priority:90%",

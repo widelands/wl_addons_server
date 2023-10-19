@@ -76,10 +76,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=pausing_production",
-                "sleep=duration:20s",
+                "sleep=duration:30s",
                 "call=hardening_wood",
-                "sleep=duration:20s",
-                "call=saw_log",
                 "return=skipped"
             }
         },
@@ -91,30 +89,11 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5m",
             }
         },
-        saw_log = {
-            -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
-            descname = pgettext("europeans_building", "sawing logs"),
-            actions = {
-                "return=skipped unless economy needs planks or economy needs scrap_wood or workers need experience",
-                "return=skipped when economy needs blackwood and not economy needs planks",
-                "return=skipped when economy needs log and not economy needs planks",
-                "consume=log",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:25s",
-                "produce=scrap_wood",
-                "consume=log",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:25s",
-                "produce=scrap_wood",
-                "produce=planks"
-            }
-        },
         hardening_wood = {
             -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
                 "return=skipped unless economy needs blackwood or economy needs scrap_wood or workers need experience",
-                "return=skipped when economy needs planks and not economy needs blackwood",
                 "return=skipped when economy needs log and not economy needs blackwood",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
