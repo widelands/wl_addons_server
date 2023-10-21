@@ -843,12 +843,16 @@ function set_warehouse_worker_policy(startx, starty, workername, policiename)
     local player = map:get_field(startx, starty).owner
     local tribe = player.tribe
     local field = map:get_field(startx, starty).immovable
-
-    for j, tbuilding in ipairs(tribe.buildings) do
-        for k, building in ipairs(player:get_buildings(tbuilding.name)) do
-             if building.descr.type_name == "warehouse" and building == field then
-                 building:set_warehouse_policies(workername, policiename)
-             end
+    
+    for i, ware in ipairs(tribe.workers) do
+        if workers.name == workername then
+            for j, tbuilding in ipairs(tribe.buildings) do
+                for k, building in ipairs(player:get_buildings(tbuilding.name)) do
+                     if building.descr.type_name == "warehouse" and building == field then
+                         building:set_warehouse_policies(workername, policiename)
+                     end
+                end
+            end
         end
     end
 end
@@ -860,11 +864,15 @@ function set_warehouse_ware_policy(startx, starty, warename, policiename)
     local tribe = player.tribe
     local field = map:get_field(startx, starty).immovable
 
-    for j, tbuilding in ipairs(tribe.buildings) do
-        for k, building in ipairs(player:get_buildings(tbuilding.name)) do
-             if building.descr.type_name == "warehouse" and building == field then
-                 building:set_warehouse_policies(warename, policiename)
-             end
+    for i, ware in ipairs(tribe.wares) do
+        if ware.name == warename then
+            for j, tbuilding in ipairs(tribe.buildings) do
+                for k, building in ipairs(player:get_buildings(tbuilding.name)) do
+                     if building.descr.type_name == "warehouse" and building == field then
+                         building:set_warehouse_policies(warename, policiename)
+                     end
+                end
+            end
         end
     end
 end
@@ -878,12 +886,12 @@ function set_warehouse_waretype_policy(startx, starty, waretype, policiename)
 
     if waretype == "all" then
         for i, ware in ipairs(tribe.wares) do
-            set_warehouse_ware_policy(startx, starty, warename, policiename)
+            set_warehouse_ware_policy(startx, starty, ware.name, policiename)
         end
     elseif waretype == "build" then
         for i, ware in ipairs(tribe.wares) do
-            if (ware.is_construction_material(tribe.name)) then
-                set_warehouse_ware_policy(startx, starty, warename, policiename)
+            if (ware:is_construction_material(tribe.name)) then
+                set_warehouse_ware_policy(startx, starty, ware.name, policiename)
             end
         end
         for i, tbuilding in ipairs(tribe.buildings) do
@@ -898,7 +906,7 @@ function set_warehouse_waretype_policy(startx, starty, waretype, policiename)
         end
     elseif waretype == "tools" then
         for i, tworker in ipairs(tribe.workers) do
-            for warename, warecount in pairs(tworker.buildcost) do
+            for warecount, warename in pairs(tworker.buildcost) do
                 set_warehouse_ware_policy(startx, starty, warename, policiename)
             end
         end
@@ -964,16 +972,20 @@ function set_warehouse_ware_count(startx, starty, warename, warecount)
     local tribe = player.tribe
     local field = map:get_field(startx, starty).immovable
 
-    for j, tbuilding in ipairs(tribe.buildings) do
-        for k, building in ipairs(player:get_buildings(tbuilding.name)) do
-             if building.descr.type_name == "warehouse" and building == field then
-                 building:set_wares(warename, warecount)
-             end
+    for i, ware in ipairs(tribe.wares) do
+        if ware.name == warename then
+            for j, tbuilding in ipairs(tribe.buildings) do
+                for k, building in ipairs(player:get_buildings(tbuilding.name)) do
+                     if building.descr.type_name == "warehouse" and building == field then
+                         building:set_wares(warename, warecount)
+                     end
+                end
+            end
         end
     end
 end
 
-function set_warehouse_waretype_warecount(startx, starty, waretype, warecount)
+function set_warehouse_waretype_warecount(startx, starty, waretype, warenumber)
     local game = wl.Game()
     local map = game.map
     local player = map:get_field(startx, starty).owner
@@ -982,28 +994,28 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warecount)
 
     if waretype == "all" then
         for i, ware in ipairs(tribe.wares) do
-            set_warehouse_ware_count(startx, starty, warename, warecount)
+            set_warehouse_ware_count(startx, starty, ware.name, warenumber)
         end
     elseif waretype == "build" then
         for i, ware in ipairs(tribe.wares) do
-            if (ware.is_construction_material(tribe.name)) then
-                set_warehouse_ware_count(startx, starty, warename, warecount)
+            if (ware:is_construction_material(tribe.name)) then
+                set_warehouse_ware_count(startx, starty, ware.name, warenumber)
             end
         end
         for i, tbuilding in ipairs(tribe.buildings) do
             for warename, warecount in pairs(tbuilding.buildcost) do
-                set_warehouse_ware_count(startx, starty, warename, warecount)
+                set_warehouse_ware_count(startx, starty, warename, warenumber)
             end
         end
         for i, tbuilding in ipairs(tribe.buildings) do
             for warename, warecount in pairs(tbuilding.enhancement_cost) do
-                set_warehouse_ware_count(startx, starty, warename, warecount)
+                set_warehouse_ware_count(startx, starty, warename, warenumber)
             end
         end
     elseif waretype == "tools" then
         for i, tworker in ipairs(tribe.workers) do
-            for warename, warecount in pairs(tworker.buildcost) do
-                set_warehouse_ware_count(startx, starty, warename, warecount)
+            for warecount, warename in pairs(tworker.buildcost) do
+                set_warehouse_ware_count(startx, starty, warename, warenumber)
             end
         end
         for i, tbuilding in pairs(tribe.buildings) do
@@ -1011,7 +1023,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warecount)
                 for j, output in pairs(tbuilding.output_worker_types) do
                     if string.find(output.name, tribe.name) and not string.find(output.name, "soldier") and tbuilding.inputs then
                         for k, waretype, warecount in pairs(tbuilding.inputs) do
-                            set_warehouse_ware_count(startx, starty, waretype.name, warecount)
+                            set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
                         end
                     end
                 end
@@ -1023,7 +1035,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warecount)
                 for j, output in pairs(tbuilding.output_worker_types) do
                     if string.find(output.name, tribe.name) and string.find(output.name, "soldier") and tbuilding.inputs then
                         for k, waretype, warecount in pairs(tbuilding.inputs) do
-                            set_warehouse_ware_count(startx, starty, waretype.name, warecount)
+                            set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
                         end
                     end
                 end
@@ -1033,7 +1045,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warecount)
             if tbuilding.type_name == "trainingsite" then
                 if tbuilding.inputs then
                     for k, waretype, warecount in pairs(tbuilding.inputs) do
-                        set_warehouse_ware_count(startx, starty, waretype.name, warecount)
+                        set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
                     end
                 end
             end
@@ -1043,7 +1055,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warecount)
             if tbuilding.is_mine then
                 if tbuilding.output_ware_types then
                     for k, waretype, warecount in pairs(tbuilding.output_ware_types) do
-                        set_warehouse_ware_count(startx, starty, waretype.name, warecount)
+                        set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
                     end
                 end
             end
@@ -1053,7 +1065,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warecount)
             if string.find(tbuilding.name, "smelting") then
                 if tbuilding.output_ware_types then
                     for k, waretype, warecount in pairs(tbuilding.output_ware_types) do
-                        set_warehouse_ware_count(startx, starty, waretype.name, warecount)
+                        set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
                     end
                 end
             end
