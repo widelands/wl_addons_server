@@ -44,7 +44,7 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "armor", amount = 6 },
         { name = "cloth", amount = 4 },
-        { name = "log", amount = 4 },
+        { name = "blackwood", amount = 4 },
         { name = "iron", amount = 2 },
         { name = "coal", amount = 2 }
     },
@@ -54,22 +54,35 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
-                "sleep=duration:20s",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:15s",
+                "call=pausing_production_for_outputs",
+                "sleep=duration:15s",
                 "call=produce_armor_wooden",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "call=produce_armor_processed",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "call=produce_armor_chain",
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for log, cloth, armor, iron and coal"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
-                "return=skipped when site has log:2 and site has cloth:2 and site has armor:3 and site has iron and site has coal",
+                "return=skipped when site has blackwood:2 and site has cloth:2 and site has armor:3 and site has iron and site has coal",
+                "return=skipped when economy needs iron", -- for statistical reason
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs armor_wooden",
+                "return=skipped when economy needs armor_processed",
+                "return=skipped when economy needs armor_chain",
+                "sleep=duration:20m",
             }
         },
         produce_armor_wooden = {
@@ -77,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
                 "return=skipped unless economy needs armor_wooden or workers need experience",
-                "consume=log",
+                "consume=blackwood",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:150s",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -89,7 +102,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
                 "return=skipped unless economy needs armor_processed or workers need experience",
-                "return=skipped when economy needs armor_chain and not economy needs armor_processed",
                 "consume=armor cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:150s",
@@ -101,7 +113,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a suit of chain armor"),
             actions = {
                 "return=skipped unless economy needs armor_chain or workers need experience",
-                "return=skipped when economy needs armor_processed and not economy needs armor_chain",
                 "consume=armor:2 coal iron",
                 "animate=working duration:150s",
                 "produce=armor_chain:2"

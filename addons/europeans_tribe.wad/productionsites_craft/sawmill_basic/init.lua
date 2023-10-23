@@ -75,18 +75,28 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:30s",
+                "call=pausing_production_for_outputs",
                 "sleep=duration:30s",
                 "call=hardening_wood",
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for log"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has log:4",
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs blackwood",
+                "sleep=duration:10m",
             }
         },
         hardening_wood = {

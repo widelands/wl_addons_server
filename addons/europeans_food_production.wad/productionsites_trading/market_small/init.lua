@@ -53,7 +53,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 4 },
+        { name = "blackwood", amount = 4 },
         { name = "gold", amount = 4 },
         { name = "bread", amount = 8 },
         { name = "meat", amount = 8 },
@@ -76,7 +76,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "trading food for wood coins"),
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "call=pausing_production_for_planks",
+                "call=pausing_production_for_blackwood",
                 "sleep=duration:15s",
                 "call=trade_bread",
                 "call=trade_meat",
@@ -99,11 +99,11 @@ wl.Descriptions():new_productionsite_type {
                 "call=trade_honey_copper"
             }
         },
-        pausing_production_for_planks = {
+        pausing_production_for_blackwood = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing trading of planks"),
+            descname = pgettext("europeans_building", "pausing trading of blackwood"),
             actions = {
-                "return=skipped when site has planks:2",
+                "return=skipped when site has blackwood:2",
                 "sleep=duration:5m",
             }
         },
@@ -120,8 +120,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _("trading"),
             actions = {
                 "return=skipped unless site has beer:4",
-                "return=failed unless site has planks",
-                "consume=beer:4 planks",
+                "return=failed unless site has blackwood",
+                "consume=beer:4 blackwood",
                 "animate=working duration:30s",
                 "produce=coin_wood:3",
                 "sleep=duration:30s",
@@ -133,7 +133,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless site has gold",
                 "return=skipped unless site has beer:4",
-                "return=failed unless site has planks",
+                "return=failed unless site has blackwood",
                 "consume=beer:4 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:4",
@@ -145,8 +145,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _("trading"),
             actions = {
                 "return=skipped unless site has bread:4",
-                "return=failed unless site has planks",
-                "consume=bread:4 planks",
+                "return=failed unless site has blackwood",
+                "consume=bread:4 blackwood",
                 "animate=working duration:30s",
                 "produce=coin_wood:3",
                 "sleep=duration:30s",
@@ -158,7 +158,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless site has gold",
                 "return=skipped unless site has bread:4",
-                "return=failed unless site has planks",
+                "return=failed unless site has blackwood",
                 "consume=bread:4 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:4",
@@ -170,8 +170,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _("trading"),
             actions = {
                 "return=skipped unless site has honey:4",
-                "return=failed unless site has planks",
-                "consume=honey:4 planks",
+                "return=failed unless site has blackwood",
+                "consume=honey:4 blackwood",
                 "animate=working duration:30s",
                 "produce=coin_wood:3",
                 "sleep=duration:30s",
@@ -183,7 +183,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless site has gold",
                 "return=skipped unless site has honey:4",
-                "return=failed unless site has planks",
+                "return=failed unless site has blackwood",
                 "consume=honey:4 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:4",
@@ -195,8 +195,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _("trading"),
             actions = {
                 "return=skipped unless site has meat:4",
-                "return=skipped unless site has planks",
-                "consume=meat:4 planks",
+                "return=skipped unless site has blackwood",
+                "consume=meat:4 blackwood",
                 "animate=working duration:30s",
                 "produce=coin_wood:4",
                 "sleep=duration:30s",

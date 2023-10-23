@@ -52,7 +52,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:15s",
+                "call=pausing_production_for_outputs",
                 "sleep=duration:15s",
                 "call=recycle_iron",
                 "sleep=duration:15s",
@@ -64,23 +66,31 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for ore and coal"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has ore:6 and site has coal:6",
                 "return=skipped when site has scrap_iron:2 and site has coal:2",
                 "return=skipped when site has scrap_metal_mixed:2 and site has coal:2",
+                "return=skipped when economy needs ore and economy needs scrap_iron and economy needs scrap_metal_mixed", -- for statistical reason
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs gold",
+                "return=skipped when economy needs iron",
+                "sleep=duration:30m",
             }
         },
         recycle_iron = {
             -- TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
             descname = pgettext("europeans_building", "recycling iron"),
             actions = {
-                "return=skipped when economy needs coal",
-                "return=skipped unless site has coal:2",
-                "return=skipped unless site has scrap_iron:2",
+                "return=skipped when economy needs gold and not economy needs iron",
                 "consume=scrap_iron:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:30s",
@@ -92,9 +102,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start recyling iron and gold because ...
             descname = pgettext("europeans_building", "recycling iron and gold"),
             actions = {
-                "return=skipped when economy needs coal",
-                "return=skipped unless site has coal:2",
-                "return=skipped unless site has scrap_metal_mixed:2",
+                "return=skipped when economy needs iron and not economy needs gold",
                 "consume=scrap_metal_mixed:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:30s",

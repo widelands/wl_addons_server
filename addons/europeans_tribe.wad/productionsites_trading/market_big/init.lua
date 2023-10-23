@@ -56,8 +56,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "gold", amount = 8 },
-        { name = "armor", amount = 12 },
         { name = "cloth", amount = 12 },
+        { name = "armor", amount = 12 },
         { name = "rubber", amount = 12 }
     },
 

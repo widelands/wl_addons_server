@@ -72,20 +72,31 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
-                "sleep=duration:30s",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:20s",
+                "call=pausing_production_for_outputs",
+                "sleep=duration:20s",
                 "call=produce_boots_wooden",
-                "sleep=duration:30s",
+                "sleep=duration:20s",
                 "call=produce_boots_sturdy",
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for log, cloth and leather"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has log:2 and site has cloth:2",
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs boots_wooden",
+                "return=skipped when economy needs boots_sturdy",
+                "sleep=duration:10m",
             }
         },
         produce_boots_wooden = {

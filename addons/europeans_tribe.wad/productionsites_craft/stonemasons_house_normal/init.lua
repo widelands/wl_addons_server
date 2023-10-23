@@ -58,21 +58,33 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
-                "sleep=duration:30s",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:20s",
+                "call=pausing_production_for_outputs",
+                "sleep=duration:20s",
                 "call=mixing_grout",
-                "sleep=duration:30s",
+                "sleep=duration:20s",
                 "call=burning_bricks",
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for granite, water and coal"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has granite:3 and site has water:3 and site has coal:2",
                 "return=skipped when site has granite and site has clay:3 and site has coal:2",
+                "return=skipped when economy needs granite", -- for statistical reason
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs grout",
+                "return=skipped when economy needs brick",
+                "sleep=duration:60m",
             }
         },
         mixing_grout = {
@@ -80,8 +92,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mixing grout"),
             actions = {
                 "return=skipped unless economy needs grout or workers need experience",
-                "return=skipped when economy needs water and not economy needs grout",
-                "return=skipped when economy needs coal and not economy needs grout",
                 "return=skipped when economy needs granite",
                 "consume=coal:2 granite:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",
@@ -97,7 +107,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "burning bricks"),
             actions = {
                 "return=skipped unless economy needs brick or workers need experience",
-                "return=skipped when economy needs coal and not economy needs brick",
                 "return=skipped when economy needs granite",
                 "consume=granite clay:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",

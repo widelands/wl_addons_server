@@ -73,7 +73,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:15s",
+                "call=pausing_production_for_outputs",
                 "sleep=duration:15s",
                 "call=produce_helmet_wooden",
                 "sleep=duration:15s",
@@ -85,12 +87,24 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for log, iron and coal"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has log:4 and site has iron:2 and site has coal:2",
+                "return=skipped when economy needs iron", -- for statistical reason
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs helmet_wooden",
+                "return=skipped when economy needs helmet_mask",
+                "return=skipped when economy needs spear_wooden",
+                "return=skipped when economy needs spear_advanced",
+                "sleep=duration:10m",
             }
         },
         produce_helmet_wooden = {
@@ -98,7 +112,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a wooden helmet"),
             actions = {
                 "return=skipped unless economy needs helmet_wooden or workers need experience",
-                "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "consume=log",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:180s",
@@ -111,7 +124,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
                 "return=skipped unless economy needs spear_wooden or workers need experience",
-                "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "consume=log",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:180s",

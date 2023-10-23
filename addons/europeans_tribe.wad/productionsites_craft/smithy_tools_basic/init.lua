@@ -72,34 +72,54 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
-                "sleep=duration:15s",
-                "call=produce_hammer",
-                "call=produce_saw",
-                "sleep=duration:15s",
-                "call=produce_fire_tongs",
-                "call=produce_needles",
-                "sleep=duration:15s",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:10s",
+                "call=pausing_production_for_outputs",
+                "sleep=duration:10s",
+                "call=produce_buckets",
+                "call=produce_basket",
+                "sleep=duration:10s",
                 "call=produce_felling_ax",
                 "call=produce_scythe",
-                "sleep=duration:15s",
+                "sleep=duration:10s",
                 "call=produce_buckets",
                 "call=produce_basket",
-                "sleep=duration:15s",
+                "sleep=duration:10s",
                 "call=produce_pick",
                 "call=produce_shovel",
-                "sleep=duration:15s",
-                "call=produce_buckets",
-                "call=produce_basket",
+                "sleep=duration:10s",
+                "call=produce_hammer",
+                "call=produce_saw",
+                "sleep=duration:10s",
+                "call=produce_fire_tongs",
+                "call=produce_needles",
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for log, iron and coal"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has log:6 and site has iron:6 and site has coal:6",
+                "return=skipped when economy needs iron", -- for statistical reason
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs basket",
+                "return=skipped when economy needs buckets",
+                "return=skipped when economy needs felling_ax",
+                "return=skipped when economy needs fire_tongs",
+                "return=skipped when economy needs hammer",
+                "return=skipped when economy needs needles",
+                "return=skipped when economy needs pick",
+                "return=skipped when economy needs saw",
+                "return=skipped when economy needs scythe",
+                "return=skipped when economy needs shovel",
+                "sleep=duration:60m",
             }
         },
         produce_basket = {

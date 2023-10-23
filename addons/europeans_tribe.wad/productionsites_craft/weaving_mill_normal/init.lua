@@ -50,20 +50,31 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
-                "sleep=duration:30s",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:20s",
+                "call=pausing_production_for_outputs",
+                "sleep=duration:20s",
                 "call=produce_cloth",
-                "sleep=duration:30s",
+                "sleep=duration:20s",
                 "call=produce_armor",
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for cotton"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has cotton:4",
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs cloth",
+                "return=skipped when economy needs armor",
+                "sleep=duration:20m",
             }
         },
         produce_cloth = {
@@ -71,8 +82,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped unless economy needs cloth or workers need experience",
-                "return=skipped when economy needs armor and not economy needs cloth",
-                "return=skipped when economy needs cotton and not economy needs cloth",
                 "consume=cotton:3",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:60s",
@@ -84,8 +93,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
                 "return=skipped unless economy needs armor or workers need experience",
-                "return=skipped when economy needs cloth and not economy needs armor",
-                "return=skipped when economy needs cotton and not economy needs armor",
                 "consume=cotton:2",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:60s",

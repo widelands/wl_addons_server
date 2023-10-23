@@ -102,7 +102,7 @@ wl.Descriptions():new_tribe {
           {
                 name = "water",
                 default_target_quantity = 64,
-                preciousness = 50,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Water, part 1
@@ -115,7 +115,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "granite",
                 default_target_quantity = 16,
-                preciousness = 32,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
@@ -128,7 +128,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "log",
                 default_target_quantity = 32,
-                preciousness = 48,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Log, part 1
@@ -141,7 +141,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "reed",
                 default_target_quantity = 32,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
@@ -154,7 +154,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "cotton",
                 default_target_quantity = 32,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Cotton
                     purpose = pgettext("europeans_ware", "Cotton is a raw material used to make clothing.")
@@ -162,7 +162,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_wood",
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Scrap wood
                     purpose = pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills. It can be processed into charcoal in charcoal burners.")
@@ -174,7 +174,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "coal",
                 default_target_quantity = 32,
-                preciousness = 32,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
@@ -187,7 +187,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "grout",
                 default_target_quantity = 32,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
@@ -200,7 +200,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "blackwood",
                 default_target_quantity = 16,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Blackwood
                     purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener (basic sawmill).")
@@ -209,7 +209,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "cloth",
                 default_target_quantity = 32,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Cloth
                     purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
@@ -218,7 +218,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "rubber",
                 default_target_quantity = 32,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Rubber
                     purpose = pgettext("europeans_ware", "Rubber is needed to make improved boots.")
@@ -227,7 +227,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "quartz",
                 default_target_quantity = 32,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Quartz
                     purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
@@ -239,7 +239,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "clay",
                 default_target_quantity = 8,
-                preciousness = 32,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
@@ -252,7 +252,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "brick",
                 default_target_quantity = 32,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
@@ -265,7 +265,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "planks",
                 default_target_quantity = 16,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
@@ -280,7 +280,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "armor",
                 default_target_quantity = 16,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Armor
                     purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
@@ -289,7 +289,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "marble",
                 default_target_quantity = 16,
-                preciousness = 32,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Marble
                     purpose = pgettext("europeans_ware", "Marble is the beautiful stone which is cut out of the mountains or produced in a quarry. Marble is used as a building material and gets chiseled into marble columns in the stonemason’s house.")
@@ -298,7 +298,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "marble_column",
                 default_target_quantity = 32,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Marble Column
                     purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the Europeans, so they are needed for nearly every advanced building. They are produced out of marble at a stonemason’s house.")
@@ -307,7 +307,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "diamond",
                 default_target_quantity = 32,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Diamond
                     purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
@@ -319,7 +319,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "ore",
                 default_target_quantity = 32,
-                preciousness = 32,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
@@ -331,7 +331,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_iron",
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
                     purpose = pgettext("europeans_ware", "Discarded weapons and armor can be recycled in an advanced smelting works to produce new tools, weapon and armor.")
@@ -340,7 +340,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "iron",
                 default_target_quantity = 32,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
@@ -352,7 +352,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_metal_mixed",
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Scrap metal (mixed)
                     purpose = pgettext("europeans_ware", "Discarded weapons and armor can be recycled in an advanced smelting works to produce new tools, weapon and armor.")
@@ -361,7 +361,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "gold",
                 default_target_quantity = 32,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
@@ -374,7 +374,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "coin_wood",
                 default_target_quantity = 128,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Wood Coin
@@ -385,7 +385,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "coin_copper",
                 default_target_quantity = 64,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Copper Coin
@@ -396,7 +396,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "coin_silver",
                 default_target_quantity = 64,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Silver Coin
@@ -407,7 +407,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "coin_gold",
                 default_target_quantity = 64,
-                preciousness = 32,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Gold Coin
@@ -421,7 +421,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "buckets",
                 default_target_quantity = 4,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
@@ -434,7 +434,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "basket",
                 default_target_quantity = 4,
-                preciousness = 4,
+                preciousness = 1,
                  helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
@@ -447,7 +447,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "scythe",
                 default_target_quantity = 2,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
@@ -460,7 +460,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "felling_ax",
                 default_target_quantity = 2,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 1
@@ -473,7 +473,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "pick",
                 default_target_quantity = 2,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                          -- TRANSLATORS: Helptext for an Europeans ware: Pick, part 1
@@ -486,7 +486,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "shovel",
                 default_target_quantity = 2,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
@@ -499,7 +499,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "hammer",
                 default_target_quantity = 2,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
@@ -512,7 +512,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "saw",
                 default_target_quantity = 2,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                          -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
@@ -525,7 +525,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "fire_tongs",
                 default_target_quantity = 2,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 1
@@ -538,7 +538,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "needles",
                 default_target_quantity = 2,
-                preciousness = 2,
+                preciousness = 1,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Needles, part 1
@@ -716,7 +716,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_carrier_1",
                 default_target_quantity = 16,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
                     purpose = pgettext("europeans_worker", "Carries items along your roads with their hands.")
@@ -725,7 +725,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_carrier_2",
                 default_target_quantity = 16,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
                     purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
@@ -734,7 +734,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_carrier_3",
                 default_target_quantity = 16,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
                     purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
@@ -743,7 +743,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_ferry",
                 default_target_quantity = 16,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ferry
                     purpose = pgettext("europeans_worker", "Ships wares across narrow rivers.")
@@ -755,7 +755,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_builder",
                 default_target_quantity = 4,
-                preciousness = 16,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Builder
                     purpose = pgettext("europeans_worker", "Works at construction sites to raise new buildings.")
@@ -764,7 +764,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_worker_basic",
                 default_target_quantity = 1,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Worker
                     purpose = pgettext("europeans_worker", "General worker with no special ability.")
@@ -773,7 +773,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_worker_normal",
                 default_target_quantity = 2,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Worker
                     purpose = pgettext("europeans_worker", "General worker with no special ability.")
@@ -782,7 +782,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_worker_advanced",
                 default_target_quantity = 4,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Worker
                     purpose = pgettext("europeans_worker", "General worker with no special ability.")
@@ -791,7 +791,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_shipwright_basic",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Shipwright
                     purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
@@ -800,7 +800,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_shipwright_normal",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Shipwright
                     purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
@@ -809,7 +809,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_shipwright_advanced",
                 default_target_quantity = 4,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Shipwright
                     purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
@@ -818,7 +818,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_geologist",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Geologist
                     purpose = pgettext("europeans_worker", "Discovers resources for mining.")
@@ -830,7 +830,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_trainer_basic",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Trainer
                     purpose = pgettext("europeans_worker", "Trains the soldiers.")
@@ -839,7 +839,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_trainer_normal",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Trainer
                     purpose = pgettext("europeans_worker", "Trains the soldiers.")
@@ -848,7 +848,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_trainer_advanced",
                 default_target_quantity = 4,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Trainer
                     purpose = pgettext("europeans_worker", "Trains the soldiers.")
@@ -857,7 +857,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_scout_basic",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Scout
                     purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
@@ -867,7 +867,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_scout_normal",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Scout
                     purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
@@ -877,7 +877,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_scout_advanced",
                 default_target_quantity = 2,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Scout
                     purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
@@ -887,7 +887,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_trader",
                 default_target_quantity = 4,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Scout
                     purpose = pgettext("europeans_worker", "Traders work in markets or in trading posts to exchange wares with other tribes.")
@@ -895,8 +895,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_recruit",
-                default_target_quantity = 64,
-                preciousness = 4,
+                default_target_quantity = 32,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Recruit
                     purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
@@ -904,8 +904,8 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_soldier",
-                default_target_quantity = 128,
-                preciousness = 4,
+                default_target_quantity = 64,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Soldier
                     purpose = pgettext("europeans_worker", "Defend and Conquer!")
@@ -917,7 +917,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_lumberjack_basic",
                 default_target_quantity = 1,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
                     purpose = pgettext("europeans_worker", "Fells trees.")
@@ -926,7 +926,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_lumberjack_normal",
                 default_target_quantity = 1,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
                     purpose = pgettext("europeans_worker", "Fells trees.")
@@ -935,7 +935,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_lumberjack_advanced",
                 default_target_quantity = 4,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
                     purpose = pgettext("europeans_worker", "Fells trees.")
@@ -944,7 +944,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_forester_basic",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
                     purpose = pgettext("europeans_worker", "Plant trees.")
@@ -953,7 +953,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_forester_normal",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
                     purpose = pgettext("europeans_worker", "Plant trees.")
@@ -962,7 +962,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_forester_advanced",
                 default_target_quantity = 4,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
                     purpose = pgettext("europeans_worker", "Plant trees.")
@@ -971,7 +971,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_farmer_basic",
                 default_target_quantity = 1,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Farmer
                     purpose = pgettext("europeans_worker", "Plants and harvests fields.")
@@ -980,7 +980,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_farmer_normal",
                 default_target_quantity = 1,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Farmer
                     purpose = pgettext("europeans_worker", "Plants and harvests fields.")
@@ -989,7 +989,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_farmer_advanced",
                 default_target_quantity = 4,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Farmer
                     purpose = pgettext("europeans_worker", "Plants and harvests fields.")
@@ -1001,7 +1001,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_stonecutter_basic",
                 default_target_quantity = 1,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Stonecutter
                     purpose = pgettext("europeans_worker", "Cuts blocks of granite and marble out of rocks in the vicinity.")
@@ -1010,7 +1010,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_stonecutter_normal",
                 default_target_quantity = 1,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Stonecutter
                     purpose = pgettext("europeans_worker", "Cuts blocks of granite and marble out of rocks in the vicinity.")
@@ -1019,7 +1019,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_stonecutter_advanced",
                 default_target_quantity = 4,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Stonecutter
                     purpose = pgettext("europeans_worker", "Cuts blocks of granite and marble out of rocks in the vicinity.")
@@ -1028,7 +1028,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_claydigger_basic",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Clay Digger
                     purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
@@ -1037,7 +1037,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_claydigger_normal",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Clay Digger
                     purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
@@ -1046,7 +1046,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_claydigger_advanced",
                 default_target_quantity = 4,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Clay Digger
                     purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house.")
@@ -1058,7 +1058,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_miner_basic",
                 default_target_quantity = 2,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Miner
                     purpose = pgettext("europeans_worker", "Mines ore and minerals.")
@@ -1067,7 +1067,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_miner_normal",
                 default_target_quantity = 2,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Miner
                     purpose = pgettext("europeans_worker", "Mines ore and minerals.")
@@ -1076,7 +1076,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_miner_advanced",
                 default_target_quantity = 4,
-                preciousness = 8,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Miner
                     purpose = pgettext("europeans_worker", "Mines ore and minerals.")
@@ -1085,7 +1085,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_terraformer_basic",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
                     purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
@@ -1094,7 +1094,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_terraformer_normal",
                 default_target_quantity = 1,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
                     purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
@@ -1103,7 +1103,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_terraformer_advanced",
                 default_target_quantity = 2,
-                preciousness = 4,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
                     purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")

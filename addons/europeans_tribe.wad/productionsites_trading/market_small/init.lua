@@ -53,9 +53,11 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 4 },
+        { name = "blackwood", amount = 4 },
         { name = "gold", amount = 4 },
-        { name = "cloth", amount = 8 }
+        { name = "reed", amount = 8 },
+        { name = "cotton", amount = 8 },
+        { name = "rubber", amount = 8 },
     },
 
     programs = {
@@ -73,10 +75,14 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "trading food for wood coins"),
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs planks",
-                "call=pausing_production_for_planks",
-                "sleep=duration:15s",
-                "call=trade_cloth"
+                "return=skipped when economy needs blackwood",
+                "call=pausing_production_for_blackwood",
+                "sleep=duration:20s",
+                "call=trade_cotton",
+                "sleep=duration:20s",
+                "call=trade_reed",
+                "sleep=duration:20s",
+                "call=trade_rubber"
             }
         },
         trading_for_copper = {
@@ -85,15 +91,19 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "call=pausing_production_for_gold",
-                "sleep=duration:15s",
-                "call=trade_cloth_copper"
+                "sleep=duration:20s",
+                "call=trade_cotton_copper",
+                "sleep=duration:20s",
+                "call=trade_reed_copper",
+                "sleep=duration:20s",
+                "call=trade_rubber_copper"
             }
         },
-        pausing_production_for_planks = {
+        pausing_production_for_blackwood = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing trading of planks"),
+            descname = pgettext("europeans_building", "pausing trading of blackwood"),
             actions = {
-                "return=skipped when site has planks:2",
+                "return=skipped when site has blackwood:2",
                 "sleep=duration:5m",
             }
         },
@@ -105,27 +115,79 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5m",
             }
         },
-        trade_cloth = {
+        trade_cotton = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs cloth",
-                "return=skipped unless site has cloth:4",
-                "return=skipped unless site has planks",
-                "consume=cloth:4 planks",
+                "return=skipped when economy needs cotton",
+                "return=skipped unless site has cotton:4",
+                "return=skipped unless site has blackwood",
+                "consume=cotton:4 blackwood",
                 "animate=working duration:30s",
                 "produce=coin_wood:4",
                 "sleep=duration:30s",
             }
         },
-        trade_cloth_copper = {
+        trade_cotton_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs cloth",
-                "return=skipped unless site has cloth:4",
+                "return=skipped when economy needs cotton",
+                "return=skipped unless site has cotton:4",
                 "return=skipped unless site has gold",
-                "consume=cloth:4 gold",
+                "consume=cotton:4 gold",
+                "animate=working duration:30s",
+                "produce=coin_copper:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_reed = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs reed",
+                "return=skipped unless site has reed:4",
+                "return=skipped unless site has blackwood",
+                "consume=reed:4 blackwood",
+                "animate=working duration:30s",
+                "produce=coin_wood:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_reed_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs reed",
+                "return=skipped unless site has reed:4",
+                "return=skipped unless site has gold",
+                "consume=reed:4 gold",
+                "animate=working duration:30s",
+                "produce=coin_copper:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_rubber = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs rubber",
+                "return=skipped unless site has rubber:4",
+                "return=skipped unless site has blackwood",
+                "consume=rubber:4 blackwood",
+                "animate=working duration:30s",
+                "produce=coin_wood:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_rubber_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs rubber",
+                "return=skipped unless site has rubber:4",
+                "return=skipped unless site has gold",
+                "consume=rubber:4 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",

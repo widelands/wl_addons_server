@@ -51,7 +51,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:20s",
+                "call=pausing_production_for_outputs",
                 "sleep=duration:20s",
                 "call=smelt_iron",
                 "sleep=duration:20s",
@@ -59,12 +61,22 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for ore and coal"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has ore:6 and site has coal:6",
+                "return=skipped when economy needs ore", -- for statistical reason
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs gold",
+                "return=skipped when economy needs iron",
+                "sleep=duration:20m",
             }
         },
         smelt_gold = {
@@ -72,7 +84,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "smelting gold"),
             actions = {
                 "return=skipped unless economy needs gold or workers need experience",
-                "return=skipped when economy needs iron and not economy needs gold",
                 "consume=ore:3 coal:3",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
                 "animate=working duration:90s",
@@ -85,7 +96,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "smelting iron"),
             actions = {
                 "return=skipped unless economy needs iron or workers need experience",
-                "return=skipped when economy needs gold and not economy needs iron",
                 "consume=ore:3 coal:3",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
                 "animate=working duration:90s",

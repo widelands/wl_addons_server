@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-20 03:06+0200\n"
+"POT-Creation-Date: 2023-10-23 03:06+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -726,38 +726,59 @@ msgid "Advanced Shoemakers House"
 msgstr "Fortgeschrittene Schusterei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:63
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_basic/init.lua:85
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:72
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:65
+#, fuzzy
 msgctxt "europeans_building"
-msgid "pausing production for log, cloth and leather"
-msgstr ""
+msgid "pausing production for planks, cloth and leather"
+msgstr "Produktionspause von Wasser und Mehl"
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:73
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_basic/init.lua:95
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:82
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:75
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:84
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:74
+#: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:77
+#: addons/europeans_food_production.wad/productionsites_food/bakery_basic/init.lua:89
+#: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:85
+#: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:84
+#: addons/europeans_food_production.wad/productionsites_food/brewery_basic/init.lua:78
+#: addons/europeans_food_production.wad/productionsites_food/brewery_normal/init.lua:75
+#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:74
+#: addons/europeans_food_production.wad/productionsites_food/mill_advanced/init.lua:77
+#: addons/europeans_food_production.wad/productionsites_food/mill_basic/init.lua:81
+#: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:78
+#, fuzzy
+msgctxt "europeans_building"
+msgid "pausing production because output not needed yet"
+msgstr "Produktion wegen Werkzeugmangel angehalten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:71
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_basic/init.lua:93
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:80
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:84
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_basic/init.lua:104
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:92
 msgctxt "europeans_building"
 msgid "making a pair of wooden boots"
 msgstr "Das Herstellen eines Paares von Holzstiefel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:83
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_basic/init.lua:105
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:92
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:98
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_basic/init.lua:116
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:104
 msgctxt "europeans_building"
 msgid "making study boots"
 msgstr "Das Herstellen robuster Stiefel"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:96
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:104
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:110
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:115
 msgctxt "europeans_building"
 msgid "making swift boots"
 msgstr "Die Herstellung von flinken Stiefeln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
-#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:109
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:122
 msgctxt "europeans_building"
 msgid "making advanced boots"
 msgstr "Das Herstellen verbesserter Stiefel"
@@ -767,6 +788,23 @@ msgstr "Das Herstellen verbesserter Stiefel"
 msgctxt "europeans_building"
 msgid "Basic Shoemakers House"
 msgstr "Einfaches Schuhmacherhaus"
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_basic/init.lua:87
+#: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:74
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:76
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:66
+#: addons/europeans_food_production.wad/productionsites_food/bakery_basic/init.lua:81
+#: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:77
+#: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:76
+#: addons/europeans_food_production.wad/productionsites_food/brewery_basic/init.lua:70
+#: addons/europeans_food_production.wad/productionsites_food/brewery_normal/init.lua:67
+#: addons/europeans_food_production.wad/productionsites_food/mill_basic/init.lua:73
+#: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:70
+#, fuzzy
+msgctxt "europeans_building"
+msgid "pausing production for waiting for inputs"
+msgstr "Produktionspause von Wasser und Mehl"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:8
@@ -781,24 +819,23 @@ msgid "Advanced Weaving Mill"
 msgstr "Verbesserte Weberei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:65
-#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:64
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:67
 msgctxt "europeans_building"
 msgid "pausing production for cotton"
 msgstr "Produktionspause von Baumwolle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
-#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:73
-#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:82
-#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:72
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:84
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:93
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "weaving cloth"
 msgstr "Das Weben von Stoff"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
-#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:84
-#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:95
-#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:84
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:95
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:105
+#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:94
 msgctxt "europeans_building"
 msgid "tailoring a suit of armor"
 msgstr "Das Schneidern einer Rüstung"
@@ -808,12 +845,6 @@ msgstr "Das Schneidern einer Rüstung"
 msgctxt "europeans_building"
 msgid "Basic Weaving Mill"
 msgstr "Einfache Weberei"
-
-#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:74
-msgctxt "europeans_building"
-msgid "pausing production for reed"
-msgstr "Produktionspause von Reet"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:8
@@ -828,30 +859,28 @@ msgid "Advanced Bakery"
 msgstr "Verbesserte Bäckerei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:67
-#: addons/europeans_food_production.wad/productionsites_food/bakery_basic/init.lua:79
-#: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:75
+#: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:69
 msgctxt "europeans_building"
 msgid "pausing production for water and flour"
 msgstr "Produktionspause von Wasser und Mehl"
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
-#: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:75
-#: addons/europeans_food_production.wad/productionsites_food/bakery_basic/init.lua:87
-#: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:83
+#: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:87
+#: addons/europeans_food_production.wad/productionsites_food/bakery_basic/init.lua:97
+#: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:94
 msgctxt "europeans_building"
 msgid "Baking bread"
 msgstr "Das Backen von Brot"
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
-#: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:86
-#: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:94
+#: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:98
+#: addons/europeans_food_production.wad/productionsites_food/bakery_normal/init.lua:105
 msgctxt "europeans_building"
 msgid "Baking honey bread"
 msgstr "Das Backen von Honigbrot"
 
 #. TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
-#: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:98
+#: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:110
 msgctxt "europeans_building"
 msgid "Baking fruit biscuits"
 msgstr "Das Backen von Keksen mit Beeren"
@@ -874,35 +903,26 @@ msgctxt "europeans_building"
 msgid "Advanced Brewery"
 msgstr "Verbesserte Brauerei"
 
-#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:74
-#: addons/europeans_food_production.wad/productionsites_food/brewery_basic/init.lua:68
-#: addons/europeans_food_production.wad/productionsites_food/brewery_normal/init.lua:65
-#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:62
-msgctxt "europeans_building"
-msgid "pausing production for water and barley"
-msgstr "Produktionspause von Wasser und Gerste"
-
 #. TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
-#: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:82
-#: addons/europeans_food_production.wad/productionsites_food/brewery_basic/init.lua:76
-#: addons/europeans_food_production.wad/productionsites_food/brewery_normal/init.lua:73
-#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:70
+#: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:94
+#: addons/europeans_food_production.wad/productionsites_food/brewery_basic/init.lua:86
+#: addons/europeans_food_production.wad/productionsites_food/brewery_normal/init.lua:84
+#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:85
 msgctxt "europeans_building"
 msgid "brewing beer"
 msgstr "Das Brauen von Bier"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
-#: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:95
-#: addons/europeans_food_production.wad/productionsites_food/brewery_normal/init.lua:86
-#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:83
+#: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:107
+#: addons/europeans_food_production.wad/productionsites_food/brewery_normal/init.lua:97
+#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:96
 msgctxt "europeans_building"
 msgid "brewing mead"
 msgstr "Das Brauen von Met"
 
 #. TRANSLATORS: Completed/Skipped/Did not start brewing strong beer because ...
-#: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:109
-#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:97
+#: addons/europeans_food_production.wad/productionsites_food/brewery_advanced/init.lua:121
+#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:108
 msgctxt "europeans_building"
 msgid "brewing strong beer"
 msgstr "Das Brauen von Starkbier"
@@ -925,8 +945,14 @@ msgctxt "europeans_building"
 msgid "Advanced Brewery and Winery"
 msgstr "Verbesserte Brauerei und Weinkellerei"
 
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:66
+msgctxt "europeans_building"
+msgid "pausing production for water and barley"
+msgstr "Produktionspause von Wasser und Gerste"
+
 #. TRANSLATORS: Completed/Skipped/Did not start making wine because ...
-#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:111
+#: addons/europeans_food_production.wad/productionsites_food/brewery_winery/init.lua:120
 msgctxt "europeans_building"
 msgid "making wine"
 msgstr "Das Keltern von Wein"
@@ -938,17 +964,15 @@ msgid "Advanced Mill"
 msgstr "Verbesserte Mühle"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_food/mill_advanced/init.lua:67
-#: addons/europeans_food_production.wad/productionsites_food/mill_basic/init.lua:71
-#: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:68
+#: addons/europeans_food_production.wad/productionsites_food/mill_advanced/init.lua:69
 msgctxt "europeans_building"
 msgid "pausing production for rye and wheat"
 msgstr "Produktionspause von Roggen und Weizen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
-#: addons/europeans_food_production.wad/productionsites_food/mill_advanced/init.lua:75
-#: addons/europeans_food_production.wad/productionsites_food/mill_basic/init.lua:79
-#: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:76
+#: addons/europeans_food_production.wad/productionsites_food/mill_advanced/init.lua:85
+#: addons/europeans_food_production.wad/productionsites_food/mill_basic/init.lua:89
+#: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:86
 msgctxt "europeans_building"
 msgid "grinding rye and wheat"
 msgstr "Das Mahlen von Roggen und Weizen"
@@ -1052,8 +1076,9 @@ msgstr "Tausch von Nahrung gegen Holzmünzen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:104
+#, fuzzy
 msgctxt "europeans_building"
-msgid "pausing trading of planks"
+msgid "pausing trading of blackwood"
 msgstr "Bretterhandel angehalten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -3989,3 +4014,7 @@ msgstr "Normaler Bauer"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Händler"
+
+#~ msgctxt "europeans_building"
+#~ msgid "pausing production for reed"
+#~ msgstr "Produktionspause von Reet"

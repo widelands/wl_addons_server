@@ -42,7 +42,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 10 },
+        { name = "blackwood", amount = 10 },
         { name = "iron", amount = 10 },
         { name = "coal", amount = 10 }
     },
@@ -52,34 +52,54 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
-                "sleep=duration:15s",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:10s",
+                "call=pausing_production_for_outputs",
+                "sleep=duration:10s",
                 "call=produce_buckets",
                 "call=produce_basket",
-                "sleep=duration:15s",
+                "sleep=duration:10s",
                 "call=produce_felling_ax",
                 "call=produce_scythe",
-                "sleep=duration:15s",
+                "sleep=duration:10s",
                 "call=produce_buckets",
                 "call=produce_basket",
-                "sleep=duration:15s",
+                "sleep=duration:10s",
                 "call=produce_pick",
                 "call=produce_shovel",
-                "sleep=duration:15s",
+                "sleep=duration:10s",
                 "call=produce_hammer",
                 "call=produce_saw",
-                "sleep=duration:15s",
+                "sleep=duration:10s",
                 "call=produce_fire_tongs",
                 "call=produce_needles",
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for log, iron and coal"),
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
-                "return=skipped when site has log:8 and site has iron:8 and site has coal:8",
+                "return=skipped when site has blackwood:8 and site has iron:8 and site has coal:8",
+                "return=skipped when economy needs iron", -- for statistical reason
                 "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs basket",
+                "return=skipped when economy needs buckets",
+                "return=skipped when economy needs felling_ax",
+                "return=skipped when economy needs fire_tongs",
+                "return=skipped when economy needs hammer",
+                "return=skipped when economy needs needles",
+                "return=skipped when economy needs pick",
+                "return=skipped when economy needs saw",
+                "return=skipped when economy needs scythe",
+                "return=skipped when economy needs shovel",
+                "sleep=duration:60m",
             }
         },
         produce_basket = {
@@ -96,7 +116,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs basket",
                 "return=skipped when economy needs scythe and not economy needs basket",
                 "return=skipped when economy needs shovel and not economy needs basket",
-                "consume=log iron coal",
+                "consume=blackwood iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:90s",
                 "produce=basket:2"
@@ -116,7 +136,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs buckets",
                 "return=skipped when economy needs scythe and not economy needs buckets",
                 "return=skipped when economy needs shovel and not economy needs buckets",
-                "consume=log iron coal",
+                "consume=blackwood iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:90s",
                 "produce=buckets:2"
@@ -136,7 +156,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs felling_ax",
                 "return=skipped when economy needs scythe and not economy needs felling_ax",
                 "return=skipped when economy needs shovel and not economy needs felling_ax",
-                "consume=log iron coal",
+                "consume=blackwood iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:90s",
                 "produce=felling_ax:2"
@@ -156,7 +176,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs fire_tongs",
                 "return=skipped when economy needs scythe and not economy needs fire_tongs",
                 "return=skipped when economy needs shovel and not economy needs fire_tongs",
-                "consume=log iron coal",
+                "consume=blackwood iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:90s",
                 "produce=fire_tongs:2"
@@ -176,7 +196,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs hammer",
                 "return=skipped when economy needs scythe and not economy needs hammer",
                 "return=skipped when economy needs shovel and not economy needs hammer",
-                "consume=log iron coal",
+                "consume=blackwood iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:90s",
                 "produce=hammer:2"
@@ -216,7 +236,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs pick",
                 "return=skipped when economy needs scythe and not economy needs pick",
                 "return=skipped when economy needs shovel and not economy needs pick",
-                "consume=log iron coal",
+                "consume=blackwood iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:90s",
                 "produce=pick:2"
@@ -236,7 +256,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs pick and not economy needs saw",
                 "return=skipped when economy needs scythe and not economy needs saw",
                 "return=skipped when economy needs shovel and not economy needs saw",
-                "consume=log iron coal",
+                "consume=blackwood iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:90s",
                 "produce=saw:2"
@@ -256,7 +276,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs pick and not economy needs scythe",
                 "return=skipped when economy needs saw and not economy needs scythe",
                 "return=skipped when economy needs shovel and not economy needs scythe",
-                "consume=log iron coal",
+                "consume=blackwood iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:90s",
                 "produce=scythe:2"
@@ -276,7 +296,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs pick and not economy needs shovel",
                 "return=skipped when economy needs saw and not economy needs shovel",
                 "return=skipped when economy needs scythe and not economy needs shovel",
-                "consume=log iron coal",
+                "consume=blackwood iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:90s",
                 "produce=shovel:2"

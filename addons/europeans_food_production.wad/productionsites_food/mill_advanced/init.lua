@@ -56,13 +56,15 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production",
-                "sleep=duration:15s",
+                "call=pausing_production_for_inputs",
+                "sleep=duration:30s",
+                "call=pausing_production_for_outputs",
+                "sleep=duration:30s",
                 "call=produce_mixed_flour",
                 "return=skipped"
             }
         },
-        pausing_production = {
+        pausing_production_for_inputs = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for rye and wheat"),
             actions = {
@@ -70,12 +72,19 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5m",
             }
         },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs flour",
+                "sleep=duration:30m",
+            }
+        },
         produce_mixed_flour = {
             -- TRANSLATORS: Completed/Skipped/Did not start grinding rye and wheat because ...
             descname = pgettext("europeans_building", "grinding rye and wheat"),
             actions = {
-                "return=skipped unless economy needs flour",
-                "return=skipped when economy needs meat and not economy needs flour",
+                "return=skipped when economy needs rye or economy needs wheat",
                 "consume=rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
                 "animate=working duration:25s",
