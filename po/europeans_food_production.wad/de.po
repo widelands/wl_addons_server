@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-23 03:06+0200\n"
+"POT-Creation-Date: 2023-10-24 03:06+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -727,10 +727,9 @@ msgstr "Fortgeschrittene Schusterei"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:65
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for planks, cloth and leather"
-msgstr "Produktionspause von Wasser und Mehl"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:73
@@ -749,10 +748,9 @@ msgstr "Produktionspause von Wasser und Mehl"
 #: addons/europeans_food_production.wad/productionsites_food/mill_advanced/init.lua:77
 #: addons/europeans_food_production.wad/productionsites_food/mill_basic/init.lua:81
 #: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:78
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production because output not needed yet"
-msgstr "Produktion wegen Werkzeugmangel angehalten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:84
@@ -801,10 +799,9 @@ msgstr "Einfaches Schuhmacherhaus"
 #: addons/europeans_food_production.wad/productionsites_food/brewery_normal/init.lua:67
 #: addons/europeans_food_production.wad/productionsites_food/mill_basic/init.lua:73
 #: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:70
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for waiting for inputs"
-msgstr "Produktionspause von Wasser und Mehl"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_normal/init.lua:8
@@ -1076,10 +1073,9 @@ msgstr "Tausch von Nahrung gegen Holzmünzen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:104
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing trading of blackwood"
-msgstr "Bretterhandel angehalten"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_trading/trading_post/init.lua:8
@@ -4014,7 +4010,3 @@ msgstr "Normaler Bauer"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Händler"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for reed"
-#~ msgstr "Produktionspause von Reet"

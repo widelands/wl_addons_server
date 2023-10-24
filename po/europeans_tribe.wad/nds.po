@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-23 03:06+0200\n"
+"POT-Creation-Date: 2023-10-24 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1273,10 +1273,9 @@ msgstr "Grote Holtköhlbranneree"
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:63
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:95
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for waiting for inputs"
-msgstr "dat Produzeren för Boomwull antohollen"
+msgstr "dat Produzeren bi’m Wachten up Versörgung antohollen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:68
@@ -1306,10 +1305,9 @@ msgstr "dat Produzeren för Boomwull antohollen"
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:74
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:84
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:73
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production because output not needed yet"
-msgstr "dat Produzeren um de Mangel an Warktüüg antohollen"
+msgstr "dat Produzeren för noch nich bruukt Produkten antohollen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:76
@@ -2199,10 +2197,9 @@ msgstr "Eten tegen Holtdeiten to hanneln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:104
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing trading of blackwood"
-msgstr "dat Hanneln vun Planken antohollen"
+msgstr "dat Hanneln vun Haartholt antohollen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_trading/scouts_house_advanced/init.lua:8
@@ -6003,49 +6000,3 @@ msgstr "Arbeider"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Goder Arbeider"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for log"
-#~ msgstr "dat Produzeren för Boomstammen antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for wood"
-#~ msgstr "dat Produzeren för Holt antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for log, cloth and leather"
-#~ msgstr "dat Produzeren för Boomstamm, Stoff un Leer antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for ore and coal"
-#~ msgstr "dat Produzeren för Kluten un Köhl antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for log, iron and coal"
-#~ msgstr "dat Produzeren för Boomstamm, Iesen un Köhl antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for granite, water and coal"
-#~ msgstr "dat Produzeren för Flint, Water un Köhl antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for planks, cloth, armor, iron and coal"
-#~ msgstr ""
-#~ "dat Produzeren för Planken, Stoff, Wapenrocken, Iesen un Köhl antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for log, cloth and armor"
-#~ msgstr "dat Produzeren för Boomstamm, Stoff un Wapenrocken antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for log, cloth, armor, iron and coal"
-#~ msgstr ""
-#~ "dat Produzeren för Boomstamm, Stoff, Wapenrocken, Iesen un Köhl antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for reed"
-#~ msgstr "dat Produzeren för Reit antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for planks, iron and coal"
-#~ msgstr "dat Produzeren för Planken, Iesen un Köhl antohollen"

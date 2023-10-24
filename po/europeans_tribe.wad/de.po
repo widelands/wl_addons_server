@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-23 03:06+0200\n"
+"POT-Creation-Date: 2023-10-24 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -1276,10 +1276,9 @@ msgstr "Verbesserte Köhlerei"
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:63
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:95
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for waiting for inputs"
-msgstr "Produktionspause von Baumwolle"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:68
@@ -1309,10 +1308,9 @@ msgstr "Produktionspause von Baumwolle"
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:74
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:84
 #: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:73
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production because output not needed yet"
-msgstr "Produktion wegen Werkzeugmangel angehalten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:76
@@ -2196,10 +2194,9 @@ msgstr "Tausch von Nahrung gegen Holzmünzen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:104
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing trading of blackwood"
-msgstr "Bretterhandel angehalten"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_trading/scouts_house_advanced/init.lua:8
@@ -6041,31 +6038,3 @@ msgstr "Lehrling"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Geselle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for log"
-#~ msgstr "Produktionspause von Stämmen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for wood"
-#~ msgstr "Produktionspause von Holz"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for ore and coal"
-#~ msgstr "Produktionspause von Erz und Kohle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for granite, water and coal"
-#~ msgstr "Produktionspause von Granit, Wasser und Kohle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for planks, cloth, armor, iron and coal"
-#~ msgstr "Produktionspause von Brettern, Rüstungen, Eisen und Kohle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for reed"
-#~ msgstr "Produktionspause von Reet"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for planks, iron and coal"
-#~ msgstr "Produktionspause von Brettern, Eisen und Kohle"
