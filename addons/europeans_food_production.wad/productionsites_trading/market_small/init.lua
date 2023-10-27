@@ -72,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         trading_for_wood = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for wood coins"),
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_wood",
@@ -86,7 +86,7 @@ wl.Descriptions():new_productionsite_type {
             }
         },
         trading_for_copper = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for copper coins"),
             actions = {
                 "return=skipped when economy needs coin_wood and not economy needs coin_copper",
@@ -104,7 +104,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing trading of blackwood"),
             actions = {
                 "return=skipped when site has blackwood:2",
-                "sleep=duration:5m",
+                "sleep=duration:15m",
             }
         },
         pausing_production_for_gold = {
@@ -112,7 +112,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing trading of gold"),
             actions = {
                 "return=skipped when site has gold:3",
-                "sleep=duration:5m",
+                "sleep=duration:15m",
             }
         },
         trade_beer = {

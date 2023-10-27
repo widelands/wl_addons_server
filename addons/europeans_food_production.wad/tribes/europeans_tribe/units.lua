@@ -102,7 +102,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "water",
                 default_target_quantity = 64,
-                preciousness = 1,
+                preciousness = 16,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Water, part 1
@@ -115,7 +115,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "granite",
                 default_target_quantity = 16,
-                preciousness = 1,
+                preciousness = 2,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
@@ -128,7 +128,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "log",
                 default_target_quantity = 32,
-                preciousness = 1,
+                preciousness = 4,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Log, part 1
@@ -141,7 +141,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "reed",
                 default_target_quantity = 32,
-                preciousness = 1,
+                preciousness = 8,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
@@ -167,6 +167,15 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wool
                     purpose = pgettext("europeans_ware", "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms with level 4 or 5 can produce wool.")
+                }
+            },
+            {
+                name = "rubber",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Rubber
+                    purpose = pgettext("europeans_ware", "Rubber is needed to make improved boots.")
                 }
             },
             {
@@ -225,12 +234,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "rubber",
-                default_target_quantity = 32,
+                name = "armor",
+                default_target_quantity = 16,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Rubber
-                    purpose = pgettext("europeans_ware", "Rubber is needed to make improved boots.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
+                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
                 }
             },
             {
@@ -293,15 +302,6 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
                         pgettext("europeans_ware", "They are also used by the ferryyard and shipyard.")
                     }
-                }
-            },
-            {
-                name = "armor",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
-                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
                 }
             },
             {

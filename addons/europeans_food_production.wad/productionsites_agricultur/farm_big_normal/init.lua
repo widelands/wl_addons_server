@@ -50,9 +50,17 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=planting",
+                "call=harvesting",
+                "return=skipped"
+            }
+        },
+        planting = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting because ...
+            descname = pgettext("europeans_building", "planting"),
+            actions = {
                 "callworker=check_space",
-                "return=skipped unless site has water:6",
-                "call=plant_idle",
+                "call=pausing_production_for_inputs",
                 "call=plant_reed",
                 "call=plant_blackroot",
                 "call=plant_corn",
@@ -60,7 +68,14 @@ wl.Descriptions():new_productionsite_type {
                 "call=plant_barley",
                 "call=plant_rye",
                 "call=plant_wheat",
-                "sleep=duration:10s",
+            }
+        },
+        harvesting = {
+            -- TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
+            descname = pgettext("europeans_building", "harvesting"),
+            actions = {
+                "callworker=check_fields",
+                "call=pausing_production_for_outputs",
                 "call=harvest_reed",
                 "call=harvest_blackroot",
                 "call=harvest_corn",
@@ -68,37 +83,28 @@ wl.Descriptions():new_productionsite_type {
                 "call=harvest_barley",
                 "call=harvest_rye",
                 "call=harvest_wheat",
-                "return=skipped"
             }
         },
-        plant_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
+        pausing_production_for_inputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
-                "return=skipped when economy needs barley or economy needs rye or economy needs wheat or economy needs corn or economy needs blackroot or economy needs fruit or economy needs reed",
-                "return=skipped when economy needs water",
-                "consume=water",
-                "callworker=plant_reed",
-                "animate=working duration:4s",
-                "consume=water",
-                "callworker=plant_barley",
-                "animate=working duration:4s",
-                "consume=water",
-                "callworker=plant_rye",
-                "animate=working duration:4s",
-                "consume=water",
-                "callworker=plant_wheat",
-                "animate=working duration:4s",
-                "consume=water",
-                "callworker=plant_corn",
-                "animate=working duration:4s",
-                "consume=water",
-                "callworker=plant_blackroot",
-                "animate=working duration:4s",
-                "consume=water:2",
-                "callworker=plant_berrybush",
-                "animate=working duration:4s",
-                "sleep=duration:30s"
+                "return=skipped when site has water:6",
+                "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs reed",
+                "return=skipped when economy needs barley",
+                "return=skipped when economy needs blackroot",
+                "return=skipped when economy needs corn",
+                "return=skipped when economy needs fruit",
+                "return=skipped when economy needs rye",
+                "return=skipped when economy needs wheat",
+                "sleep=duration:10m",
             }
         },
         plant_barley = {

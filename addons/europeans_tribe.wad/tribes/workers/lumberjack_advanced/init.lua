@@ -10,6 +10,9 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
+        check_trees = {
+            "findobject=attrib:tree radius:18",
+        },
         harvest = {
             "findobject=attrib:tree radius:18",
             "walk=object",

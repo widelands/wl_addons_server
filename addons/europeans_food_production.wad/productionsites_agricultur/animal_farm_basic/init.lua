@@ -77,7 +77,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs flour or economy needs beer",
                 "consume=water:2 wheat rye barley",
                 "animate=working duration:90s",
-                "sleep=duration:120s"
+                "sleep=duration:5m"
             }
         },
         produce_cattle = {

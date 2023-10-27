@@ -27,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 6 },
+        { name = "water", amount = 9 },
     },
     
     programs = {
@@ -36,12 +36,20 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "callworker=check_space",
-                "call=plant_trees_idle",
+                "call=pausing_production_for_inputs",
                 "call=plant_trees",
                 "sleep=duration:10s",
                 "callworker=check_land",
                 "call=planting_land",
                 "return=skipped"
+            }
+        },
+        pausing_production_for_inputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
+            actions = {
+                "return=skipped when site has water:6",
+                "sleep=duration:5m",
             }
         },
         plant_trees = {
@@ -58,17 +66,6 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=plant",
                 "consume=water",
                 "callworker=plant"
-            }
-        },
-        plant_trees_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
-            actions = {
-                "return=skipped when economy needs log",
-                "return=skipped when economy needs water",
-                "consume=water",
-                "callworker=plant",
-                "sleep=duration:60s"
             }
         },
         planting_pond_water = {

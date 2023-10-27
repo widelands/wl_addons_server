@@ -323,7 +323,7 @@ function connect_road(startx, starty, targetx, targety)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -2) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "bl,", true)
+          road = player:place_road(roadtype, startflag, "bl", "bl", "bl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -1) and (diffy == -3) and (targety % 2 == 0) then
@@ -331,7 +331,7 @@ function connect_road(startx, starty, targetx, targety)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == -1) and (diffy == 3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "bl,", true)
+          road = player:place_road(roadtype, startflag, "bl", "bl", "bl", true)
           startflag = road.end_flag
           startfield = startflag.fields[1]
         elseif (diffx == 0) and (diffy == -3) and (targety % 2 == 0) then

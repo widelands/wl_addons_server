@@ -93,6 +93,9 @@ wl.Descriptions():new_worker_type {
             "animate=planting duration:4s",
             "return"
         },
+        check_fields = {
+            "findobject=attrib:field radius:7"
+        },
         harvest_barley = {
             "findobject=attrib:ripe_barley radius:7",
             "walk=object",

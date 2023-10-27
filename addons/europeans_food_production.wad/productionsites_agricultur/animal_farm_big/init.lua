@@ -73,7 +73,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs flour or economy needs beer",
                 "consume=water:2 corn blackroot fruit",
                 "animate=working duration:60s",
-                "sleep=duration:120s"
+                "sleep=duration:2m"
             }
         },
         produce_wool = {

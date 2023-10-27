@@ -107,7 +107,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=dig",
                 "animate=working duration:40s",
-                "sleep=duration:120s"
+                "sleep=duration:5m"
             }
         },
         dummy_program = {

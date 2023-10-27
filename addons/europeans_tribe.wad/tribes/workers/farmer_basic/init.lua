@@ -40,6 +40,9 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:6s",
             "return"
         },
+        check_fields = {
+            "findobject=attrib:field radius:3"
+        },
         harvest_cotton = {
             "findobject=attrib:ripe_cotton radius:3",
             "walk=object",

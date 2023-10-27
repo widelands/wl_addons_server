@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-23 03:06+0200\n"
+"POT-Creation-Date: 2023-10-27 03:06+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -732,15 +732,6 @@ msgstr "흙 파내기"
 #: addons/europeans_tribe.wad/productionsites_collectors/clay_pit_advanced/init.lua:66
 #: addons/europeans_tribe.wad/productionsites_collectors/clay_pit_basic/init.lua:99
 #: addons/europeans_tribe.wad/productionsites_collectors/clay_pit_normal/init.lua:73
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:60
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:74
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:71
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:65
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:98
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:76
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:51
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:81
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:61
 #: addons/europeans_tribe.wad/productionsites_mining/well_basic/init.lua:90
 #: addons/europeans_tribe.wad/productionsites_mining/well_level_1/init.lua:77
 #: addons/europeans_tribe.wad/productionsites_mining/well_level_2/init.lua:67
@@ -786,61 +777,159 @@ msgctxt "europeans_building"
 msgid "Rubber Farm"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start planting because ...
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:53
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:71
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:66
+#, fuzzy
+msgctxt "europeans_building"
+msgid "planting"
+msgstr "갈대 심기"
+
+#. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:64
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:80
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:76
+#, fuzzy
+msgctxt "europeans_building"
+msgid "harvesting"
+msgstr "갈대 수확"
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:75
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:89
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:86
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:49
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:86
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:62
+#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:59
+#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:81
+#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:70
+#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:58
+#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:88
+#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:70
+#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:64
+#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:87
+#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:73
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:71
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:72
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:66
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:85
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:101
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:81
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:85
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:92
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:73
+#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:64
+#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:73
+#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:73
+#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:78
+#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:88
+#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:71
+#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:66
+#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:76
+#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:65
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:63
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:95
+#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
+msgctxt "europeans_building"
+msgid "pausing production for waiting for inputs"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:83
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:97
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:94
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:42
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:72
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:52
+#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:68
+#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:89
+#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:79
+#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:66
+#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:96
+#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:78
+#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:72
+#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:95
+#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:81
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:82
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:81
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:75
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:94
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:110
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:90
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:94
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:101
+#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:82
+#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:74
+#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:82
+#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:83
+#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:87
+#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:96
+#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:80
+#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:74
+#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:84
+#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:73
+msgctxt "europeans_building"
+msgid "pausing production because output not needed yet"
+msgstr ""
+
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:77
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:85
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:93
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:103
 msgctxt "europeans_building"
 msgid "planting cotton"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:88
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:104
 msgctxt "europeans_building"
 msgid "planting rubber"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:99
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:85
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:95
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:115
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:105
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:113
 msgctxt "europeans_building"
 msgid "planting reed"
 msgstr "갈대 심기"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:110
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:105
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:126
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:123
 msgctxt "europeans_building"
 msgid "harvesting cotton"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:121
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:137
 msgctxt "europeans_building"
 msgid "harvesting rubber"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:132
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:95
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:115
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:148
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:114
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:133
 msgctxt "europeans_building"
 msgid "harvesting reed"
 msgstr "갈대 수확"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:144
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:106
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:126
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:160
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:124
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:144
 msgid "No Fields"
 msgstr "수확지 없음"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:145
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:107
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:127
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:161
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:125
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:145
 msgid "Out of Fields"
 msgstr "수확지 부족"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:146
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:162
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
@@ -852,7 +941,7 @@ msgctxt "europeans_building"
 msgid "Reed Yard"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:108
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:126
 msgctxt "europeans_building"
 msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
@@ -865,7 +954,7 @@ msgctxt "europeans_building"
 msgid "Cotton Farm"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:128
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:146
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
@@ -879,31 +968,31 @@ msgid "Advanced Forester’s House"
 msgstr "강화 식물원"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:49
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:86
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:62
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:57
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:94
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:70
 msgctxt "europeans_building"
 msgid "planting trees"
 msgstr "나무 심기"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees in pond with water because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:76
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:109
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:87
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:73
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:106
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:84
 msgctxt "europeans_building"
 msgid "planting trees in pond with water"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees in dry pond because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:85
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:117
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:95
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:82
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:114
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:92
 msgctxt "europeans_building"
 msgid "planting trees in dry pond"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees on terraformed land because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:97
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:94
 msgctxt "europeans_building"
 msgid "planting trees on terraformed land"
 msgstr ""
@@ -927,25 +1016,25 @@ msgid "Advanced Lumberjack’s House"
 msgstr "강화 벌목소"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:42
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:52
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:50
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:60
 msgctxt "europeans_building"
 msgid "felling trees"
 msgstr "나무 베기"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:62
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:92
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:72
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:60
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:90
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:70
 msgid "No Trees"
 msgstr "나무 없음"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:63
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:93
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:73
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:61
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:91
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:71
 msgid "Out of Trees"
 msgstr "나무 부족"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:64
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:62
 msgctxt "europeans_building"
 msgid ""
 "The lumberjack working at this lumberjack’s house can’t find any trees in "
@@ -962,11 +1051,11 @@ msgid "Basic Lumberjack’s Hut"
 msgstr "기본 벌목소"
 
 #. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:72
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:80
 msgid "felling trees"
 msgstr "나무 베기"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:94
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:92
 msgctxt "europeans_building"
 msgid ""
 "The lumberjack working at this lumberjack’s hut can’t find any trees in his "
@@ -982,7 +1071,7 @@ msgctxt "europeans_building"
 msgid "Normal Lumberjack's House"
 msgstr "일반 벌목소"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:74
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:72
 msgctxt "europeans_building"
 msgid ""
 "The woodcutter working at this woodcutter’s house can’t find any trees in "
@@ -1221,74 +1310,6 @@ msgstr "일반 테라포밍 연구소"
 msgctxt "europeans_building"
 msgid "Advanced Charcoal Kiln"
 msgstr "강화 석탄 가마"
-
-#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#. TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
-#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:59
-#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:81
-#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:70
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:58
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:88
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:70
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:64
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:87
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:73
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:71
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:72
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:66
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:85
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:101
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:81
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:85
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:92
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:73
-#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:64
-#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:73
-#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:73
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:78
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:88
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:71
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:66
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:76
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:65
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:63
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:95
-#: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
-msgctxt "europeans_building"
-msgid "pausing production for waiting for inputs"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:68
-#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:89
-#: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:79
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:66
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:96
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:78
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:72
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:95
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:81
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:82
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:81
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:75
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:110
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:90
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:101
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:82
-#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:74
-#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:82
-#: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:83
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:87
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:96
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:80
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:74
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:84
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:73
-msgctxt "europeans_building"
-msgid "pausing production because output not needed yet"
-msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:76
@@ -2132,20 +2153,20 @@ msgstr ""
 msgid "trading"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:78
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:90
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:94
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:110
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
@@ -2164,7 +2185,7 @@ msgctxt "europeans_building"
 msgid "Small Market"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start pausing trading because ...
+#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:75
 msgctxt "europeans_building"
 msgid "trading food for wood coins"
@@ -3471,8 +3492,14 @@ msgctxt "europeans_ware"
 msgid "Cotton is a raw material used to make clothing."
 msgstr ""
 
+#. TRANSLATORS: Helptext for an Europeans ware: Rubber
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:169
+msgctxt "europeans_ware"
+msgid "Rubber is needed to make improved boots."
+msgstr ""
+
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap wood
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:168
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:177
 msgctxt "europeans_ware"
 msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
@@ -3480,13 +3507,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:181
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:190
 msgctxt "ware"
 msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:183
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:192
 msgctxt "europeans_ware"
 msgid ""
 "The fires of the Europeans smelting works and smithies are usually fed with "
@@ -3494,13 +3521,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:194
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:203
 msgctxt "europeans_ware"
 msgid "Grout is a basic building material."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:196
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:205
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces grout in lime kiln or stonemasons house out of "
@@ -3508,7 +3535,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:215
 msgctxt "europeans_ware"
 msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
@@ -3516,19 +3543,21 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cloth
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:215
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:224
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
 msgstr ""
 
-#. TRANSLATORS: Helptext for an Europeans ware: Rubber
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:224
+#. TRANSLATORS: Helptext for an Europeans ware: Armor
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:233
 msgctxt "europeans_ware"
-msgid "Rubber is needed to make improved boots."
+msgid ""
+"Raw material for some sorts of armor. It is produced in the weaving mill out "
+"of wool or reed."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:233
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:242
 msgctxt "europeans_ware"
 msgid ""
 "These transparent quartz gems are used to build some exclusive buildings. "
@@ -3536,25 +3565,25 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:246
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:255
 msgctxt "europeans_ware"
 msgid "Clay is needed to make bricks."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:248
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:257
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from claydiggers house."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:259
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:268
 msgctxt "europeans_ware"
 msgid "Brick is a basic building material."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:261
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:270
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
@@ -3562,29 +3591,21 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:272
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:281
 msgctxt "europeans_ware"
 msgid "Planks are an important building material."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:274
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:283
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:276
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:285
 msgctxt "europeans_ware"
 msgid "They are also used by the ferryyard and shipyard."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Armor
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:286
-msgctxt "europeans_ware"
-msgid ""
-"Raw material for some sorts of armor. It is produced in the weaving mill out "
-"of wool or reed."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble

@@ -56,28 +56,46 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "callworker=check_space",
-                "return=skipped unless site has water:4",
-                "call=plant_idle",
-                "call=plant_cotton",
-                "call=plant_reed",
-                "call=harvest_cotton",
-                "call=harvest_reed",
+                "call=planting",
+                "call=harvesting",
                 "return=skipped"
             }
         },
-        plant_idle = {
-            -- TRANSLATORS: Completed/Skipped/Did not start idle program because ...
-            descname = _"idle program",
+        planting = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting because ...
+            descname = pgettext("europeans_building", "planting"),
             actions = {
-                "return=skipped when economy needs cotton or economy needs reed or economy needs water",
-                "consume=water",
-                "callworker=plant_reed",
-                "animate=working duration:3s",
-                "consume=water:2",
-                "callworker=plant_cotton",
-                "animate=working duration:3s",
-                "sleep=duration:30s"
+                "callworker=check_space",
+                "call=pausing_production_for_inputs",
+                "call=plant_cotton",
+                "call=plant_reed",
+            }
+        },
+        harvesting = {
+            -- TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
+            descname = pgettext("europeans_building", "harvesting"),
+            actions = {
+                "callworker=check_fields",
+                "call=pausing_production_for_outputs",
+                "call=harvest_cotton",
+                "call=harvest_reed",
+            }
+        },
+        pausing_production_for_inputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
+            actions = {
+                "return=skipped when site has water:4",
+                "sleep=duration:5m",
+            }
+        },
+        pausing_production_for_outputs = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
+            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
+            actions = {
+                "return=skipped when economy needs reed",
+                "return=skipped when economy needs cotton",
+                "sleep=duration:10m",
             }
         },
         plant_cotton = {
@@ -94,7 +112,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
             descname = pgettext("europeans_building", "planting reed"),
             actions = {
-                "return=skipped unless economy needs reed or workers need experience",
+                "return=skipped when economy needs cotton and not economy needs reed",
                 "consume=water",
                 "callworker=plant_reed",
                 "animate=working duration:3s"
@@ -114,7 +132,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
-                "return=skipped unless economy needs reed or workers need experience",
+                "return=skipped when economy needs cotton and not economy needs reed",
                 "callworker=harvest_reed",
                 "animate=working duration:3s",
                 "produce=reed"

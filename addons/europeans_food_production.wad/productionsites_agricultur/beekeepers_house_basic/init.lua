@@ -85,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs honey",
                 "callworker=bees",
-                "sleep=duration:120s"
+                "sleep=duration:5m"
             }
         },
     },

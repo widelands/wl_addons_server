@@ -233,12 +233,19 @@ function place_random_rocks(startx, starty, radius, objectcount)
 end
 
 function place_trade_pole(player, fields)
-   while #fields > 0 do
-      local idx = math.random(#fields)
-      local f = fields[idx]
-
-      place_object(f.x, f.y, "europeans_trade_pole")
-   end
+    local game = wl.Game()
+    local map = game.map
+    local objectcount = 1
+    
+    while #fields > 0 and objectcount > 0 do
+        local idx = math.random(#fields)
+        local f = fields[idx]
+        if not f.immovable then
+           place_object(f.x, f.y, "europeans_trade_pole")
+           objectcount = 0
+        end
+        table.remove(fields, idx)
+    end
 end
 
 function place_building(player, startx, starty, radius, buildingname)

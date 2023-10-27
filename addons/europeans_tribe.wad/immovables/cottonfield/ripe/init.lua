@@ -12,7 +12,7 @@ wl.Descriptions():new_immovable_type {
    terrain_affinity = terrain_affinity,
    programs = {
       main = {
-         "animate=idle duration:5m",
+         "animate=idle duration:10m",
          "remove=",
       },
       harvest = {

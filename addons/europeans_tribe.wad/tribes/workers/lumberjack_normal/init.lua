@@ -13,6 +13,9 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_lumberjack_advanced",
 
     programs = {
+        check_trees = {
+            "findobject=attrib:tree radius:14",
+        },
         harvest = {
             "findobject=attrib:tree radius:14",
             "walk=object",
