@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-28 03:06+0200\n"
+"POT-Creation-Date: 2023-10-30 03:06+0100\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -562,7 +562,7 @@ msgstr "Fortschrittliche Farm"
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:60
 msgctxt "europeans_building"
 msgid "planting"
-msgstr ""
+msgstr "Das Pflanzen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:69
@@ -570,7 +570,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_normal/init.lua:75
 msgctxt "europeans_building"
 msgid "harvesting"
-msgstr ""
+msgstr "Das Ernten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:85
@@ -589,7 +589,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:70
 msgctxt "europeans_building"
 msgid "pausing production for waiting for inputs"
-msgstr ""
+msgstr "Produktionspause, während auf Materialien gewartet wird"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:93
@@ -613,7 +613,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_food/mill_normal/init.lua:78
 msgctxt "europeans_building"
 msgid "pausing production because output not needed yet"
-msgstr ""
+msgstr "Produktion angehalten, weil Produkt noch nicht benötigt wird"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_big_advanced/init.lua:108
@@ -785,7 +785,7 @@ msgstr "Fortgeschrittene Schusterei"
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:65
 msgctxt "europeans_building"
 msgid "pausing production for planks, cloth and leather"
-msgstr ""
+msgstr "Produktionspause von Brettern, Stoff und Leder"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/shoemakers_house_advanced/init.lua:84
@@ -1094,7 +1094,7 @@ msgstr "Tausch von Nahrung gegen Holzmünzen"
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:104
 msgctxt "europeans_building"
 msgid "pausing trading of blackwood"
-msgstr ""
+msgstr "Hartholzhandel angehalten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_trading/trading_post/init.lua:8
@@ -1595,7 +1595,7 @@ msgstr "Sie werden in der Sägemühle hergestellt."
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:303
 msgctxt "europeans_ware"
 msgid "They are also used by the ferryyard and shipyard."
-msgstr ""
+msgstr "Sie werden auch in der Fährenwerft und Werft benötigt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:313
