@@ -37,7 +37,7 @@ wl.Descriptions():new_tribe {
         { ware = "diamond", points = 2 },
         { ware = "armor_wooden", points = 1 },
         { ware = "armor_processed", points = 2 },
-        { ware = "armor_chain", points = 4 },
+        { ware = "armor_compressed", points = 4 },
         { ware = "armor_advanced", points = 6 },
         { ware = "boots_wooden", points = 1 },
         { ware = "boots_sturdy", points = 2 },
@@ -102,7 +102,7 @@ wl.Descriptions():new_tribe {
           {
                 name = "water",
                 default_target_quantity = 64,
-                preciousness = 16,
+                preciousness = 4,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Water, part 1
@@ -128,7 +128,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "log",
                 default_target_quantity = 32,
-                preciousness = 4,
+                preciousness = 2,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Log, part 1
@@ -141,7 +141,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "reed",
                 default_target_quantity = 32,
-                preciousness = 8,
+                preciousness = 2,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
@@ -367,7 +367,7 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
                         pgettext("ware", "Gold is the most valuable of all metals, and it is smelted out of ore."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
-                        pgettext("europeans_ware", "It is produced by the smelting works. Armor and weapons are embellished with gold in the smithy. Some valuable buildings need gold to be built.")
+                        pgettext("europeans_ware", "It is produced by the smelting works. Some valuable buildings need gold to be built.")
                     }
                 }
             },
@@ -557,7 +557,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
-                    purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the armoe smithy. In combination with wooden spear, it is the equipment to fit out young soldiers.")
+                    purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the big manufactory. In combination with wooden spear, it is the equipment to fit out young soldiers.")
                 }
             },
             {
@@ -570,12 +570,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "armor_chain",
+                name = "armor_compressed",
                 default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Chain Armor
-                    purpose = pgettext("europeans_ware", "The chain armor is a medium armor for European soldiers. It is produced in a smithy and used in a battle arena to protect soldiers with additional health points.")
+                    purpose = pgettext("europeans_ware", "The compressed armor is a medium armor for European soldiers. It is produced by a tailor and used in a battle arena to protect soldiers with additional health points.")
                 }
             },
             {
@@ -584,7 +584,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
-                    purpose = pgettext("europeans_ware", "The advanced armor is produced in the a smithy and used in the battle arena to protect soldiers with additional health points.")
+                    purpose = pgettext("europeans_ware", "The advanced armor is produced in the a manufactory and used in the battle arena to protect soldiers with additional health points.")
                 }
             },
             {
@@ -632,7 +632,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
-                    purpose = pgettext("europeans_ware", "This wooden spear is the basic weapon in the European military system. It is produced in the smithy. In combination with armor, it is the equipment to fit out young soldiers.")
+                    purpose = pgettext("europeans_ware", "This wooden spear is the basic weapon in the European military system. It is produced in the manufactory. In combination with armor, it is the equipment to fit out young soldiers.")
                 }
             },
             {
@@ -641,7 +641,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
-                    purpose = pgettext("europeans_ware", "This is a advanced spear with a steel tip. It is produced in a smithy and used in a battle arena – together with food – to train soldiers in attack.")
+                    purpose = pgettext("europeans_ware", "This is a advanced spear with a steel tip. It is produced in a manufactory and used in a battle arena – together with food – to train soldiers in attack.")
                 }
             },
             {
@@ -650,7 +650,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Broad Ax
-                    purpose = pgettext("europeans_ware", "This is an broad ax. It is produced in a smithy and used in a battle arena – together with food – to train soldiers in attack.")
+                    purpose = pgettext("europeans_ware", "This is an broad ax. It is produced in a manufactory and used in a battle arena – together with food – to train soldiers in attack.")
                 }
             },
             {
@@ -659,7 +659,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Broad Sword
-                    purpose = pgettext("europeans_ware", "This is a broad sword. It is produced in the advanced smithy and used in a battle arena – together with food – to train soldiers in attack.")
+                    purpose = pgettext("europeans_ware", "This is a broad sword. It is produced in the advanced manufactory and used in a battle arena – together with food – to train soldiers in attack.")
                 }
             },
             {
@@ -668,7 +668,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-                    purpose = pgettext("europeans_ware", "The helmet is the basic defense tool of a soldier. It is produced in the smithy. In combination with armor, it is the equipment to fit out young soldiers.")
+                    purpose = pgettext("europeans_ware", "The helmet is the basic defense tool of a soldier. It is produced in the manufactory. In combination with armor, it is the equipment to fit out young soldiers.")
                 }
             },
             {
@@ -677,7 +677,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-                    purpose = pgettext("europeans_ware", "The mask is the medium defense tool of a soldier. It is produced in a smithy and used in a battle arena – together with food – to train soldiers in defense.")
+                    purpose = pgettext("europeans_ware", "The mask is the medium defense tool of a soldier. It is produced in a manufactory and used in a battle arena – together with food – to train soldiers in defense.")
                 }
             },
             {
@@ -686,7 +686,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Steel Shield
-                    purpose = pgettext("europeans_ware", "This steel shield is produced in a smithy and used in a battle arena – together with food – to train soldiers in defense.")
+                    purpose = pgettext("europeans_ware", "This steel shield is produced in a manufactory and used in a battle arena – together with food – to train soldiers in defense.")
                 }
             },
             {
@@ -695,7 +695,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
-                    purpose = pgettext("europeans_ware", "These advanced shields are used by the best soldiers of the Europeans. They are produced in the advanced smithy and used in the advanced battle arena – together with food – to train soldiers in defense.")
+                    purpose = pgettext("europeans_ware", "These advanced shields are used by the best soldiers of the Europeans. They are produced in the advanced manufactory and used in the advanced battle arena – together with food – to train soldiers in defense.")
                 }
             }
         }
@@ -1771,48 +1771,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_weaving_mill_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
-                purpose = pgettext("europeans_building", "Weaves cloth out of reed.")
-            }
-        },
-        {
-            name = "europeans_weaving_mill_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-                purpose = pgettext("europeans_building", "Weaves cloth for buildings and ships’ sails, and armor to equip and train the soldiers.")
-            }
-        },
-        {
-            name = "europeans_weaving_mill_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-                purpose = pgettext("europeans_building", "Weaves cloth and armor out of wool and reed.")
-            }
-        },
-        {
-            name = "europeans_sawmill_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-                purpose = pgettext("europeans_building", "Saws logs to produce planks.")
-            }
-        },
-        {
-            name = "europeans_sawmill_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-                purpose = pgettext("europeans_building", "Saws logs to produce planks.")
-            }
-        },
-        {
-            name = "europeans_sawmill_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-                purpose = pgettext("europeans_building", "Saws logs to produce planks.")
-            }
-        },
-        {
             name = "europeans_charcoal_kiln_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
@@ -1881,92 +1839,29 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Smelts ore into iron and gold. Recycles scrap metal.")
             }
         },
-        {
-            name = "europeans_toolsmithy_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
-                purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
-            }
-        },
-        {
-            name = "europeans_toolsmithy_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
-                purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
-            }
-        },
-        {
-            name = "europeans_toolsmithy_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
-                purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
-            }
-        },
-        {
-            name = "europeans_tailors_house_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
-                purpose = pgettext("europeans_building", "Produces clothing and armor.")
-            }
-        },
-        {
-            name = "europeans_tailors_house_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
-                purpose = pgettext("europeans_building", "Produces clothing and armor.")
-            }
-        },
-        {
-            name = "europeans_tailors_house_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
-                purpose = pgettext("europeans_building", "Produces clothing and armor.")
-            }
-        },
-        {
-            name = "europeans_shoemakers_house_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
-                purpose = pgettext("europeans_building", "Produces shoes and boots.")
-            }
-        },
-        {
-            name = "europeans_shoemakers_house_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
-                purpose = pgettext("europeans_building", "Produces shoes and boots.")
-            }
-        },
-        {
-            name = "europeans_shoemakers_house_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
-                purpose = pgettext("europeans_building", "Produces shoes and boots.")
-            }
-        },
-        {
-            name = "europeans_weaponsmithy_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
-                purpose = pgettext("europeans_building", "Produces shields and weapons.")
-            }
-        },
-        {
-            name = "europeans_weaponsmithy_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
-                purpose = pgettext("europeans_building", "Produces shields and weapons.")
-            }
-        },
-        {
-            name = "europeans_weaponsmithy_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
-                purpose = pgettext("europeans_building", "Produces shields and weapons.")
-            }
-        },
 
         -- Big
+        {
+            name = "europeans_manufactory_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
+                purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
+            }
+        },
+        {
+            name = "europeans_manufactory_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
+                purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
+            }
+        },
+        {
+            name = "europeans_manufactory_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
+                purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
+            }
+        },
         {
             name = "europeans_recruitement_center_basic",
             helptexts = {
@@ -2508,10 +2403,10 @@ wl.Descriptions():new_tribe {
       quarry = "europeans_quarry_basic",
       mine_stone = "europeans_quarry_basic",
       building_materials_primary = "europeans_farm_medium_basic",
-      building_materials_secondary = "europeans_sawmill_basic",
+      building_materials_secondary = "europeans_manufactory_basic",
       building_materials_tertiary = "europeans_stonemasons_house_basic",
       charcoal = "europeans_charcoal_kiln_basic",
-      weaving_mill = "europeans_weaving_mill_basic",
+      weaving_mill = "europeans_manufactory_basic",
       farm_primary = "europeans_farm_medium_basic",
       farm_secondary = "europeans_farm_medium_normal",
       farm_tertiary = "europeans_farm_medium_advanced",
@@ -2520,16 +2415,16 @@ wl.Descriptions():new_tribe {
       mine_iron = "europeans_ironmine_basic",
       mine_gold = "europeans_goldmine_basic",
       smelting = "europeans_smelting_works_basic",
-      tool_smithy = "europeans_toolsmithy_basic",
-      weapon_smithy = "europeans_weaponsmithy_basic",
-      armor_smithy = "europeans_tailors_house_basic",
+      tool_manufactory = "europeans_manufactory_basic",
+      weapon_manufactory = "europeans_manufactory_basic",
+      armor_manufactory = "europeans_manufactory_basic",
       shipyard = "europeans_shipyard_basic",
       ferry_yard = "europeans_ferry_yard_basic",
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",
       second_carrier = "europeans_recruitement_center_basic",
-      industry_supporter = "europeans_weaving_mill_basic",
-      industry_alternative = "europeans_sawmill_basic",
+      industry_supporter = "europeans_smelting_works_basic",
+      industry_alternative = "europeans_smelting_works_basic",
       terraforming = "europeans_terraformers_house_basic",
    },
 }

@@ -12,6 +12,13 @@ wl.Descriptions():new_worker_type {
     experience = 24,
     becomes = "europeans_stonecutter_normal",
     
+    buildcost = {
+        europeans_carrier = 1,
+        coin_copper = 1,
+        pick = 1,
+        buckets = 1
+    },
+    
     programs = {
         check_rocks = {
             "findobject=attrib:rocks radius:8",

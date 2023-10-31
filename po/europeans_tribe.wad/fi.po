@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 03:06+0200\n"
+"POT-Creation-Date: 2023-10-31 03:06+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: LINUX-SAUNA, 2022\n"
 "Language-Team: Finnish (https://app.transifex.com/widelands/teams/35159/"
@@ -675,30 +675,15 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:45
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:69
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:56
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:44
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:76
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:56
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:46
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:73
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:57
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:63
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:82
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:58
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:53
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:58
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:52
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:57
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:73
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:53
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:59
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:74
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:53
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:48
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:61
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:59
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:60
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:74
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:55
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:52
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:62
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:51
 #: addons/europeans_tribe.wad/productionsites_mining/well_basic/init.lua:68
 #: addons/europeans_tribe.wad/productionsites_mining/well_level_1/init.lua:55
 #: addons/europeans_tribe.wad/productionsites_mining/well_level_2/init.lua:43
@@ -806,30 +791,12 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:59
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:81
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:70
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:58
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:88
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:70
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:64
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:87
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:73
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:71
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:72
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:66
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:85
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:101
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:81
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:85
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:92
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:73
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:64
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:73
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:73
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:78
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:88
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:71
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:66
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:76
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:65
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:63
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:95
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
@@ -847,30 +814,12 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:68
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:89
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:79
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:66
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:96
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:78
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:72
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:95
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:81
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:82
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:81
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:75
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:110
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:90
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:101
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:82
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:74
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:82
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:83
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:87
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:96
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:80
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:74
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:84
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:73
 msgctxt "europeans_building"
 msgid "pausing production because output not needed yet"
 msgstr ""
@@ -1097,23 +1046,23 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_advanced/init.lua:57
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_basic/init.lua:86
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_normal/init.lua:67
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:73
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:63
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:64
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:62
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:63
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:69
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:61
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:61
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:59
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:60
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_5/init.lua:40
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:75
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:64
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:65
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:63
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:64
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:71
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:62
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:62
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:60
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:61
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_5/init.lua:40
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:75
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:64
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:65
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:63
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:64
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:71
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:62
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:62
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:60
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:61
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_5/init.lua:40
 msgctxt "europeans_building"
 msgid "mining"
@@ -1139,26 +1088,26 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_advanced/init.lua:88
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_basic/init.lua:114
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_normal/init.lua:96
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:103
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:111
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:92
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:96
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:98
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:101
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:99
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:107
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:90
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:93
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:95
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:98
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_5/init.lua:79
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:106
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:114
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:99
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:102
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:105
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:102
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:110
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:92
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:96
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:99
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:102
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_5/init.lua:82
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:106
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:114
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:99
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:102
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:105
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:102
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:110
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:92
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:96
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:99
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:102
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_5/init.lua:82
 msgctxt "europeans_building"
 msgid "mining granite"
@@ -1168,17 +1117,17 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_advanced/init.lua:95
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_basic/init.lua:121
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_normal/init.lua:104
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:124
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:102
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:107
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:110
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:113
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:120
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:100
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:104
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:107
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:110
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_5/init.lua:90
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:124
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:102
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:107
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:110
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:113
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:120
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:100
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:104
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:107
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:110
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_5/init.lua:90
 msgctxt "europeans_building"
 msgid "mining marble"
@@ -1186,17 +1135,17 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_advanced/init.lua:102
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:132
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:110
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:115
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:118
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:121
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:128
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:108
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:112
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:115
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:118
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_5/init.lua:98
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:132
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:110
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:115
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:118
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:121
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:128
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:108
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:112
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:115
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:118
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_5/init.lua:98
 msgctxt "europeans_building"
 msgid "mining quartz"
@@ -1204,11 +1153,11 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining diamond because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/quarry_advanced/init.lua:109
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:121
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:100
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:104
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:106
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:109
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:117
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:98
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:101
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:103
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:106
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_5/init.lua:87
 msgctxt "europeans_building"
 msgid "mining diamond"
@@ -1328,83 +1277,306 @@ msgid "Normal Charcoal Kiln"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:8
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:8
+#, fuzzy
 msgctxt "europeans_building"
-msgid "Advanced Sawmill"
+msgid "Advanced Big Manufactory"
+msgstr "Edistynyt muuri"
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:76
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:94
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:71
+msgctxt "europeans_building"
+msgid "pausing production because lack of log"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:75
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:87
+#. TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:86
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:103
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:81
 msgctxt "europeans_building"
-msgid "sawing logs"
+msgid "processing log to create tools and weapons"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:101
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:96
+msgctxt "europeans_building"
+msgid "pausing production because lack of reed or cotton"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:110
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:105
+msgctxt "europeans_building"
+msgid "processing reed or cotton to create tools and armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:127
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:135
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:120
+msgctxt "europeans_building"
+msgid "pausing production because lack of iron or coal"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start processing iron for input wares because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:135
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:143
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:128
+msgctxt "europeans_building"
+msgid "processing iron to create tools and weapons"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_advanced/init.lua:91
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:104
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:103
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:158
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:162
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:149
 msgctxt "europeans_building"
 msgid "hardening wood"
 msgstr ""
 
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_basic/init.lua:8
+#. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:174
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:165
 msgctxt "europeans_building"
-msgid "Basic Sawmill"
+msgid "sawing logs"
 msgstr ""
 
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/sawmill_normal/init.lua:8
+#. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:190
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:178
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:181
 msgctxt "europeans_building"
-msgid "Normal Sawmill"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Shoemakers House"
+msgid "making a wooden armor"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:83
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:104
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:91
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:206
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:194
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:198
 msgctxt "europeans_building"
 msgid "making a pair of wooden boots"
 msgstr ""
 
+#. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:222
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:210
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:215
+msgctxt "europeans_building"
+msgid "making a wooden helmet"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:238
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:226
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:232
+msgctxt "europeans_building"
+msgid "forging a wooden spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:254
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:242
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:249
+msgctxt "europeans_building"
+msgid "weaving cloth"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:265
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:260
+msgctxt "europeans_building"
+msgid "tailoring a suit of armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:276
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:253
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:271
+msgctxt "europeans_building"
+msgid "tailoring processed armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:293
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:287
+msgctxt "europeans_building"
+msgid "tailoring a suit of chain armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:310
+msgctxt "europeans_building"
+msgid "tailoring a suit of advanced armor"
+msgstr ""
+
 #. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:97
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:116
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:103
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:327
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:266
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:303
 msgctxt "europeans_building"
 msgid "making study boots"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:109
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:114
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:344
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:319
 msgctxt "europeans_building"
 msgid "making swift boots"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:121
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:361
 msgctxt "europeans_building"
 msgid "making advanced boots"
 msgstr ""
 
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:8
+#. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:378
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:279
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:335
 msgctxt "europeans_building"
-msgid "Basic Shoemakers House"
+msgid "making baskets"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:397
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:299
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:355
+msgctxt "europeans_building"
+msgid "making buckets"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:416
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:319
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:375
+msgctxt "europeans_building"
+msgid "making felling axes"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:435
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:339
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:395
+msgctxt "europeans_building"
+msgid "making fire tongs"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:454
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:359
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:415
+msgctxt "europeans_building"
+msgid "making hammers"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making needles because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:473
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:379
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:435
+msgctxt "europeans_building"
+msgid "making needles"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:492
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:399
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:455
+msgctxt "europeans_building"
+msgid "making picks"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:511
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:419
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:475
+msgctxt "europeans_building"
+msgid "making saws"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:530
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:439
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:495
+msgctxt "europeans_building"
+msgid "making sycthes"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:549
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:459
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:515
+msgctxt "europeans_building"
+msgid "making shovels"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:568
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:479
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:535
+msgctxt "europeans_building"
+msgid "forging a mask"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:593
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:559
+msgctxt "europeans_building"
+msgid "forging a steel shield"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:618
+msgctxt "europeans_building"
+msgid "forging an advanced shield"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:643
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:501
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:583
+msgctxt "europeans_building"
+msgid "forging an advanced spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:669
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:608
+msgctxt "europeans_building"
+msgid "forging a broad ax"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:695
+msgctxt "europeans_building"
+msgid "forging a broadsword"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:8
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:8
 msgctxt "europeans_building"
-msgid "Normal Shoemakers House"
+msgid "Basic Big Manufactory"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:116
+msgctxt "europeans_building"
+msgid "pausing production because lack of reed"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start processing reed for input wares because ...
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:125
+msgctxt "europeans_building"
+msgid "processing reed to create tools and armor"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:8
+msgctxt "europeans_building"
+msgid "Normal Big Manufactory"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -1454,180 +1626,6 @@ msgid "Normal Smelting Works"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Toolsmithy"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:111
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:127
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:107
-msgctxt "europeans_building"
-msgid "making baskets"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:130
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:147
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:127
-msgctxt "europeans_building"
-msgid "making buckets"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:149
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:167
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:147
-msgctxt "europeans_building"
-msgid "making felling axes"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:168
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:187
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:167
-msgctxt "europeans_building"
-msgid "making fire tongs"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:187
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:207
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:187
-msgctxt "europeans_building"
-msgid "making hammers"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making needles because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:206
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:227
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:207
-msgctxt "europeans_building"
-msgid "making needles"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:225
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:247
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:227
-msgctxt "europeans_building"
-msgid "making picks"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:244
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:267
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:247
-msgctxt "europeans_building"
-msgid "making saws"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:263
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:287
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:267
-msgctxt "europeans_building"
-msgid "making sycthes"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:282
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:307
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:287
-msgctxt "europeans_building"
-msgid "making shovels"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:8
-msgctxt "europeans_building"
-msgid "Basic Toolsmithy"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:8
-msgctxt "europeans_building"
-msgid "Normal Toolsmithy"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Weaponsmithy"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:109
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:112
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:95
-msgctxt "europeans_building"
-msgid "making a wooden helmet"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:123
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:124
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:107
-msgctxt "europeans_building"
-msgid "forging a wooden spear"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:137
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:136
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:119
-msgctxt "europeans_building"
-msgid "forging a mask"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:149
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:130
-msgctxt "europeans_building"
-msgid "forging a steel shield"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:160
-msgctxt "europeans_building"
-msgid "forging an advanced shield"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:171
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:147
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:140
-msgctxt "europeans_building"
-msgid "forging an advanced spear"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:184
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:152
-msgctxt "europeans_building"
-msgid "forging a broad ax"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:197
-msgctxt "europeans_building"
-msgid "forging a broadsword"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:8
-msgctxt "europeans_building"
-msgid "Basic Weaponsmithy"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:8
-msgctxt "europeans_building"
-msgid "Normal Weaponsmithy"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Stonemason’s House"
@@ -1667,125 +1665,44 @@ msgid "Normal Lime Kiln"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Tailors House"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:98
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:105
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:90
-msgctxt "europeans_building"
-msgid "making a wooden armor"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:112
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:117
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:102
-msgctxt "europeans_building"
-msgid "tailoring processed armor"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:124
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:113
-msgctxt "europeans_building"
-msgid "tailoring a suit of chain armor"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:135
-msgctxt "europeans_building"
-msgid "tailoring a suit of advanced armor"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:8
-msgctxt "europeans_building"
-msgid "Basic Tailors House"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:8
-msgctxt "europeans_building"
-msgid "Normal Tailors House"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Weaving Mill"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:83
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:93
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:82
-msgctxt "europeans_building"
-msgid "weaving cloth"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_advanced/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:105
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:93
-msgctxt "europeans_building"
-msgid "tailoring a suit of armor"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_basic/init.lua:8
-msgctxt "europeans_building"
-msgid "Basic Weaving Mill"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/productionsites_craft/weaving_mill_normal/init.lua:8
-msgctxt "europeans_building"
-msgid "Normal Weaving Mill"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Coal Mine"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:95
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:84
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:88
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:90
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:93
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:91
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:82
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:85
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:87
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:90
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_5/init.lua:71
 msgctxt "europeans_building"
 msgid "mining coal"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:139
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:118
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:122
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:124
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:127
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:135
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:116
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:119
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:121
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:124
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_5/init.lua:105
 msgid "No Coal"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:140
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:119
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:123
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:125
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:128
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:136
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:117
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:120
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:122
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:125
 #: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_5/init.lua:106
 msgid "Main Coal Vein Exhausted"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:142
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:121
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:125
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:127
-#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:130
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_basic/init.lua:138
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_1/init.lua:119
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_2/init.lua:122
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_3/init.lua:124
+#: addons/europeans_tribe.wad/productionsites_mining/coalmine_level_4/init.lua:127
 msgctxt "europeans_building"
 msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
@@ -1835,45 +1752,45 @@ msgctxt "europeans_building"
 msgid "Basic Gold Mine"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:98
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:86
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:91
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:97
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:94
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:84
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:88
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:91
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:94
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_5/init.lua:74
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:98
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:86
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:91
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:94
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:97
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:94
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:84
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:88
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:91
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:94
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_5/init.lua:74
 msgctxt "europeans_building"
 msgid "mining ore"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:150
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:128
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:133
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:136
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:139
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:146
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:126
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:130
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:133
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:136
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_5/init.lua:116
 msgid "No Gold"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:151
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:129
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:134
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:137
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:140
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:147
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:127
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:131
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:134
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:137
 #: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_5/init.lua:117
 msgid "Main Gold Vein Exhausted"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:153
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:131
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:136
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:139
-#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:142
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_basic/init.lua:149
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_1/init.lua:129
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_2/init.lua:133
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_3/init.lua:136
+#: addons/europeans_tribe.wad/productionsites_mining/goldmine_level_4/init.lua:139
 msgctxt "europeans_building"
 msgid ""
 "This gold mine’s main vein is exhausted. Expect strongly diminished returns "
@@ -1923,29 +1840,29 @@ msgctxt "europeans_building"
 msgid "Basic Iron Mine"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:150
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:128
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:133
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:136
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:139
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:146
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:126
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:130
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:133
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:136
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_5/init.lua:116
 msgid "No Iron"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:151
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:129
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:134
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:137
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:140
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:147
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:127
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:131
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:134
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:137
 #: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_5/init.lua:117
 msgid "Main Iron Vein Exhausted"
 msgstr ""
 
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:153
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:131
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:136
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:139
-#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:142
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_basic/init.lua:149
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_1/init.lua:129
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_2/init.lua:133
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_3/init.lua:136
+#: addons/europeans_tribe.wad/productionsites_mining/ironmine_level_4/init.lua:139
 msgctxt "europeans_building"
 msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
@@ -2096,12 +2013,12 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:225
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:238
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:66
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:120
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:133
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:146
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:159
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:172
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:185
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:119
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:131
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:143
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:155
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:167
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:179
 #: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:66
 #: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:89
 #: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:101
@@ -2137,7 +2054,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:78
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:90
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:89
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
 msgstr ""
@@ -2156,7 +2073,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:126
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:112
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:111
 msgctxt "europeans_building"
 msgid "pausing trading of gold"
 msgstr ""
@@ -2174,7 +2091,7 @@ msgid "trading food for wood coins"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:104
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:103
 msgctxt "europeans_building"
 msgid "pausing trading of blackwood"
 msgstr ""
@@ -3662,8 +3579,8 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:370
 msgctxt "europeans_ware"
 msgid ""
-"It is produced by the smelting works. Armor and weapons are embellished with "
-"gold in the smithy. Some valuable buildings need gold to be built."
+"It is produced by the smelting works. Some valuable buildings need gold to "
+"be built."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wood Coin
@@ -3823,7 +3740,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:560
 msgctxt "europeans_ware"
 msgid ""
-"Basic armor for European soldiers. It is produced in the armoe smithy. In "
+"Basic armor for European soldiers. It is produced in the big manufactory. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
 
@@ -3839,17 +3756,17 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:578
 msgctxt "europeans_ware"
 msgid ""
-"The chain armor is a medium armor for European soldiers. It is produced in a "
-"smithy and used in a battle arena to protect soldiers with additional health "
-"points."
+"The compressed armor is a medium armor for European soldiers. It is produced "
+"by a tailor and used in a battle arena to protect soldiers with additional "
+"health points."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:587
 msgctxt "europeans_ware"
 msgid ""
-"The advanced armor is produced in the a smithy and used in the battle arena "
-"to protect soldiers with additional health points."
+"The advanced armor is produced in the a manufactory and used in the battle "
+"arena to protect soldiers with additional health points."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
@@ -3891,32 +3808,33 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
-"produced in the smithy. In combination with armor, it is the equipment to "
-"fit out young soldiers."
+"produced in the manufactory. In combination with armor, it is the equipment "
+"to fit out young soldiers."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:644
 msgctxt "europeans_ware"
 msgid ""
-"This is a advanced spear with a steel tip. It is produced in a smithy and "
-"used in a battle arena – together with food – to train soldiers in attack."
+"This is a advanced spear with a steel tip. It is produced in a manufactory "
+"and used in a battle arena – together with food – to train soldiers in "
+"attack."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:653
 msgctxt "europeans_ware"
 msgid ""
-"This is an broad ax. It is produced in a smithy and used in a battle arena – "
-"together with food – to train soldiers in attack."
+"This is an broad ax. It is produced in a manufactory and used in a battle "
+"arena – together with food – to train soldiers in attack."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:662
 msgctxt "europeans_ware"
 msgid ""
-"This is a broad sword. It is produced in the advanced smithy and used in a "
-"battle arena – together with food – to train soldiers in attack."
+"This is a broad sword. It is produced in the advanced manufactory and used "
+"in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
@@ -3924,7 +3842,7 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid ""
 "The helmet is the basic defense tool of a soldier. It is produced in the "
-"smithy. In combination with armor, it is the equipment to fit out young "
+"manufactory. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
 
@@ -3932,16 +3850,16 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:680
 msgctxt "europeans_ware"
 msgid ""
-"The mask is the medium defense tool of a soldier. It is produced in a smithy "
-"and used in a battle arena – together with food – to train soldiers in "
-"defense."
+"The mask is the medium defense tool of a soldier. It is produced in a "
+"manufactory and used in a battle arena – together with food – to train "
+"soldiers in defense."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:689
 msgctxt "europeans_ware"
 msgid ""
-"This steel shield is produced in a smithy and used in a battle arena – "
+"This steel shield is produced in a manufactory and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
 
@@ -3950,8 +3868,8 @@ msgstr ""
 msgctxt "europeans_ware"
 msgid ""
 "These advanced shields are used by the best soldiers of the Europeans. They "
-"are produced in the advanced smithy and used in the advanced battle arena – "
-"together with food – to train soldiers in defense."
+"are produced in the advanced manufactory and used in the advanced battle "
+"arena – together with food – to train soldiers in defense."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
@@ -4493,46 +4411,18 @@ msgctxt "europeans_building"
 msgid "Sows and harvests reed, cotton and rubber."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1777
-msgctxt "europeans_building"
-msgid "Weaves cloth out of reed."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1784
-msgctxt "europeans_building"
-msgid ""
-"Weaves cloth for buildings and ships’ sails, and armor to equip and train "
-"the soldiers."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1791
-msgctxt "europeans_building"
-msgid "Weaves cloth and armor out of wool and reed."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1798
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1805
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1812
-msgctxt "europeans_building"
-msgid "Saws logs to produce planks."
-msgstr ""
-
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1819
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1826
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1833
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1777
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1784
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1791
 msgctxt "europeans_building"
 msgid "Burns logs into charcoal."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1840
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1849
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1798
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1807
 msgctxt "europeans_building"
 msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
@@ -4540,8 +4430,8 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1842
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1851
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1800
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1809
 msgctxt "europeans_building"
 msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
@@ -4549,7 +4439,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Stonemason's House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1858
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1816
 msgctxt "europeans_building"
 msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
@@ -4558,7 +4448,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1860
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1818
 msgctxt "europeans_building"
 msgid ""
 "The stonemason’s house's output will only go to construction sites that need "
@@ -4566,59 +4456,37 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1867
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1825
 msgctxt "europeans_building"
 msgid "Smelts ore into iron."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1874
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1832
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1881
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1839
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold. Recycles scrap metal."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1888
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1895
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1902
+#. TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1848
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1855
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1862
 msgctxt "europeans_building"
-msgid "Forges all the tools that your workers need."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1909
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1916
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1923
-msgctxt "europeans_building"
-msgid "Produces clothing and armor."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1930
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1937
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1944
-msgctxt "europeans_building"
-msgid "Produces shoes and boots."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1951
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1958
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1965
-msgctxt "europeans_building"
-msgid "Produces shields and weapons."
+msgid ""
+"Large factory that produces complex wares such as tools, weapons, armor, "
+"clothing, shoes or building materials from simple raw materials."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Recruitement Center
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1974
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1981
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1988
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1869
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1876
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1883
 msgctxt "europeans_building"
 msgid "Equips recruits and trains them as workers."
 msgstr ""
@@ -4629,12 +4497,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1997
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2004
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2011
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2018
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2025
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2032
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1892
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1899
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1906
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1913
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1920
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1927
 msgctxt "europeans_building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr ""
@@ -4645,12 +4513,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2039
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2046
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2053
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2060
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2067
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2074
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1934
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1941
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1948
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1955
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1962
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1969
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr ""
@@ -4661,18 +4529,18 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2081
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2088
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2095
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2102
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2109
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2116
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1976
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1983
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1990
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1997
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2004
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2011
 msgctxt "europeans_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2126
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2021
 msgctxt "europeans_building"
 msgid "Trains recruits in ‘Attack’ and ‘Health’."
 msgstr ""
@@ -4680,23 +4548,23 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2128
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2139
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2150
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2023
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2034
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2045
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts and weapons."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2137
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2148
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2032
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2043
 msgctxt "europeans_building"
 msgid "Trains recruits to soldiers."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2158
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2053
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’."
 msgstr "Kouluttaa sotilaille 'Väistelyä', 'Terveyttä' ja 'Hyökkäystä'"
@@ -4704,9 +4572,9 @@ msgstr "Kouluttaa sotilaille 'Väistelyä', 'Terveyttä' ja 'Hyökkäystä'"
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 1
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2166
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2177
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2188
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2061
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2072
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2083
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."
 msgstr ""
@@ -4714,9 +4582,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 2
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2168
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2179
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2190
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2063
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2074
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2085
 msgctxt "europeans_building"
 msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
@@ -4733,18 +4601,18 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2200
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2209
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2218
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2227
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2236
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2245
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2254
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2263
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2272
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2281
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2290
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2299
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2095
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2104
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2113
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2122
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2131
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2140
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2149
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2158
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2167
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2176
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2185
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2194
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr "Toimii varuskuntana laajentaen valtakuntasi vaikutusaluetta."
@@ -4758,18 +4626,18 @@ msgstr "Toimii varuskuntana laajentaen valtakuntasi vaikutusaluetta."
 #. TRANSLATORS: Note helptext for an Europeans military site: Castle
 #. TRANSLATORS: Note helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Note helptext for an Europeans military site: Castle
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2202
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2211
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2220
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2229
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2238
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2247
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2256
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2265
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2274
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2283
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2292
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2301
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2097
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2106
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2115
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2124
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2133
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2142
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2151
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2160
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2169
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2178
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2187
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2196
 msgctxt "europeans_building"
 msgid ""
 "If you’re low on soldiers to occupy new military sites, use the downward "
@@ -4778,25 +4646,25 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2310
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2319
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2328
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2205
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2214
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2223
 msgctxt "europeans_building"
 msgid "Builds ferries."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2312
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2321
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2330
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2207
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2216
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2225
 msgctxt "europeans_building"
 msgid "Needs water nearby."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2337
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2344
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2351
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2232
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2239
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2246
 msgctxt "europeans_building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
@@ -4804,37 +4672,37 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Construction Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2360
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2255
 msgctxt "europeans_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Construction Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2362
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2257
 msgctxt "europeans_building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Construction Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2364
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2259
 msgctxt "europeans_building"
 msgid "A new building is being built at this construction site."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Dismantle Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2371
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2266
 msgctxt "europeans_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Dismantle Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2373
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2268
 msgctxt "europeans_building"
 msgid "Proverb"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Dismantle Site
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2375
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2270
 msgctxt "europeans_building"
 msgid ""
 "A building is being dismantled at this dismantle site, returning some of the "
@@ -4842,364 +4710,364 @@ msgid ""
 "stores."
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2382
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2277
 msgctxt "warehousename"
 msgid "Europe"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2383
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2278
 msgctxt "warehousename"
 msgid "Åland"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2384
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2279
 msgctxt "warehousename"
 msgid "Albania"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2385
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2280
 msgctxt "warehousename"
 msgid "Andorra"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2386
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2281
 msgctxt "warehousename"
 msgid "Armenia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2387
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2282
 msgctxt "warehousename"
 msgid "Austria"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2388
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2283
 msgctxt "warehousename"
 msgid "Azerbaijan"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2389
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2284
 msgctxt "warehousename"
 msgid "Belarus"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2390
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2285
 msgctxt "warehousename"
 msgid "Belgium"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2391
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2286
 msgctxt "warehousename"
 msgid "Bosnia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2392
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2287
 msgctxt "warehousename"
 msgid "Bulgaria"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2393
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2288
 msgctxt "warehousename"
 msgid "Corsica"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2394
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2289
 msgctxt "warehousename"
 msgid "Croatia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2395
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2290
 msgctxt "warehousename"
 msgid "Cyprus"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2396
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2291
 msgctxt "warehousename"
 msgid "Czechia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2397
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2292
 msgctxt "warehousename"
 msgid "Denmark"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2398
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2293
 msgctxt "warehousename"
 msgid "England"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2399
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2294
 msgctxt "warehousename"
 msgid "Estonia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2400
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2295
 msgctxt "warehousename"
 msgid "Faroe Islands"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2401
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2296
 msgctxt "warehousename"
 msgid "Finland"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2402
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2297
 msgctxt "warehousename"
 msgid "France"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2403
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2298
 msgctxt "warehousename"
 msgid "Georgia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2404
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2299
 msgctxt "warehousename"
 msgid "Germany"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2405
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2300
 msgctxt "warehousename"
 msgid "Gibraltar"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2406
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2301
 msgctxt "warehousename"
 msgid "Greece"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2407
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2302
 msgctxt "warehousename"
 msgid "Guernsey"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2408
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2303
 msgctxt "warehousename"
 msgid "Herzegovina"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2409
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2304
 msgctxt "warehousename"
 msgid "Hungary"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2410
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2305
 msgctxt "warehousename"
 msgid "Iceland"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2411
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2306
 msgctxt "warehousename"
 msgid "Isle of Man"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2412
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2307
 msgctxt "warehousename"
 msgid "Ireland"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2413
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2308
 msgctxt "warehousename"
 msgid "Italy"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2414
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2309
 msgctxt "warehousename"
 msgid "Jersey"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2415
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2310
 msgctxt "warehousename"
 msgid "Kazakhstan"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2416
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2311
 msgctxt "warehousename"
 msgid "Kosovo"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2417
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2312
 msgctxt "warehousename"
 msgid "Latvia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2418
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2313
 msgctxt "warehousename"
 msgid "Liechtenstein"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2419
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2314
 msgctxt "warehousename"
 msgid "Lithuania"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2420
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2315
 msgctxt "warehousename"
 msgid "Luxembourg"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2421
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2316
 msgctxt "warehousename"
 msgid "Malta"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2422
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2317
 msgctxt "warehousename"
 msgid "Moldova"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2423
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2318
 msgctxt "warehousename"
 msgid "Monaco"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2424
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2319
 msgctxt "warehousename"
 msgid "Montenegro"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2425
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2320
 msgctxt "warehousename"
 msgid "Netherlands"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2426
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2321
 msgctxt "warehousename"
 msgid "North Macedonia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2427
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2322
 msgctxt "warehousename"
 msgid "Norway"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2428
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2323
 msgctxt "warehousename"
 msgid "Poland"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2429
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2324
 msgctxt "warehousename"
 msgid "Portugal"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2430
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2325
 msgctxt "warehousename"
 msgid "Romania"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2431
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2326
 msgctxt "warehousename"
 msgid "Russia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2432
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2327
 msgctxt "warehousename"
 msgid "San Marino"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2433
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2328
 msgctxt "warehousename"
 msgid "Sardinia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2434
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2329
 msgctxt "warehousename"
 msgid "Scotland"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2435
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2330
 msgctxt "warehousename"
 msgid "Serbia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2436
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2331
 msgctxt "warehousename"
 msgid "Slovakia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2437
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2332
 msgctxt "warehousename"
 msgid "Slovenia"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2438
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2333
 msgctxt "warehousename"
 msgid "Spain"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2439
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2334
 msgctxt "warehousename"
 msgid "Svalbard"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2440
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2335
 msgctxt "warehousename"
 msgid "Sweden"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2441
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2336
 msgctxt "warehousename"
 msgid "Switzerland"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2442
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2337
 msgctxt "warehousename"
 msgid "Turkey"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2443
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2338
 msgctxt "warehousename"
 msgid "Ukraine"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2444
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2339
 msgctxt "warehousename"
 msgid "Vatican City"
 msgstr ""
 
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2445
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2340
 msgctxt "warehousename"
 msgid "Wales"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2451
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2346
 msgctxt "europeans"
 msgid "Worker missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2453
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2348
 msgctxt "europeans"
 msgid "Worker is coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2455
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2350
 msgctxt "europeans"
 msgid "Workers missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2457
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2352
 msgctxt "europeans"
 msgid "Workers are coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2459
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2354
 msgctxt "europeans"
 msgid "Expert missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2461
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2356
 msgctxt "europeans"
 msgid "Experts missing"
 msgstr ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2475
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2370
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
@@ -5207,7 +5075,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2477
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2372
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
@@ -5215,7 +5083,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2479
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2374
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
@@ -5223,7 +5091,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
-#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2481
+#: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2376
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
@@ -5243,9 +5111,9 @@ msgid "Advanced Armor"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
-#: addons/europeans_tribe.wad/tribes/wares/armor_chain/init.lua:8
+#: addons/europeans_tribe.wad/tribes/wares/armor_compressed/init.lua:8
 msgctxt "ware"
-msgid "Chain Armor"
+msgid "Compressed Armor"
 msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares

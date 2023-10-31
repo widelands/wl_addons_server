@@ -416,8 +416,7 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_clay_pit_basic", "europeans_foresters_house_basic", }
     end
     if (increment == 2) then
-        player:allow_buildings{"europeans_sawmill_basic", "europeans_weaving_mill_basic", } 
-        player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_stonemasons_house_basic", }
+        player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_stonemasons_house_basic", "europeans_manufactory_basic", }
     end
     if (increment == 4) then
         player:allow_buildings{"europeans_market_small", }
@@ -427,7 +426,7 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_coalmine_level_1", "europeans_ironmine_level_1", "europeans_goldmine_level_1", }
     end
     if (increment == 8) then
-        player:allow_buildings{"europeans_smelting_works_basic", "europeans_toolsmithy_basic", "europeans_shoemakers_house_basic", "europeans_tailors_house_basic", "europeans_weaponsmithy_basic", }
+        player:allow_buildings{"europeans_smelting_works_basic", }
         player:allow_buildings{"europeans_scouts_house_basic", "europeans_recruitement_center_basic", "europeans_trainingscamp_basic", "europeans_battlearena_basic", }
         player:allow_buildings{"europeans_market_big", }
     end
@@ -435,27 +434,25 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_lumberjacks_house_normal", "europeans_quarry_normal", }
         player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", "europeans_farm_medium_normal", }
         player:allow_buildings{"europeans_clay_pit_normal", "europeans_foresters_house_normal", }
-        player:allow_buildings{"europeans_sawmill_normal", "europeans_weaving_mill_normal", }
         player:allow_buildings{"europeans_charcoal_kiln_normal", "europeans_stonemasons_house_normal", }
     end
     if (increment == 12) then
         player:allow_buildings{"europeans_coalmine_level_2", "europeans_ironmine_level_2", "europeans_goldmine_level_2", }
         player:allow_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", }
-        player:allow_buildings{"europeans_smelting_works_normal", "europeans_toolsmithy_normal", "europeans_scouts_house_normal", "europeans_recruitement_center_normal", }
-        player:allow_buildings{"europeans_shoemakers_house_normal", "europeans_tailors_house_normal", "europeans_weaponsmithy_normal", "europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
+        player:allow_buildings{"europeans_smelting_works_normal", "europeans_manufactory_normal", "europeans_scouts_house_normal", "europeans_recruitement_center_normal", }
+        player:allow_buildings{"europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
     end
     if (increment == 14) then
         player:allow_buildings{"europeans_lumberjacks_house_advanced", "europeans_quarry_advanced", }
         player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_well_level_6", "europeans_farm_medium_advanced", }
         player:allow_buildings{"europeans_clay_pit_advanced", "europeans_foresters_house_advanced", }
-        player:allow_buildings{"europeans_sawmill_advanced", "europeans_weaving_mill_advanced", }
         player:allow_buildings{"europeans_charcoal_kiln_advanced", "europeans_stonemasons_house_advanced", }
     end
     if (increment == 16) then        
         player:allow_buildings{"europeans_coalmine_level_4", "europeans_ironmine_level_4", "europeans_goldmine_level_4", }
         player:allow_buildings{"europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5", }
-        player:allow_buildings{"europeans_smelting_works_advanced", "europeans_toolsmithy_advanced", "europeans_recruitement_center_advanced", }
-        player:allow_buildings{"europeans_shoemakers_house_advanced", "europeans_tailors_house_advanced", "europeans_weaponsmithy_advanced", "europeans_trainingscamp_advanced", "europeans_battlearena_level_2", "europeans_battlearena_level_3", }
+        player:allow_buildings{"europeans_smelting_works_advanced", "europeans_manufactory_advanced", "europeans_recruitement_center_advanced", }
+        player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_battlearena_level_2", "europeans_battlearena_level_3", }
         player:allow_buildings{"europeans_scouts_house_advanced", "europeans_trading_post", }
         player:allow_buildings{"europeans_store_small", "europeans_store_big", }
     end

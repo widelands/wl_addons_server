@@ -36,10 +36,8 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_goldmine_level_2",
         enhancement_cost = {
-            log = 2,
-            blackwood = 1,
-            planks = 1,
-            reed = 1
+            blackwood = 3,
+            cloth = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,

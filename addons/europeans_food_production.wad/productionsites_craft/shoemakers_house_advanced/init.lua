@@ -37,7 +37,6 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "planks", amount = 8 },
         { name = "cloth", amount = 8 },
-        { name = "rubber", amount = 8 },
         { name = "leather", amount = 8 }
     },
 
@@ -111,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_swift",
                 "return=skipped when economy needs boots_advanced and not economy needs boots_swift",
-                "consume=planks rubber,leather cloth:2",
+                "consume=planks leather cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:120s",
                 "produce=boots_swift:2"
@@ -123,7 +122,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_advanced",
                 "return=skipped when economy needs boots_swift and not economy needs boots_advanced",
-                "consume=planks rubber,leather cloth:2",
+                "consume=planks leather:2 cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:120s",
                 "produce=boots_advanced:2"

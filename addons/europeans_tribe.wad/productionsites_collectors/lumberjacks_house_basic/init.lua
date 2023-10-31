@@ -72,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing production because output not needed yet"),
             actions = {
                 "return=skipped when economy needs log",
-                "sleep=duration:15m",
+                "sleep=duration:4m",
             }
         },
         felling_trees = {

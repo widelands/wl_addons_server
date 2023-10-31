@@ -75,7 +75,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "trading food for wood coins"),
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_wood",
-                "return=skipped when economy needs blackwood",
                 "call=pausing_production_for_blackwood",
                 "sleep=duration:20s",
                 "call=trade_cotton",
@@ -119,7 +118,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs cotton",
                 "return=skipped unless site has cotton:4",
                 "return=skipped unless site has blackwood",
                 "consume=cotton:4 blackwood",
@@ -132,7 +130,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs cotton",
                 "return=skipped unless site has cotton:4",
                 "return=skipped unless site has gold",
                 "consume=cotton:4 gold",
@@ -145,7 +142,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs reed",
                 "return=skipped unless site has reed:4",
                 "return=skipped unless site has blackwood",
                 "consume=reed:4 blackwood",
@@ -158,7 +154,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs reed",
                 "return=skipped unless site has reed:4",
                 "return=skipped unless site has gold",
                 "consume=reed:4 gold",
@@ -171,7 +166,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs rubber",
                 "return=skipped unless site has rubber:4",
                 "return=skipped unless site has blackwood",
                 "consume=rubber:4 blackwood",
@@ -184,7 +178,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped when economy needs rubber",
                 "return=skipped unless site has rubber:4",
                 "return=skipped unless site has gold",
                 "consume=rubber:4 gold",

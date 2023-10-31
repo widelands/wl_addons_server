@@ -11,6 +11,13 @@ wl.Descriptions():new_worker_type {
     
     experience = 24,
     becomes = "europeans_claydigger_normal",
+    
+    buildcost = {
+        europeans_carrier = 1,
+        coin_copper = 1,
+        shovel = 1,
+        buckets = 1
+    },
 
     programs = {
         check_dike = {

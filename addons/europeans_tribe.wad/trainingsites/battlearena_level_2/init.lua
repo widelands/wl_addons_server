@@ -62,7 +62,7 @@ wl.Descriptions():new_trainingsite_type {
         { name = "coin_silver", amount = 6 },
         { name = "coin_gold", amount = 6 },
         { name = "armor_processed", amount = 2 },
-        { name = "armor_chain", amount = 2 },
+        { name = "armor_compressed", amount = 2 },
         { name = "armor_advanced", amount =  2 },
         { name = "spear_advanced", amount = 2 },
         { name = "ax_broad", amount = 2 },
@@ -103,7 +103,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:health level:1",
-                "consume=coin_silver armor_chain",
+                "consume=coin_silver armor_compressed",
                 "train=soldier:health level:2",
                 "produce=scrap_metal_mixed"
             }

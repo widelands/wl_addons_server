@@ -37,7 +37,7 @@ wl.Descriptions():new_tribe {
         { ware = "diamond", points = 2 },
         { ware = "armor_wooden", points = 1 },
         { ware = "armor_processed", points = 2 },
-        { ware = "armor_chain", points = 4 },
+        { ware = "armor_compressed", points = 4 },
         { ware = "armor_advanced", points = 6 },
         { ware = "boots_wooden", points = 1 },
         { ware = "boots_sturdy", points = 2 },
@@ -102,7 +102,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "water",
                 default_target_quantity = 64,
-                preciousness = 16,
+                preciousness = 4,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Water, part 1
@@ -128,7 +128,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "log",
                 default_target_quantity = 32,
-                preciousness = 4,
+                preciousness = 2,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Log, part 1
@@ -141,7 +141,7 @@ wl.Descriptions():new_tribe {
             {
                 name = "reed",
                 default_target_quantity = 32,
-                preciousness = 8,
+                preciousness = 2,
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
@@ -751,7 +751,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
-                    purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the armoe smithy. In combination with wooden spear, it is the equipment to fit out young soldiers.")
+                    purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the armor smithy. In combination with wooden spear, it is the equipment to fit out young soldiers.")
                 }
             },
             {
@@ -764,12 +764,12 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "armor_chain",
+                name = "armor_compressed",
                 default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Chain Armor
-                    purpose = pgettext("europeans_ware", "The chain armor is a medium armor for European soldiers. It is produced in a smithy and used in a battle arena to protect soldiers with additional health points.")
+                    purpose = pgettext("europeans_ware", "The compressed armor is a medium armor for European soldiers. It is produced by a tailor and used in a battle arena to protect soldiers with additional health points.")
                 }
             },
             {
@@ -2667,6 +2667,27 @@ wl.Descriptions():new_tribe {
         },
 
         -- Big
+        {
+            name = "europeans_manufactory_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
+                purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
+            }
+        },
+        {
+            name = "europeans_manufactory_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
+                purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
+            }
+        },
+        {
+            name = "europeans_manufactory_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
+                purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
+            }
+        },
         {
             name = "europeans_recruitement_center_basic",
             helptexts = {

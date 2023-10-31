@@ -36,9 +36,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_coalmine_level_1",
         enhancement_cost = {
-            log = 2,
-            blackwood = 1,
-            planks = 1,
+            blackwood = 3,
             reed = 1
         },
         enhancement_return_on_dismantle = {
@@ -47,13 +45,11 @@ wl.Descriptions():new_productionsite_type {
         }
     },
     buildcost = {
-        log = 2,
-        blackwood = 2,
-        planks = 2,
+        log = 6,
         reed = 2
     },
     return_on_dismantle = {
-        scrap_wood = 2,
+        scrap_wood = 4,
         granite = 1
     },
 

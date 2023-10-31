@@ -93,7 +93,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped unless economy needs cloth or workers need experience",
-                "return=skipped when economy needs reed",
                 "consume=reed:2",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:90s",
@@ -105,7 +104,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
                 "return=skipped unless economy needs armor or workers need experience",
-                "return=skipped when economy needs reed",
                 "consume=reed:2",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:90s",

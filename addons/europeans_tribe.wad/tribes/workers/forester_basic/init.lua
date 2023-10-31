@@ -12,6 +12,13 @@ wl.Descriptions():new_worker_type {
     experience = 24,
     becomes = "europeans_forester_normal",
     
+    buildcost = {
+        europeans_carrier = 1,
+        coin_copper = 1,
+        shovel = 1,
+        buckets = 1
+    },
+    
     programs = {
         check_space = {
             "findspace=size:any radius:5 avoid:field saplingsearches:5"

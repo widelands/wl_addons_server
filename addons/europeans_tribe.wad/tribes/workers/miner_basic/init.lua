@@ -11,6 +11,14 @@ wl.Descriptions():new_worker_type {
     
     experience = 32,
     becomes = "europeans_miner_normal",
+    
+    buildcost = {
+        europeans_carrier = 1,
+        coin_copper = 1,
+        pick = 1,
+        shovel = 1,
+        buckets = 1
+    },
 
     animation_directory = dirname,
     animations = {

@@ -49,7 +49,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has water:6",
-                "sleep=duration:5m",
+                "sleep=duration:4m",
             }
         },
         plant_trees = {
