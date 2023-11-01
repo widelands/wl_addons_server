@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 03:06+0100\n"
+"POT-Creation-Date: 2023-11-01 03:06+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -1292,10 +1292,9 @@ msgstr "Kiln de carbó vegetal normal"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Big Manufactory"
-msgstr "Guarda sentinella avançada"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:76
@@ -1571,10 +1570,9 @@ msgstr "forjar un sabre"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Big Manufactory"
-msgstr "Pedrera bàsica"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:116
@@ -1590,10 +1588,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Big Manufactory"
-msgstr "Pedrera normal"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:8
@@ -3643,14 +3640,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:370
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "It is produced by the smelting works. Some valuable buildings need gold to "
 "be built."
 msgstr ""
-"Es produeix als forns de metalls. Les armadures i armes es decoren amb or "
-"als tallers. També es necessita or per construir alguns edificis."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wood Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:381
@@ -3824,14 +3818,11 @@ msgstr "Les agulles les fan servir els teixidors."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:560
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the big manufactory. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
-"Armadura bàsica pels soldats europeus. Es produeix al taller de teixir. En "
-"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:569
@@ -3845,27 +3836,20 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:578
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The compressed armor is a medium armor for European soldiers. It is produced "
 "by a tailor and used in a battle arena to protect soldiers with additional "
 "health points."
 msgstr ""
-"La màscara és l'eina de defensa mitjana d'un soldat. Es produeix als tallers "
-"i s'usa a la palestra d'entrenament –amb menjar– per entrenar la defensa "
-"dels soldats."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:587
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
 "arena to protect soldiers with additional health points."
 msgstr ""
-"Els sabres es produeixen als tallers avançats i s'usa a les palestres "
-"d'entrenament, amb menjar, per entrenar els soldats en atac."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:596
@@ -3903,98 +3887,72 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:635
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
 "produced in the manufactory. In combination with armor, it is the equipment "
 "to fit out young soldiers."
 msgstr ""
-"Armadura bàsica pels soldats europeus. Es produeix al taller de teixir. En "
-"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:644
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a advanced spear with a steel tip. It is produced in a manufactory "
 "and used in a battle arena – together with food – to train soldiers in "
 "attack."
 msgstr ""
-"La llança avançada amb punta d'acer. Es produeix als tallers i s'usa en les "
-"palestres d'entrenament, amb menjar, per entrenar els soldats en atac."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:653
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is an broad ax. It is produced in a manufactory and used in a battle "
 "arena – together with food – to train soldiers in attack."
 msgstr ""
-"Les destrals amples es produeixen en tallers i s'usen a la palestra "
-"d'entrenament –amb menjar– per entrenar l'atac dels soldats."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:662
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
 "in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
-"Els sabres es produeixen als tallers avançats i s'usa a les palestres "
-"d'entrenament, amb menjar, per entrenar els soldats en atac."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:671
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The helmet is the basic defense tool of a soldier. It is produced in the "
 "manufactory. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
-"Armadura bàsica pels soldats europeus. Es produeix al taller de teixir. En "
-"combinació amb la llança de fusta, és l'equipament dels soldats novells."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:680
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The mask is the medium defense tool of a soldier. It is produced in a "
 "manufactory and used in a battle arena – together with food – to train "
 "soldiers in defense."
 msgstr ""
-"La màscara és l'eina de defensa mitjana d'un soldat. Es produeix als tallers "
-"i s'usa a la palestra d'entrenament –amb menjar– per entrenar la defensa "
-"dels soldats."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:689
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This steel shield is produced in a manufactory and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
-"Aquest escut d'acer es produeix a tots els tallers en palestres "
-"d'entrenament –amb menjar– per entrenar la defensa dels soldats."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:698
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These advanced shields are used by the best soldiers of the Europeans. They "
 "are produced in the advanced manufactory and used in the advanced battle "
 "arena – together with food – to train soldiers in defense."
 msgstr ""
-"Aquests escuts avançats els usen els millors soldats europeus. Es produeixen "
-"als tallers avançats i s'usen a la palestra d'entrenament avançada, "
-"juntament amb menjar, per entrenar soldats en defensa."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:713
@@ -5878,51 +5836,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Sawmill"
-#~ msgstr "Serradora avançada"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Sawmill"
-#~ msgstr "Serradora bàsica"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Sawmill"
-#~ msgstr "Serradora normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Toolsmithy"
-#~ msgstr "Taller d'eines avançat"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Toolsmithy"
-#~ msgstr "Taller d'eines bàsic"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Toolsmithy"
-#~ msgstr "Taller d'eines normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Weaving Mill"
-#~ msgstr "Taller de teixir avançat"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Weaving Mill"
-#~ msgstr "Taller de teixir bàsic"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaving Mill"
-#~ msgstr "Taller de teixir normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Weaves cloth out of reed."
-#~ msgstr "Teixeix tela amb juncs."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Saws logs to produce planks."
-#~ msgstr "Serra fusta per obtenir-ne taulons."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Forges all the tools that your workers need."
-#~ msgstr "Forja totes les eines que necessiten els vostres treballadors."

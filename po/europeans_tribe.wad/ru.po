@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 03:06+0100\n"
+"POT-Creation-Date: 2023-11-01 03:06+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -1295,10 +1295,9 @@ msgstr "Обычная Печь углежога"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Big Manufactory"
-msgstr "Продвинутая караульная"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:76
@@ -1574,10 +1573,9 @@ msgstr "кует Тесак"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Big Manufactory"
-msgstr "Базовая каменоломня"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:116
@@ -1593,10 +1591,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Big Manufactory"
-msgstr "Обычная Каменоломня"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:8
@@ -3643,14 +3640,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:370
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "It is produced by the smelting works. Some valuable buildings need gold to "
 "be built."
 msgstr ""
-"Его получают в литейных. Доспехи и оружие украшают золотом в кузнице. Также "
-"золото требуется для строительства некоторых ценных зданий."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wood Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:381
@@ -3823,14 +3817,11 @@ msgstr "Иглы нужны для шитья."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:560
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the big manufactory. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
-"Базовая броня для европейских солдат. Его производят в бронной. В сочетании "
-"с деревянным копьем служит снаряжением для молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:569
@@ -3844,26 +3835,20 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:578
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The compressed armor is a medium armor for European soldiers. It is produced "
 "by a tailor and used in a battle arena to protect soldiers with additional "
 "health points."
 msgstr ""
-"Кольчуга - это средняя броня для европейских солдат. Она производится в "
-"кузнице и используется на арене поединков для увелечения здоровья солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:587
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
 "arena to protect soldiers with additional health points."
 msgstr ""
-"Улучшеные доспехи производится в кузнице и используется на Арене поединков "
-"чтобы повысить здоровье солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:596
@@ -3911,99 +3896,72 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:635
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
 "produced in the manufactory. In combination with armor, it is the equipment "
 "to fit out young soldiers."
 msgstr ""
-"Это деревянное копье является основным оружием в европейских армиях. Его "
-"изготавливают в кузнице. В сочетании с доспехами служит снаряжением для "
-"молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:644
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a advanced spear with a steel tip. It is produced in a manufactory "
 "and used in a battle arena – together with food – to train soldiers in "
 "attack."
 msgstr ""
-"Это Улучшенное копье со стальным наконечником. Его производят в кузнице и "
-"используют на арене поединков – вместе с едой – для тренировки солдат в "
-"уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:653
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is an broad ax. It is produced in a manufactory and used in a battle "
 "arena – together with food – to train soldiers in attack."
 msgstr ""
-"Это Секира. Её производят в кузнице и используют на боевой арене – вместе с "
-"едой – для тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:662
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
 "in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
-"Это Тесак. Он производится в продвинутой кузнице и используется на арене "
-"поединков – вместе с едой – для тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:671
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The helmet is the basic defense tool of a soldier. It is produced in the "
 "manufactory. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
-"Шлем служит базовой защитой для европейских солдат. Его производят в "
-"кузнице. В сочетании с бронёй служит снаряжением для молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:680
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The mask is the medium defense tool of a soldier. It is produced in a "
 "manufactory and used in a battle arena – together with food – to train "
 "soldiers in defense."
 msgstr ""
-"Маска - это средняя защита солдата. Её производят в кузнице и используют на "
-"арене поединков – вместе с едой – для тренировки солдат в защите."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:689
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This steel shield is produced in a manufactory and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
-"Этот стальной щит изготавливается в кузнице и используется на арене "
-"поединков – вместе с едой – для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:698
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These advanced shields are used by the best soldiers of the Europeans. They "
 "are produced in the advanced manufactory and used in the advanced battle "
 "arena – together with food – to train soldiers in defense."
 msgstr ""
-"Эти улучшенные щиты используются лучшими солдатами Европейцев. Они "
-"производятся в продвинутой кузнице и используются на продвинутой арене "
-"поединков – вместе с едой – для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:713
@@ -5300,10 +5258,9 @@ msgstr "Продвинутые доспехи"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/armor_compressed/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Compressed Armor"
-msgstr "улучшенная броня"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/armor_processed/init.lua:8
@@ -5886,67 +5843,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Sawmill"
-#~ msgstr "Продвинутая Лесопилка"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Sawmill"
-#~ msgstr "Базовая лесопилка"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Sawmill"
-#~ msgstr "Обычная Лесопилка"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Toolsmithy"
-#~ msgstr "Продвинутая Инструментальная мастерская"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Toolsmithy"
-#~ msgstr "Базовая Инструментальная мастерская"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Toolsmithy"
-#~ msgstr "Обычная Инструментальная мастерская"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Weaving Mill"
-#~ msgstr "Продвинутая Ткацкая фабрика"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Weaving Mill"
-#~ msgstr "Базовая Ткацкая фабрика"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaving Mill"
-#~ msgstr "Обычная Ткацкая фабрика"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Weaves cloth out of reed."
-#~ msgstr "Ткет Полотно из тростника."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Weaves cloth for buildings and ships’ sails, and armor to equip and train "
-#~ "the soldiers."
-#~ msgstr ""
-#~ "Ткет полотно для зданий и парусов, а также накидки для экипировки и "
-#~ "обучения солдат."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Weaves cloth and armor out of wool and reed."
-#~ msgstr "Ткет полотно и доспехи из шерсти и тростника."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Saws logs to produce planks."
-#~ msgstr "Пилит брёвна на доски"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Forges all the tools that your workers need."
-#~ msgstr "Куёт все инструменты, которые нужны вашим работникам."
-
-#~ msgctxt "ware"
-#~ msgid "Chain Armor"
-#~ msgstr "Кольчуга"
