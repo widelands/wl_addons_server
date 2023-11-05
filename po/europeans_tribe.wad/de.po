@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 03:07+0100\n"
+"POT-Creation-Date: 2023-11-05 03:06+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -774,7 +774,7 @@ msgstr "Kautschukbaum-Plantage"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:66
 msgctxt "europeans_building"
 msgid "planting"
-msgstr ""
+msgstr "Das Pflanzen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:64
@@ -782,7 +782,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:76
 msgctxt "europeans_building"
 msgid "harvesting"
-msgstr ""
+msgstr "Das Ernten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
@@ -806,7 +806,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
 msgctxt "europeans_building"
 msgid "pausing production for waiting for inputs"
-msgstr ""
+msgstr "Produktionspause, während auf Materialien gewartet wird"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:83
@@ -826,7 +826,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "pausing production because output not needed yet"
-msgstr ""
+msgstr "Produktion angehalten, weil Produkt noch nicht benötigt wird"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:93
@@ -1313,7 +1313,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:71
 msgctxt "europeans_building"
 msgid "pausing production because lack of log"
-msgstr ""
+msgstr "Produktion wegen Mangel and Baumstämmen angehalten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:86
@@ -1328,7 +1328,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:96
 msgctxt "europeans_building"
 msgid "pausing production because lack of reed or cotton"
-msgstr ""
+msgstr "Produktion wegen Mangel an Reet oder Baumwolle angehalten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:110
@@ -1343,7 +1343,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:120
 msgctxt "europeans_building"
 msgid "pausing production because lack of iron or coal"
-msgstr ""
+msgstr "Produktion wegen Mangel an Eisen oder Kohle angehalten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing iron for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:135
@@ -1589,7 +1589,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:116
 msgctxt "europeans_building"
 msgid "pausing production because lack of reed"
-msgstr ""
+msgstr "Produktion wegen Mangel and Reet angehalten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:125
@@ -2130,7 +2130,7 @@ msgstr "Tausch von Nahrung gegen Holzmünzen"
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:103
 msgctxt "europeans_building"
 msgid "pausing trading of blackwood"
-msgstr ""
+msgstr "Hartholzhandel angehalten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_trading/scouts_house_advanced/init.lua:8
@@ -3582,7 +3582,7 @@ msgstr "Sie werden in der Sägemühle hergestellt."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:285
 msgctxt "europeans_ware"
 msgid "They are also used by the ferryyard and shipyard."
-msgstr ""
+msgstr "Sie werden auch in der Fährenwerft und Werft benötigt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:295
