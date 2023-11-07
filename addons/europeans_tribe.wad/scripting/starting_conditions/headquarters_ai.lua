@@ -88,7 +88,7 @@ local init = {
     
     -- Delay of 15 min between actions
     local time_min = 15
-    for i = 0, 672 do
+    for i = 0, 1344 do
         doing_ai_stuff (player, i)
                
         sleep(time_min * 60000)

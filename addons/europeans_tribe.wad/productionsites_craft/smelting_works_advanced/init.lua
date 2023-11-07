@@ -53,16 +53,14 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=pausing_production_for_inputs",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
                 "call=pausing_production_for_outputs",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
                 "call=recycle_iron",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
                 "call=recycle_gold",
-                "sleep=duration:15s",
-                "call=smelt_iron",
-                "sleep=duration:15s",
-                "call=smelt_gold",
+                "sleep=duration:20s",
+                "call=smelting_ore",
                 "return=skipped"
             }
         },
@@ -110,30 +108,19 @@ wl.Descriptions():new_productionsite_type {
                 "produce=iron gold"
             }
         },
-        smelt_iron = {
-            -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
-            descname = pgettext("europeans_building", "smelting iron"),
+        smelting_ore = {
+            -- TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
+            descname = pgettext("europeans_building", "smelting ore"),
             actions = {
-                "return=skipped when economy needs gold and not economy needs iron",
-                "return=skipped when economy needs ore and site has scrap_iron:2",
-                "consume=ore:3 coal:3",
-                "playsound=sound/metal/fizzle priority:20% allow_multiple",
+                "return=skipped when site has scrap_iron:2 and economy needs ore",
+                "return=skipped when site has scrap_metal_mixed:2 and economy needs ore",
+                "consume=ore:6 coal:6",
+                "playsound=sound/metal/fizzle priority:15% allow_multiple",
                 "animate=working duration:60s",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=iron:3"
-            }
-        },
-        smelt_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
-            descname = pgettext("europeans_building", "smelting gold"),
-            actions = {
-                "return=skipped when economy needs iron and not economy needs gold",
-                "return=skipped when economy needs ore and site has scrap_metal_mixed:2",
-                "consume=ore:3 coal:3",
-                "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:60s",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=gold:2"
+                "produce=gold:4 iron:2"
             }
         }
     },

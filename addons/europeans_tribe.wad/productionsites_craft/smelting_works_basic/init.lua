@@ -58,12 +58,10 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=pausing_production_for_inputs",
-                "sleep=duration:20s",
+                "sleep=duration:30s",
                 "call=pausing_production_for_outputs",
-                "sleep=duration:20s",
-                "call=smelt_iron",
-                "sleep=duration:20s",
-                "call=smelt_gold",
+                "sleep=duration:30s",
+                "call=smelting_ore",
                 "return=skipped"
             }
         },
@@ -85,30 +83,18 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10m",
             }
         },
-        smelt_gold = {
-            -- TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
-            descname = pgettext("europeans_building", "smelting gold"),
+        smelting_ore = {
+            -- TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
+            descname = pgettext("europeans_building", "smelting ore"),
             actions = {
-                "return=skipped unless economy needs gold or workers need experience",
-                "return=skipped when economy needs iron and not economy needs gold",
-                "consume=ore:2 coal:2",
+                "return=skipped when economy needs coal",
+                "consume=ore:3 coal:3",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=working duration:120s",
-                "playsound=sound/metal/goldping priority:60%",
-                "produce=gold"
-            }
-        },
-        smelt_iron = {
-            -- TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
-            descname = pgettext("europeans_building", "smelting iron"),
-            actions = {
-                "return=skipped unless economy needs iron or workers need experience",
-                "return=skipped when economy needs gold and not economy needs iron",
-                "consume=ore:2 coal:2",
-                "playsound=sound/metal/fizzle priority:20% allow_multiple",
-                "animate=working duration:120s",
+                "animate=working duration:60s",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=iron:2"
+                "animate=working duration:60s",
+                "playsound=sound/metal/goldping priority:60%",
+                "produce=iron:2 gold"
             }
         }
     },

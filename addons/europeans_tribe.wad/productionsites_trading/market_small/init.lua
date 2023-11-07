@@ -102,6 +102,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing trading of blackwood"),
             actions = {
+                "return=skipped when economy needs coin_copper and site has gold:2",
                 "return=skipped when site has blackwood:2",
                 "sleep=duration:15m",
             }
@@ -110,6 +111,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing trading of gold"),
             actions = {
+                "return=skipped when economy needs coin_wood and site has blackwood:2",
                 "return=skipped when site has gold:3",
                 "sleep=duration:15m",
             }

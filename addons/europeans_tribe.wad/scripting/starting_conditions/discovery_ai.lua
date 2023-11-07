@@ -84,7 +84,7 @@ local init = {
     for i = 0, 672 do
         doing_ai_stuff (player, i)
         
-        if (i > 16) and (i <= 288) and (i % 24 == 0) then
+        if (i > 16) and (i <= 1344) and (i % 24 == 0) then
             launch_expeditions(player, {
                 {
                      log = 8,
@@ -112,7 +112,7 @@ local init = {
                      europeans_soldier = 8
                 }
             })
-        elseif (i > 16) and (i <= 288) and (i % 24 == 12) then
+        elseif (i > 16) and (i <= 1344) and (i % 24 == 12) then
             place_ship_random(player, 64)
         end
         

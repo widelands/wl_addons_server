@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 03:07+0100\n"
+"POT-Creation-Date: 2023-11-07 03:06+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -790,9 +790,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:59
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:81
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:70
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:71
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:72
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:66
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:69
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:70
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:64
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:64
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:73
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:73
@@ -813,9 +813,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_advanced/init.lua:68
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_basic/init.lua:89
 #: addons/europeans_tribe.wad/productionsites_craft/charcoal_kiln_normal/init.lua:79
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:82
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:81
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:75
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:80
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:79
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:73
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_advanced/init.lua:74
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_basic/init.lua:82
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:83
@@ -1591,32 +1591,25 @@ msgid "Advanced Smelting Works"
 msgstr "Pokročilá slévárna"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:91
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:89
 msgctxt "europeans_building"
 msgid "recycling iron"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling iron and gold because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:103
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:101
 msgctxt "europeans_building"
 msgid "recycling iron and gold"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:115
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:103
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:96
+#. TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:113
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:88
+#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:82
+#, fuzzy
 msgctxt "europeans_building"
-msgid "smelting iron"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:128
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:90
-#: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:84
-msgctxt "europeans_building"
-msgid "smelting gold"
-msgstr ""
+msgid "smelting ore"
+msgstr "Jednoduchá slévárna"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:8
@@ -2030,12 +2023,12 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:225
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:238
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:66
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:119
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:131
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:143
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:155
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:167
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:179
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:121
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:133
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:145
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:157
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:169
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:181
 #: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:66
 #: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:89
 #: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:101
@@ -2090,7 +2083,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:126
-#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:111
+#: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:112
 msgctxt "europeans_building"
 msgid "pausing trading of gold"
 msgstr ""
