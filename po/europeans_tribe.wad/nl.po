@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-07 03:06+0100\n"
+"POT-Creation-Date: 2023-11-08 03:06+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1620,10 +1620,9 @@ msgstr "recyclen van ijzer en goud"
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:113
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:88
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:82
-#, fuzzy
 msgctxt "europeans_building"
 msgid "smelting ore"
-msgstr "ijzer smelten"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:8
@@ -5872,7 +5871,3 @@ msgstr "Basis Werker"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Normale Werker"
-
-#~ msgctxt "europeans_building"
-#~ msgid "smelting gold"
-#~ msgstr "goud smelten"
