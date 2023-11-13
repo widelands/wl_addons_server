@@ -28,7 +28,8 @@ wl.Descriptions():new_productionsite_type {
             grout = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2
+            scrap_wood = 2,
+            scrap_iron = 1
         },
     },
     buildcost = {
@@ -38,10 +39,16 @@ wl.Descriptions():new_productionsite_type {
     },
     return_on_dismantle = {
         scrap_wood = 3,
-        granite = 2
+        granite = 2,
+        scrap_iron = 1
     },
 
-    aihints = {},
+    aihints = {
+        basic_amount = 1,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 3,
+        normal_ai_limit = 6,
+    },
 
     working_positions = {
         europeans_worker_basic = 1

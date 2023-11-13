@@ -34,7 +34,8 @@ wl.Descriptions():new_productionsite_type {
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             quartz = 1,
-            diamond = 1
+            diamond = 1,
+            scrap_iron = 1
         }
     },
     buildcost = {
@@ -48,13 +49,14 @@ wl.Descriptions():new_productionsite_type {
         scrap_wood = 4,
         granite = 2,
         quartz = 1,
-        diamond = 1
+        diamond = 1,
+        scrap_iron = 1
     },
 
     aihints = {
         very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        --normal_ai_limit = 2,
+        weak_ai_limit = 2,
+        normal_ai_limit = 2,
     },
     
     working_positions = {

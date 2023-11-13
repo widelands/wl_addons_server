@@ -2128,10 +2128,24 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "europeans_market_small_food",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Market
+                purpose = pgettext("europeans_building", "Market building to sale food to other allied tribes.")
+            }
+        },
+        {
             name = "europeans_market_big",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
                 purpose = pgettext("europeans_building", "Market building to sale wares to other allied tribes.")
+            }
+        },
+        {
+            name = "europeans_market_big_food",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
+                purpose = pgettext("europeans_building", "Market building to sale food to other allied tribes.")
             }
         },
         {

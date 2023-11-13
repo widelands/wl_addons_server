@@ -37,7 +37,8 @@ wl.Descriptions():new_productionsite_type {
             granite = 3,
             marble = 4,
             quartz = 1,
-            diamond = 1
+            diamond = 1,
+            scrap_iron = 1
         }
     },
     

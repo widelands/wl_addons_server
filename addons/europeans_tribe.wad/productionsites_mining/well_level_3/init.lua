@@ -32,7 +32,7 @@ wl.Descriptions():new_productionsite_type {
             scrap_wood = 1,
             granite = 1,
             marble = 1,
-            buckets = 1
+            scrap_iron = 1
         },
     },
 

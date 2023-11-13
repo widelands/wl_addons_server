@@ -53,8 +53,28 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
             descname = _"sleeping",
             actions = {
+                "call=pausing_training_for_coins",
+                "call=pausing_training_for_weapons",
                 "sleep=duration:5s",
                 "return=skipped",
+            }
+        },
+        pausing_training_for_coins = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing training because ...
+            descname = pgettext("europeans_building", "pausing training because lack of coins"),
+            actions = {
+                "return=skipped when site has coin_copper:4 and site has coin_silver:4 and site has coin_gold:4",
+                "sleep=duration:10m",
+            }
+        },
+        pausing_training_for_weapons = {
+            -- TRANSLATORS: Completed/Skipped/Did not start pausing training because ...
+            descname = pgettext("europeans_building", "pausing training because lack of weapons, armor and boots"),
+            actions = {
+                "return=skipped when site has armor_processed and site has spear_advanced and site has helmet_mask and site has boots_sturdy",
+                "return=skipped when site has armor_compressed and site has ax_broad and site has shield_steel and site has boots_swift",
+                "return=skipped when site has armor_advanced and site has sword_broad and site has shield_advanced and site has boots_advanced",
+                "sleep=duration:5m",
             }
         },
         upgrade_soldier_health_0 = {
@@ -62,7 +82,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
             actions = {
                 "checksoldier=soldier:health level:0",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:health level:0",
                 "consume=coin_copper armor_processed",
                 "train=soldier:health level:1",
@@ -74,7 +94,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier health from level 1 to level 2"),
             actions = {
                 "checksoldier=soldier:health level:1",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:health level:1",
                 "consume=coin_silver armor_compressed",
                 "train=soldier:health level:2",
@@ -86,7 +106,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier health from level 2 to level 3"),
             actions = {
                 "checksoldier=soldier:health level:2",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:health level:2",
                 "consume=coin_gold armor_advanced",
                 "train=soldier:health level:3",
@@ -98,7 +118,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier attack from level 0 to level 1"),
             actions = {
                 "checksoldier=soldier:attack level:0",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:attack level:0",
                 "consume=coin_copper spear_advanced",
                 "train=soldier:attack level:1",
@@ -110,7 +130,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier attack from level 1 to level 2"),
             actions = {
                 "checksoldier=soldier:attack level:1",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:attack level:1",
                 "consume=coin_silver ax_broad",
                 "train=soldier:attack level:2",
@@ -122,7 +142,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier attack from level 2 to level 3"),
             actions = {
                 "checksoldier=soldier:attack level:2",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:attack level:2",
                 "consume=coin_gold sword_broad",
                 "train=soldier:attack level:3",
@@ -134,7 +154,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier defense from level 0 to level 1"),
             actions = {
                 "checksoldier=soldier:defense level:0",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:defense level:0",
                 "consume=coin_copper helmet_mask",
                 "train=soldier:defense level:1",
@@ -146,7 +166,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier defense from level 1 to level 2"),
             actions = {
                 "checksoldier=soldier:defense level:1",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:defense level:1",
                 "consume=coin_silver shield_steel",
                 "train=soldier:defense level:2",
@@ -158,7 +178,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier defense from level 2 to level 3"),
             actions = {
                 "checksoldier=soldier:defense level:2",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:defense level:2",
                 "consume=coin_gold shield_advanced",
                 "train=soldier:defense level:3",
@@ -170,7 +190,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier evade from level 0 to level 1"),
             actions = {
                 "checksoldier=soldier:evade level:0",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:evade level:0",
                 "consume=coin_copper boots_sturdy",
                 "train=soldier:evade level:1",
@@ -182,7 +202,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier evade from level 1 to level 2"),
             actions = {
                 "checksoldier=soldier:evade level:1",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:evade level:1",
                 "consume=coin_silver boots_swift",
                 "train=soldier:evade level:2",
@@ -194,7 +214,7 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier evade from level 2 to level 3"),
             actions = {
                 "checksoldier=soldier:evade level:2",
-                "sleep=duration:20s",
+                "sleep=duration:15s",
                 "checksoldier=soldier:evade level:2",
                 "consume=coin_gold boots_advanced",
                 "train=soldier:evade level:3",

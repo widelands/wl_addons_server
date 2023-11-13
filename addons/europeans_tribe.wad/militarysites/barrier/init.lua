@@ -36,9 +36,9 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_outpost",
         enhancement_cost = {
-            planks = 2,
-            brick = 2,
-            marble_column = 2,
+            blackwood = 2,
+            cloth = 2,
+            grout = 2,
             quartz = 1
         },
         enhancement_return_on_dismantle = {
@@ -49,9 +49,9 @@ wl.Descriptions():new_militarysite_type {
         },
     },
     buildcost = {
-        blackwood = 3,
-        cloth = 3,
-        grout = 3,
+        log = 3,
+        reed = 3,
+        granite = 3,
         quartz = 1
     },
     return_on_dismantle = {

@@ -71,8 +71,9 @@ wl.Descriptions():new_warehouse_type {
     
     aihints = {},
 
-    vision_range = 24,
+    vision_range = 12,
     heal_per_second = 200,
+    conquers = 6,
 }
 
 pop_textdomain()

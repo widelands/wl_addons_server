@@ -290,8 +290,6 @@ function balance_player_warehouse_wares(player)
                 building:set_warehouse_policies(ware.name, "remove")
             elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 2)) then
                 building:set_warehouse_policies(ware.name, "dontstock")
-            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) and (is_build_material == true) then
-                building:set_warehouse_policies(ware.name, "prefer")
             else
                 building:set_warehouse_policies(ware.name, "normal")
             end
@@ -301,8 +299,6 @@ function balance_player_warehouse_wares(player)
                 building:set_warehouse_policies(ware.name, "remove")
             elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 2)) then
                 building:set_warehouse_policies(ware.name, "dontstock")
-            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) and (is_build_material == true) then
-                building:set_warehouse_policies(ware.name, "prefer")
             else
                 building:set_warehouse_policies(ware.name, "normal")
             end
@@ -312,8 +308,6 @@ function balance_player_warehouse_wares(player)
                 building:set_warehouse_policies(ware.name, "remove")
             elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 2)) then
                 building:set_warehouse_policies(ware.name, "dontstock")
-            elseif (building:get_wares(ware.name) < building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name)) and (is_build_material == true) then
-                building:set_warehouse_policies(ware.name, "prefer")
             else
                 building:set_warehouse_policies(ware.name, "normal")
             end

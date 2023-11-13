@@ -38,11 +38,10 @@ wl.Descriptions():new_productionsite_type {
     },
     
     aihints = {
-          very_weak_ai_limit = 1,
-          weak_ai_limit = 2,
-          normal_ai_limit = 4,
-          prohibited_till = 3600,
-          forced_after = 7200
+        basic_amount = 1,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 3,
+        normal_ai_limit = 4,
     },
 
     working_positions = {
@@ -120,9 +119,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "return=skipped when economy needs cotton and not economy needs coin_wood",
                 "return=skipped unless site has cotton:4",
                 "return=skipped unless site has blackwood",
-                "consume=cotton:4 blackwood",
+                "consume=cotton:3 blackwood",
                 "animate=working duration:30s",
                 "produce=coin_wood:4",
                 "sleep=duration:30s",
@@ -132,9 +132,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "return=skipped when economy needs cotton and not economy needs coin_copper",
                 "return=skipped unless site has cotton:4",
                 "return=skipped unless site has gold",
-                "consume=cotton:4 gold",
+                "consume=cotton:3 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",
@@ -144,9 +145,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "return=skipped when economy needs reed and not economy needs coin_wood",
                 "return=skipped unless site has reed:4",
                 "return=skipped unless site has blackwood",
-                "consume=reed:4 blackwood",
+                "consume=reed:3 blackwood",
                 "animate=working duration:30s",
                 "produce=coin_wood:4",
                 "sleep=duration:30s",
@@ -156,9 +158,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "return=skipped when economy needs reed and not economy needs coin_copper",
                 "return=skipped unless site has reed:4",
                 "return=skipped unless site has gold",
-                "consume=reed:4 gold",
+                "consume=reed:3 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",
@@ -168,9 +171,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "return=skipped when economy needs rubber and not economy needs coin_wood",
                 "return=skipped unless site has rubber:4",
                 "return=skipped unless site has blackwood",
-                "consume=rubber:4 blackwood",
+                "consume=rubber:3 blackwood",
                 "animate=working duration:30s",
                 "produce=coin_wood:4",
                 "sleep=duration:30s",
@@ -180,9 +184,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
+                "return=skipped when economy needs rubber and not economy needs coin_copper",
                 "return=skipped unless site has rubber:4",
                 "return=skipped unless site has gold",
-                "consume=rubber:4 gold",
+                "consume=rubber:3 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",

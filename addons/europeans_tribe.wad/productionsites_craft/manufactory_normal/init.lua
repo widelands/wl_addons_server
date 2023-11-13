@@ -32,7 +32,8 @@ wl.Descriptions():new_productionsite_type {
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
-            marble = 3
+            marble = 3,
+            scrap_iron = 1
         }
     },
     
