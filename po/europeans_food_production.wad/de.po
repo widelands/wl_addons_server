@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 03:06+0100\n"
+"POT-Creation-Date: 2023-11-14 03:06+0100\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -1370,10 +1370,9 @@ msgstr "Goldhandel angehalten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Small Market (Selling Food)"
-msgstr "Kleiner Markt"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:75
@@ -3044,10 +3043,9 @@ msgstr "Marktgebäude um Waren an andere Stämme zu verkaufen."
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2134
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2148
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale food to other allied tribes."
-msgstr "Marktgebäude um Waren an andere Stämme zu verkaufen."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2155
@@ -4318,7 +4316,3 @@ msgstr "Normaler Bauer"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Händler"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Big Market"
-#~ msgstr "Großer Markt"

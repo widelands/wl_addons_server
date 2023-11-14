@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 03:06+0100\n"
+"POT-Creation-Date: 2023-11-14 03:06+0100\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1301,7 +1301,7 @@ msgstr "Möhlen"
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:8
 msgctxt "europeans_building"
 msgid "Big Market (Selling Food)"
-msgstr ""
+msgstr "Groter Markt (verkoopt Spiesen)"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_big/init.lua:71
@@ -1372,10 +1372,9 @@ msgstr "dat Hanneln vun Gold antohollen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Small Market (Selling Food)"
-msgstr "Lütter Markt"
+msgstr "Lütter Markt (verkoopt Spiesen)"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_food_production.wad/productionsites_trading/market_small/init.lua:75
@@ -3014,10 +3013,9 @@ msgstr "Markthuus, waar man Waren an anner verbündt Völkers verkopen kann."
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2134
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2148
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale food to other allied tribes."
-msgstr "Markthuus, waar man Waren an anner verbündt Völkers verkopen kann."
+msgstr "Markthuus, waar man Spiesen an anner verbündt Völkers verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2155
@@ -4277,7 +4275,3 @@ msgstr "Goder Buur"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Hannelsmann"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Big Market"
-#~ msgstr "Groter Markt"
