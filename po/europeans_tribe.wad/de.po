@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-14 03:06+0100\n"
+"POT-Creation-Date: 2023-11-15 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -1305,7 +1305,7 @@ msgstr "Normale Köhlerei"
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Big Manufactory"
-msgstr ""
+msgstr "Verbesserte große Manufaktur"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:76
@@ -1321,7 +1321,7 @@ msgstr "Produktion wegen Mangel and Baumstämmen angehalten"
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:82
 msgctxt "europeans_building"
 msgid "processing log to create tools and weapons"
-msgstr ""
+msgstr "Die Verarbeitung von Stämmen zur Herstellung von Werkzeugen und Waffen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:101
@@ -1336,6 +1336,8 @@ msgstr "Produktion wegen Mangel an Reet oder Baumwolle angehalten"
 msgctxt "europeans_building"
 msgid "processing reed or cotton to create tools and armor"
 msgstr ""
+"Die Verarbeitung von Reet oder Baumwolle zur Herstellung von Werkzeugen und "
+"Rüstung"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:127
@@ -1351,7 +1353,7 @@ msgstr "Produktion wegen Mangel an Eisen oder Kohle angehalten"
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:129
 msgctxt "europeans_building"
 msgid "processing iron to create tools and weapons"
-msgstr ""
+msgstr "Die Verarbeitung von Eisen zur Herstellung von Werkzeugen und Waffen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:158
@@ -1583,7 +1585,7 @@ msgstr "Das Schmieden eines Breitschwertes"
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Big Manufactory"
-msgstr ""
+msgstr "Einfache große Manufaktur"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:119
@@ -1595,13 +1597,13 @@ msgstr "Produktion wegen Mangel and Reet angehalten"
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:128
 msgctxt "europeans_building"
 msgid "processing reed to create tools and armor"
-msgstr ""
+msgstr "Die Verarbeitung von Reet zur Herstellung von Werkzeugen und Rüstung"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Big Manufactory"
-msgstr ""
+msgstr "Normale große Manufaktur"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:8
@@ -1627,7 +1629,7 @@ msgstr "Das Rückgewinnen von Eisen und Gold"
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "smelting ore"
-msgstr ""
+msgstr "Das Schmelzen von Erz"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:8
@@ -2509,7 +2511,7 @@ msgstr "Das Schlafen"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:64
 msgctxt "europeans_building"
 msgid "pausing training because lack of coins"
-msgstr ""
+msgstr "Ausbildungspause wegen Mangel an Münzen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing training because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:113
@@ -2518,7 +2520,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:72
 msgctxt "europeans_building"
 msgid "pausing training because lack of weapons, armor and boots"
-msgstr ""
+msgstr "Ausbildungspause wegen Mangel an Waffen, Rüstung und Stiefeln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:121
@@ -3683,6 +3685,8 @@ msgid ""
 "It is produced by the smelting works. Some valuable buildings need gold to "
 "be built."
 msgstr ""
+"Wird vom Hochofen hergesetellt. Manche wertvolle Gebäude benötigen Gold zum "
+"Bau."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wood Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:381
@@ -3870,6 +3874,9 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the big manufactory. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Basisrüstung für Soldaten der Europäer. Sie wird in der großen Manufaktur "
+"hergestellt. In Kombination mit einem hölzernen Speer ist sie die Ausrüstung "
+"für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:569
@@ -3890,6 +3897,9 @@ msgid ""
 "by a tailor and used in a battle arena to protect soldiers with additional "
 "health points."
 msgstr ""
+"Die schwere Lederrüstung ist die mittlere Rüstung der Soldaten der Europäer. "
+"Sie wird von einem Schneider hergestellt und in der Kampfarena benötigt, um "
+"die Soldaten durch zusätzliche Lebenspunkte zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:587
@@ -3898,6 +3908,9 @@ msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
 "arena to protect soldiers with additional health points."
 msgstr ""
+"Der verbesserte Harnisch wird in einer einfachen Manufaktur hergestellt und "
+"in der Kampfarena benötigt, um die Soldaten durch zusätzliche Lebenspunkte "
+"zu schützen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:596
@@ -3953,6 +3966,9 @@ msgid ""
 "produced in the manufactory. In combination with armor, it is the equipment "
 "to fit out young soldiers."
 msgstr ""
+"Dieser Holzspeer ist die Grundwaffe des europäischen Militärsystems. Er wird "
+"in der einfachen Manufaktur hergestellt. Zusammen mit einem Harnisch ist er "
+"die Ausrüstung für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:644
@@ -3962,6 +3978,9 @@ msgid ""
 "and used in a battle arena – together with food – to train soldiers in "
 "attack."
 msgstr ""
+"Dies ist ein verbesserter Speer mit Stahlspitze. Er wird in der einfachen "
+"Manufaktur hergestellt und in der Kampfarena – zusammen mit Nahrung – "
+"benötigt, um die Soldaten im Angriff auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:653
@@ -3970,6 +3989,9 @@ msgid ""
 "This is an broad ax. It is produced in a manufactory and used in a battle "
 "arena – together with food – to train soldiers in attack."
 msgstr ""
+"Dies ist eine Breitaxt. Sie wird in der einfachen Manufaktur hergestellt und "
+"in der Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten im "
+"Angriff auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:662
@@ -3978,6 +4000,9 @@ msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
 "in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
+"Dies ist ein Breitschwert. Es wird in der einfachen Manufaktur hergestellt "
+"und in der Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten im "
+"Angriff auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:671
@@ -3987,6 +4012,9 @@ msgid ""
 "manufactory. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
+"Der Helm ist die Grundverteidigung eines Soldaten. Er wird in einfachen "
+"Manufakturen hergestellt. Zusammen mit einem Harnisch ist er die "
+"Grundausrüstung für junge Soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:680
@@ -3996,6 +4024,9 @@ msgid ""
 "manufactory and used in a battle arena – together with food – to train "
 "soldiers in defense."
 msgstr ""
+"Die Maske ist die mittlere Verteidigungsausrüstung eines Soldaten. Sie wird "
+"in der einfachen Manufaktur hergestellt und in der Kampfarena – zusammen mit "
+"Nahrung – benötigt, um die Soldaten in Verteidigung auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:689
@@ -4004,6 +4035,9 @@ msgid ""
 "This steel shield is produced in a manufactory and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
+"Dieser Stahlschild wird in der einfachen Manufaktur hergestellt und in der "
+"Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten in "
+"Verteidigung auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:698
@@ -4013,6 +4047,10 @@ msgid ""
 "are produced in the advanced manufactory and used in the advanced battle "
 "arena – together with food – to train soldiers in defense."
 msgstr ""
+"Diese verbesserten Schilde werden von den besten Soldaten der Europäer "
+"benutzt. Sie werden in der verbesserten Manufaktur hergestellt und in der "
+"Kampfarena – zusammen mit Nahrung – benötigt, um die Soldaten in "
+"Verteidigung auszubilden."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:713
@@ -4665,6 +4703,8 @@ msgid ""
 "Large factory that produces complex wares such as tools, weapons, armor, "
 "clothing, shoes or building materials from simple raw materials."
 msgstr ""
+"Große Manufaktur, die komplexe Waren wie Werkzeuge, Waffen, Rüstung, "
+"Kleidung, Schuhe oder Baumaterialien aus einfachen Rohmaterialien herstellt."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Recruitement Center
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1869
@@ -5312,7 +5352,7 @@ msgstr "Verbesserter Harnisch"
 #: addons/europeans_tribe.wad/tribes/wares/armor_compressed/init.lua:8
 msgctxt "ware"
 msgid "Compressed Armor"
-msgstr ""
+msgstr "Schwere Lederrüstung"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/armor_processed/init.lua:8
