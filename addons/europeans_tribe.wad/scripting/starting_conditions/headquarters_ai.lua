@@ -93,6 +93,7 @@ local init = {
                
         sleep(time_min * 60000)
     end
+    reset_player_warehouse_policy(player)
 end
 }
 

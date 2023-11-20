@@ -46,15 +46,13 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=pausing_production_for_inputs",
-                "sleep=duration:10s",
-                "call=pausing_production_for_outputs",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "call=produce_boots_wooden",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "call=produce_boots_sturdy",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "call=produce_boots_swift",
-                "sleep=duration:10s",
+                "sleep=duration:15s",
                 "call=produce_boots_advanced",
                 "return=skipped"
             }
@@ -67,21 +65,11 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5m",
             }
         },
-        pausing_production_for_outputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
-            actions = {
-                "return=skipped when economy needs boots_wooden",
-                "return=skipped when economy needs boots_sturdy",
-                "return=skipped when economy needs boots_swift",
-                "return=skipped when economy needs boots_advanced",
-                "sleep=duration:30m",
-            }
-        },
         produce_boots_wooden = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
             descname = pgettext("europeans_building", "making a pair of wooden boots"),
             actions = {
+                "return=skipped unless economy needs boots_wooden or workers need experience",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_wooden",
                 "return=skipped when economy needs boots_swift and not economy needs boots_wooden",
                 "return=skipped when economy needs boots_advanced and not economy needs boots_wooden",
@@ -96,6 +84,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
+                "return=skipped unless economy needs boots_sturdy or workers need experience",
                 "return=skipped when economy needs boots_swift and not economy needs boots_sturdy",
                 "return=skipped when economy needs boots_advanced and not economy needs boots_sturdy",
                 "consume=planks cloth:2",
@@ -108,6 +97,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
             descname = pgettext("europeans_building", "making swift boots"),
             actions = {
+                "return=skipped unless economy needs boots_swift or workers need experience",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_swift",
                 "return=skipped when economy needs boots_advanced and not economy needs boots_swift",
                 "consume=planks leather cloth:2",
@@ -120,6 +110,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
             descname = pgettext("europeans_building", "making advanced boots"),
             actions = {
+                "return=skipped unless economy needs boots_advanced or workers need experience",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_advanced",
                 "return=skipped when economy needs boots_swift and not economy needs boots_advanced",
                 "consume=planks leather:2 cloth:2",

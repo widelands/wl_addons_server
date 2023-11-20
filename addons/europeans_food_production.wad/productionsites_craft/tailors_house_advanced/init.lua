@@ -60,8 +60,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=pausing_production_for_inputs",
                 "sleep=duration:10s",
-                "call=pausing_production_for_outputs",
-                "sleep=duration:10s",
                 "call=produce_armor_wooden",
                 "sleep=duration:10s",
                 "call=produce_armor_processed",
@@ -80,21 +78,11 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5m",
             }
         },
-        pausing_production_for_outputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
-            actions = {
-                "return=skipped when economy needs armor_wooden",
-                "return=skipped when economy needs armor_processed",
-                "return=skipped when economy needs armor_compressed",
-                "return=skipped when economy needs armor_advanced",
-                "sleep=duration:30m",
-            }
-        },
         produce_armor_wooden = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
+                "return=skipped unless economy needs armor_wooden or workers need experience",
                 "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_wooden",
@@ -109,6 +97,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
+                "return=skipped unless economy needs armor_processed or workers need experience",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_processed",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_processed",
                 "consume=armor:2 cloth",
@@ -121,6 +110,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of chain armor"),
             actions = {
+                "return=skipped unless economy needs armor_compressed or workers need experience",
                 "return=skipped when economy needs armor_processed and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_compressed",
                 "consume=armor:2 leather",
@@ -132,6 +122,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of advanced armor"),
             actions = {
+                "return=skipped unless economy needs armor_advanced or workers need experience",
                 "return=skipped when economy needs armor_processed and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_advanced",
                 "consume=armor:2 leather:2",

@@ -58,8 +58,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=pausing_production_for_inputs",
                 "sleep=duration:10s",
-                "call=pausing_production_for_outputs",
-                "sleep=duration:10s",
                 "call=produce_buckets",
                 "call=produce_basket",
                 "sleep=duration:10s",
@@ -89,27 +87,11 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:5m",
             }
         },
-        pausing_production_for_outputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
-            actions = {
-                "return=skipped when economy needs basket",
-                "return=skipped when economy needs buckets",
-                "return=skipped when economy needs felling_ax",
-                "return=skipped when economy needs fire_tongs",
-                "return=skipped when economy needs hammer",
-                "return=skipped when economy needs needles",
-                "return=skipped when economy needs pick",
-                "return=skipped when economy needs saw",
-                "return=skipped when economy needs scythe",
-                "return=skipped when economy needs shovel",
-                "sleep=duration:60m",
-            }
-        },
         produce_basket = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
             descname = pgettext("europeans_building", "making baskets"),
             actions = {
+                "return=skipped unless economy needs basket or workers need experience",
                 "return=skipped when economy needs buckets and not economy needs basket",
                 "return=skipped when economy needs felling_ax and not economy needs basket",
                 "return=skipped when economy needs fire_tongs and not economy needs basket",
@@ -129,6 +111,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
             descname = pgettext("europeans_building", "making buckets"),
             actions = {
+                "return=skipped unless economy needs buckets or workers need experience",
                 "return=skipped when economy needs basket and not economy needs buckets",
                 "return=skipped when economy needs felling_ax and not economy needs buckets",
                 "return=skipped when economy needs fire_tongs and not economy needs buckets",
@@ -148,6 +131,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
             descname = pgettext("europeans_building", "making felling axes"),
             actions = {
+                "return=skipped unless economy needs felling_ax or workers need experience",
                 "return=skipped when economy needs basket and not economy needs felling_ax",
                 "return=skipped when economy needs buckets and not economy needs felling_ax",
                 "return=skipped when economy needs fire_tongs and not economy needs felling_ax",
@@ -167,6 +151,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
             descname = pgettext("europeans_building", "making fire tongs"),
             actions = {
+                "return=skipped unless economy needs fire_tongs or workers need experience",
                 "return=skipped when economy needs basket and not economy needs fire_tongs",
                 "return=skipped when economy needs buckets and not economy needs fire_tongs",
                 "return=skipped when economy needs felling_ax and not economy needs fire_tongs",
@@ -186,6 +171,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
             descname = pgettext("europeans_building", "making hammers"),
             actions = {
+                "return=skipped unless economy needs hammer or workers need experience",
                 "return=skipped when economy needs basket and not economy needs hammer",
                 "return=skipped when economy needs buckets and not economy needs hammer",
                 "return=skipped when economy needs felling_ax and not economy needs hammer",
@@ -205,6 +191,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making needles because ...
             descname = pgettext("europeans_building", "making needles"),
             actions = {
+                "return=skipped unless economy needs needles or workers need experience",
                 "return=skipped when economy needs basket and not economy needs needles",
                 "return=skipped when economy needs buckets and not economy needs needles",
                 "return=skipped when economy needs felling_ax and not economy needs needles",
@@ -224,6 +211,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
             descname = pgettext("europeans_building", "making picks"),
             actions = {
+                "return=skipped unless economy needs pick or workers need experience",
                 "return=skipped when economy needs basket and not economy needs pick",
                 "return=skipped when economy needs buckets and not economy needs pick",
                 "return=skipped when economy needs felling_ax and not economy needs pick",
@@ -243,6 +231,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
             descname = pgettext("europeans_building", "making saws"),
             actions = {
+                "return=skipped unless economy needs saw or workers need experience",
                 "return=skipped when economy needs basket and not economy needs saw",
                 "return=skipped when economy needs buckets and not economy needs saw",
                 "return=skipped when economy needs felling_ax and not economy needs saw",
@@ -262,6 +251,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
             descname = pgettext("europeans_building", "making sycthes"),
             actions = {
+                "return=skipped unless economy needs scythe or workers need experience",
                 "return=skipped when economy needs basket and not economy needs scythe",
                 "return=skipped when economy needs buckets and not economy needs scythe",
                 "return=skipped when economy needs felling_ax and not economy needs scythe",
@@ -281,6 +271,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
             descname = pgettext("europeans_building", "making shovels"),
             actions = {
+                "return=skipped unless economy needs shovel or workers need experience",
                 "return=skipped when economy needs basket and not economy needs shovel",
                 "return=skipped when economy needs buckets and not economy needs shovel",
                 "return=skipped when economy needs felling_ax and not economy needs shovel",

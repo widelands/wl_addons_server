@@ -81,7 +81,7 @@ local init = {
     
     -- Delay of 15 min between actions
     local time_min = 15
-    for i = 0, 672 do
+    for i = 0, 1344 do
         doing_ai_stuff (player, i)
         
         if (i > 16) and (i <= 1344) and (i % 24 == 0) then
@@ -118,6 +118,7 @@ local init = {
         
         sleep(time_min * 60000)
     end
+    reset_player_warehouse_policy(player)
 end
 }
 

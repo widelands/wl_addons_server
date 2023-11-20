@@ -282,34 +282,37 @@ function balance_player_warehouse_wares(player)
     local map = game.map
     local tribe = player.tribe
     
-    for i, ware in ipairs(tribe.wares) do
-        local ware_description = game:get_ware_description(ware.name)
-        local is_build_material = ware_description:is_construction_material(tribe.name)
-        for k, building in ipairs(player:get_buildings("europeans_headquarters")) do
-            if (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.9)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 8)) then
-                building:set_warehouse_policies(ware.name, "remove")
-            elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 2)) then
-                building:set_warehouse_policies(ware.name, "dontstock")
-            else
-                building:set_warehouse_policies(ware.name, "normal")
-            end
+    local warehouse_types = {}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "warehouse") then
+            table.insert(warehouse_types, building.name)
         end
-        for k, building in ipairs(player:get_buildings("europeans_warehouse")) do
-            if (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.9)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 8)) then
-                building:set_warehouse_policies(ware.name, "remove")
-            elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 2)) then
-                building:set_warehouse_policies(ware.name, "dontstock")
-            else
-                building:set_warehouse_policies(ware.name, "normal")
-            end
-        end
-        for k, building in ipairs(player:get_buildings("europeans_port")) do
-            if (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.9)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 8)) then
-                building:set_warehouse_policies(ware.name, "remove")
-            elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * 0.5)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * 2)) then
-                building:set_warehouse_policies(ware.name, "dontstock")
-            else
-                building:set_warehouse_policies(ware.name, "normal")
+    end
+    
+    local warehouses = {}
+    for i, building_name in ipairs(warehouse_types) do
+        warehouses = array_combine(warehouses, player:get_buildings(building_name))
+    end
+      
+    if #warehouses > 1 then
+        local remove_threshold = 4 + (#warehouses / 2)
+        local dontstock_threshold = 1 + (#warehouses / 2)
+        
+        local remove_percent = 0.25 + (1 / #warehouses)
+        local dontstock_percent = 0.05 + (1 / #warehouses)
+        
+        for i, ware in ipairs(tribe.wares) do
+            local ware_description = game:get_ware_description(ware.name)
+            local is_build_material = ware_description:is_construction_material(tribe.name)
+
+            for j, building in ipairs(warehouses) do
+                if (building:get_wares(ware.name) > (player:get_wares(ware.name) * remove_percent)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * remove_threshold)) then
+                    building:set_warehouse_policies(ware.name, "remove")
+                elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * dontstock_percent)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * dontstock_threshold)) then
+                    building:set_warehouse_policies(ware.name, "dontstock")
+                else
+                    building:set_warehouse_policies(ware.name, "normal")
+                end
             end
         end
     end
@@ -320,32 +323,36 @@ function balance_player_warehouse_workers(player)
     local map = game.map
     local tribe = player.tribe
     
-    for i, worker in ipairs(tribe.workers) do
-        for k, building in ipairs(player:get_buildings("europeans_headquarters")) do
-            if (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.9)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * 8)) then
-                building:set_warehouse_policies(worker.name, "dontstock")
-            elseif (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.5)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * 2)) then
-                building:set_warehouse_policies(worker.name, "dontstock")
-            else
-                building:set_warehouse_policies(worker.name, "normal")
-            end
+    local warehouse_types = {}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "warehouse") then
+            table.insert(warehouse_types, building.name)
         end
-        for k, building in ipairs(player:get_buildings("europeans_warehouse")) do
-            if (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.9)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * 8)) then
-                building:set_warehouse_policies(worker.name, "dontstock")
-            elseif (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.5)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * 2)) then
-                building:set_warehouse_policies(worker.name, "dontstock")
-            else
-                building:set_warehouse_policies(worker.name, "normal")
-            end
-        end
-        for k, building in ipairs(player:get_buildings("europeans_port")) do
-            if (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.9)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * 8)) then
-                building:set_warehouse_policies(worker.name, "dontstock")
-            elseif (building:get_workers(worker.name) > (player:get_workers(worker.name) * 0.5)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * 2)) then
-                building:set_warehouse_policies(worker.name, "dontstock")
-            else
-                building:set_warehouse_policies(worker.name, "normal")
+    end
+    
+    local warehouses = {}
+    for i, building_name in ipairs(warehouse_types) do
+        warehouses = array_combine(warehouses, player:get_buildings(building_name))
+    end
+    
+    for i, building_name in ipairs(warehouse_types) do
+        warehouses = array_combine(warehouses, player:get_buildings(building_name))
+    end
+    
+    if #warehouses > 1 then
+        local remove_threshold = 4 + (#warehouses / 2)
+        local dontstock_threshold = 1 + (#warehouses / 2)
+        
+        local remove_percent = 0.25 + (1 / #warehouses)
+        local dontstock_percent = 0.05 + (1 / #warehouses)
+        
+        for i, worker in ipairs(tribe.workers) do
+            for j, building in ipairs(warehouses) do
+                if (building:get_workers(worker.name) > (player:get_workers(worker.name) * dontstock_percent)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * dontstock_threshold)) then
+                    building:set_warehouse_policies(worker.name, "dontstock")
+                else
+                    building:set_warehouse_policies(worker.name, "normal")
+                end
             end
         end
     end
@@ -380,13 +387,13 @@ function reset_player_warehouse_policy(player)
     end
 end
 
-function change_idle_stopped_buildings(player, productivity_threshold)
+function change_idle_stopped_buildings(player, productivity_percent)
     local game = wl.Game()
     N = (get_build_id():find("1.0") ~= 1)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and (building.productivity < productivity_threshold or building.is_stopped == true) then
+          if tbuilding.type_name == "productionsite" and (building.productivity < productivity_percent or building.is_stopped == true) then
              print (tbuilding.name, building.productivity)
              if N then
                  building:enhance(true)
@@ -414,6 +421,16 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_coalmine_level_1", "europeans_ironmine_level_1", "europeans_goldmine_level_1", }
         player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_stonemasons_house_basic", "europeans_smelting_works_basic", "europeans_manufactory_basic", }
         player:allow_buildings{"europeans_scouts_house_basic", "europeans_recruitement_center_basic", "europeans_trainingscamp_basic", "europeans_battlearena_basic", }
+        
+        if (map.waterway_max_length > 0) then
+            player:allow_buildings{"europeans_ferry_yard_basic", }
+        end
+        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+            player:allow_buildings{"europeans_shipyard_basic", "europeans_port", }
+            place_ship_random(player, 64)
+        else
+            player:allow_buildings{"europeans_terraformers_house_basic", "europeans_warehouse", }
+        end
     end
     if (increment == 8) then
         player:allow_buildings{"europeans_castle", "europeans_market_big", }
@@ -425,7 +442,16 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", }
         player:allow_buildings{"europeans_smelting_works_normal", "europeans_manufactory_normal", "europeans_scouts_house_normal", "europeans_recruitement_center_normal", }
         player:allow_buildings{"europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
-
+        
+        if (map.waterway_max_length > 0) then
+            player:allow_buildings{"europeans_ferry_yard_normal", }
+        end
+        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+            player:allow_buildings{"europeans_shipyard_normal", }
+            place_ship_random(player, 64)
+        else
+            player:allow_buildings{"europeans_terraformers_house_normal", }
+        end
     end
     if (increment == 12) then
         player:allow_buildings{"europeans_lumberjacks_house_advanced", "europeans_quarry_advanced", }
@@ -437,57 +463,31 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_smelting_works_advanced", "europeans_manufactory_advanced", "europeans_recruitement_center_advanced", }
         player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_battlearena_level_2", "europeans_battlearena_level_3", }
         player:allow_buildings{"europeans_scouts_house_advanced", "europeans_trading_post", }
-
+        
+        if (map.waterway_max_length > 0) then
+            player:allow_buildings{"europeans_ferry_yard_advanced", }
+        end
+        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+            player:allow_buildings{"europeans_shipyard_advanced", }
+            place_ship_random(player, 64)
+        else
+            player:allow_buildings{"europeans_terraformers_house_advanced", }
+        end
     end
     if (increment == 16) then
         player:allow_buildings{"europeans_store_small", "europeans_store_big", }
-    end
-    
-    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (increment == 4) then
-        player:allow_buildings{"europeans_port", }
-    elseif (increment == 4) then
-        player:allow_buildings{"europeans_warehouse", "europeans_terraformers_house_basic", }
-    end
-    
-    if (map.waterway_max_length > 0) and (increment == 8) then
-        player:allow_buildings{"europeans_ferry_yard_basic", }
-    end
-    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (increment == 8) then
-        player:allow_buildings{"europeans_shipyard_basic", }
-        place_ship_random(player, 64)
-    end
-    
-    if (map.waterway_max_length > 0) and (increment == 12) then
-        player:allow_buildings{"europeans_ferry_yard_normal", }
-    end
-    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (increment == 12) then
-        player:allow_buildings{"europeans_shipyard_normal", }
-        place_ship_random(player, 64)
-    elseif (increment == 8) then
-        player:allow_buildings{"europeans_terraformers_house_normal", }
-    end
-    
-    if (map.waterway_max_length > 0) and (increment == 12) then
-        player:allow_buildings{"europeans_ferry_yard_advanced", }
-    end
-    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) and (increment == 16) then
-        player:allow_buildings{"europeans_shipyard_advanced", }
-        place_ship_random(player, 64)
-    elseif (increment == 16) then
-        player:allow_buildings{"europeans_headquarters", "europeans_terraformers_house_advanced", }
-    end
-
-    if (increment == 16) then
-        player:allow_buildings{"europeans_tower_small", "europeans_tower_high", "europeans_outpost", "europeans_fortress", }
-        player:allow_buildings{"europeans_sentry", "europeans_advanced_tower", "europeans_advanced_barrier", "europeans_advanced_castle", }
+        player:allow_buildings("all")
+        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+            player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced", "europeans_warehouse", "europeans_headquarters", }
+        else
+            player:forbid_buildings{"europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced", "europeans_port", }
+        end
     end
     
    -- Experimental actions
-    if (increment >= 16) and (increment % 8 < 4) then
+    if (increment >= 16) then
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
-    else
-        reset_player_warehouse_policy(player)
     end
     
     if (increment >= 16) and (increment % 4 == 0) then

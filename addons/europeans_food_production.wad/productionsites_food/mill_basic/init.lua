@@ -62,8 +62,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=pausing_production_for_inputs",
                 "sleep=duration:30s",
-                "call=pausing_production_for_outputs",
-                "sleep=duration:30s",
                 "call=produce_mixed_flour",
                 "return=skipped"
             }
@@ -74,14 +72,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when site has rye:2 and site has wheat:2",
                 "sleep=duration:5m",
-            }
-        },
-        pausing_production_for_outputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
-            actions = {
-                "return=skipped when economy needs flour",
-                "sleep=duration:10m",
             }
         },
         produce_mixed_flour = {

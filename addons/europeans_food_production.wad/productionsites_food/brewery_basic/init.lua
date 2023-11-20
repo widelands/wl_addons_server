@@ -59,8 +59,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=pausing_production_for_inputs",
                 "sleep=duration:30s",
-                "call=pausing_production_for_outputs",
-                "sleep=duration:30s",
                 "call=brew_beer",
                 "return=skipped"
             }
@@ -71,14 +69,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when site has water:2 and site has barley:2",
                 "sleep=duration:5m",
-            }
-        },
-        pausing_production_for_outputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
-            actions = {
-                "return=skipped when economy needs beer",
-                "sleep=duration:10m",
             }
         },
         brew_beer = {

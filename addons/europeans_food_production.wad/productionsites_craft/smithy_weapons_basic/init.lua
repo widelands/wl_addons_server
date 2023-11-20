@@ -75,8 +75,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=pausing_production_for_inputs",
                 "sleep=duration:15s",
-                "call=pausing_production_for_outputs",
-                "sleep=duration:15s",
                 "call=produce_helmet_wooden",
                 "sleep=duration:15s",
                 "call=produce_spear_wooden",
@@ -94,17 +92,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when site has log:4 and site has iron:2 and site has coal:2",
                 "return=skipped when economy needs iron", -- for statistical reason
                 "sleep=duration:5m",
-            }
-        },
-        pausing_production_for_outputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
-            actions = {
-                "return=skipped when economy needs helmet_wooden",
-                "return=skipped when economy needs helmet_mask",
-                "return=skipped when economy needs spear_wooden",
-                "return=skipped when economy needs spear_advanced",
-                "sleep=duration:10m",
             }
         },
         produce_helmet_wooden = {
