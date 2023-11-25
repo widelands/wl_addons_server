@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# C138, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-22 03:05+0200\n"
+"POT-Creation-Date: 2023-11-25 03:06+0100\n"
 "PO-Revision-Date: 2023-07-19 18:08+0000\n"
+"Last-Translator: C138, 2023\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -20,35 +24,39 @@ msgstr ""
 
 #: addons/editor_swap_terrains.wad/addon:2
 msgid "Editor: Swap Terrains"
-msgstr ""
+msgstr "Éditeur : permutation de terrains"
 
 #: addons/editor_swap_terrains.wad/addon:3
 msgid ""
 "A plugin for the editor to easily replace or swap two terrain types globally."
 msgstr ""
+"Une extension de l'éditeur pour remplacer ou permuter deux types de terrains "
+"globalement."
 
 #: addons/editor_swap_terrains.wad/init.lua:8
 #: addons/editor_swap_terrains.wad/show_window.lua:24
 msgid "Swap Terrains"
-msgstr ""
+msgstr "Permutation de terrains"
 
 #: addons/editor_swap_terrains.wad/init.lua:9
 msgid "Globally exchange two terrains with each other"
-msgstr ""
+msgstr "Échange globale de deux terrains entre eux"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:77
 msgid "Replace"
-msgstr ""
+msgstr "Remplace"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:78
 msgid ""
 "Globally replace all occurrences of the left terrain with the right terrain"
 msgstr ""
+"Remplace globalement toutes les occurrences du terrain de gauche par le "
+"terrain de droite"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:90
 msgid "Swap"
-msgstr ""
+msgstr "Permute"
 
 #: addons/editor_swap_terrains.wad/show_window.lua:91
 msgid "Globally swap the two selected terrains"
-msgstr ""
+msgstr "Permute globalement les deux terrains sélectionnés"
