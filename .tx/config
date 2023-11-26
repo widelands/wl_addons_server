@@ -139,6 +139,22 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:artifacts-defended-tribe-wad]
+file_filter            = po/artifacts-defended-tribe.wad/<lang>.po
+source_file            = po/artifacts-defended-tribe.wad/artifacts-defended-tribe.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:artifacts-defended-wad]
+file_filter            = po/artifacts-defended.wad/<lang>.po
+source_file            = po/artifacts-defended.wad/artifacts-defended.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:australia-tasmania-newzealand-wad]
 file_filter            = po/australia_tasmania_newzealand.wad/<lang>.po
 source_file            = po/australia_tasmania_newzealand.wad/australia_tasmania_newzealand.wad.pot
@@ -152,6 +168,14 @@ file_filter            = po/auto_soldiers_cs.wad/<lang>.po
 source_file            = po/auto_soldiers_cs.wad/auto_soldiers_cs.wad.pot
 source_lang            = en
 type                   = PO
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:basic-outpost-wad]
+file_filter            = po/basic-outpost.wad/<lang>.po
+source_file            = po/basic-outpost.wad/basic-outpost.wad.pot
+type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 

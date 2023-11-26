@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Benedikt Straub <benedikt-straub@web.de>, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-26 03:06+0100\n"
+"PO-Revision-Date: 2023-11-25 20:04+0000\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
+"Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
+"nds/)\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/artifacts-defended.wad/addon:4
+msgid "artifacts, defended"
+msgstr "Verteidigt künstelk Schatten"
+
+#: addons/artifacts-defended.wad/defending.lua:59
+msgid "WARNING"
+msgstr "Wahrschau"
+
+#: addons/artifacts-defended.wad/defending.lua:113
+msgid "to conquer"
+msgstr "intonehmen"
+
+#: addons/artifacts-defended.wad/defending.lua:125
+msgid "Could not adapt the tribe."
+msgstr "Kunn dat Volk nich anpassen."
+
+#: addons/artifacts-defended.wad/defending.lua:137
+msgid "Defending player can not be in a team, remove."
+msgstr "Verteidigungs-Speler kann nich in eener Klottje sien – wegnehmen."
+
+#: addons/artifacts-defended.wad/defending.lua:220
+msgid "ERROR placing building"
+msgstr "Fehler bi’m Bauen vum Huus"
+
+#: addons/artifacts-defended.wad/defending.lua:227
+#, lua-format
+msgid "No matching artifact building named %s"
+msgstr "Keen passend Künstelk-Schatten-Huus mit de Naam %s"
+
+#: addons/artifacts-defended.wad/defending.lua:233
+msgid "wrong field found"
+msgstr "Falskes Feld funnen"
+
+#: addons/artifacts-defended.wad/defending.lua:263
+#, lua-format
+msgid "The player %s has no artifacts to defend."
+msgstr "De Speler %s hett keene künstelk Schatten tum Verteidigen."
+
+#: addons/artifacts-defended.wad/defending.lua:265
+msgid "No artifacts"
+msgstr "Keene künstelk Schatten"
+
+#: addons/artifacts-defended.wad/defending.lua:291
+msgid "could not place normal artifact (1x)"
+msgstr "Kunn keen normaal künstelk Schatten hensetten (1x)"
+
+#: addons/artifacts-defended.wad/defending.lua:359
+msgid "Several players configured for defending:"
+msgstr "Mennig Spelers tum Verteidigen instellt:"
+
+#: addons/artifacts-defended.wad/defending.lua:409
+#, lua-format
+msgid "To play with win condition artifacts, it must be adapted. See in %s"
+msgstr ""
+"Um mit de Upgaav tum Winnen »künstelk Schatten« to spölen, mutt deese "
+"anpasst worden. Kiek in %s"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/artifacts-defended.wad/defending.lua:417
+msgid "This (ai) player will defend the artifacts."
+msgstr "Deeser (künstelk) Speler word de künstelk Schatten verteidigen."
+
+#. TRANSLATORS: This is the tooltip for the starting condition
+#: addons/artifacts-defended.wad/defending.lua:419
+msgid "Set the tribe to random for finding out in game what it will be."
+msgstr ""
+"Sett dat Volk up »Tofällig«, um im Speel uttofinnen, wat ’t wesen word."
+
+#: addons/artifacts-defended.wad/defending.lua:420
+msgid "Only for ai player as nothing can be done."
+msgstr "Blots för künstelk Speler, denn nix kann daan worden."
+
+#: addons/artifacts-defended.wad/defending.lua:421
+msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
+msgstr ""
+"’t word anraden, de künstelk Speler up »keen künstelk Speler« to setten, "
+"daarmit he keene Soldaten wegstüürt."
+
+#: addons/artifacts-defended.wad/defending.lua:422
+msgid ""
+"On maps with artifacts not reachable by a warrior, some artifacts will not "
+"be conquerable."
+msgstr ""
+"Up Kaarten mit künstelk Schatten, waar keene Soldaten henkomen könen, könen "
+"eenige künstelk Schatten nich innohmen worden."
+
+#: addons/artifacts-defended.wad/defending.lua:432
+#, lua-format
+msgid "Player %s defends artifacts and has aditionally another start position"
+msgstr ""
+"Speler %s verteidigt künstelk Schatten un hett daarto ok eene anner "
+"Anfangsstee"

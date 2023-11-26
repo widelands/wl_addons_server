@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Iwan Gabovitch, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-26 03:06+0100\n"
+"PO-Revision-Date: 2023-11-25 20:04+0000\n"
+"Last-Translator: Iwan Gabovitch, 2023\n"
+"Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/artifacts-defended.wad/addon:4
+msgid "artifacts, defended"
+msgstr "Artefakte, verteidigt"
+
+#: addons/artifacts-defended.wad/defending.lua:59
+msgid "WARNING"
+msgstr "WARNUNG"
+
+#: addons/artifacts-defended.wad/defending.lua:113
+msgid "to conquer"
+msgstr "zu erobern"
+
+#: addons/artifacts-defended.wad/defending.lua:125
+msgid "Could not adapt the tribe."
+msgstr "Konnte Stamm nicht anpassen."
+
+#: addons/artifacts-defended.wad/defending.lua:137
+msgid "Defending player can not be in a team, remove."
+msgstr ""
+"Verteidigender Spieler kann nicht in einem Team sein. Muss entfernt werden."
+
+#: addons/artifacts-defended.wad/defending.lua:220
+msgid "ERROR placing building"
+msgstr "FEHLER bei Gebäudeplatzierung"
+
+#: addons/artifacts-defended.wad/defending.lua:227
+#, lua-format
+msgid "No matching artifact building named %s"
+msgstr "Kein passendes Artefaktgebäude mit dem Namen %s"
+
+#: addons/artifacts-defended.wad/defending.lua:233
+msgid "wrong field found"
+msgstr "Falsches Feld gefunden"
+
+#: addons/artifacts-defended.wad/defending.lua:263
+#, lua-format
+msgid "The player %s has no artifacts to defend."
+msgstr "Spieler %s hat keine Artefakte zum Verteidigen."
+
+#: addons/artifacts-defended.wad/defending.lua:265
+msgid "No artifacts"
+msgstr "Keine Artefakte"
+
+#: addons/artifacts-defended.wad/defending.lua:291
+msgid "could not place normal artifact (1x)"
+msgstr "Normales Artefakt (1x) konnte nicht platziert werden"
+
+#: addons/artifacts-defended.wad/defending.lua:359
+msgid "Several players configured for defending:"
+msgstr "Mehrere Spieler als Verteidiger konfiguriert:"
+
+#: addons/artifacts-defended.wad/defending.lua:409
+#, lua-format
+msgid "To play with win condition artifacts, it must be adapted. See in %s"
+msgstr ""
+"Um mit Artefakten als Siegesbedingung zu spielen, muss sie angepasst werden. "
+"Siehe %s"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/artifacts-defended.wad/defending.lua:417
+msgid "This (ai) player will defend the artifacts."
+msgstr "Dieser (KI) Spieler wird die Artefakte verteidigen."
+
+#. TRANSLATORS: This is the tooltip for the starting condition
+#: addons/artifacts-defended.wad/defending.lua:419
+msgid "Set the tribe to random for finding out in game what it will be."
+msgstr ""
+"Stamm auf zufällig setzen, um im Spiel herauszufinden, welcher es sein wird."
+
+#: addons/artifacts-defended.wad/defending.lua:420
+msgid "Only for ai player as nothing can be done."
+msgstr "Nur für KI-Spieler, da keine Handlungen möglich sind."
+
+#: addons/artifacts-defended.wad/defending.lua:421
+msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
+msgstr ""
+"Es wird empfohlen, KI auf „leer“ zu stellen, damit keine Soldaten "
+"weggeschickt werden."
+
+#: addons/artifacts-defended.wad/defending.lua:422
+msgid ""
+"On maps with artifacts not reachable by a warrior, some artifacts will not "
+"be conquerable."
+msgstr ""
+"Auf Karten, bei denen Artefakte nicht von Kriegern erreichbar sind, wird man "
+"manche Artefakte nicht erobern können."
+
+#: addons/artifacts-defended.wad/defending.lua:432
+#, lua-format
+msgid "Player %s defends artifacts and has aditionally another start position"
+msgstr ""
+"Spieler %s verteidigt Artefakte und hat außerdem eine andere Startposition"

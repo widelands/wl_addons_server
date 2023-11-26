@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-26 03:06+0100\n"
+"PO-Revision-Date: 2023-11-25 20:04+0000\n"
+"Language-Team: Portuguese (Brazil) (https://app.transifex.com/widelands/"
+"teams/35159/pt_BR/)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
+
+#: addons/artifacts-defended.wad/addon:4
+msgid "artifacts, defended"
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:59
+msgid "WARNING"
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:113
+msgid "to conquer"
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:125
+msgid "Could not adapt the tribe."
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:137
+msgid "Defending player can not be in a team, remove."
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:220
+msgid "ERROR placing building"
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:227
+#, lua-format
+msgid "No matching artifact building named %s"
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:233
+msgid "wrong field found"
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:263
+#, lua-format
+msgid "The player %s has no artifacts to defend."
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:265
+msgid "No artifacts"
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:291
+msgid "could not place normal artifact (1x)"
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:359
+msgid "Several players configured for defending:"
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:409
+#, lua-format
+msgid "To play with win condition artifacts, it must be adapted. See in %s"
+msgstr ""
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/artifacts-defended.wad/defending.lua:417
+msgid "This (ai) player will defend the artifacts."
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the starting condition
+#: addons/artifacts-defended.wad/defending.lua:419
+msgid "Set the tribe to random for finding out in game what it will be."
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:420
+msgid "Only for ai player as nothing can be done."
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:421
+msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:422
+msgid ""
+"On maps with artifacts not reachable by a warrior, some artifacts will not "
+"be conquerable."
+msgstr ""
+
+#: addons/artifacts-defended.wad/defending.lua:432
+#, lua-format
+msgid "Player %s defends artifacts and has aditionally another start position"
+msgstr ""
