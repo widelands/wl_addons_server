@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-20 03:06+0100\n"
+"POT-Creation-Date: 2023-12-06 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -36,19 +36,19 @@ msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/medium/init.lua:9
 msgid "Cotton Field (medium)"
-msgstr ""
+msgstr "Katoenveld (medium)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/ripe/init.lua:9
 msgid "Cotton Field (ripe)"
-msgstr ""
+msgstr "Katoenveld (rijp)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/small/init.lua:9
 msgid "Cotton Field (small)"
-msgstr ""
+msgstr "Katoenveld (klein)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/tiny/init.lua:9
 msgid "Cotton Field (tiny)"
-msgstr ""
+msgstr "Katoenveld (zeer klein)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/dry/init.lua:8
@@ -164,7 +164,7 @@ msgstr "Handelspool"
 #: addons/europeans_tribe.wad/immovables/trees/rubber/mature/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/mature/winter/init.lua:11
 msgid "Rubber Tree (Mature)"
-msgstr ""
+msgstr "Rubberboom (Volwassen)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/black/init.lua:11
@@ -172,7 +172,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/winter/init.lua:11
 msgid "Rubber Tree (Old)"
-msgstr ""
+msgstr "Rubberboom (Oud)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/black/init.lua:13
@@ -180,7 +180,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/green/init.lua:13
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/winter/init.lua:13
 msgid "Rubber Tree"
-msgstr ""
+msgstr "Rubberboom"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/black/init.lua:11
@@ -188,7 +188,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/winter/init.lua:11
 msgid "Rubber Tree (Pole)"
-msgstr ""
+msgstr "Rubberboom (Pool)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/black/init.lua:11
@@ -196,7 +196,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/winter/init.lua:11
 msgid "Rubber Tree (Sapling)"
-msgstr ""
+msgstr "Rubberboom (zaailing)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/militarysites/advanced_barrier/init.lua:8
@@ -763,7 +763,7 @@ msgstr "Normale Kleiput"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Rubber Farm"
-msgstr ""
+msgstr "Rubberplantage"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:53
@@ -771,7 +771,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:66
 msgctxt "europeans_building"
 msgid "planting"
-msgstr ""
+msgstr "planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:64
@@ -779,7 +779,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:76
 msgctxt "europeans_building"
 msgid "harvesting"
-msgstr ""
+msgstr "oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
@@ -803,7 +803,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
 msgctxt "europeans_building"
 msgid "pausing production for waiting for inputs"
-msgstr ""
+msgstr "productie onderbreken om te wachten op input"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:83
@@ -823,20 +823,20 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "pausing production because output not needed yet"
-msgstr ""
+msgstr "productie pauzeren omdat output nog niet nodig is"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:93
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:103
 msgctxt "europeans_building"
 msgid "planting cotton"
-msgstr ""
+msgstr "katoen planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:104
 msgctxt "europeans_building"
 msgid "planting rubber"
-msgstr ""
+msgstr "rubberbomen planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:115
@@ -851,13 +851,13 @@ msgstr "riet planten"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:123
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr ""
+msgstr "katoen oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:137
 msgctxt "europeans_building"
 msgid "harvesting rubber"
-msgstr ""
+msgstr "rubber oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:148
@@ -906,7 +906,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Cotton Farm"
-msgstr ""
+msgstr "Katoen boerderij"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:146
 msgctxt "europeans_building"
@@ -914,6 +914,8 @@ msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
 "seeds."
 msgstr ""
+"De boer die op deze katoenkwekerij werkt, heeft geen vrijgemaakte grond om "
+"zijn zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -1300,7 +1302,7 @@ msgstr "Normale Houtskooloven"
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Big Manufactory"
-msgstr ""
+msgstr "Geavanceerde Grote Fabriek"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:76
@@ -1308,7 +1310,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:72
 msgctxt "europeans_building"
 msgid "pausing production because lack of log"
-msgstr ""
+msgstr "productie onderbreken wegens gebrek aan boomstammen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:86
@@ -1316,21 +1318,21 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:82
 msgctxt "europeans_building"
 msgid "processing log to create tools and weapons"
-msgstr ""
+msgstr "hout verwerken om gereedschappen en wapens te maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:101
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:97
 msgctxt "europeans_building"
 msgid "pausing production because lack of reed or cotton"
-msgstr ""
+msgstr "stopzetting van de productie wegens gebrek aan riet of katoen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:110
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:106
 msgctxt "europeans_building"
 msgid "processing reed or cotton to create tools and armor"
-msgstr ""
+msgstr "riet of katoen verwerken tot gereedschap en pantser"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:127
@@ -1338,7 +1340,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:121
 msgctxt "europeans_building"
 msgid "pausing production because lack of iron or coal"
-msgstr ""
+msgstr "stopzetting van de productie wegens gebrek aan ijzer of steenkool"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing iron for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:135
@@ -1346,7 +1348,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:129
 msgctxt "europeans_building"
 msgid "processing iron to create tools and weapons"
-msgstr ""
+msgstr "ijzer bewerken om gereedschap en wapens te maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:158
@@ -1578,25 +1580,25 @@ msgstr "een slagzwaard smeden"
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Big Manufactory"
-msgstr ""
+msgstr "Basis Grote Fabriek"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:119
 msgctxt "europeans_building"
 msgid "pausing production because lack of reed"
-msgstr ""
+msgstr "productie onderbreken wegens gebrek aan riet"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_basic/init.lua:128
 msgctxt "europeans_building"
 msgid "processing reed to create tools and armor"
-msgstr ""
+msgstr "riet verwerken tot gereedschap en pantser"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Big Manufactory"
-msgstr ""
+msgstr "Normale Grote Fabriek"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_advanced/init.lua:8
@@ -1622,7 +1624,7 @@ msgstr "recyclen van ijzer en goud"
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "smelting ore"
-msgstr ""
+msgstr "erts smelten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smelting_works_basic/init.lua:8
@@ -2122,7 +2124,7 @@ msgstr "voedsel ruilen voor houtmunten"
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:102
 msgctxt "europeans_building"
 msgid "pausing trading of blackwood"
-msgstr ""
+msgstr "onderbreking van de handel in blackwood"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_trading/scouts_house_advanced/init.lua:8
@@ -2507,7 +2509,7 @@ msgstr "slapen"
 #: addons/europeans_tribe.wad/trainingsites/battlearena_level_3/init.lua:64
 msgctxt "europeans_building"
 msgid "pausing training because lack of coins"
-msgstr ""
+msgstr "training onderbreken wegens gebrek aan munten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing training because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:113
@@ -2517,6 +2519,7 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "pausing training because lack of weapons, armor and boots"
 msgstr ""
+"training onderbreken vanwege gebrek aan wapens, bepantsering en laarzen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_tribe.wad/trainingsites/battlearena_basic/init.lua:121
@@ -3454,13 +3457,13 @@ msgstr "Het wordt geproduceerd op de rietvelden."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:160
 msgctxt "europeans_ware"
 msgid "Cotton is a raw material used to make clothing."
-msgstr ""
+msgstr "Katoen is een grondstof die wordt gebruikt om kleding te maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:169
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved boots."
-msgstr ""
+msgstr "Rubber is nodig om betere laarzen te maken."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap wood
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:177
@@ -3590,7 +3593,7 @@ msgstr "Ze worden door de zagerij gemaakt van boomstammen."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:285
 msgctxt "europeans_ware"
 msgid "They are also used by the ferryyard and shipyard."
-msgstr ""
+msgstr "Ze worden ook gebruikt door de veerbootwerf en scheepswerf."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:295
@@ -3683,6 +3686,8 @@ msgid ""
 "It is produced by the smelting works. Some valuable buildings need gold to "
 "be built."
 msgstr ""
+"Het wordt geproduceerd door de smelterijen. Sommige waardevolle gebouwen "
+"hebben goud nodig om gebouwd te worden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wood Coin
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:381
@@ -3867,6 +3872,9 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the big manufactory. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Basisbepantsering voor Europese soldaten. Het wordt geproduceerd in een "
+"grote fabriek. In combinatie met een houten speer is het de uitrusting voor "
+"jonge soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:569
@@ -3886,6 +3894,9 @@ msgid ""
 "by a tailor and used in a battle arena to protect soldiers with additional "
 "health points."
 msgstr ""
+"Het gecomprimeerde harnas is een gemiddeld harnas voor Europese soldaten. "
+"Het wordt gemaakt door een kleermaker en gebruikt in een gevechtsarena om "
+"soldaten te beschermen met extra gezondheidspunten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:587
@@ -3894,6 +3905,8 @@ msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
 "arena to protect soldiers with additional health points."
 msgstr ""
+"Het geavanceerde pantser wordt geproduceerd in een fabriek en gebruikt in de "
+"strijdarena om soldaten te beschermen met extra gezondheidspunten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:596
@@ -3948,6 +3961,9 @@ msgid ""
 "produced in the manufactory. In combination with armor, it is the equipment "
 "to fit out young soldiers."
 msgstr ""
+"Deze houten speer is het basiswapen in het Europese militaire systeem. Het "
+"wordt geproduceerd in de fabriek. In combinatie met een harnas is het de "
+"uitrusting voor jonge soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:644
@@ -3957,6 +3973,9 @@ msgid ""
 "and used in a battle arena – together with food – to train soldiers in "
 "attack."
 msgstr ""
+"Dit is een geavanceerde speer met een stalen punt. Het wordt geproduceerd in "
+"een fabriek en gebruikt in een gevechtsarena – samen met voedsel – om "
+"soldaten te trainen in aanvallen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:653
