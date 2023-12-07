@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-06 03:07+0100\n"
+"POT-Creation-Date: 2023-12-07 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -3984,6 +3984,8 @@ msgid ""
 "This is an broad ax. It is produced in a manufactory and used in a battle "
 "arena – together with food – to train soldiers in attack."
 msgstr ""
+"Dit is een brede bijl. Het wordt geproduceerd in een fabriek en gebruikt in "
+"een gevechtsarena – samen met voedsel – om soldaten te trainen in aanvallen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:662
@@ -3992,6 +3994,9 @@ msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
 "in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
+"Dit is een breed zwaard. Het wordt geproduceerd in de geavanceerde fabriek "
+"en gebruikt in een gevechtsarena – samen met voedsel – om soldaten te "
+"trainen in aanvallen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:671
@@ -4001,6 +4006,9 @@ msgid ""
 "manufactory. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
+"De helm is het basisverdedigingsmiddel van een soldaat. Hij wordt "
+"geproduceerd in de fabriek. In combinatie met een harnas is het de "
+"uitrusting voor jonge soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:680
@@ -4010,6 +4018,9 @@ msgid ""
 "manufactory and used in a battle arena – together with food – to train "
 "soldiers in defense."
 msgstr ""
+"Het masker is het middelste verdedigingsmiddel van een soldaat. Het wordt "
+"geproduceerd in een fabriek en gebruikt in een gevechtsarena – samen met "
+"voedsel – om soldaten te trainen in verdediging."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:689
@@ -4018,6 +4029,8 @@ msgid ""
 "This steel shield is produced in a manufactory and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
+"Dit stalen schild wordt geproduceerd in een fabriek en gebruikt in een "
+"gevechtsarena – samen met voedsel – om soldaten te trainen in verdediging."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:698
@@ -4027,6 +4040,10 @@ msgid ""
 "are produced in the advanced manufactory and used in the advanced battle "
 "arena – together with food – to train soldiers in defense."
 msgstr ""
+"Deze geavanceerde schilden worden gebruikt door de beste soldaten van de "
+"Europeanen. Ze worden geproduceerd in de geavanceerde fabriek en gebruikt in "
+"de geavanceerde gevechtsarena – samen met voedsel – om soldaten te trainen "
+"in verdediging."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:713
@@ -4188,23 +4205,23 @@ msgstr "De overblijfselen van een verwoest gebouw."
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1127
 msgid "This cotton field has just been planted."
-msgstr ""
+msgstr "Dit katoenveld is net aangeplant."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1134
 msgid "This cotton field is growing."
-msgstr ""
+msgstr "Dit katoenveld groeit."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1141
 msgid ""
 "This cotton field is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Dit katoenveld staat in bloei. Een imker kan er honing van maken."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1148
 msgid "This cotton field is ready for harvesting."
-msgstr ""
+msgstr "Dit katoenveld is klaar om geoogst te worden."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1162
@@ -4253,7 +4270,7 @@ msgstr "Dit rietveld kan worden geoogst."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1260
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1288
 msgid "This rubber tree has just been planted."
-msgstr ""
+msgstr "Deze rubberboom is net geplant."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1211
@@ -4261,7 +4278,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1267
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1295
 msgid "This rubber tree is growing."
-msgstr ""
+msgstr "Deze rubberboom groeit."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1218
@@ -4269,7 +4286,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1274
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1302
 msgid "This rubber tree is fully grown. Lianas can be gathered from it."
-msgstr ""
+msgstr "Deze rubberboom is volgroeid. Je kunt er lianen van plukken."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Old
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1225
@@ -4280,6 +4297,8 @@ msgid ""
 "This rubber tree is ready for harvesting rubber by a master woodcutter. "
 "Other tribes can harvest it for normal logs."
 msgstr ""
+"Deze rubberboom is klaar om geoogst te worden door een meester-houtsnijder. "
+"Andere stammen kunnen hem oogsten voor normale boomstammen."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1316
@@ -4590,13 +4609,13 @@ msgstr "Zaaien en oogsten van riet."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1763
 msgctxt "europeans_building"
 msgid "Sows and harvests reed and cotton."
-msgstr ""
+msgstr "Zaaien en oogsten van riet en katoen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1770
 msgctxt "europeans_building"
 msgid "Sows and harvests reed, cotton and rubber."
-msgstr ""
+msgstr "Zaaien en oogsten van riet, katoen en rubber."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
@@ -4679,6 +4698,9 @@ msgid ""
 "Large factory that produces complex wares such as tools, weapons, armor, "
 "clothing, shoes or building materials from simple raw materials."
 msgstr ""
+"Grote fabriek die complexe waren produceert zoals gereedschap, wapens, "
+"wapenuitrusting, kleding, schoenen of bouwmaterialen uit eenvoudige "
+"grondstoffen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Recruitement Center
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1869
@@ -5325,7 +5347,7 @@ msgstr "Geavanceerd harnas"
 #: addons/europeans_tribe.wad/tribes/wares/armor_compressed/init.lua:8
 msgctxt "ware"
 msgid "Compressed Armor"
-msgstr ""
+msgstr "Gecomprimeerd pantser"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/armor_processed/init.lua:8
@@ -5445,7 +5467,7 @@ msgstr "Houten Munt"
 #: addons/europeans_tribe.wad/tribes/wares/cotton/init.lua:8
 msgctxt "ware"
 msgid "Cotton"
-msgstr ""
+msgstr "Katoen"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/diamond/init.lua:8
@@ -5571,7 +5593,7 @@ msgstr "Riet"
 #: addons/europeans_tribe.wad/tribes/wares/rubber/init.lua:8
 msgctxt "ware"
 msgid "Rubber"
-msgstr ""
+msgstr "Rubber"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/saw/init.lua:8

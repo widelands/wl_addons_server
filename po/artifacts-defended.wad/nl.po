@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 03:06+0100\n"
+"POT-Creation-Date: 2023-12-07 03:07+0100\n"
 "PO-Revision-Date: 2023-11-25 20:04+0000\n"
+"Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,84 +23,93 @@ msgstr ""
 
 #: addons/artifacts-defended.wad/addon:4
 msgid "artifacts, defended"
-msgstr ""
+msgstr "kunstvoorwerpen, verdedigd"
 
 #: addons/artifacts-defended.wad/defending.lua:59
 msgid "WARNING"
-msgstr ""
+msgstr "WAARSCHUWING"
 
 #: addons/artifacts-defended.wad/defending.lua:113
 msgid "to conquer"
-msgstr ""
+msgstr "veroveren"
 
 #: addons/artifacts-defended.wad/defending.lua:125
 msgid "Could not adapt the tribe."
-msgstr ""
+msgstr "Kon de stam niet aanpassen."
 
 #: addons/artifacts-defended.wad/defending.lua:137
 msgid "Defending player can not be in a team, remove."
-msgstr ""
+msgstr "Verdedigende speler kan niet in een team zitten, verwijder."
 
 #: addons/artifacts-defended.wad/defending.lua:220
 msgid "ERROR placing building"
-msgstr ""
+msgstr "FOUT plaatsen gebouw"
 
 #: addons/artifacts-defended.wad/defending.lua:227
 #, lua-format
 msgid "No matching artifact building named %s"
-msgstr ""
+msgstr "Geen bijpassend kunstgebouw met de naam %s"
 
 #: addons/artifacts-defended.wad/defending.lua:233
 msgid "wrong field found"
-msgstr ""
+msgstr "verkeerd veld gevonden"
 
 #: addons/artifacts-defended.wad/defending.lua:263
 #, lua-format
 msgid "The player %s has no artifacts to defend."
-msgstr ""
+msgstr "De speler %s heeft geen kunstvoorwerpen om te verdedigen."
 
 #: addons/artifacts-defended.wad/defending.lua:265
 msgid "No artifacts"
-msgstr ""
+msgstr "Geen kunstvoorwerpen"
 
 #: addons/artifacts-defended.wad/defending.lua:291
 msgid "could not place normal artifact (1x)"
-msgstr ""
+msgstr "kon geen normaal kunstvoorwerp plaatsen (1x)"
 
 #: addons/artifacts-defended.wad/defending.lua:359
 msgid "Several players configured for defending:"
-msgstr ""
+msgstr "Verschillende spelers geconfigureerd voor verdedigen:"
 
 #: addons/artifacts-defended.wad/defending.lua:409
 #, lua-format
 msgid "To play with win condition artifacts, it must be adapted. See in %s"
 msgstr ""
+"Om met winconditie kunstvoorwerpen te spelen, moet het worden aangepast. Zie "
+"in %s"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/artifacts-defended.wad/defending.lua:417
 msgid "This (ai) player will defend the artifacts."
-msgstr ""
+msgstr "Deze (ai) speler zal de kunstvoorwerpen verdedigen."
 
 #. TRANSLATORS: This is the tooltip for the starting condition
 #: addons/artifacts-defended.wad/defending.lua:419
 msgid "Set the tribe to random for finding out in game what it will be."
 msgstr ""
+"Zet de stam op willekeurig om er in het spel achter te komen wat het wordt."
 
 #: addons/artifacts-defended.wad/defending.lua:420
 msgid "Only for ai player as nothing can be done."
-msgstr ""
+msgstr "Alleen voor de ai speler omdat er niets aan gedaan kan worden."
 
 #: addons/artifacts-defended.wad/defending.lua:421
 msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
 msgstr ""
+"Aanbevolen om AI op \"leeg\" te zetten om te voorkomen dat soldaten worden "
+"weggestuurd."
 
 #: addons/artifacts-defended.wad/defending.lua:422
 msgid ""
 "On maps with artifacts not reachable by a warrior, some artifacts will not "
 "be conquerable."
 msgstr ""
+"Op kaarten met artefacten die niet bereikbaar zijn voor een krijger, zullen "
+"sommige artefacten niet veroverbaar zijn."
 
 #: addons/artifacts-defended.wad/defending.lua:432
 #, lua-format
 msgid "Player %s defends artifacts and has aditionally another start position"
 msgstr ""
+"Speler %s verdedigt kunstvoorwerpen en heeft bovendien een andere "
+"startpositie"

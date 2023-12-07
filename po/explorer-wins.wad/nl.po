@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 03:07+0100\n"
+"POT-Creation-Date: 2023-12-07 03:07+0100\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -74,22 +74,24 @@ msgstr ""
 
 #: addons/explorer-wins.wad/init.lua:94
 msgid "Win condition not compatible with \"No fog of war\""
-msgstr ""
+msgstr "Winconditie niet compatibel met \"Geen oorlogsmist\"."
 
 #: addons/explorer-wins.wad/init.lua:95
 msgid ""
 "The win condition %1$s can not be played with \"No fog of war\" enabled."
 msgstr ""
+"De winvoorwaarde %1$s kan niet gespeeld worden met \"Geen oorlogsmist\" "
+"ingeschakeld."
 
 #: addons/explorer-wins.wad/init.lua:96
 msgid "Continue playing endlessly or restart with fog."
-msgstr ""
+msgstr "Ga eindeloos door met spelen of start opnieuw met mist."
 
 #: addons/explorer-wins.wad/init.lua:150
 msgid "Player %1$1d has explored %2$1d%%"
-msgstr ""
+msgstr "Speler %1$1d heeft %2$1d%% onderzocht"
 
 #: addons/explorer-wins.wad/init.lua:152
 #, lua-format
 msgid " (%d fields)"
-msgstr ""
+msgstr " (%d velden)"
