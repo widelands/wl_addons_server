@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 03:07+0100\n"
+"POT-Creation-Date: 2023-12-09 03:07+0100\n"
 "PO-Revision-Date: 2023-11-25 14:32+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -32,9 +32,10 @@ msgid "Basic Outpost"
 msgstr "Slichte Butenstee"
 
 #: addons/basic-outpost.wad/addon:5
+#, fuzzy
 msgid ""
 "A low wares starting condition. Like a 'struggling outpost' but with enough "
-"extra resources to make some tools, so that getting established is a faster "
+"extra resources to make some tools, so that getting established is faster "
 "and more flexible."
 msgstr ""
 "Eene Anfangskondiesje mit minnen Waren. As eene »Bedröövte Butenstee«, aver "
@@ -47,9 +48,11 @@ msgstr ""
 #: addons/basic-outpost.wad/barbarians.lua:13
 #: addons/basic-outpost.wad/empire.lua:13
 #: addons/basic-outpost.wad/frisians.lua:13
+#, fuzzy
 msgid ""
 "Start the game with your headquarters and a small selection of wares - just "
-"enough to create a few tools to help establish a full economy."
+"enough to create a few tools to help establish a full economy. Warning: the "
+"AI can’t successfully start from this."
 msgstr ""
 "Begünn dat Speel mit dienem Raadhuus un een paar Waren – blots genoog, um "
 "een bietje Warktüüg to produzeren un eene kumplete Weertskupp uptobauen."

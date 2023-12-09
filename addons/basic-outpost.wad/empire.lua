@@ -10,7 +10,7 @@ init = {
    -- TRANSLATORS: This is the name of a starting condition
    descname = _("Basic Outpost"),
    -- TRANSLATORS: This is the tooltip for the "Basics" starting condition
-   tooltip = _("Start the game with your headquarters and a small selection of wares - just enough to create a few tools to help establish a full economy."),
+   tooltip = _("Start the game with your headquarters and a small selection of wares - just enough to create a few tools to help establish a full economy. Warning: the AI can’t successfully start from this."),
    func = function(player, shared_in_start)
 
    local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -28,7 +28,8 @@ init = {
          iron = 4,
          iron_ore = 3,
          coal = 4,
-         marble = 6,
+         marble = 7,
+         marble_column = 1,
       },
       workers = {
          empire_baker = 1,
@@ -53,7 +54,7 @@ init = {
          empire_vintner = 1
       },
       soldiers = {
-         [{0,0,0,0}] = 6,
+         [{0,0,0,0}] = 8,
       }
    })
 end

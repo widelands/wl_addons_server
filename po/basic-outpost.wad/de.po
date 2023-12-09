@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-27 03:06+0100\n"
+"POT-Creation-Date: 2023-12-09 03:07+0100\n"
 "PO-Revision-Date: 2023-11-25 14:32+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -32,9 +32,10 @@ msgid "Basic Outpost"
 msgstr "Einfacher Außenposten"
 
 #: addons/basic-outpost.wad/addon:5
+#, fuzzy
 msgid ""
 "A low wares starting condition. Like a 'struggling outpost' but with enough "
-"extra resources to make some tools, so that getting established is a faster "
+"extra resources to make some tools, so that getting established is faster "
 "and more flexible."
 msgstr ""
 "Eine Startbedingung mit geringen Waren. Wie ein „Mühsamer Vorposten“, aber "
@@ -47,9 +48,11 @@ msgstr ""
 #: addons/basic-outpost.wad/barbarians.lua:13
 #: addons/basic-outpost.wad/empire.lua:13
 #: addons/basic-outpost.wad/frisians.lua:13
+#, fuzzy
 msgid ""
 "Start the game with your headquarters and a small selection of wares - just "
-"enough to create a few tools to help establish a full economy."
+"enough to create a few tools to help establish a full economy. Warning: the "
+"AI can’t successfully start from this."
 msgstr ""
 "Beginne das Spiel mit deinem Hauptquartier und einer kleinen Auswahl an "
 "Waren – gerade genug, um ein paar Werkzeuge herzustellen, die beim Aufbau "
