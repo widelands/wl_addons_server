@@ -23,7 +23,7 @@ init = {
    prefilled_buildings(player, { "atlanteans_headquarters", sf.x, sf.y,
       wares = {
          log = 24,
-         planks = 12,
+         planks = 14,
          spidercloth = 4,
          granite = 10,
          iron = 4,

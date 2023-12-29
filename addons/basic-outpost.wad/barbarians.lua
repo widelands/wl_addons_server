@@ -26,9 +26,10 @@ init = {
          blackwood = 7,
          granite = 10,
          grout = 1,
+         reed = 1,
          iron = 4,
-         iron_ore = 3,
-         coal = 4,
+         iron_ore = 5,
+         coal = 6,
       },
       workers = {
          barbarians_blacksmith = 1,

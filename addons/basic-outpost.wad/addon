@@ -2,9 +2,11 @@
 
 [global]
 name=_"Basic Outpost"
-description=_"A low wares starting condition. Like a 'struggling outpost' but with enough extra resources to make some tools, so that getting established is faster and more flexible."
+description=_""A low wares starting condition. Like a 'struggling outpost' but with enough extra resources to make some tools, so that getting established is faster and more flexible. Suitable for reasonably balanced low wares starts, or handicap starts vs full outpost."
+             " "
+             "Here is a basic tip for Basic Outpost: You only start with a small amount of iron for new tools. So click on a flag to change the economy targets of all tools to zero. Otherwise you'll be wasting iron on tools you don't need.""
 author="blind"
-version="0.7.0"
+version="0.8.0"
 category="starting_condition"
 requires=
 min_wl_version=

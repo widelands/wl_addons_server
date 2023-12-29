@@ -26,9 +26,9 @@ init = {
          planks = 14,
          granite = 10,
          iron = 4,
-         iron_ore = 3,
+         iron_ore = 4,
          coal = 4,
-         marble = 7,
+         marble = 12,
          marble_column = 1,
       },
       workers = {
