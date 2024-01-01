@@ -406,6 +406,63 @@ function change_idle_stopped_buildings(player, productivity_percent)
     end
 end
 
+function upgrade_random_militarysites(player)
+    local ms1 = player:get_buildings("europeans_guardhouse")
+    local ms2 = player:get_buildings("europeans_tower_small")
+    local mb1 = player:get_buildings("europeans_barrier")
+    local mb2 = player:get_buildings("europeans_outpost")
+    local mt1 = player:get_buildings("europeans_tower")
+    local mt2 = player:get_buildings("europeans_tower_high")
+    local mc1 = player:get_buildings("europeans_castle")
+    local mc2 = player:get_buildings("europeans_fortress")
+    local random_number = 1
+    local building = ms1[random_number]
+    
+    if #mc2 > 0 then
+        random_number = math.random(#mc2)
+        building = mc2[random_number]
+    elseif #mc1 > 0 then
+        random_number = math.random(#mc1)
+        building = mc1[random_number]
+    end
+    if building then
+        building:enhance(true)
+    end
+    
+    if #mt2 > 0 then
+        random_number = math.random(#mt2)
+        building = mt2[random_number]
+    elseif #mt1 > 0 then
+        random_number = math.random(#mt1)
+        building = mt1[random_number]
+    end
+    if building then
+        building:enhance(true)
+    end
+
+    if #mb2 > 0 then
+        random_number = math.random(#mb2)
+        building = mb2[random_number]
+    elseif #mb1 > 0 then
+        random_number = math.random(#mb1)
+        building = mb1[random_number]
+    end
+    if building then
+        building:enhance(true)
+    end
+
+    if #ms2 > 0 then
+        random_number = math.random(#ms2)
+        building = ms2[random_number]
+    elseif #ms1 > 0 then
+        random_number = math.random(#ms1)
+        building = ms1[random_number]
+    end
+    if building then
+        building:enhance(true)
+    end
+end
+
 function doing_ai_stuff(player, increment)
     local map = wl.Game().map
     
@@ -476,6 +533,8 @@ function doing_ai_stuff(player, increment)
     end
     if (increment == 16) then
         player:allow_buildings{"europeans_store_small", "europeans_store_big", }
+    end
+    if (increment == 32) then
         player:allow_buildings("all")
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
             player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced", "europeans_warehouse", "europeans_headquarters", }
@@ -488,51 +547,6 @@ function doing_ai_stuff(player, increment)
     if (increment >= 16) then
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
-    end
-    
-    if (increment >= 16) and (increment % 4 == 0) then
-        for j, building in ipairs(player:get_buildings("europeans_guardhouse")) do
-            if (j == 1) then
-                building:enhance(true)
-            end
-        end
-        for j, building in ipairs(player:get_buildings("europeans_castle")) do
-            if (j == 1) then
-                building:enhance(true)
-            end
-        end
-    elseif (increment >= 16) and (increment % 4 == 1) then
-        for j, building in ipairs(player:get_buildings("europeans_barrier")) do
-            if (j == 1) then
-                building:enhance(true)
-            end
-        end
-        for j, building in ipairs(player:get_buildings("europeans_tower")) do
-            if (j == 1) then
-                building:enhance(true)
-            end
-        end
-    elseif (increment >= 16) and (increment % 4 == 2) then
-        for j, building in ipairs(player:get_buildings("europeans_tower_small")) do
-            if (j == 1) then
-                building:enhance(true)
-            end
-        end
-        for j, building in ipairs(player:get_buildings("europeans_fortress")) do
-            if (j == 1) then
-                building:enhance(true)
-            end
-        end
-    elseif (increment >= 16) and (increment % 4 == 3) then
-        for j, building in ipairs(player:get_buildings("europeans_tower_high")) do
-            if (j == 1) then
-                building:enhance(true)
-            end
-        end
-        for j, building in ipairs(player:get_buildings("europeans_outpost")) do
-            if (j == 1) then
-                building:enhance(true)
-            end
-        end
+        upgrade_random_militarysites(player)
     end
 end
