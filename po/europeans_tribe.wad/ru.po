@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 03:07+0100\n"
+"POT-Creation-Date: 2024-01-04 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -35,22 +35,25 @@ msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings, workers and some "
 "wares from other tribes, until own graphics are available."
 msgstr ""
+"Добавляет новое племя под названием \"Европейцы\". В нем используются "
+"здания, рабочие, и товары из других племён, пока не будет доступна "
+"собственная графика."
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/medium/init.lua:9
 msgid "Cotton Field (medium)"
-msgstr ""
+msgstr "Хлопковое поле (среднее)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/ripe/init.lua:9
 msgid "Cotton Field (ripe)"
-msgstr ""
+msgstr "Хлопковое поле (зрелое)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/small/init.lua:9
 msgid "Cotton Field (small)"
-msgstr ""
+msgstr "Хлопковое поле (малое)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/tiny/init.lua:9
 msgid "Cotton Field (tiny)"
-msgstr ""
+msgstr "Хлопковое поле (крохотное)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/dry/init.lua:8
@@ -166,7 +169,7 @@ msgstr "Торговый шест"
 #: addons/europeans_tribe.wad/immovables/trees/rubber/mature/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/mature/winter/init.lua:11
 msgid "Rubber Tree (Mature)"
-msgstr ""
+msgstr "Гевея (Спелая)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/black/init.lua:11
@@ -174,7 +177,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/winter/init.lua:11
 msgid "Rubber Tree (Old)"
-msgstr ""
+msgstr "Гевея (Старая)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/black/init.lua:13
@@ -182,7 +185,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/green/init.lua:13
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/winter/init.lua:13
 msgid "Rubber Tree"
-msgstr ""
+msgstr "Гевея"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/black/init.lua:11
@@ -190,7 +193,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/winter/init.lua:11
 msgid "Rubber Tree (Pole)"
-msgstr ""
+msgstr "Гевея (Средневозрастная)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/black/init.lua:11
@@ -198,7 +201,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/winter/init.lua:11
 msgid "Rubber Tree (Sapling)"
-msgstr ""
+msgstr "Гевея (Молодняк)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/militarysites/advanced_barrier/init.lua:8
@@ -767,7 +770,7 @@ msgstr "Обычный Глиняный карьер"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Rubber Farm"
-msgstr ""
+msgstr "Ферма гевеи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:53
@@ -775,7 +778,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:66
 msgctxt "europeans_building"
 msgid "planting"
-msgstr ""
+msgstr "садит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:64
@@ -783,7 +786,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:76
 msgctxt "europeans_building"
 msgid "harvesting"
-msgstr ""
+msgstr "собирает урожай"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
@@ -807,7 +810,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:81
 msgctxt "europeans_building"
 msgid "pausing production for waiting for inputs"
-msgstr ""
+msgstr "приостановка производства в ожидании поставок"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:83
@@ -827,20 +830,20 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/stonemasons_house_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "pausing production because output not needed yet"
-msgstr ""
+msgstr "приостановка производства, поскольку продукция пока не требуется"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:93
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:103
 msgctxt "europeans_building"
 msgid "planting cotton"
-msgstr ""
+msgstr "сеет хлопок"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:104
 msgctxt "europeans_building"
 msgid "planting rubber"
-msgstr ""
+msgstr "садит гевею"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:115
@@ -855,13 +858,13 @@ msgstr "садит тростник"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:123
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr ""
+msgstr "собирает хлопок"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:137
 msgctxt "europeans_building"
 msgid "harvesting rubber"
-msgstr ""
+msgstr "собирает каучук"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_advanced/init.lua:148
@@ -887,13 +890,13 @@ msgstr "Место под засев исчерпано"
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
-msgstr ""
+msgstr "Фермеру с этого виноградника не имеет свободной земли под засев."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Reed Yard"
-msgstr ""
+msgstr "Плантация"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_basic/init.lua:126
 msgctxt "europeans_building"
@@ -901,19 +904,21 @@ msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
 msgstr ""
+"Садовник, работающий на плантации тростника не имеет свободной земли под "
+"засев."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Cotton Farm"
-msgstr ""
+msgstr "хлопковая ферма"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_medium_normal/init.lua:146
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
 "seeds."
-msgstr ""
+msgstr "Работник этой хлопковой фермы не имеет свободной земли под засев."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -1297,7 +1302,7 @@ msgstr "Обычная Печь углежога"
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Big Manufactory"
-msgstr ""
+msgstr "Продвинутая большая мануфактура"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:76
@@ -1305,7 +1310,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:72
 msgctxt "europeans_building"
 msgid "pausing production because lack of log"
-msgstr ""
+msgstr "приостановка производства из-за недостатка бревен"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:86
@@ -1313,7 +1318,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_normal/init.lua:82
 msgctxt "europeans_building"
 msgid "processing log to create tools and weapons"
-msgstr ""
+msgstr "перерабатывает бревна в инструменты и оружие"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:101
@@ -1426,7 +1431,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:329
 msgctxt "europeans_building"
 msgid "tailoring a suit of advanced armor"
-msgstr ""
+msgstr "шьёт улучшеные доспехи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:350
@@ -2661,709 +2666,709 @@ msgstr "Судно"
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:117
 msgctxt "shipname"
 msgid "Amsterdam"
-msgstr ""
+msgstr "Амстердам"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:119
 msgctxt "shipname"
 msgid "Andorra la Vella"
-msgstr ""
+msgstr "Андорра-ла-Велья"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:121
 msgctxt "shipname"
 msgid "Antwerpen"
-msgstr ""
+msgstr "Антверпен"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:123
 msgctxt "shipname"
 msgid "Astrachan"
-msgstr ""
+msgstr "Астрахань"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:125
 msgctxt "shipname"
 msgid "Athen"
-msgstr ""
+msgstr "Афины"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:127
 msgctxt "shipname"
 msgid "Balaschicha"
-msgstr ""
+msgstr "Балашиха"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:129
 msgctxt "shipname"
 msgid "Barcelona"
-msgstr ""
+msgstr "Барселона"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:131
 msgctxt "shipname"
 msgid "Beograd"
-msgstr ""
+msgstr "Белград"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:133
 msgctxt "shipname"
 msgid "Berlin"
-msgstr ""
+msgstr "Берлин"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:135
 msgctxt "shipname"
 msgid "Bern"
-msgstr ""
+msgstr "Берн"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:137
 msgctxt "shipname"
 msgid "Birmingham"
-msgstr ""
+msgstr "Бирмингем"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:139
 msgctxt "shipname"
 msgid "Bradford"
-msgstr ""
+msgstr "Брэдфорд"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:141
 msgctxt "shipname"
 msgid "Bremen"
-msgstr ""
+msgstr "Бремен"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:143
 msgctxt "shipname"
 msgid "Bruxelles"
-msgstr ""
+msgstr "Брюссель"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:145
 msgctxt "shipname"
 msgid "București"
-msgstr ""
+msgstr "Бухарест"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:147
 msgctxt "shipname"
 msgid "Budapest"
-msgstr ""
+msgstr "Будапешт"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:149
 msgctxt "shipname"
 msgid "Charkiw"
-msgstr ""
+msgstr "Харьков"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:151
 msgctxt "shipname"
 msgid "Chișinău"
-msgstr ""
+msgstr "Кишинёв"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:153
 msgctxt "shipname"
 msgid "Den Haag"
-msgstr ""
+msgstr "Гаага"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:155
 msgctxt "shipname"
 msgid "Dnipro"
-msgstr ""
+msgstr "Днепропетровск"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:157
 msgctxt "shipname"
 msgid "Donezk"
-msgstr ""
+msgstr "Донецк"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:159
 msgctxt "shipname"
 msgid "Dortmund"
-msgstr ""
+msgstr "Дортмунд"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:161
 msgctxt "shipname"
 msgid "Dresden"
-msgstr ""
+msgstr "Дрезден"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:163
 msgctxt "shipname"
 msgid "Dublin"
-msgstr ""
+msgstr "Дублин"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:165
 msgctxt "shipname"
 msgid "Duisburg"
-msgstr ""
+msgstr "Дуйсбург"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:167
 msgctxt "shipname"
 msgid "Düsseldorf"
-msgstr ""
+msgstr "Дюссельдорф"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:169
 msgctxt "shipname"
 msgid "Edinburgh"
-msgstr ""
+msgstr "Эдинбург"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:171
 msgctxt "shipname"
 msgid "Essen"
-msgstr ""
+msgstr "Эссен"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:173
 msgctxt "shipname"
 msgid "Frankfurt am Main"
-msgstr ""
+msgstr "Франкфурт-на-Майне"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:175
 msgctxt "shipname"
 msgid "Genova"
-msgstr ""
+msgstr "Генуя"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:177
 msgctxt "shipname"
 msgid "Glasgow"
-msgstr ""
+msgstr "Глазго"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:179
 msgctxt "shipname"
 msgid "Göteborg"
-msgstr ""
+msgstr "Гетеборг"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:181
 msgctxt "shipname"
 msgid "Hamburg"
-msgstr ""
+msgstr "Гамбург"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:183
 msgctxt "shipname"
 msgid "Hannover"
-msgstr ""
+msgstr "Ганновер"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:185
 msgctxt "shipname"
 msgid "Helsinki"
-msgstr ""
+msgstr "Хельсинки"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:187
 msgctxt "shipname"
 msgid "Homel"
-msgstr ""
+msgstr "Гомель"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:189
 msgctxt "shipname"
 msgid "Ischewsk"
-msgstr ""
+msgstr "Ижевск"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:191
 msgctxt "shipname"
 msgid "Istanbul"
-msgstr ""
+msgstr "Стамбул"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:193
 msgctxt "shipname"
 msgid "Jaroslawl"
-msgstr ""
+msgstr "Ярославль"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:195
 msgctxt "shipname"
 msgid "Kasan"
-msgstr ""
+msgstr "Казань"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:197
 msgctxt "shipname"
 msgid "Kirow"
-msgstr ""
+msgstr "Киров"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:199
 msgctxt "shipname"
 msgid "København"
-msgstr ""
+msgstr "Копенгаген"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:201
 msgctxt "shipname"
 msgid "Köln"
-msgstr ""
+msgstr "Кёльн"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:203
 msgctxt "shipname"
 msgid "Kraków"
-msgstr ""
+msgstr "Краков"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:205
 msgctxt "shipname"
 msgid "Krasnodar"
-msgstr ""
+msgstr "Краснодар"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:207
 msgctxt "shipname"
 msgid "Krywyj Rih"
-msgstr ""
+msgstr "Кривой Рог"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:209
 msgctxt "shipname"
 msgid "Kyiv"
-msgstr ""
+msgstr "Киев"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:211
 msgctxt "shipname"
 msgid "Leeds"
-msgstr ""
+msgstr "Лидс"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:213
 msgctxt "shipname"
 msgid "Leipzig"
-msgstr ""
+msgstr "Лейпциг"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:215
 msgctxt "shipname"
 msgid "Lipezk"
-msgstr ""
+msgstr "Липецк"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:217
 msgctxt "shipname"
 msgid "Lisboa"
-msgstr ""
+msgstr "Лиссабон"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:219
 msgctxt "shipname"
 msgid "Ljubljana"
-msgstr ""
+msgstr "Любляна"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:221
 msgctxt "shipname"
 msgid "Łódź"
-msgstr ""
+msgstr "Лодзь"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:223
 msgctxt "shipname"
 msgid "London"
-msgstr ""
+msgstr "Лондон"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:225
 msgctxt "shipname"
 msgid "Luxemburg"
-msgstr ""
+msgstr "Люксембург"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:227
 msgctxt "shipname"
 msgid "Lwiw"
-msgstr ""
+msgstr "Львов"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:229
 msgctxt "shipname"
 msgid "Lyon"
-msgstr ""
+msgstr "Лион"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:231
 msgctxt "shipname"
 msgid "Machatschkala"
-msgstr ""
+msgstr "Махачкала"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:233
 msgctxt "shipname"
 msgid "Madrid"
-msgstr ""
+msgstr "Мадрид"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:235
 msgctxt "shipname"
 msgid "Málaga"
-msgstr ""
+msgstr "Малага"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:237
 msgctxt "shipname"
 msgid "Manchester"
-msgstr ""
+msgstr "Манчестер"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:239
 msgctxt "shipname"
 msgid "Marseille"
-msgstr ""
+msgstr "Марсель"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:241
 msgctxt "shipname"
 msgid "Milano"
-msgstr ""
+msgstr "Милан"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:243
 msgctxt "shipname"
 msgid "Minsk"
-msgstr ""
+msgstr "Минск"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:245
 msgctxt "shipname"
 msgid "Monaco"
-msgstr ""
+msgstr "Монако"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:247
 msgctxt "shipname"
 msgid "Moskwa"
-msgstr ""
+msgstr "Москва"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:249
 msgctxt "shipname"
 msgid "München"
-msgstr ""
+msgstr "Мюнхен"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:251
 msgctxt "shipname"
 msgid "Nabereschnyje Tschelny"
-msgstr ""
+msgstr "Набережные Челны"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:253
 msgctxt "shipname"
 msgid "Napoli"
-msgstr ""
+msgstr "Неаполь"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:255
 msgctxt "shipname"
 msgid "Nikosia"
-msgstr ""
+msgstr "Никосия"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:257
 msgctxt "shipname"
 msgid "Nischni Nowgorod"
-msgstr ""
+msgstr "Нижний Новгород"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:259
 msgctxt "shipname"
 msgid "Nürnberg"
-msgstr ""
+msgstr "Нюрнберг"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:261
 msgctxt "shipname"
 msgid "Odessa"
-msgstr ""
+msgstr "Одесса"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:263
 msgctxt "shipname"
 msgid "Orenburg"
-msgstr ""
+msgstr "Оренбург"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:265
 msgctxt "shipname"
 msgid "Oslo"
-msgstr ""
+msgstr "Осло"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:267
 msgctxt "shipname"
 msgid "Palermo"
-msgstr ""
+msgstr "Палермо"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:269
 msgctxt "shipname"
 msgid "Paris"
-msgstr ""
+msgstr "Париж"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:271
 msgctxt "shipname"
 msgid "Pensa"
-msgstr ""
+msgstr "Пенса"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:273
 msgctxt "shipname"
 msgid "Perm"
-msgstr ""
+msgstr "Пермь"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:275
 msgctxt "shipname"
 msgid "Podgorica"
-msgstr ""
+msgstr "Подгорица"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:277
 msgctxt "shipname"
 msgid "Poznań"
-msgstr ""
+msgstr "Познань"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:279
 msgctxt "shipname"
 msgid "Praha"
-msgstr ""
+msgstr "Прага"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:281
 msgctxt "shipname"
 msgid "Prishtina"
-msgstr ""
+msgstr "Приштина"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:283
 msgctxt "shipname"
 msgid "Reykjavík"
-msgstr ""
+msgstr "Рейкьявик"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:285
 msgctxt "shipname"
 msgid "Rīga"
-msgstr ""
+msgstr "Рига"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:287
 msgctxt "shipname"
 msgid "Rjasan"
-msgstr ""
+msgstr "Рязань"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:289
 msgctxt "shipname"
 msgid "Roma"
-msgstr ""
+msgstr "Рим"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:291
 msgctxt "shipname"
 msgid "Rostow-na-Donu"
-msgstr ""
+msgstr "Ростов-на-Дону"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:293
 msgctxt "shipname"
 msgid "Rotterdam"
-msgstr ""
+msgstr "Роттердам"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:295
 msgctxt "shipname"
 msgid "San Marino"
-msgstr ""
+msgstr "Сан-Марино"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:297
 msgctxt "shipname"
 msgid "Samara"
-msgstr ""
+msgstr "Самара"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:299
 msgctxt "shipname"
 msgid "Sankt Petersburg"
-msgstr ""
+msgstr "Санкт-Петербург"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:301
 msgctxt "shipname"
 msgid "Saporischschja"
-msgstr ""
+msgstr "Запорожье"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:303
 msgctxt "shipname"
 msgid "Sarajevo"
-msgstr ""
+msgstr "Сараево"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:305
 msgctxt "shipname"
 msgid "Saratow"
-msgstr ""
+msgstr "Саратов"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:307
 msgctxt "shipname"
 msgid "Sevilla"
-msgstr ""
+msgstr "Севилья"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:309
 msgctxt "shipname"
 msgid "Sheffield"
-msgstr ""
+msgstr "Шеффилд"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:311
 msgctxt "shipname"
 msgid "Skopje"
-msgstr ""
+msgstr "Скопье"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:313
 msgctxt "shipname"
 msgid "Sofia"
-msgstr ""
+msgstr "София"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:315
 msgctxt "shipname"
 msgid "Stockholm"
-msgstr ""
+msgstr "Стокгольм"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:317
 msgctxt "shipname"
 msgid "Stuttgart"
-msgstr ""
+msgstr "Штутгарт"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:319
 msgctxt "shipname"
 msgid "Tallinn"
-msgstr ""
+msgstr "Таллин"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:321
 msgctxt "shipname"
 msgid "Tirana"
-msgstr ""
+msgstr "Тирана"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:323
 msgctxt "shipname"
 msgid "Toljatti"
-msgstr ""
+msgstr "Тольятти"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:325
 msgctxt "shipname"
 msgid "Torino"
-msgstr ""
+msgstr "Турин"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:327
 msgctxt "shipname"
 msgid "Ufa"
-msgstr ""
+msgstr "Уфа"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:329
 msgctxt "shipname"
 msgid "Uljanowsk"
-msgstr ""
+msgstr "Ульяновск"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:331
 msgctxt "shipname"
 msgid "Vaduz"
-msgstr ""
+msgstr "Вадуц"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:333
 msgctxt "shipname"
 msgid "Valencia"
-msgstr ""
+msgstr "Валенсия"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:335
 msgctxt "shipname"
 msgid "Valletta"
-msgstr ""
+msgstr "Валлетта"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:337
 msgctxt "shipname"
 msgid "Vilnius"
-msgstr ""
+msgstr "Вильнюс"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:339
 msgctxt "shipname"
 msgid "Warszawa"
-msgstr ""
+msgstr "Варшава"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:341
 msgctxt "shipname"
 msgid "Wien"
-msgstr ""
+msgstr "Вена"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:343
 msgctxt "shipname"
 msgid "Wolgograd"
-msgstr ""
+msgstr "Волгоград"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:345
 msgctxt "shipname"
 msgid "Woronesch"
-msgstr ""
+msgstr "Воронеж"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:347
 msgctxt "shipname"
 msgid "Wrocław"
-msgstr ""
+msgstr "Вроцлав"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:349
 msgctxt "shipname"
 msgid "Zagreb"
-msgstr ""
+msgstr "Загреб"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/ship/init.lua:351
 msgctxt "shipname"
 msgid "Zaragoza"
-msgstr ""
+msgstr "Сарагоса"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental Europeans tribe."
@@ -3859,6 +3864,8 @@ msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
 "arena to protect soldiers with additional health points."
 msgstr ""
+"Улучшеные доспехи производится в мануфактуре и используется на Арене "
+"поединков чтобы повысить здоровье солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:596
@@ -3921,6 +3928,9 @@ msgid ""
 "and used in a battle arena – together with food – to train soldiers in "
 "attack."
 msgstr ""
+"Это Улучшенное копье со стальным наконечником. Его производят в мануфактуре "
+"и используют на арене поединков – вместе с едой – для тренировки солдат в "
+"уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:653
@@ -3937,6 +3947,8 @@ msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
 "in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
+"Это Тесак. Он производится в продвинутой мануфактуре и используется на арене "
+"поединков – вместе с едой – для тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:671
@@ -3972,6 +3984,9 @@ msgid ""
 "are produced in the advanced manufactory and used in the advanced battle "
 "arena – together with food – to train soldiers in defense."
 msgstr ""
+"Эти улучшенные щиты используются лучшими солдатами Европейцев. Они "
+"производятся в продвинутой мануфактуре и используются на продвинутой арене "
+"поединков – вместе с едой – для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:713
@@ -4861,27 +4876,27 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2277
 msgctxt "warehousename"
 msgid "Europe"
-msgstr ""
+msgstr "Европа"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2278
 msgctxt "warehousename"
 msgid "Åland"
-msgstr ""
+msgstr "Аланд"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2279
 msgctxt "warehousename"
 msgid "Albania"
-msgstr ""
+msgstr "Албания"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2280
 msgctxt "warehousename"
 msgid "Andorra"
-msgstr ""
+msgstr "Андорра"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2281
 msgctxt "warehousename"
 msgid "Armenia"
-msgstr ""
+msgstr "Армения"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2282
 msgctxt "warehousename"
@@ -4891,47 +4906,47 @@ msgstr "Австрия"
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2283
 msgctxt "warehousename"
 msgid "Azerbaijan"
-msgstr ""
+msgstr "Азербайджан"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2284
 msgctxt "warehousename"
 msgid "Belarus"
-msgstr ""
+msgstr "Беларусь"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2285
 msgctxt "warehousename"
 msgid "Belgium"
-msgstr ""
+msgstr "Бельгия"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2286
 msgctxt "warehousename"
 msgid "Bosnia"
-msgstr ""
+msgstr "Босния"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2287
 msgctxt "warehousename"
 msgid "Bulgaria"
-msgstr ""
+msgstr "Болгария"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2288
 msgctxt "warehousename"
 msgid "Corsica"
-msgstr ""
+msgstr "Корсика"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2289
 msgctxt "warehousename"
 msgid "Croatia"
-msgstr ""
+msgstr "Хорватия"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2290
 msgctxt "warehousename"
 msgid "Cyprus"
-msgstr ""
+msgstr "Кипр"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2291
 msgctxt "warehousename"
 msgid "Czechia"
-msgstr ""
+msgstr "Чехия"
 
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:2292
 msgctxt "warehousename"
@@ -5840,7 +5855,7 @@ msgstr "Обычный Инструктор"
 #: addons/europeans_tribe.wad/tribes/workers/worker_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Worker"
-msgstr ""
+msgstr "Продвинутый работник"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/worker_basic/init.lua:8
