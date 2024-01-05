@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Yuriy Sokolov <lention@mail.ru>, 2022
+# Yuriy Sokolov <lention@mail.ru>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 03:07+0100\n"
+"POT-Creation-Date: 2024-01-05 03:07+0100\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
-"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2022\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -77,22 +77,24 @@ msgstr ""
 
 #: addons/explorer-wins.wad/init.lua:94
 msgid "Win condition not compatible with \"No fog of war\""
-msgstr ""
+msgstr "Условия победы несовместимы с \"Нет тумана войны\""
 
 #: addons/explorer-wins.wad/init.lua:95
 msgid ""
 "The win condition %1$s can not be played with \"No fog of war\" enabled."
 msgstr ""
+"Условия победы %1$s нельзя использовать с включенной функцией \"Нет тумана "
+"войны\"."
 
 #: addons/explorer-wins.wad/init.lua:96
 msgid "Continue playing endlessly or restart with fog."
-msgstr ""
+msgstr "Продолжайте играть без финала или начните заново с туманом."
 
 #: addons/explorer-wins.wad/init.lua:150
 msgid "Player %1$1d has explored %2$1d%%"
-msgstr ""
+msgstr "Игрок %1$1d исследовал %2$1d%%"
 
 #: addons/explorer-wins.wad/init.lua:152
 #, lua-format
 msgid " (%d fields)"
-msgstr ""
+msgstr "(%d Полей)"
