@@ -1,0 +1,109 @@
+diff --git a/artifacts-tmp-1.lua b/../addons/artifacts-extendable.wad/init.lua
+index c2208cf124..ac48d19f92 100644
+
+to adapt init.lua more that it is easily translatable (only new texts need to be translated)
+--- a/artifacts-tmp-1.lua
++++ b/../addons/artifacts-extendable.wad/init.lua
+@@ -9,16 +9,22 @@ push_textdomain("win_conditions")
+ 
+ include "scripting/win_conditions/win_condition_texts.lua"
+ 
+-local wc_name = "Artifacts"
++push_textdomain("artifacts-extendable", true)
++local wc_name = "Artifacts (ex)"
+ -- This needs to be exactly like wc_name, but localized, because wc_name
+ -- will be used as the key to fetch the translation in C++
+-local wc_descname = _("Artifacts")
++local wc_descname = _("Artifacts (ex)")
++pop_textdomain()
++
++local t_ = _ -- to translate original texts
++local t_ngettext = ngettext
++
+ local wc_version = 1
+-local wc_desc = _("Search for ancient artifacts. Once all of them are found, the team who owns most of them will win the game.")
++local wc_desc = t_("Search for ancient artifacts. Once all of them are found, the team who owns most of them will win the game.")
+ local wc_artifacts = "Artifacts owned"
+ -- This needs to be exactly like wc_artifacts, but localized, because wc_artifacts
+ -- will be used as the key to fetch the translation in C++
+-local wc_artifacts_i18n = _("Artifacts owned")
++local wc_artifacts_i18n = t_("Artifacts owned")
+ 
+ -- Table of all artifacts to conquer
+ local artifact_fields = {}
+@@ -27,7 +33,7 @@ local artifact_fields = {}
+ local excluded_from_winning = {}
+ 
+ -- global for extending, do not use module's return value instead to be compatible with old wl versions
+-wc_artifacts_extendable = wc_artifacts_extendable_prepared = {
++wc_artifacts_extendable = {
+    exclude_from_winning = false, -- is set from init
+    get_artifact_fields = function()
+       return artifact_fields
+@@ -88,28 +94,28 @@ local r = {
+ 
+       if #artifact_fields == 0 then
+          for idx, plr in ipairs(plrs) do
+-            send_to_inbox(plr, _("No Artifacts"), p(_("There are no artifacts on this map. This should not happen. Please file a bug report on %s and specify your Widelands version and the map you tried to load.")):bformat("https://www.widelands.org/wiki/ReportingBugs/"), {popup = true})
++            send_to_inbox(plr, t_("No Artifacts"), p(t_("There are no artifacts on this map. This should not happen. Please file a bug report on %s and specify your Widelands version and the map you tried to load.")):bformat("https://www.widelands.org/wiki/ReportingBugs/"), {popup = true})
+          end
+          return
+       end
+ 
+       local found_artifact = {
+          -- TRANSLATORS: Keep this as short as possible. You can also translate this as "New artifact"
+-         title = _("Artifact Found"),
+-         body_team = p(_([[Your team found a new artifact.]])),
+-         body_single = p(_([[You found a new artifact.]]))
++         title = t_("Artifact Found"),
++         body_team = p(t_([[Your team found a new artifact.]])),
++         body_single = p(t_([[You found a new artifact.]]))
+       }
+       local lost_artifact = {
+          -- TRANSLATORS: Keep this as short as possible.
+-         title = _("Artifact Lost"),
+-         body_team = p(_([[One of your team’s artifacts was stolen by an enemy.]])),
+-         body_single = p(_([[One of your artifacts was stolen by an enemy.]]))
++         title = t_("Artifact Lost"),
++         body_team = p(t_([[One of your team’s artifacts was stolen by an enemy.]])),
++         body_single = p(t_([[One of your artifacts was stolen by an enemy.]]))
+       }
+       local stole_artifact = {
+          -- TRANSLATORS: Keep this as short as possible.
+-         title = _("Artifact Conquered"),
+-         body_team = p(_([[Your team stole an artifact from an enemy.]])),
+-         body_single = p(_([[You stole an artifact from an enemy.]]))
++         title = t_("Artifact Conquered"),
++         body_team = p(t_([[Your team stole an artifact from an enemy.]])),
++         body_single = p(t_([[You stole an artifact from an enemy.]]))
+       }
+ 
+       local function _broadcast_to_team(player, msg, f)
+@@ -193,12 +199,12 @@ local r = {
+       end
+ 
+       local teams = {}
+-      local msg = h3(_("Overview:"))
++      local msg = h3(t_("Overview:"))
+       for idx, plr in ipairs(plrs) do
+          if plr.team == 0 then
+-            local artifacts = (ngettext("%i artifact", "%i artifacts", artifacts_per_team[_getkey(plr)])):format(artifacts_per_team[_getkey(plr)])
++            local artifacts = (t_ngettext("%i artifact", "%i artifacts", artifacts_per_team[_getkey(plr)])):format(artifacts_per_team[_getkey(plr)])
+             -- TRANSLATORS: e.g. Team 1 owns 5 artifacts.
+-            msg = msg .. p((_("%1$s owns %2$s.")):bformat(plr.name, artifacts))
++            msg = msg .. p((t_("%1$s owns %2$s.")):bformat(plr.name, artifacts))
+          else
+             if teams[plr.team] then
+                teams[plr.team][#teams[plr.team]+1] = plr
+@@ -209,9 +215,9 @@ local r = {
+       end
+       for idx, t in ipairs(teams) do
+          local members = _get_member_names(t)
+-         local artifacts = (ngettext("%i artifact", "%i artifacts", artifacts_per_team[_getkey(t[1])])):format(artifacts_per_team[_getkey(t[1])])
++         local artifacts = (t_ngettext("%i artifact", "%i artifacts", artifacts_per_team[_getkey(t[1])])):format(artifacts_per_team[_getkey(t[1])])
+          -- TRANSLATORS: %1$i is the team's number; %2$s is a list of team members (e.g. "Steve, Robert, David"), %3$s is something like "x artifact(s)"
+-         msg = msg .. p((_("Team %1$i (%2$s) owns %3$s.")):bformat(t[1].team, members, artifacts))
++         msg = msg .. p((t_("Team %1$i (%2$s) owns %3$s.")):bformat(t[1].team, members, artifacts))
+       end
+ 
+       for idx, plr in ipairs(plrs) do

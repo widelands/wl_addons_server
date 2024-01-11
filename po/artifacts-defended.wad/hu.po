@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 03:06+0100\n"
+"POT-Creation-Date: 2024-01-11 03:07+0100\n"
 "PO-Revision-Date: 2023-11-25 20:04+0000\n"
 "Language-Team: Hungarian (https://app.transifex.com/widelands/teams/35159/"
 "hu/)\n"
@@ -22,82 +22,89 @@ msgstr ""
 msgid "artifacts, defended"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:59
+#: addons/artifacts-defended.wad/defending.lua:61
 msgid "WARNING"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:113
+#: addons/artifacts-defended.wad/defending.lua:115
 msgid "to conquer"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:125
+#: addons/artifacts-defended.wad/defending.lua:127
 msgid "Could not adapt the tribe."
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:137
+#: addons/artifacts-defended.wad/defending.lua:143
 msgid "Defending player can not be in a team, remove."
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:220
+#: addons/artifacts-defended.wad/defending.lua:226
 msgid "ERROR placing building"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:227
+#: addons/artifacts-defended.wad/defending.lua:233
 #, lua-format
 msgid "No matching artifact building named %s"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:233
+#: addons/artifacts-defended.wad/defending.lua:239
 msgid "wrong field found"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:263
+#: addons/artifacts-defended.wad/defending.lua:269
 #, lua-format
 msgid "The player %s has no artifacts to defend."
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:265
+#: addons/artifacts-defended.wad/defending.lua:271
 msgid "No artifacts"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:291
+#: addons/artifacts-defended.wad/defending.lua:297
 msgid "could not place normal artifact (1x)"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:359
+#: addons/artifacts-defended.wad/defending.lua:365
 msgid "Several players configured for defending:"
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:409
-#, lua-format
-msgid "To play with win condition artifacts, it must be adapted. See in %s"
-msgstr ""
-
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/artifacts-defended.wad/defending.lua:417
+#: addons/artifacts-defended.wad/defending.lua:421
 msgid "This (ai) player will defend the artifacts."
 msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the starting condition
-#: addons/artifacts-defended.wad/defending.lua:419
+#: addons/artifacts-defended.wad/defending.lua:423
 msgid "Set the tribe to random for finding out in game what it will be."
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:420
+#: addons/artifacts-defended.wad/defending.lua:424
 msgid "Only for ai player as nothing can be done."
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:421
+#: addons/artifacts-defended.wad/defending.lua:425
 msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:422
+#: addons/artifacts-defended.wad/defending.lua:426
 msgid ""
 "On maps with artifacts not reachable by a warrior, some artifacts will not "
 "be conquerable."
 msgstr ""
 
-#: addons/artifacts-defended.wad/defending.lua:432
+#: addons/artifacts-defended.wad/defending.lua:436
 #, lua-format
 msgid "Player %s defends artifacts and has aditionally another start position"
+msgstr ""
+
+#: screenshots/artifacts-defended.wad/descriptions:3
+msgid "found artifact"
+msgstr ""
+
+#: screenshots/artifacts-defended.wad/descriptions:4
+msgid "attack artifact"
+msgstr ""
+
+#: screenshots/artifacts-defended.wad/descriptions:5
+msgid "conquered artifact"
 msgstr ""

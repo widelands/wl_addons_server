@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-23 03:01+0200\n"
+"POT-Creation-Date: 2024-01-11 03:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: addons/time-limitted-peaceful.wad/addon:4
-msgid "limits the peaceful mode to 45 minutes"
+msgid "Time limited peaceful mode"
 msgstr ""
 
-#: addons/time-limitted-peaceful.wad/init.lua:20
-msgid "peaceful mode ends now"
+#: addons/time-limitted-peaceful.wad/init.lua:29
+msgid "Peaceful mode ends now"
 msgstr ""
 
-#: addons/time-limitted-peaceful.wad/init.lua:21
-msgid "all players can attack each other now (team mates excluded of course)"
+#: addons/time-limitted-peaceful.wad/init.lua:30
+msgid "All players can attack each other. (Team mates excluded of course.)"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:77
+msgid "win condition config"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:88
+msgid "Peaceful mode for ..."
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:89
+msgid "Duration of peaceful mode"
 msgstr ""

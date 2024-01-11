@@ -3,17 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Translators:
-# Benedikt Straub <benedikt-straub@web.de>, 2023
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 03:06+0200\n"
+"POT-Creation-Date: 2024-01-11 03:07+0100\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
-"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
 "nds/)\n"
 "Language: nds\n"
@@ -23,14 +19,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/time-limitted-peaceful.wad/addon:4
-msgid "limits the peaceful mode to 45 minutes"
-msgstr "De Düür vun de freedsamen Speel up 45 Menüten körten"
-
-#: addons/time-limitted-peaceful.wad/init.lua:20
-msgid "peaceful mode ends now"
-msgstr "Freedsaam Speel ennt nu"
-
-#: addons/time-limitted-peaceful.wad/init.lua:21
-msgid "all players can attack each other now (team mates excluded of course)"
+msgid "Time limited peaceful mode"
 msgstr ""
-"All Spelers könen eenanner nu angriepen (bit up Klottjenfrünnen natürelk)"
+
+#: addons/time-limitted-peaceful.wad/init.lua:29
+msgid "Peaceful mode ends now"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:30
+msgid "All players can attack each other. (Team mates excluded of course.)"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:77
+msgid "win condition config"
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:88
+msgid "Peaceful mode for ..."
+msgstr ""
+
+#: addons/time-limitted-peaceful.wad/init.lua:89
+msgid "Duration of peaceful mode"
+msgstr ""

@@ -3,10 +3,6 @@
 -- some config
 local DEFAULT_DIFFICULTY = 8 -- ~ maximum number of soldiers in an artifact
 local NO_COUNTER_ATTACK = true -- is defending only if true
-local WIN_ARTIFACTS_ADAPTED = false
---[[ set above to true if you have adapted two lines in the file data/scripts/win_conditions/artifacts.lua
-     like in patch ./scripting-win_conditions-artifacts.patch
-]]
 local DEBUG = false
 
 if defending_artifacts then
@@ -15,6 +11,10 @@ if defending_artifacts then
 end
 
 local function check_if_artifact_wc_matching()
+    do
+        return false -- win condition artifacts (from widelands) does not work
+    end
+    -- old
     local build_id = get_build_id()
     local sep_pos = build_id:find("~git")
     if not sep_pos then -- official release
@@ -26,9 +26,11 @@ local function check_if_artifact_wc_matching()
     end
     local sep_pos2 = build_id:find(" ")
     local commit_no = tonumber(build_id:sub(sep_pos+4, sep_pos2 - 1))
-    return commit_no and commit_no > math.huge -- TODO set to a number after patch is applied
+    return commit_no and commit_no > math.huge -- TODO set to a number if ever a patch is applied
 end
-if not WIN_ARTIFACTS_ADAPTED and check_if_artifact_wc_matching() then
+
+local WIN_ARTIFACTS_ADAPTED = false
+if check_if_artifact_wc_matching() then
     -- is adapted in widelands itself
     WIN_ARTIFACTS_ADAPTED = true
 end
@@ -99,7 +101,7 @@ local DEFENDER_TEAM = 81
 --      - if defending_player gets an artifact always before it can get claimed, ...
 --          - he can win when several ones get close at the same time
 --          - game ends when he gets the last building (with him getting at least one point)
---      => win condition artifacts (probably) needs adaptation
+--      => win condition artifacts needs adaptation => copy it in an extension
 --      => putting soldiers in artifacts late is an advantage anyway
 
 -- .. function prepare_tribe(tribe_descr)
@@ -132,6 +134,10 @@ end
 
 local function prepare_player(defending_player)
     defending_player.hidden_from_general_statistics = true
+    if wc_artifacts_extendable and wc_artifacts_extendable.exclude_from_winning then
+        -- is set by the addon from init script, so only when active
+        wc_artifacts_extendable.exclude_from_winning(defending_player)
+    end
     if defending_player.team > 0 then
         push_textdomain("artifacts-defended.wad", true)
         warn(_("Defending player can not be in a team, remove."))
@@ -405,14 +411,12 @@ push_textdomain("artifacts-defended.wad", true)
 local artifacts_adapt_instruction = ""
 local artifacts_wc_incompatible = nil
 if not WIN_ARTIFACTS_ADAPTED then
-    artifacts_adapt_instruction ="<br>" ..
-        _("To play with win condition artifacts, it must be adapted. See in %s"):bformat(__file__)
     artifacts_wc_incompatible = "scripting/win_conditions/artifacts.lua"
 end
 
 -- for the calling tribe script:
 defending_artifacts = {
-    init = {
+    ret = {
         -- TRANSLATORS: This is the name of a starting condition
         descname = _("This (ai) player will defend the artifacts."),
         -- TRANSLATORS: This is the tooltip for the starting condition

@@ -4,4 +4,4 @@ include "addons/artifacts-defended.wad/defending.lua"
 
 -- only wl.ui exists here
 
-return defending_artifacts.init
+return defending_artifacts.ret

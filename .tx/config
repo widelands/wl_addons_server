@@ -163,6 +163,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:artifacts-extendable-wad]
+file_filter            = po/artifacts-extendable.wad/<lang>.po
+source_file            = po/artifacts-extendable.wad/artifacts-extendable.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:australia-tasmania-newzealand-wad]
 file_filter            = po/australia_tasmania_newzealand.wad/<lang>.po
 source_file            = po/australia_tasmania_newzealand.wad/australia_tasmania_newzealand.wad.pot
@@ -401,6 +409,22 @@ file_filter            = po/no_default_resources.wad/<lang>.po
 source_file            = po/no_default_resources.wad/no_default_resources.wad.pot
 source_lang            = en
 type                   = PO
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:no-stats-till-spied-wad]
+file_filter            = po/no-stats-till-spied.wad/<lang>.po
+source_file            = po/no-stats-till-spied.wad/no-stats-till-spied.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:no-stats-wad]
+file_filter            = po/no-stats.wad/<lang>.po
+source_file            = po/no-stats.wad/no-stats.wad.pot
+type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
