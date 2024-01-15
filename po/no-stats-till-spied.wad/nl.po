@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 03:07+0100\n"
+"POT-Creation-Date: 2024-01-15 03:07+0100\n"
 "PO-Revision-Date: 2024-01-10 16:15+0000\n"
+"Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,15 +23,16 @@ msgstr ""
 
 #: addons/no-stats-till-spied.wad/addon:4
 msgid "No player stats until a scout spied them"
-msgstr ""
+msgstr "Geen spelersstatistieken totdat een scout ze ziet"
 
 #: addons/no-stats-till-spied.wad/addon:5
 msgid "It needs a scout to know details about the other players."
 msgstr ""
+"Er is een scout nodig om details over de andere spelers te weten te komen."
 
 #: addons/no-stats-till-spied.wad/init.lua:18
 msgid "No player statistics till spied"
-msgstr ""
+msgstr "Geen spelersstatistieken tot bespioneerd"
 
 #: addons/no-stats-till-spied.wad/init.lua:19
 msgid ""
@@ -36,13 +41,17 @@ msgid ""
 "            To know statistics about other players, you need a scout to spy "
 "there."
 msgstr ""
+"Spelers hebben statistieken over hun XXX in hun pakhuizen (alle gebouwen die "
+"goederen opslaan).\n"
+"            Om statistieken over andere spelers te weten te komen, heb je "
+"een scout nodig."
 
 #. TRANSLATORS: %s is the name of a player
 #: addons/no-stats-till-spied.wad/init.lua:67
 #, lua-format
 msgid "A spy has now information about %s. Find it in statistics."
-msgstr ""
+msgstr "Een spion heeft nu informatie over %s. Zoek het in statistieken."
 
 #: addons/no-stats-till-spied.wad/init.lua:69
 msgid "A spy gives information"
-msgstr ""
+msgstr "Een spion geeft informatie"
