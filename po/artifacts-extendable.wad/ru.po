@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Yuriy Sokolov <lention@mail.ru>, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 03:07+0100\n"
+"POT-Creation-Date: 2024-01-20 03:07+0100\n"
 "PO-Revision-Date: 2024-01-10 16:14+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -25,11 +29,13 @@ msgid ""
 "Copy of widelands artifacts win condition, which is extendable to work with "
 "several addons."
 msgstr ""
+"Копия стандартных условий победы с артефактами, которая расширена для работы "
+"с несколькими дополнениями."
 
 #: addons/artifacts-extendable.wad/addon:9
 msgid "artifacts win condition"
-msgstr ""
+msgstr "условия победы \"артефакты\""
 
 #: addons/artifacts-extendable.wad/init.lua:16
 msgid "Artifacts (ex)"
-msgstr ""
+msgstr "Артефакты (расш)"
