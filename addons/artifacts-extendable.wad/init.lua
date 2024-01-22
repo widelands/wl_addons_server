@@ -235,6 +235,6 @@ local r = {
    pop_textdomain()
    end,
 }
-wc_artifacts_extendable_prepared.r = r
+wc_artifacts_extendable.r = r
 pop_textdomain()
 return r

@@ -7,7 +7,7 @@ to adapt original artifacts file so it works
 @@ -23,6 +23,21 @@ local wc_artifacts_i18n = _("Artifacts owned")
  -- Table of all artifacts to conquer
  local artifact_fields = {}
- 
+
 +-- Table of players excluded from winning
 +local excluded_from_winning = {}
 +
@@ -55,6 +55,6 @@ to adapt original artifacts file so it works
     pop_textdomain()
     end,
  }
-+wc_artifacts_extendable_prepared.r = r
++wc_artifacts_extendable.r = r
  pop_textdomain()
  return r

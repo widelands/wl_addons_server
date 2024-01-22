@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# karl Antonius, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 03:07+0100\n"
+"POT-Creation-Date: 2024-01-22 03:07+0100\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
+"Last-Translator: karl Antonius, 2024\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -19,24 +23,26 @@ msgstr ""
 
 #: addons/time-limitted-peaceful.wad/addon:4
 msgid "Time limited peaceful mode"
-msgstr ""
+msgstr "Zeitlich begrenzter friedlicher Modus"
 
 #: addons/time-limitted-peaceful.wad/init.lua:29
 msgid "Peaceful mode ends now"
-msgstr ""
+msgstr "Der friedliche Modus endet jetzt"
 
 #: addons/time-limitted-peaceful.wad/init.lua:30
 msgid "All players can attack each other. (Team mates excluded of course.)"
 msgstr ""
+"Alle Spieler können sich gegenseitig angreifen. (Teamkollegen natürlich "
+"ausgenommen.) "
 
 #: addons/time-limitted-peaceful.wad/init.lua:77
 msgid "win condition config"
-msgstr ""
+msgstr "Win-Bedingungskonfiguration"
 
 #: addons/time-limitted-peaceful.wad/init.lua:88
 msgid "Peaceful mode for ..."
-msgstr ""
+msgstr "Friedlicher Modus für ..."
 
 #: addons/time-limitted-peaceful.wad/init.lua:89
 msgid "Duration of peaceful mode"
-msgstr ""
+msgstr "Dauer des friedlichen Modus"
