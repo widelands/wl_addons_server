@@ -454,10 +454,10 @@ public class HandleCommand {
 		}
 
 		out.println(mapFile.getName());
-		out.println(hint.replaceAll("\n", "<br>"));
-		out.println(hint.replaceAll("\n", "<br>"));
-		out.println(uploader_comment.replaceAll("\n", "<br>"));
-		out.println(uploader_comment.replaceAll("\n", "<br>"));
+		out.println(Utils.linebreaksToRichtext(hint));
+		out.println(Utils.linebreaksToRichtext(hint));
+		out.println(Utils.linebreaksToRichtext(uploader_comment));
+		out.println(Utils.linebreaksToRichtext(uploader_comment));
 		out.println(sqlMain.getInt("w"));
 		out.println(sqlMain.getInt("h"));
 		out.println(sqlMain.getInt("nr_players"));
