@@ -388,7 +388,7 @@ public class HandleCommand {
 		out.println(Utils.getUsername(sqlMain.getLong("uploader_id")));
 
 		out.println();       // add-on version
-		out.println();       // i18n version
+		out.println("0");    // i18n version
 		out.println("map");  // category
 		out.println();       // requirements
 
