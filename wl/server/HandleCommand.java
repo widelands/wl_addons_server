@@ -184,7 +184,7 @@ public class HandleCommand {
 	 */
 	private void handleCmdList() throws Exception {
 		// Args: [2+: control]
-		checkCommandVersion(2);
+		checkCommandVersion(3);
 		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 0 : 1);
 
 		final boolean versionCheck =
@@ -212,6 +212,24 @@ public class HandleCommand {
 			compatibleAddOns.add(addon);
 		}
 
+		if (commandVersion >= 3) {
+			sql = Utils.sql(Utils.Databases.kWebsite, "select slug,file,wl_version_after from wlmaps_map order by slug");
+			while (sql.next()) {
+				if (!new File(Utils.config("website_maps_path"), sql.getString("file")).isFile()) {
+					continue;  // File does not exist
+				}
+
+				if (versionCheck) {
+					String mapRequirement = sql.getString("wl_version_after");
+					if (mapRequirement != null && !ServerUtils.matchesWidelandsVersion(widelandsVersion, mapRequirement, null)) {
+						continue;
+					}
+				}
+
+				compatibleAddOns.add(sql.getString("slug") + ".map");
+			}
+		}
+
 		MuninStatistics.MUNIN.skipNextCmdInfo(compatibleAddOns.size() - (appendInfo ? 0 : 1));
 		out.println(compatibleAddOns.size());
 		for (String name : compatibleAddOns) out.println(name);
@@ -219,7 +237,7 @@ public class HandleCommand {
 
 		if (appendInfo) {
 			for (String name : compatibleAddOns) {
-				handle("2:CMD_INFO", name);
+				handle(commandVersion + ":CMD_INFO", name);
 			}
 		}
 	}
@@ -230,9 +248,29 @@ public class HandleCommand {
 	 */
 	private void handleCmdInfo() throws Exception {
 		// Args: name
-		checkCommandVersion(2);
+		checkCommandVersion(3);
 		ServerUtils.checkNrArgs(cmd, 1);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
+
+		if (cmd[1].endsWith(".wad")) {
+			handleCmdInfoAddOn();
+		} else if (cmd[1].endsWith(".map")) {
+			if (commandVersion < 3) {
+				throw new ServerUtils.WLProtocolException("Command version " + commandVersion + " not supported for maps");
+			}
+			cmd[1] = cmd[1].substring(0, cmd[1].length() - 4);  // remove .map pseudo-extension
+			handleCmdInfoMap();
+		} else {
+			throw new ServerUtils.WLProtocolException("Unrecognizable object type '" + cmd[1] + "'");
+		}
+	}
+
+	/**
+	 * Handle a CMD_INFO command for an add-on.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 * @todo Treat single-map map set add-ons like maps in CV3+
+	 */
+	private void handleCmdInfoAddOn() throws Exception {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ServerUtils.semaphoreRO(cmd[1], () -> {
@@ -316,6 +354,115 @@ public class HandleCommand {
 
 			out.println("ENDOFSTREAM");
 		});
+	}
+
+	/**
+	 * Handle a CMD_INFO command for a map.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 * @todo Localization for map strings
+	 */
+	private void handleCmdInfoMap() throws Exception {
+		ResultSet sqlMain =
+		    Utils.sql(Utils.Databases.kWebsite, "select *, UNIX_TIMESTAMP(pub_date) as timestamp from wlmaps_map where slug=?", cmd[1]);
+		if (!sqlMain.next())
+			throw new ServerUtils.WLProtocolException("Map '" + cmd[1] + "' is not in the database");
+
+		final long mapID = sqlMain.getLong("id");
+		final String name = sqlMain.getString("name");
+		final String descr = sqlMain.getString("descr");
+		final String hint = sqlMain.getString("hint");
+		final String uploader_comment = sqlMain.getString("uploader_comment");
+		final String author = sqlMain.getString("author");
+
+		final File minimapFile = new File(Utils.config("website_maps_path"), sqlMain.getString("minimap"));
+		final File mapFile = new File(Utils.config("website_maps_path"), sqlMain.getString("file"));
+
+		if (!mapFile.isFile()) throw new ServerUtils.WLProtocolException("Map file does not exist");
+
+		out.println(name);
+		out.println(name);
+		out.println(descr);
+		out.println(descr);
+		out.println(author);
+		out.println(author);
+		out.println(Utils.getUsername(sqlMain.getLong("uploader_id")));
+
+		out.println();       // add-on version
+		out.println();       // i18n version
+		out.println("map");  // category
+		out.println();       // requirements
+
+		// Correct min versions such as "18" or "build 19" to empty for simplicity.
+		// We know the user is using something newer than 1.2 anyway.
+		String mapMinWlVersion = sqlMain.getString("wl_version_after");
+		if (mapMinWlVersion == null || !mapMinWlVersion.matches("^\\d+(\\.\\d+)+$")) {
+			mapMinWlVersion = "";
+		}
+		out.println(mapMinWlVersion);
+
+		out.println();        // max version
+		out.println("true");  // sync safety - we just hope it contains no bad scripting...
+		out.println("0");     // number of screenshots
+
+		out.println(mapFile.length());
+		out.println(sqlMain.getLong("timestamp"));
+		out.println(sqlMain.getLong("nr_downloads"));
+
+		ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
+				"select score from star_ratings_userrating where rating_id=(select id from star_ratings_rating where object_id=?)", mapID);
+		int[] votes = new int[10];
+		for (int i = 0; i < votes.length; ++i) votes[i] = 0;
+		while (sql.next()) votes[sql.getInt("score") - 1]++;
+		for (int v : votes) out.println(v);
+
+		sql = Utils.sql(Utils.Databases.kWebsite,
+				"select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, UNIX_TIMESTAMP(date_modified) as edited, comment " +
+				"from threadedcomments_threadedcomment where " +
+				"content_type_id=(select id from django_content_type where app_label=?) and object_id=? and is_public>0",
+				Utils.config("website_maps_slug"), mapID);
+		ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
+		while (sql.next()) {
+			Long user = sql.getLong("user_id");
+			Long ts1 = sql.getLong("timestamp");
+			Long ts2 = sql.getLong("edited");
+			if (ts2.longValue() <= ts1.longValue()) ts2 = null;
+
+			comments.add(new Utils.AddOnComment(
+			    sql.getLong("id"), user, ts1, ts2 == null ? null : user, ts2, "", sql.getString("comment")));
+		}
+		out.println(comments.size());
+		for (Utils.AddOnComment c : comments) {
+			if (commandVersion >= 2) out.println(c.commentID);
+			out.println(Utils.getUsername(c.userID));
+			out.println(c.timestamp);
+			out.println(c.editorID == null ? "" : Utils.getUsername(c.editorID));
+			out.println(c.editTimestamp == null ? 0 : c.editTimestamp);
+			out.println(c.version);
+
+			String[] msg = c.message.split("\n");
+			out.println(msg.length - 1);
+			for (String m : msg) out.println(m);
+		}
+
+		out.println("verified");  // we don't review maps currently
+		out.println("2");         // nor do we assess their quality
+
+		if (minimapFile.isFile()) {
+			ServerUtils.writeOneFile(minimapFile, out);
+		} else {
+			out.println("0\n0");  // minimap should always exist, but not critical if it doesn't
+		}
+
+		out.println(hint);
+		out.println(hint);
+		out.println(uploader_comment);
+		out.println(uploader_comment);
+		out.println(sqlMain.getInt("w"));
+		out.println(sqlMain.getInt("h"));
+		out.println(sqlMain.getInt("nr_players"));
+		out.println(sqlMain.getString("world_name"));
+
+		out.println("ENDOFSTREAM");
 	}
 
 	/**
