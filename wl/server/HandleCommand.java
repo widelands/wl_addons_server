@@ -453,10 +453,10 @@ public class HandleCommand {
 			out.println("0\n0");  // minimap should always exist, but not critical if it doesn't
 		}
 
-		out.println(hint);
-		out.println(hint);
-		out.println(uploader_comment);
-		out.println(uploader_comment);
+		out.println(hint.replaceAll("\n", "<br>"));
+		out.println(hint.replaceAll("\n", "<br>"));
+		out.println(uploader_comment.replaceAll("\n", "<br>"));
+		out.println(uploader_comment.replaceAll("\n", "<br>"));
 		out.println(sqlMain.getInt("w"));
 		out.println(sqlMain.getInt("h"));
 		out.println(sqlMain.getInt("nr_players"));
