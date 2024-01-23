@@ -453,6 +453,7 @@ public class HandleCommand {
 			out.println("0\n0");  // minimap should always exist, but not critical if it doesn't
 		}
 
+		out.println(mapFile.getName());
 		out.println(hint.replaceAll("\n", "<br>"));
 		out.println(hint.replaceAll("\n", "<br>"));
 		out.println(uploader_comment.replaceAll("\n", "<br>"));

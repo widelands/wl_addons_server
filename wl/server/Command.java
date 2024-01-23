@@ -216,6 +216,7 @@ public enum Command {
 	 *  <li> icon checksum (0 for no icon), <code>\n</code>
 	 *  <li> icon filesize (0 for no icon), <code>\n</code>
 	 *  <li> icon file as a byte stream
+	 *  <li> .map only: map file name, <code>\n</code>
 	 *  <li> .map only: unlocalized hint, <code>\n</code>
 	 *  <li> .map only: localized hint, <code>\n</code>
 	 *  <li> .map only: unlocalized uploader comment, <code>\n</code>
