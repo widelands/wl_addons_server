@@ -1,5 +1,5 @@
 2
-71
+72
 1v1_high_level_map_pool.wad
 1v1 High Level Map Pool
 For high level 1v1 Gameplay add the-x addon
@@ -339,7 +339,7 @@ Face to face artifacts run! You will see your enemy most of the time and only th
 kaputtnik
 kaputtnik
 1674478722
-146
+148
 0
 0
 0
@@ -683,7 +683,7 @@ This addon adds my maps ''Java and Sumatra 1.0'', ''Java and Sumatra 1.1'' and '
 Nilpanda
 Nilpanda
 1666688231
-469
+471
 0
 0
 0
@@ -1536,7 +1536,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-430
+432
 0
 0
 0
@@ -1623,7 +1623,7 @@ Maps for the 2021 Tournament
 hessenfarmer
 hessenfarmer
 1619867883
-276
+277
 0
 0
 0
@@ -1825,7 +1825,7 @@ Win Condition for the 2021 Tournament: Create 10 Heroes without any coal from mo
 hessenfarmer
 hessenfarmer
 1619867883
-107
+108
 0
 0
 0
@@ -2436,7 +2436,7 @@ No description
 Solstice
 Solstice_s_Return
 1657988804
-438
+441
 0
 0
 0
@@ -2845,7 +2845,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-494
+497
 0
 0
 0
@@ -3149,6 +3149,82 @@ f96d1e4184ae81b733f779e0257d0726
 0378e611fc8cfcc195bfa80c2b8144f9
 0
 verified
+editor_analyse_map.wad
+Editor: Analyse Map
+Analysis tool: Compare the resources in the vicinity of player positions with a few clicks, or display a statistic of the whole map.
+kaputtnik
+kaputtnik
+1706043656
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0.1
+0
+89680
+ui_plugin
+0
+1
+img
+20
+addon
+callbacks.lua
+helper_functions.lua
+img/1_big_1.png
+img/2_medium_1.png
+img/3_small_1.png
+img/4_mine_1.png
+img/5_port_1.png
+img/coal4.png
+img/fish.png
+img/gold4.png
+img/images.xcf
+img/iron4.png
+img/map_analyse.png
+img/rocks6.png
+img/stones4.png
+img/trees.png
+img/water.png
+init.lua
+windows.lua
+0
+20
+89dd9afa1d15882f265906b041df4fcd
+b0522f5773a2b3ffba827353846fdf31
+f595bcf0fb7f41da6f8aad333639c699
+9a23a3b45d7315390653500c2d01a590
+e5f509b340d3d648cd52c4e3782c0833
+5263249d6e15695493962a4f04087ba2
+5c188d3a203d632932a57902ffb93126
+2ac2c2df658eda6fbd6357163a398678
+7e212c96acf6fa66a7043e1b4d085728
+837c41e138b056328ceb5ff59cf13eff
+2c64019afabb24beb8fe3baf74257262
+3d2d7838fa14247abf0541a4074e861f
+970ca822baf7386a0ea0c1ac66d47b2e
+161e41e23767d655103d6a081b81e0c9
+beec489b5cad0fee81090950ba77c31c
+9815061c49c89295812d3aff75b628e6
+e7f5488e245ea79e6440ed24e9bcfb78
+d5be7b3f8f12f2f93e6d5124296449e4
+879ed48d5117acc691227ddd774c681f
+66db6599f5f135d942c683f0fecfcda8
+3
+image1706043755347.png
+Analyse a map, Options
+image1706043806809.png
+Result for analysing Players
+image1706043854938.png
+Result when investigating a whole map
+unchecked
 editor_copy_area.wad
 Editor: Copy Area
 A plugin for the editor to copy the contents of a map region to another region.
@@ -7188,7 +7264,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-539
+540
 0
 0
 0
@@ -7269,7 +7345,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings, workers and some ware
 MarkMcWire
 MarkMcWire
 1621788282
-1201
+1202
 0
 0
 0
@@ -16691,7 +16767,7 @@ The player who has explored most of the world wins the game
 aDiscoverer
 aDiscoverer
 1667043185
-191
+193
 0
 0
 0
@@ -16925,7 +17001,7 @@ The first player who has at least 4 fully trained soldiers in his warehouses win
 kaputtnik
 kaputtnik
 1616241721
-162
+165
 0
 0
 0
@@ -17085,7 +17161,7 @@ A strange new world.
 Nordfriese
 Nordfriese
 1600000000
-396
+398
 0
 0
 0
@@ -17313,7 +17389,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-653
+656
 0
 0
 0
@@ -17481,7 +17557,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-611
+615
 0
 0
 0
@@ -18734,7 +18810,7 @@ Shallow water terrains, impassable for ships but walkable.
 kaputtnik
 kaputtnik
 1600000000
-260
+262
 0
 0
 0
@@ -19531,7 +19607,7 @@ Replaces some terrain graphics with those from the ancient Widelands days.
 Nordfriese
 Nordfriese
 1621620072
-168
+170
 0
 0
 0
@@ -20137,7 +20213,7 @@ This set of maps contains 6 small and medium-sized maps for 3-6 players. You can
 OIPUN
 OIPUN
 1615637480
-386
+387
 0
 0
 0
@@ -21881,7 +21957,7 @@ Terrains and (alpha) trees for tropical areas. Someday in future this add-on mig
 Yo...
 Yo...
 1622321739
-230
+232
 0
 0
 0
@@ -22731,7 +22807,7 @@ Contains flowering meadows, clearings, dolomites, clay soil, green water, muddy 
 OIPUN
 OIPUN
 1622916439
-329
+332
 0
 0
 0
@@ -23161,7 +23237,7 @@ White Summer Add-On is needed to play these maps.
 OIPUN
 OIPUN
 1623262581
-250
+251
 0
 0
 0
