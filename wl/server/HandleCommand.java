@@ -80,6 +80,25 @@ public class HandleCommand {
 	}
 
 	/**
+	 * Check whether the first command argument refers to an add-on or a map.
+	 * If so, strips the extension.
+	 * @return The command refers to a map.
+	 * @throws Exception If the version is out of bounds.
+	 */
+	private boolean checkCmd1IsMap() throws Exception {
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
+
+		if (cmd[1].endsWith(".wad")) return false;
+
+		if (cmd[1].endsWith(".map")) {
+			cmd[1] = cmd[1].substring(0, cmd[1].length() - 4);
+			return true;
+		}
+
+		throw new ServerUtils.WLProtocolException("Unrecognizable object type '" + cmd[1] + "'");
+	}
+
+	/**
 	 * Check that the command version is within the expected bounds.
 	 * @param max Maximum supported command version.
 	 * @throws Exception If the version is out of bounds.
@@ -250,18 +269,14 @@ public class HandleCommand {
 		// Args: name
 		checkCommandVersion(3);
 		ServerUtils.checkNrArgs(cmd, 1);
-		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 
-		if (cmd[1].endsWith(".wad")) {
-			handleCmdInfoAddOn();
-		} else if (cmd[1].endsWith(".map")) {
+		if (checkCmd1IsMap()) {
 			if (commandVersion < 3) {
 				throw new ServerUtils.WLProtocolException("Command version " + commandVersion + " not supported for maps");
 			}
-			cmd[1] = cmd[1].substring(0, cmd[1].length() - 4);  // remove .map pseudo-extension
 			handleCmdInfoMap();
 		} else {
-			throw new ServerUtils.WLProtocolException("Unrecognizable object type '" + cmd[1] + "'");
+			handleCmdInfoAddOn();
 		}
 	}
 
@@ -534,19 +549,20 @@ public class HandleCommand {
 		// Args: name vote
 		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 2);
-		if (username.isEmpty())
+		if (username.isEmpty()) {
 			throw new ServerUtils.WLProtocolException("You need to log in to vote");
-		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
+		}
+
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		final long addon = Utils.getAddOnID(cmd[1]);
 		final int vote = Integer.valueOf(cmd[2]);
 		Utils.sql(Utils.Databases.kAddOns, "delete from uservotes where user=? and addon=?",
-		          userDatabaseID, addon);
+			      userDatabaseID, addon);
 		if (vote > 0) {
 			Utils.sql(Utils.Databases.kAddOns,
-			          "insert into uservotes (user, addon, vote) value (?,?,?)", userDatabaseID,
-			          addon, vote);
+				      "insert into uservotes (user, addon, vote) value (?,?,?)", userDatabaseID,
+				      addon, vote);
 		}
 
 		out.println("ENDOFSTREAM");
@@ -564,13 +580,21 @@ public class HandleCommand {
 			out.println("NOT_LOGGED_IN");  // No exception here.
 			return;
 		}
-		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
-		ServerUtils.checkAddOnExists(cmd[1]);
 
-		ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
-		                          "select vote from uservotes where user=? and addon=?",
-		                          userDatabaseID, Utils.getAddOnID(cmd[1]));
-		out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
+		if (checkCmd1IsMap()) {
+			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
+				                      "select score from star_ratings_userrating where user_id=? and rating_id=(select id from star_ratings_rating where object_id=?)",
+				                      userDatabaseID, ServerUtils.getMapID(cmd[1]));
+			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
+		} else {
+			ServerUtils.checkAddOnExists(cmd[1]);
+
+			ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
+				                      "select vote from uservotes where user=? and addon=?",
+				                      userDatabaseID, Utils.getAddOnID(cmd[1]));
+			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
+		}
+
 		out.println("ENDOFSTREAM");
 	}
 
