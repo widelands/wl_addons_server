@@ -322,7 +322,7 @@ public class ServerUtils {
 	 * @throws Exception If anything at all goes wrong or the map does not exist, throw an Exception.
 	 */
 	public static Long getMapID(String slug) throws Exception {
-		ResultSet r = Utils.sql(Utils.Databases.kWebsite, "select id from addons where slug=?", slug);
+		ResultSet r = Utils.sql(Utils.Databases.kWebsite, "select id from wlmaps_map where slug=?", slug);
 		if (!r.next()) throw new WLProtocolException("Map '" + slug + "' is not in the database");
 		return r.getLong("id");
 	}
