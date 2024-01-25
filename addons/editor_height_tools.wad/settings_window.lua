@@ -1,0 +1,266 @@
+push_textdomain("editor_height_tools.wad", true)
+
+include "scripting/richtext.lua"
+
+local base_width = 200
+local spinb_w    = 100
+local editb_w    = spinb_w
+local padding    = 10
+
+wl.ui.MapView():create_child({
+   widget   = "unique_window",
+   registry = "height_options_window",
+   name     = "height_options_window",
+   title    = _("Choose an option"),
+   x        = 0,
+   y        = 0,
+   content  = {
+      widget      = "box",
+      name        = "main_box",
+      orientation = "vertical",
+      spacing     = 10,
+      children    = {
+            {widget="space", value=2},
+            {
+               widget = "textarea",
+               name   = "set_height_header",
+               font   = "wui_message_heading",  
+               text   = _("Set height of all fields"),
+            },
+            {
+               widget      = "box",
+               name        = "set_height_box",
+               resizing    = "fullsize",
+               orientation = "horizontal",
+               children    = {
+                  { widget = "space", value = padding},
+                  {
+                     widget = "spinbox",
+                     name   = "set_height_spinbox",
+                     w      = 250,
+                     unit_w = spinb_w,
+                     label  = _("New Height:"),
+                     value  = 10,
+                     min    = 0,
+                     max    = 60,
+                  },
+                  {widget="inf_space"},
+                  {
+                     widget  = "button",
+                     name    = "set_height_button",
+                     resizing = "align",
+                     title   = _("Apply Height"),
+                     on_click = [[ include("addons/editor_height_tools.wad/auto_height.lua") set_height() ]],
+                  },
+                  { widget = "space", value = padding},
+               },
+            },
+            {widget="space", value=5},
+            {
+               widget = "multilinetextarea",
+               name   = "set_height_fields_header",
+               resizing = "fullsize",
+               scroll_mode = "none",
+               font   = "wui_message_heading",
+               text   = _("Apply random heights to mountain terrains"),
+            },
+            {
+               widget = "multilinetextarea",
+               name   = "set_height_fields_explanation",
+               w      = base_width + editb_w + spinb_w,
+               scroll_mode = "none",
+               font   = "wui_info_panel_paragraph",
+               text   = rt(p(_("Define a rectangular area by entering the coordinates of the top left corner and the coordinates of the bottom right corner of the rectangle. Or define a hexagonal area, like when using a big tool size, by entering the coordinates of the center and a radius."))
+                              ..p(_("The values for the coordinates can be found in the main menu panel on the right side, e.g.: (20,&nbsp;52,&nbsp;10). The values represents (x-coordinate,&nbsp;&nbsp;y-coordinate,&nbsp;height)"))),
+            },
+            {
+               widget = "textarea",
+               name   = "rectangle_header",
+               font   = "wui_info_panel_heading",
+               text   = _("Global Options"),
+            },
+            {
+               widget = "box",
+               name   = "global_options_box",
+               resizing    = "fullsize",
+               orientation = "horizontal",
+               children = {
+                  {widget="space", value=padding},
+                  {
+                     widget = "spinbox",
+                     name   = "max_width_spinbox",
+                     w      = base_width + 50,
+                     unit_w = spinb_w,
+                     label  = _("Max. Height:"),
+                     tooltip = _("Restrict the height to this maximum height."),
+                     value  = 60,
+                     min    = 0,
+                     max    = 60,
+                  },
+                  {widget="inf_space"},
+                  {
+                     widget = "checkbox",
+                     name   = "place_im",
+                     title  = _("Place sign"),
+                     tooltip = _("Place a column at given coordinates"),
+                     state  = true,
+                  },
+                  {widget="space", value=padding},
+               },
+            },
+            {widget="space", value=5},
+            {
+               widget = "textarea",
+               name   = "rectangle_header",
+               font   = "wui_info_panel_heading",
+               text   = _("Rectangular Area"),
+            },
+            {
+               widget = "box",
+               name   = "set_first_xy_box",
+               resizing    = "fullsize",
+               orientation = "horizontal",
+               children ={
+                  {widget="space", value=padding},
+                  {
+                     widget = "multilinetextarea",
+                     name   = "top_left_xy_header",
+                     text_align = "left",
+                     w      = base_width + 100,
+                     scroll_mode = "none",
+                     font   = "wui_message_paragraph",
+                     text   = _("Coordinates of the top left corner of the rectangle, e.g.: 10,20"),
+                  },
+                  {widget="inf_space"},
+                  {
+                     widget = "editbox",
+                     name = "top_left_xy",
+                     align = "bottom",
+                     w      = editb_w,
+                     tooltip = _("Enter coordinates in form of x, y"),
+                     text = "",
+                     on_ok = "",
+                  },
+                  {widget="space", value=padding},
+               },
+            },
+            {
+               widget = "box",
+               name   = "set_sec_xy_box",
+               resizing    = "fullsize",
+               orientation = "horizontal",
+               children ={
+                  {widget="space", value=padding},
+                  {
+                     widget = "multilinetextarea",
+                     name   = "bottom_right_xy_header",
+                     text_align = "left",
+                     w      = base_width + 100,
+                     scroll_mode = "none",
+                     font   = "wui_message_paragraph",
+                     text   = _("Coordinates of the bottom right corner of the rectangle, e.g.: 20,35"),
+                  },
+                  {widget="inf_space"},
+                  {
+                     widget = "editbox",
+                     name = "bottom_right_xy",
+                     align = "bottom",
+                     w      = editb_w,
+                     tooltip = _("Enter coordinates in form of x, y"),
+                     text = "",
+                     on_ok = "",
+                  },
+                  {widget="space", value=padding},
+               },
+            },
+            {
+               widget  = "button",
+               name    = "set_height_button",
+               title   = _("Random Rectangular Mountains"),
+               on_click = [[ include("addons/editor_height_tools.wad/auto_height.lua") mountain_rect_area() ]],
+            },
+            {widget="space", value=5},
+            {
+               widget = "textarea",
+               name   = "rectangle_header",
+               font   = "wui_info_panel_heading",
+               text   = _("Hexagonal Area"),
+            },
+            {
+               widget = "box",
+               name   = "set_center_xy_box",
+               resizing    = "fullsize",
+               orientation = "horizontal",
+               children ={
+                  {widget="space", value=padding},
+                  {
+                     widget = "multilinetextarea",
+                     name   = "center_header",
+                     text_align = "left",
+                     w      = base_width + 100,
+                     scroll_mode = "none",
+                     font   = "wui_message_paragraph",
+                     text   = _("Coordinates of the center field of the hexagonal area, e.g.: 20,35"),
+                  },
+                  {widget="inf_space"},
+                  {
+                     widget = "editbox",
+                     name = "center_xy",
+                     align = "bottom",
+                     w      = editb_w,
+                     tooltip = _("Enter coordinates in form of x, y"),
+                     text = "",
+                     on_ok = "",
+                  },
+                  {widget="space", value=padding},
+               },
+            },
+            {
+               widget = "box",
+               name   = "set_sec_xy_box",
+               resizing    = "fullsize",
+               orientation = "horizontal",
+               children ={
+                  {widget="space", value=padding},
+                  {
+                     widget = "multilinetextarea",
+                     name   = "radius_header",
+                     text_align = "left",
+                     w      = base_width + 100,
+                     scroll_mode = "none",
+                     font   = "wui_message_paragraph",
+                     text   = _("Choose a value for the radius"),
+                  },
+                  {widget="inf_space"},
+                  {
+                     widget = "spinbox",
+                     name   = "radius",
+                     unit_w = spinb_w,
+                     value  = 5,
+                     min    = 0,
+                     max    = 60,
+                  },
+                  {widget="space", value=padding},
+               },
+            },
+            {
+               widget  = "button",
+               name    = "set_height_button",
+               title   = _("Random Hexagonal Mountains"),
+               on_click = [[ include("addons/editor_height_tools.wad/auto_height.lua") mountain_hex_area() ]],
+            },
+            {widget="space", value=5},
+            {
+               widget = "button",
+               name   = "close_button",
+               w      = base_width + editb_w + spinb_w,
+               style  = "primary",
+               title  = _("Ok"),
+               on_click = [[ wl.ui.MapView():get_child("height_options_window").visible = false ]],
+            },
+            {widget="space", value=5}
+         }
+      }
+})
+include("addons/editor_height_tools.wad/auto_height.lua")
+pop_textdomain()

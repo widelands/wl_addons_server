@@ -1,12 +1,12 @@
-# Automatically created by the Widelands Add-Ons Server.
+# Automatically created by Widelands 1.2~git26446 (c4557be@master) Debug
 
 [global]
-author="kaputtnik"
-category="theme"
-description=_"Minimalistic theme with reduced colors. For widelands version 1.0 you have to enable the theme in the options menu after installing."
-max_wl_version=
-min_wl_version=
 name=_"Minimalistic Theme"
+description=_"Minimalistic theme with reduced colors. For widelands version 1.0 you have to enable the theme in the options menu after installing."
+author="kaputtnik"
+version="1.6"
+category="theme"
 requires=
-sync_safe="true"
-version="1.5"
+min_wl_version=
+max_wl_version=
+sync_safe="false"
