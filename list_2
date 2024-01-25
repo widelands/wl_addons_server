@@ -1,5 +1,5 @@
 2
-72
+73
 1v1_high_level_map_pool.wad
 1v1 High Level Map Pool
 For high level 1v1 Gameplay add the-x addon
@@ -421,7 +421,7 @@ Bluebyte-Settlers-II-Fan-Map
 reworked by hessenfarmer
 hessenfarmer
 1673901188
-251
+252
 0
 0
 0
@@ -683,7 +683,7 @@ This addon adds my maps ''Java and Sumatra 1.0'', ''Java and Sumatra 1.1'' and '
 Nilpanda
 Nilpanda
 1666688231
-471
+472
 0
 0
 0
@@ -1536,7 +1536,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-432
+434
 0
 0
 0
@@ -1623,7 +1623,7 @@ Maps for the 2021 Tournament
 hessenfarmer
 hessenfarmer
 1619867883
-277
+279
 0
 0
 0
@@ -1907,7 +1907,7 @@ Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind e
 auktionadmin
 auktionadmin
 1680190966
-203
+205
 0
 0
 0
@@ -2156,7 +2156,7 @@ Tribe's buildings for the start condition 'artifacts defended'<br><br><br><br>Ha
 aDiscoverer
 aDiscoverer
 1700941791
-9
+10
 0
 0
 0
@@ -2845,7 +2845,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-497
+500
 0
 0
 0
@@ -3224,7 +3224,7 @@ image1706043806809.png
 Result for analysing Players
 image1706043854938.png
 Result when investigating a whole map
-unchecked
+verified
 editor_copy_area.wad
 Editor: Copy Area
 A plugin for the editor to copy the contents of a map region to another region.
@@ -3313,6 +3313,60 @@ e85a06693ae597408816439123d04891
 1
 image1691148857711.png
 Create perfectly repetitive maps with ease
+verified
+editor_height_tools.wad
+Editor: Automatic mountains
+Add mountain terrains to the map and open this utility to apply random heights to those terrains automatically.
+kaputtnik
+kaputtnik
+1706093867
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0.1
+0
+36020
+ui_plugin
+0
+1
+img
+7
+addon
+auto_height.lua
+error_window.lua
+img/height_tools.png
+img/height_tools.xcf
+init.lua
+settings_window.lua
+0
+7
+f95b01159862aefdafa659a5c8522929
+6896389e935b0702e07879d023c77ece
+848d5df6a450776797af59ea69bdde49
+cd7db08637579b2ab352cf35249c4849
+6986ed35e90f32f629c5c083de78a904
+b4a5b226a651b0d399ab4449e0a7e21a
+5f7229586f7a2f4764ac499d4829cd7b
+5
+image1706093957813.png
+Design your flat map and add some mountain terrains
+image1706094056634.png
+Open the height tools, define a rectangular area and click on 
+image1706094140984.png
+Two signs are placed representing the given coordinates
+image1706094262182.png
+The created mountain on the left doesn't look good? Enter the coordinates of the center and click on 
+image1706094414712.png
+You could also modify a mountain. Enter the coordinates of the new center and click on 
 verified
 editor_swap_terrains.wad
 Editor: Swap Terrains
@@ -7345,7 +7399,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings, workers and some ware
 MarkMcWire
 MarkMcWire
 1621788282
-1202
+1205
 0
 0
 0
@@ -17161,7 +17215,7 @@ A strange new world.
 Nordfriese
 Nordfriese
 1600000000
-398
+401
 0
 0
 0
@@ -17389,7 +17443,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-656
+658
 0
 0
 0
@@ -17557,7 +17611,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-615
+616
 0
 0
 0
@@ -18810,7 +18864,7 @@ Shallow water terrains, impassable for ships but walkable.
 kaputtnik
 kaputtnik
 1600000000
-262
+263
 0
 0
 0
@@ -19316,7 +19370,7 @@ Theme with larger fonts.
 Andy Alt
 arch_stanton
 1648329410
-250
+251
 0
 0
 0
@@ -19940,9 +19994,9 @@ kaputtnik
 1
 0
 0
-1.5
+1.6
 25
-136782974
+136791751
 theme
 0
 11
@@ -20038,7 +20092,7 @@ ru.mo
 sk.mo
 sv.mo
 78
-8dde0184e9e98b0f0d0a6be27af33566
+8c43312175047dddcebb3ddb1c738cc8
 a48145612e47ffe805b00efca6422c81
 8976f6f7e30f8052b330165e6664bc12
 2548b654030daba5ec973e00d3da6c08
@@ -20050,7 +20104,7 @@ a48145612e47ffe805b00efca6422c81
 2f052857fded422fd2d7bca4f509ebdd
 872fe0350ffcba81701f5466acee3668
 3166c2abec412011ec4e5e476b96ee86
-117b7eb5f67049eb0bebe9c99f588d97
+e5a7af5be07eb5899161727de1398fce
 789b2b3415282698951755753ab70659
 1822ffe14364055489b53c1646a1b25d
 099f7d3e5b04fd36aa79e859a0df0e45
@@ -20130,7 +20184,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-280
+283
 0
 0
 0
@@ -20213,7 +20267,7 @@ This set of maps contains 6 small and medium-sized maps for 3-6 players. You can
 OIPUN
 OIPUN
 1615637480
-387
+388
 0
 0
 0
@@ -21295,7 +21349,7 @@ A headquarters-like starting condition with approximately 30% more wares and wor
 the-x
 the-x
 1622124029
-205
+206
 0
 0
 0
@@ -21957,7 +22011,7 @@ Terrains and (alpha) trees for tropical areas. Someday in future this add-on mig
 Yo...
 Yo...
 1622321739
-232
+233
 0
 0
 0
@@ -22807,7 +22861,7 @@ Contains flowering meadows, clearings, dolomites, clay soil, green water, muddy 
 OIPUN
 OIPUN
 1622916439
-332
+334
 0
 0
 0
@@ -23237,7 +23291,7 @@ White Summer Add-On is needed to play these maps.
 OIPUN
 OIPUN
 1623262581
-251
+252
 0
 0
 0

@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-25 03:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: addons/editor_height_tools.wad/addon:2
+msgid "Editor: Automatic mountains"
+msgstr ""
+
+#: addons/editor_height_tools.wad/addon:3
+msgid ""
+"Add mountain terrains to the map and open this utility to apply random "
+"heights to those terrains automatically."
+msgstr ""
+
+#: addons/editor_height_tools.wad/auto_height.lua:26
+msgid ""
+"A coordinate can't be read.\n"
+"Make sure you have entered a valid coordinate in form of 20,34"
+msgstr ""
+
+#: addons/editor_height_tools.wad/auto_height.lua:33
+msgid ""
+"The coordinates exceeds the map height or width!\n"
+"Please enter valid coordinates!"
+msgstr ""
+
+#: addons/editor_height_tools.wad/auto_height.lua:244
+msgid "Warning"
+msgstr ""
+
+#: addons/editor_height_tools.wad/auto_height.lua:245
+msgid ""
+"This will change the height of %1$d fields! Approximately this last more "
+"than %2$d sec.\n"
+"The editor does not react for this time.\n"
+"Click 'Cancel' to define a smaller area. Before clicking OK be sure to save "
+"the map!"
+msgstr ""
+
+#: addons/editor_height_tools.wad/error_window.lua:7
+msgid "Error"
+msgstr ""
+
+#: addons/editor_height_tools.wad/error_window.lua:28
+msgid "OK"
+msgstr ""
+
+#: addons/editor_height_tools.wad/init.lua:12
+msgid "Height Tools"
+msgstr ""
+
+#: addons/editor_height_tools.wad/init.lua:13
+msgid ""
+"Set height for the whole map or apply heights to mountainous terrains "
+"automatically"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:14
+msgid "Choose an option"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:28
+msgid "Set height of all fields"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:42
+msgid "New Height:"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:52
+msgid "Apply Height"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:65
+msgid "Apply random heights to mountain terrains"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:73
+msgid ""
+"Define a rectangular area by entering the coordinates of the top left corner "
+"and the coordinates of the bottom right corner of the rectangle. Or define a "
+"hexagonal area, like when using a big tool size, by entering the coordinates "
+"of the center and a radius."
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:74
+msgid ""
+"The values for the coordinates can be found in the main menu panel on the "
+"right side, e.g.: (20,&nbsp;52,&nbsp;10). The values represents (x-"
+"coordinate,&nbsp;&nbsp;y-coordinate,&nbsp;height)"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:80
+msgid "Global Options"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:94
+msgid "Max. Height:"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:95
+msgid "Restrict the height to this maximum height."
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:104
+msgid "Place sign"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:105
+msgid "Place a column at given coordinates"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:116
+msgid "Rectangular Area"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:132
+msgid "Coordinates of the top left corner of the rectangle, e.g.: 10,20"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:140
+#: addons/editor_height_tools.wad/settings_window.lua:169
+#: addons/editor_height_tools.wad/settings_window.lua:211
+msgid "Enter coordinates in form of x, y"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:161
+msgid "Coordinates of the bottom right corner of the rectangle, e.g.: 20,35"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:179
+msgid "Random Rectangular Mountains"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:187
+msgid "Hexagonal Area"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:203
+msgid "Coordinates of the center field of the hexagonal area, e.g.: 20,35"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:232
+msgid "Choose a value for the radius"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:249
+msgid "Random Hexagonal Mountains"
+msgstr ""
+
+#: addons/editor_height_tools.wad/settings_window.lua:258
+msgid "Ok"
+msgstr ""
+
+#: screenshots/editor_height_tools.wad/descriptions:3
+msgid "Design your flat map and add some mountain terrains"
+msgstr ""
+
+#: screenshots/editor_height_tools.wad/descriptions:4
+msgid "Open the height tools, define a rectangular area and click on "
+msgstr ""
+
+#: screenshots/editor_height_tools.wad/descriptions:5
+msgid "Two signs are placed representing the given coordinates"
+msgstr ""
+
+#: screenshots/editor_height_tools.wad/descriptions:6
+msgid ""
+"The created mountain on the left doesn't look good? Enter the coordinates of "
+"the center and click on "
+msgstr ""
+
+#: screenshots/editor_height_tools.wad/descriptions:7
+msgid ""
+"You could also modify a mountain. Enter the coordinates of the new center "
+"and click on "
+msgstr ""
