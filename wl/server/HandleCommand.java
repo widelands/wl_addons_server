@@ -82,6 +82,7 @@ public class HandleCommand {
 	/**
 	 * Check whether the first command argument refers to an add-on or a map.
 	 * If so, strips the extension.
+	 * Sanitizes the argument in any case.
 	 * @return The command refers to a map.
 	 * @throws Exception If the version is out of bounds.
 	 */
@@ -489,7 +490,19 @@ public class HandleCommand {
 		// Args: name
 		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 1);
-		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
+
+		if (checkCmd1IsMap()) {
+			ResultSet sql = Utils.sql(Utils.Databases.kWebsite, "select file,nr_downloads from wlmaps_map where slug=?", cmd[1]);
+			if (!sql.next()) throw new ServerUtils.WLProtocolException("Map '" + cmd[1] + "' is not in the database");
+
+			ServerUtils.writeOneFile(new File(Utils.config("website_maps_path"), sql.getString("file")), out);
+
+			Utils.sql(Utils.Databases.kWebsite, "update wlmaps_map set nr_downloads=? where slug=?", sql.getLong("nr_downloads") + 1, cmd[1]);
+
+			out.println("ENDOFSTREAM");
+			return;
+		}
+
 		ServerUtils.checkAddOnExists(cmd[1]);
 		ServerUtils.semaphoreRO(cmd[1], () -> {
 			ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File("addons", cmd[1]));

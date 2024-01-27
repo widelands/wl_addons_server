@@ -241,11 +241,13 @@ public enum Command {
 	 *
 	 * <p> Parameters:
 	 * <ol>
-	 * <li> Add-on name
+	 * <li> Add-on or map name
 	 * </ol>
 	 *
 	 * <p>
 	 * Returns:
+	 * <ul>
+	 * <li> For add-ons:
 	 * <ul>
 	 *   <li> Integer string denoting number <var>D</var> of directories, <code>\n</code>
 	 *   <li> <var>D</var> Directory names (with full paths), each followed by <code>\n</code>
@@ -261,6 +263,13 @@ public enum Command {
 	 *     </ul>
 	 *   </ul>
 	 *   <li> <code>ENDOFSTREAM\n</code>
+	 * </ul>
+	 * <li> For maps:
+	 * <ul>
+	 *   <li> checksum, <code>\n</code>
+	 *   <li> filesize in bytes, <code>\n</code>
+	 *   <li> The content of the file as a byte stream
+	 * </ul>
 	 * </ul>
 	 */
 	CMD_DOWNLOAD,
