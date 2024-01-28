@@ -85,26 +85,26 @@ public class SyncThread implements Runnable {
 						ArrayList<String> unassessed = new ArrayList<>();
 						ArrayList<String> notx = new ArrayList<>();
 						ResultSet sql =
-							Utils.sql(Utils.Databases.kAddOns,
-							          "select name from addons where security=0 order by name");
+						    Utils.sql(Utils.Databases.kAddOns,
+						              "select name from addons where security=0 order by name");
 						while (sql.next()) unverified.add(sql.getString("name"));
 						sql = Utils.sql(
-							Utils.Databases.kAddOns,
-							"select name from addons where security>0 and quality=0 order by name");
+						    Utils.Databases.kAddOns,
+						    "select name from addons where security>0 and quality=0 order by name");
 						while (sql.next()) unassessed.add(sql.getString("name"));
 						sql = Utils.sql(
-							Utils.Databases.kAddOns,
-							"select name from addons where security>0 and quality>0 order by name");
+						    Utils.Databases.kAddOns,
+						    "select name from addons where security>0 and quality>0 order by name");
 						while (sql.next()) {
 							String name = sql.getString("name");
-							if (Utils.bashResult(
-								    "tx", "status", "-r", ServerUtils.toTransifexResource(name)) != 0)
+							if (Utils.bashResult("tx", "status", "-r",
+							                     ServerUtils.toTransifexResource(name)) != 0)
 								notx.add(name);
 						}
 						if (!unverified.isEmpty() || !unassessed.isEmpty() || !notx.isEmpty()) {
 							String message = String.format(
-								"There are currently %d unverified add-ons, %d add-on awaiting quality review, and %d add-ons without Transifex integration.",
-								unverified.size(), unassessed.size(), notx.size());
+							    "There are currently %d unverified add-ons, %d add-on awaiting quality review, and %d add-ons without Transifex integration.",
+							    unverified.size(), unassessed.size(), notx.size());
 							if (!unverified.isEmpty()) {
 								message += "\n\nUnverified:";
 								for (String str : unverified) message += "\n- " + str;
@@ -119,7 +119,7 @@ public class SyncThread implements Runnable {
 							}
 
 							Utils.sendEMailToSubscribedAdmins(
-								Utils.kEMailVerbosityFYI, "Moderation Report", message);
+							    Utils.kEMailVerbosityFYI, "Moderation Report", message);
 						}
 
 						TransifexIntegration.TX.checkIssues();

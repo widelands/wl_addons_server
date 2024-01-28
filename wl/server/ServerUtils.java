@@ -319,10 +319,12 @@ public class ServerUtils {
 	 * Retrieve the ID of an map from the database.
 	 * @param slug The map's slug.
 	 * @return The map's ID.
-	 * @throws Exception If anything at all goes wrong or the map does not exist, throw an Exception.
+	 * @throws Exception If anything at all goes wrong or the map does not exist, throw an
+	 *     Exception.
 	 */
 	public static Long getMapID(String slug) throws Exception {
-		ResultSet r = Utils.sql(Utils.Databases.kWebsite, "select id from wlmaps_map where slug=?", slug);
+		ResultSet r =
+		    Utils.sql(Utils.Databases.kWebsite, "select id from wlmaps_map where slug=?", slug);
 		if (!r.next()) throw new WLProtocolException("Map '" + slug + "' is not in the database");
 		return r.getLong("id");
 	}

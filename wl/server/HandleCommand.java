@@ -233,7 +233,8 @@ public class HandleCommand {
 		}
 
 		if (commandVersion >= 3) {
-			sql = Utils.sql(Utils.Databases.kWebsite, "select slug,file,wl_version_after from wlmaps_map order by slug");
+			sql = Utils.sql(Utils.Databases.kWebsite,
+			                "select slug,file,wl_version_after from wlmaps_map order by slug");
 			while (sql.next()) {
 				if (!new File(Utils.config("website_maps_path"), sql.getString("file")).isFile()) {
 					continue;  // File does not exist
@@ -241,7 +242,8 @@ public class HandleCommand {
 
 				if (versionCheck) {
 					String mapRequirement = sql.getString("wl_version_after");
-					if (mapRequirement != null && !ServerUtils.matchesWidelandsVersion(widelandsVersion, mapRequirement, null)) {
+					if (mapRequirement != null && !ServerUtils.matchesWidelandsVersion(
+					                                  widelandsVersion, mapRequirement, null)) {
 						continue;
 					}
 				}
@@ -273,7 +275,8 @@ public class HandleCommand {
 
 		if (checkCmd1IsMap()) {
 			if (commandVersion < 3) {
-				throw new ServerUtils.WLProtocolException("Command version " + commandVersion + " not supported for maps");
+				throw new ServerUtils.WLProtocolException("Command version " + commandVersion +
+				                                          " not supported for maps");
 			}
 			handleCmdInfoMap();
 		} else {
@@ -378,10 +381,12 @@ public class HandleCommand {
 	 * @todo Localization for map strings
 	 */
 	private void handleCmdInfoMap() throws Exception {
-		ResultSet sqlMain =
-		    Utils.sql(Utils.Databases.kWebsite, "select *, UNIX_TIMESTAMP(pub_date) as timestamp from wlmaps_map where slug=?", cmd[1]);
+		ResultSet sqlMain = Utils.sql(
+		    Utils.Databases.kWebsite,
+		    "select *, UNIX_TIMESTAMP(pub_date) as timestamp from wlmaps_map where slug=?", cmd[1]);
 		if (!sqlMain.next())
-			throw new ServerUtils.WLProtocolException("Map '" + cmd[1] + "' is not in the database");
+			throw new ServerUtils.WLProtocolException("Map '" + cmd[1] +
+			                                          "' is not in the database");
 
 		final long mapID = sqlMain.getLong("id");
 		final String name = sqlMain.getString("name");
@@ -390,7 +395,8 @@ public class HandleCommand {
 		final String uploader_comment = sqlMain.getString("uploader_comment");
 		final String author = sqlMain.getString("author");
 
-		final File minimapFile = new File(Utils.config("website_maps_path"), sqlMain.getString("minimap"));
+		final File minimapFile =
+		    new File(Utils.config("website_maps_path"), sqlMain.getString("minimap"));
 		final File mapFile = new File(Utils.config("website_maps_path"), sqlMain.getString("file"));
 
 		if (!mapFile.isFile()) throw new ServerUtils.WLProtocolException("Map file does not exist");
@@ -424,18 +430,22 @@ public class HandleCommand {
 		out.println(sqlMain.getLong("timestamp"));
 		out.println(sqlMain.getLong("nr_downloads"));
 
-		ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-				"select score from star_ratings_userrating where rating_id=(select id from star_ratings_rating where object_id=?)", mapID);
+		ResultSet sql = Utils.sql(
+		    Utils.Databases.kWebsite,
+		    "select score from star_ratings_userrating where rating_id=(select id from star_ratings_rating where object_id=?)",
+		    mapID);
 		int[] votes = new int[10];
 		for (int i = 0; i < votes.length; ++i) votes[i] = 0;
 		while (sql.next()) votes[sql.getInt("score") - 1]++;
 		for (int v : votes) out.println(v);
 
-		sql = Utils.sql(Utils.Databases.kWebsite,
-				"select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, UNIX_TIMESTAMP(date_modified) as edited, comment " +
-				"from threadedcomments_threadedcomment where " +
-				"content_type_id=(select id from django_content_type where app_label=?) and object_id=? and is_public>0",
-				Utils.config("website_maps_slug"), mapID);
+		sql = Utils.sql(
+		    Utils.Databases.kWebsite,
+		    "select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, UNIX_TIMESTAMP(date_modified) as edited, comment "
+		        + "from threadedcomments_threadedcomment where "
+		        +
+		        "content_type_id=(select id from django_content_type where app_label=?) and object_id=? and is_public>0",
+		    Utils.config("website_maps_slug"), mapID);
 		ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
 		while (sql.next()) {
 			Long user = sql.getLong("user_id");
@@ -443,8 +453,9 @@ public class HandleCommand {
 			Long ts2 = sql.getLong("edited");
 			if (ts2.longValue() <= ts1.longValue()) ts2 = null;
 
-			comments.add(new Utils.AddOnComment(
-			    sql.getLong("id"), user, ts1, ts2 == null ? null : user, ts2, "", sql.getString("comment")));
+			comments.add(new Utils.AddOnComment(sql.getLong("id"), user, ts1,
+			                                    ts2 == null ? null : user, ts2, "",
+			                                    sql.getString("comment")));
 		}
 		out.println(comments.size());
 		for (Utils.AddOnComment c : comments) {
@@ -492,13 +503,19 @@ public class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, 1);
 
 		if (checkCmd1IsMap()) {
-			ResultSet sql = Utils.sql(Utils.Databases.kWebsite, "select file,nr_downloads from wlmaps_map where slug=?", cmd[1]);
-			if (!sql.next()) throw new ServerUtils.WLProtocolException("Map '" + cmd[1] + "' is not in the database");
+			ResultSet sql =
+			    Utils.sql(Utils.Databases.kWebsite,
+			              "select file,nr_downloads from wlmaps_map where slug=?", cmd[1]);
+			if (!sql.next())
+				throw new ServerUtils.WLProtocolException("Map '" + cmd[1] +
+				                                          "' is not in the database");
 
-			ServerUtils.writeOneFile(new File(Utils.config("website_maps_path"), sql.getString("file")), out);
+			ServerUtils.writeOneFile(
+			    new File(Utils.config("website_maps_path"), sql.getString("file")), out);
 
 			// TODO enable download counter for maps
-			// Utils.sql(Utils.Databases.kWebsite, "update wlmaps_map set nr_downloads=? where slug=?", sql.getLong("nr_downloads") + 1, cmd[1]);
+			// Utils.sql(Utils.Databases.kWebsite, "update wlmaps_map set nr_downloads=? where
+			// slug=?", sql.getLong("nr_downloads") + 1, cmd[1]);
 
 			out.println("ENDOFSTREAM");
 			return;
@@ -573,11 +590,11 @@ public class HandleCommand {
 		final long addon = Utils.getAddOnID(cmd[1]);
 		final int vote = Integer.valueOf(cmd[2]);
 		Utils.sql(Utils.Databases.kAddOns, "delete from uservotes where user=? and addon=?",
-			      userDatabaseID, addon);
+		          userDatabaseID, addon);
 		if (vote > 0) {
 			Utils.sql(Utils.Databases.kAddOns,
-				      "insert into uservotes (user, addon, vote) value (?,?,?)", userDatabaseID,
-				      addon, vote);
+			          "insert into uservotes (user, addon, vote) value (?,?,?)", userDatabaseID,
+			          addon, vote);
 		}
 
 		out.println("ENDOFSTREAM");
@@ -597,16 +614,17 @@ public class HandleCommand {
 		}
 
 		if (checkCmd1IsMap()) {
-			ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
-				                      "select score from star_ratings_userrating where user_id=? and rating_id=(select id from star_ratings_rating where object_id=?)",
-				                      userDatabaseID, ServerUtils.getMapID(cmd[1]));
+			ResultSet sql = Utils.sql(
+			    Utils.Databases.kWebsite,
+			    "select score from star_ratings_userrating where user_id=? and rating_id=(select id from star_ratings_rating where object_id=?)",
+			    userDatabaseID, ServerUtils.getMapID(cmd[1]));
 			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
 		} else {
 			ServerUtils.checkAddOnExists(cmd[1]);
 
 			ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
-				                      "select vote from uservotes where user=? and addon=?",
-				                      userDatabaseID, Utils.getAddOnID(cmd[1]));
+			                          "select vote from uservotes where user=? and addon=?",
+			                          userDatabaseID, Utils.getAddOnID(cmd[1]));
 			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
 		}
 
