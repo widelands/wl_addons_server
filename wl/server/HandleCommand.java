@@ -497,7 +497,8 @@ public class HandleCommand {
 
 			ServerUtils.writeOneFile(new File(Utils.config("website_maps_path"), sql.getString("file")), out);
 
-			Utils.sql(Utils.Databases.kWebsite, "update wlmaps_map set nr_downloads=? where slug=?", sql.getLong("nr_downloads") + 1, cmd[1]);
+			// TODO enable download counter for maps
+			// Utils.sql(Utils.Databases.kWebsite, "update wlmaps_map set nr_downloads=? where slug=?", sql.getLong("nr_downloads") + 1, cmd[1]);
 
 			out.println("ENDOFSTREAM");
 			return;
@@ -566,6 +567,7 @@ public class HandleCommand {
 			throw new ServerUtils.WLProtocolException("You need to log in to vote");
 		}
 
+		// TODO enable for maps
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		final long addon = Utils.getAddOnID(cmd[1]);
@@ -620,6 +622,7 @@ public class HandleCommand {
 		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 3);
 		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("Log in to comment");
+		// TODO enable for maps
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		int nrLines = Integer.valueOf(cmd[3]);
@@ -652,6 +655,7 @@ public class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 3 : 2);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("Log in to edit comments");
+		// TODO enable for maps
 		if (commandVersion < 2) {
 			cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 			ServerUtils.checkAddOnExists(cmd[1]);
