@@ -415,8 +415,8 @@ function upgrade_random_militarysites(player)
     local mt2 = player:get_buildings("europeans_tower_high")
     local mc1 = player:get_buildings("europeans_castle")
     local mc2 = player:get_buildings("europeans_fortress")
-    local random_number = 1
-    local building = ms1[random_number]
+    local random_number = 0
+    local building = nil
     
     if #mc2 > 0 then
         random_number = math.random(#mc2)
@@ -424,8 +424,10 @@ function upgrade_random_militarysites(player)
     elseif #mc1 > 0 then
         random_number = math.random(#mc1)
         building = mc1[random_number]
+    else
+        building = nil
     end
-    if building then
+    if building ~= nil then
         building:enhance(true)
     end
     
@@ -435,8 +437,10 @@ function upgrade_random_militarysites(player)
     elseif #mt1 > 0 then
         random_number = math.random(#mt1)
         building = mt1[random_number]
+    else
+        building = nil
     end
-    if building then
+    if building ~= nil then
         building:enhance(true)
     end
 
@@ -446,8 +450,10 @@ function upgrade_random_militarysites(player)
     elseif #mb1 > 0 then
         random_number = math.random(#mb1)
         building = mb1[random_number]
+    else
+        building = nil
     end
-    if building then
+    if building ~= nil then
         building:enhance(true)
     end
 
@@ -457,8 +463,10 @@ function upgrade_random_militarysites(player)
     elseif #ms1 > 0 then
         random_number = math.random(#ms1)
         building = ms1[random_number]
+    else
+        building = nil
     end
-    if building then
+    if building ~= nil then
         building:enhance(true)
     end
 end
