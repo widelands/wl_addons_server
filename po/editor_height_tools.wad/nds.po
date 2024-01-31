@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-30 03:07+0100\n"
+"POT-Creation-Date: 2024-01-31 03:07+0100\n"
 "PO-Revision-Date: 2024-01-29 07:15+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -23,33 +23,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/editor_height_tools.wad/addon:2
-#, fuzzy
 msgid "Editor: Height Tools"
-msgstr "Höchten-Warktüüg"
+msgstr "Bewarker: Höchten-Warktüüg"
 
 #: addons/editor_height_tools.wad/addon:3
-#, fuzzy
 msgid ""
 "Adjust height for the whole map or apply heights to mountainous terrains "
 "automatically"
 msgstr ""
-"Sett de Höcht för de hele Kaart of sett automatisk de Höchten vun Barg-"
+"Pass de Höcht för de hele Kaart an of sett automatisk de Höchten vun Barg-"
 "Landskuppen"
 
 #. TRANSLATORS: Short for "set height to:"
 #: addons/editor_height_tools.wad/auto_height.lua:15
 msgid "Set to:"
-msgstr ""
+msgstr "Sett up:"
 
 #. TRANSLATORS: Short for "lower height by"
 #: addons/editor_height_tools.wad/auto_height.lua:18
 msgid "Lower by:"
-msgstr ""
+msgstr "Minner um:"
 
 #. TRANSLATORS: Short for "elevate height by"
 #: addons/editor_height_tools.wad/auto_height.lua:21
 msgid "Elevate by:"
-msgstr ""
+msgstr "Verhoog um:"
 
 #: addons/editor_height_tools.wad/auto_height.lua:42
 msgid ""
@@ -111,35 +109,32 @@ msgid "Choose an option"
 msgstr "Köör wat ut"
 
 #: addons/editor_height_tools.wad/settings_window.lua:28
-#, fuzzy
 msgid "Adjust height of all fields"
-msgstr "Set Höchte vun all Felden"
+msgstr "Pass Höchte vun all Felden an"
 
 #: addons/editor_height_tools.wad/settings_window.lua:43
 msgid "Set all fields to value"
-msgstr ""
+msgstr "Sett all Felden up Weert"
 
 #: addons/editor_height_tools.wad/settings_window.lua:47
 msgid "Lower all fields by value"
-msgstr ""
+msgstr "Minner all Felden um Weert"
 
 #: addons/editor_height_tools.wad/settings_window.lua:51
 msgid "Elevate all fields by value"
-msgstr ""
+msgstr "Verhoog all Felden um Weert"
 
 #: addons/editor_height_tools.wad/settings_window.lua:63
 msgid "Set to: "
-msgstr ""
+msgstr "Sett up:"
 
 #: addons/editor_height_tools.wad/settings_window.lua:70
-#, fuzzy
 msgid "Value for all fields"
-msgstr "Set Höchte vun all Felden"
+msgstr "Weert för all Felden"
 
 #: addons/editor_height_tools.wad/settings_window.lua:86
-#, fuzzy
 msgid "Adjust Height"
-msgstr "Höchte anwennen"
+msgstr "Höchte anpassen"
 
 #: addons/editor_height_tools.wad/settings_window.lua:96
 msgid "Apply random heights to mountain terrains"
@@ -249,19 +244,3 @@ msgid ""
 "and click on "
 msgstr ""
 "Du kannst eenen Barg ok bewarken. Giff de Stee vun de nejen Midde in un klick"
-
-#~ msgid "Editor: Automatic mountains"
-#~ msgstr "Bewarker: Automatisk Bargen"
-
-#~ msgid ""
-#~ "Add mountain terrains to the map and open this utility to apply random "
-#~ "heights to those terrains automatically."
-#~ msgstr ""
-#~ "Föög de Kaart Barg-Landskuppens hento un maak deeses Warktüüg up, um "
-#~ "deesen Landskuppens automatisk tofällige Höchten to geven"
-
-#~ msgid "New Height:"
-#~ msgstr "Neje Höchte:"
-
-#~ msgid "Ok"
-#~ msgstr "Jau"
