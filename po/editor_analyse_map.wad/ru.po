@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Yuriy Sokolov <lention@mail.ru>, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-30 03:07+0100\n"
+"POT-Creation-Date: 2024-02-06 03:07+0100\n"
 "PO-Revision-Date: 2024-01-29 07:14+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -22,13 +26,15 @@ msgstr ""
 
 #: addons/editor_analyse_map.wad/addon:2
 msgid "Editor: Analyse Map"
-msgstr ""
+msgstr "Редактор: Анализ Карты"
 
 #: addons/editor_analyse_map.wad/addon:3
 msgid ""
 "Analysis tool: Compare the resources in the vicinity of player positions "
 "with a few clicks, or display a statistic of the whole map."
 msgstr ""
+"Инструмент анализа: Сравнивает ресурсы в местах расположения игроков в "
+"несколько кликов или отображает статистику всей карты."
 
 #: addons/editor_analyse_map.wad/callbacks.lua:12
 msgid ""
