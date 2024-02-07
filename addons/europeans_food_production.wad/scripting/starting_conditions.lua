@@ -107,7 +107,7 @@ end
 
 function start_expedition_from_port(player)
     local tribe = player.tribe
-    local ports = player:get_buildings(tribe.name .. "_port")
+    local ports = player:get_buildings(tribe.port)
     
     for i, port in ipairs(ports) do
         port:start_expedition()

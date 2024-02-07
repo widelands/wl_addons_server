@@ -107,7 +107,7 @@ end
 
 function start_expedition_from_port(player)
     local tribe = player.tribe
-    local ports = player:get_buildings(tribe.name .. "_port")
+    local ports = player:get_buildings(tribe.port)
     
     for i, port in ipairs(ports) do
         port:start_expedition()
@@ -471,6 +471,15 @@ function upgrade_random_militarysites(player)
     end
 end
 
+function place_ship_random_ai(player)
+    local ships = player:get_ships()
+    local ports = player:get_buildings(player.tribe.port)
+    
+    if #ships < #ports then
+        place_ship_random(player, 64)
+    end
+end
+
 function doing_ai_stuff(player, increment)
     local map = wl.Game().map
     
@@ -492,7 +501,7 @@ function doing_ai_stuff(player, increment)
         end
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
             player:allow_buildings{"europeans_shipyard_basic", "europeans_port", }
-            place_ship_random(player, 64)
+            place_ship_random_ai(player)
         else
             player:allow_buildings{"europeans_terraformers_house_basic", "europeans_warehouse", }
         end
@@ -513,7 +522,7 @@ function doing_ai_stuff(player, increment)
         end
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
             player:allow_buildings{"europeans_shipyard_normal", }
-            place_ship_random(player, 64)
+            place_ship_random_ai(player)
         else
             player:allow_buildings{"europeans_terraformers_house_normal", }
         end
@@ -534,7 +543,7 @@ function doing_ai_stuff(player, increment)
         end
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
             player:allow_buildings{"europeans_shipyard_advanced", }
-            place_ship_random(player, 64)
+            place_ship_random_ai(player)
         else
             player:allow_buildings{"europeans_terraformers_house_advanced", }
         end
@@ -555,6 +564,9 @@ function doing_ai_stuff(player, increment)
     if (increment >= 16) then
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
-        upgrade_random_militarysites(player)
+        if increment % 2 == 0 then
+            upgrade_random_militarysites(player)
+            place_ship_random_ai(player)
+        end
     end
 end
