@@ -14,9 +14,9 @@
 dirname = path.dirname(__file__)
 
 -- Global colors
-local gray = {80, 80, 80}
+local gray = {120, 120, 120}
 local light_gray = {250, 250, 250}
-local yellow = {240, 220, 130}
+local yellow = {250, 230, 75}
 
 -- Overlay colors for buttons
 local overlay_dark =  {30, 30, 30}
@@ -61,8 +61,16 @@ local unknown_font_color = {209, 45, 45}
 local unknown_font_face = "sans"
 local unknown_font_size = 16
 
-local default_wui_font = {
+local wui_button_font = {
    color = light_gray,
+   face = wui_font_face,
+   size = wui_font_size,
+   bold = true,
+   shadow = true
+}
+
+local default_wui_font = {
+   color = wui_font_color,
    face = wui_font_face,
    size = wui_font_size,
    bold = true,
@@ -77,7 +85,7 @@ local default_fs_font = {
 }
 
 local default_button_fonts = {
-   enabled_wui = default_wui_font,
+   enabled_wui = wui_button_font,
    enabled_fs = default_fs_font,
    disabled = {
          color = {127, 127, 127},
@@ -773,7 +781,7 @@ return {
          bold = true,
       },
       wui_info_panel_paragraph = {
-         color = light_gray,
+         color = yellow,
          face = wui_font_face,
          size = wui_font_size,
       },
@@ -785,7 +793,7 @@ return {
          bold = true,
       },
       wui_message_paragraph = {
-         color = light_gray,
+         color = yellow,
          face = wui_font_face,
          size = 12,
       },

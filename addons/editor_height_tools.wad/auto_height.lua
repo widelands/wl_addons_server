@@ -8,6 +8,22 @@ if mv:get_child("height_options_window").visible == false then
    mv:get_child("height_options_window").visible = true
 end
 
+function set_height_spb_label()
+   local spb_state = mv:get_child("height_cb").state
+   if spb_state == 0 then
+                                    -- TRANSLATORS: Short for "set height to:"
+      mv:get_child("height_spb_label").text = _("Set to:")
+   elseif spb_state == 1 then
+                                    -- TRANSLATORS: Short for "lower height by"
+      mv:get_child("height_spb_label").text = _("Lower by:")
+   elseif spb_state == 2 then
+                                    -- TRANSLATORS: Short for "elevate height by"
+      mv:get_child("height_spb_label").text = _("Elevate by:")
+   else
+      mv:get_child("height_spb_label").text = "ERROR"
+   end
+end
+
 local function show_error(text)
    -- Opens error window with given text
 
@@ -117,15 +133,32 @@ function mountain_hex_area()
    auto_mountains(fields)
 end
 
-function set_height(fields)
+function set_height()
    -- Set height of all fields of a map to the given value entered by the user
-   local height = mv:get_child("set_height_spinbox").value
+   local spb_state = mv:get_child("height_cb").state
    for x=0, map.width -1 do
       for y=0, map.height-1 do
          local f = map:get_field(x,y)
-         f.height=height
+         if spb_state == 0 then
+            f.raw_height = mv:get_child("set_height_spinbox").value
+         elseif spb_state == 1 then
+            local height = f.height - mv:get_child("set_height_spinbox").value
+             if height < 0 then
+               height = 0
+            end
+            print("set height lower: " .. height)
+            f.raw_height = height
+         elseif spb_state == 2 then
+            local height = f.height + mv:get_child("set_height_spinbox").value
+            if height > 60 then
+               height = 60
+            end
+            print("set height elevate: " .. height)
+            f.raw_height = height
+         end
       end
    end
+   map:recalculate()
 end
 
 function auto_mountains(fields)

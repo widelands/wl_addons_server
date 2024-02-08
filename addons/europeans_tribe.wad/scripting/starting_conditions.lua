@@ -107,7 +107,7 @@ end
 
 function start_expedition_from_port(player)
     local tribe = player.tribe
-    local ports = player:get_buildings(tribe.name .. "_port")
+    local ports = player:get_buildings(tribe.port)
     
     for i, port in ipairs(ports) do
         port:start_expedition()
@@ -415,8 +415,8 @@ function upgrade_random_militarysites(player)
     local mt2 = player:get_buildings("europeans_tower_high")
     local mc1 = player:get_buildings("europeans_castle")
     local mc2 = player:get_buildings("europeans_fortress")
-    local random_number = 1
-    local building = ms1[random_number]
+    local random_number = 0
+    local building = nil
     
     if #mc2 > 0 then
         random_number = math.random(#mc2)
@@ -424,8 +424,10 @@ function upgrade_random_militarysites(player)
     elseif #mc1 > 0 then
         random_number = math.random(#mc1)
         building = mc1[random_number]
+    else
+        building = nil
     end
-    if building then
+    if building ~= nil then
         building:enhance(true)
     end
     
@@ -435,8 +437,10 @@ function upgrade_random_militarysites(player)
     elseif #mt1 > 0 then
         random_number = math.random(#mt1)
         building = mt1[random_number]
+    else
+        building = nil
     end
-    if building then
+    if building ~= nil then
         building:enhance(true)
     end
 
@@ -446,8 +450,10 @@ function upgrade_random_militarysites(player)
     elseif #mb1 > 0 then
         random_number = math.random(#mb1)
         building = mb1[random_number]
+    else
+        building = nil
     end
-    if building then
+    if building ~= nil then
         building:enhance(true)
     end
 
@@ -457,9 +463,20 @@ function upgrade_random_militarysites(player)
     elseif #ms1 > 0 then
         random_number = math.random(#ms1)
         building = ms1[random_number]
+    else
+        building = nil
     end
-    if building then
+    if building ~= nil then
         building:enhance(true)
+    end
+end
+
+function place_ship_random_ai(player)
+    local ships = player:get_ships()
+    local ports = player:get_buildings(player.tribe.port)
+    
+    if #ships < #ports then
+        place_ship_random(player, 64)
     end
 end
 
@@ -484,7 +501,7 @@ function doing_ai_stuff(player, increment)
         end
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
             player:allow_buildings{"europeans_shipyard_basic", "europeans_port", }
-            place_ship_random(player, 64)
+            place_ship_random_ai(player)
         else
             player:allow_buildings{"europeans_terraformers_house_basic", "europeans_warehouse", }
         end
@@ -505,7 +522,7 @@ function doing_ai_stuff(player, increment)
         end
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
             player:allow_buildings{"europeans_shipyard_normal", }
-            place_ship_random(player, 64)
+            place_ship_random_ai(player)
         else
             player:allow_buildings{"europeans_terraformers_house_normal", }
         end
@@ -526,7 +543,7 @@ function doing_ai_stuff(player, increment)
         end
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
             player:allow_buildings{"europeans_shipyard_advanced", }
-            place_ship_random(player, 64)
+            place_ship_random_ai(player)
         else
             player:allow_buildings{"europeans_terraformers_house_advanced", }
         end
@@ -547,6 +564,9 @@ function doing_ai_stuff(player, increment)
     if (increment >= 16) then
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
-        upgrade_random_militarysites(player)
+        if increment % 2 == 0 then
+            upgrade_random_militarysites(player)
+            place_ship_random_ai(player)
+        end
     end
 end

@@ -219,9 +219,25 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:editor-analyse-map-wad]
+file_filter            = po/editor_analyse_map.wad/<lang>.po
+source_file            = po/editor_analyse_map.wad/editor_analyse_map.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:editor-copy-area-wad]
 file_filter            = po/editor_copy_area.wad/<lang>.po
 source_file            = po/editor_copy_area.wad/editor_copy_area.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:editor-height-tools-wad]
+file_filter            = po/editor_height_tools.wad/<lang>.po
+source_file            = po/editor_height_tools.wad/editor_height_tools.wad.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
