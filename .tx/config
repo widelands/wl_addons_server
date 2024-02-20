@@ -525,6 +525,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:where-are-my-heroes-wad]
+file_filter            = po/where_are_my_heroes.wad/<lang>.po
+source_file            = po/where_are_my_heroes.wad/where_are_my_heroes.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:white-summer-maps-wad]
 file_filter            = po/white_summer_maps.wad/<lang>.po
 source_file            = po/white_summer_maps.wad/white_summer_maps.wad.pot
