@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-23 03:07+0100\n"
+"POT-Creation-Date: 2024-02-25 03:07+0100\n"
 "PO-Revision-Date: 2024-02-19 16:34+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -22,10 +22,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/where_are_my_heroes.wad/addon:6
+#, fuzzy
 msgid ""
 "Do you sometimes ask yourself: 'Where are my heroes?'. This add-on finds "
-"heroes in warehouses and military sites and displays the results in your "
-"inbox."
+"heroes in warehouses, military sites and idle warships and displays the "
+"results in your inbox."
 msgstr ""
 "Vraag je jezelf wel eens af: 'Waar zijn mijn helden? Deze add-on vindt "
 "helden in magazijnen en militaire terreinen en toont de resultaten in je "
@@ -35,24 +36,25 @@ msgstr ""
 msgid "Game: Where are my heroes?"
 msgstr "Game: Waar zijn mijn helden?"
 
-#: addons/where_are_my_heroes.wad/find_heroes.lua:29
-msgid "%1$d Hero is stationed here."
-msgid_plural "%1$d Heroes are stationed here."
+#: addons/where_are_my_heroes.wad/find_heroes.lua:24
+#, fuzzy
+msgid "%1$d Hero is sitting here twiddling thumbs."
+msgid_plural "%1$d Heroes are sitting here twiddling thumbs."
 msgstr[0] "%1$d Held is hier gestationeerd."
 msgstr[1] "%1$d Helden zijn hier gestationeerd."
 
-#: addons/where_are_my_heroes.wad/find_heroes.lua:30
+#: addons/where_are_my_heroes.wad/find_heroes.lua:25
 msgid "%1$d Hero"
 msgid_plural "%1$d Heroes"
 msgstr[0] "%1$d Held"
 msgstr[1] "%1$d Helden"
 
-#: addons/where_are_my_heroes.wad/init.lua:7
+#: addons/where_are_my_heroes.wad/init.lua:9
 msgid "Where are my heroes?"
 msgstr "Waar zijn mijn helden?"
 
-#: addons/where_are_my_heroes.wad/init.lua:8
-msgid ""
-"For each building containing a hero a message will be send to the inbox."
+#: addons/where_are_my_heroes.wad/init.lua:10
+#, fuzzy
+msgid "For each place containing a hero a message will be send to the inbox."
 msgstr ""
 "Voor elk gebouw dat een held bevat, wordt een bericht naar de inbox gestuurd."

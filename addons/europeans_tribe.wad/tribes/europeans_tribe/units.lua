@@ -438,9 +438,9 @@ wl.Descriptions():new_tribe {
                  helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
-                        pgettext("europeans_ware", "This basket is needed by the farmer for harvesting the fruits and grapes and needed by miller and by gamekeeper."),
+                        pgettext("europeans_ware", "This basket is needed  by advanced carrier to transport wares."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
-                        pgettext("europeans_ware", "It is also used by advanced carrier to transport wares. It is produced by all smithies.")
+                        pgettext("europeans_ware", "It is produced by all smithies.")
                     }
                 }
             },
@@ -451,7 +451,7 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
-                        pgettext("europeans_ware", "The scythe is the tool of the farmers."),
+                        pgettext("europeans_ware", "The scythe is a secondary tool of the lumberjacks."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
                         pgettext("europeans_ware", "Scythes are produced by all smithies.")
                     }
@@ -490,7 +490,7 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
-                        pgettext("europeans_ware", "The shovel is an essential tool. Therefore the forester, the claydigger and the farmer use them."),
+                        pgettext("europeans_ware", "The shovel is an essential tool. Therefore the forester, the claydigger and the terraformer use them."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
                         pgettext("europeans_ware", "They are produced by all smithies.")
                     }
@@ -966,33 +966,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
                     purpose = pgettext("europeans_worker", "Plant trees.")
-                }
-            },
-            {
-                name = "europeans_farmer_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Farmer
-                    purpose = pgettext("europeans_worker", "Plants and harvests fields.")
-                }
-            },
-            {
-                name = "europeans_farmer_normal",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Farmer
-                    purpose = pgettext("europeans_worker", "Plants and harvests fields.")
-                }
-            },
-            {
-                name = "europeans_farmer_advanced",
-                default_target_quantity = 4,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Farmer
-                    purpose = pgettext("europeans_worker", "Plants and harvests fields.")
                 }
             }
         },
@@ -1750,27 +1723,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_farm_medium_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Farm
-                purpose = pgettext("europeans_building", "Sows and harvests reed."),
-            }
-        },
-        {
-            name = "europeans_farm_medium_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Farm
-                purpose = pgettext("europeans_building", "Sows and harvests reed and cotton."),
-            }
-        },
-        {
-            name = "europeans_farm_medium_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-                purpose = pgettext("europeans_building", "Sows and harvests reed, cotton and rubber."),
-            }
-        },
-        {
             name = "europeans_charcoal_kiln_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
@@ -2522,15 +2474,15 @@ wl.Descriptions():new_tribe {
       forester = "europeans_foresters_house_basic",
       quarry = "europeans_quarry_basic",
       mine_stone = "europeans_quarry_basic",
-      building_materials_primary = "europeans_farm_medium_basic",
+      building_materials_primary = "europeans_lumberjacks_house_basic",
       building_materials_secondary = "europeans_manufactory_basic",
       building_materials_tertiary = "europeans_stonemasons_house_basic",
       charcoal = "europeans_charcoal_kiln_basic",
       weaving_mill = "europeans_manufactory_basic",
-      farm_primary = "europeans_farm_medium_basic",
-      farm_secondary = "europeans_farm_medium_normal",
-      farm_tertiary = "europeans_farm_medium_advanced",
-      agriculture_producer = "europeans_farm_medium_basic",
+      farm_primary = "europeans_foresters_house_basic",
+      farm_secondary = "europeans_foresters_house_normal",
+      farm_tertiary = "europeans_foresters_house_advanced",
+      agriculture_producer = "europeans_lumberjacks_house_basic",
       mine_coal = "europeans_coalmine_basic",
       mine_iron = "europeans_ironmine_basic",
       mine_gold = "europeans_goldmine_basic",

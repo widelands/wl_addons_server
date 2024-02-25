@@ -16,7 +16,34 @@ wl.Descriptions():new_worker_type {
         check_space = {
             "findspace=size:any radius:8 avoid:field saplingsearches:8"
         },
-        plant = {
+        plant_cotton = {
+            "findspace=size:any radius:8 avoid:field saplingsearches:8",
+            "walk=coords",
+            "animate=dig duration:3s",
+            "animate=planting duration:2s",
+            "plant=attrib:seed_cotton",
+            "animate=water duration:2s",
+            "return"
+        },
+        plant_reed = {
+            "findspace=size:any radius:8 avoid:field saplingsearches:8",
+            "walk=coords",
+            "animate=dig duration:3s",
+            "animate=planting duration:2s",
+            "plant=attrib:seed_reed",
+            "animate=water duration:2s",
+            "return"
+        },
+        plant_rubber = {
+            "findspace=size:any radius:8 avoid:field saplingsearches:8",
+            "walk=coords",
+            "animate=dig duration:3s",
+            "animate=planting duration:2s",
+            "plant=attrib:tree_rubber_sapling",
+            "animate=water duration:2s",
+            "return"
+        },
+        plant_tree = {
             "findspace=size:any radius:8 avoid:field saplingsearches:8",
             "walk=coords",
             "animate=dig duration:3s",

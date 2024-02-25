@@ -70,7 +70,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=pausing_production_for_inputs",
                 "sleep=duration:20s",
-                "call=recruit_farmer",
                 "call=recruit_lumberjack",
                 "call=recruit_forester",
                 "sleep=duration:20s",
@@ -131,7 +130,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs europeans_builder or workers need experience",
                 "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_builder",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_builder",
                 "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_builder",
                 "return=skipped when economy needs europeans_geologist and not economy needs europeans_builder",
                 "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_builder",
@@ -153,7 +151,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_claydigger_normal or workers need experience",
                 "return=skipped unless economy needs europeans_claydigger_advanced or workers need experience",
                 "return=skipped when economy needs europeans_builder and not economy needs europeans_claydigger_normal",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_claydigger_normal",
                 "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_claydigger_normal",
                 "return=skipped when economy needs europeans_geologist and not economy needs europeans_claydigger_normal",
                 "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_claydigger_normal",
@@ -168,28 +165,6 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_claydigger_normal"
             }
         },
-        recruit_farmer = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting farmer"),
-            actions = {
-                "return=skipped unless economy needs europeans_farmer_normal or workers need experience",
-                "return=skipped unless economy needs europeans_farmer_advanced or workers need experience",
-                "return=skipped when economy needs europeans_builder and not economy needs europeans_farmer_normal",
-                "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_farmer_normal",
-                "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_farmer_normal",
-                "return=skipped when economy needs europeans_geologist and not economy needs europeans_farmer_normal",
-                "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_farmer_normal",
-                "return=skipped when economy needs europeans_miner_normal and not economy needs europeans_farmer_normal",
-                "return=skipped when economy needs europeans_shipwright_normal and not economy needs europeans_farmer_normal",
-                "return=skipped when economy needs europeans_stonecutter_normal and not economy needs europeans_farmer_normal",
-                "return=skipped when economy needs europeans_terraformer_normal and not economy needs europeans_farmer_normal",
-                "return=skipped when economy needs europeans_worker_normal and not economy needs europeans_farmer_normal",
-                "consume=europeans_carrier",
-                "consume=scythe basket",
-                "animate=working duration:180s",
-                "recruit=europeans_farmer_normal"
-            }
-        },
         recruit_forester = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
             descname = pgettext("europeans_building", "recruiting forester"),
@@ -198,7 +173,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_forester_advanced or workers need experience",
                 "return=skipped when economy needs europeans_builder and not economy needs europeans_forester_normal",
                 "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_forester_normal",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_forester_normal",
                 "return=skipped when economy needs europeans_geologist and not economy needs europeans_forester_normal",
                 "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_forester_normal",
                 "return=skipped when economy needs europeans_miner_normal and not economy needs europeans_forester_normal",
@@ -219,7 +193,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_geologist or workers need experience",
                 "return=skipped when economy needs europeans_builder and not economy needs europeans_geologist",
                 "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_geologist",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_geologist",
                 "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_geologist",
                 "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_geologist",
                 "return=skipped when economy needs europeans_miner_normal and not economy needs europeans_geologist",
@@ -241,7 +214,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_lumberjack_advanced or workers need experience",
                 "return=skipped when economy needs europeans_builder and not economy needs europeans_lumberjack_normal",
                 "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_lumberjack_normal",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_lumberjack_normal",
                 "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_lumberjack_normal",
                 "return=skipped when economy needs europeans_geologist and not economy needs europeans_lumberjack_normal",
                 "return=skipped when economy needs europeans_miner_normal and not economy needs europeans_lumberjack_normal",
@@ -250,7 +222,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs europeans_terraformer_normal and not economy needs europeans_lumberjack_normal",
                 "return=skipped when economy needs europeans_worker_normal and not economy needs europeans_lumberjack_normal",
                 "consume=europeans_carrier",
-                "consume=felling_ax saw",
+                "consume=felling_ax saw scythe",
                 "animate=working duration:180s",
                 "recruit=europeans_lumberjack_normal"
             }
@@ -263,7 +235,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_miner_advanced or workers need experience",
                 "return=skipped when economy needs europeans_builder and not economy needs europeans_miner_normal",
                 "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_miner_normal",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_miner_normal",
                 "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_miner_normal",
                 "return=skipped when economy needs europeans_geologist and not economy needs europeans_miner_normal",
                 "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_miner_normal",
@@ -306,7 +277,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_shipwright_advanced or workers need experience",
                 "return=skipped when economy needs europeans_builder and not economy needs europeans_shipwright_normal",
                 "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_shipwright_normal",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_shipwright_normal",
                 "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_shipwright_normal",
                 "return=skipped when economy needs europeans_geologist and not economy needs europeans_shipwright_normal",
                 "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_shipwright_normal",
@@ -328,7 +298,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_stonecutter_advanced or workers need experience",
                 "return=skipped when economy needs europeans_builder and not economy needs europeans_stonecutter_normal",
                 "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_stonecutter_normal",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_stonecutter_normal",
                 "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_stonecutter_normal",
                 "return=skipped when economy needs europeans_geologist and not economy needs europeans_stonecutter_normal",
                 "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_stonecutter_normal",
@@ -350,7 +319,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_terraformer_advanced or workers need experience",
                 "return=skipped when economy needs europeans_builder and not economy needs europeans_terraformer_normal",
                 "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_terraformer_normal",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_terraformer_normal",
                 "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_terraformer_normal",
                 "return=skipped when economy needs europeans_geologist and not economy needs europeans_terraformer_normal",
                 "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_terraformer_normal",
@@ -383,7 +351,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs europeans_worker_advanced or workers need experience",
                 "return=skipped when economy needs europeans_builder and not economy needs europeans_worker_normal",
                 "return=skipped when economy needs europeans_claydigger_normal and not economy needs europeans_worker_normal",
-                "return=skipped when economy needs europeans_farmer_normal and not economy needs europeans_worker_normal",
                 "return=skipped when economy needs europeans_forester_normal and not economy needs europeans_worker_normal",
                 "return=skipped when economy needs europeans_geologist and not economy needs europeans_worker_normal",
                 "return=skipped when economy needs europeans_lumberjack_normal and not economy needs europeans_worker_normal",

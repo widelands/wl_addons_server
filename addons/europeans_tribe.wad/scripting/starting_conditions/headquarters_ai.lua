@@ -50,12 +50,9 @@ local init = {
             europeans_carrier = 32,
             europeans_builder = 32,
             europeans_trader = 12,
-            europeans_worker_advanced = 8,
+            europeans_worker_advanced = 12,
             europeans_worker_normal = 16,
             europeans_worker_basic = 16,
-            europeans_farmer_advanced = 4,
-            europeans_farmer_normal = 8,
-            europeans_farmer_basic = 8,
             europeans_miner_advanced = 4,
             europeans_miner_normal = 4,
             europeans_miner_basic = 4,
@@ -63,11 +60,11 @@ local init = {
             europeans_trainer_normal = 2,
             europeans_trainer_basic = 4,
             europeans_lumberjack_advanced = 2,
-            europeans_lumberjack_normal = 2,
-            europeans_lumberjack_basic = 2,
+            europeans_lumberjack_normal = 4,
+            europeans_lumberjack_basic = 4,
             europeans_forester_advanced = 2,
-            europeans_forester_normal = 2,
-            europeans_forester_basic = 2,
+            europeans_forester_normal = 4,
+            europeans_forester_basic = 4,
             europeans_stonecutter_advanced = 1,
             europeans_stonecutter_normal = 1,
             europeans_stonecutter_basic = 1,
@@ -88,7 +85,7 @@ local init = {
     
     -- Delay of 15 min between actions
     local time_min = 15
-    for i = 0, 1344 do
+    for i = 0, 2688 do
         doing_ai_stuff (player, i)
                
         sleep(time_min * 60000)
