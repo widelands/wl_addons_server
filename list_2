@@ -339,7 +339,7 @@ Face to face artifacts run! You will see your enemy most of the time and only th
 kaputtnik
 kaputtnik
 1674478722
-157
+158
 0
 0
 0
@@ -421,7 +421,7 @@ Bluebyte-Settlers-II-Fan-Map
 reworked by hessenfarmer
 hessenfarmer
 1673901188
-264
+265
 0
 0
 0
@@ -1536,7 +1536,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-455
+456
 0
 0
 0
@@ -1623,7 +1623,7 @@ Maps for the 2021 Tournament
 hessenfarmer
 hessenfarmer
 1619867883
-294
+295
 0
 0
 0
@@ -2555,7 +2555,7 @@ If there is no enemy military building in sight, every new construction site is 
 kaputtnik
 kaputtnik
 1613666291
-168
+169
 0
 0
 0
@@ -2634,7 +2634,7 @@ Basic Outpost
 blind
 blind3rdeye
 1700920458
-46
+47
 0
 0
 0
@@ -2808,7 +2808,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-523
+524
 0
 0
 0
@@ -3253,11 +3253,15 @@ Nordfriese
 0
 0
 0
-1
+2
 kaputtnik
 Hi Nordfriese,    this addon doesn't work for me. I have a map with dimensions 240x240. If i try to copy the area x=220, y=210 (i guess this is the upper left corner?), w=40, h=60 to the position x=100, y=210 i get "The areas mustn't overlap". If i try to copy the same initial area to position x=40, y=100 i get "y-coordinate out of range".  
 1.0
 1708798416
+kaputtnik
+Additionally: If the destination rectangles y value is not even, the copied area is messed up.
+1.0
+1708875350
 1.0
 5
 16781
@@ -3609,7 +3613,7 @@ Adds some additional wares, workers and buildings to Europeans tribes economy fo
 MarkMcWire
 MarkMcWire
 1694867019
-265
+268
 0
 0
 0
@@ -3622,7 +3626,7 @@ MarkMcWire
 0
 0
 1.2.0
-26
+27
 16061532
 tribes
 1
@@ -7432,7 +7436,7 @@ ffe840ad45ee8d6cd8b99fdbc648ad96
 02b11cb9d8d0796346c2e22b64d0c31d
 7084833c0085a0c6d5c2f4e3cffb42cb
 674364855552224d41453c50fb93f960
-6ca2b120816d464b999f134dc79a9f31
+c0ef9583b4d3524ebf6b86c730561264
 401220b84c21a078dcb90580a198ddff
 114adebb6db536688e3f0ea80c553bbc
 55d48fe39c408f139fab976c38fdfe00
@@ -7529,7 +7533,7 @@ Adds a new tribe named ‘Europeans’. It uses buildings, workers and some ware
 MarkMcWire
 MarkMcWire
 1621788282
-1291
+1295
 0
 0
 0
@@ -7566,7 +7570,7 @@ This is Widelands version (PPA: daily) <font bold=true><font italic=true><font i
 3.8.4
 1694197932
 4.2.0
-233
+234
 38775185
 tribes
 0
@@ -16783,7 +16787,7 @@ e0c8e1a5607bab851ff6096d5f08f873
 63fa50b14fd7c603a2ba51ea883abfaa
 0a5ec43664b1590f2598681b3e4509c6
 379f11278ea70df7be26e39b3dbd859a
-e1c7a223a3b36fdb80707dcb0b314eda
+567902038b8e810bbc277c4788cc3a2b
 d543cd81f804cb4f81eba9a96cecd03a
 2172b8dbdbc95270a41e8ea8ec2d4e1a
 54384e0f8dcf1713722e6ba5080bf144
@@ -17112,7 +17116,7 @@ Adds the highest amount of fish to every map node that can hold fish.
 Nordfriese
 Nordfriese
 1600000000
-331
+333
 0
 0
 0
@@ -17193,7 +17197,7 @@ A strange new world.
 Nordfriese
 Nordfriese
 1600000000
-418
+419
 0
 0
 0
@@ -17421,7 +17425,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-700
+701
 0
 0
 0
@@ -17589,7 +17593,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-643
+644
 0
 0
 0
@@ -18761,7 +18765,7 @@ Increases all worker experience thresholds to 40 times the default value.
 Nordfriese
 Nordfriese
 1600000000
-199
+200
 0
 0
 0
@@ -18842,7 +18846,7 @@ Shallow water terrains, impassable for ships but walkable.
 kaputtnik
 kaputtnik
 1600000000
-277
+278
 0
 0
 0
@@ -19639,7 +19643,7 @@ Replaces some terrain graphics with those from the ancient Widelands days.
 Nordfriese
 Nordfriese
 1621620072
-183
+184
 0
 0
 0
@@ -20164,7 +20168,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-295
+296
 0
 0
 0
@@ -21240,7 +21244,7 @@ A headquarters-like starting condition with fewer wares and workers.
 the-x
 the-x
 1622117845
-147
+148
 0
 0
 0
@@ -21710,7 +21714,7 @@ Enhanced Trading Outpost starting conditions for all official tribes. Intended t
 Nordfriese & the-x
 Nordfriese
 1600000000
-176
+177
 0
 0
 0
@@ -21991,7 +21995,7 @@ Terrains and (alpha) trees for tropical areas. Someday in future this add-on mig
 Yo...
 Yo...
 1622321739
-246
+247
 0
 0
 0
@@ -22862,7 +22866,7 @@ Hi Nordfriese,    thanks for the flowers.    I'll upload a new version in the ne
 0.1
 1708363471
 0.2
-3
+4
 5304
 ui_plugin
 0
@@ -22918,7 +22922,7 @@ de98e95b68c4e5e71a12c75b63c7de14
 24610f72912f1224d95e141a9805417a
 dd1af2ef6ccb6c92c1274bc1e3a26869
 53d7e641b00a2c3cf55312e6805b8748
-aed1853e2d3caabff6b3b52f0d94be06
+007f878f585a216b5cbada2e0260c031
 11db40d1a716b2485c0f079d85f1c1d4
 9f033aca9c537da7c698b648a7e12f99
 34612ee46fb4e07afb9cc949b71fa36f
@@ -22934,7 +22938,7 @@ Contains flowering meadows, clearings, dolomites, clay soil, green water, muddy 
 OIPUN
 OIPUN
 1622916439
-358
+360
 0
 0
 0

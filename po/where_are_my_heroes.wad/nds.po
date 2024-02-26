@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-25 03:07+0100\n"
+"POT-Creation-Date: 2024-02-26 03:07+0100\n"
 "PO-Revision-Date: 2024-02-19 16:34+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -23,26 +23,24 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/where_are_my_heroes.wad/addon:6
-#, fuzzy
 msgid ""
 "Do you sometimes ask yourself: 'Where are my heroes?'. This add-on finds "
 "heroes in warehouses, military sites and idle warships and displays the "
 "results in your inbox."
 msgstr ""
 "Fraagst du di of un an: »Waar sünd miene Heldens?« Deeses Verwiedern finnt "
-"Heldens in Kraamhusen un Soldateree-Boen un wiest de Resultaten in dienen "
-"Narichtens an."
+"Heldens in Kraamhusen, Soldateree-Boen un legen Kriegsschippen un wiest de "
+"Resultaten in dienen Narichtens an."
 
 #: addons/where_are_my_heroes.wad/addon:9
 msgid "Game: Where are my heroes?"
 msgstr "Speel: Waar sünd miene Heldens?"
 
 #: addons/where_are_my_heroes.wad/find_heroes.lua:24
-#, fuzzy
 msgid "%1$d Hero is sitting here twiddling thumbs."
 msgid_plural "%1$d Heroes are sitting here twiddling thumbs."
-msgstr[0] "Hier is %1$d Held unnerbrocht."
-msgstr[1] "Hier sünd %1$d Helden unnerbrocht."
+msgstr[0] "%1$d Held sitt hier leeg rum."
+msgstr[1] "%1$d Heldens sitten hier leeg rum."
 
 #: addons/where_are_my_heroes.wad/find_heroes.lua:25
 msgid "%1$d Hero"
@@ -55,6 +53,5 @@ msgid "Where are my heroes?"
 msgstr "Waar sünd miene Heldens?"
 
 #: addons/where_are_my_heroes.wad/init.lua:10
-#, fuzzy
 msgid "For each place containing a hero a message will be send to the inbox."
-msgstr "För elkeen Huus mit eenem Helden word eene Naricht schickt."
+msgstr "För elkeen Stee mit eenem Helden word eene Naricht schickt."

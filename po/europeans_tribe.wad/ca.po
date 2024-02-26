@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-25 03:07+0100\n"
+"POT-Creation-Date: 2024-02-26 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -161,9 +161,8 @@ msgid "Alder (Old)"
 msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/trees/alder/old/init.lua:10
-#, fuzzy
 msgid "Alder"
-msgstr "Constructor"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/trees/aspen/old/init.lua:9
 msgid "Aspen (Old)"
@@ -1070,23 +1069,20 @@ msgstr "tallar arbres"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:67
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:74
-#, fuzzy
 msgid "harvesting cotton"
-msgstr "recol·lectar juncs"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:78
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:91
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:84
-#, fuzzy
 msgid "harvesting reed"
-msgstr "recol·lectar juncs"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:89
-#, fuzzy
 msgid "harvesting rubber"
-msgstr "recol·lectar juncs"
+msgstr ""
 
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:101
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:101
@@ -3932,12 +3928,9 @@ msgstr "Es produeixen a tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:441
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "This basket is needed  by advanced carrier to transport wares."
 msgstr ""
-"També n'usen els transportistes avançats per transportar béns. Es produeix "
-"en tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
@@ -3949,10 +3942,9 @@ msgstr "Es produeix a tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:454
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The scythe is a secondary tool of the lumberjacks."
-msgstr "La dalla és l'eina dels agricultors i cultivadors."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:456
@@ -3990,14 +3982,11 @@ msgstr "Es produeixen en tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:493
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the forester, the claydigger and "
 "the terraformer use them."
 msgstr ""
-"La pala és una eina essencial. Per això la fan servir el guarda forestal, "
-"l'excavador d'argila i el granger."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:506
@@ -6023,37 +6012,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgid "No Fields"
-#~ msgstr "No hi ha camps"
-
-#~ msgid "Out of Fields"
-#~ msgstr "Sense camps"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting farmer"
-#~ msgstr "reclutar un agricultor"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This basket is needed by the farmer for harvesting the fruits and grapes "
-#~ "and needed by miller and by gamekeeper."
-#~ msgstr ""
-#~ "Els masovers necessiten cistells per recollir el raïm i altres tipus de "
-#~ "fruita. També en necessiten el guarda de peces de caça i el moliner."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Plants and harvests fields."
-#~ msgstr "Planta i recol·lecta camps."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Farmer"
-#~ msgstr "Agricultor avançat"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Farmer"
-#~ msgstr "Agricultor bàsic"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Farmer"
-#~ msgstr "Agricultor normal"

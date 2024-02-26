@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-25 03:07+0100\n"
+"POT-Creation-Date: 2024-02-26 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -161,9 +161,8 @@ msgid "Alder (Old)"
 msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/trees/alder/old/init.lua:10
-#, fuzzy
 msgid "Alder"
-msgstr "Stavitel"
+msgstr ""
 
 #: addons/europeans_tribe.wad/immovables/trees/aspen/old/init.lua:9
 msgid "Aspen (Old)"
@@ -1070,9 +1069,8 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:67
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:74
-#, fuzzy
 msgid "harvesting cotton"
-msgstr "výcvik průzkumníka"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:78
@@ -3911,10 +3909,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:454
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The scythe is a secondary tool of the lumberjacks."
-msgstr "Kosa je nástrojem sedláků."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:456
@@ -3949,12 +3946,11 @@ msgstr "Jsou vyráběny ve všech kovárnách."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:493
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the forester, the claydigger and "
 "the terraformer use them."
-msgstr "Lopata je důležitý nástroj. Používají ji lesník, kopáč hlíny a sedlák."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:506
@@ -5963,37 +5959,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgid "No Fields"
-#~ msgstr "Žádná pole"
-
-#~ msgid "Out of Fields"
-#~ msgstr "Došla pole"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting farmer"
-#~ msgstr "výcvik sedláka"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This basket is needed by the farmer for harvesting the fruits and grapes "
-#~ "and needed by miller and by gamekeeper."
-#~ msgstr ""
-#~ "Koš je používán sedlákem pro sběr ovoce a hroznů, a také mlynářem a "
-#~ "hajným."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Plants and harvests fields."
-#~ msgstr "Pěstuje a sklízí pole."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Farmer"
-#~ msgstr "Mistr sedlák"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Farmer"
-#~ msgstr "Sedlák"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Farmer"
-#~ msgstr "Vrchní sedlák"
