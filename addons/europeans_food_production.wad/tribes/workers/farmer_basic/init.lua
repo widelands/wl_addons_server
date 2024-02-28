@@ -83,7 +83,7 @@ wl.Descriptions():new_worker_type {
             "findspace=size:any radius:3 space",
             "walk=coords",
             "animate=plant duration:6s",
-            "plant=attrib:tree_rubber_sapling",
+            "plant=attrib:rubber_tree_sapling",
             "animate=plant duration:6s",
             "return"
         },
@@ -177,7 +177,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_rubber = {
-            "findobject=attrib:tree_rubber_mature radius:3",
+            "findobject=attrib:rubber_tree_mature radius:3",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",

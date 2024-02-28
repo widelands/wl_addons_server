@@ -47,17 +47,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "callworker=check_space",
                 "call=pausing_production_for_inputs",
-                "call=plant_reed",
-                "sleep=duration:5s",
                 "call=plant_trees",
-                "sleep=duration:5s",
-                "call=plant_cotton",
-                "sleep=duration:5s",
-                "callworker=check_pond_water",
-                "call=planting_pond_water",
-                "sleep=duration:10s",
-                "callworker=check_pond_dry",
-                "call=planting_pond_dry",
                 "return=skipped"
             }
         },
@@ -69,59 +59,18 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:6m",
             }
         },
-        plant_cotton = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
-            descname = pgettext("europeans_building", "planting cotton"),
-            actions = {
-                "return=skipped when economy needs water and not economy needs cotton",
-                "return=skipped unless site has water:2",
-                "consume=water",
-                "callworker=plant_cotton",
-                "consume=water",
-                "callworker=plant_cotton"
-            }
-        },
-        plant_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-            descname = pgettext("europeans_building", "planting reed"),
-            actions = {
-                "return=skipped when economy needs water and not economy needs reed",
-                "return=skipped unless site has water:2",
-                "consume=water",
-                "callworker=plant_reed",
-                "consume=water",
-                "callworker=plant_reed"
-            }
-        },
         plant_trees = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
             descname = pgettext("europeans_building", "planting trees"),
             actions = {
                 "return=skipped when economy needs water and not economy needs log",
-                "return=skipped unless site has water:2",
+                "return=skipped unless site has water:3",
+                "consume=water",
+                "callworker=plant_tree",
                 "consume=water",
                 "callworker=plant_tree",
                 "consume=water",
                 "callworker=plant_tree"
-            }
-        },
-        planting_pond_water = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting trees in pond with water because ...
-            descname = pgettext("europeans_building", "planting trees in pond with water"),
-            actions = {
-                "callworker=terraform_pond_water",
-                "return=skipped"
-            }
-        },
-        planting_pond_dry = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting trees in dry pond because ...
-            descname = pgettext("europeans_building", "planting trees in dry pond"),
-            actions = {
-                "return=skipped when economy needs water",
-                "return=skipped unless site has water",
-                "consume=water",
-                "callworker=terraform_pond_dry",
-                "return=skipped"
             }
         },
     },

@@ -79,8 +79,8 @@ function allow_normal_buildings(player_number)
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", "europeans_lumberjacks_house_normal", "europeans_foresters_house_normal", "europeans_quarry_normal", "europeans_clay_pit_normal"}
-        player:allow_buildings{"europeans_manufactory_normal", "europeans_charcoal_kiln_normal", "europeans_stonemasons_house_normal"}
+        player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", "europeans_lumberjacks_house_normal", "europeans_foresters_house_normal", "europeans_farm_small_normal"}
+        player:allow_buildings{"europeans_manufactory_normal", "europeans_charcoal_kiln_normal", "europeans_quarry_normal", "europeans_stonemasons_house_normal"}
         player:allow_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", "europeans_smelting_works_normal"}
         player:allow_buildings{"europeans_recruitement_center_normal", "europeans_trainingscamp_normal", "europeans_ferry_yard_normal", "europeans_shipyard_normal"}
     end
@@ -92,8 +92,8 @@ function forbid_normal_buildings(player_number)
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_well_level_2","europeans_well_level_3", "europeans_lumberjacks_house_normal", "europeans_foresters_house_normal", "europeans_quarry_normal", "europeans_clay_pit_normal"}
-        player:forbid_buildings{"europeans_manufactory_normal", "europeans_charcoal_kiln_normal", "europeans_stonemasons_house_normal"}
+        player:forbid_buildings{"europeans_well_level_2","europeans_well_level_3", "europeans_lumberjacks_house_normal", "europeans_foresters_house_normal", "europeans_farm_small_normal"}
+        player:forbid_buildings{"europeans_manufactory_normal", "europeans_charcoal_kiln_normal", "europeans_quarry_normal", "europeans_stonemasons_house_normal"}
         player:forbid_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", "europeans_smelting_works_normal"}
         player:forbid_buildings{"europeans_recruitement_center_normal", "europeans_trainingscamp_normal", "europeans_ferry_yard_normal", "europeans_shipyard_normal"}
     end
@@ -105,8 +105,8 @@ function allow_advanced_buildings(player_number)
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_quarry_advanced", "europeans_clay_pit_advanced"}
-        player:allow_buildings{"europeans_manufactory_advanced", "europeans_charcoal_kiln_advanced", "europeans_stonemasons_house_advanced"}
+        player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_farm_small_advanced"}
+        player:allow_buildings{"europeans_manufactory_advanced", "europeans_charcoal_kiln_advanced", "europeans_quarry_advanced", "europeans_stonemasons_house_advanced"}
         player:allow_buildings{"europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5", "europeans_smelting_works_advanced"}
         player:allow_buildings{"europeans_recruitement_center_advanced", "europeans_trainingscamp_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced"}
     end
@@ -118,8 +118,8 @@ function forbid_advanced_buildings(player_number)
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_quarry_advanced", "europeans_clay_pit_advanced"}
-        player:forbid_buildings{"europeans_manufactory_advanced", "europeans_charcoal_kiln_advanced", "europeans_stonemasons_house_advanced"}
+        player:forbid_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_lumberjacks_house_advanced", "europeans_foresters_house_advanced", "europeans_farm_small_advanced"}
+        player:forbid_buildings{"europeans_manufactory_advanced", "europeans_charcoal_kiln_advanced", "europeans_quarry_advanced", "europeans_stonemasons_house_advanced"}
         player:forbid_buildings{"europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5", "europeans_smelting_works_advanced"}
         player:forbid_buildings{"europeans_recruitement_center_advanced", "europeans_trainingscamp_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced"}
     end

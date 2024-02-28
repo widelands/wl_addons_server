@@ -219,6 +219,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:editor-add-markers-wad]
+file_filter            = po/editor_add_markers.wad/<lang>.po
+source_file            = po/editor_add_markers.wad/editor_add_markers.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:editor-analyse-map-wad]
 file_filter            = po/editor_analyse_map.wad/<lang>.po
 source_file            = po/editor_analyse_map.wad/editor_analyse_map.wad.pot

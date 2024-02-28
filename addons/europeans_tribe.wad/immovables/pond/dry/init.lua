@@ -16,6 +16,11 @@ wl.Descriptions():new_immovable_type {
       remove_pond = {
          "remove=",
       },
+      fill_pond = {
+         "transform=pond_water",
+         "animate=idle duration:7m30s",
+         "remove=",
+      },
    },
    
    animation_directory = dirname,

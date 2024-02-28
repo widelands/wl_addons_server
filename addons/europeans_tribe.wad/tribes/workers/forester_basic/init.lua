@@ -23,68 +23,22 @@ wl.Descriptions():new_worker_type {
         check_space = {
             "findspace=size:any radius:5 avoid:field saplingsearches:5"
         },
-        plant_cotton = {
-            "findspace=size:any radius:5 avoid:field saplingsearches:5",
-            "walk=coords",
-            "animate=dig duration:3s500ms",
-            "animate=plant duration:2s500ms",
-            "plant=attrib:seed_cotton",
-            "animate=water duration:2s500ms",
-            "return"
-        },
-        plant_reed = {
-            "findspace=size:any radius:5 avoid:field saplingsearches:5",
-            "walk=coords",
-            "animate=dig duration:3s500ms",
-            "animate=plant duration:2s500ms",
-            "plant=attrib:seed_reed",
-            "animate=water duration:2s500ms",
-            "return"
-        },
-        plant_rubber = {
-            "findspace=size:any radius:5 avoid:field saplingsearches:5",
-            "walk=coords",
-            "animate=dig duration:3s500ms",
-            "animate=plant duration:2s500ms",
-            "plant=attrib:tree_rubber_sapling",
-            "animate=water duration:2s500ms",
-            "return"
-        },
         plant_tree = {
             "findspace=size:any radius:5 avoid:field saplingsearches:5",
             "walk=coords",
-            "animate=dig duration:3s500ms",
-            "animate=plant duration:2s500ms",
-            "plant=attrib:tree_sapling",
-            "animate=water duration:2s500ms",
-            "return"
-        },
-        check_pond_water = {
-            "findobject=attrib:pond_water radius:5",
-        },
-        terraform_pond_water = {
-            "findobject=attrib:pond_water radius:5",
-            "walk=object",
-            "animate=dig duration:2s",
-            "callobject=remove_pond",
-            "animate=dig duration:2s",
-            "terraform=amazons",
-            "animate=dig duration:2s",
-            "callobject=remove_pond",
+            "animate=dig duration:3s",
             "animate=plant duration:2s",
             "plant=attrib:tree_sapling",
+            "animate=water duration:2s",
             "return"
         },
-        check_pond_dry = {
-            "findobject=attrib:pond_dry radius:5",
-        },
-        terraform_pond_dry = {
-            "findobject=attrib:pond_dry radius:5",
-            "walk=object",
-            "animate=plant duration:4s",
-            "callobject=remove_pond",
-            "animate=dig duration:4s",
-            "plant=attrib:tree_sapling",
+        plant_rubber_tree = {
+            "findspace=size:any radius:5 avoid:field saplingsearches:5",
+            "walk=coords",
+            "animate=dig duration:3s",
+            "animate=plant duration:2s",
+            "plant=attrib:rubber_tree_sapling",
+            "animate=water duration:2s",
             "return"
         },
     },

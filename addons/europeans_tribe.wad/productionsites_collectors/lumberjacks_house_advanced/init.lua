@@ -33,13 +33,8 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "callworker=check_trees",
                 "call=pausing_production_for_outputs",
-                "call=felling_trees",
-                "sleep=duration:5s",
-                "call=harvesting_reed",
-                "sleep=duration:5s",
-                "call=harvesting_cotton",
-                "sleep=duration:5s",
                 "call=harvesting_rubber",
+                "call=felling_trees",
                 "return=skipped"
             }
         },
@@ -47,52 +42,24 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production because output not needed yet"),
             actions = {
-                "return=skipped when economy needs log or economy needs reed or economy needs cotton or economy needs rubber",
+                "return=skipped when economy needs log or economy needs rubber",
                 "sleep=duration:2m",
+            }
+        },
+        harvesting_rubber = {
+            -- TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
+            descname = pgettext("europeans_building", "harvesting rubber"),
+            actions = {
+                "callworker=harvest_rubber",
+                "produce=rubber"
             }
         },
         felling_trees = {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
-                "return=skipped when economy needs reed and not economy needs log",
-                "return=skipped when economy needs cotton and not economy needs log",
-                "return=skipped when economy needs rubber and not economy needs log",
                 "callworker=harvest_tree",
                 "produce=log"
-            }
-        },
-        harvesting_cotton = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
-            descname = _"harvesting cotton",
-            actions = {
-                "return=skipped when economy needs log and not economy needs cotton",
-                "return=skipped when economy needs reed and not economy needs cotton",
-                "return=skipped when economy needs rubber and not economy needs cotton",
-                "callworker=harvest_cotton",
-                "produce=cotton"
-            }
-        },
-        harvesting_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-            descname = _"harvesting reed",
-            actions = {
-                "return=skipped when economy needs log and not economy needs reed",
-                "return=skipped when economy needs cotton and not economy needs reed",
-                "return=skipped when economy needs rubber and not economy needs reed",
-                "callworker=harvest_reed",
-                "produce=reed"
-            }
-        },
-        harvesting_rubber = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
-            descname = _"harvesting rubber",
-            actions = {
-                "return=skipped when economy needs log and not economy needs rubber",
-                "return=skipped when economy needs reed and not economy needs rubber",
-                "return=skipped when economy needs cotton and not economy needs rubber",
-                "callworker=harvest_rubber",
-                "produce=rubber"
             }
         },
     },

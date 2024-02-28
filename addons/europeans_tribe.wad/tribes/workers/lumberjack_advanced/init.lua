@@ -11,36 +11,14 @@ wl.Descriptions():new_worker_type {
     
     programs = {
         check_trees = {
-            "findobject=attrib:harvestable radius:18",
-        },
-        harvest_cotton = {
-            "findobject=attrib:ripe_cotton radius:18",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=idle duration:4s",
-            "callobject=harvest",
-            "animate=idle duration:2s",
-            "createware=cotton",
-            "return"
-        },
-        harvest_reed = {
-            "findobject=attrib:ripe_reed radius:18",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=idle duration:4s",
-            "callobject=harvest",
-            "animate=idle duration:2s",
-            "createware=reed",
-            "return"
+            "findobject=attrib:tree radius:18",
         },
         harvest_rubber = {
-            "findobject=attrib:tree_rubber_mature radius:18",
+            "findobject=attrib:rubber_tree_mature radius:18",
             "walk=object",
             "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
-            "animate=hacking duration:6s",
-            "playsound=sound/woodcutting/tree_falling priority:100%",
-            "callobject=harvest",
-            "animate=idle duration:2s",
+            "animate=hacking duration:3s",
+            "animate=idle duration:1s",
             "createware=rubber",
             "return"
         },
@@ -48,10 +26,10 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:tree radius:18",
             "walk=object",
             "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
-            "animate=hacking duration:6s",
+            "animate=hacking duration:3s",
             "playsound=sound/woodcutting/tree_falling priority:100%",
             "callobject=fall",
-            "animate=idle duration:2s",
+            "animate=idle duration:1s",
             "createware=log",
             "return"
         }

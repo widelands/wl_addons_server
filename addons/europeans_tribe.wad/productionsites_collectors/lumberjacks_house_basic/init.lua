@@ -64,8 +64,6 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_trees",
                 "call=pausing_production_for_outputs",
                 "call=felling_trees",
-                "sleep=duration:5s",
-                "call=harvesting_reed",
                 "return=skipped"
             }
         },
@@ -73,7 +71,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production because output not needed yet"),
             actions = {
-                "return=skipped when economy needs log or economy needs reed",
+                "return=skipped when economy needs log",
                 "sleep=duration:4m",
             }
         },
@@ -81,18 +79,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = _"felling trees",
             actions = {
-                "return=skipped when economy needs reed and not economy needs log",
                 "callworker=harvest_tree",
                 "produce=log"
-            }
-        },
-        harvesting_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-            descname = _"harvesting reed",
-            actions = {
-                "return=skipped when economy needs log and not economy needs reed",
-                "callworker=harvest_reed",
-                "produce=reed"
             }
         },
     },

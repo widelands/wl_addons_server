@@ -83,11 +83,11 @@ wl.Descriptions():new_productionsite_type {
                 "call=pausing_production_for_inputs",
                 "sleep=duration:20s",
                 "call=recruit_farmer",
-                "call=recruit_lumberjack",
+                "call=recruit_gardener",
                 "call=recruit_forester",
                 "sleep=duration:20s",
+                "call=recruit_lumberjack",
                 "call=recruit_stonecutter",
-                "call=recruit_claydigger",
                 "call=recruit_miner",
                 "sleep=duration:20s",
                 "call=recruit_worker",
@@ -113,7 +113,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing production because lack of tools"),
             actions = {
                 "return=skipped when site has basket and site has buckets and site has felling_ax and site has scythe and site has shovel and site has pick and site has hammer and site has saw and site has fire_tongs and site has needles",
-                "sleep=duration:15m",
+                "sleep=duration:30m",
             }
         },
         recruit_carrier_1 = {
@@ -154,18 +154,18 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_beekeeper_basic"
             }
         },
-        recruit_claydigger = {
+        recruit_gardener = {
             -- TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-            descname = pgettext("europeans_building", "recruiting claydigger"),
+            descname = pgettext("europeans_building", "recruiting gardener"),
             actions = {
-                "return=skipped unless economy needs europeans_claydigger_basic",
-                "return=skipped unless economy needs europeans_claydigger_normal",
-                "return=skipped unless economy needs europeans_claydigger_advanced",
+                "return=skipped unless economy needs europeans_gardener_basic",
+                "return=skipped unless economy needs europeans_gardener_normal",
+                "return=skipped unless economy needs europeans_gardener_advanced",
                 "return=skipped when economy needs buckets and economy needs water",
                 "consume=europeans_carrier",
                 "consume=shovel buckets",
                 "animate=working duration:180s",
-                "recruit=europeans_claydigger_basic"
+                "recruit=europeans_gardener_basic"
             }
         },
         recruit_farmer = {

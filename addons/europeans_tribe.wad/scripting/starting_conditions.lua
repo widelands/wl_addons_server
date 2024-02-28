@@ -406,6 +406,46 @@ function change_idle_stopped_buildings(player, productivity_percent)
     end
 end
 
+function upgrade_random_forester(player)
+    local fhb = player:get_buildings("europeans_foresters_house_basic")
+    local fhn = player:get_buildings("europeans_foresters_house_normal")
+    local random_number = 0
+    local building = nil
+    
+    if #fhn > 0 then
+        random_number = math.random(#fhn)
+        building = fhn[random_number]
+    elseif #fhb > 0 then
+        random_number = math.random(#fhb)
+        building = fhb[random_number]
+    else
+        building = nil
+    end
+    if building ~= nil then
+        building:enhance(true)
+    end
+end
+
+function upgrade_random_lumberjack(player)
+    local lhb = player:get_buildings("europeans_lumberjacks_house_basic")
+    local lhn = player:get_buildings("europeans_lumberjacks_house_normal")
+    local random_number = 0
+    local building = nil
+    
+    if #lhn > 0 then
+        random_number = math.random(#lhn)
+        building = lhn[random_number]
+    elseif #lhb > 0 then
+        random_number = math.random(#lhb)
+        building = lhb[random_number]
+    else
+        building = nil
+    end
+    if building ~= nil then
+        building:enhance(true)
+    end
+end
+
 function upgrade_random_militarysites(player)
     local ms1 = player:get_buildings("europeans_guardhouse")
     local ms2 = player:get_buildings("europeans_tower_small")
@@ -487,10 +527,11 @@ function doing_ai_stuff(player, increment)
         player:forbid_buildings("all")
         player:allow_buildings{"europeans_guardhouse", "europeans_tower", "europeans_barrier", }
         player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", }
-        player:allow_buildings{"europeans_clay_pit_basic", "europeans_foresters_house_basic", }
-        player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", "europeans_market_small", }
+        player:allow_buildings{"europeans_farm_small_basic", "europeans_foresters_house_basic", }
+        player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
     end
     if (increment == 4) then
+        player:allow_buildings{"europeans_market_small", }
         player:allow_buildings{"europeans_coalmine_basic", "europeans_ironmine_basic", "europeans_goldmine_basic", }
         player:allow_buildings{"europeans_coalmine_level_1", "europeans_ironmine_level_1", "europeans_goldmine_level_1", }
         player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_stonemasons_house_basic", "europeans_smelting_works_basic", "europeans_manufactory_basic", }
@@ -510,7 +551,7 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_castle", "europeans_market_big", }
         player:allow_buildings{"europeans_lumberjacks_house_normal", "europeans_quarry_normal", }
         player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", }
-        player:allow_buildings{"europeans_clay_pit_normal", "europeans_foresters_house_normal", }
+        player:allow_buildings{"europeans_farm_small_normal", "europeans_foresters_house_normal", }
         player:allow_buildings{"europeans_charcoal_kiln_normal", "europeans_stonemasons_house_normal", }
         player:allow_buildings{"europeans_coalmine_level_2", "europeans_ironmine_level_2", "europeans_goldmine_level_2", }
         player:allow_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", }
@@ -530,7 +571,7 @@ function doing_ai_stuff(player, increment)
     if (increment == 12) then
         player:allow_buildings{"europeans_lumberjacks_house_advanced", "europeans_quarry_advanced", }
         player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_well_level_6", }
-        player:allow_buildings{"europeans_clay_pit_advanced", "europeans_foresters_house_advanced", }
+        player:allow_buildings{"europeans_farm_small_advanced", "europeans_foresters_house_advanced", }
         player:allow_buildings{"europeans_charcoal_kiln_advanced", "europeans_stonemasons_house_advanced", }
         player:allow_buildings{"europeans_coalmine_level_4", "europeans_ironmine_level_4", "europeans_goldmine_level_4", }
         player:allow_buildings{"europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5", }
