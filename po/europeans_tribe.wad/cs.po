@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 03:07+0100\n"
+"POT-Creation-Date: 2024-02-29 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Zlopez <michal.konecny@psmail.xyz>, 2021\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -648,10 +648,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Small Farm"
-msgstr "Pokročilá slévárna"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:43
@@ -780,10 +779,9 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:139
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:143
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr "výcvik průzkumníka"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:148
@@ -802,17 +800,15 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Small Farm"
-msgstr "Jednoduchá studna"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Small Farm"
-msgstr "Běžná slévárna"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -2136,10 +2132,9 @@ msgstr "výcvik lesníka"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:167
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:174
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:170
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting gardener"
-msgstr "výcvik cvičitele"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:187
@@ -3691,10 +3686,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:428
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester, the gardener, and the fish breeder."
-msgstr "Velké kýble pro lesníka, kopáče hlíny a chovatele ryb. "
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
@@ -3759,12 +3753,11 @@ msgstr "Jsou vyráběny ve všech kovárnách."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:493
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the forester, the gardener and "
 "the terraformer use them."
-msgstr "Pila je důležitý nástroj. Potřebují ji dřevorubec a tesař."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:506
@@ -4428,36 +4421,27 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1588
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed in the holes created."
 msgstr ""
-"Kope obyčejnou hlínu a používá vodu, aby ji přeměnil v cihlářskou hlínu. "
-"Cihlářská hlína se používá k výrobě cihel."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1595
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed and cotton in the holes created."
 msgstr ""
-"Kope obyčejnou hlínu a používá vodu, aby ji přeměnil v cihlářskou hlínu. "
-"Cihlářská hlína se používá k výrobě cihel."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1602
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed, cotton and rubber trees in the holes created."
 msgstr ""
-"Kope obyčejnou hlínu a používá vodu, aby ji přeměnil v cihlářskou hlínu. "
-"Cihlářská hlína se používá k výrobě cihel."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1609
@@ -5623,24 +5607,21 @@ msgstr "Vrchní lesník"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/gardener_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Gardener"
-msgstr "Mistr cvičitel"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/gardener_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Gardener"
-msgstr "Cvičitel"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/gardener_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Gardener"
-msgstr "Vrchní cvičitel"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/geologist/init.lua:8

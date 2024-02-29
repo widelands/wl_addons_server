@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 03:07+0100\n"
+"POT-Creation-Date: 2024-02-29 03:07+0100\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1524,10 +1524,9 @@ msgstr "eenen Imker antohüren"
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:151
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_basic/init.lua:159
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:154
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting gardener"
-msgstr "eenen Buur antohüren"
+msgstr "eenen Gaardner antohüren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:162
@@ -1731,15 +1730,14 @@ msgstr "Sünner Water gifft ’t keen Leven!"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:111
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Water is used by the gardener, by the forester, by all farms, and in the "
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
-"De Lehmgraver, Förster, all Buurdereen un de Backeree un Broeree bruken "
-"Water. De Fiss- un Schaaptüchtereen mutten ok mit Water versörgt worden."
+"De Gaardner, Förster, all Buurdereen un de Backeree un Broeree bruken Water. "
+"De Fiss- un Schaaptüchtereen mutten ok mit Water versörgt worden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:122
@@ -1903,10 +1901,9 @@ msgstr "Lehm bruukt man, um Backstenen to maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:275
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from gardeners house."
-msgstr "De Europäers kriegen Lehm ut Lehmkuhlen."
+msgstr "De Europäers kriegen Lehm ut eener Gaardneree."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:286
@@ -2245,10 +2242,9 @@ msgstr "Golddeiten sünd Geld ut Gold. Dat is dat allerdüürste Hannelsding."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:622
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester, the gardener, and the fish breeder."
-msgstr "Grote Emmers för de Förster, Lehmgraver un Fisstüchter."
+msgstr "Grote Emmers för de Förster, Gaardner un Fisstüchter."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
@@ -2322,13 +2318,12 @@ msgstr "Se worden vun all de Smeden produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:687
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the forester, the gardener and "
 "the farmer use them."
 msgstr ""
-"De Schüppe is een wichtigs Warktüüg. De Förster, de Lehmgraver un de Buur "
+"De Schüppe is een wichtigs Warktüüg. De Förster, de Gaardner un de Buur "
 "bruken eene."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
@@ -2692,27 +2687,27 @@ msgstr "Sleit Flint un Marmel ut Stenen in de Naberskupp."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1168
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house and planting reed."
-msgstr "Maakt Lehm för de Kalkbranneree un Steenbickerhuus."
+msgstr "Maakt Lehm för de Kalkbranneree un Steenbickerhuus un plant Reit."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1177
-#, fuzzy
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed and cotton."
-msgstr "Maakt Lehm för de Kalkbranneree un Steenbickerhuus."
+msgstr ""
+"Maakt Lehm för de Kalkbranneree un Steenbickerhuus un plant Reit un Boomwull."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1186
-#, fuzzy
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed, cotton and "
 "rubber trees."
-msgstr "Maakt Lehm för de Kalkbranneree un Steenbickerhuus."
+msgstr ""
+"Maakt Lehm för de Kalkbranneree un Steenbickerhuus un plant Reit, Boomwull "
+"un Gummibomen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Farmer
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1198
@@ -2917,13 +2912,12 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1786
-#, fuzzy
 msgid ""
 "When gardeners dig up earth, they leave holes with water in the ground. "
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
-"Wenn Lehmgravers Klei upgraven, blieven Locken mit Water in de Grund torügg. "
+"Wenn Gaardners Klei upgraven, blieven Locken mit Water in de Grund torügg. "
 "Se worden na eeniger Tied dröge of könen vun eenem Landumackereerer bruukt "
 "worden, um neje Eer to maken."
 
@@ -3186,36 +3180,33 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2232
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed in the holes created."
 msgstr ""
-"Grafft Eer ut de Grund un maakt mit Water Lehm daarut. Lehm bruukt man, um "
-"Backstenen to maken."
+"Grafft Eer ut de Grund un maakt mit Water Lehm daarut. Plant dann Reit in de "
+"Locken, wat torüggblieven."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2239
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed and cotton in the holes created."
 msgstr ""
-"Grafft Eer ut de Grund un maakt mit Water Lehm daarut. Lehm bruukt man, um "
-"Backstenen to maken."
+"Grafft Eer ut de Grund un maakt mit Water Lehm daarut. Plant dann Reit un "
+"Boomwull in de Locken, wat torüggblieven."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2246
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed, cotton and rubber trees in the holes created."
 msgstr ""
-"Grafft Eer ut de Grund un maakt mit Water Lehm daarut. Lehm bruukt man, um "
-"Backstenen to maken."
+"Grafft Eer ut de Grund un maakt mit Water Lehm daarut. Plant dann Reit, "
+"Boomwull un Gummibomen in de Locken, wat torüggblieven."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Beekeeper's House
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2253
@@ -4982,7 +4973,3 @@ msgstr "Goder Buur"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Hannelsmann"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting claydigger"
-#~ msgstr "eenen Lehmgraver antohüren"

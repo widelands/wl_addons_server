@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 03:07+0100\n"
+"POT-Creation-Date: 2024-02-29 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: 천영준, 2022\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
@@ -647,10 +647,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Small Farm"
-msgstr "강화 제련소"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:43
@@ -749,10 +748,9 @@ msgstr "흙 파내기"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:99
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:124
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:103
-#, fuzzy
 msgctxt "europeans_building"
 msgid "digging a dry pond"
-msgstr "흙 파내기"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:108
@@ -780,19 +778,17 @@ msgstr "갈대 심기"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:139
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:143
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr "나무 강화"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:148
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:154
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:152
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting reed"
-msgstr "갈대 심기"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees on terraformed land because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:157
@@ -803,17 +799,15 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Small Farm"
-msgstr "기본 우물"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Small Farm"
-msgstr "일반 제련소"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -2136,10 +2130,9 @@ msgstr "수목 관리원 모집"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:167
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:174
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:170
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting gardener"
-msgstr "트레이너 모집"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:187
@@ -5547,24 +5540,21 @@ msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/gardener_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Gardener"
-msgstr "강화 방어막"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/gardener_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Gardener"
-msgstr "기본 채석장"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/gardener_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Gardener"
-msgstr "일반 채석장"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/geologist/init.lua:8
@@ -5733,19 +5723,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Clay Pit"
-#~ msgstr "강화 흙 채취장"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Clay Pit"
-#~ msgstr "기본 흙 채취장"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Clay Pit"
-#~ msgstr "일반 흙 채취장"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting claydigger"
-#~ msgstr "흙 채취자 모집"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 03:07+0100\n"
+"POT-Creation-Date: 2024-02-29 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Juanjo, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -648,10 +648,9 @@ msgstr "Magatzem"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Small Farm"
-msgstr "Forn de metalls avançat"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:43
@@ -734,10 +733,9 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:73
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:98
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:77
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making a pond with water"
-msgstr "Estany amb aigua"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:86
@@ -751,19 +749,17 @@ msgstr "extraure argila"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:99
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:124
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:103
-#, fuzzy
 msgctxt "europeans_building"
 msgid "digging a dry pond"
-msgstr "extraure argila"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:108
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:133
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:112
-#, fuzzy
 msgctxt "europeans_building"
 msgid "filling pond with water"
-msgstr "Estany amb aigua"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:119
@@ -783,19 +779,17 @@ msgstr "plantar juncs"
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:139
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:143
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr "endurir fusta"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:148
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:154
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:152
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting reed"
-msgstr "plantar juncs"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees on terraformed land because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:157
@@ -806,17 +800,15 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Small Farm"
-msgstr "Pou bàsic"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Small Farm"
-msgstr "Forn de metalls normal"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:8
@@ -2151,10 +2143,9 @@ msgstr "reclutar un guarda forestal"
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:167
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:174
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:170
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting gardener"
-msgstr "reclutar un entrenador"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:187
@@ -3569,10 +3560,9 @@ msgstr "L'argila s'usa per fer maons."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:257
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from gardeners house."
-msgstr "Els europeus aconsegueixen argila a la casa dels excavadors d'argila."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:268
@@ -3727,12 +3717,9 @@ msgstr "Monedes fetes d'or que serveixen per a negociar."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:428
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester, the gardener, and the fish breeder."
 msgstr ""
-"Poals grans per al guarda forestal, els excavadors d'argila i el criador de "
-"peixos."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
@@ -3800,13 +3787,11 @@ msgstr "Es produeixen en tots els tallers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:493
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the forester, the gardener and "
 "the terraformer use them."
 msgstr ""
-"La serra és una eina essencial. La necessiten el llenyataire i el fuster."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:506
@@ -4085,27 +4070,24 @@ msgstr "Talla blocs de granit i marbre de les roques properes."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:938
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house and planting reed."
-msgstr "Obté argila per als forns de calç o les cases dels picapedrers."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:947
-#, fuzzy
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed and cotton."
-msgstr "Obté argila per als forns de calç o les cases dels picapedrers."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:956
-#, fuzzy
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed, cotton and "
 "rubber trees."
-msgstr "Obté argila per als forns de calç o les cases dels picapedrers."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Miner
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:968
@@ -4191,15 +4173,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1142
-#, fuzzy
 msgid ""
 "When gardeners dig up earth, they leave holes with water in the ground. "
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
-"Quan els excavadors d'argila excaven la terra, deixen forats amb aigua. "
-"Aquests s'acaben assecant al cap del temps o es poden usar pel terraformador "
-"per produir més terreny."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1149
@@ -4490,36 +4468,27 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1588
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed in the holes created."
 msgstr ""
-"Extreu fang del terra i usa aigua per aconseguir-ne argila. L'argila es fa "
-"servir per fer maons."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1595
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed and cotton in the holes created."
 msgstr ""
-"Extreu fang del terra i usa aigua per aconseguir-ne argila. L'argila es fa "
-"servir per fer maons."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1602
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed, cotton and rubber trees in the holes created."
 msgstr ""
-"Extreu fang del terra i usa aigua per aconseguir-ne argila. L'argila es fa "
-"servir per fer maons."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1609
@@ -5686,24 +5655,21 @@ msgstr "Guarda forestal normal"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/gardener_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Gardener"
-msgstr "Entrenador avançat"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/gardener_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Gardener"
-msgstr "Entrenador bàsic"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/gardener_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Normal Gardener"
-msgstr "Entrenador normal"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/geologist/init.lua:8
@@ -5872,31 +5838,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr ""
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Clay Pit"
-#~ msgstr "Fossa de fang avançada"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Clay Pit"
-#~ msgstr "Fossa de fang bàsic"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Clay Pit"
-#~ msgstr "Fossa de fang normal"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting claydigger"
-#~ msgstr "reclutar un excavador d'argila"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Clay Digger"
-#~ msgstr "Excavador d'argila avançat"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Clay Digger"
-#~ msgstr "Excavador d'argila bàsic"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Clay Digger"
-#~ msgstr "Excavador d'argila normal"

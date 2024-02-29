@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 03:07+0100\n"
+"POT-Creation-Date: 2024-02-29 03:07+0100\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -822,45 +822,47 @@ msgstr "bes oogsten"
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Rubber Farm"
-msgstr ""
+msgstr "Rubberboerderij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:93
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_normal/init.lua:103
 msgctxt "europeans_building"
 msgid "planting cotton"
-msgstr ""
+msgstr "katoen planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:104
 msgctxt "europeans_building"
 msgid "planting rubber"
-msgstr ""
+msgstr "plant rubber"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:126
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_normal/init.lua:123
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr ""
+msgstr "katoen oogsten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:137
 msgctxt "europeans_building"
 msgid "harvesting rubber"
-msgstr ""
+msgstr "rubber oogsten"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:162
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
 msgstr ""
+"De boer die aan deze wijngaard werkt, heeft geen vrijgemaakte grond om zijn "
+"zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Reed Yard"
-msgstr ""
+msgstr "Rietveld"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_basic/init.lua:126
 msgctxt "europeans_building"
@@ -868,12 +870,14 @@ msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
 msgstr ""
+"De tuinman die op dit rietveld werkt, heeft geen vrijgemaakte grond om zijn "
+"zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Cotton Farm"
-msgstr ""
+msgstr "Katoen Kwekerij"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_normal/init.lua:146
 msgctxt "europeans_building"
@@ -881,6 +885,8 @@ msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
 "seeds."
 msgstr ""
+"De boer die op deze katoenkwekerij werkt, heeft geen vrijgemaakte grond om "
+"zijn zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/sawmill_advanced/init.lua:8
@@ -1518,10 +1524,9 @@ msgstr "imker aanwerven"
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:151
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_basic/init.lua:159
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_normal/init.lua:154
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting gardener"
-msgstr "landbouwer aanwerven"
+msgstr "tuinman aanwerven"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites/recruitement_center_advanced/init.lua:162
@@ -1727,14 +1732,13 @@ msgstr "Water is de essentie van het leven!"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:111
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Water is used by the gardener, by the forester, by all farms, and in the "
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
-"Water wordt gebruikt door de kleigraver, door de boswachter, door alle "
+"Water wordt gebruikt door de tuinman, door de boswachter, door alle "
 "boerderijen, en in de bakkerij en de brouwerij. Ook de viskwekerij en de "
 "schapenhouderij hebben water nodig."
 
@@ -1907,10 +1911,9 @@ msgstr "Klei is nodig om bakstenen te maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:275
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from gardeners house."
-msgstr "De Europeanen halen klei uit het kleidelvers huis."
+msgstr "De Europeanen halen klei uit het tuinmannenhuis."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:286
@@ -2259,10 +2262,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:622
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester, the gardener, and the fish breeder."
-msgstr "Grote emmers voor de boswachter, de kleigraver en de viskweker."
+msgstr "Grote emmers voor de boswachter, de tuinman en de viskweker."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
@@ -2337,14 +2339,13 @@ msgstr "Ze worden geproduceerd door alle smederijen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:687
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the forester, the gardener and "
 "the farmer use them."
 msgstr ""
 "De schop is een essentieel stuk gereedschap. Daarom gebruiken de boswachter, "
-"de kleigraver en de boer deze."
+"de tuinman en de boer de schop."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:700
@@ -2709,27 +2710,28 @@ msgstr "Hakt blokken graniet en marmer uit rotsen in de omgeving."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1168
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house and planting reed."
-msgstr "Klei maken voor kalkoven of steenhouwershuis."
+msgstr "Klei maken voor kalkoven of steenhouwershuis en riet planten."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1177
-#, fuzzy
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed and cotton."
-msgstr "Klei maken voor kalkoven of steenhouwershuis."
+msgstr ""
+"Het maken van klei voor kalkovens of steenhouwershuis en het planten van "
+"riet en katoen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1186
-#, fuzzy
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed, cotton and "
 "rubber trees."
-msgstr "Klei maken voor kalkoven of steenhouwershuis."
+msgstr ""
+"Het maken van klei voor kalkovens of steenhouwershuis en het planten van "
+"riet-, katoen- en rubberbomen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Farmer
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1198
@@ -2936,15 +2938,14 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1786
-#, fuzzy
 msgid ""
 "When gardeners dig up earth, they leave holes with water in the ground. "
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
-"Wanneer kleigravers aarde afgraven, laten ze gaten met water achter in de "
-"grond. Deze vallen na een tijdje droog of kunnen door een terreinvormer "
-"worden gebruikt om nieuwe grond te produceren."
+"Wanneer tuiniers aarde afgraven, laten ze gaten met water achter in de "
+"grond. Deze vallen na een tijdje droog of kunnen door terravormers worden "
+"gebruikt om nieuwe grond te produceren."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1793
@@ -3214,36 +3215,33 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2232
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed in the holes created."
 msgstr ""
-"Graaft modder op uit de grond en gebruikt water om er klei van te maken. "
-"Klei wordt gebruikt om bakstenen te maken."
+"Graaf modder op uit de grond en gebruik water om er klei van te maken. Plant "
+"vervolgens riet in de ontstane gaten."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2239
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed and cotton in the holes created."
 msgstr ""
 "Graaft modder op uit de grond en gebruikt water om er klei van te maken. "
-"Klei wordt gebruikt om bakstenen te maken."
+"Plant vervolgens riet en katoen in de ontstane gaten."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2246
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed, cotton and rubber trees in the holes created."
 msgstr ""
-"Graaft modder op uit de grond en gebruikt water om er klei van te maken. "
-"Klei wordt gebruikt om bakstenen te maken."
+"Graaft modder op uit de grond en gebruikt water om er klei van te maken. Dan "
+"planten ze riet-, katoen- en rubberbomen in de ontstane gaten."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Beekeeper's House
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2253
@@ -5020,7 +5018,3 @@ msgstr "Normale Boer"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Handelaar"
-
-#~ msgctxt "europeans_building"
-#~ msgid "recruiting claydigger"
-#~ msgstr "kleigraver aanwerven"
