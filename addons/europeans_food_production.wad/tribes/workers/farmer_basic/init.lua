@@ -21,10 +21,10 @@ wl.Descriptions():new_worker_type {
 
     programs = {
         check_space = {
-            "findspace=size:any radius:3 space"
+            "findspace=size:any radius:4 space"
         },
         plant_barley = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_barley",
@@ -32,7 +32,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_berrybush = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_berrybush",
@@ -40,7 +40,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_blackroot = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_blackroot",
@@ -48,7 +48,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_corn = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_corn",
@@ -56,7 +56,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_cotton = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_cotton",
@@ -64,7 +64,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_grape = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_grapes",
@@ -72,7 +72,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_reed = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_reed",
@@ -80,7 +80,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_rubber = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:rubber_tree_sapling",
@@ -88,7 +88,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_rye = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_rye",
@@ -96,7 +96,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_wheat = {
-            "findspace=size:any radius:3 space",
+            "findspace=size:any radius:4 space",
             "walk=coords",
             "animate=plant duration:6s",
             "plant=attrib:seed_wheat",
@@ -104,10 +104,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         check_fields = {
-            "findobject=attrib:field radius:3"
+            "findobject=attrib:field radius:4"
         },
         harvest_barley = {
-            "findobject=attrib:ripe_barley radius:3",
+            "findobject=attrib:ripe_barley radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",
@@ -117,7 +117,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_berrybush = {
-            "findobject=attrib:ripe_bush radius:3",
+            "findobject=attrib:ripe_bush radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",
@@ -127,7 +127,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_blackroot = {
-            "findobject=attrib:ripe_blackroot radius:3",
+            "findobject=attrib:ripe_blackroot radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",
@@ -137,7 +137,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_corn = {
-            "findobject=attrib:ripe_corn radius:3",
+            "findobject=attrib:ripe_corn radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",
@@ -147,7 +147,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_cotton = {
-            "findobject=attrib:ripe_cotton radius:3",
+            "findobject=attrib:ripe_cotton radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",
@@ -157,7 +157,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },        
         harvest_grape = {
-            "findobject=attrib:ripe_grapes radius:3",
+            "findobject=attrib:ripe_grapes radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",
@@ -167,7 +167,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_reed = {
-            "findobject=attrib:ripe_reed radius:3",
+            "findobject=attrib:ripe_reed radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",
@@ -177,7 +177,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_rubber = {
-            "findobject=attrib:rubber_tree_mature radius:3",
+            "findobject=attrib:rubber_tree_mature radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",
@@ -187,7 +187,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_rye = {
-            "findobject=attrib:ripe_rye radius:3",
+            "findobject=attrib:ripe_rye radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",
@@ -197,7 +197,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_wheat = {
-            "findobject=attrib:ripe_wheat radius:3",
+            "findobject=attrib:ripe_wheat radius:4",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=harvest duration:6s",

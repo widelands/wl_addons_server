@@ -156,8 +156,12 @@ wl.Descriptions():new_tribe {
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Cotton
-                    purpose = pgettext("europeans_ware", "Cotton is a raw material used to make clothing.")
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
+                        pgettext("europeans_ware", "Cotton is a raw material used to make clothing."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
+                        pgettext("europeans_ware", "It is produced by normal farms."),
+                    }
                 }
             },
             {
@@ -165,16 +169,42 @@ wl.Descriptions():new_tribe {
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Rubber
-                    purpose = pgettext("europeans_ware", "Rubber is needed to make improved boots.")
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
+                        pgettext("europeans_ware", "Rubber is needed to make improved boots."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
+                        pgettext("europeans_ware", "It is produced by advanced lumberjack or in rubber farm."),
+                    }
+                }
+            },
+            {
+                name = "wool",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "Not used in basic addon.")
+                }
+            },
+            {
+                name = "leather",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "Not used in basic addon.")
                 }
             },
             {
                 name = "scrap_wood",
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Scrap wood
-                    purpose = pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills. It can be processed into charcoal in charcoal burners.")
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
+                        pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
+                        pgettext("europeans_ware", "It can be processed into charcoal in charcoal kilns."),
+                    }
                 }
             }
         },
@@ -1723,6 +1753,48 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "europeans_weaving_mill_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
+                purpose = pgettext("europeans_building", "Weaves cloth out of reed.")
+            }
+        },
+        {
+            name = "europeans_weaving_mill_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
+                purpose = pgettext("europeans_building", "Weaves cloth for buildings and ships’ sails, and armor to equip and train the soldiers.")
+            }
+        },
+        {
+            name = "europeans_weaving_mill_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
+                purpose = pgettext("europeans_building", "Weaves cloth and armor out of cotton and reed.")
+            }
+        },
+        {
+            name = "europeans_sawmill_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
+                purpose = pgettext("europeans_building", "Hardening log to produce blackwood.")
+            }
+        },
+        {
+            name = "europeans_sawmill_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
+                purpose = pgettext("europeans_building", "Hardening log to produce blackwood and saws log to produce planks.")
+            }
+        },
+        {
+            name = "europeans_sawmill_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
+                purpose = pgettext("europeans_building", "Hardening log to produce blackwood and saws log to produce planks.")
+            }
+        },
+        {
             name = "europeans_charcoal_kiln_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
@@ -1789,6 +1861,90 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
                 purpose = pgettext("europeans_building", "Smelts ore into iron and gold. Recycles scrap metal.")
+            }
+        },
+        {
+            name = "europeans_toolsmithy_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
+                purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
+            }
+        },
+        {
+            name = "europeans_toolsmithy_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
+                purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
+            }
+        },
+        {
+            name = "europeans_toolsmithy_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
+                purpose = pgettext("europeans_building", "Forges all the tools that your workers need.")
+            }
+        },
+        {
+            name = "europeans_tailors_house_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
+                purpose = pgettext("europeans_building", "Produces clothing and armor.")
+            }
+        },
+        {
+            name = "europeans_tailors_house_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
+                purpose = pgettext("europeans_building", "Produces clothing and armor.")
+            }
+        },
+        {
+            name = "europeans_tailors_house_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
+                purpose = pgettext("europeans_building", "Produces clothing and armor.")
+            }
+        },
+        {
+            name = "europeans_shoemakers_house_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
+                purpose = pgettext("europeans_building", "Produces shoes and boots.")
+            }
+        },
+        {
+            name = "europeans_shoemakers_house_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
+                purpose = pgettext("europeans_building", "Produces shoes and boots.")
+            }
+        },
+        {
+            name = "europeans_shoemakers_house_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
+                purpose = pgettext("europeans_building", "Produces shoes and boots.")
+            }
+        },
+        {
+            name = "europeans_weaponsmithy_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
+                purpose = pgettext("europeans_building", "Produces shields and weapons.")
+            }
+        },
+        {
+            name = "europeans_weaponsmithy_normal",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
+                purpose = pgettext("europeans_building", "Produces shields and weapons.")
+            }
+        },
+        {
+            name = "europeans_weaponsmithy_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
+                purpose = pgettext("europeans_building", "Produces shields and weapons.")
             }
         },
 
@@ -2475,14 +2631,14 @@ wl.Descriptions():new_tribe {
       quarry = "europeans_quarry_basic",
       mine_stone = "europeans_quarry_basic",
       building_materials_primary = "europeans_lumberjacks_house_basic",
-      building_materials_secondary = "europeans_manufactory_basic",
+      building_materials_secondary = "europeans_sawmill_basic",
       building_materials_tertiary = "europeans_stonemasons_house_basic",
       charcoal = "europeans_charcoal_kiln_basic",
-      weaving_mill = "europeans_manufactory_basic",
-      farm_primary = "europeans_foresters_house_basic",
-      farm_secondary = "europeans_foresters_house_normal",
-      farm_tertiary = "europeans_foresters_house_advanced",
-      agriculture_producer = "europeans_lumberjacks_house_basic",
+      weaving_mill = "europeans_weaving_mill_basic",
+      farm_primary = "europeans_farm_small_basic",
+      farm_secondary = "europeans_farm_small_normal",
+      farm_tertiary = "europeans_farm_small_advanced",
+      agriculture_producer = "europeans_farm_small_basic",
       mine_coal = "europeans_coalmine_basic",
       mine_iron = "europeans_ironmine_basic",
       mine_gold = "europeans_goldmine_basic",

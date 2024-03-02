@@ -10,7 +10,7 @@ wl.Descriptions():new_immovable_type {
    size = "small",
    programs = {
       main = {
-         "animate=idle duration:15m",
+         "animate=idle duration:10m",
          "remove=",
       },
       harvest = {

@@ -56,6 +56,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "gold", amount = 4 },
         { name = "reed", amount = 8 },
         { name = "cotton", amount = 8 },
+        { name = "wool", amount = 8 },
         { name = "rubber", amount = 8 },
     },
 
@@ -75,12 +76,14 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_wood",
                 "call=pausing_production_for_blackwood",
-                "sleep=duration:20s",
+                "sleep=duration:10s",
                 "call=trade_cotton",
-                "sleep=duration:20s",
+                "sleep=duration:10s",
                 "call=trade_reed",
-                "sleep=duration:20s",
-                "call=trade_rubber"
+                "sleep=duration:10s",
+                "call=trade_rubber",
+                "sleep=duration:10s",
+                "call=trade_wool"
             }
         },
         trading_for_copper = {
@@ -89,12 +92,14 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "call=pausing_production_for_gold",
-                "sleep=duration:20s",
+                "sleep=duration:10s",
                 "call=trade_cotton_copper",
-                "sleep=duration:20s",
+                "sleep=duration:10s",
                 "call=trade_reed_copper",
-                "sleep=duration:20s",
-                "call=trade_rubber_copper"
+                "sleep=duration:10s",
+                "call=trade_rubber_copper",
+                "sleep=duration:10s",
+                "call=trade_wool_copper"
             }
         },
         pausing_production_for_blackwood = {
@@ -188,6 +193,32 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has rubber:4",
                 "return=skipped unless site has gold",
                 "consume=rubber:3 gold",
+                "animate=working duration:30s",
+                "produce=coin_copper:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_wool = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs wool and not economy needs coin_wood",
+                "return=skipped unless site has wool:4",
+                "return=skipped unless site has blackwood",
+                "consume=wool:3 blackwood",
+                "animate=working duration:30s",
+                "produce=coin_wood:4",
+                "sleep=duration:30s",
+            }
+        },
+        trade_wool_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped when economy needs wool and not economy needs coin_copper",
+                "return=skipped unless site has wool:4",
+                "return=skipped unless site has gold",
+                "consume=wool:3 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:4",
                 "sleep=duration:30s",

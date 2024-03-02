@@ -54,9 +54,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=harvesting_reed",
                 "sleep=duration:5s",
                 "call=harvesting_cotton",
-                "sleep=duration:5s",
-                "callworker=check_land",
-                "call=planting_land",
                 "return=skipped"
             }
         },
@@ -150,16 +147,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs cotton and not economy needs reed",
                 "callworker=harvest_reed",
                 "produce=reed"
-            }
-        },
-        planting_land = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting trees on terraformed land because ...
-            descname = pgettext("europeans_building", "planting trees on terraformed land"),
-            actions = {
-                "return=skipped when economy needs water",
-                "return=skipped unless site has water:2",
-                "consume=water:2",
-                "callworker=plant_terraformed_land",
             }
         },
     },

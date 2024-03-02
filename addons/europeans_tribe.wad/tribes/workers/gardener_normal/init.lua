@@ -14,20 +14,20 @@ wl.Descriptions():new_worker_type {
 
     programs = {
         check_dig = {
-            "findspace=size:any radius:8 avoid:field",
+            "findspace=size:any radius:6 avoid:field",
         },
         dig = {
-            "findspace=size:any radius:8 avoid:field",
+            "findspace=size:any radius:6 avoid:field",
             "walk=coords",
             "animate=dig duration:2s",
             "plant=attrib:pond_dry",
             "return"
         },
         check_pond_dry = {
-            "findobject=attrib:pond_dry radius:8",
+            "findobject=attrib:pond_dry radius:6",
         },
         terraform_pond_dry = {
-            "findobject=attrib:pond_dry radius:8",
+            "findobject=attrib:pond_dry radius:6",
             "walk=object",
             "animate=water duration:2s",
             "callobject=fill_pond",
@@ -35,10 +35,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         check_pond_water = {
-            "findobject=attrib:pond_water radius:8",
+            "findobject=attrib:pond_water radius:6",
         },
         plant_cotton = {
-            "findobject=attrib:pond_water radius:8",
+            "findobject=attrib:pond_water radius:6",
             "walk=object",
             "animate=plant duration:2s",
             "callobject=plant_cotton_in_pond",
@@ -46,7 +46,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_reed = {
-            "findobject=attrib:pond_water radius:8",
+            "findobject=attrib:pond_water radius:6",
             "walk=object",
             "animate=plant duration:2s",
             "callobject=plant_reed_in_pond",
@@ -54,7 +54,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_cotton = {
-            "findobject=attrib:ripe_cotton radius:8",
+            "findobject=attrib:ripe_cotton radius:6",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=idle duration:2s",
@@ -64,7 +64,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_reed = {
-            "findobject=attrib:ripe_reed radius:8",
+            "findobject=attrib:ripe_reed radius:6",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=idle duration:2s",

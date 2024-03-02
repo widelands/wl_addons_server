@@ -43,7 +43,7 @@ wl.Descriptions():new_productionsite_type {
     aihints = {},
     
     working_positions = {
-        europeans_worker_advanced = 2,
+        europeans_worker_advanced = 1,
         europeans_worker_normal = 2,
         europeans_worker_basic = 2,
     },
@@ -52,7 +52,9 @@ wl.Descriptions():new_productionsite_type {
         { name = "log", amount = 16 },
         { name = "reed", amount = 12 },
         { name = "cotton", amount = 12 },
+        { name = "wool", amount = 12 },
         { name = "rubber", amount = 12 },
+        { name = "leather", amount = 12 },
         { name = "coal", amount = 12 },
         { name = "iron", amount = 12 },
     },
@@ -63,10 +65,10 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=processing_log",
-                "call=processing_reed_cotton",
+                "call=processing_reed_cotton_wool",
                 "call=processing_iron",
                 "call=processing_log",
-                "call=processing_reed_cotton",
+                "call=processing_reed_cotton_wool",
                 "call=processing_iron",
                 "return=skipped"
             }
@@ -86,33 +88,29 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "processing log to create tools and weapons"),
             actions = {
                 "call=pausing_production_for_log",
-                "call=producing_blackwood",
-                "call=producing_planks",
-                "call=producing_blackwood",
-                "call=producing_planks",
                 "call=producing_armor_wooden",
                 "call=producing_boots_wooden",
                 "call=producing_helmet_wooden",
                 "call=producing_spear_wooden",
             }
         },
-        pausing_production_for_reed_cotton = {
+        pausing_production_for_reed_cotton_wool = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
-            descname = pgettext("europeans_building", "pausing production because lack of reed or cotton"),
+            descname = pgettext("europeans_building", "pausing production because lack of reed or cotton,wool"),
             actions = {
                 "return=skipped when site has reed:8 and site has cotton:6",
+                "return=skipped when site has reed:8 and site has wool:6",
                 "return=skipped when site has cotton:6 and economy needs cloth",
+                "return=skipped when site has wool:6 and economy needs cloth",
                 "sleep=duration:5m",
             }
         },
-        processing_reed_cotton = {
+        processing_reed_cotton_wool = {
             -- TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
-            descname = pgettext("europeans_building", "processing reed or cotton to create tools and armor"),
+            descname = pgettext("europeans_building", "processing reed or cotton or wool to create tools and armor"),
             actions = {
-                "call=pausing_production_for_reed_cotton",
-                "call=producing_cloth",
+                "call=pausing_production_for_reed_cotton_wool",
                 "call=producing_armor",
-                "call=producing_cloth",
                 "call=producing_armor",
                 "call=producing_armor_processed",
                 "call=producing_boots_sturdy",
@@ -151,40 +149,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=producing_ax_broad",
                 "call=producing_shield_advanced",
                 "call=producing_sword_broad",
-            }
-        },
-        producing_blackwood = {
-            -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
-            descname = pgettext("europeans_building", "hardening wood"),
-            actions = {
-                "return=skipped when economy needs planks and not economy needs blackwood",
-                "return=skipped when economy needs log and not economy needs blackwood",
-                "consume=log:2",
-                "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:10s",
-                "produce=scrap_wood",
-                "consume=log:2",
-                "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:10s",
-                "produce=scrap_wood",
-                "produce=blackwood:4"
-            }
-        },
-        producing_planks = {
-            -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
-            descname = pgettext("europeans_building", "sawing logs"),
-            actions = {
-                "return=skipped when economy needs blackwood and not economy needs planks",
-                "return=skipped when economy needs log and not economy needs planks",
-                "consume=log:2",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:10s",
-                "produce=scrap_wood",
-                "consume=log:2",
-                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:10s",
-                "produce=scrap_wood",
-                "produce=planks:3"
             }
         },
         producing_armor_wooden = {
@@ -259,25 +223,13 @@ wl.Descriptions():new_productionsite_type {
                 "produce=spear_wooden:2"
             }
         },
-        producing_cloth = {
-            -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
-            descname = pgettext("europeans_building", "weaving cloth"),
-            actions = {
-                "return=skipped when economy needs cotton and not economy needs cloth",
-                "return=skipped when economy needs armor and not economy needs cloth",
-                "consume=cotton:6",
-                "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:60s",
-                "produce=cloth:6"
-            }
-        },
         producing_armor = {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
                 "return=skipped when economy needs cotton and not economy needs armor",
                 "return=skipped when economy needs cloth and not economy needs armor",
-                "consume=cotton:4",
+                "consume=cotton,wool:4",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:60s",
                 "produce=armor:3"
@@ -297,7 +249,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_sturdy and not economy needs armor_processed",
                 "return=skipped when economy needs boots_swift and not economy needs armor_processed",
                 "return=skipped when economy needs boots_advanced and not economy needs armor_processed",
-                "consume=cotton:3 reed",
+                "consume=reed cotton,wool:3",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:120s",
                 "produce=armor_processed:2"
@@ -318,7 +270,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_sturdy and not economy needs armor_compressed",
                 "return=skipped when economy needs boots_swift and not economy needs armor_compressed",
                 "return=skipped when economy needs boots_advanced and not economy needs armor_compressed",
-                "consume=cotton:2 reed:2 rubber",
+                "consume=reed:2 cotton,wool:2 rubber,leather",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:120s",
                 "produce=armor_compressed:2"
@@ -339,7 +291,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs boots_sturdy and not economy needs armor_advanced",
                 "return=skipped when economy needs boots_swift and not economy needs armor_advanced",
                 "return=skipped when economy needs boots_advanced and not economy needs armor_advanced",
-                "consume=cotton:2 reed:2 rubber:2",
+                "consume=reed:2 cotton,wool:2 rubber,leather:2",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:120s",
                 "produce=armor_advanced:2"
@@ -359,7 +311,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_advanced and not economy needs boots_sturdy",
                 "return=skipped when economy needs boots_swift and not economy needs boots_sturdy",
                 "return=skipped when economy needs boots_advanced and not economy needs boots_sturdy",
-                "consume=log cotton:2",
+                "consume=log cotton,wool:2",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:120s",
                 "produce=boots_sturdy:2"
@@ -380,7 +332,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_advanced and not economy needs boots_swift",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_swift",
                 "return=skipped when economy needs boots_advanced and not economy needs boots_swift",
-                "consume=log cotton:2 rubber",
+                "consume=log cotton,wool:2 rubber,leather",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:120s",
                 "produce=boots_swift:2"
@@ -401,7 +353,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_advanced and not economy needs boots_advanced",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_advanced",
                 "return=skipped when economy needs boots_swift and not economy needs boots_advanced",
-                "consume=log cotton:2 rubber",
+                "consume=log cotton,wool:2 rubber,leather",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:120s",
                 "produce=boots_advanced:2"

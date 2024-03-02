@@ -10,32 +10,36 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
+        check_land = {
+            "findspace=size:any radius:8 terraform:amazons",
+        },
         check_dig = {
-            "findspace=size:any radius:10 avoid:field",
+            "findspace=size:any radius:8 avoid:field",
         },
         dig = {
-            "findspace=size:any radius:10 avoid:field",
+            "findspace=size:any radius:8 avoid:field",
             "walk=coords",
             "animate=dig duration:1s",
             "plant=attrib:pond_dry",
             "return"
         },
         check_pond_dry = {
-            "findobject=attrib:pond_dry radius:10",
+            "findobject=attrib:pond_dry radius:8",
         },
         terraform_pond_dry = {
-            "findobject=attrib:pond_dry radius:10",
+            "findobject=attrib:pond_dry radius:8",
             "walk=object",
             "animate=water duration:1s",
+            "terraform=amazons",
             "callobject=fill_pond",
             "animate=water duration:1s",
             "return"
         },
         check_pond_water = {
-            "findobject=attrib:pond_water radius:10",
+            "findobject=attrib:pond_water radius:8",
         },
         plant_cotton = {
-            "findobject=attrib:pond_water radius:10",
+            "findobject=attrib:pond_water radius:8",
             "walk=object",
             "animate=plant duration:1s",
             "callobject=plant_cotton_in_pond",
@@ -43,7 +47,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_reed = {
-            "findobject=attrib:pond_water radius:10",
+            "findobject=attrib:pond_water radius:8",
             "walk=object",
             "animate=plant duration:1s",
             "callobject=plant_reed_in_pond",
@@ -51,7 +55,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_cotton = {
-            "findobject=attrib:ripe_cotton radius:10",
+            "findobject=attrib:ripe_cotton radius:8",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=idle duration:1s",
@@ -61,26 +65,13 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_reed = {
-            "findobject=attrib:ripe_reed radius:10",
+            "findobject=attrib:ripe_reed radius:8",
             "walk=object",
             "playsound=sound/farm/scythe priority:70% allow_multiple",
             "animate=idle duration:1s",
             "callobject=harvest",
             "animate=idle duration:1s",
             "createware=reed",
-            "return"
-        },
-        check_land = {
-            "findspace=size:any radius:12 terraform:amazons",
-        },
-        plant_terraformed_land = {
-            "findspace=size:any radius:12 terraform:amazons",
-            "walk=coords",
-            "animate=dig duration:2s",
-            "terraform=amazons",
-            "animate=dig duration:2s",
-            "animate=plant duration:1s",
-            "plant=attrib:tree_sapling",
             "return"
         },
     },

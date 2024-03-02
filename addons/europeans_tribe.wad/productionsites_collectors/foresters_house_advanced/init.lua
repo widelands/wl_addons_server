@@ -38,9 +38,6 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_space",
                 "call=pausing_production_for_inputs",
                 "call=plant_trees",
-                "sleep=duration:10s",
-                "callworker=check_land",
-                "call=planting_land",
                 "return=skipped"
             }
         },
@@ -66,16 +63,6 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=plant_rubber_tree",
                 "consume=water",
                 "callworker=plant_tree"
-            }
-        },
-        planting_land = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting trees on terraformed land because ...
-            descname = pgettext("europeans_building", "planting trees on terraformed land"),
-            actions = {
-                "return=skipped when economy needs water",
-                "return=skipped unless site has water:2",
-                "consume=water:2",
-                "callworker=plant_terraformed_land",
             }
         },
     },

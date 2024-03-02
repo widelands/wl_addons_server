@@ -156,8 +156,12 @@ wl.Descriptions():new_tribe {
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Cotton
-                    purpose = pgettext("europeans_ware", "Cotton is a raw material used to make clothing.")
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
+                        pgettext("europeans_ware", "Cotton is a raw material used to make clothing."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
+                        pgettext("europeans_ware", "It is produced by normal farms."),
+                    }
                 }
             },
             {
@@ -174,18 +178,26 @@ wl.Descriptions():new_tribe {
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Rubber
-                    purpose = pgettext("europeans_ware", "Rubber is needed to make improved boots.")
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
+                        pgettext("europeans_ware", "Rubber is needed to make improved boots."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
+                        pgettext("europeans_ware", "It is produced by advanced lumberjack or in rubber farm."),
+                    }
                 }
             },
             {
                 name = "scrap_wood",
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Scrap wood
-                    purpose = pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills. It can be processed into charcoal in charcoal burners.")
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
+                        pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
+                        pgettext("europeans_ware", "It can be processed into charcoal in charcoal kilns."),
+                    }
                 }
-            }
+            },
         },
         {
             -- Building Materials 2 (Normal)
@@ -1361,7 +1373,7 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_trader",
+                name = "europeans_food_trader",
                 default_target_quantity = 4,
                 preciousness = 1,
                 helptexts = {
@@ -2163,7 +2175,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_trading_post",
+            name = "europeans_trading_post_food",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Market
                 purpose = pgettext("europeans_building", "Trading building to purchase wares from other allied tribes.")

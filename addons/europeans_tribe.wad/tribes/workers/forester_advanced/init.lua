@@ -11,37 +11,28 @@ wl.Descriptions():new_worker_type {
     
     programs = {
         check_space = {
-            "findspace=size:any radius:12 avoid:field saplingsearches:12"
+            "findspace=size:any radius:8 avoid:field saplingsearches:12"
+        },
+        check_land = {
+            "findspace=size:any radius:8 terraform:amazons",
         },
         plant_tree = {
-            "findspace=size:any radius:12 avoid:field saplingsearches:12",
+            "findspace=size:any radius:8 avoid:field saplingsearches:12",
             "walk=coords",
-            "animate=dig duration:2s",
+            "animate=dig duration:1s",
+            "terraform=amazons",
             "animate=planting duration:1s",
             "plant=attrib:tree_sapling",
             "animate=water duration:1s",
             "return"
         },
         plant_rubber_tree = {
-            "findspace=size:any radius:12 avoid:field saplingsearches:12",
+            "findspace=size:any radius:8 avoid:field saplingsearches:12",
             "walk=coords",
-            "animate=dig duration:2s",
+            "animate=dig duration:1s",
             "animate=planting duration:1s",
             "plant=attrib:rubber_tree_sapling",
             "animate=water duration:1s",
-            "return"
-        },
-        check_land = {
-            "findspace=size:any radius:12 terraform:amazons",
-        },
-        plant_terraformed_land = {
-            "findspace=size:any radius:12 terraform:amazons",
-            "walk=coords",
-            "animate=dig duration:2s",
-            "terraform=amazons",
-            "animate=dig duration:2s",
-            "animate=planting duration:1s",
-            "plant=attrib:tree_sapling",
             "return"
         },
     },

@@ -14,10 +14,10 @@ wl.Descriptions():new_worker_type {
 
     programs = {
         check_space = {
-            "findspace=size:any radius:8 avoid:field saplingsearches:8"
+            "findspace=size:any radius:6 avoid:field saplingsearches:8"
         },
         plant_tree = {
-            "findspace=size:any radius:8 avoid:field saplingsearches:8",
+            "findspace=size:any radius:6 avoid:field saplingsearches:8",
             "walk=coords",
             "animate=dig duration:2s",
             "animate=planting duration:2s",
@@ -26,7 +26,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         plant_rubber_tree = {
-            "findspace=size:any radius:8 avoid:field saplingsearches:8",
+            "findspace=size:any radius:6 avoid:field saplingsearches:8",
             "walk=coords",
             "animate=dig duration:2s",
             "animate=planting duration:2s",

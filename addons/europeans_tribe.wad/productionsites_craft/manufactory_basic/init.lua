@@ -61,7 +61,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     aihints = {
-        basic_amount = 1,
         very_weak_ai_limit = 2,
         weak_ai_limit = 4,
         normal_ai_limit = 6,
@@ -69,7 +68,7 @@ wl.Descriptions():new_productionsite_type {
     
     working_positions = {
         europeans_worker_advanced = 1,
-        europeans_worker_basic = 3
+        europeans_worker_basic = 2
     },
     
     inputs = {
@@ -106,8 +105,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "processing log to create tools and weapons"),
             actions = {
                 "call=pausing_production_for_log",
-                "call=producing_blackwood",
-                "call=producing_blackwood",
                 "call=producing_armor_wooden",
                 "call=producing_boots_wooden",
                 "call=producing_helmet_wooden",
@@ -128,7 +125,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "processing reed to create tools and armor"),
             actions = {
                 "call=pausing_production_for_reed",
-                "call=producing_cloth",
                 "call=producing_armor_processed",
                 "call=producing_boots_sturdy",
             }
@@ -158,23 +154,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=producing_needles",
                 "call=producing_helmet_mask",
                 "call=producing_spear_advanced",
-            }
-        },
-        producing_blackwood = {
-            -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
-            descname = pgettext("europeans_building", "hardening wood"),
-            actions = {
-                "return=skipped unless economy needs blackwood or workers need experience",
-                "return=skipped when economy needs log and not economy needs blackwood",
-                "consume=log:2",
-                "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:25s",
-                "produce=scrap_wood",
-                "consume=log:2",
-                "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:25s",
-                "produce=scrap_wood",
-                "produce=blackwood:4"
             }
         },
         producing_armor_wooden = {
@@ -243,18 +222,6 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:180s",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "produce=spear_wooden:2"
-            }
-        },
-        producing_cloth = {
-            -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
-            descname = pgettext("europeans_building", "weaving cloth"),
-            actions = {
-                "return=skipped unless economy needs cloth or workers need experience",
-                "return=skipped when economy needs reed and not economy needs cloth",
-                "consume=reed:4",
-                "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:90s",
-                "produce=cloth:4"
             }
         },
         producing_armor_processed = {
