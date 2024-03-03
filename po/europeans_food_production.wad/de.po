@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-02 03:07+0100\n"
+"POT-Creation-Date: 2024-03-03 03:07+0100\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2024\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -1377,10 +1377,9 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:163
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced by normal farms."
-msgstr "Es wird von allen Schmieden hergestellt."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:173
@@ -1406,14 +1405,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:195
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
 "or from sawmills."
 msgstr ""
-"Holzabfall ist ein Abfallprodukt dass in der Sägemühle oder beim Abriss von "
-"Gebäuden entsteht. Es kann in der Köhlerei zu Holzkohle verarbeitet werden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:197
@@ -4599,231 +4595,3 @@ msgstr "Normaler Bauer"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Händler"
-
-#~ msgctxt "immovable"
-#~ msgid "Reed Field (medium)"
-#~ msgstr "Reetfeld (mittel)"
-
-#~ msgctxt "immovable"
-#~ msgid "Reed Field (ripe)"
-#~ msgstr "Reetfeld (reif)"
-
-#~ msgctxt "immovable"
-#~ msgid "Reed Field (small)"
-#~ msgstr "Reetfeld (klein)"
-
-#~ msgctxt "immovable"
-#~ msgid "Reed Field (tiny)"
-#~ msgstr "Reetfeld (jung)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Sawmill"
-#~ msgstr "Verbesserte Sägemühle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "sawing logs"
-#~ msgstr "Das Zersägen von Stämmen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "hardening wood"
-#~ msgstr "Das Härten von Holz"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Sawmill"
-#~ msgstr "Einfache Sägemühle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Sawmill"
-#~ msgstr "Normale Sägemühle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Shoemakers House"
-#~ msgstr "Fortgeschrittene Schusterei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for planks, cloth and leather"
-#~ msgstr "Produktionspause von Brettern, Stoff und Leder"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making a pair of wooden boots"
-#~ msgstr "Das Herstellen eines Paares von Holzstiefel"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making study boots"
-#~ msgstr "Das Herstellen robuster Stiefel"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making swift boots"
-#~ msgstr "Die Herstellung von flinken Stiefeln"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making advanced boots"
-#~ msgstr "Das Herstellen verbesserter Stiefel"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Shoemakers House"
-#~ msgstr "Einfaches Schuhmacherhaus"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Shoemakers House"
-#~ msgstr "Normales Schuhmacherhaus"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Toolsmithy"
-#~ msgstr "Verbesserte Werkzeugschmiede"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making baskets"
-#~ msgstr "Das Herstellen von Körben"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making buckets"
-#~ msgstr "Das Herstellen von Eimern"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making felling axes"
-#~ msgstr "Das Herstellen von Holzfälleräxten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making fire tongs"
-#~ msgstr "Das Herstellen einer Feuerzange"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making hammers"
-#~ msgstr "Das Herstellen von Hämmern"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making needles"
-#~ msgstr "Das Herstellen von Nadeln"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making picks"
-#~ msgstr "Das Herstellen von Spitzhacken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making saws"
-#~ msgstr "Das Herstellen von Sägen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making sycthes"
-#~ msgstr "Das Herstellen von Sensen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making shovels"
-#~ msgstr "Das Herstellen von Schaufeln"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Toolsmithy"
-#~ msgstr "Einfache Werkzeugschmiede"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Toolsmithy"
-#~ msgstr "Normale Werkzeugschmiede"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Weaponsmithy"
-#~ msgstr "Verbesserte Waffenschmiede"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making a wooden helmet"
-#~ msgstr "Das Herstellen eine hölzernen Helms"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a wooden spear"
-#~ msgstr "Das Herstellen eines Holzspeers"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a mask"
-#~ msgstr "Das Schmieden einer Maske"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a steel shield"
-#~ msgstr "Das Schmieden eines Stahlschilds"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging an advanced shield"
-#~ msgstr "Das Schmieden eines verbesserten Schilds"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging an advanced spear"
-#~ msgstr "Das Schmieden eines verbesserten Speers"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a broad ax"
-#~ msgstr "Das Schmieden einer Breitaxt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a broadsword"
-#~ msgstr "Das Schmieden eines Breitschwertes"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Weaponsmithy"
-#~ msgstr "Einfache Waffenschmiede"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaponsmithy"
-#~ msgstr "Normale Waffenschmiede"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Tailors House"
-#~ msgstr "Verbessertes Schneiderhaus"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making a wooden armor"
-#~ msgstr "Das Herstellen einer hölzernen Rüstung"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring processed armor"
-#~ msgstr "Das Schneidern eines überarbeiteten Harnischs"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a suit of chain armor"
-#~ msgstr "Das Schneidern eines Kettenhemds"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a suit of advanced armor"
-#~ msgstr "Das Schneidern eines verbesserten Harnischs"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Tailors House"
-#~ msgstr "Einfaches Schneiderhaus"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Tailors House"
-#~ msgstr "Normales Schneiderhaus"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Weaving Mill"
-#~ msgstr "Verbesserte Weberei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for cotton"
-#~ msgstr "Produktionspause von Baumwolle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "weaving cloth"
-#~ msgstr "Das Weben von Stoff"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a suit of armor"
-#~ msgstr "Das Schneidern einer Rüstung"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Weaving Mill"
-#~ msgstr "Einfache Weberei"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaving Mill"
-#~ msgstr "Normale Weberei"
-
-#~ msgctxt "ware"
-#~ msgid "Leather"
-#~ msgstr "Leder"
-
-#~ msgctxt "ware"
-#~ msgid "Rye"
-#~ msgstr "Roggen"
-
-#~ msgctxt "ware"
-#~ msgid "Wool"
-#~ msgstr "Wolle"

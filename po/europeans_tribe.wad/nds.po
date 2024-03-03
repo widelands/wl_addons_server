@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-02 03:08+0100\n"
+"POT-Creation-Date: 2024-03-03 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1233,17 +1233,16 @@ msgstr "Boomstammen tum Produzeren vun Warktüüg un Wapens to bruken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:99
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production because lack of reed or cotton,wool"
-msgstr "dat Produzeren um de Mangel an Reit of Boomwull antohollen"
+msgstr "dat Produzeren um de Mangel an Reit of Boomwull of Wull antohollen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:110
-#, fuzzy
 msgctxt "europeans_building"
 msgid "processing reed or cotton or wool to create tools and armor"
-msgstr "Reit of Boomwull tum Produzeren vun Warktüüg un Wapenrocken to bruken"
+msgstr ""
+"Reit of Boomwull of Wull tum Produzeren vun Warktüüg un Wapenrocken to bruken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
 #: addons/europeans_tribe.wad/productionsites_craft/manufactory_advanced/init.lua:125
@@ -1571,91 +1570,81 @@ msgstr "Reit of Boomwull tum Produzeren vun Warktüüg un Wapenrocken to bruken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Shoemakers House"
-msgstr "Grotes Steenbickerhuus"
+msgstr "Grote Schoosteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Shoemakers House"
-msgstr "Lütte Bespejeree"
+msgstr "Lütte Schoosteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/shoemakers_house_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Shoemakers House"
-msgstr "Boomplanteree"
+msgstr "Schoosteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Toolsmithy"
-msgstr "Betere Stevels"
+msgstr "Grote Warktüügsmee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Toolsmithy"
-msgstr ""
+msgstr "Lütte Warktüügsmee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_tools_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Toolsmithy"
-msgstr "Goder Boomplanter"
+msgstr "Warktüügsmee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Weaponsmithy"
-msgstr "Grote Wachters-Kamer"
+msgstr "Grote Wapensmee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Weaponsmithy"
-msgstr ""
+msgstr "Lütte Wapensmee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/smithy_weapons_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Weaponsmithy"
-msgstr ""
+msgstr "Wapensmee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Tailors House"
-msgstr "Grote Landumackeree"
+msgstr "Grote Sniederee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Tailors House"
-msgstr "Lütte Bespejeree"
+msgstr "Lütte Sniederee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft/tailors_house_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Tailors House"
-msgstr "Landumackeree"
+msgstr "Sniederee"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft_build/sawmill_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Sawmill"
-msgstr "Goder Schild"
+msgstr "Grote Saagmöhlen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
 #: addons/europeans_tribe.wad/productionsites_craft_build/sawmill_advanced/init.lua:75
@@ -1674,17 +1663,15 @@ msgstr "Holt to harden"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft_build/sawmill_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Sawmill"
-msgstr "Lütte Well"
+msgstr "Lütte Saagmöhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft_build/sawmill_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Sawmill"
-msgstr "Lütte Buurdereetje"
+msgstr "Saagmöhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft_build/stonemasons_house_advanced/init.lua:8
@@ -1727,17 +1714,15 @@ msgstr "Kalkbranneree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft_build/weaving_mill_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Weaving Mill"
-msgstr "Meister-Mester"
+msgstr "Grote Spinnweelmöhlen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_craft_build/weaving_mill_advanced/init.lua:67
-#, fuzzy
 msgctxt "europeans_building"
 msgid "pausing production for cotton"
-msgstr "dat Produzeren um de Mangel an Reit of Boomwull antohollen"
+msgstr "dat Produzeren för Boomwull antohollen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_tribe.wad/productionsites_craft_build/weaving_mill_advanced/init.lua:84
@@ -1749,17 +1734,15 @@ msgstr "Stoff to spinnen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft_build/weaving_mill_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Weaving Mill"
-msgstr "Lütte Well"
+msgstr "Lütte Spinnweelmöhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft_build/weaving_mill_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Weaving Mill"
-msgstr "Kalkbranneree"
+msgstr "Spinnweelmöhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/productionsites_craft_suppliers/charcoal_kiln_advanced/init.lua:8
@@ -3737,10 +3720,9 @@ msgstr "Ut Boomwull maakt man Kluften."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:163
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced by normal farms."
-msgstr "’t word vun all de Smeden produzeert."
+msgstr "'t word vun de Buurderee produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:174
@@ -3752,31 +3734,29 @@ msgstr "Gummi elasticum bruukt man för betere Stevels."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:176
 msgctxt "europeans_ware"
 msgid "It is produced by advanced lumberjack or in rubber farm."
-msgstr ""
+msgstr "’t word vun de Meister-Boomhauer of de Gummi-Buurderee produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:186
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:195
 msgctxt "europeans_ware"
 msgid "Not used in basic addon."
-msgstr ""
+msgstr "Word in de Grund-Verwiedern nich bruukt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:204
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
 "or from sawmills."
 msgstr ""
-"Altholt is Offall, wat bi’m Ofrieten vun Husen un vun Saagmöhlen anfallt. "
-"Holtköhlbrannereen könen daarut Holtköhl produzeren."
+"Altholt is Offall, wat bi’m Ofrieten vun Husen un vun Saagmöhlen anfallt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:206
 msgctxt "europeans_ware"
 msgid "It can be processed into charcoal in charcoal kilns."
-msgstr ""
+msgstr "Holtköhlbrannereen könen daarut Holtköhl produzeren."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:220
@@ -4892,7 +4872,7 @@ msgstr "Hisst Water ut de Deepde."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1759
 msgctxt "europeans_building"
 msgid "Weaves cloth out of reed."
-msgstr ""
+msgstr "Spinnt Stoff ut Reit."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1766
@@ -4901,18 +4881,20 @@ msgid ""
 "Weaves cloth for buildings and ships’ sails, and armor to equip and train "
 "the soldiers."
 msgstr ""
+"Spinnt Stoff för Husen un de Seils vun Schippen, un Wapenrocken, um Soldaten "
+"uttorüsten un to lehren."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1773
 msgctxt "europeans_building"
 msgid "Weaves cloth and armor out of cotton and reed."
-msgstr ""
+msgstr "Spinnt Stoff un Wapenrocken ut Boomwull un Reit."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1780
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood."
-msgstr ""
+msgstr "Hardt Boomstammen, um Haartholt to produzeren."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1787
@@ -4920,6 +4902,8 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood and saws log to produce planks."
 msgstr ""
+"Hardt Boomstammen, um Haartholt to produzeren, un saagt Boomstamm, um "
+"Planken to produzeren."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
@@ -4997,7 +4981,7 @@ msgstr "Smelt Kluten to Iesen un Gold un verweert Metall-Överblievsels."
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1884
 msgctxt "europeans_building"
 msgid "Forges all the tools that your workers need."
-msgstr ""
+msgstr "Smeedt all dat Warktüüg, wat diene Arbeiders bruken."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1891
@@ -5005,7 +4989,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1905
 msgctxt "europeans_building"
 msgid "Produces clothing and armor."
-msgstr ""
+msgstr "Produzeert Kluften un Wapenrocken."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1912
@@ -5013,16 +4997,15 @@ msgstr ""
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1926
 msgctxt "europeans_building"
 msgid "Produces shoes and boots."
-msgstr ""
+msgstr "Produzeert Schoh un Stevels."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1933
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1940
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1947
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Produces shields and weapons."
-msgstr "Boomstammen tum Produzeren vun Warktüüg un Wapens to bruken"
+msgstr "Produzeert Schilden un Wapens."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
 #: addons/europeans_tribe.wad/tribes/europeans_tribe/units.lua:1956
@@ -5862,7 +5845,7 @@ msgstr "Iesen"
 #: addons/europeans_tribe.wad/tribes/wares/leather/init.lua:8
 msgctxt "ware"
 msgid "Leather"
-msgstr ""
+msgstr "Leer"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/log/init.lua:8
@@ -5928,7 +5911,7 @@ msgstr "Gummi elasticum"
 #: addons/europeans_tribe.wad/tribes/wares/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "Rogg"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_tribe.wad/tribes/wares/saw/init.lua:8
@@ -6012,7 +5995,7 @@ msgstr "Water"
 #: addons/europeans_tribe.wad/tribes/wares/wool/init.lua:8
 msgctxt "ware"
 msgid "Wool"
-msgstr ""
+msgstr "Wulle"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_tribe.wad/tribes/workers/builder/init.lua:8
@@ -6253,11 +6236,3 @@ msgstr "Arbeider"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Goder Arbeider"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting trees on terraformed land"
-#~ msgstr "Bomen up früchtbaar maakt Land to planten"
-
-#~ msgctxt "ware"
-#~ msgid "Milking Tongs"
-#~ msgstr "Melktange"

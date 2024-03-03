@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-02 03:07+0100\n"
+"POT-Creation-Date: 2024-03-03 03:07+0100\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -1371,10 +1371,9 @@ msgstr "Хлопок - это сырье, используемое для про
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:163
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced by normal farms."
-msgstr "Их изготавливают в кузницах."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:173
@@ -1400,14 +1399,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:195
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
 "or from sawmills."
 msgstr ""
-"Отходы древесины - это мусор, который образуется при сносе зданий или на "
-"лесопилках. Углежог может перерабатывать его в древесный уголь."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:197
@@ -4549,231 +4545,3 @@ msgstr "Обычный Фермер"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Торговец"
-
-#~ msgctxt "immovable"
-#~ msgid "Reed Field (medium)"
-#~ msgstr "Тростниковое поле (среднее)"
-
-#~ msgctxt "immovable"
-#~ msgid "Reed Field (ripe)"
-#~ msgstr "Тростниковое поле (зрелое)"
-
-#~ msgctxt "immovable"
-#~ msgid "Reed Field (small)"
-#~ msgstr "Тростниковое поле (малое)"
-
-#~ msgctxt "immovable"
-#~ msgid "Reed Field (tiny)"
-#~ msgstr "Тростниковое поле (крохотное)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Sawmill"
-#~ msgstr "Продвинутая Лесопилка"
-
-#~ msgctxt "europeans_building"
-#~ msgid "sawing logs"
-#~ msgstr "пилит брёвна"
-
-#~ msgctxt "europeans_building"
-#~ msgid "hardening wood"
-#~ msgstr "обжигает дерево"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Sawmill"
-#~ msgstr "Базовая лесопилка"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Sawmill"
-#~ msgstr "Обычная Лесопилка"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Shoemakers House"
-#~ msgstr "Продвинутый Дом Башмачника"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for planks, cloth and leather"
-#~ msgstr "приостановка производства досок, полотна и кожи"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making a pair of wooden boots"
-#~ msgstr "мастерит пару деревянных башмаков"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making study boots"
-#~ msgstr "делает крепкие ботинки"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making swift boots"
-#~ msgstr "делает лёгкие ботинки"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making advanced boots"
-#~ msgstr "делает продвинутые ботинки"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Shoemakers House"
-#~ msgstr "Базовый Дом Башмачника"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Shoemakers House"
-#~ msgstr "Обычный Дом Башмачника"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Toolsmithy"
-#~ msgstr "Продвинутая Инструментальная мастерская"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making baskets"
-#~ msgstr "делает корзины"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making buckets"
-#~ msgstr "делает вёдра"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making felling axes"
-#~ msgstr "делает топоры дровосека"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making fire tongs"
-#~ msgstr "делает клещи"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making hammers"
-#~ msgstr "делает молотки"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making needles"
-#~ msgstr "делает иглы"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making picks"
-#~ msgstr "делает кирки"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making saws"
-#~ msgstr "делает пилы"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making sycthes"
-#~ msgstr "делает косы"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making shovels"
-#~ msgstr "делает лопаты"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Toolsmithy"
-#~ msgstr "Базовая Инструментальная мастерская"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Toolsmithy"
-#~ msgstr "Обычная Инструментальная мастерская"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Weaponsmithy"
-#~ msgstr "Продвинутая оружейная"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making a wooden helmet"
-#~ msgstr "мастерит деревянный шлем"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a wooden spear"
-#~ msgstr "изготавливает Деревянное копьё"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a mask"
-#~ msgstr "кует маску"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a steel shield"
-#~ msgstr "кует стальной щит"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging an advanced shield"
-#~ msgstr "кует Улучшенный щит"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging an advanced spear"
-#~ msgstr "кует Улучшенное копье"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a broad ax"
-#~ msgstr "кует Секиру"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a broadsword"
-#~ msgstr "кует Тесак"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Weaponsmithy"
-#~ msgstr "Базовая оружейная"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaponsmithy"
-#~ msgstr "Обычная оружейная"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Tailors House"
-#~ msgstr "Продвинутый дом портного"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making a wooden armor"
-#~ msgstr "мастерит деревянную броню"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring processed armor"
-#~ msgstr "шьёт обработанную броню"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a suit of chain armor"
-#~ msgstr "шьет кольчужные доспехи"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a suit of advanced armor"
-#~ msgstr "шьёт улучшеные доспехи"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Tailors House"
-#~ msgstr "Базовый дом портного"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Tailors House"
-#~ msgstr "Обычный дом портного"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Weaving Mill"
-#~ msgstr "Продвинутая Ткацкая фабрика"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for cotton"
-#~ msgstr "приостановка производства хлопка"
-
-#~ msgctxt "europeans_building"
-#~ msgid "weaving cloth"
-#~ msgstr "ткет полотно"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a suit of armor"
-#~ msgstr "шьёт комплект брони"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Weaving Mill"
-#~ msgstr "Базовая Ткацкая фабрика"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaving Mill"
-#~ msgstr "Обычная Ткацкая фабрика"
-
-#~ msgctxt "ware"
-#~ msgid "Leather"
-#~ msgstr "Кожа"
-
-#~ msgctxt "ware"
-#~ msgid "Rye"
-#~ msgstr "Рожь"
-
-#~ msgctxt "ware"
-#~ msgid "Wool"
-#~ msgstr "Шерсть"
