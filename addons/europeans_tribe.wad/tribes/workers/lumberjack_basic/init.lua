@@ -27,7 +27,7 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:tree radius:10",
             "walk=object",
             "playsound=sound/woodcutting/woodcutting priority:100% allow_multiple",
-            "animate=hack duration:5s",
+            "animate=hack duration:3s",
             "playsound=sound/woodcutting/tree_falling priority:100%",
             "callobject=fall",
             "animate=idle duration:3s",

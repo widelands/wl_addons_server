@@ -526,8 +526,7 @@ function doing_ai_stuff(player, increment)
     if (increment == 0) then
         player:forbid_buildings("all")
         player:allow_buildings{"europeans_guardhouse", "europeans_tower", "europeans_barrier", }
-        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", }
-        player:allow_buildings{"europeans_farm_small_basic", "europeans_foresters_house_basic", }
+        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_farm_small_basic",}
         player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
         player:allow_buildings{"europeans_sawmill_basic", "europeans_market_small", "europeans_scouts_house_basic", }
     end
@@ -536,6 +535,7 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_coalmine_level_1", "europeans_ironmine_level_1", "europeans_goldmine_level_1", }
     end
     if (increment == 4) then
+        player:allow_buildings{"europeans_foresters_house_basic", }
         player:allow_buildings{"europeans_weaving_mill_basic", "europeans_stonemasons_house_basic", }
         player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_smelting_works_basic", }
         player:allow_buildings{"europeans_manufactory_basic", }
@@ -557,9 +557,9 @@ function doing_ai_stuff(player, increment)
     end
     if (increment == 16) then
         player:allow_buildings{"europeans_lumberjacks_house_normal", "europeans_quarry_normal", }
+        player:allow_buildings{"europeans_farm_small_normal", "europeans_foresters_house_normal", }
         player:allow_buildings{"europeans_sawmill_normal", "europeans_weaving_mill_normal", }
         player:allow_buildings{"europeans_charcoal_kiln_normal", "europeans_stonemasons_house_normal", "europeans_smelting_works_normal", }
-        player:allow_buildings{"europeans_farm_small_normal", "europeans_foresters_house_normal", }
         player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", }
         player:allow_buildings{"europeans_coalmine_level_2", "europeans_ironmine_level_2", "europeans_goldmine_level_2", }
         player:allow_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", }

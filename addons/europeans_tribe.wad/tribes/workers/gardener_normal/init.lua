@@ -26,7 +26,7 @@ wl.Descriptions():new_worker_type {
         check_pond_dry = {
             "findobject=attrib:pond_dry radius:6",
         },
-        terraform_pond_dry = {
+        fill_pond_dry = {
             "findobject=attrib:pond_dry radius:6",
             "walk=object",
             "animate=water duration:2s",

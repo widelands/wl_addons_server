@@ -10,9 +10,6 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
-        check_land = {
-            "findspace=size:any radius:8 terraform:amazons",
-        },
         check_dig = {
             "findspace=size:any radius:8 avoid:field",
         },
@@ -25,6 +22,14 @@ wl.Descriptions():new_worker_type {
         },
         check_pond_dry = {
             "findobject=attrib:pond_dry radius:8",
+        },
+        fill_pond_dry = {
+            "findobject=attrib:pond_dry radius:8",
+            "walk=object",
+            "animate=water duration:1s",
+            "callobject=fill_pond",
+            "animate=water duration:1s",
+            "return"
         },
         terraform_pond_dry = {
             "findobject=attrib:pond_dry radius:8",

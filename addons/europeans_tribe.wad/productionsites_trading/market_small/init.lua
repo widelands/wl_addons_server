@@ -91,6 +91,8 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "trading food for copper coins"),
             actions = {
                 "return=skipped when economy needs coin_wood and not economy needs coin_copper",
+                "return=skipped when economy needs coin_silver and not economy needs coin_copper",
+                "return=skipped when economy needs coin_gold and not economy needs coin_copper",
                 "call=pausing_production_for_gold",
                 "sleep=duration:10s",
                 "call=trade_cotton_copper",

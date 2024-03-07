@@ -13,10 +13,16 @@ wl.Descriptions():new_worker_type {
         check_space = {
             "findspace=size:any radius:8 avoid:field saplingsearches:12"
         },
-        check_land = {
-            "findspace=size:any radius:8 terraform:amazons",
-        },
         plant_tree = {
+            "findspace=size:any radius:8 avoid:field saplingsearches:12",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "animate=planting duration:1s",
+            "plant=attrib:tree_sapling",
+            "animate=water duration:1s",
+            "return"
+        },
+        plant_tree_land = {
             "findspace=size:any radius:8 avoid:field saplingsearches:12",
             "walk=coords",
             "animate=dig duration:1s",

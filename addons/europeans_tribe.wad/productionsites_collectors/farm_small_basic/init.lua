@@ -68,7 +68,7 @@ wl.Descriptions():new_productionsite_type {
     },
     
     inputs = {
-        { name = "water", amount = 6 },
+        { name = "water", amount = 4 },
     },
 
     programs = {
@@ -78,9 +78,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=pausing_production_for_inputs",
                 "call=making_pond",
-                "sleep=duration:5s",
+                "sleep=duration:3s",
                 "call=planting_reed",
-                "sleep=duration:5s",
+                "sleep=duration:3s",
                 "call=harvesting_reed",
                 "return=skipped"
             }
@@ -89,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
-                "return=skipped when site has water:4",
+                "return=skipped when site has water:2",
                 "sleep=duration:8m",
             }
         },
@@ -99,9 +99,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "callworker=check_dig",
                 "call=digging_clay",
-                "sleep=duration:5s",
+                "sleep=duration:3s",
                 "call=digging_pond",
-                "sleep=duration:5s",
+                "sleep=duration:3s",
                 "call=filling_pond",
                 "return=skipped"
             }
@@ -136,14 +136,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "consume=water",
                 "animate=working duration:3s",
-                "callworker=terraform_pond_dry"
+                "callworker=fill_pond_dry"
             }
         },
         planting_reed = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
             descname = pgettext("europeans_building", "planting reed"),
             actions = {
-                "return=skipped unless economy needs reed",
                 "callworker=check_pond_water",
                 "animate=working duration:3s",
                 "callworker=plant_reed"
@@ -153,7 +152,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
-                "return=skipped unless economy needs reed",
                 "callworker=harvest_reed",
                 "produce=reed"
             }

@@ -50,7 +50,7 @@ wl.Descriptions():new_militarysite_type {
         mountain_conqueror = true
     },
 
-    max_soldiers = 2,
+    max_soldiers = 4,
     vision_range = 16,
     heal_per_second = 120,
     conquers = 8,

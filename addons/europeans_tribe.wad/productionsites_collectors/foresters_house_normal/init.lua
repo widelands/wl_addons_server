@@ -37,7 +37,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 8 },
+        { name = "water", amount = 5 },
     },
     
     programs = {
@@ -55,7 +55,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
-                "return=skipped when site has water:6",
+                "return=skipped when site has water:3",
                 "sleep=duration:6m",
             }
         },
@@ -63,7 +63,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
             descname = pgettext("europeans_building", "planting trees"),
             actions = {
-                "return=skipped when economy needs water and not economy needs log",
                 "return=skipped unless site has water:3",
                 "consume=water",
                 "callworker=plant_tree",

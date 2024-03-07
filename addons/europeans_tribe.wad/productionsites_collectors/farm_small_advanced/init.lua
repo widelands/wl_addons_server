@@ -44,15 +44,15 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=pausing_production_for_inputs",
                 "call=making_pond",
-                "sleep=duration:5s",
+                "sleep=duration:1s",
                 "call=planting_reed",
-                "sleep=duration:5s",
+                "sleep=duration:1s",
                 "call=making_pond",
-                "sleep=duration:5s",
+                "sleep=duration:1s",
                 "call=planting_cotton",
-                "sleep=duration:5s",
+                "sleep=duration:1s",
                 "call=harvesting_reed",
-                "sleep=duration:5s",
+                "sleep=duration:1s",
                 "call=harvesting_cotton",
                 "return=skipped"
             }
@@ -71,9 +71,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "callworker=check_dig",
                 "call=digging_clay",
-                "sleep=duration:5s",
+                "sleep=duration:1s",
                 "call=digging_pond",
-                "sleep=duration:5s",
+                "sleep=duration:1s",
                 "call=filling_pond",
                 "return=skipped"
             }
@@ -115,7 +115,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
             descname = pgettext("europeans_building", "planting cotton"),
             actions = {
-                "return=skipped when economy needs reed and not economy needs cotton",
                 "callworker=check_pond_water",
                 "animate=working duration:1s",
                 "callworker=plant_cotton"
@@ -125,7 +124,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
             descname = pgettext("europeans_building", "planting reed"),
             actions = {
-                "return=skipped when economy needs cotton and not economy needs reed",
                 "callworker=check_pond_water",
                 "animate=working duration:1s",
                 "callworker=plant_reed"
@@ -135,7 +133,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
             descname = pgettext("europeans_building", "harvesting cotton"),
             actions = {
-                "return=skipped when economy needs reed and not economy needs cotton",
                 "callworker=harvest_cotton",
                 "produce=cotton"
             }
@@ -144,7 +141,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
-                "return=skipped when economy needs cotton and not economy needs reed",
                 "callworker=harvest_reed",
                 "produce=reed"
             }

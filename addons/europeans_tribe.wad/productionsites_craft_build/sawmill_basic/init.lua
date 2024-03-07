@@ -90,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has log:4",
-                "sleep=duration:5m",
+                "sleep=duration:15m",
             }
         },
         pausing_production_for_outputs = {
@@ -105,7 +105,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
-                "return=skipped unless economy needs blackwood or economy needs scrap_wood or workers need experience",
                 "return=skipped when economy needs log and not economy needs blackwood",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
