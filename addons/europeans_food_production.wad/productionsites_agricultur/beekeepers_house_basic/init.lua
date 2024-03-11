@@ -11,7 +11,7 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     animations = {
       unoccupied = {
-         hotspot = { 44, 43 },
+         hotspot = { 44, 44 },
       },
     },
     spritesheets = {
@@ -19,13 +19,20 @@ wl.Descriptions():new_productionsite_type {
          frames = 4,
          rows = 2,
          columns = 2,
-         hotspot = { 44, 43 }
+         hotspot = { 43, 44 }
       },
       idle = {
          frames = 20,
          rows = 5,
          columns = 4,
-         hotspot = { 44, 43 }
+         hotspot = { 43, 44 }
+      },
+      working = {
+         basename = "idle",
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 43, 44 }
       },
     },
     

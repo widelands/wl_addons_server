@@ -79,8 +79,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
             descname = _"felling trees",
             actions = {
-                "return=skipped unless economy needs log or workers need experience",
-                "callworker=harvest",
+                "callworker=harvest_tree",
                 "produce=log"
             }
         },

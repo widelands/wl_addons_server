@@ -27,7 +27,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "water", amount = 9 },
+        { name = "water", amount = 6 },
     },
     
     programs = {
@@ -38,9 +38,6 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_space",
                 "call=pausing_production_for_inputs",
                 "call=plant_trees",
-                "sleep=duration:10s",
-                "callworker=check_land",
-                "call=planting_land",
                 "return=skipped"
             }
         },
@@ -48,7 +45,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
-                "return=skipped when site has water:6",
+                "return=skipped when site has water:4",
                 "sleep=duration:4m",
             }
         },
@@ -56,47 +53,15 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
             descname = pgettext("europeans_building", "planting trees"),
             actions = {
-                "return=skipped when economy needs water and not economy needs log",
                 "return=skipped unless site has water:4",
                 "consume=water",
-                "callworker=plant",
+                "callworker=plant_rubber_tree",
                 "consume=water",
-                "callworker=plant",
+                "callworker=plant_tree_land",
                 "consume=water",
-                "callworker=plant",
+                "callworker=plant_rubber_tree",
                 "consume=water",
-                "callworker=plant"
-            }
-        },
-        planting_pond_water = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting trees in pond with water because ...
-            descname = pgettext("europeans_building", "planting trees in pond with water"),
-            actions = {
-                "callworker=check_pond_water",
-                "callworker=terraform_pond_water",
-                "return=skipped"
-            }
-        },
-        planting_pond_dry = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting trees in dry pond because ...
-            descname = pgettext("europeans_building", "planting trees in dry pond"),
-            actions = {
-                "return=skipped when economy needs water",
-                "return=skipped unless site has water",
-                "callworker=check_pond_dry",
-                "consume=water",
-                "callworker=terraform_pond_dry",
-                "return=skipped"
-            }
-        },
-        planting_land = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting trees on terraformed land because ...
-            descname = pgettext("europeans_building", "planting trees on terraformed land"),
-            actions = {
-                "return=skipped when economy needs water",
-                "return=skipped unless site has water:2",
-                "consume=water:2",
-                "callworker=plant_terraformed_land",
+                "callworker=plant_tree_land"
             }
         },
     },

@@ -1101,18 +1101,25 @@ function stop_all_buildings(player_number, building_name)
 end
 
 -- militarysite settings --
+function set_militarysite_capacity(startx, starty, capacity)
+    local game = wl.Game()
+    local map = game.map
+    local field = map:get_field(startx, starty)
+    local building = field.immovable
+
+    building.capacity = capacity
+end
+
 function set_militarysite_hero(startx, starty, yesno)
     local game = wl.Game()
     local map = game.map
     local field = map:get_field(startx, starty)
     local building = field.immovable
 
-    if building.descr.type_name == "militarysite" then
-        if yesno == true then
-            building.soldier_preference = "heroes"
-        else
-            building.soldier_preference = "rookies"
-        end
+    if yesno == true then
+        building.soldier_preference = "heroes"
+    else
+        building.soldier_preference = "any"
     end
 end
 
@@ -1128,31 +1135,31 @@ function set_all_militarysites_hero(player_number, building_name, yesno)
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
-                    building.soldier_preference = "rookies"
+                    building.soldier_preference = "any"
                 end
             elseif (tbuilding.name == building_name) and (building.descr.type_name == "militarysite") then
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
-                    building.soldier_preference = "rookies"
+                    building.soldier_preference = "any"
                 end
             elseif (tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name)) and (tbuilding.type_name == "militarysite") then
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
-                    building.soldier_preference = "rookies"
+                    building.soldier_preference = "any"
                 end
             elseif string.find(tbuilding.name, building_name) and (tbuilding.type_name == "militarysite") then
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
-                    building.soldier_preference = "rookies"
+                    building.soldier_preference = "any"
                 end
             elseif (tbuilding.type_name == building_name) and (tbuilding.type_name == "militarysite") then
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
-                    building.soldier_preference = "rookies"
+                    building.soldier_preference = "any"
                 end
             end
         end

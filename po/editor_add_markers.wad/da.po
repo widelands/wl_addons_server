@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-28 03:07+0100\n"
+"PO-Revision-Date: 2024-02-27 16:25+0000\n"
+"Language-Team: Danish (https://app.transifex.com/widelands/teams/35159/da/)\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/editor_add_markers.wad/addon:6
+msgid ""
+"Add immovable markers evenly on the map to have some points of orientation. "
+"Uses Snowman for position 0,0 and Column for other positions."
+msgstr ""
+
+#: addons/editor_add_markers.wad/addon:9
+msgid "Editor: Place markers evenly on the map"
+msgstr ""
+
+#: addons/editor_add_markers.wad/init.lua:8
+#: addons/editor_add_markers.wad/settings_window.lua:57
+#: addons/editor_add_markers.wad/settings_window.lua:140
+msgid "Place markers"
+msgstr ""
+
+#: addons/editor_add_markers.wad/init.lua:9
+msgid "Place markers evenly on the map to get some points of orientation."
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:17
+msgid "%1$d Fields"
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:73
+msgid "Choose the distance between markers:"
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:85
+msgid "Horizontally"
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:99
+#: addons/editor_add_markers.wad/settings_window.lua:129
+msgid "Choose a distance"
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:115
+msgid "Vertically"
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:147
+msgid "Undo"
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:154
+msgid "Center position 0,0"
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:162
+msgid "Remove all markers"
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:171
+msgid "Hide"
+msgstr ""
+
+#: addons/editor_add_markers.wad/settings_window.lua:172
+msgid "Hide window to keep the settings"
+msgstr ""

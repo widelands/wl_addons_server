@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-30 03:07+0100\n"
+"POT-Creation-Date: 2024-02-23 03:07+0100\n"
 "PO-Revision-Date: 2024-01-29 07:15+0000\n"
+"Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,44 +23,50 @@ msgstr ""
 
 #: addons/editor_height_tools.wad/addon:2
 msgid "Editor: Height Tools"
-msgstr ""
+msgstr "Editor: Hoogtetools"
 
 #: addons/editor_height_tools.wad/addon:3
 msgid ""
 "Adjust height for the whole map or apply heights to mountainous terrains "
 "automatically"
 msgstr ""
+"Pas de hoogte aan voor de hele kaart of pas automatisch hoogtes toe op "
+"bergachtige terreinen"
 
 #. TRANSLATORS: Short for "set height to:"
 #: addons/editor_height_tools.wad/auto_height.lua:15
 msgid "Set to:"
-msgstr ""
+msgstr "Stel in op:"
 
 #. TRANSLATORS: Short for "lower height by"
 #: addons/editor_height_tools.wad/auto_height.lua:18
 msgid "Lower by:"
-msgstr ""
+msgstr "Verlagen met:"
 
 #. TRANSLATORS: Short for "elevate height by"
 #: addons/editor_height_tools.wad/auto_height.lua:21
 msgid "Elevate by:"
-msgstr ""
+msgstr "Verhogen met:"
 
 #: addons/editor_height_tools.wad/auto_height.lua:42
 msgid ""
 "A coordinate can't be read.\n"
 "Make sure you have entered a valid coordinate in form of 20,34"
 msgstr ""
+"Een coördinaat kan niet worden gelezen.\n"
+"Controleer of je een geldige coördinaat in de vorm van 20,34 hebt ingevoerd."
 
 #: addons/editor_height_tools.wad/auto_height.lua:49
 msgid ""
 "The coordinates exceeds the map height or width!\n"
 "Please enter valid coordinates!"
 msgstr ""
+"De coördinaten overschrijden de hoogte of breedte van de kaart!\n"
+"Voer geldige coördinaten in!"
 
 #: addons/editor_height_tools.wad/auto_height.lua:277
 msgid "Warning"
-msgstr ""
+msgstr "Waarschuwing"
 
 #: addons/editor_height_tools.wad/auto_height.lua:278
 msgid ""
@@ -66,61 +76,68 @@ msgid ""
 "Click 'Cancel' to define a smaller area. Before clicking OK be sure to save "
 "the map!"
 msgstr ""
+"Dit verandert de hoogte van %1$d velden! Dit duurt ongeveer meer dan %2$d "
+"sec.\n"
+"De editor reageert niet gedurende deze tijd.\n"
+"Klik op 'Annuleren' om een kleiner gebied te definiëren. Zorg ervoor dat je "
+"de kaart opslaat voordat je op OK klikt!"
 
 #: addons/editor_height_tools.wad/error_window.lua:7
 msgid "Error"
-msgstr ""
+msgstr "Fout"
 
 #: addons/editor_height_tools.wad/error_window.lua:28
 #: addons/editor_height_tools.wad/settings_window.lua:291
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: addons/editor_height_tools.wad/init.lua:12
 msgid "Height Tools"
-msgstr ""
+msgstr "Hoogte Gereedschap"
 
 #: addons/editor_height_tools.wad/init.lua:13
 msgid ""
 "Set height for the whole map or apply heights to mountainous terrains "
 "automatically"
 msgstr ""
+"Hoogte instellen voor de hele kaart of automatisch hoogtes toepassen op "
+"bergachtige terreinen"
 
 #: addons/editor_height_tools.wad/settings_window.lua:14
 msgid "Choose an option"
-msgstr ""
+msgstr "Kies een optie"
 
 #: addons/editor_height_tools.wad/settings_window.lua:28
 msgid "Adjust height of all fields"
-msgstr ""
+msgstr "Pas de hoogte van alle velden aan"
 
 #: addons/editor_height_tools.wad/settings_window.lua:43
 msgid "Set all fields to value"
-msgstr ""
+msgstr "Set all fields to value"
 
 #: addons/editor_height_tools.wad/settings_window.lua:47
 msgid "Lower all fields by value"
-msgstr ""
+msgstr "Verlaag alle velden met de waarde"
 
 #: addons/editor_height_tools.wad/settings_window.lua:51
 msgid "Elevate all fields by value"
-msgstr ""
+msgstr "Verhoog alle velden met de waarde"
 
 #: addons/editor_height_tools.wad/settings_window.lua:63
 msgid "Set to: "
-msgstr ""
+msgstr "Stel in op:"
 
 #: addons/editor_height_tools.wad/settings_window.lua:70
 msgid "Value for all fields"
-msgstr ""
+msgstr "Waarde voor alle velden"
 
 #: addons/editor_height_tools.wad/settings_window.lua:86
 msgid "Adjust Height"
-msgstr ""
+msgstr "Hoogte aanpassen"
 
 #: addons/editor_height_tools.wad/settings_window.lua:96
 msgid "Apply random heights to mountain terrains"
-msgstr ""
+msgstr "Pas willekeurige hoogtes toe op bergterreinen"
 
 #: addons/editor_height_tools.wad/settings_window.lua:104
 msgid ""
@@ -129,6 +146,11 @@ msgid ""
 "hexagonal area, like when using a big tool size, by entering the coordinates "
 "of the center and a radius."
 msgstr ""
+"Definieer een rechthoekig gebied door de coördinaten van de linkerbovenhoek "
+"en de coördinaten van de rechterbenedenhoek van de rechthoek in te voeren. "
+"Of definieer een zeshoekig gebied, zoals bij gebruik van een grote "
+"gereedschapsgrootte, door de coördinaten van het middelpunt en een straal in "
+"te voeren."
 
 #: addons/editor_height_tools.wad/settings_window.lua:105
 msgid ""
@@ -136,85 +158,94 @@ msgid ""
 "right side, e.g.: (20,&nbsp;52,&nbsp;10). The values represents (x-"
 "coordinate,&nbsp;&nbsp;y-coordinate,&nbsp;height)"
 msgstr ""
+"De waarden voor de coördinaten kun je vinden in het hoofdmenupaneel aan de "
+"rechterkant, bijv.: (20,&nbsp;52,&nbsp;10). De waarden vertegenwoordigen (x-"
+"coördinaat,&nbsp;&nbsp;y-coördinaat,&nbsp;hoogte)"
 
 #: addons/editor_height_tools.wad/settings_window.lua:111
 msgid "Global Options"
-msgstr ""
+msgstr "Wereldwijde Opties"
 
 #: addons/editor_height_tools.wad/settings_window.lua:125
 msgid "Max. Height:"
-msgstr ""
+msgstr "Max. Hoogte:"
 
 #: addons/editor_height_tools.wad/settings_window.lua:126
 msgid "Restrict the height to this maximum height."
-msgstr ""
+msgstr "Beperk de hoogte tot deze maximumhoogte."
 
 #: addons/editor_height_tools.wad/settings_window.lua:135
 msgid "Place sign"
-msgstr ""
+msgstr "Plaats teken"
 
 #: addons/editor_height_tools.wad/settings_window.lua:136
 msgid "Place a column at given coordinates"
-msgstr ""
+msgstr "Plaats een kolom op opgegeven coördinaten"
 
 #: addons/editor_height_tools.wad/settings_window.lua:147
 msgid "Hexagonal Area"
-msgstr ""
+msgstr "Zeshoekig gebied"
 
 #: addons/editor_height_tools.wad/settings_window.lua:163
 msgid "Coordinates of the center field of the hexagonal area, e.g.: 20,35"
 msgstr ""
+"Coördinaten van het middelste veld van het zeshoekige gebied, bijv.: 20,35"
 
 #: addons/editor_height_tools.wad/settings_window.lua:171
 #: addons/editor_height_tools.wad/settings_window.lua:242
 #: addons/editor_height_tools.wad/settings_window.lua:271
 msgid "Enter coordinates in form of x, y"
-msgstr ""
+msgstr "Coördinaten invoeren in de vorm van x, y"
 
 #: addons/editor_height_tools.wad/settings_window.lua:192
 msgid "Choose a value for the radius"
-msgstr ""
+msgstr "Kies een waarde voor de straal"
 
 #: addons/editor_height_tools.wad/settings_window.lua:210
 msgid "Random Hexagonal Mountains"
-msgstr ""
+msgstr "Willekeurige zeshoekige bergen"
 
 #: addons/editor_height_tools.wad/settings_window.lua:218
 msgid "Rectangular Area"
-msgstr ""
+msgstr "Rechthoekig gebied"
 
 #: addons/editor_height_tools.wad/settings_window.lua:234
 msgid "Coordinates of the top left corner of the rectangle, e.g.: 10,20"
-msgstr ""
+msgstr "Coördinaten van de linkerbovenhoek van de rechthoek, bijv: 10,20"
 
 #: addons/editor_height_tools.wad/settings_window.lua:263
 msgid "Coordinates of the bottom right corner of the rectangle, e.g.: 20,35"
-msgstr ""
+msgstr "Coördinaten van de rechterbenedenhoek van de rechthoek, bijv.: 20,35"
 
 #: addons/editor_height_tools.wad/settings_window.lua:282
 msgid "Random Rectangular Mountains"
-msgstr ""
+msgstr "Willekeurige rechthoekige bergen"
 
 #: screenshots/editor_height_tools.wad/descriptions:3
 msgid "Design your flat map and add some mountain terrains"
-msgstr ""
+msgstr "Ontwerp je platte kaart en voeg wat bergterreinen toe"
 
 #: screenshots/editor_height_tools.wad/descriptions:4
 msgid "Open the height tools, define a rectangular area and click on "
 msgstr ""
+"Open de hoogtegereedschappen, definieer een rechthoekig gebied en klik op"
 
 #: screenshots/editor_height_tools.wad/descriptions:5
 msgid "Two signs are placed representing the given coordinates"
-msgstr ""
+msgstr "Er worden twee tekens geplaatst die de gegeven coördinaten weergeven"
 
 #: screenshots/editor_height_tools.wad/descriptions:6
 msgid ""
 "The created mountain on the left doesn't look good? Enter the coordinates of "
 "the center and click on "
 msgstr ""
+"Ziet de gecreëerde berg links er niet goed uit? Voer de coördinaten van het "
+"middelpunt in en klik op"
 
 #: screenshots/editor_height_tools.wad/descriptions:7
 msgid ""
 "You could also modify a mountain. Enter the coordinates of the new center "
 "and click on "
 msgstr ""
+"Je kunt ook een berg wijzigen. Voer de coördinaten van het nieuwe middelpunt "
+"in en klik op"
