@@ -32,18 +32,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "callworker=check_trees",
-                "call=pausing_production_for_outputs",
                 "call=harvesting_rubber",
                 "call=felling_trees",
                 "return=skipped"
-            }
-        },
-        pausing_production_for_outputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
-            actions = {
-                "return=skipped when economy needs log or economy needs rubber",
-                "sleep=duration:2m",
             }
         },
         harvesting_rubber = {
@@ -59,7 +50,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
                 "callworker=harvest_tree",
-                "produce=log"
+                "produce=log:3"
             }
         },
     },

@@ -125,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs reed and not economy needs cotton",
                 "callworker=harvest_cotton",
                 "animate=working duration:3s",
-                "produce=cotton"
+                "produce=cotton:2"
             }
         },
         harvest_reed = {
@@ -135,7 +135,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs cotton and not economy needs reed",
                 "callworker=harvest_reed",
                 "animate=working duration:3s",
-                "produce=reed"
+                "produce=reed:2"
             }
         },
     },

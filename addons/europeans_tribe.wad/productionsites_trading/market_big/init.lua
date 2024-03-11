@@ -74,7 +74,7 @@ wl.Descriptions():new_productionsite_type {
         },
         trading_for_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = pgettext("europeans_building", "trading food for copper coins"),
+            descname = pgettext("europeans_building", "trading goods for copper coins"),
             actions = {
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
@@ -92,7 +92,7 @@ wl.Descriptions():new_productionsite_type {
         },
         trading_for_silver = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = pgettext("europeans_building", "trading food for silver coins"),
+            descname = pgettext("europeans_building", "trading goods for silver coins"),
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
@@ -110,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
         },
         trading_for_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = pgettext("europeans_building", "trading food for gold coins"),
+            descname = pgettext("europeans_building", "trading goods for gold coins"),
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_gold",
                 "return=skipped when economy needs coin_silver and not economy needs coin_gold",

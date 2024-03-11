@@ -76,21 +76,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production_for_inputs",
                 "call=making_pond",
                 "sleep=duration:3s",
                 "call=planting_reed",
                 "sleep=duration:3s",
                 "call=harvesting_reed",
                 "return=skipped"
-            }
-        },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
-            actions = {
-                "return=skipped when site has water:2",
-                "sleep=duration:8m",
             }
         },
         making_pond = {

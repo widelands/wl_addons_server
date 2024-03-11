@@ -35,7 +35,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 8 }
+        { name = "log", amount = 10 }
     },
 
     programs = {
@@ -43,31 +43,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production_for_inputs",
-                "sleep=duration:20s",
-                "call=pausing_production_for_outputs",
-                "sleep=duration:20s",
                 "call=saw_log",
-                "sleep=duration:20s",
+                "sleep=duration:30s",
                 "call=hardening_wood",
                 "return=skipped"
-            }
-        },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
-            actions = {
-                "return=skipped when site has log:4",
-                "sleep=duration:5m",
-            }
-        },
-        pausing_production_for_outputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
-            actions = {
-                "return=skipped when economy needs blackwood",
-                "return=skipped when economy needs planks",
-                "sleep=duration:30m",
             }
         },
         saw_log = {
@@ -77,29 +56,63 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs blackwood and not economy needs planks",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:1m",
                 "produce=scrap_wood",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:10s",
+                "animate=working duration:1m",
                 "produce=scrap_wood",
-                "produce=planks"
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "produce=planks:3",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "produce=planks:3"
             }
         },
         hardening_wood = {
             -- TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
-                "return=skipped when economy needs planks and not economy needs blackwood",
+                "return=skipped when economy needs log and not economy needs blackwood",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:10s",
+                "animate=working duration:1m",
                 "produce=scrap_wood",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
-                "animate=working duration:10s",
+                "animate=working duration:1m",
                 "produce=scrap_wood",
-                "produce=blackwood:2"
+                "consume=log",
+                "playsound=sound/barbarians/blackwood priority:60%",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "consume=log",
+                "produce=blackwood:3",
+                "playsound=sound/barbarians/blackwood priority:60%",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "consume=log",
+                "playsound=sound/barbarians/blackwood priority:60%",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "consume=log",
+                "playsound=sound/barbarians/blackwood priority:60%",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "produce=blackwood:3"
             }
         }
     },

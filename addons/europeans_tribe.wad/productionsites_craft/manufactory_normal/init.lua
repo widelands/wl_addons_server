@@ -146,16 +146,25 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
-                "return=skipped unless economy needs armor_wooden or workers need experience",
                 "return=skipped when economy needs log and not economy needs armor_wooden",
                 "return=skipped when economy needs blackwood and not economy needs armor_wooden",
                 "return=skipped when economy needs planks and not economy needs armor_wooden",
                 "return=skipped when economy needs boots_wooden and not economy needs armor_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs armor_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs armor_wooden",
+                "return=skipped when economy needs basket and not economy needs armor_wooden",
+                "return=skipped when economy needs buckets and not economy needs armor_wooden",
+                "return=skipped when economy needs felling_ax and not economy needs armor_wooden",
+                "return=skipped when economy needs fire_tongs and not economy needs armor_wooden",
+                "return=skipped when economy needs hammer and not economy needs armor_wooden",
+                "return=skipped when economy needs needles and not economy needs armor_wooden",
+                "return=skipped when economy needs pick and not economy needs armor_wooden",
+                "return=skipped when economy needs saw and not economy needs armor_wooden",
+                "return=skipped when economy needs scythe and not economy needs armor_wooden",
+                "return=skipped when economy needs shovel and not economy needs armor_wooden",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=armor_wooden:2"
             }
@@ -164,16 +173,25 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
             descname = pgettext("europeans_building", "making a pair of wooden boots"),
             actions = {
-                "return=skipped unless economy needs boots_wooden or workers need experience",
                 "return=skipped when economy needs log and not economy needs boots_wooden",
                 "return=skipped when economy needs blackwood and not economy needs boots_wooden",
                 "return=skipped when economy needs planks and not economy needs boots_wooden",
                 "return=skipped when economy needs armor_wooden and not economy needs boots_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs boots_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs boots_wooden",
+                "return=skipped when economy needs basket and not economy needs boots_wooden",
+                "return=skipped when economy needs buckets and not economy needs boots_wooden",
+                "return=skipped when economy needs felling_ax and not economy needs boots_wooden",
+                "return=skipped when economy needs fire_tongs and not economy needs boots_wooden",
+                "return=skipped when economy needs hammer and not economy needs boots_wooden",
+                "return=skipped when economy needs needles and not economy needs boots_wooden",
+                "return=skipped when economy needs pick and not economy needs boots_wooden",
+                "return=skipped when economy needs saw and not economy needs boots_wooden",
+                "return=skipped when economy needs scythe and not economy needs boots_wooden",
+                "return=skipped when economy needs shovel and not economy needs boots_wooden",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=boots_wooden:2"
             }
@@ -182,16 +200,25 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
             descname = pgettext("europeans_building", "making a wooden helmet"),
             actions = {
-                "return=skipped unless economy needs helmet_wooden or workers need experience",
                 "return=skipped when economy needs log and not economy needs helmet_wooden",
                 "return=skipped when economy needs blackwood and not economy needs helmet_wooden",
                 "return=skipped when economy needs planks and not economy needs helmet_wooden",
                 "return=skipped when economy needs armor_wooden and not economy needs helmet_wooden",
                 "return=skipped when economy needs boots_wooden and not economy needs helmet_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
+                "return=skipped when economy needs basket and not economy needs helmet_wooden",
+                "return=skipped when economy needs buckets and not economy needs helmet_wooden",
+                "return=skipped when economy needs felling_ax and not economy needs helmet_wooden",
+                "return=skipped when economy needs fire_tongs and not economy needs helmet_wooden",
+                "return=skipped when economy needs hammer and not economy needs helmet_wooden",
+                "return=skipped when economy needs needles and not economy needs helmet_wooden",
+                "return=skipped when economy needs pick and not economy needs helmet_wooden",
+                "return=skipped when economy needs saw and not economy needs helmet_wooden",
+                "return=skipped when economy needs scythe and not economy needs helmet_wooden",
+                "return=skipped when economy needs shovel and not economy needs helmet_wooden",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=helmet_wooden:2"
             }
@@ -200,16 +227,25 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
             descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
-                "return=skipped unless economy needs spear_wooden or workers need experience",
                 "return=skipped when economy needs log and not economy needs spear_wooden",
                 "return=skipped when economy needs blackwood and not economy needs spear_wooden",
                 "return=skipped when economy needs planks and not economy needs spear_wooden",
                 "return=skipped when economy needs armor_wooden and not economy needs spear_wooden",
                 "return=skipped when economy needs boots_wooden and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
+                "return=skipped when economy needs basket and not economy needs spear_wooden",
+                "return=skipped when economy needs buckets and not economy needs spear_wooden",
+                "return=skipped when economy needs felling_ax and not economy needs spear_wooden",
+                "return=skipped when economy needs fire_tongs and not economy needs spear_wooden",
+                "return=skipped when economy needs hammer and not economy needs spear_wooden",
+                "return=skipped when economy needs needles and not economy needs spear_wooden",
+                "return=skipped when economy needs pick and not economy needs spear_wooden",
+                "return=skipped when economy needs saw and not economy needs spear_wooden",
+                "return=skipped when economy needs scythe and not economy needs spear_wooden",
+                "return=skipped when economy needs shovel and not economy needs spear_wooden",
                 "consume=log",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=spear_wooden:2"
             }
@@ -218,12 +254,21 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
-                "return=skipped unless economy needs armor or workers need experience",
                 "return=skipped when economy needs cotton and not economy needs armor",
                 "return=skipped when economy needs cloth and not economy needs armor",
+                "return=skipped when economy needs basket and not economy needs armor",
+                "return=skipped when economy needs buckets and not economy needs armor",
+                "return=skipped when economy needs felling_ax and not economy needs armor",
+                "return=skipped when economy needs fire_tongs and not economy needs armor",
+                "return=skipped when economy needs hammer and not economy needs armor",
+                "return=skipped when economy needs needles and not economy needs armor",
+                "return=skipped when economy needs pick and not economy needs armor",
+                "return=skipped when economy needs saw and not economy needs armor",
+                "return=skipped when economy needs scythe and not economy needs armor",
+                "return=skipped when economy needs shovel and not economy needs armor",
                 "consume=cotton,wool:3",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:60s",
+                "animate=working duration:4m",
                 "produce=armor:2"
             }
         },
@@ -231,7 +276,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
-                "return=skipped unless economy needs armor_processed or workers need experience",
                 "return=skipped when economy needs reed and not economy needs armor_processed",
                 "return=skipped when economy needs cotton and not economy needs armor_processed",
                 "return=skipped when economy needs cloth and not economy needs armor_processed",
@@ -239,9 +283,19 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_compressed and not economy needs armor_processed",
                 "return=skipped when economy needs boots_sturdy and not economy needs armor_processed",
                 "return=skipped when economy needs boots_swift and not economy needs armor_processed",
+                "return=skipped when economy needs basket and not economy needs armor_processed",
+                "return=skipped when economy needs buckets and not economy needs armor_processed",
+                "return=skipped when economy needs felling_ax and not economy needs armor_processed",
+                "return=skipped when economy needs fire_tongs and not economy needs armor_processed",
+                "return=skipped when economy needs hammer and not economy needs armor_processed",
+                "return=skipped when economy needs needles and not economy needs armor_processed",
+                "return=skipped when economy needs pick and not economy needs armor_processed",
+                "return=skipped when economy needs saw and not economy needs armor_processed",
+                "return=skipped when economy needs scythe and not economy needs armor_processed",
+                "return=skipped when economy needs shovel and not economy needs armor_processed",
                 "consume=reed cotton,wool:3",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "produce=armor_processed:2"
             }
         },
@@ -249,7 +303,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of chain armor"),
             actions = {
-                "return=skipped unless economy needs armor_compressed or workers need experience",
                 "return=skipped when economy needs reed and not economy needs armor_compressed",
                 "return=skipped when economy needs cotton and not economy needs armor_compressed",
                 "return=skipped when economy needs cloth and not economy needs armor_compressed",
@@ -257,9 +310,19 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_processed and not economy needs armor_compressed",
                 "return=skipped when economy needs boots_sturdy and not economy needs armor_compressed",
                 "return=skipped when economy needs boots_swift and not economy needs armor_compressed",
+                "return=skipped when economy needs basket and not economy needs armor_compressed",
+                "return=skipped when economy needs buckets and not economy needs armor_compressed",
+                "return=skipped when economy needs felling_ax and not economy needs armor_compressed",
+                "return=skipped when economy needs fire_tongs and not economy needs armor_compressed",
+                "return=skipped when economy needs hammer and not economy needs armor_compressed",
+                "return=skipped when economy needs needles and not economy needs armor_compressed",
+                "return=skipped when economy needs pick and not economy needs armor_compressed",
+                "return=skipped when economy needs saw and not economy needs armor_compressed",
+                "return=skipped when economy needs scythe and not economy needs armor_compressed",
+                "return=skipped when economy needs shovel and not economy needs armor_compressed",
                 "consume=reed cotton,wool:3",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "produce=armor_compressed:2"
             }
         },
@@ -267,7 +330,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
-                "return=skipped unless economy needs boots_sturdy or workers need experience",
                 "return=skipped when economy needs log and not economy needs boots_sturdy",
                 "return=skipped when economy needs cotton and not economy needs boots_sturdy",
                 "return=skipped when economy needs cloth and not economy needs boots_sturdy",
@@ -275,9 +337,19 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_processed and not economy needs boots_sturdy",
                 "return=skipped when economy needs armor_compressed and not economy needs boots_sturdy",
                 "return=skipped when economy needs boots_swift and not economy needs boots_sturdy",
+                "return=skipped when economy needs basket and not economy needs boots_sturdy",
+                "return=skipped when economy needs buckets and not economy needs boots_sturdy",
+                "return=skipped when economy needs felling_ax and not economy needs boots_sturdy",
+                "return=skipped when economy needs fire_tongs and not economy needs boots_sturdy",
+                "return=skipped when economy needs hammer and not economy needs boots_sturdy",
+                "return=skipped when economy needs needles and not economy needs boots_sturdy",
+                "return=skipped when economy needs pick and not economy needs boots_sturdy",
+                "return=skipped when economy needs saw and not economy needs boots_sturdy",
+                "return=skipped when economy needs scythe and not economy needs boots_sturdy",
+                "return=skipped when economy needs shovel and not economy needs boots_sturdy",
                 "consume=log cotton,wool:2",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "produce=boots_sturdy:2"
             }
         },
@@ -285,7 +357,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
             descname = pgettext("europeans_building", "making swift boots"),
             actions = {
-                "return=skipped unless economy needs boots_swift or workers need experience",
                 "return=skipped when economy needs log and not economy needs boots_swift",
                 "return=skipped when economy needs cotton and not economy needs boots_swift",
                 "return=skipped when economy needs cloth and not economy needs boots_swift",
@@ -293,9 +364,19 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_processed and not economy needs boots_swift",
                 "return=skipped when economy needs armor_compressed and not economy needs boots_swift",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_swift",
+                "return=skipped when economy needs basket and not economy needs boots_swift",
+                "return=skipped when economy needs buckets and not economy needs boots_swift",
+                "return=skipped when economy needs felling_ax and not economy needs boots_swift",
+                "return=skipped when economy needs fire_tongs and not economy needs boots_swift",
+                "return=skipped when economy needs hammer and not economy needs boots_swift",
+                "return=skipped when economy needs needles and not economy needs boots_swift",
+                "return=skipped when economy needs pick and not economy needs boots_swift",
+                "return=skipped when economy needs saw and not economy needs boots_swift",
+                "return=skipped when economy needs scythe and not economy needs boots_swift",
+                "return=skipped when economy needs shovel and not economy needs boots_swift",
                 "consume=log cotton,wool:2",
                 "playsound=sound/mill/weaving priority:90%",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "produce=boots_swift:2"
             }
         },
@@ -303,7 +384,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
             descname = pgettext("europeans_building", "making baskets"),
             actions = {
-                "return=skipped unless economy needs basket or workers need experience",
                 "return=skipped when economy needs log and not economy needs basket",
                 "return=skipped when economy needs coal and not economy needs basket",
                 "return=skipped when economy needs iron and not economy needs basket",
@@ -322,7 +402,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs basket",
                 "consume=log coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=basket:2"
             }
         },
@@ -330,7 +410,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
             descname = pgettext("europeans_building", "making buckets"),
             actions = {
-                "return=skipped unless economy needs buckets or workers need experience",
                 "return=skipped when economy needs log and not economy needs buckets",
                 "return=skipped when economy needs coal and not economy needs buckets",
                 "return=skipped when economy needs iron and not economy needs buckets",
@@ -349,7 +428,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs buckets",
                 "consume=log coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=buckets:2"
             }
         },
@@ -357,7 +436,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
             descname = pgettext("europeans_building", "making felling axes"),
             actions = {
-                "return=skipped unless economy needs felling_ax or workers need experience",
                 "return=skipped when economy needs log and not economy needs felling_ax",
                 "return=skipped when economy needs coal and not economy needs felling_ax",
                 "return=skipped when economy needs iron and not economy needs felling_ax",
@@ -376,7 +454,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs felling_ax",
                 "consume=log coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=felling_ax:2"
             }
         },
@@ -384,7 +462,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
             descname = pgettext("europeans_building", "making fire tongs"),
             actions = {
-                "return=skipped unless economy needs fire_tongs or workers need experience",
                 "return=skipped when economy needs log and not economy needs fire_tongs",
                 "return=skipped when economy needs coal and not economy needs fire_tongs",
                 "return=skipped when economy needs iron and not economy needs fire_tongs",
@@ -403,7 +480,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs fire_tongs", 
                 "consume=log coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=fire_tongs:2"
             }
         },
@@ -411,7 +488,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
             descname = pgettext("europeans_building", "making hammers"),
             actions = {
-                "return=skipped unless economy needs hammer or workers need experience",
                 "return=skipped when economy needs log and not economy needs hammer",
                 "return=skipped when economy needs coal and not economy needs hammer",
                 "return=skipped when economy needs iron and not economy needs hammer",
@@ -430,7 +506,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs hammer", 
                 "consume=log coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=hammer:2"
             }
         },
@@ -438,7 +514,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making needles because ...
             descname = pgettext("europeans_building", "making needles"),
             actions = {
-                "return=skipped unless economy needs needles or workers need experience",
                 "return=skipped when economy needs coal and not economy needs needles",
                 "return=skipped when economy needs iron and not economy needs needles",
                 "return=skipped when economy needs basket and not economy needs needles",
@@ -456,7 +531,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs needles", 
                 "consume=coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=needles:2"
             }
         },
@@ -464,7 +539,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
             descname = pgettext("europeans_building", "making picks"),
             actions = {
-                "return=skipped unless economy needs pick or workers need experience",
                 "return=skipped when economy needs log and not economy needs pick",
                 "return=skipped when economy needs coal and not economy needs pick",
                 "return=skipped when economy needs iron and not economy needs pick",
@@ -483,7 +557,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs pick", 
                 "consume=log coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=pick:2"
             }
         },
@@ -491,7 +565,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
             descname = pgettext("europeans_building", "making saws"),
             actions = {
-                "return=skipped unless economy needs saw or workers need experience",
                 "return=skipped when economy needs log and not economy needs saw",
                 "return=skipped when economy needs coal and not economy needs saw",
                 "return=skipped when economy needs iron and not economy needs saw",
@@ -510,7 +583,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs saw", 
                 "consume=log coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=saw:2"
             }
         },
@@ -518,7 +591,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
             descname = pgettext("europeans_building", "making sycthes"),
             actions = {
-                "return=skipped unless economy needs scythe or workers need experience",
                 "return=skipped when economy needs log and not economy needs scythe",
                 "return=skipped when economy needs coal and not economy needs scythe",
                 "return=skipped when economy needs iron and not economy needs scythe",
@@ -537,7 +609,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs scythe", 
                 "consume=log coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=scythe:2"
             }
         },
@@ -545,7 +617,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
             descname = pgettext("europeans_building", "making shovels"),
             actions = {
-                "return=skipped unless economy needs shovel or workers need experience",
                 "return=skipped when economy needs log and not economy needs shovel",
                 "return=skipped when economy needs coal and not economy needs shovel",
                 "return=skipped when economy needs iron and not economy needs shovel",
@@ -564,7 +635,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs ax_broad and not economy needs shovel", 
                 "consume=log coal iron",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:90s",
+                "animate=working duration:3m",
                 "produce=shovel:2"
             }
         },
@@ -572,9 +643,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
             descname = pgettext("europeans_building", "forging a mask"),
             actions = {
-                "return=skipped unless economy needs helmet_mask or workers need experience",
                 "return=skipped when economy needs coal and not economy needs helmet_mask",
                 "return=skipped when economy needs iron and not economy needs helmet_mask",
+                "return=skipped when economy needs shield_steel and not economy needs helmet_mask",
+                "return=skipped when economy needs spear_advanced and not economy needs helmet_mask",
+                "return=skipped when economy needs ax_broad and not economy needs helmet_mask",
                 "return=skipped when economy needs basket and not economy needs helmet_mask",
                 "return=skipped when economy needs buckets and not economy needs helmet_mask",
                 "return=skipped when economy needs felling_ax and not economy needs helmet_mask",
@@ -585,12 +658,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs helmet_mask",
                 "return=skipped when economy needs scythe and not economy needs helmet_mask",
                 "return=skipped when economy needs shovel and not economy needs helmet_mask",
-                "return=skipped when economy needs shield_steel and not economy needs helmet_mask",
-                "return=skipped when economy needs spear_advanced and not economy needs helmet_mask",
-                "return=skipped when economy needs ax_broad and not economy needs helmet_mask",
                 "consume=coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "produce=helmet_mask:2"
             }
         },
@@ -598,9 +668,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
             descname = pgettext("europeans_building", "forging a steel shield"),
             actions = {
-                "return=skipped unless economy needs shield_steel or workers need experience",
                 "return=skipped when economy needs coal and not economy needs shield_steel",
                 "return=skipped when economy needs iron and not economy needs shield_steel",
+                "return=skipped when economy needs helmet_mask and not economy needs shield_steel",
+                "return=skipped when economy needs spear_advanced and not economy needs shield_steel",
+                "return=skipped when economy needs ax_broad and not economy needs shield_steel",
                 "return=skipped when economy needs basket and not economy needs shield_steel",
                 "return=skipped when economy needs buckets and not economy needs shield_steel",
                 "return=skipped when economy needs felling_ax and not economy needs shield_steel",
@@ -611,12 +683,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs shield_steel",
                 "return=skipped when economy needs scythe and not economy needs shield_steel",
                 "return=skipped when economy needs shovel and not economy needs shield_steel",
-                "return=skipped when economy needs helmet_mask and not economy needs shield_steel",
-                "return=skipped when economy needs spear_advanced and not economy needs shield_steel",
-                "return=skipped when economy needs ax_broad and not economy needs shield_steel",
                 "consume=coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "produce=shield_steel:2"
             }
         },
@@ -624,10 +693,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
             descname = pgettext("europeans_building", "forging an advanced spear"),
             actions = {
-                "return=skipped unless economy needs spear_advanced or workers need experience",
                 "return=skipped when economy needs log and not economy needs spear_advanced",
                 "return=skipped when economy needs coal and not economy needs spear_advanced",
                 "return=skipped when economy needs iron and not economy needs spear_advanced",
+                "return=skipped when economy needs helmet_mask and not economy needs spear_advanced",
+                "return=skipped when economy needs shield_steel and not economy needs spear_advanced",
+                "return=skipped when economy needs ax_broad and not economy needs spear_advanced",
                 "return=skipped when economy needs basket and not economy needs spear_advanced",
                 "return=skipped when economy needs buckets and not economy needs spear_advanced",
                 "return=skipped when economy needs felling_ax and not economy needs spear_advanced",
@@ -638,12 +709,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs spear_advanced",
                 "return=skipped when economy needs scythe and not economy needs spear_advanced",
                 "return=skipped when economy needs shovel and not economy needs spear_advanced",
-                "return=skipped when economy needs helmet_mask and not economy needs spear_advanced",
-                "return=skipped when economy needs shield_steel and not economy needs spear_advanced",
-                "return=skipped when economy needs ax_broad and not economy needs spear_advanced",
                 "consume=log coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=spear_advanced:2"
             }
@@ -652,10 +720,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
             descname = pgettext("europeans_building", "forging a broad ax"),
             actions = {
-                "return=skipped unless economy needs ax_broad or workers need experience",
                 "return=skipped when economy needs log and not economy needs ax_broad",
                 "return=skipped when economy needs coal and not economy needs ax_broad",
                 "return=skipped when economy needs iron and not economy needs ax_broad",
+                "return=skipped when economy needs helmet_mask and not economy needs ax_broad",
+                "return=skipped when economy needs shield_steel and not economy needs ax_broad",
+                "return=skipped when economy needs spear_advanced and not economy needs ax_broad",
                 "return=skipped when economy needs basket and not economy needs ax_broad",
                 "return=skipped when economy needs buckets and not economy needs ax_broad",
                 "return=skipped when economy needs felling_ax and not economy needs ax_broad",
@@ -666,12 +736,9 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs ax_broad",
                 "return=skipped when economy needs scythe and not economy needs ax_broad",
                 "return=skipped when economy needs shovel and not economy needs ax_broad",
-                "return=skipped when economy needs helmet_mask and not economy needs ax_broad",
-                "return=skipped when economy needs shield_steel and not economy needs ax_broad",
-                "return=skipped when economy needs spear_advanced and not economy needs ax_broad",
                 "consume=log coal iron",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:150s",
+                "animate=working duration:5m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=ax_broad:2"
             }

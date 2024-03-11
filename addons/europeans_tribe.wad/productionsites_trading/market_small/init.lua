@@ -72,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
         },
         trading_for_wood = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = pgettext("europeans_building", "trading food for wood coins"),
+            descname = pgettext("europeans_building", "trading goods for wood coins"),
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_wood",
                 "call=pausing_production_for_blackwood",
@@ -88,7 +88,7 @@ wl.Descriptions():new_productionsite_type {
         },
         trading_for_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
-            descname = pgettext("europeans_building", "trading food for copper coins"),
+            descname = pgettext("europeans_building", "trading goods for copper coins"),
             actions = {
                 "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
