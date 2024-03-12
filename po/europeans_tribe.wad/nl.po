@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-11 03:07+0100\n"
+"POT-Creation-Date: 2024-03-12 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -2163,24 +2163,21 @@ msgstr "handel"
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:77
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:91
-#, fuzzy
 msgctxt "europeans_building"
 msgid "trading goods for copper coins"
-msgstr "voedsel ruilen voor koperen munten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:95
-#, fuzzy
 msgctxt "europeans_building"
 msgid "trading goods for silver coins"
-msgstr "voedsel ruilen voor zilveren munten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:113
-#, fuzzy
 msgctxt "europeans_building"
 msgid "trading goods for gold coins"
-msgstr "voedsel ruilen voor gouden munten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:131
@@ -2197,10 +2194,9 @@ msgstr "Kleine Markt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:75
-#, fuzzy
 msgctxt "europeans_building"
 msgid "trading goods for wood coins"
-msgstr "voedsel ruilen voor houtmunten"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:109
@@ -6201,11 +6197,3 @@ msgstr "Basis Werker"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Normale Werker"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production because output not needed yet"
-#~ msgstr "productie pauzeren omdat output nog niet nodig is"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production because lack of tools"
-#~ msgstr "pauzeren van de productie wegens gebrek aan gereedschap"

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-11 03:07+0100\n"
+"POT-Creation-Date: 2024-03-12 03:07+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -2164,24 +2164,21 @@ msgstr "Das Handeln"
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:77
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:91
-#, fuzzy
 msgctxt "europeans_building"
 msgid "trading goods for copper coins"
-msgstr "Tausch von Nahrung gegen Kupfermünzen"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:95
-#, fuzzy
 msgctxt "europeans_building"
 msgid "trading goods for silver coins"
-msgstr "Tausch von Nahrung gegen Silbermünzen"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:113
-#, fuzzy
 msgctxt "europeans_building"
 msgid "trading goods for gold coins"
-msgstr "Tausch von Nahrung gegen Goldmünzen"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_big/init.lua:131
@@ -2198,10 +2195,9 @@ msgstr "Kleiner Markt"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:75
-#, fuzzy
 msgctxt "europeans_building"
 msgid "trading goods for wood coins"
-msgstr "Tausch von Nahrung gegen Holzmünzen"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:109
@@ -6188,11 +6184,3 @@ msgstr "Lehrling"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Geselle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production because output not needed yet"
-#~ msgstr "Produktion angehalten, weil Produkt noch nicht benötigt wird"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production because lack of tools"
-#~ msgstr "Produktion wegen Werkzeugmangel angehalten"
