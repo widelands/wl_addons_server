@@ -16,6 +16,9 @@ wl.Descriptions():new_worker_type {
         check_space = {
             "findspace=size:any radius:6 space"
         },
+        check_fields = {
+            "findobject=attrib:field radius:6"
+        },
         plant_barley = {
             "findspace=size:any radius:6 space",
             "walk=coords",
@@ -95,9 +98,6 @@ wl.Descriptions():new_worker_type {
             "plant=attrib:seed_wheat",
             "animate=planting duration:5s",
             "return"
-        },
-        check_fields = {
-            "findobject=attrib:field radius:6"
         },
         harvest_barley = {
             "findobject=attrib:ripe_barley radius:6",

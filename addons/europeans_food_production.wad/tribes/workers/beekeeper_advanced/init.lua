@@ -10,6 +10,9 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
+        check_flower = {
+            "findobject=attrib:flowering radius:10",
+        },
         bees = {
             "findobject=attrib:flowering radius:10",
             "walk=object",

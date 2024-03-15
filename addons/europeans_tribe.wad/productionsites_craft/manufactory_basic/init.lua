@@ -91,57 +91,28 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped"
             }
         },
-        pausing_production_for_log = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
-            descname = pgettext("europeans_building", "pausing production because lack of log"),
-            actions = {
-                "return=skipped when site has log:8",
-                "return=skipped when site has log:6 and economy needs blackwood",
-                "sleep=duration:5m",
-            }
-        },
         processing_log = {
             -- TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
             descname = pgettext("europeans_building", "processing log to create tools and weapons"),
             actions = {
-                "call=pausing_production_for_log",
                 "call=producing_armor_wooden",
                 "call=producing_boots_wooden",
                 "call=producing_helmet_wooden",
                 "call=producing_spear_wooden",
             }
         },
-        pausing_production_for_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
-            descname = pgettext("europeans_building", "pausing production because lack of reed"),
-            actions = {
-                "return=skipped when site has reed:8",
-                "return=skipped when site has reed:6 and economy needs cloth",
-                "sleep=duration:5m",
-            }
-        },
         processing_reed = {
             -- TRANSLATORS: Completed/Skipped/Did not start processing reed for input wares because ...
             descname = pgettext("europeans_building", "processing reed to create tools and armor"),
             actions = {
-                "call=pausing_production_for_reed",
                 "call=producing_armor_processed",
                 "call=producing_boots_sturdy",
-            }
-        },
-        pausing_production_for_iron = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for input wares because ...
-            descname = pgettext("europeans_building", "pausing production because lack of iron or coal"),
-            actions = {
-                "return=skipped when site has coal:8 and site has iron:8",
-                "sleep=duration:10m",
             }
         },
         processing_iron = {
             -- TRANSLATORS: Completed/Skipped/Did not start processing iron for input wares because ...
             descname = pgettext("europeans_building", "processing iron to create tools and weapons"),
             actions = {
-                "call=pausing_production_for_iron",
                 "call=producing_buckets",
                 "call=producing_basket",
                 "call=producing_felling_ax",

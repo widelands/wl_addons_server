@@ -13,6 +13,9 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_beekeeper_advanced",
 
     programs = {
+        check_flower = {
+            "findobject=attrib:flowering radius:8",
+        },
         bees = {
             "findobject=attrib:flowering radius:8",
             "walk=object",

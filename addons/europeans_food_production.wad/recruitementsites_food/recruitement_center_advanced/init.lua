@@ -228,7 +228,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs europeans_worker_advanced and not economy needs europeans_gardener_advanced",
                 "consume=europeans_carrier",
                 "consume=shovel buckets",
-                "animate=working duration:15m",,
+                "animate=working duration:15m",
                 "recruit=europeans_gardener_advanced"
             }
         },

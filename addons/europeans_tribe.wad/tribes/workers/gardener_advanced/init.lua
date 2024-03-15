@@ -10,8 +10,17 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
-        check_dig = {
+        check_dig_space = {
             "findspace=size:any radius:8 avoid:field",
+        },
+        check_pond_dry = {
+            "findobject=attrib:pond_dry radius:8",
+        },
+        check_pond_water = {
+            "findobject=attrib:pond_water radius:8",
+        },
+        check_fields = {
+            "findobject=attrib:field radius:8"
         },
         dig = {
             "findspace=size:any radius:8 avoid:field",
@@ -19,9 +28,6 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:1s",
             "plant=attrib:pond_dry",
             "return"
-        },
-        check_pond_dry = {
-            "findobject=attrib:pond_dry radius:8",
         },
         fill_pond_dry = {
             "findobject=attrib:pond_dry radius:8",
@@ -39,9 +45,6 @@ wl.Descriptions():new_worker_type {
             "callobject=fill_pond",
             "animate=water duration:1s",
             "return"
-        },
-        check_pond_water = {
-            "findobject=attrib:pond_water radius:8",
         },
         plant_cotton = {
             "findobject=attrib:pond_water radius:8",

@@ -16,12 +16,17 @@ wl.Descriptions():new_worker_type {
         europeans_carrier = 1,
         coin_copper = 1,
         scythe = 1,
-        basket = 1
+        basket = 1,
+        shovel = 1,
+        buckets = 1
     },
 
     programs = {
         check_space = {
             "findspace=size:any radius:4 space"
+        },
+        check_fields = {
+            "findobject=attrib:field radius:4"
         },
         plant_barley = {
             "findspace=size:any radius:4 space",
@@ -102,9 +107,6 @@ wl.Descriptions():new_worker_type {
             "plant=attrib:seed_wheat",
             "animate=plant duration:6s",
             "return"
-        },
-        check_fields = {
-            "findobject=attrib:field radius:4"
         },
         harvest_barley = {
             "findobject=attrib:ripe_barley radius:4",

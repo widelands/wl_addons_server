@@ -52,22 +52,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production_for_inputs",
-                "sleep=duration:20s",
                 "call=produce_biscuits",
                 "sleep=duration:20s",
                 "call=produce_honey_bread",
                 "sleep=duration:20s",
                 "call=produce_bread",
                 "return=skipped"
-            }
-        },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for water and flour"),
-            actions = {
-                "return=skipped when site has water:4 and site has flour:4",
-                "sleep=duration:5m",
             }
         },
         produce_bread = {
@@ -78,7 +68,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs honey_bread and not economy needs bread",
                 "return=skipped when economy needs biscuit and not economy needs bread",
                 "consume=water:2 flour:2",
-                "animate=working duration:60s",
+                "animate=working duration:1m",
                 "produce=bread:2"
             }
         },
@@ -91,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs biscuit and not economy needs honey_bread",
                 "return=skipped unless site has honey",
                 "consume=water:2 flour:2 honey",
-                "animate=working duration:60s",
+                "animate=working duration:1m",
                 "produce=honey_bread:2"
             }
         },
@@ -104,7 +94,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs honey_bread and not economy needs biscuit",
                 "return=skipped unless site has honey",
                 "consume=water:2 flour:2 honey fruit:2",
-                "animate=working duration:60s",
+                "animate=working duration:1m",
                 "produce=biscuit:2"
             }
         },

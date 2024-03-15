@@ -47,24 +47,14 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production_for_inputs",
-                "sleep=duration:15s",
                 "call=making_wine",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
                 "call=brew_strong_beer",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
                 "call=brew_mead",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
                 "call=brew_beer",
                 "return=skipped"
-            }
-        },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for water and barley"),
-            actions = {
-                "return=skipped when site has water:4 and site has barley:4",
-                "sleep=duration:5m",
             }
         },
         brew_beer = {
@@ -75,7 +65,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs mead and not economy needs beer",
                 "return=skipped when economy needs beer_strong and not economy needs beer",
                 "consume=water barley",
-                "animate=working duration:60s",
+                "animate=working duration:1m",
                 "produce=beer:4"
             }
         },
@@ -88,7 +78,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
-                "animate=working duration:60s",
+                "animate=working duration:1m",
                 "produce=mead"
             }
         },
@@ -101,7 +91,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs mead and not economy needs beer_strong",
                 "return=skipped unless site has fruit",
                 "consume=water barley fruit",
-                "animate=working duration:60s",
+                "animate=working duration:1m",
                 "produce=beer_strong"
             }
         },
@@ -114,7 +104,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs grape and not economy needs wine",
                 "consume=grape:2",
                 "playsound=sound/empire/winebubble priority:40% allow_multiple",
-                "animate=working duration:60s",
+                "animate=working duration:1m",
                 "produce=wine"
             }
         }

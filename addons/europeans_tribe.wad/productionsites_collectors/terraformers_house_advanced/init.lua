@@ -43,6 +43,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "return=skipped unless site has coin_wood:8",
+                "sleep=duration:10s",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_coast",
@@ -54,7 +55,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=terraforming_pond_water",
                 "callworker=check_pond_dry",
                 "call=terraforming_pond_dry",
-                "sleep=duration:20s",
+                "sleep=duration:10s",
                 "return=skipped"
             }
         },

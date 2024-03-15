@@ -593,7 +593,7 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_castle", "europeans_market_big", "europeans_sawmill_normal", "europeans_weaving_mill_normal", }
     end
     if (increment == 8) then
-        player:allow_buildings{"europeans_recruitement_center_basic", "europeans_trainingscamp_basic", "europeans_battlearena_basic", }
+        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_battlearena_basic", }
         if (map.waterway_max_length > 0) then
             player:allow_buildings{"europeans_ferry_yard_basic", }
         end
@@ -611,7 +611,7 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", }
         player:allow_buildings{"europeans_coalmine_level_2", "europeans_ironmine_level_2", "europeans_goldmine_level_2", }
         player:allow_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", }
-        player:allow_buildings{"europeans_manufactory_normal", "europeans_scouts_house_normal", "europeans_recruitement_center_normal", }
+        player:allow_buildings{"europeans_manufactory_normal", "europeans_scouts_house_normal", }
         player:allow_buildings{"europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
         
         if (map.waterway_max_length > 0) then
@@ -632,7 +632,7 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_well_level_6", }
         player:allow_buildings{"europeans_coalmine_level_4", "europeans_ironmine_level_4", "europeans_goldmine_level_4", }
         player:allow_buildings{"europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5", }
-        player:allow_buildings{"europeans_manufactory_advanced", "europeans_scouts_house_advanced", "europeans_recruitement_center_advanced", }
+        player:allow_buildings{"europeans_manufactory_advanced", "europeans_scouts_house_advanced", }
         player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_battlearena_level_2", "europeans_battlearena_level_3", }
         
         if (map.waterway_max_length > 0) then

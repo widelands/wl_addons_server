@@ -13,8 +13,17 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_gardener_advanced",
 
     programs = {
-        check_dig = {
+        check_dig_space = {
             "findspace=size:any radius:6 avoid:field",
+        },
+        check_pond_dry = {
+            "findobject=attrib:pond_dry radius:6",
+        },
+        check_pond_water = {
+            "findobject=attrib:pond_water radius:6",
+        },
+        check_fields = {
+            "findobject=attrib:field radius:6"
         },
         dig = {
             "findspace=size:any radius:6 avoid:field",
@@ -23,9 +32,6 @@ wl.Descriptions():new_worker_type {
             "plant=attrib:pond_dry",
             "return"
         },
-        check_pond_dry = {
-            "findobject=attrib:pond_dry radius:6",
-        },
         fill_pond_dry = {
             "findobject=attrib:pond_dry radius:6",
             "walk=object",
@@ -33,9 +39,6 @@ wl.Descriptions():new_worker_type {
             "callobject=fill_pond",
             "animate=water duration:1s",
             "return"
-        },
-        check_pond_water = {
-            "findobject=attrib:pond_water radius:6",
         },
         plant_cotton = {
             "findobject=attrib:pond_water radius:6",

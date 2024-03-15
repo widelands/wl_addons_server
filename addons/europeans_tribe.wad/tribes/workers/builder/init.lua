@@ -8,6 +8,14 @@ wl.Descriptions():new_worker_type {
     descname = pgettext("europeans_worker", "Builder"),
     icon = dirname .. "menu.png",
     vision_range = 2,
+    
+    buildcost = {
+        europeans_carrier = 1,
+        coin_copper = 1,
+        hammer = 1,
+        saw = 1,
+        shovel = 1
+    }, 
 
     animation_directory = dirname,
     spritesheets = {

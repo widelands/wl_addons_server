@@ -52,6 +52,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting because ...
             descname = pgettext("europeans_building", "planting"),
             actions = {
+                "sleep=duration:2s",
                 "callworker=check_space",
                 "call=pausing_production_for_inputs",
                 "call=plant_cotton",
@@ -63,6 +64,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
             descname = pgettext("europeans_building", "harvesting"),
             actions = {
+                "sleep=duration:2s",
                 "callworker=check_fields",
                 "call=pausing_production_for_outputs",
                 "call=harvest_cotton",
