@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-15 03:08+0100\n"
+"POT-Creation-Date: 2024-03-16 03:08+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -729,10 +729,9 @@ msgstr "to Warken"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:52
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:86
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:59
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting"
-msgstr "Reit to planten"
+msgstr "to planten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:67
@@ -785,10 +784,9 @@ msgstr "Reit to planten"
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:128
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:153
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:135
-#, fuzzy
 msgctxt "europeans_building"
 msgid "harvesting"
-msgstr "Reit to arnten"
+msgstr "to arnten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:140
@@ -6137,39 +6135,3 @@ msgstr "Arbeider"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Goder Arbeider"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production because lack of log"
-#~ msgstr "dat Produzeren um de Mangel an Boomstammen antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production because lack of reed or cotton,wool"
-#~ msgstr "dat Produzeren um de Mangel an Reit of Boomwull of Wull antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production because lack of iron or coal"
-#~ msgstr "dat Produzeren um de Mangel an Iesen of Köhl antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production because lack of reed"
-#~ msgstr "dat Produzeren um de Mangel an Reit antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production because lack of reed or cotton"
-#~ msgstr "dat Produzeren um de Mangel an Reit of Boomwull antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing trading of gold"
-#~ msgstr "dat Hanneln vun Gold antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing trading of blackwood"
-#~ msgstr "dat Hanneln vun Haartholt antohollen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Equips recruits and trains them as workers."
-#~ msgstr "Rüst Lehrwichter ut un maakt se to Arbeiders."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Trains recruits in ‘Attack’ and ‘Health’."
-#~ msgstr "Lehrt Lehrwichters »Angriff« un »Gesundheid«."
