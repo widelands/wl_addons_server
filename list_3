@@ -526,7 +526,7 @@ kaputtnik
 
 sync_safe
 1679920754
-80
+81
 0
 0
 0
@@ -983,7 +983,7 @@ hessenfarmer
 
 sync_safe
 1690230129
-98
+99
 0
 0
 0
@@ -1328,7 +1328,7 @@ WeirdCatLord
 
 sync_safe
 1674388992
-97
+98
 0
 0
 0
@@ -1413,7 +1413,7 @@ WeirdCatLord
 
 sync_safe
 1674389456
-100
+101
 0
 0
 0
@@ -1590,7 +1590,7 @@ TRueDesk
 
 sync_safe
 1666686938
-474
+476
 0
 0
 0
@@ -2480,7 +2480,7 @@ Solstice_s_Return
 
 sync_safe
 1657988804
-486
+487
 0
 0
 0
@@ -2901,7 +2901,7 @@ Nordfriese
 
 sync_safe
 1600000000
-546
+547
 0
 0
 0
@@ -3217,7 +3217,7 @@ kaputtnik
 
 sync_safe
 1709041452
-2
+3
 0
 0
 0
@@ -3307,7 +3307,7 @@ kaputtnik
 
 sync_safe
 1706043656
-4
+6
 0
 0
 0
@@ -3534,7 +3534,7 @@ kaputtnik
 
 sync_safe
 1706093867
-7
+8
 0
 0
 0
@@ -3817,7 +3817,7 @@ MarkMcWire
 
 sync_safe
 1694867019
-322
+326
 0
 0
 0
@@ -7139,7 +7139,7 @@ MarkMcWire
 
 sync_safe
 1625854267
-593
+595
 0
 0
 0
@@ -7225,7 +7225,7 @@ MarkMcWire
 
 sync_safe
 1621788282
-1359
+1364
 0
 0
 0
@@ -7262,7 +7262,7 @@ This is Widelands version (PPA: daily) <font bold=true><font italic=true><font i
 3.8.4
 1694197932
 4.2.6
-242
+243
 41905533
 tribes
 0
@@ -16750,7 +16750,7 @@ c10eabb5092e2028ec7c9ad54711f590
 2172b8dbdbc95270a41e8ea8ec2d4e1a
 54384e0f8dcf1713722e6ba5080bf144
 2fb207496ab05de5016461df14335581
-9ea120c1d018138e94d47691f7ddf11f
+1d25adea49003178aaf853add3a3b993
 3b9e8545cdac3069996c2e0cde953e5a
 73db324a8ac2a611636a17001121a417
 0
@@ -16764,7 +16764,7 @@ aDiscoverer
 
 sync_safe
 1667043185
-218
+219
 0
 0
 0
@@ -17086,7 +17086,7 @@ Nordfriese
 
 sync_safe
 1600000000
-347
+349
 0
 0
 0
@@ -17572,7 +17572,7 @@ Nordfriese
 
 sync_safe
 1600000000
-669
+670
 0
 0
 0
@@ -18747,7 +18747,7 @@ Nordfriese
 
 sync_safe
 1600000000
-206
+207
 0
 0
 0
@@ -18831,7 +18831,7 @@ kaputtnik
 
 sync_safe
 1600000000
-292
+294
 0
 0
 0
@@ -19343,7 +19343,7 @@ arch_stanton
 
 sync_safe
 1648329410
-275
+276
 0
 0
 0
@@ -19640,7 +19640,7 @@ Nordfriese
 
 sync_safe
 1621620072
-197
+198
 0
 0
 0
@@ -19967,7 +19967,7 @@ kaputtnik
 
 sync_safe
 1614637671
-187
+188
 0
 0
 0
@@ -20174,7 +20174,7 @@ Nordfriese
 
 sync_safe
 1600000000
-311
+313
 0
 0
 0
@@ -21750,7 +21750,7 @@ Nordfriese
 
 sync_safe
 1600000000
-186
+193
 0
 0
 0
@@ -21761,10 +21761,18 @@ sync_safe
 0
 0
 0
-0
+2
+kaputtnik
+Lookes like the latest changes to amzons are not reflected in this add-on. It gives an error:  <font italic=true>Not enough space for 7 inputs, only for 4</font>  <font italic=true>  [string "addons/stronger-trading-outpost.wad/amazons.l..."]:82: in function [string "addons/stronger-trading-outpost.wad/amazons.l..."]:14</font>
 1.0.2
+1710603963
+Nordfriese
+Thanks for reporting, I uploaded an update to fix this by reducing inputs to the stone workshop. Additionally this starting conditions now adds quartz for v1.2 and later (but should skip it in v1.1 and older).
+1.0.3
+1710605088
+1.0.3
 28
-29328
+29718
 starting_condition
 0
 0
@@ -21800,12 +21808,12 @@ ru.mo
 sk.mo
 sv.mo
 29
-228f6c97630a9ae1378d0b8fda84d204
-69ea297c39d6dec8bd2e2102c8ca2c05
-4b34c8356e8f99cf89ba2f483092ee05
-15de49e0cd0dd0689e347d0c69636f71
-096e614ea3cd2566b9c88f0c2ec4f0f3
-8b1ba89f1db93aefec04f7509b755b69
+c402f130e20c4197516525c2beb54f50
+5ae7c22fbac4938c8e7e1eadcd66e197
+48949cf209e406e9a7366ca2eab904de
+066ab02afca90ad03ac4588ffe07663b
+d71682b42cc116e0e14562589f681b33
+7098b3d75eeeff19a52752aa06ee241b
 e1f9961b464feba5860ddcc12851c72e
 049eb19ee58172aeefa5aaad29512a85
 0536c4f606d84db0a115feb4910e08a4
@@ -21958,7 +21966,7 @@ aDiscoverer
 
 desync
 1687443995
-19
+20
 0
 0
 0
@@ -22040,7 +22048,7 @@ Yo...
 
 sync_safe
 1622321739
-262
+263
 0
 0
 0
@@ -22360,7 +22368,7 @@ Nordfriese
 
 sync_safe
 1600000000
-256
+257
 0
 0
 0
@@ -22896,7 +22904,7 @@ kaputtnik
 
 sync_safe
 1708356983
-11
+12
 0
 0
 0
@@ -22992,7 +23000,7 @@ OIPUN
 
 sync_safe
 1622916439
-381
+382
 0
 0
 0

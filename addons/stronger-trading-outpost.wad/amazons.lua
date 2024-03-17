@@ -8,9 +8,9 @@ push_textdomain("stronger-trading-outpost.wad", true)
 
 local r = {
    -- TRANSLATORS: This is the name of a starting condition
-   descname = _"AI Trading Outpost",
+   descname = _("AI Trading Outpost"),
    -- TRANSLATORS: This is the tooltip for the "AI Trading Outpost" starting condition
-   tooltip = _"If this player runs low on important wares, they will be replenished for free",
+   tooltip = _("If this player runs low on important wares, they will be replenished for free"),
    func = function(player, shared_in_start)
 
       local sf = wl.Game().map.player_slots[player.number].starting_field
@@ -20,10 +20,13 @@ local r = {
          player:allow_workers("all")
       end
 
+      local have_quartz = player.tribe:has_ware("quartz")  -- Quartz was added to the Amazon economy in v1.2
+
       prefilled_buildings(player, { "amazons_headquarters", sf.x, sf.y,
          wares = {
          log = 120,
          granite = 50,
+         quartz = have_quartz and 25 or nil,
          rope = 30,
          liana = 35,
          ironwood = 15,
@@ -81,7 +84,8 @@ local r = {
 
       place_building_in_region(player, "amazons_stone_workshop", sf:region(11), {
          inputs = {
-            granite = 7,
+            granite = 4,
+            quartz = have_quartz and 7 or nil,
             log = 6,
             ironwood = 5,
          }
@@ -167,6 +171,10 @@ local r = {
          end
          if wh:get_wares("gold") < 50 then
             wh:set_wares("gold", wh:get_wares("gold") + 10)
+            added = added + 1
+         end
+         if have_quartz and wh:get_wares("quartz") < 70 then
+            wh:set_wares("quartz", wh:get_wares("quartz") + 20)
             added = added + 1
          end
          if player:get_wares("cassavaroot") < 60 then
