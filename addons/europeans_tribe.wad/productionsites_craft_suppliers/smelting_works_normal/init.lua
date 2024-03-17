@@ -52,41 +52,20 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production_for_inputs",
-                "sleep=duration:30s",
-                "call=pausing_production_for_outputs",
-                "sleep=duration:30s",
                 "call=smelting_ore",
                 "return=skipped"
-            }
-        },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
-            actions = {
-                "return=skipped when site has ore:6 and site has coal:6",
-                "return=skipped when economy needs ore", -- for statistical reason
-                "sleep=duration:5m",
-            }
-        },
-        pausing_production_for_outputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production because output not needed yet"),
-            actions = {
-                "return=skipped when economy needs gold",
-                "return=skipped when economy needs iron",
-                "sleep=duration:20m",
             }
         },
         smelting_ore = {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
             descname = pgettext("europeans_building", "smelting ore"),
             actions = {
+                "return=skipped when economy needs coal and not economy needs gold and not economy needs iron",
                 "consume=ore:4 coal:4",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
-                "animate=working duration:45s",
+                "animate=working duration:2m",
                 "playsound=sound/metal/ironping priority:60%",
-                "animate=working duration:45s",
+                "animate=working duration:2m",
                 "playsound=sound/metal/goldping priority:60%",
                 "produce=iron:2 gold:2"
             }

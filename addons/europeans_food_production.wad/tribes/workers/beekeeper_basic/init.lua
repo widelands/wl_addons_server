@@ -19,6 +19,9 @@ wl.Descriptions():new_worker_type {
     },
 
     programs = {
+        check_flower = {
+            "findobject=attrib:flowering radius:6",
+        },
         bees = {
             "findobject=attrib:flowering radius:6",
             "walk=object",

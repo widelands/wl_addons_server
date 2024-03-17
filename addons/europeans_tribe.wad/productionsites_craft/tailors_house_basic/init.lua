@@ -73,30 +73,21 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production_for_inputs",
-                "sleep=duration:30s",
                 "call=produce_armor_wooden",
                 "sleep=duration:30s",
                 "call=produce_armor_processed",
                 "return=skipped"
             }
         },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
-            actions = {
-                "return=skipped when site has log:2 and site has cloth:2 and site has armor:2",
-                "sleep=duration:5m",
-            }
-        },
         produce_armor_wooden = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
-                "return=skipped unless economy needs armor_wooden or workers need experience",
+                "return=skipped when economy needs log and not economy needs armor_wooden",
+                "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
                 "consume=log",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:180s",
+                "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=armor_wooden:2"
             }
@@ -105,10 +96,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
-                "return=skipped unless economy needs armor_processed or workers need experience",
+                "return=skipped when economy needs cloth and not economy needs armor_processed",
+                "return=skipped when economy needs armor_wooden and not economy needs armor_processed",
                 "consume=armor cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:180s",
+                "animate=working duration:10m",
                 "produce=armor_processed:2"
             }
         }

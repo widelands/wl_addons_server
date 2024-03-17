@@ -19,7 +19,7 @@ wl.Descriptions():new_warehouse_type {
     },
     
     size = "big",
-    destructible = false,
+    destructible = true,
     
     buildcost = {
         blackwood = 4,

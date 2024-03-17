@@ -446,6 +446,55 @@ function upgrade_random_lumberjack(player)
     end
 end
 
+function upgrade_random_trainingsite(player)
+    local bb = player:get_buildings("europeans_battlearena_basic")
+    local b1 = player:get_buildings("europeans_battlearena_level_1")
+    local b2 = player:get_buildings("europeans_battlearena_level_2")
+    local b3 = player:get_buildings("europeans_battlearena_level_3")
+    local random_number = 0
+    local building = nil
+    
+    if #b2 > 0 then
+        random_number = math.random(#b2)
+        building = b2[random_number]
+    elseif #b1 > 0 then
+        random_number = math.random(#b1)
+        building = b1[random_number]
+    elseif #bb > 0 then
+        random_number = math.random(#bb)
+        building = bb[random_number]
+    else
+        building = nil
+    end
+    if building ~= nil then
+        building:enhance(true)
+    end
+end
+
+function set_hero_advanced_militarysites(player)
+    local ms3 = player:get_buildings("europeans_sentry")
+    local mb3 = player:get_buildings("europeans_advanced_barrier")
+    local mt3 = player:get_buildings("europeans_advanced_tower")
+    local mc3 = player:get_buildings("europeans_advanced_castle")
+    
+    for i, building in ipairs(mc3) do
+        building.soldier_preference = "any"
+        building.soldier_preference = "heroes"
+    end
+    for i, building in ipairs(mt3) do
+        building.soldier_preference = "any"
+        building.soldier_preference = "heroes"
+    end
+    for i, building in ipairs(mb3) do
+        building.soldier_preference = "any"
+        building.soldier_preference = "heroes"
+    end
+    for i, building in ipairs(ms3) do
+        building.soldier_preference = "any"
+        building.soldier_preference = "heroes"
+    end
+end
+
 function upgrade_random_militarysites(player)
     local ms1 = player:get_buildings("europeans_guardhouse")
     local ms2 = player:get_buildings("europeans_tower_small")
@@ -541,10 +590,10 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_manufactory_basic", }
     end
     if (increment == 6) then
-        player:allow_buildings{"europeans_castle", "europeans_market_big", }
+        player:allow_buildings{"europeans_castle", "europeans_market_big", "europeans_sawmill_normal", "europeans_weaving_mill_normal", }
     end
     if (increment == 8) then
-        player:allow_buildings{"europeans_recruitement_center_basic", "europeans_trainingscamp_basic", "europeans_battlearena_basic", }
+        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_battlearena_basic", }
         if (map.waterway_max_length > 0) then
             player:allow_buildings{"europeans_ferry_yard_basic", }
         end
@@ -558,12 +607,11 @@ function doing_ai_stuff(player, increment)
     if (increment == 16) then
         player:allow_buildings{"europeans_lumberjacks_house_normal", "europeans_quarry_normal", }
         player:allow_buildings{"europeans_farm_small_normal", "europeans_foresters_house_normal", }
-        player:allow_buildings{"europeans_sawmill_normal", "europeans_weaving_mill_normal", }
         player:allow_buildings{"europeans_charcoal_kiln_normal", "europeans_stonemasons_house_normal", "europeans_smelting_works_normal", }
         player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", }
         player:allow_buildings{"europeans_coalmine_level_2", "europeans_ironmine_level_2", "europeans_goldmine_level_2", }
         player:allow_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", }
-        player:allow_buildings{"europeans_manufactory_normal", "europeans_scouts_house_normal", "europeans_recruitement_center_normal", }
+        player:allow_buildings{"europeans_manufactory_normal", "europeans_scouts_house_normal", }
         player:allow_buildings{"europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
         
         if (map.waterway_max_length > 0) then
@@ -584,7 +632,7 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_well_level_6", }
         player:allow_buildings{"europeans_coalmine_level_4", "europeans_ironmine_level_4", "europeans_goldmine_level_4", }
         player:allow_buildings{"europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5", }
-        player:allow_buildings{"europeans_manufactory_advanced", "europeans_scouts_house_advanced", "europeans_recruitement_center_advanced", }
+        player:allow_buildings{"europeans_manufactory_advanced", "europeans_scouts_house_advanced", }
         player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_battlearena_level_2", "europeans_battlearena_level_3", }
         
         if (map.waterway_max_length > 0) then
@@ -613,9 +661,15 @@ function doing_ai_stuff(player, increment)
     if (increment >= 16) then
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
+        set_hero_advanced_militarysites(player)
         if increment % 2 == 0 then
             upgrade_random_militarysites(player)
             place_ship_random_ai(player)
+        end
+    end
+    if (increment >= 32) then
+        if increment % 16 == 0 then
+            upgrade_random_trainingsite(player)
         end
     end
 end

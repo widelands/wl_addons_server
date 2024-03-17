@@ -15,13 +15,24 @@ wl.Descriptions():new_worker_type {
     buildcost = {
         europeans_carrier = 1,
         coin_copper = 1,
+        scythe = 1,
+        basket = 1,
         shovel = 1,
         buckets = 1
     },
 
     programs = {
-        check_dig = {
+        check_dig_space = {
             "findspace=size:any radius:4 avoid:field",
+        },
+        check_pond_dry = {
+            "findobject=attrib:pond_dry radius:4",
+        },
+        check_pond_water = {
+            "findobject=attrib:pond_water radius:4",
+        },
+        check_fields = {
+            "findobject=attrib:field radius:4"
         },
         dig = {
             "findspace=size:any radius:4 avoid:field",
@@ -30,9 +41,6 @@ wl.Descriptions():new_worker_type {
             "plant=attrib:pond_dry",
             "return"
         },
-        check_pond_dry = {
-            "findobject=attrib:pond_dry radius:4",
-        },
         fill_pond_dry = {
             "findobject=attrib:pond_dry radius:4",
             "walk=object",
@@ -40,9 +48,6 @@ wl.Descriptions():new_worker_type {
             "callobject=fill_pond",
             "animate=water duration:1s",
             "return"
-        },
-        check_pond_water = {
-            "findobject=attrib:pond_water radius:4",
         },
         plant_cotton = {
             "findobject=attrib:pond_water radius:4",
@@ -58,16 +63,6 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:3s",
             "callobject=plant_reed_in_pond",
             "animate=water duration:1s",
-            "return"
-        },
-        harvest_cotton = {
-            "findobject=attrib:ripe_cotton radius:4",
-            "walk=object",
-            "playsound=sound/farm/scythe priority:70% allow_multiple",
-            "animate=idle duration:3s",
-            "callobject=harvest",
-            "animate=idle duration:1s",
-            "createware=cotton",
             "return"
         },
         harvest_reed = {

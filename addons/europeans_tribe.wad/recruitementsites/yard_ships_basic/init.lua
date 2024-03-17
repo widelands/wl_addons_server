@@ -83,6 +83,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "return=skipped when economy needs coin_copper",
                 "call=ship on failure fail",
                 "sleep=duration:30s",
                 "call=ship on failure fail",
@@ -110,7 +111,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has blackwood",
                 "return=skipped when not site has planks",
                 "return=skipped when not site has cloth",
-                "return=skipped when not site has coin_copper",
                 "animate=working duration:30s",
                 "construct=europeans_shipconstruction worker:buildship radius:5",
             }

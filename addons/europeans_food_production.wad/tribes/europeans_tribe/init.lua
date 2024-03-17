@@ -12,7 +12,7 @@ local init_europeans = {
     descname = _"Europeans (Food Addon)",
     tooltip = _"This is the culture of the Europeans.",
     icon = dirname .. "images/icon.png",
-    script = dirname .. "units.lua",
+    script = dirname .. "units_food.lua",
 
     starting_conditions = {
         "addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_terraforming.lua";

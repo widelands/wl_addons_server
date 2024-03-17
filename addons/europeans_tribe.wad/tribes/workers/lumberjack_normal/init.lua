@@ -14,10 +14,13 @@ wl.Descriptions():new_worker_type {
 
     programs = {
         check_trees = {
-            "findobject=attrib:tree radius:14",
+            "findobject=attrib:tree radius:12",
+        },
+        check_fields = {
+            "findobject=attrib:field radius:12"
         },
         harvest_rubber = {
-            "findobject=attrib:rubber_tree_mature radius:14",
+            "findobject=attrib:rubber_tree_mature radius:12",
             "walk=object",
             "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
             "animate=sawing duration:2s",
@@ -26,7 +29,7 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         harvest_tree = {
-            "findobject=attrib:tree radius:14",
+            "findobject=attrib:tree radius:12",
             "walk=object",
             "playsound=sound/atlanteans/saw/sawing priority:80% allow_multiple",
             "animate=sawing duration:2s",

@@ -1970,27 +1970,6 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
             }
         },
-        {
-            name = "europeans_recruitement_center_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Recruitement Center
-                purpose = pgettext("europeans_building", "Equips recruits and trains them as workers.")
-            }
-        },
-        {
-            name = "europeans_recruitement_center_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Recruitement Center
-                purpose = pgettext("europeans_building", "Equips recruits and trains them as workers.")
-            }
-        },
-        {
-            name = "europeans_recruitement_center_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Recruitement Center
-                purpose = pgettext("europeans_building", "Equips recruits and trains them as workers.")
-            }
-        },
 
         -- Mines
         {
@@ -2126,7 +2105,7 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 purpose = {
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
-                    pgettext("europeans_building", "Trains recruits in ‘Attack’ and ‘Health’."),
+                    pgettext("europeans_building", "Trains recruits to soldiers."),
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 2
                     pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
                 },
@@ -2650,7 +2629,6 @@ wl.Descriptions():new_tribe {
       ferry_yard = "europeans_ferry_yard_basic",
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",
-      second_carrier = "europeans_recruitement_center_basic",
       industry_supporter = "europeans_smelting_works_basic",
       industry_alternative = "europeans_smelting_works_basic",
       terraforming = "europeans_terraformers_house_basic",

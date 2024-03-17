@@ -12,6 +12,13 @@ wl.Descriptions():new_worker_type {
     experience = 64,
     becomes = "europeans_terraformer_normal",
     
+    buildcost = {
+        europeans_carrier = 1,
+        coin_copper = 1,
+        shovel = 1,
+        buckets = 1
+    },  
+    
     programs = {
         check_water_fish = {
             "findspace=size:any radius:8 resource:resource_fish",

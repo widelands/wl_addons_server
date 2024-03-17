@@ -8,6 +8,12 @@ wl.Descriptions():new_carrier_type {
     descname = pgettext("europeans_worker", "Carrier 2"),
     icon = dirname .. "menu.png",
     vision_range = 2,
+    
+    buildcost = {
+        europeans_carrier = 1,
+        coin_wood = 1,
+        basket = 1
+    },
 
     animation_directory = dirname,    
     spritesheets = {
@@ -35,8 +41,6 @@ wl.Descriptions():new_carrier_type {
          hotspot = { 8, 25 }
       },
     },
-
-    buildcost = {}, -- This will give the worker the property "buildable"
 }
 
 pop_textdomain()

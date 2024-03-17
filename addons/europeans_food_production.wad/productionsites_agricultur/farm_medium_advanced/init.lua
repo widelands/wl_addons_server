@@ -52,6 +52,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting because ...
             descname = pgettext("europeans_building", "planting"),
             actions = {
+                "sleep=duration:2s",
                 "callworker=check_space",
                 "call=pausing_production_for_inputs",
                 "call=plant_cotton",
@@ -63,6 +64,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
             descname = pgettext("europeans_building", "harvesting"),
             actions = {
+                "sleep=duration:2s",
                 "callworker=check_fields",
                 "call=pausing_production_for_outputs",
                 "call=harvest_cotton",
@@ -129,7 +131,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs reed and not economy needs cotton",
                 "callworker=harvest_cotton",
                 "animate=working duration:1s",
-                "produce=cotton"
+                "produce=cotton:3"
             }
         },
         harvest_rubber = {
@@ -140,7 +142,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs reed and not economy needs rubber",
                 "callworker=harvest_rubber",
                 "animate=working duration:1s",
-                "produce=rubber"
+                "produce=rubber:3"
             }
         },
         harvest_reed = {
@@ -151,7 +153,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs rubber and not economy needs reed",
                 "callworker=harvest_reed",
                 "animate=working duration:1s",
-                "produce=reed"
+                "produce=reed:3"
             }
         },
     },

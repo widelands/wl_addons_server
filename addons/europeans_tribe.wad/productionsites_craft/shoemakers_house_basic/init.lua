@@ -72,30 +72,21 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production_for_inputs",
-                "sleep=duration:30s",
                 "call=produce_boots_wooden",
                 "sleep=duration:30s",
                 "call=produce_boots_sturdy",
                 "return=skipped"
             }
         },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
-            actions = {
-                "return=skipped when site has log:2 and site has cloth:2",
-                "sleep=duration:5m",
-            }
-        },
         produce_boots_wooden = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
             descname = pgettext("europeans_building", "making a pair of wooden boots"),
             actions = {
-                "return=skipped unless economy needs boots_wooden or workers need experience",
+                "return=skipped when economy needs log and not economy needs boots_wooden",
+                "return=skipped when economy needs boots_sturdy and not economy needs boots_wooden",
                 "consume=log",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:180s",
+                "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=boots_wooden:2"
             }
@@ -104,10 +95,12 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
-                "return=skipped unless economy needs boots_sturdy or workers need experience",
+                "return=skipped when economy needs log and not economy needs boots_sturdy",
+                "return=skipped when economy needs cloth and not economy needs boots_sturdy",
+                "return=skipped when economy needs boots_wooden and not economy needs boots_sturdy",
                 "consume=log cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:180s",
+                "animate=working duration:10m",
                 "produce=boots_sturdy:2"
             }
         }

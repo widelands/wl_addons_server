@@ -71,6 +71,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "sleep=duration:10s",
+                "callworker=check_flower",
                 "call=making_honey",
                 "sleep=duration:10s",
                 "call=making_honey_idle",

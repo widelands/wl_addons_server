@@ -21,10 +21,13 @@ wl.Descriptions():new_worker_type {
 
     programs = {
         check_trees = {
-            "findobject=attrib:tree radius:10",
+            "findobject=attrib:tree radius:8",
+        },
+        check_fields = {
+            "findobject=attrib:field radius:8"
         },
         harvest_tree = {
-            "findobject=attrib:tree radius:10",
+            "findobject=attrib:tree radius:8",
             "walk=object",
             "playsound=sound/woodcutting/woodcutting priority:100% allow_multiple",
             "animate=hack duration:3s",

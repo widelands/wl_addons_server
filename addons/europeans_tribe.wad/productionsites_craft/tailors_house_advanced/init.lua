@@ -59,8 +59,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production_for_inputs",
-                "sleep=duration:10s",
                 "call=produce_armor_wooden",
                 "sleep=duration:10s",
                 "call=produce_armor_processed",
@@ -71,26 +69,17 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped"
             }
         },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
-            actions = {
-                "return=skipped when site has planks:2 and site has cloth:2 and site has armor:4 and site has leather:2",
-                "return=skipped when site has planks:2 and site has cloth:2 and site has armor:4 and site has rubber:2",
-                "sleep=duration:5m",
-            }
-        },
         produce_armor_wooden = {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
-                "return=skipped unless economy needs armor_wooden or workers need experience",
+                "return=skipped when economy needs planks and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_wooden",
                 "consume=planks",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:120s",
+                "animate=working duration:6m",
                 "playsound=sound/smiths/sharpening priority:90%",
                 "produce=armor_wooden:2"
             }
@@ -99,12 +88,13 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
-                "return=skipped unless economy needs armor_processed or workers need experience",
+                "return=skipped when economy needs cloth and not economy needs armor_processed",
+                "return=skipped when economy needs armor_wooden and not economy needs armor_processed",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_processed",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_processed",
                 "consume=armor:2 cloth",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:120s",
+                "animate=working duration:6m",
                 "produce=armor_processed:2"
             }
         },
@@ -112,11 +102,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of chain armor"),
             actions = {
-                "return=skipped unless economy needs armor_compressed or workers need experience",
+                "return=skipped when economy needs armor_wooden and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_processed and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_compressed",
                 "consume=armor:2 leather,rubber",
-                "animate=working duration:120s",
+                "animate=working duration:6m",
                 "produce=armor_compressed:2"
             }
         },
@@ -124,11 +114,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of advanced armor"),
             actions = {
-                "return=skipped unless economy needs armor_advanced or workers need experience",
+                "return=skipped when economy needs armor_wooden and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_processed and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_advanced",
                 "consume=armor:2 leather,rubber:2",
-                "animate=working duration:120s",
+                "animate=working duration:6m",
                 "produce=armor_advanced:2"
             }
         }
