@@ -84,8 +84,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=processing_log",
-                "call=processing_log",
                 "call=processing_reed",
+                "call=processing_iron",
+                "call=processing_log",
                 "call=processing_reed",
                 "call=processing_iron",
                 "return=skipped"

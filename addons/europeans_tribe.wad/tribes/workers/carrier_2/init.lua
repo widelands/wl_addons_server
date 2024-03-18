@@ -11,8 +11,7 @@ wl.Descriptions():new_carrier_type {
     
     buildcost = {
         europeans_carrier = 1,
-        coin_wood = 1,
-        basket = 1
+        coin_wood = 1
     },
 
     animation_directory = dirname,    

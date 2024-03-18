@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 03:07+0100\n"
+"POT-Creation-Date: 2024-03-18 03:07+0100\n"
 "PO-Revision-Date: 2024-01-29 07:14+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -42,50 +42,53 @@ msgid ""
 "maps, like Europe v1.2, investigating needs also round about 1.5 GB free "
 "memory!"
 msgstr ""
+"Вычисление всех данных для целой карты может занять некоторое время. Для "
+"действительно больших карт, таких как Europe v1.2, для исследования также "
+"требуется около 1,5 ГБ свободной памяти!"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:13
 msgid "The Editor does not react for this time!"
-msgstr ""
+msgstr "Редактор не отвечает!"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:14
 msgid "If you are sure click the button below and be patient …"
-msgstr ""
+msgstr "Если вы уверены, нажмите на кнопку ниже и наберитесь терпения …"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:41
 msgctxt "around_player_position:"
 msgid "Investigate around the player position:"
 msgid_plural "Investigate around the player positions:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Исследовать окрестности позиций игрока:"
+msgstr[1] "Исследовать окрестности позиций игроков:"
+msgstr[2] "Исследовать окрестности позиций игроков:"
+msgstr[3] "Исследовать окрестности позиций игроков:"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:47
 msgid "Memory usage: %1$10.2f MB"
-msgstr ""
+msgstr "Используется памяти: %1$10.2f Мб"
 
 #. TRANSLATORS: Placeholder is "this post in the Widelands forum"
 #: addons/editor_analyse_map.wad/callbacks.lua:56
 #, lua-format
 msgid "For information about the results look at %s"
-msgstr ""
+msgstr "Для получения информации о результатах ознакомьтесь с %s"
 
 #. TRANSLATORS: Will be inserted into "For information about the results look at %s"
 #: addons/editor_analyse_map.wad/callbacks.lua:58
 msgid "this post in the Widelands forum"
-msgstr ""
+msgstr "этот пост на форуме Widelands"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:66
 msgid "Statistic for the whole map"
-msgstr ""
+msgstr "Статистика по всей карте"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:75
 msgid "Players on this map"
-msgstr ""
+msgstr "Игроки на этой карте"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:77
 msgid "Other findings on this map"
-msgstr ""
+msgstr "Другие находки на этой карте"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:79
 msgid "Analysing %1$d map fields"

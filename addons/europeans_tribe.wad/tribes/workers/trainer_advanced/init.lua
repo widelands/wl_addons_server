@@ -8,6 +8,13 @@ wl.Descriptions():new_worker_type {
     descname = pgettext("europeans_worker", "Advanced Trainer"),
     icon = dirname .. "menu.png",
     vision_range = 2,
+    
+    buildcost = {
+        europeans_recruit = 1,
+        coin_copper = 1,
+        coin_silver = 1,
+        coin_gold = 1
+    },
 
     animation_directory = dirname,
     animations = {

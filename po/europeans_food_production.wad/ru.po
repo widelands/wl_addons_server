@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-16 03:07+0100\n"
+"POT-Creation-Date: 2024-03-18 03:07+0100\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -31,10 +31,10 @@ msgstr "дополнение производства продуктов для 
 #: addons/europeans_food_production.wad/addon:3
 msgid ""
 "Adds some additional wares, workers and buildings to Europeans tribes "
-"economy for more complexity."
+"economy for more complexity. When the addon europeans_food_production.wad is "
+"activated, the definitions for buildings, wares and workers from the base "
+"addon europeans_tribes.wad are overwritten and no longer available."
 msgstr ""
-"Добавляет дополнительные товары, работников и здания в экономику Европейцев "
-"для большей сложности."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/barleyfield/harvested/init.lua:8
@@ -751,45 +751,45 @@ msgstr "собирает ягоды"
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Rubber Farm"
-msgstr ""
+msgstr "Ферма гевеи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:95
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_normal/init.lua:105
 msgctxt "europeans_building"
 msgid "planting cotton"
-msgstr ""
+msgstr "сеет хлопок"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting rubber because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:106
 msgctxt "europeans_building"
 msgid "planting rubber"
-msgstr ""
+msgstr "садит гевею"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:128
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_normal/init.lua:125
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr ""
+msgstr "собирает хлопок"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting rubber because ...
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:139
 msgctxt "europeans_building"
 msgid "harvesting rubber"
-msgstr ""
+msgstr "собирает каучук"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_advanced/init.lua:164
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this vineyard has no cleared soil to plant his seeds."
-msgstr ""
+msgstr "Фермеру с этого виноградника не имеет свободной земли под засев."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Reed Yard"
-msgstr ""
+msgstr "Плантация"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_basic/init.lua:128
 msgctxt "europeans_building"
@@ -797,19 +797,21 @@ msgid ""
 "The gardener working at this reed yard has no cleared soil to plant his "
 "seeds."
 msgstr ""
+"Садовник, работающий на плантации тростника не имеет свободной земли под "
+"засев."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Cotton Farm"
-msgstr ""
+msgstr "хлопковая ферма"
 
 #: addons/europeans_food_production.wad/productionsites_agricultur/farm_medium_normal/init.lua:148
 msgctxt "europeans_building"
 msgid ""
 "The farmer working at this cotton farm has no cleared soil to plant his "
 "seeds."
-msgstr ""
+msgstr "Работник этой хлопковой фермы не имеет свободной земли под засев."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:8
@@ -1100,7 +1102,7 @@ msgstr "нанимает лесника"
 #: addons/europeans_food_production.wad/recruitementsites_food/recruitement_center_normal/init.lua:217
 msgctxt "europeans_building"
 msgid "recruiting gardener"
-msgstr ""
+msgstr "нанимает садовника"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
 #: addons/europeans_food_production.wad/recruitementsites_food/recruitement_center_advanced/init.lua:237
@@ -1298,6 +1300,8 @@ msgid ""
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
+"Вода используется садовниками, лесниками, на всех фермах, а также в пекарне "
+"и пивоварне. Рыбная ферма и овцеферма также нуждаются в водоснабжении."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:122
@@ -1359,7 +1363,7 @@ msgstr "Хлопок - это сырье, используемое для про
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:163
 msgctxt "europeans_ware"
 msgid "It is produced by normal farms."
-msgstr ""
+msgstr "Выращивается на обычных фермах."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:173
@@ -1384,7 +1388,7 @@ msgstr "Каучук необходим для изготовления усов
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:185
 msgctxt "europeans_ware"
 msgid "It is produced by advanced lumberjack or in rubber farm."
-msgstr ""
+msgstr "Его добывают опытные дровосеки или получают на каучуковой ферме."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:195
@@ -1394,13 +1398,15 @@ msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
 "or from sawmills."
 msgstr ""
+"Отходы древесины - это мусор, который образуется при сносе зданий или на "
+"лесопилках."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:197
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:197
 msgctxt "europeans_ware"
 msgid "It can be processed into charcoal in charcoal kilns."
-msgstr ""
+msgstr "Его можно переработать в древесный уголь в печи углежога."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:211
@@ -1500,7 +1506,7 @@ msgstr "Глина идет на кирпичи."
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:287
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from gardeners house."
-msgstr ""
+msgstr "Европейцы получают глину из дома садовника."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:298
@@ -1883,7 +1889,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:634
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester, the gardener, and the fish breeder."
-msgstr ""
+msgstr "Большие вёдра для лесника, садовника и рыбовода."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
@@ -1974,6 +1980,7 @@ msgid ""
 "The shovel is an essential tool. Therefore the forester, the gardener and "
 "the farmer use them."
 msgstr ""
+"Лопата - важнейший инструмент. Ей пользуются лесники, садовники и фермеры."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:712
@@ -2382,6 +2389,8 @@ msgstr "Высекает блоки гранита и мрамора из окр
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house and planting reed."
 msgstr ""
+"Делает глину для цементных печей или дома каменщика, а так же выращивает "
+"тростник."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1189
@@ -2390,6 +2399,8 @@ msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed and cotton."
 msgstr ""
+"Делает глину для цементных печей илм дома каменщика, а так же выращивает "
+"тростник и хлопок."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1198
@@ -2399,6 +2410,8 @@ msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed, cotton and "
 "rubber trees."
 msgstr ""
+"Делает глину для цементных печей илм дома каменщика, а так же выращивает "
+"тростник, хлопок и гевею."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Farmer
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1210
@@ -2718,6 +2731,9 @@ msgid ""
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
+"Когда садовники выкапывают землю, они оставляют в земле ямы, заполненные "
+"водой. Со временем они высыхают или могут быть использованы терраформером "
+"для получения нового грунта."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1805
@@ -3062,6 +3078,8 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed in the holes created."
 msgstr ""
+"Копает глину и, смешивая с водой, получает глиняное тесто. Затем растит "
+"тростник в образовавшихся ямах."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2251
@@ -3071,6 +3089,8 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed and cotton in the holes created."
 msgstr ""
+"Копает глину и, смешивая с водой, получает глиняное тесто. Затем растит "
+"тростник и хлопок в образовавшихся ямах."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2258
@@ -3080,6 +3100,8 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed, cotton and rubber trees in the holes created."
 msgstr ""
+"Копает глину и, смешивая с водой, получает глиняное тесто. Затем растит "
+"тростник,  и гевею в образовавшихся ямах."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Beekeeper's House
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2265
@@ -3906,109 +3928,109 @@ msgstr "Амстердам"
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3179
 msgctxt "shipname"
 msgid "Andorra la Vella"
-msgstr ""
+msgstr "Андорра-ла-Велья"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3180
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3180
 msgctxt "shipname"
 msgid "Antwerpen"
-msgstr ""
+msgstr "Антверпен"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3181
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3181
 msgctxt "shipname"
 msgid "Astrachan"
-msgstr ""
+msgstr "Астрахань"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3182
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3182
 msgctxt "shipname"
 msgid "Athen"
-msgstr ""
+msgstr "Афины"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3183
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3183
 msgctxt "shipname"
 msgid "Balaschicha"
-msgstr ""
+msgstr "Балашиха"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3184
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3184
 msgctxt "shipname"
 msgid "Barcelona"
-msgstr ""
+msgstr "Барселона"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3185
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3185
 msgctxt "shipname"
 msgid "Beograd"
-msgstr ""
+msgstr "Белград"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3186
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3186
 msgctxt "shipname"
 msgid "Berlin"
-msgstr ""
+msgstr "Берлин"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3187
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3187
 msgctxt "shipname"
 msgid "Bern"
-msgstr ""
+msgstr "Берн"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3188
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3188
 msgctxt "shipname"
 msgid "Birmingham"
-msgstr ""
+msgstr "Бирмингем"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3189
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3189
 msgctxt "shipname"
 msgid "Bradford"
-msgstr ""
+msgstr "Брэдфорд"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3190
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3190
 msgctxt "shipname"
 msgid "Bremen"
-msgstr ""
+msgstr "Бремен"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3191
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3191
 msgctxt "shipname"
 msgid "Bruxelles"
-msgstr ""
+msgstr "Брюссель"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3192
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3192
 msgctxt "shipname"
 msgid "București"
-msgstr ""
+msgstr "Бухарест"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3193
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3193
 msgctxt "shipname"
 msgid "Budapest"
-msgstr ""
+msgstr "Будапешт"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3194
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3194
 msgctxt "shipname"
 msgid "Charkiw"
-msgstr ""
+msgstr "Харьков"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3195
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3195
 msgctxt "shipname"
 msgid "Chișinău"
-msgstr ""
+msgstr "Кишинёв"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3196
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3196
 msgctxt "shipname"
 msgid "Den Haag"
-msgstr ""
+msgstr "Гаага"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3197
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3197
@@ -4020,589 +4042,589 @@ msgstr "Днепропетровск"
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3198
 msgctxt "shipname"
 msgid "Donezk"
-msgstr ""
+msgstr "Донецк"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3199
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3199
 msgctxt "shipname"
 msgid "Dortmund"
-msgstr ""
+msgstr "Дортмунд"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3200
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3200
 msgctxt "shipname"
 msgid "Dresden"
-msgstr ""
+msgstr "Дрезден"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3201
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3201
 msgctxt "shipname"
 msgid "Dublin"
-msgstr ""
+msgstr "Дублин"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3202
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3202
 msgctxt "shipname"
 msgid "Duisburg"
-msgstr ""
+msgstr "Дуйсбург"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3203
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3203
 msgctxt "shipname"
 msgid "Düsseldorf"
-msgstr ""
+msgstr "Дюссельдорф"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3204
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3204
 msgctxt "shipname"
 msgid "Edinburgh"
-msgstr ""
+msgstr "Эдинбург"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3205
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3205
 msgctxt "shipname"
 msgid "Essen"
-msgstr ""
+msgstr "Эссен"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3206
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3206
 msgctxt "shipname"
 msgid "Frankfurt am Main"
-msgstr ""
+msgstr "Франкфурт-на-Майне"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3207
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3207
 msgctxt "shipname"
 msgid "Genova"
-msgstr ""
+msgstr "Генуя"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3208
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3208
 msgctxt "shipname"
 msgid "Glasgow"
-msgstr ""
+msgstr "Глазго"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3209
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3209
 msgctxt "shipname"
 msgid "Göteborg"
-msgstr ""
+msgstr "Гетеборг"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3210
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3210
 msgctxt "shipname"
 msgid "Hamburg"
-msgstr ""
+msgstr "Гамбург"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3211
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3211
 msgctxt "shipname"
 msgid "Hannover"
-msgstr ""
+msgstr "Ганновер"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3212
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3212
 msgctxt "shipname"
 msgid "Helsinki"
-msgstr ""
+msgstr "Хельсинки"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3213
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3213
 msgctxt "shipname"
 msgid "Homel"
-msgstr ""
+msgstr "Гомель"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3214
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3214
 msgctxt "shipname"
 msgid "Ischewsk"
-msgstr ""
+msgstr "Ижевск"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3215
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3215
 msgctxt "shipname"
 msgid "Istanbul"
-msgstr ""
+msgstr "Стамбул"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3216
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3216
 msgctxt "shipname"
 msgid "Jaroslawl"
-msgstr ""
+msgstr "Ярославль"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3217
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3217
 msgctxt "shipname"
 msgid "Kasan"
-msgstr ""
+msgstr "Казань"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3218
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3218
 msgctxt "shipname"
 msgid "Kirow"
-msgstr ""
+msgstr "Киров"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3219
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3219
 msgctxt "shipname"
 msgid "København"
-msgstr ""
+msgstr "Копенгаген"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3220
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3220
 msgctxt "shipname"
 msgid "Köln"
-msgstr ""
+msgstr "Кёльн"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3221
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3221
 msgctxt "shipname"
 msgid "Kraków"
-msgstr ""
+msgstr "Краков"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3222
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3222
 msgctxt "shipname"
 msgid "Krasnodar"
-msgstr ""
+msgstr "Краснодар"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3223
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3223
 msgctxt "shipname"
 msgid "Krywyj Rih"
-msgstr ""
+msgstr "Кривой Рог"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3224
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3224
 msgctxt "shipname"
 msgid "Kyiv"
-msgstr ""
+msgstr "Киев"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3225
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3225
 msgctxt "shipname"
 msgid "Leeds"
-msgstr ""
+msgstr "Лидс"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3226
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3226
 msgctxt "shipname"
 msgid "Leipzig"
-msgstr ""
+msgstr "Лейпциг"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3227
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3227
 msgctxt "shipname"
 msgid "Lipezk"
-msgstr ""
+msgstr "Липецк"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3228
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3228
 msgctxt "shipname"
 msgid "Lisboa"
-msgstr ""
+msgstr "Лиссабон"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3229
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3229
 msgctxt "shipname"
 msgid "Ljubljana"
-msgstr ""
+msgstr "Любляна"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3230
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3230
 msgctxt "shipname"
 msgid "Łódź"
-msgstr ""
+msgstr "Лодзь"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3231
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3231
 msgctxt "shipname"
 msgid "London"
-msgstr ""
+msgstr "Лондон"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3232
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3232
 msgctxt "shipname"
 msgid "Luxemburg"
-msgstr ""
+msgstr "Люксембург"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3233
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3233
 msgctxt "shipname"
 msgid "Lwiw"
-msgstr ""
+msgstr "Львов"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3234
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3234
 msgctxt "shipname"
 msgid "Lyon"
-msgstr ""
+msgstr "Лион"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3235
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3235
 msgctxt "shipname"
 msgid "Machatschkala"
-msgstr ""
+msgstr "Махачкала"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3236
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3236
 msgctxt "shipname"
 msgid "Madrid"
-msgstr ""
+msgstr "Мадрид"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3237
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3237
 msgctxt "shipname"
 msgid "Málaga"
-msgstr ""
+msgstr "Малага"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3238
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3238
 msgctxt "shipname"
 msgid "Manchester"
-msgstr ""
+msgstr "Манчестер"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3239
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3239
 msgctxt "shipname"
 msgid "Marseille"
-msgstr ""
+msgstr "Марсель"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3240
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3240
 msgctxt "shipname"
 msgid "Milano"
-msgstr ""
+msgstr "Милан"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3241
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3241
 msgctxt "shipname"
 msgid "Minsk"
-msgstr ""
+msgstr "Минск"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3242
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3242
 msgctxt "shipname"
 msgid "Monaco"
-msgstr ""
+msgstr "Монако"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3243
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3243
 msgctxt "shipname"
 msgid "Moskwa"
-msgstr ""
+msgstr "Москва"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3244
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3244
 msgctxt "shipname"
 msgid "München"
-msgstr ""
+msgstr "Мюнхен"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3245
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3245
 msgctxt "shipname"
 msgid "Nabereschnyje Tschelny"
-msgstr ""
+msgstr "Набережные Челны"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3246
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3246
 msgctxt "shipname"
 msgid "Napoli"
-msgstr ""
+msgstr "Неаполь"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3247
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3247
 msgctxt "shipname"
 msgid "Nikosia"
-msgstr ""
+msgstr "Никосия"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3248
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3248
 msgctxt "shipname"
 msgid "Nischni Nowgorod"
-msgstr ""
+msgstr "Нижний Новгород"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3249
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3249
 msgctxt "shipname"
 msgid "Nürnberg"
-msgstr ""
+msgstr "Нюрнберг"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3250
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3250
 msgctxt "shipname"
 msgid "Odessa"
-msgstr ""
+msgstr "Одесса"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3251
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3251
 msgctxt "shipname"
 msgid "Orenburg"
-msgstr ""
+msgstr "Оренбург"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3252
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3252
 msgctxt "shipname"
 msgid "Oslo"
-msgstr ""
+msgstr "Осло"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3253
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3253
 msgctxt "shipname"
 msgid "Palermo"
-msgstr ""
+msgstr "Палермо"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3254
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3254
 msgctxt "shipname"
 msgid "Paris"
-msgstr ""
+msgstr "Париж"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3255
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3255
 msgctxt "shipname"
 msgid "Pensa"
-msgstr ""
+msgstr "Пенса"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3256
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3256
 msgctxt "shipname"
 msgid "Perm"
-msgstr ""
+msgstr "Пермь"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3257
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3257
 msgctxt "shipname"
 msgid "Podgorica"
-msgstr ""
+msgstr "Подгорица"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3258
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3258
 msgctxt "shipname"
 msgid "Poznań"
-msgstr ""
+msgstr "Познань"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3259
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3259
 msgctxt "shipname"
 msgid "Praha"
-msgstr ""
+msgstr "Прага"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3260
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3260
 msgctxt "shipname"
 msgid "Prishtina"
-msgstr ""
+msgstr "Приштина"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3261
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3261
 msgctxt "shipname"
 msgid "Reykjavík"
-msgstr ""
+msgstr "Рейкьявик"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3262
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3262
 msgctxt "shipname"
 msgid "Rīga"
-msgstr ""
+msgstr "Рига"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3263
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3263
 msgctxt "shipname"
 msgid "Rjasan"
-msgstr ""
+msgstr "Рязань"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3264
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3264
 msgctxt "shipname"
 msgid "Roma"
-msgstr ""
+msgstr "Рим"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3265
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3265
 msgctxt "shipname"
 msgid "Rostow-na-Donu"
-msgstr ""
+msgstr "Ростов-на-Дону"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3266
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3266
 msgctxt "shipname"
 msgid "Rotterdam"
-msgstr ""
+msgstr "Роттердам"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3267
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3267
 msgctxt "shipname"
 msgid "San Marino"
-msgstr ""
+msgstr "Сан-Марино"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3268
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3268
 msgctxt "shipname"
 msgid "Samara"
-msgstr ""
+msgstr "Самара"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3269
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3269
 msgctxt "shipname"
 msgid "Sankt Petersburg"
-msgstr ""
+msgstr "Санкт-Петербург"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3270
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3270
 msgctxt "shipname"
 msgid "Saporischschja"
-msgstr ""
+msgstr "Запорожье"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3271
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3271
 msgctxt "shipname"
 msgid "Sarajevo"
-msgstr ""
+msgstr "Сараево"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3272
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3272
 msgctxt "shipname"
 msgid "Saratow"
-msgstr ""
+msgstr "Саратов"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3273
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3273
 msgctxt "shipname"
 msgid "Sevilla"
-msgstr ""
+msgstr "Севилья"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3274
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3274
 msgctxt "shipname"
 msgid "Sheffield"
-msgstr ""
+msgstr "Шеффилд"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3275
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3275
 msgctxt "shipname"
 msgid "Skopje"
-msgstr ""
+msgstr "Скопье"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3276
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3276
 msgctxt "shipname"
 msgid "Sofia"
-msgstr ""
+msgstr "София"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3277
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3277
 msgctxt "shipname"
 msgid "Stockholm"
-msgstr ""
+msgstr "Стокгольм"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3278
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3278
 msgctxt "shipname"
 msgid "Stuttgart"
-msgstr ""
+msgstr "Штутгарт"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3279
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3279
 msgctxt "shipname"
 msgid "Tallinn"
-msgstr ""
+msgstr "Таллин"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3280
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3280
 msgctxt "shipname"
 msgid "Tirana"
-msgstr ""
+msgstr "Тирана"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3281
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3281
 msgctxt "shipname"
 msgid "Toljatti"
-msgstr ""
+msgstr "Тольятти"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3282
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3282
 msgctxt "shipname"
 msgid "Torino"
-msgstr ""
+msgstr "Турин"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3283
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3283
 msgctxt "shipname"
 msgid "Ufa"
-msgstr ""
+msgstr "Уфа"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3284
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3284
 msgctxt "shipname"
 msgid "Uljanowsk"
-msgstr ""
+msgstr "Ульяновск"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3285
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3285
 msgctxt "shipname"
 msgid "Vaduz"
-msgstr ""
+msgstr "Вадуц"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3286
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3286
 msgctxt "shipname"
 msgid "Valencia"
-msgstr ""
+msgstr "Валенсия"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3287
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3287
 msgctxt "shipname"
 msgid "Valletta"
-msgstr ""
+msgstr "Валлетта"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3288
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3288
 msgctxt "shipname"
 msgid "Vilnius"
-msgstr ""
+msgstr "Вильнюс"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3289
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3289
 msgctxt "shipname"
 msgid "Warszawa"
-msgstr ""
+msgstr "Варшава"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3290
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3290
 msgctxt "shipname"
 msgid "Wien"
-msgstr ""
+msgstr "Вена"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3291
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3291
 msgctxt "shipname"
 msgid "Wolgograd"
-msgstr ""
+msgstr "Волгоград"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3292
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3292
 msgctxt "shipname"
 msgid "Woronesch"
-msgstr ""
+msgstr "Воронеж"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3293
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3293
 msgctxt "shipname"
 msgid "Wrocław"
-msgstr ""
+msgstr "Вроцлав"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3294
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3294
 msgctxt "shipname"
 msgid "Zagreb"
-msgstr ""
+msgstr "Загреб"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3295
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3295
 msgctxt "shipname"
 msgid "Zaragoza"
-msgstr ""
+msgstr "Сарагоса"
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:3299
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3299
@@ -5168,7 +5190,7 @@ msgstr "Мясо"
 #: addons/europeans_food_production.wad/tribes/wares/milking_tongs/init.lua:8
 msgctxt "ware"
 msgid "Milking Tongs"
-msgstr ""
+msgstr "Доильные щипцы"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_production.wad/tribes/wares/wheat/init.lua:8
@@ -5247,3 +5269,10 @@ msgstr "Обычный Фермер"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Торговец"
+
+#~ msgid ""
+#~ "Adds some additional wares, workers and buildings to Europeans tribes "
+#~ "economy for more complexity."
+#~ msgstr ""
+#~ "Добавляет дополнительные товары, работников и здания в экономику "
+#~ "Европейцев для большей сложности."
