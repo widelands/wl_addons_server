@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 03:07+0100\n"
+"POT-Creation-Date: 2024-03-19 03:07+0100\n"
 "PO-Revision-Date: 2024-01-29 07:14+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -92,163 +92,165 @@ msgstr "Другие находки на этой карте"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:79
 msgid "Analysing %1$d map fields"
-msgstr ""
+msgstr "Анализ %1$d полей карты"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:103
 msgid "Analysing %1$d map fields for player %2$s"
-msgstr ""
+msgstr "Анализ %1$d полей карты для игрока %2$s"
 
 #. TRANSLATORS: Placeholder is a number
 #: addons/editor_analyse_map.wad/callbacks.lua:105
 msgid "Vicinity of Player %1$d"
-msgstr ""
+msgstr "Окрестности игрока %1$d"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:111
 msgid "Findings up to %1$d Fields around this players starting position:"
-msgstr ""
+msgstr "Найдено %1$d полей вокруг стартовой позиции этого игрока:"
 
 #: addons/editor_analyse_map.wad/callbacks.lua:121
 msgctxt "statistic_for"
 msgid "Statistic for a player"
 msgid_plural "Statistic for players"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Статистика игрока"
+msgstr[1] "Статистика игроков"
+msgstr[2] "Статистика игроков"
+msgstr[3] "Статистика игроков"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:13
 msgid "%1$d/%2$d"
-msgstr ""
+msgstr "%1$d/%2$d"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:36
 msgid "%1$d granite or:"
-msgstr ""
+msgstr "%1$d гранит или:"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:37
 msgid "ca. %1$d granite and ca. %2$d marble"
-msgstr ""
+msgstr "ка. %1$d гранита и ка. %2$d мрамора"
 
 #. TRANSLATORS: A value with percent sign like: (20%)
 #: addons/editor_analyse_map.wad/helper_functions.lua:72
 msgid "(%1$d%%)"
-msgstr ""
+msgstr "(%1$d%%)"
 
 #. TRANSLATORS: First placeholder is a number or string, second placeholder is the prior created percent string
 #. TRANSLATORS: Result is like: "2 (15%)"
 #: addons/editor_analyse_map.wad/helper_functions.lua:81
 msgid "%1$s %2$s"
-msgstr ""
+msgstr "%1$s %2$s"
 
 #. TRANSLATORS: Table header for of player names
 #: addons/editor_analyse_map.wad/helper_functions.lua:126
 msgid "Name"
-msgstr ""
+msgstr "Имя"
 
 #. TRANSLATORS: Table header for players start field
 #: addons/editor_analyse_map.wad/helper_functions.lua:128
 msgid "Position"
-msgstr ""
+msgstr "Позиция"
 
 #. TRANSLATORS: Table header for resource names
 #: addons/editor_analyse_map.wad/helper_functions.lua:130
 msgid "Found"
-msgstr ""
+msgstr "Найдено"
 
 #. TRANSLATORS: Table header for resource amount
 #: addons/editor_analyse_map.wad/helper_functions.lua:132
 msgid "Amount"
-msgstr ""
+msgstr "Количество"
 
 #. TRANSLATORS: Table header for fields like "15/30"
 #: addons/editor_analyse_map.wad/helper_functions.lua:134
 msgid "Around"
-msgstr ""
+msgstr "Около"
 
 #. TRANSLATORS: Table header for values like "30 Fields"
 #: addons/editor_analyse_map.wad/helper_functions.lua:136
 msgid "Distance"
-msgstr ""
+msgstr "Расстояние"
 
 #: addons/editor_analyse_map.wad/helper_functions.lua:166
 msgid "%1$d Fields"
-msgstr ""
+msgstr "%1$d Полей"
 
 #: addons/editor_analyse_map.wad/init.lua:8
 msgid "Analyse the map"
-msgstr ""
+msgstr "Анализировать карту"
 
 #: addons/editor_analyse_map.wad/init.lua:9
 msgid "Compare player positions with a few clicks or analyse the whole map."
 msgstr ""
+"Сравните позиции игроков несколькими щелчками мыши или проанализируйте всю "
+"карту целиком."
 
 #: addons/editor_analyse_map.wad/windows.lua:71
 msgid "What should be investigated?"
-msgstr ""
+msgstr "Что исследовать?"
 
 #: addons/editor_analyse_map.wad/windows.lua:92
 msgid "The whole map"
-msgstr ""
+msgstr "Всю карту"
 
 #: addons/editor_analyse_map.wad/windows.lua:100
 msgid "Information about players"
-msgstr ""
+msgstr "Информацию об игроках"
 
 #: addons/editor_analyse_map.wad/windows.lua:174
 msgid "General Options"
-msgstr ""
+msgstr "Основные настройки"
 
 #: addons/editor_analyse_map.wad/windows.lua:187
 msgid "Show building plots"
-msgstr ""
+msgstr "Показывать места для строительства"
 
 #: addons/editor_analyse_map.wad/windows.lua:194
 msgid "Show Percent"
-msgstr ""
+msgstr "Показать процент"
 
 #: addons/editor_analyse_map.wad/windows.lua:195
 msgid "Show the percentage of all mineable resources"
-msgstr ""
+msgstr "Показать долю всех полезных ископаемых"
 
 #: addons/editor_analyse_map.wad/windows.lua:202
 msgid "Calculate Marble"
-msgstr ""
+msgstr "Рассчитать мрамор"
 
 #: addons/editor_analyse_map.wad/windows.lua:203
 msgid "Include the granite/marmor ratio for rocks"
-msgstr ""
+msgstr "Указать соотношение гранита и мрамора для горных пород"
 
 #: addons/editor_analyse_map.wad/windows.lua:218
 msgid "Show memory usage"
-msgstr ""
+msgstr "Показать использование памяти"
 
 #: addons/editor_analyse_map.wad/windows.lua:219
 msgid "Show memory usage, informational only when investigating the whole map"
-msgstr ""
+msgstr "Показывать использование памяти, только ри исследовании карты целиком"
 
 #: addons/editor_analyse_map.wad/windows.lua:233
 msgid "Investigate the whole map"
-msgstr ""
+msgstr "Исследовать всю карту"
 
 #: addons/editor_analyse_map.wad/windows.lua:240
 msgid "Investigate the checked players"
-msgstr ""
+msgstr "Исследовать отмеченых игроков"
 
 #: addons/editor_analyse_map.wad/windows.lua:285
 msgid "OK"
-msgstr ""
+msgstr "ОК"
 
 #: addons/editor_analyse_map.wad/windows.lua:298
 msgid "Analysing"
-msgstr ""
+msgstr "Идёт анализ"
 
 #: screenshots/editor_analyse_map.wad/descriptions:3
 msgid "Analyse a map, Options"
-msgstr ""
+msgstr "Анализ карты, Настройки"
 
 #: screenshots/editor_analyse_map.wad/descriptions:4
 msgid "Result for analysing Players"
-msgstr ""
+msgstr "Результат анализа игроков"
 
 #: screenshots/editor_analyse_map.wad/descriptions:5
 msgid "Result when investigating a whole map"
-msgstr ""
+msgstr "Результат анализа карты целиком"
