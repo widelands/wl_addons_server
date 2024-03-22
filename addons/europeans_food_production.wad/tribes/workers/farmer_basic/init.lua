@@ -28,6 +28,16 @@ wl.Descriptions():new_worker_type {
         check_fields = {
             "findobject=attrib:field radius:4"
         },
+        check_flower = {
+            "findobject=attrib:flowering radius:4",
+        },
+        bees = {
+            "findobject=attrib:flowering radius:4",
+            "walk=object",
+            "animate=beeswarm duration:6s",
+            "createware=honey",
+            "return"
+        },
         plant_barley = {
             "findspace=size:any radius:4 space",
             "walk=coords",
@@ -217,22 +227,6 @@ wl.Descriptions():new_worker_type {
         },
     },
     spritesheets = {
-        walk = {
-            fps = 10,
-            frames = 10,
-            rows = 4,
-            columns = 3,
-            directional = true,
-            hotspot = { 14, 18 }
-        },
-        walkload = {
-            fps = 10,
-            frames = 10,
-            rows = 4,
-            columns = 3,
-            directional = true,
-            hotspot = { 12, 19 }
-        },
         plant = {
             fps = 10,
             frames = 20,
@@ -253,7 +247,31 @@ wl.Descriptions():new_worker_type {
             rows = 5,
             columns = 4,
             hotspot = { 8, 19 }
-        }
+        },
+        beeswarm = {
+            basename = "beeswarm",
+            fps = 50,
+            frames = 100,
+            columns = 5,
+            rows = 20,
+            hotspot = {26, 31}
+        },
+        walk = {
+            fps = 10,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            directional = true,
+            hotspot = { 14, 18 }
+        },
+        walkload = {
+            fps = 10,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            directional = true,
+            hotspot = { 12, 19 }
+        },
     }
 }
 

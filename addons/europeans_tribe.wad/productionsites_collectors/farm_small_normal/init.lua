@@ -50,13 +50,16 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=planting",
+                "sleep=duration:15s",
+                "call=planting",
+                "sleep=duration:15s",
                 "call=harvesting",
                 "return=skipped"
             }
         },
         planting = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting because ...
-            descname = pgettext("europeans_building", "planting"),
+            descname = pgettext("europeans_building", "planting reed and cotton"),
             actions = {
                 "sleep=duration:2s",
                 "callworker=check_dig_space",
@@ -77,8 +80,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:2s",
                 "call=digging_pond",
                 "sleep=duration:2s",
-                "call=filling_pond",
-                "return=skipped"
+                "call=filling_pond"
             }
         },
         digging_clay = {
@@ -138,7 +140,6 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_fields",
                 "call=harvesting_reed",
                 "sleep=duration:2s",
-                "callworker=check_fields",
                 "call=harvesting_cotton"
             }
         },

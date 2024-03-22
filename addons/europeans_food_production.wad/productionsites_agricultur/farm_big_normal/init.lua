@@ -51,6 +51,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=planting",
+                "sleep=duration:10s",
+                "call=making_honey",
+                "sleep=duration:20s",
                 "call=harvesting",
                 "return=skipped"
             }
@@ -69,6 +72,15 @@ wl.Descriptions():new_productionsite_type {
                 "call=plant_barley",
                 "call=plant_rye",
                 "call=plant_wheat",
+            }
+        },
+        making_honey = {
+            -- TRANSLATORS: Completed/Skipped/Did not start making honey because ...
+            descname = pgettext("europeans_building", "making honey"),
+            actions = {
+                "sleep=duration:2s",
+                "callworker=check_flower",
+                "callworker=bees",
             }
         },
         harvesting = {

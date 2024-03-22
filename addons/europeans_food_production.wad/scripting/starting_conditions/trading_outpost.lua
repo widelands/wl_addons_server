@@ -8,7 +8,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _"Trading Outpost (Food)",
+    descname = _"Trading Outpost (Food Addon)",
     -- TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
     tooltip = _"This starting condition contains a market as an additional building, where some wares can be bought for gold, quartz and diamonds. Disabled seafaring because of lack of compatibility with terraforming (diking of water bodies).",
     func =  function(player, shared_in_start)

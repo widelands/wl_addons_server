@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 03:07+0100\n"
+"POT-Creation-Date: 2024-03-22 03:08+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Davide Nicolini <davide97@gmail.com>, 2021\n"
 "Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
@@ -725,79 +725,81 @@ msgid "working"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:52
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:86
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:59
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:55
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:62
 msgctxt "europeans_building"
-msgid "planting"
+msgid "planting reed and cotton"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:67
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:101
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:74
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:70
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:104
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:77
 msgctxt "europeans_building"
 msgid "making a pond with water"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:79
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:113
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:86
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:81
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:115
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:88
 msgctxt "europeans_building"
 msgid "digging clay"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:91
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:125
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:98
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:93
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:127
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:100
 msgctxt "europeans_building"
 msgid "digging a dry pond"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:99
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:133
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:106
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:105
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:135
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:108
 msgctxt "europeans_building"
 msgid "filling pond with water"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:110
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:117
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:116
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:119
 msgctxt "europeans_building"
 msgid "planting cotton"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:119
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:144
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:126
+#. TRANSLATORS: Completed/Skipped/Did not start planting because ...
+#. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:125
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:89
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:146
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:128
 msgctxt "europeans_building"
 msgid "planting reed"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:128
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:153
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:135
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:134
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:155
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:137
 msgctxt "europeans_building"
 msgid "harvesting"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:140
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:147
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:145
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:148
 msgctxt "europeans_building"
 msgid "harvesting cotton"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:148
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:165
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:155
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:153
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:164
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:156
 msgctxt "europeans_building"
 msgid "harvesting reed"
 msgstr ""
@@ -821,7 +823,8 @@ msgid "Advanced Forester’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:46
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:49
+#: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_advanced/init.lua:64
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_basic/init.lua:80
 #: addons/europeans_tribe.wad/productionsites_collectors/foresters_house_normal/init.lua:56
 msgctxt "europeans_building"
@@ -2088,30 +2091,30 @@ msgstr ""
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:263
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:276
 #: addons/europeans_tribe.wad/productionsites_trading/market_small/init.lua:289
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:64
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:87
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:98
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:109
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:120
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:131
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:142
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:153
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:164
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:175
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:186
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:197
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:208
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:219
-#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:230
-#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:72
-#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:89
-#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:100
-#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:111
-#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:122
-#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:133
-#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:144
-#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:155
-#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:166
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:70
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:93
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:104
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:115
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:126
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:137
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:148
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:159
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:170
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:181
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:192
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:203
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:214
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:225
+#: addons/europeans_tribe.wad/productionsites_trading/store_big/init.lua:236
+#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:60
+#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:77
+#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:88
+#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:99
+#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:110
+#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:121
+#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:132
+#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:143
+#: addons/europeans_tribe.wad/productionsites_trading/store_small/init.lua:154
 #: addons/europeans_tribe.wad/productionsites_trading/trading_post/init.lua:47
 #: addons/europeans_tribe.wad/productionsites_trading/trading_post/init.lua:60
 #: addons/europeans_tribe.wad/productionsites_trading/trading_post/init.lua:73

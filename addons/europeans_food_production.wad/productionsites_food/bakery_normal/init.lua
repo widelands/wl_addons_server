@@ -72,8 +72,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
             descname = pgettext("europeans_building", "Baking bread"),
             actions = {
-                "return=skipped unless economy needs bread or workers need experience",
                 "return=skipped when economy needs water and not economy needs bread",
+                "return=skipped when economy needs flour and not economy needs bread",
+                "return=skipped when economy needs honey_bread and not economy needs bread",
+                "return=skipped when economy needs biscuit and not economy needs bread",
                 "consume=water:2 flour:2",
                 "animate=working duration:2m",
                 "produce=bread:2"
@@ -83,8 +85,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
             descname = pgettext("europeans_building", "Baking honey bread"),
             actions = {
-                "return=skipped unless economy needs honey_bread or workers need experience",
                 "return=skipped when economy needs water and not economy needs honey_bread",
+                "return=skipped when economy needs flour and not economy needs honey_bread",
+                "return=skipped when economy needs honey and not economy needs honey_bread",
+                "return=skipped when economy needs bread and not economy needs honey_bread",
+                "return=skipped when economy needs biscuit and not economy needs honey_bread",
                 "return=skipped unless site has honey",
                 "consume=water:2 flour:2 honey",
                 "animate=working duration:2m",

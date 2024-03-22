@@ -13,6 +13,9 @@ wl.Descriptions():new_worker_type {
         check_dig_space = {
             "findspace=size:any radius:8 avoid:field",
         },
+        check_terraform_space = {
+            "findspace=size:any radius:8 avoid:field terraform:amazons",
+        },
         check_pond_dry = {
             "findobject=attrib:pond_dry radius:8",
         },
@@ -24,6 +27,13 @@ wl.Descriptions():new_worker_type {
         },
         dig = {
             "findspace=size:any radius:8 avoid:field",
+            "walk=coords",
+            "animate=dig duration:1s",
+            "plant=attrib:pond_dry",
+            "return"
+        },
+        dig_terraform = {
+            "findspace=size:any radius:8 avoid:field terraform:amazons",
             "walk=coords",
             "animate=dig duration:1s",
             "plant=attrib:pond_dry",
@@ -41,9 +51,9 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:pond_dry radius:8",
             "walk=object",
             "animate=water duration:1s",
-            "terraform=amazons",
             "callobject=fill_pond",
             "animate=water duration:1s",
+            "terraform=amazons",
             "return"
         },
         plant_cotton = {
