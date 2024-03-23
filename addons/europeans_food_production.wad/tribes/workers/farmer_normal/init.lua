@@ -19,6 +19,16 @@ wl.Descriptions():new_worker_type {
         check_fields = {
             "findobject=attrib:field radius:6"
         },
+        check_flower = {
+            "findobject=attrib:flowering radius:6",
+        },
+        bees = {
+            "findobject=attrib:flowering radius:6",
+            "walk=object",
+            "animate=beeswarm duration:5s",
+            "createware=honey",
+            "return"
+        },
         plant_barley = {
             "findspace=size:any radius:6 space",
             "walk=coords",
@@ -228,6 +238,14 @@ wl.Descriptions():new_worker_type {
             rows = 5,
             columns = 4,
             hotspot = { 10, 34 }
+        },
+        beeswarm = {
+            basename = "beeswarm",
+            fps = 50,
+            frames = 100,
+            columns = 5,
+            rows = 20,
+            hotspot = {26, 31}
         },
         walk = {
             fps = 10,

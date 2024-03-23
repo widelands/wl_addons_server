@@ -758,7 +758,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
-                    purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
+                    purpose = pgettext("europeans_worker", "Carries items along your roads with their hands. Only used for busy roads.")
                 }
             },
             {
@@ -767,7 +767,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
-                    purpose = pgettext("europeans_worker", "Carries items along your roads with baskets.")
+                    purpose = pgettext("europeans_worker", "Carries items along your roads with baskets. Only used for busy roads.")
                 }
             },
             {
@@ -2630,7 +2630,7 @@ wl.Descriptions():new_tribe {
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",
       industry_supporter = "europeans_smelting_works_basic",
-      industry_alternative = "europeans_smelting_works_basic",
+      industry_alternative = "europeans_charcoal_kiln_basic",
       terraforming = "europeans_terraformers_house_basic",
    },
 }

@@ -8,7 +8,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 local init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Discovery (Human Player)",
+    descname = _ "Discovery (Food Addon)",
     -- TRANSLATORS: This is the tooltip for the "Discovery" starting condition
     tooltip = _"Start the game with three ships on the ocean and only a handful of supplies. Disabled terraforming (diking of water bodies) because of lack of compatibility with seafaring.",
     map_tags = {"seafaring"},

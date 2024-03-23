@@ -65,8 +65,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
             descname = pgettext("europeans_building", "brewing beer"),
             actions = {
-                "return=skipped unless economy needs beer or workers need experience",
                 "return=skipped when economy needs water and not economy needs beer",
+                "return=skipped when economy needs barley and not economy needs beer",
+                "return=skipped when economy needs mead and not economy needs beer",
+                "return=skipped when economy needs beer_strong and not economy needs beer",
                 "consume=water barley",
                 "animate=working duration:3m",
                 "produce=beer"

@@ -35,13 +35,31 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "sleep=duration:10s",
+                "sleep=duration:2s",
                 "callworker=check_space",
                 "call=plant_trees",
+                "sleep=duration:10s",
+                "callworker=check_terraform_space",
+                "call=plant_trees_terraform",
                 "return=skipped"
             }
         },
         plant_trees = {
+            -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
+            descname = pgettext("europeans_building", "planting trees"),
+            actions = {
+                "return=skipped unless site has water:4",
+                "consume=water",
+                "callworker=plant_rubber_tree",
+                "consume=water",
+                "callworker=plant_tree",
+                "consume=water",
+                "callworker=plant_rubber_tree",
+                "consume=water",
+                "callworker=plant_tree"
+            }
+        },
+        plant_trees_terraform = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
             descname = pgettext("europeans_building", "planting trees"),
             actions = {

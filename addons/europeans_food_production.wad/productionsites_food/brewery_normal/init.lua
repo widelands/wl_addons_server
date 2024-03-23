@@ -62,10 +62,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing beer because ...
             descname = pgettext("europeans_building", "brewing beer"),
             actions = {
-                "return=skipped unless economy needs beer or workers need experience",
                 "return=skipped when economy needs water and not economy needs beer",
-                "return=skipped when site has honey and economy needs mead and not economy needs beer",
-                "return=skipped when site has barley and economy needs beer_strong and not economy needs beer",
+                "return=skipped when economy needs barley and not economy needs beer",
+                "return=skipped when economy needs mead and not economy needs beer",
+                "return=skipped when economy needs beer_strong and not economy needs beer",
                 "consume=water barley",
                 "animate=working duration:2m",
                 "produce=beer"
@@ -75,10 +75,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
             descname = pgettext("europeans_building", "brewing mead"),
             actions = {
-                "return=skipped unless economy needs mead or workers need experience",
                 "return=skipped when economy needs water and not economy needs mead",
-                "return=skipped when site has barley and economy needs beer and not economy needs mead",
-                "return=skipped when site has barley and economy needs beer_strong and not economy needs mead",
+                "return=skipped when economy needs barley and not economy needs mead",
+                "return=skipped when economy needs honey and not economy needs mead",
+                "return=skipped when economy needs beer and not economy needs mead",
+                "return=skipped when economy needs beer_strong and not economy needs mead",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
                 "animate=working duration:2m",

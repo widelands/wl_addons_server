@@ -9,26 +9,14 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
-      idle = {
-         frames = 1,
-         rows = 1,
-         columns = 1,
-         hotspot = { 60, 78 }
-      },
-      working = {
-         basename = "idle",
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 60, 78 }
-      },
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 60, 78 }
-      },
+    animations = {
+        idle = {
+            hotspot = { 63, 68 }
+        },
+        working = {
+            basename = "idle",
+            hotspot = { 63, 68 },
+        },
     },
     
     size = "medium",

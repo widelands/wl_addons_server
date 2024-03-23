@@ -8,7 +8,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 local init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Headquarters (with terraforming)",
+    descname = _ "Headquarters (with terraforming and food addon)",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
     tooltip = _"Start the game with your headquarters only. Disabled seafaring because of lack of compatibility with terraforming (diking of water bodies).",
     func =  function(player, shared_in_start)

@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Yuriy Sokolov <lention@mail.ru>, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 03:07+0100\n"
+"POT-Creation-Date: 2024-03-19 03:07+0100\n"
 "PO-Revision-Date: 2024-02-27 16:25+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -25,58 +29,63 @@ msgid ""
 "Add immovable markers evenly on the map to have some points of orientation. "
 "Uses Snowman for position 0,0 and Column for other positions."
 msgstr ""
+"Равномерно распределяет по карте знаки (статичные объекты), чтобы получить "
+"несколько точек ориентации. Использует Снеговика для позиции 0,0 и колонны "
+"для других позиций."
 
 #: addons/editor_add_markers.wad/addon:9
 msgid "Editor: Place markers evenly on the map"
-msgstr ""
+msgstr "Редактор: Равномерно размещает знаки на карте"
 
 #: addons/editor_add_markers.wad/init.lua:8
 #: addons/editor_add_markers.wad/settings_window.lua:57
 #: addons/editor_add_markers.wad/settings_window.lua:140
 msgid "Place markers"
-msgstr ""
+msgstr "Установить знаки"
 
 #: addons/editor_add_markers.wad/init.lua:9
 msgid "Place markers evenly on the map to get some points of orientation."
 msgstr ""
+"Равномерно размещает знаки на карте, чтобы получить несколько точек "
+"ориентации"
 
 #: addons/editor_add_markers.wad/settings_window.lua:17
 msgid "%1$d Fields"
-msgstr ""
+msgstr "%1$d Полей"
 
 #: addons/editor_add_markers.wad/settings_window.lua:73
 msgid "Choose the distance between markers:"
-msgstr ""
+msgstr "Выберите расстояние между знаками:"
 
 #: addons/editor_add_markers.wad/settings_window.lua:85
 msgid "Horizontally"
-msgstr ""
+msgstr "По горизонтали"
 
 #: addons/editor_add_markers.wad/settings_window.lua:99
 #: addons/editor_add_markers.wad/settings_window.lua:129
 msgid "Choose a distance"
-msgstr ""
+msgstr "Выберите расстояние"
 
 #: addons/editor_add_markers.wad/settings_window.lua:115
 msgid "Vertically"
-msgstr ""
+msgstr "По вертикали"
 
 #: addons/editor_add_markers.wad/settings_window.lua:147
 msgid "Undo"
-msgstr ""
+msgstr "Отменить"
 
 #: addons/editor_add_markers.wad/settings_window.lua:154
 msgid "Center position 0,0"
-msgstr ""
+msgstr "Выбрать позицию 0,0"
 
 #: addons/editor_add_markers.wad/settings_window.lua:162
 msgid "Remove all markers"
-msgstr ""
+msgstr "Убрать все знаки"
 
 #: addons/editor_add_markers.wad/settings_window.lua:171
 msgid "Hide"
-msgstr ""
+msgstr "Скрыть"
 
 #: addons/editor_add_markers.wad/settings_window.lua:172
 msgid "Hide window to keep the settings"
-msgstr ""
+msgstr "Скрыть окно, чтобы сохранить настройки"
