@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-22 03:08+0100\n"
+"POT-Creation-Date: 2024-03-23 03:08+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -733,10 +733,9 @@ msgstr "работает"
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:55
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:62
-#, fuzzy
 msgctxt "europeans_building"
 msgid "planting reed and cotton"
-msgstr "сеет хлопок"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:70
@@ -6151,7 +6150,3 @@ msgstr "Базовый работник"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Обычный работник"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting"
-#~ msgstr "садит"

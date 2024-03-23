@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-22 03:07+0100\n"
+"POT-Creation-Date: 2024-03-23 03:08+0100\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -1104,10 +1104,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_trading_food/market_honey/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Honey Market"
-msgstr "Пряник"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:8
@@ -1284,9 +1283,8 @@ msgstr "Обычный отдел кадров"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_human.lua:11
-#, fuzzy
 msgid "Discovery (Food Addon)"
-msgstr "Европейцы (продуктовое дополнение)"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_human.lua:13
@@ -1301,9 +1299,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_seafaring.lua:11
-#, fuzzy
 msgid "Headquarters (with seafaring and food addon)"
-msgstr "Штаб (с мореплаванием)"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_seafaring.lua:13
@@ -1316,9 +1313,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_terraforming.lua:11
-#, fuzzy
 msgid "Headquarters (with terraforming and food addon)"
-msgstr "Штаб (с терраформированием)"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_terraforming.lua:13
@@ -1331,9 +1327,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:11
-#, fuzzy
 msgid "Trading Outpost (Food Addon)"
-msgstr "Торговая застава (продукты)"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:13
@@ -5160,25 +5155,22 @@ msgstr[3] "%1%(+%2%) солдат"
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:408
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Honey is produced by bees belonging to a farm. It is used to brew mead."
-msgstr "Мед забирается пасечником из ульев. Из него варят медовуху."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:937
-#, fuzzy
 msgctxt "europeans_worker"
 msgid ""
 "Carries items along your roads with their hands. Only used for busy roads."
-msgstr "Носят товары по дорогам в руках."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:946
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets. Only used for busy roads."
-msgstr "Переносят товары в корзинах по вашим дорогам."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1434
@@ -5190,50 +5182,43 @@ msgstr "Переносят товары в корзинах по вашим до
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1602
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1630
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1658
-#, fuzzy
 msgid "This berry bush is flowering. Honey can be produced from it."
-msgstr "Этот ягодный кустарник зацвел. Пасечник может получить с него мёд."
+msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1798
-#, fuzzy
 msgid "This reed field is flowering. Honey can be produced from it."
-msgstr "Тростник на этом поле зацвел. Пасечник может получить с него мёд."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Honey Market
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2125
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale honey to other allied tribes."
-msgstr "Здание рынка для продажи продуктов другим союзным племенам."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Fish/Meat Market
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2132
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale fish and meat to other allied tribes."
-msgstr "Здание рынка для продажи продуктов другим союзным племенам."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Bread Market
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2146
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale bread to other allied tribes."
-msgstr "Здание рынка для продажи товаров другим союзным племенам."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Beer Market
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2153
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale beer to other allied tribes."
-msgstr "Здание рынка для продажи товаров другим союзным племенам."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Mead/Wine Market
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2160
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale mead and wine to other allied tribes."
-msgstr "Здание рынка для продажи товаров другим союзным племенам."
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_food_production.wad/tribes/wares/barley/init.lua:8
@@ -5408,6 +5393,3 @@ msgstr "Обычный Фермер"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Торговец"
-
-#~ msgid "Discovery (Human Player)"
-#~ msgstr "Открытие (Игрок-человек)"
