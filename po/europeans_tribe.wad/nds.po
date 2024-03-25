@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-23 03:08+0100\n"
+"POT-Creation-Date: 2024-03-25 03:08+0100\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -707,9 +707,6 @@ msgstr "Grote Buurdereetje"
 #: addons/europeans_tribe.wad/productionsites_mining/well_level_4/init.lua:52
 #: addons/europeans_tribe.wad/productionsites_mining/well_level_5/init.lua:54
 #: addons/europeans_tribe.wad/productionsites_mining/well_level_6/init.lua:34
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:55
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:83
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:69
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:53
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_basic/init.lua:85
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_normal/init.lua:71
@@ -2241,149 +2238,6 @@ msgstr "Lüttes Warenhuus"
 msgctxt "europeans_building"
 msgid "Trading Post"
 msgstr "Hannelsposten"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Recruitement Center"
-msgstr "Grote Anhüreree"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:90
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:116
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:102
-msgctxt "europeans_building"
-msgid "recruiting first carrier"
-msgstr "eenen eersten Lastendrager antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:100
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:112
-msgctxt "europeans_building"
-msgid "recruiting second carrier"
-msgstr "eenen tweden Lastendrager antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:111
-msgctxt "europeans_building"
-msgid "recruiting third carrier"
-msgstr "eenen darden Lastendrager antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:122
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:126
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:123
-msgctxt "europeans_building"
-msgid "recruiting builder"
-msgstr "eenen Baukeerl antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:141
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:145
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:142
-msgctxt "europeans_building"
-msgid "recruiting forester"
-msgstr "eenen Boomplanter antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:160
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:164
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:161
-msgctxt "europeans_building"
-msgid "recruiting gardener"
-msgstr "eenen Gaardner antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:179
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:183
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:180
-msgctxt "europeans_building"
-msgid "recruiting geologist"
-msgstr "eenen Schattsöker antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:198
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:202
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:199
-msgctxt "europeans_building"
-msgid "recruiting lumberjack"
-msgstr "eenen Boomslager antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:217
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:221
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:218
-msgctxt "europeans_building"
-msgid "recruiting miner"
-msgstr "eenen Bargwarkskeerl antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting recruit because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:236
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:240
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:237
-msgctxt "europeans_building"
-msgid "recruiting recruit"
-msgstr "eenen Lehrwicht antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:246
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:250
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:247
-msgctxt "europeans_building"
-msgid "recruiting scout"
-msgstr "eenen Bespejer antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:256
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:260
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:257
-msgctxt "europeans_building"
-msgid "recruiting shipwright"
-msgstr "eenen Schippebauer antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:275
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:279
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:276
-msgctxt "europeans_building"
-msgid "recruiting stonecutter"
-msgstr "eenen Flintslager antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:294
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:298
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:295
-msgctxt "europeans_building"
-msgid "recruiting terraformer"
-msgstr "eenen Landumackereerer antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:313
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:317
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:314
-msgctxt "europeans_building"
-msgid "recruiting trainer"
-msgstr "eenen Mester antohüren"
-
-#. TRANSLATORS: Completed/Skipped/Did not start recruiting worker because ...
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_advanced/init.lua:323
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:327
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:324
-msgctxt "europeans_building"
-msgid "recruiting general worker"
-msgstr "eenen allgemeenen Arbeider antohüren"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_basic/init.lua:8
-msgctxt "europeans_building"
-msgid "Basic Recruitement Center"
-msgstr "Lütte Anhüreree"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_tribe.wad/recruitementsites/recruitement_center_normal/init.lua:8
-msgctxt "europeans_building"
-msgid "Normal Recruitement Center"
-msgstr "Anhüreree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/recruitementsites/trainingscamp_advanced/init.lua:8
@@ -6144,3 +5998,79 @@ msgstr "Arbeider"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Goder Arbeider"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Advanced Recruitement Center"
+#~ msgstr "Grote Anhüreree"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting first carrier"
+#~ msgstr "eenen eersten Lastendrager antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting second carrier"
+#~ msgstr "eenen tweden Lastendrager antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting third carrier"
+#~ msgstr "eenen darden Lastendrager antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting builder"
+#~ msgstr "eenen Baukeerl antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting forester"
+#~ msgstr "eenen Boomplanter antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting gardener"
+#~ msgstr "eenen Gaardner antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting geologist"
+#~ msgstr "eenen Schattsöker antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting lumberjack"
+#~ msgstr "eenen Boomslager antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting miner"
+#~ msgstr "eenen Bargwarkskeerl antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting recruit"
+#~ msgstr "eenen Lehrwicht antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting scout"
+#~ msgstr "eenen Bespejer antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting shipwright"
+#~ msgstr "eenen Schippebauer antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting stonecutter"
+#~ msgstr "eenen Flintslager antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting terraformer"
+#~ msgstr "eenen Landumackereerer antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting trainer"
+#~ msgstr "eenen Mester antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "recruiting general worker"
+#~ msgstr "eenen allgemeenen Arbeider antohüren"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Basic Recruitement Center"
+#~ msgstr "Lütte Anhüreree"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Normal Recruitement Center"
+#~ msgstr "Anhüreree"
