@@ -164,6 +164,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
                 "callworker=harvest_reed",
+                "return=skipped unless economy needs reed",
                 "produce=reed"
             }
         },

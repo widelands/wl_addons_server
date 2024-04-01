@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-26 03:07+0100\n"
+"POT-Creation-Date: 2024-04-01 03:07+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -797,9 +797,9 @@ msgid "harvesting cotton"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:153
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_advanced/init.lua:154
 #: addons/europeans_tribe.wad/productionsites_collectors/farm_small_basic/init.lua:164
-#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:156
+#: addons/europeans_tribe.wad/productionsites_collectors/farm_small_normal/init.lua:157
 msgctxt "europeans_building"
 msgid "harvesting reed"
 msgstr ""
@@ -863,19 +863,19 @@ msgctxt "europeans_building"
 msgid "felling trees"
 msgstr "Das Fällen von Bäumen"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:60
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:81
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:70
-msgid "No Trees"
-msgstr "Keine Bäume"
-
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:61
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:82
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:71
-msgid "Out of Trees"
+msgid "No Trees"
 msgstr "Keine Bäume"
 
 #: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:62
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:83
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:72
+msgid "Out of Trees"
+msgstr "Keine Bäume"
+
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_advanced/init.lua:63
 msgctxt "europeans_building"
 msgid ""
 "The lumberjack working at this lumberjack’s house can’t find any trees in "
@@ -897,7 +897,7 @@ msgstr "Einfache Holzfällerhütte"
 msgid "felling trees"
 msgstr "Das Fällen von Bäumen"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:83
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_basic/init.lua:84
 msgctxt "europeans_building"
 msgid ""
 "The lumberjack working at this lumberjack’s hut can’t find any trees in his "
@@ -914,7 +914,7 @@ msgctxt "europeans_building"
 msgid "Normal Lumberjack's House"
 msgstr "Normales Holzfällerhaus"
 
-#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:72
+#: addons/europeans_tribe.wad/productionsites_collectors/lumberjacks_house_normal/init.lua:73
 msgctxt "europeans_building"
 msgid ""
 "The woodcutter working at this woodcutter’s house can’t find any trees in "
