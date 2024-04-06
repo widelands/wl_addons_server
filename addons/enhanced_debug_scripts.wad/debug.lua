@@ -464,7 +464,16 @@ function force_building(player_number, startx, starty, radius, building_name)
     return building
 end
 
-function force_port(player_number, startx, starty, radius)
+function force_headquarters(player_number, startx, starty, radius)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local tribe = player.tribe
+    local tribe_name = tribe.name
+
+    local headquarters = force_building(player, startx, starty, radius, "headquarters")
+end
+
+function force_port(player_number, startx, starty, radius, complete)
     local game = wl.Game()
     local player = game.players[player_number]
     local map = game.map
@@ -477,24 +486,18 @@ function force_port(player_number, startx, starty, radius)
         for i, portfield in pairs(map.port_spaces) do
             for j, field in pairs(fields) do
                 if (portfield.x == field.x) and (portfield.y == field.y) then
-                    print (i, portfield.x , portfield.y)
-                    local port = force_building(player_number, portfield.x, portfield.y, 0, portname)
+                    if (complete == true) then
+                        local port = player:place_building(portname, field, false, true)
+                    else
+                        local port = player:place_building(portname, field, true, true)
+                    end
                 end
             end
         end
     end
 end
 
-function force_headquarters(player_number, startx, starty, radius)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    local tribe = player.tribe
-    local tribe_name = tribe.name
-
-    local headquarters = force_building(player, startx, starty, radius, "headquarters")
-end
-
-function force_mine(player_number, startx, starty)
+function force_mine(player_number, startx, starty, radius)
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
@@ -579,7 +582,7 @@ function force_mine(player_number, startx, starty)
         end
     end
 
-    local mine = place_building_in_region(player, tribe_name.."_"..minename..suffix, fields)
+    local mine = player:place_building(tribe_name.."_"..minename..suffix, fields[math.random(#fields)], false, true)
 end
 
 function force_militarysite(player_number, startx, starty, radius, militarytype)
