@@ -51,6 +51,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "felling trees"),
             actions = {
                 "callworker=harvest_tree",
+                "return=skipped unless economy needs log",
                 "produce=log:3"
             }
         },

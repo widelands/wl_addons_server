@@ -148,6 +148,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting cotton"),
             actions = {
                 "callworker=harvest_cotton",
+                "return=skipped unless economy needs cotton",
                 "produce=cotton:2"
             }
         },
@@ -156,6 +157,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
                 "callworker=harvest_reed",
+                "return=skipped unless economy needs reed",
                 "produce=reed:2"
             }
         },

@@ -58,6 +58,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Let-the-Naval-warfare-begin-wad]
+file_filter            = po/Let_the_Naval_warfare_begin.wad/<lang>.po
+source_file            = po/Let_the_Naval_warfare_begin.wad/Let_the_Naval_warfare_begin.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Maps-from-Teayo-wad]
 file_filter            = po/Maps_from_Teayo.wad/<lang>.po
 source_file            = po/Maps_from_Teayo.wad/Maps_from_Teayo.wad.pot
