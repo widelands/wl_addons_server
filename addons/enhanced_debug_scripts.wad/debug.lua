@@ -146,7 +146,7 @@ function conquer_fields(player_number, startx, starty, radius)
 end
 
 -- general flag/road/street settings --
-function place_flag(player_number, startx, starty)
+function force_flag(player_number, startx, starty)
     local game = wl.Game()
     local map = game.map
     local player = game.players[player_number]
@@ -443,34 +443,48 @@ function remove_ship(player_number, ship_name)
 end
 
 -- general building settings --
-function force_building(player_number, startx, starty, radius, building_name)
+function force_building(player_number, startx, starty, radius, building_name, complete)
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
+    local field = fields[math.random(#fields)]
     
     local player = game.players[player_number]
     local tribe_name = player.tribe.name
 
-    if (centerfield.immovable) then
-        centerfield.immovable:remove()
+    if (field.immovable) then
+        field.immovable:remove()
     end
     if string.find(building_name, tribe_name) then
-        local building = place_building_in_region(player, building_name, fields)
+        if (complete == true) then
+            local building = player:place_building(building_name, field, false, true)
+        else
+            local building = player:place_building(building_name, field, true, true)
+        end
     else
-        local building = place_building_in_region(player, tribe_name.."_"..building_name, fields)
+        if (complete == true) then
+            local building = player:place_building(tribe_name.."_"..building_name, field, false, true)
+        else
+            local building = player:place_building(tribe_name.."_"..building_name, field, true, true)
+        end
     end
     
     return building
 end
 
-function force_headquarters(player_number, startx, starty, radius)
+function force_headquarters(player_number, startx, starty, radius, complete)
     local game = wl.Game()
     local player = game.players[player_number]
-    local tribe = player.tribe
-    local tribe_name = tribe.name
 
-    local headquarters = force_building(player, startx, starty, radius, "headquarters")
+    local headquarters = force_building(player, startx, starty, radius, "headquarters", complete)
+end
+
+function force_warehouse(player_number, startx, starty, radius, complete)
+    local game = wl.Game()
+    local player = game.players[player_number]
+
+    local warehouse = force_building(player, startx, starty, radius, "warehouse", complete)
 end
 
 function force_port(player_number, startx, starty, radius, complete)
@@ -485,10 +499,19 @@ function force_port(player_number, startx, starty, radius, complete)
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
         for i, portfield in pairs(map.port_spaces) do
             for j, field in pairs(fields) do
-                if (portfield.x == field.x) and (portfield.y == field.y) then
+                if (portfield.x == field.x) and (portfield.y == field.y) and not (field.immovable) then
                     if (complete == true) then
                         local port = player:place_building(portname, field, false, true)
-                    else
+                    end
+                    if (complete == false) then
+                        local port = player:place_building(portname, field, true, true)
+                    end
+                end
+                if (portfield.x == field.x) and (portfield.y == field.y) and (field.immovable) then
+                    if (complete == true) and not (field.immovable.descr.type_name == "warehouse") then
+                        local port = player:place_building(portname, field, false, true)
+                    end
+                    if (complete == false) and not (field.immovable.descr.type_name == "warehouse") then
                         local port = player:place_building(portname, field, true, true)
                     end
                 end
@@ -582,7 +605,7 @@ function force_mine(player_number, startx, starty, radius)
         end
     end
 
-    local mine = player:place_building(tribe_name.."_"..minename..suffix, fields[math.random(#fields)], false, true)
+    local mine = player:place_building(tribe_name.."_"..minename..suffix, fields[math.random(#fields)], true, true)
 end
 
 function force_militarysite(player_number, startx, starty, radius, militarytype)
