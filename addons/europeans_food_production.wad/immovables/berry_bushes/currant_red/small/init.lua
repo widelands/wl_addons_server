@@ -15,6 +15,10 @@ wl.Descriptions():new_immovable_type {
          "animate=idle duration:28s",
          "grow=berry_bush_currant_red_medium",
       },
+      grow = {
+         "animate=idle duration:14s",
+         "grow=berry_bush_currant_red_medium",
+      },
    },
    
    animation_directory = dirname,
