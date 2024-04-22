@@ -180,9 +180,9 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                         -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
-                        pgettext("europeans_ware", "Rubber is needed to make improved boots."),
+                        pgettext("europeans_ware", "Rubber is needed to make improved armor and boots."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
-                        pgettext("europeans_ware", "It is produced by advanced lumberjack or in rubber farm."),
+                        pgettext("europeans_ware", "It is produced in tree nursery or in rubber farm."),
                     }
                 }
             },
@@ -579,7 +579,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "coin_wood",
-                default_target_quantity = 128,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -590,7 +590,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "coin_copper",
-                default_target_quantity = 64,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -601,7 +601,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "coin_silver",
-                default_target_quantity = 64,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -612,7 +612,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "coin_gold",
-                default_target_quantity = 64,
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -2211,7 +2211,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_foresters_house_basic",
+            name = "europeans_tree_nursery_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Ranger's Hut
                 purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
@@ -2220,7 +2220,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_foresters_house_normal",
+            name = "europeans_tree_nursery_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
                 purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
@@ -2229,7 +2229,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_foresters_house_advanced",
+            name = "europeans_tree_nursery_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
                 purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
@@ -3373,7 +3373,7 @@ wl.Descriptions():new_tribe {
       military_fortress = "europeans_castle",
       well = "europeans_well_basic",
       woodcutter = "europeans_lumberjacks_house_basic",
-      forester = "europeans_foresters_house_basic",
+      forester = "europeans_tree_nursery_basic",
       quarry = "europeans_quarry_basic",
       mine_stone = "europeans_quarry_basic",
       building_materials_primary = "europeans_farm_basic",

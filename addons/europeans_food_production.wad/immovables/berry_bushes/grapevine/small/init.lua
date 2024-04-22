@@ -15,6 +15,10 @@ wl.Descriptions():new_immovable_type {
       main = {
          "animate=idle duration:30s",
          "transform=grapevine_medium",
+      },
+      grow = {
+         "animate=idle duration:15s",
+         "transform=grapevine_medium",
       }
    },
 
