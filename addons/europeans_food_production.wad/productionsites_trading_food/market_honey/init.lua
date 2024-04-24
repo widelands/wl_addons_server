@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for wood coins"),
             actions = {
-                "return=skipped when economy needs coin_copper and not economy needs coin_wood",
+                "return=skipped when economy needs coin_copper ",
                 "call=pausing_production_for_blackwood",
                 "sleep=duration:15s",
                 "call=trade_honey"
@@ -80,7 +80,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = pgettext("europeans_building", "trading food for copper coins"),
             actions = {
-                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
                 "call=pausing_production_for_gold",
@@ -101,7 +100,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing trading of gold"),
             actions = {
-                "return=skipped when economy needs coin_wood and site has blackwood:2",
                 "return=skipped when site has gold:3",
                 "sleep=duration:15m",
             }
@@ -114,7 +112,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has blackwood",
                 "consume=honey:4 blackwood",
                 "animate=working duration:30s",
-                "produce=coin_wood:3",
+                "produce=coin_copper:3",
                 "sleep=duration:30s",
             }
         },

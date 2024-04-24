@@ -35,8 +35,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coin_wood", amount = 10 },
-        { name = "coin_copper", amount = 8 },
+        { name = "coin_copper", amount = 12 },
         { name = "coin_silver", amount = 6 },
         { name = "coin_gold", amount = 4 },
     },
@@ -61,8 +60,8 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs granite",
                 "callworker=find_pole",
-                "return=failed unless site has coin_wood:5",
-                "consume=coin_wood:5",
+                "return=failed unless site has coin_copper:5",
+                "consume=coin_copper:5",
                 "callworker=purchase_granite",
                 "produce=granite:2",
                 "sleep=duration:30s",
@@ -74,7 +73,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs marble",
                 "callworker=find_pole",
-                "return=failed unless site has coin_wood:8",
+                "return=failed unless site has coin_copper:8",
                 "consume=coin_copper:4",
                 "callworker=purchase_marble",
                 "produce=marble:2",
