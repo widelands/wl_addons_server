@@ -38,7 +38,6 @@ init = {
             quartz = 8,
             diamond = 8,
             marble_column = 8,
-            coin_wood = 32,
             coin_copper = 16,
             coin_silver = 8,
             coin_gold = 8,

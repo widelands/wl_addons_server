@@ -76,7 +76,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs coin_silver and not economy needs coin_copper",
                 "return=skipped when economy needs coin_gold and not economy needs coin_copper",
-                "return=skipped when economy needs coin_wood and not economy needs coin_copper",
                 "call=pausing_production_for_gold",
                 "sleep=duration:10s",
                 "call=trade_bread_copper",
@@ -90,7 +89,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_silver",
                 "return=skipped when economy needs coin_gold and not economy needs coin_silver",
-                "return=skipped when economy needs coin_wood and not economy needs coin_silver",
                 "call=pausing_production_for_gold",
                 "sleep=duration:10s",
                 "call=trade_bread_silver",
@@ -104,7 +102,6 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs coin_copper and not economy needs coin_gold",
                 "return=skipped when economy needs coin_silver and not economy needs coin_gold",
-                "return=skipped when economy needs coin_wood and not economy needs coin_gold",
                 "call=pausing_production_for_gold",
                 "sleep=duration:10s",
                 "call=trade_bread_gold",

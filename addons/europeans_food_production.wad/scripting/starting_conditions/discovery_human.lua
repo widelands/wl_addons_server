@@ -75,7 +75,6 @@ local init = {
             marble_column = 8,
             quartz = 8,
             diamond = 8,
-            coin_wood = 32,
             europeans_farmer_advanced = 2,
             europeans_worker_advanced = 2,
             europeans_miner_advanced = 6,

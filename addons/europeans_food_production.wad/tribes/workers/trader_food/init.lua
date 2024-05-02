@@ -52,14 +52,14 @@ wl.Descriptions():new_worker_type {
           },
           purchase_granite = {
                 "findobject=attrib:tradepole radius:80",
-                "createware=coin_wood",
+                "createware=coin_copper",
                 "walk=object",
                 "createware=granite",
                 "return"
           },
           purchase_marble = {
                 "findobject=attrib:tradepole radius:80",
-                "createware=coin_wood",
+                "createware=coin_copper",
                 "walk=object",
                 "createware=marble",
                 "return"
@@ -96,14 +96,14 @@ wl.Descriptions():new_worker_type {
                 "findobject=attrib:tradepole radius:80",
                 "createware=bread",
                 "walk=object",
-                "createware=coin_wood",
+                "createware=coin_copper",
                 "return"
           },
           sale_meat = {
                 "findobject=attrib:tradepole radius:80",
                 "createware=meat",
                 "walk=object",
-                "createware=coin_wood",
+                "createware=coin_copper",
                 "return"
           },
           sale_fish = {

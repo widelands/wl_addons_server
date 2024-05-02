@@ -32,9 +32,9 @@ wl.Descriptions():new_tribe {
     bridge_height = 8,
     
     collectors_points_table = {
-        { ware = "gold", points = 2 },
-        { ware = "quartz", points = 2 },
-        { ware = "diamond", points = 2 },
+        { ware = "coin_copper", points = 2 },
+        { ware = "coin_silver", points = 4 },
+        { ware = "coin_gold", points = 6 },
         { ware = "armor_wooden", points = 1 },
         { ware = "armor_processed", points = 2 },
         { ware = "armor_compressed", points = 4 },
@@ -574,17 +574,6 @@ wl.Descriptions():new_tribe {
                         pgettext("ware", "Gold is the most valuable of all metals, and it is smelted out of ore."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
                         pgettext("europeans_ware", "It is produced by the smelting works. Armor and weapons are embellished with gold in the smithy. Some valuable buildings need gold to be built.")
-                    }
-                }
-            },
-            {
-                name = "coin_wood",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Wood Coin
-                        pgettext("ware", "Wood coins are money made of wood. Its simplest barter object."),
                     }
                 }
             },
