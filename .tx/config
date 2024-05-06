@@ -275,6 +275,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:europeans-craft-buildings-wad]
+file_filter            = po/europeans_craft_buildings.wad/<lang>.po
+source_file            = po/europeans_craft_buildings.wad/europeans_craft_buildings.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:europeans-food-production-wad]
 file_filter            = po/europeans_food_production.wad/<lang>.po
 source_file            = po/europeans_food_production.wad/europeans_food_production.wad.pot
@@ -288,6 +296,14 @@ file_filter            = po/europeans_map_modified.wad/<lang>.po
 source_file            = po/europeans_map_modified.wad/europeans_map_modified.wad.pot
 source_lang            = en
 type                   = PO
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:europeans-terraforming-wad]
+file_filter            = po/europeans_terraforming.wad/<lang>.po
+source_file            = po/europeans_terraforming.wad/europeans_terraforming.wad.pot
+type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
