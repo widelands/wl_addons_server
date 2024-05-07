@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-06 03:07+0200\n"
+"POT-Creation-Date: 2024-05-07 03:07+0200\n"
 "PO-Revision-Date: 2024-05-05 18:54+0000\n"
+"Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: addons/europeans_craft_buildings.wad/addon:2
 msgid "Europeans craft building addon for Europeans tribe"
-msgstr ""
+msgstr "Ambachtelijke bouw-addon voor Europeanen-stam"
 
 #: addons/europeans_craft_buildings.wad/addon:3
 msgid ""
@@ -27,12 +31,16 @@ msgid ""
 "complexity. When this addon is activated, the definitions for buildings, "
 "wares and workers from the base addon europeans_tribes.wad are overwritten."
 msgstr ""
+"Voegt een aantal extra ambachtelijke gebouwen toe aan de economie van de "
+"Europese stammen voor meer complexiteit. Als deze addon is geactiveerd, "
+"worden de definities voor gebouwen, goederen en arbeiders uit de basis-addon "
+"europeans_tribes.wad overschreven."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Shoemakers House"
-msgstr ""
+msgstr "Geavanceerd Schoenmakershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_advanced/init.lua:47
@@ -48,7 +56,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_basic/init.lua:74
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_normal/init.lua:55
 msgid "working"
-msgstr ""
+msgstr "werkende"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_advanced/init.lua:61
@@ -56,7 +64,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_normal/init.lua:71
 msgctxt "europeans_building"
 msgid "making a pair of wooden boots"
-msgstr ""
+msgstr "een paar houten laarzen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_advanced/init.lua:76
@@ -64,38 +72,38 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_normal/init.lua:85
 msgctxt "europeans_building"
 msgid "making study boots"
-msgstr ""
+msgstr "werklaarzen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_advanced/init.lua:91
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_normal/init.lua:99
 msgctxt "europeans_building"
 msgid "making swift boots"
-msgstr ""
+msgstr "vlotte laarzen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_advanced/init.lua:106
 msgctxt "europeans_building"
 msgid "making advanced boots"
-msgstr ""
+msgstr "geavanceerde laarzen maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Shoemakers House"
-msgstr ""
+msgstr "Basis Schoenmakershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Shoemakers House"
-msgstr ""
+msgstr "Normaal Schoenmakershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Toolsmithy"
-msgstr ""
+msgstr "Geavanceerde Gereedschapsmakerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:81
@@ -103,7 +111,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:77
 msgctxt "europeans_building"
 msgid "making baskets"
-msgstr ""
+msgstr "manden maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:102
@@ -111,7 +119,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:98
 msgctxt "europeans_building"
 msgid "making buckets"
-msgstr ""
+msgstr "emmers maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:123
@@ -119,7 +127,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:119
 msgctxt "europeans_building"
 msgid "making felling axes"
-msgstr ""
+msgstr "kapbijlen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:144
@@ -127,7 +135,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:140
 msgctxt "europeans_building"
 msgid "making fire tongs"
-msgstr ""
+msgstr "vuurtonnen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:165
@@ -135,7 +143,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:161
 msgctxt "europeans_building"
 msgid "making hammers"
-msgstr ""
+msgstr "hamers maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making needles because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:186
@@ -143,7 +151,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:182
 msgctxt "europeans_building"
 msgid "making needles"
-msgstr ""
+msgstr "naalden maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:206
@@ -151,7 +159,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:202
 msgctxt "europeans_building"
 msgid "making picks"
-msgstr ""
+msgstr "pikhouwelen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:227
@@ -159,7 +167,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:223
 msgctxt "europeans_building"
 msgid "making saws"
-msgstr ""
+msgstr "zagen maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:248
@@ -167,7 +175,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:244
 msgctxt "europeans_building"
 msgid "making sycthes"
-msgstr ""
+msgstr "zeis maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_advanced/init.lua:269
@@ -175,25 +183,25 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:265
 msgctxt "europeans_building"
 msgid "making shovels"
-msgstr ""
+msgstr "schoppen maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Toolsmithy"
-msgstr ""
+msgstr "Basis Gereedschapsmakerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_tools_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Toolsmithy"
-msgstr ""
+msgstr "Normaal Gereedschapsmakerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Weaponsmithy"
-msgstr ""
+msgstr "Gevorderde Wapenmakerij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_advanced/init.lua:81
@@ -201,7 +209,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_normal/init.lua:69
 msgctxt "europeans_building"
 msgid "making a wooden helmet"
-msgstr ""
+msgstr "een houten helm maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_advanced/init.lua:100
@@ -209,7 +217,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_normal/init.lua:86
 msgctxt "europeans_building"
 msgid "forging a wooden spear"
-msgstr ""
+msgstr "een houten speer maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_advanced/init.lua:119
@@ -217,20 +225,20 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_normal/init.lua:103
 msgctxt "europeans_building"
 msgid "forging a mask"
-msgstr ""
+msgstr "een masker smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_advanced/init.lua:136
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_normal/init.lua:118
 msgctxt "europeans_building"
 msgid "forging a steel shield"
-msgstr ""
+msgstr "een stalen schild smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_advanced/init.lua:152
 msgctxt "europeans_building"
 msgid "forging an advanced shield"
-msgstr ""
+msgstr "een geavanceerd schild smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_advanced/init.lua:168
@@ -238,38 +246,38 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_normal/init.lua:132
 msgctxt "europeans_building"
 msgid "forging an advanced spear"
-msgstr ""
+msgstr "een geavanceerde speer smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_advanced/init.lua:187
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_normal/init.lua:149
 msgctxt "europeans_building"
 msgid "forging a broad ax"
-msgstr ""
+msgstr "een brede bijl smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_advanced/init.lua:206
 msgctxt "europeans_building"
 msgid "forging a broadsword"
-msgstr ""
+msgstr "een slagzwaard smeden"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Weaponsmithy"
-msgstr ""
+msgstr "Basis Wapenmakerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/smithy_weapons_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Weaponsmithy"
-msgstr ""
+msgstr "Normale Wapenmakerij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Tailors House"
-msgstr ""
+msgstr "Geavanceerd Kleermakershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_advanced/init.lua:74
@@ -277,7 +285,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_normal/init.lua:67
 msgctxt "europeans_building"
 msgid "making a wooden armor"
-msgstr ""
+msgstr "een houten harnas maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_advanced/init.lua:89
@@ -285,49 +293,49 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_normal/init.lua:81
 msgctxt "europeans_building"
 msgid "tailoring processed armor"
-msgstr ""
+msgstr "op maat maken van wapenrusting"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_advanced/init.lua:103
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_normal/init.lua:94
 msgctxt "europeans_building"
 msgid "tailoring a suit of chain armor"
-msgstr ""
+msgstr "een maliënkolder maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_advanced/init.lua:115
 msgctxt "europeans_building"
 msgid "tailoring a suit of advanced armor"
-msgstr ""
+msgstr "een geavanceerd harnas maken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Tailors House"
-msgstr ""
+msgstr "Basis Kleermakershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/tailors_house_normal/init.lua:8
 msgctxt "europeans_building"
 msgid "Normal Tailors House"
-msgstr ""
+msgstr "Normaal Kleermakershuis"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/discovery_ai.lua:11
 msgid "Discovery (AI optimized)"
-msgstr ""
+msgstr "Ontdekking (AI geoptimaliseerd)"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/discovery_ai.lua:13
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_ai.lua:13
 msgid "AI optimized starting condition, not for human player."
-msgstr ""
+msgstr "AI geoptimaliseerde startconditie, niet voor menselijke speler."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/discovery_human.lua:11
 msgid "Discovery (Human Player)"
-msgstr ""
+msgstr "Ontdekking ( Menselijke Speler)"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/discovery_human.lua:13
@@ -336,16 +344,19 @@ msgid ""
 "Disabled terraforming (diking of water bodies) because of lack of "
 "compatibility with seafaring."
 msgstr ""
+"Begin het spel met drie schepen op de oceaan en slechts een handvol "
+"voorraden. Schakel terravorming (bedijken van watermassa's) uit omdat het "
+"niet compatibel is met zeevaart."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_ai.lua:11
 msgid "Headquarters (AI optimized)"
-msgstr ""
+msgstr "Hoofdkwartier (AI geoptimaliseerd)"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_seafaring.lua:11
 msgid "Headquarters (with seafaring)"
-msgstr ""
+msgstr "Hoofdkwartier (met zeevaart)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_seafaring.lua:13
@@ -353,11 +364,13 @@ msgid ""
 "Start the game with your headquarters only. Disabled terraforming (diking of "
 "water bodies) because of lack of compatibility with seafaring."
 msgstr ""
+"Begin het spel alleen met je hoofdkwartier. Uitgeschakeld terreinvorming "
+"(bedijken van watermassa's) vanwege gebrek aan compatibiliteit met zeevaart."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_terraforming.lua:11
 msgid "Headquarters (with terraforming)"
-msgstr ""
+msgstr "Hoofdkwartier (met terravorming)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_terraforming.lua:13
@@ -365,11 +378,13 @@ msgid ""
 "Start the game with your headquarters only. Disabled seafaring because of "
 "lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
+"Begin het spel alleen met je hoofdkwartier. Zeevaart uitgeschakeld vanwege "
+"gebrek aan compatibiliteit met terreinvorming (bedijken van watermassa's)."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/trading_outpost.lua:11
 msgid "Trading Outpost"
-msgstr ""
+msgstr "Handelsvoorpost"
 
 #. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
 #: addons/europeans_craft_buildings.wad/scripting/starting_conditions/trading_outpost.lua:13
@@ -378,749 +393,753 @@ msgid ""
 "some wares can be bought for gold, quartz and diamonds. Disabled seafaring "
 "because of lack of compatibility with terraforming (diking of water bodies)."
 msgstr ""
+"Deze startvoorwaarde bevat een markt als extra gebouw, waar sommige waren "
+"kunnen worden gekocht voor goud, kwarts en diamanten. Uitgeschakeld zeevaart "
+"vanwege gebrek aan compatibiliteit met terreinvorming (bedijken van "
+"watermassa's)."
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/init.lua:10
 msgid "Mark McWire"
-msgstr ""
+msgstr "Mark McWire"
 
 #. TRANSLATORS: This is a tribe name
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/init.lua:12
 msgid "Europeans"
-msgstr ""
+msgstr "Europeanen"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/init.lua:13
 msgid "This is the culture of the Europeans."
-msgstr ""
+msgstr "Dit is de cultuur van de Europeanen."
 
 #. TRANSLATORS: This is the Europeans' ship's name used in lists of units
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:83
 msgctxt "europeans_ship"
 msgid "Ship"
-msgstr ""
+msgstr "Schip"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:124
 msgctxt "shipname"
 msgid "Amsterdam"
-msgstr ""
+msgstr "Amsterdam"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:126
 msgctxt "shipname"
 msgid "Andorra la Vella"
-msgstr ""
+msgstr "Andorra la Vella"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:128
 msgctxt "shipname"
 msgid "Antwerpen"
-msgstr ""
+msgstr "Antwerpen"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:130
 msgctxt "shipname"
 msgid "Astrachan"
-msgstr ""
+msgstr "Astrachan"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:132
 msgctxt "shipname"
 msgid "Athen"
-msgstr ""
+msgstr "Athene"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:134
 msgctxt "shipname"
 msgid "Balaschicha"
-msgstr ""
+msgstr "Balaschicha"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:136
 msgctxt "shipname"
 msgid "Barcelona"
-msgstr ""
+msgstr "Barcelona"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:138
 msgctxt "shipname"
 msgid "Beograd"
-msgstr ""
+msgstr "Belgrado"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:140
 msgctxt "shipname"
 msgid "Berlin"
-msgstr ""
+msgstr "Berlijn"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:142
 msgctxt "shipname"
 msgid "Bern"
-msgstr ""
+msgstr "Bern"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:144
 msgctxt "shipname"
 msgid "Birmingham"
-msgstr ""
+msgstr "Birmingham"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:146
 msgctxt "shipname"
 msgid "Bradford"
-msgstr ""
+msgstr "Bradford"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:148
 msgctxt "shipname"
 msgid "Bremen"
-msgstr ""
+msgstr "Bremen"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:150
 msgctxt "shipname"
 msgid "Bruxelles"
-msgstr ""
+msgstr "Brussel"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:152
 msgctxt "shipname"
 msgid "București"
-msgstr ""
+msgstr "Boekarest"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:154
 msgctxt "shipname"
 msgid "Budapest"
-msgstr ""
+msgstr "Boedapest"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:156
 msgctxt "shipname"
 msgid "Charkiw"
-msgstr ""
+msgstr "Charkiw"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:158
 msgctxt "shipname"
 msgid "Chișinău"
-msgstr ""
+msgstr "Chișinău"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:160
 msgctxt "shipname"
 msgid "Den Haag"
-msgstr ""
+msgstr "Den Haag"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:162
 msgctxt "shipname"
 msgid "Dnipro"
-msgstr ""
+msgstr "Dnipro"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:164
 msgctxt "shipname"
 msgid "Donezk"
-msgstr ""
+msgstr "Donezk"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:166
 msgctxt "shipname"
 msgid "Dortmund"
-msgstr ""
+msgstr "Dortmund"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:168
 msgctxt "shipname"
 msgid "Dresden"
-msgstr ""
+msgstr "Dresden"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:170
 msgctxt "shipname"
 msgid "Dublin"
-msgstr ""
+msgstr "Dublin"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:172
 msgctxt "shipname"
 msgid "Duisburg"
-msgstr ""
+msgstr "Duisburg"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:174
 msgctxt "shipname"
 msgid "Düsseldorf"
-msgstr ""
+msgstr "Düsseldorf"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:176
 msgctxt "shipname"
 msgid "Edinburgh"
-msgstr ""
+msgstr "Edinburgh"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:178
 msgctxt "shipname"
 msgid "Essen"
-msgstr ""
+msgstr "Essen"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:180
 msgctxt "shipname"
 msgid "Frankfurt am Main"
-msgstr ""
+msgstr "Frankfurt aan de Main"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:182
 msgctxt "shipname"
 msgid "Genova"
-msgstr ""
+msgstr "Genua"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:184
 msgctxt "shipname"
 msgid "Glasgow"
-msgstr ""
+msgstr "Glasgow"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:186
 msgctxt "shipname"
 msgid "Göteborg"
-msgstr ""
+msgstr "Gotenburg"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:188
 msgctxt "shipname"
 msgid "Hamburg"
-msgstr ""
+msgstr "Hamburg"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:190
 msgctxt "shipname"
 msgid "Hannover"
-msgstr ""
+msgstr "Hannover"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:192
 msgctxt "shipname"
 msgid "Helsinki"
-msgstr ""
+msgstr "Helsinki"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:194
 msgctxt "shipname"
 msgid "Homel"
-msgstr ""
+msgstr "Homel"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:196
 msgctxt "shipname"
 msgid "Ischewsk"
-msgstr ""
+msgstr "Ischewsk"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:198
 msgctxt "shipname"
 msgid "Istanbul"
-msgstr ""
+msgstr "Istanbul"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:200
 msgctxt "shipname"
 msgid "Jaroslawl"
-msgstr ""
+msgstr "Jaroslawl"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:202
 msgctxt "shipname"
 msgid "Kasan"
-msgstr ""
+msgstr "Kasan"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:204
 msgctxt "shipname"
 msgid "Kirow"
-msgstr ""
+msgstr "Kirow"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:206
 msgctxt "shipname"
 msgid "København"
-msgstr ""
+msgstr "Kopenhagen"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:208
 msgctxt "shipname"
 msgid "Köln"
-msgstr ""
+msgstr "Keulen"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:210
 msgctxt "shipname"
 msgid "Kraków"
-msgstr ""
+msgstr "Krakau"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:212
 msgctxt "shipname"
 msgid "Krasnodar"
-msgstr ""
+msgstr "Krasnodar"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:214
 msgctxt "shipname"
 msgid "Krywyj Rih"
-msgstr ""
+msgstr "Krywyj Rih"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:216
 msgctxt "shipname"
 msgid "Kyiv"
-msgstr ""
+msgstr "Kiev"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:218
 msgctxt "shipname"
 msgid "Leeds"
-msgstr ""
+msgstr "Leeds"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:220
 msgctxt "shipname"
 msgid "Leipzig"
-msgstr ""
+msgstr "Leipzig"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:222
 msgctxt "shipname"
 msgid "Lipezk"
-msgstr ""
+msgstr "Lipezk"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:224
 msgctxt "shipname"
 msgid "Lisboa"
-msgstr ""
+msgstr "Lissabon"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:226
 msgctxt "shipname"
 msgid "Ljubljana"
-msgstr ""
+msgstr "Ljubljana"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:228
 msgctxt "shipname"
 msgid "Łódź"
-msgstr ""
+msgstr "Łódź"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:230
 msgctxt "shipname"
 msgid "London"
-msgstr ""
+msgstr "Londen"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:232
 msgctxt "shipname"
 msgid "Luxemburg"
-msgstr ""
+msgstr "Luxemburg"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:234
 msgctxt "shipname"
 msgid "Lwiw"
-msgstr ""
+msgstr "Lwiw"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:236
 msgctxt "shipname"
 msgid "Lyon"
-msgstr ""
+msgstr "Lyon"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:238
 msgctxt "shipname"
 msgid "Machatschkala"
-msgstr ""
+msgstr "Machatschkala"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:240
 msgctxt "shipname"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:242
 msgctxt "shipname"
 msgid "Málaga"
-msgstr ""
+msgstr "Malaga"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:244
 msgctxt "shipname"
 msgid "Manchester"
-msgstr ""
+msgstr "Manchester"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:246
 msgctxt "shipname"
 msgid "Marseille"
-msgstr ""
+msgstr "Marseille"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:248
 msgctxt "shipname"
 msgid "Milano"
-msgstr ""
+msgstr "Milaan"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:250
 msgctxt "shipname"
 msgid "Minsk"
-msgstr ""
+msgstr "Minsk"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:252
 msgctxt "shipname"
 msgid "Monaco"
-msgstr ""
+msgstr "Monaco"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:254
 msgctxt "shipname"
 msgid "Moskwa"
-msgstr ""
+msgstr "Moskou"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:256
 msgctxt "shipname"
 msgid "München"
-msgstr ""
+msgstr "München"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:258
 msgctxt "shipname"
 msgid "Nabereschnyje Tschelny"
-msgstr ""
+msgstr "Nabereschnyje Tschelny"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:260
 msgctxt "shipname"
 msgid "Napoli"
-msgstr ""
+msgstr "Napels"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:262
 msgctxt "shipname"
 msgid "Nikosia"
-msgstr ""
+msgstr "Nikosia"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:264
 msgctxt "shipname"
 msgid "Nischni Nowgorod"
-msgstr ""
+msgstr "Nischni Nowgorod"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:266
 msgctxt "shipname"
 msgid "Nürnberg"
-msgstr ""
+msgstr "Neurenberg"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:268
 msgctxt "shipname"
 msgid "Odessa"
-msgstr ""
+msgstr "Odessa"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:270
 msgctxt "shipname"
 msgid "Orenburg"
-msgstr ""
+msgstr "Orenburg"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:272
 msgctxt "shipname"
 msgid "Oslo"
-msgstr ""
+msgstr "Oslo"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:274
 msgctxt "shipname"
 msgid "Palermo"
-msgstr ""
+msgstr "Palermo"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:276
 msgctxt "shipname"
 msgid "Paris"
-msgstr ""
+msgstr "Parijs"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:278
 msgctxt "shipname"
 msgid "Pensa"
-msgstr ""
+msgstr "Pensa"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:280
 msgctxt "shipname"
 msgid "Perm"
-msgstr ""
+msgstr "Perm"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:282
 msgctxt "shipname"
 msgid "Podgorica"
-msgstr ""
+msgstr "Podgorica"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:284
 msgctxt "shipname"
 msgid "Poznań"
-msgstr ""
+msgstr "Poznan"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:286
 msgctxt "shipname"
 msgid "Praha"
-msgstr ""
+msgstr "Praag"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:288
 msgctxt "shipname"
 msgid "Prishtina"
-msgstr ""
+msgstr "Pristina"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:290
 msgctxt "shipname"
 msgid "Reykjavík"
-msgstr ""
+msgstr "Reykjavík"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:292
 msgctxt "shipname"
 msgid "Rīga"
-msgstr ""
+msgstr "Riga"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:294
 msgctxt "shipname"
 msgid "Rjasan"
-msgstr ""
+msgstr "Rjasan"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:296
 msgctxt "shipname"
 msgid "Roma"
-msgstr ""
+msgstr "Rome"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:298
 msgctxt "shipname"
 msgid "Rostow-na-Donu"
-msgstr ""
+msgstr "Rostow-na-Donu"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:300
 msgctxt "shipname"
 msgid "Rotterdam"
-msgstr ""
+msgstr "Rotterdam"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:302
 msgctxt "shipname"
 msgid "San Marino"
-msgstr ""
+msgstr "San Marino"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:304
 msgctxt "shipname"
 msgid "Samara"
-msgstr ""
+msgstr "Samara"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:306
 msgctxt "shipname"
 msgid "Sankt Petersburg"
-msgstr ""
+msgstr "Sint-Petersburg"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:308
 msgctxt "shipname"
 msgid "Saporischschja"
-msgstr ""
+msgstr "Zaporizja"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:310
 msgctxt "shipname"
 msgid "Sarajevo"
-msgstr ""
+msgstr "Sarajevo"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:312
 msgctxt "shipname"
 msgid "Saratow"
-msgstr ""
+msgstr "Saratow"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:314
 msgctxt "shipname"
 msgid "Sevilla"
-msgstr ""
+msgstr "Sevilla"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:316
 msgctxt "shipname"
 msgid "Sheffield"
-msgstr ""
+msgstr "Sheffield"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:318
 msgctxt "shipname"
 msgid "Skopje"
-msgstr ""
+msgstr "Skopje"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:320
 msgctxt "shipname"
 msgid "Sofia"
-msgstr ""
+msgstr "Sofia"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:322
 msgctxt "shipname"
 msgid "Stockholm"
-msgstr ""
+msgstr "Stockholm"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:324
 msgctxt "shipname"
 msgid "Stuttgart"
-msgstr ""
+msgstr "Stuttgart"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:326
 msgctxt "shipname"
 msgid "Tallinn"
-msgstr ""
+msgstr "Tallinn"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:328
 msgctxt "shipname"
 msgid "Tirana"
-msgstr ""
+msgstr "Tirana"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:330
 msgctxt "shipname"
 msgid "Toljatti"
-msgstr ""
+msgstr "Toljatti"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:332
 msgctxt "shipname"
 msgid "Torino"
-msgstr ""
+msgstr "Turijn"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:334
 msgctxt "shipname"
 msgid "Ufa"
-msgstr ""
+msgstr "Ufa"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:336
 msgctxt "shipname"
 msgid "Uljanowsk"
-msgstr ""
+msgstr "Uljanowsk"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:338
 msgctxt "shipname"
 msgid "Vaduz"
-msgstr ""
+msgstr "Vaduz"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:340
 msgctxt "shipname"
 msgid "Valencia"
-msgstr ""
+msgstr "Valencia"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:342
 msgctxt "shipname"
 msgid "Valletta"
-msgstr ""
+msgstr "Valletta"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:344
 msgctxt "shipname"
 msgid "Vilnius"
-msgstr ""
+msgstr "Vilnius"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:346
 msgctxt "shipname"
 msgid "Warszawa"
-msgstr ""
+msgstr "Warszawa"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:348
 msgctxt "shipname"
 msgid "Wien"
-msgstr ""
+msgstr "Wenen"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:350
 msgctxt "shipname"
 msgid "Wolgograd"
-msgstr ""
+msgstr "Wolgograd"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:352
 msgctxt "shipname"
 msgid "Woronesch"
-msgstr ""
+msgstr "Woronesch"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:354
 msgctxt "shipname"
 msgid "Wrocław"
-msgstr ""
+msgstr "Wrocław"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:356
 msgctxt "shipname"
 msgid "Zagreb"
-msgstr ""
+msgstr "Zagreb"
 
 #. TRANSLATORS: This Europeans ship is named after a Europeans town
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/ship/init.lua:358
 msgctxt "shipname"
 msgid "Zaragoza"
-msgstr ""
+msgstr "Zaragoza"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental Europeans tribe."
-msgstr ""
+msgstr "Dit is de experimentele Europese stam."
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:12
 msgctxt "europeans_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "‘%1%’<br>(%2%)"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:109
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Water is de essentie van het leven!"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:111
@@ -1130,18 +1149,21 @@ msgid ""
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
+"Water wordt gebruikt door de tuinman, door de boswachter, door alle "
+"boerderijen, en in de bakkerij en de brouwerij. Ook de viskwekerij en de "
+"schapenhouderij hebben water nodig."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:122
 msgctxt "europeans_ware"
 msgid "Granite is a basic building material."
-msgstr ""
+msgstr "Graniet is een fundamenteel bouwmateriaal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:124
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr ""
+msgstr "De Europeanen produceren granieten blokken in steengroeven."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:135
@@ -1150,6 +1172,8 @@ msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
 msgstr ""
+"Rondhout is een belangrijk basismateriaal voor de bouw. Ze worden "
+"geproduceerd door bomen te vellen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:137
@@ -1158,49 +1182,52 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
+"Europese houthakkers vellen de bomen; boswachters zorgen voor de aanvoer van "
+"bomen. Houtblokken worden ook gebruikt voor de houtskooloven, de scheepswerf "
+"en de zagerij."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:148
 msgctxt "europeans_ware"
 msgid "Reed is an important building material."
-msgstr ""
+msgstr "Riet is een belangrijk bouwmateriaal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:150
 msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
-msgstr ""
+msgstr "Het wordt geproduceerd op de rietvelden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:161
 msgctxt "europeans_ware"
 msgid "Cotton is a raw material used to make clothing."
-msgstr ""
+msgstr "Katoen is een grondstof die wordt gebruikt om kleding te maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:163
 msgctxt "europeans_ware"
 msgid "It is produced by normal farms."
-msgstr ""
+msgstr "Het wordt geproduceerd door normale boerderijen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:174
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved armor and boots."
-msgstr ""
+msgstr "Rubber is nodig om verbeterde pantsers en laarzen te maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:176
 msgctxt "europeans_ware"
 msgid "It is produced in tree nursery or in rubber farm."
-msgstr ""
+msgstr "Het wordt geproduceerd in boomkwekerijen of op rubberplantages."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:186
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:195
 msgctxt "europeans_ware"
 msgid "Not used in basic addon."
-msgstr ""
+msgstr "Niet gebruikt in de basisuitbreiding."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:204
@@ -1209,18 +1236,22 @@ msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
 "or from sawmills."
 msgstr ""
+"Sloophout is afvalmateriaal dat ontstaat bij de sloop van gebouwen of in "
+"zagerijen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:206
 msgctxt "europeans_ware"
 msgid "It can be processed into charcoal in charcoal kilns."
-msgstr ""
+msgstr "Het kan worden verwerkt tot houtskool in houtskoolovens."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:220
 msgctxt "ware"
 msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
 msgstr ""
+"Steenkool wordt gewonnen in kolenmijnen of geproduceerd uit houtblokken door "
+"een houtskooloven (houtskool)."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:222
@@ -1229,12 +1260,14 @@ msgid ""
 "The fires of the Europeans smelting works and smithies are usually fed with "
 "coal."
 msgstr ""
+"De vuren van de Europese smelterijen en smederijen worden meestal gevoed met "
+"kolen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:233
 msgctxt "europeans_ware"
 msgid "Grout is a basic building material."
-msgstr ""
+msgstr "Voegspecie is een basisbouwmateriaal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:235
@@ -1243,6 +1276,8 @@ msgid ""
 "The Europeans produces grout in lime kiln or stonemasons house out of "
 "granite and water."
 msgstr ""
+"De Europeanen maken voegmortel uit graniet en water in kalkovens of "
+"steenhouwershuizen."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:245
@@ -1251,12 +1286,17 @@ msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
 "buildings. It is produced out of logs in the wood hardener (basic sawmill)."
 msgstr ""
+"Dit vuurharde hout is zo hard als ijzer en wordt gebruikt voor verschillende "
+"gebouwen. Het wordt geproduceerd uit boomstammen in de houtverharder (basis "
+"zagerij)."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cloth
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:254
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
 msgstr ""
+"Linnen is nodig om verschillende gebouwen te bouwen. Het wordt gemaakt van "
+"riet."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:263
@@ -1265,6 +1305,8 @@ msgid ""
 "Raw material for some sorts of armor. It is produced in the weaving mill out "
 "of wool or reed."
 msgstr ""
+"Grondstof voor sommige soorten harnassen. Het wordt in de weverij gemaakt "
+"van wol of riet."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:272
@@ -1273,24 +1315,27 @@ msgid ""
 "These transparent quartz gems are used to build some exclusive buildings. "
 "They are mined as a byproduct in a deep iron mine or by advanced quarry."
 msgstr ""
+"Deze transparante kwarts edelstenen worden gebruikt om sommige exclusieve "
+"gebouwen te bouwen. Ze worden gedolven als bijproduct in een diepe ijzermijn "
+"of in een geavanceerde steengroeve."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:285
 msgctxt "europeans_ware"
 msgid "Clay is needed to make bricks."
-msgstr ""
+msgstr "Klei is nodig om bakstenen te maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:287
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from gardeners house."
-msgstr ""
+msgstr "De Europeanen halen klei uit het tuiniershuis."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:298
 msgctxt "europeans_ware"
 msgid "Brick is a basic building material."
-msgstr ""
+msgstr "Baksteen is een basis bouwmateriaal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:300
@@ -1299,24 +1344,26 @@ msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
 "granite and water."
 msgstr ""
+"De Europeanen maken bakstenen van klei, graniet en water in kalkovens of "
+"steenhouwershuizen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:311
 msgctxt "europeans_ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Planken zijn een belangrijk bouwmateriaal."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:313
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Ze worden door de zagerij gemaakt van boomstammen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:315
 msgctxt "europeans_ware"
 msgid "They are also used by the ferryyard and shipyard."
-msgstr ""
+msgstr "Ze worden ook gebruikt door de veerbootwerf en scheepswerf."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:325
@@ -1326,6 +1373,9 @@ msgid ""
 "in a quarry. Marble is used as a building material and gets chiseled into "
 "marble columns in the stonemason’s house."
 msgstr ""
+"Marmer is de prachtige steen die uit de bergen wordt gehouwen of in een "
+"steengroeve wordt gewonnen. Marmer wordt gebruikt als bouwmateriaal en wordt "
+"gebeiteld tot marmeren zuilen in het steenhouwershuis."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble Column
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:334
@@ -1335,6 +1385,9 @@ msgid ""
 "needed for nearly every advanced building. They are produced out of marble "
 "at a stonemason’s house."
 msgstr ""
+"Marmeren zuilen vertegenwoordigen de hoge cultuur van de Europeanen, dus ze "
+"zijn nodig voor bijna elk geavanceerd gebouw. Ze worden gemaakt van marmer "
+"in een steenhouwershuis."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:343
@@ -1343,18 +1396,21 @@ msgid ""
 "These wonderful diamonds are used to build advanced buildings. They are "
 "mined as a byproduct in a deep coal mine or by advanced quarry."
 msgstr ""
+"Deze prachtige diamanten worden gebruikt om geavanceerde gebouwen te bouwen. "
+"Ze worden gewonnen als bijproduct in een diepe kolenmijn of in een "
+"geavanceerde steengroeve."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:356
 msgctxt "default_ware"
 msgid "Ore is mined in ore mines."
-msgstr ""
+msgstr "Erts wordt gedolven in ertsmijnen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:358
 msgctxt "europeans_ware"
 msgid "It is smelted in a smelting works to retrieve all the metals."
-msgstr ""
+msgstr "Het wordt gesmolten in een smelterij om alle metalen eruit te halen."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap metal (mixed)
@@ -1365,12 +1421,15 @@ msgid ""
 "Discarded weapons and armor can be recycled in an advanced smelting works to "
 "produce new tools, weapon and armor."
 msgstr ""
+"Afgedankte wapens en harnassen kunnen worden teruggewonnen in een "
+"geavanceerde smelterij om nieuwe gereedschappen, wapens en harnassen te "
+"maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:377
 msgctxt "ware"
 msgid "Iron is smelted out of ores."
-msgstr ""
+msgstr "IJzer wordt uit ertsen gesmolten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:379
@@ -1379,12 +1438,16 @@ msgid ""
 "It is produced by the smelting works. Weapons, armor and tools are made of "
 "iron."
 msgstr ""
+"Het wordt geproduceerd door smelterijen. Wapens, harnassen en gereedschappen "
+"worden van ijzer gemaakt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:398
 msgctxt "ware"
 msgid "Gold is the most valuable of all metals, and it is smelted out of ore."
 msgstr ""
+"Goud is het meest waardevolle van alle metalen en het wordt uit erts "
+"gesmolten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:400
@@ -1393,6 +1456,8 @@ msgid ""
 "It is produced by the smelting works. Some valuable buildings need gold to "
 "be built."
 msgstr ""
+"Het wordt geproduceerd door de smelterijen. Sommige waardevolle gebouwen "
+"hebben goud nodig om gebouwd te worden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:411
@@ -1401,24 +1466,28 @@ msgid ""
 "Wood coins are money made of copper or bronze (copper and tin). Its the "
 "standard barter object."
 msgstr ""
+"Houten munten zijn geld gemaakt van koper of brons (koper en tin). Het is "
+"het standaard ruilobject."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Silver Coin
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:422
 msgctxt "ware"
 msgid "Wood coins are money made of silver. Its a valuable barter object."
 msgstr ""
+"Houten munten zijn geld gemaakt van zilver. Het is een waardevol ruilobject."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:433
 msgctxt "ware"
 msgid "Wood coins are money made of gold. Its most valuable barter object."
 msgstr ""
+"Houten munten zijn geld gemaakt van goud. Het meest waardevolle ruilobject."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:447
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester, the gardener, and the fish breeder."
-msgstr ""
+msgstr "Grote emmers voor de boswachter, de tuinman en de viskweker."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
@@ -1428,13 +1497,14 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:566
 msgctxt "europeans_ware"
 msgid "They are produced by all smithies."
-msgstr ""
+msgstr "Ze worden geproduceerd door alle smederijen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:460
 msgctxt "europeans_ware"
 msgid "This basket is needed  by advanced carrier to transport wares."
 msgstr ""
+"Deze mand is nodig voor geavanceerde vervoerders om goederen te vervoeren."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
@@ -1442,31 +1512,33 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:540
 msgctxt "europeans_ware"
 msgid "It is produced by all smithies."
-msgstr ""
+msgstr "Het wordt geproduceerd in alle smederijen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:473
 msgctxt "europeans_ware"
 msgid "The scythe is a secondary tool of the lumberjacks."
-msgstr ""
+msgstr "De zeis is een secundair gereedschap van de houthakkers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:475
 msgctxt "europeans_ware"
 msgid "Scythes are produced by all smithies."
-msgstr ""
+msgstr "Zeisen worden door alle smederijen gemaakt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:486
 msgctxt "europeans_ware"
 msgid "The felling ax is the tool to chop down trees."
-msgstr ""
+msgstr "De kapbijl is het gereedschap om bomen om te hakken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:488
 msgctxt "europeans_ware"
 msgid "Felling axes are used by lumberjacks and produced by all smithies."
 msgstr ""
+"Hakbijlen worden gebruikt door houthakkers en geproduceerd in alle "
+"smederijen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Pick, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:499
@@ -1474,12 +1546,14 @@ msgctxt "europeans_ware"
 msgid ""
 "The pick is an essential tool. Picks are used by stonemasons and miners."
 msgstr ""
+"De pikhouweel is een essentieel gereedschap. Pikhouwelen worden gebruikt "
+"door steenhouwers en mijnwerkers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Pick, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:501
 msgctxt "europeans_ware"
 msgid "They are produced produced by all smithies."
-msgstr ""
+msgstr "Ze worden geproduceerd door alle smederijen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:512
@@ -1488,6 +1562,8 @@ msgid ""
 "The shovel is an essential tool. Therefore the forester, the gardener and "
 "the terraformer use them."
 msgstr ""
+"De schop is een essentieel stuk gereedschap. Daarom gebruiken de boswachter, "
+"de tuinman en de terreinvormer de schop."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:525
@@ -1496,6 +1572,8 @@ msgid ""
 "The hammer is an essential tool. Geologists, builders, and smiths all need a "
 "hammer."
 msgstr ""
+"De hamer is een essentieel gereedschap. Geologen, bouwvakkers en smeden "
+"hebben allemaal een hamer nodig."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:527
@@ -1504,6 +1582,8 @@ msgid ""
 "Make sure you’ve always got some in reserve! They are produced by all "
 "smithies."
 msgstr ""
+"Zorg dat je er altijd een paar achter de hand hebt! Ze worden in alle "
+"smederijen gemaakt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:538
@@ -1512,12 +1592,14 @@ msgid ""
 "The saw is an essential tool. This saw is needed by the woodcutter and the "
 "carpenter."
 msgstr ""
+"De zaag is een essentieel gereedschap. De houthakker en de timmerman hebben "
+"de zaag nodig."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:551
 msgctxt "europeans_ware"
 msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
+msgstr "Vuurtonnen zijn de gereedschappen voor het smelten van ertsen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:553
@@ -1526,12 +1608,14 @@ msgid ""
 "They are used in the smelting works and smithies and produced produced by "
 "all smithies."
 msgstr ""
+"Ze worden gebruikt in de smelterijen en smederijen en geproduceerd in alle "
+"smelterijen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Needles, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:564
 msgctxt "europeans_ware"
 msgid "Needles are used by weavers."
-msgstr ""
+msgstr "Naalden worden gebruikt door wevers."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:579
@@ -1540,6 +1624,9 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the big manufactory. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Basisbepantsering voor Europese soldaten. Het wordt geproduceerd in een "
+"grote fabriek. In combinatie met een houten speer is het de uitrusting voor "
+"jonge soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:588
@@ -1548,6 +1635,8 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Basisharnas voor Europese soldaten. Het wordt geproduceerd in de weverij. In "
+"combinatie met een houten speer is het de uitrusting voor jonge soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:597
@@ -1557,6 +1646,9 @@ msgid ""
 "by a tailor and used in a battle arena to protect soldiers with additional "
 "health points."
 msgstr ""
+"Het gecomprimeerde harnas is een gemiddeld harnas voor Europese soldaten. "
+"Het wordt gemaakt door een kleermaker en gebruikt in een gevechtsarena om "
+"soldaten te beschermen met extra gezondheidspunten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:606
@@ -1565,6 +1657,8 @@ msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
 "arena to protect soldiers with additional health points."
 msgstr ""
+"Het geavanceerde pantser wordt geproduceerd in een fabriek en gebruikt in de "
+"strijdarena om soldaten te beschermen met extra gezondheidspunten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:615
@@ -1573,6 +1667,8 @@ msgid ""
 "Wooden boots are basic footwear for soldiers to be protect on their feet. "
 "They are produced by the dressmaker."
 msgstr ""
+"Houten laarzen zijn basischoeisel voor soldaten om hun voeten te beschermen. "
+"Ze worden gemaakt door de kleermaker."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:624
@@ -1582,6 +1678,9 @@ msgid ""
 "feet. They are produced by the dressmaker and used to train soldiers’ evade "
 "from level 0 to level 1."
 msgstr ""
+"Stevige laarzen zijn uitstekend schoeisel voor soldaten om sneller ter been "
+"te zijn. Ze worden gemaakt door de kleermaker en worden gebruikt om het "
+"ontwijken van soldaten te trainen van niveau 0 tot niveau 1."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:633
@@ -1591,6 +1690,9 @@ msgid ""
 "their feet. They are produced by the dressmaker and used to train soldiers’ "
 "evade from level 1 to level 2."
 msgstr ""
+"Vlugge laarzen zijn licht en duurzaam schoeisel voor soldaten om sneller ter "
+"been te zijn. Ze worden gemaakt door de kleermaker en worden gebruikt om het "
+"ontwijken van soldaten te trainen van niveau 1 naar niveau 2."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:642
@@ -1599,6 +1701,9 @@ msgid ""
 "Hero boots! The only suitable footwear for a real hero. They are produced by "
 "the dressmaker and used to train soldiers’ evade from level 2 to level 3."
 msgstr ""
+"Heldenlaarzen! Het enige geschikte schoeisel voor een echte held. Ze worden "
+"gemaakt door de kleermaker en gebruikt om het ontwijken van soldaten te "
+"trainen van niveau 2 naar niveau 3."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:654
@@ -1608,6 +1713,9 @@ msgid ""
 "produced in the manufactory. In combination with armor, it is the equipment "
 "to fit out young soldiers."
 msgstr ""
+"Deze houten speer is het basiswapen in het Europese militaire systeem. Het "
+"wordt geproduceerd in de fabriek. In combinatie met een harnas is het de "
+"uitrusting voor jonge soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:663
@@ -1617,6 +1725,9 @@ msgid ""
 "and used in a battle arena – together with food – to train soldiers in "
 "attack."
 msgstr ""
+"Dit is een geavanceerde speer met een stalen punt. Het wordt geproduceerd in "
+"een fabriek en gebruikt in een gevechtsarena – samen met voedsel – om "
+"soldaten te trainen in aanvallen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:672
@@ -1625,6 +1736,8 @@ msgid ""
 "This is an broad ax. It is produced in a manufactory and used in a battle "
 "arena – together with food – to train soldiers in attack."
 msgstr ""
+"Dit is een brede bijl. Het wordt geproduceerd in een fabriek en gebruikt in "
+"een gevechtsarena – samen met voedsel – om soldaten te trainen in aanvallen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:681
@@ -1633,6 +1746,9 @@ msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
 "in a battle arena – together with food – to train soldiers in attack."
 msgstr ""
+"Dit is een breed zwaard. Het wordt geproduceerd in de geavanceerde fabriek "
+"en gebruikt in een gevechtsarena – samen met voedsel – om soldaten te "
+"trainen in aanvallen."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:690
@@ -1642,6 +1758,9 @@ msgid ""
 "manufactory. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
+"De helm is het basisverdedigingsmiddel van een soldaat. Hij wordt "
+"geproduceerd in de fabriek. In combinatie met een harnas is het de "
+"uitrusting voor jonge soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:699
@@ -1651,6 +1770,9 @@ msgid ""
 "manufactory and used in a battle arena – together with food – to train "
 "soldiers in defense."
 msgstr ""
+"Het masker is het middelste verdedigingsmiddel van een soldaat. Het wordt "
+"geproduceerd in een fabriek en gebruikt in een gevechtsarena – samen met "
+"voedsel – om soldaten te trainen in verdediging."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:708
@@ -1659,6 +1781,8 @@ msgid ""
 "This steel shield is produced in a manufactory and used in a battle arena – "
 "together with food – to train soldiers in defense."
 msgstr ""
+"Dit stalen schild wordt geproduceerd in een fabriek en gebruikt in een "
+"gevechtsarena – samen met voedsel – om soldaten te trainen in verdediging."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:717
@@ -1668,18 +1792,22 @@ msgid ""
 "are produced in the advanced manufactory and used in the advanced battle "
 "arena – together with food – to train soldiers in defense."
 msgstr ""
+"Deze geavanceerde schilden worden gebruikt door de beste soldaten van de "
+"Europeanen. Ze worden geproduceerd in de geavanceerde fabriek en gebruikt in "
+"de geavanceerde gevechtsarena – samen met voedsel – om soldaten te trainen "
+"in verdediging."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:732
 msgctxt "europeans_worker"
 msgid "Used for recruiting all other workers."
-msgstr ""
+msgstr "Wordt gebruikt voor het werven van alle andere werknemers."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:741
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
-msgstr ""
+msgstr "Draagt voorwerpen langs je wegen met zijn handen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:750
@@ -1687,30 +1815,34 @@ msgctxt "europeans_worker"
 msgid ""
 "Carries items along your roads with their hands. Only used for busy roads."
 msgstr ""
+"Draagt voorwerpen langs je wegen met zijn handen. Alleen gebruikt voor "
+"drukke wegen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:759
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets. Only used for busy roads."
 msgstr ""
+"Draagt voorwerpen langs je wegen met manden. Alleen gebruikt voor drukke "
+"wegen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ferry
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:768
 msgctxt "europeans_worker"
 msgid "Ships wares across narrow rivers."
-msgstr ""
+msgstr "Schepen hun waren over smalle rivieren."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Recruit
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:777
 msgctxt "europeans_worker"
 msgid "Eager to become a soldier and defend his tribe!"
-msgstr ""
+msgstr "Hij staat te popelen om soldaat te worden en zijn stam te verdedigen!"
 
 #. TRANSLATORS: Helptext for an Europeans worker: Soldier
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:786
 msgctxt "europeans_worker"
 msgid "Defend and Conquer!"
-msgstr ""
+msgstr "Verdedig en Overwin!"
 
 #. TRANSLATORS: Helptext for an Europeans worker: Worker
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:798
@@ -1718,7 +1850,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:816
 msgctxt "europeans_worker"
 msgid "General worker with no special ability."
-msgstr ""
+msgstr "Algemene werker zonder speciale vaardigheden."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Shipwright
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:825
@@ -1726,19 +1858,19 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:843
 msgctxt "europeans_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr ""
+msgstr "Werkt op de scheepswerf en bouwt nieuwe schepen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Builder
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:852
 msgctxt "europeans_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Werkt op bouwwerven om nieuwe gebouwen op te trekken."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Geologist
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:861
 msgctxt "europeans_worker"
 msgid "Discovers resources for mining."
-msgstr ""
+msgstr "Ontdekt grondstoffen voor mijnbouw."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:873
@@ -1746,7 +1878,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:891
 msgctxt "europeans_worker"
 msgid "Fells trees."
-msgstr ""
+msgstr "Bomen vellen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:900
@@ -1754,7 +1886,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:918
 msgctxt "europeans_worker"
 msgid "Plant trees."
-msgstr ""
+msgstr "Bomen Planten"
 
 #. TRANSLATORS: Helptext for an Europeans worker: Stonecutter
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:930
@@ -1762,13 +1894,13 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:948
 msgctxt "europeans_worker"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
-msgstr ""
+msgstr "Hakt blokken graniet en marmer uit rotsen in de omgeving."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:957
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house and planting reed."
-msgstr ""
+msgstr "Klei maken voor kalkoven of steenhouwershuis en riet planten."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:966
@@ -1776,6 +1908,8 @@ msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed and cotton."
 msgstr ""
+"Het maken van klei voor kalkovens of steenhouwershuis en het planten van "
+"riet en katoen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:975
@@ -1784,6 +1918,8 @@ msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed, cotton and "
 "rubber trees."
 msgstr ""
+"Het maken van klei voor kalkovens of steenhouwershuis en het planten van "
+"riet-, katoen- en rubberbomen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Miner
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:987
@@ -1791,7 +1927,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1005
 msgctxt "europeans_worker"
 msgid "Mines ore and minerals."
-msgstr ""
+msgstr "Mijnt erts en mineralen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Terraformer
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1014
@@ -1799,7 +1935,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1032
 msgctxt "europeans_worker"
 msgid "Terraforms desert and coast into fertile soil."
-msgstr ""
+msgstr "Transformeert woestijn en kust in vruchtbare grond."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Trainer
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1044
@@ -1807,7 +1943,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1062
 msgctxt "europeans_worker"
 msgid "Trains the soldiers."
-msgstr ""
+msgstr "Traint de soldaten."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Scout
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1071
@@ -1817,6 +1953,8 @@ msgctxt "europeans_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
 msgstr ""
+"Verkenners zoals Scotty de verkenner verkennen onontdekte gebieden op een "
+"padvindersmanier."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Scout
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1101
@@ -1825,34 +1963,36 @@ msgid ""
 "Traders work in markets or in trading posts to exchange wares with other "
 "tribes."
 msgstr ""
+"Handelaren werken op markten of in handelsposten om goederen te ruilen met "
+"andere stammen."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1112
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1147
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "De overblijfselen van een verwoest gebouw."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1119
 msgid "This cotton field has just been planted."
-msgstr ""
+msgstr "Dit katoenveld is net aangeplant."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1126
 msgid "This cotton field is growing."
-msgstr ""
+msgstr "Dit katoenveld groeit."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1133
 msgid ""
 "This cotton field is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Dit katoenveld staat in bloei. Een imker kan er honing van maken."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1140
 msgid "This cotton field is ready for harvesting."
-msgstr ""
+msgstr "Dit katoenveld is klaar om geoogst te worden."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1154
@@ -1860,6 +2000,8 @@ msgid ""
 "Ponds with water becomes dry after some time. These dry holes vanish after a "
 "while."
 msgstr ""
+"Vijvers met water staan na verloop van tijd droog. Deze droge gaten "
+"verdwijnen na een tijdje."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1161
@@ -1868,27 +2010,30 @@ msgid ""
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
+"Wanneer tuiniers aarde afgraven, laten ze gaten met water achter in de "
+"grond. Deze vallen na een tijdje droog of kunnen door terravormers worden "
+"gebruikt om nieuwe grond te produceren."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1168
 msgid "This reed field has just been planted."
-msgstr ""
+msgstr "Dit rietveld is net geplant."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1175
 msgid "This reed field is growing."
-msgstr ""
+msgstr "Dit rietveld groeit."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1182
 msgid ""
 "This reed field is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Dit rietveld staat in bloei. Een imker kan er honing van maken."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1189
 msgid "This reed field is ready for harvesting."
-msgstr ""
+msgstr "Dit rietveld kan worden geoogst."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Sapling
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1196
@@ -1896,7 +2041,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1252
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1280
 msgid "This rubber tree has just been planted."
-msgstr ""
+msgstr "Deze rubberboom is net geplant."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1203
@@ -1904,7 +2049,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1259
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1287
 msgid "This rubber tree is growing."
-msgstr ""
+msgstr "Deze rubberboom groeit."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1210
@@ -1912,7 +2057,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1266
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1294
 msgid "This rubber tree is fully grown. Lianas can be gathered from it."
-msgstr ""
+msgstr "Deze rubberboom is volgroeid. Je kunt er lianen van plukken."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Old
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1217
@@ -1923,49 +2068,55 @@ msgid ""
 "This rubber tree is ready for harvesting rubber by a master woodcutter. "
 "Other tribes can harvest it for normal logs."
 msgstr ""
+"Deze rubberboom is klaar om geoogst te worden door een meester-houtsnijder. "
+"Andere stammen kunnen hem oogsten voor normale boomstammen."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1308
 msgid "There are no resources in the ground here."
-msgstr ""
+msgstr "Er zitten hier geen grondstoffen in de grond."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Water
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1315
 msgid "There is water in the ground here that can be pulled up by a well."
 msgstr ""
+"Er zit hier water in de grond dat kan worden opgepompt met een waterput."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1323
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1367
 msgid "Coal veins contain coal that can be dug up by coal mines."
 msgstr ""
+"Steenkooladers bevatten steenkool die kan worden opgegraven in "
+"steenkoolmijnen."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1325
 msgid "There is only a little bit of coal here."
-msgstr ""
+msgstr "Er is hier maar een klein beetje steenkool."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1334
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1378
 msgid "Iron veins contain iron ore that can be dug up by iron mines."
 msgstr ""
+"IJzeraders bevatten ijzererts dat kan worden opgegraven in ijzermijnen."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1336
 msgid "There is only a little bit of iron here."
-msgstr ""
+msgstr "Er is hier maar een klein beetje ijzer."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1345
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1389
 msgid "Gold veins contain gold ore that can be dug up by gold mines."
-msgstr ""
+msgstr "Goudaders bevatten gouderts dat kan worden opgegraven in goudmijnen."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1347
 msgid "There is only a little bit of gold here."
-msgstr ""
+msgstr "Er is hier maar een klein beetje goud."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 1
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1356
@@ -1974,47 +2125,49 @@ msgid ""
 "Marble is a basic building material and can be dug up by a marble mine. You "
 "will also get granite from the mine."
 msgstr ""
+"Marmer is een basisbouwmateriaal en kan worden opgegraven in een marmermijn. "
+"Je krijgt ook graniet uit de mijn."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1358
 msgid "There is only a little bit of marble here."
-msgstr ""
+msgstr "Er is hier maar een klein beetje marmer."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1369
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Er is hier veel steenkool."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1380
 msgid "There is a lot of iron here."
-msgstr ""
+msgstr "Er is hier veel ijzer."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1391
 msgid "There is a lot of gold here."
-msgstr ""
+msgstr "Er is hier veel goud."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1402
 msgid "There is a lot of marble here."
-msgstr ""
+msgstr "Er is hier veel marmer."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ship Under Construction
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1410
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "Op deze plek wordt een schip gebouwd."
 
 #. TRANSLATORS: Purpose helptext for an Europeans immovable: Trade Pole
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1417
 msgctxt "europeans_building"
 msgid "Open market to exchange wares with other allied tribes."
-msgstr ""
+msgstr "Open markt om goederen uit te wisselen met andere geallieerde stammen."
 
 #. TRANSLATORS: Helptext for an Europeans immovable usable by Europeans: Dead Tree
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1425
 msgid "The remains of an old tree."
-msgstr ""
+msgstr "De resten van een oude boom."
 
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
@@ -2029,18 +2182,21 @@ msgstr ""
 msgid ""
 "This tree is only planted by the amazon tribe but can be harvested for logs."
 msgstr ""
+"Deze boom wordt alleen geplant door de amazonestam, maar kan worden geoogst "
+"voor boomstammen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Headquarters
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1493
 msgctxt "europeans_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
+"Onderdak voor je mensen. Je kunt er ook je goederen en gereedschap opslaan."
 
 #. TRANSLATORS: Note helptext for an Europeans warehouse: Headquarters
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1495
 msgctxt "europeans_building"
 msgid "The headquarters is your main building."
-msgstr ""
+msgstr "Het hoofdkwartier is je belangrijkste gebouw."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Warehouse
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1502
@@ -2049,6 +2205,8 @@ msgid ""
 "Your workers and soldiers will find shelter here. Also stores your wares and "
 "tools."
 msgstr ""
+"Je arbeiders en soldaten vinden hier onderdak. Je kunt er ook je goederen en "
+"gereedschap opslaan."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1509
@@ -2057,6 +2215,8 @@ msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
 "soldiers, wares and tools."
 msgstr ""
+"Dient als basis voor overzeese kolonisatie en handel. Hier kun je ook je "
+"soldaten, goederen en gereedschappen opslaan."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Market
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
@@ -2064,20 +2224,20 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1523
 msgctxt "europeans_building"
 msgid "Market building to sale wares to other allied tribes."
-msgstr ""
+msgstr "Marktgebouw om goederen te verkopen aan andere geallieerde stammen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1530
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1537
 msgctxt "europeans_building"
 msgid "Store building to purchase wares from other allied tribes."
-msgstr ""
+msgstr "Winkelgebouw om goederen van andere geallieerde stammen te kopen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Market
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1544
 msgctxt "europeans_building"
 msgid "Trading building to purchase wares from other allied tribes."
-msgstr ""
+msgstr "Handelsgebouw om goederen van andere geallieerde stammen te kopen."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutter's House
@@ -2087,25 +2247,28 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1571
 msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
-msgstr ""
+msgstr "Velt bomen in de omgeving en verwerkt ze tot boomstammen."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1555
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
 msgstr ""
+"De houthakkershut heeft bomen nodig om te kappen binnen het werkgebied."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Woodcutter's House
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1564
 msgctxt "europeans_building"
 msgid "The woodcutter’s house needs trees to fell within the work area."
 msgstr ""
+"Het houthakkershuis heeft bomen nodig om te kappen binnen het werkgebied."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Lumberjack's House
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1573
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
 msgstr ""
+"Het houthakkershuis heeft bomen nodig om te kappen binnen het werkgebied."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Ranger's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
@@ -2114,7 +2277,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1598
 msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
-msgstr ""
+msgstr "Plant bomen in de omgeving."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Ranger's Hut
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1582
@@ -2122,6 +2285,8 @@ msgctxt "europeans_building"
 msgid ""
 "The ranger’s hut needs free space within the work area to plant the trees."
 msgstr ""
+"De boswachtershut heeft vrije ruimte nodig binnen het werkgebied om de bomen "
+"te planten."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1591
@@ -2131,6 +2296,8 @@ msgid ""
 "The forester’s house needs free space within the work area to plant the "
 "trees."
 msgstr ""
+"Het boswachtershuis heeft vrije ruimte nodig binnen het werkgebied om de "
+"bomen te planten."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1607
@@ -2139,6 +2306,8 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed in the holes created."
 msgstr ""
+"Graaf modder op uit de grond en gebruik water om er klei van te maken. Plant "
+"vervolgens riet in de ontstane gaten."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1614
@@ -2147,6 +2316,8 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed and cotton in the holes created."
 msgstr ""
+"Graaft modder op uit de grond en gebruikt water om er klei van te maken. "
+"Plant vervolgens riet en katoen in de ontstane gaten."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1621
@@ -2155,12 +2326,14 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed, cotton and rubber trees in the holes created."
 msgstr ""
+"Graaft modder op uit de grond en gebruikt water om er klei van te maken. Dan "
+"planten ze riet-, katoen- en rubberbomen in de ontstane gaten."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1628
 msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
-msgstr ""
+msgstr "Zaagt ruwe stukken graniet uit rotsen in de omgeving."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for an Europeans production site: Quarry
@@ -2169,19 +2342,19 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1648
 msgctxt "europeans_building"
 msgid "The quarry needs rocks to cut within the work area."
-msgstr ""
+msgstr "De steengroeve moet stenen hakken binnen het werkgebied."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1637
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite out of rocks in the vicinity."
-msgstr ""
+msgstr "Zaagt blokken graniet uit rotsen in de omgeving."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1646
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
-msgstr ""
+msgstr "Hakt blokken graniet en marmer uit rotsen in de omgeving."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
@@ -2190,7 +2363,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1669
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Verkent onbekend terrein."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Terraformer's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
@@ -2199,7 +2372,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1690
 msgctxt "building"
 msgid "Terraforms deserts and coasts into fertile soil."
-msgstr ""
+msgstr "Transformeert woestijnen en kusten tot vruchtbare grond."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
@@ -2212,13 +2385,13 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1741
 msgctxt "europeans_building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Haalt water uit de diepte."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1748
 msgctxt "europeans_building"
 msgid "Weaves cloth out of reed."
-msgstr ""
+msgstr "Weeft stoffen van riet."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1755
@@ -2227,18 +2400,20 @@ msgid ""
 "Weaves cloth for buildings and ships’ sails, and armor to equip and train "
 "the soldiers."
 msgstr ""
+"Weeft stoffen voor gebouwen en scheepszeilen, harnassen om de soldaten uit "
+"te rusten en te trainen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1762
 msgctxt "europeans_building"
 msgid "Weaves cloth and armor out of cotton and reed."
-msgstr ""
+msgstr "Weeft stoffen en harnassen van katoen en riet."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1769
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood."
-msgstr ""
+msgstr "Het harden van boomstammen om blackwood te produceren."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1776
@@ -2246,6 +2421,8 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood and saws log to produce planks."
 msgstr ""
+"Verhard stamhout om blackwood te produceren en zaagt stamhout om planken te "
+"produceren."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
@@ -2254,7 +2431,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1804
 msgctxt "europeans_building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Brandt houtblokken tot houtskool."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1811
@@ -2264,6 +2441,8 @@ msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
 "solidifies and so reinforces masonry."
 msgstr ""
+"Verwerkt klei en graniet om bakstenen en 'specie' te maken, een substantie "
+"die stolt en zo metselwerk versterkt."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1813
@@ -2273,6 +2452,8 @@ msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
 "Brick and grout only used by advanced buildings."
 msgstr ""
+"De opbrengst van de kalkoven gaat alleen naar bouwplaatsen die het nodig "
+"hebben. Baksteen en specie worden alleen gebruikt voor geavanceerde gebouwen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Stonemason's House
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1829
@@ -2282,6 +2463,9 @@ msgid ""
 "solidifies and so reinforces masonry. Additionally carves marble columns out "
 "of marble."
 msgstr ""
+"Verwerkt klei en graniet om bakstenen en 'specie' te maken, een substantie "
+"die stolt en zo metselwerk versterkt. Daarnaast kerft hij marmeren zuilen "
+"uit marmer."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1831
@@ -2290,24 +2474,27 @@ msgid ""
 "The stonemason’s house's output will only go to construction sites that need "
 "it. Marble column only used by advanced buildings."
 msgstr ""
+"De opbrengst van het steenhouwershuis gaat alleen naar bouwplaatsen die het "
+"nodig hebben. Marmeren zuilen worden alleen gebruikt in geavanceerde "
+"gebouwen."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1838
 msgctxt "europeans_building"
 msgid "Smelts ore into iron."
-msgstr ""
+msgstr "Smelt erts tot ijzer."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1845
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold."
-msgstr ""
+msgstr "Smelt erts tot ijzer en goud."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1852
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold. Recycles scrap metal."
-msgstr ""
+msgstr "Smelt erts tot ijzer en goud. Recycleert schroot."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1859
@@ -2315,7 +2502,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1873
 msgctxt "europeans_building"
 msgid "Forges all the tools that your workers need."
-msgstr ""
+msgstr "Smeedt alle gereedschappen die je arbeiders nodig hebben."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1880
@@ -2323,7 +2510,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1894
 msgctxt "europeans_building"
 msgid "Produces clothing and armor."
-msgstr ""
+msgstr "Produceert kleding en bepantsering."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1901
@@ -2331,7 +2518,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1915
 msgctxt "europeans_building"
 msgid "Produces shoes and boots."
-msgstr ""
+msgstr "Produceert schoenen en laarzen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1922
@@ -2339,7 +2526,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1936
 msgctxt "europeans_building"
 msgid "Produces shields and weapons."
-msgstr ""
+msgstr "Produceert schilden en wapens."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:1945
@@ -2350,6 +2537,9 @@ msgid ""
 "Large factory that produces complex wares such as tools, weapons, armor, "
 "clothing, shoes or building materials from simple raw materials."
 msgstr ""
+"Grote fabriek die complexe waren produceert zoals gereedschap, wapens, "
+"wapenuitrusting, kleding, schoenen of bouwmaterialen uit eenvoudige "
+"grondstoffen."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -2365,7 +2555,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2003
 msgctxt "europeans_building"
 msgid "Digs coal out of the ground in mountain terrain."
-msgstr ""
+msgstr "Graaft steenkool uit de grond in bergachtig terrein."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
@@ -2381,7 +2571,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2045
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Graaft ijzererts uit de grond in bergachtig terrein."
 
 #. TRANSLATORS: Purpose helptext for production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
@@ -2397,7 +2587,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2087
 msgctxt "europeans_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Graaft gouderts uit de grond in bergachtig terrein."
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 1
@@ -2407,7 +2597,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2119
 msgctxt "europeans_building"
 msgid "Trains recruits to soldiers."
-msgstr ""
+msgstr "Traint rekruten tot soldaten."
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 2
@@ -2417,13 +2607,13 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2121
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts and weapons."
-msgstr ""
+msgstr "Rust de rekruten uit met alle benodigde pantseronderdelen en wapens."
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2129
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’."
-msgstr ""
+msgstr "Traint soldaten in 'Ontwijken', 'Gezondheid' en 'Aanval'."
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 1
@@ -2434,6 +2624,7 @@ msgstr ""
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."
 msgstr ""
+"Traint soldaten in 'Ontwijken', 'Gezondheid', 'Aanval' en in 'Verdediging'."
 
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 2
@@ -2446,6 +2637,8 @@ msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
 "remain totally unaffected."
 msgstr ""
+"'Ontwijken' vergroot de kans van de soldaat om niet geraakt te worden door "
+"de vijand en zo totaal onaangetast te blijven."
 
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Guardhouse
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Small Tower
@@ -2471,7 +2664,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2270
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
-msgstr ""
+msgstr "Garnizoenstroepen om je territorium uit te breiden."
 
 #. TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
 #. TRANSLATORS: Note helptext for an Europeans military site: Sentry
@@ -2500,6 +2693,9 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a soldier to "
 "send him away."
 msgstr ""
+"Als je te weinig soldaten hebt om nieuwe militaire locaties te bezetten, "
+"gebruik je de pijltjestoets omlaag om de capaciteit te verlagen. Je kunt ook "
+"op een soldaat klikken om hem weg te sturen."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2281
@@ -2507,7 +2703,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2299
 msgctxt "europeans_building"
 msgid "Builds ferries."
-msgstr ""
+msgstr "Bouwt veerboten."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2283
@@ -2515,7 +2711,7 @@ msgstr ""
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2301
 msgctxt "europeans_building"
 msgid "Needs water nearby."
-msgstr ""
+msgstr "Water in de buurt nodig."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2308
@@ -2526,36 +2722,41 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
 "between ports."
 msgstr ""
+"Bouwt schepen die worden gebruikt voor overzeese kolonisatie en voor handel "
+"tussen havens."
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Construction Site
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2331
 msgctxt "europeans_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr ""
+"'Scheld niet op de bouwvakker die een tekort aan bouwmaterialen heeft.'"
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Construction Site
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2333
 msgctxt "europeans_building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr ""
+"Spreekwoord veel gebruikt voor onmogelijke taken van welke aard dan ook"
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Construction Site
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2335
 msgctxt "europeans_building"
 msgid "A new building is being built at this construction site."
-msgstr ""
+msgstr "Op deze bouwplaats wordt een nieuw gebouw neergezet."
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Dismantle Site
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2342
 msgctxt "europeans_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
+"'Nieuwe paden zullen verschijnen als je bereid bent de oude af te breken.'"
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Dismantle Site
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2344
 msgctxt "europeans_building"
 msgid "Proverb"
-msgstr ""
+msgstr "Spreekwoord"
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Dismantle Site
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2346
@@ -2565,391 +2766,394 @@ msgid ""
 "resources that were used during this building’s construction to your tribe’s "
 "stores."
 msgstr ""
+"Er wordt een gebouw ontmanteld op deze ontmantelingslocatie, waardoor een "
+"deel van de grondstoffen die gebruikt zijn tijdens de bouw van dit gebouw "
+"terugkomt in de opslagplaatsen van je stam."
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2352
 msgctxt "warehousename"
 msgid "Europe"
-msgstr ""
+msgstr "Europa"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2353
 msgctxt "warehousename"
 msgid "Åland"
-msgstr ""
+msgstr "Åland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2354
 msgctxt "warehousename"
 msgid "Albania"
-msgstr ""
+msgstr "Albanië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2355
 msgctxt "warehousename"
 msgid "Andorra"
-msgstr ""
+msgstr "Andorra"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2356
 msgctxt "warehousename"
 msgid "Armenia"
-msgstr ""
+msgstr "Armenië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2357
 msgctxt "warehousename"
 msgid "Austria"
-msgstr ""
+msgstr "Oostenrijk"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2358
 msgctxt "warehousename"
 msgid "Azerbaijan"
-msgstr ""
+msgstr "Azerbeidzjan"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2359
 msgctxt "warehousename"
 msgid "Belarus"
-msgstr ""
+msgstr "Wit-Rusland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2360
 msgctxt "warehousename"
 msgid "Belgium"
-msgstr ""
+msgstr "België"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2361
 msgctxt "warehousename"
 msgid "Bosnia"
-msgstr ""
+msgstr "Bosnië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2362
 msgctxt "warehousename"
 msgid "Bulgaria"
-msgstr ""
+msgstr "Bulgarije"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2363
 msgctxt "warehousename"
 msgid "Corsica"
-msgstr ""
+msgstr "Corsica"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2364
 msgctxt "warehousename"
 msgid "Croatia"
-msgstr ""
+msgstr "Kroatië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2365
 msgctxt "warehousename"
 msgid "Cyprus"
-msgstr ""
+msgstr "Cyprus"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2366
 msgctxt "warehousename"
 msgid "Czechia"
-msgstr ""
+msgstr "Tsjechië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2367
 msgctxt "warehousename"
 msgid "Denmark"
-msgstr ""
+msgstr "Denemarken"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2368
 msgctxt "warehousename"
 msgid "England"
-msgstr ""
+msgstr "Engeland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2369
 msgctxt "warehousename"
 msgid "Estonia"
-msgstr ""
+msgstr "Estland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2370
 msgctxt "warehousename"
 msgid "Faroe Islands"
-msgstr ""
+msgstr "Faeröer Eilanden"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2371
 msgctxt "warehousename"
 msgid "Finland"
-msgstr ""
+msgstr "Finland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2372
 msgctxt "warehousename"
 msgid "France"
-msgstr ""
+msgstr "Frankrijk"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2373
 msgctxt "warehousename"
 msgid "Georgia"
-msgstr ""
+msgstr "Georgië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2374
 msgctxt "warehousename"
 msgid "Germany"
-msgstr ""
+msgstr "Duitsland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2375
 msgctxt "warehousename"
 msgid "Gibraltar"
-msgstr ""
+msgstr "Gibraltar"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2376
 msgctxt "warehousename"
 msgid "Greece"
-msgstr ""
+msgstr "Griekenland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2377
 msgctxt "warehousename"
 msgid "Guernsey"
-msgstr ""
+msgstr "Guernsey"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2378
 msgctxt "warehousename"
 msgid "Herzegovina"
-msgstr ""
+msgstr "Herzegovina"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2379
 msgctxt "warehousename"
 msgid "Hungary"
-msgstr ""
+msgstr "Hongarije"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2380
 msgctxt "warehousename"
 msgid "Iceland"
-msgstr ""
+msgstr "IJsland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2381
 msgctxt "warehousename"
 msgid "Isle of Man"
-msgstr ""
+msgstr "Eiland Man"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2382
 msgctxt "warehousename"
 msgid "Ireland"
-msgstr ""
+msgstr "Ierland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2383
 msgctxt "warehousename"
 msgid "Italy"
-msgstr ""
+msgstr "Italië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2384
 msgctxt "warehousename"
 msgid "Jersey"
-msgstr ""
+msgstr "Jersey"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2385
 msgctxt "warehousename"
 msgid "Kazakhstan"
-msgstr ""
+msgstr "Kazakhstan"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2386
 msgctxt "warehousename"
 msgid "Kosovo"
-msgstr ""
+msgstr "Kosovo"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2387
 msgctxt "warehousename"
 msgid "Latvia"
-msgstr ""
+msgstr "Letland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2388
 msgctxt "warehousename"
 msgid "Liechtenstein"
-msgstr ""
+msgstr "Liechtenstein"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2389
 msgctxt "warehousename"
 msgid "Lithuania"
-msgstr ""
+msgstr "Litouwen"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2390
 msgctxt "warehousename"
 msgid "Luxembourg"
-msgstr ""
+msgstr "Luxemburg"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2391
 msgctxt "warehousename"
 msgid "Malta"
-msgstr ""
+msgstr "Malta"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2392
 msgctxt "warehousename"
 msgid "Moldova"
-msgstr ""
+msgstr "Moldavië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2393
 msgctxt "warehousename"
 msgid "Monaco"
-msgstr ""
+msgstr "Monaco"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2394
 msgctxt "warehousename"
 msgid "Montenegro"
-msgstr ""
+msgstr "Montenegro"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2395
 msgctxt "warehousename"
 msgid "Netherlands"
-msgstr ""
+msgstr "Nederland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2396
 msgctxt "warehousename"
 msgid "North Macedonia"
-msgstr ""
+msgstr "Noord Macedonië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2397
 msgctxt "warehousename"
 msgid "Norway"
-msgstr ""
+msgstr "Noorwegen"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2398
 msgctxt "warehousename"
 msgid "Poland"
-msgstr ""
+msgstr "Polen"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2399
 msgctxt "warehousename"
 msgid "Portugal"
-msgstr ""
+msgstr "Portugal"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2400
 msgctxt "warehousename"
 msgid "Romania"
-msgstr ""
+msgstr "Roemenië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2401
 msgctxt "warehousename"
 msgid "Russia"
-msgstr ""
+msgstr "Rusland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2402
 msgctxt "warehousename"
 msgid "San Marino"
-msgstr ""
+msgstr "San Marino"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2403
 msgctxt "warehousename"
 msgid "Sardinia"
-msgstr ""
+msgstr "Sardinië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2404
 msgctxt "warehousename"
 msgid "Scotland"
-msgstr ""
+msgstr "Scotland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2405
 msgctxt "warehousename"
 msgid "Serbia"
-msgstr ""
+msgstr "Servië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2406
 msgctxt "warehousename"
 msgid "Slovakia"
-msgstr ""
+msgstr "Slowakije"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2407
 msgctxt "warehousename"
 msgid "Slovenia"
-msgstr ""
+msgstr "Slovenië"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2408
 msgctxt "warehousename"
 msgid "Spain"
-msgstr ""
+msgstr "Spanje"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2409
 msgctxt "warehousename"
 msgid "Svalbard"
-msgstr ""
+msgstr "Spitsbergen"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2410
 msgctxt "warehousename"
 msgid "Sweden"
-msgstr ""
+msgstr "Zweden"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2411
 msgctxt "warehousename"
 msgid "Switzerland"
-msgstr ""
+msgstr "Zwitserland"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2412
 msgctxt "warehousename"
 msgid "Turkey"
-msgstr ""
+msgstr "Turkije"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2413
 msgctxt "warehousename"
 msgid "Ukraine"
-msgstr ""
+msgstr "Oekraïne"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2414
 msgctxt "warehousename"
 msgid "Vatican City"
-msgstr ""
+msgstr "Vaticaanstad"
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2415
 msgctxt "warehousename"
 msgid "Wales"
-msgstr ""
+msgstr "Wales"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2420
 msgctxt "europeans"
 msgid "Worker missing"
-msgstr ""
+msgstr "Werker vermist"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2422
 msgctxt "europeans"
 msgid "Worker is coming"
-msgstr ""
+msgstr "Werker komt er aan"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2424
 msgctxt "europeans"
 msgid "Workers missing"
-msgstr ""
+msgstr "Werkers vermist"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2426
 msgctxt "europeans"
 msgid "Workers are coming"
-msgstr ""
+msgstr "Werkers komen eraan"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2428
 msgctxt "europeans"
 msgid "Expert missing"
-msgstr ""
+msgstr "Expert vermist"
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2430
 msgctxt "europeans"
 msgid "Experts missing"
-msgstr ""
+msgstr "Experten vermist"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2444
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1% soldaat (+%2%)"
+msgstr[1] "%1% soldaten (+%2%)"
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2446
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1% soldaat"
+msgstr[1] "%1% soldaten"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2448
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1%(+%2%) soldaat (+%3%)"
+msgstr[1] "%1%(+%2%) soldaten (+%3%)"
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/units.lua:2450
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1%(+%2%) soldaat"
+msgstr[1] "%1%(+%2%) soldaten"

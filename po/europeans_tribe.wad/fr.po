@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# David D, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-01 03:07+0200\n"
+"POT-Creation-Date: 2024-05-07 03:08+0200\n"
 "PO-Revision-Date: 2021-05-23 17:12+0000\n"
+"Last-Translator: David D, 2024\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -20,137 +24,140 @@ msgstr ""
 
 #: addons/europeans_tribe.wad/addon:2
 msgid "Europeans Tribe"
-msgstr ""
+msgstr "Tribu des Européens"
 
 #: addons/europeans_tribe.wad/addon:3
 msgid ""
 "Adds a new tribe named ‘Europeans’. It uses buildings, workers and some "
 "wares from other tribes, until own graphics are available."
 msgstr ""
+"Ajoute une nouvelle tribu nommée « Européens ». Il utilise des bâtiments, "
+"des ouvriers et des marchandises provenant d'autres tribus, jusqu'à ce que "
+"ses propres graphismes soient disponibles."
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/medium/init.lua:9
 msgid "Cotton Field (medium)"
-msgstr ""
+msgstr "Champ de coton (moyen)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/ripe/init.lua:9
 msgid "Cotton Field (ripe)"
-msgstr ""
+msgstr "Champ de coton (mûr)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/small/init.lua:9
 msgid "Cotton Field (small)"
-msgstr ""
+msgstr "Champ de coton (petit)"
 
 #: addons/europeans_tribe.wad/immovables/cottonfield/tiny/init.lua:9
 msgid "Cotton Field (tiny)"
-msgstr ""
+msgstr "Champ de coton (minuscule)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/dry/init.lua:8
 msgctxt "immovable"
 msgid "Dry Pond"
-msgstr ""
+msgstr "Étang sec"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/pond/with_water/init.lua:8
 msgctxt "immovable"
 msgid "Pond with water"
-msgstr ""
+msgstr "Étang avec de l'eau"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/medium/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (medium)"
-msgstr ""
+msgstr "Champ de roseaux (moyen)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/ripe/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (ripe)"
-msgstr ""
+msgstr "Champ de roseaux (mûr)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/small/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (small)"
-msgstr ""
+msgstr "Champ de roseaux (petit)"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/reedfield/tiny/init.lua:8
 msgctxt "immovable"
 msgid "Reed Field (tiny)"
-msgstr ""
+msgstr "Champ de roseaux (minuscule)"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_coal_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Coal"
-msgstr ""
+msgstr "Un peu de charbon"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_coal_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Coal"
-msgstr ""
+msgstr "Beaucoup de charbon"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_gold_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Gold"
-msgstr ""
+msgstr "Un peu d'or"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_gold_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Gold"
-msgstr ""
+msgstr "Beaucoup d'or"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_iron_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Iron"
-msgstr ""
+msgstr "Un peu de fer"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_iron_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Iron"
-msgstr ""
+msgstr "Beaucoup de fer"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_none/init.lua:8
 msgctxt "resource_indicator"
 msgid "No Resources"
-msgstr ""
+msgstr "Aucune ressource"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_stones_1/init.lua:8
 msgctxt "resource_indicator"
 msgid "Some Crystals"
-msgstr ""
+msgstr "Quelques cristaux"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_stones_2/init.lua:8
 msgctxt "resource_indicator"
 msgid "A Lot of Crystals"
-msgstr ""
+msgstr "Beaucoup de cristaux"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/resi_water/init.lua:8
 msgctxt "resource_indicator"
 msgid "Water"
-msgstr ""
+msgstr "Eau"
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_tribe.wad/immovables/shipconstruction_europeans/init.lua:8
 msgctxt "immovable"
 msgid "Ship Under Construction"
-msgstr ""
+msgstr "Navire en construction"
 
 #. TRANSLATORS: This is a resource name used in lists of resources
 #: addons/europeans_tribe.wad/immovables/trade_pole/init.lua:8
 msgctxt "immovable"
 msgid "Trade Pole"
-msgstr ""
+msgstr "Pôle commerce"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/mature/black/init.lua:11
@@ -158,7 +165,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/mature/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/mature/winter/init.lua:11
 msgid "Rubber Tree (Mature)"
-msgstr ""
+msgstr "Arbre à caoutchouc (mature)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/black/init.lua:11
@@ -166,7 +173,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/winter/init.lua:11
 msgid "Rubber Tree (Old)"
-msgstr ""
+msgstr "Arbre à caoutchouc (vieux)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/black/init.lua:13
@@ -174,7 +181,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/green/init.lua:13
 #: addons/europeans_tribe.wad/immovables/trees/rubber/old/winter/init.lua:13
 msgid "Rubber Tree"
-msgstr ""
+msgstr "Arbre à caoutchouc"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/black/init.lua:11
@@ -182,7 +189,7 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/pole/winter/init.lua:11
 msgid "Rubber Tree (Pole)"
-msgstr ""
+msgstr "Arbre à caoutchouc (poteau)"
 
 #. TRANSLATORS:  This is an Amazon rare tree.
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/black/init.lua:11
@@ -190,79 +197,79 @@ msgstr ""
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/green/init.lua:11
 #: addons/europeans_tribe.wad/immovables/trees/rubber/sapling/winter/init.lua:11
 msgid "Rubber Tree (Sapling)"
-msgstr ""
+msgstr "Arbre à caoutchouc (jeune arbre)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/militarysites/advanced_barrier/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Barrier"
-msgstr ""
+msgstr "Barrière avancée"
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/militarysites/advanced_barrier/init.lua:34
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced barrier."
-msgstr ""
+msgstr "Vos soldats ont occupé votre barrière avancée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/militarysites/advanced_barrier/init.lua:36
 msgctxt "europeans_building"
 msgid "Your advanced barrier discovered an aggressor."
-msgstr ""
+msgstr "Votre barrière avancée a découvert un agresseur."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/militarysites/advanced_barrier/init.lua:38
 msgctxt "europeans_building"
 msgid "Your advanced barrier is under attack."
-msgstr ""
+msgstr "Votre barrière avancée est attaquée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/militarysites/advanced_barrier/init.lua:40
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced barrier."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats à la barrière avancée."
 
 #. TRANSLATORS: Message sent by an Empire military site
 #: addons/europeans_tribe.wad/militarysites/advanced_barrier/init.lua:42
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced barrier."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi à la barrière avancée."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/militarysites/advanced_castle/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Castle"
-msgstr ""
+msgstr "Château avancé"
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/militarysites/advanced_castle/init.lua:34
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced castle."
-msgstr ""
+msgstr "Vos soldats ont occupé votre château avancé."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/militarysites/advanced_castle/init.lua:36
 msgctxt "europeans_building"
 msgid "Your advanced castle discovered an aggressor."
-msgstr ""
+msgstr "Votre château avancé a découvert un agresseur."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/militarysites/advanced_castle/init.lua:38
 msgctxt "europeans_building"
 msgid "Your advanced castle is under attack."
-msgstr ""
+msgstr "Votre château avancé est attaqué."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/militarysites/advanced_castle/init.lua:40
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced castle."
-msgstr ""
+msgstr "L'ennemi a vaincu vos soldats au château avancé."
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_tribe.wad/militarysites/advanced_castle/init.lua:42
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced castle."
-msgstr ""
+msgstr "Vos soldats ont vaincu l'ennemi au château avancé."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_tribe.wad/militarysites/advanced_sentry/init.lua:8
