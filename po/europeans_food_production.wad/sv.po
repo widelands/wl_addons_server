@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-24 03:07+0200\n"
+"POT-Creation-Date: 2024-05-11 03:08+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/europeans_food_production.wad/addon:2
-msgid "Europeans food production addon for Europeans tribe"
+msgid "Food production addon for Europeans tribe"
 msgstr ""
 
 #: addons/europeans_food_production.wad/addon:3
 msgid ""
-"Adds some additional wares, workers and buildings to Europeans tribes "
-"economy for more complexity. When the addon europeans_food_production.wad is "
-"activated, the definitions for buildings, wares and workers from the base "
-"addon europeans_tribes.wad are overwritten and no longer available."
+"Adds some additional agricultur wares, workers and buildings to Europeans "
+"tribes economy for more complexity. When the addon europeans_food_production."
+"wad is activated, the definitions for buildings, wares and workers from the "
+"base addon europeans_tribes.wad are overwritten and no longer available."
 msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
@@ -873,177 +873,356 @@ msgid "Normal Mill"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_food_production.wad/productionsites_trading_food/food_trading_post/init.lua:8
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:8
 msgctxt "europeans_building"
-msgid "Trading Post"
+msgid "Basic Coal Mine"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading_food/food_trading_post/init.lua:46
-#: addons/europeans_food_production.wad/productionsites_trading_food/food_trading_post/init.lua:59
-#: addons/europeans_food_production.wad/productionsites_trading_food/food_trading_post/init.lua:72
-#: addons/europeans_food_production.wad/productionsites_trading_food/food_trading_post/init.lua:85
-#: addons/europeans_food_production.wad/productionsites_trading_food/food_trading_post/init.lua:98
-#: addons/europeans_food_production.wad/productionsites_trading_food/food_trading_post/init.lua:111
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_beer/init.lua:63
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_beer/init.lua:115
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_beer/init.lua:127
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_beer/init.lua:139
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:64
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:122
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:134
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:146
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:158
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:170
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:182
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:74
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:133
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:145
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:157
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:169
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:181
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:193
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_honey/init.lua:62
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_honey/init.lua:109
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_honey/init.lua:121
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:69
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:127
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:139
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:151
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:163
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:175
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:187
-msgid "trading"
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:72
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:64
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_2/init.lua:64
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_3/init.lua:62
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:63
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:43
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:74
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:65
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:65
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:63
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:64
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:43
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:74
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:65
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:65
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:63
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:64
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:43
+msgctxt "europeans_building"
+msgid "mining"
 msgstr ""
 
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_beer/init.lua:8
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:92
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:84
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_2/init.lua:87
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_3/init.lua:89
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:93
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:74
 msgctxt "europeans_building"
-msgid "Beer Market"
+msgid "mining coal"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_beer/init.lua:74
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:75
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:85
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_honey/init.lua:81
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:80
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:100
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:92
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_2/init.lua:95
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_3/init.lua:97
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:101
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:82
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:103
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:94
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:98
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:101
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:105
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:85
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:103
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:94
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:98
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:101
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:105
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:85
 msgctxt "europeans_building"
-msgid "trading food for copper coins"
+msgid "mining granite"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_beer/init.lua:85
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:88
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:99
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:93
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:108
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:100
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_2/init.lua:103
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_3/init.lua:105
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:109
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:90
 msgctxt "europeans_building"
-msgid "trading food for silver coins"
+msgid "mining diamond"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_beer/init.lua:96
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:101
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:112
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:106
-msgctxt "europeans_building"
-msgid "trading food for gold coins"
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:126
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:118
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_2/init.lua:121
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_3/init.lua:123
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:127
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:108
+msgid "No Coal"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_beer/init.lua:107
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:114
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:125
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_honey/init.lua:101
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:119
-msgctxt "europeans_building"
-msgid "pausing trading of gold"
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:127
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:119
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_2/init.lua:122
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_3/init.lua:124
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:128
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:109
+msgid "Main Coal Vein Exhausted"
 msgstr ""
 
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_bread/init.lua:8
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:129
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:121
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_2/init.lua:124
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_3/init.lua:126
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:130
 msgctxt "europeans_building"
-msgid "Bread Market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_fish_meat/init.lua:8
-msgctxt "europeans_building"
-msgid "Fish and Meat Market"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_honey/init.lua:8
-msgctxt "europeans_building"
-msgid "Honey Market"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start trading because ...
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_honey/init.lua:71
-msgctxt "europeans_building"
-msgid "trading food for wood coins"
-msgstr ""
-
-#. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_honey/init.lua:92
-msgctxt "europeans_building"
-msgid "pausing trading of blackwood"
+msgid ""
+"This coal mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_food_production.wad/productionsites_trading_food/market_mead_wine/init.lua:8
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:8
 msgctxt "europeans_building"
-msgid "Mead and Wine Market"
+msgid "Coal Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Coal Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Coal Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Coal Mine Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:8
+msgctxt "europeans_building"
+msgid "Coal Mine Level 5"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:111
+msgctxt "europeans_building"
+msgid ""
+"This coal mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Gold Mine"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:95
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:86
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:90
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:93
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:97
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:77
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:95
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:86
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:90
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:93
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:97
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:77
+msgctxt "europeans_building"
+msgid "mining ore"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:111
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:102
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:106
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:109
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:113
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:93
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:111
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:102
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:106
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:109
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:113
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:93
+msgctxt "europeans_building"
+msgid "mining marble"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:119
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:110
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:114
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:117
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:121
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:101
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:119
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:110
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:114
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:117
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:121
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:101
+msgctxt "europeans_building"
+msgid "mining quartz"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:137
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:128
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:132
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:135
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:139
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:119
+msgid "No Gold"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:138
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:129
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:133
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:136
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:140
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:120
+msgid "Main Gold Vein Exhausted"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:140
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:131
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:135
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:138
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:142
+msgctxt "europeans_building"
+msgid ""
+"This gold mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 5"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:122
+msgctxt "europeans_building"
+msgid ""
+"This gold mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Iron Mine"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:137
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:128
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:132
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:135
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:139
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:119
+msgid "No Iron"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:138
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:129
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:133
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:136
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:140
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:120
+msgid "Main Iron Vein Exhausted"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:140
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:131
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:135
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:138
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:142
+msgctxt "europeans_building"
+msgid ""
+"This iron mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 5"
+msgstr ""
+
+#: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:122
+msgctxt "europeans_building"
+msgid ""
+"This iron mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider dismantling or destroying it."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_human.lua:11
+#: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_food.lua:11
 msgid "Discovery (Food Addon)"
 msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
-#: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_human.lua:13
+#: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_food.lua:13
 msgid ""
-"Start the game with three ships on the ocean and only a handful of supplies. "
-"Disabled terraforming (diking of water bodies) because of lack of "
-"compatibility with seafaring."
+"Start the game with three ships on the ocean and only a handful of supplies."
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_seafaring.lua:11
+#: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_food.lua:11
 msgid "Headquarters (with seafaring and food addon)"
 msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_seafaring.lua:13
-msgid ""
-"Start the game with your headquarters only. Disabled terraforming (diking of "
-"water bodies) because of lack of compatibility with seafaring."
-msgstr ""
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_terraforming.lua:11
-msgid "Headquarters (with terraforming and food addon)"
-msgstr ""
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_terraforming.lua:13
-msgid ""
-"Start the game with your headquarters only. Disabled seafaring because of "
-"lack of compatibility with terraforming (diking of water bodies)."
-msgstr ""
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:11
-msgid "Trading Outpost (Food Addon)"
-msgstr ""
-
-#. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
-#: addons/europeans_food_production.wad/scripting/starting_conditions/trading_outpost.lua:13
-msgid ""
-"This starting condition contains a market as an additional building, where "
-"some wares can be bought for gold, quartz and diamonds. Disabled seafaring "
-"because of lack of compatibility with terraforming (diking of water bodies)."
+#: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_food.lua:13
+msgid "Start the game with your headquarters only."
 msgstr ""
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/init.lua:10
@@ -1066,19 +1245,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Format string for a latin quote and its translation
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:12
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:12
 msgctxt "europeans_lore"
 msgid "‘%1%’<br>(%2%)"
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:109
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:107
 msgctxt "ware"
 msgid "Water is the essence of life!"
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:111
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:109
 msgctxt "europeans_ware"
 msgid ""
 "Water is used by the gardener, by the forester, by all farms, and in the "
@@ -1087,19 +1266,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:122
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:120
 msgctxt "europeans_ware"
 msgid "Granite is a basic building material."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:124
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:122
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:135
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:133
 msgctxt "europeans_ware"
 msgid ""
 "Logs are an important basic building material. They are produced by felling "
@@ -1107,7 +1286,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:137
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:135
 msgctxt "europeans_ware"
 msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
@@ -1115,31 +1294,31 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:148
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:146
 msgctxt "europeans_ware"
 msgid "Reed is an important building material."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:150
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:148
 msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:161
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:159
 msgctxt "europeans_ware"
 msgid "Cotton is a raw material used to make clothing."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:163
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:161
 msgctxt "europeans_ware"
 msgid "It is produced by normal farms."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:173
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:171
 msgctxt "europeans_ware"
 msgid ""
 "Wool is the hair of sheep. Weaving mills use it to make armor. Animal farms "
@@ -1147,19 +1326,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:183
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:181
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved armor and boots."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:185
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:183
 msgctxt "europeans_ware"
 msgid "It is produced in tree nursery or in rubber farm."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:195
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:193
 msgctxt "europeans_ware"
 msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
@@ -1167,19 +1346,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:197
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:195
 msgctxt "europeans_ware"
 msgid "It can be processed into charcoal in charcoal kilns."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:211
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:209
 msgctxt "ware"
 msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:213
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:211
 msgctxt "europeans_ware"
 msgid ""
 "The fires of the Europeans smelting works and smithies are usually fed with "
@@ -1187,13 +1366,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:224
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:222
 msgctxt "europeans_ware"
 msgid "Grout is a basic building material."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:226
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:224
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces grout in lime kiln or stonemasons house out of "
@@ -1201,7 +1380,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:236
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:234
 msgctxt "europeans_ware"
 msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
@@ -1209,13 +1388,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cloth
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:245
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:243
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:254
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:252
 msgctxt "europeans_ware"
 msgid ""
 "Raw material for some sorts of armor. It is produced in the weaving mill out "
@@ -1223,7 +1402,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wool
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:263
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:261
 msgctxt "europeans_ware"
 msgid ""
 "The animal farm produces leather, which is used as a raw material for making "
@@ -1231,7 +1410,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:272
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:270
 msgctxt "europeans_ware"
 msgid ""
 "These transparent quartz gems are used to build some exclusive buildings. "
@@ -1239,25 +1418,25 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:285
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:283
 msgctxt "europeans_ware"
 msgid "Clay is needed to make bricks."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:287
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:285
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from gardeners house."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:298
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:296
 msgctxt "europeans_ware"
 msgid "Brick is a basic building material."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:300
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:298
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
@@ -1265,25 +1444,25 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:311
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:309
 msgctxt "europeans_ware"
 msgid "Planks are an important building material."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:313
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:311
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:315
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:313
 msgctxt "europeans_ware"
 msgid "They are also used by the ferryyard and shipyard."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:325
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:323
 msgctxt "europeans_ware"
 msgid ""
 "Marble is the beautiful stone which is cut out of the mountains or produced "
@@ -1292,7 +1471,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble Column
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:334
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:332
 msgctxt "europeans_ware"
 msgid ""
 "Marble columns represent the high culture of the Europeans, so they are "
@@ -1301,7 +1480,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:343
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:341
 msgctxt "europeans_ware"
 msgid ""
 "These wonderful diamonds are used to build advanced buildings. They are "
@@ -1309,43 +1488,43 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rye, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:356
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:354
 msgctxt "europeans_ware"
 msgid "Rye is essential for survival."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rye, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:358
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:356
 msgctxt "europeans_ware"
 msgid "Rye is produced by farms and used by mills to produce mixed flour."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wheat, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:369
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:367
 msgctxt "europeans_ware"
 msgid "Wheat is essential for survival."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wheat, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:371
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:369
 msgctxt "europeans_ware"
 msgid "Wheat is produced by farms and used by mills to produce mixed flour."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Barley
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:381
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:379
 msgctxt "europeans_ware"
 msgid "Barley is a slow-growing grain that is used for brewing beer or mead."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Corn
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:390
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:388
 msgctxt "europeans_ware"
 msgid "Advanced farms need to be provided with corn to feed the farm animals."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Blackroot
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:399
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:397
 msgctxt "europeans_ware"
 msgid ""
 "Blackroots are a special kind of root. Advanced farms need to be provided "
@@ -1353,13 +1532,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:408
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:406
 msgctxt "europeans_ware"
 msgid "Honey is produced by bees belonging to a farm. It is used to brew mead."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Fruit
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:417
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:415
 msgctxt "europeans_ware"
 msgid ""
 "Fruit are berries gathered from berry bushes by a fruit collector. They are "
@@ -1367,7 +1546,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Grape
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:426
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:424
 msgctxt "europeans_ware"
 msgid ""
 "These grapes are the base for a tasty wine. They are harvested in a advanced "
@@ -1375,7 +1554,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Flour
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:438
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:436
 msgctxt "europeans_ware"
 msgid ""
 "Mixed flour is produced by the mill out of rye and wheat and is needed in "
@@ -1383,94 +1562,91 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Bread
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:447
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:445
 msgctxt "europeans_ware"
 msgid ""
-"Bread are produced in a bakery out of water and flour. It is offered for "
-"sale on the small and big market in exchange for coins."
+"Bread are produced in a bakery out of water and flour. Basic miners consume "
+"bread."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey Bread
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:456
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:454
 msgctxt "europeans_ware"
 msgid ""
-"Honey Bread are produced in a bakery out of water, honey and flour. It is "
-"offered for sale on the big market in exchange for coins."
+"Honey Bread are produced in a bakery out of water, honey and flour. Normal "
+"miners consume honey bread."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Biscuit
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:465
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:463
 msgctxt "europeans_ware"
 msgid ""
-"Biscuits are produced in a bakery out of water, flour, honey and fruits. It "
-"is offered for sale on the big market in exchange for coins."
+"Biscuits are produced in a bakery out of water, flour, honey and fruits. "
+"Advanced miners consume biscuit."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:474
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:472
 msgctxt "europeans_ware"
 msgid ""
-"Meat contains a lot of energy, and it is produced in animal farms. It is "
-"offered for sale on the small and big market in exchange for coins."
+"Meat contains a lot of energy, and it is produced in animal farms. Miners "
+"consume meat."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fish
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:483
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:481
 msgctxt "europeans_ware"
 msgid ""
 "Fish is one of the biggest food resources of the Europeans, and it is "
-"produced in animal farms. It is offered for sale on the big market in "
-"exchange for coins."
+"produced in animal farms. Miners consume fish."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:492
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:490
 msgctxt "europeans_ware"
 msgid ""
-"This beer is produced in a brewery out of barley and water. It is offered "
-"for sale on the small and big market in exchange for coins."
+"This beer is produced in a brewery out of barley and water. Basic miners "
+"consume beer."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Mead
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:501
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:499
 msgctxt "europeans_ware"
 msgid ""
-"Mead is produced by breweries out of water, barley and honey. It is offered "
-"for sale on the big market in exchange for coins."
+"Mead is produced by breweries out of water, barley and honey. Normal miners "
+"consume mead."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:510
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:508
 msgctxt "europeans_ware"
 msgid ""
-"This strong beer is produced in a brewery out of barley and water. It is "
-"offered for sale on the big market in exchange for coins."
+"This strong beer is produced in a brewery out of barley and water. Advanced "
+"miners consume strong beer."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wine
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:519
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:517
 msgctxt "europeans_ware"
-msgid ""
-"It is produced in a winery out of grape and is offered for sale on the big "
-"market in exchange for coins."
+msgid "It is produced in a winery out of grape. Advanced miners consume wine."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:532
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:530
 msgctxt "default_ware"
 msgid "Ore is mined in ore mines."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:534
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:532
 msgctxt "europeans_ware"
 msgid "It is smelted in a smelting works to retrieve all the metals."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap metal (mixed)
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:543
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:564
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:541
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:562
 msgctxt "europeans_ware"
 msgid ""
 "Discarded weapons and armor can be recycled in an advanced smelting works to "
@@ -1478,13 +1654,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:553
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:551
 msgctxt "ware"
 msgid "Iron is smelted out of ores."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:555
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:553
 msgctxt "europeans_ware"
 msgid ""
 "It is produced by the smelting works. Weapons, armor and tools are made of "
@@ -1492,41 +1668,21 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:574
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:572
 msgctxt "ware"
 msgid "Gold is the most valuable of all metals, and it is smelted out of ore."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:576
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:574
 msgctxt "europeans_ware"
 msgid ""
 "It is produced by the smelting works. Armor and weapons are embellished with "
 "gold in the smithy. Some valuable buildings need gold to be built."
 msgstr ""
 
-#. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:587
-msgctxt "ware"
-msgid ""
-"Wood coins are money made of copper or bronze (copper and tin). Its the "
-"standard barter object."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Silver Coin
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:598
-msgctxt "ware"
-msgid "Wood coins are money made of silver. Its a valuable barter object."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:609
-msgctxt "ware"
-msgid "Wood coins are money made of gold. Its most valuable barter object."
-msgstr ""
-
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:623
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:588
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester, the gardener, and the fish breeder."
 msgstr ""
@@ -1534,15 +1690,15 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Needles, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:625
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:690
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:742
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:590
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:655
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:707
 msgctxt "europeans_ware"
 msgid "They are produced by all smithies."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:636
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:601
 msgctxt "europeans_ware"
 msgid ""
 "This basket is needed by the farmer for harvesting the fruits and grapes and "
@@ -1550,7 +1706,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:638
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:603
 msgctxt "europeans_ware"
 msgid ""
 "It is also used by advanced carrier to transport wares. It is produced by "
@@ -1558,44 +1714,44 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:649
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:614
 msgctxt "europeans_ware"
 msgid "The scythe is the tool of the farmers."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:651
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:616
 msgctxt "europeans_ware"
 msgid "Scythes are produced by all smithies."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:662
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:627
 msgctxt "europeans_ware"
 msgid "The felling ax is the tool to chop down trees."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:664
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:629
 msgctxt "europeans_ware"
 msgid "Felling axes are used by lumberjacks and produced by all smithies."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Pick, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:675
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:640
 msgctxt "europeans_ware"
 msgid ""
 "The pick is an essential tool. Picks are used by stonemasons and miners."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Pick, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:677
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:642
 msgctxt "europeans_ware"
 msgid "They are produced produced by all smithies."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:688
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:653
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the forester, the gardener and "
@@ -1603,7 +1759,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:701
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:666
 msgctxt "europeans_ware"
 msgid ""
 "The hammer is an essential tool. Geologists, builders, and smiths all need a "
@@ -1611,7 +1767,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:703
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:668
 msgctxt "europeans_ware"
 msgid ""
 "Make sure you’ve always got some in reserve! They are produced by all "
@@ -1619,7 +1775,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:714
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:679
 msgctxt "europeans_ware"
 msgid ""
 "The saw is an essential tool. This saw is needed by the woodcutter and the "
@@ -1627,19 +1783,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:716
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:681
 msgctxt "europeans_ware"
 msgid "It is produced by all smithies."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:727
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:692
 msgctxt "europeans_ware"
 msgid "Fire tongs are the tools for smelting ores."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:729
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:694
 msgctxt "europeans_ware"
 msgid ""
 "They are used in the smelting works and smithies and produced produced by "
@@ -1647,13 +1803,13 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Needles, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:740
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:705
 msgctxt "europeans_ware"
 msgid "Needles are used by weavers."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:755
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:720
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the armor smithy. In "
@@ -1661,7 +1817,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:764
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:729
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
@@ -1669,7 +1825,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:773
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:738
 msgctxt "europeans_ware"
 msgid ""
 "The compressed armor is a medium armor for European soldiers. It is produced "
@@ -1678,7 +1834,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:782
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:747
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a smithy and used in the battle arena "
@@ -1686,7 +1842,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:791
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:756
 msgctxt "europeans_ware"
 msgid ""
 "Wooden boots are basic footwear for soldiers to be protect on their feet. "
@@ -1694,7 +1850,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:800
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:765
 msgctxt "europeans_ware"
 msgid ""
 "Sturdy boots are excellent footwear for soldiers to be quicker on their "
@@ -1703,7 +1859,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:809
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:774
 msgctxt "europeans_ware"
 msgid ""
 "Swift boots are light and durable footwear for soldiers to be quicker on "
@@ -1712,7 +1868,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:818
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:783
 msgctxt "europeans_ware"
 msgid ""
 "Hero boots! The only suitable footwear for a real hero. They are produced by "
@@ -1720,7 +1876,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:830
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:795
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
@@ -1729,7 +1885,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:839
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:804
 msgctxt "europeans_ware"
 msgid ""
 "This is a advanced spear with a steel tip. It is produced in a smithy and "
@@ -1737,7 +1893,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:848
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:813
 msgctxt "europeans_ware"
 msgid ""
 "This is an broad ax. It is produced in a smithy and used in a battle arena – "
@@ -1745,7 +1901,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:857
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:822
 msgctxt "europeans_ware"
 msgid ""
 "This is a broad sword. It is produced in the advanced smithy and used in a "
@@ -1753,7 +1909,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:866
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:831
 msgctxt "europeans_ware"
 msgid ""
 "The helmet is the basic defense tool of a soldier. It is produced in the "
@@ -1762,7 +1918,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:875
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:840
 msgctxt "europeans_ware"
 msgid ""
 "The mask is the medium defense tool of a soldier. It is produced in a smithy "
@@ -1771,7 +1927,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:884
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:849
 msgctxt "europeans_ware"
 msgid ""
 "This steel shield is produced in a smithy and used in a battle arena – "
@@ -1779,7 +1935,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:893
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:858
 msgctxt "europeans_ware"
 msgid ""
 "These advanced shields are used by the best soldiers of the Europeans. They "
@@ -1788,38 +1944,38 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:908
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:873
 msgctxt "europeans_worker"
 msgid "Used for recruiting all other workers."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:917
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:882
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:926
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:891
 msgctxt "europeans_worker"
 msgid ""
 "Carries items along your roads with their hands. Only used for busy roads."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:935
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:900
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets. Only used for busy roads."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ox
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:944
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:909
 msgctxt "europeans_worker"
 msgid "Carries items along your roads. They are reared in an animal farm."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Donkey
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:953
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:918
 msgctxt "europeans_worker"
 msgid ""
 "Donkeys help to carry items along busy roads. They are reared in an animal "
@@ -1827,7 +1983,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Horse
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:962
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:927
 msgctxt "europeans_worker"
 msgid ""
 "Horses help to carry items along busy roads. They are reared in an animal "
@@ -1835,7 +1991,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans worker: Reindeer
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:971
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:936
 msgctxt "europeans_worker"
 msgid ""
 "Reindeers help to carry items along busy roads. They are reared in an animal "
@@ -1843,82 +1999,82 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ferry
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:980
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:945
 msgctxt "europeans_worker"
 msgid "Ships wares across narrow rivers."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Recruit
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:989
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:954
 msgctxt "europeans_worker"
 msgid "Eager to become a soldier and defend his tribe!"
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Soldier
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:998
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:963
 msgctxt "europeans_worker"
 msgid "Defend and Conquer!"
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Worker
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1010
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1019
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1028
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:975
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:984
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:993
 msgctxt "europeans_worker"
 msgid "General worker with no special ability."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Shipwright
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1037
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1046
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1055
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1002
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1011
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1020
 msgctxt "europeans_worker"
 msgid "Works at the shipyard and constructs new ships."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Builder
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1064
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1029
 msgctxt "europeans_worker"
 msgid "Works at construction sites to raise new buildings."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Geologist
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1073
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1038
 msgctxt "europeans_worker"
 msgid "Discovers resources for mining."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1085
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1094
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1103
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1050
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1059
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1068
 msgctxt "europeans_worker"
 msgid "Fells trees."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1112
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1121
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1130
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1077
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1086
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1095
 msgctxt "europeans_worker"
 msgid "Plant trees."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1142
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1107
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house and planting reed."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1151
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1116
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed and cotton."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1160
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1125
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed, cotton and "
@@ -1926,67 +2082,50 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Farmer
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1169
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1178
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1187
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1134
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1143
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1152
 msgctxt "europeans_worker"
 msgid "Plants and harvests fields."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Stonecutter
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1199
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1208
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1217
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1164
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1173
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1182
 msgctxt "europeans_worker"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Miner
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1226
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1235
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1244
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1191
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1200
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1209
 msgctxt "europeans_worker"
 msgid "Mines ore and minerals."
 msgstr ""
 
-#. TRANSLATORS: Helptext for an Europeans worker: Terraformer
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1253
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1262
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1271
-msgctxt "europeans_worker"
-msgid "Terraforms desert and coast into fertile soil."
-msgstr ""
-
 #. TRANSLATORS: Helptext for an Europeans worker: Trainer
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1283
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1292
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1301
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1221
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1230
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1239
 msgctxt "europeans_worker"
 msgid "Trains the soldiers."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Scout
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1310
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1320
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1330
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1248
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1258
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1268
 msgctxt "europeans_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
 msgstr ""
 
-#. TRANSLATORS: Helptext for an Europeans worker: Scout
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1340
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1349
-msgctxt "europeans_worker"
-msgid ""
-"Traders work in markets or in trading posts to exchange wares with other "
-"tribes."
-msgstr ""
-
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1360
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1367
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1280
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1287
 msgid "The remains of a destroyed building."
 msgstr ""
 
@@ -1995,11 +2134,11 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans immovable: corn field
 #. TRANSLATORS: Helptext for an Europeans immovable: rye field
 #. TRANSLATORS: Helptext for an Europeans immovable: Wheat field
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1374
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1661
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1696
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1801
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1836
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1294
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1581
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1616
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1721
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1756
 msgid "This field has just been planted."
 msgstr ""
 
@@ -2008,16 +2147,16 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans immovable: corn field
 #. TRANSLATORS: Helptext for an Europeans immovable: rye field
 #. TRANSLATORS: Helptext for an Europeans immovable: Wheat field
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1381
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1388
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1668
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1675
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1703
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1710
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1808
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1815
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1843
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1850
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1301
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1308
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1588
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1595
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1623
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1630
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1728
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1735
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1763
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1770
 msgid "This field is growing."
 msgstr ""
 
@@ -2026,11 +2165,11 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans immovable: corn field
 #. TRANSLATORS: Helptext for an Europeans immovable: rye field
 #. TRANSLATORS: Helptext for an Europeans immovable: Wheat field
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1395
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1682
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1717
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1822
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1857
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1315
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1602
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1637
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1742
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1777
 msgid "This field is ready for harvesting."
 msgstr ""
 
@@ -2039,91 +2178,91 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans immovable: corn field
 #. TRANSLATORS: Helptext for an Europeans immovable: rye field
 #. TRANSLATORS: Helptext for an Europeans immovable: Wheat field
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1402
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1689
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1724
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1829
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1864
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1322
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1609
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1644
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1749
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1784
 msgid "This field has been harvested."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1409
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1437
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1465
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1493
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1521
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1549
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1577
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1605
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1633
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1329
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1357
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1385
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1413
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1441
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1469
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1497
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1525
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1553
 msgid "This berry bush has just been planted."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1416
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1444
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1472
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1500
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1528
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1556
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1584
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1612
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1640
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1336
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1364
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1392
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1420
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1448
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1476
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1504
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1532
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1560
 msgid "This berry bush is growing."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1423
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1451
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1479
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1507
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1535
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1563
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1591
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1619
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1647
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1343
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1371
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1399
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1427
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1455
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1483
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1511
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1539
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1567
 msgid "This berry bush is flowering. Honey can be produced from it."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1430
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1458
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1486
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1514
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1542
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1570
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1598
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1626
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1654
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1350
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1378
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1406
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1434
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1462
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1490
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1518
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1546
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1574
 msgid "This berry bush is ready for harvesting."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1731
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1651
 msgid "This grapevine has just been planted."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1738
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1745
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1658
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1665
 msgid "This grapevine is growing."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1752
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1672
 msgid "This grapevine is ready for harvesting."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1759
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1679
 msgid ""
 "Ponds with water becomes dry after some time. These dry holes vanish after a "
 "while."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1766
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1686
 msgid ""
 "When gardeners dig up earth, they leave holes with water in the ground. "
 "These falls dry after a while or can be used by terraformer to produce new "
@@ -2131,114 +2270,114 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1773
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1693
 msgid "This reed field has just been planted."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1780
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1700
 msgid "This reed field is growing."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1787
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1707
 msgid "This reed field is flowering. Honey can be produced from it."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1794
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1714
 msgid "This reed field is ready for harvesting."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1871
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1791
 msgid "There are no resources in the ground here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Water
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1878
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1798
 msgid "There is water in the ground here that can be pulled up by a well."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1886
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1930
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1806
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1850
 msgid "Coal veins contain coal that can be dug up by coal mines."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1888
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1808
 msgid "There is only a little bit of coal here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1897
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1941
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1817
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1861
 msgid "Iron veins contain iron ore that can be dug up by iron mines."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1899
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1819
 msgid "There is only a little bit of iron here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1908
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1952
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1828
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1872
 msgid "Gold veins contain gold ore that can be dug up by gold mines."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1910
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1830
 msgid "There is only a little bit of gold here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1919
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1963
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1839
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1883
 msgid ""
 "Marble is a basic building material and can be dug up by a marble mine. You "
 "will also get granite from the mine."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1921
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1841
 msgid "There is only a little bit of marble here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1932
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1852
 msgid "There is a lot of coal here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1943
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1863
 msgid "There is a lot of iron here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1954
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1874
 msgid "There is a lot of gold here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1965
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1885
 msgid "There is a lot of marble here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ship Under Construction
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1973
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1893
 msgid "A ship is being constructed at this site."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans immovable: Trade Pole
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1980
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1900
 msgctxt "europeans_building"
 msgid "Open market to exchange wares with other allied tribes."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans immovable usable by Europeans: Dead Tree
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1988
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1908
 msgid "The remains of an old tree."
 msgstr ""
 
@@ -2247,36 +2386,36 @@ msgstr ""
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Corn Field
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Rubber Tree
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:1995
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2002
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2009
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2016
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2023
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2030
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2037
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2044
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2051
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2058
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2065
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2072
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1915
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1922
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1929
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1936
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1943
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1950
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1957
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1964
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1971
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1978
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1985
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:1992
 msgid ""
 "This tree is only planted by the amazon tribe but can be harvested for logs."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Headquarters
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2084
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2004
 msgctxt "europeans_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans warehouse: Headquarters
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2086
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2006
 msgctxt "europeans_building"
 msgid "The headquarters is your main building."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Warehouse
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2093
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2013
 msgctxt "europeans_building"
 msgid ""
 "Your workers and soldiers will find shelter here. Also stores your wares and "
@@ -2284,115 +2423,60 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2100
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2020
 msgctxt "europeans_building"
 msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
 "soldiers, wares and tools."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Market
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2107
-msgctxt "europeans_building"
-msgid "Market building to sale wares to other allied tribes."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Honey Market
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2114
-msgctxt "europeans_building"
-msgid "Market building to sale honey to other allied tribes."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Fish/Meat Market
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2121
-msgctxt "europeans_building"
-msgid "Market building to sale fish and meat to other allied tribes."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2128
-msgctxt "europeans_building"
-msgid "Market building to sale food to other allied tribes."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Bread Market
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2135
-msgctxt "europeans_building"
-msgid "Market building to sale bread to other allied tribes."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Beer Market
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2142
-msgctxt "europeans_building"
-msgid "Market building to sale beer to other allied tribes."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Mead/Wine Market
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2149
-msgctxt "europeans_building"
-msgid "Market building to sale mead and wine to other allied tribes."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2156
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2163
-msgctxt "europeans_building"
-msgid "Store building to purchase wares from other allied tribes."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans warehouse: Market
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2170
-msgctxt "europeans_building"
-msgid "Trading building to purchase wares from other allied tribes."
-msgstr ""
-
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutter's House
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Lumberjack's House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2179
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2188
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2197
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2029
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2038
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2047
 msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2181
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2031
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Woodcutter's House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2190
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2040
 msgctxt "europeans_building"
 msgid "The woodcutter’s house needs trees to fell within the work area."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Lumberjack's House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2199
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2049
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Ranger's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2206
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2215
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2224
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2056
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2065
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2074
 msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Ranger's Hut
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2208
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2058
 msgctxt "europeans_building"
 msgid ""
 "The ranger’s hut needs free space within the work area to plant the trees."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2217
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2226
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2067
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2076
 msgctxt "europeans_building"
 msgid ""
 "The forester’s house needs free space within the work area to plant the "
@@ -2400,7 +2484,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2233
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2083
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
@@ -2408,7 +2492,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2240
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2090
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
@@ -2416,7 +2500,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2247
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2097
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
@@ -2424,89 +2508,80 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2254
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2104
 msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for an Europeans production site: Quarry
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2256
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2265
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2274
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2106
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2115
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2124
 msgctxt "europeans_building"
 msgid "The quarry needs rocks to cut within the work area."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2263
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2113
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite out of rocks in the vicinity."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2272
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2122
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2281
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2288
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2295
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2131
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2138
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2145
 msgctxt "building"
 msgid "Explores unknown territory."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for a Europeans production site: Terraformer's Hut
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2302
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2309
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2316
-msgctxt "building"
-msgid "Terraforms deserts and coasts into fertile soil."
-msgstr ""
-
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2325
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2332
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2339
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2346
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2353
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2360
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2367
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2154
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2161
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2168
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2175
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2182
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2189
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2196
 msgctxt "europeans_building"
 msgid "Draws water out of the deep."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2374
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2203
 msgctxt "europeans_building"
 msgid "Sows and harvests reed."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2381
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2210
 msgctxt "europeans_building"
 msgid "Sows and harvests reed and cotton."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2388
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2217
 msgctxt "europeans_building"
 msgid "Sows and harvests reed, cotton and rubber."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2395
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2224
 msgctxt "europeans_building"
 msgid "Weaves cloth out of reed."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2402
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2231
 msgctxt "europeans_building"
 msgid ""
 "Weaves cloth for buildings and ships’ sails, and armor to equip and train "
@@ -2514,31 +2589,31 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2409
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2238
 msgctxt "europeans_building"
 msgid "Weaves cloth and armor out of wool and reed."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2416
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2423
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2430
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2245
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2252
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2259
 msgctxt "europeans_building"
 msgid "Saws logs to produce planks."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2437
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2444
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2451
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2266
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2273
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2280
 msgctxt "europeans_building"
 msgid "Burns logs into charcoal."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2458
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2467
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2287
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2296
 msgctxt "europeans_building"
 msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
@@ -2546,8 +2621,8 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2460
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2469
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2289
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2298
 msgctxt "europeans_building"
 msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
@@ -2555,7 +2630,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Stonemason's House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2476
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2305
 msgctxt "europeans_building"
 msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
@@ -2564,7 +2639,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2478
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2307
 msgctxt "europeans_building"
 msgid ""
 "The stonemason’s house's output will only go to construction sites that need "
@@ -2572,116 +2647,84 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2485
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2314
 msgctxt "europeans_building"
 msgid "Grinds corn to produce cornmeal."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Mill
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2492
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2499
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2321
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2328
 msgctxt "europeans_building"
 msgid ""
 "Grinds corn to produce cornmeal. Grinds wheat and rye to produce mixed flour."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2506
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2335
 msgctxt "building"
 msgid "Prepares rations to feed the scouts and miners."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2513
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2342
 msgctxt "building"
 msgid ""
 "Prepares rations and snacks to feed the miners in the basic and deep mines."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Bakery
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2520
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2349
 msgctxt "building"
 msgid "Prepares rations, snacks and meals to feed all miners."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2527
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2356
 msgctxt "europeans_building"
 msgid "Produces beer to keep the miners strong and happy."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Brewery
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2534
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2363
 msgctxt "europeans_building"
 msgid "Produces beer and mead to keep the miners strong and happy."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Brewery
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2541
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2370
 msgctxt "europeans_building"
 msgid "Produces beer, mead and strong_beer for trainingssites."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Winery
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2548
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2377
 msgctxt "europeans_building"
 msgid "Produces mead and wine."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2555
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2384
 msgctxt "europeans_building"
 msgid "Smelts ore into iron."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2562
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2391
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2569
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2398
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold. Recycles scrap metal."
 msgstr ""
 
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2576
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2583
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2590
-msgctxt "europeans_building"
-msgid "Forges all the tools that your workers need."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2597
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2604
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2611
-msgctxt "europeans_building"
-msgid "Produces clothing and armor."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers House
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2618
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2625
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2632
-msgctxt "europeans_building"
-msgid "Produces shoes and boots."
-msgstr ""
-
-#. TRANSLATORS: Purpose helptext for an Europeans production site: weaponsmithy
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2639
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2646
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2653
-msgctxt "europeans_building"
-msgid "Produces shields and weapons."
-msgstr ""
-
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2662
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2669
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2676
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2407
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2414
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2421
 msgctxt "europeans_building"
 msgid ""
 "Large factory that produces complex wares such as tools, weapons, armor, "
@@ -2689,25 +2732,25 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2683
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2428
 msgctxt "europeans_building"
 msgid "Sows and harvests corn, rye and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2690
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2435
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2697
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2442
 msgctxt "europeans_building"
 msgid "Sows and harvests barley, blackroot, corn, fruit, grape, rye and wheat."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Cattle Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2704
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2449
 msgctxt "europeans_building"
 msgid ""
 "Breeds strong oxen for adding them to the transportation system. "
@@ -2715,7 +2758,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Fish Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2711
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2456
 msgctxt "europeans_building"
 msgid ""
 "Breeds strong oxen for adding them to the transportation system. "
@@ -2724,7 +2767,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sheep Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2718
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2463
 msgctxt "europeans_building"
 msgid ""
 "Breeds strong oxen and cute and helpful donkeys for adding them to the "
@@ -2733,7 +2776,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Horse Farm
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2725
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2470
 msgctxt "europeans_building"
 msgid ""
 "Breeds strong oxen, cute and helpful donkeys and strong horses for adding "
@@ -2747,12 +2790,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2734
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2741
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2748
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2755
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2762
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2769
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2479
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2486
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2493
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2500
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2507
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2514
 msgctxt "europeans_building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr ""
@@ -2763,12 +2806,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2776
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2783
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2790
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2797
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2804
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2811
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2521
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2528
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2535
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2542
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2549
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2556
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr ""
@@ -2779,12 +2822,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2818
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2825
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2832
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2839
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2846
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2853
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2563
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2570
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2577
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2584
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2591
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2598
 msgctxt "europeans_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
 msgstr ""
@@ -2792,9 +2835,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2863
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2874
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2885
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2608
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2619
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2630
 msgctxt "europeans_building"
 msgid "Trains recruits to soldiers."
 msgstr ""
@@ -2802,15 +2845,15 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2865
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2876
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2887
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2610
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2621
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2632
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts and weapons."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2895
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2640
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’."
 msgstr ""
@@ -2818,9 +2861,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 1
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2903
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2914
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2925
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2648
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2659
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2670
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."
 msgstr ""
@@ -2828,9 +2871,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 2
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2905
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2916
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2927
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2650
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2661
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2672
 msgctxt "europeans_building"
 msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
@@ -2847,18 +2890,18 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2937
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2946
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2955
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2964
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2973
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2982
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2991
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3000
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3009
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3018
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3027
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3036
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2682
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2691
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2700
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2709
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2718
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2727
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2736
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2745
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2754
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2763
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2772
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2781
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr ""
@@ -2872,18 +2915,18 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans military site: Castle
 #. TRANSLATORS: Note helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Note helptext for an Europeans military site: Castle
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2939
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2948
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2957
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2966
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2975
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2984
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:2993
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3002
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3011
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3020
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3029
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3038
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2684
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2693
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2702
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2711
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2720
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2729
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2738
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2747
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2756
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2765
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2774
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2783
 msgctxt "europeans_building"
 msgid ""
 "If you’re low on soldiers to occupy new military sites, use the downward "
@@ -2892,25 +2935,25 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3047
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3056
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3065
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2792
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2801
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2810
 msgctxt "europeans_building"
 msgid "Builds ferries."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3049
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3058
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3067
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2794
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2803
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2812
 msgctxt "europeans_building"
 msgid "Needs water nearby."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3074
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3081
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3088
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2819
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2826
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2833
 msgctxt "europeans_building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
@@ -2918,37 +2961,37 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Construction Site
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3097
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2842
 msgctxt "europeans_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Construction Site
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3099
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2844
 msgctxt "europeans_building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Construction Site
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3101
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2846
 msgctxt "europeans_building"
 msgid "A new building is being built at this construction site."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Dismantle Site
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3108
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2853
 msgctxt "europeans_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Dismantle Site
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3110
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2855
 msgctxt "europeans_building"
 msgid "Proverb"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Dismantle Site
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3112
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2857
 msgctxt "europeans_building"
 msgid ""
 "A building is being dismantled at this dismantle site, returning some of the "
@@ -2956,954 +2999,364 @@ msgid ""
 "stores."
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3119
-msgctxt "shipname"
-msgid "Amsterdam"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3120
-msgctxt "shipname"
-msgid "Andorra la Vella"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3121
-msgctxt "shipname"
-msgid "Antwerpen"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3122
-msgctxt "shipname"
-msgid "Astrachan"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3123
-msgctxt "shipname"
-msgid "Athen"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3124
-msgctxt "shipname"
-msgid "Balaschicha"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3125
-msgctxt "shipname"
-msgid "Barcelona"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3126
-msgctxt "shipname"
-msgid "Beograd"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3127
-msgctxt "shipname"
-msgid "Berlin"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3128
-msgctxt "shipname"
-msgid "Bern"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3129
-msgctxt "shipname"
-msgid "Birmingham"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3130
-msgctxt "shipname"
-msgid "Bradford"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3131
-msgctxt "shipname"
-msgid "Bremen"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3132
-msgctxt "shipname"
-msgid "Bruxelles"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3133
-msgctxt "shipname"
-msgid "București"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3134
-msgctxt "shipname"
-msgid "Budapest"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3135
-msgctxt "shipname"
-msgid "Charkiw"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3136
-msgctxt "shipname"
-msgid "Chișinău"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3137
-msgctxt "shipname"
-msgid "Den Haag"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3138
-msgctxt "shipname"
-msgid "Dnipro"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3139
-msgctxt "shipname"
-msgid "Donezk"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3140
-msgctxt "shipname"
-msgid "Dortmund"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3141
-msgctxt "shipname"
-msgid "Dresden"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3142
-msgctxt "shipname"
-msgid "Dublin"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3143
-msgctxt "shipname"
-msgid "Duisburg"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3144
-msgctxt "shipname"
-msgid "Düsseldorf"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3145
-msgctxt "shipname"
-msgid "Edinburgh"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3146
-msgctxt "shipname"
-msgid "Essen"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3147
-msgctxt "shipname"
-msgid "Frankfurt am Main"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3148
-msgctxt "shipname"
-msgid "Genova"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3149
-msgctxt "shipname"
-msgid "Glasgow"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3150
-msgctxt "shipname"
-msgid "Göteborg"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3151
-msgctxt "shipname"
-msgid "Hamburg"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3152
-msgctxt "shipname"
-msgid "Hannover"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3153
-msgctxt "shipname"
-msgid "Helsinki"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3154
-msgctxt "shipname"
-msgid "Homel"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3155
-msgctxt "shipname"
-msgid "Ischewsk"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3156
-msgctxt "shipname"
-msgid "Istanbul"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3157
-msgctxt "shipname"
-msgid "Jaroslawl"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3158
-msgctxt "shipname"
-msgid "Kasan"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3159
-msgctxt "shipname"
-msgid "Kirow"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3160
-msgctxt "shipname"
-msgid "København"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3161
-msgctxt "shipname"
-msgid "Köln"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3162
-msgctxt "shipname"
-msgid "Kraków"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3163
-msgctxt "shipname"
-msgid "Krasnodar"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3164
-msgctxt "shipname"
-msgid "Krywyj Rih"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3165
-msgctxt "shipname"
-msgid "Kyiv"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3166
-msgctxt "shipname"
-msgid "Leeds"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3167
-msgctxt "shipname"
-msgid "Leipzig"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3168
-msgctxt "shipname"
-msgid "Lipezk"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3169
-msgctxt "shipname"
-msgid "Lisboa"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3170
-msgctxt "shipname"
-msgid "Ljubljana"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3171
-msgctxt "shipname"
-msgid "Łódź"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3172
-msgctxt "shipname"
-msgid "London"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3173
-msgctxt "shipname"
-msgid "Luxemburg"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3174
-msgctxt "shipname"
-msgid "Lwiw"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3175
-msgctxt "shipname"
-msgid "Lyon"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3176
-msgctxt "shipname"
-msgid "Machatschkala"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3177
-msgctxt "shipname"
-msgid "Madrid"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3178
-msgctxt "shipname"
-msgid "Málaga"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3179
-msgctxt "shipname"
-msgid "Manchester"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3180
-msgctxt "shipname"
-msgid "Marseille"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3181
-msgctxt "shipname"
-msgid "Milano"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3182
-msgctxt "shipname"
-msgid "Minsk"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3183
-msgctxt "shipname"
-msgid "Monaco"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3184
-msgctxt "shipname"
-msgid "Moskwa"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3185
-msgctxt "shipname"
-msgid "München"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3186
-msgctxt "shipname"
-msgid "Nabereschnyje Tschelny"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3187
-msgctxt "shipname"
-msgid "Napoli"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3188
-msgctxt "shipname"
-msgid "Nikosia"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3189
-msgctxt "shipname"
-msgid "Nischni Nowgorod"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3190
-msgctxt "shipname"
-msgid "Nürnberg"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3191
-msgctxt "shipname"
-msgid "Odessa"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3192
-msgctxt "shipname"
-msgid "Orenburg"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3193
-msgctxt "shipname"
-msgid "Oslo"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3194
-msgctxt "shipname"
-msgid "Palermo"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3195
-msgctxt "shipname"
-msgid "Paris"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3196
-msgctxt "shipname"
-msgid "Pensa"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3197
-msgctxt "shipname"
-msgid "Perm"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3198
-msgctxt "shipname"
-msgid "Podgorica"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3199
-msgctxt "shipname"
-msgid "Poznań"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3200
-msgctxt "shipname"
-msgid "Praha"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3201
-msgctxt "shipname"
-msgid "Prishtina"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3202
-msgctxt "shipname"
-msgid "Reykjavík"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3203
-msgctxt "shipname"
-msgid "Rīga"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3204
-msgctxt "shipname"
-msgid "Rjasan"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3205
-msgctxt "shipname"
-msgid "Roma"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3206
-msgctxt "shipname"
-msgid "Rostow-na-Donu"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3207
-msgctxt "shipname"
-msgid "Rotterdam"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3208
-msgctxt "shipname"
-msgid "San Marino"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3209
-msgctxt "shipname"
-msgid "Samara"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3210
-msgctxt "shipname"
-msgid "Sankt Petersburg"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3211
-msgctxt "shipname"
-msgid "Saporischschja"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3212
-msgctxt "shipname"
-msgid "Sarajevo"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3213
-msgctxt "shipname"
-msgid "Saratow"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3214
-msgctxt "shipname"
-msgid "Sevilla"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3215
-msgctxt "shipname"
-msgid "Sheffield"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3216
-msgctxt "shipname"
-msgid "Skopje"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3217
-msgctxt "shipname"
-msgid "Sofia"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3218
-msgctxt "shipname"
-msgid "Stockholm"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3219
-msgctxt "shipname"
-msgid "Stuttgart"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3220
-msgctxt "shipname"
-msgid "Tallinn"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3221
-msgctxt "shipname"
-msgid "Tirana"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3222
-msgctxt "shipname"
-msgid "Toljatti"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3223
-msgctxt "shipname"
-msgid "Torino"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3224
-msgctxt "shipname"
-msgid "Ufa"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3225
-msgctxt "shipname"
-msgid "Uljanowsk"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3226
-msgctxt "shipname"
-msgid "Vaduz"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3227
-msgctxt "shipname"
-msgid "Valencia"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3228
-msgctxt "shipname"
-msgid "Valletta"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3229
-msgctxt "shipname"
-msgid "Vilnius"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3230
-msgctxt "shipname"
-msgid "Warszawa"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3231
-msgctxt "shipname"
-msgid "Wien"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3232
-msgctxt "shipname"
-msgid "Wolgograd"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3233
-msgctxt "shipname"
-msgid "Woronesch"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3234
-msgctxt "shipname"
-msgid "Wrocław"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3235
-msgctxt "shipname"
-msgid "Zagreb"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3236
-msgctxt "shipname"
-msgid "Zaragoza"
-msgstr ""
-
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3240
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2864
 msgctxt "warehousename"
 msgid "Europe"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3241
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2865
 msgctxt "warehousename"
 msgid "Åland"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3242
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2866
 msgctxt "warehousename"
 msgid "Albania"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3243
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2867
 msgctxt "warehousename"
 msgid "Andorra"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3244
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2868
 msgctxt "warehousename"
 msgid "Armenia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3245
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2869
 msgctxt "warehousename"
 msgid "Austria"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3246
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2870
 msgctxt "warehousename"
 msgid "Azerbaijan"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3247
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2871
 msgctxt "warehousename"
 msgid "Belarus"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3248
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2872
 msgctxt "warehousename"
 msgid "Belgium"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3249
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2873
 msgctxt "warehousename"
 msgid "Bosnia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3250
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2874
 msgctxt "warehousename"
 msgid "Bulgaria"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3251
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2875
 msgctxt "warehousename"
 msgid "Corsica"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3252
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2876
 msgctxt "warehousename"
 msgid "Croatia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3253
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2877
 msgctxt "warehousename"
 msgid "Cyprus"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3254
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2878
 msgctxt "warehousename"
 msgid "Czechia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3255
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2879
 msgctxt "warehousename"
 msgid "Denmark"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3256
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2880
 msgctxt "warehousename"
 msgid "England"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3257
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2881
 msgctxt "warehousename"
 msgid "Estonia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3258
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2882
 msgctxt "warehousename"
 msgid "Faroe Islands"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3259
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2883
 msgctxt "warehousename"
 msgid "Finland"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3260
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2884
 msgctxt "warehousename"
 msgid "France"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3261
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2885
 msgctxt "warehousename"
 msgid "Georgia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3262
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2886
 msgctxt "warehousename"
 msgid "Germany"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3263
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2887
 msgctxt "warehousename"
 msgid "Gibraltar"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3264
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2888
 msgctxt "warehousename"
 msgid "Greece"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3265
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2889
 msgctxt "warehousename"
 msgid "Guernsey"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3266
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2890
 msgctxt "warehousename"
 msgid "Herzegovina"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3267
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2891
 msgctxt "warehousename"
 msgid "Hungary"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3268
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2892
 msgctxt "warehousename"
 msgid "Iceland"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3269
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2893
 msgctxt "warehousename"
 msgid "Isle of Man"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3270
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2894
 msgctxt "warehousename"
 msgid "Ireland"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3271
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2895
 msgctxt "warehousename"
 msgid "Italy"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3272
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2896
 msgctxt "warehousename"
 msgid "Jersey"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3273
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2897
 msgctxt "warehousename"
 msgid "Kazakhstan"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3274
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2898
 msgctxt "warehousename"
 msgid "Kosovo"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3275
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2899
 msgctxt "warehousename"
 msgid "Latvia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3276
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2900
 msgctxt "warehousename"
 msgid "Liechtenstein"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3277
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2901
 msgctxt "warehousename"
 msgid "Lithuania"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3278
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2902
 msgctxt "warehousename"
 msgid "Luxembourg"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3279
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2903
 msgctxt "warehousename"
 msgid "Malta"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3280
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2904
 msgctxt "warehousename"
 msgid "Moldova"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3281
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2905
 msgctxt "warehousename"
 msgid "Monaco"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3282
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2906
 msgctxt "warehousename"
 msgid "Montenegro"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3283
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2907
 msgctxt "warehousename"
 msgid "Netherlands"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3284
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2908
 msgctxt "warehousename"
 msgid "North Macedonia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3285
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2909
 msgctxt "warehousename"
 msgid "Norway"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3286
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2910
 msgctxt "warehousename"
 msgid "Poland"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3287
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2911
 msgctxt "warehousename"
 msgid "Portugal"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3288
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2912
 msgctxt "warehousename"
 msgid "Romania"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3289
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2913
 msgctxt "warehousename"
 msgid "Russia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3290
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2914
 msgctxt "warehousename"
 msgid "San Marino"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3291
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2915
 msgctxt "warehousename"
 msgid "Sardinia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3292
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2916
 msgctxt "warehousename"
 msgid "Scotland"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3293
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2917
 msgctxt "warehousename"
 msgid "Serbia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3294
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2918
 msgctxt "warehousename"
 msgid "Slovakia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3295
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2919
 msgctxt "warehousename"
 msgid "Slovenia"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3296
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2920
 msgctxt "warehousename"
 msgid "Spain"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3297
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2921
 msgctxt "warehousename"
 msgid "Svalbard"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3298
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2922
 msgctxt "warehousename"
 msgid "Sweden"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3299
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2923
 msgctxt "warehousename"
 msgid "Switzerland"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3300
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2924
 msgctxt "warehousename"
 msgid "Turkey"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3301
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2925
 msgctxt "warehousename"
 msgid "Ukraine"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3302
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2926
 msgctxt "warehousename"
 msgid "Vatican City"
 msgstr ""
 
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3303
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2927
 msgctxt "warehousename"
 msgid "Wales"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3309
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2933
 msgctxt "europeans"
 msgid "Worker missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3311
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2935
 msgctxt "europeans"
 msgid "Worker is coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3313
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2937
 msgctxt "europeans"
 msgid "Workers missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3315
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2939
 msgctxt "europeans"
 msgid "Workers are coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3317
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2941
 msgctxt "europeans"
 msgid "Expert missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3319
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2943
 msgctxt "europeans"
 msgid "Experts missing"
 msgstr ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3333
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2957
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
@@ -3911,7 +3364,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3335
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2959
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
@@ -3919,7 +3372,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3337
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2961
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
@@ -3927,7 +3380,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
-#: addons/europeans_food_production.wad/tribes/europeans_tribe/units_food.lua:3339
+#: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:2963
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
@@ -4076,10 +3529,4 @@ msgstr ""
 #: addons/europeans_food_production.wad/tribes/workers/farmer_normal/init.lua:8
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
-msgstr ""
-
-#. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_food_production.wad/tribes/workers/trader_food/init.lua:8
-msgctxt "europeans_worker"
-msgid "Trader"
 msgstr ""

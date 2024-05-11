@@ -9,18 +9,14 @@ local init_europeans = {
     name = "europeans",
     author = _"Mark McWire",
     -- TRANSLATORS: This is a tribe name
-    descname = _"Europeans",
+    descname = _"Europeans (Craft Addon)",
     tooltip = _"This is the culture of the Europeans.",
     icon = dirname .. "images/icon.png",
     script = dirname .. "units.lua",
 
     starting_conditions = {
-        "addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_ai.lua";
-        "addons/europeans_craft_buildings.wad.wad/scripting/starting_conditions/headquarters_terraforming.lua";
-        "addons/europeans_craft_buildings.wad.wad/scripting/starting_conditions/headquarters_seafaring.lua";
-        "addons/europeans_craft_buildings.wad.wad/scripting/starting_conditions/discovery_ai.lua";
-        "addons/europeans_craft_buildings.wad.wad/scripting/starting_conditions/discovery_human.lua";
-        "addons/europeans_craft_buildings.wad.wad/scripting/starting_conditions/trading_outpost.lua";
+        "addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_craft.lua";
+        "addons/europeans_craft_buildings.wad/scripting/starting_conditions/discovery_craft.lua";
     }
 }
 pop_textdomain()

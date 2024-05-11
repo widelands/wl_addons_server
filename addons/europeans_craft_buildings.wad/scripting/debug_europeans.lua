@@ -2,7 +2,7 @@
 --           Test script for debugging europeans tribe.
 -- =======================================================================
 
-include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
+include "addons/europeans_food_production.wad/scripting/starting_conditions.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 
@@ -80,10 +80,10 @@ function allow_normal_buildings(player_number)
 
     if tribe.name == "europeans" then
         player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", "europeans_lumberjacks_house_normal", "europeans_tree_nursery_normal", "europeans_farm_small_normal"}
-        player:allow_buildings{"europeans_sawmill_normal", "europeans_weaving_mill_normal", "europeans_stonemasons_house_normal" }
-        player:allow_buildings{"europeans_manufactory_normal", "europeans_charcoal_kiln_normal", "europeans_quarry_normal" }
+        player:allow_buildings{"europeans_sawmill_normal", "europeans_charcoal_kiln_normal", "europeans_quarry_normal", "europeans_stonemasons_house_normal", "europeans_weaving_mill_normal"}
+        player:allow_buildings{"europeans_farm_medium_normal", "europeans_farm_normal", "europeans_animal_farm_normal", "europeans_mill_normal", "europeans_bakery_normal", "europeans_brewery_normal"}
         player:allow_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", "europeans_smelting_works_normal"}
-        player:allow_buildings{"europeans_trainingscamp_normal", "europeans_ferry_yard_normal", "europeans_shipyard_normal"}
+        player:allow_buildings{"europeans_recruitement_center_normal", "europeans_trainingscamp_normal", "europeans_ferry_yard_normal", "europeans_shipyard_normal"}
     end
 end
 
@@ -94,10 +94,10 @@ function forbid_normal_buildings(player_number)
     
     if tribe.name == "europeans" then
         player:forbid_buildings{"europeans_well_level_2","europeans_well_level_3", "europeans_lumberjacks_house_normal", "europeans_tree_nursery_normal", "europeans_farm_small_normal"}
-        player:forbid_buildings{"europeans_sawmill_normal", "europeans_weaving_mill_normal", "europeans_stonemasons_house_normal"}
-        player:forbid_buildings{"europeans_manufactory_normal", "europeans_charcoal_kiln_normal", "europeans_quarry_normal"}
+        player:forbid_buildings{"europeans_sawmill_normal", "europeans_charcoal_kiln_normal", "europeans_quarry_normal", "europeans_stonemasons_house_normal", "europeans_weaving_mill_normal"}
+        player:forbid_buildings{"europeans_farm_medium_normal", "europeans_farm_normal", "europeans_animal_farm_normal", "europeans_mill_normal", "europeans_bakery_normal", "europeans_brewery_normal"}
         player:forbid_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", "europeans_smelting_works_normal"}
-        player:forbid_buildings{"europeans_trainingscamp_normal", "europeans_ferry_yard_normal", "europeans_shipyard_normal"}
+        player:forbid_buildings{"europeans_recruitement_center_normal", "europeans_trainingscamp_normal", "europeans_ferry_yard_normal", "europeans_shipyard_normal"}
     end
 end
 
@@ -108,10 +108,10 @@ function allow_advanced_buildings(player_number)
 
     if tribe.name == "europeans" then
         player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_lumberjacks_house_advanced", "europeans_tree_nursery_advanced", "europeans_farm_small_advanced"}
-        player:allow_buildings{"europeans_sawmill_advanced", "europeans_weaving_mill_advanced", "europeans_stonemasons_house_advanced"}
-        player:allow_buildings{"europeans_manufactory_advanced", "europeans_charcoal_kiln_advanced", "europeans_quarry_advanced"}
+        player:allow_buildings{"europeans_sawmill_advanced", "europeans_charcoal_kiln_advanced", "europeans_quarry_advanced", "europeans_stonemasons_house_advanced", "europeans_weaving_mill_advanced"}
+        player:allow_buildings{"europeans_farm_medium_advanced", "europeans_farm_advanced", "europeans_animal_farm_advanced", "europeans_mill_advanced", "europeans_bakery_advanced", "europeans_brewery_advanced"}
         player:allow_buildings{"europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5", "europeans_smelting_works_advanced"}
-        player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced"}
+        player:allow_buildings{"europeans_recruitement_center_advanced", "europeans_trainingscamp_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced"}
     end
 end
 
@@ -122,10 +122,10 @@ function forbid_advanced_buildings(player_number)
     
     if tribe.name == "europeans" then
         player:forbid_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_lumberjacks_house_advanced", "europeans_tree_nursery_advanced", "europeans_farm_small_advanced"}
-        player:forbid_buildings{"europeans_sawmill_advanced", "europeans_weaving_mill_advanced", "europeans_stonemasons_house_advanced"}
-        player:forbid_buildings{"europeans_manufactory_advanced", "europeans_charcoal_kiln_advanced", "europeans_quarry_advanced"}
+        player:forbid_buildings{"europeans_sawmill_advanced", "europeans_charcoal_kiln_advanced", "europeans_quarry_advanced", "europeans_stonemasons_house_advanced", "europeans_weaving_mill_advanced"}
+        player:forbid_buildings{"europeans_farm_medium_advanced", "europeans_farm_advanced", "europeans_animal_farm_advanced", "europeans_mill_advanced", "europeans_bakery_advanced", "europeans_brewery_advanced"}
         player:forbid_buildings{"europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5", "europeans_smelting_works_advanced"}
-        player:forbid_buildings{"europeans_trainingscamp_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced"}
+        player:forbid_buildings{"europeans_recruitement_center_advanced", "europeans_trainingscamp_advanced", "europeans_ferry_yard_advanced", "europeans_shipyard_advanced"}
     end
 end
 

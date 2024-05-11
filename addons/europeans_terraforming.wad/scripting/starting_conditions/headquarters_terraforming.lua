@@ -47,9 +47,6 @@ local init = {
             boots_wooden = 8,
             helmet_wooden = 8,
             spear_wooden = 8,
-            coin_copper = 16,
-            coin_silver = 8,
-            coin_gold = 8
         },
         workers = {
             europeans_geologist = 1,
@@ -57,7 +54,6 @@ local init = {
             europeans_carrier_1 = 16,
             europeans_carrier_2 = 8,
             europeans_carrier_3 = 8,
-            europeans_trader = 6,
             europeans_builder = 16,
             europeans_worker_advanced = 8,
             europeans_worker_normal = 8,

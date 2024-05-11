@@ -12,14 +12,11 @@ local init_europeans = {
     descname = _"Europeans (Terraforming)",
     tooltip = _"This is the culture of the Europeans.",
     icon = dirname .. "images/icon.png",
-    script = dirname .. "units_terraforming.lua",
+    script = dirname .. "units.lua",
 
     starting_conditions = {
         "addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_ai.lua";
         "addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_terraforming.lua";
-        "addons/europeans_tribe.wad.wad/scripting/starting_conditions/trading_outpost.lua";
-        "addons/europeans_tribe.wad.wad/scripting/starting_conditions/headquarters_seafaring.lua";
-        "addons/europeans_tribe.wad/scripting/starting_conditions/discovery_ai.lua";
     }
 }
 pop_textdomain()
