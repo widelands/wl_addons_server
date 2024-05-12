@@ -5,16 +5,15 @@
 #
 # Translators:
 # Iwan Gabovitch, 2023
-# Stephan Lutz <stephan-lutz@gmx.de>, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 03:08+0200\n"
+"POT-Creation-Date: 2024-05-12 03:08+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
-"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2024\n"
+"Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -23,9 +22,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/europeans_food_production.wad/addon:2
-#, fuzzy
 msgid "Food production addon for Europeans tribe"
-msgstr "Erweiterung Europäischer Nahrungsproduktion für die Europäer"
+msgstr ""
 
 #: addons/europeans_food_production.wad/addon:3
 msgid ""
@@ -880,10 +878,9 @@ msgstr "Normale Mühle"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Coal Mine"
-msgstr "Einfache Mühle"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
@@ -939,10 +936,9 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:101
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:105
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:85
-#, fuzzy
 msgctxt "europeans_building"
 msgid "mining granite"
-msgstr "Das Pflanzen von Weintrauben"
+msgstr ""
 
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:108
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:100
@@ -1022,10 +1018,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Gold Mine"
-msgstr "Einfache Mühle"
+msgstr ""
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:95
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:86
@@ -1039,10 +1034,9 @@ msgstr "Einfache Mühle"
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:93
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:97
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:77
-#, fuzzy
 msgctxt "europeans_building"
 msgid "mining ore"
-msgstr "Die Herstellung von Honig"
+msgstr ""
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:111
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:102
@@ -1056,10 +1050,9 @@ msgstr "Die Herstellung von Honig"
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:109
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:113
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:93
-#, fuzzy
 msgctxt "europeans_building"
 msgid "mining marble"
-msgstr "Das Pflanzen von Gerste"
+msgstr ""
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:119
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:110
@@ -1145,10 +1138,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Iron Mine"
-msgstr "Einfache Mühle"
+msgstr ""
 
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:137
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:128
@@ -1223,13 +1215,9 @@ msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_food.lua:13
-#, fuzzy
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies."
 msgstr ""
-"Beginne das Spiel mit drei Schiffen auf dem Ozean und nur einer Hand voll an "
-"Gütern. Das Terraforming (Eindeichen von Wasserfeldern) wurde deaktiviert, "
-"da es nicht kompatibel mit Seefahrt ist."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_food.lua:11
@@ -1634,102 +1622,73 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Bread
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:445
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Bread are produced in a bakery out of water and flour. Basic miners consume "
 "bread."
 msgstr ""
-"Brot wird in einer Bäckerei aus Wasser und Mehl hergestellt. Es wird auf dem "
-"kleinen und großen Markt im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey Bread
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:454
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Honey Bread are produced in a bakery out of water, honey and flour. Normal "
 "miners consume honey bread."
 msgstr ""
-"Honigbrot wird in einer Bäckerei aus Wasser, Honig und Mehl hergestellt. Es "
-"wird auf dem großen Markt im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Biscuit
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:463
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Biscuits are produced in a bakery out of water, flour, honey and fruits. "
 "Advanced miners consume biscuit."
 msgstr ""
-"Kekse werden in einer Bäckerei aus Wasser, Mehl, Honig und Früchten "
-"hergestellt. Sie werden auf dem großen Markt im Tausch gegen Münzen zum "
-"Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:472
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Meat contains a lot of energy, and it is produced in animal farms. Miners "
 "consume meat."
 msgstr ""
-"Fleisch enthält viel Energie und wird in Tierzuchten produziert. Es wird auf "
-"dem kleinen und großen Markt gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fish
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:481
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Fish is one of the biggest food resources of the Europeans, and it is "
 "produced in animal farms. Miners consume fish."
 msgstr ""
-"Fisch ist eine der größten Nahrungsressourcen der Europäer und wird in "
-"Tierzuchten produziert. Er wird auf dem großen Markt im Tausch gegen Münzen "
-"zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:490
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This beer is produced in a brewery out of barley and water. Basic miners "
 "consume beer."
 msgstr ""
-"Dieses Starkbier wird in einer Brauerei aus Gerste und Wasser hergestellt. "
-"Es wird auf dem großen Markt im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Mead
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:499
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Mead is produced by breweries out of water, barley and honey. Normal miners "
 "consume mead."
 msgstr ""
-"Met wird von Brauereien aus Wasser, Gerste und Honig hergestellt. Er wird "
-"auf dem großen Markt im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:508
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This strong beer is produced in a brewery out of barley and water. Advanced "
 "miners consume strong beer."
 msgstr ""
-"Dieses Starkbier wird in einer Brauerei aus Gerste und Wasser hergestellt. "
-"Es wird auf dem großen Markt im Tausch gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wine
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:517
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced in a winery out of grape. Advanced miners consume wine."
 msgstr ""
-"Er wird in einer Weinkellerei aus Weintrauben hergestellt und auf dem großen "
-"Markt gegen Münzen zum Verkauf angeboten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:530
@@ -3777,614 +3736,3 @@ msgstr "Einfacher Bauer"
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
 msgstr "Normaler Bauer"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Trading Post"
-#~ msgstr "Handelsposten"
-
-#~ msgid "trading"
-#~ msgstr "Das Handeln"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for copper coins"
-#~ msgstr "Tausch von Nahrung gegen Kupfermünzen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for silver coins"
-#~ msgstr "Tausch von Nahrung gegen Silbermünzen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for gold coins"
-#~ msgstr "Tausch von Nahrung gegen Goldmünzen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing trading of gold"
-#~ msgstr "Goldhandel angehalten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for wood coins"
-#~ msgstr "Tausch von Nahrung gegen Holzmünzen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing trading of blackwood"
-#~ msgstr "Hartholzhandel angehalten"
-
-#~ msgid ""
-#~ "Start the game with your headquarters only. Disabled terraforming (diking "
-#~ "of water bodies) because of lack of compatibility with seafaring."
-#~ msgstr ""
-#~ "Beginne das Spiel nur mit deinem Hauptquartier. Das Terraforming "
-#~ "(Eindeichen von Wasserfeldern) wurde deaktiviert, da es nicht kompatibel "
-#~ "mit Seefahrt ist."
-
-#~ msgid ""
-#~ "Start the game with your headquarters only. Disabled seafaring because of "
-#~ "lack of compatibility with terraforming (diking of water bodies)."
-#~ msgstr ""
-#~ "Beginne das Spiel nur mit deinem Hauptquartier. Die Seefahrt wurde "
-#~ "deaktiviert, aufgrund fehlender Kompatibilität mit dem Terraforming "
-#~ "(Eindeichen von Wasserfeldern)."
-
-#~ msgid ""
-#~ "This starting condition contains a market as an additional building, "
-#~ "where some wares can be bought for gold, quartz and diamonds. Disabled "
-#~ "seafaring because of lack of compatibility with terraforming (diking of "
-#~ "water bodies)."
-#~ msgstr ""
-#~ "Diese Startbedingungenthält einen Markt als zusätzliches Gebäude, in dem "
-#~ "man einige Waren für Gold, Bergkristall oder Diamanten kaufen kann. Die "
-#~ "Seefahrt wurde deaktiviert, aufgrund fehlender Kompatibilität mit dem "
-#~ "Terraforming (Eindeichen von Wasserfeldern)."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This beer is produced in a brewery out of barley and water. It is offered "
-#~ "for sale on the small and big market in exchange for coins."
-#~ msgstr ""
-#~ "Dieses Bier wird in einer Brauerei aus Gerste und Wasser hergestellt. Es "
-#~ "wird auf dem kleinen und großen Markt im Tausch gegen Münzen zum Verkauf "
-#~ "angeboten."
-
-#~ msgctxt "ware"
-#~ msgid ""
-#~ "Wood coins are money made of copper or bronze (copper and tin). Its the "
-#~ "standard barter object."
-#~ msgstr ""
-#~ "Kupfermünzen Sind Geld aus Kupfer oder Bronze (Kupfer und Zinn). Sie sind "
-#~ "das Standardtauschobjekt."
-
-#~ msgctxt "ware"
-#~ msgid "Wood coins are money made of silver. Its a valuable barter object."
-#~ msgstr ""
-#~ "Silbermünzen sind Geld gefertigt aus Silber. Sie sind ein wertvolles "
-#~ "Tauschobjekt."
-
-#~ msgctxt "ware"
-#~ msgid "Wood coins are money made of gold. Its most valuable barter object."
-#~ msgstr ""
-#~ "Goldmünzen sind Geld gefertigt aus Gold. Sie sind das wertvollste "
-#~ "Tauschobjekt."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Terraforms desert and coast into fertile soil."
-#~ msgstr "Verbessert Wüsten und Küsten zu fruchtbarem Land."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Traders work in markets or in trading posts to exchange wares with other "
-#~ "tribes."
-#~ msgstr ""
-#~ "Händler arbeiten in Märkten oder Handelsposten um Warten mit anderen "
-#~ "Stämmen auszutauschen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale wares to other allied tribes."
-#~ msgstr "Marktgebäude um Waren an andere Stämme zu verkaufen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale food to other allied tribes."
-#~ msgstr "Marktgebäude um Nahrung an andere Stämme zu verkaufen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Store building to purchase wares from other allied tribes."
-#~ msgstr "Lagergebäude um Waren von allierten Stämmen zu kaufen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Trading building to purchase wares from other allied tribes."
-#~ msgstr "Handelsgebäude um Waren von allierten Stämmen zu kaufen."
-
-#~ msgctxt "building"
-#~ msgid "Terraforms deserts and coasts into fertile soil."
-#~ msgstr "Verbessert Wüsten und Küsten zu fruchtbarem Land."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Forges all the tools that your workers need."
-#~ msgstr "Stellt alle Werkzeuge her, die deine Arbeiter brauchen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces clothing and armor."
-#~ msgstr "Stellt Bekleidung und Rüstungen her."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces shoes and boots."
-#~ msgstr "Stellt Schuhe und Stiefel her."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces shields and weapons."
-#~ msgstr "Schmiedet Schilde und Waffen."
-
-#~ msgctxt "shipname"
-#~ msgid "Amsterdam"
-#~ msgstr "Amsterdam"
-
-#~ msgctxt "shipname"
-#~ msgid "Andorra la Vella"
-#~ msgstr "Andorra la Vella"
-
-#~ msgctxt "shipname"
-#~ msgid "Antwerpen"
-#~ msgstr "Antwerpen"
-
-#~ msgctxt "shipname"
-#~ msgid "Astrachan"
-#~ msgstr "Astrachan"
-
-#~ msgctxt "shipname"
-#~ msgid "Athen"
-#~ msgstr "Athen"
-
-#~ msgctxt "shipname"
-#~ msgid "Balaschicha"
-#~ msgstr "Balaschicha"
-
-#~ msgctxt "shipname"
-#~ msgid "Barcelona"
-#~ msgstr "Barcelona"
-
-#~ msgctxt "shipname"
-#~ msgid "Beograd"
-#~ msgstr "Beograd"
-
-#~ msgctxt "shipname"
-#~ msgid "Berlin"
-#~ msgstr "Berlin"
-
-#~ msgctxt "shipname"
-#~ msgid "Bern"
-#~ msgstr "Bern"
-
-#~ msgctxt "shipname"
-#~ msgid "Birmingham"
-#~ msgstr "Birmingham"
-
-#~ msgctxt "shipname"
-#~ msgid "Bradford"
-#~ msgstr "Bradford"
-
-#~ msgctxt "shipname"
-#~ msgid "Bremen"
-#~ msgstr "Bremen"
-
-#~ msgctxt "shipname"
-#~ msgid "Bruxelles"
-#~ msgstr "Bruxelles"
-
-#~ msgctxt "shipname"
-#~ msgid "București"
-#~ msgstr "București"
-
-#~ msgctxt "shipname"
-#~ msgid "Budapest"
-#~ msgstr "Budapest"
-
-#~ msgctxt "shipname"
-#~ msgid "Charkiw"
-#~ msgstr "Charkiw"
-
-#~ msgctxt "shipname"
-#~ msgid "Chișinău"
-#~ msgstr "Chișinău"
-
-#~ msgctxt "shipname"
-#~ msgid "Den Haag"
-#~ msgstr "Den Haag"
-
-#~ msgctxt "shipname"
-#~ msgid "Dnipro"
-#~ msgstr "Dnipro"
-
-#~ msgctxt "shipname"
-#~ msgid "Donezk"
-#~ msgstr "Donezk"
-
-#~ msgctxt "shipname"
-#~ msgid "Dortmund"
-#~ msgstr "Dortmund"
-
-#~ msgctxt "shipname"
-#~ msgid "Dresden"
-#~ msgstr "Dresden"
-
-#~ msgctxt "shipname"
-#~ msgid "Dublin"
-#~ msgstr "Dublin"
-
-#~ msgctxt "shipname"
-#~ msgid "Duisburg"
-#~ msgstr "Duisburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Düsseldorf"
-#~ msgstr "Düsseldorf"
-
-#~ msgctxt "shipname"
-#~ msgid "Edinburgh"
-#~ msgstr "Edinburgh"
-
-#~ msgctxt "shipname"
-#~ msgid "Essen"
-#~ msgstr "Essen"
-
-#~ msgctxt "shipname"
-#~ msgid "Frankfurt am Main"
-#~ msgstr "Frankfurt am Main"
-
-#~ msgctxt "shipname"
-#~ msgid "Genova"
-#~ msgstr "Genova"
-
-#~ msgctxt "shipname"
-#~ msgid "Glasgow"
-#~ msgstr "Glasgow"
-
-#~ msgctxt "shipname"
-#~ msgid "Göteborg"
-#~ msgstr "Göteborg"
-
-#~ msgctxt "shipname"
-#~ msgid "Hamburg"
-#~ msgstr "Hamburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Hannover"
-#~ msgstr "Hannover"
-
-#~ msgctxt "shipname"
-#~ msgid "Helsinki"
-#~ msgstr "Helsinki"
-
-#~ msgctxt "shipname"
-#~ msgid "Homel"
-#~ msgstr "Homel"
-
-#~ msgctxt "shipname"
-#~ msgid "Ischewsk"
-#~ msgstr "Ischewsk"
-
-#~ msgctxt "shipname"
-#~ msgid "Istanbul"
-#~ msgstr "Istanbul"
-
-#~ msgctxt "shipname"
-#~ msgid "Jaroslawl"
-#~ msgstr "Jaroslawl"
-
-#~ msgctxt "shipname"
-#~ msgid "Kasan"
-#~ msgstr "Kasan"
-
-#~ msgctxt "shipname"
-#~ msgid "Kirow"
-#~ msgstr "Kirow"
-
-#~ msgctxt "shipname"
-#~ msgid "København"
-#~ msgstr "København"
-
-#~ msgctxt "shipname"
-#~ msgid "Köln"
-#~ msgstr "Köln"
-
-#~ msgctxt "shipname"
-#~ msgid "Kraków"
-#~ msgstr "Kraków"
-
-#~ msgctxt "shipname"
-#~ msgid "Krasnodar"
-#~ msgstr "Krasnodar"
-
-#~ msgctxt "shipname"
-#~ msgid "Krywyj Rih"
-#~ msgstr "Krywyj Rih"
-
-#~ msgctxt "shipname"
-#~ msgid "Kyiv"
-#~ msgstr "Kyiv"
-
-#~ msgctxt "shipname"
-#~ msgid "Leeds"
-#~ msgstr "Leeds"
-
-#~ msgctxt "shipname"
-#~ msgid "Leipzig"
-#~ msgstr "Leipzig"
-
-#~ msgctxt "shipname"
-#~ msgid "Lipezk"
-#~ msgstr "Lipezk"
-
-#~ msgctxt "shipname"
-#~ msgid "Lisboa"
-#~ msgstr "Lisboa"
-
-#~ msgctxt "shipname"
-#~ msgid "Ljubljana"
-#~ msgstr "Ljubljana"
-
-#~ msgctxt "shipname"
-#~ msgid "Łódź"
-#~ msgstr "Łódź"
-
-#~ msgctxt "shipname"
-#~ msgid "London"
-#~ msgstr "London"
-
-#~ msgctxt "shipname"
-#~ msgid "Luxemburg"
-#~ msgstr "Luxemburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Lwiw"
-#~ msgstr "Lwiw"
-
-#~ msgctxt "shipname"
-#~ msgid "Lyon"
-#~ msgstr "Lyon"
-
-#~ msgctxt "shipname"
-#~ msgid "Machatschkala"
-#~ msgstr "Machatschkala"
-
-#~ msgctxt "shipname"
-#~ msgid "Madrid"
-#~ msgstr "Madrid"
-
-#~ msgctxt "shipname"
-#~ msgid "Málaga"
-#~ msgstr "Málaga"
-
-#~ msgctxt "shipname"
-#~ msgid "Manchester"
-#~ msgstr "Manchester"
-
-#~ msgctxt "shipname"
-#~ msgid "Marseille"
-#~ msgstr "Marseille"
-
-#~ msgctxt "shipname"
-#~ msgid "Milano"
-#~ msgstr "Milano"
-
-#~ msgctxt "shipname"
-#~ msgid "Minsk"
-#~ msgstr "Minsk"
-
-#~ msgctxt "shipname"
-#~ msgid "Monaco"
-#~ msgstr "Monaco"
-
-#~ msgctxt "shipname"
-#~ msgid "Moskwa"
-#~ msgstr "Moskwa"
-
-#~ msgctxt "shipname"
-#~ msgid "München"
-#~ msgstr "München"
-
-#~ msgctxt "shipname"
-#~ msgid "Nabereschnyje Tschelny"
-#~ msgstr "Nabereschnyje Tschelny"
-
-#~ msgctxt "shipname"
-#~ msgid "Napoli"
-#~ msgstr "Napoli"
-
-#~ msgctxt "shipname"
-#~ msgid "Nikosia"
-#~ msgstr "Nikosia"
-
-#~ msgctxt "shipname"
-#~ msgid "Nischni Nowgorod"
-#~ msgstr "Nischni Nowgorod"
-
-#~ msgctxt "shipname"
-#~ msgid "Nürnberg"
-#~ msgstr "Nürnberg"
-
-#~ msgctxt "shipname"
-#~ msgid "Odessa"
-#~ msgstr "Odessa"
-
-#~ msgctxt "shipname"
-#~ msgid "Orenburg"
-#~ msgstr "Orenburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Oslo"
-#~ msgstr "Oslo"
-
-#~ msgctxt "shipname"
-#~ msgid "Palermo"
-#~ msgstr "Palermo"
-
-#~ msgctxt "shipname"
-#~ msgid "Paris"
-#~ msgstr "Paris"
-
-#~ msgctxt "shipname"
-#~ msgid "Pensa"
-#~ msgstr "Pensa"
-
-#~ msgctxt "shipname"
-#~ msgid "Perm"
-#~ msgstr "Perm"
-
-#~ msgctxt "shipname"
-#~ msgid "Podgorica"
-#~ msgstr "Podgorica"
-
-#~ msgctxt "shipname"
-#~ msgid "Poznań"
-#~ msgstr "Poznań"
-
-#~ msgctxt "shipname"
-#~ msgid "Praha"
-#~ msgstr "Praha"
-
-#~ msgctxt "shipname"
-#~ msgid "Prishtina"
-#~ msgstr "Prishtina"
-
-#~ msgctxt "shipname"
-#~ msgid "Reykjavík"
-#~ msgstr "Reykjavík"
-
-#~ msgctxt "shipname"
-#~ msgid "Rīga"
-#~ msgstr "Rīga"
-
-#~ msgctxt "shipname"
-#~ msgid "Rjasan"
-#~ msgstr "Rjasan"
-
-#~ msgctxt "shipname"
-#~ msgid "Roma"
-#~ msgstr "Roma"
-
-#~ msgctxt "shipname"
-#~ msgid "Rostow-na-Donu"
-#~ msgstr "Rostow-na-Donu"
-
-#~ msgctxt "shipname"
-#~ msgid "Rotterdam"
-#~ msgstr "Rotterdam"
-
-#~ msgctxt "shipname"
-#~ msgid "San Marino"
-#~ msgstr "San Marino"
-
-#~ msgctxt "shipname"
-#~ msgid "Samara"
-#~ msgstr "Samara"
-
-#~ msgctxt "shipname"
-#~ msgid "Sankt Petersburg"
-#~ msgstr "Sankt Petersburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Saporischschja"
-#~ msgstr "Saporischschja"
-
-#~ msgctxt "shipname"
-#~ msgid "Sarajevo"
-#~ msgstr "Sarajevo"
-
-#~ msgctxt "shipname"
-#~ msgid "Saratow"
-#~ msgstr "Saratow"
-
-#~ msgctxt "shipname"
-#~ msgid "Sevilla"
-#~ msgstr "Sevilla"
-
-#~ msgctxt "shipname"
-#~ msgid "Sheffield"
-#~ msgstr "Sheffield"
-
-#~ msgctxt "shipname"
-#~ msgid "Skopje"
-#~ msgstr "Skopje"
-
-#~ msgctxt "shipname"
-#~ msgid "Sofia"
-#~ msgstr "Sofia"
-
-#~ msgctxt "shipname"
-#~ msgid "Stockholm"
-#~ msgstr "Stockholm"
-
-#~ msgctxt "shipname"
-#~ msgid "Stuttgart"
-#~ msgstr "Stuttgart"
-
-#~ msgctxt "shipname"
-#~ msgid "Tallinn"
-#~ msgstr "Tallinn"
-
-#~ msgctxt "shipname"
-#~ msgid "Tirana"
-#~ msgstr "Tirana"
-
-#~ msgctxt "shipname"
-#~ msgid "Toljatti"
-#~ msgstr "Toljatti"
-
-#~ msgctxt "shipname"
-#~ msgid "Torino"
-#~ msgstr "Torino"
-
-#~ msgctxt "shipname"
-#~ msgid "Ufa"
-#~ msgstr "Ufa"
-
-#~ msgctxt "shipname"
-#~ msgid "Uljanowsk"
-#~ msgstr "Uljanowsk"
-
-#~ msgctxt "shipname"
-#~ msgid "Vaduz"
-#~ msgstr "Vaduz"
-
-#~ msgctxt "shipname"
-#~ msgid "Valencia"
-#~ msgstr "Valencia"
-
-#~ msgctxt "shipname"
-#~ msgid "Valletta"
-#~ msgstr "Valletta"
-
-#~ msgctxt "shipname"
-#~ msgid "Vilnius"
-#~ msgstr "Vilnius"
-
-#~ msgctxt "shipname"
-#~ msgid "Warszawa"
-#~ msgstr "Warszawa"
-
-#~ msgctxt "shipname"
-#~ msgid "Wien"
-#~ msgstr "Wien"
-
-#~ msgctxt "shipname"
-#~ msgid "Wolgograd"
-#~ msgstr "Wolgograd"
-
-#~ msgctxt "shipname"
-#~ msgid "Woronesch"
-#~ msgstr "Woronesch"
-
-#~ msgctxt "shipname"
-#~ msgid "Wrocław"
-#~ msgstr "Wrocław"
-
-#~ msgctxt "shipname"
-#~ msgid "Zagreb"
-#~ msgstr "Zagreb"
-
-#~ msgctxt "shipname"
-#~ msgid "Zaragoza"
-#~ msgstr "Zaragoza"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Trader"
-#~ msgstr "Händler"

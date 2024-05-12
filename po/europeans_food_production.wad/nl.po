@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 03:08+0200\n"
+"POT-Creation-Date: 2024-05-12 03:08+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -22,20 +22,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/europeans_food_production.wad/addon:2
-#, fuzzy
 msgid "Food production addon for Europeans tribe"
-msgstr "Europeanen voedselproductie addon voor Europeanen stam"
+msgstr "Voedselproductie-addon voor Europeanen-stam"
 
 #: addons/europeans_food_production.wad/addon:3
-#, fuzzy
 msgid ""
 "Adds some additional agricultur wares, workers and buildings to Europeans "
 "tribes economy for more complexity. When the addon europeans_food_production."
 "wad is activated, the definitions for buildings, wares and workers from the "
 "base addon europeans_tribes.wad are overwritten and no longer available."
 msgstr ""
-"Voegt enkele extra waren, werkers en gebouwen toe aan de economie van de "
-"Europese stammen voor meer complexiteit. Als de addon "
+"Voegt wat extra landbouwproducten, werkers en gebouwen toe aan de economie "
+"van de Europeanen voor meer complexiteit. Als de addon "
 "europeans_food_production.wad is geactiveerd, worden de definities voor "
 "gebouwen, goederen en arbeiders uit de basis-addon europeans_tribes.wad "
 "overschreven en zijn ze niet langer beschikbaar."
@@ -892,10 +890,9 @@ msgstr "Normale Molen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Coal Mine"
-msgstr "Basis Molen"
+msgstr "Basis Steenkoolmijn"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
@@ -921,7 +918,7 @@ msgstr "Basis Molen"
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:43
 msgctxt "europeans_building"
 msgid "mining"
-msgstr ""
+msgstr "mijnbouw"
 
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:92
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:84
@@ -931,7 +928,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:74
 msgctxt "europeans_building"
 msgid "mining coal"
-msgstr ""
+msgstr "kolen delven"
 
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:100
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:92
@@ -951,10 +948,9 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:101
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:105
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:85
-#, fuzzy
 msgctxt "europeans_building"
 msgid "mining granite"
-msgstr "druiven planten"
+msgstr "graniet delven"
 
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:108
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:100
@@ -964,7 +960,7 @@ msgstr "druiven planten"
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:90
 msgctxt "europeans_building"
 msgid "mining diamond"
-msgstr ""
+msgstr "diamant delven"
 
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:126
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:118
@@ -973,7 +969,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:127
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:108
 msgid "No Coal"
-msgstr ""
+msgstr "Geen Steenkool"
 
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:127
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:119
@@ -982,7 +978,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:128
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:109
 msgid "Main Coal Vein Exhausted"
-msgstr ""
+msgstr "Hoofdkolenader Uitgeput"
 
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_basic/init.lua:129
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:121
@@ -994,36 +990,39 @@ msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"De hoofdader van deze kolenmijn is uitgeput. Verwacht een sterk verminderd "
+"rendement op je investering. Je zou moeten overwegen om hem te verbeteren, "
+"ontmantelen of vernietigen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 1"
-msgstr ""
+msgstr "Kolenmijn Niveau 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 2"
-msgstr ""
+msgstr "Kolenmijn Niveau 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 3"
-msgstr ""
+msgstr "Kolenmijn Niveau 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 4"
-msgstr ""
+msgstr "Kolenmijn Niveau 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Coal Mine Level 5"
-msgstr ""
+msgstr "Kolenmijn Niveau 5"
 
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_level_5/init.lua:111
 msgctxt "europeans_building"
@@ -1031,13 +1030,15 @@ msgid ""
 "This coal mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"De hoofdader van deze kolenmijn is uitgeput. Verwacht een sterk verminderd "
+"rendement op je investering. Je zou moeten overwegen om hem te ontmantelen "
+"of te vernietigen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Gold Mine"
-msgstr "Basis Molen"
+msgstr "Basis Goudmijn"
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:95
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:86
@@ -1051,10 +1052,9 @@ msgstr "Basis Molen"
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:93
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:97
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:77
-#, fuzzy
 msgctxt "europeans_building"
 msgid "mining ore"
-msgstr "honing maken"
+msgstr "Erts delven"
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:111
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:102
@@ -1068,10 +1068,9 @@ msgstr "honing maken"
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:109
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:113
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:93
-#, fuzzy
 msgctxt "europeans_building"
 msgid "mining marble"
-msgstr "gerst planten"
+msgstr "marmer delven"
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:119
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:110
@@ -1087,7 +1086,7 @@ msgstr "gerst planten"
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:101
 msgctxt "europeans_building"
 msgid "mining quartz"
-msgstr ""
+msgstr "kwarts delven"
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:137
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:128
@@ -1096,7 +1095,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:139
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:119
 msgid "No Gold"
-msgstr ""
+msgstr "Geen Goud"
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:138
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:129
@@ -1105,7 +1104,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:140
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:120
 msgid "Main Gold Vein Exhausted"
-msgstr ""
+msgstr "Hoofdgoudader Uitgeput"
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_basic/init.lua:140
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:131
@@ -1117,36 +1116,39 @@ msgid ""
 "This gold mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"De hoofdader van deze goudmijn is uitgeput. Verwacht een sterk verminderd "
+"rendement op je investering. Je zou moeten overwegen om hem te verbeteren, "
+"ontmantelen of vernietigen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 1"
-msgstr ""
+msgstr "Goudmijn Niveau 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 2"
-msgstr ""
+msgstr "Goudmijn Niveau 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 3"
-msgstr ""
+msgstr "Goudmijn Niveau 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 4"
-msgstr ""
+msgstr "Goudmijn Niveau 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Gold Mine Level 5"
-msgstr ""
+msgstr "Goudmijn Niveau 5"
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_level_5/init.lua:122
 msgctxt "europeans_building"
@@ -1154,13 +1156,14 @@ msgid ""
 "This gold mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"De hoofdader van deze goudmijn is uitgeput. Verwacht een sterk verminderde "
+"opbrengst van je investering. Overweeg het te ontmantelen of te vernietigen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Iron Mine"
-msgstr "Basis Molen"
+msgstr "Basis IJzermijn"
 
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:137
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:128
@@ -1169,7 +1172,7 @@ msgstr "Basis Molen"
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:139
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:119
 msgid "No Iron"
-msgstr ""
+msgstr "Geen IJzer"
 
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:138
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:129
@@ -1178,7 +1181,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:140
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:120
 msgid "Main Iron Vein Exhausted"
-msgstr ""
+msgstr "Hoofdijzerader Uitgeput"
 
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_basic/init.lua:140
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:131
@@ -1190,36 +1193,39 @@ msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"De hoofdader van deze ijzermijn is uitgeput. Verwacht een sterk verminderd "
+"rendement op je investering. Je zou moeten overwegen om hem te verbeteren, "
+"ontmantelen of vernietigen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 1"
-msgstr ""
+msgstr "IJzermijn Niveau 1"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 2"
-msgstr ""
+msgstr "IJzermijn Niveau 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 3"
-msgstr ""
+msgstr "IJzermijn Niveau 3"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_4/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 4"
-msgstr ""
+msgstr "IJzermijn Niveau 4"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:8
 msgctxt "europeans_building"
 msgid "Iron Mine Level 5"
-msgstr ""
+msgstr "IJzermijn Niveau 5"
 
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_level_5/init.lua:122
 msgctxt "europeans_building"
@@ -1227,6 +1233,8 @@ msgid ""
 "This iron mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"De hoofdader van deze ijzermijn is uitgeput. Verwacht een sterk verminderd "
+"rendement op je investering. Overweeg hem te ontmantelen of te vernietigen."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_food.lua:11
@@ -1235,13 +1243,11 @@ msgstr "Ontdekking (Voedseluitbreiding)"
 
 #. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/discovery_food.lua:13
-#, fuzzy
 msgid ""
 "Start the game with three ships on the ocean and only a handful of supplies."
 msgstr ""
 "Begin het spel met drie schepen op de oceaan en slechts een handvol "
-"voorraden. Schakel terravorming (bedijken van watermassa's) uit omdat het "
-"niet compatibel is met zeevaart."
+"voorraden."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_food.lua:11
@@ -1251,7 +1257,7 @@ msgstr "Hoofdkwartier (met zeevaart- en voedseluitbreiding)"
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_food_production.wad/scripting/starting_conditions/headquarters_food.lua:13
 msgid "Start the game with your headquarters only."
-msgstr ""
+msgstr "Start het spel met alleen je hoofdkwartier."
 
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/init.lua:10
 msgid "Mark McWire"
@@ -1652,101 +1658,91 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans ware: Bread
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:445
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Bread are produced in a bakery out of water and flour. Basic miners consume "
 "bread."
 msgstr ""
-"Brood wordt in een bakkerij gemaakt van water en meel. Het wordt te koop "
-"aangeboden op de kleine en grote markt in ruil voor munten."
+"Brood wordt in een bakkerij gemaakt van water en meel. Basismijnwerkers eten "
+"brood."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Honey Bread
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:454
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Honey Bread are produced in a bakery out of water, honey and flour. Normal "
 "miners consume honey bread."
 msgstr ""
-"Brood wordt in een bakkerij gemaakt van water en meel. Het wordt te koop "
-"aangeboden op de kleine en grote markt in ruil voor munten."
+"Honingbrood wordt in een bakkerij gemaakt van water, honing en bloem. "
+"Normale mijnwerkers eten honingbrood."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Biscuit
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:463
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Biscuits are produced in a bakery out of water, flour, honey and fruits. "
 "Advanced miners consume biscuit."
 msgstr ""
-"Koekjes worden in een bakkerij gemaakt van water, meel, honing en fruit. Het "
-"wordt te koop aangeboden op de grote markt in ruil voor munten."
+"Koekjes worden in een bakkerij gemaakt van water, bloem, honing en fruit. "
+"Gevorderde mijnwerkers eten koekjes."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:472
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Meat contains a lot of energy, and it is produced in animal farms. Miners "
 "consume meat."
 msgstr ""
-"Vlees bevat veel energie en wordt geproduceerd in veehouderijen. Het wordt "
-"te koop aangeboden op de kleine en grote markt in ruil voor munten."
+"Vlees bevat veel energie en wordt geproduceerd in veehouderijen. Mijnwerkers "
+"eten vlees."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fish
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:481
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Fish is one of the biggest food resources of the Europeans, and it is "
 "produced in animal farms. Miners consume fish."
 msgstr ""
 "Vis is een van de grootste voedselbronnen van de Europeanen en wordt "
-"geproduceerd in veehouderijen. Het wordt te koop aangeboden op de grote "
-"markt in ruil voor munten."
+"geproduceerd in veehouderijen. Mijnwerkers eten vis."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:490
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This beer is produced in a brewery out of barley and water. Basic miners "
 "consume beer."
 msgstr ""
-"Dit sterke bier wordt in een brouwerij gemaakt van gerst en water. Het wordt "
-"te koop aangeboden op de grote markt in ruil voor munten."
+"Dit bier wordt in een brouwerij gemaakt van gerst en water. Basismijnwerkers "
+"drinken bier."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Mead
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:499
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Mead is produced by breweries out of water, barley and honey. Normal miners "
 "consume mead."
 msgstr ""
-"Mede wordt door brouwerijen gemaakt van water, gerst en honing. Het wordt te "
-"koop aangeboden op de grote markt in ruil voor munten."
+"Mede wordt door brouwerijen gemaakt van water, gerst en honing. Gewone "
+"mijnwerkers consumeren mede."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:508
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This strong beer is produced in a brewery out of barley and water. Advanced "
 "miners consume strong beer."
 msgstr ""
-"Dit sterke bier wordt in een brouwerij gemaakt van gerst en water. Het wordt "
-"te koop aangeboden op de grote markt in ruil voor munten."
+"Dit sterke bier wordt in een brouwerij gemaakt van gerst en water. "
+"Gevorderde mijnwerkers drinken sterk bier."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wine
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:517
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "It is produced in a winery out of grape. Advanced miners consume wine."
 msgstr ""
-"Het wordt geproduceerd in een wijnmakerij uit druiven en te koop aangeboden "
-"op de grote markt in ruil voor munten."
+"Het wordt geproduceerd in een wijnmakerij uit druiven. Gevorderde "
+"mijnwerkers consumeren wijn."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:530
@@ -3811,669 +3807,3 @@ msgstr "Basis Boer"
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
 msgstr "Normale Boer"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Trading Post"
-#~ msgstr "Handelspost"
-
-#~ msgid "trading"
-#~ msgstr "handel"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Beer Market"
-#~ msgstr "Biermarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for copper coins"
-#~ msgstr "voedsel ruilen voor koperen munten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for silver coins"
-#~ msgstr "voedsel ruilen voor zilveren munten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for gold coins"
-#~ msgstr "voedsel ruilen voor gouden munten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing trading of gold"
-#~ msgstr "pauzeren van de handel in goud"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Bread Market"
-#~ msgstr "Broodmarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Fish and Meat Market"
-#~ msgstr "Vis- en vleesmarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Honey Market"
-#~ msgstr "Honingmarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "trading food for wood coins"
-#~ msgstr "voedsel ruilen voor houtmunten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing trading of blackwood"
-#~ msgstr "onderbreking van de handel in blackwood"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Mead and Wine Market"
-#~ msgstr "Mede en Wijnmarkt"
-
-#~ msgid ""
-#~ "Start the game with your headquarters only. Disabled terraforming (diking "
-#~ "of water bodies) because of lack of compatibility with seafaring."
-#~ msgstr ""
-#~ "Begin het spel alleen met je hoofdkwartier. Uitgeschakeld terreinvorming "
-#~ "(bedijken van watermassa's) vanwege gebrek aan compatibiliteit met "
-#~ "zeevaart."
-
-#~ msgid "Headquarters (with terraforming and food addon)"
-#~ msgstr "Hoofdkwartier (met terravorming en voedseluitbreiding)"
-
-#~ msgid ""
-#~ "Start the game with your headquarters only. Disabled seafaring because of "
-#~ "lack of compatibility with terraforming (diking of water bodies)."
-#~ msgstr ""
-#~ "Begin het spel alleen met je hoofdkwartier. Zeevaart uitgeschakeld "
-#~ "vanwege gebrek aan compatibiliteit met terreinvorming (bedijken van "
-#~ "watermassa's)."
-
-#~ msgid "Trading Outpost (Food Addon)"
-#~ msgstr "Handelspost ( Voedseluitbreiding)"
-
-#~ msgid ""
-#~ "This starting condition contains a market as an additional building, "
-#~ "where some wares can be bought for gold, quartz and diamonds. Disabled "
-#~ "seafaring because of lack of compatibility with terraforming (diking of "
-#~ "water bodies)."
-#~ msgstr ""
-#~ "Deze startvoorwaarde bevat een markt als extra gebouw, waar sommige waren "
-#~ "kunnen worden gekocht voor goud, kwarts en diamanten. Uitgeschakeld "
-#~ "zeevaart vanwege gebrek aan compatibiliteit met terreinvorming (bedijken "
-#~ "van watermassa's)."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This beer is produced in a brewery out of barley and water. It is offered "
-#~ "for sale on the small and big market in exchange for coins."
-#~ msgstr ""
-#~ "Dit bier wordt in een brouwerij gemaakt van gerst en water. Het wordt te "
-#~ "koop aangeboden op de kleine en grote markt in ruil voor munten."
-
-#~ msgctxt "ware"
-#~ msgid ""
-#~ "Wood coins are money made of copper or bronze (copper and tin). Its the "
-#~ "standard barter object."
-#~ msgstr ""
-#~ "Houten munten zijn geld gemaakt van koper of brons (koper en tin). Het is "
-#~ "het standaard ruilobject."
-
-#~ msgctxt "ware"
-#~ msgid "Wood coins are money made of silver. Its a valuable barter object."
-#~ msgstr ""
-#~ "Houten munten zijn geld gemaakt van zilver. Het is een waardevol "
-#~ "ruilobject."
-
-#~ msgctxt "ware"
-#~ msgid "Wood coins are money made of gold. Its most valuable barter object."
-#~ msgstr ""
-#~ "Houten munten zijn geld gemaakt van goud. Het meest waardevolle "
-#~ "ruilobject."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Terraforms desert and coast into fertile soil."
-#~ msgstr "Transformeert woestijn en kust in vruchtbare grond."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Traders work in markets or in trading posts to exchange wares with other "
-#~ "tribes."
-#~ msgstr ""
-#~ "Handelaren werken op markten of in handelsposten om goederen te ruilen "
-#~ "met andere stammen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale wares to other allied tribes."
-#~ msgstr "Marktgebouw om goederen te verkopen aan andere geallieerde stammen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale honey to other allied tribes."
-#~ msgstr ""
-#~ "Het bouwen van een markt om honing te verkopen aan andere geallieerde "
-#~ "stammen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale fish and meat to other allied tribes."
-#~ msgstr ""
-#~ "Marktgebouw om vis en vlees te verkopen aan andere geallieerde stammen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale food to other allied tribes."
-#~ msgstr ""
-#~ "Het bouwen van een markt om voedsel te verkopen aan andere geallieerde "
-#~ "stammen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale bread to other allied tribes."
-#~ msgstr ""
-#~ "Het bouwen van een markt om brood te verkopen aan andere geallieerde "
-#~ "stammen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale beer to other allied tribes."
-#~ msgstr ""
-#~ "Het bouwen van een markt om bier te verkopen aan andere geallieerde "
-#~ "stammen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale mead and wine to other allied tribes."
-#~ msgstr ""
-#~ "Marktgebouw om mede en wijn te verkopen aan andere geallieerde stammen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Store building to purchase wares from other allied tribes."
-#~ msgstr "Winkelgebouw om goederen van andere geallieerde stammen te kopen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Trading building to purchase wares from other allied tribes."
-#~ msgstr "Handelsgebouw om goederen van andere geallieerde stammen te kopen."
-
-#~ msgctxt "building"
-#~ msgid "Terraforms deserts and coasts into fertile soil."
-#~ msgstr "Transformeert woestijnen en kusten tot vruchtbare grond."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Forges all the tools that your workers need."
-#~ msgstr "Smeedt alle gereedschappen die je arbeiders nodig hebben."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces clothing and armor."
-#~ msgstr "Produceert kleding en bepantsering."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces shoes and boots."
-#~ msgstr "Produceert schoenen en laarzen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Produces shields and weapons."
-#~ msgstr "Produceert schilden en wapens."
-
-#~ msgctxt "shipname"
-#~ msgid "Amsterdam"
-#~ msgstr "Amsterdam"
-
-#~ msgctxt "shipname"
-#~ msgid "Andorra la Vella"
-#~ msgstr "Andorra la Vella"
-
-#~ msgctxt "shipname"
-#~ msgid "Antwerpen"
-#~ msgstr "Antwerpen"
-
-#~ msgctxt "shipname"
-#~ msgid "Astrachan"
-#~ msgstr "Astrachan"
-
-#~ msgctxt "shipname"
-#~ msgid "Athen"
-#~ msgstr "Athen"
-
-#~ msgctxt "shipname"
-#~ msgid "Balaschicha"
-#~ msgstr "Balaschicha"
-
-#~ msgctxt "shipname"
-#~ msgid "Barcelona"
-#~ msgstr "Barcelona"
-
-#~ msgctxt "shipname"
-#~ msgid "Beograd"
-#~ msgstr "Belgrado"
-
-#~ msgctxt "shipname"
-#~ msgid "Berlin"
-#~ msgstr "Berlijn"
-
-#~ msgctxt "shipname"
-#~ msgid "Bern"
-#~ msgstr "Bern"
-
-#~ msgctxt "shipname"
-#~ msgid "Birmingham"
-#~ msgstr "Birmingham"
-
-#~ msgctxt "shipname"
-#~ msgid "Bradford"
-#~ msgstr "Bradford"
-
-#~ msgctxt "shipname"
-#~ msgid "Bremen"
-#~ msgstr "Bremen"
-
-#~ msgctxt "shipname"
-#~ msgid "Bruxelles"
-#~ msgstr "Brussel"
-
-#~ msgctxt "shipname"
-#~ msgid "București"
-#~ msgstr "Boekarest"
-
-#~ msgctxt "shipname"
-#~ msgid "Budapest"
-#~ msgstr "Boedapest"
-
-#~ msgctxt "shipname"
-#~ msgid "Charkiw"
-#~ msgstr "Charkiw"
-
-#~ msgctxt "shipname"
-#~ msgid "Chișinău"
-#~ msgstr "Chișinău"
-
-#~ msgctxt "shipname"
-#~ msgid "Den Haag"
-#~ msgstr "Den Haag"
-
-#~ msgctxt "shipname"
-#~ msgid "Dnipro"
-#~ msgstr "Dnipro"
-
-#~ msgctxt "shipname"
-#~ msgid "Donezk"
-#~ msgstr "Donezk"
-
-#~ msgctxt "shipname"
-#~ msgid "Dortmund"
-#~ msgstr "Dortmund"
-
-#~ msgctxt "shipname"
-#~ msgid "Dresden"
-#~ msgstr "Dresden"
-
-#~ msgctxt "shipname"
-#~ msgid "Dublin"
-#~ msgstr "Dublin"
-
-#~ msgctxt "shipname"
-#~ msgid "Duisburg"
-#~ msgstr "Duisburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Düsseldorf"
-#~ msgstr "Düsseldorf"
-
-#~ msgctxt "shipname"
-#~ msgid "Edinburgh"
-#~ msgstr "Edinburgh"
-
-#~ msgctxt "shipname"
-#~ msgid "Essen"
-#~ msgstr "Essen"
-
-#~ msgctxt "shipname"
-#~ msgid "Frankfurt am Main"
-#~ msgstr "Frankfurt am Main"
-
-#~ msgctxt "shipname"
-#~ msgid "Genova"
-#~ msgstr "Genua"
-
-#~ msgctxt "shipname"
-#~ msgid "Glasgow"
-#~ msgstr "Glasgow"
-
-#~ msgctxt "shipname"
-#~ msgid "Göteborg"
-#~ msgstr "Göteborg"
-
-#~ msgctxt "shipname"
-#~ msgid "Hamburg"
-#~ msgstr "Hamburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Hannover"
-#~ msgstr "Hannover"
-
-#~ msgctxt "shipname"
-#~ msgid "Helsinki"
-#~ msgstr "Helsinki"
-
-#~ msgctxt "shipname"
-#~ msgid "Homel"
-#~ msgstr "Homel"
-
-#~ msgctxt "shipname"
-#~ msgid "Ischewsk"
-#~ msgstr "Ischewsk"
-
-#~ msgctxt "shipname"
-#~ msgid "Istanbul"
-#~ msgstr "Istanbul"
-
-#~ msgctxt "shipname"
-#~ msgid "Jaroslawl"
-#~ msgstr "Jaroslawl"
-
-#~ msgctxt "shipname"
-#~ msgid "Kasan"
-#~ msgstr "Kasan"
-
-#~ msgctxt "shipname"
-#~ msgid "Kirow"
-#~ msgstr "Kirow"
-
-#~ msgctxt "shipname"
-#~ msgid "København"
-#~ msgstr "Kopenhagen"
-
-#~ msgctxt "shipname"
-#~ msgid "Köln"
-#~ msgstr "Keulen"
-
-#~ msgctxt "shipname"
-#~ msgid "Kraków"
-#~ msgstr "Krakau"
-
-#~ msgctxt "shipname"
-#~ msgid "Krasnodar"
-#~ msgstr "Krasnodar"
-
-#~ msgctxt "shipname"
-#~ msgid "Krywyj Rih"
-#~ msgstr "Krywyj Rih"
-
-#~ msgctxt "shipname"
-#~ msgid "Kyiv"
-#~ msgstr "Kyiv"
-
-#~ msgctxt "shipname"
-#~ msgid "Leeds"
-#~ msgstr "Leeds"
-
-#~ msgctxt "shipname"
-#~ msgid "Leipzig"
-#~ msgstr "Leipzig"
-
-#~ msgctxt "shipname"
-#~ msgid "Lipezk"
-#~ msgstr "Lipezk"
-
-#~ msgctxt "shipname"
-#~ msgid "Lisboa"
-#~ msgstr "Lissabon"
-
-#~ msgctxt "shipname"
-#~ msgid "Ljubljana"
-#~ msgstr "Ljubljana"
-
-#~ msgctxt "shipname"
-#~ msgid "Łódź"
-#~ msgstr "Łódź"
-
-#~ msgctxt "shipname"
-#~ msgid "London"
-#~ msgstr "Londen"
-
-#~ msgctxt "shipname"
-#~ msgid "Luxemburg"
-#~ msgstr "Luxemburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Lwiw"
-#~ msgstr "Lwiw"
-
-#~ msgctxt "shipname"
-#~ msgid "Lyon"
-#~ msgstr "Lyon"
-
-#~ msgctxt "shipname"
-#~ msgid "Machatschkala"
-#~ msgstr "Machatschkala"
-
-#~ msgctxt "shipname"
-#~ msgid "Madrid"
-#~ msgstr "Madrid"
-
-#~ msgctxt "shipname"
-#~ msgid "Málaga"
-#~ msgstr "Malaga"
-
-#~ msgctxt "shipname"
-#~ msgid "Manchester"
-#~ msgstr "Manchester"
-
-#~ msgctxt "shipname"
-#~ msgid "Marseille"
-#~ msgstr "Marseille"
-
-#~ msgctxt "shipname"
-#~ msgid "Milano"
-#~ msgstr "Milaan"
-
-#~ msgctxt "shipname"
-#~ msgid "Minsk"
-#~ msgstr "Minsk"
-
-#~ msgctxt "shipname"
-#~ msgid "Monaco"
-#~ msgstr "Monaco"
-
-#~ msgctxt "shipname"
-#~ msgid "Moskwa"
-#~ msgstr "Moskou"
-
-#~ msgctxt "shipname"
-#~ msgid "München"
-#~ msgstr "München"
-
-#~ msgctxt "shipname"
-#~ msgid "Nabereschnyje Tschelny"
-#~ msgstr "Naberezhnye Chelny"
-
-#~ msgctxt "shipname"
-#~ msgid "Napoli"
-#~ msgstr "Napels"
-
-#~ msgctxt "shipname"
-#~ msgid "Nikosia"
-#~ msgstr "Nikosia"
-
-#~ msgctxt "shipname"
-#~ msgid "Nischni Nowgorod"
-#~ msgstr "Nischni Nowgorod"
-
-#~ msgctxt "shipname"
-#~ msgid "Nürnberg"
-#~ msgstr "Nürnberg"
-
-#~ msgctxt "shipname"
-#~ msgid "Odessa"
-#~ msgstr "Odessa"
-
-#~ msgctxt "shipname"
-#~ msgid "Orenburg"
-#~ msgstr "Orenburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Oslo"
-#~ msgstr "Oslo"
-
-#~ msgctxt "shipname"
-#~ msgid "Palermo"
-#~ msgstr "Palermo"
-
-#~ msgctxt "shipname"
-#~ msgid "Paris"
-#~ msgstr "Parijs"
-
-#~ msgctxt "shipname"
-#~ msgid "Pensa"
-#~ msgstr "Pensa"
-
-#~ msgctxt "shipname"
-#~ msgid "Perm"
-#~ msgstr "Perm"
-
-#~ msgctxt "shipname"
-#~ msgid "Podgorica"
-#~ msgstr "Podgorica"
-
-#~ msgctxt "shipname"
-#~ msgid "Poznań"
-#~ msgstr "Poznan"
-
-#~ msgctxt "shipname"
-#~ msgid "Praha"
-#~ msgstr "Praag"
-
-#~ msgctxt "shipname"
-#~ msgid "Prishtina"
-#~ msgstr "Prishtina"
-
-#~ msgctxt "shipname"
-#~ msgid "Reykjavík"
-#~ msgstr "Reykjavík"
-
-#~ msgctxt "shipname"
-#~ msgid "Rīga"
-#~ msgstr "Riga"
-
-#~ msgctxt "shipname"
-#~ msgid "Rjasan"
-#~ msgstr "Rjasan"
-
-#~ msgctxt "shipname"
-#~ msgid "Roma"
-#~ msgstr "Rome"
-
-#~ msgctxt "shipname"
-#~ msgid "Rostow-na-Donu"
-#~ msgstr "Rostow-na-Donu"
-
-#~ msgctxt "shipname"
-#~ msgid "Rotterdam"
-#~ msgstr "Rotterdam"
-
-#~ msgctxt "shipname"
-#~ msgid "San Marino"
-#~ msgstr "San Marino"
-
-#~ msgctxt "shipname"
-#~ msgid "Samara"
-#~ msgstr "Samara"
-
-#~ msgctxt "shipname"
-#~ msgid "Sankt Petersburg"
-#~ msgstr "Sint-Petersburg"
-
-#~ msgctxt "shipname"
-#~ msgid "Saporischschja"
-#~ msgstr "Zaporizja"
-
-#~ msgctxt "shipname"
-#~ msgid "Sarajevo"
-#~ msgstr "Sarajevo"
-
-#~ msgctxt "shipname"
-#~ msgid "Saratow"
-#~ msgstr "Saratow"
-
-#~ msgctxt "shipname"
-#~ msgid "Sevilla"
-#~ msgstr "Sevilla"
-
-#~ msgctxt "shipname"
-#~ msgid "Sheffield"
-#~ msgstr "Sheffield"
-
-#~ msgctxt "shipname"
-#~ msgid "Skopje"
-#~ msgstr "Skopje"
-
-#~ msgctxt "shipname"
-#~ msgid "Sofia"
-#~ msgstr "Sofia"
-
-#~ msgctxt "shipname"
-#~ msgid "Stockholm"
-#~ msgstr "Stockholm"
-
-#~ msgctxt "shipname"
-#~ msgid "Stuttgart"
-#~ msgstr "Stuttgart"
-
-#~ msgctxt "shipname"
-#~ msgid "Tallinn"
-#~ msgstr "Tallinn"
-
-#~ msgctxt "shipname"
-#~ msgid "Tirana"
-#~ msgstr "Tirana"
-
-#~ msgctxt "shipname"
-#~ msgid "Toljatti"
-#~ msgstr "Toljatti"
-
-#~ msgctxt "shipname"
-#~ msgid "Torino"
-#~ msgstr "Turijn"
-
-#~ msgctxt "shipname"
-#~ msgid "Ufa"
-#~ msgstr "Ufa"
-
-#~ msgctxt "shipname"
-#~ msgid "Uljanowsk"
-#~ msgstr "Uljanowsk"
-
-#~ msgctxt "shipname"
-#~ msgid "Vaduz"
-#~ msgstr "Vaduz"
-
-#~ msgctxt "shipname"
-#~ msgid "Valencia"
-#~ msgstr "Valencia"
-
-#~ msgctxt "shipname"
-#~ msgid "Valletta"
-#~ msgstr "Valletta"
-
-#~ msgctxt "shipname"
-#~ msgid "Vilnius"
-#~ msgstr "Vilnius"
-
-#~ msgctxt "shipname"
-#~ msgid "Warszawa"
-#~ msgstr "Warszawa"
-
-#~ msgctxt "shipname"
-#~ msgid "Wien"
-#~ msgstr "Wenen"
-
-#~ msgctxt "shipname"
-#~ msgid "Wolgograd"
-#~ msgstr "Wolgograd"
-
-#~ msgctxt "shipname"
-#~ msgid "Woronesch"
-#~ msgstr "Woronesch"
-
-#~ msgctxt "shipname"
-#~ msgid "Wrocław"
-#~ msgstr "Wrocław"
-
-#~ msgctxt "shipname"
-#~ msgid "Zagreb"
-#~ msgstr "Zagreb"
-
-#~ msgctxt "shipname"
-#~ msgid "Zaragoza"
-#~ msgstr "Zaragoza"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Trader"
-#~ msgstr "Handelaar"
