@@ -350,12 +350,12 @@ public class HandleCommand {
 	 */
 	private void handleCmdI18n() throws Exception {
 		// Args: name
-		checkCommandVersion(1);
+		checkCommandVersion(2);
 		ServerUtils.checkNrArgs(cmd, 1);
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		ServerUtils.semaphoreRO(cmd[1], () -> {
-			ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File("i18n", cmd[1]));
+			ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File((commandVersion == 1 ? "i18n" : "po"), cmd[1]));
 			dir.writeAllFileInfos(out);
 		});
 		out.println("ENDOFSTREAM");
