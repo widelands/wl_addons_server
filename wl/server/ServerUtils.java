@@ -206,9 +206,7 @@ public class ServerUtils {
 		 * Constructor.
 		 * @param dir The directory to represent.
 		 */
-		public DirInfo(File dir) {
-			this(dir, null);
-		}
+		public DirInfo(File dir) { this(dir, null); }
 
 		/**
 		 * Constructor.
