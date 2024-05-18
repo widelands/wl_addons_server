@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 03:08+0200\n"
+"POT-Creation-Date: 2024-05-18 03:08+0200\n"
 "PO-Revision-Date: 2024-05-05 18:53+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -35,32 +35,6 @@ msgstr ""
 "Föögt de Landumackereerer to dat Europäers-Volk hennto. Nich för Seefahrt "
 "antoraden, denn de Landumackereerer maakt ut Seefelden Land un kann dann "
 "Schippen un Muden upschütten, un dann kann dat Speel ofstörten."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_ai.lua:11
-msgid "Headquarters (AI optimized)"
-msgstr "Raadhuus (künstelk Speler)"
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_ai.lua:13
-msgid "AI optimized starting condition, not for human player."
-msgstr ""
-"Anfangskondiesje, wat för künstelk Spelers dacht is un nich för de minskelk "
-"Speler."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_terraforming.lua:11
-msgid "Headquarters (with terraforming)"
-msgstr "Raadhuus (mit Landumwanneln)"
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_terraforming.lua:13
-msgid ""
-"Start the game with your headquarters only. Disabled seafaring because of "
-"lack of compatibility with terraforming (diking of water bodies)."
-msgstr ""
-"Begünn dat Speel mit nix as dien Raadhuus. Keene Seefahrt is verlöövt, denn "
-"dat gaht nich mit Diekbau an de Waterkant."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_terraforming.wad/terraformingsites/terraformers_house_advanced/init.lua:8
@@ -2048,3 +2022,21 @@ msgstr "Landumackereerer"
 msgctxt "europeans_worker"
 msgid "Normal Terraformer"
 msgstr "Goder Landumackereerer"
+
+#~ msgid "Headquarters (AI optimized)"
+#~ msgstr "Raadhuus (künstelk Speler)"
+
+#~ msgid "AI optimized starting condition, not for human player."
+#~ msgstr ""
+#~ "Anfangskondiesje, wat för künstelk Spelers dacht is un nich för de "
+#~ "minskelk Speler."
+
+#~ msgid "Headquarters (with terraforming)"
+#~ msgstr "Raadhuus (mit Landumwanneln)"
+
+#~ msgid ""
+#~ "Start the game with your headquarters only. Disabled seafaring because of "
+#~ "lack of compatibility with terraforming (diking of water bodies)."
+#~ msgstr ""
+#~ "Begünn dat Speel mit nix as dien Raadhuus. Keene Seefahrt is verlöövt, "
+#~ "denn dat gaht nich mit Diekbau an de Waterkant."

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 03:08+0200\n"
+"POT-Creation-Date: 2024-05-18 03:08+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -38,20 +38,6 @@ msgstr ""
 msgctxt "immovable"
 msgid "Trade Pole"
 msgstr "Handelspool"
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_trading.wad/scripting/starting_conditions/trading_outpost.lua:11
-msgid "Trading Outpost"
-msgstr "Handelsvoorpost"
-
-#. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
-#: addons/europeans_trading.wad/scripting/starting_conditions/trading_outpost.lua:13
-msgid ""
-"This starting condition contains a market as an additional building, where "
-"some wares can be bought for gold, quartz and diamonds."
-msgstr ""
-"Deze startvoorwaarde bevat een markt als extra gebouw, waar sommige waren "
-"kunnen worden gekocht voor goud, kwarts en diamanten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/market_armor/init.lua:8
@@ -238,6 +224,20 @@ msgstr "Europeanen (Handel)"
 #: addons/europeans_trading.wad/tribes/europeans_tribe/init.lua:13
 msgid "This is the culture of the Europeans."
 msgstr "Dit is de cultuur van de Europeanen."
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_trading.wad/tribes/europeans_tribe/starting_conditions/trading_outpost.lua:11
+msgid "Trading Outpost"
+msgstr "Handelsvoorpost"
+
+#. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
+#: addons/europeans_trading.wad/tribes/europeans_tribe/starting_conditions/trading_outpost.lua:13
+msgid ""
+"This starting condition contains a market as an additional building, where "
+"some wares can be bought for gold, quartz and diamonds."
+msgstr ""
+"Deze startvoorwaarde bevat een markt als extra gebouw, waar sommige waren "
+"kunnen worden gekocht voor goud, kwarts en diamanten."
 
 #: addons/europeans_trading.wad/tribes/europeans_tribe/tips.lua:4
 msgid "This is the experimental Europeans tribe."

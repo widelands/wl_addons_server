@@ -1893,13 +1893,6 @@ wl.Descriptions():new_tribe {
                 purpose = _("A ship is being constructed at this site.")
             }
         },
-        {
-            name = "europeans_trade_pole",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans immovable: Trade Pole
-                purpose = pgettext("europeans_building", "Open market to exchange wares with other allied tribes.")
-            }
-        },
         -- non imperial Immovables used by the woodcutter
         {
             name = "deadtree7",
@@ -2144,7 +2137,7 @@ wl.Descriptions():new_tribe {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
                 purpose = pgettext("building", "Explores unknown territory.")
             }
-        }
+        },
 
         -- Medium
         {
@@ -2988,7 +2981,7 @@ wl.Descriptions():new_tribe {
       woodcutter = "europeans_lumberjacks_house_basic",
       forester = "europeans_tree_nursery_basic",
       quarry = "europeans_quarry_basic",
-      mine_stone = "europeans_quarry_basic",
+      mine_food_stone = "europeans_quarry_basic",
       building_materials_primary = "europeans_farm_basic",
       building_materials_secondary = "europeans_sawmill_basic",
       building_materials_tertiary = "europeans_stonemasons_house_basic",
@@ -3001,8 +2994,8 @@ wl.Descriptions():new_tribe {
       farm_secondary = "europeans_farm_normal",
       farm_tertiary = "europeans_farm_advanced",
       agriculture_producer = "europeans_farm_advanced",
-      agriculture_consumer_primary = "europeans_brewery_basic",
-      agriculture_consumer_secondary = "europeans_brewery_winery",
+      agriculture_consumer_primary = "europeans_mill_basic",
+      agriculture_consumer_secondary = "europeans_brewery_basic",
       mill = "europeans_mill_basic",
       bakery = "europeans_bakery_basic",
       brewery = "europeans_brewery_basic",
@@ -3011,9 +3004,9 @@ wl.Descriptions():new_tribe {
       mine_iron = "europeans_ironmine_basic",
       mine_gold = "europeans_goldmine_basic",
       smelting = "europeans_smelting_works_basic",
-      tool_smithy = "europeans_toolsmithy_basic",
-      weapon_smithy = "europeans_weaponsmithy_basic",
-      armor_smithy = "europeans_tailors_house_basic",
+      tool_smithy = "europeans_manufactory_basic",
+      weapon_smithy = "europeans_manufactory_basic",
+      armor_smithy = "europeans_manufactory_basic",
       shipyard = "europeans_shipyard_basic",
       ferry_yard = "europeans_ferry_yard_basic",
       scout = "europeans_scouts_house_basic",

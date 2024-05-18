@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 03:08+0200\n"
+"POT-Creation-Date: 2024-05-18 03:08+0200\n"
 "PO-Revision-Date: 2024-05-05 18:54+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -29,13 +29,8 @@ msgstr "Industrie-Verwiedern för dat Europäers-Volk"
 #: addons/europeans_craft_buildings.wad/addon:3
 msgid ""
 "Adds some additional craft buildings to Europeans tribes economy for more "
-"complexity. When this addon is activated, the definitions for buildings, "
-"wares and workers from the base addon europeans_tribes.wad are overwritten."
+"complexity."
 msgstr ""
-"Föögt mehr Industrie-Husen to de Weertskupp vun de Europäers-Volk hento, um "
-"’t kumplizeerter to maken. Wenn deeses Verwiedern anknipst is, worden de "
-"Settens för Husen, Waren un Arbeiders vun de normaale Europäers-Verwiedern "
-"överschriewen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_advanced/init.lua:8
@@ -320,28 +315,6 @@ msgstr "Lütte Sniederee"
 msgctxt "europeans_building"
 msgid "Normal Tailors House"
 msgstr "Sniederee"
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_craft_buildings.wad/scripting/starting_conditions/discovery_craft.lua:11
-msgid "Discovery (Craft Addon)"
-msgstr "Utförsken (Industrie-Verwiedern)"
-
-#. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
-#: addons/europeans_craft_buildings.wad/scripting/starting_conditions/discovery_craft.lua:13
-msgid ""
-"Start the game with three ships on the ocean and only a handful of supplies."
-msgstr ""
-"Begünn dat Speel mit dree Schippen up de See un blot een paar Materialien."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_craft.lua:11
-msgid "Headquarters (Craft Addon)"
-msgstr "Raadhuus (Industrie-Verwiedern)"
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_craft.lua:13
-msgid "Start the game with your headquarters only."
-msgstr "Begünn dat Speel mit nix as dien Raadhuus."
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/init.lua:10
 msgid "Mark McWire"
@@ -2270,3 +2243,29 @@ msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
 msgstr[0] "%1%(+%2%) Soldat"
 msgstr[1] "%1%(+%2%) Soldaten"
+
+#~ msgid ""
+#~ "Adds some additional craft buildings to Europeans tribes economy for more "
+#~ "complexity. When this addon is activated, the definitions for buildings, "
+#~ "wares and workers from the base addon europeans_tribes.wad are "
+#~ "overwritten."
+#~ msgstr ""
+#~ "Föögt mehr Industrie-Husen to de Weertskupp vun de Europäers-Volk hento, "
+#~ "um ’t kumplizeerter to maken. Wenn deeses Verwiedern anknipst is, worden "
+#~ "de Settens för Husen, Waren un Arbeiders vun de normaale Europäers-"
+#~ "Verwiedern överschriewen."
+
+#~ msgid "Discovery (Craft Addon)"
+#~ msgstr "Utförsken (Industrie-Verwiedern)"
+
+#~ msgid ""
+#~ "Start the game with three ships on the ocean and only a handful of "
+#~ "supplies."
+#~ msgstr ""
+#~ "Begünn dat Speel mit dree Schippen up de See un blot een paar Materialien."
+
+#~ msgid "Headquarters (Craft Addon)"
+#~ msgstr "Raadhuus (Industrie-Verwiedern)"
+
+#~ msgid "Start the game with your headquarters only."
+#~ msgstr "Begünn dat Speel mit nix as dien Raadhuus."

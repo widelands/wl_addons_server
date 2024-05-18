@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 03:08+0200\n"
+"POT-Creation-Date: 2024-05-18 03:08+0200\n"
 "PO-Revision-Date: 2024-05-05 18:54+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -28,13 +28,8 @@ msgstr "Ambachtelijke bouw-addon voor Europeanen-stam"
 #: addons/europeans_craft_buildings.wad/addon:3
 msgid ""
 "Adds some additional craft buildings to Europeans tribes economy for more "
-"complexity. When this addon is activated, the definitions for buildings, "
-"wares and workers from the base addon europeans_tribes.wad are overwritten."
+"complexity."
 msgstr ""
-"Voegt een aantal extra ambachtelijke gebouwen toe aan de economie van de "
-"Europese stammen voor meer complexiteit. Als deze addon is geactiveerd, "
-"worden de definities voor gebouwen, goederen en arbeiders uit de basis-addon "
-"europeans_tribes.wad overschreven."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_craft_buildings.wad/productionsites_craft/shoemakers_house_advanced/init.lua:8
@@ -319,29 +314,6 @@ msgstr "Basis Kleermakershuis"
 msgctxt "europeans_building"
 msgid "Normal Tailors House"
 msgstr "Normaal Kleermakershuis"
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_craft_buildings.wad/scripting/starting_conditions/discovery_craft.lua:11
-msgid "Discovery (Craft Addon)"
-msgstr "Ontdekken (Ambachtelijke add-on)"
-
-#. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
-#: addons/europeans_craft_buildings.wad/scripting/starting_conditions/discovery_craft.lua:13
-msgid ""
-"Start the game with three ships on the ocean and only a handful of supplies."
-msgstr ""
-"Begin het spel met drie schepen op de oceaan en slechts een handvol "
-"voorraden."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_craft.lua:11
-msgid "Headquarters (Craft Addon)"
-msgstr "Hoofdkwartier (Ambachtelijke add-on)"
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_craft_buildings.wad/scripting/starting_conditions/headquarters_craft.lua:13
-msgid "Start the game with your headquarters only."
-msgstr "Start het spel met alleen je hoofdkwartier."
 
 #: addons/europeans_craft_buildings.wad/tribes/europeans_tribe/init.lua:10
 msgid "Mark McWire"
@@ -2310,3 +2282,30 @@ msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
 msgstr[0] "%1%(+%2%) soldaat"
 msgstr[1] "%1%(+%2%) soldaten"
+
+#~ msgid ""
+#~ "Adds some additional craft buildings to Europeans tribes economy for more "
+#~ "complexity. When this addon is activated, the definitions for buildings, "
+#~ "wares and workers from the base addon europeans_tribes.wad are "
+#~ "overwritten."
+#~ msgstr ""
+#~ "Voegt een aantal extra ambachtelijke gebouwen toe aan de economie van de "
+#~ "Europese stammen voor meer complexiteit. Als deze addon is geactiveerd, "
+#~ "worden de definities voor gebouwen, goederen en arbeiders uit de basis-"
+#~ "addon europeans_tribes.wad overschreven."
+
+#~ msgid "Discovery (Craft Addon)"
+#~ msgstr "Ontdekken (Ambachtelijke add-on)"
+
+#~ msgid ""
+#~ "Start the game with three ships on the ocean and only a handful of "
+#~ "supplies."
+#~ msgstr ""
+#~ "Begin het spel met drie schepen op de oceaan en slechts een handvol "
+#~ "voorraden."
+
+#~ msgid "Headquarters (Craft Addon)"
+#~ msgstr "Hoofdkwartier (Ambachtelijke add-on)"
+
+#~ msgid "Start the game with your headquarters only."
+#~ msgstr "Start het spel met alleen je hoofdkwartier."

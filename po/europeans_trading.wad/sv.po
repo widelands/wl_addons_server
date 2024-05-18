@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 03:08+0200\n"
+"POT-Creation-Date: 2024-05-18 03:08+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Language-Team: Swedish (https://app.transifex.com/widelands/teams/35159/"
 "sv/)\n"
@@ -32,18 +32,6 @@ msgstr ""
 #: addons/europeans_trading.wad/immovables/trade_pole/init.lua:8
 msgctxt "immovable"
 msgid "Trade Pole"
-msgstr ""
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_trading.wad/scripting/starting_conditions/trading_outpost.lua:11
-msgid "Trading Outpost"
-msgstr ""
-
-#. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
-#: addons/europeans_trading.wad/scripting/starting_conditions/trading_outpost.lua:13
-msgid ""
-"This starting condition contains a market as an additional building, where "
-"some wares can be bought for gold, quartz and diamonds."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -230,6 +218,18 @@ msgstr ""
 
 #: addons/europeans_trading.wad/tribes/europeans_tribe/init.lua:13
 msgid "This is the culture of the Europeans."
+msgstr ""
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_trading.wad/tribes/europeans_tribe/starting_conditions/trading_outpost.lua:11
+msgid "Trading Outpost"
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Trading Outpost" starting condition
+#: addons/europeans_trading.wad/tribes/europeans_tribe/starting_conditions/trading_outpost.lua:13
+msgid ""
+"This starting condition contains a market as an additional building, where "
+"some wares can be bought for gold, quartz and diamonds."
 msgstr ""
 
 #: addons/europeans_trading.wad/tribes/europeans_tribe/tips.lua:4
