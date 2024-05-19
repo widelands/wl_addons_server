@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-18 03:08+0200\n"
+"POT-Creation-Date: 2024-05-19 03:08+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -31,6 +31,8 @@ msgid ""
 "Adds some additional agricultur wares, workers and buildings to Europeans "
 "tribes economy for more complexity."
 msgstr ""
+"Föögt mehr Kandweertskupp-Waren, -Arbeiders un -Husen to de Europäers-Volk "
+"hento, um hör Weertskupp kumplizeerter to maken."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_food_production.wad/immovables/barleyfield/harvested/init.lua:8
@@ -771,10 +773,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Big Manufactory"
-msgstr "Grote Backeree"
+msgstr "Grote Fabrik"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:78
@@ -782,13 +783,14 @@ msgstr "Grote Backeree"
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:73
 msgctxt "europeans_building"
 msgid "processing log to create tools and weapons"
-msgstr ""
+msgstr "Boomstammen tum Produzeren vun Warktüüg un Wapens to bruken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:88
 msgctxt "europeans_building"
 msgid "processing reed or cotton or wool to create tools and armor"
 msgstr ""
+"Reit of Boomwull of Wull tum Produzeren vun Warktüüg un Wapenrocken to bruken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing iron for input wares because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:102
@@ -796,7 +798,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:95
 msgctxt "europeans_building"
 msgid "processing iron to create tools and weapons"
-msgstr ""
+msgstr "Iesen tum Produzeren vun Warktüüg un Wapens to bruken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:124
@@ -804,7 +806,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:115
 msgctxt "europeans_building"
 msgid "making a wooden armor"
-msgstr ""
+msgstr "eenen Holt-Wapenrock to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:151
@@ -812,16 +814,15 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:142
 msgctxt "europeans_building"
 msgid "making a pair of wooden boots"
-msgstr ""
+msgstr "een Paar Holtstevels to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:178
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:185
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:169
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making a wooden helmet"
-msgstr "Wien to maken"
+msgstr "eenen Holthelm to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:205
@@ -829,7 +830,7 @@ msgstr "Wien to maken"
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:196
 msgctxt "europeans_building"
 msgid "forging a wooden spear"
-msgstr ""
+msgstr "eene Holtpieke to smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:232
@@ -839,7 +840,7 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:73
 msgctxt "europeans_building"
 msgid "tailoring a suit of armor"
-msgstr ""
+msgstr "eenen Wapenrock to sniedern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:254
@@ -847,20 +848,20 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:245
 msgctxt "europeans_building"
 msgid "tailoring processed armor"
-msgstr ""
+msgstr "eenen Bewarkt Wapenrock to sniedern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:283
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:272
 msgctxt "europeans_building"
 msgid "tailoring a suit of chain armor"
-msgstr ""
+msgstr "eenen Stahl-Wapenrock to sniedern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:313
 msgctxt "europeans_building"
 msgid "tailoring a suit of advanced armor"
-msgstr ""
+msgstr "eenen Goden Wapenrock to sniedern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:343
@@ -868,111 +869,100 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:299
 msgctxt "europeans_building"
 msgid "making study boots"
-msgstr ""
+msgstr "Gode Stevels to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:372
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:326
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making swift boots"
-msgstr "Wien to maken"
+msgstr "Gaue Stevels to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:402
 msgctxt "europeans_building"
 msgid "making advanced boots"
-msgstr ""
+msgstr "Betere Stevels to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:432
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:284
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:353
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making baskets"
-msgstr "Wien to maken"
+msgstr "Körven to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:460
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:308
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:379
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making buckets"
-msgstr "Wien to maken"
+msgstr "Emmers to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:488
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:332
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:405
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making felling axes"
-msgstr "Wien to maken"
+msgstr "Boomslager-Exten to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:516
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:356
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:431
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making fire tongs"
-msgstr "Wien to maken"
+msgstr "Füürtangen to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:544
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:380
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:457
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making hammers"
-msgstr "Hönnig to maken"
+msgstr "Klöppers to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making needles because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:572
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:404
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:483
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making needles"
-msgstr "Wien to maken"
+msgstr "Nadels to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:599
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:427
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:508
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making picks"
-msgstr "Wien to maken"
+msgstr "Pickhacken to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:627
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:451
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:534
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making saws"
-msgstr "Wien to maken"
+msgstr "Saagen to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:655
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:475
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:560
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making sycthes"
-msgstr "Hönnig to maken"
+msgstr "Sichten to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:683
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:499
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:586
-#, fuzzy
 msgctxt "europeans_building"
 msgid "making shovels"
-msgstr "Hönnig to maken"
+msgstr "Schüppen to maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:711
@@ -980,20 +970,20 @@ msgstr "Hönnig to maken"
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:612
 msgctxt "europeans_building"
 msgid "forging a mask"
-msgstr ""
+msgstr "eene Mask to smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:738
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:637
 msgctxt "europeans_building"
 msgid "forging a steel shield"
-msgstr ""
+msgstr "eenen Stahlschild to smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:765
 msgctxt "europeans_building"
 msgid "forging an advanced shield"
-msgstr ""
+msgstr "eenen Goden Schild to smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:792
@@ -1001,76 +991,70 @@ msgstr ""
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:662
 msgctxt "europeans_building"
 msgid "forging an advanced spear"
-msgstr ""
+msgstr "eene Gode Pieke to smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:821
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:689
 msgctxt "europeans_building"
 msgid "forging a broad ax"
-msgstr ""
+msgstr "eene Brede Ext to smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_advanced/init.lua:850
 msgctxt "europeans_building"
 msgid "forging a broadsword"
-msgstr ""
+msgstr "een Bredes Sweert to smeden"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Big Manufactory"
-msgstr "Lütte Backeree"
+msgstr "Lütte Fabrik"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed for input wares because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_basic/init.lua:107
 msgctxt "europeans_building"
 msgid "processing reed to create tools and armor"
-msgstr ""
+msgstr "Reit tum Produzeren vun Warktüüg un Wapenrocken to bruken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Big Manufactory"
-msgstr "Backeree"
+msgstr "Fabrik"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
 #: addons/europeans_food_production.wad/productionsites_craft/manufactory_normal/init.lua:83
 msgctxt "europeans_building"
 msgid "processing reed or cotton to create tools and armor"
-msgstr ""
+msgstr "Reit of Boomwull tum Produzeren vun Warktüüg un Wapenrocken to bruken"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Weaving Mill"
-msgstr "Grote Möhlen"
+msgstr "Grote Spinnweelmöhlen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_advanced/init.lua:63
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:74
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:62
-#, fuzzy
 msgctxt "europeans_building"
 msgid "weaving cloth"
-msgstr "Boomwull to arnten"
+msgstr "Stoff to spinnen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Weaving Mill"
-msgstr "Lütte Möhlen"
+msgstr "Lütte Spinnweelmöhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_craft/weaving_mill_normal/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Normal Weaving Mill"
-msgstr "Möhlen"
+msgstr "Spinnweelmöhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_food/bakery_advanced/init.lua:8
@@ -1193,10 +1177,9 @@ msgstr "Möhlen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_food_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Coal Mine (Food)"
-msgstr "Köhle-Bargwark"
+msgstr "Köhle-Bargwark (Spiesen)"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
 #. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
@@ -1300,38 +1283,33 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_food_level_1/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Coal Mine Level 1 (Food)"
-msgstr "Köhle-Bargwark vun de Grött 1"
+msgstr "Köhle-Bargwark vun de Grött 1 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_food_level_2/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Coal Mine Level 2 (Food)"
-msgstr "Köhle-Bargwark vun de Grött 2"
+msgstr "Köhle-Bargwark vun de Grött 2 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_food_level_3/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Coal Mine Level 3 (Food)"
-msgstr "Köhle-Bargwark vun de Grött 3"
+msgstr "Köhle-Bargwark vun de Grött 3 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_food_level_4/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Coal Mine Level 4 (Food)"
-msgstr "Köhle-Bargwark vun de Grött 4"
+msgstr "Köhle-Bargwark vun de Grött 4 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_food_level_5/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Coal Mine Level 5 (Food)"
-msgstr "Köhle-Bargwark vun de Grött 5"
+msgstr "Köhle-Bargwark vun de Grött 5 (Spiesen)"
 
 #: addons/europeans_food_production.wad/productionsites_mining/coalmine_food_level_5/init.lua:110
 msgctxt "europeans_building"
@@ -1345,10 +1323,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_food_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Gold Mine (Food)"
-msgstr "Gold-Bargwark"
+msgstr "Gold-Bargwark (Spiesen)"
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_food_basic/init.lua:95
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_food_level_1/init.lua:86
@@ -1432,38 +1409,33 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_food_level_1/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Gold Mine Level 1 (Food)"
-msgstr "Gold-Bargwark vun de Grött 1"
+msgstr "Gold-Bargwark vun de Grött 1 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_food_level_2/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Gold Mine Level 2 (Food)"
-msgstr "Gold-Bargwark vun de Grött 2"
+msgstr "Gold-Bargwark vun de Grött 2 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_food_level_3/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Gold Mine Level 3 (Food)"
-msgstr "Gold-Bargwark vun de Grött 3"
+msgstr "Gold-Bargwark vun de Grött 3 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_food_level_4/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Gold Mine Level 4 (Food)"
-msgstr "Gold-Bargwark vun de Grött 4"
+msgstr "Gold-Bargwark vun de Grött 4 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_food_level_5/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Gold Mine Level 5 (Food)"
-msgstr "Gold-Bargwark vun de Grött 5"
+msgstr "Gold-Bargwark vun de Grött 5 (Spiesen)"
 
 #: addons/europeans_food_production.wad/productionsites_mining/goldmine_food_level_5/init.lua:121
 msgctxt "europeans_building"
@@ -1477,10 +1449,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_food_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Iron Mine (Food)"
-msgstr "Iesen-Bargwark"
+msgstr "Iesen-Bargwark (Spiesen)"
 
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_food_basic/init.lua:137
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_food_level_1/init.lua:128
@@ -1516,38 +1487,33 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_food_level_1/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Iron Mine Level 1 (Food)"
-msgstr "Iesen-Bargwark vun de Grött 1"
+msgstr "Iesen-Bargwark vun de Grött 1 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_food_level_2/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Iron Mine Level 2 (Food)"
-msgstr "Iesen-Bargwark vun de Grött 2"
+msgstr "Iesen-Bargwark vun de Grött 2 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_food_level_3/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Iron Mine Level 3 (Food)"
-msgstr "Iesen-Bargwark vun de Grött 3"
+msgstr "Iesen-Bargwark vun de Grött 3 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_food_level_4/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Iron Mine Level 4 (Food)"
-msgstr "Iesen-Bargwark vun de Grött 4"
+msgstr "Iesen-Bargwark vun de Grött 4 (Spiesen)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_food_level_5/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Iron Mine Level 5 (Food)"
-msgstr "Iesen-Bargwark vun de Grött 5"
+msgstr "Iesen-Bargwark vun de Grött 5 (Spiesen)"
 
 #: addons/europeans_food_production.wad/productionsites_mining/ironmine_food_level_5/init.lua:121
 msgctxt "europeans_building"
@@ -4058,35 +4024,3 @@ msgstr "Buur"
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
 msgstr "Goder Buur"
-
-#~ msgid ""
-#~ "Adds some additional agricultur wares, workers and buildings to Europeans "
-#~ "tribes economy for more complexity. When the addon "
-#~ "europeans_food_production.wad is activated, the definitions for "
-#~ "buildings, wares and workers from the base addon europeans_tribes.wad are "
-#~ "overwritten and no longer available."
-#~ msgstr ""
-#~ "Föögt mehr Buurderee-Waren, Arbeiders un Husen to de Weertskupp vun de "
-#~ "Europäers-Volk hento, um ’t kumplizeerter to maken. Wenn deeses "
-#~ "Verwiedern anknipst is, worden de Settens för Husen, Waren un Arbeiders "
-#~ "vun de normaale Europäers-Verwiedern överschriewen un ünd nich mehr "
-#~ "verföögbaar."
-
-#~ msgid "Discovery (Food Addon)"
-#~ msgstr "Utförsken (Spiesen-Verwiedern)"
-
-#~ msgid ""
-#~ "Start the game with three ships on the ocean and only a handful of "
-#~ "supplies."
-#~ msgstr ""
-#~ "Begünn dat Speel mit dree Schippen up de See un blot een paar Materialien."
-
-#~ msgid "Headquarters (with seafaring and food addon)"
-#~ msgstr "Raadhuus (mit Seefahrt un Spiesen-Verwiedern)"
-
-#~ msgid "Start the game with your headquarters only."
-#~ msgstr "Begünn dat Speel mit nix as dien Raadhuus."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Open market to exchange wares with other allied tribes."
-#~ msgstr "Open Markt, waar man Waren mit verbündt Völkers tuusken kann."
