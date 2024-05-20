@@ -1,10 +1,8 @@
-# Automatically created by the Widelands Add-Ons Server.
-
 [global]
-author="MarkMcWire"
-category="tribes"
-description=_"Adds Terraformer to the Europeans tribe. Not recommended for sea travel, because the terraformer converts ocean segments to land and can therefore lock up ships and ports, which can cause the game to crash."
 name=_"Terraforming addon for Europeans tribe"
+description=_"Adds Terraformer to the Europeans tribe. Not recommended for sea travel, because the terraformer converts ocean segments to land and can therefore lock up ships and ports, which can cause the game to crash."
+author="MarkMcWire"
+version="1.5.2"
+category="tribes"
 requires="europeans_tribe.wad"
 sync_safe="true"
-version="1.4.0"

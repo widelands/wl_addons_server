@@ -29,9 +29,8 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_recruit = 1,
-        coin_copper = 1,
-        coin_silver = 1,
-        coin_gold = 1
+        basket = 1,
+        buckets = 1
     },
 
     programs = {

@@ -278,10 +278,14 @@ public enum Command {
 	 * <code>CMD_I18N name</code>
 	 *
 	 * <p>
-	 * Supported command versions: 1 (default: 1)
+	 * Supported command versions: 1-2 (default: 1)
 	 *
 	 * <p>
 	 * Download an add-on's translations as a byte stream.
+	 *
+	 * <p>
+	 * In command version 1, this serves MO files (extension .mo).
+	 * In command version 2, this serves PO files (extension .po).
 	 *
 	 * <p> Parameters:
 	 * <ol>
@@ -294,10 +298,10 @@ public enum Command {
 	 *   <li> Integer string denoting number <var>T</var> of translations, <code>\n</code>
 	 *   <li> For each of the <var>T</var> languages:
 	 *   <ul>
-	 *     <li> <var>{@literal<language_name>}</var>.mo, <code>\n</code>
+	 *     <li> <var>{@literal<language_name>}</var>.<var>{@literal<extension>}</var>, <code>\n</code>
 	 *     <li> checksum, <code>\n</code>
-	 *     <li> MO file size in bytes, <code>\n</code>
-	 *     <li> The content of the MO file as a byte stream, <code>\n</code>
+	 *     <li> Translation file size in bytes, <code>\n</code>
+	 *     <li> The content of the translation file as a byte stream, <code>\n</code>
 	 *   </ul>
 	 *   <li> <code>ENDOFSTREAM\n</code>
 	 * </ul>

@@ -525,6 +525,7 @@ function force_mine(player_number, startx, starty, radius)
     local map = game.map
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
+    local mine_field = fields[math.random(#fields)]
     local resource = mine_field.resource
     local amount = mine_field.resource_amount
 
@@ -605,7 +606,7 @@ function force_mine(player_number, startx, starty, radius)
         end
     end
 
-    local mine = player:place_building(tribe_name.."_"..minename..suffix, fields[math.random(#fields)], true, true)
+    local mine = player:place_building(tribe_name.."_"..minename..suffix, mine_field, true, true)
 end
 
 function force_militarysite(player_number, startx, starty, radius, militarytype)
