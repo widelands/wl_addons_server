@@ -206,16 +206,24 @@ public class ServerUtils {
 		 * Constructor.
 		 * @param dir The directory to represent.
 		 */
-		public DirInfo(File dir) {
+		public DirInfo(File dir) { this(dir, null); }
+
+		/**
+		 * Constructor.
+		 * @param dir The directory to represent.
+		 * @param suffix If not null, filter for regular files ending in this suffix.
+		 */
+		public DirInfo(File dir, String suffix) {
 			file = dir;
 			regularFiles = new ArrayList<>();
 			subdirs = new ArrayList<>();
 
 			for (File f : Utils.listSorted(dir)) {
-				if (f.isDirectory())
+				if (f.isDirectory()) {
 					subdirs.add(new DirInfo(f));
-				else
+				} else if (suffix == null || f.getName().endsWith(suffix)) {
 					regularFiles.add(f);
+				}
 			}
 
 			int t = 0;
