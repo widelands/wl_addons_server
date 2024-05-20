@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 03:08+0200\n"
+"POT-Creation-Date: 2024-05-19 03:08+0200\n"
 "PO-Revision-Date: 2024-05-05 18:53+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -34,30 +34,6 @@ msgstr ""
 "Voegt een Terravormer toe aan de stam van de Europeanen. Niet aanbevolen "
 "voor zeereizen, omdat de Terravormer oceaansegmenten omzet in land en "
 "daardoor schepen en havens kan blokkeren, waardoor het spel kan crashen."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_ai.lua:11
-msgid "Headquarters (AI optimized)"
-msgstr "Hoofdkwartier (AI geoptimaliseerd)"
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_ai.lua:13
-msgid "AI optimized starting condition, not for human player."
-msgstr "AI geoptimaliseerde startconditie, niet voor menselijke speler."
-
-#. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_terraforming.lua:11
-msgid "Headquarters (with terraforming)"
-msgstr "Hoofdkwartier (met terravorming)"
-
-#. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
-#: addons/europeans_terraforming.wad/scripting/starting_conditions/headquarters_terraforming.lua:13
-msgid ""
-"Start the game with your headquarters only. Disabled seafaring because of "
-"lack of compatibility with terraforming (diking of water bodies)."
-msgstr ""
-"Begin het spel alleen met je hoofdkwartier. Zeevaart uitgeschakeld vanwege "
-"gebrek aan compatibiliteit met terreinvorming (bedijken van watermassa's)."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_terraforming.wad/terraformingsites/terraformers_house_advanced/init.lua:8
