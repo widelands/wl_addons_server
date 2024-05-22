@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-18 03:08+0200\n"
+"POT-Creation-Date: 2024-05-22 03:08+0200\n"
 "PO-Revision-Date: 2024-05-05 18:53+0000\n"
 "Language-Team: Bulgarian (https://app.transifex.com/widelands/teams/35159/"
 "bg/)\n"
@@ -389,15 +389,14 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
 #: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:412
 msgctxt "europeans_ware"
-msgid "Big buckets for the forester, the gardener, and the fish breeder."
+msgid ""
+"Big buckets for the forester, the gardener, and the construction of wells."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
-#. TRANSLATORS: Helptext for an Europeans ware: Needles, part 2
 #: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:414
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:479
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:531
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:505
 msgctxt "europeans_ware"
 msgid "They are produced by all smithies."
 msgstr ""
@@ -405,72 +404,27 @@ msgstr ""
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
 #: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:425
 msgctxt "europeans_ware"
-msgid "This basket is needed  by advanced carrier to transport wares."
+msgid "This basket is needed by advanced carrier to transport wares."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
-#. TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
 #: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:427
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:505
 msgctxt "europeans_ware"
 msgid "It is produced by all smithies."
 msgstr ""
 
-#. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
+#. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:438
 msgctxt "europeans_ware"
-msgid "The scythe is a secondary tool of the lumberjacks."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:440
-msgctxt "europeans_ware"
-msgid "Scythes are produced by all smithies."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:451
-msgctxt "europeans_ware"
-msgid "The felling ax is the tool to chop down trees."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:453
-msgctxt "europeans_ware"
-msgid "Felling axes are used by lumberjacks and produced by all smithies."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Pick, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:464
-msgctxt "europeans_ware"
 msgid ""
-"The pick is an essential tool. Picks are used by stonemasons and miners."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Pick, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:466
-msgctxt "europeans_ware"
-msgid "They are produced produced by all smithies."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:477
-msgctxt "europeans_ware"
-msgid ""
-"The shovel is an essential tool. Therefore the forester, the gardener and "
-"the terraformer use them."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:490
-msgctxt "europeans_ware"
-msgid ""
-"The hammer is an essential tool. Geologists, builders, and smiths all need a "
+"The hammer is an essential tool. Geologists, builders, and worker all need a "
 "hammer."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:492
+#. TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:440
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:453
 msgctxt "europeans_ware"
 msgid ""
 "Make sure you’ve always got some in reserve! They are produced by all "
@@ -478,35 +432,60 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:451
+msgctxt "europeans_ware"
+msgid ""
+"The saw is an essential tool. This saw is needed by the worker and the "
+"woodcutter."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:464
+msgctxt "europeans_ware"
+msgid "The scythe is a secondary tool of the lumberjacks."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:466
+msgctxt "europeans_ware"
+msgid "Scythes are produced by all smithies."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 1
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:477
+msgctxt "europeans_ware"
+msgid "The felling ax is the tool to chop down trees."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 2
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:479
+msgctxt "europeans_ware"
+msgid "Felling axes are used by lumberjacks and produced by all smithies."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Pick, part 1
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:490
+msgctxt "europeans_ware"
+msgid ""
+"The pick is an essential tool. Picks are used by stonemasons and miners."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Pick, part 2
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:492
+msgctxt "europeans_ware"
+msgid "They are produced produced by all smithies."
+msgstr ""
+
+#. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:503
 msgctxt "europeans_ware"
 msgid ""
-"The saw is an essential tool. This saw is needed by the woodcutter and the "
-"carpenter."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:516
-msgctxt "europeans_ware"
-msgid "Fire tongs are the tools for smelting ores."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Fire Tongs, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:518
-msgctxt "europeans_ware"
-msgid ""
-"They are used in the smelting works and smithies and produced produced by "
-"all smithies."
-msgstr ""
-
-#. TRANSLATORS: Helptext for an Europeans ware: Needles, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:529
-msgctxt "europeans_ware"
-msgid "Needles are used by weavers."
+"The shovel is an essential tool. Therefore the forester, the gardener and "
+"the terraformer use them."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:544
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:518
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the big manufactory. In "
@@ -514,7 +493,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:553
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:527
 msgctxt "europeans_ware"
 msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
@@ -522,7 +501,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:562
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:536
 msgctxt "europeans_ware"
 msgid ""
 "The compressed armor is a medium armor for European soldiers. It is produced "
@@ -531,7 +510,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:571
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:545
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
@@ -539,7 +518,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:580
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:554
 msgctxt "europeans_ware"
 msgid ""
 "Wooden boots are basic footwear for soldiers to be protect on their feet. "
@@ -547,7 +526,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:589
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:563
 msgctxt "europeans_ware"
 msgid ""
 "Sturdy boots are excellent footwear for soldiers to be quicker on their "
@@ -556,7 +535,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:598
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:572
 msgctxt "europeans_ware"
 msgid ""
 "Swift boots are light and durable footwear for soldiers to be quicker on "
@@ -565,7 +544,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:607
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:581
 msgctxt "europeans_ware"
 msgid ""
 "Hero boots! The only suitable footwear for a real hero. They are produced by "
@@ -573,7 +552,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:619
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:593
 msgctxt "europeans_ware"
 msgid ""
 "This wooden spear is the basic weapon in the European military system. It is "
@@ -582,7 +561,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:628
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:602
 msgctxt "europeans_ware"
 msgid ""
 "This is a advanced spear with a steel tip. It is produced in a manufactory "
@@ -591,7 +570,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:637
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:611
 msgctxt "europeans_ware"
 msgid ""
 "This is an broad ax. It is produced in a manufactory and used in a battle "
@@ -599,7 +578,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:646
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:620
 msgctxt "europeans_ware"
 msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
@@ -607,7 +586,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:655
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:629
 msgctxt "europeans_ware"
 msgid ""
 "The helmet is the basic defense tool of a soldier. It is produced in the "
@@ -616,7 +595,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:664
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:638
 msgctxt "europeans_ware"
 msgid ""
 "The mask is the medium defense tool of a soldier. It is produced in a "
@@ -625,7 +604,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:673
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:647
 msgctxt "europeans_ware"
 msgid ""
 "This steel shield is produced in a manufactory and used in a battle arena – "
@@ -633,7 +612,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:682
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:656
 msgctxt "europeans_ware"
 msgid ""
 "These advanced shields are used by the best soldiers of the Europeans. They "
@@ -642,115 +621,115 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:697
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:671
 msgctxt "europeans_worker"
 msgid "Used for recruiting all other workers."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:706
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:680
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:715
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:689
 msgctxt "europeans_worker"
 msgid ""
 "Carries items along your roads with their hands. Only used for busy roads."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:724
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:698
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets. Only used for busy roads."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ferry
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:733
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:707
 msgctxt "europeans_worker"
 msgid "Ships wares across narrow rivers."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Recruit
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:742
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:716
 msgctxt "europeans_worker"
 msgid "Eager to become a soldier and defend his tribe!"
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Soldier
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:751
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:725
 msgctxt "europeans_worker"
 msgid "Defend and Conquer!"
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Worker
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:763
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:772
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:781
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:737
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:746
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:755
 msgctxt "europeans_worker"
 msgid "General worker with no special ability."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Shipwright
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:790
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:799
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:808
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:764
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:773
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:782
 msgctxt "europeans_worker"
 msgid "Works at the shipyard and constructs new ships."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Builder
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:817
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:791
 msgctxt "europeans_worker"
 msgid "Works at construction sites to raise new buildings."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Geologist
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:826
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:800
 msgctxt "europeans_worker"
 msgid "Discovers resources for mining."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:838
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:847
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:856
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:812
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:821
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:830
 msgctxt "europeans_worker"
 msgid "Fells trees."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:865
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:874
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:883
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:839
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:848
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:857
 msgctxt "europeans_worker"
 msgid "Plant trees."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Stonecutter
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:895
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:904
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:913
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:869
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:878
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:887
 msgctxt "europeans_worker"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:922
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:896
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house and planting reed."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:931
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:905
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed and cotton."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:940
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:914
 msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed, cotton and "
@@ -758,33 +737,33 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Miner
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:952
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:961
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:970
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:926
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:935
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:944
 msgctxt "europeans_worker"
 msgid "Mines ore and minerals."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Terraformer
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:979
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:988
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:997
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:953
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:962
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:971
 msgctxt "europeans_worker"
 msgid "Terraforms desert and coast into fertile soil."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Trainer
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1009
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1018
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1027
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:983
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:992
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1001
 msgctxt "europeans_worker"
 msgid "Trains the soldiers."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans worker: Scout
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1036
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1046
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1056
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1010
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1020
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1030
 msgctxt "europeans_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
@@ -792,41 +771,41 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1068
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1103
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1042
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1077
 msgid "The remains of a destroyed building."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1075
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1049
 msgid "This cotton field has just been planted."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1082
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1056
 msgid "This cotton field is growing."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1089
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1063
 msgid ""
 "This cotton field is flowering. Honey can be produced from it by a beekeeper."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1096
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1070
 msgid "This cotton field is ready for harvesting."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1110
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1084
 msgid ""
 "Ponds with water becomes dry after some time. These dry holes vanish after a "
 "while."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1117
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1091
 msgid ""
 "When gardeners dig up earth, they leave holes with water in the ground. "
 "These falls dry after a while or can be used by terraformer to produce new "
@@ -834,174 +813,174 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1124
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1098
 msgid "This reed field has just been planted."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1131
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1105
 msgid "This reed field is growing."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1138
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1112
 msgid ""
 "This reed field is flowering. Honey can be produced from it by a beekeeper."
 msgstr ""
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1145
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1119
 msgid "This reed field is ready for harvesting."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Sapling
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1152
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1180
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1208
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1236
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1126
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1154
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1182
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1210
 msgid "This rubber tree has just been planted."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1159
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1187
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1215
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1243
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1133
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1161
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1189
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1217
 msgid "This rubber tree is growing."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1166
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1194
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1222
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1250
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1140
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1168
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1196
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1224
 msgid "This rubber tree is fully grown. Lianas can be gathered from it."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Old
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1173
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1201
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1229
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1257
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1147
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1175
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1203
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1231
 msgid ""
 "This rubber tree is ready for harvesting rubber by a master woodcutter. "
 "Other tribes can harvest it for normal logs."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1264
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1238
 msgid "There are no resources in the ground here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Water
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1271
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1245
 msgid "There is water in the ground here that can be pulled up by a well."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1279
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1323
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1253
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1297
 msgid "Coal veins contain coal that can be dug up by coal mines."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1281
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1255
 msgid "There is only a little bit of coal here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1290
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1334
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1264
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1308
 msgid "Iron veins contain iron ore that can be dug up by iron mines."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1292
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1266
 msgid "There is only a little bit of iron here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1301
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1345
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1275
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1319
 msgid "Gold veins contain gold ore that can be dug up by gold mines."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1303
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1277
 msgid "There is only a little bit of gold here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1312
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1356
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1286
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1330
 msgid ""
 "Marble is a basic building material and can be dug up by a marble mine. You "
 "will also get granite from the mine."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1314
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1288
 msgid "There is only a little bit of marble here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1325
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1299
 msgid "There is a lot of coal here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1336
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1310
 msgid "There is a lot of iron here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1347
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1321
 msgid "There is a lot of gold here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1358
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1332
 msgid "There is a lot of marble here."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ship Under Construction
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1366
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1340
 msgid "A ship is being constructed at this site."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans immovable usable by Europeans: Dead Tree
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1374
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1348
 msgid "The remains of an old tree."
 msgstr ""
 
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1381
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1388
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1395
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1402
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1409
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1416
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1423
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1430
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1355
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1362
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1369
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1376
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1383
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1390
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1397
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1404
 msgid ""
 "This tree is only planted by the amazon tribe but can be harvested for logs."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Headquarters
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1442
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1416
 msgctxt "europeans_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans warehouse: Headquarters
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1444
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1418
 msgctxt "europeans_building"
 msgid "The headquarters is your main building."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Warehouse
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1451
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1425
 msgctxt "europeans_building"
 msgid ""
 "Your workers and soldiers will find shelter here. Also stores your wares and "
@@ -1009,7 +988,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1458
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1432
 msgctxt "europeans_building"
 msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
@@ -1019,50 +998,50 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutter's House
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Lumberjack's House
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1467
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1476
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1485
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1441
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1450
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1459
 msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1469
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1443
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Woodcutter's House
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1478
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1452
 msgctxt "europeans_building"
 msgid "The woodcutter’s house needs trees to fell within the work area."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Lumberjack's House
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1487
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1461
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Ranger's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1494
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1503
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1512
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1468
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1477
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1486
 msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Ranger's Hut
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1496
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1470
 msgctxt "europeans_building"
 msgid ""
 "The ranger’s hut needs free space within the work area to plant the trees."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1505
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1514
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1479
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1488
 msgctxt "europeans_building"
 msgid ""
 "The forester’s house needs free space within the work area to plant the "
@@ -1070,7 +1049,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1521
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1495
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
@@ -1078,7 +1057,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1528
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1502
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
@@ -1086,7 +1065,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1535
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1509
 msgctxt "europeans_building"
 msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
@@ -1094,71 +1073,71 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1542
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1516
 msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for an Europeans production site: Quarry
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1544
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1553
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1562
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1518
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1527
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1536
 msgctxt "europeans_building"
 msgid "The quarry needs rocks to cut within the work area."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1551
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1525
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite out of rocks in the vicinity."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1560
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1534
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1569
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1576
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1583
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1543
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1550
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1557
 msgctxt "building"
 msgid "Explores unknown territory."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Terraformer's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1590
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1597
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1604
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1564
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1571
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1578
 msgctxt "building"
 msgid "Terraforms deserts and coasts into fertile soil."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1613
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1620
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1627
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1634
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1641
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1648
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1655
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1587
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1594
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1601
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1608
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1615
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1622
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1629
 msgctxt "europeans_building"
 msgid "Draws water out of the deep."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1662
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1636
 msgctxt "europeans_building"
 msgid "Weaves cloth out of reed."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1669
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1643
 msgctxt "europeans_building"
 msgid ""
 "Weaves cloth for buildings and ships’ sails, and armor to equip and train "
@@ -1166,36 +1145,36 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1676
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1650
 msgctxt "europeans_building"
 msgid "Weaves cloth and armor out of cotton and reed."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1683
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1657
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1690
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1697
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1664
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1671
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood and saws log to produce planks."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1704
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1711
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1718
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1678
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1685
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1692
 msgctxt "europeans_building"
 msgid "Burns logs into charcoal."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1725
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1734
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1699
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1708
 msgctxt "europeans_building"
 msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
@@ -1203,8 +1182,8 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1727
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1736
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1701
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1710
 msgctxt "europeans_building"
 msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
@@ -1212,7 +1191,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Stonemason's House
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1743
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1717
 msgctxt "europeans_building"
 msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
@@ -1221,7 +1200,7 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1745
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1719
 msgctxt "europeans_building"
 msgid ""
 "The stonemason’s house's output will only go to construction sites that need "
@@ -1229,27 +1208,27 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1752
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1726
 msgctxt "europeans_building"
 msgid "Smelts ore into iron."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1759
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1733
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1766
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1740
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold. Recycles scrap metal."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1775
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1782
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1789
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1749
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1756
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1763
 msgctxt "europeans_building"
 msgid ""
 "Large factory that produces complex wares such as tools, weapons, armor, "
@@ -1262,12 +1241,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1798
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1805
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1812
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1819
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1826
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1833
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1772
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1779
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1786
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1793
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1800
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1807
 msgctxt "europeans_building"
 msgid "Digs coal out of the ground in mountain terrain."
 msgstr ""
@@ -1278,12 +1257,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1840
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1847
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1854
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1861
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1868
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1875
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1814
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1821
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1828
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1835
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1842
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1849
 msgctxt "europeans_building"
 msgid "Digs iron ore out of the ground in mountain terrain."
 msgstr ""
@@ -1294,12 +1273,12 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1882
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1889
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1896
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1903
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1910
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1917
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1856
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1863
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1870
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1877
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1884
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1891
 msgctxt "europeans_building"
 msgid "Digs gold ore out of the ground in mountain terrain."
 msgstr ""
@@ -1307,9 +1286,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1927
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1938
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1949
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1901
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1912
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1923
 msgctxt "europeans_building"
 msgid "Trains recruits to soldiers."
 msgstr ""
@@ -1317,15 +1296,15 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1929
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1940
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1951
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1903
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1914
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1925
 msgctxt "europeans_building"
 msgid "Equips the recruits with all necessary armor parts and weapons."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1959
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1933
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’."
 msgstr ""
@@ -1333,9 +1312,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 1
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 1
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1967
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1978
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1989
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1941
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1952
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1963
 msgctxt "europeans_building"
 msgid "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."
 msgstr ""
@@ -1343,9 +1322,9 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 2
 #. TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 2
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1969
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1980
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1991
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1943
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1954
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1965
 msgctxt "europeans_building"
 msgid ""
 "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to "
@@ -1362,18 +1341,18 @@ msgstr ""
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Castle
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2001
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2010
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2019
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2028
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2037
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2046
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2055
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2064
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2073
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2082
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2091
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2100
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1975
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1984
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1993
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2002
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2011
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2020
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2029
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2038
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2047
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2056
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2065
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2074
 msgctxt "europeans_building"
 msgid "Garrisons soldiers to expand your territory."
 msgstr ""
@@ -1387,18 +1366,18 @@ msgstr ""
 #. TRANSLATORS: Note helptext for an Europeans military site: Castle
 #. TRANSLATORS: Note helptext for an Europeans military site: Fortress
 #. TRANSLATORS: Note helptext for an Europeans military site: Castle
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2003
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2012
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2021
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2030
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2039
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2048
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2057
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2066
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2075
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2084
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2093
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2102
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1977
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1986
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:1995
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2004
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2013
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2022
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2031
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2040
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2049
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2058
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2067
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2076
 msgctxt "europeans_building"
 msgid ""
 "If you’re low on soldiers to occupy new military sites, use the downward "
@@ -1407,25 +1386,25 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2111
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2120
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2129
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2085
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2094
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2103
 msgctxt "europeans_building"
 msgid "Builds ferries."
 msgstr ""
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2113
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2122
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2131
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2087
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2096
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2105
 msgctxt "europeans_building"
 msgid "Needs water nearby."
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2138
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2145
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2152
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2112
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2119
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2126
 msgctxt "europeans_building"
 msgid ""
 "Constructs ships that are used for overseas colonization and for trading "
@@ -1433,37 +1412,37 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Construction Site
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2161
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2135
 msgctxt "europeans_building"
 msgid "‘Don’t swear at the builder who is short of building materials.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Construction Site
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2163
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2137
 msgctxt "europeans_building"
 msgid "Proverb widely used for impossible tasks of any kind"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Construction Site
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2165
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2139
 msgctxt "europeans_building"
 msgid "A new building is being built at this construction site."
 msgstr ""
 
 #. TRANSLATORS: Lore helptext for an Europeans building: Dismantle Site
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2172
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2146
 msgctxt "europeans_building"
 msgid "‘New paths will appear when you are willing to tear down the old.’"
 msgstr ""
 
 #. TRANSLATORS: Lore author helptext for an Europeans building: Dismantle Site
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2174
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2148
 msgctxt "europeans_building"
 msgid "Proverb"
 msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans building: Dismantle Site
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2176
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2150
 msgctxt "europeans_building"
 msgid ""
 "A building is being dismantled at this dismantle site, returning some of the "
@@ -1471,364 +1450,364 @@ msgid ""
 "stores."
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2183
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2157
 msgctxt "warehousename"
 msgid "Europe"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2184
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2158
 msgctxt "warehousename"
 msgid "Åland"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2185
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2159
 msgctxt "warehousename"
 msgid "Albania"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2186
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2160
 msgctxt "warehousename"
 msgid "Andorra"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2187
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2161
 msgctxt "warehousename"
 msgid "Armenia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2188
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2162
 msgctxt "warehousename"
 msgid "Austria"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2189
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2163
 msgctxt "warehousename"
 msgid "Azerbaijan"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2190
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2164
 msgctxt "warehousename"
 msgid "Belarus"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2191
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2165
 msgctxt "warehousename"
 msgid "Belgium"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2192
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2166
 msgctxt "warehousename"
 msgid "Bosnia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2193
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2167
 msgctxt "warehousename"
 msgid "Bulgaria"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2194
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2168
 msgctxt "warehousename"
 msgid "Corsica"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2195
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2169
 msgctxt "warehousename"
 msgid "Croatia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2196
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2170
 msgctxt "warehousename"
 msgid "Cyprus"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2197
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2171
 msgctxt "warehousename"
 msgid "Czechia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2198
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2172
 msgctxt "warehousename"
 msgid "Denmark"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2199
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2173
 msgctxt "warehousename"
 msgid "England"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2200
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2174
 msgctxt "warehousename"
 msgid "Estonia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2201
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2175
 msgctxt "warehousename"
 msgid "Faroe Islands"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2202
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2176
 msgctxt "warehousename"
 msgid "Finland"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2203
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2177
 msgctxt "warehousename"
 msgid "France"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2204
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2178
 msgctxt "warehousename"
 msgid "Georgia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2205
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2179
 msgctxt "warehousename"
 msgid "Germany"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2206
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2180
 msgctxt "warehousename"
 msgid "Gibraltar"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2207
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2181
 msgctxt "warehousename"
 msgid "Greece"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2208
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2182
 msgctxt "warehousename"
 msgid "Guernsey"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2209
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2183
 msgctxt "warehousename"
 msgid "Herzegovina"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2210
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2184
 msgctxt "warehousename"
 msgid "Hungary"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2211
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2185
 msgctxt "warehousename"
 msgid "Iceland"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2212
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2186
 msgctxt "warehousename"
 msgid "Isle of Man"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2213
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2187
 msgctxt "warehousename"
 msgid "Ireland"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2214
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2188
 msgctxt "warehousename"
 msgid "Italy"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2215
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2189
 msgctxt "warehousename"
 msgid "Jersey"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2216
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2190
 msgctxt "warehousename"
 msgid "Kazakhstan"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2217
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2191
 msgctxt "warehousename"
 msgid "Kosovo"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2218
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2192
 msgctxt "warehousename"
 msgid "Latvia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2219
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2193
 msgctxt "warehousename"
 msgid "Liechtenstein"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2220
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2194
 msgctxt "warehousename"
 msgid "Lithuania"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2221
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2195
 msgctxt "warehousename"
 msgid "Luxembourg"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2222
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2196
 msgctxt "warehousename"
 msgid "Malta"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2223
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2197
 msgctxt "warehousename"
 msgid "Moldova"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2224
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2198
 msgctxt "warehousename"
 msgid "Monaco"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2225
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2199
 msgctxt "warehousename"
 msgid "Montenegro"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2226
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2200
 msgctxt "warehousename"
 msgid "Netherlands"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2227
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2201
 msgctxt "warehousename"
 msgid "North Macedonia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2228
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2202
 msgctxt "warehousename"
 msgid "Norway"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2229
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2203
 msgctxt "warehousename"
 msgid "Poland"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2230
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2204
 msgctxt "warehousename"
 msgid "Portugal"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2231
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2205
 msgctxt "warehousename"
 msgid "Romania"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2232
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2206
 msgctxt "warehousename"
 msgid "Russia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2233
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2207
 msgctxt "warehousename"
 msgid "San Marino"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2234
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2208
 msgctxt "warehousename"
 msgid "Sardinia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2235
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2209
 msgctxt "warehousename"
 msgid "Scotland"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2236
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2210
 msgctxt "warehousename"
 msgid "Serbia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2237
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2211
 msgctxt "warehousename"
 msgid "Slovakia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2238
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2212
 msgctxt "warehousename"
 msgid "Slovenia"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2239
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2213
 msgctxt "warehousename"
 msgid "Spain"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2240
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2214
 msgctxt "warehousename"
 msgid "Svalbard"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2241
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2215
 msgctxt "warehousename"
 msgid "Sweden"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2242
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2216
 msgctxt "warehousename"
 msgid "Switzerland"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2243
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2217
 msgctxt "warehousename"
 msgid "Turkey"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2244
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2218
 msgctxt "warehousename"
 msgid "Ukraine"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2245
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2219
 msgctxt "warehousename"
 msgid "Vatican City"
 msgstr ""
 
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2246
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2220
 msgctxt "warehousename"
 msgid "Wales"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker missing
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2251
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2225
 msgctxt "europeans"
 msgid "Worker missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 worker coming
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2253
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2227
 msgctxt "europeans"
 msgid "Worker is coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2255
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2229
 msgctxt "europeans"
 msgid "Workers missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 worker coming. If you need plural forms here, please let us know.
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2257
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2231
 msgctxt "europeans"
 msgid "Workers are coming"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is 1 experienced worker missing
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2259
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2233
 msgctxt "europeans"
 msgid "Expert missing"
 msgstr ""
 
 #. TRANSLATORS: Productivity label on an europeans building if there is more than 1 experienced worker missing. If you need plural forms here, please let us know.
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2261
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2235
 msgctxt "europeans"
 msgid "Experts missing"
 msgstr ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% is the maximum number of soldier slots in the building.
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2275
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2249
 msgctxt "europeans_soldier"
 msgid "%1% soldier (+%2%)"
 msgid_plural "%1% soldiers (+%2%)"
@@ -1836,7 +1815,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2277
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2251
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
@@ -1844,7 +1823,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2279
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2253
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier (+%3%)"
 msgid_plural "%1%(+%2%) soldiers (+%3%)"
@@ -1852,7 +1831,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building.
-#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2281
+#: addons/europeans_terraforming.wad/tribes/europeans_tribe/units.lua:2255
 msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"

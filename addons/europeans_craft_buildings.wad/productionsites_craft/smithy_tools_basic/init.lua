@@ -55,7 +55,11 @@ wl.Descriptions():new_productionsite_type {
         granite = 2
     },
 
-    aihints = {},
+    aihints = {
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 1,
+        normal_ai_limit = 2,
+    },
 
     working_positions = {
         europeans_worker_basic = 1
@@ -72,23 +76,23 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=produce_hammer",
+                "call=produce_saw",
+                "sleep=duration:10s",
+                "call=produce_buckets",
+                "call=produce_basket",
+                "sleep=duration:10s",
+                "call=produce_hammer",
+                "call=produce_saw",
+                "sleep=duration:10s",
                 "call=produce_buckets",
                 "call=produce_basket",
                 "sleep=duration:10s",
                 "call=produce_felling_ax",
                 "call=produce_scythe",
                 "sleep=duration:10s",
-                "call=produce_buckets",
-                "call=produce_basket",
-                "sleep=duration:10s",
                 "call=produce_pick",
                 "call=produce_shovel",
-                "sleep=duration:10s",
-                "call=produce_hammer",
-                "call=produce_saw",
-                "sleep=duration:10s",
-                "call=produce_fire_tongs",
-                "call=produce_needles",
                 "return=skipped"
             }
         },
@@ -100,9 +104,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs iron and not economy needs basket",
                 "return=skipped when economy needs buckets and not economy needs basket",
                 "return=skipped when economy needs felling_ax and not economy needs basket",
-                "return=skipped when economy needs fire_tongs and not economy needs basket",
                 "return=skipped when economy needs hammer and not economy needs basket",
-                "return=skipped when economy needs needles and not economy needs basket",
                 "return=skipped when economy needs pick and not economy needs basket",
                 "return=skipped when economy needs saw and not economy needs basket",
                 "return=skipped when economy needs scythe and not economy needs basket",
@@ -121,9 +123,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs iron and not economy needs buckets",
                 "return=skipped when economy needs basket and not economy needs buckets",
                 "return=skipped when economy needs felling_ax and not economy needs buckets",
-                "return=skipped when economy needs fire_tongs and not economy needs buckets",
                 "return=skipped when economy needs hammer and not economy needs buckets",
-                "return=skipped when economy needs needles and not economy needs buckets",
                 "return=skipped when economy needs pick and not economy needs buckets",
                 "return=skipped when economy needs saw and not economy needs buckets",
                 "return=skipped when economy needs scythe and not economy needs buckets",
@@ -142,9 +142,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs iron and not economy needs felling_ax",
                 "return=skipped when economy needs basket and not economy needs felling_ax",
                 "return=skipped when economy needs buckets and not economy needs felling_ax",
-                "return=skipped when economy needs fire_tongs and not economy needs felling_ax",
                 "return=skipped when economy needs hammer and not economy needs felling_ax",
-                "return=skipped when economy needs needles and not economy needs felling_ax",
                 "return=skipped when economy needs pick and not economy needs felling_ax",
                 "return=skipped when economy needs saw and not economy needs felling_ax",
                 "return=skipped when economy needs scythe and not economy needs felling_ax",
@@ -153,27 +151,6 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:10m",
                 "produce=felling_ax:2"
-            }
-        },
-        produce_fire_tongs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making fire tongs because ...
-            descname = pgettext("europeans_building", "making fire tongs"),
-            actions = {
-                "return=skipped when economy needs log and not economy needs fire_tongs",
-                "return=skipped when economy needs iron and not economy needs fire_tongs",
-                "return=skipped when economy needs basket and not economy needs fire_tongs",
-                "return=skipped when economy needs buckets and not economy needs fire_tongs",
-                "return=skipped when economy needs felling_ax and not economy needs fire_tongs",
-                "return=skipped when economy needs hammer and not economy needs fire_tongs",
-                "return=skipped when economy needs needles and not economy needs fire_tongs",
-                "return=skipped when economy needs pick and not economy needs fire_tongs",
-                "return=skipped when economy needs saw and not economy needs fire_tongs",
-                "return=skipped when economy needs scythe and not economy needs fire_tongs",
-                "return=skipped when economy needs shovel and not economy needs fire_tongs",
-                "consume=log iron coal",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:10m",
-                "produce=fire_tongs:2"
             }
         },
         produce_hammer = {
@@ -185,8 +162,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs basket and not economy needs hammer",
                 "return=skipped when economy needs buckets and not economy needs hammer",
                 "return=skipped when economy needs felling_ax and not economy needs hammer",
-                "return=skipped when economy needs fire_tongs and not economy needs hammer",
-                "return=skipped when economy needs needles and not economy needs hammer",
                 "return=skipped when economy needs pick and not economy needs hammer",
                 "return=skipped when economy needs saw and not economy needs hammer",
                 "return=skipped when economy needs scythe and not economy needs hammer",
@@ -194,27 +169,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=log iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:10m",
-                "produce=hammer:2"
-            }
-        },
-        produce_needles = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making needles because ...
-            descname = pgettext("europeans_building", "making needles"),
-            actions = {
-                "return=skipped when economy needs iron and not economy needs needles",
-                "return=skipped when economy needs basket and not economy needs needles",
-                "return=skipped when economy needs buckets and not economy needs needles",
-                "return=skipped when economy needs felling_ax and not economy needs needles",
-                "return=skipped when economy needs fire_tongs and not economy needs needles",
-                "return=skipped when economy needs hammer and not economy needs needles",
-                "return=skipped when economy needs pick and not economy needs needles",
-                "return=skipped when economy needs saw and not economy needs needles",
-                "return=skipped when economy needs scythe and not economy needs needles",
-                "return=skipped when economy needs shovel and not economy needs needles",
-                "consume=coal iron",
-                "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
-                "animate=working duration:10m",
-                "produce=needles:2"
+                "produce=hammer:3"
             }
         },
         produce_pick = {
@@ -226,9 +181,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs basket and not economy needs pick",
                 "return=skipped when economy needs buckets and not economy needs pick",
                 "return=skipped when economy needs felling_ax and not economy needs pick",
-                "return=skipped when economy needs fire_tongs and not economy needs pick",
                 "return=skipped when economy needs hammer and not economy needs pick",
-                "return=skipped when economy needs needles and not economy needs pick",
                 "return=skipped when economy needs saw and not economy needs pick",
                 "return=skipped when economy needs scythe and not economy needs pick",
                 "return=skipped when economy needs shovel and not economy needs pick",
@@ -247,16 +200,14 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs basket and not economy needs saw",
                 "return=skipped when economy needs buckets and not economy needs saw",
                 "return=skipped when economy needs felling_ax and not economy needs saw",
-                "return=skipped when economy needs fire_tongs and not economy needs saw",
                 "return=skipped when economy needs hammer and not economy needs saw",
-                "return=skipped when economy needs needles and not economy needs saw",
                 "return=skipped when economy needs pick and not economy needs saw",
                 "return=skipped when economy needs scythe and not economy needs saw",
                 "return=skipped when economy needs shovel and not economy needs saw",
                 "consume=log iron coal",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:10m",
-                "produce=saw:2"
+                "produce=saw:3"
             }
         },
         produce_scythe = {
@@ -268,9 +219,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs basket and not economy needs scythe",
                 "return=skipped when economy needs buckets and not economy needs scythe",
                 "return=skipped when economy needs felling_ax and not economy needs scythe",
-                "return=skipped when economy needs fire_tongs and not economy needs scythe",
                 "return=skipped when economy needs hammer and not economy needs scythe",
-                "return=skipped when economy needs needles and not economy needs scythe",
                 "return=skipped when economy needs pick and not economy needs scythe",
                 "return=skipped when economy needs saw and not economy needs scythe",
                 "return=skipped when economy needs shovel and not economy needs scythe",
@@ -289,9 +238,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs basket and not economy needs shovel",
                 "return=skipped when economy needs buckets and not economy needs shovel",
                 "return=skipped when economy needs felling_ax and not economy needs shovel",
-                "return=skipped when economy needs fire_tongs and not economy needs shovel",
                 "return=skipped when economy needs hammer and not economy needs shovel",
-                "return=skipped when economy needs needles and not economy needs shovel",
                 "return=skipped when economy needs pick and not economy needs shovel",
                 "return=skipped when economy needs saw and not economy needs shovel",
                 "return=skipped when economy needs scythe and not economy needs shovel",
