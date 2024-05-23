@@ -21,7 +21,7 @@ wl.Descriptions():new_productionsite_type {
       },
     },
     
-    size = "medium",
+    size = "big",
     map_check = {"seafaring"},
     destructible = true,
     
@@ -75,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "cloth", amount = 4 },
         { name = "blackwood", amount = 2 },
         { name = "reed", amount = 2 },
-        { name = "coin_copper", amount = 2 }
+        { name = "gold", amount = 2 }
     },
 
     programs = {
@@ -83,24 +83,23 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "return=skipped when economy needs coin_copper",
-                "call=ship on failure fail",
-                "sleep=duration:30s",
-                "call=ship on failure fail",
-                "sleep=duration:30s",
-                "call=ship on failure fail",
-                "sleep=duration:30s",
-                "call=ship on failure fail",
-                "sleep=duration:30s",
-                "call=ship on failure fail",
-                "sleep=duration:30s",
-                "call=ship on failure fail",
-                "sleep=duration:30s",
-                "call=ship on failure fail",
-                "sleep=duration:30s",
-                "call=ship on failure fail",
-                "sleep=duration:30s",
                 "call=ship_preparation",
+                "sleep=duration:30s",
+                "call=ship on failure fail",
+                "sleep=duration:30s",
+                "call=ship on failure fail",
+                "sleep=duration:30s",
+                "call=ship on failure fail",
+                "sleep=duration:30s",
+                "call=ship on failure fail",
+                "sleep=duration:30s",
+                "call=ship on failure fail",
+                "sleep=duration:30s",
+                "call=ship on failure fail",
+                "sleep=duration:30s",
+                "call=ship on failure fail",
+                "sleep=duration:30s",
+                "call=ship on failure fail",
                 "return=completed"
             }
         },
@@ -112,13 +111,15 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when not site has planks",
                 "return=skipped when not site has cloth",
                 "animate=working duration:30s",
-                "construct=europeans_shipconstruction worker:buildship radius:5",
+                "construct=europeans_shipconstruction worker:buildship radius:2",
             }
         },
         ship_preparation = {
             descname = _"working",
             actions = {
-                "consume=coin_copper",
+                "callworker=check_space",
+                "return=skipped when economy needs gold",
+                "consume=gold",
                 "animate=working duration:60s",
             }
         },

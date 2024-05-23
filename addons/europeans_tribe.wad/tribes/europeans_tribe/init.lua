@@ -15,12 +15,10 @@ local init_europeans = {
     script = dirname .. "units.lua",
 
     starting_conditions = {
-        "addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_terraforming.lua";
-        "addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_seafaring.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_ai.lua";
-        "addons/europeans_tribe.wad/scripting/starting_conditions/discovery_human.lua";
+        "addons/europeans_tribe.wad/scripting/starting_conditions/headquarters_human.lua";
         "addons/europeans_tribe.wad/scripting/starting_conditions/discovery_ai.lua";
-        "addons/europeans_tribe.wad/scripting/starting_conditions/trading_outpost.lua";
+        "addons/europeans_tribe.wad/scripting/starting_conditions/discovery_human.lua";
     }
 }
 pop_textdomain()

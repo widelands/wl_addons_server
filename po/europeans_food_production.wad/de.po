@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-22 03:08+0200\n"
+"POT-Creation-Date: 2024-05-23 03:08+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -2084,14 +2084,11 @@ msgstr "Sie werden von allen Schmieden hergestellt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:666
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The hammer is an essential tool. Geologists, builders, and worker all need a "
 "hammer."
 msgstr ""
-"Der Hammer ist ein unentbehrliches Werkzeug. Geologen, Bauarbeiter und "
-"Schmiede benötigen alle einen Hammer."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
@@ -2107,14 +2104,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:679
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The saw is an essential tool. This saw is needed by the worker and the "
 "woodcutter."
 msgstr ""
-"Die Säge ist ein unentbehrliches Werkzeug. Der Holzfäller und der Tischler "
-"benötigen eine Säge."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:694
@@ -3956,23 +3950,3 @@ msgstr "Einfacher Bauer"
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
 msgstr "Normaler Bauer"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "It is produced by all smithies."
-#~ msgstr "Es wird von allen Schmieden hergestellt."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Fire tongs are the tools for smelting ores."
-#~ msgstr "Feuerzangen sind Werkzeuge um Erze zu schmelzen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "They are used in the smelting works and smithies and produced produced by "
-#~ "all smithies."
-#~ msgstr ""
-#~ "Sie werden in den Hochöfen und Schmieden benutzt und werden von allen "
-#~ "Schmieden produziert."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Needles are used by weavers."
-#~ msgstr "Nadeln werden von Webern benötigt."

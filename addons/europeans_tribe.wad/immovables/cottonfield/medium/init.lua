@@ -15,6 +15,10 @@ wl.Descriptions():new_immovable_type {
          "animate=idle duration:26s",
          "grow=cottonfield_ripe",
       },
+      grow = {
+         "animate=idle duration:13s",
+         "grow=cottonfield_ripe",
+      },
    },
    
    animation_directory = dirname,

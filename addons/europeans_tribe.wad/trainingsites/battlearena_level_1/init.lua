@@ -63,8 +63,7 @@ wl.Descriptions():new_trainingsite_type {
 
     
     inputs = {
-        { name = "coin_copper", amount = 6 },
-        { name = "coin_silver", amount = 6 },
+        { name = "gold", amount = 12 },
         { name = "armor_processed", amount = 2 },
         { name = "armor_compressed", amount = 2 },
         { name = "spear_advanced", amount = 2 },
@@ -80,17 +79,17 @@ wl.Descriptions():new_trainingsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
             descname = _"sleeping",
             actions = {
-                "call=pausing_training_for_coins",
+                "call=pausing_training_for_gold",
                 "call=pausing_training_for_weapons",
                 "sleep=duration:5s",
                 "return=skipped",
             }
         },
-        pausing_training_for_coins = {
+        pausing_training_for_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing training because ...
-            descname = pgettext("europeans_building", "pausing training because lack of coins"),
+            descname = pgettext("europeans_building", "pausing training because lack of gold"),
             actions = {
-                "return=skipped when site has coin_copper:4 and site has coin_silver:4",
+                "return=skipped when site has gold:8",
                 "sleep=duration:10m",
             }
         },
@@ -110,7 +109,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:health level:0",
-                "consume=coin_copper armor_processed",
+                "consume=gold armor_processed",
                 "train=soldier:health level:1",
                 "produce=scrap_metal_mixed"
             }
@@ -122,7 +121,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:health level:1",
-                "consume=coin_silver armor_compressed",
+                "consume=gold armor_compressed",
                 "train=soldier:health level:2",
                 "produce=scrap_metal_mixed"
             }
@@ -134,7 +133,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:attack level:0",
-                "consume=coin_copper spear_advanced",
+                "consume=gold spear_advanced",
                 "train=soldier:attack level:1",
                 "produce=scrap_metal_mixed"
             }
@@ -146,7 +145,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:attack level:1",
-                "consume=coin_silver ax_broad",
+                "consume=gold ax_broad",
                 "train=soldier:attack level:2",
                 "produce=scrap_metal_mixed"
             }
@@ -158,7 +157,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:defense level:0",
-                "consume=coin_copper helmet_mask",
+                "consume=gold helmet_mask",
                 "train=soldier:defense level:1",
                 "produce=scrap_metal_mixed"
             }
@@ -170,7 +169,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:defense level:1",
-                "consume=coin_silver shield_steel",
+                "consume=gold shield_steel",
                 "train=soldier:defense level:2",
                 "produce=scrap_metal_mixed"
             }
@@ -182,7 +181,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:0",
                 "sleep=duration:30s",
                 "checksoldier=soldier:evade level:0",
-                "consume=coin_copper boots_sturdy",
+                "consume=gold boots_sturdy",
                 "train=soldier:evade level:1",
                 "produce=scrap_metal_mixed"
             }
@@ -194,7 +193,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:1",
                 "sleep=duration:30s",
                 "checksoldier=soldier:evade level:1",
-                "consume=coin_silver boots_swift",
+                "consume=gold boots_swift",
                 "train=soldier:evade level:2",
                 "produce=scrap_metal_mixed"
             }

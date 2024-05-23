@@ -9,7 +9,7 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
     
-    experience = 36,
+    experience = 72,
     becomes = "europeans_gardener_advanced",
 
     programs = {
@@ -24,6 +24,9 @@ wl.Descriptions():new_worker_type {
         },
         check_fields = {
             "findobject=attrib:field radius:6"
+        },
+        check_growable_plants = {
+            "findobject=attrib:growable radius:6"
         },
         dig = {
             "findspace=size:any radius:6 avoid:field",
@@ -54,6 +57,13 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:2s",
             "callobject=plant_reed_in_pond",
             "animate=water duration:1s",
+            "return"
+        },
+        watering = {
+            "findobject=attrib:growable radius:6",
+            "walk=object",
+            "animate=water duration:2s",
+            "callobject=grow",
             "return"
         },
         harvest_cotton = {

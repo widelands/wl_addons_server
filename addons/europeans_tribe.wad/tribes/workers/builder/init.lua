@@ -11,7 +11,6 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_carrier = 1,
-        coin_copper = 1,
         hammer = 1,
         saw = 1,
         shovel = 1

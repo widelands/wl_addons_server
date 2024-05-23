@@ -1,68 +1,93 @@
 push_textdomain("europeans_tribe.wad", true)
 
-dirname = path.dirname(__file__)
+local dirname = path.dirname(__file__)
 
-animations = {
-    idle = {
-        pictures = path.list_files(dirname .. "idle_??.png"),
-        hotspot = { 10, 36 },
-        fps = 5
-    },
-    atk_ok_e = {
-        pictures = path.list_files(dirname .. "atk_ok_e_??.png"),
-        hotspot = { 30, 36 },
-        fps = 10
-    },
-    atk_fail_e = {
-        pictures = path.list_files(dirname .. "atk_fail_e_??.png"),
-        hotspot = { 30, 36 },
-        fps = 10
-    },
-    eva_ok_e = {
-        pictures = path.list_files(dirname .. "eva_ok_e_??.png"),
-        hotspot = { 30, 36 },
-        fps = 20
-    },
-    eva_fail_e = {
-        pictures = path.list_files(dirname .. "eva_fail_e_??.png"),
-        hotspot = { 30, 36 },
-        fps = 10
-    },
-    atk_ok_w = {
-        pictures = path.list_files(dirname .. "atk_ok_w_??.png"),
-        hotspot = { 30, 36 },
-        fps = 10
-    },
-    atk_fail_w = {
-        pictures = path.list_files(dirname .. "atk_fail_w_??.png"),
-        hotspot = { 30, 36 },
-        fps = 10
-    },
-    eva_ok_w = {
-        pictures = path.list_files(dirname .. "eva_ok_w_??.png"),
-        hotspot = { 30, 36 },
-        fps = 20
-    },
-    eva_fail_w = {
-        pictures = path.list_files(dirname .. "eva_fail_w_??.png"),
-        hotspot = { 30, 36 },
-        fps = 10
-    },
-    die_w = {
-        pictures = path.list_files(dirname .. "die_??.png"),
-        hotspot = { 10, 36 },
-        fps = 10
-    },
-    die_e = {
-        pictures = path.list_files(dirname .. "die_??.png"),
-        hotspot = { 10, 36 },
-        fps = 10
-    },
-    walk = {
-        hotspot = { 10, 36 },
-        fps = 10,
-        directional = true
-    }
+spritesheets = {
+   atk_ok_e = {
+      fps = 10,
+      frames = 10,
+      rows = 4,
+      columns = 3,
+      hotspot = { 3, 32 }
+   },
+   atk_ok_w = {
+      fps = 10,
+      frames = 10,
+      rows = 4,
+      columns = 3,
+      hotspot = { 30, 36 }
+   },
+   atk_fail_e = {
+      fps = 10,
+      frames = 10,
+      rows = 4,
+      columns = 3,
+      hotspot = { 3, 32 }
+   },
+   atk_fail_w = {
+      fps = 10,
+      frames = 10,
+      rows = 4,
+      columns = 3,
+      hotspot = { 30, 36 }
+   },
+   die_e = {
+      fps = 10,
+      frames = 20,
+      rows = 5,
+      columns = 4,
+      hotspot = { 9, 36 }
+   },
+   die_w = {
+      fps = 10,
+      frames = 20,
+      rows = 5,
+      columns = 4,
+      hotspot = { 9, 36 }
+   },
+   eva_fail_e = {
+      fps = 10,
+      frames = 10,
+      rows = 4,
+      columns = 3,
+      hotspot = { 6, 24 }
+   },
+   eva_fail_w = {
+      fps = 10,
+      frames = 10,
+      rows = 4,
+      columns = 3,
+      hotspot = { 29, 22 }
+   },
+   eva_ok_e = {
+      fps = 20,
+      frames = 20,
+      rows = 5,
+      columns = 4,
+      hotspot = { 14, 27 }
+   },
+   eva_ok_w = {
+      fps = 20,
+      frames = 20,
+      rows = 5,
+      columns = 4,
+      hotspot = { 25, 27 }
+   },
+   idle = {
+      fps = 5,
+      frames = 40,
+      rows = 7,
+      columns = 6,
+      hotspot = { 5, 34 }
+   },
+   walk = {
+      fps = 10,
+      frames = 10,
+      rows = 4,
+      columns = 3,
+      directional = true,
+      hotspot = { 9, 35 }
+   },
 }
 
 all_levels_emp = {
@@ -84,11 +109,10 @@ wl.Descriptions():new_soldier_type {
     vision_range = 2,
 
     animation_directory = dirname,
-    animations = animations,
+    spritesheets = spritesheets,
     
     -- buildcost = {
         -- europeans_recruit = 1,
-        -- coin_wood = 1,
         -- quartz = 1,
         -- diamond = 1
     -- },
@@ -96,27 +120,27 @@ wl.Descriptions():new_soldier_type {
     -- Battle attributes - initial values and per level increase
     health = {
         max_level = 3,
-        base = 13500,
-        increase_per_level = 3500,
+        base = 13000,
+        increase_per_level = 3000,
         pictures = path.list_files(dirname .. "health_level?.png"),
     },
     evade = {
         max_level = 3,
-        base = 32,
+        base = 30,
         increase_per_level = 10,
         pictures = path.list_files(dirname .. "evade_level?.png"),
     },
     defense = {
         max_level = 3,
-        base = 18,
-        increase_per_level = 5,
+        base = 6,
+        increase_per_level = 8,
         pictures = path.list_files(dirname .. "defense_level?.png"),
     },
     attack = {
         max_level = 3,
-        base = 1000,
-        maximum = 1500,
-        increase_per_level = 1000,
+        base = 1250,
+        maximum = 1550,
+        increase_per_level = 1200,
         pictures = path.list_files(dirname .. "attack_level?.png"),
     },
 

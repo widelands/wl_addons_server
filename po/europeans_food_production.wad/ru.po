@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-22 03:08+0200\n"
+"POT-Creation-Date: 2024-05-23 03:08+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -1989,11 +1989,10 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:588
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Big buckets for the forester, the gardener, and the construction of wells."
-msgstr "Большие вёдра для лесника, садовника и рыбовода."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
@@ -2071,13 +2070,11 @@ msgstr "Её скует любой кузнец."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:666
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The hammer is an essential tool. Geologists, builders, and worker all need a "
 "hammer."
 msgstr ""
-"Молоток - важнейший инструмент. Они нужны геологам, строителям и кузнецам."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
@@ -2091,12 +2088,11 @@ msgstr "Проследите, чтобы всегда иметь несколь�
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:679
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The saw is an essential tool. This saw is needed by the worker and the "
 "woodcutter."
-msgstr "Пила - важнейший инструмент. Ими пользуются лесорубы и плотники."
+msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_food_production.wad/tribes/europeans_tribe/units.lua:694
@@ -3939,22 +3935,3 @@ msgstr "Базовый Фермер"
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
 msgstr "Обычный Фермер"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "It is produced by all smithies."
-#~ msgstr "Их изготавливают в кузницах."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Fire tongs are the tools for smelting ores."
-#~ msgstr "Клещи нужны в литейных."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "They are used in the smelting works and smithies and produced produced by "
-#~ "all smithies."
-#~ msgstr ""
-#~ "Ими пользуются в литейных и кузницах, а изготовить их может любой кузнец."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Needles are used by weavers."
-#~ msgstr "Иглы нужны ткачам."

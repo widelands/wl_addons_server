@@ -14,10 +14,13 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_builder = 1,
-        coin_copper = 1
+        gold = 1
     },
 
     programs = {
+        check_space = {
+            "findspace=size:swim radius:2"
+        },
         buildship = {
             "walk=object-or-coords",
             "plant=attrib:europeans_shipconstruction unless object",
@@ -28,10 +31,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         buildferry_1 = {
-            "findspace=size:swim radius:5",
+            "findspace=size:swim radius:2",
         },
         buildferry_2 = {
-            "findspace=size:swim radius:5",
+            "findspace=size:swim radius:2",
             "walk=coords",
             "animate=work duration:60s",
             "createbob=europeans_ferry",

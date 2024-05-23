@@ -14,13 +14,10 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_recruit = 1,
-        coin_copper = 1
+        gold = 1
     },
 
     programs = {
-        find_pole = {
-            "findobject=attrib:tradepole radius:80",
-        },
         scout = {
             "scout=radius:12 duration:1m",
             "return"

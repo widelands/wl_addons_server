@@ -43,9 +43,15 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=planting",
-                "sleep=duration:15s",
+                "sleep=duration:1s",
+                "call=watering",
+                "sleep=duration:1s",
                 "call=planting",
-                "sleep=duration:15s",
+                "sleep=duration:1s",
+                "call=watering",
+                "sleep=duration:1s",
+                "call=harvesting",
+                "sleep=duration:1s",
                 "call=harvesting",
                 "return=skipped"
             }
@@ -54,7 +60,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting because ...
             descname = pgettext("europeans_building", "planting reed and cotton"),
             actions = {
-                "sleep=duration:2s",
+                "sleep=duration:1s",
                 "callworker=check_dig_space",
                 "call=making_pond",
                 "sleep=duration:1s",
@@ -63,6 +69,17 @@ wl.Descriptions():new_productionsite_type {
                 "call=making_pond",
                 "sleep=duration:1s",
                 "call=planting_cotton",
+            }
+        },
+        watering = {
+            -- TRANSLATORS: Completed/Skipped/Did not start watering because ...
+            descname = pgettext("europeans_building", "watering fields"),
+            actions = {
+                "sleep=duration:1s",
+                "callworker=check_growable_plants",
+                "return=skipped unless site has water",
+                "consume=water",
+                "callworker=watering",
             }
         },
         making_pond = {
@@ -94,9 +111,9 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs clay",
                 "return=skipped unless site has water",
-                "callworker=check_terraform_space",
+                "callworker=check_dig_space",
                 "consume=water",
-                "callworker=dig_terraform",
+                "callworker=dig",
                 "animate=working duration:1s"
             }
         },
@@ -108,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has water",
                 "consume=water",
                 "animate=working duration:1s",
-                "callworker=terraform_pond_dry"
+                "callworker=fill_pond_dry"
             }
         },
         planting_cotton = {
@@ -145,8 +162,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting cotton"),
             actions = {
                 "callworker=harvest_cotton",
-                "return=skipped unless economy needs cotton",
-                "produce=cotton:3"
+                "produce=cotton"
             }
         },
         harvesting_reed = {
@@ -154,8 +170,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
                 "callworker=harvest_reed",
-                "return=skipped unless economy needs reed",
-                "produce=reed:3"
+                "produce=reed"
             }
         },
     },

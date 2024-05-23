@@ -13,6 +13,9 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_shipwright_advanced",
 
     programs = {
+        check_space = {
+            "findspace=size:swim radius:4"
+        },
         buildship = {
             "walk=object-or-coords",
             "plant=attrib:europeans_shipconstruction unless object",
@@ -23,10 +26,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         buildferry_1 = {
-            "findspace=size:swim radius:6",
+            "findspace=size:swim radius:4",
         },
         buildferry_2 = {
-            "findspace=size:swim radius:6",
+            "findspace=size:swim radius:4",
             "walk=coords",
             "animate=idle duration:40s",
             "createbob=europeans_ferry",

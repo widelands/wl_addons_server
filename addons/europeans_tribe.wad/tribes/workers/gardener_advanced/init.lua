@@ -13,9 +13,6 @@ wl.Descriptions():new_worker_type {
         check_dig_space = {
             "findspace=size:any radius:8 avoid:field",
         },
-        check_terraform_space = {
-            "findspace=size:any radius:8 avoid:field terraform:amazons",
-        },
         check_pond_dry = {
             "findobject=attrib:pond_dry radius:8",
         },
@@ -25,15 +22,11 @@ wl.Descriptions():new_worker_type {
         check_fields = {
             "findobject=attrib:field radius:8"
         },
+        check_growable_plants = {
+            "findobject=attrib:growable radius:8"
+        },
         dig = {
             "findspace=size:any radius:8 avoid:field",
-            "walk=coords",
-            "animate=dig duration:1s",
-            "plant=attrib:pond_dry",
-            "return"
-        },
-        dig_terraform = {
-            "findspace=size:any radius:8 avoid:field terraform:amazons",
             "walk=coords",
             "animate=dig duration:1s",
             "plant=attrib:pond_dry",
@@ -45,15 +38,6 @@ wl.Descriptions():new_worker_type {
             "animate=water duration:1s",
             "callobject=fill_pond",
             "animate=water duration:1s",
-            "return"
-        },
-        terraform_pond_dry = {
-            "findobject=attrib:pond_dry radius:8",
-            "walk=object",
-            "animate=water duration:1s",
-            "callobject=fill_pond",
-            "animate=water duration:1s",
-            "terraform=amazons",
             "return"
         },
         plant_cotton = {
@@ -70,6 +54,13 @@ wl.Descriptions():new_worker_type {
             "animate=plant duration:1s",
             "callobject=plant_reed_in_pond",
             "animate=plant duration:1s",
+            "return"
+        },
+        watering = {
+            "findobject=attrib:growable radius:8",
+            "walk=object",
+            "animate=water duration:2s",
+            "callobject=grow",
             "return"
         },
         harvest_cotton = {

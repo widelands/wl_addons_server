@@ -17,6 +17,10 @@ wl.Descriptions():new_immovable_type{
          "remove=chance:13.67%",
          "grow=rubber_black_amazons_pole",
       },
+      grow = {
+         "animate=idle duration:28s",
+         "grow=rubber_black_amazons_pole",
+      },
    },
    icon = dirname .. "menu_sapling.png",
    animation_directory = dirname,
