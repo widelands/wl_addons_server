@@ -9,18 +9,12 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 4,
     
-    experience = 12,
-    becomes = "europeans_trader",
-    
     buildcost = {
         europeans_recruit = 1,
-        coin_gold = 1
+        gold = 1
     },
 
     programs = {
-        find_pole = {
-            "findobject=attrib:tradepole radius:80",
-        },
         scout = {
             "scout=radius:18 duration:1m45s",
             "return"

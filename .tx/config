@@ -42,6 +42,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Flower-Power-wad]
+file_filter            = po/Flower_Power.wad/<lang>.po
+source_file            = po/Flower_Power.wad/Flower_Power.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Grand-Fantasia-wad]
 file_filter            = po/Grand-Fantasia.wad/<lang>.po
 source_file            = po/Grand-Fantasia.wad/Grand-Fantasia.wad.pot
@@ -323,19 +331,12 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
-[o:widelands:p:widelands-addons:r:europeans-tribe-base-wad]
-file_filter            = po/europeans_tribe_base.wad/<lang>.po
-source_file            = po/europeans_tribe_base.wad/europeans_tribe_base.wad.pot
-type                   = PO
-minimum_perc           = 0
-replace_edited_strings = false
-keep_translations      = false
-
 [o:widelands:p:widelands-addons:r:europeans-tribe-wad]
 file_filter            = po/europeans_tribe.wad/<lang>.po
 source_file            = po/europeans_tribe.wad/europeans_tribe.wad.pot
 source_lang            = en
 type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 

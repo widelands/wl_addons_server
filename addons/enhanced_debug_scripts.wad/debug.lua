@@ -163,6 +163,23 @@ function remove_flag(startx, starty)
     end
 end
 
+function remove_all_flags(startx, starty, radius)
+    local game = wl.Game()
+    local map = game.map
+    
+    local centerfield = map:get_field(startx, starty)
+    local fields = centerfield:region(radius)
+    
+    for idx, field in ipairs(fields) do
+        if (field.immovable) and (field.immovable.descr.type_name == "flag") and not (field.tln.immovable) then
+           field.immovable:remove()
+        end
+        if (field.immovable) and (field.immovable.descr.type_name == "flag") and (field.tln.immovable) and (field.tln.immovable.descr.type_name == "road") then
+           field.immovable:remove()
+        end
+    end
+end
+
 function place_road(startx, starty, cmd)
     local game = wl.Game()
     local map = game.map
@@ -214,6 +231,20 @@ function remove_road(startx, starty)
 
     if (map:get_field(startx, starty).immovable.descr.type_name == "road") then
        remove_object(startx, starty)
+    end
+end
+
+function remove_all_roads(startx, starty, radius)
+    local game = wl.Game()
+    local map = game.map
+    
+    local centerfield = map:get_field(startx, starty)
+    local fields = centerfield:region(radius)
+    
+    for idx, field in ipairs(fields) do
+        if (field.immovable) and (field.immovable.descr.type_name == "road") then
+           field.immovable:remove()
+        end
     end
 end
 

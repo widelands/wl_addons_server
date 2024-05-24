@@ -77,9 +77,11 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=planting",
-                "sleep=duration:15s",
+                "sleep=duration:2s",
                 "call=planting",
-                "sleep=duration:15s",
+                "sleep=duration:2s",
+                "call=harvesting",
+                "sleep=duration:2s",
                 "call=harvesting",
                 "return=skipped"
             }
@@ -88,7 +90,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting because ...
             descname = pgettext("europeans_building", "planting reed"),
             actions = {
-                "sleep=duration:2s",
+                "sleep=duration:1s",
                 "callworker=check_dig_space",
                 "call=making_pond",
                 "sleep=duration:1s",
@@ -104,9 +106,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making a pond with water"),
             actions = {
                 "call=digging_clay",
-                "sleep=duration:3s",
+                "sleep=duration:1s",
                 "call=digging_pond",
-                "sleep=duration:3s",
+                "sleep=duration:1s",
                 "call=filling_pond"
             }
         },
@@ -164,8 +166,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
                 "callworker=harvest_reed",
-                "return=skipped unless economy needs reed",
-                "produce=reed"
+                "produce=reed:2"
             }
         },
     },

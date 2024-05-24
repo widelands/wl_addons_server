@@ -9,12 +9,11 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
     
-    experience = 24,
+    experience = 48,
     becomes = "europeans_gardener_normal",
     
     buildcost = {
         europeans_carrier = 1,
-        coin_copper = 1,
         scythe = 1,
         basket = 1,
         shovel = 1,

@@ -42,8 +42,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "cotton", amount = 6 },
-        { name = "wool", amount = 6 }
+        { name = "cotton", amount = 6 }
     },
 
     programs = {
@@ -62,7 +61,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
                 "return=skipped when economy needs armor and not economy needs cloth",
-                "consume=cotton,wool:3",
+                "consume=cotton:3",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:2m",
                 "produce=cloth:3"
@@ -73,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
                 "return=skipped when economy needs cloth and not economy needs armor",
-                "consume=cotton,wool:3",
+                "consume=cotton:3",
                 "playsound=sound/mill/weaving priority:90%",
                 "animate=working duration:3m",
                 "produce=armor:2"

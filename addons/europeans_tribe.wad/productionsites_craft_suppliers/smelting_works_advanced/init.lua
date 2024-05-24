@@ -81,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:2m",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=iron gold"
+                "produce=iron gold:2"
             }
         },
         smelting_ore = {

@@ -53,7 +53,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coin_wood", amount = 4 }
+        { name = "log", amount = 6 }
     },
 
     programs = {
@@ -63,18 +63,18 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs ore or economy needs granite or economy needs marble or workers need experience",
                 "return=skipped when economy needs coal and not economy needs ore",
-                "return=skipped unless site has coin_wood:3",
-                "consume=coin_wood",
+                "return=skipped unless site has log:3",
+                "consume=log",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
                 "sleep=duration:5s",
-                "consume=coin_wood",
+                "consume=log",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=coin_wood",
+                "consume=log",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_marble",
@@ -116,7 +116,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=coin_wood:3",
+                "consume=log:3",
                 "produce=ore:4 granite:3 marble quartz",
             }
         },

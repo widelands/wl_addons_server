@@ -11,7 +11,7 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_carrier = 1,
-        coin_wood = 1
+        armor = 1
     },
 
     animation_directory = dirname,

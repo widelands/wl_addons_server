@@ -12,6 +12,10 @@ wl.Descriptions():new_immovable_type {
       main = {
          "animate=idle duration:20s",
          "transform=reedfield_small",
+      },
+      grow = {
+         "animate=idle duration:10s",
+         "transform=reedfield_small",
       }
    },
 

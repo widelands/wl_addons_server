@@ -10,7 +10,11 @@ wl.Descriptions():new_immovable_type {
    size = "small",
    programs = {
       main = {
-         "animate=idle duration:30s",
+         "animate=idle duration:20s",
+         "transform=reedfield_medium",
+      },
+      grow = {
+         "animate=idle duration:10s",
          "transform=reedfield_medium",
       }
    },

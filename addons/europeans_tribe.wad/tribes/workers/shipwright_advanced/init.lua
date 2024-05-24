@@ -10,6 +10,9 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
+        check_space = {
+            "findspace=size:swim radius:8"
+        },
         buildship = {
             "walk=object-or-coords",
             "plant=attrib:europeans_shipconstruction unless object",
@@ -20,10 +23,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         buildferry_1 = {
-            "findspace=size:swim radius:7",
+            "findspace=size:swim radius:8",
         },
         buildferry_2 = {
-            "findspace=size:swim radius:7",
+            "findspace=size:swim radius:8",
             "walk=coords",
             "animate=work duration:30s",
             "createbob=europeans_ferry",

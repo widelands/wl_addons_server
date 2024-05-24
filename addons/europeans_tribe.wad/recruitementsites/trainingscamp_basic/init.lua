@@ -75,8 +75,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "spear_wooden", amount = 2 },
         { name = "helmet_wooden", amount = 2 },
         { name = "armor_wooden", amount = 2 },
-        { name = "boots_wooden", amount = 2 },
-        { name = "coin_wood", amount = 4 }
+        { name = "boots_wooden", amount = 2 }
     },
     
     programs = {
@@ -107,7 +106,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has armor_wooden",
                 "return=failed unless site has helmet_wooden",
                 "return=failed unless site has spear_wooden",
-                "return=failed unless site has coin_wood:2",
                 "consume=europeans_recruit",
                 "consume=boots_wooden",
                 "animate=working duration:40s",
@@ -116,8 +114,6 @@ wl.Descriptions():new_productionsite_type {
                 "consume=helmet_wooden",
                 "animate=working duration:40s",
                 "consume=spear_wooden",
-                "animate=working duration:40s",
-                "consume=coin_wood:2",
                 "animate=working duration:40s",
                 "recruit=europeans_soldier"
             }

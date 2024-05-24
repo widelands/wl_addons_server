@@ -50,7 +50,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coin_wood", amount = 6 }
+        { name = "blackwood", amount = 6 }
     },
 
     programs = {
@@ -59,24 +59,24 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs coal or economy needs granite or economy needs diamond or workers need experience",
-                "return=skipped unless site has coin_wood:4",
-                "consume=coin_wood",
+                "return=skipped unless site has blackwood:4",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=coin_wood",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_diamond",
                 "sleep=duration:5s",
-                "consume=coin_wood",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=coin_wood",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
@@ -111,7 +111,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=coin_wood:4",
+                "consume=blackwood:4",
                 "produce=coal:8 granite:4 diamond:2",
             }
         },

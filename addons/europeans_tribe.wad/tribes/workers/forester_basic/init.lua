@@ -14,14 +14,20 @@ wl.Descriptions():new_worker_type {
     
     buildcost = {
         europeans_carrier = 1,
-        coin_copper = 1,
         shovel = 1,
+        scythe = 1,
         buckets = 1
     },
     
     programs = {
         check_space = {
             "findspace=size:any radius:4 avoid:field saplingsearches:5"
+        },
+        check_fields = {
+            "findobject=attrib:field radius:4"
+        },
+        check_trees = {
+            "findobject=attrib:tree radius:4",
         },
         plant_tree = {
             "findspace=size:any radius:4 avoid:field saplingsearches:5",
@@ -41,6 +47,26 @@ wl.Descriptions():new_worker_type {
             "animate=water duration:2s",
             "return"
         },
+        harvest_rubber = {
+            "findobject=attrib:rubber_tree_mature radius:4",
+            "walk=object",
+            "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
+            "animate=hack duration:2s",
+            "animate=idle duration:2s",
+            "createware=rubber",
+            "return"
+        },
+        harvest_tree = {
+            "findobject=attrib:tree radius:4",
+            "walk=object",
+            "playsound=sound/woodcutting/woodcutting priority:100% allow_multiple",
+            "animate=hack duration:3s",
+            "playsound=sound/woodcutting/tree_falling priority:100%",
+            "callobject=fall",
+            "animate=idle duration:3s",
+            "createware=log",
+            "return"
+        }
     },
 
     animation_directory = dirname,
@@ -64,6 +90,13 @@ wl.Descriptions():new_worker_type {
             rows = 4,
             columns = 3,
             hotspot = { 12, 22 }
+        },
+        hack = {
+            fps = 10,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 19, 15 }
         },
         plant = {
             fps = 10,

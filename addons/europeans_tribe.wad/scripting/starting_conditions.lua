@@ -132,7 +132,7 @@ function place_ship_random(player, capacity)
     ship.capacity = capacity
 end
 
-function set_seafaring(OnOff, player)
+function set_seafaring(player, OnOff)
     local game = wl.Game()
     
     if player then
@@ -254,7 +254,7 @@ function place_building(player, startx, starty, radius, buildingname)
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
 
-    place_building_in_region(player, buildingname, fields)
+    place_building = place_building_in_region(player, buildingname, fields)
 end
 
 function place_port(player, startx, starty, radius)
@@ -273,6 +273,80 @@ function place_port(player, startx, starty, radius)
                      place_building(player, portfield.x, portfield.y, 0, portname)
                  end
              end
+        end
+    end
+end
+
+function set_starting_warecount(player)
+    local game = wl.Game()
+    local tribe = player.tribe
+    
+    local warehouse_types = {}
+    for i, building in ipairs(game:get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "warehouse") then
+            table.insert(warehouse_types, building.name)
+        end
+    end
+    local warehouses = {}
+    for i, building_name in ipairs(warehouse_types) do
+        warehouses = array_combine(warehouses, player:get_buildings(building_name))
+    end
+    
+    local general_worker_count = 16 / #warehouses
+    local basic_worker_count = 8 / #warehouses
+    local normal_worker_count = 8 / #warehouses
+    local advanced_worker_count = 8 / #warehouses
+
+    local general_ware_count = 8 / #warehouses
+    local build_ware_count = 32 / #warehouses
+    local enhancement_ware_count = 32 / #warehouses
+    local basic_build_ware_count = 64 / #warehouses
+
+    for i, worker in ipairs(tribe.workers) do
+        if string.find(worker.name, "advanced") then
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_workers(worker.name, advanced_worker_count)
+            end
+        elseif string.find(worker.name, "normal") then
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_workers(worker.name, normal_worker_count)
+            end
+        elseif string.find(worker.name, "basic") then
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_workers(worker.name, basic_worker_count)
+            end
+        else
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_workers(worker.name, general_worker_count)
+            end
+        end
+    end
+    
+    for i, ware in ipairs(tribe.wares) do
+        for j, warehouse in ipairs(warehouses) do
+            warehouse:set_wares(ware.name, general_ware_count)
+        end
+    end
+    
+    for i, ware in ipairs(tribe.wares) do
+        if (ware:is_construction_material(player.tribe_name)) then
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_wares(ware.name, build_ware_count)
+            end
+        end
+    end
+    for i, tbuilding in ipairs(tribe.buildings) do
+        for warename, warecount in pairs(tbuilding.enhancement_cost) do
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_wares(warename, enhancement_ware_count)
+            end
+        end
+    end
+    for i, tbuilding in ipairs(tribe.buildings) do
+        for warename, warecount in pairs(tbuilding.buildcost) do
+            for j, warehouse in ipairs(warehouses) do
+                warehouse:set_wares(warename, basic_build_ware_count)
+            end
         end
     end
 end
@@ -407,8 +481,8 @@ function change_idle_stopped_buildings(player, productivity_percent)
 end
 
 function upgrade_random_forester(player)
-    local fhb = player:get_buildings("europeans_foresters_house_basic")
-    local fhn = player:get_buildings("europeans_foresters_house_normal")
+    local fhb = player:get_buildings("europeans_tree_nursery_basic")
+    local fhn = player:get_buildings("europeans_tree_nursery_normal")
     local random_number = 0
     local building = nil
     
@@ -577,81 +651,22 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_guardhouse", "europeans_tower", "europeans_barrier", }
         player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_farm_small_basic",}
         player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
-        player:allow_buildings{"europeans_sawmill_basic", "europeans_market_small", "europeans_scouts_house_basic", }
+        player:allow_buildings{"europeans_sawmill_basic", }
     end
     if (increment == 2) then
         player:allow_buildings{"europeans_coalmine_basic", "europeans_ironmine_basic", "europeans_goldmine_basic", }
         player:allow_buildings{"europeans_coalmine_level_1", "europeans_ironmine_level_1", "europeans_goldmine_level_1", }
     end
     if (increment == 4) then
-        player:allow_buildings{"europeans_foresters_house_basic", }
+        player:allow_buildings{"europeans_tree_nursery_basic", }
         player:allow_buildings{"europeans_weaving_mill_basic", "europeans_stonemasons_house_basic", }
         player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_smelting_works_basic", }
         player:allow_buildings{"europeans_manufactory_basic", }
     end
-    if (increment == 6) then
-        player:allow_buildings{"europeans_castle", "europeans_market_big", "europeans_sawmill_normal", "europeans_weaving_mill_normal", }
-    end
     if (increment == 8) then
-        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_battlearena_basic", }
-        if (map.waterway_max_length > 0) then
-            player:allow_buildings{"europeans_ferry_yard_basic", }
-        end
-        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-            player:allow_buildings{"europeans_shipyard_basic", "europeans_port", }
-            place_ship_random_ai(player)
-        else
-            player:allow_buildings{"europeans_terraformers_house_basic", "europeans_warehouse", }
-        end
-    end
-    if (increment == 16) then
-        player:allow_buildings{"europeans_lumberjacks_house_normal", "europeans_quarry_normal", }
-        player:allow_buildings{"europeans_farm_small_normal", "europeans_foresters_house_normal", }
-        player:allow_buildings{"europeans_charcoal_kiln_normal", "europeans_stonemasons_house_normal", "europeans_smelting_works_normal", }
-        player:allow_buildings{"europeans_well_level_2", "europeans_well_level_3", }
-        player:allow_buildings{"europeans_coalmine_level_2", "europeans_ironmine_level_2", "europeans_goldmine_level_2", }
-        player:allow_buildings{"europeans_coalmine_level_3", "europeans_ironmine_level_3", "europeans_goldmine_level_3", }
-        player:allow_buildings{"europeans_manufactory_normal", "europeans_scouts_house_normal", }
-        player:allow_buildings{"europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
-        
-        if (map.waterway_max_length > 0) then
-            player:allow_buildings{"europeans_ferry_yard_normal", }
-        end
-        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-            player:allow_buildings{"europeans_shipyard_normal", }
-            place_ship_random_ai(player)
-        else
-            player:allow_buildings{"europeans_terraformers_house_normal", }
-        end
-    end
-    if (increment == 24) then
-        player:allow_buildings{"europeans_lumberjacks_house_advanced", "europeans_quarry_advanced", }
-        player:allow_buildings{"europeans_farm_small_advanced", "europeans_foresters_house_advanced", }
-        player:allow_buildings{"europeans_sawmill_advanced", "europeans_weaving_mill_advanced", }
-        player:allow_buildings{"europeans_charcoal_kiln_advanced", "europeans_stonemasons_house_advanced", "europeans_smelting_works_advanced", }
-        player:allow_buildings{"europeans_well_level_4", "europeans_well_level_5", "europeans_well_level_6", }
-        player:allow_buildings{"europeans_coalmine_level_4", "europeans_ironmine_level_4", "europeans_goldmine_level_4", }
-        player:allow_buildings{"europeans_coalmine_level_5", "europeans_ironmine_level_5", "europeans_goldmine_level_5", }
-        player:allow_buildings{"europeans_manufactory_advanced", "europeans_scouts_house_advanced", }
-        player:allow_buildings{"europeans_trainingscamp_advanced", "europeans_battlearena_level_2", "europeans_battlearena_level_3", }
-        
-        if (map.waterway_max_length > 0) then
-            player:allow_buildings{"europeans_ferry_yard_advanced", }
-        end
-        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-            player:allow_buildings{"europeans_shipyard_advanced", }
-            place_ship_random_ai(player)
-        else
-            player:allow_buildings{"europeans_terraformers_house_advanced", }
-        end
-    end
-    if (increment == 32) then
-        player:allow_buildings{"europeans_trading_post", "europeans_store_small", "europeans_store_big", }
-    end
-    if (increment == 48) then
         player:allow_buildings("all")
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-            player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced", "europeans_warehouse", "europeans_headquarters", }
+            player:forbid_buildings{"europeans_warehouse", "europeans_headquarters", }
         else
             player:forbid_buildings{"europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced", "europeans_port", }
         end

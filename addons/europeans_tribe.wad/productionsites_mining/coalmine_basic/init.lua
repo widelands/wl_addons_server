@@ -60,7 +60,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "coin_wood", amount = 4 }
+        { name = "log", amount = 6 }
     },
 
     programs = {
@@ -71,17 +71,17 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless economy needs coal or economy needs granite or economy needs diamond or workers need experience",
                 "sleep=duration:5s",
                 "call=mine_stone_basic",
-                "return=skipped unless site has coin_wood:3",
-                "consume=coin_wood",
+                "return=skipped unless site has log:3",
+                "consume=log",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=coin_wood",
+                "consume=log",
                 "call=mine_stone",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=coin_wood",
+                "consume=log",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_diamond",
@@ -107,7 +107,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining granite"),
             actions = {
                 "return=skipped unless economy needs granite",
-                "return=skipped when site has coin_wood:3",
+                "return=skipped when site has log:3",
                 "animate=working duration:30s",
                 "mine=resource_coal radius:4 yield:20% when_empty:2% experience_on_fail:10%",
                 "produce=granite",
@@ -125,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=coin_wood:3",
+                "consume=log:3",
                 "produce=coal:4 granite:3 diamond",
             }
         },
