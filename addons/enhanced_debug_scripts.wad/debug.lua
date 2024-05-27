@@ -266,10 +266,10 @@ function force_connection(startx, starty, targetx, targety)
     local diffx = targetx - startx
     local diffy = targety - starty
 
-    if math.abs(diffx) > mapx then
+    if math.abs(diffx) >= mapx then
         diffx = diffx * - 1
     end
-    if math.abs(diffy) > mapy then
+    if math.abs(diffy) >= mapy then
         diffy = diffy * - 1
     end
 
@@ -279,10 +279,10 @@ function force_connection(startx, starty, targetx, targety)
         diffx = targetx - startx
         diffy = targety - starty
 
-        if math.abs(diffx) > mapx then
+        if math.abs(diffx) >= mapx then
             diffx = diffx * - 1
         end
-        if math.abs(diffy) > mapy then
+        if math.abs(diffy) >= mapy then
             diffy = diffy * - 1
         end
 
