@@ -118,10 +118,13 @@ public enum Command {
 	 * <code>CMD_LIST [2+: control]</code>
 	 *
 	 * <p>
-	 * Supported command versions: 1-2 (default: 4/1, 5/2)
+	 * Supported command versions: 1-3 (default: 4/1, 5/2)
 	 *
 	 * <p>
 	 * List all available add-on names.
+	 *
+	 * <p>
+	 * In CV 3+, website maps are also listed.
 	 *
 	 * <p> Parameters:
 	 * <ul>
@@ -139,6 +142,9 @@ public enum Command {
 	 * </ul>
 	 *
 	 * <p>
+	 * If CMD_INFOs are appended, they use the CV for the CMD_INFO as for this CMD_LIST.
+	 *
+	 * <p>
 	 * Returns:
 	 * <ul>
 	 * <li> Number <var>N</var> of add-ons, <code>\n</code>
@@ -152,14 +158,19 @@ public enum Command {
 	 * <code>CMD_INFO name</code>
 	 *
 	 * <p>
-	 * Supported command versions: 1-2 (default: 4/1, 5/2)
+	 * Supported command versions: 1-3 (default: 4/1, 5/2)
 	 *
 	 * <p>
-	 * Returns detailed info about a specific addon.
+	 * Returns detailed info about a specific addon or in CV3+ a map.
+	 *
+	 * <p>
+	 * In CV3+, a map set add-on containing a single map map receive a .map response.
+	 * In this case, the category string will be changed accordingly.
+	 * For maps, the icon is the map's minimap.
 	 *
 	 * <p> Parameters:
 	 * <ol>
-	 * <li> Add-on name
+	 * <li> Add-on name (.wad) or map slug (pseudo-extension .map; only in CV3+)
 	 * </ol>
 	 *
 	 * <p>
@@ -205,6 +216,15 @@ public enum Command {
 	 *  <li> icon checksum (0 for no icon), <code>\n</code>
 	 *  <li> icon filesize (0 for no icon), <code>\n</code>
 	 *  <li> icon file as a byte stream
+	 *  <li> .map only: map file name, <code>\n</code>
+	 *  <li> .map only: unlocalized hint, <code>\n</code>
+	 *  <li> .map only: localized hint, <code>\n</code>
+	 *  <li> .map only: unlocalized uploader comment, <code>\n</code>
+	 *  <li> .map only: localized uploader comment, <code>\n</code>
+	 *  <li> .map only: map width, <code>\n</code>
+	 *  <li> .map only: map height, <code>\n</code>
+	 *  <li> .map only: number of players, <code>\n</code>
+	 *  <li> .map only: world name, <code>\n</code>
 	 *  <li> <code>ENDOFSTREAM\n</code>
 	 * </ul>
 	 */
@@ -221,11 +241,13 @@ public enum Command {
 	 *
 	 * <p> Parameters:
 	 * <ol>
-	 * <li> Add-on name
+	 * <li> Add-on or map name
 	 * </ol>
 	 *
 	 * <p>
 	 * Returns:
+	 * <ul>
+	 * <li> For add-ons:
 	 * <ul>
 	 *   <li> Integer string denoting number <var>D</var> of directories, <code>\n</code>
 	 *   <li> <var>D</var> Directory names (with full paths), each followed by <code>\n</code>
@@ -241,6 +263,13 @@ public enum Command {
 	 *     </ul>
 	 *   </ul>
 	 *   <li> <code>ENDOFSTREAM\n</code>
+	 * </ul>
+	 * <li> For maps:
+	 * <ul>
+	 *   <li> checksum, <code>\n</code>
+	 *   <li> filesize in bytes, <code>\n</code>
+	 *   <li> The content of the file as a byte stream
+	 * </ul>
 	 * </ul>
 	 */
 	CMD_DOWNLOAD,
