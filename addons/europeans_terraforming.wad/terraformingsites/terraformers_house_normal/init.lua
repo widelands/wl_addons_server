@@ -110,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:1s",
                 "callworker=dike",
                 "sleep=duration:10s",
-                "produce=gold"
+                "produce=clay"
             }
         }
     },
