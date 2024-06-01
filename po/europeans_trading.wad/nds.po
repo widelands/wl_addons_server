@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 03:09+0200\n"
+"POT-Creation-Date: 2024-06-01 03:08+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -32,12 +32,6 @@ msgid ""
 "tribes."
 msgstr ""
 "Föögt mehr Hannelshusen, Hannelslüü un Deiten to de Europäers-Volk hento."
-
-#. TRANSLATORS: This is a resource name used in lists of resources
-#: addons/europeans_trading.wad/immovables/trade_pole/init.lua:8
-msgctxt "immovable"
-msgid "Trade Pole"
-msgstr "Hannelsbahntje"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/producionsite_suppliers/smelting_works_advanced/init.lua:8
@@ -2533,3 +2527,7 @@ msgstr "Gold"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Hannelsmann"
+
+#~ msgctxt "immovable"
+#~ msgid "Trade Pole"
+#~ msgstr "Hannelsbahntje"

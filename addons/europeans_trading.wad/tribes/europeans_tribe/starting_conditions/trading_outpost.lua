@@ -2,7 +2,7 @@
 --          Trading Outpost Starting Conditions for the Europeans
 -- =======================================================================
 
-include "addons/europeans_tribe.wad/scripting/starting_conditions.lua"
+include "addons/europeans_main.wad/scripting/starting_conditions.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 

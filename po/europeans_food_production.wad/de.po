@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 03:09+0200\n"
+"POT-Creation-Date: 2024-06-01 03:08+0200\n"
 "PO-Revision-Date: 2023-09-17 07:42+0000\n"
 "Last-Translator: Iwan Gabovitch, 2023\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -30,324 +30,6 @@ msgid ""
 "Adds some additional agricultur wares, workers and buildings to Europeans "
 "tribes economy for more complexity."
 msgstr ""
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/barleyfield/harvested/init.lua:8
-msgctxt "immovable"
-msgid "Barley Field (harvested)"
-msgstr "Gerstenfeld (abgeerntet)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/barleyfield/medium/init.lua:8
-msgctxt "immovable"
-msgid "Barley Field (medium)"
-msgstr "Gerstenfeld (mittel)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/barleyfield/ripe/init.lua:8
-msgctxt "immovable"
-msgid "Barley Field (ripe)"
-msgstr "Gerstenfeld (reif)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/barleyfield/small/init.lua:8
-msgctxt "immovable"
-msgid "Barley Field (small)"
-msgstr "Gerstenfeld (klein)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/barleyfield/tiny/init.lua:8
-msgctxt "immovable"
-msgid "Barley Field (tiny)"
-msgstr "Gerstenfeld (jung)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/blueberry/medium/init.lua:9
-msgid "Blueberry Bush (medium)"
-msgstr "Blaubeerbusch (mittel)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/blueberry/ripe/init.lua:9
-msgid "Blueberry Bush (ripe)"
-msgstr "Blaubeerbusch (reif)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/blueberry/small/init.lua:9
-msgid "Blueberry Bush (small)"
-msgstr "Blaubeerbusch (klein)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/blueberry/tiny/init.lua:9
-msgid "Blueberry Bush (tiny)"
-msgstr "Blaubeerbusch (jung)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/currant_black/medium/init.lua:9
-msgid "Black Currant (medium)"
-msgstr "Schwarze Johannisbeere (mittel)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/currant_black/ripe/init.lua:9
-msgid "Black Currant (ripe)"
-msgstr "Schwarze Johannisbeere (reif)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/currant_black/small/init.lua:9
-msgid "Black Currant (small)"
-msgstr "Schwarze Johannisbeere (klein)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/currant_black/tiny/init.lua:9
-msgid "Black Currant (tiny)"
-msgstr "Schwarze Johannisbeere (jung)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/currant_red/medium/init.lua:9
-msgid "Red Currant (medium)"
-msgstr "Rote Johannisbeere (mittel)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/currant_red/ripe/init.lua:9
-msgid "Red Currant (ripe)"
-msgstr "Rote Johannisbeere (reif)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/currant_red/small/init.lua:9
-msgid "Red Currant (small)"
-msgstr "Rote Johannisbeere (klein)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/currant_red/tiny/init.lua:9
-msgid "Red Currant (tiny)"
-msgstr "Rote Johannisbeere (jung)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/desert_hackberry/medium/init.lua:9
-msgid "Desert Hackberry (medium)"
-msgstr "Wüstenzürgelbaum (mittel)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/desert_hackberry/ripe/init.lua:9
-msgid "Desert Hackberry (ripe)"
-msgstr "Wüstenzürgelbaum (reif)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/desert_hackberry/small/init.lua:9
-msgid "Desert Hackberry (small)"
-msgstr "Wüstenzürgelbaum (klein)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/desert_hackberry/tiny/init.lua:9
-msgid "Desert Hackberry (tiny)"
-msgstr "Wüstenzürgelbaum (jung)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/berry_bushes/grapevine/medium/init.lua:10
-msgctxt "immovable"
-msgid "Grapevine (medium)"
-msgstr "Weinreben (mittel)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/berry_bushes/grapevine/ripe/init.lua:10
-msgctxt "immovable"
-msgid "Grapevine (ripe)"
-msgstr "Weinreben (reif)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/berry_bushes/grapevine/small/init.lua:10
-msgctxt "immovable"
-msgid "Grapevine (small)"
-msgstr "Weinreben (klein)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/berry_bushes/grapevine/tiny/init.lua:10
-msgctxt "immovable"
-msgid "Grapevine (tiny)"
-msgstr "Weinreben (jung)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/juniper/medium/init.lua:9
-msgid "Juniper (medium)"
-msgstr "Wacholder (mittel)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/juniper/ripe/init.lua:9
-msgid "Juniper (ripe)"
-msgstr "Wacholder (reif)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/juniper/small/init.lua:9
-msgid "Juniper (small)"
-msgstr "Wacholder (klein)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/juniper/tiny/init.lua:9
-msgid "Juniper (tiny)"
-msgstr "Wacholder (jung)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/raspberry/medium/init.lua:9
-msgid "Raspberry Bush (medium)"
-msgstr "Himbeerbusch (mittel)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/raspberry/ripe/init.lua:9
-msgid "Raspberry Bush (ripe)"
-msgstr "Himbeerbusch (reif)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/raspberry/small/init.lua:9
-msgid "Raspberry Bush (small)"
-msgstr "Himbeerbusch (klein)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/raspberry/tiny/init.lua:9
-msgid "Raspberry Bush (tiny)"
-msgstr "Himbeerbusch (jung)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/sea_buckthorn/medium/init.lua:9
-msgid "Sea Buckthorn (medium)"
-msgstr "Seekreuzdorn (mittel)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/sea_buckthorn/ripe/init.lua:9
-msgid "Sea Buckthorn (ripe)"
-msgstr "Seekreuzdorn (reif)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/sea_buckthorn/small/init.lua:9
-msgid "Sea Buckthorn (small)"
-msgstr "Seekreuzdorn (klein)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/sea_buckthorn/tiny/init.lua:9
-msgid "Sea Buckthorn (tiny)"
-msgstr "Seekreuzdorn (jung)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/stink_tree/medium/init.lua:9
-msgid "Stink Shepherd’s Tree (medium)"
-msgstr "Stinkender Hirtenbaum (mittel)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/stink_tree/ripe/init.lua:9
-msgid "Stink Shepherd’s Tree (ripe)"
-msgstr "Stinkender Hirtenbaum (reif)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/stink_tree/small/init.lua:9
-msgid "Stink Shepherd’s Tree (small)"
-msgstr "Stinkender Hirtenbaum (klein)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/stink_tree/tiny/init.lua:9
-msgid "Stink Shepherd’s Tree (tiny)"
-msgstr "Stinkender Hirtenbaum (jung)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/strawberry/medium/init.lua:9
-msgid "Strawberries (medium)"
-msgstr "Erdbeerfeld (mittel)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/strawberry/ripe/init.lua:9
-msgid "Strawberries (ripe)"
-msgstr "Erdbeerfeld (reif)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/strawberry/small/init.lua:9
-msgid "Strawberries (small)"
-msgstr "Erdbeerfeld (klein)"
-
-#: addons/europeans_food_production.wad/immovables/berry_bushes/strawberry/tiny/init.lua:9
-msgid "Strawberries (tiny)"
-msgstr "Erdbeerfeld (jung)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/blackrootfield/harvested/init.lua:8
-msgctxt "immovable"
-msgid "Blackroot Field (harvested)"
-msgstr "Dunkelrübenfeld (abgeerntet)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/blackrootfield/medium/init.lua:8
-msgctxt "immovable"
-msgid "Blackroot Field (medium)"
-msgstr "Dunkelrübenfeld (mittel)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/blackrootfield/ripe/init.lua:8
-msgctxt "immovable"
-msgid "Blackroot Field (ripe)"
-msgstr "Dunkelrübenfeld (reif)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/blackrootfield/small/init.lua:8
-msgctxt "immovable"
-msgid "Blackroot Field (small)"
-msgstr "Dunkelrübenfeld (klein)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/blackrootfield/tiny/init.lua:8
-msgctxt "immovable"
-msgid "Blackroot Field (tiny)"
-msgstr "Dunkelrübenfeld (jung)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/cornfield/harvested/init.lua:8
-msgctxt "immovable"
-msgid "Cornfield (harvested)"
-msgstr "Maisfeld (abgeerntet)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/cornfield/medium/init.lua:8
-msgctxt "immovable"
-msgid "Cornfield (medium)"
-msgstr "Maisfeld (mittel)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/cornfield/ripe/init.lua:8
-msgctxt "immovable"
-msgid "Cornfield (ripe)"
-msgstr "Maisfeld (reif)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/cornfield/small/init.lua:8
-msgctxt "immovable"
-msgid "Cornfield (small)"
-msgstr "Maisfeld (klein)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/cornfield/tiny/init.lua:8
-msgctxt "immovable"
-msgid "Cornfield (tiny)"
-msgstr "Maisfeld (jung)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/ryefield/harvested/init.lua:8
-msgctxt "immovable"
-msgid "Rye Field (harvested)"
-msgstr "Roggenfeld (abgeerntet)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/ryefield/medium/init.lua:8
-msgctxt "immovable"
-msgid "Rye Field (medium)"
-msgstr "Roggenfeld (mittel)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/ryefield/ripe/init.lua:8
-msgctxt "immovable"
-msgid "Rye Field (ripe)"
-msgstr "Roggenfeld (reif)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/ryefield/small/init.lua:8
-msgctxt "immovable"
-msgid "Rye Field (small)"
-msgstr "Roggenfeld (klein)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/ryefield/tiny/init.lua:8
-msgctxt "immovable"
-msgid "Rye Field (tiny)"
-msgstr "Roggenfeld (jung)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/wheatfield/harvested/init.lua:8
-msgctxt "immovable"
-msgid "Wheat Field (harvested)"
-msgstr "Weizenfeld (abgeerntet)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/wheatfield/medium/init.lua:8
-msgctxt "immovable"
-msgid "Wheat Field (medium)"
-msgstr "Weizenfeld (mittel)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/wheatfield/ripe/init.lua:8
-msgctxt "immovable"
-msgid "Wheat Field (ripe)"
-msgstr "Weizenfeld (reif)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/wheatfield/small/init.lua:8
-msgctxt "immovable"
-msgid "Wheat Field (small)"
-msgstr "Weizenfeld (klein)"
-
-#. TRANSLATORS: This is an immovable name used in lists of immovables
-#: addons/europeans_food_production.wad/immovables/wheatfield/tiny/init.lua:8
-msgctxt "immovable"
-msgid "Wheat Field (tiny)"
-msgstr "Weizenfeld (jung)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_food_production.wad/productionsites_agricultur/animal_farm_advanced/init.lua:8
@@ -4201,3 +3883,227 @@ msgstr "Einfacher Bauer"
 msgctxt "europeans_worker"
 msgid "Normal Farmer"
 msgstr "Normaler Bauer"
+
+#~ msgctxt "immovable"
+#~ msgid "Barley Field (harvested)"
+#~ msgstr "Gerstenfeld (abgeerntet)"
+
+#~ msgctxt "immovable"
+#~ msgid "Barley Field (medium)"
+#~ msgstr "Gerstenfeld (mittel)"
+
+#~ msgctxt "immovable"
+#~ msgid "Barley Field (ripe)"
+#~ msgstr "Gerstenfeld (reif)"
+
+#~ msgctxt "immovable"
+#~ msgid "Barley Field (small)"
+#~ msgstr "Gerstenfeld (klein)"
+
+#~ msgctxt "immovable"
+#~ msgid "Barley Field (tiny)"
+#~ msgstr "Gerstenfeld (jung)"
+
+#~ msgid "Blueberry Bush (medium)"
+#~ msgstr "Blaubeerbusch (mittel)"
+
+#~ msgid "Blueberry Bush (ripe)"
+#~ msgstr "Blaubeerbusch (reif)"
+
+#~ msgid "Blueberry Bush (small)"
+#~ msgstr "Blaubeerbusch (klein)"
+
+#~ msgid "Blueberry Bush (tiny)"
+#~ msgstr "Blaubeerbusch (jung)"
+
+#~ msgid "Black Currant (medium)"
+#~ msgstr "Schwarze Johannisbeere (mittel)"
+
+#~ msgid "Black Currant (ripe)"
+#~ msgstr "Schwarze Johannisbeere (reif)"
+
+#~ msgid "Black Currant (small)"
+#~ msgstr "Schwarze Johannisbeere (klein)"
+
+#~ msgid "Black Currant (tiny)"
+#~ msgstr "Schwarze Johannisbeere (jung)"
+
+#~ msgid "Red Currant (medium)"
+#~ msgstr "Rote Johannisbeere (mittel)"
+
+#~ msgid "Red Currant (ripe)"
+#~ msgstr "Rote Johannisbeere (reif)"
+
+#~ msgid "Red Currant (small)"
+#~ msgstr "Rote Johannisbeere (klein)"
+
+#~ msgid "Red Currant (tiny)"
+#~ msgstr "Rote Johannisbeere (jung)"
+
+#~ msgid "Desert Hackberry (medium)"
+#~ msgstr "Wüstenzürgelbaum (mittel)"
+
+#~ msgid "Desert Hackberry (ripe)"
+#~ msgstr "Wüstenzürgelbaum (reif)"
+
+#~ msgid "Desert Hackberry (small)"
+#~ msgstr "Wüstenzürgelbaum (klein)"
+
+#~ msgid "Desert Hackberry (tiny)"
+#~ msgstr "Wüstenzürgelbaum (jung)"
+
+#~ msgctxt "immovable"
+#~ msgid "Grapevine (medium)"
+#~ msgstr "Weinreben (mittel)"
+
+#~ msgctxt "immovable"
+#~ msgid "Grapevine (ripe)"
+#~ msgstr "Weinreben (reif)"
+
+#~ msgctxt "immovable"
+#~ msgid "Grapevine (small)"
+#~ msgstr "Weinreben (klein)"
+
+#~ msgctxt "immovable"
+#~ msgid "Grapevine (tiny)"
+#~ msgstr "Weinreben (jung)"
+
+#~ msgid "Juniper (medium)"
+#~ msgstr "Wacholder (mittel)"
+
+#~ msgid "Juniper (ripe)"
+#~ msgstr "Wacholder (reif)"
+
+#~ msgid "Juniper (small)"
+#~ msgstr "Wacholder (klein)"
+
+#~ msgid "Juniper (tiny)"
+#~ msgstr "Wacholder (jung)"
+
+#~ msgid "Raspberry Bush (medium)"
+#~ msgstr "Himbeerbusch (mittel)"
+
+#~ msgid "Raspberry Bush (ripe)"
+#~ msgstr "Himbeerbusch (reif)"
+
+#~ msgid "Raspberry Bush (small)"
+#~ msgstr "Himbeerbusch (klein)"
+
+#~ msgid "Raspberry Bush (tiny)"
+#~ msgstr "Himbeerbusch (jung)"
+
+#~ msgid "Sea Buckthorn (medium)"
+#~ msgstr "Seekreuzdorn (mittel)"
+
+#~ msgid "Sea Buckthorn (ripe)"
+#~ msgstr "Seekreuzdorn (reif)"
+
+#~ msgid "Sea Buckthorn (small)"
+#~ msgstr "Seekreuzdorn (klein)"
+
+#~ msgid "Sea Buckthorn (tiny)"
+#~ msgstr "Seekreuzdorn (jung)"
+
+#~ msgid "Stink Shepherd’s Tree (medium)"
+#~ msgstr "Stinkender Hirtenbaum (mittel)"
+
+#~ msgid "Stink Shepherd’s Tree (ripe)"
+#~ msgstr "Stinkender Hirtenbaum (reif)"
+
+#~ msgid "Stink Shepherd’s Tree (small)"
+#~ msgstr "Stinkender Hirtenbaum (klein)"
+
+#~ msgid "Stink Shepherd’s Tree (tiny)"
+#~ msgstr "Stinkender Hirtenbaum (jung)"
+
+#~ msgid "Strawberries (medium)"
+#~ msgstr "Erdbeerfeld (mittel)"
+
+#~ msgid "Strawberries (ripe)"
+#~ msgstr "Erdbeerfeld (reif)"
+
+#~ msgid "Strawberries (small)"
+#~ msgstr "Erdbeerfeld (klein)"
+
+#~ msgid "Strawberries (tiny)"
+#~ msgstr "Erdbeerfeld (jung)"
+
+#~ msgctxt "immovable"
+#~ msgid "Blackroot Field (harvested)"
+#~ msgstr "Dunkelrübenfeld (abgeerntet)"
+
+#~ msgctxt "immovable"
+#~ msgid "Blackroot Field (medium)"
+#~ msgstr "Dunkelrübenfeld (mittel)"
+
+#~ msgctxt "immovable"
+#~ msgid "Blackroot Field (ripe)"
+#~ msgstr "Dunkelrübenfeld (reif)"
+
+#~ msgctxt "immovable"
+#~ msgid "Blackroot Field (small)"
+#~ msgstr "Dunkelrübenfeld (klein)"
+
+#~ msgctxt "immovable"
+#~ msgid "Blackroot Field (tiny)"
+#~ msgstr "Dunkelrübenfeld (jung)"
+
+#~ msgctxt "immovable"
+#~ msgid "Cornfield (harvested)"
+#~ msgstr "Maisfeld (abgeerntet)"
+
+#~ msgctxt "immovable"
+#~ msgid "Cornfield (medium)"
+#~ msgstr "Maisfeld (mittel)"
+
+#~ msgctxt "immovable"
+#~ msgid "Cornfield (ripe)"
+#~ msgstr "Maisfeld (reif)"
+
+#~ msgctxt "immovable"
+#~ msgid "Cornfield (small)"
+#~ msgstr "Maisfeld (klein)"
+
+#~ msgctxt "immovable"
+#~ msgid "Cornfield (tiny)"
+#~ msgstr "Maisfeld (jung)"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (harvested)"
+#~ msgstr "Roggenfeld (abgeerntet)"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (medium)"
+#~ msgstr "Roggenfeld (mittel)"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (ripe)"
+#~ msgstr "Roggenfeld (reif)"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (small)"
+#~ msgstr "Roggenfeld (klein)"
+
+#~ msgctxt "immovable"
+#~ msgid "Rye Field (tiny)"
+#~ msgstr "Roggenfeld (jung)"
+
+#~ msgctxt "immovable"
+#~ msgid "Wheat Field (harvested)"
+#~ msgstr "Weizenfeld (abgeerntet)"
+
+#~ msgctxt "immovable"
+#~ msgid "Wheat Field (medium)"
+#~ msgstr "Weizenfeld (mittel)"
+
+#~ msgctxt "immovable"
+#~ msgid "Wheat Field (ripe)"
+#~ msgstr "Weizenfeld (reif)"
+
+#~ msgctxt "immovable"
+#~ msgid "Wheat Field (small)"
+#~ msgstr "Weizenfeld (klein)"
+
+#~ msgctxt "immovable"
+#~ msgid "Wheat Field (tiny)"
+#~ msgstr "Weizenfeld (jung)"

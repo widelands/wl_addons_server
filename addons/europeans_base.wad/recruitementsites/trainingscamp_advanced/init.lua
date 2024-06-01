@@ -30,7 +30,7 @@ wl.Descriptions():new_productionsite_type {
 
     size = "big",
     destructible = true,
-    
+        
     aihints = {},
 
     working_positions = {
