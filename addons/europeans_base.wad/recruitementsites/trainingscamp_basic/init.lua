@@ -34,7 +34,6 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_trainingscamp_normal",
         enhancement_cost = {
             blackwood = 3,
-            cloth = 3,
             grout = 3,
             quartz = 1,
             diamond = 1
@@ -48,7 +47,6 @@ wl.Descriptions():new_productionsite_type {
     },
     buildcost = {
         log = 4,
-        reed = 4,
         granite = 4,
         quartz = 1,
         diamond = 1
@@ -108,13 +106,13 @@ wl.Descriptions():new_productionsite_type {
                 "return=failed unless site has spear_wooden",
                 "consume=europeans_recruit",
                 "consume=boots_wooden",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "consume=armor_wooden",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "consume=helmet_wooden",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "consume=spear_wooden",
-                "animate=working duration:30s",
+                "animate=working duration:20s",
                 "recruit=europeans_soldier"
             }
         },

@@ -22,7 +22,6 @@ wl.Descriptions():new_militarysite_type {
         name = "europeans_tower_high",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2,
             grout = 2,
             quartz = 1
         },
@@ -35,7 +34,6 @@ wl.Descriptions():new_militarysite_type {
     },
     buildcost = {
         log = 3,
-        reed = 3,
         granite = 3,
         quartz = 1
     },

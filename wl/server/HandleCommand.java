@@ -743,7 +743,7 @@ public class HandleCommand {
 			}
 
 			String resource = ServerUtils.toTransifexResource(cmd[1]);
-			resource = resource.substring(resource.indexOf('.') + 1);
+			// resource = resource.substring(resource.indexOf('.') + 1);
 			Utils.bash("tx", "delete", "-r", resource, "-f");
 			Utils.bash(
 			    "curl", "-g", "-H", "Authorization: Bearer " + Utils.config("transifextoken"),

@@ -23,7 +23,6 @@ wl.Descriptions():new_warehouse_type {
     
     buildcost = {
         blackwood = 4,
-        cloth = 4,
         grout = 4,
         planks = 4,
         brick = 4,

@@ -22,7 +22,6 @@ wl.Descriptions():new_militarysite_type {
         name = "europeans_tower_small",
         enhancement_cost = {
             blackwood = 1,
-            cloth = 1,
             grout = 1,
             quartz = 1
         },
@@ -34,7 +33,6 @@ wl.Descriptions():new_militarysite_type {
     },
     buildcost = {
         log = 2,
-        reed = 2,
         granite = 2,
         quartz = 1
     },

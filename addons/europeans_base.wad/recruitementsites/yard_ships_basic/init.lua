@@ -29,7 +29,6 @@ wl.Descriptions():new_productionsite_type {
         name = "europeans_shipyard_normal",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2,
             grout = 2,
             quartz = 1,
             diamond = 1
@@ -44,7 +43,6 @@ wl.Descriptions():new_productionsite_type {
         log = 3,
         blackwood = 2,
         planks = 2,
-        reed = 3,
         granite = 2,
         quartz = 1,
         diamond = 1
@@ -52,7 +50,6 @@ wl.Descriptions():new_productionsite_type {
     return_on_dismantle = {
         scrap_wood = 3,
         planks = 1,
-        reed = 1,
         granite = 1,
         quartz = 1,
         diamond = 1
@@ -72,10 +69,9 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 8 },
-        { name = "cloth", amount = 4 },
         { name = "blackwood", amount = 2 },
-        { name = "reed", amount = 2 },
-        { name = "iron", amount = 2 }
+        { name = "rubber", amount = 2 },
+        { name = "metal_alloy", amount = 2 }
     },
 
     programs = {
@@ -109,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when not site has blackwood",
                 "return=skipped when not site has planks",
-                "return=skipped when not site has cloth",
+                "return=skipped when not site has rubber",
                 "animate=working duration:30s",
                 "construct=europeans_shipconstruction worker:buildship radius:3",
             }
@@ -118,8 +114,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "callworker=check_space",
-                "return=skipped when economy needs iron",
-                "consume=iron",
+                "return=skipped when economy needs metal_alloy",
+                "consume=metal_alloy",
                 "animate=working duration:60s",
             }
         },

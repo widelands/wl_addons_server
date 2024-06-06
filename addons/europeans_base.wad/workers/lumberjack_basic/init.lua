@@ -21,8 +21,21 @@ wl.Descriptions():new_worker_type {
         check_trees = {
             "findobject=attrib:tree radius:8",
         },
+        check_rubber = {
+            "findobject=attrib:rubber_tree_mature radius:8",
+        },
         check_fields = {
             "findobject=attrib:field radius:8"
+        },
+        harvest_rubber = {
+            "findobject=attrib:rubber_tree_mature radius:8",
+            "walk=object",
+            "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
+            "animate=hack duration:2s",
+            "callobject=grow",
+            "animate=idle duration:2s",
+            "createware=rubber",
+            "return"
         },
         harvest_tree = {
             "findobject=attrib:tree radius:8",
@@ -34,7 +47,7 @@ wl.Descriptions():new_worker_type {
             "animate=idle duration:3s",
             "createware=log",
             "return"
-        }
+        },
     },
 
     animation_directory = dirname,

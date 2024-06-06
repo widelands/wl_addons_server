@@ -49,7 +49,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 6 },
-        { name = "cloth", amount = 3 },
+        { name = "rubber", amount = 3 },
     },
 
     programs = {
@@ -59,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "sleep=duration:60s",
                 "callworker=buildferry_1",
-                "consume=planks:2 cloth",
+                "consume=planks:2 rubber",
                 "callworker=buildferry_2"
             }
         },

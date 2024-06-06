@@ -19,6 +19,11 @@ wl.Descriptions():new_immovable_type{
          "transform=deadtree7 chance:12.89%",
          "seed=rubber_desert_amazons_sapling proximity:19.53%",
       },
+      grow = {
+         "animate=idle duration:25m35s",
+         "transform=deadtree7 chance:12.89%",
+         "seed=rubber_desert_amazons_sapling proximity:19.53%",
+      },
       fall = {
          "animate=fall duration:1s",
          "remove=",

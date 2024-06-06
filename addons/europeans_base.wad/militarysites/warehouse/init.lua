@@ -33,7 +33,6 @@ wl.Descriptions():new_warehouse_type {
         enhancement_cost = {
             blackwood = 2,
             planks = 2,
-            cloth = 2,
             brick = 2,
             grout = 2,
             marble = 2,
@@ -53,7 +52,6 @@ wl.Descriptions():new_warehouse_type {
     buildcost = {
         blackwood = 2,
         planks = 2,
-        cloth = 2,
         brick = 2,
         grout = 2,
         marble = 2,
@@ -72,8 +70,9 @@ wl.Descriptions():new_warehouse_type {
     aihints = {},
 
     vision_range = 12,
-    heal_per_second = 200,
+    heal_per_second = 160,
     --conquers = 6,
+    max_garrison = 16,
 }
 
 pop_textdomain()

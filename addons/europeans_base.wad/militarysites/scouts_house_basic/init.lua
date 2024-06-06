@@ -35,8 +35,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_scouts_house_normal",
         enhancement_cost = {
-            blackwood = 1,
-            cloth = 1
+            blackwood = 2
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1
@@ -45,7 +44,6 @@ wl.Descriptions():new_productionsite_type {
 
     buildcost = {
         log = 2,
-        reed = 2,
         granite = 2
     },
     return_on_dismantle = {

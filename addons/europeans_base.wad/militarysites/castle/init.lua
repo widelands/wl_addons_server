@@ -22,7 +22,6 @@ wl.Descriptions():new_militarysite_type {
         name = "europeans_fortress",
         enhancement_cost = {
             blackwood = 3,
-            cloth = 3,
             grout = 3,
             quartz = 1
         },
@@ -35,7 +34,6 @@ wl.Descriptions():new_militarysite_type {
 
     buildcost = {
         log = 4,
-        reed = 4,
         granite = 4,
         quartz = 1
     },

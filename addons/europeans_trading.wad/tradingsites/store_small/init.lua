@@ -66,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "call=trade_diamond_copper",
                 "sleep=duration:10s",
-                "call=trade_iron_copper"
+                "call=trade_metal_alloy_copper"
             }
         },
         trade_granite_copper = {
@@ -113,15 +113,15 @@ wl.Descriptions():new_productionsite_type {
                 "produce=diamond",
             }
         },
-        trade_iron_copper = {
+        trade_metal_alloy_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless economy needs iron",
+                "return=skipped unless economy needs metal_alloy",
                 "return=failed unless site has coin_copper:4",
                 "consume=coin_copper:4",
                 "animate=working duration:3m",
-                "produce=iron",
+                "produce=metal_alloy",
             }
         },
     },

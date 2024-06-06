@@ -43,7 +43,7 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "coal", amount = 10 },
         { name = "ore", amount = 8 },
-        { name = "scrap_iron", amount = 4 }
+        { name = "scrap_metal", amount = 4 }
     },
 
     programs = {
@@ -51,39 +51,39 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=recycle_iron",
+                "call=recycle_metal_alloy",
                 "sleep=duration:15s",
                 "call=smelting_ore",
                 "sleep=duration:15s",
-                "call=recycle_iron",
+                "call=recycle_metal_alloy",
                 "return=skipped"
             }
         },
-        recycle_iron = {
-            -- TRANSLATORS: Completed/Skipped/Did not start recyling iron because ...
-            descname = pgettext("europeans_building", "recycling iron"),
+        recycle_metal_alloy = {
+            -- TRANSLATORS: Completed/Skipped/Did not start recyling metal_alloy because ...
+            descname = pgettext("europeans_building", "recycling metal_alloy"),
             actions = {
-                "return=skipped when economy needs gold and not economy needs iron",
-                "consume=scrap_iron:2 coal:2",
+                "return=skipped when economy needs gold and not economy needs metal_alloy",
+                "consume=scrap_metal:2 coal:2",
                 "playsound=sound/metal/fizzle priority:20% allow_multiple",
                 "animate=working duration:2m",
                 "playsound=sound/metal/ironping priority:60%",
-                "produce=iron:2"
+                "produce=metal_alloy:2"
             }
         },
         smelting_ore = {
             -- TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
             descname = pgettext("europeans_building", "smelting ore"),
             actions = {
-                "return=skipped when economy needs coal and not economy needs gold and not economy needs iron",
-                "return=skipped when site has scrap_iron:2 and economy needs ore",
+                "return=skipped when economy needs coal and not economy needs gold and not economy needs metal_alloy",
+                "return=skipped when site has scrap_metal:2 and economy needs ore",
                 "consume=ore:6 coal:6",
                 "playsound=sound/metal/fizzle priority:15% allow_multiple",
                 "animate=working duration:2m",
                 "playsound=sound/metal/ironping priority:60%",
                 "animate=working duration:2m",
                 "playsound=sound/metal/goldping priority:60%",
-                "produce=gold:3 iron:3"
+                "produce=gold:3 metal_alloy:3"
             }
         }
     },

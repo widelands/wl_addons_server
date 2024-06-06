@@ -31,7 +31,6 @@ wl.Descriptions():new_warehouse_type {
     
     buildcost = {
         blackwood = 3,
-        cloth = 3,
         grout = 3,
         planks = 3,
         brick = 3,
@@ -56,8 +55,8 @@ wl.Descriptions():new_warehouse_type {
     },
 
     vision_range = 20,
-    conquers = 6,
-    heal_per_second = 180,
+    heal_per_second = 200,
+    conquers = 8,
     max_garrison = 24,
 }
 

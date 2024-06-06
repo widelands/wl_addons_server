@@ -50,26 +50,6 @@ wl.Descriptions():new_worker_type {
             "callobject=grow",
             "return"
         },
-        harvest_rubber = {
-            "findobject=attrib:rubber_tree_mature radius:6",
-            "walk=object",
-            "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
-            "animate=sawing duration:2s",
-            "animate=idle duration:2s",
-            "createware=rubber",
-            "return"
-        },
-        harvest_tree = {
-            "findobject=attrib:tree radius:6",
-            "walk=object",
-            "playsound=sound/atlanteans/saw/sawing priority:80% allow_multiple",
-            "animate=sawing duration:2s",
-            "playsound=sound/woodcutting/tree_falling priority:100%",
-            "callobject=fall",
-            "animate=idle duration:2s",
-            "createware=log",
-            "return"
-        }
     },
 
     animation_directory = dirname,
@@ -92,13 +72,6 @@ wl.Descriptions():new_worker_type {
             rows = 4,
             columns = 3,
             hotspot = { 17, 21 }
-        },
-        sawing = {
-            fps = 10,
-            frames = 10,
-            rows = 4,
-            columns = 3,
-            hotspot = { 22, 19 }
         },
         water = {
             fps = 5,

@@ -13,6 +13,9 @@ wl.Descriptions():new_worker_type {
         check_trees = {
             "findobject=attrib:tree radius:16",
         },
+        check_rubber = {
+            "findobject=attrib:rubber_tree_mature radius:16",
+        },
         check_fields = {
             "findobject=attrib:field radius:16"
         },
@@ -21,6 +24,7 @@ wl.Descriptions():new_worker_type {
             "walk=object",
             "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
             "animate=hacking duration:1s",
+            "callobject=grow",
             "animate=idle duration:1s",
             "createware=rubber",
             "return"
