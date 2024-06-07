@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-06 03:24+0200\n"
+"POT-Creation-Date: 2024-06-07 03:14+0200\n"
 "PO-Revision-Date: 2024-05-28 08:02+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -30,6 +30,9 @@ msgid ""
 "Adds a new tribe named ‘Europeans’. It must be in front of the other addons "
 "in the addons list and must be activated for the other addons to work!"
 msgstr ""
+"Voegt een nieuwe stam toe met de naam 'Europeanen'. Het moet voor de andere "
+"addons staan in de addonslijst en moet geactiveerd zijn om de andere addons "
+"te laten werken!"
 
 #: addons/europeans_main.wad/tribes/initialization/init.lua:10
 msgid "Mark McWire"
@@ -64,7 +67,7 @@ msgstr "Water is de essentie van het leven!"
 #: addons/europeans_main.wad/tribes/initialization/units.lua:111
 msgctxt "europeans_ware"
 msgid "Water is used by by the forester."
-msgstr ""
+msgstr "Water wordt gebruikt door de boswachter."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_main.wad/tribes/initialization/units.lua:122
@@ -164,7 +167,7 @@ msgstr "Klei is nodig om bakstenen te maken."
 #: addons/europeans_main.wad/tribes/initialization/units.lua:198
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from quarry."
-msgstr ""
+msgstr "De Europeanen halen klei uit een steengroeve."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_main.wad/tribes/initialization/units.lua:209
@@ -279,7 +282,7 @@ msgstr ""
 #: addons/europeans_main.wad/tribes/initialization/units.lua:303
 msgctxt "ware"
 msgid "Mixed metal alloy is smelted out of ores."
-msgstr ""
+msgstr "Gemengde metaallegeringen worden uit ertsen gesmolten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron, part 2
 #: addons/europeans_main.wad/tribes/initialization/units.lua:305
@@ -288,6 +291,8 @@ msgid ""
 "It is produced by the smelting works. Weapons, armor and tools are made of "
 "alloy."
 msgstr ""
+"Het wordt geproduceerd door smelterijen. Wapens, pantsers en gereedschappen "
+"worden gemaakt van legering."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
 #: addons/europeans_main.wad/tribes/initialization/units.lua:315
@@ -315,7 +320,7 @@ msgstr ""
 #: addons/europeans_main.wad/tribes/initialization/units.lua:337
 msgctxt "europeans_ware"
 msgid "Big buckets for the forester and the construction of wells."
-msgstr ""
+msgstr "Grote emmers voor de boswachter en de bouw van waterputten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
@@ -769,6 +774,9 @@ msgid ""
 "When quarry dig up earth, they leave holes with water in the ground. These "
 "falls dry after a while or can be used by terraformer to produce new soil."
 msgstr ""
+"Wanneer een steengroeve aarde afgraaft, laten ze gaten met water achter in "
+"de grond. Deze vallen na een tijdje droog of kunnen door terravormers worden "
+"gebruikt om nieuwe grond te produceren."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_main.wad/tribes/initialization/units.lua:966
