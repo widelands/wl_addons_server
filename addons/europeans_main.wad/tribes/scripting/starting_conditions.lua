@@ -676,7 +676,7 @@ function doing_ai_stuff(player, increment)
         end
     end
     
-   -- Experimental actions
+    -- Experimental actions
     if (increment >= 16) then
         set_hero_advanced_militarysites(player)
         if increment % 2 == 0 then
@@ -692,5 +692,73 @@ function doing_ai_stuff(player, increment)
         start_stopped_buildings(player)
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
+    end
+end
+
+function doing_ai_stuff_seafaring(player, increment)
+    local map = wl.Game().map
+    
+    if (increment == 0) then
+        player:forbid_buildings("all")
+        player:allow_buildings{"europeans_guardhouse", "europeans_tower", "europeans_barrier", "europeans_castle", "europeans_port", }
+        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_tree_nursery_basic", }
+        player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
+    end
+    if (increment == 4) then
+        player:allow_buildings{"europeans_coalmine_basic", "europeans_ironmine_basic", "europeans_goldmine_basic", }
+        player:allow_buildings{"europeans_coalmine_level_1", "europeans_ironmine_level_1", "europeans_goldmine_level_1", }
+        player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_smelting_works_basic", }
+    end
+    if (increment == 6) then
+        player:allow_buildings{"europeans_manufactory_basic", "europeans_battlearena_basic", "europeans_trainingscamp_basic", }
+    end
+    if (increment == 8) then
+        player:allow_buildings("all")
+        player:forbid_buildings{"europeans_ferry_yard_basic", "europeans_ferry_yard_normal", "europeans_ferry_yard_advanced", }
+    end
+    
+    -- Experimental actions
+    if (increment >= 16) and (increment <= 1344) and (increment % 16 == 0) then
+        launch_expeditions(player, {
+            {
+                europeans_soldier = 2,
+                europeans_builder = 2,
+                europeans_worker_basic = 1,
+                europeans_miner_basic = 1,
+                europeans_lumberjack_basic = 1,
+                europeans_stonecutter_basic = 1,
+                europeans_forester_basic = 1,
+                europeans_trainer_basic = 1,
+                buckets = 4,
+                basket = 4,
+                log = 8,
+                granite = 8,
+                blackwood = 4,
+                grout = 4,
+                planks = 4,
+                brick = 4,
+                quartz = 4,
+                marble = 4,
+                diamond = 2,
+                marble_column = 2
+            }
+        })
+    elseif (increment >= 16) and (increment <= 1344) and (increment % 16 == 8) then
+        place_ship_random(player, 64)
+        place_port_random_ai(player)
+    elseif (increment >= 16) and (increment % 16 == 0) then
+        place_port_random_ai(player)
+    end
+    if (increment >= 32) then
+        start_stopped_buildings(player)
+        balance_player_warehouse_wares(player)
+        balance_player_warehouse_workers(player)
+        set_hero_advanced_militarysites(player)
+        if increment % 2 == 0 then
+            upgrade_random_militarysites(player)
+        end
+        if increment % 8 == 0 then
+            upgrade_random_trainingsite(player)
+        end
     end
 end

@@ -25,90 +25,83 @@ local init = {
     
     launch_expeditions(player, {
         {
-            granite = 32,
-            log = 32,
-            reed = 32,
-            blackwood = 16,
-            cloth = 16,
-            grout = 16,
-            quartz = 8,
-            buckets = 4,
-            basket = 4,
-            europeans_lumberjack_advanced = 4,
-            europeans_forester_advanced = 2,
-            europeans_stonecutter_advanced = 2,
-            europeans_worker_advanced = 6,
+            europeans_soldier = 4,
             europeans_builder = 4,
-            europeans_soldier = 4,
-        },
-        {
-            granite = 32,
-            log = 32,
-            reed = 32,
-            blackwood = 16,
-            cloth = 16,
-            grout = 16,
-            quartz = 8,
-            buckets = 4,
-            basket = 4,
-            europeans_lumberjack_advanced = 3,
-            europeans_forester_advanced = 2,
-            europeans_stonecutter_advanced = 2,
-            europeans_worker_advanced = 8,
-            europeans_builder = 3,
-            europeans_soldier = 4,
-        },
-        {
-            basket = 8,
+            europeans_worker_advanced = 2,
+            europeans_worker_normal = 2,
+            europeans_worker_basic = 2,
+            europeans_miner_basic = 2,
+            europeans_lumberjack_basic = 2,
+            europeans_stonecutter_basic = 2,
+            europeans_forester_basic = 2,
+            europeans_trainer_basic = 2,
             buckets = 8,
+            basket = 8,
+            log = 16,
+            granite = 16,
+            blackwood = 8,
+            grout = 8,
             planks = 8,
             brick = 8,
-            marble = 8,
-            marble_column = 8,
             quartz = 8,
-            diamond = 8,
-            europeans_worker_advanced = 6,
-            europeans_miner_advanced = 6,
-            europeans_trainer_advanced = 4,
+            marble = 8,
+            diamond = 4,
+            marble_column = 4
+        },
+        {
+            europeans_soldier = 4,
             europeans_builder = 4,
-            europeans_soldier = 2,
+            europeans_worker_advanced = 2,
+            europeans_worker_normal = 2,
+            europeans_worker_basic = 2,
+            europeans_miner_basic = 2,
+            europeans_lumberjack_basic = 2,
+            europeans_stonecutter_basic = 2,
+            europeans_forester_basic = 2,
+            europeans_trainer_basic = 2,
+            buckets = 8,
+            basket = 8,
+            log = 16,
+            granite = 16,
+            blackwood = 8,
+            grout = 8,
+            planks = 8,
+            brick = 8,
+            quartz = 8,
+            marble = 8,
+            diamond = 4,
+            marble_column = 4
+        },
+        {
+            europeans_soldier = 4,
+            europeans_builder = 4,
+            europeans_worker_advanced = 2,
+            europeans_worker_normal = 2,
+            europeans_worker_basic = 2,
+            europeans_miner_basic = 2,
+            europeans_lumberjack_basic = 2,
+            europeans_stonecutter_basic = 2,
+            europeans_forester_basic = 2,
+            europeans_trainer_basic = 2,
+            buckets = 8,
+            basket = 8,
+            log = 16,
+            granite = 16,
+            blackwood = 8,
+            grout = 8,
+            planks = 8,
+            brick = 8,
+            quartz = 8,
+            marble = 8,
+            diamond = 4,
+            marble_column = 4
         },
     })
     
     -- Delay of 15 min between actions
     local time_min = 15
     for i = 0, 2688 do
-        doing_ai_stuff (player, i)
-        
-        if (i > 16) and (i <= 1344) and (i % 24 == 0) then
-            launch_expeditions(player, {
-                {
-                     log = 8,
-                     reed = 8,
-                     granite = 8,
-                     blackwood = 8,
-                     cloth = 8,
-                     grout = 8,
-                     quartz = 4,
-                     planks = 4,
-                     brick = 4,
-                     marble = 4,
-                     marble_column = 4,
-                     diamond = 4,
-                     europeans_lumberjack_basic = 2,
-                     europeans_forester_basic = 1,
-                     europeans_stonecutter_basic = 1,
-                     europeans_miner_basic = 2,
-                     europeans_worker_basic = 3,
-                     europeans_trainer_basic = 2,
-                     europeans_builder = 3,
-                     europeans_soldier = 8
-                }
-            })
-        elseif (i > 16) and (i <= 1344) and (i % 24 == 12) then
-            place_ship_random(player, 64)
-        end
-        
+        doing_ai_stuff_seafaring (player, i)        
         sleep(time_min * 60000)
     end
     reset_player_warehouse_policy(player)

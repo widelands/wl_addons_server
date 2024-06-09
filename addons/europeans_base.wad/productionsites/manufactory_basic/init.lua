@@ -202,8 +202,30 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start processing rubber for input wares because ...
             descname = pgettext("europeans_building", "processing rubber to create armor and boots"),
             actions = {
+                "call=producing_armor",
                 "call=producing_armor_processed",
                 "call=producing_boots_sturdy",
+            }
+        },
+        producing_armor = {
+            -- TRANSLATORS: Completed/Skipped/Did not start tailoring basic armor because ...
+            descname = pgettext("europeans_building", "tailoring basic armor"),
+            actions = {
+                "return=skipped when economy needs rubber and not economy needs armor",
+                "return=skipped when economy needs armor_processed and not economy needs armor",
+                "return=skipped when economy needs boots_sturdy and not economy needs armor",
+                "return=skipped when economy needs basket and not economy needs armor",
+                "return=skipped when economy needs buckets and not economy needs armor",
+                "return=skipped when economy needs felling_ax and not economy needs armor",
+                "return=skipped when economy needs hammer and not economy needs armor",
+                "return=skipped when economy needs pick and not economy needs armor",
+                "return=skipped when economy needs saw and not economy needs armor",
+                "return=skipped when economy needs scythe and not economy needs armor",
+                "return=skipped when economy needs shovel and not economy needs armor",
+                "consume=rubber:2",
+                "playsound=sound/barbarians/weaver priority:90%",
+                "animate=working duration:6m",
+                "produce=armor:2"
             }
         },
         producing_armor_processed = {
@@ -211,6 +233,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "tailoring processed armor"),
             actions = {
                 "return=skipped when economy needs rubber and not economy needs armor_processed",
+                "return=skipped when economy needs armor and not economy needs armor_processed",
                 "return=skipped when economy needs boots_sturdy and not economy needs armor_processed",
                 "return=skipped when economy needs basket and not economy needs armor_processed",
                 "return=skipped when economy needs buckets and not economy needs armor_processed",
@@ -232,6 +255,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs log and not economy needs boots_sturdy",
                 "return=skipped when economy needs rubber and not economy needs boots_sturdy",
+                "return=skipped when economy needs armor and not economy needs boots_sturdy",
                 "return=skipped when economy needs armor_processed and not economy needs boots_sturdy",
                 "return=skipped when economy needs basket and not economy needs boots_sturdy",
                 "return=skipped when economy needs buckets and not economy needs boots_sturdy",
