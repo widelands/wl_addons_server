@@ -906,18 +906,31 @@ public class HandleCommand {
 			File tempDir = Files.createTempDirectory(null).toFile();
 
 			try {
-				ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
+				long maxFilesize = 200 * 1000 * 1000;
+				long maxFiles = 1000;
+				long maxDirs = 1000;
+				long minUploadInterval = 60 * 60 * 24 * 3;
+				ResultSet sql = Utils.sql(Utils.Databases.kAddOns, "select filesize,nrfiles,nrdirs,upload_interval from upload_override where name=?", cmd[1]);
+				if (sql.next()) {
+					long val;
+					val = sql.getLong("filesize"       ); if (!sql.wasNull()) maxFilesize = val;
+					val = sql.getLong("nrfiles"        ); if (!sql.wasNull()) maxFiles = val;
+					val = sql.getLong("nrdirs"         ); if (!sql.wasNull()) maxDirs = val;
+					val = sql.getLong("upload_interval"); if (!sql.wasNull()) minUploadInterval = val;
+				}
+
+				sql = Utils.sql(Utils.Databases.kAddOns,
 				                          "select edit_timestamp from addons where name=?", cmd[1]);
-				if (sql.next() && timestamp - sql.getLong("edit_timestamp") < 60 * 60 * 24 * 3) {
+				if (sql.next() && timestamp - sql.getLong("edit_timestamp") < minUploadInterval) {
 					throw new ServerUtils.WLProtocolException(
 					    "Please do not upload updates for an add-on more often than every three days. "
 					    + "In urgent cases please contact the Widelands Development Team.");
 				}
 
 				if (commandVersion == 1) {
-					doHandleCmdSubmit_V1(tempDir);
+					doHandleCmdSubmit_V1(tempDir, maxFilesize, maxFiles, maxDirs);
 				} else {
-					doHandleCmdSubmit_New(tempDir);
+					doHandleCmdSubmit_New(tempDir, maxFilesize, maxFiles, maxDirs);
 				}
 
 				File addOnDir = new File("addons", cmd[1]);
@@ -1071,11 +1084,11 @@ public class HandleCommand {
 	 * @param tempDir The directory in which to assemble the add-on.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	private void doHandleCmdSubmit_V1(File tempDir) throws Exception {
+	private void doHandleCmdSubmit_V1(File tempDir, long maxFilesize, long maxFiles, long maxDirs) throws Exception {
 		final int nrDirs = Integer.valueOf(ServerUtils.readLine(in));
-		if (nrDirs < 0 || nrDirs > 1000)
+		if (nrDirs < 0 || nrDirs > maxDirs)
 			throw new ServerUtils.WLProtocolException(
-			    "Directory count limit of 1000 exceeded. "
+			    "Directory count limit of " + maxDirs + " exceeded. "
 			    + "If you really want to submit such a large add-on, "
 			    + "please contact the Widelands Development Team.");
 		File[] dirnames = new File[nrDirs];
@@ -1089,9 +1102,9 @@ public class HandleCommand {
 		long totalSize = 0;
 		for (int i = 0; i < nrDirs; ++i) {
 			final int nrFiles = Integer.valueOf(ServerUtils.readLine(in));
-			if (nrFiles < 0 || nrFiles > 1000)
+			if (nrFiles < 0 || nrFiles > maxFiles)
 				throw new ServerUtils.WLProtocolException(
-				    "File count limit of 1000 exceeded. "
+				    "File count limit of " + maxFiles + " exceeded. "
 				    + "If you really want to submit such a large add-on, "
 				    + "please contact the Widelands Development Team.");
 			for (int j = 0; j < nrFiles; ++j) {
@@ -1100,7 +1113,7 @@ public class HandleCommand {
 				final String checksum = ServerUtils.readLine(in);
 				final long size = Long.valueOf(ServerUtils.readLine(in));
 				totalSize += size;
-				if (totalSize < 0 || totalSize > 200 * 1000 * 1000)
+				if (totalSize < 0 || totalSize > maxFilesize)
 					throw new ServerUtils.WLProtocolException(
 					    "Filesize limit of 200 MB exceeded. "
 					    + "If you really want to submit such a large add-on, "
@@ -1167,13 +1180,13 @@ public class HandleCommand {
 	 * @param tempDir The directory in which to assemble the add-on.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	private void doHandleCmdSubmit_New(File tempDir) throws Exception {
+	private void doHandleCmdSubmit_New(File tempDir, long maxFilesize, long maxFiles, long maxDirs) throws Exception {
 		// Phase 1: The client tells us what he wants to send.
 
 		final int nrDirs = Integer.valueOf(ServerUtils.readLine(in));
-		if (nrDirs < 0 || nrDirs > 1000)
+		if (nrDirs < 0 || nrDirs > maxDirs)
 			throw new ServerUtils.WLProtocolException(
-			    "Directory count limit of 1000 exceeded. "
+			    "Directory count limit of " + maxDirs + " exceeded. "
 			    + "If you really want to submit such a large add-on, "
 			    + "please contact the Widelands Development Team.");
 
@@ -1185,9 +1198,9 @@ public class HandleCommand {
 			dirname = ServerUtils.sanitizeName(dirname, true);
 
 			final int nrFiles = Integer.valueOf(ServerUtils.readLine(in));
-			if (nrFiles < 0 || nrFiles > 1000)
+			if (nrFiles < 0 || nrFiles > maxFiles)
 				throw new ServerUtils.WLProtocolException(
-				    "File count limit of 1000 exceeded. "
+				    "File count limit of " + maxFiles + " exceeded. "
 				    + "If you really want to submit such a large add-on, "
 				    + "please contact the Widelands Development Team.");
 
@@ -1198,7 +1211,7 @@ public class HandleCommand {
 
 				final long size = Long.valueOf(ServerUtils.readLine(in));
 				totalSize += size;
-				if (totalSize < 0 || totalSize > 200 * 1000 * 1000)
+				if (totalSize < 0 || totalSize > maxFilesize)
 					throw new ServerUtils.WLProtocolException(
 					    "Filesize limit of 200 MB exceeded. "
 					    + "If you really want to submit such a large add-on, "
