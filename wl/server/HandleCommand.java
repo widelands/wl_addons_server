@@ -910,17 +910,24 @@ public class HandleCommand {
 				long maxFiles = 1000;
 				long maxDirs = 1000;
 				long minUploadInterval = 60 * 60 * 24 * 3;
-				ResultSet sql = Utils.sql(Utils.Databases.kAddOns, "select filesize,nrfiles,nrdirs,upload_interval from upload_override where name=?", cmd[1]);
+				ResultSet sql = Utils.sql(
+				    Utils.Databases.kAddOns,
+				    "select filesize,nrfiles,nrdirs,upload_interval from upload_override where name=?",
+				    cmd[1]);
 				if (sql.next()) {
 					long val;
-					val = sql.getLong("filesize"       ); if (!sql.wasNull()) maxFilesize = val;
-					val = sql.getLong("nrfiles"        ); if (!sql.wasNull()) maxFiles = val;
-					val = sql.getLong("nrdirs"         ); if (!sql.wasNull()) maxDirs = val;
-					val = sql.getLong("upload_interval"); if (!sql.wasNull()) minUploadInterval = val;
+					val = sql.getLong("filesize");
+					if (!sql.wasNull()) maxFilesize = val;
+					val = sql.getLong("nrfiles");
+					if (!sql.wasNull()) maxFiles = val;
+					val = sql.getLong("nrdirs");
+					if (!sql.wasNull()) maxDirs = val;
+					val = sql.getLong("upload_interval");
+					if (!sql.wasNull()) minUploadInterval = val;
 				}
 
 				sql = Utils.sql(Utils.Databases.kAddOns,
-				                          "select edit_timestamp from addons where name=?", cmd[1]);
+				                "select edit_timestamp from addons where name=?", cmd[1]);
 				if (sql.next() && timestamp - sql.getLong("edit_timestamp") < minUploadInterval) {
 					throw new ServerUtils.WLProtocolException(
 					    "Please do not upload updates for an add-on more often than every three days. "
@@ -1084,7 +1091,8 @@ public class HandleCommand {
 	 * @param tempDir The directory in which to assemble the add-on.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	private void doHandleCmdSubmit_V1(File tempDir, long maxFilesize, long maxFiles, long maxDirs) throws Exception {
+	private void doHandleCmdSubmit_V1(File tempDir, long maxFilesize, long maxFiles, long maxDirs)
+	    throws Exception {
 		final int nrDirs = Integer.valueOf(ServerUtils.readLine(in));
 		if (nrDirs < 0 || nrDirs > maxDirs)
 			throw new ServerUtils.WLProtocolException(
@@ -1180,7 +1188,8 @@ public class HandleCommand {
 	 * @param tempDir The directory in which to assemble the add-on.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
-	private void doHandleCmdSubmit_New(File tempDir, long maxFilesize, long maxFiles, long maxDirs) throws Exception {
+	private void doHandleCmdSubmit_New(File tempDir, long maxFilesize, long maxFiles, long maxDirs)
+	    throws Exception {
 		// Phase 1: The client tells us what he wants to send.
 
 		final int nrDirs = Integer.valueOf(ServerUtils.readLine(in));
