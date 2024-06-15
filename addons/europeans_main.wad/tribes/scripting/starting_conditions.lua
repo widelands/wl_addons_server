@@ -709,11 +709,13 @@ function doing_ai_stuff_seafaring(player, increment)
         player:allow_buildings{"europeans_coalmine_level_1", "europeans_ironmine_level_1", "europeans_goldmine_level_1", }
         player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_smelting_works_basic", }
     end
-    if (increment == 6) then
+    if (increment == 8) then
         player:allow_buildings{"europeans_manufactory_basic", "europeans_battlearena_basic", "europeans_trainingscamp_basic", }
     end
-    if (increment == 8) then
+    if (increment == 16) then
         player:allow_buildings("all")
+        player:forbid_buildings{"europeans_warehouse", "europeans_headquarters", }
+        player:forbid_buildings{"europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced", }
         player:forbid_buildings{"europeans_ferry_yard_basic", "europeans_ferry_yard_normal", "europeans_ferry_yard_advanced", }
     end
     
@@ -721,26 +723,13 @@ function doing_ai_stuff_seafaring(player, increment)
     if (increment >= 16) and (increment <= 1344) and (increment % 16 == 0) then
         launch_expeditions(player, {
             {
-                europeans_soldier = 2,
-                europeans_builder = 2,
-                europeans_worker_basic = 1,
-                europeans_miner_basic = 1,
-                europeans_lumberjack_basic = 1,
-                europeans_stonecutter_basic = 1,
-                europeans_forester_basic = 1,
-                europeans_trainer_basic = 1,
-                buckets = 4,
-                basket = 4,
-                log = 8,
-                granite = 8,
-                blackwood = 4,
-                grout = 4,
-                planks = 4,
-                brick = 4,
-                quartz = 4,
-                marble = 4,
-                diamond = 2,
-                marble_column = 2
+                europeans_soldier = 8,
+                europeans_builder = 6,
+                europeans_worker_basic = 4,
+                europeans_lumberjack_basic = 4,
+                europeans_stonecutter_basic = 4,
+                europeans_forester_basic = 4,
+                europeans_trainer_basic = 2,
             }
         })
     elseif (increment >= 16) and (increment <= 1344) and (increment % 16 == 8) then
@@ -750,6 +739,7 @@ function doing_ai_stuff_seafaring(player, increment)
         place_port_random_ai(player)
     end
     if (increment >= 32) then
+        player:allow_buildings{"europeans_shipyard_basic", "europeans_shipyard_normal", "europeans_shipyard_advanced", }
         start_stopped_buildings(player)
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)

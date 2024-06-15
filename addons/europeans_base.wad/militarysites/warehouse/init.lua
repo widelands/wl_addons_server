@@ -69,7 +69,7 @@ wl.Descriptions():new_warehouse_type {
     
     aihints = {},
 
-    vision_range = 12,
+    vision_range = 10,
     heal_per_second = 160,
     --conquers = 6,
     max_garrison = 16,

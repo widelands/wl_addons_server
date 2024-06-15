@@ -54,7 +54,7 @@ wl.Descriptions():new_warehouse_type {
        normal_ai_limit = 16,
     },
 
-    vision_range = 20,
+    vision_range = 10,
     heal_per_second = 200,
     conquers = 8,
     max_garrison = 24,

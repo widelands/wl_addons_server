@@ -22,7 +22,7 @@ wl.Descriptions():new_trainingsite_type {
     destructible = true,
 
     aihints = {
-        trainingsites_max_percent = 45,
+        trainingsites_max_percent = 33,
     },
 
     working_positions = {
@@ -208,7 +208,7 @@ wl.Descriptions():new_trainingsite_type {
     },
     
     soldier_capacity = 12,
-    trainer_patience = 48,
+    trainer_patience = 40,
     
     messages = {
         -- TRANSLATORS: Empire training site tooltip when it has no soldiers assigned

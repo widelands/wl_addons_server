@@ -13,10 +13,7 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_miner_normal",
     
     buildcost = {
-        europeans_carrier = 1,
-        pick = 1,
-        shovel = 1,
-        buckets = 1
+        europeans_stonecutter_basic = 1
     },
 
     animation_directory = dirname,

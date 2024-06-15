@@ -1855,6 +1855,33 @@ wl.Descriptions():new_tribe {
             }
         },
         {
+            name = "europeans_super_tower",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Tower
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
+            name = "europeans_ultra_tower",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Tower
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
+            name = "europeans_hyper_tower",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: Tower
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Tower
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
             name = "europeans_castle",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Castle

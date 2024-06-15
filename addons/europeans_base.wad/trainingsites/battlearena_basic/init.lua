@@ -69,7 +69,7 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     aihints = {
-        trainingsites_max_percent = 45,
+        trainingsites_max_percent = 33,
         very_weak_ai_limit = 1,
         weak_ai_limit = 4,
         --normal_ai_limit = 4,
@@ -150,8 +150,8 @@ wl.Descriptions():new_trainingsite_type {
         },
     },
     
-    soldier_capacity = 12,
-    trainer_patience = 12,
+    soldier_capacity = 4,
+    trainer_patience = 16,
     
     messages = {
         -- TRANSLATORS: Empire training site tooltip when it has no soldiers assigned

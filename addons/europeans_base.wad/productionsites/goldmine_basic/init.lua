@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
                 "call=mine_stone_basic",
-                "return=skipped when economy needs coal",
+                "return=skipped when economy needs coal and not economy needs granite",
                 "return=skipped unless site has log:3",
                 "consume=log",
                 "call=mine_stone",

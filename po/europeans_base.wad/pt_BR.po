@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-09 03:08+0200\n"
+"POT-Creation-Date: 2024-06-15 03:08+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/widelands/"
 "teams/35159/pt_BR/)\n"
@@ -514,333 +514,225 @@ msgid "Wheat Field (tiny)"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/advanced_barrier/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Barrier"
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/advanced_barrier/init.lua:34
-msgctxt "europeans_building"
-msgid "Your soldiers have occupied your advanced barrier."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/advanced_barrier/init.lua:36
-msgctxt "europeans_building"
-msgid "Your advanced barrier discovered an aggressor."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/advanced_barrier/init.lua:38
-msgctxt "europeans_building"
-msgid "Your advanced barrier is under attack."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/advanced_barrier/init.lua:40
-msgctxt "europeans_building"
-msgid "The enemy defeated your soldiers at the advanced barrier."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/advanced_barrier/init.lua:42
-msgctxt "europeans_building"
-msgid "Your soldiers defeated the enemy at the advanced barrier."
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/advanced_castle/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Castle"
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_castle/init.lua:34
-msgctxt "europeans_building"
-msgid "Your soldiers have occupied your advanced castle."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_castle/init.lua:36
-msgctxt "europeans_building"
-msgid "Your advanced castle discovered an aggressor."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_castle/init.lua:38
-msgctxt "europeans_building"
-msgid "Your advanced castle is under attack."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_castle/init.lua:40
-msgctxt "europeans_building"
-msgid "The enemy defeated your soldiers at the advanced castle."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_castle/init.lua:42
-msgctxt "europeans_building"
-msgid "Your soldiers defeated the enemy at the advanced castle."
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/advanced_sentry/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Sentry"
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_sentry/init.lua:34
-msgctxt "europeans_building"
-msgid "Your soldiers have occupied your sentry."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_sentry/init.lua:36
-msgctxt "europeans_building"
-msgid "Your sentry discovered an aggressor."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_sentry/init.lua:38
-msgctxt "europeans_building"
-msgid "Your sentry is under attack."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_sentry/init.lua:40
-msgctxt "europeans_building"
-msgid "The enemy defeated your soldiers at the sentry."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_sentry/init.lua:42
-msgctxt "europeans_building"
-msgid "Your soldiers defeated the enemy at the sentry."
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/advanced_tower/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Tower"
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_tower/init.lua:40
-msgctxt "europeans_building"
-msgid "Your soldiers have occupied your advanced tower."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_tower/init.lua:42
-msgctxt "europeans_building"
-msgid "Your advanced tower discovered an aggressor."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_tower/init.lua:44
-msgctxt "europeans_building"
-msgid "Your advanced tower is under attack."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_tower/init.lua:46
-msgctxt "europeans_building"
-msgid "The enemy defeated your soldiers at the advanced tower."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/advanced_tower/init.lua:48
-msgctxt "europeans_building"
-msgid "Your soldiers defeated the enemy at the advanced tower."
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/barrier/init.lua:8
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Barrier"
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier/init.lua:71
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:71
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your barrier."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier/init.lua:73
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:73
 msgctxt "europeans_building"
 msgid "Your barrier discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier/init.lua:75
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:75
 msgctxt "europeans_building"
 msgid "Your barrier is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier/init.lua:77
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:77
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the barrier."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier/init.lua:79
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:79
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the barrier."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/castle/init.lua:8
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Outpost"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:50
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your outpost."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:52
+msgctxt "europeans_building"
+msgid "Your outpost discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:54
+msgctxt "europeans_building"
+msgid "Your outpost is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:56
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the outpost."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:58
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the outpost."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Barrier"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:34
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your advanced barrier."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:36
+msgctxt "europeans_building"
+msgid "Your advanced barrier discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:38
+msgctxt "europeans_building"
+msgid "Your advanced barrier is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:40
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the advanced barrier."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:42
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the advanced barrier."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Castle"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/castle/init.lua:60
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:60
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your castle."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/castle/init.lua:62
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:62
 msgctxt "europeans_building"
 msgid "Your castle discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/castle/init.lua:64
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:64
 msgctxt "europeans_building"
 msgid "Your castle is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/castle/init.lua:66
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:66
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the castle."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/castle/init.lua:68
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:68
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the castle."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/fortress/init.lua:8
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Fortress"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/fortress/init.lua:56
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:56
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your fortress."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/fortress/init.lua:58
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:58
 msgctxt "europeans_building"
 msgid "Your fortress discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/fortress/init.lua:60
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:60
 msgctxt "europeans_building"
 msgid "Your fortress is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/fortress/init.lua:62
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:62
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the fortress."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/fortress/init.lua:64
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:64
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the fortress."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/guardhouse/init.lua:8
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:8
 msgctxt "europeans_building"
-msgid "Guardhouse"
+msgid "Advanced Castle"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/guardhouse/init.lua:58
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:34
 msgctxt "europeans_building"
-msgid "Your soldiers have occupied your guardhouse."
+msgid "Your soldiers have occupied your advanced castle."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/guardhouse/init.lua:60
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:36
 msgctxt "europeans_building"
-msgid "Your guardhouse discovered an aggressor."
+msgid "Your advanced castle discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/guardhouse/init.lua:62
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:38
 msgctxt "europeans_building"
-msgid "Your guardhouse is under attack."
+msgid "Your advanced castle is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/guardhouse/init.lua:64
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:40
 msgctxt "europeans_building"
-msgid "The enemy defeated your soldiers at the guardhouse."
+msgid "The enemy defeated your soldiers at the advanced castle."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/guardhouse/init.lua:66
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:42
 msgctxt "europeans_building"
-msgid "Your soldiers defeated the enemy at the guardhouse."
+msgid "Your soldiers defeated the enemy at the advanced castle."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/headquarters/init.lua:8
 msgctxt "europeans_building"
 msgid "Headquarters"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/outpost/init.lua:8
-msgctxt "europeans_building"
-msgid "Outpost"
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/outpost/init.lua:50
-msgctxt "europeans_building"
-msgid "Your soldiers have occupied your outpost."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/outpost/init.lua:52
-msgctxt "europeans_building"
-msgid "Your outpost discovered an aggressor."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/outpost/init.lua:54
-msgctxt "europeans_building"
-msgid "Your outpost is under attack."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/outpost/init.lua:56
-msgctxt "europeans_building"
-msgid "The enemy defeated your soldiers at the outpost."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/outpost/init.lua:58
-msgctxt "europeans_building"
-msgid "Your soldiers defeated the enemy at the outpost."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -883,111 +775,252 @@ msgid "Normal Scout’s House"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/tower/init.lua:8
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:8
 msgctxt "europeans_building"
-msgid "Medium Tower"
+msgid "Guardhouse"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower/init.lua:59
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:58
 msgctxt "europeans_building"
-msgid "Your soldiers have occupied your medium tower."
+msgid "Your soldiers have occupied your guardhouse."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower/init.lua:61
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:60
 msgctxt "europeans_building"
-msgid "Your medium tower discovered an aggressor."
+msgid "Your guardhouse discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower/init.lua:63
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:62
 msgctxt "europeans_building"
-msgid "Your medium tower is under attack."
+msgid "Your guardhouse is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower/init.lua:65
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:64
 msgctxt "europeans_building"
-msgid "The enemy defeated your soldiers at the medium tower."
+msgid "The enemy defeated your soldiers at the guardhouse."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower/init.lua:67
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:66
 msgctxt "europeans_building"
-msgid "Your soldiers defeated the enemy at the medium tower."
+msgid "Your soldiers defeated the enemy at the guardhouse."
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/tower_high/init.lua:8
-msgctxt "europeans_building"
-msgid "High Tower"
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_high/init.lua:47
-msgctxt "europeans_building"
-msgid "Your soldiers have occupied your high tower."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_high/init.lua:49
-msgctxt "europeans_building"
-msgid "Your high tower discovered an aggressor."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_high/init.lua:51
-msgctxt "europeans_building"
-msgid "Your high tower is under attack."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_high/init.lua:53
-msgctxt "europeans_building"
-msgid "The enemy defeated your soldiers at the high tower."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_high/init.lua:55
-msgctxt "europeans_building"
-msgid "Your soldiers defeated the enemy at the high tower."
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/tower_small/init.lua:8
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Small Tower"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_small/init.lua:47
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your small tower."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_small/init.lua:49
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:49
 msgctxt "europeans_building"
 msgid "Your small tower discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_small/init.lua:51
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:51
 msgctxt "europeans_building"
 msgid "Your small tower is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_small/init.lua:53
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the small tower."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/tower_small/init.lua:55
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the small tower."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Sentry"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:34
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your sentry."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:36
+msgctxt "europeans_building"
+msgid "Your sentry discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:38
+msgctxt "europeans_building"
+msgid "Your sentry is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:40
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the sentry."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:42
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the sentry."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Medium Tower"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:59
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your medium tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:61
+msgctxt "europeans_building"
+msgid "Your medium tower discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:63
+msgctxt "europeans_building"
+msgid "Your medium tower is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:65
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the medium tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:67
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the medium tower."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "High Tower"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:47
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your high tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:49
+msgctxt "europeans_building"
+msgid "Your high tower discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:51
+msgctxt "europeans_building"
+msgid "Your high tower is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:53
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the high tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:55
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the high tower."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Tower"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:40
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:56
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:56
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:40
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your advanced tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:42
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:58
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:58
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:42
+msgctxt "europeans_building"
+msgid "Your advanced tower discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:44
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:60
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:60
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:44
+msgctxt "europeans_building"
+msgid "Your advanced tower is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:46
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:62
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:62
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:46
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the advanced tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:48
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:64
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:64
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:48
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the advanced tower."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Super Tower"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Ultra Tower"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:8
+msgctxt "europeans_building"
+msgid "Hyper Tower"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
@@ -2132,145 +2165,655 @@ msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:123
 msgctxt "shipname"
-msgid "Aphrodite"
+msgid "Achlys"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:124
 msgctxt "shipname"
-msgid "Apollo"
+msgid "Aether"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:125
 msgctxt "shipname"
-msgid "Ares"
+msgid "Aion"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:126
 msgctxt "shipname"
-msgid "Artemis"
+msgid "Alcyoneus"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:127
 msgctxt "shipname"
-msgid "Athena"
+msgid "Aloadae"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:128
 msgctxt "shipname"
-msgid "Ceres"
+msgid "Ananke"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:129
 msgctxt "shipname"
-msgid "Demeter"
+msgid "Anax"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:130
 msgctxt "shipname"
-msgid "Dionysus"
+msgid "Antaeus"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:131
 msgctxt "shipname"
-msgid "Europa"
+msgid "Antiphates"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:132
 msgctxt "shipname"
-msgid "Freyr"
+msgid "Anytos"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:133
 msgctxt "shipname"
-msgid "Gaia"
+msgid "Aphrodite"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:134
 msgctxt "shipname"
-msgid "Hades"
+msgid "Apollo"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:135
 msgctxt "shipname"
-msgid "Hephaestus"
+msgid "Ares"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:136
 msgctxt "shipname"
-msgid "Hera"
+msgid "Argus"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:137
 msgctxt "shipname"
-msgid "Hermes"
+msgid "Artemis"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:138
 msgctxt "shipname"
-msgid "Hestia"
+msgid "Asteria"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:139
 msgctxt "shipname"
-msgid "Jupiter"
+msgid "Asterius"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:140
 msgctxt "shipname"
-msgid "Mars"
+msgid "Astraeus"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:141
 msgctxt "shipname"
-msgid "Mercury"
+msgid "Athena"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:142
 msgctxt "shipname"
-msgid "Neptune"
+msgid "Atlas"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:143
 msgctxt "shipname"
-msgid "Odin"
+msgid "Bacchus"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:144
 msgctxt "shipname"
-msgid "Persephone"
+msgid "Bellona"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:145
 msgctxt "shipname"
-msgid "Poseidon"
+msgid "Bona Dea"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:146
 msgctxt "shipname"
-msgid "Prometheus"
+msgid "Cacus"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:147
 msgctxt "shipname"
-msgid "Saturn"
+msgid "Callisto"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:148
 msgctxt "shipname"
-msgid "Thor"
+msgid "Carmentis"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:149
 msgctxt "shipname"
-msgid "Uranus"
+msgid "Ceres"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:150
 msgctxt "shipname"
-msgid "Venus"
+msgid "Chaos"
 msgstr ""
 
 #: addons/europeans_base.wad/ships/europeans/init.lua:151
+msgctxt "shipname"
+msgid "Charon"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:152
+msgctxt "shipname"
+msgid "Chronos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:153
+msgctxt "shipname"
+msgid "Chthonius"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:154
+msgctxt "shipname"
+msgid "Coeus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:155
+msgctxt "shipname"
+msgid "Crius"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:156
+msgctxt "shipname"
+msgid "Cronus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:157
+msgctxt "shipname"
+msgid "Cyclopes"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:158
+msgctxt "shipname"
+msgid "Damysus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:159
+msgctxt "shipname"
+msgid "Demeter"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:160
+msgctxt "shipname"
+msgid "Diana"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:161
+msgctxt "shipname"
+msgid "Dione"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:162
+msgctxt "shipname"
+msgid "Dionysus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:163
+msgctxt "shipname"
+msgid "Enceladus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:164
+msgctxt "shipname"
+msgid "Eos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:165
+msgctxt "shipname"
+msgid "Epimetheus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:166
+msgctxt "shipname"
+msgid "Erebus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:167
+msgctxt "shipname"
+msgid "Eros"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:168
+msgctxt "shipname"
+msgid "Europa"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:169
+msgctxt "shipname"
+msgid "Falacer"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:170
+msgctxt "shipname"
+msgid "Fauna"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:171
+msgctxt "shipname"
+msgid "Flora"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:172
+msgctxt "shipname"
+msgid "Fortuna"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:173
+msgctxt "shipname"
+msgid "Freyr"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:174
+msgctxt "shipname"
+msgid "Furrina"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:175
+msgctxt "shipname"
+msgid "Gaia"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:176
+msgctxt "shipname"
+msgid "Ganymede"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:177
+msgctxt "shipname"
+msgid "Gegenees"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:178
+msgctxt "shipname"
+msgid "Genius"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:179
+msgctxt "shipname"
+msgid "Geryon"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:180
+msgctxt "shipname"
+msgid "Hades"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:181
+msgctxt "shipname"
+msgid "Helios"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:182
+msgctxt "shipname"
+msgid "Hemera"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:183
+msgctxt "shipname"
+msgid "Hephaestus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:184
+msgctxt "shipname"
+msgid "Hera"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:185
+msgctxt "shipname"
+msgid "Hermes"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:186
+msgctxt "shipname"
+msgid "Hestia"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:187
+msgctxt "shipname"
+msgid "Hyperion"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:188
+msgctxt "shipname"
+msgid "Iapetus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:189
+msgctxt "shipname"
+msgid "Io"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:190
+msgctxt "shipname"
+msgid "Janus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:191
+msgctxt "shipname"
+msgid "Juno"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:192
+msgctxt "shipname"
+msgid "Jupiter"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:193
+msgctxt "shipname"
+msgid "Lelantos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:194
+msgctxt "shipname"
+msgid "Leto"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:195
+msgctxt "shipname"
+msgid "Liber"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:196
+msgctxt "shipname"
+msgid "Luna"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:197
+msgctxt "shipname"
+msgid "Mars"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:198
+msgctxt "shipname"
+msgid "Menoetius"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:199
+msgctxt "shipname"
+msgid "Mercury"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:200
+msgctxt "shipname"
+msgid "Metis"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:201
+msgctxt "shipname"
+msgid "Mimas"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:202
+msgctxt "shipname"
+msgid "Minerva"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:203
+msgctxt "shipname"
+msgid "Mnemosyne"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:204
+msgctxt "shipname"
+msgid "Neptune"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:205
+msgctxt "shipname"
+msgid "Nesoi"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:206
+msgctxt "shipname"
+msgid "Nyx"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:207
+msgctxt "shipname"
+msgid "Oceanus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:208
+msgctxt "shipname"
+msgid "Odin"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:209
+msgctxt "shipname"
+msgid "Orcus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:210
+msgctxt "shipname"
+msgid "Orion"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:211
+msgctxt "shipname"
+msgid "Ourea"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:212
+msgctxt "shipname"
+msgid "Palatua"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:213
+msgctxt "shipname"
+msgid "Pallas"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:214
+msgctxt "shipname"
+msgid "Persephone"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:215
+msgctxt "shipname"
+msgid "Perses"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:216
+msgctxt "shipname"
+msgid "Phanes"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:217
+msgctxt "shipname"
+msgid "Phoebe"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:218
+msgctxt "shipname"
+msgid "Picolous"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:219
+msgctxt "shipname"
+msgid "Pluto"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:220
+msgctxt "shipname"
+msgid "Polybotes"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:221
+msgctxt "shipname"
+msgid "Pomona"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:222
+msgctxt "shipname"
+msgid "Pontus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:223
+msgctxt "shipname"
+msgid "Porphyrion"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:224
+msgctxt "shipname"
+msgid "Portunus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:225
+msgctxt "shipname"
+msgid "Poseidon"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:226
+msgctxt "shipname"
+msgid "Prometheus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:227
+msgctxt "shipname"
+msgid "Proteus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:228
+msgctxt "shipname"
+msgid "Quirinus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:229
+msgctxt "shipname"
+msgid "Rhea"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:230
+msgctxt "shipname"
+msgid "Saturn"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:231
+msgctxt "shipname"
+msgid "Selene"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:232
+msgctxt "shipname"
+msgid "Sol"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:233
+msgctxt "shipname"
+msgid "Styx"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:234
+msgctxt "shipname"
+msgid "Syceus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:235
+msgctxt "shipname"
+msgid "Talos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:236
+msgctxt "shipname"
+msgid "Tartarus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:237
+msgctxt "shipname"
+msgid "Tellus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:238
+msgctxt "shipname"
+msgid "Tethys"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:239
+msgctxt "shipname"
+msgid "Thalassa"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:240
+msgctxt "shipname"
+msgid "Theia"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:241
+msgctxt "shipname"
+msgid "Themis"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:242
+msgctxt "shipname"
+msgid "Thoas"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:243
+msgctxt "shipname"
+msgid "Thor"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:244
+msgctxt "shipname"
+msgid "Titan"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:245
+msgctxt "shipname"
+msgid "Tityos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:246
+msgctxt "shipname"
+msgid "Triton"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:247
+msgctxt "shipname"
+msgid "Typhon"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:248
+msgctxt "shipname"
+msgid "Uranus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:249
+msgctxt "shipname"
+msgid "Venus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:250
+msgctxt "shipname"
+msgid "Vesta"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:251
+msgctxt "shipname"
+msgid "Volturnus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:252
+msgctxt "shipname"
+msgid "Vulcan"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:253
 msgctxt "shipname"
 msgid "Zeus"
 msgstr ""
