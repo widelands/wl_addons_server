@@ -427,6 +427,19 @@ function set_seafaring(player_number, OnOff)
     end
 end
 
+function set_ship_capacity(player_number, ship_name, capacity)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local ships = player:get_ships()
+    
+    for i, ship in pairs(ships) do
+        -- print(i, ship.shipname)
+        if (ship.shipname == ship_name) or (ship_name == "") then
+             ship.capacity = capacity
+        end
+    end
+end
+
 function force_expedition(player_number, number_expeditions)
     local game = wl.Game()
     local player = game.players[player_number]
