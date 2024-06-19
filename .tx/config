@@ -9,6 +9,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:8-Islands-wad]
+file_filter            = po/8_Islands.wad/<lang>.po
+source_file            = po/8_Islands.wad/8_Islands.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Amoebae-wad]
 file_filter            = po/Amoebae.wad/<lang>.po
 source_file            = po/Amoebae.wad/Amoebae.wad.pot

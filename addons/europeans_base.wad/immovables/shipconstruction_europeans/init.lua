@@ -17,7 +17,8 @@ wl.Descriptions():new_immovable_type {
     buildcost = {
         planks = 8,
         blackwood = 2,
-        rubber = 2
+        rubber = 2,
+        metal_alloy = 2
     },
 
     animation_directory = dirname,

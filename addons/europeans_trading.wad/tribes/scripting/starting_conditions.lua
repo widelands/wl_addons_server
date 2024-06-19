@@ -111,6 +111,7 @@ function start_expedition_from_port(player)
     
     for i, port in ipairs(ports) do
         port:start_expedition()
+        break
     end
 end
 
@@ -130,37 +131,6 @@ function place_ship_random(player, capacity)
     
     local ship = player:place_ship(oceanfields[1])
     ship.capacity = capacity
-end
-
-function set_seafaring(player, OnOff)
-    local game = wl.Game()
-    
-    if player then
-        if OnOff == true then
-             player:allow_buildings{player.tribe.port}
-        elseif OnOff == false then
-             player:forbid_buildings{player.tribe.port}
-        end
-    else
-        for idx, player in ipairs(game.players) do
-             if OnOff == true then
-                 player:allow_buildings{player.tribe.port}
-             elseif OnOff == false then
-                 player:forbid_buildings{player.tribe.port}
-             end
-        end
-    end
-end
-
-function set_ship_capacity(player, ship_name, capacity)
-    local ships = player:get_ships()
-    
-    for i, ship in pairs(ships) do
-        -- print(i, ship.shipname)
-        if (ship.shipname == ship_name) or (ship_name == "") then
-             ship.capacity = capacity
-        end
-    end
 end
 
 function place_object(startx, starty, objectname)

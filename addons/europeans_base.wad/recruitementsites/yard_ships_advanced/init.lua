@@ -48,7 +48,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 8 },
+        { name = "planks", amount = 10 },
         { name = "blackwood", amount = 2 },
         { name = "rubber", amount = 2 },
         { name = "metal_alloy", amount = 2 }
@@ -60,6 +60,18 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=ship_preparation",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
                 "sleep=duration:15s",
                 "call=ship on failure fail",
                 "sleep=duration:15s",
@@ -94,8 +106,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "callworker=check_space",
-                "return=skipped when economy needs metal_alloy",
-                "consume=metal_alloy",
+                "return=skipped when economy needs planks",
+                "consume=planks",
                 "animate=working duration:30s",
             }
         },
