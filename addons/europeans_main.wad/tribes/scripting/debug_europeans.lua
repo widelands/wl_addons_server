@@ -142,8 +142,8 @@ function allow_militarysites(player_number)
     if tribe.name == "europeans" then
         player:allow_buildings{"europeans_guardhouse", "europeans_tower_small", "europeans_blockhouse", "europeans_sentry"}
         player:allow_buildings{"europeans_barrier", "europeans_outpost", "europeans_advanced_barrier"}
-        player:allow_buildings{"europeans_tower", "europeans_tower_high", "europeans_advanced_tower"}
-        player:allow_buildings{"europeans_castle", "europeans_fortress", "europeans_advanced_castle"}
+        player:allow_buildings{"europeans_tower_basic", "europeans_tower_level_1", "europeans_tower_level_2", "europeans_tower_level_3"}
+        player:allow_buildings{"europeans_castle_basic", "europeans_castle_level_1", "europeans_castle_level_2", "europeans_castle_level_3", "europeans_castle_level_4"}
     end
 end
 
@@ -155,8 +155,8 @@ function forbid_militarysites(player_number)
     if tribe.name == "europeans" then
         player:forbid_buildings{"europeans_guardhouse", "europeans_tower_small", "europeans_blockhouse", "europeans_sentry"}
         player:forbid_buildings{"europeans_barrier", "europeans_outpost", "europeans_advanced_barrier"}
-        player:forbid_buildings{"europeans_tower", "europeans_tower_high", "europeans_advanced_tower"}
-        player:forbid_buildings{"europeans_castle", "europeans_fortress", "europeans_advanced_castle"}
+        player:forbid_buildings{"europeans_tower_basic", "europeans_tower_level_1", "europeans_tower_level_2", "europeans_tower_level_3"}
+        player:forbid_buildings{"europeans_castle_basic", "europeans_castle_level_1", "europeans_castle_level_2", "europeans_castle_level_3", "europeans_castle_level_4"}
     end
 end
 

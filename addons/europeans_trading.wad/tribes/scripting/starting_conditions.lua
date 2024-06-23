@@ -44,95 +44,6 @@ function sleep_then_goto(player, sleeptime, field)
     end)
 end
 
--- RST
--- .. function:: launch_expeditions(player, items)
---
---    Creates some expedition ships in random places with the
---    given additional items on them. If called for the interactive
---    player, centers the view on an arbitrary of these ships.
---
---    :arg player: The player to use
---    :type player: :class:`~wl.game.Player`
---    :arg items: An :class:`array` of :class:`tables` with `ware_or_worker_name = amount` pairs. As many ships will
---                be created as there are subtables, and the n-th ship created will load the
---                additional wares and workers defined in ``items[n]``. The capacity of each ship will
---                be adjusted to accommodate the build cost of the player's tribe's port building
---                plus one builder plus the number of additional items for this ship.
---
---    :returns: :const:`nil`
-
-function launch_expeditions(player, items)
-    local fields = wl.Game().map:find_ocean_fields(#items)
-
-    local buildcost = 1
-    local port = wl.Game():get_building_description(wl.Game():get_tribe_description(player.tribe_name).port)
-    for s,i in pairs(port.buildcost) do buildcost = buildcost + i end
-
-    for i,f in pairs(fields) do
-       local ship = player:place_ship(f)
-
-       local nr_i = 0
-       for s,i in pairs(items[i]) do nr_i = nr_i + i end
-       ship.capacity = buildcost + nr_i
-
-       ship:make_expedition(items[i])
-    end
-
-    sleep_then_goto(player, 1000, fields[1])
-end
-
-function start_expedition(player, items)
-    local game = wl.Game()
-    local map = game.map
-    local tribe_name = player.tribe_name
-    local port = game:get_building_description(wl.Game():get_tribe_description(tribe_name).port)
-    
-    local fields = map:find_ocean_fields(#items)
-
-    local buildcost = 1
-    for s,i in pairs(port.buildcost) do 
-        buildcost = buildcost + i 
-    end
-
-    for i,f in pairs(fields) do
-        local ship = player:place_ship(f)
-        local nr_i = 0
-        for s,i in pairs(items[i]) do 
-             nr_i = nr_i + i 
-        end
-        ship.capacity = buildcost + nr_i
-        ship:make_expedition(items[i])
-    end
-end
-
-function start_expedition_from_port(player)
-    local tribe = player.tribe
-    local ports = player:get_buildings(tribe.port)
-    
-    for i, port in ipairs(ports) do
-        port:start_expedition()
-        break
-    end
-end
-
-function place_ship(player, startx, starty, capacity)
-    local game = wl.Game()
-    local map = game.map
-    local centerfield = map:get_field(startx, starty)
-    
-    local ship = player:place_ship(centerfield)
-    ship.capacity = capacity
-end
-
-function place_ship_random(player, capacity)
-    local game = wl.Game()
-    local map = game.map
-    local oceanfields = map:find_ocean_fields(1)
-    
-    local ship = player:place_ship(oceanfields[1])
-    ship.capacity = capacity
-end
-
 function place_object(startx, starty, objectname)
     local game = wl.Game()
     local map = game.map
@@ -225,25 +136,6 @@ function place_building(player, startx, starty, radius, buildingname)
     local fields = centerfield:region(radius)
 
     place_building_in_region(player, buildingname, fields)
-end
-
-function place_port(player, startx, starty, radius)
-    local game = wl.Game()
-    local map = game.map
-    local centerfield = map:get_field(startx, starty)
-    local fields = centerfield:region(radius)
-
-    local tribe = player.tribe
-    local portname = tribe.port
-    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
-        for i, portfield in pairs(map.port_spaces) do
-             for j, field in pairs(fields) do
-                 if (portfield.x == field.x) and (portfield.y == field.y) then
-                     place_building(player, portfield.x, portfield.y, 0, portname)
-                 end
-             end
-        end
-    end
 end
 
 function set_starting_warecount(player)
@@ -445,176 +337,42 @@ function start_stopped_buildings(player)
     end
 end
 
-function upgrade_random_forester(player)
-    local fhb = player:get_buildings("europeans_tree_nursery_basic")
-    local fhn = player:get_buildings("europeans_tree_nursery_normal")
-    local random_number = 0
-    local building = nil
-    
-    if #fhn > 0 then
-        random_number = math.random(#fhn)
-        building = fhn[random_number]
-    elseif #fhb > 0 then
-        random_number = math.random(#fhb)
-        building = fhb[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-end
-
-function upgrade_random_lumberjack(player)
-    local lhb = player:get_buildings("europeans_lumberjacks_house_basic")
-    local lhn = player:get_buildings("europeans_lumberjacks_house_normal")
-    local random_number = 0
-    local building = nil
-    
-    if #lhn > 0 then
-        random_number = math.random(#lhn)
-        building = lhn[random_number]
-    elseif #lhb > 0 then
-        random_number = math.random(#lhb)
-        building = lhb[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-end
-
 function upgrade_random_trainingsite(player)
-    local battlearena = player:get_buildings("europeans_battlearena_basic")
-    local random_number = 0
-    local building = nil
-    
-    if #battlearena > 0 then
-        random_number = math.random(#battlearena)
-        building = battlearena[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-end
-
-function set_hero_advanced_militarysites(player)
-    local ms3 = player:get_buildings("europeans_sentry")
-    local mb3 = player:get_buildings("europeans_advanced_barrier")
-    local mt3 = player:get_buildings("europeans_advanced_tower")
-    local mc3 = player:get_buildings("europeans_advanced_castle")
-    
-    for i, building in ipairs(mc3) do
-        building.soldier_preference = "any"
-        building.soldier_preference = "heroes"
-    end
-    for i, building in ipairs(mt3) do
-        building.soldier_preference = "any"
-        building.soldier_preference = "heroes"
-    end
-    for i, building in ipairs(mb3) do
-        building.soldier_preference = "any"
-        building.soldier_preference = "heroes"
-    end
-    for i, building in ipairs(ms3) do
-        building.soldier_preference = "any"
-        building.soldier_preference = "heroes"
-    end
-end
-
-function upgrade_random_militarysites(player)
-    local ms1 = player:get_buildings("europeans_guardhouse")
-    local ms2 = player:get_buildings("europeans_tower_small")
-    local mb1 = player:get_buildings("europeans_barrier")
-    local mb2 = player:get_buildings("europeans_outpost")
-    local mt1 = player:get_buildings("europeans_tower")
-    local mt2 = player:get_buildings("europeans_tower_high")
-    local mc1 = player:get_buildings("europeans_castle")
-    local mc2 = player:get_buildings("europeans_fortress")
-    local random_number = 0
-    local building = nil
-    
-    if #mc2 > 0 then
-        random_number = math.random(#mc2)
-        building = mc2[random_number]
-    elseif #mc1 > 0 then
-        random_number = math.random(#mc1)
-        building = mc1[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-    
-    if #mt2 > 0 then
-        random_number = math.random(#mt2)
-        building = mt2[random_number]
-    elseif #mt1 > 0 then
-        random_number = math.random(#mt1)
-        building = mt1[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-
-    if #mb2 > 0 then
-        random_number = math.random(#mb2)
-        building = mb2[random_number]
-    elseif #mb1 > 0 then
-        random_number = math.random(#mb1)
-        building = mb1[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-
-    if #ms2 > 0 then
-        random_number = math.random(#ms2)
-        building = ms2[random_number]
-    elseif #ms1 > 0 then
-        random_number = math.random(#ms1)
-        building = ms1[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-end
-
-function place_port_random_ai(player)
     local game = wl.Game()
-    local map = game.map
-    local tribe = player.tribe
-    local portname = tribe.port
-    
-    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
-        for i, portfield in pairs(map.port_spaces) do
-            local field = map:get_field(portfield.x, portfield.y)
-            if (field.owner == player) and (field.brn.owner == player) then
-                if not (field.immovable) or ((field.immovable) and not ((field.immovable.descr.type_name == "constructionsite") or (field.immovable.descr.type_name == "warehouse"))) then
-                    player:place_building(portname, field, true, true)
-                    break
-                end
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+            if (tbuilding.type_name == "trainingsite") and (tbuilding.enhancement) then
+                building:enhance(true)
+                break
             end
         end
     end
 end
 
-function place_ship_random_ai(player)
-    local ships = player:get_ships()
-    local ports = player:get_buildings(player.tribe.port)
-    
-    if #ships < #ports then
-        place_ship_random(player, 64)
+function upgrade_random_militarysites(player)
+    local game = wl.Game()
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+            if (tbuilding.type_name == "militarysite") and (tbuilding.enhancement) then
+                building:enhance(true)
+                break
+            end
+        end
+    end
+end
+
+function set_hero_advanced_militarysites(player)
+    local game = wl.Game()
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+            if (tbuilding.type_name == "militarysite") and (building.soldier_preference) then
+                building.soldier_preference = "any"
+                building.soldier_preference = "heroes"
+            end
+        end
     end
 end
 
@@ -623,7 +381,7 @@ function doing_ai_stuff(player, increment)
     
     if (increment == 0) then
         player:forbid_buildings("all")
-        player:allow_buildings{"europeans_guardhouse", "europeans_tower", "europeans_barrier", "europeans_castle", }
+        player:allow_buildings{"europeans_guardhouse", "europeans_tower_basic", "europeans_barrier", "europeans_castle_basic", }
         player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_farm_small_basic",}
         player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
     end
@@ -650,8 +408,6 @@ function doing_ai_stuff(player, increment)
         set_hero_advanced_militarysites(player)
         if increment % 2 == 0 then
             upgrade_random_militarysites(player)
-            place_port_random_ai(player)
-            place_ship_random_ai(player)
         end
         if increment % 8 == 0 then
             upgrade_random_trainingsite(player)

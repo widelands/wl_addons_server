@@ -2151,7 +2151,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_tower",
+            name = "europeans_tower_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Tower
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2160,7 +2160,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_tower_high",
+            name = "europeans_tower_level_1",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Tower
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2169,7 +2169,16 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_advanced_tower",
+            name = "europeans_tower_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: High Tower
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Tower
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
+            name = "europeans_tower_level_3",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Tower
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2178,7 +2187,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_castle",
+            name = "europeans_castle_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Castle
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2187,7 +2196,25 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_fortress",
+            name = "europeans_castle_level_1",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Fortress
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
+            name = "europeans_castle_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: Castle
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Fortress
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
+            name = "europeans_castle_level_3",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2196,11 +2223,11 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_advanced_castle",
+            name = "europeans_castle_level_4",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Castle
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Castle
+                -- TRANSLATORS: Note helptext for an Europeans military site: Fortress
                 note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
             }
         },
@@ -2456,8 +2483,8 @@ wl.Descriptions():new_tribe {
       military_small_secondary = "europeans_sentry",
       military_medium_primary = "europeans_barrier",
       military_medium_secondary = "europeans_outpost",
-      military_tower = "europeans_tower",
-      military_fortress = "europeans_castle",
+      military_tower = "europeans_tower_basic",
+      military_fortress = "europeans_castle_basic",
       well = "europeans_well_basic",
       woodcutter = "europeans_lumberjacks_house_basic",
       forester = "europeans_tree_nursery_basic",

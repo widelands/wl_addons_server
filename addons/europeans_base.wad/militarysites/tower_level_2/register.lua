@@ -1,3 +1,3 @@
 return {
-   europeans_advanced_tower = {"__replace_if_exists"},
+   europeans_tower_level_2 = {"__replace_if_exists"},
 }

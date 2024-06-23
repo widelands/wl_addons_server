@@ -19,6 +19,15 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "small",
+    enhancement = {
+        name = "europeans_tree_nursery_advanced",
+        enhancement_cost = {
+            planks = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 1
+        },
+    },
    
     aihints = {},
 

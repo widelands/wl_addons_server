@@ -3,13 +3,13 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_militarysite_type {
-    name = "europeans_ultra_tower",
+    name = "europeans_super_tower",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Ultra Tower"),
+    descname = pgettext("europeans_building", "Super Tower"),
     icon = dirname .. "menu.png",
     
     enhancement = {
-        name = "europeans_hyper_tower",
+        name = "europeans_ultra_tower",
         enhancement_cost = {
             planks = 2,
             brick = 2,
@@ -45,10 +45,10 @@ wl.Descriptions():new_militarysite_type {
 
     aihints = {},
 
-    max_soldiers = 6,
+    max_soldiers = 8,
     vision_range = 32,
     heal_per_second = 200,
-    conquers = 28,
+    conquers = 32,
     prefer_heroes = true,
 
     messages = {

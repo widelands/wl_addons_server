@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_militarysite_type {
-    name = "europeans_tower_high",
+    name = "europeans_tower_level_1",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "High Tower"),
+    descname = pgettext("europeans_building", "Medium Tower"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -19,28 +19,27 @@ wl.Descriptions():new_militarysite_type {
     destructible = true,
     
     enhancement = {
-        name = "europeans_advanced_tower",
+        name = "europeans_tower_level_2",
         enhancement_cost = {
-            planks = 2,
-            brick = 2,
-            marble_column = 2,
-            diamond = 1
+            blackwood = 2,
+            grout = 2,
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
             marble = 2,
-            diamond = 1
+            quartz = 1
         },
     },
     
     aihints = {},
 
-    max_soldiers = 4,
+    max_soldiers = 6,
     vision_range = 20,
     heal_per_second = 160,
     conquers = 16,
-    prefer_heroes = false,
+    prefer_heroes = true,
 
     messages = {
         -- TRANSLATORS: Message sent by an Europeans military site

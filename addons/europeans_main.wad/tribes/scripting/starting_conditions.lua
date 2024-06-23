@@ -444,148 +444,42 @@ function start_stopped_buildings(player)
     end
 end
 
-function upgrade_random_forester(player)
-    local fhb = player:get_buildings("europeans_tree_nursery_basic")
-    local fhn = player:get_buildings("europeans_tree_nursery_normal")
-    local random_number = 0
-    local building = nil
-    
-    if #fhn > 0 then
-        random_number = math.random(#fhn)
-        building = fhn[random_number]
-    elseif #fhb > 0 then
-        random_number = math.random(#fhb)
-        building = fhb[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-end
-
-function upgrade_random_lumberjack(player)
-    local lhb = player:get_buildings("europeans_lumberjacks_house_basic")
-    local lhn = player:get_buildings("europeans_lumberjacks_house_normal")
-    local random_number = 0
-    local building = nil
-    
-    if #lhn > 0 then
-        random_number = math.random(#lhn)
-        building = lhn[random_number]
-    elseif #lhb > 0 then
-        random_number = math.random(#lhb)
-        building = lhb[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-end
-
 function upgrade_random_trainingsite(player)
-    local battlearena = player:get_buildings("europeans_battlearena_basic")
-    local random_number = 0
-    local building = nil
-    
-    if #battlearena > 0 then
-        random_number = math.random(#battlearena)
-        building = battlearena[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-end
+    local game = wl.Game()
 
-function set_hero_advanced_militarysites(player)
-    local ms3 = player:get_buildings("europeans_sentry")
-    local mb3 = player:get_buildings("europeans_advanced_barrier")
-    local mt3 = player:get_buildings("europeans_advanced_tower")
-    local mc3 = player:get_buildings("europeans_advanced_castle")
-    
-    for i, building in ipairs(mc3) do
-        building.soldier_preference = "any"
-        building.soldier_preference = "heroes"
-    end
-    for i, building in ipairs(mt3) do
-        building.soldier_preference = "any"
-        building.soldier_preference = "heroes"
-    end
-    for i, building in ipairs(mb3) do
-        building.soldier_preference = "any"
-        building.soldier_preference = "heroes"
-    end
-    for i, building in ipairs(ms3) do
-        building.soldier_preference = "any"
-        building.soldier_preference = "heroes"
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+            if (tbuilding.type_name == "trainingsite") and (tbuilding.enhancement) then
+                building:enhance(true)
+                break
+            end
+        end
     end
 end
 
 function upgrade_random_militarysites(player)
-    local ms1 = player:get_buildings("europeans_guardhouse")
-    local ms2 = player:get_buildings("europeans_tower_small")
-    local mb1 = player:get_buildings("europeans_barrier")
-    local mb2 = player:get_buildings("europeans_outpost")
-    local mt1 = player:get_buildings("europeans_tower")
-    local mt2 = player:get_buildings("europeans_tower_high")
-    local mc1 = player:get_buildings("europeans_castle")
-    local mc2 = player:get_buildings("europeans_fortress")
-    local random_number = 0
-    local building = nil
-    
-    if #mc2 > 0 then
-        random_number = math.random(#mc2)
-        building = mc2[random_number]
-    elseif #mc1 > 0 then
-        random_number = math.random(#mc1)
-        building = mc1[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
-    
-    if #mt2 > 0 then
-        random_number = math.random(#mt2)
-        building = mt2[random_number]
-    elseif #mt1 > 0 then
-        random_number = math.random(#mt1)
-        building = mt1[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
-    end
+    local game = wl.Game()
 
-    if #mb2 > 0 then
-        random_number = math.random(#mb2)
-        building = mb2[random_number]
-    elseif #mb1 > 0 then
-        random_number = math.random(#mb1)
-        building = mb1[random_number]
-    else
-        building = nil
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+            if (tbuilding.type_name == "militarysite") and (tbuilding.enhancement) then
+                building:enhance(true)
+                break
+            end
+        end
     end
-    if building ~= nil then
-        building:enhance(true)
-    end
+end
 
-    if #ms2 > 0 then
-        random_number = math.random(#ms2)
-        building = ms2[random_number]
-    elseif #ms1 > 0 then
-        random_number = math.random(#ms1)
-        building = ms1[random_number]
-    else
-        building = nil
-    end
-    if building ~= nil then
-        building:enhance(true)
+function set_hero_advanced_militarysites(player)
+    local game = wl.Game()
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+            if (tbuilding.type_name == "militarysite") and (building.soldier_preference) then
+                building.soldier_preference = "any"
+                building.soldier_preference = "heroes"
+            end
+        end
     end
 end
 
@@ -622,7 +516,7 @@ function doing_ai_stuff(player, increment)
     
     if (increment == 0) then
         player:forbid_buildings("all")
-        player:allow_buildings{"europeans_guardhouse", "europeans_tower", "europeans_barrier", "europeans_castle", }
+        player:allow_buildings{"europeans_guardhouse", "europeans_tower_basic", "europeans_barrier", "europeans_castle_basic", }
         player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", }
         player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
     end
@@ -669,7 +563,7 @@ function doing_ai_stuff_seafaring(player, increment)
     
     if (increment == 0) then
         player:forbid_buildings("all")
-        player:allow_buildings{"europeans_guardhouse", "europeans_tower", "europeans_barrier", "europeans_castle", "europeans_port", }
+        player:allow_buildings{"europeans_guardhouse", "europeans_tower_basic", "europeans_barrier", "europeans_castle_basic", "europeans_port", }
         player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_tree_nursery_basic", }
         player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
     end
@@ -689,7 +583,7 @@ function doing_ai_stuff_seafaring(player, increment)
     end
     
     -- Experimental actions
-    if (increment >= 16) and (increment <= 1344) and (increment % 16 == 0) then
+    if (increment >= 16) and (increment < 288) and (increment % 8 == 0) then
         launch_expeditions(player, {
             {
                 europeans_soldier = 8,
@@ -701,10 +595,8 @@ function doing_ai_stuff_seafaring(player, increment)
                 europeans_trainer_basic = 2,
             }
         })
-    elseif (increment >= 16) and (increment <= 1344) and (increment % 16 == 8) then
-        place_ship_random(player, 64)
         place_port_random_ai(player)
-    elseif (increment >= 16) and (increment % 16 == 0) then
+    elseif (increment >= 288) and (increment < 576) and (increment % 8 == 0) then
         place_port_random_ai(player)
     end
     if (increment >= 32) then

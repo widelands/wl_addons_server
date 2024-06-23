@@ -3,23 +3,37 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_militarysite_type {
-    name = "europeans_castle",
+    name = "europeans_castle_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Castle"),
+    descname = pgettext("europeans_building", "Basic Fortress"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
     animations = {
-      idle = {
-         hotspot = { 101, 101 },
+      unoccupied = {
+         hotspot = { 103, 80 }
       }
     },
-
+    spritesheets = {
+      idle = {
+         fps = 10,
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 101, 80 }
+      },
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 101, 80 }
+      },
+    },
     size = "big",
     destructible = true,
     
     enhancement = {
-        name = "europeans_fortress",
+        name = "europeans_castle_level_1",
         enhancement_cost = {
             blackwood = 3,
             grout = 3,

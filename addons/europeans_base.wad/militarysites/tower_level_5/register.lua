@@ -1,3 +1,3 @@
 return {
-   europeans_hyper_tower = {"__replace_if_exists"},
+   europeans_ultra_tower = {"__replace_if_exists"},
 }

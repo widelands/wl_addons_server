@@ -58,7 +58,11 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water",
                 "callworker=plant_rubber_tree",
                 "callworker=plant_tree",
+                "callworker=plant_rubber_tree",
+                "callworker=plant_tree",
                 "consume=water",
+                "callworker=plant_rubber_tree",
+                "callworker=plant_tree",
                 "callworker=plant_rubber_tree",
                 "callworker=plant_tree"
             }

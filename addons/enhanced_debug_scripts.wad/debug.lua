@@ -145,6 +145,17 @@ function conquer_fields(player_number, startx, starty, radius)
     player:conquer(centerfield, radius)
 end
 
+function conquer_ocean_fields(player_number, number_fields,radius)
+    local game = wl.Game()
+    local player = game.players[player_number]
+    local map = game.map
+    local oceanfields = map:find_ocean_fields(number_fields)
+
+    for idx, field in ipairs(oceanfields) do
+        player:conquer(field, radius)
+    end
+end
+
 -- general flag/road/street settings --
 function force_flag(player_number, startx, starty)
     local game = wl.Game()
@@ -301,9 +312,9 @@ function force_connection(startx, starty, targetx, targety)
         end
 
         -- special end roads (3 tiles)--
-        if (diffx == -3) and (diffy == -1) then
+        if (diffx == -3) and (diffy == -1) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "tl", "l", "l", true)
-        elseif (diffx == -3) and (diffy == 1) then
+        elseif (diffx == -3) and (diffy == 1) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "bl", "l", "l", true)
         elseif (diffx == -2) and (diffy == -2) then
           road = player:place_road(roadtype, startflag, "tl", "tl", "l", true)
@@ -337,9 +348,9 @@ function force_connection(startx, starty, targetx, targety)
           road = player:place_road(roadtype, startflag, "br", "br", "r", true)
         elseif (diffx == 2) and (diffy == 3) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "br", "r", "br", true)
-        elseif (diffx == 3) and (diffy == -1) then
+        elseif (diffx == 3) and (diffy == -1) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "tr", "r", "r", true)
-        elseif (diffx == 3) and (diffy == 1) then
+        elseif (diffx == 3) and (diffy == 1) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "br", "r", "r", true)
 
         -- special end roads (3 tiles)--
@@ -495,23 +506,31 @@ function force_building(player_number, startx, starty, radius, building_name, co
     local field = fields[math.random(#fields)]
     
     local player = game.players[player_number]
-    local tribe_name = player.tribe.name
-
-    if (field.immovable) then
-        field.immovable:remove()
+    local tribe = player.tribe
+    
+    local building = nil
+    local found_building = nil
+   
+    for i, tbuilding in ipairs(tribe.buildings) do
+        if tbuilding.name == string.lower(building_name) then
+            found_building = tbuilding
+            break
+        elseif string.find(tbuilding.name, string.lower(building_name)) then
+            found_building = tbuilding.name
+            break
+        end
     end
-    if string.find(building_name, tribe_name) then
-        if (complete == true) then
-            local building = player:place_building(building_name, field, false, true)
-        else
-            local building = player:place_building(building_name, field, true, true)
+    
+    if (found_building) and (complete == true) then
+        if (field.immovable) then
+            field.immovable:remove()
         end
-    else
-        if (complete == true) then
-            local building = player:place_building(tribe_name.."_"..building_name, field, false, true)
-        else
-            local building = player:place_building(tribe_name.."_"..building_name, field, true, true)
+        building = player:place_building(found_building, field, false, true)
+    elseif (found_building) and (complete == false) then
+        if (field.immovable) then
+            field.immovable:remove()
         end
+        building = player:place_building(found_building, field, true, true)
     end
     
     return building
@@ -678,17 +697,23 @@ function force_militarysite(player_number, startx, starty, radius, militarytype)
         elseif militarytype == "medium3" then
             building = "europeans_advanced_barrier"
         elseif militarytype == "medium4" then
-            building = "europeans_tower"
+            building = "europeans_tower_basic"
         elseif militarytype == "medium5" then
-            building = "europeans_tower_high"
+            building = "europeans_tower_level_1"
         elseif militarytype == "medium6" then
-            building = "europeans_advanced_tower"
+            building = "europeans_tower_level_2"
+        elseif militarytype == "medium7" then
+            building = "europeans_tower_level_3"
         elseif militarytype == "big1" then
-            building = "europeans_castle"
+            building = "europeans_castle_basic"
         elseif militarytype == "big2" then
-            building = "europeans_fortress"
+            building = "europeans_castle_level_1"
         elseif militarytype == "big3" then
-            building = "europeans_advanced_castle"
+            building = "europeans_castle_level_2"
+        elseif militarytype == "big4" then
+            building = "europeans_castle_level_3"
+        elseif militarytype == "big5" then
+            building = "europeans_castle_level_4"
         else
             building = "europeans_guardhouse"
         end
@@ -815,13 +840,13 @@ function dismantle_all_buildings(player_number, building_name)
     for k, tplayer in ipairs(game.players) do
         for i, tbuilding in ipairs(tplayer.tribe.buildings) do
             for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-                if tbuilding.name == building_name then
+                if tbuilding.name == string.lower(building_name) then
                     building:dismantle(true)
-                elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+                elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name)) then
                     building:dismantle(true)
-                elseif string.find(tbuilding.name, building_name) then
+                elseif string.find(tbuilding.name, string.lower(building_name)) then
                     building:dismantle(true)
-                elseif tbuilding.type_name == building_name then
+                elseif tbuilding.type_name == string.lower(building_name) then
                     building:dismantle(true)
                 end
            end
@@ -884,13 +909,13 @@ function upgrade_all_buildings(player_number, building_name)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.name == building_name then
+          if tbuilding.name == string.lower(building_name) then
              building:enhance(true)
-          elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+          elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name)) then
              building:enhance(true)
-          elseif string.find(tbuilding.name, building_name) then
+          elseif string.find(tbuilding.name, string.lower(building_name)) then
              building:enhance(true)
-          elseif tbuilding.type_name == building_name then
+          elseif tbuilding.type_name == string.lower(building_name) then
              building:enhance(true)
           end
        end
@@ -1252,23 +1277,23 @@ function start_all_buildings(player_number, building_name)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-            if building_name == "all" then
+            if string.lower(building_name) == "all" then
                 if (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
-            elseif tbuilding.name == building_name then
+            elseif tbuilding.name == string.lower(building_name) then
                 if (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
-            elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+            elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name)) then
                 if (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
-            elseif string.find(tbuilding.name, building_name) then
+            elseif string.find(tbuilding.name, string.lower(building_name)) then
                 if (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
-            elseif tbuilding.type_name == building_name then
+            elseif tbuilding.type_name == string.lower(building_name) then
                 if (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
@@ -1285,23 +1310,23 @@ function stop_all_buildings(player_number, building_name)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-            if building_name == "all" then
+            if string.lower(building_name) == "all" then
                 if not (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
-            elseif tbuilding.name == building_name then
+            elseif tbuilding.name == string.lower(building_name) then
                 if not (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
-            elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name) then
+            elseif tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name)) then
                 if not (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
-            elseif string.find(tbuilding.name, building_name) then
+            elseif string.find(tbuilding.name, string.lower(building_name)) then
                 if not (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
-            elseif tbuilding.type_name == building_name then
+            elseif tbuilding.type_name == string.lower(building_name) then
                 if not (building.is_stopped == true) then
                     building:toggle_start_stop()
                 end
@@ -1341,31 +1366,31 @@ function set_all_militarysites_hero(player_number, building_name, yesno)
 
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-            if (building_name == "all") and (building.descr.type_name == "militarysite") then
+            if (string.lower(building_name) == "all") and (building.descr.type_name == "militarysite") then
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
                     building.soldier_preference = "any"
                 end
-            elseif (tbuilding.name == building_name) and (building.descr.type_name == "militarysite") then
+            elseif (tbuilding.name == string.lower(building_name)) and (building.descr.type_name == "militarysite") then
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
                     building.soldier_preference = "any"
                 end
-            elseif (tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. building_name)) and (tbuilding.type_name == "militarysite") then
+            elseif (tbuilding.type_name == tbuilding.name == (tribe_name .. "_" .. string.lower(building_name))) and (tbuilding.type_name == "militarysite") then
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
                     building.soldier_preference = "any"
                 end
-            elseif string.find(tbuilding.name, building_name) and (tbuilding.type_name == "militarysite") then
+            elseif string.find(tbuilding.name, string.lower(building_name)) and (tbuilding.type_name == "militarysite") then
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
                     building.soldier_preference = "any"
                 end
-            elseif (tbuilding.type_name == building_name) and (tbuilding.type_name == "militarysite") then
+            elseif (tbuilding.type_name == string.lower(building_name)) and (tbuilding.type_name == "militarysite") then
                 if yesno == true then
                     building.soldier_preference = "heroes"
                 else
