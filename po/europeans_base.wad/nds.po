@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 03:08+0200\n"
+"POT-Creation-Date: 2024-06-24 03:08+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -626,10 +626,9 @@ msgstr "Diene Soldaten hebben de Feinde in eenem Groten Uppass manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/castle_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Fortress"
-msgstr "Schanz"
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_base.wad/militarysites/castle_basic/init.lua:74
@@ -685,10 +684,9 @@ msgstr "Slött"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/castle_level_3/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Fortress"
-msgstr "Meister-Boomplanter"
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_base.wad/militarysites/castle_level_3/init.lua:56
@@ -911,10 +909,9 @@ msgstr "Diene Soldaten hebben de Feinde in een Wachters-Kamer manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/tower_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Tower"
-msgstr "Arbeider"
+msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
 #: addons/europeans_base.wad/militarysites/tower_basic/init.lua:74
@@ -3639,7 +3636,3 @@ msgstr "Arbeider"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Goder Arbeider"
-
-#~ msgctxt "europeans_building"
-#~ msgid "pausing production for waiting for inputs"
-#~ msgstr "dat Produzeren bi’m Wachten up Versörgung antohollen"
