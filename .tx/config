@@ -219,6 +219,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:barbarians-empire-economy-upgrade-wad]
+file_filter            = po/barbarians_empire_economy_upgrade.wad/<lang>.po
+source_file            = po/barbarians_empire_economy_upgrade.wad/barbarians_empire_economy_upgrade.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:basic-outpost-wad]
 file_filter            = po/basic-outpost.wad/<lang>.po
 source_file            = po/basic-outpost.wad/basic-outpost.wad.pot
