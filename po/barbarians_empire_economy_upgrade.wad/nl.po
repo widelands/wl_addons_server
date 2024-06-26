@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 03:08+0200\n"
+"POT-Creation-Date: 2024-06-26 03:08+0200\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
+"Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:2
 msgid "Barbarians-Empire Upgrade"
-msgstr ""
+msgstr "Barbaren-Empire Upgrade"
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:3
 msgid ""
@@ -27,28 +31,31 @@ msgid ""
 "competitive. With this upgrade, you need one piece of coal to produce 2 "
 "pieces of metal."
 msgstr ""
+"Met de upgrade van smelterijen en steenhouwers worden de barbaren en het "
+"rijk competitiever. Met deze upgrade heb je één stuk steenkool nodig om 2 "
+"stukken metaal te produceren."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:8
 msgctxt "barbarians_building"
 msgid "Independent Fishing Hut"
-msgstr ""
+msgstr "Onafhankelijke vissershut"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:49
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:49
 msgid "fishing"
-msgstr ""
+msgstr "vissen"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:59
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:59
 msgid "No Fishes"
-msgstr ""
+msgstr "Geen vissen"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:60
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:60
 msgid "Out of Fishes"
-msgstr ""
+msgstr "Zonder vissen"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:61
 msgctxt "barbarian_building"
@@ -56,12 +63,14 @@ msgid ""
 "The fisher working at this fisher’s hut can’t find any fishes in his work "
 "area."
 msgstr ""
+"De visser die in deze vissershut werkt, kan geen vissen vinden in zijn "
+"werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works/init.lua:8
 msgctxt "barbarians_building"
 msgid "Smelting Works"
-msgstr ""
+msgstr "Smelterijen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works/init.lua:73
@@ -72,7 +81,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house/init.lua:67
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:56
 msgid "working"
-msgstr ""
+msgstr "werkende"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works/init.lua:83
@@ -80,7 +89,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:116
 msgctxt "barbarians_building"
 msgid "smelting gold"
-msgstr ""
+msgstr "goud smelten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works/init.lua:96
@@ -88,49 +97,51 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:130
 msgctxt "barbarians_building"
 msgid "smelting iron"
-msgstr ""
+msgstr "ijzer smelten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:8
 msgctxt "barbarians_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Geavanceerde Smelterij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:8
 msgctxt "empire_building"
 msgid "Small Farm"
-msgstr ""
+msgstr "Kleine Boerderij"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:61
 msgid "planting"
-msgstr ""
+msgstr "aanplanten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:69
 msgid "harvesting"
-msgstr ""
+msgstr "oogsten"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:78
 msgid "No Fields"
-msgstr ""
+msgstr "Geen Velden"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:79
 msgid "Out of Fields"
-msgstr ""
+msgstr "Zonder Velden"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:80
 msgctxt "empire_building"
 msgid ""
 "The farmer working at this small farm has no cleared soil to plant his seeds."
 msgstr ""
+"De boer die op deze kleine boerderij werkt, heeft geen vrijgemaakte grond om "
+"zijn zaden te planten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:8
 msgctxt "empire_building"
 msgid "Independent Fishing Hut"
-msgstr ""
+msgstr "Onafhankelijke Vissershut"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:61
 msgctxt "empire_building"
@@ -138,23 +149,25 @@ msgid ""
 "The fisher working at this fisher’s hut can’t find any fishes in his work "
 "area."
 msgstr ""
+"De visser die in deze vissershut werkt, kan geen vissen vinden in zijn "
+"werkgebied."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_mill_small/init.lua:8
 msgctxt "frisians_building"
 msgid "Small Mill"
-msgstr ""
+msgstr "Kleine Molen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_mill_small/init.lua:59
 msgid "grinding wheat"
-msgstr ""
+msgstr "tarwe malen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works/init.lua:8
 msgctxt "empire_building"
 msgid "Smelting Works"
-msgstr ""
+msgstr "Smelterijen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works/init.lua:85
@@ -162,7 +175,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:114
 msgctxt "empire_building"
 msgid "smelting gold"
-msgstr ""
+msgstr "goud smelten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works/init.lua:98
@@ -170,32 +183,32 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:128
 msgctxt "empire_building"
 msgid "smelting iron"
-msgstr ""
+msgstr "ijzer smelten"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:8
 msgctxt "empire_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Geavanceerde Smelterij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house/init.lua:8
 msgctxt "empire_building"
 msgid "Stonemason’s House"
-msgstr ""
+msgstr "Steenhouwershuis"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house/init.lua:76
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:65
 msgctxt "empire_building"
 msgid "sculpting marble columns"
-msgstr ""
+msgstr "marmeren zuilen beeldhouwen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:8
 msgctxt "empire_building"
 msgid "Advanced Stonemason’s House"
-msgstr ""
+msgstr "Geavanceerd Steenhouwershuis"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:23
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:27
@@ -203,6 +216,8 @@ msgid ""
 "The independent fisher works slowly but is able to fish in places where an "
 "ordinary fisher can't reach."
 msgstr ""
+"De onafhankelijke visser werkt langzaam, maar kan vissen op plaatsen waar "
+"een gewone visser niet kan komen."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:24
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:28
@@ -210,6 +225,8 @@ msgid ""
 "This fisher has a larger working area so you can get more fishes in total. "
 "It is useful only on open waters."
 msgstr ""
+"Deze visser heeft een groter werkgebied zodat je in totaal meer vissen kunt "
+"vangen. Hij is alleen bruikbaar op open water."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:34
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:38
@@ -217,6 +234,8 @@ msgid ""
 "Advanced smelting works needs just one piece of coal to produce 2 pieces of "
 "iron or 2 bars of gold."
 msgstr ""
+"Geavanceerde smelterijen hebben slechts één stuk steenkool nodig om 2 "
+"stukken ijzer of 2 staven goud te produceren."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:35
 msgid ""
@@ -224,6 +243,9 @@ msgid ""
 "there are not 2 pieces of required ore in stock, the building operates as "
 "basic smelting works."
 msgstr ""
+"Het gebouw produceert sneller ijzer en goud dan de basissmelterij. Als er "
+"geen 2 stuks van het benodigde erts in voorraad zijn, werkt het gebouw als "
+"een basissmelterij."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:39
 msgid ""
@@ -231,22 +253,29 @@ msgid ""
 "there are not 2 pieces of required ore in stock, the building operates as a "
 "basic smelting works."
 msgstr ""
+"Het gebouw produceert sneller ijzer en goud dan een basissmelterij. Als er "
+"geen 2 stuks van het benodigde erts in voorraad zijn, werkt het gebouw als "
+"een basissmelterij."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:45
 msgid ""
 "Advanced stonemason's house needs less marble to produce one marble column."
 msgstr ""
+"Een gevorderde steenhouwer heeft minder marmer nodig om één marmeren kolom "
+"te produceren."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:46
 msgid ""
 "The building produces marble columns in bulk. To produce one bulk of 3 "
 "columns the building need 4 pieces of marble in stock."
 msgstr ""
+"Het gebouw produceert marmeren zuilen in bulk. Om één bulk van 3 zuilen te "
+"produceren heeft het gebouw 4 stukken marmer op voorraad nodig."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:49
 msgid "Produces wheat."
-msgstr ""
+msgstr "Produceert tarwe."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:52
 msgid "Produces flour."
-msgstr ""
+msgstr "Produceert bloem."
