@@ -58,7 +58,9 @@ wl.Descriptions():new_militarysite_type {
         quartz = 1
     },
 
-    aihints = {},
+    aihints = {
+        fighting = true
+    },
 
     max_soldiers = 4,
     vision_range = 8,

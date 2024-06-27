@@ -67,7 +67,7 @@ wl.Descriptions():new_militarysite_type {
     vision_range = 16,
     heal_per_second = 120,
     conquers = 12,
-    prefer_heroes = true,
+    prefer_heroes = false,
 
     messages = {
         -- TRANSLATORS: Message sent by an Europeans military site

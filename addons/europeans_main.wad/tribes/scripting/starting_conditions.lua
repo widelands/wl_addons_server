@@ -487,14 +487,14 @@ function place_port_random_ai(player)
     local game = wl.Game()
     local map = game.map
     local tribe = player.tribe
-    local portname = tribe.port
+    local random_idx = math.random(map.number_of_port_spaces)
     
-    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
+    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) and (tribe.port) then
         for i, portfield in pairs(map.port_spaces) do
             local field = map:get_field(portfield.x, portfield.y)
-            if (field.owner == player) and (field.brn.owner == player) then
+            if (i >= random_idx-1) and (field.owner == player) and (field.brn.owner == player) then
                 if not (field.immovable) or ((field.immovable) and not ((field.immovable.descr.type_name == "constructionsite") or (field.immovable.descr.type_name == "warehouse"))) then
-                    player:place_building(portname, field, true, true)
+                    player:place_building(tribe.port, field, true, true)
                     break
                 end
             end

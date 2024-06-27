@@ -58,9 +58,7 @@ wl.Descriptions():new_militarysite_type {
     },
 
     aihints = {
-        expansion = true,
-        fighting = true,
-        mountain_conqueror = true
+        fighting = true
     },
 
     max_soldiers = 6,
