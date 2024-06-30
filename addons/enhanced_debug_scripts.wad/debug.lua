@@ -118,25 +118,52 @@ end
 
 function peace_mode(player_number1, player_number2)
     local game = wl.Game()
-    local player1 = game.players[player_number1]
-    local player2 = game.players[player_number2]
-    player1:set_attack_forbidden(player_number2, true)
-    player2:set_attack_forbidden(player_number1, true)
-    player1.team = player_number1
-    player2.team = player_number1
+    
+    if (player_number1 > 0) and (player_number2 > 2) then
+        local player1 = game.players[player_number1]
+        local player2 = game.players[player_number2]
+        player1:set_attack_forbidden(player_number2, true)
+        player2:set_attack_forbidden(player_number1, true)
+    elseif (player_number1 > 0) and (player_number2 == 0) then
+        local player1 = game.players[player_number1]
+        for j, player2 in ipairs(game.players) do
+            player1:set_attack_forbidden(j, true)
+            player2:set_attack_forbidden(player_number1, true)
+        end
+    else
+        for i, player1 in ipairs(game.players) do
+            for j, player2 in ipairs(game.players) do
+                player1:set_attack_forbidden(j, true)
+                player2:set_attack_forbidden(i, true)
+            end
+        end
+    end
 end
 
 function war_mode(player_number1, player_number2)
     local game = wl.Game()
-    local player1 = game.players[player_number1]
-    local player2 = game.players[player_number2]
-    player1:set_attack_forbidden(player_number2, false)
-    player2:set_attack_forbidden(player_number1, false)
-    player1.team = player_number1
-    player2.team = player_number2
+    if (player_number1 > 0) and (player_number2 > 2) then
+        local player1 = game.players[player_number1]
+        local player2 = game.players[player_number2]
+        player1:set_attack_forbidden(player_number2, false)
+        player2:set_attack_forbidden(player_number1, false)
+    elseif (player_number1 > 0) and (player_number2 == 0) then
+        local player1 = game.players[player_number1]
+        for j, player2 in ipairs(game.players) do
+            player1:set_attack_forbidden(j, false)
+            player2:set_attack_forbidden(player_number1, false)
+        end
+    else
+        for i, player1 in ipairs(game.players) do
+            for j, player2 in ipairs(game.players) do
+                player1:set_attack_forbidden(j, false)
+                player2:set_attack_forbidden(i, false)
+            end
+        end
+    end
 end
 
-function conquer_fields(player_number, startx, starty, radius)
+function conquer_fields(startx, starty, radius, player_number)
     local game = wl.Game()
     local player = game.players[player_number]
     local map = game.map
@@ -145,19 +172,27 @@ function conquer_fields(player_number, startx, starty, radius)
     player:conquer(centerfield, radius)
 end
 
-function conquer_ocean_fields(player_number, number_fields,radius)
+function conquer_water_fields(player_number)
     local game = wl.Game()
     local player = game.players[player_number]
     local map = game.map
-    local oceanfields = map:find_ocean_fields(number_fields)
 
-    for idx, field in ipairs(oceanfields) do
-        player:conquer(field, radius)
+    -- gather all fields from the map
+    for x = 0, (map.width - 1) do
+        for y = 0, (map.height - 1) do
+            local field = map:get_field(x,y)
+            if field:has_caps("swimmable") then
+                player:conquer(field, 1)
+            end
+            if not field:has_max_caps("walkable") then
+                player:conquer(field, 1)
+            end
+        end
     end
 end
 
 -- general flag/road/street settings --
-function force_flag(player_number, startx, starty)
+function force_flag(startx, starty, player_number)
     local game = wl.Game()
     local map = game.map
     local player = game.players[player_number]
@@ -464,7 +499,7 @@ function force_expedition(player_number, number_expeditions)
     end
 end
 
-function force_ship(player_number, startx, starty, capacity)
+function force_ship(startx, starty, player_number, capacity)
     local game = wl.Game()
     local player = game.players[player_number]
     local map = game.map
@@ -498,7 +533,7 @@ function remove_ship(player_number, ship_name)
 end
 
 -- general building settings --
-function force_building(player_number, startx, starty, radius, building_name, complete)
+function force_building(startx, starty, radius, player_number, building_name, complete)
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
@@ -513,7 +548,7 @@ function force_building(player_number, startx, starty, radius, building_name, co
    
     for i, tbuilding in ipairs(tribe.buildings) do
         if tbuilding.name == string.lower(building_name) then
-            found_building = tbuilding
+            found_building = building_name
             break
         elseif string.find(tbuilding.name, string.lower(building_name)) then
             found_building = tbuilding.name
@@ -536,21 +571,21 @@ function force_building(player_number, startx, starty, radius, building_name, co
     return building
 end
 
-function force_headquarters(player_number, startx, starty, radius, complete)
+function force_headquarters(startx, starty, radius, player_number, complete)
     local game = wl.Game()
     local player = game.players[player_number]
 
     local headquarters = force_building(player, startx, starty, radius, "headquarters", complete)
 end
 
-function force_warehouse(player_number, startx, starty, radius, complete)
+function force_warehouse(startx, starty, radius, player_number, complete)
     local game = wl.Game()
     local player = game.players[player_number]
 
     local warehouse = force_building(player, startx, starty, radius, "warehouse", complete)
 end
 
-function force_port(player_number, startx, starty, radius, complete)
+function force_port(startx, starty, radius, player_number, complete)
     local game = wl.Game()
     local player = game.players[player_number]
     local map = game.map
@@ -583,7 +618,7 @@ function force_port(player_number, startx, starty, radius, complete)
     end
 end
 
-function force_mine(player_number, startx, starty, radius)
+function force_mine(startx, starty, radius, player_number)
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
@@ -672,7 +707,7 @@ function force_mine(player_number, startx, starty, radius)
     local mine = player:place_building(tribe_name.."_"..minename..suffix, mine_field, true, true)
 end
 
-function force_militarysite(player_number, startx, starty, radius, militarytype)
+function force_militarysite(startx, starty, radius, player_number, militarytype)
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
