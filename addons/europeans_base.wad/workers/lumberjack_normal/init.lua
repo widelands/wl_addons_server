@@ -26,9 +26,9 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:rubber_tree_mature radius:12",
             "walk=object",
             "playsound=sound/woodcutting/fast_woodcutting priority:95% allow_multiple",
-            "animate=sawing duration:2s",
+            "animate=sawing duration:4s",
             "callobject=grow",
-            "animate=idle duration:2s",
+            "animate=idle duration:4s",
             "createware=rubber",
             "return"
         },
@@ -36,10 +36,10 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:tree radius:12",
             "walk=object",
             "playsound=sound/atlanteans/saw/sawing priority:80% allow_multiple",
-            "animate=sawing duration:2s",
+            "animate=sawing duration:4s",
             "playsound=sound/woodcutting/tree_falling priority:100%",
             "callobject=fall",
-            "animate=idle duration:2s",
+            "animate=idle duration:4s",
             "createware=log",
             "return"
         }

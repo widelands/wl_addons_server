@@ -1,3 +1,3 @@
 return {
-   shield_advanced = {"__replace_if_exists"},
+   shield_advanced = {"__skip_if_exists"},
 }

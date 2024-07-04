@@ -1,3 +1,3 @@
 return {
-   diamond = {"__replace_if_exists"},
+   diamond = {"__skip_if_exists"},
 }

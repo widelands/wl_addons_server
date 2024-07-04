@@ -1,3 +1,3 @@
 return {
-   wool = {"__replace_if_exists"},
+   wool = {"__skip_if_exists"},
 }

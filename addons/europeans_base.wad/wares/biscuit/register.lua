@@ -1,3 +1,3 @@
 return {
-   biscuit = {"__replace_if_exists"},
+   biscuit = {"__skip_if_exists"},
 }

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-27 03:08+0200\n"
+"POT-Creation-Date: 2024-07-04 03:08+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Language-Team: Esperanto (https://app.transifex.com/widelands/teams/35159/"
 "eo/)\n"
@@ -515,35 +515,35 @@ msgstr ""
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:8
 msgctxt "europeans_building"
-msgid "Barrier"
+msgid "Basic Barrier"
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:73
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your barrier."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:75
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:76
 msgctxt "europeans_building"
 msgid "Your barrier discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:77
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:78
 msgctxt "europeans_building"
 msgid "Your barrier is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:79
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:80
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the barrier."
 msgstr ""
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:81
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:82
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the barrier."
 msgstr ""
@@ -551,35 +551,40 @@ msgstr ""
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:8
 msgctxt "europeans_building"
-msgid "Outpost"
+msgid "Guardhall"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:50
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:46
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:50
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your outpost."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:52
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:48
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:52
 msgctxt "europeans_building"
 msgid "Your outpost discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:54
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:50
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:54
 msgctxt "europeans_building"
 msgid "Your outpost is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:56
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:52
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:56
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the outpost."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:58
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:54
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:58
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the outpost."
 msgstr ""
@@ -587,35 +592,41 @@ msgstr ""
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:8
 msgctxt "europeans_building"
+msgid "Outpost"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:8
+msgctxt "europeans_building"
 msgid "Advanced Barrier"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:34
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:34
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced barrier."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:36
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:36
 msgctxt "europeans_building"
 msgid "Your advanced barrier discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:38
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:38
 msgctxt "europeans_building"
 msgid "Your advanced barrier is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:40
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:40
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced barrier."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:42
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:42
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced barrier."
 msgstr ""
@@ -798,35 +809,40 @@ msgstr ""
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:8
 msgctxt "europeans_building"
-msgid "Guardhouse"
+msgid "Basic Sentry"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:58
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:73
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:45
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your guardhouse."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:60
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:75
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:47
 msgctxt "europeans_building"
 msgid "Your guardhouse discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:62
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:77
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:49
 msgctxt "europeans_building"
 msgid "Your guardhouse is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:64
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:79
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:51
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the guardhouse."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:66
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:81
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:53
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the guardhouse."
 msgstr ""
@@ -834,71 +850,77 @@ msgstr ""
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:8
 msgctxt "europeans_building"
-msgid "Small Tower"
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:47
-msgctxt "europeans_building"
-msgid "Your soldiers have occupied your small tower."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:49
-msgctxt "europeans_building"
-msgid "Your small tower discovered an aggressor."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:51
-msgctxt "europeans_building"
-msgid "Your small tower is under attack."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:53
-msgctxt "europeans_building"
-msgid "The enemy defeated your soldiers at the small tower."
-msgstr ""
-
-#. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:55
-msgctxt "europeans_building"
-msgid "Your soldiers defeated the enemy at the small tower."
+msgid "Guardhouse"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:8
 msgctxt "europeans_building"
+msgid "Small Tower"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:47
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your small tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:49
+msgctxt "europeans_building"
+msgid "Your small tower discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:51
+msgctxt "europeans_building"
+msgid "Your small tower is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:53
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the small tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:55
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the small tower."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:8
+msgctxt "europeans_building"
 msgid "Advanced Sentry"
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:34
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:34
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your sentry."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:36
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:36
 msgctxt "europeans_building"
 msgid "Your sentry discovered an aggressor."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:38
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:38
 msgctxt "europeans_building"
 msgid "Your sentry is under attack."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:40
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:40
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the sentry."
 msgstr ""
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:42
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:42
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the sentry."
 msgstr ""

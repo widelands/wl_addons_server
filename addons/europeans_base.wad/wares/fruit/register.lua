@@ -1,3 +1,3 @@
 return {
-   fruit = {"__replace_if_exists"},
+   fruit = {"__skip_if_exists"},
 }

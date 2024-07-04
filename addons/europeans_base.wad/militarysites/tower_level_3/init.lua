@@ -29,7 +29,7 @@ wl.Descriptions():new_militarysite_type {
 
     aihints = {},
 
-    max_soldiers = 8,
+    max_soldiers = 10,
     vision_range = 24,
     heal_per_second = 200,
     conquers = 20,

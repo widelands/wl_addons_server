@@ -1,3 +1,3 @@
 return {
-   water = {"__replace_if_exists"},
+   water = {"__skip_if_exists"},
 }

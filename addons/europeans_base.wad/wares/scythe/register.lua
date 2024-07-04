@@ -1,3 +1,3 @@
 return {
-   scythe = {"__replace_if_exists"},
+   scythe = {"__skip_if_exists"},
 }

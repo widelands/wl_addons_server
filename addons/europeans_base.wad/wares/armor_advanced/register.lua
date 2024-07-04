@@ -1,3 +1,3 @@
 return {
-   armor_advanced = {"__replace_if_exists"},
+   armor_advanced = {"__skip_if_exists"},
 }

@@ -1,3 +1,3 @@
 return {
-   armor_compressed = {"__replace_if_exists"},
+   armor_compressed = {"__skip_if_exists"},
 }

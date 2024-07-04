@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_militarysite_type {
-    name = "europeans_advanced_barrier",
+    name = "europeans_barrier_level_2",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Advanced Barrier"),
+    descname = pgettext("europeans_building", "Outpost"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -14,32 +14,48 @@ wl.Descriptions():new_militarysite_type {
          frames = 1,
          columns = 1,
          rows = 1,
-         hotspot = { 52, 79 }
+         hotspot = { 59, 77 }
       }
     },
     
     size = "medium",
     destructible = true,
+    
+    enhancement = {
+        name = "europeans_barrier_level_3",
+        enhancement_cost = {
+            planks = 2,
+            brick = 2,
+            marble_column = 2,
+            diamond = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 2,
+            granite = 2,
+            marble = 2,
+            diamond = 1
+        },
+    },
 
     aihints = {},
 
-    max_soldiers = 6,
-    vision_range = 12,
-    heal_per_second = 200,
-    conquers = 10,
+    max_soldiers = 8,
+    vision_range = 10,
+    heal_per_second = 160,
+    conquers = 8,
     prefer_heroes = true,
 
     messages = {
-        -- TRANSLATORS: Message sent by an Empire military site
-        occupied = pgettext("europeans_building", "Your soldiers have occupied your advanced barrier."),
-        -- TRANSLATORS: Message sent by an Empire military site
-        aggressor = pgettext("europeans_building", "Your advanced barrier discovered an aggressor."),
-        -- TRANSLATORS: Message sent by an Empire military site
-        attack = pgettext("europeans_building", "Your advanced barrier is under attack."),
-        -- TRANSLATORS: Message sent by an Empire military site
-        defeated_enemy = pgettext("europeans_building", "The enemy defeated your soldiers at the advanced barrier."),
-        -- TRANSLATORS: Message sent by an Empire military site
-        defeated_you = pgettext("europeans_building", "Your soldiers defeated the enemy at the advanced barrier.")
+        -- TRANSLATORS: Message sent by an Europeans military site
+        occupied = pgettext("europeans_building", "Your soldiers have occupied your outpost."),
+        -- TRANSLATORS: Message sent by an Europeans military site
+        aggressor = pgettext("europeans_building", "Your outpost discovered an aggressor."),
+        -- TRANSLATORS: Message sent by an Europeans military site
+        attack = pgettext("europeans_building", "Your outpost is under attack."),
+        -- TRANSLATORS: Message sent by an Europeans military site
+        defeated_enemy = pgettext("europeans_building", "The enemy defeated your soldiers at the outpost."),
+        -- TRANSLATORS: Message sent by an Europeans military site
+        defeated_you = pgettext("europeans_building", "Your soldiers defeated the enemy at the outpost.")
     },
 }
 

@@ -2097,7 +2097,16 @@ wl.Descriptions():new_tribe {
 
         -- Military Sites
         {
-            name = "europeans_guardhouse",
+            name = "europeans_sentry_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
+            name = "europeans_sentry_level_1",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Guardhouse
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2106,7 +2115,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_tower_small",
+            name = "europeans_sentry_level_2",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Small Tower
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2115,7 +2124,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_sentry",
+            name = "europeans_sentry_level_3",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2124,7 +2133,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_barrier",
+            name = "europeans_barrier_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2133,7 +2142,16 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_outpost",
+            name = "europeans_barrier_level_1",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans military site: Guardhall
+                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
+                -- TRANSLATORS: Note helptext for an Europeans military site: Barrier
+                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
+            }
+        },
+        {
+            name = "europeans_barrier_level_2",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Outpost
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2142,7 +2160,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_advanced_barrier",
+            name = "europeans_barrier_level_3",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2479,10 +2497,10 @@ wl.Descriptions():new_tribe {
       port = "europeans_port",
       training_small = "europeans_battlearena_basic",
       training_large = "europeans_battlearena_level_2",
-      military_small_primary = "europeans_guardhouse",
-      military_small_secondary = "europeans_sentry",
-      military_medium_primary = "europeans_barrier",
-      military_medium_secondary = "europeans_outpost",
+      military_small_primary = "europeans_sentry_basic",
+      military_small_secondary = "europeans_sentry_level_3",
+      military_medium_primary = "europeans_barrier_basic",
+      military_medium_secondary = "europeans_barrier_level_3",
       military_tower = "europeans_tower_basic",
       military_fortress = "europeans_castle_basic",
       well = "europeans_well_basic",

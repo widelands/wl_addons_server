@@ -3,18 +3,15 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_militarysite_type {
-    name = "europeans_outpost",
+    name = "europeans_barrier_level_1",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Outpost"),
+    descname = pgettext("europeans_building", "Guardhall"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-    spritesheets = {
+    animations = {
       idle = {
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 59, 77 }
+         hotspot = { 62, 73 },
       }
     },
     
@@ -22,24 +19,23 @@ wl.Descriptions():new_militarysite_type {
     destructible = true,
     
     enhancement = {
-        name = "europeans_advanced_barrier",
+        name = "europeans_barrier_level_2",
         enhancement_cost = {
-            planks = 2,
-            brick = 2,
-            marble_column = 2,
-            diamond = 1
+            blackwood = 2,
+            grout = 2,
+            quartz = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
             marble = 2,
-            diamond = 1
+            quartz = 1
         },
     },
 
     aihints = {},
 
-    max_soldiers = 4,
+    max_soldiers = 6,
     vision_range = 10,
     heal_per_second = 160,
     conquers = 8,

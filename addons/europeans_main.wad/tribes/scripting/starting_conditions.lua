@@ -337,21 +337,15 @@ function balance_player_warehouse_wares(player)
     end
       
     if #warehouses > 1 then
-        local remove_threshold = 4 + (#warehouses / 2)
-        local dontstock_threshold = 1 + (#warehouses / 2)
-        
-        local remove_percent = 0.25 + (1 / #warehouses)
-        local dontstock_percent = 0.05 + (1 / #warehouses)
-        
         for i, ware in ipairs(tribe.wares) do
             local ware_description = game:get_ware_description(ware.name)
             local is_build_material = ware_description:is_construction_material(tribe.name)
 
             for j, building in ipairs(warehouses) do
-                if (building:get_wares(ware.name) > (player:get_wares(ware.name) * remove_percent)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * remove_threshold)) then
-                    building:set_warehouse_policies(ware.name, "remove")
-                elseif (building:get_wares(ware.name) > (player:get_wares(ware.name) * dontstock_percent)) and (player:get_wares(ware.name) > (building.fields[1].brn.immovable.ware_economy:target_quantity(ware.name) * dontstock_threshold)) then
-                    building:set_warehouse_policies(ware.name, "dontstock")
+                if (is_build_material) and (building:get_wares(ware.name) < 0.90 * (player:get_wares(ware.name) / #warehouses)) then
+                    building:set_warehouse_policies(ware.name, "prefer")
+                elseif (building:get_wares(ware.name) < 0.80 * (player:get_wares(ware.name) / #warehouses)) then
+                    building:set_warehouse_policies(ware.name, "prefer")
                 else
                     building:set_warehouse_policies(ware.name, "normal")
                 end
@@ -382,16 +376,12 @@ function balance_player_warehouse_workers(player)
     end
     
     if #warehouses > 1 then
-        local remove_threshold = 4 + (#warehouses / 2)
-        local dontstock_threshold = 1 + (#warehouses / 2)
-        
-        local remove_percent = 0.25 + (1 / #warehouses)
-        local dontstock_percent = 0.05 + (1 / #warehouses)
-        
         for i, worker in ipairs(tribe.workers) do
+            local worker_description = game:get_worker_description(worker.name)
+
             for j, building in ipairs(warehouses) do
-                if (building:get_workers(worker.name) > (player:get_workers(worker.name) * dontstock_percent)) and (player:get_workers(worker.name) > (building.fields[1].brn.immovable.worker_economy:target_quantity(worker.name) * dontstock_threshold)) then
-                    building:set_warehouse_policies(worker.name, "dontstock")
+                if (building:get_workers(worker.name) < 0.90 * (player:get_workers(worker.name) / #warehouses)) then
+                    building:set_warehouse_policies(worker.name, "prefer")
                 else
                     building:set_warehouse_policies(worker.name, "normal")
                 end
@@ -563,7 +553,7 @@ function doing_ai_stuff_seafaring(player, increment)
     
     if (increment == 0) then
         player:forbid_buildings("all")
-        player:allow_buildings{"europeans_guardhouse", "europeans_tower_basic", "europeans_barrier", "europeans_castle_basic", "europeans_port", }
+        player:allow_buildings{"europeans_sentry_basic", "europeans_tower_basic", "europeans_barrier_basic", "europeans_castle_basic", "europeans_port", }
         player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_tree_nursery_basic", }
         player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
     end

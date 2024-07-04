@@ -1,3 +1,3 @@
 return {
-   coin_silver = {"__replace_if_exists"},
+   coin_silver = {"__skip_if_exists"},
 }

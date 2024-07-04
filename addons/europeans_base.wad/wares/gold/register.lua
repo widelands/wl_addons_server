@@ -1,3 +1,3 @@
 return {
-   gold = {"__replace_if_exists"},
+   gold = {"__skip_if_exists"},
 }

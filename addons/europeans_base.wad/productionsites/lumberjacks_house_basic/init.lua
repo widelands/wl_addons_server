@@ -61,7 +61,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "callworker=check_trees",
                 "call=felling_trees",
-                "sleep=duration:5s",
+                "sleep=duration:15s",
                 "callworker=check_rubber",
                 "call=felling_rubber_trees",
                 "return=skipped"

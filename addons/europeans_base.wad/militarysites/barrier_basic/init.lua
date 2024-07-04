@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_militarysite_type {
-    name = "europeans_barrier",
+    name = "europeans_barrier_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Barrier"),
+    descname = pgettext("europeans_building", "Basic Barrier"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -34,7 +34,7 @@ wl.Descriptions():new_militarysite_type {
     destructible = true,
     
     enhancement = {
-        name = "europeans_outpost",
+        name = "europeans_barrier_level_1",
         enhancement_cost = {
             blackwood = 2,
             grout = 2,
@@ -59,6 +59,7 @@ wl.Descriptions():new_militarysite_type {
     },
 
     aihints = {
+        expansion = true,
         fighting = true
     },
 

@@ -1,3 +1,3 @@
 return {
-   metal_alloy = {"__replace_if_exists"},
+   metal_alloy = {"__skip_if_exists"},
 }

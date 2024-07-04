@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-27 03:08+0200\n"
+"POT-Creation-Date: 2024-07-04 03:08+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -522,72 +522,79 @@ msgstr "Weitacker (ganz lütt)"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:8
+#, fuzzy
 msgctxt "europeans_building"
-msgid "Barrier"
-msgstr "Uppass"
+msgid "Basic Barrier"
+msgstr "Mester"
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:73
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:74
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your barrier."
 msgstr "Diene Soldaten hebben dienen Uppass besett."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:75
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:76
 msgctxt "europeans_building"
 msgid "Your barrier discovered an aggressor."
 msgstr "Dien Uppass hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:77
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:78
 msgctxt "europeans_building"
 msgid "Your barrier is under attack."
 msgstr "Feinde griepen dienen Uppass an."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:79
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:80
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the barrier."
 msgstr "De Feinde hebben diene Soldaten in eenem Uppass manntjet."
 
 #. TRANSLATORS: Message sent by a Barbarian military site
-#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:81
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:82
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the barrier."
 msgstr "Diene Soldaten hebben de Feinde in eenem Uppass manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:8
+#, fuzzy
 msgctxt "europeans_building"
-msgid "Outpost"
-msgstr "Butenstee"
+msgid "Guardhall"
+msgstr "Wahrders-Kamer"
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:50
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:46
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:50
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your outpost."
 msgstr "Diene Soldaten hebben diene Butenstee besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:52
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:48
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:52
 msgctxt "europeans_building"
 msgid "Your outpost discovered an aggressor."
 msgstr "Diene Butenstee hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:54
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:50
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:54
 msgctxt "europeans_building"
 msgid "Your outpost is under attack."
 msgstr "Feinde griepen diene Butenstee an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:56
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:52
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:56
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the outpost."
 msgstr "De Feinde hebben diene Soldaten in eener Butenstee manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:58
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:54
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:58
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the outpost."
 msgstr "Diene Soldaten hebben de Feinde in eener Butenstee manntjet."
@@ -595,35 +602,41 @@ msgstr "Diene Soldaten hebben de Feinde in eener Butenstee manntjet."
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:8
 msgctxt "europeans_building"
+msgid "Outpost"
+msgstr "Butenstee"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:8
+msgctxt "europeans_building"
 msgid "Advanced Barrier"
 msgstr "Groter Uppass"
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:34
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:34
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your advanced barrier."
 msgstr "Diene Soldaten hebben dienen Groten Uppass besett."
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:36
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:36
 msgctxt "europeans_building"
 msgid "Your advanced barrier discovered an aggressor."
 msgstr "Dien Groter Uppass hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:38
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:38
 msgctxt "europeans_building"
 msgid "Your advanced barrier is under attack."
 msgstr "Feinde griepen dienen Groten Uppass an."
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:40
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:40
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the advanced barrier."
 msgstr "De Feinde hebben diene Soldaten in eenem Groten Uppass manntjet."
 
 #. TRANSLATORS: Message sent by an Empire military site
-#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:42
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:42
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the advanced barrier."
 msgstr "Diene Soldaten hebben de Feinde in eenem Groten Uppass manntjet."
@@ -805,36 +818,42 @@ msgstr "Bespejeree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:8
+#, fuzzy
 msgctxt "europeans_building"
-msgid "Guardhouse"
-msgstr "Wahrders-Kamer"
+msgid "Basic Sentry"
+msgstr "Lütter Toorn"
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:58
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:73
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:45
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your guardhouse."
 msgstr "Diene Soldaten hebben diene Wahrders-Kamer besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:60
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:75
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:47
 msgctxt "europeans_building"
 msgid "Your guardhouse discovered an aggressor."
 msgstr "Diene Wahrders-Kamer hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:62
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:77
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:49
 msgctxt "europeans_building"
 msgid "Your guardhouse is under attack."
 msgstr "Feinde griepen diene Wahrders-Kamer an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:64
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:79
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:51
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the guardhouse."
 msgstr "De Feinde hebben diene Soldaten in eener Wahrders-Kamer manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:66
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:81
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:53
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the guardhouse."
 msgstr "Diene Soldaten hebben de Feinde in eener Wahrders-Kamer manntjet."
@@ -842,71 +861,77 @@ msgstr "Diene Soldaten hebben de Feinde in eener Wahrders-Kamer manntjet."
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:8
 msgctxt "europeans_building"
+msgid "Guardhouse"
+msgstr "Wahrders-Kamer"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:8
+msgctxt "europeans_building"
 msgid "Small Tower"
 msgstr "Toorntje"
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:47
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:47
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your small tower."
 msgstr "Diene Soldaten hebben dien Toorntje besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:49
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:49
 msgctxt "europeans_building"
 msgid "Your small tower discovered an aggressor."
 msgstr "Dien Toorntje hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:51
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:51
 msgctxt "europeans_building"
 msgid "Your small tower is under attack."
 msgstr "Feinde griepen dien Toorntje an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:53
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:53
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the small tower."
 msgstr "De Feinde hebben diene Soldaten in eenem Toorntje manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:55
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:55
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the small tower."
 msgstr "Diene Soldaten hebben de Feinde in eenem Toorntje manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:8
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Sentry"
 msgstr "Grote Wachters-Kamer"
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:34
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:34
 msgctxt "europeans_building"
 msgid "Your soldiers have occupied your sentry."
 msgstr "Diene Soldaten hebben diene Wachters-Kamer besett."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:36
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:36
 msgctxt "europeans_building"
 msgid "Your sentry discovered an aggressor."
 msgstr "Diene Wachters-Kamer hett Feinde to sehn kregen."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:38
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:38
 msgctxt "europeans_building"
 msgid "Your sentry is under attack."
 msgstr "Feinde griepen diene Wachters-Kamer an."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:40
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:40
 msgctxt "europeans_building"
 msgid "The enemy defeated your soldiers at the sentry."
 msgstr "De Feinde hebben diene Soldaten in een Wachters-Kamer manntjet."
 
 #. TRANSLATORS: Message sent by an Europeans military site
-#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:42
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:42
 msgctxt "europeans_building"
 msgid "Your soldiers defeated the enemy at the sentry."
 msgstr "Diene Soldaten hebben de Feinde in een Wachters-Kamer manntjet."
@@ -3674,3 +3699,7 @@ msgstr "Arbeider"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Goder Arbeider"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Barrier"
+#~ msgstr "Uppass"

@@ -61,7 +61,7 @@ wl.Descriptions():new_militarysite_type {
         fighting = true
     },
 
-    max_soldiers = 6,
+    max_soldiers = 8,
     vision_range = 16,
     heal_per_second = 200,
     conquers = 12,

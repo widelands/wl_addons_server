@@ -1,3 +1,3 @@
 return {
-   pick = {"__replace_if_exists"},
+   pick = {"__skip_if_exists"},
 }

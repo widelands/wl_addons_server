@@ -1,3 +1,3 @@
 return {
-   coal = {"__replace_if_exists"},
+   coal = {"__skip_if_exists"},
 }

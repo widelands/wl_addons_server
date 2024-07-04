@@ -1,3 +1,3 @@
 return {
-   wine = {"__replace_if_exists"},
+   wine = {"__skip_if_exists"},
 }

@@ -3,23 +3,38 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_militarysite_type {
-    name = "europeans_guardhouse",
+    name = "europeans_sentry_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Guardhouse"),
+    descname = pgettext("europeans_building", "Basic Sentry"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
     animations = {
-      idle = {
-         hotspot = { 40, 47 },
+      unoccupied = {
+         hotspot = { 39, 40 }
       }
+    },
+    spritesheets = {
+      idle = {
+         fps = 10,
+         frames = 20,
+         rows = 5,
+         columns = 4,
+         hotspot = { 39, 40 }
+      },
+      build = {
+         frames = 4,
+         rows = 2,
+         columns = 2,
+         hotspot = { 39, 40 }
+      },
     },
     
     size = "small",
     destructible = true,
     
     enhancement = {
-        name = "europeans_tower_small",
+        name = "europeans_sentry_level_1",
         enhancement_cost = {
             blackwood = 1,
             grout = 1,

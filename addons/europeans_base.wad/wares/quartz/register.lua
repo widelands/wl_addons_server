@@ -1,3 +1,3 @@
 return {
-   quartz = {"__replace_if_exists"},
+   quartz = {"__skip_if_exists"},
 }
