@@ -506,7 +506,7 @@ function doing_ai_stuff(player, increment)
     
     if (increment == 0) then
         player:forbid_buildings("all")
-        player:allow_buildings{"europeans_guardhouse", "europeans_tower_basic", "europeans_barrier", "europeans_castle_basic", }
+        player:allow_buildings{"europeans_sentry_basic", "europeans_tower_basic", "europeans_barrier_basic", "europeans_castle_basic", }
         player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", }
         player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
     end

@@ -3070,7 +3070,7 @@ wl.Descriptions():new_tribe {
       military_small_primary = "europeans_sentry_basic",
       military_small_secondary = "europeans_sentry_level_3",
       military_medium_primary = "europeans_barrier_basic",
-      military_medium_secondary = "europeans_barrier_level_3",,
+      military_medium_secondary = "europeans_barrier_level_3",
       military_tower = "europeans_tower_basic",
       military_fortress = "europeans_castle_basic",
       well = "europeans_well_basic",
