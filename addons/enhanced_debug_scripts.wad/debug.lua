@@ -4,6 +4,27 @@
 
 push_textdomain("enhanced_debug_scripts.wad", true)
 
+-- helper function --
+function map_distance(startx, starty, targetx, targety)
+    local game = wl.Game()
+    local map = game.map
+
+    local mapx = math.floor(map.width / 2)
+    local mapy = math.floor(map.height / 2)
+    
+    local diffx = targetx - startx
+    local diffy = targety - starty
+
+    if math.abs(diffx) >= mapx then
+        diffx = mapx - diffx
+    end
+    if math.abs(diffy) >= mapy then
+        diffy = mapy - diffy
+    end
+    
+    return math.sqrt((diffx * diffx) + (diffy * diffy))
+end
+
 -- general map settings --
 function place_object(startx, starty, objectname)
     local game = wl.Game()
@@ -119,22 +140,31 @@ end
 function peace_mode(player_number1, player_number2)
     local game = wl.Game()
     
-    if (player_number1 > 0) and (player_number2 > 2) then
+    if (player_number1 > 0) and (player_number2 > 0) then
         local player1 = game.players[player_number1]
         local player2 = game.players[player_number2]
-        player1:set_attack_forbidden(player_number2, true)
-        player2:set_attack_forbidden(player_number1, true)
+        
+        player1:set_attack_forbidden(player2.number, true)
+        player2:set_attack_forbidden(player1.number, true)
     elseif (player_number1 > 0) and (player_number2 == 0) then
         local player1 = game.players[player_number1]
+        
         for j, player2 in ipairs(game.players) do
-            player1:set_attack_forbidden(j, true)
-            player2:set_attack_forbidden(player_number1, true)
+            player1:set_attack_forbidden(player2.number, true)
+            player2:set_attack_forbidden(player1.number, true)
+        end
+    elseif (player_number2 > 0) and (player_number1 == 0) then
+        local player1 = game.players[player_number2]
+        
+        for j, player2 in ipairs(game.players) do
+            player1:set_attack_forbidden(player2.number, true)
+            player2:set_attack_forbidden(player1.number, true)
         end
     else
         for i, player1 in ipairs(game.players) do
             for j, player2 in ipairs(game.players) do
-                player1:set_attack_forbidden(j, true)
-                player2:set_attack_forbidden(i, true)
+                player1:set_attack_forbidden(player2.number, true)
+                player2:set_attack_forbidden(player1.number, true)
             end
         end
     end
@@ -142,22 +172,31 @@ end
 
 function war_mode(player_number1, player_number2)
     local game = wl.Game()
-    if (player_number1 > 0) and (player_number2 > 2) then
+    if (player_number1 > 0) and (player_number2 > 0) then
         local player1 = game.players[player_number1]
         local player2 = game.players[player_number2]
-        player1:set_attack_forbidden(player_number2, false)
-        player2:set_attack_forbidden(player_number1, false)
+        
+        player1:set_attack_forbidden(player2.number, false)
+        player2:set_attack_forbidden(player1.number, false)
     elseif (player_number1 > 0) and (player_number2 == 0) then
         local player1 = game.players[player_number1]
+        
         for j, player2 in ipairs(game.players) do
-            player1:set_attack_forbidden(j, false)
-            player2:set_attack_forbidden(player_number1, false)
+            player1:set_attack_forbidden(player2.number, false)
+            player2:set_attack_forbidden(player1.number, false)
+        end
+    elseif (player_number2 > 0) and (player_number1 == 0) then
+        local player1 = game.players[player_number2]
+        
+        for j, player2 in ipairs(game.players) do
+            player1:set_attack_forbidden(player2.number, false)
+            player2:set_attack_forbidden(player1.number, false)
         end
     else
         for i, player1 in ipairs(game.players) do
             for j, player2 in ipairs(game.players) do
-                player1:set_attack_forbidden(j, false)
-                player2:set_attack_forbidden(i, false)
+                player1:set_attack_forbidden(player2.number, false)
+                player2:set_attack_forbidden(player1.number, false)
             end
         end
     end
@@ -195,9 +234,16 @@ end
 function force_flag(startx, starty, player_number)
     local game = wl.Game()
     local map = game.map
-    local player = game.players[player_number]
-
-    player:place_flag(map:get_field(startx, starty))
+    
+    if player_number > 0 then
+        local player = game.players[player_number]
+    else
+        local player = map:get_field(startx, starty).owner
+    end
+    
+    if player then
+        player:place_flag(map:get_field(startx, starty))
+    end
 end
 
 function remove_flag(startx, starty)
@@ -587,35 +633,70 @@ end
 
 function force_port(startx, starty, radius, player_number, complete)
     local game = wl.Game()
-    local player = game.players[player_number]
     local map = game.map
-    local centerfield = map:get_field(startx, starty)
-    local fields = centerfield:region(radius)
-
-    local tribe = player.tribe
-    local portname = tribe.port
+    
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
-        for i, portfield in pairs(map.port_spaces) do
-            for j, field in pairs(fields) do
-                if (portfield.x == field.x) and (portfield.y == field.y) and not (field.immovable) then
-                    if (complete == true) then
-                        local port = player:place_building(portname, field, false, true)
+        if player_number > 0 then
+            local player = game.players[player_number]
+            local tribe = player.tribe
+            
+            for i, portfield in pairs(map.port_spaces) do
+                if (map_distance(startx, starty, portfield.x, portfield.y) <= radius) then
+                    field = map:get_field(portfield.x, portfield.y)
+                    if not (field.immovable) then
+                        if (complete == true) then
+                            local port = player:place_building(player.tribe.port, field, false, true)
+                        end
+                        if (complete == false) then
+                            local port = player:place_building(player.tribe.port, field, true, true)
+                        end
                     end
-                    if (complete == false) then
-                        local port = player:place_building(portname, field, true, true)
+                    if (field.immovable) then
+                        if (complete == true) and not (field.immovable.descr.type_name == "warehouse") then
+                            local port = player:place_building(player.tribe.port, field, false, true)
+                        end
+                        if (complete == false) and not (field.immovable.descr.type_name == "warehouse") then
+                            local port = player:place_building(player.tribe.port, field, true, true)
+                        end
                     end
                 end
-                if (portfield.x == field.x) and (portfield.y == field.y) and (field.immovable) then
-                    if (complete == true) and not (field.immovable.descr.type_name == "warehouse") then
-                        local port = player:place_building(portname, field, false, true)
+            end
+        else
+            for i, portfield in pairs(map.port_spaces) do
+                if (map_distance(startx, starty, portfield.x, portfield.y) <= radius) then
+                    field = map:get_field(portfield.x, portfield.y)
+                    if not (field.immovable) then
+                        if (complete == true) then
+                            local player = field.owner
+                            if player then
+                                local port = player:place_building(player.tribe.port, field, false, true)
+                            end
+                        end
+                        if (complete == false) then
+                            local player = field.owner
+                            if player then
+                                local port = player:place_building(player.tribe.port, field, true, true)
+                            end
+                        end
                     end
-                    if (complete == false) and not (field.immovable.descr.type_name == "warehouse") then
-                        local port = player:place_building(portname, field, true, true)
+                    if (field.immovable) then
+                        if (complete == true) and not (field.immovable.descr.type_name == "warehouse") then
+                            local player = field.owner
+                            if player then
+                                local port = player:place_building(player.tribe.port, field, false, true)
+                            end
+                        end
+                        if (complete == false) and not (field.immovable.descr.type_name == "warehouse") then
+                            local player = field.owner
+                            if player then
+                                local port = player:place_building(player.tribe.port, field, true, true)
+                            end
+                        end
                     end
                 end
             end
         end
-    end
+    end    
 end
 
 function force_mine(startx, starty, radius, player_number)
@@ -719,18 +800,22 @@ function force_militarysite(startx, starty, radius, player_number, militarytype)
 
     if tribe_name == "europeans" then
         max_soldier_stats = {3,3,3,3}
-        if militarytype == "small1" then
-            building = "europeans_guardhouse"
+        if militarytype == "small0" then
+            building = "europeans_sentry_basic"
+        elseif militarytype == "small1" then
+            building = "europeans_sentry_level_1"
         elseif militarytype == "small2" then
-            building = "europeans_tower_small"
+            building = "europeans_sentry_level_2"
         elseif militarytype == "small3" then
-            building = "europeans_sentry"
+            building = "europeans_sentry_level_3"
+        elseif militarytype == "medium0" then
+            building = "europeans_barrier_basic"
         elseif militarytype == "medium1" then
-            building = "europeans_barrier"
+            building = "europeans_barrier_level_1"
         elseif militarytype == "medium2" then
-            building = "europeans_outpost"
+            building = "europeans_barrier_level_2"
         elseif militarytype == "medium3" then
-            building = "europeans_advanced_barrier"
+            building = "europeans_barrier_level_3"
         elseif militarytype == "medium4" then
             building = "europeans_tower_basic"
         elseif militarytype == "medium5" then
@@ -739,18 +824,18 @@ function force_militarysite(startx, starty, radius, player_number, militarytype)
             building = "europeans_tower_level_2"
         elseif militarytype == "medium7" then
             building = "europeans_tower_level_3"
-        elseif militarytype == "big1" then
+        elseif militarytype == "big0" then
             building = "europeans_castle_basic"
-        elseif militarytype == "big2" then
+        elseif militarytype == "big1" then
             building = "europeans_castle_level_1"
-        elseif militarytype == "big3" then
+        elseif militarytype == "big2" then
             building = "europeans_castle_level_2"
-        elseif militarytype == "big4" then
+        elseif militarytype == "big3" then
             building = "europeans_castle_level_3"
-        elseif militarytype == "big5" then
+        elseif militarytype == "big4" then
             building = "europeans_castle_level_4"
         else
-            building = "europeans_guardhouse"
+            building = "europeans_sentry_basic"
         end
     elseif tribe_name == "amazons" then
         max_soldier_stats = {3,2,2,3}

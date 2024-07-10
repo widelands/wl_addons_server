@@ -47,12 +47,12 @@ wl.Descriptions():new_militarysite_type {
     },
 
     buildcost = {
-        log = 4,
+        log = 6,
         granite = 4,
         quartz = 1
     },
     return_on_dismantle = {
-        scrap_wood = 3,
+        scrap_wood = 4,
         granite = 3,
         quartz = 1
     },
