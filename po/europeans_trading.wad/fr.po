@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-04 03:08+0200\n"
+"POT-Creation-Date: 2024-07-14 03:08+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
@@ -51,7 +51,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/tailors_house_basic/init.lua:78
 #: addons/europeans_trading.wad/productionsites/tailors_house_normal/init.lua:55
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:43
-#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:77
+#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:80
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_normal/init.lua:50
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_advanced/init.lua:52
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_basic/init.lua:64
@@ -452,7 +452,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:87
-#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:106
+#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:109
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_normal/init.lua:94
 msgctxt "europeans_building"
 msgid "making a pond with water"
@@ -460,7 +460,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:98
-#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:117
+#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:120
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_normal/init.lua:105
 msgctxt "europeans_building"
 msgid "digging clay"
@@ -468,7 +468,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:110
-#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:129
+#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:132
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_normal/init.lua:117
 msgctxt "europeans_building"
 msgid "digging a dry pond"
@@ -476,7 +476,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:122
-#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:137
+#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:140
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_normal/init.lua:125
 msgctxt "europeans_building"
 msgid "filling pond with water"
@@ -493,8 +493,8 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:142
-#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:91
-#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:148
+#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:94
+#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:151
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_normal/init.lua:145
 msgctxt "europeans_building"
 msgid "planting reed"
@@ -502,7 +502,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:151
-#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:157
+#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:160
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_normal/init.lua:154
 msgctxt "europeans_building"
 msgid "harvesting"
@@ -517,7 +517,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:170
-#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:166
+#: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:169
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_normal/init.lua:173
 msgctxt "europeans_building"
 msgid "harvesting reed"

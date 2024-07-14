@@ -230,6 +230,44 @@ function conquer_water_fields(player_number)
     end
 end
 
+function conquer_flag_fields(radius)
+    local game = wl.Game()
+    local map = game.map
+
+    -- gather all fields from the map
+    for x = 0, (map.width - 1) do
+        for y = 0, (map.height - 1) do
+            local field = map:get_field(x,y)
+            immovable = field.immovable
+            if immovable then
+                player = immovable.owner
+            else
+                player = field.owner
+            end
+            if (player) and (immovable) and (immovable.descr.type_name == "flag") then
+                player:conquer(field, radius)
+            end
+            if (player) and (immovable) and (immovable.descr.type_name == "road") then
+                player:conquer(field, radius)
+            end
+        end
+    end
+end
+
+function conquer_port_fields(radius)
+    local game = wl.Game()
+    local map = game.map
+
+    -- gather all portfields from the map
+    for i, portfield in pairs(map.port_spaces) do
+        field = map:get_field(portfield.x,portfield.y)
+        player = field.owner
+        if player then
+            player:conquer(field, radius)
+        end
+    end
+end
+
 -- general flag/road/street settings --
 function force_flag(startx, starty, player_number)
     local game = wl.Game()
