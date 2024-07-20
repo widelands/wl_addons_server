@@ -26,7 +26,13 @@ wl.Descriptions():new_productionsite_type {
         }
     },
 
-    aihints = {},
+    aihints = {
+        needs_water = true,
+        requires_supporters = true,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 1,
+        normal_ai_limit = 2,
+    },
 
     working_positions = {
         europeans_terraformer_advanced = 1

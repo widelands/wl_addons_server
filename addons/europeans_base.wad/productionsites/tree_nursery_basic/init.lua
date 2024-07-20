@@ -51,10 +51,10 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         space_consumer = true,
-        basic_amount = 4,
-        very_weak_ai_limit = 6,
+        basic_amount = 2,
+        very_weak_ai_limit = 4,
         weak_ai_limit = 8,
-        normal_ai_limit = 12,
+        normal_ai_limit = 16,
     },
 
     working_positions = {

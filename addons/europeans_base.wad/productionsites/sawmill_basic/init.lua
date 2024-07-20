@@ -58,8 +58,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         supports_seafaring = true,
         very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
+        weak_ai_limit = 1,
+        normal_ai_limit = 2,
     },
 
     working_positions = {

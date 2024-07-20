@@ -22,7 +22,11 @@ wl.Descriptions():new_productionsite_type {
 
     size = "medium",
 
-    aihints = {},
+    aihints = {
+        very_weak_ai_limit = 4,
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
+    },
     
     working_positions = {
         europeans_carrier = 3

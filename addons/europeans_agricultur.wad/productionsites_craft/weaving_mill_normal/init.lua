@@ -34,7 +34,12 @@ wl.Descriptions():new_productionsite_type {
         }
     },
 
-    aihints = {},
+    aihints = {
+        supports_seafaring = true,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 1,
+        normal_ai_limit = 2,
+    },
 
     working_positions = {
         europeans_worker_normal = 1,

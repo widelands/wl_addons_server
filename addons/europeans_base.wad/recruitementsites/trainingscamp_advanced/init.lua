@@ -31,7 +31,11 @@ wl.Descriptions():new_productionsite_type {
     size = "big",
     destructible = true,
         
-    aihints = {},
+    aihints = {
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
+    },
 
     working_positions = {
         europeans_trainer_advanced = 1,

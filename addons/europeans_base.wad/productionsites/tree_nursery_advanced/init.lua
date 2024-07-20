@@ -20,7 +20,12 @@ wl.Descriptions():new_productionsite_type {
    
     size = "small",
     
-    aihints = {},
+    aihints = {
+        space_consumer = true,
+        very_weak_ai_limit = 4,
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
+    },
 
     working_positions = {
         europeans_forester_advanced = 1

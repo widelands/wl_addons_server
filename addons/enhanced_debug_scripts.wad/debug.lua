@@ -211,7 +211,7 @@ function conquer_fields(startx, starty, radius, player_number)
     player:conquer(centerfield, radius)
 end
 
-function conquer_water_fields(player_number)
+function conquer_water_fields(radius, player_number)
     local game = wl.Game()
     local player = game.players[player_number]
     local map = game.map
@@ -221,10 +221,10 @@ function conquer_water_fields(player_number)
         for y = 0, (map.height - 1) do
             local field = map:get_field(x,y)
             if field:has_caps("swimmable") then
-                player:conquer(field, 1)
+                player:conquer(field, radius)
             end
             if not field:has_max_caps("walkable") then
-                player:conquer(field, 1)
+                player:conquer(field, radius)
             end
         end
     end
@@ -430,19 +430,33 @@ function force_connection(startx, starty, targetx, targety)
             print ("create road tile with delta-x:", diffx, "and delta-y:", diffy)
         end
 
-        -- special end roads (3 tiles)--
-        if (diffx == -3) and (diffy == -1) and (targety % 2 == 1) then
+        -- special end roads (3 tiles, diffy even) --
+        if (diffx == -3) and (diffy == 0) then
+          road = player:place_road(roadtype, startflag, "l", "l", "l", true)
+        elseif (diffx == -2) and (diffy == -2) then
+          road = player:place_road(roadtype, startflag, "tl", "tl", "l", true)
+        elseif (diffx == -2) and (diffy == 2) then
+          road = player:place_road(roadtype, startflag, "bl", "bl", "l", true)
+        elseif (diffx == 2) and (diffy == -2) then
+          road = player:place_road(roadtype, startflag, "tr", "r", "tr", true)
+        elseif (diffx == 2) and (diffy == 2) then
+          road = player:place_road(roadtype, startflag, "br", "r", "br", true)
+        elseif (diffx == 3) and (diffy == 0) then
+          road = player:place_road(roadtype, startflag, "r", "r", "r", true)
+          
+        -- special end roads (3 tiles, diffy odd) --
+        elseif (diffx == -3) and (diffy == -1) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "tl", "l", "l", true)
         elseif (diffx == -3) and (diffy == 1) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "bl", "l", "l", true)
-        elseif (diffx == -2) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", "l", true)
+        elseif (diffx == -2) and (diffy == -3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
         elseif (diffx == -2) and (diffy == -1) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "l", "tl", "l", true)
         elseif (diffx == -2) and (diffy == 1) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "l", "bl", "l", true)
-        elseif (diffx == -2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "l", true)
+        elseif (diffx == -2) and (diffy == 3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "bl", "bl", "bl", true)
         elseif (diffx == -1) and (diffy == -3) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
         elseif (diffx == -1) and (diffy == 3) and (targety % 2 == 0) then
@@ -455,66 +469,56 @@ function force_connection(startx, starty, targetx, targety)
           road = player:place_road(roadtype, startflag, "bl", "br", "bl", true)
         elseif (diffx == 0) and (diffy == 3) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "br", "bl", "br", true)
+        elseif (diffx == 1) and (diffy == -3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "tr", "tr", "tr", true)
+        elseif (diffx == 1) and (diffy == 3) and (targety % 2 == 1) then
+          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
         elseif (diffx == 2) and (diffy == -3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "tr", "tr", "tr", true)
+        elseif (diffx == 2) and (diffy == -3) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "tr", "tl", "tr", true)
-        elseif (diffx == 2) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tr", "tr", "r", true)
         elseif (diffx == 2) and (diffy == -1) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "r", "tr", "r", true)
         elseif (diffx == 2) and (diffy == 1) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "r", "br", "r", true)
-        elseif (diffx == 2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "br", "br", "r", true)
         elseif (diffx == 2) and (diffy == 3) and (targety % 2 == 0) then
+          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
+        elseif (diffx == 2) and (diffy == 3) and (targety % 2 == 1) then
           road = player:place_road(roadtype, startflag, "br", "r", "br", true)
         elseif (diffx == 3) and (diffy == -1) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "tr", "r", "r", true)
         elseif (diffx == 3) and (diffy == 1) and (targety % 2 == 0) then
           road = player:place_road(roadtype, startflag, "br", "r", "r", true)
 
-        -- special end roads (3 tiles)--
-        elseif (diffx == 1) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
-        elseif (diffx == 1) and (diffy == -3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "tr", "tr", "tr", true)
-        elseif (diffx == -2) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "bl", true)
-        elseif (diffx == -2) and (diffy == -3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
-
-        -- special end roads (3 tiles)--
-        elseif (diffx == 3) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "r", "r", "r", true)
-        elseif (diffx == -3) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "l", "l", "l", true)
-
-        -- special roads (2 tiles)--
-        elseif (diffx > 0) and (diffy == 1) then
-          road = player:place_road(roadtype, startflag, "br", "r", true)
-        elseif (diffx < 0) and (diffy == 1) then
-          road = player:place_road(roadtype, startflag, "bl", "l", true)
-        elseif (diffx < 0) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "l", "tl", true)
-        elseif (diffx > 0) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "r", "tr", true)
-
-        -- standard roads (2 tiles) --
-        elseif (diffx > 0) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "r", "r", true)
-        elseif (diffx > 0) and (diffy > 0) then
-          road = player:place_road(roadtype, startflag, "br", "br", true)
-        elseif (diffx == 0) and (diffy > 0) then
-          road = player:place_road(roadtype, startflag, "br", "bl", true)
-        elseif (diffx < 0) and (diffy > 0) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", true)
+        -- special roads (2 tiles, diffy even)--
         elseif (diffx < 0) and (diffy == 0) then
           road = player:place_road(roadtype, startflag, "l", "l", true)
+        elseif (diffx > 0) and (diffy == 0) then
+          road = player:place_road(roadtype, startflag, "r", "r", true)
+                  
+        -- special roads (2 tiles, diffy odd)--
+        elseif (diffx < 0) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "l", "tl", true)
+        elseif (diffx < 0) and (diffy == 1) then
+          road = player:place_road(roadtype, startflag, "bl", "l", true)
+        elseif (diffx > 0) and (diffy == -1) then
+          road = player:place_road(roadtype, startflag, "r", "tr", true)
+        elseif (diffx > 0) and (diffy == 1) then
+          road = player:place_road(roadtype, startflag, "br", "r", true)
+          
+        -- standard roads (2 tiles) --
         elseif (diffx < 0) and (diffy < 0) then
           road = player:place_road(roadtype, startflag, "tl", "tl", true)
+        elseif (diffx < 0) and (diffy > 0) then
+          road = player:place_road(roadtype, startflag, "bl", "bl", true)
         elseif (diffx == 0) and (diffy < 0) then
           road = player:place_road(roadtype, startflag, "tl", "tr", true)
+        elseif (diffx == 0) and (diffy > 0) then
+          road = player:place_road(roadtype, startflag, "br", "bl", true)
         elseif (diffx > 0) and (diffy < 0) then
           road = player:place_road(roadtype, startflag, "tr", "tr", true)
+        elseif (diffx > 0) and (diffy > 0) then
+          road = player:place_road(roadtype, startflag, "br", "br", true)
         end
 
         startflag = road.end_flag

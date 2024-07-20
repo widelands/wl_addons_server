@@ -3,7 +3,6 @@
 -- =======================================================================
 
 include "addons/europeans_main.wad/tribes/scripting/starting_conditions.lua"
-include "addons/europeans_main.wad/tribes/scripting/debug_europeans.lua"
 
 push_textdomain("europeans_tribe.wad", true)
 

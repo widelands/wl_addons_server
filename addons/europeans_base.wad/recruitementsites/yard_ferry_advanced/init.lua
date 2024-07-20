@@ -40,7 +40,13 @@ wl.Descriptions():new_productionsite_type {
     destructible = true,
     map_check = {"waterways"},
     
-    aihints = {},
+    aihints = {
+        needs_water = true,
+        shipyard = true,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 1,
+        normal_ai_limit = 1,
+    },
 
     working_positions = {
         europeans_shipwright_advanced = 1,

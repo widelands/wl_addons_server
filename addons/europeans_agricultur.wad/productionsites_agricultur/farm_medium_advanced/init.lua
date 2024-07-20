@@ -27,7 +27,13 @@ wl.Descriptions():new_productionsite_type {
 
     size = "medium",
 
-    aihints = {},
+    aihints = {
+        space_consumer = true,
+        supports_seafaring = true,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 4,
+    },
 
     working_positions = {
         europeans_farmer_advanced = 1,

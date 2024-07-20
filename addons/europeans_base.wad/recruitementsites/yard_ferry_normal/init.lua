@@ -37,8 +37,14 @@ wl.Descriptions():new_productionsite_type {
             diamond = 1
         }
     },
-
-    aihints = {},
+    
+    aihints = {
+        needs_water = true,
+        shipyard = true,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 1,
+        normal_ai_limit = 1,
+    },
 
     working_positions = {
         europeans_shipwright_normal = 1,
