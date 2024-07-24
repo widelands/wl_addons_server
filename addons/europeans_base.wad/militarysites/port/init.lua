@@ -57,7 +57,7 @@ wl.Descriptions():new_warehouse_type {
     vision_range = 10,
     heal_per_second = 200,
     conquers = 8,
-    max_garrison = 24,
+    max_garrison = 32,
 }
 
 pop_textdomain()

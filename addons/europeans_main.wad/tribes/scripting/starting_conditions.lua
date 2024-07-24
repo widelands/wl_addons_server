@@ -599,10 +599,6 @@ function balance_player_warehouse_workers(player)
         warehouses = array_combine(warehouses, player:get_buildings(building_name))
     end
     
-    for i, building_name in ipairs(warehouse_types) do
-        warehouses = array_combine(warehouses, player:get_buildings(building_name))
-    end
-    
     if #warehouses > 1 then
         for i, worker in ipairs(tribe.workers) do
             local worker_description = game:get_worker_description(worker.name)

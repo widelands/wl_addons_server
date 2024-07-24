@@ -47,7 +47,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "armor", amount = 2 }
+        { name = "boots_swift", amount = 2 }
     },
 
     programs = {
@@ -55,8 +55,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start scouting because ...
             descname = pgettext("europeans_building", "scouting"),
             actions = {
-                "return=skipped when economy needs armor",
-                "consume=armor",
+                "return=skipped when economy needs boots_swift",
+                "consume=boots_swift",
                 "sleep=duration:30s",
                 "callworker=scout",
                 "sleep=duration:30s",
@@ -68,7 +68,7 @@ wl.Descriptions():new_productionsite_type {
         targeted_scouting = {
             descname = pgettext("europeans_building", "scouting"),
             actions = {
-                "consume=armor",
+                "consume=boots_swift",
                 "callworker=targeted_scouting"
             }
         },
