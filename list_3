@@ -434,7 +434,7 @@ kaputtnik
 
 sync_safe
 1674478722
-213
+214
 0
 0
 0
@@ -1588,7 +1588,7 @@ the-x
 
 sync_safe
 1692450525
-87
+88
 1
 0
 0
@@ -1932,7 +1932,7 @@ TRueDesk
 
 sync_safe
 1666686938
-590
+591
 0
 0
 0
@@ -2022,7 +2022,7 @@ hessenfarmer
 
 sync_safe
 1619867883
-356
+357
 0
 0
 0
@@ -3074,7 +3074,11 @@ sync_safe
 0
 0
 0
-0
+1
+Cupper
+It seems to be an ERROR:<br>Klicking help for farm widelands crashed, ALWAYS.<br>When this Addon is ON.<br><br>Good idea building wares in a bulk. :-)
+1.0.0
+1722017468
 1.0.0
 3
 1127601
@@ -4393,7 +4397,7 @@ Nordfriese
 
 sync_safe
 1689789945
-53
+54
 0
 0
 0
@@ -4567,7 +4571,7 @@ MarkMcWire
 
 sync_safe
 1717601720
-90
+92
 0
 0
 0
@@ -4579,9 +4583,9 @@ sync_safe
 0
 0
 0
-1.6.9
+1.7.0
 4
-14095913
+14101826
 tribes
 1
 europeans_base.wad
@@ -4660,7 +4664,7 @@ workers/gardener_normal
 workers/terraformer_advanced
 workers/terraformer_basic
 workers/terraformer_normal
-1680
+1681
 addon
 productionsites_agricultur/animal_farm_advanced/idle_0.5.png
 productionsites_agricultur/animal_farm_advanced/idle_00.png
@@ -5370,6 +5374,7 @@ tribes/initialization/images/waterway_0.png
 tribes/initialization/init.lua
 tribes/initialization/tips.lua
 tribes/initialization/units.lua
+tribes/scripting/starting_conditions/discovery_human.lua
 tribes/scripting/starting_conditions/headquarters_ai.lua
 tribes/scripting/starting_conditions/headquarters_human.lua
 tribes/scripting/starting_conditions.lua
@@ -6365,8 +6370,8 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-1703
-86dedaf5d0bc6103a8f352bc8b085a33
+1704
+46a6b819c2e1f8b11bbebe8656041cbf
 f28067bbf281be888658158f8f8a7ae0
 45a7a927fb64202053324b0b724abdaf
 dc3402d242ea7cdb87676307b08e2fae
@@ -6499,7 +6504,7 @@ eb170e297a53e608629f34bacf3469a8
 2df40d2108e92657668d1b691563c624
 23cdb582bc066a2ef78f6179c8121232
 a2230b6079d8fc7e99bc8f3a283caf3f
-4e7d7247ebe8807f953e234be21dcd24
+0641c1da25a2f966160053b83e9316bd
 6020a467e9066009690168c385d11e90
 3f8d7da18f48de011f496cab92745627
 ceb206f69c47b71904b63d74869ef878
@@ -7072,12 +7077,13 @@ e3f08632a5d1dedcf40096620165887c
 9ebd1ac06cbae39b35b0dede6ee3aab5
 3bc8a84abdee7a9478bac2b86ced3432
 f9535866c7d646605d5bf64a69a93c5c
-9136f7126bd5438a99b8c4f0a62ee620
+e45c6a6d184c308692d225d8a059bdee
 a4e819aea62aaef1cdc768fe8d7ed847
 40015690f89df8b1333fad9ec2267db3
+f97eb11fce1b754dcee8af37a6198216
 abaa5f286de880478608f47a4c7aab2a
 ae626fde1d109a67ba01f583f7667ee6
-407c4b50f7f497b50c3ffadb921c3230
+0f6b3c23add36dde8e938a787a31b0e4
 d2f52d707229fffa4d90d26f41554311
 969e645409e06b51ee300c53405930cd
 d52e666d655399d98cdb071076ab8235
@@ -8093,7 +8099,7 @@ sync_safe
 0
 0
 1.7.0
-14
+15
 24249184
 tribes
 0
@@ -15593,7 +15599,7 @@ e3b67681ca587f4bfe191c6b92e92d0e
 15f4565806777113f6807a8e5c69c100
 b82aadc5eaa83835d12b38fa67cca481
 b6de733808a38a049ef35b3521e056e8
-7b79061ca2cbe76e32d27c5809d78457
+2f150d13f2a676aebd911bfd476b6a28
 a12ba43e198bffeff19b027e0a659b68
 d53ee5a432a967b6a06f500a24cb4391
 d566fcd7aceeee016dc433a98572c240
@@ -18146,7 +18152,7 @@ Nordfriese
 
 sync_safe
 1600000000
-541
+542
 0
 0
 0
@@ -18377,7 +18383,7 @@ Nordfriese
 
 sync_safe
 1600000000
-901
+902
 0
 0
 0
@@ -18548,7 +18554,7 @@ Nordfriese
 
 sync_safe
 1600000000
-824
+825
 0
 0
 0
@@ -23387,7 +23393,7 @@ Nordfriese
 
 sync_safe
 1600000000
-350
+351
 0
 0
 0

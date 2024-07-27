@@ -224,6 +224,9 @@ function allow_basic_productionsites(player)
         player:allow_buildings{"europeans_quarry_basic", "europeans_lumberjacks_house_basic", "europeans_tree_nursery_basic"}
         player:allow_buildings{"europeans_sawmill_basic", "europeans_stonemasons_house_basic"}
         player:allow_buildings{"europeans_charcoal_kiln_basic", "europeans_smelting_works_basic", "europeans_manufactory_basic"}
+        
+        player:allow_buildings{"europeans_europeans_farm_small_basic", "europeans_farm_medium_basic", "europeans_farm_basic", "europeans_animal_farm_basic"}
+        player:allow_buildings{"europeans_mill_basic", "europeans_bakery_basic", "europeans_brewery_basic", "europeans_weaving_mill_basic"}
     end
 end
 
@@ -239,6 +242,9 @@ function forbid_basic_productionsites(player)
         player:forbid_buildings{"europeans_quarry_basic", "europeans_lumberjacks_house_basic", "europeans_tree_nursery_basic"}
         player:forbid_buildings{"europeans_sawmill_basic", "europeans_stonemasons_house_basic"}
         player:forbid_buildings{"europeans_charcoal_kiln_basic", "europeans_smelting_works_basic", "europeans_manufactory_basic"}
+        
+        player:forbid_buildings{"europeans_europeans_farm_small_basic", "europeans_farm_medium_basic", "europeans_farm_basic", "europeans_animal_farm_basic"}
+        player:forbid_buildings{"europeans_mill_basic", "europeans_bakery_basic", "europeans_brewery_basic", "europeans_weaving_mill_basic"}
     end
 end
 
@@ -254,6 +260,9 @@ function allow_normal_productionsites(player)
         player:allow_buildings{"europeans_quarry_normal", "europeans_lumberjacks_house_normal", "europeans_tree_nursery_normal"}
         player:allow_buildings{"europeans_sawmill_normal", "europeans_stonemasons_house_normal"}
         player:allow_buildings{"europeans_charcoal_kiln_normal", "europeans_smelting_works_normal", "europeans_manufactory_normal"}
+        
+        player:allow_buildings{"europeans_europeans_farm_small_normal", "europeans_farm_medium_normal", "europeans_farm_normal", "europeans_animal_farm_normal"}
+        player:allow_buildings{"europeans_mill_normal", "europeans_bakery_normal", "europeans_brewery_normal", "europeans_weaving_mill_normal"}
     end
 end
 
@@ -269,6 +278,9 @@ function forbid_normal_productionsites(player)
         player:forbid_buildings{"europeans_quarry_normal", "europeans_lumberjacks_house_normal", "europeans_tree_nursery_normal"}
         player:forbid_buildings{"europeans_sawmill_normal", "europeans_stonemasons_house_normal"}
         player:forbid_buildings{"europeans_charcoal_kiln_normal", "europeans_smelting_works_normal", "europeans_manufactory_normal"}
+        
+        player:forbid_buildings{"europeans_europeans_farm_small_normal", "europeans_farm_medium_normal", "europeans_farm_normal", "europeans_animal_farm_normal"}
+        player:forbid_buildings{"europeans_mill_normal", "europeans_bakery_normal", "europeans_brewery_normal", "europeans_weaving_mill_normal"}
     end
 end
 
@@ -284,6 +296,9 @@ function allow_advanced_productionsites(player)
         player:allow_buildings{"europeans_quarry_advanced", "europeans_lumberjacks_house_advanced", "europeans_tree_nursery_advanced"}
         player:allow_buildings{"europeans_sawmill_advanced", "europeans_stonemasons_house_advanced"}
         player:allow_buildings{"europeans_charcoal_kiln_advanced", "europeans_smelting_works_advanced", "europeans_manufactory_advanced"}
+        
+        player:allow_buildings{"europeans_europeans_farm_small_advanced", "europeans_farm_medium_advanced", "europeans_farm_advanced", "europeans_animal_farm_advanced", "europeans_animal_farm_big"}
+        player:allow_buildings{"europeans_mill_advanced", "europeans_bakery_advanced", "europeans_brewery_advanced", "europeans_brewery_winery", "europeans_weaving_mill_advanced"}
     end
 end
 
@@ -299,6 +314,9 @@ function forbid_advanced_productionsites(player)
         player:forbid_buildings{"europeans_quarry_advanced", "europeans_lumberjacks_house_advanced", "europeans_tree_nursery_advanced"}
         player:forbid_buildings{"europeans_sawmill_advanced", "europeans_stonemasons_house_advanced"}
         player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_smelting_works_advanced", "europeans_manufactory_advanced"}
+        
+        player:forbid_buildings{"europeans_europeans_farm_small_advanced", "europeans_farm_medium_advanced", "europeans_farm_advanced", "europeans_animal_farm_advanced", "europeans_animal_farm_big"}
+        player:forbid_buildings{"europeans_mill_advanced", "europeans_bakery_advanced", "europeans_brewery_advanced", "europeans_brewery_winery", "europeans_weaving_mill_advanced"}
     end
 end
 
@@ -363,6 +381,24 @@ function forbid_barracks(player)
     
     if tribe.name == "europeans" then
         player:forbid_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
+    end
+end
+
+function allow_terraformer(player)
+    local game = wl.Game()
+    local tribe = player.tribe
+
+    if tribe.name == "europeans" then
+        player:allow_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
+    end
+end
+
+function forbid_terraformer(player)
+    local game = wl.Game()
+    local tribe = player.tribe
+    
+    if tribe.name == "europeans" then
+        player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
     end
 end
 
@@ -488,10 +524,6 @@ function balance_player_warehouse_workers(player)
     end
     
     local warehouses = {}
-    for i, building_name in ipairs(warehouse_types) do
-        warehouses = array_combine(warehouses, player:get_buildings(building_name))
-    end
-    
     for i, building_name in ipairs(warehouse_types) do
         warehouses = array_combine(warehouses, player:get_buildings(building_name))
     end

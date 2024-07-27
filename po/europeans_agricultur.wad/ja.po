@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 03:08+0200\n"
+"POT-Creation-Date: 2024-07-27 03:08+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Language-Team: Japanese (https://app.transifex.com/widelands/teams/35159/"
 "ja/)\n"
@@ -3707,6 +3707,17 @@ msgctxt "europeans_soldier"
 msgid "%1%(+%2%) soldier"
 msgid_plural "%1%(+%2%) soldiers"
 msgstr[0] ""
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_agricultur.wad/tribes/scripting/starting_conditions/discovery_human.lua:11
+msgid "Discovery (Human Player)"
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Discovery" starting condition
+#: addons/europeans_agricultur.wad/tribes/scripting/starting_conditions/discovery_human.lua:13
+msgid ""
+"Start the game with three ships on the ocean and only a handful of supplies."
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_agricultur.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11

@@ -17,6 +17,7 @@ local init_europeans = {
     starting_conditions = {
         "addons/europeans_agricultur.wad/tribes/scripting/starting_conditions/headquarters_ai.lua";
         "addons/europeans_agricultur.wad/tribes/scripting/starting_conditions/headquarters_human.lua";
+        "addons/europeans_agricultur.wad/tribes/scripting/starting_conditions/discovery_human.lua";
     }
 }
 pop_textdomain()
