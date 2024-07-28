@@ -1,3 +1,5 @@
+include "scripting/richtext.lua"
+
 -- Get interactive player
 local i_plr
 for p_idx, player in pairs(wl.Game().players) do
