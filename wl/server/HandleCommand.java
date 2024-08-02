@@ -644,8 +644,10 @@ public class HandleCommand {
 		final int quality = Integer.valueOf(cmd[2]);
 		if (quality < 0 || quality > 3)
 			throw new ServerUtils.WLProtocolException("Invalid quality " + cmd[2]);
-		Utils.sql(
-		    Utils.Databases.kAddOns, "update addons set quality=? where name=?", quality, cmd[1]);
+		Utils.sql(Utils.Databases.kAddOns,
+		          quality > 0 ? "update addons set quality=?, security=1 where name=?" :
+		                        "update addons set quality=? where name=?",
+		          quality, cmd[1]);
 
 		out.println("ENDOFSTREAM");
 	}
