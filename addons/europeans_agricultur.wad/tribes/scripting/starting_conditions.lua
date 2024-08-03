@@ -320,6 +320,24 @@ function forbid_advanced_productionsites(player)
     end
 end
 
+function allow_terraformer(player)
+    local game = wl.Game()
+    local tribe = player.tribe
+
+    if tribe.name == "europeans" then
+        player:allow_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
+    end
+end
+
+function forbid_terraformer(player)
+    local game = wl.Game()
+    local tribe = player.tribe
+    
+    if tribe.name == "europeans" then
+        player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
+    end
+end
+
 function allow_warehouses(player)
     local game = wl.Game()
     local map = wl.Game().map
@@ -381,24 +399,6 @@ function forbid_barracks(player)
     
     if tribe.name == "europeans" then
         player:forbid_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
-    end
-end
-
-function allow_terraformer(player)
-    local game = wl.Game()
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
-    end
-end
-
-function forbid_terraformer(player)
-    local game = wl.Game()
-    local tribe = player.tribe
-    
-    if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_normal", "europeans_terraformers_house_advanced"}
     end
 end
 
@@ -644,6 +644,7 @@ function doing_ai_stuff(player, increment)
     end
     if (increment == 16) then
         allow_normal_productionsites(player)
+        allow_terraformer(player)
         player:allow_buildings{"europeans_trainingscamp_normal", "europeans_battlearena_level_1", }
     end
     if (increment == 32) then

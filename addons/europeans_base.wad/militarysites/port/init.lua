@@ -29,6 +29,27 @@ wl.Descriptions():new_warehouse_type {
     destructible = false,
     map_check = {"seafaring"},
     
+    enhancement = {
+        name = "europeans_port_big",
+        enhancement_cost = {
+            blackwood = 2,
+            planks = 2,
+            brick = 2,
+            grout = 2,
+            marble = 2,
+            marble_column = 1,
+            quartz = 1,
+            diamond = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 4,
+            granite = 3,
+            marble = 3,
+            quartz = 1,
+            diamond = 1
+        },
+    },
+    
     buildcost = {
         blackwood = 3,
         grout = 3,

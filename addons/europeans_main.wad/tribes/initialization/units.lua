@@ -329,7 +329,7 @@ wl.Descriptions():new_tribe {
             -- Tools
             {
                 name = "buckets",
-                default_target_quantity = 4,
+                default_target_quantity = 16,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -342,7 +342,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "basket",
-                default_target_quantity = 4,
+                default_target_quantity = 16,
                 preciousness = 1,
                  helptexts = {
                     purpose = {
@@ -355,7 +355,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "hammer",
-                default_target_quantity = 2,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -368,7 +368,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "saw",
-                default_target_quantity = 2,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -381,7 +381,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scythe",
-                default_target_quantity = 2,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -394,7 +394,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "felling_ax",
-                default_target_quantity = 2,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -407,7 +407,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "pick",
-                default_target_quantity = 2,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -420,7 +420,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "shovel",
-                default_target_quantity = 2,
+                default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -1295,6 +1295,13 @@ wl.Descriptions():new_tribe {
         },
         {
             name = "europeans_port",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
+                purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools.")
+            }
+        },
+        {
+            name = "europeans_port_big",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
                 purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools.")
