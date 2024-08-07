@@ -9,30 +9,20 @@ wl.Descriptions():new_productionsite_type {
    icon = dirname .. "menu.png",
 
    size = "big",
-    enhancement = {
-        name = "empire_farm",
-        enhancement_cost = {
-            marble_column = 2
-        },
-        enhancement_return_on_dismantle = {
-            marble_column = 1
-        },
-    },
    buildcost = {
       granite = 2,
-      planks = 2,
-      marble = 2
+      planks = 3,
+      marble = 1
    },
    return_on_dismantle = {
       granite = 1,
-      planks = 1,
-      marble = 1
+      planks = 1
    },
 
    animation_directory = dirname,
    animations = {
       idle = {
-         hotspot = { 54, 56 },
+         hotspot = { 64, 82 },
       },
    },
 
@@ -69,7 +59,7 @@ wl.Descriptions():new_productionsite_type {
          descname = _"harvesting",
          actions = {
             "callworker=harvest",
-            "sleep=duration:45s",
+            "sleep=duration:30s",
          }
       },
    },
