@@ -11,25 +11,29 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     animations = {
       idle = {
-         hotspot = { 42, 50 },
+         hotspot = { 60, 59 },
       },
       working = {
          basename = "idle",
-         hotspot = { 42, 50 },
+         hotspot = { 60, 59 },
       },
     },
     
     size = "medium",
     enhancement = {
-        name = "europeans_brewery_normal",
+        name = "europeans_brewery_advanced",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2,
-            grout = 2
+            grout = 2,
+            planks = 2,
+            brick = 2,
+            marble = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2
-        }
+            scrap_wood = 4,
+            granite = 4,
+            marble = 2
+        },
     },
     buildcost = {
         log = 3,
@@ -53,7 +57,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 4 },
-        { name = "barley", amount = 4 }
+        { name = "barley", amount = 4 },
+        { name = "honey", amount = 4 }
     },
 
     programs = {
@@ -62,6 +67,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=brew_beer",
+                "sleep=duration:30s",
+                "call=brew_mead",
                 "return=skipped"
             }
         },
@@ -76,6 +83,21 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water barley",
                 "animate=working duration:3m",
                 "produce=beer"
+            }
+        },
+        brew_mead = {
+            -- TRANSLATORS: Completed/Skipped/Did not start brewing mead because ...
+            descname = pgettext("europeans_building", "brewing mead"),
+            actions = {
+                "return=skipped when economy needs water and not economy needs mead",
+                "return=skipped when economy needs barley and not economy needs mead",
+                "return=skipped when economy needs honey and not economy needs mead",
+                "return=skipped when economy needs beer and not economy needs mead",
+                "return=skipped when economy needs beer_strong and not economy needs mead",
+                "return=skipped unless site has honey",
+                "consume=water barley honey",
+                "animate=working duration:3m",
+                "produce=mead"
             }
         }
     },

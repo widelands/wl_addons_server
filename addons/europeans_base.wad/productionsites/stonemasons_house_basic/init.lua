@@ -21,13 +21,18 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
     enhancement = {
-        name = "europeans_stonemasons_house_normal",
+        name = "europeans_stonemasons_house_advanced",
         enhancement_cost = {
             blackwood = 2,
-            grout = 2
+            grout = 2,
+            planks = 2,
+            brick = 2,
+            marble = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2
+            scrap_wood = 4,
+            granite = 4,
+            marble = 2
         },
     },
     buildcost = {
@@ -51,8 +56,9 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "granite", amount = 6 },
+        { name = "clay", amount = 6 },
         { name = "water", amount = 6 },
-        { name = "coal", amount = 4 }
+        { name = "coal", amount = 6 }
     },
 
     programs = {
@@ -61,6 +67,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=mixing_grout",
+                "sleep=duration:30s",
+                "call=burning_bricks",
                 "return=skipped"
             }
         },
@@ -76,6 +84,21 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/barbarians/mortar priority:60%",
                 "animate=working duration:1m",
                 "produce=grout:3"
+            }
+        },
+        burning_bricks = {
+            -- TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
+            descname = pgettext("europeans_building", "burning bricks"),
+            actions = {
+                "return=skipped when economy needs grout and not economy needs brick",
+                "return=skipped when economy needs granite and not economy needs brick",
+                "consume=granite clay:3",
+                "playsound=sound/barbarians/stonegrind priority:80%",
+                "animate=working duration:1m",
+                "consume=coal:2",
+                "playsound=sound/barbarians/stonegrind priority:80%",
+                "animate=working duration:2m",
+                "produce=brick:3"
             }
         }
     },

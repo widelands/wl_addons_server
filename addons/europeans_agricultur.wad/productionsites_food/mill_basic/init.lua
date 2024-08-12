@@ -11,33 +11,41 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     animations = {
       idle = {
-         hotspot = { 41, 58 },
+         hotspot = { 63, 68 },
       },
-      unoccupied = {
-         hotspot = { 41, 58 },
-      },
+    },
+    spritesheets = {
       working = {
-         basename = "idle",
-         hotspot = { 41, 58 },
+         fps = 25,
+         frames = 19,
+         columns = 10,
+         rows = 2,
+         hotspot = { 63, 68 },
       },
     },
     
     size = "medium",
     enhancement = {
-        name = "europeans_mill_normal",
+        name = "europeans_mill_advanced",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 4,
-            grout = 2
+            grout = 2,
+            planks = 2,
+            brick = 2,
+            marble = 2,
+            cloth = 4
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2
+            scrap_wood = 4,
+            granite = 4,
+            marble = 2
         },
     },
     buildcost = {
         log = 3,
         reed = 3,
-        granite = 3
+        granite = 3,
+        cloth = 2
     },
     return_on_dismantle = {
         scrap_wood = 3,

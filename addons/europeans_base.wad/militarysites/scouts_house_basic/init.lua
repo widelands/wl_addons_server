@@ -33,12 +33,16 @@ wl.Descriptions():new_productionsite_type {
     destructible = true,
     
     enhancement = {
-        name = "europeans_scouts_house_normal",
+        name = "europeans_scouts_house_advanced",
         enhancement_cost = {
-            blackwood = 2
+            blackwood = 1,
+            grout = 1,
+            planks = 1,
+            brick = 1,
+            marble = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1
+            scrap_wood = 2
         },
     },
 

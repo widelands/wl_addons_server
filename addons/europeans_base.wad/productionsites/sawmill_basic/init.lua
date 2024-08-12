@@ -37,13 +37,18 @@ wl.Descriptions():new_productionsite_type {
    
     size = "medium",
     enhancement = {
-        name = "europeans_sawmill_normal",
+        name = "europeans_sawmill_advanced",
         enhancement_cost = {
             blackwood = 2,
-            grout = 2
+            grout = 2,
+            planks = 2,
+            brick = 2,
+            marble = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2
+            scrap_wood = 4,
+            granite = 4,
+            marble = 2
         },
     },
     buildcost = {
@@ -76,7 +81,35 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=hardening_wood",
+                "sleep=duration:30s",
+                "call=saw_log",
                 "return=skipped"
+            }
+        },
+        saw_log = {
+            -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
+            descname = pgettext("europeans_building", "sawing logs"),
+            actions = {
+                "return=skipped when economy needs log and not economy needs planks",
+                "return=skipped when economy needs blackwood and not economy needs planks",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "produce=planks:2",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "consume=log",
+                "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
+                "animate=working duration:1m",
+                "produce=scrap_wood",
+                "produce=planks:2"
             }
         },
         hardening_wood = {
@@ -84,6 +117,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
                 "return=skipped when economy needs log and not economy needs blackwood",
+                "return=skipped when economy needs planks and not economy needs blackwood",
                 "consume=log",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:1m",

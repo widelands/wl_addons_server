@@ -23,16 +23,21 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
     enhancement = {
-        name = "europeans_weaving_mill_normal",
+        name = "europeans_weaving_mill_advanced",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2,
-            grout = 2
+            grout = 2,
+            planks = 2,
+            brick = 2,
+            marble = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2
-        },
+            scrap_wood = 3,
+            granite = 3,
+            marble = 2
+        }
     },
+    
     buildcost = {
         log = 3,
         reed = 3,

@@ -5,12 +5,12 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_worker_type {
     name = "europeans_forester_basic",
     -- TRANSLATORS: This is a worker name used in lists of workers
-    descname = pgettext("europeans_worker", "Basic Forester / Ranger"),
+    descname = pgettext("europeans_worker", "Basic Ranger"),
     icon = dirname .. "menu.png",
     vision_range = 2,
 
-    experience = 24,
-    becomes = "europeans_forester_normal",
+    experience = 48,
+    becomes = "europeans_forester_advanced",
     
     buildcost = {
         europeans_carrier = 1,

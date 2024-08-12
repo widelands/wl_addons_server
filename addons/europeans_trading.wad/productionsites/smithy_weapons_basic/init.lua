@@ -35,15 +35,18 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
     enhancement = {
-        name = "europeans_weaponsmithy_normal",
+        name = "europeans_weaponsmithy_advanced",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2,
-            grout = 2
+            grout = 2,
+            planks = 2,
+            brick = 2,
+            marble = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2
+            scrap_wood = 4,
+            granite = 4,
+            marble = 2
         },
     },
     buildcost = {

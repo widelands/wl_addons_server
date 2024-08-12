@@ -54,7 +54,6 @@ wl.Descriptions():new_productionsite_type {
         { name = "armor", amount = 6 },
         { name = "cloth", amount = 4 },
         { name = "planks", amount = 4 },
-        { name = "leather", amount = 4 },
         { name = "rubber", amount = 4 }
     },
 
@@ -109,7 +108,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_wooden and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_processed and not economy needs armor_compressed",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_compressed",
-                "consume=armor:2 leather,rubber",
+                "consume=armor:2 rubber",
                 "animate=working duration:6m",
                 "produce=armor_compressed:2"
             }
@@ -121,7 +120,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs armor_wooden and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_processed and not economy needs armor_advanced",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_advanced",
-                "consume=armor:2 leather,rubber:2",
+                "consume=armor:2 rubber:2",
                 "animate=working duration:6m",
                 "produce=armor_advanced:2"
             }

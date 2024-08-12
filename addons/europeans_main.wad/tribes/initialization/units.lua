@@ -690,15 +690,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_shipwright_normal",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Shipwright
-                    purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
-                }
-            },
-            {
                 name = "europeans_shipwright_advanced",
                 default_target_quantity = 4,
                 preciousness = 1,
@@ -716,29 +707,11 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_worker", "Works at construction sites to raise new buildings.")
                 }
             },
-            {
-                name = "europeans_geologist",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Geologist
-                    purpose = pgettext("europeans_worker", "Discovers resources for mining.")
-                }
-            }
         },
         {
             -- Collectors, Supporters and Producer (Wood, Reed)
             {
                 name = "europeans_lumberjack_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
-                    purpose = pgettext("europeans_worker", "Fells trees.")
-                }
-            },
-            {
-                name = "europeans_lumberjack_normal",
                 default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
@@ -765,15 +738,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_forester_normal",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
-                    purpose = pgettext("europeans_worker", "Plant trees.")
-                }
-            },
-            {
                 name = "europeans_forester_advanced",
                 default_target_quantity = 4,
                 preciousness = 1,
@@ -786,16 +750,16 @@ wl.Descriptions():new_tribe {
         {
             -- Miners and Stonecutters
             {
-                name = "europeans_stonecutter_basic",
+                name = "europeans_geologist",
                 default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Stonecutter
-                    purpose = pgettext("europeans_worker", "Cuts blocks of granite and marble out of rocks in the vicinity.")
+                    -- TRANSLATORS: Helptext for an Europeans worker: Geologist
+                    purpose = pgettext("europeans_worker", "Discovers resources for mining.")
                 }
             },
             {
-                name = "europeans_stonecutter_normal",
+                name = "europeans_stonecutter_basic",
                 default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
@@ -871,16 +835,6 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_scout_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Scout
-                    purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
-                    -- (c) WiHack Team 02.01.2010
-                }
-            },
-            {
-                name = "europeans_scout_normal",
                 default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
@@ -1319,15 +1273,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_lumberjacks_house_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Woodcutter's House
-                purpose = pgettext("europeans_building", "Fells trees in the surrounding area and processes them into logs."),
-                -- TRANSLATORS: Note helptext for an Europeans production site: Woodcutter's House
-                note = pgettext("europeans_building", "The woodcutter’s house needs trees to fell within the work area.")
-            }
-        },
-        {
             name = "europeans_lumberjacks_house_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Lumberjack's House
@@ -1343,15 +1288,6 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
                 -- TRANSLATORS: Note helptext for a Europeans production site: Ranger's Hut
                 note = pgettext("europeans_building", "The ranger’s hut needs free space within the work area to plant the trees."),
-            }
-        },
-        {
-            name = "europeans_tree_nursery_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
-                purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
-                -- TRANSLATORS: Note helptext for an Europeans production site: Forester's House
-                note = pgettext("europeans_building", "The forester’s house needs free space within the work area to plant the trees.")
             }
         },
         {
@@ -1373,15 +1309,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_quarry_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
-                purpose = pgettext("europeans_building", "Cuts blocks of granite out of rocks in the vicinity."),
-                -- TRANSLATORS: Note helptext for an Europeans production site: Quarry
-                note = pgettext("europeans_building", "The quarry needs rocks to cut within the work area.")
-            }
-        },
-        {
             name = "europeans_quarry_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
@@ -1394,13 +1321,6 @@ wl.Descriptions():new_tribe {
             name = "europeans_scouts_house_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
-                purpose = pgettext("building", "Explores unknown territory.")
-            }
-        },
-        {
-            name = "europeans_scouts_house_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
                 purpose = pgettext("building", "Explores unknown territory.")
             }
         },
@@ -1470,13 +1390,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_sawmill_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-                purpose = pgettext("europeans_building", "Hardening log to produce blackwood and saws log to produce planks.")
-            }
-        },
-        {
             name = "europeans_sawmill_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
@@ -1491,13 +1404,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_charcoal_kiln_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
-                purpose = pgettext("europeans_building", "Burns logs into charcoal.")
-            }
-        },
-        {
             name = "europeans_charcoal_kiln_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
@@ -1506,15 +1412,6 @@ wl.Descriptions():new_tribe {
         },
         {
             name = "europeans_stonemasons_house_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
-                purpose = pgettext("europeans_building", "Processes clay and granite to make bricks and ‘grout’, a substance that solidifies and so reinforces masonry."),
-                -- TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
-                note = pgettext("europeans_building", "The lime kiln’s output will only go to construction sites that need it. Brick and grout only used by advanced buildings."),
-            }
-        },
-        {
-            name = "europeans_stonemasons_house_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
                 purpose = pgettext("europeans_building", "Processes clay and granite to make bricks and ‘grout’, a substance that solidifies and so reinforces masonry."),
@@ -1539,13 +1436,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_smelting_works_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
-                purpose = pgettext("europeans_building", "Smelts ore into iron and gold.")
-            }
-        },
-        {
             name = "europeans_smelting_works_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
@@ -1556,13 +1446,6 @@ wl.Descriptions():new_tribe {
         -- Big
         {
             name = "europeans_manufactory_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
-                purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
-            }
-        },
-        {
-            name = "europeans_manufactory_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
                 purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
@@ -1972,15 +1855,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_ferry_yard_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
-                purpose = pgettext("europeans_building", "Builds ferries."),
-                -- TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
-                note = pgettext("europeans_building", "Needs water nearby.")
-            }
-        },
-        {
             name = "europeans_ferry_yard_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
@@ -1991,13 +1865,6 @@ wl.Descriptions():new_tribe {
         },
         {
             name = "europeans_shipyard_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
-                purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports.")
-            }
-        },
-        {
-            name = "europeans_shipyard_normal",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
                 purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports.")

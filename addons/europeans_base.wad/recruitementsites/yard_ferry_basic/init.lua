@@ -20,19 +20,24 @@ wl.Descriptions():new_productionsite_type {
     map_check = {"waterways"},
     
     enhancement = {
-        name = "europeans_ferry_yard_normal",
+        name = "europeans_ferry_yard_advanced",
         enhancement_cost = {
-            blackwood = 2,
-            grout = 2,
+            blackwood = 1,
+            grout = 1,
+            planks = 1,
+            brick = 1,
+            marble = 1,
+            marble_column = 1,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
-            granite = 1,
+            granite = 2,
+            marble = 3,
             quartz = 1,
             diamond = 1
-        },
+        }
     },
     buildcost = {
         blackwood = 2,

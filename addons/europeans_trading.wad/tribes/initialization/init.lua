@@ -16,6 +16,8 @@ local init_europeans = {
 
     starting_conditions = {
         "addons/europeans_trading.wad/tribes/scripting/starting_conditions/trading_outpost.lua";
+        "addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_human.lua";
+        "addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua";
     }
 }
 pop_textdomain()

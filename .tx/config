@@ -508,6 +508,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:notify-speed-wad]
+file_filter            = po/notify-speed.wad/<lang>.po
+source_file            = po/notify-speed.wad/notify-speed.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:perma-resi-wad]
 file_filter            = po/perma-resi.wad/<lang>.po
 source_file            = po/perma-resi.wad/perma-resi.wad.pot

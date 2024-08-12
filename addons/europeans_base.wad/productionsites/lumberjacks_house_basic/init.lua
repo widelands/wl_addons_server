@@ -28,13 +28,18 @@ wl.Descriptions():new_productionsite_type {
     
     size = "small",
     enhancement = {
-        name = "europeans_lumberjacks_house_normal",
+        name = "europeans_lumberjacks_house_advanced",
         enhancement_cost = {
             blackwood = 1,
-            grout = 1
+            grout = 1,
+            planks = 1,
+            brick = 1,
+            marble = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1
+            scrap_wood = 2,
+            granite = 2,
+            marble = 1
         },
     },
     buildcost = {

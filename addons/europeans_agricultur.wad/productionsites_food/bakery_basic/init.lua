@@ -11,35 +11,31 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     animations = {
       idle = {
-         hotspot = { 57, 88 },
+         hotspot = { 41, 58 },
       },
-    },
-    spritesheets = {
-      build = {
-         frames = 4,
-         rows = 2,
-         columns = 2,
-         hotspot = { 51, 70 }
+      unoccupied = {
+         hotspot = { 41, 58 },
       },
       working = {
-         frames = 20,
-         rows = 5,
-         columns = 4,
-         hotspot = { 51, 70 }
+         basename = "idle",
+         hotspot = { 41, 58 },
       },
     },
     
     size = "medium",
     enhancement = {
-        name = "europeans_bakery_normal",
+        name = "europeans_bakery_advanced",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2,
-            grout = 2
+            grout = 2,
+            planks = 2,
+            brick = 2,
+            marble = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2,
+            scrap_wood = 4,
+            granite = 4,
+            marble = 2
         },
     },
     buildcost = {
@@ -64,7 +60,8 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "water", amount = 4 },
-        { name = "flour", amount = 4 }
+        { name = "flour", amount = 4 },
+        { name = "honey", amount = 4 }
     },
 
     programs = {
@@ -73,6 +70,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_bread",
+                "sleep=duration:30s",
+                "call=produce_honey_bread",
                 "return=skipped"
             }
         },
@@ -87,6 +86,21 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water:2 flour:2",
                 "animate=working duration:3m",
                 "produce=bread:2"
+            }
+        },
+        produce_honey_bread = {
+            -- TRANSLATORS: Completed/Skipped/Did not start Baking bread because ...
+            descname = pgettext("europeans_building", "Baking honey bread"),
+            actions = {
+                "return=skipped when economy needs water and not economy needs honey_bread",
+                "return=skipped when economy needs flour and not economy needs honey_bread",
+                "return=skipped when economy needs honey and not economy needs honey_bread",
+                "return=skipped when economy needs bread and not economy needs honey_bread",
+                "return=skipped when economy needs biscuit and not economy needs honey_bread",
+                "return=skipped unless site has honey",
+                "consume=water:2 flour:2 honey",
+                "animate=working duration:3m",
+                "produce=honey_bread:2"
             }
         }
     },

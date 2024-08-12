@@ -7,15 +7,21 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Weapon Market"),
     icon = dirname .. "menu.png",
-
+    
     animation_directory = dirname,
-    animations = {
+    spritesheets = {
       idle = {
-         hotspot = { 86, 91 },
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 87, 113 }
       },
       working = {
          basename = "idle",
-         hotspot = { 86, 91 },
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 87, 113 }
       }
     },
 

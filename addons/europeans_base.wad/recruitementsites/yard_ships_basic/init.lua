@@ -26,18 +26,24 @@ wl.Descriptions():new_productionsite_type {
     destructible = true,
     
     enhancement = {
-        name = "europeans_shipyard_normal",
+        name = "europeans_shipyard_advanced",
         enhancement_cost = {
-            blackwood = 2,
-            grout = 2,
+            blackwood = 1,
+            grout = 1,
+            planks = 1,
+            brick = 1,
+            marble = 1,
+            marble_column = 1,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
+            granite = 2,
+            marble = 3,
             quartz = 1,
             diamond = 1
-        },
+        }
     },
     buildcost = {
         log = 3,
