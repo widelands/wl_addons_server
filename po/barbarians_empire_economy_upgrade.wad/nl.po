@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-08 03:08+0200\n"
+"POT-Creation-Date: 2024-08-13 03:09+0200\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -31,6 +31,10 @@ msgid ""
 "competitive. With this upgrade, you need one lump of coal to produce 2 "
 "pieces of metal. Build costs of some militarary sites modified too."
 msgstr ""
+"De upgrade van smelters en steenhouwers maakt de barbaren en het rijk "
+"competitiever. Met deze upgrade heb je één brok steenkool nodig om 2 stukken "
+"metaal te produceren. De bouwkosten van sommige militaire sites zijn ook "
+"aangepast."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:8
@@ -142,7 +146,7 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/empire_mill_small/init.lua:8
 msgctxt "empire_building"
 msgid "Small Mill"
-msgstr ""
+msgstr "Kleine Molen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_mill_small/init.lua:47
@@ -184,7 +188,7 @@ msgstr "marmeren zuilen beeldhouwen"
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:23
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:27
 msgid "Fishes on the coast near the fisher’s house."
-msgstr ""
+msgstr "Vissen aan de kust bij het vissershuis."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:24
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:28
@@ -193,10 +197,13 @@ msgid ""
 "ordinary fisher can't reach. He has a larger working area so you can get "
 "more fishes in total. It is useful only on open waters."
 msgstr ""
+"De onafhankelijke visser werkt langzaam maar kan vissen op plaatsen waar een "
+"gewone visser niet kan komen. Hij heeft een groter werkgebied zodat je in "
+"totaal meer vissen kunt vangen. Hij is alleen bruikbaar op open water."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:34
 msgid "Carves marble columns out of marble."
-msgstr ""
+msgstr "Kerft marmeren zuilen uit marmer."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:35
 msgid ""
@@ -204,30 +211,36 @@ msgid ""
 "To produce one bulk of 3 columns the building need 4 pieces of marble in "
 "stock."
 msgstr ""
+"Een geavanceerd steenhouwershuis heeft minder marmer nodig om één marmeren "
+"zuil te produceren. Om één bulk van 3 zuilen te produceren heeft het gebouw "
+"4 stukken marmer op voorraad nodig."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:38
 msgid "Sows and harvests wheat."
-msgstr ""
+msgstr "Zaait en oogst tarwe."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:39
 msgid ""
 "Production of two small farms is approximately equal to production of one "
 "normal farm."
 msgstr ""
+"De productie van twee kleine boerderijen is ongeveer gelijk aan de productie "
+"van één normale boerderij."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:42
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Maalt tarwe om bloem te maken."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:43
 msgctxt "empire_building"
 msgid "The miller needs %1% on average to grind wheat into a sack of flour."
 msgstr ""
+"De molenaar heeft gemiddeld %1% tarwe nodig om er een zak meel van te maken."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:88
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:92
 msgid "Smelts iron ore into iron and gold ore into gold."
-msgstr ""
+msgstr "Smelt ijzererts om in ijzer en gouderts in goud."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:89
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:93
@@ -237,3 +250,7 @@ msgid ""
 "smelting works. When there are not 2 pieces of required ore in stock, the "
 "building operates as a basic smelting works."
 msgstr ""
+"Een geavanceerde smelterij heeft slechts één brok steenkool nodig om 2 "
+"ijzerbaren of 2 goudstaven te produceren. Het gebouw produceert sneller "
+"ijzer en goud dan de basissmelterij. Als er geen 2 stukken van het benodigde "
+"erts in voorraad zijn, werkt het gebouw als een basissmelterij."

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 03:08+0200\n"
+"POT-Creation-Date: 2024-08-13 03:10+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1778,10 +1778,9 @@ msgstr "Markthuus, waar man Stevels tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1427
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale weapons for coins."
-msgstr "Markthuus, waar man Stevels tegen Deiten verkopen kann."
+msgstr "Markthuus, waar man Wapens tegen Deiten verkopen kann."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1434
@@ -2947,22 +2946,24 @@ msgstr[1] "%1%(+%2%) Soldaten"
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
 msgid "Headquarters (AI optimized)"
-msgstr ""
+msgstr "Raadhuus (künstelk Speler)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:13
 msgid "AI optimized starting condition, not for human player."
 msgstr ""
+"Anfangskondiesje, wat för künstelk Spelers dacht is un nich för de minskelk "
+"Speler."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_human.lua:11
 msgid "Headquarters"
-msgstr ""
+msgstr "Raadhuus"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
-msgstr ""
+msgstr "Begünn dat Speel mit nix as dien Raadhuus."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/trading_outpost.lua:11
@@ -3001,64 +3002,3 @@ msgstr "Goder Gaardner"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Hannelsmann"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Big Manufactory"
-#~ msgstr "Fabrik"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing blackwood to create tools and weapons"
-#~ msgstr "Haartholt tum Produzeren vun Warktüüg un Wapens to bruken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing reed or cotton to create tools and armor"
-#~ msgstr ""
-#~ "Reit of Boomwull tum Produzeren vun Warktüüg un Wapenrocken to bruken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Shoemakers House"
-#~ msgstr "Schoosteree"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Toolsmithy"
-#~ msgstr "Warktüügsmee"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaponsmithy"
-#~ msgstr "Wapensmee"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Tailors House"
-#~ msgstr "Sniederee"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Smelting Works"
-#~ msgstr "Smelteree"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaving Mill"
-#~ msgstr "Spinnweelmöhlen"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale rubber for coins."
-#~ msgstr "Markthuus, waar man Gummi elasticum tegen Deiten verkopen kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "The woodcutter’s house needs trees to fell within the work area."
-#~ msgstr "De Boomslageree bruukt Bomen tum Umkappen in de Arbeidsgewest."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Cuts blocks of granite out of rocks in the vicinity."
-#~ msgstr "Sleit Flint ut Stenen in de Naberskupp."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Weaves cloth for buildings and ships’ sails, and armor to equip and train "
-#~ "the soldiers."
-#~ msgstr ""
-#~ "Spinnt Stoff för Husen un de Seils vun Schippen, un Wapenrocken, um "
-#~ "Soldaten uttorüsten un to lehren."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smelts ore into iron and gold."
-#~ msgstr "Smelt Kluten to Iesen un Gold."

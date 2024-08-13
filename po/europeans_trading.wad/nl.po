@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 03:08+0200\n"
+"POT-Creation-Date: 2024-08-13 03:10+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -64,7 +64,7 @@ msgstr "werkende"
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:80
 msgctxt "europeans_building"
 msgid "processing planks to create tools and weapons"
-msgstr ""
+msgstr "planken verwerken tot gereedschap en wapens"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:90
@@ -1805,10 +1805,9 @@ msgstr "Marktgebouw om laarzen te verkopen voor munten."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1427
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Market building to sale weapons for coins."
-msgstr "Marktgebouw om laarzen te verkopen voor munten."
+msgstr "Marktgebouw om wapens te verkopen voor munten."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1434
@@ -2983,22 +2982,22 @@ msgstr[1] "%1%(+%2%) soldaten"
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
 msgid "Headquarters (AI optimized)"
-msgstr ""
+msgstr "Hoofdkwartier (AI geoptimaliseerd)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:13
 msgid "AI optimized starting condition, not for human player."
-msgstr ""
+msgstr "AI geoptimaliseerde startconditie, niet voor menselijke speler."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_human.lua:11
 msgid "Headquarters"
-msgstr ""
+msgstr "Hoofdkwartier"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
 msgid "Start the game with your headquarters only."
-msgstr ""
+msgstr "Start het spel met alleen je hoofdkwartier."
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/trading_outpost.lua:11
@@ -3037,60 +3036,3 @@ msgstr "Normale Tuinman"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Handelaar"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Big Manufactory"
-#~ msgstr "Normale Grote Fabriek"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing reed or cotton to create tools and armor"
-#~ msgstr "riet of katoen verwerken tot gereedschap en pantser"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Shoemakers House"
-#~ msgstr "Normaal Schoenmakershuis"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Toolsmithy"
-#~ msgstr "Normaal Gereedschapsmakerij"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaponsmithy"
-#~ msgstr "Normale Wapenmakerij"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Tailors House"
-#~ msgstr "Normaal Kleermakershuis"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Smelting Works"
-#~ msgstr "Normale Smelterij"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Weaving Mill"
-#~ msgstr "Normale Weverij"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale rubber for coins."
-#~ msgstr "Marktgebouw om rubber te verkopen voor munten."
-
-#~ msgctxt "europeans_building"
-#~ msgid "The woodcutter’s house needs trees to fell within the work area."
-#~ msgstr ""
-#~ "Het houthakkershuis heeft bomen nodig om te kappen binnen het werkgebied."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Cuts blocks of granite out of rocks in the vicinity."
-#~ msgstr "Zaagt blokken graniet uit rotsen in de omgeving."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Weaves cloth for buildings and ships’ sails, and armor to equip and train "
-#~ "the soldiers."
-#~ msgstr ""
-#~ "Weeft stoffen voor gebouwen en scheepszeilen, harnassen om de soldaten "
-#~ "uit te rusten en te trainen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smelts ore into iron and gold."
-#~ msgstr "Smelt erts tot ijzer en goud."

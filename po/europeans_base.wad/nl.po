@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 03:08+0200\n"
+"POT-Creation-Date: 2024-08-13 03:09+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -786,7 +786,7 @@ msgstr "Haven"
 #: addons/europeans_base.wad/militarysites/port_big/init.lua:8
 msgctxt "europeans_building"
 msgid "Big Port"
-msgstr ""
+msgstr "Grote Haven"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/militarysites/scouts_house_advanced/init.lua:8
@@ -1582,7 +1582,7 @@ msgstr "Geavanceerde Grote Fabriek"
 #: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:78
 msgctxt "europeans_building"
 msgid "processing blackwood to create tools and weapons"
-msgstr ""
+msgstr "verwerking van zwarthout om gereedschappen en wapens te maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:88
@@ -3408,10 +3408,9 @@ msgstr "Gevorderde Boswachter"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_base.wad/workers/forester_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Ranger"
-msgstr "Basis Trainer"
+msgstr "Basis Boswachter"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_base.wad/workers/geologist/init.lua:8
@@ -3538,88 +3537,3 @@ msgstr "Basis Werker"
 msgctxt "europeans_worker"
 msgid "Normal Worker"
 msgstr "Normale Werker"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Scout’s House"
-#~ msgstr "Normaal Verkennershuis"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Charcoal Kiln"
-#~ msgstr "Normale Houtskooloven"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Lumberjack's House"
-#~ msgstr "Normaal Houthakkershuis"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The woodcutter working at this woodcutter’s house can’t find any trees in "
-#~ "his work area. You should consider enhancing it to increase its working "
-#~ "area or building a forester’s house."
-#~ msgstr ""
-#~ "De houthakker die in dit houthakkershuis werkt, kan geen bomen vinden in "
-#~ "zijn werkgebied. Je zou moeten overwegen om zijn werkgebied te vergroten "
-#~ "of een boswachtershuis te bouwen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Big Manufactory"
-#~ msgstr "Normale Grote Fabriek"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Quarry"
-#~ msgstr "Normale Steengroeve"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The stonecutter working at this quarry can’t find any rocks in his work "
-#~ "area."
-#~ msgstr ""
-#~ "De steenhouwer die in deze steengroeve werkt, kan geen stenen vinden in "
-#~ "zijn werkgebied."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Sawmill"
-#~ msgstr "Normale Houtzagerij"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Smelting Works"
-#~ msgstr "Normale Smelterij"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Lime Kiln"
-#~ msgstr "Normale Kalkoven"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Tree Nursery"
-#~ msgstr "Normaal Boomkwekerij"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Ferry Yard"
-#~ msgstr "Normale Veerboot Werf"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Shipyard"
-#~ msgstr "Normale Scheepswerf"
-
-#~ msgid "constructing a ship"
-#~ msgstr "een schip bouwen"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Forester / Ranger"
-#~ msgstr "Basis Boswachter / Ranger"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Forester"
-#~ msgstr "Normale Boswachter"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Scout"
-#~ msgstr "Normale Verkenner"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Shipwright"
-#~ msgstr "Normale Scheepsbouwer"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Stonecutter"
-#~ msgstr "Normale Steenhouwer"
