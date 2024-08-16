@@ -28,7 +28,11 @@ wl.Descriptions():new_productionsite_type {
     size = "small",
     destructible = true,
     
-    aihints = {},
+    aihints = {
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
+    },
 
     working_positions = {
         europeans_scout_advanced = 1

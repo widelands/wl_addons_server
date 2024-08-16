@@ -37,15 +37,18 @@ wl.Descriptions():new_productionsite_type {
     
     size = "big",
     enhancement = {
-        name = "europeans_farm_normal",
+        name = "europeans_farm_advanced",
         enhancement_cost = {
             blackwood = 3,
-            cloth = 3,
-            grout = 3
+            grout = 3,
+            planks = 3,
+            brick = 3,
+            marble = 3
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 3,
-            granite = 3,
+            scrap_wood = 5,
+            granite = 5,
+            marble = 2
         },
     },
     buildcost = {
@@ -61,9 +64,10 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         space_consumer = true,
         supports_seafaring = true,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
+        basic_amount = 1,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
     },
 
     working_positions = {
@@ -99,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=plant_reed",
                 "call=plant_rye",
                 "call=plant_reed",
-                "call=plant_wheat",
+                "call=plant_wheat"
             }
         },
         making_honey = {
@@ -109,6 +113,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:2s",
                 "callworker=check_flower",
                 "callworker=bees",
+                "produce=honey"
             }
         },
         harvesting = {
@@ -123,7 +128,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=harvest_reed",
                 "call=harvest_rye",
                 "call=harvest_reed",
-                "call=harvest_wheat",
+                "call=harvest_wheat"
             }
         },
         pausing_production_for_inputs = {
@@ -131,7 +136,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has water:6",
-                "sleep=duration:5m",
+                "sleep=duration:5m"
             }
         },
         pausing_production_for_outputs = {
@@ -142,7 +147,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs barley",
                 "return=skipped when economy needs rye",
                 "return=skipped when economy needs wheat",
-                "sleep=duration:10m",
+                "sleep=duration:10m"
             }
         },
         plant_barley = {

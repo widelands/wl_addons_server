@@ -9,20 +9,14 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
-    spritesheets = {
+    animations = {
       idle = {
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 39, 61 }
+         hotspot = { 40, 50 },
       },
       working = {
          basename = "idle",
-         frames = 1,
-         columns = 1,
-         rows = 1,
-         hotspot = { 39, 61 }
-      }
+         hotspot = { 40, 50 },
+      },
     },
     
     size = "small",
@@ -30,8 +24,8 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         space_consumer = true,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
     },
 
     working_positions = {
@@ -73,7 +67,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:1s",
                 "call=making_pond",
                 "sleep=duration:1s",
-                "call=planting_cotton",
+                "call=planting_cotton"
             }
         },
         watering = {
@@ -84,7 +78,7 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=check_growable_plants",
                 "return=skipped unless site has water",
                 "consume=water",
-                "callworker=watering",
+                "callworker=watering"
             }
         },
         making_pond = {

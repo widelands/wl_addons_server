@@ -38,14 +38,18 @@ wl.Descriptions():new_productionsite_type {
     
     size = "small",
     enhancement = {
-        name = "europeans_farm_small_normal",
+        name = "europeans_farm_small_advanced",
         enhancement_cost = {
             blackwood = 1,
-            cloth = 1,
-            grout = 1
+            grout = 1,
+            planks = 1,
+            brick = 1,
+            marble = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1
+            scrap_wood = 2,
+            granite = 2,
+            marble = 1
         },
     },
     buildcost = {
@@ -62,8 +66,8 @@ wl.Descriptions():new_productionsite_type {
         space_consumer = true,
         basic_amount = 2,
         very_weak_ai_limit = 2,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
     },
 
     working_positions = {
@@ -101,7 +105,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:1s",
                 "call=making_pond",
                 "sleep=duration:1s",
-                "call=planting_reed",
+                "call=planting_reed"
             }
         },
         making_pond = {

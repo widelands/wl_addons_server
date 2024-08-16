@@ -612,7 +612,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
-                    purpose = pgettext("europeans_ware", "This is a advanced spear with a steel tip. It is produced in a manufactory and used in a battle arena – together with food – to train soldiers in attack.")
+                    purpose = pgettext("europeans_ware", "This is a advanced spear with a steel tip. It is produced in a manufactory and used in a battle arena to train soldiers in attack.")
                 }
             },
             {
@@ -621,7 +621,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Broad Ax
-                    purpose = pgettext("europeans_ware", "This is an broad ax. It is produced in a manufactory and used in a battle arena – together with food – to train soldiers in attack.")
+                    purpose = pgettext("europeans_ware", "This is an broad ax. It is produced in a manufactory and used in a battle arena to train soldiers in attack.")
                 }
             },
             {
@@ -630,7 +630,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Broad Sword
-                    purpose = pgettext("europeans_ware", "This is a broad sword. It is produced in the advanced manufactory and used in a battle arena – together with food – to train soldiers in attack.")
+                    purpose = pgettext("europeans_ware", "This is a broad sword. It is produced in the advanced manufactory and used in a battle arena to train soldiers in attack.")
                 }
             },
             {
@@ -648,7 +648,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-                    purpose = pgettext("europeans_ware", "The mask is the medium defense tool of a soldier. It is produced in a manufactory and used in a battle arena – together with food – to train soldiers in defense.")
+                    purpose = pgettext("europeans_ware", "The mask is the medium defense tool of a soldier. It is produced in a manufactory and used in a battle arena to train soldiers in defense.")
                 }
             },
             {
@@ -657,7 +657,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Steel Shield
-                    purpose = pgettext("europeans_ware", "This steel shield is produced in a manufactory and used in a battle arena – together with food – to train soldiers in defense.")
+                    purpose = pgettext("europeans_ware", "This steel shield is produced in a manufactory and used in a battle arena to train soldiers in defense.")
                 }
             },
             {
@@ -666,7 +666,7 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
-                    purpose = pgettext("europeans_ware", "These advanced shields are used by the best soldiers of the Europeans. They are produced in the advanced manufactory and used in the advanced battle arena – together with food – to train soldiers in defense.")
+                    purpose = pgettext("europeans_ware", "These advanced shields are used by the best soldiers of the Europeans. They are produced in the advanced manufactory and used in the advanced battle arena to train soldiers in defense.")
                 }
             }
         }
@@ -1501,13 +1501,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_farm_small_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
-                purpose = pgettext("europeans_building", "Digs up mud from the ground and uses water to turn it into clay. Then plant reed and cotton in the holes created.")
-            }
-        },
-        {
             name = "europeans_farm_small_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
@@ -1880,17 +1873,6 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
                     pgettext("europeans_building", "Trains recruits to soldiers."),
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 2
-                    pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
-                },
-            }
-        },
-        {
-            name = "europeans_trainingscamp_normal",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 1
-                    pgettext("europeans_building", "Trains recruits to soldiers."),
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Normal Training Camp, part 2
                     pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
                 },
             }
@@ -2350,7 +2332,7 @@ wl.Descriptions():new_tribe {
       charcoal = "europeans_charcoal_kiln_basic",
       weaving_mill = "europeans_weaving_mill_basic",
       farm_primary = "europeans_farm_small_basic",
-      farm_secondary = "europeans_farm_small_normal",
+      farm_secondary = "europeans_farm_small_basic",
       farm_tertiary = "europeans_farm_small_advanced",
       agriculture_producer = "europeans_farm_small_basic",
       mine_coal = "europeans_coalmine_basic",

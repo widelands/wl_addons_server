@@ -51,8 +51,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "biscuit", amount = 4 },
-        { name = "beer_strong", amount = 4 },
+        { name = "honey_bread", amount = 4 },
+        { name = "mead", amount = 4 },
         { name = "meat", amount = 2 },
         { name = "fish", amount = 2 }
     },
@@ -63,13 +63,13 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining"),
             actions = {
                 "return=skipped unless economy needs coal or economy needs granite or economy needs diamond or workers need experience",
-                "consume=biscuit",
+                "consume=honey_bread",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=beer_strong",
+                "consume=mead",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
@@ -81,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_coal",
                 "call=mine_coal",
                 "sleep=duration:5s",
-                "consume=beer_strong",
+                "consume=mead",
                 "call=mine_stone",
                 "call=mine_coal",
                 "call=mine_coal",
@@ -116,7 +116,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=biscuit beer_strong:2 meat,fish",
+                "consume=honey_bread mead:2 meat,fish",
                 "produce=coal:10 granite:4 diamond:2",
             }
         },

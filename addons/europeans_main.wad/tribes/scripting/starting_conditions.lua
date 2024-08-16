@@ -430,7 +430,7 @@ function allow_barracks(player)
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
+        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_advanced"}
     end
 end
 
@@ -439,7 +439,7 @@ function forbid_barracks(player)
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
+        player:forbid_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_advanced"}
     end
 end
 

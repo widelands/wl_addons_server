@@ -7,7 +7,7 @@ wl.Descriptions():new_productionsite_type {
     -- TRANSLATORS: This is a building name used in lists of buildings
     descname = pgettext("europeans_building", "Advanced Animal Farm"),
     icon = dirname .. "menu.png",
-    
+
     animation_directory = dirname,
     spritesheets = {
       idle = {
@@ -26,38 +26,25 @@ wl.Descriptions():new_productionsite_type {
     },
     
     size = "big",
-    enhancement = {
-        name = "europeans_animal_farm_big",
-        enhancement_cost = {
-            planks = 1,
-            brick = 1,
-            marble = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 1,
-            granite = 1,
-            marble = 1
-        }
-    },
-
+    
     aihints = {
         very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 2,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
     },
 
     working_positions = {
         europeans_farmer_advanced = 1,
+        europeans_worker_advanced = 1,
         europeans_worker_normal = 1,
-        europeans_worker_basic = 1,
     },
 
     inputs = {
         { name = "water", amount = 10 },
         { name = "corn", amount = 6 },
         { name = "blackroot", amount = 6 },
-        { name = "fruit", amount = 4 },
-        { name = "grape", amount = 4 }
+        { name = "fruit", amount = 6 },
+        { name = "grape", amount = 6 }
     },
 
     programs = {
@@ -76,6 +63,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "call=produce_cattle",
                 "call=produce_donkey",
+                "call=produce_horse",
                 "return=skipped"
             }
         },
@@ -84,11 +72,12 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs meat or economy needs leather or economy needs fish or economy needs wool",
+                "return=skipped when economy needs europeans_carrier_ox or economy needs europeans_carrier_donkey or economy needs europeans_carrier_horse",
                 "return=skipped when economy needs water",
                 "return=skipped when economy needs flour or economy needs beer",
                 "consume=water:2 corn blackroot fruit",
                 "animate=working duration:60s",
-                "sleep=duration:3m"
+                "sleep=duration:2m"
             }
         },
         produce_wool = {
@@ -121,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
-                "consume=water blackroot,corn",
+                "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
                 "consume=water blackroot,corn",
@@ -141,13 +130,33 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
-                "consume=water blackroot,corn",
+                "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
                 "consume=water blackroot,corn",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
                 "recruit=europeans_carrier_donkey"
+            }
+        },
+        produce_horse = {
+            -- TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
+            descname = pgettext("europeans_building", "breeding horses"),
+            actions = {
+                "return=skipped unless economy needs europeans_carrier_horse or workers need experience",
+                "return=skipped when economy needs meat or economy needs leather or economy needs fish or economy needs wool",
+                "return=skipped when economy needs water",
+                "return=skipped unless site has water:3",
+                "consume=water blackroot,corn fruit,grape",
+                "playsound=sound/farm/horse priority:50% allow_multiple",
+                "animate=working duration:20s", -- Feeding cute little foals ;)
+                "consume=water blackroot,corn fruit,grape",
+                "playsound=sound/farm/horse priority:50% allow_multiple",
+                "animate=working duration:20s", -- Feeding cute little foals ;)
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/horse priority:50% allow_multiple",
+                "animate=working duration:20s", -- Feeding cute little foals ;)
+                "recruit=europeans_carrier_horse"
             }
         },
         produce_meat = {
@@ -159,10 +168,10 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water:2 blackroot,corn:2",
+                "consume=water:2 blackroot,corn:2 fruit grape",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water blackroot,corn",
+                "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=meat:4"
@@ -177,10 +186,10 @@ wl.Descriptions():new_productionsite_type {
                 "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water:2 blackroot,corn:2",
+                "consume=water:2 blackroot,corn:2 fruit grape",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water blackroot,corn",
+                "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
                 "produce=meat:4 leather"
@@ -203,7 +212,7 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:20s",
                 "produce=fish:4"
             }
-        }
+        },
     },
 }
 

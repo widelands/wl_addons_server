@@ -814,7 +814,7 @@ wl.Descriptions():new_tribe {
     -- Each subtable is a column in the workers windows.
     workers_order = {
         {
-            -- Carriers and Soldiers
+            -- Carriers
             {
                 name = "europeans_carrier",
                 helptexts = {
@@ -892,24 +892,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ferry
                     purpose = pgettext("europeans_worker", "Ships wares across narrow rivers.")
-                }
-            },
-            {
-                name = "europeans_recruit",
-                default_target_quantity = 64,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Recruit
-                    purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
-                }
-            },
-            {
-                name = "europeans_soldier",
-                default_target_quantity = 128,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Soldier
-                    purpose = pgettext("europeans_worker", "Defend and Conquer!")
                 }
             }
         },
@@ -1187,7 +1169,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            -- Training, Trading and Scouting
+            -- Training, Scouting and Soldiers
             {
                 name = "europeans_trainer_basic",
                 default_target_quantity = 1,
@@ -1235,6 +1217,24 @@ wl.Descriptions():new_tribe {
                     -- (c) WiHack Team 02.01.2010
                 }
             },
+            {
+                name = "europeans_recruit",
+                default_target_quantity = 64,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Recruit
+                    purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
+                }
+            },
+            {
+                name = "europeans_soldier",
+                default_target_quantity = 128,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Soldier
+                    purpose = pgettext("europeans_worker", "Defend and Conquer!")
+                }
+            }
         },
     },
 
@@ -2032,13 +2032,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_farm_small_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
-                purpose = pgettext("europeans_building", "Digs up mud from the ground and uses water to turn it into clay. Then plant reed and cotton in the holes created.")
-            }
-        },
-        {
             name = "europeans_farm_small_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
@@ -2199,17 +2192,10 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_farm_medium_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Farm
-                purpose = pgettext("europeans_building", "Sows and harvests reed and cotton."),
-            }
-        },
-        {
             name = "europeans_farm_medium_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
-                purpose = pgettext("europeans_building", "Sows and harvests reed, cotton and rubber."),
+                purpose = pgettext("europeans_building", "Sows and harvests reed, cotton, grape and fruits."),
             }
         },
         {
@@ -2359,13 +2345,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_farm_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Farm
-                purpose = pgettext("europeans_building", "Sows and harvests barley, blackroot, corn, rye and wheat."),
-            }
-        },
-        {
             name = "europeans_farm_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
@@ -2380,24 +2359,10 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_animal_farm_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Fish Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen for adding them to the transportation system. Additionally produces meat and fish for food production and leather for shoemaker."),
-            }
-        },
-        {
             name = "europeans_animal_farm_advanced",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Sheep Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful donkeys for adding them to the transportation system. Additionally keeps sheep for wool production and produces meat and fish for food production.")
-            }
-        },
-        {
-            name = "europeans_animal_farm_big",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Horse Farm
-                purpose = pgettext("europeans_building", "Breeds strong oxen, cute and helpful donkeys and strong horses for adding them to the transportation system. Additionally keeps sheep for wool production and produces meat and fish for food production.")
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Donkey Farm
+                purpose = pgettext("europeans_building", "Breeds strong oxen and cute and helpful horses and donkeys for adding them to the transportation system. Additionally keeps sheep for wool production and produces leather, meat and fish.")
             }
         },
 
@@ -3013,8 +2978,8 @@ wl.Descriptions():new_tribe {
       fisher = "europeans_animal_farm_normal",
       hunter = "europeans_animal_farm_basic",
       fish_meat_replenisher = "europeans_animal_farm_advanced",
-      farm_primary = "europeans_farm_basic",
-      farm_secondary = "europeans_farm_normal",
+      farm_primary = "europeans_farm_medium_basic",
+      farm_secondary = "europeans_farm_basic",
       farm_tertiary = "europeans_farm_advanced",
       agriculture_producer = "europeans_farm_advanced",
       agriculture_consumer_primary = "europeans_mill_basic",

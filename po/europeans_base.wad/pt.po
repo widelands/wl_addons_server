@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 03:08+0200\n"
+"POT-Creation-Date: 2024-08-16 03:09+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Language-Team: Portuguese (https://app.transifex.com/widelands/teams/35159/"
 "pt/)\n"
@@ -787,8 +787,8 @@ msgid "Advanced Scout’s House"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
-#: addons/europeans_base.wad/militarysites/scouts_house_advanced/init.lua:44
-#: addons/europeans_base.wad/militarysites/scouts_house_advanced/init.lua:59
+#: addons/europeans_base.wad/militarysites/scouts_house_advanced/init.lua:48
+#: addons/europeans_base.wad/militarysites/scouts_house_advanced/init.lua:63
 msgid "scouting"
 msgstr ""
 
@@ -1113,8 +1113,7 @@ msgstr ""
 #: addons/europeans_base.wad/productionsites/well_level_5/init.lua:58
 #: addons/europeans_base.wad/productionsites/well_level_6/init.lua:38
 #: addons/europeans_base.wad/recruitementsites/trainingscamp_advanced/init.lua:56
-#: addons/europeans_base.wad/recruitementsites/trainingscamp_basic/init.lua:82
-#: addons/europeans_base.wad/recruitementsites/trainingscamp_normal/init.lua:74
+#: addons/europeans_base.wad/recruitementsites/trainingscamp_basic/init.lua:88
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_advanced/init.lua:64
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:76
 #: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:66
@@ -2025,8 +2024,7 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_base.wad/recruitementsites/trainingscamp_advanced/init.lua:64
-#: addons/europeans_base.wad/recruitementsites/trainingscamp_basic/init.lua:90
-#: addons/europeans_base.wad/recruitementsites/trainingscamp_normal/init.lua:82
+#: addons/europeans_base.wad/recruitementsites/trainingscamp_basic/init.lua:96
 msgctxt "europeans_building"
 msgid "recruiting soldier"
 msgstr ""
@@ -2035,12 +2033,6 @@ msgstr ""
 #: addons/europeans_base.wad/recruitementsites/trainingscamp_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Trainingscamp"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/recruitementsites/trainingscamp_normal/init.lua:8
-msgctxt "europeans_building"
-msgid "Normal Trainingscamp"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings

@@ -261,7 +261,7 @@ function allow_advanced_productionsites(player)
         player:allow_buildings{"europeans_sawmill_advanced", "europeans_stonemasons_house_advanced"}
         player:allow_buildings{"europeans_charcoal_kiln_advanced", "europeans_smelting_works_advanced", "europeans_manufactory_advanced"}
         
-        player:allow_buildings{"europeans_farm_small_normal", "europeans_farm_small_advanced", "europeans_weaving_mill_advanced"}
+        player:allow_buildings{"europeans_farm_small_advanced", "europeans_weaving_mill_advanced"}
         player:allow_buildings{"europeans_toolsmithy_advanced", "europeans_shoemakers_house_advanced", "europeans_tailors_house_advanced", "europeans_weaponsmithy_advanced"}
     end
 end
@@ -279,7 +279,7 @@ function forbid_advanced_productionsites(player)
         player:forbid_buildings{"europeans_sawmill_advanced", "europeans_stonemasons_house_advanced"}
         player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_smelting_works_advanced", "europeans_manufactory_advanced"}
         
-        player:forbid_buildings{"europeans_farm_small_normal", "europeans_europeans_farm_small_advanced", "europeans_weaving_mill_advanced"}
+        player:forbid_buildings{"europeans_europeans_farm_small_advanced", "europeans_weaving_mill_advanced"}
         player:forbid_buildings{"europeans_toolsmithy_advanced", "europeans_shoemakers_house_advanced", "europeans_tailors_house_advanced", "europeans_weaponsmithy_advanced"}
     end
 end
@@ -373,7 +373,7 @@ function allow_barracks(player)
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
+        player:allow_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_advanced"}
     end
 end
 
@@ -382,7 +382,7 @@ function forbid_barracks(player)
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_normal", "europeans_trainingscamp_advanced"}
+        player:forbid_buildings{"europeans_trainingscamp_basic", "europeans_trainingscamp_advanced"}
     end
 end
 

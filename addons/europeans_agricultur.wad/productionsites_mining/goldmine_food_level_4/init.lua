@@ -52,8 +52,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "biscuit", amount = 4 },
-        { name = "beer_strong", amount = 4 },
+        { name = "honey_bread", amount = 4 },
+        { name = "mead", amount = 4 },
         { name = "meat", amount = 2 },
         { name = "fish", amount = 2 }
     },
@@ -65,14 +65,14 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
                 "return=skipped when economy needs coal and not economy needs ore",
-                "consume=biscuit",
+                "consume=honey_bread",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_marble",
                 "sleep=duration:5s",
-                "consume=beer_strong",
+                "consume=mead",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
@@ -85,7 +85,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_ore",
                 "call=mine_marble",
                 "sleep=duration:5s",
-                "consume=beer_strong",
+                "consume=mead",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
@@ -128,7 +128,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=biscuit beer_strong:2 meat,fish",
+                "consume=honey_bread mead:2 meat,fish",
                 "produce=ore:10 granite:4 marble:2 quartz:2",
             }
         },

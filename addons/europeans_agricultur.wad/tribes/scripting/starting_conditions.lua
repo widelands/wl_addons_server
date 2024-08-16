@@ -154,14 +154,14 @@ function set_starting_warecount(player)
     end
     
     local general_worker_count = 16 / #warehouses
-    local basic_worker_count = 8 / #warehouses
+    local basic_worker_count = 16 / #warehouses
     local normal_worker_count = 8 / #warehouses
     local advanced_worker_count = 8 / #warehouses
 
     local general_ware_count = 8 / #warehouses
     local build_ware_count = 32 / #warehouses
     local enhancement_ware_count = 32 / #warehouses
-    local basic_build_ware_count = 48 / #warehouses
+    local basic_build_ware_count = 64 / #warehouses
 
     for i, worker in ipairs(tribe.workers) do
         if string.find(worker.name, "advanced") then
@@ -263,8 +263,7 @@ function allow_advanced_productionsites(player)
         player:allow_buildings{"europeans_sawmill_advanced", "europeans_stonemasons_house_advanced"}
         player:allow_buildings{"europeans_charcoal_kiln_advanced", "europeans_smelting_works_advanced", "europeans_manufactory_advanced"}
         
-        player:allow_buildings{"europeans_farm_small_normal", "europeans_farm_medium_normal", "europeans_farm_normal", "europeans_animal_farm_normal"}
-        player:allow_buildings{"europeans_farm_small_advanced", "europeans_farm_medium_advanced", "europeans_farm_advanced", "europeans_animal_farm_advanced", "europeans_animal_farm_big"}
+        player:allow_buildings{"europeans_farm_small_advanced", "europeans_farm_medium_advanced", "europeans_farm_advanced", "europeans_animal_farm_advanced"}
         player:allow_buildings{"europeans_mill_advanced", "europeans_bakery_advanced", "europeans_brewery_advanced", "europeans_brewery_winery", "europeans_weaving_mill_advanced"}
         player:allow_buildings{"europeans_hunters_house_advanced", "europeans_fishers_house_advanced"}
     end
@@ -283,8 +282,7 @@ function forbid_advanced_productionsites(player)
         player:forbid_buildings{"europeans_sawmill_advanced", "europeans_stonemasons_house_advanced"}
         player:forbid_buildings{"europeans_charcoal_kiln_advanced", "europeans_smelting_works_advanced", "europeans_manufactory_advanced"}
         
-        player:forbid_buildings{"europeans_farm_small_normal", "europeans_farm_medium_normal", "europeans_farm_normal", "europeans_animal_farm_normal"}
-        player:forbid_buildings{"europeans_farm_small_advanced", "europeans_farm_medium_advanced", "europeans_farm_advanced", "europeans_animal_farm_advanced", "europeans_animal_farm_big"}
+        player:forbid_buildings{"europeans_farm_small_advanced", "europeans_farm_medium_advanced", "europeans_farm_advanced", "europeans_animal_farm_advanced"}
         player:forbid_buildings{"europeans_mill_advanced", "europeans_bakery_advanced", "europeans_brewery_advanced", "europeans_brewery_winery", "europeans_weaving_mill_advanced"}
         player:forbid_buildings{"europeans_hunters_house_advanced", "europeans_fishers_house_advanced"}
     end

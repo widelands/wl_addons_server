@@ -21,14 +21,18 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
     enhancement = {
-        name = "europeans_farm_medium_normal",
+        name = "europeans_farm_medium_advanced",
         enhancement_cost = {
             blackwood = 2,
-            cloth = 2,
-            grout = 2
+            grout = 2,
+            planks = 2,
+            brick = 2,
+            marble = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2
+            scrap_wood = 4,
+            granite = 4,
+            marble = 2
         },
     },
     buildcost = {
@@ -45,9 +49,10 @@ wl.Descriptions():new_productionsite_type {
     aihints = {
         space_consumer = true,
         supports_seafaring = true,
-        very_weak_ai_limit = 1,
-        weak_ai_limit = 2,
-        normal_ai_limit = 4,
+        basic_amount = 1,
+        very_weak_ai_limit = 2,
+        weak_ai_limit = 4,
+        normal_ai_limit = 8,
     },
 
     working_positions = {
@@ -78,7 +83,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:2s",
                 "callworker=check_space",
                 "call=pausing_production_for_inputs",
-                "call=plant_reed",
+                "call=plant_reed"
             }
         },
         harvesting = {
@@ -88,7 +93,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:2s",
                 "callworker=check_fields",
                 "call=pausing_production_for_outputs",
-                "call=harvest_reed",
+                "call=harvest_reed"
             }
         },
         pausing_production_for_inputs = {
@@ -96,7 +101,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
                 "return=skipped when site has water:2",
-                "sleep=duration:5m",
+                "sleep=duration:5m"
             }
         },
         pausing_production_for_outputs = {
@@ -104,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "pausing production because output not needed yet"),
             actions = {
                 "return=skipped when economy needs reed",
-                "sleep=duration:10m",
+                "sleep=duration:10m"
             }
         },
         plant_reed = {

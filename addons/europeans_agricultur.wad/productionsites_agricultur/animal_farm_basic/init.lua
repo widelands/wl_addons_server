@@ -21,15 +21,19 @@ wl.Descriptions():new_productionsite_type {
     
     size = "big",
     enhancement = {
-        name = "europeans_animal_farm_normal",
+        name = "europeans_animal_farm_advanced",
         enhancement_cost = {
             blackwood = 3,
-            cloth = 3,
-            grout = 3
+            grout = 3,
+            planks = 3,
+            brick = 3,
+            marble = 3
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 3
-        },
+            scrap_wood = 3,
+            granite = 3,
+            marble = 3
+        }
     },
     buildcost = {
         log = 4,
@@ -43,8 +47,8 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 2,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
     },
 
     working_positions = {

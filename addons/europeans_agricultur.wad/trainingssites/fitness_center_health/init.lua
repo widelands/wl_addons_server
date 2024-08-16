@@ -104,7 +104,7 @@ wl.Descriptions():new_trainingsite_type {
     },
     
     soldier_capacity = 4,
-    trainer_patience = 20,
+    trainer_patience = 60,
     
     messages = {
         -- TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
