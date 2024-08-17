@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-16 03:09+0200\n"
+"POT-Creation-Date: 2024-08-17 03:08+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1259,38 +1259,33 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:615
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a advanced spear with a steel tip. It is produced in a manufactory "
 "and used in a battle arena to train soldiers in attack."
 msgstr ""
 "Deese gode Pieke hett eene Tipp vun Stahl. ’t word in de Fabrik produzeert "
-"un im Slachtenring – tosamen mit Spiesen – bruukt, um Soldaten im Angriff "
-"uttobilden."
+"un im Slachtenring bruukt, um Soldaten im Angriff uttobilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:624
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is an broad ax. It is produced in a manufactory and used in a battle "
 "arena to train soldiers in attack."
 msgstr ""
 "Dat is eene brede Ext. Se word in eener Fabrik produzeert un im Slachtenring "
-"– tosamen mit Spiesen – bruukt, um Soldaten im Angriff uttobilden."
+"bruukt, um Soldaten im Angriff uttobilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:633
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
 "in a battle arena to train soldiers in attack."
 msgstr ""
-"Dat is een bredes Sweert. ’t word in de grote Fabrik produzeert un im "
-"Slachtenring – tosamen mit Spiesen – bruukt, um Soldaten im Angriff "
-"uttobilden."
+"Dat is een bredes Sweert. ’t word in de groten Fabriken produzeert un im "
+"Slachtenring bruukt, um Soldaten im Angriff uttobilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:642
@@ -1306,30 +1301,27 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:651
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The mask is the medium defense tool of a soldier. It is produced in a "
 "manufactory and used in a battle arena to train soldiers in defense."
 msgstr ""
 "De Mask is een middelster Wapenrock för europäisk Soldaten. Se word in de "
-"Fabrik produzeert un im Slachtenring – tosamen mit Spiesen – bruukt, um "
-"Soldaten in Verteidigung uttobilden."
+"Fabriken produzeert un im Slachtenring bruukt, um Soldaten in Verteidigung "
+"uttobilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:660
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This steel shield is produced in a manufactory and used in a battle arena to "
 "train soldiers in defense."
 msgstr ""
-"Deeser Stahlschild word in de Fabrik produzeert un in de Slachtenring – "
-"tosamen mit Spiesen – bruukt, um Soldaten in Verteidigung uttobilden."
+"Deeser Stahlschild word in de Fabriken produzeert un in de Slachtenring "
+"bruukt, um Soldaten in Verteidigung uttobilden."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:669
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These advanced shields are used by the best soldiers of the Europeans. They "
@@ -1337,8 +1329,8 @@ msgid ""
 "arena to train soldiers in defense."
 msgstr ""
 "De besten europäisk Soldaten bruken deese goden Schilden. Se worden in de "
-"grote Fabrik produzeert un in de groten Slachtenringen – tosamen mit Spiesen "
-"– bruukt, um Soldaten in Verteidigung uttobilden."
+"groten Fabriken produzeert un in de groten Slachtenringen bruukt, um "
+"Soldaten in Verteidigung uttobilden."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:684
@@ -2974,15 +2966,3 @@ msgstr "Goder Gaardner"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Hannelsmann"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Small Farm"
-#~ msgstr "Lütte Buurdereetje"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Digs up mud from the ground and uses water to turn it into clay. Then "
-#~ "plant reed and cotton in the holes created."
-#~ msgstr ""
-#~ "Grafft Eer ut de Grund un maakt mit Water Lehm daarut. Plant dann Reit un "
-#~ "Boomwull in de Locken, wat torüggblieven."

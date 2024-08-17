@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-16 03:09+0200\n"
+"POT-Creation-Date: 2024-08-17 03:08+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -330,7 +330,7 @@ msgstr "Buurderee"
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_medium_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Vineyard"
-msgstr ""
+msgstr "Wienplanteree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_medium_advanced/init.lua:121
@@ -468,6 +468,8 @@ msgid ""
 "area. Remember that you can enhance the building. An advanced fishbreeder "
 "can release more fish into the waters."
 msgstr ""
+"De Fisker, de bi deese Fisker-Huus warkt, hett keene Fiske tum Fangen. Du "
+"kannst dat Huus utbauen. Een goder Fisstüchter kann mehr neje Fisse tüchten."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/productionsites_collectors/hunters_house_advanced/init.lua:8
@@ -2839,10 +2841,9 @@ msgstr "Sait un arnt Reit."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Advanced Farm
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2198
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Sows and harvests reed, cotton, grape and fruits."
-msgstr "Sait un arnt Reit, Boomwull un Gummi."
+msgstr "Sait un arnt Reit, Boomwull, Wiendruven un Früchten."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2205
@@ -3004,15 +3005,14 @@ msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Donkey Farm
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2365
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "Breeds strong oxen and cute and helpful horses and donkeys for adding them "
 "to the transportation system. Additionally keeps sheep for wool production "
 "and produces leather, meat and fish."
 msgstr ""
-"Tücht starke Ossen un nüte, godige Langohren för dat Stratennett. Tücht "
-"butendeem Schapen för hör Wull un produzeert Fleesk un Fiss tum Eten."
+"Tücht starke Ossen un nüte, godige Peer un Langohren för dat Stratennett. "
+"Tücht butendeem Schapen för hör Wull un produzeert Leer, Fleesk un Fiss."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -4051,86 +4051,3 @@ msgstr "Landumackereerer"
 msgctxt "europeans_worker"
 msgid "Normal Terraformer"
 msgstr "Goder Landumackereerer"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Big Animal Farm"
-#~ msgstr "Grotere Deertentüchteree"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Animal Farm"
-#~ msgstr "Deertentüchteree"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Farm"
-#~ msgstr "Buurderee"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting berrybush"
-#~ msgstr "Beerenbusken to planten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting berry"
-#~ msgstr "Früchten to arnten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Rubber Farm"
-#~ msgstr "Gummi-Buurderee"
-
-#~ msgctxt "europeans_building"
-#~ msgid "planting rubber"
-#~ msgstr "Gummibomen to planten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "harvesting rubber"
-#~ msgstr "Gummi to arnten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Cotton Farm"
-#~ msgstr "Boomwull-Buurderee"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "The farmer working at this cotton farm has no cleared soil to plant his "
-#~ "seeds."
-#~ msgstr ""
-#~ "De Buur dat warkt bi deese Boomwull-Buurderee hett keen Meedland waar he "
-#~ "wat anplanten kann."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Small Farm"
-#~ msgstr "Lütte Buurdereetje"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Digs up mud from the ground and uses water to turn it into clay. Then "
-#~ "plant reed and cotton in the holes created."
-#~ msgstr ""
-#~ "Grafft Eer ut de Grund un maakt mit Water Lehm daarut. Plant dann Reit un "
-#~ "Boomwull in de Locken, wat torüggblieven."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Sows and harvests reed and cotton."
-#~ msgstr "Sait un arnt Reit un Boomwull."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Sows and harvests barley, blackroot, corn, rye and wheat."
-#~ msgstr "Sait un arnt Garst, Weit, Rogg, Swartwuddels un Mais."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Breeds strong oxen for adding them to the transportation system. "
-#~ "Additionally produces meat and fish for food production and leather for "
-#~ "shoemaker."
-#~ msgstr ""
-#~ "Tücht starke Ossen för dat Stratennett. Produzeert butendeem Fleesk un "
-#~ "Fiss tum Eten un Leer för de Schooster."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Breeds strong oxen, cute and helpful donkeys and strong horses for adding "
-#~ "them to the transportation system. Additionally keeps sheep for wool "
-#~ "production and produces meat and fish for food production."
-#~ msgstr ""
-#~ "Tücht starke Ossen, nüte, godige Langohren un starke Peer för dat "
-#~ "Stratennett. Tücht butendeem Schapen för hör Wull un produzeert Fleesk un "
-#~ "Fiss tum Eten."
