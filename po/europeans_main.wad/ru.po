@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Yuriy Sokolov <lention@mail.ru>, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-16 03:09+0200\n"
+"POT-Creation-Date: 2024-08-19 03:08+0200\n"
 "PO-Revision-Date: 2024-05-28 08:02+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -117,7 +121,7 @@ msgstr ""
 #: addons/europeans_main.wad/tribes/initialization/units.lua:161
 msgctxt "europeans_ware"
 msgid "It is produced in tree nursery or in rubber farm."
-msgstr ""
+msgstr "Его добывают в питомнике или каучуковой ферме."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_main.wad/tribes/initialization/units.lua:171
@@ -379,6 +383,8 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the big manufactory. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Базовая броня для европейских солдат. Его производят в большой мануфактуре. "
+"В сочетании с деревянным копьем служит снаряжением для молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
 #: addons/europeans_main.wad/tribes/initialization/units.lua:452
@@ -404,6 +410,8 @@ msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
 "arena to protect soldiers with additional health points."
 msgstr ""
+"Улучшеные доспехи производится в мануфактуре и используется на Арене "
+"поединков чтобы повысить здоровье солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
 #: addons/europeans_main.wad/tribes/initialization/units.lua:479
@@ -447,6 +455,9 @@ msgid ""
 "produced in the manufactory. In combination with armor, it is the equipment "
 "to fit out young soldiers."
 msgstr ""
+"Это деревянное копье является основным оружием в европейских армиях. Его "
+"изготавливают в мануфактуре. В сочетании с доспехами служит снаряжением для "
+"молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_main.wad/tribes/initialization/units.lua:527
@@ -455,6 +466,8 @@ msgid ""
 "This is a advanced spear with a steel tip. It is produced in a manufactory "
 "and used in a battle arena to train soldiers in attack."
 msgstr ""
+"Это Улучшенное копье со стальным наконечником. Его производят в мануфактуре "
+"и используют на арене поединков для тренировки солдат в уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_main.wad/tribes/initialization/units.lua:536
@@ -463,6 +476,8 @@ msgid ""
 "This is an broad ax. It is produced in a manufactory and used in a battle "
 "arena to train soldiers in attack."
 msgstr ""
+"Это Секира. Её производят в мануфактуре и используют на боевой арене для "
+"тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_main.wad/tribes/initialization/units.lua:545
@@ -471,6 +486,8 @@ msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
 "in a battle arena to train soldiers in attack."
 msgstr ""
+"Это тесак. Его производят в продвинутой мануфактуре и используют на боевой "
+"арене для тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_main.wad/tribes/initialization/units.lua:554
@@ -480,6 +497,8 @@ msgid ""
 "manufactory. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
+"Шлем служит базовой защитой для европейских солдат. Его производят в "
+"мануфактуре. В сочетании с бронёй служит снаряжением для молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_main.wad/tribes/initialization/units.lua:563
@@ -488,6 +507,8 @@ msgid ""
 "The mask is the medium defense tool of a soldier. It is produced in a "
 "manufactory and used in a battle arena to train soldiers in defense."
 msgstr ""
+"Маска - это средняя защита солдата. Её производят в мануфактуре и используют "
+"на арене поединков для тренировки солдат в защите."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_main.wad/tribes/initialization/units.lua:572
@@ -496,6 +517,8 @@ msgid ""
 "This steel shield is produced in a manufactory and used in a battle arena to "
 "train soldiers in defense."
 msgstr ""
+"Этот стальной щит изготавливается в мануфактуре и используется на арене "
+"поединков для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_main.wad/tribes/initialization/units.lua:581
@@ -505,6 +528,9 @@ msgid ""
 "are produced in the advanced manufactory and used in the advanced battle "
 "arena to train soldiers in defense."
 msgstr ""
+"Эти улучшенные щиты используются лучшими солдатами Европейцев. Они "
+"производятся в продвинутой мануфактуре и используются на продвинутой арене "
+"поединков для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_main.wad/tribes/initialization/units.lua:596
@@ -1004,6 +1030,8 @@ msgid ""
 "Large factory that produces complex wares such as tools, weapons, armor, "
 "clothing, shoes or building materials from simple raw materials."
 msgstr ""
+"Большая фабрика, которая производит сложные товары: инструменты, оружие, "
+"доспехи, одежду, обувь или строительные материалы из простого сырья."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine

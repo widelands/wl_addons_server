@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Yuriy Sokolov <lention@mail.ru>, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-16 03:09+0200\n"
+"POT-Creation-Date: 2024-08-19 03:08+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -512,7 +516,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Big Manufactory"
-msgstr ""
+msgstr "Продвинутая большая мануфактура"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing planks for input wares because ...
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:82
@@ -699,13 +703,13 @@ msgstr ""
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:475
 msgctxt "europeans_building"
 msgid "forging a broadsword"
-msgstr ""
+msgstr "кует Тесак"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Big Manufactory"
-msgstr ""
+msgstr "Базовая большая мануфактура"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_basic/init.lua:103
@@ -1395,7 +1399,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:182
 msgctxt "europeans_ware"
 msgid "It is produced in tree nursery or in rubber farm."
-msgstr ""
+msgstr "Его добывают в питомнике или каучуковой ферме."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:192
@@ -1926,6 +1930,8 @@ msgid ""
 "This is a broad sword. It is produced in the advanced smithy and used in a "
 "battle arena to train soldiers in attack."
 msgstr ""
+"Это тесак. Его производят в продвинутой кузнице и используют на боевой арене "
+"для тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:780
@@ -1935,6 +1941,8 @@ msgid ""
 "smithy. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
+"Шлем служит базовой защитой для европейских солдат. Его производят в "
+"кузнице. В сочетании с бронёй служит снаряжением для молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:789
@@ -1943,6 +1951,8 @@ msgid ""
 "The mask is the medium defense tool of a soldier. It is produced in a smithy "
 "and used in a battle arena to train soldiers in defense."
 msgstr ""
+"Маска - это средняя защита солдата. Её производят в кузнице и используют на "
+"арене поединков для тренировки солдат в защите."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:798
@@ -1951,6 +1961,8 @@ msgid ""
 "This steel shield is produced in a smithy and used in a battle arena to "
 "train soldiers in defense."
 msgstr ""
+"Этот стальной щит изготавливается в кузнице и используется на арене "
+"поединков для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:807
@@ -1960,18 +1972,21 @@ msgid ""
 "are produced in the advanced smithy and used in the advanced battle arena to "
 "train soldiers in defense."
 msgstr ""
+"Эти улучшенные щиты используются лучшими солдатами Европейцев. Они "
+"производятся в продвинутой кузнице и используются на продвинутой арене "
+"поединков для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:822
 msgctxt "europeans_worker"
 msgid "Used for recruiting all other workers."
-msgstr ""
+msgstr "Нанимает всех работников."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:831
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
-msgstr ""
+msgstr "Носят товары по дорогам в руках."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:840
@@ -1979,18 +1994,20 @@ msgctxt "europeans_worker"
 msgid ""
 "Carries items along your roads with their hands. Only used for busy roads."
 msgstr ""
+"Носят товары по дорогам в руках. Используется только на оживленных дорогах."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:849
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets. Only used for busy roads."
 msgstr ""
+"Носят товары по дорогам в руках. Используется только на оживленных дорогах."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ox
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:858
 msgctxt "europeans_worker"
 msgid "Carries items along your roads. They are reared in an animal farm."
-msgstr ""
+msgstr "Перевозят грузы по дорогам. Их выращивают на скотных дворах."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Donkey
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:867
@@ -1999,6 +2016,8 @@ msgid ""
 "Donkeys help to carry items along busy roads. They are reared in an animal "
 "farm."
 msgstr ""
+"Ослы помогают перевозить предметы по оживленным дорогам. Они выращиваются на "
+"скотном дворе."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Horse
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:876
@@ -2007,6 +2026,8 @@ msgid ""
 "Horses help to carry items along busy roads. They are reared in an animal "
 "farm."
 msgstr ""
+"Лошади помогают перевозить предметы по оживленным дорогам. Они выращиваются "
+"на скотном дворе."
 
 #. TRANSLATORS: Helptext for a Europeans worker: Reindeer
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:885
@@ -2015,12 +2036,14 @@ msgid ""
 "Reindeers help to carry items along busy roads. They are reared in an animal "
 "farm."
 msgstr ""
+"Олени помогают перевозить предметы по оживленным дорогам. Они выращиваются "
+"на скотном дворе."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ferry
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:894
 msgctxt "europeans_worker"
 msgid "Ships wares across narrow rivers."
-msgstr ""
+msgstr "Перевозит товары через узкие протоки."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Worker
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:906
@@ -2028,40 +2051,42 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:924
 msgctxt "europeans_worker"
 msgid "General worker with no special ability."
-msgstr ""
+msgstr "Обычный работник без особых навыков."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Shipwright
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:933
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:942
 msgctxt "europeans_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr ""
+msgstr "Работает на верфи, строя суда."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Builder
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:951
 msgctxt "europeans_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Возводит новые здания на стройплощадках."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:963
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:972
 msgctxt "europeans_worker"
 msgid "Fells trees."
-msgstr ""
+msgstr "Валит деревья."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:981
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:990
 msgctxt "europeans_worker"
 msgid "Plant trees."
-msgstr ""
+msgstr "Сажает деревья."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:999
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house and planting reed."
 msgstr ""
+"Делает глину для цементных печей или дома каменщика, а так же выращивает "
+"тростник."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1008
@@ -2069,6 +2094,8 @@ msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed and cotton."
 msgstr ""
+"Делает глину для цементных печей илм дома каменщика, а так же выращивает "
+"тростник и хлопок."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1017
@@ -2077,6 +2104,8 @@ msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed, cotton and "
 "rubber trees."
 msgstr ""
+"Делает глину для цементных печей илм дома каменщика, а так же выращивает "
+"тростник, хлопок и гевею."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Farmer
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1029
@@ -2084,13 +2113,13 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1047
 msgctxt "europeans_worker"
 msgid "Plants and harvests fields."
-msgstr ""
+msgstr "Засеивает и жнет поля."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Hunter
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1056
 msgctxt "europeans_worker"
 msgid "The hunter brings fresh, raw meat to the colonists."
-msgstr ""
+msgstr "Охотники приносят свежее сырое мясо в поселение."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gamekeeper
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1065
@@ -2099,31 +2128,32 @@ msgid ""
 "The gamekeeper makes sure that the natural population of animals never drops "
 "too low."
 msgstr ""
+"Егерь следит за тем, чтобы популяция диких животных не падала слишком низко."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Fisher
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1074
 msgctxt "europeans_worker"
 msgid "The fisher fishes delicious fish out of rivers, lakes or the ocean."
-msgstr ""
+msgstr "Рыболов вылавливает вкусную рыбу из рек, озер или морей."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Fishbreeder
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1083
 msgctxt "europeans_worker"
 msgid "Breeds fish in nearby waters."
-msgstr ""
+msgstr "Разводит рыбу в ближайшем водоеме."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Geologist
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1095
 msgctxt "europeans_worker"
 msgid "Discovers resources for mining."
-msgstr ""
+msgstr "Ищет залежи полезных ископаемых."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Stonecutter
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1104
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1113
 msgctxt "europeans_worker"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
-msgstr ""
+msgstr "Высекает блоки гранита и мрамора из окружающих скал."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Miner
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1122
@@ -2131,7 +2161,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1140
 msgctxt "europeans_worker"
 msgid "Mines ore and minerals."
-msgstr ""
+msgstr "Добывает руду и минералы."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Terraformer
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1149
@@ -2139,7 +2169,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1167
 msgctxt "europeans_worker"
 msgid "Terraforms desert and coast into fertile soil."
-msgstr ""
+msgstr "Терраформирует пустыни и побережья в плодородные земли."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Trainer
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1179
@@ -2147,7 +2177,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1197
 msgctxt "europeans_worker"
 msgid "Trains the soldiers."
-msgstr ""
+msgstr "Обучает солдат."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Scout
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1206
@@ -2155,26 +2185,26 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
-msgstr ""
+msgstr "Разведчик Резвый разведывает неразведанное резво и резко."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Recruit
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1226
 msgctxt "europeans_worker"
 msgid "Eager to become a soldier and defend his tribe!"
-msgstr ""
+msgstr "Хочет стать солдатом и отстаивать интересы своего племени!"
 
 #. TRANSLATORS: Helptext for an Europeans worker: Soldier
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1235
 msgctxt "europeans_worker"
 msgid "Defend and Conquer!"
-msgstr ""
+msgstr "Защищать и покорять!"
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1246
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1253
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Останки разрушенного здания."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: blackroot field
@@ -2187,7 +2217,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1687
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1722
 msgid "This field has just been planted."
-msgstr ""
+msgstr "Это поле только что засеяно."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: blackroot field
@@ -2205,7 +2235,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1729
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1736
 msgid "This field is growing."
-msgstr ""
+msgstr "Это поле растет."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: blackroot field
@@ -2218,7 +2248,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1708
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1743
 msgid "This field is ready for harvesting."
-msgstr ""
+msgstr "Поле готово к уборке."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: barley field
 #. TRANSLATORS: Helptext for an Europeans immovable: blackroot field
@@ -2231,7 +2261,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1715
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1750
 msgid "This field has been harvested."
-msgstr ""
+msgstr "Урожай с этого поля собран."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1295
@@ -2244,7 +2274,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1491
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1519
 msgid "This berry bush has just been planted."
-msgstr ""
+msgstr "Этот ягодный кустарник только что посажен."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1302
@@ -2257,7 +2287,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1498
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1526
 msgid "This berry bush is growing."
-msgstr ""
+msgstr "Этот ягодный кустарник растет."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1309
@@ -2270,7 +2300,7 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1505
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1533
 msgid "This berry bush is flowering. Honey can be produced from it."
-msgstr ""
+msgstr "Этот ягодный кустарник зацвел. С него можно получить мёд."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: One of the berry bushes
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1316
@@ -2283,23 +2313,23 @@ msgstr ""
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1512
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1540
 msgid "This berry bush is ready for harvesting."
-msgstr ""
+msgstr "Этот ягодный кустарник готов к уборке."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1617
 msgid "This grapevine has just been planted."
-msgstr ""
+msgstr "Виноград посажен."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1624
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1631
 msgid "This grapevine is growing."
-msgstr ""
+msgstr "Этот виноград растет."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Grapevine
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1638
 msgid "This grapevine is ready for harvesting."
-msgstr ""
+msgstr "Этот виноград созрел для сбора."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1645
@@ -2770,6 +2800,8 @@ msgid ""
 "Large factory that produces complex wares such as tools, weapons, armor, "
 "clothing, shoes or building materials from simple raw materials."
 msgstr ""
+"Большая фабрика, которая производит сложные товары: инструменты, оружие, "
+"доспехи, одежду, обувь или строительные материалы из простого сырья."
 
 #. TRANSLATORS: Purpose helptext for production site: Farm
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2344

@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Yuriy Sokolov <lention@mail.ru>, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-16 03:09+0200\n"
+"POT-Creation-Date: 2024-08-19 03:08+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -22,19 +26,21 @@ msgstr ""
 
 #: addons/europeans_trading.wad/addon:2
 msgid "Trading addon for Europeans tribe"
-msgstr ""
+msgstr "Торговый аддон для племни Европейцев"
 
 #: addons/europeans_trading.wad/addon:3
 msgid ""
 "Adds some additional trading buildings, traders and coins to Europeans "
 "tribes."
 msgstr ""
+"Добавляет несколько дополнительных торговых зданий, торговцев и монет для "
+"племни Европейцев."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Big Manufactory"
-msgstr ""
+msgstr "Продвинутая большая мануфактура"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:67
@@ -54,13 +60,13 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites_suppliers/weaving_mill_advanced/init.lua:57
 #: addons/europeans_trading.wad/productionsites_suppliers/weaving_mill_basic/init.lua:69
 msgid "working"
-msgstr ""
+msgstr "работает"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing planks for input wares because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:80
 msgctxt "europeans_building"
 msgid "processing planks to create tools and weapons"
-msgstr ""
+msgstr "перерабатывает доски в инструменты и оружие"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:90
@@ -69,7 +75,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/tailors_house_basic/init.lua:91
 msgctxt "europeans_building"
 msgid "making a wooden armor"
-msgstr ""
+msgstr "мастерит деревянную броню"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:110
@@ -78,7 +84,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/shoemakers_house_basic/init.lua:90
 msgctxt "europeans_building"
 msgid "making a pair of wooden boots"
-msgstr ""
+msgstr "мастерит пару деревянных башмаков"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:130
@@ -87,7 +93,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_basic/init.lua:95
 msgctxt "europeans_building"
 msgid "making a wooden helmet"
-msgstr ""
+msgstr "мастерит деревянный шлем"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:150
@@ -96,13 +102,13 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_basic/init.lua:110
 msgctxt "europeans_building"
 msgid "forging a wooden spear"
-msgstr ""
+msgstr "изготавливает Деревянное копьё"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:170
 msgctxt "europeans_building"
 msgid "processing reed or cotton or wool to create tools and armor"
-msgstr ""
+msgstr "перерабатывает тростник, хлопок или шерсть в инструменты и броню"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:184
@@ -110,7 +116,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites_suppliers/weaving_mill_basic/init.lua:90
 msgctxt "europeans_building"
 msgid "tailoring a suit of armor"
-msgstr ""
+msgstr "шьёт комплект брони"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:202
@@ -119,21 +125,21 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/tailors_house_basic/init.lua:104
 msgctxt "europeans_building"
 msgid "tailoring processed armor"
-msgstr ""
+msgstr "шьёт обработанную броню"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:221
 #: addons/europeans_trading.wad/productionsites/tailors_house_advanced/init.lua:106
 msgctxt "europeans_building"
 msgid "tailoring a suit of chain armor"
-msgstr ""
+msgstr "шьет кольчужные доспехи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:241
 #: addons/europeans_trading.wad/productionsites/tailors_house_advanced/init.lua:118
 msgctxt "europeans_building"
 msgid "tailoring a suit of advanced armor"
-msgstr ""
+msgstr "шьёт улучшеные доспехи"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:261
@@ -142,28 +148,28 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/shoemakers_house_basic/init.lua:103
 msgctxt "europeans_building"
 msgid "making study boots"
-msgstr ""
+msgstr "делает крепкие ботинки"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:280
 #: addons/europeans_trading.wad/productionsites/shoemakers_house_advanced/init.lua:94
 msgctxt "europeans_building"
 msgid "making swift boots"
-msgstr ""
+msgstr "делает лёгкие ботинки"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:300
 #: addons/europeans_trading.wad/productionsites/shoemakers_house_advanced/init.lua:109
 msgctxt "europeans_building"
 msgid "making advanced boots"
-msgstr ""
+msgstr "делает продвинутые ботинки"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing metal_alloy for input wares because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:320
 #: addons/europeans_trading.wad/productionsites/manufactory_basic/init.lua:260
 msgctxt "europeans_building"
 msgid "processing metal_alloy to create tools and weapons"
-msgstr ""
+msgstr "перерабатывает сплав в инструменты и оружие"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:340
@@ -172,7 +178,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_tools_basic/init.lua:105
 msgctxt "europeans_building"
 msgid "making baskets"
-msgstr ""
+msgstr "делает корзины"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:351
@@ -181,7 +187,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_tools_basic/init.lua:124
 msgctxt "europeans_building"
 msgid "making buckets"
-msgstr ""
+msgstr "делает вёдра"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:362
@@ -190,7 +196,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_tools_basic/init.lua:143
 msgctxt "europeans_building"
 msgid "making felling axes"
-msgstr ""
+msgstr "делает топоры дровосека"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:373
@@ -199,7 +205,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_tools_basic/init.lua:162
 msgctxt "europeans_building"
 msgid "making hammers"
-msgstr ""
+msgstr "делает молотки"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:384
@@ -208,7 +214,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_tools_basic/init.lua:181
 msgctxt "europeans_building"
 msgid "making picks"
-msgstr ""
+msgstr "делает кирки"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:395
@@ -217,7 +223,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_tools_basic/init.lua:200
 msgctxt "europeans_building"
 msgid "making saws"
-msgstr ""
+msgstr "делает пилы"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:406
@@ -226,7 +232,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_tools_basic/init.lua:219
 msgctxt "europeans_building"
 msgid "making sycthes"
-msgstr ""
+msgstr "делает косы"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:417
@@ -235,7 +241,7 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_tools_basic/init.lua:238
 msgctxt "europeans_building"
 msgid "making shovels"
-msgstr ""
+msgstr "делает лопаты"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:428
@@ -244,21 +250,21 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_basic/init.lua:125
 msgctxt "europeans_building"
 msgid "forging a mask"
-msgstr ""
+msgstr "кует маску"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:439
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_advanced/init.lua:140
 msgctxt "europeans_building"
 msgid "forging a steel shield"
-msgstr ""
+msgstr "кует стальной щит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:450
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_advanced/init.lua:156
 msgctxt "europeans_building"
 msgid "forging an advanced shield"
-msgstr ""
+msgstr "кует Улучшенный щит"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:461
@@ -267,139 +273,139 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_basic/init.lua:138
 msgctxt "europeans_building"
 msgid "forging an advanced spear"
-msgstr ""
+msgstr "кует Улучшенное копье"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:473
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_advanced/init.lua:191
 msgctxt "europeans_building"
 msgid "forging a broad ax"
-msgstr ""
+msgstr "кует Секиру"
 
 #. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:485
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_advanced/init.lua:210
 msgctxt "europeans_building"
 msgid "forging a broadsword"
-msgstr ""
+msgstr "кует Тесак"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/manufactory_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Big Manufactory"
-msgstr ""
+msgstr "Базовая большая мануфактура"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_basic/init.lua:103
 msgctxt "europeans_building"
 msgid "processing log to create tools and weapons"
-msgstr ""
+msgstr "перерабатывает бревна в инструменты и оружие"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed for input wares because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_basic/init.lua:209
 msgctxt "europeans_building"
 msgid "processing reed to create tools and armor"
-msgstr ""
+msgstr "перерабатывает тростник в инструменты и броню"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/shoemakers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Shoemakers House"
-msgstr ""
+msgstr "Продвинутый Дом Башмачника"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/shoemakers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Shoemakers House"
-msgstr ""
+msgstr "Базовый Дом Башмачника"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/smithy_tools_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Toolsmithy"
-msgstr ""
+msgstr "Продвинутая Инструментальная мастерская"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/smithy_tools_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Toolsmithy"
-msgstr ""
+msgstr "Базовая Инструментальная мастерская"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Weaponsmithy"
-msgstr ""
+msgstr "Продвинутая оружейная"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/smithy_weapons_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Weaponsmithy"
-msgstr ""
+msgstr "Базовая оружейная"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/tailors_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Tailors House"
-msgstr ""
+msgstr "Продвинутый дом портного"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites/tailors_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Tailors House"
-msgstr ""
+msgstr "Базовый дом портного"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Small Farm"
-msgstr ""
+msgstr "Продвинутая малая ферма"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:60
 msgctxt "europeans_building"
 msgid "planting reed and cotton"
-msgstr ""
+msgstr "сеет тростник и хлопок"
 
 #. TRANSLATORS: Completed/Skipped/Did not start watering because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:75
 msgctxt "europeans_building"
 msgid "watering fields"
-msgstr ""
+msgstr "поливает поля"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making pond because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:86
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:113
 msgctxt "europeans_building"
 msgid "making a pond with water"
-msgstr ""
+msgstr "делает пруд с помощью воды"
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:97
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:124
 msgctxt "europeans_building"
 msgid "digging clay"
-msgstr ""
+msgstr "копает глину"
 
 #. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:109
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:136
 msgctxt "europeans_building"
 msgid "digging a dry pond"
-msgstr ""
+msgstr "выкапывает пруд"
 
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:121
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:144
 msgctxt "europeans_building"
 msgid "filling pond with water"
-msgstr ""
+msgstr "наполняет пруд водой"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:132
 msgctxt "europeans_building"
 msgid "planting cotton"
-msgstr ""
+msgstr "сеет хлопок"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
@@ -409,83 +415,83 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:155
 msgctxt "europeans_building"
 msgid "planting reed"
-msgstr ""
+msgstr "садит тростник"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:150
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:164
 msgctxt "europeans_building"
 msgid "harvesting"
-msgstr ""
+msgstr "собирает урожай"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:161
 msgctxt "europeans_building"
 msgid "harvesting cotton"
-msgstr ""
+msgstr "собирает хлопок"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:169
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:173
 msgctxt "europeans_building"
 msgid "harvesting reed"
-msgstr ""
+msgstr "собирает тростник"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Small Farm"
-msgstr ""
+msgstr "Базовая малая ферма"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Продвинутая Литейная"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recyling metal_alloy because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_advanced/init.lua:68
 msgctxt "europeans_building"
 msgid "recycling metal_alloy"
-msgstr ""
+msgstr "перерабатывает сплав"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_advanced/init.lua:80
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_basic/init.lua:76
 msgctxt "europeans_building"
 msgid "smelting ore"
-msgstr ""
+msgstr "плавит руду"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Smelting Works"
-msgstr ""
+msgstr "Базовая Литейная"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites_suppliers/weaving_mill_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Weaving Mill"
-msgstr ""
+msgstr "Продвинутая Ткацкая фабрика"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/weaving_mill_advanced/init.lua:67
 #: addons/europeans_trading.wad/productionsites_suppliers/weaving_mill_basic/init.lua:79
 msgctxt "europeans_building"
 msgid "weaving cloth"
-msgstr ""
+msgstr "ткет полотно"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/productionsites_suppliers/weaving_mill_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Weaving Mill"
-msgstr ""
+msgstr "Базовая Ткацкая фабрика"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/market_big_armor/init.lua:8
 msgctxt "europeans_building"
 msgid "Armor Market"
-msgstr ""
+msgstr "Рынок брони"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_trading.wad/tradingsites/market_big_armor/init.lua:65
@@ -591,7 +597,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tradingsites/trading_post/init.lua:98
 #: addons/europeans_trading.wad/tradingsites/trading_post/init.lua:111
 msgid "trading"
-msgstr ""
+msgstr "торгует"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_trading.wad/tradingsites/market_big_armor/init.lua:76
@@ -600,7 +606,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tradingsites/market_big_wood/init.lua:76
 msgctxt "europeans_building"
 msgid "trading goods for copper coins"
-msgstr ""
+msgstr "продает товары за медные монеты"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_trading.wad/tradingsites/market_big_armor/init.lua:93
@@ -609,7 +615,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tradingsites/market_big_wood/init.lua:93
 msgctxt "europeans_building"
 msgid "trading goods for silver coins"
-msgstr ""
+msgstr "продает товары за серебряные монеты"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_trading.wad/tradingsites/market_big_armor/init.lua:109
@@ -618,112 +624,112 @@ msgstr ""
 #: addons/europeans_trading.wad/tradingsites/market_big_wood/init.lua:109
 msgctxt "europeans_building"
 msgid "trading goods for gold coins"
-msgstr ""
+msgstr "продает товары за золотые монеты"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/market_big_boots/init.lua:8
 msgctxt "europeans_building"
 msgid "Boots Market"
-msgstr ""
+msgstr "Рынок обуви"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/market_big_weapons/init.lua:8
 msgctxt "europeans_building"
 msgid "Weapon Market"
-msgstr ""
+msgstr "Рынок оружия"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/market_big_wood/init.lua:8
 msgctxt "europeans_building"
 msgid "Wood Market"
-msgstr ""
+msgstr "Рынок древесины"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/market_small_agricultur/init.lua:8
 msgctxt "europeans_building"
 msgid "Agricultur products market"
-msgstr ""
+msgstr "Рынок сельхозпродуктов"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_trading.wad/tradingsites/market_small_agricultur/init.lua:86
 #: addons/europeans_trading.wad/tradingsites/market_small_craft/init.lua:76
 msgctxt "europeans_building"
 msgid "trading food for copper coins"
-msgstr ""
+msgstr "продает продукты за медные монеты"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_trading.wad/tradingsites/market_small_agricultur/init.lua:101
 #: addons/europeans_trading.wad/tradingsites/market_small_craft/init.lua:93
 msgctxt "europeans_building"
 msgid "trading food for silver coins"
-msgstr ""
+msgstr "продает продукты за серебряные монеты"
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_trading.wad/tradingsites/market_small_agricultur/init.lua:116
 #: addons/europeans_trading.wad/tradingsites/market_small_craft/init.lua:110
 msgctxt "europeans_building"
 msgid "trading food for gold coins"
-msgstr ""
+msgstr "продает продукты за золотые монеты"
 
 #. TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
 #: addons/europeans_trading.wad/tradingsites/market_small_agricultur/init.lua:131
 #: addons/europeans_trading.wad/tradingsites/market_small_craft/init.lua:127
 msgctxt "europeans_building"
 msgid "pausing trading of gold"
-msgstr ""
+msgstr "приостановка торговли золотом"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/market_small_craft/init.lua:8
 msgctxt "europeans_building"
 msgid "Craft products market"
-msgstr ""
+msgstr "ремесленый рынок"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/store_big/init.lua:8
 msgctxt "europeans_building"
 msgid "Big Store"
-msgstr ""
+msgstr "Большой магазин"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/store_small/init.lua:8
 msgctxt "europeans_building"
 msgid "Small Store"
-msgstr ""
+msgstr "Малый магазин"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/trading_post/init.lua:8
 msgctxt "europeans_building"
 msgid "Trading Post"
-msgstr ""
+msgstr "Торговый пост"
 
 #: addons/europeans_trading.wad/tribes/initialization/init.lua:10
 msgid "Mark McWire"
-msgstr ""
+msgstr "Марк МакВайр"
 
 #. TRANSLATORS: This is a tribe name
 #: addons/europeans_trading.wad/tribes/initialization/init.lua:12
 msgid "Europeans (Trading)"
-msgstr ""
+msgstr "Европейцы (торговля)"
 
 #: addons/europeans_trading.wad/tribes/initialization/init.lua:13
 msgid "This is the culture of the Europeans."
-msgstr ""
+msgstr "Это культура Европейцев."
 
 #: addons/europeans_trading.wad/tribes/initialization/tips.lua:4
 msgid "This is the experimental Europeans tribe."
-msgstr ""
+msgstr "Это экспериментальное племя Европейцев."
 
 #. TRANSLATORS: Format string for a latin quote and its translation
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:12
 msgctxt "europeans_lore"
 msgid "‘%1%’<br>(%2%)"
-msgstr ""
+msgstr "‘%1%’<br>(%2%)"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:110
 msgctxt "ware"
 msgid "Water is the essence of life!"
-msgstr ""
+msgstr "Без воды - ни туды и ни сюды!"
 
 #. TRANSLATORS: Helptext for an Europeans ware: Water, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:112
@@ -733,6 +739,8 @@ msgid ""
 "bakery and the brewery. The fish farm and the sheep farm need to be supplied "
 "with water, too."
 msgstr ""
+"Вода используется садовниками, лесниками, на всех фермах, а также в пекарне "
+"и пивоварне. Рыбная ферма и овцеферма также нуждаются в водоснабжении."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:123
@@ -740,7 +748,7 @@ msgctxt "europeans_ware"
 msgid ""
 "Logs are an important basic building material. They are produced by felling "
 "trees."
-msgstr ""
+msgstr "Бревна - весьма ценное сырье. Добывается путем разрубания деревьев."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Log, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:125
@@ -749,6 +757,8 @@ msgid ""
 "European lumberjacks fell the trees; foresters take care of the supply of "
 "trees. Logs are also used by the charcoal kiln, the shipyard and the sawmill."
 msgstr ""
+"Европейские лесорубы валят деревья; лесники заботятся о воспроизводстве "
+"деревьев. Бревна также используются в печи углежога, на верфи и лесопилке."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Blackwood
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:135
@@ -757,24 +767,26 @@ msgid ""
 "This fire-hardened wood is as hard as iron and it is used for several "
 "buildings. It is produced out of logs in the wood hardener (basic sawmill)."
 msgstr ""
+"После обжига дерево приобретает прочность стали, что находит применение в "
+"строительстве. Делают это в балочной мастерской (базовой лесопилке)."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:145
 msgctxt "europeans_ware"
 msgid "Planks are an important building material."
-msgstr ""
+msgstr "Доски - важнейший стройматериал."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:147
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
-msgstr ""
+msgstr "Их получают из брёвен на лесопилке."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:149
 msgctxt "europeans_ware"
 msgid "They are also used by the ferryyard and shipyard."
-msgstr ""
+msgstr "Они также используются в паромных и корабельных верфях."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:159
@@ -783,42 +795,44 @@ msgid ""
 "Scrap wood is a waste material that arises from the demolition of buildings "
 "or from sawmills."
 msgstr ""
+"Отходы древесины - это мусор, который образуется при сносе зданий или на "
+"лесопилках."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:161
 msgctxt "europeans_ware"
 msgid "It can be processed into charcoal in charcoal kilns."
-msgstr ""
+msgstr "Его можно переработать в древесный уголь в печи углежога."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:175
 msgctxt "europeans_ware"
 msgid "Reed is an important building material."
-msgstr ""
+msgstr "Тростник - важный кровельный материал."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:177
 msgctxt "europeans_ware"
 msgid "It is produced by the reed yard."
-msgstr ""
+msgstr "Выращивается на плантациях."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cloth
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:187
 msgctxt "europeans_ware"
 msgid "Cloth is needed to build several buildings. It is produced out of reed."
-msgstr ""
+msgstr "Полотно нужно для ряда зданий. Ткут его из тростника."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:197
 msgctxt "europeans_ware"
 msgid "Cotton is a raw material used to make clothing."
-msgstr ""
+msgstr "Хлопок - это сырье, используемое для производства одежды."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Cotton, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:199
 msgctxt "europeans_ware"
 msgid "It is produced by normal farms."
-msgstr ""
+msgstr "Выращивается на обычных фермах."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Armor
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:209
@@ -827,36 +841,38 @@ msgid ""
 "Raw material for some sorts of armor. It is produced in the weaving mill out "
 "of wool or reed."
 msgstr ""
+"Сырье для некоторых видов доспехов. Его производят на ткацкой фабрике из "
+"шерсти или тростника."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:219
 msgctxt "europeans_ware"
 msgid "Rubber is needed to make improved armor and boots."
-msgstr ""
+msgstr "Каучук необходим для изготовления усовершенствованной брони и ботинок."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Rubber, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:221
 msgctxt "europeans_ware"
 msgid "It is produced in tree nursery or in rubber farm."
-msgstr ""
+msgstr "Его добывают в питомнике или каучуковой ферме."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:235
 msgctxt "europeans_ware"
 msgid "Granite is a basic building material."
-msgstr ""
+msgstr "Гранит - один из основных стройматериалов."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:237
 msgctxt "europeans_ware"
 msgid "The Europeans produces granite blocks in quarries."
-msgstr ""
+msgstr "Европейцы добывают гранитные блоки в карьерах."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:248
 msgctxt "europeans_ware"
 msgid "Grout is a basic building material."
-msgstr ""
+msgstr "Цемент - это важнейший стройматериал."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:250
@@ -865,24 +881,26 @@ msgid ""
 "The Europeans produces grout in lime kiln or stonemasons house out of "
 "granite and water."
 msgstr ""
+"Европейцы производят цемент в цементной печи или в доме каменщика из гранита "
+"и воды."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:261
 msgctxt "europeans_ware"
 msgid "Clay is needed to make bricks."
-msgstr ""
+msgstr "Глина идет на кирпичи."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:263
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from gardeners house."
-msgstr ""
+msgstr "Европейцы получают глину из дома садовника."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:274
 msgctxt "europeans_ware"
 msgid "Brick is a basic building material."
-msgstr ""
+msgstr "Кирпич - основной стройматериал."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:276
@@ -891,12 +909,14 @@ msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
 "granite and water."
 msgstr ""
+"Европейцы производят кирпичи в цементной печи или в каменотёснях из глины, "
+"гранита и воды."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:290
 msgctxt "ware"
 msgid "Coal is mined in coal mines or produced out of logs by a charcoal kiln."
-msgstr ""
+msgstr "Уголь добывают в шахтах или путем обжига бревен в печи углежогом."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:292
@@ -904,7 +924,7 @@ msgctxt "europeans_ware"
 msgid ""
 "The fires of the Europeans smelting works and smithies are usually fed with "
 "coal."
-msgstr ""
+msgstr "Огонь в европейских литейных и кузницах поддерживает уголь."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:302
@@ -914,6 +934,9 @@ msgid ""
 "in a quarry. Marble is used as a building material and gets chiseled into "
 "marble columns in the stonemason’s house."
 msgstr ""
+"Мрамор - красивый камень, блоки которого добывают в горах и на каменоломнях. "
+"Из мрамора каменщик высекает колонны, которые затем используются в "
+"строительстве."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble Column
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:311
@@ -923,6 +946,9 @@ msgid ""
 "needed for nearly every advanced building. They are produced out of marble "
 "at a stonemason’s house."
 msgstr ""
+"Мраморные колонны олицетворяют высокую культуру европейцев, поэтому они "
+"необходимы почти для каждого современного здания. Они изготавливаются из "
+"мрамора в доме камнетёса."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Quartz
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:320
@@ -931,6 +957,9 @@ msgid ""
 "These transparent quartz gems are used to build some exclusive buildings. "
 "They are mined as a byproduct in a deep iron mine or by advanced quarry."
 msgstr ""
+"Кристаллы прозрачного кварца используются в строительстве исключительных "
+"зданий. Они добываются или как побочка глубоких железных рудников, или на "
+"улучшенных каменоломнях."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Diamond
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:329
@@ -939,18 +968,20 @@ msgid ""
 "These wonderful diamonds are used to build advanced buildings. They are "
 "mined as a byproduct in a deep coal mine or by advanced quarry."
 msgstr ""
+"Прекрасные алмазы используются в строительстве ряда зданий. Добываются как "
+"побочка в углубленных угольных карьерах и на улучшенных каменоломнях."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:342
 msgctxt "default_ware"
 msgid "Ore is mined in ore mines."
-msgstr ""
+msgstr "Руда добывается в шахтах."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:344
 msgctxt "europeans_ware"
 msgid "It is smelted in a smelting works to retrieve all the metals."
-msgstr ""
+msgstr "В литейной ее переплавляют в металл."
 
 #. TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:353
@@ -959,12 +990,14 @@ msgid ""
 "Discarded weapons and armor can be recycled in an advanced smelting works to "
 "produce new tools, weapon and armor."
 msgstr ""
+"Неиспользуемые оружие и броня могут быть пущены на переплавку в продвинутых "
+"литейных для ковки инструментов, а также нового оружия и новой брони."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:363
 msgctxt "ware"
 msgid "Mixed metal alloy is smelted out of ores."
-msgstr ""
+msgstr "Металический сплав получают плавлением руд."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:365
@@ -973,12 +1006,14 @@ msgid ""
 "It is produced by the smelting works. Weapons, armor and tools are made of "
 "alloy."
 msgstr ""
+"Выплавляется в литейной. Оружие, доспехи и инструменты делают из сплава."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:376
 msgctxt "ware"
 msgid "Gold is the most valuable of all metals, and it is smelted out of ore."
 msgstr ""
+"Золото - ценнейший из металлов, его получают в литейной из златоносной руды."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:378
@@ -987,6 +1022,8 @@ msgid ""
 "It is produced by the smelting works. Some valuable buildings need gold to "
 "be built."
 msgstr ""
+"Его производят в литейной. Для строительства некоторых дорогих зданий "
+"требуется золото."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Copper Coin
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:389
@@ -995,25 +1032,31 @@ msgid ""
 "Wood coins are money made of copper or bronze (copper and tin). Its the "
 "standard barter object."
 msgstr ""
+"Медные монеты - это деньги, изготовленные из меди или бронзы (медь и олово). "
+"Это стандартное платёжное средство."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Silver Coin
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:400
 msgctxt "ware"
 msgid "Wood coins are money made of silver. Its a valuable barter object."
 msgstr ""
+"Серебряные монеты - это деньги, сделанные из серебра. Это ценное средство "
+"обмена."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Gold Coin
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:411
 msgctxt "ware"
 msgid "Wood coins are money made of gold. Its most valuable barter object."
 msgstr ""
+"Золотые монеты - это деньги, сделанные из золота. Это самое ценное средство "
+"обмена."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:425
 msgctxt "europeans_ware"
 msgid ""
 "Big buckets for the forester, the gardener, and the construction of wells."
-msgstr ""
+msgstr "Большие вёдра для лесника, садовника и устройства колодцев."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
@@ -1021,19 +1064,19 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:518
 msgctxt "europeans_ware"
 msgid "They are produced by all smithies."
-msgstr ""
+msgstr "Их изготавливают в кузницах."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:438
 msgctxt "europeans_ware"
 msgid "This basket is needed by advanced carrier to transport wares."
-msgstr ""
+msgstr "Эта корзина нужна продвинутому носильщику для переноски товаров."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:440
 msgctxt "europeans_ware"
 msgid "It is produced by all smithies."
-msgstr ""
+msgstr "Их изготавливают в кузницах."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:451
@@ -1042,6 +1085,7 @@ msgid ""
 "The hammer is an essential tool. Geologists, builders, and worker all need a "
 "hammer."
 msgstr ""
+"Молоток - важнейший инструмент. Они нужны геологам, строителям и работникам."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Hammer, part 2
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
@@ -1051,7 +1095,7 @@ msgctxt "europeans_ware"
 msgid ""
 "Make sure you’ve always got some in reserve! They are produced by all "
 "smithies."
-msgstr ""
+msgstr "Проследите, чтобы всегда иметь несколько в запасе! Их делают кузнецы."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:464
@@ -1059,44 +1103,44 @@ msgctxt "europeans_ware"
 msgid ""
 "The saw is an essential tool. This saw is needed by the worker and the "
 "woodcutter."
-msgstr ""
+msgstr "Пила - важнейший инструмент. Ими пользуются лесорубы и работники."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:477
 msgctxt "europeans_ware"
 msgid "The scythe is a secondary tool of the lumberjacks."
-msgstr ""
+msgstr "Коса - это второстепенный инструмент дровосека."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:479
 msgctxt "europeans_ware"
 msgid "Scythes are produced by all smithies."
-msgstr ""
+msgstr "Косу выкует любой кузнец."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:490
 msgctxt "europeans_ware"
 msgid "The felling ax is the tool to chop down trees."
-msgstr ""
+msgstr "Топор Дровосека - орудие для рубки деревьев."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:492
 msgctxt "europeans_ware"
 msgid "Felling axes are used by lumberjacks and produced by all smithies."
-msgstr ""
+msgstr "Топор дровосека используются дровосеком и производится в кузнице."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Pick, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:503
 msgctxt "europeans_ware"
 msgid ""
 "The pick is an essential tool. Picks are used by stonemasons and miners."
-msgstr ""
+msgstr "Кирка - важнейший инструмент. Она нужна и каменщику, и шахтеру."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Pick, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:505
 msgctxt "europeans_ware"
 msgid "They are produced produced by all smithies."
-msgstr ""
+msgstr "Её скует любой кузнец."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:516
@@ -1105,6 +1149,8 @@ msgid ""
 "The shovel is an essential tool. Therefore the forester, the gardener and "
 "the terraformer use them."
 msgstr ""
+"Лопата - важнейший инструмент. Ей пользуются лесники, садовники и "
+"терраформеры."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:531
@@ -1113,6 +1159,8 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the big manufactory. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Базовая броня для европейских солдат. Его производят в большой мануфактуре. "
+"В сочетании с деревянным копьем служит снаряжением для молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Processed Armor
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:540
@@ -1121,6 +1169,8 @@ msgid ""
 "Basic armor for European soldiers. It is produced in the weaving mill. In "
 "combination with wooden spear, it is the equipment to fit out young soldiers."
 msgstr ""
+"Базовая броня для европейских солдат. Его производят на ткацкой фабрике. В "
+"сочетании с деревянным копьем служит снаряжением для молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Chain Armor
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:549
@@ -1130,6 +1180,9 @@ msgid ""
 "by a tailor and used in a battle arena to protect soldiers with additional "
 "health points."
 msgstr ""
+"Уплотненная броня - это средняя броня для европейских солдат. Она "
+"производится портным и используется на арене поединков для увелечения "
+"здоровья солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:558
@@ -1138,6 +1191,8 @@ msgid ""
 "The advanced armor is produced in the a manufactory and used in the battle "
 "arena to protect soldiers with additional health points."
 msgstr ""
+"Улучшеные доспехи производится в мануфактуре и используется на Арене "
+"поединков чтобы повысить здоровье солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:567
@@ -1146,6 +1201,8 @@ msgid ""
 "Wooden boots are basic footwear for soldiers to be protect on their feet. "
 "They are produced by the dressmaker."
 msgstr ""
+"Деревянные ботинки служат базовой обувью для солдат, и защищают их ноги. Их "
+"изготавливает портниха."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:576
@@ -1155,6 +1212,9 @@ msgid ""
 "feet. They are produced by the dressmaker and used to train soldiers’ evade "
 "from level 0 to level 1."
 msgstr ""
+"Прочные ботинки - отличная солдатская обувь, облегчающая шаг. "
+"Изготавливаются портнихами и используются для повышения уровня уклонения "
+"солдат с 0 до 1."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:585
@@ -1164,6 +1224,9 @@ msgid ""
 "their feet. They are produced by the dressmaker and used to train soldiers’ "
 "evade from level 1 to level 2."
 msgstr ""
+"Легкие ботинки это легкая и долговечная солдатская обувь, облегчающая шаг. "
+"Изготавливаются портнихами и используются для повышения уровня уклонения "
+"солдат с 1 до 2."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:594
@@ -1172,6 +1235,8 @@ msgid ""
 "Hero boots! The only suitable footwear for a real hero. They are produced by "
 "the dressmaker and used to train soldiers’ evade from level 2 to level 3."
 msgstr ""
+"Ботинки ветерана! Только для настоящих героев. Изготавливаются портнихами и "
+"служат для повышения уклонения солдат с 2 до 3."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:606
@@ -1181,6 +1246,9 @@ msgid ""
 "produced in the manufactory. In combination with armor, it is the equipment "
 "to fit out young soldiers."
 msgstr ""
+"Это деревянное копье является основным оружием в европейских армиях. Его "
+"изготавливают в мануфактуре. В сочетании с доспехами служит снаряжением для "
+"молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:615
@@ -1189,6 +1257,8 @@ msgid ""
 "This is a advanced spear with a steel tip. It is produced in a manufactory "
 "and used in a battle arena to train soldiers in attack."
 msgstr ""
+"Это Улучшенное копье со стальным наконечником. Его производят в мануфактуре "
+"и используют на арене поединков для тренировки солдат в уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Ax
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:624
@@ -1197,6 +1267,8 @@ msgid ""
 "This is an broad ax. It is produced in a manufactory and used in a battle "
 "arena to train soldiers in attack."
 msgstr ""
+"Это Секира. Её производят в мануфактуре и используют на боевой арене для "
+"тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Broad Sword
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:633
@@ -1205,6 +1277,8 @@ msgid ""
 "This is a broad sword. It is produced in the advanced manufactory and used "
 "in a battle arena to train soldiers in attack."
 msgstr ""
+"Это тесак. Его производят в продвинутой мануфактуре и используют на боевой "
+"арене для тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:642
@@ -1214,6 +1288,8 @@ msgid ""
 "manufactory. In combination with armor, it is the equipment to fit out young "
 "soldiers."
 msgstr ""
+"Шлем служит базовой защитой для европейских солдат. Его производят в "
+"мануфактуре. В сочетании с бронёй служит снаряжением для молодых солдат."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:651
@@ -1222,6 +1298,8 @@ msgid ""
 "The mask is the medium defense tool of a soldier. It is produced in a "
 "manufactory and used in a battle arena to train soldiers in defense."
 msgstr ""
+"Маска - это средняя защита солдата. Её производят в мануфактуре и используют "
+"на арене поединков для тренировки солдат в защите."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Steel Shield
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:660
@@ -1230,6 +1308,8 @@ msgid ""
 "This steel shield is produced in a manufactory and used in a battle arena to "
 "train soldiers in defense."
 msgstr ""
+"Этот стальной щит изготавливается в мануфактуре и используется на арене "
+"поединков для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:669
@@ -1239,18 +1319,21 @@ msgid ""
 "are produced in the advanced manufactory and used in the advanced battle "
 "arena to train soldiers in defense."
 msgstr ""
+"Эти улучшенные щиты используются лучшими солдатами Европейцев. Они "
+"производятся в продвинутой мануфактуре и используются на продвинутой арене "
+"поединков для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:684
 msgctxt "europeans_worker"
 msgid "Used for recruiting all other workers."
-msgstr ""
+msgstr "Нанимает всех работников."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:693
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with their hands."
-msgstr ""
+msgstr "Носят товары по дорогам в руках."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:702
@@ -1258,30 +1341,32 @@ msgctxt "europeans_worker"
 msgid ""
 "Carries items along your roads with their hands. Only used for busy roads."
 msgstr ""
+"Носят товары по дорогам в руках. Используется только на оживленных дорогах."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:711
 msgctxt "europeans_worker"
 msgid "Carries items along your roads with baskets. Only used for busy roads."
 msgstr ""
+"Носят товары по дорогам в руках. Используется только на оживленных дорогах."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ferry
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:720
 msgctxt "europeans_worker"
 msgid "Ships wares across narrow rivers."
-msgstr ""
+msgstr "Перевозит товары через узкие протоки."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Recruit
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:729
 msgctxt "europeans_worker"
 msgid "Eager to become a soldier and defend his tribe!"
-msgstr ""
+msgstr "Хочет стать солдатом и отстаивать интересы своего племени!"
 
 #. TRANSLATORS: Helptext for an Europeans worker: Soldier
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:738
 msgctxt "europeans_worker"
 msgid "Defend and Conquer!"
-msgstr ""
+msgstr "Защищать и покорять!"
 
 #. TRANSLATORS: Helptext for an Europeans worker: Worker
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:750
@@ -1289,40 +1374,42 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:768
 msgctxt "europeans_worker"
 msgid "General worker with no special ability."
-msgstr ""
+msgstr "Обычный работник без особых навыков."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Shipwright
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:777
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:786
 msgctxt "europeans_worker"
 msgid "Works at the shipyard and constructs new ships."
-msgstr ""
+msgstr "Работает на верфи, строя суда."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Builder
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:795
 msgctxt "europeans_worker"
 msgid "Works at construction sites to raise new buildings."
-msgstr ""
+msgstr "Возводит новые здания на стройплощадках."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Lumberjack / Woodcutter
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:807
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:816
 msgctxt "europeans_worker"
 msgid "Fells trees."
-msgstr ""
+msgstr "Валит деревья."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:825
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:834
 msgctxt "europeans_worker"
 msgid "Plant trees."
-msgstr ""
+msgstr "Сажает деревья."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:843
 msgctxt "europeans_worker"
 msgid "Making clay for lime kiln or stonemasons house and planting reed."
 msgstr ""
+"Делает глину для цементных печей или дома каменщика, а так же выращивает "
+"тростник."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:852
@@ -1330,6 +1417,8 @@ msgctxt "europeans_worker"
 msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed and cotton."
 msgstr ""
+"Делает глину для цементных печей илм дома каменщика, а так же выращивает "
+"тростник и хлопок."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Gardener
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:861
@@ -1338,19 +1427,21 @@ msgid ""
 "Making clay for lime kiln or stonemasons house and planting reed, cotton and "
 "rubber trees."
 msgstr ""
+"Делает глину для цементных печей илм дома каменщика, а так же выращивает "
+"тростник, хлопок и гевею."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Geologist
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:873
 msgctxt "europeans_worker"
 msgid "Discovers resources for mining."
-msgstr ""
+msgstr "Ищет залежи полезных ископаемых."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Stonecutter
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:882
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:891
 msgctxt "europeans_worker"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
-msgstr ""
+msgstr "Высекает блоки гранита и мрамора из окружающих скал."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Miner
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:900
@@ -1358,7 +1449,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:918
 msgctxt "europeans_worker"
 msgid "Mines ore and minerals."
-msgstr ""
+msgstr "Добывает руду и минералы."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Trainer
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:930
@@ -1366,7 +1457,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:948
 msgctxt "europeans_worker"
 msgid "Trains the soldiers."
-msgstr ""
+msgstr "Обучает солдат."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Scout
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:957
@@ -1374,7 +1465,7 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid ""
 "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
-msgstr ""
+msgstr "Разведчик Резвый разведывает неразведанное резво и резко."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Scout
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:977
@@ -1383,34 +1474,36 @@ msgid ""
 "Traders work in markets or in trading posts to exchange wares with other "
 "tribes."
 msgstr ""
+"Торговцы работают на рынках или в торговых постах, где обмениваются товарами "
+"с другими племенами."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ashes
 #. TRANSLATORS: Helptext for an Europeans immovable: Destroyed Building
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:988
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1023
 msgid "The remains of a destroyed building."
-msgstr ""
+msgstr "Останки разрушенного здания."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:995
 msgid "This cotton field has just been planted."
-msgstr ""
+msgstr "Это хлопковое поле только что засеяно."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1002
 msgid "This cotton field is growing."
-msgstr ""
+msgstr "Хлопок растет."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1009
 msgid ""
 "This cotton field is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Хлопок на этом поле зацвел. Пасечник может получить с него мёд."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Cotton Field
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1016
 msgid "This cotton field is ready for harvesting."
-msgstr ""
+msgstr "Этот хлопок готов к сбору."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1030
@@ -1418,6 +1511,8 @@ msgid ""
 "Ponds with water becomes dry after some time. These dry holes vanish after a "
 "while."
 msgstr ""
+"Пруды с водой через некоторое время пересыхают. Эти сухие ямы через "
+"некоторое время исчезают."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Pond
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1037
@@ -1426,27 +1521,30 @@ msgid ""
 "These falls dry after a while or can be used by terraformer to produce new "
 "soil."
 msgstr ""
+"Когда садовники выкапывают землю, они оставляют в земле ямы, заполненные "
+"водой. Со временем они высыхают или могут быть использованы терраформером "
+"для получения нового грунта."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1044
 msgid "This reed field has just been planted."
-msgstr ""
+msgstr "Тростниковое поле засеено."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1051
 msgid "This reed field is growing."
-msgstr ""
+msgstr "Тростник растет."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1058
 msgid ""
 "This reed field is flowering. Honey can be produced from it by a beekeeper."
-msgstr ""
+msgstr "Тростник на этом поле зацвел. Пасечник может получить с него мёд."
 
 #. TRANSLATORS: Helptext for a Europeans immovable: Reed Field
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1065
 msgid "This reed field is ready for harvesting."
-msgstr ""
+msgstr "Тростник готов к уборке."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Sapling
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1072
@@ -1454,7 +1552,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1128
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1156
 msgid "This rubber tree has just been planted."
-msgstr ""
+msgstr "Гевея посажена."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Pole
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1079
@@ -1462,7 +1560,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1135
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1163
 msgid "This rubber tree is growing."
-msgstr ""
+msgstr "Гевея растет."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Mature
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1086
@@ -1470,7 +1568,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1142
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1170
 msgid "This rubber tree is fully grown. Lianas can be gathered from it."
-msgstr ""
+msgstr "Эта гевея полностью выросла. С неё можно собрать лианы."
 
 #. TRANSLATORS: Helptext for an Amazon immovable: Rubber Tree Old
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1093
@@ -1481,49 +1579,56 @@ msgid ""
 "This rubber tree is ready for harvesting rubber by a master woodcutter. "
 "Other tribes can harvest it for normal logs."
 msgstr ""
+"Гевея готова к сбору каучука старшим лесорубом. Другие племена могут "
+"заготавливать ее для получения бревен."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: No resources
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1184
 msgid "There are no resources in the ground here."
-msgstr ""
+msgstr "Здесь нет ресурсов."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Water
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1191
 msgid "There is water in the ground here that can be pulled up by a well."
 msgstr ""
+"Здесь есть подземные воды. Воду можно получить, построив здесь колодец."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1199
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1243
 msgid "Coal veins contain coal that can be dug up by coal mines."
 msgstr ""
+"Угольная жила содержит уголь, который может быть выкопан в угольной шахте."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1201
 msgid "There is only a little bit of coal here."
-msgstr ""
+msgstr "Здесь есть немного угля."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1210
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1254
 msgid "Iron veins contain iron ore that can be dug up by iron mines."
 msgstr ""
+"Железная жила содержит железную руду, которая может быть добыта в железной "
+"шахте."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1212
 msgid "There is only a little bit of iron here."
-msgstr ""
+msgstr "Здесь есть немного железа."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1221
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1265
 msgid "Gold veins contain gold ore that can be dug up by gold mines."
 msgstr ""
+"Золотая жила содержит золото, которое может быть выкопано в золотой шахте."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1223
 msgid "There is only a little bit of gold here."
-msgstr ""
+msgstr "Здесь совсем немного золота."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 1
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1232
@@ -1532,47 +1637,49 @@ msgid ""
 "Marble is a basic building material and can be dug up by a marble mine. You "
 "will also get granite from the mine."
 msgstr ""
+"Мрамор – это основной строительный материал. Он может быть добыт в мраморной "
+"шахте. Там же вы будете добывать гранит."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1234
 msgid "There is only a little bit of marble here."
-msgstr ""
+msgstr "Здесь есть немного мрамора."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1245
 msgid "There is a lot of coal here."
-msgstr ""
+msgstr "Здесь много угля."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1256
 msgid "There is a lot of iron here."
-msgstr ""
+msgstr "Здесь много железа."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1267
 msgid "There is a lot of gold here."
-msgstr ""
+msgstr "Здесь много золота."
 
 #. TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1278
 msgid "There is a lot of marble here."
-msgstr ""
+msgstr "Здесь много мрамора."
 
 #. TRANSLATORS: Helptext for an Europeans immovable: Ship Under Construction
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1286
 msgid "A ship is being constructed at this site."
-msgstr ""
+msgstr "На этом участке строится корабль."
 
 #. TRANSLATORS: Purpose helptext for an Europeans immovable: Trade Pole
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1293
 msgctxt "europeans_building"
 msgid "Open market to exchange wares with other allied tribes."
-msgstr ""
+msgstr "Открытый рынок для обмена товарами с другими союзными племенами."
 
 #. TRANSLATORS: Helptext for an Europeans immovable usable by Europeans: Dead Tree
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1301
 msgid "The remains of an old tree."
-msgstr ""
+msgstr "Останки старого дерева."
 
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Balsa Tree
 #. TRANSLATORS: Helptext for an amazon immovable usable by Europeans: Ironwood Tree
@@ -1587,18 +1694,20 @@ msgstr ""
 msgid ""
 "This tree is only planted by the amazon tribe but can be harvested for logs."
 msgstr ""
+"Эти деревья могут быть посажены только амазонками, но могут быть пущены на "
+"бревна."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Headquarters
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1369
 msgctxt "europeans_building"
 msgid "Accommodation for your people. Also stores your wares and tools."
-msgstr ""
+msgstr "Помещение для ваших людей. Также хранит ваши товары и инструменты."
 
 #. TRANSLATORS: Note helptext for an Europeans warehouse: Headquarters
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1371
 msgctxt "europeans_building"
 msgid "The headquarters is your main building."
-msgstr ""
+msgstr "Штаб — это ваше главное здание."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Warehouse
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1378
@@ -1607,6 +1716,8 @@ msgid ""
 "Your workers and soldiers will find shelter here. Also stores your wares and "
 "tools."
 msgstr ""
+"Ваши рабочие и солдаты могут здесь укрыться, а также хранить здесь товары и "
+"инструменты."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1385
@@ -1616,55 +1727,57 @@ msgid ""
 "Serves as a base for overseas colonization and trade. Also stores your "
 "soldiers, wares and tools."
 msgstr ""
+"Служит базой для заморской колонизации и торговли. Также хранит ваших "
+"солдат, товары и инструменты."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1399
 msgctxt "europeans_building"
 msgid "Market building to sale natural products for coins."
-msgstr ""
+msgstr "Здание рынка для продажи простых ресурсов за монеты."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1406
 msgctxt "europeans_building"
 msgid "Market building to sale processed products for coins."
-msgstr ""
+msgstr "Здание рынка для продажи переработанных ресурсов за монеты."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1413
 msgctxt "europeans_building"
 msgid "Market building to sale armor for coins."
-msgstr ""
+msgstr "Здание рынка для продажи брони за монеты."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1420
 msgctxt "europeans_building"
 msgid "Market building to sale boots for coins."
-msgstr ""
+msgstr "Здание рынка для продажи обуви за монеты."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1427
 msgctxt "europeans_building"
 msgid "Market building to sale weapons for coins."
-msgstr ""
+msgstr "Здание рынка для продажи оружия за монеты."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1434
 msgctxt "europeans_building"
 msgid "Market building to sale wood tools and weapons for coins."
-msgstr ""
+msgstr "Здание рынка для продажи деревянных изделий и оружия за монеты."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Trading Post
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1441
 msgctxt "europeans_building"
 msgid "Trading building to purchase wares from other allied tribes."
-msgstr ""
+msgstr "Торговое здание для покупки товаров у других союзных племен."
 
 #. TRANSLATORS: Purpose helptext for an Europeans warehouse: Store
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1448
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1455
 msgctxt "europeans_building"
 msgid "Store building to purchase wares from other allied tribes."
-msgstr ""
+msgstr "Здание магазина для покупки товаров у других союзных племен."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lumberjack_s Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Lumberjack's House
@@ -1672,19 +1785,19 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1473
 msgctxt "europeans_building"
 msgid "Fells trees in the surrounding area and processes them into logs."
-msgstr ""
+msgstr "Валит деревья поблизости и перерабатывает их в брёвна."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lumberjack_s Hut
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1466
 msgctxt "europeans_building"
 msgid "The lumberjack’s hut needs trees to fell within the work area."
-msgstr ""
+msgstr "Хижине дровосека нужны деревья для рубки, в его рабочей области."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Lumberjack's House
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1475
 msgctxt "europeans_building"
 msgid "The lumberjack’s house needs trees to fell within the work area."
-msgstr ""
+msgstr "Дому дровосека требуются деревья под рубку в рабочей области."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Ranger's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Forester's House
@@ -1692,7 +1805,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1491
 msgctxt "europeans_building"
 msgid "Plants trees in the surrounding area."
-msgstr ""
+msgstr "Сажает деревья в ближайших окрестностях."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Ranger's Hut
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1484
@@ -1700,6 +1813,8 @@ msgctxt "europeans_building"
 msgid ""
 "The ranger’s hut needs free space within the work area to plant the trees."
 msgstr ""
+"Хижине лесничего нужно свободное пространство в его рабочей области, "
+"пригодное для посадки деревьев."
 
 #. TRANSLATORS: Note helptext for an Europeans production site: Forester's House
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1493
@@ -1708,6 +1823,8 @@ msgid ""
 "The forester’s house needs free space within the work area to plant the "
 "trees."
 msgstr ""
+"Дому лесника нужно свободное пространство в его рабочей области, пригодное "
+"для посадки деревьев."
 
 #. TRANSLATORS: Purpose helptext for Europeans production site: Small Farm
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1500
@@ -1716,6 +1833,8 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed in the holes created."
 msgstr ""
+"Копает глину и, смешивая с водой, получает глиняное тесто. Затем растит "
+"тростник в образовавшихся ямах."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1507
@@ -1724,12 +1843,14 @@ msgid ""
 "Digs up mud from the ground and uses water to turn it into clay. Then plant "
 "reed, cotton and rubber trees in the holes created."
 msgstr ""
+"Копает глину и, смешивая с водой, получает глиняное тесто. Затем растит "
+"тростник, хлопок и гевею в образовавшихся ямах."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Quarry
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1514
 msgctxt "europeans_building"
 msgid "Cuts raw pieces of granite out of rocks in the vicinity."
-msgstr ""
+msgstr "Высекает блоки гранита из скал в округе."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Quarry
 #. TRANSLATORS: Note helptext for an Europeans production site: Quarry
@@ -1737,13 +1858,13 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1525
 msgctxt "europeans_building"
 msgid "The quarry needs rocks to cut within the work area."
-msgstr ""
+msgstr "Каменоломне для работы нужны скалы в рабочей области."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Quarry
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1523
 msgctxt "europeans_building"
 msgid "Cuts blocks of granite and marble out of rocks in the vicinity."
-msgstr ""
+msgstr "Высекает блоки гранита и мрамора из окружающих скал."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
@@ -1751,7 +1872,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1539
 msgctxt "building"
 msgid "Explores unknown territory."
-msgstr ""
+msgstr "Разведывает незнакомую территорию."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Well
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Well
@@ -1764,31 +1885,31 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1590
 msgctxt "europeans_building"
 msgid "Draws water out of the deep."
-msgstr ""
+msgstr "Черпает воду из недр."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Weaving Mill
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1597
 msgctxt "europeans_building"
 msgid "Weaves cloth out of reed."
-msgstr ""
+msgstr "Ткет Полотно из тростника."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaving Mill
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1604
 msgctxt "europeans_building"
 msgid "Weaves cloth and armor out of cotton and reed."
-msgstr ""
+msgstr "Ткет полотно и доспехи из хлопка и тростника."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1611
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood."
-msgstr ""
+msgstr "Обжигает бревна для получения балок."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1618
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood and saws log to produce planks."
-msgstr ""
+msgstr "Обжигает брёвна для получения балок и пилит брёвна на доски."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
@@ -1796,7 +1917,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1632
 msgctxt "europeans_building"
 msgid "Burns logs into charcoal."
-msgstr ""
+msgstr "Обжигает брёвна в уголь."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1639
@@ -1805,6 +1926,8 @@ msgid ""
 "Processes clay and granite to make bricks and ‘grout’, a substance that "
 "solidifies and so reinforces masonry."
 msgstr ""
+"Перерабатывает глину и гранит в кирпич и \"раствор\" - вещество, которое "
+"затвердевает и таким образом укрепляет каменную кладку."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1641
@@ -1813,6 +1936,9 @@ msgid ""
 "The lime kiln’s output will only go to construction sites that need it. "
 "Brick and grout only used by advanced buildings."
 msgstr ""
+"Продукция цементной печи будет поступать только на строительные площадки, "
+"которые в ней нуждаются. Кирпич и цемент используются только в продвинутых "
+"зданиях."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Stonemason's House
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1648
@@ -1822,6 +1948,9 @@ msgid ""
 "solidifies and so reinforces masonry. Additionally carves marble columns out "
 "of marble."
 msgstr ""
+"Перерабатывает глину и гранит для изготовления кирпичей и \"цемента\" - "
+"вещества, которое затвердевает и таким образом укрепляет каменную кладку. "
+"Дополнительно вырезает мраморные колонны из мрамора."
 
 #. TRANSLATORS: Note helptext for a Europeans production site: Lime Kiln
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1650
@@ -1830,25 +1959,28 @@ msgid ""
 "The stonemason’s house's output will only go to construction sites that need "
 "it. Marble column only used by advanced buildings."
 msgstr ""
+"Продукция дома каменщика будет поступать только на строительные площадки, "
+"которые в этом нуждаются. Мраморная колонна используется только в "
+"продвинутых зданиях."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1657
 msgctxt "europeans_building"
 msgid "Smelts ore into iron."
-msgstr ""
+msgstr "Плавит руду в железо."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1664
 msgctxt "europeans_building"
 msgid "Smelts ore into iron and gold. Recycles scrap metal."
-msgstr ""
+msgstr "Плавка руды в железо и золото. Переработка металлолома."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Toolsmithy
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1671
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1678
 msgctxt "europeans_building"
 msgid "Medium factory that produces tools from simple raw materials."
-msgstr ""
+msgstr "Средняя фабрика, производящая инструменты из простого сырья."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Tailors_house
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1685
@@ -1856,21 +1988,21 @@ msgstr ""
 msgctxt "europeans_building"
 msgid ""
 "Medium factory that produces armor and clothing from simple raw materials."
-msgstr ""
+msgstr "Средняя фабрика, производящая броню и одежду из простого сырья."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Shoemakers_house
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1699
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1706
 msgctxt "europeans_building"
 msgid "Medium factory that produces boots from simple raw materials."
-msgstr ""
+msgstr "Средняя фабрика, производящая обувь из простого сырья."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Weaponsmithy
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1713
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1720
 msgctxt "europeans_building"
 msgid "Medium factory that produces weapons from simple raw materials."
-msgstr ""
+msgstr "Средняя фабрика, производящая оружие из простого сырья."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1729
@@ -1880,6 +2012,8 @@ msgid ""
 "Large factory that produces complex wares such as tools, weapons, armor, "
 "clothing, shoes or building materials from simple raw materials."
 msgstr ""
+"Большая фабрика, которая производит сложные товары: инструменты, оружие, "
+"доспехи, одежду, обувь или строительные материалы из простого сырья."
 
 #. TRANSLATORS: Purpose helptext for production site: Coal Mine
 #. TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
@@ -1895,7 +2029,7 @@ msgstr ""
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1780
 msgctxt "europeans_building"
 msgid "Digs coal out of the ground in mountain terrain."
-msgstr ""
+msgstr "Выкапывает уголь из-под земли в горной местности."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
