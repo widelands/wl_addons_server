@@ -9,8 +9,8 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",  
     vision_range = 2,
     
-    experience = 64,
-    becomes = "europeans_terraformer_normal",
+    experience = 72,
+    becomes = "europeans_terraformer_advanced",
     
     buildcost = {
         europeans_carrier = 1,
@@ -46,6 +46,16 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:2s",
             "terraform=amazons",
             "animate=dig duration:2s",
+            "return"
+        },
+        check_land = {
+            "findspace=size:any radius:4",
+        },
+        terraform_land = {
+            "findspace=size:any radius:4",
+            "walk=coords",
+            "animate=dig duration:4s",
+            "terraform=amazons",
             "return"
         },
         check_pond_water = {

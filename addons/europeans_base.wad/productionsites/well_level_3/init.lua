@@ -23,8 +23,9 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_well_level_4",
         enhancement_cost = {
-            planks = 1,
             brick = 1,
+            grout = 1,
+            planks = 1,
             marble = 1,
             buckets = 1
         },
@@ -66,9 +67,11 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining water"),
             actions = {
                 "return=skipped unless economy needs water or workers need experience",
-                "animate=working duration:9s",
+                "animate=working duration:5s",
                 "mine=resource_water radius:6 yield:80% when_empty:80%",
-                "produce=water:4"
+                "produce=water:2",
+                "animate=working duration:4s",
+                "produce=water:2"
             }
         },
         mining_water_idle = {

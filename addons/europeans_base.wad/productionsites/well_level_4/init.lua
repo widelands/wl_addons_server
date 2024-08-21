@@ -29,8 +29,9 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_well_level_5",
         enhancement_cost = {
-            planks = 1,
             brick = 1,
+            grout = 1,
+            planks = 1,
             marble = 1
         },
         enhancement_return_on_dismantle = {
@@ -70,9 +71,13 @@ wl.Descriptions():new_productionsite_type {
             descname = _"mining water",
             actions = {
                 "return=skipped unless economy needs water",
-                "animate=working duration:7s",
+                "animate=working duration:3s",
                 "mine=resource_water radius:12 yield:90% when_empty:90%",
-                "produce=water:6"
+                "produce=water:2",
+                "animate=working duration:2s",
+                "produce=water:2",
+                "animate=working duration:2s",
+                "produce=water:2"
             }
         },
         mining_water_idle = {

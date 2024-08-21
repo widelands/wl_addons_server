@@ -28,6 +28,24 @@ wl.Descriptions():new_productionsite_type {
     size = "small",
     destructible = true,
     
+    buildcost = {
+        granite = 1,
+        brick = 1,
+        grout = 1,
+        planks = 1,
+        marble = 1,
+        marble_column = 1,
+        quartz = 1,
+        diamond = 1
+    },
+    return_on_dismantle = {
+        scrap_wood = 1,
+        granite = 1,
+        marble = 1,
+        quartz = 1,
+        diamond = 1
+    },
+    
     aihints = {},
 
     working_positions = {

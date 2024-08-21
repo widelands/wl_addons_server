@@ -21,15 +21,17 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_tower_level_2",
         enhancement_cost = {
-            blackwood = 2,
+            brick = 2,
             grout = 2,
-            quartz = 1
+            planks = 2,
+            marble_column = 2,
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
             marble = 2,
-            quartz = 1
+            diamond = 1
         },
     },
     

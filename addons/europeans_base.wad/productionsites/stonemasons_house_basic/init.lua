@@ -23,25 +23,25 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_stonemasons_house_advanced",
         enhancement_cost = {
-            blackwood = 2,
+            brick = 2,
             grout = 2,
             planks = 2,
-            brick = 2,
             marble = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 4,
-            granite = 4,
+            scrap_wood = 2,
+            granite = 2,
             marble = 2
         },
     },
     buildcost = {
-        log = 3,
-        granite = 3
+        granite = 3,
+        log = 3
     },
     return_on_dismantle = {
-        scrap_wood = 3,
-        granite = 3
+        scrap_wood = 2,
+        granite = 2,
+        marble = 1
     },
 
     aihints = {

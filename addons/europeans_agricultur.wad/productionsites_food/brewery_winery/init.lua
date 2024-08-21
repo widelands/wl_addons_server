@@ -35,7 +35,7 @@ wl.Descriptions():new_productionsite_type {
 
     working_positions = {
         europeans_worker_advanced = 1,
-        europeans_worker_normal = 1
+        europeans_worker_basic = 1
     },
 
     inputs = {
@@ -71,7 +71,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs beer_strong and not economy needs beer",
                 "return=skipped when economy needs wine and not economy needs beer",
                 "consume=water barley",
-                "animate=working duration:1m",
+                "animate=working duration:1m30s",
                 "produce=beer:4"
             }
         },
@@ -87,7 +87,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs wine and not economy needs mead",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
-                "animate=working duration:1m",
+                "animate=working duration:1m30s",
                 "produce=mead"
             }
         },
@@ -103,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs wine and not economy needs beer_strong",
                 "return=skipped unless site has fruit",
                 "consume=water barley fruit",
-                "animate=working duration:1m",
+                "animate=working duration:1m30s",
                 "produce=beer_strong"
             }
         },
@@ -118,7 +118,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs mead and not economy needs wine",
                 "consume=grape:2",
                 "playsound=sound/empire/winebubble priority:40% allow_multiple",
-                "animate=working duration:1m",
+                "animate=working duration:2m",
                 "produce=wine"
             }
         }

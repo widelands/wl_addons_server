@@ -33,8 +33,8 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_well_level_1",
         enhancement_cost = {
-            log = 1,
-            granite = 1
+            granite = 2,
+            log = 2,
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1,
@@ -42,8 +42,8 @@ wl.Descriptions():new_productionsite_type {
         },
     },
     buildcost = {
-        log = 2,
         granite = 2,
+        log = 2,
         buckets = 1
     },
     return_on_dismantle = {

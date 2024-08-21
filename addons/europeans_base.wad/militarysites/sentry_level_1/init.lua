@@ -21,14 +21,17 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_sentry_level_2",
         enhancement_cost = {
-            blackwood = 1,
+            brick = 1,
             grout = 1,
-            quartz = 1
+            planks = 1,
+            marble_column = 1,
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1,
             granite = 1,
-            quartz = 1
+            marble = 1,
+            diamond = 1
         },
     },
     

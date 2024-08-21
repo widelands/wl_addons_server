@@ -29,10 +29,12 @@ wl.Descriptions():new_productionsite_type {
     destructible = true,
     
     buildcost = {
-        planks = 4,
         brick = 4,
+        grout = 4,
+        planks = 4,
         marble = 4,
         marble_column = 2,
+        cloth = 2,
         quartz = 1,
         diamond = 1
     },

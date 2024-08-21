@@ -23,17 +23,20 @@ wl.Descriptions():new_trainingsite_type {
     destructible = true,
     
     buildcost = {
-        log = 3,
-        granite = 3,
-        cloth = 2,
-        blackwood = 2,
-        grout = 2,
-        brick = 2,
-        planks = 2
+        brick = 3,
+        grout = 3,
+        planks = 3,
+        marble = 3,
+        marble_column = 1,
+        quartz = 1,
+        diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 5,
-        granite = 5
+        scrap_wood = 4,
+        granite = 4,
+        marble = 3,
+        quartz = 1,
+        diamond = 1
     },
 
     aihints = {
@@ -44,7 +47,7 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     working_positions = {
-        europeans_trainer_normal = 2
+        europeans_trainer_advanced = 2
     },
 
     inputs = {

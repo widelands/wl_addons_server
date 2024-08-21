@@ -29,14 +29,15 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_brewery_winery",
         enhancement_cost = {
-            planks = 2,
             brick = 2,
+            grout = 2,
+            planks = 2,
             marble = 2
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
             granite = 2,
-            marble = 2
+            marble = 1
         }
     },
 
@@ -80,7 +81,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs mead and not economy needs beer",
                 "return=skipped when economy needs beer_strong and not economy needs beer",
                 "consume=water barley",
-                "animate=working duration:1m",
+                "animate=working duration:2m",
                 "produce=beer"
             }
         },
@@ -95,7 +96,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs beer_strong and not economy needs mead",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
-                "animate=working duration:1m",
+                "animate=working duration:2m",
                 "produce=mead"
             }
         },
@@ -110,7 +111,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs mead and not economy needs beer_strong",
                 "return=skipped unless site has fruit",
                 "consume=water barley fruit",
-                "animate=working duration:1m",
+                "animate=working duration:2m",
                 "produce=beer_strong"
             }
         }

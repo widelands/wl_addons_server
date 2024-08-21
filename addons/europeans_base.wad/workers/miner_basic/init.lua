@@ -9,8 +9,8 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
     
-    experience = 32,
-    becomes = "europeans_miner_normal",
+    experience = 48,
+    becomes = "europeans_miner_advanced",
     
     buildcost = {
         europeans_stonecutter_basic = 1
@@ -19,7 +19,7 @@ wl.Descriptions():new_worker_type {
     animation_directory = dirname,
     animations = {
         idle = {
-            hotspot = { 5, 24 }
+            hotspot = { 4, 24 }
         }
     },
     spritesheets = {

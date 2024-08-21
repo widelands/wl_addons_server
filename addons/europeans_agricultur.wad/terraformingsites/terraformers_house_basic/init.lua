@@ -11,32 +11,32 @@ wl.Descriptions():new_productionsite_type {
     animation_directory = dirname,
     animations = {
       idle = {
-         hotspot = { 44, 49 },
+         hotspot = { 34, 74 },
       },
-    },
-    spritesheets = {
-      build = {
-         frames = 3,
-         columns = 3,
-         rows = 1,
-         hotspot = { 44, 49 },
-      },
+      working = {
+         basename = "idle",
+         hotspot = { 34, 74 },
+      }
     },
     
     size = "small",
     enhancement = {
-        name = "europeans_terraformers_house_normal",
+        name = "europeans_terraformers_house_advanced",
         enhancement_cost = {
-            blackwood = 1,
-            grout = 1
+            brick = 1,
+            grout = 1,
+            planks = 1,
+            marble = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1
+            scrap_wood = 1,
+            granite = 1,
+            marble = 1
         },
     },
     buildcost = {
-        log = 2,
-        granite = 2
+        granite = 2,
+        log = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
@@ -65,18 +65,22 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "return=skipped unless site has water:2",
+                "sleep=duration:10s",
+                "callworker=check_land",
+                "call=terraforming_land_dry",
                 "return=skipped unless site has log:8",
                 "sleep=duration:10s",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
                 "callworker=check_terraform_coast",
                 "call=terraforming_coast",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "callworker=check_pond_water",
                 "call=terraforming_pond_water",
                 "callworker=check_pond_dry",
                 "call=terraforming_pond_dry",
-                "sleep=duration:10s",
+                "sleep=duration:5s",
                 "return=skipped"
             }
         },
@@ -88,6 +92,18 @@ wl.Descriptions():new_productionsite_type {
                 "callworker=terraform_coast",
                 "consume=log:2",
                 "callworker=terraform_coast"
+            }
+        },
+        terraforming_land_dry = {
+            -- TRANSLATORS: Completed/Skipped/Did not start terraforming dry land because ...
+            descname = pgettext("europeans_building", "terraforming dry land"),
+            actions = {
+                "return=skipped when economy needs water",
+                "return=skipped unless site has water",
+                "callworker=check_land",
+                "consume=water",
+                "callworker=terraform_land",
+                "return=skipped"
             }
         },
         terraforming_pond_water = {

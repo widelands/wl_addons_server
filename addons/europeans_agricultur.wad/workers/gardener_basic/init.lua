@@ -10,7 +10,7 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     experience = 48,
-    becomes = "europeans_gardener_normal",
+    becomes = "europeans_gardener_advanced",
     
     buildcost = {
         europeans_carrier = 1,

@@ -48,11 +48,11 @@ wl.Descriptions():new_productionsite_type {
 
     working_positions = {
         europeans_worker_advanced = 1,
-        europeans_worker_normal = 1
+        europeans_worker_basic= 1
     },
 
     inputs = {
-        { name = "planks", amount = 6 },
+        { name = "blackwood", amount = 6 },
         { name = "metal_alloy", amount = 6 },
         { name = "coal", amount = 6 }
     },
@@ -84,7 +84,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
             descname = pgettext("europeans_building", "making a wooden helmet"),
             actions = {
-                "return=skipped when economy needs planks and not economy needs helmet_wooden",
+                "return=skipped when economy needs blackwood and not economy needs helmet_wooden",
                 "return=skipped when economy needs helmet_mask and not economy needs helmet_wooden",
                 "return=skipped when economy needs shield_steel and not economy needs helmet_wooden",
                 "return=skipped when economy needs shield_advanced and not economy needs helmet_wooden",
@@ -92,7 +92,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs spear_advanced and not economy needs helmet_wooden",
                 "return=skipped when economy needs ax_broad and not economy needs helmet_wooden",
                 "return=skipped when economy needs sword_broad and not economy needs helmet_wooden",
-                "consume=planks",
+                "consume=blackwood",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:6m",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -103,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
             descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
-                "return=skipped when economy needs planks and not economy needs spear_wooden",
+                "return=skipped when economy needs blackwood and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_mask and not economy needs spear_wooden",
                 "return=skipped when economy needs shield_steel and not economy needs spear_wooden",
@@ -111,7 +111,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs spear_advanced and not economy needs spear_wooden",
                 "return=skipped when economy needs ax_broad and not economy needs spear_wooden",
                 "return=skipped when economy needs sword_broad and not economy needs spear_wooden",
-                "consume=planks",
+                "consume=blackwood",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:6m",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -171,7 +171,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
             descname = pgettext("europeans_building", "forging an advanced spear"),
             actions = {
-                "return=skipped when economy needs planks and not economy needs spear_advanced",
+                "return=skipped when economy needs blackwood and not economy needs spear_advanced",
                 "return=skipped when economy needs spear_wooden and not economy needs spear_advanced",
                 "return=skipped when economy needs ax_broad and not economy needs spear_advanced",
                 "return=skipped when economy needs sword_broad and not economy needs spear_advanced",
@@ -179,7 +179,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs helmet_mask and not economy needs spear_advanced",
                 "return=skipped when economy needs shield_steel and not economy needs spear_advanced",
                 "return=skipped when economy needs shield_advanced and not economy needs spear_advanced",
-                "consume=planks coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:6m",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -190,7 +190,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
             descname = pgettext("europeans_building", "forging a broad ax"),
             actions = {
-                "return=skipped when economy needs planks and not economy needs ax_broad",
+                "return=skipped when economy needs blackwood and not economy needs ax_broad",
                 "return=skipped when economy needs spear_wooden and not economy needs ax_broad",
                 "return=skipped when economy needs spear_advanced and not economy needs ax_broad",
                 "return=skipped when economy needs sword_broad and not economy needs ax_broad",
@@ -198,7 +198,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs helmet_mask and not economy needs ax_broad",
                 "return=skipped when economy needs shield_steel and not economy needs ax_broad",
                 "return=skipped when economy needs shield_advanced and not economy needs ax_broad",
-                "consume=planks coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:6m",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -209,7 +209,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
             descname = pgettext("europeans_building", "forging a broadsword"),
             actions = {
-                "return=skipped when economy needs planks and not economy needs sword_broad",
+                "return=skipped when economy needs blackwood and not economy needs sword_broad",
                 "return=skipped when economy needs spear_wooden and not economy needs sword_broad",
                 "return=skipped when economy needs spear_advanced and not economy needs sword_broad",
                 "return=skipped when economy needs ax_broad and not economy needs sword_broad",
@@ -217,7 +217,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs helmet_mask and not economy needs sword_broad",
                 "return=skipped when economy needs shield_steel and not economy needs sword_broad",
                 "return=skipped when economy needs shield_advanced and not economy needs sword_broad",
-                "consume=planks coal metal_alloy:2",
+                "consume=blackwood coal metal_alloy:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:6m",
                 "playsound=sound/smiths/sharpening priority:90%",

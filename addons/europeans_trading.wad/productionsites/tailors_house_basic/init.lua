@@ -37,22 +37,21 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_tailors_house_advanced",
         enhancement_cost = {
-            blackwood = 2,
+            brick = 2,
             grout = 2,
             planks = 2,
-            brick = 2,
             marble = 2
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 4,
-            granite = 4,
-            marble = 2
+            scrap_wood = 2,
+            granite = 2,
+            marble = 1
         },
     },
     buildcost = {
+        granite = 3,
         log = 3,
-        reed = 3,
-        granite = 3
+        reed = 3
     },
     return_on_dismantle = {
         scrap_wood = 3,

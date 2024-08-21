@@ -30,8 +30,9 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_castle_level_4",
         enhancement_cost = {
-            planks = 3,
             brick = 3,
+            grout = 3,
+            planks = 3,
             marble_column = 3,
             diamond = 1
         },

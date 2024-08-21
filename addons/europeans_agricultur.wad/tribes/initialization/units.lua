@@ -884,15 +884,6 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for a Europeans worker: Reindeer
                     purpose = pgettext("europeans_worker", "Reindeers help to carry items along busy roads. They are reared in an animal farm.")
                 }
-            },
-            {
-                name = "europeans_ferry",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Ferry
-                    purpose = pgettext("europeans_worker", "Ships wares across narrow rivers.")
-                }
             }
         },
         {
@@ -900,15 +891,6 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_worker_basic",
                 default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Worker
-                    purpose = pgettext("europeans_worker", "General worker with no special ability.")
-                }
-            },
-            {
-                name = "europeans_worker_normal",
-                default_target_quantity = 2,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Worker
@@ -940,6 +922,15 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Shipwright
                     purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
+                }
+            },
+            {
+                name = "europeans_ferry",
+                default_target_quantity = 16,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Ferry
+                    purpose = pgettext("europeans_worker", "Ships wares across narrow rivers.")
                 }
             },
             {
@@ -1000,15 +991,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_gardener_normal",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Gardener
-                    purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house and planting reed and cotton.")
-                }
-            },
-            {
                 name = "europeans_gardener_advanced",
                 default_target_quantity = 4,
                 preciousness = 1,
@@ -1022,15 +1004,6 @@ wl.Descriptions():new_tribe {
             -- Agriculture workers
             {
                 name = "europeans_farmer_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Farmer
-                    purpose = pgettext("europeans_worker", "Plants and harvests fields.")
-                }
-            },
-            {
-                name = "europeans_farmer_normal",
                 default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
@@ -1123,15 +1096,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_miner_normal",
-                default_target_quantity = 2,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Miner
-                    purpose = pgettext("europeans_worker", "Mines ore and minerals.")
-                }
-            },
-            {
                 name = "europeans_miner_advanced",
                 default_target_quantity = 4,
                 preciousness = 1,
@@ -1142,15 +1106,6 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_terraformer_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
-                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
-                }
-            },
-            {
-                name = "europeans_terraformer_normal",
                 default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
@@ -1172,15 +1127,6 @@ wl.Descriptions():new_tribe {
             -- Training, Scouting and Soldiers
             {
                 name = "europeans_trainer_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Trainer
-                    purpose = pgettext("europeans_worker", "Trains the soldiers.")
-                }
-            },
-            {
-                name = "europeans_trainer_normal",
                 default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
@@ -2106,13 +2052,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_terraformers_house_normal",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
-                purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
-            }
-        },
-        {
             name = "europeans_terraformers_house_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
@@ -2945,8 +2884,7 @@ wl.Descriptions():new_tribe {
    
     -- Special types
     builder = "europeans_builder",
-    -- carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
-    carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3", "europeans_carrier_donkey", "europeans_carrier_horse"},
+    carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_donkey", "europeans_carrier_horse"},
     geologist = "europeans_geologist",
     scouts_house = "europeans_scouts_house_basic",
     soldier = "europeans_soldier",
@@ -2975,8 +2913,8 @@ wl.Descriptions():new_tribe {
       building_materials_tertiary = "europeans_stonemasons_house_basic",
       charcoal = "europeans_charcoal_kiln_basic",
       weaving_mill = "europeans_weaving_mill_basic",
-      fisher = "europeans_animal_farm_normal",
-      hunter = "europeans_animal_farm_basic",
+      fisher = "europeans_fishers_house_basic",
+      hunter = "europeans_hunters_house_basic",
       fish_meat_replenisher = "europeans_animal_farm_advanced",
       farm_primary = "europeans_farm_medium_basic",
       farm_secondary = "europeans_farm_basic",
@@ -2999,7 +2937,7 @@ wl.Descriptions():new_tribe {
       ferry_yard = "europeans_ferry_yard_basic",
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",
-      second_carrier = "europeans_animal_farm_normal",
+      second_carrier = "europeans_animal_farm_advanced",
       industry_supporter = "europeans_animal_farm_advanced",
       industry_alternative = "europeans_weaving_mill_basic",
    },

@@ -39,26 +39,25 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_farm_advanced",
         enhancement_cost = {
-            blackwood = 3,
+            brick = 3,
             grout = 3,
             planks = 3,
-            brick = 3,
             marble = 3
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 5,
-            granite = 5,
+            scrap_wood = 3,
+            granite = 3,
             marble = 2
-        },
+        }
     },
     buildcost = {
+        granite = 4,
         log = 4,
-        reed = 4,
-        granite = 3
+        reed = 4
     },
     return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 2
+        scrap_wood = 3,
+        granite = 3
     },
 
     aihints = {

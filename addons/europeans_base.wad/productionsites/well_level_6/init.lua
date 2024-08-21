@@ -52,9 +52,15 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "mining water"),
             actions = {
                 "return=skipped unless economy needs water",
-                "animate=working duration:10s",
+                "animate=working duration:5s",
                 "mine=resource_water radius:12 yield:100% when_empty:99%",
-                "produce=water:8"
+                "produce=water:2",
+                "animate=working duration:3s",
+                "produce=water:2",
+                "animate=working duration:3s",
+                "produce=water:2",
+                "animate=working duration:3s",
+                "produce=water:2"
             }
         },
         mining_water_idle = {

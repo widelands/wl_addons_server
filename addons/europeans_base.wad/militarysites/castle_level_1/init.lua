@@ -36,14 +36,17 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_castle_level_2",
         enhancement_cost = {
-            blackwood = 3,
+            brick = 3,
             grout = 3,
-            quartz = 1
+            planks = 3,
+            marble_column = 3,
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
-            quartz = 1
+            marble = 3,
+            diamond = 1
         },
     },
 

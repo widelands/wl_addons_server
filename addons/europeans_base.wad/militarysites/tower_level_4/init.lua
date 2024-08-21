@@ -11,8 +11,9 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_ultra_tower",
         enhancement_cost = {
-            planks = 2,
             brick = 2,
+            grout = 2,
+            planks = 2,
             marble_column = 2,
             diamond = 1
         },

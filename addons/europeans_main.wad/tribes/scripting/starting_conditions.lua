@@ -261,8 +261,7 @@ function set_starting_warecount(player)
     end
     
     local general_worker_count = 16 / #warehouses
-    local basic_worker_count = 8 / #warehouses
-    local normal_worker_count = 8 / #warehouses
+    local basic_worker_count = 12 / #warehouses
     local advanced_worker_count = 8 / #warehouses
 
     local general_ware_count = 8 / #warehouses
@@ -274,10 +273,6 @@ function set_starting_warecount(player)
         if string.find(worker.name, "advanced") then
             for j, warehouse in ipairs(warehouses) do
                 warehouse:set_workers(worker.name, advanced_worker_count)
-            end
-        elseif string.find(worker.name, "normal") then
-            for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, normal_worker_count)
             end
         elseif string.find(worker.name, "basic") then
             for j, warehouse in ipairs(warehouses) do
@@ -384,11 +379,7 @@ function allow_warehouses(player)
     local map = wl.Game().map
     local tribe = player.tribe
 
-    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-        player:allow_buildings{"europeans_port", }
-    else
-        player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
-    end
+    player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
 end
 
 function forbid_warehouses(player)
@@ -397,7 +388,27 @@ function forbid_warehouses(player)
     local tribe = player.tribe
     
     if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_warehouse", "europeans_headquarters", "europeans_port"}
+        player:forbid_buildings{"europeans_warehouse", "europeans_headquarters"}
+    end
+end
+
+function allow_ports(player)
+    local game = wl.Game()
+    local map = wl.Game().map
+    local tribe = player.tribe
+
+    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+        player:allow_buildings{"europeans_port", "europeans_port_big"}
+    end
+end
+
+function forbid_ports(player)
+    local game = wl.Game()
+    local map = wl.Game().map
+    local tribe = player.tribe
+    
+    if tribe.name == "europeans" then
+        player:forbid_buildings{"europeans_port", "europeans_port_big"}
     end
 end
 
@@ -540,9 +551,9 @@ function balance_player_warehouse_wares(player)
             local is_build_material = ware_description:is_construction_material(tribe.name)
 
             for j, building in ipairs(warehouses) do
-                if (is_build_material) and (building:get_wares(ware.name) < 0.90 * (player:get_wares(ware.name) / #warehouses)) then
+                if (is_build_material) and (building:get_wares(ware.name) < 0.25 * (player:get_wares(ware.name) / #warehouses)) then
                     building:set_warehouse_policies(ware.name, "prefer")
-                elseif (building:get_wares(ware.name) < 0.80 * (player:get_wares(ware.name) / #warehouses)) then
+                elseif (building:get_wares(ware.name) < 0.10 * (player:get_wares(ware.name) / #warehouses)) then
                     building:set_warehouse_policies(ware.name, "prefer")
                 else
                     building:set_warehouse_policies(ware.name, "normal")
@@ -574,7 +585,7 @@ function balance_player_warehouse_workers(player)
             local worker_description = game:get_worker_description(worker.name)
 
             for j, building in ipairs(warehouses) do
-                if (building:get_workers(worker.name) < 0.90 * (player:get_workers(worker.name) / #warehouses)) then
+                if (building:get_workers(worker.name) < 0.50 * (player:get_workers(worker.name) / #warehouses)) then
                     building:set_warehouse_policies(worker.name, "prefer")
                 else
                     building:set_warehouse_policies(worker.name, "normal")
@@ -708,19 +719,18 @@ function doing_ai_stuff(player, increment)
         allow_basic_productionsites(player)
         player:allow_buildings{"europeans_trainingscamp_basic", "europeans_battlearena_basic", }
     end
-    if (increment == 4) then
-        allow_warehouses(player)
-    end
     if (increment == 16) then
         allow_advanced_productionsites(player)
         player:allow_buildings{"europeans_battlearena_level_1", }
+        allow_warehouses(player)
     end
     if (increment == 32) then
+        allow_militarysites(player)
+        allow_trainingssites(player)
         allow_barracks(player)
         allow_scout(player)
         allow_shipyard(player)
-        allow_militarysites(player)
-        allow_trainingssites(player)
+        allow_ports(player)
     end
     
     -- Experimental actions
@@ -756,16 +766,16 @@ function doing_ai_stuff_seafaring(player, increment)
 
     end
     if (increment == 4) then
-        allow_warehouses(player)
+        allow_ports(player)
         allow_basic_productionsites(player)
         player:allow_buildings{"europeans_trainingscamp_basic", "europeans_battlearena_basic", }
     end
     if (increment == 16) then
+        allow_shipyard(player)
         allow_advanced_productionsites(player)
         player:allow_buildings{"europeans_battlearena_level_1", }
     end
     if (increment == 32) then
-        allow_shipyard(player)
         allow_militarysites(player)
         allow_trainingssites(player)
     end

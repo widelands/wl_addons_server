@@ -10,16 +10,14 @@ wl.Descriptions():new_immovable_type {
    size = "small",
    programs = {
       main = {
-         "animate=idle duration:7m30s",
+         "animate=idle duration:30m",
          "remove=",
       },
       remove_pond = {
-         "remove=",
+         "remove="
       },
       fill_pond = {
-         "transform=pond_water",
-         "animate=idle duration:7m30s",
-         "remove=",
+         "transform=pond_water"
       },
    },
    

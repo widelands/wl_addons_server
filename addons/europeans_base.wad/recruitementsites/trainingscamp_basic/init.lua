@@ -33,18 +33,17 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_trainingscamp_advanced",
         enhancement_cost = {
-            blackwood = 3,
+            brick = 3,
             grout = 3,
             planks = 3,
-            brick = 3,
             marble = 3,
             marble_column = 2,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 5,
-            granite = 5,
+            scrap_wood = 3,
+            granite = 3,
             marble = 3,
             quartz = 1,
             diamond = 1
@@ -52,8 +51,8 @@ wl.Descriptions():new_productionsite_type {
     },
     
     buildcost = {
-        log = 4,
         granite = 4,
+        log = 4,
         quartz = 1,
         diamond = 1
     },

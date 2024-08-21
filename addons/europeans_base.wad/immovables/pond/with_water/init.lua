@@ -19,9 +19,7 @@ wl.Descriptions():new_immovable_type {
          "remove=",
       },
       drain_pond = {
-         "transform=pond_dry",
-         "animate=idle duration:7m30s",
-         "remove=",
+         "transform=pond_dry"
       },
       plant_cotton_in_pond = {
          "transform=cottonfield_tiny"

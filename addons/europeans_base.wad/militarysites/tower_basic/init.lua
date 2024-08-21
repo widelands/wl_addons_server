@@ -36,8 +36,10 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_tower_level_1",
         enhancement_cost = {
-            blackwood = 2,
+            brick = 2,
             grout = 2,
+            planks = 2,
+            marble_column = 2,
             quartz = 1
         },
         enhancement_return_on_dismantle = {
@@ -48,8 +50,8 @@ wl.Descriptions():new_militarysite_type {
         },
     },
     buildcost = {
-        log = 4,
         granite = 2,
+        log = 4,
         quartz = 1
     },
     return_on_dismantle = {

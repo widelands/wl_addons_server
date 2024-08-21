@@ -33,11 +33,13 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_well_level_2",
         enhancement_cost = {
-            blackwood = 1,
+            granite = 2,
+            log = 2,
             buckets = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1,
+            granite = 1,
             scrap_metal = 1
         },
     },

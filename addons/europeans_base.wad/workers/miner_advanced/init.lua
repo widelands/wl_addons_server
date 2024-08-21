@@ -16,25 +16,25 @@ wl.Descriptions():new_worker_type {
     animation_directory = dirname,
     animations = {
         idle = {
-            hotspot = { 7, 22 }
+            hotspot = { 3, 23 }
         },
     },
     spritesheets ={
         walk = {
             fps = 10,
-            frames = 20,
-            rows = 5,
-            columns = 4,
+            frames = 10,
+            rows = 4,
+            columns = 3,
             directional = true,
-            hotspot = { 11, 22 }
+            hotspot = { 9, 24 }
         },
         walkload = {
             fps = 10,
-            frames = 20,
-            rows = 5,
-            columns = 4,
+            frames = 10,
+            rows = 4,
+            columns = 3,
             directional = true,
-            hotspot = { 10, 22 }
+            hotspot = { 7, 24 }
         },
     },
 }

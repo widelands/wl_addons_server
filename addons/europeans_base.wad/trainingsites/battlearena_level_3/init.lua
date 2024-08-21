@@ -29,8 +29,7 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     working_positions = {
-        europeans_trainer_advanced = 2,
-        europeans_trainer_normal = 1
+        europeans_trainer_advanced = 3
     },
 
     inputs = {

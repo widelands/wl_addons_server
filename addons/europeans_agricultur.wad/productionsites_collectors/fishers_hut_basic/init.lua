@@ -32,21 +32,21 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_fishers_house_advanced",
         enhancement_cost = {
-            blackwood = 1,
+            brick = 1,
             grout = 1,
             planks = 1,
-            brick = 1,
             marble = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2,
+            scrap_wood = 1,
+            granite = 1,
             marble = 1
-        },
+        }
     },
     buildcost = {
+        granite = 2,
         log = 2,
-        granite = 2
+        reed = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,

@@ -44,17 +44,18 @@ wl.Descriptions():new_trainingsite_type {
     enhancement = {
         name = "europeans_battlearena_level_2",
         enhancement_cost = {
-            planks = 3,
             brick = 3,
+            grout = 3,
+            planks = 3,
             marble = 3,
-            marble_column = 4,
+            marble_column = 2,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
-            marble = 5,
+            marble = 4,
             quartz = 1,
             diamond = 1
         },
@@ -68,8 +69,8 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     working_positions = {
-        europeans_trainer_normal = 2,
-        europeans_trainer_basic = 1
+        europeans_trainer_advanced = 1,
+        europeans_trainer_basic = 2
     },
 
     

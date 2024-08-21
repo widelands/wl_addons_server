@@ -39,6 +39,16 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:2s",
             "return"
         },
+        check_land = {
+            "findspace=size:any radius:8",
+        },
+        terraform_land = {
+            "findspace=size:any radius:8",
+            "walk=coords",
+            "animate=dig duration:4s",
+            "terraform=amazons",
+            "return"
+        },
         check_pond_water = {
             "findobject=attrib:pond_water radius:16",
         },

@@ -712,15 +712,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_ferry",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Ferry
-                    purpose = pgettext("europeans_worker", "Ships wares across narrow rivers.")
-                }
-            },
-            {
                 name = "europeans_recruit",
                 default_target_quantity = 32,
                 preciousness = 1,
@@ -744,15 +735,6 @@ wl.Descriptions():new_tribe {
             {
                 name = "europeans_worker_basic",
                 default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Worker
-                    purpose = pgettext("europeans_worker", "General worker with no special ability.")
-                }
-            },
-            {
-                name = "europeans_worker_normal",
-                default_target_quantity = 2,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Worker
@@ -784,6 +766,15 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Shipwright
                     purpose = pgettext("europeans_worker", "Works at the shipyard and constructs new ships.")
+                }
+            },
+            {
+                name = "europeans_ferry",
+                default_target_quantity = 16,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Ferry
+                    purpose = pgettext("europeans_worker", "Ships wares across narrow rivers.")
                 }
             },
             {
@@ -844,15 +835,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_gardener_normal",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Gardener
-                    purpose = pgettext("europeans_worker", "Making clay for lime kiln or stonemasons house and planting reed and cotton.")
-                }
-            },
-            {
                 name = "europeans_gardener_advanced",
                 default_target_quantity = 4,
                 preciousness = 1,
@@ -901,15 +883,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "europeans_miner_normal",
-                default_target_quantity = 2,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Miner
-                    purpose = pgettext("europeans_worker", "Mines ore and minerals.")
-                }
-            },
-            {
                 name = "europeans_miner_advanced",
                 default_target_quantity = 4,
                 preciousness = 1,
@@ -923,15 +896,6 @@ wl.Descriptions():new_tribe {
             -- Training, Trading and Scouting
             {
                 name = "europeans_trainer_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Trainer
-                    purpose = pgettext("europeans_worker", "Trains the soldiers.")
-                }
-            },
-            {
-                name = "europeans_trainer_normal",
                 default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
@@ -2301,7 +2265,6 @@ wl.Descriptions():new_tribe {
    
     -- Special types
     builder = "europeans_builder",
-    -- carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_2", "europeans_carrier_donkey", "europeans_carrier_3", "europeans_carrier_horse", "europeans_carrier_reindeer"},
     carriers = {"europeans_carrier_1", "europeans_carrier_2", "europeans_carrier_3",},
     geologist = "europeans_geologist",
     scouts_house = "europeans_scouts_house_basic",

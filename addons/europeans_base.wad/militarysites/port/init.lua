@@ -32,17 +32,16 @@ wl.Descriptions():new_warehouse_type {
     enhancement = {
         name = "europeans_port_big",
         enhancement_cost = {
-            blackwood = 2,
-            planks = 2,
             brick = 2,
             grout = 2,
+            planks = 2,
             marble = 2,
-            marble_column = 1,
+            marble_column = 2,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 4,
+            scrap_wood = 3,
             granite = 3,
             marble = 3,
             quartz = 1,
@@ -51,19 +50,18 @@ wl.Descriptions():new_warehouse_type {
     },
     
     buildcost = {
-        blackwood = 3,
+        brick = 3,
         grout = 3,
         planks = 3,
-        brick = 3,
         marble = 3,
         marble_column = 2,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 4,
-        marble = 5,
+        scrap_wood = 3,
+        granite = 3,
+        marble = 3,
         quartz = 1,
         diamond = 1
     },

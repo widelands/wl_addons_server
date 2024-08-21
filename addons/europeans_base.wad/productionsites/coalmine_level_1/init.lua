@@ -36,7 +36,7 @@ wl.Descriptions():new_productionsite_type {
     enhancement = {
         name = "europeans_coalmine_level_2",
         enhancement_cost = {
-            blackwood = 3
+            log = 4
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,

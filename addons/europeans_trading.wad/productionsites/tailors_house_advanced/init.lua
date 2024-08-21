@@ -47,13 +47,13 @@ wl.Descriptions():new_productionsite_type {
 
     working_positions = {
         europeans_worker_advanced = 1,
-        europeans_worker_normal = 1
+        europeans_worker_basic = 1
     },
 
     inputs = {
         { name = "armor", amount = 6 },
         { name = "cloth", amount = 4 },
-        { name = "planks", amount = 4 },
+        { name = "blackwood", amount = 4 },
         { name = "rubber", amount = 4 }
     },
 
@@ -76,11 +76,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
-                "return=skipped when economy needs planks and not economy needs armor_wooden",
+                "return=skipped when economy needs blackwood and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_compressed and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_advanced and not economy needs armor_wooden",
-                "consume=planks",
+                "consume=blackwood",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:6m",
                 "playsound=sound/smiths/sharpening priority:90%",

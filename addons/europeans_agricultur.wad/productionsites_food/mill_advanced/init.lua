@@ -72,10 +72,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs wheat and not economy needs flour",
                 "consume=rye",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:1m",
+                "animate=working duration:1m30s",
                 "consume=wheat",
                 "playsound=sound/mill/mill_turning priority:85% allow_multiple",
-                "animate=working duration:1m",
+                "animate=working duration:1m30s",
                 "produce=flour:2"
             }
         }

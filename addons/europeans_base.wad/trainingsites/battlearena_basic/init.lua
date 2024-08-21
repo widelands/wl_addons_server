@@ -43,21 +43,24 @@ wl.Descriptions():new_trainingsite_type {
     enhancement = {
         name = "europeans_battlearena_level_1",
         enhancement_cost = {
-            blackwood = 3,
+            brick = 3,
             grout = 3,
+            planks = 3,
+            marble = 3,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,
             granite = 3,
+            marble = 2,
             quartz = 1,
             diamond = 1
         },
     },
     buildcost = {
-        log = 4,
         granite = 4,
+        log = 4,
         quartz = 1,
         diamond = 1
     },

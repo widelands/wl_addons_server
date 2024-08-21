@@ -21,8 +21,9 @@ wl.Descriptions():new_militarysite_type {
     enhancement = {
         name = "europeans_sentry_level_3",
         enhancement_cost = {
-            planks = 1,
             brick = 1,
+            grout = 1,
+            planks = 1,
             marble_column = 1,
             diamond = 1
         },

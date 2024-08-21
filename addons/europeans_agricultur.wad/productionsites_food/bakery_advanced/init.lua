@@ -73,7 +73,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs honey_bread and not economy needs bread",
                 "return=skipped when economy needs biscuit and not economy needs bread",
                 "consume=water:2 flour:2",
-                "animate=working duration:1m",
+                "animate=working duration:2m",
                 "produce=bread:2"
             }
         },
@@ -88,7 +88,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs biscuit and not economy needs honey_bread",
                 "return=skipped unless site has honey",
                 "consume=water:2 flour:2 honey",
-                "animate=working duration:1m",
+                "animate=working duration:2m",
                 "produce=honey_bread:2"
             }
         },
@@ -104,7 +104,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs honey_bread and not economy needs biscuit",
                 "return=skipped unless site has honey",
                 "consume=water:2 flour:2 honey fruit:2",
-                "animate=working duration:1m",
+                "animate=working duration:2m",
                 "produce=biscuit:2"
             }
         },
