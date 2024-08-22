@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-21 03:08+0200\n"
+"POT-Creation-Date: 2024-08-22 03:09+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -532,10 +532,9 @@ msgstr "Grote Fabrik"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing blackwood for input wares because ...
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:81
-#, fuzzy
 msgctxt "europeans_building"
 msgid "processing blackwood to create tools and weapons"
-msgstr "Boomstammen tum Produzeren vun Warktüüg un Wapens to bruken"
+msgstr "Haartholt tum Produzeren vun Warktüüg un Wapens to bruken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:91
@@ -1220,10 +1219,9 @@ msgstr "de Küst früchtbarer to maken"
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming dry land because ...
 #: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:88
 #: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:99
-#, fuzzy
 msgctxt "europeans_building"
 msgid "terraforming dry land"
-msgstr "dröge Polen umtowanneln"
+msgstr "dröges Land umtowanneln"
 
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming pond with water because ...
 #: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:100
@@ -3914,9 +3912,8 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_agricultur.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
-#, fuzzy
 msgid "Headquarters (AI optimized, no seafaring)"
-msgstr "Raadhuus (künstelk Speler)"
+msgstr "Raadhuus (künstelk Speler, keene Seefahrt)"
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_agricultur.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:13
@@ -4018,31 +4015,3 @@ msgstr "Meister-Landumackereerer"
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
 msgstr "Landumackereerer"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing planks to create tools and weapons"
-#~ msgstr "Planken tum Produzeren vun Warktüüg un Wapens to bruken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Normal Terraformer’s House"
-#~ msgstr "Landumackeree"
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Making clay for lime kiln or stonemasons house and planting reed and "
-#~ "cotton."
-#~ msgstr ""
-#~ "Maakt Lehm för de Kalkbranneree un Steenbickerhuus un plant Reit un "
-#~ "Boomwull."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Farmer"
-#~ msgstr "Goder Buur"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Gardener"
-#~ msgstr "Goder Gaardner"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Normal Terraformer"
-#~ msgstr "Goder Landumackereerer"

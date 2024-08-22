@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-21 03:08+0200\n"
+"POT-Creation-Date: 2024-08-22 03:09+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -64,10 +64,9 @@ msgstr "работает"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing blackwood for input wares because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:79
-#, fuzzy
 msgctxt "europeans_building"
 msgid "processing blackwood to create tools and weapons"
-msgstr "перерабатывает бревна в инструменты и оружие"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:89
@@ -2942,15 +2941,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr ""
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing planks to create tools and weapons"
-#~ msgstr "перерабатывает доски в инструменты и оружие"
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Making clay for lime kiln or stonemasons house and planting reed and "
-#~ "cotton."
-#~ msgstr ""
-#~ "Делает глину для цементных печей илм дома каменщика, а так же выращивает "
-#~ "тростник и хлопок."
