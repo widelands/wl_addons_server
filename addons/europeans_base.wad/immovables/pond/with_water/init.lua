@@ -14,8 +14,6 @@ wl.Descriptions():new_immovable_type {
          "transform=pond_dry",
       },
       remove_pond = {
-         "transform=pond_dry",
-         "animate=idle duration:2s",
          "remove=",
       },
       drain_pond = {

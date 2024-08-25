@@ -130,6 +130,7 @@ wl.Descriptions():new_worker_type {
             hotspot = { 18, 23 }
         },
         water = {
+            basename = "water",
             fps = 5,
             frames = 10,
             rows = 4,

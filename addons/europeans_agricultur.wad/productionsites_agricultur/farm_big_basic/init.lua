@@ -64,9 +64,9 @@ wl.Descriptions():new_productionsite_type {
         space_consumer = true,
         supports_seafaring = true,
         basic_amount = 1,
-        very_weak_ai_limit = 2,
-        weak_ai_limit = 4,
-        normal_ai_limit = 8,
+        very_weak_ai_limit = 4,
+        weak_ai_limit = 8,
+        normal_ai_limit = 16,
     },
 
     working_positions = {
@@ -85,7 +85,9 @@ wl.Descriptions():new_productionsite_type {
                 "call=planting",
                 "sleep=duration:10s",
                 "call=making_honey",
-                "sleep=duration:20s",
+                "sleep=duration:10s",
+                "call=planting",
+                "sleep=duration:10s",
                 "call=harvesting",
                 "return=skipped"
             }

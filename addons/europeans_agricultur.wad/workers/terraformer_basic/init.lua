@@ -19,17 +19,21 @@ wl.Descriptions():new_worker_type {
     },  
     
     programs = {
-        check_water_fish = {
-            "findspace=size:any radius:8 resource:resource_fish",
+        check_land = {
+            "findspace=size:any radius:4",
         },
-        check_water_breed_fish = {
-            "findspace=size:any radius:8 breed resource:resource_fish",
+        terraform_land = {
+            "findspace=size:any radius:4",
+            "walk=coords",
+            "animate=dig duration:4s",
+            "terraform=amazons",
+            "return"
         },
         check_dike = {
-            "findspace=size:swim radius:8 terraform:diking",
+            "findspace=size:swim radius:4 terraform:diking",
         },
         dike = {
-            "findspace=size:swim radius:8 terraform:diking",
+            "findspace=size:swim radius:4 terraform:diking",
             "walk=coords",
             "animate=dig duration:4s",
             "terraform=diking",
@@ -48,38 +52,27 @@ wl.Descriptions():new_worker_type {
             "animate=dig duration:2s",
             "return"
         },
-        check_land = {
-            "findspace=size:any radius:4",
+        check_dig_space = {
+            "findspace=size:any radius:8 avoid:field",
         },
-        terraform_land = {
-            "findspace=size:any radius:4",
+        dig_pond = {
+            "findspace=size:any radius:8 avoid:field",
             "walk=coords",
-            "animate=dig duration:4s",
-            "terraform=amazons",
-            "return"
-        },
-        check_pond_water = {
-            "findobject=attrib:pond_water radius:8",
-        },
-        terraform_pond_water = {
-            "findobject=attrib:pond_water radius:8",
-            "walk=object",
-            "animate=dig duration:2s",
-            "callobject=remove_pond",
             "animate=dig duration:2s",
             "terraform=amazons",
+            "animate=dig duration:2s",
+            "plant=attrib:pond_dry",
             "return"
         },
         check_pond_dry = {
             "findobject=attrib:pond_dry radius:8",
         },
-        terraform_pond_dry = {
+        fill_pond_dry = {
             "findobject=attrib:pond_dry radius:8",
             "walk=object",
-            "animate=dig duration:2s",
-            "callobject=remove_pond",
-            "animate=dig duration:2s",
-            "terraform=amazons",
+            "animate=water duration:3s",
+            "callobject=fill_pond",
+            "animate=water duration:1s",
             "return"
         },
     },
@@ -119,6 +112,14 @@ wl.Descriptions():new_worker_type {
             columns = 5,
             rows = 2,
             hotspot = {15, 20}
+        },
+        water = {
+            basename = "water",
+            fps = 5,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 18, 23 }
         },
     }
 }

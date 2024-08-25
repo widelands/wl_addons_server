@@ -113,6 +113,7 @@ wl.Descriptions():new_worker_type {
             hotspot = {15, 20}
         },
         plant = {
+            basename = "plant",
             fps = 10,
             frames = 10,
             rows = 4,
@@ -120,6 +121,7 @@ wl.Descriptions():new_worker_type {
             hotspot = { 16, 20 }
         },
         water = {
+            basename = "water",
             fps = 5,
             frames = 10,
             rows = 4,

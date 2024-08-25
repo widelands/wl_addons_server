@@ -630,21 +630,20 @@ function doing_ai_stuff(player, increment)
         player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_tree_nursery_basic", }
         player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
     end
-    if (increment == 2) then
+    if (increment == 4) then
         allow_basic_productionsites(player)
         player:allow_buildings{"europeans_trainingscamp_basic", "europeans_battlearena_basic", }
     end
-    if (increment == 4) then
+    if (increment == 8) then
         allow_tradingsites(player)
     end
     if (increment == 16) then
         allow_advanced_productionsites(player)
-        player:allow_buildings{"europeans_battlearena_level_1", }
+        allow_trainingssites(player)
         allow_warehouses(player)
     end
     if (increment == 32) then
         allow_militarysites(player)
-        allow_trainingssites(player)
         allow_barracks(player)
         allow_scout(player)
         allow_ports(player)
