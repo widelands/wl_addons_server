@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Benedikt Straub <benedikt-straub@web.de>, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-12 03:08+0200\n"
+"PO-Revision-Date: 2024-08-11 12:06+0000\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
+"Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
+"nds/)\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/notify-speed.wad/addon:2
+msgid "Speed Down on Notify"
+msgstr "Bi Narichtens verlangsaamen"
+
+#: addons/notify-speed.wad/addon:3
+msgid ""
+"Reduce the game speed to 1× whenever a new message arrives in your inbox."
+msgstr ""
+"De Speel-Gauheid up 1× minnern, wenn eene neje Naricht in dienen Inkomen "
+"Narichtens lannt."
+
+#: addons/notify-speed.wad/init.lua:15
+msgid "Speed Down on Notify Disabled"
+msgstr "Bi Narichtens verlangsaamen utknipst"
+
+#: addons/notify-speed.wad/init.lua:15
+msgid "Speed Down on Notify Enabled"
+msgstr "Bi Narichtens verlangsaamen anknipst"
+
+#: addons/notify-speed.wad/init.lua:17
+msgid ""
+"The game will from now on be sped down to 1× speed whenever a new inbox "
+"message arrives. You can disable ‘Speed Down on Notify’ mode by using the "
+"toolbar button again."
+msgstr ""
+"Dat Speel word vun nu an alltieden to eener Gauheid vun 1× verlangsaamt, "
+"wenn eene neje Naricht ankummt. Du kannst dat utknipsen, indeem du de Knoop "
+"in de Warktüügrieg noch maal anklickst."
+
+#: addons/notify-speed.wad/init.lua:18
+msgid ""
+"The game will no longer be sped down when a new inbox message arrives. You "
+"can re-enable ‘Speed Down on Notify’ mode by using the toolbar button again."
+msgstr ""
+"Dat Speel word nu nich mehr verlangsaamt, wenn eene neje Naricht ankummt. Du "
+"kannst dat weer anknipsen, indeem du de Knoop in de Warktüügrieg noch maal "
+"anklickst."
+
+#: addons/notify-speed.wad/init.lua:39
+msgid "Toggle ‘Speed Down on Notify’ Mode"
+msgstr "»Bi Narichtens verlangsaamen« an- of utknipsen"
+
+#: addons/notify-speed.wad/init.lua:40
+msgid ""
+"Toggle whether to speed the game down when a new notification is received."
+msgstr ""
+"Wesseln, of dat Speel verlangsaamt worden sall, wenn eene neje Naricht "
+"ankummt."

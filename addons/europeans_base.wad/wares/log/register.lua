@@ -1,3 +1,3 @@
 return {
-   log = {"__replace_if_exists"},
+   log = {"__skip_if_exists"},
 }

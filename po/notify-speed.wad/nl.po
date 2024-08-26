@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Alex Rijckaert, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-13 03:10+0200\n"
+"PO-Revision-Date: 2024-08-11 12:06+0000\n"
+"Last-Translator: Alex Rijckaert, 2024\n"
+"Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/notify-speed.wad/addon:2
+msgid "Speed Down on Notify"
+msgstr "Tempo verlagen bij een melding"
+
+#: addons/notify-speed.wad/addon:3
+msgid ""
+"Reduce the game speed to 1× whenever a new message arrives in your inbox."
+msgstr ""
+"Verminder de spelsnelheid tot 1× wanneer er een nieuw bericht in je inbox "
+"binnenkomt."
+
+#: addons/notify-speed.wad/init.lua:15
+msgid "Speed Down on Notify Disabled"
+msgstr "Snelheid omlaag bij melding uitgeschakeld"
+
+#: addons/notify-speed.wad/init.lua:15
+msgid "Speed Down on Notify Enabled"
+msgstr "Snelheid omlaag bij melding ingeschakeld"
+
+#: addons/notify-speed.wad/init.lua:17
+msgid ""
+"The game will from now on be sped down to 1× speed whenever a new inbox "
+"message arrives. You can disable ‘Speed Down on Notify’ mode by using the "
+"toolbar button again."
+msgstr ""
+"Het spel wordt vanaf nu versneld naar 1× snelheid wanneer er een nieuw "
+"inboxbericht binnenkomt. Je kunt de modus 'Snelheid omlaag bij melding' weer "
+"uitschakelen met de knop op de werkbalk."
+
+#: addons/notify-speed.wad/init.lua:18
+msgid ""
+"The game will no longer be sped down when a new inbox message arrives. You "
+"can re-enable ‘Speed Down on Notify’ mode by using the toolbar button again."
+msgstr ""
+"Het spel wordt niet langer versneld als er een nieuw inboxbericht "
+"binnenkomt. Je kunt de modus 'Versnellen bij melding' weer inschakelen met "
+"de knop op de werkbalk."
+
+#: addons/notify-speed.wad/init.lua:39
+msgid "Toggle ‘Speed Down on Notify’ Mode"
+msgstr "Modus 'Snelheid omlaag bij melding' wisselen"
+
+#: addons/notify-speed.wad/init.lua:40
+msgid ""
+"Toggle whether to speed the game down when a new notification is received."
+msgstr ""
+"Hiermee wissel je de snelheid van het spel als je een nieuwe melding "
+"ontvangt."

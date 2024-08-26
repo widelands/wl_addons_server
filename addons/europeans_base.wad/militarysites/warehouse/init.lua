@@ -31,18 +31,16 @@ wl.Descriptions():new_warehouse_type {
     enhancement = {
         name = "europeans_headquarters",
         enhancement_cost = {
-            blackwood = 2,
-            planks = 2,
-            cloth = 2,
             brick = 2,
             grout = 2,
+            planks = 2,
             marble = 2,
             marble_column = 1,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 4,
+            scrap_wood = 2,
             granite = 3,
             marble = 3,
             quartz = 1,
@@ -51,18 +49,16 @@ wl.Descriptions():new_warehouse_type {
     },
     
     buildcost = {
-        blackwood = 2,
-        planks = 2,
-        cloth = 2,
         brick = 2,
         grout = 2,
+        planks = 2,
         marble = 2,
         marble_column = 2,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 4,
+        scrap_wood = 2,
         granite = 3,
         marble = 4,
         quartz = 1,
@@ -71,9 +67,10 @@ wl.Descriptions():new_warehouse_type {
     
     aihints = {},
 
-    vision_range = 12,
-    heal_per_second = 200,
+    vision_range = 10,
+    heal_per_second = 160,
     --conquers = 6,
+    max_garrison = 16,
 }
 
 pop_textdomain()

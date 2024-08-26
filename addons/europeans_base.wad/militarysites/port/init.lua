@@ -29,36 +29,54 @@ wl.Descriptions():new_warehouse_type {
     destructible = false,
     map_check = {"seafaring"},
     
+    enhancement = {
+        name = "europeans_port_big",
+        enhancement_cost = {
+            brick = 2,
+            grout = 2,
+            planks = 2,
+            marble = 2,
+            marble_column = 2,
+            quartz = 1,
+            diamond = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 3,
+            granite = 3,
+            marble = 3,
+            quartz = 1,
+            diamond = 1
+        },
+    },
+    
     buildcost = {
-        blackwood = 3,
-        cloth = 3,
+        brick = 3,
         grout = 3,
         planks = 3,
-        brick = 3,
         marble = 3,
         marble_column = 2,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 4,
-        marble = 5,
+        scrap_wood = 3,
+        granite = 3,
+        marble = 3,
         quartz = 1,
         diamond = 1
     },
 
     aihints = {
        supports_seafaring = true,
-       very_weak_ai_limit = 4,
-       weak_ai_limit = 8,
-       normal_ai_limit = 16,
+       very_weak_ai_limit = 8,
+       weak_ai_limit = 16,
+       normal_ai_limit = 32,
     },
 
-    vision_range = 20,
-    conquers = 6,
-    heal_per_second = 180,
-    max_garrison = 24,
+    vision_range = 10,
+    heal_per_second = 200,
+    conquers = 8,
+    max_garrison = 32,
 }
 
 pop_textdomain()

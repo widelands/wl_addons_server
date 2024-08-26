@@ -1,3 +1,3 @@
 return {
-   rubber = {"__replace_if_exists"},
+   rubber = {"__skip_if_exists"},
 }

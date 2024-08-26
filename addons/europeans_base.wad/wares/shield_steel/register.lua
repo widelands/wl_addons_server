@@ -1,3 +1,3 @@
 return {
-   shield_steel = {"__replace_if_exists"},
+   shield_steel = {"__skip_if_exists"},
 }

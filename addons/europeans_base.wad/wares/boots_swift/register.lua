@@ -1,3 +1,3 @@
 return {
-   boots_swift = {"__replace_if_exists"},
+   boots_swift = {"__skip_if_exists"},
 }

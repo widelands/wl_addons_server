@@ -1,3 +1,3 @@
 return {
-   felling_ax = {"__replace_if_exists"},
+   felling_ax = {"__skip_if_exists"},
 }

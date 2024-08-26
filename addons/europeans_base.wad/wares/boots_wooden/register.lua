@@ -1,3 +1,3 @@
 return {
-   boots_wooden = {"__replace_if_exists"},
+   boots_wooden = {"__skip_if_exists"},
 }

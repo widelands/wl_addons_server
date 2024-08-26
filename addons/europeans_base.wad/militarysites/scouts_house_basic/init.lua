@@ -33,30 +33,41 @@ wl.Descriptions():new_productionsite_type {
     destructible = true,
     
     enhancement = {
-        name = "europeans_scouts_house_normal",
+        name = "europeans_scouts_house_advanced",
         enhancement_cost = {
-            blackwood = 1,
-            cloth = 1
+            brick = 1,
+            grout = 1,
+            planks = 1,
+            marble = 1,
+            quartz = 1,
+            diamond = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 1
+            scrap_wood = 1,
+            granite = 1,
+            marble = 1,
+            quartz = 1,
+            diamond = 1
         },
     },
 
     buildcost = {
+        granite = 2,
         log = 2,
-        reed = 2,
-        granite = 2
+        quartz = 1,
+        diamond = 1
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 1
+        granite = 1,
+        quartz = 1,
+        diamond = 1
     },
 
     aihints = {
         very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 2,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
     },
 
     working_positions = {
@@ -64,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "armor", amount = 2 }
+        { name = "boots_sturdy", amount = 2 }
     },
 
     programs = {
@@ -72,8 +83,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start scouting because ...
             descname = pgettext("europeans_building", "scouting"),
             actions = {
-                "return=skipped when economy needs armor",
-                "consume=armor",
+                "return=skipped when economy needs boots_sturdy",
+                "consume=boots_sturdy",
                 "sleep=duration:30s",
                 "callworker=scout",
                 "sleep=duration:30s",
@@ -83,7 +94,7 @@ wl.Descriptions():new_productionsite_type {
         targeted_scouting = {
             descname = pgettext("europeans_building", "scouting"),
             actions = {
-                "consume=armor",
+                "consume=boots_sturdy",
                 "callworker=targeted_scouting"
             }
         },

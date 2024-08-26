@@ -1,3 +1,3 @@
 return {
-   boots_advanced = {"__replace_if_exists"},
+   boots_advanced = {"__skip_if_exists"},
 }

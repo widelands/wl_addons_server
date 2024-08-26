@@ -30,10 +30,11 @@ wl.Descriptions():new_trainingsite_type {
     enhancement = {
         name = "europeans_battlearena_level_3",
         enhancement_cost = {
-            planks = 3,
             brick = 3,
+            grout = 3,
+            planks = 3,
             marble = 3,
-            marble_column = 3,
+            marble_column = 4,
             quartz = 1,
             diamond = 1
         },
@@ -49,27 +50,30 @@ wl.Descriptions():new_trainingsite_type {
     size = "big",
 
     aihints = {
-        trainingsites_max_percent = 25,
+        trainingsites_max_percent = 33,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 1,
+        normal_ai_limit = 1,
     },
 
     working_positions = {
-        europeans_trainer_advanced = 1,
-        europeans_trainer_normal = 2
+        europeans_trainer_advanced = 2,
+        europeans_trainer_basic = 1
     },
 
     inputs = {
-        { name = "armor_processed", amount = 2 },
-        { name = "armor_compressed", amount = 2 },
-        { name = "armor_advanced", amount =  2 },
-        { name = "spear_advanced", amount = 2 },
-        { name = "ax_broad", amount = 2 },
-        { name = "sword_broad", amount = 2 },
-        { name = "helmet_mask", amount = 2 },
-        { name = "shield_steel", amount = 2 },
-        { name = "shield_advanced", amount = 2 }, 
-        { name = "boots_sturdy", amount = 2 },
-        { name = "boots_swift", amount = 2 },
-        { name = "boots_advanced", amount =  2 }
+        { name = "armor_processed", amount = 4 },
+        { name = "armor_compressed", amount = 4 },
+        { name = "armor_advanced", amount = 4 },
+        { name = "spear_advanced", amount = 4 },
+        { name = "ax_broad", amount = 4 },
+        { name = "sword_broad", amount = 4 },
+        { name = "helmet_mask", amount = 4 },
+        { name = "shield_steel", amount = 4 },
+        { name = "shield_advanced", amount = 4 }, 
+        { name = "boots_sturdy", amount = 4 },
+        { name = "boots_swift", amount = 4 },
+        { name = "boots_advanced", amount = 4 }
     },
 
     programs = {
@@ -112,7 +116,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:1",
                 "consume=armor_compressed",
                 "train=soldier:health level:2",
-                "produce=scrap_iron"
+                "produce=scrap_metal"
             }
         },
         upgrade_soldier_health_2 = {
@@ -124,7 +128,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:health level:2",
                 "consume=armor_advanced",
                 "train=soldier:health level:3",
-                "produce=scrap_iron"
+                "produce=scrap_metal"
             }
         },
         upgrade_soldier_attack_0 = {
@@ -147,7 +151,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:1",
                 "consume=ax_broad",
                 "train=soldier:attack level:2",
-                "produce=scrap_iron"
+                "produce=scrap_metal"
             }
         },
         upgrade_soldier_attack_2 = {
@@ -159,7 +163,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:attack level:2",
                 "consume=sword_broad",
                 "train=soldier:attack level:3",
-                "produce=scrap_iron"
+                "produce=scrap_metal"
             }
         },
         upgrade_soldier_defense_0 = {
@@ -182,7 +186,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:1",
                 "consume=shield_steel",
                 "train=soldier:defense level:2",
-                "produce=scrap_iron"
+                "produce=scrap_metal"
             }
         },
         upgrade_soldier_defense_2 = {
@@ -194,7 +198,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:defense level:2",
                 "consume=shield_advanced",
                 "train=soldier:defense level:3",
-                "produce=scrap_iron"
+                "produce=scrap_metal"
             }
         },
         upgrade_soldier_evade_0 = {
@@ -217,7 +221,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:1",
                 "consume=boots_swift",
                 "train=soldier:evade level:2",
-                "produce=scrap_iron"
+                "produce=scrap_metal"
             }
         },
         upgrade_soldier_evade_2 = {
@@ -229,13 +233,13 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:2",
                 "consume=boots_advanced",
                 "train=soldier:evade level:3",
-                "produce=scrap_iron"
+                "produce=scrap_metal"
             }
         },
     },
     
-    soldier_capacity = 12,
-    trainer_patience = 28,
+    soldier_capacity = 8,
+    trainer_patience = 32,
     
     messages = {
         -- TRANSLATORS: Empire training site tooltip when it has no soldiers assigned

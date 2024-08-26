@@ -9,8 +9,8 @@ wl.Descriptions():new_worker_type {
     icon = dirname .. "menu.png",
     vision_range = 2,
 
-    experience = 32,
-    becomes = "europeans_trainer_normal",
+    experience = 48,
+    becomes = "europeans_trainer_advanced",
     
     buildcost = {
         europeans_recruit = 1,

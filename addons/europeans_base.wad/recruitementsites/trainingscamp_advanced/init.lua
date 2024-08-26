@@ -30,12 +30,16 @@ wl.Descriptions():new_productionsite_type {
 
     size = "big",
     destructible = true,
-    
-    aihints = {},
+        
+    aihints = {
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
+    },
 
     working_positions = {
         europeans_trainer_advanced = 1,
-        europeans_trainer_normal = 1
+        europeans_trainer_basic = 1
     },
 
     inputs = {
@@ -51,18 +55,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=pausing_production_for_inputs",
-                "sleep=duration:10s",
                 "call=recruit_soldier",
                 "return=skipped"
-            }
-        },
-        pausing_production_for_inputs = {
-            -- TRANSLATORS: Completed/Skipped/Did not start pausing production for tools because ...
-            descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
-            actions = {
-                "return=skipped when not economy needs spear_wooden and not economy needs helmet_wooden and not economy needs armor_wooden and not economy needs boots_wooden",
-                "sleep=duration:10m",
             }
         },
         recruit_soldier = {

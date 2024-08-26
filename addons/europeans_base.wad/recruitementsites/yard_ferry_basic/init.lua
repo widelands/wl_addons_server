@@ -20,33 +20,33 @@ wl.Descriptions():new_productionsite_type {
     map_check = {"waterways"},
     
     enhancement = {
-        name = "europeans_ferry_yard_normal",
+        name = "europeans_ferry_yard_advanced",
         enhancement_cost = {
-            blackwood = 2,
-            cloth = 2,
+            brick = 2,
             grout = 2,
+            planks = 2,
+            marble = 2,
+            marble_column = 1,
             quartz = 1,
             diamond = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
-            granite = 1,
+            granite = 2,
+            marble = 2,
             quartz = 1,
             diamond = 1
-        },
+        }
     },
     buildcost = {
+        granite = 3,
         log = 3,
-        blackwood = 2,
-        planks = 2,
-        reed = 3,
-        granite = 2,
+        planks = 3,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        reed = 1,
         granite = 1,
         quartz = 1,
         diamond = 1
@@ -57,7 +57,7 @@ wl.Descriptions():new_productionsite_type {
         shipyard = true,
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,
-        --normal_ai_limit = 2,
+        normal_ai_limit = 1,
     },
 
     working_positions = {
@@ -66,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
 
     inputs = {
         { name = "planks", amount = 6 },
-        { name = "cloth", amount = 3 },
+        { name = "rubber", amount = 3 },
     },
 
     programs = {
@@ -76,7 +76,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "sleep=duration:120s",
                 "callworker=buildferry_1",
-                "consume=planks:2 cloth",
+                "consume=planks:2 rubber",
                 "callworker=buildferry_2"
             }
         },

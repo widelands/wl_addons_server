@@ -28,14 +28,18 @@ wl.Descriptions():new_productionsite_type {
     size = "small",
     destructible = true,
     
-    aihints = {},
+    aihints = {
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
+    },
 
     working_positions = {
         europeans_scout_advanced = 1
     },
 
     inputs = {
-        { name = "armor", amount = 2 }
+        { name = "boots_advanced", amount = 2 }
     },
 
     programs = {
@@ -43,8 +47,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start scouting because ...
             descname = _"scouting",
             actions = {
-                "return=skipped when economy needs armor",
-                "consume=armor",
+                "return=skipped when economy needs boots_advanced",
+                "consume=boots_advanced",
                 "sleep=duration:30s",
                 "callworker=scout",
                 "sleep=duration:30s",
@@ -58,7 +62,7 @@ wl.Descriptions():new_productionsite_type {
         targeted_scouting = {
             descname = _"scouting",
             actions = {
-                "consume=armor",
+                "consume=boots_advanced",
                 "callworker=targeted_scouting"
             }
         },

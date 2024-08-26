@@ -1,3 +1,3 @@
 return {
-   basket = {"__replace_if_exists"},
+   basket = {"__skip_if_exists"},
 }

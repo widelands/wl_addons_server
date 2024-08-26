@@ -1,3 +1,3 @@
 return {
-   cotton = {"__replace_if_exists"},
+   cotton = {"__skip_if_exists"},
 }

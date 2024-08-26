@@ -1,3 +1,3 @@
 return {
-   granite = {"__replace_if_exists"},
+   granite = {"__skip_if_exists"},
 }

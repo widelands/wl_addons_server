@@ -1,3 +1,3 @@
 return {
-   scrap_wood = {"__replace_if_exists"},
+   scrap_wood = {"__skip_if_exists"},
 }

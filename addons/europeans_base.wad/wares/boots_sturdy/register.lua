@@ -1,3 +1,3 @@
 return {
-   boots_sturdy = {"__replace_if_exists"},
+   boots_sturdy = {"__skip_if_exists"},
 }

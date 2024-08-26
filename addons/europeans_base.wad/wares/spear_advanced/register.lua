@@ -1,3 +1,3 @@
 return {
-   spear_advanced = {"__replace_if_exists"},
+   spear_advanced = {"__skip_if_exists"},
 }

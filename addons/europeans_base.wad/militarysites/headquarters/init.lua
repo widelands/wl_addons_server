@@ -19,22 +19,20 @@ wl.Descriptions():new_warehouse_type {
     },
     
     size = "big",
-    destructible = true,
+    destructible = false,
     
     buildcost = {
-        blackwood = 4,
-        cloth = 4,
+        brick = 4,
         grout = 4,
         planks = 4,
-        brick = 4,
         marble = 4,
-        marble_column = 3,
+        marble_column = 4,
         quartz = 2,
         diamond = 2
     },
     return_on_dismantle = {
-        scrap_wood = 6,
-        granite = 6,
+        scrap_wood = 4,
+        granite = 5,
         marble = 6,
         quartz = 2,
         diamond = 2
@@ -49,8 +47,8 @@ wl.Descriptions():new_warehouse_type {
 
     vision_range = 24,
     heal_per_second = 320,
-    conquers = 16,
-    max_garrison = 32,
+    conquers = 20,
+    max_garrison = 48,
 }
 
 pop_textdomain()

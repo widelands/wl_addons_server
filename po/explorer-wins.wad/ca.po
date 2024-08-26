@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-09 03:07+0100\n"
+"POT-Creation-Date: 2024-07-16 03:08+0200\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
 "Last-Translator: Juanjo, 2024\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -73,12 +73,14 @@ msgstr "Podeu explorar expandint-vos, amb un explorador, amb vaixells…"
 
 #: addons/explorer-wins.wad/init.lua:94
 msgid "Win condition not compatible with \"No fog of war\""
-msgstr ""
+msgstr "Condició de victòria incompatible amb «Sense boira de guerra»"
 
 #: addons/explorer-wins.wad/init.lua:95
 msgid ""
 "The win condition %1$s can not be played with \"No fog of war\" enabled."
 msgstr ""
+"La condició de victòria %1$s no es pot jugar si s'ha activat «Sense boira de "
+"guerra»."
 
 #: addons/explorer-wins.wad/init.lua:96
 msgid "Continue playing endlessly or restart with fog."
@@ -86,7 +88,7 @@ msgstr "Continua jugant sense fi o reinicia amb boira."
 
 #: addons/explorer-wins.wad/init.lua:150
 msgid "Player %1$1d has explored %2$1d%%"
-msgstr ""
+msgstr "El jugador %1$1d ha explorat %2$1d%%"
 
 #: addons/explorer-wins.wad/init.lua:152
 #, lua-format

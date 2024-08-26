@@ -40,7 +40,13 @@ wl.Descriptions():new_productionsite_type {
     destructible = true,
     map_check = {"seafaring"},
 
-    aihints = {},
+    aihints = {
+        needs_water = true,
+        shipyard = true,
+        very_weak_ai_limit = 1,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
+    },
 
     working_positions = {
         europeans_shipwright_advanced = 1,
@@ -48,11 +54,10 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 8 },
-        { name = "cloth", amount = 4 },
+        { name = "planks", amount = 10 },
         { name = "blackwood", amount = 2 },
-        { name = "reed", amount = 2 },
-        { name = "iron", amount = 2 }
+        { name = "rubber", amount = 2 },
+        { name = "metal_alloy", amount = 2 }
     },
 
     programs = {
@@ -61,6 +66,18 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=ship_preparation",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
+                "sleep=duration:15s",
+                "call=ship on failure fail",
                 "sleep=duration:15s",
                 "call=ship on failure fail",
                 "sleep=duration:15s",
@@ -86,7 +103,7 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when not site has blackwood",
                 "return=skipped when not site has planks",
-                "return=skipped when not site has cloth",
+                "return=skipped when not site has rubber",
                 "animate=working duration:15s",
                 "construct=europeans_shipconstruction worker:buildship radius:6",
             }
@@ -95,8 +112,8 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "callworker=check_space",
-                "return=skipped when economy needs iron",
-                "consume=iron",
+                "return=skipped when economy needs planks",
+                "consume=planks",
                 "animate=working duration:30s",
             }
         },

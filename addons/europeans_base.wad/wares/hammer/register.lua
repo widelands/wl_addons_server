@@ -1,3 +1,3 @@
 return {
-   hammer = {"__replace_if_exists"},
+   hammer = {"__skip_if_exists"},
 }
