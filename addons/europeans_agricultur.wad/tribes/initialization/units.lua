@@ -105,7 +105,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "granite",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -179,6 +179,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_wood",
+                default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -349,6 +350,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_metal",
+                default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
@@ -574,19 +576,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "scythe",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
-                        pgettext("europeans_ware", "The scythe is the tool of the farmers."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
-                        pgettext("europeans_ware", "Scythes are produced by all smithies.")
-                    }
-                }
-            },
-            {
                 name = "felling_ax",
                 default_target_quantity = 8,
                 preciousness = 1,
@@ -600,15 +589,15 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "shovel",
+                name = "scythe",
                 default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
-                        pgettext("europeans_ware", "The shovel is an essential tool. Therefore the forester, the gardener and the farmer use them."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
-                        pgettext("europeans_ware", "They are produced by all smithies.")
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
+                        pgettext("europeans_ware", "The scythe is the tool of the farmers."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
+                        pgettext("europeans_ware", "Scythes are produced by all smithies.")
                     }
                 }
             },
@@ -645,10 +634,23 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                          -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
-                         pgettext("europeans_ware", "The saw is an essential tool. This saw is needed by the worker and the woodcutter."),
+                         pgettext("europeans_ware", "The saw is an essential tool. This saw is needed by the worker, the builder, and the woodcutter."),
                          -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
                          pgettext("europeans_ware", "Make sure you’ve always got some in reserve! They are produced by all smithies.")
                      }
+                }
+            },
+            {
+                name = "shovel",
+                default_target_quantity = 8,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
+                        pgettext("europeans_ware", "The shovel is an essential tool. Therefore the builder, the forester, the gardener, and the farmer use them."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
+                        pgettext("europeans_ware", "They are produced by all smithies.")
+                    }
                 }
             },
         },
@@ -811,6 +813,8 @@ wl.Descriptions():new_tribe {
             -- Carriers
             {
                 name = "europeans_carrier",
+                default_target_quantity = 64,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
                     purpose = pgettext("europeans_worker", "Used for recruiting all other workers.")

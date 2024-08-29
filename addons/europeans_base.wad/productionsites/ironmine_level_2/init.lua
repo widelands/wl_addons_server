@@ -53,7 +53,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "blackwood", amount = 6 }
+        { name = "log", amount = 8 }
     },
 
     programs = {
@@ -63,21 +63,21 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped unless economy needs ore or economy needs granite or economy needs marble or workers need experience",
                 "return=skipped when economy needs coal and not economy needs ore",
-                "return=skipped unless site has blackwood:3",
-                "consume=blackwood",
+                "return=skipped unless site has log:4",
+                "consume=log:2",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_ore",
                 "sleep=duration:5s",
-                "consume=blackwood",
+                "consume=log",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=blackwood",
+                "consume=log",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
@@ -120,7 +120,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=blackwood:3",
+                "consume=log:4",
                 "produce=ore:8 granite:6 marble quartz",
             }
         },

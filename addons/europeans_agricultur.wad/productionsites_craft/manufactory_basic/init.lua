@@ -262,9 +262,9 @@ wl.Descriptions():new_productionsite_type {
                 "call=producing_felling_ax",
                 "call=producing_scythe",
                 "call=producing_pick",
-                "call=producing_shovel",
                 "call=producing_hammer",
                 "call=producing_saw",
+                "call=producing_shovel",
                 "call=producing_helmet_mask",
                 "call=producing_spear_advanced",
             }

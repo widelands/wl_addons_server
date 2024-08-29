@@ -42,7 +42,8 @@ wl.Descriptions():new_productionsite_type {
             brick = 3,
             grout = 3,
             planks = 3,
-            marble = 3
+            marble = 3,
+            cloth = 3
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 3,

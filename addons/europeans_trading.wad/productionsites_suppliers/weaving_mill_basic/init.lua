@@ -28,7 +28,8 @@ wl.Descriptions():new_productionsite_type {
             brick = 2,
             grout = 2,
             planks = 2,
-            marble = 2
+            marble = 2,
+            cloth = 2
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
@@ -77,6 +78,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
             descname = pgettext("europeans_building", "weaving cloth"),
             actions = {
+                "return=skipped when economy needs reed and not economy needs cloth",
                 "return=skipped when economy needs armor and not economy needs cloth",
                 "consume=reed:3",
                 "playsound=sound/barbarians/weaver priority:90%",
@@ -88,6 +90,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
             descname = pgettext("europeans_building", "tailoring a suit of armor"),
             actions = {
+                "return=skipped when economy needs reed and not economy needs armor",
                 "return=skipped when economy needs cloth and not economy needs armor",
                 "consume=reed:3",
                 "playsound=sound/mill/weaving priority:90%",

@@ -35,9 +35,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "releasing and hunting"),
             actions = {
                 "callworker=release",
-                "sleep=duration:35s",
+                "sleep=duration:45s",
                 "callworker=hunt",
-                "sleep=duration:35s",
+                "sleep=duration:45s",
                 "produce=leather"
             }
         },
