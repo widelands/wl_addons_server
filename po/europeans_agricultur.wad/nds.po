@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 03:08+0200\n"
+"POT-Creation-Date: 2024-08-31 03:08+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -578,10 +578,9 @@ msgstr "eene Holtpieke to smeden"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:149
-#, fuzzy
 msgctxt "europeans_building"
 msgid "processing cloth to create tools and armor"
-msgstr "Reit tum Produzeren vun Warktüüg un Wapenrocken to bruken"
+msgstr "Stoff tum Produzeren vun Warktüüg un Wapenrocken to bruken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:163
@@ -1919,24 +1918,23 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:637
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The saw is an essential tool. This saw is needed by the worker, the builder, "
 "and the woodcutter."
 msgstr ""
-"De Saag is een wichtigs Warktüüg. De Arbeider un de Boomslager bruken eene."
+"De Saag is een wichtigs Warktüüg. De Arbeider, de Baukeerl un de Boomslager "
+"bruken eene."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:650
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the builder, the forester, the "
 "gardener, and the farmer use them."
 msgstr ""
-"De Schüppe is een wichtigs Warktüüg. De Förster, de Gaardner un de Buur "
-"bruken eene."
+"De Schüppe is een wichtigs Warktüüg. De Baukeerl, de Förster, de Gaardner un "
+"de Buur bruken eene."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:665
@@ -4009,9 +4007,3 @@ msgstr "Meister-Landumackereerer"
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
 msgstr "Landumackereerer"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing reed or cotton or wool to create tools and armor"
-#~ msgstr ""
-#~ "Reit of Boomwull of Wull tum Produzeren vun Warktüüg un Wapenrocken to "
-#~ "bruken"

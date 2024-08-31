@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 03:08+0200\n"
+"POT-Creation-Date: 2024-08-31 03:09+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -103,10 +103,9 @@ msgstr "een houten speer maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:148
-#, fuzzy
 msgctxt "europeans_building"
 msgid "processing cloth to create tools and armor"
-msgstr "riet verwerken tot gereedschap en pantser"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_trading.wad/productionsites/manufactory_advanced/init.lua:162
@@ -2968,7 +2967,3 @@ msgstr "Basis Tuinier"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Handelaar"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing reed or cotton or wool to create tools and armor"
-#~ msgstr "riet, katoen of wol verwerken tot gereedschap en harnassen"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 03:08+0200\n"
+"POT-Creation-Date: 2024-08-31 03:08+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -582,10 +582,9 @@ msgstr "een houten speer maken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start processing reed or cottion for input wares because ...
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:149
-#, fuzzy
 msgctxt "europeans_building"
 msgid "processing cloth to create tools and armor"
-msgstr "riet verwerken tot gereedschap en pantser"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:163
@@ -1936,25 +1935,19 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:637
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The saw is an essential tool. This saw is needed by the worker, the builder, "
 "and the woodcutter."
 msgstr ""
-"De zaag is een essentieel gereedschap. Deze zaag is nodig voor de arbeider "
-"en de houthakker."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:650
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The shovel is an essential tool. Therefore the builder, the forester, the "
 "gardener, and the farmer use them."
 msgstr ""
-"De schop is een essentieel stuk gereedschap. Daarom gebruiken de boswachter, "
-"de tuinman en de boer de schop."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:665
@@ -4043,7 +4036,3 @@ msgstr "Gevorderde Terreinvormer"
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
 msgstr "Basis Terreinvormer"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing reed or cotton or wool to create tools and armor"
-#~ msgstr "riet, katoen of wol verwerken tot gereedschap en harnassen"
