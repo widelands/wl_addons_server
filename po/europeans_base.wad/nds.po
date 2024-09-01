@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-22 03:09+0200\n"
+"POT-Creation-Date: 2024-09-01 03:09+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1121,12 +1121,10 @@ msgstr "Grote Holtköhlbranneree"
 #: addons/europeans_base.wad/productionsites/well_level_6/init.lua:38
 #: addons/europeans_base.wad/recruitementsites/trainingscamp_advanced/init.lua:56
 #: addons/europeans_base.wad/recruitementsites/trainingscamp_basic/init.lua:87
-#: addons/europeans_base.wad/recruitementsites/yard_ferry_advanced/init.lua:64
-#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:75
-#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:66
-#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:112
-#: addons/europeans_base.wad/recruitementsites/yard_ships_basic/init.lua:84
-#: addons/europeans_base.wad/recruitementsites/yard_ships_basic/init.lua:130
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:83
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:117
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:65
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:99
 msgid "working"
 msgstr "to Warken"
 
@@ -2072,35 +2070,35 @@ msgid "Basic Trainingscamp"
 msgstr "Lüttes Övenslager"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/recruitementsites/yard_ferry_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Ferry Yard"
-msgstr "Grote Fährenwarft"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Ferry Yard"
 msgstr "Lütte Fährenwarft"
+
+#. TRANSLATORS: Completed/Skipped/Did not start constructing a ferry because ...
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:93
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:75
+#, fuzzy
+msgctxt "europeans_building"
+msgid "constructing a ferry"
+msgstr "een Schipp to timmern"
+
+#. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:106
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:126
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:159
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:88
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:108
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:141
+msgctxt "europeans_building"
+msgid "constructing a ship"
+msgstr "een Schipp to timmern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Shipyard"
 msgstr "Grote Warft"
-
-#. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
-#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:102
-#: addons/europeans_base.wad/recruitementsites/yard_ships_basic/init.lua:120
-msgctxt "europeans_building"
-msgid "constructing a ship"
-msgstr "een Schipp to timmern"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_base.wad/recruitementsites/yard_ships_basic/init.lua:8
-msgctxt "europeans_building"
-msgid "Basic Shipyard"
-msgstr "Lütte Warft\t"
 
 #. TRANSLATORS: This is the Europeans' ship's name used in lists of units
 #: addons/europeans_base.wad/ships/europeans/init.lua:83
@@ -3505,3 +3503,11 @@ msgstr "Meister-Arbeider"
 msgctxt "europeans_worker"
 msgid "Basic Worker"
 msgstr "Arbeider"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Advanced Ferry Yard"
+#~ msgstr "Grote Fährenwarft"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Basic Shipyard"
+#~ msgstr "Lütte Warft\t"

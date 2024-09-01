@@ -236,24 +236,6 @@ function allow_productionsites_per_input(player)
     end
 end
 
-function allow_terraformer(player)
-    local game = wl.Game()
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:allow_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_advanced"}
-    end
-end
-
-function forbid_terraformer(player)
-    local game = wl.Game()
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_terraformers_house_basic", "europeans_terraformers_house_advanced"}
-    end
-end
-
 function allow_warehouses(player)
     local game = wl.Game()
     local map = wl.Game().map
@@ -322,7 +304,7 @@ function allow_shipyard(player)
     local tribe = player.tribe
 
     if tribe.name == "europeans" and ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-        player:allow_buildings{"europeans_shipyard_basic", "europeans_shipyard_advanced"}
+        player:allow_buildings{"europeans_ferry_yard_basic", "europeans_shipyard_advanced"}
     end
 end
 
@@ -331,7 +313,7 @@ function forbid_shipyard(player)
     local tribe = player.tribe
 
     if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_shipyard_basic", "europeans_shipyard_advanced"}
+        player:forbid_buildings{"europeans_ferry_yard_basic", "europeans_shipyard_advanced"}
     end
 end
 
@@ -488,23 +470,21 @@ end
 function doing_ai_stuff(player, increment)
     local map = wl.Game().map
 
+    -- Unlocking buildings
     if (increment == 0) then
         player:forbid_buildings("all")
-        player:allow_buildings{"europeans_sentry_basic", "europeans_tower_basic", "europeans_barrier_basic", "europeans_castle_basic", }
-        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", }
-        player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
+        allow_all_militarysites(player)
+        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_lumberjacks_house_advanced", }
+        player:allow_buildings{"europeans_quarry_basic", "europeans_quarry_advanced", }
+        player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", "europeans_well_level_2", "europeans_well_level_3", }
     end
     if (increment >= 4) then
-        allow_productionsites_per_input(player)
-    end
-    if (increment == 32) then
-        allow_terraformer(player)
         allow_warehouses(player)
-        allow_all_militarysites(player)
+        allow_productionsites_per_input(player)
     end
 
    -- Experimental actions
-    if (increment >= 48) then
+    if (increment >= 32) then
         start_stopped_buildings(player)
         set_hero_advanced_militarysites(player)
         if increment % 2 == 0 then
@@ -514,7 +494,7 @@ function doing_ai_stuff(player, increment)
             upgrade_random_trainingsite(player)
         end
     end
-    if (increment >= 96) then
+    if (increment >= 48) then
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
     end

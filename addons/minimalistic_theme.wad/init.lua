@@ -102,6 +102,87 @@ local productivity_colors = {
    high = {0, 187, 0},
 }
 
+-- In version 1.3 the code for window borders has changed.
+-- For versions > 1.2
+local windows_def = {
+      fsmenu = {
+         -- red, green, blue, alpha
+         window_border_focused = {220, 220, 250, 0},
+         window_border_unfocused = {50, 0, 0, 0},
+         background           = dirname .. "fsmenu/windows/background.png",
+         border_top           = dirname .. "fsmenu/windows/top_v1.3.png",
+         border_bottom        = dirname .. "fsmenu/windows/bottom_v1.3.png",
+         border_right         = dirname .. "fsmenu/windows/right_v1.3.png",
+         border_left          = dirname .. "fsmenu/windows/left_v1.3.png",
+         corner_bottom_left   = dirname .. "fsmenu/windows/corner_bottom_left.png",
+         corner_bottom_right  = dirname .. "fsmenu/windows/corner_bottom_right.png",
+         corner_top_left      = dirname .. "fsmenu/windows/corner_top_left.png",
+         corner_top_right     = dirname .. "fsmenu/windows/corner_top_right.png",
+         corner_minimal_left  = dirname .. "fsmenu/windows/corner_minimal_left.png",
+         corner_minimal_right = dirname .. "fsmenu/windows/corner_minimal_right.png",
+         button_close         = dirname .. "fsmenu/windows/close.png",
+         button_pin           = dirname .. "fsmenu/windows/pin.png",
+         button_unpin         = dirname .. "fsmenu/windows/unpin.png",
+         button_minimize      = dirname .. "fsmenu/windows/minimize.png",
+         button_unminimize    = dirname .. "fsmenu/windows/maximize.png",
+      },
+      wui = {
+         window_border_focused = {220, 220, 250, 0},
+         window_border_unfocused = {50, 0, 0, 0},
+         background           = dirname .. "wui/windows/background.png",
+         border_top           = dirname .. "wui/windows/top_v1.3.png",
+         border_bottom        = dirname .. "wui/windows/bottom_v1.3.png",
+         border_right         = dirname .. "wui/windows/right_v1.3.png",
+         border_left          = dirname .. "wui/windows/left_v1.3.png",
+         corner_bottom_left   = dirname .. "wui/windows/corner_bottom_left.png",
+         corner_bottom_right  = dirname .. "wui/windows/corner_bottom_right.png",
+         corner_top_left      = dirname .. "wui/windows/corner_top_left.png",
+         corner_top_right     = dirname .. "wui/windows/corner_top_right.png",
+         corner_minimal_left  = dirname .. "wui/windows/corner_minimal_left.png",
+         corner_minimal_right = dirname .. "wui/windows/corner_minimal_right.png",
+         button_close         = dirname .. "wui/windows/close.png",
+         button_pin           = dirname .. "wui/windows/pin.png",
+         button_unpin         = dirname .. "wui/windows/unpin.png",
+         button_minimize      = dirname .. "wui/windows/minimize.png",
+         button_unminimize    = dirname .. "wui/windows/maximize.png",
+      },
+   }
+
+-- For version 1.2
+if get_build_id():find("1.2") ~= nil then
+   windows_def = {
+      fsmenu = {
+         -- red, green, blue, alpha
+         window_border_focused = {220, 220, 250, 0},
+         window_border_unfocused = {50, 0, 0, 0},
+         background        = dirname .. "fsmenu/windows/background.png",
+         border_top        = dirname .. "fsmenu/windows/top_v1.2.png",
+         border_bottom     = dirname .. "fsmenu/windows/bottom_v1.2.png",
+         border_right      = dirname .. "fsmenu/windows/right_v1.2.png",
+         border_left       = dirname .. "fsmenu/windows/left_v1.2.png",
+         button_close      = dirname .. "fsmenu/windows/close.png",
+         button_pin        = dirname .. "fsmenu/windows/pin.png",
+         button_unpin      = dirname .. "fsmenu/windows/unpin.png",
+         button_minimize   = dirname .. "fsmenu/windows/minimize.png",
+         button_unminimize = dirname .. "fsmenu/windows/maximize.png",
+      },
+      wui = {
+         window_border_focused = {220, 220, 250, 0},
+         window_border_unfocused = {50, 0, 0, 0},
+         background        = dirname .. "wui/windows/background.png",
+         border_top        = dirname .. "wui/windows/top_v1.2.png",
+         border_bottom     = dirname .. "wui/windows/bottom_v1.2.png",
+         border_right      = dirname .. "wui/windows/right_v1.2.png",
+         border_left       = dirname .. "wui/windows/left_v1.2.png",
+         button_close      = dirname .. "wui/windows/close.png",
+         button_pin        = dirname .. "wui/windows/pin.png",
+         button_unpin      = dirname .. "wui/windows/unpin.png",
+         button_minimize   = dirname .. "wui/windows/minimize.png",
+         button_unminimize = dirname .. "wui/windows/maximize.png",
+      },
+   }
+end
+
 -- These are the style definitions to be returned.
 -- Note: you have to keep all the keys intact, or Widelands will not be happy.
 return {
@@ -116,37 +197,7 @@ return {
    focus_border_thickness = 1,
 
    -- Windows
-   windows = {
-      fsmenu = {
-         -- red, green, blue, alpha
-         window_border_focused = {220, 220, 250, 0},
-         window_border_unfocused = {50, 0, 0, 0},
-         background        = dirname .. "fsmenu/windows/background.png",
-         border_top        = dirname .. "fsmenu/windows/top.png",
-         border_bottom     = dirname .. "fsmenu/windows/bottom.png",
-         border_right      = dirname .. "fsmenu/windows/right.png",
-         border_left       = dirname .. "fsmenu/windows/left.png",
-         button_close      = dirname .. "fsmenu/windows/close.png",
-         button_pin        = dirname .. "fsmenu/windows/pin.png",
-         button_unpin      = dirname .. "fsmenu/windows/unpin.png",
-         button_minimize   = dirname .. "fsmenu/windows/minimize.png",
-         button_unminimize = dirname .. "fsmenu/windows/maximize.png",
-      },
-      wui = {
-         window_border_focused = {220, 220, 250, 0},
-         window_border_unfocused = {50, 0, 0, 0},
-         background        = dirname .. "wui/windows/background.png",
-         border_top        = dirname .. "wui/windows/top.png",
-         border_bottom     = dirname .. "wui/windows/bottom.png",
-         border_right      = dirname .. "wui/windows/right.png",
-         border_left       = dirname .. "wui/windows/left.png",
-         button_close      = dirname .. "wui/windows/close.png",
-         button_pin        = dirname .. "wui/windows/pin.png",
-         button_unpin      = dirname .. "wui/windows/unpin.png",
-         button_minimize   = dirname .. "wui/windows/minimize.png",
-         button_unminimize = dirname .. "wui/windows/maximize.png",
-      },
-   },
+   windows = windows_def,
 
    -- Buttons
    buttons = {

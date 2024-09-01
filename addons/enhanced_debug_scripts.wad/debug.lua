@@ -254,7 +254,7 @@ function conquer_water_fields(radius, player_number)
 end
 
 function conquer_flag_fields(radius)
-	radius = radius or 1
+    radius = radius or 1
 
     local game = wl.Game()
     local map = game.map
@@ -280,8 +280,8 @@ function conquer_flag_fields(radius)
 end
 
 function conquer_port_fields(radius)
-	radius = radius or 1
-	
+    radius = radius or 1
+    
     local game = wl.Game()
     local map = game.map
 
@@ -297,7 +297,7 @@ end
 
 -- general flag/road/street settings --
 function force_flag(startx, starty, player_number)
-	player_number = player_number or 0
+    player_number = player_number or 0
 
     local game = wl.Game()
     local map = game.map
@@ -364,11 +364,12 @@ function place_road(startx, starty, cmd, roadtype)
     end
 end
 
-function force_road(startx, starty, cmd, roadtype)
+function force_road(startx, starty, cmd, roadtype, create_carriers)
     roadtype = roadtype or "normal"
     if not roadtype or not (string.find(roadtype, "busy") or string.find(roadtype, "waterway")) then
         roadtype = "normal"
     end
+    create_carriers = create_carriers or false
     
     local game = wl.Game()
     local map = game.map
@@ -386,6 +387,9 @@ function force_road(startx, starty, cmd, roadtype)
           moves[#moves+1] = true -- Force the road
           r = player:place_road(roadtype, startflag, table.unpack(moves))
           startflag = r.end_flag
+          if create_carriers then
+              r:set_workers(r.valid_workers)
+          end
           moves = {}
        end
     end
@@ -462,12 +466,6 @@ function force_connection(startx, starty, targetx, targety, roadtype)
 
         -- console output --
         if ((diffx == 1) or (diffx == -1)) and (diffy == 0) then
-            print ("can't create road tile with delta-x:", diffx, "and delta-y:", diffy)
-            break
-        else
-            print ("create road tile with delta-x:", diffx, "and delta-y:", diffy)
-        end
-        if ((diffy == 1) or (diffy == -1)) and (diffx == 0) then
             print ("can't create road tile with delta-x:", diffx, "and delta-y:", diffy)
             break
         else
@@ -645,6 +643,7 @@ function force_expedition(player_number, number_expeditions)
     for i, port in ipairs(ports) do
         if i <= number_expeditions then
             port:start_expedition()
+            print (port.warehousename)
         end
     end
 end
@@ -1089,7 +1088,7 @@ function upgrade_building(startx, starty)
 end
 
 function block_dismantle_building(startx, starty, yesno)
-	yesno = yesno or true
+    yesno = yesno or true
 
     local game = wl.Game()
     local map = game.map
@@ -1100,8 +1099,8 @@ function block_dismantle_building(startx, starty, yesno)
 end
 
 function block_destruction_building(startx, starty, yesno)
-	yesno = yesno or true
-	
+    yesno = yesno or true
+    
     local game = wl.Game()
     local map = game.map
     local field = map:get_field(startx, starty)
@@ -1264,7 +1263,7 @@ function set_warehouse_waretype_policy(startx, starty, waretype, policiename)
 end
 
 function set_warehouse_warecount(startx, starty, warename, warecount)
-	warecount = warecount or 1
+    warecount = warecount or 1
 
     local game = wl.Game()
     local map = game.map
@@ -1286,8 +1285,8 @@ function set_warehouse_warecount(startx, starty, warename, warecount)
 end
 
 function set_warehouse_waretype_warecount(startx, starty, waretype, warenumber)
-	warenumber = warenumber or 1
-	
+    warenumber = warenumber or 1
+    
     local game = wl.Game()
     local map = game.map
     local player = map:get_field(startx, starty).owner
@@ -1296,28 +1295,28 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warenumber)
 
     if waretype == "all" then
         for i, ware in ipairs(tribe.wares) do
-            set_warehouse_ware_count(startx, starty, ware.name, warenumber)
+            set_warehouse_warecount(startx, starty, ware.name, warenumber)
         end
     elseif waretype == "build" then
         for i, ware in ipairs(tribe.wares) do
             if (ware:is_construction_material(tribe.name)) then
-                set_warehouse_ware_count(startx, starty, ware.name, warenumber)
+                set_warehouse_warecount(startx, starty, ware.name, warenumber)
             end
         end
         for i, tbuilding in ipairs(tribe.buildings) do
             for warename, warecount in pairs(tbuilding.buildcost) do
-                set_warehouse_ware_count(startx, starty, warename, warenumber)
+                set_warehouse_warecount(startx, starty, warename, warenumber)
             end
         end
         for i, tbuilding in ipairs(tribe.buildings) do
             for warename, warecount in pairs(tbuilding.enhancement_cost) do
-                set_warehouse_ware_count(startx, starty, warename, warenumber)
+                set_warehouse_warecount(startx, starty, warename, warenumber)
             end
         end
     elseif waretype == "tools" then
         for i, tworker in ipairs(tribe.workers) do
             for warecount, warename in pairs(tworker.buildcost) do
-                set_warehouse_ware_count(startx, starty, warename, warenumber)
+                set_warehouse_warecount(startx, starty, warename, warenumber)
             end
         end
         for i, tbuilding in pairs(tribe.buildings) do
@@ -1325,7 +1324,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warenumber)
                 for j, output in pairs(tbuilding.output_worker_types) do
                     if string.find(output.name, tribe.name) and not string.find(output.name, "soldier") and tbuilding.inputs then
                         for k, waretype, warecount in pairs(tbuilding.inputs) do
-                            set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
+                            set_warehouse_warecount(startx, starty, waretype.name, warenumber)
                         end
                     end
                 end
@@ -1337,7 +1336,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warenumber)
                 for j, output in pairs(tbuilding.output_worker_types) do
                     if string.find(output.name, tribe.name) and string.find(output.name, "soldier") and tbuilding.inputs then
                         for k, waretype, warecount in pairs(tbuilding.inputs) do
-                            set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
+                            set_warehouse_warecount(startx, starty, waretype.name, warenumber)
                         end
                     end
                 end
@@ -1347,7 +1346,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warenumber)
             if tbuilding.type_name == "trainingsite" then
                 if tbuilding.inputs then
                     for k, waretype, warecount in pairs(tbuilding.inputs) do
-                        set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
+                        set_warehouse_warecount(startx, starty, waretype.name, warenumber)
                     end
                 end
             end
@@ -1357,7 +1356,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warenumber)
             if tbuilding.is_mine then
                 if tbuilding.output_ware_types then
                     for k, waretype, warecount in pairs(tbuilding.output_ware_types) do
-                        set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
+                        set_warehouse_warecount(startx, starty, waretype.name, warenumber)
                     end
                 end
             end
@@ -1367,7 +1366,7 @@ function set_warehouse_waretype_warecount(startx, starty, waretype, warenumber)
             if string.find(tbuilding.name, "smelting") then
                 if tbuilding.output_ware_types then
                     for k, waretype, warecount in pairs(tbuilding.output_ware_types) do
-                        set_warehouse_ware_count(startx, starty, waretype.name, warenumber)
+                        set_warehouse_warecount(startx, starty, waretype.name, warenumber)
                     end
                 end
             end
