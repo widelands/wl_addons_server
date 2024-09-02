@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 03:09+0200\n"
+"POT-Creation-Date: 2024-09-02 03:09+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -2078,10 +2078,9 @@ msgstr "Lütte Fährenwarft"
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ferry because ...
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:93
 #: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:75
-#, fuzzy
 msgctxt "europeans_building"
 msgid "constructing a ferry"
-msgstr "een Schipp to timmern"
+msgstr "eenr Fähr to timmern"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:106
@@ -3503,11 +3502,3 @@ msgstr "Meister-Arbeider"
 msgctxt "europeans_worker"
 msgid "Basic Worker"
 msgstr "Arbeider"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Ferry Yard"
-#~ msgstr "Grote Fährenwarft"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Shipyard"
-#~ msgstr "Lütte Warft\t"
