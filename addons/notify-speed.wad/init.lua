@@ -1,6 +1,6 @@
-include "scripting/coroutine.lua"
-
 if not wl.Game or wl.Game().interactive_player == 0 then return end
+
+include "scripting/coroutine.lua"
 
 push_textdomain("notify-speed.wad", true)
 
@@ -33,13 +33,20 @@ function notify_speed_mode_check()
 	end
 end
 
-wl.ui.MapView():add_toolbar_plugin(
+local mv = wl.ui.MapView()
+
+mv:add_toolbar_plugin(
 		[[ toggle_notify_speed_mode() ]],
 		"addons/notify-speed.wad/icon.png",
 		_("Toggle ‘Speed Down on Notify’ Mode"),
-		_("Toggle whether to speed the game down when a new notification is received.")
+		_("Toggle whether to speed the game down when a new notification is received."),
+		"notify_speed_mode_toggle"
 )
 
-wl.ui.MapView():add_plugin_timer("notify_speed_mode_check()", 500)
+if mv.set_keyboard_shortcut then
+	mv:set_keyboard_shortcut("notify_speed_mode_toggle", [[ toggle_notify_speed_mode() ]])
+end
+
+mv:add_plugin_timer("notify_speed_mode_check()", 500)
 
 pop_textdomain()

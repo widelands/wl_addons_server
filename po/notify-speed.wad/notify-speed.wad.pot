@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 03:08+0200\n"
+"POT-Creation-Date: 2024-09-05 03:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,11 +47,11 @@ msgid ""
 "can re-enable ‘Speed Down on Notify’ mode by using the toolbar button again."
 msgstr ""
 
-#: addons/notify-speed.wad/init.lua:39
+#: addons/notify-speed.wad/init.lua:41 addons/notify-speed.wad/shortcuts.lua:6
 msgid "Toggle ‘Speed Down on Notify’ Mode"
 msgstr ""
 
-#: addons/notify-speed.wad/init.lua:40
+#: addons/notify-speed.wad/init.lua:42
 msgid ""
 "Toggle whether to speed the game down when a new notification is received."
 msgstr ""
