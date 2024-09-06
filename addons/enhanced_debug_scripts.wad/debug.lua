@@ -8,10 +8,9 @@ push_textdomain("enhanced_debug_scripts.wad", true)
 function map_distance(startx, starty, targetx, targety)
     local game = wl.Game()
     local map = game.map
-
     local mapx = math.floor(map.width / 2)
     local mapy = math.floor(map.height / 2)
-    
+
     local diffx = targetx - startx
     local diffy = targety - starty
 
@@ -21,8 +20,54 @@ function map_distance(startx, starty, targetx, targety)
     if math.abs(diffy) >= mapy then
         diffy = mapy - diffy
     end
-    
+
     return math.sqrt((diffx * diffx) + (diffy * diffy))
+end
+
+function map_direction(startx, starty, targetx, targety)
+    local game = wl.Game()
+    local map = game.map
+    local mapx = math.floor(map.width / 2)
+    local mapy = math.floor(map.height / 2)
+
+    local direction = ""
+    local diffx = targetx - startx
+    local diffy = targety - starty
+
+    if math.abs(diffx) >= mapx then
+        diffx = diffx * - 1
+    end
+    if math.abs(diffy) >= mapy then
+        diffy = diffy * - 1
+    end
+    
+    if (diffx == 0) and (diffy == 0) then
+        direction = ""
+    elseif (diffx == 0) and (diffy < 0) and (targety % 2 == 0) then
+        direction = "tl"
+    elseif (diffx == 0) and (diffy < 0) and (targety % 2 == 1) then
+        direction = "tr"
+    elseif (diffx == 0) and (diffy > 0) and (targety % 2 == 0) then
+        direction = "bl"
+    elseif (diffx == 0) and (diffy > 0) and (targety % 2 == 1) then
+        direction = "br"
+    elseif (diffx < 0) and (diffy < 0) then
+        direction = "tl"
+    elseif (diffx < 0) and (diffy == 0) then
+        direction = "l"
+    elseif (diffx < 0) and (diffy > 0) then
+        direction = "bl"
+    elseif (diffx > 0) and (diffy < 0) then
+        direction = "tr"
+    elseif (diffx > 0) and (diffy == 0) then
+        direction = "r"
+    elseif (diffx > 0) and (diffy > 0) then
+        direction = "br"
+    end
+    
+    print(startx, starty, targetx, targety, diffx, diffy, direction)
+
+    return direction
 end
 
 -- general map settings --
@@ -46,13 +91,13 @@ end
 
 function place_objects(startx, starty, radius, objectname, objectcount)
     objectcount = objectcount or 1
-    
+
     local game = wl.Game()
     local map = game.map
     local field = map:get_field(startx, starty)
     local fields = field:region(radius)
     local idx
-    
+
     while #fields > 0 and objectcount > 0 do
        local idx = math.random(#fields)
        local f = fields[idx]
@@ -66,7 +111,7 @@ end
 
 function place_random_trees(startx, starty, radius, objectcount)
     objectcount = objectcount or 1
-    
+
     -- apple tree = Apfelbaum, cherry tree = Kirschbaum, pear tree = Birnbaum, walnut tree = Walnussbaum
     -- ash = Esche, chestnut = Kastanie, elm = Ulme, fir = Tanne, hornbeam = Hainbuche, linden tree = Linde, pine = Kiefer, poplar = Pappel, willow = Weide
     local treelist = {
@@ -81,7 +126,7 @@ function place_random_trees(startx, starty, radius, objectcount)
     "spruce_summer_mature" -- Fichte
     }
     local randomtree = treelist[math.random(#treelist)]
-    
+
     local rcount = 1
     while objectcount > 0 do
         randomtree = treelist[math.random(#treelist)]
@@ -93,7 +138,7 @@ end
 
 function place_random_rocks(startx, starty, radius, objectcount)
     objectcount = objectcount or 1
-    
+
     local rocklist = {
     "blackland_rocks1", "blackland_rocks2", "blackland_rocks3", "blackland_rocks4", "blackland_rocks5", "blackland_rocks6",
     "desert_rocks1", "desert_rocks2", "desert_rocks3", "desert_rocks4", "desert_rocks5", "desert_rocks6",
@@ -101,7 +146,7 @@ function place_random_rocks(startx, starty, radius, objectcount)
     "winterland_rocks1", "winterland_rocks2", "winterland_rocks3", "winterland_rocks4", "winterland_rocks5", "winterland_rocks6"
     }
     local randomrock = rocklist[math.random(#rocklist)]
-    
+
     local rcount = 1
     while objectcount > 0 do
         randomrock = rocklist[math.random(#rocklist)]
@@ -156,25 +201,25 @@ end
 function peace_mode(player_number1, player_number2)
     player_number1 = player_number1 or 0
     player_number2 = player_number2 or 0
-    
+
     local game = wl.Game()
-    
+
     if (player_number1 > 0) and (player_number2 > 0) then
         local player1 = game.players[player_number1]
         local player2 = game.players[player_number2]
-        
+
         player1:set_attack_forbidden(player2.number, true)
         player2:set_attack_forbidden(player1.number, true)
     elseif (player_number1 > 0) and (player_number2 == 0) then
         local player1 = game.players[player_number1]
-        
+
         for j, player2 in ipairs(game.players) do
             player1:set_attack_forbidden(player2.number, true)
             player2:set_attack_forbidden(player1.number, true)
         end
     elseif (player_number2 > 0) and (player_number1 == 0) then
         local player1 = game.players[player_number2]
-        
+
         for j, player2 in ipairs(game.players) do
             player1:set_attack_forbidden(player2.number, true)
             player2:set_attack_forbidden(player1.number, true)
@@ -192,25 +237,25 @@ end
 function war_mode(player_number1, player_number2)
     player_number1 = player_number1 or 0
     player_number2 = player_number2 or 0
-    
+
     local game = wl.Game()
-    
+
     if (player_number1 > 0) and (player_number2 > 0) then
         local player1 = game.players[player_number1]
         local player2 = game.players[player_number2]
-        
+
         player1:set_attack_forbidden(player2.number, false)
         player2:set_attack_forbidden(player1.number, false)
     elseif (player_number1 > 0) and (player_number2 == 0) then
         local player1 = game.players[player_number1]
-        
+
         for j, player2 in ipairs(game.players) do
             player1:set_attack_forbidden(player2.number, false)
             player2:set_attack_forbidden(player1.number, false)
         end
     elseif (player_number2 > 0) and (player_number1 == 0) then
         local player1 = game.players[player_number2]
-        
+
         for j, player2 in ipairs(game.players) do
             player1:set_attack_forbidden(player2.number, false)
             player2:set_attack_forbidden(player1.number, false)
@@ -281,7 +326,7 @@ end
 
 function conquer_port_fields(radius)
     radius = radius or 1
-    
+
     local game = wl.Game()
     local map = game.map
 
@@ -301,13 +346,13 @@ function force_flag(startx, starty, player_number)
 
     local game = wl.Game()
     local map = game.map
-    
+
     if player_number > 0 then
         local player = game.players[player_number]
     else
         local player = map:get_field(startx, starty).owner
     end
-    
+
     if player then
         player:place_flag(map:get_field(startx, starty))
     end
@@ -324,13 +369,13 @@ end
 
 function remove_all_flags(startx, starty, radius)
     radius = radius or 0
-    
+
     local game = wl.Game()
     local map = game.map
-    
+
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
-    
+
     for idx, field in ipairs(fields) do
         if (field.immovable) and (field.immovable.descr.type_name == "flag") and not (field.immovable.building) then
            field.immovable:remove()
@@ -338,23 +383,23 @@ function remove_all_flags(startx, starty, radius)
     end
 end
 
-function place_road(startx, starty, cmd, roadtype)
+function place_road(startx, starty, road_command, roadtype)
     roadtype = roadtype or "normal"
     if not roadtype or not (string.find(roadtype, "busy") or string.find(roadtype, "waterway")) then
         roadtype = "normal"
     end
-    
+
     local game = wl.Game()
     local map = game.map
     local startflag = map:get_field(startx, starty).immovable
     local player = startflag.owner
 
-    if cmd:sub(-1) ~= "|" then
-       cmd = cmd .. "|"
+    if road_command:sub(-1) ~= "|" then
+       road_command = road_command .. "|"
     end
 
     moves = {}
-    for m in cmd:gmatch("%a+[,|]") do
+    for m in road_command:gmatch("%a+[,|]") do
        moves[#moves+1] = m:sub(1,-2)
        if(m:sub(-1) == '|') then
           r = player:place_road(roadtype, startflag, table.unpack(moves))
@@ -364,24 +409,24 @@ function place_road(startx, starty, cmd, roadtype)
     end
 end
 
-function force_road(startx, starty, cmd, roadtype, create_carriers)
+function force_road(startx, starty, road_command, roadtype, create_carriers)
     roadtype = roadtype or "normal"
     if not roadtype or not (string.find(roadtype, "busy") or string.find(roadtype, "waterway")) then
         roadtype = "normal"
     end
     create_carriers = create_carriers or false
-    
+
     local game = wl.Game()
     local map = game.map
     local startflag = map:get_field(startx, starty).immovable
     local player = startflag.owner
-   
-    if cmd:sub(-1) ~= "|" then
-       cmd = cmd .. "|"
+
+    if road_command:sub(-1) ~= "|" then
+       road_command = road_command .. "|"
     end
 
     moves = {}
-    for m in cmd:gmatch("%a+[,|]") do
+    for m in road_command:gmatch("%a+[,|]") do
        moves[#moves+1] = m:sub(1,-2)
        if(m:sub(-1) == '|') then
           moves[#moves+1] = true -- Force the road
@@ -392,6 +437,10 @@ function force_road(startx, starty, cmd, roadtype, create_carriers)
           end
           moves = {}
        end
+    end
+
+    if r then
+        return r
     end
 end
 
@@ -406,12 +455,12 @@ end
 
 function remove_all_roads(startx, starty, radius)
     radius = radius or 0
-    
+
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
-    
+
     for idx, field in ipairs(fields) do
         if (field.immovable) and (field.immovable.descr.type_name == "road") then
            field.immovable:remove()
@@ -419,176 +468,79 @@ function remove_all_roads(startx, starty, radius)
     end
 end
 
-function force_connection(startx, starty, targetx, targety, roadtype)
+function force_connection(startx, starty, targetx, targety, roadtype, create_carriers)
     roadtype = roadtype or "normal"
     if not roadtype or not (string.find(roadtype, "busy") or string.find(roadtype, "waterway")) then
         roadtype = "normal"
     end
 
+    create_carriers = create_carriers or false
+    
+    local road_command = nil
+    local road_field = nil
+    local road_endfield = nil
+
+    local road_distance = map_distance(startx, starty, targetx, targety)
+    local road_direction = map_direction(startx, starty, targetx, targety)
+    
     local game = wl.Game()
     local map = game.map
-    local mapx = math.floor(map.width / 2)
-    local mapy = math.floor(map.height / 2)
-    
     local startfield = map:get_field(startx, starty)
+    local startflag = startfield.immovable
+    local targetfield = map:get_field(targetx, targety)
     local player = startfield.owner
 
     if not (startfield.immovable) then
-        player:place_flag(map:get_field(startx, starty))
+        startflag = player:place_flag(map:get_field(startx, starty))
     elseif not (startfield.immovable.descr.type_name == "flag") then
         startfield.immovable:remove()
-        player:place_flag(map:get_field(startx, starty))
+        startflag = player:place_flag(map:get_field(startx, starty))
     end
 
-    local startflag = startfield.immovable
-    local diffx = targetx - startx
-    local diffy = targety - starty
-
-    if math.abs(diffx) >= mapx then
-        diffx = diffx * - 1
-    end
-    if math.abs(diffy) >= mapy then
-        diffy = diffy * - 1
-    end
-
-    while not ((startfield.x == targetx) and (startfield.y == targety)) do
-        startx = startfield.x
-        starty = startfield.y
-        diffx = targetx - startx
-        diffy = targety - starty
-
-        if math.abs(diffx) >= mapx then
-            diffx = diffx * - 1
-        end
-        if math.abs(diffy) >= mapy then
-            diffy = diffy * - 1
+    road_field = startfield
+    while not (road_endfield == targetfield) do
+        if (road_direction == "") then
+            road_endfield = road_field
+        elseif (road_direction == "l") then
+            road_endfield = road_field.ln
+        elseif (road_direction == "bl") then
+            road_endfield = road_field.bln
+        elseif (road_direction == "br") then
+            road_endfield = road_field.brn
+        elseif (road_direction == "r") then
+            road_endfield = road_field.rn
+        elseif (road_direction == "tr") then
+            road_endfield = road_field.trn
+        elseif (road_direction == "tl") then
+            road_endfield = road_field.tln
         end
 
-        -- console output --
-        if ((diffx == 1) or (diffx == -1)) and (diffy == 0) then
-            print ("can't create road tile with delta-x:", diffx, "and delta-y:", diffy)
+        if road_command and road_direction then
+            road_command = road_command .. "," .. road_direction
+        elseif road_direction then
+            road_command = road_direction
+        end
+        
+        if (road_endfield == targetfield) then 
             break
         else
-            print ("create road tile with delta-x:", diffx, "and delta-y:", diffy)
+            road_direction = map_direction(road_endfield.x, road_endfield.y, targetfield.x, targetfield.y)
+            road_field = road_endfield
         end
-
-        -- special end roads (3 tiles, diffy even) --
-        if (diffx == -3) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "l", "l", "l", true)
-        elseif (diffx == -2) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", "l", true)
-        elseif (diffx == -2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "l", true)
-        elseif (diffx == 2) and (diffy == -2) then
-          road = player:place_road(roadtype, startflag, "tr", "r", "tr", true)
-        elseif (diffx == 2) and (diffy == 2) then
-          road = player:place_road(roadtype, startflag, "br", "r", "br", true)
-        elseif (diffx == 3) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "r", "r", "r", true)
-          
-        -- special end roads (3 tiles, diffy odd, 1 case) --
-        elseif (diffx == -3) and (diffy == -1) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "tl", "l", "l", true)
-        elseif (diffx == -3) and (diffy == 1) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "bl", "l", "l", true)
-        elseif (diffx == -2) and (diffy == -1) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "l", "tl", "l", true)
-        elseif (diffx == -2) and (diffy == 1) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "l", "bl", "l", true)
-        elseif (diffx == 2) and (diffy == -1) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "r", "tr", "r", true)
-        elseif (diffx == 2) and (diffy == 1) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "r", "br", "r", true)
-        elseif (diffx == 3) and (diffy == -1) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "tr", "r", "r", true)
-        elseif (diffx == 3) and (diffy == 1) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "br", "r", "r", true)
-
-        -- special end roads (3 tiles, diffy odd, 2 cases) --
-        elseif (diffx == -2) and (diffy == -3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "tl", "l", "tl", true)
-        elseif (diffx == -2) and (diffy == -3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
-        elseif (diffx == -2) and (diffy == 3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "bl", "l", "bl", true)
-        elseif (diffx == -2) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "bl", true)
-        elseif (diffx == -1) and (diffy == -3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", "tl", true)
-        elseif (diffx == -1) and (diffy == -3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "tl", "tr", "tl", true)
-        elseif (diffx == -1) and (diffy == 3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", "bl", true)
-        elseif (diffx == -1) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "bl", "br", "bl", true)
-        elseif (diffx == 0) and (diffy == -3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "tl", "tr", "tl", true)
-        elseif (diffx == 0) and (diffy == -3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "tr", "tl", "tr", true)
-        elseif (diffx == 0) and (diffy == 3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "bl", "br", "bl", true)
-        elseif (diffx == 0) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "br", "bl", "br", true)
-        elseif (diffx == 1) and (diffy == -3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "tr", "tl", "tr", true)
-        elseif (diffx == 1) and (diffy == -3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "tr", "tr", "tr", true)
-        elseif (diffx == 1) and (diffy == 3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "br", "bl", "br", true)
-        elseif (diffx == 1) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
-        elseif (diffx == 2) and (diffy == -3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "tr", "tr", "tr", true)
-        elseif (diffx == 2) and (diffy == -3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "tr", "tl", "tr", true)
-        elseif (diffx == 2) and (diffy == 3) and (targety % 2 == 0) then
-          road = player:place_road(roadtype, startflag, "br", "br", "br", true)
-        elseif (diffx == 2) and (diffy == 3) and (targety % 2 == 1) then
-          road = player:place_road(roadtype, startflag, "br", "r", "br", true)
-
-        -- special roads (2 tiles, diffy even)--
-        elseif (diffx < 0) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "l", "l", true)
-        elseif (diffx > 0) and (diffy == 0) then
-          road = player:place_road(roadtype, startflag, "r", "r", true)
-                  
-        -- special roads (2 tiles, diffy odd)--
-        elseif (diffx < 0) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "l", "tl", true)
-        elseif (diffx < 0) and (diffy == 1) then
-          road = player:place_road(roadtype, startflag, "bl", "l", true)
-        elseif (diffx > 0) and (diffy == -1) then
-          road = player:place_road(roadtype, startflag, "r", "tr", true)
-        elseif (diffx > 0) and (diffy == 1) then
-          road = player:place_road(roadtype, startflag, "br", "r", true)
-          
-        -- standard roads (2 tiles) --
-        elseif (diffx < 0) and (diffy < 0) then
-          road = player:place_road(roadtype, startflag, "tl", "tl", true)
-        elseif (diffx < 0) and (diffy > 0) then
-          road = player:place_road(roadtype, startflag, "bl", "bl", true)
-        elseif (diffx == 0) and (diffy < 0) then
-          road = player:place_road(roadtype, startflag, "tl", "tr", true)
-        elseif (diffx == 0) and (diffy > 0) then
-          road = player:place_road(roadtype, startflag, "br", "bl", true)
-        elseif (diffx > 0) and (diffy < 0) then
-          road = player:place_road(roadtype, startflag, "tr", "tr", true)
-        elseif (diffx > 0) and (diffy > 0) then
-          road = player:place_road(roadtype, startflag, "br", "br", true)
-        end
-
-        startflag = road.end_flag
-        startfield = startflag.fields[1]
+    end
+    if road_command then
+        print ("created road: ", road_command)
+        road = force_road(startfield.x, startfield.y, road_command, roadtype, create_carriers)
     end
 end
 
 -- general seafaring settings --
 function set_seafaring(player_number, OnOff)
     OnOff = OnOff or true
-    
+
     local game = wl.Game()
     local suffix = ""
-    
+
     if player_number > 0 then
         local player = game.players[player_number]
 
@@ -623,7 +575,7 @@ function set_ship_capacity(player_number, ship_name, capacity)
     local game = wl.Game()
     local player = game.players[player_number]
     local ships = player:get_ships()
-    
+
     for i, ship in pairs(ships) do
         -- print(i, ship.shipname)
         if (ship.shipname == ship_name) or (ship_name == "") then
@@ -634,12 +586,12 @@ end
 
 function force_expedition(player_number, number_expeditions)
     number_expeditions = number_expeditions or 1
-    
+
     local game = wl.Game()
     local player = game.players[player_number]
     local tribe = player.tribe
     local ports = player:get_buildings(tribe.port)
-    
+
     for i, port in ipairs(ports) do
         if i <= number_expeditions then
             port:start_expedition()
@@ -653,7 +605,7 @@ function force_ship(startx, starty, player_number, capacity)
     local player = game.players[player_number]
     local map = game.map
     local centerfield = map:get_field(startx, starty)
-    
+
     local ship = player:place_ship(centerfield)
     ship.capacity = capacity
 end
@@ -663,7 +615,7 @@ function force_ship_random(player_number, capacity)
     local player = game.players[player_number]
     local map = game.map
     local oceanfields = map:find_ocean_fields(1)
-    
+
     local ship = player:place_ship(oceanfields[1])
     ship.capacity = capacity
 end
@@ -684,20 +636,20 @@ end
 -- building settings with coordinates --
 function force_building(startx, starty, radius, building_name, complete)
     complete = complete or false
-    
+
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
     local field = fields[math.random(#fields)]
-    
+
     local player = field.owner
     local building = nil
     local found_building = nil
 
     if player then
         local tribe = player.tribe
-        
+
         for i, tbuilding in ipairs(tribe.buildings) do
             if tbuilding.name == string.lower(building_name) then
                 found_building = building_name
@@ -707,7 +659,7 @@ function force_building(startx, starty, radius, building_name, complete)
                 break
             end
         end
-        
+
         if (found_building) and (complete == true) then
             if (field.immovable) then
                 field.immovable:remove()
@@ -720,31 +672,31 @@ function force_building(startx, starty, radius, building_name, complete)
             building = player:place_building(found_building, field, true, true)
         end
     end
-    
+
     return building
 end
 
 function force_headquarters(startx, starty, radius, complete)
     radius = radius or 0
     complete = complete or false
-    
+
     local headquarters = force_building(startx, starty, radius, "headquarters", complete)
 end
 
 function force_warehouse(startx, starty, radius, complete)
     radius = radius or 0
     complete = complete or false
-    
+
     local warehouse = force_building(startx, starty, radius, "warehouse", complete)
 end
 
 function force_mine(startx, starty, radius)
     radius = radius or 0
-    
+
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
-    
+
     local fields = centerfield:region(radius)
     local mine_field = fields[math.random(#fields)]
     local resource = mine_field.resource
@@ -752,9 +704,9 @@ function force_mine(startx, starty, radius)
 
     local minename = ""
     local suffix = ""
-    
+
     local player = mine_field.owner
-    
+
     if player then
         local tribe = player.tribe
         local tribe_name = tribe.name
@@ -826,22 +778,22 @@ function force_mine(startx, starty, radius)
                 suffix = "_deep"
             end
         end
-        
+
         local mine = player:place_building(tribe_name.."_"..minename..suffix, mine_field, true, true)
     end
 end
 
 function force_port(startx, starty, radius, player_number, complete)
     complete = complete or false
-    
+
     local game = wl.Game()
     local map = game.map
-    
+
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
         if player_number > 0 then
             local player = game.players[player_number]
             local tribe = player.tribe
-            
+
             for i, portfield in pairs(map.port_spaces) do
                 if (map_distance(startx, starty, portfield.x, portfield.y) <= radius) then
                     field = map:get_field(portfield.x, portfield.y)
@@ -898,21 +850,21 @@ function force_port(startx, starty, radius, player_number, complete)
                 end
             end
         end
-    end    
+    end
 end
 
 function force_militarysite(startx, starty, radius, player_number, militarytype)
     militarytype = militarytype or "small0"
-    
+
     local game = wl.Game()
     local map = game.map
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
     local player = game.players[player_number]
     local tribe_name = player.tribe.name
-    
+
     local max_soldier_stats = {0,0,0,0}
-    
+
     if tribe_name == "europeans" then
         max_soldier_stats = {3,3,3,3}
         if militarytype == "small0" then
@@ -1100,7 +1052,7 @@ end
 
 function block_destruction_building(startx, starty, yesno)
     yesno = yesno or true
-    
+
     local game = wl.Game()
     local map = game.map
     local field = map:get_field(startx, starty)
@@ -1114,7 +1066,7 @@ function set_warehouse_worker_policy(startx, starty, workername, policiename)
     if not policiename or not (string.find(policiename, "prefer") or string.find(policiename, "dontstock") or string.find(policiename, "remove")) then
         policiename = "normal"
     end
-    
+
     local game = wl.Game()
     local map = game.map
     local field = map:get_field(startx, starty).immovable
@@ -1149,7 +1101,7 @@ function set_warehouse_ware_policy(startx, starty, warename, policiename)
     if not policiename or not (string.find(policiename, "prefer") or string.find(policiename, "dontstock") or string.find(policiename, "remove")) then
         policiename = "normal"
     end
-    
+
     local game = wl.Game()
     local map = game.map
     local field = map:get_field(startx, starty).immovable
@@ -1174,7 +1126,7 @@ function set_warehouse_waretype_policy(startx, starty, waretype, policiename)
     if not policiename or not (string.find(policiename, "prefer") or string.find(policiename, "dontstock") or string.find(policiename, "remove")) then
         policiename = "normal"
     end
-    
+
     local game = wl.Game()
     local map = game.map
     local player = map:get_field(startx, starty).owner
@@ -1286,7 +1238,7 @@ end
 
 function set_warehouse_waretype_warecount(startx, starty, waretype, warenumber)
     warenumber = warenumber or 1
-    
+
     local game = wl.Game()
     local map = game.map
     local player = map:get_field(startx, starty).owner
@@ -1451,12 +1403,12 @@ function set_militarysite_preference(startx, starty, preference)
     if not preference or not (string.find(preference, "rookies") or string.find(preference, "heroes")) then
         preference = "any"
     end
-        
+
     local game = wl.Game()
     local map = game.map
     local field = map:get_field(startx, starty)
     local building = field.immovable
-        
+
     if building then
         building.soldier_preference = preference
     end
@@ -1561,12 +1513,12 @@ end
 
 function start_all_buildings(player_number, building_name)
     building_name = building_name or "all"
-    
+
     local game = wl.Game()
     local player = game.players[player_number]
     local tribe = player.tribe
     local tribe_name = tribe.name
-    
+
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
             if string.lower(building_name) == "all" then
@@ -1596,12 +1548,12 @@ end
 
 function stop_all_buildings(player_number, building_name)
     building_name = building_name or "all"
-    
+
     local game = wl.Game()
     local player = game.players[player_number]
     local tribe = player.tribe
     local tribe_name = tribe.name
-    
+
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
             if string.lower(building_name) == "all" then
@@ -1634,12 +1586,12 @@ function set_all_militarysites_preference(player_number, building_name, preferen
     if not preference or not (string.find(preference, "rookies") or string.find(preference, "heroes")) then
         preference = "any"
     end
-    
+
     local game = wl.Game()
     local player = game.players[player_number]
     local tribe = player.tribe
     local tribe_name = tribe.name
-    
+
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
             if (string.lower(building_name) == "all") and (building.descr.type_name == "militarysite") then
