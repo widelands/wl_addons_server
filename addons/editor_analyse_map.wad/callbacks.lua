@@ -131,6 +131,7 @@ function show_result(title, richtext)
    result_window.visible = true
 
 end
+
 -- End GUI functionality
 
 

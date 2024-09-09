@@ -285,8 +285,19 @@ wl.ui.MapView():create_child({
                title    = _("OK"),
                on_click = [[ wl.ui.MapView():get_child("result_window"):close() ]],
             },
-         }
-      }
+         },
+      },
+   -- Widelands Versions > 1.3
+   -- For some reasons we can't use an external function for this
+   -- HYPERLINK_ACTION is a string in form of '28/42' representing x/y of a field
+   on_hyperlink = [[
+      local f = {}
+      for i in string.gmatch(HYPERLINK_ACTION,"([^".."/".."]+)") do
+         table.insert(f, tonumber(i))
+      end
+      f = wl.Editor().map:get_field(f[1], f[2])
+      wl.ui.MapView():scroll_to_field(f)
+   ]]
 })
 
 -- Progressbar
