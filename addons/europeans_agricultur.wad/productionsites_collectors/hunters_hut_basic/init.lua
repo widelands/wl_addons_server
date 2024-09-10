@@ -72,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _("hunting"),
             actions = {
                 "callworker=hunt",
-                "sleep=duration:60s",
+                "sleep=duration:2m",
                 "produce=leather"
             }
         },

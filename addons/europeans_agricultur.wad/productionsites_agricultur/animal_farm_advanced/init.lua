@@ -218,7 +218,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _"dummy program",
             actions = {
                 "sleep=duration:10s",
-                "recruit=europeans_recruit"
+                "recruit=europeans_carrier_1"
             }
         }
     },

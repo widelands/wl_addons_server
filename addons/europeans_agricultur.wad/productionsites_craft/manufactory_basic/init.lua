@@ -74,10 +74,12 @@ wl.Descriptions():new_productionsite_type {
     },
     
     inputs = {
-        { name = "log", amount = 16 },
-        { name = "reed", amount = 12 },
         { name = "coal", amount = 12 },
         { name = "metal_alloy", amount = 12 },
+        { name = "log", amount = 16 },
+        { name = "cloth", amount = 8 },
+        { name = "rubber", amount = 6 },
+        { name = "leather", amount = 6 },
     },
 
     programs = {
@@ -88,11 +90,9 @@ wl.Descriptions():new_productionsite_type {
                 "call=processing_metal_alloy",
                 "call=processing_metal_alloy",
                 "call=processing_log",
-                "call=processing_reed",
                 "call=processing_metal_alloy",
                 "call=processing_metal_alloy",
                 "call=processing_log",
-                "call=processing_reed",
                 "return=skipped"
             }
         },
@@ -104,14 +104,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=producing_boots_wooden",
                 "call=producing_helmet_wooden",
                 "call=producing_spear_wooden",
-            }
-        },
-        processing_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start processing reed for input wares because ...
-            descname = pgettext("europeans_building", "processing reed to create tools and armor"),
-            actions = {
-                "call=producing_armor_processed",
-                "call=producing_boots_sturdy",
             }
         },
         producing_armor_wooden = {
@@ -131,7 +123,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs armor_wooden",
                 "return=skipped when economy needs scythe and not economy needs armor_wooden",
                 "return=skipped when economy needs shovel and not economy needs armor_wooden",
-                "consume=log",
+                "consume=log:2 cloth:2 leather,rubber:2",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -155,7 +147,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs boots_wooden",
                 "return=skipped when economy needs scythe and not economy needs boots_wooden",
                 "return=skipped when economy needs shovel and not economy needs boots_wooden",
-                "consume=log",
+                "consume=log:2 cloth:2 leather,rubber:2",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -179,7 +171,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs helmet_wooden",
                 "return=skipped when economy needs scythe and not economy needs helmet_wooden",
                 "return=skipped when economy needs shovel and not economy needs helmet_wooden",
-                "consume=log",
+                "consume=log:2 leather,rubber:2",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -203,54 +195,11 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs spear_wooden",
                 "return=skipped when economy needs scythe and not economy needs spear_wooden",
                 "return=skipped when economy needs shovel and not economy needs spear_wooden",
-                "consume=log",
+                "consume=log:2",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "produce=spear_wooden:2"
-            }
-        },
-        producing_armor_processed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
-            descname = pgettext("europeans_building", "tailoring processed armor"),
-            actions = {
-                "return=skipped when economy needs reed and not economy needs armor_processed",
-                "return=skipped when economy needs cloth and not economy needs armor_processed",
-                "return=skipped when economy needs boots_sturdy and not economy needs armor_processed",
-                "return=skipped when economy needs basket and not economy needs armor_processed",
-                "return=skipped when economy needs buckets and not economy needs armor_processed",
-                "return=skipped when economy needs felling_ax and not economy needs armor_processed",
-                "return=skipped when economy needs hammer and not economy needs armor_processed",
-                "return=skipped when economy needs pick and not economy needs armor_processed",
-                "return=skipped when economy needs saw and not economy needs armor_processed",
-                "return=skipped when economy needs scythe and not economy needs armor_processed",
-                "return=skipped when economy needs shovel and not economy needs armor_processed",
-                "consume=reed:3",
-                "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:6m",
-                "produce=armor_processed:2"
-            }
-        },
-        producing_boots_sturdy = {
-            -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
-            descname = pgettext("europeans_building", "making study boots"),
-            actions = {
-                "return=skipped when economy needs log and not economy needs boots_sturdy",
-                "return=skipped when economy needs reed and not economy needs boots_sturdy",
-                "return=skipped when economy needs cloth and not economy needs boots_sturdy",
-                "return=skipped when economy needs armor_processed and not economy needs boots_sturdy",
-                "return=skipped when economy needs basket and not economy needs boots_sturdy",
-                "return=skipped when economy needs buckets and not economy needs boots_sturdy",
-                "return=skipped when economy needs felling_ax and not economy needs boots_sturdy",
-                "return=skipped when economy needs hammer and not economy needs boots_sturdy",
-                "return=skipped when economy needs pick and not economy needs boots_sturdy",
-                "return=skipped when economy needs saw and not economy needs boots_sturdy",
-                "return=skipped when economy needs scythe and not economy needs boots_sturdy",
-                "return=skipped when economy needs shovel and not economy needs boots_sturdy",
-                "consume=log reed:2",
-                "playsound=sound/barbarians/weaver priority:90%",
-                "animate=working duration:6m",
-                "produce=boots_sturdy:2"
             }
         },
         processing_metal_alloy = {
@@ -264,9 +213,7 @@ wl.Descriptions():new_productionsite_type {
                 "call=producing_pick",
                 "call=producing_hammer",
                 "call=producing_saw",
-                "call=producing_shovel",
-                "call=producing_helmet_mask",
-                "call=producing_spear_advanced",
+                "call=producing_shovel"
             }
         },
         producing_basket = {
@@ -355,29 +302,6 @@ wl.Descriptions():new_productionsite_type {
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "produce=shovel:2"
-            }
-        },
-        producing_helmet_mask = {
-            -- TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
-            descname = pgettext("europeans_building", "forging a mask"),
-            actions = {
-                "return=skipped unless economy needs helmet_mask", 
-                "consume=coal metal_alloy",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:6m",
-                "produce=helmet_mask:2"
-            }
-        },
-        producing_spear_advanced = {
-            -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
-            descname = pgettext("europeans_building", "forging an advanced spear"),
-            actions = {
-                "return=skipped unless economy needs spear_advanced", 
-                "consume=log coal metal_alloy",
-                "playsound=sound/smiths/smith priority:50% allow_multiple",
-                "animate=working duration:6m",
-                "playsound=sound/smiths/sharpening priority:90%",
-                "produce=spear_advanced:2"
             }
         },
     }

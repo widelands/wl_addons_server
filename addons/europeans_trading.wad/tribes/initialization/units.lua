@@ -225,7 +225,7 @@ wl.Descriptions():new_tribe {
             },
         },
         {
-            -- Building Materials 3 (Stone)
+            -- Building Materials 3 (Stone and Mining)
             {
                 name = "granite",
                 default_target_quantity = 32,
@@ -278,22 +278,6 @@ wl.Descriptions():new_tribe {
                     }
                 }
             },
-        },
-        {
-            -- Building Materials 4 (Mining)
-            {
-                name = "coal",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
-                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
-                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
-                    }
-                }
-            },
             {
                 name = "marble",
                 default_target_quantity = 16,
@@ -333,6 +317,19 @@ wl.Descriptions():new_tribe {
         },
         {
            -- Metals and Money
+            {
+                name = "coal",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
+                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
+                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
+                    }
+                }
+            },
             {
                 name = "ore",
                 default_target_quantity = 32,

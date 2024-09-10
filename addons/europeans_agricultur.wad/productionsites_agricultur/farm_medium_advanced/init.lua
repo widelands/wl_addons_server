@@ -113,7 +113,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs fruit",
                 "return=skipped when economy needs grape",
                 "return=skipped when economy needs reed",
-                "sleep=duration:10m"
+                "sleep=duration:5m"
             }
         },
         plant_cotton = {

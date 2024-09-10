@@ -68,6 +68,7 @@ wl.Descriptions():new_trainingsite_type {
         { name = "mead", amount = 8 },
         { name = "beer_strong", amount = 4 },
         { name = "wine", amount = 4 }, 
+        { name = "boots_advanced", amount = 8 },
     },
 
     programs = {
@@ -86,6 +87,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:0",
                 "sleep=duration:15s",
                 "checksoldier=soldier:evade level:0",
+                "consume=boots_advanced",
                 "consume=meat:2 bread:2 beer:2",
                 "train=soldier:evade level:1"
             }
@@ -97,6 +99,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:1",
                 "sleep=duration:15s",
                 "checksoldier=soldier:evade level:1",
+                "consume=boots_advanced",
                 "consume=fish:2 honey_bread:2 mead:2",
                 "train=soldier:evade level:2"
             }
@@ -108,6 +111,7 @@ wl.Descriptions():new_trainingsite_type {
                 "checksoldier=soldier:evade level:2",
                 "sleep=duration:15s",
                 "checksoldier=soldier:evade level:2",
+                "consume=boots_advanced",
                 "consume=fish,meat:2 biscuit:2 wine,beer_strong:2",
                 "train=soldier:evade level:3"
             }

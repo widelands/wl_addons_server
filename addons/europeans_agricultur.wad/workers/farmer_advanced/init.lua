@@ -19,11 +19,21 @@ wl.Descriptions():new_worker_type {
         check_flower = {
             "findobject=attrib:flowering radius:8",
         },
+        check_growable_plants = {
+            "findobject=attrib:growable radius:8"
+        },
         bees = {
             "findobject=attrib:flowering radius:8",
             "walk=object",
             "animate=beeswarm duration:4s",
             "createware=honey",
+            "return"
+        },
+        watering = {
+            "findobject=attrib:growable radius:8",
+            "walk=object",
+            "animate=water duration:2s",
+            "callobject=grow",
             "return"
         },
         plant_barley = {
@@ -243,6 +253,14 @@ wl.Descriptions():new_worker_type {
             columns = 5,
             rows = 20,
             hotspot = {26, 31}
+        },
+        water = {
+            basename = "water",
+            fps = 5,
+            frames = 10,
+            rows = 4,
+            columns = 3,
+            hotspot = { 18, 26 }
         },
         walk = {
             fps = 10,

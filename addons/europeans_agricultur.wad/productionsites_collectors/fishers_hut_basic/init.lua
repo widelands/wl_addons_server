@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
             descname = _("fishing"),
             actions = {
                 "callworker=fish",
-                "sleep=duration:60s"
+                "sleep=duration:2m"
             }
         },
     },
