@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-10 03:12+0200\n"
+"POT-Creation-Date: 2024-09-11 03:09+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -326,10 +326,9 @@ msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_agricultur.wad/immovables/wheatfield/harvested/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Wheat Field (harvested)"
-msgstr "Урожай с этого поля собран."
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_agricultur.wad/immovables/wheatfield/medium/init.lua:8
@@ -2162,14 +2161,11 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:706
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a manufactory and used in the training "
 "center to protect soldiers with additional health points."
 msgstr ""
-"Это тесак. Его производят в продвинутой кузнице и используют на боевой арене "
-"для тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:715
@@ -2181,27 +2177,20 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:724
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These advanced shields are used by the best soldiers of the Europeans. They "
 "are produced in the advanced manufactory and used in the training center to "
 "train soldiers in defense."
 msgstr ""
-"Эти улучшенные щиты используются лучшими солдатами Европейцев. Они "
-"производятся в продвинутой кузнице и используются на продвинутой арене "
-"поединков для обучения солдат защите."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:733
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a advanced spear with a steel tip. It is produced in the advanced "
 "manufactory and used in a training center to train soldiers in attack."
 msgstr ""
-"Это тесак. Его производят в продвинутой кузнице и используют на боевой арене "
-"для тренировки солдат в Уроне."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:750
@@ -4040,23 +4029,3 @@ msgstr ""
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
 msgstr ""
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a broadsword"
-#~ msgstr "кует Тесак"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The mask is the medium defense tool of a soldier. It is produced in a "
-#~ "smithy and used in a battle arena to train soldiers in defense."
-#~ msgstr ""
-#~ "Маска - это средняя защита солдата. Её производят в кузнице и используют "
-#~ "на арене поединков для тренировки солдат в защите."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This steel shield is produced in a smithy and used in a battle arena to "
-#~ "train soldiers in defense."
-#~ msgstr ""
-#~ "Этот стальной щит изготавливается в кузнице и используется на арене "
-#~ "поединков для обучения солдат защите."

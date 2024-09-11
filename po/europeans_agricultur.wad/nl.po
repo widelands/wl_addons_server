@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-10 03:12+0200\n"
+"POT-Creation-Date: 2024-09-11 03:09+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -327,10 +327,9 @@ msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_agricultur.wad/immovables/wheatfield/harvested/init.lua:8
-#, fuzzy
 msgctxt "immovable"
 msgid "Wheat Field (harvested)"
-msgstr "Dit veld is geoogst."
+msgstr ""
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_agricultur.wad/immovables/wheatfield/medium/init.lua:8
@@ -1575,24 +1574,21 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:78
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 0 to level 1"
-msgstr "gezondheid van soldaat upgraden van niveau 0 naar niveau 1"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:90
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 1 to level 2"
-msgstr "gezondheid van soldaat upgraden van niveau 1 naar niveau 2"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:103
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
-msgstr "gezondheid van soldaat upgraden van niveau 2 naar niveau 3"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:8
@@ -1602,24 +1598,21 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:78
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 0 to level 1"
-msgstr "soldaat ontwijking upgraden van niveau 0 naar niveau 1"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:90
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 1 to level 2"
-msgstr "soldaat ontwijking upgraden van niveau 1 naar niveau 2"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:103
-#, fuzzy
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 2 to level 3"
-msgstr "soldaat ontwijking upgraden van niveau 2 naar niveau 3"
+msgstr ""
 
 #: addons/europeans_agricultur.wad/tribes/initialization/init.lua:10
 msgid "Mark McWire"
@@ -2306,51 +2299,36 @@ msgstr ""
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:706
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "The advanced armor is produced in the a manufactory and used in the training "
 "center to protect soldiers with additional health points."
 msgstr ""
-"Het geavanceerd harnas wordt gemaakt in de smederij en gebruikt in de "
-"strijdarena om soldaten te beschermen met extra levensspunten."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:715
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "Hero boots! The only suitable footwear for a real hero. They are produced by "
 "the dressmaker and used to train soldiers’ evade."
 msgstr ""
-"Heldenlaarzen! Het enige geschikte schoeisel voor een echte held. Ze worden "
-"gemaakt door de kleermaker en gebruikt om het ontwijken van soldaten te "
-"trainen van niveau 2 naar niveau 3."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:724
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "These advanced shields are used by the best soldiers of the Europeans. They "
 "are produced in the advanced manufactory and used in the training center to "
 "train soldiers in defense."
 msgstr ""
-"Deze geavanceerde schilden worden gebruikt door de beste soldaten van de "
-"Europeanen. Ze worden geproduceerd in de geavanceerde smederij en gebruikt "
-"in de geavanceerde gevechtsarena om soldaten te trainen in verdediging."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:733
-#, fuzzy
 msgctxt "europeans_ware"
 msgid ""
 "This is a advanced spear with a steel tip. It is produced in the advanced "
 "manufactory and used in a training center to train soldiers in attack."
 msgstr ""
-"Dit is een geavanceerde speer met een stalen punt. Hij wordt gemaakt in een "
-"smederij en gebruikt in een gevechtsarena om soldaten te trainen in "
-"aanvallen."
 
 #. TRANSLATORS: Helptext for an Europeans worker: Carrier
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:750
@@ -3319,17 +3297,15 @@ msgstr "Traint soldaten alleen in 'Ontwijken'."
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Fitness Center
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2405
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Defense’."
-msgstr "Traint soldaten alleen in 'Ontwijken'."
+msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Fitness Center
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2412
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Attack’."
-msgstr "Traint soldaten alleen in 'Ontwijken'."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Guardhouse
@@ -4244,130 +4220,3 @@ msgstr "Gevorderde Terreinvormer"
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
 msgstr "Basis Terreinvormer"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring processed armor"
-#~ msgstr "op maat maken van wapenrusting"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a suit of chain armor"
-#~ msgstr "een maliënkolder maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making study boots"
-#~ msgstr "werklaarzen maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making swift boots"
-#~ msgstr "vlotte laarzen maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a mask"
-#~ msgstr "een masker smeden"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a steel shield"
-#~ msgstr "een stalen schild smeden"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a broad ax"
-#~ msgstr "een brede bijl smeden"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a broadsword"
-#~ msgstr "een slagzwaard smeden"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing reed to create tools and armor"
-#~ msgstr "riet verwerken tot gereedschap en pantser"
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Basic armor for European soldiers. It is produced in the weaving mill. In "
-#~ "combination with wooden spear, it is the equipment to fit out young "
-#~ "soldiers."
-#~ msgstr ""
-#~ "Basisharnas voor Europese soldaten. Het wordt geproduceerd in de weverij. "
-#~ "In combinatie met een houten speer is het de uitrusting voor jonge "
-#~ "soldaten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The compressed armor is a medium armor for European soldiers. It is "
-#~ "produced by a tailor and used in a battle arena to protect soldiers with "
-#~ "additional health points."
-#~ msgstr ""
-#~ "Het gecomprimeerde harnas is een gemiddeld harnas voor Europese soldaten. "
-#~ "Het wordt gemaakt door een kleermaker en gebruikt in een gevechtsarena om "
-#~ "soldaten te beschermen met extra gezondheidspunten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Sturdy boots are excellent footwear for soldiers to be quicker on their "
-#~ "feet. They are produced by the dressmaker and used to train soldiers’ "
-#~ "evade from level 0 to level 1."
-#~ msgstr ""
-#~ "Stevige laarzen zijn uitstekend schoeisel voor soldaten om sneller ter "
-#~ "been te zijn. Ze worden gemaakt door de kleermaker en worden gebruikt om "
-#~ "het ontwijken van soldaten te trainen van niveau 0 tot niveau 1."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Swift boots are light and durable footwear for soldiers to be quicker on "
-#~ "their feet. They are produced by the dressmaker and used to train "
-#~ "soldiers’ evade from level 1 to level 2."
-#~ msgstr ""
-#~ "Vlugge laarzen zijn licht en duurzaam schoeisel voor soldaten om sneller "
-#~ "ter been te zijn. Ze worden gemaakt door de kleermaker en worden gebruikt "
-#~ "om het ontwijken van soldaten te trainen van niveau 1 naar niveau 2."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This is an broad ax. It is produced in a smithy and used in a battle "
-#~ "arena to train soldiers in attack."
-#~ msgstr ""
-#~ "Dit is een brede bijl. Hij wordt gemaakt in een smederij en gebruikt in "
-#~ "een gevechtsarena om soldaten te trainen in aanvallen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This is a broad sword. It is produced in the advanced smithy and used in "
-#~ "a battle arena to train soldiers in attack."
-#~ msgstr ""
-#~ "Dit is een breed zwaard. Het wordt gemaakt in de geavanceerde smederij en "
-#~ "gebruikt in een gevechtsarena om soldaten te trainen in de aanval."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The mask is the medium defense tool of a soldier. It is produced in a "
-#~ "smithy and used in a battle arena to train soldiers in defense."
-#~ msgstr ""
-#~ "Het masker is het middelste verdedigingsmiddel van een soldaat. Het wordt "
-#~ "gemaakt in een smederij en gebruikt in een gevechtsarena om soldaten te "
-#~ "trainen in verdediging."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This steel shield is produced in a smithy and used in a battle arena to "
-#~ "train soldiers in defense."
-#~ msgstr ""
-#~ "Dit stalen schild wordt geproduceerd in een smederij en wordt gebruikt in "
-#~ "een gevechtsarena om soldaten te trainen in verdediging."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’."
-#~ msgstr "Traint soldaten in 'Ontwijken', 'Gezondheid' en 'Aanval'."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."
-#~ msgstr ""
-#~ "Traint soldaten in 'Ontwijken', 'Gezondheid', 'Aanval' en in "
-#~ "'Verdediging'."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so "
-#~ "to remain totally unaffected."
-#~ msgstr ""
-#~ "'Ontwijken' vergroot de kans van de soldaat om niet geraakt te worden "
-#~ "door de vijand en zo totaal onaangetast te blijven."

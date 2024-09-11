@@ -343,24 +343,6 @@ function allow_productionsites_per_input(player)
     end
 end
 
-function allow_warehouses(player)
-    local game = wl.Game()
-    local map = wl.Game().map
-    local tribe = player.tribe
-
-    player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
-end
-
-function forbid_warehouses(player)
-    local game = wl.Game()
-    local map = wl.Game().map
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_warehouse", "europeans_headquarters"}
-    end
-end
-
 function allow_all_militarysites(player)
     local game = wl.Game()
     local tribe = player.tribe
@@ -382,45 +364,6 @@ function forbid_all_militarysites(player)
         player:forbid_buildings{"europeans_barrier_basic", "europeans_barrier_level_1", "europeans_barrier_level_2", "europeans_barrier_level_3"}
         player:forbid_buildings{"europeans_tower_basic", "europeans_tower_level_1", "europeans_tower_level_2", "europeans_tower_level_3"}
         player:forbid_buildings{"europeans_castle_basic", "europeans_castle_level_1", "europeans_castle_level_2", "europeans_castle_level_3", "europeans_castle_level_4"}
-    end
-end
-
-function allow_ports(player)
-    local game = wl.Game()
-    local map = wl.Game().map
-    local tribe = player.tribe
-
-    if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-        player:allow_buildings{"europeans_port", "europeans_port_big"}
-    end
-end
-
-function forbid_ports(player)
-    local game = wl.Game()
-    local map = wl.Game().map
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_port", "europeans_port_big"}
-    end
-end
-
-function allow_shipyard(player)
-    local game = wl.Game()
-    local map = wl.Game().map
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" and ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-        player:allow_buildings{"europeans_shipyard_basic", "europeans_shipyard_advanced"}
-    end
-end
-
-function forbid_shipyard(player)
-    local game = wl.Game()
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_shipyard_basic", "europeans_shipyard_advanced"}
     end
 end
 
@@ -605,58 +548,53 @@ end
 function doing_ai_stuff(player, increment)
     local map = wl.Game().map
 
+    -- Unlocking buildings
     if (increment == 0) then
         player:forbid_buildings("all")
-        player:allow_buildings{"europeans_sentry_basic", "europeans_tower_basic", "europeans_barrier_basic", "europeans_castle_basic", }
-        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", }
-        player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
+        allow_all_militarysites(player)
+        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_lumberjacks_house_advanced", }
+        player:allow_buildings{"europeans_quarry_basic", "europeans_quarry_advanced", }
     end
-    if (increment >= 4) then
+    if (increment >= 2) then
         allow_productionsites_per_input(player)
     end
-    if (increment == 32) then
-        allow_warehouses(player)
-        allow_all_militarysites(player)
-        allow_ports(player)
+    if (increment >= 8) then
+        player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
+        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+            player:allow_buildings{"europeans_port", "europeans_port_big"}
+        end
     end
 
     -- Experimental actions
-    if (increment >= 48) then
+    if (increment >= 16) then
         start_stopped_buildings(player)
-        balance_player_warehouse_wares(player)
-        balance_player_warehouse_workers(player)
+        upgrade_random_militarysites(player)
         set_hero_advanced_militarysites(player)
-        if increment % 2 == 0 then
-            upgrade_random_militarysites(player)
-            place_port_random_ai(player)
-            place_ship_random_ai(player)
-        end
-        if increment % 8 == 0 then
-            upgrade_random_trainingsite(player)
-        end
+    end
+    if (increment >= 16) and (increment % 4 == 0) then
+        upgrade_random_trainingsite(player)
     end
 end
 
 function doing_ai_stuff_seafaring(player, increment)
     local map = wl.Game().map
 
+    -- Unlocking buildings
     if (increment == 0) then
         player:forbid_buildings("all")
-        player:allow_buildings{"europeans_sentry_basic", "europeans_tower_basic", "europeans_barrier_basic", "europeans_castle_basic", }
-        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_tree_nursery_basic", }
-        player:allow_buildings{"europeans_well_basic", "europeans_well_level_1", }
+        allow_all_militarysites(player)
+        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_lumberjacks_house_advanced", }
+        player:allow_buildings{"europeans_quarry_basic", "europeans_quarry_advanced", }
     end
     if (increment >= 4) then
         allow_productionsites_per_input(player)
-    end
-    if (increment == 16) then
-        allow_ports(player)
-        allow_shipyard(player)
-        allow_all_militarysites(player)
+        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+            player:allow_buildings{"europeans_port", "europeans_port_big"}
+        end
     end
 
     -- Experimental actions
-    if (increment >= 32) and (increment < 288) and (increment % 8 == 0) then
+    if (increment >= 16) and (increment < 288) and (increment % 4 == 0) then
         launch_expeditions(player, {
             {
                 europeans_soldier = 8,
@@ -669,19 +607,15 @@ function doing_ai_stuff_seafaring(player, increment)
             }
         })
         place_port_random_ai(player)
-    elseif (increment >= 288) and (increment < 576) and (increment % 8 == 0) then
+    elseif (increment >= 288) and (increment < 576) and (increment % 4 == 0) then
         place_port_random_ai(player)
+        upgrade_random_trainingsite(player)
     end
-    if (increment >= 48) then
+    if (increment >= 24) then
         start_stopped_buildings(player)
+        upgrade_random_militarysites(player)
+        set_hero_advanced_militarysites(player)
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
-        set_hero_advanced_militarysites(player)
-        if increment % 2 == 0 then
-            upgrade_random_militarysites(player)
-        end
-        if increment % 8 == 0 then
-            upgrade_random_trainingsite(player)
-        end
     end
 end

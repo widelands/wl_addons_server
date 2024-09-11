@@ -1821,22 +1821,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_ferry_yard_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
-                purpose = pgettext("europeans_building", "Builds ferries."),
-                -- TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
-                note = pgettext("europeans_building", "Needs water nearby.")
-            }
-        },
-        {
-            name = "europeans_shipyard_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
-                purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports.")
-            }
-        },
-        {
             name = "europeans_shipyard_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard

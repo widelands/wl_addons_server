@@ -93,7 +93,7 @@ local init = {
     })
     
     -- Delay of 15 min between actions
-    local time_min = 15
+    local time_min = 30
     for i = 0, 2688 do
         doing_ai_stuff_seafaring (player, i)        
         sleep(time_min * 60000)
