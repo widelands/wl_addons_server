@@ -75,6 +75,7 @@ Table          | Column Names                                              | Col
 `usercomments` | `id` <br> `addon` <br> `user` <br> `timestamp` <br> `editor` <br> `edit_timestamp` <br> `version` <br> `message` | `int` <br> `int` <br> `int` <br> `bigint` <br> `int` <br> `bigint` <br> `varchar` <br> `varchar` | Unique comment ID<br>-<br>-<br>-<br> May be `NULL` <br> May be `NULL` <br>-<br>-
 `notifyadmins` | `email` <br> `level` | `varchar` <br> `int` | -<br> `0` means disabled, `1` critical only, `2` all notices
 `blackwhitelist` | `id` <br> `action` <br> `value`                         | `int` <br> `varchar` <br> `tinyint`                |
+`upload_override` | `id` <br> `name` <br> `filesize` <br> `nrfiles` <br> `nrdirs` <br> `upload_interval` | `int` <br> `varchar` <br> `bigint` <br> `bigint` <br> `bigint` <br> `bigint` | Add-ons are keyed by name. All entries may be `NULL` to use the defaults.
 
 ## Developers’ Corner
 

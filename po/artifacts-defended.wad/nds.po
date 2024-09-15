@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Benedikt Straub <benedikt-straub@web.de>, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-12 03:07+0100\n"
+"PO-Revision-Date: 2023-11-25 20:04+0000\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
+"Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
+"nds/)\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/artifacts-defended.wad/addon:4
+msgid "artifacts, defended"
+msgstr "Verteidigt künstelk Schatten"
+
+#: addons/artifacts-defended.wad/defending.lua:61
+msgid "WARNING"
+msgstr "Wahrschau"
+
+#: addons/artifacts-defended.wad/defending.lua:115
+msgid "to conquer"
+msgstr "intonehmen"
+
+#: addons/artifacts-defended.wad/defending.lua:127
+msgid "Could not adapt the tribe."
+msgstr "Kunn dat Volk nich anpassen."
+
+#: addons/artifacts-defended.wad/defending.lua:143
+msgid "Defending player can not be in a team, remove."
+msgstr "Verteidigungs-Speler kann nich in eener Klottje sien – wegnehmen."
+
+#: addons/artifacts-defended.wad/defending.lua:226
+msgid "ERROR placing building"
+msgstr "Fehler bi’m Bauen vum Huus"
+
+#: addons/artifacts-defended.wad/defending.lua:233
+#, lua-format
+msgid "No matching artifact building named %s"
+msgstr "Keen passend Künstelk-Schatten-Huus mit de Naam %s"
+
+#: addons/artifacts-defended.wad/defending.lua:239
+msgid "wrong field found"
+msgstr "Falskes Feld funnen"
+
+#: addons/artifacts-defended.wad/defending.lua:269
+#, lua-format
+msgid "The player %s has no artifacts to defend."
+msgstr "De Speler %s hett keene künstelk Schatten tum Verteidigen."
+
+#: addons/artifacts-defended.wad/defending.lua:271
+msgid "No artifacts"
+msgstr "Keene künstelk Schatten"
+
+#: addons/artifacts-defended.wad/defending.lua:297
+msgid "could not place normal artifact (1x)"
+msgstr "Kunn keen normaal künstelk Schatten hensetten (1x)"
+
+#: addons/artifacts-defended.wad/defending.lua:365
+msgid "Several players configured for defending:"
+msgstr "Mennig Spelers tum Verteidigen instellt:"
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/artifacts-defended.wad/defending.lua:421
+msgid "This (ai) player will defend the artifacts."
+msgstr "Deeser (künstelk) Speler word de künstelk Schatten verteidigen."
+
+#. TRANSLATORS: This is the tooltip for the starting condition
+#: addons/artifacts-defended.wad/defending.lua:423
+msgid "Set the tribe to random for finding out in game what it will be."
+msgstr ""
+"Sett dat Volk up »Tofällig«, um im Speel uttofinnen, wat ’t wesen word."
+
+#: addons/artifacts-defended.wad/defending.lua:424
+msgid "Only for ai player as nothing can be done."
+msgstr "Blots för künstelk Speler, denn nix kann daan worden."
+
+#: addons/artifacts-defended.wad/defending.lua:425
+msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
+msgstr ""
+"’t word anraden, de künstelk Speler up »keen künstelk Speler« to setten, "
+"daarmit he keene Soldaten wegstüürt."
+
+#: addons/artifacts-defended.wad/defending.lua:426
+msgid ""
+"On maps with artifacts not reachable by a warrior, some artifacts will not "
+"be conquerable."
+msgstr ""
+"Up Kaarten mit künstelk Schatten, waar keene Soldaten henkomen könen, könen "
+"eenige künstelk Schatten nich innohmen worden."
+
+#: addons/artifacts-defended.wad/defending.lua:436
+#, lua-format
+msgid "Player %s defends artifacts and has aditionally another start position"
+msgstr ""
+"Speler %s verteidigt künstelk Schatten un hett daarto ok eene anner "
+"Anfangsstee"
+
+#: screenshots/artifacts-defended.wad/descriptions:3
+msgid "found artifact"
+msgstr "Künstelk Schatten funnen"
+
+#: screenshots/artifacts-defended.wad/descriptions:4
+msgid "attack artifact"
+msgstr "Künstelk Schatten angriepen"
+
+#: screenshots/artifacts-defended.wad/descriptions:5
+msgid "conquered artifact"
+msgstr "Künstelk Schatten innohmen"

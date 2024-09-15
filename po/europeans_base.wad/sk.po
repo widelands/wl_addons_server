@@ -1,0 +1,3149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-15 03:15+0200\n"
+"PO-Revision-Date: 2024-05-28 08:03+0000\n"
+"Language-Team: Slovak (https://app.transifex.com/widelands/teams/35159/sk/)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
+">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#: addons/europeans_base.wad/addon:2
+msgid "Europeans Tribe (Base Addon)"
+msgstr ""
+
+#: addons/europeans_base.wad/addon:3
+msgid ""
+"Contains basic object definitions and graphics for the Europeans and their "
+"other addons. It uses buildings, workers and some wares from other tribes, "
+"until own graphics are available. It must be in front of the main addon in "
+"the list and must be activated for the other addons to work!"
+msgstr ""
+
+#: addons/europeans_base.wad/immovables/cottonfield/medium/init.lua:9
+msgid "Cotton Field (medium)"
+msgstr ""
+
+#: addons/europeans_base.wad/immovables/cottonfield/ripe/init.lua:9
+msgid "Cotton Field (ripe)"
+msgstr ""
+
+#: addons/europeans_base.wad/immovables/cottonfield/small/init.lua:9
+msgid "Cotton Field (small)"
+msgstr ""
+
+#: addons/europeans_base.wad/immovables/cottonfield/tiny/init.lua:9
+msgid "Cotton Field (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_base.wad/immovables/pond/dry/init.lua:8
+msgctxt "immovable"
+msgid "Dry Pond"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_base.wad/immovables/pond/with_water/init.lua:8
+msgctxt "immovable"
+msgid "Pond with water"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_base.wad/immovables/reedfield/medium/init.lua:8
+msgctxt "immovable"
+msgid "Reed Field (medium)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_base.wad/immovables/reedfield/ripe/init.lua:8
+msgctxt "immovable"
+msgid "Reed Field (ripe)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_base.wad/immovables/reedfield/small/init.lua:8
+msgctxt "immovable"
+msgid "Reed Field (small)"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_base.wad/immovables/reedfield/tiny/init.lua:8
+msgctxt "immovable"
+msgid "Reed Field (tiny)"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_coal_1/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Coal"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_coal_2/init.lua:8
+msgctxt "resource_indicator"
+msgid "A Lot of Coal"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_gold_1/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Gold"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_gold_2/init.lua:8
+msgctxt "resource_indicator"
+msgid "A Lot of Gold"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_iron_1/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Iron"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_iron_2/init.lua:8
+msgctxt "resource_indicator"
+msgid "A Lot of Iron"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_none/init.lua:8
+msgctxt "resource_indicator"
+msgid "No Resources"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_stones_1/init.lua:8
+msgctxt "resource_indicator"
+msgid "Some Crystals"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_stones_2/init.lua:8
+msgctxt "resource_indicator"
+msgid "A Lot of Crystals"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/resi_water/init.lua:8
+msgctxt "resource_indicator"
+msgid "Water"
+msgstr ""
+
+#. TRANSLATORS: This is an immovable name used in lists of immovables
+#: addons/europeans_base.wad/immovables/shipconstruction_europeans/init.lua:8
+msgctxt "immovable"
+msgid "Ship Under Construction"
+msgstr ""
+
+#. TRANSLATORS: This is a resource name used in lists of resources
+#: addons/europeans_base.wad/immovables/trade_pole/init.lua:8
+msgctxt "immovable"
+msgid "Trade Pole"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: addons/europeans_base.wad/immovables/trees/rubber/mature/black/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/mature/desert/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/mature/green/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/mature/winter/init.lua:11
+msgid "Rubber Tree (Mature)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: addons/europeans_base.wad/immovables/trees/rubber/old/black/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/old/desert/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/old/green/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/old/winter/init.lua:11
+msgid "Rubber Tree (Old)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: addons/europeans_base.wad/immovables/trees/rubber/old/black/init.lua:13
+#: addons/europeans_base.wad/immovables/trees/rubber/old/desert/init.lua:13
+#: addons/europeans_base.wad/immovables/trees/rubber/old/green/init.lua:13
+#: addons/europeans_base.wad/immovables/trees/rubber/old/winter/init.lua:13
+msgid "Rubber Tree"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: addons/europeans_base.wad/immovables/trees/rubber/pole/black/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/pole/desert/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/pole/green/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/pole/winter/init.lua:11
+msgid "Rubber Tree (Pole)"
+msgstr ""
+
+#. TRANSLATORS:  This is an Amazon rare tree.
+#: addons/europeans_base.wad/immovables/trees/rubber/sapling/black/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/sapling/desert/init.lua:12
+#: addons/europeans_base.wad/immovables/trees/rubber/sapling/green/init.lua:11
+#: addons/europeans_base.wad/immovables/trees/rubber/sapling/winter/init.lua:11
+msgid "Rubber Tree (Sapling)"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Barrier"
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:76
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your barrier."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:78
+msgctxt "europeans_building"
+msgid "Your barrier discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:80
+msgctxt "europeans_building"
+msgid "Your barrier is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:82
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the barrier."
+msgstr ""
+
+#. TRANSLATORS: Message sent by a Barbarian military site
+#: addons/europeans_base.wad/militarysites/barrier_basic/init.lua:84
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the barrier."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Guardhall"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:48
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:51
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your outpost."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:50
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:53
+msgctxt "europeans_building"
+msgid "Your outpost discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:52
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:55
+msgctxt "europeans_building"
+msgid "Your outpost is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:54
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:57
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the outpost."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/barrier_level_1/init.lua:56
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:59
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the outpost."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/barrier_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Outpost"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Barrier"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:34
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your advanced barrier."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:36
+msgctxt "europeans_building"
+msgid "Your advanced barrier discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:38
+msgctxt "europeans_building"
+msgid "Your advanced barrier is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:40
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the advanced barrier."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Empire military site
+#: addons/europeans_base.wad/militarysites/barrier_level_3/init.lua:42
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the advanced barrier."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Fortress"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:75
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:63
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:48
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your castle."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:77
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:65
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:50
+msgctxt "europeans_building"
+msgid "Your castle discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:79
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:67
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:52
+msgctxt "europeans_building"
+msgid "Your castle is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:81
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:69
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:54
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the castle."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_basic/init.lua:83
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:71
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:56
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the castle."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/castle_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Citadel"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/castle_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Castle"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/castle_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Fortress"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_3/init.lua:57
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your fortress."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_3/init.lua:59
+msgctxt "europeans_building"
+msgid "Your fortress discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_3/init.lua:61
+msgctxt "europeans_building"
+msgid "Your fortress is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_3/init.lua:63
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the fortress."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_3/init.lua:65
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the fortress."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/castle_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Castle"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_4/init.lua:34
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your advanced castle."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_4/init.lua:36
+msgctxt "europeans_building"
+msgid "Your advanced castle discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_4/init.lua:38
+msgctxt "europeans_building"
+msgid "Your advanced castle is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_4/init.lua:40
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the advanced castle."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/castle_level_4/init.lua:42
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the advanced castle."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/headquarters/init.lua:8
+msgctxt "europeans_building"
+msgid "Headquarters"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/port/init.lua:8
+msgctxt "europeans_building"
+msgid "Port"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/port_big/init.lua:8
+msgctxt "europeans_building"
+msgid "Big Port"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/scouts_house_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Scout’s House"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
+#: addons/europeans_base.wad/militarysites/scouts_house_advanced/init.lua:48
+#: addons/europeans_base.wad/militarysites/scouts_house_advanced/init.lua:63
+msgid "scouting"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/scouts_house_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Scouts House"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
+#: addons/europeans_base.wad/militarysites/scouts_house_basic/init.lua:84
+#: addons/europeans_base.wad/militarysites/scouts_house_basic/init.lua:95
+msgctxt "europeans_building"
+msgid "scouting"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Sentry"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:76
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:48
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your guardhouse."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:78
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:50
+msgctxt "europeans_building"
+msgid "Your guardhouse discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:80
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:52
+msgctxt "europeans_building"
+msgid "Your guardhouse is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:82
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:54
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the guardhouse."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_basic/init.lua:84
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:56
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the guardhouse."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/sentry_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Guardhouse"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Small Tower"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:48
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your small tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:50
+msgctxt "europeans_building"
+msgid "Your small tower discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:52
+msgctxt "europeans_building"
+msgid "Your small tower is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:54
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the small tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_2/init.lua:56
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the small tower."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Sentry"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:34
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your sentry."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:36
+msgctxt "europeans_building"
+msgid "Your sentry discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:38
+msgctxt "europeans_building"
+msgid "Your sentry is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:40
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the sentry."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/sentry_level_3/init.lua:42
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the sentry."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Tower"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:76
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your medium tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:78
+msgctxt "europeans_building"
+msgid "Your medium tower discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:80
+msgctxt "europeans_building"
+msgid "Your medium tower is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:82
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the medium tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_basic/init.lua:84
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the medium tower."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Medium Tower"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:48
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:48
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your high tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:50
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:50
+msgctxt "europeans_building"
+msgid "Your high tower discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:52
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:52
+msgctxt "europeans_building"
+msgid "Your high tower is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:54
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:54
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the high tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_1/init.lua:56
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:56
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the high tower."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "High Tower"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Tower"
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:40
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:57
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:57
+#: addons/europeans_base.wad/militarysites/tower_level_6/init.lua:40
+msgctxt "europeans_building"
+msgid "Your soldiers have occupied your advanced tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:42
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:59
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:59
+#: addons/europeans_base.wad/militarysites/tower_level_6/init.lua:42
+msgctxt "europeans_building"
+msgid "Your advanced tower discovered an aggressor."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:44
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:61
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:61
+#: addons/europeans_base.wad/militarysites/tower_level_6/init.lua:44
+msgctxt "europeans_building"
+msgid "Your advanced tower is under attack."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:46
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:63
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:63
+#: addons/europeans_base.wad/militarysites/tower_level_6/init.lua:46
+msgctxt "europeans_building"
+msgid "The enemy defeated your soldiers at the advanced tower."
+msgstr ""
+
+#. TRANSLATORS: Message sent by an Europeans military site
+#: addons/europeans_base.wad/militarysites/tower_level_3/init.lua:48
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:65
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:65
+#: addons/europeans_base.wad/militarysites/tower_level_6/init.lua:48
+msgctxt "europeans_building"
+msgid "Your soldiers defeated the enemy at the advanced tower."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Super Tower"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_5/init.lua:8
+msgctxt "europeans_building"
+msgid "Ultra Tower"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/tower_level_6/init.lua:8
+msgctxt "europeans_building"
+msgid "Hyper Tower"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/militarysites/warehouse/init.lua:8
+msgctxt "europeans_building"
+msgid "Warehouse"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/charcoal_kiln_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Charcoal Kiln"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#: addons/europeans_base.wad/productionsites/charcoal_kiln_advanced/init.lua:49
+#: addons/europeans_base.wad/productionsites/charcoal_kiln_basic/init.lua:73
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_advanced/init.lua:45
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_basic/init.lua:68
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:64
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:85
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:36
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:67
+#: addons/europeans_base.wad/productionsites/sawmill_advanced/init.lua:49
+#: addons/europeans_base.wad/productionsites/sawmill_basic/init.lua:80
+#: addons/europeans_base.wad/productionsites/smelting_works_advanced/init.lua:56
+#: addons/europeans_base.wad/productionsites/smelting_works_basic/init.lua:66
+#: addons/europeans_base.wad/productionsites/stonemasons_house_advanced/init.lua:52
+#: addons/europeans_base.wad/productionsites/stonemasons_house_basic/init.lua:67
+#: addons/europeans_base.wad/productionsites/tree_nursery_advanced/init.lua:41
+#: addons/europeans_base.wad/productionsites/tree_nursery_basic/init.lua:75
+#: addons/europeans_base.wad/productionsites/well_basic/init.lua:68
+#: addons/europeans_base.wad/productionsites/well_level_1/init.lua:60
+#: addons/europeans_base.wad/productionsites/well_level_2/init.lua:48
+#: addons/europeans_base.wad/productionsites/well_level_3/init.lua:53
+#: addons/europeans_base.wad/productionsites/well_level_4/init.lua:57
+#: addons/europeans_base.wad/productionsites/well_level_5/init.lua:59
+#: addons/europeans_base.wad/productionsites/well_level_6/init.lua:38
+#: addons/europeans_base.wad/recruitementsites/trainingscamp_advanced/init.lua:56
+#: addons/europeans_base.wad/recruitementsites/trainingscamp_basic/init.lua:87
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:83
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:117
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:65
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:99
+msgid "working"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start producing coal because ...
+#: addons/europeans_base.wad/productionsites/charcoal_kiln_advanced/init.lua:59
+#: addons/europeans_base.wad/productionsites/charcoal_kiln_advanced/init.lua:69
+#: addons/europeans_base.wad/productionsites/charcoal_kiln_basic/init.lua:81
+msgctxt "europeans_building"
+msgid "producing coal"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/charcoal_kiln_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Charcoal Kiln"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/coalmine_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Coal Mine"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining because ...
+#: addons/europeans_base.wad/productionsites/coalmine_basic/init.lua:67
+#: addons/europeans_base.wad/productionsites/coalmine_level_1/init.lua:60
+#: addons/europeans_base.wad/productionsites/coalmine_level_2/init.lua:61
+#: addons/europeans_base.wad/productionsites/coalmine_level_3/init.lua:60
+#: addons/europeans_base.wad/productionsites/coalmine_level_4/init.lua:60
+#: addons/europeans_base.wad/productionsites/coalmine_level_5/init.lua:40
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:69
+#: addons/europeans_base.wad/productionsites/goldmine_level_1/init.lua:61
+#: addons/europeans_base.wad/productionsites/goldmine_level_2/init.lua:62
+#: addons/europeans_base.wad/productionsites/goldmine_level_3/init.lua:61
+#: addons/europeans_base.wad/productionsites/goldmine_level_4/init.lua:61
+#: addons/europeans_base.wad/productionsites/goldmine_level_5/init.lua:40
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:69
+#: addons/europeans_base.wad/productionsites/ironmine_level_1/init.lua:61
+#: addons/europeans_base.wad/productionsites/ironmine_level_2/init.lua:62
+#: addons/europeans_base.wad/productionsites/ironmine_level_3/init.lua:61
+#: addons/europeans_base.wad/productionsites/ironmine_level_4/init.lua:61
+#: addons/europeans_base.wad/productionsites/ironmine_level_5/init.lua:40
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:63
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:93
+msgctxt "europeans_building"
+msgid "mining"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/coalmine_basic/init.lua:89
+#: addons/europeans_base.wad/productionsites/coalmine_level_1/init.lua:81
+#: addons/europeans_base.wad/productionsites/coalmine_level_2/init.lua:85
+#: addons/europeans_base.wad/productionsites/coalmine_level_3/init.lua:88
+#: addons/europeans_base.wad/productionsites/coalmine_level_4/init.lua:90
+#: addons/europeans_base.wad/productionsites/coalmine_level_5/init.lua:71
+msgctxt "europeans_building"
+msgid "mining coal"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining granite because ...
+#: addons/europeans_base.wad/productionsites/coalmine_basic/init.lua:97
+#: addons/europeans_base.wad/productionsites/coalmine_basic/init.lua:105
+#: addons/europeans_base.wad/productionsites/coalmine_level_1/init.lua:89
+#: addons/europeans_base.wad/productionsites/coalmine_level_2/init.lua:93
+#: addons/europeans_base.wad/productionsites/coalmine_level_3/init.lua:96
+#: addons/europeans_base.wad/productionsites/coalmine_level_4/init.lua:98
+#: addons/europeans_base.wad/productionsites/coalmine_level_5/init.lua:79
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:99
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:107
+#: addons/europeans_base.wad/productionsites/goldmine_level_1/init.lua:90
+#: addons/europeans_base.wad/productionsites/goldmine_level_2/init.lua:95
+#: addons/europeans_base.wad/productionsites/goldmine_level_3/init.lua:99
+#: addons/europeans_base.wad/productionsites/goldmine_level_4/init.lua:101
+#: addons/europeans_base.wad/productionsites/goldmine_level_5/init.lua:81
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:99
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:107
+#: addons/europeans_base.wad/productionsites/ironmine_level_1/init.lua:90
+#: addons/europeans_base.wad/productionsites/ironmine_level_2/init.lua:95
+#: addons/europeans_base.wad/productionsites/ironmine_level_3/init.lua:99
+#: addons/europeans_base.wad/productionsites/ironmine_level_4/init.lua:101
+#: addons/europeans_base.wad/productionsites/ironmine_level_5/init.lua:81
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:95
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:122
+msgctxt "europeans_building"
+msgid "mining granite"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining diamond because ...
+#: addons/europeans_base.wad/productionsites/coalmine_basic/init.lua:115
+#: addons/europeans_base.wad/productionsites/coalmine_level_1/init.lua:97
+#: addons/europeans_base.wad/productionsites/coalmine_level_2/init.lua:101
+#: addons/europeans_base.wad/productionsites/coalmine_level_3/init.lua:104
+#: addons/europeans_base.wad/productionsites/coalmine_level_4/init.lua:106
+#: addons/europeans_base.wad/productionsites/coalmine_level_5/init.lua:87
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:116
+msgctxt "europeans_building"
+msgid "mining diamond"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/coalmine_basic/init.lua:133
+#: addons/europeans_base.wad/productionsites/coalmine_level_1/init.lua:115
+#: addons/europeans_base.wad/productionsites/coalmine_level_2/init.lua:119
+#: addons/europeans_base.wad/productionsites/coalmine_level_3/init.lua:122
+#: addons/europeans_base.wad/productionsites/coalmine_level_4/init.lua:124
+#: addons/europeans_base.wad/productionsites/coalmine_level_5/init.lua:105
+msgid "No Coal"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/coalmine_basic/init.lua:134
+#: addons/europeans_base.wad/productionsites/coalmine_level_1/init.lua:116
+#: addons/europeans_base.wad/productionsites/coalmine_level_2/init.lua:120
+#: addons/europeans_base.wad/productionsites/coalmine_level_3/init.lua:123
+#: addons/europeans_base.wad/productionsites/coalmine_level_4/init.lua:125
+#: addons/europeans_base.wad/productionsites/coalmine_level_5/init.lua:106
+msgid "Main Coal Vein Exhausted"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/coalmine_basic/init.lua:136
+#: addons/europeans_base.wad/productionsites/coalmine_level_1/init.lua:118
+#: addons/europeans_base.wad/productionsites/coalmine_level_2/init.lua:122
+#: addons/europeans_base.wad/productionsites/coalmine_level_3/init.lua:125
+#: addons/europeans_base.wad/productionsites/coalmine_level_4/init.lua:127
+msgctxt "europeans_building"
+msgid ""
+"This coal mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/coalmine_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Coal Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/coalmine_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Coal Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/coalmine_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Coal Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/coalmine_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Coal Mine Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/coalmine_level_5/init.lua:8
+msgctxt "europeans_building"
+msgid "Coal Mine Level 5"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/coalmine_level_5/init.lua:108
+msgctxt "europeans_building"
+msgid ""
+"This coal mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Gold Mine"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:91
+#: addons/europeans_base.wad/productionsites/goldmine_level_1/init.lua:82
+#: addons/europeans_base.wad/productionsites/goldmine_level_2/init.lua:87
+#: addons/europeans_base.wad/productionsites/goldmine_level_3/init.lua:91
+#: addons/europeans_base.wad/productionsites/goldmine_level_4/init.lua:93
+#: addons/europeans_base.wad/productionsites/goldmine_level_5/init.lua:73
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:91
+#: addons/europeans_base.wad/productionsites/ironmine_level_1/init.lua:82
+#: addons/europeans_base.wad/productionsites/ironmine_level_2/init.lua:87
+#: addons/europeans_base.wad/productionsites/ironmine_level_3/init.lua:91
+#: addons/europeans_base.wad/productionsites/ironmine_level_4/init.lua:93
+#: addons/europeans_base.wad/productionsites/ironmine_level_5/init.lua:73
+msgctxt "europeans_building"
+msgid "mining ore"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining marble because ...
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:117
+#: addons/europeans_base.wad/productionsites/goldmine_level_1/init.lua:98
+#: addons/europeans_base.wad/productionsites/goldmine_level_2/init.lua:103
+#: addons/europeans_base.wad/productionsites/goldmine_level_3/init.lua:107
+#: addons/europeans_base.wad/productionsites/goldmine_level_4/init.lua:109
+#: addons/europeans_base.wad/productionsites/goldmine_level_5/init.lua:89
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:117
+#: addons/europeans_base.wad/productionsites/ironmine_level_1/init.lua:98
+#: addons/europeans_base.wad/productionsites/ironmine_level_2/init.lua:103
+#: addons/europeans_base.wad/productionsites/ironmine_level_3/init.lua:107
+#: addons/europeans_base.wad/productionsites/ironmine_level_4/init.lua:109
+#: addons/europeans_base.wad/productionsites/ironmine_level_5/init.lua:89
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:102
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:129
+msgctxt "europeans_building"
+msgid "mining marble"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining quartz because ...
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:125
+#: addons/europeans_base.wad/productionsites/goldmine_level_1/init.lua:106
+#: addons/europeans_base.wad/productionsites/goldmine_level_2/init.lua:111
+#: addons/europeans_base.wad/productionsites/goldmine_level_3/init.lua:115
+#: addons/europeans_base.wad/productionsites/goldmine_level_4/init.lua:117
+#: addons/europeans_base.wad/productionsites/goldmine_level_5/init.lua:97
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:125
+#: addons/europeans_base.wad/productionsites/ironmine_level_1/init.lua:106
+#: addons/europeans_base.wad/productionsites/ironmine_level_2/init.lua:111
+#: addons/europeans_base.wad/productionsites/ironmine_level_3/init.lua:115
+#: addons/europeans_base.wad/productionsites/ironmine_level_4/init.lua:117
+#: addons/europeans_base.wad/productionsites/ironmine_level_5/init.lua:97
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:109
+msgctxt "europeans_building"
+msgid "mining quartz"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:143
+#: addons/europeans_base.wad/productionsites/goldmine_level_1/init.lua:124
+#: addons/europeans_base.wad/productionsites/goldmine_level_2/init.lua:129
+#: addons/europeans_base.wad/productionsites/goldmine_level_3/init.lua:133
+#: addons/europeans_base.wad/productionsites/goldmine_level_4/init.lua:135
+#: addons/europeans_base.wad/productionsites/goldmine_level_5/init.lua:115
+msgid "No Gold"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:144
+#: addons/europeans_base.wad/productionsites/goldmine_level_1/init.lua:125
+#: addons/europeans_base.wad/productionsites/goldmine_level_2/init.lua:130
+#: addons/europeans_base.wad/productionsites/goldmine_level_3/init.lua:134
+#: addons/europeans_base.wad/productionsites/goldmine_level_4/init.lua:136
+#: addons/europeans_base.wad/productionsites/goldmine_level_5/init.lua:116
+msgid "Main Gold Vein Exhausted"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/goldmine_basic/init.lua:146
+#: addons/europeans_base.wad/productionsites/goldmine_level_1/init.lua:127
+#: addons/europeans_base.wad/productionsites/goldmine_level_2/init.lua:132
+#: addons/europeans_base.wad/productionsites/goldmine_level_3/init.lua:136
+#: addons/europeans_base.wad/productionsites/goldmine_level_4/init.lua:138
+msgctxt "europeans_building"
+msgid ""
+"This gold mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/goldmine_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/goldmine_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/goldmine_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/goldmine_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/goldmine_level_5/init.lua:8
+msgctxt "europeans_building"
+msgid "Gold Mine Level 5"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/goldmine_level_5/init.lua:118
+msgctxt "europeans_building"
+msgid ""
+"This gold mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Iron Mine"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:143
+#: addons/europeans_base.wad/productionsites/ironmine_level_1/init.lua:124
+#: addons/europeans_base.wad/productionsites/ironmine_level_2/init.lua:129
+#: addons/europeans_base.wad/productionsites/ironmine_level_3/init.lua:133
+#: addons/europeans_base.wad/productionsites/ironmine_level_4/init.lua:135
+#: addons/europeans_base.wad/productionsites/ironmine_level_5/init.lua:115
+msgid "No Iron"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:144
+#: addons/europeans_base.wad/productionsites/ironmine_level_1/init.lua:125
+#: addons/europeans_base.wad/productionsites/ironmine_level_2/init.lua:130
+#: addons/europeans_base.wad/productionsites/ironmine_level_3/init.lua:134
+#: addons/europeans_base.wad/productionsites/ironmine_level_4/init.lua:136
+#: addons/europeans_base.wad/productionsites/ironmine_level_5/init.lua:116
+msgid "Main Iron Vein Exhausted"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/ironmine_basic/init.lua:146
+#: addons/europeans_base.wad/productionsites/ironmine_level_1/init.lua:127
+#: addons/europeans_base.wad/productionsites/ironmine_level_2/init.lua:132
+#: addons/europeans_base.wad/productionsites/ironmine_level_3/init.lua:136
+#: addons/europeans_base.wad/productionsites/ironmine_level_4/init.lua:138
+msgctxt "europeans_building"
+msgid ""
+"This iron mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider enhancing, dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/ironmine_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/ironmine_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/ironmine_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/ironmine_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 4"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/ironmine_level_5/init.lua:8
+msgctxt "europeans_building"
+msgid "Iron Mine Level 5"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/ironmine_level_5/init.lua:118
+msgctxt "europeans_building"
+msgid ""
+"This iron mine’s main vein is exhausted. Expect strongly diminished returns "
+"on investment. You should consider dismantling or destroying it."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Lumberjack’s House"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_advanced/init.lua:57
+msgctxt "europeans_building"
+msgid "felling trees"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_advanced/init.lua:64
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_basic/init.lua:87
+msgctxt "europeans_building"
+msgid "felling rubber trees"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_advanced/init.lua:73
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_basic/init.lua:96
+msgid "No Trees"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_advanced/init.lua:74
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_basic/init.lua:97
+msgid "Out of Trees"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_advanced/init.lua:75
+msgctxt "europeans_building"
+msgid ""
+"The lumberjack working at this lumberjack’s house can’t find any trees in "
+"his work area. You should consider dismantling or destroying the building or "
+"building a forester’s house."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Lumberjack’s Hut"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_basic/init.lua:80
+msgid "felling trees"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/lumberjacks_house_basic/init.lua:98
+msgctxt "europeans_building"
+msgid ""
+"The lumberjack working at this lumberjack’s hut can’t find any trees in his "
+"work area. You should consider enhancing it to increase its working area or "
+"building a ranger’s hut."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Big Manufactory"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start processing blackwood for input wares because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:77
+msgctxt "europeans_building"
+msgid "processing blackwood to create tools and weapons"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:87
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:110
+msgctxt "europeans_building"
+msgid "making a wooden armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:107
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:134
+msgctxt "europeans_building"
+msgid "making a pair of wooden boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:127
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:158
+msgctxt "europeans_building"
+msgid "making a wooden helmet"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:147
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:182
+msgctxt "europeans_building"
+msgid "forging a wooden spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start processing rubber for input wares because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:167
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:206
+msgctxt "europeans_building"
+msgid "processing rubber to create armor and boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring an armor because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:181
+msgctxt "europeans_building"
+msgid "tailoring a suit of armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring processed armor because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:198
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:236
+msgctxt "europeans_building"
+msgid "tailoring processed armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of chain armor because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:215
+msgctxt "europeans_building"
+msgid "tailoring a suit of chain armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring a suit of advanced armor because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:232
+msgctxt "europeans_building"
+msgid "tailoring a suit of advanced armor"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:249
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:257
+msgctxt "europeans_building"
+msgid "making study boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making swift boots because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:267
+msgctxt "europeans_building"
+msgid "making swift boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making advanced boots because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:285
+msgctxt "europeans_building"
+msgid "making advanced boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start processing metal_alloy for input wares because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:303
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:279
+msgctxt "europeans_building"
+msgid "processing metal_alloy to create tools and weapons"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a basket because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:323
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:295
+msgctxt "europeans_building"
+msgid "making baskets"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a pair of buckets because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:334
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:306
+msgctxt "europeans_building"
+msgid "making buckets"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a felling ax because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:345
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:317
+msgctxt "europeans_building"
+msgid "making felling axes"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a hammer because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:356
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:328
+msgctxt "europeans_building"
+msgid "making hammers"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a pick because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:367
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:339
+msgctxt "europeans_building"
+msgid "making picks"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a saw because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:378
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:350
+msgctxt "europeans_building"
+msgid "making saws"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a scythe because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:389
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:361
+msgctxt "europeans_building"
+msgid "making sycthes"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start making a shovel because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:400
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:372
+msgctxt "europeans_building"
+msgid "making shovels"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a mask because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:411
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:383
+msgctxt "europeans_building"
+msgid "forging a mask"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a steel shield because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:427
+msgctxt "europeans_building"
+msgid "forging a steel shield"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced shield because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:443
+msgctxt "europeans_building"
+msgid "forging an advanced shield"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:459
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:394
+msgctxt "europeans_building"
+msgid "forging an advanced spear"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a broad ax because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:476
+msgctxt "europeans_building"
+msgid "forging a broad ax"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start forging a broadsword because ...
+#: addons/europeans_base.wad/productionsites/manufactory_advanced/init.lua:493
+msgctxt "europeans_building"
+msgid "forging a broadsword"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Big Manufactory"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:100
+msgctxt "europeans_building"
+msgid "processing log to create tools and weapons"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start tailoring basic armor because ...
+#: addons/europeans_base.wad/productionsites/manufactory_basic/init.lua:215
+msgctxt "europeans_building"
+msgid "tailoring basic armor"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Quarry"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying because ...
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:47
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:78
+msgctxt "europeans_building"
+msgid "quarrying"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying granite because ...
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:81
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:108
+msgctxt "europeans_building"
+msgid "quarrying granite"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start quarrying marble because ...
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:88
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:115
+msgctxt "europeans_building"
+msgid "quarrying marble"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:124
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:137
+msgid "No Rocks"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:125
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:138
+msgid "Out of Rocks"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/quarry_advanced/init.lua:126
+msgctxt "europeans_building"
+msgid ""
+"The stonecutter working at this quarry can’t find any stone in his work area."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Quarry"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/quarry_basic/init.lua:139
+msgctxt "europeans_building"
+msgid ""
+"The stonecutter working at this quarry can’t find any rocks in his work "
+"area. You should consider enhancing it to increase its working area."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/sawmill_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Sawmill"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
+#: addons/europeans_base.wad/productionsites/sawmill_advanced/init.lua:59
+#: addons/europeans_base.wad/productionsites/sawmill_basic/init.lua:90
+msgctxt "europeans_building"
+msgid "sawing logs"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start hardening wood because ...
+#: addons/europeans_base.wad/productionsites/sawmill_advanced/init.lua:93
+#: addons/europeans_base.wad/productionsites/sawmill_basic/init.lua:116
+msgctxt "europeans_building"
+msgid "hardening wood"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/sawmill_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Sawmill"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/smelting_works_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Smelting Works"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start recyling metal_alloy because ...
+#: addons/europeans_base.wad/productionsites/smelting_works_advanced/init.lua:68
+msgctxt "europeans_building"
+msgid "recycling metal_alloy"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start smelting ore because ...
+#: addons/europeans_base.wad/productionsites/smelting_works_advanced/init.lua:80
+#: addons/europeans_base.wad/productionsites/smelting_works_basic/init.lua:74
+msgctxt "europeans_building"
+msgid "smelting ore"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/smelting_works_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Smelting Works"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/stonemasons_house_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Stonemason’s House"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
+#: addons/europeans_base.wad/productionsites/stonemasons_house_advanced/init.lua:64
+#: addons/europeans_base.wad/productionsites/stonemasons_house_basic/init.lua:77
+msgctxt "europeans_building"
+msgid "mixing grout"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start burning bricks because ...
+#: addons/europeans_base.wad/productionsites/stonemasons_house_advanced/init.lua:79
+#: addons/europeans_base.wad/productionsites/stonemasons_house_basic/init.lua:91
+msgctxt "europeans_building"
+msgid "burning bricks"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
+#: addons/europeans_base.wad/productionsites/stonemasons_house_advanced/init.lua:94
+msgctxt "europeans_building"
+msgid "sculpting a marble column"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/stonemasons_house_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Lime Kiln"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/tree_nursery_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Tree Nursery"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start planting trees because ...
+#: addons/europeans_base.wad/productionsites/tree_nursery_advanced/init.lua:60
+#: addons/europeans_base.wad/productionsites/tree_nursery_basic/init.lua:90
+msgctxt "europeans_building"
+msgid "planting trees"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start watering because ...
+#: addons/europeans_base.wad/productionsites/tree_nursery_advanced/init.lua:77
+msgctxt "europeans_building"
+msgid "watering trees"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/tree_nursery_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Tree Nursery"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/well_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Well"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining water because ...
+#: addons/europeans_base.wad/productionsites/well_basic/init.lua:80
+#: addons/europeans_base.wad/productionsites/well_level_1/init.lua:72
+#: addons/europeans_base.wad/productionsites/well_level_2/init.lua:62
+#: addons/europeans_base.wad/productionsites/well_level_3/init.lua:67
+#: addons/europeans_base.wad/productionsites/well_level_5/init.lua:73
+#: addons/europeans_base.wad/productionsites/well_level_6/init.lua:52
+msgctxt "europeans_building"
+msgid "mining water"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start idle program because ...
+#. TRANSLATORS: Completed/Skipped/Did not start mining idle program because ...
+#: addons/europeans_base.wad/productionsites/well_basic/init.lua:92
+#: addons/europeans_base.wad/productionsites/well_level_1/init.lua:84
+#: addons/europeans_base.wad/productionsites/well_level_2/init.lua:78
+#: addons/europeans_base.wad/productionsites/well_level_3/init.lua:83
+#: addons/europeans_base.wad/productionsites/well_level_4/init.lua:91
+#: addons/europeans_base.wad/productionsites/well_level_5/init.lua:93
+#: addons/europeans_base.wad/productionsites/well_level_6/init.lua:76
+msgid "idle program"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/well_basic/init.lua:106
+#: addons/europeans_base.wad/productionsites/well_level_1/init.lua:98
+#: addons/europeans_base.wad/productionsites/well_level_2/init.lua:92
+#: addons/europeans_base.wad/productionsites/well_level_3/init.lua:97
+#: addons/europeans_base.wad/productionsites/well_level_4/init.lua:105
+#: addons/europeans_base.wad/productionsites/well_level_5/init.lua:107
+#: addons/europeans_base.wad/productionsites/well_level_6/init.lua:92
+msgid "No Water"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/well_basic/init.lua:107
+#: addons/europeans_base.wad/productionsites/well_level_1/init.lua:99
+#: addons/europeans_base.wad/productionsites/well_level_2/init.lua:93
+#: addons/europeans_base.wad/productionsites/well_level_3/init.lua:98
+#: addons/europeans_base.wad/productionsites/well_level_4/init.lua:106
+#: addons/europeans_base.wad/productionsites/well_level_5/init.lua:108
+#: addons/europeans_base.wad/productionsites/well_level_6/init.lua:93
+msgid "Out of Water"
+msgstr ""
+
+#: addons/europeans_base.wad/productionsites/well_basic/init.lua:108
+#: addons/europeans_base.wad/productionsites/well_level_1/init.lua:100
+#: addons/europeans_base.wad/productionsites/well_level_2/init.lua:94
+#: addons/europeans_base.wad/productionsites/well_level_3/init.lua:99
+#: addons/europeans_base.wad/productionsites/well_level_4/init.lua:107
+#: addons/europeans_base.wad/productionsites/well_level_5/init.lua:109
+#: addons/europeans_base.wad/productionsites/well_level_6/init.lua:94
+msgctxt "europeans_building"
+msgid "The carrier working at this well can’t find any water in his well."
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/well_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Well Level 1"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/well_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Well Level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/well_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Well Level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/well_level_4/init.lua:8
+msgctxt "europeans_building"
+msgid "Well Level 4"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start mining water because ...
+#: addons/europeans_base.wad/productionsites/well_level_4/init.lua:71
+msgid "mining water"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/well_level_5/init.lua:8
+msgctxt "europeans_building"
+msgid "Well Level 5"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/productionsites/well_level_6/init.lua:8
+msgctxt "europeans_building"
+msgid "Big Well"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/recruitementsites/trainingscamp_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Trainingscamp"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
+#: addons/europeans_base.wad/recruitementsites/trainingscamp_advanced/init.lua:64
+#: addons/europeans_base.wad/recruitementsites/trainingscamp_basic/init.lua:95
+msgctxt "europeans_building"
+msgid "recruiting soldier"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/recruitementsites/trainingscamp_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Trainingscamp"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Ferry Yard"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start constructing a ferry because ...
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:93
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:75
+msgctxt "europeans_building"
+msgid "constructing a ferry"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start constructing a ship because ...
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:106
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:126
+#: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:159
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:88
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:108
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:141
+msgctxt "europeans_building"
+msgid "constructing a ship"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Shipyard"
+msgstr ""
+
+#. TRANSLATORS: This is the Europeans' ship's name used in lists of units
+#: addons/europeans_base.wad/ships/europeans/init.lua:83
+msgctxt "europeans_ship"
+msgid "Ship"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:123
+msgctxt "shipname"
+msgid "Achlys"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:124
+msgctxt "shipname"
+msgid "Aether"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:125
+msgctxt "shipname"
+msgid "Aion"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:126
+msgctxt "shipname"
+msgid "Alcyoneus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:127
+msgctxt "shipname"
+msgid "Aloadae"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:128
+msgctxt "shipname"
+msgid "Ananke"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:129
+msgctxt "shipname"
+msgid "Anax"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:130
+msgctxt "shipname"
+msgid "Antaeus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:131
+msgctxt "shipname"
+msgid "Antiphates"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:132
+msgctxt "shipname"
+msgid "Anytos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:133
+msgctxt "shipname"
+msgid "Aphrodite"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:134
+msgctxt "shipname"
+msgid "Apollo"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:135
+msgctxt "shipname"
+msgid "Ares"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:136
+msgctxt "shipname"
+msgid "Argus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:137
+msgctxt "shipname"
+msgid "Artemis"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:138
+msgctxt "shipname"
+msgid "Asteria"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:139
+msgctxt "shipname"
+msgid "Asterius"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:140
+msgctxt "shipname"
+msgid "Astraeus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:141
+msgctxt "shipname"
+msgid "Athena"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:142
+msgctxt "shipname"
+msgid "Atlas"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:143
+msgctxt "shipname"
+msgid "Bacchus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:144
+msgctxt "shipname"
+msgid "Bellona"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:145
+msgctxt "shipname"
+msgid "Bona Dea"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:146
+msgctxt "shipname"
+msgid "Cacus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:147
+msgctxt "shipname"
+msgid "Callisto"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:148
+msgctxt "shipname"
+msgid "Carmentis"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:149
+msgctxt "shipname"
+msgid "Ceres"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:150
+msgctxt "shipname"
+msgid "Chaos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:151
+msgctxt "shipname"
+msgid "Charon"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:152
+msgctxt "shipname"
+msgid "Chronos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:153
+msgctxt "shipname"
+msgid "Chthonius"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:154
+msgctxt "shipname"
+msgid "Coeus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:155
+msgctxt "shipname"
+msgid "Crius"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:156
+msgctxt "shipname"
+msgid "Cronus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:157
+msgctxt "shipname"
+msgid "Cyclopes"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:158
+msgctxt "shipname"
+msgid "Damysus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:159
+msgctxt "shipname"
+msgid "Demeter"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:160
+msgctxt "shipname"
+msgid "Diana"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:161
+msgctxt "shipname"
+msgid "Dione"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:162
+msgctxt "shipname"
+msgid "Dionysus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:163
+msgctxt "shipname"
+msgid "Enceladus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:164
+msgctxt "shipname"
+msgid "Eos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:165
+msgctxt "shipname"
+msgid "Epimetheus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:166
+msgctxt "shipname"
+msgid "Erebus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:167
+msgctxt "shipname"
+msgid "Eros"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:168
+msgctxt "shipname"
+msgid "Europa"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:169
+msgctxt "shipname"
+msgid "Falacer"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:170
+msgctxt "shipname"
+msgid "Fauna"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:171
+msgctxt "shipname"
+msgid "Flora"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:172
+msgctxt "shipname"
+msgid "Fortuna"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:173
+msgctxt "shipname"
+msgid "Freyr"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:174
+msgctxt "shipname"
+msgid "Furrina"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:175
+msgctxt "shipname"
+msgid "Gaia"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:176
+msgctxt "shipname"
+msgid "Ganymede"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:177
+msgctxt "shipname"
+msgid "Gegenees"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:178
+msgctxt "shipname"
+msgid "Genius"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:179
+msgctxt "shipname"
+msgid "Geryon"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:180
+msgctxt "shipname"
+msgid "Hades"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:181
+msgctxt "shipname"
+msgid "Helios"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:182
+msgctxt "shipname"
+msgid "Hemera"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:183
+msgctxt "shipname"
+msgid "Hephaestus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:184
+msgctxt "shipname"
+msgid "Hera"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:185
+msgctxt "shipname"
+msgid "Hermes"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:186
+msgctxt "shipname"
+msgid "Hestia"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:187
+msgctxt "shipname"
+msgid "Hyperion"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:188
+msgctxt "shipname"
+msgid "Iapetus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:189
+msgctxt "shipname"
+msgid "Io"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:190
+msgctxt "shipname"
+msgid "Janus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:191
+msgctxt "shipname"
+msgid "Juno"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:192
+msgctxt "shipname"
+msgid "Jupiter"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:193
+msgctxt "shipname"
+msgid "Lelantos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:194
+msgctxt "shipname"
+msgid "Leto"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:195
+msgctxt "shipname"
+msgid "Liber"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:196
+msgctxt "shipname"
+msgid "Luna"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:197
+msgctxt "shipname"
+msgid "Mars"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:198
+msgctxt "shipname"
+msgid "Menoetius"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:199
+msgctxt "shipname"
+msgid "Mercury"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:200
+msgctxt "shipname"
+msgid "Metis"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:201
+msgctxt "shipname"
+msgid "Mimas"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:202
+msgctxt "shipname"
+msgid "Minerva"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:203
+msgctxt "shipname"
+msgid "Mnemosyne"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:204
+msgctxt "shipname"
+msgid "Neptune"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:205
+msgctxt "shipname"
+msgid "Nesoi"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:206
+msgctxt "shipname"
+msgid "Nyx"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:207
+msgctxt "shipname"
+msgid "Oceanus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:208
+msgctxt "shipname"
+msgid "Odin"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:209
+msgctxt "shipname"
+msgid "Orcus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:210
+msgctxt "shipname"
+msgid "Orion"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:211
+msgctxt "shipname"
+msgid "Ourea"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:212
+msgctxt "shipname"
+msgid "Palatua"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:213
+msgctxt "shipname"
+msgid "Pallas"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:214
+msgctxt "shipname"
+msgid "Persephone"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:215
+msgctxt "shipname"
+msgid "Perses"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:216
+msgctxt "shipname"
+msgid "Phanes"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:217
+msgctxt "shipname"
+msgid "Phoebe"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:218
+msgctxt "shipname"
+msgid "Picolous"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:219
+msgctxt "shipname"
+msgid "Pluto"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:220
+msgctxt "shipname"
+msgid "Polybotes"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:221
+msgctxt "shipname"
+msgid "Pomona"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:222
+msgctxt "shipname"
+msgid "Pontus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:223
+msgctxt "shipname"
+msgid "Porphyrion"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:224
+msgctxt "shipname"
+msgid "Portunus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:225
+msgctxt "shipname"
+msgid "Poseidon"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:226
+msgctxt "shipname"
+msgid "Prometheus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:227
+msgctxt "shipname"
+msgid "Proteus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:228
+msgctxt "shipname"
+msgid "Quirinus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:229
+msgctxt "shipname"
+msgid "Rhea"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:230
+msgctxt "shipname"
+msgid "Saturn"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:231
+msgctxt "shipname"
+msgid "Selene"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:232
+msgctxt "shipname"
+msgid "Sol"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:233
+msgctxt "shipname"
+msgid "Styx"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:234
+msgctxt "shipname"
+msgid "Syceus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:235
+msgctxt "shipname"
+msgid "Talos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:236
+msgctxt "shipname"
+msgid "Tartarus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:237
+msgctxt "shipname"
+msgid "Tellus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:238
+msgctxt "shipname"
+msgid "Tethys"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:239
+msgctxt "shipname"
+msgid "Thalassa"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:240
+msgctxt "shipname"
+msgid "Theia"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:241
+msgctxt "shipname"
+msgid "Themis"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:242
+msgctxt "shipname"
+msgid "Thoas"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:243
+msgctxt "shipname"
+msgid "Thor"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:244
+msgctxt "shipname"
+msgid "Titan"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:245
+msgctxt "shipname"
+msgid "Tityos"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:246
+msgctxt "shipname"
+msgid "Triton"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:247
+msgctxt "shipname"
+msgid "Typhon"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:248
+msgctxt "shipname"
+msgid "Uranus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:249
+msgctxt "shipname"
+msgid "Venus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:250
+msgctxt "shipname"
+msgid "Vesta"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:251
+msgctxt "shipname"
+msgid "Volturnus"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:252
+msgctxt "shipname"
+msgid "Vulcan"
+msgstr ""
+
+#: addons/europeans_base.wad/ships/europeans/init.lua:253
+msgctxt "shipname"
+msgid "Zeus"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Battle Arena"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:95
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:91
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:82
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:53
+msgid "sleeping"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start pausing training because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:104
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:100
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:91
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:62
+msgctxt "europeans_building"
+msgid "pausing training because lack of weapons, armor and boots"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:112
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:109
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:101
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:72
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:123
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:132
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:136
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:107
+msgctxt "europeans_building"
+msgid "upgrading soldier attack from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:134
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:155
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:171
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:142
+msgctxt "europeans_building"
+msgid "upgrading soldier defense from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:145
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:178
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:206
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:177
+msgctxt "europeans_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr ""
+
+#. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
+#: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:161
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:206
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:246
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:217
+msgctxt "europeans_building"
+msgid "No soldier to train!"
+msgstr ""
+
+#. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
+#: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:163
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:208
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:248
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:219
+msgctxt "europeans_building"
+msgid "No soldier found for this training level!"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:8
+msgctxt "europeans_building"
+msgid "Normal Battle Arena"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:120
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:112
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:83
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:143
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:147
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:118
+msgctxt "europeans_building"
+msgid "upgrading soldier attack from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:166
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:182
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:153
+msgctxt "europeans_building"
+msgid "upgrading soldier defense from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_level_1/init.lua:189
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:217
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:188
+msgctxt "europeans_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Battle Arena"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:124
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:95
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:159
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:130
+msgctxt "europeans_building"
+msgid "upgrading soldier attack from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:194
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:165
+msgctxt "europeans_building"
+msgid "upgrading soldier defense from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_base.wad/trainingsites/battlearena_level_2/init.lua:229
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:200
+msgctxt "europeans_building"
+msgid "upgrading soldier evade from level 2 to level 3"
+msgstr ""
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/trainingsites/battlearena_level_3/init.lua:8
+msgctxt "europeans_building"
+msgid "Colosseum"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/armor/init.lua:77
+msgctxt "ware"
+msgid "Armor"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/armor_advanced/init.lua:8
+msgctxt "ware"
+msgid "Advanced Armor"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/armor_compressed/init.lua:8
+msgctxt "ware"
+msgid "Compressed Armor"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/armor_processed/init.lua:8
+msgctxt "ware"
+msgid "Processed Armor"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/armor_wooden/init.lua:8
+msgctxt "ware"
+msgid "Light Wooden Armor"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/ax/init.lua:8
+msgctxt "ware"
+msgid "Ax"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/ax_broad/init.lua:8
+msgctxt "ware"
+msgid "Broad Ax"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/barley/init.lua:8
+msgctxt "ware"
+msgid "Barley"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/basket/init.lua:8
+msgctxt "ware"
+msgid "Basket"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/beer/init.lua:8
+msgctxt "ware"
+msgid "Beer"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/beer_strong/init.lua:8
+msgctxt "ware"
+msgid "Strong Beer"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/biscuit/init.lua:8
+msgctxt "empire_ware"
+msgid "Biscuit"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/blackroot/init.lua:8
+msgctxt "ware"
+msgid "Blackroot"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/blackwood/init.lua:8
+msgctxt "ware"
+msgid "Blackwood"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/boots_advanced/init.lua:8
+msgctxt "ware"
+msgid "Advanced Boots"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/boots_sturdy/init.lua:8
+msgctxt "ware"
+msgid "Sturdy Boots"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/boots_swift/init.lua:8
+msgctxt "ware"
+msgid "Swift Boots"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/boots_wooden/init.lua:8
+msgctxt "ware"
+msgid "Wooden Boots"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/bread/init.lua:8
+msgctxt "ware"
+msgid "Bread"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/brick/init.lua:8
+msgctxt "ware"
+msgid "Brick"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/buckets/init.lua:8
+msgctxt "ware"
+msgid "Buckets"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/clay/init.lua:8
+msgctxt "ware"
+msgid "Clay"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/cloth/init.lua:8
+msgctxt "ware"
+msgid "Cloth"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/coal/init.lua:8
+msgctxt "ware"
+msgid "Coal"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/coin_copper/init.lua:8
+msgctxt "ware"
+msgid "Copper Coin"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/coin_gold/init.lua:8
+msgctxt "ware"
+msgid "Gold Coin"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/coin_silver/init.lua:8
+msgctxt "ware"
+msgid "Silver Coin"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/coin_wood/init.lua:8
+msgctxt "ware"
+msgid "Wood Coin"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/corn/init.lua:8
+msgctxt "ware"
+msgid "Corn"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/cotton/init.lua:8
+msgctxt "ware"
+msgid "Cotton"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/diamond/init.lua:8
+msgctxt "ware"
+msgid "Diamond"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/felling_ax/init.lua:8
+msgctxt "ware"
+msgid "Felling Ax"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/fish/init.lua:8
+msgctxt "ware"
+msgid "Fish"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/flour/init.lua:8
+msgctxt "ware"
+msgid "Flour"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/fruit/init.lua:8
+msgctxt "ware"
+msgid "Fruit"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/gold/init.lua:8
+msgctxt "ware"
+msgid "Gold"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/granite/init.lua:8
+msgctxt "ware"
+msgid "Granite"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/grape/init.lua:8
+msgctxt "ware"
+msgid "Grape"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/grout/init.lua:8
+msgctxt "ware"
+msgid "Grout"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/hammer/init.lua:8
+msgctxt "ware"
+msgid "Hammer"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/helmet_mask/init.lua:8
+msgctxt "ware"
+msgid "Mask"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/helmet_wooden/init.lua:8
+msgctxt "ware"
+msgid "Wooden Helmet"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/honey/init.lua:8
+msgctxt "ware"
+msgid "Honey"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/honey_bread/init.lua:8
+msgctxt "europeans_ware"
+msgid "Honey Bread"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/leather/init.lua:8
+msgctxt "ware"
+msgid "Leather"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/log/init.lua:8
+msgctxt "ware"
+msgid "Log"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/marble/init.lua:8
+msgctxt "ware"
+msgid "Marble"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/marble_column/init.lua:8
+msgctxt "ware"
+msgid "Marble Column"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/mead/init.lua:8
+msgctxt "ware"
+msgid "Mead"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/meat/init.lua:8
+msgctxt "ware"
+msgid "Meat"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/metal_alloy/init.lua:8
+msgctxt "ware"
+msgid "Mixed Metal Alloy"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/ore/init.lua:8
+msgctxt "ware"
+msgid "Ore"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/pick/init.lua:8
+msgctxt "ware"
+msgid "Pick"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/planks/init.lua:8
+msgctxt "ware"
+msgid "Planks"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/quartz/init.lua:8
+msgctxt "ware"
+msgid "Quartz"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares. Used for thatching roofs and as a fiber for weaving cloth, fishing nets etc.
+#: addons/europeans_base.wad/wares/reed/init.lua:8
+msgctxt "ware"
+msgid "Reed"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/rubber/init.lua:8
+msgctxt "ware"
+msgid "Rubber"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/rye/init.lua:8
+msgctxt "ware"
+msgid "Rye"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/saw/init.lua:8
+msgctxt "ware"
+msgid "Saw"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/scrap_metal/init.lua:8
+msgctxt "ware"
+msgid "Scrap Metal"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/scrap_wood/init.lua:8
+msgctxt "ware"
+msgid "Scrap wood"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/scythe/init.lua:8
+msgctxt "ware"
+msgid "Scythe"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/shield_advanced/init.lua:8
+msgctxt "ware"
+msgid "Advanced Shield"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/shield_steel/init.lua:8
+msgctxt "ware"
+msgid "Steel Shield"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/shovel/init.lua:8
+msgctxt "ware"
+msgid "Shovel"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/spear/init.lua:8
+msgctxt "ware"
+msgid "Spear"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/spear_advanced/init.lua:8
+msgctxt "ware"
+msgid "Advanced Spear"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/spear_wooden/init.lua:8
+msgctxt "ware"
+msgid "Wooden Spear"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/sword_broad/init.lua:8
+msgctxt "ware"
+msgid "Broadsword"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/water/init.lua:8
+msgctxt "ware"
+msgid "Water"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/wheat/init.lua:8
+msgctxt "ware"
+msgid "Wheat"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/wine/init.lua:8
+msgctxt "ware"
+msgid "Wine"
+msgstr ""
+
+#. TRANSLATORS: This is a ware name used in lists of wares
+#: addons/europeans_base.wad/wares/wool/init.lua:8
+msgctxt "ware"
+msgid "Wool"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/builder/init.lua:8
+msgctxt "europeans_worker"
+msgid "Builder"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/carrier/init.lua:8
+msgctxt "europeans_worker"
+msgid "Carrier"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/carrier_1/init.lua:8
+msgctxt "europeans_worker"
+msgid "Carrier 1"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/carrier_2/init.lua:8
+msgctxt "europeans_worker"
+msgid "Carrier 2"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/carrier_3/init.lua:8
+msgctxt "europeans_worker"
+msgid "Carrier 3"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/ferry/init.lua:8
+msgctxt "europeans_worker"
+msgid "Ferry"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/forester_advanced/init.lua:8
+msgctxt "europeans_worker"
+msgid "Advanced Forester"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/forester_basic/init.lua:8
+msgctxt "europeans_worker"
+msgid "Basic Ranger"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/geologist/init.lua:8
+msgctxt "europeans_worker"
+msgid "Geologist"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/lumberjack_advanced/init.lua:8
+msgctxt "europeans_worker"
+msgid "Advanced Lumberjack"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/lumberjack_basic/init.lua:8
+msgctxt "europeans_worker"
+msgid "Basic Lumberjack"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/miner_advanced/init.lua:8
+msgctxt "europeans_worker"
+msgid "Advanced Miner"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/miner_basic/init.lua:8
+msgctxt "europeans_worker"
+msgid "Basic Miner"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/recruit/init.lua:8
+msgctxt "europeans_worker"
+msgid "Recruit"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/scout_advanced/init.lua:8
+msgctxt "europeans_worker"
+msgid "Advanced Scout"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/scout_basic/init.lua:8
+msgctxt "europeans_worker"
+msgid "Basic Scout"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/shipwright_advanced/init.lua:8
+msgctxt "europeans_worker"
+msgid "Advanced Shipwright"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/shipwright_basic/init.lua:8
+msgctxt "europeans_worker"
+msgid "Basic Shipwright"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/soldier/init.lua:107
+msgctxt "europeans_worker"
+msgid "Soldier"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/stonecutter_advanced/init.lua:8
+msgctxt "europeans_worker"
+msgid "Advanced Stonecutter"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/stonecutter_basic/init.lua:8
+msgctxt "europeans_worker"
+msgid "Basic Stonecutter"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/trainer_advanced/init.lua:8
+msgctxt "europeans_worker"
+msgid "Advanced Trainer"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/trainer_basic/init.lua:8
+msgctxt "europeans_worker"
+msgid "Basic Trainer"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/worker_advanced/init.lua:8
+msgctxt "europeans_worker"
+msgid "Advanced Worker"
+msgstr ""
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/worker_basic/init.lua:8
+msgctxt "europeans_worker"
+msgid "Basic Worker"
+msgstr ""

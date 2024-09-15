@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Yuriy Sokolov <lention@mail.ru>, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 03:06+0200\n"
+"POT-Creation-Date: 2024-01-20 03:07+0100\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
 "ru/)\n"
 "Language: ru\n"
@@ -21,13 +25,27 @@ msgstr ""
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: addons/time-limitted-peaceful.wad/addon:4
-msgid "limits the peaceful mode to 45 minutes"
-msgstr ""
+msgid "Time limited peaceful mode"
+msgstr "Мирный режим с ограничением по времени"
 
-#: addons/time-limitted-peaceful.wad/init.lua:20
-msgid "peaceful mode ends now"
-msgstr ""
+#: addons/time-limitted-peaceful.wad/init.lua:29
+msgid "Peaceful mode ends now"
+msgstr "Мирный режим закончился"
 
-#: addons/time-limitted-peaceful.wad/init.lua:21
-msgid "all players can attack each other now (team mates excluded of course)"
+#: addons/time-limitted-peaceful.wad/init.lua:30
+msgid "All players can attack each other. (Team mates excluded of course.)"
 msgstr ""
+"Все игроки могут атаковать друг друга (разумеется, за исключением товарищей "
+"по команде)."
+
+#: addons/time-limitted-peaceful.wad/init.lua:77
+msgid "win condition config"
+msgstr "параметры условий победы"
+
+#: addons/time-limitted-peaceful.wad/init.lua:88
+msgid "Peaceful mode for ..."
+msgstr "Мирный режим на ..."
+
+#: addons/time-limitted-peaceful.wad/init.lua:89
+msgid "Duration of peaceful mode"
+msgstr "Продолжительность мирного режима"

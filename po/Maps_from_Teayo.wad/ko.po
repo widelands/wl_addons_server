@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-11 03:01+0200\n"
+"POT-Creation-Date: 2023-09-25 03:06+0200\n"
 "PO-Revision-Date: 2023-07-07 18:30+0000\n"
 "Language-Team: Korean (https://app.transifex.com/widelands/teams/35159/ko/)\n"
 "Language: ko\n"
@@ -20,15 +20,24 @@ msgstr ""
 #: addons/Maps_from_Teayo.wad/addon:6
 msgid ""
 "This Addon contains all of my Maps. Some of my Maps are also on the "
-"Widelands Website Maps archive aviable."
+"Widelands Website Maps archive aviable. Maps Total : 25 , Major Maps : 9 , "
+"Variant Maps : 15 , Major Maps with Variant Maps : 5"
 msgstr ""
 
-#: addons/Maps_from_Teayo.wad/addon:9 addons/Maps_from_Teayo.wad/dirnames:4
+#: addons/Maps_from_Teayo.wad/addon:9
 msgid "Maps_from_Teayo"
+msgstr ""
+
+#: addons/Maps_from_Teayo.wad/dirnames:4
+msgid "Teayo's Karten"
 msgstr ""
 
 #: input:8 standard
 msgid "Circle Island"
+msgstr ""
+
+#: input:8 standard
+msgid "Far small islands"
 msgstr ""
 
 #: input:8 standard
@@ -37,6 +46,10 @@ msgstr ""
 
 #: input:8 standard
 msgid "Lack of Space 16-96"
+msgstr ""
+
+#: input:8 standard
+msgid "Ozean Raster Vorlage"
 msgstr ""
 
 #: input:8 standard
@@ -146,6 +159,24 @@ msgid ""
 "Comments : 0 , Rating : 6 (2 Votes) , Last Edit : [ 2023-07-06 , Widelands "
 "Version 1.2 , Map Edit : Translated the Map Title, Description and Hint from "
 "german into english. ] ]"
+msgstr ""
+
+#: input:10 standard
+msgid ""
+"Eight islands in the middle of the ocean. Each island has six harbor "
+"building sites, one harbor building site in each corner of the island. All "
+"islands are the same size and arranged evenly, so that the distance between "
+"the individual islands is as equal as possible. The starting position is in "
+"the middle of the island and due to its proximity to the coast, it is hardly "
+"protected from landings. Each island is sufficiently large and therefore "
+"offers sufficient building space."
+msgstr ""
+
+#: input:10 standard
+msgid ""
+"Eine Vorlage Karte ohne Spieler und mit Raster auf einen Ozean. Eine gute "
+"Grundlage um eine symetrische, ausgewogene Karte darauf aufbauend zu "
+"erstellen."
 msgstr ""
 
 #: input:10 standard
@@ -327,6 +358,15 @@ msgid ""
 "369 , Comments : 0 , Rating : 0 (0 Votes) , Last Edit : 2023-07-06 , "
 "Widelands Version 1.2 , Map Edit : Translated the Map Title, Description and "
 "Hint from german into english. ]"
+msgstr ""
+
+#: input:11 standard
+msgid ""
+"Ports : 54 (6 per Island, 1 per Island Corner) , Artifacts : 1 (Center "
+"Island) , Mountain Resources : Many 5/5 , Trees : Many 5/5 , Rocks : Medium "
+"3/5 , Animals : Many 4/5 , Fishes : Medium 3/5 (5 per Point) , Max ferry "
+"path length : None , Height steepness : Medium 3/5 , Big building Places : "
+"Medium 3/5"
 msgstr ""
 
 #: input:11 standard
@@ -523,4 +563,8 @@ msgstr ""
 
 #: screenshots/Maps_from_Teayo.wad/descriptions:14
 msgid "A Overview of the Map Tichupane - Desert in Editor"
+msgstr ""
+
+#: screenshots/Maps_from_Teayo.wad/descriptions:15
+msgid "A Overview of the Islands from the Map"
 msgstr ""

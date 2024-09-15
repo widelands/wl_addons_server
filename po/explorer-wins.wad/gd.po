@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-22 03:05+0200\n"
+"POT-Creation-Date: 2023-11-26 03:07+0100\n"
 "PO-Revision-Date: 2022-10-29 17:44+0000\n"
 "Language-Team: Gaelic, Scottish (https://app.transifex.com/widelands/"
 "teams/35159/gd/)\n"
@@ -36,37 +36,54 @@ msgstr ""
 msgid "The player who has explored %1d%% of the world wins the game"
 msgstr ""
 
-#: addons/explorer-wins.wad/init.lua:25
+#: addons/explorer-wins.wad/init.lua:26
 msgid "% explored"
 msgstr ""
 
-#: addons/explorer-wins.wad/init.lua:34
-msgid "You can explore by expanding, with a scout, with ships, ..."
-msgstr ""
-
-#: addons/explorer-wins.wad/init.lua:54
+#: addons/explorer-wins.wad/init.lua:46
 msgid ""
 "There are %1$d fields on the map, but only %2$d are terrestrial, which is "
 "%3$d%%. You need to explore %4$d%%."
 msgstr ""
 
-#: addons/explorer-wins.wad/init.lua:59
+#: addons/explorer-wins.wad/init.lua:50
 msgid "Probably not winnable"
 msgstr ""
 
-#: addons/explorer-wins.wad/init.lua:59
+#: addons/explorer-wins.wad/init.lua:50
 msgid "This map is probably not winnable with %1$s."
 msgstr ""
 
-#: addons/explorer-wins.wad/init.lua:61
+#: addons/explorer-wins.wad/init.lua:52
 msgid "Maybe not winnable"
 msgstr ""
 
-#: addons/explorer-wins.wad/init.lua:61
+#: addons/explorer-wins.wad/init.lua:52
 msgid "This map is maybe not winnable with %1$s."
 msgstr ""
 
-#: addons/explorer-wins.wad/init.lua:133
+#: addons/explorer-wins.wad/init.lua:69
+msgid "You can explore by expanding, with a scout, with ships, ..."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:94
+msgid "Win condition not compatible with \"No fog of war\""
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:95
+msgid ""
+"The win condition %1$s can not be played with \"No fog of war\" enabled."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:96
+msgid "Continue playing endlessly or restart with fog."
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:150
+msgid "Player %1$1d has explored %2$1d%%"
+msgstr ""
+
+#: addons/explorer-wins.wad/init.lua:152
 #, lua-format
-msgid "Player %1d has explored %1d%%"
+msgid " (%d fields)"
 msgstr ""

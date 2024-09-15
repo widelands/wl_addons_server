@@ -1,0 +1,3 @@
+return {
+   shovel = {"__skip_if_exists"},
+}

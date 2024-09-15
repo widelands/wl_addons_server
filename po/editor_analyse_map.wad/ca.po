@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-09 03:11+0200\n"
+"PO-Revision-Date: 2024-01-29 07:14+0000\n"
+"Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
+"ca/)\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/editor_analyse_map.wad/addon:2
+msgid "Editor: Analyse Map"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/addon:3
+msgid ""
+"Analysis tool: Compare the resources in the vicinity of player positions "
+"with a few clicks, or display a statistic of the whole map."
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:12
+msgid ""
+"Calculating all the data for a whole map can take some time. For really big "
+"maps, like Europe v1.2, investigating needs also round about 1.5 GB free "
+"memory!"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:13
+msgid "The Editor does not react for this time!"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:14
+msgid "If you are sure click the button below and be patient …"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:41
+msgctxt "around_player_position:"
+msgid "Investigate around the player position:"
+msgid_plural "Investigate around the player positions:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:47
+msgid "Memory usage: %1$10.2f MB"
+msgstr ""
+
+#. TRANSLATORS: Placeholder is "this post in the Widelands forum"
+#: addons/editor_analyse_map.wad/callbacks.lua:56
+#, lua-format
+msgid "For information about the results look at %s"
+msgstr ""
+
+#. TRANSLATORS: Will be inserted into "For information about the results look at %s"
+#: addons/editor_analyse_map.wad/callbacks.lua:58
+msgid "this post in the Widelands forum"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:66
+msgid "Statistic for the whole map"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:75
+msgid "Players on this map"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:77
+msgid "Other findings on this map"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:79
+msgid "Analysing %1$d map fields"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:103
+msgid "Analysing %1$d map fields for player %2$s"
+msgstr ""
+
+#. TRANSLATORS: Placeholder is a number
+#: addons/editor_analyse_map.wad/callbacks.lua:105
+msgid "Vicinity of Player %1$d"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:111
+msgid "Findings up to %1$d Fields around this players starting position:"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/callbacks.lua:121
+msgctxt "statistic_for"
+msgid "Statistic for a player"
+msgid_plural "Statistic for players"
+msgstr[0] ""
+msgstr[1] ""
+
+#: addons/editor_analyse_map.wad/helper_functions.lua:13
+msgid "%1$d/%2$d"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/helper_functions.lua:36
+msgid "%1$d granite or:"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/helper_functions.lua:37
+msgid "ca. %1$d granite and ca. %2$d marble"
+msgstr ""
+
+#. TRANSLATORS: A value with percent sign like: (20%)
+#: addons/editor_analyse_map.wad/helper_functions.lua:72
+msgid "(%1$d%%)"
+msgstr ""
+
+#. TRANSLATORS: First placeholder is a number or string, second placeholder is the prior created percent string
+#. TRANSLATORS: Result is like: "2 (15%)"
+#: addons/editor_analyse_map.wad/helper_functions.lua:81
+msgid "%1$s %2$s"
+msgstr ""
+
+#. TRANSLATORS: Table header for of player names
+#: addons/editor_analyse_map.wad/helper_functions.lua:126
+msgid "Name"
+msgstr ""
+
+#. TRANSLATORS: Table header for players start field
+#: addons/editor_analyse_map.wad/helper_functions.lua:128
+msgid "Position"
+msgstr ""
+
+#. TRANSLATORS: Table header for resource names
+#: addons/editor_analyse_map.wad/helper_functions.lua:130
+msgid "Found"
+msgstr ""
+
+#. TRANSLATORS: Table header for resource amount
+#: addons/editor_analyse_map.wad/helper_functions.lua:132
+msgid "Amount"
+msgstr ""
+
+#. TRANSLATORS: Table header for fields like "15/30"
+#: addons/editor_analyse_map.wad/helper_functions.lua:134
+msgid "Around"
+msgstr ""
+
+#. TRANSLATORS: Table header for values like "30 Fields"
+#: addons/editor_analyse_map.wad/helper_functions.lua:136
+msgid "Distance"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/helper_functions.lua:172
+msgid "%1$d Fields"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/init.lua:8
+msgid "Analyse the map"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/init.lua:9
+msgid "Compare player positions with a few clicks or analyse the whole map."
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:71
+msgid "What should be investigated?"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:92
+msgid "The whole map"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:100
+msgid "Information about players"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:174
+msgid "General Options"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:187
+msgid "Show building plots"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:194
+msgid "Show Percent"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:195
+msgid "Show the percentage of all mineable resources"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:202
+msgid "Calculate Marble"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:203
+msgid "Include the granite/marmor ratio for rocks"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:218
+msgid "Show memory usage"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:219
+msgid "Show memory usage, informational only when investigating the whole map"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:233
+msgid "Investigate the whole map"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:240
+msgid "Investigate the checked players"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:285
+msgid "OK"
+msgstr ""
+
+#: addons/editor_analyse_map.wad/windows.lua:309
+msgid "Analysing"
+msgstr ""
+
+#: screenshots/editor_analyse_map.wad/descriptions:3
+msgid "Analyse a map, Options"
+msgstr ""
+
+#: screenshots/editor_analyse_map.wad/descriptions:4
+msgid "Result for analysing Players"
+msgstr ""
+
+#: screenshots/editor_analyse_map.wad/descriptions:5
+msgid "Result when investigating a whole map"
+msgstr ""

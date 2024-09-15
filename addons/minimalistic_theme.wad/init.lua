@@ -14,9 +14,9 @@
 dirname = path.dirname(__file__)
 
 -- Global colors
-local gray = {80, 80, 80}
+local gray = {120, 120, 120}
 local light_gray = {250, 250, 250}
-local yellow = {240, 220, 130}
+local yellow = {250, 230, 75}
 
 -- Overlay colors for buttons
 local overlay_dark =  {30, 30, 30}
@@ -29,11 +29,48 @@ local fs_font_color = light_gray
 local fs_font_face = "sans"
 local fs_font_size = 14
 
+local wui_font_color = light_gray
 local wui_font_face = "sans"
 local wui_font_size = 14
 
-local default_wui_font = {
+local fs_text_padding = 6
+local fs_text_space_before = 0
+local fs_text_space_after = fs_text_padding
+local fs_heading_space_before_big = 2 * fs_text_padding
+local fs_heading_space_before_small = fs_text_padding
+local fs_heading_space_after = 2 * fs_text_padding
+local fs_heading_color = {209, 209, 209}
+local about_title_color = {47, 145, 49}
+
+local wui_text_padding = 6
+local wui_text_space_before = 0
+local wui_text_space_after = wui_text_padding
+local wui_heading_space_before_big = 2 * wui_text_padding
+local wui_heading_space_before_small = wui_text_padding
+local wui_heading_space_after = 2 * wui_text_padding
+local wui_heading_color = {209, 209, 209}
+local campaign_leader_color = about_title_color
+
+local h1_font_size = 18
+local h2_font_size = 14
+local h3_font_size = 13
+local h4_font_size = 12
+local p_font_size = 12
+
+local unknown_font_color = {209, 45, 45}
+local unknown_font_face = "sans"
+local unknown_font_size = 16
+
+local wui_button_font = {
    color = light_gray,
+   face = wui_font_face,
+   size = wui_font_size,
+   bold = true,
+   shadow = true
+}
+
+local default_wui_font = {
+   color = wui_font_color,
    face = wui_font_face,
    size = wui_font_size,
    bold = true,
@@ -48,7 +85,7 @@ local default_fs_font = {
 }
 
 local default_button_fonts = {
-   enabled_wui = default_wui_font,
+   enabled_wui = wui_button_font,
    enabled_fs = default_fs_font,
    disabled = {
          color = {127, 127, 127},
@@ -65,6 +102,87 @@ local productivity_colors = {
    high = {0, 187, 0},
 }
 
+-- In version 1.3 the code for window borders has changed.
+-- For versions > 1.2
+local windows_def = {
+      fsmenu = {
+         -- red, green, blue, alpha
+         window_border_focused = {220, 220, 250, 0},
+         window_border_unfocused = {50, 0, 0, 0},
+         background           = dirname .. "fsmenu/windows/background.png",
+         border_top           = dirname .. "fsmenu/windows/top_v1.3.png",
+         border_bottom        = dirname .. "fsmenu/windows/bottom_v1.3.png",
+         border_right         = dirname .. "fsmenu/windows/right_v1.3.png",
+         border_left          = dirname .. "fsmenu/windows/left_v1.3.png",
+         corner_bottom_left   = dirname .. "fsmenu/windows/corner_bottom_left.png",
+         corner_bottom_right  = dirname .. "fsmenu/windows/corner_bottom_right.png",
+         corner_top_left      = dirname .. "fsmenu/windows/corner_top_left.png",
+         corner_top_right     = dirname .. "fsmenu/windows/corner_top_right.png",
+         corner_minimal_left  = dirname .. "fsmenu/windows/corner_minimal_left.png",
+         corner_minimal_right = dirname .. "fsmenu/windows/corner_minimal_right.png",
+         button_close         = dirname .. "fsmenu/windows/close.png",
+         button_pin           = dirname .. "fsmenu/windows/pin.png",
+         button_unpin         = dirname .. "fsmenu/windows/unpin.png",
+         button_minimize      = dirname .. "fsmenu/windows/minimize.png",
+         button_unminimize    = dirname .. "fsmenu/windows/maximize.png",
+      },
+      wui = {
+         window_border_focused = {220, 220, 250, 0},
+         window_border_unfocused = {50, 0, 0, 0},
+         background           = dirname .. "wui/windows/background.png",
+         border_top           = dirname .. "wui/windows/top_v1.3.png",
+         border_bottom        = dirname .. "wui/windows/bottom_v1.3.png",
+         border_right         = dirname .. "wui/windows/right_v1.3.png",
+         border_left          = dirname .. "wui/windows/left_v1.3.png",
+         corner_bottom_left   = dirname .. "wui/windows/corner_bottom_left.png",
+         corner_bottom_right  = dirname .. "wui/windows/corner_bottom_right.png",
+         corner_top_left      = dirname .. "wui/windows/corner_top_left.png",
+         corner_top_right     = dirname .. "wui/windows/corner_top_right.png",
+         corner_minimal_left  = dirname .. "wui/windows/corner_minimal_left.png",
+         corner_minimal_right = dirname .. "wui/windows/corner_minimal_right.png",
+         button_close         = dirname .. "wui/windows/close.png",
+         button_pin           = dirname .. "wui/windows/pin.png",
+         button_unpin         = dirname .. "wui/windows/unpin.png",
+         button_minimize      = dirname .. "wui/windows/minimize.png",
+         button_unminimize    = dirname .. "wui/windows/maximize.png",
+      },
+   }
+
+-- For version 1.2
+if get_build_id():find("1.2") ~= nil then
+   windows_def = {
+      fsmenu = {
+         -- red, green, blue, alpha
+         window_border_focused = {220, 220, 250, 0},
+         window_border_unfocused = {50, 0, 0, 0},
+         background        = dirname .. "fsmenu/windows/background.png",
+         border_top        = dirname .. "fsmenu/windows/top_v1.2.png",
+         border_bottom     = dirname .. "fsmenu/windows/bottom_v1.2.png",
+         border_right      = dirname .. "fsmenu/windows/right_v1.2.png",
+         border_left       = dirname .. "fsmenu/windows/left_v1.2.png",
+         button_close      = dirname .. "fsmenu/windows/close.png",
+         button_pin        = dirname .. "fsmenu/windows/pin.png",
+         button_unpin      = dirname .. "fsmenu/windows/unpin.png",
+         button_minimize   = dirname .. "fsmenu/windows/minimize.png",
+         button_unminimize = dirname .. "fsmenu/windows/maximize.png",
+      },
+      wui = {
+         window_border_focused = {220, 220, 250, 0},
+         window_border_unfocused = {50, 0, 0, 0},
+         background        = dirname .. "wui/windows/background.png",
+         border_top        = dirname .. "wui/windows/top_v1.2.png",
+         border_bottom     = dirname .. "wui/windows/bottom_v1.2.png",
+         border_right      = dirname .. "wui/windows/right_v1.2.png",
+         border_left       = dirname .. "wui/windows/left_v1.2.png",
+         button_close      = dirname .. "wui/windows/close.png",
+         button_pin        = dirname .. "wui/windows/pin.png",
+         button_unpin      = dirname .. "wui/windows/unpin.png",
+         button_minimize   = dirname .. "wui/windows/minimize.png",
+         button_unminimize = dirname .. "wui/windows/maximize.png",
+      },
+   }
+end
+
 -- These are the style definitions to be returned.
 -- Note: you have to keep all the keys intact, or Widelands will not be happy.
 return {
@@ -79,37 +197,7 @@ return {
    focus_border_thickness = 1,
 
    -- Windows
-   windows = {
-      fsmenu = {
-         -- red, green, blue, alpha
-         window_border_focused = {220, 220, 250, 0},
-         window_border_unfocused = {50, 0, 0, 0},
-         background        = dirname .. "fsmenu/windows/background.png",
-         border_top        = dirname .. "fsmenu/windows/top.png",
-         border_bottom     = dirname .. "fsmenu/windows/bottom.png",
-         border_right      = dirname .. "fsmenu/windows/right.png",
-         border_left       = dirname .. "fsmenu/windows/left.png",
-         button_close      = dirname .. "fsmenu/windows/close.png",
-         button_pin        = dirname .. "fsmenu/windows/pin.png",
-         button_unpin      = dirname .. "fsmenu/windows/unpin.png",
-         button_minimize   = dirname .. "fsmenu/windows/minimize.png",
-         button_unminimize = dirname .. "fsmenu/windows/maximize.png",
-      },
-      wui = {
-         window_border_focused = {220, 220, 250, 0},
-         window_border_unfocused = {50, 0, 0, 0},
-         background        = dirname .. "wui/windows/background.png",
-         border_top        = dirname .. "wui/windows/top.png",
-         border_bottom     = dirname .. "wui/windows/bottom.png",
-         border_right      = dirname .. "wui/windows/right.png",
-         border_left       = dirname .. "wui/windows/left.png",
-         button_close      = dirname .. "wui/windows/close.png",
-         button_pin        = dirname .. "wui/windows/pin.png",
-         button_unpin      = dirname .. "wui/windows/unpin.png",
-         button_minimize   = dirname .. "wui/windows/minimize.png",
-         button_unminimize = dirname .. "wui/windows/maximize.png",
-      },
-   },
+   windows = windows_def,
 
    -- Buttons
    buttons = {
@@ -145,7 +233,7 @@ return {
                font = default_button_fonts.disabled,
                background = {
                   image = fs_button,
-                  color = overlay_green,
+                  color = overlay_dark,
                }
             }
          },
@@ -376,7 +464,7 @@ return {
       }
    },
 
-   -- Map census and statistics, and building statistics window
+   -- Map census and status, and building statistics window
    building_statistics = {
       census_font = {
          color = light_gray,
@@ -744,7 +832,7 @@ return {
          bold = true,
       },
       wui_info_panel_paragraph = {
-         color = light_gray,
+         color = yellow,
          face = wui_font_face,
          size = wui_font_size,
       },
@@ -756,7 +844,7 @@ return {
          bold = true,
       },
       wui_message_paragraph = {
-         color = light_gray,
+         color = yellow,
          face = wui_font_face,
          size = 12,
       },
@@ -781,5 +869,261 @@ return {
          bold = true,
          shadow = true
       },
+
+      -- Returned when lookup by name fails.
+      -- Make this stand out to help debugging
+      unknown = {
+         color = unknown_font_color,
+         face = unknown_font_face,
+         size = unknown_font_size,
+         bold = true,
+      }
    },
+
+   paragraphs = {
+      -- Campaign and help texts
+      readme_title = {
+         -- this is used for the "Widelands" title
+         font = {
+            color = about_title_color,
+            -- should be "Widelands/Widelands.ttf", but it's not possible to pass font filename here
+            face = fs_font_face,
+            size = 38,
+         },
+         align = "center",
+         valign = "center",
+         space_before = 0,
+         space_after = fs_text_space_after,
+      },
+      about_title = {
+         font = {
+            color = about_title_color,
+            face = fs_font_face,
+            size = 28,
+         },
+         align = "center",
+         space_before = fs_text_space_before,
+         space_after = fs_text_space_after,
+      },
+      about_subtitle = {
+         font = {
+            color = fs_heading_color,
+            face = fs_font_face,
+            size = 14,
+            italic = true,
+         },
+         align = "center",
+         space_before = fs_text_space_before,
+         space_after = fs_text_space_after,
+      },
+      authors_heading_1 = {
+         font = {
+            color = {244, 161, 49},
+            face = fs_font_face,
+            size = 24,
+         },
+         space_before = fs_heading_space_before_big,
+         space_after = fs_heading_space_after,
+      },
+      fs_heading_1 = {
+         font = {
+            color = fs_heading_color,
+            face = fs_font_face,
+            size = h1_font_size,
+            bold = true,
+         },
+         space_before = fs_heading_space_before_big,
+         space_after = fs_heading_space_after,
+      },
+      fs_heading_2 = {
+         font = {
+            color = fs_heading_color,
+            face = fs_font_face,
+            size = h2_font_size,
+            bold = true,
+         },
+         space_before = fs_heading_space_before_big,
+         space_after = fs_heading_space_after,
+      },
+      fs_heading_3 = {
+         font = {
+            color = fs_heading_color,
+            face = fs_font_face,
+            size = h3_font_size,
+         },
+         space_before = fs_heading_space_before_small,
+         space_after = fs_heading_space_after,
+      },
+      fs_heading_4 = {
+         font = {
+            color = fs_heading_color,
+            face = fs_font_face,
+            size = h4_font_size,
+            italic = true,
+         },
+         space_before = fs_text_space_before,
+         space_after = fs_text_space_after,
+      },
+      fs_text = {
+         font = {
+            color = fs_font_color,
+            face = fs_font_face,
+            size = p_font_size,
+         },
+         space_before = fs_text_space_before,
+         space_after = fs_text_space_after,
+      },
+      wui_objectives_heading = {
+         font = {
+            color = wui_heading_color,
+            face = wui_font_face,
+            size = h1_font_size,
+            bold = true,
+         },
+         space_before = 3 * wui_text_padding,
+         space_after = 0,
+         valign = "center",
+      },
+      wui_heading_1 = {
+         font = {
+            color = wui_heading_color,
+            face = wui_font_face,
+            size = h1_font_size,
+            bold = true,
+         },
+         space_before = wui_heading_space_before_big,
+         space_after = wui_heading_space_after,
+      },
+      wui_heading_2 = {
+         font = {
+            color = wui_heading_color,
+            face = wui_font_face,
+            size = h2_font_size,
+            bold = true,
+         },
+         space_before = wui_heading_space_before_big,
+         space_after = wui_heading_space_after,
+      },
+      wui_heading_3 = {
+         font = {
+            color = wui_heading_color,
+            face = wui_font_face,
+            size = h3_font_size,
+         },
+         space_before = wui_heading_space_before_small,
+         space_after = wui_heading_space_after,
+      },
+      wui_heading_4 = {
+         font = {
+            color = wui_heading_color,
+            face = wui_font_face,
+            size = h4_font_size,
+            italic = true,
+         },
+         space_before = wui_text_space_before,
+         space_after = wui_text_space_after,
+      },
+      wui_text = {
+         font = {
+            color = wui_font_color,
+            face = wui_font_face,
+            size = p_font_size,
+         },
+         space_before = wui_text_space_before,
+         space_after = wui_text_space_after,
+      },
+      wui_image_line = {
+         font = {
+            color = wui_font_color,
+            face = wui_font_face,
+            size = p_font_size,
+         },
+         space_before = wui_text_space_before + wui_text_padding,
+         space_after = wui_text_space_after + wui_text_padding,
+      },
+      wui_lore_author = {
+         font = {
+            color = wui_font_color,
+            face = wui_font_face,
+            size = 10,
+            italic = true,
+         },
+         align = "right",
+         space_before = wui_text_space_before,
+         space_after = wui_text_space_after + 3,
+      },
+
+      -- Returned when lookup by name fails.
+      -- Make this stand out to help debugging
+      unknown = {
+         font = {
+            color = unknown_font_color,
+            face = unknown_font_face,
+            size = unknown_font_size,
+            italic = true,
+         },
+         space_before = unknown_font_size,
+         space_after = unknown_font_size,
+      },
+   },
+
+   colors = {
+      campaign_bar_thron = campaign_leader_color,
+      campaign_bar_boldreth = {255, 0, 0},
+      campaign_bar_khantrukh = {128, 128, 255},
+
+      campaign_emp_lutius = campaign_leader_color,
+      campaign_emp_amalea = {255, 0, 0},
+      campaign_emp_saledus = {143, 145, 49},
+      campaign_emp_marcus = {17, 117, 175},
+      campaign_emp_julia = {208, 208, 208},
+
+      campaign_atl_jundlina = campaign_leader_color,
+      campaign_atl_sidolus = {255, 26, 48},
+      campaign_atl_loftomor = {253, 213, 61},
+      campaign_atl_colionder = {51, 169, 253},
+      campaign_atl_opol = {255, 63, 251},
+      campaign_atl_ostur = {55, 95, 252},
+      campaign_atl_kalitath = {255, 0, 0},
+
+      campaign_fri_reebaud = {85, 187, 85},
+      campaign_fri_hauke = {119, 153, 187},
+      campaign_fri_maukor = {153, 0, 0},
+      campaign_fri_murilius = {187, 119, 85},
+      campaign_fri_claus = {28, 194, 0},
+      campaign_fri_henneke = {247, 255, 0},
+      campaign_fri_iniucundus = {255, 0, 89},
+      campaign_fri_angadthur = {0, 22, 255},
+      campaign_fri_amazon = {108, 0, 151},
+      campaign_fri_ketelsen = {68, 85, 204},
+
+      map_river_advisor = {238, 187, 0},
+
+      unknown = {73, 64, 55}
+   },
+
+   styled_sizes = {
+      fs_text_default_gap = fs_text_padding,
+      fs_text_space_before_inline_header = 8,
+      fs_main_menu_dropdown_height = 33,
+      wui_text_default_gap = wui_text_padding,
+      wui_text_space_before_inline_header = 8,
+      wui_space_before_immovable_icon = 14,
+      win_condition_message_gap = 8,
+      help_terrain_tree_header_space_before = 12,
+      help_terrain_tree_header_space_after = 3,
+      editor_tooltip_icon_gap = 2,
+      campaign_message_box_default_h = 400,
+      campaign_message_box_default_w = 450,
+      campaign_message_box_top_pos_y = 25,
+      campaign_message_box_size_step = 50,
+      campaign_message_box_h_min = 150,
+      campaign_message_box_h_max = 600,
+      campaign_message_box_w_min = 200,
+      campaign_message_box_w_max = 500,
+      campaign_fri02_poem_indent = 10,
+      map_plateau_message_pos_y = 1,
+      ui_default_padding = 4,
+      toolbar_button_size = 33,
+   }
 }

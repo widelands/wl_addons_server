@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 03:05+0200\n"
+"POT-Creation-Date: 2023-09-26 03:06+0200\n"
 "PO-Revision-Date: 2023-07-07 18:30+0000\n"
 "Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -24,18 +24,28 @@ msgstr ""
 #: addons/Maps_from_Teayo.wad/addon:6
 msgid ""
 "This Addon contains all of my Maps. Some of my Maps are also on the "
-"Widelands Website Maps archive aviable."
+"Widelands Website Maps archive aviable. Maps Total : 25 , Major Maps : 9 , "
+"Variant Maps : 15 , Major Maps with Variant Maps : 5"
 msgstr ""
-"Deze Uitbreiding bevat al mijn kaarten. Sommige van mijn kaarten staan ook "
-"op het Widelands Website Maps archief."
+"Deze Addon bevat al mijn kaarten. Sommige van mijn kaarten staan ook op het "
+"Widelands Website Maps archief. Totaal kaarten : 25 , Grote kaarten : 9 , "
+"Variante kaarten : 15 , Grote kaarten met variante kaarten : 5"
 
-#: addons/Maps_from_Teayo.wad/addon:9 addons/Maps_from_Teayo.wad/dirnames:4
+#: addons/Maps_from_Teayo.wad/addon:9
 msgid "Maps_from_Teayo"
-msgstr "Maps_from_Teayo"
+msgstr "Kaarten_van_Teayo"
+
+#: addons/Maps_from_Teayo.wad/dirnames:4
+msgid "Teayo's Karten"
+msgstr "Teayo's Kaarten"
 
 #: input:8 standard
 msgid "Circle Island"
 msgstr "Cirkelvormig Eiland"
+
+#: input:8 standard
+msgid "Far small islands"
+msgstr "Far kleine eilanden"
 
 #: input:8 standard
 msgid "Lack of Space 08-64"
@@ -44,6 +54,10 @@ msgstr "Plaatsgebrek 08-64"
 #: input:8 standard
 msgid "Lack of Space 16-96"
 msgstr "Plaatsgebrek 16-96"
+
+#: input:8 standard
+msgid "Ozean Raster Vorlage"
+msgstr "Ozean Raster Voorgrond"
 
 #: input:8 standard
 msgid "Rectangle Valley - Variant 1"
@@ -188,6 +202,33 @@ msgstr ""
 "0 , Beoordeling : 6 (2 Stemmen) , Laatst bewerkt : [ 2023-07-06 , Widelands "
 "Versie 1.2 , Map Edit : Vertaalde de kaarttitel, beschrijving en hint van "
 "het duits naar het engels. ] ]"
+
+#: input:10 standard
+msgid ""
+"Eight islands in the middle of the ocean. Each island has six harbor "
+"building sites, one harbor building site in each corner of the island. All "
+"islands are the same size and arranged evenly, so that the distance between "
+"the individual islands is as equal as possible. The starting position is in "
+"the middle of the island and due to its proximity to the coast, it is hardly "
+"protected from landings. Each island is sufficiently large and therefore "
+"offers sufficient building space."
+msgstr ""
+"Acht eilanden in het midden van de oceaan. Elk eiland heeft zes "
+"havenbouwplaatsen, één havenbouwplaats in elke hoek van het eiland. Alle "
+"eilanden zijn even groot en gelijkmatig gerangschikt, zodat de afstand "
+"tussen de afzonderlijke eilanden zo gelijk mogelijk is. De startpositie is "
+"in het midden van het eiland en door de nabijheid van de kust is het "
+"nauwelijks beschermd tegen landingen. Elk eiland is voldoende groot en biedt "
+"daarom voldoende bouwruimte."
+
+#: input:10 standard
+msgid ""
+"Eine Vorlage Karte ohne Spieler und mit Raster auf einen Ozean. Eine gute "
+"Grundlage um eine symetrische, ausgewogene Karte darauf aufbauend zu "
+"erstellen."
+msgstr ""
+"Een Sjabloonkaart zonder spelers en met een raster op een oceaan. Een goede "
+"basis om een symmetrische, evenwichtige kaart op te baseren."
 
 #: input:10 standard
 msgid ""
@@ -524,6 +565,20 @@ msgstr ""
 
 #: input:11 standard
 msgid ""
+"Ports : 54 (6 per Island, 1 per Island Corner) , Artifacts : 1 (Center "
+"Island) , Mountain Resources : Many 5/5 , Trees : Many 5/5 , Rocks : Medium "
+"3/5 , Animals : Many 4/5 , Fishes : Medium 3/5 (5 per Point) , Max ferry "
+"path length : None , Height steepness : Medium 3/5 , Big building Places : "
+"Medium 3/5"
+msgstr ""
+"Havens : 54 (6 per eiland, 1 per eilandhoek) , Voorwerpen : 1 "
+"(Centrumeiland) , Bergrijkdommen : Veel 5/5 , Bomen : Veel 5/5 , Rotsen : "
+"Middelmatig 3/5 , Dieren : Veel 4/5 , Vissen : Middelmatig 3/5 (5 per "
+"punt) , Max veerpadlengte : Geen , Hoogte steilheid : Middelmatig 3/5 , "
+"Groot gebouw Plaatsen : Middelmatig 3/5"
+
+#: input:11 standard
+msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Many 4/5 , "
 "Trees : Few 2/5 , Rocks : Medium 3/5 , Animals : Few 2/5 , Fishes : Many 4/5 "
 "(3 per Point) , Max ferry path length : None , Height steepness : Low 1/5 , "
@@ -794,3 +849,7 @@ msgstr "Een overzicht van de kaart Tichupane - Braakland in de Editor"
 #: screenshots/Maps_from_Teayo.wad/descriptions:14
 msgid "A Overview of the Map Tichupane - Desert in Editor"
 msgstr "Een overzicht van de kaart Tichupane - Woestijn in de Editor"
+
+#: screenshots/Maps_from_Teayo.wad/descriptions:15
+msgid "A Overview of the Islands from the Map"
+msgstr "Een Overzicht van de Eilanden op de Kaart"

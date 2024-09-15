@@ -206,16 +206,24 @@ public class ServerUtils {
 		 * Constructor.
 		 * @param dir The directory to represent.
 		 */
-		public DirInfo(File dir) {
+		public DirInfo(File dir) { this(dir, null); }
+
+		/**
+		 * Constructor.
+		 * @param dir The directory to represent.
+		 * @param suffix If not null, filter for regular files ending in this suffix.
+		 */
+		public DirInfo(File dir, String suffix) {
 			file = dir;
 			regularFiles = new ArrayList<>();
 			subdirs = new ArrayList<>();
 
 			for (File f : Utils.listSorted(dir)) {
-				if (f.isDirectory())
+				if (f.isDirectory()) {
 					subdirs.add(new DirInfo(f));
-				else
+				} else if (suffix == null || f.getName().endsWith(suffix)) {
 					regularFiles.add(f);
+				}
 			}
 
 			int t = 0;
@@ -600,6 +608,11 @@ public class ServerUtils {
 			int[] map_version = string_to_version(versionNeeded);
 			if (smallest_map_version == null || less(map_version, smallest_map_version))
 				smallest_map_version = map_version;
+		}
+
+		if (smallest_map_version == null) {
+			_addon_min_version_cache.put(addon, nominal_min_wl_version);
+			return nominal_min_wl_version;
 		}
 
 		int[] min_version = string_to_version(nominal_min_wl_version);

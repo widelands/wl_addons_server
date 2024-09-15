@@ -8,9 +8,9 @@ push_textdomain("stronger-trading-outpost.wad", true)
 
 local r = {
    -- TRANSLATORS: This is the name of a starting condition
-   descname = _"AI Trading Outpost",
+   descname = _("AI Trading Outpost"),
    -- TRANSLATORS: This is the tooltip for the "AI Trading Outpost" starting condition
-   tooltip = _"If this player runs low on important wares, they will be replenished for free",
+   tooltip = _("If this player runs low on important wares, they will be replenished for free"),
    func =  function(player, shared_in_start)
 
       local sf = wl.Game().map.player_slots[player.number].starting_field

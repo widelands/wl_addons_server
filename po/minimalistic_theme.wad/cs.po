@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-22 03:05+0200\n"
+"POT-Creation-Date: 2024-09-01 03:09+0200\n"
 "PO-Revision-Date: 2021-03-02 22:51+0000\n"
 "Last-Translator: af24e571988b09e5b46468ac89010e87_d1b4333, 2021\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
@@ -22,15 +22,13 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: addons/minimalistic_theme.wad/addon:6
-msgid ""
-"Minimalistic theme with reduced colors. For widelands version 1.0 you have "
-"to enable the theme in the options menu after installing."
-msgstr ""
-
-#: addons/minimalistic_theme.wad/addon:9
+#: addons/minimalistic_theme.wad/addon:4
 msgid "Minimalistic Theme"
 msgstr "Jednoduchý uživatelský motiv"
+
+#: addons/minimalistic_theme.wad/addon:5
+msgid "Minimalistic theme with reduced colors and small window borders."
+msgstr ""
 
 #: screenshots/minimalistic_theme.wad/descriptions:3
 msgid "Reduced Borders since version 1.4"

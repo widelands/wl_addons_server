@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Stephan Lutz <stephan-lutz@gmx.de>, 2023
+# karl Antonius, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 03:06+0200\n"
+"POT-Creation-Date: 2024-01-22 03:07+0100\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
-"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
+"Last-Translator: karl Antonius, 2024\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -22,15 +22,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/time-limitted-peaceful.wad/addon:4
-msgid "limits the peaceful mode to 45 minutes"
-msgstr "Beschränkt den friedlichen Spielmodus auf 45 Minuten"
+msgid "Time limited peaceful mode"
+msgstr "Zeitlich begrenzter friedlicher Modus"
 
-#: addons/time-limitted-peaceful.wad/init.lua:20
-msgid "peaceful mode ends now"
-msgstr "Der friedliche Spielmodus endet jetzt"
+#: addons/time-limitted-peaceful.wad/init.lua:29
+msgid "Peaceful mode ends now"
+msgstr "Der friedliche Modus endet jetzt"
 
-#: addons/time-limitted-peaceful.wad/init.lua:21
-msgid "all players can attack each other now (team mates excluded of course)"
+#: addons/time-limitted-peaceful.wad/init.lua:30
+msgid "All players can attack each other. (Team mates excluded of course.)"
 msgstr ""
-"Alle Spieler können sich jetzt gegenseitig angreifen (ausgenommen "
-"Teamkollegen natürlich)"
+"Alle Spieler können sich gegenseitig angreifen. (Teamkollegen natürlich "
+"ausgenommen.) "
+
+#: addons/time-limitted-peaceful.wad/init.lua:77
+msgid "win condition config"
+msgstr "Win-Bedingungskonfiguration"
+
+#: addons/time-limitted-peaceful.wad/init.lua:88
+msgid "Peaceful mode for ..."
+msgstr "Friedlicher Modus für ..."
+
+#: addons/time-limitted-peaceful.wad/init.lua:89
+msgid "Duration of peaceful mode"
+msgstr "Dauer des friedlichen Modus"

@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Viktor Skachkov <awsswa59@gmail.com>, 2023
+# Yuriy Sokolov <lention@mail.ru>, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-20 03:07+0100\n"
+"PO-Revision-Date: 2023-11-25 20:04+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
+"ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: addons/artifacts-defended.wad/addon:4
+msgid "artifacts, defended"
+msgstr "артефакты, защищены"
+
+#: addons/artifacts-defended.wad/defending.lua:61
+msgid "WARNING"
+msgstr "ПРЕДУПРЕЖДЕНИЕ"
+
+#: addons/artifacts-defended.wad/defending.lua:115
+msgid "to conquer"
+msgstr "завоевать"
+
+#: addons/artifacts-defended.wad/defending.lua:127
+msgid "Could not adapt the tribe."
+msgstr "Не удалось адаптировать племя."
+
+#: addons/artifacts-defended.wad/defending.lua:143
+msgid "Defending player can not be in a team, remove."
+msgstr "Защищающий игрок не может быть в команде, удалить."
+
+#: addons/artifacts-defended.wad/defending.lua:226
+msgid "ERROR placing building"
+msgstr "ОШИБКА размещения здания"
+
+#: addons/artifacts-defended.wad/defending.lua:233
+#, lua-format
+msgid "No matching artifact building named %s"
+msgstr "Не найдено соответствующего строения %s"
+
+#: addons/artifacts-defended.wad/defending.lua:239
+msgid "wrong field found"
+msgstr "Найдено неправильное поле"
+
+#: addons/artifacts-defended.wad/defending.lua:269
+#, lua-format
+msgid "The player %s has no artifacts to defend."
+msgstr "У игрока %s нет артефактов для защиты"
+
+#: addons/artifacts-defended.wad/defending.lua:271
+msgid "No artifacts"
+msgstr "Нет артефактов"
+
+#: addons/artifacts-defended.wad/defending.lua:297
+msgid "could not place normal artifact (1x)"
+msgstr "не удалось разместить обычный артефакт (1x)"
+
+#: addons/artifacts-defended.wad/defending.lua:365
+msgid "Several players configured for defending:"
+msgstr "Несколько игроков настроены на защиту."
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/artifacts-defended.wad/defending.lua:421
+msgid "This (ai) player will defend the artifacts."
+msgstr "Этот ИИ-игрок будет защищать артефакты."
+
+#. TRANSLATORS: This is the tooltip for the starting condition
+#: addons/artifacts-defended.wad/defending.lua:423
+msgid "Set the tribe to random for finding out in game what it will be."
+msgstr ""
+"Установите случайные племена, чтобы в процессе игры узнать какими они "
+"окажутся."
+
+#: addons/artifacts-defended.wad/defending.lua:424
+msgid "Only for ai player as nothing can be done."
+msgstr "Только для игрока-ИИ, так как ничего нельзя сделать."
+
+#: addons/artifacts-defended.wad/defending.lua:425
+msgid "Recommended to set AI to \"empty\" to prevent soldiers being sent away."
+msgstr ""
+"Рекомендуется установить ИИ на \"пусто\", чтобы предотвратить отправку "
+"солдат в другое место."
+
+#: addons/artifacts-defended.wad/defending.lua:426
+msgid ""
+"On maps with artifacts not reachable by a warrior, some artifacts will not "
+"be conquerable."
+msgstr ""
+"На картах с артефактами, недоступными для воинов, некоторые артефакты не "
+"будут захвачены."
+
+#: addons/artifacts-defended.wad/defending.lua:436
+#, lua-format
+msgid "Player %s defends artifacts and has aditionally another start position"
+msgstr "Игрок %s защищает артефакты и имеет дополнительную стартовую позицию."
+
+#: screenshots/artifacts-defended.wad/descriptions:3
+msgid "found artifact"
+msgstr "найден артефакт"
+
+#: screenshots/artifacts-defended.wad/descriptions:4
+msgid "attack artifact"
+msgstr "артефакт атакован"
+
+#: screenshots/artifacts-defended.wad/descriptions:5
+msgid "conquered artifact"
+msgstr "артефакт захвачен"

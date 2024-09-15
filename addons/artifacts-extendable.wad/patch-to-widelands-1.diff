@@ -1,0 +1,60 @@
+diff --git a/data/scripting/win_conditions/artifacts.lua b/artifacts-tmp-1.lua
+index 2eaa94e4e8..c2208cf124 100644
+
+to adapt original artifacts file so it works
+--- a/data/scripting/win_conditions/artifacts.lua
++++ b/artifacts-tmp-1.lua
+@@ -23,6 +23,21 @@ local wc_artifacts_i18n = _("Artifacts owned")
+ -- Table of all artifacts to conquer
+ local artifact_fields = {}
+
++-- Table of players excluded from winning
++local excluded_from_winning = {}
++
++-- global for extending, do not use module's return value instead to be compatible with old wl versions
++wc_artifacts_extendable = wc_artifacts_extendable_prepared = {
++   exclude_from_winning = false, -- is set from init
++   get_artifact_fields = function()
++      return artifact_fields
++   end,
++   r = false -- to reuse parts by other addons, is set later
++}
++local function api_exclude_from_winning(player)
++   excluded_from_winning[player.number] = true
++end
++
+ local r = {
+    name = wc_name,
+    description = wc_desc,
+@@ -39,6 +54,7 @@ local r = {
+             end
+          end
+       end
++      wc_artifacts_extendable.exclude_from_winning = api_exclude_from_winning
+    end,
+    func = function()
+       push_textdomain("win_conditions")
+@@ -128,7 +144,7 @@ local r = {
+          check_player_defeated(plrs, lost_game.title, lost_game.body, wc_descname, wc_version)
+          local all_artifacts_found = true
+          for idx, f in ipairs(artifact_fields) do
+-            if f.owner then
++            if f.owner and not excluded_from_winning[f.owner.number] then
+                if artifacts_owner[f] then
+                   if f.owner.team ~= artifacts_owner[f].team or (f.owner.team == 0 and f.owner.number ~= artifacts_owner[f].number) then
+                      -- a new team has this artifact
+@@ -142,6 +158,7 @@ local r = {
+                end
+             else
+                all_artifacts_found = false
++               artifacts_owner[f] = nil -- delete in case owned by excluded player
+             end
+          end
+       until all_artifacts_found
+@@ -212,5 +229,6 @@ local r = {
+    pop_textdomain()
+    end,
+ }
++wc_artifacts_extendable.r = r
+ pop_textdomain()
+ return r

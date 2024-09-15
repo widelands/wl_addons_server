@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Alex Rijckaert, 2023
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 03:06+0200\n"
+"POT-Creation-Date: 2023-07-23 03:05+0200\n"
 "PO-Revision-Date: 2023-07-19 18:08+0000\n"
+"Last-Translator: Alex Rijckaert, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -19,25 +23,39 @@ msgstr ""
 
 #: addons/editor_swap_terrains.wad/addon:2
 msgid "Editor: Swap Terrains"
-msgstr ""
+msgstr "Editor: Wissel van terrein"
 
 #: addons/editor_swap_terrains.wad/addon:3
-msgid "A plugin for the editor to easily swap two terrain types."
+msgid ""
+"A plugin for the editor to easily replace or swap two terrain types globally."
 msgstr ""
+"Een plugin voor de editor om eenvoudig twee terreintypes globaal te "
+"vervangen of te verwisselen."
 
 #: addons/editor_swap_terrains.wad/init.lua:8
-#: addons/editor_swap_terrains.wad/show_window.lua:23
+#: addons/editor_swap_terrains.wad/show_window.lua:24
 msgid "Swap Terrains"
-msgstr ""
+msgstr "Wissel Terreinen"
 
 #: addons/editor_swap_terrains.wad/init.lua:9
 msgid "Globally exchange two terrains with each other"
-msgstr ""
+msgstr "Globaal twee terreinen met elkaar uitwisselen"
 
-#: addons/editor_swap_terrains.wad/show_window.lua:67
+#: addons/editor_swap_terrains.wad/show_window.lua:77
+msgid "Replace"
+msgstr "Vervang"
+
+#: addons/editor_swap_terrains.wad/show_window.lua:78
+msgid ""
+"Globally replace all occurrences of the left terrain with the right terrain"
+msgstr ""
+"Globaal alle voorkomens van het linker terrein vervangen door het rechter "
+"terrein"
+
+#: addons/editor_swap_terrains.wad/show_window.lua:90
 msgid "Swap"
-msgstr ""
+msgstr "Wissel"
 
-#: addons/editor_swap_terrains.wad/show_window.lua:68
-msgid "Swap the two selected terrains"
-msgstr ""
+#: addons/editor_swap_terrains.wad/show_window.lua:91
+msgid "Globally swap the two selected terrains"
+msgstr "Globaal de twee geselecteerde terreinen verwisselen"

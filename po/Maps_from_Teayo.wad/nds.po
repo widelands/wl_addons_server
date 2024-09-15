@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 03:05+0200\n"
+"POT-Creation-Date: 2023-09-26 03:06+0200\n"
 "PO-Revision-Date: 2023-07-07 18:30+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -25,18 +25,29 @@ msgstr ""
 #: addons/Maps_from_Teayo.wad/addon:6
 msgid ""
 "This Addon contains all of my Maps. Some of my Maps are also on the "
-"Widelands Website Maps archive aviable."
+"Widelands Website Maps archive aviable. Maps Total : 25 , Major Maps : 9 , "
+"Variant Maps : 15 , Major Maps with Variant Maps : 5"
 msgstr ""
-"In deesem Verwiedern sünd all miene Kaarten. Eenige daarvun gifft dat ok up "
-"de Kaartenlist up de Widelands-Internett-Sied."
+"Deeses Verwiedern enthollt all miene Kaarten. Eenige daarvun gifft dat ok up "
+"de Kaartenlist up de Widelands-Internett-Sied. Kaarten all tosamen: 25; "
+"Grote Kaarten: 9; Kaarten in verschedenen Aarden: 15; Grote Kaarten in "
+"verschedenen Aarden: 5"
 
-#: addons/Maps_from_Teayo.wad/addon:9 addons/Maps_from_Teayo.wad/dirnames:4
+#: addons/Maps_from_Teayo.wad/addon:9
 msgid "Maps_from_Teayo"
 msgstr "Kaarten vun Teayo"
+
+#: addons/Maps_from_Teayo.wad/dirnames:4
+msgid "Teayo's Karten"
+msgstr "Teayo siene Kaarten"
 
 #: input:8 standard
 msgid "Circle Island"
 msgstr "Kreis-Insel"
+
+#: input:8 standard
+msgid "Far small islands"
+msgstr "Wiede lütte Inseln"
 
 #: input:8 standard
 msgid "Lack of Space 08-64"
@@ -45,6 +56,10 @@ msgstr "Keen Platz 08-64"
 #: input:8 standard
 msgid "Lack of Space 16-96"
 msgstr "Keen Platz 16-96"
+
+#: input:8 standard
+msgid "Ozean Raster Vorlage"
+msgstr "See-Gadder-Vörlaag"
 
 #: input:8 standard
 msgid "Rectangle Valley - Variant 1"
@@ -188,6 +203,32 @@ msgstr ""
 "352; Kommentaaren: 0; Beweerten: 6 (2 Beweertens); Tolest bewarkt: "
 "[ 06.07.2023, Widelands-Versioon 1.2, Kaarten-Bewarken: Kaart-Titel, "
 "Beschrieven un Wenk ut Düütsch na Engelsk översett. ] ]"
+
+#: input:10 standard
+msgid ""
+"Eight islands in the middle of the ocean. Each island has six harbor "
+"building sites, one harbor building site in each corner of the island. All "
+"islands are the same size and arranged evenly, so that the distance between "
+"the individual islands is as equal as possible. The starting position is in "
+"the middle of the island and due to its proximity to the coast, it is hardly "
+"protected from landings. Each island is sufficiently large and therefore "
+"offers sufficient building space."
+msgstr ""
+"Acht Insels midden in de See. Elkeen Insel hett sess Rüümte för Muden, eene "
+"in elkeen Hörn vun de Insel. All Insels hebben de süöve Grött un sünd "
+"evenmatig anörnt, un de Ofstand tüsken de enkelt Insels is so evenmatig as "
+"mögelk. De Anfangsstee is in de Midde vun de Insel, un se is dicht genoog to "
+"de Küst, dat se haast nich vör Anlannens schütt is. Elkeen Insel is groot "
+"genoog un hett um dat genoog Rüümte tum Bauen."
+
+#: input:10 standard
+msgid ""
+"Eine Vorlage Karte ohne Spieler und mit Raster auf einen Ozean. Eine gute "
+"Grundlage um eine symetrische, ausgewogene Karte darauf aufbauend zu "
+"erstellen."
+msgstr ""
+"Eene Vörlaag-Kaart sünner Speler un mit Gadder up eener See. Eene gode "
+"Grundlaag. um daarup eene symmetrisk, utgleken Kaart to bauen."
 
 #: input:10 standard
 msgid ""
@@ -516,6 +557,20 @@ msgstr ""
 
 #: input:11 standard
 msgid ""
+"Ports : 54 (6 per Island, 1 per Island Corner) , Artifacts : 1 (Center "
+"Island) , Mountain Resources : Many 5/5 , Trees : Many 5/5 , Rocks : Medium "
+"3/5 , Animals : Many 4/5 , Fishes : Medium 3/5 (5 per Point) , Max ferry "
+"path length : None , Height steepness : Medium 3/5 , Big building Places : "
+"Medium 3/5"
+msgstr ""
+"Muden: 54 (6 pro Insel, 1 pro Inselhörn) · künstelk Schatten: 1 "
+"(Middelinsel) · Bargmineraalen: Mennig 5/5 · Bomen: Mennig 5/5 · Stenen: "
+"Middel 3/5 · Deerten: Mennig 4/5 · Fiss: Middel 3/5 (5 pro Knütt) · "
+"Priellängde: Keene · Höchten-Stuuvheid: Middel 3/5 · Grote Rüümte tum Bauen: "
+"Middel 3/5"
+
+#: input:11 standard
+msgid ""
 "Ports : Many 20+ , Artifacts : Medium 12 , Montain Resources : Many 4/5 , "
 "Trees : Few 2/5 , Rocks : Medium 3/5 , Animals : Few 2/5 , Fishes : Many 4/5 "
 "(3 per Point) , Max ferry path length : None , Height steepness : Low 1/5 , "
@@ -783,3 +838,7 @@ msgstr "Översicht över de Kaart Tichupaan – Unland im Bewarker"
 #: screenshots/Maps_from_Teayo.wad/descriptions:14
 msgid "A Overview of the Map Tichupane - Desert in Editor"
 msgstr "Översicht över de Kaart Tichupaan – Wüüst im Bewarker"
+
+#: screenshots/Maps_from_Teayo.wad/descriptions:15
+msgid "A Overview of the Islands from the Map"
+msgstr "Eene Översicht över de Insels vun de Kaart"

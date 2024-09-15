@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Stephan Lutz <stephan-lutz@gmx.de>, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-25 03:07+0200\n"
+"PO-Revision-Date: 2023-08-04 10:48+0000\n"
+"Last-Translator: Stephan Lutz <stephan-lutz@gmx.de>, 2023\n"
+"Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addons/editor_copy_area.wad/addon:2
+msgid "Editor: Copy Area"
+msgstr "Editor: Kartenausschnitt kopieren"
+
+#: addons/editor_copy_area.wad/addon:3
+msgid ""
+"A plugin for the editor to copy the contents of a map region to another "
+"region."
+msgstr ""
+"Eine Erweiterung für den Karteneditor um den Inhalt einer Kartenregion in "
+"eine andere Region zu kopieren"
+
+#: addons/editor_copy_area.wad/callback.lua:62
+msgid "Overlap"
+msgstr "Überlappung"
+
+#: addons/editor_copy_area.wad/callback.lua:62
+msgid "The two rectangles must not overlap."
+msgstr "Die zwei Rechtecke dürfen sich nicht überlappen"
+
+#: addons/editor_copy_area.wad/init.lua:8
+#: addons/editor_copy_area.wad/show_window.lua:14
+msgid "Copy Area"
+msgstr "Kartenausschnitt Kopieren"
+
+#: addons/editor_copy_area.wad/init.lua:9
+msgid "Copy a map area to another area"
+msgstr "Kopiere einen Kartenausschnitt in einen anderen Ausschnitt"
+
+#: addons/editor_copy_area.wad/show_window.lua:36
+msgid "Source Rectangle:"
+msgstr "Quellenausschnitt:"
+
+#: addons/editor_copy_area.wad/show_window.lua:50
+#: addons/editor_copy_area.wad/show_window.lua:145
+msgid "X"
+msgstr "X"
+
+#: addons/editor_copy_area.wad/show_window.lua:66
+#: addons/editor_copy_area.wad/show_window.lua:161
+msgid "Y"
+msgstr "Y"
+
+#: addons/editor_copy_area.wad/show_window.lua:82
+#: addons/editor_copy_area.wad/show_window.lua:177
+msgid "Width"
+msgstr "Breite"
+
+#: addons/editor_copy_area.wad/show_window.lua:105
+#: addons/editor_copy_area.wad/show_window.lua:193
+msgid "Height"
+msgstr "Höhe"
+
+#: addons/editor_copy_area.wad/show_window.lua:131
+msgid "Destination Rectangle:"
+msgstr "Zielausschnitt:"
+
+#: addons/editor_copy_area.wad/show_window.lua:208
+msgid "Copy"
+msgstr "Kopieren"
+
+#: screenshots/editor_copy_area.wad/descriptions:3
+msgid "Create perfectly repetitive maps with ease"
+msgstr "Einfach Karten erstellen, die sich perfekt wiederholen"

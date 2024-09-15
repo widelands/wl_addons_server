@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Alex Rijckaert, 2023
+# Alex Rijckaert, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 03:06+0200\n"
+"POT-Creation-Date: 2024-01-15 03:07+0100\n"
 "PO-Revision-Date: 2023-06-22 14:38+0000\n"
-"Last-Translator: Alex Rijckaert, 2023\n"
+"Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -22,14 +22,26 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/time-limitted-peaceful.wad/addon:4
-msgid "limits the peaceful mode to 45 minutes"
-msgstr "beperkt de vredige modus tot 45 minuten"
+msgid "Time limited peaceful mode"
+msgstr "Tijdgebonden vreedzame modus"
 
-#: addons/time-limitted-peaceful.wad/init.lua:20
-msgid "peaceful mode ends now"
-msgstr "vreedzame modus eindigt nu"
+#: addons/time-limitted-peaceful.wad/init.lua:29
+msgid "Peaceful mode ends now"
+msgstr "Vreedzame modus eindigt nu"
 
-#: addons/time-limitted-peaceful.wad/init.lua:21
-msgid "all players can attack each other now (team mates excluded of course)"
+#: addons/time-limitted-peaceful.wad/init.lua:30
+msgid "All players can attack each other. (Team mates excluded of course.)"
 msgstr ""
-"alle spelers kunnen elkaar nu aanvallen (teamgenoten uitgezonderd natuurlijk)"
+"Alle spelers kunnen elkaar aanvallen. (Teamgenoten uitgezonderd natuurlijk)."
+
+#: addons/time-limitted-peaceful.wad/init.lua:77
+msgid "win condition config"
+msgstr "winvoorwaarde configuratie"
+
+#: addons/time-limitted-peaceful.wad/init.lua:88
+msgid "Peaceful mode for ..."
+msgstr "Vredige modus voor ..."
+
+#: addons/time-limitted-peaceful.wad/init.lua:89
+msgid "Duration of peaceful mode"
+msgstr "Duur van de vredige modus"

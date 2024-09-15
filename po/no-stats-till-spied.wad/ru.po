@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Yuriy Sokolov <lention@mail.ru>, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-20 03:07+0100\n"
+"PO-Revision-Date: 2024-01-10 16:15+0000\n"
+"Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
+"ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: addons/no-stats-till-spied.wad/addon:4
+msgid "No player stats until a scout spied them"
+msgstr "Нет статистики по игрокам, пока разведчик их не разведает."
+
+#: addons/no-stats-till-spied.wad/addon:5
+msgid "It needs a scout to know details about the other players."
+msgstr "Нужен разведчик, чтобы узнать подробности о других игроках."
+
+#: addons/no-stats-till-spied.wad/init.lua:18
+msgid "No player statistics till spied"
+msgstr "Нет статистики по игрокам, пока не будет осуществлена разведка"
+
+#: addons/no-stats-till-spied.wad/init.lua:19
+msgid ""
+"Players have statistics about their XXX in their warehouses (all buildings "
+"storing wares).\n"
+"            To know statistics about other players, you need a scout to spy "
+"there."
+msgstr ""
+"У игроков есть статистика о XXX на принадлежащих им складах (всех зданиях, "
+"хранящих товары).\n"
+"Чтобы узнать статистику о других игроках, вам нужен разведчик, который всё "
+"разведает."
+
+#. TRANSLATORS: %s is the name of a player
+#: addons/no-stats-till-spied.wad/init.lua:67
+#, lua-format
+msgid "A spy has now information about %s. Find it in statistics."
+msgstr "Шпион заполучил информацию о %s. Её можно найти в статистике."
+
+#: addons/no-stats-till-spied.wad/init.lua:69
+msgid "A spy gives information"
+msgstr "Шпион передает информацию"
