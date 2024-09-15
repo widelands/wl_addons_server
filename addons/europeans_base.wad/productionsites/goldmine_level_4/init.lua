@@ -52,7 +52,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "planks", amount = 6 }
+        { name = "blackwood", amount = 8 }
     },
 
     programs = {
@@ -60,30 +60,29 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
-                "return=skipped when economy needs coal and not economy needs ore",
-                "return=skipped unless site has planks:4",
-                "consume=planks",
+                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs ore",
+                "return=skipped unless site has blackwood:4",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_marble",
                 "sleep=duration:5s",
-                "consume=planks",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_quartz",
                 "sleep=duration:5s",
-                "consume=planks",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_ore",
                 "call=mine_marble",
                 "sleep=duration:5s",
-                "consume=planks",
+                "consume=blackwood",
                 "call=mine_stone",
                 "call=mine_ore",
                 "call=mine_ore",
@@ -126,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=planks:4",
+                "consume=blackwood:4",
                 "produce=ore:10 granite:4 marble:2 quartz:2",
             }
         },

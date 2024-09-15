@@ -101,9 +101,11 @@ wl.Descriptions():new_productionsite_type {
                 "call=pausing_production_for_inputs",
                 "call=plant_reed",
                 "call=plant_barley",
-                "call=plant_reed",
                 "call=plant_rye",
+                "call=plant_wheat",
                 "call=plant_reed",
+                "call=plant_barley",
+                "call=plant_rye",
                 "call=plant_wheat"
             }
         },
@@ -126,9 +128,11 @@ wl.Descriptions():new_productionsite_type {
                 "call=pausing_production_for_outputs",
                 "call=harvest_reed",
                 "call=harvest_barley",
-                "call=harvest_reed",
                 "call=harvest_rye",
+                "call=harvest_wheat",
                 "call=harvest_reed",
+                "call=harvest_barley",
+                "call=harvest_rye",
                 "call=harvest_wheat"
             }
         },
@@ -136,7 +140,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production for waiting for inputs"),
             actions = {
-                "return=skipped when site has water:6",
+                "return=skipped when site has water:4",
                 "sleep=duration:5m"
             }
         },
@@ -148,7 +152,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs barley",
                 "return=skipped when economy needs rye",
                 "return=skipped when economy needs wheat",
-                "sleep=duration:10m"
+                "sleep=duration:5m"
             }
         },
         plant_barley = {
@@ -158,11 +162,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs reed and not economy needs barley",
                 "return=skipped when economy needs rye and not economy needs barley",
                 "return=skipped when economy needs wheat and not economy needs barley",
-                "return=skipped unless site has water:2",
+                "return=skipped unless site has water",
                 "consume=water",
                 "callworker=plant_barley",
                 "animate=working duration:5s",
-                "consume=water",
                 "callworker=plant_barley",
                 "animate=working duration:5s"
             }
@@ -174,10 +177,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs barley and not economy needs reed",
                 "return=skipped when economy needs rye and not economy needs reed",
                 "return=skipped when economy needs wheat and not economy needs reed",
+                "return=skipped unless site has water",
                 "consume=water",
                 "callworker=plant_reed",
                 "animate=working duration:5s",
-                "consume=water",
                 "callworker=plant_reed",
                 "animate=working duration:5s"
             }
@@ -189,11 +192,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs barley and not economy needs rye",
                 "return=skipped when economy needs reed and not economy needs rye",
                 "return=skipped when economy needs wheat and not economy needs rye",
-                "return=skipped unless site has water:2",
+                "return=skipped unless site has water",
                 "consume=water",
                 "callworker=plant_rye",
                 "animate=working duration:5s",
-                "consume=water",
                 "callworker=plant_rye",
                 "animate=working duration:5s"
             }
@@ -205,11 +207,10 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs barley and not economy needs wheat",
                 "return=skipped when economy needs reed and not economy needs wheat",
                 "return=skipped when economy needs rye and not economy needs wheat",
-                "return=skipped unless site has water:2",
+                "return=skipped unless site has water",
                 "consume=water",
                 "callworker=plant_wheat",
                 "animate=working duration:5s",
-                "consume=water",
                 "callworker=plant_wheat",
                 "animate=working duration:5s"
             }

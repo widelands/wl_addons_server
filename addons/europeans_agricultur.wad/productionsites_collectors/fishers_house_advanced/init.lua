@@ -29,16 +29,22 @@ wl.Descriptions():new_productionsite_type {
     working_positions = {
         europeans_fishbreeder = 1
     },
+    
+    inputs = {
+        { name = "water", amount = 4 },
+    },
 
     programs = {
         main = {
             -- TRANSLATORS: Completed/Skipped/Did not start fishing because ...
             descname = pgettext("europeans_building", "breeding and fishing"),
             actions = {
+                "return=skipped when economy needs water and not economy needs fish",
+                "consume=water",
                 "callworker=breed",
-                "sleep=duration:10s",
+                "sleep=duration:1m",
                 "callworker=fish",
-                "sleep=duration:10s"
+                "sleep=duration:1m"
             }
         },
     },

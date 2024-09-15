@@ -153,7 +153,13 @@ function get_plr_table_rt(plrs_data)
                counter = counter + 1
                if counter <= 1 then
                   -- Show player name and starting field only for the first row
-                  col1 = col1 .. p_font("color="..clr, pl)
+                  if get_build_id():find("1.2") ~= nil then
+                     -- Version 1.2 has no possibility for links
+                     col1 = col1 .. p_font("color="..clr, pl)
+                  else
+                     -- Make the player name a link to playerposition
+                     col1 = col1 .. p_font("color="..clr, a(pl, "ui", "result_window", get_field_string(info.Start_f)))
+                  end
                   col2 = col2 .. p_font("align=center", "color="..clr, get_field_string(info.Start_f))
                end
                -- resource

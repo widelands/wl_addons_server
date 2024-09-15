@@ -66,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining coal because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs coal or economy needs granite or economy needs diamond or workers need experience",
+                "return=skipped when economy needs log and not economy needs granite and not economy needs diamond and not economy needs coal",
                 "sleep=duration:5s",
                 "call=mine_stone_basic",
                 "return=skipped unless site has log:3",

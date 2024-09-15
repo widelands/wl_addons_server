@@ -173,6 +173,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_wood",
+                default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -201,7 +202,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "granite",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -287,6 +288,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_metal",
+                default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
@@ -380,19 +382,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "scythe",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
-                        pgettext("europeans_ware", "The scythe is a secondary tool of the lumberjacks."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
-                        pgettext("europeans_ware", "Scythes are produced by all smithies.")
-                    }
-                }
-            },
-            {
                 name = "felling_ax",
                 default_target_quantity = 8,
                 preciousness = 1,
@@ -402,6 +391,19 @@ wl.Descriptions():new_tribe {
                         pgettext("europeans_ware", "The felling ax is the tool to chop down trees."),
                         -- TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 2
                         pgettext("europeans_ware", "Felling axes are used by lumberjacks and produced by all smithies.")
+                    }
+                }
+            },
+            {
+                name = "scythe",
+                default_target_quantity = 8,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
+                        pgettext("europeans_ware", "The scythe is a secondary tool of the lumberjacks."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
+                        pgettext("europeans_ware", "Scythes are produced by all smithies.")
                     }
                 }
             },
@@ -591,6 +593,8 @@ wl.Descriptions():new_tribe {
             -- Carriers and Soldiers
             {
                 name = "europeans_carrier",
+                default_target_quantity = 64,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
                     purpose = pgettext("europeans_worker", "Used for recruiting all other workers.")
@@ -1817,22 +1821,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_ferry_yard_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
-                purpose = pgettext("europeans_building", "Builds ferries."),
-                -- TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
-                note = pgettext("europeans_building", "Needs water nearby.")
-            }
-        },
-        {
-            name = "europeans_shipyard_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
-                purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports.")
-            }
-        },
-        {
             name = "europeans_shipyard_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
@@ -2058,7 +2046,7 @@ wl.Descriptions():new_tribe {
       tool_manufactory = "europeans_manufactory_basic",
       weapon_manufactory = "europeans_manufactory_basic",
       armor_manufactory = "europeans_manufactory_basic",
-      shipyard = "europeans_shipyard_basic",
+      shipyard = "europeans_shipyard_advanced",
       ferry_yard = "europeans_ferry_yard_basic",
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",

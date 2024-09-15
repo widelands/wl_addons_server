@@ -42,6 +42,11 @@ wl.Descriptions():new_tribe {
         { ware = "beer_strong", points = 3 },
         { ware = "wine", points = 4 },
         { ware = "cloth", points = 1 },
+        { ware = "armor", points = 2 },
+        { ware = "armor_advanced", points = 3 },
+        { ware = "boots_advanced", points = 3 },
+        { ware = "shield_advanced", points = 4 },
+        { ware = "spear_advanced", points = 4 },
     },
 
     -- Image file paths for this tribe's road and waterway textures
@@ -105,7 +110,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "granite",
-                default_target_quantity = 16,
+                default_target_quantity = 32,
                 preciousness = 2,
                 helptexts = {
                     purpose = {
@@ -179,6 +184,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_wood",
+                default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -349,6 +355,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "scrap_metal",
+                default_target_quantity = 1,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
@@ -574,19 +581,6 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "scythe",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
-                        pgettext("europeans_ware", "The scythe is the tool of the farmers."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
-                        pgettext("europeans_ware", "Scythes are produced by all smithies.")
-                    }
-                }
-            },
-            {
                 name = "felling_ax",
                 default_target_quantity = 8,
                 preciousness = 1,
@@ -600,15 +594,15 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "shovel",
+                name = "scythe",
                 default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
-                        pgettext("europeans_ware", "The shovel is an essential tool. Therefore the forester, the gardener and the farmer use them."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
-                        pgettext("europeans_ware", "They are produced by all smithies.")
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
+                        pgettext("europeans_ware", "The scythe is the tool of the farmers."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
+                        pgettext("europeans_ware", "Scythes are produced by all smithies.")
                     }
                 }
             },
@@ -645,15 +639,28 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     purpose = {
                          -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
-                         pgettext("europeans_ware", "The saw is an essential tool. This saw is needed by the worker and the woodcutter."),
+                         pgettext("europeans_ware", "The saw is an essential tool. This saw is needed by the worker, the builder, and the woodcutter."),
                          -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
                          pgettext("europeans_ware", "Make sure you’ve always got some in reserve! They are produced by all smithies.")
                      }
                 }
             },
+            {
+                name = "shovel",
+                default_target_quantity = 8,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
+                        pgettext("europeans_ware", "The shovel is an essential tool. Therefore the builder, the forester, the gardener, and the farmer use them."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
+                        pgettext("europeans_ware", "They are produced by all smithies.")
+                    }
+                }
+            },
         },
         {
-            -- Armor
+            -- Armor, Weapons, Shields and Helmets
             {
                 name = "armor_wooden",
                 default_target_quantity = 16,
@@ -661,33 +668,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
                     purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the armor smithy. In combination with wooden spear, it is the equipment to fit out young soldiers.")
-                }
-            },
-            {
-                name = "armor_processed",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Processed Armor
-                    purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the weaving mill. In combination with wooden spear, it is the equipment to fit out young soldiers.")
-                }
-            },
-            {
-                name = "armor_compressed",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Chain Armor
-                    purpose = pgettext("europeans_ware", "The compressed armor is a medium armor for European soldiers. It is produced by a tailor and used in a battle arena to protect soldiers with additional health points.")
-                }
-            },
-            {
-                name = "armor_advanced",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
-                    purpose = pgettext("europeans_ware", "The advanced armor is produced in the a smithy and used in the battle arena to protect soldiers with additional health points.")
                 }
             },
             {
@@ -700,35 +680,14 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "boots_sturdy",
-                default_target_quantity = 8,
+                name = "helmet_wooden",
+                default_target_quantity = 16,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
-                    purpose = pgettext("europeans_ware", "Sturdy boots are excellent footwear for soldiers to be quicker on their feet. They are produced by the dressmaker and used to train soldiers’ evade from level 0 to level 1.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
+                    purpose = pgettext("europeans_ware", "The helmet is the basic defense tool of a soldier. It is produced in the smithy. In combination with armor, it is the equipment to fit out young soldiers.")
                 }
             },
-            {
-                name = "boots_swift",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Sturdy Boots
-                    purpose = pgettext("europeans_ware", "Swift boots are light and durable footwear for soldiers to be quicker on their feet. They are produced by the dressmaker and used to train soldiers’ evade from level 1 to level 2.")
-                }
-            },
-            {
-                name = "boots_advanced",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
-                    purpose = pgettext("europeans_ware", "Hero boots! The only suitable footwear for a real hero. They are produced by the dressmaker and used to train soldiers’ evade from level 2 to level 3.")
-                }
-            }
-        },
-        {
-            -- Weapons, Shields and Helmets
             {
                 name = "spear_wooden",
                 default_target_quantity = 16,
@@ -739,57 +698,21 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "spear_advanced",
+                name = "armor_advanced",
                 default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
-                    purpose = pgettext("europeans_ware", "This is a advanced spear with a steel tip. It is produced in a smithy and used in a battle arena to train soldiers in attack.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
+                    purpose = pgettext("europeans_ware", "The advanced armor is produced in the a manufactory and used in the training center to protect soldiers with additional health points.")
                 }
             },
             {
-                name = "ax_broad",
+                name = "boots_advanced",
                 default_target_quantity = 8,
                 preciousness = 1,
                 helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Broad Ax
-                    purpose = pgettext("europeans_ware", "This is an broad ax. It is produced in a smithy and used in a battle arena to train soldiers in attack.")
-                }
-            },
-            {
-                name = "sword_broad",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Broad Sword
-                    purpose = pgettext("europeans_ware", "This is a broad sword. It is produced in the advanced smithy and used in a battle arena to train soldiers in attack.")
-                }
-            },
-            {
-                name = "helmet_wooden",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-                    purpose = pgettext("europeans_ware", "The helmet is the basic defense tool of a soldier. It is produced in the smithy. In combination with armor, it is the equipment to fit out young soldiers.")
-                }
-            },
-            {
-                name = "helmet_mask",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-                    purpose = pgettext("europeans_ware", "The mask is the medium defense tool of a soldier. It is produced in a smithy and used in a battle arena to train soldiers in defense.")
-                }
-            },
-            {
-                name = "shield_steel",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Steel Shield
-                    purpose = pgettext("europeans_ware", "This steel shield is produced in a smithy and used in a battle arena to train soldiers in defense.")
+                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
+                    purpose = pgettext("europeans_ware", "Hero boots! The only suitable footwear for a real hero. They are produced by the dressmaker and used to train soldiers’ evade.")
                 }
             },
             {
@@ -798,9 +721,18 @@ wl.Descriptions():new_tribe {
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
-                    purpose = pgettext("europeans_ware", "These advanced shields are used by the best soldiers of the Europeans. They are produced in the advanced smithy and used in the advanced battle arena to train soldiers in defense.")
+                    purpose = pgettext("europeans_ware", "These advanced shields are used by the best soldiers of the Europeans. They are produced in the advanced manufactory and used in the training center to train soldiers in defense.")
                 }
-            }
+            },
+            {
+                name = "spear_advanced",
+                default_target_quantity = 8,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
+                    purpose = pgettext("europeans_ware", "This is a advanced spear with a steel tip. It is produced in the advanced manufactory and used in a training center to train soldiers in attack.")
+                }
+            },
         }
     },
     -- Workers positions in workers windows.
@@ -811,6 +743,8 @@ wl.Descriptions():new_tribe {
             -- Carriers
             {
                 name = "europeans_carrier",
+                default_target_quantity = 64,
+                preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Carrier
                     purpose = pgettext("europeans_worker", "Used for recruiting all other workers.")
@@ -2465,43 +2399,17 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_battlearena_basic",
+            name = "europeans_training_center_defense",
             helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
-                note = pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’ and ‘Attack’."),
+                -- TRANSLATORS: Note helptext for a Europeans training site: Fitness Center
+                note = pgettext("europeans_building", "Trains soldiers only in ‘Defense’."),
             }
         },
         {
-            name = "europeans_battlearena_level_1",
+            name = "europeans_training_center_attack",
             helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 1
-                    pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."),
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Trainingcamp, part 2
-                    pgettext("europeans_building", "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to remain totally unaffected.")
-                },
-            }
-        },
-        {
-            name = "europeans_battlearena_level_2",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 1
-                    pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."),
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Arena, part 2
-                    pgettext("europeans_building", "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to remain totally unaffected.")
-                },
-            }
-        },
-        {
-            name = "europeans_battlearena_level_3",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 1
-                    pgettext("europeans_building", "Trains soldiers in ‘Evade’, ‘Health’, ‘Attack’ and in ‘Defense’."),
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Colosseum, part 2
-                    pgettext("europeans_building", "‘Evade’ increases the soldier’s chance not to be hit by the enemy and so to remain totally unaffected.")
-                },
+                -- TRANSLATORS: Note helptext for a Europeans training site: Fitness Center
+                note = pgettext("europeans_building", "Trains soldiers only in ‘Attack’."),
             }
         },
 
@@ -2668,22 +2576,6 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Builds ferries."),
                 -- TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
                 note = pgettext("europeans_building", "Needs water nearby.")
-            }
-        },
-        {
-            name = "europeans_ferry_yard_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
-                purpose = pgettext("europeans_building", "Builds ferries."),
-                -- TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
-                note = pgettext("europeans_building", "Needs water nearby.")
-            }
-        },
-        {
-            name = "europeans_shipyard_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
-                purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports.")
             }
         },
         {
@@ -2889,8 +2781,8 @@ wl.Descriptions():new_tribe {
    fastplace = {
       warehouse = "europeans_warehouse",
       port = "europeans_port",
-      training_small = "europeans_battlearena_basic",
-      training_large = "europeans_battlearena_level_3",
+      training_small = "europeans_fitness_center_health",
+      training_large = "europeans_training_center_attack",
       military_small_primary = "europeans_sentry_basic",
       military_small_secondary = "europeans_sentry_level_3",
       military_medium_primary = "europeans_barrier_basic",
@@ -2927,7 +2819,7 @@ wl.Descriptions():new_tribe {
       tool_smithy = "europeans_manufactory_basic",
       weapon_smithy = "europeans_manufactory_basic",
       armor_smithy = "europeans_manufactory_basic",
-      shipyard = "europeans_shipyard_basic",
+      shipyard = "europeans_shipyard_advanced",
       ferry_yard = "europeans_ferry_yard_basic",
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",

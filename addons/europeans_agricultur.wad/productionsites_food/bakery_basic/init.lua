@@ -29,7 +29,8 @@ wl.Descriptions():new_productionsite_type {
             brick = 2,
             grout = 2,
             planks = 2,
-            marble = 2
+            marble = 2,
+            cloth = 2
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 2,
@@ -50,8 +51,8 @@ wl.Descriptions():new_productionsite_type {
 
     aihints = {
         very_weak_ai_limit = 1,
-        weak_ai_limit = 1,
-        normal_ai_limit = 2,
+        weak_ai_limit = 2,
+        normal_ai_limit = 3,
     },
 
     working_positions = {

@@ -15,9 +15,9 @@ local init_europeans = {
     script = dirname .. "units.lua",
 
     starting_conditions = {
-        "addons/europeans_trading.wad/tribes/scripting/starting_conditions/trading_outpost.lua";
-        "addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_human.lua";
         "addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua";
+        "addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_human.lua";
+        "addons/europeans_trading.wad/tribes/scripting/starting_conditions/trading_outpost.lua";
     }
 }
 pop_textdomain()

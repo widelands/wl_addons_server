@@ -71,13 +71,19 @@ wl.Descriptions():new_productionsite_type {
             descname = _"mining water",
             actions = {
                 "return=skipped unless economy needs water",
-                "animate=working duration:3s",
+                "animate=working duration:5s",
                 "mine=resource_water radius:12 yield:90% when_empty:90%",
-                "produce=water:2",
-                "animate=working duration:2s",
-                "produce=water:2",
-                "animate=working duration:2s",
-                "produce=water:2"
+                "produce=water",
+                "animate=working duration:1s",
+                "produce=water",
+                "animate=working duration:1s",
+                "produce=water",
+                "animate=working duration:1s",
+                "produce=water",
+                "animate=working duration:1s",
+                "produce=water",
+                "animate=working duration:1s",
+                "produce=water"
             }
         },
         mining_water_idle = {
@@ -85,8 +91,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs water",
-                "animate=working duration:7s",
+                "animate=working duration:5s",
                 "mine=resource_water radius:12 yield:90% when_empty:90%",
+                "animate=working duration:5s",
                 "produce=water",
                 "sleep=duration:60s"
             }

@@ -71,12 +71,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
             descname = _("hunting"),
             actions = {
-                -- time of worker: 8.2-58.6 sec, min+max average 33.4 sec
-                -- min. time total: 8.2 + 35 = 43.2 sec
-                -- max. time total: 58.6 + 35 = 93.6 sec
-                -- avg. time total: 33.4 + 35 = 68.4 sec
                 "callworker=hunt",
-                "sleep=duration:35s",
+                "sleep=duration:2m",
                 "produce=leather"
             }
         },

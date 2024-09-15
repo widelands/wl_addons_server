@@ -27,13 +27,12 @@ local init = {
     set_starting_warecount(player)
     
     -- Delay of 15 min between actions
-    local time_min = 15
+    local time_min = 30
     for i = 0, 2688 do
         doing_ai_stuff (player, i)
                
         sleep(time_min * 60000)
     end
-    reset_player_warehouse_policy(player)
 end
 }
 

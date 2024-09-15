@@ -61,12 +61,16 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining water because ...
             descname = pgettext("europeans_building", "mining water"),
             actions = {
-                "return=skipped unless economy needs water or workers need experience",
-                "animate=working duration:6s",
+                "return=skipped unless economy needs water",
+                "animate=working duration:8s",
                 "mine=resource_water radius:6 yield:70% when_empty:70%",
-                "produce=water:2",
-                "animate=working duration:5s",
-                "produce=water:2"
+                "produce=water",
+                "animate=working duration:2s",
+                "produce=water",
+                "animate=working duration:2s",
+                "produce=water",
+                "animate=working duration:2s",
+                "produce=water"
             }
         },
         mining_water_idle = {
@@ -74,8 +78,9 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs water",
-                "animate=working duration:11s",
+                "animate=working duration:7s",
                 "mine=resource_water radius:6 yield:70% when_empty:70%",
+                "animate=working duration:7s",
                 "produce=water",
                 "sleep=duration:60s"
             }

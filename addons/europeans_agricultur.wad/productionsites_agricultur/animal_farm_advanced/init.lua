@@ -213,6 +213,14 @@ wl.Descriptions():new_productionsite_type {
                 "produce=fish:4"
             }
         },
+        dummy_program = {
+            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+            descname = _"dummy program",
+            actions = {
+                "sleep=duration:10s",
+                "recruit=europeans_carrier_1"
+            }
+        }
     },
 }
 

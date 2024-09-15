@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 03:10+0200\n"
+"POT-Creation-Date: 2024-09-05 03:09+0200\n"
 "PO-Revision-Date: 2024-08-11 12:06+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -59,11 +59,11 @@ msgstr ""
 "binnenkomt. Je kunt de modus 'Versnellen bij melding' weer inschakelen met "
 "de knop op de werkbalk."
 
-#: addons/notify-speed.wad/init.lua:39
+#: addons/notify-speed.wad/init.lua:41 addons/notify-speed.wad/shortcuts.lua:6
 msgid "Toggle ‘Speed Down on Notify’ Mode"
 msgstr "Modus 'Snelheid omlaag bij melding' wisselen"
 
-#: addons/notify-speed.wad/init.lua:40
+#: addons/notify-speed.wad/init.lua:42
 msgid ""
 "Toggle whether to speed the game down when a new notification is received."
 msgstr ""
