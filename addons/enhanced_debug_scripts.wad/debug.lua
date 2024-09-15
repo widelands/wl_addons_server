@@ -1438,32 +1438,6 @@ function dismantle_all_buildings(player_number, building_name)
     end
 end
 
-function dismantle_stopped_buildings(player_number)
-    local game = wl.Game()
-    local player = game.players[player_number]
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and building.is_stopped == true then
-             building:dismantle(true)
-          end
-       end
-    end
-end
-
-function dismantle_idle_buildings(player_number, productivity_threshold)
-    local game = wl.Game()
-    local player = game.players[player_number]
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
-             building:dismantle(true)
-          end
-       end
-    end
-end
-
 function upgrade_all_buildings(player_number, building_name)
     local game = wl.Game()
     local player = game.players[player_number]
@@ -1479,32 +1453,6 @@ function upgrade_all_buildings(player_number, building_name)
           elseif string.find(tbuilding.name, string.lower(building_name)) then
              building:enhance(true)
           elseif tbuilding.type_name == string.lower(building_name) then
-             building:enhance(true)
-          end
-       end
-    end
-end
-
-function upgrade_stopped_buildings(player_number)
-    local game = wl.Game()
-    local player = game.players[player_number]
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and building.is_stopped == true then
-             building:enhance(true)
-          end
-       end
-    end
-end
-
-function upgrade_idle_buildings(player_number, productivity_threshold)
-    local game = wl.Game()
-    local player = game.players[player_number]
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-       for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-          if tbuilding.type_name == "productionsite" and building.productivity < productivity_threshold then
              building:enhance(true)
           end
        end

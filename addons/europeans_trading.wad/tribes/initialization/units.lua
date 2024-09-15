@@ -2292,7 +2292,7 @@ wl.Descriptions():new_tribe {
       armor_manufactory = "europeans_tailors_house_basic",
       boots_manufactory = "europeans_shoemakers_house_basic",
       big_manufactory = "europeans_manufactory_basic",
-      shipyard = "europeans_shipyard_basic",
+      shipyard = "europeans_shipyard_advanced",
       ferry_yard = "europeans_ferry_yard_basic",
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",

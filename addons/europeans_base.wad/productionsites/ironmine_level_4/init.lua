@@ -60,8 +60,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs ore or economy needs granite or economy needs marble or workers need experience",
-                "return=skipped when economy needs coal and not economy needs ore",
+                "return=skipped when economy needs blackwood and not economy needs granite and not economy needs marble and not economy needs quartz and not economy needs ore",
                 "return=skipped unless site has blackwood:4",
                 "consume=blackwood",
                 "call=mine_stone",

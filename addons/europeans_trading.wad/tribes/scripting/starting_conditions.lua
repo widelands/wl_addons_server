@@ -236,6 +236,35 @@ function allow_productionsites_per_input(player)
     end
 end
 
+function allow_warehouses_per_ware_amount(player)
+    local map = wl.Game().map
+    local tribe = player.tribe
+    local enough_ware_amount = true
+    
+    local warehouse_types = {}
+    for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
+        if (building.type_name == "warehouse") then
+            table.insert(warehouse_types, building.name)
+        end
+    end
+    local warehouses = {}
+    for i, building_name in ipairs(warehouse_types) do
+        warehouses = array_combine(warehouses, player:get_buildings(building_name))
+    end
+    local ware_economy = warehouses[1].flag.ware_economy
+
+    for k, ware in pairs(tribe.wares) do
+        if enough_ware_amount and (player:get_wares(ware.name) >= (16 + ware_economy:target_quantity(ware.name))) then
+            enough_ware_amount = true
+        else
+            enough_ware_amount = false
+        end
+    end
+    if enough_ware_amount then
+        player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
+    end
+end
+
 function allow_all_militarysites(player)
     local game = wl.Game()
     local tribe = player.tribe
@@ -308,14 +337,13 @@ function doing_ai_stuff(player, increment)
     if (increment == 0) then
         player:forbid_buildings("all")
         allow_all_militarysites(player)
-        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_lumberjacks_house_advanced", }
-        player:allow_buildings{"europeans_quarry_basic", "europeans_quarry_advanced", }
+        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_well_basic"}
     end
     if (increment >= 2) then
         allow_productionsites_per_input(player)
+        allow_warehouses_per_ware_amount(player)
     end
     if (increment >= 8) then
-        player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
         if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
             player:allow_buildings{"europeans_port", "europeans_port_big"}
         end

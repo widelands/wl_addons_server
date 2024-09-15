@@ -58,6 +58,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start sawing logs because ...
             descname = pgettext("europeans_building", "sawing logs"),
             actions = {
+                "return=skipped when economy needs log and not economy needs planks",
                 "return=skipped when economy needs blackwood and not economy needs planks",
                 "consume=log:2",
                 "playsound=sound/atlanteans/saw/benchsaw priority:50% allow_multiple",
@@ -92,6 +93,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "hardening wood"),
             actions = {
                 "return=skipped when economy needs log and not economy needs blackwood",
+                "return=skipped when economy needs planks and not economy needs blackwood",
                 "consume=log:2",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:1m",

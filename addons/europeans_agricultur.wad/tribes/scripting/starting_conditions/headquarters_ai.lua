@@ -8,7 +8,7 @@ push_textdomain("europeans_tribe.wad", true)
 
 local init = {
     -- TRANSLATORS: This is the name of a starting condition
-    descname = _ "Headquarters (AI optimized, no seafaring)",
+    descname = _ "Headquarters (AI optimized)",
     -- TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
     tooltip = _"AI optimized starting condition, not for human player.",
     func =  function(player, shared_in_start)
