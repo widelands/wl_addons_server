@@ -268,7 +268,16 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans ware: Quartz
                     purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
                 }
-            }
+            },
+            {
+                name = "diamond",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
+                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
+                }
+            },
         },
         {
             -- Building Materials 3 (Advanced)
@@ -329,15 +338,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans ware: Marble Column
                     purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the Europeans, so they are needed for nearly every advanced building. They are produced out of marble at a stonemason’s house.")
-                }
-            },
-            {
-                name = "diamond",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
-                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
                 }
             },
             {
@@ -457,7 +457,25 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans ware: Grape
                     purpose = pgettext("europeans_ware", "These grapes are the base for a tasty wine. They are harvested in a advanced farm and processed in a winery.")
                 }
-            }
+            },
+            {
+                name = "meat",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
+                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms. Miners consume meat.")
+                }
+            },
+            {
+                name = "fish",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
+                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms. Miners consume fish.")
+                }
+            },
         },
         {
             -- Food 2
@@ -495,24 +513,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for a Europeans ware: Biscuit
                     purpose = pgettext("europeans_ware", "Biscuits are produced in a bakery out of water, flour, honey and fruits. Advanced miners consume biscuit.")
-                }
-            },
-            {
-                name = "meat",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
-                    purpose = pgettext("europeans_ware", "Meat contains a lot of energy, and it is produced in animal farms. Miners consume meat.")
-                }
-            },
-            {
-                name = "fish",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Fish
-                    purpose = pgettext("europeans_ware", "Fish is one of the biggest food resources of the Europeans, and it is produced in animal farms. Miners consume fish.")
                 }
             },
             {
@@ -2385,14 +2385,14 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_fitness_center_health",
+            name = "europeans_training_center_health",
             helptexts = {
                 -- TRANSLATORS: Note helptext for a Europeans training site: Dungeon
                 note = pgettext("europeans_building", "Trains soldiers only in ‘Health’."),
             }
         },
         {
-            name = "europeans_fitness_center_evade",
+            name = "europeans_training_center_evade",
             helptexts = {
                 -- TRANSLATORS: Note helptext for a Europeans training site: Trainingscamp
                 note = pgettext("europeans_building", "Trains soldiers only in ‘Evade’."),
@@ -2401,7 +2401,7 @@ wl.Descriptions():new_tribe {
         {
             name = "europeans_training_center_defense",
             helptexts = {
-                -- TRANSLATORS: Note helptext for a Europeans training site: Fitness Center
+                -- TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
                 note = pgettext("europeans_building", "Trains soldiers only in ‘Defense’."),
             }
         },

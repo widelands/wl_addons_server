@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_trainingsite_type {
-    name = "europeans_fitness_center_health",
+    name = "europeans_training_center_health",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Fitness Center (Health)"),
+    descname = pgettext("europeans_building", "Training Center (Health)"),
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
@@ -51,16 +51,9 @@ wl.Descriptions():new_trainingsite_type {
     },
 
     inputs = {
-        { name = "meat", amount = 8 },
-        { name = "fish", amount = 8 },
-        { name = "bread", amount = 8 },
-        { name = "honey_bread", amount = 8 },
-        { name = "biscuit", amount = 8 },
-        { name = "beer", amount = 8 },
-        { name = "mead", amount = 8 },
-        { name = "beer_strong", amount = 4 },
-        { name = "wine", amount = 4 },
-        { name = "armor_advanced", amount = 8 },
+        { name = "armor_processed", amount = 4 },
+        { name = "armor_compressed", amount = 4 },
+        { name = "armor_advanced", amount = 4 },
     },
 
     programs = {
@@ -77,10 +70,9 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier health from level 0 to level 1"),
             actions = {
                 "checksoldier=soldier:health level:0",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
                 "checksoldier=soldier:health level:0",
-                "consume=armor_advanced",
-                "consume=meat:2 bread:2 beer:2",
+                "consume=armor_processed",
                 "train=soldier:health level:1"
             }
         },
@@ -89,11 +81,11 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier health from level 1 to level 2"),
             actions = {
                 "checksoldier=soldier:health level:1",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
                 "checksoldier=soldier:health level:1",
-                "consume=armor_advanced",
-                "consume=fish:2 honey_bread:2 mead:2",
-                "train=soldier:health level:2"
+                "consume=armor_compressed",
+                "train=soldier:health level:2",
+                "produce=scrap_metal"
             }
         },
         upgrade_soldier_health_2 = {
@@ -101,11 +93,11 @@ wl.Descriptions():new_trainingsite_type {
             descname = pgettext("europeans_building", "upgrading soldier health from level 2 to level 3"),
             actions = {
                 "checksoldier=soldier:health level:2",
-                "sleep=duration:15s",
+                "sleep=duration:20s",
                 "checksoldier=soldier:health level:2",
                 "consume=armor_advanced",
-                "consume=fish,meat:2 biscuit:2 wine,beer_strong:2",
-                "train=soldier:health level:3"
+                "train=soldier:health level:3",
+                "produce=scrap_metal"
             }
         },
     },

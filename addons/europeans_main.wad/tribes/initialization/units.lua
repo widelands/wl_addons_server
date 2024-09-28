@@ -186,20 +186,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            -- Building Materials 2 (Stone)
-            {
-                name = "clay",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
-                        pgettext("europeans_ware", "Clay is needed to make bricks."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
-                        pgettext("europeans_ware", "The Europeans gets clay from quarry.")
-                    }
-                }
-            },
+            -- Building Materials 2 (Stone and Clay)
             {
                 name = "granite",
                 default_target_quantity = 32,
@@ -227,6 +214,19 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "clay",
+                default_target_quantity = 8,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
+                        pgettext("europeans_ware", "Clay is needed to make bricks."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
+                        pgettext("europeans_ware", "The Europeans gets clay from gardeners house.")
+                    }
+                }
+            },
+            {
                 name = "brick",
                 default_target_quantity = 32,
                 preciousness = 1,
@@ -239,6 +239,9 @@ wl.Descriptions():new_tribe {
                     }
                 }
             },
+        },
+       {
+            -- Building Materials 3 (Mining)
             {
                 name = "marble",
                 default_target_quantity = 16,
@@ -257,9 +260,27 @@ wl.Descriptions():new_tribe {
                     purpose = pgettext("europeans_ware", "Marble columns represent the high culture of the Europeans, so they are needed for nearly every advanced building. They are produced out of marble at a stonemason’s house.")
                 }
             },
+            {
+                name = "quartz",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
+                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
+                }
+            },
+            {
+                name = "diamond",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
+                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
+                }
+            }
         },
         {
-            -- Building Materials 3 (Metal)
+            -- Mining (Coal and Ore)
             {
                 name = "coal",
                 default_target_quantity = 32,
@@ -306,24 +327,6 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Iron, part 2
                         pgettext("europeans_ware", "It is produced by the smelting works. Weapons, armor and tools are made of alloy.")
                     }
-                }
-            },
-            {
-                name = "quartz",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
-                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
-                }
-            },
-            {
-                name = "diamond",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
-                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
                 }
             },
         },

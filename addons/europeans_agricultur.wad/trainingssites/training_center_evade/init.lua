@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_trainingsite_type {
-    name = "europeans_fitness_center_evade",
+    name = "europeans_training_center_evade",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Fitness Center (Evade)"),
+    descname = pgettext("europeans_building", "Training Center (Evade)"),
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,

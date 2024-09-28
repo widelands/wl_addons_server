@@ -74,39 +74,21 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs meat or economy needs leather or economy needs fish or economy needs wool",
                 "return=skipped when economy needs europeans_carrier_ox or economy needs europeans_carrier_donkey or economy needs europeans_carrier_horse",
                 "return=skipped when economy needs water",
-                "return=skipped when economy needs flour or economy needs beer",
+                "return=skipped when economy needs corn",
+                "return=skipped when economy needs blackroot",
+                "return=skipped when economy needs fruit",
                 "consume=water:2 corn blackroot fruit",
                 "animate=working duration:60s",
                 "sleep=duration:2m"
             }
         },
-        produce_wool = {
-         -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-           descname = pgettext("europeans_building", "producing wool"),
-           actions = {
-                "return=skipped unless economy needs wool or workers need experience",
-                "return=skipped when economy needs water",
-                "return=skipped unless site has water:3",
-                "consume=water blackroot,corn",
-                "playsound=sound/farm/sheep priority:50% allow_multiple",
-                "animate=working duration:20s",
-                "consume=water blackroot,corn",
-                "playsound=sound/farm/sheep priority:50% allow_multiple",
-                "animate=working duration:20s",
-                "consume=water blackroot,corn",
-                "playsound=sound/farm/sheep priority:50% allow_multiple",
-                "animate=working duration:20s",
-                "produce=wool:3"
-           }
-        },
         produce_cattle = {
             -- TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
-                "return=skipped when economy needs meat or economy needs leather or economy needs fish or economy needs wool",
-                "return=skipped when economy needs water",
-                "return=skipped unless site has water:3",
+                "return=skipped when economy needs water and not economy needs europeans_carrier_ox",
+                "return=skipped when economy needs blackroot and economy needs corn and not economy needs europeans_carrier_ox",
+                "return=skipped when economy needs fruit and economy needs grape and not economy needs europeans_carrier_ox",
                 "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:20s", -- Animation of feeding the cattle
@@ -123,10 +105,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start rearing donkeys because ...
             descname = pgettext("europeans_building", "rearing donkeys"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_donkey or workers need experience",
-                "return=skipped when economy needs meat or economy needs leather or economy needs fish or economy needs wool",
-                "return=skipped when economy needs water",
-                "return=skipped unless site has water:3",
+                "return=skipped when economy needs water and not economy needs europeans_carrier_donkey",
+                "return=skipped when economy needs blackroot and economy needs corn and not economy needs europeans_carrier_donkey",
+                "return=skipped when economy needs fruit and economy needs grape and not economy needs europeans_carrier_donkey",
                 "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/donkey priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little baby donkeys ;)
@@ -143,10 +124,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
             descname = pgettext("europeans_building", "breeding horses"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_horse or workers need experience",
-                "return=skipped when economy needs meat or economy needs leather or economy needs fish or economy needs wool",
-                "return=skipped when economy needs water",
-                "return=skipped unless site has water:3",
+                "return=skipped when economy needs water and not economy needs europeans_carrier_horse",
+                "return=skipped when economy needs blackroot and economy needs corn and not economy needs europeans_carrier_horse",
+                "return=skipped when economy needs fruit and economy needs grape and not economy needs europeans_carrier_horse",
                 "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/horse priority:50% allow_multiple",
                 "animate=working duration:20s", -- Feeding cute little foals ;)
@@ -159,30 +139,33 @@ wl.Descriptions():new_productionsite_type {
                 "recruit=europeans_carrier_horse"
             }
         },
-        produce_meat = {
+        produce_wool = {
          -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-           descname = pgettext("europeans_building", "producing meat"),
+           descname = pgettext("europeans_building", "producing wool"),
            actions = {
-                "return=skipped unless economy needs meat or workers need experience",
-                "return=skipped unless site has water:3",
-                "consume=water blackroot,corn fruit,grape",
-                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "return=skipped when economy needs leather and not economy needs wool",
+                "return=skipped when economy needs water and not economy needs wool",
+                "return=skipped when economy needs blackroot and economy needs corn and not economy needs wool",
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/sheep priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water:2 blackroot,corn:2 fruit grape",
-                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/sheep priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "consume=water blackroot,corn fruit,grape",
-                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "consume=water blackroot,corn",
+                "playsound=sound/farm/sheep priority:50% allow_multiple",
                 "animate=working duration:20s",
-                "produce=meat:4"
+                "produce=wool:3"
            }
         },
         produce_meat_leather = {
          -- TRANSLATORS: Completed/Skipped/Did not start producing meat and leather because ...
            descname = pgettext("europeans_building", "producing meat and leather"),
            actions = {
-                "return=skipped unless economy needs leather or workers need experience",
-                "return=skipped unless site has water:3",
+                "return=skipped when economy needs wool and not economy needs leather",
+                "return=skipped when economy needs water and not economy needs leather",
+                "return=skipped when economy needs blackroot and economy needs corn and not economy needs leather",
+                "return=skipped when economy needs fruit and economy needs grape and not economy needs leather",
                 "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",
@@ -195,12 +178,33 @@ wl.Descriptions():new_productionsite_type {
                 "produce=meat:4 leather"
            }
         },
+        produce_meat = {
+         -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
+           descname = pgettext("europeans_building", "producing meat"),
+           actions = {
+                "return=skipped when economy needs leather and not economy needs meat",
+                "return=skipped when economy needs water and not economy needs meat",
+                "return=skipped when economy needs blackroot and economy needs corn and not economy needs meat",
+                "return=skipped when economy needs fruit and economy needs grape and not economy needs meat",
+                "consume=water blackroot,corn fruit,grape",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water:2 blackroot,corn:2 fruit grape",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "consume=water blackroot,corn fruit,grape",
+                "playsound=sound/farm/farm_animal priority:50% allow_multiple",
+                "animate=working duration:20s",
+                "produce=meat:4"
+           }
+        },
         produce_fish = {
             -- TRANSLATORS: Completed/Skipped/Did not start producing fish because ...
            descname = pgettext("europeans_building", "breeding fish"),
             actions = {
-                "return=skipped unless economy needs fish or workers need experience",
-                "return=skipped unless site has water:3",
+                "return=skipped when economy needs water and not economy needs fish",
+                "return=skipped when economy needs blackroot and economy needs corn and not economy needs fish",
+                "return=skipped when economy needs fruit and economy needs grape and not economy needs fish",
                 "consume=water blackroot,corn fruit,grape",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:20s",

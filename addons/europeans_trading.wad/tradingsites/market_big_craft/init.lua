@@ -10,32 +10,39 @@ wl.Descriptions():new_productionsite_type {
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
-    animations = {
+    spritesheets = {
       idle = {
-         hotspot = { 55, 59 },
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 87, 113 }
       },
       working = {
          basename = "idle",
-         hotspot = { 55, 59 },
-      },
+         frames = 1,
+         columns = 1,
+         rows = 1,
+         hotspot = { 87, 113 }
+      }
     },
     
     size = "medium",
     destructible = true,
     
     buildcost = {
-        brick = 2,
-        grout = 2,
-        planks = 2,
-        marble = 2,
+        brick = 4,
+        grout = 4,
+        planks = 4,
+        marble = 4,
         marble_column = 2,
         cloth = 2,
         quartz = 1,
         diamond = 1
     },
     return_on_dismantle = {
-        scrap_wood = 2,
-        granite = 2,
+        scrap_wood = 4,
+        granite = 4,
+        marble = 5,
         quartz = 1,
         diamond = 1
     },
@@ -59,7 +66,7 @@ wl.Descriptions():new_productionsite_type {
         { name = "blackwood", amount = 10 },
         { name = "planks", amount = 10 },
         { name = "cloth", amount = 10 },
-        { name = "rubber", amount = 10 },
+        { name = "armor", amount = 10 },
     },
 
     programs = {
@@ -86,7 +93,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "call=trade_blackwood_copper",
                 "sleep=duration:10s",
-                "call=trade_rubber_copper",
+                "call=trade_armor_copper",
                 "sleep=duration:10s",
                 "call=trade_planks_copper"
             }
@@ -103,7 +110,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "call=trade_blackwood_silver",
                 "sleep=duration:10s",
-                "call=trade_rubber_silver",
+                "call=trade_armor_silver",
                 "sleep=duration:10s",
                 "call=trade_planks_silver"
             }
@@ -120,7 +127,7 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "call=trade_blackwood_gold",
                 "sleep=duration:10s",
-                "call=trade_rubber_gold",
+                "call=trade_armor_gold",
                 "sleep=duration:10s",
                 "call=trade_planks_gold"
             }
@@ -241,37 +248,37 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:30s",
             }
         },
-        trade_rubber_copper = {
+        trade_armor_copper = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless site has rubber:2",
+                "return=skipped unless site has armor:2",
                 "return=skipped unless site has gold",
-                "consume=rubber:2 gold",
+                "consume=armor:2 gold",
                 "animate=working duration:30s",
                 "produce=coin_copper:2",
                 "sleep=duration:30s",
             }
         },
-        trade_rubber_silver = {
+        trade_armor_silver = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless site has rubber:3",
+                "return=skipped unless site has armor:3",
                 "return=skipped unless site has gold",
-                "consume=rubber:3 gold",
+                "consume=armor:3 gold",
                 "animate=working duration:30s",
                 "produce=coin_silver:2",
                 "sleep=duration:30s",
             }
         },
-        trade_rubber_gold = {
+        trade_armor_gold = {
             -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
             descname = _("trading"),
             actions = {
-                "return=skipped unless site has rubber:4",
+                "return=skipped unless site has armor:4",
                 "return=skipped unless site has gold",
-                "consume=rubber:4 gold",
+                "consume=armor:4 gold",
                 "animate=working duration:30s",
                 "produce=coin_gold:2",
                 "sleep=duration:30s",

@@ -75,7 +75,7 @@ wl.Descriptions():new_productionsite_type {
     },
     
     inputs = {
-        { name = "log", amount = 16 },
+        { name = "blackwood", amount = 16 },
         { name = "reed", amount = 12 },
         { name = "coal", amount = 12 },
         { name = "metal_alloy", amount = 12 },
@@ -88,18 +88,18 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "call=processing_metal_alloy",
                 "call=processing_metal_alloy",
-                "call=processing_log",
+                "call=processing_blackwood",
                 "call=processing_reed",
                 "call=processing_metal_alloy",
                 "call=processing_metal_alloy",
-                "call=processing_log",
+                "call=processing_blackwood",
                 "call=processing_reed",
                 "return=skipped"
             }
         },
-        processing_log = {
-            -- TRANSLATORS: Completed/Skipped/Did not start processing log for input wares because ...
-            descname = pgettext("europeans_building", "processing log to create tools and weapons"),
+        processing_blackwood = {
+            -- TRANSLATORS: Completed/Skipped/Did not start processing blackwood for input wares because ...
+            descname = pgettext("europeans_building", "processing blackwood to create tools and weapons"),
             actions = {
                 "call=producing_armor_wooden",
                 "call=producing_boots_wooden",
@@ -111,7 +111,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
-                "return=skipped when economy needs log and not economy needs armor_wooden",
+                "return=skipped when economy needs blackwood and not economy needs armor_wooden",
                 "return=skipped when economy needs blackwood and not economy needs armor_wooden",
                 "return=skipped when economy needs boots_wooden and not economy needs armor_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs armor_wooden",
@@ -124,7 +124,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs armor_wooden",
                 "return=skipped when economy needs scythe and not economy needs armor_wooden",
                 "return=skipped when economy needs shovel and not economy needs armor_wooden",
-                "consume=log",
+                "consume=blackwood",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -135,7 +135,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
             descname = pgettext("europeans_building", "making a pair of wooden boots"),
             actions = {
-                "return=skipped when economy needs log and not economy needs boots_wooden",
+                "return=skipped when economy needs blackwood and not economy needs boots_wooden",
                 "return=skipped when economy needs blackwood and not economy needs boots_wooden",
                 "return=skipped when economy needs armor_wooden and not economy needs boots_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs boots_wooden",
@@ -148,7 +148,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs boots_wooden",
                 "return=skipped when economy needs scythe and not economy needs boots_wooden",
                 "return=skipped when economy needs shovel and not economy needs boots_wooden",
-                "consume=log",
+                "consume=blackwood",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -159,7 +159,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
             descname = pgettext("europeans_building", "making a wooden helmet"),
             actions = {
-                "return=skipped when economy needs log and not economy needs helmet_wooden",
+                "return=skipped when economy needs blackwood and not economy needs helmet_wooden",
                 "return=skipped when economy needs blackwood and not economy needs helmet_wooden",
                 "return=skipped when economy needs armor_wooden and not economy needs helmet_wooden",
                 "return=skipped when economy needs boots_wooden and not economy needs helmet_wooden",
@@ -172,7 +172,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs helmet_wooden",
                 "return=skipped when economy needs scythe and not economy needs helmet_wooden",
                 "return=skipped when economy needs shovel and not economy needs helmet_wooden",
-                "consume=log",
+                "consume=blackwood",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -183,7 +183,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
             descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
-                "return=skipped when economy needs log and not economy needs spear_wooden",
+                "return=skipped when economy needs blackwood and not economy needs spear_wooden",
                 "return=skipped when economy needs blackwood and not economy needs spear_wooden",
                 "return=skipped when economy needs armor_wooden and not economy needs spear_wooden",
                 "return=skipped when economy needs boots_wooden and not economy needs spear_wooden",
@@ -196,7 +196,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs spear_wooden",
                 "return=skipped when economy needs scythe and not economy needs spear_wooden",
                 "return=skipped when economy needs shovel and not economy needs spear_wooden",
-                "consume=log",
+                "consume=blackwood",
                 "playsound=sound/barbarians/blackwood priority:60%",
                 "animate=working duration:6m",
                 "playsound=sound/barbarians/blackwood priority:60%",
@@ -236,7 +236,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
-                "return=skipped when economy needs log and not economy needs boots_sturdy",
+                "return=skipped when economy needs blackwood and not economy needs boots_sturdy",
                 "return=skipped when economy needs reed and not economy needs boots_sturdy",
                 "return=skipped when economy needs cloth and not economy needs boots_sturdy",
                 "return=skipped when economy needs armor_processed and not economy needs boots_sturdy",
@@ -248,7 +248,7 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs saw and not economy needs boots_sturdy",
                 "return=skipped when economy needs scythe and not economy needs boots_sturdy",
                 "return=skipped when economy needs shovel and not economy needs boots_sturdy",
-                "consume=log reed:2",
+                "consume=blackwood reed:2",
                 "playsound=sound/barbarians/weaver priority:90%",
                 "animate=working duration:6m",
                 "produce=boots_sturdy:2"
@@ -275,7 +275,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making baskets"),
             actions = {
                 "return=skipped unless economy needs basket",
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "produce=basket:2"
@@ -286,7 +286,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making buckets"),
             actions = {
                 "return=skipped unless economy needs buckets", 
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "produce=buckets:2"
@@ -297,7 +297,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making felling axes"),
             actions = {
                 "return=skipped unless economy needs felling_ax", 
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "produce=felling_ax:2"
@@ -308,7 +308,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making hammers"),
             actions = {
                 "return=skipped unless economy needs hammer", 
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "produce=hammer:2"
@@ -319,7 +319,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making picks"),
             actions = {
                 "return=skipped unless economy needs pick", 
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "produce=pick:2"
@@ -330,7 +330,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making saws"),
             actions = {
                 "return=skipped unless economy needs saw", 
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "produce=saw:2"
@@ -341,7 +341,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making sycthes"),
             actions = {
                 "return=skipped unless economy needs scythe",  
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "produce=scythe:2"
@@ -352,7 +352,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making shovels"),
             actions = {
                 "return=skipped unless economy needs shovel", 
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/toolsmith priority:50% allow_multiple",
                 "animate=working duration:4m",
                 "produce=shovel:2"
@@ -374,7 +374,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "forging an advanced spear"),
             actions = {
                 "return=skipped unless economy needs spear_advanced", 
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:6m",
                 "playsound=sound/smiths/sharpening priority:90%",

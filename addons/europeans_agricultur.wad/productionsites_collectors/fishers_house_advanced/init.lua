@@ -32,6 +32,8 @@ wl.Descriptions():new_productionsite_type {
     
     inputs = {
         { name = "water", amount = 4 },
+        { name = "corn", amount = 4 },
+        { name = "fruit", amount = 4 },
     },
 
     programs = {
@@ -40,7 +42,9 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "breeding and fishing"),
             actions = {
                 "return=skipped when economy needs water and not economy needs fish",
-                "consume=water",
+                "return=skipped when economy needs corn and not economy needs fish",
+                "return=skipped when economy needs fruit and not economy needs fish",
+                "consume=water corn fruit",
                 "callworker=breed",
                 "sleep=duration:1m",
                 "callworker=fish",

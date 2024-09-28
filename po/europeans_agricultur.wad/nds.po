@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-16 03:09+0200\n"
+"POT-Creation-Date: 2024-09-28 03:08+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -393,54 +393,54 @@ msgstr "to Warken"
 msgid "idle program"
 msgstr "herumtopüttjern"
 
-#. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:85
-msgctxt "europeans_building"
-msgid "producing wool"
-msgstr "Wulle to produzeren"
-
 #. TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:104
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_basic/init.lua:92
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:87
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_basic/init.lua:95
 msgctxt "europeans_building"
 msgid "rearing cattle"
 msgstr "Beesten to tüchten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start rearing donkeys because ...
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:124
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:106
 msgctxt "europeans_building"
 msgid "rearing donkeys"
 msgstr "Langohren to tüchten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding horses because ...
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:144
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:125
 msgctxt "europeans_building"
 msgid "breeding horses"
 msgstr "Peer to tüchten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:164
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_basic/init.lua:116
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:144
 msgctxt "europeans_building"
-msgid "producing meat"
-msgstr "Fleesk to produzeren"
+msgid "producing wool"
+msgstr "Wulle to produzeren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start producing meat and leather because ...
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:182
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:163
 #: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_basic/init.lua:138
 msgctxt "europeans_building"
 msgid "producing meat and leather"
 msgstr "Fleesk un Leer to produzeren"
 
+#. TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:183
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_basic/init.lua:116
+msgctxt "europeans_building"
+msgid "producing meat"
+msgstr "Fleesk to produzeren"
+
 #. TRANSLATORS: Completed/Skipped/Did not start producing fish because ...
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:200
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:203
 msgctxt "europeans_building"
 msgid "breeding fish"
 msgstr "Fisse to tüchten"
 
 #. TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:218
-#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_basic/init.lua:160
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:222
+#: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_basic/init.lua:159
 #: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:129
 #: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:135
 msgid "dummy program"
@@ -754,22 +754,22 @@ msgid "Advanced Fisher’s House"
 msgstr "Grote Fiskeree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
-#: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:40
+#: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:42
 msgctxt "europeans_building"
 msgid "breeding and fishing"
 msgstr "Fisse to tüchten un to fisken"
 
-#: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:53
+#: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:57
 #: addons/europeans_agricultur.wad/productionsites_collectors/fishers_hut_basic/init.lua:79
 msgid "No Fish"
 msgstr "Keen Fiss"
 
-#: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:54
+#: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:58
 #: addons/europeans_agricultur.wad/productionsites_collectors/fishers_hut_basic/init.lua:80
 msgid "Out of Fish"
 msgstr "Hebb keene Fiske mehr"
 
-#: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:55
+#: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:59
 msgctxt "empire_building"
 msgid ""
 "The fisher working out of this fisher’s house can’t find any fish in his "
@@ -804,24 +804,24 @@ msgid "Advanced Hunter’s House"
 msgstr "Grotes Jaggthuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
-#: addons/europeans_agricultur.wad/productionsites_collectors/hunters_house_advanced/init.lua:39
+#: addons/europeans_agricultur.wad/productionsites_collectors/hunters_house_advanced/init.lua:41
 msgctxt "europeans_building"
 msgid "releasing and hunting"
 msgstr "Deerten to tüchten un to jagen"
 
-#: addons/europeans_agricultur.wad/productionsites_collectors/hunters_house_advanced/init.lua:54
+#: addons/europeans_agricultur.wad/productionsites_collectors/hunters_house_advanced/init.lua:60
 #: addons/europeans_agricultur.wad/productionsites_collectors/hunters_hut_basic/init.lua:82
 msgid "No Game"
 msgstr "Keene Deerten"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
-#: addons/europeans_agricultur.wad/productionsites_collectors/hunters_house_advanced/init.lua:56
+#: addons/europeans_agricultur.wad/productionsites_collectors/hunters_house_advanced/init.lua:62
 #: addons/europeans_agricultur.wad/productionsites_collectors/hunters_hut_basic/init.lua:84
 msgid "Out of Game"
 msgstr "Hebb keene Deerten mehr"
 
 #. TRANSLATORS: "game" means animals that you can hunt
-#: addons/europeans_agricultur.wad/productionsites_collectors/hunters_house_advanced/init.lua:58
+#: addons/europeans_agricultur.wad/productionsites_collectors/hunters_house_advanced/init.lua:64
 msgctxt "europeans_building"
 msgid ""
 "The hunter working out of this hunter’s house can’t find any game in his "
@@ -1491,84 +1491,18 @@ msgid "Basic Terraformer’s House"
 msgstr "Lütte Landumackeree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_evade/init.lua:8
-msgctxt "europeans_building"
-msgid "Fitness Center (Evade)"
-msgstr "Kundiesje-Överee (Utwieken)"
-
-#. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_evade/init.lua:77
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_health/init.lua:69
-#: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:70
-#: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:70
-msgid "sleeping"
-msgstr "to slapen"
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_evade/init.lua:85
-msgctxt "europeans_building"
-msgid "upgrading soldier evade from level 0 to level 1"
-msgstr "Soldaten-Utwieken vun Stand 0 up Stand 1 to verbetern"
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_evade/init.lua:97
-msgctxt "europeans_building"
-msgid "upgrading soldier evade from level 1 to level 2"
-msgstr "Soldaten-Utwieken vun Stand 1 to Stand 2 to verbetern"
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_evade/init.lua:109
-msgctxt "europeans_building"
-msgid "upgrading soldier evade from level 2 to level 3"
-msgstr "Soldaten-Utwieken vun Stand 2 up Stand 3 to verbetern"
-
-#. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_evade/init.lua:126
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_health/init.lua:118
-#: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:121
-#: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:121
-msgctxt "europeans_building"
-msgid "No soldier to train!"
-msgstr "Keen Soldat tum Utbilden!"
-
-#. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_evade/init.lua:128
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_health/init.lua:120
-#: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:123
-#: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:123
-msgctxt "europeans_building"
-msgid "No soldier found for this training level!"
-msgstr "Keen Soldat för deese Lehr funnen!"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_health/init.lua:8
-msgctxt "europeans_building"
-msgid "Fitness Center (Health)"
-msgstr "Kundiesje-Överee (Gesundheid)"
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_health/init.lua:77
-msgctxt "europeans_building"
-msgid "upgrading soldier health from level 0 to level 1"
-msgstr "Soldaten-Gesundheid vun Stand 0 to Stand 1 to verbetern"
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_health/init.lua:89
-msgctxt "europeans_building"
-msgid "upgrading soldier health from level 1 to level 2"
-msgstr "Soldaten-Gesundheid vun Stand 1 to Stand 2 to verbetern"
-
-#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
-#: addons/europeans_agricultur.wad/trainingssites/fitness_center_health/init.lua:101
-msgctxt "europeans_building"
-msgid "upgrading soldier health from level 2 to level 3"
-msgstr "Soldaten-Gesundheid vun Stand 2 to Stand 3 to verbetern"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:8
 msgctxt "europeans_building"
 msgid "Training Center (Attack)"
 msgstr "Höövd-Överee (Angriff)"
+
+#. TRANSLATORS: Completed/Skipped/Did not start sleeping because ...
+#: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:70
+#: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:70
+#: addons/europeans_agricultur.wad/trainingssites/training_center_evade/init.lua:77
+#: addons/europeans_agricultur.wad/trainingssites/training_center_health/init.lua:69
+msgid "sleeping"
+msgstr "to slapen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:78
@@ -1587,6 +1521,24 @@ msgstr "Soldaten-Angriff vun Stand 1 to Stand 2 to verbetern"
 msgctxt "europeans_building"
 msgid "upgrading soldier attack from level 2 to level 3"
 msgstr "Soldaten-Angriff vun Stand 2 to Stand 3 to verbetern"
+
+#. TRANSLATORS: Empire training site tooltip when it has no soldiers assigned
+#: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:121
+#: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:121
+#: addons/europeans_agricultur.wad/trainingssites/training_center_evade/init.lua:126
+#: addons/europeans_agricultur.wad/trainingssites/training_center_health/init.lua:118
+msgctxt "europeans_building"
+msgid "No soldier to train!"
+msgstr "Keen Soldat tum Utbilden!"
+
+#. TRANSLATORS: Empire training site tooltip when none of the present soldiers match the current training program
+#: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:123
+#: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:123
+#: addons/europeans_agricultur.wad/trainingssites/training_center_evade/init.lua:128
+#: addons/europeans_agricultur.wad/trainingssites/training_center_health/init.lua:120
+msgctxt "europeans_building"
+msgid "No soldier found for this training level!"
+msgstr "Keen Soldat för deese Lehr funnen!"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/trainingssites/training_center_defense/init.lua:8
@@ -1611,6 +1563,56 @@ msgstr "Soldaten-Verteidigung vun Stand 1 to Stand 2 to verbetern"
 msgctxt "europeans_building"
 msgid "upgrading soldier defense from level 2 to level 3"
 msgstr "Soldaten-Verteidigung vun Stand 2 to Stand 3 to verbetern"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_agricultur.wad/trainingssites/training_center_evade/init.lua:8
+#, fuzzy
+msgctxt "europeans_building"
+msgid "Training Center (Evade)"
+msgstr "Höövd-Överee (Angriff)"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_agricultur.wad/trainingssites/training_center_evade/init.lua:85
+msgctxt "europeans_building"
+msgid "upgrading soldier evade from level 0 to level 1"
+msgstr "Soldaten-Utwieken vun Stand 0 up Stand 1 to verbetern"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_agricultur.wad/trainingssites/training_center_evade/init.lua:97
+msgctxt "europeans_building"
+msgid "upgrading soldier evade from level 1 to level 2"
+msgstr "Soldaten-Utwieken vun Stand 1 to Stand 2 to verbetern"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_agricultur.wad/trainingssites/training_center_evade/init.lua:109
+msgctxt "europeans_building"
+msgid "upgrading soldier evade from level 2 to level 3"
+msgstr "Soldaten-Utwieken vun Stand 2 up Stand 3 to verbetern"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_agricultur.wad/trainingssites/training_center_health/init.lua:8
+#, fuzzy
+msgctxt "europeans_building"
+msgid "Training Center (Health)"
+msgstr "Höövd-Överee (Angriff)"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_agricultur.wad/trainingssites/training_center_health/init.lua:77
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 0 to level 1"
+msgstr "Soldaten-Gesundheid vun Stand 0 to Stand 1 to verbetern"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_agricultur.wad/trainingssites/training_center_health/init.lua:89
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 1 to level 2"
+msgstr "Soldaten-Gesundheid vun Stand 1 to Stand 2 to verbetern"
+
+#. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
+#: addons/europeans_agricultur.wad/trainingssites/training_center_health/init.lua:101
+msgctxt "europeans_building"
+msgid "upgrading soldier health from level 2 to level 3"
+msgstr "Soldaten-Gesundheid vun Stand 2 to Stand 3 to verbetern"
 
 #: addons/europeans_agricultur.wad/tribes/initialization/init.lua:10
 msgid "Mark McWire"
@@ -1827,26 +1829,36 @@ msgstr ""
 "Deeser schienende Blinkerflint word för eenige besünners gode Husen bruukt. "
 "’t word vun groten Flintslagerhusen un vun deepen Iesen-Bargwarken ofboot."
 
+#. TRANSLATORS: Helptext for an Europeans ware: Diamond
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:278
+msgctxt "europeans_ware"
+msgid ""
+"These wonderful diamonds are used to build advanced buildings. They are "
+"mined as a byproduct in a deep coal mine or by advanced quarry."
+msgstr ""
+"Deese wunnermojen Edelstenen worden för eenige besünners gode Husen bruukt. "
+"Se worden vun groten Flintslagerhusen un vun deepen Köhle-Bargwarken ofboot."
+
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 1
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:282
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:291
 msgctxt "europeans_ware"
 msgid "Clay is needed to make bricks."
 msgstr "Lehm bruukt man, um Backstenen to maken."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Clay, part 2
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:284
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:293
 msgctxt "europeans_ware"
 msgid "The Europeans gets clay from gardeners house."
 msgstr "De Europäers kriegen Lehm ut eener Gaardneree."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 1
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:295
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:304
 msgctxt "europeans_ware"
 msgid "Brick is a basic building material."
 msgstr "Backstenen sünd een wichtig Baukraam."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Brick, part 2
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:297
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:306
 msgctxt "europeans_ware"
 msgid ""
 "The Europeans produces bricks in lime kiln or stonemasons house out of clay, "
@@ -1856,25 +1868,25 @@ msgstr ""
 "Lehm, Flint un Water."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:308
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:317
 msgctxt "europeans_ware"
 msgid "Planks are an important building material."
 msgstr "Planken sünd een wichtig Baukraam."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:310
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:319
 msgctxt "europeans_ware"
 msgid "They are produced out of logs by the sawmill."
 msgstr "Se worden in de Saagmöhlen ut Boomstammen produzeert."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:312
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:321
 msgctxt "europeans_ware"
 msgid "They are also used by the ferryyard and shipyard."
 msgstr "Se worden ok in de Fährenwarft un Warft bruukt."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:322
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:331
 msgctxt "europeans_ware"
 msgid ""
 "Marble is the beautiful stone which is cut out of the mountains or produced "
@@ -1886,7 +1898,7 @@ msgstr ""
 "Marmelpielers sniddjet."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Marble Column
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:331
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:340
 msgctxt "europeans_ware"
 msgid ""
 "Marble columns represent the high culture of the Europeans, so they are "
@@ -1896,16 +1908,6 @@ msgstr ""
 "Marmelpielers wiesen de hoge Kultuur vun de Europäers un worden daarum för "
 "haast elkeen grotes Huus bruukt. Se worden in eenem Steenbickerhuus ut "
 "Marmel maakt."
-
-#. TRANSLATORS: Helptext for an Europeans ware: Diamond
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:340
-msgctxt "europeans_ware"
-msgid ""
-"These wonderful diamonds are used to build advanced buildings. They are "
-"mined as a byproduct in a deep coal mine or by advanced quarry."
-msgstr ""
-"Deese wunnermojen Edelstenen worden för eenige besünners gode Husen bruukt. "
-"Se worden vun groten Flintslagerhusen un vun deepen Köhle-Bargwarken ofboot."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:350
@@ -2026,47 +2028,8 @@ msgstr ""
 "Ut deesen Druven kann man leckeren Wien maken. Se worden in de groten "
 "Buurdereen arnt un in de Wienmakeree verarbeidt."
 
-#. TRANSLATORS: Helptext for an Europeans ware: Flour
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:470
-msgctxt "europeans_ware"
-msgid ""
-"Mixed flour is produced by the mill out of rye and wheat and is needed in "
-"the bakery to produce bread."
-msgstr ""
-"Misket Mehl word in Möhlen ut Rogg un Weit maakt un word in de Backeree "
-"bruukt, um Brood to produzeren."
-
-#. TRANSLATORS: Helptext for a Europeans ware: Bread
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:479
-msgctxt "europeans_ware"
-msgid ""
-"Bread are produced in a bakery out of water and flour. Basic miners consume "
-"bread."
-msgstr ""
-"Brood word in de Backeree ut Water un Mehl maakt. Bargwarkskeerls eten Brood."
-
-#. TRANSLATORS: Helptext for a Europeans ware: Honey Bread
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:488
-msgctxt "europeans_ware"
-msgid ""
-"Honey Bread are produced in a bakery out of water, honey and flour. Normal "
-"miners consume honey bread."
-msgstr ""
-"Hönnigbrood word in de Backeree ut Water, Hönnig un Mehl maakt. Gode "
-"Bargwarkskeerls eten Hönnigbrood."
-
-#. TRANSLATORS: Helptext for a Europeans ware: Biscuit
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:497
-msgctxt "europeans_ware"
-msgid ""
-"Biscuits are produced in a bakery out of water, flour, honey and fruits. "
-"Advanced miners consume biscuit."
-msgstr ""
-"Kookjes worden in de Backeree ut Water, Mehl, Hönnig un Früchten maakt. "
-"Meister-Bargwarkskeerls eten Kookjes."
-
 #. TRANSLATORS: Helptext for an Europeans ware: Meat, part 1
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:506
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:467
 msgctxt "europeans_ware"
 msgid ""
 "Meat contains a lot of energy, and it is produced in animal farms. Miners "
@@ -2076,7 +2039,7 @@ msgstr ""
 "produzeert. Bargwarkskeerls eten Fleesk."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Fish
-#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:515
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:476
 msgctxt "europeans_ware"
 msgid ""
 "Fish is one of the biggest food resources of the Europeans, and it is "
@@ -2084,6 +2047,45 @@ msgid ""
 msgstr ""
 "Fiss is eene vun de wichtigsten europäisk Spiesen un word in "
 "Deertentüchtereen produzeert. Bargwarkskeerls eten Fiss."
+
+#. TRANSLATORS: Helptext for an Europeans ware: Flour
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:488
+msgctxt "europeans_ware"
+msgid ""
+"Mixed flour is produced by the mill out of rye and wheat and is needed in "
+"the bakery to produce bread."
+msgstr ""
+"Misket Mehl word in Möhlen ut Rogg un Weit maakt un word in de Backeree "
+"bruukt, um Brood to produzeren."
+
+#. TRANSLATORS: Helptext for a Europeans ware: Bread
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:497
+msgctxt "europeans_ware"
+msgid ""
+"Bread are produced in a bakery out of water and flour. Basic miners consume "
+"bread."
+msgstr ""
+"Brood word in de Backeree ut Water un Mehl maakt. Bargwarkskeerls eten Brood."
+
+#. TRANSLATORS: Helptext for a Europeans ware: Honey Bread
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:506
+msgctxt "europeans_ware"
+msgid ""
+"Honey Bread are produced in a bakery out of water, honey and flour. Normal "
+"miners consume honey bread."
+msgstr ""
+"Hönnigbrood word in de Backeree ut Water, Hönnig un Mehl maakt. Gode "
+"Bargwarkskeerls eten Hönnigbrood."
+
+#. TRANSLATORS: Helptext for a Europeans ware: Biscuit
+#: addons/europeans_agricultur.wad/tribes/initialization/units.lua:515
+msgctxt "europeans_ware"
+msgid ""
+"Biscuits are produced in a bakery out of water, flour, honey and fruits. "
+"Advanced miners consume biscuit."
+msgstr ""
+"Kookjes worden in de Backeree ut Water, Mehl, Hönnig un Früchten maakt. "
+"Meister-Bargwarkskeerls eten Kookjes."
 
 #. TRANSLATORS: Helptext for an Europeans ware: Beer
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:524
@@ -3280,7 +3282,7 @@ msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Evade’."
 msgstr "Lehrt Soldaten blots »Utwieken«."
 
-#. TRANSLATORS: Note helptext for a Europeans training site: Fitness Center
+#. TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2405
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Defense’."
@@ -4202,3 +4204,11 @@ msgstr "Meister-Landumackereerer"
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
 msgstr "Landumackereerer"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Fitness Center (Evade)"
+#~ msgstr "Kundiesje-Överee (Utwieken)"
+
+#~ msgctxt "europeans_building"
+#~ msgid "Fitness Center (Health)"
+#~ msgstr "Kundiesje-Överee (Gesundheid)"
