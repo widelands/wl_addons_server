@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-28 03:08+0200\n"
+"POT-Creation-Date: 2024-09-29 03:13+0200\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -582,10 +582,9 @@ msgstr "pauzeren van de handel in goud"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_trading.wad/tradingsites/market_big_wood/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Wood Products Market"
-msgstr "Houtmarkt"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start trading because ...
 #: addons/europeans_trading.wad/tradingsites/market_big_wood/init.lua:78
@@ -2136,32 +2135,27 @@ msgstr "Rust de rekruten uit met alle benodigde pantseronderdelen en wapens."
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Dungeon
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1842
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Health’."
-msgstr "Traint soldaten in 'Ontwijken', 'Gezondheid' en 'Aanval'."
+msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Trainingscamp
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1849
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Evade’."
-msgstr "Traint soldaten in 'Ontwijken', 'Gezondheid' en 'Aanval'."
+msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1856
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Defense’."
 msgstr ""
-"Traint soldaten in 'Ontwijken', 'Gezondheid', 'Aanval' en in 'Verdediging'."
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Training Center
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1863
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Trains soldiers only in ‘Attack’."
-msgstr "Traint soldaten in 'Ontwijken', 'Gezondheid' en 'Aanval'."
+msgstr ""
 
 #. TRANSLATORS: Note helptext for a Europeans training site: Battle Arena
 #: addons/europeans_trading.wad/tribes/initialization/units.lua:1870
@@ -3042,31 +3036,3 @@ msgstr "Basis Tuinier"
 msgctxt "europeans_worker"
 msgid "Trader"
 msgstr "Handelaar"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing log to create tools and weapons"
-#~ msgstr "boomstammen verwerken om gereedschappen en wapens te maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Armor Market"
-#~ msgstr "Pantsermarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Boots Market"
-#~ msgstr "Laarzenmarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Weapon Market"
-#~ msgstr "Wapenmarkt"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale armor for coins."
-#~ msgstr "Marktgebouw om harnassen te verkopen voor munten."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale boots for coins."
-#~ msgstr "Marktgebouw om laarzen te verkopen voor munten."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Market building to sale weapons for coins."
-#~ msgstr "Marktgebouw om wapens te verkopen voor munten."

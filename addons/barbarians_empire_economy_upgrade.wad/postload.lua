@@ -80,6 +80,42 @@ wl.Descriptions():modify_unit("building", "empire_mill_small", "enhancement", {
             marble = 1
         },
     })
+-----------------------
+-- BARBARIANS BUILDINGS
+
+wl.Descriptions():modify_unit("tribe", "barbarians", "add_building", "barbarians_weaving_mill_small", { helptexts = { 
+                  lore = pgettext("barbarians_building", [[‘Fine cloth and jewelry mean nothing to a true Barbarian.<br>]] ..
+                                          [[But a noble sail in the wind will please his eyes.’]]),
+                  lore_author = pgettext("barbarians_building", "Khantarakh, ‘The Modern Barbarian Economy’,<br>9ᵗʰ cowhide ‘Seafaring and Conquest’"),
+                  purpose = _"Weaves cloth out of reed.",
+                  note = _"This building operates as an ordinary weaving mill only 25% slower.",
+                  performance = pgettext("empire_building", "The weaver needs %1% on average to weave reed into a piece of cloth."):bformat(format_seconds(60))
+               }})
+wl.Descriptions():modify_unit("building", "barbarians_weaving_mill_small", "enhancement", {
+        name = "barbarians_weaving_mill",
+        enhancement_cost = {
+            log = 3,
+            granite = 1,
+        },
+        enhancement_return_on_dismantle = {
+            log = 1,
+            granite = 1,
+
+        },
+    })
+
+wl.Descriptions():modify_unit("productionsite", "barbarians_weaving_mill", "programs", "set", "main", {
+      -- TRANSLATORS: Completed/Skipped/Did not start working because ...
+      descname = _("weaving"),
+      actions = {
+            "sleep=duration:17s",
+            "return=skipped unless economy needs cloth",
+            "consume=reed:2",
+            "playsound=sound/barbarians/weaver priority:90%",
+            "animate=working duration:25s",
+            "produce=cloth"
+       }})
+
 
 -----------------------
 --SMELTING

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-28 03:08+0200\n"
+"POT-Creation-Date: 2024-09-29 03:13+0200\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1566,10 +1566,9 @@ msgstr "Soldaten-Verteidigung vun Stand 2 to Stand 3 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/trainingssites/training_center_evade/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Training Center (Evade)"
-msgstr "Höövd-Överee (Angriff)"
+msgstr "Höövd-Överee (Utwieken)"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_agricultur.wad/trainingssites/training_center_evade/init.lua:85
@@ -1591,10 +1590,9 @@ msgstr "Soldaten-Utwieken vun Stand 2 up Stand 3 to verbetern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/trainingssites/training_center_health/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Training Center (Health)"
-msgstr "Höövd-Överee (Angriff)"
+msgstr "Höövd-Överee (Gesundheid)"
 
 #. TRANSLATORS: Completed/Skipped/Did not start upgrading ... because ...
 #: addons/europeans_agricultur.wad/trainingssites/training_center_health/init.lua:77
@@ -4204,11 +4202,3 @@ msgstr "Meister-Landumackereerer"
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
 msgstr "Landumackereerer"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Fitness Center (Evade)"
-#~ msgstr "Kundiesje-Överee (Utwieken)"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Fitness Center (Health)"
-#~ msgstr "Kundiesje-Överee (Gesundheid)"
