@@ -65,8 +65,6 @@ function map_direction(startx, starty, targetx, targety)
         direction = "br"
     end
     
-    print(startx, starty, targetx, targety, diffx, diffy, direction)
-
     return direction
 end
 
@@ -177,25 +175,23 @@ function switch_player(player_number1, player_number2)
     player:switchplayer(player_number2)
 end
 
-function observer_mode_team(team_number)
+function observer_mode_team(team_number, observer)
+    observer = observer or true
+    
     local game = wl.Game()
     for k, tplayer in ipairs(game.players) do
         if tplayer.team == team_number then
-            tplayer.see_all = true
+            tplayer.see_all = observer
         end
     end
 end
 
-function observer_mode_player(player_number)
+function observer_mode_player(player_number, observer)
+    observer = observer or true
+    
     local game = wl.Game()
     local player = game.players[player_number]
-    player.see_all = true
-end
-
-function play_mode(player_number)
-    local game = wl.Game()
-    local player = game.players[player_number]
-    player.see_all = false
+    player.see_all = observer
 end
 
 function peace_mode(player_number1, player_number2)
@@ -577,7 +573,6 @@ function set_ship_capacity(player_number, ship_name, capacity)
     local ships = player:get_ships()
 
     for i, ship in pairs(ships) do
-        -- print(i, ship.shipname)
         if (ship.shipname == ship_name) or (ship_name == "") then
              ship.capacity = capacity
         end
@@ -595,12 +590,14 @@ function force_expedition(player_number, number_expeditions)
     for i, port in ipairs(ports) do
         if i <= number_expeditions then
             port:start_expedition()
-            print (port.warehousename)
+            print ("Starting expedition from: ", port.warehousename)
         end
     end
 end
 
 function force_ship(startx, starty, player_number, capacity)
+    capacity = capacity or 64
+    
     local game = wl.Game()
     local player = game.players[player_number]
     local map = game.map
@@ -611,13 +608,25 @@ function force_ship(startx, starty, player_number, capacity)
 end
 
 function force_ship_random(player_number, capacity)
+    capacity = capacity or 64
+    
     local game = wl.Game()
-    local player = game.players[player_number]
     local map = game.map
     local oceanfields = map:find_ocean_fields(1)
+    local player = nil
+    local ship = nil
 
-    local ship = player:place_ship(oceanfields[1])
-    ship.capacity = capacity
+    if player_number > 0 then
+        player = game.players[player_number]
+        ship = player:place_ship(oceanfields[1])
+        ship.capacity = capacity
+    else
+        for idx, player in ipairs(game.players) do
+            ship = player:place_ship(oceanfields[1])
+            ship.capacity = capacity
+        end
+    end
+
 end
 
 function remove_ship(player_number, ship_name)
@@ -626,7 +635,6 @@ function remove_ship(player_number, ship_name)
     local ships = player:get_ships()
 
     for i, ship in pairs(ships) do
-        -- print(i, ship.shipname)
         if (ship.shipname == ship_name) or (ship_name == "") then
             ship:remove()
         end
@@ -738,12 +746,24 @@ function force_mine(startx, starty, radius)
                 minename = "marblemine"
             elseif tribe_name == "frisians" then
                 minename = "rockmine"
+            else
+                minename = "stonemine"
             end
         else
             minename = "well"
         end
 
-        if tribe_name == "europeans" then
+        if (tribe_name == "europeans") and (minename == "stonemine") then
+            if amount >= 20 then
+                suffix = "_basic"
+            elseif amount > 14 then
+                suffix = "_level_1"
+            elseif amount > 8 then
+                suffix = "_level_2"
+            else
+                suffix = "_level_3"
+            end
+        elseif tribe_name == "europeans" then
             if amount >= 20 then
                 suffix = "_basic"
             elseif amount > 16 then

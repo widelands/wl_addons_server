@@ -1441,6 +1441,34 @@ wl.Descriptions():new_tribe {
 
         -- Mines
         {
+            name = "europeans_stonemine_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for production site: Granite Mine
+                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+            }
+        },
+        {
+            name = "europeans_stonemine_level_1",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for production site: Marble Mine
+                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+            }
+        },
+        {
+            name = "europeans_stonemine_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+            }
+        },
+        {
+            name = "europeans_stonemine_level_3",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+            }
+        },
+        {
             name = "europeans_coalmine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Coal Mine
@@ -1815,7 +1843,7 @@ wl.Descriptions():new_tribe {
 
         -- Seafaring/Ferry Sites - these are only displayed on seafaring/ferry maps
         {
-            name = "europeans_ferry_yard_basic",
+            name = "europeans_ferry_yard",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
                 purpose = pgettext("europeans_building", "Builds ferries."),
@@ -1824,7 +1852,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_shipyard_advanced",
+            name = "europeans_shipyard",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
                 purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports.")
@@ -2049,8 +2077,8 @@ wl.Descriptions():new_tribe {
       tool_manufactory = "europeans_manufactory_basic",
       weapon_manufactory = "europeans_manufactory_basic",
       armor_manufactory = "europeans_manufactory_basic",
-      shipyard = "europeans_shipyard_advanced",
-      ferry_yard = "europeans_ferry_yard_basic",
+      shipyard = "europeans_shipyard",
+      ferry_yard = "europeans_ferry_yard",
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",
       industry_supporter = "europeans_smelting_works_basic",

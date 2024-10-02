@@ -254,7 +254,7 @@ function allow_warehouses_per_ware_amount(player)
     if (enough_ware_amount) then
         player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
     end
-    local number_shipyard = #player:get_buildings("europeans_shipyard_advanced")
+    local number_shipyard = #player:get_buildings("europeans_shipyard")
     if ((enough_ware_amount) or (number_shipyard > 0)) and ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
         player:allow_buildings{"europeans_port", "europeans_port_big"}
     end
