@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-02 03:08+0200\n"
+"POT-Creation-Date: 2024-10-03 03:08+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -1631,80 +1631,71 @@ msgstr "Lütte Kalkbranneree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/stonemine_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Stone Mine"
-msgstr "Iesen-Bargwark"
+msgstr "Lüttes Steen-Bargwark"
 
 #: addons/europeans_base.wad/productionsites/stonemine_basic/init.lua:142
 #: addons/europeans_base.wad/productionsites/stonemine_level_1/init.lua:132
 #: addons/europeans_base.wad/productionsites/stonemine_level_2/init.lua:132
 #: addons/europeans_base.wad/productionsites/stonemine_level_3/init.lua:113
-#, fuzzy
 msgid "No marble"
-msgstr "Marmel"
+msgstr "Keen Marmel"
 
 #: addons/europeans_base.wad/productionsites/stonemine_basic/init.lua:143
 #: addons/europeans_base.wad/productionsites/stonemine_level_1/init.lua:133
 #: addons/europeans_base.wad/productionsites/stonemine_level_2/init.lua:133
 #: addons/europeans_base.wad/productionsites/stonemine_level_3/init.lua:114
-#, fuzzy
 msgid "Main marble Vein Exhausted"
-msgstr "Köhl-Ader is leeg"
+msgstr "Marmel-Ader is leeg"
 
 #: addons/europeans_base.wad/productionsites/stonemine_basic/init.lua:145
 #: addons/europeans_base.wad/productionsites/stonemine_level_2/init.lua:135
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "This stone mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
-"De Ader vun deese Iesen-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"De Ader vun deese Steen-Bargwark is leeg. De Mine produzeert vun nu an vööl "
 "dürer as normaal. Överlegg di, of du dat Bargwark utbauen of plattrieten "
 "willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/stonemine_level_1/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Stone Mine Level 1"
-msgstr "Iesen-Bargwark vun de Grött 1"
+msgstr "Steen-Bargwark vun de Grött 1"
 
 #: addons/europeans_base.wad/productionsites/stonemine_level_1/init.lua:135
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "This marble mine’s main vein is exhausted. Expect strongly diminished "
 "returns on investment. You should consider enhancing, dismantling or "
 "destroying it."
 msgstr ""
-"De Ader vun deese Köhle-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"De Ader vun deese Marmel-Bargwark is leeg. De Mine produzeert vun nu an vööl "
 "dürer as normaal. Överlegg di, of du dat Bargwark utbauen of plattrieten "
 "willst."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/stonemine_level_2/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Stone Mine Level 2"
-msgstr "Iesen-Bargwark vun de Grött 2"
+msgstr "Steen-Bargwark vun de Grött 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/stonemine_level_3/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Stone Mine Level 3"
-msgstr "Iesen-Bargwark vun de Grött 3"
+msgstr "Steen-Bargwark vun de Grött 3"
 
 #: addons/europeans_base.wad/productionsites/stonemine_level_3/init.lua:116
-#, fuzzy
 msgctxt "europeans_building"
 msgid ""
 "This stone mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
-"De Ader vun deese Iesen-Bargwark is leeg. De Mine produzeert vun nu an vööl "
+"De Ader vun deese Steen-Bargwark is leeg. De Mine produzeert vun nu an vööl "
 "dürer as normaal. Överlegg di, of du dat Bargwark plattrieten of ofbrannen "
 "willst."
 
@@ -1855,10 +1846,9 @@ msgstr "Lüttes Övenslager"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Ferry Yard"
-msgstr "Lütte Fährenwarft"
+msgstr "Fährenwarft"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ferry because ...
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:93
@@ -1880,10 +1870,9 @@ msgstr "een Schipp to timmern"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Shipyard"
-msgstr "Schipp"
+msgstr "Warft"
 
 #. TRANSLATORS: This is the Europeans' ship's name used in lists of units
 #: addons/europeans_base.wad/ships/europeans/init.lua:83
@@ -3288,7 +3277,3 @@ msgstr "Meister-Arbeider"
 msgctxt "europeans_worker"
 msgid "Basic Worker"
 msgstr "Arbeider"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Shipyard"
-#~ msgstr "Grote Warft"
