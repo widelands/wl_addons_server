@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-03 03:08+0200\n"
+"POT-Creation-Date: 2024-10-05 03:09+0200\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -1631,21 +1631,21 @@ msgstr "Basis Kalkoven"
 #: addons/europeans_base.wad/productionsites/stonemine_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Stone Mine"
-msgstr ""
+msgstr "Basis Steengroeve"
 
 #: addons/europeans_base.wad/productionsites/stonemine_basic/init.lua:142
 #: addons/europeans_base.wad/productionsites/stonemine_level_1/init.lua:132
 #: addons/europeans_base.wad/productionsites/stonemine_level_2/init.lua:132
 #: addons/europeans_base.wad/productionsites/stonemine_level_3/init.lua:113
 msgid "No marble"
-msgstr ""
+msgstr "Geen marmer"
 
 #: addons/europeans_base.wad/productionsites/stonemine_basic/init.lua:143
 #: addons/europeans_base.wad/productionsites/stonemine_level_1/init.lua:133
 #: addons/europeans_base.wad/productionsites/stonemine_level_2/init.lua:133
 #: addons/europeans_base.wad/productionsites/stonemine_level_3/init.lua:114
 msgid "Main marble Vein Exhausted"
-msgstr ""
+msgstr "Hoofdader Marmer Uitgeput"
 
 #: addons/europeans_base.wad/productionsites/stonemine_basic/init.lua:145
 #: addons/europeans_base.wad/productionsites/stonemine_level_2/init.lua:135
@@ -1654,12 +1654,15 @@ msgid ""
 "This stone mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider enhancing, dismantling or destroying it."
 msgstr ""
+"De hoofdader van deze steenmijn is uitgeput. Verwacht een sterk verminderde "
+"opbrengst van je investering. Je zou moeten overwegen om deze te verbeteren, "
+"ontmantelen of vernietigen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/stonemine_level_1/init.lua:8
 msgctxt "europeans_building"
 msgid "Stone Mine Level 1"
-msgstr ""
+msgstr "Steengroeve Niveau 1"
 
 #: addons/europeans_base.wad/productionsites/stonemine_level_1/init.lua:135
 msgctxt "europeans_building"
@@ -1668,18 +1671,21 @@ msgid ""
 "returns on investment. You should consider enhancing, dismantling or "
 "destroying it."
 msgstr ""
+"De hoofdader van deze marmermijn is uitgeput. Verwacht een sterk verminderd "
+"rendement op je investering. Je zou moeten overwegen om deze te verbeteren, "
+"ontmantelen of vernietigen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/stonemine_level_2/init.lua:8
 msgctxt "europeans_building"
 msgid "Stone Mine Level 2"
-msgstr ""
+msgstr "Steengroeve Niveau 2"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/stonemine_level_3/init.lua:8
 msgctxt "europeans_building"
 msgid "Stone Mine Level 3"
-msgstr ""
+msgstr "Steengroeve Niveau 3"
 
 #: addons/europeans_base.wad/productionsites/stonemine_level_3/init.lua:116
 msgctxt "europeans_building"
@@ -1687,6 +1693,9 @@ msgid ""
 "This stone mine’s main vein is exhausted. Expect strongly diminished returns "
 "on investment. You should consider dismantling or destroying it."
 msgstr ""
+"De hoofdader van deze steengroeve is uitgeput. Verwacht een sterk verminderd "
+"investeringsrendement. Je zou moeten overwegen om hem te ontmantelen of te "
+"vernietigen."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/tree_nursery_advanced/init.lua:8
@@ -1838,7 +1847,7 @@ msgstr "Basis Trainingskamp"
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Ferry Yard"
-msgstr ""
+msgstr "Veerboot Werf"
 
 #. TRANSLATORS: Completed/Skipped/Did not start constructing a ferry because ...
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:93
@@ -1862,7 +1871,7 @@ msgstr "een schip bouwen"
 #: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Shipyard"
-msgstr ""
+msgstr "Scheepswerf"
 
 #. TRANSLATORS: This is the Europeans' ship's name used in lists of units
 #: addons/europeans_base.wad/ships/europeans/init.lua:83
