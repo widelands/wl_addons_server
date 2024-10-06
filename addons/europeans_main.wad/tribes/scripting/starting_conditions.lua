@@ -312,7 +312,7 @@ function allow_productionsites_per_input(player)
     local map = wl.Game().map
     local tribe = player.tribe
     local enough_input_wares = false
-
+    
     local warehouse_types = {}
     for i, building in ipairs(wl.Game():get_tribe_description(player.tribe_name).buildings) do
         if (building.type_name == "warehouse") then
@@ -327,7 +327,12 @@ function allow_productionsites_per_input(player)
 
     for i, tbuilding in ipairs(tribe.buildings) do
         enough_input_wares = true
-        if ((tbuilding.type_name == "productionsite") or (tbuilding.type_name == "trainingsite")) and tbuilding.inputs then
+        if (tbuilding.type_name == "productionsite") and tbuilding.inputs then
+            for k, ware in pairs(tbuilding.inputs) do
+                enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (16 + ware_economy:target_quantity(ware.name)))
+            end
+        end
+        if (tbuilding.type_name == "trainingsite") and tbuilding.inputs then
             for k, ware in pairs(tbuilding.inputs) do
                 enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (16 + ware_economy:target_quantity(ware.name)))
             end
