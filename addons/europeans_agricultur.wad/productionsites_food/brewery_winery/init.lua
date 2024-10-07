@@ -52,11 +52,15 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=making_wine",
-                "sleep=duration:20s",
+                "sleep=duration:10s",
+                "call=brew_strong_beer",
+                "sleep=duration:10s",
+                "call=making_wine",
+                "sleep=duration:10s",
                 "call=brew_strong_beer",
                 "sleep=duration:20s",
                 "call=brew_mead",
-                "sleep=duration:20s",
+                "sleep=duration:10s",
                 "call=brew_beer",
                 "return=skipped"
             }
@@ -112,7 +116,7 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "making wine"),
             actions = {
                 -- Grapes are only needed for wine, so no need to check if wine is needed
-                "return=skipped when economy needs grape and not economy needs wine",
+                -- "return=skipped when economy needs grape and not economy needs wine",
                 "return=skipped when economy needs beer and not economy needs wine",
                 "return=skipped when economy needs beer_strong and not economy needs wine",
                 "return=skipped when economy needs mead and not economy needs wine",

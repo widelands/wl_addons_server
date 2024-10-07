@@ -68,7 +68,6 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:2s",
                 "callworker=check_space",
                 "call=pausing_production_for_inputs",
-                "call=plant_cotton",
                 "call=plant_berrybush",
                 "call=plant_grape",
                 "call=plant_reed"
@@ -91,7 +90,6 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:2s",
                 "callworker=check_fields",
                 "call=pausing_production_for_outputs",
-                "call=harvest_cotton",
                 "call=harvest_berry",
                 "call=harvest_grape",
                 "call=harvest_reed"
@@ -109,30 +107,16 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production because output not needed yet"),
             actions = {
-                "return=skipped when economy needs cotton",
                 "return=skipped when economy needs fruit",
                 "return=skipped when economy needs grape",
                 "return=skipped when economy needs reed",
                 "sleep=duration:5m"
             }
         },
-        plant_cotton = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting cotton because ...
-            descname = pgettext("europeans_building", "planting cotton"),
-            actions = {
-                "return=skipped when economy needs fruit and not economy needs cotton",
-                "return=skipped when economy needs grape and not economy needs cotton",
-                "return=skipped when economy needs reed and not economy needs cotton",
-                "consume=water:2",
-                "callworker=plant_cotton",
-                "animate=working duration:1s"
-            }
-        },
         plant_berrybush = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting berrybush because ...
             descname = pgettext("europeans_building", "planting berry bushes"),
             actions = {
-                "return=skipped when economy needs cotton and not economy needs fruit",
                 "return=skipped when economy needs grape and not economy needs fruit",
                 "return=skipped when economy needs reed and not economy needs fruit",
                 "return=skipped unless site has water",
@@ -145,7 +129,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting grape because ...
             descname = pgettext("europeans_building", "planting grapes"),
             actions = {
-                "return=skipped when economy needs cotton and not economy needs grape",
                 "return=skipped when economy needs fruit and not economy needs grape",
                 "return=skipped when economy needs reed and not economy needs grape",
                 "return=skipped unless site has water:2",
@@ -158,7 +141,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
             descname = pgettext("europeans_building", "planting reed"),
             actions = {
-                "return=skipped when economy needs cotton and not economy needs reed",
                 "return=skipped when economy needs fruit and not economy needs reed",
                 "return=skipped when economy needs grape and not economy needs reed",
                 "consume=water",
@@ -166,23 +148,10 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:1s"
             }
         },
-        harvest_cotton = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting cotton because ...
-            descname = pgettext("europeans_building", "harvesting cotton"),
-            actions = {
-                "return=skipped when economy needs fruit and not economy needs cotton",
-                "return=skipped when economy needs grape and not economy needs cotton",
-                "return=skipped when economy needs reed and not economy needs cotton",
-                "callworker=harvest_cotton",
-                "animate=working duration:1s",
-                "produce=cotton:3"
-            }
-        },
         harvest_berry = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting berry because ...
             descname = pgettext("europeans_building", "harvesting berries"),
             actions = {
-                "return=skipped when economy needs cotton and not economy needs fruit",
                 "return=skipped when economy needs grape and not economy needs fruit",
                 "return=skipped when economy needs reed and not economy needs fruit",
                 "callworker=harvest_berrybush",
@@ -194,7 +163,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting grape because ...
             descname = pgettext("europeans_building", "harvesting grapes"),
             actions = {
-                "return=skipped when economy needs cotton and not economy needs grape",
                 "return=skipped when economy needs fruit and not economy needs grape",
                 "return=skipped when economy needs reed and not economy needs grape",
                 "callworker=harvest_grape",
@@ -206,7 +174,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
             descname = pgettext("europeans_building", "harvesting reed"),
             actions = {
-                "return=skipped when economy needs cotton and not economy needs reed",
                 "return=skipped when economy needs fruit and not economy needs reed",
                 "return=skipped when economy needs grape and not economy needs reed",
                 "callworker=harvest_reed",

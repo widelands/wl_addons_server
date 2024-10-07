@@ -220,9 +220,14 @@ function allow_productionsites_per_input(player)
 
     for i, tbuilding in ipairs(tribe.buildings) do
         enough_input_wares = true
-        if ((tbuilding.type_name == "productionsite") or (tbuilding.type_name == "trainingsite")) and tbuilding.inputs then
+        if (tbuilding.type_name == "productionsite") and tbuilding.inputs then
             for k, ware in pairs(tbuilding.inputs) do
                 enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (16 + ware_economy:target_quantity(ware.name)))
+            end
+        end
+        if (tbuilding.type_name == "trainingsite") and tbuilding.inputs then
+            for k, ware in pairs(tbuilding.inputs) do
+                enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (4 + ware_economy:target_quantity(ware.name)))
             end
         end
         if ((tbuilding.type_name == "productionsite") or (tbuilding.type_name == "trainingsite")) and enough_input_wares then

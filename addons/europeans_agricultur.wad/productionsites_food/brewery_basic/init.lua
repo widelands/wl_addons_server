@@ -80,7 +80,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water and not economy needs beer",
                 "return=skipped when economy needs barley and not economy needs beer",
                 "return=skipped when economy needs mead and not economy needs beer",
-                "return=skipped when economy needs beer_strong and not economy needs beer",
                 "consume=water barley",
                 "animate=working duration:3m",
                 "produce=beer"
@@ -94,7 +93,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs barley and not economy needs mead",
                 "return=skipped when economy needs honey and not economy needs mead",
                 "return=skipped when economy needs beer and not economy needs mead",
-                "return=skipped when economy needs beer_strong and not economy needs mead",
                 "return=skipped unless site has honey",
                 "consume=water barley honey",
                 "animate=working duration:3m",
