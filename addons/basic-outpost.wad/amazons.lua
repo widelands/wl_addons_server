@@ -24,12 +24,12 @@ init = {
       wares = {
          log = 34,
          ironwood = 3,
-         rubber = 4,
+         rubber = 6,
          balsa = 2,
          rope = 4,
          granite = 10,
          quartz = 4,
-         coal = 3,
+         coal = 4,
       },
       workers = {
          amazons_cook = 2,
