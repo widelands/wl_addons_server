@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_productionsite_type {
     name = "europeans_ironmine_level_5",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Iron Mine Level 5 (Food)"),
+    descname = pgettext("europeans_building", "Iron Mine Level 5"),
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
@@ -31,8 +31,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "biscuit", amount = 4 },
         { name = "wine", amount = 4 },
+        { name = "biscuit", amount = 2 },
         { name = "meat", amount = 2 },
         { name = "fish", amount = 2 }
     },
@@ -42,8 +42,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs ore or economy needs granite or economy needs marble or workers need experience",
-                "return=skipped when economy needs coal and not economy needs ore",
+                "return=skipped when economy needs wine and not economy needs granite and not economy needs ore and not economy needs quartz",
+                "return=skipped when economy needs biscuit and not economy needs granite and not economy needs ore and not economy needs quartz",
+                "return=skipped when economy needs coal and not economy needs ore and not economy needs quartz",
                 "consume=biscuit",
                 "call=mine_stone",
                 "call=mine_ore",
@@ -108,7 +109,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=biscuit wine:2 meat,fish",
+                "consume=wine:2 biscuit meat,fish",
                 "produce=ore:10 granite:4 marble:2 quartz:2",
             }
         },

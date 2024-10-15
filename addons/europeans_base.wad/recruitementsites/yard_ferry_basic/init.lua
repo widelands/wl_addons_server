@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_ferry_yard_basic",
+    name = "europeans_ferry_yard",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Basic Ferry Yard"),
+    descname = pgettext("europeans_building", "Ferry Yard"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -26,7 +26,7 @@ wl.Descriptions():new_productionsite_type {
     map_check = {"seafaring", "waterways"},
     
     enhancement = {
-        name = "europeans_shipyard_advanced",
+        name = "europeans_shipyard",
         enhancement_cost = {
             brick = 2,
             grout = 2,

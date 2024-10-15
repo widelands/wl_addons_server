@@ -65,11 +65,15 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=brew_beer",
-                "sleep=duration:20s",
+                "call=brew_strong_beer",
+                "sleep=duration:10s",
                 "call=brew_mead",
                 "sleep=duration:20s",
                 "call=brew_strong_beer",
+                "sleep=duration:10s",
+                "call=brew_mead",
+                "sleep=duration:20s",
+                "call=brew_beer",
                 "return=skipped"
             }
         },

@@ -40,10 +40,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         check_terraform_coast = {
-            "findspace=size:swim radius:8 terraform:diking",
+            "findspace=size:swim radius:4 terraform:diking",
         },
         terraform_coast = {
-            "findspace=size:swim radius:8 terraform:diking",
+            "findspace=size:swim radius:4 terraform:diking",
             "walk=coords",
             "animate=dig duration:2s",
             "terraform=diking",
@@ -53,10 +53,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         check_dig_space = {
-            "findspace=size:any radius:8 avoid:field",
+            "findspace=size:any radius:4 avoid:field",
         },
         dig_pond = {
-            "findspace=size:any radius:8 avoid:field",
+            "findspace=size:any radius:4 avoid:field",
             "walk=coords",
             "animate=dig duration:2s",
             "terraform=amazons",
@@ -65,10 +65,10 @@ wl.Descriptions():new_worker_type {
             "return"
         },
         check_pond_dry = {
-            "findobject=attrib:pond_dry radius:8",
+            "findobject=attrib:pond_dry radius:4",
         },
         fill_pond_dry = {
-            "findobject=attrib:pond_dry radius:8",
+            "findobject=attrib:pond_dry radius:4",
             "walk=object",
             "animate=water duration:3s",
             "callobject=fill_pond",

@@ -99,11 +99,9 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:2s",
                 "callworker=check_space",
                 "call=pausing_production_for_inputs",
-                "call=plant_reed",
                 "call=plant_barley",
                 "call=plant_rye",
                 "call=plant_wheat",
-                "call=plant_reed",
                 "call=plant_barley",
                 "call=plant_rye",
                 "call=plant_wheat"
@@ -126,11 +124,9 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:2s",
                 "callworker=check_fields",
                 "call=pausing_production_for_outputs",
-                "call=harvest_reed",
                 "call=harvest_barley",
                 "call=harvest_rye",
                 "call=harvest_wheat",
-                "call=harvest_reed",
                 "call=harvest_barley",
                 "call=harvest_rye",
                 "call=harvest_wheat"
@@ -148,7 +144,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start pausing production because ...
             descname = pgettext("europeans_building", "pausing production because output not needed yet"),
             actions = {
-                "return=skipped when economy needs reed",
                 "return=skipped when economy needs barley",
                 "return=skipped when economy needs rye",
                 "return=skipped when economy needs wheat",
@@ -159,7 +154,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start planting barley because ...
             descname = pgettext("europeans_building", "planting barley"),
             actions = {
-                "return=skipped when economy needs reed and not economy needs barley",
                 "return=skipped when economy needs rye and not economy needs barley",
                 "return=skipped when economy needs wheat and not economy needs barley",
                 "return=skipped unless site has water",
@@ -170,27 +164,11 @@ wl.Descriptions():new_productionsite_type {
                 "animate=working duration:5s"
             }
         },
-        plant_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start planting reed because ...
-            descname = pgettext("europeans_building", "planting reed"),
-            actions = {
-                "return=skipped when economy needs barley and not economy needs reed",
-                "return=skipped when economy needs rye and not economy needs reed",
-                "return=skipped when economy needs wheat and not economy needs reed",
-                "return=skipped unless site has water",
-                "consume=water",
-                "callworker=plant_reed",
-                "animate=working duration:5s",
-                "callworker=plant_reed",
-                "animate=working duration:5s"
-            }
-        },
         plant_rye = {
             -- TRANSLATORS: Completed/Skipped/Did not start planting rye because ...
             descname = pgettext("europeans_building", "planting rye"),
             actions = {
                 "return=skipped when economy needs barley and not economy needs rye",
-                "return=skipped when economy needs reed and not economy needs rye",
                 "return=skipped when economy needs wheat and not economy needs rye",
                 "return=skipped unless site has water",
                 "consume=water",
@@ -205,7 +183,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "planting wheat"),
             actions = {
                 "return=skipped when economy needs barley and not economy needs wheat",
-                "return=skipped when economy needs reed and not economy needs wheat",
                 "return=skipped when economy needs rye and not economy needs wheat",
                 "return=skipped unless site has water",
                 "consume=water",
@@ -219,7 +196,6 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting barley because ...
             descname = pgettext("europeans_building", "harvesting barley"),
             actions = {
-                "return=skipped when economy needs reed and not economy needs barley",
                 "return=skipped when economy needs rye and not economy needs barley",
                 "return=skipped when economy needs wheat and not economy needs barley",
                 "return=skipped unless economy needs barley or workers need experience",
@@ -231,27 +207,11 @@ wl.Descriptions():new_productionsite_type {
                 "produce=barley"
             }
         },
-        harvest_reed = {
-            -- TRANSLATORS: Completed/Skipped/Did not start harvesting reed because ...
-            descname = pgettext("europeans_building", "harvesting reed"),
-            actions = {
-                "return=skipped when economy needs barley and not economy needs reed",
-                "return=skipped when economy needs rye and not economy needs reed",
-                "return=skipped when economy needs wheat and not economy needs reed",
-                "callworker=harvest_reed",
-                "animate=working duration:5s",
-                "produce=reed",
-                "callworker=harvest_reed",
-                "animate=working duration:5s",
-                "produce=reed"
-            }
-        },
         harvest_rye = {
             -- TRANSLATORS: Completed/Skipped/Did not start harvesting rye because ...
             descname = pgettext("europeans_building", "harvesting rye"),
             actions = {
                 "return=skipped when economy needs barley and not economy needs rye",
-                "return=skipped when economy needs reed and not economy needs rye",
                 "return=skipped when economy needs wheat and not economy needs rye",
                 "return=skipped unless economy needs rye or workers need experience",
                 "callworker=harvest_rye",
@@ -267,7 +227,6 @@ wl.Descriptions():new_productionsite_type {
             descname = pgettext("europeans_building", "harvesting wheat"),
             actions = {
                 "return=skipped when economy needs barley and not economy needs wheat",
-                "return=skipped when economy needs reed and not economy needs wheat",
                 "return=skipped when economy needs rye and not economy needs wheat",
                 "return=skipped unless economy needs wheat or workers need experience",
                 "callworker=harvest_wheat",

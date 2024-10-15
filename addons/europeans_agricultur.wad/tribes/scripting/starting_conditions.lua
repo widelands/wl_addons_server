@@ -220,17 +220,17 @@ function allow_productionsites_per_input(player)
 
     for i, tbuilding in ipairs(tribe.buildings) do
         enough_input_wares = true
-        if ((tbuilding.type_name == "productionsite") or (tbuilding.type_name == "trainingsite")) and tbuilding.inputs then
+        if (tbuilding.type_name == "productionsite") and tbuilding.inputs then
             for k, ware in pairs(tbuilding.inputs) do
-                if enough_input_wares and (player:get_wares(ware.name) >= (1 + ware_economy:target_quantity(ware.name))) then
-                    enough_input_wares = true
-                else
-                    enough_input_wares = false
-                end
+                enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (16 + ware_economy:target_quantity(ware.name)))
+            end
+        end
+        if (tbuilding.type_name == "trainingsite") and tbuilding.inputs then
+            for k, ware in pairs(tbuilding.inputs) do
+                enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (4 + ware_economy:target_quantity(ware.name)))
             end
         end
         if ((tbuilding.type_name == "productionsite") or (tbuilding.type_name == "trainingsite")) and enough_input_wares then
-            print (tbuilding.name, enough_input_wares)
             player:allow_buildings{tbuilding.name}
         end
     end
@@ -254,22 +254,19 @@ function allow_warehouses_per_ware_amount(player)
     local ware_economy = warehouses[1].flag.ware_economy
 
     for k, ware in pairs(tribe.wares) do
-        if enough_ware_amount and (player:get_wares(ware.name) >= (16 + ware_economy:target_quantity(ware.name))) then
-            enough_ware_amount = true
-        else
-            enough_ware_amount = false
-        end
+        enough_ware_amount = enough_ware_amount and (player:get_wares(ware.name) >= ware_economy:target_quantity(ware.name))
     end
-    if enough_ware_amount then
+    if (enough_ware_amount) then
         player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
+    end
+    local number_shipyard = #player:get_buildings("europeans_shipyard")
+    if ((enough_ware_amount) or (number_shipyard > 0)) and ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
+        player:allow_buildings{"europeans_port", "europeans_port_big"}
     end
 end
 
 function allow_all_militarysites(player)
-    local game = wl.Game()
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
+    if player.tribe.name == "europeans" then
         player:allow_buildings{"europeans_sentry_basic", "europeans_sentry_level_1", "europeans_sentry_level_2", "europeans_sentry_level_3"}
         player:allow_buildings{"europeans_barrier_basic", "europeans_barrier_level_1", "europeans_barrier_level_2", "europeans_barrier_level_3"}
         player:allow_buildings{"europeans_tower_basic", "europeans_tower_level_1", "europeans_tower_level_2", "europeans_tower_level_3"}
@@ -278,10 +275,7 @@ function allow_all_militarysites(player)
 end
 
 function forbid_all_militarysites(player)
-    local game = wl.Game()
-    local tribe = player.tribe
-
-    if tribe.name == "europeans" then
+    if player.tribe.name == "europeans" then
         player:forbid_buildings{"europeans_sentry_basic", "europeans_sentry_level_1", "europeans_sentry_level_2", "europeans_sentry_level_3"}
         player:forbid_buildings{"europeans_barrier_basic", "europeans_barrier_level_1", "europeans_barrier_level_2", "europeans_barrier_level_3"}
         player:forbid_buildings{"europeans_tower_basic", "europeans_tower_level_1", "europeans_tower_level_2", "europeans_tower_level_3"}
@@ -289,24 +283,7 @@ function forbid_all_militarysites(player)
     end
 end
 
-function start_stopped_buildings(player)
-    local game = wl.Game()
-
-    for i, tbuilding in ipairs(player.tribe.buildings) do
-        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-            if (tbuilding.type_name == "productionsite") and (building.is_stopped == true) then
-                building:toggle_start_stop()
-            end
-            if (tbuilding.type_name == "trainingsite") and (building.is_stopped == true) then
-                building:toggle_start_stop()
-            end
-        end
-    end
-end
-
 function upgrade_random_militarysites(player)
-    local game = wl.Game()
-
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
             if (tbuilding.type_name == "militarysite") and (tbuilding.enhancement) then
@@ -318,13 +295,24 @@ function upgrade_random_militarysites(player)
 end
 
 function set_hero_advanced_militarysites(player)
-    local game = wl.Game()
-
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
             if (tbuilding.type_name == "militarysite") and (building.soldier_preference) then
                 building.soldier_preference = "any"
                 building.soldier_preference = "heroes"
+            end
+        end
+    end
+end
+
+function start_stopped_buildings(player)
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+            if (tbuilding.type_name == "productionsite") and (building.is_stopped == true) then
+                building:toggle_start_stop()
+            end
+            if (tbuilding.type_name == "trainingsite") and (building.is_stopped == true) then
+                building:toggle_start_stop()
             end
         end
     end
@@ -342,11 +330,6 @@ function doing_ai_stuff(player, increment)
     if (increment >= 2) then
         allow_productionsites_per_input(player)
         allow_warehouses_per_ware_amount(player)
-    end
-    if (increment >= 8) then
-        if ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-            player:allow_buildings{"europeans_port", "europeans_port_big"}
-        end
     end
 
    -- Experimental actions

@@ -57,7 +57,11 @@ wl.Descriptions():new_productionsite_type {
             descname = _"working",
             actions = {
                 "call=produce_biscuits",
+                "sleep=duration:10s",
+                "call=produce_honey_bread",
                 "sleep=duration:20s",
+                "call=produce_biscuits",
+                "sleep=duration:10s",
                 "call=produce_honey_bread",
                 "sleep=duration:20s",
                 "call=produce_bread",

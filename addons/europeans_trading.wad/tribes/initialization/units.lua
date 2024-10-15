@@ -225,7 +225,7 @@ wl.Descriptions():new_tribe {
             },
         },
         {
-            -- Building Materials 3 (Stone and Mining)
+            -- Building Materials 3 (Stone and Clay)
             {
                 name = "granite",
                 default_target_quantity = 32,
@@ -278,6 +278,9 @@ wl.Descriptions():new_tribe {
                     }
                 }
             },
+        },
+        {
+            -- Building Materials 4 (Mining)
             {
                 name = "marble",
                 default_target_quantity = 16,
@@ -1367,29 +1370,8 @@ wl.Descriptions():new_tribe {
         {
             name = "europeans_market_craft",
             helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Small Market
+                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
                 purpose = pgettext("europeans_building", "Market building to sale processed products for coins.")
-            }
-        },
-        {
-            name = "europeans_market_armor",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
-                purpose = pgettext("europeans_building", "Market building to sale armor for coins.")
-            }
-        },
-        {
-            name = "europeans_market_boots",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
-                purpose = pgettext("europeans_building", "Market building to sale boots for coins.")
-            }
-        },
-        {
-            name = "europeans_market_weapons",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Big Market
-                purpose = pgettext("europeans_building", "Market building to sale weapons for coins.")
             }
         },
         {
@@ -1704,6 +1686,34 @@ wl.Descriptions():new_tribe {
 
         -- Mines
         {
+            name = "europeans_stonemine_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for production site: Granite Mine
+                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+            }
+        },
+        {
+            name = "europeans_stonemine_level_1",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for production site: Marble Mine
+                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+            }
+        },
+        {
+            name = "europeans_stonemine_level_2",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for production site: Deep Marble Mine
+                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+            }
+        },
+        {
+            name = "europeans_stonemine_level_3",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Crystal Mine
+                purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
+            }
+        },
+        {
             name = "europeans_coalmine_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for production site: Coal Mine
@@ -1851,6 +1861,34 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 2
                     pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
                 },
+            }
+        },
+        {
+            name = "europeans_training_center_health",
+            helptexts = {
+                -- TRANSLATORS: Note helptext for a Europeans training site: Dungeon
+                note = pgettext("europeans_building", "Trains soldiers only in ‘Health’."),
+            }
+        },
+        {
+            name = "europeans_training_center_evade",
+            helptexts = {
+                -- TRANSLATORS: Note helptext for a Europeans training site: Trainingscamp
+                note = pgettext("europeans_building", "Trains soldiers only in ‘Evade’."),
+            }
+        },
+        {
+            name = "europeans_training_center_defense",
+            helptexts = {
+                -- TRANSLATORS: Note helptext for a Europeans training site: Labyrinth
+                note = pgettext("europeans_building", "Trains soldiers only in ‘Defense’."),
+            }
+        },
+        {
+            name = "europeans_training_center_attack",
+            helptexts = {
+                -- TRANSLATORS: Note helptext for a Europeans training site: Training Center
+                note = pgettext("europeans_building", "Trains soldiers only in ‘Attack’."),
             }
         },
         {
@@ -2051,7 +2089,7 @@ wl.Descriptions():new_tribe {
 
         -- Seafaring/Ferry Sites - these are only displayed on seafaring/ferry maps
         {
-            name = "europeans_ferry_yard_basic",
+            name = "europeans_ferry_yard",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
                 purpose = pgettext("europeans_building", "Builds ferries."),
@@ -2060,7 +2098,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_shipyard_advanced",
+            name = "europeans_shipyard",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
                 purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports.")
@@ -2292,8 +2330,8 @@ wl.Descriptions():new_tribe {
       armor_manufactory = "europeans_tailors_house_basic",
       boots_manufactory = "europeans_shoemakers_house_basic",
       big_manufactory = "europeans_manufactory_basic",
-      shipyard = "europeans_shipyard_advanced",
-      ferry_yard = "europeans_ferry_yard_basic",
+      shipyard = "europeans_shipyard",
+      ferry_yard = "europeans_ferry_yard",
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",
       industry_supporter = "europeans_smelting_works_basic",

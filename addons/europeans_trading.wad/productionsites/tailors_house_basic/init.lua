@@ -72,7 +72,7 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "armor", amount = 4 },
         { name = "cloth", amount = 4 },
-        { name = "log", amount = 4 }
+        { name = "blackwood", amount = 4 }
     },
 
     programs = {
@@ -90,9 +90,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden armor because ...
             descname = pgettext("europeans_building", "making a wooden armor"),
             actions = {
-                "return=skipped when economy needs log and not economy needs armor_wooden",
+                "return=skipped when economy needs blackwood and not economy needs armor_wooden",
                 "return=skipped when economy needs armor_processed and not economy needs armor_wooden",
-                "consume=log",
+                "consume=blackwood",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",

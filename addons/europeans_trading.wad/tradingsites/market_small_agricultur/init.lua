@@ -68,6 +68,7 @@ wl.Descriptions():new_productionsite_type {
     inputs = {
         { name = "gold", amount = 4 },
         { name = "log", amount = 16 },
+        { name = "rubber", amount = 16 },
         { name = "reed", amount = 16 },
         { name = "cotton", amount = 16 },
     },
@@ -94,6 +95,8 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "call=trade_log_copper",
                 "sleep=duration:10s",
+                "call=trade_rubber_copper",
+                "sleep=duration:10s",
                 "call=trade_reed_copper",
                 "sleep=duration:10s",
                 "call=trade_cotton_copper"
@@ -109,6 +112,8 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "call=trade_log_silver",
                 "sleep=duration:10s",
+                "call=trade_rubber_silver",
+                "sleep=duration:10s",
                 "call=trade_reed_silver",
                 "sleep=duration:10s",
                 "call=trade_cotton_silver"
@@ -123,6 +128,8 @@ wl.Descriptions():new_productionsite_type {
                 "call=pausing_production_for_gold",
                 "sleep=duration:10s",
                 "call=trade_log_gold",
+                "sleep=duration:10s",
+                "call=trade_rubber_gold",
                 "sleep=duration:10s",
                 "call=trade_reed_gold",
                 "sleep=duration:10s",
@@ -240,6 +247,42 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped unless site has reed:8",
                 "return=skipped unless site has gold",
                 "consume=reed:8 gold",
+                "animate=working duration:30s",
+                "produce=coin_gold:2",
+                "sleep=duration:30s",
+            }
+        },
+        trade_rubber_copper = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has rubber:2",
+                "return=skipped unless site has gold",
+                "consume=rubber:2 gold",
+                "animate=working duration:30s",
+                "produce=coin_copper:2",
+                "sleep=duration:30s",
+            }
+        },
+        trade_rubber_silver = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has rubber:3",
+                "return=skipped unless site has gold",
+                "consume=rubber:3 gold",
+                "animate=working duration:30s",
+                "produce=coin_silver:2",
+                "sleep=duration:30s",
+            }
+        },
+        trade_rubber_gold = {
+            -- TRANSLATORS: Completed/Skipped/Did not start trading because ...
+            descname = _("trading"),
+            actions = {
+                "return=skipped unless site has rubber:4",
+                "return=skipped unless site has gold",
+                "consume=rubber:4 gold",
                 "animate=working duration:30s",
                 "produce=coin_gold:2",
                 "sleep=duration:30s",
