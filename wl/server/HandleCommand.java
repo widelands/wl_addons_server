@@ -1230,7 +1230,8 @@ public class HandleCommand {
 					    + "If you really want to submit such a large add-on, "
 					    + "please contact the Widelands Development Team.");
 
-				abstractFiles.add(new AbstractFile(clientDirname, sanitizedDirname, filename, checksum, size));
+				abstractFiles.add(
+				    new AbstractFile(clientDirname, sanitizedDirname, filename, checksum, size));
 			}
 		}
 
@@ -1302,9 +1303,9 @@ public class HandleCommand {
 			stream.close();
 			String c = Utils.checksum(output);
 			if (!f.checksum.equals(c))
-				throw new ServerUtils.WLProtocolException("Checksum mismatch for " + f.sanitizedDirectory +
-				                                          "/" + f.name + ": expected " +
-				                                          f.checksum + ", found " + c);
+				throw new ServerUtils.WLProtocolException(
+				    "Checksum mismatch for " + f.sanitizedDirectory + "/" + f.name + ": expected " +
+				    f.checksum + ", found " + c);
 
 			// Automatically shrink PNGs during uploading to speed up subsequent downloads
 			if (f.name.endsWith(".png")) {
