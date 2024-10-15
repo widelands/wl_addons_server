@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 6 },
+        { name = "blackwood", amount = 6 },
         { name = "metal_alloy", amount = 4 },
         { name = "coal", amount = 4 }
     },
@@ -94,11 +94,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden helmet because ...
             descname = pgettext("europeans_building", "making a wooden helmet"),
             actions = {
-                "return=skipped when economy needs log and not economy needs helmet_wooden",
+                "return=skipped when economy needs blackwood and not economy needs helmet_wooden",
                 "return=skipped when economy needs helmet_mask and not economy needs helmet_wooden",
                 "return=skipped when economy needs spear_wooden and not economy needs helmet_wooden",
                 "return=skipped when economy needs spear_advanced and not economy needs helmet_wooden",
-                "consume=log",
+                "consume=blackwood",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -109,11 +109,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging a wooden spear because ...
             descname = pgettext("europeans_building", "forging a wooden spear"),
             actions = {
-                "return=skipped when economy needs log and not economy needs spear_wooden",
+                "return=skipped when economy needs blackwood and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_wooden",
                 "return=skipped when economy needs helmet_mask and not economy needs spear_wooden",
                 "return=skipped when economy needs spear_advanced and not economy needs spear_wooden",
-                "consume=log",
+                "consume=blackwood",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -137,11 +137,11 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start forging an advanced spear because ...
             descname = pgettext("europeans_building", "forging an advanced spear"),
             actions = {
-                "return=skipped when economy needs log and not economy needs spear_advanced",
+                "return=skipped when economy needs blackwood and not economy needs spear_advanced",
                 "return=skipped when economy needs helmet_wooden and not economy needs spear_advanced",
                 "return=skipped when economy needs helmet_mask and not economy needs spear_advanced",
                 "return=skipped when economy needs spear_wooden and not economy needs spear_advanced",
-                "consume=log coal metal_alloy",
+                "consume=blackwood coal metal_alloy",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",

@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "log", amount = 4 },
+        { name = "blackwood", amount = 4 },
         { name = "cloth", amount = 4 }
     },
 
@@ -89,9 +89,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making a wooden boots because ...
             descname = pgettext("europeans_building", "making a pair of wooden boots"),
             actions = {
-                "return=skipped when economy needs log and not economy needs boots_wooden",
+                "return=skipped when economy needs blackwood and not economy needs boots_wooden",
                 "return=skipped when economy needs boots_sturdy and not economy needs boots_wooden",
-                "consume=log",
+                "consume=blackwood",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:10m",
                 "playsound=sound/smiths/sharpening priority:90%",
@@ -102,10 +102,10 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start making study boots because ...
             descname = pgettext("europeans_building", "making study boots"),
             actions = {
-                "return=skipped when economy needs log and not economy needs boots_sturdy",
+                "return=skipped when economy needs blackwood and not economy needs boots_sturdy",
                 "return=skipped when economy needs cloth and not economy needs boots_sturdy",
                 "return=skipped when economy needs boots_wooden and not economy needs boots_sturdy",
-                "consume=log cloth:2",
+                "consume=blackwood cloth:2",
                 "playsound=sound/smiths/smith priority:50% allow_multiple",
                 "animate=working duration:10m",
                 "produce=boots_sturdy:2"

@@ -80,8 +80,11 @@ wl.Descriptions():new_productionsite_type {
             descname = _"idle program",
             actions = {
                 "return=skipped when economy needs meat or economy needs leather",
+                "return=skipped when economy needs europeans_carrier_ox",
                 "return=skipped when economy needs water",
-                "return=skipped when economy needs flour or economy needs beer",
+                "return=skipped when economy needs wheat",
+                "return=skipped when economy needs rye",
+                "return=skipped when economy needs barley",
                 "consume=water:2 wheat rye barley",
                 "animate=working duration:90s",
                 "sleep=duration:5m"
@@ -91,11 +94,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start rearing cattle because ...
             descname = pgettext("europeans_building", "rearing cattle"),
             actions = {
-                "return=skipped unless economy needs europeans_carrier_ox or workers need experience",
-                "return=skipped when economy needs meat or economy needs leather",
-                "return=skipped when economy needs flour or economy needs water",
-                "return=skipped unless site has water:4",
-                "return=skipped unless site has rye:4 or site has wheat:4 or site has barley:4",
+                "return=skipped when economy needs water and not economy needs europeans_carrier_ox",
+                "return=skipped when economy needs rye and economy needs wheat and economy needs barley and not economy needs europeans_carrier_ox",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/ox priority:50% allow_multiple",
                 "animate=working duration:25s", -- Animation of feeding the cattle
@@ -115,9 +115,9 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start raising pigs because ...
            descname = pgettext("europeans_building", "producing meat"),
            actions = {
-                "return=skipped unless economy needs meat or workers need experience",
-                "return=skipped unless site has water:4",
-                "return=skipped unless site has wheat,rye,barley:4",
+                "return=skipped when economy needs leather and not economy needs meat",
+                "return=skipped when economy needs water and not economy needs meat",
+                "return=skipped when economy needs rye and economy needs wheat and economy needs barley and not economy needs meat",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:25s",
@@ -137,9 +137,8 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start producing meat and leather because ...
            descname = pgettext("europeans_building", "producing meat and leather"),
            actions = {
-                "return=skipped unless economy needs leather or workers need experience",
-                "return=skipped unless site has water:4",
-                "return=skipped unless site has wheat,rye,barley:4",
+                "return=skipped when economy needs water and not economy needs leather",
+                "return=skipped when economy needs rye and economy needs wheat and economy needs barley and not economy needs leather",
                 "consume=water rye,wheat,barley",
                 "playsound=sound/farm/farm_animal priority:50% allow_multiple",
                 "animate=working duration:25s",

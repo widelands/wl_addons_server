@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 wl.Descriptions():new_productionsite_type {
     name = "europeans_goldmine_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Basic Gold Mine (Food)"),
+    descname = pgettext("europeans_building", "Basic Gold Mine"),
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
@@ -62,8 +62,8 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "bread", amount = 4 },
-        { name = "beer", amount = 4 },
+        { name = "beer", amount = 2 },
+        { name = "bread", amount = 2 },
         { name = "meat", amount = 2 },
         { name = "fish", amount = 2 }
     },
@@ -73,8 +73,9 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mining gold because ...
             descname = pgettext("europeans_building", "mining"),
             actions = {
-                "return=skipped unless economy needs ore or economy needs granite or economy needs quartz or workers need experience",
-                "return=skipped when economy needs coal and not economy needs ore",
+                "return=skipped when economy needs beer and not economy needs granite and not economy needs ore and not economy needs quartz",
+                "return=skipped when economy needs bread and not economy needs granite and not economy needs ore and not economy needs quartz",
+                "return=skipped when economy needs coal and not economy needs ore and not economy needs quartz",
                 "consume=bread",
                 "call=mine_stone",
                 "call=mine_ore",
@@ -127,7 +128,7 @@ wl.Descriptions():new_productionsite_type {
             -- just a dummy program to fix encyclopedia
             descname = "encyclopedia",
             actions = {
-                "consume=bread beer meat,fish",
+                "consume=beer bread meat,fish",
                 "produce=ore:4 granite:3 marble quartz",
             }
         },

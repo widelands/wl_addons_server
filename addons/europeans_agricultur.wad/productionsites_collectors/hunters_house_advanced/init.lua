@@ -31,6 +31,8 @@ wl.Descriptions():new_productionsite_type {
     
     inputs = {
         { name = "water", amount = 4 },
+        { name = "blackroot", amount = 4 },
+        { name = "fruit", amount = 4 },
     },
 
     programs = {
@@ -40,7 +42,11 @@ wl.Descriptions():new_productionsite_type {
             actions = {
                 "return=skipped when economy needs water and not economy needs meat",
                 "return=skipped when economy needs water and not economy needs leather",
-                "consume=water",
+                "return=skipped when economy needs blackroot and not economy needs meat",
+                "return=skipped when economy needs blackroot and not economy needs leather",
+                "return=skipped when economy needs fruit and not economy needs meat",
+                "return=skipped when economy needs fruit and not economy needs leather",
+                "consume=water blackroot fruit",
                 "callworker=release",
                 "sleep=duration:1m",
                 "callworker=hunt",

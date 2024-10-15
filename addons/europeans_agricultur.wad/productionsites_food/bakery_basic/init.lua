@@ -83,7 +83,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs water and not economy needs bread",
                 "return=skipped when economy needs flour and not economy needs bread",
                 "return=skipped when economy needs honey_bread and not economy needs bread",
-                "return=skipped when economy needs biscuit and not economy needs bread",
                 "consume=water:2 flour:2",
                 "animate=working duration:3m",
                 "produce=bread:2"
@@ -97,7 +96,6 @@ wl.Descriptions():new_productionsite_type {
                 "return=skipped when economy needs flour and not economy needs honey_bread",
                 "return=skipped when economy needs honey and not economy needs honey_bread",
                 "return=skipped when economy needs bread and not economy needs honey_bread",
-                "return=skipped when economy needs biscuit and not economy needs honey_bread",
                 "return=skipped unless site has honey",
                 "consume=water:2 flour:2 honey",
                 "animate=working duration:3m",

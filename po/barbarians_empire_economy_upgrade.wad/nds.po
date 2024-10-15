@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-08 03:08+0200\n"
+"POT-Creation-Date: 2024-09-30 03:08+0200\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -93,6 +93,19 @@ msgstr "Iesen to smelten"
 msgctxt "barbarians_building"
 msgid "smelting gold"
 msgstr "Gold to smelten"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:8
+msgctxt "barbarians_building_small"
+msgid "Small Weaving Mill"
+msgstr "Lütte Spinnweelmöhlen"
+
+#. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
+#. TRANSLATORS: Completed/Skipped/Did not start working because ...
+#: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:50
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:109
+msgid "weaving"
+msgstr "to spinnen"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:8
@@ -233,13 +246,46 @@ msgid "The miller needs %1% on average to grind wheat into a sack of flour."
 msgstr ""
 "De Müller bruukt dör de Bank %1% um Weit för eenen Sack Mehl to mahlen."
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:88
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:87
+msgctxt "barbarians_building"
+msgid ""
+"‘Fine cloth and jewelry mean nothing to a true Barbarian.<br>But a noble "
+"sail in the wind will please his eyes.’"
+msgstr ""
+"»Goder Stoff un Smuck sünd för eenen echten Willen nix weert.<br>Aver een "
+"godes Fock im Wind verbliedt siene Oogen.«"
+
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:89
+msgctxt "barbarians_building"
+msgid ""
+"Khantarakh, ‘The Modern Barbarian Economy’,<br>9ᵗʰ cowhide ‘Seafaring and "
+"Conquest’"
+msgstr ""
+"Khantarakh, »De modeerne Wille Weertskupp«, <br>9. Kohhuud »Seefahrt un "
+"Innehmen«"
+
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:90
+msgid "Weaves cloth out of reed."
+msgstr "Spinnt Stoff ut Reit."
+
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:91
+msgid "This building operates as an ordinary weaving mill only 25% slower."
+msgstr ""
+"Deeses Huus warkt as eene normaale Spinnweelmöhlen, blots 25% langsaamer."
+
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:92
+msgctxt "empire_building"
+msgid "The weaver needs %1% on average to weave reed into a piece of cloth."
+msgstr ""
+"De Spinner bruukt dör de Bank %1% um Reit in een Deel Stoff to spinnen."
+
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:124
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:128
 msgid "Smelts iron ore into iron and gold ore into gold."
 msgstr "Smelt Iesenkluut to Iesen un Goldkluut to Gold."
 
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:89
-#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:93
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:125
+#: addons/barbarians_empire_economy_upgrade.wad/postload.lua:129
 msgid ""
 "Advanced smelting works needs just one lump of coal to produce 2 iron ingots "
 "or 2 bars of gold. The building produces iron and gold faster than basic "
