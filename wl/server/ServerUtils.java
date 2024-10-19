@@ -324,6 +324,20 @@ public class ServerUtils {
 	}
 
 	/**
+	 * Retrieve the ID of an map from the database.
+	 * @param slug The map's slug.
+	 * @return The map's ID.
+	 * @throws Exception If anything at all goes wrong or the map does not exist, throw an
+	 *     Exception.
+	 */
+	public static Long getMapID(String slug) throws Exception {
+		ResultSet r =
+		    Utils.sql(Utils.Databases.kWebsite, "select id from wlmaps_map where slug=?", slug);
+		if (!r.next()) throw new WLProtocolException("Map '" + slug + "' is not in the database");
+		return r.getLong("id");
+	}
+
+	/**
 	 * Dump a file and some of its metadata to a stream.
 	 * @param f File to send.
 	 * @param out Stream to write to.
@@ -430,8 +444,8 @@ public class ServerUtils {
 				// Send the e-mail to affected users only, sending a mail by default.
 				for (Long user : limitToUsers) {
 					sql = Utils.sql(Utils.Databases.kWebsite,
-					                "select shouldsend from wladdons_settings_addonnoticeuser " +
-					                "where notice_type_id=? and user_id=?",
+					                "select shouldsend from wladdons_settings_addonnoticeuser "
+					                    + "where notice_type_id=? and user_id=?",
 					                noticetypeID, user);
 					if (!sql.next() || sql.getLong("shouldsend") > 0) usersToSendMailTo.add(user);
 				}
@@ -439,8 +453,8 @@ public class ServerUtils {
 		} else {
 			// Send the e-mail to users who explicitly subscribed.
 			sql = Utils.sql(Utils.Databases.kWebsite,
-			                "select user_id from wladdons_settings_addonnoticeuser where " +
-			                "notice_type_id=? and shouldsend>0",
+			                "select user_id from wladdons_settings_addonnoticeuser where "
+			                    + "notice_type_id=? and shouldsend>0",
 			                noticetypeID);
 			while (sql.next()) {
 				long user = sql.getLong("user_id");
