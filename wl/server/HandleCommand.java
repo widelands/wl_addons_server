@@ -718,8 +718,8 @@ public class HandleCommand {
 			    Utils.kEMailVerbosityFYI, "Add-On Deleted",
 			    "The add-on '" + cmd[1] + "' (#" + id + ") has been deleted by " + username +
 			        " for the following reason:\n" + reason +
-			        ("\n\n-------------------------\n\nThe add-on can still be restored manually " +
-			         "from the Git history and the last database backups."));
+			        ("\n\n-------------------------\n\nThe add-on can still be restored manually "
+			         + "from the Git history and the last database backups."));
 
 			ResultSet sql =
 			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);
@@ -735,11 +735,11 @@ public class HandleCommand {
 				Utils.sendEMail(
 				    sql.getString("email"), "Add-On Deleted",
 				    "Dear " + sql.getString("username") + ",\n\nyour add-on '" + cmd[1] +
-				        ("' has been deleted by the server administrators for the following " +
-				         "reason:\n") +
-				        reason + "\n\n-------------------------\n"
-				        + ("If you believe this decision to be incorrect, please contact us in " +
-				           "the forum at https://www.widelands.org/forum/forum/17/."),
+				        ("' has been deleted by the server administrators for the following "
+				         + "reason:\n") +
+				        reason + "\n\n-------------------------\n" +
+				        ("If you believe this decision to be incorrect, please contact us in "
+				         + "the forum at https://www.widelands.org/forum/forum/17/."),
 				    true);
 			}
 
@@ -931,8 +931,8 @@ public class HandleCommand {
 				long maxDirs = 1000;
 				long minUploadInterval = 60 * 60 * 24 * 3;
 				ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
-				                          "select filesize,nrfiles,nrdirs,upload_interval from " +
-				                          "upload_override where name=?",
+				                          "select filesize,nrfiles,nrdirs,upload_interval from "
+				                              + "upload_override where name=?",
 				                          cmd[1]);
 				if (sql.next()) {
 					long val;
@@ -950,8 +950,8 @@ public class HandleCommand {
 				                "select edit_timestamp from addons where name=?", cmd[1]);
 				if (sql.next() && timestamp - sql.getLong("edit_timestamp") < minUploadInterval) {
 					throw new ServerUtils.WLProtocolException(
-					    "Please do not upload updates for an add-on more often than every three " +
-					    "days. "
+					    "Please do not upload updates for an add-on more often than every three "
+					    + "days. "
 					    + "In urgent cases please contact the Widelands Development Team.");
 				}
 
@@ -1014,10 +1014,12 @@ public class HandleCommand {
 					File emptyDir = Files.createTempDirectory(null).toFile();
 					diff = ServerUtils.diff(emptyDir.getPath(), tempDir.getPath());
 
-					Utils.sql(
-					    Utils.Databases.kAddOns,
-					    "insert into addons (name,timestamp,edit_timestamp,i18n_version,security,quality,downloads) value(?,?,?,0,?,0,0)",
-					    cmd[1], timestamp, timestamp, blackWhiteList.contains("trust_new") ? 1 : 0);
+					Utils.sql(Utils.Databases.kAddOns,
+					          "insert into addons " +
+					          "(name,timestamp,edit_timestamp,i18n_version,security,quality," +
+					          "downloads) value(?,?,?,0,?,0,0)",
+					          cmd[1], timestamp, timestamp,
+					          blackWhiteList.contains("trust_new") ? 1 : 0);
 					Utils.sql(Utils.Databases.kAddOns,
 					          "insert into uploaders (addon,user) value(?,?)",
 					          Utils.getAddOnID(cmd[1]), userDatabaseID);
