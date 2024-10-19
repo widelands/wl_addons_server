@@ -444,8 +444,8 @@ public class ServerUtils {
 				// Send the e-mail to affected users only, sending a mail by default.
 				for (Long user : limitToUsers) {
 					sql = Utils.sql(Utils.Databases.kWebsite,
-					                "select shouldsend from wladdons_settings_addonnoticeuser " +
-					                "where notice_type_id=? and user_id=?",
+					                "select shouldsend from wladdons_settings_addonnoticeuser "
+					                    + "where notice_type_id=? and user_id=?",
 					                noticetypeID, user);
 					if (!sql.next() || sql.getLong("shouldsend") > 0) usersToSendMailTo.add(user);
 				}
@@ -453,8 +453,8 @@ public class ServerUtils {
 		} else {
 			// Send the e-mail to users who explicitly subscribed.
 			sql = Utils.sql(Utils.Databases.kWebsite,
-			                "select user_id from wladdons_settings_addonnoticeuser where " +
-			                "notice_type_id=? and shouldsend>0",
+			                "select user_id from wladdons_settings_addonnoticeuser where "
+			                    + "notice_type_id=? and shouldsend>0",
 			                noticetypeID);
 			while (sql.next()) {
 				long user = sql.getLong("user_id");

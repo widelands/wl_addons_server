@@ -430,22 +430,23 @@ public class HandleCommand {
 		out.println(sqlMain.getLong("timestamp"));
 		out.println(sqlMain.getLong("nr_downloads"));
 
-		ResultSet sql = Utils.sql(
-		    Utils.Databases.kWebsite,
-		    "select score from star_ratings_userrating where rating_id=(select id from star_ratings_rating where object_id=?)",
-		    mapID);
+		ResultSet sql =
+		    Utils.sql(Utils.Databases.kWebsite,
+		              "select score from star_ratings_userrating where rating_id=(select id from " +
+		              "star_ratings_rating where object_id=?)",
+		              mapID);
 		int[] votes = new int[10];
 		for (int i = 0; i < votes.length; ++i) votes[i] = 0;
 		while (sql.next()) votes[sql.getInt("score") - 1]++;
 		for (int v : votes) out.println(v);
 
-		sql = Utils.sql(
-		    Utils.Databases.kWebsite,
-		    "select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, UNIX_TIMESTAMP(date_modified) as edited, comment "
-		        + "from threadedcomments_threadedcomment where "
-		        +
-		        "content_type_id=(select id from django_content_type where app_label=?) and object_id=? and is_public>0",
-		    Utils.config("website_maps_slug"), mapID);
+		sql = Utils.sql(Utils.Databases.kWebsite,
+		                "select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, " +
+		                "UNIX_TIMESTAMP(date_modified) as edited, comment "
+		                    + "from threadedcomments_threadedcomment where "
+		                    + "content_type_id=(select id from django_content_type where " +
+		                      "app_label=?) and object_id=? and is_public>0",
+		                Utils.config("website_maps_slug"), mapID);
 		ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
 		while (sql.next()) {
 			Long user = sql.getLong("user_id");
@@ -619,10 +620,11 @@ public class HandleCommand {
 		}
 
 		if (checkCmd1IsMap()) {
-			ResultSet sql = Utils.sql(
-			    Utils.Databases.kWebsite,
-			    "select score from star_ratings_userrating where user_id=? and rating_id=(select id from star_ratings_rating where object_id=?)",
-			    userDatabaseID, ServerUtils.getMapID(cmd[1]));
+			ResultSet sql =
+			    Utils.sql(Utils.Databases.kWebsite,
+			              "select score from star_ratings_userrating where user_id=? and " +
+			              "rating_id=(select id from star_ratings_rating where object_id=?)",
+			              userDatabaseID, ServerUtils.getMapID(cmd[1]));
 			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
 		} else {
 			ServerUtils.checkAddOnExists(cmd[1]);
@@ -915,8 +917,8 @@ public class HandleCommand {
 			    Utils.kEMailVerbosityFYI, "Add-On Deleted",
 			    "The add-on '" + cmd[1] + "' (#" + id + ") has been deleted by " + username +
 			        " for the following reason:\n" + reason +
-			        ("\n\n-------------------------\n\nThe add-on can still be restored manually " +
-			         "from the Git history and the last database backups."));
+			        ("\n\n-------------------------\n\nThe add-on can still be restored manually "
+			         + "from the Git history and the last database backups."));
 
 			ResultSet sql =
 			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);
@@ -932,11 +934,11 @@ public class HandleCommand {
 				Utils.sendEMail(
 				    sql.getString("email"), "Add-On Deleted",
 				    "Dear " + sql.getString("username") + ",\n\nyour add-on '" + cmd[1] +
-				        ("' has been deleted by the server administrators for the following " +
-				         "reason:\n") +
-				        reason + "\n\n-------------------------\n"
-				        + ("If you believe this decision to be incorrect, please contact us in " +
-				           "the forum at https://www.widelands.org/forum/forum/17/."),
+				        ("' has been deleted by the server administrators for the following "
+				         + "reason:\n") +
+				        reason + "\n\n-------------------------\n" +
+				        ("If you believe this decision to be incorrect, please contact us in "
+				         + "the forum at https://www.widelands.org/forum/forum/17/."),
 				    true);
 			}
 
@@ -1122,8 +1124,8 @@ public class HandleCommand {
 				long maxDirs = 1000;
 				long minUploadInterval = 60 * 60 * 24 * 3;
 				ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
-				                          "select filesize,nrfiles,nrdirs,upload_interval from " +
-				                          "upload_override where name=?",
+				                          "select filesize,nrfiles,nrdirs,upload_interval from "
+				                              + "upload_override where name=?",
 				                          cmd[1]);
 				if (sql.next()) {
 					long val;
@@ -1141,8 +1143,8 @@ public class HandleCommand {
 				                "select edit_timestamp from addons where name=?", cmd[1]);
 				if (sql.next() && timestamp - sql.getLong("edit_timestamp") < minUploadInterval) {
 					throw new ServerUtils.WLProtocolException(
-					    "Please do not upload updates for an add-on more often than every three " +
-					    "days. "
+					    "Please do not upload updates for an add-on more often than every three "
+					    + "days. "
 					    + "In urgent cases please contact the Widelands Development Team.");
 				}
 
@@ -1183,9 +1185,9 @@ public class HandleCommand {
 					diff = ServerUtils.diff(emptyDir.getPath(), tempDir.getPath());
 
 					Utils.sql(Utils.Databases.kAddOns,
-					          "insert into addons " +
-					          "(name,timestamp,edit_timestamp,i18n_version,security,quality," +
-					          "downloads) value(?,?,?,0,0,0,0)",
+					          "insert into addons "
+					              + "(name,timestamp,edit_timestamp,i18n_version,security,quality,"
+					              + "downloads) value(?,?,?,0,0,0,0)",
 					          cmd[1], timestamp, timestamp);
 					Utils.sql(Utils.Databases.kAddOns,
 					          "insert into uploaders (addon,user) value(?,?)",

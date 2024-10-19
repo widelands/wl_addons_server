@@ -247,14 +247,13 @@ public class TransifexIntegration {
 				for (int index = 0; index <= 1; ++index) {
 					List<Issue> list = (List<Issue>)relevantIssues.get(addon)[index];
 					if (list.isEmpty()) continue;
-					text += "\n\n################################################################" +
-					        "################\n " +
-					        list.size() + " " + (index == 0 ? "new" : "existing") +
-					        " issue(s) in add-on " + addon;
+					text += "\n\n################################################################"
+					        + "################\n " + list.size() + " " +
+					        (index == 0 ? "new" : "existing") + " issue(s) in add-on " + addon;
 					for (Issue i : list) {
-						text += "\n " +
-						        "----------------------------------------------------------------" +
-						        "----------------"
+						text += "\n "
+						        + "----------------------------------------------------------------"
+						        + "----------------"
 						        // linebreak comment
 						        + "\n  Issue ID      : " + i.issueID       // linebreak comment
 						        + "\n  Source String : " + i.string      // linebreak comment
@@ -265,8 +264,8 @@ public class TransifexIntegration {
 						        + "\n  Priority      : " + i.priority         // linebreak comment
 						        + "\n  Issue message : " + i.message;
 					}
-					text += "\n##################################################################" +
-					        "##############";
+					text += "\n##################################################################"
+					        + "##############";
 				}
 			}
 			Utils.sendEMail(sql.getString("email"), "Transifex String Issues", text, true);
