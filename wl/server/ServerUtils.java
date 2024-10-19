@@ -430,8 +430,8 @@ public class ServerUtils {
 				// Send the e-mail to affected users only, sending a mail by default.
 				for (Long user : limitToUsers) {
 					sql = Utils.sql(Utils.Databases.kWebsite,
-					                "select shouldsend from wladdons_settings_addonnoticeuser " +
-					                "where notice_type_id=? and user_id=?",
+					                "select shouldsend from wladdons_settings_addonnoticeuser "
+					                    + "where notice_type_id=? and user_id=?",
 					                noticetypeID, user);
 					if (!sql.next() || sql.getLong("shouldsend") > 0) usersToSendMailTo.add(user);
 				}
@@ -439,8 +439,8 @@ public class ServerUtils {
 		} else {
 			// Send the e-mail to users who explicitly subscribed.
 			sql = Utils.sql(Utils.Databases.kWebsite,
-			                "select user_id from wladdons_settings_addonnoticeuser where " +
-			                "notice_type_id=? and shouldsend>0",
+			                "select user_id from wladdons_settings_addonnoticeuser where "
+			                    + "notice_type_id=? and shouldsend>0",
 			                noticetypeID);
 			while (sql.next()) {
 				long user = sql.getLong("user_id");
@@ -639,7 +639,12 @@ public class ServerUtils {
 	}
 
 	// Two helper functions for matchesWidelandsVersion()
-	private static int[] string_to_version(String str) {
+	/**
+	 * Convert a version string to an array of version numbers.
+	 * @param str Version string.
+	 * @return The version as an array.
+	 */
+	public static int[] string_to_version(String str) {
 		if (str == null || str.isEmpty()) return new int[0];
 
 		if (str.startsWith("build")) {
@@ -651,6 +656,7 @@ public class ServerUtils {
 		for (int i = 0; i < result.length; i++) result[i] = Integer.valueOf(parts[i]);
 		return result;
 	}
+
 	private static boolean less(int[] a, int[] b) {
 		int l = Math.min(a.length, b.length);
 		for (int i = 0; i < l; i++)
