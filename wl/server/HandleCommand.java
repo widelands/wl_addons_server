@@ -708,8 +708,8 @@ public class HandleCommand {
 			    Utils.kEMailVerbosityFYI, "Add-On Deleted",
 			    "The add-on '" + cmd[1] + "' (#" + id + ") has been deleted by " + username +
 			        " for the following reason:\n" + reason +
-			        ("\n\n-------------------------\n\nThe add-on can still be restored manually " +
-			         "from the Git history and the last database backups."));
+			        ("\n\n-------------------------\n\nThe add-on can still be restored manually "
+			         + "from the Git history and the last database backups."));
 
 			ResultSet sql =
 			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);
@@ -725,11 +725,11 @@ public class HandleCommand {
 				Utils.sendEMail(
 				    sql.getString("email"), "Add-On Deleted",
 				    "Dear " + sql.getString("username") + ",\n\nyour add-on '" + cmd[1] +
-				        ("' has been deleted by the server administrators for the following " +
-				         "reason:\n") +
-				        reason + "\n\n-------------------------\n"
-				        + ("If you believe this decision to be incorrect, please contact us in " +
-				           "the forum at https://www.widelands.org/forum/forum/17/."),
+				        ("' has been deleted by the server administrators for the following "
+				         + "reason:\n") +
+				        reason + "\n\n-------------------------\n" +
+				        ("If you believe this decision to be incorrect, please contact us in "
+				         + "the forum at https://www.widelands.org/forum/forum/17/."),
 				    true);
 			}
 
@@ -915,8 +915,8 @@ public class HandleCommand {
 				long maxDirs = 1000;
 				long minUploadInterval = 60 * 60 * 24 * 3;
 				ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
-				                          "select filesize,nrfiles,nrdirs,upload_interval from " +
-				                          "upload_override where name=?",
+				                          "select filesize,nrfiles,nrdirs,upload_interval from "
+				                              + "upload_override where name=?",
 				                          cmd[1]);
 				if (sql.next()) {
 					long val;
@@ -934,8 +934,8 @@ public class HandleCommand {
 				                "select edit_timestamp from addons where name=?", cmd[1]);
 				if (sql.next() && timestamp - sql.getLong("edit_timestamp") < minUploadInterval) {
 					throw new ServerUtils.WLProtocolException(
-					    "Please do not upload updates for an add-on more often than every three " +
-					    "days. "
+					    "Please do not upload updates for an add-on more often than every three "
+					    + "days. "
 					    + "In urgent cases please contact the Widelands Development Team.");
 				}
 
@@ -976,9 +976,9 @@ public class HandleCommand {
 					diff = ServerUtils.diff(emptyDir.getPath(), tempDir.getPath());
 
 					Utils.sql(Utils.Databases.kAddOns,
-					          "insert into addons " +
-					          "(name,timestamp,edit_timestamp,i18n_version,security,quality," +
-					          "downloads) value(?,?,?,0,0,0,0)",
+					          "insert into addons "
+					              + "(name,timestamp,edit_timestamp,i18n_version,security,quality,"
+					              + "downloads) value(?,?,?,0,0,0,0)",
 					          cmd[1], timestamp, timestamp);
 					Utils.sql(Utils.Databases.kAddOns,
 					          "insert into uploaders (addon,user) value(?,?)",
@@ -1160,12 +1160,14 @@ public class HandleCommand {
 	 * Abstract representation of a filename in a directory plus a file checksum.
 	 */
 	private static class AbstractFile {
-		public final String directory;
+		public final String clientDirectory;
+		public final String sanitizedDirectory;
 		public final String name;
 		public final String checksum;
 		public final long size;
-		public AbstractFile(String d, String n, String c, long s) {
-			directory = d;
+		public AbstractFile(String dc, String ds, String n, String c, long s) {
+			clientDirectory = dc;
+			sanitizedDirectory = ds;
 			name = n;
 			checksum = c;
 			size = s;
@@ -1209,8 +1211,8 @@ public class HandleCommand {
 
 		long totalSize = 0;
 		for (int i = 0; i < nrDirs; ++i) {
-			String dirname = ServerUtils.readLine(in);
-			dirname = ServerUtils.sanitizeName(dirname, true);
+			final String clientDirname = ServerUtils.readLine(in);
+			final String sanitizedDirname = ServerUtils.sanitizeName(clientDirname, true);
 
 			final int nrFiles = Integer.valueOf(ServerUtils.readLine(in));
 			if (nrFiles < 0 || nrFiles > maxFiles)
@@ -1232,7 +1234,8 @@ public class HandleCommand {
 					    + "If you really want to submit such a large add-on, "
 					    + "please contact the Widelands Development Team.");
 
-				abstractFiles.add(new AbstractFile(dirname, filename, checksum, size));
+				abstractFiles.add(
+				    new AbstractFile(clientDirname, sanitizedDirname, filename, checksum, size));
 			}
 		}
 
@@ -1255,7 +1258,7 @@ public class HandleCommand {
 		Set<String> missingChecksums = new HashSet<>();
 		ArrayList<AbstractFile> filesToRequest = new ArrayList<>();
 		for (AbstractFile f : abstractFiles) {
-			if (f.directory.isEmpty() && f.name.equals("addon")) mainFile = f;
+			if (f.sanitizedDirectory.isEmpty() && f.name.equals("addon")) mainFile = f;
 			if (!existingChecksums.containsKey(f.checksum) &&
 			    !missingChecksums.contains(f.checksum)) {
 				missingChecksums.add(f.checksum);
@@ -1281,7 +1284,7 @@ public class HandleCommand {
 
 		out.println(filesToRequest.size());
 		for (AbstractFile f : filesToRequest) {
-			out.println(f.directory);
+			out.println(f.clientDirectory);
 			out.println(f.name);
 		}
 		out.println("ENDOFSTREAM");
@@ -1304,9 +1307,9 @@ public class HandleCommand {
 			stream.close();
 			String c = Utils.checksum(output);
 			if (!f.checksum.equals(c))
-				throw new ServerUtils.WLProtocolException("Checksum mismatch for " + f.directory +
-				                                          "/" + f.name + ": expected " +
-				                                          f.checksum + ", found " + c);
+				throw new ServerUtils.WLProtocolException(
+				    "Checksum mismatch for " + f.sanitizedDirectory + "/" + f.name + ": expected " +
+				    f.checksum + ", found " + c);
 
 			// Automatically shrink PNGs during uploading to speed up subsequent downloads
 			if (f.name.endsWith(".png")) {
@@ -1328,7 +1331,7 @@ public class HandleCommand {
 		ServerUtils.checkEndOfStream(in);
 
 		for (AbstractFile f : abstractFiles) {
-			File file = new File(tempDir, f.directory);
+			File file = new File(tempDir, f.sanitizedDirectory);
 			file.mkdirs();
 			Files.copy(existingChecksums.get(f.checksum).toPath(), new File(file, f.name).toPath());
 		}
