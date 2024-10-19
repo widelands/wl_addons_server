@@ -102,7 +102,8 @@ public class SyncThread implements Runnable {
 					}
 					if (!unverified.isEmpty() || !unassessed.isEmpty() || !notx.isEmpty()) {
 						String message = String.format(
-						    "There are currently %d unverified add-ons, %d add-on awaiting quality review, and %d add-ons without Transifex integration.",
+						    "There are currently %d unverified add-ons, %d add-on awaiting " +
+						    "quality review, and %d add-ons without Transifex integration.",
 						    unverified.size(), unassessed.size(), notx.size());
 						if (!unverified.isEmpty()) {
 							message += "\n\nUnverified:";
@@ -131,8 +132,8 @@ public class SyncThread implements Runnable {
 						ThreadActivityAndGitHubSyncManager.SYNCER.check();
 
 						if (errored)
-							throw new Exception(
-							    "You still have not resolved the merge conflicts. Please do so soon!");
+							throw new Exception("You still have not resolved the merge " +
+							                    "conflicts. Please do so soon!");
 
 						Utils.log("Performing GitHub sync...");
 						ThreadActivityAndGitHubSyncManager.SYNCER.sync();
@@ -143,9 +144,9 @@ public class SyncThread implements Runnable {
 				Utils.log("GitHub sync ERROR: " + e);
 				e.printStackTrace();
 
-				String msg =
-				    "The automated GitHub sync on the server has failed with the following error message:\n"
-				    + "```\n" + e + "\n```\n\n```\n$ git status";
+				String msg = "The automated GitHub sync on the server has failed with the " +
+				             "following error message:\n"
+				             + "```\n" + e + "\n```\n\n```\n$ git status";
 				try {
 					Process p =
 					    Runtime.getRuntime().exec(new String[] {"bash", "-c", "git status"});
@@ -164,8 +165,8 @@ public class SyncThread implements Runnable {
 					Utils.log("ERROR WHILE SENDING ERROR NOTIFICATION: " + x);
 					x.printStackTrace();
 					Utils.log("Error message being composed was:\n" + msg);
-					Utils.log(
-					    "Something has gone seriously wrong here. Killing the server in the hope that the maintainers will hurry to resolve the problems.");
+					Utils.log("Something has gone seriously wrong here. Killing the server in " +
+					          "the hope that the maintainers will hurry to resolve the problems.");
 					System.exit(1);
 				}
 			}
