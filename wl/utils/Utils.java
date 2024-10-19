@@ -175,10 +175,10 @@ public class Utils {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static boolean checkUserDisabledNotifications(long user, long notice) throws Exception {
-		ResultSet sql = sql(
-		    Databases.kWebsite,
-		    "select send from notification_noticesetting where user_id=? and medium=1 and notice_type_id=?",
-		    user, notice);
+		ResultSet sql = sql(Databases.kWebsite,
+		                    "select send from notification_noticesetting where user_id=? and " +
+		                    "medium=1 and notice_type_id=?",
+		                    user, notice);
 		return sql.next() && sql.getShort("send") < 1;
 	}
 
@@ -773,10 +773,9 @@ public class Utils {
 		write.println();
 		write.println(body);
 		if (footer) {
-			write.print(
-			    "\n-------------------------\n"
-			    +
-			    "To change how you receive notifications, please go to https://www.widelands.org/addons/.");
+			write.print("\n-------------------------\n"
+			            + "To change how you receive notifications, please go to " +
+			              "https://www.widelands.org/addons/.");
 		}
 		write.close();
 		bash("bash", "-c", "ssmtp '" + email + "' < " + message.getAbsolutePath());
