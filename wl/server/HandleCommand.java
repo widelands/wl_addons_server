@@ -208,8 +208,8 @@ public class HandleCommand {
 				if (!ServerUtils.matchesWidelandsVersion(widelandsVersion,
 				                                         ServerUtils.findMinWlVersion(addon),
 				                                         profile.get("max_wl_version") != null ?
-                                                             profile.get("max_wl_version").value :
-                                                             null)) {
+				                                             profile.get("max_wl_version").value :
+				                                             null)) {
 					continue;
 				}
 			}
@@ -585,8 +585,8 @@ public class HandleCommand {
 					throw new ServerUtils.WLProtocolException("Empty displayname");
 				for (char c : new char[] {'\\', '"'}) {
 					if (displayname.indexOf(c) >= 0) {
-						throw new ServerUtils.WLProtocolException("Displayname '" + displayname +
-						                                          "' may not contain '" + c + "'");
+						throw new ServerUtils.WLProtocolException(
+						    "Displayname '" + displayname + "' may not contain '" + c + "'");
 					}
 				}
 
@@ -656,7 +656,7 @@ public class HandleCommand {
 			throw new ServerUtils.WLProtocolException("Invalid quality " + cmd[2]);
 		Utils.sql(Utils.Databases.kAddOns,
 		          quality > 0 ? "update addons set quality=?, security=1 where name=?" :
-                                "update addons set quality=? where name=?",
+		                        "update addons set quality=? where name=?",
 		          quality, cmd[1]);
 
 		out.println("ENDOFSTREAM");
@@ -718,7 +718,8 @@ public class HandleCommand {
 			    Utils.kEMailVerbosityFYI, "Add-On Deleted",
 			    "The add-on '" + cmd[1] + "' (#" + id + ") has been deleted by " + username +
 			        " for the following reason:\n" + reason +
-			        "\n\n-------------------------\n\nThe add-on can still be restored manually from the Git history and the last database backups.");
+			        ("\n\n-------------------------\n\nThe add-on can still be restored manually " +
+			         "from the Git history and the last database backups."));
 
 			ResultSet sql =
 			    Utils.sql(Utils.Databases.kAddOns, "select user from uploaders where addon=?", id);
@@ -734,10 +735,11 @@ public class HandleCommand {
 				Utils.sendEMail(
 				    sql.getString("email"), "Add-On Deleted",
 				    "Dear " + sql.getString("username") + ",\n\nyour add-on '" + cmd[1] +
-				        "' has been deleted by the server administrators for the following reason:\n" +
+				        ("' has been deleted by the server administrators for the following " +
+				         "reason:\n") +
 				        reason + "\n\n-------------------------\n"
-				        +
-				        "If you believe this decision to be incorrect, please contact us in the forum at https://www.widelands.org/forum/forum/17/.",
+				        + ("If you believe this decision to be incorrect, please contact us in " +
+				           "the forum at https://www.widelands.org/forum/forum/17/."),
 				    true);
 			}
 
@@ -928,10 +930,10 @@ public class HandleCommand {
 				long maxFiles = 1000;
 				long maxDirs = 1000;
 				long minUploadInterval = 60 * 60 * 24 * 3;
-				ResultSet sql = Utils.sql(
-				    Utils.Databases.kAddOns,
-				    "select filesize,nrfiles,nrdirs,upload_interval from upload_override where name=?",
-				    cmd[1]);
+				ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
+				                          "select filesize,nrfiles,nrdirs,upload_interval from " +
+				                          "upload_override where name=?",
+				                          cmd[1]);
 				if (sql.next()) {
 					long val;
 					val = sql.getLong("filesize");
@@ -948,7 +950,8 @@ public class HandleCommand {
 				                "select edit_timestamp from addons where name=?", cmd[1]);
 				if (sql.next() && timestamp - sql.getLong("edit_timestamp") < minUploadInterval) {
 					throw new ServerUtils.WLProtocolException(
-					    "Please do not upload updates for an add-on more often than every three days. "
+					    "Please do not upload updates for an add-on more often than every three " +
+					    "days. "
 					    + "In urgent cases please contact the Widelands Development Team.");
 				}
 
@@ -1028,7 +1031,7 @@ public class HandleCommand {
 					    sql.getString("email"),
 					    (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
 					    (isUpdate ? ("An add-on has been updated by " + username) :
-                                    ("A new add-on has been submitted by " + username)) +
+					                ("A new add-on has been submitted by " + username)) +
 					        ":\n\n"
 					        + "Name: " + newProfile.get("name").value + "\n"
 					        + "Description: " + newProfile.get("description").value + "\n"
@@ -1040,36 +1043,36 @@ public class HandleCommand {
 				Utils.sendEMailToSubscribedAdmins(
 				    Utils.kEMailVerbosityFYI, (isUpdate ? "Add-On Updated" : "New Add-On Uploaded"),
 				    (isUpdate ? ("An add-on has been updated by " + username) :
-                                ("A new add-on has been submitted by " + username)) +
+				                ("A new add-on has been submitted by " + username)) +
 				        ":\n"
 				        + "\n- Name: " + cmd[1] +
 				        (isUpdate ? ("\n- Old version: " + oldVersionString +
 				                     "\n- New version: " + newProfile.get("version").value) :
-                                    ("\n- Version: " + newProfile.get("version").value)) +
+				                    ("\n- Version: " + newProfile.get("version").value)) +
 				        (username.equals(newProfile.get("author").value) ?
-                             ("\n- Author: " + newProfile.get("author").value) :
-                             ("\n- **Author: " + newProfile.get("author").value + "**")) +
+				             ("\n- Author: " + newProfile.get("author").value) :
+				             ("\n- **Author: " + newProfile.get("author").value + "**")) +
 				        "\n- Descname: " + newProfile.get("name").value +
 				        "\n- Description: " + newProfile.get("description").value +
 				        "\n- Category: " + newProfile.get("category").value +
 				        (newProfile.get("sync_safe") != null ?
-                             ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
-                             ("\n- Sync-safe: N/A")) +
+				             ("\n- **Sync-safe: " + newProfile.get("sync_safe").value + "**") :
+				             ("\n- Sync-safe: N/A")) +
 				        "\n- Min WL version: " +
 				        (newProfile.get("min_wl_version") != null ?
-                             newProfile.get("min_wl_version").value :
-                             "N/A") +
+				             newProfile.get("min_wl_version").value :
+				             "N/A") +
 				        "\n- Max WL version: " +
 				        (newProfile.get("max_wl_version") != null ?
-                             newProfile.get("max_wl_version").value :
-                             "N/A") +
+				             newProfile.get("max_wl_version").value :
+				             "N/A") +
 				        "\n- Requires: " +
 				        (newProfile.get("requires").value.isEmpty() ?
-                             "N/A" :
-                             newProfile.get("requires").value) +
+				             "N/A" :
+				             newProfile.get("requires").value) +
 				        (isUpdate ? ("\n- Old security: " + oldSecurity +
 				                     "\n- Old quality: " + oldQuality) :
-                                    "") +
+				                    "") +
 				        "\n\nPlease review this add-on soonish."
 				        + "\n\n-------------------------\n\n" + diff);
 
