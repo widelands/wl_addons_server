@@ -24,10 +24,27 @@ import java.io.PrintStream;
 import java.net.Socket;
 import java.sql.ResultSet;
 import java.util.Base64;
+import java.util.HashSet;
+import java.util.Set;
 import wl.utils.Utils;
 
 /**
  * A thread that handles all the server's interaction with one specific client.
+ *
+ * <p>
+ *
+ * Blacklist/whitelist documentation.
+ * Users can be blacklisted to forbid them from performing a specific action,
+ * or whitelisted to give them extra privileges.
+ * Supported blacklist/whitelist keys are:
+ * <ul>
+ * <li> "deny_login" – Forbid the user from logging in to the server.
+ * <li> "deny_comment" – Forbid the user from writing or editing comments.
+ * <li> "deny_upload_addon" – Forbid the user from uploading add-ons.
+ * <li> "deny_upload_screenshot" – Forbid the user from uploading screenshots.
+ * <li> "trust_upgrade" – Do not reset verification and quality ratings on upgrades.
+ * <li> "trust_new" – Immediately mark new add-ons as verified.
+ * </ul>
  */
 public class ClientThread implements Runnable {
 	private Socket socket;
@@ -86,21 +103,52 @@ public class ClientThread implements Runnable {
 			final String widelandsVersion = (protocolVersion < 5) ? null : ServerUtils.readLine(in);
 			if (widelandsVersion != null) Utils.log("Widelands: " + widelandsVersion);
 			ServerUtils.checkEndOfStream(in);
+
 			boolean admin = false;
+			Set<String> blackWhiteList = new HashSet<>();
+
 			if (protocolVersion >= 7) out.println(Utils.config("name"));
 			if (username.isEmpty()) {
 				out.println("ENDOFSTREAM");
 			} else {
-				Long uid = Utils.getUserID(username);
-				if (uid == null)
-					throw new ServerUtils.WLProtocolException("User " + username +
-					                                          " is not registered");
-				userDatabaseID = uid;
-
 				ResultSet sql =
 				    Utils.sql(Utils.Databases.kWebsite,
-				              "select permissions,password from wlggz_ggzauth where user_id=?",
-				              userDatabaseID);
+				              "select id,is_active from auth_user where username=?", username);
+				if (!sql.next())
+					throw new ServerUtils.WLProtocolException("User " + username +
+					                                          " is not registered");
+				if (sql.getShort("is_active") == 0)
+					throw new ServerUtils.WLProtocolException("Access denied for banned user " +
+					                                          username);
+				userDatabaseID = sql.getLong("id");
+
+				sql = Utils.sql(Utils.Databases.kWebsite,
+				                "select deleted from wlprofile_profile where user_id=?",
+				                userDatabaseID);
+				if (!sql.next())
+					throw new ServerUtils.WLProtocolException("User " + username +
+					                                          " does not have a valid profile");
+				if (sql.getShort("deleted") > 0)
+					throw new ServerUtils.WLProtocolException("Access denied for deleted user " +
+					                                          username);
+
+				sql =
+				    Utils.sql(Utils.Databases.kAddOns,
+				              "select action,value from blackwhitelist where id=?", userDatabaseID);
+				while (sql.next()) {
+					if (sql.getShort("value") > 0) {
+						String str = sql.getString("action");
+						if (str.equals("deny_login")) {
+							throw new ServerUtils.WLProtocolException(
+							    "Access denied for blocked user " + username);
+						}
+						blackWhiteList.add(str);
+					}
+				}
+
+				sql = Utils.sql(Utils.Databases.kWebsite,
+				                "select permissions,password from wlggz_ggzauth where user_id=?",
+				                userDatabaseID);
 				if (!sql.next())
 					throw new ServerUtils.WLProtocolException(
 					    "User " + username + " did not set an online gaming password");
@@ -119,8 +167,9 @@ public class ClientThread implements Runnable {
 
 			didLogInSuccessfully = true;
 			MuninStatistics.MUNIN.registerLogin(userDatabaseID);
-			HandleCommand handler = new HandleCommand(out, in, protocolVersion, widelandsVersion,
-			                                          username, userDatabaseID, admin, locale);
+			HandleCommand handler =
+			    new HandleCommand(out, in, protocolVersion, widelandsVersion, username,
+			                      userDatabaseID, admin, blackWhiteList, locale);
 			String cmd;
 			while ((cmd = ServerUtils.readLine(in, false)) != null) {
 				ThreadActivityAndGitHubSyncManager.SYNCER.tick(socket);
