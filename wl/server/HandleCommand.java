@@ -1015,9 +1015,9 @@ public class HandleCommand {
 					diff = ServerUtils.diff(emptyDir.getPath(), tempDir.getPath());
 
 					Utils.sql(Utils.Databases.kAddOns,
-					          "insert into addons " +
-					          "(name,timestamp,edit_timestamp,i18n_version,security,quality," +
-					          "downloads) value(?,?,?,0,?,0,0)",
+					          "insert into addons "
+					              + "(name,timestamp,edit_timestamp,i18n_version,security,quality,"
+					              + "downloads) value(?,?,?,0,?,0,0)",
 					          cmd[1], timestamp, timestamp,
 					          blackWhiteList.contains("trust_new") ? 1 : 0);
 					Utils.sql(Utils.Databases.kAddOns,
