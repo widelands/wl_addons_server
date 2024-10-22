@@ -103,8 +103,9 @@ public class SyncThread implements Runnable {
 						}
 						if (!unverified.isEmpty() || !unassessed.isEmpty() || !notx.isEmpty()) {
 							String message = String.format(
-							    "There are currently %d unverified add-ons, %d add-on awaiting " +
-							    "quality review, and %d add-ons without Transifex integration.",
+							    "There are currently %d unverified add-ons, %d add-on awaiting "
+							        +
+							        "quality review, and %d add-ons without Transifex integration.",
 							    unverified.size(), unassessed.size(), notx.size());
 							if (!unverified.isEmpty()) {
 								message += "\n\nUnverified:";

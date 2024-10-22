@@ -432,8 +432,8 @@ public class HandleCommand {
 
 		ResultSet sql =
 		    Utils.sql(Utils.Databases.kWebsite,
-		              "select score from star_ratings_userrating where rating_id=(select id from " +
-		              "star_ratings_rating where object_id=?)",
+		              "select score from star_ratings_userrating where rating_id=(select id from "
+		                  + "star_ratings_rating where object_id=?)",
 		              mapID);
 		int[] votes = new int[10];
 		for (int i = 0; i < votes.length; ++i) votes[i] = 0;
@@ -441,11 +441,11 @@ public class HandleCommand {
 		for (int v : votes) out.println(v);
 
 		sql = Utils.sql(Utils.Databases.kWebsite,
-		                "select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, " +
-		                "UNIX_TIMESTAMP(date_modified) as edited, comment "
+		                "select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, "
+		                    + "UNIX_TIMESTAMP(date_modified) as edited, comment "
 		                    + "from threadedcomments_threadedcomment where "
-		                    + "content_type_id=(select id from django_content_type where " +
-		                      "app_label=?) and object_id=? and is_public>0",
+		                    + "content_type_id=(select id from django_content_type where "
+		                    + "app_label=?) and object_id=? and is_public>0",
 		                Utils.config("website_maps_slug"), mapID);
 		ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
 		while (sql.next()) {
@@ -622,8 +622,8 @@ public class HandleCommand {
 		if (checkCmd1IsMap()) {
 			ResultSet sql =
 			    Utils.sql(Utils.Databases.kWebsite,
-			              "select score from star_ratings_userrating where user_id=? and " +
-			              "rating_id=(select id from star_ratings_rating where object_id=?)",
+			              "select score from star_ratings_userrating where user_id=? and "
+			                  + "rating_id=(select id from star_ratings_rating where object_id=?)",
 			              userDatabaseID, ServerUtils.getMapID(cmd[1]));
 			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
 		} else {
