@@ -1160,12 +1160,14 @@ public class HandleCommand {
 	 * Abstract representation of a filename in a directory plus a file checksum.
 	 */
 	private static class AbstractFile {
-		public final String directory;
+		public final String clientDirectory;
+		public final String sanitizedDirectory;
 		public final String name;
 		public final String checksum;
 		public final long size;
-		public AbstractFile(String d, String n, String c, long s) {
-			directory = d;
+		public AbstractFile(String dc, String ds, String n, String c, long s) {
+			clientDirectory = dc;
+			sanitizedDirectory = ds;
 			name = n;
 			checksum = c;
 			size = s;
@@ -1209,8 +1211,8 @@ public class HandleCommand {
 
 		long totalSize = 0;
 		for (int i = 0; i < nrDirs; ++i) {
-			String dirname = ServerUtils.readLine(in);
-			dirname = ServerUtils.sanitizeName(dirname, true);
+			final String clientDirname = ServerUtils.readLine(in);
+			final String sanitizedDirname = ServerUtils.sanitizeName(clientDirname, true);
 
 			final int nrFiles = Integer.valueOf(ServerUtils.readLine(in));
 			if (nrFiles < 0 || nrFiles > maxFiles)
@@ -1232,7 +1234,8 @@ public class HandleCommand {
 					    + "If you really want to submit such a large add-on, "
 					    + "please contact the Widelands Development Team.");
 
-				abstractFiles.add(new AbstractFile(dirname, filename, checksum, size));
+				abstractFiles.add(
+				    new AbstractFile(clientDirname, sanitizedDirname, filename, checksum, size));
 			}
 		}
 
@@ -1255,7 +1258,7 @@ public class HandleCommand {
 		Set<String> missingChecksums = new HashSet<>();
 		ArrayList<AbstractFile> filesToRequest = new ArrayList<>();
 		for (AbstractFile f : abstractFiles) {
-			if (f.directory.isEmpty() && f.name.equals("addon")) mainFile = f;
+			if (f.sanitizedDirectory.isEmpty() && f.name.equals("addon")) mainFile = f;
 			if (!existingChecksums.containsKey(f.checksum) &&
 			    !missingChecksums.contains(f.checksum)) {
 				missingChecksums.add(f.checksum);
@@ -1281,7 +1284,7 @@ public class HandleCommand {
 
 		out.println(filesToRequest.size());
 		for (AbstractFile f : filesToRequest) {
-			out.println(f.directory);
+			out.println(f.clientDirectory);
 			out.println(f.name);
 		}
 		out.println("ENDOFSTREAM");
@@ -1304,9 +1307,9 @@ public class HandleCommand {
 			stream.close();
 			String c = Utils.checksum(output);
 			if (!f.checksum.equals(c))
-				throw new ServerUtils.WLProtocolException("Checksum mismatch for " + f.directory +
-				                                          "/" + f.name + ": expected " +
-				                                          f.checksum + ", found " + c);
+				throw new ServerUtils.WLProtocolException(
+				    "Checksum mismatch for " + f.sanitizedDirectory + "/" + f.name + ": expected " +
+				    f.checksum + ", found " + c);
 
 			// Automatically shrink PNGs during uploading to speed up subsequent downloads
 			if (f.name.endsWith(".png")) {
@@ -1328,7 +1331,7 @@ public class HandleCommand {
 		ServerUtils.checkEndOfStream(in);
 
 		for (AbstractFile f : abstractFiles) {
-			File file = new File(tempDir, f.directory);
+			File file = new File(tempDir, f.sanitizedDirectory);
 			file.mkdirs();
 			Files.copy(existingChecksums.get(f.checksum).toPath(), new File(file, f.name).toPath());
 		}
