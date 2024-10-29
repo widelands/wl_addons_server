@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-07 03:09+0200\n"
+"POT-Creation-Date: 2024-10-29 03:08+0100\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -28,15 +28,9 @@ msgstr "Europäers (Landweertskupp-Verwiedern)"
 
 #: addons/europeans_agricultur.wad/addon:3
 msgid ""
-"Adds some additional agricultur wares, workers and buildings to Europeans "
-"tribes economy for more complexity. Not recommended for sea travel, because "
-"the terraformer converts ocean segments to land and can therefore lock up "
-"ships and ports, which can cause the game to crash."
+"Adds additional agricultur wares, workers and buildings to Europeans tribes "
+"economy for more complexity."
 msgstr ""
-"Föögt mehr landweertskupplich Waren, Arbeiders un Husen to dat Europäers-"
-"Volk hennto. Nich för Seefahrt antoraden, denn de Landumackereerer maakt ut "
-"Seefelden Land un kann dann Schippen un Muden upschütten, un dann kann dat "
-"Speel ofstörten."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_agricultur.wad/immovables/barleyfield/harvested/init.lua:8
@@ -441,8 +435,8 @@ msgstr "Fisse to tüchten"
 #. TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
 #: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:230
 #: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_basic/init.lua:159
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:135
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:142
+#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:119
+#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:117
 msgid "dummy program"
 msgstr "herumtopüttjern"
 
@@ -710,8 +704,8 @@ msgstr "Lehm to graven"
 #. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_advanced/init.lua:109
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_basic/init.lua:134
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:116
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:123
+#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:100
+#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:98
 msgctxt "europeans_building"
 msgid "digging a dry pond"
 msgstr "eenen drögen Pool to graven"
@@ -719,8 +713,8 @@ msgstr "eenen drögen Pool to graven"
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_advanced/init.lua:121
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_basic/init.lua:142
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:124
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:131
+#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:108
+#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:106
 msgctxt "europeans_building"
 msgid "filling pond with water"
 msgstr "eenen Pool mit Water to füllen"
@@ -1559,16 +1553,9 @@ msgctxt "europeans_building"
 msgid "Advanced Terraformer’s House"
 msgstr "Grote Landumackeree"
 
-#. TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:84
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:97
-msgctxt "europeans_building"
-msgid "terraforming coast"
-msgstr "de Küst früchtbarer to maken"
-
 #. TRANSLATORS: Completed/Skipped/Did not start terraforming dry land because ...
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:103
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:110
+#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:87
+#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:85
 msgctxt "europeans_building"
 msgid "terraforming dry land"
 msgstr "dröges Land umtowanneln"
@@ -4295,14 +4282,25 @@ msgctxt "europeans_worker"
 msgid "Basic Hunter"
 msgstr "Jäger"
 
-#. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_agricultur.wad/workers/terraformer_advanced/init.lua:8
-msgctxt "europeans_worker"
-msgid "Advanced Terraformer"
-msgstr "Meister-Landumackereerer"
+#~ msgid ""
+#~ "Adds some additional agricultur wares, workers and buildings to Europeans "
+#~ "tribes economy for more complexity. Not recommended for sea travel, "
+#~ "because the terraformer converts ocean segments to land and can therefore "
+#~ "lock up ships and ports, which can cause the game to crash."
+#~ msgstr ""
+#~ "Föögt mehr landweertskupplich Waren, Arbeiders un Husen to dat Europäers-"
+#~ "Volk hennto. Nich för Seefahrt antoraden, denn de Landumackereerer maakt "
+#~ "ut Seefelden Land un kann dann Schippen un Muden upschütten, un dann kann "
+#~ "dat Speel ofstörten."
 
-#. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_agricultur.wad/workers/terraformer_basic/init.lua:8
-msgctxt "europeans_worker"
-msgid "Basic Terraformer"
-msgstr "Landumackereerer"
+#~ msgctxt "europeans_building"
+#~ msgid "terraforming coast"
+#~ msgstr "de Küst früchtbarer to maken"
+
+#~ msgctxt "europeans_worker"
+#~ msgid "Advanced Terraformer"
+#~ msgstr "Meister-Landumackereerer"
+
+#~ msgctxt "europeans_worker"
+#~ msgid "Basic Terraformer"
+#~ msgstr "Landumackereerer"

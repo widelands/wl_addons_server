@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-03 03:08+0200\n"
+"POT-Creation-Date: 2024-10-29 03:08+0100\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -807,6 +807,8 @@ msgstr "Grote Holtköhlbranneree"
 #: addons/europeans_base.wad/recruitementsites/yard_ferry_basic/init.lua:117
 #: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:65
 #: addons/europeans_base.wad/recruitementsites/yard_ships_advanced/init.lua:99
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_advanced/init.lua:53
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_basic/init.lua:66
 msgid "working"
 msgstr "to Warken"
 
@@ -2536,6 +2538,63 @@ msgid "Zeus"
 msgstr "Zeus"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_advanced/init.lua:8
+#, fuzzy
+msgctxt "europeans_building"
+msgid "Advanced Terraformer’s House"
+msgstr "Grote Boomslageree"
+
+#. TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_advanced/init.lua:84
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_basic/init.lua:85
+msgctxt "europeans_building"
+msgid "terraforming coast"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start terraforming dry land because ...
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_advanced/init.lua:103
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_basic/init.lua:98
+msgctxt "europeans_building"
+msgid "terraforming dry land"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start terraforming land with trees because ...
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_advanced/init.lua:116
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_basic/init.lua:111
+msgctxt "europeans_building"
+msgid "terraforming land with trees"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_advanced/init.lua:129
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_basic/init.lua:124
+msgctxt "europeans_building"
+msgid "digging a dry pond"
+msgstr ""
+
+#. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_advanced/init.lua:137
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_basic/init.lua:132
+#, fuzzy
+msgctxt "europeans_building"
+msgid "filling pond with water"
+msgstr "Pool mit Water"
+
+#. TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_advanced/init.lua:148
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_basic/init.lua:143
+#, fuzzy
+msgid "dummy program"
+msgstr "herumtopüttjern"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_base.wad/terraformingsites/terraformers_house_basic/init.lua:8
+#, fuzzy
+msgctxt "europeans_building"
+msgid "Basic Terraformer’s House"
+msgstr "Lütte Boomslageree"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/trainingsites/battlearena_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Battle Arena"
@@ -3253,6 +3312,20 @@ msgstr "Meister-Flintslager"
 msgctxt "europeans_worker"
 msgid "Basic Stonecutter"
 msgstr "Flintslager"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/terraformer_advanced/init.lua:8
+#, fuzzy
+msgctxt "europeans_worker"
+msgid "Advanced Terraformer"
+msgstr "Meister-Mester"
+
+#. TRANSLATORS: This is a worker name used in lists of workers
+#: addons/europeans_base.wad/workers/terraformer_basic/init.lua:8
+#, fuzzy
+msgctxt "europeans_worker"
+msgid "Basic Terraformer"
+msgstr "Mester"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_base.wad/workers/trainer_advanced/init.lua:8
