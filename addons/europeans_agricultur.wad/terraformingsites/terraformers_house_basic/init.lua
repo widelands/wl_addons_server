@@ -65,44 +65,19 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "sleep=duration:10s",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
-                "sleep=duration:5s",                
                 "callworker=check_land",
                 "call=terraforming_land_dry",
-                "sleep=duration:10s",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
-                "sleep=duration:5s",                
-                "callworker=check_land",
-                "call=terraforming_land_dry",
-                "sleep=duration:10s",
-                "callworker=check_terraform_coast",
-                "call=terraforming_coast",
-                "sleep=duration:5s",                
-                "callworker=check_land",
-                "call=terraforming_land_dry",
-                "sleep=duration:10s",
+                "sleep=duration:20s",
                 "callworker=check_dig_space",
                 "call=digging_pond",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "callworker=check_pond_dry",
                 "call=filling_pond_dry",
+                "sleep=duration:20s",
+                "callworker=check_land",
+                "call=terraforming_land_dry",
+                "sleep=duration:10s",
                 "return=skipped"
-            }
-        },
-        terraforming_coast = {
-            -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-            descname = pgettext("europeans_building", "terraforming coast"),
-            actions = {
-                "return=skipped unless site has log:4",
-                "consume=log:2",
-                "animate=working duration:2s",
-                "callworker=terraform_coast",
-                "consume=log:2",
-                "animate=working duration:2s",
-                "callworker=terraform_coast"
             }
         },
         terraforming_land_dry = {

@@ -589,6 +589,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:ui-inspector-wad]
+file_filter            = po/ui-inspector.wad/<lang>.po
+source_file            = po/ui-inspector.wad/ui-inspector.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:wells-running-out-wad]
 file_filter            = po/wells-running-out.wad/<lang>.po
 source_file            = po/wells-running-out.wad/wells-running-out.wad.pot

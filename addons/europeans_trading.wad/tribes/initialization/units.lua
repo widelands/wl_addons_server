@@ -894,6 +894,24 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Miner
                     purpose = pgettext("europeans_worker", "Mines ore and minerals.")
                 }
+            },
+            {
+                name = "europeans_terraformer_basic",
+                default_target_quantity = 1,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
+                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
+                }
+            },
+            {
+                name = "europeans_terraformer_advanced",
+                default_target_quantity = 2,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
+                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
+                }
             }
         },
         {
@@ -1452,6 +1470,20 @@ wl.Descriptions():new_tribe {
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for a Europeans production site: Small Farm
                 purpose = pgettext("europeans_building", "Digs up mud from the ground and uses water to turn it into clay. Then plant reed, cotton and rubber trees in the holes created.")
+            }
+        },
+        {
+            name = "europeans_terraformers_house_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Terraformer's Hut
+                purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
+            }
+        },
+        {
+            name = "europeans_terraformers_house_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
+                purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
             }
         },
         {
