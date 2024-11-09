@@ -19,6 +19,15 @@ wl.Descriptions():new_productionsite_type {
     },
 
     size = "small",
+    enhancement = {
+        name = "europeans_tree_nursery_advanced",
+        enhancement_cost = {
+            planks = 1
+        },
+        enhancement_return_on_dismantle = {
+            scrap_wood = 1
+        },
+    },
 
     aihints = {
         very_weak_ai_limit = 2,
@@ -54,7 +63,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=cut_granite on failure fail",
                 "call=cut_marble on failure fail", -- This will find marble 2 out of 6 times
                 "sleep=duration:10s",
-                "produce=clay:4",
                 "return=skipped"
             }
         },
@@ -72,7 +80,6 @@ wl.Descriptions():new_productionsite_type {
                 "call=mine_marble on failure fail", -- This will find marble 2 out of 8 times
                 "call=mine_diamond on failure fail", -- This will find diamond 1 out of 8 times
                 "sleep=duration:10s",
-                "produce=clay:4",
                 "return=skipped"
             }
         },

@@ -44,6 +44,7 @@ wl.Descriptions():new_worker_type {
             "findobject=attrib:growable radius:8",
             "walk=object",
             "animate=water duration:2s",
+            "terraform=amazons",
             "callobject=grow",
             "return"
         },
