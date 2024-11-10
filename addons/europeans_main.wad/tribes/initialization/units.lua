@@ -743,6 +743,24 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for an Europeans worker: Ranger / Forester
                     purpose = pgettext("europeans_worker", "Plant trees.")
                 }
+            },
+            {
+                name = "europeans_terraformer_basic",
+                default_target_quantity = 1,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
+                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
+                }
+            },
+            {
+                name = "europeans_terraformer_advanced",
+                default_target_quantity = 2,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
+                    purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
+                }
             }
         },
         {
@@ -1277,6 +1295,20 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Plants trees in the surrounding area."),
                 -- TRANSLATORS: Note helptext for an Europeans production site: Forester's House
                 note = pgettext("europeans_building", "The forester’s house needs free space within the work area to plant the trees.")
+            }
+        },
+        {
+            name = "europeans_terraformers_house_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for a Europeans production site: Terraformer's Hut
+                purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
+            }
+        },
+        {
+            name = "europeans_terraformers_house_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Terraformer's House
+                purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
             }
         },
         {

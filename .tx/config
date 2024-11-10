@@ -50,6 +50,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:Fast-Explorer-wad]
+file_filter            = po/Fast_Explorer.wad/<lang>.po
+source_file            = po/Fast_Explorer.wad/Fast_Explorer.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:Flower-Power-wad]
 file_filter            = po/Flower_Power.wad/<lang>.po
 source_file            = po/Flower_Power.wad/Flower_Power.wad.pot
@@ -363,6 +371,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:fast-explorer-wins-wad]
+file_filter            = po/fast_explorer_wins.wad/<lang>.po
+source_file            = po/fast_explorer_wins.wad/fast_explorer_wins.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:first-heroes-win-wad]
 file_filter            = po/first_heroes_win.wad/<lang>.po
 source_file            = po/first_heroes_win.wad/first_heroes_win.wad.pot
@@ -586,6 +602,14 @@ file_filter            = po/tropics.wad/<lang>.po
 source_file            = po/tropics.wad/tropics.wad.pot
 source_lang            = en
 type                   = PO
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:ui-inspector-wad]
+file_filter            = po/ui-inspector.wad/<lang>.po
+source_file            = po/ui-inspector.wad/ui-inspector.wad.pot
+type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
