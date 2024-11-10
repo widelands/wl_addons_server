@@ -10,57 +10,38 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
-        check_land = {
-            "findspace=size:any radius:8",
+        check_coast = {
+            "findspace=size:any radius:8 terraform:diking",
         },
-        terraform_land = {
-            "findspace=size:any radius:8",
+        terraform_coast = {
+            "findspace=size:any radius:8 terraform:diking",
             "walk=coords",
-            "animate=dig duration:4s",
+            "animate=dig duration:2s",
+            "terraform=diking",
+            -- "findspace=size:any radius:8 terraform:amazons",
+            -- "walk=coords",
+            "animate=dig duration:1s",
             "terraform=amazons",
-            "return"
-        },
-        check_land_with_tree = {
-            "findobject=attrib:tree radius:8",
-        },
-        terraform_land_with_tree = {
-            "findobject=attrib:tree radius:8",
-            "walk=coords",
-            "animate=dig duration:4s",
+            "animate=dig duration:1s",
             "terraform=amazons",
             "return"
         },
         check_dike = {
-            "findspace=size:swim radius:8 terraform:diking",
+            "findspace=size:swim radius:8",
         },
         dike = {
-            "findspace=size:swim radius:8 terraform:diking",
+            "findspace=size:swim radius:8",
             "walk=coords",
             "animate=dig duration:4s",
             "terraform=diking",
             "return"
         },
-        check_terraform_coast = {
-            "findspace=size:swim radius:8 terraform:diking",
-        },
-        terraform_coast = {
-            "findspace=size:swim radius:8 terraform:diking",
-            "walk=coords",
-            "animate=dig duration:2s",
-            "terraform=diking",
-            "animate=dig duration:2s",
-            "terraform=amazons",
-            "animate=dig duration:2s",
-            "return"
-        },
         check_dig_space = {
-            "findspace=size:any radius:8 avoid:field",
+            "findspace=size:any radius:8 avoid:field avoid:tree space",
         },
         dig_pond = {
-            "findspace=size:any radius:8 avoid:field",
+            "findspace=size:any radius:8 avoid:field avoid:tree space",
             "walk=coords",
-            "animate=dig duration:2s",
-            "terraform=amazons",
             "animate=dig duration:2s",
             "plant=attrib:pond_dry",
             "return"
@@ -71,11 +52,12 @@ wl.Descriptions():new_worker_type {
         fill_pond_dry = {
             "findobject=attrib:pond_dry radius:8",
             "walk=object",
-            "animate=water duration:3s",
+            "animate=water duration:2s",
             "callobject=fill_pond",
-            "animate=water duration:1s",
+            "animate=water duration:2s",
+            "terraform=amazons",
             "return"
-        },
+        }
     },
 
     ware_hotspot = {0, 20},

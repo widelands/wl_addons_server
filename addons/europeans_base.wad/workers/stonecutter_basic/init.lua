@@ -23,9 +23,6 @@ wl.Descriptions():new_worker_type {
         check_rocks = {
             "findobject=attrib:rocks radius:8",
         },
-        check_stone = {
-            "findspace=size:any radius:8 resource:resource_stones",
-        },
         cut_granite = {
             "findobject=attrib:rocks radius:8",
             "walk=object",
@@ -43,6 +40,9 @@ wl.Descriptions():new_worker_type {
             "callobject=shrink",
             "createware=marble",
             "return"
+        },
+        check_stone = {
+            "findspace=size:any radius:8 resource:resource_stones",
         },
         mine_granite = {
             "findspace=size:any radius:8 resource:resource_stones",
