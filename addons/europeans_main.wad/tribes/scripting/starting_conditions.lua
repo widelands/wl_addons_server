@@ -489,7 +489,7 @@ end
 function upgrade_random_militarysites(player)
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
-            if (tbuilding.type_name == "militarysite") and (tbuilding.enhancement) then
+            if ((tbuilding.type_name == "militarysite") or (tbuilding.type_name == "trainingsite")) and (tbuilding.enhancement) then
                 building:enhance(true)
                 break
             end

@@ -76,6 +76,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start mixing grout because ...
             descname = pgettext("europeans_building", "mixing grout"),
             actions = {
+                "return=skipped when economy needs brick and not economy needs grout",
                 "return=skipped when economy needs granite and not economy needs grout",
                 "consume=coal:2 granite:3",
                 "playsound=sound/barbarians/stonegrind priority:80%",

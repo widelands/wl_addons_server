@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-07 03:09+0200\n"
+"POT-Creation-Date: 2024-11-10 03:09+0100\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -27,15 +27,11 @@ msgstr "Europeanen stam (Landbouw Addon)"
 
 #: addons/europeans_agricultur.wad/addon:3
 msgid ""
-"Adds some additional agricultur wares, workers and buildings to Europeans "
-"tribes economy for more complexity. Not recommended for sea travel, because "
-"the terraformer converts ocean segments to land and can therefore lock up "
-"ships and ports, which can cause the game to crash."
+"Adds additional agricultur wares, workers and buildings to Europeans tribes "
+"economy for more complexity."
 msgstr ""
-"Voegt wat extra landbouwproducten, arbeiders en gebouwen toe aan de economie "
-"van de Europese stammen voor meer complexiteit. Niet aanbevolen voor "
-"zeereizen, omdat de terraformer oceaansegmenten omzet in land en daardoor "
-"schepen en havens kan blokkeren, waardoor het spel kan crashen."
+"Voeg extra landbouwproducten, arbeiders en gebouwen toe aan de Europese "
+"stammeneconomie voor meer complexiteit."
 
 #. TRANSLATORS: This is an immovable name used in lists of immovables
 #: addons/europeans_agricultur.wad/immovables/barleyfield/harvested/init.lua:8
@@ -370,6 +366,8 @@ msgstr "Geavanceerde Dierenboerderij"
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_medium_basic/init.lua:68
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_advanced/init.lua:42
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_basic/init.lua:82
+#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:50
+#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:63
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:66
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_basic/init.lua:88
 #: addons/europeans_agricultur.wad/productionsites_craft/weaving_mill_advanced/init.lua:58
@@ -381,8 +379,6 @@ msgstr "Geavanceerde Dierenboerderij"
 #: addons/europeans_agricultur.wad/productionsites_food/brewery_winery/init.lua:52
 #: addons/europeans_agricultur.wad/productionsites_food/mill_advanced/init.lua:61
 #: addons/europeans_agricultur.wad/productionsites_food/mill_basic/init.lua:73
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:53
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:66
 msgid "working"
 msgstr "werkende"
 
@@ -440,8 +436,6 @@ msgstr "kweekvissen"
 #. TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
 #: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_advanced/init.lua:230
 #: addons/europeans_agricultur.wad/productionsites_agricultur/animal_farm_basic/init.lua:159
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:135
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:142
 msgid "dummy program"
 msgstr "dummy programma"
 
@@ -709,8 +703,8 @@ msgstr "klei delven"
 #. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_advanced/init.lua:109
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_basic/init.lua:134
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:116
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:123
+#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:75
+#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:82
 msgctxt "europeans_building"
 msgid "digging a dry pond"
 msgstr "Een droge vijver graven"
@@ -718,8 +712,8 @@ msgstr "Een droge vijver graven"
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_advanced/init.lua:121
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_basic/init.lua:142
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:124
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:131
+#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:86
+#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:93
 msgctxt "europeans_building"
 msgid "filling pond with water"
 msgstr "vijver vullen met water"
@@ -741,6 +735,18 @@ msgstr "katoen oogsten"
 msgctxt "europeans_building"
 msgid "Basic Small Farm"
 msgstr "Kleine basisboerderij"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:8
+msgctxt "europeans_building"
+msgid "Advanced Terraformer’s House"
+msgstr "Geavanceerd Terreinvormershuis"
+
+#. TRANSLATORS: This is a building name used in lists of buildings
+#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:8
+msgctxt "europeans_building"
+msgid "Basic Terraformer’s House"
+msgstr "Basis Terreinvormershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:8
@@ -1554,32 +1560,6 @@ msgstr ""
 "De hoofdader van deze steengroeve is uitgeput. Verwacht een sterk verminderd "
 "investeringsrendement. Je zou moeten overwegen om hem te ontmantelen of te "
 "vernietigen."
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Terraformer’s House"
-msgstr "Geavanceerd Terreinvormershuis"
-
-#. TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:84
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:97
-msgctxt "europeans_building"
-msgid "terraforming coast"
-msgstr "terravorming kust"
-
-#. TRANSLATORS: Completed/Skipped/Did not start terraforming dry land because ...
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_advanced/init.lua:103
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:110
-msgctxt "europeans_building"
-msgid "terraforming dry land"
-msgstr "terravorming droge vijver"
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_agricultur.wad/terraformingsites/terraformers_house_basic/init.lua:8
-msgctxt "europeans_building"
-msgid "Basic Terraformer’s House"
-msgstr "Basis Terreinvormershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/trainingssites/training_center_attack/init.lua:8
@@ -4329,15 +4309,3 @@ msgstr "Basis Tuinier"
 msgctxt "europeans_worker"
 msgid "Basic Hunter"
 msgstr "Basis Jager"
-
-#. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_agricultur.wad/workers/terraformer_advanced/init.lua:8
-msgctxt "europeans_worker"
-msgid "Advanced Terraformer"
-msgstr "Gevorderde Terreinvormer"
-
-#. TRANSLATORS: This is a worker name used in lists of workers
-#: addons/europeans_agricultur.wad/workers/terraformer_basic/init.lua:8
-msgctxt "europeans_worker"
-msgid "Basic Terraformer"
-msgstr "Basis Terreinvormer"
