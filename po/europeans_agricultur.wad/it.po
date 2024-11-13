@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-09 03:10+0100\n"
+"POT-Creation-Date: 2024-11-13 03:09+0100\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Language-Team: Italian (https://app.transifex.com/widelands/teams/35159/"
 "it/)\n"
@@ -362,8 +362,6 @@ msgstr ""
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_medium_basic/init.lua:68
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_advanced/init.lua:42
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_basic/init.lua:82
-#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:50
-#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:63
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_advanced/init.lua:66
 #: addons/europeans_agricultur.wad/productionsites_craft/manufactory_basic/init.lua:88
 #: addons/europeans_agricultur.wad/productionsites_craft/weaving_mill_advanced/init.lua:58
@@ -693,8 +691,6 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_advanced/init.lua:109
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_basic/init.lua:134
-#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:75
-#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:82
 msgctxt "europeans_building"
 msgid "digging a dry pond"
 msgstr ""
@@ -702,8 +698,6 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_advanced/init.lua:121
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_basic/init.lua:142
-#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:86
-#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:93
 msgctxt "europeans_building"
 msgid "filling pond with water"
 msgstr ""
@@ -724,18 +718,6 @@ msgstr ""
 #: addons/europeans_agricultur.wad/productionsites_agricultur/farm_small_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Small Farm"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Terraformer’s House"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:8
-msgctxt "europeans_building"
-msgid "Basic Terraformer’s House"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
