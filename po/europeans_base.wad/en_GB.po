@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-09 03:10+0100\n"
+"POT-Creation-Date: 2024-11-13 03:09+0100\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/widelands/"
 "teams/35159/en_GB/)\n"
@@ -784,8 +784,8 @@ msgstr ""
 #: addons/europeans_base.wad/productionsites/smelting_works_basic/init.lua:66
 #: addons/europeans_base.wad/productionsites/stonemasons_house_advanced/init.lua:52
 #: addons/europeans_base.wad/productionsites/stonemasons_house_basic/init.lua:67
-#: addons/europeans_base.wad/productionsites/terraformers_house_advanced/init.lua:52
-#: addons/europeans_base.wad/productionsites/terraformers_house_basic/init.lua:65
+#: addons/europeans_base.wad/productionsites/terraformers_house_advanced/init.lua:51
+#: addons/europeans_base.wad/productionsites/terraformers_house_basic/init.lua:63
 #: addons/europeans_base.wad/productionsites/tree_nursery_advanced/init.lua:41
 #: addons/europeans_base.wad/productionsites/tree_nursery_basic/init.lua:75
 #: addons/europeans_base.wad/productionsites/well_basic/init.lua:68
@@ -1661,23 +1661,16 @@ msgctxt "europeans_building"
 msgid "Advanced Terraformer’s House"
 msgstr ""
 
-#. TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-#: addons/europeans_base.wad/productionsites/terraformers_house_advanced/init.lua:89
-#: addons/europeans_base.wad/productionsites/terraformers_house_basic/init.lua:87
-msgctxt "europeans_building"
-msgid "terraforming coast"
-msgstr ""
-
 #. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
-#: addons/europeans_base.wad/productionsites/terraformers_house_advanced/init.lua:115
-#: addons/europeans_base.wad/productionsites/terraformers_house_basic/init.lua:104
+#: addons/europeans_base.wad/productionsites/terraformers_house_advanced/init.lua:76
+#: addons/europeans_base.wad/productionsites/terraformers_house_basic/init.lua:82
 msgctxt "europeans_building"
 msgid "digging a dry pond"
 msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
-#: addons/europeans_base.wad/productionsites/terraformers_house_advanced/init.lua:127
-#: addons/europeans_base.wad/productionsites/terraformers_house_basic/init.lua:116
+#: addons/europeans_base.wad/productionsites/terraformers_house_advanced/init.lua:88
+#: addons/europeans_base.wad/productionsites/terraformers_house_basic/init.lua:94
 msgctxt "europeans_building"
 msgid "filling pond with water"
 msgstr ""

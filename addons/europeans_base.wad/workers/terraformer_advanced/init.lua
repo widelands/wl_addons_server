@@ -10,22 +10,6 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     programs = {
-        check_coast = {
-            "findspace=size:any radius:8 terraform:diking",
-        },
-        terraform_coast = {
-            "findspace=size:any radius:8 terraform:diking",
-            "walk=coords",
-            "animate=dig duration:2s",
-            "terraform=diking",
-            -- "findspace=size:any radius:8 terraform:amazons",
-            -- "walk=coords",
-            "animate=dig duration:1s",
-            "terraform=amazons",
-            "animate=dig duration:1s",
-            "terraform=amazons",
-            "return"
-        },
         check_dike = {
             "findspace=size:swim radius:8",
         },

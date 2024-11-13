@@ -19,20 +19,6 @@ wl.Descriptions():new_worker_type {
     },  
     
     programs = {
-        check_coast= {
-            "findspace=size:any radius:4 terraform:diking",
-        },
-        terraform_coast = {
-            "findspace=size:any radius:4 terraform:diking",
-            "walk=coords",
-            "animate=dig duration:2s",
-            "terraform=diking",
-            -- "findspace=size:any radius:4 terraform:amazons",
-            -- "walk=coords",
-            "animate=dig duration:2s",
-            "terraform=amazons",
-            "return"
-        },
         check_dike = {
             "findspace=size:swim radius:4",
         },
