@@ -226,6 +226,21 @@ function place_building(player, startx, starty, radius, buildingname)
     place_building_in_region(player, buildingname, fields)
 end
 
+function place_headquarters(player, startx, starty, radius)
+    local hq = nil
+    local game = wl.Game()
+    local map = game.map
+    local centerfield = map:get_field(startx, starty)
+    local fields = centerfield:region(radius)
+    local i = 0
+
+    while not hq do
+        i = i + 1
+        hq = place_building_in_region(player, "europeans_headquarters", fields)
+        fields = centerfield:region(radius + i)
+    end
+end
+
 function place_port(player, startx, starty, radius)
     local game = wl.Game()
     local map = game.map
@@ -387,6 +402,19 @@ function forbid_all_militarysites(player)
         player:forbid_buildings{"europeans_barrier_basic", "europeans_barrier_level_1", "europeans_barrier_level_2", "europeans_barrier_level_3"}
         player:forbid_buildings{"europeans_tower_basic", "europeans_tower_level_1", "europeans_tower_level_2", "europeans_tower_level_3"}
         player:forbid_buildings{"europeans_castle_basic", "europeans_castle_level_1", "europeans_castle_level_2", "europeans_castle_level_3", "europeans_castle_level_4"}
+    end
+end
+
+function dismantle_idle_buildings(player)
+    local game = wl.Game()
+
+    for i, tbuilding in ipairs(player.tribe.buildings) do
+        for j, building in ipairs(player:get_buildings(tbuilding.name)) do
+            if ((tbuilding.type_name == "productionsite") and (building.productivity < 10) and not (building.is_stopped)) then
+                building:dismantle(true)
+                break
+            end
+       end
     end
 end
 
@@ -565,6 +593,7 @@ function doing_ai_stuff(player, increment)
 
     -- Experimental actions
     if (increment >= 16) then
+        dismantle_idle_buildings(player)
         start_stopped_buildings(player)
         upgrade_random_militarysites(player)
         set_hero_advanced_militarysites(player)
@@ -608,6 +637,7 @@ function doing_ai_stuff_seafaring(player, increment)
         set_hero_advanced_militarysites(player)
     end
     if (increment >= 24) and (increment % 2 == 0) then
+        dismantle_idle_buildings(player)
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
     end

@@ -42,7 +42,6 @@ wl.Descriptions():new_productionsite_type {
     },
 
     inputs = {
-        { name = "blackwood", amount = 12 },
         { name = "water", amount = 8 }
     },
 
@@ -54,67 +53,29 @@ wl.Descriptions():new_productionsite_type {
                 "sleep=duration:10s",
                 "callworker=check_dig_space",
                 "call=digging_pond",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "callworker=check_pond_dry",
                 "call=filling_pond_dry",
-                "sleep=duration:5s",
-                "callworker=check_coast",
-                "call=terraforming_coast",
-                "sleep=duration:5s",
-                "callworker=check_coast",
-                "call=terraforming_coast",
-                "sleep=duration:5s",
-                "callworker=check_coast",
-                "call=terraforming_coast",
                 "sleep=duration:10s",
                 "callworker=check_dig_space",
                 "call=digging_pond",
-                "sleep=duration:5s",
+                "sleep=duration:10s",
                 "callworker=check_pond_dry",
                 "call=filling_pond_dry",
-                "sleep=duration:5s",
-                "callworker=check_coast",
-                "call=terraforming_coast",
-                "sleep=duration:5s",
-                "callworker=check_coast",
-                "call=terraforming_coast",
-                "sleep=duration:5s",
-                "callworker=check_coast",
-                "call=terraforming_coast",
+                "sleep=duration:10s",
+                "callworker=check_dig_space",
+                "call=digging_pond",
+                "sleep=duration:10s",
+                "callworker=check_pond_dry",
+                "call=filling_pond_dry",
                 "return=skipped"
-            }
-        },
-        terraforming_coast = {
-            -- TRANSLATORS: Completed/Skipped/Did not start terraforming coast because ...
-            descname = pgettext("europeans_building", "terraforming coast"),
-            actions = {
-                "return=skipped unless site has blackwood:4",
-                "return=skipped unless site has water:2",
-                "consume=blackwood",
-                "animate=working duration:1s",
-                "callworker=terraform_coast",
-                "consume=blackwood",
-                "animate=working duration:1s",
-                "callworker=terraform_coast",
-                "consume=water",
-                "animate=working duration:1s",
-                "produce=clay",
-                "consume=blackwood",
-                "animate=working duration:1s",
-                "callworker=terraform_coast",
-                "consume=blackwood",
-                "animate=working duration:1s",
-                "callworker=terraform_coast",
-                "consume=water",
-                "animate=working duration:1s",
-                "produce=clay"
             }
         },
         digging_pond = {
             -- TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
             descname = pgettext("europeans_building", "digging a dry pond"),
             actions = {
-                "return=skipped unless economy needs clay",
+                "return=skipped when economy needs water and not economy needs clay",
                 "callworker=check_dig_space",
                 "return=skipped unless site has water",
                 "callworker=dig_pond",
@@ -126,6 +87,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
             descname = pgettext("europeans_building", "filling pond with water"),
             actions = {
+                "return=skipped when economy needs water",
                 "callworker=check_pond_dry",
                 "return=skipped unless site has water",
                 "consume=water",
