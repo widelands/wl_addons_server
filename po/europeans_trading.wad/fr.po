@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-09 03:10+0100\n"
+"POT-Creation-Date: 2024-11-13 03:09+0100\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Language-Team: French (https://app.transifex.com/widelands/teams/35159/fr/)\n"
 "Language: fr\n"
@@ -49,8 +49,6 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:83
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_advanced/init.lua:56
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_basic/init.lua:67
-#: addons/europeans_trading.wad/productionsites_suppliers/terraformers_house_advanced/init.lua:50
-#: addons/europeans_trading.wad/productionsites_suppliers/terraformers_house_basic/init.lua:63
 #: addons/europeans_trading.wad/productionsites_suppliers/weaving_mill_advanced/init.lua:57
 #: addons/europeans_trading.wad/productionsites_suppliers/weaving_mill_basic/init.lua:69
 msgid "working"
@@ -379,8 +377,6 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start digging pond because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:109
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:135
-#: addons/europeans_trading.wad/productionsites_suppliers/terraformers_house_advanced/init.lua:75
-#: addons/europeans_trading.wad/productionsites_suppliers/terraformers_house_basic/init.lua:82
 msgctxt "europeans_building"
 msgid "digging a dry pond"
 msgstr ""
@@ -388,8 +384,6 @@ msgstr ""
 #. TRANSLATORS: Completed/Skipped/Did not start filling pond because ...
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_advanced/init.lua:121
 #: addons/europeans_trading.wad/productionsites_suppliers/farm_small_basic/init.lua:143
-#: addons/europeans_trading.wad/productionsites_suppliers/terraformers_house_advanced/init.lua:86
-#: addons/europeans_trading.wad/productionsites_suppliers/terraformers_house_basic/init.lua:93
 msgctxt "europeans_building"
 msgid "filling pond with water"
 msgstr ""
@@ -459,18 +453,6 @@ msgstr ""
 #: addons/europeans_trading.wad/productionsites_suppliers/smelting_works_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Smelting Works"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_trading.wad/productionsites_suppliers/terraformers_house_advanced/init.lua:8
-msgctxt "europeans_building"
-msgid "Advanced Terraformer’s House"
-msgstr ""
-
-#. TRANSLATORS: This is a building name used in lists of buildings
-#: addons/europeans_trading.wad/productionsites_suppliers/terraformers_house_basic/init.lua:8
-msgctxt "europeans_building"
-msgid "Basic Terraformer’s House"
 msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings

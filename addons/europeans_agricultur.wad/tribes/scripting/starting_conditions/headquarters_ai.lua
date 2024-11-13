@@ -23,7 +23,7 @@ local init = {
         player:allow_buildings("all")
     end
 
-    place_building(player, sf.x, sf.y, 0, "europeans_headquarters")
+    place_headquarters(player, sf.x, sf.y, 0)
     set_starting_warecount(player)
     
     -- Delay of 15 min between actions
