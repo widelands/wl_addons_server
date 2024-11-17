@@ -636,7 +636,7 @@ Maps for the ''Fast Explorer wins'' win condition. ''Fast Explorer SP'' is for s
 kaputtnik
 kaputtnik
 1731074666
-13
+15
 0
 0.0
 0
@@ -1147,7 +1147,7 @@ The gods who created this piece of landscape must be crazy. They proove your ski
 kaputtnik
 kaputtnik
 1715265495
-124
+125
 1
 10.0
 3
@@ -1841,7 +1841,7 @@ Maps for the 2021 Tournament
 hessenfarmer
 hessenfarmer
 1619867883
-404
+405
 0
 0.0
 0
@@ -2107,7 +2107,7 @@ Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind e
 auktionadmin
 auktionadmin
 1680190966
-355
+356
 0
 0.0
 3
@@ -2756,7 +2756,7 @@ Upgrade of smelters and stonemasons makes the barbarians and empire more competi
 OIPUN
 OIPUN
 1719251296
-200
+201
 1
 10.0
 2
@@ -3124,7 +3124,7 @@ Basic Outpost
 blind
 blind3rdeye
 1700920458
-178
+179
 2
 10.0
 0
@@ -3280,7 +3280,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-771
+772
 3
 9.666667
 1
@@ -4086,13 +4086,13 @@ Adds additional agricultur wares, workers and buildings to Europeans tribes econ
 MarkMcWire
 MarkMcWire
 1717601720
-323
+324
 0
 0.0
 0
-1.9.2.1
+1.9.2.2
 32
-14693030
+14693026
 tribes
 1
 europeans_base.wad
@@ -6165,7 +6165,7 @@ ru.mo
 sk.mo
 sv.mo
 1910
-c98951aa5428d0328f44976192a4a8ce
+b68e7d5a9715324a01f9b215b64680f7
 f97b9d339c739a26de434bc39ea77b83
 b64aea6a49f53e1d219e9b8ff23aeded
 42c9d1543c071372a2e60fba80fa5536
@@ -7278,7 +7278,7 @@ f6c8a28dd17631108c1ac2aef4b57a1f
 f9535866c7d646605d5bf64a69a93c5c
 e45c6a6d184c308692d225d8a059bdee
 a4e819aea62aaef1cdc768fe8d7ed847
-efe3446b4464cce427f913be178d1cee
+18087887d4595016203b10fc7b5a89ec
 4bfbac91ddea202ded4dd1d83fd6979b
 1c670d950bb4c30484d66fa7720997a4
 2afd9a40badd53adfd0b549fd172bdb6
@@ -8075,20 +8075,20 @@ a82311450e872f2d3a5a1c7e48853395
 400f87c07f440df2a5bce0eeffbe230b
 7970a6238af5ae707d80abd4e7816f9f
 664146f03ebe1bf6c2f52dde60c2a35b
-verified
+unchecked
 europeans_base.wad
 Europeans Tribe (Base Addon)
 Contains basic object definitions and graphics for the Europeans and their other addons. It uses buildings, workers and some wares from other tribes, until own graphics are available. It must be in front of the main addon in the list and must be activated for the other addons to work!
 MarkMcWire
 MarkMcWire
 1716841859
-420
+421
 1
 6.0
 0
-1.9.2.1
+1.9.2.2
 33
-21921675
+21921755
 tribes
 0
 237
@@ -8218,8 +8218,8 @@ productionsites/well_level_6
 recruitementsites
 recruitementsites/trainingscamp_advanced
 recruitementsites/trainingscamp_basic
-recruitementsites/yard_ferry_basic
 recruitementsites/yard_ships_advanced
+recruitementsites/yard_ships_basic
 ships
 ships/europeans
 trainingsites
@@ -9405,21 +9405,6 @@ recruitementsites/trainingscamp_basic/idle_4_pc.png
 recruitementsites/trainingscamp_basic/init.lua
 recruitementsites/trainingscamp_basic/menu.png
 recruitementsites/trainingscamp_basic/register.lua
-recruitementsites/yard_ferry_basic/build_1.png
-recruitementsites/yard_ferry_basic/build_1_pc.png
-recruitementsites/yard_ferry_basic/idle_00.png
-recruitementsites/yard_ferry_basic/idle_00_pc.png
-recruitementsites/yard_ferry_basic/init.lua
-recruitementsites/yard_ferry_basic/menu.png
-recruitementsites/yard_ferry_basic/register.lua
-recruitementsites/yard_ferry_basic/unoccupied_00.png
-recruitementsites/yard_ferry_basic/unoccupied_00_pc.png
-recruitementsites/yard_ferry_basic/working_0.5.png
-recruitementsites/yard_ferry_basic/working_0.5_pc.png
-recruitementsites/yard_ferry_basic/working_1.png
-recruitementsites/yard_ferry_basic/working_1_pc.png
-recruitementsites/yard_ferry_basic/working_2.png
-recruitementsites/yard_ferry_basic/working_2_pc.png
 recruitementsites/yard_ships_advanced/build_0.5.png
 recruitementsites/yard_ships_advanced/build_0.5_pc.png
 recruitementsites/yard_ships_advanced/build_1.png
@@ -9455,6 +9440,21 @@ recruitementsites/yard_ships_advanced/working_2.png
 recruitementsites/yard_ships_advanced/working_2_pc.png
 recruitementsites/yard_ships_advanced/working_4.png
 recruitementsites/yard_ships_advanced/working_4_pc.png
+recruitementsites/yard_ships_basic/build_1.png
+recruitementsites/yard_ships_basic/build_1_pc.png
+recruitementsites/yard_ships_basic/idle_00.png
+recruitementsites/yard_ships_basic/idle_00_pc.png
+recruitementsites/yard_ships_basic/init.lua
+recruitementsites/yard_ships_basic/menu.png
+recruitementsites/yard_ships_basic/register.lua
+recruitementsites/yard_ships_basic/unoccupied_00.png
+recruitementsites/yard_ships_basic/unoccupied_00_pc.png
+recruitementsites/yard_ships_basic/working_0.5.png
+recruitementsites/yard_ships_basic/working_0.5_pc.png
+recruitementsites/yard_ships_basic/working_1.png
+recruitementsites/yard_ships_basic/working_1_pc.png
+recruitementsites/yard_ships_basic/working_2.png
+recruitementsites/yard_ships_basic/working_2_pc.png
 ships/europeans/idle_1.png
 ships/europeans/idle_1_pc.png
 ships/europeans/init.lua
@@ -11432,7 +11432,7 @@ ru.mo
 sk.mo
 sv.mo
 3100
-4d9d9eb2729fa11eeb2f61ea3ea004b6
+166fc5fc3e01bcd4af8545059d596405
 bda0dd33b700060ed6918f89750f3ada
 9a17f31f794d8945a956176ef9767d06
 8073e446b8c6da78152359df91eb52a7
@@ -12507,21 +12507,6 @@ cbd2586ee5bd226c6302ec383ccfd561
 f089e002514897869149ee43fc84a1e8
 e8183544ef5d99584b657764fcdd2588
 ef2a2cc3c9c01d9af6872252106d648d
-35e4b4fe4f757ece1781e744290186a0
-3a8cc0df21fa5e1da4cff119143f4e69
-4e2d480b912334bf2994d9161f4dbdf7
-ea480075d5e9cd71dacbb8425877e279
-a5f73e4ca91f9369cfb7be273b5e69b5
-6f04c2b49d108279783814bcec93fc4e
-666a33a5564b3fa6ebc7fd36db33a0ed
-31ca0f46b75228552b493a8e45b683ec
-ea480075d5e9cd71dacbb8425877e279
-bca41c593ffefcaa2e88044c4f08d042
-053e1021e78e2080e7a36e85a27f920a
-472c86dfc675ac450b23449ccb1a6a44
-ab7ef6d54f0c486548b44bbed3186124
-67221eaeb61b3d54028188b31641e2ca
-d582b04e493304e8f58339378f2fa392
 4dd7686a30db8178f5eaef7a4c682cb1
 53bcbc34b0c92b935b0e62586d01df3d
 e7d1414b3e130c8224e8f62028d23611
@@ -12538,7 +12523,7 @@ af1c3ae4e80948bba499184af8bb2c9f
 89918d2facfe4f4d97798343a3325939
 c297642b66642c45ba1a1114f01be5c5
 7475ef304f63b7a3a7837f8862ab7485
-3adcad8585e78afa85a98b5c70691f96
+c6ebe38d906c81a6405d2248761c3aac
 1d244651b78dd859deea57e1fe24970d
 1eac09539e9191c9453fc99e9ec106ee
 02f1549bd61da2615e5c216c89bba883
@@ -12557,6 +12542,21 @@ df6752bc44be9f7165fac814a7830e97
 0a47c334927be320a48e3471a32d884f
 c406c3071b349d123c7f8868340d31f3
 f9c689332832701a0889ab27af94d4b1
+35e4b4fe4f757ece1781e744290186a0
+3a8cc0df21fa5e1da4cff119143f4e69
+4e2d480b912334bf2994d9161f4dbdf7
+ea480075d5e9cd71dacbb8425877e279
+a5f73e4ca91f9369cfb7be273b5e69b5
+6f04c2b49d108279783814bcec93fc4e
+666a33a5564b3fa6ebc7fd36db33a0ed
+31ca0f46b75228552b493a8e45b683ec
+ea480075d5e9cd71dacbb8425877e279
+bca41c593ffefcaa2e88044c4f08d042
+053e1021e78e2080e7a36e85a27f920a
+472c86dfc675ac450b23449ccb1a6a44
+ab7ef6d54f0c486548b44bbed3186124
+67221eaeb61b3d54028188b31641e2ca
+d582b04e493304e8f58339378f2fa392
 3ea1c41296ea8034809abda472c2adb1
 192edd04a086ff7071daf84300156723
 1a847cea5ee41e71a52427c00e1a4405
@@ -14532,14 +14532,14 @@ d566fcd7aceeee016dc433a98572c240
 35a1c09509a156ed2988feb5d76ebfdb
 58d1c4b05c023c942a1e140212e0fcf5
 42d2f0fed28df95e7d74ea6fc192b258
-verified
+unchecked
 europeans_main.wad
 Europeans Tribe (Main Addon)
 Adds a new tribe named ‘Europeans’. This addon provides the minimum amount of workers, buildings and wares to have a playable economy and fast military expansion.
 MarkMcWire
 MarkMcWire
 1716842745
-400
+406
 1
 6.0
 0
@@ -14737,7 +14737,7 @@ Adds a modified map version of Europa. Renaming the player positions to ancient 
 MarkMcWire
 MarkMcWire
 1625854267
-836
+838
 0
 0.0
 1
@@ -14811,7 +14811,7 @@ Adds some additional trading buildings, traders and coins to Europeans tribes.
 MarkMcWire
 MarkMcWire
 1715114878
-344
+350
 0
 0.0
 0
@@ -16242,14 +16242,14 @@ bdddb020a9f6c963af793df899c05495
 5e9df50d6d0d8b6a6c81516cc1832307
 076b95de6439454a0ec42846faa553da
 69f733df4b279a788ee19943923b6475
-unchecked
+verified
 explorer-wins.wad
 explorer wins
 The player who has explored most of the world wins the game
 aDiscoverer
 aDiscoverer
 1667043185
-310
+311
 2
 10.0
 0
@@ -16465,7 +16465,7 @@ The first player who has at least 4 fully trained soldiers in a warship wins the
 kaputtnik
 kaputtnik
 1731074892
-10
+12
 0
 0.0
 0
@@ -16677,7 +16677,7 @@ A strange new world.
 Nordfriese
 Nordfriese
 1600000000
-631
+632
 4
 9.75
 0
@@ -16888,7 +16888,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-1041
+1042
 5
 9.6
 0
@@ -17047,7 +17047,7 @@ Very complex economy model for the frisian tribe with numerous new wares and bui
 Nordfriese
 Nordfriese
 1600000000
-957
+958
 3
 10.0
 0
@@ -18969,7 +18969,7 @@ Theme with larger fonts. This version changes scenario and help fonts too, but o
 Andy Alt, tothxa
 tothxa
 1682797554
-124
+125
 1
 2.0
 0
@@ -19039,7 +19039,7 @@ Replaces some terrain graphics with those from the ancient Widelands days.
 Nordfriese
 Nordfriese
 1621620072
-327
+328
 2
 10.0
 0
@@ -19641,7 +19641,7 @@ This set of maps contains 6 small and medium-sized maps for 3-6 players. You can
 OIPUN
 OIPUN
 1615637480
-588
+589
 0
 0.0
 0
@@ -20471,7 +20471,7 @@ Reduce the game speed to 1× whenever a new message arrives in your inbox.
 Nordfriese
 Nordfriese
 1723377908
-47
+48
 2
 10.0
 3
@@ -22368,7 +22368,7 @@ Contains flowering meadows, clearings, dolomites, clay soil, green water, muddy 
 OIPUN
 OIPUN
 1622916439
-581
+582
 2
 9.5
 0

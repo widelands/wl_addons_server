@@ -2809,8 +2809,8 @@ wl.Descriptions():new_tribe {
    fastplace = {
       warehouse = "europeans_warehouse",
       port = "europeans_port",
-      training_small = "europeans_fitness_center_health",
-      training_large = "europeans_training_center_attack",
+      training_small = "europeans_training_center_health",
+      training_large = "europeans_battlearena_basic",
       military_small_primary = "europeans_sentry_basic",
       military_small_secondary = "europeans_sentry_level_3",
       military_medium_primary = "europeans_barrier_basic",
