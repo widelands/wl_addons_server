@@ -1,14 +1,12 @@
-push_textdomain("white_summer.wad", true)
+push_textdomain("white_summer.wad")
 
 dirname = path.dirname(__file__)
 
---Linden******************************
-
 terrain_affinity_linden = {
-   preferred_temperature = 95,
-   preferred_humidity = 680,
-   preferred_fertility = 650,
-   pickiness = 80,
+   preferred_temperature = 105,
+   preferred_humidity = 700,
+   preferred_fertility = 550,
+   pickiness = 75,
 }
 
 wl.Descriptions():new_immovable_type{
@@ -117,7 +115,7 @@ wl.Descriptions():new_immovable_type{
          hotspot = { 24, 67 },
          sound_effect = {
             path = "sound/animals/crickets1",
-            priority = "5%"
+            priority = "14%"
          },
       }
    },
