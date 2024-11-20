@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_ferry_yard",
+    name = "europeans_shipyard_basic",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Ferry Yard"),
+    descname = pgettext("europeans_building", "Basic Ship Yard"),
     icon = dirname .. "menu.png",
     
     animation_directory = dirname,
@@ -23,10 +23,10 @@ wl.Descriptions():new_productionsite_type {
     
     size = "medium",
     destructible = true,
-    map_check = {"seafaring", "waterways"},
+    map_check = {"seafaring"},
     
     enhancement = {
-        name = "europeans_shipyard",
+        name = "europeans_shipyard_advanced",
         enhancement_cost = {
             brick = 2,
             grout = 2,
@@ -67,7 +67,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_shipwright_basic = 1
+        europeans_shipwright_basic = 2
     },
 
     inputs = {
@@ -82,23 +82,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
-                "call=ferry_construction",
-                "sleep=duration:30s",
                 "call=ship_construction",
                 "return=completed"
-            }
-        },
-        ferry_construction = {
-            -- TRANSLATORS: Completed/Skipped/Did not start constructing a ferry because ...
-            descname = pgettext("europeans_building", "constructing a ferry"),
-            actions = {
-                "return=skipped when economy needs planks and not economy needs europeans_ferry",
-                "return=skipped when economy needs rubber and not economy needs europeans_ferry",
-                "return=skipped when not site has planks:2",
-                "return=skipped when not site has rubber",
-                "callworker=buildferry_1",
-                "consume=planks:2 rubber",
-                "callworker=buildferry_2"
             }
         },
         ship_construction = {

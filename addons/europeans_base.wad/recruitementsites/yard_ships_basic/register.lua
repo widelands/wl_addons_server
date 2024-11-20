@@ -1,3 +1,3 @@
 return {
-   europeans_ferry_yard = {"__replace_if_exists"},
+   europeans_shipyard_basic = {"__replace_if_exists"},
 }

@@ -2121,7 +2121,7 @@ wl.Descriptions():new_tribe {
 
         -- Seafaring/Ferry Sites - these are only displayed on seafaring/ferry maps
         {
-            name = "europeans_ferry_yard",
+            name = "europeans_shipyard_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
                 purpose = pgettext("europeans_building", "Builds ferries."),
@@ -2130,7 +2130,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_shipyard",
+            name = "europeans_shipyard_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
                 purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports.")
@@ -2331,8 +2331,8 @@ wl.Descriptions():new_tribe {
    fastplace = {
       warehouse = "europeans_warehouse",
       port = "europeans_port",
-      training_small = "europeans_battlearena_basic",
-      training_large = "europeans_battlearena_level_2",
+      training_small = "europeans_training_center_health",
+      training_large = "europeans_battlearena_basic",
       military_small_primary = "europeans_sentry_basic",
       military_small_secondary = "europeans_sentry_level_3",
       military_medium_primary = "europeans_barrier_basic",
@@ -2362,8 +2362,8 @@ wl.Descriptions():new_tribe {
       armor_manufactory = "europeans_tailors_house_basic",
       boots_manufactory = "europeans_shoemakers_house_basic",
       big_manufactory = "europeans_manufactory_basic",
-      shipyard = "europeans_shipyard",
-      ferry_yard = "europeans_ferry_yard",
+      shipyard = "europeans_shipyard_basic",
+      ferry_yard = "europeans_shipyard_advanced",
       scout = "europeans_scouts_house_basic",
       barracks = "europeans_trainingscamp_basic",
       industry_supporter = "europeans_smelting_works_basic",

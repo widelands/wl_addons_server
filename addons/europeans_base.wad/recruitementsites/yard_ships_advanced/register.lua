@@ -1,3 +1,3 @@
 return {
-   europeans_shipyard = {"__replace_if_exists"},
+   europeans_shipyard_advanced = {"__replace_if_exists"},
 }
