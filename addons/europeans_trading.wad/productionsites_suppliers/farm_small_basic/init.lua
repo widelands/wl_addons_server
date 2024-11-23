@@ -122,7 +122,7 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start digging clay because ...
             descname = pgettext("europeans_building", "digging clay"),
             actions = {
-                "return=skipped unless economy needs clay",
+                "return=skipped unless economy needs clay or economy needs brick",
                 "callworker=dig",
                 "return=skipped unless site has water",
                 "consume=water",

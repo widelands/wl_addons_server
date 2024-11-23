@@ -84,6 +84,26 @@ public class HandleCommand {
 	}
 
 	/**
+	 * Check whether the first command argument refers to an add-on or a map.
+	 * If so, strips the extension.
+	 * Sanitizes the argument in any case.
+	 * @return The command refers to a map.
+	 * @throws Exception If the version is out of bounds.
+	 */
+	private boolean checkCmd1IsMap() throws Exception {
+		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
+
+		if (cmd[1].endsWith(".wad")) return false;
+
+		if (cmd[1].endsWith(".map")) {
+			cmd[1] = cmd[1].substring(0, cmd[1].length() - 4);
+			return true;
+		}
+
+		throw new ServerUtils.WLProtocolException("Unrecognizable object type '" + cmd[1] + "'");
+	}
+
+	/**
 	 * Check that the command version is within the expected bounds.
 	 * @param max Maximum supported command version.
 	 * @throws Exception If the version is out of bounds.
@@ -188,7 +208,7 @@ public class HandleCommand {
 	 */
 	private void handleCmdList() throws Exception {
 		// Args: [2+: control]
-		checkCommandVersion(2);
+		checkCommandVersion(3);
 		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 0 : 1);
 
 		final boolean versionCheck =
@@ -216,6 +236,27 @@ public class HandleCommand {
 			compatibleAddOns.add(addon);
 		}
 
+		if (commandVersion >= 3) {
+			sql = Utils.sql(Utils.Databases.kWebsite,
+			                "select slug,file,wl_version_after from wlmaps_map order by slug");
+			while (sql.next()) {
+				if (!new File(Utils.config("website_maps_path"), sql.getString("file")).isFile()) {
+					continue;  // File does not exist
+				}
+
+				if (versionCheck) {
+					String mapRequirement = sql.getString("wl_version_after");
+					mapRequirement = ServerUtils.sanitizeMapMinWlVersion(mapRequirement);
+					if (!mapRequirement.isEmpty() && !ServerUtils.matchesWidelandsVersion(
+					                                     widelandsVersion, mapRequirement, null)) {
+						continue;
+					}
+				}
+
+				compatibleAddOns.add(sql.getString("slug") + ".map");
+			}
+		}
+
 		MuninStatistics.MUNIN.skipNextCmdInfo(compatibleAddOns.size() - (appendInfo ? 0 : 1));
 		out.println(compatibleAddOns.size());
 		for (String name : compatibleAddOns) out.println(name);
@@ -223,7 +264,7 @@ public class HandleCommand {
 
 		if (appendInfo) {
 			for (String name : compatibleAddOns) {
-				handle("2:CMD_INFO", name);
+				handle(commandVersion + ":CMD_INFO", name);
 			}
 		}
 	}
@@ -234,9 +275,26 @@ public class HandleCommand {
 	 */
 	private void handleCmdInfo() throws Exception {
 		// Args: name
-		checkCommandVersion(2);
+		checkCommandVersion(3);
 		ServerUtils.checkNrArgs(cmd, 1);
-		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
+
+		if (checkCmd1IsMap()) {
+			if (commandVersion < 3) {
+				throw new ServerUtils.WLProtocolException("Command version " + commandVersion +
+				                                          " not supported for maps");
+			}
+			handleCmdInfoMap();
+		} else {
+			handleCmdInfoAddOn();
+		}
+	}
+
+	/**
+	 * Handle a CMD_INFO command for an add-on.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 * @todo Treat single-map map set add-ons like maps in CV3+
+	 */
+	private void handleCmdInfoAddOn() throws Exception {
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		ServerUtils.semaphoreRO(cmd[1], () -> {
@@ -323,6 +381,117 @@ public class HandleCommand {
 	}
 
 	/**
+	 * Handle a CMD_INFO command for a map.
+	 * @throws Exception If anything at all goes wrong, throw an Exception.
+	 * @todo Localization for map strings
+	 */
+	private void handleCmdInfoMap() throws Exception {
+		ResultSet sqlMain = Utils.sql(
+		    Utils.Databases.kWebsite,
+		    "select *, UNIX_TIMESTAMP(pub_date) as timestamp from wlmaps_map where slug=?", cmd[1]);
+		if (!sqlMain.next())
+			throw new ServerUtils.WLProtocolException("Map '" + cmd[1] +
+			                                          "' is not in the database");
+
+		final long mapID = sqlMain.getLong("id");
+		final String name = sqlMain.getString("name");
+		final String descr = sqlMain.getString("descr");
+		final String hint = sqlMain.getString("hint");
+		final String uploader_comment = sqlMain.getString("uploader_comment");
+		final String author = sqlMain.getString("author");
+
+		final File minimapFile =
+		    new File(Utils.config("website_maps_path"), sqlMain.getString("minimap"));
+		final File mapFile = new File(Utils.config("website_maps_path"), sqlMain.getString("file"));
+
+		if (!mapFile.isFile()) throw new ServerUtils.WLProtocolException("Map file does not exist");
+
+		out.println(name);
+		out.println(name);
+		out.println(Utils.linebreaksToRichtext(descr));
+		out.println(Utils.linebreaksToRichtext(descr));
+		out.println(author);
+		out.println(author);
+		out.println(Utils.getUsername(sqlMain.getLong("uploader_id")));
+
+		out.println();       // add-on version
+		out.println("0");    // i18n version
+		out.println("map");  // category
+		out.println();       // requirements
+		out.println(ServerUtils.sanitizeMapMinWlVersion(sqlMain.getString("wl_version_after")));
+		out.println();        // max version
+		out.println("true");  // sync safety - we just hope it contains no bad scripting...
+		out.println("0");     // number of screenshots
+
+		out.println(mapFile.length());
+		out.println(sqlMain.getLong("timestamp"));
+		out.println(sqlMain.getLong("nr_downloads"));
+
+		ResultSet sql =
+		    Utils.sql(Utils.Databases.kWebsite,
+		              "select score from star_ratings_userrating where rating_id=(select id from "
+		                  + "star_ratings_rating where object_id=?)",
+		              mapID);
+		int[] votes = new int[10];
+		for (int i = 0; i < votes.length; ++i) votes[i] = 0;
+		while (sql.next()) votes[sql.getInt("score") - 1]++;
+		for (int v : votes) out.println(v);
+
+		sql = Utils.sql(Utils.Databases.kWebsite,
+		                "select id, user_id, UNIX_TIMESTAMP(date_submitted) as timestamp, "
+		                    + "UNIX_TIMESTAMP(date_modified) as edited, comment "
+		                    + "from threadedcomments_threadedcomment where "
+		                    + "content_type_id=(select id from django_content_type where "
+		                    + "app_label=?) and object_id=? and is_public>0",
+		                Utils.config("website_maps_slug"), mapID);
+		ArrayList<Utils.AddOnComment> comments = new ArrayList<>();
+		while (sql.next()) {
+			Long user = sql.getLong("user_id");
+			Long ts1 = sql.getLong("timestamp");
+			Long ts2 = sql.getLong("edited");
+			if (ts2.longValue() <= ts1.longValue()) ts2 = null;
+
+			comments.add(new Utils.AddOnComment(sql.getLong("id"), user, ts1,
+			                                    ts2 == null ? null : user, ts2, "",
+			                                    sql.getString("comment")));
+		}
+		out.println(comments.size());
+		for (Utils.AddOnComment c : comments) {
+			if (commandVersion >= 2) out.println(c.commentID);
+			out.println(Utils.getUsername(c.userID));
+			out.println(c.timestamp);
+			out.println(c.editorID == null ? "" : Utils.getUsername(c.editorID));
+			out.println(c.editTimestamp == null ? 0 : c.editTimestamp);
+			out.println(c.version);
+
+			String[] msg = c.message.split("\n");
+			out.println(msg.length - 1);
+			for (String m : msg) out.println(m);
+		}
+
+		out.println("verified");  // we don't review maps currently
+		out.println("2");         // nor do we assess their quality
+
+		if (minimapFile.isFile()) {
+			ServerUtils.writeOneFile(minimapFile, out);
+		} else {
+			out.println("0\n0");  // minimap should always exist, but not critical if it doesn't
+		}
+
+		out.println(mapFile.getName());
+		out.println(Utils.linebreaksToRichtext(hint));
+		out.println(Utils.linebreaksToRichtext(hint));
+		out.println(Utils.linebreaksToRichtext(uploader_comment));
+		out.println(Utils.linebreaksToRichtext(uploader_comment));
+		out.println(sqlMain.getInt("w"));
+		out.println(sqlMain.getInt("h"));
+		out.println(sqlMain.getInt("nr_players"));
+		out.println(sqlMain.getString("world_name"));
+
+		out.println("ENDOFSTREAM");
+	}
+
+	/**
 	 * Handle a CMD_DOWNLOAD command.
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
@@ -330,7 +499,26 @@ public class HandleCommand {
 		// Args: name
 		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 1);
-		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
+
+		if (checkCmd1IsMap()) {
+			ResultSet sql =
+			    Utils.sql(Utils.Databases.kWebsite,
+			              "select file,nr_downloads from wlmaps_map where slug=?", cmd[1]);
+			if (!sql.next())
+				throw new ServerUtils.WLProtocolException("Map '" + cmd[1] +
+				                                          "' is not in the database");
+
+			ServerUtils.writeOneFile(
+			    new File(Utils.config("website_maps_path"), sql.getString("file")), out);
+
+			// TODO enable download counter for maps
+			// Utils.sql(Utils.Databases.kWebsite, "update wlmaps_map set nr_downloads=? where
+			// slug=?", sql.getLong("nr_downloads") + 1, cmd[1]);
+
+			out.println("ENDOFSTREAM");
+			return;
+		}
+
 		ServerUtils.checkAddOnExists(cmd[1]);
 		ServerUtils.semaphoreRO(cmd[1], () -> {
 			ServerUtils.DirInfo dir = new ServerUtils.DirInfo(new File("addons", cmd[1]));
@@ -395,9 +583,11 @@ public class HandleCommand {
 		// Args: name vote
 		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 2);
-		if (username.isEmpty())
+		if (username.isEmpty()) {
 			throw new ServerUtils.WLProtocolException("You need to log in to vote");
-		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
+		}
+
+		// TODO enable for maps
 		ServerUtils.checkAddOnExists(cmd[1]);
 
 		final long addon = Utils.getAddOnID(cmd[1]);
@@ -425,13 +615,23 @@ public class HandleCommand {
 			out.println("NOT_LOGGED_IN");  // No exception here.
 			return;
 		}
-		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
-		ServerUtils.checkAddOnExists(cmd[1]);
 
-		ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
-		                          "select vote from uservotes where user=? and addon=?",
-		                          userDatabaseID, Utils.getAddOnID(cmd[1]));
-		out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
+		if (checkCmd1IsMap()) {
+			ResultSet sql =
+			    Utils.sql(Utils.Databases.kWebsite,
+			              "select score from star_ratings_userrating where user_id=? and "
+			                  + "rating_id=(select id from star_ratings_rating where object_id=?)",
+			              userDatabaseID, ServerUtils.getMapID(cmd[1]));
+			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
+		} else {
+			ServerUtils.checkAddOnExists(cmd[1]);
+
+			ResultSet sql = Utils.sql(Utils.Databases.kAddOns,
+			                          "select vote from uservotes where user=? and addon=?",
+			                          userDatabaseID, Utils.getAddOnID(cmd[1]));
+			out.println(sql.next() ? ("" + sql.getLong(1)) : "0");
+		}
+
 		out.println("ENDOFSTREAM");
 	}
 
@@ -447,6 +647,7 @@ public class HandleCommand {
 		if (blackWhiteList.contains("deny_comment"))
 			throw new ServerUtils.WLProtocolException(
 			    "You have been forbidden from writing comments");
+		// TODO enable for maps
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
 		int nrLines = Integer.valueOf(cmd[3]);
@@ -482,6 +683,7 @@ public class HandleCommand {
 		if (blackWhiteList.contains("deny_comment"))
 			throw new ServerUtils.WLProtocolException(
 			    "You have been forbidden from editing comments");
+		// TODO enable for maps
 		if (commandVersion < 2) {
 			cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 			ServerUtils.checkAddOnExists(cmd[1]);

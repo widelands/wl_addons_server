@@ -3,9 +3,9 @@ push_textdomain("europeans_tribe.wad", true)
 dirname = path.dirname(__file__)
 
 wl.Descriptions():new_productionsite_type {
-    name = "europeans_shipyard",
+    name = "europeans_shipyard_advanced",
     -- TRANSLATORS: This is a building name used in lists of buildings
-    descname = pgettext("europeans_building", "Shipyard"),
+    descname = pgettext("europeans_building", "Combined Ferry- and Shipyard"),
     icon = dirname .. "menu.png",
 
     animation_directory = dirname,
@@ -49,7 +49,7 @@ wl.Descriptions():new_productionsite_type {
     },
 
     working_positions = {
-        europeans_shipwright_advanced = 1
+        europeans_shipwright_advanced = 2
     },
 
     inputs = {
@@ -64,6 +64,8 @@ wl.Descriptions():new_productionsite_type {
             -- TRANSLATORS: Completed/Skipped/Did not start working because ...
             descname = _"working",
             actions = {
+                "call=ship_construction",
+                "sleep=duration:15s",
                 "call=ferry_construction",
                 "sleep=duration:15s",
                 "call=ship_construction",

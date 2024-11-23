@@ -48,6 +48,8 @@ Key                           | Description                                     
 `noticetype_transifex-issues` | Name of the notice type for Transifex string issues in the website database | `transifex-issues`
 `noticetype_comment-added`    | Name of the notice type for new comments in the website database            | `comment-added`
 `noticetype_comment-mention`  | Name of the notice type for @mentions in comments in the website database   | `comment-mention`
+`website_maps_path`           | Base path where website maps are stored                                     | `/var/wlmedia`
+`website_maps_slug`           | Slug for the content type of comments on website maps                       | `wlmaps`
 `deploy`                      | Whether this server is the real thing, not just a test environment          | `true` or `false`
 
 ### The Database

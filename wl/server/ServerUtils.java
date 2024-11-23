@@ -324,6 +324,20 @@ public class ServerUtils {
 	}
 
 	/**
+	 * Retrieve the ID of an map from the database.
+	 * @param slug The map's slug.
+	 * @return The map's ID.
+	 * @throws Exception If anything at all goes wrong or the map does not exist, throw an
+	 *     Exception.
+	 */
+	public static Long getMapID(String slug) throws Exception {
+		ResultSet r =
+		    Utils.sql(Utils.Databases.kWebsite, "select id from wlmaps_map where slug=?", slug);
+		if (!r.next()) throw new WLProtocolException("Map '" + slug + "' is not in the database");
+		return r.getLong("id");
+	}
+
+	/**
 	 * Dump a file and some of its metadata to a stream.
 	 * @param f File to send.
 	 * @param out Stream to write to.
@@ -628,6 +642,20 @@ public class ServerUtils {
 
 		_addon_min_version_cache.put(addon, actual_min_version);
 		return actual_min_version;
+	}
+
+	/**
+	 * Sanitize the minimum Widelands version requirement of a website map.
+	 * @param mapMinWlVersion The raw requirement string from the database.
+	 * @return The sanitized string (empty if the requirement is trivial).
+	 */
+	public static String sanitizeMapMinWlVersion(String mapMinWlVersion) {
+		if (mapMinWlVersion == null || !mapMinWlVersion.matches("^\\d+(\\.\\d+)+$")) {
+			// Correct min versions such as "18" or "build 19" to empty for simplicity.
+			// We know the user is using something newer than 1.2 anyway.
+			return "";
+		}
+		return mapMinWlVersion;
 	}
 
 	/**
