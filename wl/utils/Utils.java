@@ -265,7 +265,7 @@ public class Utils {
 	 * @return Text with escaped linebreaks.
 	 */
 	public static String linebreaksToRichtext(String str) {
-		return str.replaceAll("\r?\n", "<br>");
+		return str != null ? str.replaceAll("\r?\n", "<br>") : "";
 	}
 
 	/**
