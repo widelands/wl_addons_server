@@ -645,6 +645,20 @@ public class ServerUtils {
 	}
 
 	/**
+	 * Sanitize the minimum Widelands version requirement of a website map.
+	 * @param mapMinWlVersion The raw requirement string from the database.
+	 * @return The sanitized string (empty if the requirement is trivial).
+	 */
+	public static String sanitizeMapMinWlVersion(String mapMinWlVersion) {
+		if (mapMinWlVersion == null || !mapMinWlVersion.matches("^\\d+(\\.\\d+)+$")) {
+			// Correct min versions such as "18" or "build 19" to empty for simplicity.
+			// We know the user is using something newer than 1.2 anyway.
+			return "";
+		}
+		return mapMinWlVersion;
+	}
+
+	/**
 	 * Clear the cached actual minimum version for an add-on.
 	 * @param addon Internal name of the add-on.
 	 */

@@ -242,7 +242,8 @@ public class HandleCommand {
 
 				if (versionCheck) {
 					String mapRequirement = sql.getString("wl_version_after");
-					if (mapRequirement != null && !ServerUtils.matchesWidelandsVersion(
+					mapRequirement = ServerUtils.sanitizeMapMinWlVersion(mapRequirement);
+					if (!mapRequirement.isEmpty() && !ServerUtils.matchesWidelandsVersion(
 					                                  widelandsVersion, mapRequirement, null)) {
 						continue;
 					}
@@ -413,15 +414,7 @@ public class HandleCommand {
 		out.println("0");    // i18n version
 		out.println("map");  // category
 		out.println();       // requirements
-
-		// Correct min versions such as "18" or "build 19" to empty for simplicity.
-		// We know the user is using something newer than 1.2 anyway.
-		String mapMinWlVersion = sqlMain.getString("wl_version_after");
-		if (mapMinWlVersion == null || !mapMinWlVersion.matches("^\\d+(\\.\\d+)+$")) {
-			mapMinWlVersion = "";
-		}
-		out.println(mapMinWlVersion);
-
+		out.println(ServerUtils.sanitizeMapMinWlVersion(sqlMain.getString("wl_version_after")));
 		out.println();        // max version
 		out.println("true");  // sync safety - we just hope it contains no bad scripting...
 		out.println("0");     // number of screenshots
