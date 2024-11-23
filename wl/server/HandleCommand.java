@@ -244,7 +244,7 @@ public class HandleCommand {
 					String mapRequirement = sql.getString("wl_version_after");
 					mapRequirement = ServerUtils.sanitizeMapMinWlVersion(mapRequirement);
 					if (!mapRequirement.isEmpty() && !ServerUtils.matchesWidelandsVersion(
-					                                  widelandsVersion, mapRequirement, null)) {
+					                                     widelandsVersion, mapRequirement, null)) {
 						continue;
 					}
 				}
