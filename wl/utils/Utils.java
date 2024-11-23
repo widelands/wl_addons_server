@@ -260,6 +260,15 @@ public class Utils {
 	}
 
 	/**
+	 * Replace regular linebreaks in a string with Widelands richtext newline tags.
+	 * @param str Arbitrary text to process.
+	 * @return Text with escaped linebreaks.
+	 */
+	public static String linebreaksToRichtext(String str) {
+		return str.replaceAll("\r?\n", "<br>");
+	}
+
+	/**
 	 * List all files in a directory, sorted alphabetically.
 	 * @param dir Directory to list.
 	 * @return Sorted array (never null).
