@@ -403,8 +403,8 @@ public class HandleCommand {
 
 		out.println(name);
 		out.println(name);
-		out.println(descr);
-		out.println(descr);
+		out.println(Utils.linebreaksToRichtext(descr));
+		out.println(Utils.linebreaksToRichtext(descr));
 		out.println(author);
 		out.println(author);
 		out.println(Utils.getUsername(sqlMain.getLong("uploader_id")));
