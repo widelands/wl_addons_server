@@ -1,0 +1,38 @@
+# Automatically created by Widelands 1.0 (Release)
+
+[global]
+packet_version="1"
+map_w="272"
+map_h="304"
+nr_players="6"
+name=_"Tropical Mauritius"
+author="OIPUN"
+descr=_"There are rather rocky hills than mountains on this tropical island. But we still should find some ores for our economy."
+hint=_"The map is balanced for 2 or 4  players. Orange player (Grand Bay) and grey player (The City of Light) are optional. The first one has not enough resources near his base, the second one is in the middle of the map."
+tags="1v1,2teams,artifacts,balanced,ffa"
+addons="tropics.wad:2.0.2"
+
+[teams00]
+team1="0"
+team2="1"
+team3="2"
+team4="3"
+
+[teams01]
+team1="0,3"
+team2="1,2"
+
+[teams02]
+team1="0"
+team2="1"
+team3="2"
+team4="3"
+team5="4"
+
+[teams03]
+team1="2"
+team2="3"
+
+[teams04]
+team1="0"
+team2="3"

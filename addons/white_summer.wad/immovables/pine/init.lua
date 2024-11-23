@@ -1,14 +1,11 @@
-push_textdomain("white_summer.wad", true)
+push_textdomain("white_summer.wad")
 
 dirname = path.dirname(__file__)
 
-
---Pine******************************
-
 terrain_affinity_pine = {
    preferred_temperature = 75,
-   preferred_humidity = 750,
-   preferred_fertility = 600,
+   preferred_humidity = 700,
+   preferred_fertility = 400,
    pickiness = 65,
 }
 
@@ -20,7 +17,7 @@ wl.Descriptions():new_immovable_type{
    programs = {
       main = {
          "animate=idle duration:54s",
-         "remove=chance:8.64%",
+         "remove=chance:10.64%",
          "grow=pine_summer_pole",
       },
    },
@@ -45,7 +42,7 @@ wl.Descriptions():new_immovable_type{
    terrain_affinity = terrain_affinity_pine,
    programs = {
       main = {
-         "animate=idle duration:65s",
+         "animate=idle duration:71s",
          "remove=chance:6.37%",
          "grow=pine_summer_mature",
       },
@@ -72,7 +69,7 @@ wl.Descriptions():new_immovable_type{
       main = {
          "animate=idle duration:74s",
          "seed=pine_summer_sapling proximity:34%",
-         "remove=chance:4.93%",
+         "remove=chance:6.93%",
          "grow=pine_summer_old",
       },
    },
@@ -100,7 +97,7 @@ wl.Descriptions():new_immovable_type{
    programs = {
       main = {
          "animate=idle duration:31m57s",
-         "transform=deadtree4 chance:13.22%",
+         "transform=deadtree4 chance:9.22%",
          "seed=pine_summer_sapling proximity:30%",
       },
       fall = {
@@ -118,7 +115,7 @@ wl.Descriptions():new_immovable_type{
          hotspot = { 24, 67 },
          sound_effect = {
             path = "sound/animals/crickets1",
-            priority = "8%"
+            priority = "10%"
          },
       }
    },

@@ -1,0 +1,26 @@
+# Automatically created by Widelands 1.0 (Release)
+
+[global]
+packet_version="1"
+map_w="240"
+map_h="160"
+nr_players="5"
+name=_"The Great Lakes - Ports in Danger v.2"
+author="OIPUN"
+descr=_"We don't have enough space and our headquarter is in danger here. We need to build a colony on the other side of this lake. We will gain more land and a hideaway in case an enemy appears on this side. But I am afraid we will not reach The Main Landbelt without fight."
+hint=_"All players should start with a headquarters  only. There is not enough space around the starting position. Your territory is divided into two parts by a lake. You need a part of your enemy's territory to reach The Main Landbelt from where you can access to any corner of this map. You can also find 6 artifacts there. Your homeland is hard to defend. Protect it well."
+theme="summer"
+tags="1v1,2teams,artifacts,balanced,ferries,ffa,seafaring"
+addons=
+
+[teams00]
+team1="0,1"
+team2="2,3"
+
+[teams01]
+team1="0"
+team2="1"
+
+[teams02]
+team1="2"
+team2="3"

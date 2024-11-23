@@ -1,0 +1,26 @@
+# Automatically created by Widelands 1.0 (Release)
+
+[global]
+packet_version="1"
+map_w="336"
+map_h="224"
+nr_players="5"
+name=_"Sicilian Pasture v.3"
+author="OIPUN"
+descr=_"A triangular island with large plains and a volcano habitated by shepherds."
+hint=_"Long game for 2 or 5 players or 2 teams. Rich in resources, just coal deposits are medium."
+theme="desert"
+tags="1v1,2teams,artifacts,balanced,ffa"
+addons=
+
+[teams00]
+team1="2"
+team2="3"
+
+[teams01]
+team1="4"
+team2="1"
+
+[teams02]
+team1="2,4"
+team2="1,3"

@@ -344,12 +344,12 @@ function allow_productionsites_per_input(player)
         enough_input_wares = true
         if (tbuilding.type_name == "productionsite") and tbuilding.inputs then
             for k, ware in pairs(tbuilding.inputs) do
-                enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (16 + ware_economy:target_quantity(ware.name)))
+                enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (1.25 * ware_economy:target_quantity(ware.name)))
             end
         end
         if (tbuilding.type_name == "trainingsite") and tbuilding.inputs then
             for k, ware in pairs(tbuilding.inputs) do
-                enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (16 + ware_economy:target_quantity(ware.name)))
+                enough_input_wares = enough_input_wares and (player:get_wares(ware.name) >= (1.10 * ware_economy:target_quantity(ware.name)))
             end
         end
         if ((tbuilding.type_name == "productionsite") or (tbuilding.type_name == "trainingsite")) and enough_input_wares then
@@ -381,7 +381,7 @@ function allow_warehouses_per_ware_amount(player)
     if (enough_ware_amount) then
         player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
     end
-    local number_shipyard = #player:get_buildings("europeans_shipyard")
+    local number_shipyard = #player:get_buildings("europeans_shipyard_basic")
     if ((enough_ware_amount) or (number_shipyard > 0)) and ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
         player:allow_buildings{"europeans_port", "europeans_port_big"}
     end
