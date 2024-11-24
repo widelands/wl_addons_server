@@ -53,9 +53,9 @@ wl.Descriptions():new_militarysite_type {
     aihints = {},
 
     max_soldiers = 10,
-    vision_range = 20,
+    vision_range = 16,
     heal_per_second = 200,
-    conquers = 16,
+    conquers = 12,
     prefer_heroes = true,
 
     messages = {

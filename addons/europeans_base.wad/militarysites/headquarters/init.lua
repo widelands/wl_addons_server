@@ -21,23 +21,6 @@ wl.Descriptions():new_warehouse_type {
     size = "big",
     destructible = false,
     
-    buildcost = {
-        brick = 4,
-        grout = 4,
-        planks = 4,
-        marble = 4,
-        marble_column = 4,
-        quartz = 2,
-        diamond = 2
-    },
-    return_on_dismantle = {
-        scrap_wood = 4,
-        granite = 5,
-        marble = 6,
-        quartz = 2,
-        diamond = 2
-    },
-
     aihints = {
         very_weak_ai_limit = 1,
         weak_ai_limit = 1,

@@ -478,7 +478,7 @@ Bluebyte-Settlers-II-Fan-Map
 reworked by hessenfarmer
 hessenfarmer
 1673901188
-411
+412
 0
 0.0
 2
@@ -559,7 +559,7 @@ The legend says: ''When ever one goes down our mountain, he never comes back''. 
 kaputtnik
 kaputtnik
 1679920754
-181
+183
 0
 0.0
 1
@@ -636,7 +636,7 @@ Maps for the ''Fast Explorer wins'' win condition. ''Fast Explorer SP'' is for s
 kaputtnik
 kaputtnik
 1731074666
-20
+21
 0
 0.0
 0
@@ -1147,7 +1147,7 @@ The gods who created this piece of landscape must be crazy. They proove your ski
 kaputtnik
 kaputtnik
 1715265495
-132
+134
 1
 10.0
 3
@@ -1254,7 +1254,7 @@ Maps for the Naval Tournament 23
 hessenfarmer
 hessenfarmer
 1690230129
-197
+198
 0
 0.0
 0
@@ -1331,7 +1331,7 @@ Provides the scenario ''Along the River''.  This scenario was converted to be pl
 hessenfarmer, fk
 hessenfarmer
 1633431899
-303
+304
 0
 0.0
 0
@@ -1612,7 +1612,7 @@ Ohne Seefahrt kommt man nicht weit.
 Whiskey  Charlie Lima
 WeirdCatLord
 1674389456
-166
+167
 0
 0.0
 0
@@ -1763,7 +1763,7 @@ This map-addon ads the map ''World of elements
 TRueDesk
 TRueDesk
 1666686938
-702
+703
 3
 9.333333
 0
@@ -2107,7 +2107,7 @@ Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind e
 auktionadmin
 auktionadmin
 1680190966
-359
+360
 0
 0.0
 3
@@ -2265,7 +2265,7 @@ Zauberland
 the-x
 the-x
 1701270383
-102
+103
 0
 0.0
 0
@@ -2756,7 +2756,7 @@ Upgrade of smelters and stonemasons makes the barbarians and empire more competi
 OIPUN
 OIPUN
 1719251296
-210
+212
 1
 10.0
 2
@@ -3124,7 +3124,7 @@ Basic Outpost
 blind
 blind3rdeye
 1700920458
-184
+185
 2
 10.0
 0
@@ -3202,7 +3202,7 @@ No description
 Mr_Reibekuchen
 Mr_Reibekuchen
 1647247922
-277
+278
 1
 10.0
 0
@@ -3280,7 +3280,7 @@ A set of king_of_nowhere’s challenge maps, curated by Nordfriese. Contained ma
 king_of_nowhere
 Nordfriese
 1600000000
-775
+776
 3
 9.666667
 1
@@ -3650,7 +3650,7 @@ Analysis tool: Compare the resources in the vicinity of player positions with a 
 kaputtnik
 kaputtnik
 1706043656
-87
+88
 1
 10.0
 1
@@ -3763,7 +3763,7 @@ A plugin for the editor to copy the contents of a map region to another region.
 Nordfriese
 Nordfriese
 1691145323
-77
+78
 1
 10.0
 2
@@ -4383,9 +4383,9 @@ MarkMcWire
 0
 0.0
 0
-1.9.3
+1.9.4
 32
-14693107
+14696971
 tribes
 1
 europeans_base.wad
@@ -4545,7 +4545,7 @@ workers/gamekeeper
 workers/gardener_advanced
 workers/gardener_basic
 workers/hunter_basic
-1887
+1889
 addon
 immovables/barleyfield/harvested/idle_0.5.png
 immovables/barleyfield/harvested/idle_1.png
@@ -5661,6 +5661,8 @@ tribes/initialization/init.lua
 tribes/initialization/tips.lua
 tribes/initialization/units.lua
 tribes/scripting/starting_conditions/discovery_human.lua
+tribes/scripting/starting_conditions/harbors_ai.lua
+tribes/scripting/starting_conditions/harbors_human.lua
 tribes/scripting/starting_conditions/headquarters_ai.lua
 tribes/scripting/starting_conditions/headquarters_human.lua
 tribes/scripting/starting_conditions.lua
@@ -6457,8 +6459,8 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-1910
-e366d4e8e372c757245df9ed7039f354
+1912
+8c17169962dff9da249647e50efcea18
 f97b9d339c739a26de434bc39ea77b83
 b64aea6a49f53e1d219e9b8ff23aeded
 42c9d1543c071372a2e60fba80fa5536
@@ -7569,13 +7571,15 @@ d509d6f555a13b078b5874aa2daa72ce
 5712e1d0770b661d44e9fe2130fd4147
 f6c8a28dd17631108c1ac2aef4b57a1f
 f9535866c7d646605d5bf64a69a93c5c
-e45c6a6d184c308692d225d8a059bdee
+7e3a1e87a8656c7b3b7420abf0d9a7ef
 a4e819aea62aaef1cdc768fe8d7ed847
 8605f758558d162bc4ed4ceef8f7e5d9
 4bfbac91ddea202ded4dd1d83fd6979b
+932e36ab45f88a6ae69a4e3daa9a74ae
+bccc52bb66e76a05dda3db45c02f8df5
 1c670d950bb4c30484d66fa7720997a4
 2afd9a40badd53adfd0b549fd172bdb6
-5b6dcb0312294fcf75fe821543976573
+401c2358647bfb71a2d24880a09f86e2
 d2f52d707229fffa4d90d26f41554311
 969e645409e06b51ee300c53405930cd
 d52e666d655399d98cdb071076ab8235
@@ -8368,20 +8372,20 @@ a82311450e872f2d3a5a1c7e48853395
 400f87c07f440df2a5bce0eeffbe230b
 7970a6238af5ae707d80abd4e7816f9f
 664146f03ebe1bf6c2f52dde60c2a35b
-verified
+unchecked
 europeans_base.wad
 Europeans Tribe (Base Addon)
 Contains basic object definitions and graphics for the Europeans and their other addons. It uses buildings, workers and some wares from other tribes, until own graphics are available. It must be in front of the main addon in the list and must be activated for the other addons to work!
 MarkMcWire
 MarkMcWire
 1716841859
-447
+448
 1
 6.0
 0
-1.9.3
+1.9.4
 35
-21921023
+21921020
 tribes
 0
 237
@@ -11725,7 +11729,7 @@ ru.mo
 sk.mo
 sv.mo
 3100
-71f23b266cc9b0a11f7ece2126457441
+3779af10c1612c0986ee461e3a62f893
 bda0dd33b700060ed6918f89750f3ada
 9a17f31f794d8945a956176ef9767d06
 8073e446b8c6da78152359df91eb52a7
@@ -11939,7 +11943,7 @@ c42273604e0f7bdeb1d631d4851da183
 0a5bed489e5dfd18e88862794408e591
 c877d0758973f0266440666a810bc1ae
 83cefa1bee313d36ac6dc21e870fb4e6
-8bdea306d8ee877a4eea06bfad57a15a
+a903ed10e548fdecfb177b2d652bb203
 a2ab2a2ed039f4356dde3df3fcd8629b
 e020f152c85e7e8c0799c02ca5300928
 c01970e015dac9be4bc536d121022000
@@ -11951,7 +11955,7 @@ d3d2410d15ae112a3f31d76c0250525c
 8818994af4079228ef451033c2aa8787
 0431d5edb928a629d0e22b77ea291c4c
 2b4f5612c9d20a8523eb220e7e8a0b3d
-c7f676941a255eb1e2a7dbdd54c41e8d
+35e0c5f20d5adf7aa53dced2d0090e60
 fa95fbe084599c1f214bf60ccda9946c
 bece1ff7db929d75900d8182e16cc6ca
 7b1c5a21d5a80108c0e623804c61186a
@@ -11959,7 +11963,7 @@ bece1ff7db929d75900d8182e16cc6ca
 a6894bb78ff6efe18bedf627366cbced
 0f2cdecb64c691550da27c2cfd3f7da1
 c7cadf40d82daeb4635eaee025a3dadb
-13910c6d9f69850714708b5e32e98566
+550b06acdeb53a695fbebc13d82dbb74
 fe5edf6b3087b1638270f2bfead62d08
 5e021ff874eded7b8deb7355e93f5331
 7d672b6105fabbc2e717e81e40efd29b
@@ -11973,14 +11977,14 @@ dcaf68f9edb85b43707384cf51ba01d6
 f4d530c7b32dec3102da476a609be025
 e70da9928b4c42af358a33b3f1b2491d
 7d0fdedafe5080260666dfcc178f62b0
-263717fc577fa85b9fcfe13ae8e78b2b
+2c5c613a8f5f6c1985e50310b8668253
 c08bb52b401ef1e868396ba92aaa6a2a
 b0d0dfcecc53e7403f1241adf0921aa1
 4fdc28137615e814e27cb8ece946234c
 23ed37905cb25a21177de1caae2eb309
 60b9bdaea90b8b4a14cbada00d210645
 b1cac9480bcb29558bd27251f62f5731
-d88f8a0e5e0319a94d5a542706d85c20
+54c4d0e04daecfd2eba45e2d5c422f2d
 469790c3ec99697b492bb6b0634fa696
 8c8b9d7a6e5852225f305971289a6ca2
 d791c93dc1a98bdd7dbfcfe2dcc4b00d
@@ -11994,7 +11998,7 @@ c821ed046f4e4c0d88db530b0764275e
 de4f6b988920714472d38acc94d19df8
 79f4327abaf1bc06ef8e2589b4bcdf73
 5765ab13097dd11afca402dc4b6548d9
-4999f1c8ebd8d119eb0143d82eaa5605
+37722c461387f5cc9b5c2d1c40a46811
 584730a3439299ff07e01a1919f248dd
 50927ee5d9cfa547721e59881ea8a580
 b700ee0b8a5d4d7d0ad087d3b2a1f247
@@ -12021,7 +12025,7 @@ d21a9279bc8e5ff193b9b1b301307db7
 c110811cf02fdc377e4146251eb3cc7c
 2fa07288946022006d5ad3abcacdb6e0
 58113b79f098818db2fefe38ac656732
-dea8b960d21f2a9f19a9ccf6a35e2e30
+1fd4adc587c4751f1512eab6dddebd27
 57048fa6864636a12901ca49876c6c1b
 4bef98512bd5e3c3f86084278eb7e9d6
 027532d7f5341b7452d5a1b77b7c84ab
@@ -12040,7 +12044,7 @@ a69be0d9377db58a004ae1ba1ceafc72
 a3e06700838a955eef51e09377866b30
 66c4b036910d8647558b2333193d5c20
 1e7014ed06b29bb2448918c82b9ed831
-e8ee68bc166760175fb08223bba6b0c8
+4cdd61f5c3d66223286ec584d3d26ebb
 fcd8174acc56ccc89f830551d5c2ea96
 2b93edcf646ba3f5d879d4059f244f18
 e90e14f983588122be363dc9abeb13ab
@@ -12059,7 +12063,7 @@ cf5076516f3acb13a2f2042be7bca3ab
 b083c8287e87a40b33e60c265453a144
 d517907d321767b8d9f64e45b6cc83f3
 0031b9898bfc4998818e7355bc7bf552
-ef136765f3cb88c2420ab4d2f98a691e
+19dce39b6f3eb23282a44f4f17880e90
 7560fe1d3f33559fa737b9d425aad344
 f8220dc9a01e38bc72280e4d17eded55
 b0e15b650fc0888ef804d5646772681d
@@ -12089,7 +12093,7 @@ e783fc936c78133aa2f4cd35b4d36967
 805485285473dd36c358116c8ba0d67a
 bb5ee8748bef69108a6d88793bf24cb6
 c0d9ed1e69df5f966514b15cf9dcec2d
-de3ffe583a844735a29970f94725e645
+0f401f1dae795aa6fb03cb60108a3477
 86cfe92356061d7e07da190b881d10ec
 3f907e6fa2871ea28ed64f09df33f0e4
 8543387433163837c750bec44fee9db6
@@ -12103,7 +12107,7 @@ ce9bc815c0933e0b3f2c987c00cc2e9b
 650e6a8991d85a7544fa791bd66e4258
 89c604c5255a6e97dc530d036c9dc297
 2150c283b3c295722152311ea6f32dad
-b736bc01685cd6b8db0597c90c1520cf
+706021c17e35de13260c1b529c5e4014
 a17cc7fa28f9d3a3b4014b9cdce27c1b
 f76c82988317788f6ee65c3af0ed02e0
 6dbde86ba8e8612090c2c58c96ff6c18
@@ -12116,7 +12120,7 @@ d3fb93089a38219eacf9b374c7472bbb
 e5e3b7f229214b533e913ce7c12e9e1d
 68a2b6c3994ca3ca795ba9706b13bcb9
 f4a6315f2039768895c17b4fbe97e78a
-02ee06e51251eb7a43acd7953c4a7aa7
+17230fc0c2289e6e36bd6553a7a67359
 8136c5666f8928dd187304ee1d33526a
 189b9ab30a55cd81c90a69e8f29f0b83
 04199e0db73c542a5f8e2d2909e97ba8
@@ -12130,7 +12134,7 @@ c6b6f8d942918aa39a910e6441f14cb8
 1cbff7012c11669b3fa9e6b6257b2700
 639e759639127b6f10c62983b39b0fab
 0b8f0876edecf22960a1038dd85b4580
-79a5f218fa628d5c3cc1ac1aebc5f4d7
+b85bb1b3ab6581a5ff5de3c219e84000
 706b7c42cce092e406b3d9b394306697
 6fe396bbeb3550bff8587d8d04915456
 74f625b05e0674b6f0a31dfb08394dd0
@@ -12144,7 +12148,7 @@ e9a080f1b06ec776d16c092cd2e09205
 9970f24a22228980519d06303d5bda59
 4a344a252b958819d97f43c2d0332464
 07ff3a123221cd46b00070c68064cd3a
-68a8aaf3466bd2a45a3ef0f2791ca1e3
+8abfe4a441e19178798a6f1ca104f5b0
 ffe7ada96fe3d011b9fc45856b840e6f
 9e4d6407c798c45e6e232cc94f5094e6
 e6ed032fadf1236b5bbb69f83438eb5a
@@ -12157,7 +12161,7 @@ e1d5b099c5cf2b5ac3d8e51483928608
 c760c64294cd17e3b39064ab0c8a3859
 74f6976e4eadb69bd6371e4745b083c8
 47772621646d820cdc58d76620c7f723
-2d6258c915e694d66c0448a82c7c44eb
+04f84f1169f8e424541a81864d6e2b09
 21c82f434f2e833a1de9a42a1a9ae709
 57ecc82c8a05237bbff1b8498a39bb03
 9fb2b7dbde60fa8f506537dd41ad957e
@@ -14825,20 +14829,20 @@ d566fcd7aceeee016dc433a98572c240
 35a1c09509a156ed2988feb5d76ebfdb
 58d1c4b05c023c942a1e140212e0fcf5
 42d2f0fed28df95e7d74ea6fc192b258
-verified
+unchecked
 europeans_main.wad
 Europeans Tribe (Main Addon)
 Adds a new tribe named ‘Europeans’. This addon provides the minimum amount of workers, buildings and wares to have a playable economy and fast military expansion.
 MarkMcWire
 MarkMcWire
 1716842745
-422
+423
 1
 6.0
 0
-1.9.3
+1.9.4
 18
-227995
+231745
 tribes
 1
 europeans_base.wad
@@ -14848,7 +14852,7 @@ tribes/initialization
 tribes/initialization/images
 tribes/scripting
 tribes/scripting/starting_conditions
-63
+65
 addon
 tribes/initialization/images/bridge_busy_e_0.png
 tribes/initialization/images/bridge_busy_se_0.png
@@ -14909,6 +14913,8 @@ tribes/initialization/tips.lua
 tribes/initialization/units.lua
 tribes/scripting/starting_conditions/discovery_ai.lua
 tribes/scripting/starting_conditions/discovery_human.lua
+tribes/scripting/starting_conditions/harbors_ai.lua
+tribes/scripting/starting_conditions/harbors_human.lua
 tribes/scripting/starting_conditions/headquarters_ai.lua
 tribes/scripting/starting_conditions/headquarters_human.lua
 tribes/scripting/starting_conditions.lua
@@ -14936,8 +14942,8 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-86
-d1f5e31d79038b42025ea0af4f31335f
+88
+5c3484631e125affe24ec185b35653b8
 fa217da3593442222ca3c2c20a290a4f
 8f6b04e3d33d8a5b8058e42ed9083bcd
 11bc0810b164f72e37e28c8e7894fbbc
@@ -14992,14 +14998,16 @@ d509d6f555a13b078b5874aa2daa72ce
 5712e1d0770b661d44e9fe2130fd4147
 f6c8a28dd17631108c1ac2aef4b57a1f
 f9535866c7d646605d5bf64a69a93c5c
-aa8742f6cf5eb3a9fb5425ab1d70e48c
+aa2655320b0831f2d31bc2aa5e76cecd
 49887d8a8a2758f7fa58838695193c4c
 009eeadfc772e4aa1498478e53c77db7
 ae91f111999823abf9203106301276d6
 5927c21cec4d212001376e2932e430b8
+fd8daab33a0d2ae0301ba24372f7a16c
+3f2f175edbef7e9ed41a6113d57f7d43
 7bdcb811463d2f74229712850aa03930
 a83b4d090686706982f4e834186e87b3
-7d614fbd5326e42a782a609e383e8aab
+9bfdce8fbfdabc7bceac0c10e89fefa8
 53ea8457863f3c032f10f9582e9a01d7
 e50c7a145718230a877f7e676c5598c5
 8fa84b58d9d62ecd64003d61c2d6b07d
@@ -15023,7 +15031,7 @@ c8871364a5edfa909ffa6e48595cecdb
 97edf50d8ec6b3831fe6f5826276dbeb
 124c61765b4d07a8c26d2a7120516711
 64765369206750c920a2c2b0ad4aabbc
-verified
+unchecked
 europeans_map_modified.wad
 Europeans maps with straits of bosporus
 Adds a modified map version of Europa. Renaming the player positions to ancient tribes and adding more walkable connections to islands. Thx Holloweye for original map.
@@ -15104,13 +15112,13 @@ Adds some additional trading buildings, traders and coins to Europeans tribes.
 MarkMcWire
 MarkMcWire
 1715114878
-359
+360
 0
 0.0
 0
-1.9.3
+1.9.4
 33
-6621134
+6624939
 tribes
 1
 europeans_base.wad
@@ -15154,7 +15162,7 @@ workers
 workers/gardener_advanced
 workers/gardener_basic
 workers/trader
-666
+668
 addon
 productionsites/manufactory_advanced/build_0.5.png
 productionsites/manufactory_advanced/build_1.png
@@ -15520,6 +15528,8 @@ tribes/initialization/images/waterway_0.png
 tribes/initialization/init.lua
 tribes/initialization/tips.lua
 tribes/initialization/units.lua
+tribes/scripting/starting_conditions/harbors_ai.lua
+tribes/scripting/starting_conditions/harbors_human.lua
 tribes/scripting/starting_conditions/headquarters_ai.lua
 tribes/scripting/starting_conditions/headquarters_human.lua
 tribes/scripting/starting_conditions/trading_outpost.lua
@@ -15845,8 +15855,8 @@ pt_BR.mo
 ru.mo
 sk.mo
 sv.mo
-689
-2d333cc1109e3fd796eea78132dfeccd
+691
+544a535b2606ef6cf782c2a67e53cf01
 5dfab8936ed98932df5830c05bf0e953
 f178015f0ac0cd25d518d422c5cf78bc
 a7e5be141ed692d21218902502cd6ec6
@@ -16043,7 +16053,7 @@ e5650aa58149d9014f0d043bd8bcc5ee
 e64da0b16892e284a1df707c84aa4773
 ce6e51c2867e5dd2bec7b03e4a6eba25
 7c6c814fcc6c3c042ea29624020f6517
-d0dc934d76f0e87e3bab9748f637c563
+7f2174d4dafcf628e3cf2a40d49e8d97
 10ed68949df21a6c16fa945a91cad6f1
 7d1b19ba38bc065d3f3aa06aad4cba7c
 a6f0b35aab4a14d136fb3b01c1f535a5
@@ -16208,13 +16218,15 @@ d509d6f555a13b078b5874aa2daa72ce
 5712e1d0770b661d44e9fe2130fd4147
 f6c8a28dd17631108c1ac2aef4b57a1f
 f9535866c7d646605d5bf64a69a93c5c
-58837f648cace1e7a22bcc13ccdba281
+30503ae2be3c848ce5ee754dc7102fc8
 49887d8a8a2758f7fa58838695193c4c
 4d9bafb1a64b665308b76bc99a15b654
+87af97f24b8b6b42ccb2a6375646dd24
+77214b509be5238b3ab8c452121a7978
 e79f9cd14dc69f405ca42aebc990350d
 5e38c5eca2671d2c7e54cad578fd71f0
 c2bf32eaff2c3e1fcc206510fa04d686
-d0673bc75d8aab19f66c00ba43ffb71a
+defbda21b4bc09632c3476e8813cf11b
 21f37d53bc17a819730055630c6d15db
 731656fe55d635bd2c36996cf41fb50e
 d0c0d532d06cb9e30765c7d4e1b1d716
@@ -16535,7 +16547,7 @@ bdddb020a9f6c963af793df899c05495
 5e9df50d6d0d8b6a6c81516cc1832307
 076b95de6439454a0ec42846faa553da
 69f733df4b279a788ee19943923b6475
-verified
+unchecked
 explorer-wins.wad
 explorer wins
 The player who has explored most of the world wins the game
@@ -17181,7 +17193,7 @@ This map set contains all maps that were shipped with the official game at some 
 The Widelands Development Team
 Nordfriese
 1600000000
-1049
+1050
 5
 9.6
 0
@@ -18501,7 +18513,7 @@ Increases all worker experience thresholds to 40 times the default value.
 Nordfriese
 Nordfriese
 1600000000
-296
+297
 0
 0.0
 1
@@ -19860,7 +19872,7 @@ Increases the amount of fish and water a node can hold to 60.
 Nordfriese
 Nordfriese
 1600000000
-539
+540
 0
 0.0
 0
@@ -19934,12 +19946,12 @@ This set of maps contains 10 small and medium-sized maps for 2-8 players. You ca
 OIPUN
 OIPUN
 1615637480
-598
+599
 0
 0.0
 0
 1.0.2
-30
+31
 8370336
 maps
 0
@@ -20232,7 +20244,7 @@ adf6235dc93c1cd75abb6b4b9daeaafc
 8ffcb5c1dc2a1ffff70d8780017601ed
 c5ea0528d33a71b4e05e165ab066ae94
 190054f61bbadce5281b4c67b961c2ab
-66c2179d66dfa4fe8c322fa657b540c9
+4ccc6f42269c5121d5090a1f2e68f010
 1a6a871391ef957c9906979c2c54a76c
 d503b3d0d81085deabd0a54e96d3029a
 d1bad6bbcc969278cbbe2779629141d9
@@ -20862,7 +20874,7 @@ Reduce the game speed to 1× whenever a new message arrives in your inbox.
 Nordfriese
 Nordfriese
 1723377908
-51
+52
 2
 10.0
 3
@@ -20948,7 +20960,7 @@ Keep resource indicators until a mine starts to work in the area. Mines will gra
 tothxa
 tothxa
 1638011892
-252
+253
 0
 0.0
 2
@@ -21134,7 +21146,7 @@ A headquarters-like starting condition with approximately 30% more wares and wor
 the-x
 the-x
 1622124029
-358
+359
 1
 10.0
 0
@@ -21211,9 +21223,13 @@ atomikaya
 atomikaya
 1671793402
 256
-0
-0.0
-0
+1
+10.0
+1
+Teayo
+DE : Ich mag den Style . Manchmal ist weniger mehr .    EN : I like the style .    TEST Comment Fonts :  <font bold=true>Text_Bold</font>  <font italic=true>Text_Italic</font>  <font underline=true>Text_Underlined</font>  <font shadow=true>Text_Shadow</font>  <font color=ffffff>Text_Color_FFFFFF</font>  <font color=ff0000>Text_Color_FF0000</font>  <font color=00ff00>Text_Color_00FF00</font>  <font color=0000ff>Text_Color_0000FF</font>  <font color=000000>Text_Color_000000</font>  <font color=ff00ff>Text_Color_FF00FF</font>  <font color=ffff00>Text_Color_FFFF00</font>  <font color=00ffff>Text_Color_00FFFF</font>  <font size=8>Text_Size_Tiny_8</font>  <font size=11>Text_Size_Small_11</font>  <font size=14>Text_Size_Medium_14</font>  <font size=18>Text_Size_Large_18</font>  <font size=24>Text_Size_Huge_24</font>
+1.1
+1732384564
 1.1
 10
 8435220
@@ -21478,7 +21494,7 @@ Enhanced Trading Outpost starting conditions for all official tribes. Intended t
 Nordfriese & the-x
 Nordfriese
 1600000000
-303
+304
 0
 0.0
 2
@@ -21897,7 +21913,7 @@ Terrains and (alpha) trees for tropical areas. Someday in future this add-on mig
 Yo...
 Yo...
 1622321739
-426
+427
 3
 9.0
 0
@@ -22273,7 +22289,7 @@ Make the ‘water’ resource more useful by giving wells a larger radius and a 
 Nordfriese
 Nordfriese
 1600000000
-442
+443
 1
 10.0
 0
@@ -22881,7 +22897,7 @@ Contains flowering meadows, clearings, dolomites, wet beach, green and muddy wat
 OIPUN
 OIPUN
 1622916439
-596
+597
 2
 9.5
 0
@@ -23422,7 +23438,7 @@ White Summer Add-On is needed to play these maps.
 OIPUN
 OIPUN
 1623262581
-393
+394
 0
 0.0
 0

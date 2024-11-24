@@ -41,7 +41,7 @@ wl.Descriptions():new_warehouse_type {
             diamond = 1
         },
         enhancement_return_on_dismantle = {
-            scrap_wood = 3,
+            scrap_wood = 2,
             granite = 3,
             marble = 3,
             quartz = 1,

@@ -29,7 +29,23 @@ wl.Descriptions():new_warehouse_type {
     destructible = false,
     map_check = {"seafaring"},
     
-
+    buildcost = {
+        brick = 5,
+        grout = 5,
+        planks = 5,
+        marble = 5,
+        marble_column = 4,
+        quartz = 2,
+        diamond = 2
+    },
+    return_on_dismantle = {
+        scrap_wood = 5,
+        granite = 6,
+        marble = 6,
+        quartz = 2,
+        diamond = 2
+    },
+    
     aihints = {
        supports_seafaring = true,
        very_weak_ai_limit = 8,
