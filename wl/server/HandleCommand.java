@@ -402,12 +402,12 @@ public class HandleCommand {
 
 		if (!mapFile.isFile()) throw new ServerUtils.WLProtocolException("Map file does not exist");
 
-		out.println(name);
-		out.println(name);
-		out.println(Utils.linebreaksToRichtext(descr));
-		out.println(Utils.linebreaksToRichtext(descr));
-		out.println(author);
-		out.println(author);
+		out.println(Utils.richtextEscape(name));
+		out.println(Utils.richtextEscape(name));
+		out.println(Utils.richtextEscape(descr));
+		out.println(Utils.richtextEscape(descr));
+		out.println(Utils.richtextEscape(author));
+		out.println(Utils.richtextEscape(author));
 		out.println(Utils.getUsername(sqlMain.getLong("uploader_id")));
 
 		out.println();       // add-on version
@@ -475,10 +475,10 @@ public class HandleCommand {
 		}
 
 		out.println(mapFile.getName());
-		out.println(Utils.linebreaksToRichtext(hint));
-		out.println(Utils.linebreaksToRichtext(hint));
-		out.println(Utils.linebreaksToRichtext(uploader_comment));
-		out.println(Utils.linebreaksToRichtext(uploader_comment));
+		out.println(Utils.richtextEscape(hint));
+		out.println(Utils.richtextEscape(hint));
+		out.println(Utils.richtextEscape(uploader_comment));
+		out.println(Utils.richtextEscape(uploader_comment));
 		out.println(sqlMain.getInt("w"));
 		out.println(sqlMain.getInt("h"));
 		out.println(sqlMain.getInt("nr_players"));
