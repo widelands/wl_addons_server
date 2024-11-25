@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-13 03:09+0100\n"
+"POT-Creation-Date: 2024-11-24 03:09+0100\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -2976,13 +2976,30 @@ msgstr[2] ""
 msgstr[3] ""
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
-msgid "Headquarters (AI optimized)"
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/harbors_ai.lua:11
+msgid "Harbors (AI optimized)"
 msgstr ""
 
+#. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/harbors_ai.lua:13
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:13
 msgid "AI optimized starting condition, not for human player."
+msgstr ""
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/harbors_human.lua:11
+msgid "Harbors"
+msgstr ""
+
+#. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/harbors_human.lua:13
+msgid "Start the game with one port only."
+msgstr ""
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
+msgid "Headquarters (AI optimized)"
 msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition

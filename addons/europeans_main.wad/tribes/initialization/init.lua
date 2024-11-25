@@ -17,6 +17,8 @@ local init_europeans = {
     starting_conditions = {
         "addons/europeans_main.wad/tribes/scripting/starting_conditions/headquarters_ai.lua";
         "addons/europeans_main.wad/tribes/scripting/starting_conditions/headquarters_human.lua";
+        "addons/europeans_main.wad/tribes/scripting/starting_conditions/harbors_ai.lua";
+        "addons/europeans_main.wad/tribes/scripting/starting_conditions/harbors_human.lua";
         "addons/europeans_main.wad/tribes/scripting/starting_conditions/discovery_ai.lua";
         "addons/europeans_main.wad/tribes/scripting/starting_conditions/discovery_human.lua";
     }

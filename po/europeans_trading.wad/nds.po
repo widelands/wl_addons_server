@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-14 03:09+0100\n"
+"POT-Creation-Date: 2024-11-25 03:09+0100\n"
 "PO-Revision-Date: 2024-05-08 08:41+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -2980,16 +2980,33 @@ msgstr[0] "%1%(+%2%) Soldat"
 msgstr[1] "%1%(+%2%) Soldaten"
 
 #. TRANSLATORS: This is the name of a starting condition
-#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
-msgid "Headquarters (AI optimized)"
-msgstr "Raadhuus (künstelk Speler)"
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/harbors_ai.lua:11
+msgid "Harbors (AI optimized)"
+msgstr "Muden (künstelk Speler)"
 
+#. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/harbors_ai.lua:13
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:13
 msgid "AI optimized starting condition, not for human player."
 msgstr ""
 "Anfangskondiesje, wat för künstelk Spelers dacht is un nich för de minskelk "
 "Speler."
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/harbors_human.lua:11
+msgid "Harbors"
+msgstr "Muden"
+
+#. TRANSLATORS: This is the tooltip for the "Harbors" starting condition
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/harbors_human.lua:13
+msgid "Start the game with one port only."
+msgstr "Begünn dat Speel mit nix as eener Muu."
+
+#. TRANSLATORS: This is the name of a starting condition
+#: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
+msgid "Headquarters (AI optimized)"
+msgstr "Raadhuus (künstelk Speler)"
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_trading.wad/tribes/scripting/starting_conditions/headquarters_human.lua:11

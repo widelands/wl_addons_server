@@ -260,12 +260,18 @@ public class Utils {
 	}
 
 	/**
-	 * Replace regular linebreaks in a string with Widelands richtext newline tags.
+	 * Escape this text for Widelands richtext syntax.
 	 * @param str Arbitrary text to process.
-	 * @return Text with escaped linebreaks.
+	 * @return Text with all linebreaks and HTML special characters escaped.
 	 */
-	public static String linebreaksToRichtext(String str) {
-		return str != null ? str.replaceAll("\r?\n", "<br>") : "";
+	public static String richtextEscape(String str) {
+		if (str == null) return "";
+
+		str = str.replaceAll("\\&", "&amp;");  // Must be performed first
+		str = str.replaceAll("\\>", "&gt;");
+		str = str.replaceAll("\\<", "&lt;");
+		str = str.replaceAll("\r?\n", "<br>");  // Must be performed last
+		return str;
 	}
 
 	/**

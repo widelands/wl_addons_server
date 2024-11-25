@@ -232,12 +232,53 @@ function place_headquarters(player, startx, starty, radius)
     local map = game.map
     local centerfield = map:get_field(startx, starty)
     local fields = centerfield:region(radius)
-    local i = 0
 
     while not hq do
-        i = i + 1
         hq = place_building_in_region(player, "europeans_headquarters", fields)
-        fields = centerfield:region(radius + i)
+        radius = radius + 1
+        fields = centerfield:region(radius)
+    end
+end
+
+function map_distance(startx, starty, targetx, targety)
+    local game = wl.Game()
+    local map = game.map
+    local mapx = math.floor(map.width / 2)
+    local mapy = math.floor(map.height / 2)
+
+    local diffx = targetx - startx
+    local diffy = targety - starty
+
+    if math.abs(diffx) >= mapx then
+        diffx = mapx - diffx
+    end
+    if math.abs(diffy) >= mapy then
+        diffy = mapy - diffy
+    end
+
+    return math.sqrt((diffx * diffx) + (diffy * diffy))
+end
+
+function place_initial_port(player, startx, starty, radius)
+    local hq = nil
+    local port_fields = {}
+    local game = wl.Game()
+    local map = game.map
+    local port_field = map:get_field(startx, starty)
+   
+    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
+        while not hq do
+            for i, portfield in pairs(map.port_spaces) do
+                if (map_distance(portfield.x, portfield.y, startx, starty) <= radius) then
+                    port_field = map:get_field(portfield.x, portfield.y)
+                    table.insert(port_fields, port_field)
+                end
+            end
+            hq = place_building_in_region(player, "europeans_port_big", port_fields)
+            radius = radius + 1
+        end
+    else
+        place_headquarters(player, startx, starty, radius)
     end
 end
 
@@ -622,8 +663,11 @@ function doing_ai_stuff_seafaring(player, increment)
                 europeans_builder = 6,
                 europeans_worker_basic = 4,
                 europeans_lumberjack_basic = 4,
-                europeans_stonecutter_basic = 4,
-                europeans_forester_basic = 4,
+                europeans_stonecutter_basic = 2,
+                europeans_terraformer_basic = 2,
+                europeans_forester_basic = 2,
+                europeans_gardener_basic = 2,
+                europeans_farmer_basic = 2,
                 europeans_trainer_basic = 2,
             }
         })
@@ -638,6 +682,8 @@ function doing_ai_stuff_seafaring(player, increment)
     end
     if (increment >= 24) and (increment % 2 == 0) then
         dismantle_idle_buildings(player)
+    end
+    if (increment >= 48) and (increment % 4 == 0) then
         balance_player_warehouse_wares(player)
         balance_player_warehouse_workers(player)
     end
