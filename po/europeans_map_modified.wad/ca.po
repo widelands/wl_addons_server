@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-16 03:08+0200\n"
+"POT-Creation-Date: 2024-11-27 03:09+0100\n"
 "PO-Revision-Date: 2021-07-11 03:12+0000\n"
 "Last-Translator: Juanjo, 2024\n"
 "Language-Team: Catalan (https://app.transifex.com/widelands/teams/35159/"
@@ -23,8 +23,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/europeans_map_modified.wad/addon:2
-msgid "Europeans maps with straits of bosporus"
-msgstr "Mapes europeus amb els Estrets del Bòsfor"
+msgid "Two modified Europeans maps"
+msgstr ""
 
 #: addons/europeans_map_modified.wad/addon:3
 msgid ""
@@ -36,14 +36,29 @@ msgstr ""
 "posicions inicials pels de tribus antigues i millora les connexions entre "
 "illes. Gràcies a en Holloweye pel mapa original."
 
-#: standard input:8
-msgid "Europa with straits of bosporus"
-msgstr "Europa amb els Estrets del Bòsfor"
-
-#: standard input:10
-msgid ""
-"A huge europe map with passable straits of bosporus and various walkable "
-"islands."
+#: input:8 standard
+msgid "Europa 1.2 modified with additional land bridges"
 msgstr ""
-"Un mapa enorme d'Europa amb els estrets del Bòsfor transitables i diverses "
-"illes on s'hi pot arribar a peu."
+
+#: input:10 standard
+msgid ""
+"A huge Europe map. Blue = Vikings, Red = Romans, Yellow = Carthags, Green = "
+"Ottomans, Black = Slavs, Orange = Amazons, Purple = Frisians, White = Greeks"
+msgstr ""
+
+#: standard input:8
+msgid "Europa 1.2 modified with additional sea straits"
+msgstr ""
+
+#~ msgid "Europeans maps with straits of bosporus"
+#~ msgstr "Mapes europeus amb els Estrets del Bòsfor"
+
+#~ msgid "Europa with straits of bosporus"
+#~ msgstr "Europa amb els Estrets del Bòsfor"
+
+#~ msgid ""
+#~ "A huge europe map with passable straits of bosporus and various walkable "
+#~ "islands."
+#~ msgstr ""
+#~ "Un mapa enorme d'Europa amb els estrets del Bòsfor transitables i "
+#~ "diverses illes on s'hi pot arribar a peu."

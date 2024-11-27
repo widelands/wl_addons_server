@@ -11,15 +11,8 @@ function map_distance(startx, starty, targetx, targety)
     local mapx = math.floor(map.width / 2)
     local mapy = math.floor(map.height / 2)
 
-    local diffx = targetx - startx
-    local diffy = targety - starty
-
-    if math.abs(diffx) >= mapx then
-        diffx = mapx - diffx
-    end
-    if math.abs(diffy) >= mapy then
-        diffy = mapy - diffy
-    end
+    local diffx = math.abs(targetx - startx) % mapx
+    local diffy = math.abs(targety - starty) % mapy
 
     return math.sqrt((diffx * diffx) + (diffy * diffy))
 end
