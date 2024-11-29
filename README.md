@@ -60,8 +60,9 @@ The MySQL server needs to have two databases called the *website database* and t
 
 Table                        | Column Names                                              | Column Types                                       | Comment
 ---------------------------- | ----------------------------------------------------------| -------------------------------------------------- | -------
-`auth_user`                  | `id`      <br> `username`       <br> `email`              | `int` <br> `varchar` <br> `varchar`                | 
+`auth_user`                  | `id`  <br> `username` <br> `email` <br> `is_active`       | `int` <br> `varchar` <br> `varchar` <br> `tinyint` | -<br>-<br>-<br> `0` for inactive users
 `wlggz_ggzauth`              | `user_id` <br> `password`       <br> `permissions` <br>   | `int` <br> `varchar` <br> `int` <br>               | -<br>-<br> `7` means normal user,<br>`127` means admin
+`wlprofile_profile`          | `user_id` <br> `deleted`                                  | `int` <br> `tinyint`                               | 
 `wladdons_settings_addonnoticetype` | `id`      <br> `slug` <br> `send_default` <br> `author_related_default` | `int` <br> `varchar` <br> `tinyint` <br> `tinyint` | 
 `wladdons_settings_addonnoticeuser` | `user_id` <br> `notice_type_id`           <br> `shouldsend`             | `int` <br> `int`                    <br> `tinyint` | 
 
@@ -75,6 +76,7 @@ Table          | Column Names                                              | Col
 `uservotes`    | `addon` <br> `user` <br> `vote`                           | `int` <br> `int` <br> `int`                        |
 `usercomments` | `id` <br> `addon` <br> `user` <br> `timestamp` <br> `editor` <br> `edit_timestamp` <br> `version` <br> `message` | `int` <br> `int` <br> `int` <br> `bigint` <br> `int` <br> `bigint` <br> `varchar` <br> `varchar` | Unique comment ID<br>-<br>-<br>-<br> May be `NULL` <br> May be `NULL` <br>-<br>-
 `notifyadmins` | `email` <br> `level` | `varchar` <br> `int` | -<br> `0` means disabled, `1` critical only, `2` all notices
+`blackwhitelist` | `id` <br> `action` <br> `value`                         | `int` <br> `varchar` <br> `tinyint`                |
 `upload_override` | `id` <br> `name` <br> `filesize` <br> `nrfiles` <br> `nrdirs` <br> `upload_interval` | `int` <br> `varchar` <br> `bigint` <br> `bigint` <br> `bigint` <br> `bigint` | Add-ons are keyed by name. All entries may be `NULL` to use the defaults.
 
 ## Developers’ Corner
@@ -88,7 +90,7 @@ If the add-on was not up for translation on Transifex yet, additionally enable T
 ### Maintainer E-Mail Subscriptions
 
 Anyone who wants to be dropped a notification about important events such as server sync errors or add-on submissions should add themselves to the `notifyadmins` table. Use subscription level `1` to subscribe only to critical events, or any higher number to subscribe to all messages; `0` disables notifications.
-```
+```sql
 insert into notifyadmins (email, level) value ('my.address@example.com', 2);
 ```
 
