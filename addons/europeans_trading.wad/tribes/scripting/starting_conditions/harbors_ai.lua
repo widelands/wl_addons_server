@@ -23,7 +23,7 @@ local init = {
         player:allow_buildings("all")
     end
 
-    place_initial_port(player, sf.x, sf.y, 0)
+    place_initial_port(player, sf)
     set_starting_warecount(player)
     
     -- Delay of 15 min between actions

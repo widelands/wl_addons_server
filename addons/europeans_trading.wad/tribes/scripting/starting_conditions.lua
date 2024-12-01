@@ -226,59 +226,45 @@ function place_building(player, startx, starty, radius, buildingname)
     place_building_in_region(player, buildingname, fields)
 end
 
-function place_headquarters(player, startx, starty, radius)
+function place_headquarters(player, startfield)
     local hq = nil
-    local game = wl.Game()
-    local map = game.map
-    local centerfield = map:get_field(startx, starty)
-    local fields = centerfield:region(radius)
+    local radius = 0
+    local fields = startfield:region(radius)
 
     while not hq do
         hq = place_building_in_region(player, "europeans_headquarters", fields)
         radius = radius + 1
-        fields = centerfield:region(radius)
+        fields = startfield:region(radius)
     end
 end
 
-function map_distance(startx, starty, targetx, targety)
-    local game = wl.Game()
-    local map = game.map
-    local mapx = math.floor(map.width / 2)
-    local mapy = math.floor(map.height / 2)
-
-    local diffx = targetx - startx
-    local diffy = targety - starty
-
-    if math.abs(diffx) >= mapx then
-        diffx = mapx - diffx
-    end
-    if math.abs(diffy) >= mapy then
-        diffy = mapy - diffy
-    end
-
-    return math.sqrt((diffx * diffx) + (diffy * diffy))
-end
-
-function place_initial_port(player, startx, starty, radius)
+function place_initial_port(player, startfield)
     local hq = nil
+    local radius = 2
     local port_fields = {}
     local game = wl.Game()
     local map = game.map
-    local port_field = map:get_field(startx, starty)
+    local port_field = startfield
    
     if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
         while not hq do
             for i, portfield in pairs(map.port_spaces) do
-                if (map_distance(portfield.x, portfield.y, startx, starty) <= radius) then
-                    port_field = map:get_field(portfield.x, portfield.y)
-                    table.insert(port_fields, port_field)
+                for j, localfield in pairs(startfield:region(radius)) do
+                    if ((localfield.x == portfield.x) and (localfield.y == portfield.y)) then
+                        port_field = map:get_field(portfield.x, portfield.y)
+                        table.insert(port_fields, port_field)
+                    end
                 end
             end
-            hq = place_building_in_region(player, "europeans_port_big", port_fields)
-            radius = radius + 1
+            print (player.name, radius, #port_fields)
+            if #port_fields > 0 then
+                hq = place_building_in_region(player, "europeans_port_big", port_fields)
+            else
+                radius = radius + 2
+            end
         end
     else
-        place_headquarters(player, startx, starty, radius)
+        place_headquarters(player, startfield)
     end
 end
 
