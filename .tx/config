@@ -339,14 +339,6 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
-[o:widelands:p:widelands-addons:r:europeans-main-wad]
-file_filter            = po/europeans_main.wad/<lang>.po
-source_file            = po/europeans_main.wad/europeans_main.wad.pot
-type                   = PO
-minimum_perc           = 0
-replace_edited_strings = false
-keep_translations      = false
-
 [o:widelands:p:widelands-addons:r:europeans-map-modified-wad]
 file_filter            = po/europeans_map_modified.wad/<lang>.po
 source_file            = po/europeans_map_modified.wad/europeans_map_modified.wad.pot
