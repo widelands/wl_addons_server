@@ -21,117 +21,6 @@ include "scripting/infrastructure.lua"
 --                             PUBLIC FUNCTIONS
 -- =======================================================================
 
--- RST
--- .. function:: sleep_then_goto(player, sleeptime, field)
---
---    Wait for the given number of milliseconds, then center the
---    interactive player's map view on the given Field.
---
---    This function returns immediately after calling.
---
---    :arg player: The player to move the view for
---    :type player: :class:`~wl.game.Player`
---    :arg sleeptime: The number of milliseconds to wait
---    :type sleeptime: :class:`integer`
---    :arg field: The field to center the view on
---    :type field: :class:`~wl.map.Field`
---
---    :returns: :const:`nil`
-function sleep_then_goto(player, sleeptime, field)
-    run(function()
-       sleep(sleeptime)
-       if player.number == wl.Game().interactive_player then scroll_to_field(field) end
-    end)
-end
-
--- RST
--- .. function:: launch_expeditions(player, items)
---
---    Creates some expedition ships in random places with the
---    given additional items on them. If called for the interactive
---    player, centers the view on an arbitrary of these ships.
---
---    :arg player: The player to use
---    :type player: :class:`~wl.game.Player`
---    :arg items: An :class:`array` of :class:`tables` with `ware_or_worker_name = amount` pairs. As many ships will
---                be created as there are subtables, and the n-th ship created will load the
---                additional wares and workers defined in ``items[n]``. The capacity of each ship will
---                be adjusted to accommodate the build cost of the player's tribe's port building
---                plus one builder plus the number of additional items for this ship.
---
---    :returns: :const:`nil`
-
-function launch_expeditions(player, items)
-    local fields = wl.Game().map:find_ocean_fields(#items)
-
-    local buildcost = 1
-    local port = wl.Game():get_building_description(wl.Game():get_tribe_description(player.tribe_name).port)
-    for s,i in pairs(port.buildcost) do buildcost = buildcost + i end
-
-    for i,f in pairs(fields) do
-       local ship = player:place_ship(f)
-
-       local nr_i = 0
-       for s,i in pairs(items[i]) do nr_i = nr_i + i end
-       ship.capacity = buildcost + nr_i
-
-       ship:make_expedition(items[i])
-    end
-
-    sleep_then_goto(player, 1000, fields[1])
-end
-
-function start_expedition(player, items)
-    local game = wl.Game()
-    local map = game.map
-    local tribe_name = player.tribe_name
-    local port = game:get_building_description(wl.Game():get_tribe_description(tribe_name).port)
-
-    local fields = map:find_ocean_fields(#items)
-
-    local buildcost = 1
-    for s,i in pairs(port.buildcost) do
-        buildcost = buildcost + i
-    end
-
-    for i,f in pairs(fields) do
-        local ship = player:place_ship(f)
-        local nr_i = 0
-        for s,i in pairs(items[i]) do
-             nr_i = nr_i + i
-        end
-        ship.capacity = buildcost + nr_i
-        ship:make_expedition(items[i])
-    end
-end
-
-function start_expedition_from_port(player)
-    local tribe = player.tribe
-    local ports = player:get_buildings(tribe.port)
-
-    for i, port in ipairs(ports) do
-        port:start_expedition()
-    end
-end
-
-function place_ship(player, startx, starty, capacity)
-    local game = wl.Game()
-    local map = game.map
-    local centerfield = map:get_field(startx, starty)
-
-    local ship = player:place_ship(centerfield)
-    ship.capacity = capacity
-end
-
-function place_ship_random(player, capacity)
-    local game = wl.Game()
-    local map = game.map
-    local oceanfields = map:find_ocean_fields(1)
-
-    local ship = player:place_ship(oceanfields[1])
-    ship.capacity = capacity
-end
-
 function place_object(startx, starty, objectname)
     local game = wl.Game()
     local map = game.map
@@ -201,22 +90,6 @@ function place_random_rocks(startx, starty, radius, objectcount)
     end
 end
 
-function place_trade_pole(player, fields)
-    local game = wl.Game()
-    local map = game.map
-    local objectcount = 1
-
-    while #fields > 0 and objectcount > 0 do
-        local idx = math.random(#fields)
-        local f = fields[idx]
-        if not f.immovable then
-           place_object(f.x, f.y, "europeans_trade_pole")
-           objectcount = 0
-        end
-        table.remove(fields, idx)
-    end
-end
-
 function place_building(player, startx, starty, radius, buildingname)
     local game = wl.Game()
     local map = game.map
@@ -235,55 +108,6 @@ function place_headquarters(player, startfield)
         hq = place_building_in_region(player, "europeans_headquarters", fields)
         radius = radius + 1
         fields = startfield:region(radius)
-    end
-end
-
-function place_initial_port(player, startfield)
-    local hq = nil
-    local radius = 2
-    local port_fields = {}
-    local game = wl.Game()
-    local map = game.map
-    local port_field = startfield
-   
-    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
-        while not hq do
-            for i, portfield in pairs(map.port_spaces) do
-                for j, localfield in pairs(startfield:region(radius)) do
-                    if ((localfield.x == portfield.x) and (localfield.y == portfield.y)) then
-                        port_field = map:get_field(portfield.x, portfield.y)
-                        table.insert(port_fields, port_field)
-                    end
-                end
-            end
-            print (player.name, radius, #port_fields)
-            if #port_fields > 0 then
-                hq = place_building_in_region(player, "europeans_port_big", port_fields)
-            else
-                radius = radius + 2
-            end
-        end
-    else
-        place_headquarters(player, startfield)
-    end
-end
-
-function place_port(player, startx, starty, radius)
-    local game = wl.Game()
-    local map = game.map
-    local centerfield = map:get_field(startx, starty)
-    local fields = centerfield:region(radius)
-
-    local tribe = player.tribe
-    local portname = tribe.port
-    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) then
-        for i, portfield in pairs(map.port_spaces) do
-             for j, field in pairs(fields) do
-                 if (portfield.x == field.x) and (portfield.y == field.y) then
-                     place_building(player, portfield.x, portfield.y, 0, portname)
-                 end
-             end
-        end
     end
 end
 
@@ -320,7 +144,7 @@ function set_starting_warecount(player)
             end
         elseif string.find(worker.name, "worker") then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 24) / #warehouses))
+                warehouse:set_workers(worker.name, ((worker_economy:target_quantity(worker.name) + 8) / #warehouses))
             end
         elseif string.find(worker.name, "basic") then
             for j, warehouse in ipairs(warehouses) do
@@ -340,7 +164,7 @@ function set_starting_warecount(player)
     for i, ware in ipairs(tribe.wares) do
         if (ware:is_construction_material(player.tribe_name)) then
             for j, warehouse in ipairs(warehouses) do
-                warehouse:set_wares(ware.name, ((ware_economy:target_quantity(ware.name) + 32) / #warehouses))
+                warehouse:set_wares(ware.name, ((ware_economy:target_quantity(ware.name) + 16) / #warehouses))
             end
         else
             for j, warehouse in ipairs(warehouses) do
@@ -408,27 +232,17 @@ function allow_warehouses_per_ware_amount(player)
     if (enough_ware_amount) then
         player:allow_buildings{"europeans_warehouse", "europeans_headquarters"}
     end
-    local number_shipyard = #player:get_buildings("europeans_shipyard_basic")
-    if ((enough_ware_amount) or (number_shipyard > 0)) and ((map.allows_seafaring == true) and (map.number_of_port_spaces > 0)) then
-        player:allow_buildings{"europeans_port", "europeans_port_big"}
-    end
 end
 
 function allow_all_militarysites(player)
     if player.tribe.name == "europeans" then
-        player:allow_buildings{"europeans_sentry_basic", "europeans_sentry_level_1", "europeans_sentry_level_2", "europeans_sentry_level_3"}
-        player:allow_buildings{"europeans_barrier_basic", "europeans_barrier_level_1", "europeans_barrier_level_2", "europeans_barrier_level_3"}
-        player:allow_buildings{"europeans_tower_basic", "europeans_tower_level_1", "europeans_tower_level_2", "europeans_tower_level_3"}
-        player:allow_buildings{"europeans_castle_basic", "europeans_castle_level_1", "europeans_castle_level_2", "europeans_castle_level_3", "europeans_castle_level_4"}
+        player:allow_buildings{"europeans_sentry_basic", "europeans_barrier_basic", "europeans_tower_basic", "europeans_castle_basic",}
     end
 end
 
 function forbid_all_militarysites(player)
     if player.tribe.name == "europeans" then
-        player:forbid_buildings{"europeans_sentry_basic", "europeans_sentry_level_1", "europeans_sentry_level_2", "europeans_sentry_level_3"}
-        player:forbid_buildings{"europeans_barrier_basic", "europeans_barrier_level_1", "europeans_barrier_level_2", "europeans_barrier_level_3"}
-        player:forbid_buildings{"europeans_tower_basic", "europeans_tower_level_1", "europeans_tower_level_2", "europeans_tower_level_3"}
-        player:forbid_buildings{"europeans_castle_basic", "europeans_castle_level_1", "europeans_castle_level_2", "europeans_castle_level_3", "europeans_castle_level_4"}
+        player:forbid_buildings{"europeans_sentry_basic", "europeans_barrier_basic", "europeans_tower_basic", "europeans_castle_basic",}
     end
 end
 
@@ -524,18 +338,12 @@ function reset_player_warehouse_policy(player)
         for k, building in ipairs(player:get_buildings("europeans_warehouse")) do
             building:set_warehouse_policies(ware.name, "normal")
         end
-        for k, building in ipairs(player:get_buildings("europeans_port")) do
-            building:set_warehouse_policies(ware.name, "normal")
-        end
     end
     for i, worker in ipairs(tribe.workers) do
         for k, building in ipairs(player:get_buildings("europeans_headquarters")) do
             building:set_warehouse_policies(worker.name, "normal")
         end
         for k, building in ipairs(player:get_buildings("europeans_warehouse")) do
-            building:set_warehouse_policies(worker.name, "normal")
-        end
-        for k, building in ipairs(player:get_buildings("europeans_port")) do
             building:set_warehouse_policies(worker.name, "normal")
         end
     end
@@ -563,34 +371,6 @@ function set_hero_advanced_militarysites(player)
     end
 end
 
-function place_port_random_ai(player)
-    local game = wl.Game()
-    local map = game.map
-    local tribe = player.tribe
-
-    if (map.allows_seafaring == true) and (map.number_of_port_spaces > 0) and (tribe.port) then
-        local random_idx = math.random(map.number_of_port_spaces)
-        for i, portfield in pairs(map.port_spaces) do
-            local field = map:get_field(portfield.x, portfield.y)
-            if (i >= random_idx-1) and (field.owner == player) and (field.brn.owner == player) then
-                if not (field.immovable) or ((field.immovable) and not ((field.immovable.descr.type_name == "constructionsite") or (field.immovable.descr.type_name == "warehouse"))) then
-                    player:place_building(tribe.port, field, true, true)
-                    break
-                end
-            end
-        end
-    end
-end
-
-function place_ship_random_ai(player)
-    local ships = player:get_ships()
-    local ports = player:get_buildings(player.tribe.port)
-
-    if #ships < #ports then
-        place_ship_random(player, 64)
-    end
-end
-
 function start_stopped_buildings(player)
     for i, tbuilding in ipairs(player.tribe.buildings) do
         for j, building in ipairs(player:get_buildings(tbuilding.name)) do
@@ -611,7 +391,7 @@ function doing_ai_stuff(player, increment)
     if (increment == 0) then
         player:forbid_buildings("all")
         allow_all_militarysites(player)
-        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_well_basic"}
+        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_well_basic", "europeans_farm_small_basic"}
     end
     if (increment >= 2) then
         allow_productionsites_per_input(player)
@@ -624,53 +404,5 @@ function doing_ai_stuff(player, increment)
         start_stopped_buildings(player)
         upgrade_random_militarysites(player)
         set_hero_advanced_militarysites(player)
-    end
-end
-
-function doing_ai_stuff_seafaring(player, increment)
-    local map = wl.Game().map
-
-    -- Unlocking buildings
-    if (increment == 0) then
-        player:forbid_buildings("all")
-        allow_all_militarysites(player)
-        player:allow_buildings{"europeans_lumberjacks_house_basic", "europeans_quarry_basic", "europeans_well_basic"}
-    end
-    if (increment >= 4) then
-        allow_productionsites_per_input(player)
-        allow_warehouses_per_ware_amount(player)
-    end
-
-    -- Experimental actions
-    if (increment >= 16) and (increment < 288) and (increment % 4 == 0) then
-        launch_expeditions(player, {
-            {
-                europeans_soldier = 8,
-                europeans_builder = 6,
-                europeans_worker_basic = 4,
-                europeans_lumberjack_basic = 4,
-                europeans_stonecutter_basic = 2,
-                europeans_terraformer_basic = 2,
-                europeans_forester_basic = 2,
-                europeans_gardener_basic = 2,
-                europeans_farmer_basic = 2,
-                europeans_trainer_basic = 2,
-            }
-        })
-        place_port_random_ai(player)
-    elseif (increment >= 288) and (increment < 576) and (increment % 4 == 0) then
-        place_port_random_ai(player)
-    end
-    if (increment >= 24) then
-        upgrade_random_militarysites(player)
-        start_stopped_buildings(player)
-        set_hero_advanced_militarysites(player)
-    end
-    if (increment >= 24) and (increment % 2 == 0) then
-        dismantle_idle_buildings(player)
-    end
-    if (increment >= 48) and (increment % 4 == 0) then
-        balance_player_warehouse_wares(player)
-        balance_player_warehouse_workers(player)
     end
 end

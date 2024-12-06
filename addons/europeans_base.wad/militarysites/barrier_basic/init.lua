@@ -33,31 +33,18 @@ wl.Descriptions():new_militarysite_type {
     size = "medium",
     destructible = true,
     
-    enhancement = {
-        name = "europeans_barrier_level_1",
-        enhancement_cost = {
-            brick = 2,
-            grout = 2,
-            planks = 2,
-            marble_column = 2,
-            quartz = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 2,
-            granite = 2,
-            marble = 2,
-            quartz = 1
-        },
-    },
     buildcost = {
-        granite = 2,
-        log = 4,
-        quartz = 1
+        brick = 2,
+        grout = 2,
+        marble = 2,
+        marble_column = 2,
+        planks = 2,
+        cloth = 2,
     },
     return_on_dismantle = {
-        scrap_wood = 3,
-        granite = 2,
-        quartz = 1
+        scrap_wood = 2,
+        granite = 3,
+        marble = 3
     },
 
     aihints = {
@@ -66,9 +53,9 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 4,
-    vision_range = 6,
+    vision_range = 8,
     heal_per_second = 120,
-    conquers = 4,
+    conquers = 6,
     prefer_heroes = true,
 
     messages = {

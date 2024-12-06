@@ -32,14 +32,12 @@ wl.Descriptions():new_productionsite_type {
             brick = 1,
             grout = 1,
             planks = 1,
-            marble = 1,
-            buckets = 1
+            marble = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1,
             granite = 1,
-            marble = 1,
-            scrap_metal = 1
+            marble = 1
         },
     },
 

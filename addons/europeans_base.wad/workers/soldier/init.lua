@@ -95,10 +95,10 @@ all_levels_emp = {
     min_attack = 0,
     min_defense = 0,
     min_evade = 0,
-    max_health = 3,
-    max_attack = 3,
-    max_defense = 3,
-    max_evade = 3,
+    max_health = 0,
+    max_attack = 0,
+    max_defense = 0,
+    max_evade = 0,
 }
 
 wl.Descriptions():new_soldier_type {
@@ -111,36 +111,36 @@ wl.Descriptions():new_soldier_type {
     animation_directory = dirname,
     spritesheets = spritesheets,
     
-    -- buildcost = {
-        -- europeans_recruit = 1,
-        -- quartz = 1,
-        -- diamond = 1
-    -- },
+    buildcost = {
+        europeans_recruit = 1,
+        armor = 1,
+        diamond = 1
+    },
         
     -- Battle attributes - initial values and per level increase
     health = {
-        max_level = 3,
-        base = 17000,
-        increase_per_level = 1700,
+        max_level = 0,
+        base = 22000,
+        increase_per_level = 0,
         pictures = path.list_files(dirname .. "health_level?.png"),
     },
     evade = {
-        max_level = 3,
-        base = 30,
-        increase_per_level = 10,
+        max_level = 0,
+        base = 60,
+        increase_per_level = 0,
         pictures = path.list_files(dirname .. "evade_level?.png"),
     },
     defense = {
-        max_level = 3,
-        base = 6,
+        max_level = 0,
+        base = 30,
         increase_per_level = 8,
         pictures = path.list_files(dirname .. "defense_level?.png"),
     },
     attack = {
-        max_level = 3,
-        base = 1300,
-        maximum = 1600,
-        increase_per_level = 1100,
+        max_level = 0,
+        base = 4500,
+        maximum = 5000,
+        increase_per_level = 0,
         pictures = path.list_files(dirname .. "attack_level?.png"),
     },
 

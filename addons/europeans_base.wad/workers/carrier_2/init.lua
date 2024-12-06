@@ -10,8 +10,7 @@ wl.Descriptions():new_carrier_type {
     vision_range = 2,
     
     buildcost = {
-        europeans_carrier = 1,
-        buckets = 1
+        europeans_carrier = 1
     },
 
     animation_directory = dirname,    

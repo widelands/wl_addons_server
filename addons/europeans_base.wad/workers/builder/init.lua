@@ -10,10 +10,7 @@ wl.Descriptions():new_worker_type {
     vision_range = 2,
     
     buildcost = {
-        europeans_carrier = 1,
-        hammer = 1,
-        saw = 1,
-        shovel = 1
+        europeans_carrier = 1
     }, 
 
     animation_directory = dirname,

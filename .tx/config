@@ -347,14 +347,6 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
-[o:widelands:p:widelands-addons:r:europeans-trading-wad]
-file_filter            = po/europeans_trading.wad/<lang>.po
-source_file            = po/europeans_trading.wad/europeans_trading.wad.pot
-type                   = PO
-minimum_perc           = 0
-replace_edited_strings = false
-keep_translations      = false
-
 [o:widelands:p:widelands-addons:r:explorer-wins-wad]
 file_filter            = po/explorer-wins.wad/<lang>.po
 source_file            = po/explorer-wins.wad/explorer-wins.wad.pot
@@ -577,6 +569,22 @@ file_filter            = po/stronger-trading-outpost.wad/<lang>.po
 source_file            = po/stronger-trading-outpost.wad/stronger-trading-outpost.wad.pot
 source_lang            = en
 type                   = PO
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:sumatran-tribe-wad]
+file_filter            = po/sumatran_tribe.wad/<lang>.po
+source_file            = po/sumatran_tribe.wad/sumatran_tribe.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:sumatran-world-wad]
+file_filter            = po/sumatran_world.wad/<lang>.po
+source_file            = po/sumatran_world.wad/sumatran_world.wad.pot
+type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
