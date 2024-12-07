@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-06 19:39+0100\n"
+"POT-Creation-Date: 2024-12-07 03:09+0100\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -22,9 +22,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/europeans_agricultur.wad/addon:2
-#, fuzzy
 msgid "Europeans Tribe (Agricultur Addon)"
-msgstr "Europeanen stam (Landbouw Addon)"
+msgstr ""
 
 #: addons/europeans_agricultur.wad/addon:3
 msgid ""
@@ -739,17 +738,15 @@ msgstr "Kleine basisboerderij"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Terraformer’s House"
-msgstr "Geavanceerd Vissershuis"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Basic Terraformer’s House"
-msgstr "Basis Jagershut"
+msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:8
@@ -1179,10 +1176,9 @@ msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_agricultur.wad/trainingssites_food/trainingscamp_basic/init.lua:75
-#, fuzzy
 msgctxt "europeans_building"
 msgid "recruiting soldier"
-msgstr "Traint rekruten tot soldaten."
+msgstr ""
 
 #: addons/europeans_agricultur.wad/tribes/initialization/init.lua:10
 msgid "Mark McWire"
@@ -2324,10 +2320,9 @@ msgstr "Weeft stoffen en harnassen van wol en riet."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1749
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood."
-msgstr "Zaagt boomstammen tot planken."
+msgstr ""
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1756
@@ -2623,10 +2618,9 @@ msgid "Amsterdam"
 msgstr "Amsterdam"
 
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2026
-#, fuzzy
 msgctxt "warehousename"
 msgid "Andorra"
-msgstr "Andorra la Vella"
+msgstr ""
 
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2027
 msgctxt "warehousename"
@@ -2759,10 +2753,9 @@ msgid "Essen"
 msgstr "Essen"
 
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2053
-#, fuzzy
 msgctxt "warehousename"
 msgid "Frankfurt"
-msgstr "Frankfurt aan de Rijn"
+msgstr ""
 
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2054
 msgctxt "warehousename"
@@ -3326,10 +3319,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/fish/init.lua:8
-#, fuzzy
 msgctxt "ware"
 msgid "Fish"
-msgstr "Geen Vis"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/flour/init.lua:8
@@ -3357,10 +3349,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/honey_bread/init.lua:8
-#, fuzzy
 msgctxt "europeans_ware"
 msgid "Honey Bread"
-msgstr "Honingbrood bakken"
+msgstr ""
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/leather/init.lua:8
@@ -3478,599 +3469,30 @@ msgstr "Basis Jager"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/soldier/init.lua:107
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Soldier"
-msgstr "%1% soldaat"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/terraformer_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Terraformer"
-msgstr "Gevorderde Boer"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/terraformer_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
-msgstr "Basis Boer"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/worker_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Worker"
-msgstr "Gevorderde Boer"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/worker_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Worker"
-msgstr "Basis Boer"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Big Manufactory"
-#~ msgstr "Geavanceerde Grote Fabriek"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing blackwood to create tools and weapons"
-#~ msgstr "verwerking van rozenhout om gereedschappen en wapens te maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making a wooden armor"
-#~ msgstr "een houten harnas maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making a pair of wooden boots"
-#~ msgstr "een paar houten laarzen maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making a wooden helmet"
-#~ msgstr "een houten helm maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging a wooden spear"
-#~ msgstr "een houten speer maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "tailoring a suit of advanced armor"
-#~ msgstr "een geavanceerd harnas maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making advanced boots"
-#~ msgstr "geavanceerde laarzen maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing metal_alloy to create tools and weapons"
-#~ msgstr "boomstammen verwerken om gereedschappen en wapens te maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making baskets"
-#~ msgstr "manden maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making buckets"
-#~ msgstr "emmers maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making felling axes"
-#~ msgstr "kapbijlen maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making hammers"
-#~ msgstr "hamers maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making picks"
-#~ msgstr "pikhouwelen maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making saws"
-#~ msgstr "zagen maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making sycthes"
-#~ msgstr "zeis maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "making shovels"
-#~ msgstr "schoppen maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging an advanced shield"
-#~ msgstr "een geavanceerd schild smeden"
-
-#~ msgctxt "europeans_building"
-#~ msgid "forging an advanced spear"
-#~ msgstr "een geavanceerde speer smeden"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Big Manufactory"
-#~ msgstr "Basis Grote Fabriek"
-
-#~ msgctxt "europeans_building"
-#~ msgid "processing log to create tools and weapons"
-#~ msgstr "boomstammen verwerken om gereedschappen en wapens te maken"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Coal Mine"
-#~ msgstr "Basis Steenkoolmijn"
-
-#~ msgctxt "europeans_building"
-#~ msgid "mining coal"
-#~ msgstr "kolen delven"
-
-#~ msgid "No Coal"
-#~ msgstr "Geen Steenkool"
-
-#~ msgid "Main Coal Vein Exhausted"
-#~ msgstr "Hoofdkolenader Uitgeput"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This coal mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider enhancing, dismantling or "
-#~ "destroying it."
-#~ msgstr ""
-#~ "De hoofdader van deze kolenmijn is uitgeput. Verwacht een sterk "
-#~ "verminderd rendement op je investering. Je zou moeten overwegen om hem te "
-#~ "verbeteren, ontmantelen of vernietigen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Coal Mine Level 1"
-#~ msgstr "Kolenmijn Niveau 1"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Coal Mine Level 2"
-#~ msgstr "Kolenmijn Niveau 2"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Coal Mine Level 3"
-#~ msgstr "Kolenmijn Niveau 3"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Coal Mine Level 4"
-#~ msgstr "Kolenmijn Niveau 4"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Coal Mine Level 5"
-#~ msgstr "Kolenmijn Niveau 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This coal mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider dismantling or destroying it."
-#~ msgstr ""
-#~ "De hoofdader van deze kolenmijn is uitgeput. Verwacht een sterk "
-#~ "verminderd rendement op je investering. Je zou moeten overwegen om hem te "
-#~ "ontmantelen of te vernietigen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Gold Mine"
-#~ msgstr "Basis Goudmijn"
-
-#~ msgctxt "europeans_building"
-#~ msgid "mining ore"
-#~ msgstr "Erts delven"
-
-#~ msgid "No Gold"
-#~ msgstr "Geen Goud"
-
-#~ msgid "Main Gold Vein Exhausted"
-#~ msgstr "Hoofdgoudader Uitgeput"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This gold mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider enhancing, dismantling or "
-#~ "destroying it."
-#~ msgstr ""
-#~ "De hoofdader van deze goudmijn is uitgeput. Verwacht een sterk verminderd "
-#~ "rendement op je investering. Je zou moeten overwegen om hem te "
-#~ "verbeteren, ontmantelen of vernietigen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Gold Mine Level 1"
-#~ msgstr "Goudmijn Niveau 1"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Gold Mine Level 2"
-#~ msgstr "Goudmijn Niveau 2"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Gold Mine Level 3"
-#~ msgstr "Goudmijn Niveau 3"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Gold Mine Level 4"
-#~ msgstr "Goudmijn Niveau 4"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Gold Mine Level 5"
-#~ msgstr "Goudmijn Niveau 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This gold mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider dismantling or destroying it."
-#~ msgstr ""
-#~ "De hoofdader van deze goudmijn is uitgeput. Verwacht een sterk "
-#~ "verminderde opbrengst van je investering. Overweeg het te ontmantelen of "
-#~ "te vernietigen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Iron Mine"
-#~ msgstr "Basis IJzermijn"
-
-#~ msgid "No Iron"
-#~ msgstr "Geen IJzer"
-
-#~ msgid "Main Iron Vein Exhausted"
-#~ msgstr "Hoofdijzerader Uitgeput"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This iron mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider enhancing, dismantling or "
-#~ "destroying it."
-#~ msgstr ""
-#~ "De hoofdader van deze ijzermijn is uitgeput. Verwacht een sterk "
-#~ "verminderd rendement op je investering. Je zou moeten overwegen om hem te "
-#~ "verbeteren, ontmantelen of vernietigen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Iron Mine Level 1"
-#~ msgstr "IJzermijn Niveau 1"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Iron Mine Level 2"
-#~ msgstr "IJzermijn Niveau 2"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Iron Mine Level 3"
-#~ msgstr "IJzermijn Niveau 3"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Iron Mine Level 4"
-#~ msgstr "IJzermijn Niveau 4"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Iron Mine Level 5"
-#~ msgstr "IJzermijn Niveau 5"
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "This iron mine’s main vein is exhausted. Expect strongly diminished "
-#~ "returns on investment. You should consider dismantling or destroying it."
-#~ msgstr ""
-#~ "De hoofdader van deze ijzermijn is uitgeput. Verwacht een sterk "
-#~ "verminderd rendement op je investering. Overweeg hem te ontmantelen of te "
-#~ "vernietigen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "upgrading soldier attack from level 1 to level 2"
-#~ msgstr "soldaat aanval upgraden van niveau 1 naar niveau 2"
-
-#~ msgctxt "europeans_building"
-#~ msgid "upgrading soldier attack from level 2 to level 3"
-#~ msgstr "soldaat aanval upgraden van niveau 2 naar niveau 3"
-
-#~ msgctxt "europeans_building"
-#~ msgid "upgrading soldier defense from level 1 to level 2"
-#~ msgstr "soldaat verdediging upgraden van niveau 1 naar niveau 2"
-
-#~ msgctxt "europeans_building"
-#~ msgid "upgrading soldier defense from level 2 to level 3"
-#~ msgstr "soldaat verdediging upgraden van niveau 2 naar niveau 3"
-
-#~ msgctxt "europeans_building"
-#~ msgid "upgrading soldier evade from level 1 to level 2"
-#~ msgstr "soldaat ontwijking upgraden van niveau 1 naar niveau 2"
-
-#~ msgctxt "europeans_building"
-#~ msgid "upgrading soldier evade from level 2 to level 3"
-#~ msgstr "soldaat ontwijking upgraden van niveau 2 naar niveau 3"
-
-#~ msgctxt "europeans_building"
-#~ msgid "upgrading soldier health from level 1 to level 2"
-#~ msgstr "gezondheid van soldaat upgraden van niveau 1 naar niveau 2"
-
-#~ msgctxt "europeans_building"
-#~ msgid "upgrading soldier health from level 2 to level 3"
-#~ msgstr "gezondheid van soldaat upgraden van niveau 2 naar niveau 3"
-
-#~ msgctxt "default_ware"
-#~ msgid "Ore is mined in ore mines."
-#~ msgstr "Erts wordt gedolven in ertsmijnen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "It is smelted in a smelting works to retrieve all the metals."
-#~ msgstr ""
-#~ "Het wordt gesmolten in een smelterij om alle metalen eruit te halen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Discarded weapons and armor can be recycled in an advanced smelting works "
-#~ "to produce new tools, weapon and armor."
-#~ msgstr ""
-#~ "Afgedankte wapens en harnassen kunnen worden teruggewonnen in een "
-#~ "geavanceerde smelterij om nieuwe gereedschappen, wapens en harnassen te "
-#~ "maken."
-
-#~ msgctxt "ware"
-#~ msgid "Mixed metal alloy is smelted out of ores."
-#~ msgstr "Gemengde metaallegeringen worden uit ertsen gesmolten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "It is produced by the smelting works. Weapons, armor and tools are made "
-#~ "of alloy."
-#~ msgstr ""
-#~ "Het wordt geproduceerd door smelterijen. Wapens, pantsers en "
-#~ "gereedschappen worden gemaakt van legering."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Big buckets for the forester, the gardener, and the construction of wells."
-#~ msgstr ""
-#~ "Grote emmers voor de boswachter, de tuinman en de bouw van waterputten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "They are produced by all smithies."
-#~ msgstr "Ze worden geproduceerd door alle smederijen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This basket is needed by the farmer for harvesting the fruits and grapes "
-#~ "and needed by miller and by gamekeeper."
-#~ msgstr ""
-#~ "Deze mand heeft de boer nodig voor het oogsten van fruit en druiven en "
-#~ "ook de molenaar en de jachtopziener hebben hem nodig."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "It is also used by advanced carrier to transport wares. It is produced by "
-#~ "all smithies."
-#~ msgstr ""
-#~ "Het wordt ook gebruikt door gevorderde dragers om goederen te vervoeren. "
-#~ "Het wordt geproduceerd in alle smederijen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "The felling ax is the tool to chop down trees."
-#~ msgstr "De kapbijl is het gereedschap om bomen om te hakken."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Felling axes are used by lumberjacks and produced by all smithies."
-#~ msgstr ""
-#~ "Hakbijlen worden gebruikt door houthakkers en geproduceerd in alle "
-#~ "smederijen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "The scythe is the tool of the farmers."
-#~ msgstr "De zeis is het gereedschap van de boeren."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Scythes are produced by all smithies."
-#~ msgstr "Zeisen worden door alle smederijen gemaakt."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The pick is an essential tool. Picks are used by stonemasons and miners."
-#~ msgstr ""
-#~ "De pikhouweel is een essentieel gereedschap. Pikhouwelen worden gebruikt "
-#~ "door steenhouwers en mijnwerkers."
-
-#~ msgctxt "europeans_ware"
-#~ msgid "They are produced produced by all smithies."
-#~ msgstr "Ze worden geproduceerd door alle smederijen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The hammer is an essential tool. Geologists, builders, and worker all "
-#~ "need a hammer."
-#~ msgstr ""
-#~ "De hamer is een essentieel gereedschap. Geologen, bouwvakkers en "
-#~ "arbeiders hebben allemaal een hamer nodig."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Make sure you’ve always got some in reserve! They are produced by all "
-#~ "smithies."
-#~ msgstr ""
-#~ "Zorg dat je er altijd een paar achter de hand hebt! Ze worden in alle "
-#~ "smederijen gemaakt."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The saw is an essential tool. This saw is needed by the worker, the "
-#~ "builder, and the woodcutter."
-#~ msgstr ""
-#~ "De zaag is een essentieel gereedschap. Deze zaag is nodig voor de "
-#~ "arbeider, de bouwvakker en de houthakker."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The shovel is an essential tool. Therefore the builder, the forester, the "
-#~ "gardener, and the farmer use them."
-#~ msgstr ""
-#~ "De schop is een essentieel stuk gereedschap. Daarom gebruiken de "
-#~ "bouwvakker, de boswachter, de tuinman en de boer ze."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Basic armor for European soldiers. It is produced in the armor smithy. In "
-#~ "combination with wooden spear, it is the equipment to fit out young "
-#~ "soldiers."
-#~ msgstr ""
-#~ "Basis harnas voor Europese soldaten. Het wordt gemaakt in de "
-#~ "wapensmederij. In combinatie met een houten speer is het de uitrusting "
-#~ "voor jonge soldaten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Wooden boots are basic footwear for soldiers to be protect on their feet. "
-#~ "They are produced by the dressmaker."
-#~ msgstr ""
-#~ "Houten laarzen zijn basischoeisel voor soldaten om hun voeten te "
-#~ "beschermen. Ze worden gemaakt door de kleermaker."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The helmet is the basic defense tool of a soldier. It is produced in the "
-#~ "smithy. In combination with armor, it is the equipment to fit out young "
-#~ "soldiers."
-#~ msgstr ""
-#~ "De helm is het basisverdedigingsmiddel van een soldaat. Hij wordt gemaakt "
-#~ "in de smederij. In combinatie met een harnas is het de uitrusting voor "
-#~ "jonge soldaten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This wooden spear is the basic weapon in the European military system. It "
-#~ "is produced in the smithy. In combination with armor, it is the equipment "
-#~ "to fit out young soldiers."
-#~ msgstr ""
-#~ "Deze houten speer is het basiswapen in het Europese militaire systeem. "
-#~ "Hij wordt gemaakt in de smederij. In combinatie met een harnas is het de "
-#~ "uitrusting voor jonge soldaten."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "The advanced armor is produced in the a manufactory and used in the "
-#~ "training center to protect soldiers with additional health points."
-#~ msgstr ""
-#~ "Het geavanceerde pantser wordt geproduceerd in een fabriek en gebruikt in "
-#~ "het trainingscentrum om soldaten met extra gezondheidspunten te "
-#~ "beschermen."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "Hero boots! The only suitable footwear for a real hero. They are produced "
-#~ "by the dressmaker and used to train soldiers’ evade."
-#~ msgstr ""
-#~ "Heldenlaarzen! Het enige geschikte schoeisel voor een echte held. Ze "
-#~ "worden gemaakt door de kleermaker en gebruikt om soldaten te trainen in "
-#~ "ontwijken."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "These advanced shields are used by the best soldiers of the Europeans. "
-#~ "They are produced in the advanced manufactory and used in the training "
-#~ "center to train soldiers in defense."
-#~ msgstr ""
-#~ "Deze geavanceerde schilden worden gebruikt door de beste soldaten van de "
-#~ "Europeanen. Ze worden geproduceerd in de geavanceerde fabriek en gebruikt "
-#~ "in het trainingscentrum om soldaten te trainen in verdediging."
-
-#~ msgctxt "europeans_ware"
-#~ msgid ""
-#~ "This is a advanced spear with a steel tip. It is produced in the advanced "
-#~ "manufactory and used in a training center to train soldiers in attack."
-#~ msgstr ""
-#~ "Dit is een geavanceerde speer met een stalen punt. Hij wordt geproduceerd "
-#~ "in de geavanceerde fabriek en gebruikt in een trainingscentrum om "
-#~ "soldaten te trainen in aanvallen."
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Trains the soldiers."
-#~ msgstr "Traint de soldaten."
-
-#~ msgctxt "europeans_worker"
-#~ msgid ""
-#~ "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion."
-#~ msgstr ""
-#~ "Verkenners zoals Scotty de verkenner verkennen onontdekte gebieden op een "
-#~ "padvindersmanier."
-
-#~ msgid "Coal veins contain coal that can be dug up by coal mines."
-#~ msgstr ""
-#~ "Steenkooladers bevatten steenkool die kan worden opgegraven in "
-#~ "steenkoolmijnen."
-
-#~ msgid "There is only a little bit of coal here."
-#~ msgstr "Er is hier maar een klein beetje steenkool."
-
-#~ msgid "Iron veins contain iron ore that can be dug up by iron mines."
-#~ msgstr ""
-#~ "IJzeraders bevatten ijzererts dat kan worden opgegraven in ijzermijnen."
-
-#~ msgid "There is only a little bit of iron here."
-#~ msgstr "Er is hier maar een klein beetje ijzer."
-
-#~ msgid "Gold veins contain gold ore that can be dug up by gold mines."
-#~ msgstr ""
-#~ "Goudaders bevatten gouderts dat kan worden opgegraven in goudmijnen."
-
-#~ msgid "There is only a little bit of gold here."
-#~ msgstr "Er is hier maar een klein beetje goud."
-
-#~ msgid "There is a lot of coal here."
-#~ msgstr "Er is hier veel steenkool."
-
-#~ msgid "There is a lot of iron here."
-#~ msgstr "Er is hier veel ijzer."
-
-#~ msgid "There is a lot of gold here."
-#~ msgstr "Er is hier veel goud."
-
-#~ msgctxt "building"
-#~ msgid "Explores unknown territory."
-#~ msgstr "Verkent onbekend terrein."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smelts ore into iron."
-#~ msgstr "Smelt erts tot ijzer."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Smelts ore into iron and gold. Recycles scrap metal."
-#~ msgstr "Smelt erts tot ijzer en goud. Recycleert schroot."
-
-#~ msgctxt "europeans_building"
-#~ msgid ""
-#~ "Large factory that produces complex wares such as tools, weapons, armor, "
-#~ "clothing, shoes or building materials from simple raw materials."
-#~ msgstr ""
-#~ "Grote fabriek die complexe waren produceert zoals gereedschap, wapens, "
-#~ "wapenuitrusting, kleding, schoenen of bouwmaterialen uit eenvoudige "
-#~ "grondstoffen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Digs coal out of the ground in mountain terrain."
-#~ msgstr "Graaft steenkool uit de grond in bergachtig terrein."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Digs iron ore out of the ground in mountain terrain."
-#~ msgstr "Graaft ijzererts uit de grond in bergachtig terrein."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Digs gold ore out of the ground in mountain terrain."
-#~ msgstr "Graaft gouderts uit de grond in bergachtig terrein."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Builds ferries."
-#~ msgstr "Bouwt veerboten."
-
-#~ msgctxt "warehousename"
-#~ msgid "Nabereschnyje Tschelny"
-#~ msgstr "Nabereschnyje Tschelny"
-
-#~ msgctxt "warehousename"
-#~ msgid "Nischni Nowgorod"
-#~ msgstr "Nischni Nowgorod"
-
-#~ msgctxt "warehousename"
-#~ msgid "Rostow-na-Donu"
-#~ msgstr "Rostow-na-Donu"
-
-#~ msgid "Discovery (Human Player)"
-#~ msgstr "Ontdekking ( Menselijke Speler)"
-
-#~ msgid ""
-#~ "Start the game with three ships on the ocean and only a handful of "
-#~ "supplies."
-#~ msgstr ""
-#~ "Start het spel met drie schepen op de oceaan en slechts een handvol "
-#~ "voorraden."
+msgstr ""

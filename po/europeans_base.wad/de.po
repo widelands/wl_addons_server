@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-06 19:39+0100\n"
+"POT-Creation-Date: 2024-12-07 03:09+0100\n"
 "PO-Revision-Date: 2024-05-28 08:03+0000\n"
 "Last-Translator: Matze Niemand, 2024\n"
 "Language-Team: German (https://app.transifex.com/widelands/teams/35159/de/)\n"
@@ -26,18 +26,12 @@ msgid "Europeans Tribe (Base Addon)"
 msgstr "Europäer (Basis-Erweiterung)"
 
 #: addons/europeans_base.wad/addon:3
-#, fuzzy
 msgid ""
 "Contains basic object definitions and graphics for the Europeans and their "
 "other addons. It provides the bare minimum of definitions needed to load the "
 "tribe into the game. It uses buildings, workers and some wares from other "
 "tribes, until own graphics are available."
 msgstr ""
-"Enthält einfache Beschreibungen und Grafiken für die Europäer und deren "
-"andere Erweiterungen. Vorübergehend benutzt es Gebäude Arbeiter und manche "
-"Waren von anderen Stämmen, bis eigene Grafiken verfügbar sind. In der "
-"Erweiterungsverwaltung muss es aktiviert sein und vor der Haupterweiterung "
-"Europäer stehen, um zu funktionieren!"
 
 #: addons/europeans_base.wad/immovables/cottonfield/medium/init.lua:9
 msgid "Cotton Field (medium)"
@@ -442,10 +436,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/farm_small_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Small Farm"
-msgstr "Verbesserter Speer"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #: addons/europeans_base.wad/productionsites/farm_small_advanced/init.lua:60
@@ -845,10 +838,9 @@ msgstr ""
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_base.wad/productionsites/weaving_mill_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_building"
 msgid "Advanced Weaving Mill"
-msgstr "Ausbildermeister"
+msgstr ""
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving cloth because ...
 #: addons/europeans_base.wad/productionsites/weaving_mill_advanced/init.lua:67
@@ -3092,12 +3084,11 @@ msgstr[1] ""
 
 #. TRANSLATORS: Number of europeans soldiers stationed at a militarysite.
 #: addons/europeans_base.wad/tribes/initialization/units.lua:1345
-#, fuzzy
 msgctxt "europeans_soldier"
 msgid "%1% soldier"
 msgid_plural "%1% soldiers"
-msgstr[0] "Soldat"
-msgstr[1] "Soldat"
+msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: %1% is the number of europeans soldiers the plural refers to. %2% are currently open soldier slots in the building. %3% is the maximum number of soldier slots in the building
 #: addons/europeans_base.wad/tribes/initialization/units.lua:1347
@@ -3157,15 +3148,13 @@ msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_base.wad/tribes/scripting/starting_conditions/headquarters_ai.lua:11
-#, fuzzy
 msgid "Headquarters (AI optimized)"
-msgstr "Hauptquartier"
+msgstr ""
 
 #. TRANSLATORS: This is the name of a starting condition
 #: addons/europeans_base.wad/tribes/scripting/starting_conditions/headquarters_human.lua:11
-#, fuzzy
 msgid "Headquarters"
-msgstr "Hauptquartier"
+msgstr ""
 
 #. TRANSLATORS: This is the tooltip for the "Headquarters" starting condition
 #: addons/europeans_base.wad/tribes/scripting/starting_conditions/headquarters_human.lua:13
@@ -3336,17 +3325,15 @@ msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_base.wad/workers/gardener_advanced/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Advanced Gardener"
-msgstr "Ausbildermeister"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_base.wad/workers/gardener_basic/init.lua:8
-#, fuzzy
 msgctxt "europeans_worker"
 msgid "Basic Gardener"
-msgstr "Ausbilderlehrling"
+msgstr ""
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_base.wad/workers/geologist/init.lua:8
@@ -3425,272 +3412,3 @@ msgstr "Meister"
 msgctxt "europeans_worker"
 msgid "Basic Worker"
 msgstr "Lehrling"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Guardhall"
-#~ msgstr "Wächterhalle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your soldiers have occupied your outpost."
-#~ msgstr "Deine Soldaten haben deinen Außenposten besetzt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your outpost discovered an aggressor."
-#~ msgstr "Bei deinem Außenposten wurden Angreifer entdeckt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your outpost is under attack."
-#~ msgstr "Dein Außenposten wird angegriffen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "The enemy defeated your soldiers at the outpost."
-#~ msgstr "Der Feind hat deine Soldaten am Außenposten besiegt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your soldiers defeated the enemy at the outpost."
-#~ msgstr "Deine Soldaten haben den Feind vor dem Außenposten besiegt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Outpost"
-#~ msgstr "Außenposten"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Barrier"
-#~ msgstr "Verbesserte Barriere"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your soldiers have occupied your advanced barrier."
-#~ msgstr "Deine Soldaten haben deine verbesserte Barriere besetzt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your advanced barrier discovered an aggressor."
-#~ msgstr "Bei deiner verbesserten Barriere wurden Angreifer entdeckt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your advanced barrier is under attack."
-#~ msgstr "Deine verbesserte Barriere wird angegriffen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "The enemy defeated your soldiers at the advanced barrier."
-#~ msgstr "Der Feind hat deine Soldaten an der verbesserten Barriere besiegt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your soldiers defeated the enemy at the advanced barrier."
-#~ msgstr ""
-#~ "Deine Soldaten haben den Feind vor der verbesserten Barriere besiegt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Citadel"
-#~ msgstr "Zitadelle"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Castle"
-#~ msgstr "Burg"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Fortress"
-#~ msgstr "Verbesserte Festung"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your soldiers have occupied your fortress."
-#~ msgstr "Deine Soldaten haben deine Festung besetzt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your fortress discovered an aggressor."
-#~ msgstr "Bei deiner Festung wurden Angreifer entdeckt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your fortress is under attack."
-#~ msgstr "Deine Festung wird angegriffen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "The enemy defeated your soldiers at the fortress."
-#~ msgstr "Der Feind hat deine Soldaten an der Festung besiegt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your soldiers defeated the enemy at the fortress."
-#~ msgstr "Deine Soldaten haben den Feind vor der Festung besiegt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Castle"
-#~ msgstr "Verbesserte Burg"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your soldiers have occupied your advanced castle."
-#~ msgstr "Deine Soldaten haben deine verbesserte Burg besetzt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your advanced castle discovered an aggressor."
-#~ msgstr "Bei deiner verbesserten Burg wurden Angreifer entdeckt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your advanced castle is under attack."
-#~ msgstr "Deine verbesserte Burg wird angegriffen."
-
-#~ msgctxt "europeans_building"
-#~ msgid "The enemy defeated your soldiers at the advanced castle."
-#~ msgstr "Der Feind hat deine Soldaten an der verbesserten Burg besiegt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Your soldiers defeated the enemy at the advanced castle."
-#~ msgstr "Deine Soldaten haben den Feind vor der verbesserten Burg besiegt."
-
-#~ msgctxt "europeans_building"
-#~ msgid "Advanced Scout’s House"
-#~ msgstr "Verbessertes Kundschafterhaus"
-
-#~ msgctxt "europeans_building"
-#~ msgid "Basic Scouts House"
-#~ msgstr "Einfaches Kundschafterhaus"
-
-#~ msgctxt "ware"
-#~ msgid "Beer"
-#~ msgstr "Bier"
-
-#~ msgctxt "ware"
-#~ msgid "Strong Beer"
-#~ msgstr "Starkbier"
-
-#~ msgctxt "ware"
-#~ msgid "Bread"
-#~ msgstr "Brot"
-
-#~ msgctxt "ware"
-#~ msgid "Buckets"
-#~ msgstr "Eimer"
-
-#~ msgctxt "ware"
-#~ msgid "Copper Coin"
-#~ msgstr "Kupfermünze"
-
-#~ msgctxt "ware"
-#~ msgid "Gold Coin"
-#~ msgstr "Goldmünze"
-
-#~ msgctxt "ware"
-#~ msgid "Silver Coin"
-#~ msgstr "Silbermünze"
-
-#~ msgctxt "ware"
-#~ msgid "Wood Coin"
-#~ msgstr "Holzmünze"
-
-#~ msgctxt "ware"
-#~ msgid "Corn"
-#~ msgstr "Mais"
-
-#~ msgctxt "ware"
-#~ msgid "Felling Ax"
-#~ msgstr "Holzfälleraxt"
-
-#~ msgctxt "ware"
-#~ msgid "Fish"
-#~ msgstr "Fisch"
-
-#~ msgctxt "ware"
-#~ msgid "Flour"
-#~ msgstr "Mehl"
-
-#~ msgctxt "ware"
-#~ msgid "Gold"
-#~ msgstr "Gold"
-
-#~ msgctxt "ware"
-#~ msgid "Hammer"
-#~ msgstr "Hammer"
-
-#~ msgctxt "ware"
-#~ msgid "Mask"
-#~ msgstr "Maske"
-
-#~ msgctxt "ware"
-#~ msgid "Wooden Helmet"
-#~ msgstr "Hölzerner Helm"
-
-#~ msgctxt "ware"
-#~ msgid "Honey"
-#~ msgstr "Honig"
-
-#~ msgctxt "europeans_ware"
-#~ msgid "Honey Bread"
-#~ msgstr "Honigbrot"
-
-#~ msgctxt "ware"
-#~ msgid "Leather"
-#~ msgstr "Leder"
-
-#~ msgctxt "ware"
-#~ msgid "Mead"
-#~ msgstr "Met"
-
-#~ msgctxt "ware"
-#~ msgid "Meat"
-#~ msgstr "Fleisch"
-
-#~ msgctxt "ware"
-#~ msgid "Ore"
-#~ msgstr "Erz"
-
-#~ msgctxt "ware"
-#~ msgid "Pick"
-#~ msgstr "Spitzhacke"
-
-#~ msgctxt "ware"
-#~ msgid "Rye"
-#~ msgstr "Roggen"
-
-#~ msgctxt "ware"
-#~ msgid "Saw"
-#~ msgstr "Säge"
-
-#~ msgctxt "ware"
-#~ msgid "Scrap Metal"
-#~ msgstr "Altmetall"
-
-#~ msgctxt "ware"
-#~ msgid "Scythe"
-#~ msgstr "Sense"
-
-#~ msgctxt "ware"
-#~ msgid "Advanced Shield"
-#~ msgstr "Verbesserter Schild"
-
-#~ msgctxt "ware"
-#~ msgid "Steel Shield"
-#~ msgstr "Stahlschild"
-
-#~ msgctxt "ware"
-#~ msgid "Shovel"
-#~ msgstr "Schaufel"
-
-#~ msgctxt "ware"
-#~ msgid "Spear"
-#~ msgstr "Speer"
-
-#~ msgctxt "ware"
-#~ msgid "Wooden Spear"
-#~ msgstr "Holzspeer"
-
-#~ msgctxt "ware"
-#~ msgid "Broadsword"
-#~ msgstr "Breitschwert"
-
-#~ msgctxt "ware"
-#~ msgid "Wheat"
-#~ msgstr "Weizen"
-
-#~ msgctxt "ware"
-#~ msgid "Wine"
-#~ msgstr "Wein"
-
-#~ msgctxt "ware"
-#~ msgid "Wool"
-#~ msgstr "Wolle"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Advanced Scout"
-#~ msgstr "Kundschaftermeister"
-
-#~ msgctxt "europeans_worker"
-#~ msgid "Basic Scout"
-#~ msgstr "Kundschafterlehrling"
