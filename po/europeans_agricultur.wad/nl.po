@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-07 03:09+0100\n"
+"POT-Creation-Date: 2024-12-08 03:11+0100\n"
 "PO-Revision-Date: 2024-06-05 15:54+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: addons/europeans_agricultur.wad/addon:2
 msgid "Europeans Tribe (Agricultur Addon)"
-msgstr ""
+msgstr "Europeanen stam (Landbouw Addon)"
 
 #: addons/europeans_agricultur.wad/addon:3
 msgid ""
@@ -740,13 +740,13 @@ msgstr "Kleine basisboerderij"
 #: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_advanced/init.lua:8
 msgctxt "europeans_building"
 msgid "Advanced Terraformer’s House"
-msgstr ""
+msgstr "Geavanceerd Terreinvormershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/productionsites_agricultur/terraformers_house_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Terraformer’s House"
-msgstr ""
+msgstr "Basis Terreinvormershuis"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/europeans_agricultur.wad/productionsites_collectors/fishers_house_advanced/init.lua:8
@@ -1172,13 +1172,13 @@ msgstr "gezondheid van soldaat upgraden van niveau 0 naar niveau 1"
 #: addons/europeans_agricultur.wad/trainingssites_food/trainingscamp_basic/init.lua:8
 msgctxt "europeans_building"
 msgid "Basic Trainingscamp"
-msgstr ""
+msgstr "Basis Trainingskamp"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
 #: addons/europeans_agricultur.wad/trainingssites_food/trainingscamp_basic/init.lua:75
 msgctxt "europeans_building"
 msgid "recruiting soldier"
-msgstr ""
+msgstr "soldaat aanwerven"
 
 #: addons/europeans_agricultur.wad/tribes/initialization/init.lua:10
 msgid "Mark McWire"
@@ -2322,13 +2322,15 @@ msgstr "Weeft stoffen en harnassen van wol en riet."
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1749
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood."
-msgstr ""
+msgstr "Het harden van boomstammen om blackwood te produceren."
 
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1756
 msgctxt "europeans_building"
 msgid "Hardening log to produce blackwood and saws log to produce planks."
 msgstr ""
+"Verhard stamhout om blackwood te produceren en zaagt stamhout om planken te "
+"produceren."
 
 #. TRANSLATORS: Purpose helptext for a Europeans production site: Charcoal Kiln
 #. TRANSLATORS: Purpose helptext for an Europeans production site: Charcoal Kiln
@@ -2535,7 +2537,7 @@ msgstr "Water in de buurt nodig."
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:1954
 msgctxt "europeans_building"
 msgid "Constructs ships and additional ferries."
-msgstr ""
+msgstr "Bouwt schepen en extra veerboten."
 
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
 #. TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
@@ -2620,7 +2622,7 @@ msgstr "Amsterdam"
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2026
 msgctxt "warehousename"
 msgid "Andorra"
-msgstr ""
+msgstr "Andorra"
 
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2027
 msgctxt "warehousename"
@@ -2755,7 +2757,7 @@ msgstr "Essen"
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2053
 msgctxt "warehousename"
 msgid "Frankfurt"
-msgstr ""
+msgstr "Frankfurt"
 
 #: addons/europeans_agricultur.wad/tribes/initialization/units.lua:2054
 msgctxt "warehousename"
@@ -3279,121 +3281,121 @@ msgstr "Start het spel met alleen je hoofdkwartier."
 #: addons/europeans_agricultur.wad/wares/barley/init.lua:8
 msgctxt "ware"
 msgid "Barley"
-msgstr ""
+msgstr "Gerst"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/beer/init.lua:8
 msgctxt "ware"
 msgid "Beer"
-msgstr ""
+msgstr "Bier"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/beer_strong/init.lua:8
 msgctxt "ware"
 msgid "Strong Beer"
-msgstr ""
+msgstr "Zwaar Bier"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/biscuit/init.lua:8
 msgctxt "empire_ware"
 msgid "Biscuit"
-msgstr ""
+msgstr "Koekje"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/blackroot/init.lua:8
 msgctxt "ware"
 msgid "Blackroot"
-msgstr ""
+msgstr "Blackroot"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/bread/init.lua:8
 msgctxt "ware"
 msgid "Bread"
-msgstr ""
+msgstr "Brood"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/corn/init.lua:8
 msgctxt "ware"
 msgid "Corn"
-msgstr ""
+msgstr "Maïs"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/fish/init.lua:8
 msgctxt "ware"
 msgid "Fish"
-msgstr ""
+msgstr "Vis"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/flour/init.lua:8
 msgctxt "ware"
 msgid "Flour"
-msgstr ""
+msgstr "Meel"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/fruit/init.lua:8
 msgctxt "ware"
 msgid "Fruit"
-msgstr ""
+msgstr "Vruchten"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/grape/init.lua:8
 msgctxt "ware"
 msgid "Grape"
-msgstr ""
+msgstr "Druif"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/honey/init.lua:8
 msgctxt "ware"
 msgid "Honey"
-msgstr ""
+msgstr "Honing"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/honey_bread/init.lua:8
 msgctxt "europeans_ware"
 msgid "Honey Bread"
-msgstr ""
+msgstr "Honingbrood"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/leather/init.lua:8
 msgctxt "ware"
 msgid "Leather"
-msgstr ""
+msgstr "Leder"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/mead/init.lua:8
 msgctxt "ware"
 msgid "Mead"
-msgstr ""
+msgstr "Mede"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/meat/init.lua:8
 msgctxt "ware"
 msgid "Meat"
-msgstr ""
+msgstr "Vlees"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/rye/init.lua:8
 msgctxt "ware"
 msgid "Rye"
-msgstr ""
+msgstr "Rogge"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/wheat/init.lua:8
 msgctxt "ware"
 msgid "Wheat"
-msgstr ""
+msgstr "Tarwe"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/wine/init.lua:8
 msgctxt "ware"
 msgid "Wine"
-msgstr ""
+msgstr "Wijn"
 
 #. TRANSLATORS: This is a ware name used in lists of wares
 #: addons/europeans_agricultur.wad/wares/wool/init.lua:8
 msgctxt "ware"
 msgid "Wool"
-msgstr ""
+msgstr "Wol"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/carrier_donkey/init.lua:8
@@ -3471,28 +3473,28 @@ msgstr "Basis Jager"
 #: addons/europeans_agricultur.wad/workers/soldier/init.lua:107
 msgctxt "europeans_worker"
 msgid "Soldier"
-msgstr ""
+msgstr "Soldaat"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/terraformer_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Terraformer"
-msgstr ""
+msgstr "Gevorderde Terreinvormer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/terraformer_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Terraformer"
-msgstr ""
+msgstr "Basis Terreinvormer"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/worker_advanced/init.lua:8
 msgctxt "europeans_worker"
 msgid "Advanced Worker"
-msgstr ""
+msgstr "Gevorderde Werker"
 
 #. TRANSLATORS: This is a worker name used in lists of workers
 #: addons/europeans_agricultur.wad/workers/worker_basic/init.lua:8
 msgctxt "europeans_worker"
 msgid "Basic Worker"
-msgstr ""
+msgstr "Basis Werker"
