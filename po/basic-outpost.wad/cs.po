@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 03:07+0100\n"
+"POT-Creation-Date: 2024-12-09 03:11+0100\n"
 "PO-Revision-Date: 2023-11-25 14:32+0000\n"
+"Last-Translator: Ondřej Itřech, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +29,7 @@ msgstr ""
 #: addons/basic-outpost.wad/empire.lua:11
 #: addons/basic-outpost.wad/frisians.lua:11
 msgid "Basic Outpost"
-msgstr ""
+msgstr "Základní osada"
 
 #. TRANSLATORS: This is the tooltip for the "Basics" starting condition
 #: addons/basic-outpost.wad/amazons.lua:13
@@ -38,3 +42,6 @@ msgid ""
 "enough to create a few tools to help establish a full economy. Warning: the "
 "AI can’t successfully start from this."
 msgstr ""
+"Začni hru s hlavní budovou a omezeným výběrem surovin, které ti budou stačit "
+"tak akorát na výrobu pár nástrojů pro rozběh plně funkčního  hospodářství. "
+"Upozoznění: UI za těchto podmínek nedokáže úspěšně zahájit hru."
