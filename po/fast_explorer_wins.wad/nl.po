@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-10 03:09+0100\n"
+"POT-Creation-Date: 2024-12-10 03:09+0100\n"
 "PO-Revision-Date: 2024-11-08 18:33+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -21,12 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addons/fast_explorer_wins.wad/addon:2
-#: addons/fast_explorer_wins.wad/init.lua:17
-msgid "Fast Explorer Wins"
-msgstr "Fast Explorer Wint"
-
-#: addons/fast_explorer_wins.wad/addon:3
+#: addons/fast_explorer_wins.wad/addon:6
 msgid ""
 "The first player who has at least 4 fully trained soldiers in a warship wins "
 "the game. This win condition is meant to be used with the map 'Fast "
@@ -38,6 +33,11 @@ msgstr ""
 "'Fast Explorer', maar kan ook worden gebruikt voor elke zeevarende kaart. "
 "Diplomatie wordt uitgeschakeld en marineprijzen worden ingeschakeld met deze "
 "add-on."
+
+#: addons/fast_explorer_wins.wad/addon:9
+#: addons/fast_explorer_wins.wad/init.lua:17
+msgid "Fast Explorer Wins"
+msgstr "Fast Explorer Wint"
 
 #: addons/fast_explorer_wins.wad/init.lua:19
 msgid ""

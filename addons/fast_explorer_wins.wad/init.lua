@@ -159,7 +159,7 @@ local r = {
 
          local function _format_time(ms)
             if ms == "" then return no_time end
-            local hh = (ms // (60 * 60 * 1000)) % 24
+            local hh = (ms // (60 * 60 * 1000))
             local mm = (ms // (60 * 1000)) % 60
             local ss = (ms // 1000) % 60
    
