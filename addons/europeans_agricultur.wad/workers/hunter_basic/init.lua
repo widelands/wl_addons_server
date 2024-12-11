@@ -14,9 +14,7 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_gamekeeper",
     
     buildcost = {
-        europeans_carrier = 1,
-        spear_wooden = 1,
-        basket = 1
+        europeans_carrier = 1
     },
 
     programs = {

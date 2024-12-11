@@ -32,32 +32,18 @@ wl.Descriptions():new_militarysite_type {
     size = "big",
     destructible = true,
     
-    enhancement = {
-        name = "europeans_castle_level_1",
-        enhancement_cost = {
-            brick = 3,
-            grout = 3,
-            planks = 3,
-            marble_column = 3,
-            quartz = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 3,
-            granite = 3,
-            marble = 3,
-            quartz = 1
-        },
-    },
-
     buildcost = {
-        granite = 4,
-        log = 6,
-        quartz = 1
+        brick = 4,
+        grout = 4,
+        marble = 4,
+        marble_column = 4,
+        planks = 4,
+        cloth = 4,
     },
     return_on_dismantle = {
         scrap_wood = 4,
-        granite = 3,
-        quartz = 1
+        granite = 4,
+        marble = 6
     },
 
     aihints = {
@@ -65,9 +51,9 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 8,
-    vision_range = 12,
+    vision_range = 14,
     heal_per_second = 200,
-    conquers = 8,
+    conquers = 10,
     prefer_heroes = true,
 
     messages = {

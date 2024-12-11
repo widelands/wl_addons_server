@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Ondřej Itřech, 2024
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-29 03:13+0200\n"
+"POT-Creation-Date: 2024-12-09 03:11+0100\n"
 "PO-Revision-Date: 2024-06-24 19:10+0000\n"
+"Last-Translator: Ondřej Itřech, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/widelands/teams/35159/cs/)\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +24,7 @@ msgstr ""
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:2
 msgid "Barbarians-Empire Upgrade"
-msgstr ""
+msgstr "Barbaři-císařství vylepšení"
 
 #: addons/barbarians_empire_economy_upgrade.wad/addon:3
 msgid ""
@@ -28,28 +32,31 @@ msgid ""
 "competitive. With this upgrade, you need one lump of coal to produce 2 "
 "pieces of metal. Build costs of some militarary sites modified too."
 msgstr ""
+"Vylepšení slévačů a kameníků zvyšuje bojeschopnost barbarů a císařství. S "
+"tímto vylepšením je potřeba pouze jedna hrouda uhlí na výrobu 2 kusů kovu. "
+"Také jsou upraveny stavební náklady některých vojenských budov."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:8
 msgctxt "barbarians_building"
 msgid "Independent Fishing Hut"
-msgstr ""
+msgstr "Chata svobodného rybáře"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:49
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:49
 msgid "fishing"
-msgstr ""
+msgstr "rybaření"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:59
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:59
 msgid "No Fishes"
-msgstr ""
+msgstr "Žádné ryby"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:60
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:60
 msgid "Out of Fishes"
-msgstr ""
+msgstr "Došly ryby"
 
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_independent_fishing_hut/init.lua:61
 msgctxt "barbarian_building"
@@ -57,12 +64,13 @@ msgid ""
 "The fisher working at this fisher’s hut can’t find any fishes in his work "
 "area."
 msgstr ""
+"Rybář pracující v této rybářské chatě nemůže ve svém okolí najít žádné ryby."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:8
 msgctxt "barbarians_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Vylepšená slévárna"
 
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:70
@@ -70,70 +78,71 @@ msgstr ""
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:89
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:56
 msgid "working"
-msgstr ""
+msgstr "slévání"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:82
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:130
 msgctxt "barbarians_building"
 msgid "smelting iron"
-msgstr ""
+msgstr "slévání železa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:99
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_smelting_works_advanced/init.lua:116
 msgctxt "barbarians_building"
 msgid "smelting gold"
-msgstr ""
+msgstr "slévání zlata"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:8
 msgctxt "barbarians_building_small"
 msgid "Small Weaving Mill"
-msgstr ""
+msgstr "Malá tkalcovna"
 
 #. TRANSLATORS: Completed/Skipped/Did not start weaving because ...
 #. TRANSLATORS: Completed/Skipped/Did not start working because ...
 #: addons/barbarians_empire_economy_upgrade.wad/barbarians_weaving_mill_small/init.lua:50
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:109
 msgid "weaving"
-msgstr ""
+msgstr "tkaní"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:8
 msgctxt "empire_building"
 msgid "Small Farm"
-msgstr ""
+msgstr "Malý statek"
 
 #. TRANSLATORS: Completed/Skipped/Did not start planting because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:51
 msgid "planting"
-msgstr ""
+msgstr "setí"
 
 #. TRANSLATORS: Completed/Skipped/Did not start harvesting because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:59
 msgid "harvesting"
-msgstr ""
+msgstr "sklízení"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:68
 msgid "No Fields"
-msgstr ""
+msgstr "Žádná pole"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:69
 msgid "Out of Fields"
-msgstr ""
+msgstr "Došla pole"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_farm_small/init.lua:70
 msgctxt "empire_building"
 msgid ""
 "The farmer working at this small farm has no cleared soil to plant his seeds."
 msgstr ""
+"Sedlák pracující na tomto malém statku nemá žádnou volnou půdu na osev."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:8
 msgctxt "empire_building"
 msgid "Independent Fishing Hut"
-msgstr ""
+msgstr "Chata svobodného rybáře"
 
 #: addons/barbarians_empire_economy_upgrade.wad/empire_independent_fishing_hut/init.lua:61
 msgctxt "empire_building"
@@ -141,54 +150,55 @@ msgid ""
 "The fisher working at this fisher’s hut can’t find any fishes in his work "
 "area."
 msgstr ""
+"Rybář pracující v této rybářské chatě nemůže ve svém okolí najít žádné ryby."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_mill_small/init.lua:8
 msgctxt "empire_building"
 msgid "Small Mill"
-msgstr ""
+msgstr "Malý mlýn"
 
 #. TRANSLATORS: Completed/Skipped/Did not start grinding barley because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_mill_small/init.lua:47
 msgid "grinding wheat"
-msgstr ""
+msgstr "mletí pšenice"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:8
 msgctxt "empire_building"
 msgid "Advanced Smelting Works"
-msgstr ""
+msgstr "Vylepšená slévárna"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting iron because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:101
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:149
 msgctxt "empire_building"
 msgid "smelting iron"
-msgstr ""
+msgstr "slévání železa"
 
 #. TRANSLATORS: Completed/Skipped/Did not start smelting gold because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:118
 #: addons/barbarians_empire_economy_upgrade.wad/empire_smelting_works_advanced/init.lua:135
 msgctxt "empire_building"
 msgid "smelting gold"
-msgstr ""
+msgstr "slévání zlata"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:8
 msgctxt "empire_building"
 msgid "Advanced Stonemason’s House"
-msgstr ""
+msgstr "Vylepšený domek kameníka"
 
 #. TRANSLATORS: Completed/Skipped/Did not start sculpting a marble column because ...
 #: addons/barbarians_empire_economy_upgrade.wad/empire_stonemasons_house_advanced/init.lua:65
 msgctxt "empire_building"
 msgid "sculpting marble columns"
-msgstr ""
+msgstr "tesání mramorových sloupů"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:23
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:27
 msgid "Fishes on the coast near the fisher’s house."
-msgstr ""
+msgstr "Rybaří na pobřeží poblíž rybářského domku."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:24
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:28
@@ -197,10 +207,13 @@ msgid ""
 "ordinary fisher can't reach. He has a larger working area so you can get "
 "more fishes in total. It is useful only on open waters."
 msgstr ""
+"Svobodný rybář pracuje pomalu, ale je schopný lovit až tam, kde se běžný "
+"rybář nedostane. Má větší pracovní oblast, takže můžeš celkově získat více "
+"ryb. Vyplatí se pouze na otevřených vodách."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:34
 msgid "Carves marble columns out of marble."
-msgstr ""
+msgstr "Tesá mramorové sloupy z mramoru."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:35
 msgid ""
@@ -208,25 +221,32 @@ msgid ""
 "To produce one bulk of 3 columns the building need 4 pieces of marble in "
 "stock."
 msgstr ""
+"Vylepšený domek kameníka potřebuje na výrobu jednoho mramorového sloupu méně "
+"mramoru. K výrobě jedné dávky 3 sloupů budova spotřebuje 4 kvádry mramoru ze "
+"svého skladu."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:38
 msgid "Sows and harvests wheat."
-msgstr ""
+msgstr "Seje a sklízí pšenici."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:39
 msgid ""
 "Production of two small farms is approximately equal to production of one "
 "normal farm."
 msgstr ""
+"Produkce dvou malých statků je přibližně stejná jako produkce jednoho "
+"běžného."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:42
 msgid "Grinds wheat to produce flour."
-msgstr ""
+msgstr "Mele pšenici na mouku."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:43
 msgctxt "empire_building"
 msgid "The miller needs %1% on average to grind wheat into a sack of flour."
 msgstr ""
+"Mlynář potřebuje v průměru %1% na to, aby semlel pšenici na jeden pytel "
+"mouky."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:87
 msgctxt "barbarians_building"
@@ -234,6 +254,8 @@ msgid ""
 "‘Fine cloth and jewelry mean nothing to a true Barbarian.<br>But a noble "
 "sail in the wind will please his eyes.’"
 msgstr ""
+"‘Jemné látky a šperky nemají pro opravdového barbara žádnou cenu.<br>Ale "
+"ladná plachta ve větru je potěchou pro jeho oko.’"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:89
 msgctxt "barbarians_building"
@@ -241,24 +263,27 @@ msgid ""
 "Khantarakh, ‘The Modern Barbarian Economy’,<br>9ᵗʰ cowhide ‘Seafaring and "
 "Conquest’"
 msgstr ""
+"Khantarakh, ‘Moderní hospodářství Barbarů’,<br>9ᵗʰ pergamen ‘Mořeplavba a "
+"dobývání’"
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:90
 msgid "Weaves cloth out of reed."
-msgstr ""
+msgstr "Tká látku z rákosu."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:91
 msgid "This building operates as an ordinary weaving mill only 25% slower."
-msgstr ""
+msgstr "Budova pracuje jako běžná tkalcovna pouze o 25% pomaleji."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:92
 msgctxt "empire_building"
 msgid "The weaver needs %1% on average to weave reed into a piece of cloth."
 msgstr ""
+"Tkadlec potřebuje v průměru %1% sekund na utkání jednoho kusu látky z rákosu."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:124
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:128
 msgid "Smelts iron ore into iron and gold ore into gold."
-msgstr ""
+msgstr "Taví a slévá železnou rudu na železo a zlatou rudu na zlato."
 
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:125
 #: addons/barbarians_empire_economy_upgrade.wad/postload.lua:129
@@ -268,3 +293,7 @@ msgid ""
 "smelting works. When there are not 2 pieces of required ore in stock, the "
 "building operates as a basic smelting works."
 msgstr ""
+"Vylepšená slévárna potřebuje pouze jeden kus uhlí k výrobě 2 prutů železa, "
+"nebo dvou cihliček zlata. Vyrábí železo a zlato rychleji než běžná slévárna. "
+"Pokud nejsou skladem 2 kusy požadované rudy, budova funguje jako běžná "
+"slévárna."

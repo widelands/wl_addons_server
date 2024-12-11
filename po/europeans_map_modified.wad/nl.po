@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-01 03:08+0200\n"
+"POT-Creation-Date: 2024-12-08 03:11+0100\n"
 "PO-Revision-Date: 2021-07-11 03:12+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/europeans_map_modified.wad/addon:2
-msgid "Europeans maps with straits of bosporus"
-msgstr "Europeanen kaarten met zeestraten van bosporus"
+msgid "Two modified Europeans maps"
+msgstr "Twee aangepaste kaarten van Europeanen"
 
 #: addons/europeans_map_modified.wad/addon:3
 msgid ""
@@ -35,14 +35,19 @@ msgstr ""
 "hernoemd naar oude stammen en er zijn meer begaanbare verbindingen naar "
 "eilanden toegevoegd. Met dank aan Holloweye voor de originele kaart."
 
-#: standard input:8
-msgid "Europa with straits of bosporus"
-msgstr "Europa met zeestraten van bosporus"
+#: input:8 standard
+msgid "Europa 1.2 modified with additional land bridges"
+msgstr "Europa 1.2 aangepast met extra landbruggen"
 
-#: standard input:10
+#: input:10 standard
 msgid ""
-"A huge europe map with passable straits of bosporus and various walkable "
-"islands."
+"A huge Europe map. Blue = Vikings, Red = Romans, Yellow = Carthags, Green = "
+"Ottomans, Black = Slavs, Orange = Amazons, Purple = Frisians, White = Greeks"
 msgstr ""
-"Een enorme kaart van Europa met begaanbare zeestraten van bosporus en "
-"verschillende begaanbare eilanden."
+"Een enorme kaart van Europa. Blauw = Vikingen, Rood = Romeinen, Geel = "
+"Carthagen, Groen = Ottomanen, Zwart = Slaven, Oranje = Amazones, Paars = "
+"Friezen, Wit = Grieken"
+
+#: standard input:8
+msgid "Europa 1.2 modified with additional sea straits"
+msgstr "Europa 1.2 aangepast met extra zeestraten"

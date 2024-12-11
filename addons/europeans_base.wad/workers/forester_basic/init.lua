@@ -13,9 +13,7 @@ wl.Descriptions():new_worker_type {
     becomes = "europeans_forester_advanced",
     
     buildcost = {
-        europeans_carrier = 1,
-        shovel = 1,
-        buckets = 1
+        europeans_carrier = 1
     },
     
     programs = {

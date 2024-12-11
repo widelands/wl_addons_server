@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-05 03:08+0200\n"
+"POT-Creation-Date: 2024-11-28 03:09+0100\n"
 "PO-Revision-Date: 2021-07-11 03:12+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -23,8 +23,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: addons/europeans_map_modified.wad/addon:2
-msgid "Europeans maps with straits of bosporus"
-msgstr "Europa-Kaart mit de Bosporus-Straat"
+msgid "Two modified Europeans maps"
+msgstr "Twee bewarkt Europa-Kaarten"
 
 #: addons/europeans_map_modified.wad/addon:3
 msgid ""
@@ -36,14 +36,19 @@ msgstr ""
 "ollen Völkern benöömt un ’t gifft mehr Landverbinnens to Insels. Dank an "
 "Holloweye för de Grundlaag-Kaart."
 
-#: standard input:8
-msgid "Europa with straits of bosporus"
-msgstr "Europa mit de Bosporus-Straat"
+#: input:8 standard
+msgid "Europa 1.2 modified with additional land bridges"
+msgstr "Europa 1.2 mit mehr Landbrücken"
 
-#: standard input:10
+#: input:10 standard
 msgid ""
-"A huge europe map with passable straits of bosporus and various walkable "
-"islands."
+"A huge Europe map. Blue = Vikings, Red = Romans, Yellow = Carthags, Green = "
+"Ottomans, Black = Slavs, Orange = Amazons, Purple = Frisians, White = Greeks"
 msgstr ""
-"Eene bannig grote Europa-Kaart, waar man dör de Bosporus-Straat seilen kann "
-"un man to eenigen Insels lopen kann."
+"Eene bannig grote Europa-Kaart. Blau = Wikingers, Rood = Römers, Geel = "
+"Kartago, Gröön = Ottomanen, Swart = Slaven, Geelrood = Amazonen, Lila = "
+"Fresen, Witt = Greken"
+
+#: standard input:8
+msgid "Europa 1.2 modified with additional sea straits"
+msgstr "Europa 1.2 mit mehr Seestraten"

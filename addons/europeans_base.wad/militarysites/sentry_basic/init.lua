@@ -33,31 +33,16 @@ wl.Descriptions():new_militarysite_type {
     size = "small",
     destructible = true,
     
-    enhancement = {
-        name = "europeans_sentry_level_1",
-        enhancement_cost = {
-            brick = 1,
-            grout = 1,
-            planks = 1,
-            marble_column = 1,
-            quartz = 1
-        },
-        enhancement_return_on_dismantle = {
-            scrap_wood = 1,
-            granite = 1,
-            marble = 1,
-            quartz = 1
-        },
-    },
     buildcost = {
-        granite = 1,
+        granite = 2,
+        marble = 1,
         log = 2,
-        quartz = 1
+        reed = 1
     },
     return_on_dismantle = {
         scrap_wood = 1,
         granite = 1,
-        quartz = 1
+        marble = 1
     },
     
     aihints = {
@@ -66,9 +51,9 @@ wl.Descriptions():new_militarysite_type {
     },
 
     max_soldiers = 2,
-    vision_range = 6,
+    vision_range = 8,
     heal_per_second = 60,
-    conquers = 4,
+    conquers = 6,
     prefer_heroes = false,
 
     messages = {

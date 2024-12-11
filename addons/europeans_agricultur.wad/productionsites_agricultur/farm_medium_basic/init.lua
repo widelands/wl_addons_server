@@ -129,6 +129,15 @@ wl.Descriptions():new_productionsite_type {
                 "produce=reed"
             }
         },
+        dummy_program = {
+            -- TRANSLATORS: Completed/Skipped/Did not start dummy program because ...
+            descname = _"dummy program",
+            actions = {
+                "sleep=duration:10s",
+                "produce=grape",
+                "produce=fruit"
+            }
+        }
     },
     out_of_resource_notification = {
         -- Translators: Short for "Out of ..." for a resource

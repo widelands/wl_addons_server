@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-22 03:09+0200\n"
+"POT-Creation-Date: 2024-11-28 03:09+0100\n"
 "PO-Revision-Date: 2021-07-11 03:12+0000\n"
 "Last-Translator: Yuriy Sokolov <lention@mail.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/widelands/teams/35159/"
@@ -25,8 +25,8 @@ msgstr ""
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: addons/europeans_map_modified.wad/addon:2
-msgid "Europeans maps with straits of bosporus"
-msgstr "Карты Европейцев с проливом Босфор"
+msgid "Two modified Europeans maps"
+msgstr ""
 
 #: addons/europeans_map_modified.wad/addon:3
 msgid ""
@@ -38,14 +38,16 @@ msgstr ""
 "соответствии с древними племенами и добавлено больше бродов между островами. "
 "Спасибо Holloweye за исходную карту."
 
-#: standard input:8
-msgid "Europa with straits of bosporus"
-msgstr "Европа с проливом Босфор"
-
-#: standard input:10
-msgid ""
-"A huge europe map with passable straits of bosporus and various walkable "
-"islands."
+#: input:8 standard
+msgid "Europa 1.2 modified with additional land bridges"
 msgstr ""
-"Огромная карта Европы с судоходным проливом Босфор и множеством доступных "
-"островов."
+
+#: input:10 standard
+msgid ""
+"A huge Europe map. Blue = Vikings, Red = Romans, Yellow = Carthags, Green = "
+"Ottomans, Black = Slavs, Orange = Amazons, Purple = Frisians, White = Greeks"
+msgstr ""
+
+#: standard input:8
+msgid "Europa 1.2 modified with additional sea straits"
+msgstr ""

@@ -1,10 +1,12 @@
+# Automatically created by the Widelands Add-Ons Server.
+
 [global]
-name=_"Fast Explorer Wins"
-description=_"The first player who has at least 4 fully trained soldiers in a warship wins the game. This win condition is meant to be used with the map 'Fast Explorer', but can be used also with every seafaring map. Diplomacy will be disabled and naval ware fare will be enabled with this add-on."
 author="kaputtnik"
-version="1.0.0"
 category="win_condition"
-requires=
-min_wl_version="1.2"
+description=_"The first player who has at least 4 fully trained soldiers in a warship wins the game. This win condition is meant to be used with the map 'Fast Explorer', but can be used also with every seafaring map. Diplomacy will be disabled and naval ware fare will be enabled with this add-on."
 max_wl_version=
+min_wl_version="1.2"
+name=_"Fast Explorer Wins"
+requires=
 sync_safe="true"
+version="1.0.1"

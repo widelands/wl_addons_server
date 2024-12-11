@@ -35,12 +35,11 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             granite = 2,
             planks = 2,
-            buckets = 1
+            cloth = 2
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1,
-            granite = 1,
-            scrap_metal = 1
+            granite = 1
         },
     },
 

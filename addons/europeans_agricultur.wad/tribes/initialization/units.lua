@@ -41,12 +41,10 @@ wl.Descriptions():new_tribe {
         { ware = "mead", points = 2 },
         { ware = "beer_strong", points = 3 },
         { ware = "wine", points = 4 },
-        { ware = "cloth", points = 1 },
-        { ware = "armor", points = 2 },
-        { ware = "armor_advanced", points = 3 },
-        { ware = "boots_advanced", points = 3 },
-        { ware = "shield_advanced", points = 4 },
-        { ware = "spear_advanced", points = 4 },
+        { ware = "rubber", points = 1 },
+        { ware = "cloth", points = 2 },
+        { ware = "leather", points = 3 },
+        { ware = "armor", points = 4 },
     },
 
     -- Image file paths for this tribe's road and waterway textures
@@ -69,16 +67,16 @@ wl.Descriptions():new_tribe {
             [0] = "europeans_resi_none",
         },
         resource_coal = {
-            [10] = "europeans_resi_coal_1",
-            [20] = "europeans_resi_coal_2",
+            [10] = "europeans_resi_none",
+            [20] = "europeans_resi_none",
         },
         resource_iron = {
-            [10] = "europeans_resi_iron_1",
-            [20] = "europeans_resi_iron_2",
+            [10] = "europeans_resi_none",
+            [20] = "europeans_resi_none",
         },
         resource_gold = {
-            [10] = "europeans_resi_gold_1",
-            [20] = "europeans_resi_gold_2",
+            [10] = "europeans_resi_none",
+            [20] = "europeans_resi_none",
         },
         resource_stones = {
             [10] = "europeans_resi_stones_1",
@@ -94,8 +92,8 @@ wl.Descriptions():new_tribe {
     -- Each subtable is a column in the wares windows.
     wares_order = {
         {
-            -- Building Materials 1 (Basic)
-            {
+            -- Building Materials 1 (Wood)
+          {
                 name = "water",
                 default_target_quantity = 64,
                 preciousness = 4,
@@ -105,19 +103,6 @@ wl.Descriptions():new_tribe {
                         pgettext("ware", "Water is the essence of life!"),
                         -- TRANSLATORS: Helptext for an Europeans ware: Water, part 2
                         pgettext("europeans_ware", "Water is used by the gardener, by the forester, by all farms, and in the bakery and the brewery. The fish farm and the sheep farm need to be supplied with water, too.")
-                    }
-                }
-            },
-            {
-                name = "granite",
-                default_target_quantity = 32,
-                preciousness = 2,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
-                        pgettext("europeans_ware", "Granite is a basic building material."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
-                        pgettext("europeans_ware", "The Europeans produces granite blocks in quarries.")
                     }
                 }
             },
@@ -135,6 +120,46 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "blackwood",
+                default_target_quantity = 16,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for a Europeans ware: Blackwood
+                    purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener (basic sawmill).")
+                }
+            },
+            {
+                name = "planks",
+                default_target_quantity = 16,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
+                        pgettext("europeans_ware", "Planks are an important building material."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
+                        pgettext("europeans_ware", "They are produced out of logs by the sawmill."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
+                        pgettext("europeans_ware", "They are also used by the ferryyard and shipyard.")
+                    }
+                }
+            },
+            {
+                name = "scrap_wood",
+                default_target_quantity = 1,
+                preciousness = 1,
+                helptexts = {
+                    purpose = {
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
+                        pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
+                        pgettext("europeans_ware", "It can be processed into charcoal in charcoal kilns."),
+                    }
+                }
+            },
+        },
+        {
+            -- Building Materials 2 (Agricultur)
+            {
                 name = "reed",
                 default_target_quantity = 32,
                 preciousness = 2,
@@ -145,6 +170,15 @@ wl.Descriptions():new_tribe {
                         -- TRANSLATORS: Helptext for an Europeans ware: Reed, part 2
                         pgettext("europeans_ware", "It is produced by the reed yard."),
                     }
+                }
+            },
+            {
+                name = "cloth",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
+                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
                 }
             },
             {
@@ -170,8 +204,17 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
+                name = "armor",
+                default_target_quantity = 16,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
+                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
+                }
+            },
+            {
                 name = "rubber",
-                default_target_quantity = 32,
+                default_target_quantity = 16,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
@@ -183,31 +226,27 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "scrap_wood",
-                default_target_quantity = 1,
+                name = "leather",
+                default_target_quantity = 16,
                 preciousness = 1,
                 helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 1
-                        pgettext("europeans_ware", "Scrap wood is a waste material that arises from the demolition of buildings or from sawmills."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scrap wood, part 2
-                        pgettext("europeans_ware", "It can be processed into charcoal in charcoal kilns."),
-                    }
+                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
+                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
                 }
             },
         },
         {
-            -- Building Materials 2 (Normal)
+            -- Building Materials 3 (Stone and Clay)
             {
-                name = "coal",
+                name = "granite",
                 default_target_quantity = 32,
-                preciousness = 1,
+                preciousness = 2,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
-                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
-                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
+                        -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 1
+                        pgettext("europeans_ware", "Granite is a basic building material."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Granite, part 2
+                        pgettext("europeans_ware", "The Europeans produces granite blocks in quarries.")
                     }
                 }
             },
@@ -224,63 +263,6 @@ wl.Descriptions():new_tribe {
                     }
                 }
             },
-            {
-                name = "blackwood",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Blackwood
-                    purpose = pgettext("europeans_ware", "This fire-hardened wood is as hard as iron and it is used for several buildings. It is produced out of logs in the wood hardener (basic sawmill).")
-                }
-            },
-            {
-                name = "cloth",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Cloth
-                    purpose = pgettext("europeans_ware", "Cloth is needed to build several buildings. It is produced out of reed.")
-                }
-            },
-            {
-                name = "armor",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Armor
-                    purpose = pgettext("europeans_ware", "Raw material for some sorts of armor. It is produced in the weaving mill out of wool or reed.")
-                }
-            },
-            {
-                name = "leather",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wool
-                    purpose = pgettext("europeans_ware", "The animal farm produces leather, which is used as a raw material for making boots.")
-                }
-            },
-            {
-                name = "quartz",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
-                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
-                }
-            },
-            {
-                name = "diamond",
-                default_target_quantity = 32,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
-                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
-                }
-            },
-        },
-        {
-            -- Building Materials 3 (Advanced)
             {
                 name = "clay",
                 default_target_quantity = 8,
@@ -308,20 +290,21 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "planks",
-                default_target_quantity = 16,
+                name = "coal",
+                default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
                     purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 1
-                        pgettext("europeans_ware", "Planks are an important building material."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 2
-                        pgettext("europeans_ware", "They are produced out of logs by the sawmill."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Planks, part 3
-                        pgettext("europeans_ware", "They are also used by the ferryyard and shipyard.")
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 1
+                        pgettext("ware", "Coal is mined in coal mines or produced out of logs by a charcoal kiln."),
+                        -- TRANSLATORS: Helptext for an Europeans ware: Coal, part 2
+                        pgettext("europeans_ware", "The fires of the Europeans smelting works and smithies are usually fed with coal.")
                     }
                 }
             },
+        },
+        {
+            -- Building Materials 4 (Mining)
             {
                 name = "marble",
                 default_target_quantity = 16,
@@ -341,40 +324,23 @@ wl.Descriptions():new_tribe {
                 }
             },
             {
-                name = "ore",
+                name = "quartz",
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 1
-                        pgettext("default_ware", "Ore is mined in ore mines."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron Ore, part 2
-                        pgettext("europeans_ware", "It is smelted in a smelting works to retrieve all the metals.")
-                    }
+                    -- TRANSLATORS: Helptext for an Europeans ware: Quartz
+                    purpose = pgettext("europeans_ware", "These transparent quartz gems are used to build some exclusive buildings. They are mined as a byproduct in a deep iron mine or by advanced quarry.")
                 }
             },
             {
-                name = "scrap_metal",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for a Europeans ware: Scrap Iron
-                    purpose = pgettext("europeans_ware", "Discarded weapons and armor can be recycled in an advanced smelting works to produce new tools, weapon and armor.")
-                }
-            },
-            {
-                name = "metal_alloy",
+                name = "diamond",
                 default_target_quantity = 32,
                 preciousness = 1,
                 helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron, part 1
-                        pgettext("ware", "Mixed metal alloy is smelted out of ores."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Iron, part 2
-                        pgettext("europeans_ware", "It is produced by the smelting works. Weapons, armor and tools are made of alloy.")
-                    }
+                    -- TRANSLATORS: Helptext for an Europeans ware: Diamond
+                    purpose = pgettext("europeans_ware", "These wonderful diamonds are used to build advanced buildings. They are mined as a byproduct in a deep coal mine or by advanced quarry.")
                 }
-            },
+            }
         },
         {
             -- Food 1
@@ -552,195 +518,13 @@ wl.Descriptions():new_tribe {
                 }
             },
         },
-        {
-            -- Tools
-            {
-                name = "buckets",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Buckets, part 1
-                        pgettext("europeans_ware", "Big buckets for the forester, the gardener, and the construction of wells."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Buckets, part 2
-                        pgettext("europeans_ware", "They are produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "basket",
-                default_target_quantity = 16,
-                preciousness = 1,
-                 helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Basket, part 1
-                        pgettext("europeans_ware", "This basket is needed by the farmer for harvesting the fruits and grapes and needed by miller and by gamekeeper."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Basket, part 2
-                        pgettext("europeans_ware", "It is also used by advanced carrier to transport wares. It is produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "felling_ax",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 1
-                        pgettext("europeans_ware", "The felling ax is the tool to chop down trees."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Felling Ax, part 2
-                        pgettext("europeans_ware", "Felling axes are used by lumberjacks and produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "scythe",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 1
-                        pgettext("europeans_ware", "The scythe is the tool of the farmers."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Scythe, part 2
-                        pgettext("europeans_ware", "Scythes are produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "pick",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                         -- TRANSLATORS: Helptext for an Europeans ware: Pick, part 1
-                         pgettext("europeans_ware", "The pick is an essential tool. Picks are used by stonemasons and miners."),
-                         -- TRANSLATORS: Helptext for an Europeans ware: Pick, part 2
-                         pgettext("europeans_ware", "They are produced produced by all smithies.")
-                     }
-                }
-            },
-            {
-                name = "hammer",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Hammer, part 1
-                        pgettext("europeans_ware", "The hammer is an essential tool. Geologists, builders, and worker all need a hammer."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Hammer, part 2
-                        pgettext("europeans_ware", "Make sure you’ve always got some in reserve! They are produced by all smithies.")
-                    }
-                }
-            },
-            {
-                name = "saw",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                         -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 1
-                         pgettext("europeans_ware", "The saw is an essential tool. This saw is needed by the worker, the builder, and the woodcutter."),
-                         -- TRANSLATORS: Helptext for an Europeans ware: Saw, part 2
-                         pgettext("europeans_ware", "Make sure you’ve always got some in reserve! They are produced by all smithies.")
-                     }
-                }
-            },
-            {
-                name = "shovel",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    purpose = {
-                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 1
-                        pgettext("europeans_ware", "The shovel is an essential tool. Therefore the builder, the forester, the gardener, and the farmer use them."),
-                        -- TRANSLATORS: Helptext for an Europeans ware: Shovel, part 2
-                        pgettext("europeans_ware", "They are produced by all smithies.")
-                    }
-                }
-            },
-        },
-        {
-            -- Armor, Weapons, Shields and Helmets
-            {
-                name = "armor_wooden",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wooden Armor
-                    purpose = pgettext("europeans_ware", "Basic armor for European soldiers. It is produced in the armor smithy. In combination with wooden spear, it is the equipment to fit out young soldiers.")
-                }
-            },
-            {
-                name = "boots_wooden",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wooden Boots
-                    purpose = pgettext("europeans_ware", "Wooden boots are basic footwear for soldiers to be protect on their feet. They are produced by the dressmaker.")
-                }
-            },
-            {
-                name = "helmet_wooden",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Helmet Mask
-                    purpose = pgettext("europeans_ware", "The helmet is the basic defense tool of a soldier. It is produced in the smithy. In combination with armor, it is the equipment to fit out young soldiers.")
-                }
-            },
-            {
-                name = "spear_wooden",
-                default_target_quantity = 16,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Wooden Spear
-                    purpose = pgettext("europeans_ware", "This wooden spear is the basic weapon in the European military system. It is produced in the smithy. In combination with armor, it is the equipment to fit out young soldiers.")
-                }
-            },
-            {
-                name = "armor_advanced",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Armor
-                    purpose = pgettext("europeans_ware", "The advanced armor is produced in the a manufactory and used in the training center to protect soldiers with additional health points.")
-                }
-            },
-            {
-                name = "boots_advanced",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Boots
-                    purpose = pgettext("europeans_ware", "Hero boots! The only suitable footwear for a real hero. They are produced by the dressmaker and used to train soldiers’ evade.")
-                }
-            },
-            {
-                name = "shield_advanced",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Shield
-                    purpose = pgettext("europeans_ware", "These advanced shields are used by the best soldiers of the Europeans. They are produced in the advanced manufactory and used in the training center to train soldiers in defense.")
-                }
-            },
-            {
-                name = "spear_advanced",
-                default_target_quantity = 8,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans ware: Advanced Spear
-                    purpose = pgettext("europeans_ware", "This is a advanced spear with a steel tip. It is produced in the advanced manufactory and used in a training center to train soldiers in attack.")
-                }
-            },
-        }
     },
     -- Workers positions in workers windows.
     -- This also gives us the information which workers the tribe uses.
     -- Each subtable is a column in the workers windows.
     workers_order = {
         {
-            -- Carriers
+            -- Carriers and Soldiers
             {
                 name = "europeans_carrier",
                 default_target_quantity = 64,
@@ -812,6 +596,24 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Helptext for a Europeans worker: Reindeer
                     purpose = pgettext("europeans_worker", "Reindeers help to carry items along busy roads. They are reared in an animal farm.")
                 }
+            },
+            {
+                name = "europeans_recruit",
+                default_target_quantity = 32,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Recruit
+                    purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
+                }
+            },
+            {
+                name = "europeans_soldier",
+                default_target_quantity = 64,
+                preciousness = 1,
+                helptexts = {
+                    -- TRANSLATORS: Helptext for an Europeans worker: Soldier
+                    purpose = pgettext("europeans_worker", "Defend and Conquer!")
+                }
             }
         },
         {
@@ -872,7 +674,7 @@ wl.Descriptions():new_tribe {
             },
         },
         {
-            -- Collectors, Supporters and Producer (Wood)
+            -- Collectors, Supporters and Producer (Cotton, Reed, Rubber)
             {
                 name = "europeans_lumberjack_basic",
                 default_target_quantity = 1,
@@ -1034,7 +836,7 @@ wl.Descriptions():new_tribe {
             },
             {
                 name = "europeans_terraformer_basic",
-                default_target_quantity = 1,
+                default_target_quantity = 2,
                 preciousness = 1,
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
@@ -1048,65 +850,6 @@ wl.Descriptions():new_tribe {
                 helptexts = {
                     -- TRANSLATORS: Helptext for an Europeans worker: Terraformer
                     purpose = pgettext("europeans_worker", "Terraforms desert and coast into fertile soil.")
-                }
-            }
-        },
-        {
-            -- Training, Scouting and Soldiers
-            {
-                name = "europeans_trainer_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Trainer
-                    purpose = pgettext("europeans_worker", "Trains the soldiers.")
-                }
-            },
-            {
-                name = "europeans_trainer_advanced",
-                default_target_quantity = 4,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Trainer
-                    purpose = pgettext("europeans_worker", "Trains the soldiers.")
-                }
-            },
-            {
-                name = "europeans_scout_basic",
-                default_target_quantity = 1,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Scout
-                    purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
-                    -- (c) WiHack Team 02.01.2010
-                }
-            },
-            {
-                name = "europeans_scout_advanced",
-                default_target_quantity = 2,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Scout
-                    purpose = pgettext("europeans_worker", "Scouts like Scotty the scout scouting unscouted areas in a scouty fashion.")
-                    -- (c) WiHack Team 02.01.2010
-                }
-            },
-            {
-                name = "europeans_recruit",
-                default_target_quantity = 64,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Recruit
-                    purpose = pgettext("europeans_worker", "Eager to become a soldier and defend his tribe!")
-                }
-            },
-            {
-                name = "europeans_soldier",
-                default_target_quantity = 128,
-                preciousness = 1,
-                helptexts = {
-                    -- TRANSLATORS: Helptext for an Europeans worker: Soldier
-                    purpose = pgettext("europeans_worker", "Defend and Conquer!")
                 }
             }
         },
@@ -1639,39 +1382,6 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_resi_coal_1",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 1
-                    _("Coal veins contain coal that can be dug up by coal mines."),
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
-                    _("There is only a little bit of coal here.")
-                }
-            }
-        },
-        {
-            name = "europeans_resi_iron_1",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 1
-                    _("Iron veins contain iron ore that can be dug up by iron mines."),
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
-                    _("There is only a little bit of iron here.")
-                }
-            }
-        },
-        {
-            name = "europeans_resi_gold_1",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 1
-                    _("Gold veins contain gold ore that can be dug up by gold mines."),
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
-                    _("There is only a little bit of gold here.")
-                }
-            }
-        },
-        {
             name = "europeans_resi_stones_1",
             helptexts = {
                 purpose = {
@@ -1679,39 +1389,6 @@ wl.Descriptions():new_tribe {
                     _("Marble is a basic building material and can be dug up by a marble mine. You will also get granite from the mine."),
                     -- TRANSLATORS: Helptext for an Europeans resource indicator: Stones, part 2
                     _("There is only a little bit of marble here.")
-                }
-            }
-        },
-        {
-            name = "europeans_resi_coal_2",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 1
-                    _("Coal veins contain coal that can be dug up by coal mines."),
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Coal, part 2
-                    _("There is a lot of coal here.")
-                }
-            }
-        },
-        {
-            name = "europeans_resi_iron_2",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 1
-                    _("Iron veins contain iron ore that can be dug up by iron mines."),
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Iron, part 2
-                    _("There is a lot of iron here.")
-                }
-            }
-        },
-        {
-            name = "europeans_resi_gold_2",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 1
-                    _("Gold veins contain gold ore that can be dug up by gold mines."),
-                    -- TRANSLATORS: Helptext for an Europeans resource indicator: Gold, part 2
-                    _("There is a lot of gold here.")
                 }
             }
         },
@@ -1847,14 +1524,14 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_port",
+            name = "europeans_port_big",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
                 purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools.")
             }
         },
         {
-            name = "europeans_port_big",
+            name = "europeans_port",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans warehouse: Port
                 purpose = pgettext("europeans_building", "Serves as a base for overseas colonization and trade. Also stores your soldiers, wares and tools.")
@@ -1986,20 +1663,6 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("building", "Terraforms deserts and coasts into fertile soil.")
             }
         },
-        {
-            name = "europeans_scouts_house_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Scout's Hut
-                purpose = pgettext("building", "Explores unknown territory.")
-            }
-        },
-        {
-            name = "europeans_scouts_house_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Scout's House
-                purpose = pgettext("building", "Explores unknown territory.")
-            }
-        },
 
         -- Medium
         {
@@ -2083,14 +1746,14 @@ wl.Descriptions():new_tribe {
             name = "europeans_sawmill_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-                purpose = pgettext("europeans_building", "Saws logs to produce planks.")
+                purpose = pgettext("europeans_building", "Hardening log to produce blackwood.")
             }
         },
         {
             name = "europeans_sawmill_advanced",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans production site: Sawmill
-                purpose = pgettext("europeans_building", "Saws logs to produce planks.")
+                purpose = pgettext("europeans_building", "Hardening log to produce blackwood and saws log to produce planks.")
             }
         },
         {
@@ -2174,36 +1837,8 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Produces mead and wine.")
             }
         },
-        {
-            name = "europeans_smelting_works_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Smelting Works
-                purpose = pgettext("europeans_building", "Smelts ore into iron.")
-            }
-        },
-        {
-            name = "europeans_smelting_works_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Smelting Works
-                purpose = pgettext("europeans_building", "Smelts ore into iron and gold. Recycles scrap metal.")
-            }
-        },
 
         -- Big
-        {
-            name = "europeans_manufactory_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
-                purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
-            }
-        },
-        {
-            name = "europeans_manufactory_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Big Manufactory
-                purpose = pgettext("europeans_building", "Large factory that produces complex wares such as tools, weapons, armor, clothing, shoes or building materials from simple raw materials.")
-            }
-        },
         {
             name = "europeans_farm_basic",
             helptexts = {
@@ -2262,134 +1897,8 @@ wl.Descriptions():new_tribe {
                 purpose = pgettext("europeans_building", "Digs granite, marble, quartz and diamond out of the ground in mountain terrain.")
             }
         },
-        {
-            name = "europeans_coalmine_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Coal Mine
-                purpose = pgettext("europeans_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_coalmine_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Deep Coal Mine
-                purpose = pgettext("europeans_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_coalmine_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Deeper Coal Mine
-                purpose = pgettext("europeans_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_coalmine_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-                purpose = pgettext("europeans_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_coalmine_level_4",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Deep Coal Mine
-                purpose = pgettext("europeans_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_coalmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Coal Mine
-                purpose = pgettext("europeans_building", "Digs coal out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_ironmine_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Iron Mine
-                purpose = pgettext("europeans_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_ironmine_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Deep Iron Mine
-                purpose = pgettext("europeans_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_ironmine_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for a Europeans production site: Deeper Iron Mine
-                purpose = pgettext("europeans_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_ironmine_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-                purpose = pgettext("europeans_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_ironmine_level_4",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Deep Iron Mine
-                purpose = pgettext("europeans_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_ironmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Iron Mine
-                purpose = pgettext("europeans_building", "Digs iron ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_goldmine_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Gold Mine
-                purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_goldmine_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Deep Gold Mine
-                purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_goldmine_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for production site: Deeper Gold Mine
-                purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_goldmine_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
-                purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_goldmine_level_4",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Deep Gold Mine
-                purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
-        {
-            name = "europeans_goldmine_level_5",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Gold Mine
-                purpose = pgettext("europeans_building", "Digs gold ore out of the ground in mountain terrain.")
-            }
-        },
 
-        -- Training Sites
+        -- Recruitement and Training Sites
         {
             name = "europeans_trainingscamp_basic",
             helptexts = {
@@ -2397,17 +1906,6 @@ wl.Descriptions():new_tribe {
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 1
                     pgettext("europeans_building", "Trains recruits to soldiers."),
                     -- TRANSLATORS: Purpose helptext for an Europeans training site: Basic Training Camp, part 2
-                    pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
-                },
-            }
-        },
-        {
-            name = "europeans_trainingscamp_advanced",
-            helptexts = {
-                purpose = {
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 1
-                    pgettext("europeans_building", "Trains recruits to soldiers."),
-                    -- TRANSLATORS: Purpose helptext for an Europeans training site: Advanced Training Camp, part 2
                     pgettext("europeans_building", "Equips the recruits with all necessary armor parts and weapons.")
                 },
             }
@@ -2440,6 +1938,24 @@ wl.Descriptions():new_tribe {
                 note = pgettext("europeans_building", "Trains soldiers only in ‘Attack’."),
             }
         },
+        {
+            name = "europeans_shipyard_basic",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
+                purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Shipyard
+                note = pgettext("europeans_building", "Needs water nearby.")
+            }
+        },
+        {
+            name = "europeans_shipyard_advanced",
+            helptexts = {
+                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard / Ferry Yard
+                purpose = pgettext("europeans_building", "Constructs ships and additional ferries."),
+                -- TRANSLATORS: Note helptext for an Europeans production site: Shipyard / Ferry Yard
+                note = pgettext("europeans_building", "Needs water nearby.")
+            }
+        },
 
         -- Military Sites
         {
@@ -2452,61 +1968,7 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_sentry_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Guardhouse
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_sentry_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Small Tower
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Blockhouse
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_sentry_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Sentry
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Sentry
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
             name = "europeans_barrier_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Barrier
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_barrier_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Guardhall
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Outpost
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_barrier_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Outpost
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Outpost
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_barrier_level_3",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Barrier
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
@@ -2524,93 +1986,12 @@ wl.Descriptions():new_tribe {
             }
         },
         {
-            name = "europeans_tower_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Tower
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Tower
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_tower_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: High Tower
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Tower
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_tower_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Tower
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Tower
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
             name = "europeans_castle_basic",
             helptexts = {
                 -- TRANSLATORS: Purpose helptext for an Europeans military site: Castle
                 purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
                 -- TRANSLATORS: Note helptext for an Europeans military site: Castle
                 note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_castle_level_1",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Citadel
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Fortress
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_castle_level_2",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Castle
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Fortress
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_castle_level_3",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Fortress
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Fortress
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-        {
-            name = "europeans_castle_level_4",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans military site: Castle
-                purpose = pgettext("europeans_building", "Garrisons soldiers to expand your territory."),
-                -- TRANSLATORS: Note helptext for an Europeans military site: Fortress
-                note = pgettext("europeans_building", "If you’re low on soldiers to occupy new military sites, use the downward arrow button to decrease the capacity. You can also click on a soldier to send him away.")
-            }
-        },
-
-        -- Seafaring/Ferry Sites - these are only displayed on seafaring/ferry maps
-        {
-            name = "europeans_shipyard_basic",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Ferry Yard
-                purpose = pgettext("europeans_building", "Builds ferries."),
-                -- TRANSLATORS: Note helptext for an Europeans production site: Ferry Yard
-                note = pgettext("europeans_building", "Needs water nearby.")
-            }
-        },
-        {
-            name = "europeans_shipyard_advanced",
-            helptexts = {
-                -- TRANSLATORS: Purpose helptext for an Europeans production site: Shipyard
-                purpose = pgettext("europeans_building", "Constructs ships that are used for overseas colonization and for trading between ports.")
             }
         },
 
@@ -2642,7 +2023,7 @@ wl.Descriptions():new_tribe {
     warehouse_names = {
         -- Europeans capital cities or big cities with more than 500.000 people
         pgettext("warehousename", "Amsterdam"),
-        pgettext("warehousename", "Andorra la Vella"),
+        pgettext("warehousename", "Andorra"),
         pgettext("warehousename", "Antwerpen"),
         pgettext("warehousename", "Astrachan"),
         pgettext("warehousename", "Athen"),
@@ -2669,7 +2050,7 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Düsseldorf"),
         pgettext("warehousename", "Edinburgh"),
         pgettext("warehousename", "Essen"),
-        pgettext("warehousename", "Frankfurt am Main"),
+        pgettext("warehousename", "Frankfurt"),
         pgettext("warehousename", "Genova"),
         pgettext("warehousename", "Glasgow"),
         pgettext("warehousename", "Göteborg"),
@@ -2708,10 +2089,8 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Monaco"),
         pgettext("warehousename", "Moskwa"),
         pgettext("warehousename", "München"),
-        pgettext("warehousename", "Nabereschnyje Tschelny"),
         pgettext("warehousename", "Napoli"),
         pgettext("warehousename", "Nikosia"),
-        pgettext("warehousename", "Nischni Nowgorod"),
         pgettext("warehousename", "Nürnberg"),
         pgettext("warehousename", "Odessa"),
         pgettext("warehousename", "Orenburg"),
@@ -2728,7 +2107,6 @@ wl.Descriptions():new_tribe {
         pgettext("warehousename", "Rīga"),
         pgettext("warehousename", "Rjasan"),
         pgettext("warehousename", "Roma"),
-        pgettext("warehousename", "Rostow-na-Donu"),
         pgettext("warehousename", "Rotterdam"),
         pgettext("warehousename", "San Marino"),
         pgettext("warehousename", "Samara"),
@@ -2799,30 +2177,32 @@ wl.Descriptions():new_tribe {
     -- Special types
     builder = "europeans_builder",
     carriers = {"europeans_carrier_1", "europeans_carrier_ox", "europeans_carrier_donkey", "europeans_carrier_horse"},
-    geologist = "europeans_geologist",
-    scouts_house = "europeans_scouts_house_basic",
-    soldier = "europeans_soldier",
-    ship = "europeans_ship",
     ferry = "europeans_ferry",
+    geologist = "europeans_geologist",
     port = "europeans_port",
+    scouts_house = "europeans_lumberjacks_house_basic",
+    ship = "europeans_ship",
+    soldier = "europeans_soldier",
     
    fastplace = {
       warehouse = "europeans_warehouse",
       port = "europeans_port",
+      barracks = "europeans_trainingscamp_basic",
       training_small = "europeans_training_center_health",
-      training_large = "europeans_battlearena_basic",
+      training_large = "europeans_training_center_attack",
+        shipyard = "europeans_shipyard_basic",
+        ferry_yard = "europeans_shipyard_advanced",
       military_small_primary = "europeans_sentry_basic",
-      military_small_secondary = "europeans_sentry_level_3",
-      military_medium_primary = "europeans_barrier_basic",
-      military_medium_secondary = "europeans_barrier_level_3",
+      military_small_secondary = "europeans_barrier_basic",
+      military_medium_primary = "europeans_tower_basic",
+      military_medium_secondary = "europeans_castle_basic",
       military_tower = "europeans_tower_basic",
       military_fortress = "europeans_castle_basic",
       well = "europeans_well_basic",
       woodcutter = "europeans_lumberjacks_house_basic",
       forester = "europeans_tree_nursery_basic",
       quarry = "europeans_quarry_basic",
-      mine_food_stone = "europeans_quarry_basic",
-      building_materials_primary = "europeans_farm_basic",
+      building_materials_primary = "europeans_weaving_mill_basic",
       building_materials_secondary = "europeans_sawmill_basic",
       building_materials_tertiary = "europeans_stonemasons_house_basic",
       charcoal = "europeans_charcoal_kiln_basic",
@@ -2839,21 +2219,7 @@ wl.Descriptions():new_tribe {
       mill = "europeans_mill_basic",
       bakery = "europeans_bakery_basic",
       brewery = "europeans_brewery_basic",
-      bakery = "europeans_bakery_basic",
-      mine_coal = "europeans_coalmine_basic",
-      mine_iron = "europeans_ironmine_basic",
-      mine_gold = "europeans_goldmine_basic",
-      smelting = "europeans_smelting_works_basic",
-      tool_smithy = "europeans_manufactory_basic",
-      weapon_smithy = "europeans_manufactory_basic",
-      armor_smithy = "europeans_manufactory_basic",
-      shipyard = "europeans_shipyard_basic",
-      ferry_yard = "europeans_shipyard_advanced",
-      scout = "europeans_scouts_house_basic",
-      barracks = "europeans_trainingscamp_basic",
       second_carrier = "europeans_animal_farm_advanced",
-      industry_supporter = "europeans_animal_farm_advanced",
-      industry_alternative = "europeans_weaving_mill_basic",
    },
 }
 

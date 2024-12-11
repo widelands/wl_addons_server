@@ -35,8 +35,9 @@ wl.Descriptions():new_productionsite_type {
         enhancement_cost = {
             brick = 1,
             grout = 1,
+            marble = 1,
             planks = 1,
-            marble = 1
+            cloth = 1
         },
         enhancement_return_on_dismantle = {
             scrap_wood = 1,
@@ -46,11 +47,13 @@ wl.Descriptions():new_productionsite_type {
     },
     buildcost = {
         granite = 2,
-        log = 2
+        log = 2,
+        reed = 2
     },
     return_on_dismantle = {
         scrap_wood = 2,
-        granite = 1
+        granite = 1,
+        reed = 1
     },
 
     aihints = {
