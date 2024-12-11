@@ -667,7 +667,12 @@ public class ServerUtils {
 	}
 
 	// Two helper functions for matchesWidelandsVersion()
-	private static int[] string_to_version(String str) {
+	/**
+	 * Convert a version string to an array of version numbers.
+	 * @param str Version string.
+	 * @return The version as an array.
+	 */
+	public static int[] string_to_version(String str) {
 		if (str == null || str.isEmpty()) return new int[0];
 
 		if (str.startsWith("build")) {
@@ -679,6 +684,7 @@ public class ServerUtils {
 		for (int i = 0; i < result.length; i++) result[i] = Integer.valueOf(parts[i]);
 		return result;
 	}
+
 	private static boolean less(int[] a, int[] b) {
 		int l = Math.min(a.length, b.length);
 		for (int i = 0; i < l; i++)

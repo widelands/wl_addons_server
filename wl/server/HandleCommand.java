@@ -42,6 +42,7 @@ public class HandleCommand {
 	private final String username;
 	private final long userDatabaseID;
 	private final boolean admin;
+	private final Set<String> blackWhiteList;
 	private final String locale;
 
 	private String[] cmd;
@@ -57,6 +58,7 @@ public class HandleCommand {
 	 * @param username Name of the user ("" for unregistered guests).
 	 * @param userDatabaseID ID of the user (only valid for registered users).
 	 * @param admin Whether the user is a registered administrator.
+	 * @param blackWhiteList Set of extra privileges or restrictions.
 	 * @param locale Language the client is speaking.
 	 */
 	public HandleCommand(PrintStream out,
@@ -66,6 +68,7 @@ public class HandleCommand {
 	                     String username,
 	                     long userDatabaseID,
 	                     boolean admin,
+	                     Set<String> blackWhiteList,
 	                     String locale) {
 		this.cmd = null;
 		this.commandVersion = 0;
@@ -76,6 +79,7 @@ public class HandleCommand {
 		this.username = username;
 		this.userDatabaseID = userDatabaseID;
 		this.admin = admin;
+		this.blackWhiteList = blackWhiteList;
 		this.locale = locale;
 	}
 
@@ -640,6 +644,9 @@ public class HandleCommand {
 		checkCommandVersion(1);
 		ServerUtils.checkNrArgs(cmd, 3);
 		if (username.isEmpty()) throw new ServerUtils.WLProtocolException("Log in to comment");
+		if (blackWhiteList.contains("deny_comment"))
+			throw new ServerUtils.WLProtocolException(
+			    "You have been forbidden from writing comments");
 		// TODO enable for maps
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		ServerUtils.checkAddOnExists(cmd[1]);
@@ -673,6 +680,9 @@ public class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, commandVersion < 2 ? 3 : 2);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("Log in to edit comments");
+		if (blackWhiteList.contains("deny_comment"))
+			throw new ServerUtils.WLProtocolException(
+			    "You have been forbidden from editing comments");
 		// TODO enable for maps
 		if (commandVersion < 2) {
 			cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
@@ -1007,6 +1017,9 @@ public class HandleCommand {
 		if (!admin && !Utils.isUploader(cmd[1], userDatabaseID))
 			throw new ServerUtils.WLProtocolException(
 			    "You can not submit screenshots for another person's add-on");
+		if (blackWhiteList.contains("deny_upload_screenshot"))
+			throw new ServerUtils.WLProtocolException(
+			    "You have been forbidden from submitting screenshots");
 
 		int whitespaces = Integer.valueOf(cmd[4]);
 		if (whitespaces < 0 || whitespaces > 1000)
@@ -1098,6 +1111,9 @@ public class HandleCommand {
 		ServerUtils.checkNrArgs(cmd, 1);
 		if (username.isEmpty())
 			throw new ServerUtils.WLProtocolException("You need to log in to submit add-ons");
+		if (blackWhiteList.contains("deny_upload_addon"))
+			throw new ServerUtils.WLProtocolException(
+			    "You have been forbidden from submitting add-ons");
 		cmd[1] = ServerUtils.sanitizeName(cmd[1], false);
 		// No need here to check if the add-on exists.
 
@@ -1152,6 +1168,27 @@ public class HandleCommand {
 
 				File newAddOnMain = new File(tempDir, "addon");
 				Utils.Profile newProfile = Utils.readProfile(newAddOnMain, cmd[1]);
+				if (newProfile.get("min_wl_version") != null &&
+				    !newProfile.get("min_wl_version").value.isEmpty()) {
+					try {
+						ServerUtils.string_to_version(newProfile.get("min_wl_version").value);
+					} catch (Exception e) {
+						throw new ServerUtils.WLProtocolException(
+						    "Malformed min_wl_version string: " +
+						    newProfile.get("min_wl_version").value);
+					}
+				}
+				if (newProfile.get("max_wl_version") != null &&
+				    !newProfile.get("max_wl_version").value.isEmpty()) {
+					try {
+						ServerUtils.string_to_version(newProfile.get("max_wl_version").value);
+					} catch (Exception e) {
+						throw new ServerUtils.WLProtocolException(
+						    "Malformed max_wl_version string: " +
+						    newProfile.get("max_wl_version").value);
+					}
+				}
+
 				boolean isUpdate = false;
 				String oldVersionString = null, diff = null;
 				int oldSecurity = -1, oldQuality = -1;
@@ -1167,10 +1204,12 @@ public class HandleCommand {
 					sql.next();
 					oldSecurity = sql.getInt("security");
 					oldQuality = sql.getInt("quality");
+					final boolean trust = blackWhiteList.contains("trust_upgrade");
 					Utils.sql(
 					    Utils.Databases.kAddOns,
-					    "update addons set security=0, quality=0, edit_timestamp=? where id=?",
-					    timestamp, sql.getLong("id"));
+					    "update addons set security=?, quality=?, edit_timestamp=? where id=?",
+					    trust ? oldSecurity : 0, trust ? oldQuality : 0, timestamp,
+					    sql.getLong("id"));
 
 					ServerUtils.doDelete(addOnDir);
 				} else {
@@ -1180,8 +1219,9 @@ public class HandleCommand {
 					Utils.sql(Utils.Databases.kAddOns,
 					          "insert into addons "
 					              + "(name,timestamp,edit_timestamp,i18n_version,security,quality,"
-					              + "downloads) value(?,?,?,0,0,0,0)",
-					          cmd[1], timestamp, timestamp);
+					              + "downloads) value(?,?,?,0,?,0,0)",
+					          cmd[1], timestamp, timestamp,
+					          blackWhiteList.contains("trust_new") ? 1 : 0);
 					Utils.sql(Utils.Databases.kAddOns,
 					          "insert into uploaders (addon,user) value(?,?)",
 					          Utils.getAddOnID(cmd[1]), userDatabaseID);
