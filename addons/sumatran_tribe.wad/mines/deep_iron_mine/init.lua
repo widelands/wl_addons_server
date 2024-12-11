@@ -55,8 +55,8 @@ wl.Descriptions():new_productionsite_type {
 
    programs = {
       main = {
-         -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
-         descname = _("mining iron"),
+         -- TRANSLATORS: Completed/Skipped/Did not start mining iron ore because ...
+         descname = _("mining iron ore"),
          actions = {
             -- "return=skipped" causes 10 sec delay
             -- time total: 45 + 3 * (23 + 3.6)79.8 + 10 = 134.8 sec (iron_ore:3) 45s/item
@@ -80,7 +80,7 @@ wl.Descriptions():new_productionsite_type {
       title = _("No Iron Ore"),
       heading = _("Iron Vein Exhausted"),
       message =
-         pgettext("sumatran_building", "This iron mine’s main vein is exhausted. Expect strongly diminished returns on investment. This mine can’t be enhanced any further, so you should consider dismantling or destroying it."),
+         pgettext("sumatran_building", "This deep iron mine’s main vein is exhausted. Expect strongly diminished returns on investment. This mine can’t be enhanced any further, so you should consider dismantling or destroying it."),
    },
 }
 

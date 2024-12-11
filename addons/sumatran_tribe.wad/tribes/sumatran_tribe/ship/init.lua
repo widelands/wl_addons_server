@@ -5,7 +5,7 @@ dirname = path.dirname(__file__)
 
 wl.Descriptions():new_ship_type {
     name = "sumatrans_ship",
-    -- TRANSLATORS: This is the Sumatran ship's name used in lists of units
+    -- TRANSLATORS: This is the Sumatran ship’s name used in lists of units
     descname = pgettext("sumatrans_ship", "Ship"),
     icon = dirname .. "menu.png",
     capacity = 30,

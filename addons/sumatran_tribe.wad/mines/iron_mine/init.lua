@@ -77,8 +77,8 @@ wl.Descriptions():new_productionsite_type {
 
    programs = {
       main = {
-         -- TRANSLATORS: Completed/Skipped/Did not start mining iron because ...
-         descname = _("mining iron"),
+         -- TRANSLATORS: Completed/Skipped/Did not start mining iron ore because ...
+         descname = _("mining iron ore"),
          actions = {
             -- "return=skipped" causes 10 sec delay
             -- time total: 23 + 2 * (15 + 3.6) + 10 = 70.2 sec (iron_ore:2)

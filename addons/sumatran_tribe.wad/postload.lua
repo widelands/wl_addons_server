@@ -38,10 +38,10 @@ wl.Descriptions():modify_unit("worker", "amazons_woodcutter_master", "programs",
 wl.Descriptions():modify_unit("productionsite", "amazons_woodcutters_hut", "programs", "set", "main", {
          -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
          descname = _("felling trees"), actions = {
-            "call=harvest_sumatran", -- new program added
             "call=harvest", -- standard program for "normal_tree"
             "call=harvest_sumatran", -- new program added
             "call=harvest2", -- standard program for "normal_tree"
+            "call=harvest_sumatran2", -- new program added
             "return=skipped"
       }})
 
@@ -61,6 +61,12 @@ wl.Descriptions():modify_unit("productionsite", "amazons_woodcutters_hut", "prog
          -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
          descname = _("felling trees"), actions = {
             "callworker=harvest_sumatran on failure skip", 
+            "sleep=duration:2s",
+      }})
+wl.Descriptions():modify_unit("productionsite", "amazons_woodcutters_hut", "programs", "set", "harvest_sumatran2", {
+         -- TRANSLATORS: Completed/Skipped/Did not start felling trees because ...
+         descname = _("felling trees"), actions = {
+            "callworker=harvest_sumatran", 
             "sleep=duration:2s",
       }})
 
@@ -84,7 +90,7 @@ wl.Descriptions():modify_unit("worker", "amazons_jungle_master", "programs", "se
 
 -- wl.Descriptions():modify_unit("tribe", "amazons", "add_building", "amazons_thermal_springs", { helptexts = { 
 --                   purpose = _"Distribution of thermal water makes terrain more suitable for tropical trees",
---                   note    = _"Termal springs are useful especially while playing wasteland and winter maps. In first case to transform mountains is very advatageous, in second case, all types of terrain can be transformed."
+--                   note    = _"Thermal springs are useful especially while playing wasteland and winter maps. In first case to transform mountains is very advatageous, in second case, all types of terrain can be transformed."
 --                }})
 
 pop_textdomain()

@@ -27,7 +27,7 @@ wl.Descriptions():new_immovable_type{
    spritesheets = {
    idle = {
       basename = "rubber_old",
-      hotspot = {29, 72},
+      hotspot = {31, 75},
       fps = 6,
       frames = 4,
       columns = 2,

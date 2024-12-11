@@ -57,8 +57,8 @@ wl.Descriptions():new_productionsite_type {
 
    programs = {
       main = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting soldier because ...
-         descname = pgettext("sumatran_building", "recruiting soldier"),
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting because ...
+         descname = pgettext("sumatran_building", "recruiting"),
          actions = {
             "call=recruit_warrior",
             "call=recruit_carrier",
@@ -93,8 +93,8 @@ wl.Descriptions():new_productionsite_type {
          },
       },
       recruit_carrier = {
-         -- TRANSLATORS: Completed/Skipped/Did not start recruiting carrior because ...
-         descname = _("recruiting carrior"),
+         -- TRANSLATORS: Completed/Skipped/Did not start recruiting carrier because ...
+         descname = _("recruiting carrier"),
          actions = {
             -- time: 6.4 + 10 + 3.6 = 20 sec
             "return=skipped unless economy needs sumatran_carrier_1",

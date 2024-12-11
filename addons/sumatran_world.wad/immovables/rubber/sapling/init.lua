@@ -21,7 +21,7 @@ wl.Descriptions():new_immovable_type{
    animation_directory = dirname,
    spritesheets = { idle = {
    basename = "rubber_sapling",
-   hotspot = {11, 29},
+   hotspot = {15, 32},
    fps = 6,
    frames = 4,
    columns = 2,

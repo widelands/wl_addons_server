@@ -51,7 +51,7 @@ wl.Descriptions():new_productionsite_type {
 
    programs = {
       main = {
-         -- TRANSLATORS: Completed/Skipped/Did not start sewing warriors dress because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start sewing warrior’s dress because ...
          descname = _("sewing warriors dress"),
          actions = {
             "call=produce_warriors_dress",
@@ -60,7 +60,7 @@ wl.Descriptions():new_productionsite_type {
          },
       },
       produce_warriors_dress = {
-         -- TRANSLATORS: Completed/Skipped/Did not start sewing warriors dress because ...
+         -- TRANSLATORS: Completed/Skipped/Did not start sewing warrior’s dress because ...
          descname = _("sewing warriors dress"),
          actions = {
             -- time: 1.4 + 35 + 3.6 + 15 = 55 sec

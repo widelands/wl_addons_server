@@ -55,11 +55,11 @@ wl.Descriptions():new_productionsite_type {
 
    programs = {
       main = {
-         -- TRANSLATORS: Completed/Skipped/Did not start mining copper-gold ore because ...
-         descname = _("mining copper-gold ore"),
+         -- TRANSLATORS: Completed/Skipped/Did not start mining copper ore and gold ore because ...
+         descname = _("mining copper ore and gold ore"),
          actions = {
             -- "return=skipped" causes 10 sec delay
-            -- need iron: 32 + 4 * (21 + 3.6)98.4 + 10 = 140.4 sec (gold_ore:2 copper_ore:2) 35s/item
+            -- need gold: 32 + 4 * (21 + 3.6)98.4 + 10 = 140.4 sec (gold_ore:2 copper_ore:2) 35s/item
             -- doesn't need: 32 + 5 * (23 + 3.6)133 + 10 = 175 sec (gold_ore:2 copper_ore:3) 35s/item
             "call=mine_gold",
             "call=mine_copper",
@@ -68,8 +68,8 @@ wl.Descriptions():new_productionsite_type {
          }
       },
       mine_gold = {
-         -- TRANSLATORS: Completed/Skipped/Did not start mining copper-gold ore because ...
-         descname = _("mining copper-gold ore"),
+         -- TRANSLATORS: Completed/Skipped/Did not start mining copper ore and gold ore because ...
+         descname = _("mining copper ore and gold ore"),
          actions = {
             "return=skipped unless economy needs gold_ore",
             "consume=meal palm_wine",
@@ -125,7 +125,7 @@ wl.Descriptions():new_productionsite_type {
       title = _("No Copper-Gold Ore"),
       heading = _("Copper-Gold Vein Exhausted"),
       message =
-         pgettext("sumatran_building", "This copper-gold mine’s main vein is exhausted. Expect strongly diminished returns on investment. This mine can’t be enhanced any further, so you should consider dismantling or destroying it."),
+         pgettext("sumatran_building", "This deep copper-gold mine’s main vein is exhausted. Expect strongly diminished returns on investment. This mine can’t be enhanced any further, so you should consider dismantling or destroying it."),
    },
 }
 

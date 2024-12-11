@@ -98,6 +98,7 @@ wl.Descriptions():new_trainingsite_type {
             "callworker=hunt_chief_crocodile",
             "checksoldier=soldier:attack level:0", -- Because the warrior can be expelled by the player
             "train=soldier:attack level:1",
+            "produce=meat",
             "sleep=duration:10s"
          }
       },
@@ -114,6 +115,7 @@ wl.Descriptions():new_trainingsite_type {
             "callworker=hunt_chief_crocodile",
             "checksoldier=soldier:attack level:1", -- Because the warrior can be expelled by the player
             "train=soldier:attack level:2",
+            "produce=meat",
             "sleep=duration:10s"
          }
       },
@@ -130,6 +132,7 @@ wl.Descriptions():new_trainingsite_type {
             "callworker=hunt_chief_crocodile",
             "checksoldier=soldier:attack level:2", -- Because the warrior can be expelled by the player
             "train=soldier:attack level:3",
+            "produce=meat",
             "sleep=duration:10s"
          }
       },

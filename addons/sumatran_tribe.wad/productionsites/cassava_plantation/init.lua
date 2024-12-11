@@ -70,7 +70,7 @@ wl.Descriptions():new_productionsite_type {
       -- Translators: Short for "Out of ..." for a resource
       title = _("No Fields or Water"),
       heading = _("Out of Fields or Water"),
-      message = pgettext ("sumatran_building", "The farmer working at this cassava plantation has no cleared soil to plant or doesn't have water for watering fields."),
+      message = pgettext ("sumatran_building", "The farmer working at this cassava plantation has no cleared soil to plant or doesn’t have any water for watering fields."),
       productivity_threshold = 30
    },
 }

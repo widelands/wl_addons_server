@@ -5,7 +5,7 @@ local dirname = path.dirname (__file__)
 wl.Descriptions():new_productionsite_type {
    name = "sumatran_hunters_house",
    -- TRANSLATORS: This is a building name used in lists of buildings
-   descname = pgettext ("sumatran_building", "Hunter's House"),
+   descname = pgettext ("sumatran_building", "Hunter’s House"),
    icon = dirname .. "menu.png",
    size = "small",
 
@@ -49,10 +49,11 @@ wl.Descriptions():new_productionsite_type {
          }
       },
       hunt_crocodile = {
-         -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
-         descname = _("hunting"),
+         -- TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
+         descname = _("hunting crocodile"),
          actions = {
             "callworker=hunt_chief_crocodile",
+            "produce=meat",
          }
       },
       fish = {
@@ -66,12 +67,12 @@ wl.Descriptions():new_productionsite_type {
    },
    out_of_resource_notification = {
       -- Translators: Short for "Out of Game and out of fish" for a resource
-      title = _("No Game, No Fish"),
+      title = _("No Game or No Fish"),
       -- TRANSLATORS: "Game" means animals that you can hunt
-      heading = _("Out of Game and Fish"),
+      heading = _("Out of Game or Fish"),
       -- TRANSLATORS: "game" means animals that you can hunt
       message = pgettext("sumatran_building", "The hunter working out of this hunter’s house can’t find any game or fish in his work area."),
-      productivity_threshold = 20
+      productivity_threshold = 25
    },
 }
 

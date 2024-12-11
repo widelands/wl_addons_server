@@ -5,7 +5,7 @@ local dirname = path.dirname(__file__)
 wl.Descriptions():new_productionsite_type {
    name = "sumatran_hunters_tent",
    -- TRANSLATORS: This is a building name used in lists of buildings
-   descname = pgettext("sumatran_building", "Hunter's Tent"),
+   descname = pgettext("sumatran_building", "Hunter’s Tent"),
    icon = dirname .. "menu.png",
    size = "small",
 
@@ -54,13 +54,23 @@ wl.Descriptions():new_productionsite_type {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _("hunting"),
          actions = {
-            "call=fish",
             "call=hunt",
-            "sleep=duration:25s",
+            "sleep=duration:15s",
+            "call=fish",
+            "call=hunt2",
+            "sleep=duration:15s",
+            "call=fish",
             "return=skipped"
          }
       },
       hunt = {
+         -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
+         descname = _("hunting"),
+         actions = {
+            "callworker=hunt",
+         }
+      },
+      hunt2 = {
          -- TRANSLATORS: Completed/Skipped/Did not start hunting because ...
          descname = _("hunting"),
          actions = {

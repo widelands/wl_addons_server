@@ -76,11 +76,11 @@ wl.Descriptions():new_productionsite_type {
 
    programs = {
       main = {
-         -- TRANSLATORS: Completed/Skipped/Did not start mining copper-gold ore because ...
-         descname = _("mining copper-gold ore"),
+         -- TRANSLATORS: Completed/Skipped/Did not start mining copper ore and gold ore because ...
+         descname = _("mining copper ore and gold ore"),
          actions = {
             -- "return=skipped" causes 10 sec delay
-            -- need iron: 3 + 2 * (15 + 3.6)37.2 + 10 = 50.2 sec (gold_ore copper_ore) 25s/item
+            -- need gold: 3 + 2 * (15 + 3.6)37.2 + 10 = 50.2 sec (gold_ore copper_ore) 25s/item
             -- doesn't need: 3 + 3 * (17 + 3.6)61.8 + 10 = 74.8 sec (gold_ore copper_ore:2) 25s/item
             "call=mine_gold",
             "call=mine_copper",
@@ -89,7 +89,7 @@ wl.Descriptions():new_productionsite_type {
          }
       },
       mine_gold = {
-         descname = _("mining copper-gold ore"),
+         descname = _("mining copper ore and gold ore"),
          actions = {
             "return=skipped unless economy needs gold_ore",
             "consume=meal",

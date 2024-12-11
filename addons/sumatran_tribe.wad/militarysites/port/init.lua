@@ -31,17 +31,17 @@ wl.Descriptions():new_warehouse_type {
     buildcost = {
         stone = 5,
         tropicalwood = 4,
-        reed = 2,
-        cloth = 2,
-        diamond = 4,
+        reed = 3,
+        cloth = 3,
+        diamond = 2,
         copper = 2,
         gold = 2
     },
     return_on_dismantle = {
         stone = 3,
         tropicalwood = 2,
-        cloth = 1,
-        diamond = 2,
+        cloth = 2,
+        diamond = 1,
         copper = 1,
         gold = 1
     },

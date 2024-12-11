@@ -76,8 +76,8 @@ wl.Descriptions():new_productionsite_type {
       -- Translators: Short for "Out of ..." for a resource
       title = _("No Trees"),
       heading = _("Out of Trees"),
-      message = pgettext("sumatran_building", "The woodcutter working at this woodcutter’s house can’t find any trees in his work area. You should consider dismantling or destroying the building or building a forester’s house."),
-      productivity_threshold = 35
+      message = pgettext("sumatran_building", "The woodcutter working at this house can’t find any trees in his work area. You should consider dismantling or destroying the building or building a palm planter’s hut or a jungle preserver’s hut nearby."),
+      productivity_threshold = 40
    },
 }
 

@@ -32,11 +32,11 @@ wl.Descriptions():new_productionsite_type {
          hotspot = { 56, 72 },
       },
       working = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle", -- TODO
          hotspot = { 56, 72 },
       },
       unoccupied = {
-         basename = "idle", -- TODO(GunChleoc): No animation yet.
+         basename = "idle", -- TODO
          hotspot = { 56, 72 },
       }
    },

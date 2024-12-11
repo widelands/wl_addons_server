@@ -54,15 +54,15 @@ wl.Descriptions():new_militarysite_type {
 
     messages = {
         -- TRANSLATORS: Message sent by a Sumatran military site
-        occupied = pgettext("sumatran_building", "Your soldiers have occupied your watchtower."),
+        occupied = pgettext("sumatran_building", "Your warriors have occupied your watchtower."),
         -- TRANSLATORS: Message sent by a Sumatran military site
         aggressor = pgettext("sumatran_building", "Your watchtower discovered an aggressor."),
         -- TRANSLATORS: Message sent by a Sumatran military site
         attack = pgettext("sumatran_building", "Your watchtower is under attack."),
         -- TRANSLATORS: Message sent by a Sumatran military site
-        defeated_enemy = pgettext("sumatran_building", "The enemy defeated your soldiers at the watchtower."),
+        defeated_enemy = pgettext("sumatran_building", "The enemy defeated your warriors at the watchtower."),
         -- TRANSLATORS: Message sent by a Sumatran military site
-        defeated_you = pgettext("sumatran_building", "Your soldiers defeated the enemy at the watchtower.")
+        defeated_you = pgettext("sumatran_building", "Your warriors defeated the enemy at the watchtower.")
     },
 }
 

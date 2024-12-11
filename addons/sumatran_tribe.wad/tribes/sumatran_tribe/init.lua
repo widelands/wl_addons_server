@@ -5,12 +5,11 @@ dirname = path.dirname(__file__)
 push_textdomain("sumatran_tribe.wad", true)
 
 local init_sumatran = {
-    -- Basic information for the sumatran tribe
     name = "sumatrans",
     author = _"OIPUN",
     -- TRANSLATORS: This is a tribe name
     descname = _"Sumatrans",
-    tooltip = _"This is the culture of the Sumatran tribe.",
+    tooltip = _"A crocodiles hunting tribe living on a tropical island named Sumatra.",
     icon = dirname .. "images/icon.png",
     script = dirname .. "units.lua",
 

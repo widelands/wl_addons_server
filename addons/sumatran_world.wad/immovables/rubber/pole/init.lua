@@ -21,7 +21,7 @@ wl.Descriptions():new_immovable_type{
    animation_directory = dirname,
    spritesheets = { idle = {
    basename = "rubber_pole",
-   hotspot = {16, 39},
+   hotspot = {20, 42},
    fps = 6,
    frames = 4,
    columns = 2,

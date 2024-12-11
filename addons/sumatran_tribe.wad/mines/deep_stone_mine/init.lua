@@ -68,6 +68,7 @@ wl.Descriptions():new_productionsite_type {
          }
       },
       mine_diamond = {
+         -- TRANSLATORS: Completed/Skipped/Did not start mining stone and raw diamond because ...
          descname = _("mining stone and raw diamond"),
          actions = {
             "return=skipped unless economy needs diamond_raw",
@@ -87,6 +88,7 @@ wl.Descriptions():new_productionsite_type {
          }
       },
       mine_stone = {
+         -- TRANSLATORS: Completed/Skipped/Did not start mining stone because ...
          descname = _("mining stone"),
          actions = {
             "return=skipped unless economy needs stone",
@@ -117,7 +119,7 @@ wl.Descriptions():new_productionsite_type {
       title = _("No Stone"),
       heading = _("Stone Vein Exhausted"),
       message =
-         pgettext("sumatran_building", "This stone mine’s main vein is exhausted. Expect strongly diminished returns on investment. This mine can’t be enhanced any further, so you should consider dismantling or destroying it."),
+         pgettext("sumatran_building", "This deep stone mine’s main vein is exhausted. Expect strongly diminished returns on investment. This mine can’t be enhanced any further, so you should consider dismantling or destroying it."),
    },
 }
 

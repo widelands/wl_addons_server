@@ -63,8 +63,8 @@ wl.Descriptions():new_productionsite_type {
          },
       },
       prepare_meal = {
-         -- TRANSLATORS: Completed/Skipped/Did not start preparing meal because ...
-         descname = _("preparing meal"),
+         -- TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
+         descname = _("preparing a meal"),
          actions = {
             -- time total: 36 sec
             "return=skipped unless economy needs meal",

@@ -6,7 +6,7 @@ local result = {
       {
          name = "immovables_sumatra",
          descname = _("Sumatra"),
-         picture = "addons/sumatrian_world.wad/sumatra_imm.png",
+         picture = "addons/sumatran_world.wad/sumatra_imm.png",
          items_per_row = 8,
          items = {
             "ironwood_amazons_sapling",
@@ -37,7 +37,7 @@ local result = {
          name = "critters_sumatra",
          -- TRANSLATORS: A category in the editor for placing animals on the map.
          descname = _("Sumatra"),
-         picture = "addons/sumetrian_world.wad/sumatra_crt.png",
+         picture = "addons/sumatran_world.wad/sumatra_crt.png",
          items_per_row = 10,
          items = {
             "rhinoceros",
