@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-27 02:12+0100\n"
+"POT-Creation-Date: 2024-12-13 03:09+0100\n"
 "PO-Revision-Date: 2024-10-26 21:10+0000\n"
 "Language-Team: Hungarian (https://app.transifex.com/widelands/teams/35159/"
 "hu/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: addons/ui-inspector.wad/addon:2 addons/ui-inspector.wad/init.lua:7
 #: addons/ui-inspector.wad/init.lua:16
-#: addons/ui-inspector.wad/show_window.lua:151
+#: addons/ui-inspector.wad/show_window.lua:377
 msgid "UI Inspector"
 msgstr ""
 
@@ -36,24 +36,45 @@ msgstr ""
 msgid "Inspect all open panels"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:11
-#: addons/ui-inspector.wad/show_window.lua:82
+#: addons/ui-inspector.wad/show_window.lua:10
+#: addons/ui-inspector.wad/show_window.lua:182
+#: addons/ui-inspector.wad/show_window.lua:209
 msgid "%1$s “%2$s”"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:74
+#: addons/ui-inspector.wad/show_window.lua:143
 msgid "The panel no longer exists."
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:133
-msgid "%1$s (%2$s): %3$s"
+#: addons/ui-inspector.wad/show_window.lua:160
+msgid "Copy class name"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:169
+#: addons/ui-inspector.wad/show_window.lua:224
+msgid "Copy property name"
+msgstr ""
+
+#: addons/ui-inspector.wad/show_window.lua:242
+msgid "%1$s (%2$s):"
+msgstr ""
+
+#: addons/ui-inspector.wad/show_window.lua:266
+msgid "Copy value"
+msgstr ""
+
+#: addons/ui-inspector.wad/show_window.lua:266
+msgid "Go to this item"
+msgstr ""
+
+#: addons/ui-inspector.wad/show_window.lua:394
 msgid "Filter by name or class"
 msgstr ""
 
-#: addons/ui-inspector.wad/show_window.lua:175
+#: addons/ui-inspector.wad/show_window.lua:401
+msgid "Clear filter"
+msgstr ""
+
+#: addons/ui-inspector.wad/show_window.lua:414
 msgid "Refresh"
 msgstr ""
 
