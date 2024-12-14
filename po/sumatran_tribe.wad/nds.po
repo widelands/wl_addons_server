@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 03:09+0100\n"
+"POT-Creation-Date: 2024-12-14 03:09+0100\n"
 "PO-Revision-Date: 2024-12-06 18:42+0000\n"
 "Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2024\n"
 "Language-Team: Low German (https://app.transifex.com/widelands/teams/35159/"
@@ -181,7 +181,7 @@ msgstr "Schanz"
 #: addons/sumatran_tribe.wad/militarysites/fort/init.lua:59
 msgctxt "sumatran_building"
 msgid "Your warriors have occupied your fort."
-msgstr ""
+msgstr "Diene Ridders hebben diene Schanz besett."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/fort/init.lua:61
@@ -199,13 +199,13 @@ msgstr "Feinde griepen diene Schanz an."
 #: addons/sumatran_tribe.wad/militarysites/fort/init.lua:65
 msgctxt "sumatran_building"
 msgid "The enemy defeated your warriors at the fort."
-msgstr ""
+msgstr "De Feinde hebben diene Ridders in eener Schanz manntjet."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/fort/init.lua:67
 msgctxt "sumatran_building"
 msgid "Your warriors defeated the enemy at the fort."
-msgstr ""
+msgstr "Diene Ridders hebben de Feinde in eener Schanz manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/militarysites/fortified_tower/init.lua:8
@@ -217,7 +217,7 @@ msgstr "Schanzentoorn"
 #: addons/sumatran_tribe.wad/militarysites/fortified_tower/init.lua:32
 msgctxt "sumatran_building"
 msgid "Your warriors have occupied your fortified tower."
-msgstr ""
+msgstr "Diene Ridders hebben dienen Schanzentoorn besett."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/fortified_tower/init.lua:34
@@ -235,13 +235,13 @@ msgstr "Feinde griepen dienen Schanzentoorn an."
 #: addons/sumatran_tribe.wad/militarysites/fortified_tower/init.lua:38
 msgctxt "sumatran_building"
 msgid "The enemy defeated your warriors at the fortified tower."
-msgstr ""
+msgstr "De Feinde hebben diene Ridders in eenem Schanzentoorn manntjet."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/fortified_tower/init.lua:40
 msgctxt "sumatran_building"
 msgid "Your warriors defeated the enemy at the fortified tower."
-msgstr ""
+msgstr "Diene Ridders hebben de Feinde in eenem Schanzentoorn manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/militarysites/guard_post/init.lua:8
@@ -253,7 +253,7 @@ msgstr "Wahrders-Posten"
 #: addons/sumatran_tribe.wad/militarysites/guard_post/init.lua:45
 msgctxt "sumatran_building"
 msgid "Your warrior has occupied your guard post."
-msgstr ""
+msgstr "Dien Ridder hett dienen Wahrders-Posten besett."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/guard_post/init.lua:47
@@ -271,13 +271,13 @@ msgstr "Feinde griepen dienen Wahrders-Posten an."
 #: addons/sumatran_tribe.wad/militarysites/guard_post/init.lua:51
 msgctxt "sumatran_building"
 msgid "The enemy defeated your warrior at the guard post."
-msgstr ""
+msgstr "De Feinde hebben dienen Ridder in eenem Wahrders-Posten manntjet."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/guard_post/init.lua:53
 msgctxt "sumatran_building"
 msgid "Your warriors defeated the enemy at the guard post."
-msgstr ""
+msgstr "Diene Ridders hebben de Feinde in eenem Wahrders-Posten manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/militarysites/headquarters/init.lua:8
@@ -301,7 +301,7 @@ msgstr "Grote Wachters-Kamer"
 #: addons/sumatran_tribe.wad/militarysites/sentry_big/init.lua:58
 msgctxt "sumatran_building"
 msgid "Your warriors have occupied your big sentry."
-msgstr ""
+msgstr "Diene Ridders hebben diene Grote Wachters-Kamer besett."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_big/init.lua:60
@@ -320,12 +320,14 @@ msgstr "Feinde griepen diene Grote Wachters-Kamer an."
 msgctxt "sumatran_building"
 msgid "The enemy defeated your warriors at the big sentry."
 msgstr ""
+"De Feinde hebben diene Ridders in eener Groten Wachters-Kamer manntjet."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_big/init.lua:66
 msgctxt "sumatran_building"
 msgid "Your warriors defeated the enemy at the big sentry."
 msgstr ""
+"Diene Ridders hebben de Feinde in eener Groten Wachters-Kamer manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:8
@@ -337,7 +339,7 @@ msgstr "Lütte Wachters-Kamer"
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:45
 msgctxt "sumatran_building"
 msgid "Your warriors have occupied your sentry."
-msgstr ""
+msgstr "Diene Ridders hebben diene Wachters-Kamer besett."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:47
@@ -355,13 +357,13 @@ msgstr "Feinde griepen diene Wachters-Kamer an."
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:51
 msgctxt "sumatran_building"
 msgid "The enemy defeated your warriors at the sentry."
-msgstr ""
+msgstr "De Feinde hebben diene Ridders in eener Wachters-Kamer manntjet."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/sentry_small/init.lua:53
 msgctxt "sumatran_building"
 msgid "Your warriors defeated the enemy at the sentry."
-msgstr ""
+msgstr "Diene Ridders hebben de Feinde in eener Wachters-Kamer manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/militarysites/warehouse/init.lua:8
@@ -379,7 +381,7 @@ msgstr "Wachtoorn"
 #: addons/sumatran_tribe.wad/militarysites/watchtower/init.lua:57
 msgctxt "sumatran_building"
 msgid "Your warriors have occupied your watchtower."
-msgstr ""
+msgstr "Diene Ridders hebben dienen Wachtoorn besett."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/watchtower/init.lua:59
@@ -397,13 +399,13 @@ msgstr "Feinde griepen dienen Wachtoorn an."
 #: addons/sumatran_tribe.wad/militarysites/watchtower/init.lua:63
 msgctxt "sumatran_building"
 msgid "The enemy defeated your warriors at the watchtower."
-msgstr ""
+msgstr "De Feinde hebben diene Ridders in eenem Wachtoorn manntjet."
 
 #. TRANSLATORS: Message sent by a Sumatran military site
 #: addons/sumatran_tribe.wad/militarysites/watchtower/init.lua:65
 msgctxt "sumatran_building"
 msgid "Your warriors defeated the enemy at the watchtower."
-msgstr ""
+msgstr "Diene Ridders hebben de Feinde in eenem Wachtoorn manntjet."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/mines/coal_mine/init.lua:8
@@ -447,7 +449,7 @@ msgstr "Koper-Gold-Bargwark"
 #: addons/sumatran_tribe.wad/mines/deep_copper_gold_mine/init.lua:59
 #: addons/sumatran_tribe.wad/mines/deep_copper_gold_mine/init.lua:72
 msgid "mining copper ore and gold ore"
-msgstr ""
+msgstr "Koperkluut un Goldkluut oftoboen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start mining higher share of copper ore because ...
 #: addons/sumatran_tribe.wad/mines/copper_gold_mine/init.lua:105
@@ -503,7 +505,7 @@ msgstr "Deeps Iesen-Bargwark"
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:59
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:81
 msgid "mining iron ore"
-msgstr ""
+msgstr "Iesenkluut oftoboen"
 
 #: addons/sumatran_tribe.wad/mines/deep_iron_mine/init.lua:80
 #: addons/sumatran_tribe.wad/mines/iron_mine/init.lua:99
@@ -731,7 +733,7 @@ msgstr "Köhlen to produzeren"
 #: addons/sumatran_tribe.wad/productionsites/chickens_farm/init.lua:8
 msgctxt "sumatran_building"
 msgid "Chicken Farm"
-msgstr ""
+msgstr "Hennentüchteree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start breeding chickens because ...
 #: addons/sumatran_tribe.wad/productionsites/chickens_farm/init.lua:57
@@ -755,7 +757,7 @@ msgstr "Eier un Fleesk to produzeren"
 #: addons/sumatran_tribe.wad/productionsites/coppersmiths_house/init.lua:8
 msgctxt "sumatran_building"
 msgid "Coppersmith’s House"
-msgstr ""
+msgstr "Kopersmidd-Huus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start making a copper sheet because ...
 #: addons/sumatran_tribe.wad/productionsites/coppersmiths_house/init.lua:76
@@ -799,7 +801,7 @@ msgstr "Gold to smelten"
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:8
 msgctxt "sumatran_building"
 msgid "Hunter’s House"
-msgstr ""
+msgstr "Jaggthuus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start hunting because ...
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:34
@@ -813,7 +815,7 @@ msgstr "to jagen"
 #. TRANSLATORS: Completed/Skipped/Did not start hunting crocodile because ...
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:53
 msgid "hunting crocodile"
-msgstr ""
+msgstr "Krokodilen to jagen"
 
 #. TRANSLATORS: Completed/Skipped/Did not start fishing because ...
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:61
@@ -823,7 +825,7 @@ msgstr "Fisse to fangen"
 
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:70
 msgid "No Game or No Fish"
-msgstr ""
+msgstr "Keene Deerten of keen Fiss"
 
 #. TRANSLATORS: "Game" means animals that you can hunt
 #: addons/sumatran_tribe.wad/productionsites/hunters_house/init.lua:72
@@ -845,7 +847,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:8
 msgctxt "sumatran_building"
 msgid "Hunter’s Tent"
-msgstr ""
+msgstr "Jaggt-Telt"
 
 #: addons/sumatran_tribe.wad/productionsites/hunters_tent/init.lua:91
 msgid "No Game or Fish"
@@ -888,7 +890,7 @@ msgstr "Köken"
 #. TRANSLATORS: Completed/Skipped/Did not start preparing a meal because ...
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:67
 msgid "preparing a meal"
-msgstr ""
+msgstr "een Mahl torechttomaken"
 
 #. TRANSLATORS: Completed/Skipped/Did not start throwing out overflows because ...
 #: addons/sumatran_tribe.wad/productionsites/kitchen/init.lua:86
@@ -899,7 +901,7 @@ msgstr "de Steerten ruttosmieten"
 #: addons/sumatran_tribe.wad/productionsites/leaves_gatherers_hut/init.lua:8
 msgctxt "sumatran_building"
 msgid "Leaves Gatherer’s Hut"
-msgstr ""
+msgstr "Bladenpottjeree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start gathering leaves because ...
 #: addons/sumatran_tribe.wad/productionsites/leaves_gatherers_hut/init.lua:42
@@ -920,7 +922,7 @@ msgstr "Maniokbladen to pottjen"
 #: addons/sumatran_tribe.wad/productionsites/palm_planters_hut/init.lua:8
 msgctxt "sumatran_building"
 msgid "Palm Planter’s Hut"
-msgstr ""
+msgstr "Palmenplanteree"
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/reed_yard/init.lua:8
@@ -944,12 +946,14 @@ msgid ""
 "The gardener working at this reed yard has no cleared soil to plant new "
 "plants."
 msgstr ""
+"De Gaardner dat warkt bi deese Reitplanteree hett keen Meedland waar he wat "
+"anplanten kann."
 
 #. TRANSLATORS: This is a building name used in lists of buildings
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:8
 msgctxt "sumatran_building"
 msgid "Scout’s Dwelling"
-msgstr ""
+msgstr "Bespejer-Huus"
 
 #. TRANSLATORS: Completed/Skipped/Did not start scouting because ...
 #: addons/sumatran_tribe.wad/productionsites/scouts_dwelling/init.lua:48
@@ -994,7 +998,7 @@ msgstr "een Schipp to timmern"
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:8
 msgctxt "sumatran_building"
 msgid "Stonecutter’s Hut"
-msgstr ""
+msgstr "Flintslageree"
 
 #. TRANSLATORS: Completed/Skipped/Did not start quarrying stone because ...
 #: addons/sumatran_tribe.wad/productionsites/stonecutters_hut/init.lua:40
@@ -1040,7 +1044,7 @@ msgstr "Volksversammlung"
 #: addons/sumatran_tribe.wad/productionsites/tribal_gathering/init.lua:61
 msgctxt "sumatran_building"
 msgid "recruiting"
-msgstr ""
+msgstr "antohüren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting warrior because ...
 #: addons/sumatran_tribe.wad/productionsites/tribal_gathering/init.lua:71
@@ -1055,7 +1059,7 @@ msgstr "eenen Baas antohüren"
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting carrier because ...
 #: addons/sumatran_tribe.wad/productionsites/tribal_gathering/init.lua:97
 msgid "recruiting carrier"
-msgstr ""
+msgstr "eenen Lastendrager antohüren"
 
 #. TRANSLATORS: Completed/Skipped/Did not start recruiting hunter because ...
 #: addons/sumatran_tribe.wad/productionsites/tribal_gathering/init.lua:110
@@ -1437,6 +1441,8 @@ msgstr "OIPUN"
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/init.lua:12
 msgid "A crocodiles hunting tribe living on a tropical island named Sumatra."
 msgstr ""
+"Een Volk, wat Krokodilen jaggt un up eener Regenwald-Insel mit de Naam "
+"Sumatra leevt."
 
 #. TRANSLATORS: This is the Sumatran ship’s name used in lists of units
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/ship/init.lua:9
@@ -2679,7 +2685,7 @@ msgstr "De Flintslager bruukt Stenen tum Slaan in de Arbeidsgewest."
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1255
 msgctxt "sumatran_building"
 msgid "Draws water out of the rivers and lakes."
-msgstr ""
+msgstr "Hisst Water ut de Stromen un Meren."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Water Carrier’s Hut
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1257
@@ -3011,6 +3017,7 @@ msgstr ""
 msgctxt "sumatran_building"
 msgid "The miner needs %1% on average to produce one piece of ore."
 msgstr ""
+"De Bargwarkskeerl bruukt dör de Bank %1% um een Deel Kluut to produzeren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Iron Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Iron Mine
@@ -3040,6 +3047,7 @@ msgstr ""
 msgctxt "sumatran_building"
 msgid "The miners need %1% on average to produce one piece of ore."
 msgstr ""
+"De Bargwarkskeerls bruuken dör de Bank %1% um een Deel Kluut to produzeren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Copper-Gold Mine
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Gold Mine
@@ -3047,7 +3055,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1509
 msgctxt "sumatran_building"
 msgid "Digs copper ore and gold ore out of the ground in mountain terrain."
-msgstr ""
+msgstr "Grafft in Bargen Koperkluut un Goldkluut ut de Grund."
 
 #. TRANSLATORS: Note helptext for a Sumatran production site: Copper-Gold Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1501
@@ -3087,6 +3095,8 @@ msgctxt "sumatran_building"
 msgid ""
 "The miner needs %1% on average to produce one piece of stone or raw diamond."
 msgstr ""
+"De Bargwarkskeerl bruukt dör de Bank %1% um een Deel Steen of rugen "
+"Edelsteen to produzeren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran production site: Deep Stone Mine
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1529
@@ -3108,6 +3118,8 @@ msgctxt "sumatran_building"
 msgid ""
 "The miners need %1% on average to produce one piece of stone or raw diamond."
 msgstr ""
+"De Bargwarkskeerls bruuken dör de Bank %1% um een Deel Steen of rugen "
+"Edelsteen to produzeren."
 
 #. TRANSLATORS: Purpose helptext for a Sumatran training site: Training Camp, part 1
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1542
@@ -3149,7 +3161,7 @@ msgstr ""
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1608
 msgctxt "sumatran_building"
 msgid "Garrisons warriors to expand your territory."
-msgstr ""
+msgstr "Brengt Ridders unner, um dien Gewest to vergrotern."
 
 #. TRANSLATORS: Note helptext for a Sumatran military site: Guard Post
 #. TRANSLATORS: Note helptext for a Sumatran military site: Small Sentry
@@ -3167,6 +3179,9 @@ msgid ""
 "arrow button to decrease the capacity. You can also click on a warrior to "
 "send him away."
 msgstr ""
+"Wenn du nich genoog Ridders hest, um neje Soldateree-Boen to besetten, "
+"kannst du de Tahl vun Ridders mit de Piel-runner-Knoop minnern. Du kannst ok "
+"eenen Ridder anklicken, um hüm wegtostüren."
 
 #. TRANSLATORS: Note helptext for a Sumatran military site: Fortified Tower
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1601
@@ -3190,6 +3205,8 @@ msgid ""
 "Constructs ships that are used for overseas colonization and for shipping "
 "ware between ports."
 msgstr ""
+"Baut Schippen, de för tum Gründen vun nejen Dörpen un tum Schippern vun "
+"Waren tüsken Muden bruukt worden."
 
 #. TRANSLATORS: Lore helptext for a Sumatran building: Construction Site
 #: addons/sumatran_tribe.wad/tribes/sumatran_tribe/units.lua:1637
