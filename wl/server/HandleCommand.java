@@ -408,11 +408,14 @@ public class HandleCommand {
 		if (!mapFile.isFile()) throw new ServerUtils.WLProtocolException("Map file does not exist");
 
 		out.println(Utils.richtextEscape(name));
-		out.println(Utils.richtextEscape(Utils.translate(name, Buildcats.kWebsiteMapsTextdomain, locale)));
+		out.println(
+		    Utils.richtextEscape(Utils.translate(name, Buildcats.kWebsiteMapsTextdomain, locale)));
 		out.println(Utils.richtextEscape(descr));
-		out.println(Utils.richtextEscape(Utils.translate(descr, Buildcats.kWebsiteMapsTextdomain, locale)));
+		out.println(
+		    Utils.richtextEscape(Utils.translate(descr, Buildcats.kWebsiteMapsTextdomain, locale)));
 		out.println(Utils.richtextEscape(author));
-		out.println(Utils.richtextEscape(Utils.translate(author, Buildcats.kWebsiteMapsTextdomain, locale)));
+		out.println(Utils.richtextEscape(
+		    Utils.translate(author, Buildcats.kWebsiteMapsTextdomain, locale)));
 		out.println(Utils.getUsername(sqlMain.getLong("uploader_id")));
 
 		out.println();       // add-on version
@@ -481,9 +484,11 @@ public class HandleCommand {
 
 		out.println(mapFile.getName());
 		out.println(Utils.richtextEscape(hint));
-		out.println(Utils.richtextEscape(Utils.translate(hint, Buildcats.kWebsiteMapsTextdomain, locale)));
+		out.println(
+		    Utils.richtextEscape(Utils.translate(hint, Buildcats.kWebsiteMapsTextdomain, locale)));
 		out.println(Utils.richtextEscape(uploader_comment));
-		out.println(Utils.richtextEscape(Utils.translate(uploader_comment, Buildcats.kWebsiteMapsTextdomain, locale)));
+		out.println(Utils.richtextEscape(
+		    Utils.translate(uploader_comment, Buildcats.kWebsiteMapsTextdomain, locale)));
 		out.println(sqlMain.getInt("w"));
 		out.println(sqlMain.getInt("h"));
 		out.println(sqlMain.getInt("nr_players"));

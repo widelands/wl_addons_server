@@ -412,19 +412,18 @@ public class Utils {
 	 */
 	public static String translate(String value, String textdomain, String locale) {
 		try {
-			return new BufferedReader(
-			           new InputStreamReader(
-			               Runtime.getRuntime()
-			                   .exec(new String[] {
-			                       "bash", "-c",
-			                       "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
-			                           " LANGUAGE=" + locale + " gettext -s \"" +
-			                           value.replaceAll("\"", "\\\"") + "\""})
-			                   .getInputStream()))
+			return new BufferedReader(new InputStreamReader(
+			                              Runtime.getRuntime()
+			                                  .exec(new String[] {
+			                                      "bash", "-c",
+			                                      "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
+			                                          " LANGUAGE=" + locale + " gettext -s \"" +
+			                                          value.replaceAll("\"", "\\\"") + "\""})
+			                                  .getInputStream()))
 			    .readLine();
 		} catch (Exception e) {
-			log("WARNING: gettext error for '" + value + "' @ '" + textdomain +
-			    "' / '" + locale + "': " + e);
+			log("WARNING: gettext error for '" + value + "' @ '" + textdomain + "' / '" + locale +
+			    "': " + e);
 			e.printStackTrace();
 			return value;
 		}
