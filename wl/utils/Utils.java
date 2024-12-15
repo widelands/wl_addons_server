@@ -411,6 +411,7 @@ public class Utils {
 	 * @return Localized value.
 	 */
 	public static String translate(String value, String textdomain, String locale) {
+		if (textdomain == null || textdomain.isEmpty() || value == null || value.isEmpty() || locale == null || locale.isEmpty()) return value;
 		try {
 			return new BufferedReader(new InputStreamReader(
 			                              Runtime.getRuntime()
@@ -502,7 +503,6 @@ public class Utils {
 		 * @return Localized value.
 		 */
 		public String value(String locale) {
-			if (textdomain == null || textdomain.isEmpty()) return value;
 			return translate(value, textdomain, locale);
 		}
 
