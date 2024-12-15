@@ -39,10 +39,11 @@ public class Buildcats {
 		    filename.equals("dirnames") || filename.equals("descriptions");
 	}
 
-	private static void recurse(String out, File dir) throws Exception {
+	private static void recurse(String out, File dir, boolean mapsOnly) throws Exception {
+		Utils.log("Buildcats: Recursing in " + dir.getPath());
 		for (File f : Utils.listSorted(dir)) {
 			if (f.isDirectory()) {
-				recurse(out, f);
+				recurse(out, f, mapsOnly);
 			} else if (f.getName().toLowerCase().endsWith("wmf")) {
 				ZipFile zip = new ZipFile(f);
 				for (Enumeration e = zip.entries(); e.hasMoreElements();) {
@@ -69,7 +70,7 @@ public class Buildcats {
 					input.close();
 					p.waitFor();
 				}
-			} else if (isXGettextInput(f.getName())) {
+			} else if (!mapsOnly && isXGettextInput(f.getName())) {
 				Runtime.getRuntime()
 				    .exec(new String[] {
 				        "xgettext", "-k_", "--keyword=_", "--flag=_:1:pass-lua-format",
@@ -89,19 +90,32 @@ public class Buildcats {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void buildCatalogues() throws Exception {
+		final String kWebsiteMapsPO = "websitemaps";
+		File dir = new File("po", kWebsiteMapsPO);
+		dir.mkdirs();
+		String out = dir.getPath() + "/" + kWebsiteMapsPO + ".pot";
+		Runtime.getRuntime()
+		    .exec(new String[] {
+		        "xgettext", "--language=Lua", "--output=" + out,
+		        "--force-po", "--copyright-holder=\"Widelands Development Team\"",
+		        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
+		        "/dev/null"})
+		    .waitFor();
+		recurse(out, new File(Utils.config("website_maps_path")), true);
+
 		for (File addon : Utils.listSorted(new File("addons"))) {
-			File dir = new File("po", addon.getName());
-			dir.mkdirs();
-			String out = dir.getPath() + "/" + addon.getName() + ".pot";
+			dir = new File("po", addon.getName());
+			dir.mkdir();
+			out = dir.getPath() + "/" + addon.getName() + ".pot";
 			Runtime.getRuntime()
 			    .exec(new String[] {
 			        "xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
-			        "--copyright-holder=\"Widelands Development Team\"",
+			        "--force-po", "--copyright-holder=\"Widelands Development Team\"",
 			        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
 			        addon.getPath() + "/addon"})
 			    .waitFor();
-			recurse(out, new File("screenshots", addon.getName()));
-			recurse(out, addon);
+			recurse(out, new File("screenshots", addon.getName()), false);
+			recurse(out, addon, false);
 		}
 	}
 }
