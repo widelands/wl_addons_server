@@ -411,7 +411,9 @@ public class Utils {
 	 * @return Localized value.
 	 */
 	public static String translate(String value, String textdomain, String locale) {
-		if (textdomain == null || textdomain.isEmpty() || value == null || value.isEmpty() || locale == null || locale.isEmpty()) return value;
+		if (textdomain == null || textdomain.isEmpty() || value == null || value.isEmpty() ||
+		    locale == null || locale.isEmpty())
+			return value;
 		try {
 			return new BufferedReader(new InputStreamReader(
 			                              Runtime.getRuntime()
@@ -502,9 +504,7 @@ public class Utils {
 		 * @param locale Locale to use.
 		 * @return Localized value.
 		 */
-		public String value(String locale) {
-			return translate(value, textdomain, locale);
-		}
+		public String value(String locale) { return translate(value, textdomain, locale); }
 
 		/**
 		 * Constructor for a non-translatable value.
