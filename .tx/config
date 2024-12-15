@@ -323,27 +323,19 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
-[o:widelands:p:widelands-addons:r:europeans-agricultur-wad]
-file_filter            = po/europeans_agricultur.wad/<lang>.po
-source_file            = po/europeans_agricultur.wad/europeans_agricultur.wad.pot
-type                   = PO
-minimum_perc           = 0
-replace_edited_strings = false
-keep_translations      = false
-
-[o:widelands:p:widelands-addons:r:europeans-base-wad]
-file_filter            = po/europeans_base.wad/<lang>.po
-source_file            = po/europeans_base.wad/europeans_base.wad.pot
-type                   = PO
-minimum_perc           = 0
-replace_edited_strings = false
-keep_translations      = false
-
 [o:widelands:p:widelands-addons:r:europeans-map-modified-wad]
 file_filter            = po/europeans_map_modified.wad/<lang>.po
 source_file            = po/europeans_map_modified.wad/europeans_map_modified.wad.pot
 source_lang            = en
 type                   = PO
+replace_edited_strings = false
+keep_translations      = false
+
+[o:widelands:p:widelands-addons:r:europeans-tribe-wad]
+file_filter            = po/europeans_tribe.wad/<lang>.po
+source_file            = po/europeans_tribe.wad/europeans_tribe.wad.pot
+type                   = PO
+minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
