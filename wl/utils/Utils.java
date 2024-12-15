@@ -404,6 +404,33 @@ public class Utils {
 	}
 
 	/**
+	 * Translate a string.
+	 * @param value Text to translate.
+	 * @param textdomain Textdomain the translation is located in.
+	 * @param locale Locale to use.
+	 * @return Localized value.
+	 */
+	public static String translate(String value, String textdomain, String locale) {
+		try {
+			return new BufferedReader(
+			           new InputStreamReader(
+			               Runtime.getRuntime()
+			                   .exec(new String[] {
+			                       "bash", "-c",
+			                       "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
+			                           " LANGUAGE=" + locale + " gettext -s \"" +
+			                           value.replaceAll("\"", "\\\"") + "\""})
+			                   .getInputStream()))
+			    .readLine();
+		} catch (Exception e) {
+			log("WARNING: gettext error for '" + value + "' @ '" + textdomain +
+			    "' / '" + locale + "': " + e);
+			e.printStackTrace();
+			return value;
+		}
+	}
+
+	/**
 	 * Class to represent a user's comment on an add-on.
 	 */
 	public static class AddOnComment {
@@ -477,23 +504,7 @@ public class Utils {
 		 */
 		public String value(String locale) {
 			if (textdomain == null || textdomain.isEmpty()) return value;
-			try {
-				return new BufferedReader(
-				           new InputStreamReader(
-				               Runtime.getRuntime()
-				                   .exec(new String[] {
-				                       "bash", "-c",
-				                       "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
-				                           " LANGUAGE=" + locale + " gettext -s \"" +
-				                           value.replaceAll("\"", "\\\"") + "\""})
-				                   .getInputStream()))
-				    .readLine();
-			} catch (Exception e) {
-				log("WARNING: gettext error for '" + key + "'='" + value + "' @ '" + textdomain +
-				    "' / '" + locale + "': " + e);
-				e.printStackTrace();
-				return value;
-			}
+			return translate(value, textdomain, locale);
 		}
 
 		/**

@@ -30,6 +30,9 @@ import java.util.zip.ZipFile;
  * Class to rebuild a POT file for an add-on.
  */
 public class Buildcats {
+	/** The textdomain all website map texts are located in. */
+	public static final String kWebsiteMapsTextdomain = "websitemaps";
+
 	private Buildcats() {}
 
 	private static boolean isXGettextInput(String filename) {
@@ -90,10 +93,9 @@ public class Buildcats {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void buildCatalogues() throws Exception {
-		final String kWebsiteMapsPO = "websitemaps";
-		File dir = new File("po", kWebsiteMapsPO);
+		File dir = new File("po", kWebsiteMapsTextdomain);
 		dir.mkdirs();
-		String out = dir.getPath() + "/" + kWebsiteMapsPO + ".pot";
+		String out = dir.getPath() + "/" + kWebsiteMapsTextdomain + ".pot";
 		Runtime.getRuntime()
 		    .exec(new String[] {
 		        "xgettext", "--language=Lua", "--output=" + out, "--force-po",
