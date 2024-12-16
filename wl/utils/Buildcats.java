@@ -104,13 +104,8 @@ public class Buildcats {
 		                              "uploader_comment is not null and uploader_comment != ''");
 		while (sql.next()) {
 			String str = sql.getString("uploader_comment");
-			str = str.replaceAll("\\\\", "\\\\\\\\");
-			str = str.replaceAll("\t", "\\t");
-			str = str.replaceAll("\r", "\\r");
-			str = str.replaceAll("\n", "\\n");
-			str = str.replaceAll("\"", "\\\"");
 			write.print("_(\"");
-			write.print(str);
+			write.print(Utils.escapeAsShellArgument(str));
 			write.println("\")");
 		}
 		write.close();

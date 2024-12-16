@@ -404,6 +404,20 @@ public class Utils {
 	}
 
 	/**
+	 * Escape special characters in a string.
+	 * @param str Text to escape.
+	 * @return Escaped text.
+	 */
+	public static String escapeAsShellArgument(String str) {
+		str = str.replaceAll("\\\\", "\\\\\\\\");
+		str = str.replaceAll("\t", "\\t");
+		str = str.replaceAll("\r", "\\r");
+		str = str.replaceAll("\n", "\\n");
+		str = str.replaceAll("\"", "\\\"");
+		return str;
+	}
+
+	/**
 	 * Translate a string.
 	 * @param value Text to translate.
 	 * @param textdomain Textdomain the translation is located in.
@@ -421,7 +435,7 @@ public class Utils {
 			                                      "bash", "-c",
 			                                      "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
 			                                          " LANGUAGE=" + locale + " gettext -s \"" +
-			                                          value.replaceAll("\"", "\\\"") + "\""})
+			                                          escapeAsShellArgument(value) + "\""})
 			                                  .getInputStream()))
 			    .readLine();
 		} catch (Exception e) {
