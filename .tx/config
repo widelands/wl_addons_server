@@ -339,6 +339,14 @@ type                   = PO
 replace_edited_strings = false
 keep_translations      = false
 
+[o:widelands:p:widelands-addons:r:europeans-military-extension-wad]
+file_filter            = po/europeans_military_extension.wad/<lang>.po
+source_file            = po/europeans_military_extension.wad/europeans_military_extension.wad.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:widelands:p:widelands-addons:r:europeans-tribe-wad]
 file_filter            = po/europeans_tribe.wad/<lang>.po
 source_file            = po/europeans_tribe.wad/europeans_tribe.wad.pot

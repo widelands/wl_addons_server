@@ -261,7 +261,7 @@ Aalnase
 
 sync_safe
 1718728173
-111
+113
 0
 0
 0
@@ -355,7 +355,7 @@ kaputtnik
 
 sync_safe
 1701363821
-101
+103
 0
 0
 0
@@ -531,7 +531,7 @@ hessenfarmer
 
 sync_safe
 1673901188
-419
+421
 0
 0
 0
@@ -624,7 +624,7 @@ kaputtnik
 
 sync_safe
 1679920754
-193
+195
 0
 0
 0
@@ -717,7 +717,7 @@ kaputtnik
 
 sync_safe
 1731074666
-29
+30
 0
 0
 0
@@ -975,7 +975,7 @@ Nilpanda
 
 sync_safe
 1666688231
-723
+724
 1
 0
 0
@@ -1105,7 +1105,7 @@ ShipExplorerOZ
 
 sync_safe
 1712418149
-111
+112
 0
 0
 0
@@ -1191,7 +1191,7 @@ Teayo
 
 sync_safe
 1688747564
-226
+227
 0
 0
 0
@@ -1340,7 +1340,7 @@ kaputtnik
 
 sync_safe
 1715265495
-161
+164
 0
 0
 0
@@ -1459,7 +1459,7 @@ hessenfarmer
 
 sync_safe
 1690230129
-205
+206
 0
 0
 0
@@ -1548,7 +1548,7 @@ hessenfarmer
 
 sync_safe
 1633431899
-311
+312
 0
 0
 0
@@ -1722,7 +1722,7 @@ the-x
 
 sync_safe
 1692450525
-138
+140
 1
 0
 0
@@ -1765,7 +1765,7 @@ the-x
 
 sync_safe
 1689580553
-109
+110
 0
 0
 0
@@ -1804,7 +1804,7 @@ WeirdCatLord
 
 sync_safe
 1674388992
-184
+185
 0
 0
 0
@@ -1889,7 +1889,7 @@ WeirdCatLord
 
 sync_safe
 1674389456
-172
+174
 0
 0
 0
@@ -1974,7 +1974,7 @@ Nordfriese
 
 sync_safe
 1689081253
-155
+157
 0
 0
 0
@@ -2066,7 +2066,7 @@ TRueDesk
 
 sync_safe
 1666686938
-713
+714
 0
 0
 0
@@ -3197,7 +3197,7 @@ OIPUN
 
 sync_safe
 1719251296
-242
+245
 0
 0
 0
@@ -3757,7 +3757,7 @@ Nordfriese
 
 sync_safe
 1600000000
-787
+789
 0
 0
 0
@@ -5074,6 +5074,8 @@ MarkMcWire
 
 sync_safe
 1734222489
+5
+1
 0
 0
 0
@@ -5082,12 +5084,10 @@ sync_safe
 0
 0
 0
-0
-0
-0
+1
 0
 2.1.0
-0
+1
 8660058
 tribes
 1
@@ -5865,8 +5865,31 @@ tribes/scripting/starting_conditions/harbors_human.lua
 tribes/scripting/starting_conditions/headquarters_ai.lua
 tribes/scripting/starting_conditions/headquarters_human.lua
 tribes/scripting/starting_conditions.lua
-0
-703
+23
+bg.mo
+ca.mo
+cs.mo
+da.mo
+de.mo
+en_GB.mo
+eo.mo
+es.mo
+fi.mo
+fr.mo
+gd.mo
+hu.mo
+it.mo
+ja.mo
+ko.mo
+nds.mo
+nl.mo
+pl.mo
+pt.mo
+pt_BR.mo
+ru.mo
+sk.mo
+sv.mo
+726
 cdd87a541d3f770ce75c0ef9ba4502de
 8f4351f4ae1a2a378fdef5de03b7967d
 01aee306e5f8e90353842ff9fe0eb70c
@@ -6570,8 +6593,31 @@ c38fa7ad8f98a271a2d1d8bf578ec815
 d468d5a37e26929e23495ba7e880eeb8
 00516020c9a522bfdb933a5ca85546f4
 d51984c807358f3aa0a9b0ab2194b8f1
+030f83c96f058cbc90fcac56e9809664
+5e2f11a3d7bf3dcb8bdfa1c31f138c03
+599746712fc4695fe0163e1622ca60d5
+205dce6b246bb67a4885df23cf479dc7
+453eefe599652d0ec63e94eab0a5581c
+9082d5414d2d160593018cbbe0db066c
+0904122de67627b181e82eaf2cf39b69
+f1384a36384edaa9e0bc63634f7b2c1d
+e2b1a2ede2b13882b84b4a830d0ddac4
+7bc1266d476c7e249d2bcb6e0bf8b0c8
+36fb2e0a815995ae035451a237eefde4
+96b756c0255a3831687e0a989350794b
+904fa93c0cae9477c0160d09aec9ae47
+04acd0385f36ba4f85164d775299fa6b
+a48388aadb17c53552e97777e7f6aa49
+a46669175f53efbaeff6c1232d99a1b5
+a9c350529ad9ab259fe689e324b1df1a
+7a4006e8481a091ce8e5efa65078f2f0
+166883ee7b326d94d1fbbbdb402e0c7a
+1efab8b65de13a00c169f1f9e30258c4
+497a86d5a80f51d87c1574b82a995567
+767cf2ced1dbff5ced1cbd58a1b3401f
+a45bc1bd3c6dbc2da02d38f118dedcf4
 0
-unchecked
+verified
 europeans_tribe.wad
 Europeans Tribe (Full Addon)
 Provides all current features of the Europeans tribe.
@@ -6581,20 +6627,28 @@ MarkMcWire
 
 sync_safe
 1734192332
-2
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-2.1.0
+7
 1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+2
+Cupper
+not playable.  syntax error ??  game can not be loaded !
+2.1.0
+1734283794
+MarkMcWire
+I can't reproduce this error.
+2.1.0
+1734294133
+2.1.0
+2
 32048786
 tribes
 0
@@ -16213,7 +16267,7 @@ ab4852c383782cba7c71cbe5edfd4cf4
 a91f78ea25bf684fce989fba9390d5bb
 f060652cebae4cb6518687be94e3d187
 a6bf93d4b8a90960eda928c044d80106
-42c8c0cd308c65b1fe9742c6a54f315c
+78728751a99e4c8eed20384301b96567
 de1d798f0b114a834bd1b31bc8759c4a
 a8fc74bfbd5d5d14a80e98d253fa6db3
 4d66f927d643a92648dcef6d84fab45e
@@ -16231,7 +16285,7 @@ aDiscoverer
 
 sync_safe
 1667043185
-322
+323
 0
 0
 0
@@ -16471,7 +16525,7 @@ kaputtnik
 
 sync_safe
 1731074892
-27
+29
 0
 0
 0
@@ -16635,7 +16689,7 @@ Nordfriese
 
 sync_safe
 1600000000
-515
+516
 0
 0
 0
@@ -16950,7 +17004,7 @@ Nordfriese
 
 sync_safe
 1600000000
-1074
+1076
 0
 0
 0
@@ -17121,7 +17175,7 @@ Nordfriese
 
 sync_safe
 1600000000
-992
+994
 0
 0
 0
@@ -18305,7 +18359,7 @@ sync_safe
 0
 0
 0
-0
+1
 0
 1
 Cupper
@@ -18896,7 +18950,7 @@ arch_stanton
 
 sync_safe
 1648329410
-389
+390
 1
 0
 0
@@ -19197,7 +19251,7 @@ Nordfriese
 
 sync_safe
 1621620072
-341
+342
 0
 0
 0
@@ -19771,7 +19825,7 @@ Nordfriese
 
 sync_safe
 1600000000
-554
+556
 0
 0
 0
@@ -21465,7 +21519,7 @@ Nordfriese
 
 sync_safe
 1670750534
-108
+109
 0
 0
 0
@@ -21645,7 +21699,7 @@ OIPUN
 
 sync_safe
 1733507996
-22
+26
 0
 0
 0
@@ -21655,8 +21709,8 @@ sync_safe
 0
 0
 0
-0
-2
+1
+3
 Cupper
 Nice tribe, playable and nice buildings. Lovely.  But hard to get diamants 4 expedition when only few stones (mining) avaible.
 1.0.0
@@ -21665,8 +21719,12 @@ OIPUN
 Good tip, in the next version I"ll replace 2 diamonds with reed and cloth. Thank you for comments.
 1.0.0
 1733579883
+Cupper
+Hi, I already install OIPUN's unofficial tropics.wad (2.0.1) - from widelands website. Now all is fine on 'Mauritius' and other tropical maps.<br>_<br>But there must a newer one (2.0.2) !? wrong version at map selection.<br>On this server is only v1.0.3 available !!<br>_<br>Happy 3rd Advent
 1.0.1
-7
+1734266238
+1.0.1
+8
 16963140
 tribes
 1
@@ -26083,7 +26141,7 @@ b33bea6588ef70afa8faa80c7d1cab7c
 c4f7a7e78b02274802fb4349df232f7c
 184841b11e802884e2f0ede3f1f1be57
 6c53ce50036f8015be31776d54d821ea
-89d9689c6ce7adc12b3ee80554da6a61
+2a5607ac6af820c365465e0922e9d71b
 d6aa9f444b78ff960c0ff26868d8d8d8
 eb9196a44a3ed7e6b050a5d7d03f73c3
 e1d99c4d855000fea472ea8597ca7483
@@ -26101,7 +26159,7 @@ OIPUN
 
 sync_safe
 1733507938
-24
+29
 0
 0
 0
@@ -26111,7 +26169,7 @@ sync_safe
 0
 0
 0
-0
+1
 2
 Cupper
 Works fine while playing.  But EDITOR gets "picture"-error when active !?
@@ -26122,7 +26180,7 @@ Oops, that's not nice. I didn't check editor lately, while doing changes constan
 1.0.0
 1733579786
 1.0.1
-4
+5
 663575
 world
 0
@@ -26856,7 +26914,7 @@ fe5a728a259e3721d77dcb4a1b698a36
 83f146eee9440916836dbb85474d7fd5
 eaa35541fe4dc8993f2c0c88d8f6b62d
 6eecc046f44914fca91173325d97798e
-faa8514b16ad54962391178dea9be946
+60e16478fe3cfb05cd3f73198e72e120
 835a359d8637edb212f9b23b42700ad4
 56068a516828f30be4ebdc0b4c351267
 8106e912edf40efec23b4f39dda85f52
@@ -27588,7 +27646,7 @@ sync_safe
 0
 0
 1.1.0
-4
+5
 12682
 ui_plugin
 0
@@ -27641,7 +27699,7 @@ d5558fd4764bef03366353b059628ff4
 b3e747ab4056cd0e74332a68af86a8f9
 da89a98c5c509d7a2311ccb8e6d2774d
 c51369a67d132672eb719c580e0062b4
-6603eb1a4a9f941d6fed8cb0e8ea952e
+a67b2575d168331ad3f0ccc7b6f28fc6
 7c7b731a05262c565401559f6fcb696b
 fd3f3a1099f1ff4c4d146185761a2992
 ad26be002219ec178063291f42b049b3
@@ -27663,7 +27721,7 @@ Nordfriese
 
 sync_safe
 1600000000
-462
+463
 0
 0
 0
