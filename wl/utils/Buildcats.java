@@ -99,7 +99,9 @@ public class Buildcats {
 	public static void buildCatalogues() throws Exception {
 		File output = Files.createTempFile(null, ".lua").toFile();
 		PrintWriter write = new PrintWriter(new FileWriter(output));
-		ResultSet sql = Utils.sql(Utils.Databases.kWebsite, "select uploader_comment from wlmaps_map where uploader_comment is not null and uploader_comment != ''");
+		ResultSet sql = Utils.sql(
+		    Utils.Databases.kWebsite, "select uploader_comment from wlmaps_map where " +
+		                              "uploader_comment is not null and uploader_comment != ''");
 		while (sql.next()) {
 			String str = sql.getString("uploader_comment");
 			str = str.replaceAll("\\\\", "\\\\\\\\");
