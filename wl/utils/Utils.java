@@ -409,6 +409,7 @@ public class Utils {
 	 * @return Escaped text.
 	 */
 	public static String escapeAsShellArgument(String str) {
+		if (str == null) return "";
 		str = str.replaceAll("\\\\", "\\\\\\\\");
 		str = str.replaceAll("\t", "\\\\t");
 		str = str.replaceAll("\r", "\\\\r");
@@ -423,6 +424,7 @@ public class Utils {
 	 * @return Unescaped text.
 	 */
 	public static String unescapeFromShell(String str) {
+		if (str == null) return "";
 		str = str.replaceAll("\\\\\"", "\"");
 		str = str.replaceAll("\\\\t", "\t");
 		str = str.replaceAll("\\\\r", "\r");
