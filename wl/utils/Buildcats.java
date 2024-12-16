@@ -20,8 +20,12 @@
 package wl.utils;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.sql.ResultSet;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -93,17 +97,34 @@ public class Buildcats {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void buildCatalogues() throws Exception {
+		File output = Files.createTempFile(null, ".lua").toFile();
+		PrintWriter write = new PrintWriter(new FileWriter(output));
+		ResultSet sql = Utils.sql(Utils.Databases.kWebsite, "select uploader_comment from wlmaps_map where uploader_comment is not null and uploader_comment != ''");
+		while (sql.next()) {
+			String str = sql.getString("uploader_comment");
+			str = str.replaceAll("\\\\", "\\\\\\\\");
+			str = str.replaceAll("\t", "\\t");
+			str = str.replaceAll("\r", "\\r");
+			str = str.replaceAll("\n", "\\n");
+			str = str.replaceAll("\"", "\\\"");
+			write.print("_(\"");
+			write.print(str);
+			write.println("\")");
+		}
+		write.close();
+
 		File dir = new File("po", kWebsiteMapsTextdomain);
 		dir.mkdirs();
 		String out = dir.getPath() + "/" + kWebsiteMapsTextdomain + ".pot";
 		Runtime.getRuntime()
 		    .exec(new String[] {
-		        "xgettext", "--language=Lua", "--output=" + out, "--force-po",
+		        "xgettext", "--language=Lua", "-k_", "--output=" + out, "--force-po",
 		        "--copyright-holder=\"Widelands Development Team\"",
 		        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
-		        "/dev/null"})
+		        output.getAbsolutePath()})
 		    .waitFor();
 		recurse(out, new File(Utils.config("website_maps_path")), true);
+		output.delete();
 
 		for (File addon : Utils.listSorted(new File("addons"))) {
 			dir = new File("po", addon.getName());
