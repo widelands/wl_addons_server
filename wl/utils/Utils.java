@@ -443,15 +443,16 @@ public class Utils {
 		    locale == null || locale.isEmpty())
 			return value;
 		try {
-			String result = new BufferedReader(new InputStreamReader(
-			                              Runtime.getRuntime()
-			                                  .exec(new String[] {
-			                                      "bash", "-c",
-			                                      "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
-			                                          " LANGUAGE=" + locale + " gettext -s \"" +
-			                                          escapeAsShellArgument(value) + "\""})
-			                                  .getInputStream()))
-			    .readLine();
+			String result =
+			    new BufferedReader(
+			        new InputStreamReader(
+			            Runtime.getRuntime()
+			                .exec(new String[] {"bash", "-c",
+			                                    "TEXTDOMAINDIR=./i18n/ TEXTDOMAIN=" + textdomain +
+			                                        " LANGUAGE=" + locale + " gettext -s \"" +
+			                                        escapeAsShellArgument(value) + "\""})
+			                .getInputStream()))
+			        .readLine();
 			return unescapeFromShell(result);
 		} catch (Exception e) {
 			log("WARNING: gettext error for '" + value + "' @ '" + textdomain + "' / '" + locale +
