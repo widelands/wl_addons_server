@@ -418,6 +418,20 @@ public class Utils {
 	}
 
 	/**
+	 * Unescape special characters in a string.
+	 * @param str Text to unescape.
+	 * @return Unescaped text.
+	 */
+	public static String unescapeFromShell(String str) {
+		str = str.replaceAll("\\\\\"", "\"");
+		str = str.replaceAll("\\\\t", "\t");
+		str = str.replaceAll("\\\\r", "\r");
+		str = str.replaceAll("\\\\n", "\n");
+		str = str.replaceAll("\\\\\\\\", "\\\\");
+		return str;
+	}
+
+	/**
 	 * Translate a string.
 	 * @param value Text to translate.
 	 * @param textdomain Textdomain the translation is located in.
@@ -429,7 +443,7 @@ public class Utils {
 		    locale == null || locale.isEmpty())
 			return value;
 		try {
-			return new BufferedReader(new InputStreamReader(
+			String result = new BufferedReader(new InputStreamReader(
 			                              Runtime.getRuntime()
 			                                  .exec(new String[] {
 			                                      "bash", "-c",
@@ -438,6 +452,7 @@ public class Utils {
 			                                          escapeAsShellArgument(value) + "\""})
 			                                  .getInputStream()))
 			    .readLine();
+			return unescapeFromShell(result);
 		} catch (Exception e) {
 			log("WARNING: gettext error for '" + value + "' @ '" + textdomain + "' / '" + locale +
 			    "': " + e);
