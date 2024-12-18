@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 03:09+0100\n"
+"POT-Creation-Date: 2024-12-18 03:09+0100\n"
 "PO-Revision-Date: 2024-12-15 16:58+0000\n"
 "Last-Translator: Alex Rijckaert, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/widelands/teams/35159/nl/)\n"
@@ -691,7 +691,7 @@ msgstr "vtst-bergen"
 
 #: input:8 standard
 msgid "vtst-rivers"
-msgstr ""
+msgstr "vtst-rivieren"
 
 #: input:9 standard
 msgid "Kristin – edited by 3plus4i"
@@ -1399,12 +1399,16 @@ msgid ""
 "Some valleys surrounded by mountains rich of resources, with narrow paths "
 "connecting them."
 msgstr ""
+"Sommige valleien worden omringd door bergen die rijk zijn aan grondstoffen, "
+"met smalle paden die ze met elkaar verbinden."
 
 #: input:10 standard
 msgid ""
 "Spieler hinzugefügt und Landschaft verbessert, Karte verkleinert (unnötiges "
 "Wasser entfernt)"
 msgstr ""
+"Spelers toegevoegd en Landschap verbeterd, Kaart verkleind (onnodig Water "
+"verwijderd)"
 
 #: input:10 standard
 msgid ""
@@ -1413,6 +1417,11 @@ msgid ""
 "but it is not necessary to defeat other players. If you want to fight "
 "against players later, you can turn off the last 4 players."
 msgstr ""
+"DEZE KAART IS ONTWORPEN VOOR EEN LANGE SPEELTIJD!!! 8 stammen, 3 Eilanden en "
+"veel Grondstoffen. Je hebt een groot voordeel bij het maken van kolonies en "
+"het gebruik van veerboten, maar het is niet nodig om andere spelers te "
+"verslaan. Als je later tegen spelers wilt vechten, kun je de laatste 4 "
+"spelers uitschakelen."
 
 #: input:10 standard
 msgid ""
@@ -1426,12 +1435,23 @@ msgid ""
 "and starting points for new players. Feel pround like a new map god and have "
 "fun ;)"
 msgstr ""
+"Sjabloon van de nieuwe versie van de populaire Three Warriors-kaart. "
+"Uitbreiden tot een spelersaantal naar keuze met het ''copy-paste script'' "
+"dat je kunt vinden in het map editor forum. Heeft een dev build nodig voor "
+"debug console. Plaats het script in je hoofdmap (widelands.exe). Open met "
+"een teksteditor en controleer het spelersnummer en de coördinaten in de "
+"lussen om het juiste gedeelte te stampen. Opslaan. Vouw de map uit en open "
+"debug console F6. Type >dofile(''copypaste.lua'')<. Enter. Wacht, het kan "
+"even duren met grotere maps. Plaats dieren en startpunten voor nieuwe "
+"spelers. Voel je trots als een nieuwe map god en veel plezier ;)"
 
 #: input:10 standard
 msgid ""
 "Thanks to the limited resources around your headquarters, build ships to "
 "explore rich islands."
 msgstr ""
+"Dankzij de beperkte grondstoffen rond je hoofdkwartier kun je schepen bouwen "
+"om de rijke eilanden te verkennen."
 
 #: input:10 standard
 msgid ""
@@ -1439,12 +1459,18 @@ msgid ""
 "skills in naval warefare and managing a big economy with long transportation "
 "routes. They also try to madden you in this labyrinth of mountains."
 msgstr ""
+"De goden die dit stukje landschap hebben geschapen moeten wel gek zijn. Ze "
+"bewijzen je vaardigheden in oorlogvoering ter zee en het beheren van een "
+"grote economie met lange transportroutes. Ze proberen je ook gek te maken in "
+"dit labyrint van bergen."
 
 #: input:10 standard
 msgid ""
 "The indigenous people of the islands of Java and Sumatra are fighting for "
 "the gold of Krakatau."
 msgstr ""
+"De inheemse bevolking van de eilanden Java en Sumatra vecht om het goud van "
+"Krakatau."
 
 #: input:10 standard
 msgid ""
@@ -1454,6 +1480,12 @@ msgid ""
 "their colony. And all 4 managed to do so for some period of time. But who "
 "will be the most succesfull. We will see soon."
 msgstr ""
+"Er zijn eerder rotsachtige heuvels dan bergen op dit eiland. Maar deze "
+"ongerepte natuur, thuisbasis van vele unieke diersoorten zoals de bekende "
+"vogel Dodo, maakt het tot een klein paradijs. Nu willen 4 koloniale rijken "
+"van dit eiland hun kolonie maken. En alle 4 zijn ze daar voor een bepaalde "
+"periode in geslaagd. Maar wie zal het meest succesvol zijn? Dat zullen we "
+"snel zien."
 
 #: input:10 standard
 msgid ""
@@ -1464,6 +1496,13 @@ msgid ""
 "gold on the small  islands and moved some to their villages. They burried it "
 "near places they used for shipping and marked it with stones."
 msgstr ""
+"Deze twee grote eilanden omringd door kleine eilandjes vormen een "
+"uitstekende plek om beschavingen op te bouwen. Er zijn echter meer dan twee "
+"stammen die zich hier willen vestigen. Er woonden hier al eerder mensen en "
+"zij plaatsten staande stenen om plaatsen aan te geven waar ze goed konden "
+"vissen. Ze vonden goud op de kleine eilanden en brachten een deel naar hun "
+"dorpen. Ze begroeven het in de buurt van plaatsen die ze gebruikten voor de "
+"scheepvaart en markeerden het met stenen."
 
 #: input:10 standard
 msgid ""
@@ -1472,6 +1511,10 @@ msgid ""
 "as you were told earlier. You should expect fierce opposition. Expand your "
 "base and be the first to reach the ring of power."
 msgstr ""
+"Ze hadden nauwelijks tijd om zich voor te bereiden toen ze aan boord gingen "
+"naar dit eiland. Volgens jullie ontdekkingsreizigers zal het echter niet zo "
+"gemakkelijk gaan als jullie eerder is verteld. Je kunt hevige tegenstand "
+"verwachten. Breid je basis uit en bereik als eerste de ring van macht."
 
 #: input:10 standard
 msgid ""
@@ -1479,6 +1522,9 @@ msgid ""
 "tributaries Tisa, Sava and Drava created a wast lowland full of riparian "
 "forests surrounded by high peaks of Carpathians, Dinarides and Alps."
 msgstr ""
+"Dit is de Grote Donauwereld. De brede, nooit eindigende rivier de Donau en "
+"zijn zijrivieren de Tisa, de Sava en de Drava creëerden een woest laagland "
+"vol oeverbossen omringd door hoge toppen van de Karpaten, Dinariden en Alpen."
 
 #: input:10 standard
 msgid ""
@@ -1486,12 +1532,18 @@ msgid ""
 "receiving spot while your team mate has to build one on the corresponding "
 "receiving/sending spot. A ware is then transported every 10 seconds."
 msgstr ""
+"Om een smokkelroute op te zetten moet je een pakhuis bouwen op een verzend/"
+"ontvangstplek terwijl je teamgenoot er een moet bouwen op de "
+"corresponderende ontvangst/verzendplek. Elke 10 seconden wordt er dan een "
+"goed getransporteerd."
 
 #: input:10 standard
 msgid ""
 "Tolle Seefahrerkarte mit Goldinsel und vielem mehr  Blau und Rot v Gelb und "
 "Grün"
 msgstr ""
+"Geweldige zeekaart met gouden eiland en veel meer blauw en rood versus geel "
+"en groen"
 
 #: input:10 standard
 msgid ""
@@ -1501,10 +1553,15 @@ msgid ""
 "Bruder Flavus, der Rom immer treu blieb, wandte sich Arminius gegen die "
 "römische Oberherrschaft."
 msgstr ""
+"In 9 na Christus bevond Varus zich ver landinwaarts in Germanië. De Romeinen "
+"bezaten enkele delen van dit land, maar geen aaneengesloten gebied. Varus' "
+"tegenstander was Arminius, een prins van de Cherusken. In tegenstelling tot "
+"zijn broer Flavus, die Rome altijd trouw bleef, keerde Arminius zich tegen "
+"de Romeinse overheersing."
 
 #: input:10 standard
 msgid "Very unbalanced map of a crater in a fertile valley."
-msgstr ""
+msgstr "Zeer onevenwichtige kaart van een krater in een vruchtbare vallei."
 
 #: input:10 standard
 msgid ""
@@ -1514,6 +1571,11 @@ msgid ""
 "Imperia Resica die vom Norden kommenden Friesen als Gefahr sahen taten sie "
 "sich zusammen."
 msgstr ""
+"Een paar jaar geleden vielen de Imperia Resica het grondgebied van de "
+"Belebarians binnen. Omdat het rijk maar een klein stukje ruimte in beslag "
+"nam, lieten de Belebarianen het rijk met rust tot de Friezen verschenen. "
+"Omdat de Belebarianen en de Imperia Resica de Friezen vanuit het noorden als "
+"een bedreiging zagen, bundelden ze hun krachten."
 
 #: input:10 standard
 msgid ""
@@ -1522,6 +1584,11 @@ msgid ""
 "hideaway in case an enemy appears on this side. But I am afraid we will not "
 "reach The Main Landbelt without fight."
 msgstr ""
+"We hebben niet genoeg ruimte en ons hoofdkwartier is hier in gevaar. We "
+"moeten een kolonie bouwen aan de andere kant van dit meer. Zo krijgen we "
+"meer land en een schuilplaats voor het geval er aan deze kant een vijand "
+"opduikt. Maar ik ben bang dat we de The Main Landbelt niet zonder slag of "
+"stoot zullen bereiken."
 
 #: input:10 standard
 msgid ""
@@ -1532,12 +1599,21 @@ msgid ""
 "makes me wanna build a ship and set up a new port. Let's turn the dream I "
 "once had into reality again."
 msgstr ""
+"We hebben een lange weg achter ons. Zo lang dat herinneringen aan mijn huis "
+"aanvoelen als herinneringen aan een droom. Het is alsof de plek die me heeft "
+"gemaakt tot de man die ik ben nooit heeft bestaan. Maar ik ben er nog "
+"steeds, voel nog steeds dezelfde zwaartekracht. En dit donkere land... Hoe "
+"sinister het er ook uitziet, het water vervult me met vreugde. Het geeft me "
+"zin om een schip te bouwen en een nieuwe haven in te richten. Laten we de "
+"droom die ik ooit had weer werkelijkheid maken."
 
 #: input:10 standard
 msgid ""
 "Weites Grün und Flüsse, so weit das Auge reicht. Expeditionen in Häfen sind "
 "ein Muss um überhaupt zum Gegner zu kommen."
 msgstr ""
+"Uitgestrekt groen en rivieren zover het oog reikt. Expedities naar havens "
+"zijn een must om zelfs maar bij de tegenstander te komen."
 
 #: input:10 standard
 msgid ""
@@ -1547,16 +1623,23 @@ msgid ""
 "gesetzten Rohstoffe. Wer wird das alte Ägyßten erobern? 1,2,3 gegen 4,5,6 "
 "aber auch in beliebigen anderen Paarungen spielbar."
 msgstr ""
+"Welkom in het oude Egypte Tripoli vereist strategische vaardigheid en een "
+"goed Team dat samenwerkt ;-) Ontworpen door the-x met allerlei strategische "
+"Subtiliteiten, een Driedimensionale Kaart en intelligent geplaatste "
+"Grondstoffen. Wie zal de oude Aegysses veroveren? 1,2,3 tegen 4,5,6 maar ook "
+"speelbaar in andere Combinaties."
 
 #: input:10 standard
 msgid ""
 "Wurde modifiziert durch:  3 Spieler weniger, Wasserwege hinzugefügt + "
 "bessere Verteilung der Rohstoffe."
 msgstr ""
+"Gewijzigd door: 3 Spelers minder, Waterwegen toegevoegd + betere Verdeling "
+"van Grondstoffen."
 
 #: input:10 standard
 msgid "You are an Amoebae, expand and conquer all other Amoebae... "
-msgstr ""
+msgstr "Je bent een Amoebe, breid uit en verover alle andere Amoebes..."
 
 #: input:10 standard
 msgid ""
@@ -1565,38 +1648,46 @@ msgid ""
 "hard to conquer but easy to lose. So, if you want it, be aware of the other "
 "clans."
 msgstr ""
+"Je staat op een eiland, bekroond door machtige bergen die in hun midden een "
+"prachtige en machtige schat bewaren – Het Groene Plateau, dat moeilijk te "
+"veroveren maar gemakkelijk te verliezen is. Dus als je het wilt hebben, moet "
+"je opletten voor de andere clans."
 
 #: input:10 standard
 msgid ""
 "You wake up next to an oasis. You see nothing but rocks, a few trees, some "
 "mountains and a hilly desert."
 msgstr ""
+"Je wordt wakker naast een oase. Je ziet niets anders dan rotsen, een paar "
+"bomen, wat bergen en een heuvelachtige woestijn."
 
 #: input:10 standard
 msgid "Zu zwölft den Saturn Besiedelm"
-msgstr ""
+msgstr "Twaalf om Saturnus te Koloniseren"
 
 #: input:10 standard
 msgid ""
 "an archipelago with one large island in the centre. All of the small islands "
 "are inhabitable and each has different resources."
 msgstr ""
+"een archipel met één groot eiland in het midden. Alle kleine eilanden zijn "
+"bewoonbaar en hebben verschillende grondstoffen."
 
 #: input:10 standard
 msgid "send geologists!         "
-msgstr ""
+msgstr "stuur geologen!"
 
 #: input:11 standard
 msgid "1,2,3 gegen 4,5,6 aber auch in beliebigen anderen Paarungen spielbar."
-msgstr ""
+msgstr "1,2,3 tegen 4,5,6 maar ook speelbaar in andere combinaties."
 
 #: input:11 standard
 msgid "All positions are fully equal! :)"
-msgstr ""
+msgstr "Alle posities zijn volledig gelijk! :)"
 
 #: input:11 standard
 msgid "Alle Rohstoffe sind in begrenzten Maße vorhanden."
-msgstr ""
+msgstr "Alle Grondstoffen zijn Beperkt beschikbaar."
 
 #: input:11 standard
 msgid ""
@@ -1605,17 +1696,26 @@ msgid ""
 "define the difficulty by playing against different AI-Teams. Although some "
 "players have more space in the beginning i would consider this map balanced."
 msgstr ""
+"Wees je ervan bewust dat je omringd bent door vijanden. Schakel diplomatie "
+"uit voor een makkelijker spel, schakel het in voor een uitdagender spel. "
+"Daarnaast kun je de moeilijkheidsgraad bepalen door tegen verschillende AI-"
+"teams te spelen. Hoewel sommige spelers in het begin meer ruimte hebben, zou "
+"ik deze kaart als evenwichtig beschouwen."
 
 #: input:11 standard
 msgid ""
 "Blue - New Camp, Red - Old Camp, Yellow - Swamp Camp, Green - Orcs Village"
 msgstr ""
+"Blauw - Nieuw kamp, Rood - Oud kamp, Geel - Moeraskamp, Groen - Orksdorp"
 
 #: input:11 standard
 msgid ""
 "Borders will form with your left and right neighbours in FFA and 1st team "
 "suggestion. Take 2nd suggestion for one friendly and one hostile border."
 msgstr ""
+"Grenzen worden gevormd met je linker- en rechterburen in FFA en 1e "
+"teamsuggestie. Neem de 2e suggestie voor een vriendelijke en een vijandige "
+"grens."
 
 #: input:11 standard
 msgid ""
@@ -1625,6 +1725,11 @@ msgid ""
 "Outpost. Map is more suitable for multiplayer. Each player has two port "
 "spaces on his home island."
 msgstr ""
+"Borneo is gemakkelijk te herkennen aan de witte stranden. Het heeft 10 "
+"havenvelden en 13 kunstvoorwerpen. Als je wilt winnen, moet je er een haven "
+"bouwen. Niet geschikt voor de Autocraat of HQ Jager. AI moet beginnen met "
+"Handelspost. De kaart is meer geschikt voor multiplayer. Elke speler heeft "
+"twee havenvelden op zijn thuiseiland."
 
 #: input:11 standard
 msgid ""
@@ -1633,6 +1738,11 @@ msgid ""
 "rocks and a standing stone. There are places where the water is too wide for "
 "Ware carriers to cross on foot. Use a ferry to overcome this problem. "
 msgstr ""
+"Bouw een schip met het goud uit de kleine mijn die vlakbij je "
+"dichtstbijzijnde haven ligt. Vorige bewoners hebben de mijn gemarkeerd met "
+"kleine rotsen en een staande steen. Er zijn plaatsen waar het water te breed "
+"is voor Ware dragers om te voet over te steken. Gebruik een veerboot om dit "
+"probleem op te lossen."
 
 #: input:11 standard
 msgid ""
@@ -1642,6 +1752,11 @@ msgid ""
 "that your opponents may not start an expedition at all and may rather choose "
 "a land path."
 msgstr ""
+"Verzamelaars en Territoriale Heer aanbevolen. Ook geschikt voor een "
+"vreedzame speelwijze. 2 teams mogelijk, geel en blauw moeten tegen elkaar "
+"spelen. Als je met één speler speelt, moet je rekening houden met de "
+"mogelijkheid dat je tegenstanders helemaal geen expeditie starten en liever "
+"een landpad kiezen."
 
 #: input:11 standard
 msgid ""
@@ -1651,6 +1766,9 @@ msgid ""
 "Mountains.  It is possible to build normal Ships but is it limited useable.  "
 "Stone Ressourses are in the Mountains directly near your Starting Position."
 msgstr ""
+"NL : Goud in de Randen van de bergen. Het is mogelijk om normale Schepen te "
+"bouwen, maar het is beperkt bruikbaar. Stenen Grondstoffen bevinden zich in "
+"de Bergen direct in de buurt van je Startpositie."
 
 #: input:11 standard
 msgid ""
@@ -1662,6 +1780,12 @@ msgid ""
 "Geschichtsbücher einzugehen oder aber auf den Feldern des "
 "Eisenholzbezwingers zu arbeiten. "
 msgstr ""
+"Helaas ben je niet alleen. Onze Verkenners hebben U, het Opperhoofd van onze "
+"kleine Stam, net verteld dat er ver naar het Oosten een Vreemde natie ligt. "
+"De Verkenner zei iets over een symmetrische Wereld, wat al onze "
+"Wetenschappers op het verkeerde been zou zetten. Je hebt nu de Kans om de "
+"Geschiedenisboeken in te gaan als de grootste Strateeg aller Tijden of om te "
+"werken op de velden van de Ironwood Veroveraar. "
 
 #: input:11 standard
 msgid ""
@@ -1671,12 +1795,20 @@ msgid ""
 "coast to force the shipbuilder to build ships on the wanted coast. The AI "
 "does not work very well on this map. "
 msgstr ""
+"Het inschakelen van oorlogvoering op zee wordt aanbevolen. Je moet de zee "
+"bevaren en waarschijnlijk veel havens en scheepswerven bouwen totdat je je "
+"tegenstander bereikt. Misschien moet je het werkgebied van een scheepswerf "
+"beperken door wegen langs de kust te plaatsen om de scheepsbouwer te dwingen "
+"schepen te bouwen aan de gewenste kust. De AI werkt niet erg goed op deze "
+"kaart. "
 
 #: input:11 standard
 msgid ""
 "Find the exit of the circus and follow the sand paths. Waterways are not "
 "most useful."
 msgstr ""
+"Zoek de uitgang van het circus en volg de zandpaden. Waterwegen zijn niet "
+"erg nuttig."
 
 #: input:11 standard
 msgid ""
@@ -1685,6 +1817,10 @@ msgid ""
 "barefaced enough to settle on the coast of that island, a lot other followed "
 "afterwards."
 msgstr ""
+"Honderden jaren lang was dit eiland het heiligdom van de Goden. Geen mens "
+"heeft er ooit een voet durven zetten. Maar nu er eindelijk een stam brutaal "
+"genoeg was om zich op de kust van dat eiland te vestigen, volgden er vele "
+"anderen."
 
 #: input:11 standard
 msgid ""
@@ -1697,51 +1833,71 @@ msgid ""
 "das anfangs wenige Gold ausgibst. Wenn du das Gold nicht für Häfen ausgibst, "
 "fehlt dir der Zugang zu weiterem Gold für Häfen und Expeditionen zum Gegner."
 msgstr ""
+"Vijanden zijn heel dichtbij! Het kan erg de moeite waard zijn om bepaalde "
+"havenbouwplaatsen zo snel mogelijk onder controle te krijgen. Zorg ervoor "
+"dat de scheepswerven en de schepen op de juiste plek worden gebouwd. Een "
+"rivier leidt over een klein haveneiland naar een oranje eiland met veel "
+"metaal. Deze rivier is echter een langere weg dan andere wegen naar minder "
+"metaal. Denk daarom goed na in welke haven je het weinige goud dat je aan "
+"het begin hebt uitgeven voor een volgende expeditie. Als je het goud niet "
+"uitgeeft aan havens, heb je geen toegang tot verder goud voor havens en "
+"expedities naar de vijand."
 
 #: input:11 standard
 msgid "Gold is hard to get to."
-msgstr ""
+msgstr "Goud is moeilijk te vinden."
 
 #: input:11 standard
 msgid "Haches & Pioches !"
-msgstr ""
+msgstr "Haaien & Pioches!"
 
 #: input:11 standard
 msgid "Have Fun! ^-^"
-msgstr ""
+msgstr "Veel Plezier! ^-^"
 
 #: input:11 standard
 msgid ""
 "Land eingeebnet damit man leichter bauen kann, Rohstoffe besser verteilt."
 msgstr ""
+"Land geëgaliseerd om gemakkelijker te kunnen bouwen, Grondstoffen beter "
+"verdeeld."
 
 #: input:11 standard
 msgid ""
 "Long game for 2 or 5 players or 2 teams. Rich on resources, just coal "
 "deposits are medium."
 msgstr ""
+"Lang spel voor 2 of 5 spelers of 2 teams. Rijk aan grondstoffen, alleen "
+"steenkoollagen zijn gemiddeld."
 
 #: input:11 standard
 msgid ""
 "Magic Ore = Iron, No coal, medium and big buildings places are where "
 "buildings were in the Gothic game"
 msgstr ""
+"Magisch erts = IJzer, Geen Kolen, middelgrote en grote gebouwen plaatsen "
+"waar gebouwen stonden in het Gotische spel"
 
 #: input:11 standard
 msgid ""
 "Map is balanced for 4 players. Gold is very rare on this map. There is a "
 "small deposit of 100 pieces of golden ore near each starting position."
 msgstr ""
+"Kaart is gebalanceerd voor 4 spelers. Goud is erg zeldzaam op deze kaart. Er "
+"is een klein depot van 100 stukken gouden erts in de buurt van elke "
+"startpositie."
 
 #: input:11 standard
 msgid ""
 "Naval warefare is not needed but recommended. Gold can only be found on the "
 "leaves."
 msgstr ""
+"Marine oorlogvoering is niet nodig maar wel aanbevolen. Goud is alleen te "
+"vinden op de bladeren."
 
 #: input:11 standard
 msgid "No fish, no trees."
-msgstr ""
+msgstr "Geen vis, geen bomen."
 
 #: input:11 standard
 msgid ""
@@ -1755,6 +1911,15 @@ msgid ""
 "the mountains from Khornis to Jarkendar and one long way in the mountains "
 "from Mine Valley to Jarkendar. "
 msgstr ""
+"Plaatsen voor middelgrote en grote gebouwen zijn op de plaatsen waar de "
+"stad, boerderijen, ruïnes en andere gebouwen zijn in het spel Gothic. Geen "
+"kolen. Steen: in plaats van grotten. IJzer: in plaats van magische "
+"ertsmijnen, Greg's schatten in Jarkendar, een grot op Pirates beach, een "
+"grot ten noorden van de stad, een ingestorte mijn naast Xardas, de Sleeper's "
+"Temple. Goud: drakenschatten, dievenschatten, een goudmijn van bandieten, "
+"een Vuurproefgrot naast zwarte trol, een grot naast de piramide, een grot op "
+"het strand naast Piratenstrand. Er zijn twee wegen in de bergen van Khornis "
+"naar Jarkendar en één lange weg in de bergen van Mine Valley naar Jarkendar. "
 
 #: input:11 standard
 msgid ""
@@ -1764,10 +1929,15 @@ msgid ""
 "path length : None , Height steepness : Medium 3/5 , Big building Places : "
 "Medium 3/5"
 msgstr ""
+"Havens : 54 (6 per eiland, 1 per eilandhoek) , Voorwerpen : 1 "
+"(Centrumeiland) , Bergrijkdommen : Veel 5/5 , Bomen : Veel 5/5 , Rotsen : "
+"Middelmatig 3/5 , Dieren : Veel 4/5 , Vissen : Middelmatig 3/5 (5 per "
+"punt) , Max veerpadlengte : Geen , Hoogte steilheid : Middelmatig 3/5 , "
+"Groot gebouw Plaatsen : Middelmatig 3/5"
 
 #: input:11 standard
 msgid "Protect your people from the eruption of Krakatau."
-msgstr ""
+msgstr "Bescherm je volk tegen de uitbarsting van Krakatau."
 
 #: input:11 standard
 msgid ""
@@ -1776,6 +1946,11 @@ msgid ""
 "players (red x blue or yellow x green). The yellow-green combination takes "
 "more time to win as the starting positions are far away."
 msgstr ""
+"Rijk aan grondstoffen. Niet uitgebalanceerd voor 4 spelers (rood en blauw "
+"liggen in het midden, moeilijker om te winnen). Ideaal voor 2 teams "
+"(rood+blauw x geel+groen) of voor 2 spelers (rood x blauw of geel x groen). "
+"De combinatie geel-groen kost meer tijd om te winnen omdat de startposities "
+"ver weg zijn."
 
 #: input:11 standard
 msgid ""
@@ -1783,22 +1958,26 @@ msgid ""
 "Möglichkeiten  weiß: der Seefahrer blau: Im Hochgebirge (Tipp) dunkelgrün: "
 "Im Ödland"
 msgstr ""
+"Grondstoffen worden zorgvuldig gekozen, maar er zijn altijd meerdere opties "
+"wit: de zeeman blauw: in het hooggebergte (hint) donkergroen: in de woestenij"
 
 #: input:11 standard
 msgid "Seefahrt"
-msgstr ""
+msgstr "Zeevaart"
 
 #: input:11 standard
 msgid "Seefahrt, entspanntes Spielen da Feind nicht so schnell angreifen kann."
 msgstr ""
+"Reizen over zee, ontspannen Spelen omdat de Vijand niet zo snel kan "
+"aanvallen."
 
 #: input:11 standard
 msgid "Spieler 1 startet in der Mitte und hat es am Schwersten."
-msgstr ""
+msgstr "Speler 1 begint in het Midden en heeft het het Moeilijkst."
 
 #: input:11 standard
 msgid "Start positions are clockwise"
-msgstr ""
+msgstr "Startposities zijn met de klok mee"
 
 #: input:11 standard
 msgid ""
@@ -1807,6 +1986,10 @@ msgid ""
 "resources near his base, the second one is in the middle of the map. This is "
 "a non-addon version of the ''Tropical Mauritius'' map."
 msgstr ""
+"De kaart is gebalanceerd voor 2 of 4 spelers. De oranje speler ( Grote Baai) "
+"en de grijze speler ( Lichtstad) zijn optioneel. De eerste heeft niet genoeg "
+"grondstoffen in de buurt van zijn basis, de tweede zit in het midden van de "
+"kaart. Dit is een niet-addon versie van de kaart ''Tropical Mauritius''."
 
 #: input:11 standard
 msgid ""
@@ -1814,6 +1997,10 @@ msgid ""
 "also be fun for multiplayer if more advanced player starts from blue "
 "player's position and less advanced players from the rest two places."
 msgstr ""
+"De kaart is ontworpen om te worden gespeeld vanaf het startpunt van de "
+"blauwe speler. Het kan ook leuk zijn voor multiplayer als de meer gevorderde "
+"speler start vanaf de positie van de blauwe speler en de minder gevorderde "
+"spelers vanaf de overige twee plaatsen."
 
 #: input:11 standard
 msgid ""
@@ -1825,6 +2012,13 @@ msgid ""
 "your enemy would have an advantage. 1v1, 2 teams or 2 humans with 2 AIs also "
 "possible."
 msgstr ""
+"Dit is een kaart voor een tactisch gevecht. Verwacht allerlei soorten "
+"strijd. AI presteert niet erg goed (je moet Barbaren kiezen). Je hebt land "
+"van je vijand nodig om The Main Landbelt te bereiken, vanwaar je toegang "
+"hebt tot elke hoek van deze kaart. Je kunt er ook 4 artefacten vinden. Je "
+"thuisland is moeilijk te verdedigen. Verwacht dat je het kunt verliezen, "
+"maar probeer het te verdedigen. Als je dat niet doet, is je vijand in het "
+"voordeel. 1v1, 2 teams of 2 mensen met 2 AI's ook mogelijk."
 
 #: input:11 standard
 msgid ""
@@ -1833,6 +2027,10 @@ msgid ""
 "possible (recommended for yellow and blue in case one of these is your "
 "enemy). While played from red position Empire is more challenging,"
 msgstr ""
+"Dit is een aangepaste versie van een officiële kaart. Teams aanbevolen. Om "
+"goud tekort te overwinnen is een expeditie nodig. Outpost ruilen voor AI is "
+"mogelijk (aanbevolen voor geel en blauw voor het geval een van deze je "
+"vijand is). Vanuit rode positie gespeeld is Empire uitdagender,"
 
 #: input:11 standard
 msgid ""
@@ -1840,10 +2038,14 @@ msgid ""
 "optimal. There are only few spots where you can build bridges across the "
 "wide rivers and few mountain passes. The map is rich on resources."
 msgstr ""
+"Deze kaart is voor 2 tot 6 spelers. Maar 3 of 4 spelers zijn waarschijnlijk "
+"geschikter. Er zijn maar een paar plekken waar je bruggen kunt bouwen over "
+"de brede rivieren en een paar bergpassen. De kaart is rijk aan grondstoffen."
 
 #: input:11 standard
 msgid "This map is small. If you want some space, you should play 1v1 game."
 msgstr ""
+"Deze kaart is klein. Als je wat ruimte wilt, moet je een 1v1-spel spelen."
 
 #: input:11 standard
 msgid ""
@@ -1852,18 +2054,26 @@ msgid ""
 "aware that some very small islands have never been explored and do not have "
 "any port space yet."
 msgstr ""
+"Gebruik het goud in de buurt van je dorp om schepen te bouwen voordat je je "
+"leger opbouwt. Zoek goud op de kleine eilanden om je leger te betalen. Je "
+"moet er ook rekening mee houden dat sommige hele kleine eilanden nog nooit "
+"verkend zijn en nog geen havenruimte hebben."
 
 #: input:11 standard
 msgid ""
 "Wasser ist nur in der Nähe von Flüssen vorhanden !  Insgesamt gibt es 5 "
 "Artefakte, alle auf der Tal-Mittelpunkt-Achse verteilt"
 msgstr ""
+"Water is alleen beschikbaar bij rivieren! Er zijn in totaal 5 Voorwerpen, "
+"allemaal verspreid langs de Centrale As van de Vallei"
 
 #: input:11 standard
 msgid ""
 "Water along the rivers. Fish in the ponds but not in the rivers. Two large "
 "islands with mountains rich of resources."
 msgstr ""
+"Water langs de rivieren. Vis in de vijvers maar niet in de rivieren. Twee "
+"grote eilanden met bergen die rijk zijn aan grondstoffen."
 
 #: input:11 standard
 msgid ""
@@ -1872,14 +2082,18 @@ msgid ""
 "British Empire: create sustainable colonies ///2) Russian Empire: Very large "
 "distances  ..."
 msgstr ""
+"Brede rivieren zijn bevaarbaar om een ''handelsnetwerk'' te creëren Alle "
+"spelers hebben hun eigen uitdagingen, maar zijn relatief uitgebalanceerd om "
+"speelbaar te zijn: ///1) Britse Rijk: creëer duurzame koloniën ///2) "
+"Russische Rijk: Zeer grote afstanden ..."
 
 #: input:11 standard
 msgid "have fun!"
-msgstr ""
+msgstr "veel plezier!"
 
 #: input:11 standard
 msgid "https://www.perplex.click"
-msgstr ""
+msgstr "https://www.perplex.click"
 
 #. TRANSLATORS: %s = '<number> points'
 #: input:12 standard
@@ -1888,26 +2102,28 @@ msgid ""
 "For harder to defend smuggling routes, you get 2 or 3 points per ware "
 "smuggled. The first team to collect %s wins."
 msgstr ""
+"Voor moeilijker te verdedigen smokkelroutes krijg je 2 of 3 punten per "
+"gesmokkelde waar. Het eerste team dat %s verzamelt wint."
 
 #: input:12 input:14 input:56 standard
 msgid "The Forbidden Island"
-msgstr ""
+msgstr "Het Verboden Eiland"
 
 #: input:13 standard
 msgid "A sending spot"
-msgstr ""
+msgstr "Een verzendplek"
 
 #: input:14 standard
 msgid "A receiving spot"
-msgstr ""
+msgstr "Een ontvangstplek"
 
 #: input:14 standard
 msgid "Build a port"
-msgstr ""
+msgstr "Bouw een haven"
 
 #: input:15 standard
 msgid "Build a port in the land of Törver."
-msgstr ""
+msgstr "Bouw een haven in het land van Törver."
 
 #: input:15 input:57 standard
 msgid ""
@@ -1917,10 +2133,17 @@ msgid ""
 "the other warlords has detected us so far, so we should keep quiet and build "
 "up our infrastructure. Soon we will be strong enough to raid their positions."
 msgstr ""
+"Eindelijk! We hebben zojuist onze eerste stap naar de overwinning gezet! "
+"Gisteravond zijn we op het verboden eiland geland en hebben we de paar "
+"wachters verslagen die het noordwestelijke deel van het eiland in de gaten "
+"hielden. Ik ben er vrij zeker van dat geen van de andere krijgsheren ons tot "
+"nu toe heeft ontdekt, dus we moeten ons rustig houden en onze infrastructuur "
+"opbouwen. Binnenkort zullen we sterk genoeg zijn om hun posities te "
+"overvallen."
 
 #: input:15 standard
 msgid "Notes"
-msgstr ""
+msgstr "Opmerkingen"
 
 #: input:16 standard
 msgid ""
@@ -1928,16 +2151,21 @@ msgid ""
 "found a spot to the top-left of your headquarters, the corresponding spot "
 "will be to the bottom-right of the headquarters of your team mate."
 msgstr ""
+"Vergeet niet dat de kaart draaisymmetrisch is. Als je bijvoorbeeld een plek "
+"linksboven je hoofdkwartier hebt gevonden, zal de corresponderende plek "
+"rechtsonder het hoofdkwartier van je teamgenoot zijn."
 
 #: input:17 standard
 msgid ""
 "You can see the number of wares traded at any time in the general statistics "
 "menu. Good luck!"
 msgstr ""
+"Je kunt het aantal verhandelde waren op elk moment zien in het algemene "
+"statistiekmenu. Veel succes!"
 
 #: input:21 standard
 msgid "Conquer pirate sentry"
-msgstr ""
+msgstr "Overwin de piratenschildwacht"
 
 #. TRANSLATORS: the first 2 parameters are player names, the last parameter is '<number> points'
 #: input:22 standard
@@ -1945,18 +2173,20 @@ msgid ""
 "A new smuggling route from %1$s to %2$s has been established! Every ware "
 "they smuggle there is worth %3$s."
 msgstr ""
+"Er is een nieuwe smokkelroute van %1$s naar %2$s Elk goed dat ze daar "
+"smokkelen is %3$swaard."
 
 #: input:22 standard
 msgid "Conquer the pirate sentry near the brook to the east."
-msgstr ""
+msgstr "Overwin de piratenschildwacht bij de beek in het oosten."
 
 #: input:23 input:25 standard
 msgid "Capture the Ancient Castle"
-msgstr ""
+msgstr "Verover het Oude Kasteel"
 
 #: input:26 standard
 msgid "Defeat Lanissa and capture the ancient castle."
-msgstr ""
+msgstr "Versla Lanissa en verover het oude kasteel."
 
 #. TRANSLATORS: %s = '<number> points'
 #: input:26 standard
@@ -1965,14 +2195,16 @@ msgid ""
 "Your team has established a new smuggling route. You have the sending "
 "warehouse. Every ware smuggled here is worth %s."
 msgstr ""
+"Je team heeft een nieuwe smokkelroute opgezet. Jij hebt het verzendende "
+"pakhuis. Elk goed dat hier wordt gesmokkeld is%s."
 
 #: input:28 standard
 msgid "Build warehouse"
-msgstr ""
+msgstr "Bouw een magazijn"
 
 #: input:29 standard
 msgid "Build a warehouse close to the pirate sentry near the brook."
-msgstr ""
+msgstr "Bouw een pakhuis in de buurt van de piratenschildwacht bij de beek."
 
 #. TRANSLATORS: %s = '<number> points'
 #: input:30 standard
@@ -1981,23 +2213,27 @@ msgid ""
 "Your team has established a new smuggling route. You have the receiving "
 "warehouse. Every ware smuggled here is worth %s."
 msgstr ""
+"Je team heeft een nieuwe smokkelroute opgezet. Jij hebt het ontvangende "
+"magazijn. Elk goed dat hier wordt gesmokkeld is %s."
 
 #: input:31 standard
 msgid "Build up a wood economy"
-msgstr ""
+msgstr "Bouw een houteconomie op"
 
 #: input:31 standard
 msgid ""
 "Rohstoffe sind mit Bedacht gesetzt, es gibt aber immer mehrere Möglichkeiten"
 msgstr ""
+"De Grondstoffen worden zorgvuldig Bepaald, maar er zijn altijd verschillende "
+"Mogelijkheden"
 
 #: input:32 input:34 standard
 msgid "Defeat Erwyn"
-msgstr ""
+msgstr "Versla Erwyn"
 
 #: input:32 standard
 msgid "Our northern enemy"
-msgstr ""
+msgstr "Onze noordelijke vijand"
 
 #: input:33 standard
 msgid ""
@@ -2010,41 +2246,50 @@ msgid ""
 "situation.\n"
 "Törver has a very bad reputation."
 msgstr ""
+"Sire, hoewel onze soldaten elke vijand zonder angst tegemoet treden..,\n"
+"is onze rivaal in het noorden nog steeds sterker dan al onze legers samen. "
+"Wij\n"
+"moeten een conflict vermijden totdat we in staat zijn om het te verslaan.\n"
+"<br><br>\n"
+"Wees geduldig en erken dat een sterk leger onmisbaar is in deze situatie.\n"
+"Törver heeft een zeer slechte reputatie."
 
 #: input:33 standard
 msgid "Wood Economy"
-msgstr ""
+msgstr "Hout Economie"
 
 #: input:34 standard
 msgid "Build three lumberjack’s houses, a forester’s house and a sawmill."
-msgstr ""
+msgstr "Bouw drie houthakkershuizen, een boswachtershuis en een houtzagerij."
 
 #. TRANSLATORS: the first parameter is '<number> points', the last 2 parameters are player names
 #: input:34 standard
 msgid "The smuggling route worth %1$s from %2$s to %3$s has been broken!"
-msgstr ""
+msgstr "De smokkelroute ter waarde van %1$s van %2$s naar %3$s is verbroken!"
 
 #: input:35 input:42 standard
 msgid "Bring shovels"
-msgstr ""
+msgstr "Breng schoppen mee"
 
 #: input:35 standard
 msgid ""
 "Defeat Erwyn. He commands the strongest opposing military force left on this "
 "island."
 msgstr ""
+"Versla Erwyn. Hij voert het bevel over de sterkste militaire macht die nog "
+"over is op dit eiland."
 
 #: input:36 input:43 standard
 msgid "Bring 4 shovels to the warehouse near the brook."
-msgstr ""
+msgstr "Breng 4 schoppen naar het pakhuis bij de beek."
 
 #: input:37 standard
 msgid "Game over!"
-msgstr ""
+msgstr "Spel afgelopen!"
 
 #: input:39 standard
 msgid "Build a first outpost"
-msgstr ""
+msgstr "Bouw een eerste buitenpost"
 
 #. TRANSLATORS: the first 4 parameters are player names, the last parameter is '<number> points'
 #: input:39 standard
@@ -2052,48 +2297,52 @@ msgid ""
 "Game over! %1$s and %2$s have won the game! %3$s and %4$s only managed to "
 "collect %5$s."
 msgstr ""
+"Het spel is uit! %1$s en %2$s hebben het spel gewonnen! %3$s en %4$s hebben "
+"alleen %5$sweten te verzamelen.."
 
 #: input:40 input:48 standard
 msgid "Build a quarry"
-msgstr ""
+msgstr "Bouw een steengroeve"
 
 #: input:40 input:42 standard
 msgid "Defeat Jomo"
-msgstr ""
+msgstr "Versla Jomo"
 
 #: input:40 standard
 msgid "Ensure the supply of build wares"
-msgstr ""
+msgstr "Zorg voor de levering van bouwmaterialen"
 
 #: input:41 standard
 msgid "First Outpost"
-msgstr ""
+msgstr "Eerste Buitenpost"
 
 #: input:42 standard
 msgid ""
 "Build a outpost at the yellow house symbol to the east of your provisional "
 "headquarters."
 msgstr ""
+"Bouw een buitenpost bij het gele huissymbool ten oosten van je voorlopige "
+"hoofdkwartier."
 
 #: input:42 standard
 msgid "Establish a basic production"
-msgstr ""
+msgstr "Stel een basisproductie op"
 
 #: input:42 input:50 standard
 msgid "Quarry"
-msgstr ""
+msgstr "Steengroeve"
 
 #: input:43 standard
 msgid "Build a quarry to the south of your headquarters."
-msgstr ""
+msgstr "Bouw een steengroeve ten zuiden van je hoofdkwartier."
 
 #: input:43 standard
 msgid "Defeat Jomo. He is taking care of the soldiers’ food supply."
-msgstr ""
+msgstr "Versla Jomo. Hij zorgt voor de voedselvoorziening van de soldaten."
 
 #: input:43 standard
 msgid "Peril from the north"
-msgstr ""
+msgstr "Gevaar vanuit het noorden"
 
 #: input:43 standard
 msgid ""
@@ -2101,6 +2350,11 @@ msgid ""
 "A forester might or might not be needed depending on how fast the trees\n"
 "are growing around you. Find the balance."
 msgstr ""
+"Je hebt op zijn minst een steengroeve, een paar houthakkers en een zagerij "
+"nodig.\n"
+"Een boswachter is misschien wel of niet nodig, afhankelijk van hoe snel de "
+"bomen\n"
+"om je heen groeien. Vind de balans."
 
 #: input:44 standard
 msgid ""
@@ -2115,50 +2369,64 @@ msgid ""
 "<br><br>\n"
 "We can then also use their access to the lake in order to explore more land."
 msgstr ""
+"Sire, we hebben een alarmerend bericht ontvangen van een van onze "
+"verkenners. Törver  \n"
+"breidt zijn frontlinie uit en nadert ons gebied.\n"
+"<br><br>\n"
+"We kunnen hun legers niet eeuwig blijven aanvallen. Als we onze noordelijke\n"
+"vijand kunnen veroveren, vergroten we ons grondgebied en vinden we meer "
+"middelen om\n"
+"onze legers te versterken.\n"
+"<br><br>\n"
+"We can then also use their access to the lake in order to explore more land."
 
 #: input:49 standard
 msgid "Free our scout from the pirates"
-msgstr ""
+msgstr "Bevrijd onze verkenner van de piraten"
 
 #: input:49 standard
 msgid "Protect your colony"
-msgstr ""
+msgstr "Bescherm je kolonie"
 
 #: input:50 standard
 msgid "Build tools quickly"
-msgstr ""
+msgstr "Bouw snel tools"
 
 #: input:50 standard
 msgid "Conquer the stronghold on the island."
-msgstr ""
+msgstr "Verover de burcht op het eiland"
 
 #: input:51 standard
 msgid ""
 "Build a quarry close to the lots of stone to free the land and get some "
 "valued resources."
 msgstr ""
+"Bouw een steengroeve in de buurt van de stenen om het land vrij te maken en "
+"waardevolle grondstoffen te krijgen."
 
 #: input:51 standard
 msgid ""
 "Build a quarry close to the lots of stone. So we can free some building lots "
 "and get some valued resources."
 msgstr ""
+"Bouw een steengroeve in de buurt van de stenen. Zo kunnen we wat bouwkavels "
+"vrijmaken en waardevolle grondstoffen krijgen."
 
 #: input:51 standard
 msgid "Protect Your Colony"
-msgstr ""
+msgstr "Bescherm je Kolonie"
 
 #: input:52 standard
 msgid "Build some blockhouses and sentries around the colony."
-msgstr ""
+msgstr "Bouw een aantal blokkades en schildwachten rond de kolonie."
 
 #: input:52 standard
 msgid "First Briefing"
-msgstr ""
+msgstr "Eerste Briefing"
 
 #: input:52 standard
 msgid "Make new tools"
-msgstr ""
+msgstr "Maak nieuwe gereedschappen"
 
 #: input:53 standard
 msgid ""
@@ -2167,24 +2435,33 @@ msgid ""
 "have some iron ore and plenty of coal. Build a production of tools, it is\n"
 "a prerequisite for success on island."
 msgstr ""
+"Het meeste van jullie gereedschap is verloren gegaan in de scheepsramp. "
+"Jullie mensen zullen\n"
+"hun taken niet kunnen uitvoeren zonder het juiste gereedschap. Gelukkig "
+"hebben jullie nog\n"
+"nog wat ijzererts en genoeg steenkool. Bouw een productie van "
+"gereedschappen, het is\n"
+"een voorwaarde voor succes op het eiland."
 
 #: input:57 standard
 msgid "Defeat Hjalmar"
-msgstr ""
+msgstr "Versla Hjalmar"
 
 #: input:57 standard
 msgid "On the good way"
-msgstr ""
+msgstr "Op goeie weg"
 
 #: input:58 standard
 msgid ""
 "Build at least a lumberjack’s house, a sawmill and a stonemason to complete "
 "the building material supply chain"
 msgstr ""
+"Bouw ten minste een houthakkershuis, een houtzagerij en een steenhouwer om "
+"de toeleveringsketen van bouwmaterialen te voltooien"
 
 #: input:58 standard
 msgid "Defeat the armies of Hjalmar."
-msgstr ""
+msgstr "Versla de Legers van Hjalmar"
 
 #: input:58 standard
 msgid ""
@@ -2194,52 +2471,60 @@ msgid ""
 "In\n"
 "a desperate move Törver has called in a group of hardened mercenaries."
 msgstr ""
+"Sire, de strijd met Törver vordert glorieus en we hebben al\n"
+"het sterkste deel van zijn leger verslagen. Maar deze vijand zal niet "
+"gemakkelijk verslagen worden. In\n"
+"wanhopige zet heeft Törver een groep geharde huurlingen opgeroepen."
 
 #: input:58 standard
 msgid "Start mining marble"
-msgstr ""
+msgstr "Begin met marmer delven"
 
 #: input:60 standard
 msgid "Lumberjack’s House, Sawmill and Stonemason"
-msgstr ""
+msgstr "Houthakkershuis, Houtzagerij en Steenhouwer"
 
 #: input:60 standard
 msgid "Marble"
-msgstr ""
+msgstr "Marmer"
 
 #: input:61 standard
 msgid ""
 "Build at least a lumberjack’s house, a sawmill and a stonemason as soon as "
 "there is enough space for them."
 msgstr ""
+"Bouw ten minste een houthakkershuis, een houtzagerij en een steenhouwer "
+"zodra er genoeg ruimte voor is."
 
 #: input:61 standard
 msgid "Expand to the east, to start mining marble from the mountain."
 msgstr ""
+"Breid uit naar het oosten om te beginnen met het delven van marmer uit de "
+"berg."
 
 #: input:62 standard
 msgid "Explore the surroundings"
-msgstr ""
+msgstr "Verken de omgeving"
 
 #: input:62 input:73 standard
 msgid "Second Briefing"
-msgstr ""
+msgstr "Tweede Briefing"
 
 #: input:64 standard
 msgid "Defeat Runar"
-msgstr ""
+msgstr "Versla Runar"
 
 #: input:64 standard
 msgid "Explore your surroundings"
-msgstr ""
+msgstr "Verken je omgeving"
 
 #: input:65 standard
 msgid "Defeat the armies of Runar."
-msgstr ""
+msgstr "Versla de legers van Runar"
 
 #: input:65 standard
 msgid "The great lake"
-msgstr ""
+msgstr "Het grote meer"
 
 #: input:65 standard
 msgid ""
@@ -2251,14 +2536,23 @@ msgid ""
 "their\n"
 "bigger view range."
 msgstr ""
+"We zijn er vrij zeker van dat we niet alleen op het eiland zijn. We weten "
+"niet\n"
+"of de anderen op dit eiland vrienden of vijanden zijn, dus we moeten "
+"voorzichtig zijn.\n"
+"Breid het eiland uit en verken het door ten minste één leefgebied voor een "
+"verkenner te bouwen\n"
+"en militaire gebouwen te bouwen. Geef de voorkeur aan torens boven andere "
+"militaire gebouwen vanwege hun\n"
+"groter zichtbereik."
 
 #: input:66 standard
 msgid "An Ancient Castle"
-msgstr ""
+msgstr "Een Oud Kasteel"
 
 #: input:66 standard
 msgid "Lower the demand for marble columns in the economy settings"
-msgstr ""
+msgstr "Verlaag de vraag naar marmeren zuilen in de economische instellingen"
 
 #: input:66 standard
 msgid ""
@@ -2273,10 +2567,19 @@ msgid ""
 "us.\n"
 "Our wise men will try to translate these descriptions."
 msgstr ""
+"Sire, nu we het land van Törver hebben veroverd, kunnen we gebruik maken van "
+"hun\n"
+"uitstekende toegang tot het aangrenzende grote meer. Een haven in het "
+"noorden zal ons\n"
+"betere mogelijkheden geven om contact te leggen met andere stammen.\n"
+"<br><br>\n"
+"In het hoofdkwartier van Törver vonden we papieren die de bouw van\n"
+"schepen. Helaas zijn de teksten geschreven in een taal die ons onbekend is.\n"
+"Onze wijzen zullen proberen deze beschrijvingen te vertalen."
 
 #: input:67 standard
 msgid "Build a stonemason’s house and mining infrastructure"
-msgstr ""
+msgstr "Bouw een steenhouwershuis en mijnbouw infrastructuur"
 
 #: input:67 standard
 msgid ""
@@ -2285,6 +2588,10 @@ msgid ""
 "built in a foreign style. It’s quite obvious that this is not barbarian "
 "craft."
 msgstr ""
+"Bij de Goden! Eén van onze verkenners heeft een machtig kasteel ontdekt in "
+"het midden van het oude plateau. Het kasteel moet vrij oud zijn en lijkt in "
+"een vreemde stijl gebouwd te zijn. Het is overduidelijk dat dit geen "
+"barbaars handwerk is."
 
 #: input:68 standard
 msgid ""
@@ -2293,30 +2600,39 @@ msgid ""
 "that mighty building without a bigger fight! However, it is essential that "
 "we capture it. It will be the key to our reign over this island!"
 msgstr ""
+"Laten we hopen dat Lanissa – de krijgsheer die de scepter zwaait over dat "
+"kasteel – onze bewegingen nog niet heeft ontdekt. Misschien hebben we een "
+"kans om dat machtige gebouw te veroveren zonder een groter gevecht! Het is "
+"echter essentieel dat we het veroveren. Het zal de sleutel zijn tot onze "
+"heerschappij over dit eiland!"
 
 #: input:68 standard
 msgid "Lower demand foe marble columns"
-msgstr ""
+msgstr "Lagere vraag naar marmeren zuilen"
 
 #: input:68 standard
 msgid "Lower demand for marble columns"
-msgstr ""
+msgstr "Lagere vraag naar marmeren zuilen"
 
 #: input:69 standard
 msgid "Stonemason’s house and Mining Infrastructure"
-msgstr ""
+msgstr "Steenhouwershuis en Mijnbouw Infrastructuur"
 
 #: input:69 standard
 msgid ""
 "We should spare marble for buildings. So please lower the demand for marble "
 "columns."
 msgstr ""
+"We moeten marmer sparen voor gebouwen. Verlaag dus alstublieft de vraag naar "
+"marmeren zuilen."
 
 #: input:69 standard
 msgid ""
 "We should spare some marble for buildings. So please lower the demand for "
 "marble columns."
 msgstr ""
+"We moeten wat marmer sparen voor gebouwen. Verlaag dus alsjeblieft de vraag "
+"naar marmeren zuilen."
 
 #: input:70 standard
 msgid ""
@@ -2324,56 +2640,62 @@ msgid ""
 "infrastructure (coal mine and / or charcoal kiln, iron mine, toolsmithy, "
 "weapon smithy, armor smithy and smelting works)."
 msgstr ""
+"Bouw een steenhouwershuis en vervolgens een complete mijnbouw- en productie-"
+"infrastructuur (kolenmijn en/of houtskooloven, ijzermijn, "
+"gereedschapsmederij, wapensmederij, harnassmederij en smelterij)."
 
 #: input:75 standard
 msgid "Find a portspace on the small island"
-msgstr ""
+msgstr "Zoek een havenruimte op het kleine eiland"
 
 #: input:76 standard
 msgid "Provide your miners with food"
-msgstr ""
+msgstr "Voorzie je mijnwerkers van voedsel"
 
 #: input:77 standard
 msgid "Ancient Castle Captured"
-msgstr ""
+msgstr "Oud Kasteel Veroverd"
 
 #: input:77 standard
 msgid "Port Space"
-msgstr ""
+msgstr "Havenlocatie"
 
 #: input:78 standard
 msgid "Food For Your Miners"
-msgstr ""
+msgstr "Voedsel Voor Je Mijnwerkers"
 
 #: input:78 standard
 msgid "Searching for gold"
-msgstr ""
+msgstr "Zoeken naar goud"
 
 #: input:78 standard
 msgid "To get back to the sea we first must discover a portspace."
 msgstr ""
+"Om terug te keren naar de zee moeten we eerst een havenruimte ontdekken."
 
 #: input:78 standard
 msgid "To get back to the sea we must discover a portspace."
-msgstr ""
+msgstr "Om terug te keren naar de zee moeten we een havenruimte ontdekken."
 
 #: input:78 standard
 msgid "Wares Smuggled"
-msgstr ""
+msgstr "Gesmokkelde Goederen"
 
 #: input:78 standard
 msgid ""
 "Wonderful! Our troops have finally defeated Lanissa and her soldiers. The "
 "ancient castle is ours!"
 msgstr ""
+"Geweldig! Onze troepen hebben Lanissa en haar soldaten eindelijk verslagen. "
+"Het oude kasteel is van ons!"
 
 #: input:79 input:81 standard
 msgid " units of "
-msgstr ""
+msgstr " eenheden van"
 
 #: input:79 standard
 msgid "Build a tavern to produce some food to sustain our miners."
-msgstr ""
+msgstr "Bouw een taverne om wat voedsel te produceren voor onze mijnwerkers."
 
 #: input:79 standard
 msgid ""
@@ -2387,6 +2709,17 @@ msgid ""
 "infrastructures guarded by Jomo – a younger warlord – and we should take "
 "care of those infrastructures so we can cut off our enemies’ food supply."
 msgstr ""
+"Het is verbazingwekkend hoe ver je kunt kijken vanaf de hoogste toren van "
+"het kasteel. We kunnen het hele eiland overzien. Dus nu vraag ik me af "
+"waarom Lanissa ons niet heeft gezien en zich dus niet heeft voorbereid. Hoe "
+"dan ook, sommige dingen zullen nooit aan het licht komen. De enige "
+"belangrijke kwestie op dit moment zijn de nog overgebleven vijandelijke "
+"troepen. We hebben vijandelijke posities ontdekt die in handen zijn van "
+"Erwyn ten noorden en oosten van het kasteel. Hij staat bekend als een sterke "
+"krijgsheer en voert zeker het bevel over de sterkste krijgers. In het zuiden "
+"hebben we een aantal voedselinfrastructuren gezien die worden bewaakt door "
+"Jomo – een jongere krijgsheer – en we moeten die infrastructuren aanpakken, "
+"zodat we de voedselvoorraad van onze vijanden kunnen afsluiten."
 
 #: input:79 standard
 msgid ""
@@ -2401,44 +2734,63 @@ msgid ""
 "here\n"
 "before we proceed."
 msgstr ""
+"Sire, onze mannen hebben een geïsoleerde vijandelijke piratenschuilplaats "
+"gevonden. De verlaten hutten...\n"
+"geven aan dat er goud in de buurt is.\n"
+"<br><br>\n"
+"We moeten echter voorzichtig zijn als we de schildwacht willen veroveren. Er "
+"kunnen\n"
+"meer vijandelijke gebouwen zijn die nog uit het zicht zijn, en de piraten "
+"staan erom bekend dat ze\n"
+"zeer goede vechters zijn. Het is het beste om hier een sterke militaire "
+"aanwezigheid op te bouwen.\n"
+"voordat we verder gaan."
 
 #: input:79 input:81 standard
 msgid "Transport"
-msgstr ""
+msgstr "Vervoer"
 
 #: input:80 standard
 msgid ""
 "Of course this means you will need more resources for preparing this food – "
 "like fish, meat or bread."
 msgstr ""
+"Natuurlijk betekent dit dat je meer middelen nodig hebt om dit voedsel te "
+"bereiden – zoals vis, vlees of brood."
 
 #: input:80 standard
 msgid "The princess' memoir"
-msgstr ""
+msgstr "De memoires van de prinses"
 
 #: input:81 standard
 msgid " have been brought to your "
-msgstr ""
+msgstr "zijn gebracht naar uw"
 
 #: input:81 standard
 msgid "Jundlina writes her diary"
-msgstr ""
+msgstr "Jundlina schrijft haar dagboek"
 
 #: input:81 standard
 msgid ""
 "To provide these foodstuffs, you can build a fisher’s house, a hunter’s "
 "house, a farm, a mill and a bakery."
 msgstr ""
+"Om in deze voedingsmiddelen te voorzien, kun je een vissershuis, een "
+"jagershuis, een boerderij, een molen en een bakkerij bouwen."
 
 #: input:82 standard
 msgid ""
 "Build a brewery and a winery to supply the miners with some good and strong "
 "drinks."
 msgstr ""
+"Bouw een brouwerij en een wijnmakerij om de mijnwerkers te voorzien van "
+"goede en sterke dranken."
 
 #: input:83 standard
 msgid "Maybe you will also need a piggery, a vineyard and some wells."
 msgstr ""
+"Misschien heb je ook een varkensstal, een wijngaard en een paar waterputten "
+"nodig."
 
 #. TRANSLATORS: Jundlina - Diary
 #: input:83 standard
@@ -2447,6 +2799,9 @@ msgid ""
 "ships and make our escape, but the currents of the sinking island tested our "
 "new ships and their design. "
 msgstr ""
+"Onze ontsnapping van het vervloekte eiland was op het nippertje: we slaagden "
+"erin om drie schepen te laden en te ontsnappen, maar de stromingen van het "
+"zinkende eiland testten onze nieuwe schepen en hun ontwerp."
 
 #: input:84 standard
 msgid ""
@@ -2454,14 +2809,17 @@ msgid ""
 "without much planing and so one of ships ended up carrying most of the heavy "
 "wares in our possession. "
 msgstr ""
+"En eentje slaagde niet voor de test: de laatste dagen van het laden "
+"verliepen in chaos en zonder veel planning, zodat een van de schepen "
+"uiteindelijk het grootste deel van de zware goederen in ons bezit vervoerde. "
 
 #: input:84 input:93 standard
 msgid "Another Briefing"
-msgstr ""
+msgstr "Nog een Briefing"
 
 #: input:84 standard
 msgid "Build a Port and a shipyard on the island"
-msgstr ""
+msgstr "Bouw een haven en een scheepswerf op het eiland"
 
 #: input:84 standard
 msgid ""
@@ -2469,6 +2827,10 @@ msgid ""
 "need beer, marble and gold mines need wine and all mines need at least "
 "rations, which are produced out of bread OR meat OR fish."
 msgstr ""
+"Het is aan jou wat je wilt bouwen. Maar onthoud – kolen en ijzermijnen "
+"hebben bier nodig, marmer- en goudmijnen hebben wijn nodig en alle mijnen "
+"hebben op zijn minst rantsoenen nodig, die worden gemaakt van brood OF vlees "
+"OF vis."
 
 #: input:85 standard
 msgid ""
@@ -2476,26 +2838,30 @@ msgid ""
 "sea level by Lutas and his currents and we lost most men and all wares it "
 "carried."
 msgstr ""
+"Dit plus de stroming was te veel voor het schip en het werd onder de "
+"zeespiegel getrokken door Lutas en zijn stromingen en we verloren de meeste "
+"mannen en alle goederen die het vervoerde."
 
 #: input:86 standard
 msgid "Ship Industry"
-msgstr ""
+msgstr "Scheepsindustrie"
 
 #: input:87 standard
 msgid "Build a port to set sail from this island."
-msgstr ""
+msgstr "Bouw een haven om vanaf dit eiland uit te varen."
 
 #: input:88 standard
 msgid "Build a shipyard to produce ships to sail on."
-msgstr ""
+msgstr "Bouw een scheepswerf om schepen te produceren om op te varen."
 
 #: input:88 standard
 msgid "Build a shipyard to produce the ships to sail on."
 msgstr ""
+"Bouw een scheepswerf om de schepen te produceren waarmee je kunt varen."
 
 #: input:88 standard
 msgid "Erwyn Defeated"
-msgstr ""
+msgstr "Erwyn Verslagen"
 
 #. TRANSLATORS: Jundlina - Diary
 #: input:88 standard
@@ -2504,18 +2870,26 @@ msgid ""
 "well, but they persisted. We escaped the island and began our smooth sailing "
 "to other costs. "
 msgstr ""
+"De angst was groot bij ons allemaal. We verwachtten dat de andere schepen "
+"ook zouden verdrinken, maar ze hielden vol. We ontsnapten van het eiland en "
+"begonnen aan onze vlotte zeiltocht naar andere kosten."
 
 #: input:89 standard
 msgid ""
 "Great! Erwyn gave up when he saw his last buildings burning down. That’s one "
 "less strong warlord on this island!"
 msgstr ""
+"Geweldig! Erwyn gaf het op toen hij zijn laatste gebouwen zag afbranden. Dat "
+"is een sterke krijgsheer minder op dit eiland!"
 
 #: input:89 standard
 msgid ""
 "Many weeks have passed and we did only see small islands not suitable for "
 "habitation and without any sign of being blessed by Satul, the fire god. "
 msgstr ""
+"Vele weken gingen voorbij en we zagen alleen kleine eilandjes die niet "
+"geschikt waren voor bewoning en zonder enig teken van zegening door Satul, "
+"de vuurgod."
 
 #: input:90 standard
 msgid ""
@@ -2523,18 +2897,21 @@ msgid ""
 "The black comes from the fiery mountain in the north of the island, the grey "
 "however comes from settlers."
 msgstr ""
+"Vannacht zagen we echter een nieuw eiland. We zagen er rook boven zweven. "
+"Het zwarte komt van de vurige berg in het noorden van het eiland, het grijze "
+"echter van de kolonisten."
 
 #: input:90 standard
 msgid "Protect your eastern frontier"
-msgstr ""
+msgstr "Bescherm je oostgrens"
 
 #: input:91 standard
 msgid "Found a treasure"
-msgstr ""
+msgstr "Schat gevonden"
 
 #: input:92 standard
 msgid "Protect Your Eastern Frontier"
-msgstr ""
+msgstr "Bescherm Je Oostgrens"
 
 #: input:92 standard
 msgid ""
@@ -2547,38 +2924,51 @@ msgid ""
 "this\n"
 "area. There is a good building spot only three steps away from the sentry."
 msgstr ""
+"Sire, we hebben 25 eenheden gouderts gevonden in de piratenschildwacht. Ze "
+"kunnen\n"
+"geplunderd uit de goudzoekershutten in de buurt. Dit gouderts zal\n"
+"getransporteerd naar ons hoofdkwartier.\n"
+"<br><br>\n"
+"Met onze succesvolle uitbreiding in dit gebied zouden we moeten overwegen om "
+"een\n"
+"magazijn te bouwen direct ten zuidwesten van de schildwacht om dit gebied "
+"verder te exploiteren.\n"
+"gebied. Er is een goede bouwplek op slechts drie stappen afstand van de "
+"schildwacht."
 
 #: input:93 standard
 msgid "Build a stronger military building, a tower, on the eastern frontier."
-msgstr ""
+msgstr "Bouw een sterker militair gebouw, een toren, aan de oostelijke grens."
 
 #: input:93 standard
 msgid "Produce an amount of 50 wheat"
-msgstr ""
+msgstr "Produceer een hoeveelheid van 50 tarwe"
 
 #: input:94 standard
 msgid "Build a tower to watch deep inside the enemy territory."
-msgstr ""
+msgstr "Bouw een toren om diep in het vijandelijke gebied de wacht te houden."
 
 #: input:94 standard
 msgid "Planing for the future"
-msgstr ""
+msgstr "Plannen voor de toekomst"
 
 #: input:95 standard
 msgid "Jundlina continues"
-msgstr ""
+msgstr "Jundlina gaat verder"
 
 #: input:95 standard
 msgid "Produce 50 wheat"
-msgstr ""
+msgstr "Produceer 50 tarwe"
 
 #: input:95 standard
 msgid "Wheat production"
-msgstr ""
+msgstr "Tarweproductie"
 
 #: input:96 standard
 msgid "To start a wool production we need an amount of at least 50 wheat."
 msgstr ""
+"Om een wolproductie te starten hebben we een hoeveelheid van minstens 50 "
+"tarwe nodig."
 
 #. TRANSLATORS: Jundlina - Diary
 #: input:97 standard
@@ -2587,16 +2977,21 @@ msgid ""
 "people there are friends or foes. We do not even know what tribe they might "
 "be from. "
 msgstr ""
+"De oostkant is tenminste bewoond, zoveel is duidelijk. We weten niet of de "
+"mensen daar vrienden of vijanden zijn. We weten niet eens van welke stam ze "
+"zijn."
 
 #: input:97 standard
 msgid "Jomo Defeated"
-msgstr ""
+msgstr "Jomo Verslagen"
 
 #: input:98 standard
 msgid ""
 "Great! Jomo gave up when he saw his last buildings burning down. That’s one "
 "less warlord on this island!"
 msgstr ""
+"Geweldig! Jomo gaf het op toen hij zijn laatste gebouwen zag afbranden. Dat "
+"is een krijgsheer minder op dit eiland!"
 
 #: input:98 standard
 msgid ""
@@ -2604,6 +2999,9 @@ msgid ""
 "has sailed as far as us in the last hundreds years. I can only hope they are "
 "friendly. "
 msgstr ""
+"Het enige wat zeker is, is dat het geen Atlantiërs kunnen zijn, want geen "
+"enkel schip van ons is de afgelopen honderden jaren zo ver gevaren als wij. "
+"Ik kan alleen maar hopen dat ze vriendelijk zijn."
 
 #: input:99 standard
 msgid ""
@@ -2611,68 +3009,76 @@ msgid ""
 "and most of our building materials with the third ship. We can't afford "
 "waging war until we rooted ourselves here."
 msgstr ""
+"We hebben niet veel water meer, ons voedsel raakt op, we zijn al ons "
+"gereedschap en de meeste bouwmaterialen kwijtgeraakt met het derde schip. We "
+"kunnen het ons niet veroorloven om oorlog te voeren totdat we ons hier "
+"geworteld hebben."
 
 #: input:100 standard
 msgid "Strengthen our border"
-msgstr ""
+msgstr "Versterk onze grens"
 
 #: input:101 input:103 input:104 input:134 input:195 standard
 #, lua-format
 msgid "%i point"
 msgid_plural "%i points"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i punt"
+msgstr[1] "%i punten"
 
 #: input:102 standard
 msgid "Build more fortifications on our border"
-msgstr ""
+msgstr "Bouw meer versterkingen aan onze grens"
 
 #: input:102 standard
 msgid "Jundlina gives orders"
-msgstr ""
+msgstr "Jundlina geeft orders"
 
 #: input:102 standard
 msgid "Last Briefing"
-msgstr ""
+msgstr "Laatste Briefing"
 
 #: input:102 standard
 msgid "Produce cloth for building our first ship"
-msgstr ""
+msgstr "Maak stof voor de bouw van ons eerste schip"
 
 #: input:103 standard
 msgid "Build a barracks to start training soldiers."
-msgstr ""
+msgstr "Bouw een kazerne om soldaten te trainen."
 
 #: input:103 standard
 msgid "Jundlina decides"
-msgstr ""
+msgstr "Jundlina besluit"
 
 #: input:104 standard
 msgid "Build a tower closer to the Barbarians"
-msgstr ""
+msgstr "Bouw een toren dichter bij de Barbaren"
 
 #: input:104 standard
 msgid "Cloth production"
-msgstr ""
+msgstr "Doekproductie"
 
 #: input:104 standard
 msgid "Produce cloth"
-msgstr ""
+msgstr "Maak doek"
 
 #: input:104 input:114 standard
 msgid "Removing the swamps"
-msgstr ""
+msgstr "Moerassen verwijderen"
 
 #: input:105 standard
 msgid ""
 "Now let's turn all the wheat into wool (at least 50) and all the wool into "
 "cloth to build a ship."
 msgstr ""
+"Laten we nu alle tarwe in wol veranderen (minstens 50) en alle wol in stof "
+"om een schip te bouwen."
 
 #: input:105 standard
 msgid ""
 "Now let's turn the wheat into wool and the wool into cloth to build a ship."
 msgstr ""
+"Laten we nu van het graan wol maken en van de wol stof om een schip te "
+"bouwen."
 
 #: input:105 standard
 msgid ""
@@ -2684,6 +3090,13 @@ msgid ""
 "the\n"
 "swamps."
 msgstr ""
+"Sire, het natte seizoen heeft moerassen gecreëerd langs de beek in het "
+"oosten en we kunnen er niet doorheen.\n"
+"en daar kunnen we niet doorheen. Ze moeten verwijderd worden voordat we "
+"verder kunnen. Als\n"
+"je genoeg schoppen naar het nieuwe magazijn brengt, zullen vrijwilligers de "
+"moerassen verwijderen.\n"
+"moerassen."
 
 #. TRANSLATORS: Jundlina - Diary
 #: input:105 standard
@@ -2692,28 +3105,37 @@ msgid ""
 "will provide us with good tools in no time. Also, we need to solve our "
 "building material problem. "
 msgstr ""
+"We hebben nog genoeg steenkool en ijzererts, dus een metaalwerkplaats en een "
+"smelterij zullen ons snel van goed gereedschap voorzien. We moeten ook ons "
+"bouwmateriaalprobleem oplossen."
 
 #: input:106 standard
 msgid ""
 "The island is full of trees, we might not even need foresters. But we need "
 "stone, that is for sure"
 msgstr ""
+"Het eiland staat vol bomen, misschien hebben we niet eens boswachters nodig. "
+"Maar we hebben zeker stenen nodig"
 
 #: input:106 input:191 standard
 msgid "Victory!"
-msgstr ""
+msgstr "Overwinning!"
 
 #: input:107 standard
 msgid ""
 "Finally! The island is completely ours. Now we just have to defend it better "
 "than the warlords did."
 msgstr ""
+"Eindelijk! Het eiland is helemaal van ons. Nu moeten we het alleen nog beter "
+"verdedigen dan de krijgsheren deden."
 
 #: input:108 standard
 msgid ""
 "Congratulations! You have mastered this scenario. You may play on if you "
 "like!"
 msgstr ""
+"Gefeliciteerd! Je hebt dit scenario onder de knie. Je mag verder spelen als "
+"je wilt!"
 
 #. TRANSLATORS: Jundlina - Diary
 #: input:109 standard
@@ -2722,58 +3144,73 @@ msgid ""
 "towers over other military buildings so that we can see potential enemies "
 "before they see us. "
 msgstr ""
+"Laten we ook dit eiland verkennen. Maar we moeten voorzichtig zijn. We "
+"moeten torens verkiezen boven andere militaire gebouwen, zodat we potentiële "
+"vijanden kunnen zien voordat zij ons zien."
 
 #: input:110 standard
 msgid "Destroy the Barbarian tribe"
-msgstr ""
+msgstr "Vernietig de Barbaarse stam"
 
 #: input:110 standard
 msgid ""
 "We will be careful with the stones though. When we no longer need a "
 "building, we will dismantle it instead of burning it down. "
 msgstr ""
+"We zullen wel voorzichtig zijn met de stenen. Als we een gebouw niet meer "
+"nodig hebben, ontmantelen we het in plaats van het af te branden."
 
 #: input:111 input:113 standard
 msgid "Build 2 expedition ports"
-msgstr ""
+msgstr "Bouw 2 expeditiehavens"
 
 #: input:111 input:113 standard
 msgid "Build expedition ports"
-msgstr ""
+msgstr "Bouw expeditiehavens"
 
 #: input:111 standard
 msgid ""
 "This will take more time, but we can reuse some of its materials. Also, I "
 "want a scout out and exploring at all times."
 msgstr ""
+"Dit kost meer tijd, maar we kunnen een deel van de materialen hergebruiken. "
+"Ik wil ook dat er altijd een verkenner op verkenning gaat."
 
 #: input:112 standard
 msgid "Destroy the Barbarian Tribe"
-msgstr ""
+msgstr "Vernietig de Barbaarse Stam"
 
 #: input:113 standard
 msgid ""
 "Attack and completely destroy the Barbarian buildings as soon as you have "
 "enough soldiers."
 msgstr ""
+"Val aan en vernietig de gebouwen van de Barbaren volledig zodra je genoeg "
+"soldaten hebt."
 
 #: input:114 standard
 msgid ""
 "..or build an Arena and a Training Camp. Train your soldiers and attack when "
 "they are ready."
 msgstr ""
+"...of bouw een Arena en een Trainingskamp. Train je soldaten en val aan als "
+"ze er klaar voor zijn."
 
 #: input:114 standard
 msgid ""
 "We should explore the Island in the south and build an expedition port there "
 "let's try to find some mining ressources."
 msgstr ""
+"We moeten het eiland in het zuiden verkennen en daar een expeditiehaven "
+"bouwen en proberen mijnbouwbronnen te vinden."
 
 #: input:114 standard
 msgid ""
 "We should explore the Island in the south and build an expedition port. "
 "Let's try to find some mining ressources there."
 msgstr ""
+"We moeten het eiland in het zuiden verkennen en een expeditiehaven bouwen. "
+"Laten we proberen daar wat mijnbouw grondstoffen te vinden."
 
 #: input:115 standard
 msgid ""
@@ -2781,6 +3218,9 @@ msgid ""
 "stood before). Finally, this will avoid new settlements of other tribes in "
 "that region."
 msgstr ""
+"Bouw een fort op het schiereiland (vlakbij waar eerder het hoofdkwartier van "
+"de Barbaren stond). Dit zal nieuwe nederzettingen van andere stammen in die "
+"regio voorkomen."
 
 #: input:115 standard
 msgid ""
@@ -2789,32 +3229,40 @@ msgid ""
 "bring\n"
 "more shovels to the new warehouse then more volunteers will join in."
 msgstr ""
+"Sire, alle scheppen zijn uitgedeeld, maar als we zo doorgaan\n"
+"zullen we de moerassen niet verwijderd hebben voor het volgende natte "
+"seizoen. Als u\n"
+"meer scheppen naar de nieuwe opslagplaats brengt, zullen meer vrijwilligers "
+"meedoen."
 
 #: input:115 standard
 msgid ""
 "We should send a ship to the north to get certainty about the barbarians. "
 "Try to build a port on the island to found an outpost."
 msgstr ""
+"We moeten een schip naar het noorden sturen om zekerheid te krijgen over de "
+"barbaren. Probeer een haven op het eiland te bouwen om een buitenpost te "
+"stichten."
 
 #: input:121 standard
 msgid "Produce gold to send out expeditions"
-msgstr ""
+msgstr "Produceer goud om expedities uit te sturen"
 
 #: input:123 standard
 msgid "A New Island"
-msgstr ""
+msgstr "Een Nieuw Eiland"
 
 #: input:123 standard
 msgid "Gold production"
-msgstr ""
+msgstr "Goudproductie"
 
 #: input:123 standard
 msgid "Pirates are regrouping"
-msgstr ""
+msgstr "De piraten hergroeperen zich"
 
 #: input:123 standard
 msgid "Produce gold"
-msgstr ""
+msgstr "Produceer goud"
 
 #: input:124 standard
 msgid ""
@@ -2826,16 +3274,25 @@ msgid ""
 "enemy\n"
 "in front of us."
 msgstr ""
+"Sire, als gevolg van onze aanvallen op de piraten zijn ze begonnen zich te "
+"hergroeperen\n"
+"met piraten van andere stammen. Ze zouden veel van hun eerder verloren "
+"kracht kunnen.\n"
+"terugwinnen. Onze slinkende grondstoffen kunnen een probleem worden met zo'n "
+"grote vijand\n"
+"voor ons."
 
 #: input:124 standard
 msgid "We need to produce at least 6 gold to be able to colonize our vicinity."
 msgstr ""
+"We moeten minstens 6 goudstukken produceren om onze omgeving te kunnen "
+"koloniseren."
 
 #: input:125 input:136 input:142 input:151 input:154 input:163 input:166
 #: input:171 input:251 input:269 input:278 input:320 input:323 input:331
 #: input:355 input:375 input:401 input:440 input:452 standard
 msgid "Diary of Lutius"
-msgstr ""
+msgstr "Dagboek van Lutius"
 
 #. TRANSLATORS: Lutius - Diary
 #: input:127 standard
@@ -2845,10 +3302,15 @@ msgid ""
 "this island, but this part alone is already bringing sunlight to my mind. I "
 "feel as if we have found a priceless treasure, a land like paradise."
 msgstr ""
+"Eindelijk! Dit eiland lijkt voor ons gemaakt te zijn, het is een geschenk "
+"van de Goden aan mijn volk en mijzelf. Tot nu toe hebben we slechts een "
+"klein deel van dit eiland gezien, maar dit deel alleen al brengt zonlicht in "
+"mijn geest. Ik heb het gevoel dat we een onbetaalbare schat hebben gevonden, "
+"een paradijselijk land."
 
 #: input:130 standard
 msgid "Defeat the barbarians"
-msgstr ""
+msgstr "Versla de Barbaren"
 
 #. TRANSLATORS: Lutius - Diary
 #: input:130 standard
@@ -2857,14 +3319,17 @@ msgid ""
 "our exile, which perhaps will become a new, beautiful home for every one of "
 "us."
 msgstr ""
+"Op dit eiland zullen we ons nieuwe leven beginnen. We zullen een buitenpost "
+"bouwen voor onze ballingschap, die misschien een nieuw, prachtig thuis voor "
+"ieder van ons zal worden."
 
 #: input:132 standard
 msgid "Defeat the enemy"
-msgstr ""
+msgstr "Versla de vijand"
 
 #: input:132 standard
 msgid "Pirates on the run"
-msgstr ""
+msgstr "Piraten op de vlucht"
 
 #: input:133 standard
 msgid ""
@@ -2874,14 +3339,20 @@ msgid ""
 "they\n"
 "have escaped."
 msgstr ""
+"Sire, dankzij onze succesvolle pogingen om de piraten te verdrijven, zijn "
+"veel van hen\n"
+"gevlucht in kleine boten. Het is onbekend in welke richting ze\n"
+"zijn ontsnapt."
 
 #: input:133 standard
 msgid "We should end the barbarians existence in this piece of the world."
 msgstr ""
+"We moeten een einde maken aan het bestaan van de barbaren in dit deel van de "
+"wereld."
 
 #: input:134 standard
 msgid "The Green Forests"
-msgstr ""
+msgstr "De Groene Wouden"
 
 #. TRANSLATORS: Lutius - Diary
 #: input:138 standard
@@ -2890,10 +3361,14 @@ msgid ""
 "felt that our future had just begun. This land is so peaceful, good and "
 "beautiful, I could stay here until the end of my life."
 msgstr ""
+"Terwijl Saledus en ik door deze prachtige bossen in het noorden liepen, "
+"hadden we het gevoel dat onze toekomst nog maar net begonnen was. Dit land "
+"is zo vredig, goed en mooi, ik zou hier wel tot het einde van mijn leven "
+"kunnen blijven."
 
 #: input:140 standard
 msgid "Ability to build shipyards"
-msgstr ""
+msgstr "Vermogen om scheepswerven te bouwen"
 
 #. TRANSLATORS: Lutius - Diary
 #: input:141 standard
@@ -2902,10 +3377,13 @@ msgid ""
 "present, and build a few lumberjack’s houses and a sawmill to produce some "
 "basic building materials."
 msgstr ""
+"Maar tot die dag kunnen er vele jaren voorbijgaan! Voor nu moeten we ons "
+"concentreren op het heden en een paar houthakkershuizen bouwen en een "
+"zagerij om wat basisbouwmaterialen te produceren."
 
 #: input:141 standard
 msgid "Journey home"
-msgstr ""
+msgstr "Reis naar huis"
 
 #: input:141 standard
 msgid ""
@@ -2914,6 +3392,9 @@ msgid ""
 "his\n"
 "headquarters. From now on we are able to build shipyards."
 msgstr ""
+"Sire, na lang onderzoek zijn onze wijzen er eindelijk in geslaagd\n"
+"de vreemde taal in Törvers beschrijvingen te ontcijferen die we in zijn\n"
+"hoofdkwartier. Vanaf nu kunnen we scheepswerven bouwen."
 
 #. TRANSLATORS: Lutius - Diary
 #: input:144 standard
@@ -2921,6 +3402,9 @@ msgid ""
 "But we mustn’t forget to preserve this natural bounty. These forests should "
 "last forever, so we really have to build a forester’s house too."
 msgstr ""
+"Maar we mogen niet vergeten om deze natuurlijke overvloed te bewaren. Deze "
+"bossen moeten voor altijd blijven bestaan, dus we moeten ook echt een "
+"boswachtershuis bouwen."
 
 #. TRANSLATORS: Lutius - Diary
 #: input:144 standard
@@ -2928,15 +3412,17 @@ msgid ""
 "Finally we were set to Fremil again. I couldn't await the chance to clear my "
 "records of this big defeat by the babarians."
 msgstr ""
+"Eindelijk waren we weer op weg naar Fremil. Ik kon niet wachten op de kans "
+"om mijn gegevens van deze grote nederlaag van de babarianen te wissen."
 
 #. TRANSLATORS: Lutius - Diary
 #: input:147 standard
 msgid "But the gods themselves didn't want us to get home so quickly!"
-msgstr ""
+msgstr "Maar de goden zelf wilden niet dat we zo snel naar huis gingen!"
 
 #: input:148 standard
 msgid "Our scout has been captured"
-msgstr ""
+msgstr "Onze verkenner is gevangen genomen"
 
 #: input:149 standard
 msgid ""
@@ -2949,10 +3435,18 @@ msgid ""
 "We should use the knowledge about shipbuilding that we took from Törver to\n"
 "build ships and attack their positions."
 msgstr ""
+"Sire, een van onze verkenners is gevangen genomen door de piraten en naar "
+"hun eiland gebracht. Hij is de enige die de weg weet door de moerassen "
+"richting Hjalmar.\n"
+"<br><br>\n"
+"Volgens onze vissers zit hij opgesloten in het bolwerk op het eiland.\n"
+"We moeten de kennis over scheepsbouw die we van Törver hebben meegenomen "
+"gebruiken om\n"
+"schepen te bouwen en hun posities aan te vallen."
 
 #: input:149 standard
 msgid "The Rocks"
-msgstr ""
+msgstr "De Rotsen"
 
 #. TRANSLATORS: Lutius - Diary
 #: input:153 standard
@@ -2960,14 +3454,16 @@ msgid ""
 "Later, I walked down to the rocks in the south and looked for a place where "
 "we could build a quarry to get some granite for our larger buildings."
 msgstr ""
+"Later liep ik naar de rotsen in het zuiden en zocht naar een plek waar we "
+"een steengroeve konden bouwen om graniet te halen voor onze grotere gebouwen."
 
 #: input:153 standard
 msgid "The wrath of Neptun"
-msgstr ""
+msgstr "De toorn van Neptun"
 
 #: input:153 standard
 msgid "The wrath of Neptune"
-msgstr ""
+msgstr "De toorn van Neptunus"
 
 #. TRANSLATORS: Lutius - Diary
 #: input:156 standard
@@ -2976,6 +3472,10 @@ msgid ""
 "stones were among the rocks. It seems that we will soon be able to build "
 "strong, luxurious buildings, like those we were accustomed to in Fremil."
 msgstr ""
+"Weer had ik het gevoel dat ik in het paradijs was toen ik merkte dat er een "
+"paar marmerachtige stenen tussen de rotsen lagen. Het lijkt erop dat we "
+"binnenkort sterke, luxe gebouwen kunnen bouwen, zoals we gewend waren in "
+"Fremil."
 
 #. TRANSLATORS: Lutius - Diary
 #: input:156 standard
@@ -2984,6 +3484,9 @@ msgid ""
 "But this time it felt even worse than last time. The waves were double the "
 "height of our brave ship and the winds drove us into unsafe waters."
 msgstr ""
+"Neptun zelf was tegen ons en joeg ons opnieuw in een donkere, wilde storm. "
+"Maar deze keer voelde het nog erger dan de vorige keer. De golven waren twee "
+"keer zo hoog als ons dappere schip en de wind dreef ons in onveilige wateren."
 
 #. TRANSLATORS: Lutius - Diary
 #: input:156 standard
@@ -2992,10 +3495,13 @@ msgid ""
 "But this time it felt even worse than last time. The waves were double the "
 "height of our brave ship and the winds drove us into unsafe waters."
 msgstr ""
+"Neptunus zelf was tegen ons en joeg ons opnieuw in een donkere, wilde storm. "
+"Maar deze keer voelde het nog erger dan de vorige keer. De golven waren twee "
+"keer zo hoog als ons dappere schip en de wind dreef ons in onveilige wateren."
 
 #: input:158 standard
 msgid "-- NEW OBJECTIVES --"
-msgstr ""
+msgstr "-- NIEUWE DOELSTELLINGEN --"
 
 #. TRANSLATORS: Lutius - Diary
 #: input:159 standard
@@ -3004,14 +3510,17 @@ msgid ""
 "taking in more and more water. We would be glad to survive this black night "
 "with barely more than our lives."
 msgstr ""
+"Ons schip is zwaar beschadigd. De mast is overboord geslagen en er komt "
+"steeds meer water in de romp. We zouden al blij zijn als we deze zwarte "
+"nacht met nauwelijks meer dan ons leven zouden overleven."
 
 #: input:161 standard
 msgid "Island conquered"
-msgstr ""
+msgstr "Eiland veroverd"
 
 #: input:161 standard
 msgid "Wood for the Colony"
-msgstr ""
+msgstr "Hout voor de Kolonie"
 
 #: input:162 standard
 msgid ""
@@ -3021,6 +3530,11 @@ msgid ""
 "weapons\n"
 "on the island."
 msgstr ""
+"Sire, onze soldaten hebben het eiland veroverd en zijn erin geslaagd de "
+"verkenner te bevrijden. Het\n"
+"blijkt dat de piraten een grote hoeveelheid goud, bier en wapens hebben "
+"achtergelaten\n"
+"op het eiland hebben achtergelaten."
 
 #. TRANSLATORS: Lutius - Diary
 #: input:165 standard
@@ -3028,23 +3542,25 @@ msgid ""
 "Good news! Today our wood economy was completed. Now we can be sure that we "
 "will have enough wood for our future building projects."
 msgstr ""
+"Goed nieuws! Vandaag is onze houteconomie voltooid. Nu kunnen we er zeker "
+"van zijn dat we genoeg hout hebben voor onze toekomstige bouwprojecten."
 
 #: input:165 standard
 msgid "Shipwrecked again"
-msgstr ""
+msgstr "Weer schipbreuk"
 
 #. TRANSLATORS: Lutius - Diary
 #: input:168 standard
 msgid "Finally, the wrath of the gods and the ocean seems to be over."
-msgstr ""
+msgstr "Eindelijk lijkt de toorn van de goden en de oceaan voorbij."
 
 #: input:169 standard
 msgid "Stones for the Colony"
-msgstr ""
+msgstr "Stenen voor de Kolonie"
 
 #: input:169 standard
 msgid "The scout returns"
-msgstr ""
+msgstr "De verkenner keert terug"
 
 #: input:170 standard
 msgid ""
@@ -3056,6 +3572,13 @@ msgid ""
 "case\n"
 "we might fail here, but it will be much more difficult to do."
 msgstr ""
+"Sire, onze verkenner is teruggekeerd naar ons territorium en hij heeft ons "
+"de weg gewezen...\n"
+"door de moerassen naar Hjalmar.\n"
+"<br><br>\n"
+"Hij merkte op dat we ook langs de andere kant van de berg kunnen gaan, voor "
+"het geval dat...\n"
+"we hier zouden kunnen falen, maar dat zal veel moeilijker te doen zijn."
 
 #. TRANSLATORS: Lutius - Diary
 #: input:171 standard
@@ -3064,6 +3587,10 @@ msgid ""
 "growing at the shore. But that is about as good as it gets. The truth is: "
 "when I woke up this morning, I saw nothing but sand and stone around us."
 msgstr ""
+"We landden op een onbekende kust en vonden wat rust onder de palmbomen die "
+"aan de kust groeiden. Maar beter dan dat wordt het niet. De waarheid is: "
+"toen ik vanochtend wakker werd, zag ik niets anders dan zand en steen om ons "
+"heen."
 
 #. TRANSLATORS: Lutius - Diary
 #: input:173 standard
