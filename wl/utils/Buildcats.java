@@ -115,8 +115,8 @@ public class Buildcats {
 		String out = dir.getPath() + "/" + kWebsiteMapsTextdomain + ".pot";
 		Runtime.getRuntime()
 		    .exec(new String[] {
-		        "xgettext", "--language=Lua", "-k_", "--output=" + out, "--force-po",
-		        "--copyright-holder=\"Widelands Development Team\"",
+		        "xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
+		        "--force-po", "--copyright-holder=\"Widelands Development Team\"",
 		        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
 		        output.getAbsolutePath()})
 		    .waitFor();
