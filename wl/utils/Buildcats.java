@@ -78,14 +78,14 @@ public class Buildcats {
 					p.waitFor();
 				}
 			} else if (!mapsOnly && isXGettextInput(f.getName())) {
-				Utils.bash(
-				        "xgettext", "-k_", "--keyword=_", "--flag=_:1:pass-lua-format",
-				        "--keyword=ngettext:1,2", "--flag=ngettext:1:pass-lua-format",
-				        "--flag=ngettext:2:pass-lua-format", "--keyword=pgettext:1c,2",
-				        "--flag=pgettext:2:pass-lua-format", "--keyword=npgettext:1c,2,3",
-				        "--flag=npgettext:2:pass-lua-format", "--flag=npgettext:3:pass-lua-format",
-				        "--language=Lua", "--from-code=UTF-8", "-F",
-				        "-c TRANSLATORS:", "--join-existing", "--output=" + out, f.getPath());
+				Utils.bash("xgettext", "-k_", "--keyword=_", "--flag=_:1:pass-lua-format",
+				           "--keyword=ngettext:1,2", "--flag=ngettext:1:pass-lua-format",
+				           "--flag=ngettext:2:pass-lua-format", "--keyword=pgettext:1c,2",
+				           "--flag=pgettext:2:pass-lua-format", "--keyword=npgettext:1c,2,3",
+				           "--flag=npgettext:2:pass-lua-format",
+				           "--flag=npgettext:3:pass-lua-format", "--language=Lua",
+				           "--from-code=UTF-8", "-F", "-c TRANSLATORS:", "--join-existing",
+				           "--output=" + out, f.getPath());
 			}
 		}
 	}
@@ -109,16 +109,16 @@ public class Buildcats {
 			++nrComments;
 		}
 		write.close();
-		Utils.log("Buildcats: Wrote " + nrComments + " uploader comments to " + uploaderCommentsFile.getAbsolutePath());
+		Utils.log("Buildcats: Wrote " + nrComments + " uploader comments to " +
+		          uploaderCommentsFile.getAbsolutePath());
 
 		File dir = new File("po", kWebsiteMapsTextdomain);
 		dir.mkdirs();
 		String out = dir.getPath() + "/" + kWebsiteMapsTextdomain + ".pot";
-		Utils.bash(
-		        "xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
-		        "--force-po", "--copyright-holder=\"Widelands Development Team\"",
-		        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
-		        uploaderCommentsFile.getAbsolutePath());
+		Utils.bash("xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
+		           "--force-po", "--copyright-holder=\"Widelands Development Team\"",
+		           "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
+		           uploaderCommentsFile.getAbsolutePath());
 		recurse(out, new File(Utils.config("website_maps_path")), true);
 		// uploaderCommentsFile.delete();
 
@@ -126,11 +126,10 @@ public class Buildcats {
 			dir = new File("po", addon.getName());
 			dir.mkdir();
 			out = dir.getPath() + "/" + addon.getName() + ".pot";
-			Utils.bash(
-			        "xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
-			        "--force-po", "--copyright-holder=\"Widelands Development Team\"",
-			        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
-			        addon.getPath() + "/addon");
+			Utils.bash("xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
+			           "--force-po", "--copyright-holder=\"Widelands Development Team\"",
+			           "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
+			           addon.getPath() + "/addon");
 			recurse(out, new File("screenshots", addon.getName()), false);
 			recurse(out, addon, false);
 		}
