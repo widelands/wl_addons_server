@@ -78,16 +78,14 @@ public class Buildcats {
 					p.waitFor();
 				}
 			} else if (!mapsOnly && isXGettextInput(f.getName())) {
-				Runtime.getRuntime()
-				    .exec(new String[] {
+				Utils.bash(
 				        "xgettext", "-k_", "--keyword=_", "--flag=_:1:pass-lua-format",
 				        "--keyword=ngettext:1,2", "--flag=ngettext:1:pass-lua-format",
 				        "--flag=ngettext:2:pass-lua-format", "--keyword=pgettext:1c,2",
 				        "--flag=pgettext:2:pass-lua-format", "--keyword=npgettext:1c,2,3",
 				        "--flag=npgettext:2:pass-lua-format", "--flag=npgettext:3:pass-lua-format",
 				        "--language=Lua", "--from-code=UTF-8", "-F",
-				        "-c TRANSLATORS:", "--join-existing", "--output=" + out, f.getPath()})
-				    .waitFor();
+				        "-c TRANSLATORS:", "--join-existing", "--output=" + out, f.getPath());
 			}
 		}
 	}
@@ -97,43 +95,42 @@ public class Buildcats {
 	 * @throws Exception If anything at all goes wrong, throw an Exception.
 	 */
 	public static void buildCatalogues() throws Exception {
-		File output = Files.createTempFile(null, ".lua").toFile();
-		PrintWriter write = new PrintWriter(new FileWriter(output));
+		File uploaderCommentsFile = Files.createTempFile(null, ".lua").toFile();
+		PrintWriter write = new PrintWriter(new FileWriter(uploaderCommentsFile));
 		ResultSet sql = Utils.sql(Utils.Databases.kWebsite,
 		                          "select uploader_comment from wlmaps_map where "
 		                              + "uploader_comment is not null and uploader_comment != ''");
+		int nrComments = 0;
 		while (sql.next()) {
 			String str = sql.getString("uploader_comment");
 			write.print("_(\"");
 			write.print(Utils.escapeAsShellArgument(str));
 			write.println("\")");
+			++nrComments;
 		}
 		write.close();
+		Utils.log("Buildcats: Wrote " + nrComments + " uploader comments to " + uploaderCommentsFile.getAbsolutePath());
 
 		File dir = new File("po", kWebsiteMapsTextdomain);
 		dir.mkdirs();
 		String out = dir.getPath() + "/" + kWebsiteMapsTextdomain + ".pot";
-		Runtime.getRuntime()
-		    .exec(new String[] {
+		Utils.bash(
 		        "xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
 		        "--force-po", "--copyright-holder=\"Widelands Development Team\"",
 		        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
-		        output.getAbsolutePath()})
-		    .waitFor();
+		        uploaderCommentsFile.getAbsolutePath());
 		recurse(out, new File(Utils.config("website_maps_path")), true);
-		output.delete();
+		// uploaderCommentsFile.delete();
 
 		for (File addon : Utils.listSorted(new File("addons"))) {
 			dir = new File("po", addon.getName());
 			dir.mkdir();
 			out = dir.getPath() + "/" + addon.getName() + ".pot";
-			Runtime.getRuntime()
-			    .exec(new String[] {
+			Utils.bash(
 			        "xgettext", "--language=Lua", "-k_", "--from-code=UTF-8", "--output=" + out,
 			        "--force-po", "--copyright-holder=\"Widelands Development Team\"",
 			        "--msgid-bugs-address=\"https://www.widelands.org/wiki/ReportingBugs/\"",
-			        addon.getPath() + "/addon"})
-			    .waitFor();
+			        addon.getPath() + "/addon");
 			recurse(out, new File("screenshots", addon.getName()), false);
 			recurse(out, addon, false);
 		}
